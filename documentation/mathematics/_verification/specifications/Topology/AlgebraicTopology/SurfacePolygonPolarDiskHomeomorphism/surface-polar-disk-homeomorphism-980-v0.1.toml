@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 1014
+parent_revision = "3aa2a98ffc824c410c8b0b7ce1cc68bc4f55bdb1"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarDiskHomeomorphism"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarDiskHomeomorphism.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_declarations = ["closedComplexUnitDisk_t2", "standardCircleCone_compact", "standardConePolarDisk_bijective", "standardCircleConeHomeomorphClosedDisk", "standardCircleConeHomeomorphClosedDisk_apply", "perimeterConeHomeomorphClosedDisk", "perimeterConeHomeomorphClosedDisk_apex"]
+hostile_controls = ["genuine_complex_closed_disk_subtype", "genuine_compact_cone", "homeomorphism_uses_exact_polar_map", "source_perimeter_transport", "apex_maps_to_zero", "cone_to_filled_still_noninjective", "no_cw_pushout_or_rh_promotion"]
+open_obligations = ["exact_head_lean_elaboration", "generated_declarations_axioms_unsafe_import_audit", "hostile_fixture_replay", "cone_to_filled_full_fibers", "filled_surface_pushout", "cw_manifold_homology"]
+lean_run = false
+kernel_audited = false

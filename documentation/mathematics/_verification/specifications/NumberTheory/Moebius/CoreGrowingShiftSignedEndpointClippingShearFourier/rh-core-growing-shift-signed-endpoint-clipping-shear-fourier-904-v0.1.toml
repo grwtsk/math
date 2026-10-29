@@ -1,0 +1,90 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-clipping-shear-fourier-904-v0.1"
+owner_repository = "grwtsk/math"
+issue = 904
+parent_issue = 884
+parent_pr = 888
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointClippingShearFourier"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointClippingShearFourier"
+
+[source_binding]
+stacked_parent_revision = "4a2750ae0d7f4a07561bcdf6f9b1e3933cd89f52"
+candidate_branch = "research/rh-endpoint-clipping-shear-904"
+theorem_source_commit = "4fe6712465d0ddfe2b5c494dd723ba95e5691f08"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointClippingShearFourier.lean"
+theorem_source_git_blob = "7779505b0c3c59585e978212f745b469c701d808"
+
+[selected_increment]
+clipping_increment = "coreGrowingShiftEndpointPrefixClippingIncrementKernel"
+lower_cutoff_two_le = "coreGrowingShiftEndpointDifferencePrefixLower_two_le"
+clipping_origin_zero = "coreGrowingShiftEndpointPrefixClippingKernel_zero"
+clipping_one_zero = "coreGrowingShiftEndpointPrefixClippingKernel_one"
+clipping_successor_difference = "coreGrowingShiftEndpointPrefixClippingKernel_succ_sub"
+ordinary_sheared_clipping = "coreGrowingShiftEndpointShearedPrefixClippingKernelNatZeroPad"
+ordinary_sheared_increment = "coreGrowingShiftEndpointShearedPrefixClippingIncrementNatZeroPad"
+ordinary_right_boundary = "coreGrowingShiftEndpointShearedPrefixClippingRightBoundaryNatZeroPad"
+ordinary_forward_difference = "coreGrowingShiftEndpointShearedPrefixClippingNat_forwardDifference"
+doubled_sheared_clipping = "coreGrowingShiftEndpointDoubledShearedPrefixClippingKernelZeroPad"
+doubled_sheared_increment = "coreGrowingShiftEndpointDoubledShearedPrefixClippingIncrementZeroPad"
+doubled_right_boundary = "coreGrowingShiftEndpointDoubledShearedPrefixClippingRightBoundaryZeroPad"
+cyclic_forward_difference = "coreGrowingShiftEndpointDoubledShearedPrefixClippingForwardDifference"
+cyclic_successor_representative = "coreGrowingShiftEndpointDoubled_val_add_one"
+cyclic_difference_split = "coreGrowingShiftEndpointDoubledShearedPrefixClippingForwardDifference_eq_increment_add_boundary"
+clipping_inverse_shear = "coreGrowingShiftEndpointDoubledPrefixClippingKernelZeroPad_eq_shear"
+generic_shear_dft = "finiteZModKernelDFT2_shear"
+sheared_clipping_dft = "coreGrowingShiftEndpointDoubledShearedPrefixClippingKernelDFT2"
+clipping_dft_shear_identity = "coreGrowingShiftEndpointDoubledPrefixClippingKernelDFT2_eq_sheared"
+generic_forward_difference = "finiteZModKernelForwardDifference"
+generic_forward_difference_dft = "finiteZModKernelDFT2_forwardDifference"
+forward_difference_dft = "coreGrowingShiftEndpointDoubledShearedPrefixClippingForwardDifferenceDFT2"
+interior_increment_dft = "coreGrowingShiftEndpointDoubledShearedPrefixClippingIncrementDFT2"
+right_boundary_dft = "coreGrowingShiftEndpointDoubledShearedPrefixClippingRightBoundaryDFT2"
+forward_difference_dft_split = "coreGrowingShiftEndpointDoubledShearedPrefixClippingForwardDifferenceDFT2_eq_increment_add_boundary"
+transverse_multiplier = "coreGrowingShiftEndpointDoubledShearedPrefixClippingForwardDifferenceDFT2_eq_multiplier"
+antiderivative_equation = "coreGrowingShiftEndpointDoubledShearedPrefixClipping_antiderivativeEquation"
+transverse_zero_mode = "coreGrowingShiftEndpointDoubledShearedPrefixClipping_zeroMode"
+sheared_clipping_packet = "coreGrowingShiftSignedEndpointDoubledShearedPrefixClippingFourierPacketComplex"
+sheared_clipping_packet_identity = "coreGrowingShiftSignedEndpointDoubledShearedPrefixClippingFourierPacketComplex_eq_parent"
+complete_complex_packet = "coreGrowingShiftSignedEndpointClippingShearFourierPacketComplex"
+complete_complex_packet_identity = "coreGrowingShiftSignedEndpointClippingShearFourierPacketComplex_eq_parent"
+complete_real_packet = "coreGrowingShiftSignedEndpointClippingShearFourierPacket"
+complete_real_packet_identity = "coreGrowingShiftSignedEndpointClippingShearFourierPacket_eq_parent"
+packet_return = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointClippingShearFourier"
+signed_source = "SubpolynomialCoreGrowingShiftSignedEndpointClippingShearFourierPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointClippingShearFourierPacket_iff_parent"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointClippingShearFourierPacket"
+proof_classification = "EXACT_CLIPPING_SHEAR_SUCCESSOR_DIFFERENCE_AND_TRANSVERSE_ANTIDERIVATIVE"
+next_obstruction = "separate the transverse zero mode and low nonzero frequencies, control the small divisor, and retain the right-window atom in the joint signed packet"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+transverse_zero_mode_estimate_proved = false
+small_divisor_estimate_proved = false
+right_boundary_estimate_proved = false
+joint_signed_estimate_proved = false
+transverse_multiplier_inverted_uniformly = false
+zero_mode_discarded = false
+right_boundary_discarded = false
+bulk_clip_triangle_inequality_used = false
+bulk_multiplier_replaced_by_absolute_value = false
+parseval_bound_used = false
+cauchy_schwarz_used = false
+hilbert_schmidt_bound_used = false
+operator_norm_bound_used = false
+support_enlargement_used = false
+diagonal_reinserted = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+gowers_adapter_constructed = false
+large_sieve_adapter_constructed = false
+dispersion_adapter_constructed = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false

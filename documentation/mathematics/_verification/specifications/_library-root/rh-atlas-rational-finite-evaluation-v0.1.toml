@@ -1,0 +1,103 @@
+# Static mathematical specification, not execution authority or a receipt.
+# Prepared against cfb2213f77815246f6180ef1c8ca03086793b1c3.
+# SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-rational-finite-evaluation-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 272
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RationalFiniteEvaluation"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+# Focused suppliers, NOT an audited transitive import inventory.
+modules = [
+  { name = "Mathlib.Analysis.SpecialFunctions.Complex.LogBounds" },
+  { name = "Mathlib.Analysis.Complex.Exponential" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairRational" },
+  { name = "GRWTSK.Analysis.Complex.GaussianRationalArithmetic" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripLogEnclosure" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPowerTaylor" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalPowerEvaluation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticPrimitive" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticC1Approximation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalPairCheck" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalFiniteEvaluation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalEvaluatedPair" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RationalFiniteEvaluation" },
+]
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[hostile_controls]]
+id = "actual_logarithm"
+requirement = "Rational logTaylor centers cast to the inherited real-log enclosure; no log oracle."
+[[hostile_controls]]
+id = "positive_base"
+requirement = "Base zero and negative-real-part parameters are outside the negative-power supplier."
+[[hostile_controls]]
+id = "log_perturbation_guard"
+requirement = "S*delta <= 1 is checked before using the perturbation estimate."
+[[hostile_controls]]
+id = "exponential_ratio_guard"
+requirement = "R/(n+1) <= 1/2 is checked with the upstream n-term convention."
+[[hostile_controls]]
+id = "rounding_charge"
+requirement = "The full rational L1 difference from the Taylor value is charged for the proposed center."
+[[hostile_controls]]
+id = "no_native_shortcut"
+requirement = "Finite rational tests use ordinary proof-producing reduction, not native_decide."
+[[hostile_controls]]
+id = "complete_support"
+requirement = "The list length equals N and every index 1..N is checked against its own base."
+[[hostile_controls]]
+id = "same_parameter"
+requirement = "Reusing an enclosure for a different parameter requires a fresh successful guard."
+[[hostile_controls]]
+id = "endpoint_reuse"
+requirement = "The same Nth power supplies the endpoint with its extra W_N error charge."
+[[hostile_controls]]
+id = "sextic_corrections"
+requirement = "Half-endpoint, B2, B4 and B6 corrections and signs remain in the regrouping."
+[[hostile_controls]]
+id = "source_evaluation_separation"
+requirement = "Finite-model evaluation radii are separate from the actual infinite-tail radii."
+[[hostile_controls]]
+id = "nonzero_displacement"
+requirement = "x=1/2 is rejected before division by the offset."
+[[hostile_controls]]
+id = "near_line_cost"
+requirement = "The endpoint evaluator pays 1/(2|d|); it does not inherit uniform secant accuracy without a derivative evaluator."
+[[hostile_controls]]
+id = "cross_error_terms"
+requirement = "Source and evaluation radii add before squaring in the maintained rational checker."
+[[hostile_controls]]
+id = "strictness"
+requirement = "Non-strict model-energy comparison cannot certify pair exclusion."
+[[hostile_controls]]
+id = "mirror_source"
+requirement = "The actual zeta-zero reflection, not equality of arbitrary H values, supplies the second target zero."
+[[hostile_controls]]
+id = "point_not_region"
+requirement = "A rational-point certificate is not a certificate on a complex neighborhood or a continuum cover."
+[[hostile_controls]]
+id = "bounded_generation"
+requirement = "Finite proposal generation claims no adaptive search termination or completeness."
+[[hostile_controls]]
+id = "concrete_nonreal_fixture"
+requirement = "The cutoff-two fixture constructs both base-two enclosures at 3/4+i and 1/4+i and retains the source tail."
+[[hostile_controls]]
+id = "replay_boundary"
+requirement = "External exact rational diagnostics and source hashes are not Lean elaboration or axiom acceptance."

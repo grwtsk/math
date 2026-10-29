@@ -1,0 +1,95 @@
+schema_version = "0.1"
+request_id = "goldbach-dirichlet-perron-continuity-20261026"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "c530807d190887d83b49ecfd1ca596d70ccf7c5c"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
+source_blob = "e0c1295fa24860e5af6e2f70a2caea0256d5698a"
+source_lines = 469
+initial_mathematical_commit = "2bf5fe068c04502fc98f0be28bff23c0798afc6d"
+initial_mathematical_blob = "e96a457593c1e21253b29fb7c9446c12af064656"
+replaced_previous_source_blob = "8f8fe08768bc19952e51b7e0c9cff142bded7efe"
+source_repair_reason = "Pinned Mathlib Basic.lean defines the root LSeries function, not LSeries.L. Replaced six references in the consumer before verification; retained exact theorem statements."
+character_supplier_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean"
+character_supplier_commit = "36fe651c3291dd00cf9ff3d3f5db991064d15ce5"
+character_supplier_blob = "520f24cea3bf2c592524ee939fe05b82b756f4dc"
+character_supplier_previous_blob = "5816184c51192fc71becb4774d5ee1676671c611"
+character_repair_reason = "Replaced five LSeries.L references with the pinned root LSeries function, preserving hypotheses and theorem statements; this is a static repair, not kernel acceptance."
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_lseries_basic_path = "Mathlib/NumberTheory/LSeries/Basic.lean"
+mathlib_lseries_basic_blob = "ffd10e7cd63394810c1ae3a5eebc0344517854c1"
+mathlib_lseries_convergence_path = "Mathlib/NumberTheory/LSeries/Convergence.lean"
+mathlib_lseries_convergence_blob = "8dd208aa006f6cddb7e91a69b741ed2722ddf145"
+mathlib_lseries_deriv_path = "Mathlib/NumberTheory/LSeries/Deriv.lean"
+mathlib_lseries_deriv_blob = "8c6ad6574f8ecc81f7d491143ce104763d1d4a02"
+mathlib_pow_continuity_path = "Mathlib/Analysis/SpecialFunctions/Pow/Continuity.lean"
+mathlib_pow_continuity_blob = "b7d14ef68dde16011e380d012d4cf1e88fb42967"
+mathlib_interval_integral_path = "Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean"
+mathlib_interval_integral_blob = "4092210205f534fd53ca3139589e2aa26f88a00d"
+upstream_openai_repository = "openai/math"
+upstream_openai_commit = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+upstream_openai_path = "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+upstream_openai_blob = "46c67f4000906b1391a471d6e6396ac0da3c16a5"
+upstream_openai_use = "RESEARCH_CONTEXT_ONLY_NOT_IMPORTED_NOT_REPLAYED"
+priority = "P1"
+mathematical_class = "right_vertical_line_LSeries_analytic_continuity_supplier"
+status = "SOURCE_DRAFT_NOT_RUN"
+compilation_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+transitive_axiom_status = "NOT_RUN"
+execution_exit = "NOT_RUN"
+execution_receipt = "UNAVAILABLE_NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+railway_authorized = false
+merge_authorized = false
+force_push_authorized = false
+
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection",
+ "GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.SiegelRealZeroWindow",
+ "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+ "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+ "Mathlib.NumberTheory.LSeries.Deriv",
+ "Mathlib.Analysis.SpecialFunctions.Pow.Continuity",
+ "Mathlib.Tactic"
+]
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.continuous_rightPerronTruncation",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.intervalIntegrable_rightPerronTruncation",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_rightPerronTruncation_intervalIntegral_le_of_continuity"
+]
+imported_suppliers = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.dirichlet_coefficient_LSeriesSummable",
+ "LSeriesSummable.abscissaOfAbsConv_le",
+ "LSeries_hasDerivAt",
+ "LSeries.hasDerivAt_term",
+ "Continuous.const_cpow",
+ "Continuous.intervalIntegrable",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_rightPerronTruncation_intervalIntegral_le"
+]
+hypotheses = "For every q,N:Nat, χ:DirichletCharacter C q, real sigma>1, N>=3: rightPerronTruncation q N χ sigma is continuous R->C and IntervalIntegrable with respect to volume over ANY real interval a..b. For the final norm corollary require T>=0. No previously supplied IntervalIntegrable hypothesis is needed in the corollary; the original theorem with that hypothesis is preserved."
+proof_method = "At s=sigma+it choose real midpoint (1+sigma)/2, use existing Dirichlet von Mangoldt LSeriesSummable above 1 to bound abscissaOfAbsConv below sigma, apply pinned Mathlib LSeries_hasDerivAt and hasDerivAt_term, combine the finite prefix with continuous complex power and nonzero vertical-line denominator, derive Continuous, then Continuous.intervalIntegrable."
+final_conclusion = "norm(integral_{-T}^T [LSeries(chi*Lambda,sigma+it)-sum_{n<=N} LSeries.term(chi*Lambda,sigma+it,n)]*(N^(sigma+it)/(sigma+it)) dt) <= 2*T*rightPerronTruncationBudget N sigma."
+remaining_analytic_bridges = [
+ "Compilation and full transitive import checking, including the repaired LSeries API of both affected files",
+ "Any other upstream source/elaboration failure in imported character stack",
+ "Fresh kernel checker and transitive axiom audit of every new theorem and the inherited tail theorem",
+ "Normalized orientation- and endpoint-exact Perron inversion, not just right-edge tail integral",
+ "Justified contour shifts, residues and gamma factors, horizontal/left contour bounds and q/N/T uniformity",
+ "Actual finite explicit-formula remainder R, selected-zero completeness/reciprocal-zero mass and global psi-N supplier"
+]
+nonclaims = "This removes ONLY the separate interval-integrability premise on the right vertical line. It does not prove hSeven, the actual explicit-formula remainder, any zero-free region, prime-density improvement, RH, GRH, or a Navier-Stokes connection."
+
+[checks]
+pin_commit = "test \"$(git rev-parse HEAD)\" = c530807d190887d83b49ecfd1ca596d70ccf7c5c"
+pin_source_blob = "test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean)\" = e0c1295fa24860e5af6e2f70a2caea0256d5698a"
+pin_import_blob = "test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean)\" = 520f24cea3bf2c592524ee939fe05b82b756f4dc"
+compile_character_supplier = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution"
+source_elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
+fresh_kernel = "PENDING_INDEPENDENT_CHECKER_CAPABILITY_NOT_RUN"
+transitive_axiom_audit = "#print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.continuous_rightPerronTruncation; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.intervalIntegrable_rightPerronTruncation; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.norm_rightPerronTruncation_intervalIntegral_le_of_continuity; also audit the inherited tail and norm theorems in a separate temporary Lean file outside math"
+expected = "Exact source and import SHAs, zero added sorry/admit or new axioms, all Lean statements elaborate under pinned Mathlib, independent fresh kernel and transitive axiom reporting; do not treat tool/API source inspection as compiler acceptance."
+operational_receipts_location = "grwtsk/noeaaeue only after independently authorized execution, not in pure grwtsk/math"

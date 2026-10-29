@@ -1,0 +1,38 @@
+# Source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "proper-power-prime-divisor-log-filter-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "3834e6ec3e58445c2b9f18254d6108d252b72c76"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorLogFilter.lean"
+source_blob = "3a67b19c22db841cdf99a646e968bc1a9543ff14"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLogFilter.primeDivisorLogMass_eq_filter_sum",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeFactorSubset",
+ "Mathlib.Tactic",
+]
+exact_hypotheses = "forall q N : Nat; no additional assumptions"
+missing_suppliers = [
+ "Monotonicity of finite log sums under truncatedPrimeDivisors subset primeFactors for q!=0",
+ "Convert full primeFactors log sum to log(radical q)",
+ "Compare radical q with q for positive q",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorLogFilter.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLogFilter"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorLogFilter.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

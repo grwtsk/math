@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-second-moment-winding-925-v0.1"
+owner_repository = "grwtsk/math"
+issue = 925
+parent_issue = 923
+parent_pr = 924
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_SECOND_MOMENT_WINDING_SOURCE_DRAFT"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredSecondMomentWinding"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredSecondMomentWinding"
+
+[source_binding]
+stacked_parent_revision = "f1fc866c602a4e6ab10688043cf359602406fcbd"
+candidate_branch = "research/rh-centered-second-moment-winding-925-20261022"
+theorem_source_commit = "8d48b9f455f3af7e2de598365abbbc1d07711c78"
+mathematical_note_commit = "5173b6fdbba14a143b5ea47431c82b9935eeeaeb"
+
+[evidence_states]
+source_draft = true
+four_family_second_moment_defined = true
+zero_winding_energy_factor_four_scripted = true
+winding_radius_reciprocal_square_scripted = true
+endpoint_factor_sixteen_second_moment_bound_scripted = true
+endpoint_factor_four_zero_energy_bound_scripted = true
+subpolynomial_second_moment_requirement_explicit = true
+existing_energy_supplier_claimed_sufficient = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

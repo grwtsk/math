@@ -1,0 +1,39 @@
+# Queued verification request; no execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-triple-membership-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "bc90396f08b7d855465d21df422e17bb2d4b77a6"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerTripleMembership.lean"
+source_blob = "f828393d73751124fad609effb6ad3ab3de010a4"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTripleMembership.mem_tripleBox_of_support",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTripleMembership.mem_supportedTripleBox_iff",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTriplePacket",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Normalize original dependent n,p,k sum to supportedTriplePacketMass",
+ "Identify supportedTriplePacketMass with originalSupportedMass",
+ "Complete rectangular packet-to-subtype sum normalization",
+ "Compose final exact original-to-rectangular reindexing",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerTripleMembership.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerTripleMembership"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerTripleMembership.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

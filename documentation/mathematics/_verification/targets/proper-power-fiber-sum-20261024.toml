@@ -1,0 +1,38 @@
+# Queued source-pinned verification; no execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-fiber-sum-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "eb092158f59489eec1cded3e79ef30697b211842"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberSum.lean"
+source_blob = "3fb632aafd410d24f54da930857d43ee2eca6cc3"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberSum.originalPacketMass_eq_fiber_sum",
+]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalPairSum"]
+downstream_targets = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerSupportedComposition.supportedTriplePacketMass_eq_originalSupportedMass",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerMassBridge.nonunitProperPowerMass_eq_divisor_packet",
+]
+missing_suppliers = [
+ "Flatten the n-indexed pairSupportAt fibers into supportedTripleBox, preserving each triple",
+ "Normalize rectangularProperPowerMass to rectangularSupportedMass",
+ "Compose the unconditional original-to-rectangular reindexing",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberSum.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberSum"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberSum.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

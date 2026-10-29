@@ -1,0 +1,237 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-residue-variance-obstruction-623-v0.1"
+owner_repository = "grwtsk/math"
+issue = 623
+parent_issue = 621
+parent_pr = 622
+signed_factorization_issue = 607
+signed_factorization_pr = 608
+zero_nonzero_issue = 611
+zero_nonzero_pr = 612
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_LARGE_MODULUS_VARIANCE_FLOOR_SOURCE_DRAFT_SQUAREFREE_DENSITY_IMPORT_OPEN_SIGNED_SQUARE_DIAGONAL_REPAIR_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.ParityResidueVarianceLargeModulusObstruction"
+companion_module = "GRWTSK.NumberTheory.Moebius.ParityResidueVarianceObstructionConnections"
+build_target = "GRWTSK.NumberTheory.Moebius.ParityResidueVarianceLargeModulusObstruction"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-parity-residue-variance-621-20261021"
+stacked_parent_revision = "8013bee4611ee6545a5b8ae470a90e36395abb41"
+stacked_parent_tree = "5325f6ab5c0812fc3a57714841769414312de659"
+candidate_branch = "research/rh-residue-variance-obstruction-623-20261021"
+obstruction_source_commit = "0395cbffb536c663c8ce9dfecbd8bd5391494da8"
+obstruction_source_tree = "9875e195ef83ae76f5616c292fc84d2a578c6bda"
+obstruction_source_path = "GRWTSK/NumberTheory/Moebius/ParityResidueVarianceLargeModulusObstruction.lean"
+obstruction_source_git_blob = "00d6320a9344a38e20afdb83d460da0707ea5c98"
+connection_source_commit = "31f6781eb3b65daa8290a5c0b630ba423685fbd9"
+connection_source_tree = "a1dd0258f255b2a0d4b203eec6cf5ed3e5714fb0"
+connection_source_path = "GRWTSK/NumberTheory/Moebius/ParityResidueVarianceObstructionConnections.lean"
+connection_source_git_blob = "64c5fb2fb9a9fde9d4281b1b493829120ae3213c"
+mathematical_note_commit = "b9830389edc00c8234b9d3b94e35eb95ef712b82"
+mathematical_note_tree = "fd53bc5b82821fb03589fc7363cc372d8b50b85d"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/positive-residue-variance-large-modulus-obstruction.md"
+mathematical_note_git_blob = "e7a4580707180837f2e51991e1bf4366b902c2fc"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[selected_increment]
+squarefree_mass = "squarefreeMobiusMass"
+parity_mass_identity = "squarefreeMobiusMass_eq_parityDiagonals"
+absolute_mobius_square = "abs_moebiusReal_eq_sq"
+parity_mertens_bound = "abs_parityMertensPrefix_le_squarefreeDiagonal"
+parity_square_bound = "parityMertensSquares_le_squarefreeMobiusMass_sq"
+large_modulus_injectivity = "parityHalfResidue_injective_of_half_lt_square"
+singleton_fibre_identity = "sum_sq_indicatorFibres_eq_of_injOn"
+residue_energy_identity = "parityMertensResidueEnergy_eq_squarefreeDiagonal_of_half_lt_square"
+mass_window = "QuarterThreeQuarterSquarefreeMass"
+variance_floor = "parityResidueVarianceSum_ge_endpoint_div_64"
+modulus_majorant_floor = "parityResidueVarianceDiagonalModulusMajorant_ge_endpoint_div_128"
+large_modulus_window = "largeSquareModulusWindow"
+large_window_scale = "largeSquareModulusWindow_scale"
+large_window_cardinality = "card_largeSquareModulusWindow_ge"
+endpoint_window_bound = "parityResidueVarianceDiagonalEndpointMajorant_ge_window"
+cubic_endpoint_bound = "parityResidueVarianceDiagonalEndpointMajorant_ge_cubic"
+eventual_density_source = "EventuallyQuarterThreeQuarterSquarefreeMass"
+dyadic_growth_source = "DyadicQuarterPowerOutgrowth"
+conditional_refutation = "not_dyadicNaturalScaleParityResidueVarianceDiagonalBudget"
+named_disposition = "PositiveResidueVarianceNaturalScaleRefutedAtScope"
+signed_repair = "SignedSquareDiagonalCancellationRepair"
+proof_classification = "FINITE_LARGE_MODULUS_POSITIVE_VARIANCE_FLOOR_PLUS_CONDITIONAL_SCOPE_REFUTATION"
+
+[large_modulus_geometry]
+endpoint = "b=m*m"
+window = "9*m/10 < d < m"
+effective_modulus = "d*d < b"
+half_endpoint_injectivity = "b/2 < d*d"
+four_fifths_threshold = "4*b <= 5*d*d"
+minimum_window_cardinality = "m/20 for m>=20"
+
+[positive_variance_floor]
+squarefree_mass = "Q(b)=sum_(1<=u<=b) mu(u)^2"
+input_lower = "b/4 <= Q(b)"
+input_upper = "Q(b) <= 3*b/4"
+energy_identity = "ResidueEnergy_r(b,d)=ParitySquarefreeDiagonal(b,r)"
+variance_sum_lower = "b/64"
+modulus_majorant_lower = "b/128"
+endpoint_cubic_lower = "m^3/2560 at b=m^2"
+absolute_values_inserted_inside_buckets = false
+positive_diagonal_terms_discarded = false
+
+[scope_disposition]
+conditional_refutation = true
+refuted_target = "DyadicNaturalScaleParityResidueVarianceDiagonalBudget"
+refutation_exponent = "delta=1/4"
+squarefree_density_value_constructed = false
+dyadic_growth_value_constructed = false
+exact_parseval_refuted = false
+square_modulus_large_sieve_refuted = false
+bdh_variance_refuted = false
+signed_square_diagonal_budget_refuted = false
+rh_refuted = false
+
+[replacement_frontier]
+exact_signed_expression = "S_r^2-D_r"
+repair_type = "SignedSquareDiagonalCancellationRepair"
+target = "DyadicNaturalScaleNonzeroParityFourierBudget"
+repair_value_constructed = false
+positive_variance_to_signed_implication = false
+
+[connection_atlas]
+generic_adapter = "ResidueVarianceObstructionConnections.ToSignedSquareDiagonalBudgetAdapter"
+generic_downstream_transport = "ResidueVarianceObstructionConnections.naturalScaleCongruenceL1_of_signedAdapter"
+squarefree_density_data = "ResidueVarianceObstructionConnections.SquarefreeDensityData"
+squarefree_density_adapter = "ResidueVarianceObstructionConnections.SquarefreeDensityAdapter"
+dyadic_growth_data = "ResidueVarianceObstructionConnections.DyadicQuarterPowerGrowthData"
+dyadic_growth_adapter = "ResidueVarianceObstructionConnections.DyadicQuarterPowerGrowthAdapter"
+conditional_refutation_from_adapters = "ResidueVarianceObstructionConnections.positiveVarianceBudget_refuted_of_adapters"
+
+[[connection_families]]
+name = "SQUARE_MODULUS_LARGE_SIEVE"
+data = "ResidueVarianceObstructionConnections.SquareModulusLargeSieveObstructionData"
+status = "POSITIVE_ENERGY_RELEVANT_SIGNED_REPAIR_OPEN"
+
+[[connection_families]]
+name = "BARBAN_DAVENPORT_HALBERSTAM"
+data = "ResidueVarianceObstructionConnections.BarbanDavenportHalberstamData"
+status = "POSITIVE_VARIANCE_MAIN_TERM_RELEVANT_SIGNED_REPAIR_OPEN"
+
+[[connection_families]]
+name = "BOMBIERI_VINOGRADOV_ELLIOTT_HALBERSTAM"
+data = "ResidueVarianceObstructionConnections.BombieriVinogradovElliottHalberstamData"
+status = "MODULUS_DISTRIBUTION_RELEVANT_SIGNED_REPAIR_OPEN"
+
+[[connection_families]]
+name = "SQUAREFREE_AP_VARIANCE"
+data = "ResidueVarianceObstructionConnections.SquarefreeArithmeticProgressionVarianceData"
+status = "DIAGONAL_VARIANCE_RELEVANT_SIGNED_REPAIR_OPEN"
+
+[[connection_families]]
+name = "LOCAL_FOURIER_GOWERS"
+data = "ResidueVarianceObstructionConnections.LocalFourierGowersSignedData"
+status = "SIGNED_QUADRATIC_RELEVANT_ADAPTER_OPEN"
+
+[[connection_families]]
+name = "L_FUNCTION_SIGNED_DISPERSION"
+data = "ResidueVarianceObstructionConnections.LFunctionSignedDispersionData"
+status = "ANALYTIC_RESTRICTION_RELEVANT_SIGNED_DISPERSION_OPEN"
+
+[[connection_families]]
+name = "FUNCTION_FIELD_SIGNED_DISPERSION"
+data = "ResidueVarianceObstructionConnections.FunctionFieldSignedDispersionData"
+status = "FUNCTION_FIELD_ANALOGUE_INTEGER_TRANSPORT_OPEN"
+
+[[connection_families]]
+name = "EXACT_RESIDUE_FOURIER_ARCHITECTURE"
+data = "ResidueVarianceObstructionConnections.ExactResidueFourierArchitectureData"
+status = "REPRESENTATION_ARCHITECTURE_ONLY"
+
+[hostile_boundaries]
+positive_variance_to_signed = "ResidueVarianceObstructionConnections.PositiveVarianceToSignedCancellationAdapter"
+natural_variance_scale_to_rh_scale = "ResidueVarianceObstructionConnections.NaturalVarianceScaleToRHScaleAdapter"
+diagonal_to_signed_difference = "ResidueVarianceObstructionConnections.DiagonalToSignedDifferenceAdapter"
+
+[evidence_states]
+source_draft = true
+singleton_large_modulus_fibres_scripted = true
+per_modulus_variance_floor_scripted = true
+large_modulus_window_count_scripted = true
+cubic_endpoint_lower_bound_scripted = true
+conditional_natural_scale_refutation_scripted = true
+connection_atlas_source_draft = true
+squarefree_density_source_value_constructed = false
+dyadic_growth_source_value_constructed = false
+signed_repair_constructed = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+riemann_hypothesis_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ParityResidueVarianceLargeModulusObstruction"
+definition_count = 6
+theorem_script_count = 17
+structure_count = 1
+authored_declaration_count = 24
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ParityResidueVarianceObstructionConnections"
+definition_count = 9
+theorem_script_count = 2
+structure_count = 17
+abbreviation_count = 7
+authored_declaration_count = 35
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ParityFourierResidueVariance.lean"
+git_blob = "80d12207b3194c9ff6b88f041ca963a1fdda6ea8"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_622"
+
+[[dependencies]]
+source = "Mathlib.Data.Nat.ModEq"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[[dependencies]]
+source = "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+squarefree_density_not_inferred = true
+dyadic_growth_not_inferred = true
+exact_parseval_preserved = true
+zero_mode_subtraction_preserved = true
+positive_variance_not_called_signed_cancellation = true
+natural_large_sieve_scale_not_promoted = true
+diagonal_bound_not_promoted_to_signed_difference = true
+literature_name_not_theorem = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+construct_squarefree_density_adapter = true
+construct_dyadic_growth_adapter = true
+construct_signed_square_diagonal_repair = true
+prove_exact_nonzero_frequency_budget = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+unconditional_positive_budget_refutation = false
+squarefree_density_proved = false
+dyadic_growth_proved = false
+large_sieve_adapter_proved = false
+bdh_adapter_proved = false
+bombieri_vinogradov_adapter_proved = false
+l_function_adapter_proved = false
+function_field_adapter_proved = false
+signed_square_diagonal_budget_proved = false
+riemann_hypothesis_proved = false

@@ -1,0 +1,124 @@
+# Passive immutable-source replay request. NOT a completed Lean/kernel or trust receipt.
+schema = "rh-weil-approximate-positive-limit-v0.1"
+repository = "grwtsk/math"
+issue = 215
+base_branch = "main"
+base_commit = "65ae24cbb832d1f5b31186ded3d2d852c9223d19"
+base_tree = "e71b94a582876ba47b3b3f3c346ad377cf7ff541"
+branch = "research/rh-approx-positive-limit-215-20261023"
+stacked = false
+
+main_moved_during_audit = true
+prior_audit_head = "fcf80a85e518b2a9c60f830f14d83d0d57927878"
+relevant_consumer_unchanged_across_move = true
+
+toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source = "GRWTSK/NumberTheory/Zeta/Riemann/WeilApproximatePositiveLimit.lean"
+source_blob = "d0353549f353fbbad96cbf07f4b8274bd7542644"
+consumer_source = "GRWTSK/NumberTheory/Zeta/Riemann/WeilPositiveLimitCore.lean"
+consumer_blob = "c7f56149ec8d1dd8abed6c7fe9dc6d0f9f0b6006"
+vanishing_source = "GRWTSK/Analysis/ErrorBounds/FiniteResidualTelescope.lean"
+vanishing_blob = "dd122f399d065fea679ead86adb760d177b91026"
+note = "docs/mathematics/NumberTheory/Zeta/Riemann/weil-approximate-positive-limit-215.md"
+note_blob = "875b07267f1886e765b97814c2b11ab6a3090bbb"
+
+terminal_consumer = "GRWTSK.RiemannHypothesis.riemannHypothesis_of_positiveGramLimit"
+terminal_status = "conditional_RH_implying"
+selected_missing_premise = "vanishing_lower_positivity_defect_adapter"
+next_obstruction = "source-bound zeta ApproximatePositiveApproximation instance with complete arithmetic residual derivation"
+
+evidence_state = "SOURCE_DRAFT"
+literature_reviewed = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[validation]
+require_exact_base_commit = true
+require_exact_base_tree = true
+require_exact_source_blob = true
+require_exact_note_blob = true
+require_pinned_lean_mathlib = true
+require_transitive_imports = true
+require_isolated_source_elaboration = true
+require_warning_clean_build = true
+require_kernel_checker = true
+require_no_sorry_admit_or_new_axioms = true
+require_print_axiom_closure_and_log = true
+require_independent_replay_receipt = true
+require_terminal_consumer_type_match = true
+reject_Gram_or_PSD_claim_for_corrected_form = true
+reject_arithmetic_positivity_reconstruction_claim = true
+reject_concrete_Weil_criterion_claim = true
+reject_unconditional_RH_claim = true
+keep_out_of_public_root_pending_replay = true
+do_not_merge = true
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.ApproximatePositiveApproximation"
+classification = "conditional_pointwise_approximate_diagonal_interface"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.ApproximatePositiveApproximation.correctedApproximant_diagonal_nonnegative"
+classification = "scalar_diagonal_nonnegativity_transport"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.ApproximatePositiveApproximation.correctedComparison_vanishes"
+classification = "finite_sum_and_difference_vanishing_transport"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.ApproximatePositiveApproximation.toPositiveApproximation"
+classification = "adapter_to_existing_terminal_interface"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.ApproximatePositiveApproximation.target_diagonal_nonnegative"
+classification = "conditional_target_diagonal_nonnegativity"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.riemannHypothesis_of_approximatePositiveLimit"
+classification = "conditional_RH_terminal_wrapper"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.no_approximatePositiveApproximation_of_negativeWitness"
+classification = "negative_witness_exclusion"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.ApproximatePositiveApproximation.transientNegativeStageFixture"
+classification = "finite_negative_stage_fixture"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.ApproximatePositiveApproximation.transientNegativeStageFixture_stage_zero"
+classification = "exact_rational_fixture_check"
+
+[[declarations]]
+name = "GRWTSK.RiemannHypothesis.ApproximatePositiveApproximation.constantLowerDefect_not_vanishes"
+classification = "nonvanishing_defect_hostile_control"
+
+[positivity]
+proved = "nonnegative corrected diagonal at each stage"
+not_proved = [
+  "strict positivity",
+  "positive semidefiniteness",
+  "positive kernel",
+  "positive measure",
+  "positive trace or state",
+  "Gram realizability",
+  "global zeta Weil positivity from arithmetic data"
+]
+
+[hostile_controls]
+cases = [
+  "one negative stage is admitted when its certified lower defect vanishes",
+  "constant unit lower defect does not vanish",
+  "dropping lower-defect convergence permits a negative target",
+  "corrected interface is not claimed bilinear, Hermitian, sesquilinear or Gram",
+  "pairwise comparison is required for every admitted test pair",
+  "no finite-test promotion",
+  "no source drift in target, test space or normalization",
+  "no omitted residual or tail is declared to vanish",
+  "no criterion metadata is accepted without its proof field",
+  "no interpolation, quintic, spectral, topology, Hodge or K-theory transport"
+]

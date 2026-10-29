@@ -1,0 +1,980 @@
+{
+  "attribution": "grwtsk contributors",
+  "declaration_targets": [
+    {
+      "name": "GRWTSK.RiemannHypothesis.critical_reflection_involutive",
+      "source_blob": "599ec8df6086bf0c436f193ced175fc8c71383a5",
+      "source_path": "GRWTSK/Analysis/Complex/CriticalReflection.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.runs_on_graph",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.refinement_commutes_on_trace",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.trace_injective",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.readout_factors_through_trace",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.stage_factors_through_trace",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.spectral_orbit_readout",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.ExactLanguageAt.implies_sofic",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_nonsofic",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_non_eventual_sofic",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.ExactLanguageAt.rightContexts_card_le",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_unbounded_rightContexts",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_all_tail_rightContexts",
+      "source_blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.every_trace_runs_on_full_shift",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.fullShiftGraph_path_all",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.fullShiftGraph_language_all",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.eventuallySofic_of_sofic",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.sofic_of_exact_language",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.fullShiftGraph_not_exact_for_constant_false",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.mem_reachableEndStates",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.wordPath_append",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.wordPath_split_append",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.graphLanguage_append_iff_endStates",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.graphLanguage_context_iff_of_same_endStates",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_graphLanguage",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_exactPresentation",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_soficFactorLanguage_of_unboundedRightContexts",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_soficTrace_of_unboundedRightContexts",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_eventuallySoficTrace_of_all_tail_rightContexts",
+      "source_blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.DynamicRefinement.sameAt_of_next",
+      "source_blob": "8f8db7fba341afd820518a85a7ebbb5fd5a7fe06",
+      "source_path": "GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.DynamicRefinement.history_injective_of_separating",
+      "source_blob": "8f8db7fba341afd820518a85a7ebbb5fd5a7fe06",
+      "source_path": "GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.DynamicRefinement.stage_factors_through_history",
+      "source_blob": "8f8db7fba341afd820518a85a7ebbb5fd5a7fe06",
+      "source_path": "GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.discreteDifference_constants_collide",
+      "source_blob": "8f8db7fba341afd820518a85a7ebbb5fd5a7fe06",
+      "source_path": "GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.initialValue_not_factorsThrough_difference",
+      "source_blob": "8f8db7fba341afd820518a85a7ebbb5fd5a7fe06",
+      "source_path": "GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.difference_telescoping",
+      "source_blob": "8f8db7fba341afd820518a85a7ebbb5fd5a7fe06",
+      "source_path": "GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.integrate_anchoredDifference",
+      "source_blob": "8f8db7fba341afd820518a85a7ebbb5fd5a7fe06",
+      "source_path": "GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.anchoredDifference_injective",
+      "source_blob": "8f8db7fba341afd820518a85a7ebbb5fd5a7fe06",
+      "source_path": "GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.Logic.InformationLoss.eq_of_factorsThrough",
+      "source_blob": "3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd",
+      "source_path": "GRWTSK/Logic/InformationLoss/FactorizationFiber.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.Logic.InformationLoss.not_factorsThrough_of_collision",
+      "source_blob": "3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd",
+      "source_path": "GRWTSK/Logic/InformationLoss/FactorizationFiber.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.Logic.InformationLoss.augmentedProfile_separates",
+      "source_blob": "3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd",
+      "source_path": "GRWTSK/Logic/InformationLoss/FactorizationFiber.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.no_finite_state_initial_recovery_from_unanchored_difference",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.readout_factorsThrough_anchoredDifference",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.not_recoverableAtStage_of_collision",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.proportion_not_compressible_at_collision",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.trace_factorsThrough_partition",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.no_partition_sofic_trace_cover_of_collision",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.SpectralZeroCover.transport_hypothesis",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.rh_implies_generalized_of_spectralCoverFamily",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.ofMap",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_map",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_member_specialization",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.rh_iff_generalized_of_spectralCovers_and_member_specialization",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.rh_iff_generalized_of_spectralCovers_and_specialization",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.DynamicSoficSpectralSystem.trace_factorsThrough_stage",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.DynamicSoficSpectralSystem.no_trace_collision",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.LosslessPrefixCode.encode_injective",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.LosslessPrefixCode.factorsThrough_encode",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.factorsThrough_trans",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.readout_bound_to_process_of_huffmanLikeCover",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.no_huffmanLikeCover_of_process_collision",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.trace_eq_of_soficThrough",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.not_soficThrough_of_collision",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.irrational_of_transcendental",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.transcendental_of_algebraic_implies_sofic_of_nonsofic",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.irrational_of_rational_implies_sofic_of_nonsofic",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.grh_zero_height_transcendental_of_nonsofic",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.zero_height_irrational_and_grh_transcendental_of_nonsofic",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.ThreeQuarterRefinement.seed_zeroFree",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.ThreeQuarterRefinement.limit_zeroFree",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.ThreeQuarterRefinement.asymptotically_free_accounting",
+      "source_blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_zero_ordinate_irrational_without_GRH",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_zero_ordinate_transcendental_on_line",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.actual_zeta_zero_irrational_and_conditional_transcendental",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ordinate_split_for_dynamic_spectral_cover",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.irrational_of_eventual_language_obstruction",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.eventual_sofic_irrational_and_conditional_transcendental",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.eventual_ordinate_split_for_dynamic_spectral_cover",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.DynamicThreeQuarterSoficProgram.zeroFree_strict_threeQuarters",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_eventual_sofic_of_zeta_rightContexts",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_irrational_of_rational_sofic_and_rightContexts",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_transcendental_of_critical_sofic_and_rightContexts",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_tail_exactPresentationAtMost_of_contextCertificate",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_bounded_tail_presentation_of_zeta_contextCertificate",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_capacityCertificate_of_unboundedTailContexts",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_unboundedTailContexts_of_all_capacityCertificates",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_unboundedTailContexts_iff_all_capacityCertificates",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_irrational_of_all_capacityCertificates_and_rational_sofic",
+      "source_blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.zero_conjugate_involutive",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.zero_reflect_involutive",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.zero_conjugate_reflect_commute",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.critical_reflection_eq_composite",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.ne_zero",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.gamma_real_ne_zero",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.conjugate",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.reflect",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.critical_reflection",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.NontrivialZetaZero.mem_critical_strip",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.nontrivial_zero_conjugate_iff",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.nontrivial_zero_reflect_iff",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.nontrivial_zero_critical_reflection_iff",
+      "source_blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem_hypothesis_iff",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_implies_generalized_of_spectralCovers",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.generalized_implies_zetaCriticalPlacement_of_member_specialization",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_iff_generalized_of_spectralCovers_and_specialization",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_and_splits_ordinates",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_rightContext_certificate",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_all_capacityCertificates",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    }
+  ],
+  "exact_type_targets": [
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.ofMap",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_map",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_member_specialization",
+      "source_blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.generalized_implies_zetaCriticalPlacement_of_member_specialization",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_iff_generalized_of_spectralCovers_and_specialization",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_implies_generalized_of_spectralCovers",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_and_splits_ordinates",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_all_capacityCertificates",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_rightContext_certificate",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    },
+    {
+      "name": "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem_hypothesis_iff",
+      "source_blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "status": "NOT_RUN"
+    }
+  ],
+  "identity": "ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b",
+  "limitations": [
+    "The 670 passing records are compilation records, not any of the 107 declaration audits or 10 exact-type checks.",
+    "One module record is interrupted; its unreturned leaf streams are UNAVAILABLE, not empty.",
+    "The operational cancellation is not a mathematical counterexample.",
+    "The source pin is a631c3ab52379eacf4c4fced9111fadd983b37ae; this observation does not certify current main source bytes.",
+    "S3 is unavailable; no ranking value is inferred from the partial compilation records."
+  ],
+  "modules": [
+    {
+      "blob": "599ec8df6086bf0c436f193ced175fc8c71383a5",
+      "declaration_status": "NOT_RUN",
+      "declarations": [
+        "GRWTSK.RiemannHypothesis.critical_reflection_involutive"
+      ],
+      "expected_type_checks": [],
+      "source_path": "GRWTSK/Analysis/Complex/CriticalReflection.lean",
+      "source_sha256": "45fcda1d150f49c2c11819a6dcd35059e9a89ec36068d2c1b5b8b10e07feac79"
+    },
+    {
+      "blob": "1f1ddbbd9bff6cb99d794140f28497598923b005",
+      "declaration_status": "NOT_RUN",
+      "declarations": [
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.runs_on_graph",
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.refinement_commutes_on_trace",
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.trace_injective",
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.readout_factors_through_trace",
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.stage_factors_through_trace",
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.DynamicSpectralCover.spectral_orbit_readout",
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.ExactLanguageAt.implies_sofic",
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_nonsofic",
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_non_eventual_sofic",
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.ExactLanguageAt.rightContexts_card_le",
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_unbounded_rightContexts",
+        "GRWTSK.DynamicalSystems.Symbolic.DynamicSoficSpectralCover.no_exact_language_at_of_all_tail_rightContexts"
+      ],
+      "expected_type_checks": [],
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/DynamicSoficSpectralCover.lean",
+      "source_sha256": "c315bd14a795eefdd71eae06bf30f192df46f30a531f7a3b5da823974383a9c7"
+    },
+    {
+      "blob": "7233696059a408af98af15fec0e34c02f7afb657",
+      "declaration_status": "NOT_RUN",
+      "declarations": [
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.every_trace_runs_on_full_shift",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.fullShiftGraph_path_all",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.fullShiftGraph_language_all",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.eventuallySofic_of_sofic",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.sofic_of_exact_language",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.fullShiftGraph_not_exact_for_constant_false",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.mem_reachableEndStates",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.wordPath_append",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.wordPath_split_append",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.graphLanguage_append_iff_endStates",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.graphLanguage_context_iff_of_same_endStates",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_graphLanguage",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.rightContexts_card_le_exactPresentation",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_soficFactorLanguage_of_unboundedRightContexts",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_soficTrace_of_unboundedRightContexts",
+        "GRWTSK.DynamicalSystems.Symbolic.ExactSoficLanguageCover.not_eventuallySoficTrace_of_all_tail_rightContexts"
+      ],
+      "expected_type_checks": [],
+      "source_path": "GRWTSK/DynamicalSystems/Symbolic/ExactSoficLanguageCover.lean",
+      "source_sha256": "0224b880ee06d936e6bbe98ff57de5780d471b4c63e173d766730c2c31e4b8e1"
+    },
+    {
+      "blob": "8f8db7fba341afd820518a85a7ebbb5fd5a7fe06",
+      "declaration_status": "NOT_RUN",
+      "declarations": [
+        "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.DynamicRefinement.sameAt_of_next",
+        "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.DynamicRefinement.history_injective_of_separating",
+        "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.DynamicRefinement.stage_factors_through_history",
+        "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.discreteDifference_constants_collide",
+        "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.initialValue_not_factorsThrough_difference",
+        "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.difference_telescoping",
+        "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.integrate_anchoredDifference",
+        "GRWTSK.Logic.InformationLoss.DynamicPartitionRecovery.anchoredDifference_injective"
+      ],
+      "expected_type_checks": [],
+      "source_path": "GRWTSK/Logic/InformationLoss/DynamicPartitionRecovery.lean",
+      "source_sha256": "5f9e344a2460aafab8c55f519ee22fd623e80c59ea554e9affa37b9c62fd9283"
+    },
+    {
+      "blob": "3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd",
+      "declaration_status": "NOT_RUN",
+      "declarations": [
+        "GRWTSK.Logic.InformationLoss.eq_of_factorsThrough",
+        "GRWTSK.Logic.InformationLoss.not_factorsThrough_of_collision",
+        "GRWTSK.Logic.InformationLoss.augmentedProfile_separates"
+      ],
+      "expected_type_checks": [],
+      "source_path": "GRWTSK/Logic/InformationLoss/FactorizationFiber.lean",
+      "source_sha256": "67f40a480b0762be9af7f98b816f054bbe2d204ab4c93be1e4f410166d690432"
+    },
+    {
+      "blob": "5881a2f2caf1aa0b1ec9267376cecb5895327afe",
+      "declaration_status": "NOT_RUN",
+      "declarations": [
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.no_finite_state_initial_recovery_from_unanchored_difference",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.readout_factorsThrough_anchoredDifference",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.not_recoverableAtStage_of_collision",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.proportion_not_compressible_at_collision",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.trace_factorsThrough_partition",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.no_partition_sofic_trace_cover_of_collision",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.SpectralZeroCover.transport_hypothesis",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.rh_implies_generalized_of_spectralCoverFamily",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.ofMap",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_map",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_member_specialization",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.rh_iff_generalized_of_spectralCovers_and_member_specialization",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.rh_iff_generalized_of_spectralCovers_and_specialization",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.DynamicSoficSpectralSystem.trace_factorsThrough_stage",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.DynamicSoficSpectralSystem.no_trace_collision"
+      ],
+      "expected_type_checks": [
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.BaseSpecialization.ofMap",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_map",
+        "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover.generalized_implies_base_of_member_specialization"
+      ],
+      "source_path": "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean",
+      "source_sha256": "cc9e6bc70f1e05f176ca87b112ba4422bbf632c12ffa4a041d47739531359bd3"
+    },
+    {
+      "blob": "290757773fe6f295c025287d0d673d9d82c773df",
+      "declaration_status": "NOT_RUN",
+      "declarations": [
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.LosslessPrefixCode.encode_injective",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.LosslessPrefixCode.factorsThrough_encode",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.factorsThrough_trans",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.readout_bound_to_process_of_huffmanLikeCover",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.no_huffmanLikeCover_of_process_collision",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.trace_eq_of_soficThrough",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.not_soficThrough_of_collision",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.irrational_of_transcendental",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.transcendental_of_algebraic_implies_sofic_of_nonsofic",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.irrational_of_rational_implies_sofic_of_nonsofic",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.grh_zero_height_transcendental_of_nonsofic",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.zero_height_irrational_and_grh_transcendental_of_nonsofic",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.ThreeQuarterRefinement.seed_zeroFree",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.ThreeQuarterRefinement.limit_zeroFree",
+        "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic.ThreeQuarterRefinement.asymptotically_free_accounting"
+      ],
+      "expected_type_checks": [],
+      "source_path": "GRWTSK/NumberTheory/Farey/HeatFlowCompressionSofic.lean",
+      "source_sha256": "549bb0afd20d005def27e0798cd6d580489b99265420d819a8bc99b1c537fb13"
+    },
+    {
+      "blob": "98ce2d34115ac5326da6e79a8de75bb2dc645442",
+      "declaration_status": "NOT_RUN",
+      "declarations": [
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_zero_ordinate_irrational_without_GRH",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_zero_ordinate_transcendental_on_line",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.actual_zeta_zero_irrational_and_conditional_transcendental",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.ordinate_split_for_dynamic_spectral_cover",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.irrational_of_eventual_language_obstruction",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.eventual_sofic_irrational_and_conditional_transcendental",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.eventual_ordinate_split_for_dynamic_spectral_cover",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.DynamicThreeQuarterSoficProgram.zeroFree_strict_threeQuarters",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_eventual_sofic_of_zeta_rightContexts",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_irrational_of_rational_sofic_and_rightContexts",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_transcendental_of_critical_sofic_and_rightContexts",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_tail_exactPresentationAtMost_of_contextCertificate",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.no_bounded_tail_presentation_of_zeta_contextCertificate",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_capacityCertificate_of_unboundedTailContexts",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_unboundedTailContexts_of_all_capacityCertificates",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_unboundedTailContexts_iff_all_capacityCertificates",
+        "GRWTSK.RiemannHypothesis.ZeroOrdinateSoficLanguageCriterion.zeta_irrational_of_all_capacityCertificates_and_rational_sofic"
+      ],
+      "expected_type_checks": [],
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroOrdinateSoficLanguageCriterion.lean",
+      "source_sha256": "1316e421a40299836ca4bc8475c7bca181eb06c169fb6e82c867f1a3bfc24437"
+    },
+    {
+      "blob": "09333a73feb176009cfe19f0ae48d436a5af8ecd",
+      "declaration_status": "NOT_RUN",
+      "declarations": [
+        "GRWTSK.RiemannHypothesis.zero_conjugate_involutive",
+        "GRWTSK.RiemannHypothesis.zero_reflect_involutive",
+        "GRWTSK.RiemannHypothesis.zero_conjugate_reflect_commute",
+        "GRWTSK.RiemannHypothesis.critical_reflection_eq_composite",
+        "GRWTSK.RiemannHypothesis.NontrivialZetaZero.ne_zero",
+        "GRWTSK.RiemannHypothesis.NontrivialZetaZero.gamma_real_ne_zero",
+        "GRWTSK.RiemannHypothesis.NontrivialZetaZero.conjugate",
+        "GRWTSK.RiemannHypothesis.NontrivialZetaZero.reflect",
+        "GRWTSK.RiemannHypothesis.NontrivialZetaZero.critical_reflection",
+        "GRWTSK.RiemannHypothesis.NontrivialZetaZero.mem_critical_strip",
+        "GRWTSK.RiemannHypothesis.nontrivial_zero_conjugate_iff",
+        "GRWTSK.RiemannHypothesis.nontrivial_zero_reflect_iff",
+        "GRWTSK.RiemannHypothesis.nontrivial_zero_critical_reflection_iff"
+      ],
+      "expected_type_checks": [],
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean",
+      "source_sha256": "7e9f065e7ec854156f7e5675182a1b6455d8a23926eaf5a66f03b8aeb599ec9a"
+    },
+    {
+      "blob": "4626f58fe293d37943a4ec1900e64f84e29598b0",
+      "declaration_status": "NOT_RUN",
+      "declarations": [
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem_hypothesis_iff",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_implies_generalized_of_spectralCovers",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.generalized_implies_zetaCriticalPlacement_of_member_specialization",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_iff_generalized_of_spectralCovers_and_specialization",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_and_splits_ordinates",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_rightContext_certificate",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_all_capacityCertificates"
+      ],
+      "expected_type_checks": [
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.generalized_implies_zetaCriticalPlacement_of_member_specialization",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_iff_generalized_of_spectralCovers_and_specialization",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_implies_generalized_of_spectralCovers",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_and_splits_ordinates",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_all_capacityCertificates",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_rightContext_certificate",
+        "GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem_hypothesis_iff"
+      ],
+      "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/ZetaSpectralGRHBridge.lean",
+      "source_sha256": "5c8a97fdcae8dda9410c654de0fa32c84e1d89304600efac435d37a8f2a0ec3a"
+    }
+  ],
+  "noe_source_commit": "18df57653629d064679c041b224a3aaa511b4136",
+  "public_checkpoint": {
+    "commit": "12dab9fe7ff0ea7c0bed9c2385119910a5d0e371",
+    "sha256": "58a9b9cdf4ecb5c0783c39c69ed14a8195f737d0ae59480e85505fd927e62768",
+    "url": "https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json"
+  },
+  "receipt_sha256": "e21c9addbd365124c81934e0448507615c812a1ece86f06dd188d2a54fcf48c5",
+  "registry_sha256": "4a2857922582ad2bc1403a8311340aff5a77e9ea0ce6a1a65a007becd6c3e8f9",
+  "schema": "grwtsk.math-managed-verification-batch-status/1",
+  "scope": {
+    "declaration_audits": 107,
+    "exact_type_checks": 10,
+    "fresh_native_steps": 8703,
+    "modules": 10,
+    "source_assets": 27
+  },
+  "source_pin": {
+    "commit": "a631c3ab52379eacf4c4fced9111fadd983b37ae",
+    "repository": "grwtsk/math"
+  },
+  "spectral_volume": {
+    "metric_id": "spectral_log_volume",
+    "profile_canonical_sha256": "254c958eb7f5879d7f3e13f91bbb7ef7a19d3203b48c1402da4198b7992bdc1e",
+    "profile_id": "spectral-volume-radius3-v2",
+    "profile_raw_sha256": "cd6e68070055c92dce2448eaebb44c48f3851721d9564fbcb3cc21c2e2e82056",
+    "radius": 3,
+    "reason_codes": [
+      "NO_COMPLETED_DECLARATION_AUDITS",
+      "NO_QUALIFIED_UPSTREAM_CORE_SOURCE_GRAPH"
+    ],
+    "status": "UNAVAILABLE",
+    "value": null
+  },
+  "terminal": {
+    "all_current_reservations_released": true,
+    "attempt_host_config_restored_exact": true,
+    "automatic_retry": false,
+    "cause": "A compiler temporary output disappeared during the storage monitor scan; observation uncertainty triggered owned cancellation. No storage-limit breach was reported.",
+    "declaration_audits_completed": 0,
+    "exact_type_checks_completed": 0,
+    "interrupted_leaf_streams": "UNAVAILABLE_NOT_QUALIFIED",
+    "interrupted_records": 1,
+    "mathematical_acceptance": "NOT_CLAIMED",
+    "module_records": 671,
+    "passing_records": 670,
+    "process_groups_quiescent": true,
+    "replay_returncode": -2,
+    "status": "CANCELLED_BY_MONITOR_STORAGE_OBSERVATION_UNKNOWN",
+    "streams_complete": true,
+    "supervisor_returncode": 1
+  },
+  "terminal_audit_sha256": "d9ec3584c145d8843afce7f51c4b4c962bb44e885ff8fe825c0bc4b33e65bcc8"
+}

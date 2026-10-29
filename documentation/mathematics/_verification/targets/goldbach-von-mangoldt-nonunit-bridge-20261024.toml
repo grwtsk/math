@@ -1,0 +1,25 @@
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-nonunit-bridge-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "05df22791482b0b21ba9fc459617a362fd957ebf"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitBridge.lean"
+source_blob = "5dbdeee18f296e50e72b5d1c600d27ac0fe5f96b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitBridge.nonunitPsiMass_eq_vonMangoldt_sum"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise","GRWTSK.NumberTheory.Primes.GoldbachNonunitBudget"]
+exact_hypotheses = "q N : Nat; inclusive range(N+1); nonunit filter on ZMod q"
+missing_suppliers = ["Compose with positive-modulus finite nonunit correction bound","Establish any further canonical residue-character comparison separately","Transitive Lean compilation, fresh kernel checking, axiom audit"]
+receipts = "NOT_RUN"
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitBridge"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitBridge.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

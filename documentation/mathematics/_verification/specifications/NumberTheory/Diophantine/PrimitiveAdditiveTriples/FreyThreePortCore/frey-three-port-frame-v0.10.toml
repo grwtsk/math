@@ -1,0 +1,330 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "frey-three-port-frame-v0.10"
+owner_repository = "grwtsk/math"
+issues = [100, 110, 127, 128, 129, 177, 203, 220, 221, 222, 227, 230, 233, 241, 248, 249, 250, 251]
+root_module = "GRWTSK.Interfaces.FreyThreePortCore"
+build_target = "GRWTSK.Interfaces.FreyThreePortCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "4aab069dad5b8ef5a07d0850c920a4bfda596aeb"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortBounds"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyDVRReduction"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyProjectiveHeight"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyRationalHeight"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Radical"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.RadicalMultiplicativeInterface"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ABCStatement"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.EquivalentForms"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyABCObservation"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyQuadraticJet"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRankGrowth"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion"
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyHigherJet"
+[[modules]]
+name = "GRWTSK.Interfaces.FreyThreePortCore"
+
+[[hostile_controls]]
+id = "reject-two-port-as-saturated-three-port"
+description = "The two-port square difference carries a+b and cannot replace integral three-port recovery."
+
+[[hostile_controls]]
+id = "reject-rectangular-as-surjective"
+description = "The split obstruction quotient prevents surjectivity onto all three-value data."
+
+[[hostile_controls]]
+id = "reject-left-inverse-without-bezout"
+description = "Integral recovery, exactness and unit minors require the exact Bezout identity."
+
+[[hostile_controls]]
+id = "reject-maximal-minor-unit-without-primitivity"
+description = "A nonprimitive pair cannot receive the unit-minor certificate."
+
+[[hostile_controls]]
+id = "reject-exactness-without-compatible-kernel"
+description = "The image is the compatibility kernel, not the entire target."
+
+[[hostile_controls]]
+id = "reject-triple-drift"
+description = "The x observations must decode to the same typed primitive additive triple."
+
+[[hostile_controls]]
+id = "reject-formal-points-as-elliptic-proof"
+description = "Actual points require equation and nonsingularity on the same model."
+
+[[hostile_controls]]
+id = "reject-zero-discriminant-as-elliptic"
+description = "Field ellipticity requires a proved nonzero discriminant."
+
+[[hostile_controls]]
+id = "reject-integral-model-as-integral-elliptic-curve"
+description = "Nonzero discriminant in Z is not unit discriminant."
+
+[[hostile_controls]]
+id = "reject-base-change-model-drift"
+description = "Compare the full coefficient tuple along every declared base change."
+
+[[hostile_controls]]
+id = "reject-raw-as-minimal-discriminant"
+description = "Use the v0.7 variable-change proof before interpreting raw discriminant as minimal locally."
+
+[[hostile_controls]]
+id = "reject-point-on-curve-as-two-torsion"
+description = "Check P+P=0 independently of point membership."
+
+[[hostile_controls]]
+id = "reject-affine-coordinate-space-as-global-sections"
+description = "The affine-linear space is not yet identified with complete H0(E,O(2O))."
+
+[[hostile_controls]]
+id = "reject-geometry-map-drift"
+description = "Actual evaluation must equal scalar extension of the same integral map."
+
+[[hostile_controls]]
+id = "reject-integral-left-inverse-as-uniform-isometry"
+description = "On-image recovery is not an ambient isometry or an upper frame bound."
+
+[[hostile_controls]]
+id = "reject-zero-interpolation-cost-as-zero-arithmetic-cost"
+description = "Recovery does not erase model, conductor or observation-height costs."
+
+[[hostile_controls]]
+id = "reject-c4-odd-prime-theorem-at-two"
+description = "The odd-prime c4 and DVR results do not apply at p=2."
+
+[[hostile_controls]]
+id = "reject-c4-unit-without-primitivity"
+description = "Retain the primitive source premise; a=3,b=6,p=3 is a counter-control."
+
+[[hostile_controls]]
+id = "reject-prime-support-as-multiplicity"
+description = "Retain the structural square in Delta_raw=16*(abc)^2."
+
+[[hostile_controls]]
+id = "reject-raw-discriminant-excess-as-small-error"
+description = "The full raw discriminant excess is not an epsilon-small residual."
+
+[[hostile_controls]]
+id = "reject-observation-max-as-c"
+description = "Observation height is log max(a,b), not log c; decoding costs at most log 2."
+
+[[hostile_controls]]
+id = "reject-common-support-as-common-divisor"
+description = "Content equality requires all prime powers, not just common prime support."
+
+[[hostile_controls]]
+id = "reject-base-bound-as-higher-stage-bound"
+description = "Base coordinate recovery is not an intrinsic or higher-jet estimate."
+
+[[hostile_controls]]
+id = "reject-numerical-sampling-as-Lean-replay"
+description = "Independent arithmetic checks are not elaboration or transitive audits."
+
+[[hostile_controls]]
+id = "reject-source-frame-as-abc"
+description = "A source recovery theorem cannot construct the observation upper-bound supplier."
+
+[[hostile_controls]]
+id = "reject-root-import-as-slice-pass"
+description = "A trivial root marker or whole-library build is not isolated module coverage."
+
+[[hostile_controls]]
+id = "reject-multiplicative-additive-valuation-confusion"
+description = "Units have multiplicative valuation one, not zero."
+
+[[hostile_controls]]
+id = "reject-minimality-as-unproved-field"
+description = "Unit-invariant constructors must derive minimality over integral variable changes."
+
+[[hostile_controls]]
+id = "reject-conductor-from-reduction-label"
+description = "Multiplicative reduction does not by itself instantiate a conductor-exponent theorem."
+
+[[hostile_controls]]
+id = "reject-dropping-local-carrier-hypotheses"
+description = "Keep R, K, fraction-field data, characteristic zero and residue characteristic."
+
+[[hostile_controls]]
+id = "reject-height-surrogate"
+description = "Use Mathlib Height.logHeight, not an unrelated norm named height."
+
+[[hostile_controls]]
+id = "reject-unbound-rational-representative"
+description = "The witness-level theorem requires primitive v, nonzero k and w=k*v; v0.8 derives these for nonzero w."
+
+[[hostile_controls]]
+id = "reject-height-direction-reversal"
+description = "h(v)<=h(Jv) does not supply an upper bound for h(Jx) by radicals."
+
+[[hostile_controls]]
+id = "reject-zero-vector-as-projective-point"
+description = "The zero fallback has scale zero; handle only the total-height convention, never a nonzero projective witness."
+
+[[hostile_controls]]
+id = "reject-missing-vertical-chart"
+description = "The branch w0=0,w1!=0 must reconstruct exactly, including negative w1."
+
+[[hostile_controls]]
+id = "reject-negative-scale-representative-drift"
+description = "The canonical primitive representative must be unchanged by every nonzero rational scale, including negative scales."
+
+[[hostile_controls]]
+id = "reject-nonprimitive-clear-denominators"
+description = "Clearing denominators without dividing common content is insufficient; require normalized gcd one."
+
+[[hostile_controls]]
+id = "reject-abc-observation-quantifier-drift"
+description = "Retain the same epsilon, canonical radical and forall-epsilon/exists-constant/forall-triple order."
+
+[[hostile_controls]]
+id = "reject-equivalence-as-target-proof"
+description = "ABC iff an observation supplier is not an inhabitant of either side; no axiom or hidden supplier is allowed."
+
+[[hostile_controls]]
+id = "reject-decoding-constant-erasure"
+description = "The reverse logarithmic supplier implication changes C to C+log(2); do not erase this bound."
+
+[[hostile_controls]]
+id = "reject-x-as-first-order-parameter-at-torsion"
+description = "In the constructed y chart, the x jet has zero linear coefficient and quadratic coefficient 1/fprime(r)."
+
+[[hostile_controls]]
+id = "reject-values-as-detecting-y"
+description = "The new y direction is invisible at all three torsion-point value observations; a first jet is required."
+
+[[hostile_controls]]
+id = "reject-fourth-slot-as-fourth-point"
+description = "The fourth slot is a first jet at an existing source port, not a new geometric point or closure obstruction."
+
+[[hostile_controls]]
+id = "reject-nilpotent-jet-as-global-curve-parametrization"
+description = "Exactness requires the stated vanishing parameter power, not an unrestricted real or complex parameter."
+
+[[hostile_controls]]
+id = "reject-hasse-coefficient-as-second-derivative"
+description = "The quadratic slot is the coefficient of y^2; the ordinary second derivative over Q is twice that coefficient."
+
+[[hostile_controls]]
+id = "reject-all-port-jacobians-as-units"
+description = "The three denominators -ab,ac,bc need not all be local units. The theorem supplies at least one unit port at each prime."
+
+[[hostile_controls]]
+id = "reject-smooth-anchor-as-good-reduction"
+description = "A unit-Jacobian anchor exists even at p=2; it does not prove good reduction of the full displayed special fiber."
+
+[[hostile_controls]]
+id = "reject-selected-plane-space-as-intrinsic-sections"
+description = "The selected functions (1,x,y) are not yet identified with all H0(E,O(3O)) by a line-bundle theorem."
+
+[[hostile_controls]]
+id = "reject-one-rank-step-as-arbitrary-refinement"
+description = "All-order parameter jets do not supply arbitrary global-section rank growth or uniform observation frames."
+
+[[hostile_controls]]
+id = "reject-jet-substitution-as-local-ring-isomorphism"
+description = "Compatible finite quotient solutions do not by themselves prove a completed-local-ring or intrinsic-jet isomorphism."
+
+[[hostile_controls]]
+id = "reject-recursion-without-inverse-jacobian"
+description = "Every exactness and uniqueness theorem retains d*j=1; mere nonzeroness in a general ring is insufficient."
+
+[[hostile_controls]]
+id = "reject-insufficient-nilpotent-precision"
+description = "After n steps the residual is divisible by e^(2n+2); exactness needs that power to vanish."
+
+[[hostile_controls]]
+id = "reject-uniqueness-without-root-congruence"
+description = "Uniqueness applies only to solutions reducing to the SAME selected root; retain e dividing both displacements."
+
+[[hostile_controls]]
+id = "reject-truncation-direction-or-source-drift"
+description = "Map order N to M only when M<=N; retain the same root, inverse Jacobian and parameter, plus composition and identity laws."
+
+[[hostile_controls]]
+id = "reject-denominator-support-as-depth-bound"
+description = "The common denominator exponent satisfies 2E_n+1=3^n and is conservative, not sharp or uniform in n."
+
+[[hostile_controls]]
+id = "reject-new-factorial-inverses"
+description = "The generic iteration uses ring operations and one supplied inverse d only; no hidden division by 2, factorials or stage numbers."
+
+[[hostile_controls]]
+id = "reject-even-fiber-parity-as-spatial-reflection"
+description = "Parameter reversal e to -e fixes the x displacement; it is not a geometric, Galois or adelic isometry theorem."
+
+[[hostile_controls]]
+id = "reject-nilpotent-ring-cancellation"
+description = "Generic uniqueness and precision proofs must remain valid in commutative rings with zero divisors; no cancellation by e is allowed."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "accepted Lean elaboration or kernel verification",
+  "identification with complete intrinsic line-bundle section spaces",
+  "identification with the completed local ring or complete intrinsic jet bundle",
+  "analytic convergence or a polynomial parametrization of the full elliptic curve",
+  "conductor exponents or characteristic-two reduction classification",
+  "global minimal-model formula or explicit local-Q/Qp wrapper",
+  "completed arbitrary-number-field adelic height API",
+  "uniform intrinsic or arbitrary-stage frame bounds",
+  "sharp or stage-independent Jacobian-denominator bounds",
+  "unit denominators simultaneously at every source port and prime",
+  "an inhabitant of FreyObservationLogBound for every positive epsilon",
+  "uniform observation-height-versus-radical estimate",
+  "Szpiro conjecture",
+  "abc conjecture",
+  "Riemann Hypothesis",
+  "execution authorization or replay receipt"
+]

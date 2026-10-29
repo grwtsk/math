@@ -1,0 +1,599 @@
+filename_only = true
+schema = "grwtsk.lean-subject-sort/1"
+managed_root = "GRWTSK"
+umbrella = "GRWTSK.lean"
+taxonomy_root = "docs/taxonomy/subjects"
+immutable_prefixes = []
+ignored_prefixes = []
+
+# A model score is only a placement proposal. Ambiguous files remain in REVIEW.
+confidence_threshold = 0.42
+margin_threshold = 0.06
+secondary_threshold = 0.30
+current_location_prior = 0.035
+import_prefix_bonus = 0.20
+namespace_prefix_bonus = 0.15
+require_non_path_evidence = true
+
+[validation]
+require_native_parse_for_move = true
+native_parse_command = ["lake", "env", "lean", "--src-deps", "{path}"]
+native_parse_timeout_seconds = 300
+check_each_moved_file = true
+per_file_command = ["lake", "env", "lean", "{path}"]
+command = ["lake", "build", "GRWTSK"]
+timeout_seconds = 7200
+
+# Reviewed source-bound exceptions retain exact maintained occurrences for
+# human review.  Digest drift invalidates the exception before classification.
+[[review_overrides]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/FiniteBooleanDerivativeAndFieldData/Variant3aabaea1e6b94d5b/OutputFlipSignCorrelation.lean"
+source_sha256 = "075ec3a2364ef35477b0971432473251e3197344d0214736ff9b2e19c5770386"
+reason = "expectation and probability content is not justified as algebra by a generic import"
+
+[[review_overrides]]
+path = "GRWTSK/Logic/FiniteSequences/PrefixCoverage.lean"
+source_sha256 = "74c98d3a08bcf080acc07ddb3bc12c1eceda068c768936a24bfa00d1a4a7be59"
+reason = "current owner declarations and audits bind this exact module occurrence"
+
+[[review_overrides]]
+path = "GRWTSK/NumberTheory/Moebius/LaplaceTransform.lean"
+source_sha256 = "e22e8035988db5cdb63e2915dc7aa240d02bd3d2f037943b91f66fcdaafaf72a"
+reason = "current owner and result contracts bind this exact module occurrence"
+
+[[review_overrides]]
+path = "GRWTSK/Logic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean"
+source_sha256 = "7bf80f52e4c312ca543264fbc271d8892691b146516d4cc6191f377a0374ee9a"
+reason = "mixed whole-library proof audit has no dominant whole-file subject"
+
+[[review_overrides]]
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ProofChecking/Checks/FullAnalyticArithmeticKernel.lean"
+source_sha256 = "7bf80f52e4c312ca543264fbc271d8892691b146516d4cc6191f377a0374ee9a"
+reason = "mixed whole-library proof audit has no dominant whole-file subject"
+
+[[review_overrides]]
+path = "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/Bijections/ExplicitFieldRepresentationTransport/Variant7b67a64e7cab240c/TransportToBits.lean"
+source_sha256 = "f3ad8ae42bbe07bd264049f9922351c538007181c3ae98e23bbcc24ecaf6b38a"
+reason = "generic transport across a supplied equivalence does not establish field or algebra subject placement"
+
+[[review_overrides]]
+path = "GRWTSK/Geometry/ConvexGeometry/ConvexSets/ConvexHulls/FiniteConvexCombinations/BarycentricCoefficients/FiniteSimplexGammaAndObservation/Variant5cc54b9c520347b4/FiniteRefinementParametersAndPoints.lean"
+source_sha256 = "d434f3efd98279fabcb815037077c0afa94c78eaa75731baaf934224ce2c8660"
+reason = "finite simplex weights admit geometric and probabilistic readings, so a whole-file probability placement is not sufficiently justified"
+
+[[review_overrides]]
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/PrefixCoverage.lean"
+source_sha256 = "74c98d3a08bcf080acc07ddb3bc12c1eceda068c768936a24bfa00d1a4a7be59"
+reason = "finite-sequence recurrences and coverage bounds do not establish an analysis subject placement"
+
+[[review_overrides]]
+path = "GRWTSK/Data/Sampling/Descriptions.lean"
+source_sha256 = "d020aa1e4e686086eea4d6ba0c6aa321d9ff807cb621dd19abf25c674d1ed575"
+reason = "role and metadata records do not establish an analysis subject placement"
+
+[[review_overrides]]
+path = "GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/ModelTheoreticMethods/QuantifierElimination/EliminationData/Sampling/Descriptions.lean"
+source_sha256 = "d020aa1e4e686086eea4d6ba0c6aa321d9ff807cb621dd19abf25c674d1ed575"
+reason = "role and metadata records do not establish an analysis subject placement"
+
+[[subject_profiles]]
+key = "algebra"
+directory = "Algebra"
+taxonomy_ids = ["urn:uuid:e134e0c5-ee35-4f6b-8652-f5b27d7bbc9a"]
+labels = ["algebra"]
+keywords = ["ring", "field", "module", "polynomial", "homomorphism", "localization", "affine"]
+import_prefixes = ["Mathlib.Algebra", "Mathlib.RingTheory", "Mathlib.FieldTheory"]
+namespace_prefixes = ["GRWTSK.Algebra"]
+
+[[subject_profiles]]
+key = "group-theory"
+directory = "GroupTheory"
+taxonomy_ids = ["urn:uuid:c20ca165-7737-4291-9a0b-f39e7a3f3744"]
+labels = ["group theory"]
+keywords = ["group", "subgroup", "action", "orbit", "sylow", "permutation"]
+import_prefixes = ["Mathlib.GroupTheory"]
+namespace_prefixes = ["GRWTSK.GroupTheory"]
+
+[[subject_profiles]]
+key = "analysis"
+directory = "Analysis"
+taxonomy_ids = ["urn:uuid:f9dfc34e-20f8-4ee4-8c63-c54e06947ed9"]
+labels = ["analysis"]
+keywords = ["limit", "continuity", "derivative", "integral", "fourier", "laplace", "norm", "measure"]
+import_prefixes = ["Mathlib.Analysis", "Mathlib.MeasureTheory"]
+namespace_prefixes = ["GRWTSK.Analysis"]
+
+[[subject_profiles]]
+key = "linear-operator-theory"
+directory = "LinearAlgebra"
+taxonomy_ids = ["urn:uuid:827f5db9-1422-479e-a716-d9993230180c"]
+labels = ["linear algebra", "linear operator theory"]
+keywords = ["linear", "matrix", "determinant", "eigenvector", "basis", "operator", "tensor"]
+import_prefixes = ["Mathlib.LinearAlgebra"]
+namespace_prefixes = ["GRWTSK.LinearAlgebra"]
+
+[[subject_profiles]]
+key = "spectral-theory"
+directory = "Spectral"
+taxonomy_ids = ["urn:uuid:0aff8294-7302-4beb-80ae-72c2de9daf58"]
+labels = ["spectral theory", "spectrum"]
+keywords = ["spectral", "eigenvalue", "eigenspace", "resolvent", "charpoly", "dirichlet", "schrodinger"]
+import_prefixes = ["Mathlib.LinearAlgebra.Eigenspace", "Mathlib.LinearAlgebra.Matrix.Charpoly"]
+namespace_prefixes = ["GRWTSK.Spectral"]
+
+[[subject_profiles]]
+key = "combinatorics"
+directory = "Combinatorics"
+taxonomy_ids = ["urn:uuid:e107e8a9-0356-4c51-8080-494471f9eb4b"]
+labels = ["combinatorics"]
+keywords = ["finite", "counting", "enumeration", "graph", "coloring", "matching", "sequence"]
+import_prefixes = ["Mathlib.Combinatorics"]
+namespace_prefixes = ["GRWTSK.Combinatorics"]
+
+[[subject_profiles]]
+key = "discrete-mathematics"
+directory = "CombinatoricsAndDiscreteMathematics"
+taxonomy_ids = ["urn:uuid:bea4592d-e519-4511-b6ad-3e51d43f04fb"]
+labels = ["discrete mathematics"]
+keywords = ["finite", "discrete", "boolean", "bit", "word", "grid", "incidence"]
+import_prefixes = ["Mathlib.Data.Fin", "Mathlib.Data.Fintype"]
+namespace_prefixes = ["GRWTSK.CombinatoricsAndDiscreteMathematics"]
+
+[[subject_profiles]]
+key = "geometry"
+directory = "Geometry"
+taxonomy_ids = ["urn:uuid:f8eae694-aed8-4351-98c9-33f0cbb70448"]
+labels = ["geometry"]
+keywords = ["geometric", "euclidean", "riemannian", "curve", "bezier", "manifold", "metric"]
+import_prefixes = ["Mathlib.Geometry"]
+namespace_prefixes = ["GRWTSK.Geometry"]
+
+[[subject_profiles]]
+key = "mathematical-logic"
+directory = "FoundationsLogicAndTypeTheory"
+taxonomy_ids = ["urn:uuid:72d4d327-ab11-4ac8-a09c-0db545aed427"]
+labels = ["mathematical logic", "foundations", "proof theory", "type theory"]
+keywords = ["logic", "proof", "inference", "certificate", "soundness", "model", "theory", "rule", "type"]
+import_prefixes = ["Mathlib.Logic", "Mathlib.ModelTheory", "Mathlib.SetTheory"]
+namespace_prefixes = ["GRWTSK.FoundationsLogicAndTypeTheory"]
+
+[[subject_profiles]]
+key = "probability"
+directory = "Probability"
+taxonomy_ids = ["urn:uuid:8abb03fc-4067-4580-9b34-47a7aaee5943"]
+labels = ["probability theory"]
+keywords = ["probability", "measure", "random", "distribution", "expectation", "markov"]
+import_prefixes = ["Mathlib.Probability"]
+namespace_prefixes = ["GRWTSK.Probability"]
+
+[[subject_profiles]]
+key = "topology"
+directory = "Topology"
+taxonomy_ids = ["urn:uuid:03a6b10c-71cd-4062-8bef-bccc82c5b1de"]
+labels = ["topology"]
+keywords = ["topological", "continuous", "homotopy", "homology", "simplicial", "compact", "connected"]
+import_prefixes = ["Mathlib.Topology", "Mathlib.AlgebraicTopology"]
+namespace_prefixes = ["GRWTSK.Topology"]
+
+# Preserve the reviewed source placements retained by the accepted merge of PR #862.
+# Exact identities require renewed review after any source-byte change.
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/AlmostMathieu.lean"
+source_sha256 = "2857809dee0c7a93715a0d0cd54fca7c298da336900b41913f3af8a091660180"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/CommonJCounterexamples.lean"
+source_sha256 = "47ed1f22a56e797ced844caef2019bffb8228e917d73f2ab318726af7e26776a"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/Determinant/OrderedProduct/Checks/Audit.lean"
+source_sha256 = "b00c234d5135b269bd7fdf7bbeba658cb0ac4566ce635ef661f2e567025d57ed"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+source_sha256 = "0fa110d3a0c14635a38b19ed35c5112ac320fb35f2f53708b31c63858bbf3584"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/FiniteBooleanStructure/Variant3fe87eee19f8fad0/InvolutiveLinearEquivalence.lean"
+source_sha256 = "a7f516cae1bfc4d98ea4a131a3d4b5fb3ce1f61c024279b833c2ba4f7eb9302e"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/JacobiTransfer.lean"
+source_sha256 = "73231b6e456d5e35831c66f11e6277ae9eee99e86f6df008b1624a0225d69484"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/LinearMap/Checks/Positive/FiniteMixingObstruction.lean"
+source_sha256 = "cca952cbb19e584f51526ac56c2a365228117249b31fc63541e5c44084144644"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/LinearMap/FiniteMixingObstruction.lean"
+source_sha256 = "24d434b242593656c6a7fc2c80b5c0375b673e375651853351be08c7200c1128"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/PositiveKernelQuadraticForms.lean"
+source_sha256 = "4d633563e4befbab5989754694b6c9caf0f402e43ce6f685b230516b681a5dfb"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/SingularCongruenceObstruction.lean"
+source_sha256 = "f9cca2260c5eb576e6062086a1b57a1ac01355a8de8d10db0da3e7afa88342e0"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/QuadraticCertificates.lean"
+source_sha256 = "ae10c87366b4e95e2ad854182ebdc8966d017a4db0cd59afb6c321cbba5fc8f9"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/SchrodingerTransfer.lean"
+source_sha256 = "016b44346fb6c07748a3129bc049ec821bf1963c99c79ff7409017230756ebd6"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/Sturmian.lean"
+source_sha256 = "b016011a349e293102ad67d969ffd002ae1337bdb87adbe78bd13ca00c805da2"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Analysis/Fourier/ZModSubsetSum.lean"
+source_sha256 = "42b26eb217805f708dd00719b094ba96ee390de615789f82b93d52514282e1fc"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Analysis/MeasureTheory/IntegrationTheorems/RadonNikodymTheorem/GammaDirichletPacketTransport/Variant26c780c4c6e69c9f/SuppliedChangeOfMeasure.lean"
+source_sha256 = "a4930db5d6e67975fe8eb1d6660ead7cfda7aa34f364e80c37584788f93f66f6"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Analysis/OperatorTheory/SpectralTheory/FreeDirichletSpectrum.lean"
+source_sha256 = "8189962d68fbbfa2a8925c2ca0da35e1bc87beb7a7b6f3185b2787d9296c2fd9"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CombinatorialObjects/Permutations/FiniteCycleAndAvalancheCounterexamples/Variant3c830f470ac69f39/ZeroAvalancheCounterexamples.lean"
+source_sha256 = "3239905b8977bc081f5350f0ebde2e6dfe5d025724e2cab14877a38323fa292b"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Counterexamples/Checks/Positive/PositivityIsNotVanishing.lean"
+source_sha256 = "207beb75aeb06eae2d19ac7490ccaa86fc37a29d58a2091476bba0822d88e1c1"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/Logic/Counterexamples/Checks/Positive/PositivityIsNotVanishing.lean"
+source_sha256 = "207beb75aeb06eae2d19ac7490ccaa86fc37a29d58a2091476bba0822d88e1c1"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/NumberTheory/Moebius/LaplaceDirichletSeries.lean"
+source_sha256 = "539ca374e1520cff81ee07066bc4b2a71472fe941bf5881cf6ffd90a2be74744"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/NumberTheory/Moebius/PolynomialLaplaceHolomorphy.lean"
+source_sha256 = "688e3e75c0ab8d78614404bb45f28b9a477b1bbbb5e3f650b538c0bcabe92a1a"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/MeasureConstructions/ProductProbabilities/FiniteSimplexGammaAndObservation/Variant5cc54b9c520347b4/IndependentGammaProductLaw.lean"
+source_sha256 = "1cd9a346abe5f48949b1deaf634fc7e8249f038a5a8dd51af51e95ea4eee1dc8"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/ProbabilityMeasures/FiniteAtomicPackets/Variante4efdc9c8d172f77/AtomicProbabilityMeasure.lean"
+source_sha256 = "4e01db03d1ae93b9125801fe8663bd2103c35cb329732a9352bad13d888db33d"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[review_overrides]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/ProbabilityMeasures/FiniteAtomicPackets/Variante4efdc9c8d172f77/TaggedMixtureMeasureEquality.lean"
+source_sha256 = "92af595e38fb26f41dbcdb022215e0424a7a362ea4d99d4a78bf6adac75fc4a2"
+reason = "accepted mathematical subject placement is preserved by merge ab3e70df51ccfc8f2e2e8298ed64711b4a6a9dcc; the rejected classifier directory tail requires a fresh whole-file subject review"
+
+[[filename_overrides]]
+path = "GRWTSK/Algebra/AffineMap/SourceReconstruction.lean"
+source_sha256 = "b7ffbaad2e658d5d4dcd267ad04d41ecb0ca6c2e31dceb9cf0a5746a9653d500"
+filename = "RationalAffineViewAndReflectionLaws.lean"
+reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
+
+[[filename_overrides]]
+path = "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
+source_sha256 = "99172709bb9b2b2721b901e8dd174b0a61e56ea69d2ac97e78a622106832ab29"
+filename = "EqualTotalDifferentDiagonal.lean"
+reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
+
+[[filename_overrides]]
+path = "GRWTSK/Algebra/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+source_sha256 = "0fa110d3a0c14635a38b19ed35c5112ac320fb35f2f53708b31c63858bbf3584"
+filename = "RankOneDeterminantEncoding.lean"
+reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
+
+[[filename_overrides]]
+path = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+source_sha256 = "0fa110d3a0c14635a38b19ed35c5112ac320fb35f2f53708b31c63858bbf3584"
+filename = "RankOneDeterminantEncoding.lean"
+reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
+
+[[filename_overrides]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonRegularPart.lean"
+source_sha256 = "3dcf1277d3b03853b028580d6b033ad93652ea83dee2ea7c7f07953d1f3cf992"
+filename = "ConcreteNewtonPoleSubtractedBounds.lean"
+reason = "Complete-file editorial review: precise basename; accepted mathematical directory and all hypotheses preserved"
+
+[[consumer_rewrites]]
+path = "docs/reference/library-summary.json"
+source_sha256 = "0240f67d5eaf7ff6ec107124be5c69b235e8c5642ea5a2b31651cdaa1dff4797"
+reason = "Exact current filename consumer; pinned historical fields retained"
+target_sha256 = "11204b424e78d9da212df81aac67159248790d7ae11104da1bbde1919c53d244"
+[[consumer_rewrites.edits]]
+start = 72032
+end = 72088
+old = "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
+new = "GRWTSK/Algebra/BigOperators/EqualTotalDifferentDiagonal.lean"
+source_module = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
+target_module = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
+pointer = "/source_census/GRWTSK~1Algebra~1BigOperators~1QuadraticCounterexample.lean"
+[[consumer_rewrites.edits]]
+start = 865
+end = 921
+old = "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
+new = "GRWTSK/Algebra/BigOperators/EqualTotalDifferentDiagonal.lean"
+source_module = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
+target_module = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
+pointer = "/source_paths/1"
+[[consumer_rewrites.edits]]
+start = 495215
+end = 495273
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/source_census/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 34415
+end = 34473
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/source_paths/466"
+
+[[consumer_rewrites]]
+path = "docs/reference/math-source-catalog.json"
+source_sha256 = "42edfedb227cbf81577cde3792fc589ee9f96e9ee8e53b77320ff23c59216d1b"
+reason = "Exact current filename consumer; pinned historical fields retained"
+target_sha256 = "165818f6704788ad264a567fa217d0a571b330108ed3fb8b98b31da30ee890c1"
+[[consumer_rewrites.edits]]
+start = 269671
+end = 269727
+old = "GRWTSK/Algebra/BigOperators/QuadraticCounterexample.lean"
+new = "GRWTSK/Algebra/BigOperators/EqualTotalDifferentDiagonal.lean"
+source_module = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
+target_module = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
+pointer = "/current_source_observations/sources/2/path"
+[[consumer_rewrites.edits]]
+start = 240464
+end = 240515
+old = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
+new = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
+source_module = "GRWTSK.Algebra.BigOperators.QuadraticCounterexample"
+target_module = "GRWTSK.Algebra.BigOperators.EqualTotalDifferentDiagonal"
+pointer = "/current_source_observations/public_entrypoint_closure/2"
+[[consumer_rewrites.edits]]
+start = 521966
+end = 522024
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/current_source_observations/sources/465/path"
+[[consumer_rewrites.edits]]
+start = 255512
+end = 255565
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/current_source_observations/public_entrypoint_closure/242"
+
+[[consumer_rewrites]]
+path = "GRWTSK/Analysis/Energy/Checks/Declarations.lean"
+source_sha256 = "28809c1aba0124e3da4b6fd8171cf98f941083492f3f6046bdacab78860154e5"
+reason = "Exact current filename consumer; pinned historical fields retained"
+target_sha256 = "56bbd66b3cbd6fc5df6437d5930f9874239dfb485e8dd89ff0f31ce2e8652cf8"
+[[consumer_rewrites.edits]]
+start = 4891
+end = 4944
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+line = 86
+
+[[consumer_rewrites]]
+path = "GRWTSK/Analysis/Energy/Checks/result-contracts.json"
+source_sha256 = "0c72fd1fb861b14cc580b166f1084ef65c000c4987e688ad3f3cc6998728f29b"
+reason = "Exact current filename consumer; pinned historical fields retained"
+target_sha256 = "d11e0453c19868fa9e6a47c64ec95d1ed58a5761816ee14640b8183b205992f1"
+[[consumer_rewrites.edits]]
+start = 111952
+end = 112010
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 75583
+end = 75636
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/172/module"
+[[consumer_rewrites.edits]]
+start = 76035
+end = 76088
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/173/module"
+[[consumer_rewrites.edits]]
+start = 76451
+end = 76504
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/174/module"
+[[consumer_rewrites.edits]]
+start = 76822
+end = 76875
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/175/module"
+[[consumer_rewrites.edits]]
+start = 77223
+end = 77276
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/176/module"
+[[consumer_rewrites.edits]]
+start = 77547
+end = 77600
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/177/module"
+[[consumer_rewrites.edits]]
+start = 77876
+end = 77929
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/178/module"
+[[consumer_rewrites.edits]]
+start = 78419
+end = 78472
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/179/module"
+[[consumer_rewrites.edits]]
+start = 78959
+end = 79012
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/180/module"
+[[consumer_rewrites.edits]]
+start = 79351
+end = 79404
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/181/module"
+[[consumer_rewrites.edits]]
+start = 79779
+end = 79832
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/182/module"
+[[consumer_rewrites.edits]]
+start = 80132
+end = 80185
+old = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+new = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/consumer/rows/183/module"
+
+[[consumer_rewrites]]
+path = "GRWTSK/Analysis/Energy/Checks/result-oracle-fixtures.json"
+source_sha256 = "88bc2d08ee05442c4edb7a0a86b3f35eee160e6430a919b78e6d798b92c51bae"
+reason = "Exact current filename consumer; pinned historical fields retained"
+target_sha256 = "d4c2d05c20bc41bd8bc7b4a46a4a491647f7bc63b0d89b0a004d506083eb90d1"
+[[consumer_rewrites.edits]]
+start = 2035
+end = 2093
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/negatives/checks~1Analysis~1Energy~1Controls~1DeterminantPaysBudget.lean/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 8148
+end = 8206
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/negatives/checks~1Analysis~1Energy~1Controls~1DroppedResidual.lean/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 14489
+end = 14547
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/negatives/checks~1Analysis~1Energy~1Controls~1FiniteSamples.lean/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 20884
+end = 20942
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/negatives/checks~1Analysis~1Energy~1Controls~1MissingBudget.lean/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 26961
+end = 27019
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/negatives/checks~1Analysis~1Energy~1Controls~1SingleRate.lean/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 35782
+end = 35840
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/positive/evidence/context_source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 260871
+end = 260929
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/previous_generation/source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"
+[[consumer_rewrites.edits]]
+start = 264298
+end = 264356
+old = "GRWTSK/LinearAlgebra/Determinant/RankOneQuadraticForm.lean"
+new = "GRWTSK/LinearAlgebra/Determinant/RankOneDeterminantEncoding.lean"
+source_module = "GRWTSK.LinearAlgebra.Determinant.RankOneQuadraticForm"
+target_module = "GRWTSK.LinearAlgebra.Determinant.RankOneDeterminantEncoding"
+pointer = "/source_sha256/GRWTSK~1LinearAlgebra~1Determinant~1RankOneQuadraticForm.lean"

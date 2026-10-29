@@ -1,0 +1,150 @@
+id = "rh-abel-ramare-bilinear-v0.1"
+contribution = "grwtsk"
+kind = "passive-source-bound-verification-specification"
+math_repository = "grwtsk/math"
+math_commit = "7b863b2ea52083f4c21f454ac527c2608736a888"
+base_commit = "cae3dcde150c64eed320b211db40b9201cb70389"
+upstream_repository = "openai/math"
+upstream_commit = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+upstream_lean_toolchain = "leanprover/lean4:v4.34.1"
+upstream_mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+compile_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+upstream_analytic_admission = "NOT_RUN"
+complete_dependency_closure_reviewed = false
+root_promoted = false
+receipt = "NONE"
+operational_owner = "grwtsk/noeaaeue"
+lexical_definitions = 13
+lexical_theorem_scripts = 40
+central_literature_index = "PENDING; complete provenance supplement is supplied, central index not edited"
+required_checks = ["exact source and dependency hashes", "all 53 public declaration types", "all 40 theorem axiom closures", "complete inherited proof closure", "no sorryAx or project axioms", "source and independent kernel replay", "no weakening of positivity, cutoff, phase or support hypotheses", "no transfer of acceptance from earlier or upstream pins"]
+
+[[modules]]
+path = "GRWTSK/Analysis/FiniteSums/BilinearWindowSynthesis.lean"
+module = "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis"
+blob = "842fcfb27f865736577d3796232bdc8837ea0ab1"
+sha256 = "e479f4bf5c28a0eb3267ab63c88ed8a37ec4d314be72504b70f8d9b7b18d7c27"
+imports = ["Mathlib.Tactic", "Mathlib.Analysis.Complex.Exponential", "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic"]
+build_command = "lake build GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis"
+elaboration_command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Analysis/FiniteSums/BilinearWindowSynthesis.lean"
+declarations = [
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.windowInterval",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.mem_windowInterval",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.windowInterval_subset_range",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.windowInterval_eq_filtered",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.phase",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.norm_phase",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.phase_mul_sub",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.bilinearWindow",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.bilinearWindow_upstream_order",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.shiftedWindow",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.shiftedWindow_phase",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.phaseSynthesis",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.shiftedWindow_const_mul",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.shiftedWindow_sum",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.shiftedWindow_synthesis",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.norm_synthesis_le",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.windowMass",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.windowMass_nonneg",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.norm_shiftedWindow_le_mass",
+  "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis.weighted_origins_bound"
+]
+
+[[modules]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelBilinearSynthesis.lean"
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis"
+blob = "9d8b2f9d8c150240a5774b12d34953e69cb3d843"
+sha256 = "d7b0c5625d02389b1d757ab1bcfd45311b8d6577ec8fbd4cf90b046b73dc526e"
+imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor", "GRWTSK.Analysis.FiniteSums.BilinearWindowSynthesis"]
+build_command = "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis"
+elaboration_command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelBilinearSynthesis.lean"
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.cofactorCutoff",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.quotient_lt_cofactorCutoff",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.primeBand_ne_two",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.primeBand_sieve_range",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.complexCofactor",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.complexCofactor_oneBounded",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.ramarePrefix_re_eq_shiftedWindow",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.abs_ramarePrefix_le_windowMass",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.phasePrefix",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.phasePrefix_eq_ramare_synthesis",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.ramarePrefix_sub",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.raw_minus_phase_eq_residual",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.abs_raw_minus_phase_le",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.abs_phasePrefix_le",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.abs_bulkPrefixFunctional_le_envelope",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.bilinearPacketModel",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.bulk_sub_bilinearPacketModel",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.full_packet_bilinear_comparison",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.full_packet_phase_input_comparison"
+]
+
+[[modules]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelRamareCofactor.lean"
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor"
+blob = "64bf00052344c8c93ab85160bff2bc35f94bbedf"
+sha256 = "561a955be858df4b555010bf7d6800f1d22c0b3b11e196371eac8a1852af97b7"
+imports = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelBandMultiplicity"]
+build_command = "lake build GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor"
+elaboration_command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelRamareCofactor.lean"
+declarations = [
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.ramareCofactor",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.ramareCofactor_zero",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.ramareCofactor_abs_le_one",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.ramareCofactor_abs_le_half",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.ramareCofactor_eq_source_quotient",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.ramarePrefix",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.ramareRepeatedPrefix",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.raw_sub_repeat",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.coprimePrefix_eq_ramare",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.ramareCofactor_singleton_prime",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.abs_ramareRepeatedPrefix_le",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.abs_ramareRepeated_bulk_le",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.bulk_eq_ramare",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelRamareCofactor.abs_full_packet_sub_ramare_raw_le"
+]
+
+[[dependencies]]
+repository = "grwtsk/math"
+commit = "7b863b2ea52083f4c21f454ac527c2608736a888"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelBandMultiplicity.lean"
+blob = "ba28ac5d6a03d831c34cf7cd7a90d4066a3dd2a3"
+require_complete_transitive_closure = true
+[[dependencies]]
+repository = "leanprover-community/mathlib4"
+commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Complex/Exponential.lean"
+blob = "b5c9a8950bdd3dd513d39b5aa01738cc7e472a80"
+require_complete_transitive_closure = true
+[[dependencies]]
+repository = "leanprover-community/mathlib4"
+commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/SpecialFunctions/Trigonometric/Basic.lean"
+blob = "86ee5817a80feccb86eb9e6fae7b0730007c54c4"
+require_complete_transitive_closure = true
+
+[[upstream_sources]]
+path = "lean/OAI/NumberTheory/TwoPoint/Fourier/MinorArcRamareWindow.lean"
+blob = "7299ac5358a188eb261cbcc1110492b1ebe831aa"
+role = "quotient-only coefficient; finite window matching; analytic import NOT_RUN"
+[[upstream_sources]]
+path = "lean/OAI/NumberTheory/TwoPoint/Fourier/MinorArcRamareError.lean"
+blob = "daee421a8036cddcef4dbc2e36195fff63435a32"
+role = "prime-square error method; local exact Mobius correction separately derived"
+[[upstream_sources]]
+path = "lean/OAI/NumberTheory/TwoPoint/Fourier/MinorArcWindowInterval.lean"
+blob = "e527000f63ffd589177e50303fc7ecea0d38b473"
+role = "exclusive-cutoff and ordinary-window conventions"
+[[upstream_sources]]
+path = "lean/OAI/NumberTheory/TwoPoint/Fourier/MinorArcBilinearWindow.lean"
+blob = "fbeb3a7f02363014c6efec1b4c4209464c4ae90e"
+role = "source shape; fourth-moment analytic closure not imported"
+[[upstream_sources]]
+path = "lean/OAI/NumberTheory/TwoPoint/Fourier/MinorArcBilinearSieve.lean"
+blob = "2ae35df295ecd1707b098fbcd8d3349df5b0f4f6"
+role = "prospective analytic supplier; ALL rational-approximation and scale conditions pending"

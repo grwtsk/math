@@ -1,0 +1,86 @@
+import Mathlib.Topology.Closure
+import Mathlib.Topology.Continuous
+import Mathematics.Terrain.BooleanYoneda
+
+/-!
+# Boundary-certified incidence evolution
+
+Membership bits are locally constant away from the frontier of the observed
+neighborhood.  Thus a bit change is a neighborhood-boundary event.  Identifying
+that frontier with an arithmetic surgery locus remains a separate theorem.
+-/
+
+namespace Mathematics.Trajectory.Incidence
+
+open Filter
+open Set
+open scoped Topology
+
+universe u₁ u₂
+
+variable {Time : Type u₁} {State : Type u₂}
+
+/-- A bit changes at `t` when membership is not eventually constant there. -/
+def MembershipChangesAt
+    [TopologicalSpace Time]
+    (path : Time → State) (U : Set State) (t : Time) : Prop :=
+  ¬ ∀ᶠ s in 𝓝 t, (path s ∈ U ↔ path t ∈ U)
+
+/--
+Along a continuous path, a neighborhood-membership bit is locally constant at
+every time whose state is away from the neighborhood frontier.
+-/
+theorem eventually_membership_eq_of_not_mem_frontier
+    [TopologicalSpace Time] [TopologicalSpace State]
+    (path : Time → State) (U : Set State) (t : Time)
+    (hpath : ContinuousAt path t)
+    (hfrontier : path t ∉ frontier U) :
+    ∀ᶠ s in 𝓝 t, (path s ∈ U ↔ path t ∈ U) := by
+  by_cases ht : path t ∈ U
+  · have hinterior : path t ∈ interior U :=
+      (mem_interior_iff_notMem_frontier ht).2 hfrontier
+    filter_upwards [hpath (isOpen_interior.mem_nhds hinterior)] with s hs
+    exact ⟨fun _ => ht, fun _ => interior_subset hs⟩
+  · have htcompl : path t ∈ Uᶜ := ht
+    have hfrontierCompl : path t ∉ frontier Uᶜ := by
+      simpa [frontier_compl] using hfrontier
+    have hinterior : path t ∈ interior Uᶜ :=
+      (mem_interior_iff_notMem_frontier htcompl).2 hfrontierCompl
+    filter_upwards [hpath (isOpen_interior.mem_nhds hinterior)] with s hs
+    have hsU : path s ∉ U := interior_subset hs
+    exact ⟨fun h => (hsU h).elim, fun h => (ht h).elim⟩
+
+/-- Every genuine local membership change occurs on the observed frontier. -/
+theorem membershipChange_requires_frontier
+    [TopologicalSpace Time] [TopologicalSpace State]
+    (path : Time → State) (U : Set State) (t : Time)
+    (hpath : ContinuousAt path t)
+    (hchange : MembershipChangesAt path U t) :
+    path t ∈ frontier U := by
+  by_contra hfrontier
+  exact hchange
+    (eventually_membership_eq_of_not_mem_frontier
+      path U t hpath hfrontier)
+
+section MetricTrajectory
+
+variable {D : Type u₁} [MetricSpace State]
+
+/--
+The complete time-indexed rational-threshold code determines a trajectory
+pointwise when the beacon family is dense.
+-/
+theorem thresholdTrajectory_injective
+    (beacon : D → State) (hdense : DenseRange beacon)
+    {path₁ path₂ : Time → State}
+    (hcode : ∀ t,
+      Terrain.BooleanYoneda.metricThresholdCode beacon (path₁ t) =
+        Terrain.BooleanYoneda.metricThresholdCode beacon (path₂ t)) :
+    path₁ = path₂ := by
+  funext t
+  exact Terrain.BooleanYoneda.metricThresholdCode_injective
+    beacon hdense (hcode t)
+
+end MetricTrajectory
+
+end Mathematics.Trajectory.Incidence

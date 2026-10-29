@@ -1,0 +1,36 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-partial-discrepancy-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "7af5a300ab7206b79646f7af56b8744e26d488f1"
+parent_tree = "edda110852174c115a10a694c69a3d73ced0714d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / PARTIAL_PRIME_DISCREPANCY_EXACT / THREE_QUARTER_POWER_SAVING_OPEN"
+
+[arithmetic_identity]
+prime_interval_mass = "sum_{A<p<=B} log p"
+theta_increment = "theta(B)-theta(A)"
+theta_error_increment = "prime_interval_mass-(B-A)"
+exact = true
+
+[rounding]
+real_to_integer = "m=floor(y)"
+theta_constant_between_integers = true
+rounding_error = "<1"
+
+[seven_eighths]
+integer_target = "sup_{2X<=m<=4X} |sum_{2X<p<=m} log p -(m-2X)| <= C*X^(3/4)*(log X)^2"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+PARTIAL_PRIME_DISCREPANCY_EXACT = true
+THREE_QUARTER_POWER_SAVING_PROVED = false
+RECURRENCE_7_8_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

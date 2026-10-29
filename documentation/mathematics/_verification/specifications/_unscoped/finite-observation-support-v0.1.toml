@@ -1,0 +1,778 @@
+# Authored mathematical verification specification; not an execution receipt.
+# Source-bound validation and acceptance evidence is retained externally.
+# This specification grants no execution permission and releases no retained hold.
+schema = "grwtsk-math-replay-target-v1"
+id = "finite-observation-support-v0.1"
+owner_repository = "grwtsk/math"
+mathematical_author = "grwtsk contributors"
+formalization_assistance = "AI-assisted source development"
+lean_toolchain_file = "lean-toolchain"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lake_manifest_file = "lake-manifest.json"
+candidate_status = "STATIC_SPECIFICATION / VALIDATION_EXTERNAL"
+
+[scope]
+kind = "isolated-mathematical-replay-target"
+selection = "SupportedClaims and its finite classification specialization"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+public_root_exposure_required = false
+full_library_build_required = false
+extra_declarations_do_not_expand_claims = true
+application_correspondence_is_separate = true
+future_native_validation_requires_separate_authorization = true
+
+[source_binding]
+supplied_by = "external source binding and separately authorized validation"
+repository_commit_tree_and_blobs_required = true
+manifest_does_not_bind_its_own_content_identity = true
+all_selected_sources_must_belong_to_one_bound_tree = true
+required_external_identities = [
+  "repository commit",
+  "repository tree",
+  "this target manifest blob",
+  "authored exact-type expectation blob and exact byte digest",
+  "each selected module source blob",
+  "lean-toolchain blob",
+  "lake-manifest.json blob",
+  "Lean compiler and Init distribution identity",
+  "shared vector artifact blob and exact byte digest",
+]
+expected_type_binding = "Before actual-type comparison, bind the authored expectation file and its exact bytes. Separately elaborate its complete type terms, then compare the selected declarations' full types, ordered universe parameters, kernel kinds and owner modules against those expectations. Do not derive expectations from observed declaration types."
+type_representation = "lean4.33-expr-alpha-json/1: ignore bound-variable spelling and metadata nodes; map declared universe parameters to ordered indices; retain all other Expr, Level and Name constructors. No reduction, definitional-equality substitution, or reported-string-only comparison."
+
+[exact_type_expectations]
+path = "docs/verification/_unscoped/finite-observation-type-expectations-v0.1.toml"
+schema = "grwtsk-exact-declaration-expectations-v1"
+id = "finite-observation-type-expectations-v0.1"
+canonical_expression_grammar = "lean4.33-expr-alpha-json/1"
+required_count = 78
+
+[build]
+mode = "separately authorized direct Lean elaboration of every listed source file"
+required_compiler_options = ["-DwarningAsError=true"]
+require_exact_direct_imports_per_module = true
+require_compiler_toolchain_match = true
+require_zero_errors_and_warnings = true
+require_all_selected_modules = true
+external_dependency_closure = "Init"
+mathlib_required_for_selected_modules = false
+mathlib_fetch_required_for_this_target = false
+repository_dependency_manifest_is_bound_as_context = true
+generated_build_outputs_and_logs_are_external = true
+
+[finite_table_contract]
+row_type = "GRWTSK.Logic.Observation.FiniteClassification.Row"
+classifier = "GRWTSK.Logic.Observation.FiniteClassification.classifyRows"
+row_fields = ["trace_id:String", "admissible:Bool", "view:String", "claim:Bool"]
+query = "seen:String"
+outcomes = ["supported", "refuted", "ambiguous", "model_mismatch"]
+classification_scope = "the supplied list of admissible rows matching the query view"
+ambient_support_refutation_and_emptiness_require = "CoversFiber for the independently specified ambient model"
+ambiguity_requires_coverage = false
+model_mismatch_means = "no compatible trace in the supplied inventory"
+missing_input_is_model_mismatch = false
+schema_or_binding_failure_is_model_mismatch = false
+source_identifiers_authenticate_themselves = false
+row_identifier_uniqueness_is_an_external_profile_condition = true
+shared_vector_agreement_is_a_general_refinement_proof = false
+parser_and_external_implementation_correspondence_are_separate = true
+
+[shared_vectors]
+path = "verification/fixtures/finite-observation-support-v0.1.json"
+schema = "grwtsk.finite-observation-vectors/1"
+profile = "noe.finite-observation-support/1"
+case_count = 14
+expectations = "authored synthetic expected results; not a Lean execution receipt"
+external_consumer_requires_exact_byte_copy = true
+external_binding_requires_vector_blob_and_byte_digest = true
+lean_parses_or_executes_json = false
+shared_vector_agreement_is_a_general_refinement_proof = false
+native_validation_or_hold_release_implied = false
+
+[declaration_inventory]
+required_count = 78
+theorem_count = 58
+module_count = 2
+core_count = 53
+fixture_count = 25
+nonempty = true
+duplicate_free = true
+exact_names_selected = true
+exact_owner_modules_selected = true
+exact_universe_polymorphic_types_required = true
+reconcile_all_explicit_heads_in_selected_modules = true
+generated_constructors_recursors_and_projections_are_not_separate_inventory_entries = true
+generated_dependencies_remain_in_transitive_trust_inspection = true
+
+[trust]
+# Required acceptance policy, not an observed audit result.
+allowed_axioms = []
+reject_sorry_ax = true
+reject_native_decide = true
+reject_native_proof_dependencies = true
+reject_unreported_native_dependencies = true
+reject_unavailable_audit = true
+reject_missing_audit_as_empty_axiom_set = true
+require_transitive_dependency_inspection = true
+require_kernel_checked_proof_terms = true
+proof_search_success_alone_is_insufficient = true
+
+[axiom_audit]
+selection = "every explicitly declared theorem, including every fixture theorem"
+required_count = 58
+theorems = [
+  "GRWTSK.Logic.Observation.supports_nonempty",
+  "GRWTSK.Logic.Observation.refutes_nonempty",
+  "GRWTSK.Logic.Observation.supports_sound",
+  "GRWTSK.Logic.Observation.refutes_sound",
+  "GRWTSK.Logic.Observation.not_supports_of_empty_fiber",
+  "GRWTSK.Logic.Observation.not_refutes_of_empty_fiber",
+  "GRWTSK.Logic.Observation.ambiguity_of_opposite_compatible",
+  "GRWTSK.Logic.Observation.supports_refutes_inconsistent",
+  "GRWTSK.Logic.Observation.compatible_coarsening",
+  "GRWTSK.Logic.Observation.nonempty_fiber_coarsening",
+  "GRWTSK.Logic.Observation.supports_of_coarsened_support",
+  "GRWTSK.Logic.Observation.refutes_of_coarsened_refutation",
+  "GRWTSK.Logic.Observation.FiniteExamples.lost_receipt_nonempty",
+  "GRWTSK.Logic.Observation.FiniteExamples.lost_receipt_ambiguous",
+  "GRWTSK.Logic.Observation.FiniteExamples.impossible_observation_empty",
+  "GRWTSK.Logic.Observation.FiniteExamples.impossible_observation_no_certainty",
+  "GRWTSK.Logic.Observation.FiniteExamples.fine_observation_supports",
+  "GRWTSK.Logic.Observation.FiniteExamples.coarsening_can_lose_support",
+  "GRWTSK.Logic.Observation.FiniteExamples.fine_witness_is_necessary",
+  "GRWTSK.Logic.Observation.FiniteClassification.Flags.eq_of_fields",
+  "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_supported_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_refuted_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_ambiguous_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_model_mismatch_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.any_true_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.coversFiber_of_admissible_enumeration",
+  "GRWTSK.Logic.Observation.FiniteClassification.listed_nonempty_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.listed_support_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.listed_refutation_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.scan_positive_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.scan_negative_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.scan_positive_false_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.scan_negative_false_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.classify_supported_iff_listed",
+  "GRWTSK.Logic.Observation.FiniteClassification.classify_refuted_iff_listed",
+  "GRWTSK.Logic.Observation.FiniteClassification.classify_model_mismatch_iff_listed",
+  "GRWTSK.Logic.Observation.FiniteClassification.classify_ambiguous_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.classify_ambiguous_no_certainty",
+  "GRWTSK.Logic.Observation.FiniteClassification.classify_supported_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.classify_refuted_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.classify_model_mismatch_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.classified_support_sound",
+  "GRWTSK.Logic.Observation.FiniteClassification.empty_inventory_model_mismatch",
+  "GRWTSK.Logic.Observation.FiniteClassification.empty_inventory_no_certainty",
+  "GRWTSK.Logic.Observation.FiniteClassification.scan_inventory_congr",
+  "GRWTSK.Logic.Observation.FiniteClassification.classify_inventory_congr",
+  "GRWTSK.Logic.Observation.FiniteClassification.classifyRows_supported_iff",
+  "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.complete_inventory_covers",
+  "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.supported_control",
+  "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.refuted_control",
+  "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.ambiguous_control",
+  "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.model_mismatch_control",
+  "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.different_view_ignored",
+  "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.inadmissible_trace_ignored",
+  "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.omission_can_report_list_support",
+  "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.omitted_counterexample_breaks_coverage",
+  "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.empty_inventory_can_miss_real_fiber",
+  "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.repeated_and_reordered_inventory",
+]
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Observation/SupportedClaims.lean"
+required = true
+expected_direct_imports = ["Init"]
+explicit_declaration_count = 26
+theorem_count = 19
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Observation/FiniteClassification.lean"
+required = true
+expected_direct_imports = ["GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"]
+explicit_declaration_count = 52
+theorem_count = 39
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.Compatible"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "definition"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.NonemptyFiber"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "definition"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.Supports"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "definition"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.Refutes"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "definition"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.supports_nonempty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.refutes_nonempty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.supports_sound"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.refutes_sound"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.not_supports_of_empty_fiber"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.not_refutes_of_empty_fiber"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.ambiguity_of_opposite_compatible"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.supports_refutes_inconsistent"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.compatible_coarsening"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.nonempty_fiber_coarsening"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.supports_of_coarsened_support"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.refutes_of_coarsened_refutation"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.admitted"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "definition"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.lostReceipt"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "definition"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.occurred"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "definition"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.lost_receipt_nonempty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.lost_receipt_ambiguous"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.impossible_observation_empty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.impossible_observation_no_certainty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.fine_observation_supports"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.coarsening_can_lose_support"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteExamples.fine_witness_is_necessary"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.SupportedClaims"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Outcome"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "inductive"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "structure"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "definition"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.eq_of_fields"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_supported_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_refuted_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_ambiguous_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Flags.classify_model_mismatch_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.any_true_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.ListedAdmissible"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "definition"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.CoversFiber"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "definition"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.coversFiber_of_admissible_enumeration"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.listed_nonempty_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.listed_support_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.listed_refutation_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "definition"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "definition"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan_positive_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan_negative_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan_positive_false_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan_negative_false_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_supported_iff_listed"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_refuted_iff_listed"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_model_mismatch_iff_listed"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_ambiguous_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_ambiguous_no_certainty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_supported_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_refuted_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_model_mismatch_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classified_support_sound"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.empty_inventory_model_mismatch"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.empty_inventory_no_certainty"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.scan_inventory_congr"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classify_inventory_congr"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Row"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "structure"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classifyRows"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "definition"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.classifyRows_supported_iff"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "core"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.admitted"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "definition"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.lostReceipt"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "definition"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.occurred"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "definition"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.completeInventory"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "definition"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.complete_inventory_covers"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.supported_control"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.refuted_control"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.ambiguous_control"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.model_mismatch_control"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.different_view_ignored"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.inadmissible_trace_ignored"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.omission_can_report_list_support"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.omitted_counterexample_breaks_coverage"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.empty_inventory_can_miss_real_fiber"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "fixture"
+
+[[declarations]]
+name = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.repeated_and_reordered_inventory"
+owner_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Observation.FiniteClassification"
+kind = "theorem"
+role = "fixture"
+
+[[controls]]
+id = "P01"
+kind = "positive"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.supported_control"
+expected = "future kernel-checked proof of the exact stated finite control"
+description = "A nonempty compatible inventory whose members satisfy the claim classifies as supported."
+
+[[controls]]
+id = "P02"
+kind = "positive"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.refuted_control"
+expected = "future kernel-checked proof of the exact stated finite control"
+description = "A nonempty compatible inventory whose members refute the claim classifies as refuted."
+
+[[controls]]
+id = "P03"
+kind = "positive"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.ambiguous_control"
+expected = "future kernel-checked proof of the exact stated finite control"
+description = "Opposite-outcome compatible traces classify as ambiguous."
+
+[[controls]]
+id = "P04"
+kind = "positive"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.model_mismatch_control"
+expected = "future kernel-checked proof of the exact stated finite control"
+description = "An observation absent from the complete finite fixture classifies as model_mismatch."
+
+[[controls]]
+id = "P05"
+kind = "positive"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.different_view_ignored"
+expected = "future kernel-checked proof of the exact stated finite control"
+description = "A row at another view cannot create a counterexample to the requested view."
+
+[[controls]]
+id = "P06"
+kind = "positive"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.inadmissible_trace_ignored"
+expected = "future kernel-checked proof of the exact stated finite control"
+description = "An inadmissible row does not enter the compatible fiber."
+
+[[controls]]
+id = "P07"
+kind = "positive"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.complete_inventory_covers"
+expected = "future kernel-checked proof of the exact stated finite control"
+description = "The finite Boolean fixture independently establishes its inventory coverage."
+
+[[controls]]
+id = "P08"
+kind = "positive"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.repeated_and_reordered_inventory"
+expected = "future kernel-checked proof of the exact stated finite control"
+description = "Membership-equivalent inventories have the same result; repetition is not additional evidence."
+
+[[controls]]
+id = "H01"
+kind = "hostile"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.omission_can_report_list_support"
+expected = "future kernel-checked proof of the exact stated finite control"
+description = "A list may report support while an omitted compatible trace makes ambient support false."
+
+[[controls]]
+id = "H02"
+kind = "hostile"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.omitted_counterexample_breaks_coverage"
+expected = "future kernel-checked proof of the exact stated finite control"
+description = "The omitted contrary trace prevents the required coverage premise."
+
+[[controls]]
+id = "H03"
+kind = "hostile"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.Fixtures.empty_inventory_can_miss_real_fiber"
+expected = "future kernel-checked proof of the exact stated finite control"
+description = "An empty list can report model_mismatch while the ambient compatible fiber is nonempty."
+
+[[controls]]
+id = "H04"
+kind = "hostile"
+theorem = "GRWTSK.Logic.Observation.FiniteClassification.empty_inventory_no_certainty"
+expected = "future kernel-checked proof of the stated nonvacuity property"
+description = "Empty listed compatibility cannot establish support or refutation for any claim."
+
+[acceptance]
+requirements = [
+  "Bind this target, both source modules and the authored exact-type expectations to one exact commit, tree and blob inventory.",
+  "Obtain separate scoped authorization before any native validation; the manifest itself is not authorization.",
+  "Elaborate both selected files with the pinned compiler and required options.",
+  "Bind the authored expectation bytes before actual-type comparison; independently elaborate all 78 complete expected type terms without obtaining them from observed declaration types.",
+  "Resolve every selected declaration at its exact owning module; compare its full type expression, ordered universes and kernel kind against the bound authored expectation. Establish source forms from bound syntax and structure metadata, not kernel kind alone.",
+  "Audit transitive trust for every selected theorem; an unavailable result is not an empty axiom set.",
+  "Validate all finite controls as their stated mathematical propositions, not merely as named passing records.",
+  "Preserve the distinction between exact listed semantics and coverage-dependent ambient conclusions.",
+  "If an external finite-table consumer is evaluated, bind its profile, source and shared vector bytes separately; vector agreement is bounded conformance only.",
+]
+nonclaims = [
+  "This static target reports no observed elaboration, kernel replay or trust audit; source-bound evidence is retained externally.",
+  "Exact declaration types do not fix defining bodies; reviewed mathematical meanings, source identities and transitive trust remain required.",
+  "Authored expectations do not assert independent professional review, human approval, execution authority or external acceptance.",
+  "No source or row identity authenticates itself.",
+  "The inventory alone does not prove coverage of an external trace model.",
+  "The model_mismatch result is not a parser failure, missing input or unavailable execution result.",
+  "Classification creates no operational authority or permission.",
+  "Shared finite vectors do not prove a general external-program refinement theorem.",
+  "No process runner, mutable evidence ledger or external execution receipt is implemented here.",
+]

@@ -1,0 +1,43 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-boundary-classical-weak-mertens-666-v0.1"
+owner_repository = "grwtsk/math"
+issue = 666
+parent_issue = 657
+parent_pr = 659
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreBoundaryClassicalWeakMertens"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreBoundaryClassicalWeakMertens"
+
+[source_binding]
+stacked_parent_revision = "d967c3078f90e29e551a0c6f2a0a8a1889805f79"
+candidate_branch = "research/rh-classical-weak-mertens-666"
+theorem_source_commit = "89dc7c544bbfda9f876e7e31c7c1f270bc4fbabb"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreBoundaryClassicalWeakMertens.lean"
+theorem_source_git_blob = "c3f5e2ae29cb375e1ba4c696f84e894b58c87625"
+
+[selected_increment]
+step_function = "classicalMertensStepFunction"
+step_integrand = "classicalWeakMertensStepIntegrand"
+unit_ae_identity = "classicalMertensStepFunction_ae_eq_unit"
+unit_integral = "classicalWeakMertensStepIntegral_unit_eq_kernel"
+finite_integral = "classicalWeakMertensStepIntegral"
+finite_sum_identity = "classicalWeakMertensStepIntegral_eq_unitSum"
+dyadic_identity = "dyadicGlobalUnitWeakMertensEnergy_eq_stepIntegral"
+classical_source = "ClassicalWeakMertensStepSource"
+classical_to_global = "dyadicGlobalUnitWeakMertensSource_of_classicalStep"
+adapter_value = "classicalWeakMertensStepToDyadicGlobalUnitAdapter"
+classical_to_boundary = "subpolynomialCoreBoundarySignedPacket_of_classicalWeakMertensStep"
+proof_classification = "EXACT_MERTENS_STEP_FUNCTION_INTEGRAL_IDENTITY"
+next_obstruction = "prove or import the classical Weak Mertens logarithmic mean-square source"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+classical_weak_mertens_proved = false
+riemann_hypothesis_proved = false

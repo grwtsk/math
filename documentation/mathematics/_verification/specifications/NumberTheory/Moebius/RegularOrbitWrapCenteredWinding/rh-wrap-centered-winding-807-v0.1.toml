@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-wrap-centered-winding-807-v0.1"
+owner_repository = "grwtsk/math"
+issue = 807
+parent_issue = 805
+parent_pr = 806
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_WRAP_CENTERED_WINDING_SOURCE_DRAFT_WRAP_CENTERED_CORRELATION_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitWrapCenteredWinding"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitWrapCenteredWinding"
+
+[source_binding]
+stacked_parent_revision = "db123386910512c5a27633550ef1e56b913e30b7"
+candidate_branch = "research/rh-wrap-centered-winding-807-20261022"
+theorem_source_commit = "dfc79dad931bdc2fc3cfc46cc5257caa53ac68a3"
+theorem_source_git_blob = "b643c5e39be2a361e768e17e9877c0c62a4a25ce"
+mathematical_note_commit = "4a4711d8abc68f043375aa596f473973334b5c90"
+mathematical_note_git_blob = "26be86844350bfb80e1b67ab350d14632b721c1d"
+
+[evidence_states]
+source_draft = true
+half_index_wrap_reindex_scripted = true
+nonzero_winding_witness_scripted = true
+centered_wrap_coefficient_scripted = true
+centered_wrap_surface_scripted = true
+wrap_centered_correlation_estimate_proved = false
+zero_winding_centered_second_moment_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

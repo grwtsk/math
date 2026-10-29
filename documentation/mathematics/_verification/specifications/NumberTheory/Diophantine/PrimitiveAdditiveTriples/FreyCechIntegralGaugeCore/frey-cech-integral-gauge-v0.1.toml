@@ -1,0 +1,275 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "frey-cech-integral-gauge-v0.1"
+owner_repository = "grwtsk/math"
+issues = [100, 206, 221, 222, 230, 250, 270]
+root_module = "GRWTSK.Interfaces.FreyCechIntegralGaugeCore"
+build_target = "GRWTSK.Interfaces.FreyCechIntegralGaugeCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "686e9f9eebca59acf1f4f5e8375ed23d2e55f7a5"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyQuadraticJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionTranslation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionContact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyFormalNeighborhood"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAdicQuotients"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpen"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpenJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionUnlocalizedJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyHigherJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySectionJetEquiv"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyParameterSeries"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedSections"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyPolynomialCoordinates"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBasis"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedEnergy"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedLattice"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedCokernel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBaseChange"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyArchimedeanRealization"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.Localization.AwayPowerQuotient"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.AdicCompletion.CompatibleEquiv"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.WeightedInvolution"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationEnergy"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationIntegral"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationCokernel"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyTorsionTransportCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreePhaseCoefficientHeat"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCoefficientHeat"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCoefficientHeatCore"
+
+[[modules]]
+name = "GRWTSK.Algebra.Homology.ThreeCellCech"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHeat"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechHeatCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreeCellHodgeGauge"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHodgeComparison"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechHodgeCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreeCellGaugeMetric"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechGaugeMetric"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechGaugeMetricCore"
+
+[[modules]]
+name = "GRWTSK.Algebra.Homology.ThreeCellIntegralGauge"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.ThreeCellIntegralMinimum"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechIntegralGauge"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechIntegralGaugeCore"
+
+[[hostile_controls]]
+id = "reject-average-as-integral-sum"
+description = "Integral reduction uses sum(z), not mean(z). The old real mean is sum(z)/3. Never invert three in an arbitrary coefficient group."
+
+[[hostile_controls]]
+id = "reject-quotient-as-full-recovery"
+description = "The full split retains z1 and z2 in addition to sum and mismatch. Quotient data alone cannot recover the gauge."
+
+[[hostile_controls]]
+id = "reject-missing-edge-reconstruction"
+description = "Reconstruct all ordered edges by delta0(z)-e. Restoring vertices alone is not a six-field roundtrip."
+
+[[hostile_controls]]
+id = "reject-gauge-as-ring-quotient"
+description = "The construction is an additive/module quotient with zero-total simultaneous gauges, not a ring or scheme quotient."
+
+[[hostile_controls]]
+id = "reject-integral-anchor-as-minimum"
+description = "The anchored section is integral and split, but generally not Euclidean-minimal. The old minimum representative is unchanged."
+
+[[hostile_controls]]
+id = "reject-minimum-obstruction-as-quotient-torsion"
+description = "Z/3 x Z/4 x Z/4 measures the sublattice whose minimum is integral. The integral gauge quotient itself is free in the scalar integer model."
+
+[[hostile_controls]]
+id = "reject-missing-mod-three"
+description = "Retain 3 divides the vertex total even when mismatch is zero."
+
+[[hostile_controls]]
+id = "reject-missing-mod-four"
+description = "Retain both ordered mismatch differences modulo four; closure or mean alone cannot detect them."
+
+[[hostile_controls]]
+id = "reject-index-as-clearing-factor"
+description = "The scalar obstruction has order 48; the sharp common clearing scalar is 12. These invariants are different."
+
+[[hostile_controls]]
+id = "reject-radical-as-clearing"
+description = "The fixed prime support {2,3} does not justify replacing clearing 12 by radical 6."
+
+[[hostile_controls]]
+id = "reject-unbound-frey-lattice"
+description = "Use the old realEmbedding, basis, and actual six-field image lattice. Coefficient integrality must be equivalent to membership in that image."
+
+[[hostile_controls]]
+id = "reject-forward-obstruction-erasure-as-integral-inverse"
+description = "An integral weighted forward map can kill residues modulo three or four; this does not make its old rational inverse integral."
+
+[[hostile_controls]]
+id = "reject-normalizer-cost-erasing-weighted-cost"
+description = "The fixed scalar normalizer obstruction does not erase |ab|^k inverse clearing, |ab|^(k^2) index, or source/grade metric factors."
+
+[[hostile_controls]]
+id = "reject-fixed-support-as-uniform-rank-cost"
+description = "Repeating a fixed obstruction over more basis coordinates can increase its total index. Fixed support alone does not bound all arithmetic costs."
+
+[[hostile_controls]]
+id = "reject-finite-check-as-lean-acceptance"
+description = "Python integer/rational and exact matrix checks do not elaborate Lean, validate public signatures or audit the transitive trust closure."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "Lean elaboration, kernel acceptance, exact-type or transitive trust acceptance",
+  "execution or acceptance of historical roots, manifests or hostile controls",
+  "intrinsic geometric integral lattices, complete H0, minimal or Neron models",
+  "a ring quotient, scheme quotient, geometric gauge or Hodge comparison",
+  "full-source recovery from quotient coordinates without the retained gauge fields",
+  "integrality of every least-energy representative or isometry of the anchored split",
+  "a new universal stage-index, adelic norm or height theorem",
+  "erasure of prior weighted-port, model or extension-field arithmetic costs",
+  "canonical inter-anchor completion base-change, conductor or characteristic-two classification",
+  "uniform radical-excess, abc or RH conclusions",
+  "execution, workflow, worker, merge, issue closure or target promotion authority"
+]

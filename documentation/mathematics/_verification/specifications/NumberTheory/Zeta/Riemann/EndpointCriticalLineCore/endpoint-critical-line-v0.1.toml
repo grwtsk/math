@@ -1,0 +1,163 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "endpoint-critical-line-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.EndpointCriticalLineCore"
+build_target = "GRWTSK.Interfaces.EndpointCriticalLineCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "b77494ce33a213b702cd91cea90dd0debbb2ff98"
+parent_tree = "9665cb7888ddc587d209032f45274064d13bd207"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/EndpointBernoulliSourceCore/endpoint-bernoulli-source-v0.1.toml"
+inherited_target_blob = "35e35547d8faff9aa2e01c9beede39a980dfa53f"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+local_line_status = "Unelaborated source composition; no accepted numerical certificate or complete-head theorem."
+receipt_policy = "No execution authority or receipt; bind future acceptance externally to exact commit/tree/target."
+inventory_policy = "Every predecessor name, control, exact type, large finite decision and full import/axiom obligation persists. The selected catalog is not a complete transitive closure. Empty repeated arrays waive nothing. Reconcile new generated definitions, subtype equality, actual analytic orders and both-sign closed-head normalization."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ReflectionDisks"
+path = "GRWTSK/Analysis/Complex/ReflectionDisks.lean"
+source_git_blob = "2cf9f67077f044e129624846ae4223e7ff9ab2a5"
+required_declarations = ["GRWTSK.RiemannHypothesis.ReflectionDisks.fixed_iff", "GRWTSK.RiemannHypothesis.ReflectionDisks.sub_reflected", "GRWTSK.RiemannHypothesis.ReflectionDisks.norm_sub_reflected", "GRWTSK.RiemannHypothesis.ReflectionDisks.norm_sub_fixed_center", "GRWTSK.RiemannHypothesis.ReflectionDisks.mem_closedDisk_reflection_iff", "GRWTSK.RiemannHypothesis.ReflectionDisks.norm_sub_conjugated", "GRWTSK.RiemannHypothesis.ReflectionDisks.norm_conjugate_sub_center", "GRWTSK.RiemannHypothesis.ReflectionDisks.imaginary_enclosure", "GRWTSK.RiemannHypothesis.ReflectionDisks.norm_sub_eq_imaginary"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointCriticalLineCore"
+path = "GRWTSK/Interfaces/EndpointCriticalLineCore.lean"
+source_git_blob = "885973fdce868385678ca05b25c8e67b6934b30e"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointCriticalLine"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointCriticalLine.lean"
+source_git_blob = "8205ae32c8fd38c78783d5417e11acde63518628"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.EndpointCriticalLine.center_on_line", "GRWTSK.RiemannHypothesis.Checks.EndpointCriticalLine.ordinate_error", "GRWTSK.RiemannHypothesis.Checks.EndpointCriticalLine.positive_height", "GRWTSK.RiemannHypothesis.Checks.EndpointCriticalLine.distance_eq_ordinate", "GRWTSK.RiemannHypothesis.Checks.EndpointCriticalLine.unique_simple_critical_point", "GRWTSK.RiemannHypothesis.Checks.EndpointCriticalLine.exists_simple_critical_pair", "GRWTSK.RiemannHypothesis.Checks.EndpointCriticalLine.canonical_count_at_fifteen_lower", "GRWTSK.RiemannHypothesis.Checks.EndpointCriticalLine.canonical_count_lower"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ReflectionIsolationControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/ReflectionIsolationControls.lean"
+source_git_blob = "d36fb720a21913d53e49eeac81c431694c7c7954"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.ReflectionIsolationControls.leftPoint", "GRWTSK.RiemannHypothesis.Checks.ReflectionIsolationControls.middlePoint", "GRWTSK.RiemannHypothesis.Checks.ReflectionIsolationControls.rightPoint", "GRWTSK.RiemannHypothesis.Checks.ReflectionIsolationControls.syntheticSet", "GRWTSK.RiemannHypothesis.Checks.ReflectionIsolationControls.reflected_pair", "GRWTSK.RiemannHypothesis.Checks.ReflectionIsolationControls.symmetry_without_uniqueness", "GRWTSK.RiemannHypothesis.Checks.ReflectionIsolationControls.reflections_are_different", "GRWTSK.RiemannHypothesis.Checks.ReflectionIsolationControls.conjugation_moves_center", "GRWTSK.RiemannHypothesis.Checks.ReflectionIsolationControls.off_line_center_not_fixed", "GRWTSK.RiemannHypothesis.Checks.ReflectionIsolationControls.local_isolation_does_not_exhaust", "GRWTSK.RiemannHypothesis.Checks.ReflectionIsolationControls.lower_count_not_upper"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.LocalZeroSymmetry"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/LocalZeroSymmetry.lean"
+source_git_blob = "773be0d68a545daf05f76439cbdbd1a3edb59366"
+required_declarations = ["GRWTSK.RiemannHypothesis.LocalZeroSymmetry.reflectedPoint", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.conjugatePoint", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.reflectedPoint_val", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.conjugatePoint_val", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.conjugatePoint_involutive", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.on_line_of_unique_disk", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.distinct_reflection_in_disk", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.derivative_ne_zero_of_simple", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.derivative_conjugate", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.conjugate_simple", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.conjugate_height", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.ne_conjugate_of_im_ne_zero", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.conjugate_in_disk", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.unique_conjugate_disk", "GRWTSK.RiemannHypothesis.LocalZeroSymmetry.heightCount_ge_two"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.CriticalReflection"
+path = "GRWTSK/Analysis/Complex/CriticalReflection.lean"
+source_git_blob = "12fefa13c8e031e119b25db0564f61faa017f72c"
+required_declarations = ["GRWTSK.RiemannHypothesis.criticalReflection", "GRWTSK.RiemannHypothesis.critical_reflection_involutive"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean"
+source_git_blob = "3768bab2649a6ae19e4973bf2ee2dfe41bfe3fe9"
+required_declarations = ["GRWTSK.RiemannHypothesis.NontrivialZetaZero", "GRWTSK.RiemannHypothesis.zeroConjugate", "GRWTSK.RiemannHypothesis.zeroReflect"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZeroSymmetry"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean"
+source_git_blob = "5f465139ee895a99b79af84ee0866aa5f637bdfa"
+required_declarations = ["GRWTSK.RiemannHypothesis.NontrivialZetaZero.critical_reflection", "GRWTSK.RiemannHypothesis.NontrivialZetaZero.conjugate"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
+source_git_blob = "892f796ab9074813b89f58b2321f2683c80bef7b"
+required_declarations = ["GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.ZeroPoint", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.multiplicity_factorization", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.multiplicity_cast", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.heightCount", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.head_card_le_heightCount", "GRWTSK.RiemannHypothesis.CanonicalZeroDivisor.heightCount_mono"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointBernoulliSource"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointBernoulliSource.lean"
+source_git_blob = "db0d62d81bf9949d1c12945a36c8f939d99183d6"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.uniform_source", "GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.centerEstimates", "GRWTSK.RiemannHypothesis.Checks.EndpointBernoulliSource.unique_simple_point"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointBernoulliSourceCore"
+path = "GRWTSK/Interfaces/EndpointBernoulliSourceCore.lean"
+source_git_blob = "a062d72cf6a4fd17331971c3a66201de4d5bb679"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Calculus/Deriv/Star.lean"
+source_git_blob = "d59765b95981d2436f134a93b3506e360bfacbaf"
+required_declarations = ["HasDerivAt.conj_conj"]
+
+[[controls]]
+id = "R01"
+requirement = "Critical reflection is exactly 1-conj(z), not 1-z or conjugation alone."
+
+[[controls]]
+id = "R02"
+requirement = "Fixed-point real part is exactly one-half; set invariance alone is not pointwise invariance."
+
+[[controls]]
+id = "R03"
+requirement = "Same closed disk is preserved only with exact center-on-line proof; retain non-strict boundary inclusion."
+
+[[controls]]
+id = "R04"
+requirement = "Local uniqueness quantifies over every actual canonical point in that disk, not a numerical record list."
+
+[[controls]]
+id = "R05"
+requirement = "Off-line reflected pair in one disk must remain two distinct points; no projection or deduplication."
+
+[[controls]]
+id = "R06"
+requirement = "Simple multiplicity comes from actual analytic order and nonzero derivative, not distinct-point uniqueness."
+
+[[controls]]
+id = "R07"
+requirement = "Conjugation transports both point and center; negative point has derived order one via input/output conjugate derivative."
+
+[[controls]]
+id = "R08"
+requirement = "Distinctness of conjugates requires the nonreal hypothesis; absolute height is not a point-identity key."
+
+[[controls]]
+id = "R09"
+requirement = "Literal old center, radii, finite evaluator and source-remainder tolerances remain exactly unchanged."
+
+[[controls]]
+id = "R10"
+requirement = "The geometric ordinate interval is not a new evaluated accuracy improvement or ordinal-zero assertion."
+
+[[controls]]
+id = "R11"
+requirement = "Count conclusion is 2 <= heightCount(15) in the existing BOTH-SIGN closed normalization, not the reverse inequality."
+
+[[controls]]
+id = "R12"
+requirement = "A symmetric synthetic ambient set can have a unique local line point and additional off-line points outside the disk."
+
+[[controls]]
+id = "R13"
+requirement = "No all-height, bounded-head exclusion, complete inventory, zero-divisor tail or prime-margin conclusion is exported."
+
+[[controls]]
+id = "R14"
+requirement = "Inherited large exact finite decisions and all analytic scripts must elaborate with the pinned transitive trust closure; source existence is not a receipt."

@@ -1,0 +1,124 @@
+# Source-locked passive mathematical verification. This TOML does not execute commands.
+schema_version = "0.1"
+request_id = "radical-fiber-hidden-spectrum-20261026"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "d591c8867490d3901f3352d76d05bb53ea821b90"
+operator_source_path = "GRWTSK/GraphSandwichDiffusion.lean"
+operator_source_blob = "7d861591c9721a85819f291aac5178fffd29101a"
+type_source_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+type_source_blob = "265a9a4d8e237b07d86fcef520a681d61e08e8c8"
+grothendieck_source_path = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+grothendieck_source_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+relation_source_path = "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RelationSandwich.lean"
+relation_source_blob = "9761b5dd5d6ada7344031c07386586c72c1d970a"
+sofic_source_path = "GRWTSK/NumberTheory/Farey/DynamicSoficSpectralCover.lean"
+sofic_source_blob = "7f9560ad5deee8c3a47c10c3326d2ac6ff6f3cc8"
+weighted_graph_source_path = "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/AlgebraicGraphTheory/FiniteWeightedLaplacian.lean"
+weighted_graph_source_blob = "7f414d21cb768cc938f1ef2e4a3077b41c62bb45"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+operator_direct_imports = [
+  "Mathlib",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich",
+  "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover",
+]
+type_direct_imports = [
+  "GRWTSK.Algebra.KTheory.GrothendieckPort",
+  "GRWTSK.GraphSandwichDiffusion",
+  "Mathlib.Data.Nat.Factorization.Basic",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "Mathlib.Tactic",
+]
+mathematical_reference = "docs/reference/literature/reading-background/radical-fiber-spectral-decomposition-20261026.md"
+math_reference_commit = "c968e2c3a1d677b368016a6843bf5fb24225e5a0"
+math_reference_blob = "6a72152c30bdb03bf0993155bfb0344cc99202e3"
+prior_history_bound_spec = "docs/verification/Algebra/KTheory/radical-observation-history-decoder-error-20261026.toml"
+prior_history_source_commit = "f4155d626ba567822d4a3a7df8ad9474cb08185d"
+prior_history_math_blob = "bfc33bcef38bfd0ac9191132e98fb3ffe0ba4a7d"
+tracking_issue = "https://github.com/grwtsk/math/issues/1329"
+blocking_gate = "https://github.com/grwtsk/math/issues/1267"
+classification = "FINITE_ARITHMETIC_SPECTRAL_HIDDEN_FIBER_CONTRAST"
+paper_derived = false
+source_status = "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_ACCEPTED"
+new_lean_declarations_status = "NOT_WRITTEN"
+elaboration_status = "NOT_RUN"
+compilation_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+transitive_axiom_audit_status = "NOT_RUN"
+receipts = "NOT_RUN"
+effectful_verification_dispatched = false
+remote_authorization = false
+merge_authorized = false
+force_push_authorized = false
+source_additions_allowed_before_gate = false
+root_promotion_authorized = false
+physical_3d_navier_stokes_result = false
+physical_4d_yang_mills_mass_gap_result = false
+analytic_k0_realization = false
+unconditional_global_arithmetic_density = false
+
+existing_declarations_needing_independent_acceptance = [
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.totalWeight_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalEdgeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_edge_iff_certified",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.diagonalKernel_typeMass_succ_ge_inv_two_cutoff_sq",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_multiplicityOneType_decoder_on_certified_sieve",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_type_complete_feature_only_steering_of_collision",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.kZeroRadical_eq_of_radical_eq",
+  "GRWTSK.Algebra.KTheory.JointCollision.no_exact_type_decoder_of_collision",
+]
+
+first_unwritten_source_lemma = "For x,y in positive-coprime scope with equal Nat.radical a, the source rows of diagonalKernel obey K(x,z)-K(y,z)=(a/(Z+a))*(indicator(z=x)-indicator(z=y)), all z in positive scope."
+additional_proofs_in_dependency_order = [
+  "Prove source positive survivor restriction and the exact formula for diagonalKernel on that scope; do not put excluded weight-zero multiples of 3 into a strictly positive stationary l2 space.",
+  "Prove exact row difference first, then the signed contrast evolution and TV(delta_x*K^n,delta_y*K^n)=(a/(Z+a))^n.",
+  "Construct the finite set F of radical labels and its fibers, their exact weights a, multiplicities m_a, and invariant coarse function space.",
+  "Compute lumped Q(a,b)=(m_b*b+a*indicator(a=b))/(Z+a), plus its stationary coarse law and exact KJ=JQ intertwining.",
+  "Prove the orthogonal decomposition in l2(rho) into functions constant on radical fibers and coordinate-sum-zero contrasts supported within each fiber.",
+  "Show every fiber contrast is an eigenfunction with eigenvalue a/(Z+a) and dimension m_a-1, with diffusion height Z/(Z+a).",
+  "Prove finite characteristic polynomial identity det(tI-K)=det(tI-Q)*product_a(t-a/(Z+a))^(m_a-1), including coincident eigenvalues and full algebraic multiplicity.",
+  "Prove future coarse radical observation history laws coincide for every pair of initial states with the same radical, without requiring initial stationarity.",
+  "For an interior classified time with both earlier and later observations, require actual stationary reversibility; establish posterior conditional law and optional Shannon entropy with finite probability APIs separately.",
+  "For finite discrete C* algebras C(S) and C(F), only after importing a genuine K0 construction prove quotient rank = |S|-|F|; do not canonically identify integral K0 cokernel with contrast eigenvector lattice.",
+]
+
+negative_controls = [
+  "N=12,q=3 positive survivors {1,2,4,5,7,8,10,11}, normalizer Z=40; radical class {2,4,8} has hidden dimension 2 and exact eigenvalue 1/21.",
+  "At N=12 the hidden I-K spectral height is 20/21; the stationary fine-state probability of each of 2,4,8 is 7/159.",
+  "At N=12 TV(delta2*K^n,delta4*K^n)=(1/21)^n, while all radical-only observation history laws started from 2/4/8 coincide.",
+  "Stationary Boolean Bayes error of radical-only decoder at N=12 equals 7/159 and conditional entropy equals (7/53)*binaryEntropy(1/3) bits.",
+  "Do not infer exact fine type reconstruction or K0 invertibility from a strong lumpability quotient.",
+  "A finer observation with explicit 2-adic valuations can distinguish 2,4,8; the invisible-mode claim is only for radical-factored observations.",
+  "The source's zero-weight n divisible by 3 are not in the positive-reversible l2 space; do not silently count their zero eigenvectors as hidden radical contrasts.",
+  "The local Metropolis odd-path kernel does not generally share this dense diagonalKernel fiber decomposition; do not transfer its spectral labels.",
+  "Eigenspaces for different radical classes may share numerical eigenvalues with the coarse quotient; charpoly multiplicity is governed by the full product and must not be truncated.",
+  "Over integers the finite K0 cokernel and integral contrast sublattice are not canonically equal; a two-state fiber contrast may have nonunit index.",
+  "The unrelated seedInventory has empty certified relation; its candidate mathematical relationships are not certified merely by these arithmetic Markov identities.",
+]
+
+[commands_proposed_not_executed]
+checkout_pin = 'test "$(git rev-parse HEAD)" = d591c8867490d3901f3352d76d05bb53ea821b90'
+graph_blob_pin = 'test "$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)" = 7d861591c9721a85819f291aac5178fffd29101a'
+k_theory_blob_pin = 'test "$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)" = 265a9a4d8e237b07d86fcef520a681d61e08e8c8'
+mathlib_pin = 'test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = db584cd6d46c92f209a44c0f1c829460d327499d'
+toolchain_version = "lake env lean --version"
+graph_leaf_compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+k_theory_leaf_compile = "lake build --wfail GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+graph_elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/GraphSandwichDiffusion.lean"
+k_theory_elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+transitive_axiom_audit = "In executor-local temporary import driver, #check / #print axioms exact existing declarations and later any new claims. Audit complete dependency closure including sorryAx under an actual accepted pinned toolchain."
+fresh_kernel_check = "Determine the real supported kernel-checker invocation in authorized runtime; retain executable/version/argv/exit and diagnostics, never invent a checker CLI."
+future_new_source_pin = "NOT_YET_WRITTEN. Source commits/blobs for existing candidates DO NOT confer acceptance on future Lean declarations."
+status_graph_compile = "NOT_RUN"
+status_k_theory_compile = "NOT_RUN"
+status_kernel = "NOT_RUN"
+status_axioms = "NOT_RUN"
+
+# All effectful runners and execution receipts belong outside math in grwtsk/noeaaeue.

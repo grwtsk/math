@@ -1,0 +1,66 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-safe-shift-quartic-packing-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "fdfedbcc7b8a7a4ce1d429df8d6504b202de48cd"
+parent_tree = "78c20fdf6a2e11d68392d6a2f4fc75e1a863c9bb"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / DYADIC_QUARTIC_PACKING_DEFINED / FINITE_STAGE_GREEN_ENVELOPE_BOUND"
+
+[dyadic_points]
+axial = "(Re evenBlock, Re(evenBlock-centerBlock))"
+transverse = "(Re evenBlock, Im oddBlock)"
+stage = "three consecutive dyadic source blocks"
+stage_nonnegative = true
+
+[finite_stage_bounds]
+common_block_envelope = "B_j = X_j^-1/2 * sqrt(augmentedEnergy X_j) * sqrt(radiusBudget(M_z))"
+axial_point_norm_sq = "<= 5*B_j^2"
+transverse_point_norm_sq = "<= 2*B_j^2"
+axial_edge_product = "<= 100*(B_j^2+B_(j+1)^2)*(B_(j+1)^2+B_(j+2)^2)"
+transverse_edge_product = "<= 16*(B_j^2+B_(j+1)^2)*(B_(j+1)^2+B_(j+2)^2)"
+quartic_occupied = "<= 148*(B_j^2+B_(j+1)^2)*(B_(j+1)^2+B_(j+2)^2)"
+all_dyadic_energy_bound_used = false
+rh_used = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicSafeShiftQuarticPacking"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicSafeShiftQuarticPacking.lean"
+blob = "fec6614765aad7b082fcc0522aeb8effacf4f7af"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftQuarticPackingControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicSafeShiftQuarticPackingControls.lean"
+blob = "84b85024e98fefdb787a19d655f914ddb2db4369"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "7c398bdae7a54ea1422f6bb42c5b30282bd1b8ce"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-safe-shift-quartic-packing.md"
+blob = "8ed0a47cfda81f25909e03f4b0183defe00fc7f9"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+DYADIC_QUARTIC_PACKING_DEFINED = true
+FINITE_STAGE_GREEN_ENVELOPE_BOUND = true
+ASYMPTOTIC_SCALE_CONSTRUCTED = false
+COMMON_POSITIVE_COEFFICIENT_LIMIT_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "factor dyadic axial/transverse stages by a^4 and a^2*t^2 under off-line scope",
+  "derive a source window scale r_j",
+  "prove common positive lower/asymptotic coefficient information",
+  "prove the scaled 148-envelope tends to zero",
+  "do not substitute AllDyadicEnergyBound for the missing new asymptotic theorem"
+]

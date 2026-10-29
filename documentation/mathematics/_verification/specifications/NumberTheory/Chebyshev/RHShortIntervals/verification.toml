@@ -1,0 +1,250 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "rh-short-intervals-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+source_tree = "4a2ed67586e73da79adc50ffb1eafa8cd18b5615"
+baseline_commit = "7cb6aedb8b6b1df1c738fbca28d0203545450748"
+provenance_commit = "fc56f433db94a616a27bff04bceb99bf29eba0ad"
+verification_issue = 1411
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+canonical_RH_proved_unconditionally = false
+coarse_implication = "Source scripts derive a fixed-constant Cramer-scale count from canonical RH alone; native acceptance pending"
+sharp_implication = "PARTIAL: RH -> actual SharpZeroAllowance is not proved; exact 1+epsilon and 3+epsilon consumers retain that premise"
+new_definitions = 10
+new_theorem_scripts = 30
+lexical_identifiers = 40
+source_lines = 928
+inventory_scope = "Source text, not an elaborated declaration census"
+root_imports_changed = false
+dependency_pins_changed = false
+remote_execution_dispatched = false
+git_identity = "Connector-configured; no author/committer override exposed or claimed"
+provenance = "docs/reference/literature/reading-background/rh-short-interval-provenance.md"
+provenance_blob = "4054da68a139fab13636418426cf391ade4fb129"
+provenance_sha256 = "78ede9a4056f2e87e057440c68c1dc838d08489f470347c0590d2d99aa6512e0"
+central_literature_ledger_changed = false
+central_literature_cross_reference = "PENDING; complete additive provenance entry published without overwriting central ledger"
+pickup_wrapper_prerequisite_issues = [1405, 1406, 1407, 1408, 1409, 1410]
+prerequisite_scope = "Pickup issues apply additionally to the DyadicBirthBound wrapper. Full canonical tent/contour/Jensen closure requires its own exact-source audit."
+publication_rule = "Source and later manifest commits must be reachable from main; manifest never claims its own commit hash"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Chebyshev/RHShortIntervalCount.lean"
+namespace = "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount"
+blob = "4753302b9232399ce77682a01a20d676efd5aee0"
+sha256 = "ccb95235916447a2a0a66ea4f32426af98ca31738c06f9f6294b540e153e2b9d"
+bytes = 23131
+lines = 507
+imports = ["GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount", "GRWTSK.Analysis.Series.ScaledHeightCountingTail", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint"]
+declarations = ["GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.re_zero_of_RH", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.norm_tentKernel_le_low", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.rh_complement_bound", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.rh_zeroContribution_bound", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.coarseSpectralConstant", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.coarseSpectralConstant_nonnegative", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.rh_log_window_zero_bound", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.exp_ge_square_quarter", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.many_primes_in_log_coordinates_of_RH", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.many_primes_of_RH", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.prime_in_short_interval_of_RH", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.consecutive_prime_gap_of_RH", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.many_primes_dyadic_of_RH", "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.many_primes_of_dyadicBirthBound"]
+module = "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Chebyshev/SharpShortIntervalCount.lean"
+namespace = "GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount"
+blob = "8d3d4f290cadb1a94e4d610c2fa11a728e35f10f"
+sha256 = "4d7f67ecf8a8822ad449472d4d17a11071d4cbdaf317fa704649312eaa190e35"
+bytes = 9688
+lines = 214
+imports = ["GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount"]
+declarations = ["GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount.SharpZeroAllowance", "GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount.SharpLowerCount", "GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount.count_gt_of_sharp_log_margin", "GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount.sharpLowerCount_of_zero_allowance", "GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount.many_primes_three_epsilon", "GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount.prime_one_epsilon", "GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount.SharpRHAnalyticReturn"]
+module = "GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Chebyshev/ShortIntervalPrimeCount.lean"
+namespace = "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount"
+blob = "03dd07c75c4c2273850ea249d50e60db83a15961"
+sha256 = "0e32a3652b22a7fe3b83e588900ca3db868bd2ee15de5ca9327a93fe03672eea"
+bytes = 9501
+lines = 207
+imports = ["GRWTSK.NumberTheory.Chebyshev.RieszSourceSecondDifference", "Mathlib.NumberTheory.Chebyshev", "Mathlib.Tactic"]
+declarations = ["GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.primeWindow", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.primeCount", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.mem_primeWindow", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.primeCount_pos_iff", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.mangoldtTent", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.primeTent", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.properPowerTent", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.zeroContribution", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.mangoldtTent_nonnegative", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.properPowerTent_nonnegative", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.mangoldtTent_complex", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.mangoldtTent_split", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.primeTent_le_count", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.properPowerTent_le_psi_sub_theta", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.exists_uniform_proper_power_constant", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.mangoldtTent_explicit", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.prime_count_master_bound", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.prime_count_of_allowances", "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount.rational_correction_ge_neg_one"]
+module = "GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/NumberTheory/Chebyshev/GeneralTentExplicitFormula.lean"
+blob = "ba1c6192ad7d932d30a78a681d531a9d89535d82"
+role = "Full canonical source formula, including complete contour and divisor dependencies"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/NumberTheory/Chebyshev/RieszSourceSecondDifference.lean"
+blob = "f8f0bfe5a2a77f6c339a5fc13a18a390c907c43d"
+role = "Actual first-Riesz/tent source, no assumed affine normalization"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentAbsolute.lean"
+blob = "ad10f714e5c0d09b0bc73191f826833a6c69f772"
+role = "Full norm summability and exact head/complement split"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
+blob = "8234be9318b20de245a21d1699a1c74857799744"
+role = "Actual analytic multiplicities and complete both-sign zero heights"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalHighCounting.lean"
+blob = "dd4a7447fa9441839b2e76e0a0023d4e33249228"
+role = "Coarse actual Jensen coefficient and finite low head"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZeroDefinitions.lean"
+blob = "b110c43429fd3bf17b7ddbafa471803b8e0f3a5a"
+role = "Exact canonical RH exclusions"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZeroSymmetry.lean"
+blob = "09333a73feb176009cfe19f0ae48d436a5af8ecd"
+role = "Actual nontrivial zero transport and open strip"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/Analysis/RealAnalysis/TentWeight.lean"
+blob = "85df4238642a1643fdd4f8715ea1d3e55aac33d3"
+role = "Normalized tent with zero endpoints and main term h"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/Analysis/RealAnalysis/TentRationalCorrection.lean"
+blob = "e05e112f1c5fab36d9ee9b6f49536f5e7b700ccb"
+role = "Signed rational correction, not omitted"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/Analysis/ComplexAnalysis/IntervalMellinKernel.lean"
+blob = "1f478cfe0bda77d01e13940e10cd2cec1e0798dd"
+role = "Pole-free compact integral density bound"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/Analysis/ComplexAnalysis/TentMellinKernel.lean"
+blob = "ce9e1864cc35e540d02dc249704a9555debf2aeb"
+role = "Complete split integral and inverse-height-square kernel"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/Analysis/ComplexAnalysis/TentKernelTail.lean"
+blob = "b84214ef2c71e856a33af78e35d689138f6c0a3f"
+role = "Explicit beta-dependent tail budget"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/Analysis/Series/ScaledHeightCountingTail.lean"
+blob = "330123ddaace860044eda362ecaddbac64b5450d"
+role = "Every finite subfamily count, retained coefficient, complete tail"
+
+[[critical_dependency]]
+repository = "grwtsk/math"
+commit = "2a9415e901e82aa2f5031ac9ba3b5be9e584b7ca"
+path = "GRWTSK/NumberTheory/Moebius/PickupDyadicEndpoint.lean"
+blob = "53a33d37efd54fdff10aed1b05276b89dd4ddadc"
+role = "Existing DyadicBirthBound -> canonical RH; arithmetic witness remains explicit"
+
+[[critical_dependency]]
+repository = "leanprover-community/mathlib4"
+commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/NumberTheory/Chebyshev.lean"
+blob = "6ffaf1bc3538b5a86fae7f4c62cc1287f9d48f2a"
+role = "Unconditional psi_sub_theta_le_mul_sqrt and actual nonprime decomposition"
+
+[acceptance]
+critical_roster_exhaustive = false
+closure = "Resolve and freshly check all transitive logical imports, generated/private/opaque dependencies and exact package revisions at the source commit"
+required_terminal = "GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount.many_primes_of_RH"
+required_terminal_hypotheses = ["canonical _root_.RiemannHypothesis only"]
+coarse_constant = "B=M+100*K+2*C+4; M=heightCount(2), K=countingCoefficient, C>=0 supplied by Mathlib"
+coarse_threshold = "X=exp(2*max(1,8*B)); all real endpoints >=X"
+sharp_not_discharged = "GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount.SharpRHAnalyticReturn"
+provisional_foundational_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new research axioms", "unauthorized native/unsafe logical trust", "omitted required closure", "changed bytes reusing historical acceptance", "prime powers counted as primes", "dropped zero signs or analytic multiplicities", "tent main term changed from h to 2h", "sharp definition or conditional consumer promoted to RH-only"]
+fresh_checker = "Determine supported invocation from the pinned leanchecker help; do not invent a successful replay or call a shared-kernel checker independent"
+auxiliary_audit_file = "External Audit.lean supplied with download; #check/#print axioms are not themselves a complete fresh closure replay"
+
+[[native_command]]
+command = "lake build --wfail GRWTSK.NumberTheory.Chebyshev.ShortIntervalPrimeCount GRWTSK.NumberTheory.Chebyshev.RHShortIntervalCount GRWTSK.NumberTheory.Chebyshev.SharpShortIntervalCount"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+receipt = "UNAVAILABLE"
+
+[[native_command]]
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Chebyshev/ShortIntervalPrimeCount.lean"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+receipt = "UNAVAILABLE"
+
+[[native_command]]
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Chebyshev/RHShortIntervalCount.lean"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+receipt = "UNAVAILABLE"
+
+[[native_command]]
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Chebyshev/SharpShortIntervalCount.lean"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+receipt = "UNAVAILABLE"
+
+[[native_command]]
+command = "lake env leanchecker --help"
+status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+receipt = "UNAVAILABLE"
+
+[finite_diagnostics]
+status = "PASSED_FINITE_ONLY"
+script = "/mnt/data/rh_short_interval_work/preflight.py"
+script_sha256 = "cd5bd2e346986cbd1a7fe0f19c4fcafe61d23ba05162ff008e20f54606799e67"
+normal_command = "python /mnt/data/rh_short_interval_work/preflight.py > /mnt/data/rh_short_interval_work/preflight-normal.json"
+optimized_command = "python -O /mnt/data/rh_short_interval_work/preflight.py > /mnt/data/rh_short_interval_work/preflight-optimized.json"
+comparison_command = "cmp /mnt/data/rh_short_interval_work/preflight-normal.json /mnt/data/rh_short_interval_work/preflight-optimized.json"
+normal_exit = 0
+optimized_exit = 0
+comparison_exit = 0
+output_sha256 = "2f721b1fae224b5c2b3241ffd600678651b020c90c5599e440f8411e9a2e5899"
+exact_checks_per_mode = 23341
+floating_checks_per_mode = 80
+lexical_checks_per_mode = 12
+total_per_mode = 23433
+floating_precision_digits = 100
+outputs_identical = true
+scope = "Exact finite coefficientwise log-prime partition/tent/rounding/cardinality/margins; separate actual arithmetic floating checks; no zeta zeros"
+negative_control = "(8,10] contains no prime while its tent has positive Mangoldt mass from 9"
+not_evidence_of = ["asymptotic bounds", "rigorous floating enclosure", "Lean elaboration", "fresh kernel acceptance", "transitive axiom audit"]
+operational_artifacts_committed_to_math = false
+durable_noeaaeue_receipt = "UNAVAILABLE"
+
+[paper_reference]
+title = "On the Riemann Hypothesis and the Difference Between Primes"
+author = "Adrian Dudek"
+version = "arXiv:1402.6417v2, 20 May 2014"
+stable_url = "https://arxiv.org/abs/1402.6417v2"
+method = "Tent explicit formula and RH short-interval primes; original sharp constants 1+epsilon and 3+epsilon"
+scope = "Research correspondence, not a new imported Lean axiom or complete sharp native proof"
+new_record_claimed = false

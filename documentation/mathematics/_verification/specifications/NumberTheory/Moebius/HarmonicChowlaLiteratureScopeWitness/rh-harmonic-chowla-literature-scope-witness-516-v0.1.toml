@@ -1,0 +1,46 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-harmonic-chowla-literature-scope-witness-516-v0.1"
+owner_repository = "grwtsk/math"
+issue = 516
+parent_issue = 511
+parent_pr = 513
+status = "LITERATURE_REVIEWED_WITNESS_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.HarmonicChowlaLiteratureScopeWitness"
+build_target = "GRWTSK.NumberTheory.Moebius.HarmonicChowlaLiteratureScopeWitness"
+
+[source_binding]
+stacked_parent_revision = "ef07323a8c7c5101ef851351424afd50e2a7027e"
+candidate_branch = "research/rh-log-chowla-scope-witness-516-20261021"
+theorem_source_commit = "b8a26836a110ab8ffe0527cf6a856be199d74434"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/HarmonicChowlaLiteratureScopeWitness.lean"
+theorem_source_git_blob = "e6aa91e5e43def6c4651bf0266b19f6d673366d3"
+
+[witness]
+class = "AVERAGING_VARIABLE_AND_GROWING_SHIFT_SCOPE_MISMATCH"
+current_log_chowla_adapter = false
+theorem_level_nonimplication_claimed = false
+
+[required_bridges]
+averaging_variable_conversion = true
+shift_range_conversion = true
+uniformity_conversion = true
+fixed_form_growing_family_uniformity = true
+polylog_to_dyadic_shift_extension = true
+
+[evidence_states]
+literature_reviewed = true
+witness = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+tao_refuted = false
+guo_refuted = false
+hughes_refuted = false
+openai_007_refuted = false
+chowla_refuted = false
+elliott_refuted = false
+riemann_hypothesis_proved = false

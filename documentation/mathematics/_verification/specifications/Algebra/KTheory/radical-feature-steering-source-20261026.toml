@@ -1,0 +1,79 @@
+# Passive source-bound verification request; no workflow execution or acceptance claimed.
+schema_version = "0.1"
+request_id = "radical-feature-steering-20261026"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "8c195b6353049789c0e712374c70a4b33f567e04"
+source_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+source_blob = "ddf55d9090d09b785c0c8d2b03148c6a74e72a4c"
+upstream_path = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+upstream_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+mathlib_radical_path = "Mathlib/RingTheory/Radical/NatInt.lean"
+mathlib_radical_blob = "fa1204627a638b49490459d716d5d33763da30f1"
+mathlib_grothendieck_path = "Mathlib/GroupTheory/MonoidLocalization/GrothendieckGroup.lean"
+mathlib_grothendieck_blob = "9cae4988c9d3ad6a8531016eac205d363c26bcfc"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+direct_imports = [
+  "GRWTSK.Algebra.KTheory.GrothendieckPort",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "Mathlib.Tactic",
+]
+existing_verification_request = "docs/verification/Algebra/KTheory/radical-collision-type-boundary-20261025.toml"
+existing_request_scope = "Historical source blob 6754d346dc7ad4b5e02eb3e97bc475bda1ef847e; do not transfer any acceptance to this newer blob."
+related_issue = "https://github.com/grwtsk/math/issues/1329"
+blocking_issue = "https://github.com/grwtsk/math/issues/1267"
+classification = "K0_SHAPED_RADICAL_FEATURE_NO_DECODER_AND_STEERING_OBSTRUCTION"
+mathematical_status = "SOURCE_PROOF_CANDIDATE"
+kernel_status = "NOT_RUN"
+elaboration_status = "NOT_RUN"
+compilation_status = "NOT_RUN"
+transitive_axioms_status = "NOT_RUN"
+receipts = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+force_push_authorized = false
+source_additions_authorized_before_gate = false
+actual_analytic_K0 = false
+physical_navier_stokes_implication = false
+arithmetic_infinite_density_proved = false
+
+new_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.steered_observation_eq_of_radical_eq",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_type_complete_feature_only_steering_of_collision",
+]
+dependent_existing_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.kZeroRadical_eq_of_radical_eq",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.kZeroRadical_pow",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_nat_type_decoder",
+  "GRWTSK.Algebra.KTheory.JointCollision.no_exact_type_decoder_of_collision",
+]
+exact_hypotheses = "The observable kZeroRadical factors through Nat.radical, with lift : Nat ->* M into an explicitly supplied CommMonoid M; steering maps observe only this group-completed value. Two inputs sharing Nat.radical but with different separately supplied type labels cannot both be decoded correctly by any feature-only map."
+required_negative_control = "2 and 4 have identical Nat.radical, and a type classifier that distinguishes them invalidates any claimed exact feature-only decoder."
+missing_bridge = [
+  "Actual finitely generated projective-object monoid and analytic K0(C*) interpretation are not supplied.",
+  "Type completeness requires genuine witness existence for each required type, not just a no-decoder obstruction.",
+  "Markov lumpability and quotient-kernel operator bounds are separate theorems proposed for a future source leaf, not present in this module.",
+  "Positive-type asymptotic arithmetic density does not follow from finite-diffusion positivity without uniform sieve inputs.",
+  "Existing upstream exact-source theorem acceptance is not transferable from source review or old historical request.",
+]
+
+[checks]
+checkout_identity = 'test "$(git rev-parse HEAD)" = 8c195b6353049789c0e712374c70a4b33f567e04'
+source_identity = 'test "$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)" = ddf55d9090d09b785c0c8d2b03148c6a74e72a4c'
+upstream_identity = 'test "$(git hash-object GRWTSK/Algebra/KTheory/GrothendieckPort.lean)" = d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f'
+mathlib_identity = 'test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = db584cd6d46c92f209a44c0f1c829460d327499d'
+leaf_compilation = "lake build GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+source_elaboration = "lake env lean --trust=0 GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+axiom_audit_driver = "In an external temporary module import GRWTSK.Algebra.KTheory.RadicalCollisionBoundary; issue #check and #print axioms for every new declaration and named direct/transitive dependency; execute lake env lean on that file and capture exit/log/axiom census."
+kernel_replay = "Use the pinned toolchain's supported fresh kernel checker, determine CLI from actual --help, and retain exact argv, exit and diagnostics."
+optional_root_build = "Only after admitted dependency baseline: lake build GRWTSK; separately mark if root build is blocked by independent unverified modules."
+expected_leaf_exit = 0
+expected_elaboration_exit = 0
+observed_leaf_exit = "NOT_RUN"
+observed_elaboration_exit = "NOT_RUN"
+observed_axioms = "NOT_RUN"
+observed_kernel_exit = "NOT_RUN"
+
+# Operational commands, execution attempts, logs and receipts belong outside math in grwtsk/noeaaeue.

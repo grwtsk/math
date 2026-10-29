@@ -1,0 +1,99 @@
+# Static mathematical specification; no execution authority or receipt.
+# Prepared against 4f15e04a182d2bbf9715d1273f3d9cd16efc5943.
+# SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-mirror-pair-approximation-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 272
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPairApproximation"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+# Focused suppliers, NOT an audited transitive import closure.
+modules = [
+  { name = "Mathlib.Analysis.Complex.Convex" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPair" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairApproximation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.ZeroDefinitions" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPolePatch" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPrimitiveStep" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinTailDerivative" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticPrimitive" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSixteenDerivativeSource" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticC1Approximation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightFiberCriterion" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightFiberSuccessor" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorPairChannels" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorPairApproximation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPairApproximation" },
+]
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[hostile_controls]]
+id = "same_source"
+requirement = "Retain the actual poleNormalizedZeta, removable H(1)=1, sextic finiteModel, all endpoint/Bernoulli corrections and signed root height. No replacement analytic function."
+[[hostile_controls]]
+id = "positive_integer_cutoff"
+requirement = "Every arithmetic residual consumer requires N>=1 or uses n+1. Totalized radius expressions at N=0 confer no enclosure."
+[[hostile_controls]]
+id = "true_derivative"
+requirement = "Derive finiteModel's derivative from the exact source identity on a positive-real-part neighborhood and the independently differentiated actual Mellin tail. Never differentiate a value-error inequality."
+[[hostile_controls]]
+id = "derivative_sign_and_product"
+requirement = "Retain both -A7'*J_N and +A7*logTail_N in H'-F_N'. Neither the multiplier derivative nor the logarithm sign may be dropped."
+[[hostile_controls]]
+id = "lost_cutoff_power"
+requirement = "The elementary log(t)<=t bound gives N^-4, not N^-5, for the log tail. Keep constants30240*4 and30240*5 separately."
+[[hostile_controls]]
+id = "fixed_height_limit"
+requirement = "Decay fixes B or T. The factors B^7 and7B^6 remain. No all-height uniform convergence or spectral gap follows."
+[[hostile_controls]]
+id = "actual_convex_domain"
+requirement = "Use the actual open critical strip intersected with closed signed-height bounds. Prove convexity and endpoint membership; no evaluation at Re=0 from the Mellin identity."
+[[hostile_controls]]
+id = "near_line"
+requirement = "Normalized odd error uses independent derivative control and nonzero displacement, with no 1/|d| factor or minimum separation. Do not assign derivative semantics to the quotient at d=0."
+[[hostile_controls]]
+id = "energy_stability"
+requirement = "Use energy(F)<=2energy(P)+2budget. The scalar energy(P)-budget is NOT claimed as a source-energy lower bound."
+[[hostile_controls]]
+id = "strict_margin"
+requirement = "A valid zero pair rejects every strict comparison. Error convergence alone supplies no nonvanishing conclusion. Acceptance is budget<energy(model), not nonnegativity."
+[[hostile_controls]]
+id = "composition"
+requirement = "Compose source-tail and finite-evaluation radii by addition BEFORE squaring. Retain the cross-error terms and the same center, displacement and source functions."
+[[hostile_controls]]
+id = "pointwise_completeness"
+requirement = "Eventual acceptance fixes one pair. Preserve forall z exists n; do not infer exists n forall z. The repeated-root fixture shows failure of a separation-uniform cutoff."
+[[hostile_controls]]
+id = "exact_target_predicate"
+requirement = "On the open strip prove trivial-zero and pole exclusions when transporting normalized source zeros to canonical NontrivialZetaZero. Reflection acts on actual target zeros."
+[[hostile_controls]]
+id = "not_executable_checker"
+requirement = "Trial compares exact finite complex-power expressions. It is not a rational evaluator, computable cutoff search, Boolean checker, or execution receipt. Additional numerical enclosures must be separately composed."
+[[hostile_controls]]
+id = "rh_equivalence_not_proof"
+requirement = "Both directions of Coverage<->RH are stated. No inhabitant of Coverage is supplied; all-point strict comparison is still the unresolved RH-equivalent obligation."
+[[hostile_controls]]
+id = "bounded_instance"
+requirement = "The cutoff64 bounds1/20000 and1/250 are channel errors on |Im|<=20. They imply neither WindowRH20 nor any uniform pair-energy margin."
+[[hostile_controls]]
+id = "successor_seam"
+requirement = "The successor consumes the previous WindowRH and actual coverage of every eligible point in the closed successorBox, retaining its lower seam and real boundaries."
+[[hostile_controls]]
+id = "acceptance_boundary"
+requirement = "Full-stack Lean elaboration and transitive axiom audit are mandatory. External exact finite checks, hash matches and static supplier lists are not replay acceptance."

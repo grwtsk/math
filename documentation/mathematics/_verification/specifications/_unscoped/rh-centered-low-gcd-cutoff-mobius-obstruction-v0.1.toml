@@ -1,0 +1,45 @@
+schema = "grwtsk.math.verification.v0.1"
+title = "Centered low-gcd cutoff Mobius inversion and residual obstruction"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+axiom_audited = false
+
+[scope]
+repository = "grwtsk/math"
+pull_request = 973
+parent = "01802e9e563fd72fe8361132409dec62661306fa"
+branch = "research/centered-low-gcd-fejer-bridge-20261022"
+
+[claims]
+exact_gcd_cutoff_mobius_inversion_source_authored = true
+cutoff_coefficients_vanish_below_cutoff_source_authored = true
+residual_equals_centered_mass_square_plus_correction_source_authored = true
+coefficient_weighted_quotient_mass_source_authored = true
+log_five_correction_bound_source_authored = true
+sharp_tail_target_bridge_source_authored = true
+
+[constants]
+diagonal = 300
+ordinary_large_mobius_tail = 1152
+cutoff_correction_log_five = 2304
+cutoff_correction_under_sharp_tail = 256
+positive_shift_from_centered_mass = 1708
+
+[dependencies]
+finite_divisor_summatory_replay_reasserted = false
+historical_fejer_bridge_replay_reasserted = false
+centered_low_gcd_base_replay_reasserted = false
+large_mobius_tail_replay_reasserted = false
+
+[open]
+sharp_divisibility_tail = true
+centered_fejer_mass_square = true
+signed_small_index_residual = true
+threshold_descent = true
+
+[nonclaims]
+riemann_hypothesis = false
+chowla = false
+goldbach = false
+zero_free_region = false

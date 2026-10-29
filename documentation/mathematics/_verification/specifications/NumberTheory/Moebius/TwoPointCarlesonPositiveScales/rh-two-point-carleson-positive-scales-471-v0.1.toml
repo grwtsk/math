@@ -1,0 +1,249 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-two-point-carleson-positive-scales-471-v0.1"
+owner_repository = "grwtsk/math"
+issue = 471
+parent_issue = 466
+parent_pr = 469
+carleson_issue = 461
+carleson_pr = 465
+obstruction_issue = 460
+obstruction_pr = 462
+canonical_consumer_issue = 410
+canonical_consumer_pr = 411
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_POSITIVE_SCALE_ARITHMETIC_SUPPLIER_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.TwoPointCarlesonPositiveScales"
+build_target = "GRWTSK.NumberTheory.Moebius.TwoPointCarlesonPositiveScales"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+stacked_parent_branch = "research/rh-carleson-conjecture-connections-466-20261021"
+stacked_parent_revision = "f4fea7d2e9d988613a194ff5fe427d2ef47a41c5"
+stacked_parent_tree = "9f5d918e582cf50956b33ff7c53837f2efcf8504"
+candidate_branch = "research/rh-carleson-positive-scales-471-20261021"
+theorem_source_commit = "244dd5d2815af252fd82c01cffd568d0e2547bb3"
+theorem_source_tree = "4bd5f85418395545b55b71778b4c1dde0608e08e"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/TwoPointCarlesonPositiveScales.lean"
+theorem_source_git_blob = "ee4e0d2244d8130ccbfbf565d39388818a1f8533"
+mathematical_note_commit = "a6af801f809b12712429bbc1a6141a73c0804c46"
+mathematical_note_tree = "72988eb2dae92ddeb1c28ad8d554d429d7991ee6"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/two-point-carleson-positive-scales.md"
+mathematical_note_git_blob = "faa84353f279d66c7430930abd9ce559de9ddc71"
+namespace_generic = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal"
+namespace_arithmetic = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction"
+
+[terminal_consumer]
+module = "GRWTSK.NumberTheory.Moebius.TwoPointCarlesonEnergy"
+module_git_blob = "49b4826bdfe4a2922e529866eb2124400ca5c4b6"
+carleson_premise = "SubpolynomialDyadicMertensTwoPointCarlesonEnergyWithDepthCost"
+maximal_premise = "SubpolynomialDyadicMaximalMertensTwoPointEnergy"
+rh_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.riemannHypothesis_of_mertensTwoPointCarlesonEnergy"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+analytic_premise_status = "OPEN"
+
+[selected_increment]
+primary_generic_declaration = "GRWTSK.Analysis.FiniteSum.DyadicBlockSquareMaximal.alignedDyadicCarlesonEnergy_eq_scaleZero_add_positive"
+primary_arithmetic_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.mertensTwoPointCarlesonEnergySum_eq_singleton_add_positive"
+finite_bound_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.mertensTwoPointCarlesonEnergySum_le_endpoint_add_positive"
+finite_supplier_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.DyadicMertensPositiveScaleCarlesonBudget"
+all_scale_supplier_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.SubpolynomialDyadicMertensPositiveScaleCarlesonWithPaidSingleton"
+full_carleson_transport = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.subpolynomialMertensCarlesonEnergy_of_positiveScales"
+rh_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.TwoPointConjectureJunction.riemannHypothesis_of_mertensPositiveScaleCarleson"
+proof_classification = "EXACT_FINITE_REINDEXING_SINGLETON_BOUND_AND_CONDITIONAL_REDUCTION"
+rh_consequence = "SUPPLIES_CONDITIONAL_POSITIVE_SCALE_INTERFACE"
+next_obstruction = "prove the paid all-scale positive-scale max-per-scale two-point Moebius energy estimate"
+
+[canonical_observable]
+name = "mertensTwoPointPositiveScaleCarlesonEnergySum"
+generic_name = "alignedDyadicPositiveScaleCarlesonEnergy"
+domain = "dyadic scale j, every positive shift h below 2^(j+1), aligned scales 1 through j+1"
+codomain = "real"
+block_sum = "signed aligned block sum formed before absolute value and squaring"
+scale_aggregation = "one maximum over block position per positive scale"
+shift_aggregation = "finite sum over every positive shift in Finset.Ico 1 (2^(j+1))"
+positivity_classification = "FINITE_NONNEGATIVE_SUM_OF_SQUARES_OF_FINITE_MAXIMA"
+scale_zero_included = false
+scale_zero_paid_separately = true
+complete_all_position_tree_used = false
+
+[exact_decomposition]
+generic_statement = "Carleson(m,a) = ScaleMaximum(m,0,a)^2 + PositiveCarleson(m,a)"
+one_shift_statement = "twoPointCarlesonEnergy = scaleZeroMaximum^2 + twoPointPositiveScaleCarlesonEnergy"
+all_shift_statement = "twoPointCarlesonEnergySum = singletonMaximumSum + positiveScaleSum"
+moebius_statement = "twoPointCarlesonEnergySum(mu,mu,j) = mertensTwoPointCarlesonSingletonSum(j) + mertensTwoPointPositiveScaleCarlesonEnergySum(j)"
+finite_singleton_bound = "mertensTwoPointCarlesonSingletonSum(j) <= 2^(j+1)"
+resulting_bound = "fullCarlesonSum(j) <= 2^(j+1) + positiveScaleSum(j)"
+identity_kind = "EXACT_FINITE_REINDEXING"
+
+[paid_singleton_budget]
+name = "DyadicMertensPositiveScaleCarlesonBudget"
+nonnegative_parameter = true
+formula = "(j+2)*(2^(j+1)+positiveScaleSum(j)) <= B^2*2^(j+1)"
+endpoint_allowance = "2^(j+1)"
+depth_factor = "j+2"
+depth_factor_absorbed = false
+finite_transport = "completeCarlesonBudget_of_positiveScaleBudget"
+constants_changed = false
+
+[all_scale_supplier]
+name = "SubpolynomialDyadicMertensPositiveScaleCarlesonWithPaidSingleton"
+formula = "forall delta>0 exists A>=0 forall j, DyadicMertensPositiveScaleCarlesonBudget j (A*(2^j)^delta)"
+supplier_constructed = false
+positive_scale_estimate_proved = false
+singleton_estimate_proved_upstream = true
+conditional_chain = [
+  "SubpolynomialDyadicMertensPositiveScaleCarlesonWithPaidSingleton",
+  "SubpolynomialDyadicMertensTwoPointCarlesonEnergyWithDepthCost",
+  "SubpolynomialDyadicMaximalMertensTwoPointEnergy",
+  "RiemannHypothesis"
+]
+
+[candidate_comparison]
+selected = "POSITIVE_SCALE_WITH_LITERAL_SINGLETON_ALLOWANCE"
+candidate_1 = "pure positive-scale statement with implicit depth/singleton absorption; rejected because it hides an unproved asymptotic transport"
+candidate_2 = "raw positive-scale statement plus separate depth-absorption proposition; deferred because it leaves two unresolved premises"
+candidate_3 = "paid-singleton positive-scale statement; selected because it is exact and leaves one named obstruction"
+
+[positivity]
+positive_scale_energy_nonnegative = true
+shift_summed_positive_scale_energy_nonnegative = true
+scale_zero_maximum_square_nonnegative = true
+budget_parameter_nonnegative = true
+depth_factor_nonnegative = true
+positive_semidefinite_analytic_form_claimed = false
+kernel_positivity_claimed = false
+measure_positivity_claimed = false
+trace_or_state_positivity_claimed = false
+averaged_arithmetic_positivity_claimed = false
+finite_height_weil_positivity_claimed = false
+global_positivity_claimed = false
+smallness_inferred_from_nonnegativity = false
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+positive_scale_supplier_constructed = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_private_declaration_reconciliation = false
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+arithmetic_positive_scale_estimate_included = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_external_source_metadata_as_proof = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.TwoPointCarlesonPositiveScales"
+authored_declaration_count = 18
+definition_count = 6
+theorem_script_count = 12
+private_helper_count = 0
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TwoPointCarlesonConjectureConnections.lean"
+git_blob = "f8e4597c5e1716765345a317b01d728f6ed660a9"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_469"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TwoPointCarlesonEnergy.lean"
+git_blob = "49b4826bdfe4a2922e529866eb2124400ca5c4b6"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_465"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TwoPointTreeSingletonMassObstruction.lean"
+git_blob = "935cff049d32632e3aed703e80a6f123e7923a25"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_462"
+
+[statement_controls]
+positive_scale_range_is_exactly_one_through_m = true
+positive_scale_range_empty_at_m_zero = true
+scale_zero_term_retained_explicitly = true
+scale_zero_endpoint_allowance_retained = true
+all_positive_shifts_retained = true
+zero_padding_inherited_exactly = true
+signed_sum_precedes_absolute_value = true
+absolute_value_precedes_square = true
+max_over_positions_precedes_scale_sum = true
+depth_factor_retained = true
+constants_unchanged_in_transport = true
+
+[hostile_controls]
+complete_all_position_tree_not_reintroduced = true
+scale_zero_not_dropped = true
+scale_zero_not_double_counted = true
+positive_scale_supplier_not_assumed = true
+depth_factor_not_absorbed_without_theorem = true
+top_scale_not_promoted_to_all_positive_scales = true
+fixed_shift_not_promoted_to_full_shift_range = true
+terminal_endpoint_not_promoted_to_window_maximum = true
+source_text_not_promoted_to_elaboration = true
+conditional_return_not_promoted_to_rh_proof = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+positive_scale_arithmetic_supplier = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+positive_scale_carleson_bound_proved = false
+fixed_shift_chowla_proved = false
+growing_shift_chowla_proved = false
+corrected_elliott_proved = false
+sarnak_disjointness_proved = false
+weak_mertens_proved = false
+gonek_hejhal_proved = false
+new_pickup_damping_paid = false
+zero_free_region_proved = false
+finite_height_rh_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "alignedDyadicPositiveScaleCarlesonEnergy",
+  "alignedDyadicPositiveScaleCarlesonEnergy_nonneg",
+  "alignedDyadicCarlesonEnergy_eq_scaleZero_add_positive",
+  "twoPointPositiveScaleCarlesonEnergy",
+  "twoPointPositiveScaleCarlesonEnergySum",
+  "twoPointPositiveScaleCarlesonEnergy_nonneg",
+  "twoPointPositiveScaleCarlesonEnergySum_nonneg",
+  "twoPointCarlesonEnergy_eq_scaleZero_add_positive",
+  "twoPointCarlesonEnergySum_eq_scaleZero_add_positive",
+  "mertensTwoPointPositiveScaleCarlesonEnergySum",
+  "mertensTwoPointCarlesonEnergySum_eq_singleton_add_positive",
+  "mertensTwoPointCarlesonEnergySum_le_endpoint_add_positive",
+  "DyadicMertensPositiveScaleCarlesonBudget",
+  "SubpolynomialDyadicMertensPositiveScaleCarlesonWithPaidSingleton",
+  "completeCarlesonBudget_of_positiveScaleBudget",
+  "subpolynomialMertensCarlesonEnergy_of_positiveScales",
+  "subpolynomialDyadicMaximalMertensTwoPointEnergy_of_positiveScales",
+  "riemannHypothesis_of_mertensPositiveScaleCarleson"
+]

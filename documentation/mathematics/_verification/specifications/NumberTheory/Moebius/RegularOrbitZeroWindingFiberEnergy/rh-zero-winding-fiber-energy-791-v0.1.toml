@@ -1,0 +1,28 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-zero-winding-fiber-energy-791-v0.1"
+owner_repository = "grwtsk/math"
+issue = 791
+parent_issue = 787
+parent_pr = 789
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ZERO_WINDING_FIBER_ENERGY_SOURCE_DRAFT_ZERO_WINDING_FIBER_ENERGY_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingFiberEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingFiberEnergy"
+
+[source_binding]
+stacked_parent_revision = "7273faca38cd988f93ee366155fbdd76aaa79190"
+candidate_branch = "research/rh-zero-winding-fiber-energy-791-20261022"
+theorem_source_commit = "d65fc41b2a89830781f31b6d699d126224c73395"
+theorem_source_git_blob = "c11cb157659a96dc3bb449ec29343c13e1aea196"
+mathematical_note_commit = "a82872d2b5a59a31406ba14264c5ed6d42ea98a0"
+mathematical_note_git_blob = "444e8e3d29f3149b86c5fa94db418528d9cfc056"
+
+[evidence_states]
+source_draft = true
+fiber_amplitude_scripted = true
+fiber_square_expansion_scripted = true
+zero_winding_fiber_identity_scripted = true
+zero_winding_fiber_energy_estimate_proved = false
+wrap_cancellation_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

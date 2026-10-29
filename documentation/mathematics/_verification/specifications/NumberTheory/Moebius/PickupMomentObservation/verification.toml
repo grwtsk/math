@@ -1,0 +1,176 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "rh-pickup-moment-integer-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "d13e10e50efea6415160fbe88c6e806306a6e061"
+source_tree = "e8d75933f2547c34010939af5235f2e178e12a19"
+baseline_commit = "c1d0c07f9a23ddf5c7de1edf0fd9057b143e21e0"
+parent_commit = "ed73c5fb23de2fd64df0ec6839d6c080e0667061"
+concurrent_change_preserved = "Parent adds optimizer verification manifest only; mathematical dependencies unchanged"
+verification_issue = 1410
+prerequisite_issues = [1405, 1406, 1407, 1408, 1409]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+arithmetic_completion = "OPEN: actual all-positive-rate witness not supplied"
+canonical_RH_proved_unconditionally = false
+remote_execution_dispatched = false
+root_imports_changed = false
+dependency_pins_changed = false
+new_definitions = 9
+new_theorem_scripts = 23
+lexical_identifiers = 32
+inventory_scope = "Source text only; not an elaborated declaration census"
+git_identity = "Connector-configured; identity override unavailable"
+central_literature_ledger_changed = false
+central_literature_cross_reference = "Inherited pending cross-reference remains pending; prior entries preserved"
+note = "docs/mathematics/NumberTheory/Moebius/pickup-moment-integer-transfer.md"
+note_blob = "52c436f6efab2e8d9bf8d4369936f205d78f3475"
+upstream_pin = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupIntegerWeights.lean"
+module = "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights"
+blob = "6b1a97dbe06692958d390aa500b44b693e172cf5"
+sha256 = "32c8edd430df956c17406a9a306c6837beafb0e1799e1951546a7ee8555326bb"
+bytes = 8626
+lines = 193
+imports = ["GRWTSK.NumberTheory.Moebius.PickupOptimizationGap"]
+definitions = ["GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.denominator", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.integerWeight", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.decodedWeight", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.integerTotal", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.integerCut", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.integerEnergy", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.quantizedTrial", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.quantizedSource"]
+theorems = ["GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.denominator_pos", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.decodedWeight_bounds", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.decodedWeight_error", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.integerWeight_zero", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.quantizedTrial_spin_sum", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.mesh_allowance", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.quantizedTrial_error", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.quantizedSource_error", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.quantizedSource_endpoint_error", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.quantizedSource_subexponential_iff", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.dyadicBirthBound_iff_quantizedSource", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.integer_optimizer_gap", "GRWTSK.NumberTheory.Moebius.PickupIntegerWeights.source_gap_of_integer_optimizer"]
+status = "SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupMomentObservation.lean"
+module = "GRWTSK.NumberTheory.Moebius.PickupMomentObservation"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupMomentObservation"
+blob = "76fe0d69272f210913948714b49dcaf87a5aa34e"
+sha256 = "4633c71262ce717bc123c703d5b2072fa50943b34f462599d0791c533b6fac13"
+bytes = 8005
+lines = 168
+imports = ["GRWTSK.NumberTheory.Moebius.PickupWeightedQAOA"]
+definitions = ["GRWTSK.NumberTheory.Moebius.PickupMomentObservation.gapMoment"]
+theorems = ["GRWTSK.NumberTheory.Moebius.PickupMomentObservation.source_gap_of_moment", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.exp_power", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.entropy_balance", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.source_gap_of_entropy_moment", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.configuration_card", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.uniform_source_mass", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.uniform_source_mass_dyadic", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.uniform_mass_allowance_iff", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.source_gap_of_radius_moment", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.dyadicBirthBound_of_depth_entropy_moments"]
+status = "SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED"
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupOptimizationGap"
+blob = "2d9a4072edea426758a646b870d594dbf6da0784"
+scope = "Whole imported closure remains subject to source-bound audit; prior acceptance not transferred"
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupWeightedQAOA"
+blob = "b62762221a532b853e234f47746bd3b72f4d30bc"
+scope = "Whole imported closure remains subject to source-bound audit; prior acceptance not transferred"
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupScaleTransport"
+blob = "9ab613ef77bb1cda5061dfaea76ffe8f97be6243"
+scope = "Whole imported closure remains subject to source-bound audit; prior acceptance not transferred"
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint"
+blob = "53a33d37efd54fdff10aed1b05276b89dd4ddadc"
+scope = "Whole imported closure remains subject to source-bound audit; prior acceptance not transferred"
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature"
+blob = "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c"
+scope = "Whole imported closure remains subject to source-bound audit; prior acceptance not transferred"
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.GoodScaleEnergyCriterion"
+blob = "a39d24a540a86918ab4f2a8130a86895424dc317"
+scope = "Whole imported closure remains subject to source-bound audit; prior acceptance not transferred"
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.EnergyAbscissa"
+blob = "9453ab6fc629611fa19362b56eb223fabd14bc0a"
+scope = "Whole imported closure remains subject to source-bound audit; prior acceptance not transferred"
+
+[[upstream_reference]]
+role = "SK/QAOA"
+title = "QAOA attains the SK ground-state energy in the thermodynamic-first limit"
+byline = "OpenAI"
+version = "September 25, 2026"
+repository = "openai/math"
+commit = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+path = "preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/01-introduction.tex"
+blob = "453caa0efc98c73518eb85f3c05bf03743b22e8b"
+statement = "thm:main"
+hypotheses = "iid Gaussian disorder, unordered-pair 1/sqrt(n), expected per-spin value, fixed deterministic angles before thermodynamic limit; no finite-size or depth rate"
+url = "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/build/sections/01-introduction.tex"
+status = "INSPECTED_SOURCE_ONLY; not a new local import; native/comparator replay NOT_RUN"
+
+[[upstream_reference]]
+role = "Kakeya"
+title = "Local smoothing for the Euclidean wave equation"
+byline = "Repository OpenAI; individual manuscript byline not re-read"
+version = "October 25, 2026"
+repository = "openai/math"
+commit = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+path = "lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean"
+blob = "6def181857b8148d9dbaed288876a225ca9ddbfb"
+statement = "OAI.Analysis.Fourier.LocalSmoothing.Comparator.kakeya_maximal"
+hypotheses = "Fixed dimension d>=2, all eta>0, radius in (0,1], input MemLp d, L^d sphere output; no pointwise or uniform-in-growing-d conclusion"
+url = "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean"
+status = "INSPECTED_SOURCE_ONLY; not a new local import; native/comparator replay NOT_RUN"
+
+[[upstream_reference]]
+role = "ETH/exact SAT"
+title = "The Exponential Time Hypothesis is False"
+byline = "OpenAI"
+version = "Revised October 25, 2026"
+repository = "openai/math"
+commit = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+path = "lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean"
+blob = "a69635a2492e06a26f2e33d4251edd1e21ba3332"
+statement = "OAI.Algorithms.SubexponentialSAT.SqrtLogSpace.exact_count_and_sat"
+hypotheses = "Fixed width k>=2, canonical CNF on Fin n, formula bit length, exact count and decision, all-prefix visited-space and machine-time costs retained"
+url = "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/OAI/Algorithms/SubexponentialSAT/SqrtLogSpace/Final.lean"
+status = "INSPECTED_SOURCE_ONLY; not a new local import; native/comparator replay NOT_RUN"
+
+[verification]
+commands = ["lake build --wfail GRWTSK.NumberTheory.Moebius.PickupIntegerWeights GRWTSK.NumberTheory.Moebius.PickupMomentObservation", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupIntegerWeights.lean", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupMomentObservation.lean", "lake env leanchecker --help"]
+command_status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+checker_invocation = "Resolve supported fresh-check command using actual pinned help; do not treat cached oleans or source inspection as fresh replay"
+closure_scope = "All imported/private/generated/opaque dependencies, including prior issues 1405 through 1409 and full analytic return"
+checker_implementation = "Leanchecker using Lean kernel is not an independently implemented verifier"
+audit_recipe = "Outside math create a module importing both new modules; #check and #print each inventory entry and #print axioms each entry; preserve generated/private closure and exact types"
+proposed_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new research axioms", "unapproved native or unsafe logical trust", "omitted transitive proof closure", "weakened source hypotheses", "historical acceptance transferred to changed source"]
+upstream_commands = ["lake env comparator ComparatorChallenges/SKValue.json", "lake env comparator ComparatorChallenges/LocalSmoothing.json", "lake env comparator ComparatorChallenges/SubexponentialSAT.json"]
+upstream_commands_status = "NOT_RUN; each in its own pinned upstream checkout/toolchain, not the local build"
+root_and_package_policy = "No root import or dependency migration; use clean source-bound workspace for replay"
+
+[mathematical_controls]
+checks = ["Full ordered sourcePairs, original Mobius assignment, zero labels and diagonal preserved", "Denominator L=4(card(sourcePairs)+1)>0; integer rounding uses actual nonnegative absolute couplings", "No change of source signs when absolute coupling magnitudes are rounded", "IntegerTotal - 2*integerCut is integer subtraction, not truncated natural subtraction", "Uniform error <=1/4 for EVERY assignment, not only finite tested assignments", "Endpoint error and quantization error are distinct: total <=1/2", "Optimizer trial gap <=1/2; signed return to Mobius still required", "Exact real floor is a noncomputable mathematical definition, not a certified bit evaluator", "q>0, m>0 and B>=0 in moment extraction; source mass not dropped", "Complete uniform carrier source probability 2^(-(2^j+1)) including inactive zero index", "Radius estimate pays eta+b/q, not eta alone", "Circuit depth p, moment q, ambient dimension d and outer dyadic j distinct", "Changing q(p,j) does not provide free uniform moment constants", "Desired delta before p and eta; constants then uniform in j", "Existing analytic return used without an added research axiom"]
+
+[remaining_obligations]
+arithmetic = "Construct actual all-positive-rate DyadicBirthBound witness; no such proof is supplied by this increment"
+moment_route = "Construct actual source family, moment bounds and positive mass estimates with r(p)+kappa(p) arbitrarily small and constants uniform in j"
+kakeya = "Construct source-exact arithmetic-to-tube map, actual input norm and observation measure; do not substitute averaged geometric control for deterministic source"
+spin = "Discharge deterministic/disorder, extensive normalization, depth and finite-size transports if using the SK ensemble theorem"
+sat = "Certified real-weight evaluation, bounded-width finite CNF encoding, auxiliary variables and bit costs, and actual signed source return"
+literature_index = "The inherited central-ledger cross-reference remains pending; source note and existing correspondence are retained"
+
+[diagnostics]
+commands = ["python /mnt/data/rh_transfer_work/preflight.py > /mnt/data/rh_transfer_work/preflight-normal.json", "python -O /mnt/data/rh_transfer_work/preflight.py > /mnt/data/rh_transfer_work/preflight-optimized.json", "cmp /mnt/data/rh_transfer_work/preflight-normal.json /mnt/data/rh_transfer_work/preflight-optimized.json"]
+exit_statuses = [0, 0, 0]
+exact_rational_integer_checks_per_mode = 5957
+numerical_checks_per_mode = 414
+numerical_digits = 100
+lexical_checks_per_mode = 8
+checks_per_mode = 6379
+script_sha256 = "391b5283a144bc691edba152659828ec9856922b02d02ae625da9c82fd450f07"
+normal_sha256 = "64dd4ec286d12c8517a4b390ee5f8e0054e2431378dd7cc1c044b02cd6e87021"
+optimized_sha256 = "64dd4ec286d12c8517a4b390ee5f8e0054e2431378dd7cc1c044b02cd6e87021"
+actual_source_scope = "Numerical source assignments at N=1,2,4,8 on labels 1..N; inactive index zero not separately doubled"
+interpretation = "Finite off-kernel evidence only; no interval, asymptotic, SAT, compiler or kernel certificate"
+durable_noeaaeue_receipt = "UNAVAILABLE; scripts and outputs remain external temporary diagnostics"

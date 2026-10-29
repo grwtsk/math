@@ -1,0 +1,126 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pointwise-chi4-mertens-731-v0.1"
+owner_repository = "grwtsk/math"
+issue = 731
+parent_issue = 698
+parent_pr = 701
+exceptional_character_issue = 691
+exceptional_character_pr = 697
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_POINTWISE_CHI_FOUR_TO_DYADIC_SOURCE_DRAFT_POINTWISE_CHI_FOUR_MERTENS_ENVELOPE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.ChiFourMertensPointwiseToDyadic"
+build_target = "GRWTSK.NumberTheory.Moebius.ChiFourMertensPointwiseToDyadic"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-chi4-mod-four-residues-698-20261022"
+stacked_parent_revision = "a8d7518867a20dc369847e978b203784d67bfa7d"
+stacked_parent_tree = "10cd8eba2e3e99bcd0931539111e62074bd2e9df"
+candidate_branch = "research/rh-pointwise-chi4-mertens-731-20261022"
+theorem_source_commit = "2b0fbdc4dd2031af41cc5abf9aa2dd33ee54bb0f"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/ChiFourMertensPointwiseToDyadic.lean"
+theorem_source_git_blob = "9c2511e896c1860ca3bd154977306002d7ddd7b3"
+mathematical_note_commit = "539240be5faf093fe1c07ccb5cf4e2496a684899"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/pointwise-chi4-mertens-to-dyadic.md"
+mathematical_note_git_blob = "a187192acb7291ebb1470cbe90898fcf62cc20eb"
+
+[pointwise_source]
+proposition = "PointwiseChiFourTwistedMertensSquareRootPlusEpsilonEnvelope"
+observable = "chiFourTwistedMertensPrefix"
+formula = "forall epsilon>0 exists C>=0 forall n, norm(M_chi4(n)) <= C*sqrt(n)*n^epsilon"
+constructed = false
+
+[scale_transport]
+epsilon = "delta/8"
+epsilon_definition = "pointwiseMertensDyadicEpsilon"
+total_exponent = "pointwiseMertensDyadicExponent"
+endpoint_constant = "pointwiseMertensDyadicConstantFactor"
+endpoint_theorem = "chiFourTwistedMertens_le_dyadicScale"
+dyadic_energy_theorem = "dyadicChiFourTwistedMertensEnergy_of_pointwise"
+adapter_value = "pointwiseChiFourToDyadicEnergyAdapter"
+pre_squared_scale = "dyadicMertensSquareRootEpsilonScale"
+pre_squared_scale_target = "dyadicMertensSquareRootEpsilonScale_sq_le_target"
+
+[downstream]
+exceptional_energy = "twoKernelTwistedMertensEnergy_of_pointwiseOrdinary_and_pointwiseChiFour"
+natural_scale = "naturalScaleCongruenceL1_of_two_pointwiseMertens_twoUnit_regular"
+ordinary_pointwise_required = true
+chi_four_pointwise_required = true
+two_unit_supplier_required = true
+regular_orbit_supplier_required = true
+
+[dirichlet_boundary]
+source_data = "PointwiseChiFourDirichletSourceData"
+source_proposition = "PointwiseChiFourDirichletSource"
+generic_adapter = "ToPointwiseChiFourMertensEnvelopeAdapter"
+adapter_alias = "PointwiseChiFourDirichletAdapter"
+exact_mathlib_chi_four_required = true
+reciprocal_l_series_bridge_required = true
+square_root_plus_epsilon_required = true
+all_endpoint_constant_required = true
+finite_initial_range_required = true
+named_adapter_value_constructed = false
+result_003_sufficient = false
+
+[evidence_states]
+source_draft = true
+pointwise_chi_four_envelope_typed = true
+explicit_epsilon_delta_allocation_scripted = true
+dyadic_endpoint_transport_scripted = true
+pointwise_to_dyadic_adapter_source_constructed = true
+conditional_downstream_transport_scripted = true
+pointwise_chi_four_mertens_envelope_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+natural_scale_endpoint_l1_supplier_proved = false
+riemann_hypothesis_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ChiFourMertensPointwiseToDyadic"
+definition_count = 2
+theorem_script_count = 4
+structure_count = 2
+abbreviation_count = 1
+authored_declaration_count = 9
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ChiFourMertensResidueDecomposition.lean"
+git_blob = "bf15e90e7a6b8176caa5c2008892e971838f163c"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_701"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/MertensPointwiseToDyadicGeometric.lean"
+git_blob = "870cb01d8a80bc6b5cb9cbf9feaa98670c87597f"
+status = "STACKED_SOURCE_DRAFT_REUSED_SCALE_BOOKKEEPING"
+
+[hostile_controls]
+result_003_not_promoted_to_pointwise_square_root = true
+grh_not_claimed = true
+rh_not_claimed = true
+exact_mathlib_chi_four_preserved = true
+finite_initial_range_not_discarded = true
+source_elaboration_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_pointwise_chi_four_mertens_envelope = true
+construct_two_unit_analytic_supplier = true
+construct_regular_orbit_supplier = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+pointwise_chi_four_mertens_estimate_proved = false
+grh_proved = false
+result_003_supplies_pointwise_square_root = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false

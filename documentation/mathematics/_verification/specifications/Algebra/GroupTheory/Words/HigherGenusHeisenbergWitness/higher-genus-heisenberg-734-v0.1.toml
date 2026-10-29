@@ -1,0 +1,379 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "higher-genus-heisenberg-734-v0.1"
+owner_repository = "grwtsk/math"
+issue = 734
+related_issues = [722, 704, 694, 687, 674, 665, 661, 653, 649, 159, 198, 205, 545, 121, 168, 516, 100, 15]
+route_id = "GENUS_UNIFORM_HEISENBERG_PRIMITIVE_H1_KERNEL"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness"
+build_target = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/heisenberg-separating-primitive-722-20261022"
+review_parent_revision = "919dd825e117045ec209a877fcf0db0aeadaad31"
+review_parent_generic_git_blob = "81b49f45c831c24b440d008b071aa52a8e928432"
+review_parent_consumer_git_blob = "f708b3f3d6d0fb01034b0f691ec18edf3dfa61fc"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/GroupTheory/Words/HigherGenusHeisenbergWitness.lean"
+new_module_git_blob = "f7080658b4eb72ffaa340956b137272301d4acfb"
+new_module_namespace = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness"
+mathematical_note_path = "docs/mathematics/GroupTheory/Words/higher-genus-heisenberg-homology-obstruction.md"
+mathematical_note_git_blob = "121eb07ade5f020cbb5b9fd1ae11d67de2d103a0"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+authored_mathematical_scope = "finite family of abstract presented groups Gamma_(k+2)"
+actual_noncommutative_order_preserved = true
+actual_presented_group_produced_at_source_level = true
+relator_soundness_proof_candidate = true
+heisenberg_quotient_hom_proof_candidate = true
+all_g_ge_two_primitive_witness_proof_candidate = true
+all_g_ge_two_abelianization_kernel_proof_candidate = true
+all_integer_characters_undetecting_source_candidate = true
+separate_g_two_and_g_three_fixtures = true
+actual_marked_surface_isomorphism_proved = false
+actual_surface_geometry_or_geodesic_lengths_proved = false
+complete_primitive_source_enumeration_proved = false
+torelli_johnson_adapter_proved = false
+cech_hodge_chain_adapter_proved = false
+modular_to_haar_adapter_proved = false
+sofic_spectral_adapter_proved = false
+chowla_growing_shift_supplier_proved = false
+selberg_trace_formula_formalized = false
+gue_or_random_matrix_universality_proved = false
+zeta_divisor_identification_proved = false
+riemann_hypothesis_proved = false
+mathematical_statement = "For every k:Nat, the first-handle commutator in the genuine genus-(k+2) one-relator presented group maps to Heisenberg Z, is primitive, and is killed by Mathlib Abelianization.of."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness"
+authored_declaration_count = 28
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.GroupTheory.Words.GenusTwoHeisenbergWitness", "Mathlib.Algebra.BigOperators.Group.List.Basic"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness"
+source_construct = "PresentedGroup ({higherGenusRelator k} : Set (FreeGroup (GenusLetter k)))"
+expected_generated_status = "IMPORTED_GROUP_AND_QUOTIENT_INSTANCES_NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.GenusLetter"
+kind = "abbrev"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.baseLetter"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.extraLetter"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.firstTwoRelator"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.extraHandleRelator"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.extraRelatorList"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.higherGenusRelator"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.HigherGenusPresentedGroup"
+kind = "abbrev"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.generator"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.heisenbergLetter"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.firstTwoRelator_evaluation"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.extraHandleRelator_evaluation"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.extraRelatorList_evaluation"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.higherGenusRelator_evaluation"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.toHeisenberg"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.toHeisenberg_generator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.firstHandleCommutator"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.toHeisenberg_firstHandleCommutator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.firstHandleCommutator_primitive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.firstHandleCommutator_abelianization_eq_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.firstHandleCommutator_integerCharacter_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.familyWitness"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.primitive_and_homology_invisible"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.no_integer_unit_certificate"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.extraRelatorList_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.extraRelatorList_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.genus_two_case"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness.genus_three_case"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "g-two-boundary"
+requirement = "The family includes k=0 and a literal two-handle relator; the additional handle list is empty but the first two commutators remain."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "g-three-nonempty"
+requirement = "The family includes k=1 and the ordered extra relator list is a singleton, even though its Heisenberg image is one."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "arbitrary-k-not-only-two"
+requirement = "Every k:Nat has finite extra handle IDs and the full single relator; no hidden maximum genus or omitted family cases."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "free-group-source-exact"
+requirement = "Use the actual Mathlib FreeGroup on Sum(Fin4, Fin k×Bool), not a free abstract oracle or an infinitely generated stand-in."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "handle-source-injective"
+requirement = "Base generator labels and extra-handle pair labels inhabit disjoint Sum constructors; do not collapse a newly added handle into a base generator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "a-versus-b-extra-letter"
+requirement = "The Bool flag distinguishes the extra a and b generators and their ordered commutator factors."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "noncommutative-product-order"
+requirement = "Handle commutators form an ORDERED List.prod; unordered Finset.prod would require an invalid commutativity premise."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "extra-list-order"
+requirement = "The extra handle relator list is List.ofFn over canonical Fin k order; don't silently reorder its source terms."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-relator-normal-closure"
+requirement = "HigherGenusPresentedGroup must be the genuine PresentedGroup quotient by the normal closure of the entire ordered relator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "base-relator-cancellation"
+requirement = "The first two commutators map [X,Y]=Z and [X,Y^-1]=Z^-1, with the inverse on the second b generator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "trivial-extra-letters"
+requirement = "Every extra source generator maps to group identity in the selected quotient homomorphism, not necessarily to identity in the presented group."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "extra-commutators-before-product"
+requirement = "Prove each extra handle commutator has image 1, then the entire ordered list product has image 1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-relator-soundness"
+requirement = "The entire actual relator must map to identity before applying PresentedGroup.toGroup; a base-only check is not sufficient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-group-hom-from-quotient"
+requirement = "The map must be a MonoidHom from the actual PresentedGroup, not merely a map of finite generator values."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "first-handle-same-source"
+requirement = "The first-handle commutator inside each presented group must be the exact same element sent to Z and mapped to identity by abelianization."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "heisenberg-Z-not-power"
+requirement = "Reuse the exact parent Heisenberg proof excluding all positive proper roots of Z, not a bounded enumeration."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "separating-primitive-not-simple-proof"
+requirement = "The non-power group theorem does not by itself prove a geodesic is simple or separating in a marked hyperbolic surface."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "canonical-abelianization"
+requirement = "Use Mathlib Abelianization.of of the complete presented group; do not equate an arbitrary first/second-coordinate projection with H1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-integer-characters-zero"
+requirement = "For each k and every actual IntegerCharacter, the first-handle commutator maps to integer zero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "unit-certificate-not-necessary"
+requirement = "Failure of all unit homology certificates for the named primitive element demonstrates incompleteness of #704, not unsoundness."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-word-primitivity-not-inferred"
+requirement = "No empty word or identity source is claimed primitive; the first-handle commutator is nontrivial only by the genuine Heisenberg map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "g-two-presentation-not-definitional"
+requirement = "The k=0 Sum(Fin4, empty) presentation is not asserted definitionally equal or isomorphic by proof to the parent's Fin4 genus-two presentation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-hyperbolic-identification-open"
+requirement = "No surface homotopy/fundamental-group equivalence, hyperbolic metric, marked topological handle loops or Nielsen normal form is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "geodesic-length-and-enumeration-open"
+requirement = "No actual primitive closed-geodesic length or complete length-bounded source enumeration follows from this abstract group theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "torelli-johnson-not-automatic"
+requirement = "A surface-group commutator is not a Torelli mapping class and gives no proved Johnson homomorphism or mapping-class action."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "modular-characters-alias-separate"
+requirement = "The nonabelian witness does not fix modular character aliasing or supply finite-to-continuous holonomy under #653."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cech-hodge-positive-signed-separate"
+requirement = "No chain map to #198 or signed Hodge consumer #205/#545 is constructed by the group family."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "sofic-rmt-no-implication"
+requirement = "No operator limit, macroscopic/microscopic spectral equivalence, GUE variance or sine kernel follows from this group family."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "chowla-mobius-no-implication"
+requirement = "No growing-shift Möbius correlation or fixed-to-all-depth Chowla comparison is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "rh-no-implication"
+requirement = "No Selberg trace equation, zeta divisor or RH theorem is proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generated-declarations-require-audit"
+requirement = "Abbrev/def elaborations and imported PresentedGroup instances require exact-head generated declaration inventory and transitive axiom review."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "held-F06-no-execution"
+requirement = "The passive manifest authorizes no Lean/Lake, VM, native/worker, cache, workflow, CI or executor actions."
+status = "NOT_RUN"
+

@@ -1,0 +1,138 @@
+# P0 source-bound request: arithmetic certified sieve and two-adic K0 collision.
+# Source inspection only; no compiler or kernel receipt.
+schema_version = "0.1"
+request_id = "graph-sandwich-certified-arithmetic-k0-20261026"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "421e416c9742f9b0d265d3795b9a0589646c28e6"
+authoring_source_commits = [
+  "1fbbf7d78d9eefe73c620f54c0f50855009b2837",
+  "913cdb655a087f39f8331e0f5a6af720a921ed45",
+  "305bbfebc27c4b8d46ce5cfa447835fe9682ebba",
+  "421e416c9742f9b0d265d3795b9a0589646c28e6",
+]
+graph_source_path = "GRWTSK/GraphSandwichDiffusion.lean"
+graph_source_blob = "9a22565da0918bf69511c02a8b871847154b4aab"
+k_theory_source_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+k_theory_source_blob = "dbe5efd80bc873b812697f5a96f9ce6fc3e7fed8"
+upstream_grothendieck_path = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+upstream_grothendieck_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_factorization_source_path = "Mathlib/Data/Nat/Factorization/Basic.lean"
+mathlib_factorization_source_blob = "754d9c2792659f68a624086c9ce9af3ce90e0737"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+mathematical_class = "FINITE_CERTIFIED_ARITHMETIC_GRAPH_PLUS_K0_SHAPED_COLLISION_SOURCE_CANDIDATE"
+issue = "https://github.com/grwtsk/math/issues/1344"
+graph_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.arithmeticSupportRecord",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_edge_iff_positive",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_search_one_eq_survivors",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_oneStep_hit_iff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_positivePath",
+]
+k_theory_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_two",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_four",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_two_ne_four",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.two_four_certified_type_hits",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_twoAdic_type_decoder_on_certified_sieve",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_two",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_four",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_completeAt_certified_sieve",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_multiplicityOneType_decoder_on_certified_sieve",
+]
+direct_graph_imports = [
+  "Mathlib",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich",
+  "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover",
+]
+direct_k_theory_imports = [
+  "GRWTSK.Algebra.KTheory.GrothendieckPort",
+  "GRWTSK.GraphSandwichDiffusion",
+  "Mathlib.Data.Nat.Factorization.Basic",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "Mathlib.Tactic",
+]
+exact_hypotheses = [
+  "Arithmetic kernel modulus q : Nat, cutoff N : Nat, hN : 1 <= N; finite scope Finset.Icc 1 N",
+  "Certified relation defined as positiveSieveEdge q N, with both endpoints in scope and Nat.Coprime target q",
+  "Semantic relation on inventory is endpoint scope plus strict positivity of the arithmetic reset-kernel transition",
+  "Candidate and admissible equal this exact arithmetic support relation, not any unrelated seed-paper candidate",
+  "One-step certifiedSearch from integer 1 equals finite scope filtered by Nat.Coprime n q",
+  "One-step arithmetic type hit iff existence of in-scope coprime target with that supplied type and positive weight",
+  "K0-shaped lift : Nat ->* M with [CommMonoid M] remains explicit; no analytic C-star K0 constructed",
+  "Concrete multiplicity type n.factorization 2 distinguishes 2 from 4 using Nat.factorization_pow_self",
+  "Finite two-type fixture: q=3, 1<=N and 4<=N, source=1, depth=1, arithmetic radical weight",
+  "Binary Bool type means exponent of prime 2 equals one; completeness is relative to this finite Bool type set",
+  "Exact decoder obstruction requires both 2,4 certified-reachable with identical radical K0-shaped feature and different multiplicity labels",
+]
+source_level_conclusions = [
+  "certifiedArithmeticInventory records exact positive reset-kernel transition support as a concrete finite SourceSearchInventory Nat",
+  "Certified arithmetic one-step search from 1 equals coprime survivors of the positive integer cutoff",
+  "All strictly positive arithmetic kernel paths are certified paths in this arithmetic inventory",
+  "Prime-2 multiplicities of 2 and 4 equal 1 and 2 respectively; arithmetic radical/K0-shaped features collide",
+  "For q=3 and N>=4, the two exhibited exact valuation types both have positive certified sieve weight",
+  "For q=3 and N>=4, the explicitly chosen finite Bool multiplicity type space is covered at certified depth 1",
+  "No exact decoder from the radical-derived K0-shaped feature can label all certified states with the natural valuation type or Bool multiplicity type",
+]
+unresolved_premises = [
+  "Lean source not compiled; confirm all SourceSearchInventory field elaborations, dependent relationship records and scope projections",
+  "Review arithmetic search one-step proof against mem_reachableWithin_zero/succ and the definitional certified relation",
+  "Confirm direct factorization bridge syntax Nat.Prime.factorization_self and Nat.factorization_pow_self at pinned Mathlib",
+  "Compile full transitive imports and check no graph/KTheory cycle; graph imports Farey graph and Mathlib, KTheory imports graph one way",
+  "Fresh independent kernel checking and complete transitive #print axioms census of new declarations",
+  "Graph semantic relation is not globally shown reflexive/transitive; do not use certifiedSearch_sound without supplying these hypotheses or a suitable semantic closure",
+  "Neither the unrelated seedInventory candidate edges nor paper-derived hypotheses are promoted to certified",
+  "Arithmetic inventory only certifies finite positivity of this source-independent reset kernel, not an analytic spectral semigroup",
+  "Finite Bool coverage N>=4 does not imply asymptotic completeness over unbounded valuation labels or prime types",
+  "Quantitative weighted-sieve asymptotic steering, type-positive lower bounds and nonprincipal Dirichlet cancellation remain open",
+  "K0-shaped universal Grothendieck completion remains distinct from actual analytic K-theory and Kasparov KK",
+]
+source_review = "STATIC_SOURCE_READBACK_ONLY"
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = 421e416c9742f9b0d265d3795b9a0589646c28e6 && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = 9a22565da0918bf69511c02a8b871847154b4aab && test \"$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)\" = dbe5efd80bc873b812697f5a96f9ce6fc3e7fed8"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+graph_compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+k_theory_compile = "lake build --wfail GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+graph_elaboration = "lake env lean --trust=0 --wfail GRWTSK/GraphSandwichDiffusion.lean"
+k_theory_elaboration = "lake env lean --trust=0 --wfail GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+fresh_kernel = "PENDING_ACTUAL_BUILD_AND_SUPPORTED_INDEPENDENT_CHECKER"
+graph_axiom_targets = [
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_edge_iff_positive",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_search_one_eq_survivors",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_oneStep_hit_iff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_positivePath",
+]
+k_theory_axiom_targets = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_two",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_four",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_two_ne_four",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.two_four_certified_type_hits",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_twoAdic_type_decoder_on_certified_sieve",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_two",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_four",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_completeAt_certified_sieve",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_multiplicityOneType_decoder_on_certified_sieve",
+]
+transitive_axioms = "PENDING_ACTUAL_COMPILATION_AND_TRANSITIVE_IMPORT_CLOSURE"
+expected_compile_exit_code = 0
+expected_elaboration_exit_code = 0

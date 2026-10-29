@@ -1,0 +1,28 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-cyclic-kernel-difference-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "dadb6dd980222e8f5122c05d4b500014311066e0"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / ARBITRARY_PERIOD_SAMPLE_PERIODICITY_SOURCE_WRITTEN / MOD_CONGRUENCE_INVARIANCE_SOURCE_WRITTEN / CYCLIC_KERNEL_DIFFERENCE_SOURCE_PROVED / CYCLIC_PREFIX_REINDEXING_OPEN"
+
+[closed]
+arbitrary_period_sample_periodicity = true
+mod_congruence_invariance = true
+cyclic_kernel_difference = true
+
+[frontier]
+remaining = "ArithmeticCyclicPrefixReindexingClaim"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CYCLIC_KERNEL_DIFFERENCE_SOURCE_PROVED = true
+CYCLIC_PREFIX_REINDEXING_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

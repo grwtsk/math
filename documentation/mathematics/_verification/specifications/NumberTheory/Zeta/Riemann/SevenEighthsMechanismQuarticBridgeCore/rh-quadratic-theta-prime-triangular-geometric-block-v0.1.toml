@@ -1,0 +1,32 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-triangular-geometric-block-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "c168c45f74ee90df64222249a17fef4203e1f5a0"
+parent_tree = "0de8cccc8536716213a77b5321209a3dde2862d0"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / GEOMETRIC_BLOCK_QUOTIENT_PROVED / AUTOCORRELATION_AND_SINE_CONVERSION_OPEN"
+
+[geometric_block]
+ratio = "exp(2*pi*i*t)"
+block = "sum_{j<N} ratio^j"
+quotient = "(ratio^N-1)/(ratio-1)"
+proved = true
+
+[frontier]
+autocorrelation = "SymmetricTriangularKernelAutocorrelationClaim"
+sine_conversion = "TriangularGeometricBlockSineNormClaim"
+closed_form = "follows from both"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+GEOMETRIC_BLOCK_QUOTIENT_PROVED = true
+AUTOCORRELATION_PROVED = false
+SINE_CONVERSION_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

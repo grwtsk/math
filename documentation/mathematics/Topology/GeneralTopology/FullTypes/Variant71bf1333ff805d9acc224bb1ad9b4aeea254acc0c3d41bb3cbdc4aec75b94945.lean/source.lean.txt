@@ -1,0 +1,25 @@
+import LocalizationBlindness
+set_option pp.universes true
+set_option pp.explicit true
+open ContinuousResearch.LocalizationBlindness
+#check SmallPositive
+#check GlobalNonnegative
+#check NonvanishingOnPositive
+#check affineFixture
+#check affineFixture_continuous
+#check affineFixture_smallPositive
+#check affineFixture_later_negative
+#check affineFixture_not_global
+#check continuous_local_does_not_imply_global
+#check bounded_window_can_miss_negative
+#check affineFixture_unique_crossing
+#check zero_before_negative
+#check zero_of_not_global
+#check positive_everywhere_of_nonvanishing
+#check positive_everywhere_iff_nonvanishing
+#check global_nonnegative_of_nonvanishing
+#check LowestEigenvalueProfile
+#check lowestEigenvalue_crossing
+#check lowestEigenvalue_failure_crossing
+#check lowestEigenvalue_nonvanishing_iff_positive
+#check affineFixture_lowestEigenvalueProfile

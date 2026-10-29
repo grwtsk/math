@@ -1,0 +1,57 @@
+schema_version = "1.0"
+attribution = "grwtsk contributors"
+source_commit = "63c2869046c682c0c963d7e09da4b8908aee4838"
+base_commit = "d294ca01d06d190b1f07702a546050cc84f1301b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_commit = "db584cd6d46c92f209a44c0f1c829460d327499d"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+execution_receipt = "NONE"
+remote_dispatch = false
+root_promotion = false
+dependency_migration = false
+historical_verification = "Preserved at its original source-bound scope; not transferred to changed closures."
+
+[[sources]]
+path = "GRWTSK/Geometry/Hodge/MovingCenterTransport.lean"
+blob = "c103f6d5b012a4c8a44fa9555eab6623e7cb6ef2"
+sha256 = "e458994ea73f62360971518961c728630c2e5ef9d14948055421cc1f4bdf1787"
+namespace = "GRWTSK.Geometry.Hodge.MovingCenterTransport"
+public_identifiers = ["GRWTSK.Geometry.Hodge.MovingCenterTransport.remainder", "GRWTSK.Geometry.Hodge.MovingCenterTransport.reconstruct", "GRWTSK.Geometry.Hodge.MovingCenterTransport.two_source_difference", "GRWTSK.Geometry.Hodge.MovingCenterTransport.shared_center_difference", "GRWTSK.Geometry.Hodge.MovingCenterTransport.center_of_remainder", "GRWTSK.Geometry.Hodge.MovingCenterTransport.hodge_differential_remainder", "GRWTSK.Geometry.Hodge.MovingCenterTransport.transported_center", "GRWTSK.Geometry.Hodge.MovingCenterTransport.transported_remainder", "GRWTSK.Geometry.Hodge.MovingCenterTransport.signed_readout_return", "GRWTSK.Geometry.Hodge.MovingCenterTransport.bilinear_readout_split", "GRWTSK.Geometry.Hodge.MovingCenterTransport.harmonicCoordinates", "GRWTSK.Geometry.Hodge.MovingCenterTransport.harmonicCoordinates_heat"]
+private_helpers = []
+command = "lake env lean GRWTSK/Geometry/Hodge/MovingCenterTransport.lean"
+status = "NOT_RUN"
+
+[[sources]]
+path = "GRWTSK/NumberTheory/Moebius/MertensCenteredSieve.lean"
+blob = "7faa49a5bed6f8d7853453a82a5d348fe7499bc9"
+sha256 = "b09e135a919f370c768d2a964dd4b24a9b2cf8a1cd7423abda0897026ad9854a"
+namespace = "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve"
+public_identifiers = ["GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.cutoffModulus", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.cutoffModulus_neZero", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.source_label_lt_modulus", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.cutoffModulus_monotone", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.returnedAtom", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.returnedAtom_eq", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.returnedCross", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.returnedCross_eq", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.returnedCredit", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.returnedCredit_eq", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.returnedUpper", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.returnedUpper_eq", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.center_change_exact", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.returnedUpper_step", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.centered_good_scales_implies_RH", "GRWTSK.NumberTheory.Moebius.MertensCenteredSieve.centered_finite_cover_implies_RH"]
+private_helpers = []
+command = "lake env lean GRWTSK/NumberTheory/Moebius/MertensCenteredSieve.lean"
+status = "NOT_RUN"
+
+[[sources]]
+path = "GRWTSK/NumberTheory/Farey/CenteredResidueReturn.lean"
+blob = "d4e56d3348c71f9a04755c9551f51d9f57cbe5b0"
+sha256 = "bebdfe66c9edf75bd4fddad3b0e6cc9f6ca5250d9104f5e100795e7cff034d83"
+namespace = "GRWTSK.NumberTheory.Farey.CenteredResidueReturn"
+public_identifiers = ["GRWTSK.NumberTheory.Farey.CenteredResidueReturn.encode", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.restore", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.restore_encode", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.encode_injective", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.reduced_coordinate_coprime", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.CodeState", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.chartEquiv", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.codeStateFintype", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.codeState_card", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.changeCenter", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.changeCenter_apply", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.changeCenter_comp", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.readout_return", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.recoveredNat", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.recoveredNat_eq", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.changeModulus", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.changeModulus_on_inventory", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.changeModulus_comp_on_inventory", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.recover_word", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.chowla_word_product_return", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.transportedEdge", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.wordPath_return_iff", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.accepts_return_iff", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.boundedNaturalEdge", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.growing_edge_iff", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.growing_wordPath", "GRWTSK.NumberTheory.Farey.CenteredResidueReturn.natural_path_eventually_presented"]
+private_helpers = ["map_wordPath", "boundedEdge", "finite_path_bound"]
+command = "lake env lean GRWTSK/NumberTheory/Farey/CenteredResidueReturn.lean"
+status = "NOT_RUN"
+
+[verification]
+build_command = "lake build GRWTSK.Geometry.Hodge.MovingCenterTransport GRWTSK.NumberTheory.Farey.CenteredResidueReturn GRWTSK.NumberTheory.Moebius.MertensCenteredSieve"
+native_checker = "Resolve and record the actually authorized independent checker; invocation NOT_RUN."
+required_checks = ["all exported types and exact source pins", "transitive imports and foundational axiom closure", "reject sorryAx, research axioms and circular proof dependencies", "q=1 and centered zero stratum", "all nonunit residues and stratum-dependent reduced moduli", "bounded integer range and arbitrary-center return", "dependent finite carrier equivalence and cardinality", "WordPath induction and exact label preservation", "growing carrier path coverage without finite-state stabilization inference", "Hodge differential and opposite signs of center defect", "complete Mertens inventory, both orientations and actual credits", "unchanged good-scale quantifiers and finite portfolio"]
+
+[scope]
+new_estimate = "Zero reconstruction error and multiplicative loss one; no new analytic cancellation rate."
+language = "Exact recoding of a given graph and exhaustive growing finite-stage coverage of actual finite paths; no infinite language stabilization claim."
+centering = "Retained operator channels and exact transition defect, not a density-weighted midpoint."
+prime_density = "No prime-modulus or unit-density requirement for the chart; analytic density hypotheses of other theorems remain separate."
+ellipse = "Only the positive nondegenerate form admits ellipsoid geometry; signed readout not replaced."

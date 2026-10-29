@@ -1,0 +1,38 @@
+# Queued verification request; no execution.
+schema_version = "0.1"
+request_id = "proper-power-rectangular-normalization-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "b1387afce1fc9d43730751a3e04ae10ef76e162d"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularNormalization.lean"
+source_blob = "9047b96430c59d62d1bce752e3eebd8e075dd777"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularNormalization.rectangularWeight_eq_ite",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularNormalization.rectangularSupportedMass_eq_subtype_sum",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerSumTransport",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Prove rectangularSupportedMass equals rectangularProperPowerMass via supported-pair sum normalization",
+ "Prove originalSupportedMass equals original n-indexed nonunitProperPowerMass",
+ "Conclude original-to-rectangular mass identity and remove reindexing premise",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularNormalization.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularNormalization"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularNormalization.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "lake env lean <executor-local axiom-audit file>"

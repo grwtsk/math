@@ -1,0 +1,125 @@
+# PASSIVE single-module mathematical obstruction, never an execution receipt.
+schema = "grwtsk-math-replay-target-v1"
+id = "fixed-shift-uniformity-obstruction-441-v0.1"
+owner_repository = "grwtsk/math"
+owner_issues = [441, 630]
+lean_toolchain_file = "lean-toolchain"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "isolated-one-module-mathematical-counterexample"
+module = "GRWTSK.NumberTheory.ArithmeticFunctions.FixedShiftUniformityObstruction"
+source = "GRWTSK/NumberTheory/ArithmeticFunctions/FixedShiftUniformityObstruction.lean"
+mathematical_note = "docs/reviews/fixed-shift-uniformity-obstruction-441.md"
+source_blob = "3416af4f7e2e4228e01f9b4b8ee5dd8a50540e45"
+requires_clean_checkout = true
+requires_exact_source_module_and_blob = true
+requires_exact_declaration_types = true
+requires_full_kernel_and_axiom_inspection = true
+root_import_required = false
+full_library_build_required = false
+requires_no_arithmetic_or_external_theorem_imports = true
+requires_no_unverified_generic_Walsh_imports = true
+
+[pin]
+local_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+local_lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+pinned_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+commit_tree_is_external_replay_binding = true
+no_self_referential_manifest_hash = true
+
+[definitions]
+exact_count = 2
+expected = [
+  "GRWTSK.NumberTheory.FixedShiftUniformityObstruction.squareShiftSpike",
+  "GRWTSK.NumberTheory.FixedShiftUniformityObstruction.EventuallySmallOnSquareWindow",
+]
+
+[theorems]
+exact_count = 8
+required = [
+  "GRWTSK.NumberTheory.FixedShiftUniformityObstruction.squareShiftSpike_zero_after_square",
+  "GRWTSK.NumberTheory.FixedShiftUniformityObstruction.squareShiftSpike_fixed_eventually_zero",
+  "GRWTSK.NumberTheory.FixedShiftUniformityObstruction.squareShiftSpike_diagonal_peak",
+  "GRWTSK.NumberTheory.FixedShiftUniformityObstruction.squareShiftSpike_fixed_power_envelope",
+  "GRWTSK.NumberTheory.FixedShiftUniformityObstruction.squareShiftSpike_growing_window_peak",
+  "GRWTSK.NumberTheory.FixedShiftUniformityObstruction.squareShiftSpike_sublinear_ratio",
+  "GRWTSK.NumberTheory.FixedShiftUniformityObstruction.squareShiftSpike_not_uniform_on_sublinear_window",
+  "GRWTSK.NumberTheory.FixedShiftUniformityObstruction.fixed_power_saving_does_not_imply_sublinear_uniformity",
+]
+require_all_theorem_heads_and_types = true
+
+[[hostile_controls]]
+id = "not-Liouville"
+must_preserve = "F(N,h)=1_{N=h*h} is a purely abstract rational-valued family, NOT the actual Liouville/Moebius two-point correlation. It refutes a logical quantifier exchange only, not a numerical arithmetic conjecture."
+
+[[hostile_controls]]
+id = "fixed-form-eventually-zero"
+must_preserve = "For each fixed h the only exceptional cutoff is N=h*h. The source proves F(N,h)=0 for every N>h*h; this is stronger than asymptotic cancellation."
+
+[[hostile_controls]]
+id = "common-exponent-form-dependent-constant"
+must_preserve = "For all N,h, |F(N,h)| <= (h*h+1)/(N+1), one common polynomial exponent 1 and an allowed constant C_h=h*h+1. A dependence on h must not be silently dropped."
+
+[[hostile_controls]]
+id = "genuine-sublinear-window"
+must_preserve = "On N=k*k the growing offset h=k has h/N=1/k tending to zero; the obstruction survives r_N/N→0 and is not limited to h comparable to N."
+
+[[hostile_controls]]
+id = "strict-cyclic-collar-eventual"
+must_preserve = "For the separate cyclic theorem r<N, the square-scale window r=k,N=k*k is admissible only once k>=2. The k=1 initial scale does not satisfy strict inequality, but this does not rescue eventual uniformity."
+
+[[hostile_controls]]
+id = "positive-shift-range"
+must_preserve = "The counterexample to uniformity uses k≥1 and the actual finite shift set Finset.Icc 1 k. h=k is a member; h=0 is not required."
+
+[[hostile_controls]]
+id = "not-a-proof-of-false-arithmetic"
+must_preserve = "This abstract spike cannot be used to assert actual Liouville shift-uniformity fails. The required all-order arithmetic theorem remains independently open."
+
+[[hostile_controls]]
+id = "no-infinite-limit-promotion"
+must_preserve = "The source proves finite exact identities and a nonimplication, with written sublinear asymptotics only; a new Lean Tendsto theorem is not claimed."
+
+[[hostile_controls]]
+id = "source-vs-kernel"
+must_preserve = "Source declarations and independent bounded integers do NOT prove Lean elaboration, transitive axiom acceptance or replay."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_extra_axioms = true
+reject_sorry = true
+reject_admit = true
+reject_native_decide = true
+reject_unexamined_opaque_dependencies = true
+unavailable_is_not_pass = true
+
+[acceptance]
+requires_exact_pinned_checkout = true
+requires_compiled_isolated_module = true
+requires_all_elaborated_theorem_types = true
+requires_transitive_axiom_receipts = true
+requires_independent_replay = true
+requires_exact_source_hash_reconciliation = true
+paper_proof_and_integer_checks_not_sufficient = true
+do_not_merge_or_close_from_static_review = true
+
+[evidence]
+source_status = "SOURCE_DRAFT"
+compiler = "NOT_RUN"
+kernel = "NOT_KERNEL_AUDITED"
+axiom_audit = "NOT_DONE"
+external_theorem_import = "NONE"
+pointwise_to_uniform_implication = "REFUTED_AT_ABSTRACT_QUANTIFIER_SCOPE"
+actual_growing_shift_Chowla = "OPEN"
+
+[nonclaims]
+claims = [
+  "Refutation of Liouville Chowla",
+  "An actual multiplicative correlation family with a diagonal spike",
+  "Unconditional failure of growing-shift arithmetic uniformity",
+  "Uniformity theorem obtained from fixed-form log saving",
+  "Any sofic limit, GUE, Montgomery pair correlation or RH theorem",
+  "Lean/Lake kernel audit or independent replay passed",
+]

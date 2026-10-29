@@ -1,0 +1,113 @@
+# P0 source-pinned verification request only; NOT_RUN, no remote dispatch.
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-radical-character-20261025"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "9c9a655e83db8aed5244955f9a9574c791a8506b"
+final_source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean"
+final_source_blob = "bed6f48c1e47e8ef36d14ada89c3a4136258f4a3"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+mathematical_class = "FINITE_ARITHMETIC_SOURCE_CANDIDATE_PLUS_CONDITIONAL_CHARACTER_TRANSFER"
+theorem_authoring_commits = [
+ "f199193fcfabf3bb1deb57d1fbcde508e21ae058",
+ "efd3f49d5d25e329376f5fdfc9866dc3547462ab",
+ "9c9a655e83db8aed5244955f9a9574c791a8506b",
+]
+affected_paths = [
+ "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitLogBound.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitComplexNorm.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean",
+]
+affected_blobs = [
+ "4c69e658fddcdace493069900addfa1ea9fd3a1e",
+ "c502fdebe3aa03041be16a1d1742aded0cc1231e",
+ "bed6f48c1e47e8ef36d14ada89c3a4136258f4a3",
+]
+inspected_supplier_paths = [
+ "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitBridge.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitCharacterBridge.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachNonunitBudget.lean",
+ "GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeTransfer.lean",
+]
+inspected_supplier_blobs = [
+ "4f388c029b966ad922bf597a034e1ceaedae7e92",
+ "5dbdeee18f296e50e72b5d1c600d27ac0fe5f96b",
+ "305f9977e69a95cd7d579b976feba17b11ca20f6",
+ "218fc7a3ad155e63d7096d9f0b8b0411322375fb",
+ "7f747336b0ff7fe40747de338d81739cc50a0ad0",
+]
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitLogBound.nonunit_vonMangoldt_sum_le_radical_correction",
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm.norm_nonunitPsiTotal_le_radical_correction",
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_character_reconstruction_fullPsi_le_radical",
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_dirichlet_reconstruction_fullPsi_le_radical",
+]
+preserved_coarse_declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitLogBound.nonunit_vonMangoldt_sum_le_log_correction",
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm.norm_nonunitPsiTotal_le_log_correction",
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_character_reconstruction_fullPsi_le",
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_dirichlet_reconstruction_fullPsi_le",
+]
+direct_local_import_edges = [
+ "GoldbachVonMangoldtNonunitLogBound -> GoldbachVonMangoldtNonunitBridge",
+ "GoldbachVonMangoldtNonunitLogBound -> GoldbachNonunitPrimeLogSupplier",
+ "GoldbachVonMangoldtNonunitLogBound -> GoldbachProperPowerPositiveModulusBound",
+ "GoldbachVonMangoldtNonunitComplexNorm -> GoldbachVonMangoldtNonunitCharacterBridge",
+ "GoldbachVonMangoldtNonunitComplexNorm -> GoldbachVonMangoldtNonunitLogBound",
+ "GoldbachVonMangoldtCharacterCorrection -> GoldbachUnitFiberPartition",
+ "GoldbachVonMangoldtCharacterCorrection -> GoldbachVonMangoldtNonunitComplexNorm",
+ "GoldbachVonMangoldtCharacterCorrection -> GoldbachVonMangoldtPointwise",
+]
+exact_hypotheses = [
+ "Canonical nonunit sum: q N : Nat, hq : q != 0; all N, including 0 and 1",
+ "Complex norm: q N : Nat, hq : q != 0; nonunitPsiTotal cast identity and nonnegativity from existing sources",
+ "Abstract character reconstruction: q != 0, Fintype kappa, hchi : OrthogonalAt chi a, hprincipal, hunit and hE on all nonprincipal twists",
+ "Dirichlet reconstruction: q != 0, NeZero q, HasEnoughRootsOfUnity Complex (Monoid.exponent (ZMod q)^x), hE on every nonprincipal Dirichlet character",
+ "q=0 is excluded by hq; q=1 is not excluded; integer cutoff is inclusive through N",
+]
+mathematical_conclusions = [
+ "Filtered canonical vonMangoldt sum over n <= N with nonunit residue <= omega_N(q)*log N + Nat.log2 N*log(radical q)",
+ "Complex norm of nonunitPsiTotal <= same radical correction",
+ "Abstract character reconstruction norm <= sum E(k) over nonprincipal modes + same radical correction",
+ "Concrete Dirichlet reconstruction norm <= sum E(chi) over nonprincipal Dirichlet characters + same radical correction",
+]
+unresolved_premises = [
+ "Lean elaboration of inherited vonMangoldt pointwise bridge, complex cast/norm conversions, and all transitive imports",
+ "Lean elaboration of norm_sub_le, congr 1; ring, character-family orthogonality and cardinality facts",
+ "All nonprincipal twisted-sum estimates hE remain assumptions, not newly proved quantitative bounds",
+ "No GRH, zero-free region, Goldbach, or cancellation theorem is established",
+ "Full transitive local module closure and axiom audit",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+verification_receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = 9c9a655e83db8aed5244955f9a9574c791a8506b && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitLogBound.lean)\" = 4c69e658fddcdace493069900addfa1ea9fd3a1e && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitComplexNorm.lean)\" = c502fdebe3aa03041be16a1d1742aded0cc1231e && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean)\" = bed6f48c1e47e8ef36d14ada89c3a4136258f4a3 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPositiveModulusBound.lean)\" = 4f388c029b966ad922bf597a034e1ceaedae7e92 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitBridge.lean)\" = 5dbdeee18f296e50e72b5d1c600d27ac0fe5f96b && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitCharacterBridge.lean)\" = 305f9977e69a95cd7d579b976feba17b11ca20f6 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachNonunitBudget.lean)\" = 218fc7a3ad155e63d7096d9f0b8b0411322375fb && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeTransfer.lean)\" = 7f747336b0ff7fe40747de338d81739cc50a0ad0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+compile_canonical = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitLogBound"
+compile_complex = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm"
+compile_character = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection"
+elaborate_canonical = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitLogBound.lean"
+elaborate_complex = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonunitComplexNorm.lean"
+elaborate_character = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean"
+fresh_kernel = "PENDING_DISCOVERY_OF_INDEPENDENT_CHECKER_AND_ACTUAL_COMPILE"
+axiom_targets = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitLogBound.nonunit_vonMangoldt_sum_le_radical_correction",
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonunitComplexNorm.norm_nonunitPsiTotal_le_radical_correction",
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_character_reconstruction_fullPsi_le_radical",
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection.norm_dirichlet_reconstruction_fullPsi_le_radical",
+]
+transitive_axioms = "PENDING_ACTUAL_COMPILE_AND_AXM_AUDIT"
+expected_compile_exit_code = 0
+expected_elaboration_exit_code = 0

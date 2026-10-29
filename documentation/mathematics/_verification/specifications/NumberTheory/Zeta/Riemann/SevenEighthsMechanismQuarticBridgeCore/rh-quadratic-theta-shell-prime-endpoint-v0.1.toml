@@ -1,0 +1,32 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-shell-prime-endpoint-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "57519f9a165af34c2b3d8052613a586a87a933f1"
+parent_tree = "c293bc6771cb6a7adf96d1e60e33be9c1d74c140"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / PRIME_ENDPOINT_SHELL_IDENTITY_EXACT / UNIFORM_SHELL_EXTENSION_OPEN"
+
+[endpoint_identity]
+shell = "theta(2X)-theta(X)-X"
+prime_coordinate = "X*(primeOnlyMass0(X)+primeOnlyMass1(X))"
+identity_exact = true
+
+[frontier]
+endpoint_cancellation_7_8 = "open"
+endpoint_to_uniform_7_8 = "open"
+recurrence_7_8 = "follows from both"
+unconditional_rh_proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+PRIME_ENDPOINT_SHELL_IDENTITY_EXACT = true
+UNIFORM_SHELL_EXTENSION_PROVED = false
+RECURRENCE_7_8_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

@@ -1,0 +1,36 @@
+schema = "grwtsk.source-verification-requirements/1"
+attribution = "grwtsk contributors"
+issue = 1319
+original_issue_commit = "31c49c2e50177d3801a8ea8be91b70e74a6d115c"
+original_issue_blob = "d1b29569a123bdf0eb37dceda2646042b917c938"
+source = "GRWTSK/NumberTheory/Chebyshev/HigherPrimePowerSource.lean"
+consumer = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentEuclideanGram.lean"
+status = "SOURCE_PROOF_CANDIDATE"
+native_compile = "NOT_RUN"
+kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+exact_type_consumers = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+required_declarations = [
+  "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource.squarePrimeIncrement_eq_vonMangoldt_sum",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram.squareIncrement_eq_central_add_outer_add_higher",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram.centralPrimeMass_ge_of_outer_and_higher_bounds",
+]
+required_supplier_declarations = [
+  "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource.squarePrimeIncrement_eq_first_fiber",
+  "GRWTSK.NumberTheory.Chebyshev.HigherPrimePowerSource.primePowerBases_one",
+  "ArithmeticFunction.vonMangoldt_apply_prime",
+]
+required_gates = [
+  "Fresh immutable project and upstream closure under the pinned toolchain and manifest",
+  "Complete compiler-origin declaration census and transitive axiom audit of supplier and consumer",
+  "Independently authored exact type consumers for the new supplier and original issue targets",
+  "Fresh compilation and kernel checking of the actual central/outer decomposition consumer",
+  "Affected importers and root GRWTSK remain separate acceptance obligations",
+]
+scope = "For every natural n, identify the actual theta increment with the full left-open/right-closed prime inventory weighted by von Mangoldt, using the existing first-exponent fiber"
+missing_bridges = [
+  "Executed native qualification of the new supplier, original consumer and complete dependency closure",
+  "Actual quantitative outer-prime and central-prime estimates remain independent premises",
+]
+excluded_inferences = ["Unconditional prime existence", "Uniform prime distribution", "RH", "Infinite exchange", "Physical mass identification"]

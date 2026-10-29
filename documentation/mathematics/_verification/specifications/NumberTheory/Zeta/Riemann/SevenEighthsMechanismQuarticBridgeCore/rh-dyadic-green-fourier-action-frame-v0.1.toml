@@ -1,0 +1,78 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-green-fourier-action-frame-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_issue = 197
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "2d78166d52390d466ca2dc67c3ab9198066678c6"
+parent_tree = "a18ea1cb014ef3552b31951674f63d85dd3a2714"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / COMPLETE_ADMISSIBLE_FOURIER_ACTION_FRAME_DEFINED"
+
+[zero_mode]
+residual_mean_zero = true
+fourier_coefficient_zero = true
+
+[action_frame]
+mode_zero = "0"
+mode_nonzero = "norm(action_X(fourierModeComplexTest k))^2"
+mode_equals_fourier_energy = true
+integer_parseval = "sum modeEnergy = greenEnergy X"
+natural_shell_regrouping = true
+finite_head_nonnegative = true
+finite_head_monotone = true
+finite_head_tendsto_greenEnergy = true
+
+[full_stage]
+value = "mass0^2 + mass1^2 + admissible Fourier action head"
+nonnegative = true
+monotone = true
+tendsto = "augmentedEnergy X"
+bounded_by = "augmentedEnergy X"
+source_faithful = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicGreenFourierActionFrame"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicGreenFourierActionFrame.lean"
+blob = "0c9b29d82721fc371e563c535d4c9a096b5e36a7"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicGreenFourierActionFrameControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicGreenFourierActionFrameControls.lean"
+blob = "bf9db8ca32a012133fbe724d59c6522bde705839"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "af0ba59fa7f1ca8e3dec0acb032755476a6128a6"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-green-fourier-action-frame.md"
+blob = "ca893add05cda40c942e2048c75f507155756adc"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+ZERO_MODE_DISCHARGED = true
+COMPLETE_ADMISSIBLE_FOURIER_ACTION_FRAME_DEFINED = true
+LOCAL_FRAME_COMPLETENESS_SOURCE_WRITTEN = true
+GLOBAL_WEIL_TRANSPORT_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "transport the complete local action frame through a source-preserving explicit-formula/Weil comparison",
+  "retain gamma, pole, trivial-zero, nontrivial-zero, endpoint and tail channels",
+  "prove cross-scale/global positivity comparison without assuming target Weil positivity"
+]
+
+[nonclaims]
+items = [
+  "source-written frame completeness is not a Lean/kernel receipt",
+  "no global Weil comparison theorem",
+  "no unconditional RH proof"
+]

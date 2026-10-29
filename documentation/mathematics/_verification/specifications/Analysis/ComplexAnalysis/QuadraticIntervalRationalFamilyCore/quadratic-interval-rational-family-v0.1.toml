@@ -1,0 +1,143 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "quadratic-interval-rational-family-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.QuadraticIntervalRationalFamilyCore"
+build_target = "GRWTSK.Interfaces.QuadraticIntervalRationalFamilyCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+# Authored parent revision/tree below are historical, before compatibility repairs.
+# Current module and inherited-target blobs bind maintained mathematical source.
+# The containing replayed commit/tree is bound externally under receipt_policy.
+# Actual repaired phase-1 parent provenance, without substituting for source blob pins.
+phase1_source_repair_revision = "a154e0de2ed60e0219673e11ac65832fbead6bf1"
+phase1_source_repair_tree = "34fac62626e6f3c9c03fe49363731b0bfe826027"
+parent_revision = "91f3ddbd5cf8c5dd143315567ef95f12c312d912"
+parent_tree = "2826d4843bb20b87e756e1c3d3cb0d228e3ffc85"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/QuadraticIntervalRationalQuadratureCore/quadratic-interval-rational-quadrature-v0.1.toml"
+# Pre-phase-2-repair inherited_target_blob = "b2531307df1ea4802000481482d780c42f1761c2".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "6689fbd3ed39ad4c6e74c896c45ab28e260ec6e7"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_policy = "Bind the actual replayed commit, tree and target externally; this is not an execution receipt."
+inventory_policy = "This is a new/direct source catalog, not the complete transitive closure. All predecessor module, declaration and control requirements remain mandatory through the pinned inherited target chain. Reconcile every public elaborated type, generated Member/Evaluation/Trace declaration, deriving and decision instance, and all transitive imports/axioms. Empty name arrays waive nothing."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls"
+path = "GRWTSK/Analysis/Complex/Checks/RationalMellinFamilyControls.lean"
+# Pre-phase-2-repair source_git_blob = "d18ad204d0331edb76b69c70d4b77cc7565ce47f".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "8a3ecbb949ccb18f50556a99320b67e102c99d65"
+required_declarations = ["GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.unitQuadrature", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.unitFamily", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.unitEvaluations", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.unitTrace", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.weighted_unit_checked", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.weighted_unit_output", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.weighted_unit_analytic", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.equal_centers_distinct_keys", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.duplicate_keys_rejected", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.zero_weight_rejected", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.wrong_key_rejected", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.reordered_evaluations_rejected", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.changed_multiplicity_rejected", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.missing_extra_evaluations_rejected", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.wrong_external_inputs_rejected", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.false_intermediate_rejected", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.negative_radius_rejected", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.roundedTrace", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.rounded_family_controls", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.empty_family_controls", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.nonconstantQuadrature", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.nonconstantFamily", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.nonconstantTrace", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.nonconstant_budget_controls", "GRWTSK.Analysis.Complex.Checks.RationalMellinFamilyControls.nonconstant_analytic"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalMellinFamily"
+path = "GRWTSK/Analysis/Complex/RationalMellinFamily.lean"
+source_git_blob = "49c1da2175805aa385fe4fae5ff64515b5511d67"
+required_declarations = ["GRWTSK.Analysis.Complex.RationalMellinFamily.Member", "GRWTSK.Analysis.Complex.RationalMellinFamily.Evaluation", "GRWTSK.Analysis.Complex.RationalMellinFamily.Trace", "GRWTSK.Analysis.Complex.RationalMellinFamily.defaultMember", "GRWTSK.Analysis.Complex.RationalMellinFamily.defaultEvaluation", "GRWTSK.Analysis.Complex.RationalMellinFamily.memberAt", "GRWTSK.Analysis.Complex.RationalMellinFamily.evaluationAt", "GRWTSK.Analysis.Complex.RationalMellinFamily.terms", "GRWTSK.Analysis.Complex.RationalMellinFamily.localBudget", "GRWTSK.Analysis.Complex.RationalMellinFamily.error", "GRWTSK.Analysis.Complex.RationalMellinFamily.output", "GRWTSK.Analysis.Complex.RationalMellinFamily.Valid", "GRWTSK.Analysis.Complex.RationalMellinFamily.instDecidableValid", "GRWTSK.Analysis.Complex.RationalMellinFamily.check", "GRWTSK.Analysis.Complex.RationalMellinFamily.checkWithin", "GRWTSK.Analysis.Complex.RationalMellinFamily.centerSum", "GRWTSK.Analysis.Complex.RationalMellinFamily.check_iff_valid", "GRWTSK.Analysis.Complex.RationalMellinFamily.length_terms", "GRWTSK.Analysis.Complex.RationalMellinFamily.termAt_terms", "GRWTSK.Analysis.Complex.RationalMellinFamily.weighted_member_error", "GRWTSK.Analysis.Complex.RationalMellinFamily.centerSum_error", "GRWTSK.Analysis.Complex.RationalMellinFamily.check_sound", "GRWTSK.Analysis.Complex.RationalMellinFamily.checkWithin_sound", "GRWTSK.Analysis.Complex.RationalMellinFamily.checked_shape", "GRWTSK.Analysis.Complex.RationalMellinFamily.checked_radius_nonneg", "GRWTSK.Analysis.Complex.RationalMellinFamily.checked_local_charge_le", "GRWTSK.Analysis.Complex.RationalMellinFamily.withExactAccumulation", "GRWTSK.Analysis.Complex.RationalMellinFamily.withExactAccumulation_checked", "GRWTSK.Analysis.Complex.RationalMellinFamily.referenceEvaluations", "GRWTSK.Analysis.Complex.RationalMellinFamily.referenceTrace", "GRWTSK.Analysis.Complex.RationalMellinFamily.referenceEvaluationAt", "GRWTSK.Analysis.Complex.RationalMellinFamily.reference_checked", "GRWTSK.Analysis.Complex.RationalMellinFamily.check_enclosed_sound", "GRWTSK.Analysis.Complex.RationalMellinFamily.empty_centerSum"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalRationalFamilyCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalRationalFamilyCore.lean"
+source_git_blob = "c8ac8a08fc73f5140cb6f15b013a4ece7636993b"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.RationalMellinQuadrature"
+path = "GRWTSK/Analysis/Complex/RationalMellinQuadrature.lean"
+# Pre-phase-2-repair source_git_blob = "cd0ff21766fa771e8a7a888e329cb791e89ab616".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "e5d9d2a73c8b9d6e71364af8e3dc33a6ec9620e9"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalFiniteSum"
+path = "GRWTSK/Analysis/ErrorBounds/RationalFiniteSum.lean"
+# Pre-phase-2-repair source_git_blob = "cf1b4c6249177faf460030f68be51d7681589e8a".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "3150e400dd0db697df587fcf002ac60b70085bdf"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinKernel"
+path = "GRWTSK/Analysis/Complex/IntervalMellinKernel.lean"
+# Pre-phase-2-repair source_git_blob = "c4245533774c0e06b9278cd9e8963cf81474ceab".
+# Current pin binds maintained source bytes; all mathematical and trust gates persist.
+source_git_blob = "fbc38e070555fb2e7318f29444d083986ca93a57"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.QuadraticIntervalRationalQuadratureCore"
+path = "GRWTSK/Interfaces/QuadraticIntervalRationalQuadratureCore.lean"
+source_git_blob = "ee0770335e9d7c219e38f65717dd2fd5316eb304"
+required_declarations = []
+
+[[controls]]
+id = "external_family"
+requirement = "Exact external list controls every center, key and positive natural multiplicity. A key is not analytic provenance."
+
+[[controls]]
+id = "unique_keys"
+requirement = "Reject duplicate external keys; do not deduplicate equal centers or equal heights with distinct keys."
+
+[[controls]]
+id = "record_order"
+requirement = "Require one matching key and complete interval proof per position; reject missing, extra or reordered records."
+
+[[controls]]
+id = "multiplicity"
+requirement = "Scale values AND complete member errors by the same multiplicity. Reject zero-weight skip attempts."
+
+[[controls]]
+id = "shared_endpoints"
+requirement = "All local intervals use exactly the external a,b; changed endpoints require new checks."
+
+[[controls]]
+id = "all_inner_checks"
+requirement = "Retain each member mesh, every log and exponential check, and its internal accumulation. No prefix-only success."
+
+[[controls]]
+id = "outer_arithmetic"
+requirement = "Require zero initialization, exact length and every weighted update. Include imaginary and multiplication error."
+
+[[controls]]
+id = "error_sign"
+requirement = "Reject negative radii and tolerance; recompute total error rather than trust a supplied final claim."
+
+[[controls]]
+id = "tolerance_scope"
+requirement = "Member tolerance is not family tolerance. Failure means not certified, not actual error lower bound."
+
+[[controls]]
+id = "constructed_acceptance"
+requirement = "Reference construction must pass for all stated per-node guards; do not assume a passing family witness."
+
+[[controls]]
+id = "empty_family"
+requirement = "Accept only the empty finite sum with one zero accumulator; no complete-divisor conclusion."
+
+[[controls]]
+id = "coordinate_transport"
+requirement = "Retain separately proved coordinate/horizontal enclosures on identical indices and multiplicities; no tail or source mismatch as radius."
+
+[[controls]]
+id = "trust"
+requirement = "Exact types and complete inherited/transitive trust acceptance required; root-only success or Python cases cannot accept Lean."

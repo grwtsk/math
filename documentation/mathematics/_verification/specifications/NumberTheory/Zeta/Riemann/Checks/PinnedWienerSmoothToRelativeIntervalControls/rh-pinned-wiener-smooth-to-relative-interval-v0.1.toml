@@ -1,0 +1,86 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-wiener-smooth-to-relative-interval-v0.1"
+owner_repository = "grwtsk/math"
+issue = 964
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedWienerSmoothToRelativeIntervalControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedWienerSmoothToRelativeIntervalControls"
+
+[source_binding]
+parent_branch = "research/950-wi-smooth-interval-brackets-v01"
+parent_revision = "f33e4ab9f4a0468b95dd46221158ee3ae0ea5e72"
+implementation_branch = "research/964-wi-smooth-to-interval-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / SMOOTH_TO_INTERVAL_SQUEEZE_SOURCE_DEFINED / EXACT_TSUM_CEILING_WINDOW_SOURCE_DEFINED / PINNED_LAMBDA_INTERVAL_CONSUMER_SOURCE_DEFINED / SMOOTH_WIENER_IKEHARA_PROOF_PORT_OPEN / NO_PNT_OR_RH_CLAIM"
+
+[historical]
+external_repository = "AlexKontorovich/PrimeNumberTheoremAnd"
+external_revision = "a5040887e6bb24f7c201db8568e7755c138b3878"
+wiener_file = "PrimeNumberTheoremAnd/Wiener.lean"
+wiener_blob = "06d464bfbf34b21360a8c725422d6c7d1cb4c2eb"
+smoothed_source_theorem = "wiener_ikehara_smooth_real"
+interval_source_theorem = "WienerIkeharaInterval"
+discrete_interval_source_theorem = "WienerIkeharaInterval_discrete'"
+external_mathlib_revision = "308445d7985027f538e281e18df29ca16ede2ba3"
+local_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+external_analytic_proof_imported = false
+
+[mathematics]
+sequence = "f:Nat->Real nonnegative"
+residue = 1
+smoothing_input = "for every phi ContDiff Real infinity with compact support and closure support in Ioi 0, tsum_n f(n)*phi(n/T)/T -> integral_(0,infinity)phi"
+smoothing_premise_proved = false
+interval = "Set.Ico a b with 0<a<b"
+finite_integer_interval = "Finset.Ico (ceil(a*T)) (ceil(b*T))"
+positive_scale = "T>0 for exact source identities"
+compact_support_yields_finite_sum = true
+indicator_tsum_equals_exact_ceiling_sum = true
+pointwise_sandwich_from_parent = "pinnedSmoothIntervalBrackets_exists"
+relative_mass_error = "eta=min(a/2,(b-a)/2,eps/4)"
+epsilon_sandwich = "integral/series lower + upper -> abs(window(T)-(b-a))<eps"
+natural_scale_transport = "compose with tendsto_natCast_atTop_atTop"
+actual_lambda_target = "PinnedVonMangoldtRelativeIntervalLimits"
+actual_lambda_target_proved_unconditionally = false
+actual_lambda_target_proved_given_smooth = true
+
+[declarations]
+smooth_test_premise = "SmoothUnitResidueWienerTestLimit"
+literal_ceiling_membership = "smoothWiener_mem_Ico_ceil_iff"
+indicator_tsum_finset_identity = "smoothWiener_tsum_indicator_eq_interval"
+smooth_weight_summability = "smoothWiener_weight_summable"
+indicator_weight_summability = "smoothWiener_indicator_summable"
+weighted_tsum_sandwich = "smoothWiener_weightedTsum_sandwich"
+real_epsilon_limit = "smoothWiener_testLimit_to_realInterval"
+natural_scale_limit = "smoothWiener_testLimit_to_integerWindow"
+pinned_smooth_wiener_premise = "PinnedVonMangoldtSmoothWienerLimit"
+pinned_interval_target = "pinnedVonMangoldt_relativeWindows_of_smoothWiener"
+conditional_weak_pnt_consumer = "actual_lambda_weakPNT_of_smoothWiener"
+hostile_zero_test = "zero_sequence_rejects_unit_smoothTestLimit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedWienerSmoothToRelativeInterval"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedWienerSmoothToRelativeInterval.lean"
+blob = "1df1bf58b82ca6a1f72dfeccbb57b169c7160505"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedWienerSmoothToRelativeIntervalControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedWienerSmoothToRelativeIntervalControls.lean"
+blob = "d1683922f0b599f4afdd1e97b479e3a18f4da451"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-wiener-smooth-to-relative-interval.md"
+blob = "8ab7a19c67ae4b5c4be847661e1c1301da6aa6d3"
+
+[trust]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+INDICATOR_ENDPOINTS_SOURCE_DEFINED = true
+SMOOTH_TEST_COMPACT_SUPPORT_SUMMABILITY_SOURCE_DEFINED = true
+SMOOTH_TO_REAL_INTERVAL_SQUEEZE_SOURCE_DEFINED = true
+ACTUAL_LAMBDA_RELATIVE_INTERVAL_CONDITIONAL_SOURCE_DEFINED = true
+ACTUAL_LAMBDA_WEAK_PNT_CONDITIONAL_SOURCE_DEFINED = true
+SMOOTH_TEST_WIENER_IKEHARA_PROOF_IMPORTED = false
+UNCONDITIONAL_WEAK_PNT_KERNEL_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
+LEAN_LAKE_RUN = false
+ISSUE_100_REPLAY_RECEIPT = false

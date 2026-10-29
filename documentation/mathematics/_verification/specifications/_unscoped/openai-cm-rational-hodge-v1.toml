@@ -1,0 +1,112 @@
+schema = "grwtsk-external-mathematical-source-review-v1"
+id = "openai-cm-rational-hodge-v1"
+source_repository = "openai/math"
+source_revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+source_root = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026"
+license_file = "LICENSE"
+local_repository = "grwtsk/math"
+local_issue = 176
+
+[source_statement]
+title = "The rational Hodge conjecture for CM abelian varieties"
+main_file = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/main.tex"
+statement = "For every complex CM abelian variety A and every codimension p, the rational Betti cycle-class map CH^p(A)_Q -> H^(2p)(A,Q) intersect H^(p,p)(A) is surjective."
+coefficient_field = "Q"
+requires_exact_variety_scope = true
+requires_exact_codimension_scope = true
+requires_exact_cycle_class_conventions = true
+requires_exact_hodge_realization_conventions = true
+
+[[source_files]]
+path = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/01-introduction.tex"
+role = "main theorem and scope"
+
+[[source_files]]
+path = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/02-tensors.tex"
+role = "tensor and Hodge-class reduction"
+
+[[source_files]]
+path = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/03-surface.tex"
+role = "geometric cycle construction"
+
+[[source_files]]
+path = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/04-theta.tex"
+role = "theta construction"
+
+[[source_files]]
+path = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05a-moduli.tex"
+role = "moduli transport"
+
+[[source_files]]
+path = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05b-frobenius.tex"
+role = "Frobenius comparison"
+
+[[source_files]]
+path = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05b-satake-frobenius.tex"
+role = "Satake and projected summands"
+
+[[source_files]]
+path = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/05c-cm-types.tex"
+role = "CM-type combinatorics"
+
+[[source_files]]
+path = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/06-assembly.tex"
+role = "global theorem assembly"
+
+[[source_files]]
+path = "preprints/The-rational-Hodge-conjecture-for-CM-abelian-varieties-October-6-2026/build/sections/07-consequences.tex"
+role = "downstream consequences; not inputs to the main theorem"
+
+[local_alignment]
+statement_module = "GRWTSK.Geometry.Hodge.RationalCycleCellular"
+comparison_module = "GRWTSK.Geometry.Hodge.RationalKTheoryComparison"
+finite_fixture_module = "GRWTSK.Geometry.Hodge.MoserRationalCellularComparison"
+proof_record = "GRWTSK.Geometry.Hodge.SourceBoundRationalHodgeTheorem"
+requires_actual_surjectivity_proof = true
+requires_cycle_class_map_identity = true
+requires_no_cellular_coercion = true
+
+[review]
+requires_source_file_hashes = true
+requires_reference_and_citation_review = true
+requires_statement_dependency_map = true
+requires_consequence_input_separation = true
+requires_authorship_and_license_attribution = true
+operational_receipt_is_external = true
+
+[[hostile_controls]]
+id = "reject-manuscript-status-as-local-proof"
+description = "A published manuscript or source revision cannot populate the local Lean surjectivity proof field."
+
+[[hostile_controls]]
+id = "reject-rational-to-integral-promotion"
+description = "Rational cycle-class surjectivity cannot be reported as integral cycle-class surjectivity or equality of integral K-classes."
+
+[[hostile_controls]]
+id = "reject-hodge-name-coercion"
+description = "The algebraic Hodge theorem does not create a cellular differential, positive metric, adjoint, harmonic representative, or heat operator."
+
+[[hostile_controls]]
+id = "reject-finite-fixture-as-cm-variety"
+description = "The Moser rational cellular fixture is not a CM abelian variety or a proof of the global theorem."
+
+[[hostile_controls]]
+id = "reject-consequence-circularity"
+description = "Tate, generalized Hodge, or standard-conjecture consequences cannot be used as undeclared inputs to the main theorem."
+
+[acceptance]
+requires_exact_statement_review = true
+requires_source_dependency_map = true
+requires_reference_review = true
+requires_local_statement_alignment = true
+requires_explicit_missing_formal_proof = true
+requires_external_review_receipt = true
+
+[nonclaims]
+claims = [
+  "local Lean proof of the global CM rational-Hodge theorem",
+  "a CM-variety-to-cellular quasi-isomorphism",
+  "integral Hodge conjecture",
+  "equality of integral K-classes from rational Chern data",
+  "Riemann hypothesis or any analytic-number-theory consequence"
+]

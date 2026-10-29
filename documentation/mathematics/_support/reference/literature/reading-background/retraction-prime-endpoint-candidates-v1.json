@@ -1,0 +1,901 @@
+{
+  "schema_version": 1,
+  "local_attribution": "grwtsk contributors",
+  "classification": "SOURCE_PROOF_CANDIDATES_NOT_KERNEL_VERIFIED",
+  "source_commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lean_toolchain": "leanprover/lean4:v4.33.0",
+  "source_modules": [
+    {
+      "commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+      "path": "GRWTSK/Algebra/LinearAlgebra/EquivariantRetractionSplitting.lean",
+      "blob": "eaf28f4ec10fe58cfc254ae9f8432a9978e77576",
+      "sha256": "c0cc7759633d2461f559720d8626d0ca9a9b491fab995f8215081764802b0a9c",
+      "declarations": [
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionKernel_stable",
+          "kind": "theorem",
+          "line": 36,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionKernelEnd",
+          "kind": "def",
+          "line": 45,
+          "classification": "unverified-definition",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionKernelEnd_apply",
+          "kind": "theorem",
+          "line": 56,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionBlockEnd",
+          "kind": "def",
+          "line": 62,
+          "classification": "unverified-definition",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionBlockEnd_apply",
+          "kind": "theorem",
+          "line": 68,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_intertwines",
+          "kind": "theorem",
+          "line": 74,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_comp",
+          "kind": "theorem",
+          "line": 87,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_inverse_intertwines",
+          "kind": "theorem",
+          "line": 97,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_family_intertwines",
+          "kind": "theorem",
+          "line": 109,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionKernelRepresentation",
+          "kind": "def",
+          "line": 122,
+          "classification": "unverified-definition",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionKernelRepresentation_apply",
+          "kind": "theorem",
+          "line": 152,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_representation_intertwines",
+          "kind": "theorem",
+          "line": 158,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        }
+      ],
+      "namespace": "GRWTSK.Algebra.LinearAlgebra",
+      "expected_type_source": {
+        "commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+        "path": "verification/Algebra/EquivariantRetractionSplittingTypes.lean",
+        "blob": "bae8fbc02beb7ecd3cf0bfb16b3a1f216a84b2ad",
+        "sha256": "3bb0420165fb0aebf4a66f5508edb7e9e2049eb9a9c65ddb47645ab260a5df36"
+      },
+      "expected_type_example_count": 8,
+      "static_audit_path": "verification/Algebra/EquivariantRetractionSplittingAudits.json"
+    },
+    {
+      "commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+      "path": "GRWTSK/NumberTheory/Primes/StrictPrimeEndpoint.lean",
+      "blob": "4be6dca05ddced32e5f6c4524b8d1784d8f76629",
+      "sha256": "36ba3b0b4697aad79a385e93ca0504daf296782fe5e9146c903bc33123b32310",
+      "declarations": [
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.primeAt",
+          "kind": "def",
+          "line": 32,
+          "classification": "unverified-definition",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.primeAt_zero",
+          "kind": "theorem",
+          "line": 34,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.primeAt_prime",
+          "kind": "theorem",
+          "line": 36,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.strict_count_primeAt",
+          "kind": "theorem",
+          "line": 39,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.inclusive_count_primeAt",
+          "kind": "theorem",
+          "line": 43,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.enumeration_card_eq_strict_count",
+          "kind": "theorem",
+          "line": 51,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.enumeration_card_primeAt",
+          "kind": "theorem",
+          "line": 57,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.strictCountResidual",
+          "kind": "def",
+          "line": 63,
+          "classification": "unverified-definition",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.strictCountResidual_primeAt",
+          "kind": "theorem",
+          "line": 66,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.endpoint_discrepancy_eq",
+          "kind": "theorem",
+          "line": 71,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.endpoint_discrepancy_bound",
+          "kind": "theorem",
+          "line": 80,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.endpoint_budget_of_counting_estimate",
+          "kind": "theorem",
+          "line": 99,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.endpoint_discrepancy_bound_of_counting_estimate",
+          "kind": "theorem",
+          "line": 110,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        },
+        {
+          "declaration": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint.endpoint_discrepancy_bound_of_scaled_estimate",
+          "kind": "theorem",
+          "line": 119,
+          "classification": "source-proof-candidate",
+          "verification_status": "NOT_RUN / NOT_KERNEL_AUDITED",
+          "actual_axioms": null
+        }
+      ],
+      "namespace": "GRWTSK.NumberTheory.Primes.StrictPrimeEndpoint",
+      "expected_type_source": {
+        "commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+        "path": "verification/NumberTheory/Primes/StrictPrimeEndpointTypes.lean",
+        "blob": "e47f8a78fad07f970e8252bab57c550e5adcaf3a",
+        "sha256": "1e98fa4931097b392cf46128238caf9e45d126aa32456ff2f44f14f64dca7337"
+      },
+      "expected_type_example_count": 8,
+      "static_audit_path": "verification/NumberTheory/Primes/StrictPrimeEndpointAudits.json"
+    }
+  ],
+  "dependency_source_bindings": [
+    {
+      "commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+      "path": "GRWTSK/Algebra/LinearAlgebra/RetractionSplitEquiv.lean",
+      "blob": "620c39d9e12876f5853f97ef9064f723b5ae881d",
+      "sha256": "3014cb4063269b6bed7ed61c35e3a61408e3a66fcb7305095b29d801da14acfe"
+    },
+    {
+      "commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+      "path": "GRWTSK/Algebra/LinearAlgebra/RetractionComplement.lean",
+      "blob": "09d412123341ccdf11be5b0f8fb6ff0a27470ada",
+      "sha256": "17d5f72b6ebb249464370ab94902ed919ca27ffac07b6f2d61833afffc3b5c48"
+    },
+    {
+      "commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+      "path": "GRWTSK/NumberTheory/Primes/BoundedEnumeration.lean",
+      "blob": "854729f8f063cfacbc0a30ae5c7312083bcf8fa9",
+      "sha256": "2d1a364d7e3aa86da4187665dcf6afebd223bbd618d81d2450aa6396c94084d2"
+    }
+  ],
+  "reviewed_upstream_source_bindings": [
+    {
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/LinearAlgebra/Prod.lean",
+      "blob": "181a08d693fcda16848e0ad438441a75123316de",
+      "sha256": "7a9ca57e843b25985f4f72cdf8919fe23c18426448cc6c930b7f2b44a86fc5b4"
+    },
+    {
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/NumberTheory/PrimeCounting.lean",
+      "blob": "a9d6b59349f06c735cd99e7c5693f017c72282d1",
+      "sha256": "1e16d828297cfe981488e8cd4c4db7598adb96ed35a313f41f45baaf724c27f7"
+    },
+    {
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Data/Nat/Count.lean",
+      "blob": "bf87e54d30f5c5fa253fa12dcba4547a846b926b",
+      "sha256": "547e6581d820683ead15c0fcc607c7587d2d1d0ccbca2c789b70ea6d86a07f18"
+    },
+    {
+      "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "path": "Mathlib/Data/Nat/Prime/Nth.lean",
+      "blob": "6860d5ad3e27517c7182f164bdeaf946cc3b3a28",
+      "sha256": "bca5c5b6643560c7e25145e0d23739300007fe8b6ec1d213bd991703a6ee1cec"
+    }
+  ],
+  "paper_sources": [
+    {
+      "source_id": "sha256:0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "title": "A Holistic Strategy for Deriving Properties of Prime Numbers",
+      "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-05-23",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "May 23, 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/graveyard/A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf",
+          "blob": "28e3ee7aaf8f5b4fd1d85a32316654fea12e446c",
+          "mode": "100644",
+          "size": 75533,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers%20%283%29.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: use these PDFs as unpublished research."
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "506eb036515e8f32eed5d026e1e8d76a66eba7e8c16a86ff40ccfebfd6517ba4"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:d5030fdf24961a5522e8d09b7806225ccff237b519b7f0471411a30834964783",
+      "title": "Refinement of Axiom 1: Bounded Error Growth Without Conjectures",
+      "asset_sha256": "d5030fdf24961a5522e8d09b7806225ccff237b519b7f0471411a30834964783",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-01",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "d5030fdf24961a5522e8d09b7806225ccff237b519b7f0471411a30834964783",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "January 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "d5030fdf24961a5522e8d09b7806225ccff237b519b7f0471411a30834964783",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory%20%281%29.pdf",
+          "blob": "24db3692fb3576de7120803ee0deb4552c84e498"
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "9905904c7b10b72df8c8e00e3683f9c5303112e96236aa0eb8e47b0a2d4228a9"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "25bb21fa352821cc459ac96f9b43fca665fc523677311fa6d6d8df7ebafb5f03"
+        },
+        {
+          "pdf_page": 4,
+          "layout_text_sha256": "366d7512c5525df45f9f4922c95d08db01386b90009e8f40d3d6db408d957e4e"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:019052dca83c69d0810a7cf16c92f9f0b13e77754ce4ff526a8f26c2c727608d",
+      "title": "Refinement of Axiom 1: Bounded Error Growth Without Conjectures",
+      "asset_sha256": "019052dca83c69d0810a7cf16c92f9f0b13e77754ce4ff526a8f26c2c727608d",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-01",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "019052dca83c69d0810a7cf16c92f9f0b13e77754ce4ff526a8f26c2c727608d",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "January 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "019052dca83c69d0810a7cf16c92f9f0b13e77754ce4ff526a8f26c2c727608d",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory%20%282%29.pdf",
+          "blob": "3a8bd081a81421e553fc257bca58bc97c715b019"
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "9905904c7b10b72df8c8e00e3683f9c5303112e96236aa0eb8e47b0a2d4228a9"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "25bb21fa352821cc459ac96f9b43fca665fc523677311fa6d6d8df7ebafb5f03"
+        },
+        {
+          "pdf_page": 4,
+          "layout_text_sha256": "366d7512c5525df45f9f4922c95d08db01386b90009e8f40d3d6db408d957e4e"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "title": "Updated Verification of Recursive Refinement Framework",
+      "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-01",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "January 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/graveyard/Updated_Verification_of_Recursive_Refinement_Framework (2).pdf",
+          "blob": "e7e459f64d4d145ea39d56f08721c2ba5b39372b",
+          "mode": "100644",
+          "size": 73023,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/Updated_Verification_of_Recursive_Refinement_Framework%20%282%29.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: use these PDFs as unpublished research."
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "7d7c35049871f94b14430d67322c1c07daaf6264263287c8eb07eee6f2449eb5"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973"
+        },
+        {
+          "pdf_page": 3,
+          "layout_text_sha256": "c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4"
+        }
+      ]
+    },
+    {
+      "source_id": "sha256:796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "title": "Boundary Regularization: A Framework for High-Rank Elimination",
+      "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+      "local_attribution": "grwtsk contributors",
+      "attribution_status": "owner-directed local display; not a literal transcription of historical byline",
+      "publication_status": "unpublished-research-owner-reported",
+      "publication_date": null,
+      "doi": null,
+      "arxiv_id": null,
+      "version_label": null,
+      "identifier_status": "not-established; filename copy counters imply no chronology",
+      "dates": [
+        {
+          "value": "2025-05-23",
+          "kind": "manuscript-date",
+          "status": "verified-in-paper",
+          "scope": "local-document",
+          "evidence": [
+            {
+              "kind": "pdf",
+              "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+              "pdf_page": 1,
+              "url": null,
+              "locator": "Printed draft date; not publication or access history",
+              "excerpt": "May 23, 2025"
+            }
+          ]
+        },
+        {
+          "value": "2025-05-26T05:09:57Z",
+          "kind": "repository-snapshot-commit-date",
+          "status": "verified-primary-record",
+          "scope": "repository-snapshot",
+          "evidence": [
+            {
+              "kind": "github",
+              "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+              "pdf_page": null,
+              "url": "https://github.com/grwtsk/spectral-proof-of-RH/commit/aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+              "locator": "Pinned repository commit committer date; not per-file creation or publication",
+              "excerpt": "2025-05-26T05:09:57Z"
+            }
+          ]
+        }
+      ],
+      "repository_origins": [
+        {
+          "repository": "https://github.com/grwtsk/spectral-proof-of-RH",
+          "commit": "aab35df4b766ce864e95b4505e3a2c7ddc43d158",
+          "tree": "cf003676c10c0a97f384e2c782d4c31813c667ff",
+          "path": "docs/graveyard/g (2).pdf",
+          "blob": "a6b1384d8b682feabc705eee0e058eb50c61df39",
+          "mode": "100644",
+          "size": 141346,
+          "source_url": "https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/g%20%282%29.pdf",
+          "commit_author_date": "2025-05-26T05:09:57Z",
+          "commit_committer_date": "2025-05-26T05:09:57Z",
+          "classification": "owner-designated-unpublished-research",
+          "classification_evidence": "Owner instruction in this chat, 2026-10-23: use these PDFs as unpublished research."
+        }
+      ],
+      "exact_original_bytes_checked": true,
+      "page_texts": [
+        {
+          "pdf_page": 1,
+          "layout_text_sha256": "4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff"
+        },
+        {
+          "pdf_page": 2,
+          "layout_text_sha256": "ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2"
+        }
+      ]
+    }
+  ],
+  "reviewed_plans": [
+    {
+      "id": "R1",
+      "taxonomy": "GeometryTopology",
+      "obligations": [
+        "B2"
+      ],
+      "priority": 1,
+      "title": "Equivariant retraction splitting with the actual kernel action",
+      "papers": [
+        {
+          "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+          "pdf_page": 1,
+          "anchor": "Residue Suppression via Localization",
+          "layout_text_sha256": "4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362",
+          "pdf_page": 2,
+          "anchor": "Positivity Constraints",
+          "layout_text_sha256": "ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        }
+      ],
+      "hypotheses": [
+        "CommRing R; R-modules M and B with additive groups.",
+        "Linear i:B→M and r:M→B with r(i(b))=b for every b.",
+        "Linear T:M→M and S:B→B with T(i(b))=i(S(b)) and r(T(x))=S(r(x)) for every b,x."
+      ],
+      "target": "Derive T(ker r)⊆ker r; construct the restricted linear endomorphism Tker. For E=retractionSplitEquiv i r, prove E(T x)=(S(E x).1, Tker(E x).2), and the inverse intertwining identity. Extend pointwise to a supplied operator family; require actual action laws before naming a Hecke-algebra action.",
+      "existing": [
+        {
+          "path": "GRWTSK/Algebra/LinearAlgebra/RetractionComplement.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "09d412123341ccdf11be5b0f8fb6ff0a27470ada",
+          "sha256": "17d5f72b6ebb249464370ab94902ed919ca27ffac07b6f2d61833afffc3b5c48",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionComplement_commutes",
+          "line": 38
+        },
+        {
+          "path": "GRWTSK/Algebra/LinearAlgebra/RetractionSplitEquiv.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "620c39d9e12876f5853f97ef9064f723b5ae881d",
+          "sha256": "3014cb4063269b6bed7ed61c35e3a61408e3a66fcb7305095b29d801da14acfe",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv",
+          "line": 10
+        },
+        {
+          "path": "GRWTSK/Algebra/LinearAlgebra/RetractionSplitEquiv.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "620c39d9e12876f5853f97ef9064f723b5ae881d",
+          "sha256": "3014cb4063269b6bed7ed61c35e3a61408e3a66fcb7305095b29d801da14acfe",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_coordinates",
+          "line": 34
+        }
+      ],
+      "proof": [
+        "For x∈ker r, r(Tx)=S(rx)=S0=0; use a codomain restriction to construct Tker, rather than assume kernel stability.",
+        "Use product extensionality. The first coordinate is the r/T intertwining hypothesis. Subtype extensionality reduces the second to retractionComplement_commutes.",
+        "Transport the identity through E.symm. For a parameter family use the same argument for each parameter; inherit ring/action laws only from explicitly supplied homomorphisms."
+      ],
+      "acceptance": [
+        "Fresh source-bound compilation of the current renamed modules and all new declarations, strict transitive axiom audits and independent exact-type consumers.",
+        "No extra kernel-invariance or desired equivariance conclusion supplied as a premise; both original intertwining premises remain visible."
+      ],
+      "missing": [
+        "No actual moduli space, coefficient complex, localization triangle, geometric retraction, or Hecke action is constructed.",
+        "B1 and B4–B6 remain unresolved. This would strengthen the conditional B2 fragment only."
+      ],
+      "avoid": [
+        "Do not re-prove only that the complementary projector commutes; that body already exists.",
+        "A union of boundary and interior sets is not a split cohomology decomposition."
+      ]
+    },
+    {
+      "id": "R7",
+      "taxonomy": "NumberTheory",
+      "obligations": [
+        "P4",
+        "S2"
+      ],
+      "priority": 2,
+      "title": "Actual strict prime-count discrepancy at consecutive prime endpoints",
+      "papers": [
+        {
+          "asset_sha256": "0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f",
+          "pdf_page": 1,
+          "anchor": "Analytic Number Theory",
+          "layout_text_sha256": "39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "d5030fdf24961a5522e8d09b7806225ccff237b519b7f0471411a30834964783",
+          "pdf_page": 2,
+          "anchor": "Prime Gaps",
+          "layout_text_sha256": "37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        },
+        {
+          "asset_sha256": "019052dca83c69d0810a7cf16c92f9f0b13e77754ce4ff526a8f26c2c727608d",
+          "pdf_page": 2,
+          "anchor": "Prime Gaps",
+          "layout_text_sha256": "37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5",
+          "extraction": "pdftotext -layout UTF-8; split at form feed; retain whitespace and trailing newline"
+        }
+      ],
+      "hypotheses": [
+        "Use the actual zero-indexed p_n=Nat.nth Nat.Prime n and strict count π′(x)=Nat.primeCounting' x, cast to ℝ only after natural identities.",
+        "Choose named M,E:ℕ→ℝ and threshold x0, with E nonnegative and an independently proved |(π′(x):ℝ)−M(x)|≤E(x) for x≥x0.",
+        "For the endpoint bound retain both p_n≥x0 and p_(n+1)≥x0. The manuscript’s one-indexed primes require an explicit index shift."
+      ],
+      "target": "Connect any EnumeratesBelow output to actual strict prime counting by cardinality. Define R(x)=(π′(x):ℝ)−M(x), derive R(p_n)=n−M(p_n), and prove (M(p_(n+1))−M(p_n))−1=R(p_n)−R(p_(n+1)). Hence bound its absolute value by E(p_n)+E(p_(n+1)).",
+      "existing": [
+        {
+          "path": "GRWTSK/NumberTheory/Primes/BoundedEnumeration.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "854729f8f063cfacbc0a30ae5c7312083bcf8fa9",
+          "sha256": "2d1a364d7e3aa86da4187665dcf6afebd223bbd618d81d2450aa6396c94084d2",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.NumberTheory.Primes.enumeration_unique",
+          "line": 17
+        },
+        {
+          "path": "GRWTSK/Analysis/ErrorBounds/FiniteResidualTelescope.lean",
+          "commit": "a42506614d9853ed06fc4708ca3ed190056265c8",
+          "blob": "da5a7c1f966592f1d1451a34d46f24d52b8884ff",
+          "sha256": "17b9553aa4696d8e5447fbb60ca007ffb2ea7772b4c935eb83e0a0a0a8bf6381",
+          "verification_status": "NOT_RUN for current reviewed bytes; no historical receipt transfer",
+          "declaration": "GRWTSK.Analysis.ErrorBounds.residualTotal_eq_endpointDifference",
+          "line": 38
+        }
+      ],
+      "imported": [
+        {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "path": "Mathlib/NumberTheory/PrimeCounting.lean",
+          "blob": "a9d6b59349f06c735cd99e7c5693f017c72282d1",
+          "sha256": "1e16d828297cfe981488e8cd4c4db7598adb96ed35a313f41f45baaf724c27f7",
+          "declaration": "Nat.primeCounting'_nth_eq",
+          "line": 79,
+          "classification": "imported-mathematics; source body reviewed, not freshly replayed"
+        },
+        {
+          "repository": "https://github.com/leanprover-community/mathlib4",
+          "commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+          "path": "Mathlib/NumberTheory/PrimeCounting.lean",
+          "blob": "a9d6b59349f06c735cd99e7c5693f017c72282d1",
+          "sha256": "1e16d828297cfe981488e8cd4c4db7598adb96ed35a313f41f45baaf724c27f7",
+          "declaration": "Nat.primesBelow_card_eq_primeCounting'",
+          "line": 254,
+          "classification": "imported-mathematics; source body reviewed, not freshly replayed"
+        }
+      ],
+      "proof": [
+        "Use enumeration_unique to replace the supplied finite output by Nat.primesBelow; then use the imported strict cardinality identity.",
+        "Rewrite both prime endpoints using Nat.primeCounting'_nth_eq. Cast Nat.succ n correctly into ℝ and derive the signed endpoint identity by ring algebra.",
+        "Apply abs_sub_le and the two endpoint estimates. A later real prime-gap bound additionally needs a verified lower bound on M(p_(n+1))−M(p_n) in terms of the actual gap, for example from explicit derivative bounds; do not supply the desired gap bound as its own premise."
+      ],
+      "acceptance": [
+        "Exact-type consumers distinguish π′(<x) from π(≤x) and zero-indexed primes from the manuscript index.",
+        "The actual arithmetic endpoints occur in the new declarations; a generic telescope alone does not meet this adapter specification.",
+        "An application claiming P4 must separately name and prove the actual M,E=C·B, C≥0, domain and quantitative estimate. No such analytic supplier is proved here."
+      ],
+      "missing": [
+        "No independently proved PNT remainder, centered-gap estimate, positive derivative supplier, constant gap bound or arithmetic bias decay.",
+        "P1/P4 and S1/S2 remain unresolved; the roadmap supplies only objectives and unresolved numbered sources. A growing E cannot be dropped to claim a constant bound."
+      ],
+      "avoid": [
+        "Do not call the generic endpoint telescope a new arithmetic theorem.",
+        "Do not silently change strict/inclusive counting at prime inputs, or replace a deterministic comparison by an unexplained expected gap."
+      ]
+    }
+  ],
+  "implementation_scope": {
+    "R1": "Derived kernel stability, constructed kernel/block endomorphisms, forward/linear/inverse/family equivariance, and restriction of supplied semiring representations with all four laws derived.",
+    "R7": "Actual zero-indexed primes; strict/inclusive count separation; finite-output cardinality; signed prime-endpoint discrepancy identity and conditional endpoint budgets, including named C*B envelopes."
+  },
+  "hypotheses": {
+    "R1_core": [
+      "CommRing R; additive-group R-modules M,B.",
+      "Actual linear i,r with r(i b)=b.",
+      "Actual linear T,S with T(i b)=i(S b) and r(T x)=S(r x)."
+    ],
+    "R1_kernel_only": "The kernel restriction needs only r,T,S and r/T intertwining, not a supplied kernel-invariance or splitting conclusion.",
+    "R1_representation": "Optional Semiring A and actual ring homomorphisms ρM:A→+*End_R(M), ρB:A→+*End_R(B), with the same intertwiners for every a. This is not an assertion of a geometric or Hecke action.",
+    "R7_core": "Exact identities use actual Nat.nth Nat.Prime n and Nat.primeCounting′; no asymptotic estimate is needed.",
+    "R7_bound": [
+      "Named comparison,envelope:ℕ→ℝ; nonnegative envelope; threshold x0.",
+      "Independently supplied |(Nat.primeCounting′ x:ℝ)−comparison x|≤envelope x for x≥x0.",
+      "Both x0≤primeAt n and x0≤primeAt(n+1) remain explicit.",
+      "The scaled variant additionally retains named C,bound with C≥0, bound≥0 and the supplied C*bound estimate."
+    ]
+  },
+  "missing_proofs": {
+    "native": "Both modules, all 26 source declarations, complete compiler-owned census, both consumers and their 16 examples are NOT_RUN. No typechecking or actual axiom results are available.",
+    "B2": "No moduli/compactification data, coefficient complex, localization/excision triangle, actual geometric retraction or geometric Hecke action.",
+    "P4_S2": "No named PNT remainder, analytic error supplier, prime-gap centering or derivative comparison, constant prime-gap bound, arithmetic bias decay or computational complexity result.",
+    "versions": "The two Axiom 1 PDFs remain separate. They are candidate related sources; this does not settle which January version the status note invokes.",
+    "global": "No off-line zero class, required cohomological vanishing, exceptional automorphic transfer, independence theorem or unconditional RH/GRH conclusion."
+  },
+  "verification": {
+    "status": "NOT_RUN",
+    "native_commands_executed": [],
+    "expected_type_examples": 16,
+    "source_theorem_candidates": 21,
+    "source_definitions": 5,
+    "actual_axioms": null,
+    "static_checks_scope": "Only text whitespace, no placeholder tokens, existing import paths, reference hashes/declaration locations and metadata consistency; not Lean parsing, elaboration, kernel replay, axiom or type-consumer checks."
+  },
+  "baseline_counts_retained": {
+    "unresolved": 17,
+    "kernel-verified-optional-specialization": 2,
+    "kernel-verified-conditional-fragment": 14,
+    "kernel-verified-correction-check": 2,
+    "kernel-verified-correction-fragment": 1
+  },
+  "mathematical_acceptance_changed": false,
+  "reading_understanding_or_historical_influence_inferred": false
+}

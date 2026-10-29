@@ -1,0 +1,94 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-endpoint-diagonal-cancellation-witness-522-v0.1"
+owner_repository = "grwtsk/math"
+issue = 522
+parent_issue = 512
+parent_pr = 515
+endpoint_fibre_issue = 505
+endpoint_fibre_pr = 510
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_DIAGONAL_LOWER_BOUND_REFUTED_AT_SCOPE"
+root_module = "GRWTSK.NumberTheory.Moebius.EndpointFibreDiagonalCancellationWitness"
+build_target = "GRWTSK.NumberTheory.Moebius.EndpointFibreDiagonalCancellationWitness"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-four-mobius-collisions-512-20261021"
+stacked_parent_revision = "ecb96a26b8d3fa149ee27e4f920dd1e50e1b03c5"
+stacked_parent_tree = "fdd027428d32d8935553bdb2a50c303be25a50c7"
+candidate_branch = "research/rh-diagonal-cancellation-witness-522-20261021"
+theorem_source_commit = "7f33ff534524ce0bf9aa266c2a535b85efc6e03b"
+theorem_source_tree = "98cdb43db6968cd628fe485f9ae68178fd7b7ee5"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/EndpointFibreDiagonalCancellationWitness.lean"
+theorem_source_git_blob = "51148b7b4b771118a69ae457186326455d27aca0"
+mathematical_note_commit = "3a073431f168d922474cd7475be970b41c541a65"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/endpoint-fibre-diagonal-cancellation-witness.md"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[witness]
+endpoint = 3
+dyadic_scale = 1
+mobius_values = ["mu(1)=1","mu(2)=-1","mu(3)=-1"]
+endpoint_diagonal = "3"
+endpoint_cross_collision = "-2"
+endpoint_four_distinct = "0"
+endpoint_fibre = "1"
+weighted_diagonal = "5/3"
+weighted_cross_collision = "-2/3"
+weighted_four_distinct = "0"
+weighted_full_energy = "1"
+
+[refuted_proposals]
+endpoint = "EndpointFibreDiagonalLowerBoundProposal"
+weighted = "WeightedEndpointDiagonalLowerBoundProposal"
+named_disposition = "DiagonalLowerBoundRefutedAtScope"
+scope = "positive diagonal lower-bounds complete endpoint-fibre quadratic energy"
+
+[not_refuted]
+claims = [
+  "SubpolynomialDyadicSignedAbelEndpointFibreQuadraticEnergy",
+  "cross-collision supplier",
+  "four-distinct supplier",
+  "signed Abel route",
+  "RiemannHypothesis"
+]
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+diagonal_lower_bound_refuted_at_scope = true
+endpoint_fibre_estimate_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.EndpointFibreDiagonalCancellationWitness"
+authored_declaration_count = 19
+definition_count = 3
+theorem_script_count = 16
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/EndpointFibreFourMobiusCollisions.lean"
+git_blob = "d00548509820a19147fe00b9a8fe514daaffc275"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_515"
+
+[hostile_controls]
+diagonal_nonnegative_not_promoted_to_lower_bound = true
+finite_witness_not_promoted_to_asymptotic_refutation = true
+cross_collision_not_discarded = true
+four_distinct_not_discarded = true
+endpoint_supplier_not_refuted = true
+source_text_not_promoted_to_kernel_evidence = true
+rh_not_claimed = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+independent_review = false
+endpoint_fibre_supplier_refuted = false
+cross_collision_bound_proved = false
+four_distinct_bound_proved = false
+riemann_hypothesis_proved = false
