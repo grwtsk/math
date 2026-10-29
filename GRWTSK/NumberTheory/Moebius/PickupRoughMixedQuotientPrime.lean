@@ -874,6 +874,40 @@ theorem sector_folding_zero_components
     shortShortUpperTriangle, shortLongUpperTriangle,
     longShortUpperTriangle, longLongUpperTriangle]
 
+/-- The entire coprime SS sector is twice its strict quotient triangle:
+its d=1 diagonal vanishes by the existing short unit-column identity. -/
+theorem shortShortCoprime_eq_two_mul_upperTriangle
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    shortShortCoprime P N L G = 2 * shortShortUpperTriangle P N L G := by
+  rw [shortShortCoprime_eq_offDiagonal, shortShortOffDiagonal_eq_two_mul_upperTriangle]
+
+/-- The entire coprime LL sector retains its original long unit square.
+The conditional records membership of 1 in the closed source inventory. -/
+theorem longLongCoprime_eq_unit_add_two_mul_upperTriangle
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    longLongCoprime P N L G =
+      (if 1 ≤ N then (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0) +
+        2 * longLongUpperTriangle P N L G := by
+  rw [longLongCoprime_eq_unit_add_offDiagonal,
+    longLongOffDiagonal_eq_two_mul_upperTriangle]
+
+/-- Positive-horizon LL form, without dropping or centering the long unit term. -/
+theorem longLongCoprime_eq_unit_add_two_mul_upperTriangle_of_one_le
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) (hN : 1 ≤ N) :
+    longLongCoprime P N L G =
+      (sourceCoefficient P N 1 * longColumn P N L G 1)^2 +
+        2 * longLongUpperTriangle P N L G := by
+  rw [longLongCoprime_eq_unit_add_two_mul_upperTriangle, if_pos hN]
+
+/-- Both complete coprime sectors and their strict triangles are empty at N=0.
+The conditional LL unit term is zero in this empty inventory as well. -/
+theorem coprime_same_sector_triangle_zero_components
+    (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → ℝ) :
+    shortShortCoprime P 0 L G = 0 ∧ longLongCoprime P 0 L G = 0 ∧
+      shortShortUpperTriangle P 0 L G = 0 ∧ longLongUpperTriangle P 0 L G = 0 := by
+  simp [shortShortCoprime, longLongCoprime,
+    shortShortUpperTriangle, longLongUpperTriangle]
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
