@@ -14,7 +14,8 @@
     "local attribution/source-pin comment",
     "module import prefix",
     "enclosing OAI namespace prefix",
-    "Model: import Mathlib -> import Mathlib.Order.Lattice.Nat"
+    "Model: import Mathlib -> import Mathlib.Order.Lattice.Nat",
+    "Basic: explicit Mathlib.Tactic.NormNum import for its existing norm_num proof"
   ],
   "hypotheses_and_proof_bodies": "UNCHANGED_UNDER_REVERSIBLE_NAMESPACE_AND_IMPORT_TRANSFORM",
   "modules": [
@@ -114,9 +115,12 @@
       "upstream_blob": "e2352d8b4bc2fe3f93f13ee2774fdeacdde2b70e",
       "local_module": "GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Basic",
       "local_path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColoring/Basic.lean",
-      "local_blob": "59b3cd8490863d173db91f9a6c993293f7daf560",
-      "local_sha256": "cc89e27d48888c6c60fdb866aaeccc5d39da22400c8b02eeed4765eac1402a21",
-      "proof_body_inverse_transform": "EXACT"
+      "local_blob": "bdb2309e318282f6327dc7c76692cdfc2a06cfb8",
+      "local_sha256": "1328ba7fc1bdba3ef6374c484c34228fe98d167e33dfa5d723220f11cbb2f40b",
+      "proof_body_inverse_transform": "EXACT",
+      "added_imports": [
+        "Mathlib.Tactic.NormNum"
+      ]
     },
     {
       "upstream_module": "OAI.Combinatorics.ProgressionColoring.BlockCoverage",
@@ -1193,5 +1197,10 @@
     "declaration": "GRWTSK.Combinatorics.OpenAIMath.Erdos138.erdos_138",
     "path": "adapters/progression-coloring/GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/Erdos138.lean",
     "blob": "d1457c9f89156ab4736a2784a2ca3bb0168043ef"
+  },
+  "static_import_review": {
+    "finding": "Model reduced closure has no NormNum provider; Basic uses norm_num",
+    "repair": "Basic explicitly imports Mathlib.Tactic.NormNum",
+    "proof_bodies_and_hypotheses_changed": false
   }
 }

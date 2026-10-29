@@ -6,6 +6,7 @@ lean/OAI/Combinatorics/ProgressionColoring/Basic.lean (blob e2352d8b4bc2fe3f93f1
 Only module imports and the enclosing namespace are adapted.
 -/
 import GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Model
+import Mathlib.Tactic.NormNum
 
 namespace GRWTSK.Combinatorics.ProgressionColoring
 
