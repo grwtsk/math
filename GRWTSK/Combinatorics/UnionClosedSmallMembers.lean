@@ -51,6 +51,19 @@ theorem union_injective_on_avoiding (S A B : Finset α)
     simp only [Finset.mem_union, hz, or_false] at he
     exact iff_of_eq he
 
+/-- The final counting step only needs three natural-number counts. -/
+private theorem half_of_complement_le (total containing avoiding : ℕ)
+    (hinj : avoiding ≤ containing) (hpart : containing + avoiding = total) :
+    total ≤ 2 * containing := by
+  omega
+
+/-- The doubleton counting step is a fixed linear arithmetic problem. -/
+private theorem half_of_four_parts (total both onlyX onlyY neither fx fy avoiding : ℕ)
+    (hinj : neither ≤ both) (hx : both + onlyX = fx)
+    (hy : both + onlyY = fy) (hn : onlyY + neither = avoiding)
+    (hp : fx + avoiding = total) : total ≤ 2 * fx ∨ total ≤ 2 * fy := by
+  omega
+
 /-- A singleton member supplies an injection from the avoiding to the containing
 subfamily, and hence an abundant element. -/
 theorem abundant_of_singleton_mem (F : Finset (Finset α))
@@ -74,8 +87,8 @@ theorem abundant_of_singleton_mem (F : Finset (Finset α))
         exact (Finset.mem_filter.mp hB).2
       · exact he
   have hp := Finset.card_filter_add_card_filter_not (s := F) (fun A => x ∈ A)
-  unfold Abundant frequency
-  omega
+  exact half_of_complement_le F.card (frequency F x)
+    (F.filter fun A => x ∉ A).card hinj hp
 
 /-- Among the two elements of a doubleton member at least one is abundant.
 The formulation also permits `x = y`, covering the singleton degeneration. -/
@@ -122,9 +135,8 @@ theorem abundant_of_pair_mem (F : Finset (Finset α))
       (Finset.card_filter_add_card_filter_not (s := F.filter fun A => x ∉ A)
         (fun A => y ∈ A))
   have hp := Finset.card_filter_add_card_filter_not (s := F) (fun A => x ∈ A)
-  unfold frequency at hx hy
-  unfold Abundant frequency
-  omega
+  exact half_of_four_parts F.card both.card onlyX.card onlyY.card neither.card
+    (frequency F x) (frequency F y) (F.filter fun A => x ∉ A).card hinj hx hy hn hp
 
 /-- A counterexample cannot contain a singleton or doubleton member. -/
 theorem no_small_member_of_no_abundant (F : Finset (Finset α))
