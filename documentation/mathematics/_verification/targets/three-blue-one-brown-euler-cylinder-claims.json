@@ -1,0 +1,43 @@
+{
+  "source_url": "https://www.3blue1brown.com/lessons/eulers-formula-via-group-theory/",
+  "byline": "Grant Sanderson",
+  "text_adaptation": "River Way",
+  "date": "2017-03-03",
+  "source": "GRWTSK/SpecialFunctions/ElementaryClassicalFunctions/ExponentialAndTrigonometricFunctions/EulerExponentialCylinder.lean",
+  "blob": "3e09f451bddbf8ebd5a52d23331519c9f6ad0477",
+  "namespace": "GRWTSK.SpecialFunctions.EulerExponentialCylinder",
+  "theorems": [
+    "period_relation_iff",
+    "exponential_same_real",
+    "vertical_line_image",
+    "vertical_lines_distinguished",
+    "cylinderMap_mk",
+    "cylinderMap_injective",
+    "cylinderMap_surjective",
+    "cylinderEquiv_mk",
+    "axialCoordinate_mk",
+    "cylinder_radius",
+    "cylinder_log_radius",
+    "representatives_equal_iff"
+  ],
+  "scope": "Exact full image of Re(z)=a under exp is norm=exp(a); period quotient has actual bijection to nonzero complex numbers and output log-radius equals retained real coordinate.",
+  "hypotheses": "a real; z,w complex; punctured output nonzero; quotient relation is actual equality of exp, proved equivalent to integer2piI shifts.",
+  "imported": {
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module": "Mathlib/Analysis/SpecialFunctions/Complex/Log.lean",
+    "blob": "7d9d13f0fff6011a6cb81847fcf67c3014900835",
+    "role": "Imported complex logarithm, exponential exact integer fibers and log inverse; local quotient/vertical-circle consumers remain candidates"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Topological homeomorphism/cylinder topology",
+    "Oriented winding and full spoken-video mapping",
+    "All deferred source-bound checking"
+  ],
+  "video_verified_complete": false
+}
