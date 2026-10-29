@@ -1,0 +1,203 @@
+{
+  "schema": "grwtsk.3blue1brown-collision-claims/1",
+  "attribution": "grwtsk contributors",
+  "role": "PASSIVE_MATHEMATICAL_CLAIM_MAP_NOT_AN_EXECUTION_REQUEST",
+  "binding": {
+    "base_commit": "f4a45b5e2d5475d3c32997dd4cc2ca50cce7cf2d",
+    "rule": "Containing publication commit binds all listed blobs; new source is added to that complete base."
+  },
+  "module_blobs": {
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/ElasticCollision.lean": "84e61612c43ddd36438cbc76481cc890d1c58995",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/ElasticCollisionDynamics.lean": "1620a0f38c0d860aaa435eab5fafcbe56f458b64",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionAngleCount.lean": "6df098b099eb624a3fa9b6418e850628c8c03195",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/ElasticCollisionTrajectory.lean": "a41cb1deadfd7d834cdf1557ce21e006fb6fe036",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionCountApproximation.lean": "210dce809e47c7bd646cc7836308bb6b231e9742",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionCountDigits.lean": "9a3635950ab18f198a20005656a53ffac7896fff",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionVelocityPhase.lean": "42261062cfc840aa434fb1adbaf7137d1bb485d8",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionCountLargeExamples.lean": "0caf3df42017e3bb9fb65a831d98ae2a759a9dfa",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionBlockEdges.lean": "4e4a627134f6ffd36b96459978bbb4b31cda33e3",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionVelocitySector.lean": "dcaa3d06afed8925f79fc899b776c38cf9b9a8d0",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionTracePhase.lean": "2a490b7cbe18dcc49350a37cc03bd74b5cf1091f",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionNextImpact.lean": "83ca673ffc8f9a55dc4ef3d92c8ca996b231a1a0",
+    "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionConservationSelection.lean": "dced0871451876e266ea3b84d82adc4ee75d3aaa"
+  },
+  "claims": [
+    {
+      "id": "conservation_selection",
+      "hypotheses": "m,M>0; conserved momentum and twice kinetic energy; nontrivial or incoming-to-separating direction selects collision",
+      "declarations": [
+        "GRWTSK.Mechanics.Classical.ElasticCollision.conservation_iff_two_branches",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.collision_of_conservation_separating"
+      ],
+      "role": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "id": "equal_mass_boundary",
+      "hypotheses": "m>0,0<a<b,c>0; masses(m,m),velocities(0,-c)",
+      "declarations": [
+        "GRWTSK.Mechanics.Classical.CollisionAngleCount.equal_mass_angle",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.equal_mass_general_three_impact_run"
+      ],
+      "role": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "id": "physical_circle_count",
+      "hypotheses": "m,M>0,0<a<b,c>0; count=(ceil(pi/atan(sqrt(m/M)))-1).toNat",
+      "declarations": [
+        "GRWTSK.Mechanics.Classical.ElasticCollision.next_step_exists",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.flight_excludes_vertex",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.circle_general_trajectory_count"
+      ],
+      "role": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "id": "physical_optics_count",
+      "hypotheses": "same positive masses,separation,speed; explicit unfolded ray and physical event gluing",
+      "declarations": [
+        "GRWTSK.Mechanics.Classical.ElasticCollision.Unfolding.general_trajectory_count"
+      ],
+      "role": "ALTERNATIVE_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "id": "finite_width",
+      "hypotheses": "w,m,M>0,w<A<B,c>0; near right edge A,far left edge B; subtract w from both",
+      "declarations": [
+        "GRWTSK.Mechanics.Classical.ElasticCollision.BlockEdges.step_iff",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.BlockEdges.trace_iff",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.BlockEdges.general_edge_trajectory_count"
+      ],
+      "role": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "id": "examples",
+      "hypotheses": "m>0,0<a<b,c>0; heavy/near ratios100,10000,1000000,100000000,10^10,10^12",
+      "declarations": [
+        "GRWTSK.Mechanics.Classical.ElasticCollision.Unfolding.physical_count_ratio_100",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.Unfolding.physical_count_ratio_10000",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.Unfolding.physical_count_ratio_1000000",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.Unfolding.physical_count_ratio_100000000",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.Unfolding.physical_count_ratio_ten_billion",
+        "GRWTSK.Mechanics.Classical.ElasticCollision.Unfolding.physical_count_ratio_trillion"
+      ],
+      "role": "EXACT_SOURCE_PROOF_CANDIDATES_NOT_SIMULATION"
+    },
+    {
+      "id": "small_angle_error",
+      "hypotheses": "x>0; angle error separate from integer rounding",
+      "declarations": [
+        "GRWTSK.Mechanics.Classical.CollisionAngleCount.arctan_cubic_error",
+        "GRWTSK.Mechanics.Classical.CollisionAngleCount.reciprocal_arctan_error",
+        "GRWTSK.Mechanics.Classical.CollisionAngleCount.arctan_count_eq_floor_of_gap"
+      ],
+      "role": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "id": "fixed_prefix",
+      "hypotheses": "FOR EACH FIXED p THERE EXISTS N FOR ALL n>=N; cannot infer p=n",
+      "declarations": [
+        "GRWTSK.Mechanics.Classical.ElasticCollision.Unfolding.physical_decimal_prefix_stable"
+      ],
+      "role": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "id": "inscribed_angle_method",
+      "hypotheses": "Oriented-arc branch and actual phase-circle point/line correspondence still needed for literal method",
+      "declarations": [
+        "GRWTSK.Mechanics.Classical.ElasticCollision.VelocityPhase.physical_pair_chord"
+      ],
+      "role": "ALGEBRAIC_REPLACEMENT_GENERAL_ARC_METHOD_NOT_FORMALIZED"
+    },
+    {
+      "id": "all_exponents_decimal_floor",
+      "hypotheses": "Uniform exclusion of the exceptional rounding gap is unresolved",
+      "declarations": [],
+      "role": "UNRESOLVED_PREMISE_NOT_A_LOCAL_AXIOM"
+    }
+  ],
+  "lessons": [
+    {
+      "youtube_id": "HEfHFsfGXjs",
+      "title": "The most unexpected answer to a counting puzzle",
+      "date": "2019-01-13",
+      "url": "https://www.3blue1brown.com/lessons/clacks/",
+      "byline": "Grant Sanderson",
+      "text_adaptation": "Josh Pullen",
+      "claims": [
+        "equal_mass_boundary",
+        "examples",
+        "physical_circle_count",
+        "all_exponents_decimal_floor"
+      ],
+      "evidence_scope": "Published lesson text and retained mathematical sources; not a complete spoken-video/transcript audit",
+      "verified_complete": false
+    },
+    {
+      "youtube_id": "jsYwFizhncE",
+      "title": "Why do colliding blocks compute pi?",
+      "date": "2019-01-20",
+      "url": "https://www.3blue1brown.com/lessons/clacks-solution/",
+      "byline": "Grant Sanderson",
+      "text_adaptation": null,
+      "claims": [
+        "conservation_selection",
+        "physical_circle_count",
+        "inscribed_angle_method",
+        "small_angle_error",
+        "all_exponents_decimal_floor"
+      ],
+      "evidence_scope": "Published lesson text and retained mathematical sources; not a complete spoken-video/transcript audit",
+      "verified_complete": false
+    },
+    {
+      "youtube_id": "brU5yLm9DZM",
+      "title": "How colliding blocks act like a beam of light...to compute pi.",
+      "date": "2019-02-03",
+      "url": "https://www.3blue1brown.com/lessons/clacks-via-light/",
+      "byline": "Grant Sanderson",
+      "text_adaptation": "Josh Pullen",
+      "claims": [
+        "physical_optics_count",
+        "finite_width",
+        "all_exponents_decimal_floor"
+      ],
+      "evidence_scope": "Published lesson text and retained mathematical sources; not a complete spoken-video/transcript audit",
+      "verified_complete": false
+    },
+    {
+      "youtube_id": "6dTyOl1fmDo",
+      "title": "Why colliding blocks compute pi",
+      "date": "2025-03-13",
+      "url": "https://www.3blue1brown.com/lessons/colliding-blocks-v2/",
+      "byline": "Grant Sanderson",
+      "text_adaptation": "Josh Pullen",
+      "claims": [
+        "conservation_selection",
+        "physical_circle_count",
+        "examples",
+        "small_angle_error",
+        "fixed_prefix",
+        "inscribed_angle_method",
+        "all_exponents_decimal_floor"
+      ],
+      "evidence_scope": "Published lesson text and retained mathematical sources; not a complete spoken-video/transcript audit",
+      "verified_complete": false
+    }
+  ],
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open_scope": [
+    "Literal oriented-arc/inscribed-angle method with phase-point correspondence",
+    "Unresolved all-exponents decimal-floor premise, Galperin sections 8–10 and 2025 lesson footnote",
+    "Full spoken-video/transcript coverage and any further claims not present in lesson text"
+  ],
+  "not_claimed": [
+    "Any verified video or sequence completion",
+    "Independent local proofs of imported pi bounds or irrational_pi",
+    "Physical sound, black-hole mass analogies or actual simulation implementation correctness"
+  ],
+  "discovery_boundary": "Four lessons here do not exhaust Shorts,talks,guest appearances or the full channel"
+}

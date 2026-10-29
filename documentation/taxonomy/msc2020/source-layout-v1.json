@@ -1422681,6 +1422681,25 @@
       "target_sha256": "22bbc4de8a67f7d55eb7f64e6656e63b84098a0188f97e0b38089bf280ff6ace",
       "target_git_blob": "20e4bf57e8d36c3390539f633054792ab6b94dbe",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionConservationSelection.lean",
+      "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionConservationSelection.lean",
+      "source_sha256": "4eebc6cf78736cbbd2d3521a602454079890ad766f6c763864482e85020a8e4b",
+      "input_blob": "dced0871451876e266ea3b84d82adc4ee75d3aaa",
+      "source_kind": "lean_source",
+      "msc_code": "70F35",
+      "msc_label": "Collision of rigid or pseudo-rigid bodies",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Conservation-law two-branch classification, physical collision selection and general equal-mass three-impact consumer",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "dced0871451876e266ea3b84d82adc4ee75d3aaa",
+      "target_sha256": "4eebc6cf78736cbbd2d3521a602454079890ad766f6c763864482e85020a8e4b",
+      "target_git_blob": "dced0871451876e266ea3b84d82adc4ee75d3aaa",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
