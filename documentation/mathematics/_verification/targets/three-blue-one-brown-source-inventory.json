@@ -1,0 +1,736 @@
+{
+  "attribution": "grwtsk contributors",
+  "scope": "All 3Blue1Brown videos, including Shorts, talks, guest videos and appearances on other channels",
+  "inventory_complete": false,
+  "discovery_source": "https://www.3blue1brown.com/sitemap.xml",
+  "consulted_date": "2026-10-28",
+  "source_kind": "mutable website sitemap; lesson URLs are not video identities",
+  "limitations": [
+    "The sitemap is not an exhaustive channel upload list.",
+    "Guest appearances on other channels require independent discovery.",
+    "A lesson may cover multiple videos or duplicate a video.",
+    "Each source needs exact video identity, statements, hypotheses and proof obligations before coverage can be claimed."
+  ],
+  "acceptance": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_check": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "video_coverage": "NO_VIDEO_COMPLETE"
+  },
+  "first_source_candidate": {
+    "module": "GRWTSK.Mechanics.Classical.ElasticCollision",
+    "blob": "84e61612c43ddd36438cbc76481cc890d1c58995",
+    "source": "https://www.3blue1brown.com/lessons/clacks-via-light/",
+    "scope": "Algebraic collision update and mass-weighted squared-energy bridge only; no collision-count formula"
+  },
+  "discovered_lessons": [
+    {
+      "url": "https://www.3blue1brown.com/lessons/binary-counting",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/eulers-characteristic-formula",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/eulers-formula-old",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/eulers-formula-poem",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/inventing-math",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/moser",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/music-and-measure-theory",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/3d-transformations",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/abstract-vector-spaces",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/brachistochrone",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/change-of-basis",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/cross-products-extended",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/cross-products",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/determinant",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/dot-products",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/eigenvalues",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/eola-preview",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/hanoi-and-sierpinski",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/inscribed-rectangle-problem",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/inverse-matrices",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/linear-transformations",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/matrix-multiplication",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/nonsquare-matrices",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/snells-law",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/span",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/triangle-of-power",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/vectors",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/zeta",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/256-bit-security",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/area-and-slope",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/backpropagation-calculus",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/backpropagation",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/bitcoin",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/chain-rule-and-product-rule",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/derivatives-power-rule",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/derivatives-trig-functions",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/derivatives",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/epsilon-delta",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/essence-of-calculus",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/eulers-formula-via-group-theory",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/eulers-number",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/fractal-dimension",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/gradient-descent",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/hardest-problem",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/higher-dimensions",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/higher-order-derivatives",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/hilbert-curve",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/implicit-differentiation",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/integration",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/l-hopitals-rule",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/leibniz-formula",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/light-quantum-mechanics",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/limits",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/neural-network-analysis",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/neural-networks",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/pythagorean-triples",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/tattoos-on-math",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/taylor-series-geometric-view",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/taylor-series",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/three-utilities",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/basel-problem",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/borsuk-ulam",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/dandelin-spheres",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/derivatives-and-transforms",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/divergence-and-curl",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/feynmans-lost-lecture",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/fourier-transforms",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/pi-was-628",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/qa3",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/quaternions-and-3d-rotation",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/quaternions",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/sphere-area",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/turbulence",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/uncertainty-principle",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/wallis-product",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/winding-numbers",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/bayes-theorem-quick",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/bayes-theorem",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/clacks-solution",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/clacks-via-light",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/clacks",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/cramers-rule",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/differential-equations",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/eulers-formula-dynamically",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/fourier-series-montage",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/fourier-series",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/heat-equation",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/hyperdarts",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/pdes",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/prime-spirals",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/qa4",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/windmills",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/better-bayes",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/binomial-distributions",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/chessboard-puzzle",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/diffusion-equation",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/discrete-fourier-transform",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/dp3t",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/epidemic-simulations",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/exponential-and-epidemics",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/groups-and-monsters",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/hamming-codes-2",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/hamming-codes",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/image-convolution",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/ldm-complex-numbers",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/ldm-eulers-formula",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/ldm-i-to-i",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/ldm-imaginary-interest",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/ldm-logarithms",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/ldm-natural-logs",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/ldm-power-towers",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/ldm-quadratic",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/ldm-tips-to-problem-solving",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/ldm-trigonometry",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/lockdown-math-announcement",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/pdfs",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/seam-carving",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/tedx-talk",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/bertrands-paradox",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/holomorphic-dynamics",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/matrix-exponents",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/newtons-fractal",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/quick-eigen",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/shadows",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/some1-results",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/some1",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/borwein",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/convolutions",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/some2-results",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/some2",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/subsets-puzzle",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/visual-proofs",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/wordle-2",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/wordle",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/barber-pole-1",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/barber-pole-2",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/clt",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/convolutions2",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/ego-and-math",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/gaussian-convolution",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/gaussian-integral",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/moser-reboot",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/pedagogical-curse",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/prime-number-race",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/prism",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/refractive-index-questions",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/some3-results",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/attention",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/gpt",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/harvey-mudd-speech",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/holograms",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/inscribed-rect-v2",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/manim-demo",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/mini-llm",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/mlp",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/one-more-dim",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/transformers-talk",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/alpha-geometry",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/colliding-blocks-v2",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/complex-exponents",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/cosmic-distance-1",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/cosmic-distance-2",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/diffusion-models",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/euclid",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/grover-clarification",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/grover",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/incomplete-cubes",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/laplace-for-odes",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/laplace-transform",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/phase-change",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/2025-p6",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/cross-entropy",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/entropy",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/future-of-math",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/hairy-ball",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/print-gallery",
+      "status": "PENDING_SOURCE_REVIEW"
+    },
+    {
+      "url": "https://www.3blue1brown.com/lessons/spheres-talk",
+      "status": "PENDING_SOURCE_REVIEW"
+    }
+  ]
+}
