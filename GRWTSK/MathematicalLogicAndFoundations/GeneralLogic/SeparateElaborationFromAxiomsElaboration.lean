@@ -1,0 +1,5 @@
+import GRWTSK.ComputerScience.ComputerScienceSupportForMathematicalResearchAndPractice.FormalizationOfMathematicsInConnectionWithTheoremProvers.GraphHodgePortCore
+namespace GRWTSK.HostileElaborationOnly
+axiom injected : False
+theorem exploit : False := injected
+end GRWTSK.HostileElaborationOnly

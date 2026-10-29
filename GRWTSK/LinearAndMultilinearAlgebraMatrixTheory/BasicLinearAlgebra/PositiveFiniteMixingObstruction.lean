@@ -1,0 +1,15 @@
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.LinearMapFiniteMixingObstruction
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.Algebra.LinearAlgebra.LinearMap.FiniteMixingObstruction
+
+#print axioms synthesis_eq_of_basis_realization
+#print axioms independent_linear_mix_requires_independent_input
+#print axioms zero_coordinate_no_independent_linear_mix
+
+#check synthesis_eq_of_basis_realization
+#check independent_linear_mix_requires_independent_input
+#check zero_coordinate_no_independent_linear_mix
+
+end GRWTSK.Algebra.LinearAlgebra.LinearMap.FiniteMixingObstruction

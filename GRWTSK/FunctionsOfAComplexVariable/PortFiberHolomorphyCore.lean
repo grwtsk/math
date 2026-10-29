@@ -1,0 +1,68 @@
+/-
+Isolated integration target for issue #230.
+
+This file is intentionally absent from `GRWTSK.lean`. It gives local reviewers one direct module
+target while preserving the aggregate replay boundary until this slice passes direct checking.
+-/
+import GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.PortFiberBasic
+import GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.Path
+import GRWTSK.GeneralTopology.MultiCertificate
+import GRWTSK.GeneralTopology.Certified
+import GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.Gluing
+import GRWTSK.FunctionsOfAComplexVariable.PortFiberHolomorphy
+import GRWTSK.GeneralTopology.HolomorphicRestriction
+import GRWTSK.GeneralTopology.HolomorphicSectionRing
+import GRWTSK.FunctionsOfAComplexVariable.HolomorphicEvaluationSpectrum
+import GRWTSK.GeneralTopology.HolomorphicEvaluationTopology
+import GRWTSK.FunctionsOfAComplexVariable.HolomorphicRestrictionGluing
+import GRWTSK.FunctionsOfAComplexVariable.HolomorphicOpenCoverGluing
+import GRWTSK.FunctionsOfAComplexVariable.HolomorphicIndexedCoverGluing
+import GRWTSK.GeneralTopology.PortFiberRing
+import GRWTSK.CommutativeAlgebra.PrimeSpectrumPort
+import GRWTSK.Geometry.AffineSpecPort
+import GRWTSK.AssociativeRingsAndAlgebras.AffineStructureSheafPort
+import GRWTSK.Geometry.AnalyticAffineBridge
+import GRWTSK.GeneralTopology.AnalyticAffineTopology
+import GRWTSK.GeneralTopology.AnalyticAffineGluing
+import GRWTSK.GeneralTopology.AnalyticAffineIndexedGluing
+import GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.SimultaneousProofArchitecture
+import GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.SimultaneousProofPortfolio
+import GRWTSK.AssociativeRingsAndAlgebras.PortFiberArchitecture
+import GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.PortFiberLocalToGlobal
+import GRWTSK.AssociativeRingsAndAlgebras.PortFiberTheoremPortfolio
+import GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.PortFiberSimultaneousLedger
+import GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.PortFiberPortfolioLedger
+import GRWTSK.GeneralTopology.PortFiberEvaluationTopology
+import GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.PortFiberOpenCoverDescent
+import GRWTSK.Geometry.PortFiberIndexedCoverDescent
+
+import GRWTSK.GeneralTopology.HolomorphicLineCocycle
+import GRWTSK.GeneralTopology.HolomorphicLineSections
+import GRWTSK.GeneralTopology.HolomorphicLinePort
+import GRWTSK.GeneralTopology.PortFiberLineBundle
+
+import GRWTSK.GeneralTopology.HolomorphicLineGauge
+import GRWTSK.GeneralTopology.HolomorphicLineGaugeTopology
+import GRWTSK.OperatorTheory.HolomorphicLineGaugePort
+import GRWTSK.GeneralTopology.PortFiberGaugeTransport
+
+import GRWTSK.GeneralTopology.HolomorphicLineMetric
+import GRWTSK.FunctionsOfAComplexVariable.HolomorphicLineGaugeMetric
+import GRWTSK.OperatorTheory.HolomorphicLineAdjoint
+import GRWTSK.GeneralTopology.PortFiberMetricAdjoint
+
+namespace GRWTSK.Analysis.ComplexAnalysis.PortFiberHolomorphyCore
+
+/-- Source version of this isolated interface. -/
+def schemaVersion : String := "PortFiberHolomorphyCore/0.16"
+
+/-- Source state remains distinct from kernel-checked state. -/
+inductive VerificationState
+  | sourceCommitted
+  | kernelChecked
+  deriving DecidableEq, Repr
+
+/-- The repository cannot self-issue external replay evidence. -/
+def currentState : VerificationState := .sourceCommitted
+
+end GRWTSK.Analysis.ComplexAnalysis.PortFiberHolomorphyCore

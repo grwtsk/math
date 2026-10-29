@@ -1,2 +1,0 @@
-import GRWTSK.Geometry.AlgebraicGeometry.EllipticCurve.WeierstrassImageIndex
-import GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetIndex

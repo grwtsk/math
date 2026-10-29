@@ -1,4 +1,6 @@
-# MSC2020: reference profile and unresolved full-baseline gate
+# MSC2020: source profile and selected folder taxonomy
+
+The user selected MSC2020 for folder organization on 2026-10-28 and authorized retiring PMD metadata. The [current source layout](../../msc2020/README.md) supersedes the earlier reference-only folder arrangement described below. Original official CSV bytes are now retained by Noe: SHA-256 `f7c889354c202551fe01f89bad2ae95ccadec4c57ac1f6f9de38bbd658d3c78c`, 6,603 records (63 root, 534 group and 6,006 detail records). The classification data and derived heading tables retain the official CC BY-NC-SA 4.0 terms and attribution. Cross-format reconciliation, complete semantic crosswalk review and proof acceptance are not claimed. Earlier failed acquisitions below describe those earlier attempts.
 
 [Standards register](../index.md) · [Coverage](../../coverage/index.md) · [D06](../../decisions/index.md#d06-reference-only-population-and-rights-boundary)
 

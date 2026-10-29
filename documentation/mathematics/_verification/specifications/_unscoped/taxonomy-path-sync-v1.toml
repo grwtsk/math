@@ -6,7 +6,7 @@ source_revision = "818a936bb30dda698668ed319aa19f87a869afac"
 roots = ["GRWTSK", "docs/mathematics", "docs/verification", "docs/taxonomy/subjects"]
 retired_namespaces = ["GRWTSK.SourceCorpus", "GRWTSK.Interfaces", "GRWTSK.Data"]
 namespace_policy = "Subject aliases collapse under canonical GRWTSK prefixes; intentional shared research namespaces and upstream identities retain their scopes"
-semantic_identity = "Folder co-location does not identify distinct UUID or PMD concepts, prove a semantic mapping, or establish mathematical acceptance"
+semantic_identity = "Folder co-location does not identify distinct authored concepts, prove a semantic mapping, or establish mathematical acceptance"
 distinct_variant_policy = "Different proof bodies are retained in isolated variant namespaces; imports select the canonical current API, not a proof-equivalence assertion"
 verification = "NOT_RUN_FOR_NEW_SOURCE_IDENTITIES"
 
@@ -670,1100 +670,224 @@ id = "urn:uuid:f049a177-9e72-55f3-bf00-fef13ee535f4"
 path = "FoundationsLogicAndTypeTheory/TypeTheory"
 kind = "authored"
 
-[[subjects]]
-id = "pmd:57ac3ccb9f328a5acb4e51de616c40d57826e02cae5a400a2eea016a18cb7e05"
-path = "Algebra/CommutativeAlgebra/Localization"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:803248976432a32c009a90a99c10dd1725d3ffc3f8c010abaa65066e34732a91"
-path = "Algebra/FieldTheory/FieldExtensions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:6eade26d25d3f21805cc97053c50fe3bdcdcc5027441dfd53c2f37134aefad70"
-path = "Algebra/FieldTheory/SpecialFields"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:004432e70c6d687d4d6d602c21002569f752b1300a78106b54cf8294f7cc3f0e"
-path = "Algebra/FieldTheory/SpecialFields/FiniteFields/FiniteFieldSymmetries"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:949dfd359ba8647654c54c0df5a9ae9401a9d8a0a6622d29940841d709395c2a"
-path = "Algebra/GroupTheory/BasicGroupTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:80d2a0b72cf2961d987bb13e90075bb6af153ea90d767f807e1b2211c335dbfa"
-path = "Algebra/GroupTheory/BasicGroupTheory/Conjugacy"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:acf176fc3ed80fd11055c53274d0506ce2cd4a68b6a7eb7ecabc061deda4a946"
-path = "Algebra/GroupTheory/BasicGroupTheory/GroupActions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:513dbf9ab6e57a8bb3e1b5df91dabdeacd5e44f74d7c6190744dbb3aba3d013f"
-path = "Algebra/GroupTheory/BasicGroupTheory/GroupActions/FixedPointCounting"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:3783ea053b5fbd823991a6172def5a35c5960be8ade4d7654454e0f3bbf2819b"
-path = "Algebra/GroupTheory/BasicGroupTheory/Homomorphisms"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:389f48979318d059d36502cb5123d0cc62bf9013247e53158cb32ab51a20068d"
-path = "Algebra/GroupTheory/BasicGroupTheory/Subgroups"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:3d1f3945eee69b7c64fd1aefd5d87f55b74a3ae97d5e8190b3b5445d9e1f114e"
-path = "Algebra/GroupTheory/CombinatorialGroupTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:dbe721f1f1c7c91d4ab06170c8201421a4cbd2c33cfcf50f07b854f85d18478c"
-path = "Algebra/GroupTheory/ProfiniteGroups"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:f7f1f199dcda68ca7e9d9c31697cdc3f9b3a9fb160ebf0a3def0fa9aab860915"
-path = "Algebra/GroupTheory/ProfiniteGroups/InverseLimits"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:5acc30991bb6e8c77d0d0e764a17004cd2e5ed3641fa3d0c70aa8ccb37207281"
-path = "Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:ad469da2e4c8a9b4cd9afe0ce3eec1535a4b59d5c4e5bfd37a17563d79f63da4"
-path = "Algebra/GroupTheory/ProfiniteGroups/InverseLimits/InverseSystemData/CompatibilityEquations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:133b5b47689c3b8cf0ff2ddc36a1097ba3fc8227c9a622f84725fab20c217d82"
-path = "Algebra/LinearAlgebra/BilinearAndQuadraticForms"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:5c34fee182e4b943c38bb5b39fde1bd08a3949055421fa8df48b7abacfcb1f71"
-path = "Algebra/LinearAlgebra/MatrixTheory/Determinants"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d9bbf1219848eadcc6ce70a34546b99f8ee43e4659e7f3dca2c0429cdb679c87"
-path = "Algebra/LinearAlgebra/VectorSpaces/LinearMaps"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:1f61da03e506136819d294e7be6ae9a771767be743e20fdaf8168985eaa5af8a"
-path = "Algebra/RepresentationTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:12565bfbb06cd4733e1b83d0c5849ad4b20b151105e6d49b1ed85cd892c644b9"
-path = "Algebra/RepresentationTheory/GroupRepresentations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:35913564dc03168517d6c1332d031be656f99ca662a43e434e46c2f99c67917b"
-path = "Algebra/RepresentationTheory/GroupRepresentations/Characters"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e1ccb11b800e95668d9ded3b6a0eae7634bb34ea2e41ede2aa79b46b9a0f88b7"
-path = "Algebra/RingTheory/BasicRingTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:df46d9b9a5db64fac66415a9ac596bf3499cc4ed1b636906feb59f13ba62cb99"
-path = "Algebra/RingTheory/BasicRingTheory/QuotientRings"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:863817f3f5161de61035911730fa4de983f179f4a5472584deee41f1cfae6e39"
-path = "Algebra/RingTheory/BasicRingTheory/RingHomomorphisms"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:41b1b4f99f61b5dc8b369939446cd82652e7ff792369d4efb8327264d947fb2f"
-path = "Algebra/SemigroupsAndMonoids"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:3f7439f3377376235762edda7c7d5d36aa2e3f1da473164d3a2dacfa96449c91"
-path = "Algebra/SemigroupsAndMonoids/Semigroups"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:aebbea3cef13fbcb19558bddd1638395f799ea5e4b289a4e9f488aaa30be6828"
-path = "Algebra/SemigroupsAndMonoids/Semigroups/TransformationSemigroups"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:c0e6df867e65b3d7b696ef56601b7584e26b490591479f42c8b1079ec43153d9"
-path = "Algebra/UniversalAlgebra"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:8b728985ffd9e98d7183cb37e371a66cdb1d4a0cd68b51591da01a22ed8abd3d"
-path = "Algebra/UniversalAlgebra/SignaturesAndAlgebras"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:18c7a85b14f4e3993855daad1a79eb8f69f43dc97640f1aa948ccb945150341f"
-path = "Algebra/UniversalAlgebra/SignaturesAndAlgebras/TermAlgebras"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:ef7686d3bbd7022cc0e63a5e2247e802bf4eade77247a242f4fc2e7e81d52cfd"
-path = "Analysis/AsymptoticAnalysis"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:156889afa337627204919935db23af1c4bad9337dc3a8172fc157bf28100dc52"
-path = "Analysis/ComplexAnalysis/HolomorphicFunctions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:0484c095c7d2e9767242738fa40886c2f1f1d44f3378306cd861a249b96959ff"
-path = "Analysis/ComplexAnalysis/LocalTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:924054faee167e3fa04452a234cc0b0cc47959ad3863010df0ebda572daf2331"
-path = "Analysis/ComplexAnalysis/LocalTheory/PowerSeries"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e74615e0b23819d87e26b06aa183e3e44a52ee88b467b92842d13836e0d4dd2e"
-path = "Analysis/FunctionSpaces"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:cfb758b37333223c46e7d124fff1ea3513e678c8e3943d90d37ce04d97e48ce8"
-path = "Analysis/FunctionSpaces/LebesgueSpaces"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:cda65e57319f77c750e2fb28e13e2f8add94a4824578d98e74a8a6227d4d3866"
-path = "Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:cf5ef2bf4248c49c1733b2270cf83bb0894b2e4c8070f953e83b8c1c3fb3730f"
-path = "Analysis/FunctionalAnalysis/HilbertSpaces/InnerProducts"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:87b0541e9c26c3b89782effcebb7126336e677e30098e4b08cebb03add8be481"
-path = "Analysis/FunctionalAnalysis/HilbertSpaces/OrthogonalProjections"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d26203980039d3688329cffa1de05573fd0ebf8f8d340cb49b123288f1593645"
-path = "Analysis/HarmonicAnalysis/FourierAnalysis"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:de7bd992c8fbdbbfe3033451897d96ecde3e1d1df82616aed26737fd9d03fe06"
-path = "Analysis/HarmonicAnalysis/FourierAnalysis/FourierSeries"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:73252f6abcd7cd439016cf4a8bc79f7961ec7dd5eeb3252632cb269dfdf690e2"
-path = "Analysis/HarmonicAnalysis/FourierAnalysis/FourierTransform"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:a3523f30a83892b92b5574aa411780fddb1f1f2ba8c4dee94fe6e225513fee6d"
-path = "Analysis/IntegralTransforms"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:a7d7a27de3ae58be770bb2dc339ed544c99a55195c8c00213b9de7d1e673c656"
-path = "Analysis/MeasureTheory/IntegrationTheorems"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d9316655601a3297dfc89e6502503d5c0201f54610103181fd72a6f943193f8f"
-path = "Analysis/MeasureTheory/IntegrationTheorems/RadonNikodymTheorem"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:65ce9b44fcd9de083e715390c2bb708c46688b2e443904b6bcfbd3b927b7d4c5"
-path = "Analysis/NonlinearAnalysis"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:aa28656c8bdfea1d13ac2ffafbb0864fe9d0bfede4ab0f39d3819aaf35cea6d3"
-path = "Analysis/NonlinearAnalysis/FixedPointTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:81b06f6b9a1650f6f010cdcc7922bc7cab1f1f7d1e8e3754f77fa6e5ff7a3e78"
-path = "Analysis/NonlinearAnalysis/FixedPointTheory/BanachFixedPointTheorem"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:80e5837dae6e75efa09d6f495d82c4d198cda14a5242d3c838b78a6549e15826"
-path = "Analysis/RealAnalysis/DifferentialCalculus"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d1cfc8f803d10792a4162da26d68b4d152fa940f8ec0f57e70911dba2500a4d5"
-path = "Analysis/RealAnalysis/Integration"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e2953388e37752b18e2565a1c446207ad4c38deabac11661663595cf413f1fba"
-path = "Analysis/RealAnalysis/Integration/ImproperIntegrals"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:ec0c1c7c3cb3fe31b0018cee061b87c7a96ac6b40cdb22e22678ebd21cf878fd"
-path = "Analysis/RealAnalysis/RealFunctions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:7955ec59ccb070780affee5b241c30e4c86b7afc928083b60b21b98b0587c7e5"
-path = "Analysis/RealAnalysis/SequencesAndSeries"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:ca2f12cc36957113ca6ee321780194a75df15726f8262eccc892753acbdc68fc"
-path = "Analysis/RealAnalysis/SequencesAndSeries/UniformConvergence"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e80ab40f9ba7c16b53fc760da0861743b5a0faf1e738dc081e8e848e71a0e25f"
-path = "Analysis/SpecialFunctions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:56dfcd525864e260198dff2da32a6dd2806f60c57c6869932e2c85fd4f73c59c"
-path = "Analysis/SpecialFunctions/ClassicalFunctions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:f536f809767614dd47c3cc26634d05f1ecb017413e6d93da7a91f2960b14e6a7"
-path = "Analysis/SpecialFunctions/ClassicalFunctions/GammaFunction"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e0d446a00935d05cf3727a6c7f1813f93c2f64db18804e6c42ca5d9a53f484dd"
-path = "CategoriesAndHomologicalAlgebra"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:27dd56549ab01551d0364098aac0dbf8745bc707439a01234c1297fa135ac805"
-path = "CategoriesAndHomologicalAlgebra/CategoryTheory/Adjunctions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:2ef38ff484d929b9817309fa7640d1c03ddd7fb700f7ebb03b56f59e8022a6bd"
-path = "CategoriesAndHomologicalAlgebra/CategoryTheory/Categories"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:118e8f5afe08e2627516da992eacd500c267343a93a3916b89dfa07fc90dd2e8"
-path = "CategoriesAndHomologicalAlgebra/CategoryTheory/Categories/Morphisms"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:47dbf8b87e0ef15ef170c4b22cc598a233e56094207338daa15e7a7d1c135d83"
-path = "CategoriesAndHomologicalAlgebra/CategoryTheory/Functors"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:0056870888befbc5a1e2522fd5ec88a4879568de2a69038d1e99a827a9a745c5"
-path = "CategoriesAndHomologicalAlgebra/CategoryTheory/Functors/EquivalencesOfCategories"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:38b677600e8b6ea04000389c6d9b08b309601d55567e456aa650d61433c6af80"
-path = "CategoriesAndHomologicalAlgebra/CategoryTheory/NaturalTransformations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:4ad71bd94b898200eba40c398900790e8a08082ff1bfed7ce0ef13e5947ab4af"
-path = "CategoriesAndHomologicalAlgebra/CategoryTheory/NaturalTransformations/NaturalIsomorphisms"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:b5879ac3cab027cf33ea08f5e89552df1ba6e34818b6b8d22cbc01a2083fa09d"
-path = "CategoriesAndHomologicalAlgebra/CategoryTheory/UniversalProperties"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:1a7a45798e10251e5113fed767b1436ec6a890e3f2acc27769a25950c16250b0"
-path = "CategoriesAndHomologicalAlgebra/CategoryTheory/UniversalProperties/Products"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:6280ed7b13355f3ac1a5267b1042a3f93c08cfb72b307e5f8e8beed61a7aaf4d"
-path = "CategoriesAndHomologicalAlgebra/CategoryTheory/YonedaTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:f9267cf34bb0615ed2da3200a2ae2aef41793ed8a529d4869374d0ba24dc934d"
-path = "CategoriesAndHomologicalAlgebra/CategoryTheory/YonedaTheory/YonedaEmbedding"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:206f8206e0d0c36b43ec8a724a95112e944dbb5afe607961eb6fef382f909c64"
-path = "CategoriesAndHomologicalAlgebra/HomologicalAlgebra/ChainComplexes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:4b35088dcff454d53e7b17983dfa9ca520ac392e4045d38b5c6dff21beafb86d"
-path = "CategoriesAndHomologicalAlgebra/ToposTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:c997a31e98388d101aaa21d01d3e84ebd407539f096979fe9b6bf9de0e581c0f"
-path = "CategoriesAndHomologicalAlgebra/ToposTheory/SheafTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:707b24e911985400f74c2a7897155593ab4ffcc669467a5a4ad6aef9f37b3034"
-path = "CategoriesAndHomologicalAlgebra/ToposTheory/SheafTheory/Presheaves"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:af33d20ccda209a13c7644a6dd817a2b4101a795809ba5d604271ea615a392fc"
-path = "CategoriesAndHomologicalAlgebra/ToposTheory/SheafTheory/Sites"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e33cab7b8bd56b30e2d2aca0d87d1a98c3281c70cf5baab9476298e7edd658f4"
-path = "CombinatoricsAndDiscreteMathematics"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:737c7442cfc7e8ed5d788d4fe981b6604c5ff464c97fe62b3e486af081959699"
-path = "CombinatoricsAndDiscreteMathematics/AlgebraicCombinatorics"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:0edca9aa618e22466e5a07976091760e07d9c13dfe12550d2a9727c4b8f82909"
-path = "CombinatoricsAndDiscreteMathematics/CodingTheory/AlgebraicCodes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:b2fdf79dad4e437077193009420b80a821641acaaaee7e0461f8445f09df6c73"
-path = "CombinatoricsAndDiscreteMathematics/CodingTheory/AlgebraicCodes/LinearCodes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:5e7f34acf5b02846d45d45690e949af59a77521d6a0912ec277f398e53ea7d48"
-path = "CombinatoricsAndDiscreteMathematics/CodingTheory/AlgebraicCodes/ReedSolomonCodes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d4a6d853b342cf65aa1bd1844b36ebd173c8f3403a700fceb241df0c37b5c73e"
-path = "CombinatoricsAndDiscreteMathematics/DiscreteGeometry"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:7a5554155179872a5752c780877367dba8d6c42daf7b14075318838fbbbc167b"
-path = "CombinatoricsAndDiscreteMathematics/DiscreteGeometry/LatticeCombinatorics"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:045e63ebe757a96ea9d4b1d2cb5aea06778f2e5c83efb76cdfceb985cefb5d4a"
-path = "CombinatoricsAndDiscreteMathematics/DiscreteGeometry/LatticeCombinatorics/IntegerLattices"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:31a195e0b0e2f7c8bad590ddefdd01487779b085fac70079541e180a1eddf110"
-path = "CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CombinatorialObjects"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:f3bdb14102d7adc133aa7de694a095bf51c1fc00839e6186b7a6f412f442ecb4"
-path = "CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CombinatorialObjects/Permutations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:69f1b4d5206348b87c25a543c21b702cf5edb1303bb2b4160b3c6cb3070dfa02"
-path = "CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CombinatorialObjects/Trees"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:577ac42ae1ba08d78989b15f0d265ae4507329be3c46a9b85b69b9f94fe11cfa"
-path = "CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CombinatorialObjects/Words"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:84e16a79ab9860764b3e2c79978b8a0018c8b0fd78f95deafb978d4cf35a6d7f"
-path = "CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:f7378568cc9e820482509198db514f064038cd36deedb8c69798d4e2cdf879a1"
-path = "CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/Bijections"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e954104ee82e02c6d848928d92ef2567ad4a7ddcfa8f74f364442336bf0df29a"
-path = "CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CountingPrinciples/DoubleCounting"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:fb5b82a4c88f221f09739f7fba4e92851c68516b094dfc3c97726d68485e3923"
-path = "CombinatoricsAndDiscreteMathematics/ExtremalCombinatorics"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:acddf6cbaa0ab0a90e94d597cb5831b197c0d1e9d1b3d811be5a8842ba32aa09"
-path = "CombinatoricsAndDiscreteMathematics/ExtremalCombinatorics/Discrepancy"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d298e83a8e3bf4e0892ed7cb0386bbaff4af367c713c35b7c42c194a6565ec5c"
-path = "CombinatoricsAndDiscreteMathematics/ExtremalCombinatorics/Discrepancy/CombinatorialDiscrepancy"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:f91b9c432ce017a3331c5fe98588284b1559ae6e5c83dd800a2597b61b82b880"
-path = "CombinatoricsAndDiscreteMathematics/GraphTheory/AlgebraicGraphTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e2fd40f5b1a9102a6107b3a933f2d41688e34cdbcf19c29330a835e73e71503b"
-path = "CombinatoricsAndDiscreteMathematics/GraphTheory/BasicGraphTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:9999719471f55357aeeca736dbca06b7549080b9a40c41571b5b8d53d460f55b"
-path = "CombinatoricsAndDiscreteMathematics/GraphTheory/BasicGraphTheory/Adjacency"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:426d53cf42c7846d178ec5cb5c579283169b2aefb497ccaee3161357e7133548"
-path = "CombinatoricsAndDiscreteMathematics/GraphTheory/BasicGraphTheory/ConnectedComponents"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:44df43881d05fc0b93b17940837ed8a6b4748515cecea8b80c1d23dc8606a916"
-path = "CombinatoricsAndDiscreteMathematics/GraphTheory/Coloring/VertexColoring"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:c08600ef7293f4e0ac81df3806bf1fec7909fb780cd1c89f9d14603475ebc2e4"
-path = "CombinatoricsAndDiscreteMathematics/GraphTheory/Connectivity"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:980aebf45cae6d4c493b627e0b88907b0636987a2a3032c4dc199dfe6be14747"
-path = "CombinatoricsAndDiscreteMathematics/GraphTheory/DirectedGraphs"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d7f5d866fc785c38182cc4b2638f98d33961c6abc805bccbf50b2f9896f2279d"
-path = "CombinatoricsAndDiscreteMathematics/GraphTheory/DirectedGraphs/DirectedPaths"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:51a54a2145d5df0da65955a98634f0869bc6698d4d611ab15ffadeae01117057"
-path = "CombinatoricsAndDiscreteMathematics/GraphTheory/SpectralGraphTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:879a8067041748d9432125a5f14ba54208b5a0d0a71dcd972668682dcdfd288e"
-path = "CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:ddc19d000d8e7c25691a47f04e04ef7d1fdc90b92481290fca97e4fbd7c2a8de"
-path = "CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/BooleanStructures"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:ecfb30d84890d35f61714008f07b465e1e891723bbbd549c2e90e6b38e409361"
-path = "CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lattices"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:5684ec73f50faa6e2ccee98dc6e66fd3d461dad62c0cac1e95a055c70e236340"
-path = "CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lattices/CompleteLattices"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:1855b53dba218e91f7eb212f57805c740e86d9002733e05a61a3e9af4bc29b22"
-path = "CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/PartiallyOrderedSets"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:a4e3e9100b67726d9b8bfd62b15f2ea98c54d54ff36691f22a6f306d061467b0"
-path = "CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:1436577d960db3ca6d0777c19fb0664c64e74b3caf38b9edaa501f5fd4178dbc"
-path = "CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CombinatorialAlgorithms"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:70c66e3a1b19298e6a30f9db9bc52af4b53381ce37fda5d5fa2b1b962cd716a4"
-path = "CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ComplexityTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:675e8850b7eb9195df70a4e04e168542bbc773eff5b686e86308b956a9c649d2"
-path = "CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ComplexityTheory/Reductions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:710d98b0dfdb01dca05509a3c25423cd950dc698f0dda3d855131f19f290b2b7"
-path = "DifferentialEquationsAndDynamicalSystems"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:699bd8a701dfa8a60e50213a3f65dbea2dc2c313a24fafc98b728875d258e029"
-path = "DifferentialEquationsAndDynamicalSystems/DifferenceEquations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d353ae4a525f805b17b351e0150176c2dda9754ef72d8717d5d78dca08672169"
-path = "DifferentialEquationsAndDynamicalSystems/DifferenceEquations/DiscreteEvolution"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:16bd1a5bfdf7befb575dda0326113e05fb271e411d95a251e246b3977eaa3cca"
-path = "DifferentialEquationsAndDynamicalSystems/DifferenceEquations/DiscreteEvolution/LinearRecurrences"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:879f358e8000a1dc3f265c43ffdbdb510d90285549e6b5092b44b6dc230766b1"
-path = "DifferentialEquationsAndDynamicalSystems/DynamicalSystems/SymbolicDynamics"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:34874dd66d01bb5f2c3e3d66cf93ff1c4232e7c9411b985bb0a78aa667e66502"
-path = "DifferentialEquationsAndDynamicalSystems/PartialDifferentialEquations/ParabolicEquations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:5a59722f4ee7368c37e3e909a7ae1d89b143734fa5d29a4f7af0bf69e4f1ee55"
-path = "FoundationsLogicAndTypeTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:743e8b09a9e1cc7359414f1b00766db2372fee98c4be66d49d34e8f4e5510edf"
-path = "FoundationsLogicAndTypeTheory/Computability/RecursiveFunctions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:f8e7f76ff2d81e55fec26c9e8e08bc02b97fda38baa909d35e49b1daafe453e4"
-path = "FoundationsLogicAndTypeTheory/FormalLibraryEngineering"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:ee398d26cde1954fdd896a091774f974c181091927d4664d0ab5fdcb554ce677"
-path = "FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ClassificationValidation"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:63929f4930dea84277a78e7b80382115a6aff269febef0b96c2334f9cc909317"
-path = "FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofEvidence"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:c486c6859a0512c4f07b731f6b073c54a2d2a9a7cd182a4ff7c68ef87b1f78ea"
-path = "FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofEvidence/IndependentConsumers"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d5d564ebc1acde853b30347ba68bea530d0aa6e26ccfc0407c079fff79290b63"
-path = "FoundationsLogicAndTypeTheory/MathematicalLogic/PropositionalLogic"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:50faba59160b95d059cb0e9e6547b230a4c9dbc37d06e4a20ebf3366acad134d"
-path = "FoundationsLogicAndTypeTheory/MathematicalLogic/PropositionalLogic/FormulasAndValuations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:db6d9d27668924ee3f7fa2e9de17a25c9bcf6adf62867b45487411129257abc5"
-path = "FoundationsLogicAndTypeTheory/MathematicalLogic/PropositionalLogic/Satisfiability"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:8d05262e00535eb697cea053ca9937c5887a4abfa61edb7ee6931c7bfcd09996"
-path = "FoundationsLogicAndTypeTheory/MathematicalLogic/PropositionalLogic/TruthTables"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:58c8f2fcd87d16f261fa43a43b08ff311b30904c5440c29094069ea6ad78dc46"
-path = "FoundationsLogicAndTypeTheory/ModelTheory/ModelTheoreticMethods"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:71e64507b24c53abbf0b423071985102f0583bb2ee43977523fe5acde1a1cf35"
-path = "FoundationsLogicAndTypeTheory/ModelTheory/ModelTheoreticMethods/QuantifierElimination"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:f6142f4b7a2bfc26be2ecee4b66ffdc0a9f489a7c3bed4d17bd4a15b1d113679"
-path = "FoundationsLogicAndTypeTheory/ModelTheory/ModelTheoreticMethods/QuantifierElimination/EliminationData"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:afe7f0985da524af6028f2ade6439927c2ded3951c27cd0456f914e6c6315c86"
-path = "FoundationsLogicAndTypeTheory/SetTheory/Cardinals"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:b2e4988e4c748936111a6073225fb1dfc1cc467410b120f7aa0ea35dd982ef64"
-path = "FoundationsLogicAndTypeTheory/SetTheory/Cardinals/CardinalArithmetic"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:0c21aceea3cc2c44b35af41d2c917a9404a79810b7060bca9e8fbcfa9373212f"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:c6f719df3ee54f77b2bbfd7c3c0e143d1f29b376aa3cb89c3209e7892a264074"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:0fa10886b11fb7e8b6f26bfd84e6d85568e34aab786cd34f4dfae8cbab95f854"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentFunctions/FunctionEquality"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:3abd35101603340ac0a8194458b27628cf8ec9227dc5dacdb894a2c1fb36efab"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/DependentPairs"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:7b4af4e3d73bd483b50cb9cf3350eebc2e905fba80255c5fd92011be6fb4c62c"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IdentityTypes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:6433913d19fe6521b7b337ac51e2b13f9af2dde4cb4fe05ee444a1ebb6c1d9ae"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/IdentityTypes/Transport"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:815f8f4a813a8ecc600556ac3b0bae3dc8d14cf5147db37ae209f8a7ac709553"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/InductiveFamilies"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:0c71f2d76f1dbe657f4059240fd20d0fcfcddf7c6817f47d414323b2ed44ce54"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/InductiveFamilies/FamilyExamples"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:c76366aa1b1d6b0162b086e51f3a5d56b3b66f950256727703c48f0a9fe2bec9"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/InductiveFamilies/FamilyExamples/FiniteIndexTypes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:a8ac155480e802e6c284c310827cac688ecac1f0a6d2f23f2672bdeac8bfd034"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/InductiveTypes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:259daf226a4c5e41fd1afc6b4416eb8592c9509ede6eaddbd7610a2c21a9e1c5"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/QuotientTypes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:41d4a2e99d6926a7bf08c4fff3d65b72b0f43b264636e1637a912cbf03fbe65a"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/QuotientTypes/QuotientElimination"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:9308154c24d0db05a4c56745088f1d48aa23a0c61347940535674ee7f2725bd0"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/QuotientTypes/QuotientPresentations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:6ff8a02312fe78282af5f89c6e4a8e95e60482fdcb68671fcb7d38b14e374637"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/SimpleTypeTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:54646cb725e818cc68c60a70235d5d2c2654351f3a4d364f5cf8faaebd4d94b7"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/SimpleTypeTheory/FunctionTypes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:c2005470c7f20912fb795e9a37445daca27b870883b37ea95875967d5147fa83"
-path = "FoundationsLogicAndTypeTheory/TypeTheory/SimpleTypeTheory/ProductTypes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:350d1190c18204c185c054bde1dc6766f72179c7422f3aaddd3795f5394faa67"
-path = "Geometry/AlgebraicGeometry"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:17e8abba57951b5d885fdee57303f7306ea6e398f859706fb706994855e6bc8a"
-path = "Geometry/ClassicalGeometry"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:9449ec9faccc454bb5a5e893f520ab9006f74b9e6e8eddcf9fa48d324a6efbd9"
-path = "Geometry/ClassicalGeometry/EuclideanGeometry/Congruence"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:f8afd2df3048ea18299a1d183ed91ba12b4bd1bc51b329fe8c5868b4affb474c"
-path = "Geometry/ClassicalGeometry/EuclideanGeometry/Incidence"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:2b807cbec5b623da1a0942943233d653b4b9539155916dd8ea3a37585e57ef8a"
-path = "Geometry/ClassicalGeometry/EuclideanGeometry/Similarity"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:10acbf7e7c8e74c524c3a41440305e9ad01de912e3840c004ea43ad06b348e21"
-path = "Geometry/ConvexGeometry"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:ea20e3cb36628d6c49da782a62635d53b9bbb49c1652fdae9991e47a45ae45b6"
-path = "Geometry/ConvexGeometry/ConvexSets"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:b0b3decb1a876720cdf3da94c3bafe2dfa7c715b54e7bb74c4791295504e3bce"
-path = "Geometry/ConvexGeometry/ConvexSets/ConvexHulls"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:c137ae5f2df3ddb9401adca1eee8df0521828b961c521f8acc6634a48bdc881c"
-path = "Geometry/ConvexGeometry/ConvexSets/ConvexHulls/FiniteConvexCombinations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:9c53635c4ef7dca88286ec173c8f95fa7275f89145adf0854169647586072eb4"
-path = "Geometry/ConvexGeometry/ConvexSets/ConvexHulls/FiniteConvexCombinations/BarycentricCoefficients"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:dbdca7765965469555ff9c4ab1386252621802ebea5149669ba40d9163586777"
-path = "Geometry/MetricGeometry"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:45a9c342a5acb6cbaab5780dfcba5d7ea388ae3701762a1613e7ccee222bb1a7"
-path = "Geometry/MetricGeometry/MetricSpaces"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:34206c5e2b9ea1819bd62b43ae788afa05773b47e5a216da11feabbc35330bdb"
-path = "NumberTheory/AdditiveNumberTheory"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:4f5a20378a63c869033b2c27bdc9a42f43bf9a0ec312b6f6adb63b5e6c7d89dd"
-path = "NumberTheory/AlgebraicNumberTheory/GeometryOfNumbers"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d80fab92f4e0de0a9b6ad976dd8b42621b3ea7080c80e6945bccf4a637e8e856"
-path = "NumberTheory/AlgebraicNumberTheory/LocalFields"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:c6baca00c8b43e9921385981501486c6246a6a72295934c4bba2a175d60c5105"
-path = "NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:95882438985346abbbb5b5d71bd7b5ab0fb98707fcd5e405dded32f3c2e5f081"
-path = "NumberTheory/AlgebraicNumberTheory/Ramification"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:2bb6262c1c2821d0c0f686a00a8a2805923fc030b7bcef7b39c1ca8a234aa37e"
-path = "NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:a92d55366047c916ccdf2d7c631ff3cc32f0f7e20575f663cab33b45de65ae04"
-path = "NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:97efa45047afe42660e4dd8a2415a845fc5b904b85535548b128047f93fa6efb"
-path = "NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:6388bebdc663c686420ee8ea79bd78c378b76fca95f51387deb6c27daaea8982"
-path = "NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:05c2ed53fdce07c003441d4028b0c275ff1b308cbef93a52aff51820a10dbeb0"
-path = "NumberTheory/ArithmeticGeometry"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:588536d50494211cc018e4b0c6984d10a7d80694ed658949b563ab6bd45845c6"
-path = "NumberTheory/ArithmeticGeometry/EllipticCurves"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:52d8b2ed993f94e008e1b538ef3df8c0ab22212b1928b7e9e45ea992392c2e62"
-path = "NumberTheory/ArithmeticGeometry/EllipticCurves/GroupLaw"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:10746dfbd3c49299c6d59f8bfb24c31fb4cc7e3c8c1780f2f08bc75a9c081f50"
-path = "NumberTheory/ArithmeticGeometry/EllipticCurves/TorsionPoints"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:41a9d241e3e48f1ab24efbadbacc374034aea28d5a30476ff7ad5558eb3f6c32"
-path = "NumberTheory/ArithmeticGeometry/EllipticCurves/WeierstrassEquations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:4e72a3d442e8d1260ba045d0eeb05b2d12a4e2689bb8c145de8b383ca7a96f05"
-path = "NumberTheory/AutomorphicForms"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:8c56d706cd9f9b55b98e5fc84c8c028fac9ceb321166caa8d997119c53da934e"
-path = "NumberTheory/AutomorphicForms/ModularForms"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:7d483d5438627eb951b7e8d47bb484d4714b7414acab9d9cc349db54b92ed3ca"
-path = "NumberTheory/DiophantineEquations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:624ab8f948ead79960946824854efcad5a875255f002c31562f64eed315209ad"
-path = "NumberTheory/ElementaryNumberTheory/ArithmeticFunctions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:3e91af40bbc618545aff7f46d3354d380722afa616bab128da3d295a20faed93"
-path = "NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/MobiusFunction"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:a4ff299d0039bfaf491d232253036cf8e6cb2870c4e53b3d1197c92a1293e195"
-path = "NumberTheory/ElementaryNumberTheory/Congruences/ResidueClasses"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e16480311509be3efbe9b3bbb1e52cd70477bc0746f677c507f662800a28144c"
-path = "NumberTheory/ElementaryNumberTheory/Divisibility"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:afe6088eda4e8009aade957789d95c637176a421c0c5ff3729012170c150c171"
-path = "NumberTheory/ElementaryNumberTheory/Divisibility/PrimeFactorization"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:fe745acf27b8520aa17af5507f53714420d1d83d506296fe0ec83a0fe96e9cde"
-path = "NumberTheory/FunctionFieldArithmetic"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:6953b9545cfffaf148e667404255caea61a1f97cfc9aeddaa75799a1542b476c"
-path = "ProbabilityAndMathematicalStatistics"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:25b191d15294e1863dd3fab507dacc15b6db093a66a59257104aab92aef6fb8e"
-path = "ProbabilityAndMathematicalStatistics/ClassicalProbability"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:f5d5701c35d0294ee06f91e973885c1c1db846542f020c483c65f2daf526b87f"
-path = "ProbabilityAndMathematicalStatistics/MathematicalStatistics/LinearModels"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:20f3242b1cd1ef5b12ed96693b8b0698523a5d163b0bc5109b311a83091906ec"
-path = "ProbabilityAndMathematicalStatistics/MathematicalStatistics/LinearModels/LeastSquares"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:73eb8ebaca0367d3ed437e07331976c8cbf7dd1f7c27c0282c854b1a37980c1b"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d62f1143a0b4c2ff16b3f829915b1f3a61e6520a29254623909b8ea6ee3dd745"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:2a1e16ad280cf7750d0e4fd027114140853405778507e227d801a8f182bd9e89"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/ConditionalExpectation"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:850cffd81a0c7e6ef7b4914d27becfaaef4c1c9933777a7ee85d266d011b1a48"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:6e6c72cbc6bdfe98dcbb2fed531b8c1bbf096df0a0234adb1880463c3d303a8f"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Variance"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:015457fceaa113a1ddfcf18c7d64ec371dc7bb7f9e87dd9c490ad0f93826d0e1"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/MeasureConstructions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:2afcfcaf5de283fe8a7304df9ca4b592778483422d7b87eb0e118278dfca89be"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/MeasureConstructions/ProductProbabilities"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:ac40f203656fc5eb0b5c11f1263642c0635a346033d980449bc27b63fa69d010"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilityInequalities"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e74449e49b7380e78cce236e6cd65c5e65ea0c2e8ddb40e685e2376112dca020"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e117faea388127e09bd74919b2385e63bbb61852d6a0719b9f63f417bac1e43e"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Distributions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:3df7f63f1aa3dfcf95dd42d746afbea53d4076aabe09ab0b1914a879aa1e84a8"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Independence"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:f7f009935bf92c3af7ef70802496adf4bf5eabda2e71052ebed5f00274e6cf83"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/MarginalDistributions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:0a8040b2a12bdbc6b24a16d38f4746a471199a65b64ac338758203d1f6887c3f"
-path = "ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/ProbabilityMeasures"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:6a39b118108150b1e753a74b54b07cdb0a7f33db50a738ddd7759ad98b18517b"
-path = "ProbabilityAndMathematicalStatistics/RandomStructures"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:bc2d94f84abcdca8f64d01b39bbe726ec79432c098f400d0944b6ec8a607f5a2"
-path = "ProbabilityAndMathematicalStatistics/RandomStructures/GaussianProcesses"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:b823f9ab5701924541593832fe1f8e2f1ac146cf88f55388aaa2950643546bf7"
-path = "ProbabilityAndMathematicalStatistics/StochasticProcesses/BrownianMotion"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:cbc710a2c82d42b20f820763deff7325568b392405645eb51e257b7433ff94d2"
-path = "ProbabilityAndMathematicalStatistics/StochasticProcesses/MarkovProcesses"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:9070cccfc6a32802504878d3abfb12cdb3b988deac3637ed0714b35e1ded2675"
-path = "ProbabilityAndMathematicalStatistics/StochasticProcesses/Martingales"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:4f39e774dbcc49b13658d3ae5e64cddbf0414cbdd2011e23039a8e9bf1f6fa96"
-path = "ProbabilityAndMathematicalStatistics/StochasticProcesses/Martingales/OptionalStopping"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:d23beefdefe6705cfedcc97ef06df4cec16fa94558cdcc9e5c8e5cd24ef0fbb3"
-path = "Topology/AlgebraicTopology/Cohomology"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:5ba27f135ddf4f3c49c40c72192c1ece2bf6328a7d469b4ef6eb1ec709a96073"
-path = "Topology/CombinatorialTopology"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:040366e23fc0270ca389c10db2b3700e8ea273901e2da857b8d3adb0bcdee2bf"
-path = "Topology/CombinatorialTopology/CellComplexes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:105028737156ce2263540a6847e05cd56945e796d049c026ede9b69e0e3d8b6c"
-path = "Topology/CombinatorialTopology/CellComplexes/CubicalComplexes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:645213594993b4efe20b875c7da513a9f614bbf6a84d157f9cd2fbc8a3a91d0b"
-path = "Topology/CombinatorialTopology/SimplicialComplexes"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:049b2f02b7ba192cfa7583a8c8c15baa2b9bb18c3bdf742ff24aaa1d2423b970"
-path = "Topology/GeneralTopology/Compactness"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:6063a87736a96dbcac0a37f62eb3b123eddb9cef11428e72981c0a6d3c9c1813"
-path = "Topology/GeneralTopology/Constructions"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:7cf368865e9f4967fd88832e0166bdaef82941ffc3e4dfc3850586d95b0ab367"
-path = "Topology/GeneralTopology/ContinuousMaps"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:11b9caa7bdbcfc4c463a956ed1c112b27337ef5ba6dfbdfe1e7c39c07dfdc2be"
-path = "Topology/GeneralTopology/ContinuousMaps/Homeomorphisms"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:301d4382a4f22c400ca65d7e1d48f56f398ad8f6dfbdb2a36a901439552a86c2"
-path = "Topology/GeneralTopology/UniformSpaces"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:dd896783234582acefc443ec8d88da3b4f25cd1d49189b4bb16f351335ba3829"
-path = "Topology/GeometricTopology"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:e69f560b467b3b434c58e27580cc285421904ad51331a5bca55518994ac02fb6"
-path = "Topology/GeometricTopology/EmbeddingProblems"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:fc27c32a7219a7a660af8c670f1738ab21f0f3db420305483228971f42aa02b4"
-path = "Topology/GeometricTopology/EmbeddingProblems/Isotopy"
-kind = "pmd_navigation"
-
-[[subjects]]
-id = "pmd:1698ef9ec67ca07c4ae3670e7ae863b7613353a38eb81c153ab4b2dfc539c679"
-path = "Topology/MetricTopology"
-kind = "pmd_navigation"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [[aliases]]
 from = "Algebra/Field"
