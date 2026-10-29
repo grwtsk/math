@@ -1,0 +1,118 @@
+{
+  "schema_version": "1",
+  "attribution": "grwtsk contributors",
+  "role": "static mathematical acceptance target; no execution receipt",
+  "base_math_commit": "8a1d79ba18f8af549efa0490d3d0bb4baa636329",
+  "base_tree": "ca42ddcdb927057f0de68b1e579c1feb53bfb69f",
+  "initially_inspected_main": "5bee674000a6c4dd411b8aa367eb0dbd6f0c3056",
+  "concurrent_reconciliation": "Later main8a1d79ba joins current full history and documentation. Actual direct kernel/gcd dependencies and package pins were checked unchanged; current named rough four-term theorem and post-mean note were read at this newer pin. No concurrent files are changed.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/PickupCellKernelUpperBound.lean",
+      "module": "GRWTSK.NumberTheory.Moebius.PickupCellKernelUpperBound",
+      "git_blob": "4e26bf20380d9f66a59d015301ffdfbb16bb9f96",
+      "sha256": "2190a322f87a06939279786b45b42d20a12032847da08840d4649bf661d610eb",
+      "declarations": [
+        "GRWTSK.NumberTheory.Moebius.PickupCellKernelUpperBound.pairPolynomial_le_four_div",
+        "GRWTSK.NumberTheory.Moebius.PickupCellKernelUpperBound.cellPairKernel_le_birthWidth_div_gcd",
+        "GRWTSK.NumberTheory.Moebius.PickupCellKernelUpperBound.cellPairKernel_le_twenty_div_sq"
+      ],
+      "direct_imports": [
+        "GRWTSK.NumberTheory.Moebius.PickupOctavePairKernel"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/PickupGcdRemovedBudget.lean",
+      "module": "GRWTSK.NumberTheory.Moebius.PickupGcdRemovedBudget",
+      "git_blob": "6ca350663d211729b7701189e5b8944c6f417bba",
+      "sha256": "8723d62a2e8ec4ad4fce51b790e7176d747867448e2549a76b8a46e431dfd7a5",
+      "declarations": [
+        "GRWTSK.NumberTheory.Moebius.PickupGcdRemovedBudget.gcdCellBlock_two_active_pairs",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdRemovedBudget.source_pair_abs_le_removed_budget",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdRemovedBudget.gcdCellBlock_abs_le_removed_budget",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdRemovedBudget.fiveGcdCellRemainder_sub_birthExpression_le",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdRemovedBudget.fiveGcdCellRemainder_sub_birthExpression_bounds",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdRemovedBudget.fiveGcdOctaveRemainder_sub_increment_bounds",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdRemovedBudget.fiveGcdOctaveRemainder_sub_endpoint_increment_bounds"
+      ],
+      "direct_imports": [
+        "GRWTSK.NumberTheory.Moebius.PickupGcdFiveSector",
+        "GRWTSK.NumberTheory.Moebius.PickupCellKernelUpperBound"
+      ]
+    }
+  ],
+  "base_dependency_blobs": {
+    "AGENTS.md": "5d88e538218d70fe782f268a631b26132f59e295",
+    "lean-toolchain": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lakefile.toml": "7cac6bef50ace37093759b857409ba65f65d118d",
+    "lake-manifest.json": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+    "GRWTSK/NumberTheory/Moebius/PickupOctavePairKernel.lean": "1eb0fecbbe5764850e3fd390e5f6d1eef39b4f7c",
+    "GRWTSK/NumberTheory/Moebius/PickupGcdFiveSector.lean": "5181acf5740afc4c0cffe3008966b875f4ab5527",
+    "GRWTSK/NumberTheory/Moebius/PickupGcdOuterSector.lean": "6e6d522eaf79f5a94288e648bb83044b5266d46d",
+    "GRWTSK/NumberTheory/Moebius/PickupOctaveGcdCorrelation.lean": "c96ea058c4f5542e1c035ce4efa16508a43461a9",
+    "GRWTSK/NumberTheory/Moebius/PickupDyadicIncrement.lean": "6f58fe61f3e1af3f007c80650e12e7515f426ff5",
+    "GRWTSK/NumberTheory/Moebius/PickupDyadicEndpoint.lean": "53a33d37efd54fdff10aed1b05276b89dd4ddadc",
+    "GRWTSK/NumberTheory/Moebius/PickupEndpointQuadrature.lean": "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c",
+    "GRWTSK/NumberTheory/Moebius/PickupRoughMixedQuotientPrime.lean": "410e4e0cb57a3fdb244f5a3250980874ba12b41b",
+    "GRWTSK/NumberTheory/Moebius/PickupRoughJointSecondMoment.lean": "37e5e2c3c55769e4d93836cd89013a41dbf02e30",
+    "documentation/mathematics/NumberTheory/Moebius/postmean-reciprocal-main-and-remainder.md": "157470a7fdaad5cfa88c39fdfbb1ef87cd7e5a87"
+  },
+  "exact_target": {
+    "declaration": "GRWTSK.NumberTheory.Moebius.PickupGcdRemovedBudget.fiveGcdOctaveRemainder_sub_endpoint_increment_bounds",
+    "quantifier": "for every j:Nat, with no arithmetic growth or cancellation premise",
+    "statement": "0 <= R5_j - (endpointSum(dyadicTime(j+1))-endpointSum(dyadicTime(j))) and R5_j - (endpointSum(dyadicTime(j+1))-endpointSum(dyadicTime(j))) <=120",
+    "source_identity": "The maintained exact endpoint_dyadic_eq_birthSum and exact gcd cell identity are consumed. This is the actual endpoint increment, not an integral/source substitute.",
+    "quantitative_role": "The removed fixed sector is a uniformly bounded perturbation of the original signed increment. The retained R5 upper comparison increases when further nonpositive terms are discarded; no smaller numerical upper estimate or improved exponent follows from this budget."
+  },
+  "proof_components": {
+    "kernel": "For d>=1,d<=n,m<=N: K_N(n,m)<=4*log(1+1/N)/d. The actual positive active endpoint factors cost at most1/sqrt(d), and the nonnegative endpoint weights sum to the actual logarithmic cell width.",
+    "removed_kernel": "N<5*d and log(1+1/N)<=1/N give K_N(n,m)<=20/N^2.",
+    "source_coefficients": "The actual Mobius coefficients satisfy absolute value<=1, including every zero coefficient. No source sign or support is guessed.",
+    "finite_rows": "If N<2*d the block is zero. If2*d<=N<3*d, an exact two-pair formula applies. If3*d<=N<5*d, the maintained exact six-pair formula applies and quotient4 vanishes by proof. Thus |gcdCellBlock(N,d)|<=120/N^2. Both orderings and original masks/cutoffs remain.",
+    "cell": "The exact difference fiveGcdCellRemainder(N)-birthExpression(N) is the negative removed-row sum. Its nonnegativity consumes the signed-sector theorem; at most N gcd labels give upper120/N for N>=1. Absolute values are used only to pay the removed sector.",
+    "octave": "For M=2^j>=1, the M cells N=M,...,2M-1 all have N>=M. Summing120/N<=120/M gives total<=120. N=1,j=0 are included.",
+    "endpoint_error": "No1/(8M) quadrature allowance is added to this exact endpoint difference. The earlier curvature-tail error remains separate if a later argument transports the result to pickupCross or energy."
+  },
+  "current_d_one_context": {
+    "source": "GRWTSK.NumberTheory.Moebius.PickupRoughMixedQuotientPrime.dOneFiber_eq_shortShort_add_mixed_add_unit_add_offDiagonal at blob410e4e0cb57a3fdb244f5a3250980874ba12b41b",
+    "role": "An exact rough joint-column decomposition SS+mixed+conditional long-unit square+LLoffDiagonal, retaining masks, selected-divisor denominators, original G, and empty-N convention. It is not identified with endpoint coprimeCellCorrelation.",
+    "postmean_note": "documentation/mathematics/NumberTheory/Moebius/postmean-reciprocal-main-and-remainder.md, blob157470a7fdaad5cfa88c39fdfbb1ef87cd7e5a87; first located via source commit722bcd9aed7e48977f10c8d8fdbaf327feb87701 and now on inspected main8a1d79ba.",
+    "note_scope": "Written only, no new Lean declarations. Original rough source a(n)=mu(n)*1_[(n,Q)=1], left-owned v-boxes(D,2D], inner boxes[E,2E), reciprocal phases h*Z/(r*v*d), r=s orp*s, and complete positive frequency windows. Through sqrt(M), W(v)=kappa*Delta*theta(U)/v+R_C(v); E_low=O_epsilon(M^(5/6+epsilon)) is a paid proper-region remainder.",
+    "note_unpaid": "The reciprocal main kappa*Delta*theta(U)*theta(sqrt(M)) and the entire high region n>sqrt(M) remain unpaid. No favorable sign or source/grid identification is supplied.",
+    "bridge_status": "No proved source comparison connects the rough four-term moment or reciprocal-main profile to the actual endpoint K_N/gcd correlation. This target invokes neither as an arithmetic estimate."
+  },
+  "next_quantitative_obstruction": {
+    "quantity": "M=2^j; Q_j(d)=sum_{M<=N<2*M,5*d<=N}coprimeCellCorrelation(N,d). The retained aggregate is sum_{1<=d<=(2*M-1)/5}mu(d)^2*Q_j(d).",
+    "first_estimate": "Prove a genuine one-sided rate bound for the actual retained endpoint d=1 signed coprime off-diagonal correlation at one fixed0<rho<1, with constant independent of j. No such bound is supplied.",
+    "uniformity": "A d=1 estimate alone does not control the growing d-sum. A complete-rate argument needs a proved aggregate cancellation estimate or per-d one-sided budgets summable uniformly in j for the d-restricted actual source and exact kernel. No new conditional RH wrapper is added.",
+    "rate_status": "No growth exponent improves and (A) remains open."
+  },
+  "physical_frontier": "The physical Yang-Mills regulator carrier/inner product/Hamiltonian or form domain/ground energy/entire zero-sector are still unconstructed in the inspected proposal. This arithmetic bound supplies no physical m>0 or cross-target bridge. No generic operator theorem is added.",
+  "acceptance_status": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "overall": "SOURCE_PROOF_CANDIDATES_ACCEPTANCE_PENDING"
+  },
+  "required_acceptance": [
+    "Compile both exact new source modules and their complete actual imported closure in the pinned toolchain and package revisions.",
+    "Fresh kernel replay bound to actual compiled source/dependency bytes; determine checker CLI from the exact toolchain.",
+    "Elaborated transitive axiom and hypothesis audit including private/generated/opaque dependencies, the finite source coefficient and gcd identities; reject sorryAx,new research axioms,unauthorized native trust,omitted imports or weakened hypotheses.",
+    "Boundary controls N=1,j=0; positive gcd labels; zero Mobius coefficients; N<2d, N=2d, N<3d, N=3d, N=4d, strict N<5d and retained N=5d; both ordered orientations; exact six-pair count; full N-label bound; no endpoint error double charge."
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proposed_compile_commands": [
+    "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupCellKernelUpperBound",
+    "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupGcdRemovedBudget"
+  ],
+  "publication_scope": "Upload exact source/target blobs for human recovery/integration only. No Git commit/ref/main publication,push retry,remote proof execution,dependency migration,root promotion or manuscript edit.",
+  "provenance": "Elementary new deductions from maintained source identities and pinned Mathlib arithmetic/order APIs. Upstream attribution is preserved. No external research theorem is imported as accepted.",
+  "integration_base_math_commit": "f2141d9463c0780610a21d3903d20376e62098dc",
+  "integration_note": "Recovered exact mathematical source candidates from issue 1437. Original source/dependency pins retain their historical scope. Source publication does not establish compilation, fresh kernel replay or transitive axiom audit."
+}
