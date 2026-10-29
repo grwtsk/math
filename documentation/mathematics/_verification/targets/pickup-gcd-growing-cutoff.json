@@ -1,0 +1,272 @@
+{
+  "schema_version": "1",
+  "attribution": "grwtsk contributors",
+  "role": "static mathematical acceptance target; not an execution receipt",
+  "base_math_commit": "4b0ff1e76e1b2b9b295562ca8554d4748249eef2",
+  "base_tree": "2a2e5dd6ffa99ab0dba6c32efac383936066aa8d",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "sources": [
+    {
+      "path": "GRWTSK/Analysis/Series/ReciprocalCubeTail.lean",
+      "module": "GRWTSK.Analysis.Series.ReciprocalCubeTail",
+      "git_blob": "8322f0df040049d5eb162320e5adf91ded63571f",
+      "sha256": "747d1d68c4df224f5fd720f062e971e7702074025e4ee22a2f0ca5d91c19f821",
+      "declarations": [
+        "GRWTSK.Analysis.Series.ReciprocalCubeTail.reciprocal_cube_le_square_difference",
+        "GRWTSK.Analysis.Series.ReciprocalCubeTail.sum_shifted_reciprocal_cube_le",
+        "GRWTSK.Analysis.Series.ReciprocalCubeTail.sum_Icc_reciprocal_cube_le"
+      ],
+      "direct_imports": [
+        "Mathlib.Algebra.BigOperators.Intervals",
+        "Mathlib.Data.Real.Basic",
+        "Mathlib.Tactic.FieldSimp",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring",
+        "Mathlib.Tactic.NormNum",
+        "Lean.Elab.Tactic.Omega",
+        "Mathlib.Tactic.Positivity"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/PickupGcdRowTail.lean",
+      "module": "GRWTSK.NumberTheory.Moebius.PickupGcdRowTail",
+      "git_blob": "cd59e9782ac1bf5076c1859ecedcde1a9d5896f2",
+      "sha256": "24eec020eff9788f5053941c7d588b917fc9c4e8fc9e89d423f5f05fec9a9ce3",
+      "declarations": [
+        "GRWTSK.NumberTheory.Moebius.PickupGcdRowTail.cellPairKernel_le_four_div_mul",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdRowTail.gcdCellBlock_eq_quotient_inventory",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdRowTail.gcdCellBlock_abs_le_cubic_row_budget"
+      ],
+      "direct_imports": [
+        "GRWTSK.NumberTheory.Moebius.PickupGcdOuterSector",
+        "GRWTSK.NumberTheory.Moebius.PickupCellKernelUpperBound"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/PickupGcdGrowingCutoff.lean",
+      "module": "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff",
+      "git_blob": "6ae05eeddd7957005c90e7523971e454b288d485",
+      "sha256": "7ceaf0d525ab8e37f06cc0917ac723bbf7be113473b6c54081335b7c24c276b3",
+      "declarations": [
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdCellHead",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdCellTail",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdCellTailMass",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdCellHead_eq_sum_Icc_min",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdCellTail_eq_sum_Icc",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdCellTailMass_eq_sum_Icc",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.birthExpression_eq_head_add_tail",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdCellHead_eq_squarefree_correlation",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.abs_gcdCellTail_le_mass",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdCellTailMass_le",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdOctaveHead",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdOctaveTail",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdOctaveTailMass",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.dyadic_increment_eq_head_add_tail",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.endpoint_increment_eq_head_add_tail",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdOctaveHead_eq_squarefree_correlation",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.gcdOctaveTailMass_le",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.sum_octave_proper_gcd_abs_le",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.abs_gcdOctaveTail_le_mass",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.abs_endpoint_increment_sub_head_le"
+      ],
+      "direct_imports": [
+        "GRWTSK.NumberTheory.Moebius.PickupGcdRowTail",
+        "GRWTSK.NumberTheory.Moebius.PickupOctaveGcdCorrelation",
+        "GRWTSK.Analysis.Series.ReciprocalCubeTail"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/Moebius/PickupGcdTailCutoff.lean",
+      "module": "GRWTSK.NumberTheory.Moebius.PickupGcdTailCutoff",
+      "git_blob": "5be9734bdbf756986e6b5929df36f85900d51ff3",
+      "sha256": "48878beaf50299f851f11fad74a18671cddef4c5bb9eaa322ee69de83768ddbd",
+      "declarations": [
+        "GRWTSK.NumberTheory.Moebius.PickupGcdTailCutoff.threeQuarterGcdCutoff",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdTailCutoff.one_le_threeQuarterGcdCutoff",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdTailCutoff.threeQuarterGcdCutoff_budget",
+        "GRWTSK.NumberTheory.Moebius.PickupGcdTailCutoff.abs_endpoint_increment_sub_threeQuarter_head_le"
+      ],
+      "direct_imports": [
+        "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff",
+        "Mathlib.Algebra.Order.Floor.Semiring",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+      ]
+    }
+  ],
+  "base_dependency_blobs": {
+    "AGENTS.md": "5d88e538218d70fe782f268a631b26132f59e295",
+    "lean-toolchain": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lakefile.toml": "7cac6bef50ace37093759b857409ba65f65d118d",
+    "lake-manifest.json": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+    "GRWTSK/NumberTheory/Moebius/PickupCellKernelUpperBound.lean": "4e26bf20380d9f66a59d015301ffdfbb16bb9f96",
+    "GRWTSK/NumberTheory/Moebius/PickupOctavePairKernel.lean": "1eb0fecbbe5764850e3fd390e5f6d1eef39b4f7c",
+    "GRWTSK/NumberTheory/Moebius/PickupGcdOuterSector.lean": "6e6d522eaf79f5a94288e648bb83044b5266d46d",
+    "GRWTSK/NumberTheory/Moebius/PickupGcdReindex.lean": "c131938102b13b71fa352a9a4dca811a4dafa981",
+    "GRWTSK/NumberTheory/Moebius/PickupGcdSupport.lean": "50163f7269e60d2ff4a7e80be7230c540f8a9844",
+    "GRWTSK/NumberTheory/Moebius/PickupOctaveGcdCorrelation.lean": "c96ea058c4f5542e1c035ce4efa16508a43461a9",
+    "GRWTSK/NumberTheory/Moebius/PickupDyadicIncrement.lean": "6f58fe61f3e1af3f007c80650e12e7515f426ff5",
+    "GRWTSK/NumberTheory/Moebius/PickupDyadicEndpoint.lean": "53a33d37efd54fdff10aed1b05276b89dd4ddadc",
+    "GRWTSK/NumberTheory/Moebius/PickupEndpointQuadrature.lean": "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c",
+    "GRWTSK/NumberTheory/Moebius/PickupRoughMixedQuotientPrime.lean": "e70f066d7b1983d44d752fd13a6fea3c7dd65724",
+    "documentation/mathematics/NumberTheory/Moebius/rough-squarefree-count-tail.md": "ed01bb44c3e8e67f80a5c06156c46bf474d1f421",
+    "documentation/mathematics/NumberTheory/Moebius/upper-band-gram-mixed-variation.md": "6e6023af909347e194d1297aea914a69245be4d7",
+    "documentation/mathematics/NumberTheory/Moebius/postmean-reciprocal-main-and-remainder.md": "157470a7fdaad5cfa88c39fdfbb1ef87cd7e5a87"
+  },
+  "exact_targets": [
+    {
+      "declaration": "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.endpoint_increment_eq_head_add_tail",
+      "statement": "For all j,D:Nat: DeltaS_j=H_D(j)+T_D(j), with the actual endpoint increment, original gcdCellBlock rows, H at1<=d<=min(D,N), T atD<d<=N, M=2^j and M<=N<2M. No sign or cancellation premise."
+    },
+    {
+      "declaration": "GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff.sum_octave_proper_gcd_abs_le",
+      "statement": "For all j:Nat,D:Nat with1<=D: sum_{k in range(2^j)}sum_{d in Icc(D+1)(2^j+k)}|gcdCellBlock(2^j+k,d)|<=4*(2^j)^2/D^2."
+    },
+    {
+      "declaration": "GRWTSK.NumberTheory.Moebius.PickupGcdTailCutoff.abs_endpoint_increment_sub_threeQuarter_head_le",
+      "statement": "For all j:Nat, M=2^j and D_j=Nat.ceil(M^((3:Real)/4)): |DeltaS_j-H_{D_j}(j)|<=4*sqrt(M). No quantitative head estimate is assumed or supplied."
+    }
+  ],
+  "proof_components": {
+    "actual_kernel": "Use published cellPairKernel_le_birthWidth_div_gcd and actual log-width<=1/N. For1<=d<=n,m<=N:0<=K_N(n,m)<=4/(d*N). Mixed endpoint terms remain in the literal kernel.",
+    "row_inventory": "The original d*a<=N,d*b<=N cutoffs restrict both ordered quotient variables exactly to Icc1(N/d), with no source change. Nat.Coprime a b, a!=b, actual mu(d*a)mu(d*b), zeros, both orderings and all original cutoffs stay literal. No division by a source coefficient occurs.",
+    "row_budget": "Actual |mu|<=1 and at most floor(N/d)^2 ordered terms give |gcdCellBlock N d|<=4*N/d^3, forN>=1,d>=1. Absolute values are used quantitatively only on the designated proper tail.",
+    "finite_telescope": "For x>0:1/(x+1)^3<=1/(2*x^2)-1/(2*(x+1)^2). Finite interval induction gives sum_{d=D+1}^N1/d^3<=1/(2*D^2) forD>=1, includingN<=D. No infinite sum/convergence interchange.",
+    "cell_tail": "Sum the row budgets overD<d<=N to obtain<=2*N/D^2. No sign is asserted for the tail.",
+    "octave_tail": "ForM=2^j>=1, there are exactlyM cellsN=M+k withk<M andN<2M. Each costs<=4*M/D^2; total<=4*M^2/D^2. Proposed constant4 succeeds.",
+    "source_identity": "The exact birthExpression_eq_gcdCellSum, dyadicBirthSum_sub and endpoint_dyadic_eq_birthSum are consumed. No new RH wrapper, approximation identity or hidden arithmetic premise.",
+    "growing_cutoff": "D_j=ceil(M^(3/4))>=1 and>=M^(3/4); sqrt(M)*(M^(3/4))^2=M^2 proves4*M^2/D_j^2<=4*sqrt(M). This pays only the proper tail; it does not improve the rate of the full signed increment.",
+    "zero_cases": "N=1,j=0,empty quotient inventories,d>N,D>=N,D=1,zero Mobius coefficients and diagonal exclusion remain covered. D=0 is excluded only from the tail inequality; exact identities hold for all natural D.",
+    "endpoint_error": "This is an exact endpoint truncation error. No1/(8M) quadrature/source-energy allowance is added; that earlier transport defect remains separate if another source is used."
+  },
+  "current_independent_arithmetic": {
+    "rough_source": "Current PickupRoughMixedQuotientPrime.dOneFiber_eq_unit_add_two_mul_upperTriangle_sectors at blobe70f066d7b1983d44d752fd13a6fea3c7dd65724 is an exact rough-column source decomposition with long unit square and SS/SL/LS/LL ordered sectors. Two omega+1 denominators and frozen G remain. It is not endpoint coprimeCellCorrelation.",
+    "rough_count_note": "Written mathematics only. The proper squarefree rough-count family has coefficient and range hypotheses, and its O(N*T^-20) allowance still has exponent one. No endpoint source identification or fixed-power saving follows.",
+    "gram_note": "Written mathematics only. The complete three-term upper rectangle has a mixed-variation coefficient norm and a bilinear prefix bound. Actual anchored prefixes, signed inclusion-exclusion aggregate and outside regions are unpaid. No endpoint source/grid map is asserted.",
+    "postmean_note": "Written proper lower-region reciprocal-profile remainder is paid at5/6+epsilon; reciprocal main and entire high region remain unpaid. Its boxes/phases are not silently identified with the endpoint cell grid.",
+    "no_concurrent_edits": "All concurrent rough-count, Gram, rough-source and post-mean files were read only and preserved."
+  },
+  "next_quantitative_obstruction": {
+    "exact_surviving_sum": "H_D(j)=sum_{M<=N<2M}sum_{1<=d<=min(D,N)}mu(d)^2 sum_{1<=a,b<=N;gcd(a,b)=1;a!=b;da,db<=N;gcd(d,a)=gcd(d,b)=1}mu(a)mu(b)K_N(da,db). Both quotient orderings and every zero coefficient are retained.",
+    "first_unproved_inequality": "There exists one constantC, independent ofj, such thatH_{ceil((2^j)^(3/4))}(j)<=C*(2^j)^(7/8). No current independent arithmetic supplier proves this signed aggregate estimate.",
+    "failed_absolute_route": "The d=1 term of the row-allowance sum is4*sum_{N=M}^{2M-1}N=6*M^2-2*M. This positive allowance cannot be bounded byC*M^(7/8) for a fixedC. This obstructs using that allowance to estimate the head; it does not refute the actual signed head estimate.",
+    "next_task": "Prove a quantitative allowance for the actual masked coprime rectangular prefixes P_d(A,B)=sum_{a<=A,b<=B;gcd(a,b)=1;a!=b;gcd(a,d)=gcd(b,d)=1}mu(a)mu(b), with a growing-d aggregate strong enough after a proved summation-by-parts identity for the literal endpoint K_N(da,db) to save a fixed power. A d=1 result alone or an unsummed uniform-in-d constant is insufficient.",
+    "rate_status": "The proper tail is now paid by a square-root allowance. No exponent saving for the full signed source, all-positive-rate(A), RH conclusion or corrected theorem scope is claimed."
+  },
+  "physical_frontier": "No actual physical Yang-Mills regulator carrier, inner product, Hamiltonian/form domains, ground energy or entire zero-sector has been constructed in the inspected proposal. This arithmetic tail reduction provides no physical m>0 and no cross-target bridge. The fixed-space bounded-operator limit transport does not supply those objects.",
+  "acceptance_status": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "overall": "SOURCE_PROOF_CANDIDATES_ACCEPTANCE_PENDING"
+  },
+  "required_acceptance": [
+    "Compile all four exact source modules together with their complete actual transitive import closure at the pinned toolchain and complete lock file. No root promotion or dependency migration.",
+    "Fresh kernel replay bound to actual source and dependency bytes; establish exact checker CLI from the pinned toolchain. No earlier-source acceptance transferred.",
+    "Elaborated transitive axiom and hypothesis audit includes all public,private,generated and opaque dependencies. Reject sorryAx,new research assumptions,unauthorized native trust,omitted imports and weakened hypotheses.",
+    "Boundary checks: j=0,N=1,D=1,D>=N,N<d,empty quotient inventories,strict D<d cut,integer floor N/d,both ordered orientations,diagonal exclusion,noncoprime masks,nonsquarefree zero coefficients,and ceiling cutoff."
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proposed_compile_commands": [
+    "lake build --wfail GRWTSK.Analysis.Series.ReciprocalCubeTail",
+    "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupGcdRowTail",
+    "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupGcdGrowingCutoff",
+    "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupGcdTailCutoff"
+  ],
+  "publication_scope": "Upload exact mathematical source and static target blobs for human recovery/integration only. Uploads are unpublished candidates. No Git commit/ref/main mutation,push retry,remote verification dispatch,dependency migration,root import promotion or manuscript edit.",
+  "provenance": "Elementary new finite deductions from the actual maintained endpoint/gcd source and pinned upstream real arithmetic APIs. Upstream author/license attribution retained. No paper-derived research theorem newly imported as accepted.",
+  "guidance_evaluation": "The source-first consumer-backed method isolates a paid proper tail while exposing the unproved signed head. Exact maps prevent concurrent rough/Gram estimates from being applied to a different source by resemblance; this is a proof-scope observation, not a measured model-improvement claim.",
+  "integration_base_math_commit": "469b10d5d82dc24a627573db2c9c556c763ae16f",
+  "integration_dependency_comparison": {
+    "AGENTS.md": {
+      "original_blob": "5d88e538218d70fe782f268a631b26132f59e295",
+      "integration_base_blob": "5d88e538218d70fe782f268a631b26132f59e295",
+      "unchanged": true
+    },
+    "lean-toolchain": {
+      "original_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "integration_base_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+      "unchanged": true
+    },
+    "lakefile.toml": {
+      "original_blob": "7cac6bef50ace37093759b857409ba65f65d118d",
+      "integration_base_blob": "7cac6bef50ace37093759b857409ba65f65d118d",
+      "unchanged": true
+    },
+    "lake-manifest.json": {
+      "original_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+      "integration_base_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupCellKernelUpperBound.lean": {
+      "original_blob": "4e26bf20380d9f66a59d015301ffdfbb16bb9f96",
+      "integration_base_blob": "4e26bf20380d9f66a59d015301ffdfbb16bb9f96",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupOctavePairKernel.lean": {
+      "original_blob": "1eb0fecbbe5764850e3fd390e5f6d1eef39b4f7c",
+      "integration_base_blob": "1eb0fecbbe5764850e3fd390e5f6d1eef39b4f7c",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupGcdOuterSector.lean": {
+      "original_blob": "6e6d522eaf79f5a94288e648bb83044b5266d46d",
+      "integration_base_blob": "6e6d522eaf79f5a94288e648bb83044b5266d46d",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupGcdReindex.lean": {
+      "original_blob": "c131938102b13b71fa352a9a4dca811a4dafa981",
+      "integration_base_blob": "c131938102b13b71fa352a9a4dca811a4dafa981",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupGcdSupport.lean": {
+      "original_blob": "50163f7269e60d2ff4a7e80be7230c540f8a9844",
+      "integration_base_blob": "50163f7269e60d2ff4a7e80be7230c540f8a9844",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupOctaveGcdCorrelation.lean": {
+      "original_blob": "c96ea058c4f5542e1c035ce4efa16508a43461a9",
+      "integration_base_blob": "c96ea058c4f5542e1c035ce4efa16508a43461a9",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupDyadicIncrement.lean": {
+      "original_blob": "6f58fe61f3e1af3f007c80650e12e7515f426ff5",
+      "integration_base_blob": "6f58fe61f3e1af3f007c80650e12e7515f426ff5",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupDyadicEndpoint.lean": {
+      "original_blob": "53a33d37efd54fdff10aed1b05276b89dd4ddadc",
+      "integration_base_blob": "53a33d37efd54fdff10aed1b05276b89dd4ddadc",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupEndpointQuadrature.lean": {
+      "original_blob": "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c",
+      "integration_base_blob": "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c",
+      "unchanged": true
+    },
+    "GRWTSK/NumberTheory/Moebius/PickupRoughMixedQuotientPrime.lean": {
+      "original_blob": "e70f066d7b1983d44d752fd13a6fea3c7dd65724",
+      "integration_base_blob": "155c57852d8b9d9fd91cc91a97feffec1a103b6b",
+      "unchanged": false
+    },
+    "documentation/mathematics/NumberTheory/Moebius/rough-squarefree-count-tail.md": {
+      "original_blob": "ed01bb44c3e8e67f80a5c06156c46bf474d1f421",
+      "integration_base_blob": "ed01bb44c3e8e67f80a5c06156c46bf474d1f421",
+      "unchanged": true
+    },
+    "documentation/mathematics/NumberTheory/Moebius/upper-band-gram-mixed-variation.md": {
+      "original_blob": "6e6023af909347e194d1297aea914a69245be4d7",
+      "integration_base_blob": "6e6023af909347e194d1297aea914a69245be4d7",
+      "unchanged": true
+    },
+    "documentation/mathematics/NumberTheory/Moebius/postmean-reciprocal-main-and-remainder.md": {
+      "original_blob": "157470a7fdaad5cfa88c39fdfbb1ef87cd7e5a87",
+      "integration_base_blob": "157470a7fdaad5cfa88c39fdfbb1ef87cd7e5a87",
+      "unchanged": true
+    }
+  },
+  "integration_note": "Exact mathematical source bytes recovered from issue 1438. Original baseline pins retain their historical scope. Compilation, fresh kernel replay and transitive axiom audit remain NOT_RUN; publication is separate from acceptance."
+}
