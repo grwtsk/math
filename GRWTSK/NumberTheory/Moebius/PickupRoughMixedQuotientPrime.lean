@@ -379,6 +379,80 @@ theorem longLong_unit_term (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) 
   simp only [sourceCoefficient, div_eq_mul_inv, mul_inv_rev]
   ring
 
+/-- The signed LL remainder off the quotient diagonal. All original column
+masks and both selected-divisor denominator factors are retained. -/
+def longLongOffDiagonal (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 ∧ q ≠ r then
+      rough P q * longColumn P N L G q * (rough P r * longColumn P N L G r) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- At N=0 the complete LL inventory is empty. -/
+theorem longLongCoprime_zero (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → ℝ) :
+    longLongCoprime P 0 L G = 0 := by
+  simp [longLongCoprime]
+
+/-- At N=0 the off-diagonal LL inventory is empty as well. -/
+theorem longLongOffDiagonal_zero (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → ℝ) :
+    longLongOffDiagonal P 0 L G = 0 := by
+  simp [longLongOffDiagonal]
+
+/-- Exact LL unit/off-diagonal split for every N, including N=0.
+The unit square occurs only when the original closed inventories contain 1.
+This is an identity of signed sums, not a bound on the remainder. -/
+theorem longLongCoprime_eq_unit_add_offDiagonal (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) :
+    longLongCoprime P N L G =
+      (if 1 ≤ N then (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0) +
+        longLongOffDiagonal P N L G := by
+  let f : ℕ → ℕ → ℝ := fun q r =>
+    rough P q * longColumn P N L G q * (rough P r * longColumn P N L G r) /
+      (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1))
+  have hsplit (q r : ℕ) :
+      (if Nat.gcd q r = 1 then f q r else 0) =
+        (if q = 1 ∧ r = 1 then f 1 1 else 0) +
+          (if Nat.gcd q r = 1 ∧ q ≠ r then f q r else 0) := by
+    by_cases hg : Nat.gcd q r = 1
+    · by_cases he : q = r
+      · obtain ⟨hq, hr⟩ := (d_one_diagonal_iff q r).mp ⟨hg, he⟩
+        simp [hq, hr]
+      · have hu : ¬(q = 1 ∧ r = 1) := by
+          rintro ⟨rfl, rfl⟩
+          exact he rfl
+        simp [hg, he, hu]
+    · have hu : ¬(q = 1 ∧ r = 1) := by
+        rintro ⟨rfl, rfl⟩
+        exact hg (by decide)
+      simp [hg, hu]
+  have hsingle (q r : ℕ) :
+      (if q = 1 ∧ r = 1 then f 1 1 else 0) =
+        if q = 1 then (if r = 1 then f 1 1 else 0) else 0 := by
+    by_cases hq : q = 1 <;> by_cases hr : r = 1 <;> simp [hq, hr]
+  have hunit :
+      (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+        if q = 1 ∧ r = 1 then f 1 1 else 0) =
+        if 1 ≤ N then f 1 1 else 0 := by
+    simp_rw [hsingle]
+    by_cases hN : 1 ≤ N <;> simp [Finset.sum_ite_irrel, Finset.mem_Icc, hN]
+  have hf : f 1 1 = (sourceCoefficient P N 1 * longColumn P N L G 1)^2 := by
+    simpa only [if_pos (by decide : Nat.gcd 1 1 = 1)] using longLong_unit_term P N L G
+  change (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 then f q r else 0) =
+      (if 1 ≤ N then (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0) +
+        ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+          if Nat.gcd q r = 1 ∧ q ≠ r then f q r else 0
+  simp_rw [hsplit]
+  simp_rw [Finset.sum_add_distrib]
+  rw [hunit, hf]
+
+/-- Positive-horizon form of the same exact signed LL decomposition. -/
+theorem longLongCoprime_eq_unit_add_offDiagonal_of_one_le
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) (hN : 1 ≤ N) :
+    longLongCoprime P N L G =
+      (sourceCoefficient P N 1 * longColumn P N L G 1)^2 +
+        longLongOffDiagonal P N L G := by
+  rw [longLongCoprime_eq_unit_add_offDiagonal, if_pos hN]
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
