@@ -138,12 +138,13 @@ theorem boundary_mass (width : ℕ → ℕ) (j t : ℕ) :
     apply Finset.sum_congr rfl
     intro h hh
     simp only [if_pos hh]
-  · simp [boundaryShifts, hb, exceptionalKernelMass]
+  · simp only [boundaryShifts, if_neg hb]
+    simp [exceptionalKernelMass]
 
 /-- Exact finite tail-length sum. L=0 is included; no division by L occurs. -/
 theorem sum_tail_lengths {Y L : ℕ} (hL : L ≤ Y) :
     (∑ t ∈ Finset.Ico (Y - L) Y,
-      (Y : ℝ) - ((t + 1 : ℕ) : ℝ)) = (L : ℝ) * ((L : ℝ) - 1) / 2 := by
+      ((Y : ℝ) - ((t + 1 : ℕ) : ℝ))) = (L : ℝ) * ((L : ℝ) - 1) / 2 := by
   rw [Finset.sum_Ico_eq_sum_range]
   have hlen : Y - (Y - L) = L := by omega
   rw [hlen]
@@ -197,7 +198,7 @@ theorem boundary_weight_sum_le_square (width : ℕ → ℕ) (j : ℕ)
           ((t + 1 : ℕ) : ℝ) * normalizedSignedAbelShiftKernelMass j t := by
       rw [← Finset.sum_filter, hset, Finset.sum_union hdis]
     _ ≤ (∑ t ∈ Finset.range L, ((t + 1 : ℕ) : ℝ)) +
-        ∑ t ∈ Finset.Ico (Y - L) Y, (Y : ℝ) - ((t + 1 : ℕ) : ℝ) := by
+        ∑ t ∈ Finset.Ico (Y - L) Y, ((Y : ℝ) - ((t + 1 : ℕ) : ℝ)) := by
       apply add_le_add
       · apply Finset.sum_le_sum
         intro t _
@@ -263,7 +264,8 @@ theorem bulkPacket_eq_middle_sum (width : ℕ → ℕ) (j : ℕ) :
     intro h hh
     simp only [if_pos hh]
   · have hm : width j ≤ t ∧ t < 2 ^ (j + 1) - width j := by omega
-    simp [regularPrefixPairing, boundaryShifts, hb, hm, kernelPrefixPairing]
+    simp only [if_pos hm, regularPrefixPairing, boundaryShifts, if_neg hb]
+    simp [kernelPrefixPairing]
 
 /-- Canonical integer square-root collar; no floating-point width is used. -/
 def sqrtWidth (j : ℕ) : ℕ := Nat.sqrt (2 ^ (j + 1))
