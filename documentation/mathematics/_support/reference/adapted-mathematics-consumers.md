@@ -106,3 +106,18 @@ while native4.36.0-rc1 compilation, fresh replay, complete axiom and type checks
 remain NOT_RUN. Exact source/types and public attribution are in the canonical
 ledger anchor carleson-fixed-support-varying-rows-20261029. Historical first-wave
 sources/targets remain meaningful at their original pins.
+
+## PFR dense-slice continuation
+
+A finite coset cover now yields a constructed largest slice and an injective
+translation into the same small submodule. The exact slice identity connects B
+to A; |H|<=|A|<2*K^9*|B| quantifies its size without supplying density as a field.
+Repeated cosets cause no problem because only a finite-union upper bound is used.
+Both B-B and B+B stay in H, so the existing Mathlib additive-energy inequality
+gives |B|^4<=|H|*addEnergy(B,B). This adds a genuinely structured energy input.
+
+It is an alternative to the earlier difference-cover route, whose separate
+existential witness is not identified with this H. Neither a <3/2 threshold nor
+an energy assertion for the original A is inferred. Exact types, source/paper
+attribution and remaining root-version boundary are in the canonical ledger
+anchor pfr-dense-submodule-slice-20261029. Native checks remain NOT_RUN.

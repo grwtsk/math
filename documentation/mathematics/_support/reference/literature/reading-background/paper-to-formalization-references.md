@@ -1243,6 +1243,97 @@ The generic `carleson_hunt` endpoint remains excluded because upstream metadata
 reports sorryAx; even the narrower classical source requires local exact audit.
 Local attribution: grwtsk contributors.
 
+<a id="pfr-dense-submodule-slice-20261029"></a>
+
+## PFR: a constructed dense submodule slice with its own additive energy
+
+W. T. Gowers, Ben Green, Freddie Manners and Terence Tao,
+[*On a conjecture of Marton*](https://arxiv.org/abs/2311.05762v2), 2023,
+version2 dated 2023-12-12, is the original exponent-twelve PFR source.
+Jyun-Jie Liao, [*Improved Exponent for Marton's Conjecture in F_2^n*](https://arxiv.org/abs/2404.09639v1),
+2024-04-15 version1, states the exponent-nine refinement with at most 2*K^9
+cosets and subgroup cardinality at most |A|. The pinned upstream
+formalization.yaml blob ddee8cd72f0937e2a9ca349ff3f616b9d31c8be3 maps its
+refined main result to Liao's paper but does not specify an arXiv version;
+the version identities above were independently rechecked, not retroactively
+attributed to that metadata.
+
+Consumed native endpoint: `better_PFR_conjecture` in
+`teorth/pfr@7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f`,
+PFR/RhoFunctional.lean blob af3f89faaf4f12edd2ec9796b93ae77474a99c70.
+Its exact type accepts a finite nonempty set in an arbitrary ZMod2 module;
+no finiteness of the ambient group is assumed by this source interface. The
+paper's finite-vector-space statement and the native type retain their distinct
+source identities. Public upstream bylines and Apache-2.0 obligations remain intact.
+
+For nonempty Finset A with |A+A|<=K|A|, the local construction selects a largest
+slice from the actual finite coset-center cover and translates it into the SAME
+finite submodule H. Overlapping/repeated cosets are permitted by the union bound.
+It constructs nonempty B exactly equal to {b in H | u+b in A}, with
+Nat |H|<=|A|, Real |A|<2*K^(9:Nat)*|B|, and B-B subset H.
+The existing Mathlib additive-energy Cauchy--Schwarz theorem then gives
+Nat |B|^2*|B|^2 <= |H|*Finset.addEnergy B B. Both support and energy use that
+same B and H; no density estimate is left as a free supplied field.
+The general energy helper also covers empty B.
+
+Local source `adapters/pfr/GRWTSK/Combinatorics/DenseSubmoduleSlice.lean`, commit `9a913f5c7e184d75e8701096c5c5a59b144c2793`, blob
+`83d53ed5afb4254d155a461eeb3bc989498ed554`. Fully qualified declarations:
+
+- `GRWTSK.Combinatorics.DenseSubmoduleSlice.translated_slice_of_finite_cover`
+- `GRWTSK.Combinatorics.DenseSubmoduleSlice.card_pow_four_le_submodule_card_mul_energy`
+- `GRWTSK.Combinatorics.DenseSubmoduleSlice.dense_submodule_slice_of_small_doubling`
+
+Actual local uses are the finite-set small-doubling and energy families:
+GRWTSK/Combinatorics/VerySmallDoubling.lean blob8618c51d439b44b5fe633a9c0bb8e0b2a503be13
+and GRWTSK/Combinatorics/AdditiveEnergy.lean blobbc60e7dd0bc91351780ecc1a0e2b7176fda530ed,
+at e34255f988c9f729858c94d28be36f264021f168. The pinned Mathlib Energy API is
+consumed directly, without a root import or duplicate energy definition.
+This is an alternative structural route to the earlier difference-cover
+consumer, not a claim that its existential H is the same witness as a different
+call, nor a supplied <3/2 doubling hypothesis or energy bound for A itself.
+
+Classification: three SOURCE_PROOF_CANDIDATE mathematical consumers.
+Native Lean 4.36.0-rc2 / Mathlib8fe7ce475b056f0b266d7107893f2c4d772c712f remain
+isolated. Compilation, fresh independent replay, complete transitive axiom audit
+and three expected-type checks are NOT_RUN. Source/API review found no concrete
+issue; it is not proof acceptance. Exact target/profile/TOML: `documentation/mathematics/_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.*`.
+A root 4.34.1 version-compatible integration remains unsupplied. Local attribution:
+grwtsk contributors.
+
+<a id="openai-weighted-model-four-interfaces-20261029"></a>
+
+## Four exact weighted-model interfaces at the historical source
+
+An additional complete-module/type-consumer target, `documentation/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/openai-weighted-model-growth-interfaces-20261029.*`, keeps the original
+math 64d4c9feada934cc3a7cca3b00e049a52704ce6a input exactly: source
+GRWTSK/NumberTheory/Moebius/MertensSignedAbelCorrelationEnvelope.lean,
+blob c948d147ed5667683ed9088c0a648636d6c2a447,
+SHA256 03c09b8bc64a3aba4235284ed605c4fa4bd06f5be42c389e943bbe1b18e6052d.
+It requires all four originally selected roots in the complete compiler-owned
+census and four literal expected types. Historical profiles and outcomes remain
+unchanged; this is an additional verification predicate, not a native receipt.
+
+The types preserve the actual normalized signed-Abel kernel, retained depth t,
+ordinary prefix t+1, shift range Ico1(2^(j+1)), nonnegative B, signed model G,
+2B residual cost and the packet's separate boundary cost 2. The RH interface keeps
+G/E/B fixed before `for every delta>0, there exists C>=0, for every scale j`.
+Neither an actual per-depth Mobius residual supplier, actual weighted residual
+bound nor signed-model-plus2B all-exponent growth is supplied. Fixed-shift or
+Liouville results provide none of these bridges automatically. Existing paper
+entries and OpenAI public attribution/license boundaries remain unchanged.
+
+The current MSC source at e34255f988c9f729858c94d28be36f264021f168 is
+`GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MertensSignedAbelCorrelationEnvelope.lean`,
+blob 5cf2a19415a7505dffce69800b4e6cea4a60ac14. Its displayed source differs in
+two imports; its namespace/proof text remains unchanged. That comparison does
+not certify its different bytes or dependency closure. This profile remains
+bound to64d4c9/c948d147. Native compilation, fresh independent replay, complete
+axiom audit and expected-interface checks are NOT_RUN. These conditional GRWTSK
+interfaces are separate from the actual OAI/Liouville patched-PNT supply blocker.
+A fresh source/producer/policy registry is required after supported toolchain
+restoration, with existing owner/resource limits preserved. Local attribution:
+grwtsk contributors.
+
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 
 
