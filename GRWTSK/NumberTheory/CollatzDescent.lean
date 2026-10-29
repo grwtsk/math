@@ -41,7 +41,7 @@ def PositiveDescent : Prop :=
 /-- Concatenating two finite orbit segments preserves the starting value. -/
 theorem orbit_add (a b n : Nat) : orbit (a + b) n = orbit b (orbit a n) := by
   induction a generalizing n with
-  | zero => rfl
+  | zero => simp only [Nat.zero_add, orbit]
   | succ a ih =>
     simp only [Nat.succ_add, orbit]
     exact ih (step n)
@@ -59,7 +59,7 @@ theorem reachesOne_one : ReachesOne 1 := ⟨0, rfl⟩
 theorem step_double (n : Nat) : step (2 * n) = n := by
   have he : (2 * n) % 2 = 0 := by omega
   unfold step
-  rw [if_pos he]
+  rw [ite_eq_left he]
   omega
 
 /-- Convergence of an input implies convergence of its double. -/
@@ -84,7 +84,7 @@ theorem reachesOne_pow_two_mul (k n : Nat) (h : ReachesOne n) :
   | zero => simpa only [Nat.pow_zero, Nat.one_mul] using h
   | succ k ih =>
     have he : 2 ^ (k + 1) * n = 2 * (2 ^ k * n) := by
-      simp only [Nat.pow_succ, Nat.mul_assoc, Nat.mul_comm, Nat.mul_left_comm]
+      simp only [Nat.pow_succ, Nat.mul_comm, Nat.mul_left_comm]
     rw [he]
     exact reachesOne_double (2 ^ k * n) ih
 
