@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 993
+parent_revision = "33d724a35efcb5b5c1f42aac27a94dc599a42e49"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarAddCircleKernel"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarAddCircleKernel.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_theorems = ["unitAddCircle_coe_eq_iff_integer", "polar_phase_eq_iff_unitAddCircle_eq", "polar_eq_implies_unitAddCircle_eq"]
+hostile_controls = ["integer_winding_sign_orientation", "nonzero_radius_required", "no_real_angle_injectivity", "no_arbitrary_addcircle_section", "correct_two_pi_normalization", "no_unproved_continuity_or_disk_homeomorphism"]
+open_obligations = ["pinned_mathlib_quotient_api_elaboration", "continuous_unit_circle_polar_map", "standard_cone_quotient_descent", "cone_fiber_iff", "disk_surjectivity", "cone_disk_homeomorphism"]
+lean_run = false
+kernel_audited = false

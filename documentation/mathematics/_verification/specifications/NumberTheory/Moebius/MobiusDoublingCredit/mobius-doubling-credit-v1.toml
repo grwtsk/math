@@ -1,0 +1,63 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "mobius-doubling-credit-v1"
+owner_repository = "grwtsk/math"
+status = "SOURCE_PROOF_CANDIDATES_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.MobiusDoublingCredit"
+build_target = "GRWTSK.NumberTheory.Moebius.MobiusDoublingCredit"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_base_revision = "44eac245cce07a1290ae01167f08673500da6a9c"
+new_module_path = "GRWTSK/NumberTheory/Moebius/MobiusDoublingCredit.lean"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_EXTERNAL_IMMUTABLE_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_exact_declaration_types = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+public_root_modified = false
+arithmetic_supplier_closed = false
+new_paid_damping = false
+riemann_hypothesis_claimed = false
+weighted_mertens_mean_square_assumed = false
+unconditional_arithmetic_increment = "exact H+credit=remainder; nonnegative credit is at most twice a shifted harmonic sum, hence subpower"
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.MobiusDoublingCredit"
+authored_declaration_count = 12
+definition_count = 2
+theorem_script_count = 10
+private_helper_count = 0
+
+[acceptance]
+selected_declarations = [
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.signedMixedPrefix_add_doublingCredit",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.triangularDoublingCredit_nonneg",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.neg_mertensDoublingPairPacket_le_firstCutoff",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.nat_mul_endpointGap_le_sqrt_step",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.sum_nat_mul_endpointGap_le_sqrt",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.endpointGap_mul_sqrt_le_succ_inv",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.doublingCreditRow_le",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.triangularDoublingCredit_le_harmonic",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.triangularDoublingCredit_le_subpower",
+  "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.doublingRemainderUpper_of_signedPrefixUpper",
+]
+unresolved_premises = [
+  "uniform subpower upper bound for the COMPLETE signed triangularDoublingRemainder at every horizon",
+  "no estimate on the complement follows merely from nonpositivity of the removed packet",
+  "no dilation-to-additive-fixed-shift or Parseval-to-zero-frequency adapter is assumed",
+]
+source_zero_index_explicitly_controlled = true
+positive_kernel_used_only_at_positive_source_indices = true
+remaining_coefficient_diagonal_preserved = true
+conditional_bridge = "H_N+credit_N=remainder_N with 0<=credit_N<=2*sum(k<N,1/(k+2)); fixed positive exponent upper bounds transfer both ways with explicit constants"

@@ -1,0 +1,84 @@
+# P0 source-pinned Lean verification request only; no execution or receipt.
+schema_version = "0.1"
+request_id = "goldbach-nonunit-prime-log-transfer-20261025"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "5773ef6015c52b0f764130c9becb35ad77b52154"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeTransfer.lean"
+source_blob = "7f747336b0ff7fe40747de338d81739cc50a0ad0"
+supplier_commit = "8b6e19fb3398d86218954fe68b3fbfecc49a8ded"
+supplier_path = "GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeBudget.lean"
+supplier_blob = "ec40db9ca79aefab8f6727c21b8b70e03d4b9bda"
+support_path = "GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeSupport.lean"
+support_blob = "57927ae5bb6e52c03456fb7930c3ea9794db3dfb"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_log_path = "Mathlib/Analysis/SpecialFunctions/Log/Basic.lean"
+mathlib_log_blob = "2776daac653ac8de9603408765b37a02d63f3e55"
+mathlib_prime_path = "Mathlib/Data/Nat/Prime/Defs.lean"
+mathlib_prime_blob = "5a4bb9cd22784d65a0ade53b88c3641f38c19f85"
+mathlib_zmod_path = "Mathlib/Data/ZMod/Basic.lean"
+mathlib_zmod_blob = "9049c491aa452af92b1833707270bc914c7d0d4e"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+mathematical_class = "finite_arithmetic_source_candidate"
+paper_derived = false
+exact_hypotheses = "q N p : Nat and p in finitePrimeDivisors q N for pointwise log; q N : Nat for finite sum and prime-only mass, with no q != 0 or N >= 2 restriction"
+conclusion = "nonunitPrimeMass q N <= (finitePrimeDivisorCount q N : Real) * Real.log (N : Real), all natural q,N including 0,1"
+discharged_premises = [
+ "hsupport: forall p, Nat.Prime p -> (not IsUnit (p : ZMod q) iff p divides q)",
+ "hlog: forall p in finitePrimeDivisors q N, Real.log p <= Real.log N",
+]
+preserved_conditional_interfaces = [
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport.nonunitPrimeMass_eq_primeDivisorSum",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeBudget.primeDivisorLogSum_le_count_mul_log",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeTransfer.nonunitPrimeMass_le_count_mul_log",
+]
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeBudget.primeDivisorLog_le_log",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeBudget.primeDivisorLogSum_le_count_mul_log_unconditional",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeTransfer.nonunitPrimeMass_le_count_mul_log_unconditional",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeBudget",
+ "Mathlib.Tactic",
+]
+known_local_dependency_order = [
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitSplit",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeBudget",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeTransfer",
+]
+upstream_apis_static_inspected = [
+ "Real.log_le_log (hx : 0 < x) (hxy : x <= y)",
+ "Nat.Prime.pos",
+ "Finset.mem_filter",
+ "Finset.mem_range",
+ "ZMod.isUnit_prime_iff_not_dvd",
+]
+missing_checks = [
+ "Full transitive local source and Mathlib closure inventory",
+ "Pinned compilation/elaboration of dependency chain at source commit",
+ "Review Finset.mem_filter destructuring and exact_mod_cast at pinned Lean",
+ "Independent fresh kernel checking on all new declarations and inherited dependencies",
+ "Full transitive #print axioms audit of all new declarations and downstream consumers",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = 5773ef6015c52b0f764130c9becb35ad77b52154 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeSupport.lean)\" = 57927ae5bb6e52c03456fb7930c3ea9794db3dfb && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeBudget.lean)\" = ec40db9ca79aefab8f6727c21b8b70e03d4b9bda && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeTransfer.lean)\" = 7f747336b0ff7fe40747de338d81739cc50a0ad0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+support_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport"
+supplier_compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeBudget"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeTransfer"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeTransfer.lean"
+fresh_kernel = "PENDING_SUPPORTED_CHECKER_CAPABILITY"
+transitive_axioms = "PENDING_ACTUAL_COMPILE_AND_AXM_AUDIT"
+expected_compile_exit_code = 0
+expected_elaboration_exit_code = 0

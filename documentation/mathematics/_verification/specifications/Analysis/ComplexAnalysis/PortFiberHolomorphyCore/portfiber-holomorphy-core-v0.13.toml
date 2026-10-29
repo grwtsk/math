@@ -1,0 +1,325 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "portfiber-holomorphy-core-v0.13"
+owner_repository = "grwtsk/math"
+issues = [40, 99, 156, 157, 159, 177, 202, 204, 207, 216, 230]
+root_module = "GRWTSK.Interfaces.PortFiberHolomorphyCore"
+build_target = "GRWTSK.Interfaces.PortFiberHolomorphyCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "4aab069dad5b8ef5a07d0850c920a4bfda596aeb"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.Basic"
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.Path"
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.MultiCertificate"
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.Certified"
+[[modules]]
+name = "GRWTSK.Topology.PortFiber.Gluing"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.PortFiberHolomorphy"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.HolomorphicRestriction"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.HolomorphicSectionRing"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.HolomorphicEvaluationSpectrum"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.HolomorphicEvaluationTopology"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.HolomorphicRestrictionGluing"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.HolomorphicOpenCoverGluing"
+[[modules]]
+name = "GRWTSK.Topology.Algebra.PortFiberRing"
+[[modules]]
+name = "GRWTSK.Topology.Algebra.PrimeSpectrumPort"
+[[modules]]
+name = "GRWTSK.AlgebraicGeometry.AffineSpecPort"
+[[modules]]
+name = "GRWTSK.AlgebraicGeometry.AffineStructureSheafPort"
+[[modules]]
+name = "GRWTSK.AlgebraicGeometry.AnalyticAffineBridge"
+[[modules]]
+name = "GRWTSK.AlgebraicGeometry.AnalyticAffineTopology"
+[[modules]]
+name = "GRWTSK.AlgebraicGeometry.AnalyticAffineGluing"
+[[modules]]
+name = "GRWTSK.Logic.SimultaneousProofArchitecture"
+[[modules]]
+name = "GRWTSK.Logic.SimultaneousProofPortfolio"
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture"
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PortFiberLocalToGlobal"
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PortFiberTheoremPortfolio"
+[[modules]]
+name = "GRWTSK.Interfaces.OptionalAdapterGate"
+[[modules]]
+name = "GRWTSK.Interfaces.OptionalAdapterComposition"
+[[modules]]
+name = "GRWTSK.Interfaces.PortFiberSimultaneousLedger"
+[[modules]]
+name = "GRWTSK.Interfaces.PortFiberPortfolioLedger"
+[[modules]]
+name = "GRWTSK.Interfaces.PortFiberEvaluationTopology"
+[[modules]]
+name = "GRWTSK.Interfaces.PortFiberOpenCoverDescent"
+[[modules]]
+name = "GRWTSK.Analysis.Complex.HolomorphicIndexedCoverGluing"
+[[modules]]
+name = "GRWTSK.AlgebraicGeometry.AnalyticAffineIndexedGluing"
+[[modules]]
+name = "GRWTSK.Interfaces.PortFiberIndexedCoverDescent"
+[[modules]]
+name = "GRWTSK.Interfaces.PortFiberHolomorphyCore"
+
+[[hostile_controls]]
+id = "reject-mismatched-middle-object"
+description = "Typed port and certified-path composition must reject endpoints whose exact middle objects do not agree."
+[[hostile_controls]]
+id = "reject-path-certificate-drop"
+description = "The composite of a certified path must retain every selected composable certificate."
+[[hostile_controls]]
+id = "reject-path-map-drift"
+description = "The fiber map of a composite port must agree with atom-by-atom certified-path evaluation."
+[[hostile_controls]]
+id = "reject-source-name-as-proof"
+description = "Repository, revision, path, and declaration metadata cannot populate a certificate or theorem proof field."
+[[hostile_controls]]
+id = "reject-ring-label-without-ring-hom"
+description = "A ring certificate must reconstruct the exact bundled ring homomorphism on the selected port map; ofHom requires map equality and hom_ofHom retains the supplied homomorphism."
+[[hostile_controls]]
+id = "reject-data-certificate-as-proposition"
+description = "RingCertificate and TopologicalRingCertificate must inhabit Prop when used by ComposableProperty.Holds; bundled homomorphisms are reconstructed from the fixed map and exact ring laws."
+[[hostile_controls]]
+id = "reject-ring-continuity-drift"
+description = "The continuity proof of a topological-ring port must concern the same exact map identified by its ring certificate."
+[[hostile_controls]]
+id = "reject-continuity-as-holomorphy"
+description = "Continuity alone cannot construct a complex differentiability or holomorphic-extension certificate."
+[[hostile_controls]]
+id = "reject-holomorphy-without-domain-map"
+description = "Holomorphic composition and restriction require the exact source-to-middle domain mapping proof."
+[[hostile_controls]]
+id = "reject-ordinary-section-as-holomorphic-section"
+description = "An arbitrary function section cannot inhabit the holomorphic section subring without an ambient differentiability witness."
+[[hostile_controls]]
+id = "reject-holomorphic-subring-closure-gap"
+description = "Zero, one, addition, negation, and multiplication must each preserve the exact holomorphic-extension predicate."
+[[hostile_controls]]
+id = "reject-holomorphic-ring-restriction-drift"
+description = "The holomorphic-section restriction ring homomorphism, continuous map, and forgetful full-section restriction must be the same exact underlying function."
+[[hostile_controls]]
+id = "reject-evaluation-prime-without-holomorphic-ring"
+description = "An evaluation prime must be the kernel of the exact evaluation homomorphism on the holomorphic-section ring."
+[[hostile_controls]]
+id = "reject-evaluation-naturality-drift"
+description = "Pullback of an evaluation prime along restriction must equal evaluation at the same exact included point; continuous_restriction_naturality must retain this equality as a continuous-map square."
+[[hostile_controls]]
+id = "reject-evaluation-map-continuity-by-construction"
+description = "Continuity must follow from section_continuous, preimage_zeroLocus, and pointToSpectrum_continuous, not from the mere existence of the point map."
+[[hostile_controls]]
+id = "reject-continuous-injection-as-homeomorphism"
+description = "pointToSpectrum_injective and pointToSpectrum_continuous do not supply a topological embedding, surjectivity, or equality of analytic and Zariski topologies."
+[[hostile_controls]]
+id = "reject-general-bridge-injectivity"
+description = "Replay HostileFixtures.constantBridge_whole_not_injective: a genuine continuous coordinate-ring bridge can collapse all analytic points."
+[[hostile_controls]]
+id = "reject-coordinate-ring-map-by-metadata"
+description = "A source identity or bridge name cannot create the required ring homomorphism. The polynomial affine-line model must use its actual eval2 construction."
+[[hostile_controls]]
+id = "reject-polynomial-evaluation-drift"
+description = "PolynomialModel.coordinateRingMap_eval must identify evaluation of the constructed holomorphic section with ordinary polynomial evaluation at the exact point."
+[[hostile_controls]]
+id = "reject-polynomial-restriction-drift"
+description = "PolynomialModel.restriction_coordinateRingMap must commute with every exact domain restriction."
+[[hostile_controls]]
+id = "reject-polynomial-model-as-arithmetic-bridge"
+description = "The canonical complex affine-line model does not construct the source-specific arithmetic-to-elliptic map B_n or the Weil comparison."
+[[hostile_controls]]
+id = "reject-analytic-affine-point-map-drift"
+description = "A bridge point map must be the pullback of the exact holomorphic evaluation prime along its coordinate-ring homomorphism."
+[[hostile_controls]]
+id = "reject-analytic-affine-restriction-drift"
+description = "Restricting a domain must preserve the induced source-spectrum point through evaluation naturality."
+[[hostile_controls]]
+id = "reject-analytic-affine-precomposition-variance"
+description = "Precomposing the coordinate ring must act contravariantly on the induced prime-spectrum point map."
+[[hostile_controls]]
+id = "reject-spectrum-variance-reversal"
+description = "A ring homomorphism B to A induces Spec A to Spec B; port types must retain contravariance."
+[[hostile_controls]]
+id = "reject-spectrum-continuity-by-label"
+description = "The induced prime-spectrum map must use PrimeSpectrum.continuous_comap, not a ring-map label alone."
+[[hostile_controls]]
+id = "reject-spectrum-composition-order"
+description = "Composite prime-spectrum maps must follow the reverse order of the exact ring homomorphisms."
+[[hostile_controls]]
+id = "reject-spectrum-as-scheme"
+description = "A continuous spectrum map alone is not a scheme morphism; the affine-scheme profile must carry the actual Mathlib Spec.map."
+[[hostile_controls]]
+id = "reject-affine-scheme-map-drift"
+description = "The affine-scheme point map must agree with PrimeSpectrum.comap for the same ring morphism."
+[[hostile_controls]]
+id = "reject-scheme-composition-order"
+description = "Affine Spec composition must retain contravariant order at scheme and point-map levels."
+[[hostile_controls]]
+id = "reject-global-sections-map-drift"
+description = "The affine global-section port map must be the appTop map of the same Spec.map."
+[[hostile_controls]]
+id = "reject-structure-sheaf-comap-drift"
+description = "The map on open sections must equal StructureSheaf.comap for the same ring morphism and preimage open."
+[[hostile_controls]]
+id = "reject-global-sections-loss-of-original-ring-map"
+description = "Recover the original morphism through the canonical Gamma-Spec arrow isomorphism, not point-map continuity."
+[[hostile_controls]]
+id = "reject-nonlocal-stalk-map"
+description = "Every selected affine Spec stalk map must carry IsLocalHom at the exact point."
+[[hostile_controls]]
+id = "reject-local-holomorphy-as-global-gluing"
+description = "Ordinary function gluing alone supplies no analytic proof. For a binary open cover, global_holomorphic_of_openCover constructs the proof from local holomorphy, exact matching, and IsOpenCover; other cover profiles require their own theorem."
+[[hostile_controls]]
+id = "reject-function-gluing-as-arithmetic-bridge"
+description = "Ordinary function gluing cannot construct an arithmetic-to-elliptic map or source comparison."
+[[hostile_controls]]
+id = "reject-open-target-as-proof-or-refutation"
+description = "TargetDisposition.unresolved_proof? and unresolved_refutation? return none; optional proofs use PLift without creating evidence."
+[[hostile_controls]]
+id = "reject-rh-from-local-family"
+description = "Local theorem portfolios cannot synthesize RH without a target theorem."
+[[hostile_controls]]
+id = "reject-target-failure-erasing-local-proofs"
+description = "Every supplied target disposition must preserve independent local theorem dispositions."
+[[hostile_controls]]
+id = "reject-local-branch-collapse"
+description = "Proved, refuted, conditional, and unresolved local branches remain distinct."
+[[hostile_controls]]
+id = "reject-refuted-branch-erasing-proved-branches"
+description = "Rejecting one application bridge cannot erase unrelated structural or analytic-evaluation proofs."
+[[hostile_controls]]
+id = "reject-historical-branch-reindexing"
+description = "PortFiberEvaluationTopology, PortFiberOpenCoverDescent, and PortFiberIndexedCoverDescent extend portfolios by disjoint sums; original_branch_unchanged and target_unchanged must hold at each extension."
+[[hostile_controls]]
+id = "reject-open-obligation-as-false-or-proved"
+description = "Unresolved arithmetic, source-comparison, and convergence obligations provide neither proof nor refutation."
+[[hostile_controls]]
+id = "reject-local-update-changing-target"
+description = "A local theorem update leaves the terminal RH disposition unchanged."
+[[hostile_controls]]
+id = "reject-stage-as-residual-update"
+description = "A stage cannot alter residuals without an accepted adapter, source compatibility, and a valid named change."
+[[hostile_controls]]
+id = "reject-plan-changing-target-or-portfolio"
+description = "A residual plan cannot modify local theorem or target dispositions."
+[[hostile_controls]]
+id = "reject-untouched-key-drift"
+description = "Untouched residual keys remain exactly unchanged."
+[[hostile_controls]]
+id = "reject-root-import-as-slice-pass"
+description = "A build of GRWTSK cannot substitute for checking the isolated root and every declared module."
+[[hostile_controls]]
+id = "reject-nonopen-cover-promotion"
+description = "IsOpenCover explicitly requires both members to be open in the ambient complex plane. Do not apply this theorem to arbitrary or merely closed covers without a new analytic theorem."
+[[hostile_controls]]
+id = "reject-cover-exhaustion-gap"
+description = "Replay OpenCoverFixtures.empty_domains_do_not_cover. Openness does not supply the exact coverage and inclusion fields of BinaryDomainCover."
+[[hostile_controls]]
+id = "reject-open-cover-overlap-mismatch"
+description = "Replay OpenCoverFixtures.zero_one_do_not_match on the nonempty overlap of the two punctured-plane opens. Local holomorphy and openness cannot replace matching."
+[[hostile_controls]]
+id = "reject-global-holomorphy-as-input"
+description = "holomorphicGlueCertificate_of_openCover must derive its global proof from local witnesses and openness; it may not assume its own conclusion or change the historical ordinary glue."
+[[hostile_controls]]
+id = "reject-descent-source-ring-mismatch"
+description = "Both local Bridge maps must have the same exact source CommRingCat object; names, equal dimensions, or separately isomorphic rings do not supply that identity."
+[[hostile_controls]]
+id = "reject-spectrum-only-descent"
+description = "Descent.Compatible requires equality of the restricted coordinate-ring homomorphisms, not just equal prime-spectrum point maps."
+[[hostile_controls]]
+id = "reject-descended-ring-law-gap"
+description = "Descent.glueRingHom must prove zero, one, addition, and multiplication through local ring laws and holomorphic_ext. A pointwise gluing function alone is insufficient."
+[[hostile_controls]]
+id = "reject-polynomial-descent-drift"
+description = "Descent.glue_polynomial_model must recover the existing global polynomial Bridge as equality of coordinate-ring maps, not as an unrelated new point-map fixture."
+
+[[hostile_controls]]
+id = "reject-indexed-coverage-gap"
+description = "IndexedDomainCover.cover must supply a member for every point of X; labels, cardinalities, ambient openness, and local families do not supply coverage."
+[[hostile_controls]]
+id = "reject-indexed-overlap-mismatch"
+description = "Replay IndexedDomainCover.Fixtures.disagreeingFamily_not_matching on the all-punctures cover. Every pairwise restriction equality remains necessary."
+[[hostile_controls]]
+id = "reject-index-choice-drift"
+description = "glueSection_apply must identify the selected value with every covering member; glue_reindex must preserve the global section under surjective relabelling or duplication."
+[[hostile_controls]]
+id = "reject-empty-index-shortcut"
+description = "Replay empty_index_not_nonempty and emptyCover_glue_unique. An empty index cannot cover a nonempty domain, and an actually empty cover must not require an invented inhabitant."
+[[hostile_controls]]
+id = "reject-indexed-global-holomorphy-input"
+description = "IndexedDomainCover.holomorphic_iff_restrictions derives the global witness using DifferentiableOn.iUnion_of_isOpen and exact coverage. A global holomorphy certificate is not an input."
+[[hostile_controls]]
+id = "reject-indexed-spectrum-only-descent"
+description = "IndexedDescent.Compatible requires equality of all restricted coordinate-ring homomorphisms from one exact source ring, not only equality of induced spectrum points."
+[[hostile_controls]]
+id = "reject-indexed-ring-law-gap"
+description = "IndexedDescent.glueRingHom must derive zero, one, addition, and multiplication from local ring laws and indexed holomorphic_ext."
+[[hostile_controls]]
+id = "reject-indexed-precomposition-drift"
+description = "IndexedDescent.glue_precomp must equate the actual coordinate-ring bridges for the same source morphism; a point-map naturality label is insufficient."
+[[hostile_controls]]
+id = "reject-indexed-polynomial-drift"
+description = "Replay IndexedDescent.allPunctures_polynomial_descent and glue_polynomial_model. Indexed gluing must recover the existing polynomial model exactly."
+[[hostile_controls]]
+id = "reject-indexed-glue-as-twisted-descent"
+description = "Scalar-section and same-source ring-map descent do not supply nontrivial transition functions, a line bundle, a general dependent-fiber sheaf theorem, or an arithmetic local supplier."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "construction of the source-specific arithmetic-to-elliptic coordinate-ring map or B_n",
+  "global elliptic or Poncelet comparison theorem",
+  "holomorphic gluing on arbitrary non-open covers without an appropriate analytic theorem",
+  "nontrivial line-bundle cocycle descent or general dependent-fiber sheaf descent",
+  "coordinate-ring descent from spectrum point-map agreement alone",
+  "topological embedding or surjectivity of analytic evaluation into the prime spectrum",
+  "identification of analytic points with all prime ideals",
+  "injectivity of every supplied analytic-affine bridge",
+  "complete explicit formula",
+  "convergence to the Weil form",
+  "Weil positivity",
+  "proof or refutation of the Riemann Hypothesis",
+  "automatic continuity of arbitrary ring homomorphisms on their carrier topologies",
+  "holomorphy inferred from continuity",
+  "automatic residual discharge from local certification",
+  "classification of an unresolved obligation as false",
+  "arithmetic comparison or zeta theorems from polynomial descent or generic functoriality"
+]

@@ -1,0 +1,59 @@
+import SourceActualReflectionBalance
+
+#check RH16ActualReflectionBalance.chebyshev_mul_continuous_intervalIntegrable
+#print axioms RH16ActualReflectionBalance.chebyshev_mul_continuous_intervalIntegrable
+
+#check RH16ActualReflectionBalance.errorProfile_intervalIntegrable
+#print axioms RH16ActualReflectionBalance.errorProfile_intervalIntegrable
+
+#check RH16ActualReflectionBalance.reflected_errorProfile_intervalIntegrable
+#print axioms RH16ActualReflectionBalance.reflected_errorProfile_intervalIntegrable
+
+#check RH16ActualReflectionBalance.source_weight_continuous
+#print axioms RH16ActualReflectionBalance.source_weight_continuous
+
+#check RH16ActualReflectionBalance.centeredError
+#print axioms RH16ActualReflectionBalance.centeredError
+
+#check RH16ActualReflectionBalance.evenWork
+#print axioms RH16ActualReflectionBalance.evenWork
+
+#check RH16ActualReflectionBalance.oddWork
+#print axioms RH16ActualReflectionBalance.oddWork
+
+#check RH16ActualReflectionBalance.reflectedMixedWork
+#print axioms RH16ActualReflectionBalance.reflectedMixedWork
+
+#check RH16ActualReflectionBalance.centeredError_intervalIntegrable
+#print axioms RH16ActualReflectionBalance.centeredError_intervalIntegrable
+
+#check RH16ActualReflectionBalance.centered_reflectedError_intervalIntegrable
+#print axioms RH16ActualReflectionBalance.centered_reflectedError_intervalIntegrable
+
+#check RH16ActualReflectionBalance.actual_sector_integrability
+#print axioms RH16ActualReflectionBalance.actual_sector_integrability
+
+#check RH16ActualReflectionBalance.source_weight_integral_eq_prime_two
+#print axioms RH16ActualReflectionBalance.source_weight_integral_eq_prime_two
+
+#check RH16ActualReflectionBalance.centered_pairing_eq_source
+#print axioms RH16ActualReflectionBalance.centered_pairing_eq_source
+
+#check RH16ActualReflectionBalance.evenWork_eq_source_and_mixed
+#print axioms RH16ActualReflectionBalance.evenWork_eq_source_and_mixed
+
+#check RH16ActualReflectionBalance.oddWork_eq_source_and_mixed
+#print axioms RH16ActualReflectionBalance.oddWork_eq_source_and_mixed
+
+#check RH16ActualReflectionBalance.joint_sector_eq_source
+#print axioms RH16ActualReflectionBalance.joint_sector_eq_source
+
+#check RH16ActualReflectionBalance.centered_error_sectors
+#print axioms RH16ActualReflectionBalance.centered_error_sectors
+
+#check RH16ActualReflectionBalance.reflected_source_weight
+#print axioms RH16ActualReflectionBalance.reflected_source_weight
+
+#check RH16ActualReflectionBalance.source_quadratic_eq_joint_sectors
+#print axioms RH16ActualReflectionBalance.source_quadratic_eq_joint_sectors
+

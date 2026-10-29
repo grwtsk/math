@@ -1,0 +1,39 @@
+# Queued source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "proper-power-fiber-index-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "dde336ddc99000ef64deaa8efa6b76f7ccab88e6"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberIndex.lean"
+source_blob = "6b2765180489ff2c1b8d6135ab38a8334e7a5aa6"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberIndex.FiberIndex",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberIndex.fiberIndex_iff_originalSupport",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberMembership",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Finite dependent fiber sum equals sum over FiberIndex",
+ "FiberIndex equals supportedTripleBox membership subtype",
+ "Normalize rectangular packet to rectangularSupportedMass",
+ "Compose exact original-to-rectangular proper-power mass identity",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberIndex.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberIndex"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberIndex.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

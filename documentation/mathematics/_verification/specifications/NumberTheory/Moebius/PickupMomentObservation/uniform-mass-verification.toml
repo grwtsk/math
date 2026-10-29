@@ -1,0 +1,118 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "rh-pickup-fixed-positive-mass-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "a6fb42894d26337e31089d0c341f0a1f50fc8689"
+source_tree = "90457d3245ba25019f0935e541d4dd34e7087437"
+baseline_commit = "680e181f88773a7a4debc47bdf1c5d19930f3bc3"
+verification_issue = 1410
+prerequisite_issues = [1405, 1406, 1407, 1408, 1409]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+canonical_RH_proved_unconditionally = false
+arithmetic_completion = "Source-specific combined arithmetic witness not established in this increment; no claim of repository-wide absence"
+remote_execution_dispatched = false
+root_imports_changed = false
+dependency_pins_changed = false
+new_definitions = 0
+new_theorem_scripts = 4
+scope = "Extend the existing observation consumer to retain fixed positive mass prefactors and eventual onset; preserve all prior declarations"
+git_identity = "Connector-configured; author and committer override not exposed"
+
+[[source]]
+module = "GRWTSK.NumberTheory.Moebius.PickupMomentObservation"
+path = "GRWTSK/NumberTheory/Moebius/PickupMomentObservation.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupMomentObservation"
+previous_blob = "76fe0d69272f210913948714b49dcaf87a5aa34e"
+blob = "b2e8079362df1871cab355460e6bd783f5192c5e"
+sha256 = "676280e002dbe19ca3710e253189bd59286891cbe376b31db65177f4f5bc5ec2"
+bytes = 13676
+lines = 292
+imports = ["GRWTSK.NumberTheory.Moebius.PickupWeightedQAOA"]
+new_theorems = ["GRWTSK.NumberTheory.Moebius.PickupMomentObservation.fixed_mass_power_allowance", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.source_gap_of_prefactor_entropy_moment", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.source_gap_of_uniform_mass_moment", "GRWTSK.NumberTheory.Moebius.PickupMomentObservation.dyadicBirthBound_of_prefactor_depth_entropy_moments"]
+whole_module_identifiers = ["gapMoment", "source_gap_of_moment", "exp_power", "entropy_balance", "source_gap_of_entropy_moment", "configuration_card", "uniform_source_mass", "uniform_source_mass_dyadic", "uniform_mass_allowance_iff", "source_gap_of_radius_moment", "dyadicBirthBound_of_depth_entropy_moments", "fixed_mass_power_allowance", "source_gap_of_prefactor_entropy_moment", "source_gap_of_uniform_mass_moment", "dyadicBirthBound_of_prefactor_depth_entropy_moments"]
+identifier_rule = "Qualify every whole_module_identifier with the exact namespace above; audit full generated/private/opaque/imported closure"
+
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupWeightedQAOA"
+blob = "b62762221a532b853e234f47746bd3b72f4d30bc"
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupOptimizationGap"
+blob = "2d9a4072edea426758a646b870d594dbf6da0784"
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint"
+blob = "53a33d37efd54fdff10aed1b05276b89dd4ddadc"
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature"
+blob = "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c"
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.GoodScaleEnergyCriterion"
+blob = "a39d24a540a86918ab4f2a8130a86895424dc317"
+[[critical_dependency]]
+module = "GRWTSK.NumberTheory.Moebius.EnergyAbscissa"
+blob = "9453ab6fc629611fa19362b56eb223fabd14bc0a"
+
+[[inspected_supplier]]
+module = "GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport"
+blob = "e98c33f97c7429e34a51de87418744f5a16f1eb6"
+declaration = "GRWTSK.Analysis.OperatorTheory.SpectralTheory.GapTransport.uniform_gap_of_controlled_cross_terms"
+role = "Uniform margin delta-epsilon from exact sector norms, energies and interaction; reuse instead of postulating another uniformity theorem"
+acceptance = "SOURCE_INSPECTION_ONLY; not newly imported or kernel accepted"
+
+[[inspected_supplier]]
+module = "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+blob = "926b1ffb3666198309ffb1683a124f711284db72"
+declaration = "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_buffered_mass_ge_one_ninety_six"
+role = "Actual lower bound 1/96 for each of two Boolean valuation types, N>=12, positive Markov time and nonnegative normalized input"
+boundary = "Type mass is not automatically the Born mass of a complete Mobius spin configuration; retain the source-observation map and residual"
+acceptance = "SOURCE_INSPECTION_ONLY; not newly imported or kernel accepted"
+
+[[inspected_supplier]]
+module = "GRWTSK.NumberTheory.Moebius.CenteredSieveRecovery"
+blob = "3b2cd85036c8b2d06e9da50cbc8a399a3b79ee57"
+declaration = "GRWTSK.NumberTheory.Moebius.CenteredSieveRecovery.signed_wrap_with_sieved_centers"
+role = "Retain exact positive-energy plus winding-mean minus four-times-variance identity; combined signed absorption precedes exponent estimation"
+acceptance = "SOURCE_INSPECTION_ONLY; source-specific return to pickup is not silently inferred"
+
+[verification]
+commands = [
+  "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupMomentObservation",
+  "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupMomentObservation.lean",
+  "lake env leanchecker --help"
+]
+command_status = "NOT_RUN"
+exit_status = "UNAVAILABLE"
+checker = "Resolve supported fresh replay invocation from actual pinned help; replay the full imported closure, not only final wrappers"
+axiom_audit = "External audit module: import the changed module, #check and #print axioms each of the 15 source identifiers, then audit generated/private/opaque transitive dependencies and the energy/Laplace return"
+proposed_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new research axioms", "unauthorized native or unsafe logical trust", "missing dependency closure", "changed source or hypothesis", "old acceptance transferred to changed bytes", "type mass silently substituted for full-configuration mass"]
+
+[mathematical_controls]
+checks = [
+  "Old unit-prefactor theorem is valid but unnecessarily restrictive for a fixed mass below one; it is preserved for compatibility.",
+  "Fixed mass m>0 yields factor max(1,1/m), uniform in every positive natural moment order.",
+  "At kappa=0, the new premise is mass>=m rather than mass>=1.",
+  "The sharper m^(-1/q) factor is not needed to avoid an exponent loss.",
+  "Only r(p)+kappa(p) is controlled; separate vanishing is not required.",
+  "Positive mass and eventual start may depend on p, never on the tested j.",
+  "Finite initial times use the existing exact arithmetic-grid absorption.",
+  "A cutoff-uniform spectral coercivity constant is distinct from probability mass, but neither fixed positive constant creates an exponential rate.",
+  "A shifted finite Sturmian operator is not silently a physical Yang-Mills Hamiltonian or the signed pickup operator.",
+  "Full signed source-return and mixed terms remain required; the corrected consumer does not manufacture their bound."
+]
+
+[diagnostics]
+commands = ["python /mnt/data/rh_mass_audit/preflight.py > /mnt/data/rh_mass_audit/preflight-normal.json", "python -O /mnt/data/rh_mass_audit/preflight.py > /mnt/data/rh_mass_audit/preflight-optimized.json", "cmp /mnt/data/rh_mass_audit/preflight-normal.json /mnt/data/rh_mass_audit/preflight-optimized.json"]
+exit_statuses = [0, 0, 0]
+checks_per_mode = 1118
+exact_algebra_checks = 1108
+regression_and_lexical_checks = 10
+script_sha256 = "1d4915aedee359b45dd4aa536d05e620c9f3c3008d4678328645f7160c95775a"
+result_sha256 = "8921a4c4964743a05a1f7eba1db99902b2bfd165ca4f4385b03b5f2b6484de7e"
+interpretation = "Exact finite scalar fixtures and lexical checks only; no arithmetic asymptotics, Lean elaboration, kernel acceptance or axiom audit"
+durable_noeaaeue_receipt = "UNAVAILABLE"

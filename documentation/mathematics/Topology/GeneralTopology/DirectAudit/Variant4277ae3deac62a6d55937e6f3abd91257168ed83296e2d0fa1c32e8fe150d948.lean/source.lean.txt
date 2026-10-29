@@ -1,0 +1,5 @@
+import FormalResearch.SUCAS.AdmissionDirect
+#print axioms FormalResearch.SUCAS.AdmissionDirect.actual_multiplier_continuous
+#print axioms FormalResearch.SUCAS.AdmissionDirect.global_majorant_of_eventual
+#print axioms FormalResearch.SUCAS.AdmissionDirect.archimedean_integrability_of_majorant
+#print axioms FormalResearch.SUCAS.AdmissionDirect.admission_of_eventual_majorant

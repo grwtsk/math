@@ -1,0 +1,201 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-mellin-tail-enclosure-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 253
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MellinTruncation"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.ZetaZeros"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightLocalDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPatchDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[modules]]
+name = "GRWTSK"
+
+[[modules]]
+name = "Mathlib.Analysis.Calculus.MeanValue"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAnalyticPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPolePatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.AnalyticPolePatch"
+
+[[modules]]
+name = "Mathlib.Topology.MetricSpace.Thickening"
+
+[[modules]]
+name = "Mathlib.Topology.Order.Compact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCompactPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripBoundaryCollar"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CompactBoundaryCollar"
+
+[[modules]]
+name = "Mathlib.Analysis.MellinTransform"
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.SumCoeff"
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.Dirichlet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisBase"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RealAxisMellin"
+
+[[modules]]
+name = "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic"
+
+[[modules]]
+name = "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinApproximation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinEnclosure"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MellinTruncation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripEffectiveSeed"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.EffectiveMellin"
+
+[[hostile_controls]]
+id = "reject-tail-domain-loss"
+description = "Every split or tail bound must require T>=1 and Re(s)>=a>0. Integrability of the full source, prefix and tail is explicit before integral identities; the complement Ioi T is never silently omitted."
+
+[[hostile_controls]]
+id = "reject-prefix-as-numerical-enclosure"
+description = "fractionalMellinTruncation is an exact finite Bochner integral. MellinPrefixEnclosure requires an actual error theorem, not a floating evaluation or identity label."
+
+[[hostile_controls]]
+id = "reject-normalization-factor-loss"
+description = "The H-source error includes ||s||*||s-1||. The tail bound alone is a Mellin-error bound, not the normalized-zeta error."
+
+[[hostile_controls]]
+id = "reject-quadrature-error-omission"
+description = "The full source evaluation error is ||s||*||s-1||*(finite-prefix error + tail majorant). The sourced Mellin derivative bound supplies the geometric prefix-patch constructor; this does not supply a rigorous prefix evaluator. Additional approximate arithmetic on that model needs its own enclosure."
+
+[[hostile_controls]]
+id = "reject-convergence-as-nonvanishing"
+description = "Uniform source approximation is compatible with actual source zeros. no_strict_mellin_margin_at_zero must retain every cutoff; strict margin is necessary, not <=."
+
+[[hostile_controls]]
+id = "reject-nonzero-premise-circularity"
+description = "The pointwise eventual certificate theorem assumes nonvanishing in its forward direction. It cannot construct unknown all-height zero-free regions by that same assumption."
+
+[[hostile_controls]]
+id = "reject-sample-as-patch-cover"
+description = "A Mellin sample enclosure becomes a variation patch only with actual differentiability and uniform derivative bound on the full convex ambient region, center inclusion, radius and strict total margin."
+
+[[hostile_controls]]
+id = "reject-global-uniformity-from-rectangle"
+description = "The uniform convergence index may depend on bounded height Y and epsilon. The normalization factor grows with height; no unbounded critical-strip uniformity is inferred."
+
+[[hostile_controls]]
+id = "reject-mirror-value-equality"
+description = "The Mellin approximation uses the exact H source. It asserts no equality H(s)=H(1-conj(s)) and does not merge mirror points or divide multiplicities."
+
+[[hostile_controls]]
+id = "reject-pole-raw-value"
+description = "All prefix models have value 1 at s=1. Preserve the actual entire poleNormalizedZeta, not the spurious zero of the raw totalized product."
+
+[[hostile_controls]]
+id = "reject-weil-promotion"
+description = "Complex scalar function approximation is not positive Hermitian Weil-form approximation. No arithmetic-to-elliptic or complete zero-divisor supplier is constructed by this tail estimate."
+
+[[hostile_controls]]
+id = "reject-old-root-only-replay"
+description = "All new standalone modules and public signatures require exact-source replay and transitive axiom audit. Old receipts or root-only imports do not cover these files."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "a numerical or rigorous interval evaluator for the finite prefix integrals",
+  "complete zero exclusion in a prescribed positive-height critical-strip shell",
+  "the full all-height/all-margin family of source-bound interior covers",
+  "uniform approximation with one height-independent cutoff on the unbounded strip",
+  "multiplicity counts, entire Weil-form positivity or an arithmetic-to-elliptic realization",
+  "an unconditional proof of RiemannHypothesis",
+  "a compilation, transitive axiom audit or external replay receipt"
+]

@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-four-distinct-per-lag-cost-907-v0.1"
+owner_repository = "grwtsk/math"
+issue = 907
+parent_issue = 905
+parent_pr = 906
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_FOUR_DISTINCT_PER_LAG_COST_SOURCE_DRAFT"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredStructuredFourDistinctPerLag"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredStructuredFourDistinctPerLag"
+
+[source_binding]
+stacked_parent_revision = "a8ad9522d54f369fceae4338c5a2eabc156b4f32"
+candidate_branch = "research/rh-four-distinct-per-lag-cost-907-20261022"
+theorem_source_commit = "ad73d6819c9ff88a1002fe47ee639078658f1d60"
+mathematical_note_commit = "05bb4e877e84280100f88cb307d07e05dfe4e9af"
+
+[evidence_states]
+source_draft = true
+per_lag_cost_parameterized = true
+exact_winding_range_retained = true
+factor_eight_retained = true
+four_families_retained = true
+effective_moduli_retained = true
+triangle_inequality_adapter_scripted = true
+cancellation_exponent_assumed = false
+analytic_per_lag_bound_proved = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

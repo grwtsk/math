@@ -1,0 +1,172 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-real-axis-mellin-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 253
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RealAxisMellin"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.ZetaZeros"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightLocalDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPatchDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[modules]]
+name = "GRWTSK"
+
+[[modules]]
+name = "Mathlib.Analysis.Calculus.MeanValue"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAnalyticPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPolePatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.AnalyticPolePatch"
+
+[[modules]]
+name = "Mathlib.Topology.MetricSpace.Thickening"
+
+[[modules]]
+name = "Mathlib.Topology.Order.Compact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCompactPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripBoundaryCollar"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CompactBoundaryCollar"
+
+[[modules]]
+name = "Mathlib.Analysis.MellinTransform"
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.SumCoeff"
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.Dirichlet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisBase"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RealAxisMellin"
+
+[[hostile_controls]]
+id = "reject-base-as-hypothesis"
+description = "windowRH_zero and nontrivialZetaZero_im_ne_zero must have no extra real-axis, positivity, shell, or RH premises. Replay exact theorem types and transitive axioms."
+
+[[hostile_controls]]
+id = "reject-undefined-integral-continuation"
+description = "Prove Mellin convergence for every consumed Re(s)>0 before applying integral linearity or integral_re. Ordinary absolute L-series convergence is used only in Re(s)>1."
+
+[[hostile_controls]]
+id = "reject-unsourced-identification"
+description = "poleNormalized_eq_fractional must be derived from Abel summation and an actual identity theorem on the connected open half-plane. A named formula or numerical fit is not the supplier."
+
+[[hostile_controls]]
+id = "reject-kernel-domain-omission"
+description = "The bounded fractional-part kernel is exactly zero below 1. Its restriction from Ioi 0 to Ioi 1 must be proved, retaining the natural floor and measurable boundary."
+
+[[hostile_controls]]
+id = "reject-sign-extension-to-complex-height"
+description = "fractionalMellin_re_nonneg is restricted to positive REAL spectral arguments. Do not apply it to arbitrary complex s merely because Re(s)>0."
+
+[[hostile_controls]]
+id = "reject-pole-raw-value"
+description = "The same entire source H is used, with H(1)=1 and H(0)=1/2. The raw totalized (s-1)*zeta(s) has a different value at s=1."
+
+[[hostile_controls]]
+id = "reject-finite-sum-tail-loss"
+description = "No truncated kernel integral may replace fractionalMellin without a tail theorem. Numerical sanity computations are not imported or used by a Lean declaration."
+
+[[hostile_controls]]
+id = "reject-real-height-projection"
+description = "Canonical nontrivial zeros are shown nonreal, using their independently proved critical-strip membership and their full source point. No critical-line projection or assumed zero list."
+
+[[hostile_controls]]
+id = "reject-ineffective-radius-as-certificate"
+description = "The positive horizontal seed radius is existential through compactness. It is not a rational enclosure, an executable certificate, or a prescribed height such as 1 or 14."
+
+[[hostile_controls]]
+id = "reject-interior-cover-by-base"
+description = "The new base-free RH endpoint must still expose all source-bound interior covers for every N,m. Neither the horizontal nor vertical boundary collar proves them."
+
+[[hostile_controls]]
+id = "reject-old-target-or-root-only-replay"
+description = "Replay the newly listed files explicitly at one exact head. Prior receipts and root-only imports do not cover these new standalone modules."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "a computed effective seed height or a rational enclosure of the compactness constants",
+  "zero exclusion on any specified positive-height critical-strip shell",
+  "a source-bound family of all interior patch covers",
+  "multiplicity, complete zero-count, spectral, or global Weil reconstruction",
+  "an unconditional proof of RiemannHypothesis",
+  "a compilation, kernel audit, or replay receipt produced by this static manifest"
+]

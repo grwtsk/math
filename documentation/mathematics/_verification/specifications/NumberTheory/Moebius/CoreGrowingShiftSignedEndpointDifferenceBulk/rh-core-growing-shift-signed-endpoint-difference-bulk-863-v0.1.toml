@@ -1,0 +1,69 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-difference-bulk-863-v0.1"
+owner_repository = "grwtsk/math"
+issue = 863
+parent_issue = 848
+parent_pr = 850
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDifferenceBulk"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDifferenceBulk"
+
+[source_binding]
+stacked_parent_revision = "5576c62aa169bf138564cf33fc5bba4f9aeb109e"
+candidate_branch = "research/rh-endpoint-difference-bulk-863"
+theorem_source_commit = "07ce207d586de1ebc9ed5f575c44e816a4a7e5b8"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointDifferenceBulk.lean"
+theorem_source_git_blob = "ecf0affad0726519d603a5c04b55a851b5d0e74f"
+
+[selected_increment]
+difference_lower = "coreGrowingShiftEndpointDifferencePrefixLower"
+difference_upper = "coreGrowingShiftEndpointDifferencePrefixUpper"
+bulk_prefix_set = "coreGrowingShiftEndpointDifferenceBulkPrefixSet"
+left_clip_prefix_set = "coreGrowingShiftEndpointDifferenceLeftClipPrefixSet"
+retained_prefix_set = "coreGrowingShiftEndpointDifferenceRetainedPrefixSet"
+interval_partition = "coreGrowingShiftEndpointDifferenceBulkPrefixSet_eq_clip_union_retained"
+difference_prefix_kernel = "coreGrowingShiftEndpointDifferencePrefixKernel"
+bulk_kernel = "coreGrowingShiftEndpointDifferenceBulkKernel"
+left_clip_correction = "coreGrowingShiftEndpointDifferenceLeftClipCorrection"
+aggregate_bulk_clip_identity = "coreGrowingShiftEndpointAggregateKernel_eq_differenceBulk_sub_leftClip"
+generic_interval_boundary = "coreGrowingShiftEndpointDifferenceIntervalBoundaryKernel"
+generic_interval_evaluation = "coreGrowingShiftEndpointDifferenceIntervalSum_eq_boundary"
+closed_bulk = "coreGrowingShiftEndpointDifferenceBulkBoundaryKernel"
+closed_left_clip = "coreGrowingShiftEndpointDifferenceLeftClipBoundaryCorrection"
+closed_parent_split = "coreGrowingShiftEndpointAggregateBoundaryKernel_eq_closedDifferenceSplit"
+bulk_symbol = "coreGrowingShiftEndpointDifferenceBulkSymbol"
+cyclic_bulk_kernel = "coreGrowingShiftEndpointCyclicDifferenceBulkKernel"
+translation_invariance = "coreGrowingShiftEndpointCyclicDifferenceBulkKernel_add"
+ordinary_cyclic_difference = "coreGrowingShiftEndpointCyclicDifference_val_eq_natSub"
+support_correction = "coreGrowingShiftEndpointDifferenceSupportCorrectionKernel"
+left_clip_kernel = "coreGrowingShiftEndpointDifferenceLeftClipCorrectionKernel"
+pointwise_kernel_split = "coreGrowingShiftEndpointBoundaryKernelZeroPad_eq_differenceDecomposition"
+frequency_kernel_split = "coreGrowingShiftEndpointBoundaryKernelDFT2_eq_differenceDecomposition"
+difference_frequency_packet = "coreGrowingShiftSignedEndpointDifferenceDecompositionFourierPacket"
+frequency_packet_identity = "coreGrowingShiftSignedEndpointDifferenceDecompositionFourierPacket_eq_boundary"
+rh_packet_identity = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointDifferenceDecompositionFourier"
+source_proposition = "SubpolynomialCoreGrowingShiftSignedEndpointDifferenceDecompositionFourierPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointDifferenceDecompositionFourierPacket_iff_boundary"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointDifferenceDecompositionFourierPacket"
+proof_classification = "EXACT_FINITE_BULK_CLIP_PARTITION_CYCLIC_DIFFERENCE_EXTENSION_AND_SIGNED_DFT_TRANSPORT"
+next_obstruction = "prove the anti-diagonal two-dimensional DFT formula for the cyclic difference bulk and retain both correction packets signed"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+anti_diagonal_bulk_transform_proved = false
+signed_frequency_estimate_proved = false
+large_sieve_adapter_constructed = false
+dispersion_adapter_constructed = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+positive_norm_applied = false
+merged = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false

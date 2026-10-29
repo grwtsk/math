@@ -1,0 +1,37 @@
+# Queued source-pinned verification; no compilation authorized.
+schema_version = "0.1"
+request_id = "proper-power-rectangular-pair-sum-transport-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "d56b99aee63250a43ef14aaf5f6e79c5dfb8829d"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularPairSumTransport.lean"
+source_blob = "39b3b44f7a9a7b90288f310035986659626a34db"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPairSumTransport.pairIndex_sum_eq_rectangularSupportedMass",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPairWeight",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Compose rectangularProperPowerMass with rectangularSupportedMass",
+ "Compose original and rectangular sides via supported-index equivalences",
+ "Establish unconditional nonunitProperPowerMass equals rectangularProperPowerMass",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularPairSumTransport.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPairSumTransport"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularPairSumTransport.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

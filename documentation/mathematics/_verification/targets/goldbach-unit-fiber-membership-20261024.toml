@@ -1,0 +1,25 @@
+schema_version = "0.1"
+request_id = "goldbach-unit-fiber-membership-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "8fd12e35a65bd126f8ab7ad080d2d485e0d365a9"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachUnitFiberMembership.lean"
+source_blob = "80c91ca23bb772ad95021246ee8866a9ae0fbab6"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachUnitFiberMembership.unit_fiber_implies_isUnit"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachUnitCharacterPsi","GRWTSK.NumberTheory.Primes.GoldbachPsiUnitNonunit"]
+exact_hypotheses = "q n : Nat; u : (ZMod q)ˣ; (n:ZMod q)=(u:ZMod q)"
+missing_suppliers = ["Construct unique unit representative for each IsUnit residue","Prove unit-fiber sum equals unitPsiTotal","Compose conditional character reconstruction with nonunit norm"]
+receipts = "NOT_RUN"
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachUnitFiberMembership"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachUnitFiberMembership.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

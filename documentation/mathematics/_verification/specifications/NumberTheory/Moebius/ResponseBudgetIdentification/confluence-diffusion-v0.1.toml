@@ -1,0 +1,83 @@
+id = "rh-confluence-diffusion-v0.1"
+contribution = "grwtsk contributors"
+kind = "passive-source-bound-verification-specification"
+math_repository = "grwtsk/math"
+base_commit = "8dede654f2085a1471f4b0397ee0369e67db29a3"
+math_commit = "29ed2bf5ae49b5922010175a7cefa9c14206f60f"
+module = "GRWTSK.NumberTheory.Moebius.ResponseBudgetIdentification"
+path = "GRWTSK/NumberTheory/Moebius/ResponseBudgetIdentification.lean"
+source_blob = "52d30b016948a0f7d3809f9479df1f1a343b598d"
+source_sha256 = "69ad1f87c3f61c270c35bc569382f8bf1d5cd601d9e877a78d80d684610e376d"
+previous_blob = "50e291b05fce0e6ef3336bdf02b92386c61938a9"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+compile_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+transitive_axiom_status = "NOT_RUN"
+complete_dependency_closure_reviewed = false
+new_theorem_scripts = 5
+new_definitions = 0
+root_import_changed = false
+dependency_versions_changed = false
+arithmetic_budget_constructed = false
+historical_checks = "Retained at their exact source/closure scope; not reset to NOT_RUN and not transferred to this port."
+operational_owner = "grwtsk/noeaaeue"
+receipt = "NONE_FOR_NEW_COMPOSITIONS"
+source_preservation = "Removing additions reconstructs the old leaf's exact Git blob; original statements and proof bodies unchanged."
+
+new_declarations = [
+  "HSSCP04.CCCAdapter.analyticClosureConstruction",
+  "HSSCP04.CCCAdapter.transform_route_implies_native_P04",
+  "HSSCP04.CCCAdapter.transform_route_implies_literal_RH",
+  "HSSCP04.CCCAdapter.transform_route_implies_fixed_width",
+  "HSSCP04.CCCAdapter.packet_route_implies_literal_RH"
+]
+
+commands = [
+  "lake build GRWTSK.NumberTheory.Moebius.ResponseBudgetIdentification",
+  "lake env lean GRWTSK/NumberTheory/Moebius/ResponseBudgetIdentification.lean"
+]
+command_status = "NOT_RUN; no lean/lake/elan executable found on PATH"
+independent_checker_command = "UNRESOLVED_IN_APPROVED_EXECUTOR"
+required_checks = [
+  "exact pinned source bytes and import closure",
+  "all five new declaration types and transitive axiom closures",
+  "all old declaration types unchanged",
+  "no sorryAx, new axioms, weakening or unauthorized native trust",
+  "the analytic input is constructed from the actual existing proof",
+  "every sourceReturn, height, tail, Gram, coefficient and error premise retained",
+  "fixed positive width not promoted to uniform-in-width constants",
+  "source publication not reported as native acceptance",
+  "no transfer from the older reflected source to the current packet without its own source identity"
+]
+
+[[suppliers]]
+module = "GRWTSK.NumberTheory.Moebius.PolynomialEnergyHolomorphy"
+blob = "232e927f2d5b70fa1fa58bdffc4aec0c6eec3078"
+declaration = "EulerP04RH.LaplaceEnergy.literal_RH_of_P04"
+role = "Existing exact analytic proof inhabiting AnalyticClosureConstruction"
+
+[[suppliers]]
+module = "GRWTSK.Analysis.AsymptoticAnalysis.SignedEnergyDecomposition"
+blob = "09c7901370857dc6f95e1f3e81fa7416ab56c1cb"
+declaration = "EulerP04RH.assembled_route_implies_literal_RH"
+role = "Older consumer whose separate analytic argument is now supplied"
+
+[[suppliers]]
+module = "GRWTSK.Analysis.InnerProductSpace.SignedSynthesisEnergyBounds"
+blob = "5d06250307b20e2128de77d7c864657ce4054ee8"
+declaration = "EulerP04RH.PacketClosure.packet_route_implies_literal_P04"
+role = "Actual source-return plus all original packet budgets"
+
+[[suppliers]]
+module = "GRWTSK.Analysis.AsymptoticAnalysis.FixedWidthEnergyBoundEquivalence"
+blob = "4d37b656401485d3699f59e3eac3359e516d47be"
+declaration = "HSSCP04.P04_implies_HSS"
+role = "Reuse fixed-width energy consumer without constructing a new telescope"
+
+[[historical_sources]]
+repository = "grwtsk/formal-research"
+commit = "b2e9938b50a6c36b6c1c9cf5b848a6456ebdc43a"
+path = "FormalResearch/RiemannHypothesis/Landau/Bridge.lean"
+blob = "82ccdbbdaffa2ba8e19cc0cbb65dbf46a3726b34"
+status = "Direct source inspected; accepted-source and verification scope recovered from the pinned historical guide. Not imported or freshly replayed here."

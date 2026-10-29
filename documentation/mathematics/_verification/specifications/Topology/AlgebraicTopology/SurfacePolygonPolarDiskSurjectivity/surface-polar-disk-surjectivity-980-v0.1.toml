@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 1010
+parent_revision = "4780f52d9b30e0d8a8d8becb2b683a92c132f999"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarDiskSurjectivity"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarDiskSurjectivity.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_declarations = ["diskRadius", "disk_origin_in_polar_range", "disk_nonzero_in_polar_range_of_phase", "standardConePolarDisk_surjective_of_phase"]
+hostile_controls = ["zero_handled_as_apex", "norm_radius_in_unit_interval", "nonzero_phase_supplier_visible", "two_pi_angle_normalization", "no_unconditional_surjectivity", "no_disk_homeomorphism_claim"]
+open_obligations = ["pinned_complex_phase_decomposition", "unconditional_polar_surjectivity", "ancestor_elaboration_and_repairs", "compact_to_hausdorff_homeomorphism", "perimeter_disk_transport"]
+lean_run = false
+kernel_audited = false

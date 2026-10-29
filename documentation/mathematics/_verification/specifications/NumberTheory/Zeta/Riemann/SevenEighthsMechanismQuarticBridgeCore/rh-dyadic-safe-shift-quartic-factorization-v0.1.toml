@@ -1,0 +1,76 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-safe-shift-quartic-factorization-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "17bd2c902fc8548a031d0160c630a4ca3d682443"
+parent_tree = "8cedeb75ee5de77b2e1536cb8c86de4cebd54019"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / DYADIC_EXACT_QUARTIC_FACTORS_EXPOSED / DYADIC_SCALE_SUPPLIER_OPEN"
+
+[exact_dyadic_factorization]
+a = "Re(s)-1/2"
+t = "Im(s)"
+axial = "axialDyadicGram_j = a^4*A_j^D"
+transverse = "transverseDyadicGram_j = a^2*t^2*T_j^D"
+structured = "Q_j^D = a^4*A_j^D + 3*a^2*t^2*T_j^D"
+axial_coefficient_nonnegative = true
+transverse_coefficient_nonnegative = true
+
+[terminal_packet]
+scope = "actual nontrivial zeros with a != 0"
+scale = "r_j >= 0"
+axial_limit = "r_j*A_j^D -> L>0"
+transverse_limit = "r_j*T_j^D -> same L"
+green_envelope_decay = "r_j*148*EnvelopePairProduct_j -> 0"
+suffices_for_rh = true
+all_dyadic_energy_bound_used = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicSafeShiftQuarticFactorization"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicSafeShiftQuarticFactorization.lean"
+blob = "98213b8d00e9b9be157a78340a3a15be4f92606d"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicSafeShiftQuarticFactorizationControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicSafeShiftQuarticFactorizationControls.lean"
+blob = "f180166c60e6cb881760b123f24503d4208caa39"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "16b9b7cd989e281329148818f46b71ee69653f97"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-safe-shift-quartic-factorization.md"
+blob = "bde9a3c905de5e47661ce1b00c6c610f8bd6cc2f"
+
+[evidence_states]
+CLAIM_SORT_REPAIRED = true
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+DYADIC_EXACT_QUARTIC_FACTORS_EXPOSED = true
+OFFLINE_DYADIC_ENDPOINT_TYPED = true
+DYADIC_SCALE_CONSTRUCTED = false
+COMMON_POSITIVE_COEFFICIENT_LIMIT_PROVED = false
+SCALED_GREEN_ENVELOPE_DECAY_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "construct source-derived r_j under a != 0",
+  "prove r_j*A_j^D and r_j*T_j^D tend to the same L>0",
+  "prove r_j*148*EnvelopePairProduct_j tends to zero",
+  "derive the missing positive asymptotic/lower information without consuming AllDyadicEnergyBound as a substitute"
+]
+
+[nonclaims]
+items = [
+  "finite-stage upper bounds do not supply a positive lower asymptotic",
+  "AllDyadicEnergyBound is not used in this dyadic terminal packet",
+  "no unconditional RH proof"
+]

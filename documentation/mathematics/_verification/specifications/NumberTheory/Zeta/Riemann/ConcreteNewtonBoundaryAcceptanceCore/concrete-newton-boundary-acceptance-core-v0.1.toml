@@ -1,0 +1,118 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "concrete-newton-boundary-acceptance-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.ConcreteNewtonBoundaryAcceptanceCore"
+build_target = "GRWTSK.Interfaces.ConcreteNewtonBoundaryAcceptanceCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "793fcde91f6c8f0035b5edc049dfe341581e1042"
+base_tree = "c1704e6d6de8c4cf9173f7d93694ad279f59c3c9"
+parent_pr = 340
+terminal_preparation_base = "db54ffe311be3f7faaf15d0a9c0767a0bf52ba49"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_policy = "Both inherited targets and full closures are mandatory. This target grants no execution authority."
+
+[[inherited_targets]]
+path = "docs/verification/Interfaces/ConcreteNewtonFirstBlockCore/concrete-newton-first-block-core-v0.1.toml"
+source_blob = "1412513e3832ab60089d9733b10514452616e195"
+reviewed_revision = "793fcde91f6c8f0035b5edc049dfe341581e1042"
+required = true
+
+[[inherited_targets]]
+path = "docs/verification/Interfaces/ConcreteNewtonTerminalCore/concrete-newton-terminal-core-v0.1.toml"
+source_blob = "2df48bdbdf3a2c1f991941acea1d346b5d401d9f"
+origin = "SEVEN_BYTE_IDENTICAL_PREVIOUSLY_LOCAL_FILES_PUBLISHED_IN_THIS_INCREMENT"
+required = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+first_block = "INHERITED_SOURCE_SCRIPT_NOT_KERNEL_ACCEPTED"
+terminal = "PUBLISHED_SOURCE_SCRIPT_NOT_KERNEL_ACCEPTED"
+remaining_prefix_blocks = 63
+remaining_prefix_endpoints = 4032
+remaining_final_checks = 1
+remaining_adapter_check_count = 64
+original_block_obligations_changed = false
+original_source_acceptance_changed = false
+source_acceptance = "NOT_ESTABLISHED"
+remaining_check_existence = "NOT_ASSERTED"
+remaining_iff_original = "SAME_PARTIALLY_FILLED_TRANSCRIPT"
+complete_zero_count = "NOT_SUPPLIED"
+all_interval_prime_margin = "NOT_SUPPLIED"
+code_generation = "NOT_RUN"
+
+[[modules]]
+name = "GRWTSK.Interfaces.ConcreteNewtonBoundaryAcceptanceCore"
+path = "GRWTSK/Interfaces/ConcreteNewtonBoundaryAcceptanceCore.lean"
+source_blob = "14988b7c1b50a98b346e58a2cad4640a4aa643f5"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.BoundaryAcceptanceControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/BoundaryAcceptanceControls.lean"
+source_blob = "f674a7297cdbb1f700742e1bfaca334cb6eea54c"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonBoundaryAcceptance"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonBoundaryAcceptance.lean"
+source_blob = "97102d0e8587a938b8db0c8a36d1eda10bd5cc52"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[documents]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/composed-boundary-acceptance.md"
+source_blob = "a8aaf75a1a1605b5d11cfdb10ca039131faa6bbd"
+
+[declarations]
+lexical_inventory_only = true
+requires_generated_structure_members = true
+requires_decidability_instances = true
+requires_computational_dependency_audit = true
+
+[[declaration_inventory]]
+module = "GRWTSK.Interfaces.ConcreteNewtonBoundaryAcceptanceCore"
+names = []
+
+[[declaration_inventory]]
+module = "GRWTSK.NumberTheory.Chebyshev.Checks.BoundaryAcceptanceControls"
+names = ["remaining_check_count", "first_remaining_label", "last_remaining_label", "block_one_still_required", "last_block_still_required", "final_check_still_required", "first_uncovered_record", "last_prefix_retained", "changed_remaining_record_rejected"]
+
+[[declaration_inventory]]
+module = "GRWTSK.NumberTheory.Zeta.Riemann.ConcreteNewtonBoundaryAcceptance"
+names = ["completed", "completed_terminal", "completed_first", "completed_later", "first_block_check", "terminal_check", "RemainingChecks", "remaining_iff_original", "source_of_remaining", "local_zero_of_remaining", "remaining_block_ne_zero", "remaining_coverage", "completion_injective_on_later"]
+
+[acceptance]
+inherited_obligations_preserved = true
+requirements = [
+  "Audit BOTH listed inherited targets and their complete exact-type/generated/import/axiom/computational closures; neither target substitutes for the other.",
+  "Preserve all execution holds. Source integration and this passive target authorize no Lean/Lake/native/build/worker/replay action.",
+  "Verify the seven terminal files against their retained preparation hashes without relabeling past local work as a previous publication.",
+  "Check exact center, schedule, exponent, complete seed errors and all State fields for first-block and terminal source identities.",
+  "Prove the terminal seed and all eight transitions using original predicates; preserve exponent12 times BOTH log2 value and uncertainty.",
+  "The fill must change only prefix positions0..63 and terminal4097. Prove equality of EVERY later State, including its error.",
+  "Use Fin63 successor labels for EXACTLY blocks1..63; require full coverage of indices64..4095 and no terminal-prefix alias.",
+  "Audit both directions of remaining_iff_original at the SAME filled transcript. It supplies no witness to RemainingChecks.",
+  "Retain all63 block checks and the original final six-field/two-tolerance aggregate. No final arithmetic equality is supplied here.",
+  "Do not treat Python agreement, code generation, source merge, a hash or a small Newton inequality as proof of SourceAcceptance.",
+  "Review actual Lean resource demands and permit repair/decomposition without assuming kernel acceptance or a measured speedup.",
+  "No complete zero count, canonical head, global prime margin, Legendre or RH conclusion is produced."
+]

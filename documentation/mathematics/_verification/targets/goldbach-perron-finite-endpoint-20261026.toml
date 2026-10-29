@@ -1,0 +1,96 @@
+schema_version = "0.1"
+request_id = "goldbach-perron-finite-endpoint-20261026"
+repository = "grwtsk/math"
+branch = "main"
+mathematical_source_commit = "297e6991c98dc2ae3b79b5d83ba109c75355219e"
+source_commit = "297e6991c98dc2ae3b79b5d83ba109c75355219e"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
+source_blob = "da068cc9e68abad5834b530c2c5ddac07fd4f76b"
+source_lines = 646
+prior_source_blob = "e0c1295fa24860e5af6e2f70a2caea0256d5698a"
+imported_character_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean"
+imported_character_blob = "520f24cea3bf2c592524ee939fe05b82b756f4dc"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_lseries_deriv_path = "Mathlib/NumberTheory/LSeries/Deriv.lean"
+mathlib_lseries_deriv_blob = "8c6ad6574f8ecc81f7d491143ce104763d1d4a02"
+mathlib_intervalIntegral_path = "Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean"
+mathlib_intervalIntegral_blob = "4092210205f534fd53ca3139589e2aa26f88a00d"
+mathlib_pow_continuity_path = "Mathlib/Analysis/SpecialFunctions/Pow/Continuity.lean"
+mathlib_pow_continuity_blob = "b7d14ef68dde16011e380d012d4cf1e88fb42967"
+upstream_openai_repository = "openai/math"
+upstream_openai_commit = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+upstream_openai_declaration = "OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re"
+upstream_openai_source_path = "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean"
+upstream_openai_source_blob = "46c67f4000906b1391a471d6e6396ac0da3c16a5"
+upstream_openai_status = "BACKGROUND_ONLY_NOT_IMPORTED_NOT_REPLAYED"
+priority = "P1"
+mathematical_class = "exact_finite_height_perron_polynomial_identity_with_explicit_half_endpoint_defect"
+source_status = "SOURCE_DRAFT_NOT_RUN"
+compilation_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+transitive_axiom_status = "NOT_RUN"
+actual_command_exit = "NOT_RUN"
+operational_receipt = "UNAVAILABLE_NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+railway_authorized = false
+merge_authorized = false
+force_push_authorized = false
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection",
+ "GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.SiegelRealZeroWindow",
+ "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+ "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+ "Mathlib.NumberTheory.LSeries.Deriv",
+ "Mathlib.Analysis.SpecialFunctions.Pow.Continuity",
+ "Mathlib.Tactic"
+]
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.finitePerronPolynomialIntegral",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.finitePerronTermIntegral",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.finitePerronHalfWeightedPrefix",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.finitePerronHeightDefect",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.continuous_finitePerronTermIntegrand",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.finitePerronPolynomialIntegral_eq_term_sum",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.finitePerronPolynomialIntegral_eq_halfPrefix_add_defect",
+ "GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.inclusive_vonMangoldt_prefix_eq_finitePerron_plus_endpoint_minus_defect"
+]
+theorem_hypotheses = "For q,N naturals and chi : DirichletCharacter C q, sigma : Real with 1<sigma, natural N with 3<=N, and arbitrary real finite T (the interval -T..T is oriented, so no positivity assumption on T is used in the algebraic identity). Individual term integrability is proved from continuity. No zero-freeness or Perron limit is assumed."
+normalization = "((2*pi:Real):Complex)^(-1) times the real-parameter integral of the inclusive finite Dirichlet polynomial times (N^s/s), s=sigma+i*t. It corresponds algebraically to the 1/(2*pi*i) upward contour factor after ds=i dt but NO complex curve-integral equivalence is formalized."
+integral_sum_identity = "finitePerronPolynomialIntegral(q,N,chi,sigma,T) = sum_{n in Finset.range(N+1)} finitePerronTermIntegral(q,N,n,chi,sigma,T)."
+half_endpoint_target = "finitePerronHalfWeightedPrefix = sum_{n in Finset.range N} dirichletVonMangoldtCoefficient(q,chi,n) + dirichletVonMangoldtCoefficient(q,chi,N)/2."
+defect_definition = "finitePerronHeightDefect = sum_{n in Finset.range N}(finitePerronTermIntegral(q,N,n,chi,sigma,T) - coefficient(n)) + finitePerronTermIntegral(q,N,N,chi,sigma,T) - coefficient(N)/2."
+exact_decomposition = "finitePerronPolynomialIntegral = finitePerronHalfWeightedPrefix + finitePerronHeightDefect, and the existing inclusive prefix sum_{n<=N} coefficient(n) = finitePerronPolynomialIntegral + coefficient(N)/2 - finitePerronHeightDefect."
+critical_distinction = "At finite T the kernel is NOT the sharp Heaviside projection: the half-endpoint convention is an explicit target and finitePerronHeightDefect remains an unevaluated complex error. No assertion of defect->0 or rate in T, no Perron inversion for the FULL L-series, and no contour deformation or prime-distribution consequence."
+imported_mathlib_apis = [
+ "LSeries.hasDerivAt_term",
+ "Continuous.const_cpow",
+ "Continuous.intervalIntegrable",
+ "intervalIntegral.integral_finsetSum",
+ "intervalIntegral.integral_congr",
+ "Finset.sum_mul",
+ "Finset.sum_range_succ",
+ "Finset.sum_sub_distrib"
+]
+missing_suppliers = [
+ "Actual pinned Lean/Mathlib elaboration, full transitive compilation and axiom audit",
+ "An analytic evaluation or explicit bound for each finite-height kernel defect, including the n=N half endpoint",
+ "Rigorous infinite-height convergence for the vertical Perron kernel with uniform finite-polynomial interchange",
+ "Exact complex curve-integral reparameterization with orientation and normalization",
+ "Normalized FULL Dirichlet L-series Perron integral equals finite polynomial plus normalized right-tail integral",
+ "Perron inversion from full right contour with integer-cutoff conventions, left and horizontal contour controls and zero residue formulas",
+ "Uniform conductor/q/N/T remainder control, selected zero completeness and global psi(N)-N error"
+]
+
+[checks]
+pin_commit = "test \"$(git rev-parse HEAD)\" = 297e6991c98dc2ae3b79b5d83ba109c75355219e"
+pin_source_blob = "test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean)\" = da068cc9e68abad5834b530c2c5ddac07fd4f76b"
+pin_import_blob = "test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtCharacterCorrection.lean)\" = 520f24cea3bf2c592524ee939fe05b82b756f4dc"
+compile_supplier = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtCharacterCorrection"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution"
+source_elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachDirichletZeroContribution.lean"
+transitive_axiom_audit = "#print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.continuous_finitePerronTermIntegrand; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.finitePerronPolynomialIntegral_eq_term_sum; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.finitePerronPolynomialIntegral_eq_halfPrefix_add_defect; #print axioms GRWTSK.NumberTheory.Primes.GoldbachDirichletZeroContribution.inclusive_vonMangoldt_prefix_eq_finitePerron_plus_endpoint_minus_defect; audit imported dependencies and earlier right-contour source via external temporary Lean audit source"
+fresh_kernel = "SUPPORTED_INDEPENDENT_CHECKER_REQUIRED_IF_AVAILABLE; NOT_RUN"
+expected_checks = "Pin head and hashes, compile actual source imports, confirm theorem statements and all exact hypotheses, no new sorry/admit/axioms, verify intervalIntegral.integral_finsetSum and Finset.sum_sub_distrib elaboration, fresh kernel/axiom receipts separately"
+receipts_location = "grwtsk/noeaaeue, outside pure math, ONLY after separately authorized execution; all actual stdout/stderr/exit statuses and source toolchain closure recorded there"

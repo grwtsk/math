@@ -1,0 +1,40 @@
+# Queued verification only. No execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-sum-transport-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "e6844b388dbf4c452265ee2bf6b001f484d1bdcb"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerSumTransport.lean"
+source_blob = "139a867eb283e98edab7007cc1a2e27b2996a450"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerSumTransport.originalSupportedMass",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerSumTransport.rectangularSupportedMass",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerSumTransport.originalSupportedMass_eq_rectangularSupportedMass",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerWeightTransport",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Original dependent nested sum equals originalSupportedMass",
+ "Rectangular packet equals rectangularSupportedMass",
+ "Original nonunitProperPowerMass equals rectangularProperPowerMass",
+ "Prime-power nonunit support and quantitative exponent count",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerSumTransport.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerSumTransport"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerSumTransport.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "lake env lean <executor-local axiom audit source>"

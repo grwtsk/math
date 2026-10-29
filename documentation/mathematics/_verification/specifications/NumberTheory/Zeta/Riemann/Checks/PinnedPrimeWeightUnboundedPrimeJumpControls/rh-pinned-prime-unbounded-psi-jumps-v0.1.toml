@@ -1,0 +1,66 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-prime-unbounded-psi-jumps-v0.1"
+owner_repository = "grwtsk/math"
+issue = 865
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightUnboundedPrimeJumpControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightUnboundedPrimeJumpControls"
+
+[source_binding]
+parent_branch = "research/856-psi-capacity-pnt-nogo-v01"
+parent_revision = "e5c5ab633176401e647a78f6dae9340096d78976"
+implementation_branch = "research/865-psi-bertrand-prime-jumps-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXACT_PRIME_JUMP_SOURCE_DEFINED / UNBOUNDED_ADJACENT_PSI_JUMP_SOURCE_DEFINED / PNT_THETA_ENVELOPE_STILL_OPEN / ACTUAL_CAPACITY_TO_ENVELOPE_RECURRENCE_STILL_OPEN / NO_RH_CLAIM"
+
+[mathlib]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+bertrand_theorem = "Nat.exists_prime_lt_and_le_two_mul"
+chebyshev_definition = "Chebyshev.psi"
+von_mangoldt_prime_theorem = "ArithmeticFunction.vonMangoldt_apply_prime"
+
+[arithmetic]
+psi_prime_jump = "psi(p)-psi(p-1)=log(p) for p prime"
+psi_error_prime_jump = "psiError(p)-psiError(p-1)=log(p)-1"
+dyadic_scale = "X_j=2^(j+1)"
+next_octave = "2X_j<=m,m+1<=4X_j"
+bertrand = "exists prime p in (2X_j,4X_j]"
+log_lower = "log(p)>log(2X_j)=(j+2)*log(2)"
+unboundedness = "for all real D and j0, exists j>=j0 and adjacent m,m+1 in next octave with 2D<abs(psiError(m+1)-psiError(m))"
+pnt_required = false
+rh_required = false
+
+[formal_discharge]
+source_theorem = "unboundedAdjacentPsiJump_of_bertrand"
+source_target = "GRWTSK.RiemannHypothesis.UnboundedAdjacentPsiJump"
+control_fixed = "fixed_integerPsiCapacity_rejected_given_PNT_and_recurrence"
+control_existential = "integerPsiCapacity_rejected_given_PNT_and_recurrence"
+abstract_jump_premise_removed = true
+pnt_profile_proved = false
+actual_recurrence_profile_proved = false
+unconditional_not_capacity_leann_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightUnboundedPrimeJump"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightUnboundedPrimeJump.lean"
+blob = "006dab478f7a4848c52e7c841163ff269d8f5554"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightUnboundedPrimeJumpControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightUnboundedPrimeJumpControls.lean"
+blob = "7183f3944f5579dce8bb6131fc5e4894e3b1c799"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-prime-unbounded-psi-jumps.md"
+blob = "da31002a03743ca236dd0e767f8cf388781ec160"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CHEBYSHEV_PRIME_JUMP_SOURCE_DEFINED = true
+BERTRAND_NEXT_OCTAVE_SOURCE_DEFINED = true
+UNBOUNDED_ADJACENT_PSI_JUMP_SOURCE_DEFINED = true
+PNT_ENVELOPE_INSTANTIATION_OPEN = true
+ACTUAL_RECURRENCE_ADAPTER_OPEN = true
+RH_PROVED = false

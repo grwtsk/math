@@ -1,0 +1,134 @@
+# Claim-bound mathematical diagnostics
+
+Authored mathematical design and source-candidate notes by **grwtsk contributors**.
+
+The mathematical implementation is
+`GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnostics.lean`,
+with hostile controls in `MathematicalDiagnosticsExamples.lean`. These modules
+are source proof candidates until executed elaboration, fresh kernel checking,
+and transitive axiom auditing succeed on their exact published identities.
+
+## Purpose and scope
+
+The same descriptive error families apply across the current mathematical
+subjects under `GRWTSK/`: algebra, analysis, categories and homological algebra,
+combinatorics, equations and dynamics, foundations, geometry, history,
+information theory, mathematics education, mechanics, number theory, numerical
+analysis, optimization, probability/statistics, and topology. A current root
+path is not a claim that the local taxonomy exhausts mathematics. Each
+subject can refine a family with a subject-specific code without defining a
+second proof-trust system.
+
+The 16 diagnostic families are `source`, `definition`, `hypothesis`, `logic`,
+`proof`, `existence`, `uniqueness`, `structure`, `lifting`, `bound`, `limit`,
+`computation`, `model`, `formalization`, `verification`, and `repository`.
+Their classifications are *descriptive only*; a name, relevance match,
+provenance string, validation status, or file path does not imply a theorem.
+
+`Descriptor` binds a claim to reported source identity, canonical subject path,
+related paths, family, code, and scope description. `CatalogDiagnostic` refers
+to the existing immutable research-state catalog and demands **equality of
+recorded source identities**. This equality does not authenticate Git.
+`Standing` is indexed by the exact `Prop`: `established` stores `P`,
+`refuted` stores `¬P`, and `conditional` stores `Q → P` with `Q` explicit;
+`unresolved`, `candidate`, and `analogy` carry no assertion.
+
+## Mathematical acceptance boundary
+
+`Standing.proof_of_hasProof` and `Standing.refutation_of_hasRefutation`
+recover proofs only from matching constructors. `Standing.not_both` rules out
+simultaneous certified truth and refutation within one status value.
+`Standing.forward` transfers a proved or conditional claim along a supplied
+implication; a refuted antecedent becomes unresolved rather than a refutation
+of the consequent. `CatalogDiagnostic.statement_of_hasProof` retains all
+catalog hypotheses before deriving the raw mathematical conclusion.
+
+`scoped_counterexample` gives the exact nonimplication of a restricted
+universal quantification from a witness inside that restriction.
+`no_universal_descriptor_promotion` and `no_universal_scope_promotion` are
+proof goals preventing metadata-only and scope-escalation routes, respectively.
+Arithmetic fixtures exercise a concrete counterexample, a false conditional,
+wrong-way refutation transfer, and a local-but-not-global assertion. They do
+not establish results in every listed subject or a general automation theorem.
+
+## Explicit scope transport
+
+`scoped_transfer` is a proof-carrying comparison across two scoped claims
+over the same underlying type. It takes a proof of the source property on
+the source domain, an exact function transporting target-domain membership
+into source-domain membership, and a pointwise implication from the source
+property to the target property at each target point. Its conclusion holds
+only on the stated target domain. The accompanying
+`Examples.arithmetic_scoped_transfer` exercises both supplier maps using
+natural-number inequalities. A string describing the scope does not
+construct either map.
+
+This result is a general logical interface; it supplies neither a particular
+spectral or gauge-theoretic comparison nor a continuum-uniform estimate.
+Any cross-model correspondence, source identity transport, nontrivial domain
+normalization, or physical-sector completeness still requires its own proof.
+The source declarations remain candidates pending actual Lean elaboration,
+fresh kernel checks, and transitive axiom audit.
+
+## Source-preserving transport between distinct claim types
+
+`CatalogTransport` relates `ResearchState.Catalog` values whose claim-index
+types may differ. It is a **strict same-source reindexing**: for every target
+claim it specifies a source claim, proves equality of the complete recorded
+`SourceIdentity` values (not merely the declaration names), and supplies a
+Lean implication between the two exact `Meaning` propositions. The meaning
+propositions retain the hypotheses of their respective catalogs. The equality
+is a mathematical comparison of source records, not external Git custody.
+
+`CatalogTransport.meaning` consumes the explicit implication.
+`CatalogTransport.forwardStanding` reuses the existing directional
+`Standing.forward` semantics without turning a refuted antecedent into a
+refuted consequent. `CatalogTransport.statement_of_hasProof` additionally
+requires every target hypothesis before exposing the raw target conclusion.
+`CatalogTransport.comp` composes the index maps, recorded identity
+equalities and mathematical implications, retaining the exact intermediate
+catalog rather than inferring a proof from a descriptive graph edge.
+
+The examples instantiate Nat-indexed, Bool-indexed and Unit-indexed catalogs,
+prove the two corresponding transport implications and their composition,
+and check that proof-carrying status transfers. The
+`changed_blob_blocks_source_preserving_transport` negative control gives
+two Unit-indexed catalogs with different recorded Git blob strings (although
+the declaration name is unchanged) and proves no strict `CatalogTransport`
+can exist between them. This does **not** assert a mathematical impossibility
+of relating separately sourced theorems: such a relation instead requires
+its own explicit adapter that preserves both original source identities
+rather than pretending they are equal.
+
+These are generic foundational implications, not a blanket theorem of
+semantic correspondence between arbitrary GRWTSK subject modules.
+Connections to different physical models, mathematical statements, or
+source versions remain separately unresolved. Fresh Lean compilation,
+kernel checking and transitive axiom auditing are pending.
+
+## Existing structure and validation
+
+This package **extends** rather than replaces `ResearchState.Catalog`,
+`ResearchState.Meaning`, `ResearchState.TypedRelation`, and source identities.
+It is aligned with existing issues #84, #89, and #90 and the conservative
+hypothesis and proof-debt transitions. It makes no change to source acceptance,
+logical inference constructors, repository authority, or transitive axiom policy.
+
+The passive source-bound contract is
+`docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnosticsExamples/mathematical-diagnostics-v0.1.toml`.
+Operational compilation, source custody, receipts, and publication effects
+belong in `grwtsk/noeaaeue`. Source identity, Lean compilation, fresh kernel
+checking, and axiom auditing remain separate; **NOT_RUN** is never acceptance.
+
+A next mathematical supplier is explicit evidence-indexed scope-transport
+rather than a string-based scope promotion; it must preserve exact domains,
+quantifiers, sources, and additional hypotheses. A compatible refinement with
+the existing typed relation graph also requires proof-carrying adapters.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2ec4497aa8a16c1ae226f3ab06dd5c9f7c3c083b8b97f580e63621a3f71ec5fb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnostics.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,199 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "chowla-sofic-cyclic-window-seam-658-v0.1"
+owner_repository = "grwtsk/math"
+issue = 658
+parent_issue = 654
+related_issues = [630, 121, 168, 635, 441, 453, 516, 100, 15]
+route_id = "FINITE_CYCLIC_SOURCE_LABEL_SEAM_TO_TOTAL_VARIATION"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CyclicWindowSeam"
+build_target = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CyclicWindowSeam"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_revision = "c4d3f20e57f6a153bfec9d3f6ce7a3c3188c25d2"
+review_parent_tree = "3b6bca4aa0523b4c36ff815c35ef39ec53cd7ea8"
+pinned_mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+new_module_path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/CyclicWindowSeam.lean"
+new_module_git_blob = "b94fc48280da575c9f0466cd64a3e1a1c38bb2f7"
+new_module_namespace = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicSeam"
+mathematical_note_path = "docs/reviews/chowla-sofic-cyclic-window-seam-658.md"
+mathematical_note_git_blob = "7fb9df964f75c1be6e620ebef2bc3d03394abbc3"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+parent_walsh_elaboration_verified = false
+parent_event_tv_elaboration_verified = false
+cyclic_seam_cardinality_kernel_accepted = false
+finite_cyclic_total_variation_kernel_accepted = false
+cyclic_group_action_formally_constructed = false
+liouville_adapter_imported = false
+bernoulli_limit_proved = false
+chowla_cancellation_proved = false
+sofic_operator_limit_proved = false
+microscopic_gue_or_rh_proved = false
+positive_window_horizon_required = true
+seam_max_offset_le_horizon_required = true
+exact_sample_roots = "Finset.range N"
+exact_seam_roots = "Finset.Ico (N-r) N"
+strict_good_root_cutoff = "n < N-r"
+ordinary_source_argument = "n+h"
+cyclic_source_argument = "(n+h)%N"
+chosen_pattern_marginal_only = true
+statistical_target = "finiteEventTV(ordinaryRootPatterns,cyclicRootPatterns) <= r/N"
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.CyclicWindowSeam"
+authored_declaration_count = 9
+authored_definition_count = 3
+authored_theorem_count = 6
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = [
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FinitePatternBoundaryTV",
+  "Mathlib",
+]
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FinitePatternBoundaryTV.lean"
+git_blob = "8087556eaff5a988caba7a2ec89b5f4607daa8ca"
+status = "STACKED_PARENT_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_sources]]
+path = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean"
+git_blob = "afa3ef31687182ebccf1877aeddb1e3647c7b935"
+status = "STACKED_ANCESTOR_SOURCE_NOT_FRESHLY_ELABORATED"
+
+[[inherited_targets]]
+path = "docs/verification/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FinitePatternBoundaryTV/chowla-sofic-pattern-boundary-tv-654-v0.1.toml"
+git_blob = "da5a9657bf64efb13296dc95be2739780c42c70d"
+status = "PARENT_PASSIVE_TARGET_NOT_VERIFICATION_RECEIPT"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicSeam.cyclicSeam"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicSeam.cyclicSeam_subset_range"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicSeam.cyclicSeam_card"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicSeam.cyclicSeam_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicSeam.root_lt_cutoff_of_not_mem_seam"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicSeam.ordinaryWindow"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicSeam.cyclicWindow"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicSeam.ordinaryWindow_eq_cyclic_off"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.CyclicSeam.finiteTV_ordinary_cyclicWindow_le"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-horizon"
+requirement = "N=0 is not a probability horizon; the final theorem must require N>0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam-cardinality-range"
+requirement = "Exact seam cardinality r requires r<=N; for r>N the interval saturates and its size is not r."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-seam"
+requirement = "For r=0 the seam is empty, and allowed shifts are only zero, hence no wraparound difference."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-boundary"
+requirement = "For r=N the entire range may be exceptional and r/N=1, not a vanishing boundary."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "strict-off-by-one"
+requirement = "Root n=N-r-1 (if it exists) is good; root n=N-r is exceptional. Ico left closed/right open must not be swapped."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-sequence-identity"
+requirement = "Ordinary and cyclic labels must be computed from the SAME original binary sequence a, not independent samples."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "modulus-identity"
+requirement = "Cyclic label is a((n+h)%N), ordinary label is a(n+h), and Nat.mod_eq_of_lt must be used under n+h<N."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-selected-shifts"
+requirement = "Every selected h must be proved <=r, and all selected coordinates must agree at each nonexceptional root."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-growth-shortcut"
+requirement = "Finite TV <= r/N does not tend to 0 if r grows proportionally to N; fixed-window control does not imply growing-shift uniformity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "liouville-offset-adapter-open"
+requirement = "Actual Liouville source uses a(n)=lambda(n+1); this specialisation and its nonzero guard are not imported or proved here."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "sofic-distinction"
+requirement = "A finite N-cycle approximation for Z is not a Bernoulli measure assertion or Liouville ergodicity theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-spectral-promotion"
+requirement = "No microscopic GUE, zeta-divisor, operator-norm convergence, or Riemann Hypothesis follows from binary finite-event TV."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-trust-promotion"
+requirement = "Textual source/manifest inspection without exact-head kernel elaboration and external audit remains NOT_RUN."
+status = "NOT_RUN"

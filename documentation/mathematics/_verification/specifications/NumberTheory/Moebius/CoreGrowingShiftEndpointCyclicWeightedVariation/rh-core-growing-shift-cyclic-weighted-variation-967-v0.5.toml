@@ -1,0 +1,100 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-cyclic-weighted-variation-967-v0.5"
+owner_repository = "grwtsk/math"
+issue = 967
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_WEIGHTED_VARIATION_TRANSFER_AUTHORED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicWeightedVariation"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicWeightedVariation"
+
+[checked_parent_binding]
+parent_revision = "00ad56797863363078815f4d9f97f51ac9d7e982"
+generic_interval_distance_path = "GRWTSK/NumberTheory/CharacterSums/FiniteCyclicIntervalDistance.lean"
+generic_interval_distance_blob = "fc1f7afe93845df908f2a00481b1e33cfe3822cf"
+original_coordinate_owner_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftEndpointCyclicCoordinates.lean"
+original_coordinate_owner_blob = "cbc6abb605ba98b728a7de9a734565a83b9b325c"
+parent_local_check = "ACTUAL_CANONICAL_WFAIL3423_AND_TRUST0_ALL92_REPORTED_BY_USER"
+legacy_full_156_module_leaf_verified = false
+
+[source_binding]
+generic_source_commit = "820b4108908ee3710b3e0d8eed061df9be1f9c4e"
+generic_source_path = "GRWTSK/NumberTheory/CharacterSums/FiniteCyclicWeightedVariation.lean"
+generic_source_blob = "178ec7fc84fde9327d738aa841f547511db6a05c"
+endpoint_source_commit = "8fc88e2c5619714268cdac7f2f017f5dbc60ce67"
+endpoint_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftEndpointCyclicWeightedVariation.lean"
+endpoint_source_blob = "61eda8f97844d424f055a22a9b98853987524cbf"
+
+[selected_increment]
+coefficient_variation = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicCoefficientVariation"
+variation_nonnegative = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicCoefficientVariation_nonneg"
+exact_abel_identity = "GRWTSK.NumberTheory.CharacterSums.sum_mul_stdAddChar_neg_Ico_eq_terminal_add_variation"
+unweighted_variation_transfer = "GRWTSK.NumberTheory.CharacterSums.norm_sum_mul_stdAddChar_neg_Ico_le_coefficientVariation"
+reciprocal_coefficient_variation = "GRWTSK.NumberTheory.CharacterSums.finiteCyclicReciprocalCoefficientVariation"
+reciprocal_variation_transfer = "GRWTSK.NumberTheory.CharacterSums.norm_sum_mul_stdAddChar_neg_div_nat_add_Ico_le_variation"
+endpoint_variation = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.coreGrowingShiftEndpointTransverseReciprocalCoefficientVariation"
+endpoint_exact_abel_identity = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.coreGrowingShiftEndpointTransverseWeightedReciprocal_Ico_eq_abel"
+endpoint_variation_transfer = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.coreGrowingShiftEndpointTransverseWeightedReciprocal_Ico_norm_le_variation"
+literal_tail_variation_transfer = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.coreGrowingShiftEndpointTransverseTailHarmonicWeighted_norm_le_variation"
+proof_classification = "FINITE_DIRICHLET_TRANSFER_THROUGH_EXACT_RECIPROCAL_WEIGHTED_COEFFICIENT_VARIATION"
+
+[mathematical_statement]
+partial_sum_scale = "M_q(t)=q/(2*d_q(t))"
+variation = "V(a;A,B)=0 if B<=A, else norm(a(B-1))+sum_{k in Ico A (B-1)} norm(a(k)-a(k+1))"
+generic_bound = "norm(sum_{n in Ico A B} a(n)*chi_neg(n*t)) <= M_q(t)*V(a;A,B)"
+reciprocal_bound = "norm(sum a(n)*chi_neg(n*t)/(n+R)) <= M_q(t)*V(n mapsto a(n)/(n+R);A,B)"
+hypotheses = "NeZero q, 1<=A, t!=0; empty and reversed intervals included"
+
+[exact_abel_boundary]
+terminal_coefficient_retained = true
+all_successor_differences_retained = true
+all_partial_character_sums_retained = true
+empty_interval_variation_is_zero = true
+opposite_phase_obstruction_removed = false
+reciprocal_drop_endpoint_signs_modified = false
+
+[authentic_application]
+coordinate_owner = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftEndpointCyclicCoordinates"
+original_phase_reused = true
+original_doubled_modulus_reused = true
+original_circular_distance_reused = true
+literal_owner = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointTransverseSummationByPartsFourier"
+literal_declaration = "coreGrowingShiftEndpointTransverseInteriorTailHarmonicXFourier"
+literal_interval = "Finset.Ico (A+1) B"
+literal_weighted_summand = "a(n)*coreGrowingShiftEndpointTransverseNatCharacter(j,u,n)*((n+R:Complex)^-1)"
+literal_owner_full_import_closure_verified = false
+application_instantiated_inside_owner = false
+
+[evidence_states]
+source_draft = true
+generic_source_elaborated = false
+endpoint_source_elaborated = false
+kernel_checked = false
+axiom_audited = false
+externally_replayed = false
+checked_parent_definitions_reused = true
+new_parallel_phase_definition_introduced = false
+new_parallel_distance_definition_introduced = false
+new_parallel_modulus_definition_introduced = false
+
+[preserved_components]
+direct_zero_mode_joint_packet = true
+capped_correction = true
+genuine_right_endpoint_term = true
+singular_numerator = true
+exact_supports = true
+opposite_phase_obstruction = true
+
+[nonclaims]
+small_mobius_variation_proved = false
+small_liouville_variation_proved = false
+centered_fiber_variation_proved = false
+squarefree_gcd_variation_proved = false
+weighted_arithmetic_packet_estimate_proved = false
+coercivity_proved = false
+full_endpoint_estimate_proved = false
+legacy_full_leaf_replayed = false
+riemann_hypothesis_proved = false
+chowla_proved = false
+goldbach_proved = false
+
+[next_obligation]
+statement = "Replay and axiom-audit both weighted-variation modules. Then identify an actual repository arithmetic coefficient sequence and prove a nontrivial bound for its reciprocal-weighted variation, square mass, or energy; coefficientwise norm bounds alone remain obstructed."

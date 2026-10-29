@@ -1,0 +1,44 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-boundary-quadratic-energy-609-v0.1"
+owner_repository = "grwtsk/math"
+issue = 609
+parent_issue = 605
+parent_pr = 606
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreBoundaryQuadraticEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreBoundaryQuadraticEnergy"
+
+[source_binding]
+stacked_parent_revision = "c0171d6763c71547fc61978f6a95b0f985f6ae1f"
+candidate_branch = "research/rh-boundary-energy-609"
+theorem_source_commit = "7e61d01d9db14a2e7c3c31eea07f1476ee17052d"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreBoundaryQuadraticEnergy.lean"
+theorem_source_git_blob = "1859f3751904720bee5722eb6b83c2d9c82f83aa"
+
+[selected_increment]
+mertens_prefix = "mertensPrefixReal"
+moving_window_prefix = "boundaryMovingWindowMertens_eq_prefix_sub"
+moving_energy = "boundaryMovingWindowSquareEnergy"
+tail_energy = "boundaryTailSquareEnergy"
+cauchy = "boundaryMovingWindowBilinearPacket_sq_le_energy"
+boundary_energy_bound = "coreBoundarySignedPacket_sq_le_quadraticEnergy"
+quadratic_supplier = "SubpolynomialBoundaryQuadraticEnergyProduct"
+quadratic_to_boundary = "subpolynomialCoreBoundarySignedPacket_of_quadraticEnergy"
+adapter = "ToBoundaryQuadraticEnergyAdapter"
+weak_mertens_placeholder = "WeakMertensStyleSource"
+gonek_hejhal_placeholder = "GonekHejhalBoundarySource"
+proof_classification = "SUFFICIENT_ONLY_FINITE_CAUCHY_AND_MERTENS_PREFIX_LOCALIZATION"
+next_obstruction = "prove localization and tail square-energy estimates, or bypass the positive quadratic majorant"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+weak_mertens_adapter_constructed = false
+gonek_hejhal_adapter_constructed = false
+quadratic_supplier_proved = false
+riemann_hypothesis_proved = false

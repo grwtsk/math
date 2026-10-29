@@ -1,0 +1,160 @@
+{
+  "schema": "grwtsk.mathematical-diagnostics-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_commit": "df0869b3a5cd1786971c4eafcf1a71bf89e11941",
+  "source_repair": {
+    "source_commit": "df0869b3a5cd1786971c4eafcf1a71bf89e11941",
+    "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnostics.lean",
+    "source_blob": "368affe63c45d80ef5ca30ad245d3f620d2f30f8",
+    "source_sha256": "12cb10eb1083dc5cba3ea43c63f9ce60e9ddfed70d65a95ac0e9ae6ba86c51f9",
+    "original_commit": "d0ec09b51e5dc984595d42b7cf7fd8176dcbcb89",
+    "original_blob": "77508e5ff9e87cbaefe851406b16b4f16b979dcc",
+    "native": "NOT_RUN"
+  },
+  "contracts": [
+    {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "blob": "368affe63c45d80ef5ca30ad245d3f620d2f30f8",
+      "declarations": [],
+      "discover_module_declarations": true,
+      "module_expected_types": {
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogDiagnostic.meaning_of_hasProof": "forall {Claim : Type} {catalog : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Catalog Claim} (diagnostic : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogDiagnostic catalog) (_accepted : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasProof diagnostic.standing = true), GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Meaning catalog diagnostic.descriptor.claim",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogDiagnostic.statement_of_hasProof": "forall {Claim : Type} {catalog : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Catalog Claim} (diagnostic : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogDiagnostic catalog) (_accepted : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasProof diagnostic.standing = true) (_hypotheses : forall h, h ∈ catalog.hypotheses diagnostic.descriptor.claim -> h), catalog.statement diagnostic.descriptor.claim",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.comp": "forall {A B C : Type} {firstCatalog : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Catalog A} {middleCatalog : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Catalog B} {lastCatalog : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Catalog C} (_first : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport firstCatalog middleCatalog) (_second : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport middleCatalog lastCatalog), GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport firstCatalog lastCatalog",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.forwardStanding": "forall {SourceClaim TargetClaim : Type} {sourceCatalog : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Catalog SourceClaim} {targetCatalog : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Catalog TargetClaim} (transport : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport sourceCatalog targetCatalog) (targetClaim : TargetClaim) (_standing : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Meaning sourceCatalog (transport.reindex targetClaim))), GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Meaning targetCatalog targetClaim)",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.meaning": "forall {SourceClaim TargetClaim : Type} {sourceCatalog : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Catalog SourceClaim} {targetCatalog : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Catalog TargetClaim} (transport : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport sourceCatalog targetCatalog) (targetClaim : TargetClaim) (_sourceProof : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Meaning sourceCatalog (transport.reindex targetClaim)), GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Meaning targetCatalog targetClaim",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.statement_of_hasProof": "forall {SourceClaim TargetClaim : Type} {sourceCatalog : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Catalog SourceClaim} {targetCatalog : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Catalog TargetClaim} (transport : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport sourceCatalog targetCatalog) (targetClaim : TargetClaim) (standing : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState.Meaning sourceCatalog (transport.reindex targetClaim))) (_accepted : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasProof standing = true) (_hypotheses : forall h, h ∈ targetCatalog.hypotheses targetClaim -> h), targetCatalog.statement targetClaim",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward": "forall {P Q : Prop} (_bridge : P -> Q), GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing P -> GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing Q",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward_conditional": "forall {P Q R : Prop} (bridge : P -> Q) (supply : R -> P), GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward bridge (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.conditional R supply) = (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.conditional R (fun hr => bridge (supply hr)) : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing Q)",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward_established": "forall {P Q : Prop} (bridge : P -> Q) (proof : P), GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward bridge (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.established proof) = GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.established (bridge proof)",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward_refuted": "forall {P Q : Prop} (bridge : P -> Q) (refutation : Not P), GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward bridge (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.refuted refutation) = (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.unresolved : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing Q)",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasProof": "forall {P : Prop}, GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing P -> Bool",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasRefutation": "forall {P : Prop}, GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing P -> Bool",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.not_both": "forall {P : Prop} (s : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing P), Not (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasProof s = true ∧ GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasRefutation s = true)",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.proof_of_hasProof": "forall {P : Prop} (s : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing P) (_accepted : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasProof s = true), P",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.refutation_of_hasRefutation": "forall {P : Prop} (s : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing P) (_accepted : GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasRefutation s = true), Not P",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.no_universal_descriptor_promotion": "Not (forall (P : Prop), GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Descriptor Unit -> P)",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.no_universal_scope_promotion": "Not (forall (alpha : Type) (domain property : alpha -> Prop), (forall x, domain x -> property x) -> forall x, property x)",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.scoped_counterexample": "forall {alpha : Type} (domain property : alpha -> Prop) (witness : alpha) (_within : domain witness) (_violates : Not (property witness)), Not (forall x, domain x -> property x)",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.scoped_transfer": "forall {alpha : Type} {sourceDomain targetDomain sourceProperty targetProperty : alpha -> Prop} (_sourceProof : forall x, sourceDomain x -> sourceProperty x) (_domainSupplier : forall x, targetDomain x -> sourceDomain x) (_propertySupplier : forall x, targetDomain x -> sourceProperty x -> targetProperty x), forall x, targetDomain x -> targetProperty x"
+      },
+      "required_module_declarations": [
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Family",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Descriptor",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasProof",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasRefutation",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.proof_of_hasProof",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.refutation_of_hasRefutation",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.not_both",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward_established",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward_refuted",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward_conditional",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogDiagnostic",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogDiagnostic.meaning_of_hasProof",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogDiagnostic.statement_of_hasProof",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.scoped_counterexample",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.no_universal_descriptor_promotion",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.no_universal_scope_promotion",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.scoped_transfer",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.meaning",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.forwardStanding",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.statement_of_hasProof",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.comp",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.reindex",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.sourceIdentity",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.CatalogTransport.preservesMeaning"
+      ],
+      "sha256": "12cb10eb1083dc5cba3ea43c63f9ce60e9ddfed70d65a95ac0e9ae6ba86c51f9",
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnostics.lean"
+    },
+    {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "blob": "d9e2fd5be2eb2fd8be5eccb90e9c87088c651857",
+      "declarations": [],
+      "discover_module_declarations": true,
+      "module_expected_types": {
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.arithmetic_counterexample": "Not (forall n : Nat, n <= 0)",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.arithmetic_scoped_transfer": "(forall n : Nat, n <= 2 -> n <= 2) -> (forall n : Nat, n = 0 -> n <= 3)",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.candidate_example_has_no_proof_flag": "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasProof GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.candidateExample.standing = false",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.conditional_false_is_not_established": "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasProof GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.falseConditional = false",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.forward_refutation_does_not_refute_true": "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.hasRefutation (GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Standing.forward GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.falseToTrue GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.falseRefutation) = false",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.restricted_true_global_false": "(forall n : Nat, n = 0 -> n = 0) ∧ Not (forall n : Nat, n = 0)"
+      },
+      "required_module_declarations": [
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.establishedExample",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.candidateExample",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.established_example_sound",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.candidate_example_has_no_proof_flag",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.falseRefutation",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.falseToTrue",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.forward_refutation_does_not_refute_true",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.falseConditional",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.conditional_false_is_not_established",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.arithmetic_counterexample",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.restricted_true_global_false",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.arithmetic_scoped_transfer",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.boolCatalogTransport",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.unitCatalogTransport",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.bool_indexed_transport_sound",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.bool_indexed_proof_status",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.composed_catalog_transport_sound",
+        "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.MathematicalDiagnostics.Examples.changed_blob_blocks_source_preserving_transport"
+      ],
+      "sha256": "c2150478d32731a14356725868061c82eae2d50423e532b4f60bda6837e5807b",
+      "source": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnosticsExamples.lean"
+    }
+  ],
+  "preparation": {
+    "registry": "formalization/issue-burndown/20261025T161947.764384Z/diagnostics-reviewed-registry.json",
+    "registry_sha256": "34a2d429f1a66ab54d548f3f4bf2a14f4fdd98ae6e873c1f22d4f77099b8b13c",
+    "project_modules": 9,
+    "upstream_source_modules": 620,
+    "source_assets": 27,
+    "complete_module_audit_contracts": 2,
+    "required_structural_names": 45,
+    "selected_type_expressions": 25,
+    "types_per_module": [
+      19,
+      6
+    ],
+    "required_names_per_module": [
+      27,
+      18
+    ],
+    "fresh_importers_required": 2,
+    "producer_pins": 13,
+    "producer_hashes_match": true,
+    "noe_head": "2827790f3cd4a72d2f9d2410f30ebdb03e4bf080",
+    "native_compile_origin_kernel_axiom_type_root": "NOT_RUN"
+  },
+  "scope": {
+    "repair": "Exactly two lexical quotes around the proof-local identifier local; unquoting reproduces the entire predecessor. No declaration/signature/hypothesis/other proof token changes.",
+    "catalogs": "Independently chosen source/target claim types; strict full recorded SourceIdentity equality, explicit reindex and semantic implication; all target hypotheses remain required. Strings do not authenticate Git.",
+    "standing": "Conditional premises retained; no metadata-to-proof coercion; forward refutation stays unresolved.",
+    "preserved_modules": "Examples and all seven imported GRWTSK suppliers are unchanged, including ResearchState admission rules.",
+    "selected_types_are_not_exhaustive": "25 selected expressions; private fixture-dependent theorem interfaces and full root library build remain distinct pending gates.",
+    "metadata_exception": "Pre-existing remote history is preserved; this local repair uses both required author/committer identities. No history rewrite."
+  },
+  "acceptance": {
+    "native_source_compile": "NOT_RUN",
+    "complete_compiler_origin_audits": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axiom_audits": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "remaining_fixture_type_comparisons": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "issue_state": "OPEN"
+}

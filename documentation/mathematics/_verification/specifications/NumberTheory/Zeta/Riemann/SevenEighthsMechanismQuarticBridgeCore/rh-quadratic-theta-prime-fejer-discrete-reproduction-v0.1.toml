@@ -1,0 +1,37 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-discrete-reproduction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "4da70fb6f877c7d45fb16dc63bd5dd910ab83c14"
+parent_tree = "24eb622c5ce1ea5eecf0bb966ce2009b12533c95"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / ALIAS_FREE_CUTOFF_REGIME_TYPED / NONZERO_MODE_MOD_PERIOD_SOURCE_PROVED / ZERO_MODE_COEFFICIENT_SOURCE_PROVED / DISCRETE_MASS_ONE_OPEN / DISCRETE_SAMPLE_NONNEGATIVITY_OPEN / SHARP_STEP_COMPARISON_OPEN"
+
+[cutoff]
+condition = "0 < N < 4X"
+reason = "avoid nonzero Fourier-mode aliasing modulo the period"
+
+[closed]
+nonzero_support_modes_nonzero_mod_period = true
+zero_mode_weight_one = true
+
+[frontier]
+mass_one = "PeriodFourXSampledKernelMassOneClaim"
+nonnegative = "PeriodFourXSampledKernelNonnegativeClaim"
+comparison = "NonAliasingPrimePrefixFejerFirstMomentComparisonAtCutoff"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+ALIAS_FREE_CUTOFF_REGIME_TYPED = true
+NONZERO_MODE_MOD_PERIOD_SOURCE_PROVED = true
+ZERO_MODE_COEFFICIENT_SOURCE_PROVED = true
+DISCRETE_MASS_ONE_PROVED = false
+DISCRETE_SAMPLE_NONNEGATIVITY_PROVED = false
+SHARP_STEP_COMPARISON_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

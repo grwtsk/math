@@ -1,0 +1,120 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-height-local-descent-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 242
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightLocalDescent"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightLocalDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[modules]]
+name = "GRWTSK"
+
+[[hostile_controls]]
+id = "reject-path-Type-as-Prop"
+description = "CompleteVerticalCoverage.pathThrough and fullPathThrough must use Nonempty (VerticalPath ...). VerticalPath remains data in Type. Replay nonempty_trans and the exact path fixtures."
+
+[[hostile_controls]]
+id = "reject-coverage-as-free-geometric-premise"
+description = "Replay rh_of_proved_required_statement: completed sufficient-route coverage plus an independently proved required statement already implies RH. Geometric overlap or graph connectedness does not supply this coverage."
+
+[[hostile_controls]]
+id = "reject-stale-neutral-root-profile"
+description = "ZetaCommutatorRoot.localProfile_status must be necessary, justified by rootStatement_of_rh. rootStatement_implies_rh_iff must retain both directions and must not claim the sufficient implication is provided."
+
+[[hostile_controls]]
+id = "reject-bounded-chart-as-global-equivalence"
+description = "CriticalStripHeightDescent.windowProfile_status is necessary for each N; allWindowsProfile_status is equivalent only for the universal all-height statement. Missing forward implications are not reported as refuted."
+
+[[hostile_controls]]
+id = "reject-gluing-without-zero-cover"
+description = "rhOn_iff_on_zero_cover must retain every subset premise and actual coverage of all canonical target zeros in U. rhOn_union_iff consumes both local statements. These are predicate gluing theorems, not analytic continuation or coordinate cocycles."
+
+[[hostile_controls]]
+id = "reject-upward-step-without-shell-proof"
+description = "window_succ_iff requires WindowRH N and ShellRH N. rh_of_base_and_shell_extension requires a base proof and a total extension theorem at every N. No shell inhabitant or global induction supplier is provided."
+
+[[hostile_controls]]
+id = "reject-bounded-or-repeated-cutoffs-as-cofinal"
+description = "cofinal_windows_iff_rh retains the universal cofinality premise. bounded_levels_not_cofinal and bounded_windows_miss_point must elaborate; their counterexamples are cutoffs and ambient points, not asserted zeta zeros."
+
+[[hostile_controls]]
+id = "reject-equal-height-as-equal-source"
+description = "root_height_not_injective must retain its exact conclusion. The root coordinate remains injective; its real height readout does not. No source identity, multiplicity or critical-line status follows from height equality."
+
+[[hostile_controls]]
+id = "reject-coordinate-as-ring-homomorphism"
+description = "Replay coordinateOperator_mul, coordinateOperator_one_ne_zero, coordinateOperator_not_multiplicative, and no_coordinate_ringHom. The full represented algebra is noncommutative, but the chosen parameter coordinate is not a multiplicative map."
+
+[[hostile_controls]]
+id = "reject-discrete-domain-as-holomorphic-neighborhood"
+description = "NonvacuousHolomorphicChartMap must carry domain_isOpen as well as nonempty-domain and nonconstant witnesses. Finite sample differentiability cannot stand in for an open complex chart."
+
+[[hostile_controls]]
+id = "reject-root-only-or-old-source-replay"
+description = "The new descent and regression modules are intentionally not added to the public aggregate imports. Replay them explicitly and reconcile all listed modules at one immutable source revision; no earlier receipt covers these changed signatures."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "an independently constructed base or shell proof",
+  "a total shell-extension supplier for the actual zeta function",
+  "a Connes spectral triple or spectral realization of zeta zeros",
+  "certified enumeration, multiplicities or tail control",
+  "analytic continuation from pointwise predicate gluing",
+  "a complete source-faithful coordinate atlas or overlap cocycle family",
+  "a concrete zeta-to-Weil ring and holomorphic transition",
+  "sufficiency of an individual finite-height chart for RH",
+  "refutation or independence of a missing finite-height implication",
+  "an unconditional proof of RH",
+  "a Lean elaboration, kernel audit or replay receipt produced by this manifest"
+]

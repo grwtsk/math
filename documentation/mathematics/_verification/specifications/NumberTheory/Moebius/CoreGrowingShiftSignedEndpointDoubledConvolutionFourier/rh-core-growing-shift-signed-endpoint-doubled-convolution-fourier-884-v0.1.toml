@@ -1,0 +1,83 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-doubled-convolution-fourier-884-v0.1"
+owner_repository = "grwtsk/math"
+issue = 884
+parent_issue = 876
+parent_pr = 879
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDoubledConvolutionFourier"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointDoubledConvolutionFourier"
+
+[source_binding]
+stacked_parent_revision = "32a1f8485ae3502f2ca0c95459eb4390a3223a6a"
+candidate_branch = "research/rh-endpoint-doubled-convolution-884"
+theorem_source_commit = "25c791fc5f28357d008c194e9be46cbca3f38554"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointDoubledConvolutionFourier.lean"
+theorem_source_git_blob = "9c290fc1c82fa526b5ef4e808240b707087aacf3"
+
+[selected_increment]
+doubled_modulus = "coreGrowingShiftEndpointDoubledFourierModulus"
+doubled_index = "CoreGrowingShiftEndpointDoubledFourierIndex"
+doubled_mobius_zero_pad = "coreGrowingShiftEndpointDoubledMobiusZeroPad"
+bulk_symbol = "coreGrowingShiftEndpointDoubledDifferenceBulkSymbol"
+bulk_convolution_kernel = "coreGrowingShiftEndpointDoubledDifferenceBulkConvolutionKernel"
+clipping_lift = "coreGrowingShiftEndpointDoubledPrefixClippingKernelZeroPad"
+signed_doubled_kernel = "coreGrowingShiftEndpointDoubledDifferenceMinusClipKernelZeroPad"
+forward_no_wrap = "coreGrowingShiftEndpointDoubledDifference_val_of_lt"
+reverse_no_wrap = "coreGrowingShiftEndpointDoubledReverseDifference_ge_window"
+forward_bulk_symbol_identity = "coreGrowingShiftEndpointDoubledDifferenceBulkSymbol_sub_of_lt"
+reverse_bulk_symbol_zero = "coreGrowingShiftEndpointDoubledDifferenceBulkSymbol_sub_eq_zero_of_not_lt"
+weighted_bulk_identity = "coreGrowingShiftEndpointDoubledBulk_weighted_eq_parent"
+weighted_signed_extension_identity = "coreGrowingShiftEndpointDoubledDifferenceMinusClip_weighted_eq_parentExtension"
+bulk_packet_reindexing = "coreGrowingShiftSignedEndpointDoubledDifferenceBulkZeroPaddedPacketComplex_eq_parent"
+clipping_packet_reindexing = "coreGrowingShiftSignedEndpointDoubledPrefixClippingZeroPaddedPacketComplex_eq_parent"
+signed_packet_reindexing = "coreGrowingShiftSignedEndpointDoubledDifferenceMinusClipZeroPaddedPacketComplex_eq_parent"
+character_orthogonality = "finite_stdAddChar_neg_mul_sum"
+generic_difference_dft_diagonal = "finiteZModDifferenceKernelDFT2_eq_frequencyDiagonal"
+generic_one_frequency_collapse = "finite_zmod_difference_bilinear_fourier_collapse"
+bulk_kernel_dft = "coreGrowingShiftEndpointDoubledDifferenceBulkKernelDFT2"
+bulk_frequency_diagonal = "coreGrowingShiftEndpointDoubledDifferenceBulkKernelDFT2_eq_frequencyDiagonal"
+bulk_one_frequency_packet = "coreGrowingShiftSignedEndpointDoubledDifferenceBulkOneFrequencyPacketComplex"
+bulk_packet_collapse = "coreGrowingShiftSignedEndpointDoubledDifferenceBulkFourierPacketComplex_eq_oneFrequency"
+clipping_fourier_packet = "coreGrowingShiftSignedEndpointDoubledPrefixClippingFourierPacketComplex"
+complete_complex_packet = "coreGrowingShiftSignedEndpointDoubledConvolutionFourierPacketComplex"
+complete_complex_packet_identity = "coreGrowingShiftSignedEndpointDoubledConvolutionFourierPacketComplex_eq_parent"
+complete_real_packet = "coreGrowingShiftSignedEndpointDoubledConvolutionFourierPacket"
+complete_real_packet_identity = "coreGrowingShiftSignedEndpointDoubledConvolutionFourierPacket_eq_parent"
+packet_return = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointDoubledConvolutionFourier"
+signed_source = "SubpolynomialCoreGrowingShiftSignedEndpointDoubledConvolutionFourierPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointDoubledConvolutionFourierPacket_iff_parent"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointDoubledConvolutionFourierPacket"
+proof_classification = "EXACT_DOUBLED_CYCLIC_BULK_CONVOLUTION_AND_FREQUENCY_DIAGONAL"
+next_obstruction = "prove a joint signed estimate for the one-frequency bulk multiplier and the remaining two-frequency clipping correction"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+parent_triangular_kernel_declared_circulant = false
+support_enlargement_used = false
+diagonal_reinserted = false
+wrapped_reverse_pairs_admitted = false
+doubled_convolution_estimate_proved = false
+bulk_one_frequency_estimate_proved = false
+clipping_estimate_proved = false
+joint_signed_estimate_proved = false
+bulk_multiplier_replaced_by_absolute_value = false
+bulk_clip_triangle_inequality_used = false
+parseval_bound_used = false
+cauchy_schwarz_used = false
+hilbert_schmidt_bound_used = false
+operator_norm_bound_used = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+gowers_adapter_constructed = false
+large_sieve_adapter_constructed = false
+dispersion_adapter_constructed = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false

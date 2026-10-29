@@ -1,0 +1,111 @@
+id = "rh-neighborhood-main-integration-v0.1"
+kind = "passive-source-bound-verification-specification"
+contribution = "grwtsk"
+repository = "grwtsk/math"
+math_commit = "129468cf1c7e78e601feec06beaedfd6cae2e22e"
+parent_commit = "f231fb54bc413556aa8f79adb1a00079cff7688e"
+math_tree = "9046c4de8df1ef565a53d5d04664c1a9db2ce9d8"
+source_publication = "INTEGRATED_ON_MAIN"
+compile_status = "NOT_RUN"
+fresh_kernel_status = "NOT_RUN"
+transitive_axiom_status = "NOT_RUN"
+new_analytic_admission = "NONE"
+operational_receipt = "NONE"
+root_imports_changed = false
+dependency_pins_changed = false
+remote_execution_dispatched = false
+issues = [1392, 1394, 1395, 1396, 1397]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+upstream_commit = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+upstream_lean_toolchain = "leanprover/lean4:v4.34.1"
+upstream_mathlib_revision = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+upstream_workspace_separate = true
+prior_detached_trees = ["d31dd768877ac5c422cb7dd5096f71e0be88b66e", "bce767cbe77f87e0eaa299dc620290f67e49dcfe", "2a6ab0be9ed6ab4af56bd33e86951c13b37192fe", "4218885968d9fb0ee3aea49996bf9fea5f1d0a51", "98d1febc7268ab8dba66a6a1363252fbbd0e715d"]
+requested_local_checks = ["lake build <each GRWTSK module below>", "lake env lean <each corresponding local source path>", "inspect exact declaration types and full transitive axiom closure", "fresh independent kernel replay using the actual approved checker"]
+requested_upstream_checks = ["in the exact separate upstream workspace: lake build OAI.NumberTheory.TwoPointCorrelations.FinalMain OAI.NumberTheory.DirichletL.Nonvanishing", "lake env lean <absolute path to each upstream-adapters source>", "upstream comparator and independent closure checks as specified in issue 1392"]
+independent_checker_command = "UNRESOLVED; do not invent execution or acceptance"
+central_literature_index_reconciliation = "PENDING; original index preserved; provenance and exact commands remain in linked source-bound issues"
+
+[[modules]]
+path = "GRWTSK/Analysis/Inequalities/FiniteCorrelationEnvelope.lean"
+blob = "92b4e6cc721896cd975dfafa26bcce85d805f1b8"
+issue = 1392
+[[modules]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelCorrelationEnvelope.lean"
+blob = "0bf1e3112f4ea564cb425d3bc5d753da97dbcf37"
+issue = 1392
+[[modules]]
+path = "upstream-adapters/OpenAISevenEighthsGap.lean"
+blob = "6d480288f0ec6819097c0e93a0aec1b4d62a47b0"
+issue = 1392
+workspace = "upstream-only"
+[[modules]]
+path = "upstream-adapters/OpenAITwoPointFiniteFamily.lean"
+blob = "ec59214ed3ae65ec305da3761dd939d2f82c2c1c"
+issue = 1392
+workspace = "upstream-only"
+[[modules]]
+path = "GRWTSK/Analysis/FiniteSums/DiscreteFourierReadout.lean"
+blob = "36255de86f0c7558c6c655052de9ddd2fd48e0ce"
+issue = 1394
+[[modules]]
+path = "GRWTSK/Analysis/FiniteSums/DiscreteFourierSynthesis.lean"
+blob = "ccb92df3b13f3421db047455aac091499fefc133"
+issue = 1394
+[[modules]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelFourierCompletion.lean"
+blob = "dce4f08f22ab3b619740afabd56a062638b38cd0"
+issue = 1394
+[[modules]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelFourierReadout.lean"
+blob = "101e31f8a4d7544ef5e527f6765b86eb46e52e27"
+issue = 1394
+[[modules]]
+path = "GRWTSK/Analysis/FiniteSums/DyadicBilinearRefinement.lean"
+blob = "77eea97425b9b1e47892d1b4ce90529b3fa7877b"
+issue = 1395
+[[modules]]
+path = "GRWTSK/Analysis/FiniteSums/DyadicContrastBudgets.lean"
+blob = "4b67d3c3aa3a98b2de8509f1da0a64162acc6324"
+issue = 1395
+[[modules]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelDyadicReadout.lean"
+blob = "804e7f35caa191b64c3b5cff90389e9e3f3fe67e"
+issue = 1395
+[[modules]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelDyadicRowBudget.lean"
+blob = "1cf11b3fb003f968d986e480db4915a04c5117b3"
+issue = 1395
+[[modules]]
+path = "GRWTSK/Analysis/FiniteSums/SlidingWindowSampling.lean"
+blob = "aeec9287c8981f32d825ad296d5e0f902e2fb849"
+issue = 1396
+[[modules]]
+path = "GRWTSK/Analysis/FiniteSums/DyadicSlidingSuppliers.lean"
+blob = "aad5740288347ca0e67a131369c5c68eef763cb6"
+issue = 1396
+[[modules]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelShortIntervalBridge.lean"
+blob = "24b2d40fe071bbf22380bd971d1c930ad76de80f"
+issue = 1396
+[[modules]]
+path = "GRWTSK/NumberTheory/Moebius/RamareMultiplicativeMixture.lean"
+blob = "ed160c830d540be4679883e597f927c8564ba161"
+issue = 1396
+[[modules]]
+path = "GRWTSK/Analysis/FiniteSums/ShortIntervalSampling.lean"
+blob = "c71be9947306597a8a614f59ee8bcfacea332b47"
+issue = 1397
+[[modules]]
+path = "GRWTSK/Analysis/FiniteSums/DyadicSlidingMean.lean"
+blob = "b2065f9a2027db4ccc41fa0fedabf494fd2512fe"
+issue = 1397
+[[modules]]
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelSlidingMean.lean"
+blob = "925039a4a9ed27e54c1f43727da6e7c8d5c5589c"
+issue = 1397
+[[modules]]
+path = "GRWTSK/NumberTheory/Moebius/MertensPrimeBandExpansionObstruction.lean"
+blob = "e86101aa2d576fc662d9d565db9e48487e71dd31"
+issue = 1397

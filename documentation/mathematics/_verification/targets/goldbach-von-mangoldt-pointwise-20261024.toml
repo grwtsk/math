@@ -1,0 +1,28 @@
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-pointwise-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "95ab57ccfa832ef87d596825cbf2028e9be8493f"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPointwise.lean"
+source_blob = "51fc75db11e986f47d48f4a780d40184e4dbe687"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_mathlib_source_path = "Mathlib/Algebra/IsPrimePow.lean"
+pinned_mathlib_source_blob = "e173af2f72b7cd607eb18990d901b71aeba28875"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise.primePowerWeight_eq_vonMangoldt"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonPrimePowerBridge","GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtProperPowerBridge","GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPrimeFullBridge","Mathlib.Algebra.IsPrimePow","Mathlib.Tactic"]
+exact_hypotheses = "n : Nat; no additional hypotheses"
+mathematical_class = "universal_pointwise_source_candidate"
+missing_suppliers = ["Pinned Lean compilation and full transitive kernel checking","Transitive axiom audit","Finite Chebyshev and residue-class sum identification"]
+receipts = "NOT_RUN"
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPointwise"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPointwise.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

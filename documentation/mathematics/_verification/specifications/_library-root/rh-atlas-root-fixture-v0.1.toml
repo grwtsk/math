@@ -1,0 +1,82 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-root-fixture-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+related_issues = [229, 231, 232, 234]
+parent_pull_request = 242
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRootFixture"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[hostile_controls]]
+id = "reject-root-as-gapfree"
+description = "The concrete one-chart root atlas has neutral status and must prove not GapFree."
+
+[[hostile_controls]]
+id = "reject-self-overlap-as-rh"
+description = "An exact source-bound self-overlap with identity, inverse and cocycle laws does not supply either RH direction."
+
+[[hostile_controls]]
+id = "reject-path-existence-as-terminal"
+description = "A valid source-bound reflexive vertical path does not create an RH-equivalent terminal chart."
+
+[[hostile_controls]]
+id = "reject-hidden-directional-gaps"
+description = "The concrete #231 audit must contain open forward and reverse implication gaps."
+
+[[hostile_controls]]
+id = "reject-empty-chart-fixture"
+description = "The root chart covers the full complex carrier and has the explicit anchor zero."
+
+[[hostile_controls]]
+id = "reject-prose-source-binding"
+description = "The audit, overlap and vertical edge use the exact SourceBinding that matches the concrete chart."
+
+[[hostile_controls]]
+id = "reject-replay-as-discharged"
+description = "The external replay gap remains unavailable under the current worker/F06 gate."
+
+[[hostile_controls]]
+id = "reject-directional-report-as-complete"
+description = "The concrete report must prove that DirectionalGapsDischarged is false."
+
+[[hostile_controls]]
+id = "reject-neutral-terminal"
+description = "The concrete fixture must prove that CompleteVerticalCoverage cannot be inhabited with the neutral root as its only chart."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "a terminal RH-equivalent chart",
+  "discharge of the concrete root chart's forward or reverse RH implication",
+  "complete vertical coverage",
+  "gap-free critical-strip atlas",
+  "a zeta spectral triple or zero-spectrum realization",
+  "Riemann hypothesis",
+  "a replay receipt produced by this static manifest"
+]

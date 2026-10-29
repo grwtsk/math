@@ -1,0 +1,271 @@
+import ActualCumulativeIntercept
+import ActualArithmeticDecay
+
+/-! Actual moving upper endpoint with the arithmetic decay hypothesis exposed.
+grwtsk contributors's direction; focused scratch proof OpenAI Codex.
+No accepted arithmetic instance, signed witness or RH conclusion is supplied. -/
+set_option autoImplicit false
+noncomputable section
+namespace ContinuousResearch.ActualMovingEndpoint
+open MeasureTheory Set Filter
+open scoped Topology Interval
+open ContinuousResearch.ActualCumulativeIntercept ContinuousResearch.ActualPrimeIntercept
+open ContinuousResearch.SourceRemainderLaplace ContinuousResearch.ActualArithmeticDecay
+open ContinuousResearch.ProperPowerMoments
+open FormalResearch.RiemannHypothesis.SourceCriticalCumulativeDiscrepancy
+open FormalResearch.RiemannHypothesis.SourceCriticalDecayWork
+
+/-- Independent actual affine error, retaining the entire prime tail and decay term. -/
+def actualAffineError (u : ℝ) : ℝ :=
+  -(∫ t in Ioi u, actualPrimeRemainder t) + 2*criticalDecay u
+
+theorem actual_primitive_error_dictionary
+    (hI : IntegrableOn actualRemainder (Ioi (0:ℝ))) {u : ℝ} (hu : 0 ≤ u) :
+    criticalDiscrepancyPrimitive u = actualAffineSlope*u+actualPrimeIntercept+actualAffineError u := by
+  have h := actual_primitive_tail_dictionary hI hu
+  unfold actualAffineError
+  linarith
+
+theorem actual_moving_endpoint_dictionary
+    (hI : IntegrableOn actualRemainder (Ioi (0:ℝ))) {A y : ℝ}
+    (hA : 1 ≤ A) (_hy : 0 ≤ y) (hyA : y ≤ A) :
+    criticalDiscrepancyBridge A (2*A-y) = actualPrimeIntercept*y/(2*A)+
+      actualAffineError (2*A-y)-(1-y/(2*A))*actualAffineError (2*A) := by
+  have hpos : 0 < A := by linarith
+  rw [actual_bridge_affine_dictionary hpos.ne',
+    actual_primitive_error_dictionary hI (by linarith : 0 ≤ 2*A-y),
+    actual_primitive_error_dictionary hI (by linarith : 0 ≤ 2*A)]
+  field_simp [hpos.ne']
+  ring
+
+theorem actual_affine_error_abs_le
+    (hI : IntegrableOn actualRemainder (Ioi (0:ℝ))) {K T : ℝ} (hK : 0 ≤ K) (hT : 1 ≤ T)
+    (hdecay : ∀ t : ℝ, 1 ≤ t → |actualPrimeRemainder t| ≤ K/t^2) :
+    |actualAffineError T| ≤ K/T+2*criticalDecay T := by
+  unfold actualAffineError
+  calc
+    _ ≤ |-(∫ t in Ioi T, actualPrimeRemainder t)|+|2*criticalDecay T| := abs_add_le _ _
+    _ ≤ K/T+2*criticalDecay T := by
+      have hx : 0 ≤ 2*criticalDecay T := by unfold criticalDecay;positivity
+      rw [abs_neg,abs_of_nonneg hx]
+      exact add_le_add (actual_prime_tail_bound_of_raw (actual_prime_remainder_integrable hI) ⟨hK,hdecay⟩ hT) le_rfl
+
+theorem decay_interval_integral (a b : ℝ) :
+    (∫ t in a..b, criticalDecay t) = 2*criticalDecay a-2*criticalDecay b := by
+  have hd (t : ℝ) : HasDerivAt (fun x : ℝ => -2*criticalDecay x) (criticalDecay t) t := by
+    convert! ((((hasDerivAt_id t).neg.div_const 2).exp).const_mul (-2:ℝ)) using 1
+    dsimp [criticalDecay]
+    ring
+  have hc : Continuous criticalDecay := by unfold criticalDecay;fun_prop
+  have h := intervalIntegral.integral_eq_sub_of_hasDerivAt (fun t _ => hd t)
+    (hc.intervalIntegrable (μ:=volume) a b)
+  linarith
+
+theorem actual_affine_error_increment
+    (hI : IntegrableOn actualRemainder (Ioi (0:ℝ))) {a b : ℝ}
+    (ha : 0 ≤ a) (hab : a ≤ b) :
+    actualAffineError a-actualAffineError b =
+      -(∫ t in a..b, actualPrimeRemainder t)+(∫ t in a..b, criticalDecay t) := by
+  have hi := (actual_prime_remainder_integrable hI).mono_set (Ioi_subset_Ioi ha)
+  have h := intervalIntegral.integral_Ioi_sub_Ioi hi hab
+  rw [actualAffineError,actualAffineError,decay_interval_integral]
+  linarith
+
+theorem actual_prime_short_interval_abs_le {K A y : ℝ} (hK : 0 ≤ K)
+    (hA : 1 ≤ A) (hy : 0 ≤ y) (hyA : y ≤ A)
+    (hdecay : ∀ t : ℝ, 1 ≤ t → |actualPrimeRemainder t| ≤ K/t^2) :
+    |∫ t in (2*A-y)..(2*A), actualPrimeRemainder t| ≤ K*y/A^2 := by
+  have hpos : 0 < A := by linarith
+  have h := intervalIntegral.norm_integral_le_of_norm_le_const
+    (f:=actualPrimeRemainder) (a:=2*A-y) (b:=2*A) (C:=K/A^2) (fun t ht => ?_)
+  · rw [Real.norm_eq_abs,show 2*A-(2*A-y)=y by ring,abs_of_nonneg hy] at h
+    convert! h using 1
+    ring
+  · rw [uIoc_of_le (by linarith : 2*A-y ≤ 2*A)] at ht
+    have hAt : A ≤ t := by linarith [ht.1]
+    have hsq : A^2 ≤ t^2 := pow_le_pow_left₀ hpos.le hAt 2
+    rw [Real.norm_eq_abs]
+    exact (hdecay t (by linarith)).trans
+      (div_le_div_of_nonneg_left hK (sq_pos_of_pos hpos) hsq)
+
+theorem decay_short_interval_abs_le {A y : ℝ} (hy : 0 ≤ y) (hyA : y ≤ A) :
+    |∫ t in (2*A-y)..(2*A), criticalDecay t| ≤ y*criticalDecay A := by
+  have h := intervalIntegral.norm_integral_le_of_norm_le_const
+    (f:=criticalDecay) (a:=2*A-y) (b:=2*A) (C:=criticalDecay A) (fun t ht => ?_)
+  · rw [Real.norm_eq_abs,show 2*A-(2*A-y)=y by ring,abs_of_nonneg hy] at h
+    simpa only [mul_comm] using h
+  · rw [uIoc_of_le (by linarith : 2*A-y ≤ 2*A)] at ht
+    rw [Real.norm_eq_abs,abs_of_pos (by unfold criticalDecay;positivity)]
+    unfold criticalDecay
+    exact Real.exp_le_exp.mpr (by linarith [ht.1])
+
+theorem actual_affine_error_increment_abs_le
+    (hI : IntegrableOn actualRemainder (Ioi (0:ℝ))) {K A y : ℝ} (hK : 0 ≤ K)
+    (hA : 1 ≤ A) (hy : 0 ≤ y) (hyA : y ≤ A)
+    (hdecay : ∀ t : ℝ, 1 ≤ t → |actualPrimeRemainder t| ≤ K/t^2) :
+    |actualAffineError (2*A-y)-actualAffineError (2*A)| ≤ K*y/A^2+y*criticalDecay A := by
+  rw [actual_affine_error_increment hI (by linarith : 0 ≤ 2*A-y) (by linarith : 2*A-y ≤ 2*A)]
+  calc
+    _ ≤ |∫ t in (2*A-y)..(2*A), actualPrimeRemainder t|+
+        |∫ t in (2*A-y)..(2*A), criticalDecay t| := by
+      simpa only [abs_neg] using abs_add_le
+        (-(∫ t in (2*A-y)..(2*A), actualPrimeRemainder t))
+        (∫ t in (2*A-y)..(2*A), criticalDecay t)
+    _ ≤ K*y/A^2+y*criticalDecay A := add_le_add
+      (actual_prime_short_interval_abs_le hK hA hy hyA hdecay)
+      (decay_short_interval_abs_le hy hyA)
+
+theorem actual_moving_endpoint_error_abs_le
+    (hI : IntegrableOn actualRemainder (Ioi (0:ℝ))) {K A y : ℝ} (hK : 0 ≤ K)
+    (hA : 1 ≤ A) (hy : 0 ≤ y) (hyA : y ≤ A)
+    (hdecay : ∀ t : ℝ, 1 ≤ t → |actualPrimeRemainder t| ≤ K/t^2) :
+    |criticalDiscrepancyBridge A (2*A-y)-actualPrimeIntercept*y/(2*A)| ≤
+      5*K*y/(4*A^2)+y*Real.exp (-A/2)+(y/A)*Real.exp (-A) := by
+  have hpos : 0 < A := by linarith
+  have hz : 0 ≤ y/(2*A) := div_nonneg hy (by linarith)
+  have hb := actual_affine_error_abs_le hI hK (by linarith : 1 ≤ 2*A) hdecay
+  have hi := actual_affine_error_increment_abs_le hI hK hA hy hyA hdecay
+  rw [actual_moving_endpoint_dictionary hI hA hy hyA]
+  calc
+    _ = |(actualAffineError (2*A-y)-actualAffineError (2*A))+
+          (y/(2*A))*actualAffineError (2*A)| := by congr 1;ring
+    _ ≤ |actualAffineError (2*A-y)-actualAffineError (2*A)|+
+          |(y/(2*A))*actualAffineError (2*A)| := abs_add_le _ _
+    _ ≤ (K*y/A^2+y*criticalDecay A)+(y/(2*A))*(K/(2*A)+2*criticalDecay (2*A)) := by
+      rw [abs_mul,abs_of_nonneg hz]
+      exact add_le_add hi (mul_le_mul_of_nonneg_left hb hz)
+    _ = 5*K*y/(4*A^2)+y*Real.exp (-A/2)+(y/A)*Real.exp (-A) := by
+      unfold criticalDecay
+      rw [show -(2*A)/2=-A by ring]
+      field_simp [hpos.ne']
+      ring
+
+theorem scaled_error_majorant_tendsto (K y : ℝ) :
+    Tendsto (fun A : ℝ => 5*K*y/(4*A)+A*y*Real.exp (-A/2)+y*Real.exp (-A))
+      atTop (𝓝 0) := by
+  have h1 : Tendsto (fun A : ℝ => 5*K*y/(4*A)) atTop (𝓝 0) := by
+    convert! (tendsto_inv_atTop_zero (𝕜:=ℝ)).const_mul (5*K*y/4) using 1
+    · funext A
+      simp only [div_eq_mul_inv,mul_inv_rev]
+      ring
+    · simp
+  have hhalf : Tendsto (fun A : ℝ => A/2) atTop atTop := by
+    convert! (tendsto_id : Tendsto (fun A : ℝ => A) atTop atTop).const_mul_atTop
+      (by norm_num : (0:ℝ)<1/2) using 1
+    funext A
+    dsimp only [id_eq]
+    ring
+  have h2 : Tendsto (fun A : ℝ => A*y*Real.exp (-A/2)) atTop (𝓝 0) := by
+    have h := ((Real.tendsto_pow_mul_exp_neg_atTop_nhds_zero 1).comp hhalf).const_mul (2*y)
+    simp only [Function.comp_def,pow_one,mul_zero] at h
+    convert! h using 1
+    funext A
+    rw [neg_div]
+    ring
+  have h3 : Tendsto (fun A : ℝ => y*Real.exp (-A)) atTop (𝓝 0) :=
+    by simpa using Real.tendsto_exp_neg_atTop_nhds_zero.const_mul y
+  simpa only [add_zero] using (h1.add h2).add h3
+
+/-- The physical position moves with the upper endpoint; y itself is fixed first. -/
+theorem actual_moving_endpoint_scaled_tendsto
+    (hI : IntegrableOn actualRemainder (Ioi (0:ℝ))) {K : ℝ} (hK : 0 ≤ K)
+    (hdecay : ∀ t : ℝ, 1 ≤ t → |actualPrimeRemainder t| ≤ K/t^2)
+    {y : ℝ} (hy : 0 ≤ y) :
+    Tendsto (fun A : ℝ => A*criticalDiscrepancyBridge A (2*A-y)) atTop
+      (𝓝 (actualPrimeIntercept*y/2)) := by
+  have hz : Tendsto (fun A : ℝ => A*criticalDiscrepancyBridge A (2*A-y)-
+      actualPrimeIntercept*y/2) atTop (𝓝 0) := by
+    apply squeeze_zero_norm' (a:=fun A : ℝ =>
+      5*K*y/(4*A)+A*y*Real.exp (-A/2)+y*Real.exp (-A))
+    · filter_upwards [eventually_ge_atTop (1:ℝ),eventually_ge_atTop y] with A hA hyA
+      have hp : 0 < A := by linarith
+      have hb := actual_moving_endpoint_error_abs_le hI hK hA hy hyA hdecay
+      calc
+        _ = A*|criticalDiscrepancyBridge A (2*A-y)-actualPrimeIntercept*y/(2*A)| := by
+          rw [Real.norm_eq_abs]
+          have he : A*criticalDiscrepancyBridge A (2*A-y)-actualPrimeIntercept*y/2 =
+              A*(criticalDiscrepancyBridge A (2*A-y)-actualPrimeIntercept*y/(2*A)) := by
+            field_simp [hp.ne']
+          rw [he,abs_mul,abs_of_pos hp]
+        _ ≤ A*(5*K*y/(4*A^2)+y*Real.exp (-A/2)+(y/A)*Real.exp (-A)) :=
+          mul_le_mul_of_nonneg_left hb hp.le
+        _ = 5*K*y/(4*A)+A*y*Real.exp (-A/2)+y*Real.exp (-A) := by
+          field_simp [hp.ne']
+    · exact scaled_error_majorant_tendsto K y
+  simpa only [zero_add,sub_add_cancel] using hz.add_const (actualPrimeIntercept*y/2)
+
+/-- Raw actual full-Mangoldt decay supplies both arithmetic premises, preserving B2. -/
+theorem actual_moving_endpoint_error_abs_le_of_raw {C A y : ℝ}
+    (hC : RawMangoldtDecay C) (hA : 1 ≤ A) (hy : 0 ≤ y) (hyA : y ≤ A) :
+    |criticalDiscrepancyBridge A (2*A-y)-actualPrimeIntercept*y/(2*A)| ≤
+      5*(C+properPowerB2)*y/(4*A^2)+y*Real.exp (-A/2)+(y/A)*Real.exp (-A) :=
+  actual_moving_endpoint_error_abs_le (actual_remainder_integrable hC)
+    (raw_prime_decay_of_mangoldt hC).1 hA hy hyA (raw_prime_decay_of_mangoldt hC).2
+
+/-- No independently supplied L1, prime-bound or limit callback remains. -/
+theorem actual_moving_endpoint_scaled_tendsto_of_raw {C : ℝ}
+    (hC : RawMangoldtDecay C) {y : ℝ} (hy : 0 ≤ y) :
+    Tendsto (fun A : ℝ => A*criticalDiscrepancyBridge A (2*A-y)) atTop
+      (𝓝 (actualPrimeIntercept*y/2)) :=
+  actual_moving_endpoint_scaled_tendsto (actual_remainder_integrable hC)
+    (raw_prime_decay_of_mangoldt hC).1 (raw_prime_decay_of_mangoldt hC).2 hy
+
+end ContinuousResearch.ActualMovingEndpoint
+
+/- Complete public types, full proof terms and transitive trusted-dependency audits. -/
+
+#check ContinuousResearch.ActualMovingEndpoint.actualAffineError
+#print ContinuousResearch.ActualMovingEndpoint.actualAffineError
+#print axioms ContinuousResearch.ActualMovingEndpoint.actualAffineError
+
+#check ContinuousResearch.ActualMovingEndpoint.actual_primitive_error_dictionary
+#print ContinuousResearch.ActualMovingEndpoint.actual_primitive_error_dictionary
+#print axioms ContinuousResearch.ActualMovingEndpoint.actual_primitive_error_dictionary
+
+#check ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_dictionary
+#print ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_dictionary
+#print axioms ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_dictionary
+
+#check ContinuousResearch.ActualMovingEndpoint.actual_affine_error_abs_le
+#print ContinuousResearch.ActualMovingEndpoint.actual_affine_error_abs_le
+#print axioms ContinuousResearch.ActualMovingEndpoint.actual_affine_error_abs_le
+
+#check ContinuousResearch.ActualMovingEndpoint.decay_interval_integral
+#print ContinuousResearch.ActualMovingEndpoint.decay_interval_integral
+#print axioms ContinuousResearch.ActualMovingEndpoint.decay_interval_integral
+
+#check ContinuousResearch.ActualMovingEndpoint.actual_affine_error_increment
+#print ContinuousResearch.ActualMovingEndpoint.actual_affine_error_increment
+#print axioms ContinuousResearch.ActualMovingEndpoint.actual_affine_error_increment
+
+#check ContinuousResearch.ActualMovingEndpoint.actual_prime_short_interval_abs_le
+#print ContinuousResearch.ActualMovingEndpoint.actual_prime_short_interval_abs_le
+#print axioms ContinuousResearch.ActualMovingEndpoint.actual_prime_short_interval_abs_le
+
+#check ContinuousResearch.ActualMovingEndpoint.decay_short_interval_abs_le
+#print ContinuousResearch.ActualMovingEndpoint.decay_short_interval_abs_le
+#print axioms ContinuousResearch.ActualMovingEndpoint.decay_short_interval_abs_le
+
+#check ContinuousResearch.ActualMovingEndpoint.actual_affine_error_increment_abs_le
+#print ContinuousResearch.ActualMovingEndpoint.actual_affine_error_increment_abs_le
+#print axioms ContinuousResearch.ActualMovingEndpoint.actual_affine_error_increment_abs_le
+
+#check ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_error_abs_le
+#print ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_error_abs_le
+#print axioms ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_error_abs_le
+
+#check ContinuousResearch.ActualMovingEndpoint.scaled_error_majorant_tendsto
+#print ContinuousResearch.ActualMovingEndpoint.scaled_error_majorant_tendsto
+#print axioms ContinuousResearch.ActualMovingEndpoint.scaled_error_majorant_tendsto
+
+#check ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_scaled_tendsto
+#print ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_scaled_tendsto
+#print axioms ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_scaled_tendsto
+
+#check ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_error_abs_le_of_raw
+#print ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_error_abs_le_of_raw
+#print axioms ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_error_abs_le_of_raw
+
+#check ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_scaled_tendsto_of_raw
+#print ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_scaled_tendsto_of_raw
+#print axioms ContinuousResearch.ActualMovingEndpoint.actual_moving_endpoint_scaled_tendsto_of_raw

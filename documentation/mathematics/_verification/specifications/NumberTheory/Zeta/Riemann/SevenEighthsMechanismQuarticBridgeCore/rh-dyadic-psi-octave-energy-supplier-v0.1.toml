@@ -1,0 +1,56 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-psi-octave-energy-supplier-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "37d3b89bcef599a8d71eb7d2ff575145bc0c831c"
+parent_tree = "a6b277c41741bfbc464707f17e796876cb062e9b"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / PSI_OCTAVE_SQRT_BOUND_IMPLIES_RH_CONDITIONALLY"
+
+[uniform_cumulative]
+premise = "abs(cumulative_X(t))<=B on [0,1]"
+raw_l2 = "<=B^2"
+green_energy = "<=B^2"
+mass0 = "abs<=B"
+center = "abs<=B"
+mass1 = "abs<=2B"
+augmented = "<=6B^2"
+
+[psi_supplier]
+premise = "abs(psi(u)-u)+1 <= C*X*sqrt(X^(-1+eta)) on [X,2X]"
+abel_pointwise = "abs(cumulative_X(t)) <= (3A+1)/X"
+energy_bound = "augmentedEnergy(X) <= 96*C^2*X^(-1+eta)"
+implies_AllDyadicEnergyBound = true
+conditional_rh_return = true
+supplier_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicPsiOctaveEnergySupplier"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicPsiOctaveEnergySupplier.lean"
+blob = "27be2d467f91718d62e04a70085e98c1737e8de3"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicPsiOctaveEnergySupplierControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicPsiOctaveEnergySupplierControls.lean"
+blob = "b6a28b165c4dc31f7928d5f8cf8a798535290774"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "f009dc03e224862784d98be143a594822703e92c"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-psi-octave-energy-supplier.md"
+blob = "4d7590797dc066875748b1fedf7c156da7b2227b"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+PSI_OCTAVE_SQRT_BOUND_IMPLIES_RH_CONDITIONALLY = true
+PSI_OCTAVE_SQRT_BOUND_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

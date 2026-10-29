@@ -1,0 +1,139 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-regular-parity-projectors-740-v0.1"
+owner_repository = "grwtsk/math"
+issue = 740
+parent_issue = 731
+parent_pr = 735
+regular_orbit_issue = 671
+regular_orbit_pr = 672
+exceptional_character_issue = 691
+exceptional_character_pr = 697
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_REGULAR_PARITY_PROJECTOR_NORMALIZATION_SOURCE_DRAFT_CANONICAL_REGULAR_ORBIT_PROJECTOR_BUDGET_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitParityProjectors"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitParityProjectors"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-pointwise-chi4-mertens-731-20261022"
+stacked_parent_revision = "a3d0ea5770e5006c7f8e242356ed4f7d23b3f7d3"
+stacked_parent_tree = "c675dd9b328ee9c56b08eec7475d5ee9bf5a139b"
+candidate_branch = "research/rh-regular-parity-projectors-740-20261022"
+theorem_source_commit = "5987907e0e8d094e7031d15ebdc0a31c8c618a70"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/RegularOrbitParityProjectors.lean"
+theorem_source_git_blob = "4afd7583b8984daddd7c2b6a2719d9911ad45766"
+mathematical_note_commit = "2c421bd43a44e7cf12248a37b29052a09197c3df"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/regular-orbit-parity-projectors.md"
+mathematical_note_git_blob = "3d1d3538a66144f93869c1b165e8e245baa8dbae"
+
+[parity_projectors]
+character_identity = "twoKernelShiftCharacter_eq_neg_one_pow"
+even_shift_set = "positiveEndpointEvenShiftSet"
+odd_shift_set = "positiveEndpointOddShiftSet"
+even_projector = "twoKernelEvenShiftProjectorAggregate"
+odd_projector = "twoKernelOddShiftProjectorAggregate"
+pair_plus_identity = "twoKernelPairPlusAggregate_eq_two_mul_evenShiftProjector"
+pair_minus_identity = "twoKernelPairMinusAggregate_eq_two_mul_oddShiftProjector"
+norm_before_projector = false
+
+[canonical_majorant]
+orbit_majorant = "twoNonunitCanonicalRegularOrbitMajorant"
+orbit_equality = "twoNonunitRegularOrbitMajorant_eq_canonicalParityProjectors"
+endpoint_majorant = "twoNonunitCanonicalRegularOrbitEndpointMajorant"
+endpoint_equality = "twoNonunitRegularOrbitEndpointMajorant_eq_canonicalParityProjectors"
+exceptional_orbit_reintroduced = false
+canonical_representatives_reused = true
+effective_square_modulus_set_reused = true
+
+[analytic_interface]
+proposition = "DyadicNaturalScaleCanonicalRegularOrbitProjectorBudget"
+constructed = false
+equivalence = "canonicalRegularOrbitProjectorBudget_iff_regularOrbitBudget"
+adapter_value = "canonicalRegularOrbitProjectorToRegularBudgetAdapter"
+source_data = "CanonicalRegularOrbitProjectorSourceData"
+source_proposition = "CanonicalRegularOrbitProjectorSource"
+generic_adapter = "ToCanonicalRegularOrbitProjectorBudgetAdapter"
+adapter_alias = "CanonicalRegularOrbitProjectorAnalyticAdapter"
+
+[downstream]
+natural_scale = "naturalScaleCongruenceL1_of_two_pointwiseMertens_twoUnit_canonicalRegular"
+ordinary_pointwise_required = true
+chi_four_pointwise_required = true
+two_unit_supplier_required = true
+canonical_regular_projector_supplier_required = true
+
+[evidence_states]
+source_draft = true
+kernel_character_parity_reused = true
+pair_plus_even_projection_scripted = true
+pair_minus_odd_projection_scripted = true
+canonical_orbit_majorant_equality_scripted = true
+canonical_endpoint_equality_scripted = true
+budget_equivalence_scripted = true
+proof_relevant_adapter_source_constructed = true
+conditional_downstream_transport_scripted = true
+canonical_regular_orbit_projector_budget_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+natural_scale_endpoint_l1_supplier_proved = false
+riemann_hypothesis_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.RegularOrbitParityProjectors"
+definition_count = 9
+theorem_script_count = 6
+structure_count = 2
+abbreviation_count = 1
+authored_declaration_count = 18
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ChiFourMertensPointwiseToDyadic.lean"
+git_blob = "9c2511e896c1860ca3bd154977306002d7ddd7b3"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_735"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/HalfIndexAffineChowlaTwoNonunitOrbitRepresentatives.lean"
+git_blob = "f92375adf3f6459197ab05c106e31fc01e6a31ed"
+status = "STACKED_SOURCE_DRAFT_REUSED_CANONICAL_REGULAR_ORBITS"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ExceptionalKernelCharacterChiFour.lean"
+git_blob = "8f346435e49801dd7f0a23e16375768f66f21381"
+status = "STACKED_SOURCE_DRAFT_REUSED_KERNEL_CHARACTER_PARITY_IDENTITY"
+
+[hostile_controls]
+regular_orbit_analytic_estimate_not_claimed = true
+norm_inserted_before_pair_projector = false
+exceptional_orbit_kept_separate = true
+both_endpoint_parity_classes_preserved = true
+ordinary_or_chi_four_mertens_not_promoted_to_regular_orbit = true
+grh_not_claimed = true
+rh_not_claimed = true
+source_elaboration_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_pointwise_ordinary_mertens_envelope = true
+prove_pointwise_chi_four_mertens_envelope = true
+construct_two_unit_analytic_supplier = true
+prove_canonical_regular_orbit_projector_budget = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+regular_orbit_projector_estimate_proved = false
+pointwise_ordinary_mertens_estimate_proved = false
+pointwise_chi_four_mertens_estimate_proved = false
+two_unit_supplier_proved = false
+grh_proved = false
+natural_scale_endpoint_l1_bound_proved = false
+riemann_hypothesis_proved = false

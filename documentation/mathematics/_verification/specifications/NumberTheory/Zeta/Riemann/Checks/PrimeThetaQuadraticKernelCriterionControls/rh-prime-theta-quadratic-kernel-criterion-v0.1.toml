@@ -1,0 +1,85 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-prime-theta-quadratic-kernel-criterion-v0.1"
+owner_repository = "grwtsk/math"
+issue = 720
+parent_issue = 711
+analytic_owner_issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeThetaQuadraticKernelCriterionControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeThetaQuadraticKernelCriterionControls"
+
+[source_binding]
+parent_branch = "research/711-boolean-clause-dyadic-count-v01"
+parent_revision = "e93e0e7702871769bbb9481dfb381725ef8677d7"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / FINITE_PRIME_KERNEL_BOUND_DEFINED / KERNEL_CRITERION_TO_RECURRENCE_DEFINED / PRIME_KERNEL_CONSTRUCTION_OPEN / SOURCE_MAJORANT_OPEN / DESCENDED_RESIDUAL_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[prime_window]
+source_window = "window(X)=Finset.Ioc X (2*X)"
+prime_window = "thetaPrimeWindow(X)=window(X).filter Nat.Prime"
+real_support = "every retained prime lies in [X,2X]"
+amplitude = "a_X(p)=abs(thetaError(p))+1"
+
+[kernel_stage]
+response = "B_X(v)=sum_{p,q in P_X} K_v(p,q)*a_X(p)*a_X(q)"
+mass = "M_X(v)=sum_{p,q in P_X} abs(K_v(p,q))"
+finite_bound = "abs(B_X(v)) <= M_X(v)*A^2"
+source_identity_recorded = true
+normalization_recorded = true
+invalidation_key_recorded = true
+residual_nonnegative = true
+
+[criterion]
+name = "PrimeThetaQuadraticKernelCriterionAt"
+source_majorization = "abs(thetaError(v))+1 <= abs(B_X(v))/X + residual(v)"
+kernel_mass_bound = "M_X(v) <= K"
+residual_bound = "residual(v) <= R*X^(Q(rho)+eta/2)"
+conclusion = "QuadraticThetaSourceRecurrenceAt(rho)"
+threshold_descent_for_rho_ge_three_quarters = true
+
+[clause_index]
+three_literal_threshold = "7/8"
+two_literal_threshold = "3/4"
+transport_kind = "exact equality rewrite only"
+three_literal_kernel_constructed = false
+two_literal_kernel_constructed = false
+
+[hostile_controls]
+zero_response_zero_residual_rejected = true
+small_mass_without_source_majorization_rejected = true
+positive_gram_without_cross_scale_identity_rejected = true
+complexity_to_kernel_transfer_rejected = true
+target_fitted_kernel_rejected = true
+unnamed_residual_rejected = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PrimeThetaQuadraticKernelCriterion"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PrimeThetaQuadraticKernelCriterion.lean"
+blob = "3b19d01bf6411c7b32d29f66965625d6279189ae"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPrimeThetaKernelCriterion"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ClauseIndexedPrimeThetaKernelCriterion.lean"
+blob = "597294fd518961e1568e9cf99bb8eff841e2925c"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeThetaQuadraticKernelCriterionControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PrimeThetaQuadraticKernelCriterionControls.lean"
+blob = "98a209a5d425453654b9395f411eb37f7c04b1a6"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/prime-theta-quadratic-kernel-criterion.md"
+blob = "da90bb92a19cd4bec6609c8f3c654ec7fa63864d"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+FINITE_PRIME_KERNEL_BOUND_DEFINED = true
+KERNEL_CRITERION_TO_RECURRENCE_DEFINED = true
+PRIME_KERNEL_7_8_CONSTRUCTED = false
+PRIME_KERNEL_3_4_CONSTRUCTED = false
+SOURCE_MAJORANT_PROVED = false
+UNIFORM_KERNEL_MASS_PROVED = false
+DESCENDED_RESIDUAL_PROVED = false
+COMPLEXITY_TO_ZETA_TRANSFER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

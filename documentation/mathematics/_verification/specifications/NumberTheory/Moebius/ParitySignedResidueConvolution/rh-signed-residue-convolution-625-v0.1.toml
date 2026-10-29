@@ -1,0 +1,175 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-signed-residue-convolution-625-v0.1"
+owner_repository = "grwtsk/math"
+issue = 625
+parent_issue = 623
+parent_pr = 624
+positive_variance_issue = 621
+positive_variance_pr = 622
+factorization_issue = 607
+factorization_pr = 608
+zero_nonzero_issue = 611
+zero_nonzero_pr = 612
+pointwise_mertens_issue = 617
+pointwise_mertens_pr = 618
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_SIGNED_RESIDUE_CONVOLUTION_SOURCE_DRAFT_SIGNED_RESIDUE_CONVOLUTION_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.ParitySignedResidueConvolution"
+build_target = "GRWTSK.NumberTheory.Moebius.ParitySignedResidueConvolution"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-residue-variance-obstruction-623-20261021"
+stacked_parent_revision = "2474a78629ba870118753a7f9c0a56a0ee827a4b"
+stacked_parent_tree = "8a108892d267645b9c88bdccae7737de48cf5f5c"
+candidate_branch = "research/rh-signed-residue-convolution-625-20261021"
+theorem_source_commit = "5201040b37122629c3c58bc9c4afeb689d51c4e7"
+theorem_source_tree = "818f743f44ccdf138572d9e3061e0d03b4209bbc"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/ParitySignedResidueConvolution.lean"
+theorem_source_git_blob = "e7c8d45eec00682311d43c66b99e32f6e4943bf8"
+mathematical_note_commit = "f1615cdb47b5e59e2e2611d45afb7c70f9342494"
+mathematical_note_tree = "c28b87b3397ef05d69bc8d0ca49acc18983f3918"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/signed-residue-convolution.md"
+mathematical_note_git_blob = "de35267f0650c4dc2bcfcd0bf1f8a21ef01e10ba"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[selected_increment]
+residue_coordinate = "parityResidueCoordinate"
+signed_bucket = "paritySignedResidueConvolutionBucket"
+bucket_total_identity = "sum_paritySignedResidueConvolutionBucket"
+fourier_transform = "paritySignedResidueConvolutionFourier"
+fourier_pair_identity = "paritySignedResidueConvolutionFourier_eq_twice_pairSum"
+square_diagonal_identity = "paritySignedResidueConvolutionFourier_eq_square_sub_diagonal"
+frequency_majorant = "paritySignedResidueConvolutionFrequencyMajorant"
+frequency_surface_equality = "paritySignedResidueConvolutionFrequencyMajorant_eq_parityFourier"
+modulus_majorant = "paritySignedResidueConvolutionNonzeroModulusMajorant"
+modulus_surface_equality = "paritySignedResidueConvolutionNonzeroModulusMajorant_eq_parityFourier"
+endpoint_majorant = "paritySignedResidueConvolutionEndpointMajorant"
+endpoint_surface_equality = "paritySignedResidueConvolutionEndpointMajorant_eq_parityFourier"
+all_scale_supplier = "DyadicNaturalScaleSignedResidueConvolutionBudget"
+supplier_equivalence = "dyadicNaturalScaleSignedResidueConvolutionBudget_iff_nonzeroParityFourier"
+repair_value = "signedResidueConvolutionCancellationRepair"
+downstream_transport = "naturalScaleCongruenceL1_of_pointwiseMertens_and_signedResidueConvolution"
+proof_classification = "EXACT_FINITE_SIGNED_RESIDUE_REINDEXING_AND_FOURIER_IDENTITY"
+
+[signed_convolution]
+coordinate = "floor(u/2) mod d^2"
+pair_support = "1<=u<v<=b and u%2=v%2=r"
+residue_constraint = "coord(u)+coord(v)=s mod d^2"
+weight = "2*mu(u)*mu(v)"
+strict_pair_diagonal_removed = true
+two_orientations_restored = true
+absolute_value_inside_bucket = false
+square_modulus_preserved = true
+endpoint_support_preserved = true
+both_parities_preserved = true
+
+[fourier_identity]
+formula = "Fourier(C_r)(k)=S_r(b,d,k)^2-D_r(b,d,k)"
+source_pair_theorem = "parityPairSum_eq_half_square_sub_diagonal"
+additive_character_multiplicativity_used = true
+parseval_used = false
+variance_used = false
+triangle_separation_used = false
+
+[consumer_surfaces]
+frequency_exact_equality = true
+modulus_exact_equality = true
+endpoint_exact_equality = true
+nonzero_frequency_range_preserved = true
+normalization = "1/d^2"
+all_scale_target = "C_delta*X*X^delta"
+stronger_than_live_target = false
+weaker_than_live_target = false
+source_identical_representation = true
+
+[obstruction_relation]
+positive_parent = "DyadicNaturalScaleParityResidueVarianceDiagonalBudget"
+positive_parent_status = "CONDITIONALLY_REFUTED_AT_SCOPE_IN_PR_624"
+failed_step = "abs(S^2-D)<=abs(S)^2+abs(D)"
+large_modulus_floor_reintroduced = false
+signed_square_diagonal_cancellation_preserved = true
+
+[repair]
+interface = "SignedSquareDiagonalCancellationRepair"
+value = "signedResidueConvolutionCancellationRepair"
+source = "DyadicNaturalScaleSignedResidueConvolutionBudget"
+target = "DyadicNaturalScaleNonzeroParityFourierBudget"
+analytic_supplier_constructed = false
+representation_repair_constructed = true
+
+[downstream]
+zero_mode_source = "OrdinaryMertensSquareRootPlusEpsilonEnvelope"
+nonzero_source = "DyadicNaturalScaleSignedResidueConvolutionBudget"
+consumer = "DyadicNaturalScaleSquareModulusCongruenceL1"
+transport = "naturalScaleCongruenceL1_of_pointwiseMertens_and_signedResidueConvolution"
+pointwise_mertens_proved = false
+signed_residue_estimate_proved = false
+
+[evidence_states]
+source_draft = true
+signed_residue_convolution_source_draft = true
+exact_strict_pair_residue_regrouping_scripted = true
+exact_square_minus_diagonal_fourier_identity_scripted = true
+exact_consumer_surface_equivalence_scripted = true
+repair_object_source_constructed = true
+signed_residue_convolution_estimate_proved = false
+pointwise_mertens_envelope_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ParitySignedResidueConvolution"
+definition_count = 8
+theorem_script_count = 8
+authored_declaration_count = 16
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ParityResidueVarianceLargeModulusObstruction.lean"
+git_blob = "00d6320a9344a38e20afdb83d460da0707ea5c98"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_624"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/AdditiveTwistParityFourierFactorization.lean"
+git_blob = "9633aeec04aa09b1bb685450589212e32de6334b"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_608"
+
+[hostile_controls]
+strict_pair_support_preserved = true
+diagonal_not_reinserted = true
+orientation_factor_preserved = true
+absolute_value_inside_bucket_rejected = true
+positive_variance_replacement_rejected = true
+parseval_not_promoted_to_signed_estimate = true
+square_modulus_preserved = true
+endpoint_support_preserved = true
+fixed_data_not_promoted_to_growing_family = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+prove_signed_residue_convolution_budget = true
+prove_pointwise_mertens_envelope = true
+compare_signed_convolution_to_uniform_chowla_elliott_and_bilinear_dispersion = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+signed_residue_convolution_bound_proved = false
+large_sieve_adapter_proved = false
+bdh_adapter_proved = false
+chowla_adapter_proved = false
+l_function_adapter_proved = false
+pointwise_mertens_envelope_proved = false
+riemann_hypothesis_proved = false

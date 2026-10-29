@@ -1,0 +1,41 @@
+# Source-pinned verification only; no compilation.
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-power-uniqueness-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "d7a93cd753ee6f85c06b6e0c9aaca7b5ab2a8fd5"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPowerUniqueness.lean"
+source_blob = "f091d69bfe2c0b502c0cd75eb8250408732bde72"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_mathlib_source_path = "Mathlib/Data/Nat/Prime/Int.lean"
+pinned_mathlib_source_blob = "e3c787bcbef6024c0d29c750be0f8266db1c172a"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPowerUniqueness.prime_power_representation_unique",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPrimeBridge",
+ "Mathlib.Data.Nat.Prime.Int",
+]
+exact_hypotheses = "p r k j : Nat; Nat.Prime p; Nat.Prime r; 2<=k; 2<=j; p^k=r^j"
+missing_suppliers = [
+ "Bound exponent and prime base into properPrimePowerWeight finite ranges",
+ "Show nested finite proper-power weight has exactly one nonzero summand",
+ "Identify canonical von Mangoldt on proper prime powers",
+ "Handle non-prime-power inputs and n=0,1",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPowerUniqueness.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPowerUniqueness"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPowerUniqueness.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-winding-unification-810-v0.1"
+owner_repository = "grwtsk/math"
+issue = 810
+parent_issue = 807
+parent_pr = 808
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_WINDING_UNIFICATION_SOURCE_DRAFT_CENTERED_WINDING_ANALYTIC_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingUnification"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingUnification"
+
+[source_binding]
+stacked_parent_revision = "eb94468dd790c5e17776f513b28a2a8f3b6ced6b"
+candidate_branch = "research/rh-centered-winding-unification-809-20261022"
+theorem_source_commit = "b62e7d47ae9ef2ba4284f1680148a6f111562f75"
+theorem_source_git_blob = "6465fb049ad207a7648a8ca40a1182567faff081"
+mathematical_note_commit = "d82304ed3e6cd813f8377ac461bba190f0bc5f1b"
+mathematical_note_git_blob = "f7d27b843c8ed64003bca187c4fb7381a1b910ff"
+
+[evidence_states]
+source_draft = true
+winding_relation_scripted = true
+winding_uniqueness_scripted = true
+zero_winding_specialization_scripted = true
+nonzero_winding_specialization_scripted = true
+master_centered_coefficient_scripted = true
+analytic_estimate_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

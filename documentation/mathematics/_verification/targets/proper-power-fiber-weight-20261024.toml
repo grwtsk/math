@@ -1,0 +1,40 @@
+# Queued verification only; do not execute.
+schema_version = "0.1"
+request_id = "proper-power-fiber-weight-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "9bb79659840646a8485a140f4c90ac8c37e83a2b"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberWeight.lean"
+source_blob = "ae99dad48349b1896bd2f083e520631e1600c616"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberWeight.fiberWeight",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberWeight.fiberWeight_eq_boxWeight",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberBoxEquiv",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerBoxSumTransport",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Dependent finite fiber sum equals sum over FiberIndex",
+ "Transport fiber-index sum to BoxIndex via fiberBoxEquiv",
+ "Normalize rectangular packet to rectangularSupportedMass",
+ "Compose original-to-rectangular exact proper-power mass identity",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberWeight.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberWeight"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerFiberWeight.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

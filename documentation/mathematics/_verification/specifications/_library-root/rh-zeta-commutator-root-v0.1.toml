@@ -1,0 +1,93 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-zeta-commutator-root-v0.1"
+owner_repository = "grwtsk/math"
+issue = 229
+parent_issue = 225
+parent_pull_request = 240
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[hostile_controls]]
+id = "reject-commutative-root"
+description = "The selected upper and lower shifts must form a concrete noncommuting pair in the represented image."
+
+[[hostile_controls]]
+id = "reject-height-outside-commutator"
+description = "The zeta spectral height must be derived by applying operatorHeight to the represented commutator."
+
+[[hostile_controls]]
+id = "reject-unidentified-height-readout"
+description = "An exact theorem must identify root.heightAt z with the original imaginary spectral parameter."
+
+[[hostile_controls]]
+id = "reject-critical-line-projection"
+description = "The coordinate map must be injective on the full complex parameter and may not replace z by 1/2 + i Im(z)."
+
+[[hostile_controls]]
+id = "reject-zero-subtype-vacuity"
+description = "The root chart carrier is the full complex spectral parameter with an explicit anchor; nontrivial zeros remain a predicate."
+
+[[hostile_controls]]
+id = "reject-root-as-sufficient-rh-implication"
+description = "The root statement is proved independently of RH; localProfile_status is necessary via rootStatement_of_rh. The missing sufficient implication is equivalent to RH by rootStatement_implies_rh_iff, not supplied by the root construction."
+
+[[hostile_controls]]
+id = "reject-stale-neutral-root-status"
+description = "A source-bound check must require localProfile.status = necessary. The previous neutral-only expectation is invalidated at this source revision."
+
+[[hostile_controls]]
+id = "reject-root-as-spectral-triple"
+description = "No operator-domain or spectral-triple obligation is marked discharged."
+
+[[hostile_controls]]
+id = "reject-interval-height-identification"
+description = "Certified intervals, arithmetic cutoffs, scattering heights, return heights, jet depths and Weil scales remain unavailable comparisons."
+
+[[hostile_controls]]
+id = "reject-source-drift"
+description = "The source, exact mathlib revision, normalization and invalidation key are explicit constants."
+
+[[hostile_controls]]
+id = "reject-spectrum-as-zero-divisor"
+description = "The algebraic parameter representation does not identify any operator spectrum with the zeta-zero divisor."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "a Connes spectral triple for the Riemann zeta function",
+  "self-adjointness or compact resolvent of the distinguished projection in a selected analytic framework",
+  "identification of an operator spectrum with all nontrivial zeta zeros",
+  "equality of certified interval, scattering, elliptic, jet or Weil heights with the root height",
+  "local sufficiency or equivalence of the root statement to RH",
+  "source-faithful concrete chart overlaps",
+  "complete vertical proof-path coverage",
+  "gap-free critical-strip atlas",
+  "Riemann hypothesis",
+  "a replay receipt produced by this static manifest"
+]

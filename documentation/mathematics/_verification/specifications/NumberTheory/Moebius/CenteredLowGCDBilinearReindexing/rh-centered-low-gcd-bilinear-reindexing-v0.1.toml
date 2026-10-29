@@ -1,0 +1,57 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-low-gcd-bilinear-reindexing-v0.1"
+owner_repository = "grwtsk/math"
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Moebius.CenteredLowGCDBilinearReindexing"
+build_target = "GRWTSK.NumberTheory.Moebius.CenteredLowGCDBilinearReindexing"
+
+[source_binding]
+parent_revision = "fb158f4ab842c8c1ef77b801d72df959f97f9084"
+originating_type_ii_source_draft = "f047ec7814a03bf2b6175fc3b96a465ff2b86804"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / EXACT_FOUR_CHANNEL_ANCHOR_CORRECTION_SOURCE_PROVED / EXACT_POSITIVE_SHIFT_AND_DIAGONAL_REINDEXING_SOURCE_PROVED / COPRIME_MOBIUS_SQUARE_EXPANSION_SOURCE_PROVED / ABSOLUTE_COPRIME_ENERGY_CIRCULARITY_OBSTRUCTION_SOURCE_PROVED / SIGNED_LOW_GCD_TYPE_I_ESTIMATE_OPEN"
+
+[closed]
+kernel_independent_octave_model = true
+mobius_log_divisor_sum_equals_von_mangoldt = true
+modulus_one_anchor_correction = true
+weighted_centered_mass_identity = true
+four_channel_low_gcd_identity = true
+ordered_pair_reindexing = true
+upper_lower_triangle_symmetry = true
+positive_shift_fiber_reindexing = true
+explicit_positive_shift_boundaries = true
+explicit_diagonal_correction = true
+low_gcd_equals_coprime_plus_non_coprime = true
+coprime_mobius_square_expansion = true
+absolute_coprime_majorant_contains_full_centered_mass_square = true
+desired_bound_packaged_as_structure = false
+type_ii_constant_7200_reasserted = false
+sibling_signed_kernel_identity_used = false
+sibling_centered_winding_identity_used = false
+
+[primary_source_scope]
+heath_brown_generalized_vaughan_identity_direct_supplier = false
+vaughan_general_sequence_bdh_direct_supplier = false
+harper_general_sequence_bdh_direct_supplier = false
+missing_progression_distribution_adapter = true
+missing_nonconcentration_on_multiples_adapter = true
+missing_primitive_modulus_or_lcm_range_adapter = true
+
+[frontier]
+remaining = "For X=dyadicScale(j), N=ceil(X^(1/4)), Y=floor(sqrt(X)), 2X<=m<=4X, and the actual non-aliasing Fejer prefix weight w, prove the signed positive-shift four-channel low-gcd correlation is O(X^(3/2) log(X)^4), equivalently bound the corrected bilinear B_Y minus its explicit diagonal."
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+AXIOM_AUDITED = false
+EXACT_FOUR_CHANNEL_ANCHOR_CORRECTION_SOURCE_PROVED = true
+EXACT_POSITIVE_SHIFT_AND_DIAGONAL_REINDEXING_SOURCE_PROVED = true
+COPRIME_MOBIUS_SQUARE_EXPANSION_SOURCE_PROVED = true
+ABSOLUTE_COPRIME_ENERGY_CIRCULARITY_OBSTRUCTION_SOURCE_PROVED = true
+SIGNED_LOW_GCD_TYPE_I_BOUND_PROVED = false
+ABSOLUTE_HIGH_GCD_TYPE_II_BOUND_REPLAYED = false
+SEVEN_EIGHTHS_SQUAREFREE_GCD_STRATIFIED_BOUND_PROVED = false
+SEVEN_EIGHTHS_EXACT_CORRELATION_BOUND_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

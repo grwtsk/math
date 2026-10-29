@@ -1,0 +1,34 @@
+{
+  "schema": "grwtsk.static-mathematical-target/1",
+  "attribution": "grwtsk contributors",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicPrimePowerBlindness.lean",
+  "namespace": "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicPrimePowerBlindness",
+  "classification": "finite_arithmetic_information_loss_source_candidates",
+  "verification": "NOT_RUN / NOT_KERNEL_AUDITED",
+  "declarations": [
+    "potential_of_prime_power_labels",
+    "hamiltonian_prime_power_exponents_invariant",
+    "hamiltonian_two_eq_four",
+    "no_label_decoder_for_two_and_four"
+  ],
+  "allowed_axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "exact_scope": [
+    "N nonzero, the same cyclic sites and hopping strength",
+    "actual prime labels with positive exponents at every site",
+    "all real von Mangoldt and radical coefficients",
+    "character coefficient is exactly zero; character and level are retained",
+    "the same full actual matrix collides for labels two and four",
+    "decoder input consists only of the matrix, without separately retained labels"
+  ],
+  "required_checks": [
+    "fresh source-bound trust-zero elaboration and complete declaration axiom audits",
+    "preserve all coefficient and positive-exponent hypotheses",
+    "retain full source label data in any proposed operator-to-height bridge"
+  ],
+  "nonclaims": [
+    "not blindness for unrestricted nonzero character coefficients",
+    "not an obstruction to retaining the labels separately in ArithmeticStage",
+    "not an ABC counterexample, an RH result, or a physical mass-gap result",
+    "no operational state or execution receipt is stored here"
+  ]
+}

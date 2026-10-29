@@ -1,0 +1,145 @@
+# Finite joint two-prime valuation types: source-pinned verification request.
+# No compiler, independent kernel, transitive axiom, or remote runner receipt.
+schema_version = "0.1"
+request_id = "graph-sandwich-joint-two-three-types-20261026"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "24b1e4aa47856079275c1b29e8c04af1f610996f"
+source_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+source_blob = "926b1ffb3666198309ffb1683a124f711284db72"
+source_authoring_commits = [
+  "9edfddff78f192ff8f24472e784043dd6a84a1fd",
+  "123beba6d8003be511bd8e0961018cf0c75990b5",
+  "8952e54612e2890693d4643d572c0427ca910db5",
+  "cf40f24be3ede8b2bf7222c3ac852ef25a29abdf",
+  "24b1e4aa47856079275c1b29e8c04af1f610996f",
+]
+graph_supplier_path = "GRWTSK/GraphSandwichDiffusion.lean"
+graph_supplier_blob = "7d861591c9721a85819f291aac5178fffd29101a"
+grothendieck_supplier_path = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+grothendieck_supplier_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_factorization_basic_path = "Mathlib/Data/Nat/Factorization/Basic.lean"
+mathlib_factorization_basic_blob = "754d9c2792659f68a624086c9ce90e0737"
+mathlib_factorization_defs_path = "Mathlib/Data/Nat/Factorization/Defs.lean"
+mathlib_factorization_defs_blob = "123b50a5cf37474f6be7778196cbfe313e0caf6b"
+mathlib_gcd_path = "Mathlib/Data/Nat/GCD/Basic.lean"
+mathlib_gcd_blob = "67090bcc09ac64376fe015eff09fc221ee258eaf"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+mathematical_class = "ELEMENTARY_JOINT_TWO_COORDINATE_ARITHMETIC_TYPE_SOURCE_CANDIDATE"
+issue = "https://github.com/grwtsk/math/issues/1344"
+new_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationPeriod",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationProgression",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationPeriod_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationProgression_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationProgression_type",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationProgression_coprime_five",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationProgression_injective",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationProgression_mem_scope",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_survivors_card_ge_floor",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_survivor_density",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_buffered_eventually_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_buffered_eventually_certified_hit",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_no_finite_all_pair_coverage",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_no_exact_radical_decoder",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_finite_family_mass_ge_fixed_rates",
+]
+direct_imports = [
+  "GRWTSK.Algebra.KTheory.GrothendieckPort",
+  "GRWTSK.GraphSandwichDiffusion",
+  "Mathlib.Data.Nat.Factorization.Basic",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "Mathlib.Tactic",
+]
+preserved_previous_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_selectedSieve_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_selectedSieve_no_exact_decoder",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicType_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.multiplicityOneType_buffered_mass_ge_one_ninety_six",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_typeMass_ge_of_survivor_density",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_search_one_eq_survivors",
+]
+exact_hypotheses = [
+  "Joint typeOf(n) : Nat x Nat is (n.factorization 2, n.factorization 3), measured on the SAME arithmetic state n, not two marginals",
+  "Single modulus q=5 and its one bufferedDiagonalKernel(5,N,hN) and certifiedArithmeticInventory(5,N,hN); these are not q=2 and q=3 selected marginal kernels",
+  "Fixed joint target (a,b) : Nat x Nat and arithmetic progression n_j=(2^a*3^b)*(30*j+1), with positive period d(a,b)=(2^a*3^b)*30",
+  "For all j, progression is >=1, has exact v2=a and v3=b, coprime to q=5, and is injective in j",
+  "Finite cutoff scope is Finset.Icc 1 N; for j < floor(N/d), n_j belongs to scope; hence survivors count >= floor(N/d)",
+  "If N>=d>0, real survivors count >= N/(2*d), with no independence or analytic type-density assumption",
+  "Buffered source-dependent edge weights from existing GraphSandwichDiffusion: if Nat.Coprime n 5 then N + Nat.radical n, otherwise 0, then diagonal source boost",
+  "Type mass floor consumes hN:1<=N, initial:Nat->Real nonnegative on finite scope and summing to exactly 1, positive Markov time depth+1",
+  "At all N>=d, mass of exact joint type (a,b) >= 1/(8*d)=1/(240*2^a*3^b); strictly positive and independent of larger N and positive time but dependent on a,b",
+  "Certified hit uses same source integer 1, same graph search depth 1 and same modulus-five buffered kernel at any positive iteration, with witness n_0=2^a*3^b",
+  "For finite labels : Finset (Nat x Nat), a common cutoff 1+sum_{label in labels} d(label) suffices for separate type-dependent lower mass inequalities on all labels simultaneously, in SAME fixed modulus-five kernel",
+  "No fixed finite cutoff can cover full infinite label type Nat x Nat: target (N,0) has no in-scope state because factorization 2 of n is strictly less than n<=N",
+  "Radical K0-shaped feature collides on 2 and 4 although exact joint types differ; with N>=4 both states are certified q=5 survivors and no feature-only exact decoder exists",
+  "Radical K0-shaped means universal Grothendieck completion with explicit lift Nat->*M and [CommMonoid M], NOT analytic Cstar K0 or KK",
+  "No theorem for arbitrary finite prime set, all valuation tuples at one cutoff, analytic prime distribution, Goldbach, RH, zero-free regions, spectral gap or genuine heat semigroup",
+]
+source_level_conclusions = [
+  "A single concrete modulus-five buffered sieve simultaneously represents exact 2-adic and 3-adic valuation coordinates on the SAME integer",
+  "Finite injection gives >=floor(N/(30*2^a*3^b)) surviving states of each fixed joint type",
+  "The fixed pair (a,b) has explicit positive buffered mass >=1/(240*2^a*3^b) for every N above its type period and all positive Markov steps",
+  "Each fixed pair eventually gives an actual certified arithmetic graph hit, with source 1 and certified search depth 1",
+  "Every finite set of joint pairs admits a common explicit cutoff in the same kernel for type-specific positive mass rates",
+  "No single finite cutoff covers the entire infinite joint label type, and radical-only K0-shaped observations cannot exactly decode all certified joint types",
+]
+unresolved_verification_and_mathematical_bridges = [
+  "All 17 new declarations remain uncompiled Lean source candidates; run direct Lean elaboration and full transitive import compilation before any accepted result",
+  "Check Nat.factorization_mul for inner/outer products, Nat.factorization_pow_self and Nat.factorization_eq_zero_of_not_dvd at two primes, and coprime power/mul API orientation",
+  "Check Finset.mem_image, Finset.card_image_of_injective, arithmetic quotient Nat.mul_div_le, Nat.mod_add_div, omega on opaque finite sums, finset single_le_sum",
+  "Check joint type unfolding with Prod.ext/congrArg Prod.fst and exact q=5 certified scopes for witness n0 and collision 2 vs 4",
+  "Check real division and cast normalization of reciprocal 1/(8*d) and exact default inference of Mathlib finite sum/ring tactics",
+  "Check finite-family cutoff sum statement and hperiod extraction without secretly changing requested type or initial-mass assumptions",
+  "Fresh independent Lean kernel checking after compilation and complete transitive #print axioms audit remain NOT_RUN",
+  "Finite arithmetic scratch checks are not executable Lean evidence or retained external operational receipts, do not promote their status",
+  "No common strictly positive lower bound uniform over ALL (a,b); rates decay with pair and common cutoff applies only to finite target families",
+  "General arbitrary finite prime-valuation vector support remains unproved, likewise true analytic K0/KK and source-local spectral heat flow",
+  "Store any later actual runner receipts under grwtsk/noeaaeue outside math; maintain no remote dispatch, no force push and no merge",
+]
+source_review = "STATIC_GITHUB_SOURCE_READBACK_ONLY"
+finite_scratch_example_summary = "16 joint progression/count spot-checks and 6 finite numerical 1-2-step rate checks performed off-repository; NO_LEAN_CHECK; no durable executable receipt"
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = 24b1e4aa47856079275c1b29e8c04af1f610996f && test \"$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)\" = 926b1ffb3666198309ffb1683a124f711284db72 && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = 7d861591c9721a85819f291aac5178fffd29101a && test \"$(git hash-object GRWTSK/Algebra/KTheory/GrothendieckPort.lean)\" = d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+graph_supplier_compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+k_theory_compile = "lake build --wfail GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+k_theory_elaboration = "lake env lean --trust=0 --wfail GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+fresh_kernel = "PENDING_ACTUAL_COMPILATION_AND_SUPPORTED_INDEPENDENT_CHECKER"
+transitive_axioms = "PENDING_ACTUAL_COMPILATION_AND_FULL_AXIOM_CENSUS"
+axiom_targets = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationPeriod_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationProgression_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationProgression_type",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationProgression_coprime_five",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationProgression_injective",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuationProgression_mem_scope",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_survivors_card_ge_floor",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_survivor_density",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_buffered_eventually_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_buffered_eventually_certified_hit",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_no_finite_all_pair_coverage",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_no_exact_radical_decoder",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.jointTwoThreeValuation_finite_family_mass_ge_fixed_rates",
+]
+expected_compiler_exit_code = 0
+expected_elaboration_exit_code = 0

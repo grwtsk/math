@@ -1,0 +1,14 @@
+{
+  "schema": "grwtsk.documentation-consolidation/1",
+  "attribution": "grwtsk contributors",
+  "authorization": "User-approved coordinated documentation batch, 2026-10-28",
+  "catalogue": {
+    "path": "documentation/mathematics/_support/documentation-relocations.index.json",
+    "sha256": "91a1264b0c3180730358d8af1eca1177d685bda9d6967b125e259e33ef8c0943"
+  },
+  "tracked_occurrences": 2037465,
+  "root_docs_removed": true,
+  "root_verification_removed": true,
+  "mathematical_acceptance": false,
+  "tracking_issue": "https://github.com/grwtsk/math/issues/1429"
+}

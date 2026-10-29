@@ -1,0 +1,15 @@
+import GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.BooleanCoefficientEquivalence
+import GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.RowMajorBooleanCoordinates
+import GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.PointwiseProductObstruction
+import GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.SuppliedLinearFieldEncoding
+import GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.TransportedFieldOperations
+import GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.EncodingQuantizerImage
+
+/-!
+# Reviewed compatibility surface for `BitMatrix.FiniteField.Galois`
+
+This module reassembles the six maintained components of the captured source.
+The two repaired proofs preserve their original statements and hypotheses and
+change only definitional normalization. This validation surface makes no
+attribution, taxonomy, implication, mathematical-acceptance, or proof-strengthening claim.
+-/

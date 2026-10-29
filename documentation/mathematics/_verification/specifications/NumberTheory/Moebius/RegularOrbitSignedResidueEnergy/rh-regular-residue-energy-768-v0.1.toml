@@ -1,0 +1,66 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-regular-residue-energy-768-v0.1"
+owner_repository = "grwtsk/math"
+issue = 768
+parent_issue = 764
+parent_pr = 766
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_REGULAR_PARSEVAL_TO_RESIDUE_ENERGY_SOURCE_DRAFT_REGULAR_SIGNED_RESIDUE_ENERGY_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitSignedResidueEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitSignedResidueEnergy"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-zmod-dft-parseval-764-20261022"
+stacked_parent_revision = "0fa380d95ea1d8325232468ada707c68acb16db2"
+candidate_branch = "research/rh-regular-residue-energy-768-20261022"
+theorem_source_commit = "c1b9456795f06d089e23ebe59d67ac627cd31a85"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/RegularOrbitSignedResidueEnergy.lean"
+theorem_source_git_blob = "b9591b3d53a0c93c272342584122bd3257c4c166"
+mathematical_note_commit = "31b26931233937f45a95c4842040fdb0c95ecf0b"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/regular-signed-residue-energy.md"
+mathematical_note_git_blob = "2c16072039af242890c50729274c48859bd9fde6"
+
+[parseval_transport]
+even_energy = "parityEvenHalfShiftSignedResidueEnergy"
+odd_energy = "parityOddHalfShiftSignedResidueEnergy"
+even_parseval = "evenHalfShiftFullFrequencyEnergy_eq_residue"
+odd_parseval = "oddHalfShiftFullFrequencyEnergy_eq_residue"
+sqrt_scale = "sqrt_squareModulus_mul_energy"
+modulus_identity = "fullFrequencyL2Majorant_eq_d_mul_residueL2"
+endpoint_identity = "fullFrequencyL2EndpointMajorant_eq_residueL2"
+
+[analytic_interface]
+proposition = "DyadicNaturalScaleRegularShiftParityResidueL2Budget"
+equivalence = "regularFullFrequencyL2Budget_iff_residueL2"
+source_data = "RegularSignedResidueEnergySourceData"
+source = "RegularSignedResidueEnergySource"
+adapter = "RegularSignedResidueEnergyAdapter"
+constructed = false
+
+[evidence_states]
+source_draft = true
+parseval_applied_to_four_buckets = true
+d_factor_cancellation_scripted = true
+endpoint_residue_l2_surface_scripted = true
+full_frequency_to_residue_budget_equivalence_scripted = true
+regular_signed_residue_energy_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+riemann_hypothesis_proved = false
+
+[open_obligations]
+prove_regular_signed_residue_energy = true
+construct_two_unit_analytic_supplier = true
+prove_pointwise_ordinary_mertens_envelope = true
+prove_pointwise_chi_four_mertens_envelope = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+regular_signed_residue_energy_proved = false
+large_sieve_adapter_constructed = false
+grh_proved = false
+riemann_hypothesis_proved = false

@@ -1,0 +1,32 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-structured-four-distinct-chowla-905-v0.1"
+owner_repository = "grwtsk/math"
+issue = 905
+parent_issue = 902
+parent_pr = 903
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_STRUCTURED_FOUR_DISTINCT_PREMISE_CORRECTION"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredStructuredFourDistinct"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredStructuredFourDistinct"
+
+[source_binding]
+stacked_parent_revision = "5a938e36344f046472876a0df572774ff433f7f6"
+candidate_branch = "research/rh-structured-four-distinct-chowla-904-20261022"
+theorem_source_commit = "3080f2fa5950f4535e446e33d69899b150a563ca"
+mathematical_note_commit = "9f4d3d7f4f235870fa54f0acbf4df8a7c4c9eb0a"
+
+[evidence_states]
+source_draft = true
+exact_endpoint_aggregate_defined = true
+effective_moduli_retained = true
+positive_winding_range_retained = true
+four_parity_shift_families_retained = true
+nondegenerate_pairs_only = true
+structured_envelope_defined = true
+arbitrary_finite_set_premise_required = false
+general_order_four_chowla_equivalence_claimed = false
+rh_equivalence_claimed = false
+structured_estimate_proved = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

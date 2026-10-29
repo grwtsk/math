@@ -1,0 +1,41 @@
+# Queued verification; no execution authorized.
+schema_version = "0.1"
+request_id = "proper-power-mass-bridge-of-support-20261024"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "c5b3bcba8262d5798d574827bed8ecb24f39df9c"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerMassBridgeOfSupport.lean"
+source_blob = "ab28b0fbe65fc1b0755c0ceab19011007eef3a16"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerMassBridge.nonunitProperPowerMass_eq_divisor_packet_of_support",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerMassBridge",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFinalReindex",
+]
+exact_hypotheses = "q N : Nat; for every prime p and k>=2, nonunit(p^k mod q) iff p divides q"
+discharged_hypothesis = "hreindex : nonunitProperPowerMass q N = rectangularProperPowerMass q N"
+remaining_hypothesis = "hsupport : forall p k, Nat.Prime p -> 2<=k -> (not IsUnit ((p^k:Nat):ZMod q) iff p|q)"
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+missing_suppliers = [
+ "Validate final finite reindexing theorem and its full transitive dependency chain",
+ "Validate original conditional divisor packet bridge and rectangular-to-divisor theorem",
+ "Audit support equivalence for q=0 and other modulus edge cases before any removal",
+]
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerMassBridgeOfSupport.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerMassBridgeOfSupport"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerMassBridgeOfSupport.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

@@ -1,0 +1,28 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-zero-winding-centered-correlation-805-v0.1"
+owner_repository = "grwtsk/math"
+issue = 805
+parent_issue = 801
+parent_pr = 802
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ZERO_WINDING_CENTERED_CORRELATION_SOURCE_DRAFT_ZERO_WINDING_CENTERED_SECOND_MOMENT_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingCenteredCorrelation"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingCenteredCorrelation"
+
+[source_binding]
+stacked_parent_revision = "afa485d75dfc2b86d0f3337bef33fcb3011d9e81"
+candidate_branch = "research/rh-zero-winding-centered-chowla-803-20261022"
+theorem_source_commit = "4248fa4892488d9b85fb671ab3542bf6fa5ccaec"
+theorem_source_git_blob = "70facd58b855c1a0aad2eb4c0ba1f7210f7d1ed5"
+mathematical_note_commit = "727de29a334837e60954fc68652a060be0dbf410"
+mathematical_note_git_blob = "e23f33781fa6b37128dcbf1a6568961928d53f87"
+
+[evidence_states]
+source_draft = true
+centered_support_equivalence_scripted = true
+centered_symmetric_correlation_scripted = true
+centered_second_moment_identity_scripted = true
+centered_second_moment_estimate_proved = false
+wrap_cancellation_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

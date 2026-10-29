@@ -1,0 +1,391 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-polygon-cellular-boundary-758-v0.1"
+owner_repository = "grwtsk/math"
+issue = 758
+related_issues = [745, 734, 722, 704, 198, 205, 545, 653, 121, 168, 516, 159, 100, 15]
+route_id = "ORIENTED_POLYGON_INCIDENCE_CANDIDATE_CELLULAR_H1"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/surface-polygon-seam-745-20261022"
+review_parent_revision = "d5fc75717c806cc1587cdaceb123437ee39b6e12"
+review_parent_module_git_blob = "c9f4cf201c3ac5c0608a14ed00768ed025060c9c"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCellularBoundary.lean"
+new_module_git_blob = "d21accee39c38ce4341527465021decc173ded8e"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-cellular-boundary.md"
+mathematical_note_git_blob = "6d0283ab223e8dbc66da35844c3847a417e5d1a0"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+exact_parent_polygon_word_consumed = true
+source_signed_edge_incidence_derived = true
+all_handle_block_coefficients_zero_source_candidate = true
+full_polygon_incidence_zero_source_candidate = true
+one_vertex_one_face_candidate_cell_profile = true
+integer_linear_d2_sourced_from_incidence = true
+integer_linear_d1_zero_by_one_vertex_convention = true
+d1_comp_d2_zero_source_candidate = true
+cycles_all_one_chains_source_candidate = true
+boundaries_only_zero_source_candidate = true
+one_cell_count_2g_source_candidate = true
+formal_cell_euler_count_source_candidate = true
+missing_inverse_edge_negative_fixture = true
+actual_cellular_chain_complex_of_surface_constructed = false
+actual_topological_surface_polygon_quotient = false
+actual_surface_pi1_presentation_proved = false
+cellular_singular_homology_comparison_proved = false
+authentic_surface_H1_computed = false
+heisenberg_chain_to_group_map_closed = false
+hyperbolic_metric_or_geodesic_length_supplied = false
+selberg_or_weil_petersson_proved = false
+microscopic_GUE_proved = false
+growing_shift_chowla_proved = false
+riemann_hypothesis_proved = false
+mathematical_statement = "Exact signed incidence of the literal genus-(k+2) oriented polygon edge word vanishes generatorwise; sourced integer linear d2 is zero; finite one-vertex chain cycles are all C1, boundaries only zero, |one-cell IDs|=2g."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary"
+authored_declaration_count = 28
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam", "Mathlib.Algebra.BigOperators.Group.List.Basic", "Mathlib.Tactic"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.signedSideIncidence"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.signedWordCoefficient"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.signedWordCoefficient_append"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.signedWordCoefficient_flatten"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.signedWordCoefficient_handleBlock"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.signedWordCoefficient_firstTwo"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.signedWordCoefficient_extraBlocks"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.signedWordCoefficient_extra"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.signedWordCoefficient_polygon_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.OneCellChains"
+kind = "abbrev"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.polygonFaceBoundaryVector"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.polygonFaceBoundaryVector_eq_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.differentialTwo"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.differentialOne"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.differentialTwo_apply_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.differentialTwo_eq_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.differentials_comp_eq_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.OneCycles"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.OneBoundaries"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.oneCycles_univ"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.oneBoundaries_singleton_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.oneCellSourceCount"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.formalEulerCount"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.formalEulerCount_eq"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.missingInverseEdge"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.missingInverseEdge_nonzero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.genus_two_polygon_boundary_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCellularBoundary.genus_three_polygon_boundary_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-oriented-source"
+requirement = "Every signed coefficient is evaluated on the exact polygonBoundaryWord and GenusLetter k from #745, with the same orientation convention."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-edge-plus-one"
+requirement = "A positive occurrence of its OWN generator contributes +1 to its signed incidence coordinate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "inverse-edge-minus-one"
+requirement = "An inverse occurrence of its OWN generator contributes -1, not +1, nor zero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "unrelated-edge-zero"
+requirement = "A signed edge of a different source generator contributes zero to the chosen coefficient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "duplicate-same-generator"
+requirement = "For a handle block with equal source letters a=b, the plus and minus contributions still cancel correctly."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "handle-all-four-edges"
+requirement = "The full ordered handle block a,b,a^-1,b^-1 is consumed; deleting an edge must not pass zero incidence."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "negative-missing-inverse-fixture"
+requirement = "The explicit three-edge fixture omits b^-1 and has coefficient exactly +1 at the original b generator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-list-sum"
+requirement = "Coefficients are calculated as List.map signedSideIncidence then List.sum, not a freely postulated zero boundary."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "append-additivity"
+requirement = "Signed coefficient over ordered concatenation is the sum of the coefficients, without altering source identities."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "flatten-additivity"
+requirement = "The flattened additional handle blocks have a proved sum-of-blocks identity, not an assumption of zero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "extra-handle-source-preserved"
+requirement = "Each extra block uses the exact extraLetter(j,false/true) source IDs from #734."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "noncommutative-relator-not-zero"
+requirement = "Zero signed coefficient is abelian data; it cannot prove the full FreeGroup relator is identity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-empty-extra"
+requirement = "k=0 has no additional handle blocks but retains two initial blocks."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-extra-handle"
+requirement = "k=1 retains the additional handle block with correct signed orientation and cancellation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "candidate-C2-one-face"
+requirement = "The algebraic model has C2 = ℤ for one selected formal face; it does not assert an actual CW cell."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "candidate-C1-source-rank"
+requirement = "The one-chain module is GenusLetter k → ℤ with exactly 2*(k+2) distinct generator IDs."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "candidate-C0-one-vertex"
+requirement = "The chosen C0 = ℤ one-vertex convention is explicit and not deduced from an unproved polygon quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "derived-not-assumed-d2"
+requirement = "The differentialTwo linear map uses the ACTUAL sourced incidence vector, not an opaque map defined to be zero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "d2-linearity"
+requirement = "The two-face boundary is a genuine ℤ-linear map; scalar and additive compatibility cannot be ignored."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "d2-zero-after-incidence"
+requirement = "d2=0 is derived only AFTER proving every source boundary incidence coefficient is zero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "d1-zero-convention"
+requirement = "d1 is the zero ℤ-linear map exactly for the stipulated one-vertex candidate model."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "composition-square"
+requirement = "The exact algebraic differential composition d1 ∘ d2 = 0 must be proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-one-chains-cycles"
+requirement = "OneCycles=Set.univ is a theorem from the declared d1, not an assertion of topological singular cycles."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "only-zero-one-boundary"
+requirement = "OneBoundaries={0} is an exact theorem using the actual d2, not an empty-source or always-reject predicate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "candidate-quotient-not-constructed"
+requirement = "The source sets imply abstract H1 ≅ C1 mathematically, but do not constitute an authored categorical homology quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-one-cell-count"
+requirement = "Fintype.card(GenusLetter k)=2*(k+2) is source proved, including nontrivial k=0 and k=1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "euler-only-formal"
+requirement = "Euler ledger 1-2g+1=2-2g is combinatorial and is NOT an authenticated topological Euler characteristic."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-real-CW-complex"
+requirement = "No CW quotient/attaching map or cellular chain comparison with an actual compact surface is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-van-kampen"
+requirement = "The signed boundary calculation does not supply the topological van Kampen fundamental group presentation theorem."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-hurewicz"
+requirement = "No π1 abelianization-to-singular-H1 isomorphism of an actual space follows from these candidate chains."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "heisenberg-distinct"
+requirement = "A zero abelianized polygon coefficient does not refute a nonzero Heisenberg central commutator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-other-adapter"
+requirement = "No Čech/Hodge, signed Weil form, q-modular-to-Haar, or spectral sofic operator adapter is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-arithmetic-rh"
+requirement = "No Möbius/Chowla growing-shift estimate, zeta-zero divisor, Selberg/WP, GUE or RH conclusion follows."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generated-declarations-need-audit"
+requirement = "Any type-class, coercion or generated Lean declaration requires exact-head elaborated source/type/axiom reconciliation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "held-F06"
+requirement = "No Lean/Lake, native/VM/F06, CI, cache, workflow, root import, toolchain or executor action is authorized by the passive manifest."
+status = "NOT_RUN"
+

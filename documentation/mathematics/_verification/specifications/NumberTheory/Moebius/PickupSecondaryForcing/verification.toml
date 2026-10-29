@@ -1,0 +1,134 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "pickup-secondary-forcing-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "aa338898c69ed0b233ea3bb5c28a04cd11e229e1"
+source_tree = "b255d48c1c0301630d485d5c7044d1243d3ab91d"
+parent_commit = "8aceaa8c8af5dbeb694e20ff0132dee8ebf0ba39"
+initial_inspection_commit = "1ae2e82c92ca838bdb829419a847eb4fd2eaa233"
+publication_preserves_concurrent_changes = true
+verification_issue = 1414
+prerequisite_issues = [1405, 1406, 1407, 1408, 1409, 1410, 1411, 1412, 1413]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+native_exit_status = "UNAVAILABLE"
+remote_execution_dispatched = false
+root_imports_changed = false
+dependency_pins_changed = false
+arithmetic_witness_supplied = false
+canonical_RH_proved_unconditionally = false
+written_secondary_growth_obstruction = true
+lean_secondary_growth_obstruction = false
+all_vector_uniform_mass_ruled_out_in_written_proof = true
+observed_source_mass_ruled_out = false
+new_external_paper_results_imported = false
+new_literature_research_performed = false
+added_modules = 3
+modified_modules = 0
+definitions = 18
+theorem_scripts = 67
+lexical_identifiers = 85
+source_lines = 837
+inventory_scope = "Textual source inventory, not an elaborated census"
+mathematical_note = "docs/mathematics/NumberTheory/Moebius/secondary-forcing-mass-obstruction.md"
+note_blob = "6436e3f549d8a9483caf377309287c9effeb373b"
+note_sha256 = "aeb4e028a01a7e5548441188a1f500bfb2bfe794d83d0870ffeae3aa5c001cf5"
+git_identity = "Connector-configured; create_commit exposes no author/committer override"
+
+[mathematical_scope]
+implemented = "Finite phase laws and actual attained phase optimum; exact secondary coefficients (1+Omega(n))*mu(n); both forcing steps; native source integral; finite-law comparison; full-vector mass two-step inequality; observed-source-only implication; finite pole-slope scalar lemma"
+written_only = "Euler-product identity for the secondary source; the bounded prime-power logarithm remainder; real C1 Laplace contradiction; upper exponential secondary-energy rate one; exponential deterioration of every full-vector mass profile"
+not_supplied = ["Original DyadicBirthBound witness", "Original observed mass or boundary-resolvent bound", "Native formal proof of the written analytic obstruction", "Complete source Hilbert/Jacobi realization", "Native compilation, replay and full axiom audit"]
+preservation = "Existing conditional full-vector mass implications are retained. The written argument rules out their proposed all-scale supplier for this actual form, not RH or unrelated mass theorems."
+
+[audit]
+full_transitive_closure_required = true
+include_private_generated_opaque = true
+provisional_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new research axioms", "unauthorized native or unsafe logical trust", "weakened quantifiers", "changed source or diagonal", "erased repeated-prime guard", "written proof relabeled as kernel acceptance", "full-vector mass inferred from observed-source mass"]
+external_driver_sha256 = "b3c9667d59034822e030133f62fae9447aef13f7cc944b11e5299360ed412c11"
+checker_resolution = "Run pinned leanchecker --help; determine supported fresh replay invocation from actual help; not an independent kernel implementation claim"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupFinitePhaseLaw.lean"
+module = "GRWTSK.NumberTheory.Moebius.PickupFinitePhaseLaw"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupFinitePhaseLaw"
+blob = "4f2bc22fd5bc71d0da9a151979043f21ea12ab02"
+sha256 = "96c20d07c00406083561e9e61ca1efb90f7dfc95a8c34d0647cb352a3a4253a9"
+bytes = 12491
+lines = 262
+definitions = ["energy", "kernel", "cross", "quadraticEnergy", "uniformWeight"]
+theorems = ["weighted_comparison", "energy_nonnegative", "energy_comparison", "energy_eq_kernel", "kernel_diagonal", "kernel_symmetric", "energy_split", "cross_bounds", "endpoint_bounds", "quadraticEnergy_nonnegative", "quadraticEnergy_comparison", "quadraticEnergy_source", "cross_subexponential_iff", "dyadic_bound_iff", "dyadic_throughpoint", "uniformWeight_nonnegative", "uniformWeight_mass", "uniformEnergy_comparison", "singleton_zero_energy"]
+native_status = "NOT_RUN"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupPhaseOptimizationGap.lean"
+module = "GRWTSK.NumberTheory.Moebius.PickupPhaseOptimizationGap"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupPhaseOptimizationGap"
+blob = "815dea778d97538cb458310207e192011d70e502"
+sha256 = "51bc46b93b6c338d8dae93e831d96960799cfb9dbeb32e4143c60930313d8770"
+bytes = 14010
+lines = 357
+definitions = ["quadraticAt", "quadratic", "trial", "finiteTrial", "values", "optimum", "optimalityGap", "edgeMass", "cutMass", "maxCut"]
+theorems = ["quadraticAt_eq_square_integrals", "quadraticAt_nonnegative", "quadraticAt_continuous", "average_quadraticAt", "quadratic_nonnegative", "trial_spin_sum", "trial_eq_coefficient_sum", "trial_quadratic_identity", "trial_lower", "trial_source", "trial_congr", "finiteTrial_restrict", "sum_finiteTrial_zero", "values_nonempty", "optimum_attained", "optimum_le_finiteTrial", "optimum_le_trial", "optimum_nonpositive", "optimum_bounds", "optimalityGap_nonnegative", "gap_bounds", "gap_subexponential_iff", "gap_bound_iff_dyadicBirthBound", "cutMass_le_maxCut", "maxCut_attained", "maxCut_band", "gap_eq_cut_shortfall", "approximate_trial_gap", "source_gap_from_approximate_trial"]
+native_status = "NOT_RUN"
+
+[[source]]
+path = "GRWTSK/NumberTheory/Moebius/PickupSecondaryForcing.lean"
+module = "GRWTSK.NumberTheory.Moebius.PickupSecondaryForcing"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupSecondaryForcing"
+blob = "da71fb9c2a1b6429416319b9d05cf65b12da9a17"
+sha256 = "6b0756b0b17347e2e918b2ff40ba7e882e8df4fea86e2bf5b4621d43330d9656"
+bytes = 10121
+lines = 218
+definitions = ["secondaryCoordinates", "secondaryCoefficient", "secondaryEnergy"]
+theorems = ["forward_secondary", "solve_source", "forward_twice_secondary", "secondaryCoefficient_one", "secondaryCoefficient_nonsquarefree", "secondary_layer_term", "secondary_coefficient_sum", "secondary_synthesis", "secondary_forcing", "secondaryEnergy_nonnegative", "secondaryEnergy_source_integral", "secondary_complex_energy", "finite_phase_secondary_comparison", "mass_controls_secondary", "mass_two_steps", "secondary_bound_of_mass", "source_energy_of_observed_mass", "layer_bound_of_observed_mass", "logarithmic_pole_slope"]
+native_status = "NOT_RUN"
+
+[commands]
+build = "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupFinitePhaseLaw GRWTSK.NumberTheory.Moebius.PickupPhaseOptimizationGap GRWTSK.NumberTheory.Moebius.PickupSecondaryForcing"
+lean = ["lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupFinitePhaseLaw.lean", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupPhaseOptimizationGap.lean", "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupSecondaryForcing.lean"]
+checker_help = "lake env leanchecker --help"
+status = "NOT_RUN"
+
+[diagnostics]
+current_checks_per_mode = 8547
+current_counts = "{\"exact_arithmetic\": 8278, \"exact_models\": 184, \"floating_diagnostics\": 35, \"negative_controls\": 35, \"static\": 15}"
+prior_extension_checks_per_mode = 2466
+normal_optimized_identical = true
+current_script_sha256 = "622bdfcbb146437512c38bf06fd47d44e52ac70086aa83e3e17935b1e0d91eaa"
+current_report_sha256 = "80846e64a9b326dd9cdf8c021981e74361fa67e87a24df900f372b11d04806fd"
+extension_script_sha256 = "290c29298961be5ec9e8b60225e5488f64ccc9002f9646a09f17f9cd47441971"
+extension_report_sha256 = "eab99a65bab4781798828c29fec5f73057a9b11a5ad7b5ef0da9b84bbedc25b5"
+execution_record_sha256 = "e9588c9580dea4f4800f943613450863ce4f4404b780176dc5830945a3a94856"
+limitations = "Exact finite arithmetic and rational models are not asymptotic evidence. Floating checks use 80 digits, not rigorous enclosures. Static checks are not Lean parsing/elaboration. The analytic obstruction is established by the written proof, not the finite tests."
+
+[[diagnostic_run]]
+command = "/opt/pyvenv/bin/python /mnt/data/rh_closure_increment/diagnostics/preflight.py"
+exit = 0
+external_stdout = "diagnostics/current-normal.json"
+stdout_sha256 = "80846e64a9b326dd9cdf8c021981e74361fa67e87a24df900f372b11d04806fd"
+
+[[diagnostic_run]]
+command = "/opt/pyvenv/bin/python -O /mnt/data/rh_closure_increment/diagnostics/preflight.py"
+exit = 0
+external_stdout = "diagnostics/current-optimized.json"
+stdout_sha256 = "80846e64a9b326dd9cdf8c021981e74361fa67e87a24df900f372b11d04806fd"
+
+[[diagnostic_run]]
+command = "/opt/pyvenv/bin/python /mnt/data/rh_closure_increment/prior_extension/diagnostics/preflight.py"
+exit = 0
+external_stdout = "diagnostics/extension-normal.json"
+stdout_sha256 = "eab99a65bab4781798828c29fec5f73057a9b11a5ad7b5ef0da9b84bbedc25b5"
+
+[[diagnostic_run]]
+command = "/opt/pyvenv/bin/python -O /mnt/data/rh_closure_increment/prior_extension/diagnostics/preflight.py"
+exit = 0
+external_stdout = "diagnostics/extension-optimized.json"
+stdout_sha256 = "eab99a65bab4781798828c29fec5f73057a9b11a5ad7b5ef0da9b84bbedc25b5"

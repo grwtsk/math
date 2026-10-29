@@ -1,0 +1,104 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-polar-quotient-compatibility-996-v0.1"
+issue = 996
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarQuotientCompatibility"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarQuotientCompatibility"
+
+[source_binding]
+parent_pr = 995
+parent_revision = "18f65ef246991fb73b823449a50f3a25614e966a"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarQuotientCompatibility.lean"
+new_module_git_blob = "eac281397794013146d5d0a9a62d9795ec291d3b"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polar-quotient-compatibility.md"
+note_blob = "506b562d2615679cee07c8a99f56155100883ffb"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+continuous_product_quotient_descent_proved = false
+cone_disk_homeomorphism_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarQuotientCompatibility"
+authored_declaration_count = 3
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarAddCircleKernel", "Mathlib.Topology.Instances.AddCircle.Real"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarQuotientCompatibility.realAnglePolarDisk_respects_unitAddCircle"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarQuotientCompatibility.realAnglePolarDisk_zero_all_angles"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarQuotientCompatibility.realAnglePolarDisk_two_integer_shifts"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "parent-pinned"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-UnitAddCircle"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-disk-subtype"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "reuse-parent-quotient-kernel"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "integer-shift-invariance"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "zero-radius-all-angles"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-arbitrary-section"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-quotient-lift-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-joint-continuity-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-cone-descent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-surjectivity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-homeomorphism"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-run"
+status = "NOT_RUN"

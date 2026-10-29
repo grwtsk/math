@@ -1,0 +1,314 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "rh-signed-pickup-dyadic-program-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+source_tree = "5fdc38986dd5d7932a18d7f17e5081a01385e970"
+baseline_commit = "7a6f1142dfe6ee66bfd79600158695c00b7a4fc6"
+verification_issue = 1407
+prerequisite_issues = [1405, 1406]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_PROOF_CANDIDATE"
+arithmetic_completion = "OPEN_EXPLICIT_WITNESS_NOT_SUPPLIED"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+canonical_RH_proved_unconditionally = false
+remote_execution_dispatched = false
+root_imports_changed = false
+dependency_pins_changed = false
+new_definitions = 15
+new_public_theorem_scripts = 44
+lexical_identifiers = 59
+inventory_scope = "Source-text inventory; not an elaborated declaration census"
+note = "docs/mathematics/NumberTheory/Moebius/signed-pickup-dyadic-program.md"
+publication_rule = "Source commit is separate from this later manifest commit to avoid a self-referential hash; both must be reachable from main"
+git_identity = "Connector-configured; tool does not expose author/committer override"
+paper_derived_mathematics_added = false
+
+[[source]]
+module = "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential"
+path = "GRWTSK/Analysis/AsymptoticAnalysis/ArithmeticGridSubexponential.lean"
+namespace = "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential"
+blob = "51ffca7d9f6617aa10955c5aec881607eec1bf24"
+sha256 = "5dc92d9ba0d6e1f72ef3b4650501a416eec486150f3b27eec2219d8289027dbe"
+bytes = 5269
+lines = 122
+imports = ["GRWTSK.Analysis.AsymptoticAnalysis.GoodScaleSubexponential", "Mathlib.Tactic"]
+definitions = ["GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.time", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.scales", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.AllGridUpper", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.EventualGridUpper", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.initialAllowance"]
+theorems = ["GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.time_nonnegative", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.time_monotone", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.next_time", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.affineFrequent_scales", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.initialAllowance_nonnegative", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.le_initialAllowance", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.allGridUpper_of_eventual", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.allGridUpper_iff_eventual", "GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential.allGridUpper_iff_subexponentialOn"]
+status = "SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED"
+
+[[source]]
+module = "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint"
+path = "GRWTSK/NumberTheory/Moebius/PickupDyadicEndpoint.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint"
+blob = "53a33d37efd54fdff10aed1b05276b89dd4ddadc"
+sha256 = "46f34a062a27dab4923bef93b45f813dd6a60078a12f52b6215df57f2614bee3"
+bytes = 8377
+lines = 196
+imports = ["GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential", "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature"]
+definitions = ["GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.dyadicTime", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.dyadicScales", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.birthExpression", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.dyadicBirthSum", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.DyadicEndpointBound", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.DyadicBirthBound"]
+theorems = ["GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.log_two_positive", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.dyadicTime_nonnegative", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.dyadic_coverage", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.exp_dyadicTime", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.dyadic_cutoff", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.log_dyadic_cutoff", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.dyadic_rate", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.cellChord_self", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.birth_log_width", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.full_birth_formula", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.endpoint_dyadic_eq_birthSum", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.dyadicBirthBound_iff_endpoint", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.dyadicEndpointBound_iff_good_scales", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.dyadicBirthBound_of_eventual", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.energyAbscissa_zero_of_dyadicBirthBound", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.riemannHypothesis_of_dyadicBirthBound"]
+status = "SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED"
+
+[[source]]
+module = "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate"
+path = "GRWTSK/NumberTheory/Moebius/PickupSignedCertificate.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate"
+blob = "64eb4a3a920d609b4e9fdb164babae5bc4ac5dc3"
+sha256 = "450ca715cfb958f3e1fa7bb52b7f644d3a7a195338209ecc2e1bc3cc0de9f1dd"
+bytes = 15653
+lines = 294
+imports = ["GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint", "GRWTSK.NumberTheory.Moebius.ResponseBudgetIdentification", "GRWTSK.NumberTheory.Moebius.CenteredSieveRecovery"]
+definitions = ["GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.curvatureCorrection", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.jointUpper", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.DyadicJointBound", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.observedJointUpper"]
+theorems = ["GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.endpoint_eq_cross_add_curvature", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.curvature_abs_le_quarter", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.endpoint_eq_unpaired_sub_credit_add_curvature", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.endpoint_eq_sievedCross_add_curvature", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.jointUpper_le_endpoint", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.jointUpper_le_curve", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.jointUpper_le_prime", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.jointUpper_le_packet", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.cross_le_jointUpper", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.jointUpper_refinement_le", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.jointUpper_endpoint_error", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.jointUpper_cross_slack", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.sievedCross_le_jointUpper", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.joint_subexponential_iff_endpoint", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.riemannHypothesis_of_joint_good_scales", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.dyadicJointBound_iff_endpoint", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.riemannHypothesis_of_dyadic_joint", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.cross_le_observedJointUpper", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.riemannHypothesis_of_joint_finite_cover"]
+status = "SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED"
+
+[[dependency]]
+module = "GRWTSK.Analysis.AsymptoticAnalysis.GoodScaleSubexponential"
+path = "GRWTSK/Analysis/AsymptoticAnalysis/GoodScaleSubexponential.lean"
+blob = "f242a816972be851440e7be9577580dd69107a18"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature"
+path = "GRWTSK/NumberTheory/Moebius/PickupEndpointQuadrature.lean"
+blob = "973343c6ab098fc755ae4c2ae73ddcfb73f48f6c"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupRefinementCriterion"
+path = "GRWTSK/NumberTheory/Moebius/PickupRefinementCriterion.lean"
+blob = "5ac1eacd22a7f1cd455b495b183b084f649d8128"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupCellQuadratic"
+path = "GRWTSK/NumberTheory/Moebius/PickupCellQuadratic.lean"
+blob = "ceb1ed8be15c255f70723b65ccac631373e58c6c"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.PickupSignedQuadrature"
+path = "GRWTSK/NumberTheory/Moebius/PickupSignedQuadrature.lean"
+blob = "a1547b237c028a8e3dfad356a9feff0bf708f021"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.Analysis.ErrorBounds.ExponentialQuadraticChord"
+path = "GRWTSK/Analysis/ErrorBounds/ExponentialQuadraticChord.lean"
+blob = "2ca4c53933943d2e44d92591499e9e49767e1b60"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.Analysis.ErrorBounds.ExponentialQuadraticIntegral"
+path = "GRWTSK/Analysis/ErrorBounds/ExponentialQuadraticIntegral.lean"
+blob = "6753bff9f3fd14780682a650405fd8ed863fc99d"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.ResponseBudgetIdentification"
+path = "GRWTSK/NumberTheory/Moebius/ResponseBudgetIdentification.lean"
+blob = "0a71e3e273a53dfbbd4bcb217c9421d8fe6d1076"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.Analysis.InnerProductSpace.SignedSynthesisEnergyBounds"
+path = "GRWTSK/Analysis/InnerProductSpace/SignedSynthesisEnergyBounds.lean"
+blob = "5d06250307b20e2128de77d7c864657ce4054ee8"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.CenteredSieveRecovery"
+path = "GRWTSK/NumberTheory/Moebius/CenteredSieveRecovery.lean"
+blob = "3b2cd85036c8b2d06e9da50cbc8a399a3b79ee57"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.AnchoredAuthenticCenteredDefectComparison"
+path = "GRWTSK/NumberTheory/Moebius/AnchoredAuthenticCenteredDefectComparison.lean"
+blob = "63ef7fb343828039e2104e63993799e54a7bcebd"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedPairDescent"
+path = "GRWTSK/NumberTheory/Moebius/MertensSignedPairDescent.lean"
+blob = "4e6efa850cb824ad3325567831a9cb33717fe1db"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.GoodScaleEnergyCriterion"
+path = "GRWTSK/NumberTheory/Moebius/GoodScaleEnergyCriterion.lean"
+blob = "a39d24a540a86918ab4f2a8130a86895424dc317"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[[dependency]]
+module = "GRWTSK.NumberTheory.Moebius.EnergyAbscissa"
+path = "GRWTSK/NumberTheory/Moebius/EnergyAbscissa.lean"
+blob = "9453ab6fc629611fa19362b56eb223fabd14bc0a"
+source_commit = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+acceptance = "No fresh acceptance claimed; preserve historical scope and pending prerequisites"
+
+[dependency_closure]
+complete_elaborated_inventory = "PENDING_NATIVE_ELABORATION"
+critical_pin_list_is_complete_transitive_inventory = false
+closure_rule = "Verify every imported, private, generated and opaque dependency of the new declarations, including existing analytic return; all repository sources are pinned by source_tree and packages by the unchanged lake-manifest"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lakefile_blob = "f32b2cc6e01b0a6c64cd4505add1656e67f333c2"
+root_imports_blob = "6ec8aedccaf1498345d579e395bbe57aea1becb5"
+
+[[obligation]]
+id = "DYADIC_ARITHMETIC_WITNESS"
+status = "OPEN_NOT_SUPPLIED"
+target = "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.DyadicBirthBound"
+description = "For every real delta>0, construct C>=0 independent of j bounding the literal signed dyadicBirthSum by C*2^(delta*j); an eventual version suffices by the proved finite-prefix transfer."
+reject = "Do not assume the target, rename it as a supplied field, or replace it with a fixed positive exponent or finite test."
+
+[[obligation]]
+id = "ACTUAL_PACKET_INSTANTIATION"
+status = "OPEN_FOR_PACKET_BRANCH"
+target = "EulerP04RH.PacketClosure.SignedPacketReturn"
+description = "Instantiate actual model, decomposition and heights and discharge the explicit signed source-return inequality on every used scale; the direct dyadic endpoint route does not require a packet model."
+reject = "No arbitrary remainder assignment, omission of normalization/exceptional costs, or inference from an unrelated RH consumer."
+
+[[obligation]]
+id = "CENTERED_TO_PICKUP_COMPARISON"
+status = "NOT_INSTANTIATED_IN_THIS_INCREMENT"
+target = "GRWTSK.NumberTheory.Moebius.CenteredSieveRecovery.signed_wrap_with_sieved_centers"
+description = "Retain the authentic centered negative variance and actual anchored defects if applying this branch to the packet return. Its identity alone is not a pickup growth estimate."
+reject = "This is not a repository-wide claim of absence; identify and instantiate an actual comparison without equating distinct sources."
+
+[[obligation]]
+id = "FRESH_FORMAL_ACCEPTANCE"
+status = "NOT_RUN"
+target = "Complete new and imported declaration closure"
+description = "Compile, freshly replay proof objects, inspect transitive axioms and exact hypotheses at these immutable pins."
+reject = "Source publication, finite evidence and older receipts do not discharge this obligation."
+
+[verification]
+working_directory = "Isolated source checkout pinned to source_commit, or an identical complete source/dependency closure"
+execution_policy = "PASSIVE_REQUEST_ONLY; no workflow or remote runner dispatch"
+actual_native_exit_status = "UNAVAILABLE"
+local_native_blocker = "No lean, lake or elan executable on PATH"
+fresh_checker_invocation = "PENDING: resolve exact supported replay invocation from pinned leanchecker help, then record command, binary identity, exit and complete scope in an external source-bound receipt"
+fresh_checker_is_independent_implementation = "NOT_ESTABLISHED; use of the Lean kernel is not independent implementation"
+acceptance_requires = ["All required native commands exit 0 with exact source/dependency pins", "Fresh proof-object replay covers the complete import and generated/private/opaque closure", "Audit all named declarations and canonical RH conclusion without weakened hypotheses", "Mathematical completion additionally requires an actual proof of the arithmetic witness; verification of conditional consumers alone is insufficient"]
+proposed_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new project research axioms", "unauthorized native or unsafe logical trust", "missing required dependency closure", "changed arithmetic source", "weakened guards or quantifier order", "stale acceptance transferred to changed bytes", "finite diagnostics reported as kernel or asymptotic acceptance"]
+receipts_location = "Outside grwtsk/math, in authorized grwtsk/noeaaeue execution records"
+
+[[command]]
+id = "source_identity"
+command = "git rev-parse HEAD"
+status = "NOT_RUN"
+expected_exit = 0
+actual_exit = "UNAVAILABLE"
+expected_check = "4afb131ca34a1e10bf8410bdda3c8ae434af2237"
+
+[[command]]
+id = "complete_source_unchanged"
+command = "git diff --exit-code 4afb131ca34a1e10bf8410bdda3c8ae434af2237 -- GRWTSK GRWTSK.lean lean-toolchain lake-manifest.json lakefile.toml"
+status = "NOT_RUN"
+expected_exit = 0
+actual_exit = "UNAVAILABLE"
+expected_check = "No source or pin differences"
+
+[[command]]
+id = "compile"
+command = "lake build --wfail GRWTSK.Analysis.AsymptoticAnalysis.ArithmeticGridSubexponential GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint GRWTSK.NumberTheory.Moebius.PickupSignedCertificate"
+status = "NOT_RUN"
+expected_exit = 0
+actual_exit = "UNAVAILABLE"
+expected_check = "No errors or warnings; complete imported build closure"
+
+[[command]]
+id = "elaborate_1"
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Analysis/AsymptoticAnalysis/ArithmeticGridSubexponential.lean"
+status = "NOT_RUN"
+expected_exit = 0
+actual_exit = "UNAVAILABLE"
+expected_check = "Exit 0; not by itself fresh replay of all imported proof objects"
+
+[[command]]
+id = "elaborate_2"
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupDyadicEndpoint.lean"
+status = "NOT_RUN"
+expected_exit = 0
+actual_exit = "UNAVAILABLE"
+expected_check = "Exit 0; not by itself fresh replay of all imported proof objects"
+
+[[command]]
+id = "elaborate_3"
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupSignedCertificate.lean"
+status = "NOT_RUN"
+expected_exit = 0
+actual_exit = "UNAVAILABLE"
+expected_check = "Exit 0; not by itself fresh replay of all imported proof objects"
+
+[[command]]
+id = "audit_declarations"
+command = "lake env lean --trust=0 -DwarningAsError=true /tmp/grwtsk-rh-signed-dyadic/PickupSignedCertificateAudit.lean"
+status = "NOT_RUN"
+expected_exit = 0
+actual_exit = "UNAVAILABLE"
+expected_check = "Review every printed type and axiom list; complete transitive closure required"
+
+[[command]]
+id = "checker_capabilities"
+command = "lake env leanchecker --help"
+status = "NOT_RUN"
+expected_exit = 0
+actual_exit = "UNAVAILABLE"
+expected_check = "Determine supported fresh replay command; capability query alone is not acceptance"
+
+[audit]
+external_module_path = "/tmp/grwtsk-rh-signed-dyadic/PickupSignedCertificateAudit.lean"
+module_sha256 = "aa978b0d118871031291fbdf8b095e8b2fddd8e87d3cd2238f0ffff83f8a5b1b"
+rendering = "UTF-8, LF, one final newline: preamble in listed order; then, for each source in order, definitions then theorems in listed order, emit #check NAME and #print axioms NAME on successive lines; repeat for additional_declarations; finally emit #print NAME for print_types"
+preamble = ["import GRWTSK.NumberTheory.Moebius.PickupSignedCertificate", "set_option pp.universes true", "set_option pp.explicit true", "#check _root_.RiemannHypothesis"]
+additional_declarations = ["GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature.endpointSum_error", "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature.endpoint_subexponential_iff", "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature.endpoint_and_range_same_middle", "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature.endpoint_range_unresolved_subset", "GRWTSK.NumberTheory.Moebius.MertensSignedPairDescent.cross_eq_unpaired_sub_credit", "GRWTSK.NumberTheory.Moebius.CenteredSieveRecovery.sievedCross_eq", "GRWTSK.NumberTheory.Moebius.CenteredSieveRecovery.signed_wrap_with_sieved_centers", "HSSCP04.CCCAdapter.cross_eq", "HSSCP04.CCCAdapter.cross_le_packetJointUpper", "GRWTSK.NumberTheory.Moebius.GoodScaleEnergyCriterion.energyAbscissa_zero_of_cross_good_scales", "GRWTSK.RiemannHypothesis.CCC.riemannHypothesis_of_pickupEnergyAbscissa_zero"]
+print_types = ["GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.DyadicBirthBound", "GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.riemannHypothesis_of_dyadicBirthBound", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.riemannHypothesis_of_dyadic_joint", "GRWTSK.NumberTheory.Moebius.PickupSignedCertificate.riemannHypothesis_of_joint_finite_cover"]
+new_identifiers = 59
+additional_imported_roots = 11
+generated_private_opaque_names = "PENDING_NATIVE_ELABORATION; audit recursively, not only the lexical roster"
+status = "NOT_RUN"
+
+[mathematical_controls]
+checks = ["Grid step and scale region are fixed before the positive rate; C and initial index may depend on rate, never on tested scale.", "Coverage uses the same outer time as pickupCross: a=1, b=log(2), T0=0 for the dyadic route.", "The finite initial allowance is used only on a finite prefix; the complete signed sum is not replaced by absolute values.", "exp(j*log(2)) and its natural floor are exactly 2^j, including j=0.", "The terminal birth at 2^j is retained until its zero width is proved; the surviving sum is k<2^j-1.", "N>=1 and all cast, inverse-square-root and logarithmic-product identities must elaborate against pinned Mathlib.", "The chord is in exp(-u/2) and integrated in physical time, not a chord in physical time.", "The source coefficients are the original five moments; curvatureCorrection is the fixed signed source sum.", "Both ordered prime-pair orientations, coprimality, the unselected complement and the original diagonal deletion remain.", "Actual sieve return has zero transport loss and does not change multiplicities, signs, zero symbols or source window.", "Combine independent complete upper certificates by minimum; never subtract already-counted credit twice.", "The packet return, positive weights and weighted rows are actual model guards, not inferred from small matrix dimension.", "Tail and model error remain signed; no separate growth estimates on Gram and coefficient factors are imposed.", "|endpointSum-jointUpper|<=1/4; the different upper-certificate cross slack is between zero and 1/2.", "Observed endpoints require certified absolute error at every used node; the cost is epsilon*T+1/4.", "Centered variance, anchored defects and graph guards are retained; no unproved source identification or zeta-zero decoder.", "A fixed finite portfolio can use different Hilbert spaces and heights; its union needs affine coverage.", "Every positive exponent is quantified; a fixed N^eta bound or finite numerical checks do not discharge it.", "Reuse the unchanged energy/Laplace analytic return to canonical Mathlib RiemannHypothesis; do not conflate historical RH sources."]
+
+[diagnostic]
+classification = "FINITE_OFF_KERNEL_EVIDENCE_ONLY"
+normal_command = "python /mnt/data/rh_program/preflight.py > /mnt/data/rh_program/preflight-normal.json"
+normal_exit = 0
+optimized_command = "python -O /mnt/data/rh_program/preflight.py > /mnt/data/rh_program/preflight-optimized.json"
+optimized_exit = 0
+comparison_command = "cmp /mnt/data/rh_program/preflight-normal.json /mnt/data/rh_program/preflight-optimized.json"
+comparison_exit = 0
+script_sha256 = "dabd2f22ec84c2d399f3ce4198c1c87398148157350aab4b9714d3da44c03fc3"
+normal_output_sha256 = "4c130cbf339e13f49de68056d554c6e0e7511201971881a7bd1850ffc4e9b814"
+optimized_output_sha256 = "4c130cbf339e13f49de68056d554c6e0e7511201971881a7bd1850ffc4e9b814"
+checks_per_mode = 4852
+exact_rational_integer_and_control_checks = 4621
+lexical_checks = 15
+floating_checks = 216
+floating_precision_digits = 80
+actual_mobius_dyadic_cutoffs = [1, 2, 4, 8, 16, 32, 64]
+durable_noeaaeue_receipt = "UNAVAILABLE; temporary external diagnostics only"
+limits = ["Lexical checks are not Lean parsing or elaboration.", "Rational fixtures are scalar transport checks, not arithmetic suppliers.", "Floating diagnostics are not rigorous intervals or asymptotic estimates.", "No compilation, fresh kernel replay or transitive axiom audit was run."]

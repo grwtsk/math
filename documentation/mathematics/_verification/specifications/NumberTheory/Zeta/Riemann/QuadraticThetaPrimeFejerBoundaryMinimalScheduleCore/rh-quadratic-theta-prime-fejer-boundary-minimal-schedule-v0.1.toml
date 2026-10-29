@@ -1,0 +1,37 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-boundary-minimal-schedule-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerBoundaryMinimalScheduleCore"
+build_target = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerBoundaryMinimalScheduleCore"
+
+[source_binding]
+parent_revision = "1ef417eeb3d05e8fbcb87182479607cf5c6ce3f5"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / BOUNDARY_MINIMAL_FEJER_CUTOFF_SCHEDULE_SOURCE_PROVED / SEVEN_EIGHTHS_CUTOFF_NONALIASING_SOURCE_PROVED / EXACT_CORRELATION_FRONTIER_REDUCED_TO_BOUND_AND_READOUT / SEVEN_EIGHTHS_EXACT_CORRELATION_BOUND_OPEN"
+
+[closed]
+seven_eighths_boundary_minimal_bandwidth = true
+concrete_ceiling_cutoff_definition = true
+cutoff_positive = true
+cutoff_lower_power_bound = true
+cutoff_upper_power_bound = true
+cutoff_nonaliasing = true
+boundary_minimal_schedule_constructed = true
+schedule_to_exact_supplier_adapter = true
+
+[frontier]
+remaining = "prove the exact X^(3/2) log^4 seven-eighths Fejer weighted prime-atom correlation bound at the concrete ceiling cutoff and prove the deterministic exact-correlation readout"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+BOUNDARY_MINIMAL_FEJER_CUTOFF_SCHEDULE_SOURCE_PROVED = true
+SEVEN_EIGHTHS_CUTOFF_NONALIASING_SOURCE_PROVED = true
+EXACT_CORRELATION_FRONTIER_REDUCED_TO_BOUND_AND_READOUT = true
+SEVEN_EIGHTHS_EXACT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_EXACT_CORRELATION_READOUT_PROVED = false
+SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

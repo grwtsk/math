@@ -1,0 +1,59 @@
+schema = "grwtsk.lean-subject-seams/0.2"
+id = "lean-subject-seams-v0.2"
+owner_issue = 403
+modules = [
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity",
+]
+source_paths = [
+  "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalOrganization/ConceptualSeamPlan.lean",
+  "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalOrganization/ConceptualSeamIntegrity.lean",
+]
+status = "SOURCE_ONLY_NOT_RUN_NOT_KERNEL_AUDITED"
+public_root_required = false
+
+required_declarations = [
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan.SeamPlan",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.CommandBytePiece",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.CommandBytesAlign",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.ContextsContinuous",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.CommandSourcesMatch",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.DeclarationOriginsBound",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.DependencyEndpointsBound",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.UniqueSliceOrdinals",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.SelectedTargetsDeclared",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.ModuleDependencyEndpointsDeclared",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.SourcePublicFingerprintsObserved",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.AcceptedSeamPlan",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.AcceptedSeamPlan.reconstructedBytes_eq_commandPayload",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.AcceptedSeamPlan.resultPublicFingerprintsObserved",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.AcceptedSeamPlan.selectedTarget_mem_resultModuleOrder",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.AcceptedSeamPlan.dependencyEndpoints_mem_commands",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.AcceptedSeamPlan.moduleDependencyEndpoints_mem_order",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.contextsContinuous_pair_iff",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.orphan_dependency_rejected",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.undeclared_selected_target_rejected",
+  "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamIntegrity.wrong_command_ordinal_rejected",
+]
+
+required_checks = [
+  "direct elaboration of both modules",
+  "exact authored and generated declaration/type inventory",
+  "command-byte alignment and source reconstruction fixture",
+  "adjacent-context continuity fixture",
+  "orphan dependency rejection fixture",
+  "undeclared target rejection fixture",
+  "wrong command-ordinal rejection fixture",
+  "public fingerprint observation and preservation",
+  "module dependency endpoint membership",
+  "transitive axiom and unsafe/native audit",
+]
+
+nonclaims = [
+  "No Lean frontend extraction has run.",
+  "No command digest has been validated against source bytes.",
+  "No source file has been split or moved.",
+  "No learned seam is claimed canonical.",
+  "No attribution or originality disposition is supplied.",
+  "No successful process or kernel audit is represented by this manifest.",
+]
