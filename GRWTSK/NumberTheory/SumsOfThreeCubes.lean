@@ -33,7 +33,7 @@ def Conjecture : Prop := ∀ n : Int, Admissible n → Representable n
 private theorem pow_remainder (x : Int) (k : Nat) :
     (x % 9) ^ k % 9 = x ^ k % 9 := by
   induction k with
-  | zero => rfl
+  | zero => simp only [Int.pow_zero]
   | succ k ih =>
     calc
       (x % 9) ^ (k + 1) % 9 =
