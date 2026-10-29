@@ -366,6 +366,41 @@ These four theorem scripts are SOURCE_PROOF_CANDIDATE. Compilation,
 fresh kernel replay and transitive axiom audit remain NOT_RUN. The identities
 provide no stronger sector, triangle, full-moment, mean, signed-bulk or RH bound.
 
+### Individual complete coprime SL and LS orientations
+
+The definitions `shortLongCoprime` and `longShortCoprime` are direct sums on
+the same closed square 1<=q,r<=N with gcd(q,r)=1, containing respectively
+the literal SL and LS numerators and both original denominator factors.
+`shortLongCoprime_eq_longShortCoprime` swaps the full quotient inventories,
+uses gcd(q,r)=gcd(r,q), and commutes the actual numerator and denominator
+products. The exchange swaps the entire source columns and their masks;
+no symmetry hypothesis on G or equality of columns is required.
+
+`mixedCoprime_eq_shortLong_add_longShort` identifies the original complete
+mixed term with the sum of these two literal orientations. Combined with
+the existing mixed folding identity, it yields
+
+ shortLongCoprime = longShortCoprime
+   = shortLongUpperTriangle + longShortUpperTriangle.
+
+The triangle formulas are `shortLongCoprime_eq_upperTriangles` and
+`longShortCoprime_eq_upperTriangles`. The original mixedCoprime remains the
+sum of the two complete orientations, hence twice the two-triangle sum.
+The strict SL and LS triangle sums remain distinct: quotient exchange on
+q<r reverses that domain. The earlier vanishing short unit column supplies
+the zero mixed d=1 diagonal; no centering is used.
+
+`coprime_mixed_orientation_zero_components` explicitly makes both complete
+orientations and both strict triangles zero at N=0. All statements allow
+arbitrary P,N,L,G, with no new primality, positivity, G-symmetry or analytic
+premise. Original row masks, repeated-prime and long-row coprime guards,
+both selected-divisor denominator factors, closed cutoffs and frozen
+parameters remain. Long one-unit/nonunit terms and product collisions are
+retained; the separate LL long unit square is unchanged.
+These two definitions and five theorem scripts are SOURCE_PROOF_CANDIDATE.
+Compilation, fresh kernel replay and transitive axiom audit remain NOT_RUN.
+No stronger sector, triangle, full-moment, mean, signed-bulk or RH bound follows.
+
 ## 2. A new mixed family: a LONG prime divides the OTHER quotient
 
 In (1)-(2) retain s|q. Denote its complete sum, INCLUDING both SL/LS moment
