@@ -300,6 +300,44 @@ Compilation, fresh kernel replay and transitive axiom audit are NOT_RUN.
 The identity supplies no stronger sector, triangle, complete-moment, mean,
 signed-bulk or RH bound.
 
+### Exact sector-by-sector off-diagonal folding
+
+The finite helper `sum_coprime_offDiagonal_eq_two_mul_upperTriangle` takes
+an arbitrary real-valued pair function f and the explicit structural premise
+f(q,r)=f(r,q). It splits q!=r into q<r and r<q and swaps the same two closed
+quotient inventories, retaining the coprimality mask. Its three sector
+applications discharge symmetry by commutativity of the actual numerator
+and the two original denominator factors; no hypothesis on G is added.
+
+The source candidates now state exactly
+
+ shortShortOffDiagonal = 2*shortShortUpperTriangle,
+ mixedOffDiagonal = 2*(shortLongUpperTriangle + longShortUpperTriangle),
+ mixedCoprime = 2*(shortLongUpperTriangle + longShortUpperTriangle),
+ longLongOffDiagonal = 2*longLongUpperTriangle.
+
+The corresponding declarations are
+`shortShortOffDiagonal_eq_two_mul_upperTriangle`,
+`mixedOffDiagonal_eq_two_mul_upperTriangles`,
+`mixedCoprime_eq_two_mul_upperTriangles`, and
+`longLongOffDiagonal_eq_two_mul_upperTriangle`.
+The mixed proof uses symmetry of the combined SL+LS summand and distributes
+its common pair of denominator factors over the sum. SL and LS remain two
+distinct strict-triangle sectors. The mixedCoprime consumer uses the earlier
+exact vanishing of its d=1 diagonal, not a centering argument.
+The LL identity concerns only its off-diagonal: the long unit square stays
+in the separately retained diagonal term, and off-diagonal one-unit pairs
+remain. All original row masks, repeated-prime and long-row coprime guards,
+selected-divisor denominators, closed cutoffs and frozen parameters remain.
+
+`sector_folding_zero_components` explicitly states that SS, mixed and LL
+off-diagonals, mixedCoprime and all four triangle sectors are zero at N=0.
+The sector corollaries otherwise allow arbitrary P,N,L,G, without new
+primality, positivity, symmetry or analytic premises. These six theorem
+scripts are SOURCE_PROOF_CANDIDATE. Compilation, fresh kernel replay and
+transitive axiom audit remain NOT_RUN. Folding a signed finite sum supplies
+no stronger sector, triangle, full-moment, mean, signed-bulk or RH bound.
+
 ## 2. A new mixed family: a LONG prime divides the OTHER quotient
 
 In (1)-(2) retain s|q. Denote its complete sum, INCLUDING both SL/LS moment
