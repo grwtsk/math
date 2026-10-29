@@ -772,6 +772,108 @@ theorem dOneUpperTriangle_zero_sectors
   simp [dOneUpperTriangle, shortShortUpperTriangle, shortLongUpperTriangle,
     longShortUpperTriangle, longLongUpperTriangle]
 
+/-- Finite coprime folding for a symmetric signed summand. Sector consumers
+below discharge symmetry algebraically, without a symmetry assumption on G. -/
+theorem sum_coprime_offDiagonal_eq_two_mul_upperTriangle (N : ℕ)
+    (f : ℕ → ℕ → ℝ) (hsymm : ∀ q r, f q r = f r q) :
+    (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+      if Nat.gcd q r = 1 ∧ q ≠ r then f q r else 0) =
+      2 * ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+        if Nat.gcd q r = 1 ∧ q < r then f q r else 0 := by
+  let g : ℕ → ℕ → ℝ := fun q r =>
+    if Nat.gcd q r = 1 ∧ q < r then f q r else 0
+  have hsplit (q r : ℕ) :
+      (if Nat.gcd q r = 1 ∧ q ≠ r then f q r else 0) = g q r + g r q := by
+    by_cases hg : Nat.gcd q r = 1
+    · rcases lt_trichotomy q r with hlt | he | hgt
+      · have hne : q ≠ r := ne_of_lt hlt
+        have hnot : ¬r < q := not_lt_of_ge (le_of_lt hlt)
+        simp [g, hg, Nat.gcd_comm r q, hlt, hne, hnot]
+      · subst r
+        simp [g]
+      · have hne : q ≠ r := (ne_of_lt hgt).symm
+        have hnot : ¬q < r := not_lt_of_ge (le_of_lt hgt)
+        simpa [g, hg, Nat.gcd_comm r q, hgt, hne, hnot] using hsymm q r
+    · have hgr : ¬Nat.gcd r q = 1 := by
+        simpa only [Nat.gcd_comm r q] using hg
+      simp [g, hg, hgr]
+  have hswap :
+      (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N, g r q) =
+        ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N, g q r := by
+    rw [Finset.sum_comm]
+  change (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 ∧ q ≠ r then f q r else 0) =
+      2 * ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N, g q r
+  simp_rw [hsplit, Finset.sum_add_distrib]
+  rw [hswap]
+  ring
+
+/-- Exact SS folding with the same original numerator, masks and denominators. -/
+theorem shortShortOffDiagonal_eq_two_mul_upperTriangle
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    shortShortOffDiagonal P N L G = 2 * shortShortUpperTriangle P N L G := by
+  unfold shortShortOffDiagonal shortShortUpperTriangle
+  apply sum_coprime_offDiagonal_eq_two_mul_upperTriangle
+  intro q r
+  congr 1 <;> ring
+
+/-- The combined SL+LS summand is symmetric. Its strict triangles remain
+distinct: this identity does not assert equality of SL and LS on q<r. -/
+theorem mixedOffDiagonal_eq_two_mul_upperTriangles
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    mixedOffDiagonal P N L G =
+      2 * (shortLongUpperTriangle P N L G + longShortUpperTriangle P N L G) := by
+  have hfold := sum_coprime_offDiagonal_eq_two_mul_upperTriangle N
+    (fun q r =>
+      (rough P q * shortColumn P N L G q * (rough P r * longColumn P N L G r) +
+       rough P q * longColumn P N L G q * (rough P r * shortColumn P N L G r)) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)))
+    (by intro q r; congr 1 <;> ring)
+  unfold mixedOffDiagonal
+  rw [hfold]
+  unfold shortLongUpperTriangle longShortUpperTriangle
+  rw [← Finset.sum_add_distrib]
+  congr 1
+  apply Finset.sum_congr rfl
+  intro q _
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro r _
+  by_cases h : Nat.gcd q r = 1 ∧ q < r
+  · simp only [if_pos h]
+    ring
+  · simp [h]
+
+/-- The previously identified complete mixed term has no d=1 diagonal,
+so the same two-triangle formula applies to the original mixedCoprime. -/
+theorem mixedCoprime_eq_two_mul_upperTriangles
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    mixedCoprime P N L G =
+      2 * (shortLongUpperTriangle P N L G + longShortUpperTriangle P N L G) := by
+  rw [mixedCoprime_eq_offDiagonal, mixedOffDiagonal_eq_two_mul_upperTriangles]
+
+/-- Exact LL off-diagonal folding. The long unit square stays in the
+separate diagonal term, and off-diagonal one-unit pairs remain. -/
+theorem longLongOffDiagonal_eq_two_mul_upperTriangle
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    longLongOffDiagonal P N L G = 2 * longLongUpperTriangle P N L G := by
+  unfold longLongOffDiagonal longLongUpperTriangle
+  apply sum_coprime_offDiagonal_eq_two_mul_upperTriangle
+  intro q r
+  congr 1 <;> ring
+
+/-- Every side of the three sector-folding identities is empty at N=0. -/
+theorem sector_folding_zero_components
+    (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → ℝ) :
+    shortShortOffDiagonal P 0 L G = 0 ∧ mixedOffDiagonal P 0 L G = 0 ∧
+      mixedCoprime P 0 L G = 0 ∧ longLongOffDiagonal P 0 L G = 0 ∧
+      shortShortUpperTriangle P 0 L G = 0 ∧ shortLongUpperTriangle P 0 L G = 0 ∧
+      longShortUpperTriangle P 0 L G = 0 ∧ longLongUpperTriangle P 0 L G = 0 := by
+  rw [mixedCoprime_eq_offDiagonal]
+  simp [shortShortOffDiagonal, mixedOffDiagonal, longLongOffDiagonal,
+    shortShortUpperTriangle, shortLongUpperTriangle,
+    longShortUpperTriangle, longLongUpperTriangle]
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
