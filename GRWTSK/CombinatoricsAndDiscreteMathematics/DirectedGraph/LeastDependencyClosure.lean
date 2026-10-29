@@ -3412,14 +3412,18 @@ theorem optionalKeyMinimum_spec {β : Type v} (key : β → CostCountMask)
       by_cases selected : feasible head
       · cases comparison : costCountMaskLEDecidable (key head) (key best) with
         | isTrue dominates =>
-          rw [optionalKeyMinimum, if_pos selected, tailResult, comparison]
+          rw [optionalKeyMinimum, if_pos selected, tailResult]
+          dsimp only
+          rw [comparison]
           refine ⟨List.mem_cons.mpr (Or.inl rfl), selected, ?_⟩
           intro candidate member admissible
           cases List.mem_cons.mp member with
           | inl equal => cases equal; exact costCountMaskLE_refl _
           | inr member => exact costCountMaskLE_trans dominates (ih.2.2 candidate member admissible)
         | isFalse absent =>
-          rw [optionalKeyMinimum, if_pos selected, tailResult, comparison]
+          rw [optionalKeyMinimum, if_pos selected, tailResult]
+          dsimp only
+          rw [comparison]
           have reverse : CostCountMaskLE (key best) (key head) := by
             cases costCountMaskLE_total (key head) (key best) with
             | inl forward => exact False.elim (absent forward)
