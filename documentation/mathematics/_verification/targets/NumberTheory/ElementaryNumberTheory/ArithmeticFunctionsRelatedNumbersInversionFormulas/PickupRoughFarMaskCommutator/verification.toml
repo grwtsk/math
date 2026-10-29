@@ -1,0 +1,49 @@
+# Static mathematical target specification, not a queue or execution receipt.
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+verification_issue = "https://github.com/grwtsk/math/issues/1471"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughFarMaskCommutator"
+mathematical_scope = "Exact cutoff/divisor-mask factorization of the far prime-transport commutator and exact finite fresh-prime-family total; literature connections are analogies only."
+
+[source]
+repository = "grwtsk/math"
+commit = "1198aa95fee7aa38718faf8ac8e633a75ef8ffb0"
+parent = "3f29723681bd1427f8fefe6cafeb42ce54bfbade"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarMaskCommutator.lean"
+blob = "80651cb82e9a9256a61a2721aae07cfc2abc10b6"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[environment]
+lean_toolchain = "leanprover/lean4:v4.34.1"
+lean_toolchain_blob = "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5"
+mathlib_commit = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+lake_manifest_blob = "c8044c56be77c58e6f41cca024b25237c59e8c79"
+lakefile_blob = "7cac6bef50ace37093759b857409ba65f65d118d"
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarMaskCommutator"
+build = "lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarMaskCommutator"
+elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarMaskCommutator.lean"
+commands_status = "NOT_RUN"
+definitions = ["farActive","farIndicator","cutoffCommutator","divisorMaskCommutator","transportedMain","transportedCutoff","transportedDivisorMask"]
+theorems = ["farMask_eq_indicator_mul","maskCommutator_eq_cutoff_add_divisor","cutoffCommutator_eq_zero_of_indicator_stable","divisorMaskCommutator_eq_zero_of_weight_stable","fourDifference_actual_farKernel_components","farNegative_eq_transport_components","farNegative_primeFamily_total"]
+reject = ["sorryAx","new research axioms","literature analogy promoted to inference","omitted source masks or cutoffs","unauthorized native trust","acceptance transferred from changed bytes"]
+
+[literature]
+tao_chowla = "ANALOGY_ONLY: arXiv:1509.05422"
+duffin_schaeffer = "ANALOGY_ONLY: DOI:10.4007/annals.2020.192.1.5"
+carleson_lean = "ANALOGY_ONLY: arXiv:2609.31334"
+historical_influence = "NOT_CLAIMED"
+
+[obstruction]
+id = "RH-FAR-PRIME-MASK-COMMUTATOR-01"
+status = "REFINED"
+statement = "The exact mask commutator now splits into geometric cutoff/gap changes and arithmetic pairWeight changes; neither complete signed sector has a proved improved-rate bound."
+smallest_missing_premise = "A source-derived one-sided estimate for at least the complete cutoff and divisor-mask sector combination, or a valid finite-prime averaging mechanism that bounds their sum without discarding cancellation."
