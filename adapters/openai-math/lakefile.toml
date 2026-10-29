@@ -10,3 +10,9 @@ name = "OAI"
 git = "https://github.com/openai/math.git"
 rev = "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
 subDir = "lean"
+
+# Opt-in subject-organized upstream surfaces; excluded from defaultTargets.
+[[lean_lib]]
+name = "GRWTSKOpenAICatalogue"
+roots = []
+globs = ["GRWTSK.+"]

@@ -11,6 +11,19 @@ Lean/Mathlib baseline, but does not depend on OAI or import these adapters.
 The provider manifest preserves the upstream dependency pins; do not refresh
 transitive inputs silently.
 
+## Collection-wide coverage
+
+[The collection guide](CATALOGUE.md) describes 419 opt-in comparator import
+surfaces, including the nested Hodge challenge, across all upstream subjects.
+The static [catalogue](catalogue.json) pins all 721 manuscripts in 373 families,
+545 distinct theorem names, the upstream formalization records, and the OAI
+module source trees. Import/re-export coverage is distinct from a mathematical
+bridge or verification. Every new surface remains `NOT_RUN`.
+
+The `GRWTSKOpenAICatalogue` library is opt-in and excluded from `defaultTargets`.
+Select an individual subject module for external verification; do not build the
+whole upstream collection merely to check one result.
+
 ## Sources and scope
 
 - `OpenAITwoPointFiniteFamily.lean`: the common upstream Liouville exponent with
