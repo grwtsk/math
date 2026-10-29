@@ -3397,16 +3397,16 @@ theorem optionalKeyMinimum_spec {β : Type v} (key : β → CostCountMask)
       rw [tailResult] at ih
       by_cases selected : feasible head
       · rw [optionalKeyMinimum, if_pos selected, tailResult]
-        refine ⟨List.mem_cons.mpr (Or.inl rfl), selected, ?_⟩
+        refine ⟨List.Mem.head rest, selected, ?_⟩
         intro candidate member admissible
-        cases List.mem_cons.mp member with
-        | inl equal => cases equal; exact costCountMaskLE_refl _
-        | inr member => exact False.elim (ih candidate member admissible)
+        cases member with
+        | head => exact costCountMaskLE_refl _
+        | tail _ member => exact False.elim (ih candidate member admissible)
       · rw [optionalKeyMinimum, if_neg selected, tailResult]
         intro candidate member admissible
-        cases List.mem_cons.mp member with
-        | inl equal => cases equal; exact selected admissible
-        | inr member => exact ih candidate member admissible
+        cases member with
+        | head => exact selected admissible
+        | tail _ member => exact ih candidate member admissible
     | some best =>
       rw [tailResult] at ih
       by_cases selected : feasible head
@@ -3415,11 +3415,11 @@ theorem optionalKeyMinimum_spec {β : Type v} (key : β → CostCountMask)
           rw [optionalKeyMinimum, if_pos selected, tailResult]
           dsimp only
           rw [comparison]
-          refine ⟨List.mem_cons.mpr (Or.inl rfl), selected, ?_⟩
+          refine ⟨List.Mem.head rest, selected, ?_⟩
           intro candidate member admissible
-          cases List.mem_cons.mp member with
-          | inl equal => cases equal; exact costCountMaskLE_refl _
-          | inr member => exact costCountMaskLE_trans dominates (ih.2.2 candidate member admissible)
+          cases member with
+          | head => exact costCountMaskLE_refl _
+          | tail _ member => exact costCountMaskLE_trans dominates (ih.2.2 candidate member admissible)
         | isFalse absent =>
           rw [optionalKeyMinimum, if_pos selected, tailResult]
           dsimp only
@@ -3428,17 +3428,17 @@ theorem optionalKeyMinimum_spec {β : Type v} (key : β → CostCountMask)
             cases costCountMaskLE_total (key head) (key best) with
             | inl forward => exact False.elim (absent forward)
             | inr backward => exact backward
-          refine ⟨List.mem_cons.mpr (Or.inr ih.1), ih.2.1, ?_⟩
+          refine ⟨List.Mem.tail head ih.1, ih.2.1, ?_⟩
           intro candidate member admissible
-          cases List.mem_cons.mp member with
-          | inl equal => cases equal; exact reverse
-          | inr member => exact ih.2.2 candidate member admissible
+          cases member with
+          | head => exact reverse
+          | tail _ member => exact ih.2.2 candidate member admissible
       · rw [optionalKeyMinimum, if_neg selected, tailResult]
-        refine ⟨List.mem_cons.mpr (Or.inr ih.1), ih.2.1, ?_⟩
+        refine ⟨List.Mem.tail head ih.1, ih.2.1, ?_⟩
         intro candidate member admissible
-        cases List.mem_cons.mp member with
-        | inl equal => cases equal; exact False.elim (selected admissible)
-        | inr member => exact ih.2.2 candidate member admissible
+        cases member with
+        | head => exact False.elim (selected admissible)
+        | tail _ member => exact ih.2.2 candidate member admissible
 
 theorem optionalKeyMinimum_none_iff {β : Type v} (key : β → CostCountMask)
     (feasible : β → Prop) [DecidablePred feasible] (candidates : List β) :
