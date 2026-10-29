@@ -222,3 +222,124 @@ audit remain NOT_RUN; no proof execution is authorized by this note.
 
 <!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
 <!-- END DOCUMENT CERTIFICATION -->
+
+
+## Adding one small factor to the first core reverses the signed credit
+
+Written extension by grwtsk contributors. Source chat
+https://chatgpt.com/g/g-p-6a9ce8907e348191a3f884d45ab4ad48-noeaaeue/c/6ae172dd-a538-83e8-8008-ebad9b4c2295,
+assistant `d6c98ac9-4992-49fd-9829-ee70abff0646`, rendered-final SHA256
+`5de237c985089bab0350b762f2f37e366d367e3f52d09c42b7c97e2cc1b4846a`.
+Use the definitions and pinned Johnston–Yang input of the preceding note.
+This extension does not invalidate the negative subfamily theorem. It shows why
+that theorem cannot supply a net credit after adding the following sector.
+
+Let I(d)={1} union P(d), and let original m=d i p, n=d k q, with
+i in I(d), k in K(d), p,q>j^8 prime. Keep the original R_(d,s) and s=kq,
+and impose (i,k)=1 and p!=q. The verified endpoint conditions imply p,q>d;
+all small factors avoid d. Thus gcd(m,n)=d, theta=1, and the arithmetic
+coefficient is a(d)^2 mu(i)mu(k). Factorization is unique. Write E_(j,d)
+for this union's actual contribution, counting both ordered orientations.
+It includes the old family exactly once at i=1.
+
+The forbidden small patterns for i=ell are k=ell and k=ell*v. The forbidden
+large pattern is p=q. Temporarily allow p=q only in an auxiliary product sum.
+With A_(d,i)(t)=sum_(N/(3di)<p<=t/(2di),p prime)1/sqrt(p), that sum is
+
+\[
+ \widetilde E_{j,d}={8c_2a(d)^2\over\sqrt d}
+ \sum_{i\in I(d)}{\mu(i)\over\sqrt i}
+ \sum_{k\in K(d),(i,k)=1}\mu(k)
+ \sum_{2N/3<dkq\le W,q\ {
+m prime}} f_N(dkq)A_{d,i}(dkq).
+\]
+
+The true E is this auxiliary sum minus Delta. At p=q the original geometry
+requires 2ell<=k<3ell and N/(3dell)<p<=W/(dk), with ell not dividing k.
+The exact nonempty interval automatically strengthens k<3ell to k<3ell W/N.
+The auxiliary correction is
+
+\[
+ \Delta=-2a(d)^2\sum_{\ell\in P(d)}
+ \sum_{k\in K(d),\ell\nmid k,2\ell\le k<3\ell}\mu(k)
+ \sum_{N/(3d\ell)<p\le W/(dk),p\ {
+m prime}}G(d\ell p,dkp).
+\]
+
+The original Gram obeys G<=G0/N in this cell, G0=4sqrt(3)c_2F0.
+For each ell there are at most ell integers k in [2ell,3ell), whose reciprocal
+sum is <=1/2. Counting primes by N/(dk) therefore proves
+|Delta|<=G0 a(d)^2 j^8/d. This is an auxiliary analytic subtraction; it is
+not a second credit for the original shared-prime allocation.
+
+Put H=sum_(ell in P(d))1/ell, Hr=sum ell^(-r), e2=(H^2-H2)/2,
+e3=(H^3-3HH2+2H3)/6. After the small-factor exclusions, the signed reciprocal
+coefficient and absolute reciprocal mass are exactly
+
+\[
+ \gamma=3e_2-H-3e_3,
+ \qquad S=H+3e_2+3e_3.
+\]
+
+Indeed the old coefficient is e2-H and the new one is 2e2-3e3;
+the factors count the possible allocation of a distinct small prime to i.
+All repeated-prime diagonals remain excluded. If 5/4<=H<=3/2 and j>=3,
+S<=105/16. Also
+
+\[
+ \gamma=(H-1)(H-H^2/2+3H_2/2)-H_3
+ \ge15/128-1/54>3/32,
+\]
+
+using H3<=H/j^4. Thus the reciprocal coefficient has changed sign.
+
+This algebra alone is not a source estimate. Set tau_d=log(N/d),
+rho=(16log j+log3)/log(N/D), and
+
+\[
+ \Lambda_d(x,v)=\sum_{i\in I(d),k\in K(d),(i,k)=1}
+ {\mu(i)\mu(k)\over ik\log(Nv/(di))\log(Nx/(dk))}.
+\]
+
+Replacing the two actual prime sums by their densities gives precisely
+
+\[
+ M_{j,d}=8c_2{a(d)^2N\over d^2}
+ \int_{2/3}^{W/N} F(x)\int_{1/3}^{x/2}
+ {\Lambda_d(x,v)\over\sqrt v}\,dv\,dx.
+\]
+
+Both logarithms lie in [(1-rho)tau_d,tau_d]. Hence
+|tau_d^2 Lambda-gamma|<=((1-rho)^(-2)-1)S.
+For rho<=1/512, the right side is <1/32, and consequently
+1/(16tau_d^2)<=Lambda<=7/tau_d^2. With tau_d>=T/2 and W>=3N/4,
+this implies M_(j,d)>=c_2 J_* a(d)^2N/(2d^2T^2).
+
+The same two partial summations as in the preceding note now sum the actual
+mass S, without a factor equal to its cardinality. Put tau0=log(N/(3D j^8))
+and X=N/(2D j^16). With every endpoint above X>max(D,j^8,e^2),
+
+\[
+ |E_{j,d}-M_{j,d}|\le {a(d)^2N\over d^2}\mathcal E_j,
+\quad \mathcal E_j=
+ 8c_2F0\,{105\over16}\epsilon(X)(\sqrt2+2\kappa/\tau0)
+ +G0 D j^8/N.
+\]
+
+This includes the independent p=q subtraction and preserves the original horizon.
+Under the explicit sufficient conditions already stated here and
+T^2 mathcal(E)_j<=c_2 J_*/4,
+
+\[
+ E_{j,d}\ge {c_2J_*\over4}\,{a(d)^2N\over d^2T^2}
+ >{a(d)^2N\over1228800d^2T^2}
+\]
+
+on active support. These conditions hold eventually: excluded-prime losses tend
+to zero, rho tends to zero, and both T^2 epsilon(X) and T^2 D j^8/N tend to zero.
+No particular numerical starting stage is certified. The d=1 enlarged family
+therefore cannot have an O(N^(7/8)) upper bound. This does not rule out cancellation
+with its exact disjoint complement, which remains unbounded. Other small-cofactor
+degrees may change the sign again; no truncation supplies a full arithmetic bound.
+Compilation, fresh kernel replay and transitive axiom audit: NOT_RUN. No new Lean
+declarations, kernel-verified bridges or proof execution are claimed.
