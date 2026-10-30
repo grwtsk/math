@@ -1,0 +1,63 @@
+{
+  "primary_url": "https://www.3blue1brown.com/lessons/taylor-series/",
+  "title": "Taylor series",
+  "byline": "Grant Sanderson",
+  "text_adaptation": "Kurt Bruns",
+  "date": "2017-05-07",
+  "retained_html_sha256": "ac4dd2ead35d963bbdb7c7574580aaeb3b43decb70370eea6998ae4e0c4bf853",
+  "source": "GRWTSK/ApproximationsAndExpansions/SeriesExpansionsEGTaylorLidstoneSeriesButNotFourierSeries/TaylorPolynomialCoefficients.lean",
+  "blob": "3c43f383873ae97bfbe4d98f661633278baa3d5c",
+  "namespace": "GRWTSK.Approximation.TaylorPolynomialCoefficients",
+  "theorems": [
+    "iterated_eval_derivative",
+    "polynomial_derivative_zero",
+    "coefficient_from_derivative",
+    "finite_polynomial_coeff",
+    "finite_derivative_zero",
+    "finite_derivative_above",
+    "finite_taylor_matches",
+    "finite_taylor_unique",
+    "sine_cubic_formula",
+    "sine_cubic_matches",
+    "sine_cubic_unique",
+    "cosine_quartic_formula",
+    "cosine_quartic_matches",
+    "cosine_quartic_unique",
+    "sine_cubic_error",
+    "sine_tenth_example"
+  ],
+  "scope": "Actual analytic iterated derivative/evaluated algebraic derivative bridge; finite polynomial coefficient extraction and factorial division; finite Taylor matching with local smoothness and degree-bounded uniqueness; exact source sine cubic and cosine quartic, separate sine residual/local rational consumer.",
+  "hypotheses": "Real polynomials and real evaluation; coefficients truncated to k<=N. Real factorial casts nonzero, not natural-number division. ContDiffAt R N f0 retained for finite Taylor source interpretation; uniqueness requires p.natDegree<=N and every actual iterated derivative at0 throughN matching. Sine analytic error requires abs(x)<=1.",
+  "roles": {
+    "construction": "Literal finite sum of C(c_k)*X^k and actual finite Taylor coefficients from iteratedDeriv",
+    "analytic_bridge": "Induction using actual Polynomial.deriv and iteratedDeriv_succ before algebraic coeff_iterate_derivative",
+    "finite_uniqueness": "Matching plus actual degree cutoff fixes the polynomial, with above-N coefficients explicitly zero",
+    "separate_error": "Imported analytic Real.sin_bound returned to the actual finite cubic; matching alone is not error or convergence"
+  },
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/Analysis/Calculus/Deriv/Polynomial.lean": "15442ddc155995c08700233c5334a44fa0443c53",
+      "Mathlib/Analysis/Calculus/IteratedDeriv/Defs.lean": "86135f3b7295638a64b59ddaf2653b87d2733431",
+      "Mathlib/Algebra/Polynomial/Derivative.lean": "c04bb40f40baafb24f12dae71deb15348241b4d9",
+      "Mathlib/Algebra/Polynomial/Coeff.lean": "2811dc15d07a0421e15261ea448ffe22acbad367",
+      "Mathlib/Algebra/Polynomial/Eval/Coeff.lean": "9d4016418f957af6f9cb80f36069fbd333183fd4",
+      "Mathlib/Data/Nat/Factorial/Basic.lean": "0bc6fc9de9a8362da95f551c29d680ab5c17cdcd",
+      "Mathlib/Analysis/SpecialFunctions/Trigonometric/Deriv.lean": "42ad385577a44c06e07a77e4d835b9a384345f1a",
+      "Mathlib/Analysis/Complex/Trigonometric.lean": "d2ba6ae2970b5c003f4abb20b7b7d536b9f1297c"
+    }
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "General shifted-center coefficient transport",
+    "Exponential partial-sum convergence and logarithm radius/endpoints/divergence",
+    "No infinite analytic equality from finite or smooth derivative matching alone",
+    "Full spoken-video audit and all source-bound checks"
+  ],
+  "video_verified_complete": false
+}
