@@ -1426940,6 +1426940,25 @@
       "target_sha256": "f282c49131b07364fab5598a780dc2f5c2ed3a094dcf13b4a60cdf807ac17a38",
       "target_git_blob": "07897ca1e8b273a5a627f6bff11f8b897d165fae",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfSeveralVariables/CalculusOfVectorFunctions/FourSwirlsFluxCurl.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfSeveralVariables/CalculusOfVectorFunctions/FourSwirlsFluxCurl.lean",
+      "source_sha256": "4feb8b63d03a026bf955949bf8175261c6c7d9a6030c67a19a2c8d08e795fa17",
+      "input_blob": "68aa9b05758beef8e6f8810b495cc71bbad555cb",
+      "source_kind": "lean_source",
+      "msc_code": "26B12",
+      "msc_label": "Calculus of vector functions",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual planar field partial derivatives,divergence/curl and oriented edge-integral flux/circulation consumer",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "68aa9b05758beef8e6f8810b495cc71bbad555cb",
+      "target_sha256": "4feb8b63d03a026bf955949bf8175261c6c7d9a6030c67a19a2c8d08e795fa17",
+      "target_git_blob": "68aa9b05758beef8e6f8810b495cc71bbad555cb",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
