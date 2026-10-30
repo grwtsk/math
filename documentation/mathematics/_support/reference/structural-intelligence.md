@@ -29,6 +29,12 @@ same source observation or supply an explicit comparison with all residual terms
 A compelling analogy is worth communicating as an analogy; it need not masquerade
 as an established implication to be useful.
 
+## Mathematical knowledge through comparison
+
+The repository-wide [proof-comparison disposition](proof-comparison-disposition.md) makes this a standing requirement, not an optional editorial preference. Typechecking at scale establishes that specified formal derivations check; it does not determine which mathematical objects are equivalent, how results transport, which counterexamples obstruct a composition, or whether two proof paths genuinely differ. A source-exact comparison, independent analytical route or meaningful hostile test makes these distinctions inspectable. Without them, mass checking adds little discovery guidance, even while retaining its formal correctness value. Mathematical proofs can be analytically established without Lean; Lean acceptance remains independently valuable and must never be inferred.
+
+For every result under review, expose the actual object-to-object comparison and the consumer it enables. Record whether a second argument independently derives the conclusion or silently reuses its unproved core. Retain alternate routes as alternatives and conjunctions as joint premises. Preserve the analytical status and formal checking status separately, as well as unreviewed and blocked portions of any corpus-wide rollout. A graph similarity or source-index observation does not become knowledge transfer without a proved mathematical map.
+
 ## For an AI worker
 
 Read the current source, not just its title or an old summary. Bind the target,
