@@ -1,0 +1,59 @@
+{
+  "primary_url": "https://www.3blue1brown.com/lessons/taylor-series/",
+  "title": "Taylor series",
+  "byline": "Grant Sanderson",
+  "text_adaptation": "Kurt Bruns",
+  "date": "2017-05-07",
+  "retained_html_sha256": "ac4dd2ead35d963bbdb7c7574580aaeb3b43decb70370eea6998ae4e0c4bf853",
+  "source": "GRWTSK/ApproximationsAndExpansions/SeriesExpansionsEGTaylorLidstoneSeriesButNotFourierSeries/TaylorCosineApproximation.lean",
+  "blob": "8aa330da5f3c57fdc8d3915dee7ff963e70afd4c",
+  "namespace": "GRWTSK.Approximation.TaylorCosineApproximation",
+  "theorems": [
+    "quadratic_value_zero",
+    "quadratic_derivative",
+    "quadratic_first_zero",
+    "quadratic_second",
+    "quadratic_third",
+    "cosine_second",
+    "cosine_third",
+    "cosine_quadratic_coefficients_iff",
+    "cosine_approx_formula",
+    "approximation_matches_through_three",
+    "cosine_approx_error",
+    "source_tenth_approximation",
+    "source_tenth_error",
+    "shifted_pi_error",
+    "height_error_identity",
+    "height_error_bound",
+    "tenth_height_error"
+  ],
+  "scope": "Actual cosine quadratic coefficient uniqueness from value/first/second derivatives; third-derivative match at0; quantitative residual on abs(x)<=1, exact source1/10 and shifted-pi/model-height transports. Not the full Taylor lesson.",
+  "hypotheses": "All real coefficients for the iff. Actual analytic bounds require abs(x)<=1. Shift uses abs(h)<=1. Height error uses explicit algebraic height L*(1-cos theta), any real L with abs(L); no physical correspondence as a free field.",
+  "inherited_candidate": {
+    "source": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/FiniteNudgeQuadratic.lean",
+    "blob": "35d3731b6f180522b1798565cc70689438969fcc",
+    "historical_commit": "6a3b6e80462a347e6350b1e322b21a677b787892",
+    "role": "Existing unchecked quadratic derivative supplier; actual source path resolved through current files/followup_files"
+  },
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/Analysis/Complex/Trigonometric.lean": "d2ba6ae2970b5c003f4abb20b7b7d536b9f1297c",
+      "Mathlib/Analysis/SpecialFunctions/Trigonometric/Deriv.lean": "42ad385577a44c06e07a77e4d835b9a384345f1a"
+    },
+    "role": "Analytic cosine derivatives/shift and Real.cos_bound constant5/96 on abs(x)<=1; exact local coefficients/source rational error/height residual are candidates"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Arbitrary cubic/quartic coefficient extraction, sine cubic exercise and general factorial polynomial coefficients",
+    "Infinite-series convergence and logarithm radius/endpoints/divergence",
+    "Pendulum geometry/dynamics beyond the explicitly defined height model",
+    "Full spoken-video audit and all source-bound checks"
+  ],
+  "video_verified_complete": false
+}
