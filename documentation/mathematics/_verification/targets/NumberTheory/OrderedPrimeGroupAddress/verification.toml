@@ -1,0 +1,63 @@
+schema = "grwtsk.source-verification-requirements/1"
+attribution = "grwtsk contributors"
+issue = 1494
+source_commit = "c26154bb161f77c58a1c095f2e3b3d6d9530f67c"
+source = "GRWTSK/NumberTheory/OrderedPrimeGroupAddress.lean"
+source_blob = "88023e2c4940d4572561a564f7c73fc8271aa31f"
+consumer = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeFiberOrderedAddress.lean"
+consumer_blob = "2122f4c91ad0b925941ea67e7aa94787797ede86"
+status = "SOURCE_PROOF_CANDIDATE"
+native_compile = "NOT_RUN"
+kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+exact_type_consumers = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+required_declarations = [
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.primeOrder_length",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.serialize_length",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.serialize_injective",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.serialize_eq_iff",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.card_address",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.ofPrimeList_length",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.ofPrimeList_primeOrder",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.ofPrimeList_radixProduct",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.factorPrimeList_values",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.factorAxes_length",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.factorAxes_primeOrder",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.factorAxes_radixProduct",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.card_factorAddress",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.factorAtomicLength_eq",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.atomic_compressed_same_card",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.twelve_radix_products_agree",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.twelve_address_lengths_differ",
+  "GRWTSK.NumberTheory.OrderedPrimeGroupAddress.OrderedPrimeAxes.cardinality_does_not_determine_axis_convention",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimeFiberOrderedAddress.TypedPrimeOrder.axes_length",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimeFiberOrderedAddress.TypedPrimeOrder.axes_primeAt",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimeFiberOrderedAddress.TypedPrimeOrder.serialize_injective",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimeFiberOrderedAddress.TypedPrimeOrder.card_address",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimeFiberOrderedAddress.TypedPrimeOrder.ofList_length",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimeFiberOrderedAddress.TypedPrimeOrder.ofList_stateAt",
+  "GRWTSK.NumberTheory.Zeta.Riemann.PrimeFiberOrderedAddress.TypedPrimeOrder.ofList_card_address",
+]
+required_gates = [
+  "Fresh immutable project and upstream closure under the pinned Lean toolchain and manifest",
+  "Compiler-origin declaration census for both modules including generated, opaque, private and instance dependencies",
+  "Exact type consumers for the dependent Pi address, factorization cardinality and Sigma-fiber bridge",
+  "Trust-zero fresh replay and complete transitive axiom reports for every required theorem",
+  "Hostile checks that repeated axes, source order, local prime radices and complete Sigma Fiber states are not collapsed",
+]
+scope = "Ordered finite prime occurrences supply dependent cyclic local groups, exact self-describing address serialization, factorization cardinality and a complete dependent prime-fiber ordering bridge"
+missing_bridges = [
+  "Executed native compilation, fresh kernel replay, transitive axiom audit and exact-interface consumers",
+  "Certified coordinate-permutation transport retaining serialization order identity",
+  "Prime-power block and CRT equivalence to ZMod n",
+  "Group-structure non-equivalence for repeated-prime atomic versus compressed conventions",
+  "Certified mixed-radix integer codec through the existing MixedRadixEquivalence interface",
+  "Source-specific identification with the prime-power arithmetic, square-tent and pickup observables",
+]
+excluded_inferences = [
+  "Arithmetic cancellation",
+  "Uniform cutoff for an unbounded prime family",
+  "Certified implication from learned similarity",
+  "Riemann Hypothesis",
+]
