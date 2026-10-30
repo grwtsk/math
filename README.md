@@ -28,6 +28,14 @@ This is a **universal disposition for authoring and reviewing proofs**, not a re
 
 **The point of the repository is not to maximize how many theorems can be typechecked. It is to build a body of mathematics whose objects can be compared, whose claims can be challenged, and whose proved connections can legitimately carry new discovery.**
 
+### The formal neighborhood and the proof-capsule threshold
+
+Lean typechecking and kernel replay reveal the local formal neighborhood of a claim: its types, exact assumptions, dependency connections and admissible derivations. This is valuable information for searching and repairing proofs. But it is only **one step** in converting a mathematical idea into durable knowledge. Before something is promoted as a **mathematically qualified proof capsule**, it needs a source-bound theoretical examination: an actual argument, comparisons of its objects, serious counterexamples or independent checks when appropriate, and a genuine consumer. The compiler cannot silently supply this examination.
+
+This disposition is **Grothendieckian in its concern for objects, morphisms and structural comparison, and analytic in its demand for estimates and exact limits**, but it is not restricted to those intellectual traditions. Valid mathematics may come from any field or method. The standard is what the argument actually proves and how its objects compare—not whether it was written in Lean or whether it uses a preferred language.
+
+Noe's current reversible proof capsule format can retain even unqualified candidate material as a source record; that archival ability must not be confused with admission as a qualified mathematical proof. Historical records and verification receipts retain their original scope.
+
 ## Quiet steering, now a public collection
 
 *The contributors' account of the work behind this collection.*
