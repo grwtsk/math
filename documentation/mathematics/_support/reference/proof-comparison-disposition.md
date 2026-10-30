@@ -22,6 +22,14 @@ The spirit is **structural comparison together with analytic substance**—one m
 
 Preserve an essential operational distinction: a reversible **source/candidate capsule** may store an unqualified attempt losslessly, including failed or conditional work, for research and recovery. It must not be displayed, ranked or admitted as an **accepted mathematical proof capsule** without a source-bound theoretical review and independently checked formal evidence where such evidence is claimed. Noe's current `LeanProofCapsule/1` is an identity-bearing *carrier* whose name does not constitute this admission. Its current schema must not be silently reinterpreted or broken. The pre-admission theoretical qualification belongs to an explicit additional reviewed contract in `grwtsk/noeaaeue`, while the mathematical assessment and proof arguments belong here.
 
+## Formal mathematical foundation before operational admission
+
+The mathematical comparison requirements now have source-level Lean theorem candidates in
+[`TheoreticalQualification.lean`](../../../../GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/TheoreticalQualification.lean).
+The [analytical exposition](../reviews/theoretical-qualification-mathematical-foundations.md) identifies their objects, derivations, counterexamples and missing consumers.
+
+These proofs establish precise limits: exact object round trips require a **separate predicate comparison** before transferring a theorem; a quantitative model requires the **complete signed residual** before returning a bound to the source; and a conditional theorem does **not** prove its conclusion without its premise. They do not automate theoretical judgment, independent analytical review, or mathematical admission to a proof capsule. The source candidate and operational admission contract remain distinct, and the former must precede implementation of the latter.
+
 ## Universal proof disposition
 
 Every proof claim should carry a readable *analytical comparison disposition* in authored mathematical prose or an attached reviewed record. Do not silently add unapproved fields to `grwtsk.result-article/1` or retroactively relabel a large corpus.
