@@ -1,0 +1,445 @@
+{
+  "schema": "grwtsk.source-supply-fidelity-failure/1",
+  "local_attribution": "grwtsk contributors",
+  "classification": "STATIC_SOURCE_SUPPLY_FAILURE_SPECIFICATION",
+  "consumer": {
+    "math_commit": "c8c8e2be5d5766ddc03b6f0e90f2f81de575eb13",
+    "source_path": "adapters/openai-math/GRWTSK/NumberTheory/MultiplicativeNumberTheory/LiouvilleNormalizedReadouts.lean",
+    "source_blob": "41fd47c54def263e91175137de294aaa389c8e3b",
+    "source_sha256": "cd02fb5593103477e7a80bc9af2d136f1237ceeb85071eaf268f4d50dcdc4fe4",
+    "complete_module_interface_profile": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-module-interface-20261029.profile.json",
+    "profile_sha256": "d4a6ada22718c11a17790ffe112a92c959603f77cf8248cbde6556aa255cb3ce",
+    "required_declarations": [
+      "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_family_bound",
+      "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_unit_ball_bound"
+    ],
+    "profile_scope": "Later complete-module census and both literal types with universeu. Historical failed selected-name profile and its missing-Mertens exit1/no-registry remain a distinct outcome."
+  },
+  "upstream_patch": {
+    "repository": "openai/math",
+    "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "path": "lean/patches/StrongPNT-lean4341.patch",
+    "blob": "0269959e81418ffd738958089922f4eca4fec787",
+    "sha256": "2cac5cbef22987314f9293bebcf243d0a3341caaf0227925d1f8d4c31be924d7",
+    "bytes": 1248207
+  },
+  "base": {
+    "repository": "math-inc/strongpnt",
+    "commit": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+    "tree": "d4f3a1a8bc2514545abefa1d949506d07de1dc7e",
+    "entries": 39,
+    "subtrees": 12,
+    "binding": "Immutable primary Git-data commit/tree metadata; complete tree recomputed from exact path/mode/object identities. No canonical StrongPNT Git root is supplied by this static specification."
+  },
+  "current_upstream_observation": {
+    "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+    "same_patch_blob": "0269959e81418ffd738958089922f4eca4fec787",
+    "claim": "Current-ref Git blob metadata equals selected7ef patch; no adapter source pin change or complete newer-closure review is asserted."
+  },
+  "strict_fidelity_predicate": "Every advertised old/result Git-blob prefix must match the full exact preimage/result derived from the selected immutable patch bytes, exact base and hunk semantics. Require rejection when any one mismatches.",
+  "required_decision_for_current_inputs": "REJECT_SELECTED_STRONG_PATCH_UNDER_CLOSED_ADVERTISED_RESULT_IDENTITY_RULE",
+  "conflict": {
+    "path": "StrongPNT/Erdos970/PNT5_Strong.lean",
+    "operation": "ADD",
+    "base_preimage": "ABSENT; /dev/null",
+    "raw_index_header": "index 0000000..bc0f938",
+    "raw_hunk_header": "@@ -0,0 +1,5754 @@",
+    "advertised_result_prefix": "bc0f938",
+    "literal_result_not_admitted": {
+      "blob": "dc5c936e763be282b328dcca1a71bdc572b6353e",
+      "sha256": "ad8793231c89ee13bf5dcf5263c42b184e31bfc38d696a2c22138a366f875386",
+      "bytes": 245114,
+      "line_records": 5754,
+      "hunks": [
+        {
+          "old_start": 0,
+          "old_count": 0,
+          "new_start": 1,
+          "new_count": 5754,
+          "no_newline_markers": 0
+        }
+      ],
+      "origin": "DERIVED_EXACT_PATCH_REJECTED_BATCH"
+    },
+    "prefix_matches_literal_output": false,
+    "meaning": "The full computed blob does not start with the advertised prefix. As this is a pure addition with no old preimage, selecting another base file cannot explain or repair it. The cause or intended source version is not inferred from this inconsistency."
+  },
+  "literal_delta_shape": {
+    "paths": 10,
+    "additions": 8,
+    "modifications": 2,
+    "deletions": 0,
+    "hunks": 11,
+    "old_prefixes_matching": 10,
+    "new_prefixes_matching": 9,
+    "new_prefixes_conflicting": 1,
+    "binary_rename_copy_mode_changes": 0,
+    "no_newline_markers": 0
+  },
+  "all_literal_results_are_forensic_only": [
+    {
+      "path": "StrongPNT/Erdos970.lean",
+      "operation": "ADD",
+      "base": null,
+      "literal_result_not_admitted": {
+        "blob": "2427743001b418fca4773b57affbb067e36facf0",
+        "sha256": "0c79127d448b6afd4136faabcf90cc7efe88b871b0fd5d8a5e11b6ac27a9fa9c",
+        "bytes": 38,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH_REJECTED_BATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "2427743",
+      "hunk_count": 1
+    },
+    {
+      "path": "StrongPNT/Erdos970/PNT1_ComplexAnalysis.lean",
+      "operation": "ADD",
+      "base": null,
+      "literal_result_not_admitted": {
+        "blob": "c54399a7c76adc4ea25f9aa89738a2054f644e35",
+        "sha256": "084bed65b3ddf503d70e4bca28529e65242564999477524d0e48ded209c358cc",
+        "bytes": 251483,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH_REJECTED_BATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "c54399a",
+      "hunk_count": 1
+    },
+    {
+      "path": "StrongPNT/Erdos970/PNT2_LogDerivative.lean",
+      "operation": "ADD",
+      "base": null,
+      "literal_result_not_admitted": {
+        "blob": "4d1d6e5af53304112dcd93c1a4c9cc83e89ee583",
+        "sha256": "f44c8df573d3c3bc99b1920673a43a0c09089f102a5cb4a09443eebd086f3a0a",
+        "bytes": 195763,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH_REJECTED_BATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "4d1d6e5",
+      "hunk_count": 1
+    },
+    {
+      "path": "StrongPNT/Erdos970/PNT3_RiemannZeta.lean",
+      "operation": "ADD",
+      "base": null,
+      "literal_result_not_admitted": {
+        "blob": "0ab91b1340a1296ea1a6961c0d31574d1e20f782",
+        "sha256": "fb916e3b714f3812c6139b6d5c768194617ad1b68696ffb64a54600c4e1dfbdc",
+        "bytes": 225678,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH_REJECTED_BATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "0ab91b1",
+      "hunk_count": 1
+    },
+    {
+      "path": "StrongPNT/Erdos970/PNT4_ZeroFreeRegion.lean",
+      "operation": "ADD",
+      "base": null,
+      "literal_result_not_admitted": {
+        "blob": "37dfc62760cd96083c6d92e30ff3f403d1f40f3a",
+        "sha256": "d78468b958ee230032a3e69ba66703bf855feeef3053b2f9200d7c679c3c7e93",
+        "bytes": 289520,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH_REJECTED_BATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "37dfc62",
+      "hunk_count": 1
+    },
+    {
+      "path": "StrongPNT/Erdos970/PNT5_Strong.lean",
+      "operation": "ADD",
+      "base": null,
+      "literal_result_not_admitted": {
+        "blob": "dc5c936e763be282b328dcca1a71bdc572b6353e",
+        "sha256": "ad8793231c89ee13bf5dcf5263c42b184e31bfc38d696a2c22138a366f875386",
+        "bytes": 245114,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH_REJECTED_BATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "bc0f938",
+      "hunk_count": 1
+    },
+    {
+      "path": "StrongPNT/Erdos970/Z0.lean",
+      "operation": "ADD",
+      "base": null,
+      "literal_result_not_admitted": {
+        "blob": "093671dc28892d6c8d2a3fdf0bde1c2f6a522dce",
+        "sha256": "9590650aa50138c93dc7dcd7ee014c82a25c77bf410b3d99eea374449b11eb52",
+        "bytes": 2253,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH_REJECTED_BATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "093671d",
+      "hunk_count": 1
+    },
+    {
+      "path": "StrongPNT/Erdos970/ZetaZeroFree.lean",
+      "operation": "ADD",
+      "base": null,
+      "literal_result_not_admitted": {
+        "blob": "10f11b5e819479720c1ea711441b9b1aea5642cd",
+        "sha256": "07a7a93d1121bed8e2c111437ae0c1bf5e584dc3c956e8d1b0dccd1a9afa13c1",
+        "bytes": 9545,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH_REJECTED_BATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "10f11b5",
+      "hunk_count": 1
+    },
+    {
+      "path": "lakefile.toml",
+      "operation": "MODIFY",
+      "base": {
+        "blob": "3bf82907876e41f3ecfaa302e9c3e6516d4140fd",
+        "sha256": "9566ebcfbb3b4d0985afac7299d536f33546fe71073b0ae6d4a276bbb3041717",
+        "bytes": 691,
+        "mode": "100644",
+        "type": "blob"
+      },
+      "literal_result_not_admitted": {
+        "blob": "2fecc189dfba22c5a0277c5e078f8554ea7aee35",
+        "sha256": "ad8954df2ade7932de0987b0e4b5603c3237b793f99b13188bf5b7d1bfc84e20",
+        "bytes": 615,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH_REJECTED_BATCH"
+      },
+      "advertised_old_prefix": "3bf8290",
+      "advertised_result_prefix": "2fecc18",
+      "hunk_count": 2
+    },
+    {
+      "path": "lean-toolchain",
+      "operation": "MODIFY",
+      "base": {
+        "blob": "980709bbbae28702ec58c368b84fdf6638093c63",
+        "sha256": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
+        "bytes": 25,
+        "mode": "100644",
+        "type": "blob"
+      },
+      "literal_result_not_admitted": {
+        "blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+        "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+        "bytes": 25,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH_REJECTED_BATCH"
+      },
+      "advertised_old_prefix": "980709b",
+      "advertised_result_prefix": "ba8ebf2",
+      "hunk_count": 1
+    }
+  ],
+  "batch_boundary": "No accepted result-tree identity or source-output supplier is issued. All ten literal results belong to a rejected batch; do not materialize or admit a matching subset as the complete consumer source closure.",
+  "configuration_boundary": {
+    "base_toolchain": "leanprover/lean4:v4.21.0",
+    "literal_patched_toolchain_in_rejected_batch": "leanprover/lean4:v4.34.1",
+    "base_config_blob": "3bf82907876e41f3ecfaa302e9c3e6516d4140fd",
+    "literal_patched_config_blob": "2fecc189dfba22c5a0277c5e078f8554ea7aee35",
+    "base_manifest_blob": "22a48958ec32fa9270f6fd6e90aaf0ee3be9c453",
+    "base_manifest_packages": 15,
+    "unchanged_requirements": [
+      "mathlib v4.21.0",
+      "PrimeNumberTheoremAnd47f29a1e5a4fe1daf5c3f8c5fc8408626e95fda5",
+      "doc-gen4 v4.21.0"
+    ],
+    "OAI_selected_supplier_domain": "Separate selected OAI7ef adapter manifest binds mathlibd13f23b723b8a846827a245b89c10fc7d3f11612 and PNTc39a751132c88b6e8080b74c74023fd95b3d8be0. No Strong Lake update/build or dependency substitution was executed.",
+    "source_build_selection": "Patch changes default target/library to StrongPNTErdos970 and removes original leanOptions; semantic compiler-option reproduction is a future qualification obligation.",
+    "unchanged_base_lock_packages": [
+      {
+        "name": "«doc-gen4»",
+        "rev": "05a43fcf9c484d69252bbc3556ca0fdb2417048a",
+        "url": "https://github.com/leanprover/doc-gen4"
+      },
+      {
+        "name": "checkdecls",
+        "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+        "url": "https://github.com/PatrickMassot/checkdecls.git"
+      },
+      {
+        "name": "PrimeNumberTheoremAnd",
+        "rev": "47f29a1e5a4fe1daf5c3f8c5fc8408626e95fda5",
+        "url": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd.git"
+      },
+      {
+        "name": "mathlib",
+        "rev": "308445d7985027f538e281e18df29ca16ede2ba3",
+        "url": "https://github.com/leanprover-community/mathlib4"
+      },
+      {
+        "name": "Cli",
+        "rev": "7c6aef5f75a43ebbba763b44d535175a1b04c9e0",
+        "url": "https://github.com/mhuisi/lean4-cli"
+      },
+      {
+        "name": "UnicodeBasic",
+        "rev": "1cf274454c624e4b94c79f14b6db70d9fe0bdd51",
+        "url": "https://github.com/fgdorais/lean4-unicode-basic"
+      },
+      {
+        "name": "BibtexQuery",
+        "rev": "dbfe2b7630c5f7c5c1cf71e7747ffc0a30337f69",
+        "url": "https://github.com/dupuisf/BibtexQuery"
+      },
+      {
+        "name": "MD4Lean",
+        "rev": "b16338c5c66f57ef5510d4334eb6fa4e2c6c8cd8",
+        "url": "https://github.com/acmepjz/md4lean"
+      },
+      {
+        "name": "plausible",
+        "rev": "c4aa78186d388e50a436e8362b947bae125a2933",
+        "url": "https://github.com/leanprover-community/plausible"
+      },
+      {
+        "name": "LeanSearchClient",
+        "rev": "6c62474116f525d2814f0157bb468bf3a4f9f120",
+        "url": "https://github.com/leanprover-community/LeanSearchClient"
+      },
+      {
+        "name": "importGraph",
+        "rev": "d07bd64f1910f1cc5e4cc87b6b9c590080e7a457",
+        "url": "https://github.com/leanprover-community/import-graph"
+      },
+      {
+        "name": "proofwidgets",
+        "rev": "6980f6ca164de593cb77cd03d8eac549cc444156",
+        "url": "https://github.com/leanprover-community/ProofWidgets4"
+      },
+      {
+        "name": "aesop",
+        "rev": "8ff27701d003456fd59f13a9212431239d902aef",
+        "url": "https://github.com/leanprover-community/aesop"
+      },
+      {
+        "name": "Qq",
+        "rev": "e9c65db4823976353cd0bb03199a172719efbeb7",
+        "url": "https://github.com/leanprover-community/quote4"
+      },
+      {
+        "name": "batteries",
+        "rev": "8d2067bf518731a70a255d4a61b5c103922c772e",
+        "url": "https://github.com/leanprover-community/batteries"
+      }
+    ],
+    "base_manifest_sha256": "69f42cd9ff3164941fb200dc2b7134c587921c186ebeddf6e5f5158cb3f68083",
+    "toolchain_source_identities": {
+      "base": {
+        "blob": "980709bbbae28702ec58c368b84fdf6638093c63",
+        "sha256": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
+        "bytes": 25
+      },
+      "literal_result": {
+        "blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+        "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+        "bytes": 25
+      },
+      "before": "leanprover/lean4:v4.21.0\n",
+      "literal_after": "leanprover/lean4:v4.34.1\n"
+    },
+    "selected_OAI_workspace_manifest": {
+      "math_commit": "c8c8e2be5d5766ddc03b6f0e90f2f81de575eb13",
+      "path": "adapters/openai-math/lake-manifest.json",
+      "blob": "7df2e80bc456795f09db1f2037ba8a051b53a106",
+      "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "PrimeNumberTheoremAnd": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+      "StrongPNT": "2f5835c322314f55f1026ec2f139d704b7c45c69"
+    }
+  },
+  "public_source_attribution_and_license": {
+    "repository_LICENSE_NOTICE_CITATION_paths": [],
+    "repo_wide_license_grant": "UNRESOLVED_NOT_INVENTED",
+    "README_blob": "1c2751b52fb490ed3e89773aa0cf7d22fb93d7c5",
+    "README_role": "SOURCE_REPORTED Gauss/Math Inc generated Lean with human scaffolding/review, and adaptation of PNTAnd PNT5/Z0/ZetaZeroFree; not native acceptance or historical paper-theorem mapping.",
+    "literal_result_header_observations": {
+      "StrongPNT/Erdos970.lean": [],
+      "StrongPNT/Erdos970/PNT1_ComplexAnalysis.lean": [],
+      "StrongPNT/Erdos970/PNT2_LogDerivative.lean": [],
+      "StrongPNT/Erdos970/PNT3_RiemannZeta.lean": [],
+      "StrongPNT/Erdos970/PNT4_ZeroFreeRegion.lean": [],
+      "StrongPNT/Erdos970/PNT5_Strong.lean": [],
+      "StrongPNT/Erdos970/Z0.lean": [],
+      "StrongPNT/Erdos970/ZetaZeroFree.lean": []
+    },
+    "preservation": "Keep existing per-file public notices and unresolved grants separate from OAI/PNT licenses; do not infer blanket Apache2."
+  },
+  "dependent_import_obligation": {
+    "failed_module": "StrongPNT.Erdos970.PNT5_Strong",
+    "direct_importer": "OAI.NumberTheory.TwoPoint.Fourier.ModFivePrincipalPsi",
+    "direct_importer_path": "lean/OAI/NumberTheory/TwoPoint/Fourier/ModFivePrincipalPsi.lean",
+    "direct_importer_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "direct_importer_blob": "59bd2d1603a0580786f1fd0e458454c35bcf51e9",
+    "direct_importer_sha256": "7c3b9c7e1ade2086edc8342d9d0a59d1bc8d71a10be01d5e322fc8c63e4e4721",
+    "chain": [
+      "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts",
+      "OpenAITwoPointFiniteFamily",
+      "OAI.NumberTheory.TwoPointCorrelations.FinalMain",
+      "OAI.NumberTheory.TwoPoint.Main",
+      "OAI.NumberTheory.TwoPoint.MainWithMRTInputs",
+      "OAI.NumberTheory.TwoPoint.PartiallyDischargedMain",
+      "OAI.NumberTheory.TwoPoint.Fourier.ModFivePrimeNumberTheorem",
+      "OAI.NumberTheory.TwoPoint.Fourier.ModFiveZetaPsi",
+      "OAI.NumberTheory.TwoPoint.Fourier.ModFivePrincipalPsi",
+      "StrongPNT.Erdos970.PNT5_Strong"
+    ],
+    "boundary": "The attempted both-overlay declared-header graph is NOT_RUN after rejection. The prior PNT-only diagnostic remains partial, with three unsupplied StrongPNT imports and six unsupported Mathlib Penrose source assets. Unknown descendants and arbitrary metaprogram IO remain outside the diagnostic."
+  },
+  "prior_static_inputs": {
+    "PNT_expected_inputs": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-inputs-20261030.json",
+    "PNT_expected_inputs_sha256": "77623fa638b266fbd9e607ed307d9a68cc4b2876b3154d0ea984241b3ea4901b",
+    "closure_obligations": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-source-supply-closure-20261030.json",
+    "boundary": "The exact prior55-path PNT static binding remains unchanged; this StrongPNT failure neither refutes it nor completes the consumer closure."
+  },
+  "resolution_requires": [
+    "A separately reviewed explicit source correction/binding with consistent exact patch/result identities before any admission. Do not infer whether the header or literal proof body reflects the intended source solely from these conflicting inputs.",
+    "Keep current raw0269959e rejection until that repair is separately qualified. No ignored-index exception, newline normalization, fuzz/recount/three-way fallback, silently newer base/patch, partial accepted batch or cached proof artifact is admitted here.",
+    "Qualify maintained Noe support for exact derived sources and necessary assets after all current active/waiting producer ownership gates permit source changes; this specification implements no supplier or registry.",
+    "Revalidate the canonical StrongPNT Git root, complete effective source/dependency/core/configuration selection and new exact registry under current producer/policy; the virtual forensic inventory is not a Noe package_root.",
+    "Distinguish OAI workspace Mathlibd13/PNTc39 source selection from reproducing Strong own Lake4.21-era dependency/option behavior. No Strong Lake update/build or root dependency migration is certified.",
+    "Obtain each actual native compilation/Comparator/literal-type/census/fresh replay/transitive axiom/independent-checker/restoration facet separately. Preserve original Anthropic Fermat6 and OpenAI weighted4 scopes and qualification/restoration order."
+  ],
+  "verification_issue": "https://github.com/grwtsk/math/issues/1488",
+  "source_fidelity_status": "REJECTED_BY_EXPLORATORY_STRICT_IDENTITY_CHECK",
+  "verification": {
+    "supported_supplier_qualification": "NOT_RUN",
+    "toolchain_core_qualification": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "comparator": "NOT_RUN",
+    "expected_interface": "NOT_RUN",
+    "complete_module_discovery": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "host_resource_restoration": "NOT_RUN",
+    "second_independent_checker": "UNSUPPLIED"
+  },
+  "claim_boundary": "Static source-input inconsistency and refusal predicate only; no compiler failure or mathematical counterexample, supported Noe production rejection run, accepted patched supplier, registry, both-overlay graph, native proof acceptance or complete runtime-IO discovery is claimed. Separate diagnostic controls and independent byte review remain external evidence, not production qualification.",
+  "current_location_observation": {
+    "commit": "5109c038e2ecace00458b70c4340d4780bf27f1c",
+    "canonical_source_path": "GRWTSK/NumberTheory/MultiplicativeNumberTheory/LiouvilleNormalizedReadouts.lean",
+    "canonical_source_blob": "3db53d757d798ac2b8c49a391f986107dc0222eb",
+    "canonical_source_sha256": "5d2f27f5b5d4bbd9196f6edfa510f2f79bde8527847534052aee06fe3a182605",
+    "provider_link": "documentation/adapters/openai-math/GRWTSK/NumberTheory/MultiplicativeNumberTheory/LiouvilleNormalizedReadouts.lean",
+    "current_consumer_map": "documentation/adapters/consumer-integrations.json",
+    "boundary": "The current canonical3db53 edition differs from historical41fd47 source. MSC placement and isolated relative links do not recertify that edition, rewrite c8 source/profile identities or establish fresh replay, version transport or link-supplier qualification."
+  }
+}

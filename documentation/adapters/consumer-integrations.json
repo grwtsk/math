@@ -376,7 +376,21 @@
           "Three exact StrongPNT modules, its reviewed base/patch outputs and untraversed descendants.",
           "Six exact Mathlib Penrose include_str assets outside the inspected ProofWidgets-only supplier."
         ],
-        "native_scope_boundary": "Original weighted-model-growth four and Anthropic Fermat six remain separate active obligations; no root dependency or import promotion."
+        "native_scope_boundary": "Original weighted-model-growth four and Anthropic Fermat six remain separate active obligations; no root dependency or import promotion.",
+        "strong_patch_fidelity": {
+          "classification": "STATIC_SOURCE_SUPPLY_FAILURE_SPECIFICATION",
+          "target": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-strongpnt-patch-fidelity-20261030.json",
+          "target_sha256": "9bba19ed5a48a1550e4d1151a191961c74ebfadf327125ce901c39fb623ce3a3",
+          "required_current_decision": "REJECT_CURRENT_RAW_PATCH",
+          "patch_blob": "0269959e81418ffd738958089922f4eca4fec787",
+          "path": "StrongPNT/Erdos970/PNT5_Strong.lean",
+          "advertised_result_prefix": "bc0f938",
+          "literal_result_blob_not_admitted": "dc5c936e763be282b328dcca1a71bdc572b6353e",
+          "batch_source_supplier": "UNSUPPLIED",
+          "both_overlay_graph": "NOT_RUN",
+          "verification_issue": "https://github.com/grwtsk/math/issues/1488",
+          "boundary": "No compiler failure/theorem counterexample or production Noe qualification; prior source-supply scope and original weighted4/Fermat6 remain separate."
+        }
       }
     },
     {
