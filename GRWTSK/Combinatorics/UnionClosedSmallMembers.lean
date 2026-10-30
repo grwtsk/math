@@ -18,6 +18,9 @@ The half-frequency bound is stated without division as `F.card ≤ 2 * frequency
 All declarations below are source proof candidates until exact-source replay.
 -/
 
+-- Bound elaboration search so stalled tactics report a source location.
+set_option maxHeartbeats 10000
+
 namespace GRWTSK.CombinatoricsAndDiscreteMathematics.SetFamilies.UnionClosedSmallMembers
 
 variable {α : Type*} [DecidableEq α]
