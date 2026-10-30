@@ -1,12 +1,12 @@
 # GRWTSK mathematics
 
-**Mathematical signal that steers AI discovery.**
+**Mathematical access, human direction, and reusable discovery.**
 
-GRWTSK mathematics gives collective knowledge a durable, human-directed mathematical form. It develops research signal to help artificial intelligence decide what to explore, which connections to test, and where a new idea could unlock further progress—and returns the findings to a source that subsequent investigations can use.
+GRWTSK mathematics gives collective knowledge a durable, human-directed mathematical form. Its purpose is to make mathematical questions, explanations, constructions, obstructions and proofs available for investigation and correction. A crayon, a logarithmic rule, a calculator, a search result, an educational video, a proof assistant or a generative system can each expand what a person is able to explore. Their value is the mathematical access and usable feedback they provide—not the label on the instrument.
 
-The aim is not simply to give AI more mathematics to retrieve. It is to give discovery direction. Constructions, cross-domain relationships, revealing examples, obstructions, and explicit open questions provide starting points for new conjectures, representations, and lines of attack. Formal sources and source-bound evidence keep that exploration connected to the mathematics it comes from.
+The aim is to give inquiry direction, not simply to accumulate content or proof scripts. Constructions, cross-domain relationships, revealing examples, constraints and explicit open questions provide starting points for conjectures, representations, comparisons and new lines of attack. Exact sources and source-bound evidence keep exploration connected to the mathematics it concerns.
 
-**The goal is to steer AI toward breakthroughs—not merely catalogue results after they happen.** Humans and AI systems can use the collection to recognize opportunities, develop connections, and turn promising directions into reusable mathematics.
+**The goal is to enable people to ask, test, understand, correct and contribute mathematics using the tools available to them.** More accessible tools and shorter feedback cycles can widen the questions one person can reasonably pursue; theoretical novelty and proof validity must still be established separately.
 
 This is the canonical source for GRWTSK mathematics, by **grwtsk contributors**.
 
@@ -14,9 +14,11 @@ This is the canonical source for GRWTSK mathematics, by **grwtsk contributors**.
 
 [Every source and declaration](documentation/mathematics/complete-source-index.md) · [Verification specifications](documentation/mathematics/_verification/specifications/README.md) · [Source-bound verification coverage](https://github.com/grwtsk/noeaaeue/blob/main/documentation/mathematics/_verification/targets/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
 
-[**From research signal to structural intelligence**](documentation/mathematics/_support/reference/structural-intelligence.md): a source-backed formalization, human and AI guidance, and reusable worker skills for choosing the next mathematical move.
+[**From research signal to structural intelligence**](documentation/mathematics/_support/reference/structural-intelligence.md): source-backed formalization, guidance for human and tool-assisted inquiry, and reusable worker skills for choosing the next mathematical move.
 
 ## Mathematics is qualified through comparison—not proof throughput
+
+**Mathematical tools are not a single category called “AI.”** Drawings, rulers, books, videos, search, calculators, numerical programs, statistical candidate generation, symbolic operations and proof kernels provide different kinds of access and feedback. Where generative systems are relevant, distinguish the actual mechanisms and outputs: retrieval, search, statistical recombination, diffusion/denoising when documented, symbolic computation, typed proof construction, elaboration, and independent kernel checking. A candidate assembled from patterns is not thereby a proof; conversely, a rigorously checked new result may be new even when every component was known. The [proof-comparison disposition](documentation/mathematics/_support/reference/proof-comparison-disposition.md) requires tool-neutral operation-specific disclosure rather than provider promotion.
 
 **Typechecking at scale tests specified formal derivations, and kernel checking establishes their conclusions relative to the actual definitions and axioms. It can reveal previously unrecognized consequences, but proof throughput alone does not establish source fidelity, theorem novelty, independent reasoning or theoretical understanding. Comparison of the mathematical objects, their strongest prior results, and the exact argument is essential to assess those further claims. Mathematics can also be rigorously proved without Lean.**
 
@@ -24,7 +26,7 @@ This distinction does not diminish the logical value of a correctly kernel-check
 
 **For every proof claim**, the repository standard is to explain its actual objects, quantified hypotheses and proof mechanism; give a mathematically exact comparison or obstruction; seek a genuinely distinct analytical route or adversarial check where possible; and identify the result's actual downstream consumer and missing transfer. Alternative routes must not share the disputed premise under different names. A sole valid analytical proof is still mathematics: record unavailable independent routes honestly instead of inventing one. Keep analytic assessment and Lean compilation, fresh kernel checking and transitive axiom auditing as separate evidence, each pinned to its real source and scope.
 
-**Proof validity, novelty, computational evidence and provenance are independent assessments.** A new theorem may follow from established lemmas; a new proof of an old theorem may improve understanding; a new formalization may add assurance and interoperability without theorem-level novelty. Exact or certified computer-assisted reasoning can establish a theorem when its reduction, coverage and checker are justified, whereas finite experimental agreement cannot generally prove a universal or asymptotic claim. The [proof-comparison disposition](documentation/mathematics/_support/reference/proof-comparison-disposition.md) now requires a dated nearest-prior-result comparison, explicitly scoped computation and reproducibility evidence, source return, hostile scrutiny, and role-specific attribution to human sources and AI systems where supported. Novelty is not an admission requirement for valid mathematics.
+**Proof validity, novelty, computational evidence and provenance are independent assessments.** A new theorem may follow from established lemmas; a new proof of an old theorem may improve understanding; a new formalization may add assurance and interoperability without theorem-level novelty. Exact or certified computer-assisted reasoning can establish a theorem when its reduction, coverage and checker are justified, whereas finite experimental agreement cannot generally prove a universal or asymptotic claim. The [proof-comparison disposition](documentation/mathematics/_support/reference/proof-comparison-disposition.md) now requires a dated nearest-prior-result comparison, explicitly scoped computation and reproducibility evidence, source return, hostile scrutiny, and role-specific attribution to mathematical sources, human direction, and tools of every kind where supported. Novelty is not an admission requirement for valid mathematics.
 
 This is a **universal disposition for authoring and reviewing proofs**, not a retrospective claim that the entire historical catalogue has been independently analyzed. [Review coverage and adoption are tracked in issue #1499](https://github.com/grwtsk/math/issues/1499). Existing verified results keep their evidence; existing unchecked or unreviewed material is not upgraded or invalidated by this policy. The detailed [proof-comparison disposition](documentation/mathematics/_support/reference/proof-comparison-disposition.md) governs how to record comparisons, independent routes, hostile cases and unresolved premises in the existing article form. The [first five-family source-inspected pilot](documentation/mathematics/_support/reviews/proof-comparison-pilot-2026-10-30.md) records the distinctions the standard uncovers—including a historical declaration-identity mismatch and conditional proof boundaries—without claiming to have reviewed the whole corpus. [The finite three-phase residual example](documentation/mathematics/_support/reviews/three-phase-residual-analytic-closure.md) shows direct polarization, independent spectral analysis and infinitesimal torsion; it also records why those results do **not** prove a Navier–Stokes PDE gap or QCD color symmetry.
 
@@ -42,9 +44,9 @@ Noe's current reversible proof capsule format can retain even unqualified candid
 
 *The contributors' account of the work behind this collection.*
 
-**Our work began before the modern generative-AI era, and it has continued quietly across a wide range of platforms.** We have worked to steer algorithms through human direction: the questions we choose, the material we bring into view, the connections we pursue, and the corrections we return. As contemporary AI systems emerged, this practice extended to **systems from OpenAI and Anthropic, Google's Gemini, and other models and algorithms**. The platforms have changed; the effort to turn accumulated research into useful direction has remained.
+**Our work began before modern generative systems and has continued across many mathematical instruments and sources.** A pencil or crayon can expose a shape; a logarithmic rule or calculator can make a quantity approachable; a text, library, search, discussion or educational video can supply an explanation; a computer can explore cases; and a formal system can inspect a precise derivation. The constant is human direction: the questions chosen, the mathematics brought into view, the connections tested, and the corrections returned. Tools can increase access and the rate of useful feedback, but they are not interchangeable sources of proof.
 
-**We see substantial overlap between our research and directions reflected in breakthroughs from these organizations. That overlap is a central reason we are working to organize and release our entire collection.** We want the accumulated work to be available as a connected body of research, not only as scattered interactions or isolated results. Releasing it makes the ideas accessible for comparison, criticism, formalization, and further discovery.
+**This collection is being released so the mathematics can be investigated, challenged, extended and returned to a shared source.** Its value does not depend on promoting any tool vendor or claiming that thematic overlap demonstrates historical influence. Identifiable tool use, source authorship and actual mathematical advances belong in specific source-bound records, not in generic product endorsements.
 
 The public repository is one part of that larger undertaking, not a claim that the whole collection is already published. As the collection is organized for release, its mathematics belongs in the existing subject taxonomy, linked to the constructions, questions, and intermediate results it connects. Nonmathematical material and operational tooling retain their appropriate repository boundaries. Local contributions remain attributed to **grwtsk contributors**, acknowledging the unknown masses behind the shared inheritance while preserving identifiable upstream credit.
 
@@ -52,7 +54,7 @@ The public repository is one part of that larger undertaking, not a claim that t
 
 ## Knowledge populated en masse, made durable
 
-The project's argument for AI advancement begins with knowledge populated **en masse**: the accumulated work of people who discover, teach, explain, translate, implement, question, correct, and preserve ideas. The visible author of a result is not the whole human inheritance that makes it possible. Alongside identifiable sources stand the **unknown masses** whose contributions cannot be individually reconstructed from the work that follows.
+The project's account of mathematical access and of AI-assisted research begins with knowledge populated **en masse**: the accumulated work of people who discover, teach, explain, translate, implement, question, correct, and preserve ideas. The visible author of a result is not the whole human inheritance that makes it possible. Alongside identifiable sources stand the **unknown masses** whose contributions cannot be individually reconstructed from the work that follows.
 
 Here, **shared knowledge cache** names that accumulated, reusable inheritance. It is a conceptual description, not a claim that a model contains an exact, recoverable archive, that a particular contribution entered a particular training corpus, or that this repository owns the knowledge it draws upon. It is also distinct from the mutable operational caches kept outside this repository.
 
@@ -62,11 +64,11 @@ This collective foundation motivates the local attribution **grwtsk contributors
 
 ## Signal for the next research decision
 
-Here, **signal** means mathematical information that can change what an AI investigates next: a structure worth generalizing, a connection worth testing, a constraint that redirects an approach, or a missing result whose proof would enable something further.
+Here, **signal** means mathematical information that can change what a person or a tool-assisted investigation examines next: a structure worth generalizing, a connection worth testing, a constraint that redirects an approach, or a missing result whose proof would enable something further.
 
 A finished proof is one kind of signal, not the only kind. A precise conjecture can open a direction. A suggestive analogy can motivate a comparison. A counterexample can expose the distinction that a better theory must explain. An obstruction can show why an attractive representation still leaves the essential problem untouched.
 
-The intended use is both exploratory and selective: generate new possibilities, then use mathematical structure to distinguish the directions worth pursuing. The collection should help AI ask better questions, not only produce more answers. It is a source for discovery, not a prescribed route to a predetermined conclusion.
+The intended use is both exploratory and selective: generate new possibilities, then use mathematical structure to distinguish the directions worth pursuing. The collection should help people frame better questions and use whatever mathematical tools are available to examine them, not only produce more answers. It is a source for discovery, not a prescribed route to a predetermined conclusion.
 
 ## How the signal steers exploration
 
@@ -76,7 +78,7 @@ The intended use is both exploratory and selective: generate new possibilities, 
 
 **Open obligations focus effort.** A missing construction or estimate becomes more informative when its downstream use is explicit. Work backward from that use to identify what would unlock progress; work outward from existing constructions to discover new uses. Filling a known gap and discovering an unexpected direction are both part of the purpose.
 
-**Research history makes exploration cumulative.** Retain what was tried, what changed, and what remains unresolved. A useful handoff should let the next researcher or AI continue from the actual state of the mathematics rather than restart the same search or mistake a renamed assumption for a new result.
+**Research history makes exploration cumulative.** Retain what was tried, what changed, and what remains unresolved. A useful handoff should let the next researcher, teacher, reader or computational tool continue from the actual state of the mathematics rather than restart the same search or mistake a renamed assumption for a new result.
 
 Direction and proof play different roles. A promising connection says where to investigate; a proved bridge says what can be transferred. Keep both useful by keeping their status visible.
 
@@ -88,7 +90,7 @@ A prompt such as
 
 puts the accumulated source back to work and explicitly requires its replenishment. The instruction joins a research objective to a repository submission: use what is already present, investigate what it makes possible, formalize the findings, and submit those formalizations back into the same collection under its existing taxonomy. Naming the repository is an instruction to consult its actual source and dependencies, not a substitute for doing so.
 
-**Collective knowledge → human direction → durable mathematics → targeted prompts → new formalizations and checks → submission back to grwtsk/math in its taxonomy → subsequent queries reuse the strengthened source.**
+**Collective knowledge → accessible mathematical tools → human direction and useful feedback → source-bound exploration → proved or explicitly qualified findings → submission back to grwtsk/math in its taxonomy → subsequent inquiries reuse and correct the strengthened source.**
 
 **The return to the repository is a completion requirement, not an optional follow-up.** Place formal definitions and theorems in the appropriate existing mathematical-subject modules under [`GRWTSK/`](GRWTSK/), with matching `GRWTSK.*` namespaces. Extend existing modules rather than creating a parallel prompt-specific collection; connect the findings to their subject documentation and navigation under [`docs/mathematics/`](docs/mathematics/). The taxonomy makes returned knowledge discoverable and reusable by the next investigation.
 
@@ -96,7 +98,7 @@ puts the accumulated source back to work and explicitly requires its replenishme
 
 A new bridge can make an old construction useful elsewhere; a counterexample can remove a false route; a verified proof can turn a candidate into a dependable building block; a precise obstruction can focus the next attempt. Repeated use can therefore strengthen the signal by adding mathematical substance, correcting errors, and exposing better questions—not merely by repeating the repository's name or reproducing its claims.
 
-This is reinforcement through retrieval, investigation, correction, and reuse. It does not assert that an ordinary prompt retrains a model, that publication guarantees inclusion in future training, or that repetition establishes truth. The intended gain is cumulative research capability from a better external source; measured improvements in AI performance require separate evaluation.
+This is reinforcement through access, retrieval, investigation, feedback, correction and reuse. It does not assert that an ordinary prompt retrains a model, that publication guarantees inclusion in future training, or that repetition establishes truth. Its intended gain is mathematical capability available to people across tools; claims of faster feedback, broader access or improved research performance require separately stated evidence and baselines.
 
 ## Using the collection for discovery
 
@@ -140,7 +142,7 @@ Paper-derived contributions retain their sources and exact scope in the [paper-t
 
 Finite spectral calculations do not by themselves identify the complete zeta-zero divisor. Tensor or block representations do not imply a quantum algorithm or speedup. A successful build does not settle the Riemann hypothesis, GRH, ABC, or the open Möbius cross-energy bound. An encoding, graph, or waveform may suggest an approach, but representing a source does not itself supply a missing mathematical estimate.
 
-Steering AI discovery is the project's purpose. Whether a particular signal improves research choices, proof success, or discovery outcomes requires separate evaluation; the purpose is not a claim of measured AI performance.
+Widening access to mathematics and improving the human-directed research feedback loop are the project's purposes. Whether a particular instrument or signal improves access, research choices, proof success, or discovery outcomes requires separate evaluation; naming a tool vendor is not an endorsement or evidence of its mathematical contribution.
 
 ### Source-bound verification notices
 
