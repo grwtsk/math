@@ -11,6 +11,8 @@ GRWTSK bridge declarations are by grwtsk contributors.
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FiniteObservationGap
 import GRWTSK.AlgebraicTopology.SurfacePolygonPolarComplexPhase
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FiniteSpectralHeatGap
+import GRWTSK.FunctionalAnalysis.InnerProductSpacesAndTheirGeneralizationsHilbertSpaces.WeilPolarization
+import GRWTSK.FunctionalAnalysis.NormedLinearSpacesAndBanachSpacesBanachLattices.LinearRelaxation
 import Mathlib.Analysis.Normed.Module.FiniteDimension
 import Mathlib.Topology.Order.IntermediateValue
 import Mathlib.Tactic.Abel
@@ -1598,6 +1600,134 @@ theorem finiteNavierStokesLerayConvolutionAt_shell_tail_split
     (triadsAtOutput S ξ) u R
 
 end FourierNavierStokesTriad
+
+
+namespace ContinuousDyadicObservation
+
+open Set
+open GRWTSK.RiemannHypothesis
+
+/-!
+### Continuous dyadic splitting of an observation
+
+This layer acts on an already-constructed observation.  It does not interpolate
+or manufacture missing Fourier source coefficients.  The path is an exact
+two-piece decomposition of the same observation at every parameter value.
+-/
+
+variable {V : Type*} [NormedAddCommGroup V] [NormedSpace ℂ V]
+
+/-- The line parameter used for a continuous two-way split. -/
+abbrev SplitParameter := Set.Icc (0 : ℝ) 1
+
+/-- Left branch of the straight continuous dyadic split. -/
+def leftPart (x : V) (θ : SplitParameter) : V :=
+  (1 - θ.1 : ℂ) • x
+
+/-- Right branch of the straight continuous dyadic split. -/
+def rightPart (x : V) (θ : SplitParameter) : V :=
+  (θ.1 : ℂ) • x
+
+/-- Every point on the line is an exact decomposition of the same source
+observation. -/
+theorem left_add_right (x : V) (θ : SplitParameter) :
+    leftPart x θ + rightPart x θ = x := by
+  simp only [leftPart, rightPart, ← add_smul]
+  norm_num
+
+/-- The split begins entirely on the left branch. -/
+@[simp] theorem leftPart_zero (x : V) :
+    leftPart x ⟨0, by constructor <;> norm_num⟩ = x := by
+  simp [leftPart]
+
+/-- The split begins with an empty right branch. -/
+@[simp] theorem rightPart_zero (x : V) :
+    rightPart x ⟨0, by constructor <;> norm_num⟩ = 0 := by
+  simp [rightPart]
+
+/-- The split ends with an empty left branch. -/
+@[simp] theorem leftPart_one (x : V) :
+    leftPart x ⟨1, by constructor <;> norm_num⟩ = 0 := by
+  simp [leftPart]
+
+/-- The split ends entirely on the right branch. -/
+@[simp] theorem rightPart_one (x : V) :
+    rightPart x ⟨1, by constructor <;> norm_num⟩ = x := by
+  simp [rightPart]
+
+/-- The two branches vary continuously along the interpolation line. -/
+theorem continuous_leftPart (x : V) :
+    Continuous (leftPart x) := by
+  fun_prop
+
+theorem continuous_rightPart (x : V) :
+    Continuous (rightPart x) := by
+  fun_prop
+
+/-- Exact quadratic expansion along the continuous split for any complex
+sesquilinear observation.  The mixed terms remain explicit. -/
+theorem sesquilinear_split
+    (B : V → V → ℂ)
+    (haddL : ∀ a b c, B (a + b) c = B a c + B b c)
+    (haddR : ∀ a b c, B a (b + c) = B a b + B a c)
+    (x : V) (θ : SplitParameter) :
+    B x x =
+      B (leftPart x θ) (leftPart x θ) +
+      B (leftPart x θ) (rightPart x θ) +
+      B (rightPart x θ) (leftPart x θ) +
+      B (rightPart x θ) (rightPart x θ) := by
+  rw [← left_add_right x θ, haddL, haddR, haddR]
+  ring
+
+/-- For a real diagonal quadratic observation, the left-right interference
+term at every point of the continuous split is reconstructed by the existing
+Weil four-diagonal polarization formula. -/
+theorem polarized_cross_along_split
+    (B : V → V → ℂ) (q : V → ℝ)
+    (haddL : ∀ x y z, B (x + y) z = B x z + B y z)
+    (hsmulL : ∀ c x y, B (c • x) y = star c * B x y)
+    (haddR : ∀ x y z, B x (y + z) = B x y + B x z)
+    (hsmulR : ∀ c x y, B x (c • y) = c * B x y)
+    (hdiag : ∀ x, (q x : ℂ) = B x x)
+    (x : V) (θ : SplitParameter) :
+    B (leftPart x θ) (rightPart x θ) =
+      WeilPolarization.combine
+        (q (leftPart x θ + rightPart x θ))
+        (q (leftPart x θ - rightPart x θ))
+        (q (leftPart x θ + Complex.I • rightPart x θ))
+        (q (leftPart x θ - Complex.I • rightPart x θ)) := by
+  exact WeilPolarization.of_real_diagonal
+    B q haddL hsmulL haddR hsmulR hdiag
+    (leftPart x θ) (rightPart x θ)
+
+/-- Apply the continuous dyadic split to the finite projected Navier--Stokes
+observation at one output frequency.  This is observation-level relaxation:
+the underlying source-labelled convolution remains unchanged. -/
+def finiteConvolutionLeft
+    (S : Finset (FourierNavierStokesTriad.TriadSource FourierNavierStokesTriad.FourierFrequency3))
+    (ξ : FourierNavierStokesTriad.FourierFrequency3)
+    (u : FourierNavierStokesTriad.FourierFrequency3 → FourierNavierStokesTriad.FourierVelocity3)
+    (θ : SplitParameter) : FourierNavierStokesTriad.FourierVelocity3 :=
+  leftPart (FourierNavierStokesTriad.finiteNavierStokesLerayConvolutionAt S ξ u) θ
+
+def finiteConvolutionRight
+    (S : Finset (FourierNavierStokesTriad.TriadSource FourierNavierStokesTriad.FourierFrequency3))
+    (ξ : FourierNavierStokesTriad.FourierFrequency3)
+    (u : FourierNavierStokesTriad.FourierFrequency3 → FourierNavierStokesTriad.FourierVelocity3)
+    (θ : SplitParameter) : FourierNavierStokesTriad.FourierVelocity3 :=
+  rightPart (FourierNavierStokesTriad.finiteNavierStokesLerayConvolutionAt S ξ u) θ
+
+theorem finiteConvolutionLeft_add_right
+    (S : Finset (FourierNavierStokesTriad.TriadSource FourierNavierStokesTriad.FourierFrequency3))
+    (ξ : FourierNavierStokesTriad.FourierFrequency3)
+    (u : FourierNavierStokesTriad.FourierFrequency3 → FourierNavierStokesTriad.FourierVelocity3)
+    (θ : SplitParameter) :
+    finiteConvolutionLeft S ξ u θ + finiteConvolutionRight S ξ u θ =
+      FourierNavierStokesTriad.finiteNavierStokesLerayConvolutionAt S ξ u := by
+  exact left_add_right _ θ
+
+end ContinuousDyadicObservation
+
 
 
 end
