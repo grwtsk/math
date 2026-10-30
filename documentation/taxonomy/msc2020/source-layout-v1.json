@@ -1423039,6 +1423039,25 @@
       "target_sha256": "1528554b302324571b43755cfd083360e62546a8cc014381c1dc767faf8909a6",
       "target_git_blob": "83185da22df8dcebcd404b3308a92ab429260ca7",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/FiniteNudgeQuadratic.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/FiniteNudgeQuadratic.lean",
+      "source_sha256": "ff4b706c651450f0af595af1cbdc7ae6403b463de66755a9ee71f7b3f9a5a663",
+      "input_blob": "35d3731b6f180522b1798565cc70689438969fcc",
+      "source_kind": "lean_source",
+      "msc_code": "26A24",
+      "msc_label": "Differentiation (real functions of one variable): general theory, generalized derivatives, mean value theorems",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Finite secant increments, explicit quadratic epsilon-delta error control, actual derivative and punctured-limit comparison",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "35d3731b6f180522b1798565cc70689438969fcc",
+      "target_sha256": "ff4b706c651450f0af595af1cbdc7ae6403b463de66755a9ee71f7b3f9a5a663",
+      "target_git_blob": "35d3731b6f180522b1798565cc70689438969fcc",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
