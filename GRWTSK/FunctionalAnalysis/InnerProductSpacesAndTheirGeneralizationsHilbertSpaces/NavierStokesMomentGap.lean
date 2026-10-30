@@ -1831,6 +1831,137 @@ theorem gram_involutionRelaxation_le
   nlinarith [norm_nonneg x,
     norm_nonneg (DAF.Geometry.involutionRelaxation parameter.value C x)]
 
+
+/-!
+### Torsion-residue polarization channels
+
+The four Weil probes are retained as named residue channels.  A torsion action
+may move each channel independently; recombination happens only at the final
+polarized consumer.  This prevents a small combined residual from hiding a
+large channel that was cancelled by another channel.
+-/
+
+/-- The four diagonal residue channels used by complex polarization. -/
+structure PolarizationResidueChannels where
+  plus : ℝ
+  minus : ℝ
+  plusI : ℝ
+  minusI : ℝ
+
+namespace PolarizationResidueChannels
+
+/-- Recombine the four retained channels only at the polarized consumer. -/
+def recombine (r : PolarizationResidueChannels) : ℂ :=
+  WeilPolarization.combine r.plus r.minus r.plusI r.minusI
+
+/-- Positive channel mass.  This is intentionally prior to complex
+recombination and therefore does not use cancellation between channels. -/
+def torsionMass (r : PolarizationResidueChannels) : ℝ :=
+  |r.plus| + |r.minus| + |r.plusI| + |r.minusI|
+
+theorem torsionMass_nonnegative (r : PolarizationResidueChannels) :
+    0 ≤ r.torsionMass := by
+  unfold torsionMass
+  positivity
+
+/-- The recombined complex residue is controlled by the full retained channel
+mass. -/
+theorem norm_recombine_le (r : PolarizationResidueChannels) :
+    ‖r.recombine‖ ≤ r.torsionMass / 4 := by
+  exact WeilPolarization.norm_combine_le r.plus r.minus r.plusI r.minusI
+
+/-- Channelwise addition retains residue provenance before recombination. -/
+def add (r s : PolarizationResidueChannels) : PolarizationResidueChannels where
+  plus := r.plus + s.plus
+  minus := r.minus + s.minus
+  plusI := r.plusI + s.plusI
+  minusI := r.minusI + s.minusI
+
+@[simp] theorem recombine_add (r s : PolarizationResidueChannels) :
+    (r.add s).recombine = r.recombine + s.recombine := by
+  unfold add recombine WeilPolarization.combine
+  push_cast
+  ring
+
+/-- A torsion step acts separately on all four residue channels.  No
+commutation with recombination is assumed unless proved. -/
+structure TorsionStep where
+  actPlus : ℝ → ℝ
+  actMinus : ℝ → ℝ
+  actPlusI : ℝ → ℝ
+  actMinusI : ℝ → ℝ
+  boundPlus : ℝ
+  boundMinus : ℝ
+  boundPlusI : ℝ
+  boundMinusI : ℝ
+  boundPlus_nonnegative : 0 ≤ boundPlus
+  boundMinus_nonnegative : 0 ≤ boundMinus
+  boundPlusI_nonnegative : 0 ≤ boundPlusI
+  boundMinusI_nonnegative : 0 ≤ boundMinusI
+  actPlus_le : ∀ x, |actPlus x| ≤ boundPlus * |x|
+  actMinus_le : ∀ x, |actMinus x| ≤ boundMinus * |x|
+  actPlusI_le : ∀ x, |actPlusI x| ≤ boundPlusI * |x|
+  actMinusI_le : ∀ x, |actMinusI x| ≤ boundMinusI * |x|
+
+def TorsionStep.apply (T : TorsionStep)
+    (r : PolarizationResidueChannels) : PolarizationResidueChannels where
+  plus := T.actPlus r.plus
+  minus := T.actMinus r.minus
+  plusI := T.actPlusI r.plusI
+  minusI := T.actMinusI r.minusI
+
+/-- Full channelwise torsion budget.  The four bounds remain distinct. -/
+def TorsionStep.majorant (T : TorsionStep)
+    (r : PolarizationResidueChannels) : ℝ :=
+  T.boundPlus * |r.plus| +
+  T.boundMinus * |r.minus| +
+  T.boundPlusI * |r.plusI| +
+  T.boundMinusI * |r.minusI|
+
+theorem TorsionStep.torsionMass_apply_le
+    (T : TorsionStep) (r : PolarizationResidueChannels) :
+    (T.apply r).torsionMass ≤ T.majorant r := by
+  unfold torsionMass TorsionStep.apply TorsionStep.majorant
+  dsimp
+  exact add_le_add (add_le_add (add_le_add
+    (T.actPlus_le r.plus) (T.actMinus_le r.minus))
+    (T.actPlusI_le r.plusI)) (T.actMinusI_le r.minusI)
+
+/-- After an arbitrary channelwise torsion step, the final complex polarized
+residue is bounded by the retained four-channel majorant. -/
+theorem TorsionStep.norm_recombine_apply_le
+    (T : TorsionStep) (r : PolarizationResidueChannels) :
+    ‖(T.apply r).recombine‖ ≤ T.majorant r / 4 := by
+  exact (norm_recombine_le (T.apply r)).trans
+    (div_le_div_of_nonneg_right (T.torsionMass_apply_le r) (by norm_num))
+
+/-- Build the four signed residue channels from an approximate diagonal
+observer and the exact positive Gram diagonal along a pair of vectors. -/
+def ofApproximateGram
+    (A : ApproximateGramObserver V) (f g : V) :
+    PolarizationResidueChannels where
+  plus := A.observe (f + g) - ‖f + g‖ ^ 2
+  minus := A.observe (f - g) - ‖f - g‖ ^ 2
+  plusI := A.observe (f + Complex.I • g) - ‖f + Complex.I • g‖ ^ 2
+  minusI := A.observe (f - Complex.I • g) - ‖f - Complex.I • g‖ ^ 2
+
+/-- Each named residue channel is bounded by its own supplied observation
+allowance; no cross-channel cancellation is used. -/
+theorem ofApproximateGram_torsionMass_le
+    (A : ApproximateGramObserver V) (f g : V) :
+    (ofApproximateGram A f g).torsionMass ≤
+      A.allowance (f + g) + A.allowance (f - g) +
+      A.allowance (f + Complex.I • g) +
+      A.allowance (f - Complex.I • g) := by
+  unfold ofApproximateGram torsionMass
+  dsimp
+  exact add_le_add (add_le_add (add_le_add
+    (A.error_le (f + g)) (A.error_le (f - g)))
+    (A.error_le (f + Complex.I • g)))
+    (A.error_le (f - Complex.I • g))
+
+end PolarizationResidueChannels
+
 end ContinuousDyadicObservation
 
 
