@@ -24,9 +24,21 @@ A natural prime q that is no greater than every natural prime equals two. The ar
 
 Then `q = 2`.
 
-The fully qualified declaration is
-`GRWTSK.NumberTheory.Prime.least_prime_eq_two` in the
-[uniqueness source](../../../../GRWTSK/NumberTheory/MultiplicativeNumberTheory/LeastPrime.lean).
+The historically checked declaration is
+`GRWTSK.NumberTheory.Prime.least_prime_eq_two` in
+`GRWTSK/NumberTheory/Prime/LeastPrime.lean` at commit
+`c288573d1e3cad54979fd95ebf17244f30224d41`, blob
+`79d54a7f0e730f0cd35f64089fdd9b29450e173a`.
+The [current uniqueness source](../../../../GRWTSK/NumberTheory/MultiplicativeNumberTheory/LeastPrime.lean),
+blob `7f3c0e19eef20bc0686116316dc6d53a36a1a3be`, instead declares
+`GRWTSK.NumberTheory.Primes.least_prime_eq_two`. Exact comparison of the
+complete historical and current source files confirms that changing **only**
+the opening and closing namespace declarations from `Prime` to `Primes`
+makes the complete text identical. The theorem statement, imported
+foundational source and proof term are textually unchanged. This is a
+source-level declaration concordance, **not** a fresh native replay or
+kernel certificate for the renamed current declaration.
+
 The theorem assumes primality and leastness. It does not infer them from a
 source observation, an experimental result, or a verification receipt.
 
@@ -78,6 +90,17 @@ any graph measurement. Reaching the same upstream declaration through both
 prime and order branches must not count it twice.
 
 ## 4. Verification and trust boundary
+
+**Current-source concordance (analytical/source inspection, separate from replay):**
+the renamed present declaration uses the same mathematical theorem statement
+and the same proof body as the historical checked declaration, with an exact
+two-line namespace substitution and no other source-text differences. The
+historical `SCOPED_EVIDENCE` table below **continues to certify only the
+historical declaration and source blob**; it is not transferred to the new
+namespace without a fresh declaration-bound typecheck and axiom review. The
+original evidence identity, toolchain, source pins, and acceptance status
+remain unchanged.
+
 
 Current verification: **SCOPED_EVIDENCE** at math commit
 `c288573d1e3cad54979fd95ebf17244f30224d41`.
@@ -146,7 +169,7 @@ scope and are still required for the default upstream-inclusive ranking.
 
 ## 6. Revision and issuance
 
-This is revision 2 of the article. The canonical mathematical date and actual
+This is revision 3 of the article. The canonical mathematical date and actual
 issuance timestamp are null in hidden article metadata; no issuance event is asserted.
 Its stable identity, slug, component references, and source-description pins
 are authoritative there. Future source changes require new scoped observations
@@ -307,7 +330,7 @@ that earlier context, not to the current local observation.
       "bridge_scope": "The exact local bridge and foundational conjunction were replayed twice under the bound cached imported context. Primality and leastness remain the theorem hypotheses; upstream source replay and global dependency closure are not claimed."
     },
     "issue": {
-      "revision": 2,
+      "revision": 3,
       "canonical_date": null,
       "issued_at": null
     },
