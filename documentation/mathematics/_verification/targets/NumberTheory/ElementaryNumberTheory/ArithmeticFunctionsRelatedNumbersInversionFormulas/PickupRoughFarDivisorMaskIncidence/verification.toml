@@ -1,0 +1,42 @@
+# Static mathematical target specification, not a queue or execution receipt.
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+verification_issue = "https://github.com/grwtsk/math/issues/1487"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughFarDivisorMaskIncidence"
+mathematical_scope = "Exact one-prime selected/kept divisor and pairWeight transport identities; literature connections remain analogies only."
+
+[source]
+repository = "grwtsk/math"
+commit = "cf25bba53d45989cbba2c02cbbd6a499726a4a06"
+parent = "3445b4a14326b625539cf616e46f85bfd2fa654c"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarDivisorMaskIncidence.lean"
+blob = "ee6b5b0f3e2c95dcd19370715fb14b0418d960b1"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarDivisorMaskIncidence"
+build = "lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarDivisorMaskIncidence"
+elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarDivisorMaskIncidence.lean"
+commands_status = "NOT_RUN"
+theorems = ["fresh_dvd_prime_mul_iff","keptDivisors_left_eq_erase","selectedDivisors_right_eq_insert","omega_right_eq","keptDivisors_right_eq","keptDivisors_both_eq_erase","pairWeight_left_sub_eq","pairWeight_right_eq","pairWeight_both_eq"]
+reject = ["sorryAx","new research axioms","literature analogy promoted to inference","zero-count denominator silently removed","omitted fresh-prime or Z<p hypotheses","unauthorized native trust","acceptance transferred from changed bytes"]
+
+[literature]
+tao_chowla = "ANALOGY_ONLY: arXiv:1509.05422"
+hughes_effective_chowla = "ANALOGY_ONLY: arXiv:2609.28526"
+duffin_schaeffer = "ANALOGY_ONLY: DOI:10.4007/annals.2020.192.1.5"
+pfr_formalization = "ANALOGY_ONLY: https://teorth.github.io/pfr/"
+historical_influence = "NOT_CLAIMED"
+
+[obstruction]
+id = "RH-FAR-DIVISOR-MASK-COMMUTATOR-02"
+status = "REFINED"
+statement = "Prime dilation changes the divisor mask only through one-prime numerator/denominator incidence at p; exact pairWeight formulas are available, but no complete transportedDivisorMask bound is proved."
+smallest_missing_premise = "Substitute the one-prime formulas into divisorMaskCommutator, reindex the left p|n channel exactly, and derive a source-compatible bound for all three channels without replacing numerator/denominator dependence by an unproved density."
