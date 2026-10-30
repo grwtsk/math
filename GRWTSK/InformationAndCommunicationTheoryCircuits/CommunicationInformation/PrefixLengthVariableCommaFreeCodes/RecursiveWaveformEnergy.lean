@@ -37,12 +37,12 @@ theorem quarticEnergy_append (xs ys : List ℝ) :
 theorem quadraticEnergy_nonneg (xs : List ℝ) :
     0 ≤ quadraticEnergy xs := by
   unfold quadraticEnergy
-  exact List.sum_nonneg (fun x hx => sq_nonneg _)
+  exact List.sum_nonneg (fun x hx => by positivity)
 
 theorem quarticEnergy_nonneg (xs : List ℝ) :
     0 ≤ quarticEnergy xs := by
   unfold quarticEnergy
-  exact List.sum_nonneg (fun x hx => pow_nonneg (le_of_lt (show (0:ℝ) ≤ x ^ 2 by positivity)) 2)
+  exact List.sum_nonneg (fun x hx => by positivity)
 
 /-- Equal retained observations of distinct inputs obstruct any left inverse. -/
 theorem no_recovery_of_collision
