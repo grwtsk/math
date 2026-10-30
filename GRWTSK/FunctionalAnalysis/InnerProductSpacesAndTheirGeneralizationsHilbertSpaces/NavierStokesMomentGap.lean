@@ -13,6 +13,7 @@ import GRWTSK.AlgebraicTopology.SurfacePolygonPolarComplexPhase
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FiniteSpectralHeatGap
 import GRWTSK.FunctionalAnalysis.InnerProductSpacesAndTheirGeneralizationsHilbertSpaces.WeilPolarization
 import GRWTSK.FunctionalAnalysis.NormedLinearSpacesAndBanachSpacesBanachLattices.LinearRelaxation
+import GRWTSK.GeneralTopology.ThreePhaseCoefficientHeat
 import Mathlib.Analysis.Normed.Module.FiniteDimension
 import Mathlib.Topology.Order.IntermediateValue
 import Mathlib.Tactic.Abel
@@ -2197,6 +2198,70 @@ unitary automorphism. -/
 structure VectorTransport.IsUnitaryData (U : VectorTransport (W := W)) : Prop
     extends U.PreservesInner where
   bijective : Function.Bijective U.map
+
+
+/-!
+### Finite coordinate and three-phase realization boundary
+
+A supplied finite coordinate realization is kept dimension-parametric.  The
+existing three-phase heat model supplies a genuine three-coordinate source,
+but its heat flow is dissipative on the residual plane and therefore is not
+silently promoted to a unitary or special-unitary transport.
+-/
+
+abbrev CoordinateFiber (k : ℕ) := EuclideanSpace ℂ (Fin k)
+
+/-- Coordinate-level vector transport in supplied complex dimension k. -/
+abbrev CoordinateTransport (k : ℕ) :=
+  VectorTransport (W := CoordinateFiber k)
+
+/-- The three-phase source has an exact complex coordinate embedding. -/
+def threePhaseComplex
+    (z : GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.Triple) :
+    CoordinateFiber 3 :=
+  fun j => (z j : ℂ)
+
+/-- The existing three-phase heat flow induces a complex three-coordinate
+path.  This establishes k=3 for this particular producer only. -/
+def threePhaseHeatCoordinate
+    (t : ℝ)
+    (z : GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.Triple) :
+    CoordinateFiber 3 :=
+  threePhaseComplex
+    (GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.flow t z)
+
+/-- The three-phase producer preserves its coherent mean coordinate. -/
+theorem threePhaseHeat_mean_preserved
+    (t : ℝ)
+    (z : GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.Triple) :
+    GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.mean
+      (GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.flow t z) =
+    GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.mean z :=
+  GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.mean_flow t z
+
+/-- Its residual energy is exponentially damped.  This is an explicit
+obstruction to treating positive-time three-phase heat as an isometric color
+transport on the full residual fiber. -/
+theorem threePhaseHeat_defect_damped
+    (lam t : ℝ)
+    (z : GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.Triple)
+    (c : ℝ) :
+    GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.defectEnergy lam
+      (GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.flow t z)
+      (GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay t * c) =
+    Real.exp (-6 * t) *
+      GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.defectEnergy lam z c :=
+  GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.defect_flow lam t z c
+
+/-- Determinant-one data is deliberately a separate finite-dimensional
+obligation.  It cannot be inferred from Gram observations alone.  The
+determinant functional is supplied explicitly so this interface does not
+pretend a matrix representation has already been chosen. -/
+structure SpecialUnitaryCandidateData {k : ℕ}
+    (U : CoordinateTransport k) : Prop
+    extends U.IsUnitaryData where
+  determinant : ℂ
+  determinant_eq_one : determinant = 1
 
 end PairGramFiber
 
