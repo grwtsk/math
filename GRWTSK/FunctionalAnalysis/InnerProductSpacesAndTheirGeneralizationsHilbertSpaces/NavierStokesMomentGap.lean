@@ -1407,6 +1407,91 @@ theorem navierStokesProjected_shell_tail_split
   rw [navierStokesConvectiveTriad_shell_tail_split u R t]
   simp only [map_add]
 
+
+/-- The explicit Leray denominator is the real Euclidean squared norm,
+embedded in the complex scalars.  This is the source identity needed to
+remove the provisional denominator premise from the transverse-output theorem. -/
+theorem lerayDenominator_eq_norm_sq (ξ : FourierFrequency3) :
+    lerayDenominator ξ = ((‖ξ‖ ^ 2 : ℝ) : ℂ) := by
+  simp [lerayDenominator, fourierDivergencePairing, complexFrequency,
+    EuclideanSpace.norm_eq, Real.norm_eq_abs]
+  norm_num [sq_abs]
+
+/-- Every nonzero real Fourier frequency has a nonzero Leray denominator. -/
+theorem lerayDenominator_ne_zero {ξ : FourierFrequency3} (hξ : ξ ≠ 0) :
+    lerayDenominator ξ ≠ 0 := by
+  rw [lerayDenominator_eq_norm_sq]
+  exact_mod_cast (sq_ne_zero.mpr (norm_ne_zero_iff.mpr hξ))
+
+/-- The explicit Leray correction is unconditionally transverse at every
+nonzero output frequency. -/
+theorem lerayProject_transverse
+    {ξ : FourierFrequency3} (hξ : ξ ≠ 0) (v : FourierVelocity3) :
+    fourierDivergencePairing ξ (lerayProject ξ v) = 0 :=
+  lerayProject_transverse_of_denominator_ne_zero
+    hξ (lerayDenominator_ne_zero hξ) v
+
+/-- At a fixed Fourier frequency the explicit Leray correction is additive.
+The zero-frequency identity branch and the nonzero longitudinal correction
+are handled separately rather than conflated. -/
+theorem lerayProject_add
+    (ξ : FourierFrequency3) (u v : FourierVelocity3) :
+    lerayProject ξ (u + v) = lerayProject ξ u + lerayProject ξ v := by
+  by_cases hξ : ξ = 0
+  · subst ξ
+    simp [lerayProject]
+  · rw [lerayProject, lerayProject, lerayProject]
+    simp only [if_neg hξ, map_add]
+    funext i
+    simp [div_eq_mul_inv, add_mul, mul_add]
+    ring
+
+/-- At a fixed Fourier frequency the explicit Leray correction sends zero
+to zero. -/
+theorem lerayProject_zero_fixed (ξ : FourierFrequency3) :
+    lerayProject ξ 0 = 0 := by
+  by_cases hξ : ξ = 0
+  · subst ξ
+    simp [lerayProject]
+  · rw [lerayProject, if_neg hξ]
+    simp
+
+/-- Package the exact fixed-frequency Leray correction as the additive map
+required by the source-labelled four-sector consumer. -/
+def lerayProjectAddMonoidHom (ξ : FourierFrequency3) :
+    FourierVelocity3 →+ FourierVelocity3 where
+  toFun := lerayProject ξ
+  map_zero' := lerayProject_zero_fixed ξ
+  map_add' := lerayProject_add ξ
+
+/-- The actual projected Navier--Stokes triad inherits the exact shell/tail
+four-sector decomposition.  No mixed or tail--tail source sector is erased. -/
+theorem navierStokesLerayTriad_shell_tail_split
+    (u : FourierFrequency3 → FourierVelocity3)
+    (R : ℝ) (t : TriadSource FourierFrequency3) :
+    navierStokesLerayTriad t (u t.left) (u t.right) =
+      navierStokesLerayTriad t
+          (shellPart R u t.left) (shellPart R u t.right) +
+      navierStokesLerayTriad t
+          (shellPart R u t.left) (tailPart R u t.right) +
+      navierStokesLerayTriad t
+          (tailPart R u t.left) (shellPart R u t.right) +
+      navierStokesLerayTriad t
+          (tailPart R u t.left) (tailPart R u t.right) := by
+  unfold navierStokesLerayTriad
+  exact navierStokesProjected_shell_tail_split
+    (lerayProjectAddMonoidHom t.outputFrequency) u R t
+
+/-- The projected source-labelled convective interaction is transverse at
+every nonzero additive output frequency, with no separate denominator premise. -/
+theorem navierStokesLerayTriad_transverse_of_output_ne_zero
+    (t : TriadSource FourierFrequency3)
+    (hout : t.outputFrequency ≠ 0)
+    (a b : FourierVelocity3) :
+    fourierDivergencePairing t.outputFrequency
+      (navierStokesLerayTriad t a b) = 0 := by
+  exact lerayProject_transverse hout (navierStokesConvectiveTriad t a b)
+
 end FourierNavierStokesTriad
 
 
