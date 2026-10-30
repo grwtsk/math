@@ -1,0 +1,37 @@
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[source]
+repository = "grwtsk/math"
+lean_commit = "8b205f870ca0d92b503a46066ffa5b2655b77e32"
+documentation_commit = "b14ecede8febb480cf16a9b70d86e1927f4a29e0"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupExceptionalShiftConnections.lean"
+
+[scope]
+obstruction_id = "ordinary-chowla-growing-prime-supply-depletion-v1"
+predecessor_commit = "726eb72232aa63a618b1977a7212ea56bd8d5052"
+guth_maynard_role = "LITERATURE_CONNECTION_ONLY"
+all_shift_chowla_role = "LITERATURE_CONNECTION_ONLY"
+pretentious_role = "STRUCTURAL_CONNECTION_ONLY"
+complete_trace_role = "ANALOGY_ONLY"
+new_cancellation_claimed = false
+rh_claimed = false
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+external_theorem_acceptance = "NOT_CLAIMED"
+
+[open_obligations]
+original_shift_level_set_bound = true
+weighted_exceptional_mass = true
+pretentious_distance_after_growing_deletion = true
+growing_family_uniformity = true
+gram_weight_compatibility = true
+frozen_endpoint_compatibility = true
+rough_mask_compatibility = true
+complete_complement_coverage = true
+repeated_prime_correction = true
+every_positive_rate_bound = true
