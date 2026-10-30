@@ -1,0 +1,58 @@
+{
+  "title": "The other way to visualize derivatives",
+  "byline": "Grant Sanderson",
+  "blog_adaptation": "Vivek Verma",
+  "date": "2018-05-19",
+  "primary_url": "https://www.3blue1brown.com/lessons/derivatives-and-transforms/",
+  "retained_html_sha256": "f4862e3024dc15149780bc03d13e18c97dd708a7bc82d283114aba4518f0da5b",
+  "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SmoothDynamicalSystemsGeneralTheory/FixedPointsAndPeriodicPointsOfDynamicalSystemsFixedPointIndexTheoryLocalDynamics/GoldenFixedPointStability.lean",
+  "blob": "07897ca1e8b273a5a627f6bff11f8b897d165fae",
+  "namespace": "GRWTSK.Dynamics.GoldenFixedPointStability",
+  "theorems": [
+    "conjugate_rational_bounds",
+    "conjugate_derivative_gt_two",
+    "fixed_point_difference",
+    "conjugate_neighborhood_domain",
+    "conjugate_neighborhood_repulsion",
+    "conjugate_finite_escape",
+    "conjugate_first_escape_domain",
+    "golden_lyapunov_stability",
+    "golden_stable_attracting",
+    "source_product_derivative"
+  ],
+  "scope": "Actual conjugate derivative magnitude>2,concrete radius1/8 punctured expansion>2,finite escape and pre-exit nonzero denominators. Actual positive fixed-point uniform-in-time Lyapunov stability and attraction consumer. Actual source product-rule quiz derivative.",
+  "hypotheses": "Conjugate neighborhood abs(x-psi)<1/8,x!=psi for strict expansion. Finite escape for every x!=psi,with nonzero denominators before first exit. Stability epsilon>0 before eta>0,all nearby x then ALL n;positive local attraction independent supplier. No global negative-start basin classification.",
+  "method": "Actual sqrt/golden bounds give rational enclosure;actual fixed-point rational difference gives expansion;finite induction/geometric growth forces exit. Existing actual every-iterate error yields stability,combined with independent positive orbit theorem.",
+  "inherited_candidates": [
+    {
+      "commit": "4a166d082a87530bcf2c2d4f71898509bfb86569",
+      "blob": "433be1002fe67ff2c18667f122e15fc94662ef58",
+      "role": "Actual step derivative and fixed-point magnitude suppliers,unchecked"
+    },
+    {
+      "commit": "338fd0eeaa98fc40c5e8c4ced37a37192879f08e",
+      "blob": "4fee32ac0967561951e26af9176334e4deb4d49b",
+      "role": "Actual orbit/every-iterate error/positive convergence,unchecked"
+    }
+  ],
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/NumberTheory/Real/GoldenRatio.lean": "41db3ba203218dcfda3ffe99d8d3b170e9bc7a9c",
+      "Mathlib/Analysis/SpecificLimits/Basic.lean": "c633976a412c7d498b55d6188e811d005fd73da4",
+      "Mathlib/Analysis/SpecialFunctions/Trigonometric/Deriv.lean": "42ad385577a44c06e07a77e4d835b9a384345f1a"
+    },
+    "role": "Actual golden/sqrt algebra,geometric growth limit and sine derivative/product calculus; imported mathematics not local acceptance"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Global negative-start basin/pole/prepole classification",
+    "Full spoken-video/figure mapping and all source-bound checking"
+  ],
+  "video_verified_complete": false
+}
