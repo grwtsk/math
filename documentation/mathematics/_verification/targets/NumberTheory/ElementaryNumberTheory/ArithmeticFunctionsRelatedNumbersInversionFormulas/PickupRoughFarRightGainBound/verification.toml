@@ -1,0 +1,36 @@
+# Static mathematical target specification, not a queue or execution receipt.
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+verification_issue = "https://github.com/grwtsk/math/issues/1482"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughFarRightGainBound"
+mathematical_scope = "Exact quotient-range p-dependent envelope for the right near-to-far gain sector; no complete cutoff/far-source gain or RH."
+
+[source]
+repository = "grwtsk/math"
+commit = "13c2bcd49c57320f340032ab0cd611f06ebe7ec9"
+parent = "3e45a7c6f774cb9fafebda84965fc368350294a0"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarRightGainBound.lean"
+blob = "4b1b8ed36164a982a7427829f88c8076d7ea47d0"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarRightGainBound"
+build = "lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarRightGainBound"
+elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarRightGainBound.lean"
+commands_status = "NOT_RUN"
+definitions = ["rightGainContribution"]
+theorems = ["rightGainContribution_eq_full_range","rightGain_count_le","rightGain_kernel_le","rightGain_row_abs_le","rightGainContribution_abs_le","actual_rightGainContribution_abs_le"]
+reject = ["sorryAx","new research axioms","single-sector bound promoted to complete cutoff/far gain","unrecorded prime-range choice","omitted pairWeight or rough coefficients","unauthorized native trust","acceptance transferred from changed bytes"]
+
+[obstruction]
+id = "RH-FAR-PRIME-MASK-COMMUTATOR-01"
+status = "REFINED"
+statement = "The right near-to-far gain now has a p-dependent source-candidate envelope (N/p)*K*sqrt(N)/sqrt(L+1); lower-cutoff left gain, simultaneous gain, and divisor-mask sectors remain."
+smallest_missing_premise = "Exact non-overcounted source decomposition and one-sided p-dependent bounds for the lower-cutoff and simultaneous gain sectors, then recombination into transportedCutoff."
