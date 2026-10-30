@@ -113,4 +113,84 @@ theorem pickupCross_le_endpoint_plus_quarter
     hm hr (⟨T, hT⟩ : NonnegativeTime)
   exact hs
 
+
+/-!
+## Second mathematical observation: actual endpoint samples
+
+A second observation layer uses the source-provided observedEndpointSum and
+its real endpoint samples. Composing with the first signed comparison retains
+two distinct signed errors: sample-vs-exact-endpoint AND curvature-vs-pickup.
+Nothing about arbitrary samples is silently assumed accurate.
+-/
+
+/-- Source-exact comparison from the original endpoint quadrature to
+user-supplied endpoint samples. All sample error remains signed. -/
+def endpointSampleComparison
+    (left right : ℕ → ℝ) : SignedComparison NonnegativeTime where
+  source := fun T => endpointSum T.1
+  model := fun T => observedEndpointSum T.1 left right
+  residual := fun T => endpointSum T.1 - observedEndpointSum T.1 left right
+  source_eq_model_add_residual := by
+    intro T
+    dsimp
+    ring
+
+/-- The two legitimate mathematical comparisons are composed only because
+the first model is IDENTICALLY the second source, at the same T. -/
+def sampledSourceComparison (left right : ℕ → ℝ) :
+    SignedComparison NonnegativeTime :=
+  endpointSourceComparison.comp (endpointSampleComparison left right)
+    (by intro T; rfl)
+
+/-- No signed error disappears under comparison composition. -/
+theorem sampledSourceComparison_residual
+    (left right : ℕ → ℝ) (T : NonnegativeTime) :
+    (sampledSourceComparison left right).residual T =
+      (endpointSum T.1 - observedEndpointSum T.1 left right) -
+        curvatureCorrection T.1 := by
+  simp only [sampledSourceComparison, SignedComparison.comp_residual,
+    endpointSampleComparison, endpointSourceComparison]
+  ring
+
+/-- Distinct sample and curvature allowances are both paid for the SAME
+nonnegative physical horizon. The uniform sample premise is explicitly
+quantified over every actual source birth index in this horizon. -/
+theorem sampledSourceComparison_residual_le
+    (T : ℝ) (hT : 0 ≤ T)
+    (left right : ℕ → ℝ) (ε : ℝ)
+    (hleft : ∀ k < ⌊Real.exp T⌋₊,
+      |left k - polynomial (k + 1) (node (eventCut T k))| ≤ ε)
+    (hright : ∀ k < ⌊Real.exp T⌋₊,
+      |right k - polynomial (k + 1) (node (eventCut T (k + 1)))| ≤ ε) :
+    (sampledSourceComparison left right).residual
+      (⟨T, hT⟩ : NonnegativeTime) ≤ T * ε + 1 / 4 := by
+  have hs := (abs_le.mp
+    (observedEndpointSum_vs_chord hT left right ε hleft hright)).1
+  have hc := endpointSourceComparison_residual_le_quarter
+    (⟨T, hT⟩ : NonnegativeTime)
+  rw [sampledSourceComparison_residual] 
+  change -curvatureCorrection T ≤ (1 / 4 : ℝ) at hc
+  linarith
+
+/-- Reconstruct the ORIGINAL cross-energy from observed endpoints. This
+one-sided estimate follows from the actual two-stage signed source
+comparison, not a free or randomly chosen error-budget field. -/
+theorem pickupCross_le_observed_plus_paid_errors
+    (T : ℝ) (hT : 0 ≤ T)
+    (left right : ℕ → ℝ) (ε : ℝ)
+    (hleft : ∀ k < ⌊Real.exp T⌋₊,
+      |left k - polynomial (k + 1) (node (eventCut T k))| ≤ ε)
+    (hright : ∀ k < ⌊Real.exp T⌋₊,
+      |right k - polynomial (k + 1) (node (eventCut T (k + 1)))| ≤ ε) :
+    pickupCross T ≤ observedEndpointSum T left right + T * ε + 1 / 4 := by
+  have he := (sampledSourceComparison left right).source_eq_model_add_residual
+    (⟨T, hT⟩ : NonnegativeTime)
+  have hr := sampledSourceComparison_residual_le
+    T hT left right ε hleft hright
+  change pickupCross T =
+      observedEndpointSum T left right +
+        (sampledSourceComparison left right).residual
+          (⟨T, hT⟩ : NonnegativeTime) at he
+  linarith
+
 end GRWTSK.NumberTheory.Moebius.PickupTheoreticalQualification
