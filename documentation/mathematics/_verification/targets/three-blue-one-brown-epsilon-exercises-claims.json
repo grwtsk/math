@@ -1,0 +1,43 @@
+{
+  "primary_url": "https://www.3blue1brown.com/lessons/epsilon-delta/",
+  "date": "2017-05-04",
+  "byline": "Grant Sanderson",
+  "text_adaptation": "Kurt Bruns",
+  "html_sha256": "7eacbe5b30af809d7bf4edd8271c6b4404b7f2095cbd98b4751a6be5e525ef96",
+  "source": "GRWTSK/RealFunctions/FunctionsOfOneVariable/FoundationsLimitsAndGeneralizationsElementaryTopologyOfTheLine/EpsilonDeltaExercises.lean",
+  "blob": "c8e50555ddf3709cc7c613c92b6e219f11865289",
+  "namespace": "GRWTSK.RealAnalysis.EpsilonDeltaExercises",
+  "theorems": [
+    "reciprocal_escape",
+    "reciprocal_no_control",
+    "reciprocal_no_finite_limit",
+    "denominator_positive",
+    "removable_eq_extension",
+    "extension_shift_error",
+    "removable_shift_error",
+    "removable_limit",
+    "extension_continuous_at_one",
+    "extension_value_at_one",
+    "total_quotient_value_at_one",
+    "quotient_value_differs_from_extension"
+  ],
+  "hypotheses": "Every proposed finite real limit L and every delta>0 for reciprocal witnesses; x!=1 for rational cancellation; abs(h)<1/2 for shifted error; epsilon>0 before radius min(1/2,epsilon).",
+  "scope": "Actual two published exercises: no finite punctured limit for1/x+x at0 and actual punctured limit1/3 for(x-1)/(x^3-1) at1; actual extension and total-division value distinguished.",
+  "inherited_candidate": {
+    "commit": "7633b34342986a84c70d771ad129e8d5b93f2a0d",
+    "blob": "7bfa6c5ef86fc9e678e14db382a93f5e14c76678",
+    "role": "Unverified general metric zero-limit control bridge"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Complete spoken-video and published-text claim audit",
+    "All inherited source-bound checking",
+    "Extended-real one-sided divergence not claimed merely from no finite limit"
+  ],
+  "video_verified_complete": false
+}
