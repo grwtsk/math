@@ -1,0 +1,36 @@
+# Static mathematical target specification, not a queue or execution receipt.
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+verification_issue = "https://github.com/grwtsk/math/issues/1484"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughFarCutoffRecombine"
+mathematical_scope = "Exact recombination of all surviving geometric prime-transport sectors into transportedCutoff and one complete p-dependent envelope; divisor-mask term remains separate."
+
+[source]
+repository = "grwtsk/math"
+commit = "497abd75fc5bb2bfbe3aa42f51736b1cd6a0043b"
+parent = "fbd58e5b2c9b837d3c0a4fbeaf169649556a94d9"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarCutoffRecombine.lean"
+blob = "8a360e1ca8693c67ed17c38077a9532e45938df9"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarCutoffRecombine"
+build = "lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarCutoffRecombine"
+elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarCutoffRecombine.lean"
+commands_status = "NOT_RUN"
+definitions = []
+theorems = ["leftGainContribution_eq_full_range","bothLowGainContribution_eq_full_range","bothNearGainContribution_eq_full_range","transportedCutoff_eq_sector_sum","transportedCutoff_abs_le"]
+reject = ["sorryAx","new research axioms","geometric envelope promoted to complete far-source gain","unrecorded prime choice","omitted divisor-mask term","unauthorized native trust","acceptance transferred from changed bytes"]
+
+[obstruction]
+id = "RH-FAR-PRIME-MASK-COMMUTATOR-01"
+status = "REFINED"
+statement = "The full geometric cutoff commutator now has an exact source recombination and a complete p-dependent source-candidate envelope; the remaining mask-transport obstruction is the divisor-mask commutator."
+smallest_missing_premise = "Expand pairWeight changes under prime dilation into exact selected-divisor count identities and prove a compatible one-sided bound for transportedDivisorMask."
