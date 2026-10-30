@@ -121,6 +121,61 @@ theorem continuous_angle_twist (z : Phase3) :
   unfold twist anglePhase
   fun_prop
 
+
+/-- Additive angle composition is exact rather than approximate interpolation. -/
+theorem angle_twist_add (θ φ : ℝ) (z : Phase3) :
+    twist (anglePhase θ) (twist (anglePhase φ) z) =
+      twist (anglePhase (θ + φ)) z := by
+  rw [twist_comp, anglePhase_add]
+
+theorem angle_twist_zero (z : Phase3) :
+    twist (anglePhase 0) z = z := by
+  rw [anglePhase_zero, twist_one]
+
+/-- Negative angle reverses the full residual-circle transport exactly. -/
+theorem angle_twist_inverse (θ : ℝ) (z : Phase3) :
+    twist (anglePhase (-θ)) (twist (anglePhase θ) z) = z := by
+  rw [angle_twist_add, neg_add_cancel, angle_twist_zero]
+
+/-- The continuous scalar torsion and the earlier order-three cyclic
+permutation commute, so neither action is silently treated as heat. -/
+theorem twist_cyclic (a : ℂ) (z : Phase3) :
+    twist a (cyclic z) = cyclic (twist a z) := by
+  funext j
+  simp only [twist, cyclic, mean_cyclic, residual_cyclic]
+
+/-- Two complex coordinates give an exact algebraic presentation of the
+zero-mean residual plane, but not an orthonormal coordinate basis. -/
+def residualFromTwo (a b : ℂ) : Phase3 := ![a, b, -(a + b)]
+
+theorem mean_residualFromTwo (a b : ℂ) :
+    mean (residualFromTwo a b) = 0 := by
+  simp [mean, residualFromTwo]
+  ring
+
+theorem residualFromTwo_unique
+    (z : Phase3) (hz : mean z = 0) :
+    residualFromTwo (z 0) (z 1) = z := by
+  have hsum : z 0 + z 1 + z 2 = 0 := by
+    calc
+      z 0 + z 1 + z 2 =
+          3 * ((z 0 + z 1 + z 2) / 3) := by ring
+      _ = 0 := by rw [← show mean z = (z 0 + z 1 + z 2) / 3 from rfl, hz]; ring
+  have hlast : -(z 0 + z 1) = z 2 := by
+    calc
+      -(z 0 + z 1) = z 2 - (z 0 + z 1 + z 2) := by ring
+      _ = z 2 := by rw [hsum]; ring
+  funext j
+  fin_cases j <;> simp [residualFromTwo, hlast]
+
+/-- The actual positive metric in the naive two-coordinate chart is not the
+unweighted Euclidean two-coordinate metric: it has a third coupled term. -/
+theorem residualEnergy_fromTwo (a b : ℂ) :
+    residualEnergy (residualFromTwo a b) =
+      ‖a‖ ^ 2 + ‖b‖ ^ 2 + ‖a + b‖ ^ 2 := by
+  simp [residualEnergy, Fin.sum_univ_three, residual,
+    mean_residualFromTwo, residualFromTwo, norm_neg]
+
 /-- The phase action is independent of the dissipative heat flow. -/
 theorem heat_twist (a : ℂ) (t : ℝ) (z : Phase3) :
     heat t (twist a z) = twist a (heat t z) := by
