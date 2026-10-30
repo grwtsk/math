@@ -1426617,6 +1426617,25 @@
       "target_sha256": "3b74b12dbb7716fb79b17d1f281530b6c120d8e859a67c3f350eb4ddcab16087",
       "target_git_blob": "c8e50555ddf3709cc7c613c92b6e219f11865289",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/LHopitalLesson.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/LHopitalLesson.lean",
+      "source_sha256": "6fae894ddd592b2b75036de5e849e04a59ccd7ef567f5642ff974faaa60aa57a",
+      "input_blob": "d763372f17013db6926fbabdb6ade3efd4d3f284",
+      "source_kind": "lean_source",
+      "msc_code": "26A24",
+      "msc_label": "Differentiation (real functions of one variable): general theory, generalized derivatives, mean value theorems",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Pointwise ratio-of-linearizations bridge, actual trigonometric/polynomial limit consumers and separate neighborhood L Hopital application",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "d763372f17013db6926fbabdb6ade3efd4d3f284",
+      "target_sha256": "6fae894ddd592b2b75036de5e849e04a59ccd7ef567f5642ff974faaa60aa57a",
+      "target_git_blob": "d763372f17013db6926fbabdb6ade3efd4d3f284",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",

@@ -1,0 +1,47 @@
+{
+  "primary_url": "https://www.3blue1brown.com/lessons/l-hopitals-rule/",
+  "title": "L'Hopital's rule",
+  "date": "2017-05-04",
+  "byline": "Grant Sanderson",
+  "text_adaptation": "Kurt Bruns",
+  "retained_html_sha256": "485ff00e942f81d9f669fde2899a5f85008432890adbd0e08639957d84c79d89",
+  "source": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/LHopitalLesson.lean",
+  "blob": "d763372f17013db6926fbabdb6ade3efd4d3f284",
+  "namespace": "GRWTSK.RealAnalysis.LHopitalLesson",
+  "theorems": [
+    "quotient_of_point_derivatives",
+    "sine_pi_derivative_at_one",
+    "square_minus_one_derivative_at_one",
+    "sine_pi_over_square_limit",
+    "sine_over_identity_limit",
+    "sine_over_identity_limit_by_neighborhood_rule",
+    "cube_minus_one_derivative_at_one",
+    "cube_minus_one_over_linear_limit",
+    "square_over_square_limit",
+    "square_derivative_zero",
+    "blind_zero_slope_ratio_differs"
+  ],
+  "scope": "Exact sine(pi*x)/(x^2-1) limit -pi/2 at1 and both actual exercises; explicit pointwise ratio-of-linearizations bridge and independent imported-neighborhood-rule sin(x)/x consumer.",
+  "hypotheses": "Point route: actual HasDerivAt f u a and g v a, common zero, v!=0. Neighborhood route: eventual actual derivatives sin/cos and identity/1, denominator derivative1!=0, both functions tend0 and derivative ratio tends1; all explicitly supplied.",
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/Analysis/Calculus/LHopital.lean": "ed8512204556b448e9d0f5580ddff8faae3dee57",
+      "Mathlib/Analysis/Calculus/Deriv/Slope.lean": "6a258b1131e8405d3180328b403e87085cf811db",
+      "Mathlib/Analysis/SpecialFunctions/Trigonometric/Deriv.lean": "42ad385577a44c06e07a77e4d835b9a384345f1a"
+    },
+    "role": "Analytic derivative rules, slope characterization and general punctured-neighborhood L Hopital theorem; not new local acceptance"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Full published-text/spoken-video claim audit and all source-bound checking",
+    "General infinite/extended and one-sided L Hopital variants are not locally rederived",
+    "Local x^2/x^2 zero-slope boundary is not falsely attributed as source example"
+  ],
+  "video_verified_complete": false
+}
