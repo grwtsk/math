@@ -1,0 +1,39 @@
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[source]
+repository = "grwtsk/math"
+lean_commit = "1a4ae9a63393ef25de6a8191841bfbf7dd46aae4"
+documentation_commit = "13e6575b2b1b27c2a86a9460ebb8b65e8c478572"
+predecessor_parallelogram_commit = "fac7fc087d01190225fcdcc36be1900471772bdd"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupResponseBoxNorm.lean"
+
+[scope]
+obstruction_id = "primitive-mobius-parallelogram-dispersion-v1"
+short_interval_higher_uniformity_role = "LITERATURE_METHOD_CONNECTION_ONLY"
+mobius_gowers_role = "LITERATURE_CONNECTION_ONLY"
+positive_gram_role = "LOCAL_GEOMETRY_NO_ARITHMETIC_SOURCE_COMPARISON"
+new_cancellation_claimed = false
+rh_claimed = false
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+external_theorem_acceptance = "NOT_CLAIMED"
+
+[open_obligations]
+actual_L2_response_realization = true
+actual_gram_equality = true
+scalar_mobius_uniformity_scope = true
+response_multiplier_control = true
+selected_divisor_signs_preserved = true
+gcd_collision_inventory_preserved = true
+rough_masks_preserved = true
+clipped_endpoints_preserved = true
+diagonal_paid = true
+complete_complement_coverage = true
+growing_coefficient_uniformity = true
+quantitative_saving_survives = true
+every_positive_rate_bound = true
