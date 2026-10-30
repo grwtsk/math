@@ -72,5 +72,68 @@ theorem existingHead_to_adaptive_bound
     norm_source_sub_finiteHead_le (testStage f) (testStage_ge_two f)
       (zeroHeightCutoff K) (zeroHeightCutoff_ge_two K) N
 
+/-- One pair of cutoffs controls the *actual* signed two-tail source for a
+fixed finite family, at every larger pair. The signed remainder itself is
+not claimed monotone: only its independent nonnegative majorants are used. -/
+theorem finite_family_two_tail_uniform
+    (F : Finset CanonicalSquareTentTest) (epsilon : ℝ)
+    (hepsilon : 0 < epsilon) :
+    ∃ K N : ℕ, ∀ k n : ℕ, K ≤ k → N ≤ n →
+      ∀ f ∈ F,
+        ‖(squareTentMangoldt (testStage f) : ℂ) -
+          finiteSquareTentHead (testStage f) (zeroHeightCutoff k) n‖ ≤ epsilon := by
+  classical
+  have htrivial (f : CanonicalSquareTentTest) :
+      ∃ N : ℕ, ∀ n : ℕ, N ≤ n →
+        squareTrivialBudget (testStage f) *
+          (1 / (testStage f : ℝ) ^ 4) ^ n ≤ epsilon / 2 := by
+    have hn : (2 : ℝ) ≤ testStage f := by
+      exact_mod_cast testStage_ge_two f
+    have hp : (0 : ℝ) < testStage f := by linarith
+    have hr0 : 0 ≤ 1 / (testStage f : ℝ) ^ 4 := by positivity
+    have hr1 : 1 / (testStage f : ℝ) ^ 4 < 1 := by
+      apply (div_lt_one (pow_pos hp 4)).2
+      nlinarith
+    have ht : Filter.Tendsto
+        (fun n : ℕ => squareTrivialBudget (testStage f) *
+          (1 / (testStage f : ℝ) ^ 4) ^ n)
+        Filter.atTop (nhds 0) := by
+      simpa using (tendsto_const_nhds
+        (x := squareTrivialBudget (testStage f))).mul
+          (tendsto_pow_atTop_nhds_zero_of_lt_one hr0 hr1)
+    have he : ∀ᶠ n : ℕ in Filter.atTop,
+        squareTrivialBudget (testStage f) *
+          (1 / (testStage f : ℝ) ^ 4) ^ n ≤ epsilon / 2 :=
+      ht.eventually (eventually_le_nhds (le_of_lt (half_pos hepsilon)))
+    exact Filter.eventually_atTop.1 he
+  have hfamily :
+      ∃ N : ℕ, ∀ n : ℕ, N ≤ n → ∀ f ∈ F,
+        squareTrivialBudget (testStage f) *
+          (1 / (testStage f : ℝ) ^ 4) ^ n ≤ epsilon / 2 := by
+    induction F using Finset.induction_on with
+    | empty =>
+        refine ⟨0, ?_⟩
+        intro n hn f hf
+        simp at hf
+    | @insert a s ha ih =>
+        obtain ⟨N₀, h₀⟩ := ih
+        obtain ⟨N₁, h₁⟩ := htrivial a
+        refine ⟨max N₀ N₁, ?_⟩
+        intro n hn f hf
+        rcases Finset.mem_insert.mp hf with rfl | hf'
+        · exact h₁ n ((le_max_right _ _).trans hn)
+        · exact h₀ n ((le_max_left _ _).trans hn) f hf'
+  obtain ⟨K, hK⟩ :=
+    GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentFiniteUniformTail.finite_test_tail_uniform
+      F (epsilon / 2) (half_pos hepsilon)
+  obtain ⟨N, hN⟩ := hfamily
+  refine ⟨K, N, ?_⟩
+  intro k n hk hn f hf
+  have hb := existingHead_to_adaptive_bound f k n
+  have h₁ := hK k hk f hf
+  have h₂ := hN n hn f hf
+  linarith
+
+
 end
 end GRWTSK.NumberTheory.Zeta.Riemann.AdaptiveCanonicalTentTransport
