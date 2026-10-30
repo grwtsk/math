@@ -1960,6 +1960,83 @@ theorem ofApproximateGram_torsionMass_le
     (A.error_le (f + Complex.I • g)))
     (A.error_le (f - Complex.I • g))
 
+
+/-! ### Composed residue transport and holonomy candidate -/
+
+def TorsionStep.comp (T₂ T₁ : TorsionStep) : TorsionStep where
+  actPlus := fun x => T₂.actPlus (T₁.actPlus x)
+  actMinus := fun x => T₂.actMinus (T₁.actMinus x)
+  actPlusI := fun x => T₂.actPlusI (T₁.actPlusI x)
+  actMinusI := fun x => T₂.actMinusI (T₁.actMinusI x)
+  boundPlus := T₂.boundPlus * T₁.boundPlus
+  boundMinus := T₂.boundMinus * T₁.boundMinus
+  boundPlusI := T₂.boundPlusI * T₁.boundPlusI
+  boundMinusI := T₂.boundMinusI * T₁.boundMinusI
+  boundPlus_nonnegative := mul_nonneg T₂.boundPlus_nonnegative T₁.boundPlus_nonnegative
+  boundMinus_nonnegative := mul_nonneg T₂.boundMinus_nonnegative T₁.boundMinus_nonnegative
+  boundPlusI_nonnegative := mul_nonneg T₂.boundPlusI_nonnegative T₁.boundPlusI_nonnegative
+  boundMinusI_nonnegative := mul_nonneg T₂.boundMinusI_nonnegative T₁.boundMinusI_nonnegative
+  actPlus_le := by
+    intro x
+    calc
+      |T₂.actPlus (T₁.actPlus x)| ≤ T₂.boundPlus * |T₁.actPlus x| := T₂.actPlus_le _
+      _ ≤ T₂.boundPlus * (T₁.boundPlus * |x|) :=
+        mul_le_mul_of_nonneg_left (T₁.actPlus_le x) T₂.boundPlus_nonnegative
+      _ = (T₂.boundPlus * T₁.boundPlus) * |x| := by ring
+  actMinus_le := by
+    intro x
+    calc
+      |T₂.actMinus (T₁.actMinus x)| ≤ T₂.boundMinus * |T₁.actMinus x| := T₂.actMinus_le _
+      _ ≤ T₂.boundMinus * (T₁.boundMinus * |x|) :=
+        mul_le_mul_of_nonneg_left (T₁.actMinus_le x) T₂.boundMinus_nonnegative
+      _ = (T₂.boundMinus * T₁.boundMinus) * |x| := by ring
+  actPlusI_le := by
+    intro x
+    calc
+      |T₂.actPlusI (T₁.actPlusI x)| ≤ T₂.boundPlusI * |T₁.actPlusI x| := T₂.actPlusI_le _
+      _ ≤ T₂.boundPlusI * (T₁.boundPlusI * |x|) :=
+        mul_le_mul_of_nonneg_left (T₁.actPlusI_le x) T₂.boundPlusI_nonnegative
+      _ = (T₂.boundPlusI * T₁.boundPlusI) * |x| := by ring
+  actMinusI_le := by
+    intro x
+    calc
+      |T₂.actMinusI (T₁.actMinusI x)| ≤ T₂.boundMinusI * |T₁.actMinusI x| := T₂.actMinusI_le _
+      _ ≤ T₂.boundMinusI * (T₁.boundMinusI * |x|) :=
+        mul_le_mul_of_nonneg_left (T₁.actMinusI_le x) T₂.boundMinusI_nonnegative
+      _ = (T₂.boundMinusI * T₁.boundMinusI) * |x| := by ring
+
+@[simp] theorem TorsionStep.comp_apply (T₂ T₁ : TorsionStep)
+    (r : PolarizationResidueChannels) :
+    (T₂.comp T₁).apply r = T₂.apply (T₁.apply r) := rfl
+
+def transportPath : List TorsionStep → PolarizationResidueChannels →
+    PolarizationResidueChannels
+  | [], r => r
+  | T :: Ts, r => transportPath Ts (T.apply r)
+
+def ClosedPathReturn (Ts : List TorsionStep) : Prop :=
+  ∀ r, transportPath Ts r = r
+
+theorem recombine_transportPath_eq_of_closed
+    {Ts : List TorsionStep} (hclosed : ClosedPathReturn Ts)
+    (r : PolarizationResidueChannels) :
+    (transportPath Ts r).recombine = r.recombine := by
+  rw [hclosed r]
+
+structure IsometricTorsionStep (T : TorsionStep) : Prop where
+  plus : ∀ x, |T.actPlus x| = |x|
+  minus : ∀ x, |T.actMinus x| = |x|
+  plusI : ∀ x, |T.actPlusI x| = |x|
+  minusI : ∀ x, |T.actMinusI x| = |x|
+
+theorem torsionMass_apply_eq_of_isometric
+    (T : TorsionStep) (hT : IsometricTorsionStep T)
+    (r : PolarizationResidueChannels) :
+    (T.apply r).torsionMass = r.torsionMass := by
+  unfold torsionMass TorsionStep.apply
+  dsimp
+  rw [hT.plus, hT.minus, hT.plusI, hT.minusI]
+
 end PolarizationResidueChannels
 
 end ContinuousDyadicObservation
