@@ -2037,6 +2037,99 @@ theorem torsionMass_apply_eq_of_isometric
   dsimp
   rw [hT.plus, hT.minus, hT.plusI, hT.minusI]
 
+
+/-!
+### Complex Gram fiber behind the four probes
+
+The four real polarization probes are measurements, not declared fundamental
+fiber coordinates.  The exact pair-data forced by polarization consists of
+two real diagonal coordinates and one complex cross coordinate.  This layer
+records that smaller Hermitian Gram fiber and reconstructs all four probes.
+No claim of minimal dimension is made here.
+-/
+
+/-- Hermitian Gram data for an ordered pair: two real diagonal values and one
+complex cross term. -/
+structure PairGramFiber where
+  leftDiagonal : ℝ
+  rightDiagonal : ℝ
+  cross : ℂ
+
+namespace PairGramFiber
+
+/-- The four real Weil probes induced by the pair Gram fiber. -/
+def probes (G : PairGramFiber) : PolarizationResidueChannels where
+  plus := G.leftDiagonal + G.rightDiagonal + 2 * G.cross.re
+  minus := G.leftDiagonal + G.rightDiagonal - 2 * G.cross.re
+  plusI := G.leftDiagonal + G.rightDiagonal - 2 * G.cross.im
+  minusI := G.leftDiagonal + G.rightDiagonal + 2 * G.cross.im
+
+/-- Polarization of the induced four probes recovers the complex cross
+coordinate exactly. -/
+theorem recombine_probes (G : PairGramFiber) :
+    (G.probes).recombine = G.cross := by
+  unfold probes PolarizationResidueChannels.recombine WeilPolarization.combine
+  apply Complex.ext <;> simp <;> ring
+
+/-- The sum of the + and - probes recovers the total diagonal mass. -/
+theorem plus_add_minus (G : PairGramFiber) :
+    G.probes.plus + G.probes.minus =
+      2 * (G.leftDiagonal + G.rightDiagonal) := by
+  unfold probes
+  ring
+
+/-- The real part of the cross coordinate is the signed + / - contrast. -/
+theorem cross_re_from_probes (G : PairGramFiber) :
+    G.cross.re = (G.probes.plus - G.probes.minus) / 4 := by
+  unfold probes
+  ring
+
+/-- The imaginary part of the cross coordinate is the signed -i / +i
+contrast, with the convention inherited from WeilPolarization. -/
+theorem cross_im_from_probes (G : PairGramFiber) :
+    G.cross.im = (G.probes.minusI - G.probes.plusI) / 4 := by
+  unfold probes
+  ring
+
+/-- Actual Hilbert pair-data gives a concrete Gram fiber. -/
+def ofVectors (f g : V) : PairGramFiber where
+  leftDiagonal := ‖f‖ ^ 2
+  rightDiagonal := ‖g‖ ^ 2
+  cross := @inner ℂ V _ _ f g
+
+/-- A fiber transport acts on the smaller Gram data.  The four measurement
+channels are derived after transport rather than transported independently. -/
+structure Transport where
+  toFun : PairGramFiber → PairGramFiber
+
+def Transport.inducedProbes (T : Transport) (G : PairGramFiber) :
+    PolarizationResidueChannels :=
+  (T.toFun G).probes
+
+/-- Fiber transport automatically commutes with the final polarized consumer:
+the consumer sees exactly the transported cross coordinate. -/
+theorem Transport.recombine_inducedProbes
+    (T : Transport) (G : PairGramFiber) :
+    (T.inducedProbes G).recombine = (T.toFun G).cross :=
+  recombine_probes (T.toFun G)
+
+/-- A Gram-isometric transport preserves both diagonal coordinates and the
+complex cross coordinate.  This is the exact structure currently forced by
+the observations; it is not yet a unitary-group identification. -/
+structure IsGramIsometry (T : Transport) : Prop where
+  leftDiagonal : ∀ G, (T.toFun G).leftDiagonal = G.leftDiagonal
+  rightDiagonal : ∀ G, (T.toFun G).rightDiagonal = G.rightDiagonal
+  cross : ∀ G, (T.toFun G).cross = G.cross
+
+theorem probes_eq_of_gram_isometry
+    (T : Transport) (hT : IsGramIsometry T) (G : PairGramFiber) :
+    T.inducedProbes G = G.probes := by
+  apply PolarizationResidueChannels.ext <;>
+    simp [Transport.inducedProbes, probes, hT.leftDiagonal, hT.rightDiagonal,
+      hT.cross]
+
+end PairGramFiber
+
 end PolarizationResidueChannels
 
 end ContinuousDyadicObservation
