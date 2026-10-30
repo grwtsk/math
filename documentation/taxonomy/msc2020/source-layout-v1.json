@@ -1426883,6 +1426883,25 @@
       "target_sha256": "5deab3915dfb4a61f4a54e2f40fd5aa170d0e67bc91ed9eabbba8f8db2462fdb",
       "target_git_blob": "539eb573dd6aeb2bf3f826e7e4137ce9b2a22001",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ConvergenceAndDivergenceOfSeriesAndSequences/GoldenFractionIteration.lean",
+      "path": "GRWTSK/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ConvergenceAndDivergenceOfSeriesAndSequences/GoldenFractionIteration.lean",
+      "source_sha256": "7c88aea09f32385bf20a23618036fbb382de6ee1ebedbfc0836f511e3d166e30",
+      "input_blob": "4fee32ac0967561951e26af9176334e4deb4d49b",
+      "source_kind": "lean_source",
+      "msc_code": "40A05",
+      "msc_label": "Convergence and divergence of series and sequences",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual continued-fraction iterates,positive domain suppliers,two-step geometric error and all-iterate convergence",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "4fee32ac0967561951e26af9176334e4deb4d49b",
+      "target_sha256": "7c88aea09f32385bf20a23618036fbb382de6ee1ebedbfc0836f511e3d166e30",
+      "target_git_blob": "4fee32ac0967561951e26af9176334e4deb4d49b",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
