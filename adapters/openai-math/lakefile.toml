@@ -3,7 +3,7 @@ defaultTargets = ["GRWTSKOpenAIAdapters"]
 
 [[lean_lib]]
 name = "GRWTSKOpenAIAdapters"
-roots = ["OpenAITwoPointFiniteFamily", "OpenAISevenEighthsGap", "AxiomAudit"]
+roots = ["GRWTSK.NumberTheory.MultiplicativeNumberTheory.AsymptoticResultsOnArithmeticFunctions.LiouvilleTwoPointFiniteFamily", "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.SevenEighthsZeroFreeGap", "GRWTSK.ComputerScience.ComputerScienceSupportForMathematicalResearchAndPractice.TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc.AdapterAxiomQueries"]
 
 [[require]]
 name = "OAI"

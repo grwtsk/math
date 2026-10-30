@@ -27,7 +27,7 @@ Original dependency selection, elaboration and proof checking remain unreplayed.
 This candidate is outside the public umbrella. Lean and Lake have not been invoked.
 -/
 
-import GRWTSK.RealFunctions.Basic
+import GRWTSK.RealFunctions.AlgebraicEdgeCertificateForTheLiteralSourceMixedKernel
 
 /-!
 UNCOMPILED hostile fixtures for the independent polynomial certificate.

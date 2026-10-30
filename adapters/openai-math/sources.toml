@@ -19,7 +19,7 @@ forbidden_axioms = ["sorryAx"]
 independent_checker = "UNSUPPLIED_BY_APPROVED_ENVIRONMENT"
 
 [[sources]]
-path = "OpenAITwoPointFiniteFamily.lean"
+path = "GRWTSK/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/LiouvilleTwoPointFiniteFamily.lean"
 blob = "7c5ffa0ef9e25e290eeb3ead996217796fa50758"
 namespace = "GRWTSK.NumberTheory.Moebius.OpenAITwoPointFiniteFamily"
 declarations = ["liouville_finite_family_bound", "elliott_after_fixed_prime_change", "elliott_after_fixed_prime_divisor_change"]
@@ -28,7 +28,7 @@ upstream_blobs = ["2bd48811e73bbdc80c1f738fa889a14189186408", "31e9010dee390175f
 missing_bridges = ["No constants uniform in a growing affine family", "No Liouville-to-Moebius substitution", "No actual GRWTSK arithmetic residual estimate"]
 
 [[sources]]
-path = "OpenAISevenEighthsGap.lean"
+path = "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SevenEighthsZeroFreeGap.lean"
 blob = "6d480288f0ec6819097c0e93a0aec1b4d62a47b0"
 namespace = "GRWTSK.NumberTheory.DirichletL.OpenAISevenEighthsGap"
 declarations = ["zeta_zero_re_le", "dirichlet_zero_re_le", "explicit_real_zero_log_gap"]
