@@ -9,6 +9,7 @@ Original upstream author and license are retained here as provenance; the local
 GRWTSK bridge declarations are by grwtsk contributors.
 -/
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FiniteObservationGap
+import GRWTSK.AlgebraicTopology.SurfacePolygonPolarComplexPhase
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FiniteSpectralHeatGap
 import Mathlib.Analysis.Normed.Module.FiniteDimension
 import Mathlib.Topology.Order.IntermediateValue
@@ -987,7 +988,160 @@ theorem shell_tail_transverse (pairing : Ξ → U →+ K)
   ⟨shellPart_transverse pairing u R hu,
     tailPart_transverse pairing u R hu⟩
 
+
 end RadialShellSource
+
+
+/-!
+## Concrete three-dimensional Fourier transversality and genuine phase quotient
+
+This adapter instantiates the abstract radial-shell source with the literal
+three-dimensional Fourier frequency type and complex vector coefficients.
+The divergence pairing is the algebraic Fourier incompressibility expression
+sum_i ξ_i u_i.  For every nonzero frequency, exact radial reconstruction
+shows that vanishing against ξ is equivalent to vanishing against its unit
+direction.  Thus a divergence-free coefficient is carried into the transverse
+fiber over the actual spherical direction, without quotienting frequencies.
+
+Complex scalar phases are stored in the genuine Mathlib UnitAddCircle quotient
+using the repository's normalized complex argument.  The reconstruction lemma
+below is representative-independent: every real angle in the same quotient
+class produces the same nonzero complex coefficient after restoring amplitude.
+No continuous global argument, helical frame, Leray projector, nonlinear
+triad transport, PDE solution, or moment-operator identification is asserted.
+
+SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+section FourierSphericalAdapter
+
+open scoped BigOperators
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarAddCircleKernel
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarComplexPhase
+
+/-- Physical three-dimensional Fourier frequencies. -/
+abbrev FourierFrequency3 := EuclideanSpace ℝ (Fin 3)
+
+/-- A complex Fourier velocity coefficient with three physical components. -/
+abbrev FourierVelocity3 := Fin 3 → ℂ
+
+/-- The literal algebraic Fourier-divergence pairing at frequency ξ. -/
+def fourierDivergencePairing (ξ : FourierFrequency3) : FourierVelocity3 →+ ℂ where
+  toFun v := ∑ i : Fin 3, (ξ i : ℂ) * v i
+  map_zero' := by simp
+  map_add' := by
+    intro u v
+    simp [mul_add, Finset.sum_add_distrib]
+
+/-- Fourier-side incompressibility, stated without assuming that a supplied
+source is actually the Fourier transform of a fluid solution. -/
+def IsFourierDivergenceFree (u : FourierFrequency3 → FourierVelocity3) : Prop :=
+  ∀ ξ, fourierDivergencePairing ξ (u ξ) = 0
+
+/-- The concrete Fourier-divergence predicate is exactly the abstract
+transversality interface already preserved by the shell/tail split. -/
+theorem isFourierDivergenceFree_iff_isTransverse
+    (u : FourierFrequency3 → FourierVelocity3) :
+    IsFourierDivergenceFree u ↔
+      IsTransverse fourierDivergencePairing u := by
+  rfl
+
+/-- The divergence pairing scales exactly with radial reconstruction. -/
+theorem fourierDivergencePairing_radialDirection
+    {ξ : FourierFrequency3} (hξ : ξ ≠ 0) (v : FourierVelocity3) :
+    fourierDivergencePairing ξ v =
+      (‖ξ‖ : ℂ) *
+        fourierDivergencePairing (radialDirection ξ) v := by
+  rw [← radialDirection_reconstruct hξ]
+  simp [fourierDivergencePairing, Finset.mul_sum, mul_assoc]
+
+/-- At every nonzero frequency, the Fourier divergence constraint is
+equivalent to transversality against the corresponding unit sphere direction. -/
+theorem fourierDivergencePairing_zero_iff_radialDirection
+    {ξ : FourierFrequency3} (hξ : ξ ≠ 0) (v : FourierVelocity3) :
+    fourierDivergencePairing ξ v = 0 ↔
+      fourierDivergencePairing (radialDirection ξ) v = 0 := by
+  rw [fourierDivergencePairing_radialDirection hξ]
+  simp [norm_ne_zero_iff.mpr hξ]
+
+/-- A divergence-free Fourier source is pointwise tangent/transverse to the
+unit spherical direction at every nonzero frequency.  The coefficient remains
+the original source coefficient u ξ; only its frequency address is normalized. -/
+theorem fourierDivergenceFree_radial_fiber
+    {u : FourierFrequency3 → FourierVelocity3}
+    (hu : IsFourierDivergenceFree u)
+    {ξ : FourierFrequency3} (hξ : ξ ≠ 0) :
+    fourierDivergencePairing (radialDirection ξ) (u ξ) = 0 := by
+  exact (fourierDivergencePairing_zero_iff_radialDirection hξ (u ξ)).mp (hu ξ)
+
+/-- Exact shell restriction preserves the actual three-dimensional Fourier
+divergence constraint. -/
+theorem shellPart_fourierDivergenceFree
+    (u : FourierFrequency3 → FourierVelocity3) (R : ℝ)
+    (hu : IsFourierDivergenceFree u) :
+    IsFourierDivergenceFree (shellPart R u) := by
+  apply (isFourierDivergenceFree_iff_isTransverse (shellPart R u)).mpr
+  exact shellPart_transverse fourierDivergencePairing u R
+    ((isFourierDivergenceFree_iff_isTransverse u).mp hu)
+
+/-- The retained omitted tail preserves the same actual Fourier divergence
+constraint, so truncation does not manufacture a longitudinal source. -/
+theorem tailPart_fourierDivergenceFree
+    (u : FourierFrequency3 → FourierVelocity3) (R : ℝ)
+    (hu : IsFourierDivergenceFree u) :
+    IsFourierDivergenceFree (tailPart R u) := by
+  apply (isFourierDivergenceFree_iff_isTransverse (tailPart R u)).mpr
+  exact tailPart_transverse fourierDivergencePairing u R
+    ((isFourierDivergenceFree_iff_isTransverse u).mp hu)
+
+/-- Visible shell plus retained tail reconstruct the complete Fourier source,
+and both pieces remain divergence-free. -/
+theorem shell_tail_fourierDivergenceFree
+    (u : FourierFrequency3 → FourierVelocity3) (R : ℝ)
+    (hu : IsFourierDivergenceFree u) :
+    (fun ξ => shellPart R u ξ + tailPart R u ξ) = u ∧
+      IsFourierDivergenceFree (shellPart R u) ∧
+      IsFourierDivergenceFree (tailPart R u) := by
+  exact ⟨shell_add_tail_fun R u,
+    shellPart_fourierDivergenceFree u R hu,
+    tailPart_fourierDivergenceFree u R hu⟩
+
+/-- Genuine quotient-valued phase address for a complex Fourier scalar.
+At zero this address carries no reconstruction significance; consumers must
+retain the explicit nonzero premise when interpreting it as a phase. -/
+def fourierPhaseClass (z : ℂ) : UnitAddCircle :=
+  (normalizedComplexAngle z : UnitAddCircle)
+
+/-- Every real representative of the same genuine circle class reconstructs
+the same nonzero complex coefficient after restoring its exact amplitude.
+This avoids choosing a discontinuous global real-angle branch. -/
+theorem complex_reconstruct_of_phaseClass
+    {z : ℂ} (hz : z ≠ 0) {θ : ℝ}
+    (hθ : (θ : UnitAddCircle) = fourierPhaseClass z) :
+    z = (‖z‖ : ℂ) *
+      Complex.exp ((2 * Real.pi * θ : ℝ) * Complex.I) := by
+  have hphase :
+      Complex.exp ((2 * Real.pi * θ : ℝ) * Complex.I) =
+        Complex.exp
+          ((2 * Real.pi * normalizedComplexAngle z : ℝ) * Complex.I) := by
+    apply (polar_phase_eq_iff_unitAddCircle_eq θ (normalizedComplexAngle z)).mpr
+    simpa [fourierPhaseClass] using hθ
+  have hzpolar := complex_realAnglePolar_representation z hz
+  unfold GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardConeDisk.realAnglePolar at hzpolar
+  rw [hphase]
+  exact hzpolar
+
+/-- Each nonzero scalar component of a Fourier velocity coefficient therefore
+has a source-exact amplitude plus genuine quotient-phase reconstruction.
+This is component phase only; it is not yet a global helical polarization. -/
+theorem fourierVelocity_component_phase_reconstruction
+    (v : FourierVelocity3) {i : Fin 3} (hi : v i ≠ 0)
+    {θ : ℝ} (hθ : (θ : UnitAddCircle) = fourierPhaseClass (v i)) :
+    v i = (‖v i‖ : ℂ) *
+      Complex.exp ((2 * Real.pi * θ : ℝ) * Complex.I) :=
+  complex_reconstruct_of_phaseClass hi hθ
+
+end FourierSphericalAdapter
 
 
 end
