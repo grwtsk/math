@@ -1,0 +1,42 @@
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[source]
+repository = "grwtsk/math"
+lean_commit = "1de76221384aee7e398f0d38d086b60d2e8839ff"
+documentation_commit = "73096c66f841b1764f34a3ddd0231ea6e8e0814c"
+l2_response_commit = "17dfbe02a7cc84b164b5e2175c527b16f4c69cd0"
+mertens_abel_commit = "c34268392ebbda06e0a1f2840b8817c790b66af4"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupFourResponseEulerConnections.lean"
+
+[scope]
+obstruction_id = "response-weighted-gowers-transient-v1"
+euler_riesz_role = "FINITE_LOCAL_STATE_ALGEBRA_ONLY"
+mertens_abel_role = "DISTINCT_EXACT_SOURCE_OBSERVATION"
+higher_uniformity_role = "LITERATURE_METHOD_CONNECTION_ONLY"
+new_cancellation_claimed = false
+rh_claimed = false
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+external_theorem_acceptance = "NOT_CLAIMED"
+
+[open_obligations]
+actual_local_state_weight = true
+causal_cutoffs_retained = true
+collision_class_retained = true
+local_prime_factorization = true
+cross_prime_dependence_paid = true
+selected_divisor_signs_preserved = true
+product_cost_polylog_or_better = true
+mertens_abel_same_source_bridge = true
+gram_box_observation_recovered = true
+rough_selected_prime_mask_recovered = true
+comparison_cost_controlled = true
+mertens_decay_applicable = true
+complete_complement_coverage = true
+quantitative_saving_survives = true
+every_positive_rate_bound = true
