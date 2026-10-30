@@ -1426731,6 +1426731,25 @@
       "target_sha256": "2ea2acaac8f0d8bc18ce66f3eb30efd45f05c5ac7ca230236c04d39f9ad039f7",
       "target_git_blob": "9cd776c5db21be90fef87cd160c23a0b3ed02e8e",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/ApproximationsAndExpansions/SeriesExpansionsEGTaylorLidstoneSeriesButNotFourierSeries/TaylorCosineApproximation.lean",
+      "path": "GRWTSK/ApproximationsAndExpansions/SeriesExpansionsEGTaylorLidstoneSeriesButNotFourierSeries/TaylorCosineApproximation.lean",
+      "source_sha256": "a0a0b2f4f8bcaad0d0e849b6ffcdb2c2d73074318dd416b98eee792f0e24fd31",
+      "input_blob": "8aa330da5f3c57fdc8d3915dee7ff963e70afd4c",
+      "source_kind": "lean_source",
+      "msc_code": "41A58",
+      "msc_label": "Series expansions (e.g., Taylor, Lidstone series, but not Fourier series)",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual cosine Taylor coefficient uniqueness, finite derivative matching and quantitative source/shift/height residual consumers",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "8aa330da5f3c57fdc8d3915dee7ff963e70afd4c",
+      "target_sha256": "a0a0b2f4f8bcaad0d0e849b6ffcdb2c2d73074318dd416b98eee792f0e24fd31",
+      "target_git_blob": "8aa330da5f3c57fdc8d3915dee7ff963e70afd4c",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
