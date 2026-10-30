@@ -1726,6 +1726,111 @@ theorem finiteConvolutionLeft_add_right
       FourierNavierStokesTriad.finiteNavierStokesLerayConvolutionAt S ξ u := by
   exact left_add_right _ θ
 
+
+/-!
+### Positive quadratic majorant along the split
+
+The following bounds are deliberately observation-level.  They provide an
+exact positive Gram control for the straight split and an explicit allowance
+for an approximate diagonal observer.  They do not assert that interpolation
+has reduced the unresolved Navier--Stokes source error.
+-/
+
+variable [InnerProductSpace ℂ V]
+
+/-- The positive Gram observation associated with the ambient Hilbert norm. -/
+def gramObservation (x : V) : ℝ := ‖x‖ ^ 2
+
+/-- Exact norm scaling on the left branch. -/
+theorem norm_leftPart (x : V) (θ : SplitParameter) :
+    ‖leftPart x θ‖ = (1 - θ.1) * ‖x‖ := by
+  rw [leftPart, norm_smul, Complex.norm_real, abs_of_nonneg]
+  · rfl
+  · exact sub_nonneg.mpr θ.2.2
+
+/-- Exact norm scaling on the right branch. -/
+theorem norm_rightPart (x : V) (θ : SplitParameter) :
+    ‖rightPart x θ‖ = θ.1 * ‖x‖ := by
+  rw [rightPart, norm_smul, Complex.norm_real, abs_of_nonneg]
+  exact θ.2.1
+
+/-- The diagonal positive observations of the two branches have an exact
+quadratic profile along the rope parameter. -/
+theorem gram_split_profile (x : V) (θ : SplitParameter) :
+    gramObservation (leftPart x θ) + gramObservation (rightPart x θ) =
+      ((1 - θ.1) ^ 2 + θ.1 ^ 2) * gramObservation x := by
+  simp only [gramObservation, norm_leftPart, norm_rightPart]
+  ring
+
+/-- The complete positive diagonal mass of the two branches never exceeds the
+original positive Gram observation. -/
+theorem gram_split_le (x : V) (θ : SplitParameter) :
+    gramObservation (leftPart x θ) + gramObservation (rightPart x θ) ≤
+      gramObservation x := by
+  rw [gram_split_profile]
+  have hx : 0 ≤ gramObservation x := sq_nonneg _
+  have hθ0 : 0 ≤ θ.1 := θ.2.1
+  have hθ1 : θ.1 ≤ 1 := θ.2.2
+  have hcoef : (1 - θ.1) ^ 2 + θ.1 ^ 2 ≤ 1 := by
+    nlinarith [mul_nonneg hθ0 (sub_nonneg.mpr hθ1)]
+  nlinarith
+
+/-- An approximate positive diagonal observer carries an explicit absolute
+allowance.  This is the scalar socket for RS/endpoint interpolation error:
+the allowance is retained rather than identified with source cancellation. -/
+structure ApproximateGramObserver (V : Type*) [NormedAddCommGroup V] where
+  observe : V → ℝ
+  allowance : V → ℝ
+  allowance_nonnegative : ∀ x, 0 ≤ allowance x
+  error_le : ∀ x, |observe x - ‖x‖ ^ 2| ≤ allowance x
+
+namespace ApproximateGramObserver
+
+/-- The two observed branch energies are controlled by the original positive
+Gram observation plus the two explicit interpolation/observation allowances. -/
+theorem split_upper
+    (A : ApproximateGramObserver V)
+    (x : V) (θ : SplitParameter) :
+    A.observe (leftPart x θ) + A.observe (rightPart x θ) ≤
+      gramObservation x +
+        A.allowance (leftPart x θ) + A.allowance (rightPart x θ) := by
+  have hL := A.error_le (leftPart x θ)
+  have hR := A.error_le (rightPart x θ)
+  have hL' :
+      A.observe (leftPart x θ) ≤
+        gramObservation (leftPart x θ) + A.allowance (leftPart x θ) := by
+    dsimp [gramObservation]
+    linarith [le_abs_self (A.observe (leftPart x θ) -
+      ‖leftPart x θ‖ ^ 2)]
+  have hR' :
+      A.observe (rightPart x θ) ≤
+        gramObservation (rightPart x θ) + A.allowance (rightPart x θ) := by
+    dsimp [gramObservation]
+    linarith [le_abs_self (A.observe (rightPart x θ) -
+      ‖rightPart x θ‖ ^ 2)]
+  have hGram := gram_split_le x θ
+  linarith
+
+end ApproximateGramObserver
+
+/-- Nonexpansive involution relaxation cannot increase the positive Gram
+observation.  This connects the continuous observation path to the existing
+proof-bearing relaxation interface without asserting that relaxation changes
+or improves the underlying Fourier source. -/
+theorem gram_involutionRelaxation_le
+    (parameter : DAF.Geometry.RelaxationParameter)
+    (C : V →ₗ[ℝ] V)
+    (isometry : ∀ x, ‖C x‖ = ‖x‖)
+    (x : V) :
+    gramObservation
+      (DAF.Geometry.involutionRelaxation parameter.value C x) ≤
+      gramObservation x := by
+  have hnorm :=
+    DAF.Geometry.norm_involutionRelaxation_le parameter C isometry x
+  dsimp [gramObservation]
+  nlinarith [norm_nonneg x,
+    norm_nonneg (DAF.Geometry.involutionRelaxation parameter.value C x)]
+
 end ContinuousDyadicObservation
 
 
