@@ -13,7 +13,9 @@ Let \(\mu\) be the original Möbius coefficients and
 M_k=\sum_{n=1}^k\mu(n),\qquad w_k=k^{-1/2},\qquad
 Q_N=\sum_{n=1}^N \mu(n)w_n-M_Nw_N.
 \]
-The existing source \`sampleResidue N\` is exactly \(Q_N\), including its endpoint subtraction. The source's proved increment is
+The existing source \`sampleResidue N\` is exactly \(Q_N\), including its endpoint subtraction. The current Lean source also defines the exact nonnegative `mertensSquareBudget`, `mertensAbelWidthBudget`, and the finite Cauchy bound `sampleResidue_abel_cauchy`. These are source candidates at blob `279a189f0665afc480397eeeb3de3b6c1bba9355` (commit `a4954be38e76dab43c83fac75a6f10cc698a3915`), not fresh kernel evidence.
+
+The source's proved increment is
 \[
 Q_{k+1}-Q_k=M_k(w_k-w_{k+1}),\quad Q_1=0.
 \]
@@ -105,4 +107,4 @@ The square budget (C) is a more averaged object than the familiar pointwise hypo
 
 Prove (C) for the actual Mertens sequence by a new source-derived arithmetic argument, or bypass the nonnegative Cauchy–Schwarz budget to prove direct signed cancellation of (A) sufficient to make \(Q_N=N^{o(1)}\), with the exact birth correction and source energy retained. A candidate route could involve genuinely controlled averaged Möbius correlations, but no such bound is asserted here.
 
-The finite Abel identity is a Lean **SOURCE_PROOF_CANDIDATE**; (B)–(D) are analytical derivations in this review, **not newly compiled Lean declarations**. Compilation, fresh kernel replay and transitive axiom audit of the relevant source chain remain NOT_RUN. The conditionality and actual-source scope must survive any later formalization.
+The finite Abel identity and its **unweakened two-budget Cauchy–Schwarz estimate** are Lean **SOURCE_PROOF_CANDIDATES**. The subsequent harmonic-width bound, the subpolynomial budget hypothesis (C), and the energy/RH transfer are analytical derivations here; the harmonic bound and conditional return have not been added as new compiled Lean declarations. The predicate `MertensSquareSubpolynomial` is a named open source-specific arithmetic target, not a proof of its own satisfaction. Compilation, fresh kernel replay and transitive axiom audit of the relevant source chain remain NOT_RUN. The conditionality and actual-source scope must survive any later formalization.
