@@ -1,0 +1,43 @@
+{
+  "primary_url": "https://www.3blue1brown.com/lessons/epsilon-delta/",
+  "title": "(epsilon, delta) definitions of limits",
+  "date": "2017-05-04",
+  "byline": "Grant Sanderson",
+  "text_adaptation": "Kurt Bruns",
+  "html_sha256": "7eacbe5b30af809d7bf4edd8271c6b4404b7f2095cbd98b4751a6be5e525ef96",
+  "source": "GRWTSK/RealFunctions/FunctionsOfOneVariable/FoundationsLimitsAndGeneralizationsElementaryTopologyOfTheLine/EpsilonDeltaExamples.lean",
+  "blob": "7bfa6c5ef86fc9e678e14db382a93f5e14c76678",
+  "namespace": "GRWTSK.RealAnalysis.EpsilonDeltaExamples",
+  "theorems": [
+    "zero_limit_iff_control",
+    "cubic_secant",
+    "cubic_error_bound",
+    "cubic_control",
+    "cubic_limit",
+    "cube_derivative_at_two",
+    "thousandth_radius_boundary",
+    "jump_positive",
+    "jump_negative",
+    "jump_no_control",
+    "jump_no_limit"
+  ],
+  "scope": "Exact cubic difference quotient at x2, epsilon radius min(1,epsilon/7), derivative/limit12; rational strict-radius boundary; concrete jump with heights2/1 and no arbitrary limit.",
+  "hypotheses": "h!=0 for quotient cancellation; abs(h)<1 for error bound; eps>0 before choice of delta; h0 value of jump is local choice, not used for punctured result.",
+  "source_boundary": "No claim about which interactive quiz answer the site marks correct. Strict rational witness is local mathematical boundary evidence supplied by proof body, not external simulation.",
+  "inherited_candidate": {
+    "commit": "04bb6b289d6eb6dbaa640781854468b3373fda8e",
+    "module_blob": "e255d0cc06b6128fb2f75aab8385d2d45d5c9965",
+    "role": "Unverified finite-nudge definition/derivative and metric control supplier"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Source exercises: reciprocal-plus-linear divergence and rational removable singularity near1",
+    "Complete spoken-video mapping and all source-bound checking"
+  ],
+  "video_verified_complete": false
+}
