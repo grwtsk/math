@@ -10,6 +10,8 @@
 
 [Browse every source module and declaration](complete-source-index.md) · [Authored subject guides](../taxonomy/subjects/index.md) · [Naming and source provenance](../taxonomy/msc2020/README.md).
 
+[Provider packages and source links](../adapters/README.md) retain isolated native dependencies; their Lean files link to the canonical `GRWTSK/` subject tree.
+
 Source documentation now follows the official MSC2020 heading hierarchy. Readable mathematical filenames replace opaque Variant and declaration-hash names. Original source and declaration identities, literal source windows, hypotheses and verification evidence retain their exact scopes.
 
 The catalogue includes historical source editions explicitly. Document relocation does not establish fresh compilation, kernel replay, axiom closure, semantic crosswalk review or mathematical acceptance.

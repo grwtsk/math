@@ -137,7 +137,7 @@ lake build --wfail
 
 The public baseline is Lean 4.34.1 with Mathlib
 `d13f23b723b8a846827a245b89c10fc7d3f11612`. Provider-specific packages live
-under [`adapters/`](documentation/adapters/README.md), including the standalone
+under [`documentation/adapters/`](documentation/adapters/README.md), including the standalone
 [`openai-math`](documentation/adapters/openai-math/README.md) package. Build that package
 separately; its OAI imports are outside the public GRWTSK target.
 
