@@ -1,0 +1,108 @@
+# Static mathematical target specification, not a queue or execution receipt.
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+verification_issue = "https://github.com/grwtsk/math/issues/1492"
+obstruction_id = "RH-FAR-DIVISOR-CHANNEL-MISMATCH-03"
+mathematical_scope = "Typed exact partition of the complete mixed-channel divisor-mask source, noncoercive component suppliers, proof-role atlas, and channel-collapse hostile controls; no quantitative component estimate, endpoint bound, or RH."
+
+[source]
+repository = "grwtsk/math"
+commit = "fe17c4d29c15a76ce590bf06bcb43bc3362875c7"
+parent = "b09708f106b17d1fe2a1286d2538da1baeaec19e"
+tree = "54773212f1e6cb11591c73af5916e952566bfd34"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarMixedChannelConnections.lean"
+blob = "923dfba7bb871701c1894f45c63f49f863ac3786"
+sha256 = "b07dad618b8fba8ec8f32d203419ecb4c09bc529893d307416a1fccd649d9db6"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[toolchain]
+lean = "leanprover/lean4:v4.34.1"
+lean_toolchain_blob = "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5"
+mathlib = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+lake_manifest_blob = "c8044c56be77c58e6f41cca024b25237c59e8c79"
+
+[verification]
+compilation = "NOT_RUN"
+trust_zero_elaboration = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+native_dispatch = "NOT_DISPATCHED"
+acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarMixedChannelConnections"
+build = "lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarMixedChannelConnections"
+elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarMixedChannelConnections.lean"
+declaration_count_lexical = 26
+definitions = [
+  "gramMismatchAtom",
+  "indicatorMismatchAtom",
+  "atomicDenominatorAtom",
+  "gramMismatchSum",
+  "indicatorMismatchSum",
+  "atomicDenominatorSum",
+  "CompleteChannelSupplier.totalBudget",
+  "connectionComponent",
+  "connectionStatus",
+  "ProofBearing",
+  "connectionAtlas",
+]
+structures = [
+  "GramMismatchSupplier",
+  "IndicatorMismatchSupplier",
+  "AtomicDenominatorSupplier",
+  "CompleteChannelSupplier",
+]
+inductives = [
+  "ResidualComponent",
+  "ConnectionKind",
+  "ConnectionStatus",
+]
+theorems = [
+  "mixedChannelAtom_eq_components",
+  "transportedDivisorMask_eq_componentSums",
+  "CompleteChannelSupplier.totalBudget_nonnegative",
+  "transportedDivisorMask_le_of_completeChannelSupplier",
+  "proofBearing_iff_exactSourceDecomposition",
+  "mem_connectionAtlas",
+  "scalar_telescoping_does_not_collapse_channels",
+  "atomic_control_alone_does_not_bound_total",
+]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject = [
+  "sorryAx",
+  "new research axioms",
+  "external analogy promoted to proof edge",
+  "one residual sector omitted from a complete supplier",
+  "telescoped weights applied to different channels as though selectors and readouts matched",
+  "atomic inverse-omega control promoted to a complete source bound",
+  "freshness or cutoff hypotheses weakened",
+  "source signs, closed inventory, Gram entries, or omega denominator changed",
+  "unrestricted certificate or residual",
+  "unauthorized native trust",
+  "acceptance transferred from changed bytes",
+]
+
+[dependencies]
+direct = [
+  "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarMixedChannel",
+  "Mathlib.Tactic",
+]
+dependency_scope = "Complete transitive project and upstream closure at the pinned source commit, including generated, private, opaque, instance, coercion and tactic dependencies."
+
+[literature]
+register = "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md"
+entry = "RH mixed-channel connections: shifted convolution, Chowla/Elliott, Carleson, and formalized PFR"
+role = "ANALOGY_ONLY; no external theorem is imported and no historical influence is inferred."
+
+[unresolved]
+premises = [
+  "A quantitative one-sided estimate for gramMismatchSum.",
+  "A quantitative one-sided estimate for indicatorMismatchSum at the moved index.",
+  "A quantitative one-sided estimate for atomicDenominatorSum with the actual omega denominator.",
+  "Construction of CompleteChannelSupplier with useful uniform rate.",
+  "Recombination with all remaining far, near, main, diagonal and approximation sectors.",
+  "Source-exact return to a fixed adequately covering endpoint budget at every positive exponent.",
+  "Compilation, fresh kernel replay, transitive axiom audit and expected-interface verification.",
+]
