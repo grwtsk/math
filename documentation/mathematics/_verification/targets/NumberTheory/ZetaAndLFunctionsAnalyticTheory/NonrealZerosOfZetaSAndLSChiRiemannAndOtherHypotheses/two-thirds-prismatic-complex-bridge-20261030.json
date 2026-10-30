@@ -1,0 +1,63 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "id": "two-thirds-prismatic-complex-bridge-20261030",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "repository": "grwtsk/math",
+  "source_commit": "0c667c84236955ade6d9c93857a55198641d1aae",
+  "source_tree": "0c65a32697cd441ad46020bb8d85ff5b02b97049",
+  "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TwoThirdsPrismaticComplexBridge.lean",
+  "source_blob": "c270e3a868418d317652c357f430c3b2c111d08c",
+  "direct_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TwoThirdsPrismaticOrientationGate.lean",
+      "blob": "6e3d8e8683a7dd5a89e457c0c402051785c56c91"
+    },
+    {
+      "path": "Mathlib/LinearAlgebra/Quotient/Basic.lean",
+      "repository": "leanprover-community/mathlib4",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+    }
+  ],
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "roots": [
+    "GRWTSK.RiemannHypothesis.TwoThirdsPrismaticComplexBridge.DegreeZeroCochainMap.h0Map_injective_iff_boundaryReflection",
+    "GRWTSK.RiemannHypothesis.TwoThirdsPrismaticComplexBridge.offLineBasisClass_ne_zero",
+    "GRWTSK.RiemannHypothesis.TwoThirdsPrismaticComplexBridge.dyadicPrismaticGate_of_boundaryReflectingComplexComparison",
+    "GRWTSK.RiemannHypothesis.TwoThirdsPrismaticComplexBridge.all_on_line_in_dyadicHead_of_boundaryReflectingComplexComparison",
+    "GRWTSK.RiemannHypothesis.TwoThirdsPrismaticComplexBridge.dyadicOffLineMass_eq_zero_of_boundaryReflectingComplexComparison",
+    "GRWTSK.RiemannHypothesis.TwoThirdsPrismaticComplexBridge.twoThirds_budget_and_complex_vanishing",
+    "GRWTSK.RiemannHypothesis.TwoThirdsPrismaticComplexBridge.identity_degreeZero_cannot_extend_to_cochainMap"
+  ],
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TwoThirdsPrismaticComplexBridge.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/TwoThirdsPrismaticComplexBridge.lean"
+  ],
+  "hostile_controls": [
+    "a degree-zero identity map need not extend to a cochain map",
+    "boundary preservation alone does not imply boundary reflection",
+    "nonzero source classes require Nontrivial coefficients",
+    "the arbitrary target complex is not a genuine prismatic complex",
+    "the two-thirds residual budget does not imply exact off-line vanishing"
+  ],
+  "nonclaims": [
+    "no delta-ring or prism is constructed",
+    "no prismatic site or derived completion is constructed",
+    "no Frobenius-compatible comparison or quasi-isomorphism is proved",
+    "no target cohomology vanishing theorem is proved",
+    "no endpoint-arithmetic estimate or unconditional RH proof is claimed"
+  ],
+  "evidence": {
+    "static_source_readback": "PASS",
+    "forbidden_token_scan": "PASS",
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_type_check": "NOT_RUN",
+    "verification_issue": 1506
+  }
+}
