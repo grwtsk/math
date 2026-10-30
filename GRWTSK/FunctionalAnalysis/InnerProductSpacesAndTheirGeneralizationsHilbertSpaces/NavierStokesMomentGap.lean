@@ -1304,6 +1304,36 @@ theorem fourierDivergencePairing_smul
   simp [fourierDivergencePairing, Finset.mul_sum, mul_assoc, mul_left_comm,
     mul_comm]
 
+
+/-- Fourier divergence is additive in the real frequency address, with the
+complex-bilinear convention used by the actual convective triad kernel. -/
+theorem fourierDivergencePairing_add_frequency
+    (η ζ : FourierFrequency3) (a : FourierVelocity3) :
+    fourierDivergencePairing (η + ζ) a =
+      fourierDivergencePairing η a + fourierDivergencePairing ζ a := by
+  simp [fourierDivergencePairing, Finset.sum_add_distrib, add_mul]
+
+/-- The key source-exact incompressible transfer: the convective derivative
+factor at an input frequency equals the factor at the ADDITIVE OUTPUT
+frequency. Thus the low-output estimate need not pay the much larger input
+frequency, even for a high--high-to-low interaction. -/
+theorem fourierDivergencePairing_output_transfer
+    (η ζ : FourierFrequency3) (a : FourierVelocity3)
+    (hη : fourierDivergencePairing η a = 0) :
+    fourierDivergencePairing ζ a =
+      fourierDivergencePairing (η + ζ) a := by
+  rw [fourierDivergencePairing_add_frequency, hη, zero_add]
+
+/-- If the two input addresses sum to the zero output, incompressibility of
+the first coefficient makes the convective scalar exactly zero. No choice
+of a zero-frequency Leray convention can manufacture a nonzero source here. -/
+theorem fourierDivergencePairing_zero_output
+    (η ζ : FourierFrequency3) (a : FourierVelocity3)
+    (hη : fourierDivergencePairing η a = 0) (hzero : η + ζ = 0) :
+    fourierDivergencePairing ζ a = 0 := by
+  rw [fourierDivergencePairing_output_transfer η ζ a hη, hzero]
+  simp [fourierDivergencePairing]
+
 /-- Explicit Leray correction.  At zero output frequency we keep the
 coefficient unchanged; away from zero the longitudinal component is removed.
 The denominator is retained literally rather than hidden in an error term. -/
