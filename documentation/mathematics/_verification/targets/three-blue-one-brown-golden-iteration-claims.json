@@ -1,0 +1,59 @@
+{
+  "title": "The other way to visualize derivatives",
+  "byline": "Grant Sanderson",
+  "blog_adaptation": "Vivek Verma",
+  "date": "2018-05-19",
+  "primary_url": "https://www.3blue1brown.com/lessons/derivatives-and-transforms/",
+  "retained_html_sha256": "f4862e3024dc15149780bc03d13e18c97dd708a7bc82d283114aba4518f0da5b",
+  "source": "GRWTSK/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/ConvergenceAndDivergenceOfSeriesAndSequences/GoldenFractionIteration.lean",
+  "blob": "4fee32ac0967561951e26af9176334e4deb4d49b",
+  "namespace": "GRWTSK.Sequences.GoldenFractionIteration",
+  "theorems": [
+    "orbit_zero",
+    "orbit_succ",
+    "orbit_add",
+    "step_positive",
+    "orbit_positive",
+    "step_interval",
+    "orbit_interval",
+    "positive_entry",
+    "golden_fixed",
+    "conjugate_fixed",
+    "conjugate_orbit",
+    "two_step_formula",
+    "one_step_distance",
+    "two_step_distance",
+    "golden_interval",
+    "even_error",
+    "odd_error",
+    "every_iterate_error",
+    "interval_orbit_tendsto",
+    "positive_orbit_tendsto",
+    "continued_fraction_one"
+  ],
+  "scope": "Actual finite continued-fraction orbit for step1+1/x;positive domains,entry[1,2],one-step nonexpansion,two-step1/4 contraction,all-degree geometric error and positive-start convergence to actual golden ratio. Negative conjugate remains a constant orbit.",
+  "hypotheses": "Positive x for original convergence and nonzero denominators; x,y in[1,2] for comparison; every n natural includes0; all-iterate bound on[1,2] uses(1/4)^(n/2). No all-real-start or negative basin classification.",
+  "method": "Actual rational difference identities supply comparison,finite induction supplies geometric even/odd bound,natural half-index growth returns every iterate,actual positive orbit enters invariant interval and finite prefix removal returns original orbit.",
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/NumberTheory/Real/GoldenRatio.lean": "41db3ba203218dcfda3ffe99d8d3b170e9bc7a9c",
+      "Mathlib/Analysis/SpecificLimits/Basic.lean": "c633976a412c7d498b55d6188e811d005fd73da4",
+      "Mathlib/Order/Filter/AtTopBot/Basic.lean": "73cfaa73e701cda04d853936b34747ea3786f8b6"
+    },
+    "role": "Actual golden ratio algebra/interval facts,geometric power/natural cutoff limits and finite-prefix filter transport; imported mathematics not local acceptance"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Actual derivative magnitudes/local rescaled transformation interpretation",
+    "Negative initial values,poles/prepoles and basin classification",
+    "Remaining source exercises/claims and full spoken-video mapping",
+    "All source-bound verification"
+  ],
+  "video_verified_complete": false
+}
