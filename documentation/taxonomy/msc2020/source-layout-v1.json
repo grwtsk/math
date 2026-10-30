@@ -1426674,6 +1426674,25 @@
       "target_sha256": "dd467343d557685acb28130360401777e600cadf54ea39557c5b51f12d389559",
       "target_git_blob": "c4e9b878575547b816342697838a012e9ff11897",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/CarVelocityTaggedRectangles.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/CarVelocityTaggedRectangles.lean",
+      "source_sha256": "c45b5025c0fce1d558f6ef66a7a75ba698ace8628b2500b10e18ce06adb61420",
+      "input_blob": "4a3f5e167e213904adc05d9ec500e506e2e04a0c",
+      "source_kind": "lean_source",
+      "msc_code": "26A42",
+      "msc_label": "Integrals of Riemann, Stieltjes and Lebesgue type",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual arbitrary cell tags for uniform car-velocity rectangles, polynomial Lipschitz estimate, finite comparison and integral/area convergence",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "4a3f5e167e213904adc05d9ec500e506e2e04a0c",
+      "target_sha256": "c45b5025c0fce1d558f6ef66a7a75ba698ace8628b2500b10e18ce06adb61420",
+      "target_git_blob": "4a3f5e167e213904adc05d9ec500e506e2e04a0c",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
