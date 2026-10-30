@@ -10,6 +10,7 @@ birth-normalization identities are inherited from the exact source.
 SOURCE_PROOF_CANDIDATE: compilation, fresh kernel replay, axiom audit NOT_RUN.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.LogarithmicPickupSeries
+import Mathlib.Tactic.Linarith
 
 set_option autoImplicit false
 noncomputable section
@@ -57,5 +58,30 @@ theorem sampleResidue_upper_of_abel_sum_bound
     sampleResidue (N + 1) ≤ U := by
   rw [sampleResidue_abel]
   exact hbound
+
+
+/-- A concrete nonnegative squared-Mertens average. Unlike a freely supplied
+upper certificate, every term is fixed by the original Möbius prefixes. -/
+def mertensSquareBudget (N : ℕ) : ℝ :=
+  ∑ k ∈ Finset.range N,
+    (mertensPrefix ((k + 1 : ℕ) : ℝ)) ^ 2 / ((k + 1 : ℝ) ^ 2)
+
+/-- The square budget has a positive-term interpretation, without assuming
+any cancellation or power-saving estimate for its size. -/
+theorem mertensSquareBudget_nonnegative (N : ℕ) :
+    0 ≤ mertensSquareBudget N := by
+  unfold mertensSquareBudget
+  apply Finset.sum_nonneg
+  intro k hk
+  exact div_nonneg (sq_nonneg _) (sq_nonneg _)
+
+/-- The actual remaining all-positive-rate arithmetic target for this
+independent Mertens-square route. This is a PREDICATE, NOT A PROOF of it.
+The exponent and its constant are quantified in the correct order. -/
+def MertensSquareSubpolynomial : Prop :=
+  ∀ δ : ℝ, 0 < δ →
+    ∃ C : ℝ, 0 ≤ C ∧
+      ∀ N : ℕ, 1 ≤ N →
+        mertensSquareBudget N ≤ C * (N : ℝ) ^ δ
 
 end GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling
