@@ -18,9 +18,6 @@ namespace GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoherentResidual
 
 open scoped BigOperators
 
-private abbrev RealHeat :=
-  GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat
-
 /-- The complex three-coordinate observation fiber, with no preferred
 special-unitary group supplied. -/
 abbrev Phase3 := Fin 3 → ℂ
@@ -75,7 +72,7 @@ theorem residual_sum_zero (z : Phase3) :
 fixed, residual coordinates multiplied by the original real heat factor. -/
 def heat (t : ℝ) (z : Phase3) : Phase3 :=
   fun j => mean z +
-    ((RealHeat.decay t : ℝ) : ℂ) * (z j - mean z)
+    ((GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay t : ℝ) : ℂ) * (z j - mean z)
 
 theorem mean_heat (t : ℝ) (z : Phase3) :
     mean (heat t z) = mean z := by
@@ -84,7 +81,7 @@ theorem mean_heat (t : ℝ) (z : Phase3) :
 
 theorem residual_heat (t : ℝ) (z : Phase3) (j : Fin 3) :
     residual (heat t z) j =
-      ((RealHeat.decay t : ℝ) : ℂ) * residual z j := by
+      ((GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay t : ℝ) : ℂ) * residual z j := by
   simp [residual, heat, mean_heat]
   ring
 
@@ -94,22 +91,22 @@ theorem heat_coherent (t : ℝ) (z : Phase3) :
   simp [heat, coherent, mean_coherent]
 
 /-- The real three-phase source injects coordinatewise into the complex fiber. -/
-def ofReal (z : RealHeat.Triple) : Phase3 :=
+def ofReal (z : GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.Triple) : Phase3 :=
   fun j => (z j : ℂ)
 
-theorem mean_ofReal (z : RealHeat.Triple) :
-    mean (ofReal z) = (RealHeat.mean z : ℂ) := by
-  simp only [mean, ofReal, RealHeat.mean]
+theorem mean_ofReal (z : GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.Triple) :
+    mean (ofReal z) = (GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.mean z : ℂ) := by
+  simp only [mean, ofReal, GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.mean]
   push_cast
   ring
 
 /-- The complex heat definition is source-exact on real coefficient data. -/
-theorem heat_ofReal (t : ℝ) (z : RealHeat.Triple) :
-    heat t (ofReal z) = ofReal (RealHeat.flow t z) := by
+theorem heat_ofReal (t : ℝ) (z : GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.Triple) :
+    heat t (ofReal z) = ofReal (GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.flow t z) := by
   funext j
   change mean (ofReal z) +
-      (RealHeat.decay t : ℂ) * ((z j : ℂ) - mean (ofReal z)) =
-    ((RealHeat.mean z + RealHeat.decay t * (z j - RealHeat.mean z) : ℝ) : ℂ)
+      (GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay t : ℂ) * ((z j : ℂ) - mean (ofReal z)) =
+    ((GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.mean z + GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay t * (z j - GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.mean z) : ℝ) : ℂ)
   rw [mean_ofReal]
   push_cast
   ring
@@ -128,17 +125,17 @@ unitary action on the full fiber. -/
 theorem residualEnergy_heat (t : ℝ) (z : Phase3) :
     residualEnergy (heat t z) =
       Real.exp (-6 * t) * residualEnergy z := by
-  have hp : 0 < RealHeat.decay t := RealHeat.decay_pos t
-  have hfactor : ‖((RealHeat.decay t : ℝ) : ℂ)‖ = RealHeat.decay t := by
+  have hp : 0 < GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay t := GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay_pos t
+  have hfactor : ‖((GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay t : ℝ) : ℂ)‖ = GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay t := by
     simpa [Complex.norm_real, Real.norm_eq_abs, abs_of_pos hp]
   calc
     residualEnergy (heat t z) =
-        (RealHeat.decay t) ^ 2 * residualEnergy z := by
+        (GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay t) ^ 2 * residualEnergy z := by
       simp only [residualEnergy, Fin.sum_univ_three, residual_heat,
         norm_mul, hfactor]
       ring
     _ = Real.exp (-6 * t) * residualEnergy z := by
-      rw [RealHeat.decay_square]
+      rw [GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay_square]
 
 /-- The cyclic permutation gives a concrete nontrivial torsion/phase
 transport candidate.  No SU(3) or continuous rotation group is inferred. -/
