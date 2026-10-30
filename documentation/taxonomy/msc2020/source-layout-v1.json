@@ -1426864,6 +1426864,25 @@
       "target_sha256": "69e759626f16b766a53d6094b6acc8722f2fc088bae7501a3b44d0a7850568c9",
       "target_git_blob": "2f7b732732a2a6d6c97360a37ce058ea3f9830be",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/TaylorIntegralRemainder.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/TaylorIntegralRemainder.lean",
+      "source_sha256": "5deab3915dfb4a61f4a54e2f40fd5aa170d0e67bc91ed9eabbba8f8db2462fdb",
+      "input_blob": "539eb573dd6aeb2bf3f826e7e4137ce9b2a22001",
+      "source_kind": "lean_source",
+      "msc_code": "26A42",
+      "msc_label": "Integrals of Riemann, Stieltjes and Lebesgue type",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual derivative-to-oriented-integral quadratic remainder and normalized punctured limit",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "539eb573dd6aeb2bf3f826e7e4137ce9b2a22001",
+      "target_sha256": "5deab3915dfb4a61f4a54e2f40fd5aa170d0e67bc91ed9eabbba8f8db2462fdb",
+      "target_git_blob": "539eb573dd6aeb2bf3f826e7e4137ce9b2a22001",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
