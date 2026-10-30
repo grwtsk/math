@@ -364,7 +364,20 @@
         "complete_transitive_axiom_audit": "NOT_RUN",
         "expected_interface": "NOT_RUN"
       },
-      "independent_checker": "UNSUPPLIED"
+      "independent_checker": "UNSUPPLIED",
+      "source_supply": {
+        "classification": "STATIC_MATHEMATICAL_VERIFICATION_INPUT_SPECIFICATION",
+        "expected_pnt_inputs": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-inputs-20261030.json",
+        "expected_pnt_inputs_sha256": "77623fa638b266fbd9e607ed307d9a68cc4b2876b3154d0ea984241b3ea4901b",
+        "remaining_closure_obligations": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-source-supply-closure-20261030.json",
+        "remaining_closure_obligations_sha256": "e03bd64f6491f7f8e9e9c8a81375c8b32d6400f5e587d996dd56f19c359ec3b4",
+        "status": "SUPPORTED_DERIVED_SOURCE_AND_ASSET_SUPPLIERS_UNSUPPLIED; native facets NOT_RUN; original historical failed-profile outcome preserved",
+        "remaining": [
+          "Three exact StrongPNT modules, its reviewed base/patch outputs and untraversed descendants.",
+          "Six exact Mathlib Penrose include_str assets outside the inspected ProofWidgets-only supplier."
+        ],
+        "native_scope_boundary": "Original weighted-model-growth four and Anthropic Fermat six remain separate active obligations; no root dependency or import promotion."
+      }
     },
     {
       "provider": "anthropic-math",

@@ -1,0 +1,159 @@
+{
+  "schema": "grwtsk.upstream-source-interface-change-obligation/1",
+  "local_attribution": "grwtsk contributors",
+  "classification": "UPSTREAM_SOURCE_CORRECTION_NOT_MATHEMATICAL_ACCEPTANCE",
+  "repository": "openai/math",
+  "historical_adapter_pin": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "observed_upstream_pin": "4eaee87548250b2682affda7d05d947c05554bae",
+  "source_report": {
+    "title": "The rational Hodge conjecture for CM abelian varieties",
+    "author": "OpenAI",
+    "version": "October29,2026 source-history correction",
+    "path": "history.md",
+    "blob": "ce3d4ca01564fe0e796c441d1caa6489d661117b",
+    "stable_url": "https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/history.md",
+    "report": "The source history reports a correction to diverging namespaces in the Comparator challenge and solution; this is not independent proof acceptance."
+  },
+  "exact_file_identities": [
+    {
+      "path": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Challenge.lean",
+      "ref": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "sha": "8e99b5004f788c5522ffaa972bdfd46d930135d8",
+      "bytes": 1462,
+      "sha256": "7a684f9f710a9ef98f8d1a8cec57627754d80432b0eaa11910cf860ae46e987a"
+    },
+    {
+      "path": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Challenge.lean",
+      "ref": "4eaee87548250b2682affda7d05d947c05554bae",
+      "sha": "8c1726268436ce5e19513234a5b2750085db9777",
+      "bytes": 1706,
+      "sha256": "a87d6824d2f1adddbcc744764f6a3450801aa4888dd5596bf2993439db4581cc"
+    },
+    {
+      "path": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Solution.lean",
+      "ref": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "sha": "e9855a415328438d063f5f3f132473bf919595e3",
+      "bytes": 859,
+      "sha256": "580713ee09ed00e97924d1895ec67a59b296d2fc6b5e7e70028a1924d962853d"
+    },
+    {
+      "path": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Solution.lean",
+      "ref": "4eaee87548250b2682affda7d05d947c05554bae",
+      "sha": "e9855a415328438d063f5f3f132473bf919595e3",
+      "bytes": 859,
+      "sha256": "580713ee09ed00e97924d1895ec67a59b296d2fc6b5e7e70028a1924d962853d"
+    },
+    {
+      "path": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/main.json",
+      "ref": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "sha": "7a3ee084f1de09a45618654cd1c11f2f0c8d878a",
+      "bytes": 400,
+      "sha256": "36a10aeb92c8897341660f2dcecca5bf6d91d2ac2928caeafb312a2516079b2b"
+    },
+    {
+      "path": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/main.json",
+      "ref": "4eaee87548250b2682affda7d05d947c05554bae",
+      "sha": "7a3ee084f1de09a45618654cd1c11f2f0c8d878a",
+      "bytes": 400,
+      "sha256": "36a10aeb92c8897341660f2dcecca5bf6d91d2ac2928caeafb312a2516079b2b"
+    },
+    {
+      "path": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/CM.lean",
+      "ref": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "sha": "13e75059c5d0eb42fa504ecaee4fe02647710a4e",
+      "bytes": 2308,
+      "sha256": "e8af89a7b33dabe94237c02ce61e0a83773351dd8c92934cb821bfe50e09efff"
+    },
+    {
+      "path": "lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/CM.lean",
+      "ref": "4eaee87548250b2682affda7d05d947c05554bae",
+      "sha": "431efba8c14d2372cfd4592dd4423b7d61a74f65",
+      "bytes": 2680,
+      "sha256": "072e1377a49eeb36d75bf941de35a575e7984d6331b5048a23dbd22cc02c7964"
+    },
+    {
+      "path": "lean/OAI/AlgebraicGeometry/ComplexMultiplication/Definitions.lean",
+      "ref": "4eaee87548250b2682affda7d05d947c05554bae",
+      "sha": "6d1a6497608f7ff96e78b4b77a354425d2b2187d",
+      "partial_content": false,
+      "bytes": 2596,
+      "sha256": "492040c5a634c1359ecdfa54dfcca2db5bc5046712a2ebdbb487de52deb760a5"
+    },
+    {
+      "path": "lean/lakefile.lean",
+      "ref": "4eaee87548250b2682affda7d05d947c05554bae",
+      "sha": "cd24ca2ee09fb6fe33e82400534d9e60a616125b",
+      "partial_content": false,
+      "bytes": 16876,
+      "sha256": "fc590a5d14923f79e71ea80e29efd42950bb3ec051481b5209157f0a01f63de1"
+    },
+    {
+      "path": "lean/lake-manifest.json",
+      "ref": "4eaee87548250b2682affda7d05d947c05554bae",
+      "sha": "67d01d2717d0aaff59fb8814bb53581b961f42b4",
+      "partial_content": false,
+      "bytes": 14622,
+      "sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794"
+    },
+    {
+      "path": "lean/patches/PrimeNumberTheoremAnd-lean4341.patch",
+      "ref": "4eaee87548250b2682affda7d05d947c05554bae",
+      "sha": "924c5f6ec6fe88ba7788b420af4e3c3c7ac00abc",
+      "partial_content": true,
+      "byte_content_not_fetched": true
+    },
+    {
+      "path": "history.md",
+      "ref": "4eaee87548250b2682affda7d05d947c05554bae",
+      "sha": "ce3d4ca01564fe0e796c441d1caa6489d661117b",
+      "bytes": 4070,
+      "sha256": "f065ee13679f380356359eb09242b93187efe1a864e92780ed5a8b5b23ed4484"
+    },
+    {
+      "path": "lean/OAI/AlgebraicGeometry/ComplexMultiplication/Definitions.lean",
+      "ref": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "sha": "6d1a6497608f7ff96e78b4b77a354425d2b2187d",
+      "bytes": 2596,
+      "sha256": "492040c5a634c1359ecdfa54dfcca2db5bc5046712a2ebdbb487de52deb760a5"
+    }
+  ],
+  "bounded_source_observations": [
+    "Challenge blob 8e99b5004f788c5522ffaa972bdfd46d930135d8 to 8c1726268436ce5e19513234a5b2750085db9777: explicit OAI-qualified projectivity, complex multiplication and algebraic cycle span; OAI Hodge notation scope; removal of module/public-section spelling.",
+    "CM blob 13e75059c5d0eb42fa504ecaee4fe02647710a4e to 431efba8c14d2372cfd4592dd4423b7d61a74f65: local HodgeCM definitions move under OAI.AlgebraicGeometry.ComplexMultiplication.Definitions, and comparison/filtration references are qualified with OAI namespaces.",
+    "Solution e9855a415328438d063f5f3f132473bf919595e3 is byte-identical at both pins and already uses those OAI-qualified types with theorem name HodgeCM.hodge_conjecture_for_cm_abelian_varieties.",
+    "Comparator main.json blob 7a3ee084f1de09a45618654cd1c11f2f0c8d878a is byte-identical: same theorem name, empty definition_names, permitted propext/Quot.sound/Classical.choice, enable_nanoda=false."
+  ],
+  "historical_mismatch_boundary": "The old challenge has a local HodgeCM.HasComplexMultiplication/CMH1Data model while the solution expects OAI.AlgebraicGeometry.ComplexMultiplication.Definitions.HasComplexMultiplication. This is a concrete textual namespace/type-model divergence; native elaborated interface inequality was not tested.",
+  "new_alignment_boundary": "The updated challenge spells the same qualified projectivity, complex-multiplication and algebraic-cycle-span symbols as the unchanged solution. Native type identity and Comparator acceptance remain NOT_RUN.",
+  "selected_pnt_bindings_unchanged": {
+    "lean/lakefile.lean": "cd24ca2ee09fb6fe33e82400534d9e60a616125b",
+    "lean/lake-manifest.json": "67d01d2717d0aaff59fb8814bb53581b961f42b4",
+    "lean/patches/PrimeNumberTheoremAnd-lean4341.patch": "924c5f6ec6fe88ba7788b420af4e3c3c7ac00abc"
+  },
+  "comparator_policy": {
+    "configuration_blob": "7a3ee084f1de09a45618654cd1c11f2f0c8d878a",
+    "theorem_name": "HodgeCM.hodge_conjecture_for_cm_abelian_varieties",
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "enable_nanoda": false,
+    "boundary": "Unchanged configuration describes upstream policy, not a local Comparator run or independent checker receipt. The challenge contains its expected placeholder proof; no challenge proof is accepted here."
+  },
+  "acceptance_requires": [
+    "Preserve the existing7ef adapter/catalogue source identities and outcomes. Any opt-in adoption of4ea needs a separate complete source/dependency/configuration binding and reviewed source increment.",
+    "Check the elaborated challenge and solution types, including projectivity, exact CM model, complex points, cycle-class span and all quantifiers; textual spelling alignment alone does not prove definitional or propositional equality.",
+    "Fresh supported native compilation, actual Comparator execution, exact expected-interface checks, transitive axiom policy and fresh independent replay/checker evidence at the selected pin.",
+    "Review the actual transitive proof closure and trust boundary; the281 changed file rows in the two-commit comparison are not a reviewed or accepted proof closure."
+  ],
+  "verification": {
+    "native_compilation": "NOT_RUN",
+    "comparator": "NOT_RUN",
+    "expected_interface": "NOT_RUN",
+    "fresh_independent_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN"
+  },
+  "second_independent_checker": "UNSUPPLIED",
+  "claim_boundary": "Bounded primary-source namespace/configuration comparison only. No Hodge theorem, package acceptance, paper proof correction or historical influence is independently certified; original inventory counts/pin and all prior native obligations remain unchanged."
+}
