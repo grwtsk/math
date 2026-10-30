@@ -31,6 +31,7 @@ theorem noExceptions_of_lt_one (C : ThresholdCount) (sigma : ℝ)
     (h : (C.count sigma : ℝ) < 1) :
     NoExceptions C sigma := by
   unfold NoExceptions
+  have hnat : C.count sigma < 1 := by exact_mod_cast h
   omega
 
 /-- A positive upper allowance does not imply exclusion.
