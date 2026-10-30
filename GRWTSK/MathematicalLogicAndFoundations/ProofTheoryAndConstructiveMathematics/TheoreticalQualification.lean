@@ -73,6 +73,34 @@ theorem SignedComparison.residual_eq_sub
   rw [c.source_eq_model_add_residual i]
   ring
 
+
+/-- Compose two source-bound mathematical comparisons only when the first
+model is the actual second source pointwise.  The resulting residual is the
+SUM OF BOTH SIGNED residuals; neither stage may be silently dropped. -/
+def SignedComparison.comp
+    {Index : Type u}
+    (first second : SignedComparison Index)
+    (hsource : ∀ i, first.model i = second.source i) :
+    SignedComparison Index where
+  source := first.source
+  model := second.model
+  residual := fun i => second.residual i + first.residual i
+  source_eq_model_add_residual := by
+    intro i
+    calc
+      first.source i = first.model i + first.residual i :=
+        first.source_eq_model_add_residual i
+      _ = (second.model i + second.residual i) + first.residual i := by
+        rw [hsource i, second.source_eq_model_add_residual i]
+      _ = second.model i + (second.residual i + first.residual i) := by ring
+
+/-- Composition retains each signed error channel exactly and in order. -/
+theorem SignedComparison.comp_residual
+    {Index : Type u} (first second : SignedComparison Index)
+    (hsource : ∀ i, first.model i = second.source i) (i : Index) :
+    (first.comp second hsource).residual i =
+      second.residual i + first.residual i := rfl
+
 /-- A one-sided bound on the complete signed observation returns to
 the original source without discarding cancellation. -/
 theorem SignedComparison.source_upper_of_signed_bound
