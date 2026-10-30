@@ -1426712,6 +1426712,25 @@
       "target_sha256": "85b172003c480eed7de53313ebb3a42ec0ff8c518bd9c6a8f85cd3d8548cd6b4",
       "target_git_blob": "11a071f417b551647c90f09fa890ea9f23eddd86",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/HigherDerivativeSpaceship.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/HigherDerivativeSpaceship.lean",
+      "source_sha256": "2ea2acaac8f0d8bc18ce66f3eb30efd45f05c5ac7ca230236c04d39f9ad039f7",
+      "input_blob": "9cd776c5db21be90fef87cd160c23a0b3ed02e8e",
+      "source_kind": "lean_source",
+      "msc_code": "26A24",
+      "msc_label": "Differentiation (real functions of one variable): general theory, generalized derivatives, mean value theorems",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual higher derivatives of the source spaceship and exact equal-step second-difference residual, punctured limit and physical sign-domain consumers",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "9cd776c5db21be90fef87cd160c23a0b3ed02e8e",
+      "target_sha256": "2ea2acaac8f0d8bc18ce66f3eb30efd45f05c5ac7ca230236c04d39f9ad039f7",
+      "target_git_blob": "9cd776c5db21be90fef87cd160c23a0b3ed02e8e",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
