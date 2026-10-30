@@ -86,6 +86,16 @@ kernel-verified bridges, source proof candidates, conditional interfaces,
 finite evidence, analogies, and unresolved premises. These classifications
 describe different claims and must remain separate.
 
+## Analytical proof and comparison disposition
+
+The [repository-wide proof-comparison disposition](proof-comparison-disposition.md) applies to **every proof claim** regardless of the result's subject, historical provenance, or formalization status. This is authored mathematical prose within the existing article form, **not** an unreviewed field addition to `grwtsk.result-article/1`.
+
+In the **Proof** section, explain the analytic mechanism, every hypothesis and the actual source objects, rather than treating a compiler success or a theorem name as the argument. In **Composition**, compare objects or representations by exact maps, invariants, signed remainders and their downstream consumers. Where an analytically distinct second route is available, state how it derives the same conclusion and which foundations it shares; seek hostile cases that could expose circularity or a false transfer. Do not manufacture multiple routes just to satisfy a count or invalidate a legitimate one-proof result.
+
+In **Verification and trust boundary**, record **two independent axes**: mathematical/analytical assessment (including comparison, unresolved source bridge, counterexample and independent-route disposition) and formal source evidence (`NOT_RUN`, `UNASSESSED`, `SCOPED_EVIDENCE`, `KERNEL_VERIFIED` with exact revisions and receipts). A theorem can be kernel checked without an established cross-object transfer; an analytic proof can be valid without being formalized. Neither axis is a substitute for the other.
+
+For legacy articles, make the comparison assessment only when a source has actually been examined. Mark unreviewed/blocked scope; retain existing verification fields, source pins and historical acceptance. Do not claim an entire corpus was independently reviewed by publishing this requirement.
+
 ## Verification and composition
 
 The verification status is one of `NOT_RUN`, `UNASSESSED`, `SCOPED_EVIDENCE`,
