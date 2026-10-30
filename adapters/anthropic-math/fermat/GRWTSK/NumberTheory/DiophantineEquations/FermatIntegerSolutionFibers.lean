@@ -3,7 +3,7 @@ Copyright (c) 2026 grwtsk contributors.
 Released under Apache 2.0 license as described in the upstream file LICENSE.
 Authors: grwtsk contributors
 -/
-import GRWTSK.NumberTheory.AnthropicMath.Fermat
+import GRWTSK.NumberTheory.Fermat
 import Mathlib.NumberTheory.FLT.Basic
 import Mathlib.Tactic.Tauto
 

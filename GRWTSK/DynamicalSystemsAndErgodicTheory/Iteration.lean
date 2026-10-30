@@ -20,7 +20,7 @@ Basic module with its immutable archived source identity. Native compilation,
 proof acceptance and public umbrella admission remain separate obligations.
 -/
 
-import GRWTSK.DynamicalSystemsAndErgodicTheory.Basic
+import GRWTSK.DynamicalSystemsAndErgodicTheory.NaturalAffineRecurrenceBounds
 
 /-! # Certified contraction boundaries -/
 

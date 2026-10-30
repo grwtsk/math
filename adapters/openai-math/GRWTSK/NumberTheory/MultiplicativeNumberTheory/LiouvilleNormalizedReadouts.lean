@@ -1,7 +1,7 @@
 /- Local attribution: grwtsk contributors.
 Source candidates; compilation, fresh replay and transitive axiom audit NOT_RUN.
 OpenAI source keeps its exact Apache-2.0 attribution and dependency pin. -/
-import OpenAITwoPointFiniteFamily
+import GRWTSK.NumberTheory.MultiplicativeNumberTheory.AsymptoticResultsOnArithmeticFunctions.LiouvilleTwoPointFiniteFamily
 
 namespace GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts
 

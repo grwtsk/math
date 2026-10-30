@@ -19,7 +19,7 @@ influence provider is extracted from pinned archives; native checks remain pendi
 No Lean compilation, proof acceptance or public umbrella admission is asserted.
 -/
 
-import GRWTSK.Combinatorics.Basic
+import GRWTSK.Combinatorics.CombinatoricsDefinitions
 
 /-!
 # Dependence-aware concentration boundary

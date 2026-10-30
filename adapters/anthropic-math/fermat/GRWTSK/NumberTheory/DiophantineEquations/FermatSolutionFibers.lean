@@ -1,7 +1,7 @@
 /- Local attribution: grwtsk contributors.
 Source proof candidates; native compilation, fresh replay and axiom audit NOT_RUN.
 Imported Anthropic formalization retains its exact upstream attribution/license. -/
-import GRWTSK.NumberTheory.AnthropicMath.Fermat
+import GRWTSK.NumberTheory.Fermat
 
 namespace GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers
 

@@ -44,7 +44,7 @@
             ],
             "enable_nanoda": true
           },
-          "adapter_module": "GRWTSK.NumberTheory.AnthropicMath.Zeta23.Xiprime",
+          "adapter_module": "GRWTSK.NumberTheory.CompletedZetaDerivative",
           "classification": "EXACT_UPSTREAM_REEXPORT_SURFACE_NOT_A_BRIDGE"
         },
         {
@@ -80,7 +80,7 @@
             ],
             "enable_nanoda": true
           },
-          "adapter_module": "GRWTSK.NumberTheory.AnthropicMath.Zeta23.Main",
+          "adapter_module": "GRWTSK.NumberTheory.ZetaValueIrrationality",
           "classification": "EXACT_UPSTREAM_REEXPORT_SURFACE_NOT_A_BRIDGE"
         }
       ],
@@ -142,7 +142,7 @@
             ],
             "enable_nanoda": true
           },
-          "adapter_module": "GRWTSK.Complexity.AnthropicMath.ThreeSumApsp.Endstatement",
+          "adapter_module": "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.ThreeSumApspConclusions",
           "classification": "EXACT_UPSTREAM_REEXPORT_SURFACE_NOT_A_BRIDGE"
         },
         {
@@ -293,7 +293,7 @@
             ],
             "enable_nanoda": true
           },
-          "adapter_module": "GRWTSK.Complexity.AnthropicMath.ThreeSumApsp.Paperstatements",
+          "adapter_module": "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.ThreeSumApspTheorems",
           "classification": "EXACT_UPSTREAM_REEXPORT_SURFACE_NOT_A_BRIDGE"
         }
       ],
@@ -342,7 +342,7 @@
             ],
             "enable_nanoda": true
           },
-          "adapter_module": "GRWTSK.Complexity.AnthropicMath.Eth.Main",
+          "adapter_module": "GRWTSK.ComputerScience.TheoryOfComputing.ComputationalDifficultyOfProblemsLowerBoundsCompletenessDifficultyOfApproximationEtc.ExponentialTimeHypothesis",
           "classification": "EXACT_UPSTREAM_REEXPORT_SURFACE_NOT_A_BRIDGE"
         }
       ],
@@ -382,7 +382,7 @@
       },
       "surfaces": [
         {
-          "adapter_module": "GRWTSK.NumberTheory.AnthropicMath.Fermat",
+          "adapter_module": "GRWTSK.NumberTheory.Fermat",
           "upstream_declarations": [
             "flt_pinned",
             "fermat_last_theorem",

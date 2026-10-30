@@ -24,7 +24,7 @@
       "problem": 379,
       "source_path": "Analysis/Misc/erdos_379.lean",
       "source_blob": "0d4c04fdda9e24a9a97ba14b2e08e7d5507448ae",
-      "adapter_path": "adapters/tao-erdos/GRWTSK/NumberTheory/SequencesAndSets/TaoErdos/Erdos379.lean",
+      "adapter_path": "adapters/tao-erdos/GRWTSK/NumberTheory/SequencesAndSets/Erdos379.lean",
       "declarations": [
         "GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.binomialPrimePowerHeight",
         "GRWTSK.NumberTheory.SequencesAndSets.TaoErdos.Erdos379.prime_power_family",
@@ -48,7 +48,7 @@
       "problem": 613,
       "source_path": "Analysis/Misc/erdos_613.lean",
       "source_blob": "9a0d7789b55d46b59742c1aec1a885001d83ccf9",
-      "adapter_path": "adapters/tao-erdos/GRWTSK/Combinatorics/GraphTheory/TaoErdos/Erdos613.lean",
+      "adapter_path": "adapters/tao-erdos/GRWTSK/Combinatorics/GraphTheory/Erdos613.lean",
       "declarations": [
         "GRWTSK.Combinatorics.GraphTheory.TaoErdos.Erdos613.concrete_ramsey_witness"
       ],
@@ -70,7 +70,7 @@
       "problem": 707,
       "source_path": "Analysis/Misc/erdos_707.lean",
       "source_blob": "e5af795dbfc20549c5f7fb597c91bbb6e89b068e",
-      "adapter_path": "adapters/tao-erdos/GRWTSK/Combinatorics/DesignsAndConfigurations/TaoErdos/Erdos707.lean",
+      "adapter_path": "adapters/tao-erdos/GRWTSK/Combinatorics/DesignsAndConfigurations/Erdos707.lean",
       "declarations": [
         "GRWTSK.Combinatorics.DesignsAndConfigurations.TaoErdos.Erdos707.perfect_difference_set_card",
         "GRWTSK.Combinatorics.DesignsAndConfigurations.TaoErdos.Erdos707.excludes_embedded_powers"
@@ -93,7 +93,7 @@
       "problem": 987,
       "source_path": "Analysis/Misc/erdos_987.lean",
       "source_blob": "f362db5e03b8b551123b8ab405928ac822208399",
-      "adapter_path": "adapters/tao-erdos/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/TaoErdos/Erdos987.lean",
+      "adapter_path": "adapters/tao-erdos/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Erdos987.lean",
       "declarations": [
         "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.TaoErdos.Erdos987.shifted_circle_sequence"
       ],

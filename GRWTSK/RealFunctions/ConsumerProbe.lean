@@ -28,7 +28,7 @@ Original dependency selection, elaboration and proof checking remain unreplayed.
 This candidate is outside the public umbrella. Lean and Lake have not been invoked.
 -/
 
-import GRWTSK.MeasureAndIntegration.Basic
+import GRWTSK.MeasureAndIntegration.APositiveReciprocalKernelAndItsExactSumintegralBounds
 
 namespace GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Checks.Audit.ConsumerProbe
 open GRWTSK.Analysis.RealAnalysis.Integration.ReciprocalKernel.Basic MeasureTheory Set

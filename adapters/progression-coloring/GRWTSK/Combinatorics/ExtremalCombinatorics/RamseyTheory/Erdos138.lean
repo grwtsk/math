@@ -3,7 +3,7 @@ Copyright (c) 2026 grwtsk contributors. All rights reserved.
 Released under Apache 2.0 license as described in LICENSES/OpenAI-Apache-2.0.txt.
 OpenAI retains upstream authorship and licensing of the imported mathematics.
 -/
-import GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoring.Main
+import GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.CombinatoricsExtremalCombinatoricsRamseyTheoryProgressionColoringTheorems
 
 /-!
 # Erdős Problem #138: the kth-root growth statement
