@@ -1,0 +1,38 @@
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[source]
+repository = "grwtsk/math"
+lean_commit = "105d42b3990ba85b3811ea381f0babfce2d5e2f8"
+documentation_commit = "3dc8707b691390431fc6d03a90b7b38975cbb14c"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupCofactorChowlaConnections.lean"
+
+[scope]
+obstruction_id = "fixed-degree-cofactor-sign-alternation-v1"
+existing_complete_cofactor_commit = "45b9ab6ee50bad1c3b6b255d7b22604bca3b5bf2"
+ordinary_chowla_role = "LITERATURE_CONNECTION_FIXED_FORM_ONLY"
+parity_role = "ANALOGY_ONLY"
+geometric_trace_role = "ANALOGY_ONLY"
+new_cancellation_claimed = false
+rh_claimed = false
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+external_ordinary_chowla_acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupCofactorChowlaConnections"
+reject = ["sorryAx", "new research axioms", "fixed-form theorem promoted to growing uniformity", "analogy promoted to cancellation", "omitted Gram/cutoff/mask/complement costs"]
+
+[open_obligations]
+growing_parameter_uniformity = true
+gram_weight_compatibility = true
+frozen_endpoint_compatibility = true
+rough_mask_compatibility = true
+repeated_prime_correction = true
+complete_complement_coverage = true
+every_positive_rate_bound = true
