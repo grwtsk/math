@@ -1423058,6 +1423058,25 @@
       "target_sha256": "ff4b706c651450f0af595af1cbdc7ae6403b463de66755a9ee71f7b3f9a5a663",
       "target_git_blob": "35d3731b6f180522b1798565cc70689438969fcc",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/FiniteNudgeControl.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/FiniteNudgeControl.lean",
+      "source_sha256": "7019b50d2574ac118ce7ff064aa1fdeaa13c4690329539f2d9dc0387eee38751",
+      "input_blob": "e255d0cc06b6128fb2f75aab8385d2d45d5c9965",
+      "source_kind": "lean_source",
+      "msc_code": "26A24",
+      "msc_label": "Differentiation (real functions of one variable): general theory, generalized derivatives, mean value theorems",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "General finite-nudge quantified epsilon-delta derivative bridge, continuous filled quotient, quadratic consumer and absolute-value corner obstruction",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "e255d0cc06b6128fb2f75aab8385d2d45d5c9965",
+      "target_sha256": "7019b50d2574ac118ce7ff064aa1fdeaa13c4690329539f2d9dc0387eee38751",
+      "target_git_blob": "e255d0cc06b6128fb2f75aab8385d2d45d5c9965",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
