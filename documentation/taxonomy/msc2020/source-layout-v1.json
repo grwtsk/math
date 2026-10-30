@@ -1426769,6 +1426769,25 @@
       "target_sha256": "90e180ebb6d947619c8b26b1d70ec86cfac9b17de1676aed2b57353c30728c55",
       "target_git_blob": "3c43f383873ae97bfbe4d98f661633278baa3d5c",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/ApproximationsAndExpansions/SeriesExpansionsEGTaylorLidstoneSeriesButNotFourierSeries/TaylorShiftExponential.lean",
+      "path": "GRWTSK/ApproximationsAndExpansions/SeriesExpansionsEGTaylorLidstoneSeriesButNotFourierSeries/TaylorShiftExponential.lean",
+      "source_sha256": "d0e2e3b38225a5c43df342355bb616ef2269f076b660578de34582d12abc6bd7",
+      "input_blob": "9fcb856cca032470c6b353bd4cc0689b01a07c71",
+      "source_kind": "lean_source",
+      "msc_code": "41A58",
+      "msc_label": "Series expansions (e.g., Taylor, Lidstone series, but not Fourier series)",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual shifted-center Taylor coefficient/evaluation transport and actual exponential-polynomial partial-sum convergence with real analytic identification",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "9fcb856cca032470c6b353bd4cc0689b01a07c71",
+      "target_sha256": "d0e2e3b38225a5c43df342355bb616ef2269f076b660578de34582d12abc6bd7",
+      "target_git_blob": "9fcb856cca032470c6b353bd4cc0689b01a07c71",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
