@@ -9,6 +9,7 @@ Original upstream author and license are retained here as provenance; the local
 GRWTSK bridge declarations are by grwtsk contributors.
 -/
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FiniteObservationGap
+import GRWTSK.AlgebraicTopology.SurfacePolygonPolarComplexPhase
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FiniteSpectralHeatGap
 import Mathlib.Analysis.Normed.Module.FiniteDimension
 import Mathlib.Topology.Order.IntermediateValue
@@ -862,6 +863,551 @@ theorem positive_euclidean_moment_sharp_contraction {n : ℕ}
   simpa only [one_pow, mul_one] using h
 
 end PositiveOperators
+
+
+/-!
+## Exact radial-shell source split for Fourier-side consumers
+
+This source-exact layer keeps a finite radial shell and its omitted tail as two
+separate functions whose pointwise sum is the original source. Nonzero
+frequencies also have an exact radius/unit-direction factorization.
+
+IsTransverse is deliberately parameterized by an actual additive pairing.
+Thus a later Fourier Navier--Stokes bridge can instantiate transversality with
+the divergence-free pairing while retaining the same source split. No Fourier
+transform, Leray projector, helical frame, nonlinear triad convolution, fluid
+solution, or identification with the finite moment operator is asserted here.
+
+SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+section RadialShellSource
+
+variable {Ξ U K : Type*}
+variable [NormedAddCommGroup Ξ] [NormedSpace ℝ Ξ]
+variable [AddCommGroup U] [AddCommGroup K]
+
+/-- Unit-direction candidate for a nonzero frequency. At the zero frequency
+this definition is left at the scalar-zero convention; consumers that require
+a unit direction must retain the explicit ξ ≠ 0 premise. -/
+def radialDirection (ξ : Ξ) : Ξ := ‖ξ‖⁻¹ • ξ
+
+/-- Every nonzero frequency is reconstructed exactly from its norm and radial
+direction. This is the source-preserving radial blow-up identity. -/
+theorem radialDirection_reconstruct {ξ : Ξ} (hξ : ξ ≠ 0) :
+    ‖ξ‖ • radialDirection ξ = ξ := by
+  rw [radialDirection]
+  exact smul_inv_smul₀ (norm_ne_zero_iff.mpr hξ) ξ
+
+/-- The radial direction of a nonzero frequency lies on the unit sphere. -/
+theorem radialDirection_norm {ξ : Ξ} (hξ : ξ ≠ 0) :
+    ‖radialDirection ξ‖ = 1 := by
+  simpa [radialDirection] using (norm_smul_inv_norm (𝕜 := ℝ) hξ)
+
+/-- The retained radial shell. No frequency labels are quotiented or merged. -/
+def shellPart (R : ℝ) (u : Ξ → U) : Ξ → U :=
+  fun ξ => if ‖ξ‖ ≤ R then u ξ else 0
+
+/-- The full omitted radial tail. It remains a typed source function rather
+than an unrestricted error term. -/
+def tailPart (R : ℝ) (u : Ξ → U) : Ξ → U :=
+  fun ξ => if R < ‖ξ‖ then u ξ else 0
+
+/-- Pointwise visible-plus-tail reconstruction is exact at every cutoff,
+including negative cutoffs. -/
+theorem shell_add_tail (R : ℝ) (u : Ξ → U) (ξ : Ξ) :
+    shellPart R u ξ + tailPart R u ξ = u ξ := by
+  by_cases h : ‖ξ‖ ≤ R
+  · have hnot : ¬ R < ‖ξ‖ := not_lt_of_ge h
+    simp [shellPart, tailPart, h, hnot]
+  · have hlt : R < ‖ξ‖ := lt_of_not_ge h
+    simp [shellPart, tailPart, h, hlt]
+
+/-- The exact reconstruction is an equality of the complete source functions,
+not only of a finite observation. -/
+theorem shell_add_tail_fun (R : ℝ) (u : Ξ → U) :
+    (fun ξ => shellPart R u ξ + tailPart R u ξ) = u := by
+  funext ξ
+  exact shell_add_tail R u ξ
+
+/-- Frequencies outside the retained shell contribute exactly zero to the
+shell component. -/
+theorem shellPart_eq_zero_of_lt {R : ℝ} (u : Ξ → U) {ξ : Ξ}
+    (h : R < ‖ξ‖) :
+    shellPart R u ξ = 0 := by
+  simp [shellPart, not_le_of_gt h]
+
+/-- Frequencies inside the retained shell contribute exactly zero to the tail
+component. -/
+theorem tailPart_eq_zero_of_le {R : ℝ} (u : Ξ → U) {ξ : Ξ}
+    (h : ‖ξ‖ ≤ R) :
+    tailPart R u ξ = 0 := by
+  simp [tailPart, not_lt_of_ge h]
+
+/-- For a nonnegative cutoff the zero frequency stays in the retained source. -/
+theorem shellPart_zero {R : ℝ} (u : Ξ → U) (hR : 0 ≤ R) :
+    shellPart R u 0 = u 0 := by
+  simp [shellPart, hR]
+
+/-- For a nonnegative cutoff the retained tail contains no zero-frequency
+contribution. -/
+theorem tailPart_zero {R : ℝ} (u : Ξ → U) (hR : 0 ≤ R) :
+    tailPart R u 0 = 0 := by
+  simp [tailPart, hR]
+
+/-- A source is transverse when its coefficient at every frequency is killed
+by the supplied additive frequency-dependent pairing. This abstracts the
+actual divergence-free pairing without assuming an unproved Fourier bridge. -/
+def IsTransverse (pairing : Ξ → U →+ K) (u : Ξ → U) : Prop :=
+  ∀ ξ, pairing ξ (u ξ) = 0
+
+/-- Radial shell restriction preserves any supplied transverse source
+identity exactly. -/
+theorem shellPart_transverse (pairing : Ξ → U →+ K)
+    (u : Ξ → U) (R : ℝ) (hu : IsTransverse pairing u) :
+    IsTransverse pairing (shellPart R u) := by
+  intro ξ
+  by_cases h : ‖ξ‖ ≤ R
+  · simpa [shellPart, h] using hu ξ
+  · simp [shellPart, h]
+
+/-- The retained tail preserves the same transverse source identity exactly. -/
+theorem tailPart_transverse (pairing : Ξ → U →+ K)
+    (u : Ξ → U) (R : ℝ) (hu : IsTransverse pairing u) :
+    IsTransverse pairing (tailPart R u) := by
+  intro ξ
+  by_cases h : R < ‖ξ‖
+  · simpa [tailPart, h] using hu ξ
+  · simp [tailPart, h]
+
+/-- Both components of the exact source split inherit transversality. -/
+theorem shell_tail_transverse (pairing : Ξ → U →+ K)
+    (u : Ξ → U) (R : ℝ) (hu : IsTransverse pairing u) :
+    IsTransverse pairing (shellPart R u) ∧
+      IsTransverse pairing (tailPart R u) :=
+  ⟨shellPart_transverse pairing u R hu,
+    tailPart_transverse pairing u R hu⟩
+
+
+end RadialShellSource
+
+
+/-!
+## Concrete three-dimensional Fourier transversality and genuine phase quotient
+
+This adapter instantiates the abstract radial-shell source with the literal
+three-dimensional Fourier frequency type and complex vector coefficients.
+The divergence pairing is the algebraic Fourier incompressibility expression
+sum_i ξ_i u_i.  For every nonzero frequency, exact radial reconstruction
+shows that vanishing against ξ is equivalent to vanishing against its unit
+direction.  Thus a divergence-free coefficient is carried into the transverse
+fiber over the actual spherical direction, without quotienting frequencies.
+
+Complex scalar phases are stored in the genuine Mathlib UnitAddCircle quotient
+using the repository's normalized complex argument.  The reconstruction lemma
+below is representative-independent: every real angle in the same quotient
+class produces the same nonzero complex coefficient after restoring amplitude.
+No continuous global argument, helical frame, Leray projector, nonlinear
+triad transport, PDE solution, or moment-operator identification is asserted.
+
+SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+section FourierSphericalAdapter
+
+open scoped BigOperators
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarAddCircleKernel
+open GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarComplexPhase
+
+/-- Physical three-dimensional Fourier frequencies. -/
+abbrev FourierFrequency3 := EuclideanSpace ℝ (Fin 3)
+
+/-- A complex Fourier velocity coefficient with three physical components. -/
+abbrev FourierVelocity3 := Fin 3 → ℂ
+
+/-- The literal algebraic Fourier-divergence pairing at frequency ξ. -/
+def fourierDivergencePairing (ξ : FourierFrequency3) : FourierVelocity3 →+ ℂ where
+  toFun v := ∑ i : Fin 3, (ξ i : ℂ) * v i
+  map_zero' := by simp
+  map_add' := by
+    intro u v
+    simp [mul_add, Finset.sum_add_distrib]
+
+/-- Fourier-side incompressibility, stated without assuming that a supplied
+source is actually the Fourier transform of a fluid solution. -/
+def IsFourierDivergenceFree (u : FourierFrequency3 → FourierVelocity3) : Prop :=
+  ∀ ξ, fourierDivergencePairing ξ (u ξ) = 0
+
+/-- The concrete Fourier-divergence predicate is exactly the abstract
+transversality interface already preserved by the shell/tail split. -/
+theorem isFourierDivergenceFree_iff_isTransverse
+    (u : FourierFrequency3 → FourierVelocity3) :
+    IsFourierDivergenceFree u ↔
+      IsTransverse fourierDivergencePairing u := by
+  rfl
+
+/-- The divergence pairing scales exactly with radial reconstruction. -/
+theorem fourierDivergencePairing_radialDirection
+    {ξ : FourierFrequency3} (hξ : ξ ≠ 0) (v : FourierVelocity3) :
+    fourierDivergencePairing ξ v =
+      (‖ξ‖ : ℂ) *
+        fourierDivergencePairing (radialDirection ξ) v := by
+  rw [← radialDirection_reconstruct hξ]
+  simp [fourierDivergencePairing, Finset.mul_sum, mul_assoc]
+
+/-- At every nonzero frequency, the Fourier divergence constraint is
+equivalent to transversality against the corresponding unit sphere direction. -/
+theorem fourierDivergencePairing_zero_iff_radialDirection
+    {ξ : FourierFrequency3} (hξ : ξ ≠ 0) (v : FourierVelocity3) :
+    fourierDivergencePairing ξ v = 0 ↔
+      fourierDivergencePairing (radialDirection ξ) v = 0 := by
+  rw [fourierDivergencePairing_radialDirection hξ]
+  simp [norm_ne_zero_iff.mpr hξ]
+
+/-- A divergence-free Fourier source is pointwise tangent/transverse to the
+unit spherical direction at every nonzero frequency.  The coefficient remains
+the original source coefficient u ξ; only its frequency address is normalized. -/
+theorem fourierDivergenceFree_radial_fiber
+    {u : FourierFrequency3 → FourierVelocity3}
+    (hu : IsFourierDivergenceFree u)
+    {ξ : FourierFrequency3} (hξ : ξ ≠ 0) :
+    fourierDivergencePairing (radialDirection ξ) (u ξ) = 0 := by
+  exact (fourierDivergencePairing_zero_iff_radialDirection hξ (u ξ)).mp (hu ξ)
+
+/-- Exact shell restriction preserves the actual three-dimensional Fourier
+divergence constraint. -/
+theorem shellPart_fourierDivergenceFree
+    (u : FourierFrequency3 → FourierVelocity3) (R : ℝ)
+    (hu : IsFourierDivergenceFree u) :
+    IsFourierDivergenceFree (shellPart R u) := by
+  apply (isFourierDivergenceFree_iff_isTransverse (shellPart R u)).mpr
+  exact shellPart_transverse fourierDivergencePairing u R
+    ((isFourierDivergenceFree_iff_isTransverse u).mp hu)
+
+/-- The retained omitted tail preserves the same actual Fourier divergence
+constraint, so truncation does not manufacture a longitudinal source. -/
+theorem tailPart_fourierDivergenceFree
+    (u : FourierFrequency3 → FourierVelocity3) (R : ℝ)
+    (hu : IsFourierDivergenceFree u) :
+    IsFourierDivergenceFree (tailPart R u) := by
+  apply (isFourierDivergenceFree_iff_isTransverse (tailPart R u)).mpr
+  exact tailPart_transverse fourierDivergencePairing u R
+    ((isFourierDivergenceFree_iff_isTransverse u).mp hu)
+
+/-- Visible shell plus retained tail reconstruct the complete Fourier source,
+and both pieces remain divergence-free. -/
+theorem shell_tail_fourierDivergenceFree
+    (u : FourierFrequency3 → FourierVelocity3) (R : ℝ)
+    (hu : IsFourierDivergenceFree u) :
+    (fun ξ => shellPart R u ξ + tailPart R u ξ) = u ∧
+      IsFourierDivergenceFree (shellPart R u) ∧
+      IsFourierDivergenceFree (tailPart R u) := by
+  exact ⟨shell_add_tail_fun R u,
+    shellPart_fourierDivergenceFree u R hu,
+    tailPart_fourierDivergenceFree u R hu⟩
+
+/-- Genuine quotient-valued phase address for a complex Fourier scalar.
+At zero this address carries no reconstruction significance; consumers must
+retain the explicit nonzero premise when interpreting it as a phase. -/
+def fourierPhaseClass (z : ℂ) : UnitAddCircle :=
+  (normalizedComplexAngle z : UnitAddCircle)
+
+/-- Every real representative of the same genuine circle class reconstructs
+the same nonzero complex coefficient after restoring its exact amplitude.
+This avoids choosing a discontinuous global real-angle branch. -/
+theorem complex_reconstruct_of_phaseClass
+    {z : ℂ} (hz : z ≠ 0) {θ : ℝ}
+    (hθ : (θ : UnitAddCircle) = fourierPhaseClass z) :
+    z = (‖z‖ : ℂ) *
+      Complex.exp ((2 * Real.pi * θ : ℝ) * Complex.I) := by
+  have hphase :
+      Complex.exp ((2 * Real.pi * θ : ℝ) * Complex.I) =
+        Complex.exp
+          ((2 * Real.pi * normalizedComplexAngle z : ℝ) * Complex.I) := by
+    apply (polar_phase_eq_iff_unitAddCircle_eq θ (normalizedComplexAngle z)).mpr
+    simpa [fourierPhaseClass] using hθ
+  have hzpolar := complex_realAnglePolar_representation z hz
+  unfold GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardConeDisk.realAnglePolar at hzpolar
+  rw [hphase]
+  exact hzpolar
+
+/-- Each nonzero scalar component of a Fourier velocity coefficient therefore
+has a source-exact amplitude plus genuine quotient-phase reconstruction.
+This is component phase only; it is not yet a global helical polarization. -/
+theorem fourierVelocity_component_phase_reconstruction
+    (v : FourierVelocity3) {i : Fin 3} (hi : v i ≠ 0)
+    {θ : ℝ} (hθ : (θ : UnitAddCircle) = fourierPhaseClass (v i)) :
+    v i = (‖v i‖ : ℂ) *
+      Complex.exp ((2 * Real.pi * θ : ℝ) * Complex.I) :=
+  complex_reconstruct_of_phaseClass hi hθ
+
+
+end FourierSphericalAdapter
+
+
+/-!
+## Source-labelled bilinear triad shell/tail decomposition
+
+Before selecting a Fourier normalization, convolution measure, Leray projector,
+or helical frame, the quadratic source bookkeeping can already be made exact.
+A triad source keeps the two input frequencies as distinct labels and records
+their additive output frequency.  Any genuinely biadditive interaction then
+splits into the four shell/tail sectors without losing mixed terms.
+
+This is the algebraic source identity that a later Fourier Navier--Stokes
+convolution must consume.  It is deliberately not itself a convolution theorem
+and supplies no smallness estimate.
+
+SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+section SourceLabeledTriadSplit
+
+variable {Ξ U V : Type*}
+variable [NormedAddCommGroup Ξ] [NormedSpace ℝ Ξ]
+variable [AddCommGroup U] [AddCommGroup V]
+
+/-- Two actual source-frequency labels participating in one additive triad.
+The labels remain distinct even when their values happen to coincide. -/
+structure TriadSource (Ξ : Type*) where
+  left : Ξ
+  right : Ξ
+
+/-- Additive output frequency attached to the source-labelled pair. -/
+def TriadSource.outputFrequency (t : TriadSource Ξ) : Ξ :=
+  t.left + t.right
+
+/-- Evaluate a biadditive coefficient interaction on the two labelled source
+frequencies.  No summation over equal output frequencies occurs here. -/
+def triadInteraction
+    (B : U →+ U →+ V) (u : Ξ → U) (t : TriadSource Ξ) : V :=
+  B (u t.left) (u t.right)
+
+/-- Exact four-sector expansion of one source-labelled quadratic interaction.
+The two mixed shell/tail terms are retained explicitly. -/
+theorem triadInteraction_shell_tail_split
+    (B : U →+ U →+ V) (u : Ξ → U) (R : ℝ) (t : TriadSource Ξ) :
+    triadInteraction B u t =
+      (B (shellPart R u t.left) (shellPart R u t.right) +
+        B (shellPart R u t.left) (tailPart R u t.right)) +
+      (B (tailPart R u t.left) (shellPart R u t.right) +
+        B (tailPart R u t.left) (tailPart R u t.right)) := by
+  unfold triadInteraction
+  rw [← shell_add_tail R u t.left, ← shell_add_tail R u t.right]
+  simp only [map_add]
+
+/-- The exact split keeps the additive triad output address unchanged; changing
+shell/tail sector does not change or quotient the two source frequency labels. -/
+theorem triadOutputFrequency_shell_tail_invariant
+    (t : TriadSource Ξ) :
+    t.outputFrequency = t.left + t.right := rfl
+
+/-- If both source frequencies lie in the retained shell, the three sectors
+containing a tail coefficient vanish exactly. -/
+theorem triadInteraction_eq_shellShell_of_both_le
+    (B : U →+ U →+ V) (u : Ξ → U) {R : ℝ} (t : TriadSource Ξ)
+    (hl : ‖t.left‖ ≤ R) (hr : ‖t.right‖ ≤ R) :
+    triadInteraction B u t =
+      B (shellPart R u t.left) (shellPart R u t.right) := by
+  rw [triadInteraction_shell_tail_split B u R t,
+    tailPart_eq_zero_of_le u hl, tailPart_eq_zero_of_le u hr]
+  simp
+
+/-- If the left source is outside and the right source is inside the shell,
+the exact interaction is the tail--shell sector; it is not discarded. -/
+theorem triadInteraction_eq_tailShell_of_left_lt_right_le
+    (B : U →+ U →+ V) (u : Ξ → U) {R : ℝ} (t : TriadSource Ξ)
+    (hl : R < ‖t.left‖) (hr : ‖t.right‖ ≤ R) :
+    triadInteraction B u t =
+      B (tailPart R u t.left) (shellPart R u t.right) := by
+  rw [triadInteraction_shell_tail_split B u R t,
+    shellPart_eq_zero_of_lt u hl, tailPart_eq_zero_of_le u hr]
+  simp
+
+/-- If the left source is inside and the right source is outside the shell,
+the exact interaction is the shell--tail sector; it is not discarded. -/
+theorem triadInteraction_eq_shellTail_of_left_le_right_lt
+    (B : U →+ U →+ V) (u : Ξ → U) {R : ℝ} (t : TriadSource Ξ)
+    (hl : ‖t.left‖ ≤ R) (hr : R < ‖t.right‖) :
+    triadInteraction B u t =
+      B (shellPart R u t.left) (tailPart R u t.right) := by
+  rw [triadInteraction_shell_tail_split B u R t,
+    tailPart_eq_zero_of_le u hl, shellPart_eq_zero_of_lt u hr]
+  simp
+
+/-- If both sources lie outside the retained shell, the full interaction is
+the tail--tail sector.  High-frequency pairs that return to a low output
+frequency therefore remain visible to later convolution consumers. -/
+theorem triadInteraction_eq_tailTail_of_both_lt
+    (B : U →+ U →+ V) (u : Ξ → U) {R : ℝ} (t : TriadSource Ξ)
+    (hl : R < ‖t.left‖) (hr : R < ‖t.right‖) :
+    triadInteraction B u t =
+      B (tailPart R u t.left) (tailPart R u t.right) := by
+  rw [triadInteraction_shell_tail_split B u R t,
+    shellPart_eq_zero_of_lt u hl, shellPart_eq_zero_of_lt u hr]
+  simp
+
+
+end SourceLabeledTriadSplit
+
+
+/-!
+## Fourier Navier--Stokes convective triad and Leray projection
+
+We now choose the Fourier convention
+
+  f-hat(ξ) = ∫ exp(-2π i x·ξ) f(x) dx,
+
+so a spatial derivative contributes the multiplier 2π i ξ.  For one
+source-labelled pair (η, ζ) with output ξ = η + ζ, the unprojected
+convective coefficient used below is
+
+  (2π i) (ζ · a) b.
+
+The Leray map is written explicitly as subtraction of the longitudinal
+component.  The zero output frequency is treated by a separate branch.
+The key transverse-output theorem is source-local: it does not sum or
+integrate over equal output frequencies and therefore does not erase the
+two input labels.
+
+The exact shell/tail expansion is proved before any finite spherical or
+helical approximation.  No norm-smallness, PDE solution, global regularity,
+or identification with the finite moment operator is asserted here.
+
+SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+section FourierNavierStokesTriad
+
+open scoped BigOperators
+
+/-- Complexification of a real Fourier frequency, used as the longitudinal
+direction in the Leray correction. -/
+def complexFrequency (ξ : FourierFrequency3) : FourierVelocity3 :=
+  fun i => (ξ i : ℂ)
+
+/-- The scalar denominator of the longitudinal correction.  It is defined
+source-exactly through the already fixed divergence pairing. -/
+def lerayDenominator (ξ : FourierFrequency3) : ℂ :=
+  fourierDivergencePairing ξ (complexFrequency ξ)
+
+/-- The Fourier-divergence pairing is complex-linear in the velocity
+coefficient, even though the source-level transversality interface only
+needed its additive structure. -/
+theorem fourierDivergencePairing_smul
+    (ξ : FourierFrequency3) (c : ℂ) (v : FourierVelocity3) :
+    fourierDivergencePairing ξ (c • v) =
+      c * fourierDivergencePairing ξ v := by
+  simp [fourierDivergencePairing, Finset.mul_sum, mul_assoc, mul_left_comm,
+    mul_comm]
+
+/-- Explicit Leray correction.  At zero output frequency we keep the
+coefficient unchanged; away from zero the longitudinal component is removed.
+The denominator is retained literally rather than hidden in an error term. -/
+def lerayProject (ξ : FourierFrequency3) (v : FourierVelocity3) :
+    FourierVelocity3 :=
+  if ξ = 0 then v
+  else v - (fourierDivergencePairing ξ v / lerayDenominator ξ) • complexFrequency ξ
+
+/-- The zero Fourier mode uses the explicit identity branch. -/
+theorem lerayProject_zero (v : FourierVelocity3) :
+    lerayProject 0 v = v := by
+  simp [lerayProject]
+
+/-- Whenever the explicit longitudinal denominator is nonzero, the Leray
+correction is exactly transverse at the output frequency.  A separate source
+lemma below identifies that denominator with the Euclidean squared norm. -/
+theorem lerayProject_transverse_of_denominator_ne_zero
+    {ξ : FourierFrequency3} (hξ : ξ ≠ 0)
+    (hden : lerayDenominator ξ ≠ 0) (v : FourierVelocity3) :
+    fourierDivergencePairing ξ (lerayProject ξ v) = 0 := by
+  rw [lerayProject, if_neg hξ]
+  rw [map_sub, fourierDivergencePairing_smul]
+  simp only [lerayDenominator]
+  field_simp
+
+/-- Under the chosen exp(-2π i x·ξ) Fourier convention, one unprojected
+source-labelled convective interaction is (2π i) (ζ·a) b. -/
+def navierStokesConvectiveTriad
+    (t : TriadSource FourierFrequency3)
+    (a b : FourierVelocity3) : FourierVelocity3 :=
+  fun i =>
+    ((2 * Real.pi : ℂ) * Complex.I) *
+      fourierDivergencePairing t.right a * b i
+
+/-- The projected source-labelled Navier--Stokes triad.  Projection is taken
+at the actual additive output frequency η + ζ. -/
+def navierStokesLerayTriad
+    (t : TriadSource FourierFrequency3)
+    (a b : FourierVelocity3) : FourierVelocity3 :=
+  lerayProject t.outputFrequency (navierStokesConvectiveTriad t a b)
+
+/-- If the explicit Leray denominator at the nonzero output frequency is
+nonzero, every projected source-labelled convective triad is transverse at
+that exact output frequency. -/
+theorem navierStokesLerayTriad_transverse
+    (t : TriadSource FourierFrequency3)
+    (hout : t.outputFrequency ≠ 0)
+    (hden : lerayDenominator t.outputFrequency ≠ 0)
+    (a b : FourierVelocity3) :
+    fourierDivergencePairing t.outputFrequency
+      (navierStokesLerayTriad t a b) = 0 := by
+  exact lerayProject_transverse_of_denominator_ne_zero
+    hout hden (navierStokesConvectiveTriad t a b)
+
+/-- The unprojected convective source is exactly biadditive in the two
+velocity inputs. -/
+theorem navierStokesConvectiveTriad_add_add
+    (t : TriadSource FourierFrequency3)
+    (a₁ a₂ b₁ b₂ : FourierVelocity3) :
+    navierStokesConvectiveTriad t (a₁ + a₂) (b₁ + b₂) =
+      navierStokesConvectiveTriad t a₁ b₁ +
+      navierStokesConvectiveTriad t a₁ b₂ +
+      navierStokesConvectiveTriad t a₂ b₁ +
+      navierStokesConvectiveTriad t a₂ b₂ := by
+  funext i
+  simp [navierStokesConvectiveTriad, fourierDivergencePairing, mul_add]
+  ring
+
+/-- Exact four-sector source decomposition for the actual chosen convective
+triad kernel.  In particular the tail--tail sector is retained even when its
+two high-frequency inputs add to a low output frequency. -/
+theorem navierStokesConvectiveTriad_shell_tail_split
+    (u : FourierFrequency3 → FourierVelocity3)
+    (R : ℝ) (t : TriadSource FourierFrequency3) :
+    navierStokesConvectiveTriad t (u t.left) (u t.right) =
+      navierStokesConvectiveTriad t
+          (shellPart R u t.left) (shellPart R u t.right) +
+      navierStokesConvectiveTriad t
+          (shellPart R u t.left) (tailPart R u t.right) +
+      navierStokesConvectiveTriad t
+          (tailPart R u t.left) (shellPart R u t.right) +
+      navierStokesConvectiveTriad t
+          (tailPart R u t.left) (tailPart R u t.right) := by
+  rw [← shell_add_tail R u t.left, ← shell_add_tail R u t.right]
+  exact navierStokesConvectiveTriad_add_add t _ _ _ _
+
+/-- The same four-sector identity survives any additive output operator,
+including the explicit Leray projection once its additivity is supplied.
+This form isolates the exact remaining API obligation instead of silently
+assuming it. -/
+theorem navierStokesProjected_shell_tail_split
+    (P : FourierVelocity3 →+ FourierVelocity3)
+    (u : FourierFrequency3 → FourierVelocity3)
+    (R : ℝ) (t : TriadSource FourierFrequency3) :
+    P (navierStokesConvectiveTriad t (u t.left) (u t.right)) =
+      P (navierStokesConvectiveTriad t
+          (shellPart R u t.left) (shellPart R u t.right)) +
+      P (navierStokesConvectiveTriad t
+          (shellPart R u t.left) (tailPart R u t.right)) +
+      P (navierStokesConvectiveTriad t
+          (tailPart R u t.left) (shellPart R u t.right)) +
+      P (navierStokesConvectiveTriad t
+          (tailPart R u t.left) (tailPart R u t.right)) := by
+  rw [navierStokesConvectiveTriad_shell_tail_split u R t]
+  simp only [map_add]
+
+end FourierNavierStokesTriad
 
 
 end
