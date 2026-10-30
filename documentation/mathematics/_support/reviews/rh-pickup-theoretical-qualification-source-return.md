@@ -4,7 +4,7 @@ Local attribution: grwtsk contributors.
 
 **Reviewed mathematical scope:** source-exact comparison of the canonical RH-facing pickup cross energy with the prescribed endpoint quadrature and its actual observed samples. **Analytical conclusion:** two complete signed comparison identities and source-bound one-sided approximation estimates. **Not claimed:** a new arithmetic cancellation estimate, construction of good scales, a proof of RH, or fresh Lean kernel checking.
 
-**Inspected sources:** \`GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean\`, blob \`2606536c56bdcb33d120aeddfbcbeef793e31ba1\`; \`GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/TheoreticalQualification.lean\`, blob \`301228a02fca2352ad7a55f23784f39d42210be8\`; and the new \`PickupTheoreticalQualification.lean\`, blob \`40d71dd5125a50ded72a9ac21cd65dc42ed25eff\` at commit \`b67643bbc309cc7cd15aab94e64213b868f9086d\`.
+**Inspected sources:** \`GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean\`, blob \`2606536c56bdcb33d120aeddfbcbeef793e31ba1\`; \`GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/TheoreticalQualification.lean\`, blob \`301228a02fca2352ad7a55f23784f39d42210be8\`; and the new \`PickupTheoreticalQualification.lean\`, blob \`efccb459fa18f5b9779ae4f9045c4d0ec5029069\` at commit \`261aa309cb109ea2929a02728c44533dd84b059d\`.
 
 ## 1. Actual objects and source identity
 
