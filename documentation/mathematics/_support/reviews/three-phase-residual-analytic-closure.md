@@ -156,6 +156,33 @@ Therefore ordinary \(A^\ast A=I\) is **not enough** in the raw two-coordinate ch
 4. **General \(SU(3)\) does not commute with heat:** a unitary mixing \(c\) and \(e_+\) has a nonzero off-block entry, and hence fails \(VH_t=H_tV\) for \(t>0\).
 5. **Invariant probes alone do not improve an operator defect:** if \(P\) and \(J\) are transported by the same unitary conjugation, the operator norm obeys \(\|VPV^{-1}-VJV^{-1}\|=\|P-J\|\). Pure torsion cannot establish a strict defect improvement without a genuine new source-bound cancellation or comparison.
 
+### Nonlinear Fourier obstruction: an exact high–high-to-low triad
+
+For any integer \(N\ge 2\), choose
+
+\[
+\eta=(N,N,0),\qquad
+\zeta=(1-N,-N,0),\qquad
+\xi=\eta+\zeta=(1,0,0),
+\]
+\[
+a=(1,-1,0),\qquad b=(N,1-N,0).
+\]
+
+Both input coefficients are divergence-free at their own input frequencies:
+\(\eta\cdot a=0\) and \(\zeta\cdot b=0\). Nevertheless
+\(\zeta\cdot a=1\), and the nonzero-frequency Leray projector at \(\xi\) sends
+\(b\) to \(P_\xi b=(0,1-N,0)\neq0\). Consequently the source-labelled
+Fourier convective triad \((2\pi i)(\zeta\cdot a)P_\xi b\) is nonzero, even
+as \(\|\eta\|\) and \(\|\zeta\|\) grow arbitrarily while the output
+\(\|\xi\|=1\) stays fixed.
+
+This explicit hostile fixture shows that incompressibility, Leray projection
+and positive source energy do **not** independently eliminate high–high-to-low
+backscatter. Any proposed tail theorem must account for it in the actual
+summed/integrated nonlinear source; merely suppressing the tail–tail sector
+cannot prove the Navier–Stokes operator defect.
+
 ### Independent exact symbolic diagnostic (not a substitute for the above proofs)
 
 The following exact identities were independently evaluated by symbolic matrix algebra on the proposed formulas: \(G\) has eigenvalues \(1,3\); \(S^\ast S=G\); \(\det S=-\sqrt3\); and the cross-block entries of \([H_t,V]\) are multiplied by \(1-e^{-3t}\). This is finite diagnostic corroboration, not a global mathematical proof or Lean kernel receipt.
