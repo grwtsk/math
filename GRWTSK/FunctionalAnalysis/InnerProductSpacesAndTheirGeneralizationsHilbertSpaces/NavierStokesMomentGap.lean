@@ -1247,7 +1247,167 @@ theorem triadInteraction_eq_tailTail_of_both_lt
     shellPart_eq_zero_of_lt u hl, shellPart_eq_zero_of_lt u hr]
   simp
 
+
 end SourceLabeledTriadSplit
+
+
+/-!
+## Fourier Navier--Stokes convective triad and Leray projection
+
+We now choose the Fourier convention
+
+  f-hat(ξ) = ∫ exp(-2π i x·ξ) f(x) dx,
+
+so a spatial derivative contributes the multiplier 2π i ξ.  For one
+source-labelled pair (η, ζ) with output ξ = η + ζ, the unprojected
+convective coefficient used below is
+
+  (2π i) (ζ · a) b.
+
+The Leray map is written explicitly as subtraction of the longitudinal
+component.  The zero output frequency is treated by a separate branch.
+The key transverse-output theorem is source-local: it does not sum or
+integrate over equal output frequencies and therefore does not erase the
+two input labels.
+
+The exact shell/tail expansion is proved before any finite spherical or
+helical approximation.  No norm-smallness, PDE solution, global regularity,
+or identification with the finite moment operator is asserted here.
+
+SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+section FourierNavierStokesTriad
+
+open scoped BigOperators
+
+/-- Complexification of a real Fourier frequency, used as the longitudinal
+direction in the Leray correction. -/
+def complexFrequency (ξ : FourierFrequency3) : FourierVelocity3 :=
+  fun i => (ξ i : ℂ)
+
+/-- The scalar denominator of the longitudinal correction.  It is defined
+source-exactly through the already fixed divergence pairing. -/
+def lerayDenominator (ξ : FourierFrequency3) : ℂ :=
+  fourierDivergencePairing ξ (complexFrequency ξ)
+
+/-- The Fourier-divergence pairing is complex-linear in the velocity
+coefficient, even though the source-level transversality interface only
+needed its additive structure. -/
+theorem fourierDivergencePairing_smul
+    (ξ : FourierFrequency3) (c : ℂ) (v : FourierVelocity3) :
+    fourierDivergencePairing ξ (c • v) =
+      c * fourierDivergencePairing ξ v := by
+  simp [fourierDivergencePairing, Finset.mul_sum, mul_assoc, mul_left_comm,
+    mul_comm]
+
+/-- Explicit Leray correction.  At zero output frequency we keep the
+coefficient unchanged; away from zero the longitudinal component is removed.
+The denominator is retained literally rather than hidden in an error term. -/
+def lerayProject (ξ : FourierFrequency3) (v : FourierVelocity3) :
+    FourierVelocity3 :=
+  if ξ = 0 then v
+  else v - (fourierDivergencePairing ξ v / lerayDenominator ξ) • complexFrequency ξ
+
+/-- The zero Fourier mode uses the explicit identity branch. -/
+theorem lerayProject_zero (v : FourierVelocity3) :
+    lerayProject 0 v = v := by
+  simp [lerayProject]
+
+/-- Whenever the explicit longitudinal denominator is nonzero, the Leray
+correction is exactly transverse at the output frequency.  A separate source
+lemma below identifies that denominator with the Euclidean squared norm. -/
+theorem lerayProject_transverse_of_denominator_ne_zero
+    {ξ : FourierFrequency3} (hξ : ξ ≠ 0)
+    (hden : lerayDenominator ξ ≠ 0) (v : FourierVelocity3) :
+    fourierDivergencePairing ξ (lerayProject ξ v) = 0 := by
+  rw [lerayProject, if_neg hξ]
+  rw [map_sub, fourierDivergencePairing_smul]
+  simp only [lerayDenominator]
+  field_simp
+
+/-- Under the chosen exp(-2π i x·ξ) Fourier convention, one unprojected
+source-labelled convective interaction is (2π i) (ζ·a) b. -/
+def navierStokesConvectiveTriad
+    (t : TriadSource FourierFrequency3)
+    (a b : FourierVelocity3) : FourierVelocity3 :=
+  fun i =>
+    ((2 * Real.pi : ℂ) * Complex.I) *
+      fourierDivergencePairing t.right a * b i
+
+/-- The projected source-labelled Navier--Stokes triad.  Projection is taken
+at the actual additive output frequency η + ζ. -/
+def navierStokesLerayTriad
+    (t : TriadSource FourierFrequency3)
+    (a b : FourierVelocity3) : FourierVelocity3 :=
+  lerayProject t.outputFrequency (navierStokesConvectiveTriad t a b)
+
+/-- If the explicit Leray denominator at the nonzero output frequency is
+nonzero, every projected source-labelled convective triad is transverse at
+that exact output frequency. -/
+theorem navierStokesLerayTriad_transverse
+    (t : TriadSource FourierFrequency3)
+    (hout : t.outputFrequency ≠ 0)
+    (hden : lerayDenominator t.outputFrequency ≠ 0)
+    (a b : FourierVelocity3) :
+    fourierDivergencePairing t.outputFrequency
+      (navierStokesLerayTriad t a b) = 0 := by
+  exact lerayProject_transverse_of_denominator_ne_zero
+    hout hden (navierStokesConvectiveTriad t a b)
+
+/-- The unprojected convective source is exactly biadditive in the two
+velocity inputs. -/
+theorem navierStokesConvectiveTriad_add_add
+    (t : TriadSource FourierFrequency3)
+    (a₁ a₂ b₁ b₂ : FourierVelocity3) :
+    navierStokesConvectiveTriad t (a₁ + a₂) (b₁ + b₂) =
+      navierStokesConvectiveTriad t a₁ b₁ +
+      navierStokesConvectiveTriad t a₁ b₂ +
+      navierStokesConvectiveTriad t a₂ b₁ +
+      navierStokesConvectiveTriad t a₂ b₂ := by
+  funext i
+  simp [navierStokesConvectiveTriad, fourierDivergencePairing, mul_add]
+  ring
+
+/-- Exact four-sector source decomposition for the actual chosen convective
+triad kernel.  In particular the tail--tail sector is retained even when its
+two high-frequency inputs add to a low output frequency. -/
+theorem navierStokesConvectiveTriad_shell_tail_split
+    (u : FourierFrequency3 → FourierVelocity3)
+    (R : ℝ) (t : TriadSource FourierFrequency3) :
+    navierStokesConvectiveTriad t (u t.left) (u t.right) =
+      navierStokesConvectiveTriad t
+          (shellPart R u t.left) (shellPart R u t.right) +
+      navierStokesConvectiveTriad t
+          (shellPart R u t.left) (tailPart R u t.right) +
+      navierStokesConvectiveTriad t
+          (tailPart R u t.left) (shellPart R u t.right) +
+      navierStokesConvectiveTriad t
+          (tailPart R u t.left) (tailPart R u t.right) := by
+  rw [← shell_add_tail R u t.left, ← shell_add_tail R u t.right]
+  exact navierStokesConvectiveTriad_add_add t _ _ _ _
+
+/-- The same four-sector identity survives any additive output operator,
+including the explicit Leray projection once its additivity is supplied.
+This form isolates the exact remaining API obligation instead of silently
+assuming it. -/
+theorem navierStokesProjected_shell_tail_split
+    (P : FourierVelocity3 →+ FourierVelocity3)
+    (u : FourierFrequency3 → FourierVelocity3)
+    (R : ℝ) (t : TriadSource FourierFrequency3) :
+    P (navierStokesConvectiveTriad t (u t.left) (u t.right)) =
+      P (navierStokesConvectiveTriad t
+          (shellPart R u t.left) (shellPart R u t.right)) +
+      P (navierStokesConvectiveTriad t
+          (shellPart R u t.left) (tailPart R u t.right)) +
+      P (navierStokesConvectiveTriad t
+          (tailPart R u t.left) (shellPart R u t.right)) +
+      P (navierStokesConvectiveTriad t
+          (tailPart R u t.left) (tailPart R u t.right)) := by
+  rw [navierStokesConvectiveTriad_shell_tail_split u R t]
+  simp only [map_add]
+
+end FourierNavierStokesTriad
 
 
 end
