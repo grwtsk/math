@@ -1,0 +1,63 @@
+{
+  "title": "Taylor series",
+  "byline": "Grant Sanderson",
+  "text_adaptation": "Kurt Bruns",
+  "date": "2017-05-07",
+  "primary_url": "https://www.3blue1brown.com/lessons/taylor-series/",
+  "retained_html_sha256": "ac4dd2ead35d963bbdb7c7574580aaeb3b43decb70370eea6998ae4e0c4bf853",
+  "source": "GRWTSK/ApproximationsAndExpansions/SeriesExpansionsEGTaylorLidstoneSeriesButNotFourierSeries/TaylorLogarithmBoundaries.lean",
+  "blob": "6b72f507dbd124110e1a9c1395cb52a687d2006f",
+  "namespace": "GRWTSK.Approximation.TaylorLogarithmBoundaries",
+  "theorems": [
+    "geometric_polynomial_continuous",
+    "geometric_remainder",
+    "geometric_remainder_bound",
+    "geometric_integral",
+    "reciprocal_integral",
+    "endpoint_two_error",
+    "endpoint_two_tendsto",
+    "endpoint_zero_polynomial",
+    "endpoint_zero_atBot",
+    "endpoint_zero_no_finite_limit",
+    "polynomial_successor_difference",
+    "logarithm_term_norm",
+    "exterior_reciprocal_terms",
+    "exterior_terms_not_zero",
+    "exterior_no_finite_limit",
+    "right_exterior_no_finite_limit",
+    "maximal_symmetric_neighborhood"
+  ],
+  "scope": "Actual constructed shiftedEval log at center1: endpoint2 ordered convergence with error1/(N+1), endpoint0 atBot/no finite limit, actual consecutive-term obstruction outside abs(x-1)>1, maximal symmetric open convergence neighborhood radius1.",
+  "hypotheses": "N natural including0; integral comparisons on0<=t<=1, denominator1+t>0; exterior abs(x-1)>1 and arbitrary finite L; maximal neighborhood r>0. Interior supplier retains0<x<2. Positive-domain log excludes0 independently of total Real.log0.",
+  "method": "Endpoint2 integrates actual finite geometric polynomial and its remainder; NOT unconditional HasSum. Exterior uses reciprocal actual term norms tending0 and their product1 to refute term-to-zero, then actual successor-difference return. No inference from NOT Summable to ordered divergence.",
+  "inherited_candidates": [
+    {
+      "commit": "bc18ddbae139d1d8ab1b48fca558142ae74c99d4",
+      "blob": "9152dd9c48b23a6339b5785166ddba4d17057519",
+      "role": "Actual constructed signed finite-polynomial identity and strict-interior convergence, unchecked"
+    }
+  ],
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean": "efe8fff89fbf1782b4a42a89038f51f9d862c562",
+      "Mathlib/Analysis/PSeries.lean": "4bb5bb9bfa696fafa8776e4f41dbd7c12a8948b0",
+      "Mathlib/Analysis/SpecificLimits/Normed.lean": "b033d8917bbd2c274f2bb55e6b07c46c9204db5b",
+      "Mathlib/Algebra/Ring/GeomSum.lean": "14c675fd023d5e0e62b207d531a33c339efb1129",
+      "Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean": "2504147e2230a26eb804b0898004d0186c4e36a1"
+    },
+    "role": "Finite geometric identity, specific interval integrals/triangle/monotonicity, harmonic divergence and polynomial/exponential growth comparison; imported mathematics not local acceptance"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Actual constructed sine/cosine infinite Taylor-polynomial convergence",
+    "General analytic remainder/analyticity versus smoothness",
+    "Full spoken-video coverage and all source-bound verification"
+  ],
+  "video_verified_complete": false
+}
