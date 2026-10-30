@@ -1,0 +1,20 @@
+{
+  "contracts": [
+    {
+      "source": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/SublinearExponent.lean",
+      "declarations": [
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.zero_isSublinear",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.delayedLinear_prefix",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.delayedLinear_not_isSublinear",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.finitePrefix_ambiguous",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.noPrefixClassifier",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.constant_isSublinear",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.affine",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.add",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.affine_add"
+      ],
+      "allowed_axioms": []
+    }
+  ],
+  "compiler_wall_seconds": 30
+}

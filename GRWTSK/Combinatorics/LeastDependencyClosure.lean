@@ -3632,4 +3632,13 @@ theorem privateIndexArchive_v130_lower_bound (rawA rawB archive : Bool)
   sharedArchiveCost_lower_bound 228235862 228235820 280347620 1818
     (by decide) rawA rawB archive feasible
 
+/-- A further parameter instance for two atomic raw groups, each containing
+ two private snapshots, versus a bundle of their four exact gzip encodings.
+ Partial groups and decoder/runtime correctness are outside this finite model. -/
+theorem privateIndexArchive_v131_lower_bound (rawA rawB archive : Bool)
+    (feasible : sharedArchiveFeasible rawA rawB archive) :
+    442369866 ≤ sharedArchiveCost 468433420 346015983 442366760 3106 rawA rawB archive :=
+  sharedArchiveCost_lower_bound 468433420 346015983 442366760 3106
+    (by decide) rawA rawB archive feasible
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
