@@ -142,7 +142,10 @@ permutation commute, so neither action is silently treated as heat. -/
 theorem twist_cyclic (a : ℂ) (z : Phase3) :
     twist a (cyclic z) = cyclic (twist a z) := by
   funext j
-  simp only [twist, cyclic, mean_cyclic, residual_cyclic]
+  change mean (cyclic z) + a * residual (cyclic z) j =
+    mean z + a * residual z (j + 1)
+  rw [mean_cyclic, residual_cyclic]
+  rfl
 
 /-- Two complex coordinates give an exact algebraic presentation of the
 zero-mean residual plane, but not an orthonormal coordinate basis. -/
