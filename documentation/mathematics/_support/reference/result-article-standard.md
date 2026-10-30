@@ -1,9 +1,9 @@
 # Result article standard
 
-Local attribution: grwtsk contributors.
+Collective copyright attribution: grwtsk contributors. Scholarly bylines credit the human author or chosen human collective.
 
 Mathematical result articles live beside their subjects under
-[`docs/mathematics`](../../index.md). A leaf states one coherent result;
+[`documentation/mathematics`](../../index.md). A leaf states one coherent result;
 a composite states a conclusion whose proof connects several branches. Both
 have one canonical article identity and can be previewed in every reviewed
 subject to which they belong. Shared articles and dependencies are counted once.
@@ -51,8 +51,10 @@ END RESULT ARTICLE METADATA -->
 
 This is the single authoritative record. A bounded visible Abstract block is
 rendered directly from its `abstract` field; it is not a second editable
-abstract. The authoring tool checks for derived-text drift and synchronizes
-only that block. Existing authored proof prose stays intact.
+abstract. A separate generated paper-status table derives from optional
+`paper_status` metadata where available. The authoring tool checks for
+derived-text drift rather than treating generated pages as proof evidence.
+Existing authored proof prose stays intact.
 
 Legacy JSON-form YAML front matter remains readable. Duplicate hidden records,
 unmatched markers, or simultaneous legacy and hidden article records are
@@ -63,13 +65,14 @@ errors; new articles use the hidden form.
 | `id` | Persistent article identity, independent of title and location. |
 | `slug`, `aliases` | Readable canonical slug and retained previous slugs; collisions are errors. |
 | `kind` | `leaf` or `composite`. |
-| `title`, `author`, `abstract` | Article title, exactly `grwtsk contributors`, and self-contained abstract. |
+| `title`, `author`, `abstract` | Article title, a nonempty publicly authorized human or collective-human byline (default `grwtsk contributors`), and self-contained abstract. The byline is not Git author identity or copyright transfer. |
 | `subjects` | Primary stable subject ID and additional proposed/reviewed associations with rationale. |
 | `statements` | Exact hypotheses, conclusion, classification, fully qualified declarations, and source pins per statement. |
 | `verification` | Recorded status, exact scope, evidence references and pins, axiom policy, and unresolved premises. |
 | `composition` | Composite roots, component article IDs, conclusion, bridge status/declarations, and unresolved premises; null for a leaf. |
 | `issue` | Positive revision, canonical date, and actual issuance timestamp, separately recorded. |
 | `metrics` | Optional observations with value, method, version, coverage, and provenance. |
+| `paper_status` | Optional evidence-scoped mathematical claim, source comparison, novelty, computation, review, provenance, access/feedback, and publication-stage assessments. New scaffolds default to draft/unassessed; historical missing metadata remains `UNRECORDED`. |
 
 Aliases are validated metadata, not automatic redirects. Existing paths remain
 addressable until a separately checked link migration preserves their readers.
@@ -92,7 +95,15 @@ The [repository-wide proof-comparison disposition](proof-comparison-disposition.
 
 In the **Proof** section, explain the analytic mechanism, every hypothesis and the actual source objects, rather than treating a compiler success or a theorem name as the argument. In **Composition**, compare objects or representations by exact maps, invariants, signed remainders and their downstream consumers. Where an analytically distinct second route is available, state how it derives the same conclusion and which foundations it shares; seek hostile cases that could expose circularity or a false transfer. Do not manufacture multiple routes just to satisfy a count or invalidate a legitimate one-proof result.
 
-In **Verification and trust boundary**, record **two independent axes**: mathematical/analytical assessment (including comparison, unresolved source bridge, counterexample and independent-route disposition) and formal source evidence (`NOT_RUN`, `UNASSESSED`, `SCOPED_EVIDENCE`, `KERNEL_VERIFIED` with exact revisions and receipts). A theorem can be kernel checked without an established cross-object transfer; an analytic proof can be valid without being formalized. Neither axis is a substitute for the other.
+In **Verification and trust boundary**, assess the mathematical argument and
+the formal source evidence independently, and additionally distinguish
+source fidelity, novelty, computation, review, provenance, and publication
+stage. Formal source status remains `NOT_RUN`, `UNASSESSED`,
+`SCOPED_EVIDENCE`, or `KERNEL_VERIFIED` with exact revisions and receipts.
+A theorem can be kernel checked without an established cross-object transfer;
+an analytic proof can be valid without being formalized. Publishing does not
+assert novelty or journal acceptance. None of these dimensions substitutes
+for another.
 
 For legacy articles, make the comparison assessment only when a source has actually been examined. Mark unreviewed/blocked scope; retain existing verification fields, source pins and historical acceptance. Do not claim an entire corpus was independently reviewed by publishing this requirement.
 

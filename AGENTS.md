@@ -2,7 +2,7 @@
 
 This repository is the canonical pure mathematical source for GRWTSK.
 
-- Use exactly `grwtsk contributors` for local attribution in bylines, copyright notices, and metadata; keep individual personal names out of local attribution. Preserve actual upstream author attribution and license obligations. Treat calculators, crayons/drawings, logarithmic rules, books, search, educational media, symbolic/numerical computation, formal systems and generative models as mathematical tools; acknowledge evidenced operations without promotional language for their vendors.
+- Use `grwtsk contributors` as the default collective-human byline and collective local copyright notice, not as an exclusive author identity. Human authors may receive source-specific public bylines in their own or chosen collective/pseudonymous form with consent; preserve actual upstream author attribution, ownership, and license obligations. Treat calculators, drawings, slide rules, books, search, educational media, symbolic/numerical computation, formal systems, and generative models as tools whose evidenced roles are acknowledged without provider promotion.
 - Keep maintained mathematical declarations under `GRWTSK.*` or explicit upstream dependencies.
 - Place definitions and theorems by mathematical subject, not by orchestration workflow.
 - Use the official MSC2020 heading hierarchy for maintained source folders, bound by `documentation/taxonomy/msc2020/source-layout-v1.json`. Preserve existing declaration namespaces and source verification scopes. PMD IDs are retired; source provenance is independent of taxonomy metadata.
@@ -28,8 +28,8 @@ This repository is the canonical pure mathematical source for GRWTSK.
 
 ## Privacy and local attribution
 
-- Use exactly `grwtsk contributors` for local content attribution. For commits made by local automation on behalf of this checkout owner, use `grwtsk <contributors@grwtsk.invalid>`. Anyone may contribute under their own Git author and committer identity; preserve other contributors’ attribution. Do not enforce a repository-wide commit identity or rewrite other contributors’ identities.
-- Where an individual human reference is necessary, use only `R.A.` or `Hs`. Keep personal names, personal email addresses, private account handles, and personal device identifiers out of maintained content.
+- Anyone may contribute under their chosen public Git author and committer identity, including through an authorized publishing tool. No fixed Git name or email (including `grwtsk <contributors@grwtsk.invalid>`) is required. Preserve commit identities and do not impersonate people or rewrite another contributor’s authorship. Collective local copyright notices use `grwtsk contributors` where applicable; human scholarly authorship and copyright are separate from Git metadata and recorded tool operations. This policy does not transfer contributor or upstream rights.
+- Continue to use `R.A.` or `Hs` for privacy-protected local individuals unless they explicitly authorize different public attribution. Other human contributors may use their chosen public names or pseudonyms with consent. Do not expose nonpublic personal names, email addresses, account handles, or device identifiers in maintained content.
 - Preserve public researchers' source bylines, upstream authorship, and license obligations.
 - Privacy redactions affect historical source displays, encoded recipes, and receipts. Original hashes and source pins describe pre-redaction evidence; they do not certify edited bytes. Redaction and rewritten Git identities do not establish fresh replay, kernel verification, or stronger mathematical acceptance.
 
