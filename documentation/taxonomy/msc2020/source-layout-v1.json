@@ -1426902,6 +1426902,25 @@
       "target_sha256": "7c88aea09f32385bf20a23618036fbb382de6ee1ebedbfc0836f511e3d166e30",
       "target_git_blob": "4fee32ac0967561951e26af9176334e4deb4d49b",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/DerivativeLocalTransform.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/DerivativeLocalTransform.lean",
+      "source_sha256": "f4814f2c7062dc02bd4eb389a65df28c04fc7205c2b5f4a54349c293e7557284",
+      "input_blob": "433be1002fe67ff2c18667f122e15fc94662ef58",
+      "source_kind": "lean_source",
+      "msc_code": "26A24",
+      "msc_label": "Differentiation (real functions of one variable): general theory, generalized derivatives, mean value theorems",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual bounded-cluster local rescaled transformation and fixed-point derivative magnitude consumers",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "433be1002fe67ff2c18667f122e15fc94662ef58",
+      "target_sha256": "f4814f2c7062dc02bd4eb389a65df28c04fc7205c2b5f4a54349c293e7557284",
+      "target_git_blob": "433be1002fe67ff2c18667f122e15fc94662ef58",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
