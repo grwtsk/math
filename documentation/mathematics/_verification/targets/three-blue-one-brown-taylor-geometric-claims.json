@@ -1,0 +1,53 @@
+{
+  "title": "Taylor series (geometric view)",
+  "byline": "Grant Sanderson",
+  "text_adaptation": "Kurt Bruns",
+  "date": "2017-05-07",
+  "primary_url": "https://www.3blue1brown.com/lessons/taylor-series-geometric-view/",
+  "retained_html_sha256": "9927381f15a69684a33d91de2d4d68fe5bb288868aa7a3dfeee031dc429ea89a",
+  "source": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/TaylorRectangleTriangle.lean",
+  "blob": "2f7b732732a2a6d6c97360a37ce058ea3f9830be",
+  "namespace": "GRWTSK.RealAnalysis.TaylorRectangleTriangle",
+  "theorems": [
+    "graph_continuous",
+    "graph_derivative",
+    "primitive_derivative",
+    "graph_integrable",
+    "integral_graph",
+    "accumulation_eq_primitive",
+    "accumulation_derivative",
+    "accumulation_second_derivative",
+    "rectangle_triangle_curvature",
+    "curvature_residual",
+    "curvature_error",
+    "affine_exact",
+    "source_derivative_consumer",
+    "triangle_measure",
+    "triangle_real_area",
+    "actual_area_correction",
+    "negative_slope_correction"
+  ],
+  "scope": "Actual quadratic graph primitive,oriented accumulated integral,first/second accumulation derivatives,rectangle/triangle/curvature identity and residual. Actual product-Lebesgue triangular region area and affine accumulation consumer.",
+  "hypotheses": "A,B,C,a,h real; signed identity/error for all h including0 and negative. Triangle geometric area needs B>=0,h>=0; negative slope correction boundary for h!=0. General arbitrary smooth-graph remainder not supplied.",
+  "method": "Actual graph derivative/continuity/integrability and primitive supply FTC; derived accumulation derivatives identify rectangle/triangle coefficients. Actual regionBetween and nonnegative affine height supply geometric measure,not an assumed area interface.",
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean": "82d269a5e9269d791f5581f5f0da29cfc125541a",
+      "Mathlib/MeasureTheory/Measure/Lebesgue/Integral.lean": "02ea8b19c7aa47e08121991426bb546c44fb9f08",
+      "Mathlib/Analysis/Calculus/Deriv/Pow.lean": "6873a8cf18c17369e5834a2e5084eb017a21c292"
+    },
+    "role": "FTC,actual regionBetween product-Lebesgue measure theorem,and polynomial derivative rules,imported mathematics not local acceptance"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "General differentiable graph integrated remainder and quadratic small-o approximation",
+    "Full spoken-video mapping and all source-bound verification"
+  ],
+  "video_verified_complete": false
+}

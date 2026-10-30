@@ -1426845,6 +1426845,25 @@
       "target_sha256": "c45ff13ed8bec891571419d2358b4306ee4ef07001bfe47cdba785dbfe67ffe8",
       "target_git_blob": "3cec2a6e0349b5b8d7bf4a91b2e95e682e81d0e7",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/TaylorRectangleTriangle.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/TaylorRectangleTriangle.lean",
+      "source_sha256": "69e759626f16b766a53d6094b6acc8722f2fc088bae7501a3b44d0a7850568c9",
+      "input_blob": "2f7b732732a2a6d6c97360a37ce058ea3f9830be",
+      "source_kind": "lean_source",
+      "msc_code": "26A42",
+      "msc_label": "Integrals of Riemann, Stieltjes and Lebesgue type",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual accumulated integral rectangle/triangle/curvature decomposition and product-Lebesgue triangle-area consumer",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "2f7b732732a2a6d6c97360a37ce058ea3f9830be",
+      "target_sha256": "69e759626f16b766a53d6094b6acc8722f2fc088bae7501a3b44d0a7850568c9",
+      "target_git_blob": "2f7b732732a2a6d6c97360a37ce058ea3f9830be",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
