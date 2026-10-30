@@ -1,0 +1,458 @@
+{
+  "schema": "grwtsk.source-supply-closure-obligations/1",
+  "local_attribution": "grwtsk contributors",
+  "classification": "STATIC_MATHEMATICAL_VERIFICATION_INPUT_SPECIFICATION",
+  "target": {
+    "math_commit": "c8c8e2be5d5766ddc03b6f0e90f2f81de575eb13",
+    "source_path": "adapters/openai-math/GRWTSK/NumberTheory/MultiplicativeNumberTheory/LiouvilleNormalizedReadouts.lean",
+    "source_blob": "41fd47c54def263e91175137de294aaa389c8e3b",
+    "source_sha256": "cd02fb5593103477e7a80bc9af2d136f1237ceeb85071eaf268f4d50dcdc4fe4",
+    "complete_module_interface_profile": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-module-interface-20261029.profile.json",
+    "complete_module_interface_profile_sha256": "d4a6ada22718c11a17790ffe112a92c959603f77cf8248cbde6556aa255cb3ce",
+    "required_declarations": [
+      "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_family_bound",
+      "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_unit_ball_bound"
+    ],
+    "expected_type_scope": "Both literal module-owned expected types and universe u in the referenced profile; complete compiler-owned census is required.",
+    "historical_failed_profile": "documentation/mathematics/_verification/targets/UpstreamAdapters/consumers-openai-math-20261029.profile.json",
+    "historical_outcome": "Preparation failed before registry/native admission on missing PrimeNumberTheoremAnd.Erdos970.MertensClassical. That historical profile selected two declarations without the later literal type consumers. No execution of the stronger profile is asserted."
+  },
+  "pnt_expected_inputs": {
+    "path": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-inputs-20261030.json",
+    "sha256": "77623fa638b266fbd9e607ed307d9a68cc4b2876b3154d0ea984241b3ea4901b"
+  },
+  "pnt_imports_supplied_by_expected_delta": [
+    {
+      "module": "PrimeNumberTheoremAnd.Erdos970.Auxiliary",
+      "path": "PrimeNumberTheoremAnd/Erdos970/Auxiliary.lean",
+      "blob": "0273e548adcdcfcbf96b860736c213dd6d1bc899",
+      "sha256": "e22d13e51a1c5c9b6b7e8649469b95d81e54edd1afc126152061242e60423b5a",
+      "origin": "DERIVED_EXACT_PATCH"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Erdos970.EulerMaclaurin",
+      "path": "PrimeNumberTheoremAnd/Erdos970/EulerMaclaurin.lean",
+      "blob": "ecfb419ed9d8c76593a61710d36f66e06bc9a457",
+      "sha256": "a7df60d3653cb8660b82aeae4d2aaa7145dc824ee643b4741e315bcc674ec4cc",
+      "origin": "DERIVED_EXACT_PATCH"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Erdos970.Fourier",
+      "path": "PrimeNumberTheoremAnd/Erdos970/Fourier.lean",
+      "blob": "32fe27cdbd44cd9ec2137e3e6567641bcbcfca85",
+      "sha256": "a21d6432f41a3cada598dba1ad9ceae6a48819be7cb99b06de65ab15c7b66fda",
+      "origin": "DERIVED_EXACT_PATCH"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Erdos970.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+      "path": "PrimeNumberTheoremAnd/Erdos970/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "blob": "b8b7136059bf5f2cae69f47f1a6a8d609ef22da9",
+      "sha256": "7a92a2aebfed9eaedaabdb4089cde4af4f85137d816790d68cc46b5cad56fbb1",
+      "origin": "DERIVED_EXACT_PATCH"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Erdos970.MertensClassical",
+      "path": "PrimeNumberTheoremAnd/Erdos970/MertensClassical.lean",
+      "blob": "8f3e823d7cedff9e294bacf7ec4f0c54c2df9b42",
+      "sha256": "37b0afe031bec4dea9fe77843b63ba2274c1718510c3e7b52678380bcbb9ae01",
+      "origin": "DERIVED_EXACT_PATCH"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Erdos970.Rectangle",
+      "path": "PrimeNumberTheoremAnd/Erdos970/Rectangle.lean",
+      "blob": "c87b920564d5573c7e76fd54bb937cafd5554ea2",
+      "sha256": "c1ac1588f8aa36ca6cce8a224f03f9293d6aa86add4bcef856b6fbbb7d684a62",
+      "origin": "DERIVED_EXACT_PATCH"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Erdos970.ResidueCalcOnRectangles",
+      "path": "PrimeNumberTheoremAnd/Erdos970/ResidueCalcOnRectangles.lean",
+      "blob": "b976da3b139fd5f760433b68546b0c0547a0db4d",
+      "sha256": "85d3dbda748e0068a094261d833f20fa3e924867778ed0772b647bbd64ebf3a6",
+      "origin": "DERIVED_EXACT_PATCH"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Erdos970.Sobolev",
+      "path": "PrimeNumberTheoremAnd/Erdos970/Sobolev.lean",
+      "blob": "3e83353068c1ca5f1475f715f2c0ddd7a8600a1d",
+      "sha256": "7eb6ec9ffffd0bfd8447e38b56dbeede8e7c5e2cefd71c0b47210c02d8223165",
+      "origin": "DERIVED_EXACT_PATCH"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Erdos970.Tactic.AdditiveCombination",
+      "path": "PrimeNumberTheoremAnd/Erdos970/Tactic/AdditiveCombination.lean",
+      "blob": "f79890f238b44f7b8d0a20d19dc6ab54454e0121",
+      "sha256": "80bc9e124e078093078d3d425e3099fcada4017ed590f09aae78873d0298eef9",
+      "origin": "DERIVED_EXACT_PATCH"
+    },
+    {
+      "module": "PrimeNumberTheoremAnd.Erdos970.ZetaBounds",
+      "path": "PrimeNumberTheoremAnd/Erdos970/ZetaBounds.lean",
+      "blob": "84113af0653a2de14590c2790c5610f8de6d9cd1",
+      "sha256": "9ef231a799661c1427f23283f97705934edcf3edfd9fdc931c9b517dea2cf676",
+      "origin": "DERIVED_EXACT_PATCH"
+    }
+  ],
+  "unresolved_strongpnt": {
+    "manifest_entry": {
+      "configFile": "lakefile.toml",
+      "inherited": true,
+      "inputRev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+      "manifestFile": "lake-manifest.json",
+      "name": "StrongPNT",
+      "rev": "2f5835c322314f55f1026ec2f139d704b7c45c69",
+      "scope": "",
+      "subDir": null,
+      "type": "git",
+      "url": "https://github.com/math-inc/strongpnt.git"
+    },
+    "required_modules": [
+      "StrongPNT.Erdos970.PNT2_LogDerivative",
+      "StrongPNT.Erdos970.PNT4_ZeroFreeRegion",
+      "StrongPNT.Erdos970.PNT5_Strong"
+    ],
+    "source_binding_status": "UNSUPPLIED",
+    "selection_boundary": "The historical failed profile supplied eleven dependency roots but no StrongPNT root. Declaring the package in the manifest does not select or materialize its sources.",
+    "tracked_oai_patch": {
+      "blob": "0269959e81418ffd738958089922f4eca4fec787",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "path": "lean/patches/StrongPNT-lean4341.patch",
+      "sha256": "2cac5cbef22987314f9293bebcf243d0a3341caaf0227925d1f8d4c31be924d7",
+      "bytes": 1248207,
+      "result_binding": "UNSUPPLIED_NOT_RECONSTRUCTED"
+    },
+    "incoming_declared_imports": [
+      {
+        "descendants": "UNRESOLVED_NOT_TRAVERSED",
+        "immediate_importer": {
+          "blob": "e7a823f061d25ed700d597133c48cbe2052a59ec",
+          "imports": [
+            "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTCharacterCenterBounds",
+            "StrongPNT.Erdos970.PNT2_LogDerivative"
+          ],
+          "path": "lean/OAI/NumberTheory/TwoPoint/ShortIntervals/MRTCharacterDisk.lean",
+          "provider": "OAI",
+          "revision": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+          "sha256": "87d6665e7b0c206ce60ed90b60134502a82db6f840bc831b7c9d56ff5228fad0",
+          "source_role": "PINNED_GIT_SOURCE"
+        },
+        "kind": "missing_or_ambiguous",
+        "module": "StrongPNT.Erdos970.PNT2_LogDerivative",
+        "shortest_declared_import_chain": [
+          "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts",
+          "OpenAITwoPointFiniteFamily",
+          "OAI.NumberTheory.TwoPointCorrelations.FinalMain",
+          "OAI.NumberTheory.TwoPoint.Main",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTInputsTheorem",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTRieszEstimate",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTRieszTails",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTZetaGrowth",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTZetaRightBound",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTPrincipalCorrection",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTCharacterZeroTerms",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTCharacterDisk",
+          "StrongPNT.Erdos970.PNT2_LogDerivative"
+        ]
+      },
+      {
+        "descendants": "UNRESOLVED_NOT_TRAVERSED",
+        "immediate_importer": {
+          "blob": "484595917db7cbc23537bff0f252f10dfee49a0b",
+          "imports": [
+            "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTCharacterLogGrowth",
+            "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTPrincipalCorrection",
+            "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTCharacterPositivity",
+            "StrongPNT.Erdos970.PNT4_ZeroFreeRegion"
+          ],
+          "path": "lean/OAI/NumberTheory/TwoPoint/ShortIntervals/MRTCharacterHighZeros.lean",
+          "provider": "OAI",
+          "revision": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+          "sha256": "d805c0903e96a75aa2b9d40c7a5335f530acbe74c541770e28ffc0ba3edbe827",
+          "source_role": "PINNED_GIT_SOURCE"
+        },
+        "kind": "missing_or_ambiguous",
+        "module": "StrongPNT.Erdos970.PNT4_ZeroFreeRegion",
+        "shortest_declared_import_chain": [
+          "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts",
+          "OpenAITwoPointFiniteFamily",
+          "OAI.NumberTheory.TwoPointCorrelations.FinalMain",
+          "OAI.NumberTheory.TwoPoint.Main",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTInputsTheorem",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTRieszEstimate",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTRieszContour",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTRieszPole",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTZetaPole",
+          "OAI.NumberTheory.TwoPoint.ShortIntervals.MRTCharacterHighZeros",
+          "StrongPNT.Erdos970.PNT4_ZeroFreeRegion"
+        ]
+      },
+      {
+        "descendants": "UNRESOLVED_NOT_TRAVERSED",
+        "immediate_importer": {
+          "blob": "59bd2d1603a0580786f1fd0e458454c35bcf51e9",
+          "imports": [
+            "OAI.NumberTheory.TwoPoint.Fourier.ModFiveUnsmoothing",
+            "StrongPNT.Erdos970.PNT5_Strong"
+          ],
+          "path": "lean/OAI/NumberTheory/TwoPoint/Fourier/ModFivePrincipalPsi.lean",
+          "provider": "OAI",
+          "revision": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+          "sha256": "7c3b9c7e1ade2086edc8342d9d0a59d1bc8d71a10be01d5e322fc8c63e4e4721",
+          "source_role": "PINNED_GIT_SOURCE"
+        },
+        "kind": "missing_or_ambiguous",
+        "module": "StrongPNT.Erdos970.PNT5_Strong",
+        "shortest_declared_import_chain": [
+          "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts",
+          "OpenAITwoPointFiniteFamily",
+          "OAI.NumberTheory.TwoPointCorrelations.FinalMain",
+          "OAI.NumberTheory.TwoPoint.Main",
+          "OAI.NumberTheory.TwoPoint.MainWithMRTInputs",
+          "OAI.NumberTheory.TwoPoint.PartiallyDischargedMain",
+          "OAI.NumberTheory.TwoPoint.Fourier.ModFivePrimeNumberTheorem",
+          "OAI.NumberTheory.TwoPoint.Fourier.ModFiveZetaPsi",
+          "OAI.NumberTheory.TwoPoint.Fourier.ModFivePrincipalPsi",
+          "StrongPNT.Erdos970.PNT5_Strong"
+        ]
+      }
+    ],
+    "requires": "Review the exact manifest base plus exact tracked OAI patch, every touched result and further declared dependencies through a supported supplier. These three unresolved modules do not exhaust the untraversed StrongPNT closure. No root selection, patch reconstruction/application or acceptance is supplied here."
+  },
+  "required_mathlib_source_assets": {
+    "repository": "leanprover-community/mathlib4",
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "assets": [
+      {
+        "blob": "da1dc364aece82daaadadb7a58a225850a4a87ad",
+        "bytes": 1838,
+        "path": "widget/src/penrose/commutative.dsl",
+        "provider": "mathlib",
+        "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "sha256": "b80d2dc18c1f00cf0bc11f52312c9eb43e1b2640b06b5e261281d4f1a5ca4a4d",
+        "mode": "100644"
+      },
+      {
+        "blob": "ba276afa7f29cc3738ad70464972064dc29ca979",
+        "bytes": 10817,
+        "path": "widget/src/penrose/commutative.sty",
+        "provider": "mathlib",
+        "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "sha256": "7586edc626e03f29eb6efca985d8039a2ae4776b51de2bf5ac0062e7be53414f",
+        "mode": "100644"
+      },
+      {
+        "blob": "61a619fe9fec00c0a3d39b3f85944c1db98508f3",
+        "bytes": 465,
+        "path": "widget/src/penrose/triangle.sub",
+        "provider": "mathlib",
+        "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "sha256": "5bcc2e21c6369251450dd6fdad0b4c2673078dfda282633c4c46f16096ae05a7",
+        "mode": "100644"
+      },
+      {
+        "blob": "d49a10ce64a0ef56e330b1fff919692d7d3b670e",
+        "bytes": 537,
+        "path": "widget/src/penrose/square.sub",
+        "provider": "mathlib",
+        "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "sha256": "9684f4d73bcc79924b2954a70a01c906bf5086e3376ba67bd1acb239c249f4bd",
+        "mode": "100644"
+      },
+      {
+        "blob": "a1607d5cf25b778773f833c4c30b6065c2b6f1a9",
+        "bytes": 308,
+        "path": "widget/src/penrose/monoidal.dsl",
+        "provider": "mathlib",
+        "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "sha256": "41da4fe6bf36ac29571f5317fa8b420a48661c2815779e00cfae64ab8fefa704",
+        "mode": "100644"
+      },
+      {
+        "blob": "2b4d0a819079048d525979eda3733ea9efbd5a77",
+        "bytes": 2345,
+        "path": "widget/src/penrose/monoidal.sty",
+        "provider": "mathlib",
+        "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "sha256": "6fd7cb6bd0988e30cd12de761a18880b301dc1ec2a302af88fe9bdf6869036ff",
+        "mode": "100644"
+      }
+    ],
+    "importer_sources": [
+      {
+        "blob": "4802000efadf9f0517a0298438f14f923272e6ee",
+        "imports": [
+          "Aesop",
+          "Mathlib.CategoryTheory.Category.Basic",
+          "Mathlib.Tactic.ToDual",
+          "ProofWidgets.Component.PenroseDiagram",
+          "ProofWidgets.Presentation.Expr"
+        ],
+        "path": "Mathlib/Tactic/Widget/CommDiag.lean",
+        "provider": "mathlib",
+        "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "sha256": "bb6b5d330a70b3f1b2cb98dc70449b4bf402f476aee45e8c4e788614fbe351b0",
+        "source_role": "PINNED_GIT_SOURCE"
+      },
+      {
+        "blob": "e80cbab1f050a569cdd190954ad886813596d826",
+        "imports": [
+          "ProofWidgets.Component.PenroseDiagram",
+          "ProofWidgets.Component.Panel.Basic",
+          "Mathlib.Data.List.Defs",
+          "Mathlib.Tactic.CategoryTheory.Bicategory.Normalize",
+          "Mathlib.Tactic.CategoryTheory.Coherence.Normalize",
+          "Mathlib.Tactic.CategoryTheory.Monoidal.Normalize",
+          "ProofWidgets.Component.HtmlDisplay",
+          "ProofWidgets.Presentation.Expr"
+        ],
+        "path": "Mathlib/Tactic/Widget/StringDiagram.lean",
+        "provider": "mathlib",
+        "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+        "sha256": "ddd09925ffeba3ee4ec8b4709351cd21ed58228e1ad12ba74323660862af5c16",
+        "source_role": "PINNED_GIT_SOURCE"
+      }
+    ],
+    "source_evidence": "At exact d13 Mathlib CommDiag active include_str appear in mkCommDiag and top-level subTriangle/subSquare; StringDiagram dsl/sty definitions use include_str. Paths resolve to widget/src/penrose including .sub files. Current Noe rule has neither Mathlib provider nor these paths/extensions.",
+    "supplier_status": "UNSUPPLIED_IN_INSPECTED_NOE_ASSET_RULE",
+    "requires": "A reviewed closed source-asset supplier must bind exact Git paths/modes/blobs/digests and stage these files at the actual relative include_str locations before fresh compilation. The existing ProofWidgets-only supplier covers neither the Mathlib provider nor these widget/src/penrose paths and .sub extensions.",
+    "claim_boundary": "A source-materialization precondition, not an executed compiler failure; source inspection does not establish arbitrary metaprogram IO confinement."
+  },
+  "inspected_supported_producer": {
+    "repository": "grwtsk/noeaaeue",
+    "commit": "f3ac3c5d9350bd83d0dc7a29194d8213be59acaa",
+    "path": "managers/formalization/lean/environment/python/managed_contract_replay.py",
+    "blob": "dc101f805d71498f45602ea73d4e18ce69b72e17",
+    "sha256": "3926a93ca7b81d05d46f9073b97a83cb96ce81bc81591f9adf63dba8253ef3f3",
+    "boundary": "Closed profile schema; closure inventories immutable Git trees and run re-reads revision:path with git show. Changing a package_roots directory or inserting loose patched files cannot supply a module absent from the exact base tree. Both closure and execution/admission need reviewed support; registry-only substitution is insufficient.",
+    "module_resolution": "Project dependency from the whole pinned project inventory, then the separately bound installed compiled-core boundary, then one selected package provider. The legitimate top-level OpenAITwoPointFiniteFamily project dependency must remain resolvable.",
+    "source_change_condition": "Do not edit a producer pinned by any live active or waiting controller. Future source changes, policy/toolchain qualification and fresh preparation remain under current exclusive ownership/resource gates."
+  },
+  "required_rejection_controls": [
+    {
+      "control": "wrong_base_commit_same_touched_bytes",
+      "rejects": "Replace PNT base commit with another commit even if all touched file bytes happen to agree.",
+      "gate": "Exact selected manifest package name/repository/revision; whole-base tree binding is separate from per-file equality."
+    },
+    {
+      "control": "wrong_base_tree",
+      "rejects": "Keep advertised base commit but change the inventory/tree digest or one untouched base entry.",
+      "gate": "Recompute complete base Git tree from exact path/mode/object identities and match the pinned base commit tree."
+    },
+    {
+      "control": "wrong_patch_repository_commit_path",
+      "rejects": "Supply same-named patch from a different OAI commit/repository/path.",
+      "gate": "Bind selected OAI manifest revision, lean project prefix, exact patch Git path and full Git blob identity."
+    },
+    {
+      "control": "wrong_patch_blob",
+      "rejects": "Change advertised full patch blob while leaving the payload field or SHA256 unchanged.",
+      "gate": "Exact approved patch blob and independently recomputed Git-blob hash; abbreviated diff index IDs are not authority."
+    },
+    {
+      "control": "changed_patch_payload",
+      "rejects": "Flip one patch byte or append whitespace/newline.",
+      "gate": "Full approved patch SHA256, Git blob and byte length match before parsing."
+    },
+    {
+      "control": "wrong_base_preimage",
+      "rejects": "Change one touched base-file byte, including a byte outside the hunk.",
+      "gate": "Full preimage Git blob/SHA256 and exact base path/mode are bound before application."
+    },
+    {
+      "control": "wrong_context_no_fuzz",
+      "rejects": "Change an old context/removal line or move a hunk to another occurrence.",
+      "gate": "Exact old/new hunk positions, byte context, declared counts and line-ending/no-newline semantics; no fuzz, offsets, reverse or three-way fallback."
+    },
+    {
+      "control": "wrong_hunk_shape",
+      "rejects": "Change old/new counts, overlap/reorder hunks, or insert unsupported extended/binary metadata.",
+      "gate": "Closed parser for the actual qualified textual patch grammar and exact accumulated positions; unsupported forms fail closed."
+    },
+    {
+      "control": "wrong_output_blob",
+      "rejects": "Keep output payload but substitute expected full output Git blob.",
+      "gate": "Recompute output Git-blob hash plus SHA256/length; compare against the approved complete output map."
+    },
+    {
+      "control": "changed_output_payload",
+      "rejects": "Change one result byte, final newline or line-ending sequence.",
+      "gate": "Exact output identity at reconstruction, before staging and per-child readback."
+    },
+    {
+      "control": "missing_touched_output",
+      "rejects": "Omit a patched path other than MertensClassical from supplied results.",
+      "gate": "Exact complete touched-path/operation set and final effective inventory digest; one matching MertensClassical blob cannot qualify the patch."
+    },
+    {
+      "control": "unexpected_touched_output",
+      "rejects": "Add an undeclared path, operation, output file or delete an untouched base path.",
+      "gate": "No output outside the exact approved patch delta; addition/modification/deletion and base existence are distinct."
+    },
+    {
+      "control": "unsafe_or_aliasing_path",
+      "rejects": "Use absolute/traversal/.git/backslash/quoted-unsupported paths, duplicate normalized names, file-directory or casefold collisions.",
+      "gate": "Validate exact canonical Git paths and unique stage paths before writes; reject any materialization alias or escape."
+    },
+    {
+      "control": "wrong_git_mode",
+      "rejects": "Change an expected100644 touched file to100755,120000 or160000, including same bytes.",
+      "gate": "Bind exact base/result Git modes; this candidate qualifies only ordinary100644 touched files, not any blob mode."
+    },
+    {
+      "control": "wrong_operation",
+      "rejects": "Treat an added path as modification, overwrite a preexisting base path, or retain a declared deletion.",
+      "gate": "Operation-specific base presence/absence and exact final inventory; deleted outputs are absent, not empty source suppliers."
+    },
+    {
+      "control": "undeclared_supplier",
+      "rejects": "Supply a loose modified checkout, cached source/artifact, new foreign provider, or an unregistered patch supplier.",
+      "gate": "Closed selected provider/supplier domain; no package_roots or working-tree fallback and no unsupported profile fields admitted."
+    },
+    {
+      "control": "ambiguous_module_provider",
+      "rejects": "Make a module appear in two declared packages/suppliers or silently replace a base source by an unrelated overlay.",
+      "gate": "Unique module resolution over the explicit effective package inventories, preserving which patch replaces which base path."
+    },
+    {
+      "control": "wrong_import_graph",
+      "rejects": "Compute closure from original base contents, omit an output-added import or substitute a compiled cache for a missing source.",
+      "gate": "Parse imports from exact derived output bytes plus untouched pinned base bytes, then resolve all imports dependency-first and reject cycles/missing/ambiguous modules."
+    },
+    {
+      "control": "registry_field_or_producer_drift",
+      "rejects": "Drop supplier metadata during registry_profile reconstruction, change producer bytes/policy, or reuse an old registry.",
+      "gate": "New supported profile/registry supplier binding must survive preparation, admission, lock-wait readback, per-child input binding and final reconstruction equality. Producer changes require fresh preparation."
+    },
+    {
+      "control": "staged_source_or_mode_drift",
+      "rejects": "Mutate a derived staged file or its parent path between validation and child admission.",
+      "gate": "Validate all payloads first; private per-run ordinary paths, owner-bound exact payloads and final source captures; no symbolic stores/paths or unbound substitute."
+    },
+    {
+      "control": "hook_or_native_execution_attempt",
+      "rejects": "Treat patch data as a shell command or run Lake post_update/run_cmd hooks during qualification.",
+      "gate": "The supplier is a closed source transformation, not generic hook execution; static controls confer no native/owner/policy authority."
+    }
+  ],
+  "control_role": "These are required future maintained-supplier controls. Executed exploratory reconstruction controls do not qualify production behavior. All operational control receipts remain external.",
+  "completion_predicates": [
+    "Bind the complete source/output identities and unique provider selection at discovery, registry reconstruction, staging, post-wait admission and final readback; reject all provenance/input/profile drift.",
+    "Resolve every declared import and necessary asset from exact effective sources, including all newly reached StrongPNT descendants. Do not claim the currently traversable subset is complete.",
+    "Review full transitive source/configuration trust separately. No upstream run_cmd, post_update, cache population, dynamic IO or alternative runner is authorized by this static specification.",
+    "Bind installed Lean4.34.1 compiled core separately; terminal presence in a declared import graph is not a source rebuild, native qualification or a second independent checker.",
+    "Prepare a new supported exact registry only under current source/producer/policy/toolchain bindings and lawful exclusive owner/resource admission, then obtain each scoped native/axiom/type/comparator/replay/restoration receipt separately."
+  ],
+  "verification": {
+    "supported_supplier_qualification": "NOT_RUN",
+    "toolchain_core_qualification": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "comparator": "NOT_RUN",
+    "expected_interface": "NOT_RUN",
+    "complete_module_discovery": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "host_resource_restoration": "NOT_RUN",
+    "second_independent_checker": "UNSUPPLIED"
+  },
+  "claim_boundary": "Static source-supply obligations for the two historical Liouville consumer roots. No supported supplier, registry or native proof acceptance is provided. Arbitrary metaprogram IO, nonliteral reads, implicit compiler dependencies and unknown StrongPNT descendants remain outside this declared-header diagnostic. Original OpenAI weighted-model-growth four and Anthropic Fermat six verification obligations remain separate and active."
+}

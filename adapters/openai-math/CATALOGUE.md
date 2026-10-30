@@ -69,3 +69,7 @@ signed-Abel supplements. Extend that ledger for each actual mathematical bridge,
 with exact hypotheses, source identities, verification evidence or `NOT_RUN`, and
 missing premises. The 721 source records remain a catalogue; this reconciliation
 does not invent paper-to-theorem mappings or certify all 419 import surfaces.
+
+## Upstream correction boundary — 2026-10-30
+
+The inventory above remains bound to7ef. Upstream4eaee87548250b2682affda7d05d947c05554bae reports an October29 rational-Hodge CM namespace fix. Exact selected challenge/CM blobs changed while the solution and Comparator configuration remained byte-identical. See the [interface-change obligation](../../documentation/mathematics/_verification/targets/UpstreamAdapters/openai-hodge-namespace-boundary-20261030.json) and the canonical paper ledger's `openai-hodge-namespace-correction-20261030` entry. Textual alignment is not elaborated type identity or Comparator acceptance; the281-file change set is not a reviewed proof closure. No inventory count, adapter pin or historical outcome is rewritten.

@@ -1,0 +1,1021 @@
+{
+  "schema": "grwtsk.expected-derived-source-inputs/1",
+  "local_attribution": "grwtsk contributors",
+  "classification": "STATIC_MATHEMATICAL_VERIFICATION_INPUT_SPECIFICATION",
+  "target": {
+    "math_commit": "c8c8e2be5d5766ddc03b6f0e90f2f81de575eb13",
+    "source_path": "adapters/openai-math/GRWTSK/NumberTheory/MultiplicativeNumberTheory/LiouvilleNormalizedReadouts.lean",
+    "source_blob": "41fd47c54def263e91175137de294aaa389c8e3b",
+    "source_sha256": "cd02fb5593103477e7a80bc9af2d136f1237ceeb85071eaf268f4d50dcdc4fe4",
+    "complete_module_interface_profile": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-module-interface-20261029.profile.json",
+    "complete_module_interface_profile_sha256": "d4a6ada22718c11a17790ffe112a92c959603f77cf8248cbde6556aa255cb3ce",
+    "required_declarations": [
+      "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_family_bound",
+      "GRWTSK.NumberTheory.MultiplicativeNumberTheory.LiouvilleNormalizedReadouts.normalized_unit_ball_bound"
+    ],
+    "expected_type_scope": "Both literal module-owned expected types and universe u in the referenced profile; complete compiler-owned census is required.",
+    "historical_failed_profile": "documentation/mathematics/_verification/targets/UpstreamAdapters/consumers-openai-math-20261029.profile.json",
+    "historical_outcome": "Preparation failed before registry/native admission on missing PrimeNumberTheoremAnd.Erdos970.MertensClassical. That historical profile selected two declarations without the later literal type consumers. No execution of the stronger profile is asserted."
+  },
+  "upstream_patch": {
+    "repository": "openai/math",
+    "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "path": "lean/patches/PrimeNumberTheoremAnd-lean4341.patch",
+    "blob": "924c5f6ec6fe88ba7788b420af4e3c3c7ac00abc",
+    "sha256": "0890432340c0025973bcfe070b634355fa366cc831595f68526e4c73c8903d82",
+    "bytes": 1993197
+  },
+  "base": {
+    "repository": "AlexKontorovich/PrimeNumberTheoremAnd",
+    "commit": "c39a751132c88b6e8080b74c74023fd95b3d8be0",
+    "tree": "4cb497ada2a459a89a0f5912f30cbe8e742cf75a",
+    "entry_count": 282
+  },
+  "expected_effective_source_tree": {
+    "tree": "b7d455a31f9799c7b2b3485f3627f394db356064",
+    "entry_count": 329,
+    "origin": "DERIVED_EXACT_PATCH",
+    "meaning": "Expected Git tree identity computed from the complete base inventory and this exact delta; no new upstream commit or preexisting Git tree object is asserted. Untouched base entries retain their exact modes and object identities."
+  },
+  "delta": {
+    "touched_paths": 55,
+    "additions": 47,
+    "modifications": 8,
+    "deletions": 0,
+    "hunks": 194,
+    "advertised_index_pairs": 53,
+    "without_advertised_index_pairs": [
+      "PrimeNumberTheoremAnd/IEANTN/Mertens.lean",
+      "PrimeNumberTheoremAnd/PerronFormula.lean"
+    ],
+    "binary_sections": 0,
+    "renames": 0,
+    "copies": 0,
+    "mode_changes": 0,
+    "no_newline_markers": 1
+  },
+  "paths": [
+    {
+      "path": "PrimeNumberTheoremAnd/Catalan.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "0c4ccd63cb1dc6160004987f0ae0a0ee351aad60",
+        "sha256": "f802a93312fa749619c67b2fb65f5e76b2ccc3edba874a22260f4b21192ff044",
+        "bytes": 50,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "0c4ccd6",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Catalan/Consequences.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "470ade943b29d76266611edacfc4d1f905e3f230",
+        "sha256": "329ef6ec0409039d5bea829eafdb4990b7d514084480d171fde1d69b155244b9",
+        "bytes": 2905,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "470ade9",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Catalan/OrdinaryZetaContinuation.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "723a0e3ae80656ee4e2b81292dbcbcb5c1337fec",
+        "sha256": "a4cdb4c4da5e511e6fa195d2f6e6c7c64fd710b6922bf4c0c4860358b039ef76",
+        "bytes": 3513,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "723a0e3",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Catalan/OrdinaryZetaZeroFree.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "e0f363ff83add8282d76dde72432287f062fa91b",
+        "sha256": "a7f2eb0f488ecb48488a9b3d7a68abd677d223e74474b3bba078cc8889ec0284",
+        "bytes": 8768,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "e0f363f",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Catalan/Wiener.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "0a6b5059b5e702805ec294ba03aa0bfc9c5bfad4",
+        "sha256": "02cb6784ac598b99db13f759cee46287db914c831c61146a9b03e04ff94bce27",
+        "bytes": 31937,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "0a6b505",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Catalan/WienerBounds.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "06122cf6d729edea175550ace82b55d45c3b0553",
+        "sha256": "d3e4cca15d61fbc802fa82a937bfce2d4732b4193e27a65f121c79402572c95d",
+        "bytes": 28712,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "06122cf",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Catalan/WienerFourier.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "491332b0e96967014f7bbf10258ce20bbb6e85ae",
+        "sha256": "6f02b85bf6ecec997fb6aa6605361a7749d4635b95cfdc71a8288ae2a5cb3b22",
+        "bytes": 16901,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "491332b",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Catalan/WienerLimits.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "fa60fec9591d8bc85fa7b8c9940185b0a67e7626",
+        "sha256": "1e41177cc9f85f99d80f4b6e98da594d46e9d7c59a5c6a90abc0c0ec2aed4f55",
+        "bytes": 31124,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "fa60fec",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "2137759c69f7053e8810ffda14675be9353876e7",
+        "sha256": "768577401f1ddb0c2b3aa81713b362da71b59a7d8ff164583d39427d79845268",
+        "bytes": 1051,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "2137759",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/Auxiliary.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "0273e548adcdcfcbf96b860736c213dd6d1bc899",
+        "sha256": "e22d13e51a1c5c9b6b7e8649469b95d81e54edd1afc126152061242e60423b5a",
+        "bytes": 2975,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "0273e54",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/Consequences.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "4a72e0e6b8c914f6c4d9bf4b55a17d9f2bae24b0",
+        "sha256": "98ee935f8b00b09fa1535b448679444dbbcf621f496e0a46ff4bdadc02f7986e",
+        "bytes": 128853,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "4a72e0e",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/Defs.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "e595955bf592806da05ec3fb0471b04c62a17ff9",
+        "sha256": "eee486ed4274d4b35446dc149f871ef7e5492d0c4b7ae5412b37b8f9b44b4975",
+        "bytes": 7914,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "e595955",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/EulerMaclaurin.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "ecfb419ed9d8c76593a61710d36f66e06bc9a457",
+        "sha256": "a7df60d3653cb8660b82aeae4d2aaa7145dc824ee643b4741e315bcc674ec4cc",
+        "bytes": 3282,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "ecfb419",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/Fourier.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "32fe27cdbd44cd9ec2137e3e6567641bcbcfca85",
+        "sha256": "a21d6432f41a3cada598dba1ad9ceae6a48819be7cb99b06de65ab15c7b66fda",
+        "bytes": 8201,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "32fe27c",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/HadamardSupport.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "8c19850617591f2212c5b3a2081b19acc2f02dec",
+        "sha256": "a0f61289b82b68afc3b06080bf01c94f4460f3c95d27fe447a0dde427960d2e4",
+        "bytes": 332539,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "8c19850",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/Mathlib/Algebra/Notation/Support.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "39dd03b0e32ad81d099063ee5295353a2ad6aaf4",
+        "sha256": "cae01d85a685b04574a3e7e973493583bdbde5d3fabd2b4dab07f88df49a00f1",
+        "bytes": 345,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "39dd03b",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/Mathlib/Analysis/Asymptotics/Asymptotics.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "1ef2299f52b3bcb468cbb340f040359d131efee9",
+        "sha256": "ed6a6f94e8ffa4e044348a1c42962ebb929955c9082643139205ce369141d321",
+        "bytes": 1631,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "1ef2299",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "b8b7136059bf5f2cae69f47f1a6a8d609ef22da9",
+        "sha256": "7a92a2aebfed9eaedaabdb4089cde4af4f85137d816790d68cc46b5cad56fbb1",
+        "bytes": 649,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "b8b7136",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/MellinCalculus.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "12adb340fbff5e84281da45b234414c6ec371de9",
+        "sha256": "7930ab19123821aff6a6192cca50b43182282cb69484b0753bc7992735973912",
+        "bytes": 49717,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "12adb34",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/MertensClassical.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "8f3e823d7cedff9e294bacf7ec4f0c54c2df9b42",
+        "sha256": "37b0afe031bec4dea9fe77843b63ba2274c1718510c3e7b52678380bcbb9ae01",
+        "bytes": 92560,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "8f3e823",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/Rectangle.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "c87b920564d5573c7e76fd54bb937cafd5554ea2",
+        "sha256": "c1ac1588f8aa36ca6cce8a224f03f9293d6aa86add4bcef856b6fbbb7d684a62",
+        "bytes": 12875,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "c87b920",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/ResidueCalcOnRectangles.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "b976da3b139fd5f760433b68546b0c0547a0db4d",
+        "sha256": "85d3dbda748e0068a094261d833f20fa3e924867778ed0772b647bbd64ebf3a6",
+        "bytes": 56112,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "b976da3",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/SmoothExistence.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "74e217209d5565e277e50ad322f04ac98f013c14",
+        "sha256": "358de0d82ac0575776c34dd6e66092f16580f8844f1843c6521e4e30a107a93b",
+        "bytes": 4356,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "74e2172",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/Sobolev.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "3e83353068c1ca5f1475f715f2c0ddd7a8600a1d",
+        "sha256": "7eb6ec9ffffd0bfd8447e38b56dbeede8e7c5e2cefd71c0b47210c02d8223165",
+        "bytes": 15936,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "3e83353",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/Tactic/AdditiveCombination.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "f79890f238b44f7b8d0a20d19dc6ab54454e0121",
+        "sha256": "80bc9e124e078093078d3d425e3099fcada4017ed590f09aae78873d0298eef9",
+        "bytes": 3929,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "f79890f",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/Wiener.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "3259e31edf9ed779e738831af4d9f9ed9fcd104c",
+        "sha256": "f2fe424c422598a1ca2c63ac1035472115bfc749440c2a90d019ededf033c2fc",
+        "bytes": 184839,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "3259e31",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/ZetaBounds.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "84113af0653a2de14590c2790c5610f8de6d9cd1",
+        "sha256": "9ef231a799661c1427f23283f97705934edcf3edfd9fdc931c9b517dea2cf676",
+        "bytes": 148200,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "84113af",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Erdos970/ZetaConj.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "79c01fe23e4c15f977afb55d559c3bf3c868eb2b",
+        "sha256": "a8fb9c968edce35203fd8af8202d958b9dc54e86303dfdddc149c3ad33b79397",
+        "bytes": 1159,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "79c01fe",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Fourier.lean",
+      "operation": "MODIFY",
+      "base": {
+        "blob": "99e15a0237162df31161745e8e9e98a891c44a51",
+        "sha256": "44d2c28b251be0296f897e43a75a055f346a6199849b54ab204240fe4099e6c2",
+        "bytes": 8907,
+        "mode": "100644",
+        "type": "blob"
+      },
+      "result": {
+        "blob": "1a8cf07bcb27c4f4471ea08322dda20d918d3911",
+        "sha256": "4d32bf7900ceb3268a44857603eec12333ef605d0d3c966ee6b6261590e9134b",
+        "bytes": 2068,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "99e15a0",
+      "advertised_result_prefix": "1a8cf07",
+      "hunk_count": 2
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/CartanBounds.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "f378d4be648ac6c8777d87eab5b7260dca14c98a",
+        "sha256": "914619b42f2d408d5a6dcb082a3a0bf40be7dc90664bd041335ae3cfe4ace11a",
+        "bytes": 40233,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "f378d4b",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/Counting.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "cc47f9cff888ed264b2c5208b63d48d2cad71e28",
+        "sha256": "8a4baf358e02792fc9353abf86a99f8e2981aca45e075b2b240abce6057c038b",
+        "bytes": 32443,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "cc47f9c",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/DivisorBasics.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "e5a553a3ee5d72dc8b05558c9b475ccd6cbf91b2",
+        "sha256": "b876999e5337224b5680fa7f7da9769e2f4e48f30f40ee5d7f2d473aa17574b9",
+        "bytes": 27892,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "e5a553a",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/DivisorLimits.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "4325f1fb8c212e653f88778c0baa3501166816dd",
+        "sha256": "1f6c1fde75de0b2ca22384db91dc0d4bd9199f81483293181191acee0b0f5a7f",
+        "bytes": 20886,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "4325f1f",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/DivisorProducts.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "5ca9514b9bb917fa5943ee6fbe73b1b7ba45266d",
+        "sha256": "c588e788d6d7218b7faffb54c0770cf33503238529802cb8cba526e0dcca6d0c",
+        "bytes": 47656,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "5ca9514",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/Exponential.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "082148e2964bbe15a0ade86b5be3e3619a47c7ba",
+        "sha256": "fc5275b5bb345d4a9b496e2f6f69f3bd4674893727552031584de67dddcdf9c9",
+        "bytes": 35798,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "082148e",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/Factorization.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "8fb7d8ebaefb91495cca586df2541b8a5173d516",
+        "sha256": "e4569bce8a761f4dca00d2fee525e58083729b7fa109a59cb35ba344cf83cdf8",
+        "bytes": 22962,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "8fb7d8e",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/Growth.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "99df5016978326be79edb375299a34e8929a7d58",
+        "sha256": "a5b0f5651308176e72d2166ea626ed1121c6575438582a4f3d962c69cc93a42b",
+        "bytes": 21875,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "99df501",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/HadamardSupport.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "7ec52e35be466816c9659d77e3f79d1e09b522d0",
+        "sha256": "18cc872b37afa250e674a9069c3ff21872975cba4d6235bd613edfa9919ac720",
+        "bytes": 48,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "7ec52e3",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/NOTICE.md",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "a3e10f6bc02d9022e0019246920e1d4c0f28af57",
+        "sha256": "e5694c7f17e7ae32b47caa40151160883f396df908fc0af8fc6038c92cec1833",
+        "bytes": 510,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "a3e10f6",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/ProductBounds.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "6a2985a09f6df44478f102ee1b9886fc15db947c",
+        "sha256": "969770fb4bb3cfe708fcf612a6f222645696a3d4a4193e0ea251ed04aae4b735",
+        "bytes": 35856,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "6a2985a",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/Products.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "db0daa8a814dcb5b5746c1e471b7b25a1bdf93d3",
+        "sha256": "542f14e2a572a28b6b93ccbf6d046493b5692745ba31635728a2bd4271f0026a",
+        "bytes": 20367,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "db0daa8",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SiegelZeros/Summability.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "0a11558d2ccfd82842853a5c1ff36601be5ea68f",
+        "sha256": "c9958f6fbf5c10738310fda29acd5716f38a69feb0d2ddaf4c9f32b724f55c30",
+        "bytes": 25536,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "0a11558",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/SmoothExistence.lean",
+      "operation": "MODIFY",
+      "base": {
+        "blob": "b33edf879b1117ae0912512529051f0ba77b7d9e",
+        "sha256": "e689045a2d7f92c71c68fda6aa69a89d4a8692187475ba432ed010f453110ea0",
+        "bytes": 4738,
+        "mode": "100644",
+        "type": "blob"
+      },
+      "result": {
+        "blob": "2513738871a58ed4a4f5feb530e90d6b60cedb81",
+        "sha256": "8f36ada60efb4e835f8f2eb92993b899311dd21607459497d58824d9bc034555",
+        "bytes": 1918,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "b33edf8",
+      "advertised_result_prefix": "2513738",
+      "hunk_count": 3
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Sobolev.lean",
+      "operation": "MODIFY",
+      "base": {
+        "blob": "1f98bcbccc7ba3b9c9ee02ec95404731085368f9",
+        "sha256": "fe06e13fad5b47dbd324307ba246110515c4cb50f4c41d6cb15764fd53b1b8ef",
+        "bytes": 15951,
+        "mode": "100644",
+        "type": "blob"
+      },
+      "result": {
+        "blob": "c0696332c20ac966b025d6cd10b2f6b5614abe70",
+        "sha256": "a635e667b7a0228f8eb923f210c08598f61d91880855762540431abe3003f95e",
+        "bytes": 16491,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "1f98bcb",
+      "advertised_result_prefix": "c069633",
+      "hunk_count": 18
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/Wiener.lean",
+      "operation": "MODIFY",
+      "base": {
+        "blob": "59fd5069a7eca51a8bc5005b5c43e31a5cbb38ac",
+        "sha256": "7bd40c9cffedc1d9a0f675ea971c6719e490b1b106807459d549145f30d70f05",
+        "bytes": 221794,
+        "mode": "100644",
+        "type": "blob"
+      },
+      "result": {
+        "blob": "d69b8931c46e40a9ad53321e002e8c61101fbb52",
+        "sha256": "20c2be97a648f6f6d190db5cb862efaf4b58de8dba66188b801e2bf625686902",
+        "bytes": 108628,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "59fd506",
+      "advertised_result_prefix": "d69b893",
+      "hunk_count": 80
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/ZetaFive.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "6e3d2a89be463a20fbcb31503db0d2b7a04c5db0",
+        "sha256": "ba8a0597a806e147e0d3c4f10be69a3299a456687624e7a87ce9604add508051",
+        "bytes": 242,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "6e3d2a8",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/ZetaFive/Consequences.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "aa7c25c5ad378712a1fc4d145413f66a746ae9c3",
+        "sha256": "710d46d025836a04fda90446bf9f5106f4a9cd74e1794b53b2433999114967c3",
+        "bytes": 2890,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "aa7c25c",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/ZetaFive/Fourier.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "95d8904310b21221caef064382bc959745dc0a3d",
+        "sha256": "3cd55283eee80e442445b7c40d17a64aad3202e4da9fa18f147e101d896015b7",
+        "bytes": 1886,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "95d8904",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/ZetaFive/SmoothExistence.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "6dad9271e1cf7bf6f1816721a3188da1ff7d3361",
+        "sha256": "a89bad992677d4b52da9a98641501e5b7b31f1adcddc288a03f565e2dc51791f",
+        "bytes": 1727,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "6dad927",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/ZetaFive/Sobolev.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "10b603556f18cb63779e5fab8677b239ec3b4278",
+        "sha256": "3f134aff16357219284ffd5ba6cb891d4a16382f0f7115ebac5fae8c77d7695e",
+        "bytes": 18120,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "10b6035",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/ZetaFive/Wiener.lean",
+      "operation": "ADD",
+      "base": null,
+      "result": {
+        "blob": "18c58cbb4caed1280075e40fdf9d5de6359c1e05",
+        "sha256": "3c5de31f6b4df2072cacd77928c6fccff69a76493cc7ba5a8a76ea7bb97ecda0",
+        "bytes": 110880,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "0000000",
+      "advertised_result_prefix": "18c58cb",
+      "hunk_count": 1
+    },
+    {
+      "path": "lakefile.toml",
+      "operation": "MODIFY",
+      "base": {
+        "blob": "2f3660db8979764e7879066ef12e9807c39b2224",
+        "sha256": "9e96d9ca794e004bc441a19ecccdd365b33a1b4053d88a0ad1501f19e6c9f31c",
+        "bytes": 902,
+        "mode": "100644",
+        "type": "blob"
+      },
+      "result": {
+        "blob": "71d9c895c40e5e44214d6caa1062622f3261a970",
+        "sha256": "96aab01d7a49e28475e0c3f274ae6140c3dee4e42fc91c0828282fefbc6e1d53",
+        "bytes": 1274,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "2f3660d",
+      "advertised_result_prefix": "71d9c89",
+      "hunk_count": 2
+    },
+    {
+      "path": "lean-toolchain",
+      "operation": "MODIFY",
+      "base": {
+        "blob": "664e12dc06fe1ec82414cccb8e8f8e34d33d9f3f",
+        "sha256": "3f9803cfd3bce5e50120efa5412d1c92f58adbe802154353d29ac98e5722269e",
+        "bytes": 24,
+        "mode": "100644",
+        "type": "blob"
+      },
+      "result": {
+        "blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+        "sha256": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+        "bytes": 25,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": "664e12d",
+      "advertised_result_prefix": "ba8ebf2",
+      "hunk_count": 1
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/IEANTN/Mertens.lean",
+      "operation": "MODIFY",
+      "base": {
+        "blob": "1c45fc368e4fc7c3ff7876be4f8e67c3d6f2a6be",
+        "sha256": "6f71a221604463ba1479872012cfb12b885a9e6a8f8abb87a08b4c12c4dca60b",
+        "bytes": 113975,
+        "mode": "100644",
+        "type": "blob"
+      },
+      "result": {
+        "blob": "6877906907b9d60427bea998ad41a898b89f1036",
+        "sha256": "4a9ddd7da153e38aca60a9e3cfdb7a60b4644aab3a8b40655a1bd7b16ccd6641",
+        "bytes": 96068,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": null,
+      "advertised_result_prefix": null,
+      "hunk_count": 40
+    },
+    {
+      "path": "PrimeNumberTheoremAnd/PerronFormula.lean",
+      "operation": "MODIFY",
+      "base": {
+        "blob": "6fb1345e5c806d6996e39954fa3738c32acedf55",
+        "sha256": "f3d564170e1dc0a79e647df81a27c4a66c837dc548761c41a51dbe374bcf315e",
+        "bytes": 54433,
+        "mode": "100644",
+        "type": "blob"
+      },
+      "result": {
+        "blob": "3f4350b34170ab2768b849e563e7c0813a9a1e34",
+        "sha256": "a313abaf7da9b40872d8b9aeba1c731d3314b2010516d873f025213114c9ba30",
+        "bytes": 54402,
+        "mode": "100644",
+        "type": "blob",
+        "origin": "DERIVED_EXACT_PATCH"
+      },
+      "advertised_old_prefix": null,
+      "advertised_result_prefix": null,
+      "hunk_count": 1
+    }
+  ],
+  "source_semantics": [
+    "Bind repository, complete base commit/tree, patch repository/commit/path/full Git blob/SHA256/length, every path operation/preimage/result and effective inventory together.",
+    "Only the recorded ordinary 100644 touched files are in this specification; additions require absence at base, modifications require the exact complete preimage, and no deletion/rename/copy/mode change is authorized.",
+    "Reconstruct exact byte hunk positions/counts/context/removals and line-ending/no-newline semantics. Reject fuzz, offsets, recount, reverse application, three-way fallback, malformed headers, duplicate/escaping/aliasing paths and unsupported patch forms.",
+    "Verify every advertised index prefix when supplied, then independently compute full Git blob and SHA256 for every result. The two index-less appended modifications have computed full identities, not invented advertised prefixes.",
+    "The delta includes lakefile.toml, lean-toolchain and a SiegelZeros NOTICE. Bind their bytes without executing configuration or hooks; preserve public source bylines, Apache-2.0 and all dependency/vendor notices.",
+    "Materialize only into fresh external outputs through a future reviewed supported supplier. Revalidate before staging, native admission and final readback; never relabel derived outputs as base git-show bytes.",
+    "The complete patch/tree binding does not claim that all 55 touched files belong to the selected Lean import closure or have been checked as theorems; native acceptance remains limited to the explicitly selected consumer declarations and their actual transitive dependencies."
+  ],
+  "closure_obligation": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-source-supply-closure-20261030.json",
+  "acceptance_requires": [
+    "Reviewed maintained Noe support for derived source selection, import discovery, registry reconstruction/admission, staging and final source readback; current Git-only source supplier cannot admit these outputs.",
+    "All required package roots/revisions and non-Lean source assets, unique module providers and complete declared import closure from effective bytes. This PNT delta alone does not complete the consumer closure.",
+    "A fresh registry binding the exact math source, literal type profile, dependencies, qualified Lean4.34.1/compiled-core boundary, current producer and runtime policy after all ownership gates permit it.",
+    "Fresh compilation, complete target-owned declaration census, exact type consumers, Comparator scope, complete transitive axiom policy excluding sorryAx/unapproved trust, fresh replay and independent checker evidence, each reported separately.",
+    "Unchanged owner/resource limits and full host/resource restoration; no cached/failed partial proof artifacts, silent dependency substitution or upstream hook execution."
+  ],
+  "unresolved_mathematics": [
+    "Finite affine families retain positive leading coefficients, nonproportional forms, X>=3, a common exponent before the family and family-dependent constants chosen before X and coefficient rows.",
+    "No moving-family constant/growth budget, Liouville-to-Moebius bridge, actual arithmetic residual supplier or RH proof is supplied by source reconstruction."
+  ],
+  "claim_boundary": "Expected immutable source-input identities and acceptance predicates. Exploratory reconstruction and pure controls are external evidence, not a supported supplier, registry, compiler result or mathematical acceptance. The original OpenAI weighted-model-growth four declarations and Anthropic natural Fermat six declarations remain separate active obligations.",
+  "verification": {
+    "supported_supplier_qualification": "NOT_RUN",
+    "toolchain_core_qualification": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "comparator": "NOT_RUN",
+    "expected_interface": "NOT_RUN",
+    "complete_module_discovery": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "host_resource_restoration": "NOT_RUN",
+    "second_independent_checker": "UNSUPPLIED"
+  }
+}
