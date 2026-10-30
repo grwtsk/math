@@ -2976,3 +2976,72 @@ Local attribution: grwtsk contributors.
 - **Local declarations.** `GRWTSK.NumberTheory.Moebius.PickupExceptionalShiftConnections.exceptionalMass_le_card_mul_sup` and `finite_layer_cake_nat` are finite source-proof candidates. `WeightedExceptionalShiftBridge`, `PretentiousDeletionBridge`, and `CompleteTraceShiftBridge` are obligation records, not cancellation suppliers.
 - **Source pins.** Lean commit `8b205f870ca0d92b503a46066ffa5b2655b77e32`; note `b14ecede8febb480cf16a9b70d86e1927f4a29e0`; passive target `b24494970852f43d3f5dd63a966e8ff07956fa20`; predecessor prime-supply depletion `726eb72232aa63a618b1977a7212ea56bd8d5052`.
 - **Verification.** Compilation NOT_RUN; fresh kernel replay NOT_RUN; transitive axiom audit NOT_RUN; external theorem acceptance NOT_CLAIMED. No new pickup cancellation estimate or RH claim.
+
+## Sublinear exponent finite-prefix obstruction — source candidate (2026-10-29)
+
+Local attribution: grwtsk contributors.
+
+Primary context: Russell Impagliazzo and Ramamohan Paturi, *On the Complexity of
+k-SAT*, Journal of Computer and System Sciences 62 (2001), 367–375,
+[DOI 10.1006/jcss.2000.1727](https://doi.org/10.1006/jcss.2000.1727),
+[author PDF](https://cseweb.ucsd.edu/~paturi/myPapers/pubs/ImpagliazzoPaturi_2001_jcss.pdf),
+p.368, definition of the infimum exponential rate and Theorem 1. Also Russell
+Impagliazzo and Ramamohan Paturi, *Exact Complexity and Satisfiability*, IPEC 2013,
+LNCS 8246, pp.1–3,
+[author PDF](https://cseweb.ucsd.edu/~paturi/myPapers/pubs/ImpagliazzoPaturi_2013_ipec.pdf),
+p.2, distinction between complexity parameter and encoded instance size, and
+exponential versus subexponential rates. These are contextual sources, not
+imported or locally re-proved ETH theorems.
+
+The new elementary local candidate is
+`GRWTSK/ComputerScience/AlgorithmsInComputerScience/SublinearExponent.lean`.
+Within namespace
+`GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent`,
+`IsSublinear f` means every positive integer rate `q` has an eventual threshold
+beyond which `q*f(n) <= n`, with the exponent function fixed before those
+quantifiers. `zero_isSublinear`, `delayedLinear_prefix`,
+`delayedLinear_not_isSublinear`, and `finitePrefix_ambiguous` construct, for each
+finite cutoff, two total natural-valued exponent sequences agreeing through that
+cutoff while exactly one satisfies this eventual property. The counterexample
+uses rate two and a point beyond both the observed cutoff and the proposed
+threshold. The construction does not assume an algorithm or a SAT lower bound.
+`noPrefixClassifier` then rules out any Boolean rule that is invariant under
+that prefix observation and is correct for every exponent sequence; both
+assumptions are explicit, with the concrete opposing witnesses supplied locally.
+
+The same source now supplies `constant_isSublinear` and `IsSublinear.affine`.
+For every fixed natural scale and offset, the latter transports the reciprocal-
+rate bound through `n -> scale*n + offset`. Scale zero is handled as a constant;
+for positive scale the proof samples source rate `q*(scale+offset)`, uses a
+threshold at least one, bounds the enlarged parameter above by
+`(scale+offset)*n`, and cancels the positive factor. This is local exponent
+arithmetic, not a sparsification lemma or an algorithmic ETH reduction. The
+polynomial encoded-input-size factor and total reduction time remain unmodeled.
+
+`IsSublinear.add` requests both source bounds at reciprocal rate `2*q`,
+combines their thresholds by addition, adds the two inequalities and cancels a
+positive factor two. It requires no monotonicity or positive exponent values.
+`IsSublinear.affine_add` consumes that result with the fixed affine transport
+lemma. A separately established sublinear overhead bound remains an explicit
+premise; no preprocessing estimate, machine model or SAT reduction is supplied.
+
+Classification: **source proof candidates; native compilation, fresh kernel
+replay and transitive axiom audit NOT_RUN**. Static target:
+`documentation/mathematics/_verification/targets/sublinear-exponent-finite-prefix-v1.json`,
+with empty allowed axioms and a 30-second compiler wall cap. The source and static target are bound to Math commit
+`213b04a8aba70f7ecdef3a3f69a5bf4c73768e40`. Noe's cycle-134 evidence records the separate
+publication and verification outcomes. Neither publication nor paper metadata
+supplies acceptance. Source Git blob
+`0692958f3dac01b118fca6b91fd46f67062acc81`, SHA256
+`70ac54d713c9070930e6088a074481c8198abadea9bcc3612036ac9d7c00dc71`; profile Git blob
+`bde14dcd895fe6c83c538757d371a948063a5755`. These byte identities do not establish compilation, kernel replay or axiom
+acceptance.
+
+Missing bridges: a formal machine/algorithm universe, correct uniform SAT
+procedures over all encoded inputs, worst-case runtime and polynomial input-size
+accounting, equivalence of the natural reciprocal-rate predicate with a selected
+real little-o convention, and an exact quantifier-preserving connection to the
+paper's infimum over algorithmic exponential rates. No equivalence between one
+fixed subexponential algorithm and separately chosen algorithms for each rate is
+assumed. ETH and SETH remain unresolved; finite storage certificates and this
+scalar obstruction establish neither hypothesis nor its negation.
