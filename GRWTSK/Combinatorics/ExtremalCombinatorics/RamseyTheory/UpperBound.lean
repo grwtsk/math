@@ -7,6 +7,7 @@ Only module imports and the enclosing namespace are adapted.
 -/
 import GRWTSK.Combinatorics.ExtremalCombinatorics.RamseyTheory.ProgressionColoringDefinitions
 import Mathlib.Data.Fintype.BigOperators
+import Mathlib.Data.Fintype.Pigeonhole
 import Mathlib.Tactic.Ring
 
 namespace GRWTSK.Combinatorics.ProgressionColoring
