@@ -1,5 +1,80 @@
 # Paper-to-formalization references
 
+## RH divisor-mask incidence connections: Chowla, Duffin--Schaeffer, and formalized PFR (2026-10-29)
+
+Local attribution: grwtsk contributors. This entry records literature connections to
+math source commit `cf25bba53d45989cbba2c02cbbd6a499726a4a06`, module
+`GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarDivisorMaskIncidence.lean`,
+blob `ee6b5b0f3e2c95dcd19370715fb14b0418d960b1`.
+No theorem from these sources is imported into the local proof. Their role is
+ANALOGY / RESEARCH GUIDANCE only; no historical influence is inferred.
+
+- **Terence Tao, _The logarithmically averaged Chowla and Elliott conjectures for
+  two-point correlations_ (2015), arXiv:1509.05422.**
+  Stable source: https://arxiv.org/abs/1509.05422 .
+  The paper proves the logarithmically averaged two-point Chowla/Elliott result
+  using small-prime multiplicativity, short-interval input, concentration and an
+  entropy decrement argument. The local connection is the exact single-prime
+  incidence calculus: multiplying an index by a fresh p changes the selected/kept
+  divisor data only at p, with the resulting pairWeight numerator/denominator
+  increments explicit. No entropy, mutual-information or logarithmic-average
+  estimate is formalized locally. A quantitative bridge from prime-family
+  dependence to `transportedDivisorMask` remains unresolved.
+
+- **Scott D. Hughes, _Effective logarithmic two-point Chowla bounds in every
+  window_ (2026), arXiv:2609.28526.**
+  Stable source: https://arxiv.org/abs/2609.28526 .
+  The paper quantifies the entropy-decrement proof uniformly in affine forms and
+  averaging windows. The local source does not import its bounds. The relevance is
+  methodological only: a later prime-family estimate could be judged against an
+  effective dependence/scale-selection theorem once the exact local incidence
+  variables are defined. No such transfer is proved.
+
+- **Dimitris Koukoulopoulos and James Maynard, _On the Duffin-Schaeffer
+  conjecture_ (Annals of Mathematics 192 (2020), 251--307),
+  DOI 10.4007/annals.2020.192.1.5.**
+  Stable source: https://doi.org/10.4007/annals.2020.192.1.5 .
+  The paper proves Duffin--Schaeffer using arithmetic overlap control, compression,
+  density increment and graph-theoretic structure. The local connection is that
+  exceptional overlap is now represented exactly by one-prime changes of
+  `keptDivisors` and `omega`, rather than by a free error term. No local theorem
+  identifies these inventories with the Duffin--Schaeffer overlap graph or imports
+  any compression inequality.
+
+- **Polynomial Freiman--Ruzsa Lean formalization, based on Gowers--Green--Manners--Tao,
+  _On a conjecture of Marton_ (2023), arXiv:2311.05762, with subsequent project
+  developments.**
+  Stable formalization source: https://teorth.github.io/pfr/ .
+  The project formalizes the PFR proof and the required Shannon-entropy machinery.
+  The local connection is methodological: an information-theoretic representation
+  would only be useful after a proved return from a dependence/entropy quantity to
+  the explicit divisor-mask contribution. No entropy object or PFR theorem is
+  imported into the RH source.
+
+- **Exact local theorem content.** For a fresh prime p and, where stated, Z<p:
+  `fresh_dvd_prime_mul_iff` proves all fresh q != p keep their divisibility
+  status under m->p*m; `keptDivisors_left_eq_erase` removes only p;
+  `selectedDivisors_right_eq_insert` inserts only p under n->p*n;
+  `omega_right_eq` records the exact denominator increment;
+  `keptDivisors_right_eq` records the exact numerator insertion condition;
+  `keptDivisors_both_eq_erase` resolves simultaneous transport;
+  `pairWeight_left_sub_eq`, `pairWeight_right_eq`, and
+  `pairWeight_both_eq` give the corresponding exact real-valued weights.
+- **Evidence roles.** Imported mathematics: existing GRWTSK/Mathlib source only.
+  Kernel-verified bridges: none claimed. Source proof candidates: the declarations
+  above. Conditional interfaces: the explicit fresh-prime and Z<p hypotheses.
+  Analogies: exactly the literature mappings above. Unresolved premises:
+  compilation, fresh replay, transitive axiom audit, expected-interface checking,
+  substitution into the complete divisor-mask commutator, a quantitative
+  prime-family/overlap estimate, and return to the complete far-source consumer.
+- **Verification.** Requested commands are
+  `lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarDivisorMaskIncidence`
+  and
+  `lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarDivisorMaskIncidence.lean`.
+  Compilation NOT_RUN; fresh kernel replay NOT_RUN; transitive axiom audit NOT_RUN;
+  expected-interface check NOT_RUN. Track source-bound verification in
+  https://github.com/grwtsk/math/issues/1487 .
+
 ## RH far-mask commutator connections: Chowla, Duffin--Schaeffer, and Carleson (2026-10-29)
 
 Local attribution: grwtsk contributors. This entry records three literature connections
