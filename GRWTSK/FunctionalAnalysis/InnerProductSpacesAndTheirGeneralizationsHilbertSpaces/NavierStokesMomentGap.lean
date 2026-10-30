@@ -2128,6 +2128,76 @@ theorem probes_eq_of_gram_isometry
     simp [Transport.inducedProbes, probes, hT.leftDiagonal, hT.rightDiagonal,
       hT.cross]
 
+
+/-!
+### Vector-level realization of Gram transport
+
+The gauge/symmetry question is now moved to an actual complex inner-product
+space.  A linear map that preserves the inner product induces the Gram-fiber
+transport above and therefore preserves all four Weil probes.  Surjectivity,
+finite dimension, determinant one, and any special-unitary identification
+remain separate hypotheses.
+-/
+
+variable {W : Type*} [NormedAddCommGroup W] [InnerProductSpace ℂ W]
+
+/-- Vector transport whose only required structure is complex linearity. -/
+structure VectorTransport where
+  map : W →ₗ[ℂ] W
+
+/-- Inner-product preservation is the exact unitary/isometric content needed
+by the Gram observations.  No surjectivity is hidden in this predicate. -/
+structure VectorTransport.PreservesInner (U : VectorTransport (W := W)) : Prop where
+  inner_eq : ∀ x y, @inner ℂ W _ _ (U.map x) (U.map y) = @inner ℂ W _ _ x y
+
+/-- Transport a pair of vectors and read its induced Gram fiber. -/
+def VectorTransport.inducedGram (U : VectorTransport (W := W))
+    (f g : W) : PairGramFiber :=
+  PairGramFiber.ofVectors (U.map f) (U.map g)
+
+/-- Inner-product preservation gives norm preservation without separately
+assuming a norm-isometry field. -/
+theorem VectorTransport.norm_eq
+    (U : VectorTransport (W := W)) (hU : U.PreservesInner) (x : W) :
+    ‖U.map x‖ = ‖x‖ := by
+  rw [← sq_eq_sq₀ (norm_nonneg _) (norm_nonneg _)]
+  simpa only [sq_norm] using congrArg Complex.re (hU.inner_eq x x)
+
+/-- The induced pair Gram data is exactly invariant under an
+inner-product-preserving vector transport. -/
+theorem VectorTransport.inducedGram_eq
+    (U : VectorTransport (W := W)) (hU : U.PreservesInner)
+    (f g : W) :
+    U.inducedGram f g = PairGramFiber.ofVectors f g := by
+  apply PairGramFiber.ext
+  · simp [VectorTransport.inducedGram, PairGramFiber.ofVectors, U.norm_eq hU]
+  · simp [VectorTransport.inducedGram, PairGramFiber.ofVectors, U.norm_eq hU]
+  · exact hU.inner_eq f g
+
+/-- Consequently every one of the four polarization probes is invariant under
+an inner-product-preserving vector transport. -/
+theorem VectorTransport.probes_eq
+    (U : VectorTransport (W := W)) (hU : U.PreservesInner)
+    (f g : W) :
+    (U.inducedGram f g).probes = (PairGramFiber.ofVectors f g).probes := by
+  rw [U.inducedGram_eq hU f g]
+
+/-- The polarized complex cross-coordinate is invariant as a consequence of
+the vector-level inner-product theorem, not as an independent channel axiom. -/
+theorem VectorTransport.recombine_probes_eq
+    (U : VectorTransport (W := W)) (hU : U.PreservesInner)
+    (f g : W) :
+    ((U.inducedGram f g).probes).recombine =
+      ((PairGramFiber.ofVectors f g).probes).recombine := by
+  rw [U.probes_eq hU f g]
+
+/-- Bijectivity is kept separate from inner-product preservation.  Together
+these are the data normally needed before identifying a transport with a
+unitary automorphism. -/
+structure VectorTransport.IsUnitaryData (U : VectorTransport (W := W)) : Prop
+    extends U.PreservesInner where
+  bijective : Function.Bijective U.map
+
 end PairGramFiber
 
 end PolarizationResidueChannels
