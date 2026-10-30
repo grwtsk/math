@@ -1,0 +1,102 @@
+# Static mathematical target specification, not a queue or execution receipt.
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+verification_issue = "https://github.com/grwtsk/math/issues/1504"
+mathematical_scope = "Exact composition of transported main, cutoff, mixed-Gram, moved-indicator and inverse-omega budgets into the unchanged farNegative source, including finite-family and nonempty average returns; no quantitative supplier, endpoint estimate or RH."
+
+[source]
+repository = "grwtsk/math"
+commit = "fe605c8c41340cc33d971a9458122f176027cee0"
+parent = "77646bbe5141d7e530efe3897869926531f670de"
+tree = "7ae93bce4f80285b4a0ca0c080cc5c89578323d4"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarPrimeFamilyBudget.lean"
+blob = "11eb2d80fda177ebc392e29b631161194d3b87cb"
+sha256 = "c182e3dcfbccc459677ff39567abdee797cc743905c58fab671076d84a4a40de"
+line_count = 188
+byte_count = 8153
+status = "SOURCE_PROOF_CANDIDATE"
+
+[toolchain]
+lean = "leanprover/lean4:v4.34.1"
+lean_toolchain_blob = "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5"
+mathlib = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+lake_manifest_blob = "c8044c56be77c58e6f41cca024b25237c59e8c79"
+
+[verification]
+compilation = "NOT_RUN"
+trust_zero_elaboration = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+native_dispatch = "NOT_DISPATCHED"
+acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarPrimeFamilyBudget"
+build = "lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarPrimeFamilyBudget"
+elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarPrimeFamilyBudget.lean"
+declaration_count_lexical = 13
+structures = [
+  "TransportedMainSupplier",
+  "TransportedCutoffSupplier",
+  "CompleteFarPrimeSupplier",
+]
+definitions = [
+  "CompleteFarPrimeSupplier.totalBudget",
+  "primeFamilyBudget",
+  "primeFamilyAverageBudget",
+]
+theorems = [
+  "CompleteFarPrimeSupplier.totalBudget_nonnegative",
+  "transportedComponents_le_of_completeFarPrimeSupplier",
+  "farNegative_le_of_completeFarPrimeSupplier",
+  "primeFamilyBudget_nonnegative",
+  "farNegative_primeFamily_le_of_completeSuppliers",
+  "farNegative_le_two_mul_primeFamilyAverageBudget",
+  "primeFamilyBudget_empty",
+]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject = [
+  "sorryAx",
+  "new research axioms",
+  "one of the five source sectors omitted",
+  "the factor two altered or dropped",
+  "source signs or finite inventories changed",
+  "freshness or Z < p weakened",
+  "division by an empty prime family",
+  "fixed-prime estimates promoted to growing-family uniformity",
+  "paper analogy promoted to a supplier",
+  "unrestricted aggregate certificate",
+  "unauthorized native trust",
+  "acceptance transferred from changed bytes",
+]
+
+[dependencies]
+direct = [
+  "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarMixedChannelConnections",
+]
+critical_existing_declarations = [
+  "GRWTSK.NumberTheory.Moebius.PickupRoughFarMaskCommutator.farNegative_eq_transport_components",
+  "GRWTSK.NumberTheory.Moebius.PickupRoughFarMaskCommutator.farNegative_primeFamily_total",
+  "GRWTSK.NumberTheory.Moebius.PickupRoughFarMixedChannelConnections.transportedDivisorMask_le_of_completeChannelSupplier",
+  "GRWTSK.NumberTheory.Moebius.PickupRoughBilinearExtraction.fresh_mem",
+]
+dependency_scope = "Complete transitive project and upstream closure at the pinned source commit, including generated, private, opaque, instance, coercion and tactic dependencies."
+
+[comparison]
+primary_argument = "Add all five exact one-sided sector bounds, apply the existing single-prime or finite-family source identity, and divide only by the positive cardinal of a nonempty family."
+hostile_boundary = "The empty family has zero total budget and yields only the vacuous zero-times-source identity; it cannot support the normalized return."
+consumer = "The unchanged farNegative arithmetic source, followed by later recombination into the endpoint programme."
+novelty = "NOT_ASSESSED; local interoperability/source-return theorem."
+
+[unresolved]
+premises = [
+  "Construction of quantitative TransportedMainSupplier values.",
+  "Construction of quantitative TransportedCutoffSupplier values.",
+  "Construction of the mixed-Gram, moved-indicator and inverse-omega component suppliers.",
+  "A nonempty fresh-prime family above Z with a useful average complete budget.",
+  "Uniform control when the prime family grows with the stage.",
+  "Recombination with every remaining near, diagonal, main and approximation sector.",
+  "Return to an adequately covering all-positive-rate endpoint bound.",
+  "Compilation, fresh kernel replay, transitive axiom audit and expected-interface verification.",
+]
