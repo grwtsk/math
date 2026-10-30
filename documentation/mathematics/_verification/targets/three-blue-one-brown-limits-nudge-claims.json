@@ -1,0 +1,48 @@
+{
+  "primary_url": "https://www.3blue1brown.com/lessons/limits/",
+  "title": "Limits and the definition of derivatives",
+  "byline": "Grant Sanderson",
+  "text_adaptation": "Kurt Bruns",
+  "date": "2017-05-04",
+  "retained_html_sha256": "a386a7a757c2162fa666f308c4209d3bc98bda5cfa632b9502b500895a4df4b9",
+  "source": "GRWTSK/RealFunctions/FunctionsOfOneVariable/DifferentiationRealFunctionsOfOneVariableGeneralTheoryGeneralizedDerivativesMeanValueTheorems/FiniteNudgeQuadratic.lean",
+  "blob": "35d3731b6f180522b1798565cc70689438969fcc",
+  "namespace": "GRWTSK.RealAnalysis.FiniteNudgeQuadratic",
+  "theorems": [
+    "nudge_zero",
+    "quadratic_increment",
+    "quadratic_secant",
+    "quadratic_secant_error",
+    "quadratic_error_radius",
+    "quadratic_epsilon_delta",
+    "quadratic_hasDerivAt",
+    "quadratic_deriv",
+    "quadratic_punctured_limit",
+    "square_secant",
+    "square_secant_error",
+    "square_at_two_limit",
+    "square_zero_step_not_derivative"
+  ],
+  "hypotheses": "All a,b,c,x real; h!=0 for secant cancellation; epsilon>0 and |h|<epsilon/(|a|+1) for exact quantitative bound; punctured real neighborhood at zero for derivative limit.",
+  "scope": "Lesson general finite-nudge/limit definition instantiated on actual arbitrary quadratics. Polynomial examples are local consumers, not attributed as exact source formulas.",
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/Analysis/Calculus/Deriv/Pow.lean": "6873a8cf18c17369e5834a2e5084eb017a21c292",
+      "Mathlib/Analysis/Calculus/Deriv/Slope.lean": "6a258b1131e8405d3180328b403e87085cf811db"
+    },
+    "roles": "Polynomial derivative rules and equivalence of HasDerivAt with punctured difference-quotient convergence"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "General arbitrary-function epsilon-delta/derivative equivalence beyond imported theorem",
+    "Complete spoken-video mapping and source-bound checking",
+    "No hyperreal or dual-number statement"
+  ],
+  "video_verified_complete": false
+}
