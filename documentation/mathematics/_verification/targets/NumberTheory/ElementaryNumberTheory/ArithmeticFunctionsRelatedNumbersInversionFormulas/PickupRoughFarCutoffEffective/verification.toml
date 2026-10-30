@@ -1,0 +1,36 @@
+# Static mathematical target specification, not a queue or execution receipt.
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+verification_issue = "https://github.com/grwtsk/math/issues/1477"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughFarCutoffEffective"
+mathematical_scope = "Actual block-Gram elimination of all closed-N cutoff-loss strips plus exact p*m-m width bound for the surviving left interior gap strip; no asymptotic gain or RH."
+
+[source]
+repository = "grwtsk/math"
+commit = "005000175bba6a8acecf0d1005942f93820432aa"
+parent = "7b5963a8a72495c7a437498e993bd0d36579f77d"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarCutoffEffective.lean"
+blob = "529071d7789d60c5d5c81e644cd1b33f1f6fdf39"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarCutoffEffective"
+build = "lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarCutoffEffective"
+elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarCutoffEffective.lean"
+commands_status = "NOT_RUN"
+definitions = ["leftGapLost"]
+theorems = ["leftGapLost_iff_leftLost_and_inside","leftGapLost_subset_Icc","leftGapLost_count_le","gram_left_cutoff_zero","gram_right_cutoff_zero","gram_both_cutoff_zero","leftLost_gram_eq_zero_or_gap","rightLost_gram_zero","bothLost_gram_zero"]
+reject = ["sorryAx","new research axioms","support/counting statement promoted to asymptotic gain","omitted pairWeight or moved Gram factors","unauthorized native trust","acceptance transferred from changed bytes"]
+
+[obstruction]
+id = "RH-FAR-PRIME-MASK-COMMUTATOR-01"
+status = "REFINED"
+statement = "All actual-Gram closed-N loss crossings vanish; the surviving geometric unknown is the interior left gap strip together with lower-cutoff/near-to-far gain strips, plus the separate divisor-mask sector."
+smallest_missing_premise = "A source-exact p-dependent one-sided bound for the complete signed surviving geometric contribution, beginning with the leftGapLost sum and preserving outer rough signs and pairWeight."
