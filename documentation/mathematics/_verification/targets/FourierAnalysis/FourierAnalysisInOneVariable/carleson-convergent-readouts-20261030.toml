@@ -1,0 +1,25 @@
+# Local attribution: grwtsk contributors.
+kind = "source-bound-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "4edb8f1f095048b162361a5e4da25f8fcea2cca8"
+source_path = "adapters/carleson/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/ConvergentFourierReadouts.lean"
+source_blob = "60d962300a1ef348e196546bc527598abd0605c9"
+source_sha256 = "81d595d9a01926cf7131d6b89f9959e0d2463918d3732f68b5fbc26f53191cd3"
+managed_profile = "documentation/mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-convergent-readouts-20261030.profile.json"
+managed_profile_sha256 = "f81ddd06d7712ea02418d8c37ec5e4fd1238e4c7a12afb84022de24a2452d1d6"
+verification_issue = "https://github.com/grwtsk/math/issues/1485"
+classification = "SOURCE_PROOF_CANDIDATE"
+toolchain_core_qualification = "NOT_RUN"
+compilation = "NOT_RUN"
+comparator = "NOT_RUN"
+expected_interface = "NOT_RUN"
+complete_module_discovery = "NOT_RUN"
+fresh_independent_kernel_check = "NOT_RUN"
+complete_transitive_axiom_audit = "NOT_RUN"
+host_resource_restoration = "NOT_RUN"
+second_independent_checker = "UNSUPPLIED"
+required_root_count = 2
+expected_type_count = 2
+universe_parameters = ["u"]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+forbidden_axioms = ["sorryAx"]

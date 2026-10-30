@@ -1,0 +1,329 @@
+{
+  "schema": "grwtsk.source-bound-adapter-consumer-targets/1",
+  "local_attribution": "grwtsk contributors",
+  "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+  "source_commit": "4edb8f1f095048b162361a5e4da25f8fcea2cca8",
+  "source_tree": "77aa2fdca5c05dbb3dbc2ae897a20bc562f69c79",
+  "source_path": "adapters/carleson/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/ConvergentFourierReadouts.lean",
+  "source_blob": "60d962300a1ef348e196546bc527598abd0605c9",
+  "source_sha256": "81d595d9a01926cf7131d6b89f9959e0d2463918d3732f68b5fbc26f53191cd3",
+  "project_subdir": "adapters/carleson",
+  "profile": "documentation/mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-convergent-readouts-20261030.profile.json",
+  "profile_sha256": "f81ddd06d7712ea02418d8c37ec5e4fd1238e4c7a12afb84022de24a2452d1d6",
+  "required_declarations": [
+    "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.ConvergentFourierReadouts.convergent_coefficients_readout_ae",
+    "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.ConvergentFourierReadouts.convergent_coefficients_fixed_residual_ae_tendsto_zero"
+  ],
+  "expected_types": {
+    "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.ConvergentFourierReadouts.convergent_coefficients_readout_ae": "∀ {ι : Type u} [Countable ι] (f : ι → Real → Complex)\n  (hc : ∀ i, Continuous (f i))\n  (hp : ∀ i, Function.Periodic (f i) (2 * Real.pi)),\n  Filter.Eventually (fun x : Real =>\n    ∀ (s : Finset ι) (W : Nat → ι → Complex) (w : ι → Complex),\n      (∀ i ∈ s, Filter.Tendsto (fun N : Nat => W N i) Filter.atTop (nhds (w i))) →\n      Filter.Tendsto\n        (fun N : Nat => Finset.sum s (fun i => W N i * _root_.partialFourierSum N (f i) x))\n        Filter.atTop (nhds (Finset.sum s (fun i => w i * f i x))))\n    (MeasureTheory.ae (MeasureTheory.volume : MeasureTheory.Measure Real))",
+    "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.ConvergentFourierReadouts.convergent_coefficients_fixed_residual_ae_tendsto_zero": "∀ {ι : Type u} [Countable ι] (f : ι → Real → Complex)\n  (hc : ∀ i, Continuous (f i))\n  (hp : ∀ i, Function.Periodic (f i) (2 * Real.pi)),\n  Filter.Eventually (fun x : Real =>\n    ∀ (s : Finset ι) (W : Nat → ι → Complex) (w : ι → Complex),\n      (∀ i ∈ s, Filter.Tendsto (fun N : Nat => W N i) Filter.atTop (nhds (w i))) →\n      Filter.Tendsto\n        (fun N : Nat => Norm.norm\n          ((Finset.sum s (fun i => W N i * _root_.partialFourierSum N (f i) x)) -\n            (Finset.sum s (fun i => w i * f i x))))\n        Filter.atTop (nhds (0 : Real)))\n    (MeasureTheory.ae (MeasureTheory.volume : MeasureTheory.Measure Real))"
+  },
+  "universes": [
+    "u"
+  ],
+  "complete_module_declaration_discovery": true,
+  "verification_issue": "https://github.com/grwtsk/math/issues/1485",
+  "hypotheses": {
+    "fixed_data": "iota:Type u with Countable iota; one fixed family f:iota→Real→Complex with every f_i continuous and Function.Periodic(f_i)(2*Real.pi), all before the Lebesgue-a.e. event.",
+    "inside_one_event": "For every finite s:Finset iota, every W:Nat→iota→Complex and w:iota→Complex, assume ∀i∈s, Tendsto(fun N=>W N i) atTop (nhds(w i)). These choices occur AFTER x in the a.e. predicate; no uncountable intersection of separate a.e. events is used.",
+    "support_and_domain": "s is fixed as N:Nat tends atTop. Empty support and a countably infinite ambient index type are allowed. Coefficient convergence is required only on s.",
+    "coefficient_bound": "No l1-unit-ball or uniform row bound is assumed. Actual coefficientwise convergence is an explicit premise; the theorem constructs no convergent coefficient family."
+  },
+  "conclusion": {
+    "readout": "On that one event, sum_{i∈s} W(N,i)*partialFourierSum N(f_i)(x) tends in Complex to the FIXED limiting-weight readout sum_{i∈s}w(i)*f_i(x).",
+    "fixed_residual": "The norm of the difference between that actual moving-coefficient Fourier readout and the SAME fixed limiting-weight reference tends to zero in Real.",
+    "quantifier_boundary": "The event depends only on the fixed countable function family. Cutoffs/moduli may depend on x,s,W,w and their convergence; no cutoff uniform over all convergent rows/supports/x is supplied."
+  },
+  "proof_route": "Use the actual old countable-family coordinate-convergence event once; inside it multiply coefficient limits by coordinate Fourier limits and apply finite-sum continuity. Subtract the fixed limiting reference and apply norm continuity for the second root.",
+  "upstream": {
+    "repository": "fpvandoorn/carleson",
+    "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+    "tree": "f6ffb7c1f96cc50eb016c533e02e5b693ba8473e",
+    "selected_endpoint": "∀ {f : ℝ → ℂ}, Continuous f → f.Periodic (2 * Real.pi) → ∀ᵐ x : ℝ, Filter.Tendsto (fun N : ℕ => partialFourierSum N f x) Filter.atTop (nhds (f x))",
+    "source_path": "Carleson/Classical/ClassicalCarleson.lean",
+    "source_blob": "cef99075c938b9a5351ef800b72e612345e4e071",
+    "source_identities": [
+      {
+        "path": "README.md",
+        "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+        "blob": "113fee3012fa22b3fd3fd35aaa0770e3d6ac3027",
+        "sha256": "eca41c7ca1cb4a9a3fab8068f579c4918c638f0f36590882940b0345fbb5e762",
+        "bytes": 7412
+      },
+      {
+        "path": "LICENSE",
+        "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+        "blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "bytes": 11357
+      },
+      {
+        "path": "lakefile.toml",
+        "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+        "blob": "c897eaa77763f6de8d5dca5a8b81a033382617c1",
+        "sha256": "5ebc5b81c64bcc7472e456afa4703794ec392f69cfc8d13bb3f0685afd972d53",
+        "bytes": 1011
+      },
+      {
+        "path": "lean-toolchain",
+        "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+        "blob": "d0cf8c526254da3dafe6b3d635ee9d60f126c29b",
+        "sha256": "964acf49a540b2fbb4d25edc186eb68236afd8020473dfad7ccb08dc6ffa1d66",
+        "bytes": 28
+      },
+      {
+        "path": "lake-manifest.json",
+        "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+        "blob": "9f38271b66d6673f6a77766370ecd77b443a7d5f",
+        "sha256": "948c2c11931d15b31b5b180fc3a1dca84204a109f11145f12a4eff1edffda0b9",
+        "bytes": 3442
+      },
+      {
+        "path": "comparator_config.json",
+        "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+        "blob": "77d8ba98dabd1f8ec2c13eeefd4f10d8ce3e21cf",
+        "sha256": "276bfef858a1456c3f632e74280884f16289c1d90444fb2c7c5ca833c324ca19",
+        "bytes": 272
+      },
+      {
+        "path": "Carleson/Defs.lean",
+        "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+        "blob": "4d3e1554ff28603cc2d5a808f1756ddc5f971d49",
+        "sha256": "85d484bea4ac10d39573c50b95abc2fa771f39fe507f271aa013a6e27c1d1732",
+        "bytes": 16610
+      },
+      {
+        "path": "Carleson/Classical/ClassicalCarleson.lean",
+        "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+        "blob": "cef99075c938b9a5351ef800b72e612345e4e071",
+        "sha256": "86d0d54af36a98e9fbfa88b49dd363f68bfffbc19ea6ffd5e92a45de60226ed0",
+        "bytes": 6650
+      },
+      {
+        "path": "Carleson/Classical/CarlesonHuntBasic.lean",
+        "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+        "blob": "5eff47b7afb15ea8122aa95d0a85ef77ecf04e15",
+        "sha256": "5dab0c394a08bb09496466deb8a6f06bb8141352ef9b8bcf4197c18dbe04031a",
+        "bytes": 5963
+      },
+      {
+        "path": "Carleson/Classical/CarlesonHunt.lean",
+        "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+        "blob": "cb4f0dd29c556ff581197a060d159ba9c6e78373",
+        "sha256": "270f9f413421c680304ee9917f2ded2be5467298c04b048758d570b250d11a1d",
+        "bytes": 11171
+      }
+    ],
+    "measure_and_normalization": {
+      "measure": "Lebesgue volume on Real",
+      "cutoff": "Nat tending atTop",
+      "definition": "Carleson/Defs.lean partialFourierSum sums over Finset.Icc (-(N:Int)) N, with fourierCoeffOn Real.two_pi_pos f n times fourier n on AddCircle(2*pi).",
+      "blueprint_statement": "ClassicalCarleson, documented Theorem1.0.1. Classical proof source also refers to Section11.1."
+    },
+    "license": {
+      "spdx": "Apache-2.0",
+      "source_LICENSE_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "retained_exact_copy": "adapters/carleson/UPSTREAM-LICENSE",
+      "preserve_public_source_byline": true
+    }
+  },
+  "paper_identity": {
+    "title": "A blueprint for the formalization of Carleson’s theorem on convergence of Fourier series",
+    "authors": [
+      "Lars Becker",
+      "María Inés de Frutos-Fernández",
+      "Leo Diedering",
+      "Floris van Doorn",
+      "Sébastien Gouëzel",
+      "Asgar Jamneshan",
+      "Evgenia Karunus",
+      "Edward van de Meent",
+      "Pietro Monticone",
+      "Jasper Mulder-Sohn",
+      "Jim Portegies",
+      "Joris Roos",
+      "Michael Rothgang",
+      "Rajula Srivastava",
+      "James Sundstrom",
+      "Jeremy Tan",
+      "Christoph Thiele"
+    ],
+    "url": "https://florisvandoorn.com/carleson/blueprint/",
+    "version": "Exact Git52cba54d; source LaTeX date is today, so no immutable publication year/date inferred.",
+    "title_source_blob": "986ebbf96b6a42a1941ef60c96b2110b18ff10f3",
+    "byline_source_blob": "9e3f0dc048f47aa5a5fb63f05c04c2e02a0ba426",
+    "role": "Pinned blueprint statement/proof provenance; no new numbered paper mapping. Project byline is not asserted to be the byline of a headerless individual Lean file."
+  },
+  "native_dependency_boundary": {
+    "toolchain": "leanprover/lean4:v4.36.0-rc1",
+    "upstream_toolchain_blob": "d0cf8c526254da3dafe6b3d635ee9d60f126c29b",
+    "adapter_toolchain_blob": "2afd38716ad6182657562d3dac3c98461c1385f2",
+    "byte_difference": "Adapter adds a final LF; semantic toolchain string unchanged.",
+    "mathlib": "d88814353fcbcc0461c55b2a4585d3f44d903df1",
+    "config_blob": "c897eaa77763f6de8d5dca5a8b81a033382617c1",
+    "manifest_blob": "9f38271b66d6673f6a77766370ecd77b443a7d5f",
+    "upstream_lock_revisions": [
+      {
+        "name": "checkdecls",
+        "url": "https://github.com/PatrickMassot/checkdecls.git",
+        "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4"
+      },
+      {
+        "name": "mathlib",
+        "url": "https://github.com/leanprover-community/mathlib4.git",
+        "rev": "d88814353fcbcc0461c55b2a4585d3f44d903df1"
+      },
+      {
+        "name": "plausible",
+        "url": "https://github.com/leanprover-community/plausible",
+        "rev": "c2d7840c65673533e15b499f25beecdc6227f7d8"
+      },
+      {
+        "name": "LeanSearchClient",
+        "url": "https://github.com/leanprover-community/LeanSearchClient",
+        "rev": "9d39f9bb0c30aa2f6200808805ff16e6ce950890"
+      },
+      {
+        "name": "importGraph",
+        "url": "https://github.com/leanprover-community/import-graph",
+        "rev": "19a8e822bfeace1ae4e090045aad81e0c930e6cf"
+      },
+      {
+        "name": "proofwidgets",
+        "url": "https://github.com/leanprover-community/ProofWidgets4",
+        "rev": "eef6bb95363c38103535ac2df08b6bb141f0a764"
+      },
+      {
+        "name": "aesop",
+        "url": "https://github.com/leanprover-community/aesop",
+        "rev": "29c64c56cc38211d39b306db2df11701e3d3de11"
+      },
+      {
+        "name": "Qq",
+        "url": "https://github.com/leanprover-community/quote4",
+        "rev": "6d26f8bb4b2bb78f929ad160feac508866821316"
+      },
+      {
+        "name": "batteries",
+        "url": "https://github.com/leanprover-community/batteries",
+        "rev": "8e746d768c73b716c7d4bc07bd8e73f2a75bdb60"
+      },
+      {
+        "name": "Cli",
+        "url": "https://github.com/leanprover/lean4-cli",
+        "rev": "34d2efffcb6dc8d5f3537cf6a7f88bfaa999ec49"
+      }
+    ],
+    "all_ten_retained_exactly_in_adapter": true,
+    "upstream_own_effectful_post_update": false,
+    "hook_execution": false,
+    "root_version_transport": "UNSUPPLIED: root4.34.1 not imported/promoted/upgraded.",
+    "adapter_config_blob": "cbcc40fd07a5a9da2c9e734ec957fb2428cfc9bc",
+    "adapter_manifest_blob": "985f1cbbd53e8622035fc8efc19ae6761d9aeba5"
+  },
+  "upstream_comparator_policy": {
+    "blob": "77d8ba98dabd1f8ec2c13eeefd4f10d8ce3e21cf",
+    "theorem_names": [
+      "classical_carleson'",
+      "metric_carleson''",
+      "linearized_metric_carleson'"
+    ],
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "enable_nanoda": false,
+    "execution": "NOT_RUN; upstream README commands are not local receipts."
+  },
+  "mathlib_api_sources": [
+    {
+      "commit": "d88814353fcbcc0461c55b2a4585d3f44d903df1",
+      "path": "Mathlib/MeasureTheory/OuterMeasure/AE.lean",
+      "blob": "bcd4946a0f4a0ec0731c0472105e328728848650",
+      "declaration": "MeasureTheory.ae_all_iff [Countable ι]"
+    },
+    {
+      "commit": "d88814353fcbcc0461c55b2a4585d3f44d903df1",
+      "path": "Mathlib/Topology/Algebra/Monoid.lean",
+      "blob": "f2e67d20b60ecc05fefee7020b63bd8ddc738b40",
+      "declaration": "tendsto_finsetSum, generated by to_additive from tendsto_finsetProd"
+    },
+    {
+      "commit": "d88814353fcbcc0461c55b2a4585d3f44d903df1",
+      "path": "Mathlib/Topology/Algebra/Monoid/Defs.lean",
+      "blob": "1b4f763e33d4172affc053638a916ee38b8f71db",
+      "declaration": "Filter.Tendsto.mul"
+    },
+    {
+      "commit": "d88814353fcbcc0461c55b2a4585d3f44d903df1",
+      "path": "Mathlib/Topology/Algebra/Group/Defs.lean",
+      "blob": "714d597f316ab4725ddce04d8293fcaefa2b614f",
+      "declaration": "Filter.Tendsto.sub, generated from div'"
+    },
+    {
+      "commit": "d88814353fcbcc0461c55b2a4585d3f44d903df1",
+      "path": "Mathlib/Analysis/Normed/Group/Continuity.lean",
+      "blob": "a4ebd522b2ac6864a0f96bbbfcbf81279b42fffb",
+      "declaration": "Filter.Tendsto.norm, generated from norm'"
+    }
+  ],
+  "actual_adapter_consumer": {
+    "source_commit": "4edb8f1f095048b162361a5e4da25f8fcea2cca8",
+    "namespace": "GRWTSK.FourierAnalysis.FourierAnalysisInOneVariable.FiniteFourierReadoutConvergence",
+    "path": "adapters/carleson/GRWTSK/FourierAnalysis/FourierAnalysisInOneVariable/FiniteFourierReadoutConvergence.lean",
+    "blob": "a803cf300e8a4987ddfc62ff0bc1985617fd4734",
+    "roots": [
+      "countable_family_ae_convergence",
+      "finite_weighted_readout_ae_convergence",
+      "finite_weighted_residual_ae_tendsto_zero",
+      "unit_ball_residual_le_coordinate_sum",
+      "finite_unit_ball_residual_ae_uniform",
+      "cutoff_dependent_unit_ball_residual_ae_tendsto_zero"
+    ],
+    "use": "The existing last root permits arbitrarily oscillating rows but compares against the SAME moving row. New coefficient convergence gives an actual fixed limiting-weight readout, rather than only moving-reference residual convergence.",
+    "historical_scope": "Old a803 module and its earlier targets remain unchanged; this target requests complete compiler-owned census and two exact types for the NEW module only, plus full transitive dependency/axiom evidence."
+  },
+  "root_motivation_and_missing_transport": {
+    "source_commit": "8393c15741bcabc40ed1a2b64bed88b498c99db9",
+    "namespace": "GRWTSK.Analysis.FiniteSums.DiscreteFourierReadout",
+    "path": "GRWTSK/RealFunctions/DiscreteFourierReadout.lean",
+    "blob": "3f33ba2da169c76f021c899760245cc78db17f17",
+    "declarations": [
+      "pairing_synthesis",
+      "pairing_eq_modes",
+      "pairing_residual_eq",
+      "norm_pairing_residual_le",
+      "pairing_residual_sq_le"
+    ],
+    "observation": "Finite complex coefficient row is combined before transformation and before error norms.",
+    "support_source": "GRWTSK/RealFunctions/DiscreteFourierSynthesis.lean blobcce77d168c255970646a690b6ce76d4c271adc3f defines finite ZMod D coefficient/frequency and exact inversion.",
+    "missing_bridge": "UNSUPPLIED: finite ZMod D negative-sign normalized DFT vs continuous AddCircle2pi real-line Fourier series, including exact observation map/normalization/version comparison. No direct root import or claimed cross-representation theorem.",
+    "other_inspected_source": "WeightedResidualReadout.readout_vanishes_of_mass uses real mass budgets and separate readout identities; those source/model/mass suppliers are not produced by this complex Fourier limit."
+  },
+  "missing_bridges": [
+    "The coefficient convergence premise is not constructed; an l1-unit-ball bound alone supplies neither it nor convergence of the moving readout.",
+    "No support varying with N, infinite-sum interchange, uniform rate/cutoff over all rows/supports/x, or one common event for all continuous function families.",
+    "Root finite cyclic-DFT versus continuous AddCircle(2*pi)/real-line Fourier series map, sign/normalization and native4.36→root4.34.1 version comparison remain UNSUPPLIED; no root import/dependency promotion.",
+    "Generic Carleson-Hunt Lp/strong-type sorryAx routes are excluded; upstream status claims and source reviews are not local transitive axiom acceptance.",
+    "Supported exact4.36.0-rc1 toolchain/core qualification, full source/asset closure, fresh registry/native/type/census/axiom/replay/restoration evidence and a second independent checker remain required."
+  ],
+  "verification": {
+    "toolchain_core_qualification": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "comparator": "NOT_RUN",
+    "expected_interface": "NOT_RUN",
+    "complete_module_discovery": "NOT_RUN",
+    "fresh_independent_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "host_resource_restoration": "NOT_RUN",
+    "second_independent_checker": "UNSUPPLIED"
+  },
+  "acceptance_requires": [
+    "Exact source/dependency/configuration/toolchain/core binding and supported fresh external registry under current producer/policy and all owner/resource gates.",
+    "Complete compiler-owned declaration discovery for the new module, both required roots and both literal expected types with universeu; reject missing/extra or drifted coverage.",
+    "Fresh compilation, complete reachable transitive axiom policy excluding sorryAx/unapproved trust, Comparator/statement fidelity, independent replay/checker and host restoration evidence as distinct facets.",
+    "Do not replace the original Anthropic Fermat6 or OpenAI weighted4 scopes with this separate4.36 source increment; keep historical outcomes and exact source pins."
+  ],
+  "claim_boundary": "Source proof candidates and mathematical verification predicates only. Source/API/profile review, upstream reports and publication do not establish native or kernel acceptance. No root representation transport, saturation or measured AI benefit is claimed."
+}
