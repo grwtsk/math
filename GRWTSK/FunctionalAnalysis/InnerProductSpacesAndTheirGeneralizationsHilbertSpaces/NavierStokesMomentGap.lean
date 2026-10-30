@@ -1492,6 +1492,111 @@ theorem navierStokesLerayTriad_transverse_of_output_ne_zero
       (navierStokesLerayTriad t a b) = 0 := by
   exact lerayProject_transverse hout (navierStokesConvectiveTriad t a b)
 
+
+/-!
+### Finite source-labelled convolution consumer
+
+The first convolution bridge is deliberately finite.  A finite set of labelled
+pairs is summed without quotienting by output frequency, so multiplicity and
+the identity of both input frequencies remain present in the source index.
+This avoids assuming summability or Bochner-integrability that has not yet
+been established for the full Fourier source.
+-/
+
+/-- Finite projected Navier--Stokes convolution over an explicit set of
+source-labelled pairs.  Distinct labels with the same additive output are
+counted separately. -/
+def finiteNavierStokesLerayConvolution
+    (S : Finset (TriadSource FourierFrequency3))
+    (u : FourierFrequency3 → FourierVelocity3) : FourierVelocity3 :=
+  ∑ t ∈ S, navierStokesLerayTriad t (u t.left) (u t.right)
+
+/-- Sector-specific finite convolution.  Keeping the two source functions
+separate lets the exact shell/tail expansion retain all four sectors. -/
+def finiteNavierStokesLerayConvolution₂
+    (S : Finset (TriadSource FourierFrequency3))
+    (u v : FourierFrequency3 → FourierVelocity3) : FourierVelocity3 :=
+  ∑ t ∈ S, navierStokesLerayTriad t (u t.left) (v t.right)
+
+/-- The finite source-labelled projected convolution is exactly the sum of
+shell--shell, shell--tail, tail--shell, and tail--tail convolutions. -/
+theorem finiteNavierStokesLerayConvolution_shell_tail_split
+    (S : Finset (TriadSource FourierFrequency3))
+    (u : FourierFrequency3 → FourierVelocity3) (R : ℝ) :
+    finiteNavierStokesLerayConvolution S u =
+      finiteNavierStokesLerayConvolution₂ S
+        (shellPart R u) (shellPart R u) +
+      finiteNavierStokesLerayConvolution₂ S
+        (shellPart R u) (tailPart R u) +
+      finiteNavierStokesLerayConvolution₂ S
+        (tailPart R u) (shellPart R u) +
+      finiteNavierStokesLerayConvolution₂ S
+        (tailPart R u) (tailPart R u) := by
+  classical
+  simp only [finiteNavierStokesLerayConvolution,
+    finiteNavierStokesLerayConvolution₂]
+  rw [← Finset.sum_add_distrib, ← Finset.sum_add_distrib,
+    ← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro t ht
+  exact navierStokesLerayTriad_shell_tail_split u R t
+
+/-- Restrict an explicit finite labelled source to one additive output
+frequency.  This is a filter, not a quotient: every matching pair remains a
+separate member and therefore retains its multiplicity. -/
+def triadsAtOutput
+    (S : Finset (TriadSource FourierFrequency3))
+    (ξ : FourierFrequency3) : Finset (TriadSource FourierFrequency3) :=
+  S.filter (fun t => t.outputFrequency = ξ)
+
+/-- Finite projected convolution at one output frequency, obtained by
+filtering the source-labelled set rather than identifying equal-output pairs. -/
+def finiteNavierStokesLerayConvolutionAt
+    (S : Finset (TriadSource FourierFrequency3))
+    (ξ : FourierFrequency3)
+    (u : FourierFrequency3 → FourierVelocity3) : FourierVelocity3 :=
+  finiteNavierStokesLerayConvolution (triadsAtOutput S ξ) u
+
+/-- Every summand contributing to a nonzero fixed output is transverse at
+that same output frequency, hence so is the complete finite convolution.
+No cancellation between different source labels is needed for this fact. -/
+theorem finiteNavierStokesLerayConvolutionAt_transverse
+    (S : Finset (TriadSource FourierFrequency3))
+    {ξ : FourierFrequency3} (hξ : ξ ≠ 0)
+    (u : FourierFrequency3 → FourierVelocity3) :
+    fourierDivergencePairing ξ
+      (finiteNavierStokesLerayConvolutionAt S ξ u) = 0 := by
+  classical
+  unfold finiteNavierStokesLerayConvolutionAt
+  unfold finiteNavierStokesLerayConvolution
+  rw [map_sum]
+  apply Finset.sum_eq_zero
+  intro t ht
+  simp only [triadsAtOutput, Finset.mem_filter] at ht
+  have hout : t.outputFrequency = ξ := ht.2
+  rw [← hout]
+  exact navierStokesLerayTriad_transverse_of_output_ne_zero
+    t (hout.symm ▸ hξ) (u t.left) (u t.right)
+
+/-- The four-sector identity remains exact after restricting to one output
+frequency.  In particular high--high pairs returning to a low output remain
+inside the tail--tail summand of that low-output convolution. -/
+theorem finiteNavierStokesLerayConvolutionAt_shell_tail_split
+    (S : Finset (TriadSource FourierFrequency3))
+    (ξ : FourierFrequency3)
+    (u : FourierFrequency3 → FourierVelocity3) (R : ℝ) :
+    finiteNavierStokesLerayConvolutionAt S ξ u =
+      finiteNavierStokesLerayConvolution₂ (triadsAtOutput S ξ)
+        (shellPart R u) (shellPart R u) +
+      finiteNavierStokesLerayConvolution₂ (triadsAtOutput S ξ)
+        (shellPart R u) (tailPart R u) +
+      finiteNavierStokesLerayConvolution₂ (triadsAtOutput S ξ)
+        (tailPart R u) (shellPart R u) +
+      finiteNavierStokesLerayConvolution₂ (triadsAtOutput S ξ)
+        (tailPart R u) (tailPart R u) := by
+  exact finiteNavierStokesLerayConvolution_shell_tail_split
+    (triadsAtOutput S ξ) u R
+
 end FourierNavierStokesTriad
 
 
