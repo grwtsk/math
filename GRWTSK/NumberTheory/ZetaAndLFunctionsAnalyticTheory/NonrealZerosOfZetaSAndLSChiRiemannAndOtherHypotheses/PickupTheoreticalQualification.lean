@@ -148,8 +148,11 @@ theorem sampledSourceComparison_residual
     (sampledSourceComparison left right).residual T =
       (endpointSum T.1 - observedEndpointSum T.1 left right) -
         curvatureCorrection T.1 := by
-  simp only [sampledSourceComparison, SignedComparison.comp_residual,
-    endpointSampleComparison, endpointSourceComparison]
+  change
+    (endpointSum T.1 - observedEndpointSum T.1 left right) +
+      -curvatureCorrection T.1 =
+    (endpointSum T.1 - observedEndpointSum T.1 left right) -
+      curvatureCorrection T.1
   ring
 
 /-- Distinct sample and curvature allowances are both paid for the SAME
