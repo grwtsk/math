@@ -1,0 +1,36 @@
+# Static mathematical target specification, not a queue or execution receipt.
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+verification_issue = "https://github.com/grwtsk/math/issues/1489"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughFarDivisorMaskReduction"
+mathematical_scope = "Exact reduction of transportedDivisorMask: left channel annihilation, right/both weight-delta telescoping, and channel-mismatch decomposition; no quantitative bound or RH."
+
+[source]
+repository = "grwtsk/math"
+commit = "4f6fdf496fbcadbeb0e8e4a615106c17bd279e22"
+parent = "a61569ac99529fdcdb555e60655a513787b126b1"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarDivisorMaskReduction.lean"
+blob = "9f25797cca5e4f74efc18f0ecc33209f011c642b"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarDivisorMaskReduction"
+build = "lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarDivisorMaskReduction"
+elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarDivisorMaskReduction.lean"
+commands_status = "NOT_RUN"
+definitions = ["rightWeightDelta","bothWeightDelta","transportedOuter","weightedDivisorMaskAtom","reducedDivisorMaskAtom"]
+theorems = ["rough_cons_zero_of_dvd","left_divisor_channel_zero","right_add_both_delta_eq_neg_inv","not_dvd_of_rough_cons_ne_zero","weightedDivisorMaskAtom_eq_right_both","weightedDivisorMaskAtom_eq_reduced","transportedDivisorMask_eq_reduced"]
+reject = ["sorryAx","new research axioms","channel mismatch promoted to quantitative gain","unproved density/entropy replacement","omitted actual omega denominator","unauthorized native trust","acceptance transferred from changed bytes"]
+
+[obstruction]
+id = "RH-FAR-DIVISOR-CHANNEL-MISMATCH-03"
+status = "OPEN"
+statement = "The divisor-weight increments telescope exactly, but the right and simultaneous channels multiply different indicators and Gram entries; the complete reduced mismatch has no proved improved-rate bound."
+smallest_missing_premise = "Source-exact control of the one-channel Gram difference, moved indicator mismatch, and atomic 1/omega(p*n) term, jointly or separately, with return to transportedDivisorMask."
