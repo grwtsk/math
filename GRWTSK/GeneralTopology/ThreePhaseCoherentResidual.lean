@@ -68,6 +68,42 @@ theorem residual_sum_zero (z : Phase3) :
   simp only [residual, mean]
   ring
 
+
+/-- The coordinate mean is additive. -/
+theorem mean_add (z w : Phase3) :
+    mean (z + w) = mean z + mean w := by
+  simp only [mean, Pi.add_apply]
+  ring
+
+/-- The coherent-plus-zero-mean representation is unique.  This provides the
+direct-sum witness without assuming a particular basis of the residual plane. -/
+theorem coherent_residual_unique
+    (z a b : Phase3)
+    (ha : ∀ j, a j = mean a)
+    (hb : mean b = 0)
+    (hs : a + b = z) :
+    a = coherent z ∧ b = residual z := by
+  have hm : mean a = mean z := by
+    rw [← hs, mean_add, hb, add_zero]
+  have hae : a = coherent z := by
+    funext j
+    calc
+      a j = mean a := ha j
+      _ = mean z := hm
+      _ = coherent z j := rfl
+  refine ⟨hae, ?_⟩
+  funext j
+  have hj : a j + b j = z j := by
+    have h := congrArg (fun v : Phase3 => v j) hs
+    simpa only [Pi.add_apply] using h
+  calc
+    b j = z j - a j := by
+      calc
+        b j = a j + b j - a j := by ring
+        _ = z j - a j := by rw [hj]
+    _ = z j - mean z := by rw [hae]; rfl
+    _ = residual z j := rfl
+
 /-- Complex extension of the selected real heat flow: coherent coordinate
 fixed, residual coordinates multiplied by the original real heat factor. -/
 def heat (t : ℝ) (z : Phase3) : Phase3 :=
