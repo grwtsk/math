@@ -1,0 +1,25 @@
+{
+  "project_subdir": "adapters/lean-proofs/v4.29.1",
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/AdditiveNumberTheory/ReciprocalSubsetSumCollision.lean",
+      "universes": [],
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.NumberTheory.AdditiveNumberTheory.ReciprocalSubsetSumCollision.disjoint_positive_supports_of_collision",
+        "GRWTSK.NumberTheory.AdditiveNumberTheory.ReciprocalSubsetSumCollision.disjoint_positive_supports_of_reciprocal_mass"
+      ],
+      "module_expected_types": {
+        "GRWTSK.NumberTheory.AdditiveNumberTheory.ReciprocalSubsetSumCollision.disjoint_positive_supports_of_collision": "∀ (A X Y : Finset Nat) (hpos : ∀ a ∈ A, 0 < a)\n  (hX : X ⊆ A) (hY : Y ⊆ A) (hne : X ≠ Y)\n  (heq : Finset.sum X id = Finset.sum Y id),\n  ∃ S T : Finset Nat, S ⊆ A ∧ T ⊆ A ∧ Disjoint S T ∧\n    S.Nonempty ∧ T.Nonempty ∧ 0 < Finset.sum S id ∧\n    Finset.sum S id = Finset.sum T id",
+        "GRWTSK.NumberTheory.AdditiveNumberTheory.ReciprocalSubsetSumCollision.disjoint_positive_supports_of_reciprocal_mass": "∀ (A : Finset Nat)\n  (hmass : (2 : Real) ≤ Finset.sum A (fun a : Nat => (1 : Real) / (a : Real))),\n  ∃ S T : Finset Nat, S ⊆ Finset.erase A 0 ∧ T ⊆ Finset.erase A 0 ∧ Disjoint S T ∧\n    S.Nonempty ∧ T.Nonempty ∧ 0 < Finset.sum S id ∧\n    Finset.sum S id = Finset.sum T id"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Local attribution: grwtsk contributors.
+kind = "source-bound-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "d38bc7c2e8b8cc45dad12180ff5bdbe5808deb66"
+source_tree = "d2b3b8a281412e4b08ea34f07a876b23ee4f97e9"
+source_path = "adapters/lean-proofs/v4.29.1/GRWTSK/NumberTheory/AdditiveNumberTheory/ReciprocalSubsetSumCollision.lean"
+source_blob = "fb19960a95c6405f8cff395cbff9791111f8a37c"
+source_sha256 = "58bfcf82bb2a95a076e5522e9d18bc2a417610337d6b1081d053a950d46bb4e0"
+managed_profile = "documentation/mathematics/_verification/targets/NumberTheory/AdditiveNumberTheory/plby-subset-collision-20261030.profile.json"
+profile_sha256 = "142a7e019d51a615a0f2f5105852bb650e0d4e3b25c5ea62eee3f3d28c6832da"
+classification = "SOURCE_PROOF_CANDIDATE"
+toolchain_qualification = "NOT_RUN"
+compilation = "NOT_RUN"
+comparator = "NOT_RUN"
+complete_module_discovery = "NOT_RUN"
+expected_interface = "NOT_RUN"
+fresh_independent_kernel_check = "NOT_RUN"
+second_independent_checker = "UNSUPPLIED"
+complete_transitive_axiom_audit = "NOT_RUN"
+host_resource_restoration = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+forbidden_axioms = ["sorryAx"]
