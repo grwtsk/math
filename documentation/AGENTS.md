@@ -7,4 +7,4 @@
 - Source publication and mathematical acceptance are separate. Do not turn document movement or successful navigation checks into compilation, kernel replay or axiom-audit evidence.
 - Keep generators, mutable processing state, execution attempts and receipts in `grwtsk/noeaaeue`; maintain only the mathematical documents and static navigation/specification data here.
 
-Local content attribution: grwtsk contributors.
+Collective local copyright attribution: grwtsk contributors. Public scholarly bylines may name human contributors or their chosen collective/pseudonymous identity with consent; Git author and committer identity are not fixed by this notice. Preserve upstream authorship and licensing.

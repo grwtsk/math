@@ -6,7 +6,7 @@ GRWTSK mathematics is a public, human-directed collection of mathematical constr
 
 Mathematical work may begin with a sketch, a crayon, a slide rule, a calculator, a book, a search, an educational video, a discussion, code, or a proof assistant. These instruments differ, but their value lies in what they let people understand, test, correct, and contribute—not in their names or providers. Faster, more useful feedback can widen what a person can investigate; mathematical validity and novelty still require their own evidence.
 
-GRWTSK preserves the resulting mathematics so others can inspect, challenge, and extend it. The maintained mathematical source is attributed to **grwtsk contributors**, with identifiable upstream authors and licenses retained.
+GRWTSK preserves the resulting mathematics so others can inspect, challenge, and extend it. **grwtsk contributors** is the collective copyright and human-contributor acknowledgment, not a compulsory personal byline. Specific human authors can receive their chosen public credit, while upstream authorship and licenses remain intact.
 
 [**Explore the mathematics**](documentation/mathematics/index.md) · [Start with the least prime](documentation/mathematics/_support/start/least-prime.md) · [Proof standards](documentation/mathematics/_support/reference/proof-comparison-disposition.md) · [Contribute formalizations](documentation/mathematics/_support/start/formalization-contributions.md)
 
@@ -88,4 +88,4 @@ Provider-specific Lean packages under [`documentation/adapters/`](documentation/
 
 This repository owns mathematical source, authored explanation, and static source-bound verification specifications. Execution, mutable caches, managed checking, operational receipts, scheduling, authority, Git publication machinery, and generated proof capsules belong in [`grwtsk/noeaaeue`](https://github.com/grwtsk/noeaaeue). Use a receipt only at the source and dependency revision it actually identifies; the existence of a specification does not mean a check has run.
 
-Local mathematical contributions use the [MIT license](LICENSE) and the byline **grwtsk contributors**. Collective acknowledgment does not displace identifiable authorship: retain original sources, licensing, and upstream credit in [NOTICE](NOTICE), [LICENSES](LICENSES/), and relevant source headers.
+Local contributions use the [MIT license](LICENSE), subject to the applicable upstream rights and terms. Copyright remains with the applicable human contributors and rights holders; the collective **grwtsk contributors** notice does not require a single Git identity or replace an individual human author’s chosen public byline. Tools and AI providers are credited only for evidenced operations, not as human authors. Preserve genuine upstream sources, notices and licenses in [NOTICE](NOTICE), [LICENSES](LICENSES/), and relevant source headers.
