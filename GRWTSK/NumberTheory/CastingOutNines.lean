@@ -54,9 +54,7 @@ theorem addCheck_iff (a b c : List Nat) :
 
 theorem mulCheck_iff (a b c : List Nat) :
     MulCheck a b c ↔ (value a * value b) % 9 = value c % 9 := by
-  unfold MulCheck
-  rw [← casting_out_nines a, ← casting_out_nines b, ← casting_out_nines c,
-    ← Nat.mul_mod]
+  simp only [MulCheck, Nat.mul_mod, Nat.mod_mod, casting_out_nines]
 
 theorem correct_addition_passes (a b c : List Nat)
     (h : value a + value b = value c) : AddCheck a b c :=
@@ -79,11 +77,13 @@ theorem failed_multiplication_check_detects_error (a b c : List Nat)
 /-- The incorrect calculation `1 + 1 = 11` nevertheless passes. -/
 theorem addition_false_positive :
     AddCheck [1] [1] [1, 1] ∧ value [1] + value [1] ≠ value [1, 1] := by
+  unfold AddCheck
   decide
 
 /-- The incorrect calculation `2 * 2 = 13` also passes. -/
 theorem multiplication_false_positive :
     MulCheck [2] [2] [3, 1] ∧ value [2] * value [2] ≠ value [3, 1] := by
+  unfold MulCheck
   decide
 
 /-- Infinitely many wrong numerical answers have the same checksum. -/
@@ -93,10 +93,10 @@ theorem undetectable_error_family (n k : Nat) :
 
 /-- Swapping adjacent decimal coefficients anywhere cannot change the check.
 This includes ordinary digit transpositions, even when the represented value changes. -/
-theorem adjacent_transposition_undetectable (prefix suffix : List Nat) (a b : Nat) :
-    value (prefix ++ a :: b :: suffix) % 9 =
-      value (prefix ++ b :: a :: suffix) % 9 := by
-  induction prefix with
+theorem adjacent_transposition_undetectable (pre post : List Nat) (a b : Nat) :
+    value (pre ++ a :: b :: post) % 9 =
+      value (pre ++ b :: a :: post) % 9 := by
+  induction pre with
   | nil =>
     simp only [List.nil_append, value]
     omega
