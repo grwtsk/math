@@ -1426636,6 +1426636,25 @@
       "target_sha256": "6fae894ddd592b2b75036de5e849e04a59ccd7ef567f5642ff974faaa60aa57a",
       "target_git_blob": "d763372f17013db6926fbabdb6ade3efd4d3f284",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/CarVelocityIntegration.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/CarVelocityIntegration.lean",
+      "source_sha256": "4135fb61eac8b842f547150e459c0e41b28e372f324325054f0b5572434771cd",
+      "input_blob": "f8e90d3612611d25078d9a225efcc461ce511b58",
+      "source_kind": "lean_source",
+      "msc_code": "26A42",
+      "msc_label": "Integrals of Riemann, Stieltjes and Lebesgue type",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual polynomial car-velocity integral, primitive/FTC consumer, unsigned speed and exact rectangle defect",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "f8e90d3612611d25078d9a225efcc461ce511b58",
+      "target_sha256": "4135fb61eac8b842f547150e459c0e41b28e372f324325054f0b5572434771cd",
+      "target_git_blob": "f8e90d3612611d25078d9a225efcc461ce511b58",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
