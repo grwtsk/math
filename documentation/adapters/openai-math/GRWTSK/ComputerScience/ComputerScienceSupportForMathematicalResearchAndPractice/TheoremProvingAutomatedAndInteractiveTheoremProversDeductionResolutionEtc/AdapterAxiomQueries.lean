@@ -1,0 +1,1 @@
+../../../../../../../GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/AdapterAxiomQueries.lean

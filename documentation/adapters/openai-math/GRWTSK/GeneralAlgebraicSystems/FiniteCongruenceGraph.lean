@@ -1,0 +1,1 @@
+../../../../../GRWTSK/GeneralAlgebraicSystems/FiniteCongruenceGraph.lean

@@ -1,0 +1,1 @@
+../../../../../../GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/FreyPrimePowerDenominator.lean

@@ -1,0 +1,411 @@
+{
+  "local_attribution": "grwtsk contributors",
+  "projects": [
+    {
+      "project": "zeta23",
+      "repository": "https://github.com/anthropics/formal-math",
+      "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+      "subdirectory": "zeta23",
+      "tree": "0b1b7ba12fec523b0e41753d77d9e8a8e2a2aab6",
+      "lean_toolchain": "leanprover/lean4:v4.33.0-rc2",
+      "mathlib": "51e6992efd06126df61a496bebf8f49482a4e129",
+      "source_blobs": {
+        "zeta23/LICENSE": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "zeta23/NOTICE": "8de3803673ccab52dd029d6b9942f4f410c57fe4",
+        "zeta23/README.md": "302fa9094863279d0ec83fca012d2b7bf59d5ccd",
+        "zeta23/comparator-xiprime.json": "09adbb14924dcaa8569b1f526486050d6dfb0797",
+        "zeta23/comparator.json": "0fc12ebb8b21a74de5d30fd598e1f1ad1094ca2e",
+        "zeta23/docbuild/lake-manifest.json": "ee705a7b0b438f645dec3b3e16520e0424e8c755",
+        "zeta23/docbuild/lakefile.toml": "02e331c736dc473c30c3553074a6dc530ca690dc",
+        "zeta23/formalization.yaml": "27542f31268d77ac2f040b0a3c0f1d08d974d8d8",
+        "zeta23/lake-manifest.json": "af9ef405e4e292f2e0176b12b6cb66f547575314",
+        "zeta23/lakefile.toml": "43d9da33fb523dce999b070df74e7cdd03381e2b"
+      },
+      "surfaces": [
+        {
+          "config": "zeta23/comparator-xiprime.json",
+          "blob": "09adbb14924dcaa8569b1f526486050d6dfb0797",
+          "configuration": {
+            "challenge_module": "Challenge.XiPrime",
+            "solution_module": "Solution.XiPrime",
+            "theorem_names": [
+              "xiPrime_zeros_in_open_critical_strip",
+              "xiPrime_over_xi_re_pos",
+              "xiPrime_simple_zeros_on_critical_line",
+              "xiPrime_simple_zeros_on_critical_line_cumulative",
+              "xiPrime_simple_zeros_on_critical_line_quartic",
+              "xiPrime_simple_zeros_on_critical_line_quartic_cumulative"
+            ],
+            "definition_names": [],
+            "permitted_axioms": [
+              "propext",
+              "Quot.sound",
+              "Classical.choice"
+            ],
+            "enable_nanoda": true
+          },
+          "adapter_module": "GRWTSK.NumberTheory.CompletedZetaDerivative",
+          "classification": "EXACT_UPSTREAM_REEXPORT_SURFACE_NOT_A_BRIDGE"
+        },
+        {
+          "config": "zeta23/comparator.json",
+          "blob": "0fc12ebb8b21a74de5d30fd598e1f1ad1094ca2e",
+          "configuration": {
+            "challenge_module": "Challenge",
+            "solution_module": "Solution",
+            "theorem_names": [
+              "two_thirds_on_critical_line",
+              "two_thirds_on_critical_line_cumulative",
+              "two_thirds_simple_on_critical_line",
+              "two_thirds_simple_on_critical_line_cumulative",
+              "five_sixths_distinct",
+              "five_sixths_distinct_cumulative",
+              "montgomery_taylor_on_critical_line",
+              "montgomery_taylor_simple_on_critical_line_mult",
+              "montgomery_taylor_simple_on_critical_line_mult_cumulative",
+              "montgomery_taylor_distinct_mult",
+              "montgomery_taylor_distinct_mult_cumulative",
+              "dirichlet_two_thirds_on_critical_line",
+              "dirichlet_two_thirds_simple_on_critical_line",
+              "dirichlet_five_sixths_distinct",
+              "dirichlet_montgomery_taylor_on_critical_line",
+              "dirichlet_montgomery_taylor_simple_on_critical_line_mult",
+              "dirichlet_montgomery_taylor_distinct_mult"
+            ],
+            "definition_names": [],
+            "permitted_axioms": [
+              "propext",
+              "Quot.sound",
+              "Classical.choice"
+            ],
+            "enable_nanoda": true
+          },
+          "adapter_module": "GRWTSK.NumberTheory.ZetaValueIrrationality",
+          "classification": "EXACT_UPSTREAM_REEXPORT_SURFACE_NOT_A_BRIDGE"
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "comparator": "NOT_RUN",
+        "independent_kernel": "NOT_RUN",
+        "transitive_axioms": "NOT_RUN"
+      },
+      "source_lean_files": 326
+    },
+    {
+      "project": "3sum-apsp",
+      "repository": "https://github.com/anthropics/formal-math",
+      "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+      "subdirectory": "3sum-apsp",
+      "tree": "d9566c59427cdf3bbca188715ceb6b0aa34368da",
+      "lean_toolchain": "leanprover/lean4:v4.33.1",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "source_blobs": {
+        "3sum-apsp/Challenge/EndStatement.lean": "3ee6cf51b449cfd69a3e2b64afd1e25bd5effde6",
+        "3sum-apsp/Challenge/PaperStatements.lean": "91806cc30e5904cc5f72bdd9559f85d231014029",
+        "3sum-apsp/EndStatement.lean": "b2e03ddc7dc78c273aa5a1edda073fd2274d87de",
+        "3sum-apsp/LICENSE": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "3sum-apsp/NOTICE": "0a0dbf49888306f7d732790bbbf2ca2e75c37e6b",
+        "3sum-apsp/PaperStatements.lean": "158248acf61ca4cef6341cf131028114b1a8ca3e",
+        "3sum-apsp/README.md": "577dd1bcddc310471920a4c51205a975628cb7be",
+        "3sum-apsp/Solution/EndStatement.lean": "e646ac130bf1330ad8635b8e4d1e19af17188e7f",
+        "3sum-apsp/Solution/PaperStatements.lean": "ff3e57c56e065f0e32df50e4d71405ab1e9676f5",
+        "3sum-apsp/ThreeSumApsp/Statements/EndStatement.lean": "5f034c8999ab8d97f66653b3feef1b4a9ed4f38b",
+        "3sum-apsp/ThreeSumApsp/Statements/PaperStatements.lean": "890081e80174df518280c5de72e48d82fd7ba815",
+        "3sum-apsp/comparator-endstatement.json": "b901620e46d200d756c2243b90465f050d97c385",
+        "3sum-apsp/comparator-paperstatements.json": "d182d669abe54e916e2de753f753d83f30f47d40",
+        "3sum-apsp/docs/paper-items.json": "caa9779f500a5e0f79044a7cf92694e836d85600",
+        "3sum-apsp/docs/programs.json": "3702ac286e3acaf28a9873c95e6a70a465c6809d",
+        "3sum-apsp/lake-manifest.json": "278733a7ecc1563b8ceb70e62df049d43c6a83c6",
+        "3sum-apsp/lakefile.toml": "3d1d890c608b71088fe498eb961746f11505d7f1",
+        "3sum-apsp/scripts/README.md": "a41dc7074f705d184423f0fcbad685ff11f0a614"
+      },
+      "surfaces": [
+        {
+          "config": "3sum-apsp/comparator-endstatement.json",
+          "blob": "b901620e46d200d756c2243b90465f050d97c385",
+          "configuration": {
+            "challenge_module": "Challenge.EndStatement",
+            "solution_module": "Solution.EndStatement",
+            "theorem_names": [
+              "ThreeSumApsp.endStatement_theorem_19",
+              "ThreeSumApsp.endStatement_theorem_22_3SUM",
+              "ThreeSumApsp.endStatement_theorem_22_MinPlus",
+              "ThreeSumApsp.endStatement_theorem_22_APSP",
+              "ThreeSumApsp.endStatement_corollary_39_zeroWeight"
+            ],
+            "definition_names": [],
+            "permitted_axioms": [
+              "propext",
+              "Quot.sound",
+              "Classical.choice"
+            ],
+            "enable_nanoda": true
+          },
+          "adapter_module": "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.ThreeSumApspConclusions",
+          "classification": "EXACT_UPSTREAM_REEXPORT_SURFACE_NOT_A_BRIDGE"
+        },
+        {
+          "config": "3sum-apsp/comparator-paperstatements.json",
+          "blob": "d182d669abe54e916e2de753f753d83f30f47d40",
+          "configuration": {
+            "challenge_module": "Challenge.PaperStatements",
+            "solution_module": "Solution.PaperStatements",
+            "theorem_names": [
+              "PaperStatements.eq_1",
+              "PaperStatements.lemma_6",
+              "PaperStatements.figure_3",
+              "PaperStatements.lemma_7",
+              "PaperStatements.lemma_8",
+              "PaperStatements.figure_4",
+              "PaperStatements.lemma_9",
+              "PaperStatements.lemma_10",
+              "PaperStatements.sec2_card_contributing_of_order",
+              "PaperStatements.sec2_card_outStr_of_leaf",
+              "PaperStatements.eq_5_ratio",
+              "PaperStatements.eq_5_bound",
+              "PaperStatements.eq_5",
+              "PaperStatements.figure_6",
+              "PaperStatements.lemma_11",
+              "PaperStatements.eq_6",
+              "PaperStatements.theorem_17_hashing_sum_sq_le",
+              "PaperStatements.theorem_17_write_cost",
+              "PaperStatements.theorem_17_scanOrder_exists",
+              "PaperStatements.theorem_17",
+              "PaperStatements.remark_18_block",
+              "PaperStatements.remark_20_balance",
+              "PaperStatements.remark_20_brute_force",
+              "PaperStatements.theorem_21b_repeated_squaring",
+              "PaperStatements.theorem_21b_entries_bounded",
+              "PaperStatements.theorem_21b_log_factors",
+              "PaperStatements.theorem_21b_negative_to_exact",
+              "PaperStatements.theorem_21a_convolution_to_exact",
+              "PaperStatements.theorem_21a_compose",
+              "PaperStatements.theorem_21a_threeSum_to_convolution",
+              "PaperStatements.theorem_21a_threeSum_to_exact",
+              "PaperStatements.lemma_27",
+              "PaperStatements.lemma_28_leaves",
+              "PaperStatements.lemma_28_unique",
+              "PaperStatements.lemma_28",
+              "PaperStatements.lemma_28_counts",
+              "PaperStatements.lemma_28_boxes",
+              "PaperStatements.figure_10_counts",
+              "PaperStatements.figure_10_rows",
+              "PaperStatements.figure_10_Vof",
+              "PaperStatements.lemma_29_count",
+              "PaperStatements.lemma_29_values",
+              "PaperStatements.lemma_29_split",
+              "PaperStatements.sec4_rho_lt_one",
+              "PaperStatements.eq_7_ratio",
+              "PaperStatements.eq_7",
+              "PaperStatements.eq_10_corollary_26",
+              "PaperStatements.eq_10",
+              "PaperStatements.eq_11_iff",
+              "PaperStatements.corollary_31_gamma_pos",
+              "PaperStatements.sec4_Rc_strictAntiOn",
+              "PaperStatements.sec4_Rc_zero_tendsto",
+              "PaperStatements.sec4_epsStar_numeric",
+              "PaperStatements.sec4_Rc_lt_epsStar",
+              "PaperStatements.corollary_32_saving",
+              "PaperStatements.table_2_query_valid",
+              "PaperStatements.table_2_ninth_valid",
+              "PaperStatements.table_2_density_valid",
+              "PaperStatements.table_2_c40",
+              "PaperStatements.table_2_c21",
+              "PaperStatements.table_2_c19",
+              "PaperStatements.table_2_c15",
+              "PaperStatements.table_2_c12",
+              "PaperStatements.table_2_c10_5",
+              "PaperStatements.table_2_larger_c",
+              "PaperStatements.table_1_section_2_column",
+              "PaperStatements.corollary_26_W",
+              "PaperStatements.theorem_34_blocks",
+              "PaperStatements.theorem_34_entries",
+              "PaperStatements.theorem_34_total",
+              "PaperStatements.theorem_34_absorb",
+              "PaperStatements.lemma_36a_exact_triangle",
+              "PaperStatements.lemma_36a_min_plus_below",
+              "PaperStatements.lemma_36a_min_plus_successor",
+              "PaperStatements.lemma_36a_min_plus_blocks",
+              "PaperStatements.lemma_36a_count",
+              "PaperStatements.lemma_36a_valid",
+              "PaperStatements.lemma_36a_colors",
+              "PaperStatements.lemma_36a_pairs",
+              "PaperStatements.lemma_36a_subtractions",
+              "PaperStatements.lemma_36b_count",
+              "PaperStatements.lemma_36b_lists",
+              "PaperStatements.lemma_36b_subtractions",
+              "PaperStatements.lemma_37_order_exists",
+              "PaperStatements.lemma_37_index_exists",
+              "PaperStatements.lemma_37",
+              "PaperStatements.lemma_37_enumerated",
+              "PaperStatements.corollary_38_bound",
+              "PaperStatements.corollary_38_correct",
+              "PaperStatements.theorem_35_d",
+              "PaperStatements.theorem_35_counting_call",
+              "PaperStatements.theorem_35_forming_lists",
+              "PaperStatements.theorem_35_min_plus_total",
+              "PaperStatements.theorem_35_further_time",
+              "PaperStatements.theorem_35_three_sum_count",
+              "PaperStatements.theorem_35_three_sum_total",
+              "PaperStatements.theorem_35_one_run",
+              "PaperStatements.theorem_35_restarts",
+              "PaperStatements.agreement_exactTriangle",
+              "PaperStatements.agreement_minPlusProduct",
+              "PaperStatements.agreement_apsp_noNegativeCycle",
+              "PaperStatements.agreement_apsp_output",
+              "PaperStatements.agreement_rowByRow",
+              "PaperStatements.agreement_cliqueWeight",
+              "PaperStatements.agreement_solves",
+              "PaperStatements.agreement_bigO",
+              "PaperStatements.agreement_solvedInTime",
+              "ThreeSumApsp.wordRam_theorem_5",
+              "ThreeSumApsp.wordRam_corollary_15",
+              "ThreeSumApsp.wordRam_corollary_16",
+              "ThreeSumApsp.wordRam_theorem_19",
+              "ThreeSumApsp.wordRam_theorem_22_first",
+              "ThreeSumApsp.wordRam_theorem_22_second",
+              "ThreeSumApsp.wordRam_theorem_22_threeSum",
+              "ThreeSumApsp.wordRam_theorem_24",
+              "ThreeSumApsp.wordRam_theorem_25",
+              "ThreeSumApsp.wordRam_corollary_26",
+              "ThreeSumApsp.wordRam_corollary_26_wanted",
+              "ThreeSumApsp.wordRam_theorem_30",
+              "ThreeSumApsp.wordRam_theorem_30_wanted",
+              "ThreeSumApsp.wordRam_corollary_31",
+              "ThreeSumApsp.wordRam_corollary_32",
+              "ThreeSumApsp.wordRam_corollary_39_zero",
+              "ThreeSumApsp.wordRam_corollary_39_min_max",
+              "ThreeSumApsp.wordRam_corollary_40_times",
+              "ThreeSumApsp.wordRam_corollary_40_general_times",
+              "ThreeSumApsp.wordRam_corollary_40_fail",
+              "ThreeSumApsp.wordRam_theorem_1",
+              "ThreeSumApsp.wordRam_theorem_2",
+              "ThreeSumApsp.wordRam_theorem_2_graphs",
+              "ThreeSumApsp.wordRam_theorem_3",
+              "ThreeSumApsp.wordRam_theorem_4"
+            ],
+            "definition_names": [],
+            "permitted_axioms": [
+              "propext",
+              "Quot.sound",
+              "Classical.choice"
+            ],
+            "enable_nanoda": true
+          },
+          "adapter_module": "GRWTSK.ComputerScience.TheoryOfComputing.AnalysisOfAlgorithmsAndProblemComplexity.ThreeSumApspTheorems",
+          "classification": "EXACT_UPSTREAM_REEXPORT_SURFACE_NOT_A_BRIDGE"
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "comparator": "NOT_RUN",
+        "independent_kernel": "NOT_RUN",
+        "transitive_axioms": "NOT_RUN"
+      },
+      "source_lean_files": 434
+    },
+    {
+      "project": "eth",
+      "repository": "https://github.com/anthropics/formal-math",
+      "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+      "subdirectory": "eth",
+      "tree": "6215627c537a6acb2f2d307021027e565b9bc111",
+      "lean_toolchain": "leanprover/lean4:v4.33.1",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "source_blobs": {
+        "eth/LICENSE": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "eth/MainResults.lean": "1c62a550fa1e4cbec65bb7112f92ad67589afddc",
+        "eth/NOTICE": "e8566e13158182ca02087a5430b640093e5c6c4a",
+        "eth/README.md": "0b3dcf4a858ff802b3275fc5999ffb134c74de60",
+        "eth/comparator.json": "85f16dc55e511335729e668917308b375f0f6036",
+        "eth/lake-manifest.json": "296fefa9ac614013ab29708d71c1ae5dcbc39765",
+        "eth/lakefile.toml": "055ec8b4132a38fc96dc4fd0c8cb9b6b6ef8b62a",
+        "eth/proof/README.md": "6babfbb1bbc4ec7d7465ef3fa50c1eef9f75a95e"
+      },
+      "surfaces": [
+        {
+          "config": "eth/comparator.json",
+          "blob": "85f16dc55e511335729e668917308b375f0f6036",
+          "configuration": {
+            "challenge_module": "Challenge",
+            "solution_module": "Solution",
+            "theorem_names": [
+              "MainResults.ethIsFalse",
+              "MainResults.mainTheorem"
+            ],
+            "definition_names": [],
+            "permitted_axioms": [
+              "propext",
+              "Quot.sound",
+              "Classical.choice"
+            ],
+            "enable_nanoda": true
+          },
+          "adapter_module": "GRWTSK.ComputerScience.TheoryOfComputing.ComputationalDifficultyOfProblemsLowerBoundsCompletenessDifficultyOfApproximationEtc.ExponentialTimeHypothesis",
+          "classification": "EXACT_UPSTREAM_REEXPORT_SURFACE_NOT_A_BRIDGE"
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "comparator": "NOT_RUN",
+        "independent_kernel": "NOT_RUN",
+        "transitive_axioms": "NOT_RUN"
+      },
+      "source_lean_files": 1052
+    },
+    {
+      "project": "fermat",
+      "repository": "https://github.com/anthropics/fermats-last-theorem",
+      "commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+      "subdirectory": "",
+      "tree": "443edf11d3610bc14f267534862c19124f2cb7a4",
+      "lean_toolchain": "leanprover/lean4:v4.33.1",
+      "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+      "source_blobs": {
+        "FinalCheck.lean": "3ffbd60b8f9736f5569e4dd4774701a114d18266",
+        "LICENSE": "6f101c9faa913e222f966b68c5ce9890fe50344f",
+        "NOTICE": "5411679f5f1878e72d1622a88c54b8fbb3f29282",
+        "README.md": "b2a839c8674977b3a8fa18fa1004da12af5277ec",
+        "formalization.yaml": "ff3bc7da09c86cb2c16b931774369668d57dd91e",
+        "html/assets/vendor/katex/LICENSE": "37c6433e3bedca7a97e08fe35d98582a5f7bac0c",
+        "lake-manifest.json": "2b5a9ec02a1d760170e6034ebcd43e72fa9a42c3",
+        "tools/docs-site/README.md": "c7ccac8c4cf3b2790fabb36dc23ff9e1268ce91b",
+        "tools/docs-site/gen/data/aliases.json": "b1684455f029f944cccc24c836541bcb93ca1cc1",
+        "tools/docs-site/gen/data/landmark_stages.json": "3d84f3fa0a921155a7be932af76b266ca1b970aa",
+        "tools/docs-site/gen/data/top_dag.json": "2cdfd1b5e45a0a1eccdfdc6fbfa2b5f4d894257b",
+        "tools/docs-site/gen/vendor/graphviz.LICENSE": "29f81d812f3e768fa89638d1f72920dbfd1413a8",
+        "tools/docs-site/gen/vendor/katex/LICENSE": "37c6433e3bedca7a97e08fe35d98582a5f7bac0c",
+        "verification/comparator/config.json": "eb21dda0470ec910962f9e0737ea367dfe2c7b59",
+        "verification/comparator/lakefile.toml": "6d68138cece63148e5e4a31ab4cad88dec475b3f",
+        "verification/nanoda/nanoda-config.json": "c8778c0268b7c51167a4d0b071324ec1e74d36cc"
+      },
+      "surfaces": [
+        {
+          "adapter_module": "GRWTSK.NumberTheory.FermatSourceEdition1",
+          "upstream_declarations": [
+            "flt_pinned",
+            "fermat_last_theorem",
+            "flt_mathlib"
+          ],
+          "classification": "SOURCE_PROOF_CANDIDATE_SPECIALIZATION",
+          "missing_bridges": [
+            "Native compilation, fresh kernel replay and transitive axiom audit; no equivalence of intermediate Wiles arguments asserted."
+          ],
+          "local_declarations": [
+            "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositivePowerSum",
+            "GRWTSK.NumberTheory.AnthropicMath.Fermat.noPositiveCubeSum",
+            "GRWTSK.NumberTheory.AnthropicMath.Fermat.powerSum_eq_forces_zero_factor"
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "comparator": "NOT_RUN",
+        "independent_kernel": "NOT_RUN",
+        "transitive_axioms": "NOT_RUN"
+      },
+      "source_lean_files": 60478
+    }
+  ]
+}

@@ -137,8 +137,8 @@ lake build --wfail
 
 The public baseline is Lean 4.34.1 with Mathlib
 `d13f23b723b8a846827a245b89c10fc7d3f11612`. Provider-specific packages live
-under [`adapters/`](adapters/README.md), including the standalone
-[`openai-math`](adapters/openai-math/README.md) package. Build that package
+under [`adapters/`](documentation/adapters/README.md), including the standalone
+[`openai-math`](documentation/adapters/openai-math/README.md) package. Build that package
 separately; its OAI imports are outside the public GRWTSK target.
 
 The committed `lean-toolchain` and `lake-manifest.json` pin the public Lean and Mathlib inputs. Build success alone is not an axiom audit, finite-certificate validation, or acceptance of an unresolved application premise.

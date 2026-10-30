@@ -1,0 +1,121 @@
+# OpenAI paper-to-adapter references
+
+Local attribution: grwtsk contributors. Upstream author: OpenAI.
+
+The original source integration is `grwtsk/math@129468cf1c7e78e601feec06beaedfd6cae2e22e`.
+Current adapter Git blobs and upstream source identities are in [sources.toml](sources.toml).
+Provider relocation preserves the mathematical namespaces and statements. Source
+identities below describe exact bytes, independently of publication or acceptance.
+
+## Ordinary two-point correlations of multiplicative functions
+
+OpenAI, September 24, 2026. [Pinned paper/source](https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Ordinary-two-point-correlations-of-multiplicative-functions-September-24-2026/README.md),
+README blob `965a26b87458fb541e5a0a36d40804ab86cadad7`.
+
+Imported mathematics: `OAI.OrdinaryTwoPointCorrelations.liouville_log_saving`,
+`OAI.OrdinaryTwoPointCorrelations.binary_corrected_elliott`, and
+`OAI.TwoPointCorrelations.UniformlyNonpretentious.finite_prime_change`.
+The last is the manuscript's finite-prime-stability method.
+
+Local source candidates, all prefixed
+`GRWTSK.NumberTheory.Moebius.OpenAITwoPointFiniteFamily.`:
+
+- `liouville_finite_family_bound`: finite support, positive affine slopes,
+  nonzero determinant `a₁*b₂ ≠ a₂*b₁`, and `X ≥ 3`; common positive exponent,
+  with a separate positive constant for each affine form and arbitrary complex
+  readouts. Constants are chosen before `X` and the readout.
+- `elliott_after_fixed_prime_change`: one-bounded original, modified, and second
+  functions; modified and second functions separately multiplicative; original
+  function uniformly nonpretentious; agreement on primes outside one fixed
+  finite set; distinct fixed shifts.
+- `elliott_after_fixed_prime_divisor_change`: the preceding statement with the
+  fixed finite set `q.primeFactors`. The modulus is fixed before the limit.
+
+Missing bridges: growing-family constant control, transfer from Liouville to
+Möbius, and an estimate for the actual local arithmetic residual. None is
+supplied. No arithmetic counterexample or historical influence is inferred.
+
+## The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s)>7/8
+
+OpenAI, September 30, 2026. [Pinned paper/source](https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/README.md),
+README blob `05daa0838d60781c338ac22a9b06e6990f970981`.
+
+Imported mathematics: `OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re` and
+`OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re`.
+
+Local source candidates, all prefixed
+`GRWTSK.NumberTheory.DirichletL.OpenAISevenEighthsGap.`:
+
+- `zeta_zero_re_le`: an actual complex zeta zero has real part at most `7/8`,
+  by contrapositive of the imported statement.
+- `dirichlet_zero_re_le`: positive/nonzero modulus via `[NeZero q]`, the exact
+  character and L-function, and explicit exclusion of the principal pole.
+- `explicit_real_zero_log_gap`: `q ≥ 3`, nonprincipal character, and an actual
+  real L-function zero `β` imply `log(3)/8 ≤ (1-β)*log(q)`.
+
+Missing bridges: independent acceptance of the upstream analytic theorem,
+zero-density/Möbius estimates, and any RH conclusion.
+
+## Evidence roles
+
+Imported mathematics is distinguished above from the six local source proof
+candidates. Kernel-verified bridges: none claimed. Conditional local RH
+interfaces are outside this package. Finite evidence and analogies: none offered
+as verification of these adapters. Unresolved premises are listed separately for
+each source.
+
+Compilation, fresh independent kernel replay, transitive axiom audit, and
+comparator execution: `NOT_RUN`. The exact verification targets are documented
+in [README.md](README.md); actual operational receipts belong outside math.
+The canonical [paper-to-formalization ledger](../../mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#openai-adapter-reconciliation)
+now reconciles these adapter references and the two signed-Abel neighborhood
+supplements. This provider map supplements that current ledger. Historical source
+pins and verification statuses remain unchanged; the earlier removed-ledger
+workaround is retired.
+
+## Collection-wide upstream source references
+
+The static [catalogue](catalogue.json) records the title, OpenAI byline, pinned
+2026 version, stable source URL and exact PDF blob for all 721 manuscripts in
+373 result families. It also preserves the 176 upstream formalization source
+references and 208 main-result records without inventing a paper-to-theorem
+pairing. Each comparator import surface records its exact upstream declaration
+names, import blobs, comparator configuration, permitted axioms and pending
+verification scopes. These are explicit upstream dependency/re-export surfaces,
+not additional local paper-derived theorems. Their original types retain every
+hypothesis; a consumer-specific mathematical bridge and exact paper theorem
+mapping remain separate obligations. No historical influence is inferred.
+
+## Patched PNT source boundary
+
+The pinned upstream OAI Lake configuration applies dependency patches. In
+particular PNT base `c39a751132c88b6e8080b74c74023fd95b3d8be0` lacks
+PrimeNumberTheoremAnd.Erdos970.MertensClassical; OAI patch blob
+`924c5f6ec6fe88ba7788b420af4e3c3c7ac00abc` adds it. Matching the base HEAD is insufficient to
+supply the exact patched import closure. Qualify the base/patch/output mapping
+through supported Noe tooling before fresh source replay; do not run upstream
+hooks or silently substitute a newer PNT. The canonical ledger anchor
+openai-patched-pnt-source-boundary-20261029 and static target
+`documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-boundary-20261029.json` retain exact identities and acceptance obligations.
+All native, comparator, axiom and expected-interface checks remain NOT_RUN.
+
+## Four exact historical weighted-model interfaces
+
+The additional complete-module expected-type target `documentation/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/openai-weighted-model-growth-interfaces-20261029.json` and adjacent
+profile/TOML retain source 64d4c9/c948d147, all four exact roots, actual residual
+and kernel quantities, signed model, 2B and every-positive-exponent growth order.
+Current MSC source/import changes have separate identities and acceptance scopes.
+Actual arithmetic residual and growth suppliers remain unsupplied; no RH proof
+is claimed. Compilation, fresh replay, complete axiom and type checks are NOT_RUN.
+The original historical target remains intact; the OAI/Liouville patched-PNT
+source-supply obligation is separate.
+
+## Exact Liouville source inputs and remaining suppliers — 2026-10-30
+
+The static [openai-liouville-exact-source-supply-20261030](../../mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#openai-liouville-exact-source-supply-20261030) continuation binds all55 paths (47 additions,8 modifications) of the exact OAI PNT patch, all194 hunks and expected effective tree `b7d455a31f9799c7b2b3485f3627f394db356064`. [Expected source inputs](../../mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-inputs-20261030.json) and [closure obligations](../../mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-source-supply-closure-20261030.json) retain each complete preimage/result identity. `MertensClassical` remains exactly `8f3e823d7cedff9e294bacf7ec4f0c54c2df9b42`; the two appended index-less modifications have computed identities, not invented advertised hashes. Public bylines, Apache-2.0 and vendor notices remain obligations; no source bytes were copied into this provider.
+
+The exact PNT delta resolves the three PNT imports in a static declared-header view, but the consumer closure remains incomplete. `StrongPNT.Erdos970.{PNT2_LogDerivative,PNT4_ZeroFreeRegion,PNT5_Strong}` requires a separately reviewed source supplier at manifest base `2f5835c322314f55f1026ec2f139d704b7c45c69` with OAI patch `0269959e81418ffd738958089922f4eca4fec787`; its outputs/descendants are UNSUPPLIED. Six active Mathlib `include_str` assets under `widget/src/penrose/` also fall outside the inspected Noe ProofWidgets-only supplier. These are source-materialization preconditions, not executed compiler failures. Supported derived-source/asset supply and every native/Comparator/interface/replay/transitive-axiom facet remain NOT_RUN; the independent checker remains UNSUPPLIED. The historical failed profile is preserved separately from the later complete-module/literal-type profile. The original weighted-model-growth four and Anthropic Fermat six checks remain active and separate.
+
+## Upstream namespace correction — 2026-10-30
+
+Upstream `4eaee87548250b2682affda7d05d947c05554bae` is two commits beyond the selected7ef pin. Its October29 [history](https://github.com/openai/math/blob/4eaee87548250b2682affda7d05d947c05554bae/history.md) reports a rational-Hodge CM namespace correction. The selected challenge/CM sources now spell the OAI-qualified symbols already used by the byte-identical solution; Comparator configuration and PNT patch/lakefile/manifest identities are unchanged. The [static interface obligation](../../mathematics/_verification/targets/UpstreamAdapters/openai-hodge-namespace-boundary-20261030.json) preserves exact old/new blobs and remaining checks. This is a bounded textual comparison; the remaining changed closure is unreviewed and Comparator/type/native acceptance is NOT_RUN. The419-surface/545-name/721-manuscript inventory stays at7ef; no pin upgrade or recertification follows.

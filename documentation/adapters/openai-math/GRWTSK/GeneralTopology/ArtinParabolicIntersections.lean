@@ -1,0 +1,1 @@
+../../../../../GRWTSK/GeneralTopology/ArtinParabolicIntersections.lean
