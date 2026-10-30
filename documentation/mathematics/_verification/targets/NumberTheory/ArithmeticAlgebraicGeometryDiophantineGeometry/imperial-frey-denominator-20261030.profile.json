@@ -1,0 +1,25 @@
+{
+  "project_subdir": "adapters/imperial-flt",
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/FreyPrimePowerDenominator.lean",
+      "universes": [],
+      "declarations": [],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "discover_module_declarations": true,
+      "dependency_radius": 3,
+      "required_module_declarations": [
+        "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FreyPrimePowerDenominator.exponent_dvd_denominator_order",
+        "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FreyPrimePowerDenominator.prime_power_factor_of_denominator_prime"
+      ],
+      "module_expected_types": {
+        "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FreyPrimePowerDenominator.exponent_dvd_denominator_order": "\u2200 (P : FreyPackage) {q : Nat}\n  (hqPrime : Nat.Prime q) (hqbad : (q : Int) \u2223 P.a * P.b * P.c) (hqodd : 2 < q),\n  P.p \u2223 padicValNat q P.freyCurve.j.den",
+        "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FreyPrimePowerDenominator.prime_power_factor_of_denominator_prime": "\u2200 (P : FreyPackage) {q : Nat}\n  (hqPrime : Nat.Prime q) (hqbad : (q : Int) \u2223 P.a * P.b * P.c) (hqodd : 2 < q)\n  (hqden : q \u2223 P.freyCurve.j.den),\n  P.p \u2264 padicValNat q P.freyCurve.j.den \u2227\n    \u2203 k : Nat, 0 < k \u2227 P.freyCurve.j.den = q ^ P.p * k \u2227\n      q ^ P.p \u2264 P.freyCurve.j.den"
+      }
+    }
+  ]
+}

@@ -1,0 +1,757 @@
+{
+  "schema": "grwtsk.source-bound-adapter-consumer-targets/1",
+  "local_attribution": "grwtsk contributors",
+  "source_commit": "b13149227de39dc96dc9074796508957949128bd",
+  "source_tree": "925a3a30674ca09f2a10201b96088295fa62cfbf",
+  "source_path": "adapters/imperial-flt/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/FreyPrimePowerDenominator.lean",
+  "source_blob": "2fa84acb0d2002740ca8bbd3da8565cf1a0edbd0",
+  "source_sha256": "4ec58adbba5d4f606834104784871a0a515da159194444f2b9f6a1776e990bfd",
+  "project_subdir": "adapters/imperial-flt",
+  "profile": "documentation/mathematics/_verification/targets/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/imperial-frey-denominator-20261030.profile.json",
+  "profile_sha256": "0ff051af0e882179cc4db1ec413ea69a68d841b11984dbdf19f13025192448e4",
+  "required_declarations": [
+    "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FreyPrimePowerDenominator.exponent_dvd_denominator_order",
+    "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FreyPrimePowerDenominator.prime_power_factor_of_denominator_prime"
+  ],
+  "expected_types": {
+    "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FreyPrimePowerDenominator.exponent_dvd_denominator_order": "∀ (P : FreyPackage) {q : Nat}\n  (hqPrime : Nat.Prime q) (hqbad : (q : Int) ∣ P.a * P.b * P.c) (hqodd : 2 < q),\n  P.p ∣ padicValNat q P.freyCurve.j.den",
+    "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FreyPrimePowerDenominator.prime_power_factor_of_denominator_prime": "∀ (P : FreyPackage) {q : Nat}\n  (hqPrime : Nat.Prime q) (hqbad : (q : Int) ∣ P.a * P.b * P.c) (hqodd : 2 < q)\n  (hqden : q ∣ P.freyCurve.j.den),\n  P.p ≤ padicValNat q P.freyCurve.j.den ∧\n    ∃ k : Nat, 0 < k ∧ P.freyCurve.j.den = q ^ P.p * k ∧\n      q ^ P.p ≤ P.freyCurve.j.den"
+  },
+  "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+  "verification": {
+    "toolchain_qualification": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "comparator": "NOT_RUN",
+    "expected_interface": "NOT_RUN",
+    "complete_module_discovery": "NOT_RUN",
+    "fresh_independent_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "host_resource_restoration": "NOT_RUN",
+    "second_independent_checker": "UNSUPPLIED"
+  },
+  "consumer": {
+    "provider": "imperial-flt",
+    "project_subdir": "adapters/imperial-flt",
+    "path": "adapters/imperial-flt/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/FreyPrimePowerDenominator.lean",
+    "source_commit": "b13149227de39dc96dc9074796508957949128bd",
+    "source_blob": "2fa84acb0d2002740ca8bbd3da8565cf1a0edbd0",
+    "source_sha256": "4ec58adbba5d4f606834104784871a0a515da159194444f2b9f6a1776e990bfd",
+    "declarations": [
+      "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FreyPrimePowerDenominator.exponent_dvd_denominator_order",
+      "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FreyPrimePowerDenominator.prime_power_factor_of_denominator_prime"
+    ],
+    "upstream": [
+      {
+        "repository": "https://github.com/ImperialCollegeLondon/FLT",
+        "commit": "a3210204ad8876e851e32f73dd97d882bf1ccd0a",
+        "tree": "2c8aef14f600d0a1c92c224cbaf925f57c12f13d",
+        "source_graph": [
+          {
+            "source": {
+              "path": "FLT/FreyCurve/Basic.lean",
+              "blob": "eaaca84b85675f2e44ee5ca1f5c88824f627d48e",
+              "sha256": "d5a1fa49019429f417f3222da2fcadf9f45bccd0c6ba89cb1bc630a51e5296e8"
+            },
+            "imports": [
+              "FLT.FreyCurve.FreyPackage"
+            ],
+            "lexical_trust_scan": {
+              "^axiom ": 0,
+              "\\bsorry\\b": 0,
+              "\\bnative_decide\\b": 0,
+              "\\bunsafe\\b": 0,
+              "\\bimplemented_by\\b": 0,
+              "#eval": 0,
+              "#print axioms": 0
+            }
+          },
+          {
+            "source": {
+              "path": "FLT/FreyCurve/FreyPackage.lean",
+              "blob": "490cba6dffb5f74b5ed16bcc15b8c41a523300df",
+              "sha256": "4b9adcb2edebbe5dbf3b096acbc65ca86ed666991ca1254e487331491b36da8a"
+            },
+            "imports": [
+              "Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass",
+              "Mathlib.Algebra.Field.ZMod",
+              "Mathlib.Analysis.Normed.Field.Lemmas",
+              "Mathlib.Data.Matrix.Mul",
+              "Mathlib.NumberTheory.FLT.Basic",
+              "Mathlib.NumberTheory.Padics.PadicVal.Basic",
+              "Mathlib.Algebra.Lie.OfAssociative",
+              "Mathlib.NumberTheory.FLT.Four",
+              "Mathlib.NumberTheory.FLT.Three",
+              "Mathlib.Tactic.ModCases",
+              "FLT.Basic.Lemmas"
+            ],
+            "lexical_trust_scan": {
+              "^axiom ": 0,
+              "\\bsorry\\b": 0,
+              "\\bnative_decide\\b": 0,
+              "\\bunsafe\\b": 0,
+              "\\bimplemented_by\\b": 0,
+              "#eval": 0,
+              "#print axioms": 0
+            }
+          },
+          {
+            "source": {
+              "path": "FLT/Basic/Lemmas.lean",
+              "blob": "f055d97dd1fdcf91097afb3548227ec05cf04cea",
+              "sha256": "ec9694a1c9497a6f0bf8ea1ffe8bb51e483ae8bed13802465ab6ca0f96f8969f"
+            },
+            "imports": [
+              "Mathlib.Data.Nat.Factors",
+              "Mathlib.NumberTheory.FLT.Four",
+              "Mathlib.NumberTheory.FLT.Three"
+            ],
+            "lexical_trust_scan": {
+              "^axiom ": 0,
+              "\\bsorry\\b": 0,
+              "\\bnative_decide\\b": 0,
+              "\\bunsafe\\b": 0,
+              "\\bimplemented_by\\b": 0,
+              "#eval": 0,
+              "#print axioms": 0
+            }
+          }
+        ],
+        "selected_local_closure": [
+          "FLT.FreyCurve.Basic",
+          "FLT.FreyCurve.FreyPackage",
+          "FLT.Basic.Lemmas"
+        ],
+        "Mathlib_direct_import_identities": [
+          {
+            "module": "Mathlib.Algebra.Field.ZMod",
+            "path": "Mathlib/Algebra/Field/ZMod.lean",
+            "blob": "5c602182db4cc8243aefe72f1d1f14524ced13d3",
+            "sha256": "d0cc9b3e720aae2b5281c1bd70a2a796087cce92886b2af7e9cf9c912c19d2d7"
+          },
+          {
+            "module": "Mathlib.Algebra.Lie.OfAssociative",
+            "path": "Mathlib/Algebra/Lie/OfAssociative.lean",
+            "blob": "bcac11d17a96b700e6fc786813669dab151c61da",
+            "sha256": "9a575f1295d6f111dd73579239003ff4fb9306445cfde5e0f9ae2f22d4b4be6c"
+          },
+          {
+            "module": "Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass",
+            "path": "Mathlib/AlgebraicGeometry/EllipticCurve/Weierstrass.lean",
+            "blob": "f19f5c70d3698ec6b34d20993f9273aaaa44b5b3",
+            "sha256": "c9c35902baf81e470c99e1acdc27f00b0c29f7d41b807c531ce1c0527dca6742"
+          },
+          {
+            "module": "Mathlib.Analysis.Normed.Field.Lemmas",
+            "path": "Mathlib/Analysis/Normed/Field/Lemmas.lean",
+            "blob": "72d3a914a561e0fd2eda1392ef8829a4e4a13f32",
+            "sha256": "10b890dbc59b850f39c6aa3118948d60e89f181ccf505c6e841c706e87274285"
+          },
+          {
+            "module": "Mathlib.Data.Matrix.Mul",
+            "path": "Mathlib/Data/Matrix/Mul.lean",
+            "blob": "2d32031c862123b2f5dc70d2a30fd0952650c2bc",
+            "sha256": "5d098173b46177693bbf96e66a58b6d4b6bb5c3f2697cf82863078bf4571adac"
+          },
+          {
+            "module": "Mathlib.Data.Nat.Factors",
+            "path": "Mathlib/Data/Nat/Factors.lean",
+            "blob": "26b1356cdb5068e998ee2bdb08ddb4f3e9e0bb9c",
+            "sha256": "b44a4b160844328614a6ecb06812f6da91d6771040c1a2cd5e7b30ca38ae56f0"
+          },
+          {
+            "module": "Mathlib.NumberTheory.FLT.Basic",
+            "path": "Mathlib/NumberTheory/FLT/Basic.lean",
+            "blob": "53e9b713dd2ebccd9d341cd98b0d3a8e3766e206",
+            "sha256": "5da65991dd7b3cbfd3d2570b679c77b17a7faadf468cb58857ea99c9eaef2e9f"
+          },
+          {
+            "module": "Mathlib.NumberTheory.FLT.Four",
+            "path": "Mathlib/NumberTheory/FLT/Four.lean",
+            "blob": "0a9a1994062147dba278564b785fbdec3517c278",
+            "sha256": "24c211a6a15385cc953e65362bd0f82d2c1002a4b2e5635bfcec093e9763aa21"
+          },
+          {
+            "module": "Mathlib.NumberTheory.FLT.Three",
+            "path": "Mathlib/NumberTheory/FLT/Three.lean",
+            "blob": "308dda848023d0b9498c118eb6406370b526c73b",
+            "sha256": "9a9c1a96c9aec9a69c74afa275b04f77e525da4fd3d39d94d317a9ce9979f43d"
+          },
+          {
+            "module": "Mathlib.NumberTheory.Padics.PadicVal.Basic",
+            "path": "Mathlib/NumberTheory/Padics/PadicVal/Basic.lean",
+            "blob": "05f51815bba452f07f3347ad677e53d43f60d015",
+            "sha256": "205061976201d243646ee683cba819c2080ca4eae1d197a8a533cc4431fd558f"
+          },
+          {
+            "module": "Mathlib.Tactic.ModCases",
+            "path": "Mathlib/Tactic/ModCases.lean",
+            "blob": "227c86efa610cd28e8347912a3ed8ca1dcd15bec",
+            "sha256": "3d21f5bd5c22f591d70892d06e5eea19d74be244d93f2ea86de31e7d2a4ce0f8"
+          }
+        ],
+        "source_byline": {
+          "FLT/FreyCurve/Basic.lean": {
+            "copyright": "Copyright(c)2025 Kevin Buzzard",
+            "authors": [
+              "Kevin Buzzard",
+              "Ruben Van de Velde",
+              "Pietro Monticone"
+            ],
+            "license": "Apache-2.0"
+          },
+          "FLT/FreyCurve/FreyPackage.lean": {
+            "copyright": "Copyright(c)2025 Kevin Buzzard",
+            "authors": [
+              "Kevin Buzzard",
+              "Ruben Van de Velde",
+              "Pietro Monticone"
+            ],
+            "license": "Apache-2.0"
+          },
+          "FLT/Basic/Lemmas.lean": {
+            "copyright": "Copyright(c)2026 Kevin Buzzard",
+            "authors": [
+              "Kevin Buzzard"
+            ],
+            "license": "Apache-2.0"
+          }
+        },
+        "license": {
+          "path": "LICENSE",
+          "blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        "citation": {
+          "path": "CITATION.bib",
+          "blob": "37c5843542ed83d8875cace32080d9d4cee4457c",
+          "sha256": "7769f564374bde72b3a3215efa5215949ea0e4fa69056f85d3d976dd8dc42b65"
+        },
+        "project_citation_role": "FLT software, ongoing Lean formalization, Kevin Buzzard and Richard Taylor, Imperial College London,2025. This project citation is separate from the exact three source bylines and is not acceptance of a complete FLT proof.",
+        "selected_endpoint": {
+          "declaration": "FreyCurve.j_valuation_of_bad_prime",
+          "exact_statement": "lemma j_valuation_of_bad_prime (P : FreyPackage) {q : ℕ} (hqPrime : q.Prime)\n    (hqbad : (q : ℤ) ∣ P.a * P.b * P.c) (hqodd : 2 < q) :\n    (P.p : ℤ) ∣ padicValRat q P.freyCurve.j",
+          "scope": "For P:FreyPackage,q:Nat, q prime, (q:Int) divides P.a*P.b*P.c and2<q, the conclusion is (P.p:Int) divides padicValRat q P.freyCurve.j. The valuation is Int-valued; the divisor is p, not q.",
+          "source_doc_typo": "The module main-theorem overview says multiple of q, but the actual declaration and near-theorem docstring say p. Bind to the declaration.",
+          "denominator_extension_boundary": "Any selected new denominator theorem must retain an explicit separate qden:q divides P.freyCurve.j.den premise if its proof uses it. Do not infer qden merely from the name bad_prime or silently derive it from hqbad; no such bridge has been supplied in this audit."
+        },
+        "stable_url": "https://github.com/ImperialCollegeLondon/FLT/blob/a3210204ad8876e851e32f73dd97d882bf1ccd0a/FLT/FreyCurve/Basic.lean"
+      }
+    ],
+    "native_pins": {
+      "upstream_configuration": {
+        "path": "lakefile.toml",
+        "blob": "7d28f617beab6ff74a0faa5f9f07ef61b929f171",
+        "sha256": "3c8864bcec37bd36f12b26f9ca1d299564aa6433cf46d41c16fad9b9f2630f92"
+      },
+      "upstream_manifest": {
+        "path": "lake-manifest.json",
+        "blob": "d622c5ca561f6b4c4d2c7537a7a13cfb0d69107c",
+        "sha256": "24aac77aef584483c8def1e0aa39c00758ca5c8369bd50e6fb583875c45ec909"
+      },
+      "toolchain_source": {
+        "path": "lean-toolchain",
+        "blob": "a6aff065db2882c535684f8c5bcd4f16e9a23915",
+        "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+      },
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "Mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "upstream_dependency_count": 10,
+      "upstream_dependency_packages": [
+        {
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "type": "git",
+          "subDir": null,
+          "scope": "",
+          "rev": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+          "name": "mathlib",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+          "inherited": false,
+          "configFile": "lakefile.lean"
+        },
+        {
+          "url": "https://github.com/PatrickMassot/checkdecls.git",
+          "type": "git",
+          "subDir": null,
+          "scope": "",
+          "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+          "name": "checkdecls",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": null,
+          "inherited": false,
+          "configFile": "lakefile.lean"
+        },
+        {
+          "url": "https://github.com/leanprover-community/plausible",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+          "name": "plausible",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "main",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+          "name": "LeanSearchClient",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "main",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover-community/import-graph",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+          "name": "importGraph",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "main",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+          "name": "proofwidgets",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "main",
+          "inherited": true,
+          "configFile": "lakefile.lean"
+        },
+        {
+          "url": "https://github.com/leanprover-community/aesop",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "4a174c490d8707121c4a9290800489f105d85e07",
+          "name": "aesop",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "master",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover-community/quote4",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+          "name": "Qq",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "master",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover-community/batteries",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+          "name": "batteries",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "main",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover/lean4-cli",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover",
+          "rev": "c24fe6078c630e89b489bffe59b3e20ac30d12c8",
+          "name": "Cli",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "v4.35.0",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        }
+      ],
+      "adapter_dependency_count": 11,
+      "adapter_dependency_packages": [
+        {
+          "url": "https://github.com/ImperialCollegeLondon/FLT.git",
+          "type": "git",
+          "subDir": null,
+          "scope": "",
+          "rev": "a3210204ad8876e851e32f73dd97d882bf1ccd0a",
+          "name": "FLT",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "a3210204ad8876e851e32f73dd97d882bf1ccd0a",
+          "inherited": false,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "type": "git",
+          "subDir": null,
+          "scope": "",
+          "rev": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+          "name": "mathlib",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+          "inherited": true,
+          "configFile": "lakefile.lean"
+        },
+        {
+          "url": "https://github.com/PatrickMassot/checkdecls.git",
+          "type": "git",
+          "subDir": null,
+          "scope": "",
+          "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+          "name": "checkdecls",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": null,
+          "inherited": true,
+          "configFile": "lakefile.lean"
+        },
+        {
+          "url": "https://github.com/leanprover-community/plausible",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+          "name": "plausible",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "main",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+          "name": "LeanSearchClient",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "main",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover-community/import-graph",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+          "name": "importGraph",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "main",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+          "name": "proofwidgets",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "main",
+          "inherited": true,
+          "configFile": "lakefile.lean"
+        },
+        {
+          "url": "https://github.com/leanprover-community/aesop",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "4a174c490d8707121c4a9290800489f105d85e07",
+          "name": "aesop",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "master",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover-community/quote4",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+          "name": "Qq",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "master",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover-community/batteries",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover-community",
+          "rev": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+          "name": "batteries",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "main",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        },
+        {
+          "url": "https://github.com/leanprover/lean4-cli",
+          "type": "git",
+          "subDir": null,
+          "scope": "leanprover",
+          "rev": "c24fe6078c630e89b489bffe59b3e20ac30d12c8",
+          "name": "Cli",
+          "manifestFile": "lake-manifest.json",
+          "inputRev": "v4.35.0",
+          "inherited": true,
+          "configFile": "lakefile.toml"
+        }
+      ],
+      "adapter_configuration_identities": [
+        {
+          "path": "adapters/imperial-flt/lakefile.toml",
+          "blob": "194f5880f73c277bb70acecfc7b0b674f55ef438",
+          "sha256": "2632e95fb81596d2869d6dae006f03b917b547ee6ff7da09df99b4f788a95e6d"
+        },
+        {
+          "path": "adapters/imperial-flt/lake-manifest.json",
+          "blob": "7bcff1e65afb180937ddbff7fe574c9b3a415c5e",
+          "sha256": "ba775c37894b05971ca2fcea5d83017a5056813158c706ffaa247d03d98e95db"
+        },
+        {
+          "path": "adapters/imperial-flt/lean-toolchain",
+          "blob": "a6aff065db2882c535684f8c5bcd4f16e9a23915",
+          "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+        }
+      ],
+      "adapter_vs_upstream_entry_differences": {
+        "mathlib": {
+          "inherited": {
+            "upstream": false,
+            "adapter": true
+          }
+        },
+        "checkdecls": {
+          "inherited": {
+            "upstream": false,
+            "adapter": true
+          }
+        },
+        "plausible": {},
+        "LeanSearchClient": {},
+        "importGraph": {},
+        "proofwidgets": {},
+        "aesop": {},
+        "Qq": {},
+        "batteries": {},
+        "Cli": {}
+      },
+      "lock_derivation": "The existing adapter adds exact FLT Git dependency; upstream mathlib/checkdecls inherited flags change false->true. All original revisions/URLs/subDirs and remaining fields match. This is static lock derivation, not a Lake update/build.",
+      "own_post_update_hook": false,
+      "own_path_dependencies": [],
+      "patched_dependency_supplier_observed": false,
+      "warning_suppression": "Own Lake config sets warn.sorry=false. Absence of warnings or a successful queue/build status cannot establish axiom acceptance.",
+      "checkdecls_pin": "The checkdecls TOML require has no rev, but upstream manifest locks3d425859e73fcfbef85b9638c2a91708ef4a22d4. Do not re-resolve the unversioned declaration.",
+      "Mathlib_boundary": {
+        "commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+        "source_identities": [
+          {
+            "path": "lakefile.lean",
+            "blob": "cacb203e8896829b8fe31702e2e23db0cd6e0a28",
+            "sha256": "6083173bc380adea0cfd26f9a7813637ae0fd2c38c6a0d4536626e82a9538ef6"
+          },
+          {
+            "path": "lean-toolchain",
+            "blob": "a6aff065db2882c535684f8c5bcd4f16e9a23915",
+            "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+          },
+          {
+            "path": "lake-manifest.json",
+            "blob": "2ab1e1ec496feeb59ff237306fd57620d6d971c0",
+            "sha256": "6fcb8417bf0d6056cebf3c9f9bacd4569f21f3b9c571c60649150b9118b55147"
+          },
+          {
+            "path": "LICENSE",
+            "blob": "8dada3edaf50dbc082c9a125058f25def75e625a",
+            "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1"
+          },
+          {
+            "path": "Mathlib/NumberTheory/Padics/PadicVal/Basic.lean",
+            "blob": "05f51815bba452f07f3347ad677e53d43f60d015",
+            "sha256": "205061976201d243646ee683cba819c2080ca4eae1d197a8a533cc4431fd558f"
+          },
+          {
+            "path": "Mathlib/AlgebraicGeometry/EllipticCurve/Weierstrass.lean",
+            "blob": "f19f5c70d3698ec6b34d20993f9273aaaa44b5b3",
+            "sha256": "c9c35902baf81e470c99e1acdc27f00b0c29f7d41b807c531ce1c0527dca6742"
+          },
+          {
+            "path": "Mathlib/NumberTheory/FLT/Basic.lean",
+            "blob": "53e9b713dd2ebccd9d341cd98b0d3a8e3766e206",
+            "sha256": "5da65991dd7b3cbfd3d2570b679c77b17a7faadf468cb58857ea99c9eaef2e9f"
+          }
+        ],
+        "effectful_post_update": "Mathlib lakefile has the cache-fetch post_update guarded by MATHLIB_NO_CACHE_ON_UPDATE. It was not executed. Cache inputs/hooks are not fresh proof evidence; supported source-bound preparation/qualification must preserve this boundary.",
+        "complete_dependency_configuration_and_source_closure": "NOT_RUN. All10 upstream package roots and exact selected source/core bindings must be qualified by supported preparation; this source audit does not certify each transitive package hook.",
+        "toolchain_compiled_core_qualification": "NOT_RUN; no compiler binary was invoked."
+      }
+    },
+    "hypotheses": {
+      "FreyPackage": {
+        "exact_structure_source": "structure FreyPackage where\n  /-- The integer `a` in the Frey package. -/\n  a : ℤ\n  /-- The integer `b` in the Frey package. -/\n  b : ℤ\n  /-- The integer `c` in the Frey package. -/\n  c : ℤ\n  /-- The integer `a` is nonzero. -/\n  ha0 : a ≠ 0\n  /-- The integer `b` is nonzero. -/\n  hb0 : b ≠ 0\n  /-- The integer `c` is nonzero. -/\n  hc0 : c ≠ 0\n  /-- The prime number `p` in the Frey package. -/\n  p : ℕ\n  /-- The natural number `p` is prime. -/\n  pp : Nat.Prime p\n  /-- The prime `p` is at least `5`. -/\n  hp5 : 5 ≤ p\n  /-- The Fermat equation `a ^ p + b ^ p = c ^ p` holds. -/\n  hFLT : a ^ p + b ^ p = c ^ p\n  /-- The integers `a` and `b` are coprime. Together with `hFLT` this is\n  equivalent to `a`, `b` and `c` being pairwise coprime. -/\n  hgcdab : gcd a b = 1\n  /-- The integer `a` is congruent to `3` modulo `4`. -/\n  ha4 : (a : ZMod 4) = 3\n  /-- The integer `b` is even, i.e. congruent to `0` modulo `2`. -/\n  hb2 : (b : ZMod 2) = 0\n",
+        "field_names": [
+          "a",
+          "b",
+          "c",
+          "ha0",
+          "hb0",
+          "hc0",
+          "p",
+          "pp",
+          "hp5",
+          "hFLT",
+          "hgcdab",
+          "ha4",
+          "hb2"
+        ],
+        "full_hypotheses": "a,b,c are SIGNED Int and each nonzero; p:Nat, Nat.Prime p,5<=p; a^p+b^p=c^p; gcd(a,b)=1 in the source gcd interface; (a:ZMod4)=3;(b:ZMod2)=0. Pairwise coprimality with c is proved as hgcdac/hgcdbc from hFLT and positive p, not extra supplied fields. No positivity of a,b,c is assumed.",
+        "existence": "A P:FreyPackage is a conditional mathematical input. This increment does not construct a Fermat counterexample or assert Nonempty FreyPackage."
+      },
+      "selected_prime": "q:Nat, Nat.Prime q,2<q and (q:Int) divides P.a*P.b*P.c. The bad-prime observation is an Int divisibility on the exact signed package coordinates.",
+      "second_root_extra": "q divides P.freyCurve.j.den in Nat. This is an actual separate canonical-denominator observation; not inferred from the bad-prime condition. No explicit negative-valuation premise is added."
+    },
+    "conclusion": {
+      "first_root": "P.p divides padicValNat q P.freyCurve.j.den in Nat; denominator order zero is retained.",
+      "second_root": "P.p≤padicValNat q P.freyCurve.j.den AND exists k:Nat with0<k, P.freyCurve.j.den=q^P.p*k and q^P.p≤P.freyCurve.j.den. Same P/q/actual reduced denominator in every conjunct."
+    },
+    "use": "Construct a whole prime-power factor of the actual reduced rational j denominator in the isolated Frey-package domain. This is an exact conditional arithmetic input for the existing GRWTSK denominator/height family after a still-unsupplied curve/version comparison, not a claim that the root curve already consumes the foreign theorem.",
+    "consumer_paths": [
+      "GRWTSK/NumberTheory/DiophantineEquations/FreyMarkedJInvariant.lean"
+    ],
+    "root_consumer_source_commit": "7b5963a8a72495c7a437498e993bd0d36579f77d",
+    "root_consumer_blob": "652ba3d843fc1dd64bfa4ec5b10524fef5391c82",
+    "root_consumer_declarations": [
+      "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyMarkedJInvariant.j_denominator",
+      "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyMarkedJInvariant.jHeight_source_comparison"
+    ],
+    "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
+    "license": "Apache-2.0; local attribution grwtsk contributors, selected Imperial/Mathlib public bylines and upstream notices preserved. Root MIT source unchanged.",
+    "profile": "documentation/mathematics/_verification/targets/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/imperial-frey-denominator-20261030.profile.json",
+    "profile_sha256": "0ff051af0e882179cc4db1ec413ea69a68d841b11984dbdf19f13025192448e4",
+    "verification": {
+      "toolchain_qualification": "NOT_RUN",
+      "compilation": "NOT_RUN",
+      "comparator": "NOT_RUN",
+      "expected_interface": "NOT_RUN",
+      "complete_module_discovery": "NOT_RUN",
+      "fresh_independent_kernel_replay": "NOT_RUN",
+      "complete_transitive_axiom_audit": "NOT_RUN",
+      "host_resource_restoration": "NOT_RUN",
+      "second_independent_checker": "UNSUPPLIED"
+    },
+    "missing_bridges": [
+      "No actual FreyPackage, Fermat counterexample, selected bad prime or denominator-prime observation is constructed by this conditional interface.",
+      "The extra q-divides-denominator observation is separate; deriving it solely from the source bad-prime condition requires extracting the internal numerator-coprimality calculation and remains UNSUPPLIED here.",
+      "Signed normalized upstream curve to positive PrimitiveAdditiveTriple/raw root curve with invariant preservation is UNSUPPLIED; no root4.34.1 version transport or import.",
+      "Fresh supported4.35.0 toolchain/core qualification, exact full closure/registry and every native acceptance facet remain required.",
+      "No conductor/radical-height/ABC estimate, optimal denominator description,2*p exponent refinement or independent modularity/Wiles/FLT proof is supplied."
+    ],
+    "independent_checker": "UNSUPPLIED"
+  },
+  "direct_import_existence_checks": [
+    {
+      "module": "FLT.FreyCurve.Basic",
+      "repository": "https://github.com/ImperialCollegeLondon/FLT",
+      "commit": "a3210204ad8876e851e32f73dd97d882bf1ccd0a",
+      "path": "FLT/FreyCurve/Basic.lean",
+      "blob": "eaaca84b85675f2e44ee5ca1f5c88824f627d48e"
+    },
+    {
+      "module": "Mathlib.NumberTheory.Padics.PadicVal.Basic",
+      "repository": "https://github.com/leanprover-community/mathlib4",
+      "commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "path": "Mathlib/NumberTheory/Padics/PadicVal/Basic.lean",
+      "blob": "05f51815bba452f07f3347ad677e53d43f60d015"
+    }
+  ],
+  "api_sources": [
+    {
+      "path": "Mathlib/NumberTheory/Padics/PadicVal/Basic.lean",
+      "commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "blob": "05f51815bba452f07f3347ad677e53d43f60d015",
+      "declarations": [
+        "padicValRat_def",
+        "Rat.num_or_den_zero_padicVal",
+        "one_le_padicValNat_of_dvd",
+        "padicValNat_dvd_iff_le"
+      ]
+    },
+    {
+      "path": "Init/Data/Int/DivMod/Bootstrap.lean",
+      "blob": "244af950f90743610da66417ae08f36311ab34ea",
+      "sha256": "bd55b51820dbc53925d34190fcb5de38afc5d6b3528759101fe6da87973026c1",
+      "boundary": "Installed Lean4.35.0 source bytes inspected only; not compiled-core qualification, a source rebuild or a fresh kernel receipt."
+    },
+    {
+      "path": "Init/Data/Nat/Dvd.lean",
+      "blob": "996481d2e08458e4484f0b34480376711b7fb5dd",
+      "sha256": "12cd37a3909fddc05c1f5541662d1a099c083aa1084777ded9d583c7a6780f96",
+      "boundary": "Installed Lean4.35.0 source bytes inspected only; not compiled-core qualification, a source rebuild or a fresh kernel receipt."
+    },
+    {
+      "path": "Init/Data/Rat/Basic.lean",
+      "blob": "9722e2373e6d49b7ec3e635a6125af895c9940b0",
+      "sha256": "30b77ea0918aa986f6617bef4ad99a8d79cd538a714c9f05134bcb6a5e490cc8",
+      "boundary": "Installed Lean4.35.0 source bytes inspected only; not compiled-core qualification, a source rebuild or a fresh kernel receipt."
+    }
+  ],
+  "paper_or_method": {
+    "author": "Jean-Pierre Serre",
+    "title": "Sur les représentations modulaires de degré2 de Gal(Qbar/Q)",
+    "year": 1987,
+    "publication": "Duke Mathematical Journal54(1),179–230",
+    "doi": "10.1215/S0012-7094-87-05413-5",
+    "stable_url": "https://doi.org/10.1215/S0012-7094-87-05413-5",
+    "role": "The selected Imperial header explicitly associates its Frey normalization with Section4.1. This is a source-reported method association. The new denominator consequences are local derived arithmetic, not mapped to a numbered Serre theorem.",
+    "identity_evidence": "Pinned Imperial bibliography/source-header read. Direct DOI/Crossref fetches were unavailable; original paper/Section4.1 was not independently inspected in this increment. No secondary search result supplies a technical premise."
+  },
+  "excluded_assumptions": {
+    "source": {
+      "path": "FLT/Assumptions/KnownIn1980s.lean",
+      "blob": "59ecd79a2d42c101f9247b1cc5fc3db5fc004043",
+      "sha256": "ddbd0b63b267a31a5df5467c31fdfd5cb673a512ae27cc712cbb0b1c77dd0c9c"
+    },
+    "actual_admission": "axiom knownin1980s {P:Prop}:P, plus a tactic macro exact knownin1980s.",
+    "exclusion": "Not in the selected three-file local import graph. Do not import broad FLT/FermatsLastTheorem/test umbrella or any assumed KnownIn1980s results. Compiler-owned full transitive audit is still NOT_RUN.",
+    "historical_axiom_prints": "Any upstream #print axioms output/comment or prior report is historical source material, not a freshly executed target-bound receipt."
+  },
+  "proof_roadmap": "Use actual upstream exponent divisibility. Reduced Rat numerator/denominator cannot both have positive q-adic order; transfer divisibility of their signed difference to denominator order. Under explicit denominator membership the order is positive, hence at least P.p. The exact padic divisibility criterion produces q^P.p dividing the actual reduced denominator, with a positive quotient and denominator lower bound.",
+  "boundaries": [
+    "No actual FreyPackage, Fermat counterexample, selected bad prime or denominator-prime observation is constructed by this conditional interface.",
+    "The extra q-divides-denominator observation is separate; deriving it solely from the source bad-prime condition requires extracting the internal numerator-coprimality calculation and remains UNSUPPLIED here.",
+    "Signed normalized upstream curve to positive PrimitiveAdditiveTriple/raw root curve with invariant preservation is UNSUPPLIED; no root4.34.1 version transport or import.",
+    "Fresh supported4.35.0 toolchain/core qualification, exact full closure/registry and every native acceptance facet remain required.",
+    "No conductor/radical-height/ABC estimate, optimal denominator description,2*p exponent refinement or independent modularity/Wiles/FLT proof is supplied."
+  ],
+  "static_review": {
+    "source_api_literal_types": "Two independent read-only final source/API/import/type reviews found no concrete issue at source2fa84acb0d2002740ca8bbd3da8565cf1a0edbd0/profileSHA0ff051af0e882179cc4db1ec413ea69a68d841b11984dbdf19f13025192448e4. Not elaboration, kernel or axiom acceptance.",
+    "direct_import_existence": "Both local direct imports and eleven distinct direct Mathlib paths across the selected3-file Imperial chain were checked at immutable Git blobs. Full transitive closure remains NOT_RUN.",
+    "core_boundary": "Three installed Lean4.35.0 source byte identities were inspected without invoking a compiler. Installed compiled core must be separately qualified by supported preparation/replay.",
+    "upstream_revalidation": "Read-only git ls-remote HEAD/refs/heads/main still matched Imperiala3210204ad8876e851e32f73dd97d882bf1ccd0a. No hooks or native work executed.",
+    "warning_boundary": "warn.sorry=false is an upstream warning setting, not proof acceptance; lexical scans/source-reported axiom prints cannot exclude reachable sorryAx."
+  },
+  "acceptance_requires": [
+    "Use supported exact native4.35.0 qualification only under genuinely available exclusive ownership, with current producer/policy/configuration and unchanged limits. Do not edit live active/waiting producer closures or race the original Anthropic-first sequence.",
+    "Fresh exact math/producer/policy registry with validated canonical dependency roots/alternates, all ten upstream/eleven adapter entries and separately pinned compiled core. No caches, hooks or silent dependency substitutions as proof inputs.",
+    "Fresh full declared closure compilation, complete compiler-owned authored-module census and both required roots; each literal expected type checked separately.",
+    "Comparator/statement fidelity, interfaces, fresh replay, second independent checker, complete transitive axiom audit and host/resource restoration are separate evidence.",
+    "Reject sorryAx and every unapproved axiom/trust mechanism. Standard allowed axioms only propext, Classical.choice, Quot.sound. Do not promote broad FLT umbrella/knownin1980s assumptions.",
+    "Keep the conditional package/prime/denominator observations and missing root curve transport explicit. Original Anthropic6/OpenAIweighted4 and OAI patched-source gap remain active separate obligations."
+  ]
+}
