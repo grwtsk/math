@@ -864,6 +864,132 @@ theorem positive_euclidean_moment_sharp_contraction {n : ℕ}
 end PositiveOperators
 
 
+/-!
+## Exact radial-shell source split for Fourier-side consumers
+
+This source-exact layer keeps a finite radial shell and its omitted tail as two
+separate functions whose pointwise sum is the original source. Nonzero
+frequencies also have an exact radius/unit-direction factorization.
+
+IsTransverse is deliberately parameterized by an actual additive pairing.
+Thus a later Fourier Navier--Stokes bridge can instantiate transversality with
+the divergence-free pairing while retaining the same source split. No Fourier
+transform, Leray projector, helical frame, nonlinear triad convolution, fluid
+solution, or identification with the finite moment operator is asserted here.
+
+SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+section RadialShellSource
+
+variable {Ξ U K : Type*}
+variable [NormedAddCommGroup Ξ] [NormedSpace ℝ Ξ]
+variable [AddCommGroup U] [AddCommGroup K]
+
+/-- Unit-direction candidate for a nonzero frequency. At the zero frequency
+this definition is left at the scalar-zero convention; consumers that require
+a unit direction must retain the explicit ξ ≠ 0 premise. -/
+def radialDirection (ξ : Ξ) : Ξ := ‖ξ‖⁻¹ • ξ
+
+/-- Every nonzero frequency is reconstructed exactly from its norm and radial
+direction. This is the source-preserving radial blow-up identity. -/
+theorem radialDirection_reconstruct {ξ : Ξ} (hξ : ξ ≠ 0) :
+    ‖ξ‖ • radialDirection ξ = ξ := by
+  rw [radialDirection]
+  exact smul_inv_smul₀ (norm_ne_zero_iff.mpr hξ) ξ
+
+/-- The radial direction of a nonzero frequency lies on the unit sphere. -/
+theorem radialDirection_norm {ξ : Ξ} (hξ : ξ ≠ 0) :
+    ‖radialDirection ξ‖ = 1 := by
+  simpa [radialDirection] using (norm_smul_inv_norm (𝕜 := ℝ) hξ)
+
+/-- The retained radial shell. No frequency labels are quotiented or merged. -/
+def shellPart (R : ℝ) (u : Ξ → U) : Ξ → U :=
+  fun ξ => if ‖ξ‖ ≤ R then u ξ else 0
+
+/-- The full omitted radial tail. It remains a typed source function rather
+than an unrestricted error term. -/
+def tailPart (R : ℝ) (u : Ξ → U) : Ξ → U :=
+  fun ξ => if R < ‖ξ‖ then u ξ else 0
+
+/-- Pointwise visible-plus-tail reconstruction is exact at every cutoff,
+including negative cutoffs. -/
+theorem shell_add_tail (R : ℝ) (u : Ξ → U) (ξ : Ξ) :
+    shellPart R u ξ + tailPart R u ξ = u ξ := by
+  by_cases h : ‖ξ‖ ≤ R
+  · have hnot : ¬ R < ‖ξ‖ := not_lt_of_ge h
+    simp [shellPart, tailPart, h, hnot]
+  · have hlt : R < ‖ξ‖ := lt_of_not_ge h
+    simp [shellPart, tailPart, h, hlt]
+
+/-- The exact reconstruction is an equality of the complete source functions,
+not only of a finite observation. -/
+theorem shell_add_tail_fun (R : ℝ) (u : Ξ → U) :
+    (fun ξ => shellPart R u ξ + tailPart R u ξ) = u := by
+  funext ξ
+  exact shell_add_tail R u ξ
+
+/-- Frequencies outside the retained shell contribute exactly zero to the
+shell component. -/
+theorem shellPart_eq_zero_of_lt {R : ℝ} (u : Ξ → U) {ξ : Ξ}
+    (h : R < ‖ξ‖) :
+    shellPart R u ξ = 0 := by
+  simp [shellPart, not_le_of_gt h]
+
+/-- Frequencies inside the retained shell contribute exactly zero to the tail
+component. -/
+theorem tailPart_eq_zero_of_le {R : ℝ} (u : Ξ → U) {ξ : Ξ}
+    (h : ‖ξ‖ ≤ R) :
+    tailPart R u ξ = 0 := by
+  simp [tailPart, not_lt_of_ge h]
+
+/-- For a nonnegative cutoff the zero frequency stays in the retained source. -/
+theorem shellPart_zero {R : ℝ} (u : Ξ → U) (hR : 0 ≤ R) :
+    shellPart R u 0 = u 0 := by
+  simp [shellPart, hR]
+
+/-- For a nonnegative cutoff the retained tail contains no zero-frequency
+contribution. -/
+theorem tailPart_zero {R : ℝ} (u : Ξ → U) (hR : 0 ≤ R) :
+    tailPart R u 0 = 0 := by
+  simp [tailPart, hR]
+
+/-- A source is transverse when its coefficient at every frequency is killed
+by the supplied additive frequency-dependent pairing. This abstracts the
+actual divergence-free pairing without assuming an unproved Fourier bridge. -/
+def IsTransverse (pairing : Ξ → U →+ K) (u : Ξ → U) : Prop :=
+  ∀ ξ, pairing ξ (u ξ) = 0
+
+/-- Radial shell restriction preserves any supplied transverse source
+identity exactly. -/
+theorem shellPart_transverse (pairing : Ξ → U →+ K)
+    (u : Ξ → U) (R : ℝ) (hu : IsTransverse pairing u) :
+    IsTransverse pairing (shellPart R u) := by
+  intro ξ
+  by_cases h : ‖ξ‖ ≤ R
+  · simpa [shellPart, h] using hu ξ
+  · simp [shellPart, h]
+
+/-- The retained tail preserves the same transverse source identity exactly. -/
+theorem tailPart_transverse (pairing : Ξ → U →+ K)
+    (u : Ξ → U) (R : ℝ) (hu : IsTransverse pairing u) :
+    IsTransverse pairing (tailPart R u) := by
+  intro ξ
+  by_cases h : R < ‖ξ‖
+  · simpa [tailPart, h] using hu ξ
+  · simp [tailPart, h]
+
+/-- Both components of the exact source split inherit transversality. -/
+theorem shell_tail_transverse (pairing : Ξ → U →+ K)
+    (u : Ξ → U) (R : ℝ) (hu : IsTransverse pairing u) :
+    IsTransverse pairing (shellPart R u) ∧
+      IsTransverse pairing (tailPart R u) :=
+  ⟨shellPart_transverse pairing u R hu,
+    tailPart_transverse pairing u R hu⟩
+
+end RadialShellSource
+
+
 end
 
 end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.NavierStokesMomentGap
