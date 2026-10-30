@@ -1,5 +1,45 @@
 # Paper-to-formalization references
 
+## Numberphile: fourteen scoped checks pass; repair casting-out-nines source (2026-10-30)
+
+Local attribution: grwtsk contributors. Managed replay of math
+`79e5ed6b1a0b662f2ed31bf48dd4d6955ba10c5d` freshly compiled both
+`GRWTSK/NumberTheory/SumsOfThreeCubes.lean` and
+`GRWTSK/NumberTheory/Taxicab.lean` with trust zero. All fourteen selected axiom
+audits were complete and within the existing standard policy; all three taxicab
+reports were empty. Both fresh importing-module expected-type checks passed,
+covering all eleven cube and three taxicab declarations with their original
+interfaces. These are scoped completed checks, not an all-batch acceptance claim:
+the later casting-out-nines module failed before the global final source/runtime
+check. No entire video is marked complete.
+
+Retained Noe receipt `formalization/numberphile-r7/run-2/receipt.json`, SHA-256
+`48ee9771285d63ea6e96cb4a0372f411c9c224ccbabae21d0ee9e30bc3bd4924`,
+has two passed mathematical contract rows, two passed expected-type consumer
+rows, `passed=false`, and `host_config_restored=true`. Raw operational evidence
+is retained outside math. The failed casting module is rejected; its recovery
+`sorryAx` diagnostics do not authorize an axiom exception or partial acceptance.
+
+Three actual source problems are repaired in
+`GRWTSK/NumberTheory/CastingOutNines.lean`, successor blob
+`8bf693a4360457e6ea893f271c158751c9ccbeb6`: the multiplication-check proof now normalizes
+`Nat.mul_mod` and repeated remainders before transporting decimal checksums,
+without changing `MulCheck`; the two concrete counterexamples unfold their
+proposition definitions before `decide`; and the list binders are renamed from
+the reserved token `prefix` and `suffix` to `pre` and `post`. The last change is
+also applied to the corresponding expected-type expression by alpha-renaming.
+All twelve theorem names, binder order, hypotheses and conclusions are retained;
+no linter, oracle or resource-policy relaxation is used.
+
+The containing publication commit pins the repaired source tree. A fresh Noe
+profile at external runtime `formalization/numberphile-r8/` retains all twenty-six
+requested audits and interfaces and must use a fresh build/output. Compilation,
+kernel/type checking and axiom auditing for this repaired casting source remain
+NOT_RUN at publication. Global all-batch acceptance remains pending. The fourteen
+prior scoped checks do not resolve three-cubes sufficiency, taxicab minimality,
+complete source-video claim extraction or the remaining video programme. Track
+source-bound successor results at https://github.com/grwtsk/math/issues/1440 .
+
 ## RH mixed-channel connections: shifted convolution, Chowla/Elliott, Carleson, and formalized PFR (2026-10-29)
 
 Local attribution: grwtsk contributors. Source commit `25669a6870f1ece21227619a61c91e0799246851`,
