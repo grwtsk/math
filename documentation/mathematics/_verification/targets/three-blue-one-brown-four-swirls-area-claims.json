@@ -1,0 +1,68 @@
+{
+  "title": "Divergence and curl: The language of Maxwell's equations, fluid flow, and more",
+  "byline": "Grant Sanderson",
+  "date": "2018-06-21",
+  "primary_url": "https://www.3blue1brown.com/lessons/divergence-and-curl/",
+  "retained_page_sha256": "dc32964b7e24cf3474874dd3f9ca42b456c92afed79fecd95f61a92e4516e5b9",
+  "animation_source": {
+    "url": "https://github.com/3b1b/videos/blob/306a1346a356c7a7b097875ceb51c5cd67d0a56c/_2018/div_curl.py",
+    "commit": "306a1346a356c7a7b097875ceb51c5cd67d0a56c",
+    "retained_sha256": "55c286fccc4c07328a0c3e1809c92e73d4da9335de71ba90597f12537fe39c2c",
+    "symbol": "four_swirls_function",
+    "lines": "89-97",
+    "license": "CC BY-NC-SA4.0;LICENSE.txt read at same revision",
+    "scope": "Current pinned animation revision,not original2018 snapshot or spoken transcript"
+  },
+  "source": "GRWTSK/RealFunctions/FunctionsOfSeveralVariables/CalculusOfVectorFunctions/FourSwirlsAreaIntegral.lean",
+  "blob": "32a20fff7dda9cc0ab29a0b942d0312f1e6182c6",
+  "namespace": "GRWTSK.VectorCalculus.FourSwirlsFluxCurl",
+  "theorems": [
+    "rectangle_measure",
+    "rectangle_area",
+    "inner_primitive_derivative",
+    "mixed_primitive_derivative",
+    "inner_curl_integral",
+    "primitive_difference_integral",
+    "iterated_curl_eq_circulation",
+    "surface_curl_integrable",
+    "surface_curl_eq_iterated",
+    "surface_curl_eq_circulation",
+    "actual_area_normalization",
+    "actual_mean_curl",
+    "actual_square_mean",
+    "actual_mean_tendsto"
+  ],
+  "scope": "Actual product-Lebesgue rectangle measure/real area,actual curl primitives/iterated integral,actual integrability and Fubini to product-measure interior integral=boundary circulation;actual area normalization,mean and shrinking limit.",
+  "hypotheses": "Positive real h,k for measure/CCW product/interval transport and area normalization;iterated signed FTC identity all real endpoints. Positive shrinking width sequences with actual limits0. Product integrability derived from polynomial continuity on compact rectangle.",
+  "method": "Actual geometric region independent of area;primitives/FTC derive iterated integral;actual integrability/Fubini/interval-set transport identify product integral;return prior boundary and local residual to original geometric objects.",
+  "inherited_candidates": [
+    {
+      "commit": "c2fcfd92ad61b2f477ea10f44594e4b2ed4ef7ef",
+      "blob": "68aa9b05758beef8e6f8810b495cc71bbad555cb",
+      "role": "Actual source field,partials/oriented edges/circulation/normalized limit,unchecked"
+    }
+  ],
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/MeasureTheory/Integral/Prod.lean": "7484a64e40beacdd472da61f858f02c8ffb62863",
+      "Mathlib/MeasureTheory/Measure/Prod.lean": "dcda187671ab2b4ded4e301fb30ca0391eb41c3b",
+      "Mathlib/MeasureTheory/Measure/Lebesgue/Basic.lean": "84794cf74fa34664073bbf336adccdefb5bada62",
+      "Mathlib/MeasureTheory/Integral/IntervalIntegral/FundThmCalculus.lean": "82d269a5e9269d791f5581f5f0da29cfc125541a",
+      "Mathlib/MeasureTheory/Function/LocallyIntegrable.lean": "dc00e515b31d960ce61d0ce79d08ba0d8ab3af83"
+    },
+    "role": "Product measure,interval measure,FTC,compact continuity integrability and Fubini;imported mathematics not local acceptance"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "General arbitrary-field Green/Stokes and actual fluid/ODE/Maxwell physical suppliers",
+    "Other source animation examples and full spoken-video mapping",
+    "All source-bound checking"
+  ],
+  "video_verified_complete": false
+}
