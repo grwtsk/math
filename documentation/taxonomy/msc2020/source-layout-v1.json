@@ -1426693,6 +1426693,25 @@
       "target_sha256": "c45b5025c0fce1d558f6ef66a7a75ba698ace8628b2500b10e18ce06adb61420",
       "target_git_blob": "4a3f5e167e213904adc05d9ec500e506e2e04a0c",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/ContinuousAverage.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/ContinuousAverage.lean",
+      "source_sha256": "85b172003c480eed7de53313ebb3a42ec0ff8c518bd9c6a8f85cd3d8548cd6b4",
+      "input_blob": "11a071f417b551647c90f09fa890ea9f23eddd86",
+      "source_kind": "lean_source",
+      "msc_code": "26A42",
+      "msc_label": "Integrals of Riemann, Stieltjes and Lebesgue type",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual finite sine means and rectangle convergence, integral averages and primitive endpoint slopes, exact source polynomial exercise",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "11a071f417b551647c90f09fa890ea9f23eddd86",
+      "target_sha256": "85b172003c480eed7de53313ebb3a42ec0ff8c518bd9c6a8f85cd3d8548cd6b4",
+      "target_git_blob": "11a071f417b551647c90f09fa890ea9f23eddd86",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
