@@ -81,6 +81,12 @@ Noeaaeue owns the generated files. It renders them under the same mirrored
 paths without rewriting these source-authored specifications or treating
 generated output as canonical mathematical content.
 
+## Analytical comparison is not a compiler receipt
+
+The [repository-wide proof-comparison disposition](../../_support/reference/proof-comparison-disposition.md) requires a mathematical argument and a source-exact comparison of objects, independent analytic routes or hostile checks where useful, and an explicit downstream consumer and unresolved premises. **Typechecking and mathematical qualification are separate assessments.** A formal receipt does not establish the analytic transfer between different representations or the independence of alleged alternate proofs. Conversely, an analytically complete theorem may have `NOT_RUN` formalization status.
+
+The static specifications described here remain verification targets, not proof-comparison audits. Do not change historical `KERNEL_VERIFIED`, `SCOPED_EVIDENCE`, `NOT_RUN`, or other receipts merely because this disposition was adopted. Analytical review coverage must be reported as reviewed, unreviewed or blocked against inspected claims; no corpus-wide analytic acceptance is implied by this text.
+
 Static specifications do not assert Lean elaboration, replay, trust audit,
 hostile-control execution, mathematical admission, or proof status. Those
 receipts and proof capsules remain external Noeaaeue artifacts.
