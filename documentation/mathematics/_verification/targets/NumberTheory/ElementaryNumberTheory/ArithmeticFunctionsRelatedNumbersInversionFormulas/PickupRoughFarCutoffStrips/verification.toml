@@ -1,0 +1,36 @@
+# Static mathematical target specification, not a queue or execution receipt.
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+verification_issue = "https://github.com/grwtsk/math/issues/1476"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughFarCutoffStrips"
+mathematical_scope = "Exact six-region support decomposition for the geometric prime-dilation cutoff commutator; no quantitative gain or RH."
+
+[source]
+repository = "grwtsk/math"
+commit = "1954cab4771c01147019f05d04888ef41376e5db"
+parent = "6a3b6e80462a347e6350b1e322b21a677b787892"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarCutoffStrips.lean"
+blob = "de74407b1dcc238fbc2e133ab8c813c9ce0338f1"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarCutoffStrips"
+build = "lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarCutoffStrips"
+elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarCutoffStrips.lean"
+commands_status = "NOT_RUN"
+definitions = ["leftLost","leftGained","rightLost","rightGained","bothLost","bothGained","signedChange"]
+theorems = ["leftLost_iff","leftGained_iff","rightLost_iff","rightGained_iff","bothLost_iff","bothGained_iff","indicator_sub_left_eq_signedChange","indicator_sub_right_eq_signedChange","indicator_both_sub_eq_signedChange","cutoffCommutator_eq_boundaryStrips"]
+reject = ["sorryAx","new research axioms","support description promoted to quantitative gain","omitted pairWeight or moved Gram terms","unauthorized native trust","acceptance transferred from changed bytes"]
+
+[obstruction]
+id = "RH-FAR-PRIME-MASK-COMMUTATOR-01"
+status = "REFINED"
+statement = "The geometric cutoff commutator is exactly supported on six prime-dilation gain/loss regions; the complete signed contribution of those strips has no proved improved-rate bound."
+smallest_missing_premise = "Source-exact finite counting/reindexing and a one-sided bound for the complete signed N-boundary and gap-crossing strip contribution, preserving rough-Mobius signs and pairWeight."
