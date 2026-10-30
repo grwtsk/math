@@ -1426579,6 +1426579,25 @@
       "target_sha256": "7019b50d2574ac118ce7ff064aa1fdeaa13c4690329539f2d9dc0387eee38751",
       "target_git_blob": "e255d0cc06b6128fb2f75aab8385d2d45d5c9965",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/FoundationsLimitsAndGeneralizationsElementaryTopologyOfTheLine/EpsilonDeltaExamples.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/FoundationsLimitsAndGeneralizationsElementaryTopologyOfTheLine/EpsilonDeltaExamples.lean",
+      "source_sha256": "bd0707625bb40a593de74f14c3b01387c3bd420210e161f5e7c43588a4cf07a4",
+      "input_blob": "7bfa6c5ef86fc9e678e14db382a93f5e14c76678",
+      "source_kind": "lean_source",
+      "msc_code": "26A03",
+      "msc_label": "Foundations: limits and generalizations, elementary topology of the line",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Exact epsilon-delta witnesses for the cubic quotient at two and persistent jump obstruction to arbitrary limits",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "7bfa6c5ef86fc9e678e14db382a93f5e14c76678",
+      "target_sha256": "bd0707625bb40a593de74f14c3b01387c3bd420210e161f5e7c43588a4cf07a4",
+      "target_git_blob": "7bfa6c5ef86fc9e678e14db382a93f5e14c76678",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
