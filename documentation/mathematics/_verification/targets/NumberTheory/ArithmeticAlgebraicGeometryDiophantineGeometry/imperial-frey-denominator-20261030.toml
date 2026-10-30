@@ -1,0 +1,22 @@
+# Local attribution: grwtsk contributors.
+kind = "source-bound-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "b13149227de39dc96dc9074796508957949128bd"
+source_tree = "925a3a30674ca09f2a10201b96088295fa62cfbf"
+source_path = "adapters/imperial-flt/GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/FreyPrimePowerDenominator.lean"
+source_blob = "2fa84acb0d2002740ca8bbd3da8565cf1a0edbd0"
+source_sha256 = "4ec58adbba5d4f606834104784871a0a515da159194444f2b9f6a1776e990bfd"
+managed_profile = "documentation/mathematics/_verification/targets/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/imperial-frey-denominator-20261030.profile.json"
+profile_sha256 = "0ff051af0e882179cc4db1ec413ea69a68d841b11984dbdf19f13025192448e4"
+classification = "SOURCE_PROOF_CANDIDATE"
+toolchain_qualification = "NOT_RUN"
+compilation = "NOT_RUN"
+comparator = "NOT_RUN"
+complete_module_discovery = "NOT_RUN"
+expected_interface = "NOT_RUN"
+fresh_independent_kernel_check = "NOT_RUN"
+second_independent_checker = "UNSUPPLIED"
+complete_transitive_axiom_audit = "NOT_RUN"
+host_resource_restoration = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+forbidden_axioms = ["sorryAx"]
