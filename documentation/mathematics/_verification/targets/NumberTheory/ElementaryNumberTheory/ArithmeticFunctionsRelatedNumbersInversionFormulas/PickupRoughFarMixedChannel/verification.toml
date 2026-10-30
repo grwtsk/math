@@ -1,0 +1,40 @@
+attribution = "grwtsk contributors"
+kind = "passive-source-verification-specification"
+verification_issue = "https://github.com/grwtsk/math/issues/1490"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughFarMixedChannel"
+mathematical_scope = "Exact mixed-Gram, moved-selector, and atomic-omega decomposition; literature connections are analogies only."
+
+[source]
+repository = "grwtsk/math"
+commit = "25669a6870f1ece21227619a61c91e0799246851"
+parent = "74c17cbe48a0ffd32af668d0f1bcb3ef8fe63b75"
+path = "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarMixedChannel.lean"
+blob = "f0472a476f5d32162a1fd0d8365325d937ec850f"
+status = "SOURCE_PROOF_CANDIDATE"
+
+[verification]
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+expected_interface_check = "NOT_RUN"
+acceptance = "NOT_CLAIMED"
+
+[requested_checks]
+module = "GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarMixedChannel"
+build = "lake build GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.PickupRoughFarMixedChannel"
+elaboration = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarMixedChannel.lean"
+commands_status = "NOT_RUN"
+theorems = ["mixedGram_eq_intervalIntegral","moved_indicator_mismatch_eq_signedChange","reducedDivisorMaskAtom_eq_mixedChannel","transportedDivisorMask_eq_mixedChannel"]
+reject = ["sorryAx","new research axioms","literature analogy promoted to inference","atomic omega term omitted","unauthorized native trust","acceptance transferred from changed bytes"]
+
+[literature]
+shifted_convolution = "ANALOGY_ONLY: arXiv:2502.16067"
+tao_chowla = "ANALOGY_ONLY: arXiv:1509.05422"
+carleson_lean = "ANALOGY_ONLY: arXiv:2609.31334"
+pfr_formalization = "ANALOGY_ONLY: https://teorth.github.io/pfr/"
+
+[obstruction]
+id = "RH-FAR-DIVISOR-CHANNEL-MISMATCH-03"
+status = "REFINED"
+statement = "The mismatch is exactly a mixed Gram, moved left-selector change, and atomic 1/omega term; no combined improved-rate bound is proved."
+smallest_missing_premise = "A source-derived mixedGram estimate stronger than separate constituent bounds, followed by compatible moved-selector and atomic-omega control."

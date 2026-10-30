@@ -1,5 +1,45 @@
 # Paper-to-formalization references
 
+## RH mixed-channel connections: shifted convolution, Chowla/Elliott, Carleson, and formalized PFR (2026-10-29)
+
+Local attribution: grwtsk contributors. Source commit `25669a6870f1ece21227619a61c91e0799246851`,
+module `GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarMixedChannel.lean`,
+blob `f0472a476f5d32162a1fd0d8365325d937ec850f`. No external theorem is imported;
+all mappings below are ANALOGY_ONLY and no historical influence is inferred.
+
+- Florea--Lalín--Malik--Sahay, _The shifted convolution problem in function fields_
+  (2025), arXiv:2502.16067. Their shifted and mixed correlation results motivate
+  treating `mixedGram` as its own correlation object rather than as two unrelated
+  Gram terms. No Voronoi/Estermann or function-field theorem is imported.
+- Tao, _The logarithmically averaged Chowla and Elliott conjectures for two-point
+  correlations_ (2015), arXiv:1509.05422. The analogy is dependence-aware
+  multiplicative/prime channel averaging. No entropy decrement, logarithmic
+  averaging or Elliott result is imported.
+- Becker et al., _Formalizing Carleson's Theorem in Lean_ (2026),
+  arXiv:2609.31334. The analogy is explicit localization/channel-mismatch control;
+  no Carleson operator or tile estimate is imported.
+- Polynomial Freiman--Ruzsa Lean formalization, https://teorth.github.io/pfr/ ,
+  based on Gowers--Green--Manners--Tao, arXiv:2311.05762, and later developments.
+  The analogy is methodological: any information-theoretic representation needs
+  a proved return to the exact `transportedDivisorMask` consumer.
+
+Exact local content: `mixedGram` is the difference
+`gram P T m (p*n) - gram P T (p*m) (p*n)`;
+`mixedGram_eq_intervalIntegral` identifies it with the mixed block integral using
+`block_cons`; `moved_indicator_mismatch_eq_signedChange` returns the selector
+mismatch to the existing left-dilation cutoff calculus;
+`reducedDivisorMaskAtom_eq_mixedChannel` and
+`transportedDivisorMask_eq_mixedChannel` return the pointwise and complete
+divisor-mask consumers to mixed-Gram, moved-selector and atomic `1/omega` sectors.
+
+Evidence roles: imported mathematics is existing GRWTSK/Mathlib only; kernel-verified
+new bridges none claimed; source proof candidates are the four declarations above;
+analogies are exactly the four mappings above. Compilation, fresh kernel replay,
+transitive axiom audit and expected-interface checking are NOT_RUN. Missing bridges:
+a quantitative mixed-Gram estimate, moved-selector control at `p*n`, atomic
+`1/omega` control, and recombination with the geometric and transported-main sectors.
+Track verification in https://github.com/grwtsk/math/issues/1490 .
+
 ## RH divisor-mask incidence connections: Chowla, Duffin--Schaeffer, and formalized PFR (2026-10-29)
 
 Local attribution: grwtsk contributors. This entry records literature connections to
