@@ -1141,7 +1141,113 @@ theorem fourierVelocity_component_phase_reconstruction
       Complex.exp ((2 * Real.pi * θ : ℝ) * Complex.I) :=
   complex_reconstruct_of_phaseClass hi hθ
 
+
 end FourierSphericalAdapter
+
+
+/-!
+## Source-labelled bilinear triad shell/tail decomposition
+
+Before selecting a Fourier normalization, convolution measure, Leray projector,
+or helical frame, the quadratic source bookkeeping can already be made exact.
+A triad source keeps the two input frequencies as distinct labels and records
+their additive output frequency.  Any genuinely biadditive interaction then
+splits into the four shell/tail sectors without losing mixed terms.
+
+This is the algebraic source identity that a later Fourier Navier--Stokes
+convolution must consume.  It is deliberately not itself a convolution theorem
+and supplies no smallness estimate.
+
+SOURCE_PROOF_CANDIDATE / NOT_RUN / NOT_KERNEL_AUDITED.
+-/
+
+section SourceLabeledTriadSplit
+
+variable {Ξ U V : Type*}
+variable [NormedAddCommGroup Ξ] [NormedSpace ℝ Ξ]
+variable [AddCommGroup U] [AddCommGroup V]
+
+/-- Two actual source-frequency labels participating in one additive triad.
+The labels remain distinct even when their values happen to coincide. -/
+structure TriadSource (Ξ : Type*) where
+  left : Ξ
+  right : Ξ
+
+/-- Additive output frequency attached to the source-labelled pair. -/
+def TriadSource.outputFrequency (t : TriadSource Ξ) : Ξ :=
+  t.left + t.right
+
+/-- Evaluate a biadditive coefficient interaction on the two labelled source
+frequencies.  No summation over equal output frequencies occurs here. -/
+def triadInteraction
+    (B : U →+ U →+ V) (u : Ξ → U) (t : TriadSource Ξ) : V :=
+  B (u t.left) (u t.right)
+
+/-- Exact four-sector expansion of one source-labelled quadratic interaction.
+The two mixed shell/tail terms are retained explicitly. -/
+theorem triadInteraction_shell_tail_split
+    (B : U →+ U →+ V) (u : Ξ → U) (R : ℝ) (t : TriadSource Ξ) :
+    triadInteraction B u t =
+      (B (shellPart R u t.left) (shellPart R u t.right) +
+        B (shellPart R u t.left) (tailPart R u t.right)) +
+      (B (tailPart R u t.left) (shellPart R u t.right) +
+        B (tailPart R u t.left) (tailPart R u t.right)) := by
+  unfold triadInteraction
+  rw [← shell_add_tail R u t.left, ← shell_add_tail R u t.right]
+  simp only [map_add]
+
+/-- The exact split keeps the additive triad output address unchanged; changing
+shell/tail sector does not change or quotient the two source frequency labels. -/
+theorem triadOutputFrequency_shell_tail_invariant
+    (t : TriadSource Ξ) :
+    t.outputFrequency = t.left + t.right := rfl
+
+/-- If both source frequencies lie in the retained shell, the three sectors
+containing a tail coefficient vanish exactly. -/
+theorem triadInteraction_eq_shellShell_of_both_le
+    (B : U →+ U →+ V) (u : Ξ → U) {R : ℝ} (t : TriadSource Ξ)
+    (hl : ‖t.left‖ ≤ R) (hr : ‖t.right‖ ≤ R) :
+    triadInteraction B u t =
+      B (shellPart R u t.left) (shellPart R u t.right) := by
+  rw [triadInteraction_shell_tail_split B u R t,
+    tailPart_eq_zero_of_le u hl, tailPart_eq_zero_of_le u hr]
+  simp
+
+/-- If the left source is outside and the right source is inside the shell,
+the exact interaction is the tail--shell sector; it is not discarded. -/
+theorem triadInteraction_eq_tailShell_of_left_lt_right_le
+    (B : U →+ U →+ V) (u : Ξ → U) {R : ℝ} (t : TriadSource Ξ)
+    (hl : R < ‖t.left‖) (hr : ‖t.right‖ ≤ R) :
+    triadInteraction B u t =
+      B (tailPart R u t.left) (shellPart R u t.right) := by
+  rw [triadInteraction_shell_tail_split B u R t,
+    shellPart_eq_zero_of_lt u hl, tailPart_eq_zero_of_le u hr]
+  simp
+
+/-- If the left source is inside and the right source is outside the shell,
+the exact interaction is the shell--tail sector; it is not discarded. -/
+theorem triadInteraction_eq_shellTail_of_left_le_right_lt
+    (B : U →+ U →+ V) (u : Ξ → U) {R : ℝ} (t : TriadSource Ξ)
+    (hl : ‖t.left‖ ≤ R) (hr : R < ‖t.right‖) :
+    triadInteraction B u t =
+      B (shellPart R u t.left) (tailPart R u t.right) := by
+  rw [triadInteraction_shell_tail_split B u R t,
+    tailPart_eq_zero_of_le u hl, shellPart_eq_zero_of_lt u hr]
+  simp
+
+/-- If both sources lie outside the retained shell, the full interaction is
+the tail--tail sector.  High-frequency pairs that return to a low output
+frequency therefore remain visible to later convolution consumers. -/
+theorem triadInteraction_eq_tailTail_of_both_lt
+    (B : U →+ U →+ V) (u : Ξ → U) {R : ℝ} (t : TriadSource Ξ)
+    (hl : R < ‖t.left‖) (hr : R < ‖t.right‖) :
+    triadInteraction B u t =
+      B (tailPart R u t.left) (tailPart R u t.right) := by
+  rw [triadInteraction_shell_tail_split B u R t,
+    shellPart_eq_zero_of_lt u hl, shellPart_eq_zero_of_lt u hr]
+  simp
+
+end SourceLabeledTriadSplit
 
 
 end
