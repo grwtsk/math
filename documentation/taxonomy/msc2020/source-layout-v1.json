@@ -1426655,6 +1426655,25 @@
       "target_sha256": "4135fb61eac8b842f547150e459c0e41b28e372f324325054f0b5572434771cd",
       "target_git_blob": "f8e90d3612611d25078d9a225efcc461ce511b58",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/CarVelocityRectangles.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfOneVariable/IntegralsOfRiemannStieltjesAndLebesgueType/CarVelocityRectangles.lean",
+      "source_sha256": "dd467343d557685acb28130360401777e600cadf54ea39557c5b51f12d389559",
+      "input_blob": "c4e9b878575547b816342697838a012e9ff11897",
+      "source_kind": "lean_source",
+      "msc_code": "26A42",
+      "msc_label": "Integrals of Riemann, Stieltjes and Lebesgue type",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual refining uniform car-velocity rectangles, exact error/convergence, and product-Lebesgue geometric region area bridge",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "c4e9b878575547b816342697838a012e9ff11897",
+      "target_sha256": "dd467343d557685acb28130360401777e600cadf54ea39557c5b51f12d389559",
+      "target_git_blob": "c4e9b878575547b816342697838a012e9ff11897",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
