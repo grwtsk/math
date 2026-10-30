@@ -144,9 +144,10 @@ theorem exists_squareTent_certified_cutoff (n : ℕ) (hn : 2 ≤ n)
   obtain ⟨T, hT, hshort⟩ :=
     ((eventually_ge_atTop (2 : ℝ)).and hheight).exists
   have hnR : (2 : ℝ) ≤ n := by exact_mod_cast hn
+  have hnpos : (0 : ℝ) < n := by linarith
   have hr0 : 0 ≤ 1 / (n : ℝ) ^ 4 := by positivity
   have hr1 : 1 / (n : ℝ) ^ 4 < 1 := by
-    apply (div_lt_one (by positivity)).2
+    apply (div_lt_one (pow_pos hnpos 4)).2
     have hs : (1 : ℝ) < (n : ℝ) ^ 2 := by nlinarith
     nlinarith [sq_nonneg ((n : ℝ) ^ 2 - 1)]
   have hpow : Tendsto (fun N : ℕ => (1 / (n : ℝ) ^ 4) ^ N) atTop (𝓝 0) :=
