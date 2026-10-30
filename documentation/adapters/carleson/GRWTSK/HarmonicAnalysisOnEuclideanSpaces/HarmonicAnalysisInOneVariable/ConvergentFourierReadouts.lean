@@ -1,0 +1,1 @@
+../../../../../../GRWTSK/HarmonicAnalysisOnEuclideanSpaces/HarmonicAnalysisInOneVariable/ConvergentFourierReadouts.lean

@@ -1,0 +1,1 @@
+../../../../../../../GRWTSK/GeneralAndOverarchingTopicsCollections/GeneralAndMiscellaneousSpecificTopics/Physics/CriticalSKMixing.lean

@@ -1,0 +1,1 @@
+../../../../../../GRWTSK/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/VertexAlgebraNet.lean

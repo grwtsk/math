@@ -11,3 +11,5 @@ Placement is navigation. Known public upstream module subjects, mathematical obj
 Effectful materialization and audit tooling belong to `grwtsk/noeaaeue`. The older source-location manifests remain historical source aliases, with obsolete taxonomy identifiers removed; their old target hashes certify only their original scope.
 
 Local attribution: grwtsk contributors.
+
+Provider packages and dependency manifests live in [documentation/adapters](../../adapters/README.md). Their Lean modules link to the canonical `GRWTSK/` MSC tree. The root build retains its existing root imports; provider dependencies and native build targets remain isolated. Source layout `followup_files` bind the canonical source locations and provider links without replacing historical source identities.
