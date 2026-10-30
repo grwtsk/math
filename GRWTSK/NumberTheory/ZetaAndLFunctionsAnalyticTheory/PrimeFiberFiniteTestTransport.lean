@@ -96,4 +96,43 @@ theorem no_exact_decoder_of_feature_collision
     _ = decode (feature b) := congrArg decode hfeature
     _ = label b := hdecode b
 
+/-- If a typed finite sample has certified square-tent comparison at a common
+cutoff, its entire image under the test selector inherits that certificate.
+This is an explicit consumer-facing converse to the image construction in the
+finite-family transport: no injectivity or type-identification is inferred. -/
+theorem finite_prime_fiber_image_signed_comparison
+    {Fiber : PrimeIndex → Type*}
+    (testOf : PrimeFiberState Fiber → CanonicalSquareTentTest)
+    (F : Finset (PrimeFiberState Fiber))
+    (epsilon : ℝ) (hepsilon : 0 < epsilon) :
+    ∃ K : ℕ, ∀ k : ℕ, K ≤ k →
+      ∀ f ∈ F.image testOf,
+        ‖finiteSpectralValue k f - (canonicalCorrection f.index : ℂ)‖ ≤ epsilon ∧
+        |zetaTarget f f - finiteApproximant k f f| ≤ epsilon ∧
+        -epsilon ≤ finiteApproximant k f f := by
+  classical
+  obtain ⟨K, hK⟩ := finite_prime_fiber_signed_comparison testOf F epsilon hepsilon
+  refine ⟨K, ?_⟩
+  intro k hk f hf
+  obtain ⟨a, ha, rfl⟩ := Finset.mem_image.mp hf
+  exact hK k hk a ha
+
+/-- Any chosen sequence of finite prime-typed families admits a sequence of
+stage-dependent common cutoffs. This is not a uniform cutoff independent of
+the stage, nor a source-specific growth estimate. -/
+theorem finite_prime_fiber_stagewise_signed_comparison
+    {Fiber : PrimeIndex → Type*}
+    (testOf : PrimeFiberState Fiber → CanonicalSquareTentTest)
+    (families : ℕ → Finset (PrimeFiberState Fiber))
+    (epsilon : ℝ) (hepsilon : 0 < epsilon) :
+    ∀ stage : ℕ, ∃ K : ℕ, ∀ k : ℕ, K ≤ k →
+      ∀ a ∈ families stage,
+        ‖finiteSpectralValue k (testOf a) -
+          (canonicalCorrection (testOf a).index : ℂ)‖ ≤ epsilon ∧
+        |zetaTarget (testOf a) (testOf a) -
+          finiteApproximant k (testOf a) (testOf a)| ≤ epsilon ∧
+        -epsilon ≤ finiteApproximant k (testOf a) (testOf a) := by
+  intro stage
+  exact finite_prime_fiber_signed_comparison testOf (families stage) epsilon hepsilon
+
 end GRWTSK.NumberTheory.Zeta.Riemann.PrimeFiberFiniteTestTransport
