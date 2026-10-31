@@ -1,0 +1,26 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBlockCovarianceTransport.lean",
+  "source_base_commit": "9700383fffd523be0bafcbb2c19415e26ba64992",
+  "source_blob": "d45316ccebaf6b7e2654e9aa1fd6411de7a97b3e",
+  "sha256": "26cedac8b686bdedc2f825068379a4ac2684ce3ed7f63747b485a9261cf63692",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockCovarianceTransport.block_endpoint",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockCovarianceTransport.lifted_covariance_eq_relative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockCovarianceTransport.lifted_covariance_eq_centered"
+  ],
+  "hypotheses": "L=(p+1)+(q+1), beta>0, actual gauge-invariant principal eigenvector f, Haar-a.e. f>=0, f!=0, norm f=1, actual principal eigenvalue equation; powers have lengths p+1,q+1; actual finite spatial blocks B,C lifted at0,p+1; normalizer positivity uses actual partition positivity, no small-error assumption.",
+  "consumer": "Identifies literal finite Wilson lifted spatial-block covariance with actual quotient-density covariance, including stationary-centered slice energies; quantitative centered block bounds and qualification remain separate.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
