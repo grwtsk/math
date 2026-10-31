@@ -1,0 +1,50 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Actual Möbius odd-prime doubling negative covariance packet",
+  "attribution": "grwtsk contributors",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOddPrimeDoublingNegativePacket.lean",
+    "namespace": "GRWTSK.NumberTheory.MoebiusOddPrimeDoublingNegativePacket",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "declarations": [
+      "oddPrimeDoublingIndices",
+      "oddPrimeDoublingPacket",
+      "moebius_two_mul_odd_prime",
+      "pickupResponseGram_nonneg",
+      "pickupResponseGram_symmetric",
+      "oddPrimeDoublingPacket_nonpos",
+      "remainingDenseSignedPacket",
+      "denseComplement_eq_negativePacket_add_remainder",
+      "endpointSum_le_sparse_and_remaining",
+      "endpointSum_le_dyadic_remaining"
+    ]
+  },
+  "review": "documentation/mathematics/_support/reviews/moebius-odd-prime-doubling-negative-packet.md",
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseSquarefulZeroPacket.lean",
+      "blob": "94e2e276ca071b5965d10e34476ccfda4e4c2180"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointLeastPrimeTypeII.lean",
+      "blob": "fb77710105395da0394c930ef702b893f2f2f87f"
+    }
+  ],
+  "mathematical_statement": "For T>=0 and every finite A, the sum over odd primes p with p,2p in endpointIndex(T) and p notin A, of both ordered mu(p)mu(2p)K_T(p,2p) and mu(2p)mu(p)K_T(2p,p), is <=0.",
+  "nontriviality": "For T>log 6, p=3 is a strictly negative term for dyadic A(T).",
+  "uniformity": "For all epsilon>0, same upper allowance C=0 R=0 independent of T, epsilon and p.",
+  "quarter_error": "Retained exact +1/4 endpoint error; all other dense terms preserved by signed remainder subtraction.",
+  "not_proved": [
+    "Complete dense signed complement all-positive-rate",
+    "Independent uniform upper bound for remainingDenseSignedPacket",
+    "Riemann Hypothesis",
+    "Pairwise filtered-set theorem identifying signed remainder as explicit pair inventory"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "jobs": "NOT_DISPATCHED"
+  }
+}
