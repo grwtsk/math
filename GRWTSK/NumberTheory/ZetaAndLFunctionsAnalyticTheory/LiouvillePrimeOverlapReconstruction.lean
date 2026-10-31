@@ -227,7 +227,7 @@ theorem originalMixedDiagonal_eq_single_sum
   unfold originalMixedDiagonal
   apply Finset.sum_congr rfl
   intro n hn
-  rw [Finset.sum_ite_eq' S n (by assumption)]
+  simp only [Finset.sum_ite_eq', if_pos hn]
   ring
 
 /-- Finite source covariance reconstruction, conditional only on the
