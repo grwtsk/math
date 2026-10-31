@@ -1,0 +1,36 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/TwoDensityCovarianceCentering.lean",
+  "source_base_commit": "c2a00d1676f082c51b1699fb339c4945ba42a734",
+  "source_blob": "dcf8934231a63f63f1b4398eed0b6c6890bfab48",
+  "sha256": "7739d264d9102bbc667b7042fff9dcf87396446029bd87a236ff8502f746ab67",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.shift",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.centered",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.centered_mean",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.moment",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.moment_add",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.moment_sub",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.moment_const_mul",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.moment_const",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.left",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.right",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.covariance_as_moments",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.normalizedCovariance_shift",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceCentering.normalizedCovariance_centered"
+  ],
+  "hypotheses": "Compact Hausdorff second-countable Borel probability space; continuous J,K,O,P, arbitrary real shifts; actual normalizer nonzero for invariance. No row or column normalization premise.",
+  "consumer": "Constant-shift invariance under the actual nonzero two-density normalizer; stationary mean-zero centering for the finite-loop covariance consumer.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
