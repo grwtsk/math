@@ -27,6 +27,39 @@ set_option autoImplicit false
 
 namespace GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.PoeticSoficLanguage
 
+
+/-! ## Arbitrarily many finite modes, before specializing to three visual axes -/
+
+universe u
+
+/-- A total finite-mode equalizer: no fixed dimension is required. -/
+def equalizeModes {Mode : Type u}
+    (gain signal : Mode → ℚ) : Mode → ℚ :=
+  fun i => gain i * signal i
+
+/-- All modes contribute to the complete quadratic energy. -/
+def modeEnergy {Mode : Type u} [Fintype Mode]
+    (signal : Mode → ℚ) : ℚ :=
+  ∑ i : Mode, (signal i) ^ 2
+
+theorem modeEnergy_nonneg {Mode : Type u} [Fintype Mode]
+    (signal : Mode → ℚ) : 0 ≤ modeEnergy signal := by
+  classical
+  unfold modeEnergy
+  apply Finset.sum_nonneg
+  intro i _
+  positivity
+
+/-- A filter with no zero gains is injective on exact rational samples.
+A zero-gain deletion needs separate recovery side information. -/
+theorem equalizeModes_injective {Mode : Type u}
+    (gain : Mode → ℚ) (nonzero : ∀ i, gain i ≠ 0) :
+    Function.Injective (equalizeModes gain) := by
+  intro x y hxy
+  funext i
+  have hmul : gain i * x i = gain i * y i := congrFun hxy i
+  exact (mul_left_cancel₀ (nonzero i)) hmul
+
 /-- A finite rational candidate. No mathematical zero existence is asserted. -/
 structure HypotheticalZero where
   realPart : ℚ
@@ -82,6 +115,18 @@ def PrismSample.energy (x : PrismSample) : ℚ :=
 theorem PrismSample.energy_nonneg (x : PrismSample) : 0 ≤ x.energy := by
   unfold PrismSample.energy
   positivity
+
+
+/-- The visual three-axis sample embeds into the generic finite-mode carrier. -/
+def PrismSample.asModes (s : PrismSample) (i : Fin 3) : ℚ :=
+  if i.val = 0 then s.timing
+  else if i.val = 1 then s.phonetic
+  else s.semantic
+
+theorem PrismSample.energy_eq_modeEnergy (s : PrismSample) :
+    modeEnergy s.asModes = s.energy := by
+  simp [modeEnergy, PrismSample.asModes, PrismSample.energy,
+    Fin.sum_univ_three]
 
 /-- An exact cyclic permutation, unlike dissipative heat. -/
 def PrismSample.cycle (x : PrismSample) : PrismSample :=
