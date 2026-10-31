@@ -1,0 +1,29 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/TwoArcHistoryMeasure.lean",
+  "source_base_commit": "675ae9514686c76d380b5dea40dfe165fb2984ac",
+  "source_blob": "86514a001d2a44cff87d0a6a2e60461528f15f21",
+  "sha256": "5f72bbd91c12554b08a6b3221192c00c1d6e345c05b7fcd05a23477ec677b92d",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.TwoArcHistoryMeasure.segmentEquiv",
+    "GRWTSK.Analysis.Integration.TwoArcHistoryMeasure.historyEquiv",
+    "GRWTSK.Analysis.Integration.TwoArcHistoryMeasure.segmentEquiv_apply",
+    "GRWTSK.Analysis.Integration.TwoArcHistoryMeasure.historyEquiv_apply",
+    "GRWTSK.Analysis.Integration.TwoArcHistoryMeasure.segment_preserving",
+    "GRWTSK.Analysis.Integration.TwoArcHistoryMeasure.history_preserving"
+  ],
+  "hypotheses": "Measurable space X; actual probability measure mu for preservation statements; natural p,q including zero.",
+  "consumer": "Actual product-Haar history transport for the two-insertion finite Wilson formula; grouping ((x,u),(y,v)) retained.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
