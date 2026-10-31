@@ -1,0 +1,40 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceRowDifference.lean",
+  "source_base_commit": "895398a126c362cf5797e67f927ffc07bbcff51e",
+  "source_blob": "2317c5f9b392c8be882c23923685cff2b139e4a1",
+  "source_sha256": "a885111c644da8a9ce66f671f0ff6f62e8d41fdf4ac83072077fb91b72ddadaf",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRowDifference.residualDensity",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRowDifference.residualDensity_nonnegative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRowDifference.residualDensity_continuous",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRowDifference.residualDensity_integrable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRowDifference.residualDensity_integral",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRowDifference.residual_mixed_integrable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRowDifference.row_mixed_integrable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRowDifference.common_mixed_integrable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRowDifference.residual_integral_bounds",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRowDifference.row_integral_decomposition",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRowDifference.row_difference_bound"
+  ],
+  "consumer": "Actual normalized Wilson row difference for continuous observable ratios",
+  "hypotheses": [
+    "NeZero L",
+    "beta>0",
+    "actual nonzero nonnegative principal eigenvector and equation",
+    "continuous real h with pointwise m<=h<=M"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact source qualification",
+    "Actual second-eigenfunction ratio extrema and spectral contraction",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
