@@ -104,15 +104,18 @@
     },
     {
       "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingPrimeBandIdentity.lean",
-      "blob": "477ca1d19b634a09e8d5c1e38e8035798bb0ef37"
+      "blob": "477ca1d19b634a09e8d5c1e38e8035798bb0ef37",
+      "publication": "375277ab7c556f0a74dc4007c26e5e3dbd5a4283"
     },
     {
       "path": "documentation/mathematics/_support/reviews/liouville-growing-prime-band-identity.md",
-      "blob": "29f100515355012a3c47a5732dda45e21f4a9479"
+      "blob": "29f100515355012a3c47a5732dda45e21f4a9479",
+      "publication": "375277ab7c556f0a74dc4007c26e5e3dbd5a4283"
     },
     {
       "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-growing-prime-band-identity-references.md",
-      "blob": "7c726307df215e44385d689d9273919b9863f54c"
+      "blob": "7c726307df215e44385d689d9273919b9863f54c",
+      "publication": "375277ab7c556f0a74dc4007c26e5e3dbd5a4283"
     },
     {
       "path": "documentation/mathematics/_verification/targets/liouville-growing-prime-band-identity.json",
@@ -174,7 +177,7 @@
   },
   "authority": {
     "publication_mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
-    "expected_head": "df0658168e17539da1112766166b05744ea2fa78",
+    "expected_head": "644accf67202382f6afda9569b192933e621c479",
     "root_import": "UNCHANGED",
     "runtime_artifacts_in_math": false
   },
@@ -186,5 +189,13 @@
     "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingPrimeBandIdentity.lean",
     "check exact expected types and #print axioms for every theorem in GRWTSK.NumberTheory.LiouvilleGrowingPrimeBandIdentity",
     "audit the complete transitive imports for sorryAx, research axioms, native trust and omitted required modules"
-  ]
+  ],
+  "publication_reconciliation": {
+    "commit": "375277ab7c556f0a74dc4007c26e5e3dbd5a4283",
+    "parent": "644accf67202382f6afda9569b192933e621c479",
+    "tree": "c10876ca007a8a90bf909d570b7952e70cd9f8b9",
+    "stale_staged_commit": "4a67bfa5914d0e5375e526b0efed6bf75316812d",
+    "stale_update_disposition": "NOT_APPLIED_AFTER_CONCURRENT_MAIN_ADVANCE",
+    "final_update": "EXPECTED_HEAD_NON_FORCE"
+  }
 }
