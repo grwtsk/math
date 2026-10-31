@@ -1,0 +1,99 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Tuned upper cancellation for rough Liouville sums and causal energy",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "review_base": {
+    "analytical_commit": "ddcba3d61c70e576b72e0945c42c21caed44663d",
+    "analytical_tree": "81c78c85b06a79aee9b6a006a88ddcbb1d118ca4",
+    "publication_expected_head": "b1a7f5c3ce57e1cff3ad5ba5ebeba2d15b11e82e",
+    "publication_base_tree": "cb62d721092d476658cf81ec62e5b1d260fcc950"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleRoughUpperCancellation.lean",
+    "blob": "b247d36a60b69681737725a0cb709dd2f93e11c4",
+    "namespace": "GRWTSK.NumberTheory.LiouvilleRoughUpperCancellation",
+    "proved_scope": ["signed_approximation_abs_upper"],
+    "open_named_propositions": [
+      "SelbergDickmanRoughApproximation",
+      "TunedRoughPrefixUpper",
+      "TunedTerminalBandPrefixUpper",
+      "TunedRoughCausalEnergyUpper",
+      "TunedInverseSieveCostSuperexponential",
+      "SquarefreeDivisorRoughIdentity",
+      "PayablePolynomialCutoffVKUpper",
+      "NewUpperCancellationDisposition"
+    ]
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-rough-upper-cancellation.md",
+    "blob": "5b1eb46327b279743eb4b8424cf19d696dbd1172",
+    "principal_estimate": "|Xi(X,z_X)| << X (log log X)^4/((log X)^2 (log log log X)^3)",
+    "causal_estimate": "E_{Y_T}(T) << exp(T) (log T)^8/(T^4 (log log T)^6)",
+    "inverse_obstruction": "log kappa(z) >> sqrt(z)/log z"
+  },
+  "literature_ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-rough-upper-cancellation-references.md",
+    "blob": "17a15b207d8b6fe56e09702d2bf2ed6519abd939",
+    "canonical_monolith_status": "SOURCE_COMPLETE_APPEND_NOT_AVAILABLE"
+  },
+  "external_sources": [
+    {
+      "authors": ["Hugh L. Montgomery", "Robert C. Vaughan"],
+      "location": "Multiplicative Number Theory II, Theorem 21.11 and equation (21.77)",
+      "local_replay": "NOT_RUN"
+    },
+    {
+      "authors": ["Kevin Ford", "James Maynard"],
+      "title": "On the theory of prime-producing sieves",
+      "arxiv": "2407.14368",
+      "location": "Lemma 9.4",
+      "local_replay": "NOT_RUN"
+    }
+  ],
+  "mathematical_disposition": {
+    "new_programme_specific_upper_cancellation": true,
+    "new_underlying_sieve_theorem": false,
+    "new_unsifted_liouville_energy_bound": false,
+    "uniform_energy_proved": false,
+    "riemann_hypothesis_proved": false
+  },
+  "verification": {
+    "source_inspection": "DONE",
+    "analytical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "external_theorem_replay": "NOT_RUN",
+    "workflow_status": "NOT_CHECKED_BEFORE_PUBLICATION"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "authority": {
+    "publication_mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "expected_head": "b1a7f5c3ce57e1cff3ad5ba5ebeba2d15b11e82e",
+    "root_import": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleRoughUpperCancellation.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleRoughUpperCancellation.lean",
+    "check exact expected types and #print axioms for every theorem in GRWTSK.NumberTheory.LiouvilleRoughUpperCancellation",
+    "audit complete transitive imports and replay external theorem inputs separately"
+  ],
+  "publication_reconciliation": {
+    "staged_commits_not_applied": [
+      "ee92e808d2bf8ec2fbf16bab55ba8e6c2b65be8a",
+      "c8b83142221e69850abdd9997ebb70fc37383ad2"
+    ],
+    "current_expected_head": "b1a7f5c3ce57e1cff3ad5ba5ebeba2d15b11e82e",
+    "current_head_message": "Add source candidate for actual zero-coupling Wilson cyclic normalization",
+    "reconciliation": "MERGE_IDENTICAL_MATHEMATICAL_BLOBS_ON_CURRENT_HEAD_WITH_EXPECTED_HEAD_GUARD"
+  }
+}
