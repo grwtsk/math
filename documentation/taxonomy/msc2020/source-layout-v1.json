@@ -1427054,6 +1427054,25 @@
       "target_sha256": "c60de0b4852554319448e01c82c6491fcebf670324734577e58bbc5a64bdb8d5",
       "target_git_blob": "8e45d66ac9673f5e06c87b6b58d67ba877d64666",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/OrdinaryDifferentialEquations/QualitativeTheoryForOrdinaryDifferentialEquations/NonlinearOscillationsAndCoupledOscillatorsForOrdinaryDifferentialEquations/PendulumLinearization.lean",
+      "path": "GRWTSK/OrdinaryDifferentialEquations/QualitativeTheoryForOrdinaryDifferentialEquations/NonlinearOscillationsAndCoupledOscillatorsForOrdinaryDifferentialEquations/PendulumLinearization.lean",
+      "source_sha256": "973cec78623de550fea8ef580e6a9cba8423f9e132794af21b5d5065bcfd6ebc",
+      "input_blob": "7d0db8feb66b895731e700076b8b12cd76a5f1cc",
+      "source_kind": "lean_source",
+      "msc_code": "34C15",
+      "msc_label": "Nonlinear oscillations and coupled oscillators for ordinary differential equations",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual linearized pendulum trajectory,period and bounded residual in the original nonlinear ODE",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "7d0db8feb66b895731e700076b8b12cd76a5f1cc",
+      "target_sha256": "973cec78623de550fea8ef580e6a9cba8423f9e132794af21b5d5065bcfd6ebc",
+      "target_git_blob": "7d0db8feb66b895731e700076b8b12cd76a5f1cc",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
