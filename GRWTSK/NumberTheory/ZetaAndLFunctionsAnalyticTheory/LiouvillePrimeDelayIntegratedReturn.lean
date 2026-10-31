@@ -117,9 +117,8 @@ theorem growingBandWaveform_of_primeDelay
     apply Finset.sum_congr rfl
     intro n hn
     have h := selected_add_uncovered_eq_bandMass P w n
-    ring_nf at *
     nlinarith [h]
-  rw [← hsel, hsum] at hpartition
+  rw [hsel, hsum] at hpartition
   linarith
 
 /-- Exact mixed covariance recovered from the earlier already-source-written
@@ -184,7 +183,7 @@ theorem weightedDelayedCovariance_eq_negative_complete_mixed
         exact hnot (Finset.mem_Icc.mpr ⟨h1, Nat.le_of_not_gt hc⟩)
       rw [pickupResponse_zero_of_floor_lt n u hl]
       ring
-    rw [hcut, hband u, ← hs]
+    rw [hcut, hband u, hs]
     ring
   have hgram := mixedPhysicalGram P w T hT
   rw [hInt]
