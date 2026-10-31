@@ -1,0 +1,35 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceSignMass.lean",
+  "source_base_commit": "95fa8497296214480ddb919385d8767294f8228c",
+  "source_blob": "4a23699cb5d1a74b71cb8aa76ba38f7d0dc10f51",
+  "source_sha256": "8c8732e6bef5c42c5c0a4af3b2435ed86cd64af1519786461f3f575d68fd7225",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceSignMass.positiveSet_measure_congr",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceSignMass.negativeSet_measure_congr",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceSignMass.positive_mass_pos",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceSignMass.negative_mass_pos",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceSignMass.positive_mass_zero_iff_nonpositive_ae",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceSignMass.negative_mass_zero_iff_nonnegative_ae",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceSignMass.invariant_quadratic_lt_of_sign_supports"
+  ],
+  "hypotheses": [
+    "Actual real slice L2 class and finite normalized slice Haar",
+    "Positive and negative sign-support measures nonzero",
+    "beta >= 0 for the actual invariant operator consumer"
+  ],
+  "verification": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Qualification of this module and unverified imported candidates",
+    "Principal eigenspace simplicity",
+    "Finite separation",
+    "Regulator-uniform continuum mass gap"
+  ]
+}
