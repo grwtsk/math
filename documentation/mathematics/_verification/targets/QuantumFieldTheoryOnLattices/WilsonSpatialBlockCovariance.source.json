@@ -1,0 +1,35 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSpatialBlockCovariance.lean",
+  "source_base_commit": "fb5b2c1f6bb8a91d3688bbd358f8378052ce8462",
+  "source_blob": "179df7654114b60179de4d181bf87462005b52d6",
+  "source_sha256": "467da01d0dbab9b6fe5e4890135d7b7d525a2573c7c99a979081c51439fbf4f8",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockCovariance.blockObservable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockCovariance.cyclicMoment",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockCovariance.lifted_block_mean",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockCovariance.lifted_block_product_mean",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockCovariance.lifted_block_covariance"
+  ],
+  "hypotheses": [
+    "NeZero L",
+    "beta>=0",
+    "arbitrary actual spatial blocks and periodic time indices",
+    "actual normalized Wilson law and positive cyclic partition"
+  ],
+  "consumer": "Exact finite-periodic lifted block covariance before a trace comparison",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Fresh qualification of updated marginal and block geometry/covariance sources",
+    "Actual bounded multiplication insertions and trace-class/kernel trace comparison",
+    "Finite-periodic spectral estimates retaining wraparound terms",
+    "Uniform physical scaling and continuum reconstruction"
+  ]
+}

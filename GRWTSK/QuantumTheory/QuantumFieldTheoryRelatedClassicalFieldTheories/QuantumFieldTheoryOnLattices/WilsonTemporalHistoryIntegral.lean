@@ -16,6 +16,7 @@ SOURCE_PROOF_CANDIDATE; compile, replay, axioms and expected interface NOT_RUN.
 -/
 set_option autoImplicit false
 noncomputable section
+open scoped BigOperators
 open MeasureTheory
 namespace GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral
 open GRWTSK.Geometry.GaugeTheory.SU2Wilson
