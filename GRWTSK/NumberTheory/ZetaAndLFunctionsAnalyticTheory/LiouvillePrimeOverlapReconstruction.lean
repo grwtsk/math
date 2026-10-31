@@ -173,4 +173,93 @@ def PrimeShiftSquareBridge : Prop :=
       (∑ p ∈ P, (w p / Real.sqrt (p : ℝ)) *
         waveform (u - Real.log p)) ^ 2
 
+
+/-- Mixed selected-prime covariance in the ORIGINAL integer indices. The
+first factor is the full Liouville waveform, not the selected prime block.
+This distinction is essential: the earlier weightedDelayedCovariance is
+mixed and is not the squared Type II packet. -/
+def originalMixedGram (P S : Finset ℕ) (w : ℕ → ℝ)
+    (K : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ n ∈ S, ∑ m ∈ S,
+    coefficient n * (coefficient m * selectedDivisorWeight P w m) * K n m
+
+def originalMixedDiagonal (P S : Finset ℕ) (w : ℕ → ℝ)
+    (K : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ n ∈ S, ∑ m ∈ S,
+    if n = m then
+      coefficient n * (coefficient m * selectedDivisorWeight P w m) * K n m
+    else 0
+
+def originalMixedOffDiagonal (P S : Finset ℕ) (w : ℕ → ℝ)
+    (K : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ n ∈ S, ∑ m ∈ S,
+    if n ≠ m then
+      coefficient n * (coefficient m * selectedDivisorWeight P w m) * K n m
+    else 0
+
+/-- Mixed Gram is also split with no lost signed terms. This is the
+finite reconstruction relevant to the existing delayed covariance. -/
+theorem originalMixedGram_eq_diagonal_add_offDiagonal
+    (P S : Finset ℕ) (w : ℕ → ℝ) (K : ℕ → ℕ → ℝ) :
+    originalMixedGram P S w K =
+      originalMixedDiagonal P S w K +
+        originalMixedOffDiagonal P S w K := by
+  classical
+  unfold originalMixedGram originalMixedDiagonal originalMixedOffDiagonal
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro n hn
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro m hm
+  by_cases h : n = m
+  · simp [h]
+  · simp [h]
+
+/-- The mixed diagonal is exactly the retained selected-prime diagonal,
+including repeated-prime multiples. -/
+theorem originalMixedDiagonal_eq_single_sum
+    (P S : Finset ℕ) (w : ℕ → ℝ) (K : ℕ → ℕ → ℝ) :
+    originalMixedDiagonal P S w K =
+      ∑ n ∈ S,
+        coefficient n ^ 2 * selectedDivisorWeight P w n * K n n := by
+  classical
+  unfold originalMixedDiagonal
+  apply Finset.sum_congr rfl
+  intro n hn
+  rw [Finset.sum_ite_eq' S n (by assumption)]
+  ring
+
+/-- Finite source covariance reconstruction, conditional only on the
+two still-unverified analytic identifications hDelay and hGram. The
+implication itself is algebraic; the premises are NOT hidden by an axiom.
+
+hDelay is the integrated prime-delay identity after finite sum
+interchange. hGram is the original finite Gram/integral interchange.
+Both must be proved from the literal pickupResponse and integrability.
+-/
+theorem weightedDelayedCovariance_eq_negative_mixed_of_bridges
+    (P : Finset ℕ) (w : ℕ → ℝ) (T : ℝ)
+    (hDelay :
+      weightedDelayedCovariance P w T =
+        -(∫ u in (0 : ℝ)..T,
+          waveform u *
+            (∑ m ∈ Finset.Icc 1 ⌊Real.exp T⌋₊,
+              coefficient m * selectedDivisorWeight P w m *
+                pickupResponse m u)))
+    (hGram :
+      (∫ u in (0 : ℝ)..T,
+        waveform u *
+          (∑ m ∈ Finset.Icc 1 ⌊Real.exp T⌋₊,
+            coefficient m * selectedDivisorWeight P w m *
+              pickupResponse m u)) =
+        originalMixedGram P (Finset.Icc 1 ⌊Real.exp T⌋₊)
+          w (originalCausalKernel T)) :
+    weightedDelayedCovariance P w T =
+      -(originalMixedDiagonal P (Finset.Icc 1 ⌊Real.exp T⌋₊)
+          w (originalCausalKernel T) +
+        originalMixedOffDiagonal P (Finset.Icc 1 ⌊Real.exp T⌋₊)
+          w (originalCausalKernel T)) := by
+  rw [hDelay, hGram, originalMixedGram_eq_diagonal_add_offDiagonal]
+
 end GRWTSK.NumberTheory.LiouvillePrimeOverlapReconstruction
