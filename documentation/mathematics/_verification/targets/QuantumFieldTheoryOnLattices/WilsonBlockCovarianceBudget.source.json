@@ -1,0 +1,37 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBlockCovarianceBudget.lean",
+  "source_base_commit": "a50d44327f7ffb046fd539e60ac787d6ba911bae",
+  "source_blob": "522124341e2bd50232384aeb64a001bd817c3729",
+  "source_sha256": "cfdbd59de8e054be7106c18175cc6e5c15c8f1eb60104108298b17bb0e55df72",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockCovarianceBudget.plaquette_variance_le_one",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockCovarianceBudget.plaquette_covariance_abs_le_one",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockCovarianceBudget.moebiusReal_abs_le_one",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockCovarianceBudget.mismatchBudget",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockCovarianceBudget.covariance_comparison_bound",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockCovarianceBudget.mismatchBudget_le_card",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockCovarianceBudget.covariance_comparison_card_bound"
+  ],
+  "consumer": "Noncircular finite marking-discrepancy budget for actual Wilson block covariances",
+  "hypotheses": [
+    "NeZero L",
+    "beta>=0",
+    "actual finite Wilson probability law and [0,2] plaquette energies",
+    "explicit arithmetic labeling"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Spatially sensitive bounds improving the separation-independent baseline",
+    "Original RH causal-response comparison and required RH-to-estimate direction",
+    "Uniform physical scaling and continuum reconstruction"
+  ]
+}
