@@ -126,9 +126,9 @@ theorem vertexCost_mono (weight : α → Nat) {s t : α → Prop}
     [DecidablePred s] [DecidablePred t] (h : Included s t) (a : α) :
     vertexCost weight s a ≤ vertexCost weight t a := by
   by_cases hs : s a
-  · rw [vertexCost, vertexCost, if_pos hs, if_pos (h hs)]
+  · rw [vertexCost, vertexCost, ite_eq_left hs, ite_eq_left (h hs)]
     exact Nat.le_refl _
-  · rw [vertexCost, if_neg hs]
+  · rw [vertexCost, ite_eq_right hs]
     exact Nat.zero_le _
 
 /-- Finite weighted cost over list occurrences. The general list theorem allows
@@ -163,7 +163,7 @@ theorem weightedCost_lt_of_extra (vertices : List α) (weight : α → Nat)
     | head =>
       change vertexCost weight s a + weightedCost weight s rest <
         vertexCost weight t a + weightedCost weight t rest
-      rw [vertexCost, vertexCost, if_neg hs, if_pos ht]
+      rw [vertexCost, vertexCost, ite_eq_right hs, ite_eq_left ht]
       exact Nat.lt_of_lt_of_le
         (Nat.add_lt_add_right hw (weightedCost weight s rest))
         (Nat.add_le_add_left (weightedCost_mono rest weight h) (weight a))
@@ -519,13 +519,13 @@ theorem boolRowLookup_build [DecidableEq α] (columns : List α) (cell : α → 
     by_cases he : target = column
     · cases he
       change (if target = target then cell target else _) = cell target
-      rw [if_pos rfl]
+      rw [ite_eq_left rfl]
     · cases hm with
       | head => exact False.elim (he rfl)
       | tail _ hm =>
         change (if target = column then cell column else
           boolRowLookup (buildBoolRow rest cell) target) = cell target
-        rw [if_neg he]
+        rw [ite_eq_right he]
         exact ih hm
 
 theorem boolTableLookup_build [DecidableEq α] (rows columns : List α)
@@ -537,14 +537,14 @@ theorem boolTableLookup_build [DecidableEq α] (rows columns : List α)
     by_cases he : a = row
     · cases he
       change (if a = a then boolRowLookup (buildBoolRow columns (cell a)) b else _) = cell a b
-      rw [if_pos rfl]
+      rw [ite_eq_left rfl]
       exact boolRowLookup_build columns (cell a) hb
     · cases ha with
       | head => exact False.elim (he rfl)
       | tail _ ha =>
         change (if a = row then boolRowLookup (buildBoolRow columns (cell row)) b else
           boolTableLookup (buildBoolRows rest columns cell) a b) = cell a b
-        rw [if_neg he]
+        rw [ite_eq_right he]
         exact ih ha
 
 def boolRowKeys (row : BoolRow α) : List α :=
@@ -1475,12 +1475,12 @@ theorem decodeSignedInt_zero (n : Nat) : decodeSignedInt n 0 = none := rfl
 theorem decodeSignedInt_positive_outOfRange (n index : Nat) (h : n ≤ index) :
     decodeSignedInt n (.ofNat (Nat.succ index)) = none := by
   dsimp only [decodeSignedInt]
-  rw [dif_neg (Nat.not_lt_of_ge h)]
+  rw [dite_eq_right (Nat.not_lt_of_ge h)]
 
 theorem decodeSignedInt_negative_outOfRange (n index : Nat) (h : n ≤ index) :
     decodeSignedInt n (.negSucc index) = none := by
   dsimp only [decodeSignedInt]
-  rw [dif_neg (Nat.not_lt_of_ge h)]
+  rw [dite_eq_right (Nat.not_lt_of_ge h)]
 
 theorem decodeSignedInt_zero_bound (raw : Int) : decodeSignedInt 0 raw = none := by
   cases raw with
@@ -1497,12 +1497,12 @@ theorem decodeSignedInt_encode {n : Nat} (literal : SignedLiteral (Fin n)) :
     cases index with
     | mk value h =>
       dsimp only [encodeSignedLiteral, decodeSignedInt]
-      rw [dif_pos h]
+      rw [dite_eq_left h]
   | negative index =>
     cases index with
     | mk value h =>
       dsimp only [encodeSignedLiteral, decodeSignedInt]
-      rw [dif_pos h]
+      rw [dite_eq_left h]
 
 theorem decodeSignedInt_success {n : Nat} {raw : Int} {literal : SignedLiteral (Fin n)}
     (h : decodeSignedInt n raw = some literal) : raw = encodeSignedLiteral literal := by
@@ -1513,20 +1513,20 @@ theorem decodeSignedInt_success {n : Nat} {raw : Int} {literal : SignedLiteral (
     | succ index =>
       by_cases hi : index < n
       · dsimp only [decodeSignedInt] at h
-        rw [dif_pos hi] at h
+        rw [dite_eq_left hi] at h
         cases h
         rfl
       · dsimp only [decodeSignedInt] at h
-        rw [dif_neg hi] at h
+        rw [dite_eq_right hi] at h
         cases h
   | negSucc index =>
     by_cases hi : index < n
     · dsimp only [decodeSignedInt] at h
-      rw [dif_pos hi] at h
+      rw [dite_eq_left hi] at h
       cases h
       rfl
     · dsimp only [decodeSignedInt] at h
-      rw [dif_neg hi] at h
+      rw [dite_eq_right hi] at h
       cases h
 
 theorem decodeSignedInt_success_iff {n : Nat} (raw : Int) (literal : SignedLiteral (Fin n)) :
@@ -1589,12 +1589,12 @@ theorem decodeSignedInt_complete (n : Nat) (raw : Int) (hz : raw ≠ 0) (hr : ra
       have hi : index < n := hr
       refine ⟨.positive ⟨index, hi⟩, ?_⟩
       dsimp only [decodeSignedInt]
-      rw [dif_pos hi]
+      rw [dite_eq_left hi]
   | negSucc index =>
     have hi : index < n := hr
     refine ⟨.negative ⟨index, hi⟩, ?_⟩
     dsimp only [decodeSignedInt]
-    rw [dif_pos hi]
+    rw [dite_eq_left hi]
 
 /-- Independent bounded integer-literal interpretation. Invalid integers,
 including invalid negative ones, denote False rather than a negated default. -/
@@ -1613,13 +1613,13 @@ theorem boundedIntLiteralHolds_positive_outOfRange (n : Nat) (retained : Fin n �
     (index : Nat) (h : n ≤ index) :
     boundedIntLiteralHolds n retained (.ofNat (Nat.succ index)) = False := by
   dsimp only [boundedIntLiteralHolds]
-  rw [dif_neg (Nat.not_lt_of_ge h)]
+  rw [dite_eq_right (Nat.not_lt_of_ge h)]
 
 theorem boundedIntLiteralHolds_negative_outOfRange (n : Nat) (retained : Fin n → Prop)
     (index : Nat) (h : n ≤ index) :
     boundedIntLiteralHolds n retained (.negSucc index) = False := by
   dsimp only [boundedIntLiteralHolds]
-  rw [dif_neg (Nat.not_lt_of_ge h)]
+  rw [dite_eq_right (Nat.not_lt_of_ge h)]
 
 theorem boundedIntLiteralHolds_encode {n : Nat} (retained : Fin n → Prop)
     (literal : SignedLiteral (Fin n)) :
@@ -1629,12 +1629,12 @@ theorem boundedIntLiteralHolds_encode {n : Nat} (retained : Fin n → Prop)
     cases index with
     | mk value h =>
       dsimp only [encodeSignedLiteral, boundedIntLiteralHolds, signedLiteralHolds]
-      rw [dif_pos h]
+      rw [dite_eq_left h]
   | negative index =>
     cases index with
     | mk value h =>
       dsimp only [encodeSignedLiteral, boundedIntLiteralHolds, signedLiteralHolds]
-      rw [dif_pos h]
+      rw [dite_eq_left h]
 
 theorem decodeSignedInt_literal_sound {n : Nat} (retained : Fin n → Prop)
     {raw : Int} {literal : SignedLiteral (Fin n)} (h : decodeSignedInt n raw = some literal) :
@@ -1918,13 +1918,13 @@ theorem keyedListLookup_at_position [DecidableEq α] {β : Type v} (entries : Li
         | zero =>
           cases h
           change (if firstKey = firstKey then some firstValue else _) = some firstValue
-          rw [if_pos rfl]
+          rw [ite_eq_left rfl]
         | succ index =>
           have hm := listPosition_mem rest index (key, value) h
           have hk := keyedListKeys_mem rest key value hm
           have hne : key ≠ firstKey := fun he => (headNe key hk) he.symm
           change (if key = firstKey then some firstValue else keyedListLookup rest key) = some value
-          rw [if_neg hne]
+          rw [ite_eq_right hne]
           exact ih tailUnique index key value h
 
 theorem boolRowKeys_keyed (row : BoolRow α) : boolRowKeys row = keyedListKeys row := by
@@ -1957,15 +1957,15 @@ theorem boolRowLookup_of_keyedListLookup [DecidableEq α] (row : BoolRow α) :
       intro key value h
       by_cases he : key = header
       · change (if key = header then some cell else _) = some value at h
-        rw [if_pos he] at h
+        rw [ite_eq_left he] at h
         change (if key = header then cell else _) = value
-        rw [if_pos he]
+        rw [ite_eq_left he]
         cases h
         rfl
       · change (if key = header then some cell else keyedListLookup rest key) = some value at h
-        rw [if_neg he] at h
+        rw [ite_eq_right he] at h
         change (if key = header then cell else boolRowLookup rest key) = value
-        rw [if_neg he]
+        rw [ite_eq_right he]
         exact ih key value h
 
 theorem boolTableLookup_of_keyedListLookup [DecidableEq α] (table : BoolTable α) :
@@ -1979,16 +1979,16 @@ theorem boolTableLookup_of_keyedListLookup [DecidableEq α] (table : BoolTable �
       intro key row h column
       by_cases he : key = header
       · change (if key = header then some cells else _) = some row at h
-        rw [if_pos he] at h
+        rw [ite_eq_left he] at h
         change (if key = header then boolRowLookup cells column else _) = boolRowLookup row column
-        rw [if_pos he]
+        rw [ite_eq_left he]
         cases h
         rfl
       · change (if key = header then some cells else keyedListLookup rest key) = some row at h
-        rw [if_neg he] at h
+        rw [ite_eq_right he] at h
         change (if key = header then boolRowLookup cells column else boolTableLookup rest key column) =
           boolRowLookup row column
-        rw [if_neg he]
+        rw [ite_eq_right he]
         exact ih key row h column
 
 theorem eraseBoolRow_position (row : BoolRow α) :
@@ -2149,8 +2149,8 @@ theorem vertexCost_uniformOffset (weight : α → Nat) (offset : Nat)
     vertexCost (fun x => weight x + offset) retained a =
       vertexCost weight retained a + offset * vertexCost (fun _ => 1) retained a := by
   by_cases ha : retained a
-  · rw [vertexCost, vertexCost, vertexCost, if_pos ha, if_pos ha, if_pos ha, Nat.mul_one]
-  · rw [vertexCost, vertexCost, vertexCost, if_neg ha, if_neg ha, if_neg ha, Nat.mul_zero,
+  · rw [vertexCost, vertexCost, vertexCost, ite_eq_left ha, ite_eq_left ha, ite_eq_left ha, Nat.mul_one]
+  · rw [vertexCost, vertexCost, vertexCost, ite_eq_right ha, ite_eq_right ha, ite_eq_right ha, Nat.mul_zero,
       Nat.add_zero]
 
 theorem cost_add_shuffle (a b c d : Nat) : (a + b) + (c + d) = (a + c) + (b + d) := by
@@ -2195,9 +2195,9 @@ theorem weightedCost_unit_le_length (vertices : List α) (retained : α → Prop
   | cons a rest ih =>
     have headBound : vertexCost (fun _ => 1) retained a ≤ 1 := by
       by_cases ha : retained a
-      · rw [vertexCost, if_pos ha]
+      · rw [vertexCost, ite_eq_left ha]
         exact Nat.le_refl 1
-      · rw [vertexCost, if_neg ha]
+      · rw [vertexCost, ite_eq_right ha]
         exact Nat.zero_le 1
     calc
       weightedCost (fun _ => 1) retained (a :: rest) ≤ 1 + rest.length :=
@@ -3167,9 +3167,9 @@ theorem vertexCost_congr (weight : α → Nat) {s t : α → Prop}
     [DecidablePred s] [DecidablePred t] (same : ∀ a, s a ↔ t a) (a : α) :
     vertexCost weight s a = vertexCost weight t a := by
   by_cases selected : s a
-  · rw [vertexCost, vertexCost, if_pos selected, if_pos ((same a).mp selected)]
+  · rw [vertexCost, vertexCost, ite_eq_left selected, ite_eq_left ((same a).mp selected)]
   · have unselected : ¬ t a := fun h => selected ((same a).mpr h)
-    rw [vertexCost, vertexCost, if_neg selected, if_neg unselected]
+    rw [vertexCost, vertexCost, ite_eq_right selected, ite_eq_right unselected]
 
 theorem weightedCost_congr (vertices : List α) (weight : α → Nat) {s t : α → Prop}
     [DecidablePred s] [DecidablePred t] (same : ∀ a, s a ↔ t a) :
@@ -3396,13 +3396,13 @@ theorem optionalKeyMinimum_spec {β : Type v} (key : β → CostCountMask)
     | none =>
       rw [tailResult] at ih
       by_cases selected : feasible head
-      · rw [optionalKeyMinimum, if_pos selected, tailResult]
+      · rw [optionalKeyMinimum, ite_eq_left selected, tailResult]
         refine ⟨List.Mem.head rest, selected, ?_⟩
         intro candidate member admissible
         cases member with
         | head => exact costCountMaskLE_refl _
         | tail _ member => exact False.elim (ih candidate member admissible)
-      · rw [optionalKeyMinimum, if_neg selected, tailResult]
+      · rw [optionalKeyMinimum, ite_eq_right selected, tailResult]
         intro candidate member admissible
         cases member with
         | head => exact selected admissible
@@ -3412,7 +3412,7 @@ theorem optionalKeyMinimum_spec {β : Type v} (key : β → CostCountMask)
       by_cases selected : feasible head
       · cases comparison : costCountMaskLEDecidable (key head) (key best) with
         | isTrue dominates =>
-          rw [optionalKeyMinimum, if_pos selected, tailResult]
+          rw [optionalKeyMinimum, ite_eq_left selected, tailResult]
           dsimp only
           rw [comparison]
           refine ⟨List.Mem.head rest, selected, ?_⟩
@@ -3421,7 +3421,7 @@ theorem optionalKeyMinimum_spec {β : Type v} (key : β → CostCountMask)
           | head => exact costCountMaskLE_refl _
           | tail _ member => exact costCountMaskLE_trans dominates (ih.2.2 candidate member admissible)
         | isFalse absent =>
-          rw [optionalKeyMinimum, if_pos selected, tailResult]
+          rw [optionalKeyMinimum, ite_eq_left selected, tailResult]
           dsimp only
           rw [comparison]
           have reverse : CostCountMaskLE (key best) (key head) := by
@@ -3433,7 +3433,7 @@ theorem optionalKeyMinimum_spec {β : Type v} (key : β → CostCountMask)
           cases member with
           | head => exact reverse
           | tail _ member => exact ih.2.2 candidate member admissible
-      · rw [optionalKeyMinimum, if_neg selected, tailResult]
+      · rw [optionalKeyMinimum, ite_eq_right selected, tailResult]
         refine ⟨List.Mem.tail head ih.1, ih.2.1, ?_⟩
         intro candidate member admissible
         cases member with
@@ -3515,6 +3515,52 @@ theorem finiteIndexMinimum_none_iff (n : Nat) (key : Fin n → CostCountMask)
     exact (optionalKeyMinimum_none_iff key feasible (finiteIndexCandidates n)).mpr
       (fun candidate _ => absent candidate)
 
+private theorem candidate_map_length {β : Type v} {γ : Type u}
+    (f : β → γ) (candidates : List β) :
+    (candidates.map f).length = candidates.length := by
+  induction candidates with
+  | nil => rfl
+  | cons head rest ih => exact congrArg Nat.succ ih
+
+private theorem candidate_map_origin {β : Type v} {γ : Type u}
+    (f : β → γ) (candidates : List β) (value : γ)
+    (member : value ∈ candidates.map f) :
+    ∃ candidate, candidate ∈ candidates ∧ f candidate = value := by
+  induction candidates with
+  | nil => cases member
+  | cons head rest ih =>
+    cases member with
+    | head => exact ⟨head, List.Mem.head _, rfl⟩
+    | tail _ previous =>
+      obtain ⟨candidate, present, mapped⟩ := ih previous
+      exact ⟨candidate, List.Mem.tail _ present, mapped⟩
+
+private theorem candidate_map_nodup {β : Type v} {γ : Type u}
+    (f : β → γ) (injective : ∀ a b, f a = f b → a = b)
+    (candidates : List β) (distinct : candidates.Nodup) :
+    (candidates.map f).Nodup := by
+  induction candidates with
+  | nil => exact List.Pairwise.nil
+  | cons head rest ih =>
+    cases distinct with
+    | cons apart tail =>
+      apply List.Pairwise.cons
+      · intro value member equal
+        obtain ⟨candidate, present, mapped⟩ := candidate_map_origin f rest value member
+        exact apart candidate present (injective head candidate (equal.trans mapped.symm))
+      · exact ih tail
+
+private theorem candidate_succ_injective {n : Nat} (a b : Fin n)
+    (equal : Fin.succ a = Fin.succ b) : a = b := by
+  cases a with
+  | mk a ha =>
+    cases b with
+    | mk b hb =>
+      have values : Nat.succ a = Nat.succ b := congrArg Fin.val equal
+      have indices := Nat.succ.inj values
+      cases indices
+      rfl
+
 /-- The concrete complete enumeration visits exactly `n` bounded indices.
 This is a list-size statement, not a runtime or inventory-completeness bound. -/
 theorem finiteIndexCandidates_length (n : Nat) :
@@ -3523,7 +3569,7 @@ theorem finiteIndexCandidates_length (n : Nat) :
   | zero => rfl
   | succ n ih =>
     change ((finiteIndexCandidates n).map Fin.succ).length + 1 = n + 1
-    rw [List.length_map, ih]
+    exact congrArg Nat.succ ((candidate_map_length Fin.succ _).trans ih)
 
 /-- Every bounded index occurs without repetition, including the empty domain. -/
 theorem finiteIndexCandidates_nodup (n : Nat) :
@@ -3534,10 +3580,13 @@ theorem finiteIndexCandidates_nodup (n : Nat) :
     change (0 :: (finiteIndexCandidates n).map Fin.succ).Nodup
     apply List.Pairwise.cons
     · intro value member equal
-      obtain ⟨candidate, _, mapped⟩ := List.mem_map.mp member
-      exact Fin.succ_ne_zero candidate (mapped.trans equal.symm)
-    · exact List.Pairwise.map Fin.succ
-        (fun a b distinct equal => distinct (Fin.succ_inj.mp equal)) ih
+      obtain ⟨candidate, _, mapped⟩ :=
+        candidate_map_origin Fin.succ (finiteIndexCandidates n) value member
+      have impossible : Nat.succ candidate.val = 0 :=
+        congrArg Fin.val (mapped.trans equal.symm)
+      exact Nat.noConfusion impossible
+    · exact candidate_map_nodup Fin.succ candidate_succ_injective
+        (finiteIndexCandidates n) ih
 
 /-- A bounded mask search over `Fin (2^width)` visits exactly `2^width` indices.
 Together with coverage and nodup this specifies enumeration only; bit decoding,
