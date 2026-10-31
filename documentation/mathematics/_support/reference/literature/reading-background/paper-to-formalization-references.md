@@ -1,5 +1,43 @@
 # Paper-to-formalization references
 
+## Numberphile: full twenty-six-declaration batch checked; minimality successor (2026-10-30)
+
+Local attribution: grwtsk contributors. At math
+`b419756ab25304880180bb9900afb543fab9a8aa`, all three pinned source modules,
+all twenty-six exact declaration axiom audits, all twenty-six expected interfaces,
+final source/runtime validation and exact host restoration passed in the managed
+Noe route. The successful raw receipt SHA-256 is
+`13aadaaf5b557f311b2bc52efee6da7c7642ebb397e49cffdc2f816ef5f504f9`. All six source/importing-module
+records and the final capture were checked against their hashes; every requested
+declaration occurred exactly once, no report used `sorryAx`, and all reported
+axioms were within the unchanged standard policy. This completes the scoped
+claim batch, not a whole video or the channel.
+
+Durable privacy-safe projection: https://github.com/grwtsk/noeaaeue/blob/ef5c635d4fccf13a8cad229e09f4c16211909a2f/verification/math/numberphile/b419756ab253/qualification.json . It is a distinct derived record, not
+an edited raw receipt certified by the old digest. Raw operational records remain
+external in Noe runtime `formalization/numberphile-r8/run-1/`; none is committed
+to math. The source statement/hypothesis discussion and static verification
+profile are colocated at `documentation/mathematics/NumberTheory/cubes-and-checksums/`.
+The installed Lean core remains a pinned compiled boundary, not a source rebuild;
+no proof capsule, OS refinement or complete-video acceptance is claimed.
+
+The next mathematical consumer is the least-positive-two-cube-sum property.
+`GRWTSK/NumberTheory/Taxicab.lean`, new candidate blob `b8663ce77ccd925af4774f47fc00ef0898c409b3`,
+preserves the original strictly increasing predicate and adds
+`HasTwoPositiveRepresentations`, allowing equal summands in nondecreasing pairs.
+The four new fully qualified theorem names are the existing prefix
+`GRWTSK.NumberTheory.DiophantineEquations.Taxicab.` followed by
+`strict_to_positive`, `positive_cube_pair_upper_bound`,
+`not_two_positive_representations_below`, and `least_two_cube_sum`.
+A finite `Fin 12` uniqueness check covers diagonal pairs; positivity and cube
+monotonicity prove the unbounded-to-finite bridge below 1729. The existing
+witness theorem then supplies attainment. These are source proof candidates:
+compilation, fresh kernel checking and axiom auditing are NOT_RUN until a fresh
+thirty-declaration source-bound receipt exists. No historical or full-video claim
+is inferred from this mathematical continuation of the James Grime/Roger Bowley
+Numberphile source. Full video claim extraction and remaining corpus coverage
+remain open in https://github.com/grwtsk/math/issues/1440 .
+
 ## Numberphile: fourteen scoped checks pass; repair casting-out-nines source (2026-10-30)
 
 Local attribution: grwtsk contributors. Managed replay of math

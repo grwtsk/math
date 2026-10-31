@@ -1,0 +1,20 @@
+schema = "grwtsk.numberphile-static-verification/1"
+attribution = "grwtsk contributors"
+issue = "https://github.com/grwtsk/math/issues/1440"
+math_commit = "b419756ab25304880180bb9900afb543fab9a8aa"
+document = "documentation/mathematics/NumberTheory/cubes-and-checksums/README.md"
+document_sha256 = "efcc6fbbb1f3c533684431530f7fe3f02f84c6b1ad5ee026f110a64f16e9a639"
+public_evidence = "https://github.com/grwtsk/noeaaeue/blob/ef5c635d4fccf13a8cad229e09f4c16211909a2f/verification/math/numberphile/b419756ab253/qualification.json"
+raw_receipt_sha256 = "13aadaaf5b557f311b2bc52efee6da7c7642ebb397e49cffdc2f816ef5f504f9"
+public_declarations = 26
+expected_interfaces = 26
+required_facets = ["fresh_trust_zero_compilation", "complete_axiom_audits", "expected_interfaces", "final_source_runtime_validation", "host_restoration"]
+allowed_axioms = ["propext", "Quot.sound", "Classical.choice"]
+full_video_completion = false
+source_paths = ["GRWTSK/NumberTheory/SumsOfThreeCubes.lean", "GRWTSK/NumberTheory/Taxicab.lean", "GRWTSK/NumberTheory/CastingOutNines.lean"]
+
+[successor_minimality]
+status = "NOT_RUN"
+new_public_declarations = 4
+expanded_expected_public_declarations = 30
+criterion = "Source-bound fresh checking of all new proofs, finite uniqueness and universal bounding bridge; preserve original statements and exact source scopes."
