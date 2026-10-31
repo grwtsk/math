@@ -1,0 +1,151 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Exact finite-prime Liouville sieve operator and conditioning barrier",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "review_base": {
+    "branch": "main",
+    "commit": "51adcda8ec057fafdf13e2664f3f8def3d0b5a6c",
+    "tree": "1a547674a74987f8494676a8c61f7cd37f14fb22"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleFinitePrimeSieveOperator.lean",
+    "blob": "46a61238b137d9265c2f81c6e6b5a964ca4910e7",
+    "sha256": "bb093208046c29d259fc3b37d9515c668866e08c38d2870929a9343997891f86",
+    "namespace": "GRWTSK.NumberTheory.LiouvilleFinitePrimeSieveOperator",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvillePrimeBandNormEquivalence",
+      "Mathlib"
+    ],
+    "definitions": [
+      "PrimeBand",
+      "primeProduct",
+      "survives",
+      "siftedWaveform",
+      "siftedEnergy",
+      "subsetProduct",
+      "subsetDelayExpansion",
+      "lowerSieveFactor",
+      "upperSieveFactor",
+      "inverseSieveCost",
+      "initialPrimeBand",
+      "FinitePrimeSieveWaveformIdentity",
+      "FinitePrimeSieveNormComparison",
+      "ScaleDependentSieveSupplier",
+      "ScaleDependentSieveSupplierImpliesUniformEnergy",
+      "InitialBandInverseCostUpperBound",
+      "OmittedPrimePowerSurvives",
+      "PrimePowerDegreeCutoff",
+      "PrimePowerDegreeCutoffForcesInitialBand"
+    ],
+    "proved_scope": [
+      "initialPrimeBand.prime_mem",
+      "prime_mem",
+      "initialPrimeBand_prime"
+    ],
+    "open_named_propositions": [
+      "FinitePrimeSieveWaveformIdentity",
+      "FinitePrimeSieveNormComparison",
+      "ScaleDependentSieveSupplierImpliesUniformEnergy",
+      "InitialBandInverseCostUpperBound",
+      "OmittedPrimePowerSurvives",
+      "PrimePowerDegreeCutoffForcesInitialBand"
+    ],
+    "claim": "Exact finite inclusion-exclusion sieve identity, paid norm conditioning, and prime-power support obstruction for the actual Liouville causal waveform"
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-finite-prime-sieve-operator.md",
+    "blob": "b2130f996bedbe4f05e81d32604fcd05df11d047",
+    "sha256": "7ba08f57bfa334de75056f223e3d9bf0e2e20e449c478795716de586fcd2dc1f",
+    "claims": [
+      "One-prime factor removes all multiples of the selected prime exactly",
+      "Product over a finite prime set equals the subset-delay expansion and the actual coprime-supported waveform",
+      "Two-sided energy comparison with product factors L_minus and L_plus",
+      "Exact scale-dependent supplier must pay inverseSieveCost",
+      "Elementary initial-band inverse-cost upper bound exp((8+4 sqrt(2)) sqrt(Y))",
+      "Omitted prime powers force inclusion of every prime below the fixed-degree threshold",
+      "PNT comparison shows bounded Omega-degree reduction has superexponential inverse cost"
+    ]
+  },
+  "literature_ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-finite-prime-sieve-operator-references.md",
+    "blob": "d7129609fc6fa3a1adb20af4aa9bc2542e51f564",
+    "sha256": "3a5700e4bccece757101702af5f9dd22e4952c28f281bf6fbdac8662ed375cc4",
+    "canonical_monolith": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+    "canonical_monolith_blob": "8c89f14cc907c959d8781bb67ff4c079b933076d",
+    "merge_status": "SHARD_PUBLISHED_MONOLITH_UNCHANGED"
+  },
+  "upstream": {
+    "actual_liouville_source": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean",
+      "blob": "a00aaa07c067b4c88203372870b5d5d151de0de4"
+    },
+    "growing_prime_band_identity": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingPrimeBandIdentity.lean",
+      "blob": "477ca1d19b634a09e8d5c1e38e8035798bb0ef37"
+    },
+    "prime_band_norm_equivalence": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeBandNormEquivalence.lean",
+      "blob": "caf6277e63c4b9139b42b07cffc8b8f925ea799d",
+      "publication": "51adcda8ec057fafdf13e2664f3f8def3d0b5a6c"
+    },
+    "method_comparison_review": {
+      "path": "documentation/mathematics/_support/reviews/liouville-method-comparison-and-prime-delay-obstructions.md",
+      "blob": "0add9dd09cc9a6588e010179079498cec4393196"
+    }
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "mathematical_disposition": {
+    "new_cancellation_estimate": false,
+    "uniform_energy_proved": false,
+    "riemann_hypothesis_proved": false,
+    "exact_reformulation": "Finite prime-product delay operator equals the actual waveform on integers coprime to the selected product",
+    "conditioning_barrier": "Bounded total prime-factor degree requires an exponentially high prime cutoff whose norm inverse is faster than every exp(epsilon T)",
+    "remaining_viable_phase": "Rough-number cancellation with paid subexponential conditioning, or signed subset-delay cancellation before norms"
+  },
+  "open_formalization": [
+    "Prove the one-prime exact sieve factor from the prime-divisor waveform identity",
+    "Prove the finite subset-delay expansion and coefficientwise inclusion-exclusion",
+    "Prove each intermediate sieve waveform vanishes at negative physical time",
+    "Formalize the iterated lower and upper L2 conditioning factors",
+    "Prove the paid supplier transfer to UniformEnergySupplier",
+    "Prove the elementary logarithmic bound for the initial prime band",
+    "Prove omitted prime powers survive and the prime-power cutoff forces membership",
+    "Separate the PNT-based asymptotic background from kernel-checked local declarations",
+    "Compile and audit the complete predecessor/new source closure"
+  ],
+  "open_arithmetic": [
+    "Choose a subexponentially conditioned cutoff family Y(T) and estimate the exact rough-number waveform",
+    "Retain the complete signed subset-delay expansion if using double-Abel or endpoint consumers",
+    "Do not replace subset cancellation by a sum or maximum of absolute values",
+    "Preserve repeated-prime survivors, causal birth collars and exact inverse-conditioning cost",
+    "Do not claim bounded-Omega reduction at all-positive-rate cost through positive norm inversion"
+  ],
+  "verification": {
+    "source_inspection": "DONE",
+    "analytical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "workflow_status": "NOT_CHECKED_BEFORE_PUBLICATION"
+  },
+  "authority": {
+    "publication_mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "expected_head": "51adcda8ec057fafdf13e2664f3f8def3d0b5a6c",
+    "root_import": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleFinitePrimeSieveOperator.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleFinitePrimeSieveOperator.lean",
+    "check exact expected types and #print axioms for every theorem in GRWTSK.NumberTheory.LiouvilleFinitePrimeSieveOperator",
+    "audit the complete transitive imports for sorryAx, research axioms, native trust and omitted required modules"
+  ]
+}
