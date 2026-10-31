@@ -1,0 +1,25 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonLocalDensityBounds.lean",
+  "source_blob": "d9421216679cdc6f55b56611f1e6a834267d7f31",
+  "source_base_commit": "1fab4caaab5c876d55a3b44af4775be6930d86cb",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityBounds.continuous_resample",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityBounds.localAction_bounds",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityBounds.continuous_localAction",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityBounds.localPartition",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityBounds.localWeight_integrable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityBounds.localPartition_bounds",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityBounds.localPartition_pos",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityBounds.normalized_local_density_lower"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "mathematical_acceptance": false,
+  "hypotheses": "L nonzero, finite A, arbitrary exterior configuration V, beta>=0; actual finite product Haar.",
+  "scope": "Actual positive finite local normalizer and density lower bound exp(-2*beta*card affected). No regular conditional probability identification or regulator-uniform gap."
+}
