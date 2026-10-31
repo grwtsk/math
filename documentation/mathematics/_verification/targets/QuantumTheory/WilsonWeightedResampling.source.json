@@ -1,0 +1,25 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonWeightedResampling.lean",
+  "source_blob": "453fa3ab5fafcfe2ebf47fd42c377809da0dce1f",
+  "source_base_commit": "c363dfe039681785bd9c274c36d7c7aeac07ec28",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonWeightedResampling.weight",
+    "GRWTSK.Geometry.GaugeTheory.WilsonWeightedResampling.continuous_weight",
+    "GRWTSK.Geometry.GaugeTheory.WilsonWeightedResampling.fiberPartition",
+    "GRWTSK.Geometry.GaugeTheory.WilsonWeightedResampling.fiberNumerator",
+    "GRWTSK.Geometry.GaugeTheory.WilsonWeightedResampling.fiberMean",
+    "GRWTSK.Geometry.GaugeTheory.WilsonWeightedResampling.fiberPartition_pos",
+    "GRWTSK.Geometry.GaugeTheory.WilsonWeightedResampling.weighted_integral",
+    "GRWTSK.Geometry.GaugeTheory.WilsonWeightedResampling.normalized_weighted_integral"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "mathematical_acceptance": false,
+  "hypotheses": "Nonzero L, finite A, beta>=0, continuous real F, actual finite product Haar.",
+  "scope": "Exact weighted finite normalized integral with positive fiber partitions and exterior weight Z_A(v)/Zglobal. Regular conditional kernel and independence not asserted."
+}
