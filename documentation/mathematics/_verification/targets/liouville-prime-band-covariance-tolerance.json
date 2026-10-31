@@ -1,0 +1,40 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Liouville complete prime-band negative-covariance scalar transfer",
+  "attribution": "grwtsk contributors",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeBandCovarianceTolerance.lean",
+    "namespace": "GRWTSK.NumberTheory.LiouvillePrimeBandCovarianceTolerance",
+    "declaration": "scalar_negative_covariance_transfer",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleGrowingPrimeBandIdentity",
+      "Mathlib"
+    ],
+    "status": "SOURCE_PROOF_CANDIDATE"
+  },
+  "review": "documentation/mathematics/_support/reviews/liouville-prime-band-covariance-tolerance.md",
+  "upstream": {
+    "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingPrimeBandIdentity.lean",
+    "observed_blob": "477ca1d19b634a09e8d5c1e38e8035798bb0ef37",
+    "integrated_identity": "OPEN_NAMED_PROP"
+  },
+  "theorem_scope": "Scalar complete-covariance tolerance with explicit Cauchy-Schwarz square hypothesis and cost (1-eta)^-2",
+  "not_proved": [
+    "Actual Liouville arithmetic residual bound",
+    "Integrated prime-band identity in Lean",
+    "Independent signed covariance gain",
+    "Riemann Hypothesis"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "native_verification": "NOT_DISPATCHED"
+  },
+  "publication": {
+    "mode": "staged branch then expected-head non-force update to main",
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED"
+  }
+}
