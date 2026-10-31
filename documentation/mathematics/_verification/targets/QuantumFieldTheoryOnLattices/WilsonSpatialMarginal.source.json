@@ -2,9 +2,9 @@
   "schema": "grwtsk.source-verification-target/1",
   "msc2020": "81T25",
   "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSpatialMarginal.lean",
-  "source_base_commit": "d15cfe5e32f387ecf40430b41cb9c39da81bba01",
-  "source_blob": "84698207076a6854b61747e23f657400bc6f5b0d",
-  "source_sha256": "347a9519c602305adaaf78243e2c9db35afcdba5a557064e01fdf805faa86b02",
+  "source_base_commit": "fb5b2c1f6bb8a91d3688bbd358f8378052ce8462",
+  "source_blob": "4bfdeaf3e163678cd54660b975800aa81bd7e2bb",
+  "source_sha256": "fb3c84fff95adffd0e3cff1eb2ab58061e0e83371565165315f12e6db09c0941",
   "declarations": [
     "GRWTSK.Geometry.GaugeTheory.WilsonSpatialMarginal.integral_wilson_continuous_weight",
     "GRWTSK.Geometry.GaugeTheory.WilsonSpatialMarginal.spatial_observable_integrable",
