@@ -1,0 +1,92 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Positive-index actual causal response convexity, integrated mixed positivity, exact zero-terminal double Abel, and open polynomial moment Lean gate",
+  "byline": "grwtsk contributors",
+  "proposed_source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean",
+    "blob": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4",
+    "scope": "Source-level proof candidates, not compiled or kernel accepted",
+    "named_theorems": [
+      "invsqrt_discrete_convex",
+      "max_midpoint_convex",
+      "pickupResponse_eq_positivePart",
+      "pickupResponse_nonneg_positive",
+      "pickupResponse_antitone_positive",
+      "pickupResponse_discrete_convex",
+      "actual_mixedIntegrand_nonneg",
+      "two_parameter_telescope",
+      "sum_Icc_if_ge",
+      "tailOfOmega_eq_double_Icc",
+      "pickupResponse_zero_above_cutoff",
+      "causalKernel_left_terminal",
+      "causalKernel_right_terminal",
+      "kernelTailIdentity_of_original_birth",
+      "positiveGapAggregate_eq_rectangles",
+      "integral_four_corners",
+      "causalOmega_eq_integral_mixed",
+      "causalOmega_nonneg_actual",
+      "rectangularAggregate_le_of_moment_and_prefix"
+    ],
+    "named_open_predicates": [
+      "PolynomialKernelMoment",
+      "UniformRectangularArithmeticSupplier"
+    ]
+  },
+  "math_review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-double-abel-analytic-gates.md",
+    "blob": "774c946859da752fbde44a1fc3fcfc99880e7f02"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "previous_math_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelCausalKernel.lean",
+      "blob": "b102b4af07b0a1001424b084101c2cc16077181a"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean",
+      "blob": "a00aaa07c067b4c88203372870b5d5d151de0de4"
+    }
+  ],
+  "strict_checks": [
+    "Actual pickupResponse 0 u is negative for u>=0; do not apply positive-index convexity lemmas at zero",
+    "Confirm max positive-part identity for n>=1, including exact birth u=log n",
+    "Confirm inverse sqrt midpoint inequality arithmetic normalization",
+    "Check exact intervalIntegrable and intervalIntegral.integral_sub signatures",
+    "Check zero terminal faces at n=N+1 for T=log N and N>=1",
+    "Check Finset.sum_Icc_sub and filtered-product equivalence against pinned Mathlib",
+    "Check the four-corner mixed-integrand order and signs; no exchange of m+g with gap g",
+    "KernelTailIdentity must be discharged without a research axiom",
+    "PolynomialKernelMoment remains a Prop with no proof; do not report this fourth gate completed in Lean",
+    "Original complete signed rectangular arithmetic bound remains unproved; no RH claim"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_check": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "independent_full_Lean_replay": "NOT_RUN"
+  },
+  "commands_for_authorized_clean_verifier": [
+    "git checkout --detach <published_commit>",
+    "lake env lean --version",
+    "lake env lean -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean",
+    "lake env leanchecker --help",
+    "#print axioms GRWTSK.NumberTheory.LiouvilleDoubleAbelAnalyticGates.causalOmega_nonneg_actual",
+    "#print axioms GRWTSK.NumberTheory.LiouvilleDoubleAbelAnalyticGates.kernelTailIdentity_of_original_birth"
+  ],
+  "permissions": {
+    "source_publication": "USER_AUTHORIZED",
+    "native_verification_dispatch": "NOT_DISPATCHED",
+    "root_build": "UNCHANGED",
+    "user_local_shared_git_lock": "NOT_TOUCHED",
+    "user_local_LiouvilleWeightedCyclicEnergy": "NOT_TOUCHED"
+  }
+}
