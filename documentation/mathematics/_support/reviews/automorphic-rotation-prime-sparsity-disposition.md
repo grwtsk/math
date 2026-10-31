@@ -2,6 +2,24 @@
 
 Local mathematical attribution: grwtsk contributors.
 
+## Subsequent correction: local additive fusion and active paths
+
+The original rotation sandwich below remains valid at its explicit
+middle-relation invariance premise. It should NOT be interpreted as
+requiring a single globally isomorphic group for every prime-cell
+interface. The local-to-global mathematical distinction is reviewed
+in [Local additive fusion and certified cellular growth](local-additive-fusion-and-certified-growth.md).
+
+The newer source constructs the actual pushout of two additive groups
+along a specified seam, with source-injectivity conditions and
+seam-compatible rotations. Certified graph paths can carry additive
+homomorphisms between nonisomorphic groups, with exact observation
+return only when each transition supplies its own source comparison.
+Neither operation automatically produces a new path or bounds the
+signed Möbius dyadic endpoint sum. The finite birth-index reflection
+remains a reindexing, not a group automorphism.
+
+
 **Status:** analytical finite arguments and SOURCE_PROOF_CANDIDATES; Lean compilation
 **NOT_RUN**, fresh kernel replay **NOT_RUN**, transitive axiom audit **NOT_RUN**.
 No RH, Navier--Stokes regularity, prime-density, type-complete sofic trace,
