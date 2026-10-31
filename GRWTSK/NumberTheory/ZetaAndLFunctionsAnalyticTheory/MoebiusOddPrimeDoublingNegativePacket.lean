@@ -97,6 +97,17 @@ theorem oddPrimeDoublingPacket_nonpos (A : Finset ℕ)
   rw [moebius_two_mul_odd_prime p hprime hodd, hsym]
   nlinarith [mul_nonneg (sq_nonneg (moebiusReal p)) hK]
 
+/-- A genuine source-specific signed all-positive-rate saving on this
+prime-indexed nonzero packet, with rate-independent zero upper allowance. -/
+theorem oddPrimeDoublingPacket_allRate (A : ℝ → Finset ℕ) :
+    GRWTSK.NumberTheory.LiouvilleRoughSignedConsumerTransfer.EventualAllRateUpper
+      (fun T => oddPrimeDoublingPacket (A T) T) := by
+  intro ε hε
+  refine ⟨0, 0, le_rfl, le_rfl, ?_⟩
+  intro T hT
+  have hneg := oddPrimeDoublingPacket_nonpos (A T) T hT
+  simpa using hneg
+
 /-- The signed dense complement after paying the negative prime packet.
 Every other original ordered pair is retained in this difference, rather
 than assumed small or silently discarded. -/
