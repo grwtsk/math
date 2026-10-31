@@ -18,6 +18,7 @@ open GRWTSK.Geometry.GaugeTheory.SU2Wilson
 open GRWTSK.Geometry.GaugeTheory.WilsonSliceGeometry
 open GRWTSK.Geometry.GaugeTheory.WilsonSliceHaar
 open GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert
+open GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative
 open GRWTSK.Geometry.GaugeTheory.WilsonSliceSpectralApproximation
 open GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity
 open GRWTSK.Geometry.GaugeTheory.WilsonRelativeKernelPowers

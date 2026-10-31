@@ -17,6 +17,7 @@ open MeasureTheory
 open GRWTSK.Geometry.GaugeTheory.SU2Wilson
 open GRWTSK.Geometry.GaugeTheory.WilsonSliceHaar
 open GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert
+open GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative
 open GRWTSK.Geometry.GaugeTheory.WilsonSliceSpectralApproximation
 open GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation
 variable (L : ℕ) [NeZero L]

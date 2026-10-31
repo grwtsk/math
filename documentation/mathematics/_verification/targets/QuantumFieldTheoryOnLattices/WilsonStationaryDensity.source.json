@@ -1,9 +1,9 @@
 {
   "status": "SOURCE_PROOF_CANDIDATE",
   "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonStationaryDensity.lean",
-  "source_base_commit": "dcf8e492b1fe9274217eecccffee15f76db20470",
-  "source_blob": "a98b7263aa83d6c1978a558bfc06cdc23226bed9",
-  "sha256": "6f32ec63228439dbfa2bb427986c87198985879c31f4655418412b93bb16636c",
+  "source_base_commit": "2a8b119b92aad5a46c4bd10e127f38ce083974c7",
+  "source_blob": "c69be58a6d2bbf8598ed793790f603b1c015be9b",
+  "sha256": "d730ce82f6ab7065b4b4c7967bae3c9c24200ccb67ff6678b37fd94bbaaac9e8",
   "declarations": [
     "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.stationaryDensity",
     "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.stationaryMeasure",
