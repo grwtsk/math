@@ -130,7 +130,7 @@ theorem ordered_sparse_gram_bound
     (hy : ∀ m ∈ S, ∀ n ∈ S, 2 * |B m n| ≤ d m + d n)
     (hc : ∀ m, (S.filter fun n => m ≠ n ∧ Nat.dist m n ∈ A).card ≤
       2 * A.card)
-    (hsym : ∀ m n, B m n = B n m) :
+    :
     |∑ m ∈ S, ∑ n ∈ S,
         if m ≠ n ∧ Nat.dist m n ∈ A then B m n else 0| ≤
       2 * (A.card : ℝ) * ∑ m ∈ S, d m := by
@@ -236,17 +236,7 @@ theorem putnamGapEnergyBound :
         2 * A.card := by
     intro m
     exact gapSetNeighbourCount A S m
-  have hsym : ∀ m n, B m n = B n m := by
-    intro m n
-    dsimp [B]
-    have hK : pickupResponseGram T m n = pickupResponseGram T n m := by
-      unfold pickupResponseGram
-      apply intervalIntegral.integral_congr
-      intro u hu
-      ring
-    rw [hK]
-    ring
-  have h := ordered_sparse_gram_bound S A d B hd hy hc hsym
-  simpa only [endpointGapSetCross, pickupDiagonal, S, d, B] using h
+  have h := ordered_sparse_gram_bound S A d B hd hy hc
+  simpa only [endpointGapSetCross, pickupDiagonal, endpointIndex, S, d, B] using h
 
 end GRWTSK.NumberTheory.MoebiusEndpointGramYoungClosure
