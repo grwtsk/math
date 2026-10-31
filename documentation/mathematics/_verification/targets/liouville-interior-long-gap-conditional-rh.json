@@ -1,0 +1,114 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Precise unproved signed Liouville interior long-gap all-rate arithmetic theorem and conditional implication to canonical RH",
+  "byline": "grwtsk contributors",
+  "date": "2026-10-31",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleInteriorLongGapRH.lean",
+    "blob": "e9b68f4106b3e2d648ba0803f75dc5e3b4dccbd9",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "proved_script_candidates": [
+      "GRWTSK.NumberTheory.LiouvilleInteriorLongGapRH.longGapTime_succ",
+      "GRWTSK.NumberTheory.LiouvilleInteriorLongGapRH.paid_energy_return_scalar",
+      "GRWTSK.NumberTheory.LiouvilleInteriorLongGapRH.long_gap_upper_scalar"
+    ],
+    "unproved_arithmetic_target": "GRWTSK.NumberTheory.LiouvilleInteriorLongGapRH.InteriorLongGapAllRate",
+    "statement": "forall eps>0 exists C>=0 forall j>=1: interiorLongGapAggregate (2^(5*j)) (2^(5*j)-2^(4*j)) (j^2) <= C*exp(eps*(5*j*log 2))",
+    "named_unproved_lean_analytic_gates": [
+      "GRWTSK.NumberTheory.LiouvilleInteriorLongGapRH.InteriorLongGapImpliesUniformEnergy",
+      "GRWTSK.NumberTheory.LiouvilleInteriorLongGapRH.UniformLiouvilleEnergyImpliesRiemannHypothesis",
+      "GRWTSK.NumberTheory.LiouvilleInteriorLongGapRH.InteriorLongGapImpliesRiemannHypothesis"
+    ],
+    "actual_Learn_accepted_RH": false
+  },
+  "mathematical_review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-interior-long-gap-conditional-rh.md",
+    "blob": "2eb58c70608a8c04356d0bb0586f4b622d171801",
+    "result": "Complete conditional mathematical implication from unproved arithmetic P to RH, plus reverse RH=>P using classical Liouville summatory equivalence; NOT Lean checked"
+  },
+  "original_and_imported_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalBirthCollar.lean",
+      "blob": "f84ed4a5ae39da68d6403e1f7e0d55e484d6dc19"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean",
+      "blob": "a00aaa07c067b4c88203372870b5d5d151de0de4"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelCausalKernel.lean",
+      "blob": "b102b4af07b0a1001424b084101c2cc16077181a"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelBoundaryClosure.lean",
+      "blob": "54dc35f79844d1fbfc59f5b408f7e06039c0e812"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWaveformEnergyResidueBridge.lean",
+      "blob": "ddb8620518968794c89cfa62a0b8f4c242c19f7a",
+      "adjacent_not_imported": true
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleSquareDivisorReverseCounting.lean",
+      "blob": "feae1ca93e3a21ebc033da05e14fe1e2f77c6b2d",
+      "adjacent_not_imported": true
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EnergyAbscissa.lean",
+      "blob": "c1f86b43daefd7fbb8cfc4254d6888c410d051d9",
+      "adjacent_not_imported": true
+    }
+  ],
+  "mathematical_boundaries": {
+    "exact_signed_source": "Original Liouville coefficients, causal Gram, strict m+g<N mask, positive m,g and complete off-diagonal orientations preserved",
+    "quantitative_return": "H_lambda(T_j)<=4 A_long(j)+(8+16 j^2) T_j(1+T_j)+32/3",
+    "converse": "A_long(j)<=H_lambda(T_j)+16/3+4 j^2 T_j(1+T_j)",
+    "all_height": "T_j=5 j log 2 has additive spacing 5 log 2; monotonicity of H only; quantifier forall eps>0",
+    "laplace": "For Re z>1/2, Phi_lambda(z)=zeta(2z+1)/(z(z+1/2)zeta(z+1/2)); holomorphic Re z>0 under P",
+    "pole": "For zeta zero rho with Re rho>1/2, rho !=1, evaluation at z=rho-1/2 yields zeta(2rho) !=0 contradiction",
+    "canonical_RH": "Mathlib _root_.RiemannHypothesis, conditional mathematical implication only",
+    "reciprocal_RH_to_P": "Uses the classical RH=>Liouville summatory O_eta(x^(1/2+eta)); mathematical equivalence, not Lean checked",
+    "P_status": "OPEN; NOT proved; no unconditional RH claim"
+  },
+  "checks": [
+    "Check exact original signed coefficient, finite causal kernel and source mask no omissions or sign loss",
+    "Check source-only j>=1, N_j=2^(5j), R_j=N_j-2^(4j), G_j=j^2 and T_j=5j log2",
+    "Check nonvacuity at j=1 and indices (m,g)=(1,2)",
+    "Verify Lean scalar algebra proof scripts and time mesh identities against pinned Mathlib",
+    "Formalize FifthPowerCollarEnergyBound and OriginalWaveformAtFifthPower prior named open Props",
+    "Formalize exact fixed bulk Gram D_B+2A_short+2A_long and both orientations",
+    "Prove pointwise real response support, short gap harmonic and diagonal estimates, and constant collar allowance",
+    "Prove all-j positive-rate bound absorbs polynomial and fixed bounded-gap cover of times",
+    "Prove half-line weighted energy convergence for each sigma>0, then holomorphy of literal Liouville Laplace transform",
+    "Establish source exact Dirichlet series and zeta identity only in Re z>1/2 by absolute convergence",
+    "Apply analytic identity theorem on punctured Re z>0 domain excluding z=1/2 zeta pole; nontrivial zeros reflection",
+    "Do not substitute existing conditional Möbius return or unverified square-divisor equivalence as accepted",
+    "Do not claim P from the external fixed exponent 0.7467639332266 or from small shift Chowla",
+    "Fresh exact-source compilation, expected types, transitive axiom inspection, kernel replay, import closure needed before any Lean acceptance"
+  ],
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "verification": {
+    "source_blob_publication": "PUBLISHED_SOURCE_IDENTITY_REQUIRES_MAIN_READBACK",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "entire_analytic_return_Lean": "NOT_FORMALIZED",
+    "arithmetic_theorem": "OPEN",
+    "full_conditional_implication_Lean": "NOT_PROVED"
+  },
+  "authority": {
+    "native_verifier_dispatch": "NOT_DISPATCHED",
+    "root_build": "UNCHANGED",
+    "original_sources": "UNCHANGED",
+    "local_shared_git_lock": "NOT_TOUCHED",
+    "background_queue": "NOT_DISPATCHED"
+  }
+}
