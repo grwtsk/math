@@ -1427092,6 +1427092,25 @@
       "target_sha256": "1f632489c2fc1074694de87f749a0e7de5128e37748add1b94683e5c17a1dddc",
       "target_git_blob": "2912b19c07e50c1f98644f93488d0bb7770ef3f9",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/NumericalAnalysis/NumericalMethodsForOrdinaryDifferentialEquations/NumericalMethodsForInitialValueProblemsInvolvingOrdinaryDifferentialEquations/PendulumEuler.lean",
+      "path": "GRWTSK/NumericalAnalysis/NumericalMethodsForOrdinaryDifferentialEquations/NumericalMethodsForInitialValueProblemsInvolvingOrdinaryDifferentialEquations/PendulumEuler.lean",
+      "source_sha256": "79682bb3ba729101984801db9fd1971ad9275422e6392dfe942891759c82f0b7",
+      "input_blob": "ccc3fd717c05b508774380e616f8c7a5ec4c328b",
+      "source_kind": "lean_source",
+      "msc_code": "65L05",
+      "msc_label": "Numerical methods for initial value problems involving ordinary differential equations",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual simultaneous explicit Euler pendulum substep,finite frame iteration,step-size consistency and exact finite energy defect",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "ccc3fd717c05b508774380e616f8c7a5ec4c328b",
+      "target_sha256": "79682bb3ba729101984801db9fd1971ad9275422e6392dfe942891759c82f0b7",
+      "target_git_blob": "ccc3fd717c05b508774380e616f8c7a5ec4c328b",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
