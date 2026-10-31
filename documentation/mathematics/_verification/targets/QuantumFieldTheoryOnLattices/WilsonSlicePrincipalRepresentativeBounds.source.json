@@ -1,0 +1,36 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSlicePrincipalRepresentativeBounds.lean",
+  "source_base_commit": "fd6929a79c632b509f7bec8e606161719a8b5231",
+  "source_blob": "ffbd388226e9516cae1e3af6ce1507607e796f1f",
+  "source_sha256": "c293d392c518b6454e27403397301348c9ae5332995a0aaa45821ac2557ed34d",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalRepresentativeBounds.kernelRepresentative_upper_mass",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalRepresentativeBounds.principalRepresentative_toLp",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalRepresentativeBounds.principalRepresentative_eq_ae",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalRepresentativeBounds.principalRepresentative_eigenvector",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalRepresentativeBounds.principalRepresentative_bounds",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalRepresentativeBounds.principalRepresentative_pos"
+  ],
+  "consumer": "Quantitative normalized Wilson principal-kernel estimates",
+  "hypotheses": [
+    "NeZero L",
+    "beta > 0",
+    "Actual nonnegative AE invariant L2 input",
+    "Actual principal eigenvector equation for embedding/eigenvector identities"
+  ],
+  "constant": "exp(-12 beta L^3), explicit volume/coupling dependence",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification of changed dependency chain",
+    "Normalized transfer quantitative spectral-ratio estimate",
+    "Regulator-uniform physical scaling and continuum construction"
+  ]
+}
