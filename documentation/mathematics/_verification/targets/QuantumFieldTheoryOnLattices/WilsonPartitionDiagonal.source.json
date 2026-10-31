@@ -1,0 +1,28 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonPartitionDiagonal.lean",
+  "source_base_commit": "a152371e1fb77cfcb64bc0e05683df143dafbe88",
+  "source_blob": "ee70d391991bfb939f166a7902e54ec145b0e6ef",
+  "sha256": "69263004f70826cf1db2ecaf23f3c608a469d0bf9f39840f5e49f8d4a5229dcc",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonPartitionDiagonal.actualKernel",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPartitionDiagonal.history_index_preserving",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPartitionDiagonal.index_successor",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPartitionDiagonal.cyclicPartition_succ_eq_diagonal",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPartitionDiagonal.cyclicPartition_eq_diagonal"
+  ],
+  "hypotheses": "Compact Hausdorff second-countable Borel space; probability measure; continuous real kernels; arbitrary actual L2 input.",
+  "consumer": "Actual finite Wilson cyclic partition; L nonzero, all real beta; no trace theorem.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
