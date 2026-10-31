@@ -1,0 +1,147 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Uniform norm equivalence for nonnegative Liouville prime bands",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "review_base": {
+    "branch": "main",
+    "commit": "1b38a559e7970426502368cefb0f287539047aa9",
+    "tree": "2187c8d5d08a5b206c02b516aead550dc17238d6"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeBandNormEquivalence.lean",
+    "blob": "caf6277e63c4b9139b42b07cffc8b8f925ea799d",
+    "sha256": "fd18cadaa6bc7a1d1ea4488d616c988ac90b51047f7497f8f04bbb1ffa9d2776",
+    "namespace": "GRWTSK.NumberTheory.LiouvillePrimeBandNormEquivalence",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleGrowingPrimeBandIdentity",
+      "Mathlib"
+    ],
+    "definitions": [
+      "AdmissibleBand",
+      "mass",
+      "normalizedShiftMass",
+      "delayedAverageWaveform",
+      "normalizedResidualWaveform",
+      "normalizedResidualEnergy",
+      "normalizedDelayedCovariance",
+      "delayedAverageEnergy",
+      "ScaleDependentResidualSupplier",
+      "NormalizedWaveformIdentity",
+      "FiniteHorizonShiftContraction",
+      "PrimeBandNormEquivalence",
+      "UniformPrimeBandNormEquivalence",
+      "ScaleDependentResidualSupplierIffUniformEnergy",
+      "NegativeCovarianceCompensationIdentity"
+    ],
+    "proved_scope": [
+      "mass_pos",
+      "mass_nonneg",
+      "mass_ne_zero",
+      "prime_mem",
+      "weight_nonneg"
+    ],
+    "open_named_propositions": [
+      "NormalizedWaveformIdentity",
+      "FiniteHorizonShiftContraction",
+      "PrimeBandNormEquivalence",
+      "UniformPrimeBandNormEquivalence",
+      "ScaleDependentResidualSupplierIffUniformEnergy",
+      "NegativeCovarianceCompensationIdentity"
+    ],
+    "claim": "Exact interfaces for finite-horizon multi-prime norm equivalence and the no-go equivalence of scale-dependent residual suppliers with the original Liouville energy target"
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-prime-band-norm-equivalence.md",
+    "blob": "c6ae974d65242eaede0840a24b173fd14b2f520d",
+    "sha256": "aca578af6184e962216f68b706a19a1ef685c5b4396d4fe70073d599a6154b8b",
+    "claims": [
+      "Exact normalized identity R/W = F + A F for every admissible finite band",
+      "Finite-horizon shift contraction with rho = sum pi_p/sqrt(p)",
+      "Two-sided bound (1-rho)^2 H <= E/W^2 <= (1+rho)^2 H",
+      "Uniform constants 3/2-sqrt(2) and 3/2+sqrt(2)",
+      "Scale-dependent nonnegative prime-band residual supplier iff original all-positive-rate energy target",
+      "Full negative-covariance compensation restores H plus nonnegative terms",
+      "Convex weight optimization remains uniformly bounded below by a fixed multiple of H"
+    ]
+  },
+  "literature_ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-prime-band-norm-equivalence-references.md",
+    "blob": "61e6cb4bfd8ea4b2c313a0e6a5abf79068a1ce21",
+    "sha256": "6eec6ff89ebdb7158dc4f0582209ccfcbe599681970ead5009afe1b53f5e67b1",
+    "canonical_monolith": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+    "canonical_monolith_blob": "8c89f14cc907c959d8781bb67ff4c079b933076d",
+    "merge_status": "SHARD_PUBLISHED_MONOLITH_UNCHANGED"
+  },
+  "upstream": {
+    "actual_liouville_source": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean",
+      "blob": "a00aaa07c067b4c88203372870b5d5d151de0de4"
+    },
+    "prime_band_identity": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingPrimeBandIdentity.lean",
+      "blob": "477ca1d19b634a09e8d5c1e38e8035798bb0ef37"
+    },
+    "method_comparison_review": {
+      "path": "documentation/mathematics/_support/reviews/liouville-method-comparison-and-prime-delay-obstructions.md",
+      "blob": "0add9dd09cc9a6588e010179079498cec4393196"
+    },
+    "reciprocal_mass_obstruction": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleReciprocalPrimeMassObstruction.lean",
+      "blob": "3da18f04925fa206249ff81433de413de97f4104"
+    }
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "mathematical_disposition": {
+    "new_cancellation_estimate": false,
+    "uniform_energy_proved": false,
+    "riemann_hypothesis_proved": false,
+    "no_go_result": "Every finite nonnegative prime-band residual norm, including T-dependent optimized bands, is uniformly equivalent to the original causal energy",
+    "remaining_viable_phase": "Signed bilinear covariance or source-exact transport consumed before norm inequalities erase sign"
+  },
+  "open_formalization": [
+    "Prove waveform zero extension for negative physical time from the exact finite support definition",
+    "Prove finite-horizon delay contraction by interval translation and energy monotonicity",
+    "Prove normalizedShiftMass lies in [0, 1/sqrt(2)] for admissible prime bands",
+    "Derive normalized waveform identity from GrowingPrimeBandWaveformIdentity and positive mass",
+    "Formalize Minkowski and reverse-triangle bounds for the finite delayed average",
+    "Prove the two-sided and uniform norm equivalences",
+    "Construct the singleton prime-two admissible band and prove the supplier equivalence",
+    "Prove the covariance expansion and max-positive-part identity",
+    "Compile and audit the complete predecessor/new source closure"
+  ],
+  "open_arithmetic": [
+    "Do not pursue normalized residual-energy bounds as an independent supplier",
+    "Construct a signed bilinear estimate for the actual delayed Liouville family before triangle or Cauchy-Schwarz",
+    "Preserve repeated-prime terms, unsifted integers, birth collars and all selected-prime weights",
+    "Transport any signed gain through the complete Omega-weighted double-Abel or endpoint consumer",
+    "If sign-changing operator weights are introduced, prove an exact source identity and all stability and boundary costs"
+  ],
+  "verification": {
+    "source_inspection": "DONE",
+    "analytical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "workflow_status": "NOT_CHECKED_BEFORE_PUBLICATION"
+  },
+  "authority": {
+    "publication_mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "expected_head": "1b38a559e7970426502368cefb0f287539047aa9",
+    "root_import": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeBandNormEquivalence.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeBandNormEquivalence.lean",
+    "check exact expected types and #print axioms for every theorem in GRWTSK.NumberTheory.LiouvillePrimeBandNormEquivalence",
+    "audit the complete transitive imports for sorryAx, research axioms, native trust and omitted required modules"
+  ]
+}
