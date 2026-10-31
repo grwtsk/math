@@ -22,7 +22,7 @@ theorem abs_double_integral_le (A : C(X × X, ℝ)) (b : ℝ)
     (hA : ∀ x y, |A (x,y)| ≤ b) :
     |∫ x, ∫ y, A (x,y) ∂μ ∂μ| ≤ b := by
   rw [← integral_prod _ (pair_integrable μ A)]
-  simpa only [Real.norm_eq_abs, measureReal_univ_eq_one, mul_one] using
+  simpa only [Real.norm_eq_abs, probReal_univ, mul_one] using
     (norm_integral_le_of_norm_le_const (μ := μ.prod μ)
       (ae_of_all _ (fun p => by simpa only [Real.norm_eq_abs] using hA p.1 p.2)))
 

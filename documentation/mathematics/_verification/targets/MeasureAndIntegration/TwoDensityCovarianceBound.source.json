@@ -1,9 +1,9 @@
 {
   "status": "SOURCE_PROOF_CANDIDATE",
   "source": "GRWTSK/MeasureAndIntegration/TwoDensityCovarianceBound.lean",
-  "source_base_commit": "3b880c103a477d802f60e389337b5e1a93d66206",
-  "source_blob": "10ceb86e6b795c85481768d2a5664e85c0c6eb76",
-  "sha256": "0632176fb51c32095f10308ce2f7464fd23be25a3c73dfaac314102d2605ac68",
+  "source_base_commit": "5a4e5577ee8a4923ad82aa3f886ffd04bb23f8a9",
+  "source_blob": "31eee297f8a4d111fba509d6ab117a7e7892de48",
+  "sha256": "3ce94b12759ed521394a03526b977ee53319aacb88dbea56922164df9899f5ae",
   "declarations": [
     "GRWTSK.Analysis.Integration.TwoDensityCovarianceBound.abs_double_integral_le",
     "GRWTSK.Analysis.Integration.TwoDensityCovarianceBound.residual_pointwise",
