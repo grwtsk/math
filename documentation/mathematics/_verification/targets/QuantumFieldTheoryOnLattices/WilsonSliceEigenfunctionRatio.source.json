@@ -1,0 +1,34 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceEigenfunctionRatio.lean",
+  "source_base_commit": "f924fa7dd74f0fb4fe6191847f49f12cee81d26e",
+  "source_blob": "adc4165a51978c155370fd633f3480f60bff5261",
+  "source_sha256": "155f1c16d3423fcbb027bb2e34a6827df65acc650bdce97a06a4c875458fb252",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceEigenfunctionRatio.eigenRatio",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceEigenfunctionRatio.ratio_mixed_integrable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceEigenfunctionRatio.ratio_integral_equation",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceEigenfunctionRatio.ratio_not_constant"
+  ],
+  "consumer": "Actual normalized-row eigenfunction ratio and compact extrema consumer",
+  "hypotheses": [
+    "NeZero L",
+    "beta>0",
+    "actual nonzero nonnegative principal f",
+    "mu !=0 and actual x eigen-equation",
+    "principal eigen-equation, unit f, nonzero x and orthogonality for nonconstancy"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact source qualification",
+    "Compact extrema and actual secondValue contraction",
+    "Uniform physical scaling and continuum reconstruction"
+  ]
+}
