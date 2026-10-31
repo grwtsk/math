@@ -104,6 +104,15 @@ theorem mul_assoc_constructive (a b : Nat) :
       _ = a * (b * c + b) := (Nat.mul_add a (b * c) b).symm
       _ = a * (b * (c + 1)) := rfl
 
+/-- Right distributivity through the independently audited empty-axiom route.
+The core `Nat.add_mul` route uses `Nat.right_distrib`, whose transitive audit
+contains `propext` in the pinned toolchain. This explicit transport uses only
+commutativity and left distributivity; fresh verification remains required. -/
+theorem add_mul_constructive (a b c : Nat) : (a + b) * c = a * c + b * c :=
+  (Nat.mul_comm (a + b) c).trans
+    ((Nat.mul_add c a b).trans
+      (congrArg₂ Nat.add (Nat.mul_comm c a) (Nat.mul_comm c b)))
+
 /-- Fixed affine enlargement preserves sublinearity of a fixed exponent.
 The scale and offset are independent of the input and requested reciprocal rate.
 This supplies only the exponent arithmetic, not a computational reduction. -/
@@ -149,7 +158,7 @@ theorem IsSublinear.affine {exponent : Nat → Nat} (sublinear : IsSublinear exp
       calc
         Nat.succ previous * n + offset ≤ Nat.succ previous * n + offset * n :=
           Nat.add_le_add_left offsetLower (Nat.succ previous * n)
-        _ = factor * n := (Nat.add_mul (Nat.succ previous) offset n).symm
+        _ = factor * n := (add_mul_constructive (Nat.succ previous) offset n).symm
     have scaled : factor * (rate * exponent (Nat.succ previous * n + offset)) ≤
         factor * n := by
       calc
