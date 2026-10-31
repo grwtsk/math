@@ -3951,3 +3951,40 @@ resolution. Operational publication and diagnostics stay in Noe.
 - **Complete mathematical proof:** a neighbor at distance `a` lies in one of the two images `m+a` and `m-a`. Their union has cardinality at most `2#A`, irrespective of the distance magnitudes, terminal cutoff, repetitions of images, or source signs. Boundary cases `A=∅`, `A={0}`, and natural-subtraction truncation retain this upper bound. The exact Möbius physical-time Gram-Young inequality gives, after both orientations are counted, `|endpointGapSetCross A T| ≤ 2#A pickupDiagonal T ≤ 4#A T²` for `T≥0`, conditional on the named predecessor Gram/diagonal interfaces. No termwise arithmetic sign cancellation is invoked in this coarse bound.
 - **Quantitative transfer and limitation:** if `#A_T=O_delta(exp(delta T))` for every `delta>0`, the `T²` factor is absorbed by a half-exponent split, allowing all-positive-rate control for any widely spaced, subexponentially sparse gap family. This does NOT control the dense complementary signed gap core, and does not imply the original RH energy target. A constant aligned Gram fixture demonstrates why pure degree counting cannot handle an exponentially dense gap set.
 - **Evidence and missing bridges:** mathematical proof and uncompiled Lean source candidate. `EndpointMobiusGramYoung`, the actual `PutnamGapEnergyBound`, and the dense-core arithmetic estimate remain open in Lean. User deferred compilation, expected-interface checks, fresh kernel replay, and transitive axiom auditing: all `NOT_RUN`. No verification dispatch, dependency-pin change, or root import promotion.
+
+
+## Sublinear arithmetic — empty-axiom qualification (2026-10-31)
+
+Local byline: grwtsk contributors. The three outstanding scalar arithmetic
+checks above now pass at immutable Math source
+`23412fb8da6cd9f7922160c691fc55725a05b116`. Source
+`GRWTSK/ComputerScience/AlgorithmsInComputerScience/SublinearExponent.lean`,
+blob `029bb4cdfc14d622ba9a2014c951e2963e9315d5`, SHA-256
+`49c7827cbad7e8daee591dff3c6acb3ba94a0ad7cec17b35bd285e297ee73ee6`.
+
+For the fixed scalar definition IsSublinear, fixed affine reparameterization
+and addition preserve sublinearity. Scale and offset are independent of input
+and reciprocal rate; both summands retain their own sublinearity premises.
+`IsSublinear.affine`, `IsSublinear.add` and `IsSublinear.affine_add` have their
+original literal statements and premises. `mul_assoc_constructive` and
+`add_mul_constructive` supply empty-axiom arithmetic routes; the latter avoids
+the observed core `Nat.add_mul`/`Nat.right_distrib` propext dependency. All names
+are in `GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent`.
+
+Canonical managed preparation and replay used the exact source, Lean 4.34.1,
+trust zero, one thread, no allowed axioms, 1 GiB and the unchanged 30-second cap.
+Fresh compilation and complete compiler-origin discovery covered all 16 module
+constants, including all nine original scalar theorems and two support lemmas;
+every transitive axiom list was empty. A fresh importing consumer checked the
+three original arithmetic interfaces. Final source capture and host restoration
+passed. Replay took 24.79 seconds with sampled peak group RSS 804,519,936 bytes.
+
+The commands, immutable registry/receipt hashes, toolchain boundary, failure
+history and exact scope are retained in Noe's
+`bindings/mathematics/organization/verification/storage-challenge/verified-arithmetic-v172.json`
+and external `arithmetic-final-replay-v172/receipt.json`. Earlier failed source
+and forbidden-axiom captures remain separate evidence. The original eighteen
+obligations have declarationwise coverage across this scalar receipt and the
+source41 retention/enumeration receipt, with separate source pins. This does not
+establish Python/JSON or optimizer refinement, inventory completeness, a global
+storage minimum, a uniform SAT algorithm or reduction, or ETH. ETH is unresolved.
