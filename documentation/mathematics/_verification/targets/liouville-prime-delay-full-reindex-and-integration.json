@@ -5,12 +5,13 @@
   "source": [
     {
       "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayMultipleReindex.lean",
-      "blob": "3a74a74a8523c3a8f6a4ee2ea8946b11b161b31c",
+      "blob": "663afe4e9478697027c6eea70fb4d3807feec075",
       "declarations": [
         "positive_multiple_cutoff_iff",
         "pickupResponse_mul_shift",
         "positive_multiple_finset_sum",
-        "primeDivisorWaveformIdentity"
+        "primeDivisorWaveformIdentity",
+        "weightedDelayedCovariance_complete_originalGram"
       ],
       "status": "SOURCE_PROOF_CANDIDATE"
     },
@@ -28,7 +29,7 @@
     }
   ],
   "direct_previous": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayIntegratedReturn.lean",
-  "mathematical_claim": "For all p prime and all real u, original divisor Liouville waveform is -p^(-1/2) times the original delayed waveform; for T>=0 complete weighted delayed covariance is the negative original-index mixed diagonal plus its complete ordered signed off-diagonal.",
+  "mathematical_claim": "For all p prime and all real u, original divisor Liouville waveform is -p^(-1/2) times the original delayed waveform; for T>=0 complete weighted delayed covariance is the negative original-index mixed diagonal plus its complete ordered signed off-diagonal. The final combined Lean declaration has only 0<=T and primality inputs, no hPrime/hInt arguments, but is not compiled.",
   "support": [
     "Original literal CCC.pickupResponse",
     "Exact p*k finite bijection including all repeated prime factors",
