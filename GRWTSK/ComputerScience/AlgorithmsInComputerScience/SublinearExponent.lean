@@ -89,6 +89,21 @@ theorem constant_isSublinear (value : Nat) : IsSublinear (fun _ => value) := by
   intro n past
   exact past
 
+/-- Explicit multiplication associativity for the empty-axiom arithmetic route.
+This recursion uses distributivity and primitive equality transport; whether it
+removes the observed transitive `propext` dependency is a verification question.
+The changed source remains a candidate until managed replay and audit pass. -/
+theorem mul_assoc_constructive (a b : Nat) :
+    ∀ c : Nat, (a * b) * c = a * (b * c)
+  | 0 => rfl
+  | c + 1 =>
+    calc
+      (a * b) * (c + 1) = (a * b) * c + a * b := rfl
+      _ = a * (b * c) + a * b :=
+        congrArg (fun value => value + a * b) (mul_assoc_constructive a b c)
+      _ = a * (b * c + b) := (Nat.mul_add a (b * c) b).symm
+      _ = a * (b * (c + 1)) := rfl
+
 /-- Fixed affine enlargement preserves sublinearity of a fixed exponent.
 The scale and offset are independent of the input and requested reciprocal rate.
 This supplies only the exponent arithmetic, not a computational reduction. -/
@@ -140,7 +155,7 @@ theorem IsSublinear.affine {exponent : Nat → Nat} (sublinear : IsSublinear exp
       calc
         factor * (rate * exponent (Nat.succ previous * n + offset)) =
             (factor * rate) * exponent (Nat.succ previous * n + offset) :=
-          (Nat.mul_assoc factor rate _).symm
+          (mul_assoc_constructive factor rate _).symm
         _ = (rate * factor) * exponent (Nat.succ previous * n + offset) :=
           congrArg (fun value => value * exponent (Nat.succ previous * n + offset))
             (Nat.mul_comm factor rate)
@@ -166,7 +181,7 @@ theorem IsSublinear.add {left right : Nat → Nat}
   have scaled : 2 * (rate * (left n + right n)) ≤ 2 * n := by
     calc
       2 * (rate * (left n + right n)) = (2 * rate) * (left n + right n) :=
-        (Nat.mul_assoc 2 rate _).symm
+        (mul_assoc_constructive 2 rate _).symm
       _ = (2 * rate) * left n + (2 * rate) * right n :=
         Nat.mul_add (2 * rate) (left n) (right n)
       _ ≤ n + n := Nat.add_le_add (leftPast n leftApplies) (rightPast n rightApplies)
