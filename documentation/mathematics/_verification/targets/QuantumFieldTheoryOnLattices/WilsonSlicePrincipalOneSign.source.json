@@ -1,0 +1,35 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSlicePrincipalOneSign.lean",
+  "source_base_commit": "e66920fe893ca74a6800141280d83f4b44d0478c",
+  "source_blob": "6dce342fc412e18bdb556d77a25b40b381dd9da5",
+  "source_sha256": "72ce001162e1e2b0619f3c7f445c6e4c2e9b4eafc31065ceda3487be6736d7a2",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalOneSign.quadratic_le_principal",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalOneSign.principal_not_two_sign_masses",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalOneSign.principal_one_sign_ae",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalOneSign.exists_unit_principal_one_sign"
+  ],
+  "consumer": "Actual principal eigenspace simplicity via one-sign and positivity improvement",
+  "hypotheses": [
+    "NeZero L",
+    "beta >= 0 for one-sign property",
+    "actual lambda0 eigenvector equation",
+    "beta > 0 for existing unit eigenvector"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Strictly positive oriented principal representative",
+    "Principal eigenspace simplicity",
+    "Quantitative finite separation",
+    "Regulator-uniform scaling and continuum construction"
+  ]
+}
