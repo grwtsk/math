@@ -1,0 +1,34 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceResidualKernel.lean",
+  "source_base_commit": "87f1e19f8574a99a3e36a95fd2f562cbc8835664",
+  "source_blob": "8b0d0ea0869776e5faff61b7cb9eb73da8a33dbe",
+  "source_sha256": "2895297ed2b0d409455641b85c03d7a860350d74e7321aeebc1629b044159764",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualKernel.principal_square_integral",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualKernel.principal_integral_equation",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualKernel.residualKernel_symm",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualKernel.residualKernel_nonnegative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualKernel.residualKernel_weighted_row"
+  ],
+  "consumer": "Actual residual-kernel weighted Schur norm estimate",
+  "hypotheses": [
+    "NeZero L",
+    "beta > 0",
+    "Actual unit principal input for square integral and row identity",
+    "Actual nonnegative AE input for pointwise residual nonnegativity"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Weighted Schur absolute-quadratic and norm bound",
+    "Regulator-uniform physical scaling and continuum construction"
+  ]
+}
