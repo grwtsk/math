@@ -1,0 +1,76 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Actual Liouville distinct-prime shared-index and mixed/Type II reconstruction",
+  "attribution": "grwtsk contributors",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeOverlapReconstruction.lean",
+    "namespace": "GRWTSK.NumberTheory.LiouvillePrimeOverlapReconstruction",
+    "imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleSignedBuchstabTypeII",
+      "Mathlib"
+    ],
+    "source_status": "SOURCE_PROOF_CANDIDATE",
+    "candidate_theorems": [
+      "distinct_prime_shared_index",
+      "common_index_of_parameter",
+      "pickupResponse_before_birth",
+      "coefficient_two_prime_copies",
+      "shared_index_sign",
+      "tagOverlapDiagonal_eq_divisorDiagonal",
+      "divisorSignedGram_eq_diagonal_add_offDiagonal",
+      "original_typeII_reconstruction",
+      "originalMixedGram_eq_diagonal_add_offDiagonal",
+      "originalMixedDiagonal_eq_single_sum",
+      "weightedDelayedCovariance_eq_negative_mixed_of_bridges",
+      "integrate_finite_double_sum",
+      "finite_mixed_integrand_expand",
+      "finite_mixed_integral_eq_originalGram_of_integrable"
+    ],
+    "open_props": [
+      "PhysicalTimeGramBridge",
+      "PrimeShiftSquareBridge"
+    ],
+    "observed_blob": "47228aca1eb9cdacae84d90974f2b2245674725e"
+  },
+  "dependency_blobs": {
+    "LiouvilleSignedBuchstabTypeII.lean": "c2de5cb221f03ff5792de4d29b104912e79d4771",
+    "LiouvilleGrowingPrimeBandIdentity.lean": "477ca1d19b634a09e8d5c1e38e8035798bb0ef37",
+    "LiouvilleCausalEnergyTarget.lean": "a00aaa07c067b4c88203372870b5d5d151de0de4",
+    "MertensPrimitive.lean": "45e06c371d67bcf8c939d20a95fcbc63570546fa"
+  },
+  "review": "documentation/mathematics/_support/reviews/liouville-prime-overlap-reconstruction.md",
+  "proved_mathematically": [
+    "p*a=q*b iff a=q*k,b=p*k for distinct primes",
+    "all repeated-prime shared diagonals included",
+    "full original-index signed Gram diagonal/off-diagonal identity",
+    "complete mixed covariance and squared selected-prime energy identities",
+    "integrability and cutoff support by finite continuous functions"
+  ],
+  "lean_open": [
+    "finite shifted-index Finset.sum_bij with floor cutoff",
+    "actual finite-time source support/cutoff equivalence",
+    "Lean kernel acceptance of finite double-sum interchange; literal term integrability not yet proved",
+    "actual one-prime delay identity and integrated return",
+    "fresh kernel proof validation"
+  ],
+  "not_claimed": [
+    "unconditional arithmetic Type II bound",
+    "Riemann Hypothesis",
+    "native compilation acceptance"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "native_jobs": "NOT_DISPATCHED"
+  },
+  "publication_constraints": {
+    "branch": "main",
+    "expected_head_guard": true,
+    "force": false,
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED"
+  },
+  "review_observed_blob": "cddd8b1d501b8253971c83dea7b4b86067691e8b"
+}
