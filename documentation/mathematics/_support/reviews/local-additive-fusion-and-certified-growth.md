@@ -174,7 +174,33 @@ The old ordered-prime-address group convention, graph
 candidate/certified split, automorphic Fourier shell source,
 three-phase ellipsoid and RH-facing pickup modules are unchanged.
 
-## 4. What this does NOT prove
+## 4. Exact failure-of-descent gate for non-additive observations
+
+A further source-level theorem now states the obstruction instead of
+leaving it as prose. Define `Seam.FactorsObservation` to mean that an
+arbitrary function `O : A × B → D` can be recovered exactly from a
+function on the fused quotient. The new theorem
+`Seam.observation_eq_of_factors` says that any two original states
+identified by the quotient MUST have equal observed values.
+`Seam.no_observation_descent_of_collision` gives the contrapositive:
+one glued pair with different values rules out exact recovery on
+that fused state space.
+
+`PrimeCellularAdditiveFusion.primeSeam_no_source_descent_of_collision`
+specializes this no-go to the ACTUAL ordered prime-address additive
+groups. It is especially relevant to signed Möbius observations:
+a prime-factor, exponent, or sign collision cannot be repaired just
+by renaming a fused group, adding graph edges or lifting into a
+larger faithful representation. Instead, refine the seam, retain
+a separate residual channel, or prove a quantitatively paid
+comparison that preserves the original signed source.
+
+These two new abstract no-go theorems do NOT claim that the actual
+RH source collides on some particular prime-address seam. That
+application requires specifying its genuine observation map and a
+concrete colliding pair; neither is invented here.
+
+## 5. What this does NOT prove
 
 - There is no theorem that a mixed-radix numeric serialization is a
   homomorphism of additive groups. In fact the [2,2] vs ZMod 4
@@ -200,7 +226,7 @@ three-phase ellipsoid and RH-facing pickup modules are unchanged.
   repair an equality that fails in the original source without
   a specified defect and return map.
 
-## 5. Evidence and research disposition
+## 6. Evidence and research disposition
 
 **Primary mathematical arguments:** image-quotient universal
 property, kernel-of-inclusion analysis, induction over actual
