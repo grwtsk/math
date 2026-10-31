@@ -1,0 +1,33 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceInvariantAbsoluteValue.lean",
+  "source_blob": "d502d8c7437534b355ca0cf53a12c5f938eef11f",
+  "source_sha256": "83d24068c29ce81888a36c1dc30170db013c1627d4d6044cf54cf4d39868ffb7",
+  "source_base_commit": "ac541872bb7d7e135a729db0d4ade720a3338301",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceInvariantAbsoluteValue.absoluteVector",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceInvariantAbsoluteValue.absoluteVector_apply_ae",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceInvariantAbsoluteValue.absoluteVector_nonnegative_ae",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceInvariantAbsoluteValue.absoluteVector_norm",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceInvariantAbsoluteValue.gaugeComposition_absoluteVector",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceInvariantAbsoluteValue.invariantAbsoluteValue",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceInvariantAbsoluteValue.invariantAbsoluteValue_coe",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceInvariantAbsoluteValue.invariantAbsoluteValue_norm",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceInvariantAbsoluteValue.invariantAbsoluteValue_ne_zero"
+  ],
+  "consumer": "Actual gaugeInvariantSpace norm-preserving competitor for the principal Rayleigh comparison",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining_bridges": [
+    "Strict sign-changing quadratic comparison for the actual integral operator",
+    "Principal eigenspace simplicity",
+    "Fixed-regulator finite separation certificate",
+    "Regulator-uniform gap and continuum construction"
+  ]
+}
