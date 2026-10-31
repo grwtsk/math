@@ -1,0 +1,52 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Uniform normalized Liouville residual obstruction for changing prime bands",
+  "attribution": "grwtsk contributors",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingBandUniformObstruction.lean",
+    "namespace": "GRWTSK.NumberTheory.LiouvilleGrowingBandUniformObstruction",
+    "declarations": [
+      "finite_band_shift_mass_le",
+      "uniform_normalized_residual_norm_sandwich",
+      "uniform_norm_transfer"
+    ],
+    "status": "SOURCE_PROOF_CANDIDATE"
+  },
+  "review": "documentation/mathematics/_support/reviews/liouville-growing-band-uniform-inversion-obstruction.md",
+  "upstream": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingPrimeBandIdentity.lean",
+      "observed_blob": "477ca1d19b634a09e8d5c1e38e8035798bb0ef37"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeBandCovarianceTolerance.lean",
+      "observed_blob": "62350831345004d8dada74cef24d621a9997c98f"
+    }
+  ],
+  "mathematical_scope": "Pointwise-in-T band-independent norm sandwich; all positive rates for normalized residual equivalent to original Liouville causal energy under exact waveform identity.",
+  "explicit_premises": [
+    "Finite band of primes p >= 2, nonnegative weights, positive W",
+    "Original finite-band Liouville waveform identity",
+    "Zero-before-birth and L2 shift contraction",
+    "Triangle and reverse-triangle inequalities",
+    "No hidden arithmetic covariance cancellation"
+  ],
+  "open": [
+    "Formalize actual shift contraction against source integrals",
+    "Formalize exact growing-band waveform identity",
+    "Independent Type II/Buchstab signed arithmetic bound",
+    "Full RH return and verification"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "jobs": "NOT_DISPATCHED"
+  },
+  "publication": {
+    "root_import": "UNCHANGED",
+    "toolchain_pins": "UNCHANGED",
+    "method": "guarded non-force fast-forward"
+  }
+}
