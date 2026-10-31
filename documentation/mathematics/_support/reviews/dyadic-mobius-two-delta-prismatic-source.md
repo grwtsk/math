@@ -317,6 +317,62 @@ and coefficient precision, without identifying distinct
 upper original states. Nevertheless the missing analytic
 all-positive-rate signed endpoint estimate is unchanged.
 
+## 4c. Constructed δ on the ACTUAL complete 2-adic ring
+
+A further mathematical source proof candidate,
+\`GRWTSK/CommutativeAlgebra/DyadicPadicDelta.lean\`
+(Git blob 53d5f46e7613933bb3a946d540163b8588aedda5),
+attempts the exact previously missing δ extension to
+\`Coeff = PadicInt 2\`. It does NOT merely assume a
+\`TorsionFreeDeltaStructure 2 Coeff\` field.
+
+The key arithmetic point is that the ACTUAL ring
+homomorphism \`PadicInt.toZMod : PadicInt 2 →+* ZMod 2\`
+sends \`x - x^2\` to zero, because every residue
+in F2 satisfies \`r^2 = r\`. Mathlib's actual
+\`PadicInt.ker_toZMod\` and
+\`PadicInt.maximalIdeal_eq_span_p\` identify
+the kernel as the principal ideal (2). Consequently
+2 divides \`x-x^2\` inside the complete 2-adic
+integer ring. Its quotient δ(x) exists IN PadicInt 2,
+not in an invented ambient field; multiplication by
+2 is injective in this integral domain, so δ is unique.
+
+The candidate derives, at p=2:
+- the actual δ(x) identity \`2δ(x)=x-x^2\`;
+- δ(0)=δ(1)=0;
+- the divided addition and multiplication identities;
+- multiplication-by-2 regularity;
+- an actual \`TorsionFreeDeltaStructure 2 (PadicInt 2)\`;
+- the identity Frobenius lift \`φ(x)=x^2+2δ(x)=x\`;
+- the principal ideal I=(2) equals the existing
+  maximal ideal and is adically complete;
+- \`δ(2)=-1\` is a unit (distinguished generator);
+- the original complete signed Möbius finite
+  coboundary commutes with the constructed δ Frobenius,
+  with no separately postulated p-adic δ field.
+
+These statements are SOURCE PROOF CANDIDATES:
+compilation, actual fresh kernel checking and
+transitive axiom auditing remain NOT_RUN.
+They establish candidate proofs for the PRINCIPAL
+ALGEBRAIC INPUT of the standard crystalline prism.
+A FULL internal Bhatt–Scholze prism construction
+still needs source-checked Cartier/derived-completeness
+and prism-definition correspondence. A genuine
+prismatic complex, Nygaard filtration, cohomology
+comparison and source-injective vanishing return
+are not constructed or inferred from the δ laws.
+
+An independent finite integer congruence test of
+the δ formula and the extra-one-bit precision law
+\`x ≡ y mod 2^(k+1) ⇒ δ(x) ≡ δ(y) mod 2^k\`
+passed **59,223** exact assertions; SHA-256
+\`a9c6cdc44bfe7a0a2cb03099e0547a6e99bd9052b1e6a9e047169854d7c304cb\`.
+It is NOT a Lean check or infinite 2-adic proof.
+The actual analytical proof uses Mathlib's
+kernel/ideal correspondence, not these samples.
+
 ## 5. Symplectic fiber and lossless coding compatibility
 
 SharedShadowVerticalSymplectic supplies a NONDEGENERATE
