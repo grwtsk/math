@@ -1,0 +1,32 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceFiniteSeparationCertificate.lean",
+  "source_base_commit": "7638d168dd860ff093f27950017410ef54b48198",
+  "source_blob": "f1736e70a00e50af2560892e62f450e5f65cc6ae",
+  "source_sha256": "13ec7a44c341388e5251aceb3349cdbcf98621c94fb1e54e76576c85c309f009",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceFiniteSeparationCertificate.tailAllowance_pos",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceFiniteSeparationCertificate.lambda0_le_nu0_add_tail",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceFiniteSeparationCertificate.nu1_le_lambda1",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceFiniteSeparationCertificate.exists_finite_separation"
+  ],
+  "consumer": "WilsonSliceSpectralApproximation.finite_separation_logarithmic_gap premises hb and hsep",
+  "hypotheses": [
+    "NeZero L",
+    "Fixed beta > 0",
+    "Actual first/second variational values and compressed Taylor operators"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification of complete dependency chain",
+    "No explicit computed m or certified matrix enclosure",
+    "Regulator-uniform physical scaling and continuum construction"
+  ]
+}
