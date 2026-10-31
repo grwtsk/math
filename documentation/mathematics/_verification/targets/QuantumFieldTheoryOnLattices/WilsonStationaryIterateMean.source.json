@@ -1,0 +1,28 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonStationaryIterateMean.lean",
+  "source_base_commit": "b455f27647456be245602a57de42365acc1299ec",
+  "source_blob": "305487780e3d25291181eb41532268f379a7868c",
+  "sha256": "5a99f840ce6f30793a22bba65f334fd8acf92a03eca044496a1f375aac4ca5aa",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryIterateMean.evolve_eq_relative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryIterateMean.mean_evolve",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryIterateMean.mean_rowIterate",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryIterateMean.mean_bounds",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryIterateMean.centered_rowIterate"
+  ],
+  "hypotheses": "Nonzero finite L, beta>0, actual gauge-invariant principal vector; AE nonnegative and nonzero for positivity/balance, eigen-equation for normalization/stationarity, unit norm for probability.",
+  "consumer": "Actual stationary mean preservation and centered observable row iterates; no kernel-column or finite-loop conclusion.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
