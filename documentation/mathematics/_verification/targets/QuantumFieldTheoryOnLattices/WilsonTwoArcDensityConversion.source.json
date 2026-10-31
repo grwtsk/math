@@ -1,0 +1,27 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTwoArcDensityConversion.lean",
+  "source_base_commit": "280004ccc44a8a1108c9af5cc340d0600784209b",
+  "source_blob": "a207e5480d884ae270145ee25392f7397931149a",
+  "sha256": "0623d24e10cceb44f9eef4c61120a7b779ee446cdfdff708aea1496f7a614f1a",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoArcDensityConversion.stationary_integral",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoArcDensityConversion.stationary_double_integral",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoArcDensityConversion.two_density_cancel",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoArcDensityConversion.two_arc_density_integral"
+  ],
+  "hypotheses": "Nonzero finite L, beta>0, actual gauge-invariant principal vector; AE nonnegative and nonzero for positivity/balance, eigen-equation for normalization/stationarity, unit norm for probability.",
+  "consumer": "Actual double-density conversion for continuous endpoint observables and both directed positive arc powers; no normalizer-one or decay assumption.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
