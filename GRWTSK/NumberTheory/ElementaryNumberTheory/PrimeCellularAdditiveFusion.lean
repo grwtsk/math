@@ -83,4 +83,27 @@ theorem primeSeam_additive_source_return
     exact (primeSeam leftWord rightWord toLeft toRight).descend_inRight
       fromLeft fromRight hfit b
 
+/-- Prime-addressed SIGNED or nonlinear source observations are not
+automatically additive. If the chosen seam glues two original
+prime-address states that the observation distinguishes, there is
+NO exact descended observation on the fused group. -/
+theorem primeSeam_no_source_descent_of_collision
+    (leftWord rightWord : List PrimeIndex)
+    (toLeft : C →+ AtomicAddress leftWord)
+    (toRight : C →+ AtomicAddress rightWord)
+    {D : Type v}
+    (observe : AtomicAddress leftWord × AtomicAddress rightWord → D)
+    (x y : AtomicAddress leftWord × AtomicAddress rightWord)
+    (hglued :
+      (QuotientAddGroup.mk'
+        (primeSeam leftWord rightWord toLeft toRight).relation) x =
+      (QuotientAddGroup.mk'
+        (primeSeam leftWord rightWord toLeft toRight).relation) y)
+    (hdifferent : observe x ≠ observe y) :
+    ¬ (primeSeam leftWord rightWord toLeft toRight).FactorsObservation
+        observe :=
+  Seam.no_observation_descent_of_collision
+    (primeSeam leftWord rightWord toLeft toRight)
+    observe x y hglued hdifferent
+
 end GRWTSK.NumberTheory.ElementaryNumberTheory.PrimeCellularAdditiveFusion
