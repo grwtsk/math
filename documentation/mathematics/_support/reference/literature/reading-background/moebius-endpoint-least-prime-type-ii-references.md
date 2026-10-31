@@ -1,0 +1,16 @@
+# Literature ledger shard: least-prime endpoint Type II decomposition
+
+## RH-MOEBIUS-ENDPOINT-LEAST-PRIME-TYPE-II-01 (2026-10-31)
+
+- **Attribution:** grwtsk contributors.
+- **Research scope:** `6ae605b4-a7b4-83e8-9ada-ee9c9089476b`.
+- **New source:** `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointLeastPrimeTypeII.lean`, blob `fb77710105395da0394c930ef702b893f2f2f87f`.
+- **Review:** `documentation/mathematics/_support/reviews/moebius-endpoint-least-prime-type-ii.md`, blob `9d8a15ad3e434e8244f2caa318bfd889bed3f3d2`.
+- **Local result:** exact partition of the complete ordered Möbius endpoint cross sum into zero-tag rough, one-zero mixed, and two-nonzero least-prime Type II sectors; exact Möbius repeated-first-prime zero; nonrough diagonal bounded by the existing `2*T^2` endpoint diagonal; source-level transfer from a signed compensation certificate to eventual all-positive-rate endpoint control.
+- **New obstruction:** a fixed logarithmic saving `X/(log X)^c`, even with hypothetical uniform constants over the subexponential tag family, is `exp(T)/T^c` at `X=exp(T)` and is not an all-positive-rate error. Termwise absolute-value use also erases the negative compensation required by the exact sector identity.
+- **OpenAI comparator:** `openai/math@4eaee87548250b2682affda7d05d947c05554bae`, `lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean`, blob `2bd48811e73bbdc80c1f738fa889a14189186408`, theorem `OAI.OrdinaryTwoPointCorrelations.liouville_log_saving`. It gives one absolute logarithmic exponent for each fixed nonproportional affine pair, with a form-dependent constant. It does not state growing-family uniformity or the required signed physical-time compensation.
+- **Growing-shift comparison:** Jizhou Guo, *Quantitative Logarithmic Chowla Correlations Uniformly over Growing Shifts* (2026), arXiv:2608.23500, logarithmically weighted shifts `h <= (log x)^kappa`, `kappa < 1/700`; Scott D. Hughes, *Effective logarithmic two-point Chowla bounds in every window* (2026), arXiv:2609.28526, logarithmic windows with iterated-exponential parameter thresholds. Neither is promoted to an ordinary endpoint packet estimate.
+- **Sieve context:** Kevin Ford and James Maynard, *On the theory of prime producing sieves* (2024), arXiv:2407.14368. Type I/Type II necessity is structural background; no theorem from that paper is asserted to imply the GRWTSK causal packet bound.
+- **Novelty boundary:** the Möbius multiplicativity and squarefree facts, causal response, and cited correlation/sieve theorems are prior mathematics. The local contribution is the exact endpoint least-prime consumer decomposition, unique-tag diagonal elimination, compensation interface, and fixed-log-saving insufficiency at the unchanged all-rate target.
+- **Verification:** `SOURCE_PROOF_CANDIDATE / COMPILATION_NOT_RUN / EXPECTED_TYPES_NOT_RUN / FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN / EXTERNAL_THEOREM_REPLAY_NOT_RUN`. No complete endpoint bound, unsifted Liouville-energy bound, or RH proof.
+- **Canonical ledger:** this source-complete shard is additive. Do not replace the monolithic `paper-to-formalization-references.md` from a truncated connector response; integrate only through a source-complete append-capable edit.
