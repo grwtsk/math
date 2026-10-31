@@ -1,0 +1,26 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceResidualQuadraticBound.lean",
+  "source_base_commit": "0677d839125a0a09815d5032ac39171b5c359f18",
+  "source_blob": "dc2d3b94af7d82527d9fe53d39dc0b77aa9ff22a",
+  "source_sha256": "0183025d9ce2da9e8164a0b6dd551778e781e00a2c4d16fbac2b8d9fb4cee862",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualQuadraticBound.principal_weight_lower_bound",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualQuadraticBound.actual_residual_absolute_quadratic"
+  ],
+  "consumer": "Subsequent actual residual operator norm/spectral estimate",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Identification of residual integral operator with original invariant operator minus rank-one term",
+    "Symmetric-operator norm and normalized spectral estimate",
+    "Regulator-uniform physical scaling and continuum construction"
+  ]
+}

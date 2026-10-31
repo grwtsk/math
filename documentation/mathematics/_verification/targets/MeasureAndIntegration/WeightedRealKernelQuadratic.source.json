@@ -1,0 +1,30 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "28-XX",
+  "source_path": "GRWTSK/MeasureAndIntegration/WeightedRealKernelQuadratic.lean",
+  "source_base_commit": "0677d839125a0a09815d5032ac39171b5c359f18",
+  "source_blob": "a6caa8d610d2020c834ef671181ab72b5d75e914",
+  "source_sha256": "092f6b0d0a60e74f1a3e702291f74dc4fdbed9e417447542a6a4744a9681a62e",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.WeightedRealKernelQuadratic.weighted_amgm",
+    "GRWTSK.Analysis.Integration.WeightedRealKernelQuadratic.integrable_square",
+    "GRWTSK.Analysis.Integration.WeightedRealKernelQuadratic.integral_square",
+    "GRWTSK.Analysis.Integration.WeightedRealKernelQuadratic.integrable_weighted_square",
+    "GRWTSK.Analysis.Integration.WeightedRealKernelQuadratic.abs_product_quadratic_le",
+    "GRWTSK.Analysis.Integration.WeightedRealKernelQuadratic.abs_inner_operator_le"
+  ],
+  "consumer": "Actual Wilson residual-kernel weighted absolute-quadratic consumer",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Identification of residual integral operator with original invariant operator minus rank-one term",
+    "Symmetric-operator norm and normalized spectral estimate",
+    "Regulator-uniform physical scaling and continuum construction"
+  ]
+}
