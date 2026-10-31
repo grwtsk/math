@@ -1,0 +1,72 @@
+{
+  "title": "Divergence and curl: The language of Maxwell's equations, fluid flow, and more",
+  "byline": "Grant Sanderson",
+  "date": "2018-06-21",
+  "primary_url": "https://www.3blue1brown.com/lessons/divergence-and-curl/",
+  "retained_page_sha256": "dc32964b7e24cf3474874dd3f9ca42b456c92afed79fecd95f61a92e4516e5b9",
+  "animation_source": {
+    "url": "https://github.com/3b1b/videos/blob/306a1346a356c7a7b097875ceb51c5cd67d0a56c/_2018/div_curl.py",
+    "commit": "306a1346a356c7a7b097875ceb51c5cd67d0a56c",
+    "retained_sha256": "55c286fccc4c07328a0c3e1809c92e73d4da9335de71ba90597f12537fe39c2c",
+    "symbol": "Introduction.construct.div_func/curl_func",
+    "lines": "204-225",
+    "license": "CC BY-NC-SA4.0;LICENSE.txt read at same revision",
+    "scope": "Current pinned animation revision,not original2018 snapshot or spoken transcript"
+  },
+  "rotation_convention": {
+    "manim_current_commit": "fafa083a4fb274bba9cabde0b6e2f50ba6da0622",
+    "path": "manimlib/utils/space_ops.py",
+    "scope": "Current rotate_vector/rotation_about_z convention read-only;not a claimed historical dependency pin or floating-point refinement"
+  },
+  "source": "GRWTSK/OrdinaryDifferentialEquations/GeneralTheoryForOrdinaryDifferentialEquations/LinearOrdinaryDifferentialEquationsAndSystems/SourcePlanarFlowArea.lean",
+  "blob": "37f23339d67c71ee799f195ec71a6f894f205d92",
+  "namespace": "GRWTSK.ODE.SourcePlanarFlows",
+  "theorems": [
+    "radial_linear_coordinates",
+    "rotation_linear_coordinates",
+    "radial_linear_det",
+    "rotation_linear_det",
+    "radial_image_measure",
+    "rotation_image_measure",
+    "radial_pushforward",
+    "flow_rectangle_measure",
+    "flow_rectangle_real_area",
+    "radial_rectangle_measure",
+    "rotation_rectangle_measure",
+    "radial_rectangle_real_area",
+    "rotation_rectangle_real_area",
+    "radial_actual_area_rate",
+    "radial_actual_area_divergence"
+  ],
+  "scope": "Actual same-coordinate linear maps,Haar image measure scaling,actual Fin2 product-Lebesgue rectangle areas,and radial finite real image-area derivative=planar divergence times initial area.",
+  "hypotheses": "All real time and centers;rectangle halfwidths h,k>=0 for finite real area formulas. Fin2->R product Lebesgue throughout,no silent product-pair measure identification. General image formulas apply to all sets. Positive exp determinant supplies reciprocal pushforward nonzero premise.",
+  "method": "Actual matrix-to-linear-map coordinate and determinant bridges precede Haar image theorem;rectangle measure follows actual finite product intervals;finite real conversion precedes area derivative.",
+  "inherited_candidates": [
+    {
+      "commit": "a4210510ca1d4b228efcf47288207a47cc9d7706",
+      "blob": "1bd2fab225db58876aa47b9582a16978fa7c591e",
+      "role": "Actual planar coordinate trajectories/partial Jacobians/divergence,unchecked"
+    }
+  ],
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/MeasureTheory/Measure/Lebesgue/EqHaar.lean": "58e8db04a65a8f78caaa702d66a5ebab016edb0b",
+      "Mathlib/MeasureTheory/Measure/Lebesgue/Basic.lean": "84794cf74fa34664073bbf336adccdefb5bada62",
+      "Mathlib/LinearAlgebra/Determinant.lean": "986ae30a9d7245d1525fb35f1ffc55e0c22209f5",
+      "Mathlib/LinearAlgebra/Matrix/ToLin.lean": "e27ea745bb8ab9f7766890e55c6a48e85d89a370"
+    },
+    "role": "Haar linear image/pushforward and actual product interval measures;imported suppliers not fresh local acceptance"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Arbitrary ODE uniqueness,ambient3D/finite animation refinement and physical PDEs",
+    "Remaining exact animation examples/full spoken-video mapping and all source-bound checks"
+  ],
+  "video_verified_complete": false
+}
