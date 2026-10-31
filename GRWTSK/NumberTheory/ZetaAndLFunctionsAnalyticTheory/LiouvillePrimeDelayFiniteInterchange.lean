@@ -34,7 +34,10 @@ pickup responses. The nonzero source indices are positive. -/
 theorem fixedWaveform_continuous (T : ℝ) :
     Continuous (fixedWaveform T) := by
   unfold fixedWaveform
-  fun_prop (disch := omega)
+  apply continuous_finset_sum
+  intro n hn
+  exact continuous_const.mul
+    (pickupResponse_continuous n (Finset.mem_Icc.mp hn).1)
 
 /-- The original dynamic waveform is pointwise equal on [0,T] to the
 fixed continuous source. Shifted arguments below zero remain zero by
