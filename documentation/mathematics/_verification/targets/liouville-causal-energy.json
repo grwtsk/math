@@ -1,0 +1,31 @@
+{
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.LiouvilleCausalEnergy.coefficient_mul"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "expected_types": {
+        "GRWTSK.NumberTheory.LiouvilleCausalEnergy.coefficient_mul": "\u2200 m n : \u2115, GRWTSK.NumberTheory.LiouvilleCausalEnergy.coefficient (m * n) = GRWTSK.NumberTheory.LiouvilleCausalEnergy.coefficient m * GRWTSK.NumberTheory.LiouvilleCausalEnergy.coefficient n"
+      }
+    }
+  ],
+  "retained_metadata": {
+    "attribution": "grwtsk contributors",
+    "source_sha256": "e5f6a518f24e57d7f29f1edfb159caea1c5b3594962e6ac18c78cfe8c421e37e",
+    "open_target": "GRWTSK.NumberTheory.LiouvilleCausalEnergy.UniformEnergySupplier",
+    "target_proved": false,
+    "original_response": "GRWTSK.RiemannHypothesis.CCC.pickupResponse",
+    "verification": {
+      "compilation": "NOT_RUN",
+      "fresh_kernel_replay": "NOT_RUN",
+      "transitive_axiom_audit": "NOT_RUN",
+      "expected_interface": "NOT_RUN"
+    }
+  }
+}
