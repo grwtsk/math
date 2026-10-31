@@ -1,0 +1,56 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Dense signed Möbius complement: dyadic schedule, equivalence and geometric no-go",
+  "attribution": "grwtsk contributors",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseSignedGapComplementFrontier.lean",
+    "namespace": "GRWTSK.NumberTheory.MoebiusDenseSignedGapComplementFrontier",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "declarations": [
+      "eventualAllRateUpper_add",
+      "eventualAllRateUpper_of_le",
+      "sparse_negative_allRate",
+      "signedComplement_allRate_iff_pickupCross",
+      "quarter_eventualAllRateUpper",
+      "endpointSum_allRate_iff_pickupCross",
+      "signedComplement_allRate_iff_endpointSum",
+      "endpointSum_le_dense_signedComplement",
+      "dyadicSparseGapSchedule",
+      "dyadicSparseGapSchedule_card_le",
+      "DyadicScheduleSubexponential",
+      "dyadicScheduleSubexponential",
+      "dyadicDenseSignedSupplier_implies_endpoint_allRate"
+    ]
+  },
+  "predecessor": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointSparseGapAllRate.lean",
+    "blob": "a8216e7e18982dce97bacb8d42d301a022f4f28e",
+    "original_source": "pickupCross, endpointGapSetCross, signedGapComplement, endpointSum"
+  },
+  "quarter_error": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean",
+    "theorem": "endpointSum_error",
+    "allowance": "1/4"
+  },
+  "review": "documentation/mathematics/_support/reviews/moebius-dense-signed-gap-complement-frontier.md",
+  "schedule": "A(T)={2^j:0<=j<=floor(max T 0)} fixed before epsilon; #A<=T+1 for T>=0",
+  "mathematical_conclusion": "Under all-rate absolute sparse packet cost: one-sided all-rate signed dense complement iff pickupCross iff endpointSum; the result supplies no independent arithmetic saving.",
+  "hostile_fixture": "a(n)=1: for T>=log32, H_+(T)>=9/128 exp T; dense C_+(T)>=9/128 exp T-(2T+3)(4T+2T^2), hence eventually >=9/256 exp T; not actual Moebius.",
+  "unproved": [
+    "Independent signed dense-gap arithmetic estimate for actual Moebius",
+    "Unconditional all-positive-rate causal energy",
+    "RH"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "jobs": "NOT_DISPATCHED"
+  },
+  "guardrails": {
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED",
+    "force": false
+  }
+}
