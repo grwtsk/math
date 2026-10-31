@@ -1,0 +1,35 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSlicePositivityImproving.lean",
+  "source_base_commit": "38cda23675220abe3968f823e6f66de0172e2c04",
+  "source_blob": "79fdd40ce733467c665900c4620c7d5d451377c1",
+  "source_sha256": "7b356041e667d5696d971849a0bb4f94814066003821a1fc96364a161e292746",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePositivityImproving.integral_pos_of_nonnegative_ne_zero",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePositivityImproving.kernelRepresentative_lower_mass",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePositivityImproving.kernelRepresentative_pos",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePositivityImproving.operator_strictly_positive_ae",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePositivityImproving.invariantOperator_strictly_positive_ae"
+  ],
+  "consumer": "Actual gauge-invariant principal-eigenvector positivity route",
+  "hypotheses": [
+    "NeZero L",
+    "beta >= 0",
+    "Actual real slice L2 input nonnegative AE and nonzero"
+  ],
+  "constant": "exp(-12 beta L^3), regulator/coupling dependent",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Principal eigenspace simplicity",
+    "Finite separation",
+    "Regulator-uniform physical gap and continuum construction"
+  ]
+}
