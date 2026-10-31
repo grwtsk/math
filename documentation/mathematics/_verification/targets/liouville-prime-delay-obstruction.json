@@ -1,0 +1,167 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Prime-delay obstructions for the original Liouville causal energy",
+  "attribution": "grwtsk contributors",
+  "review_base": {
+    "branch": "main",
+    "commit": "4a0a4223f6af5933ae8689bf33d59adb76e269fb",
+    "tree": "a05329936fea56e3289acba5bc12717e86d0d1f5"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayObstruction.lean",
+    "blob": "0f4b1fa7f5fa69b3d8fa8b2ab2bef4abeec7c574",
+    "namespace": "GRWTSK.NumberTheory.LiouvillePrimeDelayObstruction",
+    "new_declarations": [
+      "causalWaveform",
+      "causalEnergy",
+      "ExactPrimeDelayAt",
+      "ExactPrimeDelaysOn",
+      "IsPrimeSet",
+      "SparsePrimeSetAt",
+      "PositiveMeanWithPowerError",
+      "ExponentialCausalEnergyLowerBound",
+      "SparsePrimeDelayCountermodel",
+      "InfiniteSparsePrimeDelayObstruction",
+      "primeTwoSign",
+      "primeTwoSign_mul",
+      "primeTwoSign_two",
+      "primeTwoSign_double",
+      "primeTwoSign_eq_one_or_neg_one",
+      "primeTwoSign_sq",
+      "primeTwo_doubling_product",
+      "primeTwoSign_exactDelay",
+      "PrimeTwoCausalEnergyLowerBound"
+    ],
+    "proved_scope": [
+      "complete multiplicativity of the two-adic sign away from zero",
+      "exact negative doubling delay",
+      "unit-square coefficient identity",
+      "perfect coefficient anticorrelation on every doubling edge",
+      "satisfaction of the exact one-prime delay interface"
+    ],
+    "open_named_propositions": [
+      "PrimeTwoCausalEnergyLowerBound",
+      "InfiniteSparsePrimeDelayObstruction"
+    ],
+    "claim": "Source proof candidate for finite prime-two coefficient algebra and exact formal statements of the finite, prime-two and sparse-unbounded-prime causal-energy obstructions; no actual-Liouville cancellation theorem"
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-method-comparison-and-prime-delay-obstructions.md",
+    "blob": "0add9dd09cc9a6588e010179079498cec4393196",
+    "claims": [
+      "Exact method comparison against the unchanged all-positive-rate causal-energy target",
+      "One-point prefix-to-energy loss 4*A^2*eta^(-3)",
+      "Short-window zero-mode exponent 1-alpha+beta with all boundary qualifications",
+      "Sharp norm-only prime-delay inverse obstruction",
+      "Finite-prime completely multiplicative positive-mean countermodel",
+      "Explicit prime-two causal-energy lower bound ((sqrt 2 - 1)^2/16)*(exp T - 8)",
+      "Infinite sparse-prime exact-delay countermodel with explicit B, c and threshold constants",
+      "Finite weighted prime coverage diagonal floor",
+      "Double-Abel complete-average transfer loss 2*C_epsilon+4/epsilon+4/epsilon^2"
+    ]
+  },
+  "upstream": {
+    "original_liouville_target": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean",
+      "blob": "a00aaa07c067b4c88203372870b5d5d151de0de4"
+    },
+    "double_abel_kernel": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelCausalKernel.lean",
+      "blob": "b102b4af07b0a1001424b084101c2cc16077181a"
+    },
+    "analytic_gates": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean",
+      "blob": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4"
+    },
+    "polynomial_moment": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelPolynomialMoment.lean",
+      "blob": "30c71b912487b98a1a341d6010cb28e75c6798f7"
+    }
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "paper_comparison": [
+    {
+      "title": "Multiplicative functions in short intervals",
+      "authors": "Kaisa Matomäki; Maksym Radziwiłł",
+      "year": 2016,
+      "doi": "10.4007/annals.2016.183.3.6",
+      "use": "Almost-all short-interval cancellation; does not supply the all-N cyclic variance premise"
+    },
+    {
+      "title": "The logarithmically averaged Chowla and Elliott conjectures for two-point correlations",
+      "authors": "Terence Tao",
+      "year": 2015,
+      "arxiv": "1509.05422",
+      "use": "Fixed-form logarithmic two-point cancellation; does not directly supply growing-prime-band physical-time covariance"
+    },
+    {
+      "title": "Higher uniformity of bounded multiplicative functions in short intervals on average",
+      "authors": "Kaisa Matomäki; Maksym Radziwiłł; Terence Tao; Joni Teräväinen; Tamar Ziegler",
+      "year": 2023,
+      "doi": "10.4007/annals.2023.197.2.3",
+      "use": "Averaged higher uniformity; no all-horizon zero-mode supplier"
+    },
+    {
+      "title": "Improved bounds for multiplicative functions in almost all short intervals",
+      "authors": "Siddarth Menon",
+      "year": 2026,
+      "arxiv": "2607.15574",
+      "use": "Improves almost-all bounds without removing the all-N requirement"
+    },
+    {
+      "title": "Sur les fonctions arithmétiques multiplicatives",
+      "authors": "Hubert Delange",
+      "year": 1961,
+      "doi": "10.24033/asens.1103",
+      "use": "Classical context for nonzero mean of sparse-prime multiplicative signs"
+    },
+    {
+      "title": "Über die Mittelwerte multiplikativer zahlentheoretischer Funktionen",
+      "authors": "Gábor Halász",
+      "year": 1968,
+      "doi": "10.1007/BF01894515",
+      "use": "Classical mean-value and pretentiousness context; no programme-specific causal bound imported"
+    }
+  ],
+  "open_formalization": [
+    "Compile the primeTwoSign padic-valuation declarations against the pinned Mathlib API",
+    "Formalize the decreasing finite two-adic tower response and the explicit prime-two waveform lower bound",
+    "Formalize the infinite sparse prime-set construction and Euler-product convergence",
+    "Formalize the convolution floor and tail estimate with constants B_{S,rho} and c_S",
+    "Formalize Abel transport from the positive mean estimate to the causal-energy lower bound",
+    "Formalize the finite weighted prime-coverage diagonal-floor identity"
+  ],
+  "open_arithmetic": [
+    "Derive the actual Liouville growing-prime-band signed covariance identity before inequalities",
+    "Quantify omitted-prime, repeated-prime, unsifted, zero-birth collar and exceptional-set costs",
+    "Carry any resulting gain through the exact positive mixed-difference kernel and polynomial moment",
+    "Do not substitute finite or merely unbounded sparse prime-delay identities for quantitative prime-band mass"
+  ],
+  "verification": {
+    "source_bytes": "LOCALLY_RECONCILED_BEFORE_PUBLICATION",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN"
+  },
+  "authority": {
+    "local_checkout": "ABSENT",
+    "local_shared_git_lock": "NO_LOCAL_GIT_DIRECTORY_PRESENT",
+    "publication_mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "native_verification": "NOT_DISPATCHED",
+    "root_import": "UNCHANGED"
+  },
+  "commands_for_separately_authorized_clean_checkout": [
+    "git checkout --detach <published_commit>",
+    "test \"$(cat lean-toolchain)\" = \"leanprover/lean4:v4.34.1\"",
+    "grep -F 'd13f23b723b8a846827a245b89c10fc7d3f11612' lake-manifest.json",
+    "lake env lean --version",
+    "lake env lean -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayObstruction.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayObstruction.lean",
+    "check exact expected types and #print axioms for every theorem in GRWTSK.NumberTheory.LiouvillePrimeDelayObstruction",
+    "audit the transitive imports for sorryAx, new research axioms, native trust and omitted required modules"
+  ]
+}
