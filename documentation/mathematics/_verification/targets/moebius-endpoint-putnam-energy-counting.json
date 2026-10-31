@@ -1,0 +1,120 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Putnam-style counting and causal endpoint energy localization",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "publication": {
+    "expected_parent": "ecce9626a85ab9a0543a90c766ee2ee7a6f3b230",
+    "base_tree": "7203298b9da2dbd5986bddb749d67207a3249c68",
+    "mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamEnergyCounting.lean",
+    "blob": "e04dc68d2ca268d88d43725d0963c5414d216c6d",
+    "sha256": "342317250914a4a8f96cac20d5ddea3da3513822a3795703989fd907c6d30b81",
+    "namespace": "GRWTSK.NumberTheory.MoebiusEndpointPutnamEnergyCounting",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusEndpointTerminalGapLocalization",
+      "Mathlib"
+    ],
+    "proved_scope": [
+      "pickupCross_eq_gap_birth_core",
+      "two_abs_mul_le_sq_add_sq",
+      "tunedTerminalBirthStripBound_to_allRate",
+      "endpointSum_le_gap_birth_core",
+      "putnamCoreEndpointReturn",
+      "pureDegreeEnergyDenseNoGo"
+    ],
+    "open_named_propositions": [
+      "EndpointMobiusGramYoung",
+      "GapSetNeighbourCount",
+      "PutnamGapEnergyBound",
+      "PutnamGapQuadraticBound",
+      "PutnamRateGapSectorAllRate",
+      "TerminalBirthStripAbsoluteBound",
+      "TunedTerminalBirthStripBound",
+      "TunedTerminalBirthOutsideGapAllRate",
+      "PutnamCoreEndpointSupplier",
+      "PutnamEnergyCountingDisposition"
+    ]
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-endpoint-putnam-energy-counting.md",
+    "blob": "ecd0ee17b6ff076b1c6edf756e88dba1f9486bbd",
+    "sha256": "d70c9366cc6331245d7bf2ab879c12581dd9c930c0d49a491cc8f82cbf7b66f6"
+  },
+  "ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/moebius-endpoint-putnam-energy-counting-references.md",
+    "blob": "9aa459842030315938caa8e5f316c9b5aa784d33",
+    "sha256": "f1f72a8c843a01edd07fcd9d93e18b05fae9354406f8651828e1f03d2343319b",
+    "canonical_monolith_status": "SHARD_PUBLISHED_MONOLITH_UNCHANGED"
+  },
+  "local_upstream": {
+    "MoebiusEndpointTerminalGapLocalization.lean": "57d3ec28d0fd5c57e979981746ae6f85c921eba6",
+    "MoebiusEndpointGapLocalization.lean": "d625b45178651e474f54ca4b49abda0a8676e154",
+    "MoebiusEndpointLeastPrimeTypeII.lean": "fb77710105395da0394c930ef702b893f2f2f87f",
+    "PickupEndpointQuadrature.lean": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+    "GoodScaleEnergyCriterion.lean": "ca3ae4975b20cf796a167308a9e87546c6001c41",
+    "MertensPrimitive.lean": "45e06c371d67bcf8c939d20a95fcbc63570546fa"
+  },
+  "mathematical_claims": [
+    "For every finite additive-gap set A, |X_A(T)| <= 2*|A|*pickupDiagonal(T) <= 4*|A|*T^2.",
+    "The gap bound depends on cardinality, not gap magnitude.",
+    "The cutoff floor(exp(epsilon*T/2)) is all-positive-rate.",
+    "After excluding selected gaps, every pair touching the final M births costs at most 16*M^3/floor(exp T)^2 when 2*M<=floor(exp T).",
+    "At M=floor(exp(2T/3)) the terminal-birth sector is eventually at most 64.",
+    "The remaining signed core has gap greater than exp(epsilon*T/2)+O(1) and maximum index at most floor(exp T)-exp(2T/3)+O(1).",
+    "A dense constant positive Gram saturates the degree-times-energy factor; this is a method obstruction, not a Möbius counterexample."
+  ],
+  "external_comparison": [
+    {
+      "source": "Jizhou Guo, arXiv:2608.23500v4",
+      "scope": "logarithmically weighted full-shift correlations outside a power-log sparse exceptional set; no ordinary dense-core endpoint estimate"
+    },
+    {
+      "source": "Scott D. Hughes, arXiv:2609.28526",
+      "scope": "effective logarithmic affine-window correlations; no ordinary dense-core endpoint estimate"
+    },
+    {
+      "source": "openai/math@4eaee87548250b2682affda7d05d947c05554bae",
+      "scope": "fixed ordinary affine forms with form-dependent constants; termwise dense-core summation remains exponent one"
+    }
+  ],
+  "disposition": {
+    "new_programme_specific_upper_estimate": true,
+    "complete_endpoint_estimate": false,
+    "uniform_energy_proved": false,
+    "riemann_hypothesis_proved": false,
+    "remaining_supplier": "endpointPutnamCoreCross(A_epsilon(T),floor(exp(2T/3)),T) <= C_epsilon*exp(epsilon*T)"
+  },
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "external_theorem_replay": "NOT_RUN",
+    "dense_core_supplier": "UNPROVED",
+    "complete_endpoint_estimate": "UNPROVED",
+    "uniform_energy": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamEnergyCounting.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamEnergyCounting.lean",
+    "check exact expected types and #print axioms for the complete namespace",
+    "audit the complete endpoint-to-RH transitive import closure"
+  ]
+}
