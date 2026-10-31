@@ -1,0 +1,78 @@
+{
+  "schema": "grwtsk.scoped-mathematical-acceptance/1",
+  "attribution": "grwtsk contributors",
+  "math_commit": "7feadd0272425f5a745991e547a6c4cb5ff0b0a3",
+  "registry_sha256": "40ea71b9c2d304fad41921219b5f7705d385f94929d9f8b43911008c7d30c6b6",
+  "receipt_sha256": "db3dce7f2a2226a39bc52f101aea1745263a1141ca34c3ed2fd14e6fc5f9a074",
+  "receipt_location": "Noe external runtime: formalization/erdos138/analytic-combined-run-1/receipt.json",
+  "scope": "Eight local controls only; no full Erdos 138 proof",
+  "fresh_unique_source_modules": 1945,
+  "host_config_restored": true,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "contracts": [
+    {
+      "source": "GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/BernoulliUnionBudget.lean",
+      "blob": "d83346f39c5ecc8fad0931a65a1a86abdad6cad0",
+      "axioms": {
+        "GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.bernoulliUnionEnvelope_eq_exp": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.bernoulliUnionEnvelope_lt_one_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.normalized_log_lt_of_union_budget": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.one_lt_unionEnvelope_of_exponential_scale": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "source": "GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/FiniteProgressionCensus.lean",
+      "blob": "8404a6467a3e4529ae137f3526d549f4409d9b6d",
+      "axioms": {
+        "GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.WindowAP.point_injective": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.WindowAP.point_strictMono": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.exists_windowAP_of_endpoint": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.windowAP_card_le": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "exact_type_consumer": "NOT_REQUESTED",
+  "toolchain_boundary": "Pinned installed Lean4.34.1 compiled core/Std/Lean; not source-rebuilt",
+  "next_mathematical_obligations": [
+    "Actual Bernoulli law for distinct progression coordinates",
+    "Union bound connecting event law and census",
+    "Quantitative improvement beyond exponential scale",
+    "Exact positive-interval kth-root limit"
+  ],
+  "full_erdos138_proof": false
+}
