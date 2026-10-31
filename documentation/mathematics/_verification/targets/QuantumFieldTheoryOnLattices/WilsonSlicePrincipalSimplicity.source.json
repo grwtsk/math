@@ -1,0 +1,33 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSlicePrincipalSimplicity.lean",
+  "source_base_commit": "4f88286f0f91cbb586759990a22e856235d9021e",
+  "source_blob": "933b2eea2f275e737b852f02b182ef807436e1c2",
+  "source_sha256": "d441425eae0faccd330137c436668dedb469f903f2bf992e5012692f315a57de",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalSimplicity.nonnegative_orthogonal_positive_eq_zero",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalSimplicity.principal_orthogonal_eq_zero",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalSimplicity.principal_eq_scalar",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalSimplicity.exists_unit_principal_spanning"
+  ],
+  "consumer": "Qualitative spectral separation on the orthogonal complement of the actual principal eigenspace",
+  "hypotheses": [
+    "NeZero L",
+    "beta > 0 for constructed unit spanning vector",
+    "Actual gauge-invariant real L2 operator and actual lambda0"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Qualitative strict second-value separation",
+    "Quantitative finite separation",
+    "Regulator-uniform physical scaling and continuum construction"
+  ]
+}
