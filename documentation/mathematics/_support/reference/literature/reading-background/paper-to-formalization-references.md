@@ -3988,3 +3988,38 @@ obligations have declarationwise coverage across this scalar receipt and the
 source41 retention/enumeration receipt, with separate source pins. This does not
 establish Python/JSON or optimizer refinement, inventory completeness, a global
 storage minimum, a uniform SAT algorithm or reduction, or ETH. ETH is unresolved.
+
+
+## Erdős 138 — exact event-count verification (2026-10-31)
+
+Local byline: grwtsk contributors. This is an elementary finite counting bridge,
+not a new paper theorem or the full Erdős 138 construction. At source commit
+`8f99d1b43b6fa83e520398c3616bf2ae5208ecc7`,
+`GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColorEventCount.lean`
+has blob `2628d267a9603d80bc74a47525ba791e41846fd3`.
+
+The explicit restriction/fill bijection identifies Boolean assignments fixed to
+color b on a finite support S in Fin N with arbitrary assignments on its
+complement, proving exactly 2^(N-card S) assignments. For WindowAP N k, the
+positive-step coordinate injection proves support cardinality k, giving 2^(N-k).
+The declarations are `GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.fixedColorAssignments_card`,
+`GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.WindowAP.support_card`, and
+`GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.WindowAP.fixedColor_card`.
+No event independence is used. The complement bijection is the primary argument;
+it is not an independent analytic proof of superexponential growth. When k=0,
+the two color-event descriptions coincide, so a later disjoint-color argument
+must retain nonempty support.
+
+Actual maintained command: `managed_contract_replay.py run --registry event-registry-1.json --output event-run-1 --reuse-enabled-idle-host --activation-wait-seconds 21600`
+from Noe's maintained Lean environment owner; registry and output are external.
+Registry SHA-256 `943af70e645490c3b251dc7a14df91ed9dfe88a52b74ec720f7f1a4c85432a83`;
+terminal receipt SHA-256 `3cc4a675a470e08de70f29854d9f21d46f54a4b9080f6794f57ec01661dcd0a3`.
+All 759 unique source modules passed, the target exited zero, all three named
+transitive axiom reports contained only propext, Classical.choice and Quot.sound,
+and host restoration passed. No expected-type consumer was requested. Installed
+Lean 4.34.1 remains the pinned compiled boundary. Verified Lean bytes are unchanged.
+
+This qualifies the stated finite bridge only. Probability normalization, the
+disjoint two-color union, actual union bound, and a quantitative GRWTSK
+improvement beyond exponential growth remain missing. No full kth-root theorem,
+independent construction, novelty or bounty eligibility follows from this receipt.
