@@ -1,0 +1,119 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Sharp causal square-divisor reverse counting: literal pickup return, harmonic cutoff growth and open spectral arithmetic frontier",
+  "byline": "grwtsk contributors",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleSquareDelaySharpness.lean",
+    "blob": "02d321b127a1a1020a9312f0c15fdb4b4d71e737",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "candidate_theorems": [
+      "GRWTSK.NumberTheory.LiouvilleSquareDelaySharpness.cutoff_delay_nonneg",
+      "GRWTSK.NumberTheory.LiouvilleSquareDelaySharpness.cutoff_causal_constant_harmonic",
+      "GRWTSK.NumberTheory.LiouvilleSquareDelaySharpness.cutoff_causal_constant_ge_half_time",
+      "GRWTSK.NumberTheory.LiouvilleSquareDelaySharpness.cutoff_causal_constant_le_one_add_half_time",
+      "GRWTSK.NumberTheory.LiouvilleSquareDelaySharpness.cutoff_causal_exponential_multiplier",
+      "GRWTSK.NumberTheory.LiouvilleSquareDelaySharpness.finite_square_delay_pickup"
+    ]
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-square-delay-sharpness.md",
+    "blob": "70c68e6ff956d25b6005304f9dfa64fc6d80f428",
+    "scope": "Complete independent mathematical argument and source comparison; not Lean acceptance"
+  },
+  "exact_dependency_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleSquareDivisorReverseCounting.lean",
+      "blob": "feae1ca93e3a21ebc033da05e14fe1e2f77c6b2d"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean",
+      "blob": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelCausalKernel.lean",
+      "blob": "b102b4af07b0a1001424b084101c2cc16077181a"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean",
+      "blob": "a00aaa07c067b4c88203372870b5d5d151de0de4"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/FiniteResponseSum.lean",
+      "blob": "15402baec3be3c090a23f9ac1943124e16357dd0"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa"
+    }
+  ],
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "pinned_mathlib_harmonic": "Mathlib.NumberTheory.Harmonic.Bounds",
+    "external_classical_reference": "https://dlmf.nist.gov/27.4"
+  },
+  "mathematical_results": {
+    "scalar_pointwise": "For u>=0, u/2 <= S_1(causalConstant)(u) <= 1+u/2",
+    "finite_horizon_operator": "For T>0, T/sqrt(12) <= ||S_1||_(L2[0,T]) <= 1+T/2; mathematical proof, not Lean encoded",
+    "weighted_halfline_operator": "For sigma>0, ||S_1||_(L2_sigma([0,infinity))) = zeta(1+sigma); mathematical proof, not Lean encoded",
+    "spectral_multiplier": "zeta(1+sigma+2i xi) for sigma>0 on arbitrary L2_sigma input; reverse multiplier 1/zeta; mathematical proof, not Lean encoded",
+    "original_source_applicability": "Unconditional global weighted L2 spectral identities for sigma>1 only; for 0<sigma<=1 require explicit source L2 membership",
+    "laplace_original_source": "On Re z>1/2, L[F_mu]=1/(z(z+1/2)zeta(z+1/2)); L[F_lambda]=zeta(2z+1)/(z(z+1/2)zeta(z+1/2)); mathematical proof, not Lean encoded",
+    "signed_arithmetic_upper": "OPEN",
+    "riemann_hypothesis": "OPEN"
+  },
+  "exact_checks": [
+    "Verify original response scaling and complete signed original source importing definitions; do not replace pickupResponse",
+    "Check positive-index source labels, zero-time and negative-time cutoff, and endpoint d=exp(u/2)",
+    "Check Nat.le_floor_iff and Real.log_le_iff_le_exp pinned signatures for cutoff_delay_nonneg",
+    "Check harmonic_eq_sum_Icc and Rat.cast normalization with log_le_harmonic_floor/harmonic_floor_le_one_add_log",
+    "Check finiteMellinMultiplier algebra, arbitrary signed a(d) and exact causal exponential at its cutoff",
+    "Check finite_square_delay_pickup literal d*d*k factor and nonpositive-time behavior",
+    "Separate arbitrary causal-constant witness from the actual pickup response r_1(0)=0; do not transfer hostile lower bound to Liouville",
+    "Keep global weighted L2 formula conditional for actual waveforms at 0<sigma<=1; no hidden RH assumption",
+    "Check full imported closure, expected theorem types and permitted axioms without sorryAx or new research axioms"
+  ],
+  "finite_diagnostics": {
+    "method": "Private finite arithmetic/numerical diagnostics, not Lean nor all-scale verification",
+    "horizon_grid_D": [
+      2,
+      3,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256
+    ],
+    "example_D": 256,
+    "finite_constant_norm_ratio_approx": 3.7159,
+    "rigorous_lower_at_D_approx": 3.2015,
+    "weighted_truncated_test": {
+      "sigma": 0.5,
+      "D": 120,
+      "L": 256,
+      "normalized_ratio_approx": 2.4174,
+      "finite_multiplier_mass_approx": 2.4302
+    }
+  },
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "independent_complete_lean_replay": "NOT_RUN"
+  },
+  "authority": {
+    "native_verifier_dispatch": "NOT_DISPATCHED",
+    "root_build": "UNCHANGED",
+    "existing_signed_sources": "UNCHANGED",
+    "noe_automation": "NOT_DISPATCHED",
+    "local_shared_index_lock": "NOT_TOUCHED"
+  },
+  "canonical_noe_skill": {
+    "revision": "8d7f2bad4967462f6078bdd1df4a7e37604321d2",
+    "source_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "role": "Passive source-scope/evidence boundaries only; no native automation invoked"
+  }
+}
