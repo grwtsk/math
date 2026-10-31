@@ -1,0 +1,36 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTemporalHistoryIntegral.lean",
+  "source_base_commit": "7feadd0272425f5a745991e547a6c4cb5ff0b0a3",
+  "source_blob": "9a9ac1ccee9529bea1f9c2feda899830cfe10db0",
+  "source_sha256": "6bf038235b23df49c388b548d1604ad6911a4de65fd5f0e5d0a4540d0ffb0338",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.layerFactor",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.historyFactor",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.continuous_layerFactor",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.integrable_layerFactor",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.continuous_historyFactor",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.integrable_historyFactor",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.integral_temporal_product"
+  ],
+  "hypotheses": [
+    "NeZero L",
+    "real beta, arbitrary actual spatial history",
+    "actual temporalHistoryHaar finite product measure"
+  ],
+  "consumer": "Actual periodic Wilson marginal and observable insertion comparison",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Actual Boltzmann temporal integration and partition normalization",
+    "Spatial observable insertion comparison",
+    "Trace-class and periodic covariance representation",
+    "Uniform physical scaling and continuum reconstruction"
+  ]
+}
