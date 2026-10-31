@@ -2,6 +2,31 @@
 
 Local attribution: grwtsk contributors.
 
+## Subsequent distinction: the reflected shared LOWER shadow is a pullback
+
+The local additive fusion studied below remains valid as a PUSHOUT
+when a common seam C maps into A and B. That is not the same
+construction as two distinct objects CASTING isomorphic lower
+shadows. The latter is now specified in
+[Shared-shadow symplectic reification](shared-shadow-symplectic-reification-disposition.md).
+
+For the reflective model, A and B map OUT to respective lower
+observations L and R, related by a proven L ≃+ R. Their
+source-retaining relationship is the subgroup of A × B of
+matched lower observations (a pullback), not a quotient
+identifying two upper states. The shadows may be constructed
+from genuine isomorphic additive codes while the full sources
+remain nonisomorphic. The complete record retains BOTH sources;
+the shared shadow by itself has a proved collision obstruction.
+A vertical symplectic form requires an explicitly supplied
+perfect dual pairing; its coefficient and prismatic interpretation
+are further separate mathematical obligations.
+
+The earlier additive-pushout and certified-path results are
+preserved as distinct useful mathematics, not retroactively
+reinterpreted as a pullback.
+
+
 **Mathematical disposition:** exact finite algebraic analysis and three published
 Lean SOURCE_PROOF_CANDIDATE modules; compilation NOT_RUN, fresh kernel replay
 NOT_RUN, transitive axiom audit NOT_RUN, and full expected-interface checks
