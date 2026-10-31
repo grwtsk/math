@@ -1,0 +1,53 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Original causal weighted double-Abel cubic moment",
+  "attribution": "grwtsk contributors",
+  "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelPolynomialMoment.lean",
+  "blob": "30c71b912487b98a1a341d6010cb28e75c6798f7",
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-double-abel-polynomial-moment.md",
+    "blob": "bc2f541f871d8cce65fda90df1f55becc358b815"
+  },
+  "parents": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean",
+      "blob": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelCausalKernel.lean",
+      "blob": "b102b4af07b0a1001424b084101c2cc16077181a"
+    }
+  ],
+  "lean": "leanprover/lean4:v4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "claim": "Lean SOURCE PROOF CANDIDATE for sqrtWeightedOmegaMoment N <= 4 log N * (1+log N)^2, N>=2; not compiler- or kernel-verified",
+  "checks": [
+    "Verify Finset.sum_ite/filter orientation k<=p, not p<=k",
+    "Verify Mathlib sqrt and inv coercions, sqrt_mul, harmonic_le_one_add_log",
+    "Verify intervalIntegral.integral_mono_on and source continuous response",
+    "Verify source omega positivity and full finite double telescope",
+    "Verify all cast/mul/sum lemmas and polynomial coefficients against the exact original kernel",
+    "Check axiom closure, no sorryAx, and full original source path",
+    "Full signed arithmetic rectangle supplier remains open"
+  ],
+  "commands_for_separately_authorized_verifier": [
+    "git checkout --detach <published_commit>",
+    "lake env lean --version",
+    "lake env lean -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelPolynomialMoment.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelPolynomialMoment.lean",
+    "lake env leanchecker --help",
+    "#print axioms GRWTSK.NumberTheory.LiouvilleDoubleAbelPolynomialMoment.sqrtWeightedOmegaMoment_le_coarse"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN"
+  },
+  "authority": {
+    "local_lock": "NOT_TOUCHED",
+    "native_execution": "NOT_DISPATCHED",
+    "root_build": "UNCHANGED",
+    "underlying_arithmetic_premise": "OPEN"
+  }
+}
