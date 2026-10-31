@@ -220,6 +220,44 @@ current finite incidence matrix to a prismatic complex,
 no comparison quasi-isomorphism, no target vanishing theorem,
 and no new zeta analytic bound.
 
+## 4a. Actual completed 2-adic coefficient ring, with precise limit
+
+The subsequent source candidate
+GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/
+NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/
+DyadicPadicIntCompletion.lean (Git blob
+c81a0d284366fb1e7fd3344ea3d0031e8da579ff)
+takes the coefficient ring to ACTUAL Mathlib PadicInt 2.
+The source does not define a toy finite 2-adic replacement.
+Mathlib's PadicIntegers.lean constructs this ring and
+its CompleteSpace instance.
+
+The literal integer-to-PadicInt cast now carries
+every signed Möbius coefficient, every ordered
+dyadic matrix entry, and every finite integer
+coboundary into the complete ring. The exact
+mod-two digit-plus-integer-carry identity also
+survives in PadicInt 2. The entire source
+matrix is equal to its cast, not inferred
+from a mod-two image.
+
+The statement padic_signedCoboundary_frobenius_of_delta
+requires an ACTUAL TorsionFreeDeltaStructure 2 (PadicInt 2)
+as a separate input; it does NOT construct that δ-operator.
+The underlying complete ring is now concretely typed,
+but complete-space status alone does not discharge the
+oriented crystalline prism ideal, derived-completeness
+upgrade, full cochain complex or cohomological comparison.
+
+This is the first genuine mathematical passage from
+integer Möbius coefficients to the completed 2-adic
+source coefficient ring. It is still NOT a proved
+prismatic comparison to the canonical zeta trace.
+No scalar map from all of PadicInt 2 into real-valued
+pickupResponse is invented. The real source is compared
+only through the exact integer lift and original
+real response weights in DyadicModTwoPairLift.
+
 ## 5. Symplectic fiber and lossless coding compatibility
 
 SharedShadowVerticalSymplectic supplies a NONDEGENERATE
