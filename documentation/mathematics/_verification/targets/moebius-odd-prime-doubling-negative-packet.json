@@ -13,10 +13,16 @@
       "pickupResponseGram_nonneg",
       "pickupResponseGram_symmetric",
       "oddPrimeDoublingPacket_nonpos",
+      "oddPrimeDoublingPacket_allRate",
       "remainingDenseSignedPacket",
       "denseComplement_eq_negativePacket_add_remainder",
       "endpointSum_le_sparse_and_remaining",
       "endpointSum_le_dyadic_remaining"
+    ],
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDenseSquarefulZeroPacket",
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleDoubleAbelAnalyticGates",
+      "Mathlib"
     ]
   },
   "review": "documentation/mathematics/_support/reviews/moebius-odd-prime-doubling-negative-packet.md",
