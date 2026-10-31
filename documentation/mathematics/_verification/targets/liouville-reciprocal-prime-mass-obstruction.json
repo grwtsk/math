@@ -1,0 +1,178 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Reciprocal-prime-mass obstruction for the original Liouville causal energy",
+  "attribution": "grwtsk contributors",
+  "review_base": {
+    "branch": "main",
+    "commit": "c2a00d1676f082c51b1699fb339c4945ba42a734",
+    "tree": "3bd7364879fd020347582913d7a677de116b445d"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleReciprocalPrimeMassObstruction.lean",
+    "blob": "3da18f04925fa206249ff81433de413de97f4104",
+    "sha256": "10e7fba211dc1f5d9ac1bff499da4c38d60bfd0188d5b7b1cf7d7316088ede62",
+    "namespace": "GRWTSK.NumberTheory.LiouvilleReciprocalPrimeMassObstruction",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvillePrimeDelayObstruction",
+      "Mathlib"
+    ],
+    "proved_scope": [
+      "projection of infinitude from ReciprocalSparsePrimeSet",
+      "projection of the prime-set property",
+      "projection of reciprocal summability",
+      "projection of exact selected-prime delay from the mean-model record"
+    ],
+    "open_named_propositions": [
+      "InfiniteReciprocalSparsePrimeDelayObstruction",
+      "FiniteWeightedCoverageLowerBound",
+      "ReciprocalCoverageDiagonalFloor"
+    ],
+    "claim": "Source proof candidate for the reciprocal-prime-mass obstruction and exact finite-band diagonal-floor interfaces; no actual-Liouville cancellation theorem"
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-reciprocal-prime-mass-obstruction.md",
+    "blob": "1ee1e64781b4efabc28b9f7a9a5a556b83887d21",
+    "sha256": "952ff3a30d5e62e7ea46ec191c66d02ff1ae2e8428978c629893c7a7fda13305",
+    "claims": [
+      "Positive mean from sum_{p in S} 1/p < infinity by an elementary absolutely convergent convolution argument",
+      "Original causal energy lower bound (c_S^2/16)*(exp T-exp T0)",
+      "Necessity of divergent reciprocal selected-prime mass for any universal delay-set-only bootstrap",
+      "Finite weighted uncovered-mass lower bound sum w_p*(1-1/p)",
+      "Harmonic diagonal floor (sum 1/p-sum 1/p^2)^2",
+      "Dense reciprocal mass still requires signed cross-prime covariance"
+    ]
+  },
+  "literature_ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-reciprocal-prime-mass-obstruction-references.md",
+    "blob": "98f5e9d54287177739d45617d310e598714571c8",
+    "sha256": "37d707745361706e5dc01e4e8a49a00a7f2c8cc3348dbb3091fc68dc5dfd9dde",
+    "canonical_monolith": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+    "canonical_monolith_blob": "bfcae896d079606ddb1ec472483d4caf060d60d7",
+    "merge_status": "BLOCKED_BY_NO_SAFE_TEXT_PATCH_OR_COMPLETE_BYTE_MATERIALIZATION",
+    "preservation_rule": "Do not replace the monolith from truncated connector output; preserve concurrent entries."
+  },
+  "conversation_inventory": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayObstruction.lean",
+      "blob": "0f4b1fa7f5fa69b3d8fa8b2ab2bef4abeec7c574",
+      "role": "prime-two coefficient algebra and open finite/sparse-prime obstruction interfaces",
+      "published_commit": "b60a766283b8b8b507274691e31ce88763d033d9"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/liouville-method-comparison-and-prime-delay-obstructions.md",
+      "blob": "0add9dd09cc9a6588e010179079498cec4393196",
+      "role": "four-method comparison, finite-prime, prime-two and power-sparse obstruction derivations",
+      "published_commit": "b60a766283b8b8b507274691e31ce88763d033d9"
+    },
+    {
+      "path": "documentation/mathematics/_verification/targets/liouville-prime-delay-obstruction.json",
+      "blob": "7fa2128e53fe3e4653289d918cb460d763622b0b",
+      "role": "static verification target for the predecessor source and review",
+      "published_commit": "b60a766283b8b8b507274691e31ce88763d033d9"
+    },
+    {
+      "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-prime-delay-obstruction-references.md",
+      "blob": "be1bd0835f2e08bcbcf71e8ec0cc6cd8ebd52440",
+      "role": "source-bound literature ledger shard for the predecessor work",
+      "published_commit": "b60a766283b8b8b507274691e31ce88763d033d9"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleReciprocalPrimeMassObstruction.lean",
+      "blob": "3da18f04925fa206249ff81433de413de97f4104",
+      "role": "stronger reciprocal-prime-mass source candidate"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/liouville-reciprocal-prime-mass-obstruction.md",
+      "blob": "1ee1e64781b4efabc28b9f7a9a5a556b83887d21",
+      "role": "complete derivation and updated method frontier"
+    },
+    {
+      "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-reciprocal-prime-mass-obstruction-references.md",
+      "blob": "98f5e9d54287177739d45617d310e598714571c8",
+      "role": "paper-to-formalization ledger shard"
+    },
+    {
+      "path": "documentation/mathematics/_verification/targets/liouville-reciprocal-prime-mass-obstruction.json",
+      "role": "this static target; blob supplied by publication response"
+    }
+  ],
+  "upstream": {
+    "prime_delay_source": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayObstruction.lean",
+      "blob": "0f4b1fa7f5fa69b3d8fa8b2ab2bef4abeec7c574"
+    },
+    "original_liouville_target": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean",
+      "blob": "a00aaa07c067b4c88203372870b5d5d151de0de4"
+    },
+    "double_abel_kernel": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelCausalKernel.lean",
+      "blob": "b102b4af07b0a1001424b084101c2cc16077181a"
+    },
+    "analytic_gates": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean",
+      "blob": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4"
+    },
+    "polynomial_moment": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelPolynomialMoment.lean",
+      "blob": "30c71b912487b98a1a341d6010cb28e75c6798f7"
+    }
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "paper_comparison": [
+    {
+      "title": "Sur les fonctions arithmétiques multiplicatives",
+      "authors": "Hubert Delange",
+      "year": 1961,
+      "doi": "10.24033/asens.1103",
+      "use": "Classical multiplicative mean-value context; no theorem imported into Lean"
+    },
+    {
+      "title": "Über die Mittelwerte multiplikativer zahlentheoretischer Funktionen",
+      "authors": "Gábor Halász",
+      "year": 1968,
+      "doi": "10.1007/BF01894515",
+      "use": "Broader mean-value classification context; no programme-specific causal estimate imported"
+    }
+  ],
+  "open_formalization": [
+    "Formalize the completely multiplicative selected-prime sign and its convolution factor g_S",
+    "Formalize Euler-product absolute convergence from reciprocal-prime summability",
+    "Formalize the elementary positive-mean limit with the exact floor and tail split",
+    "Formalize Abel transport from positive mean to the causal-energy lower bound",
+    "Formalize FiniteWeightedCoverageLowerBound and ReciprocalCoverageDiagonalFloor",
+    "Compile all predecessor and new RH source candidates against the pinned toolchain"
+  ],
+  "open_arithmetic": [
+    "Derive the actual Liouville growing-prime-band signed covariance identity before inequalities",
+    "Use a band with quantitatively divergent reciprocal mass",
+    "Quantify omitted-prime, repeated-prime, unsifted, zero-birth-collar and exceptional-set costs",
+    "Carry any gain through the complete signed Omega-weighted rectangle average"
+  ],
+  "verification": {
+    "source_bytes": "LOCALLY_HASHED_BEFORE_PUBLICATION",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "native_verification": "NOT_DISPATCHED"
+  },
+  "authority": {
+    "publication_mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "expected_head": "c2a00d1676f082c51b1699fb339c4945ba42a734",
+    "root_import": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "commands_for_separately_authorized_clean_checkout": [
+    "git checkout --detach <published_commit>",
+    "test \"$(cat lean-toolchain)\" = \"leanprover/lean4:v4.34.1\"",
+    "grep -F 'd13f23b723b8a846827a245b89c10fc7d3f11612' lake-manifest.json",
+    "lake env lean -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleReciprocalPrimeMassObstruction.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleReciprocalPrimeMassObstruction.lean",
+    "check exact expected types and #print axioms for every theorem in GRWTSK.NumberTheory.LiouvilleReciprocalPrimeMassObstruction",
+    "audit the complete transitive imports for sorryAx, new research axioms, native trust and omitted required modules"
+  ]
+}
