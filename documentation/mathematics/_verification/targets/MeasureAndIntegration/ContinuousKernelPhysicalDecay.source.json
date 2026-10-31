@@ -1,0 +1,18 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/ContinuousKernelPhysicalDecay.lean",
+  "source_blob": "3eba4dfa5daa5694083a09ce2fffbe1a20304efc",
+  "source_base_commit": "66e4dad1817a907693519585634ce78f2c8e7a95",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.ContinuousKernelPhysicalDecay.geometric_physical_bound",
+    "GRWTSK.Analysis.Integration.ContinuousKernelPhysicalDecay.positivePower_physical_bound"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "mathematical_acceptance": false,
+  "scope": "Local quantitative bridge from the maintained minorization power estimate. Uniform threshold and prefactor remain hypotheses; no actual Wilson supplier or continuum construction."
+}
