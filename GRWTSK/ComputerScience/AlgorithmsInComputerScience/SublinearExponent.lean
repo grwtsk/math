@@ -111,7 +111,8 @@ commutativity and left distributivity; fresh verification remains required. -/
 theorem add_mul_constructive (a b c : Nat) : (a + b) * c = a * c + b * c :=
   (Nat.mul_comm (a + b) c).trans
     ((Nat.mul_add c a b).trans
-      (congrArg₂ Nat.add (Nat.mul_comm c a) (Nat.mul_comm c b)))
+      ((congrArg (fun value => value + c * b) (Nat.mul_comm c a)).trans
+        (congrArg (fun value => a * c + value) (Nat.mul_comm c b))))
 
 /-- Fixed affine enlargement preserves sublinearity of a fixed exponent.
 The scale and offset are independent of the input and requested reciprocal rate.
