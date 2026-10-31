@@ -3350,8 +3350,8 @@ positive factor two. It requires no monotonicity or positive exponent values.
 lemma. A separately established sublinear overhead bound remains an explicit
 premise; no preprocessing estimate, machine model or SAT reduction is supplied.
 
-Classification: **source proof candidates; native compilation, fresh kernel
-replay and transitive axiom audit NOT_RUN**. Static target:
+Historical classification for the original source snapshot: **source proof
+candidates; native compilation, fresh kernel replay and axiom audit NOT_RUN**. Static target:
 `documentation/mathematics/_verification/targets/sublinear-exponent-finite-prefix-v1.json`,
 with empty allowed axioms and a 30-second compiler wall cap. The source and static target are bound to Math commit
 `213b04a8aba70f7ecdef3a3f69a5bf4c73768e40`. Noe's cycle-134 evidence records the separate
@@ -3361,6 +3361,23 @@ supplies acceptance. Source Git blob
 `70ac54d713c9070930e6088a074481c8198abadea9bcc3612036ac9d7c00dc71`; profile Git blob
 `bde14dcd895fe6c83c538757d371a948063a5755`. These byte identities do not establish compilation, kernel replay or axiom
 acceptance.
+
+Verification update at Math commit `41f93955555eaecaf32b57e524196393f4f02dd1`:
+the six declarations from `zero_isSublinear` through `constant_isSublinear`
+(including the prefix obstruction and `noPrefixClassifier`) pass fresh managed
+Lean 4.34.1 trust-zero compilation and empty transitive axiom checks.
+`IsSublinear.affine`, `.add`, and `.affine_add` compile but their observed
+`propext` dependencies fail the unchanged empty-axiom target. The original
+nine-declaration scalar target is therefore incomplete. A separate nine-declaration
+retention/enumeration partition in `LeastDependencyClosure.lean` also passes;
+its model minimum and numeric lower bounds do not establish global storage
+optimality or executable/JSON/inventory refinement. Exact declarations, source
+blobs, hashes, commands, raw external receipt pins and resource observations are
+recorded in Noe's
+`bindings/mathematics/organization/verification/storage-challenge/verified-partition-v165.json`.
+The successful external receipt is `storage-challenge/fifteen-replay-v165/receipt.json`;
+expected-interface consumers were not requested. Source publication and this
+portable status update do not qualify an accepted mathematical proof capsule.
 
 Missing bridges: a formal machine/algorithm universe, correct uniform SAT
 procedures over all encoded inputs, worst-case runtime and polynomial input-size
