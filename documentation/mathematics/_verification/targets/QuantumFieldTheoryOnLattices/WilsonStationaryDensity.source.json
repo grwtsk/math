@@ -1,0 +1,34 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonStationaryDensity.lean",
+  "source_base_commit": "dcf8e492b1fe9274217eecccffee15f76db20470",
+  "source_blob": "a98b7263aa83d6c1978a558bfc06cdc23226bed9",
+  "sha256": "6f32ec63228439dbfa2bb427986c87198985879c31f4655418412b93bb16636c",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.stationaryDensity",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.stationaryMeasure",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.density_continuous",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.density_integrable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.stationary_probability",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.relativeKernel",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.relativeKernel_symm",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.relative_times_density",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.relative_row_integral",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.detailed_balance",
+    "GRWTSK.Geometry.GaugeTheory.WilsonStationaryDensity.stationary_density_integral"
+  ],
+  "hypotheses": "Nonzero finite L, beta>0, actual gauge-invariant principal vector; AE nonnegative and nonzero for positivity/balance, eigen-equation for normalization/stationarity, unit norm for probability.",
+  "consumer": "Actual principal-transformed stationary probability and relative transition density; no replacement of finite periodic law.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
