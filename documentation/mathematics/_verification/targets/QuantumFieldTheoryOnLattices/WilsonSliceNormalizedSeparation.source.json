@@ -1,0 +1,33 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceNormalizedSeparation.lean",
+  "source_base_commit": "2c1c62724ed3e6d909462051731fb05d05a92f71",
+  "source_blob": "2cade4914533598348061cbdbc9945751434fcbb",
+  "source_sha256": "4ffa7ec7d6ce62efba56542ae56c92c0edfc809c2ab4988f3bc9e7ac2d880305",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceNormalizedSeparation.residualOperator_on_hyperplane",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceNormalizedSeparation.lambda1_le_residualRate",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceNormalizedSeparation.normalized_second_value_le",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceNormalizedSeparation.normalized_difference_lower",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceNormalizedSeparation.normalized_difference_pos"
+  ],
+  "consumer": "Actual fixed-regulator normalized transfer separation",
+  "hypotheses": [
+    "NeZero L",
+    "beta > 0",
+    "Actual first/second variational values; constructed actual principal vector"
+  ],
+  "constant": "exp(-12 beta L^3)*lambda0 <= 1-lambda1/lambda0",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification of full chain",
+    "Regulator-uniform physical scaling and continuum construction"
+  ]
+}
