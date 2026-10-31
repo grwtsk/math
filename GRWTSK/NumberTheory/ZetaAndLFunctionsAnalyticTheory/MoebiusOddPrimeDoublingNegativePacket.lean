@@ -61,22 +61,10 @@ theorem pickupResponseGram_nonneg
   unfold pickupResponseGram
   apply intervalIntegral.integral_nonneg_of_forall hT
   intro u
-  have hmu : 0 ≤ pickupResponse m u := by
-    by_cases hb : Real.log (m : ℝ) ≤ u
-    · simp only [pickupResponse, if_pos hb]
-      have hl : 0 ≤ (Real.sqrt (m : ℝ))⁻¹ - Real.exp (-u / 2) := by
-        have h := Real.exp_le_exp.mpr hb
-        -- Original response nonnegativity for positive indices also
-        -- occurs in LiouvilleDoubleAbelAnalyticGates.
-        have hsource :
-          0 ≤ pickupResponse m u :=
-          GRWTSK.NumberTheory.LiouvilleDoubleAbelAnalyticGates.pickupResponse_nonneg_positive
-            m (by omega) u
-        simpa only [pickupResponse, if_pos hb] using hsource
-      positivity
-    · simp [pickupResponse, hb]
-  have hnu :
-      0 ≤ pickupResponse n u :=
+  have hmu : 0 ≤ pickupResponse m u :=
+    GRWTSK.NumberTheory.LiouvilleDoubleAbelAnalyticGates.pickupResponse_nonneg_positive
+      m (by omega) u
+  have hnu : 0 ≤ pickupResponse n u :=
     GRWTSK.NumberTheory.LiouvilleDoubleAbelAnalyticGates.pickupResponse_nonneg_positive
       n (by omega) u
   exact mul_nonneg hmu hnu
@@ -106,7 +94,7 @@ theorem oddPrimeDoublingPacket_nonpos (A : Finset ℕ)
   have hK := pickupResponseGram_nonneg T hT p (2 * p) hp0 hp2
   have hsym := pickupResponseGram_symmetric T (2 * p) p
   rw [moebius_two_mul_odd_prime p hprime hodd, hsym]
-  nlinarith [sq_nonneg (moebiusReal p)]
+  nlinarith [mul_nonneg (sq_nonneg (moebiusReal p)) hK]
 
 /-- The signed dense complement after paying the negative prime packet.
 Every other original ordered pair is retained in this difference, rather
