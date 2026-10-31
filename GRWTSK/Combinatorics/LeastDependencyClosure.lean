@@ -3129,6 +3129,7 @@ theorem boundedMaskLE_covers {width : Nat} (mask : Fin (2 ^ width)) :
 def selectedBits {width : Nat} (bits : FixedBoolList width) (index : Fin width) : Prop :=
   listPosition bits.val index.val = some true
 
+@[instance_reducible]
 def selectedBitsDecisions {width : Nat} (bits : FixedBoolList width) :
     DecidablePred (selectedBits bits) :=
   fun index => inferInstanceAs (Decidable (listPosition bits.val index.val = some true))
@@ -3138,6 +3139,7 @@ structural bit reader, not an unproved external bit-operation translation. -/
 def selectedMask {width : Nat} (mask : Fin (2 ^ width)) (index : Fin width) : Prop :=
   maskBit mask.val index.val = true
 
+@[instance_reducible]
 def selectedMaskDecisions {width : Nat} (mask : Fin (2 ^ width)) :
     DecidablePred (selectedMask mask) :=
   fun index => inferInstanceAs (Decidable (maskBit mask.val index.val = true))
@@ -3557,7 +3559,7 @@ private theorem candidate_succ_injective {n : Nat} (a b : Fin n)
     cases b with
     | mk b hb =>
       have values : Nat.succ a = Nat.succ b := congrArg Fin.val equal
-      have indices := Nat.succ.inj values
+      have indices : a = b := congrArg Nat.pred values
       cases indices
       rfl
 
@@ -3584,7 +3586,9 @@ theorem finiteIndexCandidates_nodup (n : Nat) :
         candidate_map_origin Fin.succ (finiteIndexCandidates n) value member
       have impossible : Nat.succ candidate.val = 0 :=
         congrArg Fin.val (mapped.trans equal.symm)
-      exact Nat.noConfusion impossible
+      exact Eq.ndrec
+        (motive := fun value : Nat => match value with | 0 => False | Nat.succ _ => True)
+        True.intro impossible
     · exact candidate_map_nodup Fin.succ candidate_succ_injective
         (finiteIndexCandidates n) ih
 
