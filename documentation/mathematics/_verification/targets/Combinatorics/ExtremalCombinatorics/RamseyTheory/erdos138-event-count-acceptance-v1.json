@@ -1,0 +1,45 @@
+{
+  "schema": "grwtsk.scoped-mathematical-acceptance/1",
+  "attribution": "grwtsk contributors",
+  "math_commit": "8f99d1b43b6fa83e520398c3616bf2ae5208ecc7",
+  "registry_sha256": "943af70e645490c3b251dc7a14df91ed9dfe88a52b74ec720f7f1a4c85432a83",
+  "receipt_sha256": "3cc4a675a470e08de70f29854d9f21d46f54a4b9080f6794f57ec01661dcd0a3",
+  "receipt_location": "Noe external runtime: formalization/erdos138/event-run-1/receipt.json",
+  "scope": "Exact prescribed-color counts and progression support cardinality only",
+  "fresh_unique_source_modules": 759,
+  "host_config_restored": true,
+  "contracts": [
+    {
+      "source": "GRWTSK/Combinatorics/ExtremalCombinatorics/RamseyTheory/ProgressionColorEventCount.lean",
+      "blob": "2628d267a9603d80bc74a47525ba791e41846fd3",
+      "axioms": {
+        "GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.WindowAP.fixedColor_card": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.WindowAP.support_card": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.Combinatorics.RamseyTheory.AnalyticControl.fixedColorAssignments_card": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "exact_type_consumer": "NOT_REQUESTED",
+  "toolchain_boundary": "Pinned installed Lean 4.34.1 compiled core/Std/Lean; not source-rebuilt",
+  "full_erdos138_proof": false,
+  "remaining": [
+    "Uniform probability normalization",
+    "Disjoint colors for nonempty support",
+    "Actual event union bound",
+    "Quantitative improvement beyond exponential scale",
+    "Exact positive-interval kth-root limit"
+  ]
+}
