@@ -1,0 +1,25 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/TwoObservableCyclicIntegral.lean",
+  "source_base_commit": "fecc81adb2f579c8797c2de406370d43bb43b22b",
+  "source_blob": "5ce00d0c0abb8699052965b16d9c747de0bac6ba",
+  "sha256": "72a76ced5d8acfa1606c5c605298e0a20e581ab0c040bee8b0ca58a0f9972ce4",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.TwoObservableCyclicIntegral.integrate_grouped_weights",
+    "GRWTSK.Analysis.Integration.TwoObservableCyclicIntegral.two_observable_integral"
+  ],
+  "hypotheses": "Continuous real kernel on the existing compact Borel space; p,q natural, arc lengths p+1 and q+1; actual probability measure; no L2 input.",
+  "consumer": "Full finite two-observable Wilson numerator after separate actual ZMod/block transport; no decay claim.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
