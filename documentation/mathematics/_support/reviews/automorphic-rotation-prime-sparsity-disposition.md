@@ -169,22 +169,80 @@ prismatic comparison would additionally need the algebraic and
 cochain hypotheses of grwtsk/math#132. Dirichlet-convolution
 moment rings are different objects, not automatic prisms.
 
-## 5. Exact next mathematical target
+## 5. Source-specific signed rotation now constructed
 
-Choose one verified arithmetic consumer, preferably the prescribed
-signed dyadic endpoint sum. Construct a finite source inventory
-`I_j` containing the exact Möbius coefficients, birth windows,
-multiplicities and diagonal/source labels, and a source-bounded
-permutation `g_j : I_j ≃ I_j`. Prove a *nontrivial* comparison
+The additional source increment
+[PickupSignedRotation.lean](https://github.com/grwtsk/math/blob/6b53d06c57c1b4acbf0e77733b53994bf62b86d9/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupSignedRotation.lean)
+is published at commit 6b53d06c57c1b4acbf0e77733b53994bf62b86d9,
+Git blob 7aa4f825a10d2b0d5bd9d57a5f96ccda6fe420d6.
+Its actual consumer is
+GRWTSK.NumberTheory.Moebius.PickupDyadicEndpoint.dyadicBirthSum,
+not an abstract placeholder weighted graph.
 
-    E(j log 2) = arithmetic_rotated_model(j) + paid_residual(j)
+Set n_j=2^j-1 and a(k)=birthExpression(k+1) from the original
+five-moment signed source. The reflection on the finite original
+indices is r_j(k)=n_j-1-k, for 0<=k<n_j. The exact sum is
 
-and independently bound its FULL signed right-hand side on
-the required covering scales. This must give an actual cancellation
-estimate, not a renamed hypothesis saying the residual is small.
-The fixed finite graph orbit hull and the q=1 sparse-type upper
-obstruction can help decide which rotations are legal, but do not
-supply that bound themselves.
+    dyadicBirthSum(j)
+      = (1/2) * sum_{0<=k<n_j} (a(k) + a(r_j(k))).
+
+The source is the COMPLETE same birth inventory; no coefficient,
+negative term, diagonal, event boundary, phase, or pair multiplicity
+is removed or reweighted. The equality is elementary reindexing,
+not source cancellation. It handles the empty j=0 and singleton
+j=1 cases. The reflected index's range membership is explicit.
+
+The existing one-sided RH-facing obligation can now consume
+source-specific per-birth upper allowances U(j,k) satisfying
+
+    a(k) + a(r_j(k)) <= U(j,k),
+
+followed by an independently proved global all-positive-rate bound
+on half of their complete sum. The conditional theorem
+dyadicBirthBound_of_pairwise_budget preserves all premises and
+uses the existing unchanged
+riemannHypothesis_of_dyadicBirthBound consumer. No U with a
+nontrivial source-derived growth estimate has been supplied.
+
+The separate absolute allowance is
+
+    |dyadicBirthSum(j)| <= (1/2) sum_{k<n_j}|a(k)+a(r_j(k))|.
+
+A new hostile proof states that if each a(k)<=0 at a given
+cutoff, the right-side numerator equals -2*dyadicBirthSum(j):
+the reflection does NOT improve its absolute allowance at all.
+This prevents a misleading claim of moire/rotational compression
+based only on the change of coordinates.
+
+**Finite checks, separate from the source-level candidate:** 25,604
+exact-rational assertions on independently generated finite arrays
+of lengths 0 through 64 checked reflection, the full signed identity,
+the absolute bound, the local upper bound and sign-definite equality.
+A separate 40-digit numerical diagnostic evaluated the literal
+Möbius five-moment birth expression through N=1200, finding no
+positive birth values on that *finite tested range*. These numerical
+values are not rigorous error-enclosed intervals and do not prove
+all-height sign behavior or RH. In the tested dyadic windows through
+2^10-1 births, the absolute reflected allowance showed no gain
+over the ordinary absolute-value sum.
+
+## 6. The remaining mathematical task
+
+Derive a genuine source-specific one-sided bound for the complete
+pairwise signed allowances at every positive exponential rate.
+A useful candidate must come from arithmetic (Möbius
+multiplicativity, controlled proper-cofactor extraction,
+character-sum estimates, or source-exact correlation identities),
+not from a graph symmetry or an ellipsoid descriptor alone.
+Keep the *existing* MobiusDilationPairSplit and MobiusDoublingCredit
+negative packets and their COMPLETE complements instead of
+repeating them with newly named proof wrappers.
+
+Only after the full signed arithmetic estimate is independently
+proved can the existing RH criterion be consumed. The prime-fiber
+and ellipsoid interfaces still lack an exact mathematical map
+from the signed source; they must not inherit the reflection's
+reindexing identity as a full arithmetic automorphism.
 
 **Evidence separation:** the finite diagnostics for the rotation
 sandwich and buffered kernel are tests only, not compilation or
