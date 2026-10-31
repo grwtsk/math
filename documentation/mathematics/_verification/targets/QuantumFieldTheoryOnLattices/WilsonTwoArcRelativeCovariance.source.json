@@ -1,0 +1,28 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTwoArcRelativeCovariance.lean",
+  "source_base_commit": "77627ae79d83f84d3b462938c8d5544c6ae6a6ca",
+  "source_blob": "d6854b50c37661508ae4cceb1b794a3e1bb47199",
+  "sha256": "c9ebd41b38fdede8304173e10b6951d3a4775029fda66adaba32fec4ab907ba5",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoArcRelativeCovariance.powerError",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoArcRelativeCovariance.powerError_nonneg",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoArcRelativeCovariance.relative_normalizer_lower",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoArcRelativeCovariance.relative_normalizer_pos",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoArcRelativeCovariance.relative_covariance_bound"
+  ],
+  "hypotheses": "Nonzero lattice size L, beta>0, actual gauge-invariant principal eigenvector f, Haar-a.e. f>=0, f!=0, norm f=1, actual principal eigenvalue equation; powers have length m+1; continuous stationary-centered O,P bounded by nonnegative M,N; explicit product of actual power errors less than1.",
+  "consumer": "Applies generic signed residual bound to actual stationary Wilson quotient powers, E_m=norm(relativeContinuous)*theta^m; finite-loop covariance transport and centered block bounds remain separate.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
