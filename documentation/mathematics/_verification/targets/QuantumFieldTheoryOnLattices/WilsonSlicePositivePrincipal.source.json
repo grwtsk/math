@@ -1,0 +1,33 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSlicePositivePrincipal.lean",
+  "source_base_commit": "614961470cb44f20c59e1a54cbb7f45eb1f4ad27",
+  "source_blob": "a5c20d006b2838c37682d16bbb3053970d7c40f2",
+  "source_sha256": "35690b544945603d69cf7e7969c1cd5f01000afd355fb97d93b3c6923eaa305a",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePositivePrincipal.lambda0_pos",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePositivePrincipal.exists_unit_principal_nonnegative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePositivePrincipal.principal_strictly_positive_ae",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSlicePositivePrincipal.exists_unit_principal_strictly_positive"
+  ],
+  "consumer": "Actual principal eigenspace simplicity via orthogonality and one-sign vectors",
+  "hypotheses": [
+    "NeZero L",
+    "beta > 0",
+    "Actual gauge-invariant real slice L2 operator and actual lambda0"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Principal eigenspace simplicity",
+    "Quantitative separation",
+    "Regulator-uniform physical scaling and continuum construction"
+  ]
+}
