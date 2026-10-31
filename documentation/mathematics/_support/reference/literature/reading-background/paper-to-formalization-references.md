@@ -3837,3 +3837,26 @@ response-runtime refinement, SAT algorithm or ETH consequence follows here.
 - Hypotheses: compact Hausdorff second-countable Borel probability space; continuous kernel; actual row/column normalization; K≥a with a<1; initial absolute residual ≤M. Index n means n+1 transitions. Fubini propagates column normalization; the actual power residual is bounded by (1−a)^n M. Strict contraction additionally requires a>0.
 - Evidence class: SOURCE_PROOF_CANDIDATE, not kernel-verified bridge or full imported paper theorem. Compilation, fresh kernel replay, transitive axiom audit and expected-interface checks: NOT_RUN; no execution dispatched for this source.
 - Missing bridges: regulator-uniform a and M; derivative/Hessian supplier; actual four-dimensional conditional block interactions; continuum construction and physical mass gap. The paper's two-dimensional independence is not transferred to four dimensions.
+
+
+## Sublinear exponent arithmetic dependency refinement — candidate (2026-10-31)
+
+Local byline: grwtsk contributors. The original scalar statements and every
+quantified premise of `IsSublinear.affine`, `IsSublinear.add` and
+`IsSublinear.affine_add` are unchanged. A local explicit recursion
+`GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.mul_assoc_constructive`
+replaces the two direct `Nat.mul_assoc` uses in the first two proofs; the third
+continues to compose them. This isolates a common arithmetic dependency for
+the existing empty-axiom policy. It does not establish that core associativity
+caused the observed `propext` audit, nor that the dependency is now removed.
+
+Source: `GRWTSK/ComputerScience/AlgorithmsInComputerScience/SublinearExponent.lean`, blob `7904622db22dc90783b1c46270dc2011810b6768`, built on
+base commit `e95beb8207d699033ef501f5b76354286f5beeb3`. The existing static target
+`documentation/mathematics/_verification/targets/sublinear-exponent-finite-prefix-v1.json`
+now additionally selects the helper. Compilation, fresh replay, transitive
+axiom audit and expected interfaces for these changed bytes are NOT_RUN.
+The earlier fifteen-declaration receipt remains evidence only for its pinned
+Math source `41f93955555eaecaf32b57e524196393f4f02dd1`. No resource or axiom
+budget is relaxed; native ownership must clear before qualification.
+This is scalar exponent arithmetic only, with no algorithmic reduction or ETH
+resolution. Operational publication and diagnostics stay in Noe.

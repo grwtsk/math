@@ -11,7 +11,8 @@
         "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.constant_isSublinear",
         "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.affine",
         "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.add",
-        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.affine_add"
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.affine_add",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.mul_assoc_constructive"
       ],
       "allowed_axioms": []
     }
