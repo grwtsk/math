@@ -10,8 +10,8 @@ Each temporal layer depends on its own actual gauge-history coordinate. The
 maintained temporalHistoryHaar is precisely the finite product of sliceGaugeHaar.
 The full product therefore integrates into the product of actual layer integrals.
 Continuity and integrability are supplied for both layers and full histories.
-All cyclic indices, including the seam r+1, are retained. This is not yet the
-normalized Wilson marginal, a trace identity or a ground-state comparison.
+All cyclic indices, including the seam r+1, are retained. The actual Boltzmann temporal integral is identified with the cyclic kernel
+product. This is not yet the normalized Wilson marginal, a trace identity or a ground-state comparison.
 SOURCE_PROOF_CANDIDATE; compile, replay, axioms and expected interface NOT_RUN.
 -/
 set_option autoImplicit false
@@ -61,5 +61,28 @@ theorem integral_temporal_product (β : ℝ) (a : SpatialHistory L SU2) :
       sliceWilsonProduct L β (a r) (sliceGaugeAction g (a (r + 1))) ∂sliceGaugeHaar L := by
   exact integral_fintype_prod_eq_prod
     (fun r : ZMod L => fun g : SliceGauge L SU2 => layerFactor L β a r g)
+
+theorem continuous_temporal_boltzmann (β : ℝ) (a : SpatialHistory L SU2) :
+    Continuous (fun g : TemporalHistory L SU2 =>
+      Real.exp (-β * GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonAction L (assemble a g))) :=
+  Real.continuous_exp.comp (continuous_const.mul
+    ((GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.continuous_wilsonAction L).comp
+      (continuous_assemble.comp (continuous_const.prodMk continuous_id))))
+
+theorem integrable_temporal_boltzmann (β : ℝ) (a : SpatialHistory L SU2) :
+    Integrable (fun g : TemporalHistory L SU2 =>
+      Real.exp (-β * GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonAction L (assemble a g)))
+      (temporalHistoryHaar L) :=
+  (continuous_temporal_boltzmann L β a).integrable_of_hasCompactSupport
+    (HasCompactSupport.of_compactSpace _)
+
+/-- The actual unnormalized periodic Wilson density after integrating every temporal link. -/
+theorem integral_temporal_boltzmann (β : ℝ) (a : SpatialHistory L SU2) :
+    (∫ g, Real.exp (-β * GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonAction L
+      (assemble a g)) ∂temporalHistoryHaar L) =
+      ∏ r : ZMod L, sliceKernel L β (a r) (a (r + 1)) := by
+  simp_rw [boltzmann_assemble]
+  rw [integral_const_mul, integral_temporal_product]
+  exact (cyclicKernel_factor L β a).symm
 
 end GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral
