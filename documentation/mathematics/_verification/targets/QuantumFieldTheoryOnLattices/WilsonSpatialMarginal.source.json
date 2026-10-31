@@ -1,0 +1,34 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSpatialMarginal.lean",
+  "source_base_commit": "d15cfe5e32f387ecf40430b41cb9c39da81bba01",
+  "source_blob": "84698207076a6854b61747e23f657400bc6f5b0d",
+  "source_sha256": "347a9519c602305adaaf78243e2c9db35afcdba5a557064e01fdf805faa86b02",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialMarginal.integral_wilson_continuous_weight",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialMarginal.spatial_observable_integrable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialMarginal.integral_spatial_insertion_weight",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialMarginal.normalized_spatial_insertion"
+  ],
+  "hypotheses": [
+    "NeZero L",
+    "beta>=0 for actual normalized expectation",
+    "continuous real spatial-history insertion",
+    "actual withDensity Wilson measure and actual positive cyclic partition"
+  ],
+  "consumer": "Actual spatial-block covariance before any trace or ground-state comparison",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Actual spatial observable covariance transport",
+    "Spatial-block lift/time-axis and temporal insertion distinctions",
+    "Trace-class and periodic covariance representation",
+    "Uniform physical scaling and continuum reconstruction"
+  ]
+}
