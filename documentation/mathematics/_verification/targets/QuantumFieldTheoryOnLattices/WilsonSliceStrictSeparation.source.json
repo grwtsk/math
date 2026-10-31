@@ -1,0 +1,31 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceStrictSeparation.lean",
+  "source_base_commit": "85aba0bcac7f7b3d778d0b26d95be89f620dedb9",
+  "source_blob": "79d86d22bcdd1594fbf9c2e9798063e05d4c65b0",
+  "source_sha256": "dc7936aaad7c23a6f045dd9d49bb5460211f79923cbf5759aa80c07600402908",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceStrictSeparation.lambda1_le_lambda0",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceStrictSeparation.lambda1_lt_lambda0",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceStrictSeparation.principal_difference_pos"
+  ],
+  "consumer": "Fixed-regulator separation and subsequent finite approximation certificate construction",
+  "hypotheses": [
+    "NeZero L",
+    "beta > 0 for strict separation",
+    "Actual first/second variational values of gauge-invariant Wilson operator"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification of full changed dependency chain",
+    "Numerical finite separation certificate",
+    "Regulator-uniform physical scaling and continuum construction"
+  ]
+}
