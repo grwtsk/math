@@ -128,32 +128,101 @@ arithmetic hypothesis; it is to be discharged by floor/log conversions. -/
 def CausalCutoffIdentity : Prop :=
   ∀ (T u : ℝ), 0 ≤ u → u ≤ T → waveform u = fixedWaveform T u
 
-/-- The full physical-time Gram bridge follows without a hidden
-integrability premise once the literal finite-cutoff identity is supplied.
-Unlike the previous interface, integrability and finite sum interchange
-are established by the preceding candidate declarations. -/
-theorem physicalTimeGramBridge_of_cutoff
-    (hcut : CausalCutoffIdentity) :
+/-- The selected-divisor weighted source itself is a finite original-index
+sum. Squaring and integrating recovers the full selected-divisor Gram,
+rather than the distinct MIXED gram. -/
+theorem selected_fixed_integral_eq_gram
+    (P : Finset ℕ) (w : ℕ → ℝ) (T : ℝ) :
+    (∫ u in (0 : ℝ)..T,
+      (∑ n ∈ Finset.Icc 1 ⌊Real.exp T⌋₊,
+        coefficient n * selectedDivisorWeight P w n *
+          pickupResponse n u) ^ 2) =
+    divisorSignedGram P (Finset.Icc 1 ⌊Real.exp T⌋₊)
+      w (originalCausalKernel T) := by
+  classical
+  let S := Finset.Icc 1 ⌊Real.exp T⌋₊
+  have hInt : ∀ n ∈ S, ∀ m ∈ S,
+      IntervalIntegrable
+        (fun u : ℝ =>
+          (coefficient n * selectedDivisorWeight P w n) *
+          (coefficient m * selectedDivisorWeight P w m) *
+          (pickupResponse n u * pickupResponse m u))
+        volume 0 T := by
+    intro n hn m hm
+    exact (pickupResponse_product_intervalIntegrable n m
+      (Finset.mem_Icc.mp hn).1 (Finset.mem_Icc.mp hm).1 T).const_mul
+      ((coefficient n * selectedDivisorWeight P w n) *
+        (coefficient m * selectedDivisorWeight P w m))
+  have hExpand (u : ℝ) :
+      (∑ n ∈ S,
+        coefficient n * selectedDivisorWeight P w n *
+          pickupResponse n u) ^ 2 =
+      ∑ n ∈ S, ∑ m ∈ S,
+        (coefficient n * selectedDivisorWeight P w n) *
+        (coefficient m * selectedDivisorWeight P w m) *
+        (pickupResponse n u * pickupResponse m u) := by
+    rw [pow_two, Finset.sum_mul_sum]
+    apply Finset.sum_congr rfl
+    intro n hn
+    apply Finset.sum_congr rfl
+    intro m hm
+    ring
+  have hExchange := integrate_finite_double_sum S T
+    (fun n m u =>
+      (coefficient n * selectedDivisorWeight P w n) *
+      (coefficient m * selectedDivisorWeight P w m) *
+      (pickupResponse n u * pickupResponse m u)) hInt
+  change (∫ u in (0 : ℝ)..T,
+      (∑ n ∈ S, coefficient n * selectedDivisorWeight P w n *
+        pickupResponse n u) ^ 2) =
+    divisorSignedGram P S w (originalCausalKernel T)
+  calc
+    _ = (∫ u in (0 : ℝ)..T, ∑ n ∈ S, ∑ m ∈ S,
+      (coefficient n * selectedDivisorWeight P w n) *
+      (coefficient m * selectedDivisorWeight P w m) *
+      (pickupResponse n u * pickupResponse m u)) := by
+        apply intervalIntegral.integral_congr
+        intro u hu
+        exact hExpand u
+    _ = ∑ n ∈ S, ∑ m ∈ S,
+      ∫ u in (0 : ℝ)..T,
+        (coefficient n * selectedDivisorWeight P w n) *
+        (coefficient m * selectedDivisorWeight P w m) *
+        (pickupResponse n u * pickupResponse m u) := hExchange
+    _ = divisorSignedGram P S w (originalCausalKernel T) := by
+      unfold divisorSignedGram signedGram originalCausalKernel pickupResponseGram
+      apply Finset.sum_congr rfl
+      intro n hn
+      apply Finset.sum_congr rfl
+      intro m hm
+      rw [intervalIntegral.integral_const_mul]
+      ring
+
+/-- Complete pre-existing PhysicalTimeGramBridge is established as a
+source proof candidate with no additional arithmetic or cutoff hypothesis.
+Its RHS is the squared SELECTED waveform, matching the original definition. -/
+theorem physicalTimeGramBridge :
     PhysicalTimeGramBridge := by
   intro P w T hT
-  have hfix := original_fixed_mixed_integral_eq_gram P w T
-  symm
-  calc
-    originalMixedGram P (Finset.Icc 1 ⌊Real.exp T⌋₊)
-        w (originalCausalKernel T) =
-      (∫ u in (0 : ℝ)..T,
-        fixedWaveform T u *
+  exact (selected_fixed_integral_eq_gram P w T).symm
+
+/-- The mixed physical-time Gram is a different identity. Only conversion
+of the full dynamic Liouville waveform to its fixed global inventory is
+needed after the literal integrability result above. -/
+theorem mixedPhysicalGram_of_cutoff
+    (hcut : CausalCutoffIdentity)
+    (P : Finset ℕ) (w : ℕ → ℝ) (T : ℝ) (hT : 0 ≤ T) :
+    (∫ u in (0 : ℝ)..T,
+      waveform u *
         (∑ m ∈ Finset.Icc 1 ⌊Real.exp T⌋₊,
           coefficient m * selectedDivisorWeight P w m *
-            pickupResponse m u)) := by
-              simpa only [fixedWaveform] using hfix.symm
-    _ = (∫ u in (0 : ℝ)..T,
-        waveform u *
-        (∑ m ∈ Finset.Icc 1 ⌊Real.exp T⌋₊,
-          coefficient m * selectedDivisorWeight P w m *
-            pickupResponse m u)) := by
-      apply intervalIntegral.integral_congr
-      intro u hu
-      rw [hcut T u (le_of_lt hu.1) hu.2]
+            pickupResponse m u)) =
+      originalMixedGram P (Finset.Icc 1 ⌊Real.exp T⌋₊)
+        w (originalCausalKernel T) := by
+  rw [← original_fixed_mixed_integral_eq_gram P w T]
+  apply intervalIntegral.integral_congr
+  intro u hu
+  rw [hcut T u (le_of_lt hu.1) hu.2]
+  rfl
 
 end GRWTSK.NumberTheory.LiouvilleCausalPhysicalGramIntegrability
