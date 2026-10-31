@@ -1,0 +1,27 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/TwoArcKernelProduct.lean",
+  "source_base_commit": "28e23c17b17abaab4e0e8b76c1e9f5ab3054bff3",
+  "source_blob": "9722fe63e5673d4177b8382bcb99998bf3c70c6a",
+  "sha256": "6c230ae1ce4d63526863e4eb9312cc619c956075b699800c08771f7ea6c44b94",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.TwoArcKernelProduct.history",
+    "GRWTSK.Analysis.Integration.TwoArcKernelProduct.next_left",
+    "GRWTSK.Analysis.Integration.TwoArcKernelProduct.next_right",
+    "GRWTSK.Analysis.Integration.TwoArcKernelProduct.cyclic_product_two_arcs"
+  ],
+  "hypotheses": "Continuous real kernel on the existing compact Borel space; p,q natural, arc lengths p+1 and q+1; no measure or L2 input in this finite algebra.",
+  "consumer": "Actual two-insertion Wilson cyclic density before integration; both directed arcs retained.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
