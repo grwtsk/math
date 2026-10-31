@@ -1,0 +1,43 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceAbsoluteRayleigh.lean",
+  "source_base_commit": "428acefb17a1cc069e6f26d99bbd55979dca8b03",
+  "source_blob": "954629adf5497ac780e6a21e22c2dcf662a301b2",
+  "source_sha256": "762aa6d2f24289e80d4e635dbd5ed6cf76d81b30d6c93ca6919708a36b399cf9",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceAbsoluteRayleigh.signDefect",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceAbsoluteRayleigh.kernelDefect",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceAbsoluteRayleigh.signDefect_nonnegative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceAbsoluteRayleigh.integrable_signDefect",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceAbsoluteRayleigh.integrable_kernelDefect",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceAbsoluteRayleigh.integral_signDefect",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceAbsoluteRayleigh.kernelDefect_lower",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceAbsoluteRayleigh.quadratic_difference_eq_integral",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceAbsoluteRayleigh.quadratic_difference_lower",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceAbsoluteRayleigh.quadratic_lt_of_cancellation",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceAbsoluteRayleigh.invariant_quadratic_lt_of_two_sign_masses"
+  ],
+  "required_dependency": "WilsonSliceInvariantAbsoluteValue; source candidate, NOT_RUN",
+  "consumer": "Strict actual invariant-space Rayleigh improvement under concrete positive/negative L1 mass hypotheses",
+  "hypotheses": [
+    "L : natural, NeZero L",
+    "beta : real, beta >= 0",
+    "f : actual gaugeInvariantSpace L",
+    "0 < integral abs(f) + integral f",
+    "0 < integral abs(f) - integral f"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Positive/negative support to L1 mass transport",
+    "Principal simplicity via top-Rayleigh equality",
+    "Finite separation certificate",
+    "Regulator-uniform continuum mass gap"
+  ]
+}
