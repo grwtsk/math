@@ -161,7 +161,6 @@ theorem waveform_eq_fixed_of_le
       ⟨(Finset.mem_Icc.mp hn).1,
         le_trans (Finset.mem_Icc.mp hn).2 hfloor⟩
   unfold waveform fixedWaveform
-  symm
   apply Finset.sum_subset hsub
   intro n hlarge hnot
   have hsmall : 1 ≤ n := (Finset.mem_Icc.mp hlarge).1
@@ -273,5 +272,18 @@ theorem mixedPhysicalGram_of_cutoff
   intro u hu
   rw [hcut T u (le_of_lt hu.1) hu.2]
   rfl
+
+/-- The complete existing mixed physical-time Gram now requires no
+cutoff, integrability, or arbitrary finite-sum exchange hypothesis. -/
+theorem mixedPhysicalGram
+    (P : Finset ℕ) (w : ℕ → ℝ) (T : ℝ) (hT : 0 ≤ T) :
+    (∫ u in (0 : ℝ)..T,
+      waveform u *
+        (∑ m ∈ Finset.Icc 1 ⌊Real.exp T⌋₊,
+          coefficient m * selectedDivisorWeight P w m *
+            pickupResponse m u)) =
+      originalMixedGram P (Finset.Icc 1 ⌊Real.exp T⌋₊)
+        w (originalCausalKernel T) :=
+  mixedPhysicalGram_of_cutoff causalCutoffIdentity P w T hT
 
 end GRWTSK.NumberTheory.LiouvilleCausalPhysicalGramIntegrability
