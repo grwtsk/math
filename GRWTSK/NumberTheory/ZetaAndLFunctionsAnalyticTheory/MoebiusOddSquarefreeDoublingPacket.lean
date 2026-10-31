@@ -87,38 +87,59 @@ theorem doubling_selected_injective
       exact dvd_mul_right 2 b
     exact False.elim (ha heven)
 
-/-- Source-exact packet accounting. The selected pair is disjoint and
-its two orientations appear precisely once in the complete dense sum.
-No remaining pair is omitted. -/
-theorem squarefreeDense_eq_doubling_add_remaining
-    (A : Finset ℕ) (T : ℝ) :
+/-- The finite oriented-pair bijection to the explicitly filtered
+squarefree remainder. This is a named *open* proposition until its
+Finset reindexing proof has been elaborated. -/
+def ExactSquarefreePairPartition : Prop :=
+  ∀ (A : Finset ℕ) (T : ℝ),
     denseSquarefreeCross A T =
       oddSquarefreeDoublingPacket A T +
-        remainingSquarefreePairSum A T := by
-  classical
-  -- Finiteness permits partition by the complete selected-edge predicate.
-  -- The sum over selected edges is reindexed by its unique odd source.
-  unfold denseSquarefreeCross oddSquarefreeDoublingPacket
-    remainingSquarefreePairSum selectedDoublingPair
-  sorry
+        remainingSquarefreePairSum A T
 
-/-- The original dense complement including all squareful zero terms. -/
-theorem signedComplement_eq_doubling_add_remaining
+/-- Unconditional exact signed difference, preserving every term of the
+original dense complement even before the filtered-pair bijection. -/
+def completeSignedRemainder (A : Finset ℕ) (T : ℝ) : ℝ :=
+  signedGapComplement A T - oddSquarefreeDoublingPacket A T
+
+theorem signedComplement_eq_packet_add_completeRemainder
     (A : Finset ℕ) (T : ℝ) :
     signedGapComplement A T =
-      oddSquarefreeDoublingPacket A T +
-        remainingSquarefreePairSum A T := by
-  rw [signedGapComplement_eq_squarefreeCross]
-  exact squarefreeDense_eq_doubling_add_remaining A T
+      oddSquarefreeDoublingPacket A T + completeSignedRemainder A T := by
+  unfold completeSignedRemainder
+  ring
 
-theorem endpointSum_le_squarefree_doubling_remaining
+/-- Under the exact and explicitly open finite-pair reindexing, the
+complete remainder agrees with the enumerated squarefree pairs. -/
+theorem completeRemainder_eq_squarefreePairSum
+    (hpartition : ExactSquarefreePairPartition)
+    (A : Finset ℕ) (T : ℝ) :
+    completeSignedRemainder A T = remainingSquarefreePairSum A T := by
+  have hh := hpartition A T
+  rw [← signedGapComplement_eq_squarefreeCross A T] at hh
+  unfold completeSignedRemainder
+  linarith
+
+/-- Unconditional sign saving with the exact, unestimated complete
+signed remainder and the original one-quarter endpoint error. -/
+theorem endpointSum_le_doubling_completeRemainder
+    (A : Finset ℕ) (T : ℝ) (hT : 0 ≤ T) :
+    endpointSum T ≤
+      |endpointGapSetCross A T| +
+        completeSignedRemainder A T + 1 / 4 := by
+  have h := endpointSum_le_sparse_and_signedComplement A T hT
+  rw [signedComplement_eq_packet_add_completeRemainder] at h
+  have hn := oddSquarefreeDoublingPacket_nonpos A T hT
+  linarith
+
+/-- After the finite-pair bijection is discharged, this gives the
+intended source-exact filtered squarefree remainder consumer. -/
+theorem endpointSum_le_filteredSquarefreeRemainder
+    (hpartition : ExactSquarefreePairPartition)
     (A : Finset ℕ) (T : ℝ) (hT : 0 ≤ T) :
     endpointSum T ≤
       |endpointGapSetCross A T| +
         remainingSquarefreePairSum A T + 1 / 4 := by
-  have h := endpointSum_le_sparse_and_signedComplement A T hT
-  rw [signedComplement_eq_doubling_add_remaining] at h
-  have hn := oddSquarefreeDoublingPacket_nonpos A T hT
-  linarith
+  simpa only [completeRemainder_eq_squarefreePairSum hpartition A T] using
+    endpointSum_le_doubling_completeRemainder A T hT
 
 end GRWTSK.NumberTheory.MoebiusOddSquarefreeDoublingPacket
