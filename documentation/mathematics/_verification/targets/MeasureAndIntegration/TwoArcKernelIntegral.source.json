@@ -1,0 +1,26 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/TwoArcKernelIntegral.lean",
+  "source_base_commit": "8c074214bf524b583b51b5cec0ccc514a12a552e",
+  "source_blob": "09689449a964d7dfd44317209003c3648955a726",
+  "sha256": "eae641ee2483b718657c96a006df6c951c422c743c3ec00f57edea31ea15f6ba",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.TwoArcKernelIntegral.integrable_two_weights",
+    "GRWTSK.Analysis.Integration.TwoArcKernelIntegral.integral_two_weights",
+    "GRWTSK.Analysis.Integration.TwoArcKernelIntegral.integral_cyclic_history"
+  ],
+  "hypotheses": "Continuous real kernel on the existing compact Borel space; p,q natural, arc lengths p+1 and q+1; actual probability measure; no L2 input.",
+  "consumer": "Actual two-insertion Wilson cyclic density with internal coordinates integrated; endpoint measure transport remains separate.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
