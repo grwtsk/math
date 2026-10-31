@@ -1,0 +1,32 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/TwoDensityCovarianceIdentity.lean",
+  "source_base_commit": "ee9e92255757dba9c90cc4352323a2e12c6e60c4",
+  "source_blob": "72ba298ddf1f7683386336e0ecab7b5ae3529a29",
+  "sha256": "437f44ddd189331f4f4f4db5f061bd6cd8b9bdb83df44014b3149f2864beff67",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceIdentity.normalizer",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceIdentity.crossResidual",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceIdentity.leftResidual",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceIdentity.rightResidual",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceIdentity.jointResidual",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceIdentity.normalizedCovariance",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceIdentity.normalizer_eq",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceIdentity.centered_joint_numerator",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceIdentity.normalizedCovariance_eq"
+  ],
+  "hypotheses": "Compact Hausdorff second-countable Borel space with probability measure; continuous J,K; explicit row/column normalization and centered continuous observable hypotheses per theorem; covariance retains explicit nonzero actual normalizer.",
+  "consumer": "Exact centered covariance C/Z-A B/Z^2 for the actual two-kernel integral normalizer; actual Wilson all-power applicability remains separate.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
