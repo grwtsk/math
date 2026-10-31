@@ -12,9 +12,15 @@
         "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.affine",
         "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.add",
         "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.affine_add",
-        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.mul_assoc_constructive"
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.mul_assoc_constructive",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.add_mul_constructive"
       ],
-      "allowed_axioms": []
+      "allowed_axioms": [],
+      "expected_types": {
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.affine": "{exponent : Nat → Nat} → GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear exponent → (scale offset : Nat) → GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear (fun n => exponent (scale * n + offset))",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.add": "{left right : Nat → Nat} → GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear left → GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear right → GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear (fun n => left n + right n)",
+        "GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear.affine_add": "{target overhead : Nat → Nat} → GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear target → GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear overhead → (scale offset : Nat) → GRWTSK.ComputerScience.AlgorithmsInComputerScience.SublinearExponent.IsSublinear (fun n => target (scale * n + offset) + overhead n)"
+      }
     }
   ],
   "compiler_wall_seconds": 30
