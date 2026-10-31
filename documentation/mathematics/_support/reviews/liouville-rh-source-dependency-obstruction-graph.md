@@ -19,7 +19,7 @@ The original source is `LiouvilleCausalEnergyTarget.lean` blob `a00aaa07c067b4c8
 
 ## 2. Graph semantics and evidence boundaries
 
-The JSON graph includes 28 nodes (20 directly read Lean modules plus eight mathematical or coverage nodes), seven typed hyperedges, six obstruction records and five prioritized obligations. A hyperedge consumes *all* its premises (AND). The one-point, short-window, double-Abel and alternative rough routes are OR alternatives toward the same goal; no method must prove the others. Import arrows document syntactic dependency only. A finite-sum identity does not imply a cancellation inequality. A rejected inference pattern is not a counterexample to actual Liouville.
+The JSON graph includes 32 nodes (20 directly read Lean modules plus twelve mathematical, transfer, or coverage nodes), seven typed hyperedges, six obstruction records and five prioritized obligations. A hyperedge consumes *all* its premises (AND). The one-point, short-window, double-Abel and alternative rough routes are OR alternatives toward the same goal; no method must prove the others. Import arrows document syntactic dependency only. A finite-sum identity does not imply a cancellation inequality. A rejected inference pattern is not a counterexample to actual Liouville.
 
 The graph uses these separate evidence roles: (i) mathematical argument in a companion review; (ii) theorem script in source; (iii) conditional `Prop` or theorem with explicit unproved hypotheses; (iv) exact-source native receipt. No new compilation, kernel replay, expected-interface or transitive-axiom audit was run for this graph; source scripts and historical claims keep their original statuses.
 
@@ -38,8 +38,8 @@ Each anchor's source path, exact observed Git blob, named declaration and source
 
 ## 4. Critical joint premise rules
 
-- **R1 (one-point alternative):** the actual all-positive-rate one-point partial-sum bound plus the exact Abel transfer would supply the energy target. The one-point assumption is itself RH-strength.
-- **R2 (short-window alternative):** a uniform all-N diffusive Fejér bound and its exact source-to-energy transfer would supply the energy target. Almost-all or fixed-height results do not fill it.
+- **R1 (one-point alternative):** the actual all-positive-rate one-point partial-sum bound AND the exact Abel transfer would supply the energy target. The one-point assumption is itself RH-strength.
+- **R2 (short-window alternative):** a uniform all-N diffusive Fejér bound AND its exact source-to-energy transfer would supply the energy target. Almost-all or fixed-height results do not fill it.
 - **R3 (double-Abel):** finite signed identity AND original causal kernel positivity/tail/boundary AND polynomial moment control AND *independent complete weighted rectangle arithmetic estimate* imply an energy bound, with diagonal and polynomial factors paid. The arithmetic premise is missing.
 - **R4 (prime delay):** the existing Gram/cutoff source plus the exact single-prime delayed reindexing and finite integral interchange identify the original complete covariance. This is a formalization bridge, not a cancellation theorem.
 - **R5 (signed Buchstab):** complete squareful-aware signed split AND valid mixed-covariance return AND independent weighted Type II bound AND complete rough/complement costs are required for a legitimate energy consumer. This composite is **proposed**, not already proved.
