@@ -1,0 +1,36 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceResidualOperatorNorm.lean",
+  "source_base_commit": "85ff4b5c1c1abbc7c8a591031bd32865e45a75e9",
+  "source_blob": "520c63a9cc97cf7ab43026e2eba1c9339e2989ca",
+  "source_sha256": "29847da1829210ce05707360f43f40defb1edea405dd13bfa58c3f5504c32ffd",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualOperatorNorm.lambda0_le_one",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualOperatorNorm.residualRate_nonnegative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualOperatorNorm.residualOperator_coe",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualOperatorNorm.residualOperator_isSymmetric",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualOperatorNorm.residualOperator_absolute_quadratic",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceResidualOperatorNorm.residualOperator_norm_le"
+  ],
+  "consumer": "Actual normalized Wilson second-value bound on principal orthogonal complement",
+  "hypotheses": [
+    "NeZero L",
+    "beta > 0",
+    "Actual unit nonnegative principal input",
+    "Actual invariant L2 operator and rankOne on that same Hilbert space"
+  ],
+  "constant": "rho=lambda0*(1-exp(-12 beta L^3)*lambda0)",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Normalized spectral-ratio consumer",
+    "Regulator-uniform physical scaling and continuum construction"
+  ]
+}
