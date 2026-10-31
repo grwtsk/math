@@ -100,11 +100,15 @@
     {
       "source_url": "https://www.numberphile.com/videos/1729-and-taxi-cabs",
       "source_path": "GRWTSK/NumberTheory/Taxicab.lean",
-      "source_blob": "1b87eb53e9d2445a6d46c530f99d040bc5aab6f6",
+      "source_blob": "b8663ce77ccd925af4774f47fc00ef0898c409b3",
       "declarations": [
         "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.identity_1729_first",
         "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.identity_1729_second",
-        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.two_representations_1729"
+        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.two_representations_1729",
+        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.strict_to_positive",
+        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.positive_cube_pair_upper_bound",
+        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.not_two_positive_representations_below",
+        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.least_two_cube_sum"
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
       "full_video_claim_inventory": "NOT_DONE",
@@ -112,6 +116,10 @@
       "source_history": [
         {
           "source_path": "GRWTSK/NumberTheory/DiophantineEquations/Taxicab.lean",
+          "source_blob": "1b87eb53e9d2445a6d46c530f99d040bc5aab6f6"
+        },
+        {
+          "source_path": "GRWTSK/NumberTheory/Taxicab.lean",
           "source_blob": "1b87eb53e9d2445a6d46c530f99d040bc5aab6f6"
         }
       ]
@@ -1314,5 +1322,13 @@
     "https://www.numberphile.com/videos/zero-factorial",
     "https://www.numberphile.com/videos/zero-knowledge-proof",
     "https://www.numberphile.com/videos/zvezda-stankova-podcast"
-  ]
+  ],
+  "verified_batch": {
+    "math_commit": "b419756ab25304880180bb9900afb543fab9a8aa",
+    "public_declarations": 26,
+    "expected_interfaces": 26,
+    "qualification_url": "https://github.com/grwtsk/noeaaeue/blob/ef5c635d4fccf13a8cad229e09f4c16211909a2f/verification/math/numberphile/b419756ab253/qualification.json",
+    "raw_receipt_sha256": "13aadaaf5b557f311b2bc52efee6da7c7642ebb397e49cffdc2f816ef5f504f9",
+    "scope": "Exact earlier source only; modified Taxicab minimality successor is not covered."
+  }
 }
