@@ -1,0 +1,107 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Actual signed Möbius waveform: residue classes, Abel transport, mixed parity energy",
+  "attribution": "grwtsk contributors",
+  "scope": "Source-faithful finite signed residue partition and classwise Abel increment; exact four-sector source energy; purely conditional all-rate RH consumer",
+  "baseline_main": "9f4603190c76323b09bc4b362cc7834c0b0ce342",
+  "new_source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean",
+    "blob": "07dfdae4a60b05f5da55cc20882411c85444fa82",
+    "namespace": "GRWTSK.NumberTheory.Moebius.DyadicSignedResidueWaveform",
+    "declarations": [
+      "sum_all_classes",
+      "classWave",
+      "completeWave",
+      "originalFixedWave",
+      "completeWave_eq_originalFixedWave",
+      "wholePickup_eq_completeWave",
+      "completeResidueEnergy",
+      "completeResidueEnergy_eq_pickupEnergy",
+      "parityWave",
+      "fourSectorSquare",
+      "completeWave_sq_eq_fourSectorSquare",
+      "completeResidueEnergy_eq_fourSectorIntegral",
+      "classMertens",
+      "classReciprocal",
+      "classAbelSample",
+      "prefix_succ",
+      "classMertens_succ",
+      "classReciprocal_succ",
+      "classAbelSample_succ_sub",
+      "sum_classAbelSample_eq_sampleResidue",
+      "wholePickup_at_log_eq_classAbel",
+      "AllRateResidueEnergy",
+      "riemannHypothesis_of_allRateResidueEnergy"
+    ],
+    "status": "SOURCE_PROOF_CANDIDATE"
+  },
+  "literature_disposition": {
+    "path": "documentation/mathematics/_support/reviews/signed-residue-waveform-energy-bridge.md",
+    "blob": "5fe53640e19f3be90d86719082bf84d36c2c8064"
+  },
+  "original_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicWeightedResidueClasses.lean",
+      "blob": "621dd0c0856301a8049e4e63f987579c4cea4596"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogarithmicPickupSeries.lean",
+      "blob": "5506b20363b885d49107bc13f36c871cf92e853b"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GoodScaleEnergyCriterion.lean",
+      "blob": "ca3ae4975b20cf796a167308a9e87546c6001c41"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicModTwoPairLift.lean",
+      "blob": "425b5074e96f9aecb459a9aa1270c22da59cf790"
+    }
+  ],
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "static_checks": [
+    "all parities and nonunit additive residues",
+    "exact original causal responses",
+    "all four post-square mixed channels",
+    "classwise Abel prefix endpoint cancellation",
+    "signed source and original pickupEnergy equality",
+    "no unproved research axiom or unsupplied cancellation theorem",
+    "correct nil cutoff and zero endpoint"
+  ],
+  "independent_finite_reference": {
+    "assertions": 65976,
+    "script_sha256": "18277d043711bb6a4fed638998eb14325c9473b3e339567654a85b14a419a080",
+    "status": "FINITE_REFERENCE_EVIDENCE_NOT_LEAN"
+  },
+  "required_proof_checks": [
+    "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.DyadicSignedResidueWaveform",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean",
+    "fresh supported kernel checker invocation determined from lake env leanchecker --help",
+    "expected theorem types and #print axioms for all new theorem dependencies"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_types": "NOT_RUN"
+  },
+  "authority": {
+    "native_execution": "NOT_AUTHORIZED_BY_THIS_STATIC_TARGET",
+    "new_remote_worker": "NOT_DISPATCHED",
+    "replay_receipts": "NONE"
+  },
+  "open_math": [
+    "Actual all-positive-rate cancellation for original signed Möbius waveform energy",
+    "Uniform classwise arithmetic supplier preserving signed cross-class interactions",
+    "Existing user local SignedWaveformEnergyTarget.lean and signed-waveform-energy.json exact bytes remain uninspected and unpublished"
+  ],
+  "not_a_claim_of": [
+    "Riemann Hypothesis",
+    "prismatic cohomology equivalence",
+    "uniform Möbius cancellation",
+    "PDE regularity",
+    "global cusp limit"
+  ]
+}
