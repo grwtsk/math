@@ -3787,3 +3787,39 @@ Local attribution: grwtsk contributors. Original local counting proof candidate,
 For S a finite subset of Fin N and b a Boolean color, the fiber of ALL functions Fin N -> Bool fixed to b on S is explicitly equivalent to arbitrary Boolean functions on the complementary coordinates. Its exact cardinality is `2^(N-S.card)`. For an actual census progression, injectivity gives support cardinal k and hence numerator `2^(N-k)`. The sample space is all Boolean functions, not uniform fixed-size subsets. No independence of overlapping AP events, density assumption, color-event disjointness at k=0, probability normalization, union bound, improved rate or full #138 conclusion is silently supplied.
 
 Consumer: normalize this exact numerator by `2^N`, combine the two disjoint color events for nonempty support, and apply the verified finite census. The dependence-aware improvement beyond exponential scale remains open. Imported mathematics: Mathlib finite function cardinality and complements; no OpenAI construction imports. Compilation/replay/axiom audits NOT_RUN for this new source. Earlier successful controls retain their exact original source/receipt scope and do not certify these bytes.
+
+
+## Continuous-kernel minorization iteration — source candidate (2026-10-31)
+
+Local byline: grwtsk contributors. This local finite-iteration deduction uses
+`ContinuousKernelMinorization` and `ContinuousKernelPowers`; it is not an
+independent verification or extension of an external paper's full theorem.
+The minorization source retains its Piazza–Shen, arXiv:2610.35286v1, Lemma 2.1
+citation; that external comparison is inherited, not newly reviewed here.
+
+For a continuous real kernel on a compact Hausdorff second-countable Borel
+probability space, assume both row and column integrals equal one, K >= a,
+a < 1, and |K-1| <= M everywhere. The local candidate concludes that the
+positive power indexed by n (n+1 factors) has residual at most (1-a)^n M.
+Fubini first preserves column normalization under convolution; induction
+then supplies the cancellation premise at every step of the existing
+one-step bound. Strict contraction additionally requires a > 0. This does
+not assume a continuous density for the zero-length identity.
+
+Declarations in namespace
+`GRWTSK.Analysis.Integration.ContinuousKernelMinorizationIteration`:
+`convolution_column_normalized`, `positivePower_column_normalized`, and
+`positivePower_residual_bound`. New source path: `GRWTSK/MeasureAndIntegration/ContinuousKernelMinorizationIteration.lean`;
+source blob `5709419f2c671327c6d23cdc5b8842b47b0c9965`, constructed on base commit `8f99d1b43b6fa83e520398c3616bf2ae5208ecc7`.
+The adjacent static target `documentation/mathematics/_verification/targets/MeasureAndIntegration/ContinuousKernelMinorizationIteration.source.json`
+pins its SHA-256 and all declarations. Compilation, fresh kernel replay,
+transitive axiom audit and importing expected-interface checks are NOT_RUN.
+No standalone Lean invocation bypasses managed ownership. Operational finite
+reference controls and source-bound qualification handoff belong to Noe;
+finite rational examples do not verify these Lean declarations.
+
+This supplies a candidate normalization bridge for finite kernel iteration.
+A concrete kernel, a positive minorization constant and the actual normalization
+witnesses are still required. No parameter-uniform rate, infinite-limit theorem,
+Hessian estimate, Wilson quadratic positive-operator order, continuum theorem,
+response-runtime refinement, SAT algorithm or ETH consequence follows here.
