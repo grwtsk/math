@@ -1,0 +1,32 @@
+{
+  "contracts": [
+    {
+      "source": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/CyclicWindowZeroMode.lean",
+      "declarations": [
+        "GRWTSK.ProbabilityAndMathematicalStatistics.SignedCyclicWalkPacket.CyclicWindow.sum_windows",
+        "GRWTSK.ProbabilityAndMathematicalStatistics.SignedCyclicWalkPacket.CyclicWindow.uncentered_eq_zeroMode_add_centered",
+        "GRWTSK.ProbabilityAndMathematicalStatistics.SignedCyclicWalkPacket.CyclicWindow.centered_nonneg",
+        "GRWTSK.ProbabilityAndMathematicalStatistics.SignedCyclicWalkPacket.CyclicWindow.local_to_global",
+        "GRWTSK.ProbabilityAndMathematicalStatistics.SignedCyclicWalkPacket.CyclicWindow.liouville_window_decomposition"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "retained_metadata": {
+    "attribution": "grwtsk contributors",
+    "source_sha256": "ea1b61dbbd14918b492a613a7704e19ccace93ddcabbadbb8af22c37a8c1cde7",
+    "predecessor_commit": "9fcdd3a98232805b10ea12508f2a2afeb16ae8fe",
+    "analysis_commit": "22f9e20885ac2dee753099c9f3c982ad8a0dfa1a",
+    "role": "exact finite decomposition; uniform arithmetic bound unproved",
+    "verification": {
+      "compilation": "NOT_RUN",
+      "fresh_kernel_replay": "NOT_RUN",
+      "transitive_axiom_audit": "NOT_RUN",
+      "expected_interface": "NOT_RUN"
+    }
+  }
+}

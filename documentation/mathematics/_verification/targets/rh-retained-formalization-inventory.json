@@ -1,0 +1,79 @@
+{
+  "schema": "grwtsk.retained-source-inventory/1",
+  "attribution": "grwtsk contributors",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredPrimeDirichletSeries.lean",
+      "sha256": "d99fafaad6b92f486db5bff622bdb341435374e5734cb0a90f33c81e771fd765"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDivisibilityEnergySplit.lean",
+      "sha256": "e69a05bb7f558de2e541f67512ba7b1ec6068cc9bdb19d121d56776997ba4fe4"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedCyclicEnergy.lean",
+      "sha256": "aaaff35d490cab1dd0d5a3dfa63be763f5d12eaf799059e9b3a69d78aac9b985"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCorrectionDirichletBridge.lean",
+      "sha256": "9f48431ad1f1afbd9baa6194db2a61f77499045f5d197a0cfdb4f49969ffa690"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCorrectionMajorant.lean",
+      "sha256": "443f3c77d31e8fbc18c1cca74a1134a2851ee10928d169a9ca6b024120c2443c"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveFinitePrefix.lean",
+      "sha256": "21ecbe28a345f0e9fdfe55223c83ab439c64dad796bddcf87960039e320a6746"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveFloorIdentity.lean",
+      "sha256": "e0336cc0534bc93a1c6aba2920cf2099c8810d983ed0b7cb18b45684cd3351c5"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveMellinAbsoluteBound.lean",
+      "sha256": "6c5a4284c684746d2bec66e522b38f9a2971dbc86700c056221dedfdb88b830d"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveMellinAtom.lean",
+      "sha256": "44fced88914624bb0205fc8c72fed758455e05e741e365bc652d41a599dd9ffd"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveMellinExchange.lean",
+      "sha256": "ebb47934c8100ae8b02892582c2c467e8f9ed77a65b606e5277dad5b2a06186f"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveMellinIdentity.lean",
+      "sha256": "02de1271fed5f11341fcd7290c328672fd44b4cbad5773eb06e9b7db84f9b7fb"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveNegativeTail.lean",
+      "sha256": "6d0aa6d1c25eac968d0ed997fefc74672d94933a53954087d7e863749a9058a4"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeZetaPoleCancellation.lean",
+      "sha256": "8e6f011970bfe2ec6725f0d9f9841e3e964ca255ed917f088bdee40e8fba5426"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/RealZetaNonvanishing.lean",
+      "sha256": "74cd8ae69db0b23954f8bf93471cf1e43fffc5a7b567c2e5f804ba328722ae39"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/CyclicWindowZeroMode.lean",
+      "sha256": "ea1b61dbbd14918b492a613a7704e19ccace93ddcabbadbb8af22c37a8c1cde7"
+    }
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "expected_interface": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN"
+  },
+  "unresolved_premises": [
+    "Uniform all-positive-rate Liouville causal-energy cancellation",
+    "Original prime-sign and Landau transfer obligations",
+    "Source-level API and type correctness require exact replay"
+  ],
+  "acceptance": false
+}
