@@ -8,7 +8,10 @@
     "manifest": "MSC source-layout-v1.json blob inspected by identity but content unavailable to reader (empty body)",
     "followup_files": "NOT_ENUMERATED",
     "unknown_source_extensions": "UNREVIEWED",
-    "verification": "source inspection only"
+    "verification": "source inspection only",
+    "source_nodes": 32,
+    "directly_read_lean_modules": 20,
+    "arithmetic_transfer_or_coverage_nodes": 12
   },
   "nodes": [
     {
@@ -246,13 +249,38 @@
       "path": "documentation/taxonomy/msc2020/source-layout-v1.json",
       "blob": "ec7ae0dce9138e0e1f44f36b65d433e0e9897e00",
       "status": "UNREADABLE_LARGE_MANIFEST_FOLLOWUP_FILES_UNRESOLVED"
+    },
+    {
+      "id": "RH",
+      "kind": "terminal_goal",
+      "statement": "_root_.RiemannHypothesis for the original zeta function, with exactly the Mathlib exclusions",
+      "status": "OPEN"
+    },
+    {
+      "id": "one_point_abel_transfer",
+      "kind": "conditional_transfer",
+      "statement": "Exact Abel/Laplace source comparison from a Liouville summatory all-positive-rate bound to causal energy; parameter losses retained",
+      "status": "REVIEWED_MATHEMATICALLY_NOT_KERNEL_AUDITED"
+    },
+    {
+      "id": "window_energy_transfer",
+      "kind": "conditional_transfer",
+      "statement": "Exact cyclic Fejer mean-square to original causal energy with rates and zero mode priced",
+      "status": "REVIEWED_MATHEMATICALLY_NOT_KERNEL_AUDITED"
+    },
+    {
+      "id": "double_abel_energy_transfer",
+      "kind": "conditional_transfer",
+      "statement": "Exact signed positive-gap/double-Abel aggregate plus original diagonal returning to physical-time Liouville energy",
+      "status": "SOURCE_PROOF_CANDIDATE"
     }
   ],
   "hyperedges": [
     {
       "id": "H1",
       "premises": [
-        "one_point"
+        "one_point",
+        "one_point_abel_transfer"
       ],
       "conclusion": "causal_target",
       "kind": "conditional_mathematical_transfer",
@@ -262,7 +290,8 @@
     {
       "id": "H2",
       "premises": [
-        "window_diffusive"
+        "window_diffusive",
+        "window_energy_transfer"
       ],
       "conclusion": "causal_target",
       "kind": "conditional_mathematical_transfer",
@@ -276,7 +305,8 @@
         "abel_gates",
         "abel_moment",
         "abel_boundary",
-        "rect_weighted"
+        "rect_weighted",
+        "double_abel_energy_transfer"
       ],
       "conclusion": "causal_target",
       "kind": "joint_premise_and",
