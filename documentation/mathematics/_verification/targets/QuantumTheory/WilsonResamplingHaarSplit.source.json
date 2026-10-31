@@ -1,0 +1,24 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonResamplingHaarSplit.lean",
+  "source_blob": "b4591b8fea29e71206535f5884add50fdc38db66",
+  "source_base_commit": "436d1d3cd8055eaa3041deed134a3398ddcbb81f",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonResamplingHaarSplit.splitEquiv",
+    "GRWTSK.Geometry.GaugeTheory.WilsonResamplingHaarSplit.assemble",
+    "GRWTSK.Geometry.GaugeTheory.WilsonResamplingHaarSplit.assemble_apply",
+    "GRWTSK.Geometry.GaugeTheory.WilsonResamplingHaarSplit.assemble_split",
+    "GRWTSK.Geometry.GaugeTheory.WilsonResamplingHaarSplit.split_preserving",
+    "GRWTSK.Geometry.GaugeTheory.WilsonResamplingHaarSplit.assemble_preserving",
+    "GRWTSK.Geometry.GaugeTheory.WilsonResamplingHaarSplit.continuous_assemble",
+    "GRWTSK.Geometry.GaugeTheory.WilsonResamplingHaarSplit.integral_split"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "mathematical_acceptance": false,
+  "scope": "Actual A/complement coordinate equivalence and Haar Fubini; no Gibbs independence or unweighted exterior marginal."
+}
