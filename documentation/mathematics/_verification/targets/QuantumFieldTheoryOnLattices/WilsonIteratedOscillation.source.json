@@ -1,9 +1,9 @@
 {
   "status": "SOURCE_PROOF_CANDIDATE",
   "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonIteratedOscillation.lean",
-  "source_base_commit": "8eae94c1ab3980a5c104538e7c19e5fd035aa5f8",
-  "source_blob": "6e5601d3ea47c31140f70816a10eba2e982b158a",
-  "sha256": "c7a57bdcbe4005ba4759108d35a78090b9d6af972741ee90ac8606fc92ffc3a5",
+  "source_base_commit": "2a8b119b92aad5a46c4bd10e127f38ce083974c7",
+  "source_blob": "dcc3c5b86b2a812610aaa15acd9808a9aff1b972",
+  "sha256": "9721dff78c3110e8dd01d59d38bbdd640f45f624021fb007a16fef1264b06586",
   "declarations": [
     "GRWTSK.Geometry.GaugeTheory.WilsonIteratedOscillation.theta",
     "GRWTSK.Geometry.GaugeTheory.WilsonIteratedOscillation.theta_nonneg",

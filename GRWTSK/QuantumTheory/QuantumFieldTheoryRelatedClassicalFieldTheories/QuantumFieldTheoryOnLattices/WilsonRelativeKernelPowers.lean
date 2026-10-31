@@ -19,6 +19,7 @@ open GRWTSK.Geometry.GaugeTheory.WilsonSliceGeometry
 open GRWTSK.Geometry.GaugeTheory.WilsonSliceHaar
 open GRWTSK.Geometry.GaugeTheory.WilsonSliceAction
 open GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert
+open GRWTSK.Geometry.GaugeTheory.WilsonSliceIntegralRepresentative
 open GRWTSK.Geometry.GaugeTheory.WilsonSliceSpectralApproximation
 open GRWTSK.Geometry.GaugeTheory.WilsonSlicePositivePrincipal
 open GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalRepresentativeBounds
