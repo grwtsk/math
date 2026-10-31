@@ -1,0 +1,30 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/ContinuousKernelMinorization.lean",
+  "source_base_commit": "1b38a559e7970426502368cefb0f287539047aa9",
+  "source_blob": "46a34f6ede9c277af47c4894becb39559071e59d",
+  "sha256": "2e8731e14541f238e02e6ced28dd5ab3b0b6f2cebb46413c1bbe0cd34c855653",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.ContinuousKernelMinorization.remainder",
+    "GRWTSK.Analysis.Integration.ContinuousKernelMinorization.split",
+    "GRWTSK.Analysis.Integration.ContinuousKernelMinorization.remainder_nonnegative",
+    "GRWTSK.Analysis.Integration.ContinuousKernelMinorization.remainder_row",
+    "GRWTSK.Analysis.Integration.ContinuousKernelMinorization.remainder_column",
+    "GRWTSK.Analysis.Integration.ContinuousKernelMinorization.convolution_residual_split",
+    "GRWTSK.Analysis.Integration.ContinuousKernelMinorization.convolution_residual_bound"
+  ],
+  "hypotheses": "Compact Hausdorff second-countable Borel probability space; continuous K,P; a<1, K>=a, actual K row and P column integral1 for the final bound, pointwise residual bound M. Strict contraction additionally requires a>0.",
+  "consumer": "General continuous-kernel adaptation of Piazza-Shen Lemma2.1 algebra: exact minorization splitting and zeroth-order residual contraction. Actual Wilson C2 regularity and 4D conditional block supplier remain separate.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
