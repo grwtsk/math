@@ -1,0 +1,26 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonFiniteBlockCovarianceBound.lean",
+  "source_base_commit": "f9a565bd512b6320ec638aa0e7f4610c98514314",
+  "source_blob": "175bfbf3ddaf46cb0039fca016ba1650cd34f539",
+  "sha256": "52864730c50ef4332f3aa1878c46a15836dedf876821d3d622400f5d33f12cb7",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonFiniteBlockCovarianceBound.slice_block_range",
+    "GRWTSK.Geometry.GaugeTheory.WilsonFiniteBlockCovarianceBound.centered_slice_bound",
+    "GRWTSK.Geometry.GaugeTheory.WilsonFiniteBlockCovarianceBound.finite_block_covariance_bound"
+  ],
+  "hypotheses": "L=(p+1)+(q+1), beta>0, actual gauge-invariant principal eigenvector f, Haar-a.e. f>=0, f!=0, norm f=1, actual principal eigenvalue equation; powers have lengths p+1,q+1; actual finite spatial blocks B,C lifted at0,p+1; normalizer positivity uses actual partition positivity, explicit E_p*E_q<1 for the final bound; both spatial blocks may be empty.",
+  "consumer": "Actual finite Wilson covariance bound with concrete centered constants2*card B,2*card C and actual regulator-dependent errors E_p,E_q, requiring E_p*E_q<1; qualification and physical uniformity remain separate.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
