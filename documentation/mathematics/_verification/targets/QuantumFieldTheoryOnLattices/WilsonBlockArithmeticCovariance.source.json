@@ -1,0 +1,55 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonBlockArithmeticCovariance.lean",
+  "source_base_commit": "b5abd65bee2b72f8a14f26744ceec1a9fe232254",
+  "source_blob": "b1c27750d61252e857bc23a9a898304a6410b7c2",
+  "source_sha256": "c35b1c6d8605a7ce99fddb20a59b225a17f866af58eb927ea736a8ce3fa9d24a",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.plaquetteEnergy",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.blockEnergy",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.defaultLabel",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.defaultLabel_positive",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.defaultLabel_injective",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.markedEnergy",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.plaquetteLinks",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.linkSupport",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.Separated",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.blockCovariance",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.markedCovariance",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.plaquetteEnergy_bounds",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.plaquetteEnergy_continuous",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.blockEnergy_continuous",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.blockEnergy_gauge",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.plaquetteEnergy_memLp",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.blockEnergy_memLp",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.blockCovariance_eq_moments",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.blockCovariance_eq_pairs",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.markedCovariance_eq_pairs",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.covariance_exact_comparison",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.originPlaquette",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.distantPlaquette",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.example_blocks_separated",
+    "GRWTSK.Geometry.GaugeTheory.WilsonBlockArithmeticCovariance.exampleBlockCovariance"
+  ],
+  "consumer": "Two actual finite Wilson block covariances and explicit Mobius-marked comparison",
+  "hypotheses": [
+    "NeZero L",
+    "beta>=0 for probability/L2/covariance identities",
+    "Explicit plaquette labeling; default label is positive and injective",
+    "Support separation does not supply independence or decay"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Quantitative estimates on actual connected Wilson pair correlations",
+    "A map from original RH causal-response observables to marked Wilson observables",
+    "RH-to-required-estimate direction, physical uniform scaling and continuum reconstruction"
+  ]
+}
