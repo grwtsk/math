@@ -1,0 +1,22 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonCrossingAction.lean",
+  "source_blob": "1ecf399053584cc83cad4b1f7d37e66aed1c62c3",
+  "source_base_commit": "fd95117811ded8ee38c6212fb0f2b2a06ac2069b",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonCrossingAction.crossing",
+    "GRWTSK.Geometry.GaugeTheory.WilsonCrossingAction.resample_agree_outside",
+    "GRWTSK.Geometry.GaugeTheory.WilsonCrossingAction.local_difference",
+    "GRWTSK.Geometry.GaugeTheory.WilsonCrossingAction.local_difference_bounds",
+    "GRWTSK.Geometry.GaugeTheory.WilsonCrossingAction.local_difference_oscillation"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "mathematical_acceptance": false,
+  "hypotheses": "L nonzero, finite A,D, exterior V,W agree outside D, identical resampling u on A. Overlap A,D allowed; periodic coincidences retained.",
+  "scope": "Exact crossing sum and action-difference oscillation <=4*card crossing; no fixed incidence count or uniform contraction."
+}
