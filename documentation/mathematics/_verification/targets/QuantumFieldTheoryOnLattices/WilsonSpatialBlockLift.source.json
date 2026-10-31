@@ -1,0 +1,41 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSpatialBlockLift.lean",
+  "source_base_commit": "4ce927f2e2fcb02b73a8ea10944797c159d8ecb5",
+  "source_blob": "e5db54034e8a455a241ed1809a6a8682733139b3",
+  "source_sha256": "6ecbbcec3dd81335a162651e2ce630ce7e7affee43dc54c03e69e98f0debedeb",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.spatialPlaquetteEmbedding",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.liftBlock",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.sliceBlockEnergy",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.historyBlockEnergy",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.continuous_sliceBlockEnergy",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.continuous_historyBlockEnergy",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.blockEnergy_lift",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.lifted_link_time",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.liftBlock_link_time",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.liftBlock_separated",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.exampleSpatialPlaquette",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSpatialBlockLift.example_temporal_blocks_separated"
+  ],
+  "hypotheses": [
+    "NeZero L",
+    "distinct periodic time indices for support separation",
+    "actual maintained plaquetteIndexEquiv, spatialHistory and linkSupport"
+  ],
+  "consumer": "Actual spatial block insertions for normalized periodic Wilson covariance",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification including this new geometry consumer",
+    "Actual block covariance transport through the periodic marginal",
+    "Trace-class and finite-periodic spectral comparison",
+    "Uniform physical scaling and continuum reconstruction"
+  ]
+}
