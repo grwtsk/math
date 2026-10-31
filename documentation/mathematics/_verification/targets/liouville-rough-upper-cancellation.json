@@ -1,0 +1,124 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Tuned upper cancellation for rough Liouville sums and causal energy",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "review_base": {
+    "analytical_commit": "ddcba3d61c70e576b72e0945c42c21caed44663d",
+    "analytical_tree": "81c78c85b06a79aee9b6a006a88ddcbb1d118ca4",
+    "publication_expected_head": "54ec85ac0548c35dbe88b0f232271c1dcdabcb3d",
+    "publication_base_tree": "225a7c30d1a7bb899fc53f84aea5a7e0ffb01be2"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleRoughUpperCancellation.lean",
+    "blob": "b247d36a60b69681737725a0cb709dd2f93e11c4",
+    "namespace": "GRWTSK.NumberTheory.LiouvilleRoughUpperCancellation",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleProportionalThreeFactorObstruction",
+      "Mathlib"
+    ],
+    "proved_scope": ["signed_approximation_abs_upper"],
+    "open_named_propositions": [
+      "SelbergDickmanRoughApproximation",
+      "TunedRoughPrefixUpper",
+      "TunedTerminalBandPrefixUpper",
+      "TunedRoughCausalEnergyUpper",
+      "TunedInverseSieveCostSuperexponential",
+      "SquarefreeDivisorRoughIdentity",
+      "PayablePolynomialCutoffVKUpper",
+      "NewUpperCancellationDisposition"
+    ]
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-rough-upper-cancellation.md",
+    "blob": "5b1eb46327b279743eb4b8424cf19d696dbd1172",
+    "claims": [
+      "|Xi(X,z)+X rho(u-1)/log X| << X (u+1)^3 log log X/(log X)^2 in the Selberg range",
+      "At u_X=8 log log X/log log log X, |Xi(X,z_X)| << X (log log X)^4/((log X)^2 (log log log X)^3)",
+      "For Y_T=floor(exp(T log log T/(8 log T))), E_Y(T) << exp(T) (log T)^8/(T^4 (log log T)^6)",
+      "The exact positive inverse-sieve cost is superexponential in physical time throughout the available Selberg range",
+      "The polynomial-cutoff Vinogradov-Korobov comparator is prior cancellation and is not counted as the new result"
+    ]
+  },
+  "literature_ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-rough-upper-cancellation-references.md",
+    "blob": "17a15b207d8b6fe56e09702d2bf2ed6519abd939",
+    "canonical_monolith_status": "SOURCE_COMPLETE_APPEND_NOT_AVAILABLE_DO_NOT_REPLACE_FROM_TRUNCATED_RESPONSE"
+  },
+  "local_upstream": {
+    "actual_liouville_target_blob": "a00aaa07c067b4c88203372870b5d5d151de0de4",
+    "rough_buchstab_blob": "1a9e77ebbd97bf288535e9e344cb55958618a417",
+    "three_factor_obstruction_blob": "28522d0b1fd4fe06b49d17dbee102da48b012c22"
+  },
+  "external_sources": [
+    {
+      "authors": ["Hugh L. Montgomery", "Robert C. Vaughan"],
+      "title": "Multiplicative Number Theory II: Primes and Sieves",
+      "location": "Theorem 21.11 and equation (21.77)",
+      "use": "Selberg extremal main term and sharper k^3 error",
+      "local_replay": "NOT_RUN"
+    },
+    {
+      "authors": ["Kevin Ford", "James Maynard"],
+      "title": "On the theory of prime-producing sieves",
+      "arxiv": "2407.14368",
+      "location": "Lemma 9.4",
+      "use": "alternating ordered almost-prime profile equals a negative Dickman value",
+      "local_replay": "NOT_RUN"
+    }
+  ],
+  "parameter_record": {
+    "general_depth": "u=log X/log z",
+    "tuned_depth": "u_X=8 log log X/log log log X",
+    "tuned_cutoff": "z_X=exp(log X log log log X/(8 log log X))",
+    "tuned_prefix_upper": "X (log log X)^4/((log X)^2 (log log log X)^3)",
+    "physical_cutoff": "Y_T=floor(exp(T log log T/(8 log T)))",
+    "causal_energy_upper": "exp(T) (log T)^8/(T^4 (log log T)^6)",
+    "terminal_band": "T-8 log T <= u <= T",
+    "inverse_gap": "log kappa(z) >> sqrt(z)/log z"
+  },
+  "mathematical_disposition": {
+    "new_programme_specific_upper_cancellation": true,
+    "new_underlying_sieve_theorem": false,
+    "new_unsifted_liouville_energy_bound": false,
+    "uniform_energy_proved": false,
+    "riemann_hypothesis_proved": false
+  },
+  "verification": {
+    "source_inspection": "DONE",
+    "analytical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "external_theorem_replay": "NOT_RUN",
+    "workflow_status": "NOT_CHECKED_BEFORE_PUBLICATION"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "authority": {
+    "publication_mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "expected_head": "54ec85ac0548c35dbe88b0f232271c1dcdabcb3d",
+    "root_import": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleRoughUpperCancellation.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleRoughUpperCancellation.lean",
+    "check exact expected types and #print axioms for every theorem in GRWTSK.NumberTheory.LiouvilleRoughUpperCancellation",
+    "audit the complete transitive imports for sorryAx, research axioms, native trust and omitted required modules",
+    "replay the cited external theorem inputs separately"
+  ],
+  "publication_reconciliation": {
+    "first_staged_commit": "ee92e808d2bf8ec2fbf16bab55ba8e6c2b65be8a",
+    "first_staged_update": "NOT_APPLIED_AFTER_CONCURRENT_MAIN_ADVANCE",
+    "concurrent_head": "54ec85ac0548c35dbe88b0f232271c1dcdabcb3d",
+    "concurrent_head_message": "Restrict actual Wilson action differences to affected plaquettes",
+    "reconciliation": "REBUILD_TREE_ON_CURRENT_HEAD_WITH_IDENTICAL_SOURCE_REVIEW_LEDGER_BLOBS_AND_UPDATED_TARGET"
+  }
+}
