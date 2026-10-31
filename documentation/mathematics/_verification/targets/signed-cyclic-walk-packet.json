@@ -1,0 +1,114 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Complete signed cyclic-walk packet and exact full-shift Chowla-to-zero-mode boundary",
+  "attribution": "grwtsk contributors",
+  "baseline_main": "a50d44327f7ffb046fd539e60ac787d6ba911bae",
+  "source": {
+    "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/SignedCyclicWalkPacket.lean",
+    "git_blob": "2f07d2d96384e6bbcca610bce9f5cb1eecade91b",
+    "namespace": "GRWTSK.ProbabilityAndMathematicalStatistics.SignedCyclicWalkPacket",
+    "declarations": [
+      "signedWalk",
+      "cyclicCorrelation",
+      "completePacket",
+      "completePacket_eq_signedWalk_sq",
+      "cyclicCorrelation_zero",
+      "completePacket_nonneg",
+      "signedWalk_sq_le_of_completePacket_le",
+      "cyclicCorrelation_zero_of_unit",
+      "moebiusPrefixOnCycle",
+      "liouvillePrefixOnCycle",
+      "moebius_packet_eq_walk_sq",
+      "liouville_packet_eq_walk_sq"
+    ],
+    "status": "SOURCE_PROOF_CANDIDATE"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/signed-cyclic-chowla-zero-mode-local-global.md",
+    "git_blob": "a6f8e43608be4caef7feaa82800d29868a091ec0",
+    "analytic_only": [
+      "C_cyclic(h)=U_unwrapped(h)+U_unwrapped(N-h) for 1<=h<N",
+      "finite singleton-Bernoulli TV=|LiouvillePrefix|/(2N)",
+      "fixed-window Bernoulli genericity does not imply quantitative square-root bound"
+    ]
+  },
+  "source_predecessors": [
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteWalshPatterns.lean",
+      "git_blob": "b69548272d63523659710130ee46e4a5426a3f76"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteWalshBernoulliTV.lean",
+      "git_blob": "57623c7339c949576e601378f2696b54a47e6475"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteChowlaUniformEnvelope.lean",
+      "git_blob": "6bc164f9b00226548d9970518a092c16f10cd5ef"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWaveformEnergyResidueBridge.lean",
+      "git_blob": "ddb8620518968794c89cfa62a0b8f4c242c19f7a"
+    }
+  ],
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "must_check": [
+    "AddCommGroup finite translation equiv is source-exact",
+    "All group elements and offsets retained, no dropped orientation",
+    "Positive-index guard n.val+1 preserves true arithmetic function on 1..N",
+    "ArithmeticFunction.liouville and moebius type conversions exact",
+    "Mobius squareful zeros not changed to unit values",
+    "Cyclic wrap retained and matched analytically to opposite ordinary gap",
+    "All four parity sectors preserved when the full shift packet is transported",
+    "No full packet bound, entropy theorem, RH or phase exclusion is inferred from finite identities",
+    "Publication does not upgrade source candidates or root build"
+  ],
+  "reference_diagnostics": {
+    "status": "FINITE_REFERENCE_EVIDENCE_NOT_LEAN",
+    "N_range": "1..100",
+    "sources": [
+      "actual Möbius",
+      "actual Liouville"
+    ],
+    "exact_assertions": 10500,
+    "claims": [
+      "sum_h C_N(h)=S_N^2",
+      "C_N(0)=sum_n a(n)^2",
+      "C_N(h)=U_N(h)+U_N(N-h) for all 1<=h<N",
+      "sum_h!=0 C_N(h)=2 sum_h U_N(h)"
+    ]
+  },
+  "commands_for_separately_authorized_verifier": [
+    "git checkout --detach <published_commit>",
+    "lake env lean --version",
+    "lake env lean -DwarningAsError=true GRWTSK/ProbabilityTheoryAndStochasticProcesses/SignedCyclicWalkPacket.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/ProbabilityTheoryAndStochasticProcesses/SignedCyclicWalkPacket.lean",
+    "lake env leanchecker --help",
+    "check exact theorem types and #print axioms of all new declarations"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN"
+  },
+  "authority": {
+    "native_execution": "NOT_AUTHORIZED_BY_STATIC_TARGET",
+    "remote_worker": "NOT_DISPATCHED"
+  },
+  "unresolved_math": [
+    "one single all-horizon arithmetic saving on the complete signed weighted growing-shift packet",
+    "Möbius/Liouville all-positive-rate causal energy bound remains open",
+    "kernel verification of finite source and separately existing RH dependencies",
+    "source-bound Lean proof for the additional cyclic-to-ordinary per-shift wrap equality"
+  ],
+  "nonclaims": [
+    "Riemann Hypothesis proved",
+    "Chowla conjecture proved",
+    "Mertens random-walk CLT proved",
+    "subpolynomial energy proved",
+    "unrestricted zero-freeness proved"
+  ]
+}
