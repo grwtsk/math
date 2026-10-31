@@ -1,0 +1,35 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/ArithmeticWilsonPositivityComparison.lean",
+  "source_base_commit": "85f2dce95a1e287e5a06f29316adb61e3849c054",
+  "source_blob": "a03564a0d9214ed506c94cb768cf20ec4026de39",
+  "source_sha256": "57991a50f284d2fdf555330c6d4fbd28b8843115b08e5f84988f4952087ff115",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.ArithmeticWilsonPositivityComparison.arithmeticQuadratic",
+    "GRWTSK.Geometry.GaugeTheory.ArithmeticWilsonPositivityComparison.negativeTrial",
+    "GRWTSK.Geometry.GaugeTheory.ArithmeticWilsonPositivityComparison.negativeTrial_quadratic",
+    "GRWTSK.Geometry.GaugeTheory.ArithmeticWilsonPositivityComparison.arithmetic_negative_direction",
+    "GRWTSK.Geometry.GaugeTheory.ArithmeticWilsonPositivityComparison.no_wilson_quadratic_transport",
+    "GRWTSK.Geometry.GaugeTheory.ArithmeticWilsonPositivityComparison.markedPair",
+    "GRWTSK.Geometry.GaugeTheory.ArithmeticWilsonPositivityComparison.no_markedPair_wilson_transport"
+  ],
+  "consumer": "Compatibility test before a signed RH-source/Wilson operator identification",
+  "hypotheses": [
+    "Actual Wilson beta>=0, NeZero L",
+    "Two nonzero real arithmetic coefficients; real marked-pair specialization retains both nonzero-response hypotheses"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Qualify exact complete source closure",
+    "Construct an actual marked observable/correlation comparison",
+    "Prove an RH-to-arithmetic-estimate direction if used",
+    "Uniform physical scaling and continuum reconstruction"
+  ]
+}
