@@ -1,0 +1,30 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/TwoDensityResidualIdentity.lean",
+  "source_base_commit": "d333980c73d810908d9aa154f66168406bedff6e",
+  "source_blob": "1ff35a7b859a45f4e9c85bcb9d31c4bf92e0dc07",
+  "sha256": "950175954fcb40878371b6887b8ee814d2dcd9187c4683a1949c11e9d1fe919d",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.TwoDensityResidualIdentity.density",
+    "GRWTSK.Analysis.Integration.TwoDensityResidualIdentity.residualProduct",
+    "GRWTSK.Analysis.Integration.TwoDensityResidualIdentity.pair_integrable",
+    "GRWTSK.Analysis.Integration.TwoDensityResidualIdentity.density_row_integral",
+    "GRWTSK.Analysis.Integration.TwoDensityResidualIdentity.normalizer_identity",
+    "GRWTSK.Analysis.Integration.TwoDensityResidualIdentity.centered_left_marginal",
+    "GRWTSK.Analysis.Integration.TwoDensityResidualIdentity.centered_right_marginal"
+  ],
+  "hypotheses": "Compact Hausdorff second-countable Borel space with probability measure; continuous J,K; explicit row/column normalization and centered continuous observable hypotheses per theorem.",
+  "consumer": "Generic exact second-order normalizer and centered marginal cancellations; actual Wilson all-power applicability remains separate.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
