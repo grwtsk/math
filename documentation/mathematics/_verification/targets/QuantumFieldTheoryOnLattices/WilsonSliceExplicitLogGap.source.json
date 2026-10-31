@@ -2,9 +2,9 @@
   "schema": "grwtsk.source-verification-target/1",
   "msc2020": "81T25",
   "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceExplicitLogGap.lean",
-  "source_base_commit": "5ff580ebf26978bfdade4815d8b69a1b4d6317f5",
-  "source_blob": "9bdfb9aa07f4830b7c153eb64f95dc27c82e4f27",
-  "source_sha256": "8615da41ab2aa19ba3bcce4a243b18a6e8e0697442c27ec1808cbc7d0d4f3b85",
+  "source_base_commit": "ff0716d3a25cd963002b3e347cd5b8d0de93fe94",
+  "source_blob": "266956a040e37009feab4bf7404af2e0616161dd",
+  "source_sha256": "faa22321360c877255ef6b27fe07e1c28f136f682ac8ad2fdecdb86df3634bad",
   "declarations": [
     "GRWTSK.Geometry.GaugeTheory.WilsonSliceExplicitLogGap.separationFactor_bounds",
     "GRWTSK.Geometry.GaugeTheory.WilsonSliceExplicitLogGap.explicit_logarithmic_gap"

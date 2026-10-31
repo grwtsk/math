@@ -33,7 +33,9 @@ theorem separationFactor_bounds (β : ℝ) (hβ : 0 < β) :
   constructor
   · exact Real.exp_pos _
   · apply Real.exp_lt_one_iff.mpr
-    nlinarith [pow_pos hL 3]
+    have hp : 0 < 24 * β * (L : ℝ)^3 :=
+      mul_pos (mul_pos (by norm_num) hβ) (pow_pos hL 3)
+    nlinarith [hp]
 
 /-- A bound on the actual maximal logarithmic domain, not on a surrogate operator. -/
 theorem explicit_logarithmic_gap (β : ℝ) (hβ : 0 < β) {a : ℝ} (ha : 0 < a)
