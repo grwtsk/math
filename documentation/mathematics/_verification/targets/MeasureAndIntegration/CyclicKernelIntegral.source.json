@@ -1,0 +1,24 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/CyclicKernelIntegral.lean",
+  "source_base_commit": "c7797b83edc729e8c8e7e459ad772c8f4eb41314",
+  "source_blob": "2790a6587a20ab6e10977f40327e88abd9b17f14",
+  "sha256": "782b7bb1ca07e2cb7ae295a47a8c545ddef01f7c1dfa9648f1a3ee95d88b7bb4",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.CyclicKernelIntegral.cyclic_integral_eq_diagonal"
+  ],
+  "hypotheses": "Compact Hausdorff second-countable Borel space; probability measure; continuous real kernels; arbitrary actual L2 input.",
+  "consumer": "Finite periodic Wilson partition after separate actual ZMod coordinate transport.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
