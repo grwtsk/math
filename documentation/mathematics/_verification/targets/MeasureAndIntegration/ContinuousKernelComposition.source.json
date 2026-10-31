@@ -1,0 +1,29 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/ContinuousKernelComposition.lean",
+  "source_base_commit": "38bdab3e71fec43b4341b03a3beca3d298b0a6b1",
+  "source_blob": "ba64c91a3bd3508075398e4046dfb4e1f65b5600",
+  "sha256": "f7f87cf52deb09ac555bec06586ec2e6df12207dff58daf799ba9c067d331b38",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.ContinuousKernelComposition.convolutionValue",
+    "GRWTSK.Analysis.Integration.ContinuousKernelComposition.continuous_convolutionValue",
+    "GRWTSK.Analysis.Integration.ContinuousKernelComposition.convolution",
+    "GRWTSK.Analysis.Integration.ContinuousKernelComposition.integrable_composition",
+    "GRWTSK.Analysis.Integration.ContinuousKernelComposition.integralValue_composition",
+    "GRWTSK.Analysis.Integration.ContinuousKernelComposition.operator_convolution"
+  ],
+  "hypotheses": "Compact Hausdorff second-countable Borel space; probability measure; continuous real kernels; arbitrary actual L2 input.",
+  "consumer": "Positive-length periodic Wilson kernel arcs; actual maintained L2 operator composition.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
