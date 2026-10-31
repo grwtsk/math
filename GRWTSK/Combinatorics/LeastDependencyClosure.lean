@@ -3579,7 +3579,8 @@ theorem finiteIndexCandidates_nodup (n : Nat) :
   induction n with
   | zero => exact List.Pairwise.nil
   | succ n ih =>
-    change (0 :: (finiteIndexCandidates n).map Fin.succ).Nodup
+    change ((⟨0, Nat.zero_lt_succ n⟩ : Fin (n + 1)) ::
+      (finiteIndexCandidates n).map Fin.succ).Nodup
     apply List.Pairwise.cons
     · intro value member equal
       obtain ⟨candidate, _, mapped⟩ :=
