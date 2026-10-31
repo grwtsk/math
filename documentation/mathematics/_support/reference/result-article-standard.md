@@ -1,6 +1,6 @@
 # Result article standard
 
-Collective copyright attribution: grwtsk contributors. Scholarly bylines credit the human author or chosen human collective.
+Local attribution: grwtsk contributors.
 
 Mathematical result articles live beside their subjects under
 [`documentation/mathematics`](../../index.md). A leaf states one coherent result;
@@ -65,7 +65,7 @@ errors; new articles use the hidden form.
 | `id` | Persistent article identity, independent of title and location. |
 | `slug`, `aliases` | Readable canonical slug and retained previous slugs; collisions are errors. |
 | `kind` | `leaf` or `composite`. |
-| `title`, `author`, `abstract` | Article title, a nonempty publicly authorized human or collective-human byline (default `grwtsk contributors`), and self-contained abstract. The byline is not Git author identity or copyright transfer. |
+| `title`, `author`, `abstract` | Article title, exactly `grwtsk contributors` for local attribution, and self-contained abstract. Preserve actual upstream authorship separately; this field does not fix Git identity or transfer copyright. |
 | `subjects` | Primary stable subject ID and additional proposed/reviewed associations with rationale. |
 | `statements` | Exact hypotheses, conclusion, classification, fully qualified declarations, and source pins per statement. |
 | `verification` | Recorded status, exact scope, evidence references and pins, axiom policy, and unresolved premises. |
