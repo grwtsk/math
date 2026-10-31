@@ -128,6 +128,55 @@ arithmetic hypothesis; it is to be discharged by floor/log conversions. -/
 def CausalCutoffIdentity : Prop :=
   ∀ (T u : ℝ), 0 ≤ u → u ≤ T → waveform u = fixedWaveform T u
 
+/-- Exact support of every source term above the dynamic floor.
+The strict inequality is valid at integral birth heights because the
+terminal response is zero there as well. -/
+theorem pickupResponse_zero_of_floor_lt
+    (n : ℕ) (u : ℝ) (hn : ⌊Real.exp u⌋₊ < n) :
+    pickupResponse n u = 0 := by
+  have hne : 0 < n := by omega
+  have hnreal : 0 < (n : ℝ) := by exact_mod_cast hne
+  have hfloor : Real.exp u < (⌊Real.exp u⌋₊ : ℝ) + 1 :=
+    Nat.lt_floor_add_one _
+  have hnext : (⌊Real.exp u⌋₊ : ℝ) + 1 ≤ (n : ℝ) := by
+    exact_mod_cast (Nat.succ_le_iff.mpr hn)
+  have hlt : Real.exp u < (n : ℝ) := lt_of_lt_of_le hfloor hnext
+  have hbirth : u < Real.log (n : ℝ) :=
+    (Real.lt_log_iff_exp_lt hnreal).2 hlt
+  exact pickupResponse_before_birth n u hbirth
+
+/-- Finite source at dynamic cutoff equals the longer fixed inventory:
+all future entries have zero literal response. -/
+theorem waveform_eq_fixed_of_le
+    (T u : ℝ) (hu : u ≤ T) :
+    waveform u = fixedWaveform T u := by
+  classical
+  have hfloor : ⌊Real.exp u⌋₊ ≤ ⌊Real.exp T⌋₊ :=
+    Nat.floor_mono (Real.exp_le_exp.mpr hu)
+  have hsub :
+      Finset.Icc 1 ⌊Real.exp u⌋₊ ⊆
+        Finset.Icc 1 ⌊Real.exp T⌋₊ := by
+    intro n hn
+    exact Finset.mem_Icc.mpr
+      ⟨(Finset.mem_Icc.mp hn).1,
+        le_trans (Finset.mem_Icc.mp hn).2 hfloor⟩
+  unfold waveform fixedWaveform
+  symm
+  apply Finset.sum_subset hsub
+  intro n hlarge hnot
+  have hsmall : 1 ≤ n := (Finset.mem_Icc.mp hlarge).1
+  have hn : ⌊Real.exp u⌋₊ < n := by
+    by_contra h
+    exact hnot (Finset.mem_Icc.mpr ⟨hsmall, Nat.le_of_not_gt h⟩)
+  rw [pickupResponse_zero_of_floor_lt n u hn]
+  ring
+
+/-- The exact original dynamic/fixed cutoff identity, without any
+new hypothesis or replacement of the physical-time source. -/
+theorem causalCutoffIdentity : CausalCutoffIdentity := by
+  intro T u hu0 huT
+  exact waveform_eq_fixed_of_le T u huT
+
 /-- The selected-divisor weighted source itself is a finite original-index
 sum. Squaring and integrating recovers the full selected-divisor Gram,
 rather than the distinct MIXED gram. -/
