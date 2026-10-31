@@ -21,12 +21,16 @@
       "original_typeII_reconstruction",
       "originalMixedGram_eq_diagonal_add_offDiagonal",
       "originalMixedDiagonal_eq_single_sum",
-      "weightedDelayedCovariance_eq_negative_mixed_of_bridges"
+      "weightedDelayedCovariance_eq_negative_mixed_of_bridges",
+      "integrate_finite_double_sum",
+      "finite_mixed_integrand_expand",
+      "finite_mixed_integral_eq_originalGram_of_integrable"
     ],
     "open_props": [
       "PhysicalTimeGramBridge",
       "PrimeShiftSquareBridge"
-    ]
+    ],
+    "observed_blob": "47228aca1eb9cdacae84d90974f2b2245674725e"
   },
   "dependency_blobs": {
     "LiouvilleSignedBuchstabTypeII.lean": "c2de5cb221f03ff5792de4d29b104912e79d4771",
@@ -45,7 +49,7 @@
   "lean_open": [
     "finite shifted-index Finset.sum_bij with floor cutoff",
     "actual finite-time source support/cutoff equivalence",
-    "actual integral finite-sum interchange",
+    "Lean kernel acceptance of finite double-sum interchange; literal term integrability not yet proved",
     "actual one-prime delay identity and integrated return",
     "fresh kernel proof validation"
   ],
@@ -67,5 +71,6 @@
     "force": false,
     "root_import": "UNCHANGED",
     "dependency_pins": "UNCHANGED"
-  }
+  },
+  "review_observed_blob": "cddd8b1d501b8253971c83dea7b4b86067691e8b"
 }
