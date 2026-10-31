@@ -1,0 +1,78 @@
+{
+  "title": "Divergence and curl: The language of Maxwell's equations, fluid flow, and more",
+  "byline": "Grant Sanderson",
+  "date": "2018-06-21",
+  "primary_url": "https://www.3blue1brown.com/lessons/divergence-and-curl/",
+  "retained_page_sha256": "dc32964b7e24cf3474874dd3f9ca42b456c92afed79fecd95f61a92e4516e5b9",
+  "animation_source": {
+    "url": "https://github.com/3b1b/videos/blob/306a1346a356c7a7b097875ceb51c5cd67d0a56c/_2018/div_curl.py",
+    "commit": "306a1346a356c7a7b097875ceb51c5cd67d0a56c",
+    "retained_sha256": "55c286fccc4c07328a0c3e1809c92e73d4da9335de71ba90597f12537fe39c2c",
+    "symbol": "Introduction.construct.div_func/curl_func",
+    "lines": "204-225",
+    "license": "CC BY-NC-SA4.0;LICENSE.txt read at same revision",
+    "scope": "Current pinned animation revision,not original2018 snapshot or spoken transcript"
+  },
+  "rotation_convention": {
+    "manim_current_commit": "fafa083a4fb274bba9cabde0b6e2f50ba6da0622",
+    "path": "manimlib/utils/space_ops.py",
+    "scope": "Current rotate_vector/rotation_about_z convention read-only;not a claimed historical dependency pin or floating-point refinement"
+  },
+  "source": "GRWTSK/OrdinaryDifferentialEquations/GeneralTheoryForOrdinaryDifferentialEquations/LinearOrdinaryDifferentialEquationsAndSystems/SourcePlanarFlows.lean",
+  "blob": "1bd2fab225db58876aa47b9582a16978fa7c591e",
+  "namespace": "GRWTSK.ODE.SourcePlanarFlows",
+  "theorems": [
+    "linear_spatial_jacobian",
+    "radial_initial",
+    "rotation_initial",
+    "radial_time_x",
+    "radial_time_y",
+    "rotation_time_x",
+    "rotation_time_y",
+    "radial_spatial_jacobian",
+    "rotation_spatial_jacobian",
+    "radial_jacobian_det",
+    "rotation_jacobian_det",
+    "radial_infinitesimal_area_rate",
+    "planar_radial_divergence",
+    "planar_rotation_curl",
+    "rotation_action_composition",
+    "rotation_action_coordinates",
+    "radial_composition",
+    "rotation_coordinate_composition",
+    "radial_area_divergence_consumer",
+    "angular_speed_curl_factor"
+  ],
+  "scope": "Actual planar radial/rotation coordinate ODE solutions,initial/composition laws,actual spatial partial Jacobians/determinants,radial infinitesimal area-factor rate=planar divergence,and angular-speed/curl factor2.",
+  "hypotheses": "All real time/point parameters;explicit z0 planar idealization with positive counterclockwise convention. Actual Jacobian uses spatial partials. No ambient3D transport,arbitrary ODE uniqueness or image-measure scaling is claimed.",
+  "method": "Actual exp/trig coordinate derivatives supply ODEs;linear-map partial derivatives supply actual matrix;determinants/rate are derived;prior actual complex rotation action reused through explicit coordinate/time bridge.",
+  "inherited_candidates": [
+    {
+      "commit": "4e0b0dec8c24a5a5a79af34b71efd58b3753cdca",
+      "blob": "b014a41a9482d3cb47cb3dc467d2510216c06f5d",
+      "role": "Actual complex circle rotation action/composition,unchecked"
+    }
+  ],
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/Analysis/SpecialFunctions/ExpDeriv.lean": "4f23138d60cf767cc436cb60b942fd6c2e3409ea",
+      "Mathlib/Analysis/SpecialFunctions/Trigonometric/Deriv.lean": "42ad385577a44c06e07a77e4d835b9a384345f1a",
+      "Mathlib/Analysis/Complex/Trigonometric.lean": "d2ba6ae2970b5c003f4abb20b7b7d536b9f1297c",
+      "Mathlib/LinearAlgebra/Matrix/Determinant/Basic.lean": "66f8b885e8ce08fecc06336d6a26d5eff6c15aa6"
+    },
+    "role": "Actual analytic exp/trig derivative/identity suppliers and matrix determinant;imported mathematics not local acceptance"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Actual image-measure scaling/change of variables and general ODE uniqueness",
+    "Ambient3D/finite animation refinement and physical Maxwell/fluid PDE bridges",
+    "Remaining exact source examples/full spoken-video mapping and all checks"
+  ],
+  "video_verified_complete": false
+}
