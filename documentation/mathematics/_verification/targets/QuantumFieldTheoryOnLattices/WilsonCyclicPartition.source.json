@@ -1,0 +1,31 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonCyclicPartition.lean",
+  "source_base_commit": "1f6e4edc6e1cd751c21568b504600d398816080f",
+  "source_blob": "b92e08e9df19ce8601d4f27098120bd5633da473",
+  "source_sha256": "1376ce88ed6833dd65ffb10340f58c6d16a8eeecbb4b8ab2621c43bc9b4b6a84",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonCyclicPartition.cyclicPartition",
+    "GRWTSK.Geometry.GaugeTheory.WilsonCyclicPartition.wilsonPartition_eq_cyclic",
+    "GRWTSK.Geometry.GaugeTheory.WilsonCyclicPartition.cyclicPartition_pos"
+  ],
+  "hypotheses": [
+    "NeZero L",
+    "real beta for partition equality",
+    "beta>=0 for inherited positive normalization"
+  ],
+  "consumer": "Actual normalized periodic spatial-history Wilson marginal",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Normalized spatial-history observable insertion comparison",
+    "Trace-class and periodic covariance representation",
+    "Uniform physical scaling and continuum reconstruction"
+  ]
+}
