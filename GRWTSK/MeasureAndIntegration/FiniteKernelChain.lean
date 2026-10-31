@@ -24,11 +24,11 @@ variable (μ : Measure X) [IsProbabilityMeasure μ] (K : C(X × X, ℝ))
 def edgeFactors : (m : ℕ) → X → X → (Fin m → X) → Fin (m+1) → ℝ
   | 0, x, y, _ => fun _ => K (x,y)
   | m+1, x, y, u => Fin.cons (K (x,u 0))
-      (edgeFactors m (u 0) y (fun i => u i.succ))
+      (edgeFactors K m (u 0) y (fun i => u i.succ))
 
 def weight : (m : ℕ) → X → X → (Fin m → X) → ℝ
   | 0, x, y, _ => K (x,y)
-  | m+1, x, y, u => K (x,u 0) * weight m (u 0) y (fun i => u i.succ)
+  | m+1, x, y, u => K (x,u 0) * weight K m (u 0) y (fun i => u i.succ)
 
 theorem weight_eq_prod (m : ℕ) (x y : X) (u : Fin m → X) :
     weight K m x y u = ∏ i, edgeFactors K m x y u i := by

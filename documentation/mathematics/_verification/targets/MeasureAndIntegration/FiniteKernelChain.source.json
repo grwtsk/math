@@ -1,9 +1,9 @@
 {
   "status": "SOURCE_PROOF_CANDIDATE",
   "source": "GRWTSK/MeasureAndIntegration/FiniteKernelChain.lean",
-  "source_base_commit": "9f077862af9c0fc8c83e98fe6493e724f4d9239e",
-  "source_blob": "be8c972d7df8ede933adae496be31c9115b3f329",
-  "sha256": "e6d8039c5eb6180415e462b8bb1d915e2d77c88065292897f72400ab5e234d7f",
+  "source_base_commit": "ee68c0ca84af57af60944638e3e049c6a598d3dd",
+  "source_blob": "be06e89d2ab4c76ae8afd9842a20d2b6713dcc37",
+  "sha256": "59c678fb5ed52ff53b13c5011275e66951cb76772022e7c4c5341163a3f54aa3",
   "declarations": [
     "GRWTSK.Analysis.Integration.FiniteKernelChain.edgeFactors",
     "GRWTSK.Analysis.Integration.FiniteKernelChain.weight",
