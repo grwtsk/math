@@ -1,0 +1,32 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonRelativeColumnBound.lean",
+  "source_base_commit": "09ceaea09aebf59944aa653379009192a62be568",
+  "source_blob": "e76741bde2900709da2e4b9fe895c2803bb1f14e",
+  "sha256": "9a0f8c859e6f323bf02b6fdb11fb03352968ebc24a5faaae69d7bc105d97e2ed",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeColumnBound.column",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeColumnBound.initialBound",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeColumnBound.column_nonnegative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeColumnBound.column_le_bound",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeColumnBound.column_oscillation",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeColumnBound.column_mean",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeColumnBound.iterate_column",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeColumnBound.relative_power_bound",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeColumnBound.quotient_power_bound"
+  ],
+  "hypotheses": "Nonzero finite L, beta>0, actual gauge-invariant principal vector; AE nonnegative and nonzero for positivity/balance, eigen-equation for normalization/stationarity, unit norm for probability.",
+  "consumer": "Actual positive-length relative and original quotient kernel pointwise bound at fixed regulator; no finite-loop covariance or physical uniformity.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
