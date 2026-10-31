@@ -1427073,6 +1427073,25 @@
       "target_sha256": "973cec78623de550fea8ef580e6a9cba8423f9e132794af21b5d5065bcfd6ebc",
       "target_git_blob": "7d0db8feb66b895731e700076b8b12cd76a5f1cc",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/OrdinaryDifferentialEquations/QualitativeTheoryForOrdinaryDifferentialEquations/NonlinearOscillationsAndCoupledOscillatorsForOrdinaryDifferentialEquations/PendulumTrajectoryComparison.lean",
+      "path": "GRWTSK/OrdinaryDifferentialEquations/QualitativeTheoryForOrdinaryDifferentialEquations/NonlinearOscillationsAndCoupledOscillatorsForOrdinaryDifferentialEquations/PendulumTrajectoryComparison.lean",
+      "source_sha256": "1f632489c2fc1074694de87f749a0e7de5128e37748add1b94683e5c17a1dddc",
+      "input_blob": "2912b19c07e50c1f98644f93488d0bb7770ef3f9",
+      "source_kind": "lean_source",
+      "msc_code": "34C15",
+      "msc_label": "Nonlinear oscillations and coupled oscillators for ordinary differential equations",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual nonlinear-linear pendulum finite-time trajectory comparison with supplied Lipschitz,phase residual and initial data before Gronwall",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "2912b19c07e50c1f98644f93488d0bb7770ef3f9",
+      "target_sha256": "1f632489c2fc1074694de87f749a0e7de5128e37748add1b94683e5c17a1dddc",
+      "target_git_blob": "2912b19c07e50c1f98644f93488d0bb7770ef3f9",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
