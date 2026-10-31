@@ -1,0 +1,34 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceEigenfunctionRepresentative.lean",
+  "source_base_commit": "26b7e9c19059e0b177e926d9508985a381d085bc",
+  "source_blob": "c226702a4245dda7a0dc02b5e7521c1d79db6da6",
+  "source_sha256": "d1dec3093e109e1304865fe095ba4cda619e23e1826bf9e6d01cfb9caeb39afe",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceEigenfunctionRepresentative.eigenRepresentative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceEigenfunctionRepresentative.eigenRepresentative_toLp",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceEigenfunctionRepresentative.eigenRepresentative_eq_ae",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceEigenfunctionRepresentative.eigenRepresentative_integral_equation",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceEigenfunctionRepresentative.invariant_eigenRepresentative_toLp"
+  ],
+  "consumer": "Actual continuous nonzero-eigenvalue functions for normalized Wilson ratio estimates",
+  "hypotheses": [
+    "NeZero L",
+    "beta>=0",
+    "mu !=0",
+    "actual ambient/invariant eigen-equation"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Normalized kernel row and oscillation contraction bridges",
+    "Uniform physical scaling and continuum reconstruction"
+  ]
+}
