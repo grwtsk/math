@@ -69,19 +69,13 @@ theorem fixed_delayed_product_intervalIntegrable
 finite weighted prime-delay sum. No hInt identity is postulated. -/
 theorem weightedDelayedCovariance_eq_integral_finset
     (P : Finset ℕ) (w : ℕ → ℝ) (T : ℝ)
-    (hP : ∀ p ∈ P, Nat.Prime p) :
+    (hP : ∀ p ∈ P, Nat.Prime p) (hT : 0 ≤ T) :
     weightedDelayedCovariance P w T =
       ∫ u in (0 : ℝ)..T,
         waveform u *
           (∑ p ∈ P, (w p / Real.sqrt (p : ℝ)) *
             waveform (u - Real.log p)) := by
   classical
-  have hpoint (p : ℕ) (hp : p ∈ P) (u : ℝ)
-      (hu : u ∈ Set.uIcc (0 : ℝ) T) :
-      waveform u * waveform (u - Real.log p) =
-        fixedWaveform T u * fixedWaveform T (u - Real.log p) := by
-    apply original_delayed_product_eq_fixed T u p (hP p hp).one_le
-    exact (Set.mem_uIcc.mp hu).2
   have hInt : ∀ p ∈ P,
       IntervalIntegrable
         (fun u : ℝ =>
@@ -101,7 +95,7 @@ theorem weightedDelayedCovariance_eq_integral_finset
     rw [← intervalIntegral.integral_const_mul]
     apply intervalIntegral.integral_congr
     intro u hu
-    rw [hpoint p hp u (Set.mem_uIcc_of_le hu.1.le hu.2)]
+    rw [original_delayed_product_eq_fixed T u p (hP p hp).one_le hu.2]
   calc
     (∑ p ∈ P, (w p / Real.sqrt (p : ℝ)) *
       (∫ u in (0 : ℝ)..T,
@@ -147,6 +141,6 @@ theorem covariance_eq_negative_complete_mixed_of_primeIdentity
           (originalCausalKernel T)) := by
   exact weightedDelayedCovariance_eq_negative_complete_mixed
     P w T hT hPrime hP
-      (weightedDelayedCovariance_eq_integral_finset P w T hP)
+      (weightedDelayedCovariance_eq_integral_finset P w T hP hT)
 
 end GRWTSK.NumberTheory.LiouvillePrimeDelayFiniteInterchange
