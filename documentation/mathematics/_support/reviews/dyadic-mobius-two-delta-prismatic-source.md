@@ -258,6 +258,65 @@ pickupResponse is invented. The real source is compared
 only through the exact integer lift and original
 real response weights in DyadicModTwoPairLift.
 
+## 4b. Actual completed 2-adic tower: two geometric directions
+
+The next bounded increment binds Mathlib's actual completed ring to
+the complete source-specific finite-residue diagram.
+
+* \`DyadicTwoPowerTower.lean\` retains source height j with
+  index \`Fin (2^j)\`, and coefficient precision k with
+  residue ring \`ZMod (2^(k+1))\`. These are two INDEPENDENT
+  geometrically growing indices. The actual signed incidence
+  matrix is retained over Z and mapped to every finite level,
+  with no new sifting, absolute value or loss of sign.
+  Git blob: b57545f9cb026c8ba8821ba7260b7be3acea946c.
+* The canonical \`reduceLevel k\` is the actual ring map
+  \`ZMod(2^(k+2)) →+* ZMod(2^(k+1))\`, and it preserves every
+  original Möbius coefficient and finite coboundary under
+  precision reduction. The canonical inclusion of old
+  \`Fin(2^j)\` indices into the next \`Fin(2^(j+1))\`
+  retains every old matrix entry EXACTLY, only adding the
+  new positive integers when the geometric height doubles.
+* \`DyadicPadicResidueTower.lean\` imports Mathlib's genuine
+  \`PadicInt.toZModPow\` and the current source-specific
+  \`DyadicPadicIntCompletion\` (blob
+  c81a0d284366fb1e7fd3344ea3d0031e8da579ff).
+  It establishes that reducing the full 2-adic signed
+  coefficient or dyadic matrix entry at level k gives
+  the SAME finite \`ZMod(2^(k+1))\` arithmetic source
+  built directly from the integer Möbius coefficients.
+  Git blob: 38428c91dd4624e73c8ab3348e8ed3d4882c38de.
+* The completed-ring finite coboundary reduces to exactly the
+  source-specific finite-level cochain; no free incidence
+  matrix or arbitrary parity coefficients are introduced.
+  \`completed_residue_compatibility\` consumes Mathlib's
+  \`PadicInt.cast_toZModPow\` rather than asserting
+  some unproved inverse-limit law.
+* MOST IMPORTANTLY, Mathlib's
+  \`PadicInt.ext_of_toZModPow\` establishes that equality
+  at ALL positive precision levels forces equality of
+  the original completed 2-adic coefficient. This
+  makes the entire compatible lower-shadow family
+  jointly LOSSLESS, unlike any single finite mod-two
+  shadow. The resulting source-specific theorem is
+  \`completed_coboundary_unique_of_residues\`.
+
+This completes the mathematical *coefficient shadow tower*
+within the existing Mathlib \`PadicInt 2\` framework, as a
+source proof candidate. It does NOT establish a bitwise
+finite serializer for every 2-adic integer, and does
+not supply a genuine 2-adic δ operator, principal Cartier
+prism ideal, Nygaard filtration, a prismatic cohomology
+complex, or a source-to-prismatic comparison.
+
+This is a stronger and more exact reconciliation than the
+earlier finite mod-two layer: the signed integer source,
+all its finite residue shadows, and the actual complete
+2-adic coefficient agree in both geometric source height
+and coefficient precision, without identifying distinct
+upper original states. Nevertheless the missing analytic
+all-positive-rate signed endpoint estimate is unchanged.
+
 ## 5. Symplectic fiber and lossless coding compatibility
 
 SharedShadowVerticalSymplectic supplies a NONDEGENERATE
