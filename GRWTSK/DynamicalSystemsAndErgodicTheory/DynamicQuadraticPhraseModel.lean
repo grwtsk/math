@@ -76,6 +76,9 @@ structure PhraseSearchState (m : ℕ) where
   consumed : List WalkEdge
   phrasesRev : List (LocalPhrase m)
   expectedRole : PhraseRole
+  /-- The stored phrase occurrences serialize exactly to the consumed prefix. -/
+  phrasesExact :
+    (phrasesRev.reverse.flatMap (fun p => p.phrase.edges)) = consumed
   sourceExact : consumed ++ remaining = original.input.edges
 
 def PhraseSearchState.initial {m : ℕ} (source : CheckedWalk) :
@@ -86,6 +89,7 @@ def PhraseSearchState.initial {m : ℕ} (source : CheckedWalk) :
   consumed := []
   phrasesRev := []
   expectedRole := .setup
+  phrasesExact := by simp
   sourceExact := by simp
 
 /-- Parent search controller: each dynamic state has a fresh finite set
@@ -284,6 +288,8 @@ def ParentPhraseModel.advance {m : ℕ}
   consumed := state.consumed ++ item.1.phrase.edges
   phrasesRev := item.1 :: state.phrasesRev
   expectedRole := followingRole state.expectedRole
+  phrasesExact := by
+    simp [List.reverse_cons, List.flatMap_append, state.phrasesExact]
   sourceExact := by
     calc
       (state.consumed ++ item.1.phrase.edges) ++
@@ -316,6 +322,15 @@ def ParentPhraseModel.run {m : ℕ}
     ℕ → Option (PhraseSearchState m)
   | 0 => some (PhraseSearchState.initial source)
   | fuel + 1 => (parent.run source fuel).bind parent.step
+
+/-- The emitted phrase sequence, not merely the consumed ledger, reconstructs
+every original source occurrence on a completed walk. -/
+theorem PhraseSearchState.complete_phrases {m : ℕ}
+    (state : PhraseSearchState m) (h : state.remaining = []) :
+    (state.phrasesRev.reverse.flatMap (fun p => p.phrase.edges)) =
+      state.original.input.edges := by
+  rw [state.phrasesExact]
+  simpa [h] using state.sourceExact
 
 /-- Exact source return at completion, independent of quadratic weights. -/
 theorem PhraseSearchState.complete_source {m : ℕ}
