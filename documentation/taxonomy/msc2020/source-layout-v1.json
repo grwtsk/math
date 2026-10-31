@@ -1427016,6 +1427016,25 @@
       "target_sha256": "1f5c99ba01612f375eb6e27b2c7fc856a651a2ef91ed7b709d4e78e7d03abe65",
       "target_git_blob": "37f23339d67c71ee799f195ec71a6f894f205d92",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
+    },
+    {
+      "old_path": "GRWTSK/RealFunctions/FunctionsOfSeveralVariables/CalculusOfVectorFunctions/FourSwirlsFiniteHelpers.lean",
+      "path": "GRWTSK/RealFunctions/FunctionsOfSeveralVariables/CalculusOfVectorFunctions/FourSwirlsFiniteHelpers.lean",
+      "source_sha256": "3f0651b255c4bdc4bfa9d94fd04c9109dee3405b91f17c3a0db1e709ded18354",
+      "input_blob": "4214ad437d605237e3b2b917bda88737b90c32f6",
+      "source_kind": "lean_source",
+      "msc_code": "26B12",
+      "msc_label": "Calculus of vector functions",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Exact finite-difference versus analytic divergence/curl of the actual planar source field,with current-code directional mismatch isolated",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "4214ad437d605237e3b2b917bda88737b90c32f6",
+      "target_sha256": "3f0651b255c4bdc4bfa9d94fd04c9109dee3405b91f17c3a0db1e709ded18354",
+      "target_git_blob": "4214ad437d605237e3b2b917bda88737b90c32f6",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
