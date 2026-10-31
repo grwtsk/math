@@ -1,0 +1,228 @@
+{
+  "artifact_role": "Static declaration-scoped certification; raw operational receipts, execution attempts and controller state remain in Noe.",
+  "attribution": "grwtsk contributors",
+  "commands": {
+    "child_lean_flags": [
+      "--trust=0",
+      "-j",
+      "1",
+      "-M",
+      "1024",
+      "-DwarningAsError=true"
+    ],
+    "cpu_hard_seconds": 35,
+    "cpu_seconds": 30,
+    "scope": "Exact actual child command flags and limits were checked in all six source and type-consumer records; private raw paths are retained outside math.",
+    "source": "Noe managed_contract_replay.py run under the recorded immutable registry and fixed native owner"
+  },
+  "contracts": [
+    {
+      "axioms": {
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.cube_residue": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_33": [],
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_3_large": [],
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_42": [],
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.not_representable_of_residue_five": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.not_representable_of_residue_four": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_33": [],
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_3_large": [],
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_42": [],
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_admissible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.three_distinct_solutions_for_3": []
+      },
+      "blob": "7644bd96eadcdfce8a6d025abdad7019854a932e",
+      "expected_types": {
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.cube_residue": "∀ (x : Int), x ^ 3 % 9 = 0 ∨ x ^ 3 % 9 = 1 ∨ x ^ 3 % 9 = 8",
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_33": "(8866128975287528 : Int) ^ 3 + (-8778405442862239) ^ 3 +\n      (-2736111468807040) ^ 3 = 33",
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_3_large": "(569936821221962380720 : Int) ^ 3 + (-569936821113563493509) ^ 3 +\n      (-472715493453327032) ^ 3 = 3",
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_42": "(-80538738812075974 : Int) ^ 3 + 80435758145817515 ^ 3 +\n      12602123297335631 ^ 3 = 42",
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.not_representable_of_residue_five": "∀ (n : Int) (_hn : n % 9 = 5), ¬ GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.Representable n",
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.not_representable_of_residue_four": "∀ (n : Int) (_hn : n % 9 = 4), ¬ GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.Representable n",
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_33": "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.Representable 33",
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_3_large": "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.Representable 3",
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_42": "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.Representable 42",
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_admissible": "∀ (n : Int) (_hn : GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.Representable n), GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.Admissible n",
+        "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.three_distinct_solutions_for_3": "(1 : Int) ^ 3 + 1 ^ 3 + 1 ^ 3 = 3 ∧\n    (4 : Int) ^ 3 + 4 ^ 3 + (-5) ^ 3 = 3 ∧\n    (569936821221962380720 : Int) ^ 3 + (-569936821113563493509) ^ 3 +\n      (-472715493453327032) ^ 3 = 3 ∧\n    (1 : Int) ≠ 4 ∧ (1 : Int) ≠ 569936821221962380720 ∧\n    (4 : Int) ≠ 569936821221962380720"
+      },
+      "passed": true,
+      "source": "GRWTSK/NumberTheory/SumsOfThreeCubes.lean"
+    },
+    {
+      "axioms": {
+        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.identity_1729_first": [],
+        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.identity_1729_second": [],
+        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.two_representations_1729": []
+      },
+      "blob": "1b87eb53e9d2445a6d46c530f99d040bc5aab6f6",
+      "expected_types": {
+        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.identity_1729_first": "(1 : Nat) ^ 3 + 12 ^ 3 = 1729",
+        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.identity_1729_second": "(9 : Nat) ^ 3 + 10 ^ 3 = 1729",
+        "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.two_representations_1729": "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.HasTwoRepresentations 1729"
+      },
+      "passed": true,
+      "source": "GRWTSK/NumberTheory/Taxicab.lean"
+    },
+    {
+      "axioms": {
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.addCheck_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.addition_false_positive": [],
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.adjacent_transposition_undetectable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.casting_out_nines": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.correct_addition_passes": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.correct_multiplication_passes": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.divisible_by_nine_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.failed_addition_check_detects_error": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.failed_multiplication_check_detects_error": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.mulCheck_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.multiplication_false_positive": [],
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.undetectable_error_family": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "blob": "8bf693a4360457e6ea893f271c158751c9ccbeb6",
+      "expected_types": {
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.addCheck_iff": "∀ (a b c : List Nat), GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.AddCheck a b c ↔ (GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value a + GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value b) % 9 = GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value c % 9",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.addition_false_positive": "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.AddCheck [1] [1] [1, 1] ∧ GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value [1] + GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value [1] ≠ GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value [1, 1]",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.adjacent_transposition_undetectable": "∀ (pre post : List Nat) (a b : Nat), GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value (pre ++ a :: b :: post) % 9 =\n      GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value (pre ++ b :: a :: post) % 9",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.casting_out_nines": "∀ (ds : List Nat), GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value ds % 9 = GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.digitSum ds % 9",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.correct_addition_passes": "∀ (a b c : List Nat)\n    (_h : GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value a + GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value b = GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value c), GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.AddCheck a b c",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.correct_multiplication_passes": "∀ (a b c : List Nat)\n    (_h : GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value a * GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value b = GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value c), GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.MulCheck a b c",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.divisible_by_nine_iff": "∀ (ds : List Nat), GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value ds % 9 = 0 ↔ GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.digitSum ds % 9 = 0",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.failed_addition_check_detects_error": "∀ (a b c : List Nat)\n    (_h : ¬ GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.AddCheck a b c), GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value a + GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value b ≠ GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value c",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.failed_multiplication_check_detects_error": "∀ (a b c : List Nat)\n    (_h : ¬ GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.MulCheck a b c), GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value a * GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value b ≠ GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value c",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.mulCheck_iff": "∀ (a b c : List Nat), GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.MulCheck a b c ↔ (GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value a * GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value b) % 9 = GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value c % 9",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.multiplication_false_positive": "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.MulCheck [2] [2] [3, 1] ∧ GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value [2] * GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value [2] ≠ GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.value [3, 1]",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.undetectable_error_family": "∀ (n k : Nat), (n + 9 * (k + 1)) % 9 = n % 9 ∧ n + 9 * (k + 1) ≠ n"
+      },
+      "passed": true,
+      "source": "GRWTSK/NumberTheory/CastingOutNines.lean"
+    }
+  ],
+  "declaration_count": 26,
+  "document_input_commit": "24fa41e34b02c67a1e7b780b3f97253468a033e1",
+  "document_inputs_sha256": {
+    "documentation/mathematics/NumberTheory/cubes-and-checksums/README.md": "efcc6fbbb1f3c533684431530f7fe3f02f84c6b1ad5ee026f110a64f16e9a639",
+    "documentation/mathematics/NumberTheory/cubes-and-checksums/verification.toml": "2fd76b7e65ab57d1d942ec40f65d6510df02b53bed8ebdda64313e92024c2a25"
+  },
+  "environment": {
+    "command_policy_sha256": "6b1909836b606c815a5ebf6cd14be71978a8713bf4315bca26224f7ab52d8ba3",
+    "compiler_bytes": 49968,
+    "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+    "installed_lean_core_boundary_count": 7556,
+    "installed_lean_core_boundary_sha256": "3c9f670acb662f57b3e8243434f27b27569238d7485515ff9c0ac625d519aecd",
+    "lake_manifest_sha256": "79720f104a8602620c98e6984bbb881494854cd6714ae3ccae28049f84b3abe4",
+    "toolchain": "leanprover/lean4:v4.34.1"
+  },
+  "evidence": {
+    "noe_repository": "grwtsk/noeaaeue",
+    "original_raw_receipt_sha256": "13aadaaf5b557f311b2bc52efee6da7c7642ebb397e49cffdc2f816ef5f504f9",
+    "original_raw_registry_sha256": "c14b787d7fafd1cc77434a4f0abd23c2db79bb7cd25bac35b0009dd69d313f6d",
+    "public_projection_commit": "ef5c635d4fccf13a8cad229e09f4c16211909a2f",
+    "public_projection_path": "verification/math/numberphile/b419756ab253/qualification.json",
+    "public_projection_sha256": "6faf31791a56b397df602a9ccc584ff89149039d7c7d39bca3b401f19cf6b390",
+    "public_projection_url": "https://github.com/grwtsk/noeaaeue/blob/ef5c635d4fccf13a8cad229e09f4c16211909a2f/verification/math/numberphile/b419756ab253/qualification.json",
+    "raw_record_policy": "Original raw bytes remain unchanged in external Noe runtime. Public projection is a distinct privacy-safe derived record, not an independently replayed or digest-equivalent replacement."
+  },
+  "facets": {
+    "declaration_scoped_axiom_audits": "PASS",
+    "expected_interfaces": "PASS",
+    "final_source_runtime_validation": "PASS_AS_RECORDED_BY_COMPLETE_MANAGED_RECEIPT",
+    "fresh_trust_zero_compilation": "PASS",
+    "host_config_restored": "PASS"
+  },
+  "full_video_completion": false,
+  "interface_count": 26,
+  "invalidation": "Any changed mathematical source, requested declaration/type, dependency/compiler/core boundary, axiom policy or relevant producer/check identity requires a new source-bound qualification. Document/TOML edits invalidate their documentary correspondence without retroactively changing the pinned source result.",
+  "issue": "https://github.com/grwtsk/math/issues/1440",
+  "not_certified": [
+    "The four new standard taxicab minimality theorems in the document input commit",
+    "Complete video claim inventories or the remaining Numberphile corpus",
+    "Three-cubes local-condition sufficiency",
+    "OS confinement, compiler correctness or implementation refinement"
+  ],
+  "producer": {
+    "repository": "grwtsk/noeaaeue",
+    "revision": "ec2cf13f7cd71794e0d80fb4f952e34ab65d3b22",
+    "source_sha256": {
+      "managers/formalization/lean/environment/contracts/tool-runtime-context-v1.json": "878ad5aa6fa0ec113a5043f4f1a1bda8255ba6e9e71a858e3cea34d5e1775b06",
+      "managers/formalization/lean/environment/python/lean_resource_command.py": "2aca7d443c19d9c2052375e34c27cb6561e601f200d8f2abcf4f0b4e2120fc88",
+      "managers/formalization/lean/environment/python/lean_resource_darwin.py": "2ff2c30dcb75258135fe1554885d29b33f4c9f9005e007b947931d3b3efaaadb",
+      "managers/formalization/lean/environment/python/lean_resource_launcher.py": "8cf0ce4bcf4e1398eae1cd60a6434af81738f27e86d40eac87f0df2bceb144a2",
+      "managers/formalization/lean/environment/python/lean_resource_manager.py": "31733b44de52666ec21bcb00c63ee7c72e07e9bdf032645eec7a84890cae716d",
+      "managers/formalization/lean/environment/python/managed_authorization_negatives.py": "eddc9b6f220e77155e2212eaa368b2f9587f3d248d1266a2bf7371ddda9aec47",
+      "managers/formalization/lean/environment/python/managed_contract_replay.py": "e59f140818ee6d2ec97dd5e14e9f862900824cfc6cd04ba5ce125e96d1044c4a",
+      "managers/formalization/lean/environment/python/managed_dependency_graph.py": "89adccd97406cf55623947559c85d061faf7da2084c763c5cc32563a854f3210",
+      "managers/formalization/lean/environment/python/managed_module_audit.py": "16f0015b86e51f43f8990ac46cda79add5df75ad81911da4a00a26616251f24a",
+      "managers/formalization/lean/environment/python/managed_module_records.py": "cc68d05b0f5891f0a2b36d30d333c8b73407e60e2382b79addb57b79234bd897",
+      "managers/formalization/lean/environment/python/strict_axiom_parser.py": "5c4a751466cf2a75e58123312354ed2961dc412cb45652ca35055c430e9871ec",
+      "managers/formalization/lean/environment/python/tool_runtime_context_v1.py": "87ca13422421a76244e132744320ff728f2b24320387168fab110843a70aaabb",
+      "managers/formalization/lean/environment/python/verify_formalization_contracts.py": "a686b9e7d863e22ff0292d2fcf9a98e77bdeb9eb435eaa86681a7388dfc61b74"
+    }
+  },
+  "remaining_obligation": "Fresh source-bound 30-declaration check of the modified Taxicab source and finite-to-universal bridge; retain historical failures.",
+  "result": "PASS_EXACT_26_DECLARATIONS_ONLY",
+  "schema": "grwtsk.numberphile-static-certificate/1",
+  "verified_math_commit": "b419756ab25304880180bb9900afb543fab9a8aa",
+  "verified_math_tree": "e2a91ab7f93c645c3f9b81a77df34b552a7fb7b8",
+  "verified_sources": [
+    {
+      "blob": "7644bd96eadcdfce8a6d025abdad7019854a932e",
+      "path": "GRWTSK/NumberTheory/SumsOfThreeCubes.lean",
+      "sha256": "becaa25b7183cde67e6f2728300800d2f8f360361116ecfefd19ef7e9943e4db"
+    },
+    {
+      "blob": "1b87eb53e9d2445a6d46c530f99d040bc5aab6f6",
+      "path": "GRWTSK/NumberTheory/Taxicab.lean",
+      "sha256": "26daaa7edeaa59a75b5c0d860b74bd7f51524e4c7ce8d236c3f64ecb7ccf6a59"
+    },
+    {
+      "blob": "8bf693a4360457e6ea893f271c158751c9ccbeb6",
+      "path": "GRWTSK/NumberTheory/CastingOutNines.lean",
+      "sha256": "0d0f3d42bc7af6fb63d105263636beb151f2a3a621ffb1cb01ef07d608c1010d"
+    }
+  ]
+}
