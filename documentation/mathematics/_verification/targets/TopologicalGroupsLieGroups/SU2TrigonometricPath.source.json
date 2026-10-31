@@ -1,0 +1,27 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/TopologicalGroupsLieGroups/CompactGroups/SU2TrigonometricPath.lean",
+  "source_blob": "413bd77a165e74c5aeb2ff91f390efa59438400f",
+  "source_base_commit": "3d8b8d9f7813db90ba869c841ece24fbd2841701",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.SU2TrigonometricPath.entry",
+    "GRWTSK.Geometry.GaugeTheory.SU2TrigonometricPath.entry_normSq",
+    "GRWTSK.Geometry.GaugeTheory.SU2TrigonometricPath.path",
+    "GRWTSK.Geometry.GaugeTheory.SU2TrigonometricPath.trace_eq",
+    "GRWTSK.Geometry.GaugeTheory.SU2TrigonometricPath.penalty_eq",
+    "GRWTSK.Geometry.GaugeTheory.SU2TrigonometricPath.trace_hasDerivAt",
+    "GRWTSK.Geometry.GaugeTheory.SU2TrigonometricPath.penalty_hasDerivAt",
+    "GRWTSK.Geometry.GaugeTheory.SU2TrigonometricPath.penalty_deriv",
+    "GRWTSK.Geometry.GaugeTheory.SU2TrigonometricPath.penalty_second_hasDerivAt",
+    "GRWTSK.Geometry.GaugeTheory.SU2TrigonometricPath.trace_deriv",
+    "GRWTSK.Geometry.GaugeTheory.SU2TrigonometricPath.trace_second_hasDerivAt"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "mathematical_acceptance": false,
+  "scope": "Actual diagonal SU2 membership and actual trace/penalty first and second real derivatives. No unit-speed geodesic, matrix-word derivative, full Hessian or uniform gap."
+}
