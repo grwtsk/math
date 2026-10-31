@@ -149,4 +149,22 @@ theorem primeDivisorWaveformIdentity :
       intro k hk
       ring
 
+/-- Fully combined source-facing covariance return: the earlier finite
+interchange theorem has no arbitrary hInt premise; the one-prime
+identity is supplied above, rather than assumed by this declaration.
+The source proof is still subject to pinned Lean elaboration and replay. -/
+theorem weightedDelayedCovariance_complete_originalGram
+    (P : Finset ℕ) (w : ℕ → ℝ) (T : ℝ)
+    (hT : 0 ≤ T) (hP : ∀ p ∈ P, Nat.Prime p) :
+    weightedDelayedCovariance P w T =
+      -(originalMixedDiagonal P
+          (Finset.Icc 1 ⌊Real.exp T⌋₊) w
+          (originalCausalKernel T) +
+        originalMixedOffDiagonal P
+          (Finset.Icc 1 ⌊Real.exp T⌋₊) w
+          (originalCausalKernel T)) := by
+  exact covariance_eq_negative_complete_mixed_of_primeIdentity
+    primeDivisorWaveformIdentity P w T hT hP
+
+
 end GRWTSK.NumberTheory.LiouvillePrimeDelayMultipleReindex
