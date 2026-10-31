@@ -134,6 +134,39 @@ The source candidate keeps its exact quantified statement visible. -/
 def DyadicScheduleSubexponential : Prop :=
   SubexponentialGapCardinality dyadicSparseGapSchedule
 
+/-- This dyadic schedule satisfies every-positive-rate cardinality
+control, uniformly in T, using only floor T <= T and exp x >= 1+x.
+The schedule itself is fixed before the requested rate delta. -/
+theorem dyadicScheduleSubexponential :
+    DyadicScheduleSubexponential := by
+  intro δ hδ
+  refine ⟨1 + δ⁻¹, 0, by positivity, le_rfl, ?_⟩
+  intro T hT
+  have hmax : max T 0 = T := max_eq_left hT
+  have hfloor : (((⌊max T 0⌋₊ : ℕ) : ℝ)) ≤ T := by
+    have hf : (((⌊max T 0⌋₊ : ℕ) : ℝ)) ≤ max T 0 :=
+      Nat.floor_le (by positivity)
+    simpa [hmax] using hf
+  have hcount : ((dyadicSparseGapSchedule T).card : ℝ) ≤ T + 1 := by
+    have h := dyadicSparseGapSchedule_card_le T
+    have hc : ((dyadicSparseGapSchedule T).card : ℝ) ≤
+        (((⌊max T 0⌋₊ + 1 : ℕ) : ℝ)) := by
+      exact_mod_cast h
+    push_cast at hc
+    linarith
+  have hpositive : 0 ≤ (1 + δ⁻¹ : ℝ) := by positivity
+  have hcancel : δ⁻¹ * δ = 1 := inv_mul_cancel₀ hδ.ne'
+  have hscale : T + 1 ≤ (1 + δ⁻¹) * (δ * T + 1) := by
+    have hdT : 0 ≤ δ * T := mul_nonneg hδ.le hT
+    have hdInv : 0 ≤ δ⁻¹ := inv_nonneg.mpr hδ.le
+    nlinarith [mul_nonneg hdInv hdT]
+  have hExp := Real.add_one_le_exp (δ * T)
+  have hCompare :
+      (1 + δ⁻¹) * (δ * T + 1) ≤
+        (1 + δ⁻¹) * Real.exp (δ * T) :=
+    mul_le_mul_of_nonneg_left hExp hpositive
+  exact hcount.trans (hscale.trans hCompare)
+
 /-- A fully source-bound conditional return for the specified schedule.
 The only new arithmetic hypothesis remains the complete signed
 dense complement; the diagonal and polynomial/cardinality gates
