@@ -3,7 +3,7 @@ Source proof candidates; compilation, fresh replay and axiom audit NOT_RUN. -/
 import Mathlib.Data.Fintype.Card
 import Mathlib.Data.Fintype.Prod
 import Mathlib.Data.Finset.Card
-import Mathlib.Tactic.Omega
+import Lean.Elab.Tactic.Omega
 
 /-!
 # Actual finite progression coordinates and the quadratic event census
