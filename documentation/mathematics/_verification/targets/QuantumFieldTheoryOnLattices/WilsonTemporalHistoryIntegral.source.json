@@ -2,9 +2,9 @@
   "schema": "grwtsk.source-verification-target/1",
   "msc2020": "81T25",
   "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTemporalHistoryIntegral.lean",
-  "source_base_commit": "7feadd0272425f5a745991e547a6c4cb5ff0b0a3",
-  "source_blob": "9a9ac1ccee9529bea1f9c2feda899830cfe10db0",
-  "source_sha256": "6bf038235b23df49c388b548d1604ad6911a4de65fd5f0e5d0a4540d0ffb0338",
+  "source_base_commit": "4e619063d14a4f769e37ed1724262a281a660433",
+  "source_blob": "947de1511a6c82170914428e406a74d052719f75",
+  "source_sha256": "71131358a731a53abd5fcbe64024887cd651ff34c73ad126eb2d46ef8dfcb6f3",
   "declarations": [
     "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.layerFactor",
     "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.historyFactor",
@@ -12,7 +12,10 @@
     "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.integrable_layerFactor",
     "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.continuous_historyFactor",
     "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.integrable_historyFactor",
-    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.integral_temporal_product"
+    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.integral_temporal_product",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.continuous_temporal_boltzmann",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.integrable_temporal_boltzmann",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTemporalHistoryIntegral.integral_temporal_boltzmann"
   ],
   "hypotheses": [
     "NeZero L",
@@ -28,7 +31,7 @@
   },
   "proof_acceptance": false,
   "remaining": [
-    "Actual Boltzmann temporal integration and partition normalization",
+    "Partition normalization and spatial observable insertion comparison",
     "Spatial observable insertion comparison",
     "Trace-class and periodic covariance representation",
     "Uniform physical scaling and continuum reconstruction"
