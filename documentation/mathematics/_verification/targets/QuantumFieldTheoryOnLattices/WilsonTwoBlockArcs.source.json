@@ -1,0 +1,28 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonTwoBlockArcs.lean",
+  "source_base_commit": "f9f0a51b1a13c0ab99819821eab47d04851f1593",
+  "source_blob": "f5177dc9a539846e5100ef477b1e79f57bb647b1",
+  "sha256": "cf9574b7e28445fe5de105506c8299a5460c22efb1a147dc872a7715a3d29d72",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoBlockArcs.sliceObservable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoBlockArcs.cutIndex",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoBlockArcs.cutIndex_eq_nat",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoBlockArcs.block_numerator",
+    "GRWTSK.Geometry.GaugeTheory.WilsonTwoBlockArcs.lifted_product_eq_arcs"
+  ],
+  "hypotheses": "Actual finite SU2 Wilson law, L=(p+1)+(q+1), p,q natural, beta>=0 for normalized expectation; arbitrary finite spatial blocks B,C.",
+  "consumer": "Actual lifted Wilson block product expectation at times 0,p+1 with both directed positive arcs and actual partition denominator.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
