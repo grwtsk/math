@@ -11,7 +11,7 @@
     "GRWTSK.Analysis.Integration.ContinuousKernelPowers.positivePower_succ_apply",
     "GRWTSK.Analysis.Integration.ContinuousKernelPowers.operator_positivePower"
   ],
-  "hypotheses": "Compact Hausdorff second-countable Borel space; probability measure; continuous real kernels; arbitrary actual L2 input.",
+  "hypotheses": "Continuous real kernel on compact Hausdorff second-countable Borel space; probability measure for integral/operator declarations; natural m denotes m+1 positive edges. L2 input appears only in composition declarations.",
   "consumer": "Positive-length periodic Wilson kernel arcs; actual maintained L2 operator powers.",
   "verification": {
     "compilation": "NOT_RUN",
@@ -21,8 +21,8 @@
   },
   "proof_acceptance": false,
   "remaining": [
-    "Lean qualification",
-    "Positive-length kernel powers and cyclic insertion identities",
-    "Uniform physical scaling and continuum construction"
+    "Exact-source Lean qualification",
+    "Two-observable cyclic insertion transport and decay",
+    "Regulator-uniform physical scaling and nontrivial continuum construction"
   ]
 }
