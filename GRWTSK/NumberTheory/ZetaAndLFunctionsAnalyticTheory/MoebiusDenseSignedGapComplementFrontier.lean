@@ -105,6 +105,56 @@ theorem signedComplement_allRate_iff_pickupCross
     have hsum := eventualAllRateUpper_add hcross hneg
     simpa only [signedGapComplement, sub_eq_add_neg] using hsum
 
+/-- The original quarter-unit endpoint quadrature error is an
+all-positive-rate constant, with no arithmetical supplier hidden here. -/
+theorem quarter_eventualAllRateUpper :
+    EventualAllRateUpper (fun _ : ℝ => 1 / 4) := by
+  intro ε hε
+  refine ⟨1 / 4, 0, by norm_num, le_rfl, ?_⟩
+  intro T hT
+  have hExp : 1 ≤ Real.exp (ε * T) :=
+    Real.one_le_exp (mul_nonneg hε.le hT)
+  nlinarith
+
+/-- One-sided all-positive-rate pickupCross and the exact endpoint
+quadrature are equivalent, paying only the inherited 1/4 error. -/
+theorem endpointSum_allRate_iff_pickupCross :
+    EventualAllRateUpper endpointSum ↔
+      EventualAllRateUpper pickupCross := by
+  constructor
+  · intro he
+    have hbound := eventualAllRateUpper_add he quarter_eventualAllRateUpper
+    apply eventualAllRateUpper_of_le
+      (g := fun T => endpointSum T + 1 / 4)
+    · intro T hT
+      have hh := endpointSum_error hT
+      have ha := (abs_le.mp hh).1
+      linarith
+    · exact hbound
+  · intro hx
+    have hbound := eventualAllRateUpper_add hx quarter_eventualAllRateUpper
+    apply eventualAllRateUpper_of_le
+      (g := fun T => pickupCross T + 1 / 4)
+    · intro T hT
+      have hh := endpointSum_error hT
+      have ha := (abs_le.mp hh).2
+      linarith
+    · exact hbound
+
+/-- This equivalence is the circularity test for ANY admissible sparse
+family. The dense signed complement estimate is RH-facing but contains
+the same all-positive-rate arithmetic difficulty as endpointSum; it
+cannot be called independent merely by reindexing the gap set. -/
+theorem signedComplement_allRate_iff_endpointSum
+    (A : ℝ → Finset ℕ)
+    (hsmall : EventualAllRateUpper
+      (fun T => |endpointGapSetCross (A T) T|)) :
+    EventualAllRateUpper
+      (fun T => signedGapComplement (A T) T) ↔
+    EventualAllRateUpper endpointSum := by
+  exact (signedComplement_allRate_iff_pickupCross A hsmall).trans
+    endpointSum_allRate_iff_pickupCross.symm
+
 /-- The exact original quarter-unit endpoint error is never moved into
 the arithmetic signed complement. Its one-sided consumption is explicit. -/
 theorem endpointSum_le_dense_signedComplement
