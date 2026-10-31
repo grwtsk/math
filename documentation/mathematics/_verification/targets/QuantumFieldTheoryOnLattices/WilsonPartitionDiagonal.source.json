@@ -11,7 +11,7 @@
     "GRWTSK.Geometry.GaugeTheory.WilsonPartitionDiagonal.cyclicPartition_succ_eq_diagonal",
     "GRWTSK.Geometry.GaugeTheory.WilsonPartitionDiagonal.cyclicPartition_eq_diagonal"
   ],
-  "hypotheses": "Compact Hausdorff second-countable Borel space; probability measure; continuous real kernels; arbitrary actual L2 input.",
+  "hypotheses": "Actual finite SU2 Wilson slice and product Haar; L nonzero; beta arbitrary real. Succ form L=m+1 includes L=1. No L2 input or positivity premise.",
   "consumer": "Actual finite Wilson cyclic partition; L nonzero, all real beta; no trace theorem.",
   "verification": {
     "compilation": "NOT_RUN",
@@ -21,8 +21,8 @@
   },
   "proof_acceptance": false,
   "remaining": [
-    "Lean qualification",
-    "Positive-length kernel powers and cyclic insertion identities",
-    "Uniform physical scaling and continuum construction"
+    "Exact-source Lean qualification",
+    "Two-observable cyclic insertion transport and decay",
+    "Regulator-uniform physical scaling and nontrivial continuum construction"
   ]
 }
