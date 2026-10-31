@@ -1,0 +1,30 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonIteratedOscillation.lean",
+  "source_base_commit": "8eae94c1ab3980a5c104538e7c19e5fd035aa5f8",
+  "source_blob": "6e5601d3ea47c31140f70816a10eba2e982b158a",
+  "sha256": "c7a57bdcbe4005ba4759108d35a78090b9d6af972741ee90ac8606fc92ffc3a5",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonIteratedOscillation.theta",
+    "GRWTSK.Geometry.GaugeTheory.WilsonIteratedOscillation.theta_nonneg",
+    "GRWTSK.Geometry.GaugeTheory.WilsonIteratedOscillation.theta_lt_one",
+    "GRWTSK.Geometry.GaugeTheory.WilsonIteratedOscillation.rowIterate",
+    "GRWTSK.Geometry.GaugeTheory.WilsonIteratedOscillation.rowIterate_zero",
+    "GRWTSK.Geometry.GaugeTheory.WilsonIteratedOscillation.rowIterate_succ",
+    "GRWTSK.Geometry.GaugeTheory.WilsonIteratedOscillation.oscillation_rowIterate"
+  ],
+  "hypotheses": "Nonzero finite L, beta>0, actual gauge-invariant principal vector; AE nonnegative and nonzero for positivity/balance, eigen-equation for normalization/stationarity, unit norm for probability.",
+  "consumer": "Actual observable row iterates and geometric oscillation bound; no stationary centering or finite-loop covariance estimate.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
