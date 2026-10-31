@@ -1,0 +1,34 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonRowOscillation.lean",
+  "source_base_commit": "fd17b5e5a20850736d1fca6ff7e342673ead1254",
+  "source_blob": "5a836d54108c7b85591d2477f7478a7ea2a15ffa",
+  "sha256": "e47c560353b0ad83686f0314d72e8bf95125beaa49faf2170a05fb0083b87b14",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation.minPoint",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation.maxPoint",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation.lower",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation.upper",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation.oscillation",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation.lower_le",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation.le_upper",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation.oscillation_nonneg",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation.evolve",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation.evolve_eq_row",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRowOscillation.oscillation_evolve"
+  ],
+  "hypotheses": "Nonzero finite L, beta>0, actual gauge-invariant principal vector; AE nonnegative and nonzero for positivity/balance, eigen-equation for normalization/stationarity, unit norm for probability.",
+  "consumer": "Actual continuous row evolution and one-step oscillation contraction; no iterated or finite-loop decay.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
