@@ -1,0 +1,191 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "External-proof consequences for the Liouville causal-energy programme",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "review_base": {
+    "branch": "main",
+    "commit": "12575a445f0d4623eebdf604bb6e628aa9189b28",
+    "tree": "5a3981880f67ffb4d89b0bf4aabc6f1487ab3d97"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleExternalProofConsequences.lean",
+    "blob": "ca268a312b7878b5cf14f2f019bf4f097c2ae4e1",
+    "sha256": "0c99061a740a9da4e1e23827489a3fa5d7c77cc1fa83152701a5e52a0aaab7e1",
+    "namespace": "GRWTSK.NumberTheory.LiouvilleExternalProofConsequences",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleExternalProofExploitation",
+      "Mathlib"
+    ],
+    "definitions": [
+      "PaidRoughEnergyBridge",
+      "UsesProportionalCutoff",
+      "InitialInverseSieveCostAtLeastOne",
+      "NoProportionalGrowingCorrelationEnvelope",
+      "NoProportionalGlobalPotential"
+    ],
+    "proved_scope": [
+      "paidCovarianceRoughEnergyEquivalence_proof",
+      "typeIIBuchstabBridge_iff_paidRoughEnergyBridge",
+      "GrowingCorrelationEnvelopeCertificate.toPaidRoughEnergyBridge",
+      "BuchstabGlobalPotentialCertificate.toPaidRoughEnergyBridge",
+      "externalProofPortfolio_to_paidRoughEnergyBridge",
+      "externalProofPortfolio_to_uniformEnergy_of_paidReturn",
+      "GrowingCorrelationEnvelopeCertificate.proportional_majorant_lower",
+      "BuchstabGlobalPotentialCertificate.proportional_potential_lower"
+    ],
+    "open_named_propositions": [
+      "InitialInverseSieveCostAtLeastOne",
+      "NoProportionalGrowingCorrelationEnvelope",
+      "NoProportionalGlobalPotential"
+    ],
+    "claim": "Paid negative Buchstab covariance control is equivalent to paid rough-energy control under the exact source/Gram premises; both external certificate classes reduce to that bridge; proportional-cutoff certificate majorants inherit the exponential obstruction."
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-external-proof-consequences.md",
+    "blob": "685b2b2864619a505aa51b14f329ea86a4f5efc9",
+    "sha256": "c661102953a13f8266203aa4c383a907ee7433a6dc016b4bac1aa7e67ded7cf1",
+    "claims": [
+      "Covariance-to-rough constant C_unit + 2*C_cov with no exponent loss",
+      "Rough-to-covariance constant (3*C_rough + C_unit)/2 with no exponent loss",
+      "TypeIIBuchstabBridge iff PaidRoughEnergyBridge under terminal source and Gram premises",
+      "Growing-correlation and global-potential certificates both imply paid rough-energy control",
+      "External proof portfolio composes through the named paid return to UniformEnergySupplier when inherited premises are supplied",
+      "At the proportional cutoff every correlation majorant and paid global potential has an exp(T)/T^2 lower bound"
+    ]
+  },
+  "literature_ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-external-proof-consequences-references.md",
+    "blob": "2d61d9b7dfd52b2f93dd29d827f3f3fb1e5176de",
+    "sha256": "98c06acdf74788cdec6292c2a75eff09496a6793061a56dc08c66898e45ef38f",
+    "canonical_monolith": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+    "canonical_monolith_blob": "ad45f0151689a5cbe4a1c19c671ecfa0ad150224",
+    "merge_status": "SHARD_PUBLISHED_MONOLITH_UNCHANGED"
+  },
+  "local_upstream": {
+    "external_proof_exploitation": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleExternalProofExploitation.lean",
+      "blob": "5541eaa72612c7a48c8d46a1205f3e50115b8b59",
+      "publication": "12575a445f0d4623eebdf604bb6e628aa9189b28"
+    },
+    "obstruction_connections": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleObstructionConnections.lean",
+      "blob": "c46315a2a20fafca981ee168b62ab4f640f2e17a"
+    },
+    "rough_buchstab": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleRoughCausalBuchstab.lean",
+      "blob": "1a9e77ebbd97bf288535e9e344cb55958618a417"
+    },
+    "finite_prime_sieve": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleFinitePrimeSieveOperator.lean",
+      "blob": "46a61238b137d9265c2f81c6e6b5a964ca4910e7"
+    },
+    "actual_liouville_target": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean",
+      "blob": "a00aaa07c067b4c88203372870b5d5d151de0de4"
+    }
+  },
+  "external_sources": {
+    "selberg_sieve": {
+      "repository": "leanprover-community/mathlib4",
+      "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "path": "Mathlib/NumberTheory/SelbergSieve.lean",
+      "blob": "29f3dc9e9e53e9e429df6c862714cf8327a2b554",
+      "use": "support and positive diagonal control; no parity breaking"
+    },
+    "ordinary_two_point": {
+      "repository": "openai/math",
+      "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+      "scope_blob": "dad638d19609ebbddc93a5594dfc2ecd2a26a7a6",
+      "comparator_blob": "8764f91cc16967f765b4f19c4378ff8fb5f29cd0",
+      "solution_blob": "2bd48811e73bbdc80c1f738fa889a14189186408",
+      "use": "fixed-form input only; complete growing-family envelope remains missing"
+    },
+    "formal_conjectures_erdos67": {
+      "repository": "google-deepmind/formal-conjectures",
+      "commit": "b6939a3a0d89e5f999fa8c6483a6ef646c1e2923",
+      "path": "FormalConjectures/ErdosProblems/67.lean",
+      "blob": "1502ac6a160ce32dfb39f387dad02386df60d194",
+      "status": "STATEMENT_ONLY_SORRY_BODIES"
+    },
+    "zeta23": {
+      "repository": "anthropics/formal-math",
+      "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+      "readme_blob": "302fa9094863279d0ec83fca012d2b7bf59d5ccd",
+      "use": "signed Gram/rank-trace method pattern"
+    },
+    "quasi_rh": {
+      "repository": "openai/math",
+      "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+      "scope_blob": "cf794e93da2e1a494434153f5b91f2990fe9fd60",
+      "use": "fixed exponent comparison only"
+    },
+    "pfr": {
+      "repository": "teorth/pfr",
+      "commit": "7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f",
+      "solution_blob": "4d49574ba10382abfe9fdd319b70a857e8842e14",
+      "rho_functional_blob": "af3f89faaf4f12edd2ec9796b93ae77474a99c70",
+      "use": "global potential method pattern; no Liouville potential imported"
+    }
+  },
+  "parameter_record": {
+    "proportional_cutoff": "Y_T = floor(exp(2T/5))",
+    "negative_covariance_constant": "((1-log(3/2))^2/16)*(1-exp(-1))",
+    "negative_covariance_constant_approx": 0.013964797,
+    "covariance_to_rough_constant": "C_unit + 2*C_cov",
+    "rough_to_covariance_constant": "(3*C_rough + C_unit)/2",
+    "exponent_loss": "none"
+  },
+  "mathematical_disposition": {
+    "new_cancellation_estimate": false,
+    "new_transfer_theorem": true,
+    "new_programme_specific_obstruction": true,
+    "uniform_energy_proved": false,
+    "riemann_hypothesis_proved": false,
+    "remaining_viable_phase": "construct a growing-shift/Type-II envelope or global potential at a subexponentially conditioned cutoff; the target is equivalent to paid rough-energy control"
+  },
+  "open_formalization": [
+    "Compile the new module and repair any elaboration or API mismatch",
+    "Prove interval-integral nonnegativity and BuchstabUnitYoungBound",
+    "Prove InitialInverseSieveCostAtLeastOne from the finite product formula",
+    "Formalize exponential dominance over polynomial factors and close both proportional no-go propositions",
+    "Qualify the inherited terminal identity, energy identity and paid return",
+    "Run exact expected-type checks, fresh-kernel replay and a transitive axiom audit"
+  ],
+  "open_arithmetic": [
+    "Expand the complete Buchstab covariance into its source-exact growing-shift or Type-II family",
+    "Obtain explicit summable dependence over all shifts, forms, divisors, primes and boundary collars",
+    "Alternatively construct a global potential dominating the paid rough energy/covariance",
+    "Test subexponentially conditioned cutoffs such as Y(T)=T^A for 0<A<2",
+    "Do not apply fixed-form estimates termwise without an averaged-shift gain"
+  ],
+  "verification": {
+    "source_inspection": "DONE",
+    "analytical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "external_comparator_replay": "NOT_RUN"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "authority": {
+    "publication_mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "expected_head": "12575a445f0d4623eebdf604bb6e628aa9189b28",
+    "root_import": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleExternalProofConsequences.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleExternalProofConsequences.lean",
+    "check exact expected types and #print axioms for every theorem in GRWTSK.NumberTheory.LiouvilleExternalProofConsequences",
+    "audit the complete transitive imports for sorryAx, research axioms, native trust and omitted required modules",
+    "replay the pinned external Comparator configurations separately before upgrading any upstream evidence status"
+  ]
+}
