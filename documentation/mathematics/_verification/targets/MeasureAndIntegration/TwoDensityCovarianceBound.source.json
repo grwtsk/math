@@ -1,0 +1,31 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/TwoDensityCovarianceBound.lean",
+  "source_base_commit": "3b880c103a477d802f60e389337b5e1a93d66206",
+  "source_blob": "10ceb86e6b795c85481768d2a5664e85c0c6eb76",
+  "sha256": "0632176fb51c32095f10308ce2f7464fd23be25a3c73dfaac314102d2605ac68",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceBound.abs_double_integral_le",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceBound.residual_pointwise",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceBound.cross_bound",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceBound.left_bound",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceBound.right_bound",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceBound.joint_bound",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceBound.normalizer_lower",
+    "GRWTSK.Analysis.Integration.TwoDensityCovarianceBound.covariance_bound"
+  ],
+  "hypotheses": "Compact Hausdorff second-countable Borel space with probability measure; continuous J,K; explicit row/column normalization and centered continuous observable hypotheses per theorem; nonnegative pointwise kernel residual bounds e,f with e*f<1 and continuous observable bounds M,N; actual positive normalizer follows from its integral identity.",
+  "consumer": "Quantitative bound M*N*((e+f+e*f)/(1-e*f)+(e*f)^2/(1-e*f)^2) for actual centered quotient covariance; actual Wilson applicability remains separate.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
