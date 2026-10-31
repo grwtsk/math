@@ -1,0 +1,28 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/ContinuousKernelPowers.lean",
+  "source_base_commit": "9f2747cad5de3627c39b22b36dea43e78a3b341b",
+  "source_blob": "6f700742177fa9ab2750e53d866dd8fe0877039c",
+  "sha256": "38cded4781173e14793ea26a84137fe829c821ef6eb646d6f4cd99318e1a2bd8",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.ContinuousKernelPowers.positivePower",
+    "GRWTSK.Analysis.Integration.ContinuousKernelPowers.positivePower_zero",
+    "GRWTSK.Analysis.Integration.ContinuousKernelPowers.positivePower_succ",
+    "GRWTSK.Analysis.Integration.ContinuousKernelPowers.positivePower_succ_apply",
+    "GRWTSK.Analysis.Integration.ContinuousKernelPowers.operator_positivePower"
+  ],
+  "hypotheses": "Compact Hausdorff second-countable Borel space; probability measure; continuous real kernels; arbitrary actual L2 input.",
+  "consumer": "Positive-length periodic Wilson kernel arcs; actual maintained L2 operator powers.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
