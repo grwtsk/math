@@ -71,11 +71,11 @@ theorem Path.additiveTransport_observation
       observe y (fit h a) = observe x a)
     {x y : V} (path : Path edge x y) (a : Fiber x) :
     observe y (Path.additiveTransport fit path a) = observe x a := by
-  induction path with
+  induction path generalizing a with
   | single h =>
       exact compatible h a
   | tail path h ih =>
-      exact (compatible h (Path.additiveTransport fit path a)).trans ih
+      exact (compatible h (Path.additiveTransport fit path a)).trans (ih a)
 
 /-- If each local transition is faithful, the entire composed
 transport is faithful. Without this condition, active fusion can

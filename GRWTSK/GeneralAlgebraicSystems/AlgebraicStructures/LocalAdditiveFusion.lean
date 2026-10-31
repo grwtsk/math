@@ -231,6 +231,47 @@ theorem Seam.descend_unique (S : Seam C A B)
     S.descend_inLeft f g compatible a,
     S.descend_inRight f g compatible b]
 
+/-- An arbitrary observation on the original product factors through
+the fusion only if it is constant on every identified quotient fiber.
+This is the exact question for signed arithmetic data, which need not
+be an additive homomorphism. -/
+def Seam.FactorsObservation (S : Seam C A B)
+    {D : Type t} (observe : A × B → D) : Prop :=
+  ∃ returned : S.Fused → D,
+    ∀ pair : A × B,
+      returned ((QuotientAddGroup.mk' S.relation) pair) = observe pair
+
+/-- Every observation that descends is equal on any pair of original
+states identified by the quotient. This includes multiplicity and
+sign observations, not just additive homomorphisms. -/
+theorem Seam.observation_eq_of_factors (S : Seam C A B)
+    {D : Type t} (observe : A × B → D)
+    (hreturn : S.FactorsObservation observe)
+    (x y : A × B)
+    (hglued : (QuotientAddGroup.mk' S.relation) x =
+      (QuotientAddGroup.mk' S.relation) y) :
+    observe x = observe y := by
+  obtain ⟨returned, hreturned⟩ := hreturn
+  calc
+    observe x = returned ((QuotientAddGroup.mk' S.relation) x) :=
+      (hreturned x).symm
+    _ = returned ((QuotientAddGroup.mk' S.relation) y) :=
+      congrArg returned hglued
+    _ = observe y := hreturned y
+
+/-- A concrete source observation collision is a complete no-go for
+an EXACT factorization through this fused object. Enlarging the
+representation later does not restore an already identified sign. -/
+theorem Seam.no_observation_descent_of_collision (S : Seam C A B)
+    {D : Type t} (observe : A × B → D)
+    (x y : A × B)
+    (hglued : (QuotientAddGroup.mk' S.relation) x =
+      (QuotientAddGroup.mk' S.relation) y)
+    (hdifferent : observe x ≠ observe y) :
+    ¬ S.FactorsObservation observe := by
+  intro hreturn
+  exact hdifferent (S.observation_eq_of_factors observe hreturn x y hglued)
+
 /-- A concrete obstruction: if the right seam kills a nonzero element
 visible in the left source, left inclusion is NOT faithful. -/
 theorem Seam.inLeft_not_injective_of_seam_collision (S : Seam C A B)
