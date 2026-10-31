@@ -1,0 +1,190 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Exact growing-prime-band identity for the actual Liouville causal waveform",
+  "attribution": "grwtsk contributors",
+  "review_base": {
+    "branch": "main",
+    "commit": "df0658168e17539da1112766166b05744ea2fa78",
+    "tree": "e5746cb3b43fbbfb5cba60a5c194a10903ca6c99"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingPrimeBandIdentity.lean",
+    "blob": "477ca1d19b634a09e8d5c1e38e8035798bb0ef37",
+    "sha256": "79b54101dc3ce5d8677d66f2d9c185865f51abde2cdf822879e40b5a0223fdcd",
+    "namespace": "GRWTSK.NumberTheory.LiouvilleGrowingPrimeBandIdentity",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleReciprocalPrimeMassObstruction",
+      "Mathlib"
+    ],
+    "definitions": [
+      "bandMass",
+      "selectedDivisorWeight",
+      "primeDivisorWaveform",
+      "uncoveredWaveform",
+      "delayedCovariance",
+      "weightedDelayedCovariance",
+      "uncoveredEnergy",
+      "PrimeDivisorWaveformIdentity",
+      "GrowingPrimeBandWaveformIdentity",
+      "GrowingPrimeBandEnergyIdentity",
+      "PrimeBandResidualCovarianceSupplier",
+      "PrimeBandSupplierImpliesUniformEnergy"
+    ],
+    "proved_scope": [
+      "bandMass_nonneg"
+    ],
+    "open_named_propositions": [
+      "PrimeDivisorWaveformIdentity",
+      "GrowingPrimeBandWaveformIdentity",
+      "GrowingPrimeBandEnergyIdentity",
+      "PrimeBandSupplierImpliesUniformEnergy"
+    ],
+    "claim": "Exact source interfaces for finite-band Liouville delay, covariance, uncovered residual energy and a sufficient transfer; no arithmetic cancellation supplier"
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-growing-prime-band-identity.md",
+    "blob": "29f100515355012a3c47a5732dda45e21f4a9479",
+    "sha256": "46ea2cac57f17641a0cdc14096c39fd2ccbd0dbaf5e7b869c3c7452b85f1c1e1",
+    "claims": [
+      "Exact one-prime divisor-waveform reindexing with repeated-prime multiples retained",
+      "Exact finite-band waveform identity W F + delayed sum = uncovered signed waveform",
+      "Exact integrated identity W H + signed covariance = integral F R",
+      "Cauchy-Schwarz transfer H <= uncoveredEnergy/W^2 under nonnegative complete covariance",
+      "Concrete noncircular supplier separating covariance sign from residual-waveform cancellation"
+    ]
+  },
+  "literature_ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-growing-prime-band-identity-references.md",
+    "blob": "7c726307df215e44385d689d9273919b9863f54c",
+    "sha256": "a17ef9d9477374591300da6e73d69891c12d41144afeb862623279fc767721ad",
+    "canonical_monolith": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+    "canonical_monolith_blob": "bfcae896d079606ddb1ec472483d4caf060d60d7",
+    "merge_status": "BLOCKED_BY_NO_SAFE_TEXT_PATCH_OR_COMPLETE_BYTE_MATERIALIZATION"
+  },
+  "conversation_inventory": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayObstruction.lean",
+      "blob": "0f4b1fa7f5fa69b3d8fa8b2ab2bef4abeec7c574",
+      "publication": "b60a766283b8b8b507274691e31ce88763d033d9"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/liouville-method-comparison-and-prime-delay-obstructions.md",
+      "blob": "0add9dd09cc9a6588e010179079498cec4393196",
+      "publication": "b60a766283b8b8b507274691e31ce88763d033d9"
+    },
+    {
+      "path": "documentation/mathematics/_verification/targets/liouville-prime-delay-obstruction.json",
+      "blob": "7fa2128e53fe3e4653289d918cb460d763622b0b",
+      "publication": "b60a766283b8b8b507274691e31ce88763d033d9"
+    },
+    {
+      "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-prime-delay-obstruction-references.md",
+      "blob": "be1bd0835f2e08bcbcf71e8ec0cc6cd8ebd52440",
+      "publication": "b60a766283b8b8b507274691e31ce88763d033d9"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleReciprocalPrimeMassObstruction.lean",
+      "blob": "3da18f04925fa206249ff81433de413de97f4104",
+      "publication": "df0658168e17539da1112766166b05744ea2fa78"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/liouville-reciprocal-prime-mass-obstruction.md",
+      "blob": "1ee1e64781b4efabc28b9f7a9a5a556b83887d21",
+      "publication": "df0658168e17539da1112766166b05744ea2fa78"
+    },
+    {
+      "path": "documentation/mathematics/_verification/targets/liouville-reciprocal-prime-mass-obstruction.json",
+      "blob": "ef46456cb31325c12721c6fbb27a634ab0035fa0",
+      "publication": "df0658168e17539da1112766166b05744ea2fa78"
+    },
+    {
+      "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-reciprocal-prime-mass-obstruction-references.md",
+      "blob": "98f5e9d54287177739d45617d310e598714571c8",
+      "publication": "df0658168e17539da1112766166b05744ea2fa78"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingPrimeBandIdentity.lean",
+      "blob": "477ca1d19b634a09e8d5c1e38e8035798bb0ef37"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/liouville-growing-prime-band-identity.md",
+      "blob": "29f100515355012a3c47a5732dda45e21f4a9479"
+    },
+    {
+      "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-growing-prime-band-identity-references.md",
+      "blob": "7c726307df215e44385d689d9273919b9863f54c"
+    },
+    {
+      "path": "documentation/mathematics/_verification/targets/liouville-growing-prime-band-identity.json",
+      "role": "this target; blob supplied by publication response"
+    }
+  ],
+  "upstream": {
+    "actual_liouville_source": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean",
+      "blob": "a00aaa07c067b4c88203372870b5d5d151de0de4"
+    },
+    "reciprocal_mass_source": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleReciprocalPrimeMassObstruction.lean",
+      "blob": "3da18f04925fa206249ff81433de413de97f4104"
+    },
+    "prime_delay_source": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayObstruction.lean",
+      "blob": "0f4b1fa7f5fa69b3d8fa8b2ab2bef4abeec7c574"
+    },
+    "double_abel_kernel": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelCausalKernel.lean",
+      "blob": "b102b4af07b0a1001424b084101c2cc16077181a"
+    },
+    "analytic_gates": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean",
+      "blob": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4"
+    },
+    "polynomial_moment": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelPolynomialMoment.lean",
+      "blob": "30c71b912487b98a1a341d6010cb28e75c6798f7"
+    }
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "open_formalization": [
+    "Prove pickupResponse scaling r_(pn)(u)=p^(-1/2)r_n(u-log p) with zero-birth handling",
+    "Prove the finite divisor reindexing for the actual Liouville coefficient",
+    "Prove the finite-band selected/uncovered weight partition",
+    "Prove the integrated covariance identity with interval integrability",
+    "Formalize the Cauchy-Schwarz transfer and zero-energy branch",
+    "Compile and audit the complete predecessor/new source closure"
+  ],
+  "open_arithmetic": [
+    "Choose an actual growing band with quantitatively divergent reciprocal mass",
+    "Prove nonnegative covariance or a quantified controlled negative part",
+    "Prove every-positive-rate normalized uncovered signed waveform energy",
+    "Retain omitted-prime, repeated-prime, unsifted, birth-collar and exceptional costs",
+    "Carry the resulting energy gain through the complete signed Omega-weighted double-Abel consumer"
+  ],
+  "verification": {
+    "source_bytes": "LOCALLY_HASHED_BEFORE_PUBLICATION",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "native_verification": "NOT_DISPATCHED"
+  },
+  "authority": {
+    "publication_mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "expected_head": "df0658168e17539da1112766166b05744ea2fa78",
+    "root_import": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "commands_for_separately_authorized_clean_checkout": [
+    "git checkout --detach <published_commit>",
+    "test \"$(cat lean-toolchain)\" = \"leanprover/lean4:v4.34.1\"",
+    "grep -F 'd13f23b723b8a846827a245b89c10fc7d3f11612' lake-manifest.json",
+    "lake env lean -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingPrimeBandIdentity.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingPrimeBandIdentity.lean",
+    "check exact expected types and #print axioms for every theorem in GRWTSK.NumberTheory.LiouvilleGrowingPrimeBandIdentity",
+    "audit the complete transitive imports for sorryAx, research axioms, native trust and omitted required modules"
+  ]
+}
