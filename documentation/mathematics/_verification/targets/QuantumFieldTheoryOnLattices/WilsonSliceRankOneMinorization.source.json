@@ -1,0 +1,35 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceRankOneMinorization.lean",
+  "source_base_commit": "2e1d81e631c0dc3d21417e5c78daad8b093206b1",
+  "source_blob": "1207de0f678c690fadd337dc5e4bb4668a4c9c95",
+  "source_sha256": "8e1ed2051fb753708957c9dbc195e40ed66bb8febd647f1ab8040d51025c08cd",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRankOneMinorization.unit_mass_le_one",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRankOneMinorization.scaledRepresentative_bounds",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRankOneMinorization.principal_product_le_one",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRankOneMinorization.kernel_rankOne_lower",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceRankOneMinorization.principal_rankOne_minorization"
+  ],
+  "consumer": "Nonnegative residual kernel for subsequent weighted Schur/normalized-transfer estimate",
+  "hypotheses": [
+    "NeZero L",
+    "beta > 0",
+    "Actual unit nonnegative AE invariant L2 input",
+    "Actual principal equation for joint embedding/minorization consumer"
+  ],
+  "constant": "exp(-12 beta L^3) * lambda0^2",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification",
+    "Weighted Schur/norm estimate; pointwise kernel order is not quadratic operator order",
+    "Regulator-uniform physical scaling and continuum construction"
+  ]
+}
