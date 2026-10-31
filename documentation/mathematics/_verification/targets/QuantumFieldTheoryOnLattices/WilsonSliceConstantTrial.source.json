@@ -1,0 +1,34 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceConstantTrial.lean",
+  "source_base_commit": "17e7f330f9c89edb746f49c09b087d8ffb034f66",
+  "source_blob": "45ccf4a118ea438d71a116fa168242b0ff08e8fb",
+  "source_sha256": "0aa6d36ec90e4bcac9435e70f7eb0478216dab1d8ec3c6b627d550407877a602",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceConstantTrial.inner_oneVector",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceConstantTrial.constantVector_norm",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceConstantTrial.constantVector_quadratic_lower",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceConstantTrial.lambda0_lower",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceConstantTrial.normalized_difference_explicit"
+  ],
+  "consumer": "Actual finite periodic SU2 Wilson normalized transfer separation",
+  "hypotheses": [
+    "NeZero L",
+    "beta >= 0 for principal bound; beta > 0 for normalized separation",
+    "Actual invariant constant vector and probability slice Haar"
+  ],
+  "constant": "exp(-24 beta L^3) <= 1-lambda1/lambda0",
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact-source qualification of full dependency chain",
+    "Regulator-uniform physical scaling",
+    "Continuum construction and reconstruction"
+  ]
+}
