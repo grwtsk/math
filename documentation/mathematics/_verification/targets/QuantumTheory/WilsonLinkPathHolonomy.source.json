@@ -1,0 +1,24 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonLinkPathHolonomy.lean",
+  "source_blob": "cec4f7821c40541ec45178f42d299859a674c2ff",
+  "source_base_commit": "8b4843483ffb21426d4d6dd058a98153062fda8f",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonLinkPathHolonomy.path_inv",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLinkPathHolonomy.replaceLink",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLinkPathHolonomy.positiveSlot",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLinkPathHolonomy.negativeSlot",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLinkPathHolonomy.replace_apply",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLinkPathHolonomy.replace_inverse_apply",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLinkPathHolonomy.holonomy_replace"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "mathematical_acceptance": false,
+  "hypotheses": "Actual diagonal SU2 path; nonzero L, arbitrary actual configuration and chosen link, every periodic coincidence retained.",
+  "scope": "Actual path inverse and exact ordered four-slot holonomy with all equality tests. No occurrence uniqueness, derivatives or uniform gap."
+}
