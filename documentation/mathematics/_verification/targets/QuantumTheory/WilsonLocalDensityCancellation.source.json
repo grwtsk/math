@@ -1,0 +1,26 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonLocalDensityCancellation.lean",
+  "source_blob": "19af98048b13277bd3de81c7cbdfae24c2c6092d",
+  "source_base_commit": "54ec85ac0548c35dbe88b0f232271c1dcdabcb3d",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityCancellation.resample",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityCancellation.resample_outside",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityCancellation.exteriorAction",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityCancellation.action_resample",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityCancellation.fullWeight",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityCancellation.localWeight",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityCancellation.weight_factor",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityCancellation.partition_factor",
+    "GRWTSK.Geometry.GaugeTheory.WilsonLocalDensityCancellation.normalized_density_eq"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "mathematical_acceptance": false,
+  "hypotheses": "L nonzero, arbitrary finite link set A, exterior configuration V, beta real, actual product Haar on SU2-valued A-links.",
+  "scope": "Exact preliminary resampling weight and partition cancellation. Regular conditional probability identification, positivity, integrability and local minorization remain separate."
+}
