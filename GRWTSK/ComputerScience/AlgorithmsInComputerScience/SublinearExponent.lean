@@ -36,7 +36,7 @@ theorem zero_isSublinear : IsSublinear (fun _ => 0) := by
 
 theorem delayedLinear_prefix (cutoff n : Nat) (within : n ≤ cutoff) :
     delayedLinear cutoff n = 0 :=
-  if_pos within
+  ite_eq_left within
 
 theorem delayedLinear_not_isSublinear (cutoff : Nat) :
     ¬ IsSublinear (delayedLinear cutoff) := by
@@ -54,7 +54,7 @@ theorem delayedLinear_not_isSublinear (cutoff : Nat) :
       n = 1 * n := (Nat.one_mul n).symm
       _ < 2 * n := Nat.mul_lt_mul_of_pos_right (by decide) positive
   have incompatible := bound n past
-  rw [delayedLinear, if_neg (Nat.not_le_of_gt beyond)] at incompatible
+  rw [delayedLinear, ite_eq_right (Nat.not_le_of_gt beyond)] at incompatible
   exact (Nat.not_le_of_gt strict) incompatible
 
 /-- Finite prefix equality cannot decide this uniform eventual property.
