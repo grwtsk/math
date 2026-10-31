@@ -1,0 +1,159 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Terminal anti-diagonal localization of the Möbius endpoint consumer",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "review_base": {
+    "analytical_commit": "d432b037fc69d1c819a22b9f78b0b7d0c445a371",
+    "analytical_tree": "7dd0bb19f87fca5c7d11eba1b42d2708631b334c",
+    "publication_expected_head": "ade0f3c0c94c753623f8ca8c86fa66b0884de15a",
+    "publication_base_tree": "0fa4342144e7b019cf7b97eee235ea762c8e42fc"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointTerminalGapLocalization.lean",
+    "blob": "57d3ec28d0fd5c57e979981746ae6f85c921eba6",
+    "sha256": "d148239bd84578d7749ddae2de3292ccf3cdd563c276b9f336189a43cc5ae4bd",
+    "namespace": "GRWTSK.NumberTheory.MoebiusEndpointTerminalGapLocalization",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusEndpointGapLocalization",
+      "Mathlib"
+    ],
+    "proved_scope": [
+      "pickupCross_eq_small_middle_terminal",
+      "two_mul_one_sub_exp_neg_half_le",
+      "tunedTerminalGapDecayBound_to_allRate",
+      "endpointSum_le_small_terminal_middle",
+      "twoSidedGapLocalizedEndpointReturn",
+      "constant_packet_second_moment",
+      "constant_packet_outer_sum",
+      "fixedMomentOnlyLargeGapNoGo"
+    ],
+    "open_named_propositions": [
+      "TerminalGapAbsoluteBound",
+      "TunedTerminalGapDecayBound",
+      "TunedTerminalGapDecay",
+      "TunedTerminalGapSectorAllRate",
+      "MiddleGapEndpointSupplier",
+      "TerminalGapLocalizationDisposition"
+    ],
+    "claim": "Exact three-sector endpoint reduction, terminal anti-diagonal geometric bound interface, tuned exponential decay, and fixed-moment outer-sum obstruction; no middle-gap estimate"
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-endpoint-terminal-gap-localization.md",
+    "blob": "887b5eb03494577b53d76a57ffb347395c4bc014",
+    "sha256": "9aa49f3db69ac3699b3d05e53aa0c2c4d59bfb27bd5093f617d05c755d2b1d2e",
+    "claims": [
+      "|X_terminal(M,T)| <= 16*sqrt(2)*M^(7/2)/N^(5/2) for N=floor(exp T), 2*M<=N",
+      "with M=floor(exp(2T/3)), |X_terminal| <= 128*exp(-T/6) eventually",
+      "small, middle and terminal sectors reconstruct the complete endpoint cross",
+      "the remaining supplier only concerns exp(epsilon*T/4) < |m-n| < N-exp(2T/3)",
+      "bounded normalized fixed moments alone cannot control an aligned outer shift sum"
+    ]
+  },
+  "literature_ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/moebius-endpoint-terminal-gap-localization-references.md",
+    "blob": "2c400c4e1389dd4f4fef40beeb894a5de8363bae",
+    "sha256": "9c145a857ab959f7b46b7829f7a0cca6d59c325aa8e1dd97e9c3275c5ea4689c",
+    "canonical_monolith": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+    "merge_status": "SHARD_PUBLISHED_MONOLITH_UNCHANGED"
+  },
+  "local_upstream": {
+    "gap_localization": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointGapLocalization.lean",
+      "blob": "d625b45178651e474f54ca4b49abda0a8676e154",
+      "publication": "d432b037fc69d1c819a22b9f78b0b7d0c445a371"
+    },
+    "endpoint_quadrature": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean",
+      "blob": "2606536c56bdcb33d120aeddfbcbeef793e31ba1"
+    },
+    "literal_response": {
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa"
+    }
+  },
+  "external_sources": [
+    {
+      "authors": [
+        "Jizhou Guo"
+      ],
+      "title": "Logarithmic Chowla Correlations Across All Shift Scales",
+      "year": 2026,
+      "arxiv": "2608.23500v4",
+      "use": "fixed-moment and polynomial-window logarithmic shift bounds; no signed outer-shift mean"
+    },
+    {
+      "authors": [
+        "Scott D. Hughes"
+      ],
+      "title": "Effective logarithmic two-point Chowla bounds in every window",
+      "year": 2026,
+      "arxiv": "2609.28526",
+      "use": "effective coefficient-uniform logarithmic windows; no ordinary endpoint middle-gap supplier"
+    },
+    {
+      "authors": [
+        "OpenAI"
+      ],
+      "title": "Ordinary two-point correlations of multiplicative functions",
+      "year": 2026,
+      "repository": "openai/math",
+      "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+      "use": "fixed affine forms with form-dependent constants; no exponentially growing signed outer family"
+    }
+  ],
+  "parameter_record": {
+    "endpoint_size": "N=floor(exp T)",
+    "terminal_condition": "N <= Nat.dist(m,n)+M",
+    "terminal_bound": "16*sqrt(2)*M^(7/2)/N^(5/2)",
+    "terminal_width": "M_T=floor(exp(2T/3))",
+    "terminal_decay": "128*exp(-T/6)",
+    "small_gap_cutoff": "H_epsilon(T)=floor(exp(epsilon*T/4))",
+    "remaining_middle_supplier": "X_mid(H_epsilon(T),M_T,T) <= C_epsilon*exp(epsilon*T)"
+  },
+  "mathematical_disposition": {
+    "new_programme_specific_upper_estimate": true,
+    "new_complete_endpoint_upper": false,
+    "uniform_energy_proved": false,
+    "riemann_hypothesis_proved": false,
+    "obstruction": "fixed normalized shift moments are compatible with an aligned constant packet family and do not control the signed outer sum",
+    "remaining_viable_phase": "derive a signed dyadic ratio-block estimate for the middle-gap sector before outer absolute values"
+  },
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "external_theorem_replay": "NOT_RUN",
+    "middle_gap_supplier": "UNPROVED",
+    "complete_endpoint_estimate": "UNPROVED",
+    "uniform_energy": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "authority": {
+    "publication_mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "expected_head": "ade0f3c0c94c753623f8ca8c86fa66b0884de15a",
+    "root_import": "UNCHANGED",
+    "runtime_artifacts_in_math": false,
+    "reconciliation": "immutable blobs rebuilt on concurrent descendant before non-force update",
+    "unused_staged_commits": [
+      "7f8b0be08b9b30cdaf787b8ba5747ee70003bd38",
+      "130c658fd8b762bc45882476aab93dacb1d0c5c6"
+    ]
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointTerminalGapLocalization.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointTerminalGapLocalization.lean",
+    "check exact expected types and #print axioms for every theorem in GRWTSK.NumberTheory.MoebiusEndpointTerminalGapLocalization",
+    "audit complete transitive imports and replay external theorem inputs separately"
+  ]
+}
