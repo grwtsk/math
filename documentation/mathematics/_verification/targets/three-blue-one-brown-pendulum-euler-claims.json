@@ -1,0 +1,75 @@
+{
+  "title": "Differential equations, studying the unsolvable",
+  "byline": "Grant Sanderson",
+  "date": "2019-03-31",
+  "primary_url": "https://www.3blue1brown.com/lessons/differential-equations/",
+  "retained_page_sha256": "b9a5c225f24cb6873f6c5ca18bd2fb65aacf8320a7740a77321e62255bac5965",
+  "animation_source": {
+    "commit": "306a1346a356c7a7b097875ceb51c5cd67d0a56c",
+    "directory_url": "https://github.com/3b1b/videos/tree/306a1346a356c7a7b097875ceb51c5cd67d0a56c/_2019/diffyq/part1",
+    "files": {
+      "pendulum.py": {
+        "blob": "aaa80b2e5aa4e43139386ee3e21ca86730633b62",
+        "sha256": "3c74a66641183d45a3253bcaafc44d69b7021e1d0c07c2eeb382770ccc4cf250"
+      },
+      "shared_constructs.py": {
+        "blob": "026e7acbe5b122297409d72188ca56e9c050be8c",
+        "sha256": "f0b4566887584ac1f600a2053dab8756201819fd51348e2a5a63f6e2b1a32c0f"
+      }
+    },
+    "selected": "get_ode and Pendulum.update_by_gravity184-198,coefficient g/L",
+    "license": "CC BY-NC-SA4.0/public bylines retained",
+    "scope": "Current pin,not historical2019 snapshot/spoken transcript;no animation execution"
+  },
+  "source": "GRWTSK/NumericalAnalysis/NumericalMethodsForOrdinaryDifferentialEquations/NumericalMethodsForInitialValueProblemsInvolvingOrdinaryDifferentialEquations/PendulumEuler.lean",
+  "blob": "ccc3fd717c05b508774380e616f8c7a5ec4c328b",
+  "namespace": "GRWTSK.NumericalAnalysis.PendulumEuler",
+  "theorems": [
+    "step_increments",
+    "zero_step",
+    "orbit_successor",
+    "zero_frame",
+    "one_frame",
+    "frame_uniform_width",
+    "step_equilibria",
+    "frame_equilibria",
+    "step_size_derivative",
+    "step_energy_derivative",
+    "step_energy_quotient_limit",
+    "step_energy_defect",
+    "undamped_zero_angle_gain",
+    "undamped_zero_angle_nonnegative_gain",
+    "finite_step_not_energy_conserving"
+  ],
+  "hypotheses": "Exact-real all-parameter step/energy identities;nonzero h only through punctured energy quotient;N>0 for actual positive substep width supplier,zero-frame boundary separate. g>=0,L>0 for nonnegative gain;g>0,L>0 for strict pi-step gain.",
+  "scope": "Literal simultaneous explicit Euler substep and same-step finite iteration,actual step-size derivative/energy quotient limit,exact finite energy defect and nonconservation boundary;not global numerical convergence or Python refinement.",
+  "distinct_helper": "Current pendulum_vector_field_func uses sqrt(g/L),not g/L;not silently identified with displayed/update ODE or original-video error claim.",
+  "imported_mathlib": {
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "module_blobs": {
+      "Mathlib/Analysis/Calculus/Deriv/Prod.lean": "78c041a972d224098f8ebc4013f026df84c2ae9f",
+      "Mathlib/Analysis/Calculus/Deriv/Slope.lean": "6a258b1131e8405d3180328b403e87085cf811db",
+      "Mathlib/Logic/Function/Iterate.lean": "48324196626b2d62726e7e89fad332133c62e604"
+    },
+    "role": "Actual product derivative,slope limit and finite function iteration suppliers;not fresh acceptance"
+  },
+  "verification": {
+    "compilation": "NOT_RUN_USER_DEFERRED",
+    "fresh_kernel": "NOT_RUN_USER_DEFERRED",
+    "expected_types": "NOT_RUN_USER_DEFERRED",
+    "transitive_axioms": "NOT_RUN_USER_DEFERRED"
+  },
+  "open": [
+    "Uniform finite-frame numerical error/stability/convergence",
+    "Arbitrary nonlinear existence/global attraction and physical geometry",
+    "Other source examples/full spoken-video mapping and all checks"
+  ],
+  "video_verified_complete": false,
+  "inherited_candidates": [
+    {
+      "commit": "fd6929a79c632b509f7bec8e606161719a8b5231",
+      "blob": "8e45d66ac9673f5e06c87b6b58d67ba877d64666",
+      "role": "Actual acceleration/energy/chain derivative,unchecked"
+    }
+  ]
+}
