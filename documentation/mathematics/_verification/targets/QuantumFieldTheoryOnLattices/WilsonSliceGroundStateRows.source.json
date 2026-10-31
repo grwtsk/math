@@ -1,0 +1,43 @@
+{
+  "schema": "grwtsk.source-verification-target/1",
+  "msc2020": "81T25",
+  "source_path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSliceGroundStateRows.lean",
+  "source_base_commit": "85387eae8ba855c2bc4d11335a9d6dc6db7265a2",
+  "source_blob": "d75333df3a8b34b7ac56361f2e377b4cd7c45e6a",
+  "source_sha256": "512fa0a5bc3f7a7ecc5ff430871943b0646c50fc55c40dc8a006b168634ce448",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.principalMass",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.commonDensity",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.rowDensity",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.principalMass_eq",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.principalMass_pos",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.rowDenominator_pos",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.commonDensity_continuous",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.commonDensity_integrable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.commonDensity_nonnegative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.commonDensity_integral",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.rowDensity_continuous",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.rowDensity_integrable",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.rowDensity_nonnegative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.rowDensity_integral",
+    "GRWTSK.Geometry.GaugeTheory.WilsonSliceGroundStateRows.common_minorization"
+  ],
+  "consumer": "Actual Wilson normalized rows and common-density oscillation route",
+  "hypotheses": [
+    "NeZero L",
+    "beta>0",
+    "actual nonzero nonnegative principal eigenvector for normalized identities"
+  ],
+  "facets": {
+    "compile": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "expected_interface": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Exact source qualification",
+    "Oscillation contraction and actual second eigenfunction ratio",
+    "Uniform physical scaling and continuum reconstruction"
+  ]
+}
