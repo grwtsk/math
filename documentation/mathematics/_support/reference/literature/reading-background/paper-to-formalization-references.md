@@ -3827,3 +3827,13 @@ A concrete kernel, a positive minorization constant and the actual normalization
 witnesses are still required. No parameter-uniform rate, infinite-limit theorem,
 Hessian estimate, Wilson quadratic positive-operator order, continuum theorem,
 response-runtime refinement, SAT algorithm or ETH consequence follows here.
+
+
+### Piazza–Shen minorization iteration: positive kernel powers
+
+- Source: Jack Piazza and Hao Shen, *Log-Sobolev inequality for 2D SU(N) lattice gauge theory at all couplings*, 2026, arXiv:2610.35286v1, https://arxiv.org/abs/2610.35286v1, Lemma 2.1 (zeroth-order method adaptation).
+- Local attribution: grwtsk contributors. Source proof candidate at commit `feacfb6d1b612977e898b2746b47b85d03e2a4df`, blob `11859d7d089eabc08bfe4477bc9e9b1accc24074`, `GRWTSK/MeasureAndIntegration/ContinuousKernelMinorizationPowers.lean`.
+- Declarations: `GRWTSK.Analysis.Integration.ContinuousKernelMinorizationPowers.positivePower_column`, `.positivePower_residual_step`, `.positivePower_residual_bound` (same namespace).
+- Hypotheses: compact Hausdorff second-countable Borel probability space; continuous kernel; actual row/column normalization; K≥a with a<1; initial absolute residual ≤M. Index n means n+1 transitions. Fubini propagates column normalization; the actual power residual is bounded by (1−a)^n M. Strict contraction additionally requires a>0.
+- Evidence class: SOURCE_PROOF_CANDIDATE, not kernel-verified bridge or full imported paper theorem. Compilation, fresh kernel replay, transitive axiom audit and expected-interface checks: NOT_RUN; no execution dispatched for this source.
+- Missing bridges: regulator-uniform a and M; derivative/Hessian supplier; actual four-dimensional conditional block interactions; continuum construction and physical mass gap. The paper's two-dimensional independence is not transferred to four dimensions.
