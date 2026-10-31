@@ -1,0 +1,32 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonNormalizedEndpointTransport.lean",
+  "source_base_commit": "644accf67202382f6afda9569b192933e621c479",
+  "source_blob": "149ac00bcc62d60ad7b446d3bda7fba750b786d9",
+  "sha256": "cbdcd752311d16cff556331784a169b8ea4e65dfca890a13ea75953c5193aea5",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonNormalizedEndpointTransport.endpoint",
+    "GRWTSK.Geometry.GaugeTheory.WilsonNormalizedEndpointTransport.endpoint_numerator",
+    "GRWTSK.Geometry.GaugeTheory.WilsonNormalizedEndpointTransport.relativeInsertion",
+    "GRWTSK.Geometry.GaugeTheory.WilsonNormalizedEndpointTransport.insertion_conversion",
+    "GRWTSK.Geometry.GaugeTheory.WilsonNormalizedEndpointTransport.normalizer_partition",
+    "GRWTSK.Geometry.GaugeTheory.WilsonNormalizedEndpointTransport.relative_normalizer_pos",
+    "GRWTSK.Geometry.GaugeTheory.WilsonNormalizedEndpointTransport.normalized_endpoints",
+    "GRWTSK.Geometry.GaugeTheory.WilsonNormalizedEndpointTransport.normalized_left_endpoint",
+    "GRWTSK.Geometry.GaugeTheory.WilsonNormalizedEndpointTransport.normalized_right_endpoint"
+  ],
+  "hypotheses": "L=(p+1)+(q+1), beta>0, actual gauge-invariant principal eigenvector f, Haar-a.e. f>=0, f!=0, norm f=1, actual principal eigenvalue equation; powers have lengths p+1,q+1; arbitrary continuous endpoint O,P; normalizer positivity uses actual partition positivity, no small-error assumption.",
+  "consumer": "Transports actual normalized cyclic first and product endpoint moments to actual stationary quotient powers, with Zrel=cyclicPartition/lambda0^L>0; final block covariance assembly remains separate.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
