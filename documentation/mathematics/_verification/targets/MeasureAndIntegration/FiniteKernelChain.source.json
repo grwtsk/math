@@ -1,0 +1,30 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/MeasureAndIntegration/FiniteKernelChain.lean",
+  "source_base_commit": "9f077862af9c0fc8c83e98fe6493e724f4d9239e",
+  "source_blob": "be8c972d7df8ede933adae496be31c9115b3f329",
+  "sha256": "e6d8039c5eb6180415e462b8bb1d915e2d77c88065292897f72400ab5e234d7f",
+  "declarations": [
+    "GRWTSK.Analysis.Integration.FiniteKernelChain.edgeFactors",
+    "GRWTSK.Analysis.Integration.FiniteKernelChain.weight",
+    "GRWTSK.Analysis.Integration.FiniteKernelChain.weight_eq_prod",
+    "GRWTSK.Analysis.Integration.FiniteKernelChain.continuous_weight",
+    "GRWTSK.Analysis.Integration.FiniteKernelChain.integrable_weight",
+    "GRWTSK.Analysis.Integration.FiniteKernelChain.integral_weight_succ",
+    "GRWTSK.Analysis.Integration.FiniteKernelChain.integral_weight"
+  ],
+  "hypotheses": "Compact Hausdorff second-countable Borel space; probability measure; continuous real kernels; arbitrary actual L2 input.",
+  "consumer": "Actual finite directed path product integral for positive periodic Wilson arcs.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
