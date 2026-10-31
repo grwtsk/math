@@ -262,4 +262,84 @@ theorem weightedDelayedCovariance_eq_negative_mixed_of_bridges
           w (originalCausalKernel T)) := by
   rw [hDelay, hGram, originalMixedGram_eq_diagonal_add_offDiagonal]
 
+
+/-- Finite double-sum interval integration. Unlike an unrestricted exchange
+with an infinite sum, this needs only interval integrability of each term. -/
+theorem integrate_finite_double_sum
+    (S : Finset ℕ) (T : ℝ) (f : ℕ → ℕ → ℝ → ℝ)
+    (hInt : ∀ n ∈ S, ∀ m ∈ S,
+      IntervalIntegrable (f n m) volume 0 T) :
+    (∫ u in (0 : ℝ)..T, ∑ n ∈ S, ∑ m ∈ S, f n m u) =
+      ∑ n ∈ S, ∑ m ∈ S,
+        ∫ u in (0 : ℝ)..T, f n m u := by
+  classical
+  have hOuter : ∀ n ∈ S,
+      IntervalIntegrable (fun u => ∑ m ∈ S, f n m u) volume 0 T := by
+    intro n hn
+    exact IntervalIntegrable.sum S (fun m hm => hInt n hn m hm)
+  rw [intervalIntegral.integral_finsetSum hOuter]
+  apply Finset.sum_congr rfl
+  intro n hn
+  rw [intervalIntegral.integral_finsetSum (fun m hm => hInt n hn m hm)]
+
+/-- The actual coefficient-weighted finite source product expands into
+the full ordered original-integer mixed packet pointwise. -/
+theorem finite_mixed_integrand_expand
+    (P S : Finset ℕ) (w : ℕ → ℝ) (u : ℝ) :
+    (∑ n ∈ S, coefficient n * pickupResponse n u) *
+      (∑ m ∈ S,
+        coefficient m * selectedDivisorWeight P w m *
+          pickupResponse m u) =
+      ∑ n ∈ S, ∑ m ∈ S,
+        coefficient n *
+          (coefficient m * selectedDivisorWeight P w m) *
+            (pickupResponse n u * pickupResponse m u) := by
+  classical
+  rw [Finset.sum_mul_sum]
+  apply Finset.sum_congr rfl
+  intro n hn
+  apply Finset.sum_congr rfl
+  intro m hm
+  ring
+
+/-- Finite integral comparison with the exact original causal Gram.
+The only analytic input is interval-integrability of the literal
+finite response products. Neither a covariance estimate nor an RH-strength
+assumption is used. -/
+theorem finite_mixed_integral_eq_originalGram_of_integrable
+    (P S : Finset ℕ) (w : ℕ → ℝ) (T : ℝ)
+    (hInt : ∀ n ∈ S, ∀ m ∈ S,
+      IntervalIntegrable
+        (fun u : ℝ =>
+          coefficient n * (coefficient m * selectedDivisorWeight P w m) *
+            (pickupResponse n u * pickupResponse m u))
+        volume 0 T) :
+    (∫ u in (0 : ℝ)..T,
+      (∑ n ∈ S, coefficient n * pickupResponse n u) *
+      (∑ m ∈ S,
+        coefficient m * selectedDivisorWeight P w m *
+          pickupResponse m u)) =
+    originalMixedGram P S w (originalCausalKernel T) := by
+  have hExpand : (∫ u in (0 : ℝ)..T,
+      (∑ n ∈ S, coefficient n * pickupResponse n u) *
+      (∑ m ∈ S,
+        coefficient m * selectedDivisorWeight P w m *
+          pickupResponse m u)) =
+      (∫ u in (0 : ℝ)..T, ∑ n ∈ S, ∑ m ∈ S,
+        coefficient n * (coefficient m * selectedDivisorWeight P w m) *
+          (pickupResponse n u * pickupResponse m u)) := by
+    congr 1
+    funext u
+    exact finite_mixed_integrand_expand P S w u
+  rw [hExpand, integrate_finite_double_sum S T
+    (fun n m u =>
+      coefficient n * (coefficient m * selectedDivisorWeight P w m) *
+        (pickupResponse n u * pickupResponse m u)) hInt]
+  unfold originalMixedGram originalCausalKernel pickupResponseGram
+  apply Finset.sum_congr rfl
+  intro n hn
+  apply Finset.sum_congr rfl
+  intro m hm
+  rw [intervalIntegral.integral_const_mul]
+
 end GRWTSK.NumberTheory.LiouvillePrimeOverlapReconstruction
