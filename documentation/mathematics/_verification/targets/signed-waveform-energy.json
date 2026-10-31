@@ -1,0 +1,57 @@
+{
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWaveformEnergyTarget.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.SignedWaveformEnergy.waveform_eq_even_add_odd",
+        "GRWTSK.NumberTheory.SignedWaveformEnergy.waveform_sq_eq_fourParitySectors",
+        "GRWTSK.NumberTheory.SignedWaveformEnergy.energy_eq_fourParitySectors"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "expected_types": {
+        "GRWTSK.NumberTheory.SignedWaveformEnergy.waveform_eq_even_add_odd": "\u2200 u : \u211d, GRWTSK.NumberTheory.SignedWaveformEnergy.waveform u = GRWTSK.NumberTheory.SignedWaveformEnergy.parityWaveform 0 u + GRWTSK.NumberTheory.SignedWaveformEnergy.parityWaveform 1 u"
+      }
+    },
+    {
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SignedWaveformEnergyResidueBridge.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.SignedWaveformEnergy.waveform_eq_wholePickup",
+        "GRWTSK.NumberTheory.SignedWaveformEnergy.energy_eq_pickupEnergy",
+        "GRWTSK.NumberTheory.SignedWaveformEnergy.energy_dyadic_eq_completeResidueEnergy",
+        "GRWTSK.NumberTheory.SignedWaveformEnergy.uniformBudget_iff_allRateResidueEnergy",
+        "GRWTSK.NumberTheory.SignedWaveformEnergy.riemannHypothesis_of_uniformSignedWaveformEnergyBudget"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "retained_metadata": {
+    "attribution": "grwtsk contributors",
+    "source_sha256": "bfbd2a28cd054ba86ed61845e22fd2bb3064398d310f62412b0989f2e79074ef",
+    "role": "static mathematical target; no verification receipt",
+    "open_target": "GRWTSK.NumberTheory.SignedWaveformEnergy.UniformSignedWaveformEnergyBudget",
+    "target_proved": false,
+    "source_policy": [
+      "Original moebiusReal and pickupResponse verbatim",
+      "All four ordered parity sectors retained",
+      "Squareful zeros retained",
+      "Existing compatible precision lifts must recover the original integer source; finite residues never replace real weights"
+    ],
+    "verification": {
+      "compilation": "NOT_RUN",
+      "fresh_kernel_replay": "NOT_RUN",
+      "transitive_axiom_audit": "NOT_RUN",
+      "expected_interface": "NOT_RUN"
+    },
+    "publication": "Human authorized source publication; all mathematical verification facets remain NOT_RUN.",
+    "integration_source_sha256": "62170bac0e73bf33392fdd154ea724ab81a7814d4621b8124aad8801ce35c3ec",
+    "upstream_math_commit": "e637be1a51a18d4b7e1d74f8b7aa56e60972c94d"
+  }
+}
