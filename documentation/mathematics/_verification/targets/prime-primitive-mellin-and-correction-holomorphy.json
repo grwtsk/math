@@ -1,0 +1,114 @@
+{
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCorrectionMajorant.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.PrimePowerCorrection.primeCorrection_differentiableOn"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "expected_types": {
+        "GRWTSK.NumberTheory.PrimePowerCorrection.primeCorrection_differentiableOn": "DifferentiableOn \u2102 GRWTSK.NumberTheory.PrimePowerCorrection.primeCorrection {w : \u2102 | 1 / 2 < w.re}"
+      }
+    },
+    {
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveMellinIdentity.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.PrimePrimitiveMellin.mellin_realPrimePrimitiveFormula",
+        "GRWTSK.NumberTheory.PrimePrimitiveMellin.mellin_realPrimePrimitiveFormula_zeta"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "expected_types": {
+        "GRWTSK.NumberTheory.PrimePrimitiveMellin.mellin_realPrimePrimitiveFormula": "\u2200 {s : \u2102}, 1 / 2 < s.re \u2192 MeasureTheory.integral (MeasureTheory.volume.restrict (Set.Ioi (1 : \u211d))) (fun x : \u211d => (GRWTSK.NumberTheory.PrimePrimitiveMellin.realPrimePrimitiveFormula x : \u2102) * (x : \u2102) ^ (-s - 1)) = LSeries GRWTSK.NumberTheory.PrimePowerCorrection.centeredPrimeCoefficient (s + 1 / 2) / (s * (s + 1 / 2))",
+        "GRWTSK.NumberTheory.PrimePrimitiveMellin.mellin_realPrimePrimitiveFormula_zeta": "\u2200 {s : \u2102}, 1 / 2 < s.re \u2192 MeasureTheory.integral (MeasureTheory.volume.restrict (Set.Ioi (1 : \u211d))) (fun x : \u211d => (GRWTSK.NumberTheory.PrimePrimitiveMellin.realPrimePrimitiveFormula x : \u2102) * (x : \u2102) ^ (-s - 1)) = (-deriv riemannZeta (s + 1 / 2) / riemannZeta (s + 1 / 2) - GRWTSK.NumberTheory.PrimePowerCorrection.primeCorrection (s + 1 / 2) - riemannZeta (s + 1 / 2) + 1) / (s * (s + 1 / 2))"
+      }
+    }
+  ],
+  "retained_metadata": {
+    "attribution": "grwtsk contributors",
+    "role": "static verification target; no execution receipt",
+    "base_math_commit": "5ff580ebf26978bfdade4815d8b69a1b4d6317f5",
+    "sources": [
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCorrectionMajorant.lean",
+        "sha256": "443f3c77d31e8fbc18c1cca74a1134a2851ee10928d169a9ca6b024120c2443c",
+        "byte_count": 16708,
+        "git_blob": "5809f3e311956cce08775b1ac141daace464545c",
+        "publication": "uncommitted candidate"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePowerCorrectionDirichletBridge.lean",
+        "sha256": "9f48431ad1f1afbd9baa6194db2a61f77499045f5d197a0cfdb4f49969ffa690",
+        "byte_count": 3869,
+        "git_blob": "80e2377a52412f4c2c8095e4c344f3aaed898afa",
+        "publication": "uncommitted candidate"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CenteredPrimeDirichletSeries.lean",
+        "sha256": "d99fafaad6b92f486db5bff622bdb341435374e5734cb0a90f33c81e771fd765",
+        "byte_count": 6805,
+        "git_blob": "b24b08eaaf4aa2d3caa45eb6658949ee0237cd6b",
+        "publication": "uncommitted candidate"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveMellinAtom.lean",
+        "sha256": "44fced88914624bb0205fc8c72fed758455e05e741e365bc652d41a599dd9ffd",
+        "byte_count": 4629,
+        "git_blob": "9ec4224ab311d6ccd2e085801a35dd94af01088d",
+        "publication": "uncommitted candidate"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveMellinAbsoluteBound.lean",
+        "sha256": "6c5a4284c684746d2bec66e522b38f9a2971dbc86700c056221dedfdb88b830d",
+        "byte_count": 5043,
+        "git_blob": "d6261c7984d4a16524db8299c92609726d89f00b",
+        "publication": "uncommitted candidate"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveMellinExchange.lean",
+        "sha256": "ebb47934c8100ae8b02892582c2c467e8f9ed77a65b606e5277dad5b2a06186f",
+        "byte_count": 3479,
+        "git_blob": "a9ac65be34ecf3f0e18c208e11dd0efcacd3326d",
+        "publication": "uncommitted candidate"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveFloorIdentity.lean",
+        "sha256": "e0336cc0534bc93a1c6aba2920cf2099c8810d983ed0b7cb18b45684cd3351c5",
+        "byte_count": 4182,
+        "git_blob": "eba5a17280349f97c79ec876207c7372720bf13b",
+        "publication": "uncommitted candidate"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimePrimitiveMellinIdentity.lean",
+        "sha256": "02de1271fed5f11341fcd7290c328672fd44b4cbad5773eb06e9b7db84f9b7fb",
+        "byte_count": 4146,
+        "git_blob": "e2cf1acf7ac1d79928dae1d17fa013d0e06aa317",
+        "publication": "uncommitted candidate"
+      }
+    ],
+    "toolchain": "leanprover/lean4:v4.34.1",
+    "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "dependency_lock_sha256": "79720f104a8602620c98e6984bbb881494854cd6714ae3ccae28049f84b3abe4",
+    "verification": {
+      "compilation": "NOT_RUN",
+      "fresh_kernel_replay": "NOT_RUN",
+      "transitive_axiom_audit": "NOT_RUN",
+      "expected_interface": "NOT_RUN"
+    },
+    "acceptance": false,
+    "residuals": [
+      "Original-provider import/declaration equivalence is unresolved; literal formula agreement is insufficient.",
+      "Landau positive-tail abscissa theorem, finite-prefix entire correction, real-axis cancellation, zero-induced pole and reflection bridges remain open.",
+      "Actual ordinary-prime eventual-sign/cancellation estimate remains open.",
+      "No unconditional RH theorem follows from this target."
+    ],
+    "publication_gate": "Sources must first be published and rebound to a reachable immutable math commit; do not prepare against base HEAD as if it contained these dirty bytes."
+  }
+}

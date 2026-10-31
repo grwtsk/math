@@ -1,0 +1,34 @@
+{
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedCyclicEnergy.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.LiouvilleCausalEnergy.sum_cycle_eq_closed_prefix",
+        "GRWTSK.NumberTheory.LiouvilleCausalEnergy.waveform_eq_fixed_inventory",
+        "GRWTSK.NumberTheory.LiouvilleCausalEnergy.weighted_packet_eq_waveform_sq",
+        "GRWTSK.NumberTheory.LiouvilleCausalEnergy.energy_eq_integratedPacket",
+        "GRWTSK.NumberTheory.LiouvilleCausalEnergy.weightedCorrelation_continuous",
+        "GRWTSK.NumberTheory.LiouvilleCausalEnergy.integratedPacket_eq_sum_integrated_correlations",
+        "GRWTSK.NumberTheory.LiouvilleCausalEnergy.energy_le_of_integratedPacket_le"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "retained_metadata": {
+    "attribution": "grwtsk contributors",
+    "source_sha256": "aaaff35d490cab1dd0d5a3dfa63be763f5d12eaf799059e9b3a69d78aac9b985",
+    "predecessor_commit": "9fcdd3a98232805b10ea12508f2a2afeb16ae8fe",
+    "role": "exact transport candidate; no arithmetic supplier",
+    "general_energy_estimate_proved": false,
+    "verification": {
+      "compilation": "NOT_RUN",
+      "fresh_kernel_replay": "NOT_RUN",
+      "transitive_axiom_audit": "NOT_RUN",
+      "expected_interface": "NOT_RUN"
+    }
+  }
+}
