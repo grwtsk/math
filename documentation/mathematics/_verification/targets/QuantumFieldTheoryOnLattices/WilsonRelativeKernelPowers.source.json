@@ -1,0 +1,27 @@
+{
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "source": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonRelativeKernelPowers.lean",
+  "source_base_commit": "1bbbe6256783411b7b597673d8bd3edab4e4c157",
+  "source_blob": "dd395be13a9494e96e60b69d9f13f646b2cf220f",
+  "sha256": "85e499262f91a5453f218999d751ec6cc04fc81be57b2ad28284a1bc476faa7d",
+  "declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeKernelPowers.denominator_ne",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeKernelPowers.relativeContinuous",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeKernelPowers.quotientPower",
+    "GRWTSK.Geometry.GaugeTheory.WilsonRelativeKernelPowers.relative_positivePower"
+  ],
+  "hypotheses": "Nonzero finite L, beta>0, actual gauge-invariant principal vector; AE nonnegative and nonzero for positivity/balance, eigen-equation for normalization/stationarity, unit norm for probability.",
+  "consumer": "Actual Wilson positive kernel powers under actual stationary-density convolution; no finite-loop replacement or decay.",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_interface_checks": "NOT_RUN"
+  },
+  "proof_acceptance": false,
+  "remaining": [
+    "Lean qualification",
+    "Positive-length kernel powers and cyclic insertion identities",
+    "Uniform physical scaling and continuum construction"
+  ]
+}
