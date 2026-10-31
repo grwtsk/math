@@ -75,8 +75,7 @@ scripts `fixedWaveform_continuous`,
 and `covariance_eq_negative_complete_mixed_of_primeIdentity`.
 The last candidate explicitly assumes (P), which is discharged by the
 first **candidate** source module, but the two source modules have not
-been natively elaborated together. A further wrapper can instantiate
-the first theorem in the second after successful elaboration.
+been natively elaborated together. The final new source theorem candidate `weightedDelayedCovariance_complete_originalGram` explicitly composes the first with the second and has **no hPrime/hInt hypothesis**; pinned compilation and kernel acceptance have NOT_RUN.
 
 ## Source bindings and boundary checks
 
@@ -85,7 +84,7 @@ the first theorem in the second after successful elaboration.
 - Original open predicate: `LiouvilleGrowingPrimeBandIdentity.PrimeDivisorWaveformIdentity`, blob `477ca1d19b634a09e8d5c1e38e8035798bb0ef37`.
 - Analytic source prerequisite: `LiouvilleCausalPhysicalGramIntegrability.lean`, blob `e23f62fc60ce5867e4c183117162c59ff4989b6f`.
 - Previous conditional consumer: `LiouvillePrimeDelayIntegratedReturn.lean`, blob `2cce170881e2b3840f366c47500f430cc87216fb`.
-- Candidate multiple reindex: `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayMultipleReindex.lean`, blob `3a74a74a8523c3a8f6a4ee2ea8946b11b161b31c`.
+- Candidate multiple reindex: `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayMultipleReindex.lean`, blob `663afe4e9478697027c6eea70fb4d3807feec075`.
 - Candidate finite interchange: `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayFiniteInterchange.lean`, blob `ecb3367eecf48b9adeae38254dc9e53a17e08762`.
 
 Independent finite diagnostic: 28 original Liouville waveform checks for
@@ -102,6 +101,4 @@ No native verification was dispatched, no root import or dependency pin was chan
 
 **Single next bounded obligation:** compile and kernel-replay both exact source
 candidates against pinned Mathlib, repair any API or proof-script errors
-without weakening their conclusions, then combine the already-proposed
-one-prime and finite-interchange theorems into an unconditional source theorem
-for the original complete mixed covariance. No arithmetic RH bound follows.
+without weakening their conclusions, and confirm the already-written `weightedDelayedCovariance_complete_originalGram` source composition is accepted, including a complete transitive axiom audit. No arithmetic RH bound follows.
