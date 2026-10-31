@@ -1,0 +1,169 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Additive-gap localization of the Möbius endpoint consumer",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "review_base": {
+    "analytical_commit": "8425bebeb3e693ea3efcbcd4569074425fcdc5c1",
+    "analytical_tree": "9cc22c4f1c181f9f40d507df323f31d4c748d587",
+    "publication_expected_head": "fafc972bbbdea3651651eb43d6a7b103889eec10",
+    "publication_base_tree": "5875490abda41388022ad9d4577768e6d98620f6"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointGapLocalization.lean",
+    "blob": "d625b45178651e474f54ca4b49abda0a8676e154",
+    "sha256": "60b784d72e2b467f65e14d20199f4f1eb8c0749eb4c2000b8e6227950fb283c2",
+    "namespace": "GRWTSK.NumberTheory.MoebiusEndpointGapLocalization",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusEndpointLeastPrimeTypeII",
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleCausalPhysicalGramIntegrability",
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleDoubleAbelAnalyticGates",
+      "Mathlib.NumberTheory.Harmonic.Bounds",
+      "Mathlib"
+    ],
+    "proved_scope": [
+      "pickupCross_eq_smallGap_add_largeGap",
+      "pickupResponse_le_two_invSqrt",
+      "pickupResponseGram_le_four_time_invSqrt",
+      "invSqrt_mul_invSqrt_add_le_inv",
+      "pickupResponseGram_forwardGap_le",
+      "endpointSum_le_smallGap_abs_add_largeGap"
+    ],
+    "open_named_propositions": [
+      "EndpointForwardGapReindexing",
+      "EndpointHarmonicBound",
+      "ForwardGapPacketHarmonicBound",
+      "EndpointSmallGapAbsoluteBound",
+      "RateGapSmallSectorAllRate",
+      "TunedSmallGapSectorAllRate",
+      "LargeGapEndpointSupplier",
+      "GapLocalizedEndpointReturn",
+      "FullShiftTermwisePolylogNoGo",
+      "EndpointGapLocalizationDisposition"
+    ]
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-endpoint-gap-localization.md",
+    "blob": "fd99170ec397d34d810b7592663f40e0a4c37c59",
+    "sha256": "8c58c559fc2966aa2c57ca322928314906b402e02f67a9d7e738a53ba5b2ab11",
+    "principal_bound": "|X_small(H,T)| <= 8*H*T*(1+T)",
+    "all_rate_cutoff": "H_epsilon(T)=floor(exp(epsilon*T/4))",
+    "remaining_supplier": "X_large(H_epsilon(T),T) <= C_epsilon*exp(epsilon*T)"
+  },
+  "literature_ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/moebius-endpoint-gap-localization-references.md",
+    "blob": "ed6da815c9dec2709595dd261bfa827fced9fba9",
+    "sha256": "756a3488b3c23015ed7b47f7e6d3ab0cd81bc47d192eb4496805b1f755f706fc",
+    "canonical_monolith_status": "SOURCE_COMPLETE_APPEND_NOT_AVAILABLE"
+  },
+  "local_upstream": {
+    "least_prime_typeII": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointLeastPrimeTypeII.lean",
+      "blob": "fb77710105395da0394c930ef702b893f2f2f87f",
+      "publication": "8425bebeb3e693ea3efcbcd4569074425fcdc5c1"
+    },
+    "physical_gram": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalPhysicalGramIntegrability.lean",
+      "blob": "e23f62fc60ce5867e4c183117162c59ff4989b6f"
+    },
+    "analytic_gates": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean",
+      "blob": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4"
+    },
+    "endpoint_quadrature": {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean",
+      "blob": "2606536c56bdcb33d120aeddfbcbeef793e31ba1"
+    }
+  },
+  "external_sources": [
+    {
+      "authors": [
+        "Jizhou Guo"
+      ],
+      "title": "Logarithmic Chowla Correlations Across All Shift Scales",
+      "arxiv": "2608.23500v4",
+      "use": "full-shift logarithmic Liouville comparison outside one exceptionally sparse shift set; termwise summation remains rate one",
+      "local_replay": "NOT_RUN"
+    },
+    {
+      "authors": [
+        "Scott D. Hughes"
+      ],
+      "title": "Effective logarithmic two-point Chowla bounds in every window",
+      "arxiv": "2609.28526",
+      "use": "Liouville or Mobius logarithmic affine-window comparator; no complete signed large-gap aggregation",
+      "local_replay": "NOT_RUN"
+    },
+    {
+      "authors": [
+        "OpenAI"
+      ],
+      "title": "Ordinary two-point correlations of multiplicative functions",
+      "repository": "openai/math",
+      "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+      "path": "lean/OAI/NumberTheory/TwoPointCorrelations/FinalMain.lean",
+      "blob": "2bd48811e73bbdc80c1f738fa889a14189186408",
+      "use": "fixed affine Liouville comparator with a form-dependent constant",
+      "local_replay": "NOT_RUN"
+    }
+  ],
+  "parameter_record": {
+    "endpoint_size": "X=floor(exp(T))",
+    "fixed_gap_packet": "P_h=sum_{m<=X-h} mu(m)mu(m+h)K_T(m,m+h)",
+    "gram_bound": "K_T(m,m+h)<=4*T/m",
+    "small_gap_bound": "|X_small(H,T)|<=8*H*T*(1+T)",
+    "rate_cutoff": "floor(exp(epsilon*T/4))",
+    "tuned_cutoff": "floor(exp(T*log(log T)/(8*log T)))",
+    "termwise_full_shift_failure": "exp(T)*T^B is not all-positive-rate"
+  },
+  "mathematical_disposition": {
+    "new_programme_specific_upper_estimate": true,
+    "new_external_correlation_theorem": false,
+    "complete_endpoint_estimate": false,
+    "uniform_energy_proved": false,
+    "riemann_hypothesis_proved": false,
+    "remaining_viable_phase": "derive a one-sided aggregate estimate for exponentially large additive gaps, retaining the least-prime mixed and Type II signs"
+  },
+  "verification": {
+    "source_inspection": "DONE",
+    "analytical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "external_theorem_replay": "NOT_RUN",
+    "large_gap_supplier": "UNPROVED",
+    "complete_endpoint_estimate": "UNPROVED",
+    "uniform_energy": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "authority": {
+    "publication_mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "expected_head": "fafc972bbbdea3651651eb43d6a7b103889eec10",
+    "root_import": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointGapLocalization.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointGapLocalization.lean",
+    "check exact expected types and #print axioms for every theorem in GRWTSK.NumberTheory.MoebiusEndpointGapLocalization",
+    "audit the complete transitive import closure and replay external comparator inputs separately"
+  ],
+  "publication_reconciliation": {
+    "initial_review_head": "8425bebeb3e693ea3efcbcd4569074425fcdc5c1",
+    "current_expected_head": "fafc972bbbdea3651651eb43d6a7b103889eec10",
+    "reconciliation": "REUSE_IMMUTABLE_BLOBS_ON_CURRENT_HEAD_WITH_EXPECTED_HEAD_GUARD",
+    "dependency_bytes_rechecked": [
+      "MoebiusEndpointLeastPrimeTypeII.lean@fb77710105395da0394c930ef702b893f2f2f87f",
+      "LiouvilleCausalPhysicalGramIntegrability.lean@e23f62fc60ce5867e4c183117162c59ff4989b6f"
+    ],
+    "staged_commit_not_applied": "3a3f2d7c66d07ee81daa8775922a82f6781d0fd6"
+  }
+}

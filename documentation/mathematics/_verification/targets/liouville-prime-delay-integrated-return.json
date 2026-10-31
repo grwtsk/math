@@ -1,0 +1,63 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Exact Liouville prime-delay finite partition and conditional covariance return",
+  "attribution": "grwtsk contributors",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayIntegratedReturn.lean",
+    "namespace": "GRWTSK.NumberTheory.LiouvillePrimeDelayIntegratedReturn",
+    "declarations": [
+      "selected_add_uncovered_eq_bandMass",
+      "primeDivisorWaveform_eq_filter",
+      "selectedWaveform_eq_primeSum",
+      "growingBandWaveform_of_primeDelay",
+      "weightedDelayedCovariance_eq_negative_complete_mixed"
+    ],
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleCausalPhysicalGramIntegrability",
+      "Mathlib"
+    ]
+  },
+  "source_inputs": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleGrowingPrimeBandIdentity.lean",
+      "blob": "477ca1d19b634a09e8d5c1e38e8035798bb0ef37"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalPhysicalGramIntegrability.lean",
+      "blob": "e23f62fc60ce5867e4c183117162c59ff4989b6f"
+    }
+  ],
+  "review": "documentation/mathematics/_support/reviews/liouville-prime-delay-integrated-return.md",
+  "explicit_joint_hypotheses": [
+    "PrimeDivisorWaveformIdentity",
+    "Every selected p is prime",
+    "Finite physical-time delayed covariance interchange hInt"
+  ],
+  "mathematical_scope": [
+    "All real u and positive prime p response scaling with repeated prime powers",
+    "All finite signed source partitions and complete mixed Gram return"
+  ],
+  "unproved_in_lean": [
+    "Original PrimeDivisorWaveformIdentity",
+    "Exact finite multiple-index sum reindexing",
+    "Termwise delayed covariance interval-integrability and finite interchange"
+  ],
+  "unproved_arithmetic": [
+    "Independent signed covariance cancellation",
+    "Original all-positive-rate energy",
+    "Riemann Hypothesis"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "jobs": "NOT_DISPATCHED"
+  },
+  "publication_constraints": {
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED",
+    "force": false
+  }
+}
