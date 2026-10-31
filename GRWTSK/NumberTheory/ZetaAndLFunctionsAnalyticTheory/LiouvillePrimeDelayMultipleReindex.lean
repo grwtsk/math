@@ -93,7 +93,7 @@ theorem positive_multiple_finset_sum
     have hbound := (positive_multiple_cutoff_iff p k hp u).2
       (Finset.mem_Icc.mp hk).2
     exact Finset.mem_filter.mpr
-      ⟨Finset.mem_Icc.mpr ⟨Nat.le_mul_of_pos_left hkr hp, hbound⟩,
+      ⟨Finset.mem_Icc.mpr ⟨(by nlinarith : 1 ≤ p * k), hbound⟩,
         dvd_mul_right p k⟩
   · intro k hk
     rfl
@@ -122,7 +122,7 @@ theorem primeDivisorWaveformIdentity :
     PrimeDivisorWaveformIdentity := by
   intro p u hp
   have hpp : 0 < p := hp.pos
-  rw [primeDivisorWaveform]
+  unfold primeDivisorWaveform
   rw [positive_multiple_finset_sum p hpp u
     (fun n => coefficient n * pickupResponse n u)]
   calc
@@ -137,7 +137,8 @@ theorem primeDivisorWaveformIdentity :
             rw [coefficient_mul, pickupResponse_mul_shift p k hpp hkpos u]
             have hpcoef : coefficient p = -1 := by
               unfold coefficient
-              rw [ArithmeticFunction.liouville_apply_prime hp]
+              rw [ArithmeticFunction.liouville_apply hp.ne_zero,
+                ArithmeticFunction.cardFactors_apply_prime hp]
               norm_num
             rw [hpcoef]
             ring
