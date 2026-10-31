@@ -96540,7 +96540,9 @@
     "documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/finite-gram-rh-wilson-completion.md": "documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/finite-gram-rh-wilson-completion.md",
     "documentation/mathematics/_verification/targets/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarAbel/verification.toml": "documentation/mathematics/_verification/targets/NumberTheory/verification.toml",
     "documentation/mathematics/_verification/targets/finite-gram-rh-wilson-completion.json": "documentation/mathematics/_verification/targets/finite-gram-rh-wilson-completion.json",
-    "documentation/mathematics/_support/reference/source-preservation-and-specialization.md": "documentation/mathematics/_support/reference/source-preservation-and-specialization.md"
+    "documentation/mathematics/_support/reference/source-preservation-and-specialization.md": "documentation/mathematics/_support/reference/source-preservation-and-specialization.md",
+    "documentation/mathematics/_verification/targets/strain-quadratic-form-and-ordered-triple.json": "documentation/mathematics/_verification/targets/strain-quadratic-form-and-ordered-triple.json",
+    "documentation/mathematics/_verification/targets/pickup-dyadic-increment-and-vacuum-complement.json": "documentation/mathematics/_verification/targets/pickup-dyadic-increment-and-vacuum-complement.json"
   },
   "unresolved_source_placement": [
     {
