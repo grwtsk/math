@@ -1,9 +1,9 @@
 {
   "status": "SOURCE_PROOF_CANDIDATE",
   "source": "GRWTSK/MeasureAndIntegration/CyclicKernelProduct.lean",
-  "source_base_commit": "cc7a5b5db42de8606fbb1a5c4283b111b1c262a9",
-  "source_blob": "8646a28d8d91f87dfa728eca827f422cf0bd256e",
-  "sha256": "64a42d91c5fab1711eaebb383d98047f819a1acdc532942e60b0dd47eb6e590e",
+  "source_base_commit": "0031b320b1317cdfcef0e709f465295b769a107e",
+  "source_blob": "b08429a6c698203467847d3ed7cbb2c97cff37e8",
+  "sha256": "54551b33e758934dea020750eee079c2e89966ffc4fdfd8d6e465b83fbaf850f",
   "declarations": [
     "GRWTSK.Analysis.Integration.CyclicKernelProduct.endpoint_product",
     "GRWTSK.Analysis.Integration.CyclicKernelProduct.castSucc_add_one",

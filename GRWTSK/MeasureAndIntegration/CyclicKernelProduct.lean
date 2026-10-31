@@ -34,7 +34,7 @@ theorem endpoint_product (m : ℕ) (h : Fin (m+1) → X) (y : X) :
       conv_lhs => rw [he]
       exact (Fin.cons_snoc_eq_snoc_cons _ _ _).symm
     rw [Fin.prod_univ_succ]
-    simp only [hs, Fin.cons_succ]
+    simp only [hs, Fin.cons_succ, Fin.snoc_apply_zero]
     rw [ih]
     rfl
 
