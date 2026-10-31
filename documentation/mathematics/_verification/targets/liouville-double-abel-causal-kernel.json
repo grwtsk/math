@@ -1,0 +1,109 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Actual Liouville two-parameter causal Abel kernel and signed rectangle transport",
+  "attribution": "grwtsk contributors",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelCausalKernel.lean",
+    "blob": "b102b4af07b0a1001424b084101c2cc16077181a",
+    "namespace": "GRWTSK.NumberTheory.LiouvilleDoubleAbelCausalKernel",
+    "new_declarations": [
+      "lattice",
+      "prefixLE",
+      "signedPair",
+      "rectangularPrefix",
+      "tailOfOmega",
+      "rectangularOmegaAggregate",
+      "tailWeightedAggregate",
+      "tailWeightedAggregate_eq_rectangularOmegaAggregate",
+      "causalKernel",
+      "causalOmega",
+      "positiveGapAggregate",
+      "KernelTailIdentity",
+      "positiveGapAggregate_eq_rectangles_of_tail",
+      "mixedIntegrand",
+      "mixedIntegrand_decomposition",
+      "mixedIntegrand_nonneg_of_convex",
+      "rectangularOmegaAggregate_le_of_prefix_budget",
+      "UniformRectangularArithmeticSupplier"
+    ],
+    "claim": "Source proof candidate: generic finite double Abel, mixed-integrand scalar algebra and conditional source return; not full integrated positivity or the polynomial mass theorem"
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-double-abel-causal-kernel.md",
+    "blob": "a17a8248eb69767284b4bd7a8cc4703b81003427",
+    "claims": [
+      "Nonnegative actual mixed kernel from decreasing discrete-convex causal response",
+      "Finite double-telescoping zero terminal faces and original triangular support",
+      "Sum sqrt(p*q)*Omega <= T^3/3 + 4*T^2 + 7*T",
+      "Source-specific one-sided conditional rectangular-prefix transfer",
+      "Rows p=1 and p=3 of actual Liouville expose RH-strength two-sided partial sums"
+    ]
+  },
+  "upstream": {
+    "original_liouville_target": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean",
+    "original_liouville_target_blob": "a00aaa07c067b4c88203372870b5d5d151de0de4",
+    "original_response": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+    "original_response_blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "open_formalization": [
+    "Prove actual pickupResponse n u nonnegative, decreasing and discrete-convex for n>=1 and u>=0",
+    "Prove integral of mixedIntegrand equals causalOmega on nonnegative dyadic T with correct integrability",
+    "Prove KernelTailIdentity N from exact zero-birth finite double telescoping",
+    "Formalize polynomial sqrt(p*q)-weighted Omega mass bound",
+    "Connect source energy/diagonal and curvature with the exact signed rectangular aggregate"
+  ],
+  "open_arithmetic": [
+    "Supply an all-positive-rate bound for the complete signed Omega-weighted rectangular average; not implied by kernel positivity",
+    "Do not use uniform rectangular sup bounds without acknowledging that p=1 and p=3 encode RH-strength Liouville partial sums"
+  ],
+  "finite_diagnostics": {
+    "status": "FINITE_NUMERICAL_REFERENCE_NOT_KERNEL",
+    "precision_decimal_digits": 55,
+    "cutoffs": [
+      2,
+      3,
+      4,
+      5,
+      8,
+      12,
+      16,
+      24
+    ],
+    "source_fixtures": [
+      "actual Möbius coefficients",
+      "actual Liouville coefficients",
+      "alternating signs"
+    ],
+    "assertion_count": 994,
+    "checks": [
+      "Omega nonnegative to numerical tolerance",
+      "original aggregate equals rectangle-weighted aggregate",
+      "Omega mass equals W_T(1,2)",
+      "sqrt(pq) moment below T³/3+4T²+7T"
+    ]
+  },
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN"
+  },
+  "authority": {
+    "local_shared_git_lock": "NOT_TOUCHED",
+    "local_uninspected_files": "NOT_OVERWRITTEN",
+    "native_verification": "NOT_DISPATCHED",
+    "root_import": "UNCHANGED"
+  },
+  "commands_for_separately_authorized_clean_checkout": [
+    "git checkout --detach <published_commit>",
+    "lake env lean --version",
+    "lake env lean -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelCausalKernel.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelCausalKernel.lean",
+    "lake env leanchecker --help",
+    "check exact expected types and #print axioms for all declarations and imported ancestors"
+  ]
+}
