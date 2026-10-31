@@ -1,0 +1,96 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Endpoint completion equivalence and Putnam absorption ceiling",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "publication": {
+    "expected_parent": "23412fb8da6cd9f7922160c691fc55725a05b116",
+    "base_tree": "74182deba0fe2189e7a74cffa208c6fe6a2e01e6",
+    "mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamAbsorptionObstruction.lean",
+    "blob": "515a582f980eb45e8bc97e3d30961d56af979fae",
+    "sha256": "ecb508682111b59bd9f7b06f425129303fbbbaad867e0d21a3dc5a06897ed394",
+    "namespace": "GRWTSK.NumberTheory.MoebiusEndpointPutnamAbsorptionObstruction",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusEndpointPutnamEnergyCounting",
+      "Mathlib"
+    ],
+    "proved_scope": [
+      "completeEndpointEstimate_of_putnamCore",
+      "putnamCore_of_completeEndpoint",
+      "putnamCore_iff_completeEndpoint_of_geometric_inputs",
+      "completePacket_eq_paid_add_core",
+      "paidDegree_over_geometricGap",
+      "completePacket_sub_bandCorePacket"
+    ],
+    "open_named_propositions": [
+      "CorePairCountFormula",
+      "TunedCoreDensityTendsToOne",
+      "NoUniformGeometricCoreContraction",
+      "EndpointCompletionAbsorptionDisposition"
+    ]
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-endpoint-putnam-absorption-obstruction.md",
+    "blob": "f4e36516441d647d86de5db52b0e845d7e0be143",
+    "sha256": "f08609308fc56c313db7db8f100a788dd406a732724b63573cabb5b7fa115d83"
+  },
+  "ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/moebius-endpoint-putnam-absorption-obstruction-references.md",
+    "blob": "65cb99ab613ee6dea24313c647ee1fadae7dc53a",
+    "sha256": "7c3c5db4f7b377ec411ccebd924a239923525401590754a9efe21b6b29166d1b",
+    "canonical_monolith_status": "SHARD_PUBLISHED_MONOLITH_UNCHANGED"
+  },
+  "local_upstream": {
+    "MoebiusEndpointPutnamEnergyCounting.lean": "e04dc68d2ca268d88d43725d0963c5414d216c6d",
+    "MoebiusEndpointTerminalGapLocalization.lean": "57d3ec28d0fd5c57e979981746ae6f85c921eba6",
+    "PickupEndpointQuadrature.lean": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+    "GoodScaleEnergyCriterion.lean": "ca3ae4975b20cf796a167308a9e87546c6001c41"
+  },
+  "mathematical_claims": [
+    "Under the already named absolute gap and terminal-birth inputs, PutnamCoreEndpointSupplier is equivalent to eventual all-positive-rate endpoint control.",
+    "For a degree-d paid relation and geometric contraction q=1-d/(N-1), d/(1-q)=N-1 exactly.",
+    "Deleting all ordered additive distances at most H from V vertices leaves (V-H-1)(V-H) ordered pairs.",
+    "At the published rate gap and terminal strip parameters the remaining relation has density tending to one.",
+    "Counting, Gram positivity, Young inequalities and positive absorption alone cannot complete the endpoint estimate."
+  ],
+  "disposition": {
+    "new_programme_specific_equivalence": true,
+    "new_programme_specific_obstruction": true,
+    "complete_endpoint_estimate": false,
+    "uniform_energy_proved": false,
+    "riemann_hypothesis_proved": false,
+    "first_failed_inequality": "H <= q*H + d*D + error with 1-q=d/(N-1); absorption gives (N-1)*D",
+    "remaining_supplier": "a source-specific signed dense-core gain, negative Type-II compensation, or direct proof of the dyadic endpoint sum"
+  },
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "complete_endpoint_estimate": "UNPROVED",
+    "uniform_energy": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamAbsorptionObstruction.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamAbsorptionObstruction.lean",
+    "check exact expected types and #print axioms for the complete namespace",
+    "audit the endpoint-to-RH transitive import closure"
+  ]
+}
