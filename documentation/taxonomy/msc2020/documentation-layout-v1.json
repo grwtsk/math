@@ -96539,7 +96539,8 @@
     "documentation/mathematics/_verification/targets/three-blue-one-brown-collision-claims.json": "documentation/mathematics/_verification/targets/three-blue-one-brown-collision-claims.json",
     "documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/finite-gram-rh-wilson-completion.md": "documentation/mathematics/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/finite-gram-rh-wilson-completion.md",
     "documentation/mathematics/_verification/targets/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupRoughFarAbel/verification.toml": "documentation/mathematics/_verification/targets/NumberTheory/verification.toml",
-    "documentation/mathematics/_verification/targets/finite-gram-rh-wilson-completion.json": "documentation/mathematics/_verification/targets/finite-gram-rh-wilson-completion.json"
+    "documentation/mathematics/_verification/targets/finite-gram-rh-wilson-completion.json": "documentation/mathematics/_verification/targets/finite-gram-rh-wilson-completion.json",
+    "documentation/mathematics/_support/reference/source-preservation-and-specialization.md": "documentation/mathematics/_support/reference/source-preservation-and-specialization.md"
   },
   "unresolved_source_placement": [
     {
@@ -97363,7 +97364,8 @@
     "documentation/taxonomy/subjects/Statistics/complete-source-index.md",
     "documentation/mathematics/index.md",
     "documentation/taxonomy/index.md",
-    "documentation/taxonomy/subjects/index.md"
+    "documentation/taxonomy/subjects/index.md",
+    "documentation/mathematics/_support/reference/source-preservation-and-specialization.md"
   ],
   "concurrent_source_overrides": [
     {

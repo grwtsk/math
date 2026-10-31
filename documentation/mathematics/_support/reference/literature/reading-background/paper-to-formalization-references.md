@@ -1,5 +1,9 @@
 # Paper-to-formalization references
 
+## Source preservation and mathematical specialization (2026-10-31)
+
+Local attribution: grwtsk contributors. The [source traversal guide](../../source-preservation-and-specialization.md) and [static mathematical acceptance target](../../../../_verification/targets/source-preservation-and-specialization.json) bind the preserved modules to exact source identities, provider and consumer paths, and the original hypotheses. Finite prime-fiber test wrappers specialize the retained finite-test results on `F.image testOf`; this source-level reuse does not replace their remaining declarations or establish native acceptance. Other reviewed pairs retain distinct estimates, concrete instances, source comparisons, or unresolved proposition interfaces. Original paper bylines, references, source pins and verification scopes remain in their entries below. Compilation, fresh kernel checking, expected-interface checking and transitive axiom auditing for the preservation target are `NOT_RUN`; no new arithmetic cancellation, PDE, prismatic or RH result is claimed.
+
 ## RH-FEJER-WINDOW-ENERGY-01: exact signed local-to-global Liouville window criterion (2026-10-31)
 
 - **Original source and exact predicates:** grwtsk/math baseline `9fcdd3a98232805b10ea12508f2a2afeb16ae8fe`, `GRWTSK/ProbabilityTheoryAndStochasticProcesses/SignedCyclicWalkPacket.lean` blob `2f07d2d96384e6bbcca610bce9f5cb1eecade91b` (`SignedCyclicWalkPacket.completePacket_eq_signedWalk_sq`, `cyclicCorrelation_zero`, actual `liouvillePrefixOnCycle`); `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalEnergyTarget.lean` blob `a00aaa07c067b4c88203372870b5d5d151de0de4` (`GRWTSK.NumberTheory.LiouvilleCausalEnergy.UniformEnergySupplier` remains unproved); `documentation/mathematics/_support/reviews/square-divisor-causal-energy-closure.md` blob `e0c33c64a358c0c6f24f043d36e9504dba765292`, exact Möbius/Liouville delayed causal energy equivalence.
