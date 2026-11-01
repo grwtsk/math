@@ -1,0 +1,85 @@
+{
+  "schema_version": "source-bound-mathematical-replay-v1",
+  "target": "padic-mobius-verified-fixed-power-and-giant-prime-window",
+  "repository": "grwtsk/math",
+  "local_attribution": "grwtsk contributors",
+  "new_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PadicMobiusHighPrimeFixedPower.lean",
+      "git_blob": "f92b660f347f832cf05474ffbf01fc48eab368e1",
+      "classification": "source_proof_candidate"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/padic-mobius-high-prime-verified-fixed-power-20261031.md",
+      "git_blob": "05ded32fe0555c7ccd7f1c10adb4342da9ff2349",
+      "classification": "mathematical_derivation_and_external_verification_review"
+    }
+  ],
+  "locked_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "external": {
+    "repository": "GTimG/QuasiRiemannTracker",
+    "pull_request": 102,
+    "head": "ad7b7edd47bee2fdff34165da5cc14cc0331db2c",
+    "source_path": "submissions/2026-10-31-saddle-closure-selected-gap/src/Candidate/Main.lean",
+    "source_blob": "ea52b389645935c66daa8416a29b20ac0555a3df",
+    "theta_exact": "87338196661320751993/100000000000000000000",
+    "verify": "SUCCESS",
+    "admission": "SUCCESS",
+    "pull_request_merge_status": "OPEN_UNMERGED",
+    "local_import": "NONE",
+    "local_replay": "NOT_RUN"
+  },
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedPrefixSquareCriterion.lean",
+      "blob": "d62ab5b81eb8cec7b95964c88f875d3c2ef1f244"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MobiusWeightedPrefixPNTReturn.lean",
+      "blob": "84d9b0613e11335088936cf80d1f341749cdedad"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PadicPrimeLogarithmicDensity.lean",
+      "blob": "7764823b46a9eb47422a2e9036d888ca818ac775"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PadicMobiusPrimeWindowSeam.lean",
+      "blob": "027d24046d0563be5cd66e01d7ecf3235d99f801"
+    }
+  ],
+  "mathematical_results": [
+    {
+      "claim": "strict checked proposal exponent gain",
+      "energy_exponent": "0.7467639332265",
+      "classification": "analytical transfer conditional on externally reviewed theorem + standard zero-free-to-summatory lemma"
+    },
+    {
+      "claim": "signed high-prime parity window exponent",
+      "window_exponent": "0.87338196661325",
+      "classification": "analytical transfer conditional on same inputs"
+    },
+    {
+      "claim": "giant-prime unique cofactor window (z^2>=Y,y<=z)",
+      "classification": "unconditional finite arithmetic identity mathematically proved; not Lean compiled"
+    }
+  ],
+  "verification": {
+    "exact_integer_rational_reference": "PASS_385163_CHECKS_Y_LE_240",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "full_signed_high_prime_square_root_error": "OPEN",
+    "WeightedPrefixSquareAllRate": "OPEN",
+    "riemann_hypothesis": "OPEN"
+  },
+  "authority": {
+    "native_execution_dispatched": false,
+    "scheduler_dispatched": false,
+    "root_import_changed": false,
+    "dependency_pin_changed": false
+  }
+}
