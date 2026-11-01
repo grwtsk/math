@@ -1,0 +1,79 @@
+{
+  "schema_version": "source-bound-mathematical-replay-v1",
+  "target": "rh-original-liouville-signed-dyadic-chain-and-original-terminal-kernel",
+  "repository": "grwtsk/math",
+  "expected_parent_commit": "4ec5ce28fddeb27c1cafe0a2ca650f4ba3663d82",
+  "source_candidates": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDyadicSignedChainGram.lean",
+      "git_blob": "ba73fdb409cfde62c7e5cee7613ff4bbee1a10b6",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "expected_declarations": [
+        "GRWTSK.NumberTheory.LiouvilleDyadicSignedChainGram.coefficient_two_pow_mul",
+        "GRWTSK.NumberTheory.LiouvilleDyadicSignedChainGram.alternating_sum",
+        "GRWTSK.NumberTheory.LiouvilleDyadicSignedChainGram.dyadicMixedGram_closed",
+        "GRWTSK.NumberTheory.LiouvilleDyadicSignedChainGram.dyadicFullGram_eq_parityMass",
+        "GRWTSK.NumberTheory.LiouvilleDyadicSignedChainGram.dyadicOffDiagonal_exact",
+        "GRWTSK.NumberTheory.LiouvilleDyadicSignedChainGram.twoLevelTerminalPacket_exact"
+      ]
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/rh-dyadic-chain-signed-gram-and-prismatic-obstruction-20261031.md",
+      "git_blob": "48dcbec7f4f8e881836ddb2ec20ae9e22d09e0ca",
+      "status": "MATHEMATICAL_REVIEW_NOT_KERNEL_EVIDENCE"
+    }
+  ],
+  "locked_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "mathematical_proof": "exact finite original Liouville dyadic chain ordered Gram and two-level weighted kernel",
+  "analytical_input": "none for new finite theorems",
+  "arithmetic_frontier": "all-positive-rate upper bound on complete weighted distinct-odd-core signed correlation, including prime-power and finite terminal weights",
+  "numerical_external_inputs": [
+    {
+      "source": "GTimG/QuasiRiemannTracker PR99",
+      "merged": true,
+      "theta": "8733819666133/10000000000000"
+    },
+    {
+      "source": "GTimG/QuasiRiemannTracker PR102",
+      "merged": false,
+      "head": "ad7b7edd47bee2fdff34165da5cc14cc0331db2c",
+      "theta": "87338196661320751993/100000000000000000000"
+    },
+    {
+      "source": "anthropics/formal-math zeta23",
+      "commit": "16a5ce41304fcdaea4e0be7c132e1c361dc26da5",
+      "claim": "asymptotic zero proportions, not strict two-unit gap"
+    }
+  ],
+  "finite_diagnostics": {
+    "result": "PASS",
+    "assertions": 15025,
+    "method": "Python exact integer Liouville factorization and Fraction arithmetic for q<=100,K<=20, original two-level q,N and mixed-core cases",
+    "not_equivalent_to": "Lean compilation, kernel proof, or all-height proof"
+  },
+  "verification_facets": {
+    "SOURCE_GIT_BLOB_READBACK": "PENDING_PUBLICATION",
+    "COMPILATION_NOT_RUN": true,
+    "EXPECTED_TYPES_NOT_RUN": true,
+    "FRESH_KERNEL_NOT_RUN": true,
+    "TRANSITIVE_AXIOM_AUDIT_NOT_RUN": true,
+    "SIGNED_ALL_RATE_SUPPLIER": "OPEN",
+    "COFINAL_TWO_UNIT_CERTIFICATES": "OPEN",
+    "RIEMANN_HYPOTHESIS": "OPEN"
+  },
+  "issue_links": [
+    "https://github.com/grwtsk/math/issues/15",
+    "https://github.com/grwtsk/math/issues/1548",
+    "https://github.com/grwtsk/math/issues/1530",
+    "https://github.com/grwtsk/math/issues/1547",
+    "https://github.com/grwtsk/math/issues/132",
+    "https://github.com/grwtsk/math/issues/135"
+  ],
+  "runner_dispatched": false,
+  "ci_triggered_by_assistant": false,
+  "root_imports_changed": false,
+  "existing_math_sources_changed": false
+}
