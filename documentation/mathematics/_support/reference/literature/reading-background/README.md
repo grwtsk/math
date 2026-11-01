@@ -1,5 +1,7 @@
 # Reading background and intellectual lineage
 
+**New literary research reading (2026-10-31):** [Seven ribbons, a wound spring, and a clock that cannot circle](the-seven-ribbons-and-the-clock-that-cannot-circle.md) — a child's point of view on the typed Gödel–Fourier–sofic simulation, with exact equations, signed residuals, computational refinement gates and three separate physical/mathematical/computer-science readings. Source proof candidate; Lean and browser-refinement verification remain separate.
+
 Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
 
 ## Collective attribution and source evidence
