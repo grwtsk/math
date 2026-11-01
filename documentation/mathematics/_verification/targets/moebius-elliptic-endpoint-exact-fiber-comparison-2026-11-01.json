@@ -1,0 +1,169 @@
+{
+  "schema": "grwtsk.moebius-elliptic-endpoint-source-exact-comparison/1",
+  "author": "grwtsk contributors",
+  "date": "2026-11-01",
+  "repository": "grwtsk/math",
+  "inspected_main": "4ecb4e571664b05e4b5f032dc71e22dd668cdcee",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "new_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
+      "blob": "df9ded979964790b92f3053efc3aedeb6e2dfa78",
+      "status": "LEAN_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticRecordCertifiedBank.lean",
+      "blob": "b33d580f9d62d3dbe6b43a98af988a95674fb885",
+      "status": "LEAN_SOURCE_PROOF_CANDIDATE"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-elliptic-endpoint-exact-signed-fiber-return-2026-11-01.md",
+    "blob": "267a2cd81ff4f15ff24d5a3c680057781d734272"
+  },
+  "pinned_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointLeastPrimeTypeII.lean",
+      "blob": "fb77710105395da0394c930ef702b893f2f2f87f",
+      "role": "exact preexisting signed source partition"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleSignedBuchstabTypeII.lean",
+      "blob": "c2de5cb221f03ff5792de4d29b104912e79d4771",
+      "role": "literal firstSelectedDivisor"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean",
+      "blob": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+      "role": "native endpointSum and exact quarter-unit error"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamEnergyCounting.lean",
+      "blob": "e04dc68d2ca268d88d43725d0963c5414d216c6d",
+      "role": "original additive-gap Putnam source, comparison only"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberCounting.lean",
+      "blob": "70c96ac0ebabe429e129ea549e151e575d30593d"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberPorts.lean",
+      "blob": "e7f5901f929bf999d15772f1b92cf3460023623d"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239Curve.lean",
+      "blob": "9b489d813ddf451a7c8d164ca808fb569b29b5b8"
+    }
+  ],
+  "exact_scope": {
+    "curve": "actual integral WeierstrassCurve Z and finite good prime bank with genuine GoodPointCountCertificate",
+    "integers": "all original endpoint indices 1<=n<=floor(exp T), with unchanged original m!=n exclusion",
+    "prime_selection": "firstSelectedDivisor P n, chosen certified p; p divides original n",
+    "cofactor_residue": "m divided by p raised to Nat.factorization m p, then reduced modulo selected p",
+    "multiplicity": "original index n, both pair orientations, repeated prime tags and prime-square exponent retained",
+    "empty_bank": "all indices unmatched; no artificial elliptic trace",
+    "one_index": "1 unmatched in every bank"
+  },
+  "new_theorems": [
+    "GoodPrimeBank.tag_dvd",
+    "GoodPrimeBank.exists_tagged_prime",
+    "GoodPrimeBank.channel_prime_eq_tag",
+    "GoodPrimeBank.route_some_of_tag",
+    "GoodPrimeBank.route_none_iff",
+    "GoodPrimeBank.one_unmatched",
+    "GoodPrimeBank.matched_union_unmatched",
+    "GoodPrimeBank.matched_disjoint_unmatched",
+    "ellipticKernel_of_matched",
+    "ellipticKernel_eq_mul_assigned",
+    "matchedEllipticPacket_eq_offdiagonal_assigned",
+    "ordered_rank_one_pair_square_sub_diagonal",
+    "matchedEllipticPacket_eq_square_sub_diagonal",
+    "firstTagTypeII_eq_elliptic_add_defect",
+    "pickupCross_eq_rough_mixed_elliptic_defect",
+    "pickupCross_eq_elliptic_add_full_residual",
+    "endpointSum_eq_elliptic_residual_correction",
+    "signedEndpointCorrection_abs_le",
+    "endpointSum_le_routed_complete",
+    "sourceKernel_square_zero",
+    "RecordBank.record_pickupCross_exact"
+  ],
+  "exact_maths": {
+    "Xmu": "pickupCross T = firstTagRoughCross P T + firstTagMixedCross P T + matchedEllipticPacket B T + matchedSignedDefect B T",
+    "fullResidual": "firstTagRoughCross P T + firstTagMixedCross P T + matchedSignedDefect B T",
+    "endpoint": "endpointSum T = matchedEllipticPacket B T + fullSignedResidual B T + (endpointSum T - pickupCross T)",
+    "endpoint_error": "|endpointSum T - pickupCross T| <= 1/4 for T>=0, from unmodified original source",
+    "rank_one": "matchedEllipticPacket B T = (sum original n of assignedTrace B n)^2 - sum original n of assignedTrace B n squared",
+    "type": "ELEMENTARY_FINITE_PAPER_PROOF_ALL_INDICES_WITH_SOURCE_PINS"
+  },
+  "finite_integer_diagnostic": {
+    "source_model": "Record4239 integral model, source finite counts 13 and 27",
+    "bank_primes": [
+      7,
+      19
+    ],
+    "trace_by_prime": {
+      "7": -5,
+      "19": -7
+    },
+    "N": 49,
+    "selected_integers": [
+      7,
+      14,
+      19,
+      21,
+      28,
+      35,
+      38,
+      42,
+      49
+    ],
+    "selected_7": 7,
+    "selected_19": 2,
+    "unmatched": 40,
+    "matched_pairs": 72,
+    "mixed_pairs": 720,
+    "unmatched_pairs": 1560,
+    "total_pairs": 2352,
+    "trace_sum": -49,
+    "trace_square_diagonal": 273,
+    "elliptic_packet": 2128,
+    "hostile_pair": {
+      "m": 49,
+      "n": 7,
+      "source_kernel": 0,
+      "elliptic_trace_kernel": 25,
+      "signed_defect": -25,
+      "reversed_pair_defect": -25
+    },
+    "status": "EXACT_INTEGER_ARITHMETIC_DIAGNOSTIC_NOT_LEAN"
+  },
+  "proof_status": {
+    "paper_finite_identity": "COMPLETE",
+    "arithmetic_certificate_definitions": "LEAN_SOURCE_CANDIDATE",
+    "source_publication": "PENDING_READBACK",
+    "parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "arithmetic_all_positive_rate_signed_bound": "OPEN",
+    "canonical_RH": "OPEN",
+    "bsd": "OPEN",
+    "zero_prime_correspondence": "OPEN",
+    "native_controller_or_remote_verifier": "NOT_LAUNCHED",
+    "scheduler": "NOT_LAUNCHED",
+    "foreign_repo_mutation": "NONE"
+  },
+  "next_exact_supplier": "Noncircular signed cancellation for fullSignedResidual and matchedEllipticPacket jointly (or equivalent literal endpointSum bound) at every positive rate over affinely covering scales; any link to additive Putnam gap sectors needs a proved intersection/comparison of actual original pair indices.",
+  "issue_cross_references": [
+    1049,
+    1550,
+    1551,
+    1552,
+    1548,
+    1530
+  ]
+}
