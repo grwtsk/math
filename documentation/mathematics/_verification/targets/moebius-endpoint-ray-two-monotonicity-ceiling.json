@@ -1,0 +1,102 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Two-monotone endpoint rays and the higher-order parity obstruction",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "publication": {
+    "analytical_parent": "731fe26e897e68898522bbf11d3677516aa53465",
+    "analytical_base_tree": "1bef04add30fadce0317429be71341d2e8cd6232",
+    "mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "branch": "main",
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointRayTwoMonotonicityCeiling.lean",
+    "blob": "e2e05249eadc50042ba727770018e213a27c5d00",
+    "namespace": "GRWTSK.NumberTheory.MoebiusEndpointRayTwoMonotonicityCeiling",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusEndpointSymmetricDifferenceRays",
+      "Mathlib"
+    ],
+    "proved_scope": [
+      "scalar_insertion_ratio",
+      "twoMonotoneHalfContractiveSixLabelFixture",
+      "thirdOrderFailure_of_n12"
+    ],
+    "open_named_propositions": [
+      "FirstRayDifferenceGramIdentity",
+      "SecondRayDifferenceGramIdentity",
+      "ResponseFirstDifferenceNonnegative",
+      "ResponseSecondDifferenceNonnegative",
+      "RayFirstOrderMonotonicity",
+      "RaySecondOrderMonotonicity",
+      "RayInsertionContraction",
+      "RayTwoMonotonicityPackage",
+      "N12LargePrimeRayVanishes",
+      "NoHigherOrderRayCompleteMonotonicity",
+      "RayTwoMonotonicityCeilingDisposition"
+    ]
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-endpoint-ray-two-monotonicity-ceiling.md",
+    "blob": "a42e64945daa2d497be8168ddc6b8728c7613ad3"
+  },
+  "local_upstream": {
+    "MoebiusEndpointSymmetricDifferenceRays.lean": "34fc88f828a46f40b665157292d998d2e464c265",
+    "MoebiusDenseSquarefulZeroPacket.lean": "94e2e276ca071b5965d10e34476ccfda4e4c2180",
+    "MertensPrimitive.lean": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "LiouvilleCausalEnergyTarget.lean": "a00aaa07c067b4c88203372870b5d5d151de0de4"
+  },
+  "mathematical_claims": [
+    "For each prime p, the literal response difference r_n-r_(pn) is pointwise nonnegative.",
+    "For distinct primes p,r, the literal mixed response difference r_n-r_(pn)-r_(rn)+r_(prn) is pointwise nonnegative.",
+    "Exact finite placement reindexing gives nonnegative first and second multiplicative prime differences of the endpoint ray weights.",
+    "One-prime ray insertion satisfies W_T(pq)<=2*sqrt(p)/(p+1)*W_T(q).",
+    "The exact N=12 third prime difference is negative, and adjoining primes above the horizon extends the failure to every order k>=3.",
+    "First/second monotonicity plus factor-one-half insertion contraction do not logically imply a nonpositive complete parity sum, as shown by the six-label rank fixture."
+  ],
+  "failed_uniform_energy_bootstrap": {
+    "proposed_premise": "all multiplicative prime differences of the nonnegative ray field are nonnegative",
+    "first_false_inequality": "Delta_2 Delta_3 Delta_5 W_(log 12)(11) >= 0",
+    "exact_disposition": "false by the predecessor symbolic factorization 8*A*B with A<0<B",
+    "consequence": "unsigned Euler-product, positive-measure and completely-monotone-capacity proofs do not establish the complete ray-parity upper bound"
+  },
+  "scope_boundary": {
+    "new_actual_mobius_structure": true,
+    "new_actual_liouville_upper_estimate": false,
+    "not_claimed": [
+      "complete endpoint estimate",
+      "UniformEnergySupplier",
+      "Riemann Hypothesis"
+    ],
+    "remaining_route": "retain signed third-and-higher boundary corrections in a direct Type-II, growing-shift, endpoint or double-Abel estimate"
+  },
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "external_theorem_replay": "NOT_RUN",
+    "complete_endpoint_estimate": "UNPROVED",
+    "uniform_energy": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointRayTwoMonotonicityCeiling.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointRayTwoMonotonicityCeiling.lean",
+    "check exact expected types and #print axioms for every theorem in the namespace",
+    "audit the complete transitive endpoint-to-uniform-energy closure before promoting any conclusion"
+  ]
+}
