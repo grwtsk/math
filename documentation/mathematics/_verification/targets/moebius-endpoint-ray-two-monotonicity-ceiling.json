@@ -4,17 +4,19 @@
   "attribution": "grwtsk contributors",
   "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
   "publication": {
-    "analytical_parent": "731fe26e897e68898522bbf11d3677516aa53465",
-    "analytical_base_tree": "1bef04add30fadce0317429be71341d2e8cd6232",
+    "analytical_parent": "c496b8b11e467f24912150bc382604258fe5b3c7",
+    "analytical_base_tree": "c3f080cdd1376cd2eb4edbbd0630e84834ef0567",
     "mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
     "branch": "main",
     "root_import": "UNCHANGED",
     "dependency_pins": "UNCHANGED",
-    "runtime_artifacts_in_math": false
+    "runtime_artifacts_in_math": false,
+    "repair_of_source_blob": "e2e05249eadc50042ba727770018e213a27c5d00",
+    "repair_reason": "Strengthen the all-orders obstruction interface so it explicitly asserts a negative finite prime-set difference rather than only existence of a prime set."
   },
   "source": {
     "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointRayTwoMonotonicityCeiling.lean",
-    "blob": "e2e05249eadc50042ba727770018e213a27c5d00",
+    "blob": "31a3807e2aeeef90869ce99f52cd1f4c74694748",
     "namespace": "GRWTSK.NumberTheory.MoebiusEndpointRayTwoMonotonicityCeiling",
     "status": "SOURCE_PROOF_CANDIDATE",
     "direct_imports": [
@@ -38,6 +40,15 @@
       "N12LargePrimeRayVanishes",
       "NoHigherOrderRayCompleteMonotonicity",
       "RayTwoMonotonicityCeilingDisposition"
+    ],
+    "support_definitions": [
+      "rayFirstDifference",
+      "raySecondDifference",
+      "rayPrimeSetDifference",
+      "responsePrimeDifference",
+      "responsePrimePairDifference",
+      "rayBaseTriples",
+      "primeInsertionFactor"
     ]
   },
   "review": {
@@ -62,6 +73,7 @@
     "proposed_premise": "all multiplicative prime differences of the nonnegative ray field are nonnegative",
     "first_false_inequality": "Delta_2 Delta_3 Delta_5 W_(log 12)(11) >= 0",
     "exact_disposition": "false by the predecessor symbolic factorization 8*A*B with A<0<B",
+    "all_orders_interface": "for each k>=3 there is a k-prime finite set P and q>=2 with rayPrimeSetDifference q P (log 12)<0",
     "consequence": "unsigned Euler-product, positive-measure and completely-monotone-capacity proofs do not establish the complete ray-parity upper bound"
   },
   "scope_boundary": {
