@@ -1,0 +1,181 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Cross-family root-relative torsion and positive-defect atlas with Gödel/Einstein chronology boundary",
+  "byline": "grwtsk contributors",
+  "research_date": "2026-10-31",
+  "selected_math_commit_at_review": "a775dbe7b67e8c5222808d122d826296b0aa04ff",
+  "source": {
+    "path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/RootRelativeDefectEnergy.lean",
+    "blob": "e5e999b46929583e42e223317ad2000a7f168934",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "theorem_count": 11,
+    "candidate_theorems": [
+      "GRWTSK.GeneralAlgebra.RootRelativeDefectEnergy.realRootDefect_at_root",
+      "GRWTSK.GeneralAlgebra.RootRelativeDefectEnergy.weightedDefectEnergy_at_root",
+      "GRWTSK.GeneralAlgebra.RootRelativeDefectEnergy.weightedDefectEnergy_nonneg",
+      "GRWTSK.GeneralAlgebra.RootRelativeDefectEnergy.weightedDefectEnergy_pos_iff",
+      "GRWTSK.GeneralAlgebra.RootRelativeDefectEnergy.weightedDefectEnergy_two_fibers",
+      "GRWTSK.GeneralAlgebra.RootRelativeDefectEnergy.weightedDefectEnergy_opposite_phases",
+      "GRWTSK.GeneralAlgebra.RootRelativeDefectEnergy.finiteOrderExcess_at_root",
+      "GRWTSK.GeneralAlgebra.RootRelativeDefectEnergy.finiteOrderExcess_pos_of_faithful_root",
+      "GRWTSK.GeneralAlgebra.RootRelativeDefectEnergy.proportionalFiniteOrderExcess_at_root",
+      "GRWTSK.GeneralAlgebra.RootRelativeDefectEnergy.proportionalFiniteOrderExcess_pos",
+      "GRWTSK.GeneralAlgebra.RootRelativeDefectEnergy.closed_cycle_no_strict_real_time"
+    ]
+  },
+  "analytical_review": {
+    "path": "documentation/mathematics/_support/reviews/root-relative-torsion-godel-einstein-cross-family-atlas.md",
+    "blob": "0d56361bb11f8a319875084364cb67898164626e",
+    "scope": "Twelve existing family classifications, exact hypotheses/counterexamples, Gödel 1949 primary sources, RH strict-return obstruction; not a familywide proof"
+  },
+  "family_sources": [
+    {
+      "family": "prime_cut_operator_capacity",
+      "path": "GRWTSK/Combinatorics/PositiveCapacityPrimeCutDefectCapacity.lean",
+      "blob": "90c19ba5020612adeba72d27574e7146758423fc",
+      "established_scope": "zero empty-root reduced defect and nonnegative increments",
+      "missing": "strict detection on all nonempty cuts"
+    },
+    {
+      "family": "elliptic_exact_order_scattering",
+      "path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/MobiusTorsionScattering.lean",
+      "blob": "8262d7ed220ba0aa1a2cab36b61e4fe244783f64",
+      "established_scope": "root order one, exact strata and Möbius exact-order projectors",
+      "missing": "faithfulness of order one, positive finite order in a realized model"
+    },
+    {
+      "family": "elliptic_monodromy",
+      "path": "GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/EllipticTorsionAction.lean",
+      "blob": "49a451012fcf8e777a0d2c288055e5b0793e8c5f",
+      "established_scope": "identity action and inverse action roundtrip",
+      "missing": "faithful action and chosen positive metric"
+    },
+    {
+      "family": "godel_finite_orbit_carrier",
+      "path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CurveTorsionGodelLoopCarrier.lean",
+      "blob": "0a436d58027668c55d9743c43c4c677564914d9a",
+      "established_scope": "positive finite period and closed orbit, analogical reading",
+      "missing": "physical Einstein spacetime model, no global strictly positive exact time on closed cycle"
+    },
+    {
+      "family": "zeta_metric_cycle",
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/MetricQuadraticTorsionZetaCycle.lean",
+      "blob": "0ea9409bb694d1d8a69795fa8cdfe2ad1a18310c",
+      "established_scope": "witness-carried quadratic/phase/cycle equations",
+      "missing": "actual zeta spectral realization and RH-strength sign bound"
+    },
+    {
+      "family": "prismatic_torsion_tower",
+      "path": "GRWTSK/GeneralTopology/TorsionTower.lean",
+      "blob": "ad1e74c982b07e6ea5d9a222882b60c11e3a4f3f",
+      "established_scope": "finite torsion levels and inverse-limit carrier",
+      "missing": "faithful scalar norm and positive off-root detection"
+    },
+    {
+      "family": "affine_connection_tensor",
+      "path": "GRWTSK/DifferentialGeometry/TorsionPublic.lean",
+      "blob": "a41b95c1980e08206bddbb78df63279869fcbcdb",
+      "established_scope": "alternating connection torsion, torsion_self=0 and torsion_eq_zero_iff",
+      "missing": "positive-definite auxiliary metric and nonvanishing; Levi-Civita torsion zero everywhere"
+    },
+    {
+      "family": "cochain_curvature",
+      "path": "GRWTSK/Combinatorics/CochainCurvatureMeasuredDefectCochain.lean",
+      "blob": "af2605177cc4542caf09718b463b04cae2b46bfc",
+      "established_scope": "full signed four-edge curvature and nonnegative size budget",
+      "missing": "no universal strict positive outside root; flat cochains"
+    },
+    {
+      "family": "torsion_trace_shell",
+      "path": "GRWTSK/FunctionalAnalysis/TorsionShellTraceClassBoundary.lean",
+      "blob": "130eb860889e69015485de56c66ebafeebd47f1c",
+      "established_scope": "positive/negative/singular phase and trace-class boundary flags",
+      "missing": "summable trace norm and determinant exactness; signed routes retained"
+    },
+    {
+      "family": "torsion_flow",
+      "path": "GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TorsionFlow.lean",
+      "blob": "f60b034a9c75958bfe36903f788704677e128496",
+      "established_scope": "mass nonincreasing and Euler-preserving flow",
+      "missing": "strict positivity cannot follow from nonincreasing"
+    },
+    {
+      "family": "heat_residue",
+      "path": "GRWTSK/GeneralTopology/TopologicalSpacesWithRicherStructures/K128TransportTorsionResidueHeatNonnegative.lean",
+      "blob": "077b51c1fb60beb074fe3926be081ba764205063",
+      "established_scope": "nonnegative heat residual and root-zero transport under hypotheses",
+      "missing": "proclaimed iff is string proof-pending, nonzero-away-root not proved"
+    },
+    {
+      "family": "liouville_automorphic_source",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AutomircronDirichletFrame.lean",
+      "blob": "b253db8bbbec58db78cbe2744484583f9348edfc",
+      "established_scope": "flic, windDirichlet, exact nonunit and Abel return",
+      "missing": "coherent principal mode estimate with signed cross terms and nonunit recovery"
+    },
+    {
+      "family": "rh_causal_signed_target",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleInteriorLongGapRH.lean",
+      "blob": "e9b68f4106b3e2d648ba0803f75dc5e3b4dccbd9",
+      "established_scope": "precise named all-rate signed long-gap arithmetic proposition",
+      "missing": "InteriorLongGapAllRate OPEN; RH OPEN"
+    }
+  ],
+  "external_sources": [
+    {
+      "title": "Kurt Gödel 1949 rotating Einstein solution",
+      "url": "https://doi.org/10.1103/RevModPhys.21.447",
+      "status": "external established physical mathematics"
+    },
+    {
+      "title": "Gödel on relativity and idealistic philosophy",
+      "url": "https://plato.stanford.edu/entries/genrel-early/",
+      "status": "historical philosophical context, not theorem premise"
+    },
+    {
+      "title": "Matter matters in Einstein-Cartan gravity",
+      "url": "https://doi.org/10.1103/PhysRevD.104.064036",
+      "status": "external geometric distinction: Cartan torsion versus Levi-Civita torsion"
+    }
+  ],
+  "exact_claims": {
+    "root_readout_zero": "for any f, D_o f(o)=0",
+    "rooted_weighted_quadratic_nonnegative": "w(x)>=0 implies E(x)>=0",
+    "strict_iff_detection": "w(x)>0 implies E(x)>0 iff f(x)!=f(o)",
+    "finite_order_excess": "ord(o)=1 and faithful order-one + finite positive ord(x) yields excess>0 for x!=o",
+    "full_cross_term": "E(a+b)=E(a)+E(b)+2w D(a)D(b); mixed sign retained",
+    "finite_closed_orbit": "positive-period closed orbit cannot have a globally real time strictly increasing on all steps",
+    "no_global_torsion_sign_claim": "Connection torsion is alternating; Levi-Civita torsion zero even outside any chosen root; no universal sign",
+    "no_rh_claim": "Generic positivity, curvature, torsion, or chronology statements do NOT establish the original all-rate signed Liouville cancellation",
+    "arithmetic_P": "OPEN",
+    "riemann_hypothesis": "OPEN"
+  },
+  "verification": {
+    "source_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "complete_source_import_check": "NOT_RUN",
+    "paper_to_family_adapters": "NOT_FORMALIZED"
+  },
+  "trust": {
+    "no_new_axioms": true,
+    "no_original_family_changes": true,
+    "no_root_build_changes": true,
+    "no_automation_dispatch": true,
+    "no_local_shared_index_lock": true,
+    "source_only_publication": true
+  },
+  "checks": [
+    "Do not substitute group order positivity for geometric torsion sign; require typed adapter",
+    "Strict off-root energy requires positive weights AND a separating observable; test constant observation",
+    "Torsion order 0 may denote infinite order; do not infer positive finite order from nonidentity",
+    "No Levi-Civita torsion away from root; Gödel 1949 rotation is vorticity, not Cartan torsion",
+    "No global strictly increasing single-valued time around a genuine closed finite cycle",
+    "Preserve original signed Liouville coefficients and complete off-diagonal Gram; never subtract lambda(1) as an unproved RH reparametrization",
+    "Existing prime-cut source only proves positive semidefinite increments, not strict every nonempty cut",
+    "Legacy source wrappers and alleged compiled modules must be checked for actual full closures before claiming theorem admission",
+    "No universal all-family coverage claim; the atlas covers tested representative interfaces with a generic criterion",
+    "Publication SHA and exact source blobs must be read back, then separately compile and audit when authorized"
+  ]
+}
