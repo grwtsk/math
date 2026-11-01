@@ -39,6 +39,10 @@ Existing relevant source anchors inspected:
 
 None of these inspected sources demonstrates that a DOM virtualizer refines its Lean mathematics. That is a separate exact representation theorem and runtime test obligation. The local prototype computes actual finite Möbius values by trial factorization only for its small displayed range; it does not compute or bound the analytic signed pickup cross-energy needed by an RH return.
 
+## Pure cache/viewport compaction law
+
+`GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PrismaticCacheAnchor.lean` adds a dependent `Representative` that stores the full value, a prismatic summary and the **required equality** between summary and encoding. `restore_compact` recovers the original value exactly; `viewportOffset_rebase` proves in integer coordinates that removing height before the anchor from both `documentTop` and `scrollTop` preserves the visible offset. The browser implementation must still be shown to refine the model, especially under variable font measurement, focus, accessibility navigation, missing backing data and interruptions. This source remains `NOT_RUN` for Lean.
+
 ## UI mathematical correspondence and caching contracts
 
 A `Moment` is a stable source-bound cache entry with an immutable origin, revisioned workflow projection, port ledger, real shadow, signed pair/fiber residue and explicit verification status. `Rendered` and `PrismaticSummary` are two representation states of the **same** moment identifier. An offscreen summary must retain source revision, prime address, semantic summary, exact state digest and restoration capability. It cannot silently reinterpret the source, discard an unproved premise, or count an arbitrary graph edge as certified diffusion.
@@ -62,7 +66,7 @@ Every installed source-specific adapter must bind exact Lean declaration, source
 | Lean source text for shadow/reflection/ports | New candidate source | Fresh Lean compilation, kernel/axiom audit and exact imported closure |
 | Ordered Möbius pair definitions | New source candidate with explicit supplier parameters | Actual Möbius/pickup adapter, swapped-pair residue reflection and source closure |
 | Prime addressing | Type-dependent address witness (`Nat.Prime`) | Finite manifest-wide injection, source/Universe/elaboration completeness check |
-| DOM/prismatic encode-decode | Local HTML implementation | Round-trip semantic and scroll invariants in browser/assistive technology |
+| DOM/prismatic encode-decode | New pure `PrismaticCacheAnchor.lean` candidate plus local HTML implementation | Fresh Lean replay, then separate runtime semantic/scroll/accessibility refinement |
 | Event/human workflow permissions | Local demonstration only | Authorized Noe owner, capability, signed receipt and human adjudication where required |
 | Diffusion log and statuses | Local finite six-node diffusion with 3 steps | Authenticated actual Noe run provenance and legal gate receipts |
 | Cache retention | Local browser storage, bounded 250 moments | Durable external store and crash/restart, eviction/restore, race and privacy policies |
