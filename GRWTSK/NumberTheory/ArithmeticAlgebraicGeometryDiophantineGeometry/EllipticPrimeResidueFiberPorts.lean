@@ -85,6 +85,34 @@ structure GeometricFiberPort (W V : WeierstrassCurve ℤ)
     (p : PrimeIndex) where
   affineEquiv : AffinePointFiber W p ≃ AffinePointFiber V p
 
+/-- Two possibly different integral elliptic models have an ACTUAL
+equivalence of their affine F_p fibers when all five Weierstrass
+coefficients agree modulo p. This does not require global isomorphism.
+The relation is constructed on points of the fibers themselves. -/
+def geometricPort_of_coefficients_mod_prime
+    (W V : WeierstrassCurve ℤ) (p : PrimeIndex)
+    (h1 : (W.a₁ : ZMod p.1) = (V.a₁ : ZMod p.1))
+    (h2 : (W.a₂ : ZMod p.1) = (V.a₂ : ZMod p.1))
+    (h3 : (W.a₃ : ZMod p.1) = (V.a₃ : ZMod p.1))
+    (h4 : (W.a₄ : ZMod p.1) = (V.a₄ : ZMod p.1))
+    (h6 : (W.a₆ : ZMod p.1) = (V.a₆ : ZMod p.1)) :
+    GeometricFiberPort W V p where
+  affineEquiv :=
+    { toFun := fun x =>
+        ⟨x.1, by
+          simpa only [← h1, ← h2, ← h3, ← h4, ← h6] using x.2⟩
+      invFun := fun y =>
+        ⟨y.1, by
+          simpa only [h1, h2, h3, h4, h6] using y.2⟩
+      left_inv := by
+        intro x
+        apply Subtype.ext
+        rfl
+      right_inv := by
+        intro y
+        apply Subtype.ext
+        rfl }
+
 /-- Actual geometric-fiber equivalence preserves the full finite elliptic
 point count, including the unique point at infinity. -/
 theorem GeometricFiberPort.pointCount_eq
@@ -98,6 +126,19 @@ theorem GeometricFiberPort.pointCount_eq
   have hW := affineFiber_card_add_one W p
   have hV := affineFiber_card_add_one V p
   omega
+
+/-- A genuine fiber-level connection yields an exact prime-local point
+count equality, even for globally distinct model coefficients. This
+does NOT identify their full L-functions or zero sets. -/
+theorem integralModelCount_eq_of_coefficients_mod_prime
+    (W V : WeierstrassCurve ℤ) (p : PrimeIndex)
+    (h1 : (W.a₁ : ZMod p.1) = (V.a₁ : ZMod p.1))
+    (h2 : (W.a₂ : ZMod p.1) = (V.a₂ : ZMod p.1))
+    (h3 : (W.a₃ : ZMod p.1) = (V.a₃ : ZMod p.1))
+    (h4 : (W.a₄ : ZMod p.1) = (V.a₄ : ZMod p.1))
+    (h6 : (W.a₆ : ZMod p.1) = (V.a₆ : ZMod p.1)) :
+    integralModelCount W p.1 = integralModelCount V p.1 :=
+  (geometricPort_of_coefficients_mod_prime W V p h1 h2 h3 h4 h6).pointCount_eq
 
 /-- The actual prime of a dependent channel, with its prime proof. -/
 def prime {W : WeierstrassCurve ℤ} (x : CurveFiber W) : PrimeIndex := x.1
