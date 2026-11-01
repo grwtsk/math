@@ -1,0 +1,143 @@
+{
+  "schema": "grwtsk.math.source-verification.v1",
+  "local_attribution": "grwtsk contributors",
+  "date": "2026-11-01",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "publication": {
+    "expected_parent": "1bf5c020cd92d4e179c706a93e5c5404b97ea229",
+    "source_commit": "370867ae0646983231289c8fab54937fc51961b7",
+    "expected_target_parent": "370867ae0646983231289c8fab54937fc51961b7"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSmallRationalSlopeAllRate.lean",
+    "blob": "e9d09a9e1eb69dd2c176f3e64b28228df0126f42",
+    "sha256": "eec8be11b1804e6f10463081e643fa1ba293cc9fdb9d1661d73ff58a0a303e90"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-endpoint-putnam-small-rational-slope-all-rate-2026-11-01.md",
+    "blob": "847f344fb77f11d8ba8afc5dcf924b4a85f0ae1a",
+    "sha256": "a841b88c3d95d6e87db380e119ed2615c0a747320d485c44f71b2ed538f8d757"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/moebius-endpoint-putnam-small-rational-slope-all-rate-references.md",
+    "blob": "aa5d1c28d15f8a11a67431f35e10472f76e47ae7",
+    "sha256": "bf02acef567aea6ed8d0ef9fedde416a985d5517ab4fec02c8faca01405d3c6b"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapYoung.lean",
+      "blob": "6a424d78ae93cc82e35fae3bb3d20a5a3616c7b2",
+      "role": "literal response-Gram Young inequality"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapAllRate.lean",
+      "blob": "2ccedc75331c8ec88956923f896083727d49ec4f",
+      "role": "additive-gap all-rate theorem, diagonal bound and rate-cardinality estimate"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSmallRatioAllRate.lean",
+      "blob": "4d2a3cdef5cae3643637cac342eeb48d586d9204",
+      "role": "generic symmetric relation bound, exact-ratio sector and direct add/mul core"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamEnergyCounting.lean",
+      "blob": "e04dc68d2ca268d88d43725d0963c5414d216c6d",
+      "role": "unchanged endpoint inventory, complete ordered source and diagonal"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GoodScaleEnergyCriterion.lean",
+      "blob": "ca3ae4975b20cf796a167308a9e87546c6001c41",
+      "role": "affine-frequent conditional return from the original cross supplier to RH"
+    },
+    {
+      "path": "Lean4/src/Init/Data/Nat/Div/Basic.lean",
+      "blob": "de984fa8bcba0e0324b6d236a54b1637f471705d",
+      "role": "positive natural multiplication-division cancellation used in neighbor enumeration"
+    }
+  ],
+  "principal_declarations": [
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.hasSmallRationalSlope",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.smallRationalSlopeEdge",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.endpointRationalSlopeSetCross",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.smallRationalSlopeEdge_of_common_factor",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.rationalSlope_neighbor_card_le",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.original_sparse_rationalSlope_abs_le",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.original_sparse_rationalSlope_quadratic",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.putnam_sparse_rationalSlope_all_rate",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.endpointRationalSlopeOutsideGapRatioCross",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.putnam_rationalSlope_outside_gap_ratio_all_rate",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.endpointDenseReducedRatioCoreCross",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.endpointDenseAddMulCore_eq_slope_add_reduced",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.pickupCross_eq_gap_ratio_slope_reduced",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.DenseReducedRatioCoreAllRateOn",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.denseReducedRatioCoreAllRateOn_iff_crossOn",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.riemannHypothesis_of_dense_reduced_ratio_core_good_scales"
+  ],
+  "mathematical_result": {
+    "slope_relation": "Selected pairs satisfy a*m=b*n or a*n=b*m for positive a,b in Q.",
+    "degree": "Each endpoint index has at most 2*|Q|^2 selected rational-slope neighbours.",
+    "packet_bound": "|X_Q^slope(T)| <= 2*|Q|^2*pickupDiagonal(T) <= 4*|Q|^2*T^2.",
+    "all_rate": "For a,b<=floor(exp(epsilon*T/4)), the complete slope packet is at most (32/epsilon^2)*exp(epsilon*T) in absolute value.",
+    "disjoint_sector": "The same bound holds after removing edges already counted by additive gaps or exact small integer ratios.",
+    "partition": "pickupCross equals additive gap plus disjoint integer ratio plus disjoint rational slope plus the direct reduced-ratio core.",
+    "gcd_effect": "A surviving positive pair has reduced numerator or denominator above floor(exp(epsilon*T/4)); for m<n this forces gcd(m,n)<n/H.",
+    "fixed_scale_equivalence": "DenseReducedRatioCoreAllRateOn G iff SubexponentialOn pickupCross G with explicit added constant 96/epsilon^2.",
+    "rh_return": "AffineFrequent G plus the unproved reduced-ratio core supplier implies the canonical RiemannHypothesis through the existing return."
+  },
+  "independent_diagnostics": {
+    "degree_and_partition_integer_fixtures": 5980550,
+    "ranges": {
+      "degree": "1<=N<=100, 1<=H<=15, every source vertex",
+      "partition": "1<=N<=60, 1<=A<=10, 1<=H<=8, every ordered pair"
+    },
+    "status": "PASS_EXACT_INTEGER_REFERENCE_ONLY"
+  },
+  "nonclaims": [
+    "No signed estimate is proved for the final reduced-ratio core.",
+    "No fixed-shift or averaged correlation theorem is upgraded beyond its stated range.",
+    "No random independence, elliptic replacement, RH premise or free residual is used.",
+    "The abstract finite matching and gcd facts are not claimed as new classical results.",
+    "Source publication and finite diagnostics do not establish Lean elaboration, kernel acceptance or an axiom audit.",
+    "No complete endpoint estimate, uniform energy theorem or Riemann Hypothesis proof is claimed."
+  ],
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "exact_blob_readback": "DONE",
+    "lexical_scan": "PASS_NO_sorry_admit_native_decide_OR_axiom_DECLARATION",
+    "independent_integer_reference": "PASS",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN"
+  },
+  "mathematical_status": {
+    "rational_slope_neighbor_count": "SOURCE_PROOF_CANDIDATE",
+    "small_rational_slope_all_positive_rate": "SOURCE_PROOF_CANDIDATE",
+    "direct_four_sector_partition": "SOURCE_PROOF_CANDIDATE",
+    "gcd_interpretation": "MATHEMATICAL_REVIEW_PROVED",
+    "dense_reduced_ratio_core_supplier": "UNPROVED",
+    "complete_endpoint_estimate": "UNPROVED",
+    "uniform_energy": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "next_supplier": "Estimate the complete signed endpoint packet of additively far pairs with no small exact integer quotient and reduced rational height above exp(epsilon*T/4), equivalently a quantitatively small-gcd core, before outer absolute values.",
+  "issue_refs": [
+    1548
+  ],
+  "rejection_conditions": [
+    "counting additive, exact-ratio and rational-slope sectors more than once",
+    "replacing the direct reduced-ratio core by an unrestricted remainder field",
+    "taking termwise absolute values over the exponentially dense surviving core",
+    "treating the radical-log or gcd interpretation as cancellation",
+    "promoting source publication or finite diagnostics to Lean or kernel acceptance",
+    "claiming RH before the reduced-core supplier and verified dependency closure are supplied"
+  ]
+}
