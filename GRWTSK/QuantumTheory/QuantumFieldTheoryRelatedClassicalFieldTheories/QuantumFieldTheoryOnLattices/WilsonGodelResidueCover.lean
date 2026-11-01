@@ -144,4 +144,87 @@ theorem observer_and_all_residue_bounds
   intro r
   exact ⟨residueEnergy_nonneg L r U, residueEnergy_le_two_card L r U⟩
 
+
+/-!
+## Geometry-weighted source observables
+
+The observer's nonnegative spatial rest energy is now used as an ACTUAL
+multiplicative weight on each already-source-defined Wilson residue energy.
+The nonnegative real parameter lambda has inverse-spatial-energy units if
+one wishes the gain to be dimensionless. This is a measured comparison, not
+a new field equation, spectral gap, or Einstein--Yang--Mills interaction.
+The additive 1 avoids vacuity along the Gödel observer-time root.
+-/
+
+/-- The genuine Gödel rest-space quadratic determines the observer gain. -/
+def observerGain (lambda : ℝ) (p : Parameters) (x : ℝ) (v : Tangent) : ℝ :=
+  1 + lambda * spatialMetric p x v v
+
+/-- A nonnegative observer coupling cannot shrink an existing Wilson energy. -/
+theorem observerGain_ge_one (lambda : ℝ) (hlambda : 0 ≤ lambda)
+    (p : Parameters) (x : ℝ) (v : Tangent) :
+    1 ≤ observerGain lambda p x v := by
+  unfold observerGain
+  have hsp : 0 ≤ spatialMetric p x v v := spatialMetric_self_nonneg p x v
+  have hmul : 0 ≤ lambda * spatialMetric p x v v := mul_nonneg hlambda hsp
+  linarith
+
+/-- A physically sourced observer readout of an actual Wilson fiber energy. -/
+def observerWeightedResidueEnergy (lambda : ℝ) (p : Parameters)
+    (x : ℝ) (v : Tangent) (r : ZMod L)
+    (U : Configuration L SU2) : ℝ :=
+  observerGain lambda p x v * residueEnergy L r U
+
+theorem observerWeightedResidueEnergy_nonneg
+    (lambda : ℝ) (hlambda : 0 ≤ lambda) (p : Parameters)
+    (x : ℝ) (v : Tangent) (r : ZMod L)
+    (U : Configuration L SU2) :
+    0 ≤ observerWeightedResidueEnergy L lambda p x v r U := by
+  unfold observerWeightedResidueEnergy
+  exact mul_nonneg (le_trans (by norm_num) (observerGain_ge_one lambda hlambda p x v))
+    (residueEnergy_nonneg L r U)
+
+/-- All original plaquette penalties remain present after weighting. -/
+theorem observerWeightedEnergy_cover
+    (lambda : ℝ) (p : Parameters) (x : ℝ) (v : Tangent)
+    (U : Configuration L SU2) :
+    (∑ r : ZMod L, observerWeightedResidueEnergy L lambda p x v r U) =
+      observerGain lambda p x v * wilsonAction L U := by
+  simp only [observerWeightedResidueEnergy]
+  rw [← Finset.mul_sum, residueEnergy_cover]
+
+/-- The observer-weighted Wilson action controls the original physical action. -/
+theorem wilsonAction_le_observerWeightedCover
+    (lambda : ℝ) (hlambda : 0 ≤ lambda) (p : Parameters)
+    (x : ℝ) (v : Tangent) (U : Configuration L SU2) :
+    wilsonAction L U ≤
+      ∑ r : ZMod L, observerWeightedResidueEnergy L lambda p x v r U := by
+  rw [observerWeightedEnergy_cover]
+  have hw : 1 ≤ observerGain lambda p x v :=
+    observerGain_ge_one lambda hlambda p x v
+  have ha : 0 ≤ wilsonAction L U := (wilsonAction_bounds L U).1
+  have hp : 0 ≤ (observerGain lambda p x v - 1) * wilsonAction L U :=
+    mul_nonneg (sub_nonneg.mpr hw) ha
+  nlinarith
+
+/-- The same weighted class respects both the real Gödel chart isometry and
+the true SU(2) gauge action; its exact source is never changed. -/
+theorem observerWeightedEnergy_chart_gauge
+    (lambda : ℝ) (p : Parameters) (x s : ℝ) (v : Tangent)
+    (r : ZMod L) (h : Gauge L SU2) (U : Configuration L SU2) :
+    observerWeightedResidueEnergy L lambda p (x + s) (shiftTangent s v) r
+        (gaugeTransform h U) =
+      observerWeightedResidueEnergy L lambda p x v r U := by
+  unfold observerWeightedResidueEnergy observerGain
+  rw [spatialMetric_shift, residueEnergy_gauge]
+
+/-- Exact preservation of the normalized observer gain; no physical force
+or source-transport assumption has been smuggled into this equality. -/
+theorem observerGain_chart (lambda : ℝ) (p : Parameters)
+    (x s : ℝ) (v : Tangent) :
+    observerGain lambda p (x + s) (shiftTangent s v) =
+      observerGain lambda p x v := by
+  unfold observerGain
+  rw [spatialMetric_shift]
+
 end GRWTSK.Geometry.GaugeTheory.WilsonGodelResidueCover
