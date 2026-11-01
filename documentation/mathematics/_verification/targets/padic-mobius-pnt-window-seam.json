@@ -1,0 +1,75 @@
+{
+  "schema_version": "source-bound-mathematical-replay-v1",
+  "target": "p-adic-Mobius-PNT-Putnam-window-arithmetic-seam",
+  "repository": "grwtsk/math",
+  "baseline_ref_observed": "1d8256b2f63e28175a7fb74b8c5eafef114888df",
+  "local_attribution": "grwtsk contributors",
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PadicMobiusPrimeWindowSeam.lean",
+      "git_blob": "027d24046d0563be5cd66e01d7ecf3235d99f801",
+      "classification": "source_proof_candidate"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/padic-mobius-pnt-putnam-window-seam.md",
+      "git_blob": "9d910b5204d7e201cba07c5946dbada5d190a701",
+      "classification": "mathematical_analytic_review"
+    }
+  ],
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PadicPrimeLogarithmicDensity.lean",
+      "git_blob": "7764823b46a9eb47422a2e9036d888ca818ac775"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleSquareDivisorReverseCounting.lean",
+      "git_blob": "feae1ca93e3a21ebc033da05e14fe1e2f77c6b2d"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/SignedCyclicWalkPacket.lean",
+      "git_blob": "2f07d2d96384e6bbcca610bce9f5cb1eecade91b"
+    },
+    {
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/ArithmeticFunction/VonMangoldt.lean",
+      "git_blob": "f0587555fbb762fc7283a1c22c7f1be07350c589"
+    }
+  ],
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "new_lean_declarations": [
+    "GRWTSK.NumberTheory.PadicMobiusPrimeWindowSeam.windowCount",
+    "GRWTSK.NumberTheory.PadicMobiusPrimeWindowSeam.windowCount_carry",
+    "GRWTSK.NumberTheory.PadicMobiusPrimeWindowSeam.windowCount_le_one_of_short",
+    "GRWTSK.NumberTheory.PadicMobiusPrimeWindowSeam.windowCount_eq_one_iff_carry",
+    "GRWTSK.NumberTheory.PadicMobiusPrimeWindowSeam.pntWindow_eq_mobiusLogWindow",
+    "GRWTSK.NumberTheory.PadicMobiusPrimeWindowSeam.divisorLogWindow_eq_swapped",
+    "GRWTSK.NumberTheory.PadicMobiusPrimeWindowSeam.divisorLogWindow_sub_two"
+  ],
+  "analytical_claims_not_lean_accepted": [
+    "mobius_squarefree_filtered_finite_prime_parity",
+    "source_exact_vonMangoldt_window_weighted_split",
+    "uniform_squarefree_small_prime_moving_cutoff_window_error",
+    "fixed_cutoff_rough_prime_Euler_product_quadratic_boundary_zero",
+    "all_rough_prime_subset_signed_Putnam_count",
+    "complete_weighted_signed_pair_prime_window_criterion"
+  ],
+  "verification": {
+    "FINITE_EXACT_REFERENCE": "PASS_169774_ASSERTIONS",
+    "COMPILATION": "NOT_RUN",
+    "EXPECTED_TYPES": "NOT_RUN",
+    "FRESH_KERNEL": "NOT_RUN",
+    "TRANSITIVE_AXIOM_AUDIT": "NOT_RUN",
+    "PNT_NEW_THEOREM": "NOT_CLAIMED",
+    "WEIGHTED_PREFIX_ALL_RATE": "OPEN",
+    "RH": "OPEN"
+  },
+  "reference_checker": {
+    "local_generated_file": "padic_mobius_pnt_window_reference.py",
+    "scope": "bounded integer/rational/symbolic-prime-log tests only; not an infinite theorem",
+    "checks": 169774
+  },
+  "no_execution_authority": true
+}
