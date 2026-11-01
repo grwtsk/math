@@ -6,16 +6,19 @@
   "branch": "main",
   "classification": "SOURCE_PROOF_CANDIDATE",
   "source": {
-    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PadicMobiusCofinalTwoUnitBridge.lean"
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PadicMobiusCofinalTwoUnitBridge.lean",
+    "blob": "d8a2be1df5e98a57e713e4c8743af88cccbf45c1"
   },
   "review": {
-    "path": "documentation/mathematics/_support/reviews/padic-mobius-cofinal-two-unit-impact.md"
+    "path": "documentation/mathematics/_support/reviews/padic-mobius-cofinal-two-unit-impact.md",
+    "blob": "b72bdfbc5928a45e4cb4efba0ba86534b1db7d53"
   },
   "ledger": {
-    "path": "documentation/mathematics/_support/reference/literature/reading-background/padic-mobius-cofinal-two-unit-impact-references.md"
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/padic-mobius-cofinal-two-unit-impact-references.md",
+    "blob": "58b0439cb8b7e76fda391bd04bb3ce0ed25ba067"
   },
-  "expected_parent": "ab9d4b6892af6e99e63d276bfcd69770fe4c0727",
-  "publication_commit": "PENDING",
+  "expected_parent": "cba061e9f08e1faf75e7df963cabecd9568acdfa",
+  "publication_commit": "15c5f01eac639d590465e81331ab4792eb9218ce",
   "toolchain": {
     "lean": "leanprover/lean4:v4.34.1",
     "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
