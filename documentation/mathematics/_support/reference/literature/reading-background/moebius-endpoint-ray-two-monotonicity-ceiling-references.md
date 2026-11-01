@@ -1,0 +1,16 @@
+# Literature and formalization ledger: endpoint ray two-monotonicity ceiling
+
+## RH-MOEBIUS-ENDPOINT-RAY-TWO-MONOTONICITY-01
+
+- **Title, attribution, date:** *Two-monotone endpoint rays and the higher-order parity obstruction*, grwtsk contributors, 2026-10-31.
+- **Research scope:** `6ae605b4-a7b4-83e8-9ada-ee9c9089476b`.
+- **Lean source candidate:** `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointRayTwoMonotonicityCeiling.lean`, Git blob `e2e05249eadc50042ba727770018e213a27c5d00`.
+- **Mathematical review:** `documentation/mathematics/_support/reviews/moebius-endpoint-ray-two-monotonicity-ceiling.md`, Git blob `a42e64945daa2d497be8168ddc6b8728c7613ad3`.
+- **Static verification target:** `documentation/mathematics/_verification/targets/moebius-endpoint-ray-two-monotonicity-ceiling.json`, Git blob `7794c17c0a69c403b27d4ba3279130570c02acb6`.
+- **Exact local predecessors:** `MoebiusEndpointSymmetricDifferenceRays.lean` blob `34fc88f828a46f40b665157292d998d2e464c265`; `MoebiusDenseSquarefulZeroPacket.lean` blob `94e2e276ca071b5965d10e34476ccfda4e4c2180`; original response source `MertensPrimitive.lean` blob `45e06c371d67bcf8c939d20a95fcbc63570546fa`; Liouville energy target blob `a00aaa07c067b4c88203372870b5d5d151de0de4`.
+- **External literature:** no external theorem is used to prove the new low-order identities or obstruction. The argument is finite source reindexing, elementary hinge monotonicity and scalar algebra. Existing fixed-form correlation and classical zero-abscissa results remain comparison background only.
+- **Exact mathematical scope:** the literal causal ray weights have nonnegative first and second multiplicative prime differences. A one-prime insertion satisfies `W_T(pq)<=2*sqrt(p)/(p+1)*W_T(q)`. The exact `T=log 12`, `q=11`, primes `2,3,5` third difference is negative; adding distinct primes above twelve preserves that negative value, so complete monotonicity fails at every order at least three. A six-label scalar fixture proves that first/second positivity plus factor-one-half insertion contraction does not imply a nonpositive complete parity sum.
+- **Boundary:** this is actual Möbius endpoint structure, but it does not estimate the complete signed parity sum at every positive rate. It rules out an unsigned Euler-product or completely-monotone-capacity proof. A boundary-corrected signed cube estimate or direct Type-II/growing-shift consumer remains open.
+- **Formal proof boundary:** the scalar insertion inequality, six-label fixture, and conditional import of the predecessor third-order failure have source proof scripts. The exact first/second Gram reindexings, pointwise response-difference positivity, insertion contraction, above-horizon vanishing, and all-orders extension remain named propositions rather than axioms or accepted theorems.
+- **Verification:** source inspection `DONE`; analytical derivation `WRITTEN`; compilation, expected-type checking, fresh-kernel replay, transitive axiom audit, native execution and external theorem replay all `NOT_RUN`. Complete endpoint control, uniform energy and RH remain `UNPROVED`.
+- **Canonical ledger status:** this source-bound shard is published in the canonical reading-background directory. The central monolithic ledger is left byte-preserved unless a source-complete concurrency-safe append is performed.
