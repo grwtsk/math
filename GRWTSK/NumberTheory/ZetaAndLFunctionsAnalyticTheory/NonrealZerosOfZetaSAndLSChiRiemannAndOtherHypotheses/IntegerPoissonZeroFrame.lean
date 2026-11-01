@@ -2,14 +2,14 @@
 SOURCE_PROOF_CANDIDATE / COMPILATION_NOT_RUN / EXPECTED_TYPES_NOT_RUN /
 FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN.
 -/
-import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.IntegerPoissonZeroFrame.CompletedResidualDirichlet
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.IntegerPoissonZeroFrame.CompletedResidualPR103Refinement
 
 /-!
 # Integer Poisson zero frame
 
 Umbrella import for the source-equivalent split formalization. The declarations
 retain the namespace and theorem names of the retained monolithic candidate,
-with the optimized open-strip abscissa, conditional seven-eighths strip
-adaptation, and completed-residual finite Dirichlet reduction as separate
-extensions.
+with the optimized open-strip abscissa, conditional seven-eighths and PR103
+strip refinements, completed-residual finite Dirichlet reduction, and the
+proved unit-window singleton normalization as separate extensions.
 -/
