@@ -84,14 +84,14 @@ def residualRectangle (A : Finset ℕ) (M N : ℕ) (T : ℝ) : ℝ :=
     else 0
 
 /-- Explicit counted-exclusion bound, to be qualified in Lean from
-the 2|A| neighbor count plus four possible ratio-two/three neighbors
+the 2|A| neighbor count plus one diagonal and four possible ratio-two/three neighbors
 per fixed row. Uses the actual source kernel <=4T/sqrt(mn). -/
 def ResidualRectangleExclusionCost : Prop :=
   ∀ (A : Finset ℕ) (M N : ℕ) (T : ℝ),
     1 ≤ M → 1 ≤ N → 0 ≤ T →
     residualRectangle A M N T ≤
       originalRectangle M N T +
-        4 * T * (2 * (A.card : ℝ) + 4) *
+        4 * T * (2 * (A.card : ℝ) + 5) *
           Real.sqrt (M : ℝ) / Real.sqrt (N : ℝ)
 
 /-- The precise bounded signed transfer, with both independent inputs
@@ -104,7 +104,7 @@ theorem residualRectangle_upper_of_arithmetic_and_exclusion
     residualRectangle A M N T ≤
       4 * dyadicMobiusDiscrepancy N * T *
           Real.sqrt (M : ℝ) * Real.sqrt (N : ℝ) +
-      4 * T * (2 * (A.card : ℝ) + 4) *
+      4 * T * (2 * (A.card : ℝ) + 5) *
           Real.sqrt (M : ℝ) / Real.sqrt (N : ℝ) := by
   have hb := hPNT M N T hM hN hT
   have he := hExclude A M N T hM hN hT
