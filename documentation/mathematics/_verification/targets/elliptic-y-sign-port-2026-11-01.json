@@ -1,0 +1,133 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Actual integral y-sign Weierstrass variable-change and certified all-prime elliptic fiber port",
+  "date": "2026-11-01",
+  "attribution": "grwtsk contributors",
+  "requested_source_commit": "4ecb4e571664b05e4b5f032dc71e22dd668cdcee",
+  "concurrent_source_consumed": "b0c774242e5c8bc4847f13c151e4603f2d08012b",
+  "lean": "leanprover/lean4:v4.34.1",
+  "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueYSignPort.lean",
+    "blob": "9810a1beb777597d3ed3456d738a66cfc7f85350",
+    "class": "SOURCE_PROOF_CANDIDATE",
+    "root_import": false
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/elliptic-y-sign-port-2026-11-01.md",
+    "blob": "4deb96478865242a40985b0eaa539531a8bcf626",
+    "class": "ORDINARY_FINITE_ANALYTICAL_ARGUMENT"
+  },
+  "dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberPorts.lean",
+      "blob": "e7f5901f929bf999d15772f1b92cf3460023623d"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueSamplewiseTransport.lean",
+      "blob": "c080735838e2b4872755cd1409d4f8460b7e3f70"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberCounting.lean",
+      "blob": "70c96ac0ebabe429e129ea549e151e575d30593d"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticFiniteEulerWindow.lean",
+      "blob": "48e14ca731bd9b13f8373eea7521e746cb3eab93"
+    },
+    {
+      "path": "Mathlib/AlgebraicGeometry/EllipticCurve/VariableChange.lean",
+      "blob": "9ae1871e4ed729cefa7c5b7a68a60cf52c580a3a",
+      "repository": "leanprover-community/mathlib4"
+    }
+  ],
+  "expected_declarations": [
+    "PrimeResidueYSignPort.reverseYModel",
+    "PrimeResidueYSignPort.ySignVariableChange",
+    "PrimeResidueYSignPort.reverseYModel_eq_variableChange",
+    "PrimeResidueYSignPort.reverseYModel_discriminant",
+    "PrimeResidueYSignPort.originalAffineEquation_reverseY_iff",
+    "PrimeResidueYSignPort.reverseYAffineEquiv",
+    "PrimeResidueYSignPort.reverseYGeometricPort",
+    "PrimeResidueYSignPort.reverseY_pointCount_eq",
+    "PrimeResidueYSignPort.reverseYCertificate",
+    "PrimeResidueYSignPort.reverseYChannelAt",
+    "PrimeResidueYSignPort.reverseYChannelPort",
+    "PrimeResidueYSignPort.reverseY_localDirectCoeff",
+    "PrimeResidueYSignPort.reverseY_orderedTrace",
+    "PrimeResidueYSignPort.reverseY_localReciprocal"
+  ],
+  "statement": {
+    "source": "Actual integral WeierstrassCurve Z W and source-certified good-prime channels",
+    "target": "reverseYModel W with coefficients (-a1,a2,-a3,a4,a6) under Mathlib VariableChange (-1,0,0,0)",
+    "map": "(x,y)->(x,-y) on true AffinePointFiber W p",
+    "discriminant": "delta(reverseYModel W) = delta(W)",
+    "domain": "Every genuine prime p with actual source certificate",
+    "preserved": "prime, point count including infinity, residue, exponent, all local direct coefficients, local reciprocal factor, complete ordered signed trace packet",
+    "limits": "Only integral unit scaling u=-1; arbitrary unit u and r,s,t still open; no global analytic L equality, RH or BSD"
+  },
+  "finite_diagnostic": {
+    "script": "/mnt/data/elliptic_y_sign_change_reference.py",
+    "sha256": "d342ca9b3d940ea827363d6ec83d83c62ef50220577bdc9dbca5d04ec611f5c1",
+    "command": "python /mnt/data/elliptic_y_sign_change_reference.py",
+    "result": "PASS",
+    "assertions": 25334,
+    "integer_models": 243,
+    "prime_model_pairs": 1944,
+    "good_pairs": 1481,
+    "hostile_good_example": {
+      "p": 7,
+      "source_coefficients": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "target_coefficients": [
+        -1,
+        0,
+        -1,
+        1,
+        1
+      ],
+      "source_count": 8,
+      "target_count": 8,
+      "source_delta": -755
+    },
+    "scope": "EXACT_FINITE_DIAGNOSTIC_NOT_LEAN"
+  },
+  "verification": {
+    "source_publication": "PENDING_NONFORCE_MAIN_READBACK",
+    "mathematical_finite_proof": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "arbitrary_variable_change": "UNPROVED",
+    "native_minimal_model_transport": "UNPROVED",
+    "global_elliptic_L": "UNPROVED",
+    "canonical_rh": "UNPROVED",
+    "BSD": "UNPROVED",
+    "remote_native_run_dispatched": false,
+    "CI_dispatched": false,
+    "scheduler_dispatched": false,
+    "full_original_moebius_routing": "FINITE_SOURCE_CANDIDATE_ON_CURRENT_MAIN",
+    "complete_moebius_signed_elliptic_residual_bound": "UNPROVED"
+  },
+  "passive": true,
+  "issue_refs": [
+    1552,
+    1551,
+    1049,
+    15
+  ],
+  "concurrent_rh_comparison": {
+    "commit": "3689f993057bd4e26e6786c525cafe9ad77f1738",
+    "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
+    "source_blob": "df9ded979964790b92f3053efc3aedeb6e2dfa78",
+    "bank_source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticRecordCertifiedBank.lean",
+    "bank_blob": "b33d580f9d62d3dbe6b43a98af988a95674fb885",
+    "status": "SOURCE_EXACT_SIGNED_IDENTITY_NO_UNCONDITIONAL_ALL_RATE_ESTIMATE"
+  }
+}
