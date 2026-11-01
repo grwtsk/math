@@ -6,14 +6,15 @@
   "branch": "main",
   "classification": "SOURCE_PROOF_CANDIDATE",
   "publication": {
-    "expected_parent": "f1248f64f969f21cb573c682979180da0a305f2b",
-    "source_commit": "a2ddb863fdd6ea21a84d57a8b921e0792e2a9255",
-    "expected_target_parent": "a2ddb863fdd6ea21a84d57a8b921e0792e2a9255"
+    "expected_parent": "e00cbed960899f120c7a1d541b1205de8cd29e19",
+    "source_commit": "102fd30b1a2a588219f5fb36aee3441f7eeeea08",
+    "supersedes_source_commit": "a2ddb863fdd6ea21a84d57a8b921e0792e2a9255",
+    "expected_target_parent": "102fd30b1a2a588219f5fb36aee3441f7eeeea08"
   },
   "source": {
     "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSmallRatioAllRate.lean",
-    "blob": "eec8ca5edce68729ad721c21e738d559a27de786",
-    "sha256": "ff286db20069d234832f04a6b27fe19bb25508d4538c42ddb515086b68a7b406"
+    "blob": "4d2a3cdef5cae3643637cac342eeb48d586d9204",
+    "sha256": "f04f51555e5212ce088832b8085dbc60384b1b15f71e60d7da031a9cee1668f6"
   },
   "review": {
     "path": "documentation/mathematics/_support/reviews/moebius-endpoint-putnam-small-ratio-all-rate-2026-11-01.md",
@@ -98,7 +99,8 @@
     "expected_types": "NOT_RUN",
     "fresh_kernel": "NOT_RUN",
     "transitive_axiom_audit": "NOT_RUN",
-    "native_execution": "NOT_RUN"
+    "native_execution": "NOT_RUN",
+    "source_correction": "DONE_CLASSICAL_SCOPE_NAT_DIVISION_AND_SYMMETRY"
   },
   "mathematical_status": {
     "generic_symmetric_degree_bound": "SOURCE_PROOF_CANDIDATE",
