@@ -2,12 +2,13 @@
 SOURCE_PROOF_CANDIDATE / COMPILATION_NOT_RUN / EXPECTED_TYPES_NOT_RUN /
 FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN.
 -/
-import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.IntegerPoissonZeroFrame.OptimalAbscissa
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.IntegerPoissonZeroFrame.SevenEighthsStrip
 
 /-!
 # Integer Poisson zero frame
 
 Umbrella import for the source-equivalent split formalization. The declarations
 retain the namespace and theorem names of the retained monolithic candidate,
-with the optimized absolute-convergence abscissa added as a separate extension.
+with the optimized open-strip abscissa and the conditional seven-eighths strip
+adaptation added as separate extensions.
 -/
