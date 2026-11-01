@@ -65,10 +65,9 @@ theorem reciprocal_prime_square (q pointCount : ℕ) :
 /-- No artificial higher prime powers occur in this reciprocal polynomial. -/
 theorem reciprocal_higher_zero (q pointCount k : ℕ) (hk : 3 ≤ k) :
     reciprocalCoefficient q pointCount k = 0 := by
-  have hk0 : k ≠ 0 := by omega
-  have hk1 : k ≠ 1 := by omega
-  have hk2 : k ≠ 2 := by omega
-  simp [reciprocalCoefficient, hk0, hk1, hk2]
+  have h : k = (k - 3) + 3 := by omega
+  rw [h]
+  rfl
 
 /-- The polynomial is recovered from its *complete* coefficient packet. -/
 theorem goodReciprocal_coefficients (q pointCount : ℕ) (T : ℚ) :

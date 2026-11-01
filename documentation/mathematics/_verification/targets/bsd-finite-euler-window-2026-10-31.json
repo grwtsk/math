@@ -7,7 +7,7 @@
   "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
   "new_lean": {
     "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticFiniteEulerWindow.lean",
-    "blob_sha": "41778251ab3b5c3dfab034e2f04415cc659f438b",
+    "blob_sha": "48e14ca731bd9b13f8373eea7521e746cb3eab93",
     "status": "SOURCE_PROOF_CANDIDATE",
     "declarations": [
       "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.FiniteEulerWindow.goodReciprocal_at_inverse",
