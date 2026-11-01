@@ -60,6 +60,12 @@ def raySecondDifference (q p r : ℕ) (T : ℝ) : ℝ :=
   endpointRayWeight q T - endpointRayWeight (p * q) T -
     endpointRayWeight (r * q) T + endpointRayWeight (p * r * q) T
 
+/-- Complete alternating multiplicative difference over a finite prime set. -/
+def rayPrimeSetDifference (q : ℕ) (P : Finset ℕ) (T : ℝ) : ℝ :=
+  ∑ S ∈ P.powerset,
+    (-1 : ℝ) ^ S.card *
+      endpointRayWeight (q * ∏ p ∈ S, p) T
+
 /-- First difference of the literal positive-index response. -/
 def responsePrimeDifference (p n : ℕ) (u : ℝ) : ℝ :=
   pickupResponse n u - pickupResponse (p * n) u
@@ -207,7 +213,10 @@ def NoHigherOrderRayCompleteMonotonicity : Prop :=
         N12LargePrimeRayVanishes →
           ∀ k : ℕ, 3 ≤ k →
             ∃ (q : ℕ) (P : Finset ℕ),
-              P.card = k ∧ 2 ≤ q
+              P.card = k ∧ 2 ≤ q ∧
+                (∀ p ∈ P, Nat.Prime p) ∧
+                  (∀ p ∈ P, ¬ p ∣ q) ∧
+                    rayPrimeSetDifference q P (Real.log 12) < 0
 
 /-- Uniform-energy disposition.  First and second ray positivity are genuine,
 but neither they nor the quantitative one-prime contraction imply the complete
