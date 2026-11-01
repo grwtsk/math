@@ -1,0 +1,166 @@
+{
+  "schema": "grwtsk.elliptic-prime-residue-fiber-port-putnam/1",
+  "author": "grwtsk contributors",
+  "repository": "grwtsk/math",
+  "date": "2026-11-01",
+  "base_inspected_head": "30f44503e72c74d9f4a96d154c86e3b7641a3dbf",
+  "latest_head_before_write": "850d97668af4bd710e68d54fbef4661d2f246efe",
+  "lean": "leanprover/lean4:v4.34.1",
+  "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberPorts.lean",
+      "blob": "e4aa52227346577bd26dbd071944a49b4bfd59ec",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberCounting.lean",
+      "blob": "70c96ac0ebabe429e129ea549e151e575d30593d",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/elliptic-prime-residue-fiber-port-putnam-comparison-2026-11-01.md",
+    "blob": "a3f4e2ea2e1112b2669e803ad43593a5ab5c5088"
+  },
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean",
+      "blob": "e51c1b52fede0d883b147ffd196c0efe184a87d8"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/OrderedPrimeGroupAddress.lean",
+      "blob": "88023e2c4940d4572561a564f7c73fc8271aa31f"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimeFiberFiniteTestTransport.lean",
+      "blob": "53efabe82d6a3bca895e125072c7efba65add1d1",
+      "role": "comparison_not_new_import"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamEnergyCounting.lean",
+      "blob": "e04dc68d2ca268d88d43725d0963c5414d216c6d",
+      "role": "RH_consumer_comparison_not_new_import"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPowerSeriesLocalFactor.lean",
+      "blob": "61ba3e2fb70554bb42b194f287d2822f2be92433"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticFiniteEulerWindow.lean",
+      "blob": "48e14ca731bd9b13f8373eea7521e746cb3eab93"
+    }
+  ],
+  "new_declarations": [
+    "PrimeResidueFiberPort.ChannelAt",
+    "PrimeResidueFiberPort.CurveFiber",
+    "PrimeResidueFiberPort.AffinePointFiber",
+    "PrimeResidueFiberPort.affineFiber_card_add_one",
+    "PrimeResidueFiberPort.GeometricFiberPort.pointCount_eq",
+    "PrimeResidueFiberPort.withExponent",
+    "PrimeResidueFiberPort.residueKey_not_injective",
+    "PrimeResidueFiberPort.ChannelPort.identity",
+    "PrimeResidueFiberPort.ChannelPort.comp",
+    "PrimeResidueFiberPort.ChannelPort.localDirectCoeff_eq",
+    "PrimeResidueFiberPort.system",
+    "PrimeResidueFiberPort.sourceBound",
+    "PrimeResidueFiberPort.BoundedSample.route",
+    "PrimeResidueFiberPort.BoundedSample.route_sum_trace",
+    "PrimeResidueFiberCounting.prime_eq_of_residueKey_eq",
+    "PrimeResidueFiberCounting.orderedPacket_eq_three_sectors",
+    "PrimeResidueFiberCounting.sameResiduePairs_card_le",
+    "PrimeResidueFiberCounting.sameResiduePairs_route",
+    "PrimeResidueFiberCounting.tracePacket_route",
+    "PrimeResidueFiberCounting.orderedPacket_eq_route_add_defect",
+    "PrimeResidueFiberCounting.finite_good_euler_window",
+    "PrimeResidueFiberCounting.finite_good_euler_window_route"
+  ],
+  "claims": {
+    "source_scope": "Actual integral WeierstrassCurve Z and good-prime finite-field point-count certificates; not all curve families or number-field places",
+    "consumer": "Original finite point counts -> finite Euler polynomial and signed prime-residue ordered packet; qualified observation ports preserve class, address, trace, prime-power direct coefficients",
+    "proofs": "complete elementary paper proofs of affine fiber/card equivalence, finite ordered three-sector partition, exact signed transport defect and source finite Euler window",
+    "nonclaim": "No elliptic L zero count, no Riemann-zeta zero correspondence, no unconditional BSD/RH or signed all-positive-rate estimate",
+    "hostile": "Prime+residue key loses prime-power exponent even for one identical certified source fiber; multiple occurrences must not be collapsed",
+    "rh_target": "The untouched Moebius endpoint kernel and its signed all-rate endpointSum bound at adequately covering scales"
+  },
+  "finite_diagnostic": {
+    "source_traces": [
+      {
+        "prime": 7,
+        "count": 13,
+        "trace": -5
+      },
+      {
+        "prime": 19,
+        "count": 27,
+        "trace": -7
+      }
+    ],
+    "occurrences": [
+      {
+        "p": 7,
+        "residue": 0,
+        "trace": -5
+      },
+      {
+        "p": 7,
+        "residue": 0,
+        "trace": -5
+      },
+      {
+        "p": 7,
+        "residue": 1,
+        "trace": -5
+      },
+      {
+        "p": 19,
+        "residue": 0,
+        "trace": -7
+      }
+    ],
+    "number_of_ordered_offdiagonal_pairs": 12,
+    "sectors": [
+      {
+        "name": "same_prime_residue",
+        "pairs": 2,
+        "sum": 50
+      },
+      {
+        "name": "same_prime_other_residue",
+        "pairs": 4,
+        "sum": 100
+      },
+      {
+        "name": "different_prime",
+        "pairs": 6,
+        "sum": 210
+      }
+    ],
+    "full_signed_sum": 360,
+    "full_squares_check": "(-22)^2-(25+25+25+49)=360",
+    "type": "EXACT_FINITE_INTEGER_DIAGNOSTIC_NOT_LEAN"
+  },
+  "verification": {
+    "math_source_publication": "PENDING",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "source_equality_and_signed_partition": "PAPER_PROOF_COMPLETE",
+    "analytical_equivalence_to_moebius_endpoint": "OPEN",
+    "all_positive_rate_RH_supplier": "OPEN",
+    "global_zero_prime_correspondence": "OPEN",
+    "no_foreign_repo_mutation": true,
+    "no_native_or_scheduler_execution": true
+  },
+  "next_supplier": "An exact coverage-preserving map from each original Moebius endpoint integer occurrence into genuine curve-prime-residue channels, with a proved signed kernel identity or bounded signed defect strong enough to satisfy the existing all-positive-rate good-scale endpoint criterion. Include all omitted integer sectors, repeated primes, diagonal and power terms; do not assume RH as an input.",
+  "issue_refs": [
+    1049,
+    1550,
+    1551,
+    230,
+    227,
+    1530,
+    1548
+  ]
+}
