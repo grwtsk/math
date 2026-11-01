@@ -1,0 +1,89 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Liouville weighted-prefix quasi-RH quantitative transfer",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "publication": {
+    "analytical_parent": "e68fbd7d5ed8531432dbee8b28bd77f10456256f",
+    "state": "PENDING_GUARDED_PUBLICATION",
+    "branch": "main",
+    "mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedPrefixQuasiRHTransfer.lean",
+    "blob": "a4001d2e6fcedf46da6723b2b4ac0914c78d6659",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "proved_scope": [
+      "quasiRHSevenEighths_to_weightedThreeQuarter",
+      "weightedPrefixUpperAt_to_causal",
+      "weightedThreeQuarter_to_causalThreeQuarter",
+      "weightedPrefixUpperAt_to_odd",
+      "weightedThreeQuarter_to_oddThreeQuarter"
+    ],
+    "open_named_propositions": [
+      "ZeroFreeToWeightedPrefixRate",
+      "WeightedPrefixRateToZeroFree",
+      "QuasiRHTransferDisposition"
+    ]
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-weighted-prefix-quasi-rh-transfer.md",
+    "blob": "ed68abea5fd4557956ac9df4404e62299219fdd1"
+  },
+  "local_upstream": {
+    "LiouvilleOddPrimeWeightedPrefixAbscissa.lean": "6cd289c5fce4754eab5f310d3d72b36bef30f00e",
+    "LiouvilleWeightedPrefixSquareCriterion.lean": "d62ab5b81eb8cec7b95964c88f875d3c2ef1f244",
+    "LiouvilleWeightedPrefixOddCoreChannels.lean": "983c4687208b736e34cb75e245c67ab030d5fecc",
+    "MoebiusEndpointSparseGapAllRate.lean": "a8216e7e18982dce97bacb8d42d301a022f4f28e"
+  },
+  "external_source": {
+    "repository": "openai/math",
+    "revision": "4eaee87548250b2682affda7d05d947c05554bae",
+    "paper_path": "preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/build/paper.tex",
+    "paper_blob": "268c4e3206d460c617d3d2129742a72b831b3def",
+    "stated_theorem": "Riemann zeta is zero-free in Re(s)>7/8",
+    "external_replay": "NOT_RUN"
+  },
+  "analytic_claims": [
+    "limsup log(1+J(T))/T = 2*Theta-1",
+    "inf{a>0:D(a)<infinity}=Theta-1/2",
+    "the full-frequency Plancherel identity holds for a>Theta-1/2",
+    "fixed finite-prime filters preserve the exact growth abscissa",
+    "limsup J(T)/T >= 1/zeta(1/2)^2",
+    "the external 7/8 zero-free theorem yields J(T)=O_epsilon(exp((3/4+epsilon)T))",
+    "the same fixed limiting exponent transfers to the odd filter and unchanged causal energy"
+  ],
+  "not_claimed": [
+    "WeightedPrefixSquareAllRate",
+    "UniformEnergySupplier",
+    "complete endpoint estimate",
+    "Riemann Hypothesis",
+    "independent verification of the external 7/8 theorem"
+  ],
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "external_theorem_replay": "NOT_RUN",
+    "weighted_prefix_all_rate": "UNPROVED",
+    "uniform_energy": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedPrefixQuasiRHTransfer.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedPrefixQuasiRHTransfer.lean",
+    "check exact expected types and #print axioms for every theorem in the namespace",
+    "audit the full transitive source closure before promoting any conclusion"
+  ]
+}
