@@ -1,0 +1,180 @@
+{
+  "schema": "grwtsk.general-port-fiber-observer-signed-return/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "repository": "grwtsk/math",
+  "base_inspected_head": "09ce7c97ff22db4cafecf5106ee17b12230e9397",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "new_sources": [
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/PortFiberGeneralObserver.lean",
+      "blob": "2d38c34dafec28f3c91444da23ca741c98c35877",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "namespace": "GRWTSK.Topology.PortFiber"
+    },
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/PortFiberSignedObserver.lean",
+      "blob": "637a7015c152b506becf3c060aa21642900f90bd",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "namespace": "GRWTSK.Topology.PortFiber.SignedObserver"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGeneralizedFiberObserver.lean",
+      "blob": "6ca04b2685cd422a363cc0146f8ac65b59e0c870",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "namespace": "GRWTSK.NumberTheory.Moebius.GeneralizedFiberObserver"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/port-fiber-general-observer-signed-source-2026-11-01.md",
+    "blob": "a3241a72c4edfd34649e89279fff8e336956fc8c"
+  },
+  "pinned_originals": [
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean",
+      "blob": "e51c1b52fede0d883b147ffd196c0efe184a87d8",
+      "role": "canonical original dependent ports, identity/comp laws and same-source custody"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberPorts.lean",
+      "blob": "e7f5901f929bf999d15772f1b92cf3460023623d",
+      "role": "concrete arithmetic class-inheriting port"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
+      "blob": "df9ded979964790b92f3053efc3aedeb6e2dfa78",
+      "role": "real original signed Möbius source and elliptic prime bank"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointLeastPrimeTypeII.lean",
+      "blob": "fb77710105395da0394c930ef702b893f2f2f87f",
+      "role": "exact original occurrence index and rough/mixed/Type II partition"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointDenseLongGapSource.lean",
+      "blob": "db8771dd770ad097fa4a38cfe87b8e925bb594c0",
+      "role": "remaining open original RH-strength signed dense source"
+    },
+    {
+      "path": "GRWTSK/DifferentialGeometry/GodelObserverMetricVorticity.lean",
+      "blob": "f5d8a65fd1e4e59e97e139b3fc63829028c3c662",
+      "role": "distinct physical Lorentz observer, not an identified arithmetic port"
+    }
+  ],
+  "mathematical_statements": [
+    "For arbitrary PortFiber P, V, partial source route I→Option(Σ A,P.Fiber A), and arbitrary signed source kernel S:I×I→ℝ, every source pair equals modeled matched term, signed matched defect, rough, forward mixed and reverse mixed terms.",
+    "Full finite ordered packet identity over ORIGINAL indices, excluding diagonal only, holds for all values and kernels with no symmetry or positivity premise.",
+    "For fixed route, matched modeled packet plus defect is invariant under arbitrary change of observer/kernel, even changing V.",
+    "For a true P.Port-based Relay and arbitrary observer change, missing/covered status and all original rough/mixed signed kernels are invariant; modeled plus defect is invariant.",
+    "Readout preservation and base-object class inheritance require explicit proofs; a legal Bool-valued collapsing port violates readout preservation.",
+    "Specialized actual elliptic trace observer recovers the original published trace kernel pointwise and returns to the unchanged GRWTSK.RiemannHypothesis.CCC.pickupCross T."
+  ],
+  "declarations": [
+    "TotalFiber",
+    "Readout",
+    "Readout.total",
+    "Relay",
+    "Relay.identity",
+    "Relay.comp",
+    "Relay.mapTotal",
+    "Relay.mapTotal_identity",
+    "Relay.mapTotal_comp",
+    "PartialSample",
+    "PartialSample.empty",
+    "PartialSample.relay",
+    "PartialSample.relay_none_iff",
+    "PartialSample.relay_preserves_coverage",
+    "Inherits",
+    "ClassPreserving",
+    "inherited_of_classPreserving",
+    "Readout.Preserves",
+    "Readout.preserves_identity",
+    "Readout.preserves_comp",
+    "PartialSample.read",
+    "PartialSample.read_relay_of_preserves",
+    "SourceBoundReadout",
+    "SourceBoundReadout.MatchesPort",
+    "BooleanFiberSystem",
+    "boolean_collapse_not_preserving",
+    "SignedObserver.pointwise_complete",
+    "SignedObserver.orderedPacket",
+    "SignedObserver.orderedPacket_complete",
+    "SignedObserver.observer_change_preserves_matched_ledger",
+    "SignedObserver.observer_change_preserves_matched_packet",
+    "SignedObserver.relay_change_preserves_matched_ledger",
+    "SignedObserver.relay_change_preserves_matched_packet",
+    "SignedObserver.empty_observer_preserves_source",
+    "GeneralizedFiberObserver.ellipticTraceReadout",
+    "GeneralizedFiberObserver.originalIntegerSample",
+    "GeneralizedFiberObserver.generalized_kernel_eq_original",
+    "GeneralizedFiberObserver.source_packet_eq_pickupCross",
+    "GeneralizedFiberObserver.pickupCross_eq_general_observer_ledger",
+    "GeneralizedFiberObserver.elliptic_trace_readout_preserved"
+  ],
+  "hostile_checks": [
+    {
+      "test": "legal_bool_collapse",
+      "source": "constant false relay on Bool fiber",
+      "result": "readout true becomes false: invariance false without explicit proof",
+      "status": "COMPLETE_MATHEMATICAL_ARGUMENT_LEAN_CANDIDATE"
+    },
+    {
+      "test": "asymmetric_signed_four_occurrence",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "available_readouts": {
+        "0": 1,
+        "2": -2
+      },
+      "source": "S(i,j)=i-2j",
+      "kernel": "K(a,b)=2a-3b",
+      "original": -18,
+      "sectors": {
+        "model": 1,
+        "matched_defect": -3,
+        "rough": -4,
+        "forward_mixed": -12,
+        "reverse_mixed": 0
+      },
+      "status": "EXACT_INTEGER_FINITE_DIAGNOSTIC"
+    },
+    {
+      "test": "empty_observation",
+      "observation": "all none",
+      "result": "rough packet equals full original source; all others zero",
+      "status": "COMPLETE_MATHEMATICAL_ARGUMENT_LEAN_CANDIDATE"
+    }
+  ],
+  "trust_facets": {
+    "pure_mathematical_case_analysis": "COMPLETE",
+    "source_proof_candidate": "WRITTEN",
+    "source_publication": "PENDING",
+    "lean_parse": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "source_identity": "DECLARED_STRING_NOT_CRYPTOGRAPHIC_RECEIPT",
+    "analytic_RH_dense_long_gap": "OPEN",
+    "elliptic_BSD": "OPEN",
+    "geometric_Lorentz_observer_to_elliptic_transport": "NOT_CONSTRUCTED",
+    "zero_prime_global_correspondence": "NOT_CONSTRUCTED",
+    "foreign_repo_mutation": "NONE",
+    "native_verifier_dispatch": "NOT_RUN"
+  },
+  "next_exact_supplier": "Construct a genuine new signed arithmetic observer with source-preserving readout/port compatibility and prove a quantitative noncircular bound for the original dense long-gap Möbius packet. Universal observer accounting alone cannot supply RH.",
+  "related_issues": [
+    1556,
+    1555,
+    1553,
+    1552,
+    254
+  ]
+}
