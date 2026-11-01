@@ -49,8 +49,7 @@ theorem strict_two_unit_of_scaled_deficit
       q * total = (q - loss) * total + loss * total := by
     calc
       q * total = ((q - loss) + loss) * total := by
-        congr 1
-        exact (Nat.sub_add_cancel hloss).symm
+        rw [Nat.sub_add_cancel hloss]
       _ = (q - loss) * total + loss * total := by
         exact Nat.add_mul (q - loss) loss total
   have hupper : q * total ≤ q * credit + loss * total := by
@@ -192,7 +191,7 @@ theorem density_one_pair_model
   have habsolute : 2 * q ≤ 1 * (2 * (k + 1)) := by
     simpa [Nat.mul_comm, Nat.mul_left_comm, Nat.mul_assoc] using
       Nat.mul_le_mul_left 2 hqk
-  exact ⟨hratio, htotal, not_lt_of_ge habsolute, by rw [htotal]⟩
+  exact ⟨hratio, htotal, not_lt_of_ge habsolute, by omega⟩
 
 /-- In particular, any fixed or merely asymptotic relative-density theorem
 can leave one reflected simple pair forever unless it supplies the same-window
@@ -215,6 +214,6 @@ theorem relative_density_alone_not_strict
       calc
         2 * q = 2 * ((q - 1) + 1) := by rw [hqsplit]
         _ = 2 * (q - 1) + 2 := by ring
-    exact (not_lt_of_ge (Nat.le_of_eq heq)) hlt
+    exact (not_lt_of_ge (Nat.le_of_eq heq.symm)) hlt
 
 end GRWTSK.RiemannHypothesis.CofinalTwoUnitEffectiveRateBridge
