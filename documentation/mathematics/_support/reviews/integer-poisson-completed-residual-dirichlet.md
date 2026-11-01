@@ -202,7 +202,13 @@ and `|n^{-s_k}|=n^{-9/8}`, one has
 \sum_{n>N}(\log n)n^{-9/8}.
 \]
 
-The function `(log x)x^{-9/8}` is decreasing for `x>=1`, so
+For `x>=3`, the derivative is
+
+```text
+x^(-17/8) * (1 - (9/8) log x) < 0,
+```
+
+so the function is decreasing on the entire range used below. Hence, for `N>=3`,
 
 \[
 \sum_{n>N}(\log n)n^{-9/8}
@@ -219,7 +225,7 @@ Set
 \tau_N=N^{-1/8}(8\log N+64).
 \]
 
-The bound is uniform in `k`.
+The bound is uniform in `k`. The source proposition is intentionally stated only for `N>=3`; the scheduled cutoff below is at least `2^128`, so no small-cutoff case is consumed.
 
 Choose
 

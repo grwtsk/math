@@ -12,22 +12,22 @@ import Mathlib
 # Completed residual and finite centered Dirichlet truncation
 
 The finite seven-eighths frame controls the uncredited positive-height zero
-sample. This module records the correct completed-log-derivative comparison:
+sample.  This module records the correct completed-log-derivative comparison:
 a certified positive-height set is subtracted, while every other nontrivial
 zero, including the first outer collar and the remote tail, remains in one
-nonnegative completed residual. The outer collar is therefore not discarded
+nonnegative completed residual.  The outer collar is therefore not discarded
 as an error.
 
-The prime side is written at `s_k = 9/8 + i k`. Mathlib already identifies
-the von Mangoldt L-series with `-ζ'/ζ` on `Re s > 1`. The finite prime
+The prime side is written at `s_k = 9/8 + i k`.  Mathlib already identifies
+the von Mangoldt L-series with `-ζ'/ζ` on `Re s > 1`.  The finite prime
 polynomial can equivalently be written as a single signed transform of the
 unit-window centered coefficients `(1 - Λ(n))/2`; all cross-window terms are
 retained until the final square.
 
-The finite energy transfer below is proved. The Hadamard-product domination,
+The finite energy transfer below is proved.  The Hadamard-product domination,
 the explicit von Mangoldt tail estimate, and its scheduled numerical bound are
-kept as named propositions. The mathematical review gives their complete
-ordinary derivations. No unconditional cofinal arithmetic estimate, RH
+kept as named propositions.  The mathematical review gives their complete
+ordinary derivations.  No unconditional cofinal arithmetic estimate, RH
 conclusion, compilation, or kernel audit is supplied.
 -/
 
@@ -83,7 +83,7 @@ theorem unknownPositiveHead_subset_heightHead_sdiff
   exact Finset.mem_sdiff.mpr
     ⟨positiveHeightHead_subset_heightHead (Z : ℝ) hz'.1, hz'.2⟩
 
-/-- Finite-head domination. No outer-zero estimate is involved: this theorem
+/-- Finite-head domination.  No outer-zero estimate is involved: this theorem
 uses only set inclusion and positivity of the Poisson kernel. -/
 theorem sevenEighthsSample_le_finiteHeightResidual
     (hstrip : SevenEighthsSymmetricStrip)
@@ -100,7 +100,7 @@ theorem sevenEighthsSample_le_finiteHeightResidual
     (fun z _ _ => mul_nonneg (Nat.cast_nonneg (multiplicity z))
       (poissonKernelAtSevenEighths_nonneg hstrip z k))
 
-/-- Integer sample point on the adapted line `Re s = 9/8`. -/
+/-- Integer frequency sample point on the adapted line `Re s = 9/8`. -/
 def sevenEighthsSamplePoint (k : ℕ) : ℂ :=
   (9 / 8 : ℂ) + (k : ℂ) * Complex.I
 
@@ -121,7 +121,7 @@ def completedPoissonResidualSample
 
 /-- Classical Hadamard-product content required by the source comparison.
 It states both positivity of the completed residual and domination of the
-finite uncredited positive-height sample. It is a named proposition, not a hidden
+finite uncredited positive-height sample.  It is a named proposition, not a hidden
 assumption or an unrestricted remainder. -/
 def CompletedPoissonDomination
     (Z : ℕ) (known : Finset ZeroPoint) : Prop :=
@@ -180,7 +180,7 @@ def UnitWindowCenteredSource
       divisorLogWindow (n - 1) 1 (fun d => u n d - 2 * v n d)
 
 /-- Elementary fact that the literal unit window contains only its terminal
-integer. It is separated as a source interface until the pinned `Finset.Ioc`
+integer.  It is separated as a source interface until the pinned `Finset.Ioc`
 normalization is qualified. -/
 def UnitPrimeWindowSingletonIdentity (N : ℕ) : Prop :=
   ∀ n ∈ Finset.Icc 1 N,
@@ -246,11 +246,12 @@ def nineEighthsVonMangoldtTail (N : ℕ) : ℝ :=
 def completedResidualTruncation (Z : ℕ) : ℕ :=
   (Z + 1) ^ 128
 
-/-- Source-exact infinite-series tail statement. Mathlib supplies
+/-- Source-exact infinite-series tail statement.  Mathlib supplies
 `Λ(n) <= log n` and the absolutely convergent von Mangoldt L-series; the
-review derives the displayed integral bound. -/
+review derives the displayed integral bound for `N ≥ 3`, which is the only
+range consumed by the scheduled cutoff. -/
 def NineEighthsCompletedResidualTailBound : Prop :=
-  ∀ (Z : ℕ) (known : Finset ZeroPoint) (N : ℕ), 1 ≤ N →
+  ∀ (Z : ℕ) (known : Finset ZeroPoint) (N : ℕ), 3 ≤ N →
     ∀ k ∈ Finset.range (Z + 1),
       (completedPoissonResidualSample known k -
         finiteCompletedResidualSample known N k) ^ 2 ≤
@@ -297,7 +298,7 @@ theorem sevenEighthsEnergy_le_completedResidualEnergy
   have h := hdom k hk
   nlinarith [sevenEighthsPoissonSample_nonneg hstrip Z known k]
 
-/-- Clean finite completion criterion. The constants are deliberately
+/-- Clean finite completion criterion.  The constants are deliberately
 rational: approximate energy below `3/5` plus total tail energy below `1/100`
 leaves the completed residual below the seven-eighths one-zero threshold
 `32/25`. -/
@@ -325,7 +326,7 @@ theorem unknownDeficit_le_one_of_completedResidual_truncation
     exact_mod_cast hlt
   omega
 
-/-- Source-visible finite criterion using the fixed truncation schedule. The
+/-- Source-visible finite criterion using the fixed truncation schedule.  The
 Hadamard domination and tail bounds remain named inputs, while the final
 finite arithmetic estimate is the complete signed residual energy, not a sum
 of packetwise absolute values. -/
