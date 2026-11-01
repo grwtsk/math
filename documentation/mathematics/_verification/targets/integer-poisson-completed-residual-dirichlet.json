@@ -1,0 +1,103 @@
+{
+  "schema": "grwtsk.math.source-verification.v1",
+  "local_attribution": "grwtsk contributors",
+  "date": "2026-11-01",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "publication": {
+    "expected_parent": "3e45fa2e576c97c1717fad1810239f1c43405189",
+    "source_commit": "46a390133344507a527775e4c5a2fdd92665bffd"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame/CompletedResidualDirichlet.lean",
+    "blob": "a14a5070105defba6e3b01a8546f4cd4c0ea7148"
+  },
+  "umbrella": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame.lean",
+    "blob": "100577e510fddbcdf3a814004e58182341e8c0e6"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/integer-poisson-completed-residual-dirichlet.md",
+    "blob": "cbdfbdd6520cab41112bc654f1cc998f717d650a"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/integer-poisson-completed-residual-dirichlet-references.md",
+    "blob": "5c9745febdbf4fe81b9822bead12f964f24e7bef"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame/SevenEighthsStrip.lean",
+      "blob": "f3cbc82122fd38a387d77cdd7042345832a3ce21"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PadicMobiusCofinalTwoUnitBridge.lean",
+      "blob": "d8a2be1df5e98a57e713e4c8743af88cccbf45c1"
+    },
+    {
+      "path": "Mathlib/NumberTheory/ArithmeticFunction/VonMangoldt.lean",
+      "blob": "f0587555fbb762fc7283a1c22c7f1be07350c589"
+    },
+    {
+      "path": "Mathlib/NumberTheory/LSeries/Dirichlet.lean",
+      "blob": "ce401a3f67dd76b9e251cb7f23feb003b0cb7cc5"
+    },
+    {
+      "path": "Mathlib/NumberTheory/LSeries/RiemannZetaLogDeriv.lean",
+      "blob": "29839dbb3231ff1d460380c2316e4835ae42374b"
+    }
+  ],
+  "principal_declarations": [
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.finiteHeightPoissonResidualSample_eq_sdiff",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.sevenEighthsSample_le_finiteHeightResidual",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.CompletedPoissonDomination",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.neg_finiteVonMangoldt_eq_centered",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.centered_unit_packet_eq_coefficient",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.finiteCenteredPacketPolynomial_eq_padic",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.sampleEnergy_le_two_approx_add_two_uniformError",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.sevenEighthsEnergy_le_completedResidualEnergy",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.unknownDeficit_le_one_of_completedResidual_truncation",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.completedResidualFiniteCertificateAt_to_oneUnit",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.riemannHypothesis_of_cofinalCompletedResidualFinite"
+  ],
+  "mathematical_result": {
+    "completed_residual": "Subtract only certified positive-height zeros from Re(xi'/xi)(9/8+ik); every unknown head zero, negative-height conjugate, first outer collar, and remote zero remains nonnegative.",
+    "finite_head_domination": "The uncredited positive-height sample is bounded by the completed residual sample without an outer-collar truncation error.",
+    "finite_prime_reassembly": "-sum_{n<=N} Lambda(n)n^{-s}=2*sum_{n<=N}((1-Lambda(n))/2)n^{-s}-sum_{n<=N}n^{-s}, with the first term identified conditionally with one complete signed transform of centered p-adic unit-window packets.",
+    "tail_envelope": "tau_N=N^(-1/8)*(8*log N+64)",
+    "truncation_schedule": "N_Z=(Z+1)^128 and (Z+1)*tau_NZ^2<1/100 for Z>=1",
+    "finite_one_zero_criterion": "CompletedPoissonDomination plus the explicit tail and finiteCompletedResidualEnergy<3/5 imply unknownMultiplicityDeficit<=1."
+  },
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN"
+  },
+  "mathematical_status": {
+    "finite_set_and_energy_transfer": "SOURCE_PROOF_CANDIDATE",
+    "completed_hadamard_domination": "NOT_FORMALIZED",
+    "von_mangoldt_tail_integral": "NOT_FORMALIZED",
+    "scheduled_tail_budget": "NOT_FORMALIZED",
+    "unit_window_singleton_identity": "NOT_FORMALIZED",
+    "finite_completed_residual_energy_below_three_fifths": "UNPROVED",
+    "cofinal_numeric_witness": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "rejection_conditions": [
+    "discarding the first outer zero collar or remote zero tail instead of retaining it in the completed residual",
+    "replacing the canonical nontrivial-zero subtype or analytic multiplicity",
+    "squaring centered unit-window packets separately and dropping cross-window terms",
+    "replacing the actual von Mangoldt polynomial by primes-only or random-sign coefficients",
+    "hiding the completed Hadamard identity, tail estimate, or finite arithmetic energy bound inside an unrestricted certificate field",
+    "promoting source publication or finite algebra to Lean or kernel acceptance",
+    "claiming the cofinal numerical witness or RH before the remaining arithmetic estimate and formal verification are completed"
+  ]
+}
