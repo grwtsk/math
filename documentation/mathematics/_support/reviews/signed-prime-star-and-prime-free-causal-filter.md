@@ -209,3 +209,75 @@ The concrete dyadic target remains, for every δ>0, \(E(j\log2)\le C_\delta e^{\
 Closest local predecessors: #1419 already describes finite-prime source extraction and prime-block hinge difficulties, but its positive-kernel argument is insufficient beyond small selected prime sets; this note instead uses **two-sided L² norm comparison even when individual block kernels change sign**. #1527/#1528 retain all four real signed residue sectors, #1529/#1530 supply cyclic and Fejér identities but not a diffusive bound, #1531 records a signed double-Abel source, #1406 the endpoint correction, and #334 the RH proof-path ledger. Prime number theorem, Euler products, finite sieve extraction and Hilbert-space triangle inequalities are classical; global theorem novelty is NOT claimed.
 
 Finite independent diagnostic: source file /mnt/data/liouville_residue_remainder_reference.py, SHA-256 59f04f53592ebe8f44c227102cb2848b18be7f7732b1c4a437a92621a66999db, reported 394 finite formula/energy comparison checks at N=8,16,32,64,128,256,512 and prime sets empty, {2}, {3}, {2,3}, {2,3,5}. These are floating-point FINITE_DIAGNOSTICS, not rigorous certified error enclosures, asymptotic proofs or Lean evidence. No Lean, Lake, clean-kernel replay, transitive axiom audit, remote verification worker, scheduler, root-import migration or deployment was run. Only this source-bound analytic note and (if linked from an issue) passive research tracking are within scope.
+
+
+## 7. A genuine unconditional root-row signed cancellation bound
+
+The preceding lower bound for the **entire** complement R_star is qualitative compensation forced by nonnegative energy. A stronger source-exact result can be proved on a **proper** but arithmetically meaningful part: all ordered pairs touching the source root 1.
+
+Let
+\[
+X_{\mathrm{root}}(T)
+=2\sum_{2\le n\le e^T}\mu(n)K_T(1,n)
+=2\int_0^T r_1(u)\,[F_\mu(u)-r_1(u)]\,du.
+\tag{15}
+\]
+This retains every composite sign and zero symbol alongside the negative prime-star part. Use the exact endpoint-zero causal derivative \(r_n'(u)=e^{-u/2}\) after birth and the unchanged closed Möbius prefix \(M(x)=\sum_{n\le x}\mu(n)\). Summing before integrating gives an unconditional Abel identity
+\[
+F_\mu(u)=\int_0^u e^{-v/2}M(e^v)\,dv.
+\tag{16}
+\]
+
+Classical de la Vallée-Poussin / Vinogradov–Korobov zero-free region arguments give, for suitable positive constants c,C,
+\[
+|M(x)|\le Cx e^{-c\sqrt{\log x}}\qquad(x\ge2).
+\tag{17}
+\]
+The stronger standard bound has the saving \(\exp[-c(\log x)^{3/5}(\log\log x)^{-1/5}]\); its use is **an existing analytic input**, not a newly derived theorem. For an accessible modern source see Ethan S. Lee and Nicol Leong, *New explicit bounds for Mertens function and the reciprocal of the Riemann zeta-function*, arXiv:2208.06141 (2022, later revisions through 2026), https://arxiv.org/abs/2208.06141. Polynomial/logarithmic prefactors appearing in explicit formulations can be absorbed by slightly decreasing c.
+
+Substituting (17) in (16), and splitting the v-integral at u/2, proves for some c_1>0
+\[
+|F_\mu(u)|\ll e^{u/2-c_1\sqrt u}.
+\tag{18}
+\]
+Indeed the first half is \(O(u e^{u/4})\), and in the second half \(e^{-c\sqrt v}\le e^{-c\sqrt{u/2}}\). Since \(0\le r_1(u)\le2\), (15) and another split at T/2 yield
+\[
+\boxed{|X_{\mathrm{root}}(T)|\ll e^{T/2-c_2\sqrt T}}
+\tag{19}
+\]
+for some c_2>0 and all sufficiently large T. The harmless diagonal correction is \(O(T)\). No RH hypothesis is used.
+
+Let \(X_{\mathrm{root,comp}}\) be the complete signed ordered root-to-composite packet (all n≥4 composite, including squareful zero coefficients), so that
+\[
+X_{\mathrm{root}}=X_\star+X_{\mathrm{root,comp}}.
+\]
+Equations (5) and (19) give the **genuine asymptotic compensation**
+\[
+\boxed{
+X_{\mathrm{root,comp}}(T)+X_\star(T)
+=O(e^{T/2-c_2\sqrt T}),\qquad
+X_{\mathrm{root,comp}}(T)\sim
++16\frac{e^{T/2}}T.
+}
+\tag{20}
+\]
+This is nontrivial **signed arithmetic cancellation** between negative prime-root pairs and the full positive/negative composite-root packet at a strength unavailable from local positivity alone. The first equality uses the exact X_star; replacing it with only its leading equivalent would invalidate the exponentially-saving error estimate.
+
+The same argument provides a uniform row estimate at every existing source index m (zero if μ(m)=0):
+\[
+X_m(T):=2\mu(m)\sum_{\substack{n\le e^T\\n\ne m}}
+\mu(n)K_T(m,n)
+=2\mu(m)\int_0^T r_m(u)[F_\mu(u)-\mu(m)r_m(u)]\,du,
+\]
+\[
+\boxed{
+|X_m(T)|\ll
+\frac{e^{T/2-c_2\sqrt T}}{\sqrt m}
++\frac{T}{m},
+\quad1\le m\le e^T.
+}
+\tag{21}
+\]
+The coefficient constants in (21) are independent of m and T. But summing the absolute row bounds over m≤e^T costs \(\sum m^{-1/2}=O(e^{T/2})\), resulting in a rate-one upper estimate, **not** the every-positive-rate target. Any proof closing P must exploit signed cancellation **between growing rows**, beyond the already proved within-row prime/composite compensation. A fixed finite set of roots cannot exhaust the all-height signed packet.
+
+These are derived consequences of an established zero-free-region theorem and exact source identities, not newly claimed unconditional RH-strength analytic input. Finite diagnostics previously cited in this note do not test the asymptotic statement (19); its justification is the analytic argument (16)-(19).
