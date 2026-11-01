@@ -5,7 +5,9 @@
   "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
   "publication": {
     "analytical_parent": "e68fbd7d5ed8531432dbee8b28bd77f10456256f",
-    "state": "PENDING_GUARDED_PUBLICATION",
+    "published_commit": "8198037abefb9abe8d5cfb646e620dba0a2bbf71",
+    "published_tree": "aba9b0a4a8072e49f82ae5d91e588576fddc03f7",
+    "state": "PUBLISHED_SOURCE_CANDIDATE",
     "branch": "main",
     "mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
     "root_import": "UNCHANGED",
@@ -32,6 +34,10 @@
   "review": {
     "path": "documentation/mathematics/_support/reviews/liouville-weighted-prefix-quasi-rh-transfer.md",
     "blob": "ed68abea5fd4557956ac9df4404e62299219fdd1"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-weighted-prefix-quasi-rh-transfer-references.md",
+    "blob": "7cf34434434799767afe6c15531ad47b20de4445"
   },
   "local_upstream": {
     "LiouvilleOddPrimeWeightedPrefixAbscissa.lean": "6cd289c5fce4754eab5f310d3d72b36bef30f00e",
@@ -66,6 +72,7 @@
   "verification": {
     "source_inspection": "DONE",
     "mathematical_derivation": "WRITTEN",
+    "repository_publication": "PUBLISHED",
     "compilation": "NOT_RUN",
     "expected_types": "NOT_RUN",
     "fresh_kernel": "NOT_RUN",
