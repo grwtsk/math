@@ -6,12 +6,14 @@
   "branch": "main",
   "classification": "SOURCE_PROOF_CANDIDATE",
   "publication": {
-    "expected_parent": "3e45fa2e576c97c1717fad1810239f1c43405189",
-    "source_commit": "46a390133344507a527775e4c5a2fdd92665bffd"
+    "initial_source_commit": "46a390133344507a527775e4c5a2fdd92665bffd",
+    "expected_parent": "126756f9f9a74c776c732f2134d27318f7a543f1",
+    "source_commit": "e13936772059a0ee419140d07e8c0a44e89f04cc",
+    "repair": "The elementary integral-test tail premise is restricted to N>=3; the consumed schedule satisfies N>=(2^128)."
   },
   "source": {
     "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame/CompletedResidualDirichlet.lean",
-    "blob": "a14a5070105defba6e3b01a8546f4cd4c0ea7148"
+    "blob": "0c79867cfa219a56b125a0c3b459f298ec78c09c"
   },
   "umbrella": {
     "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame.lean",
@@ -19,7 +21,7 @@
   },
   "review": {
     "path": "documentation/mathematics/_support/reviews/integer-poisson-completed-residual-dirichlet.md",
-    "blob": "cbdfbdd6520cab41112bc654f1cc998f717d650a"
+    "blob": "28696f6400d78e199356de7df086975ebb790388"
   },
   "ledger": {
     "path": "documentation/mathematics/_support/reference/literature/reading-background/integer-poisson-completed-residual-dirichlet-references.md",
@@ -58,6 +60,8 @@
     "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.neg_finiteVonMangoldt_eq_centered",
     "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.centered_unit_packet_eq_coefficient",
     "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.finiteCenteredPacketPolynomial_eq_padic",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.NineEighthsCompletedResidualTailBound",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.ScheduledCompletedResidualTailBudget",
     "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.sampleEnergy_le_two_approx_add_two_uniformError",
     "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.sevenEighthsEnergy_le_completedResidualEnergy",
     "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.unknownDeficit_le_one_of_completedResidual_truncation",
@@ -68,8 +72,8 @@
     "completed_residual": "Subtract only certified positive-height zeros from Re(xi'/xi)(9/8+ik); every unknown head zero, negative-height conjugate, first outer collar, and remote zero remains nonnegative.",
     "finite_head_domination": "The uncredited positive-height sample is bounded by the completed residual sample without an outer-collar truncation error.",
     "finite_prime_reassembly": "-sum_{n<=N} Lambda(n)n^{-s}=2*sum_{n<=N}((1-Lambda(n))/2)n^{-s}-sum_{n<=N}n^{-s}, with the first term identified conditionally with one complete signed transform of centered p-adic unit-window packets.",
-    "tail_envelope": "tau_N=N^(-1/8)*(8*log N+64)",
-    "truncation_schedule": "N_Z=(Z+1)^128 and (Z+1)*tau_NZ^2<1/100 for Z>=1",
+    "tail_envelope": "For N>=3, tau_N=N^(-1/8)*(8*log N+64).",
+    "truncation_schedule": "N_Z=(Z+1)^128 and (Z+1)*tau_NZ^2<1/100 for Z>=1.",
     "finite_one_zero_criterion": "CompletedPoissonDomination plus the explicit tail and finiteCompletedResidualEnergy<3/5 imply unknownMultiplicityDeficit<=1."
   },
   "verification": {
@@ -93,6 +97,7 @@
   },
   "rejection_conditions": [
     "discarding the first outer zero collar or remote zero tail instead of retaining it in the completed residual",
+    "using the integral-test tail below N=3 without a separate small-cutoff proof",
     "replacing the canonical nontrivial-zero subtype or analytic multiplicity",
     "squaring centered unit-window packets separately and dropping cross-window terms",
     "replacing the actual von Mangoldt polynomial by primes-only or random-sign coefficients",
