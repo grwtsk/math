@@ -10,7 +10,7 @@
   },
   "review": {
     "path": "documentation/mathematics/_support/reviews/elliptic-powerseries-native-local-factor-2026-11-01.md",
-    "git_blob": "46a1eeb289c0f8487a64ece338fc6284bf13ba7c"
+    "git_blob": "10f73853cbaebc921dcbf707ea9617fb6351b837"
   },
   "environment": {
     "lean": "leanprover/lean4:v4.34.1",
@@ -54,7 +54,8 @@
   ],
   "actual_mathematical_theorems": [
     "Over integers, complete exact formal inverse of 1-aX+qX^2 has the original c_n recurrence at every exponent.",
-    "For any actual DVR R and elliptic Weierstrass K-curve W with GOOD REDUCTION OF W.minimal R, Mathlib localPowerSeries equals full native directSeries using the true minimal-reduction point count."
+    "For any actual DVR R and elliptic Weierstrass K-curve W with GOOD REDUCTION OF W.minimal R, Mathlib localPowerSeries equals full native directSeries using the true minimal-reduction point count.",
+    "For the original record curve at p=7: discriminant a 7-adic unit implies original integral model is good and minimal; classical DVR minimal-model uniqueness induces F7 curve isomorphism with Mathlib chosen minimal model, preserving exact N7=13 and local factor 1+5T+7T²."
   ],
   "seven_adic_numeric_open_premises": [
     "Construct/verify good reduction for recordSevenPadic.minimal(PadicInt 7) from original integer discriminant and selected p-adic model.",
@@ -67,8 +68,9 @@
     "expected_types": "NOT_RUN",
     "fresh_kernel": "NOT_RUN",
     "transitive_axiom_audit": "NOT_RUN",
-    "seven_adic_numeric_port": "OPEN",
-    "elliptic_BSD": "OPEN"
+    "seven_adic_numeric_port": "LEAN_SOURCE_PREMISES_OPEN",
+    "elliptic_BSD": "OPEN",
+    "seven_adic_classical_minimal_model_identification": "COMPLETE_PAPER_PROOF_USING_CLASSICAL_MINIMAL_MODEL_UNIQUENESS"
   },
   "blocked_scope": [
     "No analytic elliptic L continuation or BSD theorem",

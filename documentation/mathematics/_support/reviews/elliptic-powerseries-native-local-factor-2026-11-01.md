@@ -1,7 +1,7 @@
 # Complete local elliptic power-series inversion and native good-reduction comparison
 
 Mathematical attribution: grwtsk contributors. Date: 2026-11-01.
-Status: complete paper proof at genuine good-reduction scope; Lean SOURCE_PROOF_CANDIDATE (compilation/kernel/axiom NOT_RUN); numeric 7-adic count identification still OPEN.
+Status: complete paper proof at genuine good-reduction scope; Lean SOURCE_PROOF_CANDIDATE (compilation/kernel/axiom NOT_RUN); numeric 7-adic identification proved using classical minimal-model uniqueness, but its Lean transport remains OPEN.
 
 ## Abstract
 
@@ -28,6 +28,18 @@ Pinned Mathlib source Mathlib/AlgebraicGeometry/EllipticCurve/LFunction.lean (Gi
 The new theorem localPolynomial_good unfolds this native definition, conditional on precisely the native good-reduction predicate (W.minimal R).HasGoodReduction R. The theorem localPowerSeries_good combines this with the all-degree inverse theorem; localPowerSeries_coeff_good identifies every coefficient with directCoeff q N. The ring and field are fully typed, including CommRing, IsDomain, IsDiscreteValuationRing, Field, Algebra and IsFractionRing. No arbitrary surrogate factor, conjectural Euler asymptotic or nil remainder is assumed. Bad local branches are separate and do not satisfy this quadratic identity.
 
 For the concrete seven-adic place, the actual types are Mathlib PadicInt 7 and Padic 7, and the chosen curve has the original coefficients (a1,a2,a3,a4,a6)=(1,0,0,-A,B). The source theorem recordSevenPadic_localPowerSeries supplies the true native local factor under the visible hypothesis that the chosen minimal model has good reduction. To assert it equals directSeries 7 13, recordSevenPadic_localPowerSeries_of_count additionally requires agreement between the cardinality of the actual minimal reduction and the original integer-model mod-7 enumeration (Record4239.reducedPointCount 7 =13). The new sevenPadic_residue_card proof candidate constructs q=7 from the actual PadicInt.residueField ring equivalence with ZMod 7; its Lean elaboration is NOT_RUN. Good reduction and the minimal-model point-count transport are NOT proven in this increment. It would be incorrect to treat the previously proved nonzero integral discriminant and raw source point count as an automatically supplied *formal* minimal-model isomorphism.
+
+## 2.5 Complete classical arithmetic proof at the original record p=7 place
+
+The original integer model W0: y²+xy=x³-Ax+B has integral coefficients in ℤ_7, and its exact integer discriminant Δ satisfies Δ mod 7 ≠ 0 by the source theorem Record4239.goodAt7 (source blob 9b489d813ddf451a7c8d164ca808fb569b29b5b8). Therefore Δ is a *unit* of the DVR ℤ_7. Its reduction is a nonsingular elliptic curve over F7; the original integral equation is a good integral Weierstrass model. Since an integral Weierstrass model has discriminant valuation ≥0, and W0 has valuation exactly 0, its model is **minimal** at 7.
+
+Mathlib chooses an unspecified minimal model Wmin via W.minimal (PadicInt 7). Both W0 and Wmin are minimal integral Weierstrass equations of the same elliptic curve over ℚ_7. By the classical uniqueness theorem for minimal Weierstrass equations over a DVR (Silverman, Arithmetic of Elliptic Curves, Chapter VII, Section 1), the admissible change between these two integral minimal models has unit scaling u and coefficients integral in ℤ_7, and its inverse is also integral. Reduction modulo the maximal ideal produces an isomorphism of smooth elliptic F7-curves that preserves the distinguished point at infinity. It therefore induces a bijection between the complete affine-or-infinity point sets. The original source's exact count Record4239.pointCount7 = 13 thus implies that the actual chosen minimal reduction has 13 F7-points. Independently, Mathlib PadicInt.residueField is ring-equivalent to ZMod 7, so its cardinality is 7. Hence the **actual** local polynomial is
+
+  W.localPolynomial (PadicInt 7) = 1 + 5*T + 7*T²,
+
+and the actual local Euler power series is its inverse with integer coefficients 1,-5,18,-55,... from the unchanged recurrence. This is a complete mathematical deduction using the classical DVR minimal-model uniqueness theorem and the source's exact finite certificates; it does not assert that the requisite *Lean* model-transport lemma has been supplied.
+
+The exact missing Lean bridge is not a new numerical hypothesis: derive the good-reduction and point-count equalities in the theorem recordSevenPadic_localPowerSeries_of_count from the concrete original model, the pinned discriminant/count proofs, and a verified Mathlib (or fully formalized) integral variable-change/smooth-fiber equivalence for the chosen minimal model. Without that bridge, the seven-adic theorem remains a **conditional Lean source theorem** even though its numerical specialization has a complete classical mathematical proof.
 
 ## 3. Source comparison, hostile checks, and consumer
 
