@@ -1,0 +1,135 @@
+{
+  "schema": "grwtsk.math.source-verification.v1",
+  "local_attribution": "grwtsk contributors",
+  "date": "2026-11-01",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "publication": {
+    "expected_parent": "fc0eb66fe5ed46848709e9a252845087232dc904",
+    "source_commit": "88570abcbe488dd48e44fb5dec358691c6f68e71",
+    "expected_target_parent": "88570abcbe488dd48e44fb5dec358691c6f68e71"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticResidueFieldVariableChangePort.lean",
+    "blob": "7acb4b5ec7b189036cc76d0c1d53e7b46b084ca8",
+    "sha256": "b1d5e9d581750af95bd12fde32ae47c9bd21bf536af2579515846d0475f48e22"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/elliptic-residue-field-variable-change-2026-11-01.md",
+    "blob": "8a60f88777da71b51712e4a457458123d473c50d"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/elliptic-residue-field-variable-change-references.md",
+    "blob": "88ee1dd2cf1293aca11b660e3b7228832f04fd5e"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueIntegralVariableChangePort.lean",
+      "blob": "cf01a4665bd1e33d2f18ef1c09372418f92b9d42",
+      "role": "all-integral variable-change predecessor and local observation consumers"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPowerSeriesLocalFactor.lean",
+      "blob": "61ba3e2fb70554bb42b194f287d2822f2be92433",
+      "role": "native localPolynomial/localPowerSeries consumer with remaining record-7 point-count seam"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
+      "blob": "df9ded979964790b92f3053efc3aedeb6e2dfa78",
+      "role": "comparison-only RH consumer retaining the complete signed source-minus-elliptic defect"
+    },
+    {
+      "path": "Mathlib/AlgebraicGeometry/EllipticCurve/VariableChange.lean",
+      "blob": "9ae1871e4ed729cefa7c5b7a68a60cf52c580a3a",
+      "role": "actual variable-change action, mapped variable changes, group law and discriminant covariance"
+    },
+    {
+      "path": "Mathlib/AlgebraicGeometry/EllipticCurve/Affine/Basic.lean",
+      "blob": "8d41a9c9b8bc2d0858621d2183e518803d35f11b",
+      "role": "actual affine equation and equation-to-nonsingular bridge"
+    },
+    {
+      "path": "Mathlib/AlgebraicGeometry/EllipticCurve/Affine/Point.lean",
+      "blob": "2f10d185c70019fd37c82da3d09eb906e12ac9bb",
+      "role": "actual affine point type including infinity"
+    },
+    {
+      "path": "Mathlib/AlgebraicGeometry/EllipticCurve/Reduction.lean",
+      "blob": "67494c807f64aaf882dd2b6b0edf366df83ba3f0",
+      "role": "integral/minimal models, residue reduction, good reduction and unit-scale descent"
+    },
+    {
+      "path": "Mathlib/RingTheory/Valuation/Discrete/IsDiscreteValuationRing.lean",
+      "blob": "e59c952ac3bca7c7c6878da88c3ab56ba2a9b66e",
+      "role": "DVR unit/valuation boundary needed by the next record-minimal-model supplier"
+    }
+  ],
+  "principal_declarations": [
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.affineResidual_variableChange",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.affineEquation_variableChange_iff",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.variableChangeAffineEquiv",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.variableChangePointEquiv",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.variableChangePoint_natCard_eq",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.residueCurve_variableChange",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.residueVariableChangePointEquiv",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.residueVariableChangePoint_natCard_eq",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.integralModels_eq_of_descended_change",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.exists_integralModel_change_of_unit_scale",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.reductionPointEquiv_of_integralModel_change",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.reductionPoint_natCard_eq_of_unit_scale",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.ResidueFieldVariableChangePort.hasGoodReduction_of_unit_scale"
+  ],
+  "mathematical_result": {
+    "field_covariance": "R_(C•W)(u^-2(X-r),u^-3(Y-s(X-r)-t)) = u^-6 R_W(X,Y)",
+    "field_fiber": "Every field-valued Mathlib VariableChange induces an explicit equivalence of affine equation fibers.",
+    "actual_points": "For elliptic W the equivalence lifts to Mathlib's actual affine point type, preserving infinity and Nat.card.",
+    "residue_transport": "Mapping a DVR variable change to the residue field commutes with reduction and preserves the complete good special-fiber point count.",
+    "fraction_field_descent": "When the fraction-field scale descends from a DVR unit, Mathlib's integral descent identifies the two integral models and the new consumer transports good reduction and special-fiber point count.",
+    "record_impact": "The remaining record-7 seam is reduced to unit-scale existence for the chosen minimal-model change and explicit identification of the record residue model/count 13."
+  },
+  "nonclaims": [
+    "No proof is supplied that the record curve's chosen minimal-model change has DVR-unit scale.",
+    "No explicit PadicInt 7 residue-model-to-ZMod 7 count-13 comparison is supplied.",
+    "No global elliptic L-function or zero-set equality follows from the local fiber equivalence.",
+    "No estimate is supplied for the complete signed Möbius-to-elliptic kernel defect.",
+    "No all-positive-rate endpoint estimate, Riemann Hypothesis or BSD conclusion is proved.",
+    "Source publication does not establish Lean compilation, kernel acceptance or an axiom audit."
+  ],
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "lexical_forbidden_token_scan": "PASS_FOR_sorry_admit_axiom_native_decide",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN"
+  },
+  "mathematical_status": {
+    "general_field_variable_change_fiber_equivalence": "SOURCE_PROOF_CANDIDATE",
+    "dvr_residue_special_fiber_transport": "SOURCE_PROOF_CANDIDATE",
+    "unit_scale_integral_model_descent_consumer": "SOURCE_PROOF_CANDIDATE",
+    "record_minimal_model_unit_scale": "UNPROVED",
+    "record_residue_count_identification": "UNPROVED",
+    "native_record_seven_point_count_bridge": "UNPROVED",
+    "global_elliptic_L_function_comparison": "NOT_PROVED",
+    "moebius_endpoint_signed_defect_estimate": "UNPROVED",
+    "all_positive_rate_endpoint_estimate": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "next_supplier": "For the record curve over PadicInt 7, construct or identify the fraction-field variable change from the explicit integral model to Mathlib's chosen minimal model, prove its scale is the image of a PadicInt 7 unit, and identify the explicit residue curve through PadicInt.residueField with the existing ZMod 7 source count 13.",
+  "issue_refs": [1551, 1550, 1548, 1049],
+  "rejection_conditions": [
+    "dropping the unit-scale premise in the special-fiber descent",
+    "treating equality of finite point-count numerals as the coordinate equivalence",
+    "identifying local special fibers with global elliptic L-functions or zero sets",
+    "dropping the complete signed Möbius-to-elliptic defect",
+    "promoting source publication or lexical scans to Lean or kernel acceptance",
+    "claiming RH before the exact all-positive-rate endpoint estimate and verified dependency closure are supplied"
+  ]
+}
