@@ -1,0 +1,125 @@
+{
+  "schema": "grwtsk.math.source-verification.v1",
+  "local_attribution": "grwtsk contributors",
+  "date": "2026-11-01",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "publication": {
+    "predecessor_commit": "4ecb4e571664b05e4b5f032dc71e22dd668cdcee",
+    "source_commit": "b0c774242e5c8bc4847f13c151e4603f2d08012b",
+    "expected_target_parent": "b0c774242e5c8bc4847f13c151e4603f2d08012b"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueSamplewiseTransport.lean",
+    "blob": "c080735838e2b4872755cd1409d4f8460b7e3f70",
+    "sha256": "1dfdbd0a76ef8e66c9631e259d626176bb01282a3c6efc2c3117278981e15a62"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/elliptic-prime-residue-samplewise-transport-2026-11-01.md",
+    "blob": "e087b972c449e92d1e6bf4845c23f02a1611993a"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/elliptic-prime-residue-samplewise-transport-references.md",
+    "blob": "dff195f3bd2b81b16d70527ce0eb34ef3b872061"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberPorts.lean",
+      "blob": "e7f5901f929bf999d15772f1b92cf3460023623d",
+      "role": "predecessor affine-fiber equivalence and typed port system"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberCounting.lean",
+      "blob": "70c96ac0ebabe429e129ea549e151e575d30593d",
+      "role": "ordered packet, signed defect and finite Euler consumers"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticFiniteEulerWindow.lean",
+      "blob": "48e14ca731bd9b13f8373eea7521e746cb3eab93",
+      "role": "GoodPointCountCertificate, integralModelCount and local Euler observations"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/OrderedPrimeGroupAddress.lean",
+      "blob": "88023e2c4940d4572561a564f7c73fc8271aa31f",
+      "role": "dependent prime index and NeZero instance"
+    },
+    {
+      "path": "Mathlib/AlgebraicGeometry/EllipticCurve/Weierstrass.lean",
+      "blob": "5ef9316e466dfc60347c91f8110fe2a8eef28e5b",
+      "role": "WeierstrassCurve.map and map_Δ"
+    }
+  ],
+  "principal_declarations": [
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.CoefficientsModPrime",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.CoefficientsModPrime.reducedCurve_eq",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.CoefficientsModPrime.discriminant_mod_eq",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.CoefficientsModPrime.good_iff",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.transportCertificate",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.transportChannelAt",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.transportFiber",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.channelPort_of_all_prime_coefficients",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.BoundedSample.routeByCoefficients",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.BoundedSample.sameResiduePairs_routeByCoefficients",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.BoundedSample.tracePacket_routeByCoefficients",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.BoundedSample.orderedPacket_eq_routeByCoefficients_add_defect",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.BoundedSample.finite_good_euler_window_routeByCoefficients",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.finitePrimeA6Shift_coefficients",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.finitePrimeA6Shift_euler_window",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueSamplewiseTransport.finitePrimeA6Shift_ne"
+  ],
+  "mathematical_result": {
+    "local_geometry": "Five Weierstrass coefficient congruences modulo p identify the actual reduced curves and affine solution fibers.",
+    "good_reduction": "Discriminants have equal residues, so good reduction is equivalent at the selected prime.",
+    "certificate_transport": "A source ChannelAt certificate is rebuilt for the target model with the same exact point count, residue and exponent.",
+    "samplewise_transport": "A finite BoundedSample needs congruence only at each observed occurrence prime; repeated occurrences and the prime bound are retained.",
+    "preserved_observations": "Prime, point count, residue key, exponent, Frobenius trace, local reciprocal polynomial, every direct local coefficient, complete signed trace packet and finite Euler product.",
+    "changed_kernel_boundary": "Source ordered packet equals routed target packet plus the exact signed samplewise transport defect.",
+    "hostile_obstruction": "Changing a6 by t times the product of finitely many selected primes preserves all selected fibers and Euler factors while giving a different integral model for t nonzero."
+  },
+  "nonclaims": [
+    "No global Weierstrass isomorphism or elliptic isogeny is constructed.",
+    "No global elliptic L-function or zero-set equality follows from finite local data.",
+    "No source-exact comparison with the Möbius endpoint kernel is proved.",
+    "No all-positive-rate endpoint estimate, Riemann Hypothesis or BSD conclusion is proved.",
+    "Source publication does not establish Lean compilation, kernel acceptance or an axiom audit."
+  ],
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "lexical_forbidden_token_scan": "PASS_FOR_sorry_admit_axiom_native_decide",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN"
+  },
+  "mathematical_status": {
+    "samplewise_local_certificate_transport": "SOURCE_PROOF_CANDIDATE",
+    "finite_prime_nonidentification_obstruction": "SOURCE_PROOF_CANDIDATE",
+    "integral_variable_change_fiber_port": "UNPROVED",
+    "global_elliptic_L_function_comparison": "NOT_PROVED",
+    "moebius_endpoint_kernel_comparison": "NOT_PROVED",
+    "all_positive_rate_RH_supplier": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "next_supplier": "Construct the affine-fiber equivalence induced by an integral Weierstrass variable change whose scaling parameter is a unit modulo p. Use it to transport genuine minimal models and close the local model-change seam without inferring global isogeny or zero-set equality.",
+  "issue_refs": [
+    1550,
+    1551,
+    1548,
+    1049
+  ],
+  "rejection_conditions": [
+    "replacing occurrencewise indexed samples by a set of compressed prime-residue keys",
+    "dropping the signed changed-kernel defect",
+    "treating equality of finitely many local factors as global L-function or zero-set equality",
+    "assuming target good reduction instead of deriving it from discriminant congruence",
+    "promoting source publication or lexical scans to Lean or kernel acceptance",
+    "claiming RH before the exact endpoint arithmetic estimate and formal dependency closure are proved"
+  ]
+}
