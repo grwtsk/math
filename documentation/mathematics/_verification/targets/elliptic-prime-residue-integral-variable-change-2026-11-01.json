@@ -1,0 +1,127 @@
+{
+  "schema": "grwtsk.math.source-verification.v1",
+  "local_attribution": "grwtsk contributors",
+  "date": "2026-11-01",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "publication": {
+    "predecessor_commit": "6c48421c4b2b739daa368071546886d4ab0cfbde",
+    "source_commit": "a9dd140a6de74ee7dbf85b785bceec1c73d67e9c",
+    "expected_target_parent": "a9dd140a6de74ee7dbf85b785bceec1c73d67e9c"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueIntegralVariableChangePort.lean",
+    "blob": "cf01a4665bd1e33d2f18ef1c09372418f92b9d42",
+    "sha256": "d0d1707fe519421d443086a44ea9ee6111aa3b47bf5599bc82ac6bde667d3649"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/elliptic-prime-residue-integral-variable-change-2026-11-01.md",
+    "blob": "395dfc3ee382827b2d57b9446a8626b41814a5db"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/elliptic-prime-residue-integral-variable-change-references.md",
+    "blob": "9569ea19f923f98e63eebebd37da5f2b4204152d"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueYSignPort.lean",
+      "blob": "9810a1beb777597d3ed3456d738a66cfc7f85350",
+      "role": "explicit u=-1 affine-fiber equivalence and certificate port"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueSamplewiseTransport.lean",
+      "blob": "c080735838e2b4872755cd1409d4f8460b7e3f70",
+      "role": "coefficient-congruence transport and certificate infrastructure"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberPorts.lean",
+      "blob": "e7f5901f929bf999d15772f1b92cf3460023623d",
+      "role": "AffinePointFiber, GeometricFiberPort, ChannelAt and ChannelPort"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberCounting.lean",
+      "blob": "70c96ac0ebabe429e129ea549e151e575d30593d",
+      "role": "ordered signed trace packet and finite Euler consumers"
+    },
+    {
+      "path": "Mathlib/AlgebraicGeometry/EllipticCurve/VariableChange.lean",
+      "blob": "9ae1871e4ed729cefa7c5b7a68a60cf52c580a3a",
+      "role": "actual variable-change action, group law and discriminant formula"
+    },
+    {
+      "path": "Mathlib/Algebra/Group/Int/Units.lean",
+      "blob": "7864a33c7f754087d21a89113e66896841067651",
+      "role": "classification of integer units"
+    }
+  ],
+  "principal_declarations": [
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.translationVariableChange",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.translationModel_eq_variableChange",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.originalAffineEquation_translation_iff",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.translationAffineEquiv",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.integralVariableChange_eq_translation_or_ySign",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.integralVariableChangeGeometricPort",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.integralVariableChange_pointCount_eq",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.integralVariableChange_discriminant",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.integralVariableChangeCertificate",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.integralVariableChangeChannelPort",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.integralVariableChange_orderedTrace",
+    "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.PrimeResidueIntegralVariableChangePort.integralVariableChange_finiteEulerWindow"
+  ],
+  "mathematical_result": {
+    "translation": "The actual coordinate map (X,Y)->(X-r,Y-s(X-r)-t) gives an affine-fiber equivalence between W and the Mathlib translation (1,r,s,t)•W at every prime.",
+    "unit_classification": "Every VariableChange over Z has scale 1 or -1 and is a translation or Y-sign composed with a translation.",
+    "all_integral_changes": "Every integral Mathlib variable change constructs a GeometricFiberPort at every prime and preserves full finite point counts.",
+    "discriminant": "The integral discriminant is exactly invariant because the only scaling units are plus or minus one.",
+    "certificate_transport": "Source good-reduction count certificates transport to the changed model without a free target-good or target-count premise.",
+    "preserved_observations": "Prime, count, residue, exponent, Frobenius trace, every direct Euler coefficient, local reciprocal factors, finite Euler products and complete ordered signed trace packets."
+  },
+  "nonclaims": [
+    "No arbitrary DVR-unit or PadicInt variable-change fiber equivalence is formalized.",
+    "No identification of Mathlib's chosen minimal model is proved.",
+    "No global elliptic L-function or zero-set equality is proved.",
+    "No Möbius endpoint kernel comparison or all-positive-rate arithmetic estimate is supplied.",
+    "No BSD or Riemann Hypothesis conclusion is proved.",
+    "Source publication does not establish Lean compilation, kernel acceptance or an axiom audit."
+  ],
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "lexical_forbidden_token_scan": "PASS_FOR_sorry_admit_axiom_native_decide",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN"
+  },
+  "mathematical_status": {
+    "translation_affine_fiber_equivalence": "SOURCE_PROOF_CANDIDATE",
+    "all_integral_variable_change_port": "SOURCE_PROOF_CANDIDATE",
+    "dvr_unit_variable_change_port": "UNPROVED",
+    "minimal_model_transport": "UNPROVED",
+    "global_elliptic_L_function_comparison": "NOT_PROVED",
+    "moebius_endpoint_kernel_comparison": "NOT_PROVED",
+    "all_positive_rate_RH_supplier": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "next_supplier": "Construct the affine special-fiber equivalence induced by a Weierstrass VariableChange over a DVR or its residue field when the scale maps to a unit. Use it to transport Mathlib minimal models and discharge the remaining native local-power-series point-count seam.",
+  "issue_refs": [
+    1551,
+    1550,
+    1548,
+    1049
+  ],
+  "rejection_conditions": [
+    "treating equality of finitely many local fibers as a global variable change",
+    "extending the integer-unit proof to arbitrary DVR units without the coordinate and reduction map",
+    "dropping residues, exponents, repeated occurrences or signed pair orientations",
+    "claiming global L-function or zero-set equality solely from local factor preservation",
+    "promoting source publication or a lexical scan to Lean or kernel acceptance",
+    "claiming RH before an actual source-exact endpoint estimate and verified dependency closure"
+  ]
+}
