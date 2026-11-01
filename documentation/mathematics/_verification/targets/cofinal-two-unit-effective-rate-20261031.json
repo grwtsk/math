@@ -6,13 +6,15 @@
   "branch": "main",
   "classification": "SOURCE_PROOF_CANDIDATE",
   "source": {
-    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CofinalTwoUnitEffectiveRateBridge.lean"
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CofinalTwoUnitEffectiveRateBridge.lean",
+    "blob": "5161900f072083873c029d6af24c784dc5ab190f"
   },
   "review": {
-    "path": "documentation/mathematics/_support/reviews/cofinal-two-unit-effective-rate-bridge-2026-10-31.md"
+    "path": "documentation/mathematics/_support/reviews/cofinal-two-unit-effective-rate-bridge-2026-10-31.md",
+    "blob": "7c0ce62f6ca7026e67fc73987d5f7eac85fa929e"
   },
-  "expected_parent": "ab9d4b6892af6e99e63d276bfcd69770fe4c0727",
-  "publication_commit": "PENDING",
+  "expected_parent": "cba061e9f08e1faf75e7df963cabecd9568acdfa",
+  "publication_commit": "15c5f01eac639d590465e81331ab4792eb9218ce",
   "toolchain": {
     "lean": "leanprover/lean4:v4.34.1",
     "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
