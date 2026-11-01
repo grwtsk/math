@@ -43,6 +43,8 @@ the remaining dense packet and does not prove RH.
 
 namespace GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof
 
+classical
+
 open GRWTSK.RiemannHypothesis.CCC
 open GRWTSK.NumberTheory.MoebiusEndpointPutnamEnergyCounting
 open GRWTSK.NumberTheory.MoebiusEndpointLeastPrimeTypeII
@@ -192,7 +194,8 @@ theorem ratio_neighbor_card_le
   have hsubset :
       (S.filter fun n => smallRatioEdge Q m n) ⊆ L ∪ R := by
     intro n hn
-    rcases Finset.mem_filter.mp hn with ⟨_hnS, hne, q, hqQ, hrel⟩
+    rcases Finset.mem_filter.mp hn with ⟨_hnS, hedge⟩
+    rcases hedge with ⟨hne, q, hqQ, hrel⟩
     rcases hrel with hmul | hdiv
     · apply Finset.mem_union.mpr
       left
@@ -201,7 +204,7 @@ theorem ratio_neighbor_card_le
       right
       apply Finset.mem_image.mpr
       refine ⟨q, hqQ, ?_⟩
-      rw [hdiv, Nat.mul_div_left n (hQ q hqQ)]
+      rw [hdiv, Nat.mul_div_right n (hQ q hqQ)]
   calc
     (S.filter fun n => smallRatioEdge Q m n).card ≤
         (L ∪ R).card := Finset.card_le_card hsubset
@@ -292,8 +295,13 @@ def endpointRatioOutsideGapCross (Q : Finset ℕ) (T : ℝ) : ℝ :=
 /-- The disjoint ratio relation is symmetric. -/
 theorem ratioOutsideGapEdge_symm (Q : Finset ℕ) (m n : ℕ) :
     ratioOutsideGapEdge Q m n ↔ ratioOutsideGapEdge Q n m := by
-  unfold ratioOutsideGapEdge
-  rw [smallRatioEdge_symm Q m n, Nat.dist_comm]
+  constructor
+  · rintro ⟨hratio, hgap⟩
+    refine ⟨(smallRatioEdge_symm Q m n).mp hratio, ?_⟩
+    simpa [Nat.dist_comm] using hgap
+  · rintro ⟨hratio, hgap⟩
+    refine ⟨(smallRatioEdge_symm Q m n).mpr hratio, ?_⟩
+    simpa [Nat.dist_comm] using hgap
 
 /-- Removing additive-gap edges cannot increase the ratio graph degree. -/
 theorem ratioOutsideGap_neighbor_card_le
