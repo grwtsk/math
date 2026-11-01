@@ -1,0 +1,99 @@
+{
+  "schema": "grwtsk.math.source-verification.v1",
+  "local_attribution": "grwtsk contributors",
+  "date": "2026-10-31",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "publication": {
+    "expected_parent": "1fd45c86c94d2b42bb68374e1d118149d0b34d88",
+    "source_publication_commit": "f2d86fc330572e93f35555784b25c49b8d39e86f",
+    "retained_monolithic_sha256": "ef72a9c98350103af8fb902aabb5c8e9526a86359fdcae363a5dfd7c6e086070",
+    "organization": "The retained monolithic candidate was split into declaration-equivalent modules for connector-safe publication; 42 original definitions/theorems retain their namespace and declaration names."
+  },
+  "umbrella": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame.lean",
+    "blob": "fcabc699c3909be58c0d4806e4573c188473ac33"
+  },
+  "modules": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame/Base.lean",
+      "blob": "ae2eea075d7759960f26009c1f3a044159be0a8b"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame/FloorFrame.lean",
+      "blob": "8e493daece5cb9ded26a946258cd753f17694813"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame/NearestGeometry.lean",
+      "blob": "008a049f3244a4dc3f831ab5a6af6c01793e66e0"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame/NearestFrame.lean",
+      "blob": "3504e3ce1006c82590707e111aa19e31545a4a6d"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame/ArithmeticCertificates.lean",
+      "blob": "b7d64b36fdd5842d95ca7b736173ea86184834f3"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/IntegerPoissonZeroFrame/PadicCertificates.lean",
+      "blob": "570dcf1ed6e583ff2305cb4286fdf443e13d2444"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/integer-poisson-zero-frame.md",
+    "blob": "a44b33ce5409c7a2126decae7f054e3089ad7522"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/integer-poisson-zero-frame-references.md",
+    "blob": "e9015461a11972b6f00215cf14ef7d3a01cc1b13"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "principal_declarations": [
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.poissonKernelAtTwo_nearest_ge_eight_seventeenths",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.integerPoisson_zero_side_lower_frame_nearest",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.unknownDeficit_le_one_of_dominated_energy",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.primeWindowFamilyEnergy_eq_four_centered",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.padicPrimeWindowPoissonCertificateAt_to_oneUnit",
+    "GRWTSK.RiemannHypothesis.IntegerPoissonZeroFrame.riemannHypothesis_of_cofinalPadicPrimeWindowPoisson"
+  ],
+  "mathematical_result": {
+    "nearest_integer_pointwise_kernel": "K_rho(b(rho)) >= 8/17",
+    "zero_side_frame": "64 * D_Z <= 289 * E_Z",
+    "arithmetic_one_zero_threshold": "E_A < 128/289 after E_Z <= E_A implies D_Z <= 1",
+    "centered_padic_threshold": "centeredPacketFamilyEnergy < 32/289 after the source-exact zero-to-prime comparison"
+  },
+  "finite_diagnostics": {
+    "nearest_bin_kernel_assertions": 2981160,
+    "multi_zero_frame_fixtures": 7200,
+    "scope": "exact-rational finite diagnostics only; not Lean elaboration, kernel acceptance, or infinite analytic verification"
+  },
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN"
+  },
+  "mathematical_status": {
+    "zero_side_lower_frame": "PROVED_ANALYTICALLY_SOURCE_CANDIDATE",
+    "zero_to_prime_source_comparison": "UNPROVED",
+    "centered_large_prime_packet_upper_bound": "UNPROVED",
+    "cofinal_numeric_witness": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "rejection_conditions": [
+    "replacing the canonical nontrivial-zero subtype or analytic multiplicity",
+    "introducing a Z+1 cardinality loss into the binwise lower-frame argument",
+    "treating the completed logarithmic derivative as the selected prime-window comparison without paying known zeros, negative heights, outer tails, gamma/pole/trivial-zero terms, and endpoints",
+    "replacing the centered rough-prime packet by the uncentered large-prime packet",
+    "promoting source publication or finite diagnostics to Lean/kernel acceptance",
+    "claiming the cofinal numerical witness or RH before the two remaining load-bearing estimates are proved"
+  ]
+}
