@@ -116,3 +116,43 @@ Then run an exact-commit fresh import and \`#print axioms\` for
 and \`observer_and_all_residue_bounds\`.
 Verify the expected theorem types and all transitive dependencies.
 No operational execution receipt is manufactured in this repository.
+
+
+## Further observer-weighted Wilson residue comparison (same research increment)
+
+An observer-dependent **measurement**, not an interaction law, can be obtained
+without losing the source action. Fix a real \`lambda≥0\`, chosen with the
+appropriate inverse-spatial-energy normalization, and define
+\`w(lambda,p,x,v)=1+lambda*h_p,x(v,v)\`, where \`h_p,x\` is the original
+Gödel spatial projector. The existing positivity of \`h\` gives \`w≥1\`.
+For each actual Wilson residue fiber, define
+\`E_r^obs(U)=w E_r(U)\`. The coefficient is sourced from the genuine
+Gödel observer; it is neither an arbitrary residual nor a postulated
+Yang--Mills curvature equality.
+
+The explicit finite distributive identity gives
+\`Σ_r E_r^obs(U)=w S_L(U)\`. Since the SU(2) action is nonnegative and
+\`w≥1\`, the original action obeys
+\`0≤ S_L(U) ≤ Σ_r E_r^obs(U)\`. The chart shift preserves \`h\`, so
+\`w(x+s,F_s v)=w(x,v)\`; the exact SU(2) vertex gauge action preserves
+each \`E_r\`. Their simultaneous action therefore preserves every
+\`E_r^obs\` and the complete weighted sum. The gain is one on the
+observer-time root, and unbounded without a separate bound on observer
+velocity/energy; there is no uniform upper bound claimed for all tangents.
+
+This is a **source-exact observer-weighted Wilson observable**, and a
+mathematically valid way for real observer geometry to supply weights on
+a physical gauge action while the class partition supplies bounds back
+on the original action. It is not derivation of Einstein--Yang--Mills
+coupling or of a mass gap. The pre-existing seven temporal Fourier
+classes still require an explicit observation map to identify them with
+Wilson base-coordinate classes. The source includes candidate declarations
+\`observerGain\`, \`observerGain_ge_one\`,
+\`observerWeightedResidueEnergy\`,
+\`observerWeightedResidueEnergy_nonneg\`,
+\`observerWeightedEnergy_cover\`,
+\`wilsonAction_le_observerWeightedCover\`,
+\`observerWeightedEnergy_chart_gauge\`, and
+\`observerGain_chart\`. Lean elaboration and all qualification remain
+NOT_RUN; no remote execution was dispatched. The appended source and
+review require a NEW commit pin and cannot inherit earlier acceptance.
