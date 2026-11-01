@@ -1,0 +1,114 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Exact original Möbius–elliptic signed residual invariance under all integral admissible model changes",
+  "repository": "grwtsk/math",
+  "author": "grwtsk contributors",
+  "date": "2026-11-01",
+  "root": "GRWTSK",
+  "source_base": "4f301ada41f23f55132240dda65c72402d901152",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticIntegralChangeInvariance.lean",
+    "blob": "2e75bd68cac379d7a74cec656c5e94ac3414262e",
+    "type": "LEAN_SOURCE_PROOF_CANDIDATE",
+    "public_root_import": false
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-elliptic-integral-change-signed-invariance-2026-11-01.md",
+    "blob": "89804716fc685ee7d6f5f58d7858b857b404d536",
+    "status": "ORDINARY_MATHEMATICAL_ARGUMENT_WRITTEN"
+  },
+  "pinned_input_blobs": [
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueIntegralVariableChangePort.lean",
+      "sha": "cf01a4665bd1e33d2f18ef1c09372418f92b9d42",
+      "status": "ALREADY_PUBLISHED_CONCURRENT_DO_NOT_DUPLICATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
+      "sha": "df9ded979964790b92f3053efc3aedeb6e2dfa78",
+      "role": "ORIGINAL_MOEBIUS_ENDPOINT_AND_EXACT_SIGNED_DEFECT"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticRecordCertifiedBank.lean",
+      "sha": "b33d580f9d62d3dbe6b43a98af988a95674fb885",
+      "role": "GENUINE_GOOD_PRIME_BANK_AT_7_19"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberPorts.lean",
+      "sha": "e7f5901f929bf999d15772f1b92cf3460023623d",
+      "role": "SOURCE_PRIME_RESIDUE_EXPONENT_AND_CERTIFICATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberCounting.lean",
+      "sha": "70c96ac0ebabe429e129ea549e151e575d30593d",
+      "role": "ORIGINAL_FULL_ORDERED_TRACE_KERNEL"
+    }
+  ],
+  "expected_types": [
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.transportedGoodPrimeBank",
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.transported_support",
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.transported_tag",
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.transported_matched",
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.transported_unmatched",
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.transported_selectedPrime",
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.assignedTrace_transport",
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.ellipticKernel_transport",
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.matchedEllipticPacket_transport",
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.signedDefect_transport",
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.fullSignedResidual_transport",
+    "GRWTSK.NumberTheory.Moebius.EllipticIntegralChangeInvariance.signedEndpoint_decomposition_invariant"
+  ],
+  "math_claims": {
+    "original_index": "Entire endpointIndex T retained, for every real T, matching exactly the original firstSelectedDivisor and bank prime set.",
+    "actual_coefficients": "The unchanged Möbius source kernel mu(m)mu(n)pickupResponseGram T m n.",
+    "matched_trace": "Transported point-count certificates keep each original selected Frobenius trace, with unmatched source zero readout.",
+    "signed_defect": "Full ordered source-minus-elliptic signed matched kernel defect invariant termwise.",
+    "complete_residual": "Original rough/rough, both mixed orientations, signed matched defect, and original endpoint correction preserved.",
+    "rate_gain": "NONE: not an independent estimate; no improvement of RH zero-free threshold or Liouville weighted exponent.",
+    "hostile": "Original squareful pair (49,7) with mu(49)=0 and actual trace -5 has signed defect -25 each orientation, -50 together."
+  },
+  "finite_diagnostics": [
+    {
+      "file": "/mnt/data/elliptic_integral_variable_change_preflight.py",
+      "sha256": "140dda27cd2a7ac90926e3fd989a9708c16976543daf2722044a021e59e7e0ec",
+      "assertions": 1164771,
+      "model_change_prime_cases": 34560,
+      "result": "PASS",
+      "scope": "INTEGRAL_VAR_CHANGE"
+    },
+    {
+      "file": "/mnt/data/moebius_elliptic_bank_integral_change_preflight.py",
+      "sha256": "2541eb7ad2c0797fd06db1d3ca66d679beeaffd7d70ae3f46ce183811503294f",
+      "assertions": 488,
+      "result": "PASS",
+      "scope": "ACTUAL_RECORD_7_19_BANK_MATCHED_PACKET_AND_SQUAREFUL_DEFECT"
+    }
+  ],
+  "verification": {
+    "source_published": "PENDING_NONFORCE_EXPECTED_HEAD",
+    "source_blob_readback": "NOT_RUN",
+    "mathematical_primary_argument": "WRITTEN",
+    "finite_reference_diagnostics": "PASS_NON_KERNEL",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "original_signed_all_rate_bound": "UNPROVED",
+    "full_local_dvr_minimal_model_return": "UNPROVED",
+    "genuine_cofinal_two_unit_count": "UNPROVED",
+    "RiemannHypothesis": "UNPROVED",
+    "BSD": "UNPROVED",
+    "native_runner_dispatched": false,
+    "remote_CI_dispatched": false,
+    "scheduler_dispatched": false
+  },
+  "passive": true,
+  "issues": [
+    15,
+    1548,
+    1552,
+    1551
+  ]
+}
