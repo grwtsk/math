@@ -1,0 +1,85 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "research_date": "2026-11-02",
+  "title": "Source-preserving shell lift/lower with exact two-bit Hilbert comparison and complete signed physical Möbius return",
+  "repository": "grwtsk/math",
+  "author_attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
+  "pinned_toolchain": {
+    "lean": "v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "additive_sources": [
+    {
+      "path": "GRWTSK/Combinatorics/ShapePhysicalBitTransport.lean",
+      "blob": "7f3a2074dbbfb8e72ef16b0196670411867333fb",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    }
+  ],
+  "pinned_dependencies": [
+    {
+      "path": "GRWTSK/Combinatorics/ShapeChangingBundle.lean",
+      "blob": "1f4546ac4d33bbc4b7551d40378219850d93965a"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/BanachHilbert.lean",
+      "blob": "5e1651b0f94ec3e7fbee24ee6134f00a1e4dfaf7"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitGramReturn.lean",
+      "blob": "67cbc92ee2dec824d0a5c2930f0f45671dad61a9"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitCodec.lean",
+      "blob": "bbcf43b2274b5a4738321fbdcd995d45deafabb3"
+    },
+    {
+      "path": "GRWTSK/DifferentialGeometry/PhysicalBitPrimeObserver.lean",
+      "blob": "235c11fc8b45a5492a078746fc3e0dd99556e952"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/shape-physical-bit-source-preserving-transport-2026-11-02.md",
+    "blob": "e22229342adbee1f160039ff4bdd9d3ed4bd0d7d"
+  },
+  "source_commit": "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
+  "source_parent": "216e9a57ad4cf86e77012971bbacb60b1789c38f",
+  "exact_source": "Original ShapeChangingBundle center/shell plus full integer-indexed PhysicalStream, two-tangent SignedBits, existing pickupCross with all ordered non-diagonal pairs and signedReadoutDefect; no new arithmetic coefficients, windows or unproved cancellation.",
+  "source_candidate_theorems": [
+    "Folder.Research.ShapePhysicalBitTransport.lower_lift_center",
+    "Folder.Research.ShapePhysicalBitTransport.lower_lift_shell",
+    "Folder.Research.ShapePhysicalBitTransport.lift_lower",
+    "Folder.Research.ShapePhysicalBitTransport.shift_lift",
+    "Folder.Research.ShapePhysicalBitTransport.lower_shift",
+    "Folder.Research.ShapePhysicalBitTransport.completeStreamOn_shift",
+    "Folder.Research.ShapePhysicalBitTransport.admissibleStreamOn_shift",
+    "Folder.Research.ShapePhysicalBitTransport.squaredBitDistance_eq_hamming",
+    "Folder.Research.ShapePhysicalBitTransport.normalizedBitDistance_eq_hamming",
+    "Folder.Research.ShapePhysicalBitTransport.sphereNumeratorDistance_eq_hamming",
+    "Folder.Research.ShapePhysicalBitTransport.isAnchor_iff_squaredNearest",
+    "Folder.Research.ShapePhysicalBitTransport.pickupCross_eq_packet_add_defect",
+    "Folder.Research.ShapePhysicalBitTransport.signed_return_lift_shift",
+    "Folder.Research.ShapePhysicalBitTransport.packet_lift_shift_encoded"
+  ],
+  "unresolved_mathematical_obligations": [
+    "A true topological fiber bundle requires projection, local trivializations, transition cocycles and compatibility.",
+    "No spectral tensor metric, energy, orientation or isometry theorem follows from reconstruction alone.",
+    "No random sampling law or cusp-limit probability model has been defined; dissociated-support hypotheses for AddDissociated.randomisation have not been supplied.",
+    "The one-sided all-positive-rate bound for the complete original signed Möbius pickup or endpointSum on adequately covering scales remains OPEN."
+  ],
+  "verification": {
+    "source_publication": "PASS_EXACT_GITHUB_BLOB_READBACK",
+    "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
+    "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
+    "source_parser": "NOT_RUN",
+    "source_lean_compilation": "NOT_RUN",
+    "expected_theorem_types": "NOT_RUN",
+    "fresh_lean_kernel": "NOT_RUN",
+    "transitive_axiom_opaque_native_audit": "NOT_RUN",
+    "dependency_closure_compile": "NOT_RUN",
+    "source_or_pinned_toolchain_modified": false,
+    "root_import_modified": false,
+    "external_ci_or_native_execution_dispatched": false,
+    "new_arithmetic_cancellation_estimate": "OPEN",
+    "canonical_RiemannHypothesis": "OPEN"
+  }
+}
