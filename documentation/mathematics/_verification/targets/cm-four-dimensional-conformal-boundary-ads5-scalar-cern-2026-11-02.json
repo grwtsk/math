@@ -1,0 +1,110 @@
+{
+  "contract": "grwtsk/cm-4d-conformal-ads5-physical-bridge-candidate/1",
+  "source_date": "2026-11-02",
+  "repo": "grwtsk/math",
+  "source_main_snapshot_before_increment": "53097b3849047bb8e20ea23768f474413d7c7e09",
+  "publication_branch": "main",
+  "source_pin": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "upstream_cm": "openai/math@4eaee87548250b2682affda7d05d947c05554bae",
+    "predecessor": {
+      "CMDiscreteRSBoundaryBulk.lean": "4046107e8d320e999e8910fcf12ce4b92fa6a577",
+      "CMDiscreteModularLattice.lean": "52058db0c2a4e9ee5256947c3447ed110561d252",
+      "CMDiscreteMoebiusResidueWaypoints.lean": "664881d6529a66ae8c581fcf62124dc7a0361948",
+      "CMCenteredResidueWaypointDeployment.lean": "b7b205c0353945bb387fe1dbfb40cc042456b244"
+    }
+  },
+  "candidate_files": [
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMFourDimBoundaryConformalKernel.lean",
+      "git_blob_sha": "b763089c31a77efe01b6e6e0ce57ff8de2862444",
+      "byte_size": 6830,
+      "lines": 139
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMAdS5HalfLaplacianScalar.lean",
+      "git_blob_sha": "660a1c365e5ceb765ddbc41be1363715a56fc7d7",
+      "byte_size": 8564,
+      "lines": 181
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMFiniteBoundaryReconstructionObstruction.lean",
+      "git_blob_sha": "355567465f64252d3ae1612e2e918cdaf66d452d",
+      "byte_size": 4165,
+      "lines": 92
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMCERNScalarDetectorLikelihood.lean",
+      "git_blob_sha": "47a5eb2861a33d56bee56a5936009418c87d26d7",
+      "byte_size": 7457,
+      "lines": 152
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/cm-four-dimensional-conformal-boundary-ads5-scalar-cern-2026-11-02.md",
+      "git_blob_sha": "8e114045065fc49bfd2aa615a803c1402bfd1657",
+      "byte_size": 13079,
+      "lines": 89
+    }
+  ],
+  "anticipated_declarations": [
+    "CMFourDimBoundaryConformalKernel.boundaryDistSq_invert",
+    "CMFourDimBoundaryConformalKernel.squaredRieszKernel_invert",
+    "CMFourDimBoundaryConformalKernel.embedded_source_sites_injective",
+    "CMAdS5HalfLaplacianScalar.adS5ScalarResidualJet_eq",
+    "CMAdS5HalfLaplacianScalar.fourierMode_adS5_residual_zero",
+    "CMAdS5HalfLaplacianScalar.fourierMode_hasDerivAt_radial",
+    "CMAdS5HalfLaplacianScalar.fourierMode_DtN_trace",
+    "CMAdS5HalfLaplacianScalar.finiteFourierPacketJet_harmonic",
+    "CMFiniteBoundaryReconstructionObstruction.finiteSampleNullField_at_site",
+    "CMFiniteBoundaryReconstructionObstruction.finite_samples_not_injective",
+    "CMCERNScalarDetectorLikelihood.basicD0Mixture_nonneg",
+    "CMCERNScalarDetectorLikelihood.candidateFieldDensity_nonneg"
+  ],
+  "independent_test": {
+    "reference_script": "/mnt/data/cm_ads5_conformal_boundary_reference.py",
+    "results": "/mnt/data/cm_ads5_conformal_boundary_reference_results.json",
+    "assertions_passed": 7451,
+    "arithmetic": "exact rational/symbolic algebra",
+    "coverage": "four coordinates, inversion, finite Riesz covariance, signed residues, polynomial non-injectivity, bulk Fourier solution, Poisson constant",
+    "NOT_a_Lean_certificate": true
+  },
+  "cern_source": {
+    "dataset_record": "https://opendata.cern.ch/record/401",
+    "doi": "10.7483/OPENDATA.LHCb.E7EJ.JUWR",
+    "published_event_count": 53948,
+    "real_event_rows_retrieved": 0,
+    "attempt": "web CERN record metadata retrieved; event API inaccessible; container DNS resolution of opendata.cern.ch failed",
+    "baseline_script": "/mnt/data/cern_d0_mass_lifetime_baseline.py",
+    "baseline_synthetic_fixture_count": 1400,
+    "baseline_synthetic_selected": 770,
+    "baseline_synthetic_lifetime_ps": 0.44549596568955885,
+    "baseline_injected_lifetime_ps": 0.45,
+    "actual_event_fit": "NOT_RUN",
+    "physical_model_fit": "NOT_IDENTIFIABLE_WITHOUT_INDEPENDENT_MEASUREMENT_BRIDGE"
+  },
+  "theoretical_scope": {
+    "boundary": "4D Euclidean lattice and |D| inverse Riesz two-point kernel; full continuum Kelvin covariance not proved in Lean",
+    "bulk": "Euclidean AdS5 free scalar m²L²=-15/4, finite Fourier modes and analytic half-space Poisson formula",
+    "physical": "no RS Lorentzian Einstein/branes/junction conditions or physical source/detector correspondence",
+    "arithmetic": "original signed Mobius coefficients and nonunit residual classes unchanged",
+    "unsupplied": "global original signed Mobius all-positive-rate bound and periodic Schwartz-to-Lp smoothing"
+  },
+  "verification": {
+    "source_candidate": "PRESENT",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "physical_data_fit": "NOT_RUN"
+  },
+  "negative_controls": [
+    "finite samples noninjective even for polynomial/smooth fields",
+    "conformal inversion pole at origin",
+    "coincidence diagonal singularity",
+    "zero CERN event rows",
+    "D0 lifetime cannot measure Bs oscillation",
+    "no normalized experimental likelihood without acceptance and resolutions",
+    "no physical identification to CM cycle or original mu"
+  ]
+}
