@@ -1,0 +1,179 @@
+{
+  "schema": "grwtsk.math.verification.target.v1",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "title": "Elementary squarefree finite sieve discharges fixed-strong-heat positive radius no-go without PNT or asymptotic density",
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "pin": {
+    "Lean": "leanprover/lean4:v4.34.1",
+    "Mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "newLean": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianStrongHeatSquarefreeShell.lean",
+      "blob": "aff41beda52bd996c91dcda73df6fdc940af989d",
+      "publicTheorems": 8,
+      "privateTheorems": 2,
+      "defs": 1,
+      "dependsOn": [
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianHeatSignedEvolution",
+        "Mathlib.Data.Nat.Squarefree",
+        "Mathlib.Tactic"
+      ],
+      "declarations": [
+        "squarefreeHeatShell",
+        "mem_squarefreeHeatShell",
+        "squarefreeHeatShell_subset",
+        "original_moebius_abs_one_of_squarefree",
+        "squarefreeShell_heatRadius_ge_half",
+        "squarefreeShell_pickupResponse_ge",
+        "squarefreeShell_product_ge",
+        "radiusWave_ge_squarefreeShell",
+        "sourceHeatRadiusEnergy_ge_squarefreeShell"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianStrongHeatSquarefreeNoGo.lean",
+      "blob": "92fa557892b95cbc540d033a99e4fc1f5f1df687",
+      "publicTheorems": 3,
+      "defs": 1,
+      "dependsOn": [
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianStrongHeatSquarefreeShell",
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.GoodScaleEnergyCriterion",
+        "Mathlib.Tactic"
+      ],
+      "declarations": [
+        "SquarefreeHeatShellDensityOn",
+        "sourceHeatRadiusEnergy_exponential_of_shell_count",
+        "affineFrequent_unbounded_above",
+        "not_radiusEnergy_subexponential_of_shellDensity"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusElementarySquarefreeSieveSource.lean",
+      "blob": "aac5b8dae1e98c5f1101b6eec79c356ca18b15a8",
+      "publicTheorems": 8,
+      "privateTheorems": 2,
+      "defs": 3,
+      "dependsOn": [
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianStrongHeatSquarefreeNoGo",
+        "Mathlib.Data.Nat.Squarefree",
+        "Mathlib.Data.Nat.Factorization.Basic",
+        "Mathlib.Tactic"
+      ],
+      "declarations": [
+        "finite_square_divisor_reciprocal_cost_le_three_quarters",
+        "nonSquarefreeSource",
+        "squareDivisorMultiples",
+        "nonsquarefree_has_prime_square_factor",
+        "nonsquarefree_subset_square_divisor_cover",
+        "nonsquarefree_count_le_square_divisor_multiplicity",
+        "squareDivisorMultiples_card_eq_div",
+        "nonsquarefree_count_le_three_quarters",
+        "squarefreeSource",
+        "squarefree_plus_nonsquarefree_count",
+        "squarefree_source_count_ge_quarter"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianStrongHeatUnconditionalNoGo.lean",
+      "blob": "cf76838c87886e0a737b943f8abccac8e2dc2843",
+      "publicTheorems": 8,
+      "defs": 3,
+      "dependsOn": [
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusElementarySquarefreeSieveSource",
+        "Mathlib.Tactic"
+      ],
+      "declarations": [
+        "shellLow",
+        "shellHigh",
+        "shellLow_le_shellHigh",
+        "squarefreeSource_mono",
+        "integer_squarefree_shell_subset",
+        "squarefreeHeatShell_card_ge_floor_difference",
+        "elementaryShellCoefficient",
+        "elementaryShellCoefficient_pos",
+        "shell_card_ge_exponential_minus_quarter",
+        "squarefreeHeatShellDensityOn_univ",
+        "no_subexponential_positive_radius_of_strong_heat"
+      ]
+    }
+  ],
+  "publicTheoremCandidates": 27,
+  "privateTheoremCandidates": 4,
+  "publicDefinitions": 8,
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-elementary-squarefree-strong-heat-nogo-2026-11-02.md",
+    "blob": "072f7da017c47c672066defa4d462b2be9e9ddec"
+  },
+  "sourceGraph": {
+    "path": "documentation/mathematics/_support/reviews/moebius-squarefree-strong-heat-source-relations-2026-11-02.json",
+    "blob": "c6e96d84105566261a0418b0f3c2bdb776ab764d"
+  },
+  "exactSourcePreservation": [
+    "Mathlib original ArithmeticFunction.moebius n; source index n original positive",
+    "original squareful zeros remain n entries",
+    "original causal pickupResponse n u and endpointIndex(T)=Icc 1 floor(exp T)",
+    "signed errorWave can cancel; ONLY positive source radius lower",
+    "physical T,u and heat s distinct",
+    "no RH predicate substitution"
+  ],
+  "declaredResults": [
+    "finite squarefree shell S_T and actual R_s(T,u)>=2*card(S_T)*exp(-T/2) on u in [T-2,T]",
+    "actual positive sourceHeatRadiusEnergy(s,T)>=8*(card(S_T))²*exp(-T)",
+    "finite original sieve Q(N)>=N/4 using Nat.Ioc_filter_dvd_card_eq_div",
+    "beta=exp(-4)/4-exp(-6)>0; K(T)>=beta*exp(T)-1/4; c=beta/2>0",
+    "for all s>=1, all sufficiently large T, positive radiusEnergy>=8*c²*exp(T)",
+    "for any AffineFrequent G, positive strong heat radius NOT SubexponentialOn; canonical RH remains OPEN"
+  ],
+  "hostileTests": [
+    "n=0 excluded by original positive source while N=0 finite sieve valid",
+    "N=1 and squarefree 1 retained",
+    "squareful μ=0 source retained",
+    "real T>=7 log shell floor off-by-one and closed births",
+    "positive shell R_s vs signed original reconstruction",
+    "finite union overlaps not assumed disjoint",
+    "actual n divides d² count precisely N/(d²)",
+    "exp(2)>4 beta positive",
+    "fixed strong s>=1 arbitrary",
+    "single fixed AffineFrequent G, epsilon=1/2 before selecting large T",
+    "no false conclusion about signed error or RH"
+  ],
+  "verification": {
+    "lexical": "PASS_BALANCED_COMMENTS_BRACKETS_STRINGS_NO_AUTHORED_SORRY_AXIOM_UNSAFE",
+    "LeanCompilation": "NOT_RUN",
+    "expectedTypes": "NOT_RUN",
+    "freshKernel": "NOT_RUN",
+    "fullTransitiveAxioms": "NOT_RUN",
+    "remoteRunner": "NOT_DISPATCHED",
+    "nativeAvailability": "local lean/lake/elan not installed"
+  },
+  "preflight": {
+    "checks": 3844,
+    "status": "PASS_FINITE_NONRIGOROUS_NOT_LEAN",
+    "shell": {
+      "script": "/mnt/data/moebius_strong_heat_squarefree_shell_preflight_20261102.py",
+      "sha256": "1d9841939fb7b5be6dc9c21aed589f7ad841b7c2ceee90db0f2ab31d1b3e805d",
+      "result": "/mnt/data/moebius_strong_heat_squarefree_shell_preflight_20261102.json",
+      "resultSHA256": "d92604369ad4aae4b67ee48e66a8497fef51b0b42a3530809771bf666724247e",
+      "checks": 1440
+    },
+    "sieve": {
+      "script": "/mnt/data/moebius_strong_heat_elementary_sieve_preflight_20261102.py",
+      "sha256": "0d3f9048374c8cb8dfd15b80aa226f5f127ffd21a138029980e773f7ad108de4",
+      "result": "/mnt/data/moebius_strong_heat_elementary_sieve_preflight_20261102.json",
+      "resultSHA256": "c33299ab4013fe362ccebc34a376e0cd2ed35974e96c1c9df0c8c8d067099302",
+      "checks": 2404
+    }
+  },
+  "requiredBuilds": [
+    "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianStrongHeatSquarefreeShell",
+    "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianStrongHeatSquarefreeNoGo",
+    "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusElementarySquarefreeSieveSource",
+    "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianStrongHeatUnconditionalNoGo",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianStrongHeatUnconditionalNoGo.lean",
+    "independent kernel replay and full transitive #print axioms (including private and sorryAx)"
+  ],
+  "publication": "PENDING_GUARDED_MAIN_FAST_FORWARD",
+  "authority": "PASSIVE_VERIFICATION_ISSUE_ONLY_NO_CI_SCHEDULER_OR_REMOTE_RUNNER_DISPATCH"
+}
