@@ -4,6 +4,7 @@ Formalization assistance: OpenAI ChatGPT.
 SOURCE_PROOF_CANDIDATE / COMPILATION_NOT_RUN / EXPECTED_TYPES_NOT_RUN /
 FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN.
 -/
+import GRWTSK.Combinatorics.GraphTheory.DirectedGraphPathOccurrences
 import GRWTSK.Combinatorics.GraphTheory.SearchSoficLanguage
 import GRWTSK.DynamicalSystemsAndErgodicTheory.SoficPeriodicMatrixTrace
 import GRWTSK.CategoryTheoryHomologicalAlgebra.GeneralTheoryOfCategoriesAndFunctors.CertifiedTransversal
@@ -92,6 +93,40 @@ theorem search_language_iff_exact
     exact ⟨start, finish, (search_wordPath_iff_exact source target).mp path⟩
   · rintro ⟨start, finish, path⟩
     exact ⟨start, finish, (search_wordPath_iff_exact source target).mpr path⟩
+
+/-- The one-vertex occurrence graph admits every chronological list of
+actual edge labels. The original SingleObj path is still the source object. -/
+theorem one_state_wordPath {Edge : Type v} (word : List Edge) :
+    ExactSoficLanguageCover.WordPath
+      (occurrenceGraph (fun _ : Edge => ()) (fun _ : Edge => ()))
+      () word () := by
+  induction word with
+  | nil =>
+      exact ExactSoficLanguageCover.WordPath.nil ()
+  | cons edge tail ih =>
+      exact ExactSoficLanguageCover.WordPath.cons
+        edge tail ⟨rfl, rfl⟩ ih
+
+/-- Explicit bridge from ORIGINAL typed SingleObj quiver paths to
+the occurrence-labeled finite-word graph, not just a vertex summary.
+This specialization does not assert that arbitrary Noe graphs have
+one vertex, nor that the Python edge extractor is faithful. -/
+theorem original_singleObj_path_to_occurrence_word {Edge : Type v}
+    (path : Quiver.Path (SingleObj.star Edge) (SingleObj.star Edge)) :
+    ExactSoficLanguageCover.WordPath
+      (occurrenceGraph (fun _ : Edge => ()) (fun _ : Edge => ()))
+      ()
+      (GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathOccurrences.edgeOccurrences path)
+      () :=
+  one_state_wordPath _
+
+/-- In that exact original quiver specialization, distinct typed
+paths have distinct full chronological occurrence words. -/
+theorem original_singleObj_occurrence_words_injective {Edge : Type v} :
+    Function.Injective
+      (fun path : Quiver.Path (SingleObj.star Edge) (SingleObj.star Edge) =>
+        GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathOccurrences.edgeOccurrences path) :=
+  GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.PathOccurrences.edgeOccurrences_injective
 
 /-- Distinct original occurrence labels contribute independently to adjacency. -/
 theorem occurrence_adjacency_multiplicity
