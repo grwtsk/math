@@ -224,6 +224,60 @@ kernel-accepted or executable-refinement claim is made. The existing
 source-level proofs in imported modules retain their original
 separate verification dispositions.
 
+## Finite indexed original occurrence slots
+
+The new source-only `FiniteSourceOccurrenceTable` in
+`GRWTSK/Combinatorics/GraphTheory/SourceOccurrenceSoficBridge.lean`
+adds an exact finite carrier for a *chosen* extracted source-edge inventory.
+For `n` retained occurrences, the original slot identity is
+`Fin n`. Each slot has separately recorded payload, original
+source owner, source ordinal, source state and target state.
+Its declared `owner_ordinal_injective` condition excludes two
+original slots being assigned the same owner-and-ordinal key,
+even if their printed text, line and endpoints are identical.
+
+`exactSlotRefinement` constructs the existing
+`ExactSourceRefinement (Fin n) (Fin n) State` using the literal
+identity equivalence of slots. It does **not** identify two raw
+payload *values* that happen to be textually equal; such records
+remain distinct slots. `eq_of_owner_ordinal_eq` uses the
+explicit key uniqueness proof to recover the actual slot.
+`rawSlots_to_originalWord` applies the existing raw-to-original
+word-path transport, and `walkCounts_eq_matrixRowSum` uses the
+existing finite-seed matrix recurrence. The original occurrence
+labels and all counted parallel-edge multiplicities are retained.
+
+The runtime table still needs a **separately checked source binding**
+to this carrier. This requires proving that each selected Noe
+source record came from exact pinned UTF-8 bytes; its source
+owner, ordinal, target and reference observations were extracted
+and resolved correctly; distinct records were not collapsed; and
+the chosen finite *induced* graph did not omit any edge silently.
+Source references whose targets lie outside the selected visited
+set or are unindexed must be explicit **residuals**.
+Reverse-navigation or heuristic candidate edges are NOT original
+source imports and cannot be silently included in the same
+finite occurrence alphabet.
+
+The corresponding proposed read-only Noe method
+`SearchIndex.lean_occurrence_slot_table` emits a bounded table
+only for original indexed forward Lean imports whose endpoints
+are both visited and source-byte checked. It emits out-of-scope
+and unindexed imports separately and declares
+`exact_source_refinement="NOT_PROVED"`. This supplies a
+checkable finite *input shape*, not a Lean proof that a live
+SQLite index instantiates the table. An actual extraction
+correctness theorem and trusted Lean replay are still missing.
+
+Independent local finite reference tests: **5/5 passed**,
+including a 1,200-case randomized finite-slot and multiplicity
+oracle, repeated owner/line/target text with distinct ordinals,
+cycle closure, missing versus boundary residuals, duplicate
+owner/ordinal rejection, and tampered source-byte refusal.
+These are NOT the installed Noe regression suite and do not
+replace Lean compilation, kernel/axiom checking or checked
+source-to-runtime refinement.
+
 ## Runtime boundary and acceptance
 
 Noe's proposed indexed search schema `noe.repository-search/2`
