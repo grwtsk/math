@@ -2,13 +2,13 @@
   "schema": "grwtsk.math.verification-target/1",
   "date": "2026-11-02",
   "mathematical_source_repository": "grwtsk/math",
-  "mathematical_source_commit": "d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9",
+  "mathematical_source_commit": "95c94d73e4496ac28e4e186b7f6efb7bdea7ca16",
   "title": "Positive based-cycle source bijection, labeled walk matrix trace transport, and separately invariant missing/surplus cycle-label fiber counts after right-live pruning",
   "status": "SOURCE_PROOF_CANDIDATE_NOT_NATIVE_LEAN_ACCEPTED",
   "new_math_modules": [
     {
       "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPositiveCycleLiveEquiv.lean",
-      "blob": "a623514d52cae51213f95e5b52a92f3275bc8e54",
+      "blob": "b9b6df8f50fdf3f1a71884c6dbdb7d8535f8f422",
       "declarations": [
         "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPositiveCycleLiveEquiv.LiveVertex",
         "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPositiveCycleLiveEquiv.basedCycle_base_rightLive",
@@ -269,7 +269,7 @@
     },
     {
       "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPositiveCycleLiveEquiv.lean",
-      "blob": "a623514d52cae51213f95e5b52a92f3275bc8e54"
+      "blob": "b9b6df8f50fdf3f1a71884c6dbdb7d8535f8f422"
     },
     {
       "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLiveMatrixTraceTransport.lean",
@@ -343,7 +343,7 @@
   },
   "provenance": {
     "local_attribution": "grwtsk contributors",
-    "math_commit": "d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9",
+    "math_commit": "95c94d73e4496ac28e4e186b7f6efb7bdea7ca16",
     "noe_revision": "c881496cc1b0c4e52f0dbb73d32ca6f9eea47b2d",
     "canonical_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
     "source_git_exact_readback": true,
@@ -364,12 +364,21 @@
   },
   "review": {
     "path": "documentation/mathematics/_support/reviews/sofic-positive-live-cycle-trace-and-fibers-2026-11-02.md",
-    "blob": "4dc383cf5495087af3980a6e876dd01bef972406"
+    "blob": "4c9a7371f5a24c0452a562071922878c2197b44b"
   },
   "next": [
     "Run current authorized Noe managed Lean 4.34.1 compile of full exact source closure, record source-specific elaboration errors, checked statements and actual source hashes",
     "Repair any identified dependent-path Sigma/Subtype equality or matrix indexing proof elaboration errors without changing original graph labels/counts or hypothesis strength",
     "Obtain independent expected types/universes, trust-zero kernel and transitive axiom receipts; do not reuse earlier source pins across changed bytes",
     "Extend explicit source comparison to original certified/occurrence graphs only after actual edge/parallel-occurrence correspondence and algebraic invariants are established"
-  ]
+  ],
+  "source_revision_note": {
+    "source_commit": "95c94d73e4496ac28e4e186b7f6efb7bdea7ca16",
+    "new_exact_blob": "b9b6df8f50fdf3f1a71884c6dbdb7d8535f8f422",
+    "parent_source_commit": "d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9",
+    "parent_blob": "a623514d52cae51213f95e5b52a92f3275bc8e54",
+    "change": "Two Sigma.ext inverse witnesses explicitly use HEq.of_eq; theorem statements unchanged",
+    "native_compile": "NOT_RUN",
+    "kernel": "NOT_RUN"
+  }
 }
