@@ -15,7 +15,7 @@ noncomputable section
 
 The original arithmetic coefficient is μ(n) in {-1,0,1}.
 A single Bool cannot encode those three values injectively. TWO
-observer-covector-sign bits encode nonzero and negative, respectively.
+transverse spatial-polarization bits encode presence and negative sign.
 This module constructs actual Gödel tangent states whose measured
 physical bits equal the encoded bits and proves preservation under
 the existing Gödel shift isometry.
@@ -117,6 +117,39 @@ theorem polarizationState_timelike (p : Parameters)
   rw [hobs] at hmetric
   linarith
 
+/-- A source-local geometric acceptance criterion for a recorded tangent.
+The 1/4 margin is a mathematical calibration threshold, not a hardware
+measurement law. Admissibility alone does not identify a Möbius value. -/
+def AdmissiblePolarizationState (p : Parameters) (chart : ℝ)
+    (v : Tangent) : Prop :=
+  lorentzMetric p chart v v < 0 ∧
+    observerFlat p chart v < 0 ∧
+      (1 / 4 : ℝ) ≤ |theta1 p v|
+
+/-- The two canonical encoding states meet the geometric acceptance test. -/
+theorem polarizationState_admissible (p : Parameters) (chart : ℝ)
+    (b : Bool) :
+    AdmissiblePolarizationState p chart (polarizationState p b) := by
+  refine ⟨?_, ?_, ?_⟩
+  · rw [polarizationState_timelike]
+    norm_num
+  · rw [polarizationState_observerFlat]
+    norm_num
+  · rw [theta1_polarizationState]
+    cases b <;> norm_num
+
+/-- Future orientation, timelikeness and polarization margin all survive
+the actual Gödel chart isometry, with the chart argument transported. -/
+theorem admissiblePolarizationState_shift
+    (p : Parameters) (chart s : ℝ) (v : Tangent)
+    (h : AdmissiblePolarizationState p chart v) :
+    AdmissiblePolarizationState p (chart + s) (shiftTangent s v) := by
+  rcases h with ⟨hmetric, hfuture, hmargin⟩
+  refine ⟨?_, ?_, ?_⟩
+  · simpa only [lorentzMetric_shift] using hmetric
+  · simpa only [observerFlat_shift] using hfuture
+  · simpa only [theta1_shift] using hmargin
+
 /-- Physical-bit transfer uses the existing actual Gödel spatial shift.
 The measurement is theta1 polarization, not a future/past time label. -/
 def polarizationTransfer (p : Parameters) (s : ℝ) :
@@ -196,12 +229,57 @@ def recordMoebius (p : Parameters) (n : ℕ) : PhysicalBitRecord :=
     presence := polarizationState p (moebiusBits n).nonzero
     sign := polarizationState p (moebiusBits n).negative }
 
+/-- Geometric admissibility of BOTH independently stored tangent states.
+This does not assert coefficient fidelity or any physical hardware law. -/
+def AdmissiblePhysicalBitRecord (p : Parameters) (chart : ℝ)
+    (r : PhysicalBitRecord) : Prop :=
+  AdmissiblePolarizationState p chart r.presence ∧
+    AdmissiblePolarizationState p chart r.sign
+
+theorem recordMoebius_admissible (p : Parameters) (chart : ℝ)
+    (n : ℕ) :
+    AdmissiblePhysicalBitRecord p chart (recordMoebius p n) := by
+  change
+    AdmissiblePolarizationState p chart
+        (polarizationState p (moebiusBits n).nonzero) ∧
+      AdmissiblePolarizationState p chart
+        (polarizationState p (moebiusBits n).negative)
+  exact ⟨polarizationState_admissible p chart _,
+    polarizationState_admissible p chart _⟩
+
 /-- Decode TWO actual observer-spatial polarization readings. -/
 def readRecord (p : Parameters) (chart : ℝ)
     (r : PhysicalBitRecord) : ℤ :=
   decodeSigned
     { nonzero := polarizationBit p r.presence
       negative := polarizationBit p r.sign }
+
+/-- The zero tangent has neither a future-timelike orientation nor
+the required polarization margin. This is an invalid but decodable record. -/
+def nullTangent : Tangent :=
+  { t := 0, x := 0, y := 0, z := 0 }
+
+def nullPhysicalRecord (n : ℕ) : PhysicalBitRecord :=
+  { index := n, presence := nullTangent, sign := nullTangent }
+
+/-- An unchecked null record reads -1 since theta1 = 0 yields true
+for each inclusive-sign polarization bit. It must not be treated as
+a physically admissible source measurement. -/
+theorem readRecord_nullPhysicalRecord (p : Parameters) (chart : ℝ)
+    (n : ℕ) :
+    readRecord p chart (nullPhysicalRecord n) = -1 := by
+  simp [readRecord, nullPhysicalRecord, nullTangent,
+    decodeSigned, polarizationBit, theta1]
+
+theorem nullPhysicalRecord_not_admissible (p : Parameters) (chart : ℝ)
+    (n : ℕ) :
+    ¬ AdmissiblePhysicalBitRecord p chart (nullPhysicalRecord n) := by
+  intro h
+  have hneg : lorentzMetric p chart
+      (nullPhysicalRecord n).presence (nullPhysicalRecord n).presence < 0 :=
+    h.1.1
+  simpa [nullPhysicalRecord, nullTangent, lorentzMetric,
+    theta0, theta1, theta2, theta3] using hneg
 
 /-- No index has been changed or compressed by the codec. -/
 theorem recordMoebius_index (p : Parameters) (n : ℕ) :
@@ -247,6 +325,16 @@ def transferRecord (s : ℝ) (r : PhysicalBitRecord) :
   { index := r.index
     presence := shiftTangent s r.presence
     sign := shiftTangent s r.sign }
+
+/-- The same isometry preserves the separate geometric acceptance
+criterion for both record tangents without changing its source index. -/
+theorem admissiblePhysicalBitRecord_transfer
+    (p : Parameters) (chart s : ℝ) (r : PhysicalBitRecord)
+    (h : AdmissiblePhysicalBitRecord p chart r) :
+    AdmissiblePhysicalBitRecord p (chart + s) (transferRecord s r) := by
+  rcases h with ⟨hpresence, hsign⟩
+  exact ⟨admissiblePolarizationState_shift p chart s r.presence hpresence,
+    admissiblePolarizationState_shift p chart s r.sign hsign⟩
 
 theorem transferRecord_index (s : ℝ) (r : PhysicalBitRecord) :
     (transferRecord s r).index = r.index := rfl
