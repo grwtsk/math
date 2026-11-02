@@ -1,0 +1,93 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-01",
+  "title": "Original Möbius collar far residual: gcd-reduced close-gap, incomparable opposite-parity signed credit and all-rate payment",
+  "repo": "grwtsk/math",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCollarResidualGcdReducedGap.lean",
+    "blob": "48081c7e32d41455ef7fc7d02c006588bd9b36b7",
+    "status": "SOURCE_PROOF_CANDIDATE"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-collar-gcd-reduced-close-incomparable-2026-11-01.md",
+    "blob": "b6a4eec43ce1cce001a91f0e0c5de345f3f2228e"
+  },
+  "inherited_exact_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCollarResidualShortRatio.lean",
+      "blob": "12d234aa8977cefe3a587706a9de2360467a9e31"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCollarResidualLowWave.lean",
+      "blob": "792ca30380389c5e491a738fb598f86786a57496"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongIncomparableGcdReduced.lean",
+      "blob": "18cedc1e613147793d3efee64b39b69ca560044b"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTerminalHighSmoothCrossShellCollar.lean",
+      "blob": "37ce65434d6d468c7815006ea3c5fbe7fbf50648"
+    }
+  ],
+  "scope": {
+    "time": "T_J=J*log 2,J>=1; cap=floor(exp(sqrt(T_J))) independent of epsilon",
+    "selection": "original m,n in lowIndices B J, m!=n, original dist exclusion A, not shortRatioPair, incomparable, reduced distance abs(m/g-n/g)<=cap with g=gcd(m,n), optional choose mask",
+    "preserve": "source signed moebiusReal(m)moebiusReal(n)pickupResponseGram(T_J,m,n), both ordered orientations, squareful zeros, original cutoff",
+    "proof_classification": "UNCONDITIONAL_ORDINARY_MATHEMATICS; UNCOMPILED_LEAN_PROOF_CANDIDATES"
+  },
+  "paper_estimates": {
+    "quantitative": "|reducedCloseCross(B,A,J,choose)| <= 8*T_J*(1+T_J)^2*exp(sqrt(T_J)) for every B,A,choose",
+    "all_rates": "forall epsilon>0: one bank-,mask-,J-,choose-independent C_epsilon works, C_epsilon=48/epsilon*(1+6/epsilon)^2*exp(1/(2*epsilon))",
+    "arithmetic_sign": "if m,n squarefree, mu(m)*mu(n)=mu(m/gcd(m,n))*mu(n/gcd(m,n)); if reduced product=-1, original signed Gram term<=0",
+    "full_partition": "collarResidual=oddShort+otherShort+reducedOppositeParity+otherReducedClose+farReducedOrLong",
+    "far_lower": "farReducedOrLong>=-2*T_J^2 -16*T_J*(1+T_J)*exp(sqrt(T_J)/2)-8*T_J*(1+T_J)^2*exp(sqrt(T_J))",
+    "remaining": "farReducedOrLong upper every-positive-rate RH-strength; OPEN"
+  },
+  "lean": {
+    "candidate_theorems": [
+      "shortRatioPair_implies_comparable",
+      "reducedClosePair_not_shortRatio",
+      "longOrIncomparable_eq_reducedClose_add_far",
+      "reducedClose_eq_opposite_add_other",
+      "moebius_product_eq_gcd_reduced",
+      "reducedOppositeParityCross_nonpos",
+      "collarResidual_eq_four_signed_sectors",
+      "collarResidual_le_otherShort_otherClose_far",
+      "long_allRates_iff_farReducedOrLong",
+      "farReducedOrLong_lower_of_numeric"
+    ],
+    "unproved_numerical_targets": [
+      "ReducedCloseQuantitativeTarget",
+      "ReducedCloseUniformAllRateTarget"
+    ],
+    "noncircular_terminal_source_upper": "OPEN"
+  },
+  "finite_checks": {
+    "original_signed_masked_gcd_partition_fixtures": 160,
+    "genuine_opposite_reduced_parity_pair_sign_checks": 2204,
+    "gcd_close_pairs_with_unreduced_gap_larger_than_cap": 8156,
+    "numeric_magnitude_checks": 160,
+    "classification": "NONCERTIFYING_FINITE_DIAGNOSTICS"
+  },
+  "verification": {
+    "publication": "PENDING_GITHUB_READBACK",
+    "compilation": "DEFERRED_PER_USER",
+    "parser": "NOT_RUN",
+    "elaboration": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "opaque_native_unsafe_audit": "NOT_RUN",
+    "RH": "OPEN",
+    "full_original_signed_arithmetic_every_rate": "OPEN"
+  },
+  "related_issues": [
+    1556,
+    1429
+  ]
+}
