@@ -93,6 +93,25 @@ theorem trace_pow_eq_basedClosedWalkCount
   intro s _
   exact labeledAdjacency_pow_apply_eq_walkCount G n s s
 
+/-- Finite collections of starting states retain ALL endpoint-wise
+walk multiplicities. This is the exact arithmetic shape consumed by
+source-occurrence walk-count dynamic programming. For any implementation
+refinement, the transition alphabet must identify distinct actual edges,
+including parallel occurrences; forgetting edge labels loses this count.
+This theorem says nothing about distinct factor-language words or RH. -/
+theorem finiteSeedWalkCount_eq_matrixPowRowSum
+    (G : LabeledGraph State Alphabet) (starts : Finset State) (n : ℕ) :
+    (∑ source ∈ starts, ∑ target : State,
+      labeledWalkCount G n source target) =
+    (∑ source ∈ starts, ∑ target : State,
+      (labeledAdjacency G ^ n) source target) := by
+  classical
+  apply Finset.sum_congr rfl
+  intro source _
+  apply Finset.sum_congr rfl
+  intro target _
+  exact (labeledAdjacency_pow_apply_eq_walkCount G n source target).symm
+
 /-- Explicit based graph walk type. Retaining both the intermediate
 state and each emitted symbol avoids counting only distinct words. -/
 inductive LabeledWalkData (G : LabeledGraph State Alphabet) :
