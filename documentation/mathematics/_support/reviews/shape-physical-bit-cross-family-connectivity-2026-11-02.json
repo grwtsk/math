@@ -46,6 +46,24 @@
       "commit": "248bdb692e56ce5f93daf9307daf11bb6c5f204d",
       "namespace": "GRWTSK.NumberTheory.Moebius.PhysicalLiftedZeroWitness",
       "decl_count": 2
+    },
+    {
+      "id": "sharp_variance_floor",
+      "path": "GRWTSK/Combinatorics/ShapePhysicalBitSharpRowVariance.lean",
+      "blob": "0b0955ec456da5231d8dbf8ff393ab9964bfcb7b",
+      "commit": "2057623c233fa64a6805826a6ffe263aa6a0e475",
+      "namespace": "Folder.Research.ShapePhysicalBitSharpRowVariance",
+      "decl_count": 10,
+      "status": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_CHECKED"
+    },
+    {
+      "id": "actual_gibbs_row",
+      "path": "GRWTSK/Combinatorics/ShapePhysicalBitGibbsRealization.lean",
+      "blob": "3c55401b01114fdbffd3e27ca0757618c9cfeebc",
+      "commit": "654decf2dcd01e391241f767ae21aefdaa0e0c4f",
+      "namespace": "Folder.Research.ShapePhysicalBitGibbsRealization",
+      "decl_count": 7,
+      "status": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_CHECKED"
     }
   ],
   "related_source_statements": [
@@ -540,6 +558,76 @@
       "declaration": "NO_IDENTIFIED_DEFINITIONAL_EQUIVALENCE",
       "hypotheses": [],
       "acceptance": "related but distinct outcome law; adapter would need hypotheses"
+    },
+    {
+      "from": "ShapePhysicalBitRowConditioning.originalRowSecondMoment",
+      "to": "ShapePhysicalBitSharpRowVariance.rowLawMismatch",
+      "kind": "EXACT_FINITE_VARIATIONAL_DECOMPOSITION",
+      "declaration": "ShapePhysicalBitSharpRowVariance.originalRowSecondMoment_eq_absMass_sq_add_mismatch",
+      "hypotheses": [
+        "strict positivity on original endpointIndex T",
+        "sum w=1"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "ShapePhysicalBitRowConditioning.conditionedOriginalVariance_eq_rowSecondMoment_sub_sq",
+      "to": "ShapePhysicalBitSharpRowVariance.sourceCancellationVarianceFloor",
+      "kind": "EXACT_FINITE_VARIANCE_FLOOR",
+      "declaration": "ShapePhysicalBitSharpRowVariance.conditionedOriginalVariance_eq_floor_add_mismatch",
+      "hypotheses": [
+        "PositiveWindowLaw T w",
+        "same ordered signed originalRowSum"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "ShapePhysicalBitOptimizedRowLaw.regularizedRowWeight",
+      "to": "ShapePhysicalBitSharpRowVariance.rowLawMismatch",
+      "kind": "SHARP_EPSILON_MISMATCH_ALLOWANCE",
+      "declaration": "ShapePhysicalBitSharpRowVariance.regularizedRowMismatch_le",
+      "hypotheses": [
+        "ε>0",
+        "0<endpointIndex T.card"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "ShapePhysicalBitOptimizedRowLaw.regularizedRowWeight_isPositiveWindowLaw",
+      "to": "FiniteAdmissibleSampler.Sampler",
+      "kind": "ACTUAL_GIBBS_REALIZATION",
+      "declaration": "ShapePhysicalBitGibbsRealization.rowGibbsSampler",
+      "hypotheses": [
+        "ε>0",
+        "0<endpointIndex T.card",
+        "cost=-log(w)≥0",
+        "all source arcs allowed"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "ShapePhysicalBitGibbsRealization.rowGibbsSampler",
+      "to": "ShapePhysicalBitPairSampling.windowGibbsWeight",
+      "kind": "PROBABILITY_ROW_IDENTITY",
+      "declaration": "ShapePhysicalBitGibbsRealization.windowGibbsWeight_rowGibbsSampler",
+      "hypotheses": [
+        "ε>0",
+        "source window nonempty",
+        "same original endpoint-index subtype"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "ShapePhysicalBitGibbsRealization.rowGibbsSampler",
+      "to": "ShapePhysicalBitSharpRowVariance.regularizedRowMismatch_le",
+      "kind": "CONSISTENT_SOURCE_STATISTIC_AND_ACTUAL_SAMPLER",
+      "declaration": "ShapePhysicalBitGibbsRealization.actualGibbsRow_sourceAndVariance",
+      "hypotheses": [
+        "ε>0",
+        "full original index support",
+        "original physical signed readout defect retained"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
     }
   ],
   "unproved_or_invalid_transfers": [
@@ -631,7 +719,15 @@
     "source_wide_arithmetic_estimate": "OPEN",
     "RH": "OPEN",
     "sphere_cusp_measure_limit": "NOT_FORMULATED",
-    "true_local_trivialized_bundle": "NOT_FORMULATED"
+    "true_local_trivialized_bundle": "NOT_FORMULATED",
+    "new_gibbs_realization": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "new_sharp_variance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "finite_exact_rational_tests": "720_CASES_PASS_NONCERTIFYING"
   },
-  "mathematical_target": "New source-exact source/defect/endpoint and port comparison edges; next independently bound original endpointSum on affinely frequent good scales, not merely add a geometrical representation."
+  "mathematical_target": "Finite sharp sampling-variance source floor and honest positive Gibbs realization now candidates; independent signed endpoint or FAR arithmetic upper remains OPEN.",
+  "verification": {},
+  "new_math_review": {
+    "path": "documentation/mathematics/_support/reviews/physical-moebius-sharp-sampling-variance-2026-11-02.md",
+    "blob": "9ec518892b18d041152690236989cfb8458ea57a"
+  }
 }
