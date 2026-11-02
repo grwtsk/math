@@ -1,0 +1,154 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Exact Gaussian positive-radius sharp exponential threshold from squarefree original source and source-premise closure",
+  "repository": "grwtsk/math",
+  "attribution": "grwtsk contributors; derivation/Lean source assistance OpenAI ChatGPT",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "pinned_input_head": "e7753c12896b72ed2fe5ddc1945f16e769aeda56",
+  "additive_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianSaturatedRadiusUpper.lean",
+      "blob": "8c1cce6102cdf39d62aab580c2ecca14062f649d",
+      "theorem_bodies": 4,
+      "unported_props": 0,
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianSquarefreeRadiusSharpness.lean",
+      "blob": "5c757b36c1ebdf5370fd5481b5c8d945b05775cf",
+      "theorem_bodies": 3,
+      "unported_props": 4,
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianRadiusSharpThreshold.lean",
+      "blob": "fbd5804dc33f3156845daacc530143cfcdf041b5",
+      "theorem_bodies": 4,
+      "unported_props": 1,
+      "status": "SOURCE_PROOF_CANDIDATE"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-gaussian-squarefree-radius-sharp-threshold-2026-11-02.md",
+    "blob": "581ecb66e0dfb4ee9c5a40a269c843425f41b56b"
+  },
+  "typed_source_delta": {
+    "path": "documentation/mathematics/_support/reviews/moebius-gaussian-sharp-radius-source-delta-2026-11-02.json",
+    "blob": "6f4ff6712175599cc110d75aeb40b2b5d6ea2cd3",
+    "nodes": 11,
+    "edges": 12
+  },
+  "existing_input_files": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusQuantitativeMertensAbsoluteAbel.lean",
+      "blob": "b2fe063451f58ff9b892aa164d780bd20279192e",
+      "theorem": "invsqrt_range_sum_le_two_sqrt"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatSharpSourceEnvelope.lean",
+      "blob": "bb74da49d0f69d3accdb43281b67b8a800ea03ee",
+      "theorem": "endpoint_invsqrt_sum_le_two_sqrt_exp"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHalfRootMassImprovement.lean",
+      "blob": "972679fba73136eca8dc152e89c1f225db1ca0ae",
+      "premise": "OriginalInverseRootInventoryTarget"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianLogHeatSource.lean",
+      "blob": "e7443337b95b8491492acfa120809f6873f77ef1"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatAbsoluteEnergyStability.lean",
+      "blob": "eb3d30a9b103fe8a26e1f1448c6f9d8d44fd86cf",
+      "scope": "old a=2 signed energy absolute difference bound, distinct from new positive radius threshold"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalLaplaceZeroBarrier.lean",
+      "blob": "1a66b83553886e96fc227fa9eeb8b92f4bc8a6a8"
+    }
+  ],
+  "mathematics": {
+    "full_original_source": "Original μ(n), true endpointIndex T, actual causal pickupResponse with birth at log n, all signed Gram pair orientations and squareful zeros untouched; artificial Gaussian parameter separate",
+    "saturated_mass": "For s,T≥0, weightedErrorMass(sourceHeatRadius(s),T)≤2sqrt(exp T)*min(1,sT²)",
+    "saturated_radius": "For s,T≥0, R_s(T)≤16T exp T min(1,sT²)^2",
+    "squarefree_population": "On T_J=Jlog2,J≥9,N=2^J, at least N/32 nonzero μ in actual integer interval [N/4,N/2], by elementary union count of d² divisibility",
+    "terminal_birth": "Each selected squarefree original n has response r_n(u)≥exp(-T_J/2)/2 for all u∈[T_J-1/4,T_J]",
+    "gaussian_loss": "Each selected original nonzero μ has η_s(n)≥min(1,sT_J²)/8 for all s≥0",
+    "positive_radius_lower": "For J≥9,s≥0, R_s(T_J)≥2^-20 exp(T_J) min(1,sT_J²)^2",
+    "complete_sandwich": "2^-20 exp(T_J)min(1,sT_J²)^2≤R_s(T_J)≤16T_J exp(T_J)min(1,sT_J²)^2",
+    "exact_asymptotic_exponent": "For real a, lim_{J→∞} log R_{exp(-aT_J)}(T_J)/T_J =1−2a if a>0, and 1 if a≤0",
+    "critical_threshold": "a=1/2 is sharp for subexponential COMPLETE POSITIVE reconstruction-radius energy; a<1/2 gives exponential growth; this does NOT prove a lower bound for the signed heated energy",
+    "source_premise_closure": "Existing finite inverse-root source theorem supplies OriginalInverseRootInventoryTarget in new source proof candidate; old zero-free/spike consumers can now be instantiated without that duplicate elementary gate",
+    "RH": "OPEN"
+  },
+  "unported_pinned_Lean_gates": [
+    "ElementarySquarefreeBandPopulationTarget (ordinary PNT-free count, subset, T>=1)",
+    "ElementarySquarefreeGaussianLossTarget (ordinary 1−exp(-x) lower and source log bounds)",
+    "ElementarySquarefreeTerminalResponseTarget (ordinary exact causal birth response lower)",
+    "ElementaryTerminalRadiusIntegralTarget (ordinary interval squared positive energy)",
+    "ElementaryDyadicExponentialDivergenceTarget (standard Jlog2 exponential divergence)",
+    "OriginalLaplaceRightLineIdentityTarget, WeightedWholePickupLaplaceHolomorphyTarget, LaplaceProductIdentityTheoremTarget, DyadicOriginalEnergyCeilingTarget (old RH-facing ordinary analytic Lean ports)"
+  ],
+  "finite_noncertifying_checks": [
+    {
+      "J": 9,
+      "N": 512,
+      "squarefree_band_population": 79,
+      "required_at_least": 16,
+      "radius_a_half_approx": 76.569072,
+      "lower_a_half": 0.00048828125,
+      "upper_a_half": 51104.355
+    },
+    {
+      "J": 12,
+      "N": 4096,
+      "squarefree_band_population": 621,
+      "required_at_least": 128,
+      "radius_a_half_approx": 550.37883,
+      "lower_a_half": 0.00390625,
+      "upper_a_half": 545113.12
+    },
+    {
+      "J": 14,
+      "N": 16384,
+      "squarefree_band_population": 2491,
+      "required_at_least": 512,
+      "radius_a_half_approx": 1557.1481,
+      "lower_a_half": 0.0084569561,
+      "upper_a_half": 1376852.7
+    }
+  ],
+  "static_checks": {
+    "comment_balanced": true,
+    "no_authored_axiom_sorry_admit_unsafe_native_decide": true,
+    "valid_JSON": true,
+    "graph_nodes": 11,
+    "graph_edges": 12
+  },
+  "verification": {
+    "github_publication": "PENDING_EXPECTED_HEAD_ADD_ONLY_EXACT_GIT_READBACK",
+    "Lean_parser": "NOT_RUN",
+    "Lean_elaboration": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "Lean_compilation": "DEFERRED_PER_USER",
+    "independent_kernel": "NOT_RUN",
+    "full_transitive_axiom_native_opaque_audit": "NOT_RUN",
+    "squarefree_arithmetic_premise": "UNPORTED_PINNED_LEAN_ELEMENTARY",
+    "original_Mobius_coefficients_or_Gram_changed": false,
+    "original_causal_birth_or_terminal_cutoff_changed": false,
+    "root_import_or_toolchain_modified": false,
+    "CI_Noe_native_automation_dispatched": false,
+    "all_positive_rate_signed_heat_energy": "OPEN",
+    "all_positive_rate_original_FAR": "OPEN",
+    "canonical_RH": "OPEN"
+  },
+  "issues": [
+    1556,
+    1429
+  ]
+}
