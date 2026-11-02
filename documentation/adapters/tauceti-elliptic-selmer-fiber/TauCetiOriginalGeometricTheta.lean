@@ -298,6 +298,42 @@ theorem thetaTranslate_scalar (T : W.Point) (c : Fˣ) :
   apply Units.ext
   exact (thetaTranslate W T).commutes (c : F)
 
+/-- Scalar lifts form a REAL central group homomorphism
+from the original nonzero constant field into the actual
+theta group of elliptic rational functions. This closes
+the scalar-hom structural field required by the generic
+central-extension factor-cocycle theorem. -/
+noncomputable def scalarLiftHom : Fˣ →* ThetaLift W n where
+  toFun := scalarLift W n
+  map_one' := by
+    apply ThetaLift.ext W n
+    · rfl
+    · change Units.map (algebraMap F W.FunctionField) 1 = 1
+      simp
+  map_mul' a b := by
+    apply ThetaLift.ext W n
+    · rfl
+    · change
+        Units.map (algebraMap F W.FunctionField) (a * b) =
+          Units.map (algebraMap F W.FunctionField) a *
+            Units.map (thetaTranslate W (0 : W.Point) :
+              W.FunctionField →* W.FunctionField)
+              (Units.map (algebraMap F W.FunctionField) b)
+      rw [thetaTranslate_zero_units]
+      simp
+
+/-- The true scalar inclusion is faithful; no scalar
+quotient or freely chosen central coordinate is used. -/
+theorem scalarLiftHom_injective :
+    Function.Injective (scalarLiftHom W n) := by
+  intro c d h
+  have hf := congrArg
+    (fun x : ThetaLift W n => (x.function : W.FunctionField)) h
+  change algebraMap F W.FunctionField (c : F) =
+    algebraMap F W.FunctionField (d : F) at hf
+  apply Units.ext
+  exact (algebraMap F W.FunctionField).injective hf
+
 /-- Hence the source-geometric scalar kernel is CENTRAL,
 as required by a Mumford theta extension. -/
 theorem scalarLift_central (c : Fˣ) (x : ThetaLift W n) :
