@@ -1,0 +1,55 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Adaptive angular collar and saturated physical Kakeya pair budget with Farey determinant chord",
+  "date": "2026-11-01",
+  "sources": {
+    "GRWTSK/Combinatorics/GraphTheory/FiniteStraightTubeAngularCollar.lean": "67f5ee56c800996e1e18e33a82470debd9fac343",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPutnamKakeyaAngularCollar.lean": "048160c05362887f13a9a1560283a3139cba068a",
+    "GRWTSK/NumberTheory/FareyProjectiveChordBudget.lean": "164c2fd9bbc29ff311aefde73c96e48f69ef2dd5"
+  },
+  "inputs": [
+    "GRWTSK/Combinatorics/GraphTheory/FiniteStraightTubeProjectivePhysicalPair.lean",
+    "GRWTSK/MeasureAndIntegration/FiniteProjectiveTubeBallVolume.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPutnamKakeyaRoutedBudget.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapAllRate.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFareyFaryKakeyaIncidence.lean"
+  ],
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "target_declarations": [
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FiniteStraightTubeShadingCells.projectiveGap_comm",
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FiniteStraightTubeShadingCells.Family.physical_pair_le_saturated_cap_of_gap",
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FiniteStraightTubeShadingCells.Family.saturated_cap_le_first",
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FiniteStraightTubeShadingCells.Family.saturated_cap_le_second",
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FiniteStraightTubeShadingCells.Family.saturated_cap_le_ball",
+    "GRWTSK.NumberTheory.Moebius.PutnamKakeyaAngularCollar.originalProjectiveGap_symm",
+    "GRWTSK.NumberTheory.Moebius.PutnamKakeyaAngularCollar.angularFarPhysicalMass_symm",
+    "GRWTSK.NumberTheory.Moebius.PutnamKakeyaAngularCollar.angularFarCross_abs_le_rows",
+    "GRWTSK.NumberTheory.Moebius.PutnamKakeyaAngularCollar.angularFarPhysicalRows_le_saturatedRows",
+    "GRWTSK.NumberTheory.Moebius.PutnamKakeyaAngularCollar.endpointSum_le_ratePutnam_angular_saturated_signed",
+    "GRWTSK.NumberTheory.Farey.ProjectiveChordBudget.determinant_sq_le_both_unit_chords",
+    "GRWTSK.NumberTheory.Farey.ProjectiveChordBudget.determinant_one_normalized_projective_sq",
+    "GRWTSK.NumberTheory.Farey.ProjectiveChordBudget.determinant_one_height_projective_sq"
+  ],
+  "checks": {
+    "published_source": "STAGED",
+    "source_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "offline_arithmetic_diagnostic": {
+      "count": 89286,
+      "description": "exact rational assertions; no Lean or geometric volume certification"
+    }
+  },
+  "deficiencies": [
+    "source-derived original integer endpoint to actual projective tube direction map",
+    "Farey normalized scalar vector to EuclideanSpace (Fin 2) projectiveDirectionGap equality",
+    "all-positive-rate upper bound for complete near-angular and weak-overlap signed remainder on a single fixed affine-frequent set",
+    "correct full downstream dependency compilation and axiom closure"
+  ],
+  "authority": "passive verification target; no dispatch",
+  "root_import_change": false
+}
