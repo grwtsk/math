@@ -1,0 +1,129 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Source-faithful Möbius Gaussian log-heat inverse-root radius improvement and conditional zero-free bridge",
+  "repository": "grwtsk/math",
+  "attribution": "grwtsk contributors; mathematical/source formalization assistance OpenAI ChatGPT",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "scan": {
+    "head": "4bb1633f3b8c0741fd97c4b796678b6b27ecc0a2",
+    "root_tree": "69cf58f8c300c1c51902045a79f69ab1577ba137",
+    "analytic_theory_tree": "36043bb3cfd80c656626bc50a03e45b950232a50",
+    "actual_moebius_file_count": 191,
+    "prior_count": 174,
+    "unchanged_prior_blob_count": 174,
+    "new_committed_module_count": 17,
+    "curated_nodes": 105,
+    "typed_edges": 134,
+    "graph_status": "PINNED_SCAN_SEPARATE_FROM_TWO_SOURCE_CANDIDATES"
+  },
+  "new_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHalfRootMassImprovement.lean",
+      "blob": "972679fba73136eca8dc152e89c1f225db1ca0ae",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "theorem_count": 8,
+      "unproved_Lean_prop": "OriginalInverseRootInventoryTarget"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHalfRootZeroFreeBridge.lean",
+      "blob": "0120001d214fdafac5ebebbdd66ac8667c5f9c56",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "theorem_count": 3
+    }
+  ],
+  "graph": {
+    "path": "documentation/mathematics/_support/reviews/moebius-rh-original-source-typed-connectivity-v5-2026-11-02.json",
+    "blob": "ce736f08bdd6b7caa978e4d4029931e35e2bf959"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-gaussian-half-root-mass-zero-free-2026-11-02.md",
+    "blob": "d7ce6bdabe4ddeb805747d2dfd600185fb612f1d"
+  },
+  "unchanged_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianLogHeatSource.lean",
+      "blob": "e7443337b95b8491492acfa120809f6873f77ef1"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatStabilityReturn.lean",
+      "blob": "6ada761844e06d099811f06fea89db897ca1290e"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatVanishingSchedule.lean",
+      "blob": "47291584104530cfdf59475a50c494a821de44a9"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalSingleRateZeroFreeReturn.lean",
+      "blob": "ab3511f8ff0366757942c7480fc89860c548424a"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalLaplaceZeroBarrier.lean",
+      "blob": "1a66b83553886e96fc227fa9eeb8b92f4bc8a6a8"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarCompleteUpperTransfer.lean",
+      "blob": "11b3913a25626bbd4e1a593b50c31e82bac6abee"
+    }
+  ],
+  "math": {
+    "original_source": "All original mu(n), integer index, signed zero coefficients, birth-gated response, physical T, both ordered pair terms and true endpointIndex T retained",
+    "heat_multiplier": "sourceHeatCoeff(s,n)=mu(n)*exp(-s*(log n)^2); heat parameter s not physical time",
+    "radius": "sourceHeatRadius(s,n)=abs(mu(n))*(1-exp(-s*(log n)^2))",
+    "source_inventory": "For T>=0, N=floor(exp T), sum_{n=1}^N 1/sqrt(n)<=1+integral_1^N t^(-1/2)dt=2sqrt(N)-1<=2exp(T/2)",
+    "mass": "For s,T>=0, weightedErrorMass(sourceHeatRadius(s),T)<=2*s*T^2*exp(T/2), independently of any signed cancellation",
+    "complete_radius": "sourceHeatRadiusEnergy(s,T)<=16*T^5*s^2*exp T",
+    "new_schedule_family": "s_a(T)=exp(-a*T) for any real a, actual radiusEnergy <=16*T^5*exp((1-2a)*T) for T>=0",
+    "critical_half": "At a=1/2, actual radiusEnergy <=16*T^5 (polynomial even though s=e^(-T/2) stronger heat than earlier e^(-2T))",
+    "intermediate_one": "At a=1, actual radiusEnergy <=16*T^5*exp(-T), exponential decay",
+    "earlier_two": "At a=2, actual radiusEnergy <=16*T^5*exp(-3T), improved over prior 16T rate in asymptotic size",
+    "original_energy_return": "For a=1/2, original pickupEnergy(T)<=2*sourceHeatEnergy(s_a(T),T)+32*T^5, no signed heat smallness assumed",
+    "conditional_rate_r": "If heated original signed square energy at every dyadic T_J has <= C exp(r*T_J), r>0, then original energy <=(2C+3840/r^5)*exp(r*T_J), using T^5<=120/r^5*exp(rT)",
+    "conditional_zero_free": "Under previous explicit analytic Laplace and dyadic-ceiling gates, single rate r implies ZetaZeroFreeRightOf ((1+r)/2); one r does not imply RH",
+    "conditional_spikes": "Hypothetical zeta zero rho=beta+i gamma with 1/2<beta<1 forces arbitrarily large POSITIVE heated signed energy /exp(rT_J) at every 0<r<2beta-1",
+    "boundary": "No full all-positive-rate bound for heated signed energy, FAR or fixed core; RH OPEN"
+  },
+  "finite_preflight": {
+    "N_at_T2": 7,
+    "N_at_T6": 403,
+    "N_at_T10": 22026,
+    "weightedMass_half_T2": 1.163361,
+    "weightedMass_half_T6": 13.657412,
+    "weightedMass_half_T10": 64.529317,
+    "upperMass_half_T2": 8,
+    "upperMass_half_T6": 72,
+    "upperMass_half_T10": 200,
+    "oldScheduleMass_T6": 0.002943,
+    "oldScheduleMassBound_T6": 0.008886,
+    "status": "NONCERTIFYING_DIRECT_MOBIUS_SIEVE_AND_POSITIVE_MASS; ANALYTIC PROOF IN REVIEW"
+  },
+  "unproved_pinned_Lean_gates": [
+    "OriginalInverseRootInventoryTarget (new, elementary monotone-integral comparison, ordinary math proved)",
+    "OriginalLaplaceRightLineIdentityTarget (previously unported standard Dirichlet/Laplace)",
+    "WeightedWholePickupLaplaceHolomorphyTarget (previously unported Cauchy holomorphy)",
+    "LaplaceProductIdentityTheoremTarget (previously unported standard complex identity)",
+    "DyadicOriginalEnergyCeilingTarget (previously unported monotone energy, bounded log2 grid)"
+  ],
+  "trust": {
+    "git_publication": "PENDING_EXACT_GUARDED_NONFORCE_READBACK",
+    "source_parser": "NOT_RUN",
+    "elaboration": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "full_transitive_axiom_opaque_native": "NOT_RUN",
+    "compilation": "DEFERRED_PER_USER",
+    "authored_axiom_sorry_admit_unsafe_native_decide": "STATIC_SCAN_ABSENT",
+    "original_kernel_or_mu_modified": false,
+    "root_import_or_toolchain_modified": false,
+    "native_CI_Noe_automation_dispatched": false,
+    "all_positive_rate_FAR": "OPEN",
+    "canonical_RiemannHypothesis": "OPEN"
+  },
+  "related_issues": [
+    1556,
+    1429
+  ]
+}
