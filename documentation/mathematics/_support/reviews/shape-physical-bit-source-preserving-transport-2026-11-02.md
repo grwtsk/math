@@ -198,3 +198,73 @@ Nonnegativity is derived from the *actual positive product mass*. Its second mom
 - No arithmetic one-sided all-positive-rate upper bound, no fixed-gap good-scale certificate, no cusp convergence, and no canonical RH theorem is obtained.
 
 These are source proof candidates pending pinned Lean acceptance. The next mathematical obligation is an independently established bound on the exact arithmetic source or on the full importance variance with a justified, controlled weight floor, not an assumption that sampling or gauge invariance removes the signed cross terms.
+
+## Optimization: source-exact row conditioning and positive row sampling (2026-11-02)
+
+Research inspection at \`grwtsk/math/main\` commit \`983a0ef766db992d394b30fb7cb0e61be0fa9702\`, followed by additive publications on existing main. These are SOURCE_PROOF_CANDIDATES, **not** Lean-accepted theorems.
+
+**Published module 7:** [ShapePhysicalBitRowConditioning.lean](https://github.com/grwtsk/math/blob/c3db038a7fe6f3684700326cb0d91151beda0dd6/GRWTSK/Combinatorics/ShapePhysicalBitRowConditioning.lean); commit \`c3db038a7fe6f3684700326cb0d91151beda0dd6\`; exact blob \`d6acb07ffd34b23089556f86dabcf87f6b552b07\` (379 lines).
+
+**Published module 8:** [ShapePhysicalBitOptimizedRowLaw.lean](https://github.com/grwtsk/math/blob/90f064ea56d35de401c5411283dfd348bee5257d/GRWTSK/Combinatorics/ShapePhysicalBitOptimizedRowLaw.lean); final source commit \`90f064ea56d35de401c5411283dfd348bee5257d\`; final blob \`41d9e5d9bd105182c759ffba522f052aedf22cd9\` (259 lines), superseding historical initial blob \`905da7df0df71dcfd072993f7a8768596d1d90fb\` at initial commit \`bbbb2d708af0e02adc0fe78bde6258472690145c\`.
+
+### Reused mathematics and exact boundaries
+
+- \`PhysicalMoebiusBitGramReturn.lean\`, blob \`67cbc92ee2dec824d0a5c2930f0f45671dad61a9\`: the original ordered signed source and physical readout defect.
+- \`ShapePhysicalBitPairSampling.lean\`, blob \`b15bfdf183afd5f44379937a83b57c0e4c7a8407\`: actual \`endpointIndex T\`, positive normalized law, signed importance return and pair variance.
+- \`FiniteWeightedChannelCovariance.lean\`, blob \`1e88479b60ade504d9da34a700f8a75d1d6d6991\`: complete finite pair covariance; no independent arithmetic-sign premise.
+- \`FiniteCovarianceBudget.lean\`, blob \`0824eba30e866262fea432b51a5d04ff34b1cc60\`, and \`FiniteCovarianceTail.lean\`, blob \`27ef9ca357f97bbb3aa68f138ee3917da4eb71ed\`: explicit off-diagonal covariance budget, **not** a proved Möbius covariance rate.
+- \`CausalResponseGram.lean\`, blob \`a24171f4415963e35930b7e21598cabd5c063c2d\`: Gram positivity gives a lower, not RH-strength upper, signed cross allowance.
+- \`MoebiusWeightedDecoderEnergyTransfer.lean\`, blob \`ce1f1396785fe8fb9e045440a4edce25df734326\`: independently supplied weighted coefficient error budget; not a free signed Gram bound.
+- \`FiniteLabeledBoundaryTV.lean\`, blob \`8dd0e854150ab8c60bdd60bcf3c1d456f2f18ac9\`, and \`FiniteEventL1Comparison.lean\`, blob \`c2cabc0ee3306bb8fd22af48d0fdc325dcc2dca1\`: bounded categorical-law TV, not unbounded importance variance.
+- \`SphereFourMobiusTorusPorts.lean\`, blob \`39e0de0301c9480030a6f271edb2943addbe34d5\`, and \`MoebiusUniversalWaveformReturn.lean\`, blob \`8f807513c6a5cbf264750717327ed319f926ed44\`: separately typed geometric and waveform interfaces; neither implies arithmetic cancellation or independent Möbius signs.
+
+### Exact finite optimization
+
+Write the literal source kernel \`K_T(m,n) := originalSignedPair T m n\` with ORIGINAL Möbius signs, both orientations, original response Gram and exactly its original diagonal exclusion. Let \`W_T := endpointIndex T\`, \`R_T(m)=∑_{n∈W_T} K_T(m,n)\`, and let \`w\` be the existing strictly positive normalized \`PositiveWindowLaw T w\`. The original two-index importance estimator is \`Z₂(m,n)=K_T(m,n)/(w(m)w(n))\`. The new conditioned estimator is \`Z₁(m)=R_T(m)/w(m)\`. The written source statements seek to prove **exactly**
+
+\[
+\mathbb E_{w\otimes w}Z_2=\mathbb E_w Z_1=\operatorname{pickupCross}(T)
+\]
+
+and
+
+\[
+\operatorname{Var}_{w\otimes w}(Z_2)=
+\operatorname{Var}_w(Z_1)
++\sum_{m\in W_T} w(m)\sum_{n\in W_T}w(n)
+          \bigl(Z_2(m,n)-Z_1(m)\bigr)^2.
+\]
+
+Thus the conditional estimator cannot have higher finite sampling variance. The written \`originalRowSum_eq_observed_add_defect\` preserves the complete physical packet error ROW BY ROW; the optimized statistic never zeroes an unobserved or incorrect original arithmetic coefficient. The candidate \`pickupCross_sq_le_originalRowSecondMoment\` is the exact finite source-dependent inequality
+\[
+\operatorname{pickupCross}(T)^2 \leq \sum_{m\in W_T}R_T(m)^2/w(m).
+\]
+
+### Optimized positive source-derived law and explicit price
+
+For \`N=|W_T|>0\`, \`ε>0\`, and \`A_T=∑_{m∈W_T}|R_T(m)|\`, the second source defines
+
+\[
+w_\varepsilon(m)=\frac{|R_T(m)|+\varepsilon}{A_T+\varepsilon N}
+\quad (m\in W_T),
+\]
+zero outside \`W_T\`. It proves candidate positive normalization, the explicit nonzero probability floor, and source-dependent second-moment allowance
+
+\[
+\sum_{m\in W_T}R_T(m)^2/w_\varepsilon(m)
+ \le (A_T+\varepsilon N) A_T.
+\]
+
+Its balanced selection \`ε=A_T/N\` for \`A_T>0\` gives the candidate \`≤2A_T²\`. The written \`originalRowAbsMass_le_pairAbsMass\` establishes the role of cancellation **inside** each signed row:
+\[
+A_T\le \sum_{m,n\in W_T}|K_T(m,n)|.
+\]
+The optimized law is a literal \`PositiveWindowLaw\`, not automatically a Gibbs row without matching cost data; calculating every signed row may cost as much as the full pair table. This improves **statistical variance**, not necessarily runtime.
+
+### Verification, mathematical gap and objective
+
+Independent finite numerical algebra checks tested 120 variance decompositions and 150 regularized row laws. They are computational corroboration **ONLY**, not Lean elaboration, fresh kernel replay, or source arithmetic evidence. Both new files were created and their exact Git blobs read back. A noncertifying source scan found no authored \`sorry\`, \`admit\`, \`axiom\`, or \`native_decide\` declarations.
+
+The pinned environment is unchanged: Lean \`v4.34.1\`, Mathlib \`d13f23b723b8a846827a245b89c10fc7d3f11612\`. Pinned compilation, all expected theorem type checks, fresh kernel verification and transitive axiom/opaque/native audit remain **NOT_RUN**. No CI success and no remote execution are claimed.
+
+Importantly \`A_T\` is a source-defined unsigned total of COMPLETE signed rows, not a proved small quantity. Showing \`A_T\` subexponential would be an independent and generally **stronger** arithmetic obligation than controlling \`pickupCross T\` after summation. This optimization supplies NO new one-sided all-positive-rate upper bound for the original \`PickupEndpointQuadrature.endpointSum\`, no cusp-limit proof, and no canonical RH proof. The next acceptance action is pinned Lean compilation of the eight-source closure, followed by independent numerical/asymptotic arithmetic evidence for a source-bound signed upper estimate.
