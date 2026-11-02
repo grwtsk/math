@@ -94,12 +94,26 @@ reviewed, unreviewed and blocked populations.
 
 ## What remains to be formalized and tested
 
-The next bounded mathematical target is a finite executable joint-premise closure
-with a proved correspondence to `Derivable`. Checked reification must subsequently
-connect instantiated theorem applications to these rules. A solver result also
-needs a defined finite source class, a sound/complete SAT encoding, the relevant
-constraint graph, structural parameters and a total cost model. Directory shape,
-proof-neighborhood size and CNF treewidth are different objects.
+The executable [finite joint-premise closure](https://github.com/grwtsk/math/blob/main/GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/FiniteJointPremiseClosure.lean)
+has since been published as a **source proof candidate**, with
+`mem_finiteClosure_iff` and `finiteClosure_filter_iff` and an explicit
+[NOT_RUN verification record](https://github.com/grwtsk/math/issues/1427).
+The new [finite goal-pruning note](../reviews/finite-goal-pruning-2026-11-02.md)
+composes that source with finite prerequisite closure, an exact
+rule-list-to-dependency-edge correspondence and redundant-rule elimination,
+under a complete finite inventory. The external-graph version retains an
+explicit edge-coverage condition; the source-derived version proves it.
+The source-level Boolean-query equivalence
+does not substitute for compilation or source-fidelity review.
+
+The next mathematical obligation is **checked extraction/refinement** from
+actual instantiated theorem applications into the finite rule inventory,
+including quantifier scopes and source identities. The rule-list-to-edge
+coverage proof already exists within the source candidate.
+A solver result additionally needs a defined finite source class, a
+sound/complete SAT encoding, the relevant constraint graph,
+structural parameters and a total cost model. Directory shape, proof-neighborhood
+size and CNF treewidth remain distinct objects.
 
 Discovery benefit requires a separate comparison of lexical, semantic, typed-graph
 and proof-role/plan retrieval. Keep the mathematical information, source pin, model,
