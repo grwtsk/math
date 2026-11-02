@@ -73,6 +73,32 @@ theorem observedCoeff_wrong_index (p : Parameters) (chart : ℝ)
     observedCoeff p chart stream n = 0 := by
   simp [observedCoeff, h, wrong]
 
+/-- A stream is geometrically and index admissible on a specific
+original support if every PRESENT record meets the original-index check
+and both tangent acceptance predicates. Missing records are allowed. -/
+def AdmissibleStreamOn (p : Parameters) (chart T : ℝ)
+    (stream : PhysicalStream) : Prop :=
+  ∀ n ∈ endpointIndex T, ∀ r : PhysicalBitRecord,
+    stream.sample n = some r →
+      r.index = n ∧ AdmissiblePhysicalBitRecord p chart r
+
+/-- Coverage is separate from admissibility; absence is not μ(n)=0. -/
+def CompleteStreamOn (T : ℝ) (stream : PhysicalStream) : Prop :=
+  ∀ n ∈ endpointIndex T, ∃ r : PhysicalBitRecord, stream.sample n = some r
+
+theorem encodedStream_admissible (p : Parameters) (chart T : ℝ) :
+    AdmissibleStreamOn p chart T (encodedStream p) := by
+  intro n hn r hr
+  change some (recordMoebius p n) = some r at hr
+  have heq : recordMoebius p n = r := Option.some.inj hr
+  subst r
+  exact ⟨recordMoebius_index p n, recordMoebius_admissible p chart n⟩
+
+theorem encodedStream_complete (p : Parameters) (T : ℝ) :
+    CompleteStreamOn T (encodedStream p) := by
+  intro n hn
+  exact ⟨recordMoebius p n, rfl⟩
+
 /-- No original source integer is lost in the complete encoded stream. -/
 theorem observedCoeff_encoded (p : Parameters) (chart : ℝ) (n : ℕ) :
     observedCoeff p chart (encodedStream p) n = moebiusReal n := by
@@ -140,6 +166,56 @@ theorem pickupCross_eq_observed_add_defect
   by_cases h : m ≠ n
   · simp only [if_pos h]
     simp only [sourceKernel]
+    ring
+  · simp [h]
+
+/-- Coefficient-level source minus observed readout, at ORIGINAL integer n.
+This is an algebraic difference, not an independently measured error. -/
+def readoutError (p : Parameters) (chart : ℝ)
+    (stream : PhysicalStream) (n : ℕ) : ℝ :=
+  moebiusReal n - observedCoeff p chart stream n
+
+/-- Exact factorization of the complete signed defect. Both ordered
+orientations, original integer indices, and m != n are retained. -/
+theorem signedReadoutDefect_eq_error_expansion
+    (p : Parameters) (chart T : ℝ) (stream : PhysicalStream) :
+    signedReadoutDefect p chart T stream =
+      ∑ m ∈ endpointIndex T, ∑ n ∈ endpointIndex T,
+        if m ≠ n then
+          (readoutError p chart stream m * moebiusReal n +
+            observedCoeff p chart stream m *
+              readoutError p chart stream n) *
+            pickupResponseGram T m n
+        else 0 := by
+  classical
+  unfold signedReadoutDefect
+  apply Finset.sum_congr rfl
+  intro m hm
+  apply Finset.sum_congr rfl
+  intro n hn
+  by_cases h : m ≠ n
+  · simp only [if_pos h]
+    simp only [sourceKernel, observedKernel, readoutError]
+    ring
+  · simp [h]
+
+/-- A complete ordered quadratic Gram is blind to a global sign flip
+of every source coefficient. Thus vanishing Gram defect alone cannot
+certify the signs of individual original Möbius coefficients. -/
+theorem pickupCross_global_sign_invariant (T : ℝ) :
+    (∑ m ∈ endpointIndex T, ∑ n ∈ endpointIndex T,
+        if m ≠ n then
+          (-moebiusReal m) * (-moebiusReal n) *
+            pickupResponseGram T m n
+        else 0) = pickupCross T := by
+  classical
+  unfold pickupCross
+  apply Finset.sum_congr rfl
+  intro m hm
+  apply Finset.sum_congr rfl
+  intro n hn
+  by_cases h : m ≠ n
+  · simp only [if_pos h]
     ring
   · simp [h]
 
