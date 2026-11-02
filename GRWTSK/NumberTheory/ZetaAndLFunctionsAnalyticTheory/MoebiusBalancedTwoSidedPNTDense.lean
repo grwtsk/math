@@ -292,4 +292,92 @@ def PolylogGrowingPrimeBankDenseTarget : Prop :=
                     C * (X : ℝ) /
                       (1 + Real.log (X : ℝ)) ^ beta
 
+
+/-!
+## Externally cross-checked arithmetic interface and near-critical banks
+
+TauCeti/NumberTheory/ArithmeticDirichletSeries/Moebius.lean
+at TauCetiProject/TauCeti@1bf9d63472811e1dfe2ebf0c2f3bb5bc411bd6d5
+correctly rejects a *completely multiplicative* unitary-weight
+interpretation of the ideal Mobius coefficient. The following local
+rejection uses only our original integer-indexed real Mobius and
+the original prime-square zero. It does NOT import TauCeti, since
+its newer Lean/Mathlib pins differ from ours.
+
+The separate NEAR-CRITICAL growing-bank result is proved analytically
+in the companion source review using the independent ordinary
+Chebyshev prime-count upper bound, the existing two-variable
+Abel-Mertens theorem and our genuine source dense mask.
+Its full Lean derivation remains OPEN and is not inserted as an axiom.
+-/
+
+/-- Genuine ordinary Möbius is NOT completely multiplicative:
+mu(2)=-1 but mu(4)=0, while (-1)^2=1. -/
+theorem moebiusReal_not_completely_multiplicative :
+    ¬ ∀ m n : ℕ,
+      moebiusReal (m * n) = moebiusReal m * moebiusReal n := by
+  intro h
+  have hsq : moebiusReal (2 * 2) = 0 :=
+    moebiusReal_prime_mul_eq_zero_of_dvd 2 2
+      Nat.prime_two (dvd_refl 2)
+  have hp : moebiusReal 2 = (-1 : ℝ) := by
+    simp [moebiusReal,
+      ArithmeticFunction.moebius_apply_prime Nat.prime_two]
+  have hmul := h 2 2
+  rw [hsq, hp] at hmul
+  norm_num at hmul
+
+/-- No completely multiplicative real sequence can agree with
+the original integer-indexed Möbius coefficient at every n.
+Finite Euler-weight and ideal-character cancellation theorems
+therefore require a distinct proved transfer, not a relabeling. -/
+theorem no_complete_weight_represents_moebiusReal :
+    ¬ ∃ f : ℕ → ℝ,
+      (∀ m n : ℕ, f (m * n) = f m * f n) ∧
+      (∀ n : ℕ, f n = moebiusReal n) := by
+  rintro ⟨f, hmul, hsource⟩
+  apply moebiusReal_not_completely_multiplicative
+  intro m n
+  calc
+    moebiusReal (m * n) = f (m * n) := (hsource _).symm
+    _ = f m * f n := hmul m n
+    _ = moebiusReal m * moebiusReal n := by
+      rw [hsource m, hsource n]
+
+/-- At integer shell size X>=2, this permits a prime bank whose
+largest selected prime lies below
+(1+log X)^2 * (log(1+log X))^alpha.
+The real exponent 0<=alpha<2 reaches the earlier theta<2
+boundary and adds a near-critical polylogarithmic factor.
+No alternate source or approximation to mu is defined. -/
+def nearCriticalPrimeCutoff (α : ℝ) (X : ℕ) : ℝ :=
+  (1 + Real.log (X : ℝ)) ^ (2 : ℕ) *
+    (Real.log (1 + Real.log (X : ℝ))) ^ α
+
+/-- Exact original source target; the constant C is uniform in
+B (the arbitrary bank), X and the two ordered tag orientations.
+Analytically proved from independent Chebyshev prime counting,
+the classical Mertens log-power bound, P-smooth convolution,
+and the source-exact original two-sided Gram Abel estimate.
+
+This is a PROP FORMALIZATION TARGET, NOT a proved Lean theorem.
+TauCeti's PrimeIdealTheorem would also need a rational-prime
+identification and a version adapter before reuse. -/
+def NearCriticalPrimeBankDenseTarget : Prop :=
+  ∀ (α β ε : ℝ),
+    0 ≤ α → α < 2 →
+    0 < β → 0 < ε → ε < 2 →
+      ∃ C : ℝ, 0 ≤ C ∧
+        ∀ X : ℕ, 2 ≤ X →
+          ∀ B : PrimeBand,
+            (∀ p ∈ B.primes,
+              (p : ℝ) ≤ nearCriticalPrimeCutoff α X) →
+              ∀ a b : Bool,
+                |taggedDenseRectangle B.primes a b
+                  (putnamRateGapSet ε
+                    (Real.log (2 * (X : ℝ))))
+                  X X (Real.log (2 * (X : ℝ)))| ≤
+                    C * (X : ℝ) /
+                      (1 + Real.log (X : ℝ)) ^ β
+
 end GRWTSK.NumberTheory.Moebius.BalancedTwoSidedPNTDense
