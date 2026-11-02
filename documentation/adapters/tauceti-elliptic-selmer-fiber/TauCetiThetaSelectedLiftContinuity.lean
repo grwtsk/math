@@ -37,6 +37,10 @@ continuity of the scalar factor itself, nor global
 continuity of the infinite theta group action,
 nor the cocycle law is inserted as an extra premise.
 
+This source edition uses ⊤ for its locally discrete topology;
+the earlier ⊥ declaration was mathematically indiscrete
+and could not support the asserted discrete topology instance.
+
 The remaining source arithmetic supplier is now
 the specific assertion that each chosen actual
 elliptic rational function s(t).function has an
@@ -71,9 +75,9 @@ private abbrev K := SeparableClosure F
 private abbrev EW := (W⁄(SeparableClosure F)).toAffine
 
 /-! Only the SOURCE theta lift and its coefficients receive
-the discrete topology. This does NOT change the imported
+the DISCRETE (⊤), not the indiscrete (⊥), topology. This does NOT change the imported
 topology of F or assert that F is a discrete local field. -/
-local instance : TopologicalSpace (ThetaLift (EW W) n) := ⊥
+local instance : TopologicalSpace (ThetaLift (EW W) n) := ⊤
 local instance : DiscreteTopology (ThetaLift (EW W) n) := ⟨rfl⟩
 
 /-- The ONLY new arithmetic orbit-continuity requirement:
@@ -94,7 +98,7 @@ in the discrete function-field-units topology.
 The set of t is the ORIGINAL finite E[n] module. -/
 def SelectedThetaFunctionOrbitsContinuous : Prop :=
   ∀ t : W.TorsionCoeff n,
-    letI : TopologicalSpace (EW W).FunctionFieldˣ := ⊥
+    letI : TopologicalSpace (EW W).FunctionFieldˣ := ⊤
     Continuous (fun σ : G (F := F) =>
       Units.map
         (MonoidHom.ofClass (W.functionFieldGaloisAction σ))
@@ -114,7 +118,7 @@ theorem selectedThetaLiftOrbits_of_functionOrbits
     (hfunctions : SelectedThetaFunctionOrbitsContinuous W n) :
     SelectedThetaLiftOrbitsContinuous W n := by
   intro t
-  letI : TopologicalSpace (EW W).FunctionFieldˣ := ⊥
+  letI : TopologicalSpace (EW W).FunctionFieldˣ := ⊤
   haveI : DiscreteTopology (EW W).FunctionFieldˣ := ⟨rfl⟩
   let embed : ThetaLift (EW W) n →
       W.PointCoeff × (EW W).FunctionFieldˣ :=
@@ -162,7 +166,7 @@ theorem originalThetaScalar_continuous_of_selectedLiftOrbits
     (a : Z1 (G (F := F)) (W.TorsionCoeff n))
     (hselected : SelectedThetaLiftOrbitsContinuous W n) :
     Continuous (originalThetaUnitsCochain W n a) := by
-  letI : TopologicalSpace ((K (F := F))ˣ) := ⊥
+  letI : TopologicalSpace ((K (F := F))ˣ) := ⊤
   haveI : DiscreteTopology ((K (F := F))ˣ) := ⟨rfl⟩
   have ha : Continuous (fun σ : G (F := F) => (a σ : W.TorsionCoeff n)) :=
     ((mem_Z1_iff).mp a.property).1

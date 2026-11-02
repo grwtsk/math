@@ -1,3 +1,5 @@
+> **2026-11-02 discrete-topology correction and stronger finite-family return:** The original source candidate `TauCetiThetaFunctionFieldOrbitContinuous.lean`, Git blob `6899d111f7bcb86ad2756b316d29214704fa230d`, used `letI : TopologicalSpace (E W).FunctionFieldˣ := ⊥` while claiming the topology was discrete. `⊥` is indiscrete, not discrete. The revised source `b4cea5bac589bd9a46d926515c0281779c896db0` uses `⊤` and adds `originalSelectedThetaFunctions_commonOpenStabilizer`: all finitely many actual selected `E[n]` theta functions have one common open Krull fixing set. The dependent `TauCetiThetaSelectedLiftContinuity.lean` now also uses `⊤` at its four former `⊥` occurrences (blob `34fb80d3c6efc400c5878a72620ffce138d1c965`). The formalization remains **SOURCE_PROOF_CANDIDATE**, with pinned Tau Ceti compilation, kernel replay and transitive axiom audit `NOT_RUN`. Historical narrative below remains original provenance, not evidence of successful verification.
+
 # Genuine elliptic theta finite descent: local constancy of every original function-field Galois orbit
 
 **Date:** 2026-11-02 (America/Los_Angeles).
