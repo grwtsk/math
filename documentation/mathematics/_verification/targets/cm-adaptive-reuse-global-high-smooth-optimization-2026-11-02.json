@@ -1,0 +1,69 @@
+{
+  "schema": "math-source-proof-candidate-v1",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "pinned": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_bindings": {
+    "CMAdaptiveDisjointBirth": "d0c860b5b6ecd02b8e523571bf488535e17ae000",
+    "CMAdaptiveSignedTupleMoments": "fecbf4ac6296d9bcb625865fa95e98137b3074b7",
+    "CMAdaptiveErrorSupportOrthogonality": "d7055da2c0b51930d53cf06dd610c7d7220fac84",
+    "MoebiusHighSmoothCofactorCountProof": "6899657e4ad54cf56fd7e907966d4d9bc2f7f3f8",
+    "MoebiusHighSmoothTimeLocalGramProof": "ef878a103e99adb0b673c918f6179e33f1c8e7e0",
+    "MoebiusSmoothBirthGramRegularization": "c9ed77c810016cd2ba9081b6774e158e8a8630c4"
+  },
+  "files": [
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMInheritedQuadraticWidthBirth.lean",
+      "sha": "1278ef059a52a6be88264a132a0767f5a7af1049",
+      "chars": 9175
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMAdaptiveHighSmoothAllShell.lean",
+      "sha": "62bed1cccf5ad61f3529f594e1ed85a1bd36dd89",
+      "chars": 9864
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/cm-adaptive-legacy-quadratic-width-and-global-high-smooth-optimization-2026-11-02.md",
+      "sha": "9639cb560a96078d69da6a64333209f79a0eb0d6",
+      "chars": 6841
+    }
+  ],
+  "expected_declarations": [
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMInheritedQuadraticWidthBirth.quadraticWidth_le_adaptiveWidth",
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMInheritedQuadraticWidthBirth.inheritedResponse_eq_source_after",
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMInheritedQuadraticWidthBirth.inheritedSignedDefect_pairwise_zero",
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMInheritedQuadraticWidthBirth.original_inherited_signed_square",
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMInheritedQuadraticWidthBirth.InheritedCubicErrorEnergyBudget",
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMAdaptiveHighSmoothAllShell.adaptiveResponse_eq_pickup_mul",
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMAdaptiveHighSmoothAllShell.signedAdaptiveCoefficient_abs_le_shell",
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMAdaptiveHighSmoothAllShell.highShellWave_abs_le_count",
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMAdaptiveHighSmoothAllShell.allHighShellWave_abs_le_finiteEnvelope",
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMAdaptiveHighSmoothAllShell.completeWave_eq_high_add_low",
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMAdaptiveHighSmoothAllShell.GlobalHighEnvelope"
+  ],
+  "verification": {
+    "publication": "BLOB_STAGED",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "axiom_audit": "NOT_RUN",
+    "legacy_cubic_integral": "OPEN_PROP",
+    "high_global_geometric_sum": "OPEN_PROP",
+    "high_index_shell_equals_source": "OPEN",
+    "high_low_even_moment_transfer": "PAPER_ONLY",
+    "all_rate_arithmetic": "OPEN",
+    "RH": "NOT_CLAIMED"
+  },
+  "negative_controls": [
+    "Do not confuse P-smooth divisors with completely P-smooth source indices",
+    "Existing source moebiusReal and response untouched",
+    "Only smoothing error cross products vanish; original signed cross terms survive",
+    "Fixed bank, no growing-bank constants suppressed",
+    "Do not insert RH or an all-k arithmetic bound as an axiom",
+    "No unqualified Lean verification or certified new proof",
+    "No CI, native runner, scheduler, root imports or dependencies changed"
+  ]
+}
