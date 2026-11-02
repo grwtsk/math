@@ -591,3 +591,108 @@ kernel replay NOT_RUN, axiom audit NOT_RUN,
 compatible upstream build NOT_RUN. No new
 `sorry`, `axiom`, `admit`; no native
 Noe/CI dispatch, root import or toolchain changes.
+
+
+## Source-exact Mumford theta GroupExtension and genuine Galois scalar factor (2026-11-02)
+
+Pinned source remains The Tau Ceti contributors' immutable
+`TauCetiProject/TauCeti@2bdb755239d3bd84760e99bc83166bdf7cc75a6b`,
+Apache-2.0, Lean v4.36.0-rc1. Native grwtsk/math
+Lean v4.34.1 and umbrella imports remain unchanged.
+New detailed review:
+`documentation/mathematics/_support/reviews/bsd-original-theta-galois-action-factor-set-2026-11-02.md`.
+
+The actual original elliptic rational-function theta group
+`ThetaLift (E/Fsep,n)` has now been strengthened with
+`ThetaLift.mul_inv_function_of_point_eq`, showing
+`(x*y^-1).function=x.function/y.function`
+when `x.point=y.point`, and
+`ThetaLift.existsUnique_scalar_mul_eq_of_point_eq`,
+showing its true fibre over one n-torsion point is
+a torsor under the ORIGINAL constants `Fsepˣ`.
+The source `TauCetiOriginalGeometricTheta.lean`
+blob is `74c12f32bed4567731183736a0f2b748e86ddecc`.
+No arbitrary scalar/Weil pairing is supplied.
+
+New `TauCetiThetaGroupExtension.lean`, blob
+`98e1b2047b82fa2970d315a2f520675f3a654456`,
+packages the ACTUAL geometric theta group as
+`GroupExtension (Fsepˣ) Theta (Multiplicative E[n])`.
+The original rational functions prove faithful scalar
+kernel, exactness and projection surjectivity.
+The pinned Tau Ceti `GroupExtension.factorSet`,
+`factorSetToGroupExtensionEquiv`,
+`normalizeSection`,
+`isMulCocycle₂_factorSetFun`,
+`cohomologyClass_factorSet_eq`, and
+`trivialMulDistribMulAction` then supply
+an internal normalized original theta factor set,
+its 2-cocycle and independence of normalized sections.
+This is an H² of **the point group E[n]**, not
+the original Galois/Brauer H² of F.
+
+New `TauCetiThetaGaloisGroupAction.lean`, blob
+`1e0c4c0eac356a0ef4103f1c5711f41ae57d063c`,
+gives the actual Galois action on the real theta
+group preserving its multiplication, identity
+and composition. It uses exact original Tau Ceti
+point and function field Galois actions and
+`functionFieldGaloisAction_translation` with
+the original minus-translation convention.
+The scalar inclusion is proved equivariant with
+the true action on `(Fsep)ˣ`, not a proxy.
+
+New `TauCetiThetaGaloisScalarFactor.lean`, blob
+`327d67868b3ce312dc480987856b16385431dc80`,
+proves source-candidate equality of the PREVIOUS real
+`thetaObstructionScalar a σ τ`, chosen from its
+elliptic rational-function quotient, with the
+actual original theta Galois group boundary
+`uσ (σuτ) uστ^-1`. Faithful source scalar
+inclusion makes this factor UNIQUE; the group
+action and centrality derive its multiplicative
+2-cocycle law WITHOUT assuming a scalar factor
+law as a separate arithmetic source. Consequently
+the amended `TauCetiThetaBrauerH2Transport.lean`,
+blob `4457197b2c590dc8c296f7714d718d53a7c72fae`,
+now has `originalThetaBrauerH2_of_continuous`.
+Its ORIGINAL `UnitsCoeff F` canonical H²
+requires the source genuine theta scalar
+CONTINUITY only. Its normalized `ZMod n`
+return still requires n-torsion of this
+actual Brauer class (via pinned
+`h2KummerToUnits_range` and
+`muNRepH2Equiv` / `h2MuEquivZMod`).
+
+**Unclosed arithmetic:** prove continuity/finite
+Galois descent of the theta scalar cochain
+and its scalar section-change 1-cochain,
+cohomological independence of representatives
+in GALOIS H², n-torsion of the REAL theta
+Brauer class, and the original geometric theta
+commutator equal to pinned
+`Isogeny.weilPairing` with correct sign.
+Do NOT identify internal point-group H²
+with Galois Brauer H². Completing those
+does NOT automatically prove local abelian
+Tate separation, good truncation/p-power
+Selmer duality, real p=2 corrections,
+global Poitou–Tate, Néron–Tate regulators
+or a COMPLEX Hasse–Weil central leading jet.
+The full untruncated local point Kummer
+cone retains the true nonzero higher
+`H²(U_v)=H¹(F,E)` Weil–Châtelet residue.
+
+**All new Lean scripts remain source proof candidates:**
+parsing NOT_RUN, compilation NOT_RUN, fresh
+kernel replay NOT_RUN, full transitive axiom
+audit NOT_RUN, compatible Tau Ceti adapter
+build NOT_RUN. Original source theorem
+reuse is not a local kernel receipt.
+No `sorry`, `admit`, new `axiom`, root
+import/toolchain migration or native Noe/CI dispatch.
+Independent exact synthetic C₂-Heisenberg checks
+covered 160,000 2-cocycle triples and 40,000
+scalar-fibre instances; these validate the
+group identities only, not actual elliptic
+Galois geometry or Lean proofs.
