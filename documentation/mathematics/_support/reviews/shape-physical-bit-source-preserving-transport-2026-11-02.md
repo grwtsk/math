@@ -96,3 +96,33 @@ when `∀ i, |f i| ≤ 1`. The quantity is **L1 distance**, not TV distance with
 - Fresh kernel checking, imported dependency closure and transitive axiom / opaque / native audit: **NOT_RUN**.
 - No supported configured CI checks were reported on the third source commit; no remote build or native verification was dispatched.
 - No new finite-to-asymptotic convergence, independent-draw concentration, sphere cusp limit, topological fiber-bundle trivialization, or new signed arithmetic estimate is claimed.
+
+## Sharper finite total variation and coupling allowance (fourth additive module)
+
+- Source: [ShapePhysicalBitFiniteTVCoupling.lean](https://github.com/grwtsk/math/blob/7e62c98390b6f94213f6ff6b64858a602bf835d4/GRWTSK/Combinatorics/ShapePhysicalBitFiniteTVCoupling.lean)
+- Commit: `7e62c98390b6f94213f6ff6b64858a602bf835d4`; parent `a19e2dca57e9fac89600e5a6b7d7cd789d0452fc`.
+- Exact published blob: `25194eada902abffdbc3dcd61ac66ea549b57b0b`.
+- Imported finite-sampling source: `ShapePhysicalBitFiniteSampling.lean`, blob `b71c6837fcc8673f4415a687f554847f7ba1d9fc`.
+- Original normalized real Gibbs law: `GraphTheory/FiniteAdmissibleSampler.lean`, blob `e74a253e66c1ee9ab5b6d97440e1fdeee49a54be`.
+
+### Precise finite quantitative advance
+
+The original Gibbs row has `Sampler.probability_row_sum_one`. For N>0 the comparison uniform row also sums to one. The written `rowDelta_sum_zero` and `centered_row_delta` recover this exact zero-mass identity, allowing a sharp **half-L1 / total variation** bound for every `0 ≤ f i ≤ 1`:
+[
+|mathrm{sampledExpectation}(S,o,f)-mathrm{uniformAverage}(f)|
+le mathrm{rowTotalVariation}(S,o)
+=	frac12mathrm{probabilityL1Gap}(S,o).
+]
+This strengthens the preceding general `|f|≤1` L1 bound specifically for the true two-bit normalized loss and the separate unavailable-record indicator. It uses the same actual `sourceIndex : Fin N → ℕ` without assuming injectivity, altered indices, independent draws, or source coefficient accuracy.
+
+The exact common-index overlap is `commonIndexMass S o = ∑ i, min (S.probability o i) (N:ℝ)⁻¹`. The candidate `commonIndexMass_add_rowTotalVariation` states overlap+TV=1. `HasRowUniformMarginals` declares an explicit nonnegative joint matrix with exactly the existing two marginals. The candidate `diagonal_coupling_le_commonIndexMass` bounds same-index agreement for **every supplied coupling**. `uniformDiagonalCoupling_hasMarginals` and `uniformDiagonalCoupling_agreement` provide a concrete attaining coupling for the **uniform** case. Existence of an attaining maximal coupling for an **arbitrary nonuniform** Gibbs row is not established by these statements, and is an outstanding optional extension.
+
+`finiteTV_comparison_with_original_signed_return` keeps two finite TV bounds *alongside* the exact imported `pickupCross = packet + defect`. The observable return still contains the entire ordered off-diagonal Gram sum, all original Möbius signs and integer indices, the original source windows, and the signed defect for incomplete, invalidly indexed or incorrectly decoded observations. The finite TV bound is on bounded bit observables, **not** on the signed arithmetic Gram kernel: it cannot be used to assert a new endpoint/good-scale cancellation bound.
+
+### Verification facets for fourth module
+
+- Additive source creation and exact GitHub blob readback: **PASS**.
+- Static source-token scan for `sorry`, `admit` and `native_decide`: no hits; not a transitive audit.
+- Exact installed Lean and Lake executable: unavailable in this execution environment.
+- Pinned Lean/Mathlib compile, expected theorem types, fresh kernel checking, and transitive dependency-closure axiom/opaque/native audit: **NOT_RUN**.
+- No compilation result, CI proof result, or arithmetic estimate is inferred from publication. This is `SOURCE_PROOF_CANDIDATE`.
