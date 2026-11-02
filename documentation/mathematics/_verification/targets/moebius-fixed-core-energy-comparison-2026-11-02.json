@@ -4,7 +4,7 @@
   "title": "Actual fixed Mobius compensated core versus nonnegative pickup energy and subexponential approximate monotonicity",
   "source_blobs": {
     "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedCoreEnergyComparison.lean": "82011c80d8a8dacbf3cbe13ccded229d5c24bd80",
-    "documentation/mathematics/_support/reviews/moebius-fixed-core-energy-comparison-2026-11-02.md": "5159f4d24bdbce1ac0c7876ea46b7ab424c8008a"
+    "documentation/mathematics/_support/reviews/moebius-fixed-core-energy-comparison-2026-11-02.md": "40ba917b4a7e2a3b96ea9d383a86730650506fd8"
   },
   "pinned_imports": {
     "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedSublinearCompensatedEndpoint.lean": "f2d9748589f5999ff667486538968d7eff5a753f",
@@ -53,5 +53,6 @@
     "root_unchanged": true,
     "dependencies_unchanged": true,
     "no_force_update": true
-  }
+  },
+  "review_scalar_correction": "Corrects the explicit exponent-rate allowance B_* constant from 32/delta^2 to 36/delta^2 to pay the additional 2*T^2 original diagonal. Mathematical source and conditional Lean types unchanged."
 }

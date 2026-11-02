@@ -46,7 +46,8 @@ Using the prior `FixedGapCardTarget`, `FixedWeakPaymentTarget`, `FixedGcdRatioTa
   C_*(T) >= -B_*(T).                                                (5)
 
 B_* has every positive exponential rate: for delta>0 and T>=max(4,4/delta^2), using sqrt T <= delta*T/2 and exp-series
-  B_*(T) <= [32/delta^2+(64+sqrt(2))/delta]*exp(delta*T).            (6)
+  B_*(T) <= [36/delta^2+(64+sqrt(2))/delta]*exp(delta*T).            (6)
+The additional 4/delta^2 pays the separate 2*T^2 diagonal term; the 32/delta^2 portion pays the 4*T^2*exp(sqrt T) gap term.
 This is a paper-calculus bound, not a kernel-accepted Lean theorem.
 
 The genuinely missing half is therefore ONLY the UPPER positive excursions of the fixed signed core. No sign claim like C_*(T)<=0 is valid: the source comparable packet can be positive, and the remaining incomparable packet can have either sign.
