@@ -1,0 +1,70 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+PASSIVE_ACCEPTANCE_TARGET / COMPILATION_NOT_RUN /
+EXPECTED_TYPES_NOT_RUN / FRESH_KERNEL_NOT_RUN /
+TRANSITIVE_AXIOM_AUDIT_NOT_RUN.
+-/
+import GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMScaleDependentPrimeAllShellDirichletSqueeze
+import GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMScaleDependentPrimeEarlyShells
+import GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMScaleDependentPrimeExactSupport
+
+/-!
+# EXACT original source: full moving-bank highSmoothBlock is one prime after s=4
+
+This file contains inert expected-declaration and transitive-axiom
+inspection commands, not a native verification receipt.
+Recheck using Lean v4.34.1 with pinned Mathlib
+d13f23b723b8a846827a245b89c10fc7d3f11612.
+
+No source replacement, unproved arithmetic cancellation, RH,
+GRH, execution/scheduler or foreign host authority.
+-/
+
+open GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMScaleDependentPrimeSingletonTail
+open GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMScaleDependentPrimeFiniteException
+open GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMScaleDependentPrimeAllShellDirichletSqueeze
+open GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMScaleDependentPrimeEarlyShells
+open GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMScaleDependentPrimeExactSupport
+
+#check shell_time_gt_four
+#check nearSquareRootCut_gt_one_of_shell_large
+#check movingHighShell_eq_singleton_of_one_le_cutoff
+#check movingHighShell_eq_singleton
+#check shellEarlyDifference_eq_zero
+#check finiteEarlyDifference_eq_complete
+#check movingHighWave_eq_primes_add_finiteEarly
+#check movingHighWave_eq_primes_add_completeEarly
+#check fullMovingShellDirichlet_eq_prime
+#check fullMovingDirichletFinite_eq_prime_add_early
+#check fullMovingDirichletFinite_eq_prime_add_completeEarly
+#check FullMovingDirichletPositiveHalfplane
+#check FullMovingPositiveRadialResidue
+#check early_shell_time_lt_four
+#check nearSquareRootCut_lt_one_of_small_shell
+#check early_one_is_admissible
+#check movingHighShell_eq_balancedBlock_of_small
+#check balancedBlock_eq_dyadic_Ioc
+#check movingHighShell_eq_full_dyadic_Ioc
+#check firstFiveMovingIndices_eq_Icc
+#check firstFiveMovingWave_eq_original_Icc
+#check movingHighWave_eq_initial_Icc_add_primeTail
+#check firstFiveMovingDirichlet_eq_original_Icc
+#check fullMovingDirichletFinite_eq_initial_Icc_add_primeTail
+#check onePerShellRatio_pos
+#check onePerShellRatio_lt_one
+#check chosenPrimePower_le_geometric
+#check chosenPrimePower_ge_geometric
+#check onePerShellMass_sandwich
+#check onePerShellPowerMass_uniform
+
+#print axioms shell_time_gt_four
+#print axioms nearSquareRootCut_gt_one_of_shell_large
+#print axioms movingHighShell_eq_singleton
+#print axioms movingHighWave_eq_primes_add_finiteEarly
+#print axioms fullMovingDirichletFinite_eq_prime_add_early
+#print axioms nearSquareRootCut_lt_one_of_small_shell
+#print axioms movingHighShell_eq_full_dyadic_Ioc
+#print axioms firstFiveMovingIndices_eq_Icc
+#print axioms movingHighWave_eq_initial_Icc_add_primeTail
+#print axioms fullMovingDirichletFinite_eq_initial_Icc_add_primeTail
+#print axioms onePerShellMass_sandwich
+#print axioms onePerShellPowerMass_uniform
