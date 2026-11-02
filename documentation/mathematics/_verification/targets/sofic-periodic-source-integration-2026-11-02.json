@@ -12,9 +12,17 @@
   },
   "review": {
     "path": "documentation/mathematics/_support/reviews/sofic-periodic-source-integration-2026-11-02.md",
-    "blob": "bc005a0d0d71a191e814b023058ee482517b9c55"
+    "blob": "23e12a8886f2ac9ed036b1daa88c36e1b2cbac90"
   },
   "required_project_modules": [
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/DynamicPartitionRecovery.lean",
+      "blob": "5967730dc10d34ddcf1226ee1056594f012567d4"
+    },
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean",
+      "blob": "034dc65cc2fc5fc7a7ad439c6f110b6ccd7ad9c6"
+    },
     {
       "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CertifiedTransversal.lean",
       "blob": "df720cbb72c616938635c20477430f5f0ded4021"
@@ -233,5 +241,49 @@
     "coverage": "ADDITIVE_ENDPOINT_WALK_COUNT_NOT_PERIODIC_LABEL_POINT_COUNT",
     "acceptance": "NOT_RUN_AT_NEW_BLOB",
     "receipt_reuse": "FORBIDDEN_ACROSS_CHANGED_BYTES"
+  },
+  "project_dependency_closure_check": {
+    "kind": "STATIC_GIT_SOURCE_IMPORT_SCAN_ONLY",
+    "pinned_math_commit": "6cf755943e01ee7e9438cbb9eb058832262bd503",
+    "discovered_project_modules": 21,
+    "prior_incomplete_inventory": 19,
+    "required_new_import_edges": [
+      {
+        "from": "GRWTSK/DynamicalSystemsAndErgodicTheory/ExactSoficLanguageCover.lean",
+        "to": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/DynamicPartitionRecovery.lean"
+      },
+      {
+        "from": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/DynamicPartitionRecovery.lean",
+        "to": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean"
+      }
+    ],
+    "upstream_dependency_closure": "NOT_RUN_REQUIRES_MANAGED_REGISTRY_V3",
+    "selected_module_build_order": "TO_BE_GENERATED_BY_NOE_FROM_IMPORTS_NOT_ASSUMED",
+    "no_cached_upstream_certification": true,
+    "no_native_compiler_evidence": true
+  },
+  "managed_replay_handoff": {
+    "profile_path": "documentation/mathematics/_verification/targets/sofic-periodic-managed-profile-v3.json",
+    "profile_git_blob": "e0bc71a70801424542b0b691e94762a0580f10e9",
+    "profile_schema": "noe.managed-contract-replay profile contracts",
+    "contracts": 11,
+    "selected_declarations": 19,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "approved_execution_by_profile": false,
+    "reviewed_source_commit": "6cf755943e01ee7e9438cbb9eb058832262bd503",
+    "producer_snapshot": "ef4a797e8258528a5b5252165dd4c422aa4bb201",
+    "producer_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "local_checkout_available": false,
+    "local_lean_lake_available": false,
+    "native_profile_validation": "NOT_RUN",
+    "registry_v3_preparation": "NOT_RUN",
+    "managed_native_replay": "NOT_RUN",
+    "expected_types_consumer": "NOT_RUN",
+    "trust_zero_kernel_and_axioms": "NOT_RUN",
+    "host_owner_restoration": "NOT_RUN"
   }
 }
