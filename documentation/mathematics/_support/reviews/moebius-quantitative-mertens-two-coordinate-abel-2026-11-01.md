@@ -301,3 +301,33 @@ with its actual real cutoff and constants. Only then
 can the two-coordinate theorem be promoted from an
 explicitly conditional source candidate to a
 replayable unconditional logarithmic-saving theorem.
+
+
+## Direct bridge to the PREEXISTING original taggedRectangle
+
+The initial new rectangle used integer intervals X<m<=U and
+Y<n<=V. The old \`taggedRectangle B.primes a b M N T\`
+uses SOURCE-CLIPPED \`balancedBlock\`. The exact new
+\`balancedBlock_eq_Ioc_of_upper_mem\` shows the clipped
+\`balancedBlock M T\` equals (M,2M] only when its actual
+terminal integer \`2*M\` belongs to \`endpointIndex T\`.
+There is no silent extension of T or adjustment of the
+original positive-index inventory.
+
+\`original_taggedRectangle_eq_twoIntervalGram\` identifies
+the ORIGINAL RR/RM/MR/MM ordered source Gram with the
+literal two-coordinate interval Gram, including diagonal
+terms and squareful zero coefficients.
+\`original_taggedRectangle_abs_le_twoEulerAbel\`
+consumes the original named \`taggedRectangle\`
+DIRECTLY with the full independently established
+quantitative Mertens quotient source and explicit
+bank-dependent finite Euler-split inputs; it keeps
+\`1<=M,N\`, \`T>=0\` and BOTH true source terminal
+membership conditions. No new kernel or signed
+remainder is introduced.
+
+This consumer-facing Lean theorem is a
+SOURCE_PROOF_CANDIDATE and NOT_RUN; the separate
+sparse/diagonal masked source and global
+all-positive-rate RH bound remain OPEN.

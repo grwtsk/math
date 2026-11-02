@@ -14,12 +14,12 @@
     },
     {
       "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTwoCoordinateCausalAbel.lean",
-      "blob": "d65c0d3a8475897bfe979c22407c631fbcd7cd7b"
+      "blob": "03b2e02abcae65e9b07428d3ad2c81e65b2f5cbc"
     }
   ],
   "review": {
     "path": "documentation/mathematics/_support/reviews/moebius-quantitative-mertens-two-coordinate-abel-2026-11-01.md",
-    "blob": "260c108b22a438387829ab2b359a9c0cb1f1f8b3"
+    "blob": "c6143b92840223ae31cc69e3bf1edd652f0cca08"
   },
   "existing_owner_files": [
     "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeSmoothFiniteConvolution.lean",
@@ -32,7 +32,8 @@
     "bank_factors": "W_P=prod(1-1/p)^-1 and V_P=prod(1-p^-1/2)^-1, no bank-independent constant asserted",
     "prefix": "For each positive N, finite original rough and matched Mertens prefixes bounded using exact selected-prime smooth convolution and minimum of external Mertens/trivial bounds",
     "rectangle": "For every true finite prime bank, both ordered tags a,b and two source positive integer intervals, |original full signed causal Gram rectangle| <= H_a H_b pickupResponseGram T (X+1) (Y+1), with H from genuine finite original Euler prefix endpoints",
-    "masked_dense": "Existing original Putnam short-gap plus diagonal must still be paid separately; no replacement kernel or RH conclusion"
+    "masked_dense": "Existing original Putnam short-gap plus diagonal must still be paid separately; no replacement kernel or RH conclusion",
+    "original_taggedRectangle_consumer": "Source clipped dyadic block identified with original half-open interval under actual terminal endpoint membership. original_taggedRectangle_abs_le_twoEulerAbel supplies original named taggedRectangle directly with both Mertens/Euler source inputs."
   },
   "explicit_unproved_local_premises": {
     "QuantitativeMertensLogPower": "External independently established arithmetic theorem; no Lean port/zero-free-region closure in this increment",
@@ -57,7 +58,8 @@
     "lean_admission_of_Euler_split": "OPEN",
     "source_two_coordinate_candidate": "NOT_RUN",
     "global_dense_all_positive_rate": "OPEN",
-    "RH": "OPEN"
+    "RH": "OPEN",
+    "source_consumer_crosswalk": "SOURCE_PROOF_CANDIDATE/NOT_RUN"
   },
   "related_issues": [
     1556,
