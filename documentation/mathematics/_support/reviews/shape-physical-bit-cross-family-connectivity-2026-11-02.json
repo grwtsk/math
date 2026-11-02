@@ -1,0 +1,637 @@
+{
+  "schema": "grwtsk.math.physical-bit-cross-family-connectivity/1",
+  "local_attribution": "grwtsk contributors",
+  "repository": "grwtsk/math",
+  "scope": "Maintained physical observer/shape/Gibbs/S4/universal-waveform/original signed Möbius/endpoint source; source proof candidates, not corpus-wide semantic completeness",
+  "source_scan_anchor": "697face2b38918d5ad8f83fa854a02eb742ef37d",
+  "prior_Moebius_graph": {
+    "path": "documentation/mathematics/_support/reviews/moebius-rh-original-source-typed-connectivity-2026-11-02.json",
+    "blob": "3938b4a2fb0d20cacb6a863b7372ea49ea157f11",
+    "scan_source_commit": "1cdffe535e8fbd8d0cec79f2c56d6c8f87c38955",
+    "existing_inventory_count": 156,
+    "curated_nodes": 48,
+    "typed_edges": 44,
+    "relationship": "EXTENDS_BY_REFERENCE_NOT_DUPLICATION"
+  },
+  "existing_shape_physical_manifest": "documentation/mathematics/_verification/targets/shape-physical-bit-source-preserving-transport-2026-11-02.json",
+  "new_bridge_modules": [
+    {
+      "id": "physical_universal",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusUniversalLedger.lean",
+      "blob": "f80266296d7c2ad80c3d1a003b933fbe34891715",
+      "commit": "ebfaba55f06c55872ee5147fef9862d81fe70d09",
+      "namespace": "GRWTSK.NumberTheory.Moebius.PhysicalUniversalLedger",
+      "decl_count": 8
+    },
+    {
+      "id": "physical_endpoint",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusRowEndpointReturn.lean",
+      "blob": "b50a2aaf5b5894d0e95625b32793a53b8a71e329",
+      "commit": "0c81dc512395acabf7f36b73c933b8cc20e0894d",
+      "namespace": "GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn",
+      "decl_count": 9
+    },
+    {
+      "id": "sphere_physical_port",
+      "path": "GRWTSK/Geometry/SphereFourPhysicalBitPortBridge.lean",
+      "blob": "f5ad619de4b892e466715b34c0c5cec18ffbc3d5",
+      "commit": "3fd295907b37bfaeb0472ee6269e331b060ac69d",
+      "namespace": "GRWTSK.Geometry.SphereFourPhysicalBitPortBridge",
+      "decl_count": 9
+    },
+    {
+      "id": "lifted_zero_witness",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusLiftedZeroWitness.lean",
+      "blob": "07963e2fb74fb9a7886143ba1e1891f5610c5e03",
+      "commit": "248bdb692e56ce5f93daf9307daf11bb6c5f204d",
+      "namespace": "GRWTSK.NumberTheory.Moebius.PhysicalLiftedZeroWitness",
+      "decl_count": 2
+    }
+  ],
+  "related_source_statements": [
+    {
+      "path": "GRWTSK/Combinatorics/BanachHilbert.lean",
+      "blob": "5e1651b0f94ec3e7fbee24ee6134f00a1e4dfaf7",
+      "namespace": "Mathematics.Cubical",
+      "role": "Hamming/Hilbert, rational sphere numerator, inverse stereographic carrier",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/ShapeChangingBundle.lean",
+      "blob": "1f4546ac4d33bbc4b7551d40378219850d93965a",
+      "namespace": "Folder.Research.ShapeChangingBundle",
+      "role": "center/shell exact reconstruction",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/Randomisation.lean",
+      "blob": "88565ee3dd916878a1d767da391a9a5b6e239546",
+      "namespace": "AddDissociated",
+      "role": "finite abelian dissociated Fourier-support randomisation",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/AssociativeRingsAndAlgebras/PortFiberArchitecture.lean",
+      "blob": "8a99e0c303ac8d51db3ea77e921bf7cdc9cac107",
+      "namespace": "GRWTSK.NumberTheory.Zeta.Riemann.PortFiberArchitecture",
+      "role": "ported architecture, abstract local claim, RH disposition unresolved",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Fibered.lean",
+      "blob": "d062bc48456acf5e760b52f3fa641ad37974bd32",
+      "namespace": "CategoryTheory",
+      "role": "cartesian lift and categorical fibration definitions",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LevelBundle.lean",
+      "blob": "1ec641d044657b973de1abce845c9410c0a28b8e",
+      "namespace": "GRWTSK.CategoriesAndHomologicalAlgebra",
+      "role": "categorical Permission",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/StableSphereSite.lean",
+      "blob": "babdd89dd0ea9133259da598a349ddff8e96b0b9",
+      "namespace": "Folder",
+      "role": "stable sphere-site collapse and torsion",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/Geometry/SphereFourMobiusTorusPorts.lean",
+      "blob": "39e0de0301c9480030a6f271edb2943addbe34d5",
+      "namespace": "GRWTSK.Geometry.SphereFourMobiusTorusPorts",
+      "role": "S4 retained port, reversible three-torus view, modal step",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/GraphTheory/FiniteAdmissibleSampler.lean",
+      "blob": "e74a253e66c1ee9ab5b6d97440e1fdeee49a54be",
+      "namespace": "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FiniteAdmissibleSampler",
+      "role": "actual positive/normalized Gibbs probability rows",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteWeightedChannelCovariance.lean",
+      "blob": "1e88479b60ade504d9da34a700f8a75d1d6d6991",
+      "namespace": "GRWTSK.ProbabilityAndMathematicalStatistics.FiniteWeightedChannelCovariance",
+      "role": "full signed pair second moment and cross-channel covariance",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceBudget.lean",
+      "blob": "0824eba30e866262fea432b51a5d04ff34b1cc60",
+      "namespace": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments",
+      "role": "conditional covariance upper with off-diagonal term",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceTail.lean",
+      "blob": "27ef9ca357f97bbb3aa68f138ee3917da4eb71ed",
+      "namespace": "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.Expectation.Moments",
+      "role": "Chebyshev tails conditional on covariance budget",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteLabeledBoundaryTV.lean",
+      "blob": "8dd0e854150ab8c60bdd60bcf3c1d456f2f18ac9",
+      "namespace": "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic",
+      "role": "coupling exceptional roots and categorical total variation",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean",
+      "blob": "c2cabc0ee3306bb8fd22af48d0fdc325dcc2dca1",
+      "namespace": "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic",
+      "role": "finite centered event mass and half-L1 TV",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitCodec.lean",
+      "blob": "bbcf43b2274b5a4738321fbdcd995d45deafabb3",
+      "namespace": "GRWTSK.NumberTheory.Moebius.PhysicalMoebiusBitCodec",
+      "role": "original moebius two-bit presence/sign, index, admissibility, shift",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitGramReturn.lean",
+      "blob": "67cbc92ee2dec824d0a5c2930f0f45671dad61a9",
+      "namespace": "GRWTSK.NumberTheory.Moebius.PhysicalBitGramReturn",
+      "role": "ordered pickupCross physical packet and exact signed defect",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUniversalWaveformReturn.lean",
+      "blob": "8f807513c6a5cbf264750717327ed319f926ed44",
+      "namespace": "GRWTSK.NumberTheory.Moebius.UniversalWaveformReturn",
+      "role": "arbitrary coefficients, ordered cross, complete generic defect",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/UniversalWaveformInput.lean",
+      "blob": "639bd1f0954197c8b53510c38c8f54f61e29cd90",
+      "namespace": "GRWTSK.MeasureAndIntegration.UniversalWaveformInput",
+      "role": "arbitrary Time-to-amplitude source and signed observation defect",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean",
+      "blob": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+      "namespace": "GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature",
+      "role": "quarter error, affine-good-scales RH consumer",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalObserverZeroTransport.lean",
+      "blob": "f4893de0ce5b7d81b976bd77247ec6f4e00c34b4",
+      "namespace": "GRWTSK.NumberTheory.Moebius.OriginalObserverZeroTransport",
+      "role": "conditional hypothetical-zero spikes with exact defect",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/CausalResponseGram.lean",
+      "blob": "a24171f4415963e35930b7e21598cabd5c063c2d",
+      "namespace": "GRWTSK.ProofHorizon.CorkscrewChamberCap.ArithmeticPickupGram",
+      "role": "positive semidefinite original response Gram and lower signed-cross bound",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusWeightedDecoderEnergyTransfer.lean",
+      "blob": "ce1f1396785fe8fb9e045440a4edce25df734326",
+      "namespace": "GRWTSK.NumberTheory.Moebius.WeightedDecoderEnergyTransfer",
+      "role": "conditional weighted error energy budget",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalLaplaceZeroBarrier.lean",
+      "blob": "1a66b83553886e96fc227fa9eeb8b92f4bc8a6a8",
+      "namespace": "GRWTSK.NumberTheory.Moebius.OriginalLaplaceZeroBarrier",
+      "role": "hypothetical offcritical-zero energy obstruction",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalLaplaceReciprocalControl.lean",
+      "blob": "f6ab56462cc296b3994c400bfc9622d764c2ea12",
+      "namespace": "GRWTSK.NumberTheory.Moebius.OriginalLaplaceReciprocalControl",
+      "role": "Laplace denominator identity with named analytic targets",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalFarZeroForcedSpikes.lean",
+      "blob": "7ba344f93af8fbbf44d9080781617724e09829b8",
+      "namespace": "GRWTSK.NumberTheory.Moebius.OriginalFarZeroForcedSpikes",
+      "role": "conditional original positive FAR spikes",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGeneralizedFiberObserver.lean",
+      "blob": "6ca04b2685cd422a363cc0146f8ac65b59e0c870",
+      "namespace": "GRWTSK.NumberTheory.Moebius.GeneralizedFiberObserver",
+      "role": "matched/rough/mixed five-term exact source decomposition",
+      "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    }
+  ],
+  "new_typed_edges": [
+    {
+      "from": "PhysicalMoebiusBitGramReturn.observedPacket",
+      "to": "MoebiusUniversalWaveformReturn.arbitraryOrderedCross",
+      "kind": "source_identity",
+      "declaration": "PhysicalUniversalLedger.observedPacket_eq_genericOrderedCross",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "PhysicalMoebiusBitGramReturn.signedReadoutDefect",
+      "to": "MoebiusUniversalWaveformReturn.orderedCrossDefect",
+      "kind": "exact_residual",
+      "declaration": "PhysicalUniversalLedger.signedReadoutDefect_eq_genericOrderedDefect",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "PhysicalMoebiusBitGramReturn.signedReadoutDefect",
+      "to": "MoebiusUniversalWaveformReturn.orderedCrossDefect_signed_expansion",
+      "kind": "ordered_mixed_terms",
+      "declaration": "PhysicalUniversalLedger.physicalSignedDefect_eq_threeTermExpansion",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "PhysicalMoebiusBitCodec.recordMoebius",
+      "to": "MoebiusUniversalWaveformReturn.arbitraryOrderedCross",
+      "kind": "exact_canonical_source",
+      "declaration": "PhysicalUniversalLedger.genericOrderedCross_encoded_eq_original",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "PhysicalMoebiusBitCodec.transferRecord",
+      "to": "MoebiusUniversalWaveformReturn.arbitraryOrderedCross",
+      "kind": "shift_invariant",
+      "declaration": "PhysicalUniversalLedger.genericOrderedCross_transfer",
+      "hypotheses": [
+        "actual Gödel transferStream",
+        "chart+s"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "PhysicalMoebiusBitGramReturn.signedReadoutDefect_transfer",
+      "to": "MoebiusUniversalWaveformReturn.orderedCrossDefect",
+      "kind": "shift_invariant_signed_defect",
+      "declaration": "PhysicalUniversalLedger.genericOrderedDefect_transfer",
+      "hypotheses": [
+        "actual transferStream",
+        "chart+s"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "ShapePhysicalBitTransport.lift",
+      "to": "MoebiusUniversalWaveformReturn.arbitraryOrderedCross",
+      "kind": "exact_shell_observable",
+      "declaration": "PhysicalUniversalLedger.shellLift_genericOrderedCross",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "PhysicalMoebiusBitGramReturn.pickupCross_eq_observed_add_defect",
+      "to": "MoebiusUniversalWaveformReturn.pickupCross_eq_observed_add_full_defect",
+      "kind": "two_ledger_reconciliation",
+      "declaration": "PhysicalUniversalLedger.shellLift_genericSource_plusDefect",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "ShapePhysicalBitPairSampling.originalSignedPair",
+      "to": "ShapePhysicalBitRowConditioning.originalRowSum",
+      "kind": "source_finite_fubini",
+      "declaration": "PhysicalRowEndpointReturn.pickupCross_eq_originalSignedRows",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "ShapePhysicalBitRowConditioning.originalRowSum",
+      "to": "ShapePhysicalBitOptimizedRowLaw.originalRowAbsMass",
+      "kind": "one_sided_finite_bound",
+      "declaration": "PhysicalRowEndpointReturn.pickupCross_le_originalRowAbsMass",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "PickupEndpointQuadrature.endpointSum",
+      "to": "PickupEndpointQuadrature.pickupCross",
+      "kind": "existing_quarter_error",
+      "declaration": "PhysicalRowEndpointReturn.endpointCurvatureDefect_abs_le_quarter",
+      "hypotheses": [
+        "0≤T"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "ShapePhysicalBitOptimizedRowLaw.originalRowAbsMass",
+      "to": "PickupEndpointQuadrature.endpointSum",
+      "kind": "one_sided_arithmetic_upper",
+      "declaration": "PhysicalRowEndpointReturn.endpointSum_le_originalRowAbsMass_plus_quarter",
+      "hypotheses": [
+        "0≤T"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "PhysicalMoebiusBitGramReturn.observedPacket",
+      "to": "PickupEndpointQuadrature.endpointSum",
+      "kind": "source_exact_with_two_defects",
+      "declaration": "PhysicalRowEndpointReturn.endpointSum_eq_physicalPacket_add_twoDefects",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "ShapePhysicalBitTransport.shift_lift",
+      "to": "PickupEndpointQuadrature.endpointSum",
+      "kind": "shell_and_shift_exact",
+      "declaration": "PhysicalRowEndpointReturn.endpointSum_eq_liftShiftPhysicalReturn",
+      "hypotheses": [
+        "actual shiftTangent",
+        "original shell supplied"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "ShapePhysicalBitFiniteTVCoupling.random_uniform_maskedLoss_abs_le_TV",
+      "to": "PickupEndpointQuadrature.endpointSum",
+      "kind": "conjunction_not_arithmetic_implication",
+      "declaration": "PhysicalRowEndpointReturn.finiteTV_comparator_and_original_endpoint",
+      "hypotheses": [
+        "N>0"
+      ],
+      "acceptance": "SOURCE_CANDIDATE; separation of independent claims"
+    },
+    {
+      "from": "ShapePhysicalBitOptimizedRowLaw.originalRowAbsMass",
+      "to": "PickupEndpointQuadrature.riemannHypothesis_of_endpoint_good_scales",
+      "kind": "conditional_analytic_return",
+      "declaration": "PhysicalRowEndpointReturn.riemannHypothesis_of_rowAbsMass_good_scales",
+      "hypotheses": [
+        "AffineFrequent G",
+        "SubexponentialOn originalRowAbsMass G"
+      ],
+      "acceptance": "CONDITIONAL_SOURCE_PROOF_CANDIDATE; arithmetic premise OPEN"
+    },
+    {
+      "from": "SphereFourMobiusTorusPorts.SourcePort.sourceIndex",
+      "to": "ShapePhysicalBitHilbertComparator.indexedBits",
+      "kind": "original_index_lookup",
+      "declaration": "SphereFourPhysicalBitPortBridge.indexedBitsAtPort",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "SphereFourMobiusTorusPorts.lowerPort_liftPort",
+      "to": "ShapePhysicalBitHilbertComparator.indexedBits",
+      "kind": "exact_view_return",
+      "declaration": "SphereFourPhysicalBitPortBridge.indexedBitsAtPort_viewRoundtrip",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "ShapeChangingBundle.expandWithShell",
+      "to": "SphereFourMobiusTorusPorts.SourcePort.sourceIndex",
+      "kind": "unchanged_source_tag",
+      "declaration": "SphereFourPhysicalBitPortBridge.indexedBitsAtPort_shellLift",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "PhysicalMoebiusBitCodec.transferRecord",
+      "to": "SphereFourMobiusTorusPorts.SourcePort.sourceIndex",
+      "kind": "observer_shift_invariance",
+      "declaration": "SphereFourPhysicalBitPortBridge.indexedBitsAtPort_shift",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "SphereFourMobiusTorusPorts.advanceSource",
+      "to": "ShapePhysicalBitHilbertComparator.indexedBits",
+      "kind": "index_invariance",
+      "declaration": "SphereFourPhysicalBitPortBridge.indexedBitsAtPort_advance",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "ShapePhysicalBitHilbertComparator.indexedBits_missing",
+      "to": "SphereFourMobiusTorusPorts.SourcePort.sourceIndex",
+      "kind": "missing_distinguished",
+      "declaration": "SphereFourPhysicalBitPortBridge.indexedBitsAtPort_missing",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "BanachHilbert.sphereNumerator",
+      "to": "SphereFourMobiusTorusPorts.SourcePort.sourceIndex",
+      "kind": "tagged_nonidentification",
+      "declaration": "SphereFourPhysicalBitPortBridge.indexedNumeratorAtPort_of_record",
+      "hypotheses": [],
+      "acceptance": "different typed spheres; no geometric identity"
+    },
+    {
+      "from": "SphereFourMobiusTorusPorts.advanceSource_energy_le",
+      "to": "ShapePhysicalBitHilbertComparator.indexedBits",
+      "kind": "parallel_independent_invariant",
+      "declaration": "SphereFourPhysicalBitPortBridge.advance_energy_and_bits",
+      "hypotheses": [
+        "ν≥0",
+        "h≥0"
+      ],
+      "acceptance": "modal energy does NOT bound Mobius Gram"
+    },
+    {
+      "from": "ShapePhysicalBitFiniteTVCoupling.rowTotalVariation",
+      "to": "SphereFourMobiusTorusPorts.SourcePort.sourceIndex",
+      "kind": "bounded_bit_statistic",
+      "declaration": "SphereFourPhysicalBitPortBridge.sampledPort_vs_uniform_abs_le_TV",
+      "hypotheses": [
+        "N>0",
+        "same supplied Fin N ports"
+      ],
+      "acceptance": "sampling law only"
+    },
+    {
+      "from": "SphereFourMobiusTorusPorts.advanceSource",
+      "to": "ShapePhysicalBitFiniteSampling.randomMaskedLoss",
+      "kind": "sample_indices_unchanged",
+      "declaration": "SphereFourPhysicalBitPortBridge.sampledPortLoss_advance",
+      "hypotheses": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "PhysicalMoebiusBitGramReturn.pickupCross_eq_observed_add_defect",
+      "to": "MoebiusOriginalObserverZeroTransport.OriginalSignedObserverLedger",
+      "kind": "exact_dyadic_ledger",
+      "declaration": "PhysicalLiftedZeroWitness.actualShapeObserverLedger",
+      "hypotheses": [
+        "same dyadicTime"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "MoebiusOriginalObserverZeroTransport.hypothetical_zero_forces_observed_signed_cross_spikes",
+      "to": "ShapePhysicalBitTransport.shift_lift",
+      "kind": "conditional_analytic_transfer",
+      "declaration": "PhysicalLiftedZeroWitness.hypothetical_zero_forces_lifted_observer_spikes",
+      "hypotheses": [
+        "OriginalLaplaceRightLineIdentityTarget",
+        "WeightedWholePickupLaplaceHolomorphyTarget",
+        "LaplaceProductIdentityTheoremTarget",
+        "DyadicOriginalEnergyCeilingTarget",
+        "genuine hypothetical offcritical zero",
+        "OriginalSignedObserverErrorAt full defect eta"
+      ],
+      "acceptance": "CONDITIONAL; named independent analytic gates NOT_PROVED"
+    },
+    {
+      "from": "ShapePhysicalBitPairSampling.windowPairVariance_eq_secondMoment_sub_sq",
+      "to": "ShapePhysicalBitRowConditioning.windowPairVariance_eq_conditioned_add_spread",
+      "kind": "exact_variance_decomposition",
+      "declaration": "ShapePhysicalBitRowConditioning.windowPairVariance_eq_conditioned_add_spread",
+      "hypotheses": [
+        "strictly positive normalized same-window sampling law"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "ShapePhysicalBitRowConditioning.originalRowSum",
+      "to": "ShapePhysicalBitOptimizedRowLaw.regularizedRowWeight",
+      "kind": "positive_source_informed_sampler",
+      "declaration": "ShapePhysicalBitOptimizedRowLaw.regularizedRowWeight_isPositiveWindowLaw",
+      "hypotheses": [
+        "ε>0",
+        "original source window nonempty"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "ShapePhysicalBitOptimizedRowLaw.originalRowAbsMass",
+      "to": "ShapePhysicalBitOptimizedRowLaw.originalRowSecondMoment",
+      "kind": "conditional_second_moment",
+      "declaration": "ShapePhysicalBitOptimizedRowLaw.regularizedRowSecondMoment_le",
+      "hypotheses": [
+        "ε>0",
+        "N>0"
+      ],
+      "acceptance": "source-dependent bound, not asymptotic"
+    },
+    {
+      "from": "ShapePhysicalBitFiniteTVCoupling.commonIndexMass",
+      "to": "ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix",
+      "kind": "optimal_same_slot_joint_law",
+      "declaration": "ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_optimal",
+      "hypotheses": [
+        "N>0",
+        "same Gibbs row and uniform law"
+      ],
+      "acceptance": "source proof candidate"
+    },
+    {
+      "from": "FiniteWeightedChannelCovariance.choiceMeanSquare_eq_covariance",
+      "to": "ShapePhysicalBitPairSampling.originalSignedPairVariance",
+      "kind": "related_finite_pair_accounting",
+      "declaration": "NO_IDENTIFIED_DEFINITIONAL_EQUIVALENCE",
+      "hypotheses": [],
+      "acceptance": "related but distinct outcome law; adapter would need hypotheses"
+    }
+  ],
+  "unproved_or_invalid_transfers": [
+    {
+      "from": "Randomisation.AddDissociated.randomisation",
+      "to": "ShapePhysicalBitFiniteSampling.sampledExpectation",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Requires actual AddDissociated support of finite character weights; no such support inferred from Gibbs law."
+    },
+    {
+      "from": "CategoryTheory.Functor.IsFibered",
+      "to": "ShapeChangingBundle.expandWithShell",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Categorical cartesian-lift structure is not a topological local-trivialization bundle for the spectral tensor."
+    },
+    {
+      "from": "StableSphereSite.stable_sphere_collapse_has_target",
+      "to": "BanachHilbert.compactifiedCarrier",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Different typed sphere-site/compactified Hilbert carrier; no topology or measure transport supplied."
+    },
+    {
+      "from": "LevelBundle.Permission",
+      "to": "PortFiberArchitecture.Architecture",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Categorical permission does not establish a geometric bundle chart/transition cocycle."
+    },
+    {
+      "from": "PortFiberArchitecture.toBundle",
+      "to": "ShapeChangingBundle.expandWithShell",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Architecture stages use their own port/bundle semantics; exact reconstruction is not a local trivialization."
+    },
+    {
+      "from": "SphereFourMobiusTorusPorts.liftTorus",
+      "to": "BanachHilbert.inverseStereographic",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "S4 torus is a partial view; inverse stereographic finite-carrier map is distinct."
+    },
+    {
+      "from": "SphereFourMobiusTorusPorts.mobiusPlus",
+      "to": "PhysicalMoebiusBitCodec.moebiusBits",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Fractional-linear circle transformation is NOT the arithmetic Möbius function."
+    },
+    {
+      "from": "ShapePhysicalBitFiniteTVCoupling.rowTotalVariation",
+      "to": "PhysicalMoebiusBitGramReturn.pickupCross",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Bounded bit TV cannot control original signed or inverse-weight arithmetic Gram."
+    },
+    {
+      "from": "CausalResponseGram.quadraticForm_nonnegative",
+      "to": "PickupEndpointQuadrature.endpointSum",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "PSD produces lower signed-cross bound, not needed one-sided upper growth."
+    },
+    {
+      "from": "FiniteCovarianceBudget.variance_sum_le_covariance_budget",
+      "to": "PhysicalMoebiusBitGramReturn.pickupCross",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Requires independently proved original-source covariance premise, not random sign model."
+    },
+    {
+      "from": "MoebiusOriginalLaplaceZeroBarrier.OriginalLaplaceRightLineIdentityTarget",
+      "to": "MoebiusOriginalObserverZeroTransport.hypothetical_zero_forces_observed_signed_cross_spikes",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Unported independent analytic Prop; candidate downstream theorem does not discharge it."
+    },
+    {
+      "from": "BanachHilbert.compactifiedCarrier_infinity",
+      "to": "SphereFourMobiusTorusPorts.SourcePort",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "No theorem that uniform independent samples converge to a chosen geometric cusp; no fixed law/topology/limit defined."
+    },
+    {
+      "from": "ShapePhysicalBitOptimizedRowLaw.originalRowAbsMass",
+      "to": "PickupEndpointQuadrature.riemannHypothesis_of_endpoint_good_scales",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Subexponential upper control on the unsigned total of complete signed rows remains an independent RH-strength premise."
+    }
+  ],
+  "proof_acceptance": {
+    "source_publication": "PASS GitHub blob readback of four new module paths at their source commits",
+    "Lean_compile": "NOT_RUN",
+    "expected_Lean_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "source_wide_arithmetic_estimate": "OPEN",
+    "RH": "OPEN",
+    "sphere_cusp_measure_limit": "NOT_FORMULATED",
+    "true_local_trivialized_bundle": "NOT_FORMULATED"
+  },
+  "mathematical_target": "New source-exact source/defect/endpoint and port comparison edges; next independently bound original endpointSum on affinely frequent good scales, not merely add a geometrical representation."
+}
