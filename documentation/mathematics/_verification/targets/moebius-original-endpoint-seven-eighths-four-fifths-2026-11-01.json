@@ -1,0 +1,93 @@
+{
+  "schema": "grwtsk.moebius-endpoint-openai-seven-eighths-four-fifths/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "scope": "Original complete ordered signed Möbius endpoint strict exponent 4/5 via external OAI fixed 7/8 theorem, classical contour Mertens bridge and original physical-time causal integration; no RH claim.",
+  "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSevenEighthsEndpointReturn.lean",
+  "source_blob": "3429d9b714bccfbef0ab873bc23f928f19ad75ad",
+  "review": "documentation/mathematics/_support/reviews/moebius-original-endpoint-four-fifths-openai-seven-eighths-2026-11-01.md",
+  "review_blob": "194880a8a6f3a9215898078103bb69a5ecb32053",
+  "external_theorem": {
+    "provider": "OpenAI (2026), The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re s>7/8",
+    "repository": "openai/math",
+    "checked_revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "source": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean",
+    "source_blob": "46c67f4000906b1391a471d6e6396ac0da3c16a5",
+    "declaration": "OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re",
+    "statement": "forall s:Complex, (7/8:Real)<s.re -> riemannZeta s != 0",
+    "independent_report_repository": "tomoto0/quasi-riemann-hypothesis-7-8-verification",
+    "independent_report_source": "lean/lean_build_report.md",
+    "independent_report_blob": "350be16589ef5454f57a7555d6bc51730d98aec6",
+    "reported_evidence": "Lean 4.34.1 build passed at checked revision; #print axioms only propext, Classical.choice, Quot.sound; final 2 modules leanchecker PASS; entire 2924-module replay timed out. Not repeated by grwtsk.",
+    "checked_type_warning": "ComparatorChallenges/QuasiRiemannHypothesis.lean contains sorry as a test statement; OAI/NumberTheory/DirichletL/Nonvanishing.lean is the actual proof source."
+  },
+  "local_environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "source_dependencies": {
+    "MertensPrimitive": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "PickupEndpointQuadrature": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+    "GoodScaleEnergyCriterion": "ca3ae4975b20cf796a167308a9e87546c6001c41",
+    "MoebiusStrongFixedPowerPR103": "10f2fba05c105c3e80b58ed9632901b5550444d9",
+    "MoebiusDyadicFreshBirthStrip": "dcabfdd6d14ea724b0f3a04015fca04d1c92f40c"
+  },
+  "candidate_script_theorems": [
+    "working_theta_margin",
+    "published_zeta_to_original_type",
+    "endpoint_four_fifths_of_published_zeta",
+    "endpoint_dyadic_four_fifths_of_published_zeta"
+  ],
+  "explicit_external_propositions": [
+    "PublishedOAISevenEighths",
+    "StrongFixedPowerPR103.ZeroFreeToMertensPowerBridge",
+    "StrongFixedPowerPR103.PickupVelocityPowerEnergyTransfer"
+  ],
+  "unproved_local_analytic_targets": [
+    "OriginalFourFifthsExplicitConstantTarget",
+    "OriginalFixedGridResidualFourFifthsTarget"
+  ],
+  "source_math_constants": {
+    "zeta_zero_free_boundary": "7/8",
+    "chosen_strict_mertens_exponent": "9/10",
+    "causal_velocity_rate": "2/5",
+    "whole_energy_and_complete_endpoint_rate": "4/5",
+    "complete_energy_coefficient": "125*C^2/16",
+    "complete_endpoint_allowance": "1/4",
+    "fixed_grid": "T_j=j*log2, alpha=1,beta=log2,T0=0",
+    "each_dyadic_cell_energy": "<=125*C^2/16*(2^(4j/5)-2^(4(j-1)/5))",
+    "entire_dyadic_energy": "<=125*C^2/16*(2^(4J/5)-1)",
+    "independent_near_birth_lambda_half": "sum absolute newborn packets<=1/8; endpoint to residual signed source error<=3/8",
+    "stronger_pr103_comparator": "0.747 conditional on separately unreplayed GTimG/QuasiRiemannTracker PR103 theorem and local analytic source gates"
+  },
+  "mathematical_status": {
+    "external_oai_fixed_zero_free": "PUBLISHED_LEAN_FORMALIZATION_WITH_INDEPENDENT_REPORTED_CHECK_AT_PIN",
+    "classical_zero_free_to_original_mertens": "CLASSICAL_ANALYTIC_THEOREM_NOT_FORMALIZED_IN_LOCAL_LEAN",
+    "original_velocity_and_energy_integration": "COMPLETE_ORDINARY_MATHEMATICAL_ARGUMENT_LEAN_GATE_UNPROVED",
+    "original_complete_endpoint_four_fifths": "MATHEMATICAL_COROLLARY_OF_EXTERNAL_AND_CLASSICAL_RESULTS",
+    "fixed_dyadic_uniformity": "MATHEMATICALLY_PROVED_TELESCOPING_WITH_ONE_SOURCE_CONSTANT",
+    "original_all_positive_rate": "OPEN",
+    "canonical_RH": "OPEN"
+  },
+  "verification": {
+    "publication": "PENDING",
+    "external_OAI_replay_by_us": "NOT_RUN",
+    "local_classical_contour_port": "NOT_RUN",
+    "local_lean_parsing": "NOT_RUN",
+    "local_lean_compilation": "NOT_RUN",
+    "local_expected_types": "NOT_RUN",
+    "local_fresh_kernel": "NOT_RUN",
+    "local_transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_DISPATCHED",
+    "root_imports": "UNCHANGED",
+    "new_research_axioms": "NONE_AUTHORED"
+  },
+  "related_issues": [
+    1556,
+    1406,
+    1429,
+    15
+  ]
+}
