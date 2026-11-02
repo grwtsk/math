@@ -120,7 +120,7 @@
     "externally_verified_zero_height_not_lean_imported": true
   },
   "verification": {
-    "source_publication": "PENDING_GIT_READBACK",
+    "source_publication": "PASS_EXACT_FOUR_GITHUB_BLOB_READBACK",
     "source_lean_compilation": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
     "expected_theorem_types": "NOT_RUN",
@@ -130,7 +130,8 @@
     "toolchain_or_root_imports_modified": false,
     "native_CI_automation_dispatched": false,
     "complete_far_every_positive_rate": "OPEN",
-    "canonical_RiemannHypothesis": "OPEN"
+    "canonical_RiemannHypothesis": "OPEN",
+    "source_publication_file_count": 4
   },
   "citations": [
     "https://doi.org/10.1112/blms.12460",
@@ -139,5 +140,7 @@
   "tracking_issues": [
     1556,
     1429
-  ]
+  ],
+  "source_publication_commit": "38fa2c4a9964fc875590d7007f05c609a404a55c",
+  "source_publication_parent": "8ecf9f945ce1f11db451ab9941f47d7ce0c3846b"
 }
