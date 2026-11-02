@@ -1,0 +1,53 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-01",
+  "title": "Original dense strong Mobius packet: classical PNT/Mertens rate-one control and zero-free-region analytic frontier",
+  "file_blobs": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongPacketEnergyReturn.lean": "198251f695972424393ab00ae4b0838f0a516fdd",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongMertensAbel.lean": "9956bfdb2c7e677c7feafeaf16cfb125da2e56b7",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongPNTEnvelope.lean": "06591b89bcd475e19c1ec559213e73dc44305f80"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "direct_dependencies": [
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEnergyMatchedWeakResidual.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapAllRate.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupMertensAbel.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LogarithmicPickupSampling.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GoodScaleEnergyCriterion.lean"
+  ],
+  "expected_declarations": [
+    "GRWTSK.NumberTheory.Moebius.StrongPacketEnergyReturn.strong_add_gap_add_weak_eq_cross",
+    "GRWTSK.NumberTheory.Moebius.StrongPacketEnergyReturn.originalEnergyStrongCross_abs_le_energy_rate",
+    "GRWTSK.NumberTheory.Moebius.StrongMertensAbel.sampleResidue_eq_mertens_widths",
+    "GRWTSK.NumberTheory.Moebius.StrongMertensAbel.sampleResidue_abs_le_head_add_tail",
+    "GRWTSK.NumberTheory.Moebius.StrongMertensAbel.wholePickup_abs_le_Mertens_head_tail",
+    "GRWTSK.NumberTheory.Moebius.StrongPNTEnvelope.pickupEnergy_le_of_actualMertensTail",
+    "GRWTSK.NumberTheory.Moebius.StrongPNTEnvelope.originalStrongCross_abs_le_classicalPNT_budget"
+  ],
+  "evidence": {
+    "published_source": "SOURCE_PUBLICATION_ONLY_NOT_KERNEL_VERIFIED",
+    "analytic_argument": "complete conditional-on-actual-Mertens-tail; PNT and KV corollaries classical external only",
+    "independent_exact_rational_and_numeric_preflight": 40716,
+    "numerical_actual_integral_fixtures": 10,
+    "numerical_precision_digits": 75,
+    "lean_parsing": "NOT_RUN",
+    "lake_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "PNT_to_local_Lean_proof": "NOT_PORTED",
+    "KV_to_local_Lean_proof": "NOT_PORTED",
+    "RH_strength_every_positive_rate": "OPEN"
+  },
+  "open": [
+    "Bring external classical PNT-Mertens tail theorem into exact pinned Lean dependency closure",
+    "Mechanically check source-specific finite Abel identities, sample interpolation, interval exponential integral and complete strong/weak partition",
+    "Formalize external KV rate as a separately typed conditional/source-proved bridge only when its exact hypotheses are available",
+    "Prove a genuinely new full signed dense strong-packet bound at every positive rate (not implied by PNT)"
+  ],
+  "root_import_change": false,
+  "remote_execution": "NO remote/CI/native dispatch authorized; passive specification only"
+}
