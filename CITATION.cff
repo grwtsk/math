@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: >-
+  Cite the repository at the exact commit used, and cite original mathematical
+  sources and declarations separately. This collection citation does not certify proofs.
+title: GRWTSK mathematics
+type: software
+authors:
+  - name: grwtsk contributors
+repository-code: https://github.com/grwtsk/math
+url: https://github.com/grwtsk/math
+abstract: >-
+  Human-directed public mathematical source, explanations, proof candidates,
+  counterexamples, conditional results and source-bound verification specifications.

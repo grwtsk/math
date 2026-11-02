@@ -1,0 +1,43 @@
+name: Formalization or source correspondence
+description: Define a precise problem, mathematical source and proposed consumer-backed formalization.
+title: "[formalization] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This records an intention or proposal, not an exclusive work claim, execution order or publication authority.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Original problem, hypotheses and intended consumer
+      description: State mathematical objects, assumptions, conclusion and the actual use.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Source authors, stable references and exact repository pins
+      description: Provide current commit, paths and declarations if they exist.
+    validations:
+      required: false
+  - type: textarea
+    id: placement
+    attributes:
+      label: Existing subject placement
+      description: Choose an MSC2020 source/document path. Proposed moves belong in issue #1425.
+    validations:
+      required: false
+  - type: textarea
+    id: bridge
+    attributes:
+      label: Source-to-formal comparison and missing mathematical bridge
+      description: Identify representation transport, bounds, counterexamples or conditions.
+    validations:
+      required: false
+  - type: textarea
+    id: status
+    attributes:
+      label: Evidence obtained and still NOT_RUN
+      description: Do not equate source publication with formal or analytical acceptance.
+    validations:
+      required: false
