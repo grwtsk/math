@@ -118,6 +118,24 @@
       "namespace": "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler",
       "decl_count": 10,
       "status": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "id": "low_gcd_negative_prime_dilation",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeDilationNegative.lean",
+      "blob": "e7abaa44008b76aaeb2a6a7ee69e0b5602787014",
+      "commit": "2df19f28a3ceaa2b326c7ae6d37b478be1500c0d",
+      "namespace": "GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative",
+      "decl_count": 9,
+      "status": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "id": "low_gcd_primitive_shifted_adapter",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeFreePrimitiveBridge.lean",
+      "blob": "847c46ee90f721ea69338004ba6542c258b6d04c",
+      "commit": "32905d76afb61bf9ea9ec1e3de5120560f99dca6",
+      "namespace": "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge",
+      "decl_count": 7,
+      "status": "SOURCE_PROOF_CANDIDATE_WITH_EXPLICIT_OPEN_FULL_REINDEX"
     }
   ],
   "related_source_statements": [
@@ -372,6 +390,41 @@
       "namespace": "GRWTSK.NumberTheory.Moebius",
       "role": "distinct all-character family-mean energy, not fixed original signed upper",
       "scope": "repository source theorem candidate; native compilation NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseReducedPrimeDilationCancellation.lean",
+      "blob": "50f9ee06b3deea0321982c7e8cb8ba41bf9fc7e9",
+      "namespace": "GRWTSK.NumberTheory.Moebius",
+      "role": "original prime-dilation coefficient-square identity and causal sign nonpositivity; prior broader source",
+      "scope": "repository source theorem candidate; native Lean acceptance NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalGcdTimeShift.lean",
+      "blob": "db0052901eca3050ed0ce812d3e0e7675c8fab05",
+      "namespace": "GRWTSK.NumberTheory.Moebius",
+      "role": "true original physical Gram g common-factor T-log g shift",
+      "scope": "repository source theorem candidate; native Lean acceptance NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusIncomparableGcdLcm.lean",
+      "blob": "d1178838452604248726b5b6b28a697525624506",
+      "namespace": "GRWTSK.NumberTheory.Moebius",
+      "role": "gcd/lcm Möbius sign identity including original squareful zeros",
+      "scope": "repository source theorem candidate; native Lean acceptance NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongOddCoprimeDilation.lean",
+      "blob": "6164a4de724f2a29ef4304304f87b48d3ec78b41",
+      "namespace": "GRWTSK.NumberTheory.Moebius",
+      "role": "original Möbius multiplicativity with exact coprimality hypothesis",
+      "scope": "repository source theorem candidate; native Lean acceptance NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongIncomparableGcdReduced.lean",
+      "blob": "18cedc1e613147793d3efee64b39b69ca560044b",
+      "namespace": "GRWTSK.NumberTheory.Moebius",
+      "role": "prior original squarefree-only common-gcd sign-reduced source and open full triple sum",
+      "scope": "repository source theorem candidate; native Lean acceptance NOT_RUN"
     }
   ],
   "new_typed_edges": [
@@ -1051,6 +1104,131 @@
         "same positive original-index law"
       ],
       "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "MoebiusDenseReducedPrimeDilationCancellation.IsPrimeDilation",
+      "to": "LowGcdPrimeDilationNegative.lowGcdPair_eq_prime_add_other",
+      "kind": "EXACT_PREVIOUSLY_UNPAID_SOURCE_PARTITION",
+      "required": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "MoebiusDenseReducedPrimeDilationCancellation.primeDilation_source_nonpos",
+      "to": "LowGcdPrimeDilationNegative.lowGcdPrimeDilationPair_nonpos",
+      "kind": "UNCONDITIONAL_ORIGINAL_MOBIUS_COEFFICIENT_SIGN",
+      "required": [
+        "T>=0",
+        "actual p prime coprime to q"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "LowGcdPrimeDilationNegative.lowGcdPrimeDilationPair_nonpos",
+      "to": "LowGcdPrimeDilationNegative.lowGcdPrimeDilationCross_nonpos",
+      "kind": "FINITE_NEGATIVE_ORDERED_PACKET",
+      "required": [
+        "T>=0",
+        "actual original index range"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "LowGcdPrimeDilationNegative.lowGcdDenseCross_eq_prime_add_other",
+      "to": "LowGcdPrimeDilationNegative.lowGcdDenseCross_le_other",
+      "kind": "ONE_SIDED_ZERO_UPPER_PAYMENT",
+      "required": [
+        "T>=0",
+        "nonpositive prime packet"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "SparseHighGcdDenseCore.pickupCross_eq_threePaid_add_lowGcdDense",
+      "to": "LowGcdPrimeDilationNegative.pickupCross_eq_threePaid_prime_other",
+      "kind": "EXACT_ORIGINAL_SOURCE_FIVE_DISJOINT_PACKETS",
+      "required": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "SparseHighGcdDenseCore.endpointSum_sub_lowGcdDense_abs_le",
+      "to": "LowGcdPrimeDilationNegative.endpointSum_le_otherLowGcd_plus_paid",
+      "kind": "ONE_SIDED_ARITHMETIC_ENDPOINT_UPPER",
+      "required": [
+        "rate>0",
+        "T>=4",
+        "original high-GCD and Putnam payments"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "LowGcdPrimeDilationNegative.OtherLowGcdEveryRateOn",
+      "to": "SparseHighGcdDenseCoreReturn.LowGcdDenseEveryRateOn",
+      "kind": "STRICT_ONE_SIDED_SUFFICIENT_ARITHMETIC_SUPPLIER",
+      "required": [
+        "single fixed G",
+        "every positive rate"
+      ],
+      "acceptance": "CONDITIONAL_OPEN_ARITHMETIC_PREMISE"
+    },
+    {
+      "from": "LowGcdPrimeDilationNegative.OtherLowGcdEveryRateOn",
+      "to": "SparseHighGcdDenseCoreReturn.riemannHypothesis_of_lowGcdDense_goodScales",
+      "kind": "CONDITIONAL_RH_CONSUMER",
+      "required": [
+        "AffineFrequent G",
+        "independent OtherLowGcdEveryRateOn G"
+      ],
+      "acceptance": "CONDITIONAL_OPEN_RH_STRENGTH_PREMISES"
+    },
+    {
+      "from": "MoebiusIncomparableGcdLcm.moebiusReal_mul_eq_gcd_lcm",
+      "to": "LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_eq_gcdLcmSign",
+      "kind": "GCD_LCM_SIGN_OF_ORIGINAL_ORDERED_KERNEL_INCLUDING_ZEROS",
+      "required": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "MoebiusCausalGcdTimeShift.pickupResponseGram_mul_timeShift",
+      "to": "LowGcdPrimeFreePrimitiveBridge.originalSource_coprime_gcdShifted_term",
+      "kind": "TRUE_SHIFTED_CAUSAL_TIME_GRAM",
+      "required": [
+        "g>=1",
+        "a,b>=1",
+        "coprime g,a and g,b"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "MoebiusStrongOddCoprimeDilation.original_moebius_mul_of_coprime",
+      "to": "LowGcdPrimeFreePrimitiveBridge.originalSource_coprime_gcdShifted_term",
+      "kind": "MULTIPLICATIVE_MOBIUS_SQUAREFUL_ZERO_PRESERVATION",
+      "required": [
+        "coprime g,a and g,b"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_eq_originalMask",
+      "to": "LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_coprime_gcdShifted_term",
+      "kind": "TERMWISE_MASKED_PRIMITIVE_FACTOR_IDENTITY",
+      "required": [
+        "full original pair mask",
+        "coprime common factor",
+        "true T-log(g)"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_coprime_gcdShifted_term",
+      "to": "LowGcdPrimeFreePrimitiveBridge.ExactPrimeFreeTripleReindexTarget",
+      "kind": "NOT_YET_PROVED_FULL_DOUBLE_TO_TRIPLE_GCD_REINDEX",
+      "required": [
+        "finite canonical gcd bijection",
+        "complete original index support",
+        "both pair orientations",
+        "squareful-zero guards"
+      ],
+      "acceptance": "UNPROVED_TARGET_NOT_PROOF"
     }
   ],
   "unproved_or_invalid_transfers": [
@@ -1197,6 +1375,30 @@
       "to": "single original signed low-GCD dense-core growth bound",
       "kind": "NO_PROVED_TRANSFER",
       "why": "All-character Dirichlet family mean, not the original single coefficient channel; needs an independently proved deviation/selection bridge."
+    },
+    {
+      "from": "LowGcdPrimeDilationNegative.lowGcdDenseCross_le_other",
+      "to": "OtherLowGcdEveryRateOn_of_originalLowGcd",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Removed packet is genuinely nonpositive and can have large NEGATIVE magnitude. Thus a source bound on lowGcdDense does NOT bound the prime-free complement; no converse is established."
+    },
+    {
+      "from": "LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_coprime_gcdShifted_term",
+      "to": "ExactPrimeFreeTripleReindexTarget proof",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "A termwise common-factor identity does not automatically justify the ordered double-to-triple finite bijection. It remains an explicitly unproved proposition."
+    },
+    {
+      "from": "LowGcdPrimeFreePrimitiveBridge.originalSource_coprime_gcdShifted_term",
+      "to": "unconditional original factorization without coprimality",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "When g shares a prime factor with a or b the simple product of Möbius symbols can create false nonzero contributions; guard is essential."
+    },
+    {
+      "from": "LowGcdPrimeDilationNegative.riemannHypothesis_of_otherLowGcd_goodScales",
+      "to": "unconditional RH",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Both fixed affine-frequency scale coverage and the stronger one-sided source arithmetic bound remain unproved."
     }
   ],
   "proof_acceptance": {
@@ -1218,9 +1420,13 @@
     "new_fixed_low_gcd_dense_core": "SOURCE_PROOF_CANDIDATE",
     "new_fixed_low_gcd_dense_core_compilation": "NOT_RUN",
     "new_fixed_low_gcd_dense_core_kernel": "NOT_RUN",
-    "new_original_signed_low_gcd_dense_upper": "OPEN"
+    "new_original_signed_low_gcd_dense_upper": "OPEN",
+    "new_prime_dilation_negative_packet": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "new_prime_free_common_factor_shift": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "new_primitive_triple_reindex": "OPEN_NOT_PROVED",
+    "original_low_gcd_prime_free_all_rate_upper": "OPEN"
   },
-  "mathematical_target": "Three genuine source-bound paid subpackets give all-positive-rate scalar error relative to the stricter original signed low-GCD dense core; no independent estimate of the latter or RH proof.",
+  "mathematical_target": "A genuine nonpositive original prime-dilation packet is separated from strict low-GCD dense arithmetic at zero ONE-SIDED upper cost. The canonical coprime primitive shifted source has a new masked termwise identity; full gcd reindex and all-rate signed estimate remain OPEN.",
   "verification": {},
   "new_math_review": {
     "path": "documentation/mathematics/_support/reviews/physical-moebius-sharp-sampling-variance-2026-11-02.md",
@@ -1257,5 +1463,19 @@
     "sampling": "Original integer one-index signed low-gcd dense rows, deterministic 3-control variates, unbiased for pickupCross and endpoint mean bias <=1/4",
     "independent_arithmetic_obligation": "Unproved original signed low-GCD dense-core upper on one fixed affinely frequent scale set",
     "numerical_checks": "Five source arithmetic finite masks at N=8,16,32,48,64, 55-digit working precision, noncertifying"
+  },
+  "prime_dilation_primitive_increment": {
+    "source_scan_anchor": "162891132952e479189bfbc59529185fccfc10b1",
+    "review": {
+      "path": "documentation/mathematics/_support/reviews/moebius-low-gcd-prime-free-primitive-2026-11-02.md",
+      "blob": "cd8eae16ec4f94ae0f1cce5d6c19314529aee355"
+    },
+    "new_source_modules": 2,
+    "new_public_theorem_candidates": 16,
+    "true_signed_one_sided_packet": "L_Q = P_Q + B_Q; prime-dilation P_Q<=0 for T>=0; L_Q<=B_Q",
+    "original_endpoint_one_sided": "T>=4,r>0: endpointSum(T) <= otherLowGcd(Q_r,T)+(64/r^2)e^(rT)+32Te^sqrt(T)+1/4",
+    "conditional_good_scale": "OtherLowGcdEveryRateOn G -> LowGcdDenseEveryRateOn G -> RH if AffineFrequent G, all arithmetic suppliers independent and OPEN",
+    "reindex_frontier": "ExactPrimeFreeTripleReindexTarget open (not an axiom), primitive coefficient mu(g)^2 mu(a)mu(b)/g at true T-log(g), both original zero and coprimality guards preserved",
+    "finite_numeric": "N=8,16,32,48,64 at rate .65 with exact integer mu and 55-digit causal Gram, sign and partition only, noncertifying"
   }
 }
