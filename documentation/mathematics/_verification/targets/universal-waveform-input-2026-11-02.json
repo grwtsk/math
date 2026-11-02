@@ -1,0 +1,103 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Universal arbitrary-waveform source input with exact original Möbius specialization and full signed observation defect",
+  "repository": "grwtsk/math",
+  "scope": "Source-bound additive interface; unrestricted input is any Time→Amplitude function; analytic operations have separately explicit regularity",
+  "source_modules": [
+    {
+      "path": "GRWTSK/MeasureAndIntegration/UniversalWaveformInput.lean",
+      "blob": "639bd1f0954197c8b53510c38c8f54f61e29cd90",
+      "lines": 221,
+      "role": "Raw waveform source for arbitrary time and amplitude types, chart pullback/roundtrip, codec and clock signed defects, optional finite synthesis and separately admissible energy",
+      "no_sorry_axiom_unsafe_authored": true
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUniversalWaveformReturn.lean",
+      "blob": "8f807513c6a5cbf264750717327ed319f926ed44",
+      "lines": 132,
+      "role": "Generic integer coefficients and original pickup response specialization; exact wholePickup/pickupEnergy/pickupCross returns; complete two-orientation mixed/error-error cross defect",
+      "no_sorry_axiom_unsafe_authored": true
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/universal-waveform-input-source-review-2026-11-02.md",
+    "blob": "62f8a341f00e803630fdccf750ddb48ccc5c048b"
+  },
+  "immutable_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/FiniteResponseSum.lean",
+      "blob": "15402baec3be3c090a23f9ac1943124e16357dd0"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/CausalResponseGram.lean",
+      "blob": "a24171f4415963e35930b7e21598cabd5c063c2",
+      "role": "existing distinct finite coefficient-weighted Gram source; not substituted for original pickup"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalBitWindowReturn.lean",
+      "blob": "78c6e2233834912b2924eccf124cf05230099ecd"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitGramReturn.lean",
+      "blob": "67cbc92ee2dec824d0a5c2930f0f45671dad61a9"
+    }
+  ],
+  "selected_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib_pinned_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "invariants": [
+    "Every raw function Time→Amplitude accepted, no continuity, discreteness, finite alphabet, Möbius identity, measurability or energy assumptions for construction.",
+    "Chart pullback changes only the coordinate; lossless inverse only for an actual Equiv.",
+    "Any lossy codec, observation or time-coordinate reading has source-minus-observed signed defect.",
+    "Real waveform quadratic source retains two source/error mixed orientations and error-error square.",
+    "Arbitrary indexed finite synthesis is optional; raw waveform need not be finitely synthesizable.",
+    "EnergyAdmissibleOn required for analytic use of arbitrary real energy; unbounded arbitrary waveforms do not satisfy uniform RH-type bounds.",
+    "Original wholePickup equality for nonnegative time by existing wholePickup_response_sum.",
+    "Original pickupEnergy exact source specialization and pickupCross exact ordered Gram specialization.",
+    "Mixed and error-error offdiagonal packet terms retained for arbitrary observed coefficients; original index inventory and kernel unchanged.",
+    "The physical two-bit Möbius codec cannot losslessly encode unrestricted complex or real waveform amplitude."
+  ],
+  "finite_diagnostic": {
+    "classification": "FINITE_EXACT_TESTS_NOT_LEAN",
+    "script": "/mnt/data/universal_waveform_port_preflight.py",
+    "script_sha256": "89c26add64114f4fa3adc17b1995732eb45f566d16a324e1ec802ef49ea4ba8f",
+    "result": "/mnt/data/universal_waveform_port_preflight.json",
+    "result_sha256": "3bdde079eadd280a7e81b0f6420499950fdd73a07b3662a1dbbcdaf57b09c26d",
+    "raw_samples": 27,
+    "bijective_chart_roundtrips": 9,
+    "signed_pointwise_defect_checks": 18,
+    "complete_signed_cross_expansions": 941,
+    "ordered_pair_terms_checked": 15232,
+    "status": "PASS",
+    "note": "Finite tests of formulas, not proofs of arbitrary infinite waveform integrability, spectral cancellation, or Lean kernel acceptance."
+  },
+  "verification": {
+    "Git_blob_creation": "PASS",
+    "Git_publication": "PENDING_GUARDED_NONFORCE_READBACK",
+    "exact_blob_readback": "PENDING",
+    "static_no_authored_sorry_axiom_unsafe": "PASS",
+    "native_lean_compilation": "NOT_RUN",
+    "expected_types_universes": "NOT_RUN",
+    "fresh_trust0_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "complete_import_closure": "NOT_RUN",
+    "native_runner_dispatched": false,
+    "CI_dispatched": false,
+    "scheduler_dispatched": false,
+    "source_specific_arithmetic_subexponential_estimate": "OPEN",
+    "canonical_RiemannHypothesis": "UNPROVED"
+  },
+  "next": [
+    "Native compile both additive source modules at the exact pinned repo and Mathlib revision, repair any actual elaboration errors.",
+    "Fresh expected-interface, trust=0 kernel and transitive axiom closure check for source-return and mixed-defect declarations.",
+    "Adapt geometric/Kakeya ports to consume UniversalInput explicitly and prove exact signed return for any chosen source; do not assume arbitrary source energy bounds.",
+    "Retain Möbius source instantiation in RH-facing endpoint proof and obtain the new all-positive-rate original arithmetic estimate separately."
+  ]
+}
