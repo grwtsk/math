@@ -105,6 +105,63 @@ the next length must remain uncomputed, never a partial count
 masquerading as complete. Witness enumeration has a *separate* budget.
 No complexity optimum is asserted from asymptotic notation alone.
 
+## Grouping parallel edge multiplicity: exact recurrence, adaptive implementation
+
+The selected mathematical module \`SoficPeriodicMatrixTrace.lean\`,
+source blob \`044644b345b46c90d82dffde6c7485d617b4fbd9\`,
+already defines natural-number adjacency entries by counting actual
+graph-label occurrences and proves
+\`labeledAdjacency_pow_apply_eq_walkCount\`.
+For each source state \`s\`, target \`t\` and finite graph edge
+occurrence inventory \`E\`, define
+
+\`\`\`text
+m(s,t) = #{e in E : source(e) = s and target(e) = t}
+c[n+1,t] = sum_s c[n,s] * m(s,t).
+\`\`\`
+
+For a finite edge multiset, regrouping the original
+\`sum_{e:s(e)=s} c[n,s]\` by target gives the same natural-number
+sum. This is multiplication distributivity over the original edge
+occurrences, not an identification of two indistinguishable
+labeled factor-language points. If two source references coincide
+in literal line and target but have distinct ordinal identities,
+both contribute to \`m(s,t)\`. The separate witness automaton must
+retain those identities; the *counting matrix* is an allowed
+many-to-one summary only for the particular numeric count.
+
+In the corresponding proposed Noe runtime, the counting adapter
+may store a sparse weighted row \`(target,multiplicity)\` while
+keeping occurrence-distinct adjacency for witness reconstruction.
+A row is grouped only when at least one quarter of its outgoing
+source-reference occurrences repeat a target. This policy is
+an empirical performance heuristic, not mathematical necessity.
+The previous literal per-edge loop is retained elsewhere to
+avoid a sparse/simple-graph regression. The logical work budget
+still charges every original edge occurrence even if a weighted
+row uses fewer arithmetic operations. The reported
+\`count_pair_ops\` is separate from the invariant \`count_work\`.
+
+Finite Python diagnostics (independent of native Lean) passed
+5/5 reference test groups including 10,000 seeded random
+small finite multigraph/budget cases and 2,500 further
+precomputed-row comparisons. The local 128-state,
+12,288-occurrence, 512-pair synthetic fixture showed
+about 11.3x lower median *warm count-loop time* after
+adaptive grouping; a distinct-target control did not
+demonstrate comparable savings. Precomputation has a cold
+cost, and neither a universal runtime speedup nor network
+optimality is established. The exact Noe test suite and
+qualified production runtime were NOT_RUN.
+
+**Formal status:** no new Lean theorem was added for this
+runtime optimization: the existing matrix-power recurrence
+is the source-level mathematical basis. A proved extraction
+refinement from actual pinned Noe reference ordinals to
+the selected finite Lean graph, and independent Lean/kernel
+acceptance for the existing source candidates, remain open.
+No RH or dynamical factor-zeta implication follows.
+
 ## Runtime boundary and acceptance
 
 Noe's proposed indexed search schema `noe.repository-search/2`
