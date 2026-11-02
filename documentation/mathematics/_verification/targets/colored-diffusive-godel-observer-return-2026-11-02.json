@@ -1,0 +1,161 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Six-color signed waveform defects through actual diffusive lower/middle/upper graph sandwich, conditional Gödel observer source return",
+  "issue": "https://github.com/grwtsk/math/issues/1559",
+  "publication": "PENDING_GUARDED_NONFORCE_SOURCE_READBACK",
+  "classification": "SOURCE_PROOF_CANDIDATE_NOT_NATIVE_LEAN_ACCEPTED",
+  "source": {
+    "path": "GRWTSK/MeasureAndIntegration/ColoredDiffusiveGodelObserverReturn.lean",
+    "blob": "e604b30a7898d9b7d0b98243c4f36759d1bdb32d",
+    "lines": 288,
+    "existing_mathematics_modified": false,
+    "new_sorry_axiom_unsafe_static_scan": "NONE"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/colored-diffusive-godel-observer-return-2026-11-02.md",
+    "blob": "c3b474f3e5b1e39a29b7cd434322aa40f24687a0"
+  },
+  "finite_test": {
+    "source_pinned_CERN": {
+      "path": "data/cern/CMS_4mu_2012.csv",
+      "sha": "4d87fe4e859802bb225d722353c10148b96e7a95",
+      "rows": 95,
+      "columns": 41,
+      "origin": "cms-opendata-education/cms-jupyter-materials-english",
+      "origin_revision": "fd23734a71b863d944d44f7dbe9c0d0261c5302b",
+      "DOI": "10.7483/OPENDATA.CMS.YGG7.333M"
+    },
+    "diagnostic_file": {
+      "path": "data/cern/CMS_4mu_2012_colored_godel_sandwich.json",
+      "blob": "da94a3739a2eb0a98645337901a0b520fc981a11"
+    },
+    "source_replay": {
+      "path": "scripts/cern/verify_colored_diffusive_godel.py",
+      "blob": "456e8785788de08b13e6c4ffa4b0fa5cda3d8a1e",
+      "status": "PREPARED_NOT_RUN_IN_ISOLATED_LOCAL_PYTHON"
+    },
+    "toy_decimal": {
+      "local_script": "/mnt/data/sandwich/colored_diffusive_godel_preflight.py",
+      "script_sha256": "d0b18e971967731cc27a9b2d9e16917c722e6825a999fc504f0fdbff55a0031c",
+      "local_result": "/mnt/data/sandwich/colored_diffusive_godel_toy.json",
+      "result_sha256": "baaaf4aac588276b634713f7fc38bebfd4e5aaf517cbe8ef17d8c64aa37a90a2",
+      "precision": 55,
+      "status": "PASS_FINITE_DECIMAL_TOY"
+    },
+    "graph_stats": {
+      "ordered_pairs": 8930,
+      "lower": 1094,
+      "middle": 2474,
+      "upper": 3934,
+      "uncertified_middle": 1380,
+      "outside_middle": 6456,
+      "upper_candidate_only": 1460
+    },
+    "data_color_counts": {
+      "arithmetic": 3,
+      "residue": 1,
+      "geometry": 5,
+      "harmonic": 46,
+      "observer": 0,
+      "residual": 40
+    },
+    "float64_source_return_abs_error": 1.6763806343078613e-8,
+    "float64_color_partition_abs_error": 9.947598300641403e-14,
+    "float64_certified_middle_abs_error": 1.0244548320770264e-8,
+    "source_exact_signed_packet": -11258443.664893547,
+    "observed_heat_middle_packet": -3128666.4928508634,
+    "full_coefficient_signed_defect": 63.80696201555551,
+    "graph_complement_signed_defect": -7340632.1257111095,
+    "diffusion_signed_defect": -789208.8532935726,
+    "geometry_fixture": "CMS 4-vector components assigned to Gödel dust tangent as ILLUSTRATION; not physical identification",
+    "geometry_isometry_max_abs_float64": {
+      "spatial": 2.2737367544323206e-13,
+      "observer_one_form": 5.684341886080802e-14,
+      "vorticity": 6.821210263296962e-13
+    }
+  },
+  "preexisting_sources": [
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/ColoredSourcePorts.lean",
+      "blob": "058a661367fff4ff5766182f1c5fb3c5270cc182"
+    },
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/RelationSandwich.lean",
+      "blob": "9761b5dd5d6ada7344031c07386586c72c1d970a"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/GraphTheory/GraphSandwichDiffusion.lean",
+      "blob": "be2a608b5037d4a4c448c7f332096af72588c00e",
+      "role": "context only: large research search inventory, not heat operator"
+    },
+    {
+      "path": "GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinitePhaseDiffusion.lean",
+      "blob": "5884920bdfdf774d1925dcab698e802e8b234f08"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/UniversalWaveformInput.lean",
+      "blob": "639bd1f0954197c8b53510c38c8f54f61e29cd90"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/CERNWaveformSignedGram.lean",
+      "blob": "a2a1cf3bf6cd04677bc3072c70394e2203091e38"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/CERNOpenDataWaveform.lean",
+      "blob": "5ca37d1507fbaa89cf7addbf5eb1ee0f3539a0bd"
+    },
+    {
+      "path": "GRWTSK/DifferentialGeometry/GodelObserverMetricVorticity.lean",
+      "blob": "f5d8a65fd1e4e59e97e139b3fc63829028c3c662"
+    },
+    {
+      "path": "GRWTSK/DifferentialGeometry/GodelObserverRootTransport.lean",
+      "blob": "5460b8845cdd1d4c713ebec250eeef0951437569"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitGramReturn.lean",
+      "blob": "67cbc92ee2dec824d0a5c2930f0f45671dad61a9"
+    }
+  ],
+  "pinned_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "unconditional_finite_math": {
+    "statement": "X_K(x)=X_heatLower(y)+X_heatUncertifiedMiddle(y)+sum_six_color_Rcoeff(x,y,K)+X_(K-Kmiddle)(y)+X_(Kmiddle-heatMiddle)(y) for arbitrary original finite real x,y and signed asymmetric real K and any source Sandwich",
+    "no_upper_only_candidate_promoted": true,
+    "both_ordered_pair_orientations_preserved": true,
+    "source_first_color_assignment": true,
+    "signed_all_mixed_error_error_preserved": true,
+    "heat_damping_nonnegative_time_entrywise_only": true
+  },
+  "godel": {
+    "source_definition": "Actual Godel observer spatialMetric and SpatialRoot, genuine vorticity and chart shift",
+    "recovery_type": "EXACT_FORWARD_SOURCE_RETURN_GIVEN_P_PARAMETERS_CHART_TANGENT",
+    "inverse_from_CERN_scalar_or_color": "NOT_PROVED_AND_NONIDENTIFIABLE",
+    "countermodel": "dust beta=0, tangent(t,0,0,0) has spatial energy=0 and vorticity=0 for all t but observerFlat=-t"
+  },
+  "verification": {
+    "source_readback": "PENDING",
+    "publication": "PENDING",
+    "finite_connected_CERN_test": "PASS_FLOAT64",
+    "finite_decimal_toy_test": "PASS",
+    "native_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "full_transitive_axiom_audit": "NOT_RUN",
+    "Noe_managed_native_owner_job": "NOT_DISPATCHED",
+    "original_moebius_source": "UNCHANGED",
+    "original_RH_endpoint_all_rates": "OPEN",
+    "physics_Godel_measurement_law": "NOT_ESTABLISHED",
+    "formal_acceptance": false
+  },
+  "next": [
+    "Run pinned source replay script scripts/cern/verify_colored_diffusive_godel.py against exact file, compare Decimal output to finite float64 reference",
+    "Compile source on pinned full GRWTSK/Mathlib closure and repair only actual elaboration errors",
+    "Fresh trust=0 kernel replay, expected types/universes, all transitive axioms including imported/private/generated",
+    "To claim physical recovery, independently supply and prove a source-to-Gödel four-tangent/metric chart measurement law; scalar mass/color is not injective",
+    "To improve RH, bind original μ-indexed pickupResponseGram to selected graph and prove uniform all-positive-rate signed graph-complement and diffusion-defect bounds"
+  ]
+}
