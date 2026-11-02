@@ -1,7 +1,7 @@
 {
   "schema": "grwtsk.math.verification-target/1",
   "research_date": "2026-11-02",
-  "title": "Source-preserving sphere/fiber/Mobius-bit transport, actual finite sampling, and sharp TV coupling allowance",
+  "title": "Original source-preserving shell/physical-bit transport, finite Gibbs sampling, sharp TV, maximal coupling and signed pair variance",
   "repository": "grwtsk/math",
   "author_attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
   "pinned_toolchain": {
@@ -33,6 +33,20 @@
       "source_commit": "7e62c98390b6f94213f6ff6b64858a602bf835d4",
       "source_parent": "a19e2dca57e9fac89600e5a6b7d7cd789d0452fc",
       "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/ShapePhysicalBitMaximalCoupling.lean",
+      "blob": "53b74fcd1cb3be2db161a68ed56209640750e845",
+      "source_commit": "dcc1d479fd6757dcadd47fab2f057b657989e5d2",
+      "source_parent": "0c87a2e21ed7ffd6c203743a41bb5c793a364b4c",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/ShapePhysicalBitPairSampling.lean",
+      "blob": "b15bfdf183afd5f44379937a83b57c0e4c7a8407",
+      "source_commit": "4126efa42f0a1f2d41d827406ffc62fbb219180b",
+      "source_parent": "54a15bd4d8ea35933ac02c3189886163c177048e",
+      "status": "SOURCE_PROOF_CANDIDATE"
     }
   ],
   "pinned_dependencies": [
@@ -59,14 +73,18 @@
     {
       "path": "GRWTSK/Combinatorics/GraphTheory/FiniteAdmissibleSampler.lean",
       "blob": "e74a253e66c1ee9ab5b6d97440e1fdeee49a54be"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteWeightedChannelCovariance.lean",
+      "blob": "1e88479b60ade504d9da34a700f8a75d1d6d6991"
     }
   ],
   "review": {
     "path": "documentation/mathematics/_support/reviews/shape-physical-bit-source-preserving-transport-2026-11-02.md",
-    "blob": "a51ca1eedd67bc6b0c594368f48525066bff4705"
+    "blob": "9210f809b995e1c7135112b1195f7591db656796"
   },
-  "source_commit": "7e62c98390b6f94213f6ff6b64858a602bf835d4",
-  "source_parent": "a19e2dca57e9fac89600e5a6b7d7cd789d0452fc",
+  "source_commit": "4126efa42f0a1f2d41d827406ffc62fbb219180b",
+  "source_parent": "54a15bd4d8ea35933ac02c3189886163c177048e",
   "exact_source": "Original ShapeChangingBundle center/shell plus full integer-indexed PhysicalStream, two-tangent SignedBits, existing pickupCross with all ordered non-diagonal pairs and signedReadoutDefect; no new arithmetic coefficients, windows or unproved cancellation. Third source samples finite original-index slots using the already normalized Gibbs Sampler.probability row; a uniformly weighted finite reference average is compared through the existing measured physical two-bit indexed Hilbert distance with unavailable mass separately accounted.",
   "source_candidate_theorems": [
     "Folder.Research.ShapePhysicalBitTransport.lower_lift_center",
@@ -127,7 +145,44 @@
     "Folder.Research.ShapePhysicalBitFiniteTVCoupling.uniformDiagonalCoupling_hasMarginals",
     "Folder.Research.ShapePhysicalBitFiniteTVCoupling.uniformDiagonalCoupling_agreement",
     "Folder.Research.ShapePhysicalBitFiniteTVCoupling.finiteTV_comparison_with_original_signed_return",
-    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.rowTotalVariation_uniformSampler"
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.rowTotalVariation_uniformSampler",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.gibbsResidual_nonneg",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.uniformResidual_nonneg",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.residual_product_zero",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.gibbsResidual_sum",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.uniformResidual_sum",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.gibbsResidual_zero_of_TV_zero",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.uniformResidual_zero_of_TV_zero",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_nonneg",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_row_formula",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_column_formula",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_row",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_column",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_hasMarginals",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_diagonal",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_diagonal_sum",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_mismatch_eq_TV",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_optimal",
+    "Folder.Research.ShapePhysicalBitMaximalCoupling.maximalCouplingMatrix_with_original_signed_return",
+    "Folder.Research.ShapePhysicalBitPairSampling.windowGibbsWeight_total_one",
+    "Folder.Research.ShapePhysicalBitPairSampling.windowGibbsWeight_pos",
+    "Folder.Research.ShapePhysicalBitPairSampling.windowGibbsWeight_isPositiveWindowLaw",
+    "Folder.Research.ShapePhysicalBitPairSampling.windowPairExpectation_one",
+    "Folder.Research.ShapePhysicalBitPairSampling.windowPairExpectation_congr",
+    "Folder.Research.ShapePhysicalBitPairSampling.windowPairExpectation_add",
+    "Folder.Research.ShapePhysicalBitPairSampling.windowPairExpectation_sub",
+    "Folder.Research.ShapePhysicalBitPairSampling.windowPairExpectation_const_mul",
+    "Folder.Research.ShapePhysicalBitPairSampling.originalSignedPair_eq_observed_add_defect",
+    "Folder.Research.ShapePhysicalBitPairSampling.windowPairImportance_eq_originalSum",
+    "Folder.Research.ShapePhysicalBitPairSampling.importance_originalSignedPair_eq_pickupCross",
+    "Folder.Research.ShapePhysicalBitPairSampling.importance_observedSignedPair_eq_packet",
+    "Folder.Research.ShapePhysicalBitPairSampling.importance_defectSignedPair_eq_defect",
+    "Folder.Research.ShapePhysicalBitPairSampling.importance_original_signed_return",
+    "Folder.Research.ShapePhysicalBitPairSampling.windowPairVariance_nonneg",
+    "Folder.Research.ShapePhysicalBitPairSampling.windowPairVariance_eq_secondMoment_sub_sq",
+    "Folder.Research.ShapePhysicalBitPairSampling.originalSignedPairVariance_nonneg",
+    "Folder.Research.ShapePhysicalBitPairSampling.originalSignedPairVariance_eq_secondMoment",
+    "Folder.Research.ShapePhysicalBitPairSampling.gibbs_importance_and_signed_return"
   ],
   "unresolved_mathematical_obligations": [
     "A true topological fiber bundle requires projection, local trivializations, transition cocycles and compatibility.",
@@ -135,10 +190,14 @@
     "Finite one-step Gibbs sampling law and finite deterministic uniform benchmark have candidate declarations. Independent draws, concentration, equidistribution, infinite-dimensional measure, and cusp-limit convergence remain unproved; AddDissociated.randomisation remains unused without support hypotheses.",
     "The one-sided all-positive-rate bound for the complete original signed Möbius pickup or endpointSum on adequately covering scales remains OPEN.",
     "General maximal coupling existence for a nonuniform Gibbs row is not established. The exact common-index overlap is a capacity, and only a uniform-row diagonal witness has been constructed.",
-    "The sharp finite TV bound controls [0,1]-valued masked two-bit and unavailable-indicator observables, not the complete unbounded signed off-diagonal arithmetic source or any good-scale exponent."
+    "The sharp finite TV bound controls [0,1]-valued masked two-bit and unavailable-indicator observables, not the complete unbounded signed off-diagonal arithmetic source or any good-scale exponent.",
+    "Exact maximal coupling for arbitrary nonuniform Gibbs rows and signed source importance sampling are SOURCE PROOF CANDIDATES and require a pinned Lean compile/kernel proof before accepted status.",
+    "Full original-window importance correction requires the explicit full-support Gibbs row: every original endpoint index must have positive probability; sparse rows do not permit unconditional exact recovery.",
+    "The signed source importance variance includes the entire inverse-weight second moment; finite TV control of bounded bit observables supplies no numerical bound on that variance or pickupCross.",
+    "No arithmetic one-sided all-positive-rate upper bound or affine good-scale certificate for PickupEndpointQuadrature.endpointSum has been obtained."
   ],
   "verification": {
-    "source_publication": "PASS_FOUR_EXACT_GITHUB_BLOB_READBACKS",
+    "source_publication": "PASS_SIX_EXACT_GITHUB_BLOB_READBACKS",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -155,12 +214,18 @@
     "new_finite_law_comparison": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
     "reported_CI_checks_on_sampling_source_commit": 0,
     "new_finite_tv_coupling": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
-    "reported_CI_checks_on_TV_source_commit": 0
+    "reported_CI_checks_on_TV_source_commit": 0,
+    "new_maximal_coupling": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "new_original_window_pair_sampling": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "reported_CI_checks_on_maximal_coupling_source_commit": 0,
+    "reported_CI_checks_on_pair_sampling_source_commit": 0
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
     "82d86ddcf325f0120eae13b2c4181e3b8dc4c028",
     "a3015deaa56f5990be88775fa8dfad77a0899606",
-    "7e62c98390b6f94213f6ff6b64858a602bf835d4"
+    "7e62c98390b6f94213f6ff6b64858a602bf835d4",
+    "dcc1d479fd6757dcadd47fab2f057b657989e5d2",
+    "4126efa42f0a1f2d41d827406ffc62fbb219180b"
   ]
 }
