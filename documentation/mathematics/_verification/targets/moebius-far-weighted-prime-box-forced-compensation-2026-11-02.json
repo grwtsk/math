@@ -96,7 +96,7 @@
     "qualifier": "NONCERTIFYING floating-point calculations; limit follows PNT, not data"
   },
   "trust": {
-    "publication": "PENDING_EXACT_MAIN_READBACK",
+    "publication": "PASS_FOUR_EXACT_GIT_BLOB_READBACK",
     "compilation": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
     "elaboration": "NOT_RUN",
@@ -109,7 +109,9 @@
     "canonical_RiemannHypothesis": "OPEN",
     "old_source_modified": false,
     "new_axioms": false,
-    "root_imports_modified": false
+    "root_imports_modified": false,
+    "source_proof_status": "SOURCE_PROOF_CANDIDATE_UNCOMPILED",
+    "generated_files_exact_readback": 4
   },
   "issues": [
     1556,
@@ -119,5 +121,7 @@
     "https://dlmf.nist.gov/27.2",
     "https://arxiv.org/abs/2208.06141",
     "https://www.fields.utoronto.ca/talks/Explicit-Mertens-estimates"
-  ]
+  ],
+  "source_publication_commit": "072e71b03859802037a7b47b580575e30e18e887",
+  "source_publication_parent": "89622c3584bb66711040a6967c6161539ec6c92d"
 }
