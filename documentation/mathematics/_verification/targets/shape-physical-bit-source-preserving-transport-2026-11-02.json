@@ -347,7 +347,7 @@
     "The new 17 theorem declarations require pinned Lean elaboration, source closure build, fresh kernel checking, and transitive axiom auditing; no native acceptance was run."
   ],
   "verification": {
-    "source_publication": "PASS_FOURTEEN_SOURCE_BLOBS_READBACK_PENDING_FINAL_ATOMIC_RECEIPT",
+    "source_publication": "PASS_FOURTEEN_EXACT_GITHUB_BLOB_READBACKS",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -386,7 +386,11 @@
     "new_source_informed_gibbs_realization": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
     "exact_rational_finite_tests_current_increment": "PASS_720_CASES_NONCERTIFYING",
     "pinned_mathlib_log_nonpos_hypothesis": "CHECKED_REQUIRES_NONNEGATIVE_INPUT; PASSED_POSITIVE_WEIGHT_AS_LE",
-    "pinned_mathlib_Finset_sum_mul_hypothesis": "CHECKED_EXISTING_DIRECTION; NO_UNNECESSARY_EDIT"
+    "pinned_mathlib_Finset_sum_mul_hypothesis": "CHECKED_EXISTING_DIRECTION; NO_UNNECESSARY_EDIT",
+    "pinned_readback_source_revision": "e344ce83a0d7649b2f2a1872df3b6a9736022f3a",
+    "all_14_Lean_source_blobs_match": "PASS",
+    "sharp_variance_source_commit_combined_ci_status_count": 0,
+    "gibbs_realization_source_commit_combined_ci_status_count": 0
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
