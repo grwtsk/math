@@ -66,9 +66,12 @@ theorem principal_modOne_LFunction_eq_riemannZeta (s : ℂ) :
     DirichletCharacter.LFunction
         (1 : DirichletCharacter ℂ 1) s =
       _root_.riemannZeta s := by
-  simpa using congrFun
-    (DirichletCharacter.LFunction_modOne_eq
-      (chi := (1 : DirichletCharacter ℂ 1))) s
+  have hfun :
+      DirichletCharacter.LFunction
+          (1 : DirichletCharacter ℂ 1) =
+        _root_.riemannZeta :=
+    DirichletCharacter.LFunction_modOne_eq
+  exact congrFun hfun s
 
 /-- A family zero-free theorem specializes to the Riemann zeta function with
 no change of boundary and no additional exceptional point. -/
