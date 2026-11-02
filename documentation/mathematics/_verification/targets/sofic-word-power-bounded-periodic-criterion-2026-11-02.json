@@ -1,0 +1,162 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "issue": "https://github.com/grwtsk/math/issues/1576",
+  "title": "Exact original word-transition powers count composable source paths and yield bounded periodic label criterion",
+  "classification": "FULL_SOURCE_PROOF_CANDIDATE_NOT_NATIVE_LEAN_ACCEPTED",
+  "source_additions": [
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficWordPowerClosedPath.lean",
+      "blob": "fc3842103f18ecd42aa1587d8bc9556d6144a3c2",
+      "lines": 339,
+      "roles": [
+        "True word-block chain witness type with actual original LabeledWalkData",
+        "Recursive Fintype and exact endpoint word matrix-power cardinality",
+        "Both directions original WordPath correspondence, including prepend edge",
+        "Exact WordPowerClosedPathBridge source proof candidate"
+      ],
+      "no_sorry_axiom_unsafe_static_scan": true
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBoundedWordMatrixCriterion.lean",
+      "blob": "3be4fc0e7b953c22e14749b8ad933b0ab851de1b",
+      "lines": 259,
+      "roles": [
+        "All finite period blocks from original repeatBlock and finiteCopies",
+        "Closed repeated source paths imply every offset finite block belongs to graph language",
+        "Source proof candidate of full BoundedPeriodicWordMatrixCriterion",
+        "Unconditional source candidate for true periodic-label-point bounded matrix count"
+      ],
+      "no_sorry_axiom_unsafe_static_scan": true
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/sofic-word-power-bounded-periodic-criterion-2026-11-02.md",
+    "blob": "584dcc8d15f4bd7b34070b29ef31ca33d5b6037f"
+  },
+  "existing_source_deps": [
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CertifiedTransversal.lean",
+      "blob": "df720cbb72c616938635c20477430f5f0ded4021"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/ExactSoficLanguageCover.lean",
+      "blob": "f50489eaf6c7277993a08925a58b7765f9e10ec9"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLanguageTransversal.lean",
+      "blob": "238da905b6595c944cac40f39ae2f54870032132"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean",
+      "blob": "70e416083e8fd1238ffdd8896f984e0a5382c139"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBasedCycleCard.lean",
+      "blob": "d7fd2f5aad643d4350e4b5bfd7128dd979717a74"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepeatBridge.lean",
+      "blob": "a05e7d4527b6e37d59a48288f1e58e1a3867ca56"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteRepeatClosure.lean",
+      "blob": "e8d8dcc01f4e9f067cb9041ad5e54f7dd79d0962"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicWordMatrix.lean",
+      "blob": "d8f0423d8b872e5045c779544bd39eb1bad7adfe"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficMacroBoundaryPigeonhole.lean",
+      "blob": "3cefc809745c95b490b3dce20880da7bd82ff9a4"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicFiberLedger.lean",
+      "blob": "becfa9cfddb8479c36a007c17d8be4d0d7defe05"
+    }
+  ],
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "source_interface_goals": [
+    "SoficWordPowerClosedPath.wordBlockChain_card_eq_matrixPow : cardinality of the actual k-composable-word-path witness type equals the original exact wordLiftMatrix G word ^ k entry for all k,s,t",
+    "SoficWordPowerClosedPath.trace_wordLiftMatrix_pow_eq_basedBlockChain_card : trace of original word-matrix power equals number of actual closed based block chains",
+    "SoficWordPowerClosedPath.wordLiftMatrix_pow_apply_pos_iff_wordPath : positive entry iff real original WordPath carrying finiteCopies word k",
+    "SoficWordPowerClosedPath.wordPowerClosedPathBridge_proof : original WordPowerClosedPathBridge G word",
+    "SoficBoundedWordMatrixCriterion.boundedPeriodicWordMatrixCriterion_proof : original BoundedPeriodicWordMatrixCriterion G language n hn with exact whole-language equality, no external word-matrix or pigeonhole premises",
+    "SoficBoundedWordMatrixCriterion.periodicLabelPoint_card_eq_boundedWordCount_proof : actual finite number of distinct period-dividing-n source label points equals the original boundedPeriodWordCount"
+  ],
+  "mathematical_scope": [
+    "No graph/source/wordLiftMatrix/finiteCopies definition changed or replaced.",
+    "Matrix counts every actual interior state and original graph-edge label; block chains do not reduce to Prop-only macro edges.",
+    "Zero matrix power, zero-length word, and empty state and alphabet sets preserved.",
+    "Actual source WordPath proposition does not eliminate into Type; reverse path witness is established in Prop via Nonempty.",
+    "Bounded periodic point criterion is about distinct label points, not generally the total adjacency trace.",
+    "Original faithful cycle labels and complete same-period lifts remain independent and false for generic exact-language graph presentations.",
+    "Full exact-language equality for every word is retained."
+  ],
+  "external_finite_references": {
+    "chain": {
+      "script": "/mnt/data/sofic_word_power_chain_reference.py",
+      "script_sha256": "e013ca797a55cbf28856e7e9a3636f1bd798fac94818143cfb22aa84655bbc48",
+      "result": "PASS",
+      "result_sha256": "fe87cc525646b78920e08deaf84150bc51ccf314038ae290f9e9be4a88e1e44d",
+      "graphs": 358,
+      "graph_word_pairs": 2272,
+      "endpoint_cardinality_and_literal_witness_comparisons": 50855,
+      "positive_entry_checks": 50855,
+      "exact_trace_comparisons": 10975,
+      "enumerated_original_witness_occurrences": 89872,
+      "sharp_state_cycle_checks": 28
+    },
+    "periodic": {
+      "script": "/mnt/data/sofic_word_periodic_matrix_bound.py",
+      "script_sha256": "25349a454c1ef420f553da12d3d69346118532be6155ce0d2cab7bc20fc857d9",
+      "result": "PASS",
+      "result_sha256": "54a9a37f3c79304ef712cb71a6da353c9c15a4bca27e83a07d64294cb5a7850b",
+      "graphs": 1060,
+      "periodic_word_cases": 48812,
+      "exact_matrix_entry_expansions": 523733
+    },
+    "trust": "Finite Python checks only; not a universal theorem or native Lean certificate"
+  },
+  "proof_automation": {
+    "current_noe_skill_inspection_revision": "eeaed88c12d7d77ad76dbc1a021f8a6da68a44bc",
+    "canonical_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "selected_managed_native_route": "Noe source-bound managed registry v3 under owner/resource admission when available",
+    "local_lean_lake_elan_found": false,
+    "local_verified_noe_math_checkout_found": false,
+    "native_job_dispatched": false,
+    "resource_hold_bypassed": false,
+    "allowed_axioms_to_audit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "verification": {
+    "blob_creation": "PASS",
+    "Git_publication": "PENDING_NONFORCE_SOURCE_READBACK",
+    "exact_blob_readback": "PENDING",
+    "direct_static_source_scan": "NO_AUTHORED_SORRY_AXIOM_UNSAFE_IN_NEW_SOURCE",
+    "native_Lean_compilation": "NOT_RUN",
+    "expected_types_universes": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "complete_import_closure": "NOT_RUN",
+    "Noe_owner_restoration": "NOT_CHECKED",
+    "proof_acceptance": false,
+    "universal_trace_equals_periodic_label_card": "FALSE_WITH_COUNTEREXAMPLES",
+    "issue_1576": "OPEN"
+  },
+  "next": [
+    "Fresh native compile entire canonical/sofic/word matrix import closure at exact math commit with Noe managed source-bound owner",
+    "Repair only real elaboration errors in the two new proof candidates and their pinned ancestors",
+    "Run separate exact expected type/universe, trust=0 kernel replay and full transitive #print axioms receipts for named declarations",
+    "Preserve the missing/surplus graph lift ledger and independent faithful/complete period-lift conditions; no RH or zeta claim"
+  ]
+}
