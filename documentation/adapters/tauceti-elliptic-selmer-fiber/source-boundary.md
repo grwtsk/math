@@ -66,3 +66,39 @@ New isolated source-typed Tau Ceti candidate \`documentation/adapters/tauceti-el
 The compatible maps multiply by p on geometric torsion/cochain and local rational points, but induce **REDUCTION** on E(Q_v)/p^n E(Q_v); the true Kummer cocycle computation proves the difference. The local derived inverse limit has H0=T_p(E(Q_v)), which is NOT automatically zero at archimedean places, and H1=E(Q_v)^hat_p after checking the finite-torsion and surjective quotient Mittag-Leffler hypotheses. The full global Selmer fiber at finite levels uses these corrected U_v,n^+ and retains all local H0 before canceling its global H0 cokernel by actual isomorphism. No source file claims a completed all-places/restricted-product or archimedean duality proof inside Lean.
 
 No root imports or external dependency changes. The mathematical result is classical; local source compilation NOT_RUN, kernel replay NOT_RUN, axiom audit NOT_RUN, compatible Tau Ceti adapter compilation NOT_RUN. No runner or CI action is inferred or dispatched. General BSD-I/II and the noncircular comparison to complex Hasse-Weil L-jets are still OPEN.
+
+
+## Genuine finite elliptic GalRep and Weil-to-Tate-dual port (2026-11-02)
+
+New isolated source candidate
+`documentation/adapters/tauceti-elliptic-selmer-fiber/TauCetiEllipticTorsionGalRepWeil.lean`
+is pinned to the original TauCetiProject/TauCeti
+`2bdb755239d3bd84760e99bc83166bdf7cc75a6b`
+(Lean v4.36.0-rc1, original Tau Ceti contributors, Apache-2.0).
+It builds the **exact** `GalRep n F` over
+`W.TorsionCoeff n=E[n](Fsep)`, using its original `ZMod n` module,
+continuous Galois action and separable/algebraic closure comparison.
+It applies the upstream `torsionCoeffWeilPairing` (original
+`GaloisCohomology/WeilPairing/Basic.lean`, blob
+`d54088b59839bf055f1670006127a4d854adaa50`) to construct a
+source Galois-equivariant `TopPairing` and its genuine morphism
+`E[n] -> tateDual(E[n])`, with the explicit orientation
+`a ↦ (b ↦ e_n(a,b))`. The source candidate proves injectivity via
+actual upstream Weil nondegeneracy and specializes the **already
+existing** pinned local `tateDualityPairing_perfect_mixed` using
+the original Brauer-normalized trace. It does NOT prove the Weil
+dual morphism surjective or the Kummer subgroups orthogonal.
+
+The source-exact discussion, original blobs and next consumers are
+`documentation/mathematics/_support/reviews/bsd-elliptic-finite-galrep-weil-duality-2026-11-02.md`.
+Full Weil dual isomorphism, Kummer-orthogonality, p-power transition
+duality, reverse away-S unramified comparison, archimedean p=2
+correction, actual derived-limit and Poitou--Tate remain OPEN.
+The actual untruncated local Kummer cone still has the previously
+corrected nonzero higher Weil--Chatelet residue. Its good truncation
+must remain source-visible. No BSD-I/II or complex L-jet conclusion.
+
+This is a source-only adapter; **parsing, Lean compilation, compatible
+upstream integration, fresh kernel checking and transitive axiom
+auditing are NOT_RUN**. No root import/toolchain change, new
+axiom/sorry/admit or verification dispatch follows from publication.
