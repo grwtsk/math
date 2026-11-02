@@ -1,6 +1,6 @@
 /-
 Copyright (c) 2026 grwtsk contributors. MIT.
-Human Mathematical direction: grwtsk contributors.
+Human mathematical direction: grwtsk contributors.
 Formalization assistance: OpenAI.
 
 SOURCE_PROOF_CANDIDATE / COMPILATION_NOT_RUN / FRESH_KERNEL_NOT_RUN /
