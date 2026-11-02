@@ -115,7 +115,7 @@
     "existing_library_claim": "No new literature-priority claim for classical Laplace and Cauchy"
   },
   "verification": {
-    "git_source_publication": "PENDING_GUARDED_NONFORCE_MAIN_READBACK",
+    "git_source_publication": "PASS_FIVE_EXACT_GITHUB_BLOB_READBACK",
     "parser": "NOT_RUN",
     "compilation": "DEFERRED_PER_USER",
     "expected_theorem_types": "NOT_RUN",
@@ -127,11 +127,15 @@
     "source_coefficients_or_gram_changed": false,
     "root_import_or_dependency_pin_changed": false,
     "all_positive_rate_original_FAR": "OPEN",
-    "RiemannHypothesis": "OPEN"
+    "RiemannHypothesis": "OPEN",
+    "exact_file_count": 5,
+    "github_pre_update_diff": "PASS_FIVE_ADDITIONS_NO_MODIFICATIONS"
   },
   "tracking": [
     1556,
     1429
   ],
-  "next_mathematical_obligation": "Prove a noncircular all-positive-rate complete signed original FAR bound, or equivalent original weighted energy convergence for every sigma>0; no representation identity or finite-height statement supplies it automatically."
+  "next_mathematical_obligation": "Prove a noncircular all-positive-rate complete signed original FAR bound, or equivalent original weighted energy convergence for every sigma>0; no representation identity or finite-height statement supplies it automatically.",
+  "source_commit": "e60d5a96dc54c697a015cdbf89de1f74a6f9bac6",
+  "source_parent": "f0ac0929bde3c8e13c91331681948f74608c1005"
 }
