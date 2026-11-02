@@ -152,8 +152,8 @@
   "verification": {
     "new_authored_sorry_axiom_unsafe": "NONE_STATIC_SOURCE_SCAN",
     "source_creation_blob": "PASS",
-    "guarded_main_publication": "PENDING",
-    "exact_blob_readback": "PENDING",
+    "guarded_main_publication": "PASS_NONFORCE_EXPECTED_PARENT_MAIN",
+    "exact_blob_readback": "PASS_6_OF_6",
     "native_compilation": "NOT_RUN",
     "expected_types_universes": "NOT_RUN",
     "fresh_trust0_kernel_replay": "NOT_RUN",
@@ -167,5 +167,17 @@
     "Formalize SharpSelfLoopLeakage as a complete Lean proof, keeping its original finite signed column-stochastic hypotheses.",
     "Construct a genuine source-to-Gödel tangent identification if the selected application warrants a physical observer claim; otherwise only return a supplied field.",
     "Prove kernel-specific all-positive-rate signed residual/transport bound for original μ-indexed response before suggesting an RH implication."
-  ]
+  ],
+  "publication": {
+    "source_commit": "6a4ae8ab1c2f1aa38c251d59b5907ac2119c492f",
+    "guarded_parent": "c8808d5c5c2b92e67f79ad37305ca2284dae312c",
+    "prior_manifest_blob": "620c4581c24fc3bdf364bb4ec7a85a70a0b70366",
+    "original_source_blob_readback": true,
+    "native_Lean_acceptance": false
+  },
+  "preexisting_canonical_six_color_source": {
+    "path": "GRWTSK/MeasureAndIntegration/ColoredDiffusiveGodelObserverReturn.lean",
+    "blob": "e604b30a7898d9b7d0b98243c4f36759d1bdb32d",
+    "identification": "Complementary existing six-color provenance/graph-sandwich source; not superseded by red/blue scalar sign channels"
+  }
 }
