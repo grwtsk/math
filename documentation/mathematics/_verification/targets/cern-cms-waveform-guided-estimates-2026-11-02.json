@@ -1,0 +1,90 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "CERN source-preserving finite waveform estimate budgets",
+  "source": {
+    "path": "data/cern/CMS_4mu_2012.csv",
+    "blob": "4d87fe4e859802bb225d722353c10148b96e7a95",
+    "origin_repository": "cms-opendata-education/cms-jupyter-materials-english",
+    "origin_commit": "fd23734a71b863d944d44f7dbe9c0d0261c5302b",
+    "doi": "10.7483/OPENDATA.CMS.YGG7.333M"
+  },
+  "pinned_inputs": [
+    {
+      "path": "GRWTSK/MeasureAndIntegration/UniversalWaveformInput.lean",
+      "blob": "639bd1f0954197c8b53510c38c8f54f61e29cd90"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/CERNOpenDataWaveform.lean",
+      "blob": "5ca37d1507fbaa89cf7addbf5eb1ee0f3539a0bd"
+    }
+  ],
+  "new_files": [
+    {
+      "path": "data/cern/CMS_4mu_2012_estimate_guidance.json",
+      "blob": "d168f20786a0e0e4ac2d89e8042d4c8ed0feda73"
+    },
+    {
+      "path": "scripts/cern/analyze_cms_4mu_estimates.py",
+      "blob": "73498ae2a4d8e1980d0cf52d466ee682394a4090"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/CERNWaveformSignedGram.lean",
+      "blob": "a2a1cf3bf6cd04677bc3072c70394e2203091e38"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/cern-cms-waveform-guided-estimate-budgets-2026-11-02.md",
+      "blob": "0d5d9a36a6625cc4a1140fceba2ec0254d1b2e95"
+    }
+  ],
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "finite_diagnostics": {
+    "engine": "connected source JavaScript",
+    "rows": 95,
+    "fields": 41,
+    "uniqueRunEvent": 95,
+    "missingCells": 0,
+    "massL2GeV": 2233.507895844367,
+    "massCenteredL2GeV": 1125.5650989011779,
+    "fullSignedCenteringDefectGeV2": 349836108.5198629,
+    "maximumMomentumReconstructionDifferenceGeV": 0.0029323579630329277,
+    "allChargeNeutralEvents": 95,
+    "chargeEnergyLossSignFlips": 9,
+    "azimuthDirections": 380,
+    "dyadicAngularScales": [
+      1,
+      8
+    ],
+    "massQuantization001ErrorL2GeV": 0.02985180061570826,
+    "massQuantization001OperatorBoundMultiplierGeV2": 133.34957970407103,
+    "result": "PASS_FINITE_ONLY"
+  },
+  "finite_theorem": "For x=y+e, X_K(x)-X_K(y)=eᵀK_off y+yᵀK_off e+eᵀK_off e, hence |ΔX|≤||K_off||op(2||y||₂||e||₂+||e||₂²). Not the original arithmetic kernel.",
+  "limitations": [
+    "Source is selected collision events indexed by file row, NOT a physical time series.",
+    "Finite azimuth occupancy is not a Kakeya maximal inequality or verified spatial tubes.",
+    "CMS charges are not Möbius coefficients.",
+    "No source map to original pickupCross and no all-positive-rate dyadic arithmetic estimate.",
+    "CERN GeV² calibration does not pay the dimensionless RH quarter-unit endpoint allowance."
+  ],
+  "verification": {
+    "git_blob_creation": "PASS",
+    "git_publication": "PENDING",
+    "exact_blob_readback": "PENDING",
+    "source_analysis": "PASS_FINITE_JAVASCRIPT",
+    "python_replay": "NOT_RUN",
+    "Lean_compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "RH": "UNPROVED"
+  },
+  "next": [
+    "Replay existing pinned full-row validator then new estimate script in source checkout.",
+    "Native compile generic signed Gram source client, check all theorem interfaces and transitive axioms.",
+    "Prove actual μ-source comparison, operator norm and signed residual budgets uniformly on fixed dyadic T."
+  ]
+}
