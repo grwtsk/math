@@ -482,3 +482,112 @@ NOT_RUN. No new axiom/sorry/admit, root imports,
 toolchain migration, native Noe/CI or automated
 proof acceptance. Git source publication/readback
 is separate evidence.
+
+
+## Genuine theta scalar-to-Brauer H² and local Selmer consumer connection (2026-11-02)
+
+This increment is pinned to ORIGINAL
+TauCetiProject/TauCeti `2bdb755239d3bd84760e99bc83166bdf7cc75a6b`,
+original Tau Ceti contributors, Apache-2.0, Lean v4.36.0-rc1,
+while the independent grwtsk/math root remains Lean v4.34.1.
+Source review:
+`documentation/mathematics/_support/reviews/bsd-theta-brauer-h2-genuine-selmer-connection-audit-2026-11-02.md`.
+
+**One exact reused original coefficient:** Tau Ceti ALREADY defines
+`UnitsCoeff F = Additive (SeparableClosure F)ˣ` with a continuous
+absolute-Galois action in
+`TauCeti/FieldTheory/GaloisCohomology/Coefficients.lean`,
+and its `BrauerTorsion.lean` already proves the
+original `h2KummerToUnits` injection and exact n-torsion image.
+Its `MuNRep.lean` already supplies `muNRepH2Equiv`;
+`Brauer/RootsOfUnity.lean` supplies the original
+normalized `h2MuEquivZMod`. Therefore the period-index
+obstruction does NOT require an invented or parallel
+Brauer coefficient type.
+
+NEW native `ThetaCentralFactorCocycle.lean`,
+blob `ed190a13bdd48641fcc9a5d72b21ad58df69b89b`,
+proves directly from the genuine central extension's group
+multiplication that its scalar boundary
+`c(σ,τ)` obeys
+`c(σ,τ)c(στ,ρ)=σ(c(τ,ρ))c(σ,τρ)`.
+The centrality and scalar inclusion are the actual
+group-theoretic conditions; no cohomology cocycle law
+is assumed as a data field. A strict crossed Kummer
+lift forces scalar boundary 1. The existing original
+`TauCetiOriginalGeometricTheta.lean` now also defines
+`scalarLiftHom` and `scalarLiftHom_injective`,
+blob `15b6c7b50ec2b2d5db64693fe596da0effe938c9`,
+using actual elliptic rational-function constants.
+
+NEW isolated `TauCetiThetaBrauerH2Transport.lean`,
+blob `dd92b230866dc7a4da35ac2313738a1a02d862a6`,
+returns the raw ORIGINAL
+`thetaObstructionScalar` in the ACTUAL source
+`UnitsCoeff F`, and proves its
+`Z2`/explicit `H2`/canonical `continuousCohomology 2`
+transport under separately named original scalar
+**continuity** and **multiplicative cocycle law**.
+The file also returns equality of H² classes from the exact
+source `d1` and a CONTINUOUS scalar section-change
+one-cochain. If the genuine theta Brauer class is killed
+by n, its UNIQUE source `H²(mu_n)` preimage follows
+from original Tau Ceti `h2KummerToUnits_range`
+and `h2KummerToUnits_injective`, and the original
+`muNRepH2Equiv`/ `h2MuEquivZMod` yield the
+genuine normalized `ZMod n` residue, including
+local residue characteristic dividing n. That
+n-torsion input has **not** been proved for the
+geometric theta class.
+
+NEW native `ThetaToKummerLocalDuality.lean`,
+blob `24773e443dc382b3bbab65e263f51f1687d04647`,
+composes previously separate
+`ThetaKummerIsotropy`,
+`LocalAbelianTateCupDescent` and
+`LocalKummerAdjointKernel`. It proves the unique
+original abelian cup-descended pairing, exact Kummer
+connecting-map adjunction and the Kummer image's
+exact cup annihilator when the independently required
+source theta vanishing/polarization, Kummer exactness,
+and abelian Tate **separation** hold. The actual
+pinned (E[n]), Weil cup, (H¹(F,E)[n]),
+(E(F)/nE(F)) must be used at instantiation.
+
+**True unresolved arithmetic work:** give original
+Galois `MulDistribMulAction` on the geometric
+function-field theta group and identify its
+`FactorData.factor` with the original
+`thetaObstructionScalar`; prove the
+theta scalar cochain CONTINUOUS and its raw
+source action law, full continuous H² independence
+of representative, and theta class killed by n;
+prove the ORIGINAL geometric theta commutator
+equals the original `Isogeny.weilPairing`
+(or its correctly oriented inverse); prove
+the local abelian duality pairing separates the
+real Weil–Châtelet torsion. No source script,
+finite Heisenberg test, or synthetic coefficient
+substitutes for these geometric and arithmetic inputs.
+
+**Downstream limits:** the genuine original full
+local point-cone higher `H²(U_v)=H¹(F,E)` residue
+is distinct from the Brauer cohomological H² above.
+Only the good truncation feeds local Selmer
+conditions. Original p-power transition
+compatibility, real p=2 Tate modifications,
+outside-S reverse Kummer/unramified equality,
+restricted products, global Poitou–Tate,
+derived Rlim, regulator to original Néron–Tate
+and COMPLEX Hasse–Weil central jet remain OPEN.
+Independent exact finite Heisenberg diagnostics:
+144,000 scalar factor 2-cocycle equations plus
+12,000 strict crossed lifts, seed `20261102`;
+not an elliptic or Lean proof.
+
+**Verification:** source proof candidates only.
+Parsing NOT_RUN, compilation NOT_RUN, fresh
+kernel replay NOT_RUN, axiom audit NOT_RUN,
+compatible upstream build NOT_RUN. No new
+`sorry`, `axiom`, `admit`; no native
+Noe/CI dispatch, root import or toolchain changes.
