@@ -1,0 +1,62 @@
+{
+  "schema": "grwtsk.moebius-causal-mertens-spike/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSpike.lean",
+  "review": "documentation/mathematics/_support/reviews/moebius-causal-mertens-fifth-power-spike-2026-11-01.md",
+  "input_exact_blobs": {
+    "MertensPrimitive": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "MoebiusCausalMertensSquareBridge": "be156509d9679a22b52b32d087f87d8449a047ef",
+    "PickupEndpointQuadrature": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+    "GoodScaleEnergyCriterion": "ca3ae4975b20cf796a167308a9e87546c6001c41"
+  },
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "expected_declarations": [
+    "GRWTSK.NumberTheory.Moebius.CausalMertensSpike.finiteMertensPrefix_shift_abs_le",
+    "GRWTSK.NumberTheory.Moebius.CausalMertensSpike.OriginalPickupMertensSpikeLocalLowerTarget",
+    "GRWTSK.NumberTheory.Moebius.CausalMertensSpike.OriginalEndpointFixedRateDyadic",
+    "GRWTSK.NumberTheory.Moebius.CausalMertensSpike.OriginalMertensStrictPower",
+    "GRWTSK.NumberTheory.Moebius.CausalMertensSpike.OriginalFixedRateEquivalenceTarget"
+  ],
+  "analytic_status": {
+    "finite_prefix_persistence": "PAPER_PROVED_LEAN_CANDIDATE",
+    "local_fifth_power_integral": "PAPER_PROVED_UNPROVED_LEAN_PROP",
+    "strict_rate_iff_strict_mertens_power": "PAPER_PROVED_UNPROVED_LEAN_PROP",
+    "unconditional_strict_endpoint_upper": "OPEN",
+    "every_positive_rate": "OPEN",
+    "RH": "OPEN"
+  },
+  "diagnostic": {
+    "families": [
+      "actual_Mobius",
+      "constant_plus_one",
+      "alternating",
+      "three_seeded_random"
+    ],
+    "max_start_index": 1200,
+    "tests": 7200,
+    "arithmetic": "floating physical-time antiderivative, NOT certified intervals",
+    "observed_min_ratio_approx": 16.86,
+    "status": "FINITE_DIAGNOSTIC_PASS_NOT_FORMAL_EVIDENCE"
+  },
+  "verification": {
+    "publication": "PENDING",
+    "lean_parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "root_imports": "UNCHANGED",
+    "native_execution": "NOT_DISPATCHED"
+  },
+  "related_issues": [
+    1406,
+    1556,
+    1546,
+    1429,
+    15
+  ]
+}
