@@ -12,6 +12,13 @@
     {
       "path": "GRWTSK/Combinatorics/ShapePhysicalBitTransport.lean",
       "blob": "7f3a2074dbbfb8e72ef16b0196670411867333fb",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "source_commit": "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/ShapePhysicalBitHilbertComparator.lean",
+      "blob": "0db853091c432ee5892ca133bf7258e225515775",
+      "source_commit": "82d86ddcf325f0120eae13b2c4181e3b8dc4c028",
       "status": "SOURCE_PROOF_CANDIDATE"
     }
   ],
@@ -39,10 +46,10 @@
   ],
   "review": {
     "path": "documentation/mathematics/_support/reviews/shape-physical-bit-source-preserving-transport-2026-11-02.md",
-    "blob": "e22229342adbee1f160039ff4bdd9d3ed4bd0d7d"
+    "blob": "6aa9a16f9778599a540311307947e1f63ccea7a4"
   },
-  "source_commit": "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
-  "source_parent": "216e9a57ad4cf86e77012971bbacb60b1789c38f",
+  "source_commit": "82d86ddcf325f0120eae13b2c4181e3b8dc4c028",
+  "source_parent": "3f0535033d6ffc9ae1ecd706320ae4c42ed42fad",
   "exact_source": "Original ShapeChangingBundle center/shell plus full integer-indexed PhysicalStream, two-tangent SignedBits, existing pickupCross with all ordered non-diagonal pairs and signedReadoutDefect; no new arithmetic coefficients, windows or unproved cancellation.",
   "source_candidate_theorems": [
     "Folder.Research.ShapePhysicalBitTransport.lower_lift_center",
@@ -58,7 +65,20 @@
     "Folder.Research.ShapePhysicalBitTransport.isAnchor_iff_squaredNearest",
     "Folder.Research.ShapePhysicalBitTransport.pickupCross_eq_packet_add_defect",
     "Folder.Research.ShapePhysicalBitTransport.signed_return_lift_shift",
-    "Folder.Research.ShapePhysicalBitTransport.packet_lift_shift_encoded"
+    "Folder.Research.ShapePhysicalBitTransport.packet_lift_shift_encoded",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.readRecord_eq_decoded_bitfield",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.recordBitfield_recordMoebius",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.recordBitfield_transfer",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.recordHilbertDistanceSq_eq_hamming",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.recordHilbertDistanceSq_transfer",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.indexedBits_missing",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.indexedBits_wrong_index",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.indexedBits_encoded",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.indexedBits_lift",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.indexedBits_shift",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.indexedHilbertDistanceSq_eq_hamming",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.indexedHilbertDistanceSq_lift",
+    "Folder.Research.ShapePhysicalBitHilbertComparator.indexedHilbertDistanceSq_shift"
   ],
   "unresolved_mathematical_obligations": [
     "A true topological fiber bundle requires projection, local trivializations, transition cocycles and compatibility.",
@@ -67,7 +87,7 @@
     "The one-sided all-positive-rate bound for the complete original signed Möbius pickup or endpointSum on adequately covering scales remains OPEN."
   ],
   "verification": {
-    "source_publication": "PASS_EXACT_GITHUB_BLOB_READBACK",
+    "source_publication": "PASS_TWO_EXACT_GITHUB_BLOB_READBACKS",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -81,5 +101,9 @@
     "external_ci_or_native_execution_dispatched": false,
     "new_arithmetic_cancellation_estimate": "OPEN",
     "canonical_RiemannHypothesis": "OPEN"
-  }
+  },
+  "source_commits": [
+    "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
+    "82d86ddcf325f0120eae13b2c4181e3b8dc4c028"
+  ]
 }
