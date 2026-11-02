@@ -821,3 +821,113 @@ replay NOT_RUN, full axiom audit NOT_RUN,
 compatible Tau Ceti v4.36.0-rc1 import
 NOT_RUN; no native Noe/CI dispatch,
 toolchain change or new axiom/sorry/admit.
+
+
+## Genuine elliptic function-field Galois finite descent closes the theta-scalar continuity premise (2026-11-02)
+
+**Pinned original** TauCetiProject/TauCeti
+`2bdb755239d3bd84760e99bc83166bdf7cc75a6b`,
+The Tau Ceti contributors (Apache-2.0), Lean v4.36.0-rc1.
+Maintained grwtsk/math Lean v4.34.1 root and its imports,
+dependency pins and toolchain remain untouched. This is an
+ISOLATED Tau Ceti source proof candidate, not a compiled root
+theorem or authorization for a native Noe verification job.
+
+NEW `TauCetiThetaFunctionFieldOrbitContinuous.lean`,
+Git blob `6899d111f7bcb86ad2756b316d29214704fa230d`,
+connects the ORIGINAL K(E) rational-function field over
+K=SeparableClosure F to Krull-topology Galois continuity,
+using only pinned original source mathematics:
+
+1. `polynomialOrbit_isLocallyConstant`: each
+   coefficient of p∈K[X] has locally constant
+   Galois orbit by pinned
+   `IsIntegral.isLocallyConstant_apply`;
+   finite `Polynomial.support` gives a common
+   neighborhood for every nonzero coefficient;
+2. `ratFuncOrbit_isLocallyConstant`: ORIGINAL
+   `RatFunc.num_mapRingHom`, `denom_mapRingHom`
+   and `num_div_denom` identify the true
+   Galois orbit from those two finite polynomials;
+3. `originalFunctionFieldOrbit_isLocallyConstant`:
+   the original `Affine.FunctionField.basis`
+   `{1,y}` over `RatFunc K` has exactly TWO
+   coordinates and the original
+   `functionFieldGaloisAction_basis_repr`
+   transports their genuine Galois actions;
+   injectivity of `b.repr` reconstructs K(E);
+4. `originalFunctionFieldUnitsOrbit_isLocallyConstant`:
+   source `Units.map` and `Units.ext` lift
+   that result to ACTUAL nonzero rational functions;
+5. `originalSelectedThetaFunctionOrbitsContinuous`
+   discharges the formerly unproved source
+   `SelectedThetaFunctionOrbitsContinuous W n`
+   for the ORIGINAL selected `W.TorsionCoeff n`
+   and actual theta functions `geometricLift W n t`;
+6. `originalThetaScalarContinuous` and
+   `originalThetaBrauerH2` therefore return
+   the ORIGINAL theta scalar continuous
+   2-cocycle and genuine
+   `continuousCohomology 2 (UnitsCoeff F)`
+   class at each true E[n] cocycle WITHOUT
+   an independently assumed scalar-continuity
+   or 2-cocycle-law premise. The group-law
+   identity came from the earlier genuine theta
+   group and source Galois action;
+7. `originalThetaNormalizedInvariant_of_nTorsion`
+   returns to pinned `h2MuEquivZMod` via
+   the true original mu_n-to-UnitsCoeff
+   identification, under explicit n-torsion
+   of the actual theta Brauer class.
+
+**Mathematical subtlety:** K(E) is transcendental
+over F. Do NOT assert that an arbitrary function
+f∈K(E) is integral over F. ONLY its finitely
+many normalized polynomial coefficients in K
+are algebraic over F. The finite-intersection
+argument proves open Galois stabilizers for
+each original function. This proves a real
+and noncircular topological statement without
+assuming the desired Brauer H² continuity.
+
+Exact pinned original source files:
+`TauCeti/FieldTheory/KrullTopology.lean`,
+blob `59ffeadd7b64177629d97dcdde28c4d3de3b0e77`;
+`TauCeti/FieldTheory/RatFunc/NumDenom.lean`,
+blob `54f63a529c2b72e0fb90c58f6dfdc3fc030d1aac`;
+`TauCeti/FieldTheory/RatFunc/Galois.lean`,
+blob `57f4515fca9fc79e977f188f21c0a3370ee0f816`;
+`TauCeti/.../Affine/FunctionField/Basis.lean`,
+blob `8b3b13b8dc9ed5cfa1bb065a41844cdb39339314`;
+`TauCeti/.../Affine/FunctionField/Galois/FixedField.lean`,
+blob `e355d98d7f0bf6b5adecefbc4b1b94398d362cae`.
+All imports are the originals or earlier isolated adapters;
+no incompatible native GRWTSK root source import is added.
+
+**Still OPEN and not bypassed:** kernel checking of the
+actual source proof (compilation currently NOT_RUN);
+cohomological independence of the original theta
+H² class under E[n] cocycle representative change;
+n-torsion of the true theta Brauer class
+(with even-n subtleties);
+original rational-function theta commutator equals
+Tau Ceti's genuine Weil pairing with exact sign;
+local abelian Tate separation; full higher
+Weil–Châtelet `H²(U_v)=H¹(F,E)` residue and good
+truncation; real p=2 correction; genuine p-power
+transition, outside-S reverse local condition,
+restricted product, compact derived Rlim/Poitou–Tate,
+Néron–Tate height regulator and COMPLEX central
+Hasse–Weil L-jet. The theta Brauer H² is NOT
+the local point-cone H².
+
+Full 267-line review:
+`documentation/mathematics/_support/reviews/bsd-theta-function-field-galois-orbits-2026-11-02.md`,
+blob `3c071b7178f5db812a4cc7904d3aa90f88e6bbe9`.
+SOURCE_PROOF_CANDIDATE; parsing NOT_RUN,
+compatible Lean compilation NOT_RUN,
+fresh kernel replay NOT_RUN, transitive
+axiom audit NOT_RUN. Static source readback
+is NOT mathematical kernel acceptance.
+No new `sorry`, `admit`, `axiom`, native Noe/CI
+dispatch, new toolchain or root import.
