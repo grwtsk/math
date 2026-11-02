@@ -158,7 +158,7 @@
     "certification": "NONCERTIFYING numerical sampling, source analysis independent"
   },
   "verification": {
-    "source_publication": "PENDING_SAFE_FAST_FORWARD_EXACT_READBACK",
+    "source_publication": "PASS_SIX_EXACT_GIT_BLOB_READBACK",
     "compiler": "DEFERRED_PER_USER",
     "Lean_parser": "NOT_RUN",
     "Lean_elaboration": "NOT_RUN",
@@ -170,10 +170,14 @@
     "root_import_or_toolchain_modified": false,
     "CI_Noe_native_runner_or_scheduler_dispatched": false,
     "global_FAR_all_positive_rate": "OPEN",
-    "canonical_RiemannHypothesis": "OPEN"
+    "canonical_RiemannHypothesis": "OPEN",
+    "changed_source_files": 6,
+    "git_pre_update_diff": "PASS_SIX_ADDITIVE_PATHS_NO_MODIFICATIONS"
   },
   "issues": [
     1556,
     1429
-  ]
+  ],
+  "source_commit": "3b355586351b692c2fe67d848bf70f5f68b21832",
+  "source_parent": "2e1de65075856e29723fd308d92ae16fc562e758"
 }
