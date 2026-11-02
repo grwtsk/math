@@ -107,31 +107,31 @@ No complexity optimum is asserted from asymptotic notation alone.
 
 ## Grouping parallel edge multiplicity: exact recurrence, adaptive implementation
 
-The selected mathematical module \`SoficPeriodicMatrixTrace.lean\`,
-source blob \`044644b345b46c90d82dffde6c7485d617b4fbd9\`,
+The selected mathematical module `SoficPeriodicMatrixTrace.lean`,
+source blob `044644b345b46c90d82dffde6c7485d617b4fbd9`,
 already defines natural-number adjacency entries by counting actual
 graph-label occurrences and proves
-\`labeledAdjacency_pow_apply_eq_walkCount\`.
-For each source state \`s\`, target \`t\` and finite graph edge
-occurrence inventory \`E\`, define
+`labeledAdjacency_pow_apply_eq_walkCount`.
+For each source state `s`, target `t` and finite graph edge
+occurrence inventory `E`, define
 
-\`\`\`text
+```text
 m(s,t) = #{e in E : source(e) = s and target(e) = t}
 c[n+1,t] = sum_s c[n,s] * m(s,t).
-\`\`\`
+```
 
 For a finite edge multiset, regrouping the original
-\`sum_{e:s(e)=s} c[n,s]\` by target gives the same natural-number
+`sum_{e:s(e)=s} c[n,s]` by target gives the same natural-number
 sum. This is multiplication distributivity over the original edge
 occurrences, not an identification of two indistinguishable
 labeled factor-language points. If two source references coincide
 in literal line and target but have distinct ordinal identities,
-both contribute to \`m(s,t)\`. The separate witness automaton must
+both contribute to `m(s,t)`. The separate witness automaton must
 retain those identities; the *counting matrix* is an allowed
 many-to-one summary only for the particular numeric count.
 
 In the corresponding proposed Noe runtime, the counting adapter
-may store a sparse weighted row \`(target,multiplicity)\` while
+may store a sparse weighted row `(target,multiplicity)` while
 keeping occurrence-distinct adjacency for witness reconstruction.
 A row is grouped only when at least one quarter of its outgoing
 source-reference occurrences repeat a target. This policy is
@@ -140,7 +140,7 @@ The previous literal per-edge loop is retained elsewhere to
 avoid a sparse/simple-graph regression. The logical work budget
 still charges every original edge occurrence even if a weighted
 row uses fewer arithmetic operations. The reported
-\`count_pair_ops\` is separate from the invariant \`count_work\`.
+`count_pair_ops` is separate from the invariant `count_work`.
 
 Finite Python diagnostics (independent of native Lean) passed
 5/5 reference test groups including 10,000 seeded random
@@ -164,50 +164,59 @@ No RH or dynamical factor-zeta implication follows.
 
 ## Exact finite-occurrence bridge across three existing mathematical interfaces
 
-The source candidate \`GRWTSK/Combinatorics/GraphTheory/SourceOccurrenceSoficBridge.lean\`
-(blob \`fad346d8341d45bb0e5585670ab0e0f8c21d3afa\`)
-imports the *original* existing \`SearchSoficLanguage\`,
-\`SoficPeriodicMatrixTrace\` (and its exact \`WordPath\` provider),
-and \`CertifiedTransversal\` definitions. It does not introduce an
+The source candidate `GRWTSK/Combinatorics/GraphTheory/SourceOccurrenceSoficBridge.lean`
+(blob `ba4aeda35e491c9894a33da9272e0d758faf5b3f`)
+imports the *original* existing `SearchSoficLanguage`,
+`SoficPeriodicMatrixTrace` (and its exact `WordPath` provider),
+and `CertifiedTransversal` definitions. It does not introduce an
 alternative graph/path type in place of any original provider.
 
-1. \`occurrenceEdge\` uses the ORIGINAL finite edge occurrence as label
+1. `occurrenceEdge` uses the ORIGINAL finite edge occurrence as label
    and records its source/target; the lower (proof-certified) layer of
-   \`occurrenceSandwich\` is empty, with candidate and admissible
+   `occurrenceSandwich` is empty, with candidate and admissible
    relations equal only for this selected exact source-edge inventory.
-2. \`search_wordPath_iff_exact\` identifies the two separately defined
+2. `original_singleObj_path_to_occurrence_word` and
+   `original_singleObj_occurrence_words_injective` reuse the
+   original `DirectedGraphPathOccurrences.edgeOccurrences` codec for
+   the literal single-object quiver. The one-vertex target labeled
+   graph admits the full chronological occurrence sequence, while
+   the original edge-list injectivity theorem prevents distinct
+   typed paths from collapsing. This is a precise one-object
+   specialization, **not** a conversion of arbitrary repository
+   source dependency graphs.
+3. `search_wordPath_iff_exact` identifies the two separately defined
    inductive finite-word path propositions **only on the identical
    occurrence labels and endpoint relation**.
-   \`search_language_iff_exact\` lifts this to the entire finite-word
+   `search_language_iff_exact` lifts this to the entire finite-word
    language, not an arbitrary infinite trace.
-3. \`occurrence_adjacency_multiplicity\` specializes the original
+4. `occurrence_adjacency_multiplicity` specializes the original
    natural-number matrix entry to a sum over **all distinct occurrence
-   labels**. \`occurrence_walk_count_eq_matrix_row_sum\` specializes
+   labels**. `occurrence_walk_count_eq_matrix_row_sum` specializes
    the original finite-seed matrix-power counting theorem without
    replacing or weakening its graph.
-4. \`ExactSourceRefinement\` records the still-MISSING
+5. `ExactSourceRefinement` records the still-MISSING
    source-extractor proof obligations explicitly: a bijection between
    actual raw records and occurrence labels, plus preservation of
    each original source and target. From this *supplied* structure,
-   \`encoded_occurrences_injective\`,
-   \`encoded_edge_iff\`, and
-   \`raw_wordPath_to_occurrence\` preserve occurrence identity,
+   `encoded_occurrences_injective`,
+   `encoded_edge_iff`, and
+   `raw_wordPath_to_occurrence` preserve occurrence identity,
    incidence, and chronological finite words.
-5. \`occurrenceTransversal\` invokes the existing canonical
-   \`CertifiedTransversal.Transversal.ofFunction\` **only** with the
+6. `occurrenceTransversal` invokes the existing canonical
+   `CertifiedTransversal.Transversal.ofFunction` **only** with the
    fixed equality-plus-endpoint relation proved from the supplied
    refinement. No unconstrained relation or target theorem transfers
    into the original source inventory.
 
 This is source-level formal mathematical composition, not a claim
 that Noe's Git/SQLite/Python exporter instantiates
-\`ExactSourceRefinement\`. In particular, no import closure,
+`ExactSourceRefinement`. In particular, no import closure,
 lexical query, source link, or graph diffusion step builds
 the required bijection; no periodic label-point injectivity or
 same-period completeness follows; and no RH theorem is implied.
 
 **Verification gate for the new source blob:** Lean 4.34.1 /
-pinned Mathlib \`d13f23b723b8a846827a245b89c10fc7d3f11612\`
+pinned Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`
 module compilation, each expected fully qualified theorem type,
 fresh kernel replay and complete transitive axiom inspection are
 **NOT_RUN**. The new artifact must be compiled before any
