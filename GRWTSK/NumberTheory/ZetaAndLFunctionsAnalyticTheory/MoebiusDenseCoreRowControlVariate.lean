@@ -188,6 +188,35 @@ theorem endpointSum_le_denseCore_add_paidRate
     (endpointGapSetCross (putnamRateGapSet rate T) T +
       endpointRatioOutsideGapCross (putnamRateGapSet rate T) T)]
 
+/-- The two previously paid sectors PLUS the actual quarter-unit
+endpoint curvature give a TWO-SIDED quantitative source comparison.
+This estimate is unconditional (modulo the imported source proofs);
+it never bounds the remaining signed hard core itself. -/
+theorem endpointSum_sub_denseCore_abs_le
+    (rate : ℝ) (hrate : 0 < rate) {T : ℝ} (hT : 0 ≤ T) :
+    |endpointSum T -
+      endpointDenseAddMulCoreCross (putnamRateGapSet rate T) T| ≤
+        (64 / rate ^ 2) * Real.exp (rate * T) + (1 / 4 : ℝ) := by
+  have hcross := pickupCross_sub_denseCore_abs_le rate hrate hT
+  have hendpoint := endpointSum_error hT
+  have hsplit :
+      endpointSum T -
+          endpointDenseAddMulCoreCross (putnamRateGapSet rate T) T =
+        (endpointSum T - pickupCross T) +
+          (pickupCross T -
+            endpointDenseAddMulCoreCross (putnamRateGapSet rate T) T) := by
+      ring
+  rw [hsplit]
+  calc
+    _ ≤ |endpointSum T - pickupCross T| +
+          |pickupCross T -
+            endpointDenseAddMulCoreCross (putnamRateGapSet rate T) T| :=
+      abs_add_le _ _
+    _ ≤ (1 / 4 : ℝ) +
+          (64 / rate ^ 2) * Real.exp (rate * T) :=
+      add_le_add hendpoint hcross
+    _ = _ := by ring
+
 /-- This is the unsigned total of ACTUAL complete signed dense-core
 rows, not a sum of abs over all pair entries or a guessed cancellation. -/
 def denseCoreRowAbsMass (Q : Finset ℕ) (T : ℝ) : ℝ :=
