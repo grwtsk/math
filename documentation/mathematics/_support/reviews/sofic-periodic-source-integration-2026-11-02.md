@@ -279,3 +279,51 @@ SoficPeriodicSourceIntegration.lean, blob
 Earlier review notes remain historical snapshots and are not
 retroactively reclassified as accepted. Tracking issue:
 [math #1576](https://github.com/grwtsk/math/issues/1576).
+
+
+## 9. Verification advancement: complete project-side import inventory and managed profile
+
+A fresh source-identity audit found that the historical **19-module selected**
+project inventory omitted two *actual transitive GRWTSK imports*. The original
+`ExactSoficLanguageCover.lean` imports `DynamicPartitionRecovery.lean`
+(blob `5967730dc10d34ddcf1226ee1056594f012567d4`), which in turn imports
+`FactorizationFiber.lean` (blob `034dc65cc2fc5fc7a7ad439c6f110b6ccd7ad9c6`).
+Both are present at the pinned source revision
+`6cf755943e01ee7e9438cbb9eb058832262bd503`, and are now included in the **21-module project-side inventory**.
+This is a **static inspection of imported source**, not a native module
+compilation, a complete Mathlib closure, or a successful Noe registry rebuild.
+No proposition or original source edge definition was changed.
+
+The adjacent `documentation/mathematics/_verification/targets/sofic-periodic-managed-profile-v3.json` is a
+non-executed JSON profile for Noe's current managed registry-v3 replay route.
+It binds 11 exact Lean module contracts and
+19 fully qualified declarations,
+including all seven integration theorem candidates and selected bridge
+theorems in original cycle-cardinality, finite repeat, macro-boundary
+pigeonhole, exact word-matrix powers, multiple-period lifting, source
+cycle repetition, canonical defect ledger, and certified matrix transport.
+It allows only the reviewed standard axiom candidates
+`propext`, `Classical.choice`, and `Quot.sound`, to be audited by
+the native tool (not assumed to be the actual transitive axiom lists).
+The selected profile has no added `expected_types` fields: fully checked
+expected-type consumers remain an independent task, not a fabricated PASS.
+
+The current ChatGPT container was checked and contains no executable
+`lean`, `lake`, or `elan`, nor an authenticated local
+`grwtsk/math` and `grwtsk/noeaaeue` checkout. No safe managed
+registry preparation, resource-owner inspection, activation or native
+execution can be claimed from this container. The published profile is
+a handoff *for the canonical Noe checkout*, not permission to bypass
+its resource holds or use a standalone alternative runner.
+
+Noe source inspected on `grwtsk/noeaaeue/main`:
+commit `ef4a797e8258528a5b5252165dd4c422aa4bb201`;
+proof-automation skill blob `5292446e4ef1398ba928d8ad339b662415166f19`;
+managed v3 contract documentation blob
+`7cf19528fef8b3afb73656a65d4944c7ed647ba6`.
+The user-requested evidence remains **NOT_RUN** for native compilation,
+fresh kernel replay, transitive axiom auditing, separate expected-type
+consumers, complete upstream closure, and owner restoration.
+Static profile publication is not a success certificate. A later
+`main` revision is not verified by a profile prepared for the pinned
+`6cf755943e01ee7e9438cbb9eb058832262bd503` source commit.
