@@ -108,7 +108,7 @@
     "https://www.claymath.org/problem/unsolved/"
   ],
   "verification": {
-    "publication": "PENDING_EXACT_READBACK",
+    "publication": "PASS_EXACT_FOUR_GIT_BLOB_READBACK",
     "compiler": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
     "elaboration": "NOT_RUN",
@@ -121,10 +121,14 @@
     "RiemannHypothesis": "OPEN",
     "root_import_modified": false,
     "original_kernel_modified": false,
-    "external_workflow_dispatched": false
+    "external_workflow_dispatched": false,
+    "additive_paths": 4,
+    "lean_source_acceptance": "SOURCE_PROOF_CANDIDATE_NOT_COMPILED"
   },
   "related_issues": [
     1556,
     1429
-  ]
+  ],
+  "source_publication_commit": "37868dfb60bc632d439b4b9a6cf19222c46f887b",
+  "source_publication_parent": "1469a9c7d844799e601aad842b4fc017b7f42517"
 }
