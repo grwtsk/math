@@ -33,6 +33,7 @@ theorem contradicted_ne_satisfied : Finding.contradicted ≠ Finding.satisfied :
 The observation function must be supported by actual case-specific evidence. -/
 structure Assessment (Obligation : Type*) where
   obligations : List Obligation
+  obligations_nonempty : obligations ≠ []
   observed : Obligation → Finding
   claimedComplete : Bool
 
@@ -388,6 +389,7 @@ inductive DemoObligation where
 
 def demoAssessment : Assessment DemoObligation :=
   { obligations := [.accessible, .reasonGiven]
+    obligations_nonempty := by decide
     observed := fun _ => .satisfied
     claimedComplete := true }
 
