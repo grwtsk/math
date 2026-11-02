@@ -22,18 +22,6 @@
     "openai_kakeya_reference": "4eaee87548250b2682affda7d05d947c05554bae",
     "openai_kakeya_imported": false
   },
-  "source_closure": [
-    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeBlockSignedFrame.lean",
-    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
-    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupDyadicEndpoint.lean",
-    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean",
-    "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMKaehlerZQGaugeFullReturn.lean",
-    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapYoung.lean",
-    "GRWTSK/Combinatorics/GraphTheory/SignedIncidenceCongestion.lean",
-    "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/MoebiusProjectivePrimeResiduePort.lean",
-    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStereographicTubeResidual.lean",
-    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitGramReturn.lean"
-  ],
   "claims": {
     "exact_original_index_wave_partition": "LEAN_CANDIDATE",
     "gcd_fiber_cardinality_and_finite_frame_bound": "LEAN_CANDIDATE",
@@ -88,5 +76,25 @@
     "Prove selected rough-index degree estimate from pinned signed-incidence theorem and gcd-fiber cardinality, then derive its source-integrated rate on one fixed Q_j/H_j schedule.",
     "Construct a genuinely sign-specific noncircular Kakeya/Fourier/sieve comparison controlling the exact far rough-index packet at every positive rate.",
     "Connect it to the existing fixed-scale dyadic endpoint consumer and audit canonical RH closure."
-  ]
+  ],
+  "related_source_modules": [
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeBlockSignedFrame.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupDyadicEndpoint.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean",
+    "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMKaehlerZQGaugeFullReturn.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapYoung.lean",
+    "GRWTSK/Combinatorics/GraphTheory/SignedIncidenceCongestion.lean",
+    "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/MoebiusProjectivePrimeResiduePort.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStereographicTubeResidual.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitGramReturn.lean"
+  ],
+  "direct_imports_of_new_source": [
+    "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusEllipticFiberKernelComparison",
+    "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.PickupDyadicEndpoint",
+    "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMKaehlerZQGaugeFullReturn",
+    "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusPrimeBlockSignedFrame",
+    "Mathlib.Tactic"
+  ],
+  "dependency_audit_note": "Related modules above are inspected topical sources, NOT an exhaustive computed transitive Lean import closure. Full transitive graph and axioms remain NOT_RUN."
 }
