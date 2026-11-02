@@ -128,6 +128,40 @@ def comp
       rw [p.property.2.2]
       exact hs
 
+/-- Source coverage produces an admissible related target, without
+asserting that every admissible target is reached. -/
+theorem exists_related
+    {A : Type u} {B : Type v}
+    {HA : A → Prop} {HB : B → Prop}
+    {R : A → B → Prop}
+    (t : Transversal.{u, v, w} A B HA HB R)
+    (a : A) (ha : HA a) :
+    ∃ b, HB b ∧ R a b := by
+  obtain ⟨z, hz, hza⟩ := t.covers_source a ha
+  refine ⟨t.target z, t.target_valid z hz, ?_⟩
+  simpa only [hza] using t.certified z hz
+
+/-- Transporting a property from every admissible source to EVERY
+admissible target requires separate target coverage. Source coverage
+alone is insufficient, as the Boolean counterexample demonstrates. -/
+theorem target_property_of_source_with_target_coverage
+    {A : Type u} {B : Type v}
+    {HA : A → Prop} {HB : B → Prop}
+    {R : A → B → Prop}
+    (t : Transversal.{u, v, w} A B HA HB R)
+    (P : A → Prop) (Q : B → Prop)
+    (hCover : ∀ b, HB b → ∃ z, t.valid z ∧ t.target z = b)
+    (hForward : ∀ a b, R a b → P a → Q b)
+    (hSource : ∀ a, HA a → P a) :
+    ∀ b, HB b → Q b := by
+  intro b hb
+  obtain ⟨z, hz, hzb⟩ := hCover b hb
+  have hq : Q (t.target z) :=
+    hForward (t.source z) (t.target z)
+      (t.certified z hz)
+      (hSource (t.source z) (t.source_valid z hz))
+  exact hzb ▸ hq
+
 end Transversal
 
 /-- A finite total observation may discard target information. -/
