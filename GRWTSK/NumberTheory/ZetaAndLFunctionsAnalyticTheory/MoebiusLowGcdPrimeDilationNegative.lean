@@ -133,7 +133,8 @@ theorem lowGcdDenseCross_le_other
     (Q : Finset ℕ) (T : ℝ) (hT : 0 ≤ T) :
     lowGcdDenseCross Q T ≤ otherLowGcdCross Q T := by
   rw [lowGcdDenseCross_eq_prime_add_other]
-  exact add_le_of_nonpos_left (lowGcdPrimeDilationCross_nonpos Q T hT)
+  have hsign := lowGcdPrimeDilationCross_nonpos Q T hT
+  linarith
 
 /-- Four existing paid packets plus the surviving prime-dilation-free
 original arithmetic source, with all former source weights retained. -/
