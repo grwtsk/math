@@ -170,6 +170,39 @@ theorem denseCoreCrossRowEstimator_mean_endpointError
   rw [abs_sub_comm]
   exact endpointSum_error hT
 
+/-- The finite source-defined signed-cross estimator has exactly the
+variance of the hard-core original-index row; deterministic sparse
+payments contribute no extra sampling variance. -/
+theorem denseCoreCrossRowEstimator_centeredVariance
+    (Q : Finset ℕ) (T : ℝ) (w : ℕ → ℝ)
+    (law : PositiveWindowLaw T w) :
+    singleExpectation T w
+      (fun m => (denseCoreCrossRowEstimator Q T w m -
+        pickupCross T) ^ 2) =
+      denseCoreRowSamplingVariance Q T w := by
+  unfold singleExpectation denseCoreRowSamplingVariance
+  apply Finset.sum_congr rfl
+  intro m hm
+  have hsource := pickupCross_eq_paid_add_denseCoreMean Q T w law
+  have hcore := denseCoreRowImportance_mean Q T w law
+  rw [hcore] at hsource
+  unfold denseCoreCrossRowEstimator
+  rw [hsource]
+  ring
+
+/-- The genuine accessible signed-cross estimator is no noisier
+than the full original two-index hard-core sampler. This makes no
+claim about the arithmetic size of the remaining hard core. -/
+theorem denseCoreCrossRowEstimator_variance_le_pair
+    (Q : Finset ℕ) (T : ℝ) (w : ℕ → ℝ)
+    (law : PositiveWindowLaw T w) :
+    singleExpectation T w
+      (fun m => (denseCoreCrossRowEstimator Q T w m -
+        pickupCross T) ^ 2) ≤
+      windowPairVariance T w (denseCorePairImportance Q T w) := by
+  rw [denseCoreCrossRowEstimator_centeredVariance Q T w law]
+  exact denseCoreRowVariance_le_pairVariance Q T w law
+
 /-- Deterministically pay the two previously proved sparse packets,
 plus the original endpoint curvature defect; sample only the genuine
 hard signed-row source, without altering the full readout ledger. -/
