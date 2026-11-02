@@ -403,7 +403,7 @@
     "The recent whole-Dirichlet-character large-modulus averaged source energy does not supply a fixed principal-character or signed original dense-core upper bound."
   ],
   "verification": {
-    "source_publication": "PASS_FOURTEEN_EXACT_GITHUB_BLOB_READBACKS",
+    "source_publication": "PASS_SEVENTEEN_EXACT_GITHUB_BLOB_READBACKS_AT_3d0c149b4dd1851eb6b0ba64a586302e82bfbe3b",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -447,13 +447,16 @@
     "all_14_Lean_source_blobs_match": "PASS",
     "sharp_variance_source_commit_combined_ci_status_count": 0,
     "gibbs_realization_source_commit_combined_ci_status_count": 0,
-    "new_dense_core_source_publication": "PENDING_EXACT_3_SOURCE_BLOB_READBACK",
+    "new_dense_core_source_publication": "PASS_THREE_EXACT_GITHUB_BLOB_READBACKS_AT_INTEGRATION_REVISION",
     "new_sparse_source_paid_core_error": "SOURCE_PROOF_CANDIDATE_IMPORTS_EXISTING_PUTNAM_UNVERIFIED",
     "new_dense_core_control_variate": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
     "new_dense_core_sampling_variance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
     "new_dense_core_zero_witness": "CONDITIONAL_SOURCE_PROOF_CANDIDATE_ANALYTIC_GATES_OPEN",
     "new_dense_core_high_precision_diagnostics": "NUMERICAL_ONLY_3_PHYSICAL_ENERGY_CHECKS_4_SPARSE_SPLITS_3_VARIANCE_FIXTURES",
-    "new_original_signed_dense_core_bound": "OPEN"
+    "new_original_signed_dense_core_bound": "OPEN",
+    "final_17_source_readback_revision": "3d0c149b4dd1851eb6b0ba64a586302e82bfbe3b",
+    "new_four_related_source_pins": "PASS_EXACT_BLOBS",
+    "static_source_proof_scan": "NO_AUTHORED_SORRY_ADMIT_AXIOM_DECLARATIONS_IN_THREE_NEW_FILES; NONCERTIFYING"
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
