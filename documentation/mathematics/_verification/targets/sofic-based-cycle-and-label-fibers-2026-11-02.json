@@ -132,9 +132,9 @@
     "no_verified_Noe_math_local_checkout": true
   },
   "verification": {
-    "publication": "PENDING_EXACT_HEAD_READBACK",
+    "publication": "PASS_GUARDED_NONFORCE_MAIN",
     "git_source_blobs_created": "PASS",
-    "exact_git_readback": "PENDING",
+    "exact_git_readback": "PASS_4_OF_4",
     "authored_sorry_axiom_unsafe": "NONE_FOUND_IN_STATIC_SCAN",
     "native_compilation": "NOT_RUN",
     "expected_types": "NOT_RUN",
@@ -147,5 +147,16 @@
     "formal_kernel_acceptance": false,
     "global_periodic_label_trace_identity": "FALSE_IN_GENERAL",
     "issue_state": "OPEN"
+  },
+  "publication": {
+    "published_commit": "9084ee35c64765114b8111c3c19b9cda580ee181",
+    "expected_parent": "41d5e5b57fb390cc0ca526caeecacc863876d327",
+    "exact_source_blobs": [
+      "d7fd2f5aad643d4350e4b5bfd7128dd979717a74",
+      "e333b47af8f907e344bcb150e9ebd9675ea040b0"
+    ],
+    "exact_review_blob": "a103f70962dba048362a74758a7601730b3d4408",
+    "initial_manifest_blob": "e2d8769eb543e39cb8e0dc3fd5474ba08d04b8d7",
+    "source_only_not_Lean_acceptance": true
   }
 }
