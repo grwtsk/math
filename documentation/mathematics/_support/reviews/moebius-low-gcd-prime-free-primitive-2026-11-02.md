@@ -24,9 +24,9 @@ This increment finds a TRUE arithmetic sign feature inside L. It does not prove 
 | Module | Source commit | Final Git blob | Public theorem candidates |
 | --- | --- | --- | ---: |
 | [MoebiusLowGcdPrimeDilationNegative.lean](https://github.com/grwtsk/math/blob/2df19f28a3ceaa2b326c7ae6d37b478be1500c0d/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeDilationNegative.lean) | 2df19f28a3ceaa2b326c7ae6d37b478be1500c0d | e7abaa44008b76aaeb2a6a7ee69e0b5602787014 | 9 |
-| [MoebiusLowGcdPrimeFreePrimitiveBridge.lean](https://github.com/grwtsk/math/blob/32905d76afb61bf9ea9ec1e3de5120560f99dca6/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeFreePrimitiveBridge.lean) | 32905d76afb61bf9ea9ec1e3de5120560f99dca6 | 847c46ee90f721ea69338004ba6542c258b6d04c | 7 |
+| [MoebiusLowGcdPrimeFreePrimitiveBridge.lean](https://github.com/grwtsk/math/blob/797c92859b1b14d4e88c47d35d975ffa6fccfc7b/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeFreePrimitiveBridge.lean) | 797c92859b1b14d4e88c47d35d975ffa6fccfc7b | 74a6def7792b1688c7cbf4292ff32cf1280ed21f | 8 |
 
-The first file was initially published at e3d1ce0bd007dceb4933262b17919e0c82f80552, then changed only its nonpositive-addition proof step. The second was published at fcbe588173107a0b04be4a6bcb9f574b75b1486b, then extended with a squareful-safe coprime shift and the explicitly open full-gcd reindexing target. Pins refer to final blobs only.
+The first file was initially published at e3d1ce0bd007dceb4933262b17919e0c82f80552, then changed only its nonpositive-addition proof step. The second was published at fcbe588173107a0b04be4a6bcb9f574b75b1486b, then extended with a squareful-safe coprime shift, the explicitly open full-gcd reindexing target, and a conditional primitive signed-bilinear RH supplier at commit 797c92859b1b14d4e88c47d35d975ffa6fccfc7b. Pins refer to final blobs only.
 
 Both sources are uncompiled proof candidates, not accepted Lean theorems.
 
@@ -113,3 +113,25 @@ Original source revision inspected for this increment: grwtsk/math main at 16289
 Pinned toolchain: Lean v4.34.1, Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612. The host has no installed lean, lake or elan and no native run was dispatched. Parser, elaboration/compilation, expected theorem-type checks, fresh kernel checking, dependency closure and transitive axiom/opaque/native audit remain **NOT_RUN**. The imported source theorems also retain their separate acceptance obligations. There are no authored sorry, admit, axiom or native_decide declarations in the two new files by a noncertifying static scan.
 
 Next independently useful mathematical objective: prove the full *exact* gcd-to-primitive triple-sum reindex of this B(Q,T) original source, with the true squareful-zero and original masks. Only then investigate a genuinely noncircular one-sided estimate for the shifted coprime primitive bilinear source, rather than mistaking a negative dropped packet or a distributional model for cancellation. The fixed good-scale signed original arithmetic bound and RH remain OPEN.
+
+
+## Finite primitive gcd bijection: precise mathematical argument, Lean proof still open
+
+For each original positive ordered source pair (m,n), let \(g=\gcd(m,n)\), \(a=m/g\), \(b=n/g\). Then \(g\ge1\), \(a,b\ge1\), \(\gcd(a,b)=1\), and the map from (m,n) to (g,a,b) is one-to-one: from a primitive coprime triple, \(\gcd(ga,gb)=g\), which recovers g, a and b uniquely. Both ordered orientations survive. The original source index bound on m,n is equivalent to the membership checks \(ga,gb\in W_T\); since g,a,b are positive factors of m,n, each is also bounded by \(\lfloor e^T\rfloor\).
+
+If \(\mu(m)\mu(n)\ne0\), then both m,n are squarefree, and the actual original squarefree-multiplication theorem forces \(\gcd(g,a)=\gcd(g,b)=1\). In that case the published coprime common-factor identity gives the exact term with \(\mu(g)^2\mu(a)\mu(b)/g\) and genuine time shift \(T-\log g\). If instead \(\mu(m)\mu(n)=0\), the original ordered term vanishes. If either coprimality-with-g guard fails, the original ga or gb contains a squared prime and vanishes, so excluding that triple discards only an original zero term. Squarefulness of g,a or b also makes the triple coefficient vanish through the genuine Möbius symbols.
+
+Thus ordinary finite arithmetic establishes a *paper-level* bijection and zero-handling proof outline for the equality named ExactPrimeFreeTripleReindexTarget. This is NOT a completed Lean derivation: all membership/bijection and source-zero lemmas must still be elaborated in the pinned kernel; the declaration remains a Prop without an authored proof.
+
+The final source now also defines PrimitivePrimeFreeEveryRateOn(G), an explicitly OPEN one-sided signed upper bound for the actual shifted primitive triple sum on ONE fixed scale set. The candidate theorem riemannHypothesis_of_primitivePrimeFree_goodScales requires **all three** premises jointly: ExactPrimeFreeTripleReindexTarget, PrimitivePrimeFreeEveryRateOn(G), and AffineFrequent(G). This is a conditional consumer, not a new proof of RH or any missing analytic premise.
+
+As a numerical cross-check (not Lean acceptance), evaluating the FULL original prime-free double sum and the explicitly guarded primitive triple sum at T=log N, r=0.65, using genuine integer Möbius values and 55-digit causal Gram arithmetic gave:
+
+| N | Original prime-free double sum | Guarded primitive triple sum | Numerical difference | Retained primitive triples |
+| ---: | ---: | ---: | ---: | ---: |
+| 8 | 0.143708186913084616 | 0.143708186913084616 | 0 | 22 |
+| 16 | 1.344819746140155267 | 1.344819746140155267 | less than 10^-54 | 118 |
+| 32 | 4.560462715962372962 | 4.560462715962372962 | 0 | 558 |
+| 64 | 13.245206470806456814 | 13.245206470806456814 | less than 10^-53 | 2646 |
+
+At N=64 the full prime-free pair selector contains 3368 ordered pairs but only 2646 guarded primitive triples, because the omitted pairs have original Möbius coefficient zero from shared prime factors with g. Their omission is not cancellation of any nonzero signed source. The finite checks corroborate the formula at four horizons but do not prove it for all horizons, certify the Lean code, or supply the missing primitive bilinear upper.
