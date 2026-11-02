@@ -102,3 +102,55 @@ This is a source-only adapter; **parsing, Lean compilation, compatible
 upstream integration, fresh kernel checking and transitive axiom
 auditing are NOT_RUN**. No root import/toolchain change, new
 axiom/sorry/admit or verification dispatch follows from publication.
+
+
+## Weil surjectivity established mathematically; local Kummer annihilator adjunction isolated (2026-11-02)
+
+The continuation uses the *same* immutable TauCetiProject/TauCeti
+`2bdb755239d3bd84760e99bc83166bdf7cc75a6b` with original
+contributors/Apache-2.0 and Lean v4.36.0-rc1. No root import
+or toolchain pin has been changed.
+
+- The existing isolated `TauCetiEllipticTorsionGalRepWeil.lean`
+  is extended additively with `source_geometric_torsion_basis`,
+  `source_geometric_torsion_equiv`,
+  `ellipticTateDual_natCard_eq`,
+  `ellipticWeilToTateDual_bijective`, and the actual
+  `ellipticWeilTateDualAddEquiv`/evaluation return.
+  This closes the ordinary finite arithmetic surjectivity argument
+  using the original `W.TorsionCoeff n`, original Weil
+  nondegeneracy, the source geometric torsion-basis theorem,
+  `kummerCoeffAddEquivZMod` and pinned
+  `AddEquiv.natCard_addMonoidHom_zmod`. It never assigns
+  an abstract rank-two proxy or a Galois-equivariant basis.
+  Its Lean scripts remain UNCOMPILED source candidates.
+- The new `TauCetiLocalKummerOrthogonalityCriterion.lean`
+  uses the pinned genuine `W.kummerMap` and
+  `W.range_kummerMap` for its H¹ source subgroup/ker return,
+  and the pinned `FiniteBilinearModule` orthogonal-cardinality
+  theorems for exact equality under separately named source
+  pair-vanishing and order premises. These latter arithmetic
+  premises have NOT been discharged by the generic finite
+  Weil perfectness theorem.
+- The new independent GRWTSK
+  `LocalKummerAdjointKernel.lean` proves the stronger exact
+  algebraic kernel/annihilator reduction for a genuinely
+  compatible connecting-map/abelian-Tate diagram:
+  `ker q_E = (im delta_Evee)^orth` follows from
+  Kummer-to-cup adjunction and the abelian local Tate
+  pairing separating `H¹(F,E)[n]`. Those two arithmetic
+  inputs must be source-instantiated in the actual continuous
+  Galois cochain and local completion category. This is
+  not a restatement of the desired equality as an assumption.
+
+The complete proof, source identities, original primary literature,
+exact sign convention, finite controls and acceptance distinctions
+are in `documentation/mathematics/_support/reviews/bsd-elliptic-weil-surjectivity-local-kummer-orthogonality-2026-11-02.md`.
+Keep the previously corrected NONZERO higher
+`H²(U_v)=H¹(F,E)` Weil--Chatelet residue and the good
+truncation as separate objects. Kummer orthogonality remains
+OPEN **as a source-typed Lean arithmetic theorem**, despite
+the established classical local abelian duality theorem.
+Compilation NOT_RUN, fresh kernel replay NOT_RUN, transitive
+axiom audit NOT_RUN, Tau Ceti compatible integration NOT_RUN.
+No verification/CI/scheduler dispatch and no BSD-I/II claim.

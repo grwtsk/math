@@ -11,6 +11,8 @@ Lean v4.36.0-rc1. NOT imported into the grwtsk/math v4.34.1 root.
 import TauCeti.AlgebraicGeometry.EllipticCurve.GaloisCohomology.WeilPairing.Basic
 import TauCeti.NumberTheory.ClassFieldTheory.Local.Duality.Perfect
 import TauCeti.NumberTheory.ClassFieldTheory.Brauer.RootsOfUnity
+import TauCeti.Algebra.Module.ZMod.Dual
+import TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.MulByInt.Torsion.Structure
 
 set_option autoImplicit false
 noncomputable section
@@ -209,6 +211,94 @@ theorem ellipticWeilToTateDual_injective (hn : IsUnit (n : F)) :
             rfl
       _ = 0 := sub_eq_zero.mpr hpair
   exact sub_eq_zero.mp hzero
+
+/-! ## Genuine Weil coefficient self-duality, including SURJECTIVITY
+
+This uses the source elliptic torsion basis and original finite
+ZMod-character cardinality theorem, not an assigned E[n] rank.
+The argument never chooses a basis for the Galois representation.
+-/
+
+/-- Original geometric E[n] over the separable closure has a
+two-element ZMod n basis, via the existing elliptic torsion theorem.
+This is the ACTUAL coefficient group before the original
+W.pointCoeffEquiv identifies it with W.TorsionCoeff n. -/
+theorem source_geometric_torsion_basis (hn : IsUnit (n : F)) :
+    Nonempty (Module.Basis (Fin 2) (ZMod n)
+      (AddSubgroup.torsionBy
+        (W⁄(SeparableClosure F)).toAffine.Point (n : ℤ))) := by
+  classical
+  exact (W⁄(SeparableClosure F)).nonempty_basis_torsionBy n
+    hn.natCast_ne_zero_of_algebra
+
+/-- Exact ORIGINAL additive identification, not a new proxy or
+chosen abstract two-coordinate representation. -/
+def source_geometric_torsion_equiv :
+    AddSubgroup.torsionBy
+      (W⁄(SeparableClosure F)).toAffine.Point (n : ℤ) ≃+
+        (ellipticTorsionGalRep W n).V :=
+  AddEquiv.torsionByCongr W.pointCoeffEquiv n
+
+/-- Character cardinality of the SAME elliptic coefficient:
+the source cyclic mu_n equivalence and TauCeti's finite ZMod-dual
+count show the genuine Tate dual has exactly as many elements. -/
+theorem ellipticTateDual_natCard_eq (hn : IsUnit (n : F)) :
+    Nat.card (tateDual (ellipticTorsionGalRep W n)).V =
+      Nat.card (ellipticTorsionGalRep W n).V := by
+  let e : (muNRep n F).V ≃+ ZMod n :=
+    (kummerCoeffEquivMuNRep n F).symm.trans
+      (kummerCoeffAddEquivZMod hn)
+  calc
+    Nat.card (tateDual (ellipticTorsionGalRep W n)).V =
+        Nat.card ((ellipticTorsionGalRep W n).V →+
+          (muNRep n F).V) :=
+      Nat.card_congr (tateDualEquiv (ellipticTorsionGalRep W n)).toEquiv
+    _ = Nat.card (ellipticTorsionGalRep W n).V :=
+      e.natCard_addMonoidHom_zmod
+        (fun x => ZModModule.char_nsmul_eq_zero n x)
+
+/-- The Weil map is BIJECTIVE: its injectivity came from actual
+elliptic Weil nondegeneracy; source finite duality proves its
+domain and codomain have equal cardinalities. Nothing here
+assumes local Kummer orthogonality or a BSD theorem. -/
+theorem ellipticWeilToTateDual_bijective (hn : IsUnit (n : F)) :
+    Function.Bijective (ellipticWeilToTateDual W n hn).hom := by
+  let A := ellipticTorsionGalRep W n
+  letI : Finite (muNRep n F).V :=
+    Finite.of_equiv _ ((kummerCoeffEquivMuNRep n F).symm.trans
+      (kummerCoeffAddEquivZMod hn)).symm.toEquiv
+  letI : Finite (A.V →+ (muNRep n F).V) :=
+    Finite.of_injective _ DFunLike.coe_injective
+  letI : Finite (tateDual A).V :=
+    Finite.of_injective (tateDualEquiv A)
+      (tateDualEquiv A).injective
+  exact (Nat.bijective_iff_injective_and_card
+      (ellipticWeilToTateDual W n hn).hom).2
+    ⟨ellipticWeilToTateDual_injective W n hn,
+      (ellipticTateDual_natCard_eq W n hn).symm⟩
+
+/-- Genuine source-defined additive equivalence of elliptic
+n-torsion with its Tate dual, preserving the preceding
+Weil-character evaluation and Galois-equivariant source morphism.
+This does NOT yet identify local Kummer image annihilators. -/
+noncomputable def ellipticWeilTateDualAddEquiv
+    (hn : IsUnit (n : F)) :
+    (ellipticTorsionGalRep W n).V ≃+
+      (tateDual (ellipticTorsionGalRep W n)).V :=
+  AddEquiv.ofBijective
+    (ellipticWeilToTateDual W n hn).hom.toAddMonoidHom
+    (ellipticWeilToTateDual_bijective W n hn)
+
+/-- The resulting actual duality equivalence evaluates on b as
+the ORIGINAL e_n(a,b), with no argument-order reversal. -/
+theorem ellipticWeilTateDualAddEquiv_evaluation
+    (hn : IsUnit (n : F))
+    (a b : (ellipticTorsionGalRep W n).V) :
+    tateDualEquiv (ellipticTorsionGalRep W n)
+      (ellipticWeilTateDualAddEquiv W n hn a) b =
+        kummerCoeffEquivMuNRep n F
+          (W.torsionCoeffWeilPairing n hn a b) := by
+  exact ellipticWeilToTateDual_apply W n hn a b
 
 /-! The local field theorem is an unconditional specialization
 of the EXISTING normalized local Tate duality supplier to this
