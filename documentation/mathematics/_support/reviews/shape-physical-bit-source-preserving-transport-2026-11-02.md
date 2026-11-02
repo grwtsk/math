@@ -56,3 +56,43 @@ The written `recordBitfield_recordMoebius` and `readRecord_eq_decoded_bitfield` 
 The source readout `indexedBits` is `Option (ℕ × StableBitfield 2)`; thus a valid zero, missing record, and incorrectly indexed record remain distinguishable BEFORE comparison. `indexedHilbertDistanceSq` returns `none` unless BOTH records are present and indexed for the queried original integer. Its available-case value is exactly the two-coordinate Hamming count. The written lift and shift theorems transport both its value and unavailable status unchanged. This is an algebraic comparison, not a new assertion that an arbitrary record meets `AdmissiblePhysicalBitRecord`.
 
 **Verification:** second module was created and read back with the exact blob above. Pinned compilation, expected-type checking, fresh kernel replay and transitive axiom audit remain **NOT_RUN** for BOTH new modules. No new arithmetic cancellation estimate was supplied.
+
+## Finite random-versus-uniform source-index sampling (third additive module)
+
+- [ShapePhysicalBitFiniteSampling.lean](https://github.com/grwtsk/math/blob/a3015deaa56f5990be88775fa8dfad77a0899606/GRWTSK/Combinatorics/ShapePhysicalBitFiniteSampling.lean).
+- Source commit: `a3015deaa56f5990be88775fa8dfad77a0899606`; parent `45afa8fc7f42a081cf1f1d087b5e6ce3deea41d1`.
+- Source blob: `b71c6837fcc8673f4415a687f554847f7ba1d9fc`.
+- Reused existing finite Markov/Gibbs kernel: `GRWTSK/Combinatorics/GraphTheory/FiniteAdmissibleSampler.lean`, blob `e74a253e66c1ee9ab5b6d97440e1fdeee49a54be`. The original `Sampler.probability_nonneg` and `Sampler.probability_row_sum_one` justify its finite random transition law without a stochasticity axiom.
+
+### Finite probability law and exact comparison
+
+For a fixed positive number of slots `N`, choose a source-index map `sourceIndex : Fin N → ℕ`. It preserves the actual integer index at every slot, even when slots repeat the same original index. The selected Markov row gives the one-step sampling law `P(i) = S.probability origin i`; the deterministic uniform reference is `U(i)=1/N`. `uniformSampler` is the existing `Sampler` with all edges admitted and all costs zero; `uniformSampler_probability` gives the exact uniform row, and the existing sampler normalizes it. No independent sequence or limiting sample law is assumed.
+
+For any `f : Fin N → ℝ`, `sampled_sub_uniform_eq_sum` states the exact algebraic difference
+```
+sampledExpectation S origin f - uniformAverage f
+  = ∑ i, (S.probability origin i - (N : ℝ)⁻¹) * f i
+```
+and `sampled_sub_uniform_abs_le_L1` bounds its absolute value by
+```
+probabilityL1Gap S origin
+  = ∑ i, |S.probability origin i - (N : ℝ)⁻¹|
+```
+when `∀ i, |f i| ≤ 1`. The quantity is **L1 distance**, not TV distance without the factor of 1/2.
+
+`indexedHilbertDistanceSq_bounds` uses the *actual two measured bits* and the existing Hamming/Hilbert identity to prove that any available indexed squared distance lies in `[0,2]`. `maskedNormalizedLoss` divides an available distance by 2 and gives the **explicitly named masked statistic** value 0 when unavailable. Independently, `unavailableIndicator` records mass 1 for an unavailable observation and 0 for an available one. The original index check is retained; a valid coefficient μ(n)=0 is not the same as absence or a wrong-index record. A correct-index corrupted record can still have a nonzero original-source readout defect, because index agreement is NOT coefficient fidelity.
+
+`random_uniform_maskedLoss_abs_le_L1` and `random_uniform_unavailableMass_abs_le_L1` supply separate finite quantitative bounds for the normalized bit-loss and unavailable-mass statistics. Their lift and shift theorems explicitly preserve both statistics across different shells and the actual Gödel observer shift; they do NOT assert preservation of a general spectral tensor metric.
+
+`sampled_comparison_with_original_signed_return` also retains, as an independent conjunction, the existing complete `pickupCross = packet + defect` identity. It does not remove signed defect, omit off-diagonal pair orientations, compress the original `ArithmeticFunction.moebius` source indices, or infer arithmetic cancellation from finite sampling. The global one-sided subexponential bound for the original `PickupEndpointQuadrature.endpointSum` remains OPEN.
+
+### Verification and limits
+
+- Third source GitHub publication/readback: **PASS**, exact blob above.
+- Text-only declaration scan: no new `axiom`, `sorry`, `admit`, or `native_decide` declaration. This is NOT a transitive axiom audit.
+- Pinned Lean: `v4.34.1`; Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`.
+- Pinned `lake env lean` for third source and first two source dependencies: **NOT_RUN**.
+- Expected theorem type validation: **NOT_RUN**.
+- Fresh kernel checking, imported dependency closure and transitive axiom / opaque / native audit: **NOT_RUN**.
+- No supported configured CI checks were reported on the third source commit; no remote build or native verification was dispatched.
+- No new finite-to-asymptotic convergence, independent-draw concentration, sphere cusp limit, topological fiber-bundle trivialization, or new signed arithmetic estimate is claimed.
