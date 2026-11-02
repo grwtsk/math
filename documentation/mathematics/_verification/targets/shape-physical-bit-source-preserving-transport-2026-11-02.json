@@ -173,12 +173,12 @@
     },
     {
       "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeFreePrimitiveBridge.lean",
-      "blob": "847c46ee90f721ea69338004ba6542c258b6d04c",
-      "source_commit": "32905d76afb61bf9ea9ec1e3de5120560f99dca6",
-      "source_parent": "b90ab8cea25b882366e67a90dbce94918801e8d9",
+      "blob": "74a6def7792b1688c7cbf4292ff32cf1280ed21f",
+      "source_commit": "797c92859b1b14d4e88c47d35d975ffa6fccfc7b",
+      "source_parent": "8a89f6efd50e9ade1847cce4ff55ba8e09908ebc",
       "initial_source_commit": "fcbe588173107a0b04be4a6bcb9f574b75b1486b",
-      "lines": 240,
-      "status": "SOURCE_PROOF_CANDIDATE_WITH_OPEN_TRIPLE_REINDEX"
+      "lines": 279,
+      "status": "SOURCE_PROOF_CANDIDATE_WITH_EXPLICIT_UNPROVED_GCD_REINDEX_AND_PRIMITIVE_SIGNED_UPPER"
     }
   ],
   "pinned_dependencies": [
@@ -216,8 +216,8 @@
     "blob": "f4fa84b8d32c38db2e8890ccfebf4ee3798684ce",
     "updated_at_commit": "f2fd9280a33ab3233ecc9db96957c2a9d44da2aa"
   },
-  "source_commit": "32905d76afb61bf9ea9ec1e3de5120560f99dca6",
-  "source_parent": "b90ab8cea25b882366e67a90dbce94918801e8d9",
+  "source_commit": "797c92859b1b14d4e88c47d35d975ffa6fccfc7b",
+  "source_parent": "8a89f6efd50e9ade1847cce4ff55ba8e09908ebc",
   "exact_source": "Original ShapeChangingBundle center/shell plus full integer-indexed PhysicalStream, two-tangent SignedBits, existing pickupCross with all ordered non-diagonal pairs and signedReadoutDefect; no new arithmetic coefficients, windows or unproved cancellation. Third source samples finite original-index slots using the already normalized Gibbs Sampler.probability row; a uniformly weighted finite reference average is compared through the existing measured physical two-bit indexed Hilbert distance with unavailable mass separately accounted.",
   "source_candidate_theorems": [
     "Folder.Research.ShapePhysicalBitTransport.lower_lift_center",
@@ -455,7 +455,8 @@
     "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.originalSource_coprime_gcdShifted_term",
     "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_coprime_gcdShifted_term",
     "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_implies_original_fixedGcd",
-    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_mask_symm"
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_mask_symm",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.riemannHypothesis_of_primitivePrimeFree_goodScales"
   ],
   "unresolved_mathematical_obligations": [
     "A true topological fiber bundle requires projection, local trivializations, transition cocycles and compatibility.",
@@ -496,7 +497,10 @@
     "The squareful-safe coprime gcd/time-shift identity applies TERMWISE under coprimality of g with a,b. The full original signed ordered double-to-primitive-triple reindex remains the unproved ExactPrimeFreeTripleReindexTarget.",
     "The primitivized expression keeps mu(g)^2, source birth windows, both ordered orientations and T-log(g); it cannot be replaced by an unweighted, independent or unshifted two-variable Chowla model.",
     "OtherLowGcdEveryRateOn G on one fixed affine-frequency scale set remains an independently unproved stronger arithmetic supplier; no RH conclusion, signed dense-core all-rate upper, or transitive Lean proof acceptance established.",
-    "Finite original mu diagnostics exhibit large cancellation between the negative prime packet and positive complement; finite sign checks do not justify asymptotic primitive cancellation."
+    "Finite original mu diagnostics exhibit large cancellation between the negative prime packet and positive complement; finite sign checks do not justify asymptotic primitive cancellation.",
+    "The original ordered positive-index double-to-primitive-triple equality has a finite mathematical gcd-bijection outline and four noncertifying small-N tests but is STILL a Lean OPEN proposition ExactPrimeFreeTripleReindexTarget, not a proved theorem.",
+    "The exact primitive signed bilinear all-rate arithmetic supplier PrimitivePrimeFreeEveryRateOn G remains OPEN, and a conditional RH theorem requires it together with an exact source gcd reindex and independent AffineFrequent G.",
+    "The numeric difference between a potentially large negative prime-dilation packet and a large positive complement is a hostile counterexample to claiming the two signed all-rate upper criteria equivalent merely by dropping a negative packet."
   ],
   "verification": {
     "source_publication": "TWENTY_OLD_PLUS_TWO_NEW_AWAIT_READBACK",
@@ -567,7 +571,13 @@
     "new_prime_free_coprime_primitive": "SOURCE_PROOF_CANDIDATE_TERM_IDENTITY_NO_KERNEL_CHECK",
     "exact_prime_free_triple_reindex": "OPEN_NOT_PROVED",
     "new_prime_free_finite_diagnostics": "FIVE_SMALL_ACTUAL_MOBIUS_WINDOWS_NONCERTIFYING",
-    "original_low_gcd_prime_free_all_rate_upper": "OPEN"
+    "original_low_gcd_prime_free_all_rate_upper": "OPEN",
+    "new_prime_free_primitive_revision": "797c92859b1b14d4e88c47d35d975ffa6fccfc7b",
+    "new_prime_free_primitive_source_blob": "74a6def7792b1688c7cbf4292ff32cf1280ed21f",
+    "primitive_full_reindex": "OPEN_UNPROVED_LEAN",
+    "primitive_signed_bilinear_all_rate_upper": "OPEN_INDEPENDENT_ARITHMETIC",
+    "primitive_finite_original_mu_numeric_tests": "N_8_16_32_64_55_DIGITS_NONCERTIFYING",
+    "prime_free_review_blob": "fa903f8c85e749ab4b4df1f3749ed22ac4c9dca7"
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
@@ -591,7 +601,8 @@
     "40d9ef43664e5f7ffa0aacb00bd60c02959b7702",
     "6188aa8f66855dadb09004047579ef45a5e3ca76",
     "2df19f28a3ceaa2b326c7ae6d37b478be1500c0d",
-    "32905d76afb61bf9ea9ec1e3de5120560f99dca6"
+    "32905d76afb61bf9ea9ec1e3de5120560f99dca6",
+    "797c92859b1b14d4e88c47d35d975ffa6fccfc7b"
   ],
   "relevant_source_inventory": [
     {
@@ -663,8 +674,8 @@
   },
   "cross_family_typed_graph": {
     "path": "documentation/mathematics/_support/reviews/shape-physical-bit-cross-family-connectivity-2026-11-02.json",
-    "blob": "86af90d03e355d1b206e4ceb4fc22a2ca06052a2",
-    "new_edges": 83,
+    "blob": "27065e557a479dd81ca2aa06fefdd005611341e3",
+    "new_edges": 85,
     "unproved_transfers": 28,
     "related_source_files": 41,
     "previous_graph_path": "documentation/mathematics/_support/reviews/moebius-rh-original-source-typed-connectivity-2026-11-02.json",
@@ -750,7 +761,7 @@
   ],
   "prime_free_review": {
     "path": "documentation/mathematics/_support/reviews/moebius-low-gcd-prime-free-primitive-2026-11-02.md",
-    "blob": "cd8eae16ec4f94ae0f1cce5d6c19314529aee355"
+    "blob": "fa903f8c85e749ab4b4df1f3749ed22ac4c9dca7"
   },
   "prime_dilation_primitive_arithmetic_frontier": {
     "original_source": "pickupCross T, original complete ordered signed ArithmeticFunction.moebius kernel",
@@ -765,9 +776,12 @@
     "conditional_RH": "OtherLowGcdEveryRateOn G AND AffineFrequent G, both independent source obligations; does NOT prove RH",
     "true_gcd_lcm_sign": "mu(m)*mu(n)=mu(gcd(m,n))*mu(lcm(m,n)) including squareful zeros",
     "true_common_factor_shift": "coprime(g,a) AND coprime(g,b), g,a,b>=1: sourceKernel(T,ga,gb)=mu(g)^2 mu(a) mu(b)/g*Gram(T-log(g),a,b)",
-    "exact_triple_reindex_target": "LowGcdPrimeFreePrimitiveBridge.ExactPrimeFreeTripleReindexTarget, UNPROVED finite source bijection, not an axiom",
+    "exact_triple_reindex_target": "LowGcdPrimeFreePrimitiveBridge.ExactPrimeFreeTripleReindexTarget; PAPER BISECTION OUTLINE, LEAN PROOF NOT_RUN/OPEN",
     "signed_primitive_all_rate_upper": "OPEN: no unproved cancellation transferred from coefficient sign or reindex",
-    "numeric_original_mu": "N=8,16,32,48,64, 55-digit mpmath working precision, original Gram primitive; noncertifying finite-only"
+    "numeric_original_mu": "N=8,16,32,48,64, 55-digit mpmath working precision, original Gram primitive; noncertifying finite-only",
+    "primitive_all_rate_supplier": "LowGcdPrimeFreePrimitiveBridge.PrimitivePrimeFreeEveryRateOn G; OPEN RH-strength signed primitive bilinear bound, fixed G, all positive rates",
+    "conditional_primitive_RH": "ExactPrimeFreeTripleReindexTarget + PrimitivePrimeFreeEveryRateOn G + AffineFrequent G jointly -> RH; source candidate only",
+    "numeric_primitive_reindex": "N=8,16,32,64 original double vs exact gcd-labelled triple, 55-digit noncertifying arithmetic, match to <=10^-53"
   },
   "prime_free_acceptance_commands_NOT_RUN": [
     "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeDilationNegative.lean",
