@@ -3,9 +3,9 @@
   "date": "2026-11-02",
   "title": "Signed prime-divisor wave packet frame with polynomial internal defect",
   "source_status": "SOURCE_PROOF_CANDIDATE",
-  "mathematical_status": "unconditional finite block decomposition, diagonal bound, and internal correction; interblock all-rate open",
+  "mathematical_status": "unconditional exact signed prime-block regrouping, polynomial internal defect and all-positive-rate growing short-gap allowance; far rough interactions open",
   "source_commits": {
-    "proof_note": "529b546899c4874712d8059a7a2dae21ae33998b",
+    "proof_note": "cf02ca710bbb30198c790fda7e5fb893dc947f54",
     "lean_candidate": "dff4253e4be2a034c94decb2aa24277d0b0f4fe8"
   },
   "lean_source": {
@@ -39,7 +39,8 @@
     "Physical time integration and unchanged pickupCross return with entire signed internal correction",
     "Exact projective/elliptic and tube interface compatibility if invoked",
     "Quantitative signed Kakeya comparison for interblock rough indices at all positive loss exponents",
-    "Unconditional original endpoint estimate (P) on fixed dyadic scales"
+    "Unconditional original endpoint estimate (P) on fixed dyadic scales",
+    "Unconditional all-positive-rate upper bound for far rough-index signed block packet with fixed gap H_j = floor(2^sqrt(j))"
   ],
   "rh": "OPEN",
   "remote_build_dispatched": false
