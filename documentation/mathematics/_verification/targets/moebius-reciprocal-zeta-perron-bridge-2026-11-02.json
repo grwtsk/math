@@ -1,0 +1,147 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Reciprocal-zeta and truncated Perron reduction for the original Mertens prefix",
+  "repository": "grwtsk/math",
+  "source_revision": "0251ce9dc0c2a06f312a6681f3712a59216bc6cc",
+  "publication": {
+    "pull_request": 1590,
+    "merge_commit": "0251ce9dc0c2a06f312a6681f3712a59216bc6cc",
+    "method": "guarded non-force merge preserving concurrent main history"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusReciprocalZetaPerronBridge.lean",
+    "git_blob": "69ae2587f1f6e30adec21b9d7dcf43eeffa2a499",
+    "declarations": {
+      "definitions": 10,
+      "public_theorems": 13,
+      "private_theorems": 3,
+      "total_theorem_candidates": 16
+    }
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-reciprocal-zeta-perron-bridge-2026-11-02.md",
+    "git_blob": "5ff1dfb76df5869146ee6d5b5d71879cf838d5f5"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/moebius-reciprocal-zeta-perron-bridge-references.md",
+    "git_blob": "ad1f71f0e1b6152c4dc84533b9627c21dbed3d23"
+  },
+  "dependencies": {
+    "MoebiusPR103ClosureAndCausalBridges.lean": "4e291485b9a6e203ca8c46ab540de684f1895464",
+    "MoebiusPR103ModOneAdapter.lean": "050b4f77a7a22acf89268599cbee178f7748f198",
+    "MoebiusStrongFixedPowerPR103.lean": "10f2fba05c105c3e80b58ed9632901b5550444d9",
+    "MoebiusCausalMertensSquareBridge.lean": "be156509d9679a22b52b32d087f87d8449a047ef",
+    "Mathlib/NumberTheory/Harmonic/ZetaAsymp.lean": "7ff24a8a04888a98f63f34e0acca92e27e8843b4",
+    "Mathlib/Analysis/Complex/CauchyIntegral.lean": "aac86aa902e778812ce356a977d682cff3105b0f",
+    "Mathlib/Analysis/SpecialFunctions/Pow/Real.lean": "6e3f62550a758e94a1d513133cd744406b319e41"
+  },
+  "external_sources": {
+    "pr103": {
+      "repository": "GTimG/QuasiRiemannTracker",
+      "commit": "8b1a0167c8e324099884152181e3fb2206510e88",
+      "path": "submissions/2026-11-01-closest-fraction-contact/src/Candidate/Main.lean",
+      "git_blob": "808d04cec892449707d23e81f94179e2738fdf1a",
+      "theorem": "Candidate.bound",
+      "scope": "nonvanishing only; no reciprocal-magnitude estimate is exported"
+    },
+    "classical_comparison": {
+      "work": "E. C. Titchmarsh, The Theory of the Riemann Zeta-function, second edition revised by D. R. Heath-Brown, 1986",
+      "role": "classical half-integer Perron and contour-shift method for Mertens bounds; comparison only"
+    }
+  },
+  "toolchain": {
+    "lean": "v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "definitions": [
+    "regularizedReciprocalZeta",
+    "perronKernel",
+    "perronVertical",
+    "perronHorizontalCorrection",
+    "halfIntegerCutoff",
+    "perronHeight",
+    "RegularizedReciprocalSubpower",
+    "ZeroFreeReciprocalPerronBounds",
+    "ReciprocalSubpowerSegmentIntegration",
+    "HalfIntegerMertensTruncatedPerron"
+  ],
+  "theorem_candidates": [
+    "regularizedReciprocalZeta_one",
+    "riemannZeta₁_ne_zero_of_zeroFree",
+    "regularizedReciprocalZeta_eq_inv_riemannZeta",
+    "regularizedReciprocalZeta_differentiableAt",
+    "perronKernel_differentiableAt",
+    "perronKernel_boundary_rect_eq_zero",
+    "perronVertical_shift",
+    "integerMertensPower_of_reciprocalPerron",
+    "mertensExponentialEnvelopeAt_of_integerPower",
+    "zeroFreeToMertensPowerBridge_of_reciprocalPerron",
+    "zeroFreeToMertensPowerBridge_of_subpowerPerron",
+    "pr103_pickupEnergy_clean_rate_of_perron",
+    "pickupEnergyAbscissa_le_exactPR103_of_perron"
+  ],
+  "mathematical_scope": [
+    "regularize the reciprocal at the zeta pole using (s-1)/riemannZeta₁(s)",
+    "prove equality with 1/riemannZeta away from one and holomorphy throughout a zero-free half-plane",
+    "construct the exact normalized vertical Perron integral and both horizontal contour orientations",
+    "prove an exact Cauchy-Goursat rectangle shift with no growth hypothesis",
+    "use the half-integer cutoff x=N+1/2 and height T=x^2",
+    "isolate subpower reciprocal growth and a right-line truncated Perron approximation as the remaining analytic inputs",
+    "choose b=max(theta0,1/2), sigma=(b+theta)/2, eta=(theta-b)/8",
+    "derive sigma+2*eta<theta, 2*eta<theta and eta<theta",
+    "absorb 1+log x by (1+1/eta)*x^eta",
+    "derive |M(N)|<=2*A*N^theta with explicit A from the two analytic inputs",
+    "return to the maintained real cutoff and discharge ZeroFreeToMertensPowerBridge conditionally"
+  ],
+  "explicit_constants": {
+    "vertical_bound": "2*B*(1/sigma+1/eta)*x^(sigma+2*eta)",
+    "horizontal_bound": "4*B*x^(2*eta)",
+    "truncated_perron_error": "K*(1+log x)",
+    "parameter_choice": {
+      "b": "max(theta0,1/2)",
+      "sigma": "(b+theta)/2",
+      "eta": "(theta-b)/8"
+    },
+    "integer_mertens_constant": "2*(K*(1+1/eta)+2*B*(1/sigma+1/eta)+4*B)"
+  },
+  "obstruction": {
+    "id": "rh-zero-free-alone-no-reciprocal-growth-v1",
+    "statement": "Generic holomorphic nonvanishing does not imply subpower reciprocal growth.",
+    "countermodel": "f(z)=exp(-exp(-i*z)) is entire and zero-free, while |1/f(i*t)|=exp(exp(t)).",
+    "scope": "method obstruction only; zeta-specific reciprocal estimates may still hold"
+  },
+  "open_obligations": [
+    "prove RegularizedReciprocalSubpower using zeta-specific growth, minimum-modulus or logarithmic machinery",
+    "formalize ReciprocalSubpowerSegmentIntegration with the pinned interval-integral API",
+    "prove HalfIntegerMertensTruncatedPerron from the actual Mobius Dirichlet series on Re(s)>1",
+    "compile and check the new module and its complete dependency closure",
+    "prove an all-positive-rate endpoint or source-equivalent signed-packet estimate on one fixed AffineFrequent scale set",
+    "complete fresh-kernel and transitive source-bound axiom verification"
+  ],
+  "verification": {
+    "source_publication": "DONE",
+    "exact_blob_readback": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "lexical_forbidden_declaration_scan": "PASS_NO_SORRY_ADMIT_NATIVE_DECIDE_OR_AXIOM_DECLARATION",
+    "lean_compilation": "NOT_RUN",
+    "expected_type_checks": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "regularized_reciprocal_subpower": "UNPROVED",
+    "subpower_segment_integration": "NOT_FORMALIZED",
+    "half_integer_truncated_perron": "UNPROVED",
+    "zero_free_to_mertens_bridge": "CONDITIONAL_REDUCTION_WRITTEN",
+    "all_positive_rate_endpoint_supplier": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "nonclaims": [
+    "the source has not been compiled or kernel accepted",
+    "nonvanishing alone does not establish the reciprocal subpower input",
+    "the truncated Perron theorem is not proved by recording its exact interface",
+    "the conditional fixed-power PR103 consequence is not an all-positive-rate estimate",
+    "source publication is not theorem acceptance",
+    "the Riemann Hypothesis remains unproved"
+  ],
+  "passive": true
+}
