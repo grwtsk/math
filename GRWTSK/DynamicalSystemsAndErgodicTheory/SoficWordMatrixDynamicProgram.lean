@@ -170,8 +170,10 @@ theorem wordLiftMatrix_snoc_apply
   letI : ∀ mid : State, Fintype (PLift (G.edge mid a t)) :=
     fun _ => Fintype.ofFinite _
   change Fintype.card
-      {p : LabeledWalkData G (w.length + 1) s t //
+      {p : LabeledWalkData G (w ++ [a]).length s t //
         walkDataLabels G p = w ++ [a]} = _
+  have hlength : (w ++ [a]).length = w.length + 1 := by simp
+  rw [hlength]
   calc
     Fintype.card
         {p : LabeledWalkData G (w.length + 1) s t //
