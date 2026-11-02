@@ -218,4 +218,41 @@ theorem regularized_original_source_return (T ε : ℝ)
     (regularizedRowWeight T ε) hw]
   exact pickupCross_eq_observed_add_defect p chart T stream
 
+
+/-- Summing signed kernels inside each original-index ROW cannot
+increase the total absolute mass. This is the precise possible
+within-row cancellation exploited by the optimized law. -/
+theorem originalRowAbsMass_le_pairAbsMass (T : ℝ) :
+    originalRowAbsMass T ≤
+      ∑ m ∈ endpointIndex T, ∑ n ∈ endpointIndex T,
+        |originalSignedPair T m n| := by
+  unfold originalRowAbsMass originalRowSum
+  apply Finset.sum_le_sum
+  intro m hm
+  exact Finset.abs_sum_le_sum_abs _ _
+
+/-- Choosing ε=A/N (when A>0 and N>0) gives an explicit
+two-times-absolute-row-mass-squared second-moment certificate.
+The parameter is derived from the ACTUAL source, and the statement
+does not claim that A itself has any subexponential bound. -/
+theorem balancedRegularization_secondMoment_le_two_absMass_sq (T : ℝ)
+    (hcard : 0 < (endpointIndex T).card)
+    (hA : 0 < originalRowAbsMass T) :
+    let ε := originalRowAbsMass T / ((endpointIndex T).card : ℝ)
+    originalRowSecondMoment T (regularizedRowWeight T ε) ≤
+      2 * (originalRowAbsMass T) ^ 2 := by
+  have hN : (0 : ℝ) < ((endpointIndex T).card : ℝ) := by
+    exact_mod_cast hcard
+  let ε := originalRowAbsMass T / ((endpointIndex T).card : ℝ)
+  have hε : 0 < ε := div_pos hA hN
+  have hden : regularizedRowDenominator T ε =
+      2 * originalRowAbsMass T := by
+    unfold regularizedRowDenominator
+    dsimp [ε]
+    field_simp [ne_of_gt hN]
+    ring
+  have hb := regularizedRowSecondMoment_le T ε hε hcard
+  rw [hden] at hb
+  nlinarith
+
 end Folder.Research.ShapePhysicalBitOptimizedRowLaw
