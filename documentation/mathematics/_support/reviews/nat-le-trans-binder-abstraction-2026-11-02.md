@@ -6,6 +6,13 @@ Source publication and logical acceptance are separate events.
 ## Abstract
 
 A finite proof-search rule must not be reconstructed from a theorem name alone.
+This reviewed repair identifies an important distinction: *definitional equality
+does not attest to binder-info metadata*. The canonical lambda and the
+in-context probe now carry the genuine three implicit Nat parameters and
+two explicit proof premises, with independent structural binder-profile
+guards. A conditional kernel check is inserted in the MetaM observer, but
+no native execution of that check has been observed.
+
 The existing [scoped `Nat.le_trans` recognizer](../../../../GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/ScopedNatLeTransExpression.lean)
 holds an exact five-argument Lean expression and an environment-dependent
 type observation. This increment gives an explicit five-binder *closed* de Bruijn
@@ -51,7 +58,14 @@ Nat.le_trans (#4) (#3) (#2) (#1) (#0)
 ```
 
 where `#i` denotes de Bruijn index `i`, not a natural-number literal.
-`canonicalNatLeTransLambda` binds the five parameters and premises in order.
+`canonicalNatLeTransLambda` binds the five parameters and premises in order,
+using `.implicit` for a,b,c and `.default` for hab,hbc. The former
+revision's lambda and fresh-context probe used default binder metadata for
+all five, which was inconsistent with the theorem's implicit-argument
+interface. The revised `inspectFreshNatLeTransAbstraction` constructs its
+first three locals with `withLocalDecl ... .implicit`, rather than
+`withLocalDeclD`. Neither a definitional-equality check nor an inferred
+type silently repairs mismatched binder metadata.
 `canonicalNatLeTransForall` constructs the corresponding dependent
 proposition with the genuine implicit/explicit binder distinction.
 
@@ -73,9 +87,16 @@ it asks Lean to perform:
 2. `mkForallFVars` on the observed conclusion type and those same locals.
 3. Rejection if either result retains free variables, metavariables,
    universe parameters or loose bound variables.
-4. `isTypeCorrect` on the abstraction, followed by inferred-type
-   and definitional-equality comparisons with the explicit lambda and
-   forall templates and the actual `Nat.le_trans` declaration type.
+4. Strict constructor-pattern checks `natLeTransLambdaBinderInfos` and
+   `natLeTransForallBinderInfos`, requiring three implicit parameters
+   and two explicit proof binders independently of type equality.
+5. `isTypeCorrect` on the abstraction, followed by inferred-type
+   and definitional-equality comparisons with the canonical lambda,
+   forall template and actual `Nat.le_trans` declaration type.
+6. A `try/catch` call to `Lean.Meta.checkWithKernel abstracted`,
+   returning `none` if the current environment's kernel check fails.
+   This code can check a closed term *when actually executed*; publication
+   of the code does not produce a kernel receipt or transitive axiom audit.
 
 The returned `ScopedNatLeTransAbstraction` records these observations.
 `scopedNatLeTransAbstraction_source_exact` separately reuses the
@@ -97,9 +118,13 @@ The **mathematically useful result** is
 The forward argument extracts exactly the two premise positions.
 The reverse argument classifies each premise list membership as
 either `premiseAB` or `premiseBC`, with no third case.
+`scopedNatLeTrans_implication_iff` further proves that the
+entire proposition-level two-premise implication agrees with the
+actual `a ≤ b → b ≤ c → a ≤ c` interface, in both directions.
 `scopedNatLeTrans_certificate_return` then applies the existing
 proof-carrying `InstantiatedApplication` to recover `a≤c`.
-It explicitly reuses `Nat.le_trans`; it is not a distinct proof route.
+Both arguments explicitly reuse `Nat.le_trans`; they are not a
+second, independent proof route.
 A concrete hostile lemma chooses `a=1,b=2,c=0` and rejects the
 unsound rule `a≤b → a≤c` without `b≤c`.
 
@@ -108,6 +133,12 @@ unsound rule `a≤b → a≤c` without `b≤c`.
 Existing Math source identities observed on maintained `main`:
 
 - [`ScopedNatLeTransExpression.lean`](../../../../GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/ScopedNatLeTransExpression.lean), Git blob `31cc997065f56f2a52eb4f47deb7f576face4aec`.
+- Original published `NatLeTransBinderAbstraction.lean` blob:
+  `b2b3bda1cc0fd43245aee1f40d9d01dc53510c2d`.
+  Revised candidate blob: `6ad65213404396044c1b24cdc0873c94a9800814`.
+  These are **different source bytes**; the original source pin does
+  not certify the repair. Exact publication commit is tracked in the
+  new verification issue.
 - [`InstantiatedRuleCertificates.lean`](../../../../GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/InstantiatedRuleCertificates.lean), Git blob `8a947b13ef0f4fdca9127620d11a99870d4b121a`.
 - [`LeanExprConstantSpine.lean`](../../../../GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/LeanExprConstantSpine.lean), Git blob `1f30c4f428a110f4d574abdfc6ee463e3f35cf75`.
 
@@ -130,6 +161,14 @@ the Meta observer returns `some` in the pinned build.
 - Compilation/elaboration: **NOT_RUN**.
 - `inspectFreshNatLeTransAbstraction` invocation and Meta type comparison:
   **NOT_RUN**.
+- The added in-observer `Lean.Meta.checkWithKernel` invocation:
+  **NOT_RUN**. It uses the debug-oriented Lean 4.34.1 API, with exact
+  source blob `3796de18422be472bddb3d8e6e7710ede519f4c7`
+  (Meta/Check.lean), and supplies no fresh dependency or axiom receipt
+  without an actual authorized run.
+- Pure proof candidates `canonicalNatLeTransLambda_binderInfos`,
+  `canonicalNatLeTransForall_binderInfos`, and the hostile
+  all-explicit-outer-binder cases: **not compiled**.
 - Fresh Lean kernel replay and transitive axiom audit: **NOT_RUN**.
 - Source-to-`Lean.Expr` and object-level theorem proof correspondence:
   **PARTIAL** — the actual constant and typed mathematical counterpart
@@ -137,9 +176,19 @@ the Meta observer returns `some` in the pinned build.
 - Independent analytic proof, automatic general extraction, AI performance
   and SAT complexity: **NOT_CLAIMED / NOT_MEASURED**.
 
-The main remaining obligation is **source-bound, native reification of
-the closed expression**. In an authorized checker, compare the actual
-abstracted term and type to the pinned declaration using the Lean kernel;
+The main remaining obligation is **source-bound, native validation and
+reification of the closed expression**. The repair is intentionally
+fail-closed on binder metadata and type checks; whether the Meta
+observer actually returns `some` is an experimental fact still
+requiring a run. If it returns `none`, the exact mismatch must be
+diagnosed without weakening the source theorem.
+
+A native execution may reveal additional Lean API/elaboration issues
+in the larger imported source-proof-candidate chain; such errors must
+not be relabeled as mathematical counterexamples.
+
+In an authorized checker, compare the actual abstracted term and type
+to the pinned declaration using the Lean kernel;
 verify exact binder identity, source environment, local contexts, all
 premise proof arguments and generated/private axiom dependencies.
 Only then connect that checked term to the typed finite
