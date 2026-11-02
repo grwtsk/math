@@ -225,4 +225,89 @@ def occurrenceTransversal
       · exact (bridge.source_correct raw).symm
       · exact (bridge.target_correct raw).symm)
 
+
+/-!
+## A finite indexed occurrence table, distinct from raw payload equality
+
+Every original selected source-edge occurrence has a separate finite slot.
+Its stored owner and ordinal constitute an explicitly unique original key;
+payload text, endpoints and source line MAY coincide for different slots.
+This is the finite carrier an actual SQLite source export would need to
+instantiate, subject to externally checked source-byte and extractor evidence.
+The table does not claim that any real Noe index has supplied this evidence.
+-/
+
+/-- Finite source-reference rows indexed by the actual occurrence slot.
+The key uniqueness condition is explicit: it is NOT inferred from identical
+literal source text, equal endpoints, source-import syntax or an index name. -/
+structure FiniteSourceOccurrenceTable
+    (State : Type u) (Owner : Type v) (Payload : Type w) (n : Nat) where
+  payload : Fin n → Payload
+  owner : Fin n → Owner
+  ordinal : Fin n → Nat
+  source : Fin n → State
+  target : Fin n → State
+  owner_ordinal_injective :
+    Function.Injective (fun slot : Fin n => (owner slot, ordinal slot))
+
+/-- Concrete finite occurrence slots have a lossless identity
+equivalence. Payload values are NOT required to be injective. -/
+def FiniteSourceOccurrenceTable.exactSlotRefinement
+    {n : Nat} {Owner : Type v} {Payload : Type w}
+    (table : FiniteSourceOccurrenceTable State Owner Payload n) :
+    ExactSourceRefinement (Fin n) (Fin n) State where
+  encoding := Equiv.refl (Fin n)
+  rawSource := table.source
+  rawTarget := table.target
+  occurrenceSource := table.source
+  occurrenceTarget := table.target
+  source_correct := by
+    intro slot
+    rfl
+  target_correct := by
+    intro slot
+    rfl
+
+/-- An owner-and-ordinal collision would violate the exact table contract.
+Two distinct original slots are never identified merely by sharing payload. -/
+theorem FiniteSourceOccurrenceTable.eq_of_owner_ordinal_eq
+    {n : Nat} {Owner : Type v} {Payload : Type w}
+    (table : FiniteSourceOccurrenceTable State Owner Payload n)
+    {first second : Fin n}
+    (hOwner : table.owner first = table.owner second)
+    (hOrdinal : table.ordinal first = table.ordinal second) :
+    first = second := by
+  apply table.owner_ordinal_injective
+  exact Prod.ext hOwner hOrdinal
+
+/-- All actual finite-slot raw paths transport into the SAME original-slot
+labeled graph. The table, not a string comparison, fixes each endpoint. -/
+theorem FiniteSourceOccurrenceTable.rawSlots_to_originalWord
+    {n : Nat} {Owner : Type v} {Payload : Type w}
+    (table : FiniteSourceOccurrenceTable State Owner Payload n)
+    {start finish : State} {word : List (Fin n)}
+    (path : ExactSoficLanguageCover.WordPath
+      (rawGraph table.exactSlotRefinement) start word finish) :
+    ExactSoficLanguageCover.WordPath
+      (occurrenceGraph table.source table.target)
+      start (word.map table.exactSlotRefinement.encoding) finish := by
+  exact raw_wordPath_to_occurrence table.exactSlotRefinement path
+
+/-- Count every selected original source-reference slot with its full
+parallel-edge multiplicity. This does not count distinct printed labels. -/
+theorem FiniteSourceOccurrenceTable.walkCounts_eq_matrixRowSum
+    {n : Nat} {Owner : Type v} {Payload : Type w}
+    [Fintype State] [DecidableEq State]
+    (table : FiniteSourceOccurrenceTable State Owner Payload n)
+    (starts : Finset State) (length : Nat) :
+    (∑ start ∈ starts, ∑ finish : State,
+      SoficPeriodicMatrixTrace.labeledWalkCount
+        (occurrenceGraph table.source table.target) length start finish) =
+    (∑ start ∈ starts, ∑ finish : State,
+      (SoficPeriodicMatrixTrace.labeledAdjacency
+        (occurrenceGraph table.source table.target) ^ length) start finish) :=
+  occurrence_walk_count_eq_matrix_row_sum
+    table.source table.target starts length
+
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SourceOccurrenceSoficBridge
