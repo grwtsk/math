@@ -96,9 +96,9 @@
     "RH_unresolved": "SourcePortfolioUpper all-rate on unbounded good scales, original signed FAR all-rate, or independently original energy all-positive damping remains unproved"
   },
   "verification": {
-    "new_source_publication": "PENDING_GUARDED_GITHUB_DIFF_AND_EXACT_BLOBS",
+    "new_source_publication": "PASS_FOUR_EXACT_GITHUB_BLOB_READBACK",
     "first_source_git_readback": "PASS_EXACT_SIX_BLOBS",
-    "new_static_lexical": "NOT_RUN",
+    "new_static_lexical": "PASS_NO_AUTHORED_PROOF_PLACEHOLDERS_BALANCED_COMMENTS; NONCERTIFYING",
     "native_compilation": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
     "expected_types": "NOT_RUN",
@@ -110,7 +110,8 @@
     "original_kernel_coefficients_modified": false,
     "existing_files_modified": false,
     "root_or_toolchain_modified": false,
-    "Noe_CI_native_automations_dispatched": false
+    "Noe_CI_native_automations_dispatched": false,
+    "new_source_diff": "PASS_FOUR_ADDITIONS_ONLY"
   },
   "pinned_toolchain": {
     "lean": "leanprover/lean4:v4.34.1",
@@ -120,5 +121,8 @@
     1556,
     1429,
     1559
-  ]
+  ],
+  "new_source_publication_commit": "67f5199e3856554a7147a7fe319089bbf1a9856b",
+  "new_source_publication_parent": "76e962dbfbdcb43c1b64f6fec1aea5061fb00b24",
+  "source_commit_moebius_count": 173
 }
