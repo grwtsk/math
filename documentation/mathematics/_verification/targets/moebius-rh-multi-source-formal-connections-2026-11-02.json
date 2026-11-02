@@ -107,9 +107,9 @@
     "ErrorCertificate and observed/radius all-positive-rate arithmetic inputs (not known universally)"
   ],
   "trust": {
-    "github_prepublication_diff": "PENDING_GUARDED_NONFORCE_ADDITIVE",
-    "github_exact_readback": "PENDING",
-    "static_lexical_check": "PENDING_LOCAL_SOURCE_SCAN",
+    "github_prepublication_diff": "PASS_SIX_ADDITIONS_ONLY",
+    "github_exact_readback": "PASS_SIX_EXACT_GITHUB_BLOB_READBACK",
+    "static_lexical_check": "PASS_BALANCED_COMMENTS_PARENS_NO_AUTHORED_PROOF_PLACEHOLDERS; NONCERTIFYING",
     "pinned_lean_compilation": "DEFERRED_PER_USER",
     "lean_parser": "NOT_RUN",
     "lean_elaboration_expected_types": "NOT_RUN",
@@ -121,7 +121,8 @@
     "Noe_native_CI_automations_dispatched": false,
     "full_signed_FAR_every_positive_rate": "OPEN",
     "RiemannHypothesis": "OPEN",
-    "generalized_RiemannHypothesis": "OPEN"
+    "generalized_RiemannHypothesis": "OPEN",
+    "fresh_kernel": "NOT_RUN"
   },
   "pinned_toolchain": {
     "lean": "leanprover/lean4:v4.34.1",
@@ -132,5 +133,7 @@
     "https://github.com/grwtsk/math/issues/1556",
     "https://github.com/grwtsk/math/issues/1429",
     "https://github.com/grwtsk/math/issues/1559"
-  ]
+  ],
+  "source_publication_commit": "2fa718cb84c1aae3e079a9e13332454f68268460",
+  "source_publication_parent": "e85112107f5f56b1f9ecbf5e1a892c6e186fab2b"
 }
