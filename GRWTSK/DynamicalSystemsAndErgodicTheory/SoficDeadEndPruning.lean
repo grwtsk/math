@@ -352,10 +352,8 @@ theorem isRealizedFactor_iff_path_to_rightLive
     isRealizedFactor G decEdge word = true ↔
       ∃ s t : State, WordPath G s word t ∧ RightLive G t := by
   simp only [isRealizedFactor, decide_eq_true_eq]
-  rw [Finset.nonempty_iff_ne_empty]
   constructor
-  · intro hn
-    obtain ⟨t, ht⟩ := Finset.nonempty_iff_ne_empty.mpr hn
+  · rintro ⟨t, ht⟩
     have hboth := Finset.mem_inter.mp ht
     have hOriginal : t ∈ sourceSupportAfter G Finset.univ word := by
       rw [← supportAfter_eq_original G decEdge Finset.univ word]
@@ -365,7 +363,6 @@ theorem isRealizedFactor_iff_path_to_rightLive
     exact ⟨s,t,hpath,
       (mem_retainedAfter_card_iff_rightLive G decEdge t).mp hboth.2⟩
   · rintro ⟨s,t,hpath,ht⟩
-    apply Finset.nonempty_iff_ne_empty.mp
     refine ⟨t,Finset.mem_inter.mpr ⟨?_,?_⟩⟩
     · rw [supportAfter_eq_original G decEdge Finset.univ word]
       exact (sourceSupportAfter_mem_iff G Finset.univ word t).mpr
