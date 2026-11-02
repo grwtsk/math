@@ -66,7 +66,7 @@ private theorem prepend_actual_edge_labels
 
 /-- An original WordPath yields ACTUAL LabeledWalkData, including
 all source states/labels/edges. This eliminates WordPath only into Prop. -/
-private theorem actual_walk_of_wordPath
+theorem actual_walk_of_wordPath
     (G : LabeledGraph State Alphabet) :
     ∀ {s t : State} {w : List Alphabet}, WordPath G s w t →
       ∃ data : LabeledWalkData G w.length s t,
