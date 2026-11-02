@@ -52,11 +52,11 @@ private def wordMacroGraph
 
 /-- A q-block original path gives a q-step proof-carrying macro walk.
 Peeling one literal suffix word uses the ORIGINAL wordPath_split_append. -/
-private theorem macroWalk_of_finiteCopies
+private theorem macroWalk_nonempty_of_finiteCopies
     (G : LabeledGraph State Alphabet) (word : List Alphabet) :
     ∀ (n : ℕ) {s t : State},
       WordPath G s (finiteCopies word n) t →
-        LabeledWalkData (wordMacroGraph G word) n s t := by
+        Nonempty (LabeledWalkData (wordMacroGraph G word) n s t) := by
   intro n
   induction n with
   | zero =>
@@ -64,13 +64,14 @@ private theorem macroWalk_of_finiteCopies
       change WordPath G s [] t at h
       cases h with
       | nil s =>
-          exact LabeledWalkData.nil s
+          exact ⟨LabeledWalkData.nil s⟩
   | succ n ih =>
       intro s t h
       change WordPath G s (finiteCopies word n ++ word) t at h
       obtain ⟨middle, hprefix, htail⟩ :=
         wordPath_split_append G (finiteCopies word n) word h
-      exact LabeledWalkData.snoc (ih hprefix) () htail
+      obtain ⟨prefix⟩ := ih hprefix
+      exact ⟨LabeledWalkData.snoc prefix () htail⟩
 
 /-- A macro n-walk expands to the SAME original word repeated n times.
 We preserve every actual macro edge's original WordPath proof. -/
@@ -125,7 +126,7 @@ private def indexMacroWalk (H : LabeledGraph State Unit) :
 
 /-- Genuine original macro subwalk from a chosen boundary i to i+k.
 This is the key source-exact extraction used after pigeonhole. -/
-private theorem segmentOfIndexed
+private def segmentOfIndexed
     (H : LabeledGraph State Unit) {n : ℕ} {s t : State}
     (p : LabeledWalkData H n s t) (b : IndexedMacroWalk H p)
     (i k : ℕ) (hik : i + k ≤ n) :
@@ -204,10 +205,8 @@ theorem finiteStateBlockBoundaryPigeonhole_proof
     FiniteStateBlockBoundaryPigeonhole G := by
   intro word hgraph
   obtain ⟨start, finish, hpath⟩ := hgraph
-  have hmacro :
-      LabeledWalkData (wordMacroGraph G word)
-        (Fintype.card State) start finish :=
-    macroWalk_of_finiteCopies G word (Fintype.card State) hpath
+  obtain ⟨hmacro⟩ :=
+    macroWalk_nonempty_of_finiteCopies G word (Fintype.card State) hpath
   obtain ⟨k, hk, hkle, vertex, hcycle⟩ :=
     shortClosedMacroSegment (wordMacroGraph G word) hmacro
   exact ⟨k, hk, hkle, vertex,
