@@ -1,7 +1,7 @@
 {
   "schema": "grwtsk.math.verification-target/1",
   "research_date": "2026-11-02",
-  "title": "Original source-preserving shape, physical two-bit, Gibbs and signed pair comparison with exact variance-reduced rows and source-informed smoothing",
+  "title": "Original signed Moebius shape/fiber, bit Hilbert, finite sampling, universal waveform, S4 source ports, and exact endpoint return",
   "repository": "grwtsk/math",
   "author_attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
   "pinned_toolchain": {
@@ -64,6 +64,34 @@
       "blob": "41d9e5d9bd105182c759ffba522f052aedf22cd9",
       "status": "SOURCE_PROOF_CANDIDATE",
       "lines": 259
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusUniversalLedger.lean",
+      "blob": "f80266296d7c2ad80c3d1a003b933fbe34891715",
+      "source_commit": "ebfaba55f06c55872ee5147fef9862d81fe70d09",
+      "source_parent": "205e6f93e2e35bab9f3140aa9359c183a112e380",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusRowEndpointReturn.lean",
+      "blob": "b50a2aaf5b5894d0e95625b32793a53b8a71e329",
+      "source_commit": "0c81dc512395acabf7f36b73c933b8cc20e0894d",
+      "source_parent": "dfe53e41e0d8e05444da86b88e07d740202f906d",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/Geometry/SphereFourPhysicalBitPortBridge.lean",
+      "blob": "f5ad619de4b892e466715b34c0c5cec18ffbc3d5",
+      "source_commit": "3fd295907b37bfaeb0472ee6269e331b060ac69d",
+      "source_parent": "c94f1caaf663c9d456fa659595ed0d5ea54add10",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusLiftedZeroWitness.lean",
+      "blob": "07963e2fb74fb9a7886143ba1e1891f5610c5e03",
+      "source_commit": "248bdb692e56ce5f93daf9307daf11bb6c5f204d",
+      "source_parent": "f54a3e637a5cca77aa2a2b687db1dd00897d0103",
+      "status": "SOURCE_PROOF_CANDIDATE"
     }
   ],
   "pinned_dependencies": [
@@ -101,8 +129,8 @@
     "blob": "f4fa84b8d32c38db2e8890ccfebf4ee3798684ce",
     "updated_at_commit": "f2fd9280a33ab3233ecc9db96957c2a9d44da2aa"
   },
-  "source_commit": "90f064ea56d35de401c5411283dfd348bee5257d",
-  "source_parent": "200c2af81d3cbc00bbb0fce53218d0976a1a9651",
+  "source_commit": "248bdb692e56ce5f93daf9307daf11bb6c5f204d",
+  "source_parent": "f54a3e637a5cca77aa2a2b687db1dd00897d0103",
   "exact_source": "Original ShapeChangingBundle center/shell plus full integer-indexed PhysicalStream, two-tangent SignedBits, existing pickupCross with all ordered non-diagonal pairs and signedReadoutDefect; no new arithmetic coefficients, windows or unproved cancellation. Third source samples finite original-index slots using the already normalized Gibbs Sampler.probability row; a uniformly weighted finite reference average is compared through the existing measured physical two-bit indexed Hilbert distance with unavailable mass separately accounted.",
   "source_candidate_theorems": [
     "Folder.Research.ShapePhysicalBitTransport.lower_lift_center",
@@ -228,7 +256,35 @@
     "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularized_original_variance_budget",
     "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularized_original_source_return",
     "Folder.Research.ShapePhysicalBitOptimizedRowLaw.originalRowAbsMass_le_pairAbsMass",
-    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.balancedRegularization_secondMoment_le_two_absMass_sq"
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.balancedRegularization_secondMoment_le_two_absMass_sq",
+    "GRWTSK.NumberTheory.Moebius.PhysicalUniversalLedger.observedPacket_eq_genericOrderedCross",
+    "GRWTSK.NumberTheory.Moebius.PhysicalUniversalLedger.signedReadoutDefect_eq_genericOrderedDefect",
+    "GRWTSK.NumberTheory.Moebius.PhysicalUniversalLedger.physicalSignedDefect_eq_threeTermExpansion",
+    "GRWTSK.NumberTheory.Moebius.PhysicalUniversalLedger.genericOrderedCross_encoded_eq_original",
+    "GRWTSK.NumberTheory.Moebius.PhysicalUniversalLedger.genericOrderedCross_transfer",
+    "GRWTSK.NumberTheory.Moebius.PhysicalUniversalLedger.genericOrderedDefect_transfer",
+    "GRWTSK.NumberTheory.Moebius.PhysicalUniversalLedger.shellLift_genericOrderedCross",
+    "GRWTSK.NumberTheory.Moebius.PhysicalUniversalLedger.shellLift_genericSource_plusDefect",
+    "GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn.pickupCross_eq_originalSignedRows",
+    "GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn.pickupCross_le_originalRowAbsMass",
+    "GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn.endpointCurvatureDefect_abs_le_quarter",
+    "GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn.endpointSum_eq_signedRows_plus_curvature",
+    "GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn.endpointSum_le_originalRowAbsMass_plus_quarter",
+    "GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn.endpointSum_eq_physicalPacket_add_twoDefects",
+    "GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn.endpointSum_eq_liftShiftPhysicalReturn",
+    "GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn.finiteTV_comparator_and_original_endpoint",
+    "GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn.riemannHypothesis_of_rowAbsMass_good_scales",
+    "GRWTSK.Geometry.SphereFourPhysicalBitPortBridge.indexedBitsAtPort_viewRoundtrip",
+    "GRWTSK.Geometry.SphereFourPhysicalBitPortBridge.indexedBitsAtPort_shellLift",
+    "GRWTSK.Geometry.SphereFourPhysicalBitPortBridge.indexedBitsAtPort_shift",
+    "GRWTSK.Geometry.SphereFourPhysicalBitPortBridge.indexedBitsAtPort_advance",
+    "GRWTSK.Geometry.SphereFourPhysicalBitPortBridge.indexedBitsAtPort_missing",
+    "GRWTSK.Geometry.SphereFourPhysicalBitPortBridge.indexedNumeratorAtPort_of_record",
+    "GRWTSK.Geometry.SphereFourPhysicalBitPortBridge.advance_energy_and_bits",
+    "GRWTSK.Geometry.SphereFourPhysicalBitPortBridge.sampledPort_vs_uniform_abs_le_TV",
+    "GRWTSK.Geometry.SphereFourPhysicalBitPortBridge.sampledPortLoss_advance",
+    "GRWTSK.NumberTheory.Moebius.PhysicalLiftedZeroWitness.actualShapeObserverLedger",
+    "GRWTSK.NumberTheory.Moebius.PhysicalLiftedZeroWitness.hypothetical_zero_forces_lifted_observer_spikes"
   ],
   "unresolved_mathematical_obligations": [
     "A true topological fiber bundle requires projection, local trivializations, transition cocycles and compatibility.",
@@ -244,10 +300,15 @@
     "The exact finite Rao–Blackwell row estimator preserves pickupCross and reduces pair importance-sampling variance by a nonnegative conditional spread, but computing complete signed rows may require the full pair table.",
     "Positive source-derived regularized row weights produce a candidate second-moment bound (A+epsilon*N)*A and balanced choice <=2*A^2; a bound on the original unsigned row total A as T→∞ is NOT established.",
     "The source-informed row sampler is a valid positive finite weight candidate and is not automatically a row of FiniteAdmissibleSampler without a separate Gibbs cost realization.",
-    "No all-positive-rate source upper estimate for PickupEndpointQuadrature.endpointSum or kernel-checked canonical RH has been obtained."
+    "No all-positive-rate source upper estimate for PickupEndpointQuadrature.endpointSum or kernel-checked canonical RH has been obtained.",
+    "UniversalWaveformReturn and PhysicalBitGramReturn signed defect identities are SOURCE PROOF CANDIDATES pending Lean; source-index mismatches or missing records remain source-minus-observation defect and cannot be silently normalized.",
+    "EndpointSum <= originalRowAbsMass+1/4 for T>=0 is finite/source-exact; SubexponentialOn originalRowAbsMass on an AffineFrequent G remains an independent stronger, RH-strength arithmetic hypothesis (NOT_PROVED).",
+    "SphereFourMobiusTorusPorts SourcePort-to-physical bit lookup preserves an integer source tag but is not a homeomorphism, fiber-bundle local trivialization, metric isometry, concentration theorem or S4-to-bit-sphere equality.",
+    "The lifted zero witness requires OriginalLaplaceRightLineIdentityTarget, WeightedWholePickupLaplaceHolomorphyTarget, LaplaceProductIdentityTheoremTarget, DyadicOriginalEnergyCeilingTarget, an actual hypothetical offcritical zero and a full signed readout-error budget. None is discharged by geometric transport.",
+    "Dissociated-support randomisation, high-dimensional cusp-measure convergence and categorical/topological fiber transport are blocked absent their source-specific hypotheses and maps."
   ],
   "verification": {
-    "source_publication": "PASS_EIGHT_EXACT_GITHUB_BLOB_READBACKS",
+    "source_publication": "PASS_TWELVE_EXACT_GITHUB_BLOB_READBACKS",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -274,7 +335,14 @@
     "finite_numeric_checks": "PASS_270_NONCERTIFYING_FLOATING_POINT_CASES",
     "reported_CI_checks_on_row_conditioning_source_commit": 0,
     "reported_CI_checks_on_optimized_row_source_commit": 0,
-    "original_signed_row_asymptotic_growth_bound": "OPEN"
+    "original_signed_row_asymptotic_growth_bound": "OPEN",
+    "new_universal_packet_defect_bridge": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "new_row_endpoint_good_scale_bridge": "SOURCE_PROOF_CANDIDATE_WITH_INDEPENDENT_RH_STRENGTH_PREMISE",
+    "new_S4_physical_port_bridge": "SOURCE_PROOF_CANDIDATE_NO_S4_TO_HILBERT_EQUIVALENCE",
+    "new_lifted_zero_witness": "CONDITIONAL_SOURCE_PROOF_CANDIDATE_WITH_UNPORTED_ANALYTIC_TARGETS",
+    "corpus_wide_complete_search": "NOT_CLAIMED_156_PREVIOUS_MOEBIUS_FILES_REUSED_BY_REFERENCE",
+    "compilation_environment": "LOCAL_LEAN_LAKE_ELAN_ABSENT; REMOTE_LEAN_NOT_DISPATCHED",
+    "reported_CI_checks_for_four_new_source_commits": "NOT_CHECKED_AT_THIS_INCREMENT"
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
@@ -284,7 +352,11 @@
     "dcc1d479fd6757dcadd47fab2f057b657989e5d2",
     "4126efa42f0a1f2d41d827406ffc62fbb219180b",
     "c3db038a7fe6f3684700326cb0d91151beda0dd6",
-    "90f064ea56d35de401c5411283dfd348bee5257d"
+    "90f064ea56d35de401c5411283dfd348bee5257d",
+    "ebfaba55f06c55872ee5147fef9862d81fe70d09",
+    "0c81dc512395acabf7f36b73c933b8cc20e0894d",
+    "3fd295907b37bfaeb0472ee6269e331b060ac69d",
+    "248bdb692e56ce5f93daf9307daf11bb6c5f204d"
   ],
   "relevant_source_inventory": [
     {
@@ -337,6 +409,26 @@
     "lake env lean GRWTSK/Combinatorics/ShapePhysicalBitRowConditioning.lean",
     "lake env lean GRWTSK/Combinatorics/ShapePhysicalBitOptimizedRowLaw.lean",
     "lake build GRWTSK.Combinatorics.ShapePhysicalBitOptimizedRowLaw",
-    "print axioms for all new public declarations after successful full dependency closure build"
-  ]
+    "print axioms for all new public declarations after successful full dependency closure build",
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusUniversalLedger.lean",
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusRowEndpointReturn.lean",
+    "lake env lean GRWTSK/Geometry/SphereFourPhysicalBitPortBridge.lean",
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusLiftedZeroWitness.lean",
+    "lake build GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PhysicalMoebiusLiftedZeroWitness",
+    "Lean #print axioms on actual compiled declaration closure"
+  ],
+  "source_scan_anchor": "697face2b38918d5ad8f83fa854a02eb742ef37d",
+  "cross_family_review": {
+    "path": "documentation/mathematics/_support/reviews/physical-mobius-cross-family-integration-2026-11-02.md",
+    "blob": "2442fba0973649e4ac34b91991f599a603029b5d"
+  },
+  "cross_family_typed_graph": {
+    "path": "documentation/mathematics/_support/reviews/shape-physical-bit-cross-family-connectivity-2026-11-02.json",
+    "blob": "3583177490d72238e3a209d2b58e5d707b6a564b",
+    "new_edges": 33,
+    "unproved_transfers": 13,
+    "related_source_files": 26,
+    "previous_graph_path": "documentation/mathematics/_support/reviews/moebius-rh-original-source-typed-connectivity-2026-11-02.json",
+    "previous_graph_blob": "3938b4a2fb0d20cacb6a863b7372ea49ea157f11"
+  }
 }
