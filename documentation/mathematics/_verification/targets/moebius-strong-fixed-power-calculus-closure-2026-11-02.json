@@ -1,0 +1,113 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Arithmetic-free calculus closure for the PR103 causal Mobius energy and strong packet",
+  "repository": "grwtsk/math",
+  "source_revision": "ecd1dfc6df1ec90e5028a2ed36838f98e6eb369b",
+  "publication": {
+    "pull_request": 1581,
+    "merge_commit": "ecd1dfc6df1ec90e5028a2ed36838f98e6eb369b",
+    "method": "guarded non-force merge preserving concurrent main history"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongFixedPowerCalculusClosure.lean",
+    "git_blob": "c1ba0aabd513e6e2f3955d787ae1e3dbbf8d4ca7",
+    "sha256": "afc0fb183838cd58681292747907bb8272f8f5a88f2115fd87381aabaf388f63",
+    "lines": 397,
+    "declarations": {
+      "definitions": 0,
+      "private_theorems": 1,
+      "public_theorems": 8,
+      "total_theorem_candidates": 9
+    }
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-strong-fixed-power-calculus-closure-2026-11-02.md",
+    "git_blob": "3a3666aa2c5522408d635364c6ae796e5ab7754e",
+    "sha256": "ad59409108fbb477e7cc89b912b56f7768f68f910b27f17e48967e9b55527977"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/moebius-strong-fixed-power-calculus-closure-references.md",
+    "git_blob": "4c20f8499fad38bce3629928f1c9e0c47470ae21",
+    "sha256": "2c4fba53862f10b002f951984cc9684ced28064ae3f03ce6bcfa0f44062a2143"
+  },
+  "dependencies": {
+    "MoebiusStrongFixedPowerPR103.lean": "10f2fba05c105c3e80b58ed9632901b5550444d9",
+    "MoebiusPR103ExactEnergyAbscissa.lean": "9a4ed819c1bb43e016f831d1f159fe1fd2a595eb",
+    "MoebiusStrongPacketEnergyReturn.lean": "198251f695972424393ab00ae4b0838f0a516fdd",
+    "MoebiusEnergyMatchedWeakResidual.lean": "2a3b46e1bb568217732c0a31c927327e03c0b0ff",
+    "MoebiusEndpointPutnamSparseGapAllRate.lean": "2ccedc75331c8ec88956923f896083727d49ec4f",
+    "MertensPrimitive.lean": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean": "2504147e2230a26eb804b0898004d0186c4e36a1",
+    "Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean": "efe8fff89fbf1782b4a42a89038f51f9d862c562"
+  },
+  "external_sources": {
+    "pr103": {
+      "repository": "GTimG/QuasiRiemannTracker",
+      "commit": "8b1a0167c8e324099884152181e3fb2206510e88",
+      "path": "submissions/2026-11-01-closest-fraction-contact/src/Candidate/Main.lean",
+      "git_blob": "808d04cec892449707d23e81f94179e2738fdf1a",
+      "local_adapter_status": "NOT_REPLAYED"
+    }
+  },
+  "toolchain": {
+    "lean": "v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorem_candidates": [
+    "integral_exp_mul_pos",
+    "wholePickup_abs_le_of_velocity_exp",
+    "pickupVelocityPowerEnergyTransfer_proved",
+    "energyWeakScalar_le_two_mul_time",
+    "strongPacketFixedRateReturn_proved",
+    "pr103_pickupEnergy_clean_rate_of_external",
+    "pr103_endpointSum_clean_rate_of_external",
+    "pr103_strongPacket_clean_rate_of_external",
+    "pickupEnergyAbscissa_le_exactPR103_of_external"
+  ],
+  "mathematical_scope": [
+    "a pointwise velocity envelope C*exp(rho*u) yields |wholePickup(t)| <= (C/rho)*exp(rho*t)",
+    "the exact cumulative energy constant is C^2/(2*rho^3) at rate 2*rho",
+    "the existing weak-overlap scalar is at most 2*T",
+    "an energy bound A*exp(r*T) yields the complete strong-packet constant A+36/r^2+2/r at the same positive rate",
+    "conditional PR103 energy, endpoint, strong-packet and exact-abscissa consumers no longer require local calculus or scalar-return premises"
+  ],
+  "remaining_visible_inputs": [
+    "ExternalPR103ZetaNonvanishing",
+    "ZeroFreeToMertensPowerBridge"
+  ],
+  "closed_local_props": [
+    "PickupVelocityPowerEnergyTransfer",
+    "StrongPacketFixedRateReturn"
+  ],
+  "open_obligations": [
+    "adapt and replay the external PR103 Dirichlet theorem through the pinned modulus-one zeta identity",
+    "formalize the standard zero-free-to-Mertens Perron/contour bridge",
+    "compile and check the new calculus-closure module",
+    "prove an all-positive-rate endpoint or source-equivalent packet estimate on one fixed AffineFrequent scale set",
+    "complete fresh-kernel and transitive source-bound axiom verification"
+  ],
+  "verification": {
+    "source_publication": "DONE",
+    "exact_blob_readback": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "lexical_forbidden_declaration_scan": "PASS_NO_SORRY_ADMIT_NATIVE_DECIDE_OR_AXIOM_DECLARATION",
+    "lean_compilation": "NOT_RUN",
+    "expected_type_checks": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "external_pr103_adapter": "NOT_REPLAYED_LOCALLY",
+    "zero_free_to_mertens_bridge": "NOT_FORMALIZED",
+    "all_positive_rate_endpoint_supplier": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "nonclaims": [
+    "the source has not been compiled or kernel accepted",
+    "the external PR103 theorem is not locally replayed",
+    "the contour bridge remains open",
+    "closing arithmetic-free transfer gates is not new Mobius cancellation",
+    "a fixed positive rate is not the all-positive-rate RH supplier",
+    "source publication is not theorem acceptance"
+  ],
+  "passive": true
+}
