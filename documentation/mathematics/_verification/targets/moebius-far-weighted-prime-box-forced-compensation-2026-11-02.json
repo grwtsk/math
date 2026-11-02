@@ -1,0 +1,123 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Actual far Möbius weighted prime-box signed asymptotic; forced complementary cancellation; classical VK relative balance",
+  "repository": "grwtsk/math",
+  "attribution": "grwtsk contributors; mathematical reasoning and Lean source assistance by OpenAI ChatGPT",
+  "pin": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarPrimeBoxWeightedAsymptotic.lean",
+      "blob": "dee35746063402a6f039b26b2940c6df5b37a56d",
+      "status": "LEAN_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarPrimeBoxForcedCompensation.lean",
+      "blob": "23ea28d68153eff6ebbfbc0269d8249473b98549",
+      "status": "LEAN_SOURCE_PROOF_CANDIDATE"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-far-weighted-prime-box-forced-compensation-2026-11-02.md",
+    "blob": "b899cf2f9717e1201be9325134319c0321b1be98"
+  },
+  "unchanged_exact_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarPrimeBoxPNTMass.lean",
+      "blob": "5c0fb0a8f8b405ca3e9c0f94b7530be6e6b0f5d4"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarReducedStructuralFrontier.lean",
+      "blob": "9f72096be0c6aa30ecb0099a747090a5e30e4c44"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCollarResidualGcdReducedGap.lean",
+      "blob": "48081c7e32d41455ef7fc7d02c006588bd9b36b7"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarCompleteUpperTransfer.lean",
+      "blob": "11b3913a25626bbd4e1a593b50c31e82bac6abee"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSquareBridge.lean",
+      "blob": "be156509d9679a22b52b32d087f87d8449a047ef"
+    }
+  ],
+  "exact_source": {
+    "fixed_grid": "T_J=J*log 2,N=2^J,J>=1, independent of desired epsilon",
+    "bank": "genuine fixed emptyPrimeBand, terminal high collar empty eventually",
+    "prime_boxes": "P primes N/16..N/12, Q primes N/4..N/3, R primes N/8..N/6, D=2R",
+    "signed_selected_source": "both ordered original (p,q),(q,p) with μ products +1 and (p,2r),(2r,p) with μ products -1; original pickupResponseGram and true farPair",
+    "unselected_remainder": "all other original ordered far low/low pairs with unchanged arithmetic signs, real response, squareful zeros, full birth and gap selectors",
+    "physical_kernel": "K_log(N)(m,n)=κ(m/N,n/N)/N, κ=4∫_0^log(1/max(a,b)) (a^-1/2-e^(t/2))(b^-1/2-e^(t/2))dt"
+  },
+  "new_ordinary_mathematics": {
+    "weighted_prime_PNT": "One-orientation normalized P×Q original K tends I; P×2R tends I/2, by classical PNT weak prime measures, factor 1/2 from r->2r density",
+    "leading_constant_exact": "I=4*((1/sqrt(3)-1/2)*(2*log(3)/sqrt(3)+1/6-log(4))-(1/48)*(log(4/3)+25/12-4/sqrt(3)))",
+    "leading_constant_approx": 0.01000771806416765,
+    "positive_lower": "I>=1/576 from true original causal Gram >=1/N on fixed A×B",
+    "signed_selected_asymptotic": "selectedPrimeBoxFar(J)=I*2^J/(J log2)^2+o(2^J/J^2)",
+    "classical_PNT_Mertens_far": "complete empty-bank original FAR F_J=o(2^J/(J log2)^2), even |F_J|=O_beta(2^J/(J log2)^beta) for every fixed beta>0, from classical quantitative Mertens and three genuine source paid absolute packets",
+    "forced_complementary_compensation": "remainingAfterPrimeBoxFar(J)=-I*2^J/(J log2)^2+o(2^J/J^2) with exact original residual finite mask",
+    "classical_relative_superlog": "for each A>0 the full original positive/negative far relative imbalance is O_A(T_J^-A) unconditionally, from large prime boxes and classical Mertens",
+    "classical_VK_source_saving": "|complete FAR|<=C*exp(T_J-c*phi(T_J)), phi(t)=t^(3/5)/(log(3+t))^(1/5), from classical unconditional Vinogradov-Korobov Mertens and original velocity/energy split",
+    "classical_VK_relative_balance": "|P_J^+-P_J^-|/(P_J^++P_J^-)<=C*exp(-c*phi(T_J)) eventually",
+    "not_proved": "for every epsilon>0 the whole FAR signed source <=C_epsilon exp(epsilon*T_J): OPEN, would imply RH"
+  },
+  "lean_exact_finite_candidates": [
+    "FarPrimeBoxWeightedAsymptotic.far_eq_primeBox_add_other",
+    "FarPrimeBoxWeightedAsymptotic.normalized_analyticPrimeBox_tendsto",
+    "FarPrimeBoxWeightedAsymptotic.normalized_sourcePrimeBox_tendsto",
+    "FarPrimeBoxForcedCompensation.normalized_remaining_tendsto_negative_of_independent_gates",
+    "FarPrimeBoxForcedCompensation.normalized_remaining_tendsto_of_classical_Mertens"
+  ],
+  "independent_unproved_Lean_suppliers": [
+    "OriginalPrimeBoxExactSourceTarget (elementary true source masks/signs, fixed J)",
+    "OriginalKernelScalingAndIntegralTarget (original physical formula, exact integral constant positivity)",
+    "WeightedPrimeBoxPNTTarget (classical weighted prime counting)",
+    "ClassicalMertensToFarPrimeScaleTarget (ordinary quantitative original Mertens + three paid envelopes)",
+    "ClassicalVinogradovKorobovMertensTarget (standard unconditional theorem)",
+    "ClassicalVinogradovKorobovFarSavingTarget (elementary true source calculus transfer)",
+    "ClassicalRelativeFarBalanceVKTarget (elementary Mertens/PNT consequence)",
+    "FarOriginalEveryPositiveRateUpperTarget (RH-strength, OPEN)"
+  ],
+  "finite_diagnostic": {
+    "tested_J": "8..18",
+    "positive_prime_box_scaled_J18": 0.013955,
+    "negative_prime_semiprime_box_scaled_J18": 0.007474,
+    "signed_oriented_scaled_J18": 0.012962,
+    "predicted_weighted_PNT_lim_positive": 0.01000771806416765,
+    "predicted_weighted_PNT_lim_negative": 0.005003859032083826,
+    "predicted_signed_oriented": 0.01000771806416765,
+    "original_physical_integral_vs_scaled_formula_max_abs_in_3_checks": 7e-13,
+    "qualifier": "NONCERTIFYING floating-point calculations; limit follows PNT, not data"
+  },
+  "trust": {
+    "publication": "PENDING_EXACT_MAIN_READBACK",
+    "compilation": "DEFERRED_PER_USER",
+    "parser": "NOT_RUN",
+    "elaboration": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_independent_kernel": "NOT_RUN",
+    "transitive_axiom_and_opaque_native": "NOT_RUN",
+    "external_PNT_import": "NOT_RUN",
+    "classical_VK_Mertens_import": "NOT_RUN",
+    "all_positive_rate_far_upper": "OPEN",
+    "canonical_RiemannHypothesis": "OPEN",
+    "old_source_modified": false,
+    "new_axioms": false,
+    "root_imports_modified": false
+  },
+  "issues": [
+    1556,
+    1429
+  ],
+  "external_references": [
+    "https://dlmf.nist.gov/27.2",
+    "https://arxiv.org/abs/2208.06141",
+    "https://www.fields.utoronto.ca/talks/Explicit-Mertens-estimates"
+  ]
+}
