@@ -124,8 +124,8 @@
     ]
   },
   "verification": {
-    "publication": "PENDING_NONFORCE_EXPECTED_HEAD_READBACK",
-    "source_exact_readback": "PENDING",
+    "publication": "PASS_GUARDED_NONFORCE_MAIN",
+    "source_exact_readback": "PASS_3_OF_3",
     "direct_static_no_sorry_axiom_unsafe": "PASS",
     "native_compilation": "NOT_RUN",
     "expected_types_universes": "NOT_RUN",
@@ -143,5 +143,16 @@
     "Prove FiniteStateBlockBoundaryPigeonhole by splitting a path at q+1 original n-word boundaries and applying cardinal pigeonhole.",
     "Close BoundedPeriodicWordMatrixCriterion and re-run expected-type, fresh kernel and transitive axiom audits.",
     "Retain nonbijective lift count corrections for general exact-language presentations; do not claim an unconditional dynamical zeta determinant identity."
-  ]
+  ],
+  "publication": {
+    "published_commit": "5553033bba6818824a2ef7de87f0b21ad30bb100",
+    "guarded_parent": "c5e0165d9c76a89ef4a20d8655f6f455a3dcee8c",
+    "source_blob": "d8f0423d8b872e5045c779544bd39eb1bad7adfe",
+    "review_blob": "3320ff112c49f090ce29d756fefeaf6d6d9790f3",
+    "initial_manifest_blob": "8a9f19dddeae6ae53f0fd9e4afcd22bee14c27d0",
+    "exact_readback": true,
+    "proof_acceptance": false,
+    "first_unpublished_attempt": "571f1f6295d31eb3f3c8cabf309491a3d1bffe87",
+    "first_attempt_issue": "GitHub GraphQL API transient error/concurrent head; branch readback checked before non-force retry"
+  }
 }
