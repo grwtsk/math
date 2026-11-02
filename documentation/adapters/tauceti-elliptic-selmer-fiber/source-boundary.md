@@ -696,3 +696,128 @@ covered 160,000 2-cocycle triples and 40,000
 scalar-fibre instances; these validate the
 group identities only, not actual elliptic
 Galois geometry or Lean proofs.
+
+
+## Finite selected-theta-function Galois continuity instead of assumed scalar cochain continuity (2026-11-02)
+
+Pinned original Tau Ceti source:
+`TauCetiProject/TauCeti@2bdb755239d3bd84760e99bc83166bdf7cc75a6b`;
+original Tau Ceti contributors, Apache-2.0,
+Lean v4.36.0-rc1. Native math Lean v4.34.1 and
+root imports/pins remain unchanged.
+
+The previous source `TauCetiThetaBrauerH2Transport.lean`
+already obtains the ACTUAL theta scalar Galois
+2-cocycle law from `TauCetiThetaGaloisScalarFactor.lean`,
+using the original elliptic rational-function theta
+group and faithful original constant field.
+It still asks for `ThetaScalarContinuous W n a`
+before that raw scalar becomes a genuine
+`Z2(G_F,UnitsCoeff F)` class.
+
+NEW native pure Mathlib
+`GRWTSK/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CentralScalarFiniteOrbitContinuity.lean`,
+blob `9d74a4739947905598596fb079a6d5f872a05123`,
+proves that the raw factor scalar
+`c(σ,τ)` is continuous as soon as
+(a) the original discrete E[n]-cochain a is continuous,
+(b) the selected theta lifts `s(t)` have continuous
+individual Galois orbit maps, and (c) their true
+central scalar inclusion is injective and satisfies
+the exact original group-boundary equation.
+It proves joint continuity for a family indexed
+by a DISCRETE coefficient set (no global continuous
+theta group action is required), then reflects
+continuity through the faithful discrete scalar
+inclusion. This is PURE topology and source
+group algebra, not elliptic finite descent.
+
+NEW isolated original Tau Ceti-version
+`TauCetiThetaFiniteOrbitTopology.lean`,
+blob `bd082f21655bc66ba35fc1260e785b28100a7145`,
+has a separate compatible Mathlib source edition
+of the SAME pure topology proof, without importing
+the native v4.34.1 GRWTSK file or claiming a
+second independent mathematical argument.
+NEW isolated source-specific
+`TauCetiThetaSelectedLiftContinuity.lean`,
+blob `660f1f8c0564b98ae4474c204f28ac64a1a4a9b2`,
+uses original `W.TorsionCoeff n`,
+`W.geometricLift`, original
+`scalarLift_originalThetaObstruction_eq_groupBoundary`,
+the original `mem_Z1_iff` and
+`W.PointCoeff.instContinuousSMul` to derive
+`ThetaScalarContinuous W n a` from the
+ORIGINAL selected theta function orbit
+condition. Because E[n] is finite for n≠0,
+that condition is a FINITE collection of
+real elliptic rational-function Galois
+orbit continuity facts.
+
+The source further reduces the selected
+theta lift orbit condition to the original
+FUNCTION-field orbit
+`σ↦W.functionFieldGaloisAction σ f_t`;
+the point coordinate is automatically
+continuous from pinned Tau Ceti E[n] theory.
+The target `originalThetaBrauerH2_of_selectedLiftOrbits`
+then constructs the original UnitsCoeff H²,
+and `originalThetaNormalizedInvariant_of_functionOrbits`
+returns the actual local ZMod n invariant
+under separately proved Brauer n-torsion.
+
+**Precise LAST finite-descent Lean supplier:**
+For any selected actual rational function
+`f_t ∈ Fsep(E)ˣ`, prove its Galois orbit
+is continuous with the DISCRETE topology.
+The mathematical proof uses the original
+Weierstrass `{1,y}` basis over `Fsep(x)`
+(`FunctionField/Basis.lean`, blob
+`8b3b13b8dc9ed5cfa1bb065a41844cdb39339314`),
+original `functionFieldGaloisAction_basis_repr`
+(`FunctionField/Galois/FixedField.lean`,
+blob `e355d98d7f0bf6b5adecefbc4b1b94398d362cae`),
+original RatFunc numerator/denominator coefficient
+Galois transport (`RatFunc/Galois.lean`,
+blob `57f4515fca9fc79e977f188f21c0a3370ee0f816`),
+and `IsIntegral.isLocallyConstant_apply` of
+`FieldTheory/KrullTopology.lean`, blob
+`59ffeadd7b64177629d97dcdde28c4d3de3b0e77`.
+Every selected f_t depends on finitely many
+separable-algebraic coefficients, whose
+Galois stabilizer intersection is open.
+This elementary mathematical proof does
+NOT substitute for its exact compatible
+Lean integration, which remains OPEN.
+
+**Topology hostile check:** A discrete continuous
+Galois coefficient action does NOT make
+arbitrary Galois-to-coefficient cochains
+continuous. E.g. the Boolean-valued map
+on Cantor profinite `(Z/2)^N` detecting
+infinitely many nonzero coordinates is
+discontinuous despite a trivial continuous
+action. The selected function-field orbit
+source fact cannot be erased.
+
+**Still OPEN:** actual theta Brauer class
+n-torsion, exact geometric theta commutator
+equals source original Weil e_n with signs,
+local abelian Tate separation, real p=2,
+point-corrected local-cone nonzero
+Weil–Châtelet `H²(U_v)`, global
+restricted product/derived Rlim/Poitou–Tate,
+Néron–Tate regulator and COMPLEX L-jet.
+The group factor, H² continuity and
+Weil–Châtelet cone H² are distinct objects.
+No BSD or RH claim follows from these
+pure algebra/topology connections.
+
+Detailed mathematical source review:
+`documentation/mathematics/_support/reviews/bsd-theta-finite-selected-lift-continuity-2026-11-02.md`.
+SOURCE_PROOF_CANDIDATE; parsing NOT_RUN,
+Lean compilation NOT_RUN, fresh kernel
+replay NOT_RUN, full axiom audit NOT_RUN,
+compatible Tau Ceti v4.36.0-rc1 import
+NOT_RUN; no native Noe/CI dispatch,
+toolchain change or new axiom/sorry/admit.
