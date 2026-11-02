@@ -40,6 +40,7 @@ def careFinding (r : Needs) (p : Pathway) : ConcernKind → Finding
 def fromCare (r : Needs) (p : Pathway) (claimed : Bool) :
     Assessment ConcernKind :=
   { obligations := careDimensions
+    obligations_nonempty := by decide
     observed := careFinding r p
     claimedComplete := claimed }
 
@@ -70,6 +71,7 @@ inductive ExtendedCareDuty where
 def extendedCareAssessment (r : Needs) (p : Pathway) (claimed : Bool) :
     Assessment ExtendedCareDuty :=
   { obligations := (careDimensions.map ExtendedCareDuty.careConcern) ++ [.remedyAndAppeal]
+    obligations_nonempty := by simp
     observed := fun d => match d with
       | .careConcern c => careFinding r p c
       | .remedyAndAppeal => .unknown
