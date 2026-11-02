@@ -29,7 +29,8 @@ law-of-total-variance theorem gives
 
 Adding the EXACT already-paid gap and ratio sectors, and the original
 quarter-unit endpoint-minus-cross defect, changes neither sampling
-variance. The resulting one-index estimator has mean endpointSum T,
+variance. The exact endpoint-defect calibrated version is an IDEAL
+source identity; its correction is not presumed cheaply computable. The resulting one-index estimator has mean endpointSum T,
 not a surrogate signed source. The missing core arithmetic estimate
 is NOT assumed, and no independent arithmetic sign law is asserted.
 -/
@@ -135,6 +136,39 @@ private theorem singleExpectation_add_const
     _ = (∑ m ∈ endpointIndex T, w m * f m) + c := by
       rw [law.total_one]
       ring
+
+/-- An ACTUALLY source-defined finite estimator without the unknown
+endpoint curvature correction: the two sparse packets are held
+deterministic, while one original-index row of the hard core is
+importance-sampled. It targets pickupCross, not endpointSum itself. -/
+def denseCoreCrossRowEstimator
+    (Q : Finset ℕ) (T : ℝ) (w : ℕ → ℝ) (m : ℕ) : ℝ :=
+  denseCoreRowImportance Q T w m + paidSparseSectors Q T
+
+/-- Exact unbiased mean for the complete original signed pickupCross.
+The target and the arithmetic coefficients have not been changed. -/
+theorem denseCoreCrossRowEstimator_mean
+    (Q : Finset ℕ) (T : ℝ) (w : ℕ → ℝ)
+    (law : PositiveWindowLaw T w) :
+    singleExpectation T w (denseCoreCrossRowEstimator Q T w) =
+      pickupCross T := by
+  unfold denseCoreCrossRowEstimator
+  rw [singleExpectation_add_const T w law]
+  have hsource := pickupCross_eq_paid_add_denseCoreMean Q T w law
+  linarith
+
+/-- This accessible source-defined estimator's EXPECTED VALUE, not
+every stochastic realization, differs from the exact original
+endpointSum by at most the imported unconditional quarter-unit
+curvature budget. No target-dependent correction is used here. -/
+theorem denseCoreCrossRowEstimator_mean_endpointError
+    (Q : Finset ℕ) (T : ℝ) (hT : 0 ≤ T) (w : ℕ → ℝ)
+    (law : PositiveWindowLaw T w) :
+    |singleExpectation T w (denseCoreCrossRowEstimator Q T w) -
+      endpointSum T| ≤ (1 / 4 : ℝ) := by
+  rw [denseCoreCrossRowEstimator_mean Q T w law]
+  rw [abs_sub_comm]
+  exact endpointSum_error hT
 
 /-- Deterministically pay the two previously proved sparse packets,
 plus the original endpoint curvature defect; sample only the genuine
