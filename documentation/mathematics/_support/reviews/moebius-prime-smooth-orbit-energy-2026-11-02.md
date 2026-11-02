@@ -348,8 +348,8 @@ majorants.  This is an exact comparison, not a new Mertens estimate.
 
 The coarser Mertens-square majorant has the already documented half-exponent
 loss.  Even the hypothetical RH-scale prefix estimate
-`|M(x)| <<_delta x^(1/2+delta)` gives through that Cauchy budget only
-`exp((1/2+2delta)T)`, not every positive rate.  The sharper absolute-prefix
+\(|M(x)|\ll_\delta x^{1/2+\delta}\) gives through that Cauchy budget only
+\(\exp((1/2+2\delta)T)\), not every positive rate.  The sharper absolute-prefix
 wave may preserve the right rate under the same hypothesis, but that hypothesis
 is itself RH-strength.  Consequently neither positive majorant supplies the
 missing arithmetic cancellation.
@@ -368,10 +368,10 @@ Therefore
   -C_P(T)\le I_P(T).
 \]
 
-For the near-critical bank with `0<=alpha<2`, the internal energy is
+For the near-critical bank with \(0\le\alpha<2\), the internal energy is
 all-positive-rate after the finite Euler and Chebyshev gates are supplied.
 Hence the negative part of the **complete net** between-core packet is already
-all-positive-rate.  On any fixed scale set `G`,
+all-positive-rate.  On any fixed scale set \(G\),
 
 \[
  C_P\text{ is subexponentially bounded above on }G
@@ -398,7 +398,7 @@ Classical PNT and partial summation give
  \sum_{p\le Y}p^{-1/2}\sim\frac{2\sqrt Y}{\log Y},
 \]
 
-while `sum_{p<=Y}p^-1=O(log log Y)`. Thus
+while \(\sum_{p\le Y}p^{-1}=O(\log\log Y)\). Thus
 
 \[
  \log K(Y)
@@ -421,16 +421,16 @@ one obtains
 
 Therefore:
 
-- if `0<=alpha<2`, the cost is `exp(o(T))` and is payable at every
+- if \(0\le\alpha<2\), the cost is \(\exp(o(T))\) and is payable at every
   positive rate;
-- if `alpha=2`, the cost has asymptotic exponential rate `2`, so it is
+- if \(\alpha=2\), the cost has asymptotic exponential rate \(2\), so it is
   not all-positive-rate;
-- if `alpha>2`, it exceeds every fixed exponential rate along all
+- if \(\alpha>2\), it exceeds every fixed exponential rate along all
   sufficiently large times.
 
 This is a sharp limitation of the **absolute Euler-norm method**, not a lower
 bound on the actual signed internal orbit energy.  It explains why terminal
-prime bands near `e^T` cannot be absorbed by this payment and must remain in
+prime bands near \(e^T\) cannot be absorbed by this payment and must remain in
 a joint signed compensation theorem.
 
 ## 12. Comparison with OpenAI weighted-dilation transference
@@ -444,15 +444,15 @@ logarithmic saving of the form
  x(\log x)^{-A}.
 \]
 
-For the present physical time `x=e^T`, this is
+For the present physical time \(x=e^T\), this is
 
 \[
  e^T T^{-A},
 \]
 
-which is not bounded by `C_epsilon e^(epsilon T)` for any fixed
-`epsilon<1`.  Even the transference moment saving
-`exp(-cT^0.52 log T)` leaves
+which is not bounded by \(C_\varepsilon e^{\varepsilon T}\) for any fixed
+\(\varepsilon<1\).  Even the transference moment saving
+\(\exp(-cT^{0.52}\log T)\) leaves
 
 \[
  \exp\bigl(T-cT^{0.52}\log T\bigr)=\exp((1-o(1))T).
@@ -473,7 +473,7 @@ form
  C_{P_T}(T)=\sum_{q\ne r}\int_0^T G_{P_T,q}(u)G_{P_T,r}(u)\,du
 \]
 
-for a bank below the subcritical `alpha<2` threshold.  Because its negative
+for a bank below the subcritical \(\alpha<2\) threshold.  Because its negative
 side is already paid, an absolute bound for this one complete net quantity is
 now equivalent to the required one-sided bound.  The estimate must still be
 formed before splitting prime-dilation credit from forced positive Type-II and
@@ -495,8 +495,8 @@ Let
  T_N=\log\left(N+\frac{|M(N)|}{2}\right).
 \]
 
-Since `H(log N)>=0`, the orbit identity and internal Euler payment give
-for every finite bank `P`
+Since \(H(\log N)\ge0\), the orbit identity and internal Euler payment give
+for every finite bank \(P\)
 
 \[
  \boxed{
@@ -520,7 +520,7 @@ Consequently, if along an unbounded sequence
  |M(N)|\ge N^\theta,\qquad \theta>\frac45,
 \]
 
-then, after choosing any internal rate smaller than `5theta-4`,
+then, after choosing any internal rate smaller than \(5\theta-4\),
 
 \[
  C_{P_{T_N}}(T_N)
@@ -539,7 +539,7 @@ implies the local consequence
  |M(N)|\ll_\delta N^{4/5+\delta}
 \]
 
-for every `delta>0` through the fifth-power detector.  This local exponent is
+for every \(\delta>0\) through the fifth-power detector.  This local exponent is
 weaker than the final analytic RH return, but it is an explicit hostile test for
 any proposed cross-core estimate.
 

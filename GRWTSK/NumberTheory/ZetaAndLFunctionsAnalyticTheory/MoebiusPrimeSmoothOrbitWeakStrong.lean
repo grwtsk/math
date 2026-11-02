@@ -91,18 +91,6 @@ def PrimeSmoothOrbitGramCauchy : Prop :=
       (primeSmoothOrbitGram B T q r) ^ 2 ≤
         orbitDiagonal B T q * orbitDiagonal B T r
 
-/-- Elementary scalar consequence used to turn the preceding finite estimate
-into an all-positive-rate allowance.  The review proves it from
-`card(endpointIndex T) ≤ floor(exp T)` and
-`orbitWeakThreshold=(floor(exp T)+1)^(-6)`. -/
-def OrbitWeakScalarDecay : Prop :=
-  ∀ (B : ℝ → PrimeBand) (T : ℝ), 0 ≤ T →
-    (((endpointIndex T).card : ℝ) ^ 2) *
-      Real.sqrt
-        (orbitWeakThreshold T *
-          primeSmoothOrbitInternalEnergy (B T) T) ≤
-      Real.sqrt (primeSmoothOrbitInternalEnergy (B T) T)
-
 /-- Every orbit diagonal is a literal square integral. -/
 theorem orbitDiagonal_nonneg
     (B : PrimeBand) {T : ℝ} (hT : 0 ≤ T) (q : ℕ) :
@@ -185,6 +173,18 @@ theorem orbitWeakCross_abs_le_card_sq_sqrt
     hq hI hd hgram
     (fun q hqmem r hr hsel => hsel)
 
+/-- Elementary scalar consequence used to turn the preceding finite estimate
+into an all-positive-rate allowance.  The review proves it from
+`card(endpointIndex T) ≤ floor(exp T)` and
+`orbitWeakThreshold=(floor(exp T)+1)^(-6)`. -/
+def OrbitWeakScalarDecay : Prop :=
+  ∀ (B : ℝ → PrimeBand) (T : ℝ), 0 ≤ T →
+    (((endpointIndex T).card : ℝ) ^ 2) *
+      Real.sqrt
+        (orbitWeakThreshold T *
+          primeSmoothOrbitInternalEnergy (B T) T) ≤
+      Real.sqrt (primeSmoothOrbitInternalEnergy (B T) T)
+
 /-- The low-orbit-energy packet is globally all-positive-rate once the same-
 core internal energy has been paid. -/
 theorem orbitWeakCross_allRate
@@ -248,7 +248,7 @@ theorem strongCross_subexponentialOn_iff_cross
     have hpart := orbitCross_eq_weak_add_strong (B T) T
     have hwT := hw T hT
     have hsT := hs T hG hTR
-    have hweakUpper := le_trans (le_abs_self _) hwT
+    have hweakUpper := le_trans (le_abs_self _ ) hwT
     rw [hpart]
     nlinarith
   · intro hcross ε hε
