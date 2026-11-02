@@ -100,7 +100,7 @@
   },
   "verification": {
     "git_blob_creation": "PASS",
-    "git_publication": "PENDING_GUARDED_MAIN_READBACK",
+    "git_publication": "PASS_GUARDED_NONFORCE_MAIN",
     "lean_parsing": "NOT_RUN",
     "lean_compilation": "NOT_RUN",
     "expected_types": "NOT_RUN",
@@ -111,7 +111,8 @@
     "remote_CI_dispatched": false,
     "scheduler_dispatched": false,
     "new_arithmetic_RH_all_positive_rate_for_complete_original_pickupCross": "OPEN",
-    "riemannHypothesis": "UNPROVED"
+    "riemannHypothesis": "UNPROVED",
+    "git_blob_readback": "PASS_ALL_THREE_MATCH"
   },
   "next_required": [
     "Independently compile and kernel replay pinned source and original dependencies; audit generated and opaque dependency closure",
@@ -125,5 +126,13 @@
     1406,
     1429,
     15
-  ]
+  ],
+  "publication": {
+    "published_commit": "59b3bada2c51b9903aaf133bb319412e1f09c251",
+    "expected_parent": "bd2deb76cbad6372570957526131f41f0216d724",
+    "readback_source_blob": "41321666e299d71f2eb1e24ee6eae260b2d60188",
+    "readback_review_blob": "e6169623bf58bd085652a52b042241547c33613a",
+    "initial_unpublished_commit": "3300614e7706805e25e96f8d53c64a1055549e86",
+    "initial_publication_error": "Github GraphQL API error during concurrent main advance; rebased and published without force"
+  }
 }
