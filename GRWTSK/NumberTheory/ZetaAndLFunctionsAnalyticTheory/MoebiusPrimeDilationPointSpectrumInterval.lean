@@ -182,7 +182,7 @@ theorem complete_point_spectrum_interval (a b : ℝ) :
         _ = 0 := sub_eq_zero.mpr hmul
     have hqE : (q : ℝ) = E := by
       exact sub_eq_zero.mp ((mul_eq_zero.mp hzero).resolve_right hq)
-    simpa [← hqE] using q.property
+    simpa [hqE] using q.property
   · intro hE
     let q : IntervalIndex a b := ⟨E, hE⟩
     refine ⟨intervalEigenstate a b q,
@@ -256,6 +256,17 @@ theorem primeDilation_complete_point_spectrum_interval
         (primeDilationLower q) (primeDilationUpper p q) =
       Set.Icc (primeDilationLower q) (primeDilationUpper p q) :=
   complete_point_spectrum_interval _ _
+
+/-- The existing Wilson real operator family contains every point of the
+prime-dilation interval as a vacuum eigenvalue of the corresponding member. -/
+theorem primeDilation_realLineFamily_complete_point_spectrum_interval
+    (L : ℕ) [NeZero L]
+    (β : ℝ) (hβ : 0 < β) (a : ℝ)
+    (p q : ℕ) (hp : Nat.Prime p) (hq : 0 < q) :
+    Set.Icc (primeDilationLower q) (primeDilationUpper p q) ⊆
+      realLineFamilyPointSpectrum L β hβ a
+        (Set.Icc (primeDilationLower q) (primeDilationUpper p q)) :=
+  realLineFamily_complete_point_spectrum_interval L β hβ a _ _
 
 /-- The maintained arithmetic and spectral consequences of the SAME source
 dilation.  The first component is the actual Möbius sign identity; the second
