@@ -1,0 +1,81 @@
+{
+  "schema": "grwtsk.math.verification.target.v1",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "title": "Original Möbius weighted decoder waveform and energy growth equivalence",
+  "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusWeightedDecoderEnergyTransfer.lean",
+  "source_blob": "ce1f1396785fe8fb9e045440a4edce25df734326",
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "direct_imports": [
+    "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusFinitePhaseDecoderBudget",
+    "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.MertensSignedPairDescent",
+    "Mathlib"
+  ],
+  "dependencies_checked_source": [
+    {
+      "path": "GRWTSK/MeasureAndIntegration/FiniteResponseSum.lean",
+      "blob": "15402baec3be3c090a23f9ac1943124e16357dd0",
+      "theorem": "wholePickup_fixed_inventory"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFinitePhaseDecoderBudget.lean",
+      "blob": "f9442fbba1b5c617ccaf6234d403d9b4212cf316",
+      "theorem": "ErrorCertificate"
+    }
+  ],
+  "main_theorems": [
+    "response_le_two_inv_sqrt",
+    "response_abs_le_two_inv_sqrt",
+    "observedWave_continuous",
+    "errorWave_continuous",
+    "wholePickup_eq_observed_add_error",
+    "weightedErrorMass_nonneg",
+    "errorWave_abs_le_two_mass",
+    "errorEnergy_le_time_mass",
+    "pickupEnergy_le_two_observed_add_two_error",
+    "observedEnergy_le_two_pickup_add_two_error",
+    "pickupEnergy_le_observed_add_weighted_mass",
+    "observedEnergy_le_pickup_add_weighted_mass",
+    "observedEnergy_subexponential_iff_pickupEnergy",
+    "riemannHypothesis_of_observedEnergy_uniform_weighted_error"
+  ],
+  "main_definitions": [
+    "observedWave",
+    "errorWave",
+    "weightedErrorMass",
+    "errorEnergy",
+    "observedEnergy",
+    "UniformWeightedErrorOn"
+  ],
+  "quantifier_boundary": "For each nonnegative T in ONE fixed G, original-index error certificate and common bounded mass C; for EVERY positive rate observedEnergy subexponential on G; hcover AffineFrequent G; no growth supplier proved",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "source_lexical_screen": "NO_AUTHORED_SORRY_AXIOM_UNSAFE_DECLARATIONS",
+    "numerical_preflight": "PASS_31245_NONRIGOROUS_ASSERTIONS"
+  },
+  "preflight": {
+    "precision_decimal_digits": 55,
+    "horizons": 7,
+    "decoder_families_per_horizon": 5,
+    "max_index": 52,
+    "script_sha256": "c0cbf47613c3322a9f8d2f058d32e3ec0df7a400dd6c78037de3a6cd3eeb065f",
+    "result_sha256": "d79cc726a8a18d2e899ee81bae9c9dffbdbbf70eddb7182569e2f01c624e9441",
+    "source_location": "temporary conversation workspace; not a code proof certificate"
+  },
+  "commands": [
+    "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusWeightedDecoderEnergyTransfer",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusWeightedDecoderEnergyTransfer.lean",
+    "lake env leanchecker --help"
+  ],
+  "open_suppliers": [
+    "actual original-index decoder error radii for each original endpoint support and scale",
+    "one uniform inverse-square-root error-mass bound on a fixed AffineFrequent G",
+    "all-positive-rate observed cumulative signed waveform energy bound on the same G"
+  ],
+  "authority": "passive verification target; no remote runner or workflow authorized"
+}
