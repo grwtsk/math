@@ -120,7 +120,7 @@
     "no_native_owner_dispatch_or_host_override": true
   },
   "verification": {
-    "source_publication": "PENDING_EXACT_GIT_READBACK",
+    "source_publication": "PASS_NONFORCE_EXPECTED_HEAD",
     "root_import_change": false,
     "original_source_changes": false,
     "lean_parsing": "NOT_RUN",
@@ -135,6 +135,16 @@
     "dynamical_zeta_determinant": "NOT_PROVED",
     "native_runner_dispatched": false,
     "scheduler_dispatched": false,
-    "remote_ci_dispatched": false
+    "remote_ci_dispatched": false,
+    "exact_git_blob_readback": "PASS_3_OF_3"
+  },
+  "publication": {
+    "source_commit": "67f3c241a6758b19f30a2df247ab72a36e128bde",
+    "expected_parent": "aec4688895ea6d24ddc1e6a7870e52b45726c0ff",
+    "source_blob": "7aa717801ded4b67b6228e852ed76323cdefaa70",
+    "review_blob": "af7c34c8cbc06fa178c1b42e9ac08b517eeae24d",
+    "initial_manifest_blob": "3f62bcf1247a9e61a0e0acbd3099367fe6641526",
+    "nonforce_expected_head_lease": true,
+    "publication_source_only_not_Lean_acceptance": true
   }
 }
