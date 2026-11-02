@@ -63,7 +63,7 @@
     "is_proof": false
   },
   "verification": {
-    "git_publication": "PENDING_EXACT_BLOB_READBACK",
+    "git_publication": "PASS_EXACT_FOUR_BLOB_READBACK",
     "native_lean_compilation": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
     "expected_declaration_types": "NOT_RUN",
@@ -77,5 +77,12 @@
     1556,
     1429
   ],
-  "authorization_boundary": "Source-only publication and mathematical work; no compiler, CI, Noe worker, scheduler or remote native replay."
+  "authorization_boundary": "Source-only publication and mathematical work; no compiler, CI, Noe worker, scheduler or remote native replay.",
+  "publication": {
+    "source_commit": "ce7d6ea49e07fa1c3237253229b87ca9add37bab",
+    "parent_commit": "3b10848e77237a5f8fa1ccc7ab831ce13e72ac19",
+    "source_and_review_blob_readback": "PASS",
+    "changed_files": 4,
+    "guarded_non_force_ref_update": "PASS"
+  }
 }
