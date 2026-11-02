@@ -1,0 +1,102 @@
+{
+  "schema": "math-source-proof-candidate-v1",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "human_mathematical_direction": "grwtsk contributors",
+  "formalization_assistance": "OpenAI",
+  "source_scope": "Original Möbius coefficients and genuine fixed-bank high-smooth-divisor index shells; no altered source or selected times",
+  "pinned_environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "prior_commit": "5ceb90f7a17c386b0cf71d1c18985df5c6f59f69",
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothFiniteComplement.lean",
+      "blob_sha": "1e7bb50f72c1308d3a241fc72eb822c5b2cdd238"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothAllRateEquivalence.lean",
+      "blob_sha": "57c7b76de27442cd00ccb188ee3e15ece1cab1a3"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothCofactorCountProof.lean",
+      "blob_sha": "6899657e4ad54cf56fd7e907966d4d9bc2f7f3f8"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothAllRateProof.lean",
+      "blob_sha": "152e6d7a840240bd2676e02fe36eacf36e0ed5f3"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletLargeModulusEnergy.lean",
+      "blob_sha": "4a5b31bb26d0c5c7592cc41b51beceaae8a32810"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatAbsoluteEnergyStability.lean",
+      "blob_sha": "eb3d30a9b103fe8a26e1f1448c6f9d8d44fd86cf"
+    }
+  ],
+  "new_sources": [
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothPositiveHalfplane.lean",
+      "blob_sha": "9c34a7ece5b7fe790a3b0f9089b2553a0ac2fdb2"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothPositiveHalfplaneAcceptance.lean",
+      "blob_sha": "bc596c1965c2f50d719d9ed73e88717ab089e95c"
+    }
+  ],
+  "mathematical_review": {
+    "path": "documentation/mathematics/_support/reviews/cm-original-high-smooth-positive-halfplane-2026-11-02.md",
+    "blob_sha": "d84d96950624aa54eb60200cc33bd4127a56448a"
+  },
+  "expected_declarations": [
+    "CMOriginalHighSmoothPositiveHalfplane.highCountRateFactor",
+    "CMOriginalHighSmoothPositiveHalfplane.highShell_card_le_positive_rate",
+    "CMOriginalHighSmoothPositiveHalfplane.highShellPowerMass_le_count",
+    "CMOriginalHighSmoothPositiveHalfplane.highShellPowerMass_le_geometric",
+    "CMOriginalHighSmoothPositiveHalfplane.finiteHighPowerMass_uniform",
+    "CMOriginalHighSmoothPositiveHalfplane.highShellDirichletWave_norm_le_mass",
+    "CMOriginalHighSmoothPositiveHalfplane.finiteHighDirichletWave_norm_le_mass",
+    "CMOriginalHighSmoothPositiveHalfplane.originalFiniteDirichlet_eq_high_add_low",
+    "CMOriginalHighSmoothPositiveHalfplane.finiteHighDirichletWave_uniform",
+    "CMOriginalHighSmoothPositiveHalfplane.HighPositiveHalfplaneHolomorphy"
+  ],
+  "mathematical_claims": {
+    "finite_high_shell_cardinality": "For all fixed B and sigma>0, #highShell(B,s) <= D_(B,sigma)*exp((sigma/2)*T_s).",
+    "finite_positive_dirichlet_mass": "For all fixed B and sigma>0, all finite cutoffs of sum_(n in high) n^(-sigma) are bounded by a source-independent-in-j geometric factor.",
+    "finite_original_dirichlet_split": "Unchanged full Mobius finite Dirichlet sum = genuine selected high + its exact low complement.",
+    "analytic_global_holomorphy": "Paper derivation by locally uniform convergence from finite positive mass; Lean theorem NOT FORMALIZED.",
+    "pole_boundary": "The low Dirichlet series agrees for Re(z)>1 with 1/zeta minus holomorphic high correction. The extension has the same poles for Re(z)>0. Low series convergence outside its starting domain NOT CLAIMED.",
+    "density": "Fixed-bank high selected support occupies vanishing proportion of each original dyadic shell; low remains full density.",
+    "RiemannHypothesis": "NOT CLAIMED; all-positive-rate signed low energy OPEN"
+  },
+  "verification": {
+    "source": "SOURCE_PROOF_CANDIDATE",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "import_closure": "NOT_RUN",
+    "native_or_ci_dispatch": "NOT_RUN",
+    "source_count_verification": "NOT_RUN",
+    "infinite_series_holomorphy_lean": "OPEN",
+    "original_low_signed_arithmetic": "OPEN",
+    "full_RH": "NOT_CLAIMED"
+  },
+  "audit_controls": [
+    "Preserve ORIGINAL integer index and unmodified moebiusReal(n), including squareful-zero values",
+    "Select high source only by the actual large-smooth-divisor predicate; do not substitute entirely smooth n",
+    "Fixed B only. Constants D_(B,sigma) are not uniform in growing banks or as sigma approaches zero",
+    "Do not identify meromorphic continuation with ordinary low-series convergence outside Re(z)>1",
+    "Do not infer individual-character cancellation from all-character Dirichlet orthogonality",
+    "Do not infer RH from high source absolute convergence or heat near-identity",
+    "Paper analytic proof is not a checked Lean theorem",
+    "Do not dispatch native verification, modify roots/dependencies, or forge acceptance records"
+  ],
+  "automation_source_review": {
+    "uri": "https://github.com/grwtsk/noeaaeue/blob/main/workflows/research/orchestration/skills/noe-proof-automation/SKILL.md",
+    "git_blob_sha": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "native_execution": "NOT_REQUESTED_OR_PERFORMED"
+  }
+}
