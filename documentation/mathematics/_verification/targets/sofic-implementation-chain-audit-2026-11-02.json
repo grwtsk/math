@@ -152,7 +152,7 @@
     "Verified host restoration and exact immutable receipt binding"
   ],
   "verification": {
-    "publication": "PENDING_GUARDED_NONFORCE_READBACK",
+    "publication": "PASS_GUARDED_NONFORCE_MAIN",
     "git_blob_creation": "PASS",
     "direct_static_source_scan": "PASS_NO_EXPLICIT_SORRY_AXIOM_UNSAFE_IN_INSPECTED_MODULES",
     "lean_compilation": "NOT_RUN",
@@ -164,6 +164,17 @@
     "formal_acceptance": false,
     "label_preserving_map": "OPEN",
     "general_periodic_trace_equality": "FALSE_WITH_COUNTEREXAMPLES",
-    "issue_1576": "OPEN"
+    "issue_1576": "OPEN",
+    "exact_blob_readback": "PASS_4_OF_4"
+  },
+  "publication": {
+    "source_commit": "a89f740f8253f381dd70de3c608a73b64be6bb08",
+    "expected_parent": "81acec9e457c83fc99d5ff5770a28d3127a8e80b",
+    "source_matrix_blob": "70e416083e8fd1238ffdd8896f984e0a5382c139",
+    "source_fiber_blob": "becfa9cfddb8479c36a007c17d8be4d0d7defe05",
+    "review_blob": "13a59bbb2bf09816241eee867459cc8df331c741",
+    "initial_manifest_blob": "f0f0e650f9f691c3eedacef8f7f5430d45a0298d",
+    "git_verified_only": true,
+    "native_Lean_acceptance": false
   }
 }
