@@ -39,6 +39,8 @@ namespace GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance
 open GRWTSK.RiemannHypothesis.CCC
 open GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate
 open GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof
+open GRWTSK.NumberTheory.MoebiusEndpointLeastPrimeTypeII
+open GRWTSK.NumberTheory.Moebius.PickupEndpointQuadrature
 open GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn
 open Folder.Research.ShapePhysicalBitPairSampling
 open Folder.Research.ShapePhysicalBitRowConditioning
