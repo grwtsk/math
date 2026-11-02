@@ -154,3 +154,48 @@ the established classical local abelian duality theorem.
 Compilation NOT_RUN, fresh kernel replay NOT_RUN, transitive
 axiom audit NOT_RUN, Tau Ceti compatible integration NOT_RUN.
 No verification/CI/scheduler dispatch and no BSD-I/II claim.
+ 
+
+## Canonical H¹ Kummer transport and normalized Weil-cup boundary (2026-11-02)
+
+At pinned TauCetiProject/TauCeti `2bdb755239d3bd84760e99bc83166bdf7cc75a6b`
+(original Tau Ceti contributors, Apache-2.0, Lean v4.36.0-rc1)
+the amended isolated `TauCetiEllipticTorsionGalRepWeil.lean`
+now supplies the actual group/coefficient H¹ equivalences via
+`ContCohomology.explicitMap1Equiv` and
+`TopRep.explicitH1AddEquivContinuousCohomologyOfDiscrete`.
+The source ORIGINAL `W.kummerMap`, `W.kummerClassMap`,
+`W.torsionCoeffInclH1`, their source injection/surjection and
+`W.exact_kummerClassMap_torsionCoeffInclH1` are transported into the
+SAME `continuousCohomology 1 (ellipticTorsionGalRep W n)` used by
+local Tate duality. New named `ellipticNormalizedWeilCup` is the
+actual `ContinuousCohomology.coeffMap (ellipticWeilToTateDual)`
+followed by Tau Ceti's original evaluation cup and Brauer
+`h2MuEquivZMod` trace, with the original ordered arguments.
+
+`ellipticKummer_orthogonal_iff_of_localAbelianTate` is now
+source-typed on actual `H¹(F,E)[n]`, `E(F)/nE(F)`,
+the canonical Kummer image and normalized Weil cup. It
+derives exact annihilator membership under two DISTINCT
+arithmetic source obligations: an actual local abelian Tate
+pairing that separates `H¹(F,E)[n]`, and the signed
+Poincare/Kummer connecting-map adjunction (one fixed sign ±1).
+Neither obligation is claimed kernel-proved merely by finite
+Weil-module Tate perfectness. In particular the full
+local Weil–Châtelet H² residue still requires the original
+good-truncation separation in the derived tower.
+
+The separate pure GRWTSK algebra source
+`KummerExactTransport.lean` proves the exactness-preserving
+middle-carrier additive-equivalence transfer without any
+arithmetic assumptions beyond the source exact row; it
+does not silently import incompatible Tau Ceti modules.
+
+Full source identity, classical Milne ADT I §3 references,
+remaining two arithmetic suppliers and NOT_RUN facets are
+in `documentation/mathematics/_support/reviews/bsd-canonical-elliptic-kummer-h1-weil-cup-adjunction-2026-11-02.md`.
+Root pins/imports unchanged. Compilation NOT_RUN,
+fresh kernel replay NOT_RUN, axiom audit NOT_RUN,
+upstream compatible adapter NOT_RUN; no CI/runner/Noe job.
+No BSD rank, real height-regulator, or COMPLEX L-jet
+claim is made.

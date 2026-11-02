@@ -13,6 +13,8 @@ import TauCeti.NumberTheory.ClassFieldTheory.Local.Duality.Perfect
 import TauCeti.NumberTheory.ClassFieldTheory.Brauer.RootsOfUnity
 import TauCeti.Algebra.Module.ZMod.Dual
 import TauCeti.AlgebraicGeometry.EllipticCurve.Isogeny.MulByInt.Torsion.Structure
+import TauCeti.RepresentationTheory.Homological.ContCohomology.CohomologyComparison
+import TauCeti.RepresentationTheory.Homological.ContCohomology.ExplicitFunctoriality
 
 set_option autoImplicit false
 noncomputable section
@@ -42,7 +44,7 @@ statement or freely assigned regulator occurs in the construction.
 
 namespace GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.EllipticTorsionGalRepWeil
 
-open TauCeti TauCeti.ClassFieldTheory
+open TauCeti TauCeti.ClassFieldTheory TauCeti.ContCohomology
 open CategoryTheory
 
 variable {F : Type} [Field F] (W : WeierstrassCurve F) [W.IsElliptic]
@@ -300,6 +302,202 @@ theorem ellipticWeilTateDualAddEquiv_evaluation
           (W.torsionCoeffWeilPairing n hn a b) := by
   exact ellipticWeilToTateDual_apply W n hn a b
 
+/-! ## Exact ORIGINAL Kummer-H¹ bridge into canonical GalRep cohomology
+
+The source Kummer sequence lives on H¹ of Gal(Fsep/F) with
+W.TorsionCoeff n. The named local Tate pairing lives on
+continuousCohomology 1 of the ACTUAL GalRep n F.
+The canonical group/coefficient equivalences below identify
+these exact types; no abstract module may replace the source.
+-/
+
+section CanonicalKummerHOne
+
+attribute [local instance] TopRep.distribMulAction
+
+/-- Continuous action on exactly the canonical elliptic
+topological representation, using source smooth discreteness. -/
+instance ellipticGalRepContinuousAction :
+    ContinuousSMul (Field.absoluteGaloisGroup F)
+      (ellipticTorsionGalRep W n).V :=
+  (isSmoothDiscrete_iff_continuousSMul
+    (ellipticTorsionGalRep W n)).1
+      (ellipticTorsionGalRep_smooth W n)
+
+/-- Compare the REAL separable-closure H¹ with the H¹ carrier
+of the SAME elliptic GalRep over Field.absoluteGaloisGroup.
+This uses TauCeti's existing explicitMap1Equiv and source
+Galois action. -/
+noncomputable def ellipticExplicitHOneEquiv :
+    H1 (AbsoluteGaloisGroup F) (W.TorsionCoeff n) ≃+
+      H1 (Field.absoluteGaloisGroup F)
+        (ellipticTorsionGalRep W n).V := by
+  classical
+  refine ContCohomology.explicitMap1Equiv
+    (absoluteGaloisGroupRestrictEquiv F)
+    (AddEquiv.refl (W.TorsionCoeff n))
+    continuous_id continuous_id ?_
+  intro g a
+  change (absoluteGaloisGroupRestrictEquiv F g • a : W.TorsionCoeff n) =
+    (ellipticTorsionGalRep W n).ρ g a
+  exact (ellipticTorsionGalRep_action W n g a).symm
+
+/-- Canonical continuous degree-one Galois cohomology for the
+ACTUAL source E[n] representation. The second equivalence is
+TauCeti's original discrete-cochain-to-derived-H¹ comparison. -/
+noncomputable def ellipticCanonicalHOneEquiv :
+    H1 (AbsoluteGaloisGroup F) (W.TorsionCoeff n) ≃+
+      continuousCohomology 1 (ellipticTorsionGalRep W n) :=
+  (ellipticExplicitHOneEquiv W n).trans
+    ((ellipticTorsionGalRep W n).
+      explicitH1AddEquivContinuousCohomologyOfDiscrete)
+
+/-- Original E(F) Kummer map, transported into the SAME
+canonical cohomology object that local Tate duality consumes. -/
+noncomputable def ellipticCanonicalKummerMap (hn : IsUnit (n : F)) :
+    W.toAffine.Point →+
+      continuousCohomology 1 (ellipticTorsionGalRep W n) := by
+  classical
+  exact (ellipticCanonicalHOneEquiv W n).toAddMonoidHom.comp
+    (W.kummerMap n hn)
+
+/-- The original point quotient under [n] maps into canonical
+cohomology. Its domain is literally E(F)/nE(F). -/
+noncomputable def ellipticCanonicalKummerClassMap
+    (hn : IsUnit (n : F)) :
+    W.toAffine.Point ⧸
+      (nsmulAddMonoidHom (α := W.toAffine.Point) n).range →+
+        continuousCohomology 1 (ellipticTorsionGalRep W n) := by
+  classical
+  exact (ellipticCanonicalHOneEquiv W n).toAddMonoidHom.comp
+    (W.kummerClassMap n hn)
+
+/-- The canonical Kummer map is genuinely injective on the
+original point quotient, by the source Kummer exactness. -/
+theorem ellipticCanonicalKummerClassMap_injective
+    (hn : IsUnit (n : F)) :
+    Function.Injective (ellipticCanonicalKummerClassMap W n hn) := by
+  classical
+  exact (ellipticCanonicalHOneEquiv W n).injective.comp
+    (W.kummerClassMap_injective n hn)
+
+/-- The source image is now a subgroup in the canonical
+continuous H¹, not an invented abstract local condition. -/
+noncomputable def ellipticCanonicalKummerImage
+    (hn : IsUnit (n : F)) :
+    AddSubgroup (continuousCohomology 1 (ellipticTorsionGalRep W n)) :=
+  (ellipticCanonicalKummerMap W n hn).range
+
+/-- Membership uses a LITERAL original rational elliptic
+point and its transported source Kummer connecting class. -/
+theorem mem_ellipticCanonicalKummerImage_iff
+    (hn : IsUnit (n : F))
+    (x : continuousCohomology 1 (ellipticTorsionGalRep W n)) :
+    x ∈ ellipticCanonicalKummerImage W n hn ↔
+      ∃ P : W.toAffine.Point, ellipticCanonicalKummerMap W n hn P = x := by
+  constructor
+  · intro hx
+    exact hx
+  · intro hx
+    exact hx
+
+/-- The exact source H¹(E[n]) -> H¹(E)[n] map transported
+to the canonical continuous H¹. The codomain is the
+ORIGINAL Weil-Chatelet n-torsion, not a replacement model. -/
+noncomputable def ellipticCanonicalWeilChateletQuotient :
+    continuousCohomology 1 (ellipticTorsionGalRep W n) →+
+      AddSubgroup.torsionBy
+        (H1 (AbsoluteGaloisGroup F) W.PointCoeff) n :=
+  (W.torsionCoeffInclH1 n).comp
+    (ellipticCanonicalHOneEquiv W n).symm.toAddMonoidHom
+
+/-- The target of the real Kummer exact sequence is reached:
+surjectivity follows from the source's
+WeierstrassCurve.torsionCoeffInclH1_surjective. -/
+theorem ellipticCanonicalWeilChateletQuotient_surjective
+    (hn : IsUnit (n : F)) :
+    Function.Surjective
+      (ellipticCanonicalWeilChateletQuotient W n) := by
+  exact (W.torsionCoeffInclH1_surjective n hn).comp
+    (ellipticCanonicalHOneEquiv W n).symm.surjective
+
+/-- The source quotient Kummer map at a genuine rational point
+agrees exactly with the direct canonical Kummer map. -/
+theorem ellipticCanonicalKummerClassMap_mk
+    (hn : IsUnit (n : F)) (P : W.toAffine.Point) :
+    ellipticCanonicalKummerClassMap W n hn (QuotientAddGroup.mk P) =
+      ellipticCanonicalKummerMap W n hn P := by
+  classical
+  simp only [ellipticCanonicalKummerClassMap,
+    ellipticCanonicalKummerMap, AddMonoidHom.comp_apply,
+    W.kummerClassMap_mk]
+
+/-- The actual canonical Kummer image is exactly the image
+of the injective original E(F)/nE(F) Kummer map. -/
+theorem ellipticCanonicalKummerImage_eq_classMapRange
+    (hn : IsUnit (n : F)) :
+    ellipticCanonicalKummerImage W n hn =
+      (ellipticCanonicalKummerClassMap W n hn).range := by
+  classical
+  ext x
+  constructor
+  · rintro ⟨P, hP⟩
+    exact ⟨QuotientAddGroup.mk P,
+      (ellipticCanonicalKummerClassMap_mk W n hn P).trans hP⟩
+  · rintro ⟨q, hq⟩
+    obtain ⟨P, rfl⟩ := QuotientAddGroup.mk_surjective q
+    exact ⟨P, (ellipticCanonicalKummerClassMap_mk W n hn P).symm.trans hq⟩
+
+/-- The ACTUAL full Kummer short exact sequence in canonical
+GalRep continuous cohomology: the image of the real elliptic
+point-quotient map is the kernel of the genuine original
+H¹(F,E[n]) -> H¹(F,E)[n] coefficient comparison. -/
+theorem ellipticCanonicalKummerClassMap_range_eq_ker
+    (hn : IsUnit (n : F)) :
+    (ellipticCanonicalKummerClassMap W n hn).range =
+      (ellipticCanonicalWeilChateletQuotient W n).ker := by
+  classical
+  have hsource : (W.kummerClassMap n hn).range =
+      (W.torsionCoeffInclH1 n).ker :=
+    (AddMonoidHom.exact_iff).mp
+      (W.exact_kummerClassMap_torsionCoeffInclH1 n hn)
+  ext y
+  constructor
+  · rintro ⟨a, rfl⟩
+    change W.torsionCoeffInclH1 n
+      ((ellipticCanonicalHOneEquiv W n).symm
+        ((ellipticCanonicalHOneEquiv W n)
+          (W.kummerClassMap n hn a))) = 0
+    rw [AddEquiv.symm_apply_apply]
+    change W.kummerClassMap n hn a ∈ (W.torsionCoeffInclH1 n).ker
+    rw [← hsource]
+    exact ⟨a, rfl⟩
+  · intro hy
+    change W.torsionCoeffInclH1 n
+      ((ellipticCanonicalHOneEquiv W n).symm y) = 0 at hy
+    have hm : (ellipticCanonicalHOneEquiv W n).symm y ∈
+        (W.kummerClassMap n hn).range := by
+      rw [hsource]
+      exact hy
+    obtain ⟨a, ha⟩ := hm
+    refine ⟨a, ?_⟩
+    change (ellipticCanonicalHOneEquiv W n)
+      (W.kummerClassMap n hn a) = y
+    rw [ha, AddEquiv.apply_symm_apply]
+
+/-- Full exactness in the SAME canonical continuous H¹:
+the genuine Kummer image is the coefficient-kernel local condition.
+This is NOT YET the orthogonal annihilator comparison; that
+requires the Poincare/Kummer cup adjunction. -/
+theorem ellipticCanonicalKummerImage_eq_ker
+    (hn : IsUnit (n : F)) :
+    ellipticCanonicalKummerImage W n hn =
+      (ellipticCanonicalWeilChateletQuotient W n).ker := by
+  rw [ellipticCanonicalKummerImage_eq_classMapRange W n hn,
+    ellipticCanonicalKummerClassMap_range_eq_ker W n hn]
+
+end CanonicalKummerHOne
+
 /-! The local field theorem is an unconditional specialization
 of the EXISTING normalized local Tate duality supplier to this
 source-exact finite elliptic representation. It pairs A^dual and
@@ -333,5 +531,116 @@ theorem ellipticNormalizedLocalTatePerfect (hn : n ≠ 0)
   exact tateDualityPairing_perfect_mixed F n hn
     (ellipticTorsionGalRep W n) (ellipticNormalizedTrace W n hn)
     (by infer_instance) i j hij
+
+/-! ## The SOURCE-defined normalized (1,1) elliptic Weil cup
+
+In the same canonical H¹ category, transport x by the actual
+Weil coefficient morphism E[n] -> Hom(E[n],mu_n), then apply the
+original TauCeti Tate-duality pairing with its original Brauer
+normalized trace. This constructs the exact pairing to which
+the missing Kummer orthogonality comparison must refer.
+-/
+
+/-- This is the real cup/Weil/Brauer-normalized pairing on
+canonical H¹(F,E[n]), with original argument order (x,y).
+It is NOT an assumed perfect form or a chosen Gram matrix. -/
+noncomputable def ellipticNormalizedWeilCup
+    (hn : IsUnit (n : F))
+    (x y : continuousCohomology 1 (ellipticTorsionGalRep W n)) :
+    ZMod n :=
+  tateDualityPairing (ellipticTorsionGalRep W n)
+    (ellipticNormalizedTrace W n (NeZero.ne n))
+    1 1 (by omega)
+    (TauCeti.ContinuousCohomology.coeffMap
+      (ellipticWeilToTateDual W n hn) 1 x)
+    y
+
+/-- Exact finite Kummer-annihilator membership is equivalently
+vanishing against all ORIGINAL rational-point Kummer classes.
+No arithmetic vanishing or orthogonality is asserted here. -/
+theorem ellipticNormalizedWeilCup_annihilatesKummer_iff
+    (hn : IsUnit (n : F))
+    (x : continuousCohomology 1 (ellipticTorsionGalRep W n)) :
+    (∀ y, y ∈ ellipticCanonicalKummerImage W n hn →
+      ellipticNormalizedWeilCup W n hn x y = 0) ↔
+    (∀ P : W.toAffine.Point,
+      ellipticNormalizedWeilCup W n hn x
+        (ellipticCanonicalKummerMap W n hn P) = 0) := by
+  constructor
+  · intro h P
+    exact h _ ⟨P, rfl⟩
+  · intro h y hy
+    obtain ⟨P, hp⟩ := hy
+    rw [← hp]
+    exact h P
+
+/-! ## Local Kummer annihilator: EXACT source-typed arithmetic frontier
+
+The coefficient, canonical H¹, Kummer subgroup, quotient to the
+original n-torsion Weil-Chatelet H¹, and normalized Weil-cup pairing
+are all concrete source objects. The only external arithmetic
+suppliers remaining are:
+* the REAL local abelian Tate pairing on that actual Weil-Chatelet
+  n-torsion and the ORIGINAL point quotient; and
+* the Poincare/Kummer connecting-map cup adjunction with its ONE
+  source-fixed global sign (plus or minus).
+
+The following theorem proves the desired membership equivalence
+from precisely those supplier statements. Neither supplier is
+defined by the desired annihilator equality. They are separate
+nontrivial arithmetic proof obligations.
+-/
+
+/-- Fully SOURCE-TYPED local annihilator consequence.
+
+The `abelianTate` homomorphism is required on the ACTUAL
+Weil-Chatelet torsion and point quotient, not on a chosen vector
+space. The source must prove it separates the actual quotient
+and that the Kummer connecting-map/cup adjunction holds with
+one consistent sign `sign = 1` or `sign = -1`. This theorem
+is conditional until those two *arithmetic* proofs are supplied,
+and never asserts a completed elliptic local Tate duality. -/
+theorem ellipticKummer_orthogonal_iff_of_localAbelianTate
+    (hn : IsUnit (n : F))
+    (abelianTate :
+      AddSubgroup.torsionBy
+        (H1 (AbsoluteGaloisGroup F) W.PointCoeff) n →+
+      (W.toAffine.Point ⧸
+        (nsmulAddMonoidHom (α := W.toAffine.Point) n).range) →+ ZMod n)
+    (sign : ℤ) (hsign : sign = 1 ∨ sign = -1)
+    (hconnecting :
+      ∀ x : continuousCohomology 1 (ellipticTorsionGalRep W n),
+        ∀ P : W.toAffine.Point,
+          ellipticNormalizedWeilCup W n hn x
+            (ellipticCanonicalKummerMap W n hn P) =
+            sign • abelianTate
+              (ellipticCanonicalWeilChateletQuotient W n x)
+              (QuotientAddGroup.mk P))
+    (hseparating :
+      ∀ q : AddSubgroup.torsionBy
+          (H1 (AbsoluteGaloisGroup F) W.PointCoeff) n,
+        (∀ P : W.toAffine.Point,
+          abelianTate q (QuotientAddGroup.mk P) = 0) → q = 0)
+    (x : continuousCohomology 1 (ellipticTorsionGalRep W n)) :
+    x ∈ ellipticCanonicalKummerImage W n hn ↔
+      ∀ P : W.toAffine.Point,
+        ellipticNormalizedWeilCup W n hn x
+          (ellipticCanonicalKummerMap W n hn P) = 0 := by
+  rw [ellipticCanonicalKummerImage_eq_ker W n hn]
+  change ellipticCanonicalWeilChateletQuotient W n x = 0 ↔ _
+  constructor
+  · intro hx P
+    rw [hconnecting x P, hx]
+    simp
+  · intro hx
+    apply hseparating
+    intro P
+    have hp := hx P
+    rw [hconnecting x P] at hp
+    rcases hsign with hplus | hminus
+    · rw [hplus] at hp
+      simpa using hp
+    · rw [hminus] at hp
+      simpa using hp
 
 end GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.EllipticTorsionGalRepWeil
