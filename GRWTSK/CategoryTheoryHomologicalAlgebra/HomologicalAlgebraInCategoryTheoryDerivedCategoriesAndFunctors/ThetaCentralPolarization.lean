@@ -23,6 +23,12 @@ At fixed sigma,tau, write
  v = lift(b_sigma tau).
 
 For the sum cocycle use the REVERSED section y*x, not x*y,
+the canonical choice for the original Weil-cup argument order.
+The FORWARD source in ThetaCentralBoundaryPolarization.lean is not a
+contradictory sign claim: ThetaSectionOrderCoboundary.lean proves the
+central one-cochain c_sigma=[u_sigma,v_sigma] changes its raw boundary
+by the ordinary scalar two-coboundary. This does not substitute for
+the still-open original geometric commutator=Weil pairing identity.
 so the mixed commutator has the ordered Weil-cup arguments:
    [x,w] = x*w*x^-1*w^-1,
 corresponding geometrically to e(a_sigma,sigma b_tau)

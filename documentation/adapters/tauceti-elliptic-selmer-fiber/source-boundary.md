@@ -411,3 +411,74 @@ No native Noe/CI/scheduler job, new axiom/sorry/admit,
 toolchain change or root imports. Preserve full
 Weil–Chatelet H² residue, all H⁰ and good-truncation
 conditions, real p=2 and noncircular BSD-I/II frontier.
+
+
+## Theta sign-convention optimization and source-central commutators (2026-11-02)
+
+Two parallel original geometric theta source candidates are currently
+present in this adapter:
+`TauCetiOriginalGeometricTheta.lean` with
+`TauCetiOriginalGeometricThetaGalois.lean` (split, actual
+theta `Group` instance), and
+`TauCetiGeometricThetaKummerBoundary.lean` (self-contained
+theta/Kummer candidate). Both are pinned to ORIGINAL
+TauCetiProject/TauCeti `2bdb755239d3bd84760e99bc83166bdf7cc75a6b`,
+Lean v4.36.0-rc1, original Tau Ceti contributors/Apache-2.0.
+They share original source mathematics, and NEITHER is
+compiled or fresh-kernel accepted. Preserve both as
+reviewed candidates until actual source-bound verification;
+do not equate two scripts with two independent proofs.
+
+The split source `TauCetiOriginalGeometricTheta.lean`
+has been strengthened at blob
+`ca46ecb8ec53822df2abb094d99161b146d31c3a`:
+its original group-law projection now shows that every
+theta-group commutator projects to the identity elliptic
+n-torsion point. The pinned ORIGINAL divisor-constant
+theorem and the existing scalarLift-centrality then show
+the commutator is a genuine central constant function.
+This is the specific scalar-kernel hypothesis needed
+in both group-theoretic polarization candidates,
+without replacing the original Weil pairing by
+an abstract symplectic matrix.
+
+The new native Mathlib-only `ThetaSectionOrderCoboundary.lean`
+blob `ca27696f48789c448cfee282fc902141fcf791fa`
+proves the exact one-cochain
+`c_sigma=[u_sigma,v_sigma]` between the forward
+`u_sigma v_sigma` and reversed `v_sigma u_sigma`
+theta sum lifts. Their actual nonabelian boundaries
+differ by `c_sigma sigma(c_tau)c_(sigma*tau)^(-1)`,
+the original scalar two-coboundary once the source
+Galois action and continuity are supplied. It also
+proves invariance of a commutator under independent
+central rescaling of its theta lifts.
+
+Use **reversed** `v_sigma u_sigma` as the canonical
+consumer of the original ordered
+`e_n(a_sigma,sigma b_tau)` continuous cup.
+The older forward-order file stays as an explicit
+opposite-section consistency check, NOT a rival
+Weil-sign theorem. Full comparison and exact
+nontrivial-Galois finite Heisenberg diagnostics:
+`documentation/mathematics/_support/reviews/bsd-theta-section-order-optimization-2026-11-02.md`.
+
+This optimizes the section-algebra and scalar-choice
+frontier ONLY. A continuous original
+`Delta_n:H¹(F,E[n])→Br(F)[n]`, the genuine
+theta commutator = original Tau Ceti
+`W.torsionCoeffWeilPairing` (with source orientation),
+and full local Kummer-annihilator duality are still
+OPEN as source-typed Lean theorems. The root math
+toolchain v4.34.1, original level maps, signed
+differentials, full untruncated H² Weil–Châtelet
+residue, local good truncation, real p=2, derived
+Rlim and global Poitou–Tate remain unchanged.
+
+Parsing NOT_RUN; Lean compilation NOT_RUN; fresh
+kernel replay NOT_RUN; full transitive axiom
+audit NOT_RUN; isolated upstream adapter build
+NOT_RUN. No new axiom/sorry/admit, root imports,
+toolchain migration, native Noe/CI or automated
+proof acceptance. Git source publication/readback
+is separate evidence.
