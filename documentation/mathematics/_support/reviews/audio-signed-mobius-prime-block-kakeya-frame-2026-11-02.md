@@ -170,3 +170,47 @@ Current grwtsk/math source head inspected before publication: 649b290e1a42f727ce
 Pinned openai/math 4eaee87548250b2682affda7d05d947c05554bae, lean/OAI/MeasureTheory/Kakeya/{Definitions,Main}.lean. That is a source reference, not evidence of an imported upstream Lean dependency in grwtsk/math.
 
 Current local toolchain pins: Lean v4.34.1, Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612. Pinned Mathlib source Mathlib/Algebra/Order/Chebyshev.lean contains sq_sum_le_card_mul_sum_sq and confirms the finite Cauchy algebra entry point. Neither new nor old source has been compiled in the present conversation; Lean/Lake are unavailable. Fresh kernel and full transitive-axiom acceptance: NOT_RUN. The original all-positive-rate interblock bound and RH remain OPEN.
+
+
+## 8. Stronger fixed-before-rate reduction: an ALL-POSITIVE-RATE nearby rough-pair packet
+
+Keep the prime-bank sequence \(Q_j\) and its polynomial diagonal \(D_{Q_j}(T_j)\) fixed in Section 3. Choose the **exponent-independent** integer gap width
+\[
+H_j:=\lfloor 2^{\sqrt j}\rfloor,\qquad j\in\mathbb N,
+\]
+before choosing any \(\varepsilon\). Partition the exact ordered block pair sum according to \(0<|m-k|\le H_j\) ("near") or \(|m-k|>H_j\) ("far"):
+\[
+X_{Q_j}(T_j)=X^{\mathrm{near}}_j+X^{\mathrm{far}}_j.
+\]
+These two pieces retain the original signed coefficient \(\mu(m)\mu(k)\), entire responses \(B_{Q_j,m}\), both ordered orientations and all block sources; neither term is declared nonnegative.
+
+**Unconditional near-gap theorem (ordinary proof).** If \(A_m(u)=\mu(m)B_{Q_j,m}(u)\), then for any pair,
+\[
+2\left|\int_0^{T_j}A_m(u)A_k(u)\,du\right|
+\le\int_0^{T_j}(A_m(u)^2+A_k(u)^2)\,du
+\]
+by the elementary inequality \(2|ab|\le a^2+b^2\) and the triangle inequality for the integral. At any fixed m there are at most \(2H_j\) other integer labels k with \(0<|m-k|\le H_j\), even after the coprimality restriction. Summing over **both ordered orientations** therefore yields
+\[
+\boxed{|X^{\mathrm{near}}_j|\le2H_jD_{Q_j}(T_j)
+\le 4H_j(j+1)(j\log2)^2.}
+\]
+This is a genuine signed original-kernel packet bound. No positive-definiteness of a masked Gram matrix and no source-independent spectral cancellation is assumed.
+
+Since \(\log H_j=O(\sqrt j)\), for EVERY fixed \(\varepsilon>0\) this proven allowance satisfies
+\[
+|X^{\mathrm{near}}_j|=O_\varepsilon(2^{\varepsilon j}).
+\]
+Combining the earlier polynomial intrablock defect and quarter-unit source endpoint comparison gives the FULL exact one-sided transfer, with fixed \(Q_j,H_j\):
+\[
+\boxed{
+\left|E(T_j)-X^{\mathrm{far}}_j\right|
+\le\frac14+4H_j(j+1)(j\log2)^2+2j(j\log2)^2.
+}
+\]
+The right-hand side is \(O_\varepsilon(2^{\varepsilon j})\) at every positive \(\varepsilon\), with constants allowed to depend on \(\varepsilon\) but not j. Therefore the **original unchanged** all-positive-rate endpoint statement (P) is equivalent to the one-sided all-positive-rate statement for the **far rough-block interactions alone**:
+\[
+\boxed{\forall\varepsilon>0\ \exists C_\varepsilon\ge0\ \forall j\in\mathbb N:
+X^{\mathrm{far}}_j\le C_\varepsilon 2^{\varepsilon j}.}
+\]
+
+This improves the quantitative reduction from Section 3 by paying a superpolynomially widening **finite rough-index gap sector** at every positive rate with a **single fixed width schedule**, rather than selecting the schedule separately after \(\varepsilon\). It is an application of the same signed Young/neighbor-counting principle already present in the original-source Putnam-gap repository modules, now to the genuine prime-block response. It does **not** bound the far rough-index interactions, and therefore does not establish (P) or RH. No new signed-gain assertion about the upstream Kakeya maximal operator is made.
