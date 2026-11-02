@@ -1,0 +1,49 @@
+{
+  "schema": "grwtsk.math.source-verification-target/1",
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "attribution": "grwtsk contributors",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "historical_dependency_commit": "4d95ef99d3088e238471bd01c743fd4aa5e848be",
+  "target_module": "GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/LeanExprScopedNatKernelConsumer.lean",
+  "commit_and_blob": "bind after checked main publication, not a replay receipt",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_dependency": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_dependencies": [
+    "GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/LeanExprScopedNatLeTransClosure.lean",
+    "GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/LeanExprNatLeTransReification.lean",
+    "GRWTSK/Combinatorics/GraphTheory/CheckedApplicationSoficBridge.lean",
+    "GRWTSK/Combinatorics/GraphTheory/DefectEnrichedSoficLanguage.lean"
+  ],
+  "selected_declarations": [
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.Finite.emitted_scoped_nat_trans_123",
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.Finite.emitted_proof_and_certified_sofic_return"
+  ],
+  "required_facets": {
+    "source_tree_and_dependency_identity": "NOT_RUN",
+    "module_lean_compilation": "NOT_RUN",
+    "positive_meta_observer_execution": "NOT_RUN",
+    "negative_meta_observer_execution": "NOT_RUN",
+    "emitted_closed_proof_term_capture": "NOT_RUN",
+    "actual_emitted_proof_kernel_check": "NOT_RUN",
+    "independent_fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "expected_type_check": "NOT_RUN",
+    "managed_host_restoration": "NOT_RUN",
+    "Noe_runtime_refinement": "OPEN"
+  },
+  "negative_controls": [
+    "out_of_context_proof_variable",
+    "swapped_original_hypotheses",
+    "reused_same_proof_variable",
+    "different_theorem_head",
+    "wrong_nat_literal",
+    "extra_application_argument",
+    "metavariable_escape",
+    "Meta_inferType_without_isTypeCorrect_not_admitted",
+    "candidate_only_sofic_edge_not_certified"
+  ],
+  "required_axiom_policy": "reject sorryAx, additional project axioms, unsafe replacements and unaudited native proof shortcuts",
+  "native_execution_dispatched": false,
+  "proof_acceptance": false
+}
