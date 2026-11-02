@@ -1,0 +1,151 @@
+{
+  "schema": "math-source-proof-candidate-v1",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "direction": "grwtsk contributors; formalization assistance OpenAI",
+  "scope": "Original integer-labelled Möbius causal pickup; genuine shell-dependent PrimeBand; no source coefficient/response modifications",
+  "basis": {
+    "prior_main_commit": "727302c22f93ee941bc918e9f240be84fd548d4c",
+    "pinned_lean": "leanprover/lean4:v4.34.1",
+    "pinned_mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "mathlib_bertrand": {
+      "path": "Mathlib/NumberTheory/Bertrand.lean",
+      "blob_sha": "25029ababf90aa3d54a7b483c01bb6c0c4ddb9aa",
+      "theorem": "Nat.exists_prime_lt_and_le_two_mul"
+    },
+    "source_dependencies": [
+      {
+        "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothSquarefreeCutoff.lean",
+        "sha": "2b0525ed4dc9a6fc906b318dd9150a294a309201"
+      },
+      {
+        "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothEntireCorrection.lean",
+        "sha": "da003b21c837f999eda9a2f5c9f21ab498888bd1"
+      },
+      {
+        "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothDirectEnergy.lean",
+        "sha": "a8156c9b950db4800224c7a5112f5bc9d3ec15c1"
+      },
+      {
+        "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothScalarClosure.lean",
+        "sha": "f0a8417a66658a9d5e02689c36e656201e934a03"
+      },
+      {
+        "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothPhysicalEnergy.lean",
+        "sha": "cb1863e41ba9f830684b837d827f571e1df7f465"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothDensePairs.lean",
+        "sha": "cef7c06a794cec1cef423c2ebfa3b6d0221087ad"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothCofactorCountProof.lean",
+        "sha": "6899657e4ad54cf56fd7e907966d4d9bc2f7f3f8"
+      }
+    ]
+  },
+  "new_sources": [
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMScaleDependentPrimeBankWitness.lean",
+      "sha": "df1f78eb3750f5b5ab251acfc663d2f8ba4a9442"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMScaleDependentPrimeSparseEnergy.lean",
+      "sha": "d710dbb2fbd6f29d5a60db21666ce73742f21378"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMScaleDependentPrimeFullHigh.lean",
+      "sha": "68b7fa7a65e668c94b07e899a221942b21c5303c"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMScaleDependentPrimeDirichletBoundary.lean",
+      "sha": "dbe78a31c6da5703c316c947954801942e4dd507"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMScaleDependentPrimePhysicalEnergy.lean",
+      "sha": "0c7cb07ef79c9b002ff51a98b257788adc4b9186"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMScaleDependentPrimeAcceptance.lean",
+      "sha": "04ce450100730055fe026b1022b9e691420051ed"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/cm-scale-dependent-prime-bank-actual-source-2026-11-02.md",
+    "sha": "038d28fb9476110511403bbb5e7465ca644b525d"
+  },
+  "expected_declarations": [
+    "CMScaleDependentPrimeBankWitness.chosenPrime_prime",
+    "CMScaleDependentPrimeBankWitness.chosenPrime_gt",
+    "CMScaleDependentPrimeBankWitness.chosenPrime_le",
+    "CMScaleDependentPrimeBankWitness.chosenPrime_bankSmooth",
+    "CMScaleDependentPrimeBankWitness.sourceCutoff_lt_halfShell",
+    "CMScaleDependentPrimeBankWitness.chosenPrime_mem_original_highShell",
+    "CMScaleDependentPrimeBankWitness.chosenPrime_moebius",
+    "CMScaleDependentPrimeBankWitness.chosenPrime_injective",
+    "CMScaleDependentPrimeBankWitness.chosenPrime_infinite_range",
+    "CMScaleDependentPrimeSparseEnergy.sparsePrime_infinite",
+    "CMScaleDependentPrimeSparseEnergy.sparseSignedAtom_abs_le_geometric",
+    "CMScaleDependentPrimeSparseEnergy.sparsePrimeWave_abs_le_four",
+    "CMScaleDependentPrimeSparseEnergy.sparseLowWave_eq_original_filter",
+    "CMScaleDependentPrimeSparseEnergy.fullSparseLow_signed_square",
+    "CMScaleDependentPrimeSparseEnergy.original_even_sq_le_sparseLow",
+    "CMScaleDependentPrimeSparseEnergy.sparseLow_sq_le_original_even",
+    "CMScaleDependentPrimeFullHigh.movingHighWave_uniform",
+    "CMScaleDependentPrimeFullHigh.movingHighShell_disjoint",
+    "CMScaleDependentPrimeFullHigh.movingLowWave_eq_original_filter",
+    "CMScaleDependentPrimeFullHigh.movingFull_signed_square",
+    "CMScaleDependentPrimeDirichletBoundary.sparsePrime_mass_term_le",
+    "CMScaleDependentPrimeDirichletBoundary.sparsePrime_mass_term_ge",
+    "CMScaleDependentPrimeDirichletBoundary.sparsePrimeMass_le_geometric",
+    "CMScaleDependentPrimeDirichletBoundary.sparsePrimeMass_ge_geometric",
+    "CMScaleDependentPrimeDirichletBoundary.sparsePrimeMass_uniform",
+    "CMScaleDependentPrimeDirichletBoundary.SparsePrimeHalfplaneHolomorphy",
+    "CMScaleDependentPrimeDirichletBoundary.SparsePrimePositiveRadialResidue",
+    "CMScaleDependentPrimePhysicalEnergy.pickupEnergy_le_sparseLow_plus_linear",
+    "CMScaleDependentPrimePhysicalEnergy.sparseLowEnergy_le_pickup_plus_linear"
+  ],
+  "mathematical_conclusions": {
+    "genuine_witness": "For every s choose p_s prime in (2^s,2^(s+1)] by Bertrand; with B_s={p_s} the original highSmoothBlock B_s (2^s) T_(s+1) contains p_s with mu(p_s)=-1.",
+    "source_cutoff": "Q(2^(s+1))<2^s by elementary log/sqrt/exp inequality, not an arithmetic supplier.",
+    "infinite_nonzero_support": "p_s distinct for all s; high source has infinitely many nonzero original Mobius atoms.",
+    "even_sparsification": "Select p_(2s) in (4^s,2*4^s]; source signed high wave at any u and cutoff satisfies |H|<=4 absolutely from sum_geometric_two_le.",
+    "original_energy": "At true dyadic T_(2j), original energy <=2*exact sparseLOW energy+32*T and reverse; all mixed terms remain in exact source square.",
+    "full_moving_high": "Full actual B_s-highSmoothBlock, not only selected p_s, inherits a uniform envelope from existing singleton-bank count and scalar geometric closure; prior count remains source candidate.",
+    "dirichlet": "D(z)=-sum_s p_(2s)^(-z) holomorphic on Re z>0 by local uniform convergence. For real sigma>0 the magnitude is squeezed between 2^(-sigma)/(1-4^(-sigma)) and 1/(1-4^(-sigma)).",
+    "boundary": "sigma*(-D(sigma))->1/log4 as sigma downarrow0, so D is not entire; no meromorphic pole claim.",
+    "original_rh": "No RH or GRH proof; the complete signed LOW arithmetic growth remains open."
+  },
+  "verification": {
+    "publication": "BLOBS_STAGED",
+    "source_proof_candidates": true,
+    "lean_parse": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "import_closure": "NOT_RUN",
+    "native_dispatch": "NOT_REQUESTED_OR_PERFORMED",
+    "global_halfplane_holomorphy": "PAPER_DERIVED_LEAN_PROP_OPEN",
+    "radial_boundary": "PAPER_DERIVED_LEAN_PROP_OPEN",
+    "low_signed_all_rate": "ARITHMETIC_OPEN",
+    "RH": "NOT_CLAIMED"
+  },
+  "negative_controls": [
+    "Preserve actual prime-bank field prime_mem at every s",
+    "No source-free arbitrary selected high set: witness is shown inside original highSmoothBlock",
+    "Do not conflate full moving-bank highSmoothBlock with its one-prime subselector at small scales",
+    "Do not omit original n=1, squareful zero, odd/even, residue/winding, mixed signed energy",
+    "Even-shell witness selects only one nonzero original prime per chosen shell; LOW retains full density",
+    "Do not infer all-rate LOW cancellation or RH from absolutely bounded selected HIGH",
+    "Do not assert meromorphic continuation or a pole at z=0 from radial divergence alone",
+    "Do not reuse fixed-bank finite-support theorem after the bank changes with s",
+    "Do not mistake source publication or passive #check for kernel verification",
+    "Do not modify root imports, dependency pins, CI or Noe scheduler/native state"
+  ],
+  "automation_provenance": {
+    "canonical_skill": "grwtsk/noeaaeue/workflows/research/orchestration/skills/noe-proof-automation/SKILL.md",
+    "skill_sha": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "actual_native_verification": "NOT_RUN"
+  }
+}

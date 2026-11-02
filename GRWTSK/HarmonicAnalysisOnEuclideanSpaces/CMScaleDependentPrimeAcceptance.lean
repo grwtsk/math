@@ -1,0 +1,67 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+PASSIVE_ACCEPTANCE_TARGET / COMPILATION_NOT_RUN /
+EXPECTED_TYPES_NOT_RUN / FRESH_KERNEL_NOT_RUN /
+TRANSITIVE_AXIOM_AUDIT_NOT_RUN.
+-/
+import GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMScaleDependentPrimeFullHigh
+import GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMScaleDependentPrimeDirichletBoundary
+import GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMScaleDependentPrimePhysicalEnergy
+
+/-!
+# True changing-prime-bank original Möbius source acceptance
+
+These #check / #print axioms statements are passive source text, NOT
+evidence of execution. Pinned Lean v4.34.1 / Mathlib
+d13f23b723b8a846827a245b89c10fc7d3f11612.
+The original low-signed all-positive-rate arithmetic supplier stays OPEN.
+-/
+
+open GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMScaleDependentPrimeBankWitness
+open GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMScaleDependentPrimeSparseEnergy
+open GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMScaleDependentPrimeFullHigh
+open GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMScaleDependentPrimeDirichletBoundary
+open GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMScaleDependentPrimePhysicalEnergy
+
+#check chosenPrime_prime
+#check chosenPrime_gt
+#check chosenPrime_le
+#check chosenPrime_bankSmooth
+#check sourceCutoff_lt_halfShell
+#check chosenPrime_mem_original_highShell
+#check chosenPrime_moebius
+#check chosenPrime_injective
+#check chosenPrime_infinite_range
+#check sparsePrime_original_high
+#check sparsePrime_infinite
+#check sparseSignedAtom_abs_le_geometric
+#check sparsePrimeWave_abs_le_four
+#check sparsePrimeIndex_subset_indices
+#check sparseLowWave_eq_original_filter
+#check fullSparseLow_signed_square
+#check original_even_sq_le_sparseLow
+#check sparseLow_sq_le_original_even
+#check movingHighShell_contains_nonzero_prime
+#check movingHighShell_abs_le_referenceCost
+#check movingHighWave_uniform
+#check movingHighShell_disjoint
+#check movingLowWave_eq_original_filter
+#check movingFull_signed_square
+#check sparsePrime_mass_term_le
+#check sparsePrime_mass_term_ge
+#check sparsePrimeMass_ge_geometric
+#check sparsePrimeMass_le_geometric
+#check sparsePrimeMass_uniform
+#check SparsePrimeHalfplaneHolomorphy
+#check SparsePrimePositiveRadialResidue
+#check pickupEnergy_le_sparseLow_plus_linear
+#check sparseLowEnergy_le_pickup_plus_linear
+
+#print axioms chosenPrime_mem_original_highShell
+#print axioms chosenPrime_infinite_range
+#print axioms sparsePrimeWave_abs_le_four
+#print axioms sparseLowWave_eq_original_filter
+#print axioms movingHighWave_uniform
+#print axioms movingLowWave_eq_original_filter
+#print axioms sparsePrimeMass_uniform
+#print axioms pickupEnergy_le_sparseLow_plus_linear
+#print axioms sparseLowEnergy_le_pickup_plus_linear
