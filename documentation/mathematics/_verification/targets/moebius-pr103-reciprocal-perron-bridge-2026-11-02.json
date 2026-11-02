@@ -1,0 +1,136 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Factored reciprocal-zeta and truncated Perron bridge for the PR103 causal Mobius transfer",
+  "repository": "grwtsk/math",
+  "source_revision": "488c7372dac1737565d6a9f4585593f567abf4a4",
+  "publication": {
+    "pull_request": 1587,
+    "merge_commit": "488c7372dac1737565d6a9f4585593f567abf4a4",
+    "method": "guarded non-force merge preserving concurrent main history"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPR103ReciprocalPerronBridge.lean",
+    "git_blob": "1235f5b4b811dc93ba7a3b87c9ea73f3627f37d5",
+    "declarations": {
+      "definitions": 11,
+      "theorems": 14
+    }
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-pr103-reciprocal-perron-bridge-2026-11-02.md",
+    "git_blob": "1dec3262789279d544e68a6a73b354a34c58ef06"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/moebius-pr103-reciprocal-perron-bridge-references.md",
+    "git_blob": "e4b6b212f1dff1d078d2601939ef8a109c7abf1a"
+  },
+  "dependencies": {
+    "MoebiusPR103ModOneAdapter.lean": "050b4f77a7a22acf89268599cbee178f7748f198",
+    "MoebiusStrongFixedPowerCalculusClosure.lean": "c1ba0aabd513e6e2f3955d787ae1e3dbbf8d4ca7",
+    "MoebiusStrongFixedPowerPR103.lean": "10f2fba05c105c3e80b58ed9632901b5550444d9",
+    "MoebiusPR103ExactEnergyAbscissa.lean": "9a4ed819c1bb43e016f831d1f159fe1fd2a595eb",
+    "MertensPrimitive.lean": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "Mathlib/NumberTheory/LSeries/SumCoeff.lean": "13dd829fa36d658b96bb84a96f721b30c9ce6ecf"
+  },
+  "external_sources": {
+    "pr103": {
+      "repository": "GTimG/QuasiRiemannTracker",
+      "commit": "8b1a0167c8e324099884152181e3fb2206510e88",
+      "path": "submissions/2026-11-01-closest-fraction-contact/src/Candidate/Main.lean",
+      "git_blob": "808d04cec892449707d23e81f94179e2738fdf1a",
+      "theorem": "Candidate.bound",
+      "local_replay_status": "NOT_REPLAYED"
+    },
+    "openai_logarithmic_control": {
+      "repository": "openai/math",
+      "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+      "path": "lean/OAI/NumberTheory/DirichletL/LogarithmicControl.lean",
+      "git_blob": "dd75b86f7fa6ebf6b7bfa5c603dfda67e3e41373",
+      "theorem": "OAI.SevenEighths.LogarithmicControl.logarithmic_control",
+      "local_zeta_adapter_status": "NOT_FORMALIZED"
+    },
+    "openai_contour_sources": [
+      {
+        "path": "lean/OAI/NumberTheory/TwoPoint/ShortIntervals/MRTRieszContour.lean",
+        "git_blob": "57d112ed2485a88ca260bfff22d2374db69d540d"
+      },
+      {
+        "path": "lean/OAI/NumberTheory/DirichletL/Mellin/InverseContour.lean",
+        "git_blob": "7a3a90f5076faba3a309ca636fd37cff0e2926f1"
+      }
+    ]
+  },
+  "toolchain": {
+    "lean": "v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "theorem_candidates": [
+    "time_le_exp_div",
+    "one_add_time_le_exp",
+    "mertensThreeTermEnvelope_to_power",
+    "perron_parameter_bounds",
+    "zeroFreeToMertensPowerBridge_of_reciprocal_perron",
+    "perronPowerBalance_forces_weighted_gap",
+    "no_perronPowerBalance_of_weighted_gap",
+    "perronPowerBalance_of_subpower",
+    "fixedPolynomial_parameter_obstruction",
+    "fixedPolynomial_no_perron_balance",
+    "pr103_pickupEnergy_clean_rate_of_reciprocal_perron",
+    "pr103_endpointSum_clean_rate_of_reciprocal_perron",
+    "pr103_strongPacket_clean_rate_of_reciprocal_perron",
+    "pickupEnergyAbscissa_le_exactPR103_of_reciprocal_perron"
+  ],
+  "mathematical_scope": [
+    "separate the zero-free-to-reciprocal-subpower input from the source-specific truncated Perron rectangle",
+    "record the exact three Perron terms exp((sigma+eta)u), exp(eta u), and 1+u for the unchanged Mertens prefix",
+    "absorb those terms into the requested exponent theta with constant K*(3+1/theta)",
+    "choose a strict intermediate contour line and subpower exponent for every theta0<theta with theta>1/2",
+    "derive the existing complete ZeroFreeToMertensPowerBridge from the two explicit providers",
+    "prove that ordinary rectangular Perron with one fixed polynomial reciprocal exponent A cannot reach every theta arbitrarily close to theta0",
+    "prove that arbitrary positive subpower exponents close the exponent ledger with height exponent B=1",
+    "route the existing PR103 energy, endpoint, complete signed strong-packet and exact-abscissa consumers through the factored bridge"
+  ],
+  "obstruction": {
+    "id": "rh-fixed-polynomial-reciprocal-perron-insufficiency-v1",
+    "necessary_inequality": "A*(1-sigma) < theta-sigma",
+    "interpretation": "a fixed A>0 fails for an explicit theta arbitrarily above every theta0<1; an all-eta subpower reciprocal estimate or materially stronger smoothing is necessary for the plain rectangular route"
+  },
+  "remaining_visible_inputs": [
+    "ExternalPR103DirichletNonvanishing",
+    "ZetaZeroFreeToReciprocalSubpowerBridge",
+    "ReciprocalPerronThreeTermBridge"
+  ],
+  "open_obligations": [
+    "import or independently replay external Candidate.bound under the pinned local theorem types",
+    "instantiate OpenAI logarithmic_control for zeta by proving moving-disk polynomial outer growth and inner Euler-log control",
+    "formalize the Möbius reciprocal-zeta Dirichlet-series identity and the truncated Perron formula at a noninteger cutoff",
+    "formalize the complete rectangle shift and all vertical, horizontal, truncation and collar costs",
+    "compile and check the new bridge module and dependency closure",
+    "prove the all-positive-rate endpoint or source-equivalent complete signed packet estimate on one fixed AffineFrequent scale set",
+    "complete fresh-kernel and transitive source-bound axiom verification"
+  ],
+  "verification": {
+    "source_publication": "DONE",
+    "exact_blob_readback": "DONE",
+    "mathematical_scalar_derivation": "WRITTEN",
+    "lean_compilation": "NOT_RUN",
+    "expected_type_checks": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "external_pr103_replay": "NOT_RUN",
+    "zeta_reciprocal_subpower": "NOT_FORMALIZED",
+    "truncated_perron_rectangle": "NOT_FORMALIZED",
+    "all_positive_rate_endpoint_supplier": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "nonclaims": [
+    "the visible reciprocal and Perron providers are not new trusted declarations",
+    "the OpenAI generic theorem has not been adapted or replayed for zeta locally",
+    "no unsmoothed Perron formula is claimed without its error terms",
+    "the obstruction concerns one proof mechanism and is not a counterexample to a Mertens power estimate",
+    "a fixed positive PR103 boundary is not RH strength",
+    "source publication is not theorem acceptance"
+  ],
+  "passive": true
+}
