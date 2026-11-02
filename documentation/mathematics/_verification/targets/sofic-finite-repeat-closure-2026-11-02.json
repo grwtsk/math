@@ -143,8 +143,8 @@
   },
   "verification": {
     "git_blob_creation": "PASS",
-    "publication": "PENDING_NONFORCE_HEAD_READBACK",
-    "exact_source_blob_readback": "PENDING",
+    "publication": "PASS_GUARDED_NONFORCE_MAIN",
+    "exact_source_blob_readback": "PASS_3_OF_3",
     "source_static_scan": "NO_AUTHORED_SORRY_AXIOM_UNSAFE",
     "native_Lean_compilation": "NOT_RUN",
     "fresh_trust0_kernel_replay": "NOT_RUN",
@@ -162,5 +162,14 @@
     "Repair actual elaboration errors, and replay typed declarations at trust=0",
     "Audit all axioms transitively, including private/opaque/generated and expected-type/universe interfaces",
     "Treat faithful and complete n-cycle label lifts as independent mathematical hypotheses; no unconditional trace equality"
-  ]
+  ],
+  "publication": {
+    "published_commit": "cd4e8e28090e75c00d384eb7ca3ca42d226cea3b",
+    "guarded_expected_parent": "a40d05d9aa8575672f66811aa79a313631de386a",
+    "source_blob": "e8d8dcc01f4e9f067cb9041ad5e54f7dd79d0962",
+    "review_blob": "8f5abce0b73e1e8bb1f64a4f1b46d249feef3121",
+    "original_manifest_blob": "1432a71628c051cc8680648bf9ef7006c694571f",
+    "exact_readback": true,
+    "no_native_acceptance_implied": true
+  }
 }
