@@ -1,5 +1,7 @@
 # Elliptic point-corrected local Kummer fiber, global assembly, and derived p-power limit
 
+**CORRECTED MATHEMATICAL DISPOSITION (2026-11-01):** This historical review incorrectly asserted that the WHOLE point-corrected local cone is quasi-isomorphic to the two-term point complex and has no higher cohomology. In fact H^i(U)=H^(i-1)(F,E) for i>=2; in particular H2(U)=H1(F,E), the local Weil--Chatelet group. The appropriate two-degree local model is the canonical GOOD TRUNCATION tau_<=1 U. Its original H0, H1, Kummer image, and p-power transition statements remain valid. Consult `bsd-local-kummer-high-cohomology-good-truncation-2026-11-01.md` before using the derived-limit or duality claims. The historical source below is retained for provenance; its original full quasi-isomorphism and higher-vanishing sentences are NOT accepted.
+
 Local attribution: grwtsk contributors.
 Mathematical status: classical Kummer/cohomology exactness and cochain algebra; BSD-I/II OPEN. Formal status: isolated Lean SOURCE_PROOF_CANDIDATES, parsing NOT_RUN, compilation NOT_RUN, fresh kernel replay NOT_RUN, full axiom audit NOT_RUN. No external Tau Ceti imports were compiled.
 
