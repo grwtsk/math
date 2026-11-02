@@ -1,0 +1,323 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "mathematical_source_commit": "31ee5857fefeaf12170dd44d98740e53def87aed",
+  "title": "Every original finite graph trace with all admitted prefixes has a compatible infinite run; realized factors equal right-live finite paths; right-live iff bounded reachable source cycle",
+  "status": "SOURCE_PROOF_CANDIDATE_NOT_NATIVE_ACCEPTED",
+  "source_modules": [
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteTraceCompactness.lean",
+      "blob": "325cc0ae7185215e0d95285c97f4455a698e0f19",
+      "public_declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.FiniteTraceLift",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.finiteTraceLift_mono",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.finiteTraceLift_of_graph_prefix",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.finite_nested_state",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.viableTraceLift_successor",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.runsOnGraph_of_all_graph_prefixes",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.runsOnGraph_of_all_factors"
+      ]
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficRightLiveSubgraph.lean",
+      "blob": "df67b6f25982219c21f17baca6d93459da9edc14",
+      "public_declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.RightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLive_of_run_suffix",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLive_of_edge",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLive_of_wordPath",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.realized_of_wordPath_rightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.realized_iff_path_to_rightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLiveSubgraph",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLiveSubgraph_language_iff",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.realizedTopologicalFactorLanguage_eq_rightLiveGraphLanguage",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLiveSubgraph_has_outgoing",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.RightTotal",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLive_of_rightTotal",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.realized_eq_GraphLanguage_of_rightTotal"
+      ]
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBoundedLiveCycle.lean",
+      "blob": "ce777811509746bd9011c930f222a9122ddd739d",
+      "public_declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.HasBoundedReachableCycle",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.boundedReachableCycle_of_rightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.rightLive_of_boundedReachableCycle",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.rightLive_iff_boundedReachableCycle",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.rightLiveSubgraph_language_iff_boundedReachableCycle",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.realizedTopologicalFactorLanguage_iff_boundedCycleExtension",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.realizedLanguage_eq_graphLanguage_iff_everyWordCycleExtendable"
+      ]
+    }
+  ],
+  "publicly_exposed_existing_source_theorems": [
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicRunFullShift.lean",
+      "declaration": "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicRunFullShift.wordPath_of_run_block"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMultipleLift.lean",
+      "declaration": "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicMultipleLift.actual_walk_of_wordPath"
+    }
+  ],
+  "existing_source_module_changes": [
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicRunFullShift.lean",
+      "blob": "15dc50117f65d986436e54665d1edc8b8643f702",
+      "change": "Changed only private theorem to public theorem; original statement and proof body unchanged",
+      "native_checked": false
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMultipleLift.lean",
+      "blob": "d256c78caf1b45d8eb4aff4cf7cbccea42f9ff6b",
+      "change": "Changed only private theorem to public theorem; original statement and proof body unchanged",
+      "native_checked": false
+    }
+  ],
+  "selected_project_imports": [
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/DynamicPartitionRecovery.lean",
+      "blob": "5967730dc10d34ddcf1226ee1056594f012567d4"
+    },
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean",
+      "blob": "034dc65cc2fc5fc7a7ad439c6f110b6ccd7ad9c6"
+    },
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CertifiedTransversal.lean",
+      "blob": "df720cbb72c616938635c20477430f5f0ded4021"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/ExactSoficLanguageCover.lean",
+      "blob": "f50489eaf6c7277993a08925a58b7765f9e10ec9"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLanguageTransversal.lean",
+      "blob": "238da905b6595c944cac40f39ae2f54870032132"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean",
+      "blob": "044644b345b46c90d82dffde6c7485d617b4fbd9"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBasedCycleCard.lean",
+      "blob": "d7fd2f5aad643d4350e4b5bfd7128dd979717a74"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicFiberLedger.lean",
+      "blob": "becfa9cfddb8479c36a007c17d8be4d0d7defe05"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleLabelBijection.lean",
+      "blob": "bd1ba53939ed6f5a4e00d76be9d6d433d09f3d0b"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicRunFullShift.lean",
+      "blob": "15dc50117f65d986436e54665d1edc8b8643f702"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepetitionFromWalk.lean",
+      "blob": "00263005b2f46020c8f3a5434d8c6207eaa32622"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficExactPeriodicTraceLedger.lean",
+      "blob": "b3f5b7ce5e0b7eb0a4c1081dce166815824b6bac"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepeatBridge.lean",
+      "blob": "a05e7d4527b6e37d59a48288f1e58e1a3867ca56"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteRepeatClosure.lean",
+      "blob": "e8d8dcc01f4e9f067cb9041ad5e54f7dd79d0962"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicWordMatrix.lean",
+      "blob": "d8f0423d8b872e5045c779544bd39eb1bad7adfe"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficMacroBoundaryPigeonhole.lean",
+      "blob": "fde86d048d89bdb71cd52bb1de96ecaff27068dc"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficWordPowerClosedPath.lean",
+      "blob": "fc3842103f18ecd42aa1587d8bc9556d6144a3c2"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBoundedWordMatrixCriterion.lean",
+      "blob": "3be4fc0e7b953c22e14749b8ad933b0ab851de1b"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMultipleLift.lean",
+      "blob": "d256c78caf1b45d8eb4aff4cf7cbccea42f9ff6b"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficMatrixCertifiedTransversal.lean",
+      "blob": "6fe56e27333b99d3b6f1941639612e1dfac1692d"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicSourceIntegration.lean",
+      "blob": "21c602ba8f6b8f1611e2c90d45d9aed3e70f7454"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficWordMatrixDynamicProgram.lean",
+      "blob": "b2073a018d157f16ede91be900be94d2fecd6788"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficWordPowerClosureScan.lean",
+      "blob": "b1abfe560eed36ddeee1717d8fb4d8094bb7fc5e"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteSupportAutomaton.lean",
+      "blob": "22a4aacc0399bdea7e3086951f3c6a2fc2692f04"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficGraphRepresentationBridges.lean",
+      "blob": "dea290aac1ac6f5473c670f8b9c379d997cea6e0"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficRootedPrefixBoundary.lean",
+      "blob": "930c9d7dc0db96e5ace4a35489cec9db97e146b5"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/GraphTheory/SearchSoficLanguage.lean",
+      "blob": "0408948886533c87debacc0e537c3234469ae702"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/GraphTheory/GraphSandwichDiffusion.lean",
+      "blob": "be2a608b5037d4a4c448c7f332096af72588c00e"
+    },
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/RelationSandwich.lean",
+      "blob": "9761b5dd5d6ada7344031c07386586c72c1d970a"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/DynamicSoficSpectralCover.lean",
+      "blob": "8a145154af4cf6497a49720b1657078fbdcc3679"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/HeatFlowCompressionSofic.lean",
+      "blob": "7b3ab9dfd93c92e52fa34a9a6977bc491f437f29"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/DynamicSoficExactLanguageBoundary.lean",
+      "blob": "79680df7f55b03f16d765ae3bf1a1c2d3e15187c"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicStreamBridge.lean",
+      "blob": "9e35714bacb361360476a92f3fb5923839c1bbf1"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficShiftPeriodicPointBridge.lean",
+      "blob": "cdf129caaa474c65f9245f142d35fde2611117e2"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficTopologicalFactorSpace.lean",
+      "blob": "9e88f37655093ececbb9956dbd39ab8fe7db2878"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficTopologicalPeriodicReturn.lean",
+      "blob": "dc1c7915c91e89afa4e9f5e1287f2e0cdb5a0153"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficTopologicalLanguageBoundary.lean",
+      "blob": "516f991a66ff7f5f0599261b14f78fecf769e21a"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SymbolicDynamicsBasicPublic.lean",
+      "blob": "a5cecafff31a4cb24b5c9f20a3f2e91100e5d125"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteTraceCompactness.lean",
+      "blob": "325cc0ae7185215e0d95285c97f4455a698e0f19"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficRightLiveSubgraph.lean",
+      "blob": "df67b6f25982219c21f17baca6d93459da9edc14"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBoundedLiveCycle.lean",
+      "blob": "ce777811509746bd9011c930f222a9122ddd739d"
+    }
+  ],
+  "selected_project_count": 41,
+  "root_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "selected_managed_v3_profile": {
+    "path": "documentation/mathematics/_verification/targets/sofic-right-live-cycle-managed-profile-v3.json",
+    "blob": "d288d8b50d071ada3dba162382b9975c9020f822",
+    "contracts": 24,
+    "declarations": 154,
+    "source_pin": "31ee5857fefeaf12170dd44d98740e53def87aed",
+    "parser": "NOT_RUN",
+    "native_replay": "NOT_RUN"
+  },
+  "exact_mathematical_claims": [
+    "Finite state compactness: all actual initial prefix graph languages imply RunsOnGraph G trace, preserving every Nat-indexed label",
+    "RightLive G s exactly when some original labeled infinite graph-state run starts at s",
+    "Each realized topological factor has an original WordPath to a RightLive terminal state, and every such path extends to a topological subshift point",
+    "GraphLanguage of rightLiveSubgraph G equals realizedTopologicalFactorLanguage (GraphLanguage G), including the empty-word/empty-graph cases",
+    "RightLive G s iff original path to nonempty original closed WordPath exists with prefix.length+cycle.length <= Fintype.card State",
+    "RightTotal G sufficient for equality of original finite GraphLanguage with realized infinite-factor language",
+    "General equality iff each admitted source word has some original witness path ending at a bounded cycle-reachable state"
+  ],
+  "preserved_semantics": [
+    "Original LabeledGraph.edge, original WordPath and its complete word labels are unchanged",
+    "No chosen path may be replaced by a different accepted word, and path ending-state liveness remains explicit",
+    "RightLive is existential infinite continuation; bounded cycle certificate is a proved source-level equivalence, not a new research axiom",
+    "No trace/multiplicity counting equivalence or one-period graph-cycle bijection inferred",
+    "No RH/zeta/Moebius/spectral/PDE analytic return or quantitative cancellation asserted"
+  ],
+  "independent_finite_reference": {
+    "exhaustive_small_graphs": "all edge subsets on 0,1,2 states with two labels, word lengths 0..4",
+    "sampled_three_state_graphs": 100,
+    "graphs_tested": 361,
+    "graph_word_cases": 11191,
+    "original_finite_accepted": 8924,
+    "realized_right_live_factors": 8872,
+    "strict_finite_only_words": 52,
+    "comparison": "dead-end pruning right-live states, bounded path+cycle enumeration with total length <= number of states, original word endpoints",
+    "disagreements": 0,
+    "proof_strength": "FINITE_PYTHON_REFERENCE_ONLY_NOT_LEAN"
+  },
+  "producer_context": {
+    "noe_main_snapshot": "695d63e0b4f291e03f3189cad4e8050daa1ef690",
+    "proof_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "authorized_noe_checkout_available": false,
+    "local_lean_lake_available": false
+  },
+  "evidence": {
+    "immutable_source_published_and_blob_readback": "CONFIRMED",
+    "new_authored_source_static_sorry_axiom_scan": "NO_DECLARATIONS_FOUND_TEXT_ONLY",
+    "whole_project_upstream_import_closure": "NOT_RUN",
+    "native_Lean_compilation": "NOT_RUN",
+    "expected_types_universes": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "managed_noe_profile_parser": "NOT_RUN",
+    "managed_native_replay": "NOT_RUN",
+    "host_restoration": "NOT_RUN",
+    "proof_acceptance": false
+  },
+  "predecessor": {
+    "target_path": "documentation/mathematics/_verification/targets/sofic-topological-subshift-bridge-2026-11-02.json",
+    "target_sha": "362bbdd7b592f84b6af92b2a808efe852efa24a8",
+    "source_pin": "992fefb3d2f32b48d286e8f3f205faf065234a4c",
+    "preserved_historical_verification": true
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/sofic-right-live-cycle-and-realization-2026-11-02.md",
+    "blob": "9bee056ce34acf7bb24dd495bd2117d159f16a21"
+  },
+  "next": [
+    "Authorized Noe managed registry-v3 exact-source compilation and fresh kernel replay at this immutable source revision",
+    "Separate expected type/universe and transitive axiom audits for all directly and transitively imported declarations",
+    "Formalize a certified finite-state executable pruning/graph-cycle decision procedure if operational algorithmic evaluation is needed",
+    "Keep quantitative arithmetic/Moebius/RH and PDE source bounds separate pending actual proved source maps and analytic estimates"
+  ]
+}
