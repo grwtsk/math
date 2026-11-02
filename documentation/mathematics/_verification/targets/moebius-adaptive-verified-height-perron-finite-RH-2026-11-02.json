@@ -1,0 +1,143 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Adaptive right-edge finite-height Perron extends verified near-critical original Möbius and signed FAR ranges",
+  "repo": "grwtsk/math",
+  "source_kind": "ADDITIVE_LEAN_SOURCE_PROOF_CANDIDATES_WITH_ORDINARY_MATHEMATICAL_REVIEW",
+  "authorship": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
+  "pinned_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "new_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusAdaptiveVerifiedHeightPerron.lean",
+      "blob": "b623c5ac420ac6860ff29c4d2266dbf06c47818e",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusAdaptiveFiniteScaleRHReturn.lean",
+      "blob": "212c433cb8e7560f99d3fea75bed5d8b79d3650e",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-adaptive-finite-height-perron-rh-implication-2026-11-02.md",
+    "blob": "7e59a4d6a0971a5ffac399e2842f97517070ec7a"
+  },
+  "unchanged_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusReciprocalZetaPerronBridge.lean",
+      "blob": "69ae2587f1f6e30adec21b9d7dcf43eeffa2a499"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusReciprocalCriticalCompact.lean",
+      "blob": "312fc9341c57dc783acc914b5ed43bd2d3bf2152"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPerronLocalCriticalWindow.lean",
+      "blob": "d48a4182e582a228e140d445b5778b41791962b8"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarCompleteUpperTransfer.lean",
+      "blob": "11b3913a25626bbd4e1a593b50c31e82bac6abee"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSquareBridge.lean",
+      "blob": "be156509d9679a22b52b32d087f87d8449a047ef"
+    }
+  ],
+  "external_facts": {
+    "finite_zero_verification": "Platt–Trudgian 2021 rigorous interval arithmetic zeros through H0=3e12 lie on Re(s)=1/2, NOT global RH; NOT imported in Lean",
+    "scalar_perron": "Ordinary Perron scalar inversion/finite complex integration; MIT Tang–Chen 2019 p33 is an independent reference; full proof in companion review",
+    "zero_free_strip": "For every fixed delta>0, ZetaAsymptotics.riemannZeta₁ nonzero on closed [1/2+delta,2]×[-H0,H0]; C_delta finite by compactness, not numerically certified"
+  },
+  "real_math": {
+    "original_series": "1/zeta(s)=sum_(n>=1)mu(n)/n^s for Re(s)>1, same source Mertens(N), unchanged perronVertical and perronHorizontalCorrection",
+    "right_abscissa": "For N>=8, x=N+1/2 and L=log x>=2, c(x)=1+1/L in (1,3/2], x^c=e*x",
+    "finite_height": "H0=3*10^12 independent of x,N,delta",
+    "scalar_tail": "|1_(y>1)-I_(c,H)(y)|<=(2/pi)*y^c/(H*abs(log y)) for y>0, y!=1",
+    "reciprocal_log_series": "S_c(x)=sum_(n>=1) 1/[n^c abs(log(x/n))] <=64*log x for x=N+1/2>=e^2, c=1+1/log x; proved by three disjoint integer regions",
+    "adaptive_perron_error": "|M(N)-perronVertical(x,c(x),H0)|<=200*x*log x/H0 for EVERY N>=8",
+    "verified_contour": "Local contour from c(x) to sigma=1/2+delta valid for EVERY N (finite H0) because original Z1 has no zeros in that finite rectangle, for 0<delta<=1/4",
+    "nearcritical_hybrid_global_N": "|M(N)|<=C_delta/pi*x^(1/2+delta)*(1/(1/2+delta)+log H0)+(2*C_delta+200*log x)*x/H0 for N>=8",
+    "finite_cutoff": "X_delta=(H0/[1000*(1+log H0)])^(1/(1/2-delta)), 0<delta<=1/4",
+    "finite_absorption": "For x<=X_delta, second term <=(C_delta+1)*x^(1/2+delta)",
+    "nearcritical_finite_Mertens": "|M(N)|<=D_delta*(N+1/2)^(1/2+delta), 8<=N, N+1/2<=X_delta, D_delta=C_delta/pi*(1/(1/2+delta)+log H0)+C_delta+1",
+    "finite_original_causal_energy": "For 0<=T<=log(X_delta-1/2), original pickupEnergy(T)<=Dprime_delta^2/(2*delta^3)*exp(2delta*T), with Dprime_delta=2*D_delta+8; true pickupVelocity/wholePickup definitions, small integer prefixes paid",
+    "finite_original_signed_far": "For dyadic J with T_J<=log(X_delta-1/2), genuine original complete farReducedOrLongCross(B_J,empty,J)<=Cfar_delta*exp(2delta*T_J) uniformly for admissible bank families, once three independently elementary paid-packet estimates are consumed at 2delta",
+    "no_RH_claim": "Finite height H0 and cutoff X_delta mean no bound for unbounded dyadic J; full every-positive-rate FAR and RH OPEN"
+  },
+  "sample_cutoffs": [
+    {
+      "delta": 0.001,
+      "X_delta_approx": 11000000000000000,
+      "last_dyadic_J": 53
+    },
+    {
+      "delta": 0.01,
+      "X_delta_approx": 21600000000000000,
+      "last_dyadic_J": 54
+    },
+    {
+      "delta": 0.05,
+      "X_delta_approx": 612000000000000000,
+      "last_dyadic_J": 59
+    },
+    {
+      "delta": 0.1,
+      "X_delta_approx": 102000000000000000000,
+      "last_dyadic_J": 66
+    },
+    {
+      "delta": 0.25,
+      "X_delta_approx": 1.04e+32,
+      "last_dyadic_J": 106
+    }
+  ],
+  "explicit_unproved_lean_targets": [
+    "AdaptiveAbscissaAndCutoffTarget (elementary real-log/exponential cutoff arithmetic)",
+    "AdaptiveRightLineTruncationTarget (elementary source Perron tail/reciprocal-log infinite series)",
+    "AdaptiveFiniteHeightContourNormTarget (source local complex integral norm bounds)",
+    "AdaptiveFiniteCutoffAbsorptionTarget (elementary finite real cutoff inequality)",
+    "AdaptiveFiniteRangeMertensEnergyTarget (original source prefix-to-causal-energy finite interval)",
+    "AdaptiveObservationEndNonnegativeTarget (elementary cutoff positive)",
+    "PublishedFiniteHeightZetaZerosOnHalf (published external finite theorem; NOT imported into Lean)",
+    "FiniteHeightCompactReciprocalBoundTarget (standard compact complex minimum; unported Lean)",
+    "UniformCollarAllRateTarget, ShortRatioUniformAllRateTarget, ReducedCloseUniformAllRateTarget (previous elementary proper original packet targets)"
+  ],
+  "source_candidate_theorems": [
+    "AdaptiveVerifiedHeightPerron.adaptive_original_Mertens_exact_local_decomposition",
+    "AdaptiveVerifiedHeightPerron.adaptive_verified_height_nearcritical_Mertens",
+    "AdaptiveFiniteScaleRHReturn.complete_far_finite_scale_nearcritical_of_verified_height"
+  ],
+  "noncircularity": {
+    "no_global_zero_free_half_plane_assumed": true,
+    "no_smoothing_or_coeff_changes": true,
+    "no_signed_all_rate_FAR_premise": true,
+    "no_new_axioms": true,
+    "finite_Cdelta_not_numerically_certified": true,
+    "externally_verified_zero_height_not_lean_imported": true
+  },
+  "verification": {
+    "source_publication": "PENDING_GIT_READBACK",
+    "source_lean_compilation": "DEFERRED_PER_USER",
+    "parser": "NOT_RUN",
+    "expected_theorem_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_opaque_native_audit": "NOT_RUN",
+    "original_Mobius_kernel_modified": false,
+    "toolchain_or_root_imports_modified": false,
+    "native_CI_automation_dispatched": false,
+    "complete_far_every_positive_rate": "OPEN",
+    "canonical_RiemannHypothesis": "OPEN"
+  },
+  "citations": [
+    "https://doi.org/10.1112/blms.12460",
+    "https://math.mit.edu/research/highschool/primes/materials/2019/December/Chen-Tang-PrimeNumberTheorem.pdf"
+  ],
+  "tracking_issues": [
+    1556,
+    1429
+  ]
+}
