@@ -1,0 +1,202 @@
+{
+  "schema": "grwtsk.math.heat.local-causal-relations.v1",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "scope": "Direct inspection of arithmetic and pinned Mathlib sources; NOT exhaustive across repository or private caches",
+  "original_source": "CCC.wholePickup, pickupEnergy, pickupCross, pickupDiagonal, endpointSum",
+  "heat_source": "sourceHeatCoeff s n = mu(n)*exp(-s*(log n)^2), 0<=s, separate from physical time",
+  "nodes": [
+    {
+      "key": "original",
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+      "role": "Actual mu(n), causal response, signed Gram and energy"
+    },
+    {
+      "key": "finite_response",
+      "path": "GRWTSK/MeasureAndIntegration/FiniteResponseSum.lean",
+      "blob": "15402baec3be3c090a23f9ac1943124e16357dd0",
+      "role": "Source finite horizon and closed birth cutoff; pickup_log_le_iff_closed_cutoff"
+    },
+    {
+      "key": "sharp_population",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusQuantitativeMertensAbsoluteAbel.lean",
+      "blob": "b2fe063451f58ff9b892aa164d780bd20279192e",
+      "role": "Finite inverse-square-root sum; separate classical log-power Mertens input NOT consumed"
+    },
+    {
+      "key": "radius",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDecoderPositiveResponse.lean",
+      "blob": "35686a42c743827cad84898acd5e08f9e1fd6c37",
+      "role": "Positive source response radius, signed error and square integral bound"
+    },
+    {
+      "key": "heat_source",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianLogHeatSource.lean",
+      "blob": "e7443337b95b8491492acfa120809f6873f77ef1",
+      "role": "Real original-index log Gaussian heat wave, exact source-minus-heat error"
+    },
+    {
+      "key": "heat_schedule",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatVanishingSchedule.lean",
+      "blob": "47291584104530cfdf59475a50c494a821de44a9",
+      "role": "s(T)=exp(-2T) and real causal cutoff"
+    },
+    {
+      "key": "previous_absolute",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatAbsoluteEnergyStability.lean",
+      "blob": "eb3d30a9b103fe8a26e1f1448c6f9d8d44fd86cf",
+      "role": "Earlier 32*T^3*exp(-T), original diagonal heatCorrectedCross"
+    },
+    {
+      "key": "new_local",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatLocalCausalBounds.lean",
+      "blob": "d1a3c5de19b7f26bd3ae7322b56a65a23b663e4d",
+      "role": "NEW exact causal horizon restriction and active population wave energy"
+    },
+    {
+      "key": "new_integrated",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatIntegratedLocalStability.lean",
+      "blob": "8247bb7caa8943da3a587fbe5d0ff832c0605efa",
+      "role": "NEW physically integrated exp(u), sharp errors and six-way min source certificate"
+    },
+    {
+      "key": "endpoint",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean",
+      "blob": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+      "role": "Original endpoint < 1/4 curvature correction"
+    },
+    {
+      "key": "dyadic",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean",
+      "blob": "07dfdae4a60b05f5da55cc20882411c85444fa82",
+      "role": "Exact all-parity and nonunit residue energy = original energy"
+    },
+    {
+      "key": "portfolio",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUnifiedObservationPortfolio.lean",
+      "blob": "a376a6b30b66893aba7f2038e89b707f5f06ada5",
+      "role": "Old five-way source upper with every signed residual retained"
+    },
+    {
+      "key": "good_scales",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GoodScaleEnergyCriterion.lean",
+      "blob": "ca3ae4975b20cf796a167308a9e87546c6001c41",
+      "role": "Actual signed cross good scale AffineFrequent RH implication"
+    },
+    {
+      "key": "mathlib_exp",
+      "path": "Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean",
+      "repository": "leanprover-community/mathlib4",
+      "blob": "not_changing_import",
+      "role": "Pinned Mathlib intervalIntegral.integral_exp"
+    }
+  ],
+  "edges": [
+    {
+      "from": "finite_response",
+      "to": "new_local",
+      "classification": "EXACT_CAUSAL_INVENTORY",
+      "detail": "future original indices n>exp(u) have pickupResponse(n,u)=0"
+    },
+    {
+      "from": "heat_source",
+      "to": "new_local",
+      "classification": "EXACT_SOURCE_HEAT_WAVE",
+      "detail": "same original integer and heat s; no source compression"
+    },
+    {
+      "from": "sharp_population",
+      "to": "new_local",
+      "classification": "ACTIVE_WEIGHTED_ERROR_MASS",
+      "detail": "original inverse sqrt population at u not T"
+    },
+    {
+      "from": "radius",
+      "to": "new_local",
+      "classification": "BOUNDED_SIGNED_ERROR",
+      "detail": "error absolute <=positive radius, full signed source intact"
+    },
+    {
+      "from": "new_local",
+      "to": "new_integrated",
+      "classification": "POINTWISE_TO_INTERVAL",
+      "detail": "squared difference <=32*s*u²*exp(u), radius square <=16*s²*u⁴*exp(u)"
+    },
+    {
+      "from": "mathlib_exp",
+      "to": "new_integrated",
+      "classification": "EXACT_INTEGRATION",
+      "detail": "integral_0^T exp(u)=exp(T)-1"
+    },
+    {
+      "from": "heat_schedule",
+      "to": "new_integrated",
+      "classification": "EXPONENTIALLY_VANISHING_HEAT",
+      "detail": "s(T)=exp(-2T), |H-Hs|<=32*T²*exp(-T)<=64"
+    },
+    {
+      "from": "new_integrated",
+      "to": "previous_absolute",
+      "classification": "STRICTLY_SHARPER_BOUND",
+      "detail": "one fewer power of T in asymptotic envelope, not pointwise stronger for all T<1"
+    },
+    {
+      "from": "new_integrated",
+      "to": "endpoint",
+      "classification": "ONE_CURVATURE_PAYMENT",
+      "detail": "original endpoint <=one quarter unit after full original cross"
+    },
+    {
+      "from": "dyadic",
+      "to": "new_integrated",
+      "classification": "SOURCE_ENERGY_RETURN",
+      "detail": "full parity/nonunit signed dyadic energy same improved absolute heat comparison"
+    },
+    {
+      "from": "portfolio",
+      "to": "new_integrated",
+      "classification": "SIXTH_SOURCE_UPPER_BRANCH",
+      "detail": "min of previous five and original-diagonal heatCorrectedCross+bound"
+    },
+    {
+      "from": "good_scales",
+      "to": "new_integrated",
+      "classification": "CONDITIONAL_RH_ONLY",
+      "detail": "all-positive-rate six-way portfolio upper on one fixed AffineFrequent G remains unproved"
+    }
+  ],
+  "old_bounds": [
+    "32*T^3*exp(-T) absolute total energy",
+    "16*T^5*exp(-3T) positive radius energy",
+    "192 uniform total energy"
+  ],
+  "new_bounds": [
+    "|H(T)-H_s(T)|<=32*s*T²*(exp(T)-1), for all s,T>=0",
+    "B_s(T)<=16*s²*T^4*(exp(T)-1), for all s,T>=0",
+    "at s(T)=exp(-2T): |H-H_s|<=32*T²*exp(-T)<=64",
+    "at s(T)=exp(-2T): radiusEnergy<=16*T^4*exp(-3T)",
+    "original signed cross and endpoint inherit same absolute heat errors, original diagonal and 1/4 preserved"
+  ],
+  "unproved": [
+    "all-positive-rate signed heat/portfolio arithmetic bound on one fixed AffineFrequent G",
+    "actual Tao/Rodgers xi theta heat intertwiner",
+    "signed Gram contraction",
+    "Lean native compile/kernel/axiom checks"
+  ],
+  "trust": {
+    "lean": "v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "native_compile": "NOT_RUN",
+    "kernel": "NOT_RUN",
+    "axioms": "NOT_RUN",
+    "numeric": "PASS_96700_NONRIGOROUS_FINITE_ASSERTIONS"
+  },
+  "preflight": {
+    "file": "/mnt/data/moebius_heat_local_causal_preflight_20261102.py",
+    "sha256": "e08d26a490a1de3c5d14efbe762632646d19281200db56a933c9c67be9e1ff0b",
+    "result": "/mnt/data/moebius_heat_local_causal_preflight_20261102.json",
+    "result_sha256": "b5117813ecd9a55715732e6524601255a0fa3c7c7cc0ecc517cfcda5f89ee2d4",
+    "checks": 96700
+  }
+}
