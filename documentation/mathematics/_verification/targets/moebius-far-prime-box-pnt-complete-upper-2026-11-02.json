@@ -105,7 +105,7 @@
     "certification": "NONCERTIFYING_FLOATING_POINT_DIAGNOSTICS"
   },
   "verification": {
-    "publication": "PENDING_GIT_READBACK",
+    "publication": "PASS_FOUR_EXACT_GIT_BLOB_READBACK",
     "compilation": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
     "expected_type_elaboration": "NOT_RUN",
@@ -116,7 +116,11 @@
     "classical_quantitative_Mertens_import": "NOT_RUN",
     "external_7_8_full_import": "NOT_RUN",
     "full_far_all_positive_rate": "OPEN",
-    "RiemannHypothesis": "OPEN"
+    "RiemannHypothesis": "OPEN",
+    "source_code_paths": 2,
+    "review_and_target_paths": 2,
+    "all_source_and_pin_changes": "ADDITIVE_ONLY",
+    "source_level_assurance": "PROOF_CANDIDATE_UNCOMPILED"
   },
   "related_issues": [
     1556,
@@ -125,5 +129,7 @@
   "external_reading": [
     "https://dlmf.nist.gov/27.2",
     "https://www.fieldsinstitute.ca/talks/Explicit-Mertens-estimates"
-  ]
+  ],
+  "source_publication_commit": "6c306b01754738ca6bea6fa8d6874ce124d3fc26",
+  "source_publication_parent": "a14a7cdd6300fca79bf3a6e1b9cc0ddcc78faab9"
 }
