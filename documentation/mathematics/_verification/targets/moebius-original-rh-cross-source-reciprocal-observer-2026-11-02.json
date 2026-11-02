@@ -1,0 +1,137 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Connected original Möbius RH sources: true weighted-energy reciprocal and faithful-observer conditional zero excursions",
+  "repository": "grwtsk/math",
+  "attribution": "grwtsk contributors",
+  "research_tool_role": "OpenAI ChatGPT assisted repository discovery, original analytic exposition, Lean source candidates, finite hostile checks",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "inventory": {
+    "source_scan_commit": "1cdffe535e8fbd8d0cec79f2c56d6c8f87c38955",
+    "original_maintained_Moebius_source_count": 156,
+    "curated_source_node_count": 48,
+    "typed_relation_count": 44,
+    "typed_graph_path": "documentation/mathematics/_support/reviews/moebius-rh-original-source-typed-connectivity-2026-11-02.json",
+    "typed_graph_blob": "3938b4a2fb0d20cacb6a863b7372ea49ea157f11",
+    "scope": "Original signed pickup plus materially relevant representations; not proof census of historical docs"
+  },
+  "new_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalLaplaceReciprocalControl.lean",
+      "blob": "f6ab56462cc296b3994c400bfc9622d764c2ea12",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "theorem_candidates": [
+        "weighted_original_energy_Z1_ne_zero",
+        "weighted_original_energy_reciprocal_identity",
+        "weighted_original_energy_excludes_zeta_zero",
+        "weighted_original_energy_reciprocal_norm",
+        "all_weighted_original_energy_implies_zeta_right_half"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalObserverZeroTransport.lean",
+      "blob": "f4893de0ce5b7d81b976bd77247ec6f4e00c34b4",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "theorem_candidates": [
+        "hypothetical_zero_forces_observed_signed_cross_spikes",
+        "hypothetical_zero_forces_universal_coefficient_spikes",
+        "hypothetical_zero_forces_ideal_physical_bit_spikes",
+        "hypothetical_zero_forces_imperfect_physical_spikes"
+      ]
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-rh-source-connectivity-reciprocal-observer-2026-11-02.md",
+    "blob": "aeaf54943cc95458f58c627c3a3fe386c3e1c8ec"
+  },
+  "true_mathematical_compositions": {
+    "actual_weighted_energy": "W_sigma=int_0^∞ exp(-sigma*T)*wholePickup(T)^2dT, unchanged MertensPrimitive",
+    "original_laplace": "L_P(w)=1/[w*(w+1/2)*zeta(w+1/2)] on Re w>1/2; exact product w(w+1/2)Z1(w+1/2)L_P=w-1/2",
+    "conditional_reciprocal_identity": "If sigma>0 and W_sigma finite, R(s)=s*(s-1/2)*L_P(s-1/2) on Re s>(1+sigma)/2; R=(s-1)/Z1(s), includes R(1)=0",
+    "conditional_zero_free": "W_sigma finite implies zeta(s) !=0 for all s!=1 with Re s>(1+sigma)/2; no zero-free premise assumed",
+    "conditional_norm": "|R(s)|<=|s||s-1/2|*sqrt(W_sigma)/sqrt(2Re(s)-1-sigma) for Re s>(1+sigma)/2, polynomial in |Im s| (NOT all-epsilon subpower)",
+    "if_energy_all": "PickupWeightedEnergyAll implies ZetaZeroFreeRightOf(1/2); that hypothesis is RH-strength and NOT proved",
+    "source_observer_ledger": "pickupCross(T_J)=observed(J)+signedDefect(J) exactly; defect includes both mixed signed orientations and error-error",
+    "observer_spike": "At hypothetical genuine zeta zero rho with 1/2<beta<1, eta in (0,2beta-1), observer defect |D_J|<=C_eta exp(eta*T_J) implies for every real K a J>=1 with observed(J)>K exp(eta*T_J)",
+    "physical_bit_ideal": "encodedStream reproduces original pickupCross identically; no claim of physical experiment or independent arithmetic sign proof",
+    "physical_imperfect": "indexed physical stream requires complete signedReadoutDefect magnitude estimate before any observation-growth transfer",
+    "independent_hostile_examples": [
+      "global sign flip -mu has IDENTICAL quadratic original pickupCross, so observed Gram equality does not determine original signed coefficients",
+      "empty decoder observedCross=0, defect=entire pickupCross; exact ledger alone has no small error"
+    ],
+    "other_source_routes": [
+      "original terminal collar/short/reduced-close/FAR exact partition",
+      "L-family inverses require genuinely Hermitian conjugation, cannot import real mu bounds blindly",
+      "CM adaptive Fourier true signed finite source but moment/cross-error gates remain unproved",
+      "gauge and elliptic model return source with explicit unmatched/mixed terms",
+      "finite-height Perron does not deliver arbitrary-height RH input"
+    ]
+  },
+  "unproved_pinned_Lean_propositions": [
+    "OriginalLaplaceRightLineIdentityTarget",
+    "WeightedWholePickupLaplaceHolomorphyTarget",
+    "LaplaceProductIdentityTheoremTarget",
+    "WeightedOriginalLaplaceCauchyTarget (new, ordinary Cauchy estimate)",
+    "DyadicOriginalEnergyCeilingTarget (elementary monotone energy/bounded grid)",
+    "UniformCollarAllRateTarget, ShortRatioUniformAllRateTarget, ReducedCloseUniformAllRateTarget (old elementary packet estimates)",
+    "PolynomialEvenMoments, ExactCyclicToSignedTupleMoment, source adaptive-to-original error (alternate Fourier route)",
+    "RegularizedReciprocalSubpower / ZeroFreeReciprocalPerronBounds (not implied by polynomial reciprocal control)",
+    "FarOriginalEveryPositiveRateUpperTarget (RH-strength, OPEN)"
+  ],
+  "finite_hostile_check": {
+    "N": [
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "dyadic_J": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "original_signed_cross": [
+      -1.481237802999,
+      -3.618107158483,
+      -6.641582207577,
+      -10.548201120277,
+      -15.389850749714
+    ],
+    "coefficient_global_negation_same_values": true,
+    "empty_decoder_cross_all_zero": true,
+    "empty_decoder_signed_defect_equals_original_cross": true,
+    "scope": "noncertifying floating point direct original birth-gated Gram; symbolic quadratic identities independent"
+  },
+  "source_comparison": {
+    "primary_analytic_proof": "weighted original L2 Cauchy + original Laplace identity + entire Z1 identity theorem",
+    "distinct_alternative_route": "conditional reciprocal-zeta Perron zero-free→Mertens→energy (forward), not an independent proof of W_sigma",
+    "hostile_boundary": "polynomial reciprocal growth cannot discharge subpower Perron target; exact bit encoding or gauge transformation alone does not imply any all-rate bound",
+    "existing_library_claim": "No new literature-priority claim for classical Laplace and Cauchy"
+  },
+  "verification": {
+    "git_source_publication": "PENDING_GUARDED_NONFORCE_MAIN_READBACK",
+    "parser": "NOT_RUN",
+    "compilation": "DEFERRED_PER_USER",
+    "expected_theorem_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_opaque_native_audit": "NOT_RUN",
+    "external_source_verification": "EXACT_GITHUB_TREE_BLOB_METADATA_ONLY",
+    "authored_sorry_axiom_admit_unsafe_native": "STATIC_SCAN_ONLY",
+    "native_worker_CI_or_scheduler_dispatched": false,
+    "source_coefficients_or_gram_changed": false,
+    "root_import_or_dependency_pin_changed": false,
+    "all_positive_rate_original_FAR": "OPEN",
+    "RiemannHypothesis": "OPEN"
+  },
+  "tracking": [
+    1556,
+    1429
+  ],
+  "next_mathematical_obligation": "Prove a noncircular all-positive-rate complete signed original FAR bound, or equivalent original weighted energy convergence for every sigma>0; no representation identity or finite-height statement supplies it automatically."
+}
