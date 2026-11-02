@@ -931,3 +931,77 @@ axiom audit NOT_RUN. Static source readback
 is NOT mathematical kernel acceptance.
 No new `sorry`, `admit`, `axiom`, native Noe/CI
 dispatch, new toolchain or root import.
+
+
+## Correction: discrete theta topology, reuse the existing finite-orbit theorem, common open stabilizer (2026-11-02)
+
+A source audit found **five** mistaken topology declarations in the
+two previously published finite-orbit adapters:
+four `TopologicalSpace := ⊥` in
+`TauCetiThetaSelectedLiftContinuity.lean` (historical
+blob `660f1f8c0564b98ae4474c204f28ac64a1a4a9b2`),
+and one `TopologicalSpace := ⊥` in the concurrent
+`TauCetiThetaFunctionFieldOrbitContinuous.lean` (historical
+blob `6899d111f7bcb86ad2756b316d29214704fa230d`).
+**These were mathematically invalid discrete-topology
+claims:** in Lean, `⊥` is the indiscrete topology and
+`⊤` is discrete. This was not a verified compiler
+result: all previous source files remained uncompiled.
+
+The corrected source blobs are respectively
+`34fb80d3c6efc400c5878a72620ffce138d1c965`
+and `b4cea5bac589bd9a46d926515c0281779c896db0`.
+All five formerly incorrect local topologies are
+now `⊤`; the ORIGINAL Galois Krull topology
+has NOT been changed.
+
+The existing genuine finite-coefficient proof,
+`TauCetiThetaFunctionFieldOrbitContinuous.lean`,
+was reused and strengthened rather than publishing
+a competing duplicate. Its original Tau Ceti
+`IsIntegral.isLocallyConstant_apply`, original
+polynomial finite-support/`RatFunc.num_mapRingHom`/
+`denom_mapRingHom`, original elliptic
+`W.functionFieldGaloisAction_basis_repr`
+on `{1,y}`, and original units Galois action
+are retained. The new
+`originalSelectedThetaFunctions_commonOpenStabilizer`
+intersects the genuine OPEN Krull stabilizers
+of ALL original finite `W.TorsionCoeff n`
+selected theta-function units. It is a
+common-open-fixing-set theorem, not an
+invented finite field, artificial theta
+representation or chosen Brauer scalar.
+
+The existing `TauCetiThetaFiniteOrbitTopology.lean`
+is the isolated compatible pure-topology
+consumer and does not change the math root.
+The corrected selected-lift adapter continues
+to use `originalThetaScalar_continuous_of_functionOrbits`
+to construct the original `UnitsCoeff F`
+continuous theta cocycle, with original
+Brauer n-torsion, geometric theta-commutator
+equals Weil pairing, Galois H¹ representative
+independence and local abelian Tate
+separation still distinct OPEN arithmetic
+proof obligations.
+
+Original upstream pin
+`TauCetiProject/TauCeti@2bdb755239d3bd84760e99bc83166bdf7cc75a6b`
+(Lean v4.36.0-rc1, original contributors,
+Apache-2.0) remains unchanged from the
+native grwtsk/math Lean v4.34.1 root.
+The updated historical reviews are
+`bsd-theta-finite-selected-lift-continuity-2026-11-02.md`
+and `bsd-theta-function-field-galois-orbits-2026-11-02.md`.
+No duplicate orbit module is installed.
+
+**Verification:** all source claims remain
+SOURCE_PROOF_CANDIDATE. Parsing NOT_RUN;
+compatible upstream Lean compilation NOT_RUN;
+fresh kernel replay NOT_RUN; transitive
+axiom audit NOT_RUN. No new `sorry/axiom/admit`,
+no root imports/toolchain migration and no
+native Noe/CI dispatch. The higher local
+Weil–Châtelet H² residue, real p=2
+and all derived Selmer/BSD gates are preserved.

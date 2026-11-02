@@ -1,3 +1,5 @@
+> **2026-11-02 correction of historical topology and source status:** The historical `TauCetiThetaSelectedLiftContinuity.lean` blob `660f1f8c0564b98ae4474c204f28ac64a1a4a9b2` assigned `TopologicalSpace := ⊥` in FOUR places and then claimed `DiscreteTopology`. Lean's `⊥` topology is indiscrete; the discrete topology is `⊤`. The corrected candidate is blob `34fb80d3c6efc400c5878a72620ffce138d1c965`. A concurrent, source-identical finite coefficient proof in `TauCetiThetaFunctionFieldOrbitContinuous.lean` (historical blob `6899d111f7bcb86ad2756b316d29214704fa230d`) had ONE matching `⊥` error. It is repaired at blob `b4cea5bac589bd9a46d926515c0281779c896db0`, together with a common-open-stabilizer theorem for all selected genuine `E[n]` theta functions. These correct existing source files rather than publishing duplicate orbit proofs. **Both remain UNCOMPILED;** the historical text below is not Lean acceptance.
+
 # Theta obstruction: finite selected-lift continuity and original Brauer H² return
 
 **Date:** 2026-11-02 (America/Los_Angeles).

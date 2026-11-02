@@ -17,6 +17,10 @@ noncomputable section
 /-!
 # Actual elliptic function-field Galois orbits are locally constant
 
+The earlier revision incorrectly declared an indiscrete (⊥) units
+topology while claiming DiscreteTopology. The correct discrete
+TopologicalSpace is (⊤); this revision fixes that defect.
+
 This discharges the genuine original *arithmetic* finite-descent
 premise that the prior theta/Brauer H² adapter retained:
     SelectedThetaFunctionOrbitsContinuous W n.
@@ -224,11 +228,50 @@ theorem originalSelectedThetaFunctionOrbitsContinuous :
     SelectedThetaFunctionOrbitsContinuous W n := by
   classical
   intro t
-  letI : TopologicalSpace (E W).FunctionFieldˣ := ⊥
+  letI : TopologicalSpace (E W).FunctionFieldˣ := ⊤
   haveI : DiscreteTopology (E W).FunctionFieldˣ := ⟨rfl⟩
   exact (originalFunctionFieldUnitsOrbit_isLocallyConstant W
       (GRWTSK.ArithmeticGeometry.EllipticCurves.OriginalGeometricThetaGalois.geometricLift
         W n t).function).continuous
+
+/-- ONE common OPEN Krull fixing set for all selected
+ORIGINAL theta-function units. The genuine E[n] coefficient
+group is finite (source `finite_torsionCoeff`), so finitely
+many individual open unit stabilizers can be intersected.
+This is a finite Galois descent input on the actual
+elliptic functions, not a selected Brauer regulator. -/
+theorem originalSelectedThetaFunctions_commonOpenStabilizer :
+    IsOpen {σ : G (F := F) |
+      ∀ t : W.TorsionCoeff n,
+        Units.map
+          (MonoidHom.ofClass (W.functionFieldGaloisAction σ))
+          (GRWTSK.ArithmeticGeometry.EllipticCurves.OriginalGeometricThetaGalois.geometricLift
+            W n t).function =
+          (GRWTSK.ArithmeticGeometry.EllipticCurves.OriginalGeometricThetaGalois.geometricLift
+            W n t).function} := by
+  classical
+  have hs (t : W.TorsionCoeff n) :
+      IsOpen {σ : G (F := F) |
+        Units.map
+          (MonoidHom.ofClass (W.functionFieldGaloisAction σ))
+          (GRWTSK.ArithmeticGeometry.EllipticCurves.OriginalGeometricThetaGalois.geometricLift
+            W n t).function =
+          (GRWTSK.ArithmeticGeometry.EllipticCurves.OriginalGeometricThetaGalois.geometricLift
+            W n t).function} :=
+    (originalFunctionFieldUnitsOrbit_isLocallyConstant W
+      (GRWTSK.ArithmeticGeometry.EllipticCurves.OriginalGeometricThetaGalois.geometricLift
+        W n t).function).isOpen_fiber _
+  have hall :
+      IsOpen (⋂ t : W.TorsionCoeff n,
+        {σ : G (F := F) |
+          Units.map
+            (MonoidHom.ofClass (W.functionFieldGaloisAction σ))
+            (GRWTSK.ArithmeticGeometry.EllipticCurves.OriginalGeometricThetaGalois.geometricLift
+              W n t).function =
+            (GRWTSK.ArithmeticGeometry.EllipticCurves.OriginalGeometricThetaGalois.geometricLift
+              W n t).function}) :=
+    isOpen_iInter_of_finite hs
+  simpa only [Set.mem_iInter, Set.mem_setOf_eq] using hall
 
 /-- The actual theta scalar 2-cochain is now
 unconditionally CONTINUOUS for every original
