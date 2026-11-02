@@ -80,8 +80,8 @@
   },
   "verification": {
     "Git_blob_creation": "PASS",
-    "Git_publication": "PENDING_GUARDED_NONFORCE_READBACK",
-    "exact_blob_readback": "PENDING",
+    "Git_publication": "PASS_GUARDED_NONFORCE_MAIN",
+    "exact_blob_readback": "PASS_4_OF_4",
     "static_no_authored_sorry_axiom_unsafe": "PASS",
     "native_lean_compilation": "NOT_RUN",
     "expected_types_universes": "NOT_RUN",
@@ -99,5 +99,17 @@
     "Fresh expected-interface, trust=0 kernel and transitive axiom closure check for source-return and mixed-defect declarations.",
     "Adapt geometric/Kakeya ports to consume UniversalInput explicitly and prove exact signed return for any chosen source; do not assume arbitrary source energy bounds.",
     "Retain Möbius source instantiation in RH-facing endpoint proof and obtain the new all-positive-rate original arithmetic estimate separately."
-  ]
+  ],
+  "publication": {
+    "commit": "101881831b31daa9a219c311bbf88bfa9a26cce3",
+    "parent": "2f1f871c4553f387348e4380f0c607fd644acfcf",
+    "source_blobs": [
+      "639bd1f0954197c8b53510c38c8f54f61e29cd90",
+      "8f807513c6a5cbf264750717327ed319f926ed44"
+    ],
+    "review_blob": "62f8a341f00e803630fdccf750ddb48ccc5c048b",
+    "initial_manifest_blob": "38de30c0703476b587a0c8f8e0246321d906d3d1",
+    "nonforce_expected_head_guard": true,
+    "no_native_acceptance_inferred": true
+  }
 }
