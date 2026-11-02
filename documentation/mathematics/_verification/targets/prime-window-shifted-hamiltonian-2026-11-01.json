@@ -1,0 +1,117 @@
+{
+  "schema": "grwtsk.math.source-verification.v1",
+  "local_attribution": "grwtsk contributors",
+  "date": "2026-11-01",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "publication": {
+    "expected_parent": "d8d944a47f791921862b79013741a30ee1bb820a",
+    "source_commit": "8606c0b0968110305958583c9937ed1e9c35ddc9",
+    "expected_target_parent": "8606c0b0968110305958583c9937ed1e9c35ddc9"
+  },
+  "source": {
+    "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonPrimeWindowShiftedHamiltonian.lean",
+    "blob": "b7fb4b253b8da07d623527bb9e94061a459326c4",
+    "sha256": "e0f5c350ed05fce11f139ed869192038e615985a148aff0e28404d4d3a3ef39e"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/prime-window-shifted-hamiltonian-2026-11-01.md",
+    "blob": "c8fcc8495d6b552331f9b0b3262bfff0b6e2e899"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/prime-window-shifted-hamiltonian-references.md",
+    "blob": "f3b321412d189ce41c6d50fbde140e5aa8697092"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PadicMobiusPrimeWindowSeam.lean",
+      "blob": "027d24046d0563be5cd66e01d7ecf3235d99f801",
+      "role": "literal prime window and exact Mobius-log source"
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonFullRegulatedHamiltonian.lean",
+      "blob": "43d4ed8e91389220ea69725e4a090fae987b2619",
+      "role": "actual maximal logarithmic domain, graph self-adjoint Hamiltonian, vacuum and excitation bound"
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonPrimeWindowResidueHamiltonian.lean",
+      "blob": "048cc85947aebd00d17ff4f9f56c10ded49048d5",
+      "role": "prime-window supplier, singleton log identity, positivity, injectivity and explicit transcendence field"
+    }
+  ],
+  "principal_declarations": [
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonian",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonian_apply",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonianForm",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonianForm_eq",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonianForm_unit",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonianForm_injective_of_unit",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.vacuumDomain",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonian_vacuum",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonianForm_vacuum",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonianForm_vacuum_transcendental",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonianForm_vacuum_injective",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonian_eigen",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonianForm_centered",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonianForm_nonnegative",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shiftedHamiltonianForm_pos_of_ne",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shifted_excitation_lower_bound",
+    "GRWTSK.Geometry.GaugeTheory.WilsonPrimeWindowShiftedHamiltonian.shifted_selfAdjoint_graph"
+  ],
+  "mathematical_result": {
+    "source_value": "s_r=pntWindow(p_r-1,1)=log(p_r)",
+    "operator": "H_r=H+s_r I on the unchanged maximal logarithmic domain",
+    "form": "q_(H_r)(x)=q_H(x)+s_r*||x||^2",
+    "unit_energy": "unit-state energies are translated by s_r",
+    "vacuum": "H_r Omega=s_r Omega and q_(H_r)(Omega)=s_r",
+    "residue_recovery": "distinct residues have distinct positive transcendental vacuum energies",
+    "spectrum": "every eigenvalue E is translated to E+s_r",
+    "centered_form": "q_(H_r)(x)-s_r||x||^2=q_H(x)",
+    "gap": "the existing excitation lower bound is translated by s_r while the vacuum-relative gap is unchanged",
+    "self_adjointness": "the exact graph self-adjointness characterization is preserved under the real scalar identity shift"
+  },
+  "nonclaims": [
+    "The source does not construct the transcendence theorem internally; it consumes the explicit PrimeWindowSupplier field.",
+    "No direct-sum or superselection Hamiltonian containing all residues simultaneously is constructed.",
+    "No plaquette-residue energy is identified with the arithmetic prime-window offset.",
+    "No Osterwalder--Schrader reconstruction, continuum limit, infinite-volume limit or regulator-uniform physical mass gap is proved.",
+    "No Liouville/Mobius cancellation estimate, endpoint supplier or Riemann Hypothesis conclusion is proved.",
+    "Source publication does not establish Lean elaboration or kernel acceptance."
+  ],
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "exact_blob_readback": "DONE",
+    "lexical_scan": "PASS_NO_sorry_admit_axiom_native_decide",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN"
+  },
+  "mathematical_status": {
+    "additive_prime_window_hamiltonian": "SOURCE_PROOF_CANDIDATE",
+    "vacuum_residue_recovery": "SOURCE_PROOF_CANDIDATE",
+    "shifted_graph_self_adjointness": "SOURCE_PROOF_CANDIDATE",
+    "transcendence_supplier_construction": "UNPROVED_INTERNALLY",
+    "residue_graded_direct_sum_hamiltonian": "UNPROVED",
+    "continuum_physical_mass_gap": "UNPROVED",
+    "endpoint_arithmetic_supplier": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "next_supplier": "Construct a finite residue-graded Hilbert direct sum with block Hamiltonian directSum_r(H+log(p_r)I), prove its spectrum is the union of translated block spectra and its vacuum-energy readout is injective, or internalize the log-prime transcendence theorem without weakening the current source.",
+  "issue_refs": [1554, 1548],
+  "rejection_conditions": [
+    "treating homogeneous state rescaling as a spectral shift",
+    "claiming that an additive scalar offset enlarges the vacuum-relative excitation gap",
+    "hiding log-prime transcendence inside an unrestricted remainder or axiom",
+    "identifying arithmetic residues with Wilson plaquette residues without a source map",
+    "promoting source publication to Lean or kernel acceptance",
+    "claiming a physical mass gap or RH from this finite-regulator spectral translation"
+  ]
+}
