@@ -1,0 +1,54 @@
+{
+  "schema": "grwtsk.moebius-smooth-birth-dense-single-budget/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "base_observed_main": "d4f580edbc9d5e906689809bba960a71e234c967",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "new_source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSmoothBirthDenseSingleBudget.lean",
+    "status": "SOURCE_PROOF_CANDIDATE"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-smooth-birth-dense-single-unsigned-budget-2026-11-01.md"
+  },
+  "expected_declarations": [
+    "offDiagonal_sub_gap_eq_complement",
+    "signedComplementDefect",
+    "unsignedFullDefect",
+    "abs_signedComplementDefect_le_unsigned",
+    "moebiusReal_abs_le_one",
+    "original_dense_eq_complement",
+    "smooth_dense_eq_complement",
+    "dense_difference_eq_complement_defect",
+    "dense_difference_abs_le_unsigned",
+    "denseLongGapAllRateOn_iff_smooth_single_budget"
+  ],
+  "analytic_argument": "For 0<kappa<=1 and a C-infinity flat eta:[0,1], nonnegative complete unsigned Gram smoothing error <= (32/3)*sqrt(e)*kappa^2 for all T>=0, thus dense signed error obeys same one-K bound. The analytic integral bound is in review and NOT_YET_FORMALIZED.",
+  "finite_diagnostic": {
+    "type": "exact rational",
+    "index_range": "1..13",
+    "cases": 390,
+    "status": "PASS",
+    "scope": "finite original-complement algebra, not Lean or real integral certification"
+  },
+  "verification": {
+    "source_publication": "PENDING",
+    "lean_parsing": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "concrete_unsigned_integral_in_lean": "NOT_FORMALIZED",
+    "full_dense_rate": "OPEN",
+    "RH": "OPEN"
+  },
+  "related_issues": [
+    1556,
+    1559,
+    119,
+    1429
+  ]
+}
