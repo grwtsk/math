@@ -59,7 +59,7 @@
     "certifies_proof": false
   },
   "verification": {
-    "source_publication": "PENDING_READBACK",
+    "source_publication": "PASS_EXACT_THREE_BLOB_READBACK",
     "lean_compilation": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
     "expected_type_checks": "NOT_RUN",
@@ -72,5 +72,12 @@
   "related_issues": [
     1556,
     1429
-  ]
+  ],
+  "source_publication_commit": "1c9863f0f306177910f933ec8b9a51f0cf63b44a",
+  "source_publication_parent": "703cc95438d191e9f22fe3e27d21a871bdc74d0d",
+  "source_published_exact_blobs": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTerminalHighSmoothCrossShellCollar.lean": "37ce65434d6d468c7815006ea3c5fbe7fbf50648",
+    "documentation/mathematics/_support/reviews/moebius-terminal-high-smooth-cross-shell-collar-2026-11-01.md": "6925ec425454a8b45d918a8c0d881497687dadd3",
+    "documentation/mathematics/_verification/targets/moebius-terminal-high-smooth-cross-shell-collar-2026-11-01.json": "149132d3a6192ce03a128bc67d6e983f3d928d01"
+  }
 }
