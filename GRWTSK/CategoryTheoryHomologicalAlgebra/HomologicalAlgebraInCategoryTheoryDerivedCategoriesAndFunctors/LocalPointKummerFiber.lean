@@ -13,6 +13,11 @@ For actual local E/F, A=E[p^n](Fsep), B=E(Fsep), P=E(F),
 U=Fiber(C_cont(G,A) ⊕ P[0] -> C_cont(G,B)).
 Mathematically H0(U)=E(F)[p^n], H1(U)=E(F)/p^n E(F);
 the source projection on H1 is the injective Kummer map.
+IMPORTANT: the FULL U generally has H2(U)=H1(F,E), not zero.
+The two-term rational-point resolution instead matches the GOOD
+TRUNCATION tau_<=1 U in low-degree cohomology. The higher residue
+must be retained in any untruncated derived comparison; see
+LocalKummerHigherResidue and LocalKummerGoodTruncation.
 
 The old uncorrected cone(A->B)[-1] has an extra H0(B)/H0(A)
 contribution and cannot be used unchanged to form the inverse

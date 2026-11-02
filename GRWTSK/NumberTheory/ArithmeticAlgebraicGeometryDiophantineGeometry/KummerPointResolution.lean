@@ -12,8 +12,11 @@ noncomputable section
 
 For the ACTUAL group P=E(Q_v), the two-term complex
  P --[p^(n+1)]--> P (degrees 0,1)
-is canonically quasi-isomorphic to the point-corrected cochain cone
-in LocalPointKummerFiber via the genuine Kummer exact sequence.
+agrees in H0 and H1 with the GOOD TRUNCATION THROUGH DEGREE ONE
+of the point-corrected Kummer cone, under the genuine Kummer sequence.
+It is NOT generally quasi-isomorphic to the FULL cone, whose H2 is
+the local Weil--Chatelet group H1(Q_v,E).
+See LocalKummerGoodTruncation and LocalKummerHigherResidue.
 
 Its H0 is the real local p-power torsion and its H1 is precisely
 E(Q_v)/p^(n+1) E(Q_v). The transition from level n+1 to n
