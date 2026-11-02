@@ -140,6 +140,27 @@ theorem lowGcdDenseRowVariance_le_pairVariance
   rw [← conditionedVariance_eq_lowGcdDenseRowVariance Q T w law]
   exact conditionedVariance_le_windowPairVariance T w law _
 
+/-- Exact finite linearity for an original-index constant: source
+paid packets are deterministic at fixed T, not random-sign data. -/
+private theorem singleExpectation_add_fixed
+    (T : ℝ) (w : ℕ → ℝ) (law : PositiveWindowLaw T w)
+    (f : ℕ → ℝ) (c : ℝ) :
+    singleExpectation T w (fun m => f m + c) =
+      singleExpectation T w f + c := by
+  unfold singleExpectation
+  calc
+    (∑ m ∈ endpointIndex T, w m * (f m + c)) =
+      ∑ m ∈ endpointIndex T, (w m * f m + c * w m) := by
+        apply Finset.sum_congr rfl
+        intro m hm
+        ring
+    _ = (∑ m ∈ endpointIndex T, w m * f m) +
+        c * (∑ m ∈ endpointIndex T, w m) := by
+          simp only [Finset.sum_add_distrib, Finset.mul_sum]
+    _ = (∑ m ∈ endpointIndex T, w m * f m) + c := by
+          rw [law.total_one]
+          ring
+
 /-- The **actual source-defined** original-cross estimator:
 three signed original control variates, deterministically paid,
 and ONLY the one-index signed low-gcd dense readout sampled. -/
@@ -153,7 +174,7 @@ theorem originalCrossLowGcdEstimator_mean
     singleExpectation T w (originalCrossLowGcdEstimator Q T w) =
       pickupCross T := by
   unfold originalCrossLowGcdEstimator
-  rw [singleExpectation_add_const T w law]
+  rw [singleExpectation_add_fixed T w law]
   have hcore := lowGcdDenseRowImportance_mean Q T w law
   have hsource := pickupCross_eq_threePaid_add_lowGcdDense Q T
   rw [hcore]
