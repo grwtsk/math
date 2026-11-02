@@ -78,8 +78,8 @@
   },
   "verification": {
     "source_git_blob_creation": "PASS",
-    "guarded_main_publication": "PENDING",
-    "exact_blob_readback": "PENDING",
+    "guarded_main_publication": "PASS_NONFORCE_EXPECTED_PARENT_MAIN",
+    "exact_blob_readback": "PASS_4_OF_4",
     "no_authored_sorry_axiom_unsafe": "STATIC_SOURCE_SCAN_ONLY",
     "native_Lean_compilation": "NOT_RUN",
     "expected_types_universes": "NOT_RUN",
@@ -88,5 +88,12 @@
     "native_owner_restoration": "NOT_CHECKED",
     "physical_observer_uniqueness": "NOT_PROVED",
     "original_RH_arithmetic_estimate": "OPEN"
+  },
+  "publication": {
+    "source_commit": "60c07bfe268b3ad845e9cc31858ac40575b8a4ad",
+    "guarded_parent": "1741af45b92bf2220ab97049be9429f00b5d53f1",
+    "prior_manifest_blob": "bc238e13a7318570f685f63b0881cba75b2d02ca",
+    "original_source_blob_readback": true,
+    "native_Lean_acceptance": false
   }
 }
