@@ -46,7 +46,7 @@ variable [Fintype State] [DecidableEq State] [Fintype Alphabet]
 /-- The path is built step by step from the SOURCE edge witnesses of a
 particular state run. The output word is the supplied complete finite block,
 not an arbitrary accepted word or an unlabeled adjacency path. -/
-private theorem wordPath_of_run_block
+theorem wordPath_of_run_block
     (G : LabeledGraph State Alphabet)
     (trace : ℕ → Alphabet) (states : ℕ → State)
     (hstep : ∀ k, G.edge (states k) (trace k) (states (k + 1)))
