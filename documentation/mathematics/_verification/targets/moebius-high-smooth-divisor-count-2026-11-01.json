@@ -1,0 +1,121 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Original high-smooth cardinality via exact positive multiples and finite smooth half-Euler moment",
+  "date": "2026-11-01",
+  "attribution": "grwtsk contributors",
+  "repository": "grwtsk/math",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothDivisorCount.lean",
+    "blob": "0a0274d968ef6398b1ad51896e852892ed3e4fcc",
+    "root_import": false,
+    "source_lines": 276,
+    "new_axiom_declarations": 0,
+    "sorry_declarations": 0
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-high-smooth-divisor-count-2026-11-01.md",
+    "blob": "ac31217c5f27817d4f03dff407e9c264c64d2e6a"
+  },
+  "expected_public_declarations": [
+    "GRWTSK.NumberTheory.Moebius.HighSmoothDivisorCount.positiveMultiples_card",
+    "GRWTSK.NumberTheory.Moebius.HighSmoothDivisorCount.highSmooth_subset_divisor_union",
+    "GRWTSK.NumberTheory.Moebius.HighSmoothDivisorCount.highSmooth_card_le_sum_quotients",
+    "GRWTSK.NumberTheory.Moebius.HighSmoothDivisorCount.largeSmooth_halfMoment_le",
+    "GRWTSK.NumberTheory.Moebius.HighSmoothDivisorCount.highSmooth_card_le_of_finiteMoments",
+    "GRWTSK.NumberTheory.Moebius.HighSmoothDivisorCount.highSmoothCountTarget_of_finiteMoments"
+  ],
+  "expected_private_helpers": [
+    "real_quotient_le_sqrt_exp_halfweight"
+  ],
+  "precise_bounded_claims": [
+    "HighSmooth carrier is a SUBSET of the union over original integer d<=2X with bankSmooth B.primes d and strict real cutoff of positive original integer multiples d|n.",
+    "For every natural d, the original positive multiple fiber has cardinality floor((2X)/d) (pinned Mathlib Nat.Ioc_filter_dvd_card_eq_div).",
+    "Finite union upper: card(highSmoothBlock B X T) <= sum eligible d floor(2X/d), for ALL T and all B,X, with no Euler, Möbius or Gram hypotheses.",
+    "For X>=1 and ANY real T, FiniteSmoothEulerMoments B -> card(highSmoothBlock B X T) <= sqrt(2X) exp(sqrt(log(2X))) bankSquareRootWeight B.primes.",
+    "(forall B : PrimeBand, FiniteSmoothEulerMoments B) -> exact preexisting HighSmoothCountFormalizationTarget.",
+    "External arithmetic Mertens is NOT required for these finite cardinality transfers."
+  ],
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothRoughCollapse.lean",
+      "blob": "efd80d22fd4edda0c71add2ce29dd55433ee6fbb"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothDensePairs.lean",
+      "blob": "cef7c06a794cec1cef423c2ebfa3b6d0221087ad"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusNearSquareRootEulerPrefix.lean",
+      "blob": "7039be9c092ec8b8c9bf8d95b338a06dfe7638b2"
+    },
+    {
+      "path": "Mathlib/Data/Nat/Factorization/Basic.lean",
+      "repo": "leanprover-community/mathlib4",
+      "blob": "33ebfe9b25f9b23edaea0893f627d77efb54f86a",
+      "theorem": "Nat.Ioc_filter_dvd_card_eq_div"
+    },
+    {
+      "path": "Mathlib/NumberTheory/EulerProduct/Basic.lean",
+      "repo": "leanprover-community/mathlib4",
+      "theorem": "EulerProduct.summable_and_hasSum_factoredNumbers_prod_filter_prime_geometric",
+      "role": "candidate supplier for still-open FiniteSmoothEulerMoments",
+      "blob": "from_pinned_mathlib_live_api"
+    }
+  ],
+  "independent_reference": {
+    "script": "/mnt/data/moebius_high_smooth_divisor_count_preflight.py",
+    "script_sha256": "5211a0911b1ed7709ef72835911608558cee66b216419dec9c40218e6f165517",
+    "result": "/mnt/data/moebius_high_smooth_divisor_count_preflight_result.json",
+    "result_sha256": "80b9ad70ec107464946f4b48cb2bf3c3fd8e89def69f0f7397b265250e5e356e",
+    "precision_decimal_digits": 75,
+    "shells": "X=1..150",
+    "prime_banks": 7,
+    "cover_checks": 39822,
+    "cardinality_checks": 1050,
+    "quotient_checks": 24663,
+    "cutoff_weight_checks": 24663,
+    "smooth_moment_checks": 1050,
+    "final_envelope_checks": 1050,
+    "early_all_high_checks": 189,
+    "late_prime_witness_checks": 37176,
+    "classification": "FINITE_EXACT_INTEGER_AND_HIGH_PRECISION_FLOATING_REFERENCE_NOT_FORMAL_PROOF"
+  },
+  "remaining_mathematics": [
+    "FiniteSmoothEulerMoments for arbitrary PrimeBand, using pinned Mathlib Euler product; not yet formalized.",
+    "Source proof of original masked high/high Gram bound from actual causal response plus high cardinality.",
+    "Growth control of bankSquareRootWeight for scale-dependent prime banks.",
+    "All-positive-rate bound for full original low/low and matched high/low signed long-gap contributions on fixed covering scales.",
+    "Canonical _root_.RiemannHypothesis."
+  ],
+  "verification": {
+    "publication": "PENDING_EXPECTED_HEAD_LEASE",
+    "git_readback": "PENDING_UNTIL_PUBLICATION",
+    "lean_parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "complete_import_closure": "NOT_RUN",
+    "native_runner_dispatched": false,
+    "remote_CI_dispatched": false,
+    "scheduler_dispatched": false,
+    "RiemannHypothesis": "UNPROVED"
+  },
+  "related_issues": [
+    1575,
+    1572,
+    1568,
+    1556,
+    1429,
+    15
+  ],
+  "passive": true,
+  "publication": {
+    "status": "CANDIDATE_UNTIL_EXACT_READBACK",
+    "expected_parent": "b13210fa08a0b33f4b5cf5f47e161d5590e50604",
+    "nonforce_expected_head_lease": true
+  }
+}
