@@ -452,4 +452,84 @@ theorem taggedIntervalGram_abs_le_twoEulerAbel
         rw [intervalIntegral.integral_const_mul]
         rfl
 
+
+/-!
+## Exact consumer return to the repository's PREEXISTING dyadic Gram
+
+The original \`balancedBlock M T\` is \`(M,2M]\` filtered by
+\`endpointIndex T\`. When the ORIGINAL upper index 2M is
+present, the filter is redundant. The next two theorems prove
+this source identity, then apply the existing two-coordinate
+signed Mertens-Euler-Abel certificate to \`taggedRectangle\`
+itself. This is NOT a substitute new kernel.
+-/
+
+open GRWTSK.NumberTheory.MoebiusEndpointLeastPrimeTypeII
+
+/-- Original clipped dyadic inventory equals the literal
+half-open integer interval only when its LAST original index
+is inside the actual endpoint inventory. -/
+theorem balancedBlock_eq_Ioc_of_upper_mem
+    (X : ℕ) (T : ℝ) (hX : 1 ≤ X)
+    (hUpper : 2 * X ∈ endpointIndex T) :
+    balancedBlock X T = Finset.Ioc X (2 * X) := by
+  unfold balancedBlock
+    GRWTSK.NumberTheory.MoebiusPNTDyadicBilinearBlock.sourceBlock
+  ext n
+  simp only [Finset.mem_filter]
+  constructor
+  · intro hn
+    exact hn.1
+  · intro hn
+    constructor
+    · exact hn
+    · have hlast : 2 * X ≤ ⌊Real.exp T⌋₊ :=
+        (Finset.mem_Icc.mp hUpper).2
+      have hnrange := Finset.mem_Ioc.mp hn
+      unfold endpointIndex
+      exact Finset.mem_Icc.mpr ⟨by omega, by omega⟩
+
+/-- The explicit two-interval Gram is IDENTICAL to the old
+\`taggedRectangle\` when the original source cutoff contains
+the two dyadic upper endpoints. Both mixed orientations,
+squareful zeros, diagonal terms and original real-time Gram
+are retained without a new source definition. -/
+theorem original_taggedRectangle_eq_twoIntervalGram
+    (B : PrimeBand) (a b : Bool)
+    (M N : ℕ) (T : ℝ)
+    (hM : 1 ≤ M) (hN : 1 ≤ N)
+    (hMEnd : 2 * M ∈ endpointIndex T)
+    (hNEnd : 2 * N ∈ endpointIndex T) :
+    taggedRectangle B.primes a b M N T =
+      taggedIntervalGram B a b M (2 * M) N (2 * N) T := by
+  unfold taggedRectangle taggedIntervalGram
+  rw [balancedBlock_eq_Ioc_of_upper_mem M T hM hMEnd,
+      balancedBlock_eq_Ioc_of_upper_mem N T hN hNEnd]
+
+/-- Direct consumer of the PREEXISTING original finite
+two-variable tagged Gram. The only nontrivial hypotheses
+are genuine independently known Mertens at actual quotients,
+the explicit elementary finite Euler split, and actual
+original cutoff membership. No new dense cancellation,
+RH-equivalent premise or relabeling is used. -/
+theorem original_taggedRectangle_abs_le_twoEulerAbel
+    (B : PrimeBand) (A : ℕ) (C : ℝ)
+    (hMertens : QuotientMertensLogPower A C)
+    (hEuler : FiniteSmoothEulerSplit B A C)
+    (a b : Bool) (M N : ℕ) (T : ℝ)
+    (hM : 1 ≤ M) (hN : 1 ≤ N) (hT : 0 ≤ T)
+    (hMEnd : 2 * M ∈ endpointIndex T)
+    (hNEnd : 2 * N ∈ endpointIndex T) :
+    |taggedRectangle B.primes a b M N T| ≤
+      (sourceAbelEulerBudget B A C a M (2 * M) (by omega) *
+       sourceAbelEulerBudget B A C b N (2 * N) (by omega)) *
+        pickupResponseGram T (M + 1) (N + 1) := by
+  have hmpos : M < 2 * M := by omega
+  have hnpos : N < 2 * N := by omega
+  rw [original_taggedRectangle_eq_twoIntervalGram
+    B a b M N T hM hN hMEnd hNEnd]
+  exact taggedIntervalGram_abs_le_twoEulerAbel
+    B A C hMertens hEuler a b M (2 * M) N (2 * N) T
+    hM hN hmpos hnpos hT
+
 end GRWTSK.NumberTheory.Moebius.TwoCoordinateCausalAbel
