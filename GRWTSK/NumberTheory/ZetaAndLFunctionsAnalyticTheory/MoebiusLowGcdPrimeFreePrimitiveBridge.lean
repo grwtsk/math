@@ -117,6 +117,74 @@ theorem otherLowGcdPair_gcdShifted_term
       hg ha hb hga hgb
   · simp [hm]
 
+/-- The TRUE common-gcd causal identity needs NO squarefree
+hypothesis when the arithmetic coprimality guards are supplied:
+mu(g*a)mu(g*b)=mu(g)^2 mu(a)mu(b). Consequently all genuine
+squareful-zero coefficients survive without a fabricated sign.
+The ORIGINAL response Gram alone acquires g^(-1) and T-log(g). -/
+theorem originalSource_coprime_gcdShifted_term
+    (T : ℝ) (g a b : ℕ)
+    (hg : 1 ≤ g) (ha : 1 ≤ a) (hb : 1 ≤ b)
+    (hga : Nat.Coprime g a) (hgb : Nat.Coprime g b) :
+    sourceKernel T (g * a) (g * b) =
+      (g : ℝ)⁻¹ * (moebiusReal g) ^ 2 *
+        moebiusReal a * moebiusReal b *
+          pickupResponseGram (T - Real.log (g : ℝ)) a b := by
+  unfold sourceKernel
+  rw [GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.original_moebius_mul_of_coprime
+      g a hga,
+    GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.original_moebius_mul_of_coprime
+      g b hgb,
+    pickupResponseGram_mul_timeShift g a b hg ha hb T]
+  ring
+
+/-- The prime-free ORIGINAL hard pair has the same exact coprime
+factor identity, including squareful zero coefficients. Unlike a
+double-to-triple finite sum reindex, this is proved only TERMWISE. -/
+theorem otherLowGcdPair_coprime_gcdShifted_term
+    (Q : Finset ℕ) (T : ℝ) (g a b : ℕ)
+    (hg : 1 ≤ g) (ha : 1 ≤ a) (hb : 1 ≤ b)
+    (hga : Nat.Coprime g a) (hgb : Nat.Coprime g b) :
+    otherLowGcdPair Q T (g * a) (g * b) =
+      if IsOtherLowGcdPair Q T (g * a) (g * b) then
+        (g : ℝ)⁻¹ * (moebiusReal g) ^ 2 *
+          moebiusReal a * moebiusReal b *
+            pickupResponseGram (T - Real.log (g : ℝ)) a b
+      else 0 := by
+  rw [otherLowGcdPair_eq_originalMask]
+  by_cases hm : IsOtherLowGcdPair Q T (g * a) (g * b)
+  · simp only [if_pos hm]
+    exact originalSource_coprime_gcdShifted_term T g a b
+      hg ha hb hga hgb
+  · simp [hm]
+
+/-- A FULL candidate primitive triple sum, with all original
+integer and mask predicates explicit. The original finite-index
+double-to-triple bijection has NOT yet been proved in Lean here.
+In particular coprimality with g cannot be omitted: otherwise
+a squareful original ga could carry a spurious nonzero term. -/
+def primitivePrimeFreeTripleCross (Q : Finset ℕ) (T : ℝ) : ℝ :=
+  ∑ g ∈ GRWTSK.NumberTheory.MoebiusEndpointLeastPrimeTypeII.endpointIndex T,
+    ∑ a ∈ GRWTSK.NumberTheory.MoebiusEndpointLeastPrimeTypeII.endpointIndex T,
+      ∑ b ∈ GRWTSK.NumberTheory.MoebiusEndpointLeastPrimeTypeII.endpointIndex T,
+        if Nat.Coprime a b ∧ Nat.Coprime g a ∧ Nat.Coprime g b ∧
+          g * a ∈ GRWTSK.NumberTheory.MoebiusEndpointLeastPrimeTypeII.endpointIndex T ∧
+          g * b ∈ GRWTSK.NumberTheory.MoebiusEndpointLeastPrimeTypeII.endpointIndex T ∧
+          IsOtherLowGcdPair Q T (g * a) (g * b)
+        then
+          (g : ℝ)⁻¹ * (moebiusReal g) ^ 2 *
+            moebiusReal a * moebiusReal b *
+              pickupResponseGram (T - Real.log (g : ℝ)) a b
+        else 0
+
+/-- Exact original-index gcd reindexing is a NAMED UNPROVED GOAL,
+not a new axiom or an accepted equality. It may be discharged only
+by an actual finite source-bijection argument preserving both ordered
+orientations and the squareful-zero guards. -/
+def ExactPrimeFreeTripleReindexTarget : Prop :=
+  ∀ (Q : Finset ℕ) (T : ℝ), 0 ≤ T →
+    otherLowGcdCross Q T = primitivePrimeFreeTripleCross Q T
+
 /-- The source mask itself still requires the ORIGINAL gcd cutoff,
 not a fabricated cutoff at T-log g. -/
 theorem otherLowGcdPair_implies_original_fixedGcd
