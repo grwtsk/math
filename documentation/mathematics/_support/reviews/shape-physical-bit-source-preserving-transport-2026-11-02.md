@@ -126,3 +126,75 @@ The exact common-index overlap is `commonIndexMass S o = ∑ i, min (S.probabili
 - Exact installed Lean and Lake executable: unavailable in this execution environment.
 - Pinned Lean/Mathlib compile, expected theorem types, fresh kernel checking, and transitive dependency-closure axiom/opaque/native audit: **NOT_RUN**.
 - No compilation result, CI proof result, or arithmetic estimate is inferred from publication. This is `SOURCE_PROOF_CANDIDATE`.
+
+## 2026-11-02: Explicit maximal Gibbs coupling and original-window signed-pair sampler
+
+The fifth and sixth additive source candidates close TWO separate finite representation obligations, without claiming an arithmetic cancellation or a topological bundle.
+
+### Maximal coupling: exact two-marginal source
+
+- [ShapePhysicalBitMaximalCoupling.lean](https://github.com/grwtsk/math/blob/dcc1d479fd6757dcadd47fab2f057b657989e5d2/GRWTSK/Combinatorics/ShapePhysicalBitMaximalCoupling.lean)
+- Source commit \`dcc1d479fd6757dcadd47fab2f057b657989e5d2\`; source parent \`0c87a2e21ed7ffd6c203743a41bb5c793a364b4c\`.
+- Exact Git blob \`53b74fcd1cb3be2db161a68ed56209640750e845\` (299 source lines).
+- Imported existing Gibbs law: \`GRWTSK/Combinatorics/GraphTheory/FiniteAdmissibleSampler.lean\` blob \`e74a253e66c1ee9ab5b6d97440e1fdeee49a54be\`.
+- Imported finite TV identity: \`ShapePhysicalBitFiniteTVCoupling.lean\` blob \`25194eada902abffdbc3dcd61ac66ea549b57b0b\`.
+
+Given the **actual** one-step Gibbs row \`p(i) = S.probability origin i\`, uniform \`u(i) = 1/N\` at \`N>0\`, and common mass \`a(i)=min(p(i),u(i))\`, define the surplus \`r(i)=p(i)-a(i)\` and deficit \`t(i)=u(i)-a(i)\`. Their sums both equal \`δ=TV(p,u)\`, and \`r(i)*t(i)=0\` for every original slot. The explicit joint matrix is
+
+\[
+C(i,j)=\mathbf 1_{i=j}\,a(i)+\frac{r(i)t(j)}{\delta}.
+\]
+
+The δ=0 case is handled by showing all residuals are zero before using the real zero-division convention. Written source candidates \`maximalCouplingMatrix_row\`, \`maximalCouplingMatrix_column\`, and \`maximalCouplingMatrix_hasMarginals\` certify both marginals. \`maximalCouplingMatrix_diagonal\`, \`maximalCouplingMatrix_mismatch_eq_TV\`, and \`maximalCouplingMatrix_optimal\` identify the optimal diagonal agreement. The source-index label space is EXACTLY \`Fin N\`; no Möbius coefficients or windows are modified.
+
+### The ACTUAL signed source window and variance
+
+- [ShapePhysicalBitPairSampling.lean](https://github.com/grwtsk/math/blob/4126efa42f0a1f2d41d827406ffc62fbb219180b/GRWTSK/Combinatorics/ShapePhysicalBitPairSampling.lean)
+- Source commit \`4126efa42f0a1f2d41d827406ffc62fbb219180b\`; source parent \`54a15bd4d8ea35933ac02c3189886163c177048e\` (intervening main commits were concurrent work).
+- Exact Git blob \`b15bfdf183afd5f44379937a83b57c0e4c7a8407\` (350 source lines).
+- Original arithmetic/observer source: \`PhysicalMoebiusBitGramReturn.lean\` blob \`67cbc92ee2dec824d0a5c2930f0f45671dad61a9\`.
+- Existing original-index population: \`endpointIndex T\` in \`GRWTSK.RiemannHypothesis.CCC\`. This is not replaced by an unrelated range, a sieve survivor population, or a quotient representation.
+
+The type \`OriginalWindowIndex T := {n : ℕ // n ∈ endpointIndex T}\` keeps membership and exact original integer identity. \`windowGibbsWeight T S origin\` uses the **existing** \`Sampler (OriginalWindowIndex T)\` and is zero outside the original finite window. A theorem candidate proves exact row normalization; strict positivity on EVERY original index is proved only under the explicit complete-allowed-row hypothesis \`∀n, S.allowed origin n=true\`. This produces \`PositiveWindowLaw T w\` with both full support and unit mass.
+
+The product law on **ordered index pairs** has \`w(m)w(n)\` mass; the two index draws are independent by this explicit model definition, **not** because the deterministic original arithmetic coefficients are independent. For the original source pair
+
+\[
+K_T(m,n)=\mathbf 1_{m\ne n}\,
+\mu(m)\mu(n)\,\operatorname{pickupResponseGram}(T,m,n),
+\]
+
+the intended identity is
+
+\[
+\mathbb E_{(m,n)\sim w\otimes w}
+\left[\frac{K_T(m,n)}{w(m)w(n)}\right]
+=\sum_{m\in\operatorname{endpointIndex}(T)}
+\sum_{n\in\operatorname{endpointIndex}(T)}K_T(m,n)
+=\operatorname{pickupCross}(T).
+\]
+
+The source also defines \`observedSignedPair\` and \`defectSignedPair\`. The written \`importance_original_signed_return\` proves their **separate exact importance returns** together with the original \`pickupCross = observedPacket + signedReadoutDefect\` statement. This retains original Möbius signs, the complete ordered off-diagonal source, both orientations, all source birth windows and every signed readout defect, including missing or wrong-index records.
+
+The candidate \`originalSignedPairVariance_eq_secondMoment\` records the full centered variance
+
+\[
+\mathrm{Var}_{w\otimes w}\!\left(\frac{K_T}{w_mw_n}\right)
+=
+\mathbb E_{w\otimes w}\!\left[\left(\frac{K_T}{w_mw_n}\right)^2\right]
+-\operatorname{pickupCross}(T)^2.
+\]
+
+Nonnegativity is derived from the *actual positive product mass*. Its second moment is not claimed bounded uniformly in T or in the sampler; rare source indices can create large inverse-weight terms. In particular **TV control for bounded physical bit discrepancies does not bound the signed arithmetic source nor this importance variance**. The existing \`FiniteWeightedChannelCovariance.choiceMeanSquare_eq_covariance\` (blob \`1e88479b60ade504d9da34a700f8a75d1d6d6991\`) is relevant independent source for later full-pair covariance analysis, not a proof that the original Möbius signs decorrelate.
+
+### Independent acceptance facets
+
+- Exact source files created on the existing \`grwtsk/math/main\` and read back by original commit SHA with matching Git blobs: **PASS**.
+- Static scan of source declarations for authored \`sorry\`, \`admit\`, \`axiom\`, \`native_decide\`: no such declarations observed; **NOT** a kernel or transitive audit.
+- Pinned Lean \`v4.34.1\`, Mathlib \`d13f23b723b8a846827a245b89c10fc7d3f11612\`; local Lean/Lake executables unavailable.
+- Pinned Lean elaboration/compilation for both new modules and their imported dependency closure: **NOT_RUN**.
+- Fresh kernel checking, expected declaration type replay, and transitive axiom/opaque/native audit: **NOT_RUN**.
+- No configured GitHub CI status checks were reported on the two source commits; **NO** remote execution has been asserted.
+- No arithmetic one-sided all-positive-rate upper bound, no fixed-gap good-scale certificate, no cusp convergence, and no canonical RH theorem is obtained.
+
+These are source proof candidates pending pinned Lean acceptance. The next mathematical obligation is an independently established bound on the exact arithmetic source or on the full importance variance with a justified, controlled weight floor, not an assumption that sampling or gauge invariance removes the signed cross terms.
