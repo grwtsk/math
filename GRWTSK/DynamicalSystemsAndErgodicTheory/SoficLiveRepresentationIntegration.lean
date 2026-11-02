@@ -346,4 +346,103 @@ theorem periodicLabelPoint_card_eq_finitePruned
   exact Fintype.card_congr
     (periodicLabelPoint_equiv_finitePruned G decEdge n hn)
 
+/-! ## The concrete q-round graph is right-total and pruning-idempotent -/
+
+/-- The finite retained graph has the ORIGINAL edge decider
+restricted to its exact surviving vertex values. This is a
+true edge decision supplier, not a guessed replacement graph. -/
+def finitePrunedGraph_decider
+    (G : LabeledGraph State Alphabet)
+    (decEdge : SourceEdgeDecider G) :
+    SourceEdgeDecider (finitePrunedGraph G decEdge) :=
+  fun s a t => decEdge s.val a t.val
+
+/-- Every retained original state has a genuine labeled edge
+to ANOTHER retained state. This is inherited through the
+exact typed graph correspondence, not postulated as an
+extra nonblocking hypothesis. -/
+theorem finitePrunedGraph_has_outgoing
+    (G : LabeledGraph State Alphabet)
+    (decEdge : SourceEdgeDecider G) :
+    AllVerticesHaveOutgoing (finitePrunedGraph G decEdge) := by
+  intro s
+  let e := prunedState_equiv_rightLiveState G decEdge
+  obtain ⟨a,t,hedge⟩ := rightLiveGraph_allOutgoing G (e s)
+  exact ⟨a, e.symm t, hedge⟩
+
+/-- Every retained vertex of the q-round pruned graph is
+right-live in THAT SAME pruned graph, not merely in its
+original unpruned ancestor. -/
+theorem finitePrunedGraph_every_vertex_rightLive
+    (G : LabeledGraph State Alphabet)
+    (decEdge : SourceEdgeDecider G)
+    (s : {x : State //
+      x ∈ retainedAfter G decEdge (Fintype.card State)}) :
+    RightLive (finitePrunedGraph G decEdge) s := by
+  exact (rightLive_iff_graphRunFrom
+    (finitePrunedGraph G decEdge) s).mpr
+      (graphRunFrom_of_allOutgoing
+        (finitePrunedGraph G decEdge)
+        (finitePrunedGraph_has_outgoing G decEdge) s)
+
+/-- True source-level idempotence of the finite algorithm:
+running q' rounds on the already pruned finite graph
+retains its ENTIRE carrier. Here q' is the cardinality
+of the retained source subtype, not the original q. -/
+theorem finitePrunedGraph_pruning_fixed
+    (G : LabeledGraph State Alphabet)
+    (decEdge : SourceEdgeDecider G) :
+    retainedAfter (finitePrunedGraph G decEdge)
+      (finitePrunedGraph_decider G decEdge)
+      (Fintype.card
+        {x : State //
+          x ∈ retainedAfter G decEdge (Fintype.card State)}) =
+      Finset.univ := by
+  classical
+  ext s
+  simp only [Finset.mem_univ, iff_true]
+  exact (mem_retainedAfter_card_iff_rightLive
+    (finitePrunedGraph G decEdge)
+    (finitePrunedGraph_decider G decEdge) s).mpr
+      (finitePrunedGraph_every_vertex_rightLive G decEdge s)
+
+/-- Every state of the already pruned graph returns TRUE
+from the same executable source-correct Boolean liveness
+query. This exposes the fixed-point result to concrete
+finite-state consumers without inspecting infinite runs. -/
+theorem finitePrunedGraph_isRightLive_true
+    (G : LabeledGraph State Alphabet)
+    (decEdge : SourceEdgeDecider G)
+    (s : {x : State //
+      x ∈ retainedAfter G decEdge (Fintype.card State)}) :
+    isRightLive (finitePrunedGraph G decEdge)
+      (finitePrunedGraph_decider G decEdge) s = true := by
+  exact (isRightLive_iff
+    (finitePrunedGraph G decEdge)
+    (finitePrunedGraph_decider G decEdge) s).mpr
+      (finitePrunedGraph_every_vertex_rightLive G decEdge s)
+
+/-- A realized finite word query is invariant under one full
+source-preserving q-round pruning, including terminal-edge
+and empty-state cases. This remains a Boolean equivalence,
+not an equality of original path multiplicities. -/
+theorem isRealizedFactor_true_iff_pruned_true
+    (G : LabeledGraph State Alphabet)
+    (decEdge : SourceEdgeDecider G) (word : List Alphabet) :
+    isRealizedFactor G decEdge word = true ↔
+      isRealizedFactor (finitePrunedGraph G decEdge)
+        (finitePrunedGraph_decider G decEdge) word = true := by
+  calc
+    isRealizedFactor G decEdge word = true ↔
+        realizedTopologicalFactorLanguage (GraphLanguage G) word :=
+      isRealizedFactor_iff_topologicalFactor G decEdge word
+    _ ↔ realizedTopologicalFactorLanguage
+        (GraphLanguage (finitePrunedGraph G decEdge)) word :=
+      realizedTopologicalFactorLanguage_eq_finitePruned G decEdge word
+    _ ↔ isRealizedFactor (finitePrunedGraph G decEdge)
+          (finitePrunedGraph_decider G decEdge) word = true :=
+      (isRealizedFactor_iff_topologicalFactor
+        (finitePrunedGraph G decEdge)
+        (finitePrunedGraph_decider G decEdge) word).symm
+
 end GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficLiveRepresentationIntegration
