@@ -1,0 +1,39 @@
+{
+  "schema": "grwtsk.moebius-critical-width-harmonic-closure/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "observed_main": "529cd9ba95a20143466949faf96974e1a49cc1d5",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "upstream_mathlib": "Mathlib/NumberTheory/Harmonic/Bounds.lean",
+  "upstream_declarations": [
+    "harmonic_eq_sum_Icc",
+    "harmonic_floor_le_one_add_log"
+  ],
+  "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCriticalWidthHarmonicClosure.lean",
+  "review": "documentation/mathematics/_support/reviews/moebius-critical-width-harmonic-closure-2026-11-01.md",
+  "expected_lean_declarations": [
+    "endpointHarmonicBound_from_pinned_mathlib",
+    "CriticalLocalBirthIntegralBound",
+    "criticalUnsignedLinearBudget_of_local",
+    "denseLongGapAllRateOn_iff_critical_of_local"
+  ],
+  "verification": {
+    "publication": "PENDING",
+    "parsing": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "local_integral_budget": "OPEN",
+    "dense_signed_all_rate": "OPEN",
+    "RH": "OPEN"
+  },
+  "related_issues": [
+    1556,
+    1559,
+    1429
+  ]
+}
