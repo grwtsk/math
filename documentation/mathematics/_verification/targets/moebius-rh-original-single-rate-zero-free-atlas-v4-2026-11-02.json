@@ -105,7 +105,7 @@
     "L-family Hermitian source not interchangeable with real zeta"
   ],
   "verification": {
-    "source_publication": "PENDING_GUARDED_NONFORCE_MAIN_READBACK",
+    "source_publication": "PASS_FIVE_EXACT_GIT_BLOB_READBACK",
     "parser": "NOT_RUN",
     "elaboration": "NOT_RUN",
     "expected_types": "NOT_RUN",
@@ -118,11 +118,15 @@
     "root_import_or_toolchain_changed": false,
     "Noe_CI_native_runner_dispatched": false,
     "all_positive_rate_original_FAR": "OPEN",
-    "canonical_RH": "OPEN"
+    "canonical_RH": "OPEN",
+    "git_pre_update_diff": "PASS_EXACTLY_FIVE_ADDITIVE_PATHS",
+    "source_readback_files": 5
   },
   "tracking_issues": [
     1556,
     1429,
     1559
-  ]
+  ],
+  "source_publication_commit": "29ddc1e08d4d723ccc4581731ac313b122a4b35b",
+  "source_publication_parent": "be5d60d47356cb49767c65910d164cc2ef00b522"
 }
