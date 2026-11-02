@@ -1,0 +1,85 @@
+{
+  "schema": "math-source-proof-candidate-v1",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "source_attribution": "grwtsk contributors; formalization assistance OpenAI",
+  "pinned": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "related_sources": [
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMAdaptiveHighSmoothAllShell.lean",
+      "blob_sha": "62bed1cccf5ad61f3529f594e1ed85a1bd36dd89"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothCofactorCountProof.lean",
+      "blob_sha": "6899657e4ad54cf56fd7e907966d4d9bc2f7f3f8"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothTimeLocalGramProof.lean",
+      "blob_sha": "ef878a103e99adb0b673c918f6179e33f1c8e7e0"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSquareEnergyIntegration.lean",
+      "blob_sha": "c01a1e892c14343aee002554172373e9190f6611"
+    }
+  ],
+  "new_sources": [
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothDirectEnergy.lean",
+      "blob_sha": "a8156c9b950db4800224c7a5112f5bc9d3ec15c1"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothGeometricSummation.lean",
+      "blob_sha": "dea40f4d802d9251cbc8a48b7bcc311624b17337"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMOriginalHighSmoothPhysicalEnergy.lean",
+      "blob_sha": "cb1863e41ba9f830684b837d827f571e1df7f465"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/cm-original-high-smooth-direct-energy-2026-11-02.md",
+    "blob_sha": "9cee872150c609954f7c3a626573b0b6c3a083da"
+  },
+  "expected_declarations": [
+    "CMOriginalHighSmoothDirectEnergy.originalSignedAtom_abs_le_shell",
+    "CMOriginalHighSmoothDirectEnergy.originalHighShellWave_abs_le_count",
+    "CMOriginalHighSmoothDirectEnergy.originalFixedWave_eq_high_add_low",
+    "CMOriginalHighSmoothDirectEnergy.originalHighWave_abs_le_finiteEnvelope",
+    "CMOriginalHighSmoothDirectEnergy.original_sq_le_low_of_high_bound",
+    "CMOriginalHighSmoothDirectEnergy.original_low_sq_le_full_of_high_bound",
+    "CMOriginalHighSmoothDirectEnergy.OriginalLowComplementReturn",
+    "CMOriginalHighSmoothGeometricSummation.finiteHighEnvelope_uniform_of_geometric",
+    "CMOriginalHighSmoothGeometricSummation.canonicalShellRatio_lt_one",
+    "CMOriginalHighSmoothGeometricSummation.CanonicalShellScalarDecay",
+    "CMOriginalHighSmoothGeometricSummation.globalHighEnvelope_of_canonical_scalar",
+    "CMOriginalHighSmoothPhysicalEnergy.pickupEnergy_eq_originalFixedWave_dyadic",
+    "CMOriginalHighSmoothPhysicalEnergy.pickupEnergy_le_two_low_plus_high",
+    "CMOriginalHighSmoothPhysicalEnergy.originalLowEnergy_le_two_pickup_plus_high",
+    "CMOriginalHighSmoothPhysicalEnergy.OriginalLowAllRate",
+    "CMOriginalHighSmoothPhysicalEnergy.riemannHypothesis_of_originalLowAllRate"
+  ],
+  "verification": {
+    "source": "SOURCE_PROOF_CANDIDATE",
+    "publication": "BLOBS_STAGED",
+    "compilation": "NOT_RUN",
+    "parser": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "import_closure": "NOT_RUN",
+    "scalar_shell_decay": "OPEN_PROP",
+    "low_index_complement": "OPEN_PROP",
+    "original_low_all_rate": "OPEN_ARITHMETIC",
+    "rh": "NOT_CLAIMED"
+  },
+  "negative_controls": [
+    "No fixed-bank estimates claimed uniform over banks growing with scale",
+    "No changes to original signed Möbius coefficients, Gram mixed terms, or index cutoff",
+    "Low defined as source minus high is not a verified filtered index complement until OriginalLowComplementReturn",
+    "No scalar shell inequality or arithmetic moment is postulated as an axiom",
+    "No native execution, CI, scheduler, or RH proof claim"
+  ]
+}
