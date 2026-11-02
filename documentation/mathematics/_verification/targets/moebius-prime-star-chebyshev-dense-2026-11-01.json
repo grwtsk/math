@@ -1,0 +1,64 @@
+{
+  "schema": "grwtsk.moebius-prime-star-chebyshev-dense/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "base_observed_main": "f181520f40d78bd36752b4edb6fbf7e1e8b2156c",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "new_source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeStarDenseArithmetic.lean",
+    "status": "SOURCE_PROOF_CANDIDATE"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-prime-star-chebyshev-dense-arithmetic-2026-11-01.md"
+  },
+  "upstream_classical_source": {
+    "path": "Mathlib/NumberTheory/Chebyshev.lean",
+    "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "declarations": [
+      "Chebyshev.theta_ge'",
+      "Chebyshev.theta_le_log4_mul_x",
+      "Chebyshev.theta_eq_sum_Icc"
+    ]
+  },
+  "declared_finset_proofs": [
+    "primeStarPacket_eq_prime_sum",
+    "primeStarPacket_eq_negative_gram",
+    "primeStarPacket_nonpos",
+    "starOrderedEdges_subset_dense",
+    "denseLongGapSource_eq_ordered_edges",
+    "denseLongGapSource_eq_star_add_remaining",
+    "primePrimeDenseEdges_subset_dense",
+    "primePrimeDensePacket_nonneg"
+  ],
+  "paper_only_quantitative": {
+    "negative": "For 0<epsilon<2 and T>=max(40,10/(1-epsilon/2)), star packet <= -(exp(-3/2)/2)*exp(T/2)/T, using source K_T and pinned Chebyshev bounds.",
+    "positive": "For 0<epsilon<2 and sufficiently large T, selected prime-prime long-gap packet >= exp(T-3)/(32*T^2). This is a hostile positive counterweight.",
+    "lean_status": "NOT_FORMALIZED"
+  },
+  "diagnostics": {
+    "exact_rational_full_partition": 816,
+    "exact_rational_two_orientations": 900,
+    "actual_gram_float_windows": "T=8..12",
+    "status": "PASS",
+    "formal_scope": "NONE"
+  },
+  "verification": {
+    "source_publication": "PENDING",
+    "lean_parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "signed_dense_all_positive_rate": "OPEN",
+    "RH": "OPEN"
+  },
+  "related_issues": [
+    1556,
+    1401,
+    1544,
+    1429
+  ]
+}
