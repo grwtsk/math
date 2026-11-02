@@ -91,7 +91,7 @@
     "classification": "NONCERTIFYING finite truncation; no numeric RH or zero testing"
   },
   "acceptance": {
-    "source_publication": "PENDING_EXPECTED_HEAD_FAST_FORWARD_AND_EXACT_BLOB_READBACK",
+    "source_publication": "PASS_FOUR_EXACT_GIT_BLOB_READBACK",
     "compilation": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
     "expected_types": "NOT_RUN",
@@ -103,7 +103,8 @@
     "toolchain_or_root_import_changed": false,
     "native_CI_or_Noe_automation_dispatched": false,
     "original_signed_FAR_every_positive_rate": "OPEN",
-    "canonical_RiemannHypothesis": "OPEN"
+    "canonical_RiemannHypothesis": "OPEN",
+    "additive_published_file_count": 4
   },
   "tracking_issues": [
     1556,
@@ -113,5 +114,7 @@
     "https://mathoverflow.net/questions/341916/on-the-dirichlet-series-for-1-zetas-for-real-s-and-the-zeros-of-zeta",
     "https://kconrad.math.uconn.edu/blurbs/gradnumthy/dirichletseries.pdf",
     "https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/NumberTheory/LSeries/Dirichlet.lean"
-  ]
+  ],
+  "publication_source_commit": "7ebb484994fc65a31bee64f8614fbed1845efa4a",
+  "publication_source_parent": "5379ca5c1461ec0679529664bf2d4d0d7adc7da9"
 }
