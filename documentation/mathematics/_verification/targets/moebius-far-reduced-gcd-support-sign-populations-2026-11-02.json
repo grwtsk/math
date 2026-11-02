@@ -87,7 +87,7 @@
     "certification": "NONCERTIFYING"
   },
   "verification": {
-    "source_publication": "PENDING_EXACT_READBACK",
+    "source_publication": "PASS_THREE_EXACT_GIT_BLOB_READBACK",
     "compilation": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
     "elaboration": "NOT_RUN",
@@ -97,10 +97,13 @@
     "native_opaque_unsafe": "NOT_RUN",
     "independent_classical_PNT_import": "NOT_RUN",
     "complete_far_every_positive_rate": "OPEN",
-    "RiemannHypothesis": "OPEN"
+    "RiemannHypothesis": "OPEN",
+    "source_paths_changed": 3
   },
   "related_issues": [
     1556,
     1429
-  ]
+  ],
+  "source_publication_commit": "9abb470f8642e9494a2862b8b1ac7ecdfa3c6d7d",
+  "source_publication_parent": "dc2142c188f3507f150a6c956de7078b83e5b033"
 }
