@@ -1,7 +1,7 @@
 {
   "schema": "grwtsk.math.verification-target/1",
   "research_date": "2026-11-02",
-  "title": "Original signed Mobius source: exact physical bits, sphere ports, finite Gibbs and sharp importance variance floor, honest endpoint return",
+  "title": "Original source-preserving Mobius physical bits, sphere/shape, Gibbs and signed finite sampling, with source-paid hard dense arithmetic core",
   "repository": "grwtsk/math",
   "author_attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
   "pinned_toolchain": {
@@ -110,6 +110,32 @@
       "initial_source_commit": "320102a95b9cde094285eb5112f9313902f04526",
       "lines": 182,
       "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseCoreRowControlVariate.lean",
+      "blob": "ab3c4fa71e53f6d512560b0dab32edb04ef1c9f3",
+      "source_commit": "8e3ec83415c3702c93dda4a123534fc42e161648",
+      "source_parent": "92fdef5dac714172ddd69e58de94af721506cb53",
+      "initial_source_commit": "a2f3e461f1a1f78c1dca399d6803ad2c9457b44c",
+      "lines": 278,
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseCoreRowSamplingVariance.lean",
+      "blob": "3b2090c1031e7ed91c7ed7f32d342c3d8a8def64",
+      "source_commit": "8c9a676a42b4c3a7a85a450bfd74f3d1b3593a82",
+      "source_parent": "288c6b75d353e4ceefc2148c23a7836ffb672835",
+      "initial_source_commit": "2d10ce4a54a80b7372706b27afee49399e337ef5",
+      "lines": 264,
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseCoreZeroWitness.lean",
+      "blob": "709a23d08cc6ff9084147549904684c82edc5d38",
+      "source_commit": "b43b8760709e269e1e21c1707ea2ad96aaa70dcb",
+      "source_parent": "8e3ec83415c3702c93dda4a123534fc42e161648",
+      "lines": 100,
+      "status": "CONDITIONAL_SOURCE_PROOF_CANDIDATE"
     }
   ],
   "pinned_dependencies": [
@@ -147,8 +173,8 @@
     "blob": "f4fa84b8d32c38db2e8890ccfebf4ee3798684ce",
     "updated_at_commit": "f2fd9280a33ab3233ecc9db96957c2a9d44da2aa"
   },
-  "source_commit": "654decf2dcd01e391241f767ae21aefdaa0e0c4f",
-  "source_parent": "403427391748e8fe800d939a091396dd743111fd",
+  "source_commit": "8c9a676a42b4c3a7a85a450bfd74f3d1b3593a82",
+  "source_parent": "288c6b75d353e4ceefc2148c23a7836ffb672835",
   "exact_source": "Original ShapeChangingBundle center/shell plus full integer-indexed PhysicalStream, two-tangent SignedBits, existing pickupCross with all ordered non-diagonal pairs and signedReadoutDefect; no new arithmetic coefficients, windows or unproved cancellation. Third source samples finite original-index slots using the already normalized Gibbs Sampler.probability row; a uniformly weighted finite reference average is compared through the existing measured physical two-bit indexed Hilbert distance with unavailable mass separately accounted.",
   "source_candidate_theorems": [
     "Folder.Research.ShapePhysicalBitTransport.lower_lift_center",
@@ -319,7 +345,31 @@
     "Folder.Research.ShapePhysicalBitGibbsRealization.rowGibbsSampler_probability",
     "Folder.Research.ShapePhysicalBitGibbsRealization.rowGibbsSampler_fullSupport",
     "Folder.Research.ShapePhysicalBitGibbsRealization.windowGibbsWeight_rowGibbsSampler",
-    "Folder.Research.ShapePhysicalBitGibbsRealization.actualGibbsRow_sourceAndVariance"
+    "Folder.Research.ShapePhysicalBitGibbsRealization.actualGibbsRow_sourceAndVariance",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.sum_denseCoreRow_eq_existingCore",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.denseCoreRowImportance_mean",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.pickupCross_eq_paid_add_denseCoreMean",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.paidSparseSectors_abs_le",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.pickupCross_sub_denseCore_abs_le",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.endpointSum_eq_paid_add_denseCoreMean_add_curvature",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.endpointSum_le_denseCore_add_paidRate",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.endpointSum_sub_denseCore_abs_le",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.denseCore_le_rowAbsMass",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.endpointSum_le_denseCoreRowAbsMass_add_paidRate",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.denseCoreRowAbsAllRateOn_implies_denseCoreAllRate",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowControlVariate.riemannHypothesis_of_denseCoreRowAbs_goodScales",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCorePairImportance_mean",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.rowExpectation_denseCorePairImportance",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.conditioned_denseCorePair_eq_rowVariance",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCoreRowVariance_le_pairVariance",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCoreCrossRowEstimator_mean",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCoreCrossRowEstimator_mean_endpointError",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCoreCrossRowEstimator_centeredVariance",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCoreCrossRowEstimator_variance_le_pair",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCoreEndpointRowEstimator_mean",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCoreEndpointRowEstimator_centeredVariance",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCoreEndpointVariance_le_pairVariance",
+    "GRWTSK.NumberTheory.Moebius.DenseCoreZeroWitness.hypothetical_zero_forces_direct_denseCore_spikes"
   ],
   "unresolved_mathematical_obligations": [
     "A true topological fiber bundle requires projection, local trivializations, transition cocycles and compatibility.",
@@ -344,7 +394,13 @@
     "Even optimal original signed-row importance sampling has finite variance floor (absolute row mass)^2-(pickupCross)^2; no all-positive-rate arithmetic bound on the absolute row mass or signed source is supplied.",
     "When original row abs mass is positive and some row vanishes, exact absolute-row weighting cannot retain full positive original support; epsilon-regularized positive weights approach the sharp floor at bounded gap epsilon*N*A.",
     "The explicit Gibbs cost construction derives from already known original signed row weights, and does not generate original Möbius coefficients, prove independent arithmetic signs, ensure tractable evaluation or give a cusp measure limit.",
-    "The new 17 theorem declarations require pinned Lean elaboration, source closure build, fresh kernel checking, and transitive axiom auditing; no native acceptance was run."
+    "The new 17 theorem declarations require pinned Lean elaboration, source closure build, fresh kernel checking, and transitive axiom auditing; no native acceptance was run.",
+    "The existing Putnam sparse additive-gap and disjoint integer-ratio sectors have candidate all-positive-rate bounds (32/rate^2)*exp(rate*T) each; the new source exact endpoint-to-direct-core approximation pays 64/rate^2*exp(rate*T)+1/4, but does not bound the core itself.",
+    "The accessible core source estimator is unbiased for original pickupCross and has at most quarter-unit endpoint bias only IN EXPECTATION; per-realization errors are not so bounded without an independent variance/tail certificate.",
+    "The ideal endpoint curvature-corrected estimator uses endpointCurvatureDefect = endpointSum-pickupCross and requires independently computable signed curvature data for any practical unbiased endpoint algorithm; its exact identity alone is not an algorithm.",
+    "The signed dense-core unsigned-row all-positive-rate supplier remains a strictly stronger unproved hypothesis and is not inferred from stochastic variance reduction.",
+    "The conditional offcritical-zero direct-core positive spike theorem retains unported Laplace analytic Props, dyadic-energy ceiling and a hypothetical actual offcritical zeta zero; it does not establish an offcritical zero or prove RH.",
+    "The recent whole-Dirichlet-character large-modulus averaged source energy does not supply a fixed principal-character or signed original dense-core upper bound."
   ],
   "verification": {
     "source_publication": "PASS_FOURTEEN_EXACT_GITHUB_BLOB_READBACKS",
@@ -390,7 +446,14 @@
     "pinned_readback_source_revision": "e344ce83a0d7649b2f2a1872df3b6a9736022f3a",
     "all_14_Lean_source_blobs_match": "PASS",
     "sharp_variance_source_commit_combined_ci_status_count": 0,
-    "gibbs_realization_source_commit_combined_ci_status_count": 0
+    "gibbs_realization_source_commit_combined_ci_status_count": 0,
+    "new_dense_core_source_publication": "PENDING_EXACT_3_SOURCE_BLOB_READBACK",
+    "new_sparse_source_paid_core_error": "SOURCE_PROOF_CANDIDATE_IMPORTS_EXISTING_PUTNAM_UNVERIFIED",
+    "new_dense_core_control_variate": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "new_dense_core_sampling_variance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "new_dense_core_zero_witness": "CONDITIONAL_SOURCE_PROOF_CANDIDATE_ANALYTIC_GATES_OPEN",
+    "new_dense_core_high_precision_diagnostics": "NUMERICAL_ONLY_3_PHYSICAL_ENERGY_CHECKS_4_SPARSE_SPLITS_3_VARIANCE_FIXTURES",
+    "new_original_signed_dense_core_bound": "OPEN"
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
@@ -406,7 +469,10 @@
     "3fd295907b37bfaeb0472ee6269e331b060ac69d",
     "248bdb692e56ce5f93daf9307daf11bb6c5f204d",
     "2057623c233fa64a6805826a6ffe263aa6a0e475",
-    "654decf2dcd01e391241f767ae21aefdaa0e0c4f"
+    "654decf2dcd01e391241f767ae21aefdaa0e0c4f",
+    "8e3ec83415c3702c93dda4a123534fc42e161648",
+    "8c9a676a42b4c3a7a85a450bfd74f3d1b3593a82",
+    "b43b8760709e269e1e21c1707ea2ad96aaa70dcb"
   ],
   "relevant_source_inventory": [
     {
@@ -478,13 +544,13 @@
   },
   "cross_family_typed_graph": {
     "path": "documentation/mathematics/_support/reviews/shape-physical-bit-cross-family-connectivity-2026-11-02.json",
-    "blob": "efdd9a75af718576b3e739c8544f1a19eca9e1bb",
-    "new_edges": 39,
-    "unproved_transfers": 13,
-    "related_source_files": 26,
+    "blob": "5a77181a5c1e21c11f42e0b0742464f273e0d377",
+    "new_edges": 53,
+    "unproved_transfers": 18,
+    "related_source_files": 30,
     "previous_graph_path": "documentation/mathematics/_support/reviews/moebius-rh-original-source-typed-connectivity-2026-11-02.json",
     "previous_graph_blob": "3938b4a2fb0d20cacb6a863b7372ea49ea157f11",
-    "new_bridge_modules": 6
+    "new_bridge_modules": 9
   },
   "sharp_variance_review": {
     "path": "documentation/mathematics/_support/reviews/physical-moebius-sharp-sampling-variance-2026-11-02.md",
@@ -503,5 +569,34 @@
     "condition": "epsilon>0, endpointIndex T nonempty, positive normalized law",
     "arithmetic_upper": "OPEN",
     "independent_source_bound": "OPEN"
-  }
+  },
+  "dense_core_review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-dense-core-row-control-variate-2026-11-02.md",
+    "blob": "3ba05b093bfdffc76375d7d6591d9cef9c2ab6e4"
+  },
+  "new_dense_core_arithmetic_frontier": {
+    "source_window": "GRWTSK.NumberTheory.MoebiusEndpointLeastPrimeTypeII.endpointIndex T",
+    "sparse_cutoff": "putnamRateGapSet rate T = Icc 1 floor(exp(rate*T/2))",
+    "original_cross": "pickupCross T",
+    "original_endpoint": "PickupEndpointQuadrature.endpointSum T",
+    "partition": "pickupCross = endpointGapSetCross + endpointRatioOutsideGapCross + endpointDenseAddMulCoreCross",
+    "both_original_sparse_bounds": "|gap|, |ratioOutsideGap| <= (32/rate^2)*exp(rate*T), rate>0, T>=0, existing Putnam source proof candidates",
+    "derived_paid_sparse_bound": "|pickupCross-denseCore| <= (64/rate^2)*exp(rate*T), rate>0,T>=0, source candidate",
+    "derived_endpoint_source_error": "|endpointSum-denseCore| <= (64/rate^2)*exp(rate*T)+1/4, rate>0,T>=0, source candidate",
+    "original_dense_row": "denseCoreRow Q T m, exact original ordered signs / Gram / diagonal exclusion",
+    "sampled_source": "singleExpectation T w (denseCoreCrossRowEstimator Q T w) = pickupCross T, PositiveWindowLaw T w",
+    "endpoint_bias": "abs(expected genuine cross estimator - endpointSum T)<=1/4 for T>=0, not per-sample guarantee",
+    "source_variance": "source-defined cross estimator centered variance = conditioned dense-core row variance <= ordered-pair dense-core variance",
+    "ideal_curvature_calibration": "the endpoint-corrected estimator depends on endpointSum-pickupCross; not a practical free computable statistic",
+    "zero_obstruction": "hypothetical offcritical zero forces dense-core positive spikes if three independent Laplace analytic Props and dyadic ceiling hold",
+    "new_rh_strength_arithmetic_bound": "OPEN: original signed dense core on fixed AffineFrequent good-scale set",
+    "new_full_density_energy_bound": "OPEN"
+  },
+  "dense_core_acceptance_commands_NOT_RUN": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseCoreRowControlVariate.lean",
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseCoreRowSamplingVariance.lean",
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseCoreZeroWitness.lean",
+    "lake build GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDenseCoreZeroWitness",
+    "After full dependency build, #check exact theorem types and #print axioms (including imported source closure)"
+  ]
 }
