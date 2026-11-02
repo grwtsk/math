@@ -80,8 +80,8 @@
   },
   "verification": {
     "git_blob_creation": "PASS",
-    "guarded_git_publication": "PENDING",
-    "publication_exact_readback": "PENDING",
+    "guarded_git_publication": "PASS_NONFORCE_EXPECTED_HEAD",
+    "publication_exact_readback": "PASS_6_OF_6",
     "native_Lean_compilation": "NOT_RUN",
     "expected_types_universes": "NOT_RUN",
     "fresh_trust0_kernel_replay": "NOT_RUN",
@@ -98,5 +98,14 @@
     "Compile the additive CERNOpenDataWaveform module at exact pinned Lean/Mathlib source and replay expected types, fresh kernel and axiom closure.",
     "For true detector time-series data, ingest timestamped CERN signals without reinterpreting event ordinal as a clock.",
     "Use selected numeric channels for bounded finite analysis only; preserve Möbius RH input and all signed defects separately."
-  ]
+  ],
+  "publication": {
+    "commit": "1cdffe535e8fbd8d0cec79f2c56d6c8f87c38955",
+    "expected_parent": "649b290e1a42f727cedafcd8158b52cae17afcca",
+    "original_official_csv_git_blob": "4d87fe4e859802bb225d722353c10148b96e7a95",
+    "raw_source_same_blob_as_CMS_original": true,
+    "initial_manifest_blob": "ac95d9398d0cbec1e681425a817f2a62ec972a02",
+    "six_paths_verified_at_exact_commit": true,
+    "classification": "GIT_SOURCE_ACCEPTED_NOT_LEAN_KERNEL"
+  }
 }
