@@ -1,0 +1,589 @@
+{
+  "schema": "grwtsk.math.source-connections.delta.v2",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "scope": "Targeted source and issue search, including previous atlas; not an enumeration or formal check of every file in a very large repository",
+  "predecessor": "documentation/mathematics/_support/reviews/moebius-source-connections-atlas-2026-11-02.json",
+  "predecessor_blob": "8b1a09e714ed7de2e6ed3799b9de4c5385d20f09",
+  "source_original": "GRWTSK.RiemannHypothesis.CCC.pickupCross and pickupEnergy over literal mu(n), causal response and closed cutoff",
+  "new_modules": [
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusAdaptiveDecoderCertificates.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSubexponentialResolutionTransfer.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFiniteFaultPhysicalReturn.lean"
+  ],
+  "inspected_sources": [
+    {
+      "id": "original",
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+      "role": "Original real Mobius coefficients, causal pickup, full ordered Gram",
+      "relatedIssue": 15,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "primeTyping",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AutomircronCanonicalPrimeTyping.lean",
+      "blob": "df106aa19db9f5bd5226cafa9c2287945d2ccff6",
+      "role": "Original index and least-prime tag with exact source equivalence",
+      "relatedIssue": 1541,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "bitCodec",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitCodec.lean",
+      "blob": "bbcf43b2274b5a4738321fbdcd995d45deafabb3",
+      "role": "Three-valued source-derived binary presence and sign codec",
+      "relatedIssue": 1559,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "bitStream",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitGramReturn.lean",
+      "blob": "67cbc92ee2dec824d0a5c2930f0f45671dad61a9",
+      "role": "Missing/mismatched physical bit stream and full signed defect",
+      "relatedIssue": 1559,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "weightedDecoder",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusWeightedDecoderEnergyTransfer.lean",
+      "blob": "ce1f1396785fe8fb9e045440a4edce25df734326",
+      "role": "Causal waveform and inverse-sqrt weighted source error mass",
+      "relatedIssue": 1600,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "radius",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDecoderPositiveResponse.lean",
+      "blob": "35686a42c743827cad84898acd5e08f9e1fd6c37",
+      "role": "Original nonnegative causal radius waveform, full radius Gram",
+      "relatedIssue": 1603,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "decoderEnvelope",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFinitePhaseDecoderBudget.lean",
+      "blob": "f9442fbba1b5c617ccaf6234d403d9b4212cf316",
+      "role": "Pointwise actual source index ErrorCertificate and pairwise envelope",
+      "relatedIssue": 1598,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "portfolio",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUnifiedObservationPortfolio.lean",
+      "blob": "a376a6b30b66893aba7f2038e89b707f5f06ada5",
+      "role": "Five-source upper min: endpoint/RS/energy/elliptic/sparse",
+      "relatedIssue": 1607,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "integratedAtlas",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusIntegratedSourceAtlas.lean",
+      "blob": "1fb3a37cfc50f219ac5923c21afcd5d1bc7e7e1f",
+      "role": "Physical bit, genuine elliptic residual, residue gauge exact source",
+      "relatedIssue": 1607,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "adaptive",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusAdaptiveDecoderCertificates.lean",
+      "blob": "516c59a95971d44c09d05266696d0635f6f35f8e",
+      "role": "NEW certified radius meet and monotone all-method source portfolio",
+      "relatedIssue": null,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "massGrowth",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSubexponentialResolutionTransfer.lean",
+      "blob": "428391a8b48bd41cae1d85ba44f39765a44cef89",
+      "role": "NEW every-positive-rate mass growth supplies radius energy growth",
+      "relatedIssue": null,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "physicalFault",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFiniteFaultPhysicalReturn.lean",
+      "blob": "b83ee97742ed168431b2efb3d995c4f2c50ffdeb",
+      "role": "NEW finite exceptional physical stream source certificate and dyadic residue energy",
+      "relatedIssue": null,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "dyadicAbel",
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EndpointCovarianceDyadicAbel.lean",
+      "blob": "b002496144258d70e3cea4af818811692da5865a",
+      "role": "Original two-index full dyadic block cutoff and PNT as named input",
+      "relatedIssue": 1544,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "dyadicResidue",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean",
+      "blob": "07dfdae4a60b05f5da55cc20882411c85444fa82",
+      "role": "Every parity and nonunit residue class squared after complete sum",
+      "relatedIssue": 1528,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "dyadicEndpoint",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupDyadicEndpoint.lean",
+      "blob": "bf1d3ccbbe7a49033fdff0ab11176d589a1a7f31",
+      "role": "Actual dyadic time, all-rate grid and original endpoint quadrature",
+      "relatedIssue": 1406,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "transversal",
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CertifiedTransversal.lean",
+      "blob": "df720cbb72c616938635c20477430f5f0ded4021",
+      "role": "Source-covering typed relation requires actual return proof",
+      "relatedIssue": 1576,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "mertensSharp",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusQuantitativeMertensAbsoluteAbel.lean",
+      "blob": "b2fe063451f58ff9b892aa164d780bd20279192e",
+      "role": "Classical quantitative Mertens input conditional, rate-one envelope only",
+      "relatedIssue": 1568,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "quadrature",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean",
+      "blob": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+      "role": "Exact complete signed chord error <= 1/4 and finite cover consumer",
+      "relatedIssue": 1406,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "RS_readout",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupSignedQuadrature.lean",
+      "blob": "7ff19ec8169ba3cacf5f83c42c43e62536c32253",
+      "role": "Rounded original five-moment/RS observation with 3T allowance",
+      "relatedIssue": 1403,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "ellipticMatched",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
+      "blob": "df9ded979964790b92f3053efc3aedeb6e2dfa78",
+      "role": "True GoodPrimeBank count and full rough/mixed/matched signed residual",
+      "relatedIssue": 1553,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "ellipticProjective",
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/MoebiusProjectivePrimeResiduePort.lean",
+      "blob": "37bc059461e203e02b68728006353661f344f5f7",
+      "role": "Affine finite prime field plus exactly one infinity point",
+      "relatedIssue": 1597,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "rank32",
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239Curve.lean",
+      "blob": "9b489d813ddf451a7c8d164ca808fb569b29b5b8",
+      "role": "Finite exact rational point data, no full rank lower-bound acceptance",
+      "relatedIssue": 1049,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "selmer",
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticSelmerExactCard.lean",
+      "blob": "3cd6f828951732b5ec48be6991cde1a305e04ba2",
+      "role": "Finite Selmer cardinal with Sha defect; global BSD bridge open",
+      "relatedIssue": 1565,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "connes",
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticConnesLocalTrace.lean",
+      "blob": "9a8f0eb644f6db596f5f8f8ba412f508e98a804c",
+      "role": "Local count companion matrix trace not adelic spectral zero space",
+      "relatedIssue": 1565,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "torsion",
+      "path": "GRWTSK/GroupTheoryAndGeneralizations/RootedFiniteTorsionEnergy.lean",
+      "blob": "4aca86c47bcb7ec2e00a9346b4d86795e97f3d00",
+      "role": "Finite additive phase defect, not real arithmetic positivity",
+      "relatedIssue": 1542,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "CMgauge",
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMKaehlerZQGaugeFullReturn.lean",
+      "blob": "03b18190dba9e8f29c07ba26761178c9d6125df0",
+      "role": "Full signed original parity/nonunit gauge energy",
+      "relatedIssue": 1599,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "S4torus",
+      "path": "GRWTSK/Geometry/SphereFourMobiusTorusPorts.lean",
+      "blob": "39e0de0301c9480030a6f271edb2943addbe34d5",
+      "role": "S4 circle/torus coordinate views, no NS PDE covariance",
+      "relatedIssue": 1602,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "lowwave",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSignedWaveYoungTransfer.lean",
+      "blob": "b3e1ec12a113dae03ca936411739fb0de8b93b36",
+      "role": "Actual low/high tagged wave Young bridge, low all-rate OPEN",
+      "relatedIssue": 1593,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "dense",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointDenseLongGapSource.lean",
+      "blob": "db8771dd770ad097fa4a38cfe87b8e925bb594c0",
+      "role": "Original signed large additive-gap complement is the open arithmetic supplier",
+      "relatedIssue": 1556,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    },
+    {
+      "id": "sparse",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapAllRate.lean",
+      "blob": "2ccedc75331c8ec88956923f896083727d49ec4f",
+      "role": "Noncircular counted sparse-gap all-rate sector only",
+      "relatedIssue": 1556,
+      "verifiedStatus": "SOURCE_INSPECTED_NOT_NATIVE_ACCEPTANCE"
+    }
+  ],
+  "edges": [
+    {
+      "from": "primeTyping",
+      "to": "transversal",
+      "kind": "EXACT_COVERING",
+      "proofOrInterface": "canonicalIndexTransversal; original_property_of_index_property",
+      "restriction": "Original source integer n remains attached; no target reconstruction from quotient"
+    },
+    {
+      "from": "decoderEnvelope",
+      "to": "adaptive",
+      "kind": "EXACT_CERTIFICATE_MEET",
+      "proofOrInterface": "errorCertificate_radiusMeet",
+      "restriction": "Both input radii must bound same observed coefficient on same original n"
+    },
+    {
+      "from": "radius",
+      "to": "adaptive",
+      "kind": "MONOTONE_POSITIVE_RESPONSE",
+      "proofOrInterface": "radiusWave_le_of_radii_le; radiusEnergy_le_of_radii_le",
+      "restriction": "0<=T and certified nonnegative radii for energies"
+    },
+    {
+      "from": "decoderEnvelope",
+      "to": "adaptive",
+      "kind": "MONOTONE_PAIR_ENVELOPE",
+      "proofOrInterface": "errorEnvelope_le_of_radii_le",
+      "restriction": "Both ordered orientations and product error retained"
+    },
+    {
+      "from": "portfolio",
+      "to": "adaptive",
+      "kind": "MONOTONE_COMPLETE_SOURCE_PORTFOLIO",
+      "proofOrInterface": "sourcePortfolioUpper_le_of_radii_le; sourcePortfolioUpper_radiusMeet_le_left",
+      "restriction": "The same source, phase and decoder"
+    },
+    {
+      "from": "dyadicAbel",
+      "to": "portfolio",
+      "kind": "EXACT_DYADIC_COVER_AND_BOUND",
+      "proofOrInterface": "full_dyadic_cross_le_portfolio",
+      "restriction": "Source prime checks and ErrorCertificate still required"
+    },
+    {
+      "from": "dyadicResidue",
+      "to": "integratedAtlas",
+      "kind": "EXACT_SOURCE_ENERGY",
+      "proofOrInterface": "all_residue_energy_eq_twoBit_energy",
+      "restriction": "Original signed source assembled before square"
+    },
+    {
+      "from": "transversal",
+      "to": "adaptive",
+      "kind": "EXACT_SOURCE_COVERAGE",
+      "proofOrInterface": "canonicalIndexTransversal",
+      "restriction": "No general sofic operator or lossy representation theorem"
+    },
+    {
+      "from": "weightedDecoder",
+      "to": "massGrowth",
+      "kind": "ALL_RATE_ERROR_TRANSFER",
+      "proofOrInterface": "radiusEnergy_subexponential_of_mass_subexponential",
+      "restriction": "ONE fixed G, every positive exponential rate; source-index-certified eta"
+    },
+    {
+      "from": "massGrowth",
+      "to": "portfolio",
+      "kind": "CONDITIONAL_CERTIFICATE_PORTFOLIO",
+      "proofOrInterface": "sourcePortfolio_subexponential_of_observed_and_mass",
+      "restriction": "Observed signed energy all-rate still independent arithmetic premise"
+    },
+    {
+      "from": "massGrowth",
+      "to": "quadrature",
+      "kind": "CONDITIONAL_RH_CONSUMER",
+      "proofOrInterface": "riemannHypothesis_of_observedEnergy_and_subexponential_mass",
+      "restriction": "Fixed AffineFrequent G, original RiemannHypothesis, no new arithmetic supplier"
+    },
+    {
+      "from": "bitCodec",
+      "to": "physicalFault",
+      "kind": "BOUNDED_THREE_SYMBOL_READOUT",
+      "proofOrInterface": "signedPhysicalRecord_abs_le_one; physicalObservedCoeff_abs_le_one",
+      "restriction": "An invalid physical state can still decode; not evidence of validity"
+    },
+    {
+      "from": "physicalFault",
+      "to": "decoderEnvelope",
+      "kind": "EXPLICIT_SOURCE_ERROR_CERTIFICATE",
+      "proofOrInterface": "physical_fault_errorCertificate",
+      "restriction": "ExactOffFaults outside one genuine fixed finite F required"
+    },
+    {
+      "from": "physicalFault",
+      "to": "weightedDecoder",
+      "kind": "FIXED_FINITE_ERROR_SUPPORT",
+      "proofOrInterface": "weightedFaultMass_le_fixed; physical_fixedFault_uniformWeightedError",
+      "restriction": "One F across all scales, no unbounded new faults"
+    },
+    {
+      "from": "physicalFault",
+      "to": "radius",
+      "kind": "UNIFORM_RADIUS_ENERGY",
+      "proofOrInterface": "physical_fixedFault_radiusEnergy_subexponential",
+      "restriction": "No inferred observed-energy asymptotic saving"
+    },
+    {
+      "from": "physicalFault",
+      "to": "dyadicResidue",
+      "kind": "BOUNDED_PHYSICAL_VS_ALL_RESIDUES",
+      "proofOrInterface": "physical_fault_dyadic_residue_energy_comparison",
+      "restriction": "Complete mixed-parity/nonunit residue energy, two-way radius cost"
+    },
+    {
+      "from": "physicalFault",
+      "to": "CMgauge",
+      "kind": "SOURCE_PRESERVING_GAUGE_COMPATIBILITY",
+      "proofOrInterface": "exactOffFaults_godelShift plus existing compensated_original_energy",
+      "restriction": "Geometric chart shift does not repair a missing/misread bit"
+    },
+    {
+      "from": "physicalFault",
+      "to": "quadrature",
+      "kind": "CONDITIONAL_RH_CONSUMER",
+      "proofOrInterface": "riemannHypothesis_of_physical_fixedFault_observedEnergy",
+      "restriction": "Actual all-positive-rate observed energy still OPEN"
+    },
+    {
+      "from": "sparse",
+      "to": "dense",
+      "kind": "EXACT_AND_OPEN",
+      "proofOrInterface": "denseLongGapAllRateOn_iff_crossOn",
+      "restriction": "Sparse packet already paid, dense signed all-rate remains OPEN"
+    },
+    {
+      "from": "lowwave",
+      "to": "quadrature",
+      "kind": "SEPARATE_OPEN_ARITHMETIC_ROUTE",
+      "proofOrInterface": "Original low/high Young bound",
+      "restriction": "Low-wave all-rate and cross-shell aggregation not supplied"
+    },
+    {
+      "from": "mertensSharp",
+      "to": "quadrature",
+      "kind": "CONDITIONAL_RATE_ONE_ONLY",
+      "proofOrInterface": "ClassicalMertensLogPowerInput transfer",
+      "restriction": "Exponent one even with arbitrary log powers, not all-positive-rate RH"
+    },
+    {
+      "from": "rank32",
+      "to": "ellipticProjective",
+      "kind": "DISTINCT_INVARIANTS",
+      "proofOrInterface": "Finite curve record and projective count",
+      "restriction": "Mordell-Weil free rank not E(Q) torsion and not E(Fp) point count"
+    },
+    {
+      "from": "ellipticMatched",
+      "to": "portfolio",
+      "kind": "EXACT_WITH_SIGNED_RESIDUAL",
+      "proofOrInterface": "pickupCross_eq_elliptic_add_full_residual",
+      "restriction": "All unmatched rough/mixed and matched coefficient defects retained"
+    },
+    {
+      "from": "RS_readout",
+      "to": "portfolio",
+      "kind": "BOUNDED_RECONSTRUCTION",
+      "proofOrInterface": "roundedObservation_error; sourcePortfolioUpper rounded branch",
+      "restriction": "Old historical CodedMomentTransport path not found on current main; no inferred content"
+    },
+    {
+      "from": "S4torus",
+      "to": "portfolio",
+      "kind": "OPTIONAL_GATE_ONLY",
+      "proofOrInterface": "extraSourceUpper requires actual pickupCross <= candidate",
+      "restriction": "No PDE covariance or RH arithmetic gain inferred"
+    },
+    {
+      "from": "connes",
+      "to": "portfolio",
+      "kind": "OPTIONAL_GATE_ONLY",
+      "proofOrInterface": "Finite trace cannot enter without source upper theorem",
+      "restriction": "No adelic zero space / BSD central-rank comparison"
+    },
+    {
+      "from": "torsion",
+      "to": "portfolio",
+      "kind": "OPTIONAL_GATE_ONLY",
+      "proofOrInterface": "Finite phase cannot encode unbounded source index alone",
+      "restriction": "No analytic decay from torsion count"
+    },
+    {
+      "from": "selmer",
+      "to": "portfolio",
+      "kind": "OPTIONAL_GATE_ONLY",
+      "proofOrInterface": "Exact Selmer cardinal leaves Sha[p] defect",
+      "restriction": "No direct RH zero-space map"
+    },
+    {
+      "from": "CMgauge",
+      "to": "dyadicResidue",
+      "kind": "EXACT_DETECTOR",
+      "proofOrInterface": "compensated_original_energy vs completeResidueEnergy_eq_pickupEnergy",
+      "restriction": "All residue/parity channels, not sum of separate unsigned energies"
+    }
+  ],
+  "open_research": [
+    {
+      "title": "Mathieu M23",
+      "issues": [
+        175,
+        217
+      ],
+      "status": "RESEARCH_ONLY",
+      "missing": "No proved action on original Mobius source or zeta zero space"
+    },
+    {
+      "title": "Rank32 #4239",
+      "issues": [
+        1049
+      ],
+      "status": "FINITE_SOURCE_NOT_GLOBAL_RANK_PROOF",
+      "missing": "Genuine 2-descent homomorphisms and independent rank 32 verification"
+    },
+    {
+      "title": "Connes and BSD",
+      "issues": [
+        1565
+      ],
+      "status": "FINITE_COMPANION_TRACE_ONLY",
+      "missing": "True global automorphic zero space, height lattice and analytic rank comparison"
+    },
+    {
+      "title": "Weil positivity",
+      "issues": [
+        1230,
+        197
+      ],
+      "status": "FULL_TEST_SOURCE_BRIDGE_OPEN",
+      "missing": "Source-to-full-test Weil form presentation and positivity"
+    },
+    {
+      "title": "Tao/Chowla/Elliott",
+      "issues": [
+        441,
+        1526
+      ],
+      "status": "SCOPE_SPECIFIC",
+      "missing": "Uniform growing-shift Mobius weighted correlation, all rates"
+    },
+    {
+      "title": "Sarnak disjointness",
+      "issues": [
+        444
+      ],
+      "status": "NO_DIRECT_RH_CONSUMER",
+      "missing": "Exact quantitative arithmetic-dynamical adapter and entropy/normalization"
+    },
+    {
+      "title": "Farey/Fary/Kakeya",
+      "issues": [
+        1566
+      ],
+      "status": "FINITE_INCIDENCE_ONLY",
+      "missing": "True dense source upper via physical overlap and arithmetic embedding"
+    },
+    {
+      "title": "Erdos external Lean",
+      "issues": [
+        1458
+      ],
+      "status": "DIFFERENT_PINNED_TOOLCHAIN",
+      "missing": "Compatible trusted source/RH adapter"
+    },
+    {
+      "title": "Mertens and PNT",
+      "issues": [
+        1568,
+        1544
+      ],
+      "status": "CLASSICAL_INPUT_EXPLICIT_OR_RATE_ONE",
+      "missing": "One fixed affine-frequent every-positive-rate signed pickup upper"
+    },
+    {
+      "title": "RS reconstruction",
+      "issues": [
+        1403
+      ],
+      "status": "SOURCE_ROUNDED_CELL_EXISTS",
+      "missing": "Historical CodedMomentTransport main path unresolved; source-conservative code/refinement"
+    },
+    {
+      "title": "Finite zero verification",
+      "issues": [
+        135,
+        189
+      ],
+      "status": "BOUNDED_SCOPE",
+      "missing": "Complete zero multiplicities, tails and all-height analytic theorem"
+    },
+    {
+      "title": "CM winding",
+      "issues": [
+        1567,
+        1599
+      ],
+      "status": "SOURCE_RETURN_WITH_OPEN_DYNAMICS",
+      "missing": "No residue-only mode evolution without original winding labels"
+    }
+  ],
+  "total_nodes": 30,
+  "total_edges": 29,
+  "open_topic_count": 12,
+  "pin": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "validation": {
+    "static_source_inspection": true,
+    "finite_tests": "8429_PASS_NONRIGOROUS",
+    "native_lean": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "axioms": "NOT_RUN"
+  },
+  "avoided_inferences": [
+    "finite phase group encodes all original n",
+    "physical readout automatically exact",
+    "source error mass all-rate from finite tests",
+    "full RH from rate-one quantitative Mertens",
+    "M23 group acts on zeta zeros",
+    "Rank32 rational free rank identified with torsion",
+    "finite Selmer cardinal forces BSD",
+    "all residue class positive energy replaces signed full square"
+  ]
+}
