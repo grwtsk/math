@@ -6,7 +6,7 @@ Initial inspected Noeaaeue head: `218dfa95de54165b44e244f9e1a18fa409b09d6b`.
 
 ## Abstract
 
-Three new source-proof-candidate modules connect six mathematical mechanisms:
+Four new source-proof-candidate modules connect mathematical mechanisms:
 finite conjunctive inference, goal-directed pruning, proof-carrying instantiation,
 forward Horn semantics, exact representation transport, and reverse-edge
 dependency invalidation. The connections are explicit theorems about their
@@ -35,7 +35,7 @@ independent until a new exact-source check covers the composed import closure.
 | `.../TheoreticalQualification.lean` — `301228a02fca2352ad7a55f23784f39d42210be8` | `ExactRepresentation` and pointwise predicate comparison; separate signed-residual comparisons | New image/erasure bridge imports actual `ExactRepresentation`; **no** transport without a property bridge |
 | `GRWTSK/Combinatorics/FiniteDependencyClosure.lean` — `f17dc71a6fee9e75fbf3e217e86b94f6b1a0c867` | Saturation of affected consumers through finite, possibly cyclic, dependencies | New reverse-edge theorem identifies exactly when its closure equals goal prerequisites |
 | `GRWTSK/Combinatorics/FiniteDependencyExamples.lean` — `6d6fc193e99bfe9eaad5669bf199bad3a4fe7bbf` | Cyclic invalidation fixtures | Related negative controls, not evidence that the new Lean module compiled |
-| `GRWTSK/Combinatorics/DependencyGraph.lean` — `e27da6af2452f986a7fce03825b9d0ae741cfbdf` | Well-founded DAF project dependency cones | Same informal word *dependency*, but requires a distinct finite-node/path correspondence and acyclicity |
+| `GRWTSK/Combinatorics/DependencyGraph.lean` — `e27da6af2452f986a7fce03825b9d0ae741cfbdf` | Well-founded DAF project dependency cones | Exact source-level equivalence now supplied on well-founded DAF inputs, via generic least closure and reversed finite affected closure |
 | `GRWTSK/Combinatorics/FrontierAntichain.lean` — `93a25c0a8ece3b2c4552bd4870aa1af1b93092e3` | Antichain OR/AND over unresolved sets | Potential consumer of proof routes, not proved equivalent to finite Horn entailment |
 | `.../WitnessDischarge.lean` — `49186bd91a02f760839cee65874772e4da7a983f` | Witness-bearing route derivations in `Mathematics.ProofStrategy` | Different upstream route/snapshot contract; no source-exact adapter is asserted |
 | `.../RouteFrontier.lean` — `5364dcd1ddcbd76d1f804abda98801228ad1e1dc` | Certified route completion and unresolved frontiers | Do not collapse frontier classification into a positive derivation without route and seed witnesses |
@@ -149,6 +149,23 @@ conclusion-to-premise incidences.
 finite algorithms. This explains why one must reverse the graph before
 using an invalidation primitive to compute goal prerequisites.
 
+### 2.5 Well-founded DAF cones = least dependency closure
+
+[WellFoundedDependencyBridge.lean](../../../../GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/WellFoundedDependencyBridge.lean)
+imports the actual `DAF.DependencyGraph`. Its
+`dafDepClosure_iff_leastClosure` identifies well-founded dependency-cone
+membership with the generic `Closure` of the same roots and
+consumer-to-prerequisite edges, using the existing `DepReachable` and
+closure induction arguments.
+
+`dafReverseDependencies` represents each DAF edge with the orientation
+required by the separate invalidation algorithm.
+`mem_dafReverseDependencies_iff` is the exact carrier map, and
+`dafDepClosure_iff_reversedAffected` identifies the two finite sets
+after this reversal. This theorem applies on the **well-founded DAF
+source domain**. It does not embed arbitrary cyclic dependency graphs
+into DAF or assert that repository imports have been soundly extracted.
+
 ## 3. Controls and attempted falsification
 
 A local, ephemeral two-atom reference enumeration evaluated **2,048 Horn
@@ -171,11 +188,11 @@ Hostile boundaries remain:
 
 ## 4. Evidence, consumers and what remains unconnected
 
-All three new Lean files are **SOURCE_PROOF_CANDIDATE**. Native Lean
+All four new Lean files are **SOURCE_PROOF_CANDIDATE**. Native Lean
 elaboration/compilation, fresh kernel replay and transitive axiom audit
 are **NOT_RUN** for their exact bytes and complete dependency closure.
 The larger historical repository has not been fully scanned, and the
-frontier, DAF and spectral source families remain related *research leads*
+frontier and spectral source families remain related *research leads*
 rather than certified imported proof dependencies.
 
 The most consequential missing bridge is **actual elaborated-source
@@ -191,8 +208,9 @@ mutable receipts, generated views and benchmarking stay in
 
 Other open links must be separately proved before admission:
 frontier antichain algebra to a witness-bearing OR/AND inference
-semantics; well-founded DAF cones to finite cyclic closure when
-appropriate; historical GraphSandwich source identity to the current
+semantics; a faithful extractor from actual filesystem/project dependencies
+to DAF source edges (the abstract DAF mathematical equivalence is now a
+separate candidate); historical GraphSandwich source identity to the current
 tree; and quantitative signed residuals to their original source
 propositions. The direct import relation or a mathematical analogy
 does not prove any of these. Taxonomy proposals remain in
