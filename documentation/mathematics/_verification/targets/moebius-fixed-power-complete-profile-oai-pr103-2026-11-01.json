@@ -1,0 +1,144 @@
+{
+  "schema": "grwtsk.moebius-fixed-power-complete-profile-oai-pr103/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "subject": "Original complete signed Möbius geometric profile R_(7/10) and one fixed dyadic grid, two external proof chains with different trust status.",
+  "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedPowerFullProfileBalance.lean",
+  "source_blob": "553ce4c8005f2ac10e206210d9aedb24158cb57d",
+  "review": "documentation/mathematics/_support/reviews/moebius-fixed-power-complete-profile-verified-oai-pr103-2026-11-01.md",
+  "review_blob": "e5ebc0fb07baf30ddd69dacc92c7e387562b5133",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "math_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "math_lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "external_sources": {
+    "OAI_2026": {
+      "paper": "The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s)>7/8",
+      "release": "2026-09-30",
+      "repository": "openai/math",
+      "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "proof_module": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean",
+      "proof_blob": "46c67f4000906b1391a471d6e6396ac0da3c16a5",
+      "theorem": "OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re",
+      "status": "PUBLISHED_WITH_INDEPENDENT_REPORTED_PINNED_BUILD_AND_FINAL_MODULE_KERNEL_REPLAY",
+      "independent_report": "tomoto0/quasi-riemann-hypothesis-7-8-verification/lean/lean_build_report.md",
+      "report_blob": "350be16589ef5454f57a7555d6bc51730d98aec6",
+      "report_limitations": [
+        "full 2924-module additional replay timed out",
+        "official cached Mathlib olean",
+        "not separate expert peer review of entire manuscript"
+      ],
+      "adapter_to_grwtsk": "UNREPLAYED"
+    },
+    "GTimG_PR103": {
+      "repository": "GTimG/QuasiRiemannTracker",
+      "pr": 103,
+      "merge": "8b1a0167c8e324099884152181e3fb2206510e88",
+      "theorem_module": "submissions/2026-11-01-closest-fraction-contact/src/Candidate/Main.lean",
+      "theorem_blob": "808d04cec892449707d23e81f94179e2738fdf1a",
+      "supporting": "submissions/2026-11-01-closest-fraction-contact/src/Candidate/Local/Qrh/PositiveGap/BestEndpoint.lean",
+      "supporting_blob": "f10432357d29670effde475b951a8af275f32d6a",
+      "named_theorem": "Candidate.bound",
+      "theta_decimal": "0.873381966613207519929026778642",
+      "status": "MERGED_AUTHOR_REPORTED_LOCAL_237_MODULE_LEAN_BUILD_AND_STANDARD_AXIOMS",
+      "independent_pin_build": "NOT_FOUND",
+      "merge_commit_actions_runs": "NONE_RETURNED",
+      "official_comparator_admission": "NOT_EVIDENCED_HERE",
+      "GRWTSK_mod_one_adapter": "NOT_RUN"
+    }
+  },
+  "exact_original_dependences": {
+    "MertensPrimitive": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "MoebiusTwoPrimeSignedPacketCore": "af6a0b8daa8684a36dfee6e0524b7e56578d432f",
+    "MoebiusTwoPrimeRateFrontier": "025e9343e5c4c819321706d49bc81a56aa68d960",
+    "MoebiusCompleteSignedProfileClassicalPNT": "4b6f0f6c77f0e5fa5e8e3330dbdb233253628dac",
+    "MoebiusDenseSlabSignedBalance": "e71538f8da936afd646ce7e008cbc777670ef759",
+    "MoebiusStrongFixedPowerPR103": "10f2fba05c105c3e80b58ed9632901b5550444d9",
+    "MoebiusSevenEighthsSupercriticalRates": "49f930e0125d672ee341c93905339a51ab733b22",
+    "MoebiusPR103ExactEnergyAbscissa": "9a4ed819c1bb43e016f831d1f159fe1fd2a595eb"
+  },
+  "actual_mathematical_results": {
+    "fixed_original_core_parameter": "rho=7/10",
+    "OAI_theta": "22/25",
+    "OAI_energy_rate": "19/25=0.76",
+    "OAI_full_core_bound": "|profileCore(7/10,T)| <= (10*C_OAI^2+4000)*exp(19T/25) from independently checked-source OAI and classical contour",
+    "PR103_theta": "4367/5000=0.8734",
+    "PR103_energy_rate": "1867/2500=0.7468",
+    "PR103_full_core_conditional": "|profileCore(7/10,T)| <= (10*C_PR103^2+6000)*exp(1867T/2500) under separately accepted external PR103",
+    "exact_conditional_endpoints": "forall r>2*theta_PR103-1 exists K_r, forall T>=0 endpointSum(T)<=K_r*exp(rT)",
+    "fixed_grid": "T_j=j*log2 for all j>=0, alpha=1,beta=log2 independent of external rate",
+    "OAI_relative_imbalance": "O(2^(-6j/25)) of positive vs negative actual full R_(7/10) weighted populations",
+    "PR103_relative_imbalance": "O(2^(-633j/2500)) conditional on PR103",
+    "source_global_energy_coefficient": "4*C^2/(2*theta-1)^3",
+    "source_full_profile_absolute_comparison": "|R_rho|<=H+4T^2+16T(1+T)*exp(T/2)+(64T+4T^2)*exp(rho*T)",
+    "polynomial_absorption": "T<=exp(aT)/a and T^2<=2 exp(aT)/a^2 for a>0,T>=0"
+  },
+  "lean_candidate_proved_with_explicit_inputs": [
+    "verified_OAI_margin",
+    "PR103_candidate_margin",
+    "PR103_candidate_rate_comparison",
+    "OAI_complete_endpoint_rate",
+    "PR103_complete_endpoint_rate",
+    "PR103_endpoint_all_rates_above_exact",
+    "PR103_fixed_grid_above_exact",
+    "explicit_OAI_payment_checks",
+    "explicit_PR103_payment_checks"
+  ],
+  "local_unproved_premises": [
+    "PublishedOAISevenEighths",
+    "ExternalPR103ZetaNonvanishing",
+    "ZeroFreeToMertensPowerBridge",
+    "PickupVelocityPowerEnergyTransfer",
+    "CompleteProfileSourceComparison",
+    "PolynomialExponentialAbsorption"
+  ],
+  "named_unproved_core_props": [
+    "VerifiedOAICompleteCoreStrictSavingTarget",
+    "PR103CompleteCoreStrictSavingTarget",
+    "ExponentialRelativeBalanceTarget"
+  ],
+  "finite_diagnostics": {
+    "method": "Independent exact rational Fraction arithmetic for 2 theta minus one, theta0 margin, and the exact five-term geometric coefficient.",
+    "OAI": {
+      "source_energy_coefficient_4_over_s_cubed_approx": 9.1121154687,
+      "complete_other_cost_approx": 3837.650547,
+      "certified_by_script_exact_rational_comparison": "4/s^3<10; K_geom(s)<4000"
+    },
+    "PR103": {
+      "theta_minus_external_approx": 0.00001803338679248007,
+      "source_energy_coefficient_4_over_s_cubed_approx": 9.60388748696,
+      "complete_other_cost_approx": 5624.626534,
+      "certified_by_script_exact_rational_comparison": "theta0<4367/5000, 4/s^3<10, K_geom(s)<6000"
+    },
+    "status": "EXACT_RATIONAL_DIAGNOSTICS_NOT_LEAN_ACCEPTANCE"
+  },
+  "verification": {
+    "main_publication": "PENDING",
+    "local_lean_parsing": "NOT_RUN",
+    "local_compilation": "NOT_RUN",
+    "exact_type_checking": "NOT_RUN",
+    "local_fresh_kernel": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "original_source_full_profile_budget_lean_proof": "UNPROVED_PROP",
+    "original_real_absorption_lean_proof": "UNPROVED_PROP",
+    "classical_contour_bridge_lean_proof": "UNPROVED_PROP",
+    "local_native_runner": "NOT_DISPATCHED",
+    "root_import_or_dependency_changes": "NONE",
+    "authored_axioms_sorry_native": "NONE"
+  },
+  "unresolved": {
+    "PR103_independent_acceptance": "OPEN",
+    "original_all_positive_rate_on_one_affine_grid": "OPEN",
+    "canonical_RH": "OPEN",
+    "exact_PR103_boundary_attained": "NOT_CLAIMED",
+    "author_independent_RH_proof": "NOT_CLAIMED"
+  },
+  "related_issues": [
+    1556,
+    1406,
+    1429,
+    15
+  ]
+}
