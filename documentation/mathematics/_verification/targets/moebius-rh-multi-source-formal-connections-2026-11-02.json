@@ -1,0 +1,136 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "research": "Source-exact RH graph: fixed compensated core versus complete FAR, source decoder positive radius, complex Hermitian L-family Laplace",
+  "repository": "grwtsk/math",
+  "attribution": "grwtsk contributors",
+  "assistant_role": "OpenAI ChatGPT source discovery, mathematical proof composition, Lean source-candidate scripts and static validation",
+  "source_scan": {
+    "commit": "697face2b38918d5ad8f83fa854a02eb742ef37d",
+    "tree": "90bd5fcdbcd451f07b01ac0abd002d6376cd351a",
+    "zeta_tree": "a590c2fe6883c83d54e64853622e933081a18bcb",
+    "prior_Moebius_count": 156,
+    "scanned_Moebius_count": 162,
+    "added_candidate_Moebius_count": 3,
+    "expected_count_if_no_concurrent_new_files": 165,
+    "curated_nodes": 72,
+    "typed_edges": 70,
+    "graph": {
+      "path": "documentation/mathematics/_support/reviews/moebius-rh-original-source-typed-connectivity-v2-2026-11-02.json",
+      "blob": "05819ea76bb4e01253270e801e9d353c14eef3fc"
+    }
+  },
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedCoreFarCommonEnergy.lean",
+      "blob": "077bb08259d4f8090a4881441be8e0a60dc66b4f",
+      "candidate_theorems": 9,
+      "unproved_new_propositions": 1
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFamilyHermitianLaplaceZeroBarrier.lean",
+      "blob": "1bd6aa68b9e820c27967905a1d525fde986f0f5c",
+      "candidate_theorems": 2,
+      "unproved_new_propositions": 2
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDecoderCoreFarEnergyBridge.lean",
+      "blob": "edaac614423737b253572a5c84253f97fedf0e6f",
+      "candidate_theorems": 3,
+      "unproved_new_propositions": 0
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-rh-multi-source-fixedcore-far-decoder-family-2026-11-02.md",
+    "blob": "fb8b5f22ea481a4391d3d3b565a36220a4181348"
+  },
+  "existing_source_pins": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedCoreEnergyComparison.lean",
+      "blob": "82011c80d8a8dacbf3cbe13ccded229d5c24bd80"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedSublinearCompensatedEndpoint.lean",
+      "blob": "f2d9748589f5999ff667486538968d7eff5a753f"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarCompleteUpperTransfer.lean",
+      "blob": "11b3913a25626bbd4e1a593b50c31e82bac6abee"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDecoderPositiveResponse.lean",
+      "blob": "35686a42c743827cad84898acd5e08f9e1fd6c37"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionFamilySourceGraphBridge.lean",
+      "blob": "58e7475f6b933941456afe3f0ee5653e379e6c37"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionFamilySieveBridge.lean",
+      "blob": "50b874689f0b5eab0bc1d30da71494ca752ba644"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalLaplaceReciprocalControl.lean",
+      "blob": "f6ab56462cc296b3994c400bfc9622d764c2ea12"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalFarZeroForcedSpikes.lean",
+      "blob": "7ba344f93af8fbbf44d9080781617724e09829b8"
+    }
+  ],
+  "ordinary_mathematics": {
+    "genuine_source": "Original real arithmetic Möbius mu including squareful zero, fixed T_J=J log2, original physical pickupResponseGram and both ordered offdiagonal orientations",
+    "exact_mask_change": "farReducedOrLongCross(B,J)-fixedCompensatedCore(T_J)=endpointGapSetCross + weakOverlapCross + largeGcdIncomparableCross -collarIncidentCross(B,J) -shortRatioCross(B,J) -reducedCloseCross(B,J); original diagonal cancels",
+    "true_absolute_comparison": "|far-fixedCore|<=fixedCrossOriginalAbsoluteBill(T_J)+|collarIncident|+|shortRatio|+|reducedClose| without charging diagonal",
+    "fixed_cross_numerical_bill": "Conditional on already existing four elementary Props, fixedCrossOriginalAbsoluteBill(T)<=(4*T^2+32*T)*exp(sqrt T)+sqrt(2)*T for T>=4",
+    "fixed_and_far_all_rates_equivalence": "For every admissible growing genuine prime bank family, fixedCompensatedCore and original FAR have equivalent one-sided every-positive-rate dyadic upper criteria once old independent proper packet prices and fixed signed defect rate proved. Neither is asserted true.",
+    "hypothetical_zero_fixed_core": "The old original Laplace zero obstruction transports to positive fixed core spikes under independent analytic and fixed-defect source gates, no zero asserted",
+    "decoder_radius": "If original finite-index ErrorCertificate, pickupEnergy(T)<=2*observedEnergy(T)+2*radiusEnergy(T). This quantitatively pays full FAR plus |I|+|S|+|Q| and fixed core plus fixedScalarBill (T>=4). No observed/radius all-rate estimate supplied.",
+    "family_complex": "For particular normalized Dirichlet-inverse family F, original complex family pickup P_F, weighted Hermitian energy finite sigma, analytic holomorphic L_F throughout Re s>(1+sigma)/2, and exact right-line product w(w+1/2)L_F(w+1/2)Laplace(P_F)(w)=1, the standard holomorphic identity theorem gives L_F(s)!=0 throughout Re s>(1+sigma)/2.",
+    "zeta_pole_exception": "Ordinary real zeta has pole at s=1; it uses existing pole-regularized product with Z1 and RHS w-1/2. General family non-pole RHS=1 cannot silently replace this.",
+    "no_rh_closure": "Every positive-rate signed original FAR and original weighted energy at every positive damping remain OPEN; the new source representations do not supply the missing arithmetic cancellation"
+  },
+  "unproved_gates": [
+    "FixedCoreSignedDefectAllRateTarget (elementary rate uniformization, finite J initialization)",
+    "FixedGapCardTarget (old elementary source gap count)",
+    "FixedWeakPaymentTarget (old elementary physical weak cost)",
+    "FixedGcdRatioTarget (old elementary scalar floor/exp)",
+    "LargeGcdAbsoluteRootTailTarget (old elementary high gcd true physical cost)",
+    "UniformCollarAllRateTarget (old elementary high smooth proper packet)",
+    "ShortRatioUniformAllRateTarget (old elementary short comparable packet)",
+    "ReducedCloseUniformAllRateTarget (old elementary reduced close packet)",
+    "OriginalLaplaceRightLineIdentityTarget, WeightedWholePickupLaplaceHolomorphyTarget, LaplaceProductIdentityTheoremTarget (ordinary analysis, previously unported Lean)",
+    "DyadicOriginalEnergyCeilingTarget (ordinary original energy monotonicity/dyadic)",
+    "FamilyWeightedLaplaceHolomorphyTarget (complex family weighted L2)",
+    "FamilyLaplaceProductContinuationTarget (family rightline product + holomorphic identity theorem)",
+    "FamilyHermitianFiniteGramTarget, FamilyPrefixResponseReconstructionTarget (family-specific Hermitian original response return)",
+    "ErrorCertificate and observed/radius all-positive-rate arithmetic inputs (not known universally)"
+  ],
+  "trust": {
+    "github_prepublication_diff": "PENDING_GUARDED_NONFORCE_ADDITIVE",
+    "github_exact_readback": "PENDING",
+    "static_lexical_check": "PENDING_LOCAL_SOURCE_SCAN",
+    "pinned_lean_compilation": "DEFERRED_PER_USER",
+    "lean_parser": "NOT_RUN",
+    "lean_elaboration_expected_types": "NOT_RUN",
+    "fresh_independent_kernel": "NOT_RUN",
+    "transitive_axiom_opaque_native": "NOT_RUN",
+    "old_source_modified": false,
+    "original_mu_kernel_masks_cutoffs_modified": false,
+    "root_import_toolchain_changed": false,
+    "Noe_native_CI_automations_dispatched": false,
+    "full_signed_FAR_every_positive_rate": "OPEN",
+    "RiemannHypothesis": "OPEN",
+    "generalized_RiemannHypothesis": "OPEN"
+  },
+  "pinned_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "provenance_sources": [
+    "https://github.com/grwtsk/math",
+    "https://github.com/grwtsk/math/issues/1556",
+    "https://github.com/grwtsk/math/issues/1429",
+    "https://github.com/grwtsk/math/issues/1559"
+  ]
+}
