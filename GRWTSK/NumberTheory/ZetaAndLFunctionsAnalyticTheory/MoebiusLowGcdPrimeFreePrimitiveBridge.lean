@@ -236,4 +236,43 @@ theorem otherLowGcdPair_mask_symm
           · exact ⟨q,hq,Or.inl h2⟩)
     exact h' h
 
+
+/-- This is the remaining SHIFTED, COPRIME, ORIGINAL signed primitive
+bilinear arithmetic upper supplier. It is a standalone OPEN proposition,
+not a consequence of the finite termwise gcd identities or the
+nonpositive prime-dilation packet. The scale set G is fixed for all
+positive rates before any epsilon-dependent cutoff is chosen. -/
+def PrimitivePrimeFreeEveryRateOn (G : Set ℝ) : Prop :=
+  ∀ rate : ℝ, 0 < rate →
+    ∃ C R : ℝ, 0 ≤ C ∧ 0 ≤ R ∧
+      ∀ T : ℝ, T ∈ G → R ≤ T →
+        primitivePrimeFreeTripleCross
+          (GRWTSK.NumberTheory.MoebiusEndpointPutnamEnergyCounting.putnamRateGapSet
+            (rate / 2) T) T ≤ C * Real.exp (rate * T)
+
+/-- Fully explicit JOINT PREMISES for using the primitive source:
+(1) prove the true ordered finite gcd double-to-triple reindex,
+(2) prove a genuinely noncircular upper bound on the shifted
+primitive signed bilinear source, at every rate on ONE fixed G,
+(3) independently establish affine-frequency of that same G.
+No part of this conditional theorem establishes these premises. -/
+theorem riemannHypothesis_of_primitivePrimeFree_goodScales
+    {G : Set ℝ}
+    (hcover :
+      GRWTSK.Analysis.AsymptoticAnalysis.GoodScaleSubexponential.AffineFrequent G)
+    (hReindex : ExactPrimeFreeTripleReindexTarget)
+    (hPrimitive : PrimitivePrimeFreeEveryRateOn G) :
+    _root_.RiemannHypothesis := by
+  apply GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative.riemannHypothesis_of_otherLowGcd_goodScales
+    hcover
+  intro rate hrate
+  obtain ⟨C, R, hC, hR, hbound⟩ := hPrimitive rate hrate
+  refine ⟨C, R, hC, hR, ?_⟩
+  intro T hG hRT
+  have hT : 0 ≤ T := hR.trans hRT
+  rw [hReindex
+    (GRWTSK.NumberTheory.MoebiusEndpointPutnamEnergyCounting.putnamRateGapSet
+      (rate / 2) T) T hT]
+  exact hbound T hG hRT
+
 end GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge
