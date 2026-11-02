@@ -1,0 +1,92 @@
+{
+  "schema": "source-bound-verification-target/v1",
+  "repo": "grwtsk/math",
+  "created_at": "2026-11-02",
+  "head_before": "f0ac0929bde3c8e13c91331681948f74608c1005",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeRoughGapSourceReturn.lean",
+    "commit": "4d2aff68a6580ef0d08141af4278264336938f1b",
+    "blob": "d832f2d6fc021b44a89c8f8c21ff1aca71e3611c",
+    "declarations": 12,
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "authored_axiom_sorry_unsafe_scan": "NONE_SEEN"
+  },
+  "math_review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-prime-rough-gap-original-source-integration-2026-11-02.md",
+    "commit": "39dccdfddf7169e0d3ec3b2c9716646a91f4539c",
+    "blob": "cb9842609a75d4bb5fe356aa9650672991995108"
+  },
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "openai_kakeya_reference": "4eaee87548250b2682affda7d05d947c05554bae",
+    "openai_kakeya_imported": false
+  },
+  "source_closure": [
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeBlockSignedFrame.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupDyadicEndpoint.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean",
+    "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMKaehlerZQGaugeFullReturn.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapYoung.lean",
+    "GRWTSK/Combinatorics/GraphTheory/SignedIncidenceCongestion.lean",
+    "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/MoebiusProjectivePrimeResiduePort.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStereographicTubeResidual.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitGramReturn.lean"
+  ],
+  "claims": {
+    "exact_original_index_wave_partition": "LEAN_CANDIDATE",
+    "gcd_fiber_cardinality_and_finite_frame_bound": "LEAN_CANDIDATE",
+    "complete_ordered_source_rough_gap_partition": "LEAN_CANDIDATE",
+    "elliptic_full_signed_residual_cross_identity": "LEAN_CANDIDATE_CONSUMES_PREEXISTING",
+    "compensated_gauge_and_residue_energy_return": "LEAN_CANDIDATE_CONSUMES_PREEXISTING",
+    "rough_near_and_intra_allrate_ordinary_mathematics": "PAPER_PROOF_NOT_FULLY_IMPLEMENTED_IN_LEAN",
+    "far_rough_all_positive_rate": "OPEN_UNPROVED",
+    "unconditional_original_signed_endpoint_P": "OPEN_UNPROVED",
+    "canonical_RH": "OPEN_UNPROVED"
+  },
+  "independent_finite_diagnostic": {
+    "run": "LOCAL_FINITE_NUMERICAL",
+    "input_source": "/mnt/data/rough_gap_source_preflight.py",
+    "result": "/mnt/data/rough_gap_source_preflight.json",
+    "j_values": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "actual_source_signed_cross_reconstructed": true,
+    "at_j_10": {
+      "Q": 30,
+      "near_gap": 8,
+      "internal": -39.512999,
+      "near": 0.739725,
+      "far": 2.808467,
+      "original": -35.964807
+    },
+    "audio_bytes_published": false
+  },
+  "verification": {
+    "lean_compilation": "NOT_RUN",
+    "expected_type_checking": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_and_opaque_closure_audit": "NOT_RUN",
+    "runtime_available": false,
+    "remote_dispatch": false,
+    "commands_requested_not_executed": [
+      "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusPrimeRoughGapSourceReturn",
+      "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeRoughGapSourceReturn.lean",
+      "lake env leanchecker --help",
+      "#print axioms GRWTSK.NumberTheory.Moebius.PrimeRoughGapSourceReturn.gauged_energy_eq_original_rough_partition",
+      "#print axioms GRWTSK.NumberTheory.Moebius.PrimeRoughGapSourceReturn.riemannHypothesis_of_rough_partition_good_scales"
+    ]
+  },
+  "remaining": [
+    "Elaborate the exact 12 source proof scripts under pinned Lean and verify type signatures.",
+    "Prove selected rough-index degree estimate from pinned signed-incidence theorem and gcd-fiber cardinality, then derive its source-integrated rate on one fixed Q_j/H_j schedule.",
+    "Construct a genuinely sign-specific noncircular Kakeya/Fourier/sieve comparison controlling the exact far rough-index packet at every positive rate.",
+    "Connect it to the existing fixed-scale dyadic endpoint consumer and audit canonical RH closure."
+  ]
+}
