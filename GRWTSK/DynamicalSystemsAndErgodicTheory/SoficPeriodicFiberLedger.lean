@@ -40,14 +40,7 @@ universe u v x y
 variable {State : Type u} {Alphabet : Type v}
 variable [Fintype State] [DecidableEq State] [Fintype Alphabet]
 
-/-- The admitted period-n label blocks are finite whenever the
-actual alphabet is finite. No sofic graph state-count hypothesis
-is needed for this finite alphabet-indexed type. -/
-noncomputable instance periodLabelFintype
-    (language : List Alphabet → Prop) (n : ℕ) (hn : 0 < n) :
-    Fintype (PeriodicLabelPoint language n hn) := by
-  classical
-  exact Fintype.ofFinite _
+/-- Periodic-label finiteness is supplied by the defining matrix module. -/
 
 /-- The map from based graph cycles to true periodic factor-language
 points must be constructed from the ACTUAL cycle, and must preserve
@@ -88,10 +81,11 @@ noncomputable def liftFiberCount
   classical
   exact Fintype.card {c : BasedCycleData G n // f c = p}
 
-/-- The original finite matrix trace is the exact sum of ALL
-graph-cycle lift multiplicities over the admitted label points.
-The given map must be source-bound; this identity does NOT
-manufacture its existence from language equality. -/
+/-- The original matrix trace is the sum of exact lift fibers
+for any supplied map. The hLabels premise documents its intended
+SOURCE-bound meaning, but finite fiber partition itself depends only
+on the chosen function; it does NOT prove that a label-preserving map
+exists for an arbitrary source language. -/
 theorem trace_eq_sum_label_lift_fibers
     (G : LabeledGraph State Alphabet)
     (language : List Alphabet → Prop)

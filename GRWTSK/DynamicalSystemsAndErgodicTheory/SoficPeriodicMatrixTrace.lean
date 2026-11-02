@@ -49,7 +49,7 @@ noncomputable def basedClosedWalkCount (G : LabeledGraph State Alphabet)
     (n : ℕ) : ℕ :=
   ∑ s : State, labeledWalkCount G n s s
 
-/-- Real matrix multiplication exactly follows the last-edge
+/-- Natural-number matrix multiplication exactly follows the last-edge
 recurrence, at every length and both original graph endpoints. -/
 theorem labeledAdjacency_pow_apply_eq_walkCount
     (G : LabeledGraph State Alphabet) (n : ℕ) :
@@ -152,15 +152,26 @@ def PeriodicLabelPoint
       ∀ word : List Alphabet,
         HasFiniteBlock (repeatBlock hn letters) word → language word }
 
+/-- A period-n label point is a subtype of the finite space
+Fin n → Alphabet. Its finiteness belongs to this defining module:
+later consumers cannot supply an instance for an earlier theorem. -/
+noncomputable instance periodicLabelPointFintype
+    (language : List Alphabet → Prop) (n : ℕ) (hn : 0 < n) :
+    Fintype (PeriodicLabelPoint language n hn) := by
+  classical
+  exact Fintype.ofFinite _
+
 /-- A based-cycle cardinal theorem is independent from the source
 matrix recurrence; it must count actual finite edge/path data. -/
 def ExactBasedCycleCard (G : LabeledGraph State Alphabet) (n : ℕ)
     [Fintype (BasedCycleData G n)] : Prop :=
   Fintype.card (BasedCycleData G n) = basedClosedWalkCount G n
 
-/-- A period-preserving AND ACTUAL-LABEL-PRESERVING bijection is the
-precise extra hypothesis needed to descend from the graph trace to
-periodic label points. Ordinary equality of whole languages is NOT it. -/
+/-- The graph trace agrees with periodic label-point cardinality
+when the supplied cycle/label equivalence preserves the actual word.
+Exact-language and label-compatibility hypotheses encode its intended
+source semantics; they DO NOT construct the equivalence. Its existence
+must be proved independently for the selected presentation. -/
 theorem periodicLabelPoint_card_eq_trace_of_exact_lifts
     (G : LabeledGraph State Alphabet)
     (language : List Alphabet → Prop)
