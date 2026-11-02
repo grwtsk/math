@@ -1,0 +1,497 @@
+{
+  "schema": "grwtsk.math.source-relations.v1",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "repository_scope": "Zeta source directory listing returned a capped 1000 entries; this inventory identifies inspected directly relevant interfaces, not every module in the repository",
+  "primary_arithmetic_source": "GRWTSK.RiemannHypothesis.CCC.pickupCross",
+  "primary_energy": "GRWTSK.RiemannHypothesis.CCC.pickupEnergy",
+  "original_completion": "_root_.RiemannHypothesis",
+  "sources": [
+    {
+      "id": "original_pickup",
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+      "role": "actual signed Mobius coefficients, causal response and ordered Gram",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "finite_response",
+      "path": "GRWTSK/MeasureAndIntegration/FiniteResponseSum.lean",
+      "blob": "15402baec3be3c090a23f9ac1943124e16357dd0",
+      "role": "closed-inventory exact physical-time response",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "five_moments",
+      "path": "GRWTSK/MeasureAndIntegration/PickupCellQuadratic.lean",
+      "blob": "e57f87c19acc0adb45f740dfee8b3e06e4d5b57c",
+      "role": "original signed square minus diagonal, five moments",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "prime_source",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AutomircronCanonicalPrimeTyping.lean",
+      "blob": "df106aa19db9f5bd5226cafa9c2287945d2ccff6",
+      "role": "faithful SourceAtom original integer",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "two_bits",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitCodec.lean",
+      "blob": "bbcf43b2274b5a4738321fbdcd995d45deafabb3",
+      "role": "three-valued integer Mobius represented with two symbolic bits",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "physical_stream",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PhysicalMoebiusBitGramReturn.lean",
+      "blob": "67cbc92ee2dec824d0a5c2930f0f45671dad61a9",
+      "role": "complete source-minus-physical signed defect",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "finite_torsion",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFiniteTorsionResolutionReturn.lean",
+      "blob": "77b6af2581e21edc4e8a471fe42de3032c6f25cc",
+      "role": "phase capacity and original source attachment",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "decoded_pair",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFinitePhaseDecoderBudget.lean",
+      "blob": "f9442fbba1b5c617ccaf6234d403d9b4212cf316",
+      "role": "original-indexed per-coefficient radius and pair envelope",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "decoder_energy",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusWeightedDecoderEnergyTransfer.lean",
+      "blob": "ce1f1396785fe8fb9e045440a4edce25df734326",
+      "role": "inverse-square-root weighted error mass and energy",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "positive_radius",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDecoderPositiveResponse.lean",
+      "blob": "35686a42c743827cad84898acd5e08f9e1fd6c37",
+      "role": "positive response radius energy, two active moments",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "elliptic_port",
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPrimeResidueFiberPorts.lean",
+      "blob": "e7f5901f929bf999d15772f1b92cf3460023623d",
+      "role": "actual integral Weierstrass affine prime fiber",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "projective_port",
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/MoebiusProjectivePrimeResiduePort.lean",
+      "blob": "37bc059461e203e02b68728006353661f344f5f7",
+      "role": "affine fiber plus point at infinity",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "elliptic_packet",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
+      "blob": "df9ded979964790b92f3053efc3aedeb6e2dfa78",
+      "role": "genuine elliptic matched trace plus complete signed residual",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "rs_quadrature",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupSignedQuadrature.lean",
+      "blob": "7ff19ec8169ba3cacf5f83c42c43e62536c32253",
+      "role": "source-derived rounded RS cell observation",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "endpoint",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean",
+      "blob": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+      "role": "quarter-unit quadrature, endpoint hybrid",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "good_scales",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GoodScaleEnergyCriterion.lean",
+      "blob": "ca3ae4975b20cf796a167308a9e87546c6001c41",
+      "role": "fixed affine-frequent all-positive-rate RH consumer",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "sparse_gap",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapAllRate.lean",
+      "blob": "2ccedc75331c8ec88956923f896083727d49ec4f",
+      "role": "noncircular sparse source original pair bound",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "dense_gap",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointDenseLongGapSource.lean",
+      "blob": "db8771dd770ad097fa4a38cfe87b8e925bb594c0",
+      "role": "unproved dense original signed complement, RH-strength",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "young_low_wave",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSignedWaveYoungTransfer.lean",
+      "blob": "b3e1ec12a113dae03ca936411739fb0de8b93b36",
+      "role": "dyadic original high-low source Young bound, low supplier open",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "farey_kakeya",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFareyFaryKakeyaIncidence.lean",
+      "blob": "5e55acad7ac04a4250aeecbac59447ce5e54a843",
+      "role": "finite tube overlap and signed residual, no global density bound",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "cm_gauge",
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMKaehlerZQGaugeFullReturn.lean",
+      "blob": "03b18190dba9e8f29c07ba26761178c9d6125df0",
+      "role": "compensated all-parity all-residue dyadic pickupEnergy",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "cm_anchor",
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMKaehlerZQGaugedResidueAnchor.lean",
+      "blob": "da022506198d00d8a49cbbd09661a04788fcb660",
+      "role": "integers to rational Kahler and chosen U(1) sector packets",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "torsion_energy",
+      "path": "GRWTSK/GroupTheoryAndGeneralizations/RootedFiniteTorsionEnergy.lean",
+      "blob": "4aca86c47bcb7ec2e00a9346b4d86795e97f3d00",
+      "role": "finite additive phase defect is not analytic cancellation",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "elliptic_connes",
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticConnesLocalTrace.lean",
+      "blob": "9a8f0eb644f6db596f5f8f8ba412f508e98a804c",
+      "role": "finite local companion trace from true finite-field point count",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "connes_jordan",
+      "path": "GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ConnesCentralRootSpaceObstruction.lean",
+      "blob": "23390402eb3ad43579a740c7efa5559e136605ab",
+      "role": "generalized root-space differs from ordinary kernel",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "rank32_curve",
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239Curve.lean",
+      "blob": "9b489d813ddf451a7c8d164ca808fb569b29b5b8",
+      "role": "finite exact rational curve data, rank lower bound not accepted",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "rank32_torsion",
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239NativeTwoTorsion.lean",
+      "blob": "bcb50256fecda780583fc70b7b2e6f854fd5323b",
+      "role": "native rational two-torsion obstruction, not rank32",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "selmer",
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticSelmerExactCard.lean",
+      "blob": "3cd6f828951732b5ec48be6991cde1a305e04ba2",
+      "role": "exact finite Selmer cardinal identities with Sha defect and source maps required",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "sphere_torus",
+      "path": "GRWTSK/Geometry/SphereFourMobiusTorusPorts.lean",
+      "blob": "39e0de0301c9480030a6f271edb2943addbe34d5",
+      "role": "source S4 torus view and finite mode energy, no full NS covariance",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "new_atlas",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusIntegratedSourceAtlas.lean",
+      "blob": "1fb3a37cfc50f219ac5923c21afcd5d1bc7e7e1f",
+      "role": "new exact cross-source source return and projective/gauge code",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    },
+    {
+      "id": "new_portfolio",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUnifiedObservationPortfolio.lean",
+      "blob": "a376a6b30b66893aba7f2038e89b707f5f06ada5",
+      "role": "new source-grounded upper portfolio and physical stream adapter",
+      "verification": "SOURCE_PROOF_CANDIDATE; NATIVE_NOT_RUN_UNLESS_SEPARATELY_DOCUMENTED"
+    }
+  ],
+  "edges": [
+    {
+      "from": "finite_response",
+      "to": "original_pickup",
+      "kind": "EXACT",
+      "basis": "wholePickup_fixed_inventory",
+      "gate": "0<=u<=T"
+    },
+    {
+      "from": "prime_source",
+      "to": "original_pickup",
+      "kind": "EXACT",
+      "basis": "typedCross_eq_pickupCross",
+      "gate": "SourceAtom contains n including 1"
+    },
+    {
+      "from": "two_bits",
+      "to": "new_atlas",
+      "kind": "EXACT",
+      "basis": "twoBit_exact",
+      "gate": "codec source-derived from actual Mobius"
+    },
+    {
+      "from": "physical_stream",
+      "to": "new_portfolio",
+      "kind": "EXACT_WITH_DEFECT",
+      "basis": "physical_packet_eq_phase_observed; physical_defect_eq_phase_signedLoss",
+      "gate": "missing/wrong-index retain defect"
+    },
+    {
+      "from": "finite_torsion",
+      "to": "new_atlas",
+      "kind": "EXACT_CAPACITY",
+      "basis": "indexed_phase_injective; projective_elliptic_label_capacity",
+      "gate": "finite group only; full original index remains"
+    },
+    {
+      "from": "elliptic_port",
+      "to": "projective_port",
+      "kind": "EXACT_COUNT",
+      "basis": "projective_card",
+      "gate": "point at infinity included once"
+    },
+    {
+      "from": "elliptic_packet",
+      "to": "new_atlas",
+      "kind": "EXACT_WITH_DEFECT",
+      "basis": "pickupCross_eq_elliptic_add_full_residual",
+      "gate": "good prime bank, rough/mixed/matched defect retained"
+    },
+    {
+      "from": "sparse_gap",
+      "to": "dense_gap",
+      "kind": "EXACT_PARTITION",
+      "basis": "denseLongGapAllRateOn_iff_crossOn",
+      "gate": "long-gap rate premise remains open"
+    },
+    {
+      "from": "rs_quadrature",
+      "to": "new_atlas",
+      "kind": "BOUNDED_ERROR",
+      "basis": "rounded_vs_twoBit_cross",
+      "gate": "0<=T, full 3T allowance"
+    },
+    {
+      "from": "endpoint",
+      "to": "new_portfolio",
+      "kind": "BOUNDED_ERROR",
+      "basis": "endpoint_le_sourcePortfolioUpper_quarter",
+      "gate": "0<=T, one quarter-unit"
+    },
+    {
+      "from": "positive_radius",
+      "to": "new_portfolio",
+      "kind": "BOUNDED_ERROR",
+      "basis": "cross_le_decoder_energy_upper",
+      "gate": "certified original coefficient radii"
+    },
+    {
+      "from": "cm_gauge",
+      "to": "new_atlas",
+      "kind": "EXACT_ENERGY",
+      "basis": "dyadic_gauge_twoBit_energy_return",
+      "gate": "full compensated residue/parity detector and T>=0"
+    },
+    {
+      "from": "new_atlas",
+      "to": "new_portfolio",
+      "kind": "EXACT_SOURCE_ADAPTER",
+      "basis": "sourcePortfolioUpper; physicalIndexPhase",
+      "gate": "source and time unchanged"
+    },
+    {
+      "from": "new_portfolio",
+      "to": "good_scales",
+      "kind": "CONDITIONAL_ANALYTIC_RETURN",
+      "basis": "riemannHypothesis_of_sourcePortfolio_good_scales",
+      "gate": "fixed AffineFrequent G and all positive rates"
+    },
+    {
+      "from": "farey_kakeya",
+      "to": "new_portfolio",
+      "kind": "OPTIONAL_OPEN_ADAPTER",
+      "basis": "extraSourceUpper; cross_le_extraSourceUpper",
+      "gate": "actual pickupCross <= candidate required"
+    },
+    {
+      "from": "young_low_wave",
+      "to": "good_scales",
+      "kind": "OPEN_ARITHMETIC",
+      "basis": "source-specific low-wave/cross-shell supplier not yet proved",
+      "gate": "all rate low energies and shells"
+    },
+    {
+      "from": "rank32_curve",
+      "to": "rank32_torsion",
+      "kind": "DISTINCT_INVARIANTS",
+      "basis": "free Mordell-Weil rank not torsion",
+      "gate": "true 2-descent independent supplier"
+    },
+    {
+      "from": "elliptic_connes",
+      "to": "connes_jordan",
+      "kind": "DISTINCT_INVARIANTS",
+      "basis": "local finite traces not adelic spectral zero spaces",
+      "gate": "genuine operator/zero-space bridge"
+    },
+    {
+      "from": "selmer",
+      "to": "good_scales",
+      "kind": "OPEN_NOT_AUTOMATIC",
+      "basis": "Selmer and Sha cardinal identity does not bound RH signed pickup",
+      "gate": "global L-function bridge missing"
+    },
+    {
+      "from": "sphere_torus",
+      "to": "new_portfolio",
+      "kind": "OPTIONAL_OPEN_ADAPTER",
+      "basis": "typed source-port alone not a full PDE-energy-to-Mobius estimate",
+      "gate": "source upper gate"
+    }
+  ],
+  "research_boundaries": [
+    {
+      "topic": "M23 Galois and finite seven-candidate descent",
+      "issues": [
+        175,
+        217
+      ],
+      "status": "RESEARCH_ONLY",
+      "missing": "genuine source-acting representation and checked arithmetic return"
+    },
+    {
+      "topic": "Rank32 curve 4239 and 2-descent",
+      "issues": [
+        1049
+      ],
+      "status": "FINITE_EVIDENCE_NOT_RANK_PROOF",
+      "missing": "actual 2-descent homomorphisms and global Mordell-Weil independence"
+    },
+    {
+      "topic": "Connes and BSD root spaces",
+      "issues": [
+        1565
+      ],
+      "status": "FINITE_TRACE_ONLY",
+      "missing": "automorphic spectral bridge and analytic rank comparison"
+    },
+    {
+      "topic": "Weil quadratic full-test positivity",
+      "issues": [
+        1230,
+        197
+      ],
+      "status": "CONDITIONAL_PRESENTATION",
+      "missing": "source-exact growing-test presentation and uniform positivity"
+    },
+    {
+      "topic": "Tao/Chowla/Elliott",
+      "issues": [
+        441,
+        1526
+      ],
+      "status": "SCOPE_SEPARATION",
+      "missing": "uniform growing-shift signed correlation and summed endpoint control"
+    },
+    {
+      "topic": "Sarnak disjointness",
+      "issues": [
+        444,
+        439
+      ],
+      "status": "OPTIONAL_RESEARCH",
+      "missing": "dynamical representation yielding source-specific quantitative bound"
+    },
+    {
+      "topic": "Farey, Fary, Putnam, Kakeya",
+      "issues": [
+        1566
+      ],
+      "status": "FINITE_COUNT_SOURCE",
+      "missing": "dense arithmetic remainder and physical intersection family"
+    },
+    {
+      "topic": "Erdos and Tao external adapters",
+      "issues": [
+        1458
+      ],
+      "status": "TOOLCHAIN_DIFFERENT",
+      "missing": "verified source-specific RH interface"
+    },
+    {
+      "topic": "Reed-Solomon moment transport",
+      "issues": [
+        1403
+      ],
+      "status": "EXACT_CELL_OBSERVATIONS",
+      "missing": "concrete code/projector and bounded reconstruction for original source"
+    },
+    {
+      "topic": "CM winding and gauge",
+      "issues": [
+        1567,
+        1599
+      ],
+      "status": "SOURCE_RETURN_OR_BRANCH_ONLY",
+      "missing": "all-modulus winding and physical connection if claimed"
+    },
+    {
+      "topic": "Canonical RH",
+      "issues": [
+        15,
+        1406,
+        1600,
+        1603
+      ],
+      "status": "GLOBAL_ARITHMETIC_OPEN",
+      "missing": "all-positive-rate signed growth on one fixed AffineFrequent G"
+    }
+  ],
+  "verification": {
+    "source_publication": "PENDING_COMMIT",
+    "native_lean": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "numeric_diagnostics": "PASS_681_NONRIGOROUS_FINITE_ARITHMETIC_ASSERTIONS_NOT_LEAN",
+    "numeric_preflight": {
+      "precision_digits": 45,
+      "original_indices_max": 32,
+      "horizons": 9,
+      "physical_stream_families": 4,
+      "script_sha256": "6b6817b1a7fed12f908c370ec19185ef535bf87876e5dfed3cdda86b20c2ff2a",
+      "result_sha256": "9e356c6a20e7b3bae2efc1baf18417f5c16131ad31641e0f904e2f1e8cc0c6d5",
+      "elliptic_test_boundary": "algebraic fixture only, not genuine prime count",
+      "source": "conversation local temporary filesystem; not committed"
+    }
+  },
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "do_not_infer": [
+    "RH",
+    "Rank32 verified from finite data",
+    "M23 zeta action",
+    "elliptic rank = torsion",
+    "signed off-diagonal positivity",
+    "Fary planarity gives bounded congestion",
+    "finite code implies global arithmetic growth"
+  ]
+}
