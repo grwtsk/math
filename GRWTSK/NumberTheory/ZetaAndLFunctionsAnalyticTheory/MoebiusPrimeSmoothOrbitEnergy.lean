@@ -200,6 +200,7 @@ theorem orbitCross_subexponentialOn_iff_pickupEnergy
     have hd := hdecomp (B T) T hT
     linarith
 
+
 /-- The complete between-core packet cannot be more negative than the
 same-core orbit energy.  This is an exact consequence of positivity of the
 unchanged total causal energy, not a sectorwise positivity assertion. -/
@@ -334,6 +335,7 @@ def PrimeSmoothOrbitEulerCostPhaseTransition : Prop :=
           C * Real.exp (ε * T) <
             primeSmoothOrbitCost
               (causalNearCriticalPrimeBand α T))
+
 
 /-- The paper-proved fifth-power Mertens spike detector localizes inside the
 complete net between-core packet after the same-core orbit payment.  This is
