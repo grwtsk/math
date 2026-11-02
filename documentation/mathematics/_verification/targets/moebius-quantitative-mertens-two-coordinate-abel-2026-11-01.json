@@ -1,0 +1,68 @@
+{
+  "schema": "grwtsk.moebius-quantitative-Mertens-Euler-two-coordinate-Abel/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "source_commit_context": "Source proof candidate against grwtsk/math/main, exact parent SHA bound at guarded commit",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusQuantitativeMertensEulerPrefix.lean",
+      "blob": "a3b95518661d541c9a13766466ba582109140fd1"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTwoCoordinateCausalAbel.lean",
+      "blob": "d65c0d3a8475897bfe979c22407c631fbcd7cd7b"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-quantitative-mertens-two-coordinate-abel-2026-11-01.md",
+    "blob": "260c108b22a438387829ab2b359a9c0cb1f1f8b3"
+  },
+  "existing_owner_files": [
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeSmoothFiniteConvolution.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusBalancedTwoSidedPNTDense.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalPhysicalGramIntegrability.lean"
+  ],
+  "mathematical_scope": {
+    "original_coefficients": "taggedMoebius B.primes true/false, original moebiusReal",
+    "bank_factors": "W_P=prod(1-1/p)^-1 and V_P=prod(1-p^-1/2)^-1, no bank-independent constant asserted",
+    "prefix": "For each positive N, finite original rough and matched Mertens prefixes bounded using exact selected-prime smooth convolution and minimum of external Mertens/trivial bounds",
+    "rectangle": "For every true finite prime bank, both ordered tags a,b and two source positive integer intervals, |original full signed causal Gram rectangle| <= H_a H_b pickupResponseGram T (X+1) (Y+1), with H from genuine finite original Euler prefix endpoints",
+    "masked_dense": "Existing original Putnam short-gap plus diagonal must still be paid separately; no replacement kernel or RH conclusion"
+  },
+  "explicit_unproved_local_premises": {
+    "QuantitativeMertensLogPower": "External independently established arithmetic theorem; no Lean port/zero-free-region closure in this increment",
+    "FiniteSmoothEulerSplit": "Elementary geometric prime-smooth finite sum to Euler factor inequality; proof in review but Lean proof NOT_FORMALIZED"
+  },
+  "test_receipts": {
+    "exact_rational_Abel_and_telescoping_checks": 64,
+    "finite_source_convolution_and_Mertens_Euler_check_assertions": 7200,
+    "finite_original_Gram_integral_comparisons": 36,
+    "max_float_rectangle_discrepancy": "6.392456008974534e-16",
+    "finite_sample_Mertens_constant": "3.9328147510612514 (not universal)",
+    "certification": "NONE; finite diagnostics only"
+  },
+  "verification": {
+    "publication": "PENDING",
+    "parsing": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "lean_admission_of_quantitative_Mertens": "OPEN",
+    "lean_admission_of_Euler_split": "OPEN",
+    "source_two_coordinate_candidate": "NOT_RUN",
+    "global_dense_all_positive_rate": "OPEN",
+    "RH": "OPEN"
+  },
+  "related_issues": [
+    1556,
+    1544,
+    441,
+    1429
+  ]
+}
