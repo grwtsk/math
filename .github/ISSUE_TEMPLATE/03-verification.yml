@@ -1,0 +1,39 @@
+name: Source-bound verification request
+description: Record a precise mathematical verification target without dispatching a checker.
+title: "[verification] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Noeaaeue owns effectful verification and mutable receipts. Filing this issue does not run an agent or certify a claim.
+  - type: textarea
+    id: target
+    attributes:
+      label: Pinned source and declaration
+      description: Exact commit/blob, file path, theorem, dependencies and intended source.
+    validations:
+      required: true
+  - type: checkboxes
+    id: layers
+    attributes:
+      label: Requested evidence
+      options:
+        - label: Source-object correspondence
+        - label: Lean compilation/elaboration
+        - label: Fresh kernel replay
+        - label: Transitive axiom/trust audit
+        - label: Analytical proof or hostile counterexample test
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Current evidence and evidence gaps
+      description: Supply existing source-bound results; mark absent checks NOT_RUN.
+    validations:
+      required: false
+  - type: textarea
+    id: consumer
+    attributes:
+      label: Consumer, acceptance criterion and remaining risks
+      description: What would the check establish and what would remain unresolved?
+    validations:
+      required: false
