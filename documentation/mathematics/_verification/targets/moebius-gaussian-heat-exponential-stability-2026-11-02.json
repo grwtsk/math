@@ -1,0 +1,127 @@
+{
+  "schema": "grwtsk.math.verification.target.v1",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "source_status": "SOURCE_PROOF_CANDIDATE",
+  "title": "Original Möbius Gaussian shrinking heat: exponential error-radius bound and absolutely stable signed cross/endpoint return",
+  "pins": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "files": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatSharpSourceEnvelope.lean",
+      "sha": "bb74da49d0f69d3accdb43281b67b8a800ea03ee",
+      "public_theorems": 8,
+      "private_theorems": 1,
+      "definitions": 0,
+      "imports": [
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianHeatVanishingSchedule",
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusQuantitativeMertensAbsoluteAbel",
+        "Mathlib.Tactic"
+      ],
+      "expected_declarations": [
+        "endpoint_invsqrt_sum_le_two_sqrt_exp",
+        "sourceHeat_mass_le_two_sqrt_exp",
+        "vanishingHeat_mass_sharp",
+        "vanishingHeat_radiusEnergy_exponential",
+        "source_response_wave_abs_le_four_sqrt_exp",
+        "wholePickup_abs_le_four_sqrt_exp",
+        "sourceHeatWave_abs_le_four_sqrt_exp",
+        "vanishingHeat_errorWave_abs_le_exponential"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatAbsoluteEnergyStability.lean",
+      "sha": "eb3d30a9b103fe8a26e1f1448c6f9d8d44fd86cf",
+      "public_theorems": 9,
+      "private_theorems": 2,
+      "definitions": 1,
+      "imports": [
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianHeatSharpSourceEnvelope",
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.DyadicSignedResidueWaveform",
+        "Mathlib.Tactic"
+      ],
+      "expected_declarations": [
+        "vanishingHeat_signed_square_pointwise",
+        "vanishingHeat_abs_energy_difference_exponential",
+        "vanishingHeat_abs_energy_difference_le_192",
+        "dyadic_residue_energy_vs_vanishing_heat",
+        "heatCorrectedCross",
+        "originalCross_heatCorrectedCross_abs_exponential",
+        "originalCross_heatCorrectedCross_abs_le_192",
+        "endpointSum_heatCorrectedCross_abs_exponential",
+        "heatCorrectedCross_subexponential_iff_original",
+        "riemannHypothesis_of_heatCorrectedCross_good_scales"
+      ]
+    }
+  ],
+  "documentation": [
+    {
+      "path": "documentation/mathematics/_support/reviews/moebius-gaussian-heat-exponential-absolute-stability-2026-11-02.md",
+      "sha": "485a3699692802e688a9aa21e752d5a34aabf8d9"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/moebius-gaussian-exponential-source-relations-2026-11-02.json",
+      "sha": "9f044d4e873b196d134dc0966323c8626519747b"
+    }
+  ],
+  "exact_source": "Original arithmetic mu(n), original integer n, original causal response pickupResponse(n,u), closed endpointIndex(T), original all-ordered signed Gram, pickupDiagonal(T), pickupCross(T), pickupEnergy(T), endpointSum(T)",
+  "key_math": [
+    "M_heat(T) <=2*T²*exp(-3T/2), T>=0",
+    "radiusEnergy <=16*T^5*exp(-3T), T>=0",
+    "abs(pickupEnergy-sourceHeatEnergy)<=32*T^3*exp(-T)<=192, T>=0",
+    "heatCorrectedCross:=sourceHeatEnergy-original pickupDiagonal",
+    "abs(pickupCross-heatCorrectedCross)<=32*T^3*exp(-T)<=192",
+    "abs(endpointSum-heatCorrectedCross)<=1/4+32*T^3*exp(-T)",
+    "SubexponentialOn heatCorrectedCross G iff SubexponentialOn pickupCross G on ONE fixed set G; neither premise is proven",
+    "conditional canonical _root_.RiemannHypothesis consumer preserves fixed AffineFrequent G requirement"
+  ],
+  "verification": {
+    "source_lexical": "PASS_BALANCED_DELIMITERS_NO_AUTHORED_SORRY_AXIOM_UNSAFE",
+    "native_lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "numerical_preflight": "PASS_14493_ASSERTIONS_65DPS_NONRIGOROUS",
+    "no_runner_dispatched": true
+  },
+  "preflight": {
+    "script": "/mnt/data/moebius_heat_exponential_stability_preflight_20261102.py",
+    "sha256": "5c8b2e2f6fc4056f4dae0b42ccf5904cbadd1cd68399a1ac48c9a777a9916fa6",
+    "results": "/mnt/data/moebius_heat_exponential_stability_preflight_20261102.json",
+    "results_sha256": "cb30865897d45774c5c88e4b05c929041e30162fad31134570f25efb8c644958",
+    "source_cutoffs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      11,
+      16,
+      23,
+      29,
+      40,
+      64,
+      80,
+      110,
+      128
+    ],
+    "tests": 14493,
+    "precision_dps": 65,
+    "limits": "Not Lean, not exact interval certified, not proof of global RH bound"
+  },
+  "required_acceptance": [
+    "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianHeatSharpSourceEnvelope",
+    "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianHeatAbsoluteEnergyStability",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatSharpSourceEnvelope.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatAbsoluteEnergyStability.lean",
+    "Independent fresh kernel replay and transitive #print axioms audit at exact source commit",
+    "Check original-n birth, squareful zero, sign, two ordered pair orientations, original diagonal not smoothed, one quarter unit, T=0, same scale G",
+    "Do not substitute finite truth, positive coefficient metric or heat smoothing for missing original signed long-gap all-rate estimate"
+  ],
+  "authority": "PASSIVE_VERIFICATION_TARGET_NOT_EXECUTION_NO_CI_SCHEDULER_OR_ROOT_PROMOTION",
+  "publication": "PENDING_GUARDED_MAIN_EXPECTED_HEAD"
+}
