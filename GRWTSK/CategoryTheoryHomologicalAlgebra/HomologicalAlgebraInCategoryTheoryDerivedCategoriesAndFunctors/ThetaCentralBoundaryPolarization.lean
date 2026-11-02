@@ -22,7 +22,12 @@ The direct multiplication calculation gives
   b_(uv)(σ,τ)= [v_σ, σ(u_τ)] b_u(σ,τ) b_v(σ,τ).
 
 This is the true polarization identity for the theta factor
-set. To identify the scalar commutator with the ORIGINAL
+set. NOTE: it uses the FORWARD section order u*v. The existing
+ThetaCentralPolarization.lean uses REVERSED v*u and yields the
+original ordered Weil-cup term [u_sigma,sigma(v_tau)].
+ThetaSectionOrderCoboundary.lean proves their explicit change-of-section
+scalar two-coboundary. Neither convention changes the intended H2 class
+once the geometric scalar one-cochain is proved continuous. To identify the scalar commutator with the ORIGINAL
 source Weil e_n, a separate nontrivial geometric Weil-
 reciprocity comparison is required. In cohomology graded
 commutativity then turns the reversed mixed commutator

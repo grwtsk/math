@@ -314,6 +314,52 @@ theorem scalarLift_central (c : Fˣ) (x : ThetaLift W n) :
     rw [thetaTranslate_zero_units, thetaTranslate_scalar]
     exact mul_comm _ _
 
+/-! ## Source-level centrality of the actual theta group commutator
+
+The projection of the genuine theta group to its original
+elliptic n-torsion points is additive. Its kernel consists of
+scalar rational functions, already proved central above.
+This supplies exactly the commutator centrality hypotheses
+needed by BOTH published theta-polarization orientations,
+without postulating a perfect pairing or choosing a scalar.
+-/
+
+@[simp] theorem ThetaLift.mul_point (x y : ThetaLift W n) :
+    (x * y).point = x.point + y.point := rfl
+
+@[simp] theorem ThetaLift.inv_point (x : ThetaLift W n) :
+    (x⁻¹).point = -x.point := rfl
+
+/-- The commutator of the genuine elliptic theta lifts
+projects to the zero torsion point (the point group is
+commutative), independently of lift choices. -/
+theorem thetaGroupCommutator_point_zero (x y : ThetaLift W n) :
+    (x * y * x⁻¹ * y⁻¹).point = 0 := by
+  simp only [ThetaLift.mul_point, ThetaLift.inv_point]
+  abel
+
+/-- The ACTUAL theta-group commutator is a base-field
+scalar lift. This is stronger than a raw equality of
+function-field divisors, and supplies a genuine central
+group element for the polarization proof. -/
+theorem exists_scalarLift_thetaGroupCommutator
+    (x y : ThetaLift W n) :
+    ∃ c : Fˣ,
+      x * y * x⁻¹ * y⁻¹ = scalarLift W n c :=
+  exists_scalarLift_of_point_eq_zero W n _
+    (thetaGroupCommutator_point_zero W n x y)
+
+/-- Centrality now follows from the original divisor
+criterion; no assumed Heisenberg operator is used. -/
+theorem thetaGroupCommutator_central
+    (x y z : ThetaLift W n) :
+    (x * y * x⁻¹ * y⁻¹) * z =
+      z * (x * y * x⁻¹ * y⁻¹) := by
+  obtain ⟨c, hc⟩ :=
+    exists_scalarLift_thetaGroupCommutator W n x y
+  rw [hc]
+  exact scalarLift_central W n c z
+
 /-- Its actual scalar commutator is a function whose
 principal divisor is zero. -/
 noncomputable def commutatorFunction
