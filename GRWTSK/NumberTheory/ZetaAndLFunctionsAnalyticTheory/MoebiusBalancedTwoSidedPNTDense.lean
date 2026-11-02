@@ -267,4 +267,29 @@ def BalancedDenseLogPowerFormalizationTarget : Prop :=
               C * (X : ℝ) /
                 (1 + Real.log (X : ℝ))^β
 
+
+/-- New analytic target for a bank whose selected primes themselves
+grow with X, subject to a POLYLOGARITHMIC upper cutoff.
+The paper proves its exact statement from classical Mertens and
+explicit Euler-factor bounds. It is NOT yet an accepted Lean theorem.
+The C constant may depend on theta, beta and epsilon, but NOT on
+X or on the eligible bank P_X; both mixed orientations are included. -/
+def PolylogGrowingPrimeBankDenseTarget : Prop :=
+  ∀ (theta beta epsilon : ℝ),
+    0 < theta → theta < 2 →
+    0 < beta → 0 < epsilon → epsilon < 2 →
+      ∃ C : ℝ, 0 ≤ C ∧
+        ∀ X : ℕ, 2 ≤ X →
+          ∀ B : PrimeBand,
+            (∀ p ∈ B.primes,
+              (p : ℝ) ≤
+                (1 + Real.log (X : ℝ)) ^ theta) →
+              ∀ a b : Bool,
+                |taggedDenseRectangle B.primes a b
+                  (putnamRateGapSet epsilon
+                    (Real.log (2 * (X : ℝ))))
+                  X X (Real.log (2 * (X : ℝ)))| ≤
+                    C * (X : ℝ) /
+                      (1 + Real.log (X : ℝ)) ^ beta
+
 end GRWTSK.NumberTheory.Moebius.BalancedTwoSidedPNTDense

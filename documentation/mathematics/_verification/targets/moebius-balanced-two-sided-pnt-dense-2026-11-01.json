@@ -27,7 +27,9 @@
     "corollary": "For each finite fixed prime bank P, beta>0, 0<eps<2: exists C>0, for all X>=2, all four ordered tag sectors have |dense_ab(X,log 2X)| <= C X/(1+log X)^beta",
     "sourcing": "original integer index and squareful zeros; both RM and MR; actual causal kernel; original Putnam mask",
     "RH_strength": false,
-    "formal_L3": "NOT_YET_FORMALIZED"
+    "formal_L3": "NOT_YET_FORMALIZED",
+    "growing_prime_bank_uniform": "For each 0<theta<2, beta>0, 0<epsilon<2, every finite prime bank P_X with all primes <=(1+log X)^theta satisfies the same O_(theta,beta,epsilon)(X/(1+log X)^beta) balanced dense bound uniformly over BOTH X and P_X, all RR/RM/MR/MM.",
+    "bank_factor_uniformity": "W_P<=Y^2 and V_P<=exp(8sqrt Y) for primes <=Y; Y=(1+log X)^theta, theta<2. This is an elementary Euler-factor argument independent of PNT."
   },
   "source_theorem_candidates": [
     "taggedMoebius_sum",
@@ -39,7 +41,8 @@
     "mixed_diagonal_zero",
     "no_doubling_inside_same_block",
     "no_tripling_inside_same_block",
-    "no_prime_star_inside_same_block"
+    "no_prime_star_inside_same_block",
+    "PolylogGrowingPrimeBankDenseTarget (named Prop; paper-proved, Lean proof OPEN)"
   ],
   "research_proposition": "BalancedDenseLogPowerFormalizationTarget",
   "diagnostics": {

@@ -313,3 +313,71 @@ Abel estimate; this is a two-sided signed
 logarithmic-power improvement with both rough/mixed
 orientations intact, not a discovery of RH cancellation.
 No claim of new prior-art novelty outside this repository.
+
+## Growing selected prime banks: a uniform log-power corollary
+
+The preceding finite-Euler-factor estimate can be made UNIFORM
+even when the chosen prime bank varies with the growing shell.
+Fix 0<theta<2. For each integer X>=2, permit ANY finite bank
+P_X of genuine primes satisfying
+  p <= Y_X := (1+log X)^theta
+for every p in P_X. (For very small X the bank may be empty.)
+For any beta>0 and 0<epsilon<2 there is a constant
+C_(theta,beta,epsilon) independent of X AND of P_X such that
+
+  |D_ab(X,X;log(2X),epsilon)|
+       <= C_(theta,beta,epsilon)*X/(1+log X)^beta
+
+simultaneously for a,b in {R,M}. All original signed pairs and
+both mixed orientations are still present.
+
+**Complete elementary bank-factor proof.** For p>=2 and x=1/p<=1/2,
+the elementary inequality -log(1-x)<=x/(1-x) gives
+  -log(1-1/p) <= 2/p.
+Summing over P_X, and bounding the primes by all integers,
+  log W_P <= 2 sum_(2<=n<=Y_X) 1/n <= 2 log Y_X,
+so W_P<=Y_X²=(1+log X)^(2theta).
+Likewise x=1/sqrt(p)<=1/sqrt(2), and
+1/(1-x)<=1/(1-1/sqrt(2))<4, hence
+  -log(1-p^(-1/2)) <= 4/sqrt(p).
+Since sum_(2<=n<=Y) n^(-1/2)<=2sqrt(Y),
+  V_P <= exp(8 sqrt(Y_X))
+       = exp(8(1+log X)^(theta/2)).
+No prime-counting theorem is needed for these TWO
+Euler-factor inequalities; they hold for arbitrary
+subsets of primes below Y_X.
+
+Because theta/2<1, for all sufficiently large X,
+8(1+log X)^(theta/2) <= (1+log X)/8.
+Thus uniformly over all eligible P_X,
+  V_P <= exp((1+log X)/8) = e^(1/8) X^(1/8).
+Substitute these two estimates in the earlier independently
+proved explicit prefix envelope:
+  H_(P_X,A)(X)
+   <=4 C_A [1+2^A (1+log X)^(2theta)]
+                 X/(1+log X)^A
+       +2^(7/4)e^(1/8)X^(7/8).
+
+For any desired gamma>0 choose integer A>gamma+2theta+1.
+Then both terms are
+  O_(theta,gamma)(X/(1+log X)^gamma),
+with ONE constant independent of X AND bank P_X.
+Choose gamma>beta/2. The TWO signed Abel factors
+give |B_ab|=O_(theta,beta)(X/(1+log X)^beta).
+Finally the original diagonal plus short-gap payment is
+O_epsilon(X^(epsilon/2)(log X)^2), which is
+o(X/(1+log X)^beta) because epsilon<2.
+Enlarge the constant on the finitely many small X.
+This completes the claimed uniform growing-bank corollary.
+
+**Scope limit:** the bound is for prime banks with
+max selected prime <=(1+log X)^theta, theta<2.
+The repository's tuned first-prime cutoff of magnitude
+exp((2/5)T), about X^(2/5), is MUCH larger and is
+NOT covered. Its source-specific growing-bank
+rough/mixed cancellation and the full global
+all-positive-rate signed dense criterion remain OPEN.
+This uniform polylog-bank consequence is analytically
+proved here, but its additional Lean proposition
+`PolylogGrowingPrimeBankDenseTarget` is NOT_FORMALIZED
+as a proof term; the overall Lean verification is NOT_RUN.
