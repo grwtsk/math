@@ -162,6 +162,59 @@ the selected finite Lean graph, and independent Lean/kernel
 acceptance for the existing source candidates, remain open.
 No RH or dynamical factor-zeta implication follows.
 
+## Exact finite-occurrence bridge across three existing mathematical interfaces
+
+The source candidate \`GRWTSK/Combinatorics/GraphTheory/SourceOccurrenceSoficBridge.lean\`
+(blob \`fad346d8341d45bb0e5585670ab0e0f8c21d3afa\`)
+imports the *original* existing \`SearchSoficLanguage\`,
+\`SoficPeriodicMatrixTrace\` (and its exact \`WordPath\` provider),
+and \`CertifiedTransversal\` definitions. It does not introduce an
+alternative graph/path type in place of any original provider.
+
+1. \`occurrenceEdge\` uses the ORIGINAL finite edge occurrence as label
+   and records its source/target; the lower (proof-certified) layer of
+   \`occurrenceSandwich\` is empty, with candidate and admissible
+   relations equal only for this selected exact source-edge inventory.
+2. \`search_wordPath_iff_exact\` identifies the two separately defined
+   inductive finite-word path propositions **only on the identical
+   occurrence labels and endpoint relation**.
+   \`search_language_iff_exact\` lifts this to the entire finite-word
+   language, not an arbitrary infinite trace.
+3. \`occurrence_adjacency_multiplicity\` specializes the original
+   natural-number matrix entry to a sum over **all distinct occurrence
+   labels**. \`occurrence_walk_count_eq_matrix_row_sum\` specializes
+   the original finite-seed matrix-power counting theorem without
+   replacing or weakening its graph.
+4. \`ExactSourceRefinement\` records the still-MISSING
+   source-extractor proof obligations explicitly: a bijection between
+   actual raw records and occurrence labels, plus preservation of
+   each original source and target. From this *supplied* structure,
+   \`encoded_occurrences_injective\`,
+   \`encoded_edge_iff\`, and
+   \`raw_wordPath_to_occurrence\` preserve occurrence identity,
+   incidence, and chronological finite words.
+5. \`occurrenceTransversal\` invokes the existing canonical
+   \`CertifiedTransversal.Transversal.ofFunction\` **only** with the
+   fixed equality-plus-endpoint relation proved from the supplied
+   refinement. No unconstrained relation or target theorem transfers
+   into the original source inventory.
+
+This is source-level formal mathematical composition, not a claim
+that Noe's Git/SQLite/Python exporter instantiates
+\`ExactSourceRefinement\`. In particular, no import closure,
+lexical query, source link, or graph diffusion step builds
+the required bijection; no periodic label-point injectivity or
+same-period completeness follows; and no RH theorem is implied.
+
+**Verification gate for the new source blob:** Lean 4.34.1 /
+pinned Mathlib \`d13f23b723b8a846827a245b89c10fc7d3f11612\`
+module compilation, each expected fully qualified theorem type,
+fresh kernel replay and complete transitive axiom inspection are
+**NOT_RUN**. The new artifact must be compiled before any
+kernel-accepted or executable-refinement claim is made. The existing
+source-level proofs in imported modules retain their original
+separate verification dispositions.
+
 ## Runtime boundary and acceptance
 
 Noe's proposed indexed search schema `noe.repository-search/2`
