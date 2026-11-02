@@ -1,7 +1,7 @@
 {
   "schema": "grwtsk.math.verification-target/1",
   "research_date": "2026-11-02",
-  "title": "Original source-preserving Mobius physical bits, sphere/shape, Gibbs and signed finite sampling, with source-paid hard dense arithmetic core",
+  "title": "Original signed Möbius physical bits and finite sampling: three paid source sectors, fixed-cutoff low-GCD dense RH frontier",
   "repository": "grwtsk/math",
   "author_attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
   "pinned_toolchain": {
@@ -136,6 +136,31 @@
       "source_parent": "8e3ec83415c3702c93dda4a123534fc42e161648",
       "lines": 100,
       "status": "CONDITIONAL_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSparseHighGcdDenseCore.lean",
+      "blob": "11ac20aa5fca77f0de5deebce670f06204e61e4f",
+      "source_commit": "ce75115bcb41c4c662b2f26de414609dfb6e0a34",
+      "source_parent": "f53cac157641c04c9fe095dcf0a7bfb0e479d4b0",
+      "lines": 313,
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSparseHighGcdDenseCoreReturn.lean",
+      "blob": "db5e80b45f95ad20b2463ed8d5e85fcd27e3d74c",
+      "source_commit": "40d9ef43664e5f7ffa0aacb00bd60c02959b7702",
+      "source_parent": "ce75115bcb41c4c662b2f26de414609dfb6e0a34",
+      "lines": 199,
+      "status": "SOURCE_PROOF_CANDIDATE_WITH_OPEN_ARITHMETIC_PREMISE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSparseHighGcdDenseCoreSampler.lean",
+      "blob": "633aa83024c5defab642048f386e14898a1c1731",
+      "source_commit": "6188aa8f66855dadb09004047579ef45a5e3ca76",
+      "source_parent": "671c86c66fed340c4cc044476d7cb0b819b2b0be",
+      "initial_source_commit": "671c86c66fed340c4cc044476d7cb0b819b2b0be",
+      "lines": 227,
+      "status": "SOURCE_PROOF_CANDIDATE"
     }
   ],
   "pinned_dependencies": [
@@ -173,8 +198,8 @@
     "blob": "f4fa84b8d32c38db2e8890ccfebf4ee3798684ce",
     "updated_at_commit": "f2fd9280a33ab3233ecc9db96957c2a9d44da2aa"
   },
-  "source_commit": "8c9a676a42b4c3a7a85a450bfd74f3d1b3593a82",
-  "source_parent": "288c6b75d353e4ceefc2148c23a7836ffb672835",
+  "source_commit": "6188aa8f66855dadb09004047579ef45a5e3ca76",
+  "source_parent": "671c86c66fed340c4cc044476d7cb0b819b2b0be",
   "exact_source": "Original ShapeChangingBundle center/shell plus full integer-indexed PhysicalStream, two-tangent SignedBits, existing pickupCross with all ordered non-diagonal pairs and signedReadoutDefect; no new arithmetic coefficients, windows or unproved cancellation. Third source samples finite original-index slots using the already normalized Gibbs Sampler.probability row; a uniformly weighted finite reference average is compared through the existing measured physical two-bit indexed Hilbert distance with unavailable mass separately accounted.",
   "source_candidate_theorems": [
     "Folder.Research.ShapePhysicalBitTransport.lower_lift_center",
@@ -369,7 +394,34 @@
     "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCoreEndpointRowEstimator_mean",
     "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCoreEndpointRowEstimator_centeredVariance",
     "GRWTSK.NumberTheory.Moebius.DenseCoreRowSamplingVariance.denseCoreEndpointVariance_le_pairVariance",
-    "GRWTSK.NumberTheory.Moebius.DenseCoreZeroWitness.hypothetical_zero_forces_direct_denseCore_spikes"
+    "GRWTSK.NumberTheory.Moebius.DenseCoreZeroWitness.hypothetical_zero_forces_direct_denseCore_spikes",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.denseCoreSignedPair_eq_low_add_high",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.denseCore_eq_lowGcd_add_highGcd",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.pickupCross_eq_threePaid_add_lowGcdDense",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.denseCorePair_abs_le_sourceKernel",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.highGcdDensePair_abs_le_highCost",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.highGcdDense_abs_le_fullHighGcdAbsoluteCost",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.highGcdDense_abs_le_scalar",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.threePaidSectors_abs_le_raw",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.pickupCross_sub_lowGcdDense_eq_threePaid",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.pickupCross_sub_lowGcdDense_abs_le",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.endpointSum_sub_lowGcdDense_abs_le",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore.originalCross_lowGcdDense_allRateError",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreReturn.lowGcdDenseEveryRateOn_iff_originalCrossOn",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreReturn.lowGcdDenseEveryRateOn_iff_endpointOn",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreReturn.riemannHypothesis_of_lowGcdDense_goodScales",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreReturn.originalCross_eq_threePaid_plus_core_and_observer",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreReturn.endpointSum_eq_threePaid_core_and_two_defects",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.sum_lowGcdDenseRow_eq_core",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.lowGcdDenseRowImportance_mean",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.lowGcdDensePairImportance_mean",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.rowExpectation_lowGcdDensePairImportance",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.conditionedVariance_eq_lowGcdDenseRowVariance",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.lowGcdDenseRowVariance_le_pairVariance",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_mean",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_mean_endpointError",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_variance",
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_variance_le_pair"
   ],
   "unresolved_mathematical_obligations": [
     "A true topological fiber bundle requires projection, local trivializations, transition cocycles and compatibility.",
@@ -400,10 +452,15 @@
     "The ideal endpoint curvature-corrected estimator uses endpointCurvatureDefect = endpointSum-pickupCross and requires independently computable signed curvature data for any practical unbiased endpoint algorithm; its exact identity alone is not an algorithm.",
     "The signed dense-core unsigned-row all-positive-rate supplier remains a strictly stronger unproved hypothesis and is not inferred from stochastic variance reduction.",
     "The conditional offcritical-zero direct-core positive spike theorem retains unported Laplace analytic Props, dyadic-energy ceiling and a hypothetical actual offcritical zeta zero; it does not establish an offcritical zero or prove RH.",
-    "The recent whole-Dirichlet-character large-modulus averaged source energy does not supply a fixed principal-character or signed original dense-core upper bound."
+    "The recent whole-Dirichlet-character large-modulus averaged source energy does not supply a fixed principal-character or signed original dense-core upper bound.",
+    "The new disjoint high-GCD dense SUBPACKET is upper bounded by the positive complete high-GCD absolute source cost. The signed complete high-GCD cross is NOT a legitimate subpacket majorant due to possible cancellation.",
+    "The lowGcdDenseEveryRateOn G iff original pickupCross good-scale statement is a candidate conditional equivalence, not an independently established upper bound for the low-GCD dense core.",
+    "The high-GCD scalar payment requires original T>=4; no new all-T quantitative claim is made. The exact four-way source partition needs no such lower time bound.",
+    "The one-original-index low-GCD dense sampler preserves the true arithmetic signs but only controls finite index-sampling variance, not asymptotic signed arithmetic cancellation or a computational runtime saving.",
+    "The original endpoint mean-bias 1/4 holds only for expectation of the unbiased original signed-cross estimator at T>=0, not for each sample realization."
   ],
   "verification": {
-    "source_publication": "PASS_SEVENTEEN_EXACT_GITHUB_BLOB_READBACKS_AT_3d0c149b4dd1851eb6b0ba64a586302e82bfbe3b",
+    "source_publication": "PASS_17_PREVIOUS_SOURCE_BLOBS_THREE_NEW_PENDING_FINAL",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -456,7 +513,12 @@
     "new_original_signed_dense_core_bound": "OPEN",
     "final_17_source_readback_revision": "3d0c149b4dd1851eb6b0ba64a586302e82bfbe3b",
     "new_four_related_source_pins": "PASS_EXACT_BLOBS",
-    "static_source_proof_scan": "NO_AUTHORED_SORRY_ADMIT_AXIOM_DECLARATIONS_IN_THREE_NEW_FILES; NONCERTIFYING"
+    "static_source_proof_scan": "NO_AUTHORED_SORRY_ADMIT_AXIOM_DECLARATIONS_IN_THREE_NEW_FILES; NONCERTIFYING",
+    "new_fixed_high_gcd_divisor_cover_adapter": "SOURCE_PROOF_CANDIDATE_IMPORTS_UNCOMPILED_INDEPENDENT_SOURCE_PROOFS",
+    "new_low_gcd_dense_core_equivalence": "SOURCE_PROOF_CANDIDATE_WITH_OPEN_ALL_RATE_ARITHMETIC_PREMISE",
+    "new_low_gcd_dense_core_sampler": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "new_low_gcd_dense_core_finite_checks": "N=8,16,32,48,64; 55_DECIMAL_DIGITS_WORKING_PRECISION; NONCERTIFYING",
+    "original_low_gcd_dense_core_all_rate_upper": "OPEN"
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
@@ -475,7 +537,10 @@
     "654decf2dcd01e391241f767ae21aefdaa0e0c4f",
     "8e3ec83415c3702c93dda4a123534fc42e161648",
     "8c9a676a42b4c3a7a85a450bfd74f3d1b3593a82",
-    "b43b8760709e269e1e21c1707ea2ad96aaa70dcb"
+    "b43b8760709e269e1e21c1707ea2ad96aaa70dcb",
+    "ce75115bcb41c4c662b2f26de414609dfb6e0a34",
+    "40d9ef43664e5f7ffa0aacb00bd60c02959b7702",
+    "6188aa8f66855dadb09004047579ef45a5e3ca76"
   ],
   "relevant_source_inventory": [
     {
@@ -547,13 +612,13 @@
   },
   "cross_family_typed_graph": {
     "path": "documentation/mathematics/_support/reviews/shape-physical-bit-cross-family-connectivity-2026-11-02.json",
-    "blob": "5a77181a5c1e21c11f42e0b0742464f273e0d377",
-    "new_edges": 53,
-    "unproved_transfers": 18,
-    "related_source_files": 30,
+    "blob": "3e6ab7eee30a45fcc138ba475883b6aa0110c691",
+    "new_edges": 70,
+    "unproved_transfers": 24,
+    "related_source_files": 36,
     "previous_graph_path": "documentation/mathematics/_support/reviews/moebius-rh-original-source-typed-connectivity-2026-11-02.json",
     "previous_graph_blob": "3938b4a2fb0d20cacb6a863b7372ea49ea157f11",
-    "new_bridge_modules": 9
+    "new_bridge_modules": 12
   },
   "sharp_variance_review": {
     "path": "documentation/mathematics/_support/reviews/physical-moebius-sharp-sampling-variance-2026-11-02.md",
@@ -601,5 +666,35 @@
     "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseCoreZeroWitness.lean",
     "lake build GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDenseCoreZeroWitness",
     "After full dependency build, #check exact theorem types and #print axioms (including imported source closure)"
+  ],
+  "fixed_low_gcd_dense_review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-sparse-high-gcd-dense-core-2026-11-02.md",
+    "blob": "3bdb6b8aad2cf1eb4f685c6c1948295d4bfd3731"
+  },
+  "fixed_low_gcd_dense_arithmetic_frontier": {
+    "original_source": "GRWTSK.RiemannHypothesis.CCC.pickupCross T; complete original ordered signed Möbius Gram and both pair orientations",
+    "original_window": "GRWTSK.NumberTheory.MoebiusEndpointLeastPrimeTypeII.endpointIndex T",
+    "fixed_gcd_cutoff": "fixedGcdCutoff T = max 1 floor(exp(T-sqrt(T)))",
+    "new_true_core": "SparseHighGcdDenseCore.lowGcdDenseCross (putnamRateGapSet r T) T",
+    "disjoint_partition": "pickupCross = paid sparse gap+ratio + high-gcd-outside-them + low-gcd dense",
+    "high_gcd_absolute_source": "UnmaskedLowGcdEndpoint.plainHighGcdAbsoluteCost; not the signed high-gcd total",
+    "positive_divisor_cover": "CompleteHighGcdElementaryClosure.divisorCoverRootTail_proof from original source",
+    "cutoff_ratio": "OriginalGramRootFloorSuppliers.fixedGcdRatio_proof",
+    "source_payment": "T>=4,r>0: |pickupCross-lowGcdDenseCross| <=(64/r^2) exp(rT)+32 T exp(sqrt T)",
+    "endpoint_payment": "same source payment +1/4 from original endpointSum_error, at T>=4",
+    "all_rate": "forall eta>0, use r=eta/2, exists C_eta,R_eta>=4 with |pickupCross-L_r|<=C_eta exp(eta*T)",
+    "all_rate_explicit_classical_witness": "C_eta=256/eta^2+128/eta, R_eta=max(4,16/eta^2), from the imported elementary scalar witness",
+    "same_fixed_G_equivalence": "LowGcdDenseEveryRateOn G iff SubexponentialOn pickupCross G iff SubexponentialOn endpointSum G",
+    "conditional_RH": "AffineFrequent G AND LowGcdDenseEveryRateOn G, independent OPEN arithmetic premise",
+    "positive_sampler": "positive full-support original-window w; signed low-gcd dense row importance + 3 deterministic paid packets unbiased for pickupCross",
+    "variance": "no larger than original two-index hard-core importance variance; no independent arithmetic cancellation",
+    "new_arithmetic_bound": "OPEN: original signed low-gcd dense core all-positive-rate upper on one fixed affinely frequent G"
+  },
+  "fixed_low_gcd_dense_acceptance_NOT_RUN": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSparseHighGcdDenseCore.lean",
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSparseHighGcdDenseCoreReturn.lean",
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSparseHighGcdDenseCoreSampler.lean",
+    "lake build GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusSparseHighGcdDenseCoreSampler",
+    "Once fully compiled, check exact theorem types, dependency closure and transitive #print axioms for each public declaration"
   ]
 }
