@@ -1,0 +1,82 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Prime-smooth orbit weak/strong reduction and aligned-Gram threshold obstruction",
+  "repository": "grwtsk/math",
+  "source_revision": "cb45d00fbfeae1a5606d7b80ec7b2631f4232ca0",
+  "publication": {
+    "initial_merge": "96167ad82b9acdff7128e820e993851c8482ff92",
+    "initial_pull_request": 1569,
+    "exact_byte_repair_merge": "cb45d00fbfeae1a5606d7b80ec7b2631f4232ca0",
+    "exact_byte_repair_pull_request": 1570,
+    "method": "guarded non-force merge preserving concurrent main history"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeSmoothOrbitWeakStrong.lean",
+    "git_blob": "2633bb53ebc04e4e1d23ec13b3590b98825a5907",
+    "sha256": "9d03d0625ea4ebd0ec2f27f4b3f1155a295c7395323a19b29c3f7e002e9b5107",
+    "declarations": {
+      "definitions": 8,
+      "theorems": 9
+    }
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-prime-smooth-orbit-weak-strong-2026-11-02.md",
+    "git_blob": "7cfba9d180dfc8ee532c0aa3fffaa2a7c202ea5e",
+    "sha256": "2e3438df0cc96af0fd28e6221182b6dbad599cb34ec22b7e91f7bfd7830d1312"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/moebius-prime-smooth-orbit-weak-strong-references.md",
+    "git_blob": "21445c6797150a761b13ce603ad151da139c9c79",
+    "sha256": "301fb9483567f8f06d18f06ea41a20780532129821227af010fd6df36bb2d357"
+  },
+  "toolchain": {
+    "lean": "v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "mathematical_scope": [
+    "exact decomposition of the complete between-core packet into weak and strong orbit packets",
+    "weak threshold tau=(floor(exp T)+1)^(-6)",
+    "Gram-Cauchy weak estimate |W| <= card(endpointIndex)^2*sqrt(tau*internalEnergy)",
+    "scalar decay gives |W| <= sqrt(internalEnergy) and hence all-positive-rate weak payment",
+    "strong packet is source-equivalent to the complete net packet on every fixed scale set",
+    "negative side of the strong packet is paid, so one-sided and absolute complete-strong estimates are equivalent",
+    "conditional RH return from an AffineFrequent all-positive-rate strong-packet bound"
+  ],
+  "obstruction": {
+    "id": "rh-aligned-orbit-gram-threshold-insufficiency-v1",
+    "statement": "N identical normalized vectors have total diagonal energy one, Gram entries 1/N and ordered off-diagonal cross N-1; every threshold puts the complete cross in either the weak or strong sector",
+    "scope": "generic Gram/threshold method only; not a counterexample to the actual Möbius orbit waveforms",
+    "consequence": "energy matching, total diagonal payment, threshold selection and two-vector Gram Cauchy cannot alone prove the remaining all-positive-rate strong-packet estimate"
+  },
+  "visible_formalization_gates": [
+    "PrimeSmoothOrbitGramCauchy",
+    "OrbitWeakScalarDecay",
+    "AlignedGramThresholdObstruction"
+  ],
+  "open_obligations": [
+    "prove the complete orbit Gram-Cauchy bridge and scalar decay in Lean",
+    "prove an arithmetic or operator estimate for the one complete strong orbit packet",
+    "obtain an AffineFrequent all-positive-rate bound for that packet",
+    "complete compilation and kernel/axiom verification"
+  ],
+  "verification": {
+    "source_publication": "DONE",
+    "exact_blob_readback": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "lean_compilation": "NOT_RUN",
+    "expected_type_checks": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "complete_strong_orbit_supplier": "UNPROVED",
+    "endpoint_arithmetic_supplier": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "nonclaims": [
+    "the aligned-Gram example is not asserted of the actual Möbius source",
+    "absolute values are permitted only after the one complete strong packet is formed",
+    "source publication is not Lean acceptance",
+    "RH is not proved"
+  ],
+  "passive": true
+}
