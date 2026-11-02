@@ -1,0 +1,183 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Dirichlet all-character mean signed offdiagonal causal Gram with retained unit diagonal and floor N/q capacity; growing-modulus every-positive-rate",
+  "baseline_math_main": "a8737aa9a70d87fa1c9319e6f0c884b8f12674f6",
+  "files": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusResidueSignedFibreArithmetic.lean": "0692631728b95319edb50e32a3569e3035b8a368",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletMeanSignedCross.lean": "4e4260e695ad30e3a0d9f04a6a6c5a90b4b19e32",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletMeanSignedFixedCutoff.lean": "abcaa68aab3b71a5a4fe908ddb980611f20be9bd",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletMeanSignedAcceptance.lean": "16074fbf2e1aca5cf24ab1b41cd61fe5ba5f4e0c",
+    "documentation/mathematics/_support/reviews/moebius-dirichlet-mean-signed-diagonal-2026-11-02.md": "6315eacc21a169ddbc7d47219e7efe958e23d5b0",
+    "documentation/mathematics/_support/reviews/moebius-dirichlet-mean-signed-source-graph-2026-11-02.json": "a2938c39bcfb63ccbdb92a04809dde5bf06244eb"
+  },
+  "pinned_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "prior_source_blobs": {
+    "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "GRWTSK/MeasureAndIntegration/GramDiagonalBound.lean": "aca9ab5260453b13a3503f3166aef6f59efcf4ee",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionFamilyInverse.lean": "2b9c2b556de587db611478b7724c9205db90fd3b",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionHermitianPickup.lean": "0643134718a73f65f1ca01f2db0804b4883676b4",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionComplexGramClosure.lean": "ff96f81e0e164f00e99ad903171af01f33816ff7",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusResidueFibreArithmetic.lean": "d8ed2983c2090b17c972e440cdd7fee6f4e7961c",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletResidueParseval.lean": "152ef7002c566bcca14ec8aac8c027c523693347",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalGramRootFloorSuppliers.lean": "efbf49d9d0be6f59dc165ec715b14b0f12207d12"
+  },
+  "theorem_candidates": [
+    "GRWTSK.NumberTheory.Moebius.ResidueSignedFibreArithmetic.complex_signed_square_le_of_card",
+    "GRWTSK.NumberTheory.Moebius.ResidueSignedFibreArithmetic.complex_signed_square_ge_neg_diagonal",
+    "GRWTSK.NumberTheory.Moebius.ResidueSignedFibreArithmetic.residueFibre_signed_square_le_quotient",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedCross.residueWave_sq_sub_ownDiagonal_le",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedCross.unitFibreSquares_eq_unitDiagonalDensity",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedCross.unitDiagonal_eq_integral_density",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedCross.unitResidueEnergy_le_occupationUnitDiagonal",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedCross.familyEnergy_eq_diagonal_add_cross",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedCross.allCharacterDiagonal_eq_totient_unitDiagonal",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedCross.meanSignedCross_eq_unitEnergy_sub_diagonal",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedCross.meanSignedCross_signed_bounds",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedCross.meanSignedCross_le_quotient_quadratic",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedFixedCutoff.meanSignedCross_le_fixedCutoffEnvelope",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedFixedCutoff.scalar_fixedCutoffEnvelope_everyRate",
+    "GRWTSK.NumberTheory.Moebius.DirichletMeanSignedFixedCutoff.meanSignedCross_everyRate_of_modulus_ge_fixedCutoff"
+  ],
+  "math": [
+    "q>0, T>=0, N=floor(exp T). Unit diagonal D_q=sum_(n<=N,gcd(n,q)=1)mu(n)^2 K_T(n,n).",
+    "Exact normalized ALL-character mean cross = sum_(a unit)originalResidueEnergy(q,a,T) - D_q.",
+    "-D_q <= meanCross_q(T) <= floor(N/q) D_q <= 2 floor(N/q) T^2.",
+    "For q>=D_*(T) and T>=4, meanCross_q(T)<=4 T^2 exp(sqrt T).",
+    "For epsilon>0, T>=max(4,16/epsilon^2) and q>=D_*(T), meanCross_q(T)<=(64/epsilon^2)exp(epsilon T)."
+  ],
+  "numerical_checks": {
+    "integer_fibres": {
+      "moduli": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        13,
+        17,
+        31
+      ],
+      "inventory_N": [
+        0,
+        1,
+        2,
+        5,
+        9,
+        12,
+        20,
+        25,
+        33,
+        48,
+        70,
+        110
+      ],
+      "qN_scenarios": 108,
+      "residue_instances": 1008,
+      "violations": 0,
+      "vector": "complex(1+n%3,1-n%5) per source index"
+    },
+    "original_causal_Gram": {
+      "moduli": [
+        1,
+        5,
+        8,
+        17
+      ],
+      "N_scenarios": [
+        [
+          1,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          25
+        ],
+        [
+          17,
+          12
+        ],
+        [
+          17,
+          25
+        ],
+        [
+          5,
+          35
+        ],
+        [
+          8,
+          35
+        ]
+      ],
+      "precision_dps": 55,
+      "uses_original_birth_integrated_Gram": true,
+      "max_identity_residual_approx": "3.7e-55",
+      "all_upper_lower_tests_pass": true,
+      "large_modulus_mean_cross_approx": "4.59e-56 at q=17,N=12",
+      "large_modulus_individual_max_abs_approx": 3.1456770162630927
+    },
+    "scalar": {
+      "epsilon": [
+        0.1,
+        0.25,
+        0.6,
+        1,
+        2,
+        3
+      ],
+      "horizon_samples_per_epsilon": 4,
+      "total": 24,
+      "tests_pass": true
+    },
+    "certified_intervals": false,
+    "native_lean": false
+  },
+  "verification": {
+    "status": "SOURCE_PROOF_CANDIDATE_ONLY",
+    "parser": "NOT_RUN",
+    "exact_expected_declaration_types": "NOT_RUN",
+    "full_pinned_import_compilation": "NOT_RUN",
+    "fresh_independent_kernel": "NOT_RUN",
+    "transitive_axiom_unsafe_audit": "NOT_RUN",
+    "passive_acceptance_module": "WRITTEN_NOT_EXECUTED",
+    "native_toolchain": "NOT_AVAILABLE_IN_CURRENT_HOST",
+    "native_scheduler": "NOT_DISPATCHED",
+    "root_import": "NOT_ADDED",
+    "lexical_source_declaration_scan": "NO_SORRY_AXIOM_ADMIT_UNSAFE_PREFIX"
+  },
+  "strict_scope": {
+    "all_characters_including_principal_and_imprimitive": true,
+    "off_diagonal_m_ne_n_with_original_both_orientations": true,
+    "unit_source_diagonal_subtracted_exactly": true,
+    "q_fixed_does_not_meet_q_growing_condition_at_unbounded_T": true,
+    "no_fixed_character_claim": true,
+    "no_RH_or_GRH_claim": true,
+    "no_force_push": true,
+    "old_sources_unchanged": true,
+    "pins_unchanged": true
+  },
+  "remaining_analytic": [
+    "PrimitiveDirichletFamilyLowGcdEveryRate for a fixed primitive character (RH/GRH strength)",
+    "PrimitiveDirichletCausalToPrefixBridgeTarget",
+    "Primitive character Mellin/explicit formula including conductor/gamma/principal poles",
+    "Original PlainLowGcdEveryRateDyadic and canonical RH",
+    "Mathlib and GRWTSK source candidates require actual Lean compilation/fresh kernel and complete dependency axiom audit"
+  ]
+}
