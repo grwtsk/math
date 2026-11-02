@@ -76,7 +76,7 @@ theorem firstBockstein_boundary_invariant
   change D.d11 (x + D.d00 a) - D.d11 x ∈ D.d01.range
   refine ⟨-D.d10 a, ?_⟩
   have hant : D.d11 (D.d00 a) = -D.d01 (D.d10 a) :=
-    eq_neg_of_add_eq_zero_left (D.first_anticommutes a)
+    eq_neg_of_add_eq_zero_right (D.first_anticommutes a)
   rw [map_neg, map_add, hant]
   abel
 
@@ -98,7 +98,7 @@ theorem firstBockstein_zero_iff_first_lift
   · rintro ⟨x₁, hx₁⟩
     refine ⟨-x₁, ?_⟩
     rw [map_neg]
-    exact (eq_neg_of_add_eq_zero_left hx₁).symm
+    exact (eq_neg_of_add_eq_zero_right hx₁).symm
 
 /-- The original closed cocycle remains closed after an actual
 degree-zero coboundary, using d0²=0. -/
@@ -162,7 +162,7 @@ theorem secondBockstein_zero_iff_second_lift
     rw [map_neg]
     have h : D.d01 x₂ + (D.d11 x₁ + D.d21 x₀) = 0 := by
       simpa only [add_assoc] using hx₂
-    exact (eq_neg_of_add_eq_zero_left h).symm
+    exact (eq_neg_of_add_eq_zero_right h).symm
 
 /-- If two x1 are first lifts of the same x0, their difference is
 a CLOSED 1-cocycle. This is essential: second derived heights may
@@ -212,7 +212,7 @@ theorem secondBockstein_boundary_invariant
     simpa only [add_assoc] using D.second_anticommutes a
   have hsecond :
       D.d11 (D.d10 a) + D.d21 (D.d00 a) =
-        -D.d01 (D.d20 a) := eq_neg_of_add_eq_zero_left h
+        -D.d01 (D.d20 a) := eq_neg_of_add_eq_zero_right h
   have hraw :
       (D.d11 (x₁ + D.d10 a) +
         D.d21 (x₀ + D.d00 a)) -
