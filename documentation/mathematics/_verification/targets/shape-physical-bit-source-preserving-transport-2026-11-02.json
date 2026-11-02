@@ -460,7 +460,7 @@
     "The original endpoint mean-bias 1/4 holds only for expectation of the unbiased original signed-cross estimator at T>=0, not for each sample realization."
   ],
   "verification": {
-    "source_publication": "PASS_17_PREVIOUS_SOURCE_BLOBS_THREE_NEW_PENDING_FINAL",
+    "source_publication": "PASS_TWENTY_EXACT_GITHUB_BLOB_READBACKS_AT_9a5f6ae50c77af13659b76d6a5bd09cbc2a299e1",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -518,7 +518,12 @@
     "new_low_gcd_dense_core_equivalence": "SOURCE_PROOF_CANDIDATE_WITH_OPEN_ALL_RATE_ARITHMETIC_PREMISE",
     "new_low_gcd_dense_core_sampler": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
     "new_low_gcd_dense_core_finite_checks": "N=8,16,32,48,64; 55_DECIMAL_DIGITS_WORKING_PRECISION; NONCERTIFYING",
-    "original_low_gcd_dense_core_all_rate_upper": "OPEN"
+    "original_low_gcd_dense_core_all_rate_upper": "OPEN",
+    "new_low_gcd_dense_publication": "PASS_THREE_EXACT_GITHUB_BLOB_READBACKS",
+    "last_all_sources_readback_revision": "9a5f6ae50c77af13659b76d6a5bd09cbc2a299e1",
+    "new_six_high_gcd_related_source_pins": "PASS_EXACT_BLOB_READBACKS",
+    "new_low_gcd_dense_source_static_scan": "NO_AUTHORED_SORRY_ADMIT_AXIOM_OR_NATIVE_DECIDE_IN_THREE_NEW_SOURCES_NONCERTIFYING",
+    "new_four_way_pair_count_checks": "N=8_16_32_48_64_COMBINATORIAL_MASKS_PASS_NUMERIC_NONCERTIFYING"
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
