@@ -1,0 +1,46 @@
+{
+  "project": "grwtsk/math",
+  "date": "2026-11-02",
+  "title": "Signed prime-divisor wave packet frame with polynomial internal defect",
+  "source_status": "SOURCE_PROOF_CANDIDATE",
+  "mathematical_status": "unconditional finite block decomposition, diagonal bound, and internal correction; interblock all-rate open",
+  "source_commits": {
+    "proof_note": "529b546899c4874712d8059a7a2dae21ae33998b",
+    "lean_candidate": "dff4253e4be2a034c94decb2aa24277d0b0f4fe8"
+  },
+  "lean_source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeBlockSignedFrame.lean",
+    "blob_sha": "2542af272365fb6c9f82614990a52dc2eb4c56dc",
+    "direct_imports": [
+      "Mathlib.Algebra.Order.Chebyshev",
+      "Mathlib.Tactic"
+    ],
+    "source_grep_new_axiom_sorry_unsafe": false,
+    "compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN"
+  },
+  "source_revisions": {
+    "lean_toolchain": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "openai_math_kakeya_reference_only": "4eaee87548250b2682affda7d05d947c05554bae",
+    "unchanged_original_endpoint_blob": "2606536c56bdcb33d120aeddfbcbeef793e31ba1"
+  },
+  "finite_diagnostic": {
+    "path_in_conversation": "signed_prime_block_wave_probe.py",
+    "sha256": "0b018c0c7940a504307dc3910acbfe0b0b71fe085e0d7dbccdd26a03636c9d36",
+    "result_json": "signed_prime_block_wave_results.json",
+    "result_sha256": "663792dd0c190b3ad9ac78a8befde1bdaa734e2e82dd464d2060dbd65b2ffa8f",
+    "audio_published": false,
+    "status": "FINITE_NUMERICAL_ONLY"
+  },
+  "remaining_mathematical_obligations": [
+    "Complete Lean instantiation with genuine squarefree divisor uniqueness and all original zero coefficients",
+    "Physical time integration and unchanged pickupCross return with entire signed internal correction",
+    "Exact projective/elliptic and tube interface compatibility if invoked",
+    "Quantitative signed Kakeya comparison for interblock rough indices at all positive loss exponents",
+    "Unconditional original endpoint estimate (P) on fixed dyadic scales"
+  ],
+  "rh": "OPEN",
+  "remote_build_dispatched": false
+}
