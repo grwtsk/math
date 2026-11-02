@@ -278,3 +278,71 @@ local `H²(U_v)=H¹(F,E)`, claim Kummer orthogonality
 already kernel accepted, or treat a cup-descended
 pairing as the classically constructed Tate pairing
 before a source geometric comparison.
+
+ 
+## Actual elliptic theta function group, strict Kummer vanishing and polarization (2026-11-02)
+
+At the SAME immutable original TauCetiProject/TauCeti pin
+`2bdb755239d3bd84760e99bc83166bdf7cc75a6b`
+(Lean v4.36.0-rc1, original contributors, Apache-2.0),
+the newly isolated
+`TauCetiGeometricThetaKummerBoundary.lean`
+constructs a genuine function-field theta lift `(T,f)` with
+`div f = n([T]-[O])` using the source actual
+`W.exists_principal_eq_zsmul_ofPoint_sub_infinity`,
+`W.translation`, original point-place and original
+`Divisor.principal_eq_zero_iff`. The geometric product
+is `(T,f)(S,g)=(T+S,f*tau_-T g)`; its commutator has
+zero divisor and is therefore an ACTUAL nonzero
+field constant, not a chosen Gram pairing.
+
+The **actual original** `W.divisorSum_eq_zero_iff`
+supplies a genuine nonzero elliptic rational function
+`h_Q` with
+`div h_Q = n[Q]-[P]-(n-1)[O]`
+whenever `P=nQ` is rational. The source candidate
+constructs `u_sigma=tau_Q*(sigma h_Q/h_Q)`,
+proves its divisor is `n([sigma Q-Q]-[O])`,
+and derives the STRICT crossed identity
+`u_sigma * tau_-(sigma Q-Q)(sigma u_tau) = u_(sigma*tau)`
+from the original Galois/translation interchange.
+It thus gives the actual geometric theta-valued
+Kummer lift underlying the classical vanishing
+`Delta_n(delta P)=0`, including even n without
+halving. The Lean proof script is **NOT COMPILED**,
+so kernel-level obstruction vanishing is NOT_CLOSED.
+
+For an arbitrary original E[n]-valued continuous
+1-cocycle, the same candidate constructs the
+**raw** nonabelian theta scalar obstruction
+`f_a(sigma)*tau_-a_sigma(sigma f_a(tau))/
+ f_a(sigma*tau)`, and proves its zero principal
+divisor. A second independent native Mathlib
+source candidate `ThetaCentralPolarization.lean`
+proves the exact noncommutative group-word identity
+for polarized scalar defects using REVERSED
+sum-lift order, which yields the geometric theta
+commutator `C(a_sigma,sigma b_tau)`. The mathematical
+theta boundary polarization is thus explicit;
+the source Lean continuous H2 cocycle/class,
+section independence and the exact original
+`W.torsionCoeffWeilPairing` sign/commutator
+comparison remain OPEN. No full original Weil
+polarization or Kummer orthogonality is declared
+kernel-accepted.
+
+Source details and primary mathematical references:
+`documentation/mathematics/_support/reviews/bsd-geometric-theta-obstruction-kummer-vanishing-polarization-2026-11-02.md`.
+All original source blobs and the nonzero full local
+`H²(U_v)=H¹(F,E)` Weil–Châtelet residue remain
+preserved. Real p=2 Tate, compact Rlim,
+restricted products, Poitou–Tate, genuine regulator
+and COMPLEX Hasse–Weil central jets remain OPEN.
+
+**Acceptance:** source proof candidate, source identities
+inspected; parsing NOT_RUN, elaboration NOT_RUN,
+compilation NOT_RUN, fresh independent kernel NOT_RUN,
+transitive axiom audit NOT_RUN, Tau Ceti-compatible
+import closure NOT_RUN. No new axiom/sorry/admit,
+native CI/Noe execution, source root import/toolchain
+or dependency pin migration. No BSD-I/II proof claim.
