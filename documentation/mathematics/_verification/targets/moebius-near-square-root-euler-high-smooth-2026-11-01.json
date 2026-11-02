@@ -1,0 +1,59 @@
+{
+  "schema": "grwtsk.moebius-near-square-root-euler-high-smooth-dense/1",
+  "attribution": "grwtsk contributors",
+  "date": "2026-11-01",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_paths": [
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusNearSquareRootEulerPrefix.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothDensePairs.lean"
+  ],
+  "review_path": "documentation/mathematics/_support/reviews/moebius-near-square-root-euler-high-smooth-dense-2026-11-01.md",
+  "unmodified_source": [
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusQuantitativeMertensEulerPrefix.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeSmoothFiniteConvolution.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusBalancedTwoSidedPNTDense.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTwoCoordinateCausalAbel.lean"
+  ],
+  "exact_results": {
+    "refined_rough": "|M_R(N)| <= C_(2A)*W_P*N/(1+log N)^A + V_P*sqrt(N)*exp(sqrt(log N))",
+    "refined_matched": "|M_M(N)| <= C_(2A)*(1+W_P)*N/(1+log N)^A + V_P*sqrt(N)*exp(sqrt(log N))",
+    "high_high": "|D_HH,ab(X;A)| <= 8*log(2X)*exp(2*sqrt(log(2X)))*V_P^2",
+    "full_tagged_dense_decomposition": "HH+HL+LH+LL; source indices, signs, mask, causal Gram unchanged"
+  },
+  "explicit_lean_premises_and_targets": {
+    "unconditional_Mertens": "QuotientMertensLogPower (2*A) C: classic outside Lean, not locally imported",
+    "euler_moments": "FiniteSmoothEulerMoments: Prop; pinned Mathlib finite factoredNumbers Euler-product supplier to be ported",
+    "refined_bounds": "NearSquareRootEulerFormalizationTarget: Prop; NOT_PROVED",
+    "high_count": "HighSmoothCountFormalizationTarget: Prop; NOT_PROVED",
+    "high_gram": "HighSmoothDenseFormalizationTarget: Prop; NOT_PROVED",
+    "complete_global_dense_all_rates": "OPEN"
+  },
+  "finite_diagnostics": {
+    "integer_prefix_convolution_and_split_cases": 1000,
+    "masked_original_gram_cases": 100,
+    "banks": 5,
+    "N_max": 200,
+    "certification": "NONE"
+  },
+  "verification": {
+    "publication": "PENDING_REPO_READBACK",
+    "parsing": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_unsafe_audit": "NOT_RUN",
+    "Mertens_import": "OPEN",
+    "Euler_moment_proof": "OPEN",
+    "global_all_positive_rate": "OPEN",
+    "RiemannHypothesis": "OPEN"
+  },
+  "related_issues": [
+    1556,
+    1544,
+    1429
+  ]
+}
