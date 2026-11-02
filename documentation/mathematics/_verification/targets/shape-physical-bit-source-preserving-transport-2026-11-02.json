@@ -1,7 +1,7 @@
 {
   "schema": "grwtsk.math.verification-target/1",
   "research_date": "2026-11-02",
-  "title": "Original source-preserving shell/physical-bit transport, finite Gibbs sampling, sharp TV, maximal coupling and signed pair variance",
+  "title": "Original source-preserving shape, physical two-bit, Gibbs and signed pair comparison with exact variance-reduced rows and source-informed smoothing",
   "repository": "grwtsk/math",
   "author_attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
   "pinned_toolchain": {
@@ -47,6 +47,23 @@
       "source_commit": "4126efa42f0a1f2d41d827406ffc62fbb219180b",
       "source_parent": "54a15bd4d8ea35933ac02c3189886163c177048e",
       "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/ShapePhysicalBitRowConditioning.lean",
+      "source_commit": "c3db038a7fe6f3684700326cb0d91151beda0dd6",
+      "source_parent": "dff4253e4be2a034c94decb2aa24277d0b0f4fe8",
+      "blob": "d6acb07ffd34b23089556f86dabcf87f6b552b07",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "lines": 379
+    },
+    {
+      "path": "GRWTSK/Combinatorics/ShapePhysicalBitOptimizedRowLaw.lean",
+      "source_commit": "90f064ea56d35de401c5411283dfd348bee5257d",
+      "source_parent": "200c2af81d3cbc00bbb0fce53218d0976a1a9651",
+      "initial_source_commit": "bbbb2d708af0e02adc0fe78bde6258472690145c",
+      "blob": "41d9e5d9bd105182c759ffba522f052aedf22cd9",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "lines": 259
     }
   ],
   "pinned_dependencies": [
@@ -81,10 +98,11 @@
   ],
   "review": {
     "path": "documentation/mathematics/_support/reviews/shape-physical-bit-source-preserving-transport-2026-11-02.md",
-    "blob": "9210f809b995e1c7135112b1195f7591db656796"
+    "blob": "f4fa84b8d32c38db2e8890ccfebf4ee3798684ce",
+    "updated_at_commit": "f2fd9280a33ab3233ecc9db96957c2a9d44da2aa"
   },
-  "source_commit": "4126efa42f0a1f2d41d827406ffc62fbb219180b",
-  "source_parent": "54a15bd4d8ea35933ac02c3189886163c177048e",
+  "source_commit": "90f064ea56d35de401c5411283dfd348bee5257d",
+  "source_parent": "200c2af81d3cbc00bbb0fce53218d0976a1a9651",
   "exact_source": "Original ShapeChangingBundle center/shell plus full integer-indexed PhysicalStream, two-tangent SignedBits, existing pickupCross with all ordered non-diagonal pairs and signedReadoutDefect; no new arithmetic coefficients, windows or unproved cancellation. Third source samples finite original-index slots using the already normalized Gibbs Sampler.probability row; a uniformly weighted finite reference average is compared through the existing measured physical two-bit indexed Hilbert distance with unavailable mass separately accounted.",
   "source_candidate_theorems": [
     "Folder.Research.ShapePhysicalBitTransport.lower_lift_center",
@@ -182,22 +200,54 @@
     "Folder.Research.ShapePhysicalBitPairSampling.windowPairVariance_eq_secondMoment_sub_sq",
     "Folder.Research.ShapePhysicalBitPairSampling.originalSignedPairVariance_nonneg",
     "Folder.Research.ShapePhysicalBitPairSampling.originalSignedPairVariance_eq_secondMoment",
-    "Folder.Research.ShapePhysicalBitPairSampling.gibbs_importance_and_signed_return"
+    "Folder.Research.ShapePhysicalBitPairSampling.gibbs_importance_and_signed_return",
+    "Folder.Research.ShapePhysicalBitRowConditioning.windowPairExpectation_eq_single_row",
+    "Folder.Research.ShapePhysicalBitRowConditioning.rowExpectation_one",
+    "Folder.Research.ShapePhysicalBitRowConditioning.rowSpread_nonneg",
+    "Folder.Research.ShapePhysicalBitRowConditioning.residualSpread_nonneg",
+    "Folder.Research.ShapePhysicalBitRowConditioning.conditionedVariance_nonneg",
+    "Folder.Research.ShapePhysicalBitRowConditioning.windowPairVariance_eq_conditioned_add_spread",
+    "Folder.Research.ShapePhysicalBitRowConditioning.conditionedVariance_le_windowPairVariance",
+    "Folder.Research.ShapePhysicalBitRowConditioning.rowExpectation_originalPairImportance",
+    "Folder.Research.ShapePhysicalBitRowConditioning.singleExpectation_originalRowImportance_eq_pickupCross",
+    "Folder.Research.ShapePhysicalBitRowConditioning.originalRowSum_eq_observed_add_defect",
+    "Folder.Research.ShapePhysicalBitRowConditioning.conditionedVariance_eq_secondMoment_sub_sq",
+    "Folder.Research.ShapePhysicalBitRowConditioning.conditionedOriginalVariance_eq_rowSecondMoment_sub_sq",
+    "Folder.Research.ShapePhysicalBitRowConditioning.pickupCross_sq_le_originalRowSecondMoment",
+    "Folder.Research.ShapePhysicalBitRowConditioning.originalPairVariance_eq_rowVariance_add_spread",
+    "Folder.Research.ShapePhysicalBitRowConditioning.optimizedVariance_with_signed_return",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.originalRowAbsMass_nonneg",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularizedRowDenominator_pos",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularizedRowWeight_pos",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularized_row_numerator_sum",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularizedRowWeight_total_one",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularizedRowWeight_isPositiveWindowLaw",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularizedRowWeight_floor",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularized_row_term_bound",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularizedRowSecondMoment_le",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularized_original_variance_budget",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.regularized_original_source_return",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.originalRowAbsMass_le_pairAbsMass",
+    "Folder.Research.ShapePhysicalBitOptimizedRowLaw.balancedRegularization_secondMoment_le_two_absMass_sq"
   ],
   "unresolved_mathematical_obligations": [
     "A true topological fiber bundle requires projection, local trivializations, transition cocycles and compatibility.",
     "No spectral tensor metric, energy, orientation or isometry theorem follows from reconstruction alone.",
     "Finite one-step Gibbs sampling law and finite deterministic uniform benchmark have candidate declarations. Independent draws, concentration, equidistribution, infinite-dimensional measure, and cusp-limit convergence remain unproved; AddDissociated.randomisation remains unused without support hypotheses.",
     "The one-sided all-positive-rate bound for the complete original signed Möbius pickup or endpointSum on adequately covering scales remains OPEN.",
-    "General maximal coupling existence for a nonuniform Gibbs row is not established. The exact common-index overlap is a capacity, and only a uniform-row diagonal witness has been constructed.",
+    "The original finite-TV module did not prove nonuniform maximal coupling; a later source module now contains a SOURCE_PROOF_CANDIDATE explicit construction, with compilation/kernel acceptance NOT_RUN.",
     "The sharp finite TV bound controls [0,1]-valued masked two-bit and unavailable-indicator observables, not the complete unbounded signed off-diagonal arithmetic source or any good-scale exponent.",
     "Exact maximal coupling for arbitrary nonuniform Gibbs rows and signed source importance sampling are SOURCE PROOF CANDIDATES and require a pinned Lean compile/kernel proof before accepted status.",
     "Full original-window importance correction requires the explicit full-support Gibbs row: every original endpoint index must have positive probability; sparse rows do not permit unconditional exact recovery.",
     "The signed source importance variance includes the entire inverse-weight second moment; finite TV control of bounded bit observables supplies no numerical bound on that variance or pickupCross.",
-    "No arithmetic one-sided all-positive-rate upper bound or affine good-scale certificate for PickupEndpointQuadrature.endpointSum has been obtained."
+    "No arithmetic one-sided all-positive-rate upper bound or affine good-scale certificate for PickupEndpointQuadrature.endpointSum has been obtained.",
+    "The exact finite Rao–Blackwell row estimator preserves pickupCross and reduces pair importance-sampling variance by a nonnegative conditional spread, but computing complete signed rows may require the full pair table.",
+    "Positive source-derived regularized row weights produce a candidate second-moment bound (A+epsilon*N)*A and balanced choice <=2*A^2; a bound on the original unsigned row total A as T→∞ is NOT established.",
+    "The source-informed row sampler is a valid positive finite weight candidate and is not automatically a row of FiniteAdmissibleSampler without a separate Gibbs cost realization.",
+    "No all-positive-rate source upper estimate for PickupEndpointQuadrature.endpointSum or kernel-checked canonical RH has been obtained."
   ],
   "verification": {
-    "source_publication": "PASS_SIX_EXACT_GITHUB_BLOB_READBACKS",
+    "source_publication": "PASS_EIGHT_EXACT_GITHUB_BLOB_READBACKS",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -218,7 +268,13 @@
     "new_maximal_coupling": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
     "new_original_window_pair_sampling": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
     "reported_CI_checks_on_maximal_coupling_source_commit": 0,
-    "reported_CI_checks_on_pair_sampling_source_commit": 0
+    "reported_CI_checks_on_pair_sampling_source_commit": 0,
+    "new_row_conditioning": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "new_regularized_row_law": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "finite_numeric_checks": "PASS_270_NONCERTIFYING_FLOATING_POINT_CASES",
+    "reported_CI_checks_on_row_conditioning_source_commit": 0,
+    "reported_CI_checks_on_optimized_row_source_commit": 0,
+    "original_signed_row_asymptotic_growth_bound": "OPEN"
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
@@ -226,6 +282,61 @@
     "a3015deaa56f5990be88775fa8dfad77a0899606",
     "7e62c98390b6f94213f6ff6b64858a602bf835d4",
     "dcc1d479fd6757dcadd47fab2f057b657989e5d2",
-    "4126efa42f0a1f2d41d827406ffc62fbb219180b"
+    "4126efa42f0a1f2d41d827406ffc62fbb219180b",
+    "c3db038a7fe6f3684700326cb0d91151beda0dd6",
+    "90f064ea56d35de401c5411283dfd348bee5257d"
+  ],
+  "relevant_source_inventory": [
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteWeightedChannelCovariance.lean",
+      "blob": "1e88479b60ade504d9da34a700f8a75d1d6d6991",
+      "role": "full ordered pair covariance, not an arithmetic independence assertion"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceBudget.lean",
+      "blob": "0824eba30e866262fea432b51a5d04ff34b1cc60",
+      "role": "conditional complete covariance bound"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteCovarianceTail.lean",
+      "blob": "27ef9ca357f97bbb3aa68f138ee3917da4eb71ed",
+      "role": "Chebyshev with actual off-diagonal covariance budget"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/CausalResponseGram.lean",
+      "blob": "a24171f4415963e35930b7e21598cabd5c063c2d",
+      "role": "real source Gram PSD and lower cross-energy only"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusWeightedDecoderEnergyTransfer.lean",
+      "blob": "ce1f1396785fe8fb9e045440a4edce25df734326",
+      "role": "coefficient decoder energy error budget, independent observed arithmetic bound"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteLabeledBoundaryTV.lean",
+      "blob": "8dd0e854150ab8c60bdd60bcf3c1d456f2f18ac9",
+      "role": "finite categorical TV under exceptional-label control"
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FiniteEventL1Comparison.lean",
+      "blob": "c2cabc0ee3306bb8fd22af48d0fdc325dcc2dca1",
+      "role": "half-L1 finite event comparison"
+    },
+    {
+      "path": "GRWTSK/Geometry/SphereFourMobiusTorusPorts.lean",
+      "blob": "39e0de0301c9480030a6f271edb2943addbe34d5",
+      "role": "source-preserving geometric view, no arithmetic cancellation"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUniversalWaveformReturn.lean",
+      "blob": "8f807513c6a5cbf264750717327ed319f926ed44",
+      "role": "arbitrary waveform interface and literal Möbius specialization"
+    }
+  ],
+  "acceptance_commands_NOT_RUN": [
+    "lake env lean GRWTSK/Combinatorics/ShapePhysicalBitRowConditioning.lean",
+    "lake env lean GRWTSK/Combinatorics/ShapePhysicalBitOptimizedRowLaw.lean",
+    "lake build GRWTSK.Combinatorics.ShapePhysicalBitOptimizedRowLaw",
+    "print axioms for all new public declarations after successful full dependency closure build"
   ]
 }
