@@ -103,7 +103,7 @@
     "https://www.claymath.org/millennium-problems/"
   ],
   "verification": {
-    "source_publication": "PENDING_NONFORCE_GITHUB_READBACK",
+    "source_publication": "PASS_FOUR_EXACT_GITHUB_BLOB_READBACK",
     "source_lean_compilation": "DEFERRED_PER_USER",
     "source_parser": "NOT_RUN",
     "expected_theorem_types": "NOT_RUN",
@@ -115,10 +115,13 @@
     "toolchain_or_root_modified": false,
     "automation_CI_native_dispatched": false,
     "complete_far_all_positive_rate": "OPEN",
-    "canonical_RiemannHypothesis": "OPEN"
+    "canonical_RiemannHypothesis": "OPEN",
+    "publication_file_count": 4
   },
   "related_issues": [
     1556,
     1429
-  ]
+  ],
+  "source_commit": "2c2ac33a1ca06910bac56b04e23251b2560cd254",
+  "source_parent": "c1da1ea7156c9b7013ca1b3cbc9aaea05baa38fa"
 }
