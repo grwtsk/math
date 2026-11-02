@@ -45,7 +45,7 @@
     "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMAdaptiveHighSmoothAllShell.GlobalHighEnvelope"
   ],
   "verification": {
-    "publication": "BLOB_STAGED",
+    "publication": "SOURCE_PUBLISHED_MAIN",
     "compilation": "NOT_RUN",
     "expected_types": "NOT_RUN",
     "fresh_kernel": "NOT_RUN",
@@ -65,5 +65,7 @@
     "Do not insert RH or an all-k arithmetic bound as an axiom",
     "No unqualified Lean verification or certified new proof",
     "No CI, native runner, scheduler, root imports or dependencies changed"
-  ]
+  ],
+  "published_source_commit": "820e1bd7cb0949bc555a63651930dbd8fa40f924",
+  "published_source_blobs_verified": true
 }
