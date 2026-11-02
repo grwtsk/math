@@ -1,7 +1,7 @@
 {
   "schema": "grwtsk.math.verification-target/1",
   "research_date": "2026-11-02",
-  "title": "Original signed Möbius physical bits and finite sampling: three paid source sectors, fixed-cutoff low-GCD dense RH frontier",
+  "title": "Source-exact original signed Möbius physical bits and sampling, with nonpositive low-GCD prime dilations and open shifted primitive reindex",
   "repository": "grwtsk/math",
   "author_attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
   "pinned_toolchain": {
@@ -161,6 +161,24 @@
       "initial_source_commit": "671c86c66fed340c4cc044476d7cb0b819b2b0be",
       "lines": 227,
       "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeDilationNegative.lean",
+      "blob": "e7abaa44008b76aaeb2a6a7ee69e0b5602787014",
+      "source_commit": "2df19f28a3ceaa2b326c7ae6d37b478be1500c0d",
+      "source_parent": "5d053eeb463036390b7bb11d216b89107864ac6d",
+      "initial_source_commit": "e3d1ce0bd007dceb4933262b17919e0c82f80552",
+      "lines": 204,
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeFreePrimitiveBridge.lean",
+      "blob": "847c46ee90f721ea69338004ba6542c258b6d04c",
+      "source_commit": "32905d76afb61bf9ea9ec1e3de5120560f99dca6",
+      "source_parent": "b90ab8cea25b882366e67a90dbce94918801e8d9",
+      "initial_source_commit": "fcbe588173107a0b04be4a6bcb9f574b75b1486b",
+      "lines": 240,
+      "status": "SOURCE_PROOF_CANDIDATE_WITH_OPEN_TRIPLE_REINDEX"
     }
   ],
   "pinned_dependencies": [
@@ -198,8 +216,8 @@
     "blob": "f4fa84b8d32c38db2e8890ccfebf4ee3798684ce",
     "updated_at_commit": "f2fd9280a33ab3233ecc9db96957c2a9d44da2aa"
   },
-  "source_commit": "6188aa8f66855dadb09004047579ef45a5e3ca76",
-  "source_parent": "671c86c66fed340c4cc044476d7cb0b819b2b0be",
+  "source_commit": "32905d76afb61bf9ea9ec1e3de5120560f99dca6",
+  "source_parent": "b90ab8cea25b882366e67a90dbce94918801e8d9",
   "exact_source": "Original ShapeChangingBundle center/shell plus full integer-indexed PhysicalStream, two-tangent SignedBits, existing pickupCross with all ordered non-diagonal pairs and signedReadoutDefect; no new arithmetic coefficients, windows or unproved cancellation. Third source samples finite original-index slots using the already normalized Gibbs Sampler.probability row; a uniformly weighted finite reference average is compared through the existing measured physical two-bit indexed Hilbert distance with unavailable mass separately accounted.",
   "source_candidate_theorems": [
     "Folder.Research.ShapePhysicalBitTransport.lower_lift_center",
@@ -421,7 +439,23 @@
     "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_mean",
     "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_mean_endpointError",
     "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_variance",
-    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_variance_le_pair"
+    "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_variance_le_pair",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative.lowGcdPair_eq_prime_add_other",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative.lowGcdDenseCross_eq_prime_add_other",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative.lowGcdPrimeDilationPair_nonpos",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative.lowGcdPrimeDilationCross_nonpos",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative.lowGcdDenseCross_le_other",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative.pickupCross_eq_threePaid_prime_other",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative.endpointSum_le_otherLowGcd_plus_paid",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative.lowGcdDenseEveryRateOn_of_other",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative.riemannHypothesis_of_otherLowGcd_goodScales",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_eq_originalMask",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_eq_gcdLcmSign",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_gcdShifted_term",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.originalSource_coprime_gcdShifted_term",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_coprime_gcdShifted_term",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_implies_original_fixedGcd",
+    "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.otherLowGcdPair_mask_symm"
   ],
   "unresolved_mathematical_obligations": [
     "A true topological fiber bundle requires projection, local trivializations, transition cocycles and compatibility.",
@@ -457,10 +491,15 @@
     "The lowGcdDenseEveryRateOn G iff original pickupCross good-scale statement is a candidate conditional equivalence, not an independently established upper bound for the low-GCD dense core.",
     "The high-GCD scalar payment requires original T>=4; no new all-T quantitative claim is made. The exact four-way source partition needs no such lower time bound.",
     "The one-original-index low-GCD dense sampler preserves the true arithmetic signs but only controls finite index-sampling variance, not asymptotic signed arithmetic cancellation or a computational runtime saving.",
-    "The original endpoint mean-bias 1/4 holds only for expectation of the unbiased original signed-cross estimator at T>=0, not for each sample realization."
+    "The original endpoint mean-bias 1/4 holds only for expectation of the unbiased original signed-cross estimator at T>=0, not for each sample realization.",
+    "The original low-GCD prime-dilation packet is nonpositive at nonnegative physical time, so its removal is a ONE-SIDED upper reduction only. A signed bound on the old low-GCD dense packet cannot be transported in reverse to the new prime-free complement without bounding the removed negative mass.",
+    "The squareful-safe coprime gcd/time-shift identity applies TERMWISE under coprimality of g with a,b. The full original signed ordered double-to-primitive-triple reindex remains the unproved ExactPrimeFreeTripleReindexTarget.",
+    "The primitivized expression keeps mu(g)^2, source birth windows, both ordered orientations and T-log(g); it cannot be replaced by an unweighted, independent or unshifted two-variable Chowla model.",
+    "OtherLowGcdEveryRateOn G on one fixed affine-frequency scale set remains an independently unproved stronger arithmetic supplier; no RH conclusion, signed dense-core all-rate upper, or transitive Lean proof acceptance established.",
+    "Finite original mu diagnostics exhibit large cancellation between the negative prime packet and positive complement; finite sign checks do not justify asymptotic primitive cancellation."
   ],
   "verification": {
-    "source_publication": "PASS_TWENTY_EXACT_GITHUB_BLOB_READBACKS_AT_9a5f6ae50c77af13659b76d6a5bd09cbc2a299e1",
+    "source_publication": "TWENTY_OLD_PLUS_TWO_NEW_AWAIT_READBACK",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -523,7 +562,12 @@
     "last_all_sources_readback_revision": "9a5f6ae50c77af13659b76d6a5bd09cbc2a299e1",
     "new_six_high_gcd_related_source_pins": "PASS_EXACT_BLOB_READBACKS",
     "new_low_gcd_dense_source_static_scan": "NO_AUTHORED_SORRY_ADMIT_AXIOM_OR_NATIVE_DECIDE_IN_THREE_NEW_SOURCES_NONCERTIFYING",
-    "new_four_way_pair_count_checks": "N=8_16_32_48_64_COMBINATORIAL_MASKS_PASS_NUMERIC_NONCERTIFYING"
+    "new_four_way_pair_count_checks": "N=8_16_32_48_64_COMBINATORIAL_MASKS_PASS_NUMERIC_NONCERTIFYING",
+    "new_low_gcd_prime_dilation": "SOURCE_PROOF_CANDIDATE_ZERO_ONE_SIDED_UPPER_NO_KERNEL_CHECK",
+    "new_prime_free_coprime_primitive": "SOURCE_PROOF_CANDIDATE_TERM_IDENTITY_NO_KERNEL_CHECK",
+    "exact_prime_free_triple_reindex": "OPEN_NOT_PROVED",
+    "new_prime_free_finite_diagnostics": "FIVE_SMALL_ACTUAL_MOBIUS_WINDOWS_NONCERTIFYING",
+    "original_low_gcd_prime_free_all_rate_upper": "OPEN"
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
@@ -545,7 +589,9 @@
     "b43b8760709e269e1e21c1707ea2ad96aaa70dcb",
     "ce75115bcb41c4c662b2f26de414609dfb6e0a34",
     "40d9ef43664e5f7ffa0aacb00bd60c02959b7702",
-    "6188aa8f66855dadb09004047579ef45a5e3ca76"
+    "6188aa8f66855dadb09004047579ef45a5e3ca76",
+    "2df19f28a3ceaa2b326c7ae6d37b478be1500c0d",
+    "32905d76afb61bf9ea9ec1e3de5120560f99dca6"
   ],
   "relevant_source_inventory": [
     {
@@ -617,13 +663,13 @@
   },
   "cross_family_typed_graph": {
     "path": "documentation/mathematics/_support/reviews/shape-physical-bit-cross-family-connectivity-2026-11-02.json",
-    "blob": "3e6ab7eee30a45fcc138ba475883b6aa0110c691",
-    "new_edges": 70,
-    "unproved_transfers": 24,
-    "related_source_files": 36,
+    "blob": "86af90d03e355d1b206e4ceb4fc22a2ca06052a2",
+    "new_edges": 83,
+    "unproved_transfers": 28,
+    "related_source_files": 41,
     "previous_graph_path": "documentation/mathematics/_support/reviews/moebius-rh-original-source-typed-connectivity-2026-11-02.json",
     "previous_graph_blob": "3938b4a2fb0d20cacb6a863b7372ea49ea157f11",
-    "new_bridge_modules": 12
+    "new_bridge_modules": 14
   },
   "sharp_variance_review": {
     "path": "documentation/mathematics/_support/reviews/physical-moebius-sharp-sampling-variance-2026-11-02.md",
@@ -701,5 +747,32 @@
     "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSparseHighGcdDenseCoreSampler.lean",
     "lake build GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusSparseHighGcdDenseCoreSampler",
     "Once fully compiled, check exact theorem types, dependency closure and transitive #print axioms for each public declaration"
+  ],
+  "prime_free_review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-low-gcd-prime-free-primitive-2026-11-02.md",
+    "blob": "cd8eae16ec4f94ae0f1cce5d6c19314529aee355"
+  },
+  "prime_dilation_primitive_arithmetic_frontier": {
+    "original_source": "pickupCross T, original complete ordered signed ArithmeticFunction.moebius kernel",
+    "original_population": "endpointIndex T",
+    "previous_three_sector_payment": "gap+ratioOutsideGap+highGcdOutsideBoth, source-candidate rate bound",
+    "strict_low_gcd_dense_source": "SparseHighGcdDenseCore.lowGcdDenseCross Q T",
+    "original_prime_dilation": "DenseReducedPrimeDilationCancellation.IsPrimeDilation m n, true Nat.Prime p, not p divides q, all ordered orientations",
+    "prime_dilation_sign": "mu(q)*mu(p*q)*pickupResponseGram(T,q,p*q)=-mu(q)^2*Gram<=0, T>=0",
+    "exact_partition": "lowGcdDenseCross Q T=lowGcdPrimeDilationCross Q T+otherLowGcdCross Q T",
+    "valid_one_sided": "lowGcdDenseCross Q T <= otherLowGcdCross Q T (T>=0); converse not proved",
+    "endpoint_supplier": "endpointSum T <= otherLowGcdCross (putnamRateGapSet r T) T+(64/r^2)*exp(rT)+32T*exp(sqrt(T))+1/4 (T>=4, r>0)",
+    "conditional_RH": "OtherLowGcdEveryRateOn G AND AffineFrequent G, both independent source obligations; does NOT prove RH",
+    "true_gcd_lcm_sign": "mu(m)*mu(n)=mu(gcd(m,n))*mu(lcm(m,n)) including squareful zeros",
+    "true_common_factor_shift": "coprime(g,a) AND coprime(g,b), g,a,b>=1: sourceKernel(T,ga,gb)=mu(g)^2 mu(a) mu(b)/g*Gram(T-log(g),a,b)",
+    "exact_triple_reindex_target": "LowGcdPrimeFreePrimitiveBridge.ExactPrimeFreeTripleReindexTarget, UNPROVED finite source bijection, not an axiom",
+    "signed_primitive_all_rate_upper": "OPEN: no unproved cancellation transferred from coefficient sign or reindex",
+    "numeric_original_mu": "N=8,16,32,48,64, 55-digit mpmath working precision, original Gram primitive; noncertifying finite-only"
+  },
+  "prime_free_acceptance_commands_NOT_RUN": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeDilationNegative.lean",
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeFreePrimitiveBridge.lean",
+    "lake build GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusLowGcdPrimeFreePrimitiveBridge",
+    "After successful pinned dependency build, #check source declaration types and #print axioms for the entire newly imported closure"
   ]
 }
