@@ -91,6 +91,33 @@
       "namespace": "GRWTSK.NumberTheory.Moebius.DenseCoreZeroWitness",
       "decl_count": 1,
       "status": "CONDITIONAL_SOURCE_PROOF_CANDIDATE_WITH_UNPORTED_ANALYTIC_GATES"
+    },
+    {
+      "id": "sparse_high_gcd_dense_source",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSparseHighGcdDenseCore.lean",
+      "blob": "11ac20aa5fca77f0de5deebce670f06204e61e4f",
+      "commit": "ce75115bcb41c4c662b2f26de414609dfb6e0a34",
+      "namespace": "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCore",
+      "decl_count": 12,
+      "status": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "id": "sparse_high_gcd_dense_return",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSparseHighGcdDenseCoreReturn.lean",
+      "blob": "db5e80b45f95ad20b2463ed8d5e85fcd27e3d74c",
+      "commit": "40d9ef43664e5f7ffa0aacb00bd60c02959b7702",
+      "namespace": "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreReturn",
+      "decl_count": 5,
+      "status": "SOURCE_PROOF_CANDIDATE_WITH_INDEPENDENT_RH_STRENGTH_PREMISE"
+    },
+    {
+      "id": "sparse_high_gcd_dense_sampler",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSparseHighGcdDenseCoreSampler.lean",
+      "blob": "633aa83024c5defab642048f386e14898a1c1731",
+      "commit": "6188aa8f66855dadb09004047579ef45a5e3ca76",
+      "namespace": "GRWTSK.NumberTheory.Moebius.SparseHighGcdDenseCoreSampler",
+      "decl_count": 10,
+      "status": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
     }
   ],
   "related_source_statements": [
@@ -303,6 +330,48 @@
       "namespace": "GRWTSK.NumberTheory.Moebius",
       "role": "all-character original Dirichlet family mean, not principal-only signed upper",
       "scope": "repository_source_statement; kernel_status_NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCompleteHighGcdElementaryClosure.lean",
+      "blob": "918952c6edc614291bad983f253366d7cb31a18f",
+      "namespace": "GRWTSK.NumberTheory.Moebius",
+      "role": "complete positive divisor cover and its all-positive-rate scalar source candidate",
+      "scope": "repository source theorem candidate; native compilation NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCompleteHighGcdDivisorCover.lean",
+      "blob": "354af0c431832b883974a3157e1000eb4f046a1f",
+      "namespace": "GRWTSK.NumberTheory.Moebius",
+      "role": "positive source bound on high-GCD pair-cover cost",
+      "scope": "repository source theorem candidate; native compilation NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUnmaskedLowGcdEndpoint.lean",
+      "blob": "1adfd2470cb28a0d98ad567d436853ab2d091f67",
+      "namespace": "GRWTSK.NumberTheory.Moebius",
+      "role": "original complete positive high-GCD absolute source cost",
+      "scope": "repository source theorem candidate; native compilation NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalGramRootFloorSuppliers.lean",
+      "blob": "efbf49d9d0be6f59dc165ec715b14b0f12207d12",
+      "namespace": "GRWTSK.NumberTheory.Moebius",
+      "role": "original response Gram root envelope and fixed cutoff floor ratio",
+      "scope": "repository source theorem candidate; native compilation NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedSublinearCompensatedEndpoint.lean",
+      "blob": "f2d9748589f5999ff667486538968d7eff5a753f",
+      "namespace": "GRWTSK.NumberTheory.Moebius",
+      "role": "original fixed gcd cutoff D*(T), independent of requested rate",
+      "scope": "repository source theorem candidate; native compilation NOT_RUN"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletMeanSignedCross.lean",
+      "blob": "4e4260e695ad30e3a0d9f04a6a6c5a90b4b19e32",
+      "namespace": "GRWTSK.NumberTheory.Moebius",
+      "role": "distinct all-character family-mean energy, not fixed original signed upper",
+      "scope": "repository source theorem candidate; native compilation NOT_RUN"
     }
   ],
   "new_typed_edges": [
@@ -826,6 +895,162 @@
         "independently proved unsigned core row masses"
       ],
       "acceptance": "CONDITIONAL_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "MoebiusEndpointPutnamSmallRatioAllRate.endpointDenseAddMulCoreCross",
+      "to": "SparseHighGcdDenseCore.denseCore_eq_lowGcd_add_highGcd",
+      "kind": "EXACT_MASK_SPLIT",
+      "required": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "MoebiusEndpointPutnamSmallRatioAllRate.pickupCross_eq_gap_ratio_core",
+      "to": "SparseHighGcdDenseCore.pickupCross_eq_threePaid_add_lowGcdDense",
+      "kind": "EXACT_ORIGINAL_ORDERED_FOUR_SECTOR_PARTITION",
+      "required": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "MoebiusUnmaskedLowGcdEndpoint.plainHighGcdAbsoluteCost",
+      "to": "SparseHighGcdDenseCore.highGcdDense_abs_le_fullHighGcdAbsoluteCost",
+      "kind": "POSITIVE_SUBPACKET_MAJORANT_NOT_SIGNED_HIGH_TOTAL",
+      "required": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "MoebiusCompleteHighGcdElementaryClosure.divisorCoverRootTail_proof",
+      "to": "SparseHighGcdDenseCore.highGcdDense_abs_le_scalar",
+      "kind": "ORIGINAL_POSITIVE_DIVISOR_COVER",
+      "required": [
+        "4<=T",
+        "original D*(T)"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "MoebiusOriginalGramRootFloorSuppliers.fixedGcdRatio_proof",
+      "to": "SparseHighGcdDenseCore.highGcdDense_abs_le_scalar",
+      "kind": "ORIGINAL_FIXED_CUTOFF_FLOOR_RATIO",
+      "required": [
+        "4<=T"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "MoebiusCompleteHighGcdElementaryClosure.completeHighGcdScalarEveryRate_proof",
+      "to": "SparseHighGcdDenseCore.originalCross_lowGcdDense_allRateError",
+      "kind": "UNCONDITIONAL_POSITIVE_RATE_PAYMENT_SOURCE_CANDIDATE",
+      "required": [
+        "rate>0",
+        "T>=R_rate"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "DenseCoreRowControlVariate.paidSparseSectors_abs_le",
+      "to": "SparseHighGcdDenseCore.threePaidSectors_abs_le_raw",
+      "kind": "ADDITIVE_GAP_PLUS_RATIO_PLUS_DISJOINT_HIGH_GCD",
+      "required": [
+        "rate>0",
+        "T>=4"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "PickupEndpointQuadrature.endpointSum_error",
+      "to": "SparseHighGcdDenseCore.endpointSum_sub_lowGcdDense_abs_le",
+      "kind": "ORIGINAL_ENDPOINT_QUARTER_BUDGET",
+      "required": [
+        "T>=4",
+        "rate>0"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "SparseHighGcdDenseCore.originalCross_lowGcdDense_allRateError",
+      "to": "SparseHighGcdDenseCoreReturn.lowGcdDenseEveryRateOn_iff_originalCrossOn",
+      "kind": "BIDIRECTIONAL_ALL_RATE_SOURCE_EXACT_TRANSFER",
+      "required": [
+        "fixed G",
+        "all eta>0",
+        "half-rate error payment"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "PickupEndpointQuadrature.endpoint_subexponential_iff",
+      "to": "SparseHighGcdDenseCoreReturn.lowGcdDenseEveryRateOn_iff_endpointOn",
+      "kind": "ENDPOINT_SOURCE_EQUIVALENCE",
+      "required": [
+        "same fixed G"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "PickupEndpointQuadrature.riemannHypothesis_of_endpoint_good_scales",
+      "to": "SparseHighGcdDenseCoreReturn.riemannHypothesis_of_lowGcdDense_goodScales",
+      "kind": "CONDITIONAL_RH_CONSUMER",
+      "required": [
+        "AffineFrequent G",
+        "LowGcdDenseEveryRateOn G OPEN"
+      ],
+      "acceptance": "CONDITIONAL_WITH_OPEN_RH_STRENGTH_PREMISE"
+    },
+    {
+      "from": "PhysicalMoebiusBitGramReturn.pickupCross_eq_observed_add_defect",
+      "to": "SparseHighGcdDenseCoreReturn.originalCross_eq_threePaid_plus_core_and_observer",
+      "kind": "SIGNED_PHYSICAL_DEFECT_PRESERVED",
+      "required": [
+        "same original stream and integer index"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "ShapePhysicalBitPairSampling.windowPairImportance_eq_originalSum",
+      "to": "SparseHighGcdDenseCoreSampler.lowGcdDensePairImportance_mean",
+      "kind": "EXACT_ORIGINAL_LOW_GCD_PAIR_IMPORTANCE",
+      "required": [
+        "PositiveWindowLaw T w"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "ShapePhysicalBitRowConditioning.conditionedVariance_le_windowPairVariance",
+      "to": "SparseHighGcdDenseCoreSampler.lowGcdDenseRowVariance_le_pairVariance",
+      "kind": "EXACT_FINITE_ROW_CONDITIONING",
+      "required": [
+        "strict positive original-index weight",
+        "same ordered hard source"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "SparseHighGcdDenseCore.pickupCross_eq_threePaid_add_lowGcdDense",
+      "to": "SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_mean",
+      "kind": "SIGNED_SOURCE_UNBIASED_ESTIMATOR",
+      "required": [
+        "PositiveWindowLaw T w",
+        "deterministic actual paid packets"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "PickupEndpointQuadrature.endpointSum_error",
+      "to": "SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_mean_endpointError",
+      "kind": "MEAN_ENDPOINT_BIAS_NOT_PATHWISE",
+      "required": [
+        "T>=0"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "from": "SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_variance",
+      "to": "SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_variance_le_pair",
+      "kind": "DETERMINISTIC_PAID_SECTOR_ZERO_SAMPLE_VARIANCE",
+      "required": [
+        "same positive original-index law"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
     }
   ],
   "unproved_or_invalid_transfers": [
@@ -936,6 +1161,42 @@
       "to": "proved algorithmic runtime improvement",
       "kind": "NO_PROVED_TRANSFER",
       "why": "Source-informed weights and deterministic gap/ratio payment may each require large finite arithmetic sums; only finite sampling variance was compared."
+    },
+    {
+      "from": "SparseHighGcdDenseCore.highGcdDenseCross",
+      "to": "UnmaskedLowGcdEndpoint.plainHighGcdCross",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Signed complete high-GCD cross may cancel, cannot bound signed subpacket; only the full positive absolute cost was used."
+    },
+    {
+      "from": "SparseHighGcdDenseCoreReturn.lowGcdDenseEveryRateOn_iff_originalCrossOn",
+      "to": "unconditional RiemannHypothesis",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "The equivalence does not prove the low-gcd dense-core all-rate premise or a fixed affine-frequency good-scale witness."
+    },
+    {
+      "from": "SparseHighGcdDenseCore.highGcdDense_abs_le_scalar",
+      "to": "T<4 high-GCD uniform scalar bound",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "The imported scalar theorem explicitly requires T>=4; finite partition is global but quantitative payment is not."
+    },
+    {
+      "from": "SparseHighGcdDenseCoreSampler.originalCrossLowGcdEstimator_mean",
+      "to": "cheap unbiased endpointSum algorithm",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "The mean is exactly pickupCross, and its endpoint mean bias is <=1/4 only; computing all deterministic control variates and source-informed weights can be expensive."
+    },
+    {
+      "from": "SparseHighGcdDenseCoreSampler.lowGcdDenseRowVariance_le_pairVariance",
+      "to": "all-positive-rate signed low-GCD dense-core upper",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Finite sampling variance optimization does not prove signed arithmetic cancellation of original coefficients."
+    },
+    {
+      "from": "MoebiusDirichletMeanSignedCross.meanSignedCross_le_quotient_quadratic",
+      "to": "single original signed low-GCD dense-core growth bound",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "All-character Dirichlet family mean, not the original single coefficient channel; needs an independently proved deviation/selection bridge."
     }
   ],
   "proof_acceptance": {
@@ -953,9 +1214,13 @@
     "finite_exact_rational_tests": "720_CASES_PASS_NONCERTIFYING",
     "new_dense_core_lean_compilation": "NOT_RUN",
     "new_dense_core_axiom_audit": "NOT_RUN",
-    "new_unconditional_hard_core_upper": "OPEN"
+    "new_unconditional_hard_core_upper": "OPEN",
+    "new_fixed_low_gcd_dense_core": "SOURCE_PROOF_CANDIDATE",
+    "new_fixed_low_gcd_dense_core_compilation": "NOT_RUN",
+    "new_fixed_low_gcd_dense_core_kernel": "NOT_RUN",
+    "new_original_signed_low_gcd_dense_upper": "OPEN"
   },
-  "mathematical_target": "Unconditionally (relative to imported source proof candidates) pay gap and disjoint integer-multiple sectors, isolate original signed dense core; no signed hard-core all-rate bound. Endpoints still differ by 1/4. The hypothetical offcritical zero forces dense-core spikes only conditionally on independently unported analytic gates.",
+  "mathematical_target": "Three genuine source-bound paid subpackets give all-positive-rate scalar error relative to the stricter original signed low-GCD dense core; no independent estimate of the latter or RH proof.",
   "verification": {},
   "new_math_review": {
     "path": "documentation/mathematics/_support/reviews/physical-moebius-sharp-sampling-variance-2026-11-02.md",
@@ -973,5 +1238,24 @@
     "finite_actual_moebius_checks": "high-precision numerical, NOT Lean proof",
     "endpoint_bias": "absolute mean error at most 1/4 for T>=0; not sample-path bound",
     "curvature_availability": "NOT_ESTABLISHED"
+  },
+  "fixed_low_gcd_dense_increment": {
+    "source_scan_anchor": "2e864e3514ba43426d80b245933a31508dbe4c3d",
+    "review": {
+      "path": "documentation/mathematics/_support/reviews/moebius-sparse-high-gcd-dense-core-2026-11-02.md",
+      "blob": "3bdb6b8aad2cf1eb4f685c6c1948295d4bfd3731"
+    },
+    "new_source_files": 3,
+    "new_public_theorems": 27,
+    "four_original_sectors": "gap, disjoint ratio outside gap, high gcd outside both, remaining low-gcd dense core",
+    "fixed_gcd_cutoff": "max(1,floor(exp(T-sqrt T)))",
+    "rate_cutoff": "putnamRateGapSet r T, q<=exp(r*T/2)",
+    "source_payment": "|pickupCross-lowGcdDenseCross|<=(64/r^2)*exp(r*T)+32*T*exp(sqrt T), T>=4",
+    "endpoint_payment": "|endpointSum-lowGcdDenseCross|<=above+1/4, T>=4",
+    "all_rate": "For eta>0, fixed original scale T>=R_eta, low mask uses r=eta/2; source error <=C_eta exp(eta*T)",
+    "equivalence": "LowGcdDenseEveryRateOn G iff SubexponentialOn pickupCross G (then endpoint via original quarter error); does not prove either predicate",
+    "sampling": "Original integer one-index signed low-gcd dense rows, deterministic 3-control variates, unbiased for pickupCross and endpoint mean bias <=1/4",
+    "independent_arithmetic_obligation": "Unproved original signed low-GCD dense-core upper on one fixed affinely frequent scale set",
+    "numerical_checks": "Five source arithmetic finite masks at N=8,16,32,48,64, 55-digit working precision, noncertifying"
   }
 }
