@@ -346,3 +346,68 @@ transitive axiom audit NOT_RUN, Tau Ceti-compatible
 import closure NOT_RUN. No new axiom/sorry/admit,
 native CI/Noe execution, source root import/toolchain
 or dependency pin migration. No BSD-I/II proof claim.
+
+
+## ORIGINAL geometric theta group and strict Kummer nonabelian trivialization (2026-11-02)
+
+New pinned isolated `TauCetiOriginalGeometricTheta.lean` and
+`TauCetiOriginalGeometricThetaGalois.lean` use only the ORIGINAL
+elliptic divisor, translation and Galois suppliers of
+TauCetiProject/TauCeti `2bdb755239d3bd84760e99bc83166bdf7cc75a6b`
+(Lean v4.36.0-rc1, original contributors, Apache-2.0).
+The root grwtsk/math Lean v4.34.1 import boundary remains unchanged.
+The isolated Galois module imports the first from the SAME
+adapter directory; it needs an explicit compatible Lean search path.
+
+The REAL theta lift is a point T in E[n](Fsep) and a nonzero
+elliptic rational function `f_T` with
+`div(f_T)=n((T)-(O))`, constructed using original
+`exists_principal_eq_zsmul_ofPoint_sub_infinity`.
+Multiplication is the genuine function action
+`(T,f)(S,g)=(T+S,f tau_-T^*g)`. The candidate proves
+closure, associativity, inverse, scalar identity fibre
+and centrality with the ORIGINAL function field's
+`Divisor.principal_eq_zero_iff`. Its commutator is
+the ACTUAL ratio `f_T tau_-T^*f_S /(f_S tau_-S^*f_T)`;
+the source shows it is a nonzero constant, not a
+guessed symplectic Gram entry.
+
+For rational P=nQ, original elliptic divisor-sum
+provides `h_Q` with
+`div(h_Q)=n(Q)-(P)-(n-1)(O)`.
+The explicit lift `f_sigma=tau_Q^*(sigma h_Q/h_Q)`
+has the original n-torsion divisor and obeys STRICT
+`f_sigma tau_(-sigma Q+Q)^*(sigma f_tau)=f_(sigma tau)`.
+Hence the Kummer-specific nonabelian theta boundary
+function is LITERALLY 1. For arbitrary original E[n]
+cocycles, the REAL quotient of function lifts
+has divisor zero and is therefore a scalar cochain
+`thetaObstructionScalar`. Continuity, independence of
+arbitrary lift choices and the full H²/Brauer class
+are still NOT kernel-proved.
+
+New independent Mathlib-only `ThetaCentralBoundaryPolarization.lean`
+calculates the true factor-set cross term, with central
+scalar kernel:
+`b_(uv)(sigma,tau)=[v_sigma,sigma(u_tau)] b_u b_v`.
+A separate original geometric theorem is still required
+to identify this scalar commutator with precisely
+`W.torsionCoeffWeilPairing n hn` (or its correctly
+oriented inverse), using the source
+`TauCeti.Isogeny.algebraMap_weilPairing` and Weil
+reciprocity. Without that source identity and the
+continuous cochain-class construction, the FULL
+O'Neil theta polarization and
+`Delta_n(delta_n(P))=0` in continuous Brauer H²
+remain OPEN as formally verified theorems.
+
+Detailed proof mathematics, immutable source blobs,
+the 1,751 exact finite Heisenberg algebra checks and
+NOT_RUN facets:
+`documentation/mathematics/_support/reviews/bsd-original-geometric-theta-obstruction-kummer-vanishing-polarization-2026-11-02.md`.
+This is real geometric progress, not a license to
+skip the remaining original source Weil comparison.
+No native Noe/CI/scheduler job, new axiom/sorry/admit,
+toolchain change or root imports. Preserve full
+Weil–Chatelet H² residue, all H⁰ and good-truncation
+conditions, real p=2 and noncircular BSD-I/II frontier.
