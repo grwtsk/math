@@ -1,0 +1,69 @@
+{
+  "schema": "grwtsk.math.source-verification-target/1",
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "attribution": "grwtsk contributors",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "inspected_source_commit": "5e56b99e0a51d57c3016052f3749d50763b8b703",
+  "publication_commit": "NOT_YET_RECORDED",
+  "selected_modules": [
+    "GRWTSK/Combinatorics/GraphTheory/CertifiedSoficFiniteOptimizer.lean",
+    "GRWTSK/Combinatorics/GraphTheory/CertifiedSoficFiniteOptimizerExample.lean"
+  ],
+  "original_infimum_module": "GRWTSK/Combinatorics/GraphTheory/CertifiedSoficOptimalBudget.lean",
+  "original_infimum_blob": "9f782e53cdc13b1a1c8ef2f6cf2c85c1b63854fa",
+  "original_certified_trace_blob": "f0436ae18dd786e312a4966b27b2edc51e3d7fa1",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "finite rational-cost certified path selection with explicit cycle-reduction and bounded catalogue coverage hypotheses",
+  "selected_declarations": [
+    "RationalCertifiedRoute",
+    "chooseCheaper",
+    "minimumFrom",
+    "optimizeFinite?",
+    "minimumFrom_le_first",
+    "minimumFrom_le_member",
+    "minimumFrom_origin",
+    "FiniteStateCoverage",
+    "FiniteStateCoverage.covers_all",
+    "FiniteStateCoverage.optimizedCost_le_entry",
+    "FiniteStateCoverage.optimized_eq_global_infimum",
+    "SourceAnchored.finite_optimized_source_return",
+    "no_finite_coverage_of_no_route",
+    "Example.threeState",
+    "Example.direct",
+    "Example.loopThenDirect",
+    "Example.direct_is_lower_bound",
+    "Example.covered",
+    "Example.finite_example_matches_global_infimum",
+    "Example.finite_example_returns_cost_two"
+  ],
+  "pending_facets": {
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "source_import_closure": "NOT_RUN",
+    "python_to_lean_refinement": "NOT_PROVED",
+    "automatic_catalogue_enumeration": "NOT_IMPLEMENTED",
+    "unconditional_cycle_reduction": "NOT_PROVED"
+  },
+  "reference_fixture": {
+    "assertions_passed": 1253357,
+    "three_vertex_exhaustive_graphs": 4096,
+    "four_vertex_seeded_graphs": 320,
+    "native_receipt": false,
+    "independent_of_lean": true
+  },
+  "parallel_issue_1621": {
+    "status": "OPEN",
+    "pinned_commit": "c8808d5c5c2b92e67f79ad37305ca2284dae312c",
+    "pinned_source_blob": "2e826d985cce81efa611cddd37304e68b0d6caae",
+    "meta_execution": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "automatic_application_admission": false
+  },
+  "execution_dispatch": false,
+  "proof_acceptance": false
+}
