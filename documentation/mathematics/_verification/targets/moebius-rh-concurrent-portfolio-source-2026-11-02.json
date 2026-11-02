@@ -1,0 +1,124 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Concurrent RH source reconciliation and exact portfolio-to-original FAR/fixed compensated source bridge",
+  "repository": "grwtsk/math",
+  "attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
+  "scans": [
+    {
+      "source_commit": "697face2b38918d5ad8f83fa854a02eb742ef37d",
+      "root_tree": "90bd5fcdbcd451f07b01ac0abd002d6376cd351a",
+      "Moebius_source_count": 162,
+      "graph_path": "documentation/mathematics/_support/reviews/moebius-rh-original-source-typed-connectivity-v2-2026-11-02.json",
+      "graph_blob": "05819ea76bb4e01253270e801e9d353c14eef3fc"
+    },
+    {
+      "source_commit": "50511171b4611a42b3428ab4c77e1293e909eac2",
+      "root_tree": "32ab663ba1a3a3a6ef363e4c48dca8f4656e562f",
+      "zeta_tree": "2d967caf55fc594ad213e0312c1910745bfc6d5d",
+      "Moebius_source_count": 172,
+      "graph_path": "documentation/mathematics/_support/reviews/moebius-rh-original-source-typed-connectivity-v3-2026-11-02.json",
+      "graph_blob": "8d6aac628c1046af9c4ddd9961ff7e74b262488d",
+      "curated_nodes": 80,
+      "typed_edges": 92
+    }
+  ],
+  "earlier_source_publication": {
+    "commit": "2fa718cb84c1aae3e079a9e13332454f68268460",
+    "parent": "e85112107f5f56b1f9ecbf5e1a892c6e186fab2b",
+    "readbacks": "PASS_6_EXACT_SOURCE_BLOBS",
+    "files": [
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedCoreFarCommonEnergy.lean",
+        "blob": "077bb08259d4f8090a4881441be8e0a60dc66b4f"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFamilyHermitianLaplaceZeroBarrier.lean",
+        "blob": "1bd6aa68b9e820c27967905a1d525fde986f0f5c"
+      },
+      {
+        "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDecoderCoreFarEnergyBridge.lean",
+        "blob": "edaac614423737b253572a5c84253f97fedf0e6f"
+      }
+    ]
+  },
+  "new_source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPortfolioCoreFarReturn.lean",
+    "blob": "e00ec09f6f2bdd9d0fb0db4fa685dc7b8dc5e0cc",
+    "theorem_proof_candidates": [
+      "far_le_portfolio_plus_original_paid",
+      "fixed_core_le_portfolio_plus_fixed_cross_bill",
+      "portfolio_bounds_far_and_fixed_core"
+    ],
+    "status": "SOURCE_PROOF_CANDIDATE_UNCOMPILED"
+  },
+  "new_review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-rh-concurrent-source-atlas-portfolio-reconciliation-2026-11-02.md",
+    "blob": "e83e675f50a81dbff40eb5ef08a71965fdc330c4"
+  },
+  "seven_concurrent_source_files": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletEulerIdentificationClosure.lean",
+      "blob": "a943f04a141036701e3dcd49b4acf17b56ab037c"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusIntegratedSourceAtlas.lean",
+      "blob": "1fb3a37cfc50f219ac5923c21afcd5d1bc7e7e1f"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionComplexGramClosure.lean",
+      "blob": "ff96f81e0e164f00e99ad903171af01f33816ff7"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionHermitianSieveClosure.lean",
+      "blob": "afa18a6c4213eccfb7616fd69683f39bb7468864"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionPriorityAcceptance.lean",
+      "blob": "5e49628644a403f18c0de71681367f5396251be9"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeRoughGapSourceReturn.lean",
+      "blob": "d832f2d6fc021b44a89c8f8c21ff1aca71e3611c"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUnifiedObservationPortfolio.lean",
+      "blob": "a376a6b30b66893aba7f2038e89b707f5f06ada5"
+    }
+  ],
+  "true_source_composition": {
+    "original_time": "T_J=J*log 2 for every J>=1, unchanged real Möbius including squareful zeroes, ordered birth gated Gram and diagonal exclusion",
+    "portfolio_source": "Under genuine prime-validity and original-index ErrorCertificate, original pickupCross(T_J)<=sourcePortfolioUpper(E,phase,decode,eta,eps,T_J,depth,primes)",
+    "exact_original_far": "F(B,J)=pickupCross(T_J)-collarIncident(B,J)-shortRatio(B,J)-reducedClose(B,J)",
+    "fixed_compensated": "pickupCross(T_J)=fixedCompensatedCore(T_J)+fixedCoreCrossDefect(J), signed defect absolute <=fixedCrossOriginalAbsoluteBill(T_J) with no duplicate diagonal",
+    "source_portfolio_far_bound": "F(B,J)<=sourcePortfolioUpper+|collarIncident(B,J)|+|shortRatio(B,J)|+|reducedClose(B,J)|",
+    "source_portfolio_fixed_core_bound": "fixedCompensatedCore(T_J)<=sourcePortfolioUpper+fixedCrossOriginalAbsoluteBill(T_J)",
+    "RH_unresolved": "SourcePortfolioUpper all-rate on unbounded good scales, original signed FAR all-rate, or independently original energy all-positive damping remains unproved"
+  },
+  "verification": {
+    "new_source_publication": "PENDING_GUARDED_GITHUB_DIFF_AND_EXACT_BLOBS",
+    "first_source_git_readback": "PASS_EXACT_SIX_BLOBS",
+    "new_static_lexical": "NOT_RUN",
+    "native_compilation": "DEFERRED_PER_USER",
+    "parser": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_opaque_native": "NOT_RUN",
+    "existing_L_family_priority_commands": "AUTHORED_IN_REPO_NOT_EXECUTED",
+    "full_RH": "OPEN",
+    "GRH": "OPEN",
+    "original_kernel_coefficients_modified": false,
+    "existing_files_modified": false,
+    "root_or_toolchain_modified": false,
+    "Noe_CI_native_automations_dispatched": false
+  },
+  "pinned_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "issues": [
+    1556,
+    1429,
+    1559
+  ]
+}
