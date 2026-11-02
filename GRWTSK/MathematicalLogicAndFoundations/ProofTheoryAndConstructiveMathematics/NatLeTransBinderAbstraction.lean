@@ -15,9 +15,10 @@ the bound variables after all five binders are introduced.
 The MetaM comparison takes an already checked local expression witness,
 abstracts precisely those five local variables in the original order,
 rejects any remaining free variables, universe parameters, metavariables
-or loose bound variables, and compares the result and its type with both
-explicit templates and the actual Nat.le_trans declaration in the
-current Lean environment. This is an observer, not a kernel receipt.
+or loose bound variables, checks the *exact* implicit/explicit binder
+profile, compares the result and its type with the actual Nat.le_trans
+declaration and attempts a kernel check in the current Lean environment.
+This is unexecuted observer source, not an audited kernel receipt.
 
 The independent typed mathematical counterpart reuses the existing
 InstantiatedApplication, proving that its complete premise predicate
@@ -55,12 +56,12 @@ def canonicalNatLeTransLambda : Lean.Expr :=
           (.lam `hbc (natLeTransLeExpr (.bvar 2) (.bvar 1))
             canonicalNatLeTransBody .default)
           .default)
-        .default)
-      .default)
-    .default
+        .implicit)
+      .implicit)
+    .implicit
 
-/-- The original Nat.le_trans type has three *implicit* Nat binders,
-followed by precisely two explicit proof binders. The final result
+/-- The original Nat.le_trans type and canonical lambda both have three
+*implicit* Nat binders, followed by precisely two explicit proof binders. The final result
 references a=4 and c=2 in the five-variable telescope. -/
 def canonicalNatLeTransForall : Lean.Expr :=
   .forallE `a (Lean.mkConst ``Nat)
@@ -73,6 +74,43 @@ def canonicalNatLeTransForall : Lean.Expr :=
         .implicit)
       .implicit)
     .implicit
+
+/-- Binder-info is **not** a consequence of definitional equality. This
+strict source-shape guard checks the first three implicit Nat parameters and
+both explicit proof arguments on a five-binder lambda. -/
+def natLeTransLambdaBinderInfos : Lean.Expr → Bool
+  | .lam _ _
+      (.lam _ _
+        (.lam _ _
+          (.lam _ _
+            (.lam _ _ _ .default) .default) .implicit) .implicit) .implicit => true
+  | _ => false
+
+/-- The dependent theorem type has exactly the same binder-info profile. -/
+def natLeTransForallBinderInfos : Lean.Expr → Bool
+  | .forallE _ _
+      (.forallE _ _
+        (.forallE _ _
+          (.forallE _ _
+            (.forallE _ _ _ .default) .default) .implicit) .implicit) .implicit => true
+  | _ => false
+
+theorem canonicalNatLeTransLambda_binderInfos :
+    natLeTransLambdaBinderInfos canonicalNatLeTransLambda = true := by decide
+
+theorem canonicalNatLeTransForall_binderInfos :
+    natLeTransForallBinderInfos canonicalNatLeTransForall = true := by decide
+
+/-- An all-explicit outer lambda cannot be substituted for an implicit
+theorem parameter, even when its body is definitionally equal. -/
+theorem natLeTransLambda_explicit_outer_rejected (body : Lean.Expr) :
+    natLeTransLambdaBinderInfos
+      (.lam `a (Lean.mkConst ``Nat) body .default) = false := rfl
+
+/-- The same hostile boundary applies to the quantified type. -/
+theorem natLeTransForall_explicit_outer_rejected (body : Lean.Expr) :
+    natLeTransForallBinderInfos
+      (.forallE `a (Lean.mkConst ``Nat) body .default) = false := rfl
 
 /-- Pure structural de Bruijn scope check, independent of MetaM and Git.
 A free variable, metavariable, unsupported level or metadata wrapper is
@@ -139,6 +177,10 @@ def inspectNatLeTransAbstraction (source : Lean.Expr) :
   if quantifiedType.hasFVar || quantifiedType.hasMVar ||
       quantifiedType.hasLevelParam || quantifiedType.looseBVarRange != 0 then
     return none
+  -- Binder-info is a separate syntactic obligation; Meta.isDefEq alone
+  -- must not certify the exact implicit/explicit parameter profile.
+  unless natLeTransLambdaBinderInfos abstracted do return none
+  unless natLeTransForallBinderInfos quantifiedType do return none
   unless (← Lean.Meta.isTypeCorrect abstracted) do return none
   let abstractedType ← Lean.Meta.inferType abstracted
   let declarationType ← Lean.Meta.inferType (Lean.mkConst ``Nat.le_trans)
@@ -149,6 +191,13 @@ def inspectNatLeTransAbstraction (source : Lean.Expr) :
   unless (← Lean.Meta.isDefEq abstractedType quantifiedType) do
     return none
   unless (← Lean.Meta.isDefEq abstractedType declarationType) do
+    return none
+  -- This is an actual kernel check only WHEN this MetaM function runs.
+  -- Its debug-oriented API checks the current environment and local context,
+  -- not the full transitive axiom trust closure or source-Git authenticity.
+  try
+    Lean.Meta.checkWithKernel abstracted
+  catch _ =>
     return none
   return some {
     observed := observed
@@ -162,9 +211,9 @@ def inspectNatLeTransAbstraction (source : Lean.Expr) :
 The independent operational verifier must separately invoke the kernel
 checker and collect an exact-source trust/axiom audit. -/
 def inspectFreshNatLeTransAbstraction : Lean.Meta.MetaM Bool :=
-  Lean.Meta.withLocalDeclD `a (Lean.mkConst ``Nat) fun a =>
-  Lean.Meta.withLocalDeclD `b (Lean.mkConst ``Nat) fun b =>
-  Lean.Meta.withLocalDeclD `c (Lean.mkConst ``Nat) fun c =>
+  Lean.Meta.withLocalDecl `a .implicit (Lean.mkConst ``Nat) fun a =>
+  Lean.Meta.withLocalDecl `b .implicit (Lean.mkConst ``Nat) fun b =>
+  Lean.Meta.withLocalDecl `c .implicit (Lean.mkConst ``Nat) fun c =>
   Lean.Meta.withLocalDeclD `hab
     (natLeTransLeExpr a b) fun hab =>
   Lean.Meta.withLocalDeclD `hbc
@@ -200,6 +249,21 @@ theorem scopedNatLeTrans_certificate_return (a b c : Nat)
     (h : a ≤ b ∧ b ≤ c) : a ≤ c :=
   (ScopedOrderExample.orderTransitivity a b c).consequence
     ((scopedNatLeTrans_premises_iff a b c).mpr h)
+
+/-- A fixed interpretation of the original Nat.le_trans source theorem
+has exactly the same implication interface as the instantiated two-premise
+rule. This is a logical correspondence, NOT a reflection from raw Lean.Expr. -/
+theorem scopedNatLeTrans_implication_iff (a b c : Nat) :
+    ((∀ p, p ∈ (ScopedOrderExample.orderTransitivity a b c).rule.premises →
+      ScopedOrderExample.Meaning a b c p) →
+      ScopedOrderExample.Meaning a b c ScopedOrderExample.conclusionAC) ↔
+      (a ≤ b → b ≤ c → a ≤ c) := by
+  constructor
+  · intro consequence hab hbc
+    exact consequence ((scopedNatLeTrans_premises_iff a b c).mpr ⟨hab, hbc⟩)
+  · intro consequence hp
+    obtain ⟨hab, hbc⟩ := (scopedNatLeTrans_premises_iff a b c).mp hp
+    exact consequence hab hbc
 
 /-- A source shape alone cannot supply the missing second premise.
 This is a concrete hostile countermodel, not a kernel proof of the
