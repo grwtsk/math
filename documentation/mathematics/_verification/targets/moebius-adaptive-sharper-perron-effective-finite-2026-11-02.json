@@ -157,7 +157,7 @@
     "AdaptiveSharperFiniteFar.complete_far_sharper_finite_height_of_independent_inputs"
   ],
   "acceptance": {
-    "github_publication": "PENDING_NONFORCE_EXACT_GIT_READBACK",
+    "github_publication": "PASS_FIVE_EXACT_GIT_BLOB_READBACK",
     "lean_compilation": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
     "elaboration": "NOT_RUN",
@@ -171,7 +171,8 @@
     "Noe_native_CI_automation_dispatched": false,
     "all_scale_all_positive_rate_FAR": "OPEN",
     "RiemannHypothesis": "OPEN",
-    "source_static_scan": "NO_AUTHORED_SORRY_AXIOM_ADMIT_NATIVE_DECIDE_UNSAFE"
+    "source_static_scan": "NO_AUTHORED_SORRY_AXIOM_ADMIT_NATIVE_DECIDE_UNSAFE",
+    "files_published": 5
   },
   "related_issues": [
     1556,
@@ -180,5 +181,7 @@
   "external_references": [
     "https://doi.org/10.1112/blms.12460",
     "https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Analysis/Complex/ExponentialBounds.lean"
-  ]
+  ],
+  "source_publication_commit": "750e0ca03bfcb76c46b855be0534967969f10097",
+  "source_publication_parent": "8111dcf2de4484c5a153e429d57196aefab3163a"
 }
