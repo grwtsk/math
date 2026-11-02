@@ -1,0 +1,74 @@
+{
+  "schema": "grwtsk.moebius-critical-width-smooth-birth/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "base_observed_main": "da5b66bd04187debb4abdcce10d8997f501b12b5",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCriticalWidthSmoothBirth.lean",
+    "status": "SOURCE_PROOF_CANDIDATE"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-critical-width-smooth-birth-2026-11-01.md"
+  },
+  "declarations": [
+    "criticalResponse_before",
+    "criticalResponse_after",
+    "criticalResponse_contDiff",
+    "criticalResponse_eq_pickup_mul",
+    "criticalResponse_nonneg",
+    "criticalResponse_le_pickup",
+    "criticalGram_le_original",
+    "criticalKernelDifference_nonneg",
+    "original_sub_criticalDense_eq_sector",
+    "criticalDense_abs_error_le_unsigned",
+    "CriticalUnsignedLinearBudget",
+    "allPositiveRateOn_transport_linear",
+    "allPositiveRateOn_iff_of_linear_error",
+    "denseLongGapAllRateOn_iff_critical"
+  ],
+  "analytic_estimate": "For eta 0..1 flat and 0<kappa<=1, criticalUnsignedDefect(T) <= 8 sqrt(e) kappa^2 (1+T) for all T>=0, paper proof only, Lean NOT_FORMALIZED",
+  "finite_diagnostic": {
+    "method": "numerical quadrature on finite original support",
+    "points": [
+      {
+        "N": 8,
+        "kappa": 0.3,
+        "error": 0.0313963471,
+        "bound": 3.65554136
+      },
+      {
+        "N": 16,
+        "kappa": 0.7,
+        "error": 0.3111336099,
+        "bound": 24.38219331
+      },
+      {
+        "N": 32,
+        "kappa": 0.9,
+        "error": 0.7628688989,
+        "bound": 47.71064444
+      }
+    ],
+    "not_a_proof": true
+  },
+  "verification": {
+    "publication": "PENDING",
+    "lean_parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "critical_unsigned_bound_in_lean": "OPEN",
+    "dense_signed_rate": "OPEN",
+    "RH": "OPEN"
+  },
+  "issues": [
+    1556,
+    1559,
+    1429
+  ]
+}
