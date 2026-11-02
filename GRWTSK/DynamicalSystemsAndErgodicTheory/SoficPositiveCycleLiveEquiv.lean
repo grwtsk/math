@@ -210,14 +210,14 @@ noncomputable def positiveBasedCycleEquiv
     rintro ⟨s, walk⟩
     apply Sigma.ext
     · rfl
-    · exact project_liftOriginalWalk G walk
-        (basedCycle_base_rightLive G n hn ⟨s, walk⟩)
+    · exact HEq.of_eq (project_liftOriginalWalk G walk
+        (basedCycle_base_rightLive G n hn ⟨s, walk⟩))
   right_inv := by
     rintro ⟨s, walk⟩
     apply Sigma.ext
     · apply Subtype.ext
       rfl
-    · exact lift_projectLiveWalk G walk
+    · exact HEq.of_eq (lift_projectLiveWalk G walk)
 
 /-- The source based-cycle word is invariant under forgetting
 liveness proofs. The Fin n positions are unchanged, and the
