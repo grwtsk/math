@@ -75,7 +75,7 @@
     "classification": "NONCERTIFYING_FINITE_DIAGNOSTICS"
   },
   "verification": {
-    "publication": "PENDING_GITHUB_READBACK",
+    "publication": "PASS_EXACT_THREE_GITHUB_BLOB_READBACK",
     "compilation": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
     "elaboration": "NOT_RUN",
@@ -84,10 +84,13 @@
     "transitive_axiom_audit": "NOT_RUN",
     "opaque_native_unsafe_audit": "NOT_RUN",
     "RH": "OPEN",
-    "full_original_signed_arithmetic_every_rate": "OPEN"
+    "full_original_signed_arithmetic_every_rate": "OPEN",
+    "changed_paths": 3
   },
   "related_issues": [
     1556,
     1429
-  ]
+  ],
+  "source_publication_commit": "196567f7f013c73e70cfbe89f669251bfe7e56d4",
+  "source_publication_parent": "23fa37bf6f8ef2ef24995d437515e08f1726c773"
 }
