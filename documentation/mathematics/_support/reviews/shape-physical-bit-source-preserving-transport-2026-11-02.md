@@ -42,3 +42,17 @@ The geometric transport alone establishes no new arithmetic cancellation and no 
 - No source root import or pinned toolchain changed by this publication.
 
 These new statements are source proof candidates, not accepted Lean theorems until the required verification succeeds.
+
+## Actual measured two-bit Hilbert adapter (second additive module)
+
+- [ShapePhysicalBitHilbertComparator.lean](https://github.com/grwtsk/math/blob/82d86ddcf325f0120eae13b2c4181e3b8dc4c028/GRWTSK/Combinatorics/ShapePhysicalBitHilbertComparator.lean)
+- Source commit: `82d86ddcf325f0120eae13b2c4181e3b8dc4c028`
+- Blob: `0db853091c432ee5892ca133bf7258e225515775`
+
+The first source's arbitrary width bitfield is an attached comparison label, NOT necessarily the bits physically measured in its `PhysicalStream`. The new adapter closes this exact typing gap by defining `signedBitsAsField : SignedBits → StableBitfield 2` and `recordBitfield` from the *existing* `polarizationBit` of the actual presence/sign tangents.
+
+The written `recordBitfield_recordMoebius` and `readRecord_eq_decoded_bitfield` relate the new Hilbert bitfield directly to the original canonical two-bit Möbius encoding. `recordBitfield_transfer` and `recordHilbertDistanceSq_transfer` preserve the exact measured bitfield and its squared finite Hilbert distance under the existing physical shift.
+
+The source readout `indexedBits` is `Option (ℕ × StableBitfield 2)`; thus a valid zero, missing record, and incorrectly indexed record remain distinguishable BEFORE comparison. `indexedHilbertDistanceSq` returns `none` unless BOTH records are present and indexed for the queried original integer. Its available-case value is exactly the two-coordinate Hamming count. The written lift and shift theorems transport both its value and unavailable status unchanged. This is an algebraic comparison, not a new assertion that an arbitrary record meets `AdmissiblePhysicalBitRecord`.
+
+**Verification:** second module was created and read back with the exact blob above. Pinned compilation, expected-type checking, fresh kernel replay and transitive axiom audit remain **NOT_RUN** for BOTH new modules. No new arithmetic cancellation estimate was supplied.
