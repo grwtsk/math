@@ -1,0 +1,276 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "issue": "https://github.com/grwtsk/math/issues/1576",
+  "title": "Original sofic reachability signatures, exact source support cycle recognition, search sandwich and rooted/dynamic graph transfers",
+  "classification": "SOURCE_PROOF_CANDIDATE_NOT_NATIVE_LEAN_ACCEPTED",
+  "mathematical_source_commit": "d8cc568574e2251525aec82faff023eb7b8c8be2",
+  "foundational_source": "697face2b38918d5ad8f83fa854a02eb742ef37d",
+  "source_modules": [
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteSupportAutomaton.lean",
+      "blob": "22a4aacc0399bdea7e3086951f3c6a2fc2692f04"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficGraphRepresentationBridges.lean",
+      "blob": "dea290aac1ac6f5473c670f8b9c379d997cea6e0"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficRootedPrefixBoundary.lean",
+      "blob": "930c9d7dc0db96e5ace4a35489cec9db97e146b5"
+    }
+  ],
+  "source_project_import_inventory": [
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/DynamicPartitionRecovery.lean",
+      "blob": "5967730dc10d34ddcf1226ee1056594f012567d4"
+    },
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean",
+      "blob": "034dc65cc2fc5fc7a7ad439c6f110b6ccd7ad9c6"
+    },
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CertifiedTransversal.lean",
+      "blob": "df720cbb72c616938635c20477430f5f0ded4021"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/ExactSoficLanguageCover.lean",
+      "blob": "f50489eaf6c7277993a08925a58b7765f9e10ec9"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLanguageTransversal.lean",
+      "blob": "238da905b6595c944cac40f39ae2f54870032132"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean",
+      "blob": "044644b345b46c90d82dffde6c7485d617b4fbd9"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBasedCycleCard.lean",
+      "blob": "d7fd2f5aad643d4350e4b5bfd7128dd979717a74"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicFiberLedger.lean",
+      "blob": "becfa9cfddb8479c36a007c17d8be4d0d7defe05"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleLabelBijection.lean",
+      "blob": "bd1ba53939ed6f5a4e00d76be9d6d433d09f3d0b"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicRunFullShift.lean",
+      "blob": "265aa4180f4135e76cb0000166d253be4d96b9dc"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepetitionFromWalk.lean",
+      "blob": "00263005b2f46020c8f3a5434d8c6207eaa32622"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficExactPeriodicTraceLedger.lean",
+      "blob": "b3f5b7ce5e0b7eb0a4c1081dce166815824b6bac"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepeatBridge.lean",
+      "blob": "a05e7d4527b6e37d59a48288f1e58e1a3867ca56"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteRepeatClosure.lean",
+      "blob": "e8d8dcc01f4e9f067cb9041ad5e54f7dd79d0962"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicWordMatrix.lean",
+      "blob": "d8f0423d8b872e5045c779544bd39eb1bad7adfe"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficMacroBoundaryPigeonhole.lean",
+      "blob": "fde86d048d89bdb71cd52bb1de96ecaff27068dc"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficWordPowerClosedPath.lean",
+      "blob": "fc3842103f18ecd42aa1587d8bc9556d6144a3c2"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBoundedWordMatrixCriterion.lean",
+      "blob": "3be4fc0e7b953c22e14749b8ad933b0ab851de1b"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMultipleLift.lean",
+      "blob": "ece978c7389cca95c1645fbe10b66cfaa5d75cea"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficMatrixCertifiedTransversal.lean",
+      "blob": "6fe56e27333b99d3b6f1941639612e1dfac1692d"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicSourceIntegration.lean",
+      "blob": "21c602ba8f6b8f1611e2c90d45d9aed3e70f7454"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficWordMatrixDynamicProgram.lean",
+      "blob": "b2073a018d157f16ede91be900be94d2fecd6788"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficWordPowerClosureScan.lean",
+      "blob": "b1abfe560eed36ddeee1717d8fb4d8094bb7fc5e"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteSupportAutomaton.lean",
+      "blob": "22a4aacc0399bdea7e3086951f3c6a2fc2692f04"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficGraphRepresentationBridges.lean",
+      "blob": "dea290aac1ac6f5473c670f8b9c379d997cea6e0"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficRootedPrefixBoundary.lean",
+      "blob": "930c9d7dc0db96e5ace4a35489cec9db97e146b5"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/GraphTheory/SearchSoficLanguage.lean",
+      "blob": "0408948886533c87debacc0e537c3234469ae702"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/GraphTheory/GraphSandwichDiffusion.lean",
+      "blob": "be2a608b5037d4a4c448c7f332096af72588c00e"
+    },
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/RelationSandwich.lean",
+      "blob": "9761b5dd5d6ada7344031c07386586c72c1d970a"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/DynamicSoficSpectralCover.lean",
+      "blob": "8a145154af4cf6497a49720b1657078fbdcc3679"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/HeatFlowCompressionSofic.lean",
+      "blob": "7b3ab9dfd93c92e52fa34a9a6977bc491f437f29"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/DynamicSoficExactLanguageBoundary.lean",
+      "blob": "79680df7f55b03f16d765ae3bf1a1c2d3e15187c"
+    }
+  ],
+  "import_inventory_scope": "STATIC_SELECTED_PROJECT_IMPORT_CLOSURE_FOR_ROOTED_ADAPTER_TARGET; NO NATIVE OR UPSTREAM COMPILATION",
+  "project_source_count": 32,
+  "manifest": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "managed_v3_profile": {
+    "path": "documentation/mathematics/_verification/targets/sofic-source-support-and-graph-adapters-managed-v3.json",
+    "blob": "5df2f41f5d8f8aa676daf337f86c4dfb7b15ea31",
+    "contracts": 16,
+    "selected_declarations": 72,
+    "parser": "NOT_RUN",
+    "registry_preparation": "NOT_RUN",
+    "native_execution": "NOT_RUN"
+  },
+  "review_path": "documentation/mathematics/_support/reviews/sofic-support-graph-and-rooted-source-bridges-2026-11-02.md",
+  "exact_new_theorems": [
+    {
+      "module": "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton",
+      "declarations": [
+        "reachableEndStates_snoc",
+        "reachableEndStates_nil",
+        "sourceSupportAfter_append",
+        "sourceSupportAfter_mem_iff",
+        "sourceSupportAfter_univ_eq_reachableEndStates",
+        "sourceSupportAfter_singleton_iff_wordPath",
+        "sourceSupportAfter_iff_wordLiftMatrix_pos",
+        "sourceSupportAfter_iff_wordMatrixProduct_pos",
+        "graphLanguage_iff_supportAfter_nonempty",
+        "sourceRepeatedSupport_eq_finiteCopies",
+        "sourceRepeatedSupport_singleton_iff_wordPath",
+        "sourceRepeatedSupport_iff_wordMatrixPow_pos",
+        "boundedSourceSupportCycle_iff_boundedWordCycleTrace_pos",
+        "periodic_word_iff_bounded_source_support_cycle",
+        "sourceSupportPeriodicWordCount_eq_optimized",
+        "periodicLabelPoint_card_eq_sourceSupportCount",
+        "adjacency_trace_add_unlifted_eq_support_count_add_surplus",
+        "certified_matrix_trace_add_unlifted_eq_support_count_add_surplus"
+      ]
+    },
+    {
+      "module": "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges",
+      "declarations": [
+        "originalGraphOfSearchRelation_edge",
+        "originalWordPath_iff_searchWordPath",
+        "graphLanguage_iff_search_word",
+        "originalWordPath_mono",
+        "graphLanguage_mono_of_labeledSubrelation",
+        "sourceSupportAfter_mono_of_labeledSubrelation",
+        "wordLiftMatrix_positive_mono_of_labeledSubrelation",
+        "periodicLabelPointEmbedding_injective",
+        "periodicLabelPoint_card_le_of_labeledSubrelation",
+        "sandwich_periodic_label_card_bounds",
+        "originalGraphOfSpectralSoficGraph_edge",
+        "dynamicSoficPresentation_runs_on_originalGraph",
+        "dynamicSoficPresentation_block_is_original_graphWord",
+        "dynamicSoficPresentation_block_in_exactLanguage"
+      ]
+    },
+    {
+      "module": "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRootedPrefixBoundary",
+      "declarations": [
+        "rootedPath_iff_originalWordPath",
+        "rootedAccepts_implies_graphLanguage",
+        "rootedAdmitsStream_implies_prefix_graphLanguage",
+        "rootedAccepts_implies_unrooted_support",
+        "unrooted_true_word_not_rooted"
+      ]
+    }
+  ],
+  "mathematical_hypotheses": [
+    "Original source LabeledGraph.edge : State -> Alphabet -> State -> Prop; no implicit parallel occurrence multiplicity for equal triple",
+    "Source State and Alphabet finite where word-matrix or source support cardinalities are used; DecidableEq State",
+    "Search LabeledSubrelation contains the actual pointwise labeled edge inclusion; direction matters",
+    "DynamicSoficPresentation supplies its own state/label trajectories and every actual graph edge; no external language exactness without hExact",
+    "Rooted prefix accepts from a distinguished start; original GraphLanguage is unrooted existential path acceptance",
+    "n>0 and full finite-factor-language equivalence are required for original periodic block count return",
+    "Missing source-n lifts U_n and surplus lifts S_n remain signed and separate; all based graph cycles counted with multiplicity"
+  ],
+  "finite_reference": {
+    "q_zero_to_two_two_label_graphs": 261,
+    "graph_word_cases": 7830,
+    "original_word_matrix_endpoint_comparisons": 30840,
+    "exact_support_endpoint_comparisons": 30840,
+    "original_universal_reachable_end_set_comparisons": 7830,
+    "admitted_periodic_words": 5312,
+    "rejected_periodic_words": 2518,
+    "ordered_labeled_edge_inclusion_pair_period_cases": 26284,
+    "strict_periodic_label_count_increases": 16982,
+    "disconnected_root_counterexample": "PASS",
+    "status": "PASS_FINITE_PYTHON_REFERENCE_NOT_LEAN"
+  },
+  "no_claimed_external_returns": [
+    "No unconditional root/unrooted language equality",
+    "No equality of graph adjacency trace and distinct label count",
+    "No analytic spectral cover or zeta zero result",
+    "No arithmetic Chowla/Moebius cancellation or RH",
+    "No verified extracted finite-state executable"
+  ],
+  "verification": {
+    "source_publication": "CONFIRMED",
+    "exact_git_blob_readback": "CONFIRMED",
+    "native_Lean_compilation": "NOT_RUN",
+    "expected_types_universes": "NOT_RUN",
+    "fresh_trust_zero_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "complete_upstream_import_closure": "NOT_RUN",
+    "managed_v3_preparation": "NOT_RUN",
+    "host_owner_restoration": "NOT_RUN",
+    "mathematical_proof_acceptance": false
+  },
+  "noe_source_snapshot": "218dfa95de54165b44e244f9e1a18fa409b09d6b",
+  "canonical_noe_proof_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+  "next": [
+    "Noe managed v3 prepare and run for exact math commit, subject to current resource owner/holds and full source review",
+    "Lean typecheck the finite support recurrence, path conversions, and rooted counterexample, retaining exact errors and repairing only real elaboration mismatches",
+    "Fresh expected type, kernel and complete transitive axiom evidence",
+    "Separate dynamic spectral, rooted exact-prefix and arithmetic source comparison and analytic estimates before stronger consequences"
+  ],
+  "review_blob": "fb8091f395866a02b293bfdbe027f5a28972cfc0",
+  "review_sha_status": "GIT_BLOB_PREPARED_NOT_NATIVE_REPLAY"
+}
