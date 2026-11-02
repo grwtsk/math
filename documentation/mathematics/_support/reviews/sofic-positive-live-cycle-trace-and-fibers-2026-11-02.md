@@ -72,22 +72,22 @@ balances a trace identity.
 ## 2. Exact source identities, original constructors and dependency roles
 
 The combined immutable mathematical source revision is
-`d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9`.
+`95c94d73e4496ac28e4e186b7f6efb7bdea7ca16`.
 
 New additive sources:
 
-1. [SoficPositiveCycleLiveEquiv.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPositiveCycleLiveEquiv.lean),
-   Git blob `a623514d52cae51213f95e5b52a92f3275bc8e54`, originally
+1. [SoficPositiveCycleLiveEquiv.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPositiveCycleLiveEquiv.lean),
+   Git blob `b9b6df8f50fdf3f1a71884c6dbdb7d8535f8f422`, originally
    published in commit `a82ea53e2e7683cfb06f53f7cb293571398c6155`.
    Source has 268 lines and 14 selected declarations. The real cycle
    data, original endpoints, labels and all original edges are preserved.
-2. [SoficLiveMatrixTraceTransport.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLiveMatrixTraceTransport.lean),
+2. [SoficLiveMatrixTraceTransport.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLiveMatrixTraceTransport.lean),
    Git blob `c868852984f0a1ead767aec47e906e57a1f6588a`, originally
    published in commit `796144ee1a8730dd3a5873ed48ad2fb996725a1f`.
    Source has 225 lines and seven selected declarations. This is a
    different count/linear algebra mechanism for the *state-equivalence*
    part, not a second proof of original positive-cycle survival.
-3. [SoficLiveCycleFiberInvariance.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLiveCycleFiberInvariance.lean),
+3. [SoficLiveCycleFiberInvariance.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLiveCycleFiberInvariance.lean),
    Git blob `8cc54d851f47c243535bb9ffcdfa1cda139b64fa`, originally
    published at the combined source commit above. Source has 222 lines
    and nine selected declarations.
@@ -95,36 +95,36 @@ New additive sources:
 The new proof uses the existing original source objects and theorems
 without mutating their definitions:
 
-- [SoficPeriodicMatrixTrace.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean):
+- [SoficPeriodicMatrixTrace.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean):
   original `LabeledWalkData`, `BasedCycleData`, `walkDataLabels`,
   `basedCycleWord`, `labeledAdjacency`, `labeledWalkCount` and
   `trace_pow_eq_basedClosedWalkCount`.
-- [SoficBasedCycleCard.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBasedCycleCard.lean):
+- [SoficBasedCycleCard.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBasedCycleCard.lean):
   finite original walk-witness cardinality and actual
   `trace_pow_eq_card_based_cycles`.
-- [SoficCycleRepetitionFromWalk.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepetitionFromWalk.lean):
+- [SoficCycleRepetitionFromWalk.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepetitionFromWalk.lean):
   true infinite periodic `basedCycleStateStream`,
   `basedCycleStateStream_zero` and `basedCycleStateStream_edge`
   derived from the SAME original closed `LabeledWalkData`.
-- [SoficRightLiveSubgraph.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficRightLiveSubgraph.lean):
+- [SoficRightLiveSubgraph.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficRightLiveSubgraph.lean):
   `RightLive`, backward propagation along each original edge and
   the actual `rightLiveSubgraph`.
-- [SoficLiveRepresentationIntegration.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLiveRepresentationIntegration.lean):
+- [SoficLiveRepresentationIntegration.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLiveRepresentationIntegration.lean):
   concrete q-round source pruning graph, the identity-on-original-vertex
   `prunedState_equiv_rightLiveState` and the definitional equality
   of the two previously published right-live graph representations.
-- [SoficRightLivePeriodicInvariant.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficRightLivePeriodicInvariant.lean):
+- [SoficRightLivePeriodicInvariant.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficRightLivePeriodicInvariant.lean):
   `periodicLabelPoint_equiv_rightLive`, a genuine equivalence on
   `Fin n` emitted labels and whole finite-factor-language proof.
-- [SoficExactPeriodicTraceLedger.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficExactPeriodicTraceLedger.lean):
+- [SoficExactPeriodicTraceLedger.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficExactPeriodicTraceLedger.lean):
   original, label-preserving `canonicalCycleMap`, including
   nonbijective lift-fiber cases.
-- [SoficPeriodicFiberLedger.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicFiberLedger.lean):
+- [SoficPeriodicFiberLedger.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicFiberLedger.lean):
   actual `liftFiberCount`, `unliftedLabelCount` and
   `surplusLabelLiftCount` with the signed identity
   `trace + unlifted = distinct label points + surplus`.
 
-The earlier [SoficDeadEndPruning.lean](https://github.com/grwtsk/math/blob/d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficDeadEndPruning.lean)
+The earlier [SoficDeadEndPruning.lean](https://github.com/grwtsk/math/blob/95c94d73e4496ac28e4e186b7f6efb7bdea7ca16/GRWTSK/DynamicalSystemsAndErgodicTheory/SoficDeadEndPruning.lean)
 supplies the explicit original `SourceEdgeDecider G`, q-round
 `retainedAfter`, source-identical pruned graph state subtype and the
 finite nonblocking/live vertex proof. The newest source does NOT replace
@@ -398,7 +398,7 @@ or analytic completion premises.
 
 The highest priority acceptance action is current
 authorized Noe managed v3 source-closed compilation
-at math revision `d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9`,
+at math revision `95c94d73e4496ac28e4e186b7f6efb7bdea7ca16`,
 followed separately by expected-type/universe
 consumers, fresh kernel replay, transitive axiom
 audit, and actual host resource restoration.
@@ -414,3 +414,20 @@ for other graph semantics. These are not silently
 deduced from the present results.
 
 Tracking issue: https://github.com/grwtsk/math/issues/1576.
+
+
+## 9. Narrow exact-source revision after dependent equality audit
+
+The original positive-cycle source was revised at math commit
+`95c94d73e4496ac28e4e186b7f6efb7bdea7ca16`, exact corrected Git blob
+`b9b6df8f50fdf3f1a71884c6dbdb7d8535f8f422`.
+The only source delta replaces the two second-component
+`Sigma.ext` inverse witnesses with explicit `HEq.of_eq` of the
+already stated original round-trip equalities. The mathematical
+statements, based-cycle maps, graph edge/label semantics,
+positive n assumption and finite reference calculations remain
+unchanged. This is a STATIC elaboration-risk repair, not a
+Lean compiler receipt or a kernel/audit acceptance result.
+The original source commit `d7b40ebd4d230ef287df3fd3fdbe65ced4ccdfd9` and blob
+`a623514d52cae51213f95e5b52a92f3275bc8e54` remain historical publication identifiers;
+verification for the revised bytes must be performed anew.
