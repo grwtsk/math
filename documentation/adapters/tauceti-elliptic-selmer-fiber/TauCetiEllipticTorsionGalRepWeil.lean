@@ -574,6 +574,225 @@ theorem ellipticNormalizedWeilCup_annihilatesKummer_iff
     rw [← hp]
     exact h P
 
+/-! ## Construct the ORIGINAL abelian n-torsion local cup DESCENT
+
+Unlike the earlier conditional theorem, this constructs a
+biadditive form on the ACTUAL H¹(F,E)[n] and E(F)/nE(F)
+from the original normalized finite Weil cup. The sole
+remaining GEOMETRIC input is that the two genuine
+Kummer classes cup to zero. This is not inferred from
+finite Weil nondegeneracy or declared by a new axiom.
+
+Fisher's divisor/Poincare construction provides the
+separate identification of this descended pairing with
+the classical abelian Tate pairing and fixes its sign.
+The chosen quotient section here is NOT a chosen pairing;
+its result is proved independent of that section.
+-/
+
+/-- The ORIGINAL normalized Weil cup, now bundled into the
+two additive-homomorphism slots required for source Kummer
+descent. The two additivity proofs use upstream true
+Tate-duality pairing bilinearity. -/
+noncomputable def ellipticNormalizedWeilCupHom
+    (hn : IsUnit (n : F)) :
+    continuousCohomology 1 (ellipticTorsionGalRep W n) →+
+      continuousCohomology 1 (ellipticTorsionGalRep W n) →+ ZMod n := by
+  refine {
+    toFun := fun x =>
+      { toFun := fun y => ellipticNormalizedWeilCup W n hn x y
+        map_zero' := by
+          simp [ellipticNormalizedWeilCup, tateDualityPairing_zero_right]
+        map_add' := by
+          intro y z
+          exact tateDualityPairing_add_right _ _ 1 1 (by omega)
+            _ y z }
+    map_zero' := ?_
+    map_add' := ?_
+  }
+  · apply AddMonoidHom.ext
+    intro y
+    change ellipticNormalizedWeilCup W n hn 0 y = 0
+    simp [ellipticNormalizedWeilCup, tateDualityPairing_zero_left]
+  · intro x x'
+    apply AddMonoidHom.ext
+    intro y
+    change ellipticNormalizedWeilCup W n hn (x + x') y =
+      ellipticNormalizedWeilCup W n hn x y +
+      ellipticNormalizedWeilCup W n hn x' y
+    unfold ellipticNormalizedWeilCup
+    rw [map_add, tateDualityPairing_add_left]
+
+/-- The original Kummer isotropy is a statement about
+genuine rational elliptic points and the SOURCE finite
+Weil cup, not arbitrary subgroup elements. -/
+def OriginalKummerCupIsotropic (hn : IsUnit (n : F)) : Prop :=
+  ∀ P Q : W.toAffine.Point,
+    ellipticNormalizedWeilCup W n hn
+      (ellipticCanonicalKummerMap W n hn P)
+      (ellipticCanonicalKummerMap W n hn Q) = 0
+
+/-- A SOURCE-TYPED original theta/period-index obstruction
+would discharge the remaining Kummer isotropy from TWO
+specific geometric identities: vanishing on rational Kummer
+classes and its exact Weil-cup polarization identity.
+These geometric identities are not yet proved by the pinned
+Tau Ceti source and are retained as independent premises.
+No chosen theta/regulator is asserted to exist here. -/
+theorem originalThetaPolarization_implies_KummerIsotropy
+    (hn : IsUnit (n : F))
+    (theta : continuousCohomology 1 (ellipticTorsionGalRep W n) → ZMod n)
+    (hzero : ∀ P : W.toAffine.Point,
+      theta (ellipticCanonicalKummerMap W n hn P) = 0)
+    (hpolar : ∀ (x : continuousCohomology 1
+          (ellipticTorsionGalRep W n)) (P : W.toAffine.Point),
+      ellipticNormalizedWeilCup W n hn x
+          (ellipticCanonicalKummerMap W n hn P) =
+        theta (x + ellipticCanonicalKummerMap W n hn P) -
+        theta x - theta (ellipticCanonicalKummerMap W n hn P)) :
+    OriginalKummerCupIsotropic W n hn := by
+  intro P Q
+  calc
+    ellipticNormalizedWeilCup W n hn
+        (ellipticCanonicalKummerMap W n hn P)
+        (ellipticCanonicalKummerMap W n hn Q) =
+      theta (ellipticCanonicalKummerMap W n hn P +
+          ellipticCanonicalKummerMap W n hn Q) -
+        theta (ellipticCanonicalKummerMap W n hn P) -
+        theta (ellipticCanonicalKummerMap W n hn Q) :=
+          hpolar _ Q
+    _ = 0 := by
+      rw [← map_add, hzero (P + Q), hzero P, hzero Q]
+      simp
+
+/-- Original point-level isotropy extends to the actual
+E(F)/nE(F) quotient by exact Kummer representative maps. -/
+theorem quotientKummerCup_isotropic
+    (hn : IsUnit (n : F))
+    (hisotropic : OriginalKummerCupIsotropic W n hn) :
+    ∀ a b : W.toAffine.Point ⧸
+        (nsmulAddMonoidHom (α := W.toAffine.Point) n).range,
+      ellipticNormalizedWeilCup W n hn
+        (ellipticCanonicalKummerClassMap W n hn a)
+        (ellipticCanonicalKummerClassMap W n hn b) = 0 := by
+  intro a b
+  obtain ⟨P, rfl⟩ := QuotientAddGroup.mk_surjective a
+  obtain ⟨Q, rfl⟩ := QuotientAddGroup.mk_surjective b
+  rw [ellipticCanonicalKummerClassMap_mk W n hn,
+    ellipticCanonicalKummerClassMap_mk W n hn]
+  exact hisotropic P Q
+
+/-- An entirely source-defined abelian local cup pairing
+`H¹(F,E)[n] × E(F)/nE(F) → ZMod n`.
+It uses the genuine H¹(E[n]) quotient and finite cup.
+It is CONDITIONAL on the geometric Kummer isotropy and
+does not yet claim identification with the independent
+divisor/Poincare Tate pairing or its nondegeneracy. -/
+noncomputable def ellipticAbelianCupDescent
+    (hn : IsUnit (n : F))
+    (hisotropic : OriginalKummerCupIsotropic W n hn) :
+    AddSubgroup.torsionBy
+      (H1 (AbsoluteGaloisGroup F) W.PointCoeff) n →+
+      (W.toAffine.Point ⧸
+        (nsmulAddMonoidHom (α := W.toAffine.Point) n).range) →+ ZMod n := by
+  classical
+  let q := ellipticCanonicalWeilChateletQuotient W n
+  let δ := ellipticCanonicalKummerClassMap W n hn
+  let B := ellipticNormalizedWeilCupHom W n hn
+  let s : (AddSubgroup.torsionBy
+      (H1 (AbsoluteGaloisGroup F) W.PointCoeff) n) →
+      continuousCohomology 1 (ellipticTorsionGalRep W n) :=
+    fun a => Classical.choose
+      (ellipticCanonicalWeilChateletQuotient_surjective W n hn a)
+  have hs : ∀ a, q (s a) = a :=
+    fun a => Classical.choose_spec
+      (ellipticCanonicalWeilChateletQuotient_surjective W n hn a)
+  have hker : δ.range = q.ker := by
+    exact ellipticCanonicalKummerClassMap_range_eq_ker W n hn
+  have hiso := quotientKummerCup_isotropic W n hn hisotropic
+  have hvanish : ∀ k, q k = 0 → ∀ p, B k (δ p) = 0 := by
+    intro k hk p
+    have hrange : k ∈ δ.range := by
+      rw [hker]
+      exact hk
+    obtain ⟨a, ha⟩ := hrange
+    rw [← ha]
+    exact hiso a p
+  refine {
+    toFun := fun a => (B (s a)).comp δ
+    map_zero' := ?_
+    map_add' := ?_
+  }
+  · apply AddMonoidHom.ext
+    intro p
+    change B (s 0) (δ p) = 0
+    exact hvanish _ (by simpa using hs 0) p
+  · intro a b
+    apply AddMonoidHom.ext
+    intro p
+    change B (s (a+b)) (δ p) =
+      B (s a) (δ p) + B (s b) (δ p)
+    have hk : q (s (a+b) - s a - s b) = 0 := by
+      rw [map_sub, map_sub, hs, hs, hs]
+      abel
+    have hv := hvanish _ hk p
+    have hh : B (s (a+b)) (δ p) -
+        B (s a) (δ p) - B (s b) (δ p) = 0 := by
+      simpa only [map_sub, AddMonoidHom.sub_apply] using hv
+    apply sub_eq_zero.mp
+    calc
+      B (s (a+b)) (δ p) -
+          (B (s a) (δ p) + B (s b) (δ p)) =
+        B (s (a+b)) (δ p) -
+          B (s a) (δ p) - B (s b) (δ p) := by abel
+      _ = 0 := hh
+
+/-- The resulting genuine quotient pairing has the EXACT
+positive-sign finite-cup Kummer comparison by its
+source-derived definition. The independent divisor
+Tate identification remains to be proved. -/
+theorem ellipticAbelianCupDescent_lift
+    (hn : IsUnit (n : F))
+    (hisotropic : OriginalKummerCupIsotropic W n hn)
+    (x : continuousCohomology 1 (ellipticTorsionGalRep W n))
+    (P : W.toAffine.Point) :
+    ellipticAbelianCupDescent W n hn hisotropic
+        (ellipticCanonicalWeilChateletQuotient W n x)
+        (QuotientAddGroup.mk P) =
+      ellipticNormalizedWeilCup W n hn x
+        (ellipticCanonicalKummerMap W n hn P) := by
+  classical
+  let q := ellipticCanonicalWeilChateletQuotient W n
+  let δ := ellipticCanonicalKummerClassMap W n hn
+  let B := ellipticNormalizedWeilCupHom W n hn
+  let s := fun a => Classical.choose
+    (ellipticCanonicalWeilChateletQuotient_surjective W n hn a)
+  have hs : ∀ a, q (s a) = a :=
+    fun a => Classical.choose_spec
+      (ellipticCanonicalWeilChateletQuotient_surjective W n hn a)
+  have hq : q (s (q x) - x) = 0 := by
+    rw [map_sub, hs]
+    exact sub_self _
+  have hker : δ.range = q.ker :=
+    ellipticCanonicalKummerClassMap_range_eq_ker W n hn
+  have hrange : s (q x) - x ∈ δ.range := by
+    rw [hker]
+    exact hq
+  obtain ⟨a, ha⟩ := hrange
+  have hzero := quotientKummerCup_isotropic W n hn hisotropic
+    a (QuotientAddGroup.mk P)
+  have hp : B (s (q x) - x) (δ (QuotientAddGroup.mk P)) = 0 := by
+    rw [← ha]
+    exact hzero
+  have heq : B (s (q x)) (δ (QuotientAddGroup.mk P)) =
+      B x (δ (QuotientAddGroup.mk P)) := by
+    have hh : B (s (q x)) (δ (QuotientAddGroup.mk P)) -
+          B x (δ (QuotientAddGroup.mk P)) = 0 := by
+      simpa only [map_sub, AddMonoidHom.sub_apply] using hp
+    exact sub_eq_zero.mp hh
+  simpa only [ellipticAbelianCupDescent, AddMonoidHom.comp_apply,
+      ellipticCanonicalKummerClassMap_mk W n hn] using heq
+
 /-! ## Local Kummer annihilator: EXACT source-typed arithmetic frontier
 
 The coefficient, canonical H¹, Kummer subgroup, quotient to the

@@ -199,3 +199,82 @@ fresh kernel replay NOT_RUN, axiom audit NOT_RUN,
 upstream compatible adapter NOT_RUN; no CI/runner/Noe job.
 No BSD rank, real height-regulator, or COMPLEX L-jet
 claim is made.
+
+
+## Abelian Tate pairing from genuine finite Weil cup: geometric theta/divisor gate (2026-11-02)
+
+This publication continues to use the original immutable
+TauCetiProject/TauCeti
+`2bdb755239d3bd84760e99bc83166bdf7cc75a6b`
+(Lean v4.36.0-rc1; original Tau Ceti contributors, Apache-2.0),
+with the independent grwtsk/math Lean v4.34.1 root unchanged.
+
+- New isolated `TauCetiWeilCupKummerCocycle.lean`,
+  blob `6bf0968ea8dcccba01b39ae6491d2daeee976651`,
+  exposes the original continuous two-cocycle
+  `(σ,τ) ↦ e_n(a_σ, σ(τQ−Q))` for the REAL
+  `W.TorsionCoeff n` and `W.kummerCocycle hQ`.
+  It consumes upstream `explicitCup11_mk`,
+  `cup11_mem_Z2`, `W.kummerMap_eq_H1pi`,
+  Weil equivariance and the original
+  `H2pi_eq_iff`. Its geometric comparison demands a
+  REAL divisor two-cocycle and one CONTINUOUS 1-cochain
+  with differential equal to the cocycle difference.
+  The actual divisor cocycle/witness is NOT constructed.
+- New independent Mathlib source `LocalAbelianTateCupDescent.lean`,
+  blob `58f627fb5fd990bb881ab46c7102e26789d1914b`,
+  constructs and uniquely characterizes a genuine
+  `Q→+P→+Z` quotient pairing from the source finite
+  cup `B`, exact original `im δ=ker q`, and the
+  independently required Kummer cup isotropy.
+  This is a CONSTRUCTION and proof of exact
+  `T(qx,P)=B(x,δP)`; it does NOT prove isotropy or
+  identify `T` with the original divisor/Poincare
+  abelian Tate pairing.
+- New independent Mathlib source `ThetaKummerIsotropy.lean`,
+  blob `114feb6743fb7caacd26034c3261e510e132156a`,
+  proves original Kummer isotropy from two precise
+  geometric theta-obstruction identities:
+  vanishing of period-index `Δ_n` on `δ(E(F))`,
+  and its Weil-cup polarization in the second
+  Kummer direction. Neither original theta-group
+  construction nor the two geometric identities
+  has been kernel established here.
+- The previous isolated
+  `TauCetiEllipticTorsionGalRepWeil.lean` is
+  extended with `ellipticNormalizedWeilCupHom`,
+  `OriginalKummerCupIsotropic`,
+  `originalThetaPolarization_implies_KummerIsotropy`,
+  `quotientKummerCup_isotropic`,
+  `ellipticAbelianCupDescent` and
+  `ellipticAbelianCupDescent_lift`, all on the
+  literal source `H¹(F,E[n])`, `H¹(F,E)[n]` and
+  `E(F)/nE(F)`. Actual source isotropy is an
+  EXPLICIT geometric premise, not a conclusion
+  from finite Weil nondegeneracy alone.
+
+Fisher §2.1, Proposition 2.1
+(https://www.dpmms.cam.ac.uk/~taf1000/papers/ctp.pdf)
+provides the classical divisor-function compatibility,
+where the point/H¹ abelian Tate pairing carries a
+minus sign in its divisor evaluation. Clark--Sharif
+§2.2 (https://msp.org/ant/2010/4-2/ant-v4-n2-p02-p.pdf)
+supplies the classical theta/period-index route to
+Kummer isotropy. Both remain UNINSTANTIATED as
+original source-typed Lean geometry. The real Weil
+skew and degree-(1,1) cup anticommutativity imply
+two sign cancellations; source-fixing this in Lean
+is separately required. The review
+`bsd-local-abelian-tate-weil-cup-descent-theta-certificate-2026-11-02.md`
+records exact source identities and acceptance.
+
+**Acceptance:** SOURCE_PROOF_CANDIDATE; parsing NOT_RUN,
+compilation NOT_RUN, fresh kernel replay NOT_RUN,
+transitive axiom audit NOT_RUN, compatible Tau Ceti
+adapter build NOT_RUN, no native/CI/Noe dispatch.
+No new `sorry`, `axiom` or `admit` declaration;
+no root or toolchain migration. Do not erase higher
+local `H²(U_v)=H¹(F,E)`, claim Kummer orthogonality
+already kernel accepted, or treat a cup-descended
+pairing as the classically constructed Tate pairing
+before a source geometric comparison.
