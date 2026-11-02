@@ -131,10 +131,10 @@
     {
       "id": "low_gcd_primitive_shifted_adapter",
       "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeFreePrimitiveBridge.lean",
-      "blob": "847c46ee90f721ea69338004ba6542c258b6d04c",
-      "commit": "32905d76afb61bf9ea9ec1e3de5120560f99dca6",
+      "blob": "74a6def7792b1688c7cbf4292ff32cf1280ed21f",
+      "commit": "797c92859b1b14d4e88c47d35d975ffa6fccfc7b",
       "namespace": "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge",
-      "decl_count": 7,
+      "decl_count": 8,
       "status": "SOURCE_PROOF_CANDIDATE_WITH_EXPLICIT_OPEN_FULL_REINDEX"
     }
   ],
@@ -1229,6 +1229,28 @@
         "squareful-zero guards"
       ],
       "acceptance": "UNPROVED_TARGET_NOT_PROOF"
+    },
+    {
+      "from": "LowGcdPrimeFreePrimitiveBridge.ExactPrimeFreeTripleReindexTarget",
+      "to": "LowGcdPrimeFreePrimitiveBridge.riemannHypothesis_of_primitivePrimeFree_goodScales",
+      "kind": "EXPLICIT_UNPROVED_GCD_REINDEX_GATE",
+      "required": [
+        "exact ordered source double-to-triple gcd bijection",
+        "squareful-zero guards"
+      ],
+      "acceptance": "UNPROVED_PREMISE"
+    },
+    {
+      "from": "LowGcdPrimeFreePrimitiveBridge.PrimitivePrimeFreeEveryRateOn G",
+      "to": "LowGcdPrimeFreePrimitiveBridge.riemannHypothesis_of_primitivePrimeFree_goodScales",
+      "kind": "INDEPENDENT_RH_STRENGTH_SHIFTED_PRIMITIVE_BILINEAR_UPPER",
+      "required": [
+        "all positive rates",
+        "one fixed G",
+        "AffineFrequent G",
+        "exact source reindex"
+      ],
+      "acceptance": "UNPROVED_ARITHMETIC_PREMISE"
     }
   ],
   "unproved_or_invalid_transfers": [
@@ -1424,9 +1446,11 @@
     "new_prime_dilation_negative_packet": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
     "new_prime_free_common_factor_shift": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
     "new_primitive_triple_reindex": "OPEN_NOT_PROVED",
-    "original_low_gcd_prime_free_all_rate_upper": "OPEN"
+    "original_low_gcd_prime_free_all_rate_upper": "OPEN",
+    "new_primitive_bilinear_all_positive_rate": "OPEN_NOT_PROVED",
+    "lean_compilation": "NOT_RUN"
   },
-  "mathematical_target": "A genuine nonpositive original prime-dilation packet is separated from strict low-GCD dense arithmetic at zero ONE-SIDED upper cost. The canonical coprime primitive shifted source has a new masked termwise identity; full gcd reindex and all-rate signed estimate remain OPEN.",
+  "mathematical_target": "Nonpositive true prime dilation and squareful-safe coprime gcd time shift published. Paper-level full source bijection and finite numeric fixtures available; Lean ExactPrimeFreeTripleReindexTarget and independent PrimitivePrimeFreeEveryRateOn G remain OPEN.",
   "verification": {},
   "new_math_review": {
     "path": "documentation/mathematics/_support/reviews/physical-moebius-sharp-sampling-variance-2026-11-02.md",
@@ -1468,14 +1492,16 @@
     "source_scan_anchor": "162891132952e479189bfbc59529185fccfc10b1",
     "review": {
       "path": "documentation/mathematics/_support/reviews/moebius-low-gcd-prime-free-primitive-2026-11-02.md",
-      "blob": "cd8eae16ec4f94ae0f1cce5d6c19314529aee355"
+      "blob": "fa903f8c85e749ab4b4df1f3749ed22ac4c9dca7"
     },
     "new_source_modules": 2,
-    "new_public_theorem_candidates": 16,
+    "new_public_theorem_candidates": 17,
     "true_signed_one_sided_packet": "L_Q = P_Q + B_Q; prime-dilation P_Q<=0 for T>=0; L_Q<=B_Q",
     "original_endpoint_one_sided": "T>=4,r>0: endpointSum(T) <= otherLowGcd(Q_r,T)+(64/r^2)e^(rT)+32Te^sqrt(T)+1/4",
     "conditional_good_scale": "OtherLowGcdEveryRateOn G -> LowGcdDenseEveryRateOn G -> RH if AffineFrequent G, all arithmetic suppliers independent and OPEN",
     "reindex_frontier": "ExactPrimeFreeTripleReindexTarget open (not an axiom), primitive coefficient mu(g)^2 mu(a)mu(b)/g at true T-log(g), both original zero and coprimality guards preserved",
-    "finite_numeric": "N=8,16,32,48,64 at rate .65 with exact integer mu and 55-digit causal Gram, sign and partition only, noncertifying"
+    "finite_numeric": "N=8,16,32,48,64 at rate .65 with exact integer mu and 55-digit causal Gram, sign and partition only, noncertifying",
+    "primitive_conditional_consumer": "ExactPrimeFreeTripleReindexTarget AND PrimitivePrimeFreeEveryRateOn G AND AffineFrequent G -> RiemannHypothesis; all independent premises OPEN",
+    "double_triple_finite_checks": "N=8,16,32,64; original mu, guarded primitive gcd triples, 55-digit arithmetic, differences <=10^-53; NUMERICAL_NONCERTIFYING"
   }
 }
