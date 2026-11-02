@@ -1,7 +1,7 @@
 {
   "schema": "grwtsk.math.verification-target/1",
   "research_date": "2026-11-02",
-  "title": "Source-preserving shell and Hilbert Möbius-bit transport with finite uniform-versus-Gibbs sampling",
+  "title": "Source-preserving sphere/fiber/Mobius-bit transport, actual finite sampling, and sharp TV coupling allowance",
   "repository": "grwtsk/math",
   "author_attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
   "pinned_toolchain": {
@@ -25,6 +25,13 @@
       "path": "GRWTSK/Combinatorics/ShapePhysicalBitFiniteSampling.lean",
       "blob": "b71c6837fcc8673f4415a687f554847f7ba1d9fc",
       "source_commit": "a3015deaa56f5990be88775fa8dfad77a0899606",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/ShapePhysicalBitFiniteTVCoupling.lean",
+      "blob": "25194eada902abffdbc3dcd61ac66ea549b57b0b",
+      "source_commit": "7e62c98390b6f94213f6ff6b64858a602bf835d4",
+      "source_parent": "a19e2dca57e9fac89600e5a6b7d7cd789d0452fc",
       "status": "SOURCE_PROOF_CANDIDATE"
     }
   ],
@@ -56,10 +63,10 @@
   ],
   "review": {
     "path": "documentation/mathematics/_support/reviews/shape-physical-bit-source-preserving-transport-2026-11-02.md",
-    "blob": "bab22fc513527de3f82a8aeea4abc94d883c0f76"
+    "blob": "a51ca1eedd67bc6b0c594368f48525066bff4705"
   },
-  "source_commit": "a3015deaa56f5990be88775fa8dfad77a0899606",
-  "source_parent": "45afa8fc7f42a081cf1f1d087b5e6ce3deea41d1",
+  "source_commit": "7e62c98390b6f94213f6ff6b64858a602bf835d4",
+  "source_parent": "a19e2dca57e9fac89600e5a6b7d7cd789d0452fc",
   "exact_source": "Original ShapeChangingBundle center/shell plus full integer-indexed PhysicalStream, two-tangent SignedBits, existing pickupCross with all ordered non-diagonal pairs and signedReadoutDefect; no new arithmetic coefficients, windows or unproved cancellation. Third source samples finite original-index slots using the already normalized Gibbs Sampler.probability row; a uniformly weighted finite reference average is compared through the existing measured physical two-bit indexed Hilbert distance with unavailable mass separately accounted.",
   "source_candidate_theorems": [
     "Folder.Research.ShapePhysicalBitTransport.lower_lift_center",
@@ -106,16 +113,32 @@
     "Folder.Research.ShapePhysicalBitFiniteSampling.randomUnavailableMass_shift",
     "Folder.Research.ShapePhysicalBitFiniteSampling.randomMaskedLoss_uniformSampler",
     "Folder.Research.ShapePhysicalBitFiniteSampling.probabilityL1Gap_uniformSampler",
-    "Folder.Research.ShapePhysicalBitFiniteSampling.sampled_comparison_with_original_signed_return"
+    "Folder.Research.ShapePhysicalBitFiniteSampling.sampled_comparison_with_original_signed_return",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.rowDelta_sum_zero",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.centered_row_delta",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.sampled_sub_uniform_abs_le_TV",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.random_uniform_maskedLoss_abs_le_TV",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.random_uniform_unavailableMass_abs_le_TV",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.twice_min_add_abs",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.commonIndexMass_add_rowTotalVariation",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.commonIndexMass_bounds",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.rowTotalVariation_bounds",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.diagonal_coupling_le_commonIndexMass",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.uniformDiagonalCoupling_hasMarginals",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.uniformDiagonalCoupling_agreement",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.finiteTV_comparison_with_original_signed_return",
+    "Folder.Research.ShapePhysicalBitFiniteTVCoupling.rowTotalVariation_uniformSampler"
   ],
   "unresolved_mathematical_obligations": [
     "A true topological fiber bundle requires projection, local trivializations, transition cocycles and compatibility.",
     "No spectral tensor metric, energy, orientation or isometry theorem follows from reconstruction alone.",
     "Finite one-step Gibbs sampling law and finite deterministic uniform benchmark have candidate declarations. Independent draws, concentration, equidistribution, infinite-dimensional measure, and cusp-limit convergence remain unproved; AddDissociated.randomisation remains unused without support hypotheses.",
-    "The one-sided all-positive-rate bound for the complete original signed Möbius pickup or endpointSum on adequately covering scales remains OPEN."
+    "The one-sided all-positive-rate bound for the complete original signed Möbius pickup or endpointSum on adequately covering scales remains OPEN.",
+    "General maximal coupling existence for a nonuniform Gibbs row is not established. The exact common-index overlap is a capacity, and only a uniform-row diagonal witness has been constructed.",
+    "The sharp finite TV bound controls [0,1]-valued masked two-bit and unavailable-indicator observables, not the complete unbounded signed off-diagonal arithmetic source or any good-scale exponent."
   ],
   "verification": {
-    "source_publication": "PASS_THREE_EXACT_GITHUB_BLOB_READBACKS",
+    "source_publication": "PASS_FOUR_EXACT_GITHUB_BLOB_READBACKS",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -130,11 +153,14 @@
     "new_arithmetic_cancellation_estimate": "OPEN",
     "canonical_RiemannHypothesis": "OPEN",
     "new_finite_law_comparison": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
-    "reported_CI_checks_on_sampling_source_commit": 0
+    "reported_CI_checks_on_sampling_source_commit": 0,
+    "new_finite_tv_coupling": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "reported_CI_checks_on_TV_source_commit": 0
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
     "82d86ddcf325f0120eae13b2c4181e3b8dc4c028",
-    "a3015deaa56f5990be88775fa8dfad77a0899606"
+    "a3015deaa56f5990be88775fa8dfad77a0899606",
+    "7e62c98390b6f94213f6ff6b64858a602bf835d4"
   ]
 }
