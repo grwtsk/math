@@ -109,7 +109,7 @@ does not substitute for compilation or source-fidelity review.
 The [bounded source-connection atlas](../reviews/finite-proof-source-connections-2026-11-02.md)
 distinguishes **forward Horn entailment**, **backward prerequisite retention**,
 **proof-carrying theorem applications**, **exact representation transport**, and
-**reverse-edge invalidation**. Three new source-proof-candidate modules prove
+**reverse-edge invalidation**. Four new source-proof-candidate modules prove
 their explicitly conditioned relationships while preserving the separate
 source-identification, dependent-elaboration and verification obligations.
 No corpus-wide scan, kernel acceptance, SAT running-time result or measured
