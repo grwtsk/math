@@ -132,13 +132,21 @@
   },
   "verification": {
     "Git_blob_source_creation": "PASS",
-    "publication": "PENDING_GUARDED_MAIN_UPDATE",
-    "exact_blob_readback": "PENDING",
+    "publication": "PASS_GUARDED_NONFORCE_MAIN",
+    "exact_blob_readback": "PASS_3_OF_3",
     "native_compilation": "NOT_RUN",
     "kernel": "NOT_RUN",
     "axiom_audit": "NOT_RUN",
     "declared_source_proof": "CANDIDATE_UNCOMPILED",
     "remaining_targets": "OPEN",
     "issue_state": "OPEN"
+  },
+  "publication": {
+    "published_commit": "a6a508a0865ece748d854e6150e742a394838be6",
+    "guarded_expected_parent": "be79cce5f40c97a5b5fbf5b466598d32309fa00c",
+    "source_blob": "3cefc809745c95b490b3dce20880da7bd82ff9a4",
+    "review_blob": "1aa20d5c1fa7579cb42f662ba115754ef7adbc1d",
+    "initial_manifest_blob": "38fe2704fe42d3807b4992e6ba5cdc81f15a99ef",
+    "source_only_not_lean_acceptance": true
   }
 }
