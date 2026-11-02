@@ -8,6 +8,7 @@ Lean v4.36.0-rc1. This adapter is NOT imported by grwtsk/math v4.34.1.
 The isolated adapter directory must be on the Tau Ceti LEAN_PATH.
 -/
 import TauCetiOriginalGeometricThetaGalois
+import TauCetiThetaGaloisScalarFactor
 import TauCeti.FieldTheory.GaloisCohomology.BrauerTorsion
 import TauCeti.NumberTheory.ClassFieldTheory.MuNRep
 import TauCeti.NumberTheory.ClassFieldTheory.Brauer.RootsOfUnity
@@ -93,6 +94,32 @@ def ThetaScalarFactorLaw
       (σ • thetaObstructionScalar W n a τ ρ) *
         thetaObstructionScalar W n a σ (τ * ρ)
 
+/-! ## A genuinely DERIVED theta scalar cocycle law
+
+The raw scalar factor of the original elliptic function field
+is now proved to equal the Galois theta GROUP boundary in
+TauCetiThetaGaloisScalarFactor. The existing group centrality
+and semilinear action supply the factor law without choosing
+a cocycle as additional arithmetic data.
+
+Only genuine CONTINUITY remains to upgrade this exact group
+2-cocycle to the original Tau Ceti continuous Z².
+-/
+
+/-- The original theta scalar factor law follows from the
+actual elliptic rational-function theta group and Galois
+action. It is no longer an independent user-supplied
+arithmetic hypothesis. -/
+theorem originalThetaScalarFactorLaw
+    (a : Z1 (G (F := F)) (W.TorsionCoeff n)) :
+    ThetaScalarFactorLaw W n a := by
+  intro σ τ ρ
+  simpa only [
+    GRWTSK.ArithmeticGeometry.EllipticCurves.ThetaGaloisScalarFactor.originalThetaFactor
+  ] using
+    (GRWTSK.ArithmeticGeometry.EllipticCurves.ThetaGaloisScalarFactor.originalThetaFactor_twoCocycle
+      W n a σ τ ρ)
+
 /-- Real source Z² membership, NOT an arbitrary chosen
 cohomology class: the ORIGINAL multiplicative factor
 law and continuity imply Tau Ceti's exact additive
@@ -109,6 +136,17 @@ theorem originalThetaUnitsCochain_mem_Z2
   apply Additive.toMul.injective
   simpa [originalThetaUnitsCochain, mul_comm,
     mul_left_comm, mul_assoc] using (hlaw σ τ ρ).symm
+
+/-- The genuine original raw theta scalar is a continuous
+2-cocycle as soon as one proves its arithmetic CONTINUITY;
+the cocycle law is supplied by original theta group algebra. -/
+theorem originalThetaUnitsCochain_mem_Z2_of_continuous
+    (a : Z1 (G (F := F)) (W.TorsionCoeff n))
+    (hc : ThetaScalarContinuous W n a) :
+    originalThetaUnitsCochain W n a ∈
+      Z2 (G (F := F)) (UnitsCoeff F) :=
+  originalThetaUnitsCochain_mem_Z2 W n a hc
+    (originalThetaScalarFactorLaw W n a)
 
 /-- A genuine original H² class ON SOURCE CONTINUOUS COCHAINS.
 Its arithmetic hypotheses are precisely the uncompleted
@@ -225,6 +263,25 @@ theorem originalThetaBrauerH2_uniqueMuNPreimage
   exact (h2KummerToUnits_injective (K := F) (n := n) hn)
     (hy.trans hx.symm)
 
+/-! ## Brauer H² from actual theta geometry with one less premise
+
+The originally separate `ThetaScalarFactorLaw` parameter is
+now supplied by a theorem, not taken as a second arithmetic
+hypothesis. This construction still requires the actual scalar
+Galois cochain CONTINUOUS, not just the coefficient action.
+-/
+
+/-- The original geometric theta class in exact canonical
+continuous H²(F, UnitsCoeff F), requiring only the genuine
+geometric scalar cochain continuity. -/
+noncomputable def originalThetaBrauerH2_of_continuous
+    (a : Z1 (G (F := F)) (W.TorsionCoeff n))
+    (hc : ThetaScalarContinuous W n a) :
+    continuousCohomology 2
+      (ofDiscreteModule ℤ (G (F := F)) (UnitsCoeff F)) :=
+  originalThetaCanonicalBrauerH2 W n a hc
+    (originalThetaScalarFactorLaw W n a)
+
 /-! ## The ACTUAL nonarchimedean normalized invariant, not a proxy
 
 At a characteristic-zero nonarchimedean local field, the
@@ -304,6 +361,36 @@ theorem originalThetaNormalizedInvariant_returns_original
           (Classical.choose h.exists))) = _
   rw [AddEquiv.symm_apply_apply]
   exact Classical.choose_spec h.exists
+
+/-- Source-normalized theta invariant with the actual original
+group cocycle law already derived. Only arithmetic continuity
+of its scalar cochain and n-torsion of its genuine Brauer H²
+class remain nontrivial prerequisites. -/
+noncomputable def originalThetaNormalizedInvariant_of_continuous
+    (a : Z1 (G (F := F)) (W.TorsionCoeff n))
+    (hc : ThetaScalarContinuous W n a)
+    (hn : IsUnit (n : F))
+    (htorsion : n • originalThetaBrauerH2_of_continuous
+      W n a hc = 0) : ZMod n :=
+  originalThetaNormalizedInvariant W n a hc
+    (originalThetaScalarFactorLaw W n a) hn htorsion
+
+/-- The normalized invariant reconstructs the original
+source-defined theta Brauer H² class exactly, not merely
+a residue with a matching cardinality. -/
+theorem originalThetaNormalizedInvariant_of_continuous_returns
+    (a : Z1 (G (F := F)) (W.TorsionCoeff n))
+    (hc : ThetaScalarContinuous W n a)
+    (hn : IsUnit (n : F))
+    (htorsion : n • originalThetaBrauerH2_of_continuous
+      W n a hc = 0) :
+    (h2KummerToUnits F n).hom
+      ((thetaMuNNormalizedEquiv (F := F) n hn).symm
+        (originalThetaNormalizedInvariant_of_continuous
+          W n a hc hn htorsion)) =
+        originalThetaBrauerH2_of_continuous W n a hc :=
+  originalThetaNormalizedInvariant_returns_original W n a hc
+    (originalThetaScalarFactorLaw W n a) hn htorsion
 
 end NormalizedLocal
 

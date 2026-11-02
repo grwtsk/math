@@ -257,6 +257,31 @@ noncomputable instance ThetaLift.instGroup : Group (ThetaLift W n) where
           x.function = 1
       rw [map_inv, inv_mul_cancel]
 
+/-! ## Function-level ratio and scalar torsor of two theta lifts
+
+The actual theta lifts above one ORIGINAL elliptic torsion point
+differ by one and only one base-field unit. Unlike a choice of
+a perfect pairing, this uniqueness comes from the previous
+source divisors and the faithful scalar algebra map.
+-/
+
+/-- The group-theoretic quotient x*y^-1 of theta lifts over
+the SAME original elliptic torsion point has the LITERAL
+rational-function quotient f_x/f_y as its function field unit.
+The source minus-translation is crucial for cancellation. -/
+theorem ThetaLift.mul_inv_function_of_point_eq
+    (x y : ThetaLift W n) (hxy : x.point = y.point) :
+    (x * y⁻¹).function = x.function / y.function := by
+  change x.function *
+      Units.map (thetaTranslate W x.point :
+        W.FunctionField →* W.FunctionField)
+        (Units.map (thetaTranslate W (-y.point) :
+          W.FunctionField →* W.FunctionField)
+          y.function⁻¹) = x.function / y.function
+  rw [← thetaTranslate_add_units W x.point (-y.point) y.function⁻¹]
+  rw [hxy, add_neg_cancel, thetaTranslate_zero_units]
+  exact (div_eq_mul_inv _ _).symm
+
 /-- A REAL scalar function regarded as a theta lift above O. -/
 noncomputable def scalarLift (c : Fˣ) : ThetaLift W n := by
   let u : W.FunctionFieldˣ := Units.map (algebraMap F W.FunctionField) c
@@ -333,6 +358,31 @@ theorem scalarLiftHom_injective :
     algebraMap F W.FunctionField (d : F) at hf
   apply Units.ext
   exact (algebraMap F W.FunctionField).injective hf
+
+/-- The TRUE fibre of the original theta extension is a
+torsor under F^×: for two lifts above the same genuine
+n-torsion point, there exists a UNIQUE scalar relating them.
+No arbitrary theta section, Gram matrix or pairing is chosen. -/
+theorem ThetaLift.existsUnique_scalar_mul_eq_of_point_eq
+    (x y : ThetaLift W n) (hxy : x.point = y.point) :
+    ∃! c : Fˣ, x = scalarLift W n c * y := by
+  have hzero : (x * y⁻¹).point = 0 := by
+    simp only [ThetaLift.mul_point, ThetaLift.inv_point]
+    rw [hxy]
+    exact add_neg_cancel y.point
+  obtain ⟨c, hc⟩ :=
+    exists_scalarLift_of_point_eq_zero W n (x * y⁻¹) hzero
+  have hx : x = scalarLift W n c * y := by
+    calc
+      x = (x * y⁻¹) * y := by group
+      _ = scalarLift W n c * y := by rw [hc]
+  refine ⟨c, hx, ?_⟩
+  intro d hd
+  have hh : scalarLift W n c * y = scalarLift W n d * y :=
+    hx.symm.trans hd
+  have heq : scalarLift W n c = scalarLift W n d :=
+    mul_right_cancel hh
+  exact scalarLiftHom_injective W n heq
 
 /-- Hence the source-geometric scalar kernel is CENTRAL,
 as required by a Mumford theta extension. -/
