@@ -72,8 +72,8 @@
   ],
   "verification": {
     "git_blob_creation": "PASS",
-    "git_publication": "PENDING",
-    "exact_blob_readback": "PENDING",
+    "git_publication": "PASS_GUARDED_NONFORCE_MAIN",
+    "exact_blob_readback": "PASS_5_OF_5",
     "source_analysis": "PASS_FINITE_JAVASCRIPT",
     "python_replay": "NOT_RUN",
     "Lean_compilation": "NOT_RUN",
@@ -86,5 +86,13 @@
     "Replay existing pinned full-row validator then new estimate script in source checkout.",
     "Native compile generic signed Gram source client, check all theorem interfaces and transitive axioms.",
     "Prove actual μ-source comparison, operator norm and signed residual budgets uniformly on fixed dyadic T."
-  ]
+  ],
+  "publication": {
+    "source_commit": "200c2af81d3cbc00bbb0fce53218d0976a1a9651",
+    "guarded_parent": "d3f6b63cbf5ac23615216eb46ead472b3b5aec0c",
+    "initial_manifest_blob": "d4d718970abad758d3c3f9b0d0b39e01a9a42c28",
+    "exact_five_file_readback": true,
+    "original_CERN_CSV_unchanged": true,
+    "native_proof_acceptance": false
+  }
 }
