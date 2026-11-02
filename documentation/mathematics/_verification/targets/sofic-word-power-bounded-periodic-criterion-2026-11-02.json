@@ -140,8 +140,8 @@
   },
   "verification": {
     "blob_creation": "PASS",
-    "Git_publication": "PENDING_NONFORCE_SOURCE_READBACK",
-    "exact_blob_readback": "PENDING",
+    "Git_publication": "PASS_GUARDED_NONFORCE_MAIN",
+    "exact_blob_readback": "PASS_4_OF_4",
     "direct_static_source_scan": "NO_AUTHORED_SORRY_AXIOM_UNSAFE_IN_NEW_SOURCE",
     "native_Lean_compilation": "NOT_RUN",
     "expected_types_universes": "NOT_RUN",
@@ -158,5 +158,17 @@
     "Repair only real elaboration errors in the two new proof candidates and their pinned ancestors",
     "Run separate exact expected type/universe, trust=0 kernel replay and full transitive #print axioms receipts for named declarations",
     "Preserve the missing/surplus graph lift ledger and independent faithful/complete period-lift conditions; no RH or zeta claim"
-  ]
+  ],
+  "publication": {
+    "source_commit": "a4a11a98a1ffeb3c5cc37e1a7c718fac821613ff",
+    "guarded_parent": "a3015deaa56f5990be88775fa8dfad77a0899606",
+    "source_blobs": [
+      "fc3842103f18ecd42aa1587d8bc9556d6144a3c2",
+      "3be4fc0e7b953c22e14749b8ad933b0ab851de1b"
+    ],
+    "review_blob": "584dcc8d15f4bd7b34070b29ef31ca33d5b6037f",
+    "initial_manifest_blob": "0791cfbea2221c1c9307c8d942fd83c166201020",
+    "expected_head_lease": true,
+    "source_publication_only_not_native_proof_acceptance": true
+  }
 }
