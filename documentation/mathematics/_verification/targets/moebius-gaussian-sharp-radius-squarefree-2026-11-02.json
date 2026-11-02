@@ -131,7 +131,7 @@
     "graph_edges": 12
   },
   "verification": {
-    "github_publication": "PENDING_EXPECTED_HEAD_ADD_ONLY_EXACT_GIT_READBACK",
+    "github_publication": "PASS_SIX_EXACT_GIT_BLOB_READBACK",
     "Lean_parser": "NOT_RUN",
     "Lean_elaboration": "NOT_RUN",
     "expected_types": "NOT_RUN",
@@ -145,10 +145,14 @@
     "CI_Noe_native_automation_dispatched": false,
     "all_positive_rate_signed_heat_energy": "OPEN",
     "all_positive_rate_original_FAR": "OPEN",
-    "canonical_RH": "OPEN"
+    "canonical_RH": "OPEN",
+    "additive_source_file_count": 6,
+    "github_pre_update_diff": "PASS_EXACT_SIX_ADDITIVE_PATHS_NO_PRIOR_CHANGES"
   },
   "issues": [
     1556,
     1429
-  ]
+  ],
+  "source_publication_commit": "dc6a0133eca30cebbf26bcff989edf1110e8078d",
+  "source_publication_parent": "98751a761c4caef375702f89e358025fb3c004f1"
 }
