@@ -75,7 +75,7 @@ noncomputable def rowGibbsSampler
       regularizedRowWeight_pos T ε hε hcard j.val j.property
     have hle : regularizedRowWeight T ε j.val ≤ 1 :=
       regularizedRowWeight_le_one T ε hε hcard j.val j.property
-    exact neg_nonneg.mpr (Real.log_nonpos hp hle)
+    exact neg_nonneg.mpr (Real.log_nonpos hp.le hle)
   outgoing := by
     intro i
     exact ⟨i, rfl⟩
@@ -93,7 +93,9 @@ theorem rowGibbsSampler_weight
   change
     Real.exp (-(1 : ℝ) * (-Real.log (regularizedRowWeight T ε j.val))) =
       regularizedRowWeight T ε j.val
-  convert Real.exp_log hp using 1 <;> ring
+  have harg : -(1 : ℝ) * (-Real.log (regularizedRowWeight T ε j.val)) =
+      Real.log (regularizedRowWeight T ε j.val) := by ring
+  rw [harg, Real.exp_log hp]
 
 /-- The actual source-derived Gibbs partition equals one for every
 starting index, because the parent normalized real law is unchanged. -/
