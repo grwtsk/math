@@ -113,7 +113,8 @@ theorem absMass_sq_le_originalRowSecondMoment
 complete-row mass; this does not bound the latter as T grows. -/
 theorem pickupCross_abs_le_originalRowAbsMass (T : ℝ) :
     |pickupCross T| ≤ originalRowAbsMass T := by
-  rw [GRWTSK.NumberTheory.Moebius.PhysicalRowEndpointReturn.pickupCross_eq_originalSignedRows]
+  change |∑ m ∈ endpointIndex T, originalRowSum T m| ≤
+    originalRowAbsMass T
   unfold originalRowAbsMass
   exact Finset.abs_sum_le_sum_abs _ _
 
