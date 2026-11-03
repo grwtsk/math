@@ -531,7 +531,7 @@
     "The proof only covers the original prime-free low-GCD source mask. It does not discharge other repository OriginalFullGcdReindexTarget/PlainPrimitiveGcdReindexTarget under different masks or extra hypotheses."
   ],
   "verification": {
-    "source_publication": "TWENTYTWO_PREVIOUS_PLUS_TWO_NEW_SOURCE_CANDIDATES_REPAIRED_PENDING_READBACK",
+    "source_publication": "PASS_TWENTYFOUR_EXACT_GITHUB_BLOB_READBACKS_AT_dc811b68b167e5c480478081cca96a321065a961",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -597,7 +597,7 @@
     "new_four_way_pair_count_checks": "N=8_16_32_48_64_COMBINATORIAL_MASKS_PASS_NUMERIC_NONCERTIFYING",
     "new_low_gcd_prime_dilation": "SOURCE_PROOF_CANDIDATE_ZERO_ONE_SIDED_UPPER_NO_KERNEL_CHECK",
     "new_prime_free_coprime_primitive": "SOURCE_PROOF_CANDIDATE_TERM_IDENTITY_NO_KERNEL_CHECK",
-    "exact_prime_free_triple_reindex": "SOURCE_PROOF_CANDIDATE_AUTHORED_KERNEL_NOT_RUN",
+    "exact_prime_free_triple_reindex": "PROOF_CANDIDATE_AUTHORED_NO_NATIVE_VERIFICATION",
     "new_prime_free_finite_diagnostics": "FIVE_SMALL_ACTUAL_MOBIUS_WINDOWS_NONCERTIFYING",
     "original_low_gcd_prime_free_all_rate_upper": "OPEN",
     "new_prime_free_primitive_revision": "797c92859b1b14d4e88c47d35d975ffa6fccfc7b",
@@ -613,7 +613,12 @@
     "new_source_static_gaps": "NO_AUTHORED_SORRY_ADMIT_AXIOM_NATIVE_DECIDE_IN_TWO_NEW_SOURCE_BLOBS_NONCERTIFYING",
     "numeric_gcd_double_to_primitive_triple": "N_8_16_32_64_TRUE_MOBIUS_55_DIGITS_NONCERTIFYING; DIFFERENCES_BELOW_1E-53",
     "new_canonical_finite_gcd_bijection": "SOURCE_PROOF_CANDIDATE_NOT_NATIVE_COMPILED",
-    "exact_original_primitive_triple_source_return": "PROOF_CANDIDATE_STATIC_REPAIR_KERNEL_NOT_RUN"
+    "exact_original_primitive_triple_source_return": "PROOF_CANDIDATE_STATIC_REPAIR_KERNEL_NOT_RUN",
+    "new_exact_gcd_source_hashes": "PASS_CANONICAL_326730b5b5c3f93d08843c8c564bece49e171f9a_AND_PRIMEFREE_0db3152b7108d1a9e8f7819a8114458bc9070cab",
+    "source_graph_and_review_blobs": "PASS_AT_dc811b68b167e5c480478081cca96a321065a961",
+    "new_generic_source_commit_combined_CI_status_count": 0,
+    "new_primitive_source_commit_combined_CI_status_count": 0,
+    "new_finite_gcd_integer_checks": "N_0_1_2_5_8_16_32_64_BIJECTION_AND_SQUAREFUL_GUARD_PASS_NONCERTIFYING"
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
