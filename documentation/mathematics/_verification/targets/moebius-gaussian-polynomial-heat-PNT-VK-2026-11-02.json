@@ -137,7 +137,7 @@
     }
   ],
   "trust": {
-    "git_publication": "PENDING_GUARDED_NONFORCE_EXACT_GIT_READBACK",
+    "git_publication": "PASS_FIVE_EXACT_GITHUB_BLOB_READBACK",
     "expected_additive_files": 5,
     "lean_compilation": "DEFERRED_PER_USER",
     "parser": "NOT_RUN",
@@ -154,7 +154,9 @@
     "Noe_runner_CI_automation_dispatched": false,
     "global_all_positive_rate_FAR": "OPEN",
     "Gaussian_RH_equivalent_relative_exponential": "OPEN",
-    "canonical_RiemannHypothesis": "OPEN"
+    "canonical_RiemannHypothesis": "OPEN",
+    "github_pre_update_diff": "PASS_FIVE_ADDITIONS_NO_MODIFICATIONS",
+    "github_published_file_count": 5
   },
   "tracking_issues": [
     1556,
@@ -163,5 +165,7 @@
   "external_references": [
     "https://www.fieldsinstitute.ca/talks/Explicit-Mertens-estimates",
     "https://mathoverflow.net/questions/293738/best-estimate-of-the-mertens-function-without-assuming-the-riemann-hypothesis"
-  ]
+  ],
+  "source_commit": "87a30d8a2fa1fc5678e35157179dc9c191ae1cbc",
+  "source_parent": "c36611df6cc59dddb7711cb127fbfc69daab81ef"
 }
