@@ -1,0 +1,89 @@
+{
+  "contract": "grwtsk.math.cm-actual-period-line-bundle-core-source/1",
+  "date": "2026-11-02",
+  "repo": "grwtsk/math",
+  "base_main_observed": "a9f985793ca8f338241d87faa09b186be20898a5",
+  "branch": "main",
+  "publication": "SOURCE_CANDIDATE_PENDING_READBACK",
+  "source_files": [
+    {
+      "path": "GRWTSK/Geometry/CMActualPeriodTransitionContinuity.lean",
+      "sha": "c72b5a098b36c8760cad73b4ac38ad19ce77b993",
+      "lines": 164,
+      "bytes": 8246
+    },
+    {
+      "path": "GRWTSK/Geometry/CMActualPeriodTopologicalBundleCore.lean",
+      "sha": "96db9737439a172b02c389d4c367919605f808d5",
+      "lines": 215,
+      "bytes": 9935
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/cm-actual-period-line-bundle-core-2026-11-02.md",
+      "sha": "55532a82bb7ee0dbaf537b385b170b1c15943f22",
+      "lines": 78,
+      "bytes": 10155
+    }
+  ],
+  "source_pins": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "mathlib_FiberBundleCore_blob": "4d099ad1fd51f6fe75a4ee2befe3e2579ad497c7",
+    "openai_math": "4eaee87548250b2682affda7d05d947c05554bae",
+    "upstream_period_torus_blob": "4846fdbc9c5ce1311a204220d03a4d4a4bc0b48e",
+    "upstream_period_space_blob": "e6f4424149cadd941963e9888cec770997ac2276",
+    "local_chart_frames_blob": "32482bdc65e6c542b0e1e6a383ec1821c72f995c",
+    "local_orbit_metric_blob": "1231b2b0e3f08983cd4c1075ffb406a52a89ba11",
+    "local_undoubled_cocycle_blob": "6fe83c1cc050b161d0437213111a3a92ec7ca05c",
+    "local_orbit_total_blob": "58d908cfbeceaf60b0839086b86cb941657d037f"
+  },
+  "declaration_expectations": [
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodTransitionContinuity.chartTransitionPeriod_eventually_constant",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodTransitionContinuity.extendedTransitionFactor_continuousOn",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodTopologicalBundleCore.localCoordinateChange_comp",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodTopologicalBundleCore.localCoordinateChange_continuousOn",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodTopologicalBundleCore.actualCMLineBundleCore",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodTopologicalBundleCore.standardCoreToActualOrbitEquiv"
+  ],
+  "derived_scope": {
+    "actual_base": "compact CM torus from actual O_E period lattice",
+    "analytic_input": "upstream covering-chart local section translation + holomorphic undoubled Appell–Humbert factor",
+    "transition": "locally constant O_E period labels on overlaps; scalar factor continuous",
+    "topological_consumer": "Mathlib FiberBundleCore ℂ with open base, identity, continuity and triple-overlap composition",
+    "comparison": "algebraic set equivalence with prior original Appell–Humbert orbit quotient",
+    "not_identified": "quotient topology, holomorphic line bundle typeclass, descended Chern connection, chosen original CM variety"
+  },
+  "independent_test": {
+    "script": "cm_period_bundle_core_reference.py",
+    "results": "cm_period_bundle_core_reference_results.json",
+    "checks": 71844,
+    "model": "E=Q(i), O_E=Z[i], H(u,z)=conj(u)z",
+    "classification": "FINITE_DIAGNOSTIC_NOT_LEAN_NOT_EXPERIMENTAL"
+  },
+  "verification": {
+    "static_no_explicit_holes": "PASS",
+    "static_bracket_scan": "PASS",
+    "lean_parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_type_check": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "automated_verification_dispatch": "NONE"
+  },
+  "unresolved": [
+    "source compile under pinned OAI import graph",
+    "source orbit quotient topology vs constructed core topology",
+    "complex-linear VectorBundle typeclass and holomorphic analytic atlas",
+    "descended actual Chern connection and curvature",
+    "polarized H1 identification with particular original CM variety",
+    "arithmetic Möbius integer to actual residue-site map",
+    "unit-calibrated CERN detector model and fit",
+    "original all-rate signed Möbius energy and periodic Schwartz-to-Lp smoothing"
+  ],
+  "negative_controls": [
+    "nearest-lattice branch discontinuity outside covering chart overlaps",
+    "doubled factor erases odd parity commutator",
+    "positive polarization alone does not force odd triangle flux",
+    "finite tests are neither kernel proof nor event-level data"
+  ]
+}
