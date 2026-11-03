@@ -1,0 +1,55 @@
+{
+  "schema": "source-proof-candidate-pinned-target-v1",
+  "source_status": "SOURCE_PROOF_CANDIDATE",
+  "repository": "grwtsk/math",
+  "branch": "research/residue-circle-wave-hilbert-20261101-350ff25d",
+  "parent_commit": "c673c876120f925450044713e714c134a3d52880",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "openai_math_commit": "4eaee87548250b2682affda7d05d947c05554bae",
+  "source_blobs": {
+    "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleOperatorCommutator.lean": "81d01b22bd46be5b9360039f48741dbe9b36a835",
+    "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMActualSignedResponseOperator.lean": "e59682aba98aa1f8707bd523dba994e0f97cc4f9",
+    "documentation/mathematics/_support/reviews/cm-actual-signed-response-operator-2026-11-01.md": "bf70c0dd214de6fbcf19255c928e3ff780703ac4"
+  },
+  "direct_dependency_blobs": {
+    "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMSelectedSignedWaveReturn.lean": "bedee8072837b0a96eb49beea79a4fd04efa1fe9",
+    "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleWaveFourBlock.lean": "aadebfd32f24e7ee6308b89d5d0561a6d7312f89",
+    "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMScaleResidueHilbertAttachment.lean": "b7902370c6bab3111a409851fc52ab7894d2f414",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean": "07dfdae4a60b05f5da55cc20882411c85444fa82"
+  },
+  "expected_declarations": [
+    "algebraic_wave_commutator_eq_off_diagonal",
+    "algebraic_wave_commutator_energy",
+    "algebraic_wave_commutator_source_bound",
+    "complexCoherentReadout_original",
+    "sourceResponse_norm_le",
+    "sourceConditionedTimeStep_packet",
+    "actual_CM_to_arithmetic_defect",
+    "actual_arithmetic_to_CM_defect",
+    "actual_CM_arithmetic_commutator",
+    "actual_CM_arithmetic_commutator_energy",
+    "actual_CM_hodge_input_forward_defect",
+    "actual_CM_hodge_input_reverse_defect_zero"
+  ],
+  "negative_controls": [
+    "the source-bound rank-one response is not a proved Möbius or Euclidean propagator",
+    "retain both QWP and PWQ as potentially nonzero",
+    "do not drop the signed scalar cross term",
+    "conditional finite-dimensional rational Betti and chosen metric remain explicit",
+    "do not infer source-specific defect nonvanishing, RH or periodic Lp smoothing"
+  ],
+  "finite_reference_evidence": {
+    "exact_rational_assertions": 69760,
+    "reference_is_not_lean": true
+  },
+  "verification_facets": {
+    "source_blob_readback": "PENDING",
+    "lean_build": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_DISPATCHED",
+    "workflow_execution": "NOT_DISPATCHED"
+  }
+}

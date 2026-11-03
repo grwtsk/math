@@ -1,0 +1,174 @@
+provider = "openai/math"
+provider_commit = "4eaee87548250b2682affda7d05d947c05554bae"
+provider_subdir = "lean"
+original_branch_commit = "f5966fb4c0e800464b5d0c3434396c76d24eaf66"
+lean_toolchain = "leanprover/lean4:v4.34.1"
+mathlib_commit = "d13f23b723b8a846827a245b89c10fc7d3f11612"
+upstream_manifest_blob = "67d01d2717d0aaff59fb8814bb53581b961f42b4"
+upstream_lakefile_blob = "cd24ca2ee09fb6fe33e82400534d9e60a616125b"
+classification = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+patched_dependency_closure = "UNVERIFIED"
+root_default_target_unchanged = true
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMActualCoupledCausalPropagator.lean"
+blob = "d5f714b18e56ea789b134a4e5ba26bc8c9def06c"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMActualMoebiusRankTwoInteraction.lean"
+blob = "a8b65874eda8c9b64088e492d999aa7d3d32b802"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMActualPickupBirthDerivative.lean"
+blob = "0aa25c88d682317fa6ffb396f7db091f25c04fd7"
+role = "already_merged_core"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMActualRealTimeGenerator.lean"
+blob = "972dfc7321da4be5db6ae63ef0665f8abfeb4937"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMActualSignedCausalEvolution.lean"
+blob = "7eb941e71b8725ec53c16dd721b101e71577849c"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMActualSignedResponseOperator.lean"
+blob = "e59682aba98aa1f8707bd523dba994e0f97cc4f9"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMActualUnitaryCausalInteraction.lean"
+blob = "43866e7448a45bc99c9f9a85dc6f6825a14377cd"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMArithmeticRankTwoCoupling.lean"
+blob = "78b67365199b643eaab9dead25c842242e8eb99d"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMFullCycleNonzeroCoupling.lean"
+blob = "cc753ecbfe461902da4ce2ef8582d0ac17533c99"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMGeometricCycleHilbert.lean"
+blob = "fd00f0e140e49676f05b49ac6e752c23ef190c15"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMLabelledAddressIsometry.lean"
+blob = "63b6a959b62ac5fa5e958af99f7ef0db6f12e8ed"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMLabelledCausalDefectComparison.lean"
+blob = "107146618f0eff5454f0527dc0855c6fcaf3078f"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMLabelledCocycleIntertwiner.lean"
+blob = "ce2b0efb199fc3748eb7714c0f173e9fce471b79"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMLabelledJointIsometry.lean"
+blob = "2b58e6108c854c8dd4ef882593281a48fbc9173b"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMRealTimeGeneratorAlgebra.lean"
+blob = "7ed13cd003c08fe96602bb78f1b0f20433130bba"
+role = "already_merged_core"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMScaleResidueHilbertAttachment.lean"
+blob = "b7902370c6bab3111a409851fc52ab7894d2f414"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMSelectedSignedWaveReturn.lean"
+blob = "bedee8072837b0a96eb49beea79a4fd04efa1fe9"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMSourceRankTwoShearEvolution.lean"
+blob = "b1b28d3abd90da32357eca1ff31953ee24d1b376"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMSourceUnitaryGenerator.lean"
+blob = "1b8276005efb6f3a826016746d7a84529eb0096c"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMSourceUnitaryInteraction.lean"
+blob = "3391a7243caf77279fc503047f42f8520cd6013d"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/EuclideanCircleResidueWaveComparison.lean"
+blob = "698b45c6b8b3344f0da297208d37d4c08e965c76"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/FiniteLabelledPickupCocycle.lean"
+blob = "1f0301e696086d8a4894cf1d6a573ccfb917e832"
+role = "already_merged_core"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/FiniteLabelledPickupUniformTransport.lean"
+blob = "42135a7c2acef5f3091ae7ce7e58595367511f91"
+role = "already_merged_core"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/PeriodicResidueWaveNoGo.lean"
+blob = "b7e0b9abc62b5a1f5e6ed4af458390ad80960d8d"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleOperatorCommutator.lean"
+blob = "81d01b22bd46be5b9360039f48741dbe9b36a835"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleQuadraticScaleTaper.lean"
+blob = "4a59c53cafb3f6b386cd20066f00b71f2a80ab03"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleSignedPickupHilbertPort.lean"
+blob = "1108ba0604ccce95828d160bc9016a73e9a3e317"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleSourceCausalShear.lean"
+blob = "d6748188785ee8a7ffa74bf593c27b2b10718b45"
+role = "already_merged_core"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleWaveFourBlock.lean"
+blob = "aadebfd32f24e7ee6308b89d5d0561a6d7312f89"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleWaveHilbert.lean"
+blob = "3a17b268dc195ba32653df3892780a4515559e30"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleWaveHilbertFormalization.lean"
+blob = "b537083adbf681bde7ca7aa2abcf0c8643d1d254"
+role = "provider_dependent_candidate"
+
+[[source]]
+path = "GRWTSK/NumberTheory/ResidueCircleHodgePort.lean"
+blob = "9a6dcb32c97f571123049d443337c80b823a6682"
+role = "already_merged_core"

@@ -1,0 +1,89 @@
+{
+  "schema": "grwtsk.math.source-bound-replay-target.v1",
+  "title": "CM-labelled exact cocycle intertwining, finite-inventory uniform bound and no-isometry birth",
+  "repository": "grwtsk/math",
+  "proposed_branch": "research/residue-circle-wave-hilbert-20261101-350ff25d",
+  "branch_parent_sha": "56b9ee95074e341390831b3e818c70d36f44ab06",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_pin": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "upstream_cm_pin": "openai/math@4eaee87548250b2682affda7d05d947c05554bae",
+  "files": [
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/FiniteLabelledPickupUniformTransport.lean",
+      "git_blob_sha": "42135a7c2acef5f3091ae7ce7e58595367511f91",
+      "sha256": "b3f20e4047d75bb7d13653d25984e48a3029eb489473e06056831664b0d07eea",
+      "lines": 221,
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMLabelledCocycleIntertwiner.lean",
+      "git_blob_sha": "ce2b0efb199fc3748eb7714c0f173e9fce471b79",
+      "sha256": "519fc0301529db843ca64194ca76b21b92bdc47e7b8318a992c9491b3334cf29",
+      "lines": 242,
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/cm-labelled-uniform-intertwiner-2026-11-01.md",
+      "git_blob_sha": "cfad9adecb9bbf456b38bb46d6b43c96edc8eb64",
+      "sha256": "58eab40900300eae9688e3feb42c323e2e9a3f77bd1218f79f291f889cc16466",
+      "lines": 73,
+      "status": "MATHEMATICAL_SOURCE_REVIEW"
+    }
+  ],
+  "expected_declarations": {
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.FiniteLabelledPickupUniformTransport": [
+      "pickupResponse_abs_le_two",
+      "actualPickupDiagonal_norm_le_two",
+      "actualPickupDiagonal_opNorm_le_two",
+      "actualPickupDiagonal_increment_opNorm_le_four",
+      "causalStep_minus_identity_norm",
+      "causalState_latent_norm_le",
+      "causalStep_increment_bound",
+      "causalStep_norm_bound",
+      "causalStep_opNorm_bound",
+      "actualLabelTwoTime_opNorm_le_five",
+      "originalLabelledState_norm_sq",
+      "actualLabelResponse_later_norm_ge_one",
+      "originalLabelledState_birth_norm_sq_gain",
+      "no_isometric_original_graph_transport"
+    ],
+    "GRWTSK.Analysis.HarmonicAnalysis.ResidueCircleWaveHilbert.CMLabelledCocycleIntertwiner": [
+      "exactLabelledJointEvolution",
+      "labelled_isometric_intertwining",
+      "selectedCM_is_fixed",
+      "exactLabelledJointEvolution_self",
+      "exactLabelledJointEvolution_comp",
+      "exactLabelledJointEvolution_inverse",
+      "actual_source_joint_transport",
+      "signed_source_mismatch_exact",
+      "signed_source_mismatch_norm_le",
+      "diagnostic_minus_evolution",
+      "diagnostic_minus_evolution_norm",
+      "exact_evolution_commutes_CM_projection",
+      "exact_evolution_commutes_CM_residual",
+      "selected_hilbert_birth_norm_sq_gain",
+      "no_selected_isometric_embedded_birth_transport"
+    ]
+  },
+  "mathematical_controls": [
+    "actual integer-labelled mu and original pickupResponse n t; n starts at 1",
+    "R_n(0)=0 and mu(1)*R_1(2log2)=1",
+    "complete integer inventory, signed cross terms and original coherent readout unchanged",
+    "finite-inventory diagonal operator <=2 and causal-step <=5 uniformly in j for s,t>=0",
+    "nonisometric birth obstruction in fixed source and selected coordinate Hilbert norms",
+    "joint cocycle exact intertwining only for the explicitly decoupled arithmetic extension",
+    "CM source diagnostic mismatch and both previously sourced off-diagonal defects retained",
+    "infinite all-scale arithmetic energy bounds and Schwartz-periodic Lp remain unsupplied"
+  ],
+  "verification": {
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "source_only_static_checks": "PASS",
+    "finite_reference_assertions": 267040,
+    "native_runner_dispatched": false,
+    "deployment_or_root_import": false
+  },
+  "acceptance": "Requires exact pinned source imports, clean Lean elaboration, expected types, fresh kernel replay and transitive axiom audit; finite reference checks are not acceptance."
+}

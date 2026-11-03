@@ -1,0 +1,57 @@
+# Actual CM cycle-class realization and Euclidean–circle residue wave comparison
+
+**Status:** SOURCE_PROOF_CANDIDATE. No Lean/Lake compilation, fresh kernel replay, expected-type replay, transitive axiom/unsafe audit, native execution, merge, or public-root admission was performed. Source-level theorems below must not be called kernel accepted until independently checked against the pinned dependency closure.
+
+## Exact source identity
+
+- `grwtsk/math` isolated research branch `research/residue-circle-wave-hilbert-20261101-350ff25d`, predecessor revision `1239b918acb972508dbd711dadb5b5b0b349ddba` (verify current branch head after publication). Repository branch-root pin is `350ff25d60f156b6d0617513eb253343afacbaf2`; no force movement of `main`.
+- Branch Lean toolchain: `leanprover/lean4:v4.34.1`; Mathlib lock `d13f23b723b8a846827a245b89c10fc7d3f11612`.
+- `openai/math` exact public revision `4eaee87548250b2682affda7d05d947c05554bae` (2026-10-30), CM Hodge source `lean/OAI/AlgebraicGeometry/ComplexMultiplication/Reference/GeometricAlgebraicity.lean` and `EvenHodgeClasses.lean`, geometric cycle-class definition `lean/OAI/AlgebraicGeometry/CycleClass/Geometric/Span.lean`, and `lean/ComparatorChallenges/HodgeConjectureCMAbelianVarieties/Solution.lean`.
+- Euclidean wave source `lean/OAI/Analysis/Fourier/LocalSmoothing/Comparator.lean` and its `angularFourier`, `halfWaveIntegral`, `euclidean_local_smoothing`. Local wrapper `GRWTSK/FunctionalAnalysis/LocalSmoothing.lean` pins a prior OAI revision; its own source-alignment/compilation audit is separately required.
+- Existing local comparison consumers: `GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleWaveHilbertFormalization.lean`, `ResidueCircleSignedPickupHilbertPort.lean`, `ResidueCircleWaveFourBlock.lean` and `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean`.
+
+## CM geometric source: not a formal placeholder
+
+1. Source `OAI.AlgebraicGeometry.CycleClass.Geometric.Span` constructs the real algebraic cycle-class map by summing the singular-cohomology classes of genuine closed irreducible supports; supported Thom classes and restriction maps remain in the geometric dependencies.
+2. The exact source theorem `originalHodgeClass_nativeThomAlgebraic` states: for a smooth integral projective complex group scheme `X`, a `HasComplexMultiplication X` witness, every codimension `p`, and every original rational Hodge class `a : H^(2*p)(X; ℚ)`, there exists an original rational geometric cycle `z` such that `V.rationalCycleClass p z = (originalEvenBettiBridge X p).symm a`, where `V = originalIntegralProjectiveVariety X` is the *same* geometric source.
+3. The new `actualCycleBetti` is literally `(originalEvenBettiBridge X p) (V.rationalCycleClass p z)`; therefore `cm_hodge_has_original_cycle` concludes `actualCycleBetti X p z = a`. No newly supplied cycle-class equality is an axiom or certificate field.
+4. Choose a rational basis `basis : Basis ι ℚ (H^(2*p)(X; ℚ))`. The explicit map `bettiCoordinateHilbert` sends its finite rational basis-coordinate support to the complete complex `lp (fun _ : ι => ℂ) 2` by a finite sum of `lp.single` vectors. The basis is explicitly chosen and gives a positive metric, but is **not** a canonical Hodge polarization or norm comparison with analytic cohomology. Pointwise coordinate faithfulness and injectivity are separately stated proof candidates.
+5. `actualCycleImages` is the image of **actual** rational cycles under this specific Betti-to-Hilbert map; `actualCycleCarrier` is the closed complex span of that set. The CM witness proves membership of the realized class in that set and hence exact vanishing of its orthogonal residual; the positive metric reconstructs *every* fiber vector by its algebraic and residual components.
+
+### Important interpretation
+
+For the particular rational CM Hodge classes covered by the OpenAI theorem the residual relative to this algebraic cycle span is **zero**. A nonzero vector in the perpendicular complement of the complete Hilbert fiber cannot automatically be called a nonalgebraic rational Hodge class of this variety. It can be an arbitrary unrelated Fourier or cohomological component. Arithmetic **nonunit** residue classes, Hodge cohomology classes, and orthogonal Hilbert residual vectors are different types; no identification is asserted.
+
+The first selected `CoordinateHilbert ι` is an actual positive Hilbert fiber for the chosen original Betti basis. An additional **explicitly conditional** file, `CMScaleResidueHilbertAttachment.lean`, now constructs a concrete insertion into the old scalar `AllScaleHilbert(scaleModulus)`: under `[FiniteDimensional ℚ (H^(2*p)(X;ℚ))]`, use the source's `Module.finBasis` and send basis coordinate `i : Fin(finrank ℚ H^(2p))` to the distinct old all-scale address `⟨i.val, (0 : ZMod (scaleModulus i.val))⟩`. `basisStageIndex_injective` proves that the coordinate placement is collision-free; each original rational cycle is mapped by its actual Betti class followed by this **particular finite-sum** Hilbert coordinate map, not by a freely supplied abstract port.
+
+The theorem `cm_hodge_in_selected_cycle_image` then directly uses the real OAI CM cycle witness to place an original rational Hodge class in the actual selected Hilbert cycle-image set. `cm_hodge_selected_residual_zero`, `entire_selected_hilbert_reconstructs` and `entire_selected_hilbert_energy` use the already specified positive Hilbert projections. The actual finite-dimensionality instance must be justified for each geometric source; no accepted derivation of that instance from the present OAI files was established in this inspection. This chosen basis/stage-zero-residue placement is an explicit coordinate realization, **not** a canonical geometric polarization, a physical wave coupling, or an isometric theorem relating intrinsic Betti metrics to the arithmetic wave metric.
+
+## Euclidean half-wave to periodic residues: what is exact
+
+The upstream `halfWaveIntegral t f` uses the angular Euclidean multiplier `exp(-i*t*||ξ||)` inside an inverse Fourier integral; its local smoothing theorem concerns Schwartz functions on `ℝ^n`, `n >= 2`, the time window `[1,2]`, finite `p >= 2` and positive epsilon loss (except zero loss at p=2). It is **not** a torus theorem or a `q`-uniform residue sampling bound.
+
+For a circle coordinate measured in turns, a signed integer frequency `k` has angular size `2π|k|`. The new `circleAxisFrequency k : EuclideanSpace ℝ (Fin 2)` is exactly `(2πk, 0)`, so `||circleAxisFrequency k|| = 2π|k|`. Thus the exact OAI source Fourier multiplier restricted to these frequencies is the circle phase `e^{-2πit|k|}`, with consistent sign and units. The new `original_oai_fourier_integrand_axis` proves equality of the **pre-inversion** multiplier products with the actual OAI `angularFourier f` evaluated on that axis.
+
+At any modulus `q > 0`, a circle mode `k ∈ ℤ` has residue `k mod q` but the complete unfolded coordinate is `(r,w)` with `k = r.val + q*w`. The new `aliasClassAmplitude` sums source coefficients over their original integer labels, each with its own phase, **before** combining in one residue. The `finiteAliasReconstruction_eq_original` proof is an exact finite character-sum identity at every sample `x : ZMod q` and at every real time. No primitive-only or unit-only channel is taken. The `finiteCoefficientEnergy_preserved` identity is an exact norm-square conservation law on the original coefficient packet and is NOT a statement that aliasing preserves the sampled spatial norm.
+
+For full `ℓ²(ℤ,ℂ)`, the pointwise unit modulus of `circleHalfWavePhase` defines a bounded periodic half-wave coordinate operator. The source predicate `AllFourierOrders` uses summability of `(1+k²)^m |a_k|²` for every natural number `m`; `periodicHalfWave_all_orders_iff` proves preservation in both directions. Since the multiplier has modulus one, **rough inputs do not become all-orders regular merely through this wave evolution**. The all-order *regularizer* is the distinct previously defined quadratic taper; its exact omitted-tail record must be retained.
+
+### Winding-loss obstruction (finite fixture)
+
+For `q=2`, two integer frequencies `k=0` and `k=2` have the **same** residue `0`. Set coefficients `a_0=1, a_2=-1`. Every residue sample is initially zero, yet at `t=1/4` each sample is `2` because the second phase is `exp(-iπ)=-1`. Consequently a residue-only quotient of initial data cannot determine the periodic wave at future times without retaining winding/alias side information. This is an explicit obstruction to treating `ZMod q` as a lossless wave phase space.
+
+## Finite numerical reference evidence
+
+`periodic_cm_wave_reference.py` carries 139,500 finite alias/reconstruction and weighted-energy assertions across moduli `1..31`, coefficient supports of sizes `0,1,3,7,12,19`, random real times, all residue sample coordinates, and Fourier orders `0..8`. It also checks the `q=2` winding-loss fixture. All assertions pass with explicit floating-point error thresholds. **This is not a proof of analytic inequalities and not Lean or kernel verification.** It tests no OAI algebraic geometry claims.
+
+## Unresolved exact interfaces
+
+1. Independently elaborate and kernel/axiom audit the three new Lean files and their full imported `GRWTSK` and `OAI` closures at the branch's pinned Lean/Mathlib versions. In particular check the exact elaborated `Basis.repr`, `Finsupp.sum`, `lp.single`, `Hdg^p` and `originalEvenBettiBridge` types, and every generated helper.
+2. Source-check the new finite-basis coordinate insertion into the **same** existing `AllScaleHilbert` and prove its injectivity/metric normalization on the genuine selected rational Betti source. Then construct the map from the **actual signed source packet** into that same coordinate model and prove an observation intertwiner or retain an explicit difference. The current fixed finite-basis placement is not, by itself, a physical or canonical wave realization.
+3. Establish a genuine Euclidean Schwartz-to-periodic function-space periodization/extension theorem if the original OAI **local-smoothing Lp** bound is to be transferred. Include Fourier normalization, integer lattice sampling, spatial cutoff and boundary terms, q-dependence, Sobolev exponents, and time interval. The source-level multiplier identity alone does not establish such an estimate.
+4. For the actual arithmetic Möbius pickup waveform, retain births, nonunit classes, parity `00/01/10/11` and all mixed products. It is not automatically a Schwartz Euclidean half-wave solution. Any wave adapter must prove a concrete source comparison and control all residuals; it cannot infer RH or subexponential cancellation from geometric Hilbert positivity.
+5. Derive projector/half-wave commutation only when the specific geometric cycle carrier is invariant under the concrete wave; otherwise retain both `QWP` and `PWQ` defects from `ResidueCircleWaveFourBlock.lean`.
+
+## Acceptance
+
+SOURCE_PUBLISHED after exact Git readback (if published); COMPILATION_NOT_RUN; FRESH_KERNEL_NOT_RUN; EXPECTED_TYPES_NOT_RUN; TRANSITIVE_AXIOM_AUDIT_NOT_RUN; no new axiom, `sorry`, native replacement, scheduler/workflow or root-promotion authority. `grwtsk/math` owns pure mathematical definitions and proofs; external verification effects and receipts remain separately authorized.
