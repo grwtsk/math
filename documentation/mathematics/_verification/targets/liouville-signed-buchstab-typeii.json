@@ -1,0 +1,56 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Squareful-aware actual Liouville signed Buchstab and Type II source decomposition",
+  "attribution": "grwtsk contributors",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleSignedBuchstabTypeII.lean",
+    "namespace": "GRWTSK.NumberTheory.LiouvilleSignedBuchstabTypeII",
+    "introduced_at": "297984e07976e4f9abd8c5532b4b435a02029642",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleGrowingBandUniformObstruction",
+      "Mathlib"
+    ],
+    "declarations": [
+      "firstSelectedDivisor",
+      "signedResponse",
+      "roughWaveform",
+      "singlePowerWaveform",
+      "repeatedPowerWaveform",
+      "waveform_eq_rough_add_single_add_repeated",
+      "coefficient_square_mul_of_negative_prime",
+      "coefficient_cross_prime_overlap",
+      "signedGram",
+      "exactDiagonal",
+      "signedOffDiagonal",
+      "signedGram_eq_diagonal_add_offDiagonal"
+    ],
+    "status": "SOURCE_PROOF_CANDIDATE"
+  },
+  "review": "documentation/mathematics/_support/reviews/liouville-signed-buchstab-typeii.md",
+  "exact_scope": [
+    "Original lambda and unchanged pickupResponse",
+    "Disjoint rough, first-prime exactly once, first-prime repeated partition",
+    "Exact squared-prime sign, retaining all higher powers",
+    "Original-integer diagonal and ordered signed off-diagonal",
+    "Paper-level shifted-prime Type II diagonal with p!=q overlap"
+  ],
+  "open_arithmetic": "Every-positive-rate direct signed T_II estimate with active growing-band nonvacuity, plus complete rough and intra-prime costs",
+  "not_claimed": [
+    "Lean checked prime-overlap reindexing",
+    "Complete integrated source-to-Gram bridge in Lean",
+    "Type II cancellation theorem",
+    "Full RH proof"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "jobs": "NOT_DISPATCHED"
+  },
+  "constraints": {
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED",
+    "force_push": false
+  }
+}
