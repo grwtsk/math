@@ -16,9 +16,9 @@ The new source `GRWTSK/ComputerScience/AlgorithmsInComputerScience/CivilSystemsC
 
 ## Theorems and proof routes
 
-- `WorkEvent.partition`: for **each** source event, selected-sector admitted units plus excluded residual equal its original quantity. It is a direct case split on scope and source qualification.
-- `admitted_residual_partition`: induction on the event list. All observations retain their quantity, even when excluded, duplicated, sourced outside scope or denominated in another unit. This is not an attestation of upstream source completeness.
-- `WorkEvent.other_sector_is_residual`: a nonmatching sector contributes zero admitted units. No pooling without a separately justified map and a common metric definition.
+- `WorkEvent.partition`: for **each** source event, selected-sector admitted units plus excluded residual equal its original quantity **within the selected physical unit**; records in other units are not numerically pooled. It is a direct case split on scope and source qualification.
+- `admitted_residual_partition`: induction on the event list. All observations denominated in the selected unit retain their quantity; foreign-unit observations are retained as distinct source rows rather than numerically pooled. This is not an attestation of upstream source completeness.
+- `WorkEvent.other_sector_is_residual` and `WorkEvent.other_unit_is_separate`: other sectors remain residual within a common unit, while different units cannot be summed into either total. No pooling without a separately justified map and a common metric definition.
 - `unreviewed_feedback_not_feedback` and `unreviewed_feedback_not_counted`: feedback is *unclassified* until independent causal review, not inferred from recurrence.
 - `SectorTrajectory.bounded` and `SectorTrajectory.unbounded`: exact transport to published `Accumulation.Trajectory` and its already-stated boundedness/unboundedness hypotheses; no result about actual service quality follows.
 - `reduced_diversion_protects_professional_time`: reuses the existing fixed-budget arithmetic; direct service time, safety and care quality are separate outcomes.

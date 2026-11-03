@@ -67,23 +67,44 @@ def WorkEvent.admittedUnits (e : WorkEvent) (sector : Sector)
 
 def WorkEvent.residualUnits (e : WorkEvent) (sector : Sector)
     (unit : WorkUnit) : Nat :=
-  if e.Qualified sector unit then 0 else e.quantity
+  if e.unit = unit then
+    if e.Qualified sector unit then 0 else e.quantity
+  else 0
 
+/-- The selected physical unit is conserved. Other units are never pooled. -/
 theorem WorkEvent.partition (e : WorkEvent) (sector : Sector)
     (unit : WorkUnit) :
-    e.admittedUnits sector unit + e.residualUnits sector unit = e.quantity := by
-  by_cases h : e.Qualified sector unit
-  · simp [WorkEvent.admittedUnits, WorkEvent.residualUnits, h]
-  · simp [WorkEvent.admittedUnits, WorkEvent.residualUnits, h]
+    e.admittedUnits sector unit + e.residualUnits sector unit =
+      (if e.unit = unit then e.quantity else 0) := by
+  by_cases hu : e.unit = unit
+  · by_cases hq : e.Qualified sector unit
+    · simp [WorkEvent.admittedUnits, WorkEvent.residualUnits, hu, hq]
+    · simp [WorkEvent.admittedUnits, WorkEvent.residualUnits, hu, hq]
+  · have hq : ¬ e.Qualified sector unit := by
+      intro hh
+      exact hu hh.2.1
+    simp [WorkEvent.admittedUnits, WorkEvent.residualUnits, hu, hq]
 
+/-- A nonmatching sector contributes residual only within the SAME unit. -/
 theorem WorkEvent.other_sector_is_residual (e : WorkEvent)
-    (sector : Sector) (unit : WorkUnit) (h : e.sector ≠ sector) :
+    (sector : Sector) (unit : WorkUnit)
+    (hu : e.unit = unit) (h : e.sector ≠ sector) :
     e.admittedUnits sector unit = 0 ∧
       e.residualUnits sector unit = e.quantity := by
   have hn : ¬ e.Qualified sector unit := by
     intro hq
     exact h hq.1
-  simp [WorkEvent.admittedUnits, WorkEvent.residualUnits, hn]
+  simp [WorkEvent.admittedUnits, WorkEvent.residualUnits, hu, hn]
+
+/-- A foreign work unit is recorded but not summed into the selected unit. -/
+theorem WorkEvent.other_unit_is_separate (e : WorkEvent)
+    (sector : Sector) (unit : WorkUnit) (h : e.unit ≠ unit) :
+    e.admittedUnits sector unit = 0 ∧
+      e.residualUnits sector unit = 0 := by
+  have hn : ¬ e.Qualified sector unit := by
+    intro hq
+    exact h hq.2.1
+  simp [WorkEvent.admittedUnits, WorkEvent.residualUnits, h, hn]
 
 theorem WorkEvent.rejected_source_is_residual (e : WorkEvent)
     (sector : Sector) (unit : WorkUnit)
@@ -94,10 +115,10 @@ theorem WorkEvent.rejected_source_is_residual (e : WorkEvent)
     simp [h] at hq
   simp [WorkEvent.admittedUnits, hn]
 
-/-- The unit is retained even when an event is excluded from a selected view. -/
-def rawUnits : List WorkEvent → Nat
+/-- Only quantities already denominated in this physical work unit. -/
+def rawUnits (unit : WorkUnit) : List WorkEvent → Nat
   | [] => 0
-  | e :: es => e.quantity + rawUnits es
+  | e :: es => (if e.unit = unit then e.quantity else 0) + rawUnits unit es
 
 def admittedTotal (sector : Sector) (unit : WorkUnit) : List WorkEvent → Nat
   | [] => 0
@@ -110,7 +131,7 @@ def residualTotal (sector : Sector) (unit : WorkUnit) : List WorkEvent → Nat
 theorem admitted_residual_partition (sector : Sector) (unit : WorkUnit)
     (events : List WorkEvent) :
     admittedTotal sector unit events + residualTotal sector unit events =
-      rawUnits events := by
+      rawUnits unit events := by
   induction events with
   | nil => rfl
   | cons e es ih =>
