@@ -157,7 +157,12 @@ theorem finite_ordered_gcd_sum (N : ℕ) (F : ℕ → ℕ → ℝ) :
     · intro x hx
       exact pairToGcdTriple_gcdTripleToPair N x hx
     · intro x hx
-      rfl
+      rcases x with ⟨m, n⟩
+      have hm : Nat.gcd m n * (m / Nat.gcd m n) = m :=
+        Nat.mul_div_cancel_left' (Nat.gcd_dvd_left m n)
+      have hn : Nat.gcd m n * (n / Nat.gcd m n) = n :=
+        Nat.mul_div_cancel_left' (Nat.gcd_dvd_right m n)
+      simp only [pairToGcdTriple, hm, hn]
   have hright :
       (∑ x ∈ primitiveTriples N,
         F (x.1 * x.2.1) (x.1 * x.2.2)) =
