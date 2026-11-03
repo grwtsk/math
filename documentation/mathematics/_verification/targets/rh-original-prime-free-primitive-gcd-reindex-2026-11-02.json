@@ -1,0 +1,95 @@
+{
+  "schema": "math-source-proof-candidate-v1",
+  "date": "2026-11-02",
+  "repo": "grwtsk/math",
+  "attribution": "Mathematical direction and original source grwtsk contributors; finite bijection and source Lean candidate assistance OpenAI",
+  "pinned": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "scope": {
+    "original_pair": "GRWTSK.NumberTheory.Moebius.LowGcdPrimeDilationNegative.otherLowGcdCross",
+    "original_mask": "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.IsOtherLowGcdPair",
+    "primitive_source": "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.primitivePrimeFreeTripleCross",
+    "closed_named_target": "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.ExactPrimeFreeTripleReindexTarget",
+    "arithmetic_remaining": "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge.PrimitivePrimeFreeEveryRateOn",
+    "preserved": [
+      "Original positive endpointIndex at T and integer m,n, no modulus reindex",
+      "Original full signed moebiusReal coefficients, including squareful-zero values",
+      "Original IsOtherLowGcdPair Q T (ga) (gb), fixedGcdCutoff T, rate-dependent Q unchanged",
+      "Original integral pickupResponseGram at the true shifted time T-log(g)",
+      "All ordered pair orientations and original equal-index diagonal exclusions"
+    ]
+  },
+  "preexisting_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeFreePrimitiveBridge.lean",
+      "sha": "74a6def7792b1688c7cbf4292ff32cf1280ed21f"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdPrimeDilationNegative.lean",
+      "sha": "e7abaa44008b76aaeb2a6a7ee69e0b5602787014"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalGcdTimeShift.lean",
+      "sha": "db0052901eca3050ed0ce812d3e0e7675c8fab05"
+    }
+  ],
+  "new_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimitiveGcdFiniteBijection.lean",
+      "sha": "8688c2742bfdb25b1ff9b7deeb831441e9e8a3f2"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimitiveGcdSourceReindex.lean",
+      "sha": "99e889ece19a80289f92715131f87e3bb29b79ee"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimitiveGcdReindexAcceptance.lean",
+      "sha": "e6aff69440103d8d445bee04edcef525807aea13"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/rh-original-prime-free-primitive-gcd-reindex-2026-11-02.md",
+    "sha": "f7ba0140022d1187f05587ff987fe45e1c48a3e2"
+  },
+  "expected_declarations": [
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdFiniteBijection.gcdTripleToPair_pairToGcdTriple",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdFiniteBijection.pairToGcdTriple_gcdTripleToPair",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdFiniteBijection.pairToGcdTriple_mem_primitivePositiveTriples",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdFiniteBijection.gcdTripleToPair_mem_orderedPositivePairs",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdFiniteBijection.pairToGcdTriple_right_inverse",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdFiniteBijection.orderedPairs_sum_eq_primitiveTriples",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdSourceReindex.originalOtherLowGcdCross_eq_rawPrimitive",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdSourceReindex.otherLowGcdPair_eq_primitiveGuarded",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdSourceReindex.rawPrimitive_eq_shiftedPrimitive",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdSourceReindex.exactPrimeFreeTripleReindexTarget_proof",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdSourceReindex.riemannHypothesis_of_primitivePrimeFree_without_reindex_premise"
+  ],
+  "independent_reference_check": {
+    "method": "Exact Fraction arithmetic and true integer Möbius values, generic nonsymmetric ordered pair mask and rational kernel",
+    "cutoffs": "All natural N from 1 through 64 inclusive",
+    "outcome": "PASS: direct double sum equals guarded primitive triple sum for each finite N",
+    "scope_limit": "Finite arithmetic reference; not a Lean parser/compiler, real causal Gram, RH, or kernel replay"
+  },
+  "verification": {
+    "publication": "BLOBS_STAGED_NOT_YET_MAIN",
+    "parser": "NOT_RUN",
+    "pinned_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "full_import_closure": "NOT_RUN",
+    "source_finite_arithmetic": "PAPER_PROVED_LEAN_CANDIDATE",
+    "primitive_all_positive_rate": "OPEN",
+    "RH": "NOT_CLAIMED"
+  },
+  "negative_controls": [
+    "Do not claim source proof candidate to be kernel accepted",
+    "Do not alter original squareful zero, signs, original pair mask or T-log g causal shift",
+    "Do not add g-a/g-b coprimality to pure integer bijection: only remove literal zero Möbius terms afterward",
+    "Do not infer independent shifted primitive signed bilinear bound",
+    "Do not claim a finite test or native source readback proves RH",
+    "No root import, dependency lock, build jobs, scheduler, external runtime or other repository changes"
+  ]
+}
