@@ -50,7 +50,7 @@ These proofs establish precise limits: exact object round trips require a **sepa
 
 ## Universal proof disposition
 
-Every proof claim should carry a readable *analytical comparison disposition* in authored mathematical prose or an attached reviewed record. Do not silently add unapproved fields to `grwtsk.result-article/1` or retroactively relabel a large corpus.
+Every proof claim should carry a readable *analytical comparison disposition* in source comments, a linked issue/PR, authored prose, or an attached reviewed record. No separately generated article is required. Do not silently add unapproved fields to `grwtsk.result-article/1` or retroactively relabel a large corpus.
 
 1. **Statement and actual objects.** Identify the exact conclusion, quantified hypotheses, parameter dependencies, definitions, source identities, and whether the theorem is finite, conditional, asymptotic, analytic, algorithmic or source-exact. Distinguish an implication from a proof of its premises.
 2. **Primary analytic argument.** Explain the mechanism of the proof in mathematical terms. Show the operative identity, estimate, reduction, obstruction or construction, including its assumptions and genuine reasoning—not just a declaration name, compiler transcript or formal proof term.
@@ -146,7 +146,7 @@ A model, calculator, book, drawing instrument or search engine can make a contri
 
 ## Review record, decision rules, and failure states
 
-For every promoted claim, attach an authored review in the established result-article sections, or an explicitly linked source-bound review. Do **not** silently alter the result-article schema or the lossless capsule codec. The review must permit a mathematically trained reader to reconstruct these minimal fields:
+For every promoted claim, retain the required comparison in source comments, an explicitly linked issue/PR review, or (when an article is independently requested) the established result-article sections. Do **not** silently alter the result-article schema or the lossless capsule codec. The review must permit a mathematically trained reader to reconstruct these minimal fields:
 
 | Field | Minimum review content |
 | --- | --- |
@@ -185,7 +185,7 @@ The same record contains the wrong-metric fixture and a source-labelled divergen
 
 Apply this disposition to **all proof families** as a publication and review obligation. For existing results, introduce reviewed comparison prose when a source is actually inspected, preserving prior theorem statements, historical acceptance and evidence identities. Mark the review population as reviewed, unreviewed or blocked; do not claim that all historical proofs have acquired independent analytic checks by adding this document.
 
-The maintained result-article form remains authoritative for article metadata; this disposition belongs in the article's authored **Proof**, **Composition**, **Verification and trust boundary**, and **Sources and missing bridges** sections. Preserve the same source identities and one canonical article. Do not create per-proof placeholder certifications or inflate completion counts.
+When an authored result article is deliberately maintained, its article form remains authoritative for metadata and review sections. For ordinary Lean source changes, use a concise source-bound issue/PR review or source comments instead. Do not create article scaffolds or per-proof placeholder certifications, and do not inflate completion counts.
 
 The operational extraction, mass inventory, runnable audit and review receipts belong to [grwtsk/noeaaeue](https://github.com/grwtsk/noeaaeue); mathematical arguments, source links and static specifications remain here. No skill installation, task queue or policy text authorizes execution or asserts that an audit has occurred.
 
