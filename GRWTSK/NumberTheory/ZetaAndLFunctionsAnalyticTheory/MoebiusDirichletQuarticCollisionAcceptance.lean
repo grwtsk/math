@@ -1,0 +1,68 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+PASSIVE SOURCE ACCEPTANCE / COMPILATION_NOT_RUN /
+EXPECTED_TYPES_NOT_RUN / FRESH_KERNEL_NOT_RUN /
+TRANSITIVE_AXIOM_AUDIT_NOT_RUN.
+-/
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusRatioCollisionFinite
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusRatioCollisionFiniteOn
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDirichletRatioCollisionModulus
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusReducedRationalSlopeUnique
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDirichletOriginalQuarticCollision
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusRationalSlopeCausalDilation
+import Mathlib
+
+set_option autoImplicit false
+
+/-!
+# Exact acceptance gate for the original fourth-order collision
+
+These commands are SOURCE TEXT, not executed kernel proof
+certificates. They must be run on an approved host at the
+recorded math commit with exact pinned Mathlib and all imports.
+
+Independent intended commands (NOT DISPATCHED):
+ lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusRatioCollisionFinite.lean
+ lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusRatioCollisionFiniteOn.lean
+ lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletRatioCollisionModulus.lean
+ lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusReducedRationalSlopeUnique.lean
+ lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletOriginalQuarticCollision.lean
+ lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusRationalSlopeCausalDilation.lean
+
+Every transitive axiom/unsafe/sorry facet requires source-
+bound inspection, not merely successful #check output.
+-/
+
+open GRWTSK.NumberTheory.Moebius.RatioCollisionFinite
+open GRWTSK.NumberTheory.Moebius.RatioCollisionFiniteOn
+open GRWTSK.NumberTheory.Moebius.DirichletRatioCollisionModulus
+open GRWTSK.NumberTheory.Moebius.ReducedRationalSlopeUnique
+open GRWTSK.NumberTheory.Moebius.DirichletOriginalQuarticCollision
+open GRWTSK.NumberTheory.Moebius.RationalSlopeCausalDilation
+
+#check fiberMass_sq_sum_eq_collision
+#check collision_sum_nonneg
+#check fiberMass_sq_sum_on_eq_collision
+#check selected_collision_nonneg
+#check positive_products_eq_of_mod_eq
+#check ratio_eq_implies_product_mod_eq
+#check integer_slope_eq_implies_ratio_eq
+#check ratio_collision_iff_integer_slope
+#check coprime_pairs_eq_of_cross_products
+#check reduced_ratio_unique_of_large_modulus
+#check originalRatioPacket_eq_realCast
+#check allCharactersRealCross_secondMoment_eq_quartic
+#check originalQuarticCollision_nonneg
+#check collision_key_eq_implies_exact_slope
+#check originalQuarticCollision_eq_exactSlope_of_large_modulus
+#check allCharactersRealCross_secondMoment_eq_exactSlope
+#check dilatedMobiusPair_of_coprime
+#check dilatedSignedPair_eq_shifted
+
+#print axioms fiberMass_sq_sum_eq_collision
+#print axioms fiberMass_sq_sum_on_eq_collision
+#print axioms ratio_collision_iff_integer_slope
+#print axioms coprime_pairs_eq_of_cross_products
+#print axioms allCharactersRealCross_secondMoment_eq_quartic
+#print axioms originalQuarticCollision_eq_exactSlope_of_large_modulus
+#print axioms allCharactersRealCross_secondMoment_eq_exactSlope
+#print axioms dilatedSignedPair_eq_shifted
