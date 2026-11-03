@@ -90,10 +90,10 @@ theorem guarded_original_pair_eq_shifted
           Q T g a b hg ha hb hga hgb)
     · have hz := original_source_zero_of_bad_right T g a b hgb
       rw [otherLowGcdPair_eq_originalMask]
-      simp [hga, hgb, hz]
+      simp [hga, hgb, hz, sourceKernel]
   · have hz := original_source_zero_of_bad_left T g a b hga
     rw [otherLowGcdPair_eq_originalMask]
-    simp [hga, hz]
+    simp [hga, hz, sourceKernel]
 
 /-- Every ORIGINAL ordered double source pair corresponds to
 exactly one primitive coprime gcd triple, BEFORE deleting
