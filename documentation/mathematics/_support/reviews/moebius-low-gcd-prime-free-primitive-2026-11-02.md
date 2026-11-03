@@ -142,7 +142,7 @@ At N=64 the full prime-free pair selector contains 3368 ordered pairs but only 2
 Two new additive source files address the previously named \`ExactPrimeFreeTripleReindexTarget\` **without taking that proposition as a hypothesis**:
 
 1. [MoebiusCanonicalFiniteGcdBijection.lean](https://github.com/grwtsk/math/blob/16bea78a6f3deccc5b7aaa4bfe9d410692a7cbda/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCanonicalFiniteGcdBijection.lean), final source commit \`16bea78a6f3deccc5b7aaa4bfe9d410692a7cbda\`, Git blob \`326730b5b5c3f93d08843c8c564bece49e171f9a\`. It has three public theorem candidates and two private membership lemmas. The generic source imports pinned Mathlib and **no Möbius/RH source**.
-2. [MoebiusPrimeFreeExactTripleReindex.lean](https://github.com/grwtsk/math/blob/7997132e77c5110b5cf64ea12aa109d5ffe13306/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeFreeExactTripleReindex.lean), source commit \`7997132e77c5110b5cf64ea12aa109d5ffe13306\`, Git blob \`f2b485ee5c32140d016fc21150d0c5fb9b924efb\`. It contains five public theorem candidates and three private zero-handling lemmas.
+2. [MoebiusPrimeFreeExactTripleReindex.lean](https://github.com/grwtsk/math/blob/c36611df6cc59dddb7711cb127fbfc69daab81ef/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeFreeExactTripleReindex.lean), source commit \`c36611df6cc59dddb7711cb127fbfc69daab81ef\`, Git blob \`0db3152b7108d1a9e8f7819a8114458bc9070cab\`. It contains five public theorem candidates and three private zero-handling lemmas.
 
 ### Primary mathematical proof mechanism
 
@@ -184,3 +184,5 @@ The prior original-gram numerical double/triple tests at \(N=8,16,32,64\) remain
 The source-specific candidate \`riemannHypothesis_of_primitive_signed_core_goodScales\` consumes ONLY two still independent hypotheses: a fixed \`AffineFrequent G\` good-scale coverage and the original shifted signed \`PrimitivePrimeFreeEveryRateOn G\` upper. It passes the newly authored \`exactPrimeFreeTripleReindex_proof\` to the existing conditional original RH return. **Neither of those two premises is proved**; RH and the all-positive-rate primitive bilinear upper remain OPEN.
 
 Prior-art claim: no novelty claim is made for the elementary gcd bijection, the standard Möbius squarefree-zero fact, or their finite analytic rearrangement. The contribution is an original-source-preserving Lean formalization candidate connecting existing repository interfaces. Its downstream consumer is specific, and the native evidence boundary is not blurred.
+
+The source-specific proof received a further static repair at commit `c36611df6cc59dddb7711cb127fbfc69daab81ef` (blob `0db3152b7108d1a9e8f7819a8114458bc9070cab`): the two nonsquarefree-zero branches now explicitly unfold `sourceKernel` before simplifying the vanishing original Möbius factor. This improves the authored tactic script but is NOT a Lean compiler or kernel receipt.
