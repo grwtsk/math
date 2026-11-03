@@ -503,7 +503,7 @@
     "The numeric difference between a potentially large negative prime-dilation packet and a large positive complement is a hostile counterexample to claiming the two signed all-rate upper criteria equivalent merely by dropping a negative packet."
   ],
   "verification": {
-    "source_publication": "TWENTY_OLD_PLUS_TWO_NEW_AWAIT_READBACK",
+    "source_publication": "PASS_TWENTYTWO_EXACT_GITHUB_BLOB_READBACKS_AT_11a8b680cbf07bc4e5435fd927c5531ef41726b3",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -569,15 +569,21 @@
     "new_four_way_pair_count_checks": "N=8_16_32_48_64_COMBINATORIAL_MASKS_PASS_NUMERIC_NONCERTIFYING",
     "new_low_gcd_prime_dilation": "SOURCE_PROOF_CANDIDATE_ZERO_ONE_SIDED_UPPER_NO_KERNEL_CHECK",
     "new_prime_free_coprime_primitive": "SOURCE_PROOF_CANDIDATE_TERM_IDENTITY_NO_KERNEL_CHECK",
-    "exact_prime_free_triple_reindex": "OPEN_NOT_PROVED",
+    "exact_prime_free_triple_reindex": "OPEN_NOT_PROVED_IN_LEAN",
     "new_prime_free_finite_diagnostics": "FIVE_SMALL_ACTUAL_MOBIUS_WINDOWS_NONCERTIFYING",
     "original_low_gcd_prime_free_all_rate_upper": "OPEN",
     "new_prime_free_primitive_revision": "797c92859b1b14d4e88c47d35d975ffa6fccfc7b",
     "new_prime_free_primitive_source_blob": "74a6def7792b1688c7cbf4292ff32cf1280ed21f",
     "primitive_full_reindex": "OPEN_UNPROVED_LEAN",
-    "primitive_signed_bilinear_all_rate_upper": "OPEN_INDEPENDENT_ARITHMETIC",
+    "primitive_signed_bilinear_all_rate_upper": "OPEN",
     "primitive_finite_original_mu_numeric_tests": "N_8_16_32_64_55_DIGITS_NONCERTIFYING",
-    "prime_free_review_blob": "fa903f8c85e749ab4b4df1f3749ed22ac4c9dca7"
+    "prime_free_review_blob": "fa903f8c85e749ab4b4df1f3749ed22ac4c9dca7",
+    "prime_free_integrated_source_revision": "11a8b680cbf07bc4e5435fd927c5531ef41726b3",
+    "new_prime_dilation_final_source_readback": "PASS_GIT_BLOB_e7abaa44008b76aaeb2a6a7ee69e0b5602787014",
+    "new_squareful_safe_primitive_final_source_readback": "PASS_GIT_BLOB_74a6def7792b1688c7cbf4292ff32cf1280ed21f",
+    "new_five_related_math_source_blobs": "PASS_EXACT_HASH_READBACK",
+    "new_source_static_gaps": "NO_AUTHORED_SORRY_ADMIT_AXIOM_NATIVE_DECIDE_IN_TWO_NEW_SOURCE_BLOBS_NONCERTIFYING",
+    "numeric_gcd_double_to_primitive_triple": "N_8_16_32_64_TRUE_MOBIUS_55_DIGITS_NONCERTIFYING; DIFFERENCES_BELOW_1E-53"
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
