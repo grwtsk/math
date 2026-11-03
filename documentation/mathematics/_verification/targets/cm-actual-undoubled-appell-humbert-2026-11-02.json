@@ -1,6 +1,6 @@
 {
   "contract": "grwtsk.math.actual-undoubled-appell-humbert/1",
-  "publication": "PENDING_PARTIAL",
+  "publication": "PUBLISHED_PARTIAL",
   "date": "2026-11-02",
   "base_head_observed": "162891132952e479189bfbc59529185fccfc10b1",
   "previous_commit": "7d20a1b25ce19659cfc74f9a1170b0a2aced9fbc",
@@ -40,7 +40,12 @@
     "path": "CMActualUndoubledMetricCurvature.lean",
     "sha": "c5ac699dd29ad61b3fd98081eaef0be5bc0ca875",
     "publication": "NOT_PUBLISHED_DUE_TO_SAFETY_CHECK",
-    "acceptance": "NOT_RUN"
+    "acceptance": "NOT_RUN",
+    "expected_declarations": [
+      "CMActualUndoubledAppellHumbert.undoubledFactor_metric_covariant",
+      "CMActualUndoubledAppellHumbert.undoubledFactor_sq_eq_doubled",
+      "CMActualUndoubledAppellHumbert.actualResidueHolonomy_eq_coverCurvatureExp"
+    ]
   },
   "pin": {
     "lean": "leanprover/lean4:v4.34.1",
@@ -66,9 +71,6 @@
     "CMActualUndoubledAppellHumbert.rawHalfFactor_twist",
     "CMActualUndoubledAppellHumbert.undoubledFactor_add",
     "CMActualUndoubledAppellHumbert.undoubledFrameShift_add",
-    "CMActualUndoubledAppellHumbert.undoubledFactor_metric_covariant",
-    "CMActualUndoubledAppellHumbert.undoubledFactor_sq_eq_doubled",
-    "CMActualUndoubledAppellHumbert.actualResidueHolonomy_eq_coverCurvatureExp",
     "CMActualUndoubledOrbitTotalSpace.coverOrbitSetoid",
     "CMActualUndoubledOrbitTotalSpace.actualOrbitBaseProjection_surjective"
   ],
@@ -89,12 +91,13 @@
   "verification": {
     "static_source_presence": "YES",
     "explicit_proof_holes_found": false,
-    "source_publication": "PENDING_PARTIAL",
+    "source_publication": "PUBLISHED_PARTIAL",
     "lean_parsing": "NOT_RUN",
     "lean_compilation": "NOT_RUN",
     "expected_types": "NOT_RUN",
     "fresh_kernel_replay": "NOT_RUN",
-    "transitive_axioms": "NOT_RUN"
+    "transitive_axioms": "NOT_RUN",
+    "metric_source_publication": "NOT_PUBLISHED"
   },
   "unresolved": [
     "upstream OAI root import compatibility, no local Lean available",
@@ -112,5 +115,6 @@
     "B even can be positive but no odd triangle holonomy",
     "orbit quotient set does not by itself yield holomorphic line bundle",
     "finite tests not Lean or experimental physics evidence"
-  ]
+  ],
+  "publication_source_commit": "99c9abd924a2e05c4115fab2d0669315cb4561b2"
 }
