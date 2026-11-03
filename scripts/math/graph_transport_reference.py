@@ -135,7 +135,15 @@ result={
  'execution':'Independent offline Python Fraction regression, NOT Lean compilation, kernel, or axioms',
  'seed':20261102
 }
-path=Path('/mnt/data/graph_transport_reference.json')
-path.write_text(json.dumps(result,sort_keys=True,indent=2)+'\n')
-print(json.dumps(result,indent=2))
-for p in [Path(__file__),path]:print(p.name,hashlib.sha256(p.read_bytes()).hexdigest(),p.stat().st_size)
+# No output file is written unless an explicit destination is supplied.
+# This keeps source working trees and Noe-managed runtime state separate.
+import sys
+path = Path(sys.argv[1]) if len(sys.argv) > 1 else None
+if len(sys.argv) > 2:
+    raise SystemExit('usage: python graph_transport_reference.py [output.json]')
+if path is not None:
+    path.write_text(json.dumps(result, sort_keys=True, indent=2) + '\n')
+print(json.dumps(result, indent=2))
+print(Path(__file__).name, hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
+if path is not None:
+    print(path.name, hashlib.sha256(path.read_bytes()).hexdigest(), path.stat().st_size)

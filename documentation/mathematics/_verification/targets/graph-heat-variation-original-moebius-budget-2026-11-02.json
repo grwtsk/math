@@ -94,8 +94,11 @@
   "regression": {
     "script": {
       "path": "scripts/math/graph_transport_reference.py",
-      "blob": "474d674f0813a8273b557c5cf2a6d43babb59c47",
-      "local_sha256": "7cc89a2eaf20b283515e50d7e8c6ece44ce3bc8903c621a3663f68c723a004cf"
+      "blob": "72ba175984b5bf8fbedb84abfcddf4c1c3db70a6",
+      "local_sha256": "78c8f0029eaae34b6ed603b924a53ef649d05d6cad0cd3b2250032b6b2a39325",
+      "previous_blob": "474d674f0813a8273b557c5cf2a6d43babb59c47",
+      "previous_sha256": "7cc89a2eaf20b283515e50d7e8c6ece44ce3bc8903c621a3663f68c723a004cf",
+      "execution_note": "Portable stdlib-only script now writes JSON only when an output path argument is explicitly supplied; default is stdout. The exact same finite PASS evidence JSON is reproduced."
     },
     "result": {
       "path": "documentation/mathematics/_verification/targets/graph-heat-variation-finite-reference-2026-11-02.json",
@@ -151,6 +154,13 @@
     "initial_manifest_blob": "7ea51624c443f6de8388e169756c53deefd68cbd",
     "verified_unchanged_source_definitions": true,
     "seven_exact_file_blobs_pass": true,
-    "result_class": "SOURCE_ACCEPTED_BY_GIT_NOT_NATIVE_LEAN_ACCEPTANCE"
+    "result_class": "SOURCE_ACCEPTED_BY_GIT_NOT_NATIVE_LEAN_ACCEPTANCE",
+    "reproducibility_amendment": {
+      "updated_script_blob": "72ba175984b5bf8fbedb84abfcddf4c1c3db70a6",
+      "original_source_modules_unchanged": true,
+      "source_commit_recorded_as_original": "9ce20df226b347aaf9df268a59e4fd5a1ad390c9",
+      "script_revision_commit": "see_git_history_of_this_manifest",
+      "finite_result_blob_unchanged": "8aed7631edcf54122ffcb8a8e36f19485384865a"
+    }
   }
 }
