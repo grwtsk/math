@@ -1,0 +1,38 @@
+{
+  "schema": "grwtsk.math.verification-target/signed-putnam-sparse-mask-transfer/1",
+  "title": "Original signed sparse Putnam-mask transfer and tag-swapped HL/LH all-rate conditional reduction",
+  "local_attribution": "grwtsk contributors",
+  "formalization_assistance": "OpenAI ChatGPT",
+  "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSignedPutnamSparseMaskTransfer.lean",
+  "source_blob": "6d60f5812a4b2a076bf59ac8155b53a11b4f09fd",
+  "imported_sign_source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSignedAllPositiveRateConditional.lean",
+  "imported_sign_blob": "58d3797fe005cd79b3fb5f6c78c06cdd39d2d011",
+  "imported_sparse_source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapAllRate.lean",
+  "lean_version": "4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "declarations": [
+    "GRWTSK.NumberTheory.Moebius.SignedPutnamSparseMaskTransfer.maskedTaggedBlock_transpose",
+    "GRWTSK.NumberTheory.Moebius.SignedPutnamSparseMaskTransfer.originalSignedLH_eq_HL_swap_tags",
+    "GRWTSK.NumberTheory.Moebius.SignedPutnamSparseMaskTransfer.masked_eq_empty_sub_selectedGap",
+    "GRWTSK.NumberTheory.Moebius.SignedPutnamSparseMaskTransfer.selectedGap_abs_le_eight_log_two_card",
+    "GRWTSK.NumberTheory.Moebius.SignedPutnamSparseMaskTransfer.masked_abs_le_empty_add_sparse_cost",
+    "GRWTSK.NumberTheory.Moebius.SignedPutnamSparseMaskTransfer.originalSignedHL_putnam_le_unmasked",
+    "GRWTSK.NumberTheory.Moebius.SignedPutnamSparseMaskTransfer.originalSignedLH_putnam_le_unmasked",
+    "GRWTSK.NumberTheory.Moebius.SignedPutnamSparseMaskTransfer.distanceVariation_implies_unmaskedHL",
+    "GRWTSK.NumberTheory.Moebius.SignedPutnamSparseMaskTransfer.both_ordered_putnam_all_positive_rate_of_unmasked"
+  ],
+  "open_arithmetic": "GRWTSK.NumberTheory.Moebius.SignedPutnamSparseMaskTransfer.NearcriticalUnmaskedSignedHLTarget",
+  "other_open_arithmetic": "GRWTSK.NumberTheory.Moebius.SignedAllPositiveRateConditional.NearcriticalSignedLowLowTarget",
+  "verification_command_candidate": "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSignedPutnamSparseMaskTransfer.lean",
+  "holds": {
+    "source_publication": "SOURCE_PROOF_CANDIDATE",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "unmasked_signed_HL": "OPEN",
+    "signed_low_low": "OPEN",
+    "riemann_hypothesis": "OPEN"
+  },
+  "no_runner_or_dispatch": true
+}
