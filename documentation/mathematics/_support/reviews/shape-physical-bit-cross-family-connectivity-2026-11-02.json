@@ -149,8 +149,8 @@
     {
       "id": "prime_free_exact_triple_reindex",
       "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeFreeExactTripleReindex.lean",
-      "blob": "f2b485ee5c32140d016fc21150d0c5fb9b924efb",
-      "commit": "7997132e77c5110b5cf64ea12aa109d5ffe13306",
+      "blob": "0db3152b7108d1a9e8f7819a8114458bc9070cab",
+      "commit": "c36611df6cc59dddb7711cb127fbfc69daab81ef",
       "namespace": "GRWTSK.NumberTheory.Moebius.PrimeFreeExactTripleReindex",
       "decl_count": 5,
       "status": "SOURCE_PROOF_CANDIDATE_TARGET_AUTHORED_COMPILATION_NOT_RUN"
@@ -1632,7 +1632,7 @@
     "source_revision": "16bea78a6f3deccc5b7aaa4bfe9d410692a7cbda",
     "review": {
       "path": "documentation/mathematics/_support/reviews/moebius-low-gcd-prime-free-primitive-2026-11-02.md",
-      "blob": "904c1cbd5e00a708f718de663efdf326a84fafa2"
+      "blob": "e4a8ca13280deb1286334caf5a47d5f8f84d85e6"
     },
     "generic_finite_bijection": {
       "id": "canonical_finite_gcd_bijection",
@@ -1646,8 +1646,8 @@
     "original_signed_gcd_reindex": {
       "id": "prime_free_exact_triple_reindex",
       "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeFreeExactTripleReindex.lean",
-      "blob": "f2b485ee5c32140d016fc21150d0c5fb9b924efb",
-      "commit": "7997132e77c5110b5cf64ea12aa109d5ffe13306",
+      "blob": "0db3152b7108d1a9e8f7819a8114458bc9070cab",
+      "commit": "c36611df6cc59dddb7711cb127fbfc69daab81ef",
       "namespace": "GRWTSK.NumberTheory.Moebius.PrimeFreeExactTripleReindex",
       "decl_count": 5,
       "status": "SOURCE_PROOF_CANDIDATE_TARGET_AUTHORED_COMPILATION_NOT_RUN"
@@ -1655,7 +1655,7 @@
     "exact_target": "LowGcdPrimeFreePrimitiveBridge.ExactPrimeFreeTripleReindexTarget",
     "new_candidate_proof": "PrimeFreeExactTripleReindex.exactPrimeFreeTripleReindex_proof",
     "status": "PROOF_AUTHORED_SOURCE_CANDIDATE_NOT_NATIVE_ACCEPTED",
-    "proof_repair": "sum_bij term equality required Nat.mul_div_cancel_left' rather than rfl; final source repaired",
+    "proof_repair": "sum_bij term equality required Nat.mul_div_cancel_left' rather than rfl; final source repaired; source kernel explicitly unfolded in squareful-zero simp branches at c36611df6cc59dddb7711cb127fbfc69daab81ef",
     "finite_integer_evidence": "N=0,1,2,5,8,16,32,64 exact integer map image/inverse and squareful zero guards PASS, NONCERTIFYING",
     "remaining_open": "PrimitivePrimeFreeEveryRateOn G, AffineFrequent G on the same set, and pinned Lean kernel acceptance"
   }

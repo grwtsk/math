@@ -191,11 +191,11 @@
     },
     {
       "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeFreeExactTripleReindex.lean",
-      "blob": "f2b485ee5c32140d016fc21150d0c5fb9b924efb",
-      "source_commit": "7997132e77c5110b5cf64ea12aa109d5ffe13306",
-      "source_parent": "bedb65c0f01aed6623b2f3f6d481febf13eed146",
+      "blob": "0db3152b7108d1a9e8f7819a8114458bc9070cab",
+      "source_commit": "c36611df6cc59dddb7711cb127fbfc69daab81ef",
+      "source_parent": "2c3caf3b34a5777388df444cc8359f39fa0b8f9d",
       "lines": 170,
-      "status": "SOURCE_PROOF_CANDIDATE"
+      "status": "SOURCE_PROOF_CANDIDATE_NATIVE_NOT_RUN"
     }
   ],
   "pinned_dependencies": [
@@ -233,8 +233,8 @@
     "blob": "f4fa84b8d32c38db2e8890ccfebf4ee3798684ce",
     "updated_at_commit": "f2fd9280a33ab3233ecc9db96957c2a9d44da2aa"
   },
-  "source_commit": "16bea78a6f3deccc5b7aaa4bfe9d410692a7cbda",
-  "source_parent": "7997132e77c5110b5cf64ea12aa109d5ffe13306",
+  "source_commit": "c36611df6cc59dddb7711cb127fbfc69daab81ef",
+  "source_parent": "2c3caf3b34a5777388df444cc8359f39fa0b8f9d",
   "exact_source": "Original ShapeChangingBundle center/shell plus full integer-indexed PhysicalStream, two-tangent SignedBits, existing pickupCross with all ordered non-diagonal pairs and signedReadoutDefect; no new arithmetic coefficients, windows or unproved cancellation. Third source samples finite original-index slots using the already normalized Gibbs Sampler.probability row; a uniformly weighted finite reference average is compared through the existing measured physical two-bit indexed Hilbert distance with unavailable mass separately accounted.",
   "source_candidate_theorems": [
     "Folder.Research.ShapePhysicalBitTransport.lower_lift_center",
@@ -531,7 +531,7 @@
     "The proof only covers the original prime-free low-GCD source mask. It does not discharge other repository OriginalFullGcdReindexTarget/PlainPrimitiveGcdReindexTarget under different masks or extra hypotheses."
   ],
   "verification": {
-    "source_publication": "TWENTYTWO_PREVIOUS_PLUS_TWO_NEW_SOURCE_CANDIDATES_PENDING_FINAL_ATOMIC_RECEIPT",
+    "source_publication": "TWENTYTWO_PREVIOUS_PLUS_TWO_NEW_SOURCE_CANDIDATES_REPAIRED_PENDING_READBACK",
     "static_declaration_name_scan": "SOURCE_TEXT_CHECK_ONLY",
     "no_authored_sorry_admit_axiom_native_decide": "STATIC_SOURCE_SCAN_ONLY",
     "source_parser": "NOT_RUN",
@@ -613,7 +613,7 @@
     "new_source_static_gaps": "NO_AUTHORED_SORRY_ADMIT_AXIOM_NATIVE_DECIDE_IN_TWO_NEW_SOURCE_BLOBS_NONCERTIFYING",
     "numeric_gcd_double_to_primitive_triple": "N_8_16_32_64_TRUE_MOBIUS_55_DIGITS_NONCERTIFYING; DIFFERENCES_BELOW_1E-53",
     "new_canonical_finite_gcd_bijection": "SOURCE_PROOF_CANDIDATE_NOT_NATIVE_COMPILED",
-    "exact_original_primitive_triple_source_return": "SOURCE_PROOF_CANDIDATE_NOT_NATIVE_COMPILED"
+    "exact_original_primitive_triple_source_return": "PROOF_CANDIDATE_STATIC_REPAIR_KERNEL_NOT_RUN"
   },
   "source_commits": [
     "656ee2ed43f9f9cda7d0f52538fd4c289ae9b3da",
@@ -640,7 +640,8 @@
     "32905d76afb61bf9ea9ec1e3de5120560f99dca6",
     "797c92859b1b14d4e88c47d35d975ffa6fccfc7b",
     "16bea78a6f3deccc5b7aaa4bfe9d410692a7cbda",
-    "7997132e77c5110b5cf64ea12aa109d5ffe13306"
+    "7997132e77c5110b5cf64ea12aa109d5ffe13306",
+    "c36611df6cc59dddb7711cb127fbfc69daab81ef"
   ],
   "relevant_source_inventory": [
     {
@@ -712,7 +713,7 @@
   },
   "cross_family_typed_graph": {
     "path": "documentation/mathematics/_support/reviews/shape-physical-bit-cross-family-connectivity-2026-11-02.json",
-    "blob": "6d2286d09a7c8e99144c7aeff87e2367a5f4c868",
+    "blob": "d7bd2c1266c61fbbe8af6d21aa13d64960560dc1",
     "new_edges": 94,
     "unproved_transfers": 32,
     "related_source_files": 41,
@@ -799,7 +800,7 @@
   ],
   "prime_free_review": {
     "path": "documentation/mathematics/_support/reviews/moebius-low-gcd-prime-free-primitive-2026-11-02.md",
-    "blob": "904c1cbd5e00a708f718de663efdf326a84fafa2"
+    "blob": "e4a8ca13280deb1286334caf5a47d5f8f84d85e6"
   },
   "prime_dilation_primitive_arithmetic_frontier": {
     "original_source": "pickupCross T, original complete ordered signed ArithmeticFunction.moebius kernel",
@@ -836,7 +837,9 @@
     "axiom_audit": "NOT_RUN",
     "independent_primitive_signed_upper": "OPEN",
     "same_fixed_good_scale_coverage": "OPEN",
-    "numerical_disposition": "EXACT_INTEGER_BIJECTION_PASSES_N_0_1_2_5_8_16_32_64_NONCERTIFYING"
+    "numerical_disposition": "EXACT_INTEGER_BIJECTION_PASSES_N_0_1_2_5_8_16_32_64_NONCERTIFYING",
+    "source_blob": "0db3152b7108d1a9e8f7819a8114458bc9070cab",
+    "source_commit": "c36611df6cc59dddb7711cb127fbfc69daab81ef"
   },
   "exact_primitive_acceptance_commands_NOT_RUN": [
     "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCanonicalFiniteGcdBijection.lean",
