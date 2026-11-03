@@ -127,6 +127,37 @@ For the empty bank B, original true/true low/low contains the full
 rough/rough signed source. The high/high packet and the return to the
 complete original endpoint cannot be removed by the sparse transfer.
 
+
+## Exact older prime-cutoff interface is not yet identified with the new one
+
+The maintained older consumer
+MoebiusBalancedTwoSidedPNTDense.NearCriticalPrimeBankDenseTarget uses
+nearCriticalPrimeCutoff alpha X =
+  (1 + log X)^2 * (log (1 + log X))^alpha,
+with alpha additionally constrained to 0<=alpha<2.
+The new moving-bank source instead works at the ORIGINAL physical
+shell time T=log(2X) and assumes
+  p <= T^2 * (log T)^alpha.
+
+These are NOT definitionally or numerically identical. For X>0,
+1+log X > log(2X) because log(2)<1. In the eventual increasing
+regime, the older cutoff can therefore be the larger one, so its
+bank-support premise does not immediately imply the newer premise.
+An eventual cutoff-dominance theorem allowing alpha slack
+alpha<alpha'<2, or another explicit allowance, is needed for a
+literal return from the NEW signed masked bound to the ORIGINAL
+older nearCriticalPrimeBankDenseTarget. It is NOT supplied here.
+The current conditional theorem is exact for its OWN displayed
+support hypothesis, the actual Putnam mask, and original signed
+physical kernel, but it is NOT a proof of that older target.
+
+A further strength distinction: NearcriticalUnmaskedSignedHLTarget
+has coefficient one in front of exp(delta*T)*V_B and is uniform over
+all PrimeBands under its stated support condition. An arithmetic
+result with a nonuniform bank-dependent constant cannot silently
+be substituted into it. No theorem proving this new supplier,
+even with a constant, has been established.
+
 ## Hostile boundaries and comparison
 
 - A=empty: G_A=0 exactly; the new theorem merely recovers the original
