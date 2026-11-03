@@ -1,0 +1,80 @@
+{
+  "schema": "grwtsk.math.cm-period-chart-frames-chern-straight-edge/1",
+  "date": "2026-11-02",
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "repository": "grwtsk/math",
+  "source_head_at_start": "e79c8ca76ee44b69987872c603d8ab6f61c5005d",
+  "publication": "PREPARED_FOR_SOURCE_PUBLICATION",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "upstream": "openai/math@4eaee87548250b2682affda7d05d947c05554bae",
+  "source_files": [
+    {
+      "path": "GRWTSK/Geometry/CMActualPeriodChartLocalFrames.lean",
+      "source": "CMActualPeriodChartLocalFrames.lean",
+      "git_blob_sha": "32482bdc65e6c542b0e1e6a383ec1821c72f995c",
+      "lines": 328,
+      "bytes": 14526
+    },
+    {
+      "path": "GRWTSK/Geometry/CMActualChernStraightEdgeReturn.lean",
+      "source": "CMActualChernStraightEdgeReturn.lean",
+      "git_blob_sha": "8d73ce48d2fdcc0d9af1f8ec328c10c3fb5a3574",
+      "lines": 167,
+      "bytes": 7878
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/cm-actual-period-chart-local-frame-and-straight-chern-2026-11-02.md",
+      "source": "cm-actual-period-chart-local-frame-and-straight-chern-2026-11-02.md",
+      "git_blob_sha": "e365d0ec00b5e51042c9e5d5224d6ccd9bc5e609",
+      "lines": 68,
+      "bytes": 9181
+    }
+  ],
+  "read_existing_blobs": {
+    "CMActualUndoubledOrbitTotalSpace.lean": "58d908cfbeceaf60b0839086b86cb941657d037f",
+    "CMActualOrbitHermitianMetric.lean": "1231b2b0e3f08983cd4c1075ffb406a52a89ba11",
+    "CMActualChernJetCompatibility.lean": "65174f92bcd414a7b267fc08a08408967ffd6503",
+    "CMActualUndoubledFactorCocycle.lean": "6fe83c1cc050b161d0437213111a3a92ec7ca05c",
+    "OAI.CM.PeriodTorus.lean": "4846fdbc9c5ce1311a204220d03a4d4a4bc0b48e"
+  },
+  "expected_declarations": [
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodChartLocalFrames.chartFrame_injective",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodChartLocalFrames.chartFrame_surjective",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodChartLocalFrames.chartFrameEquiv",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodChartLocalFrames.chartFrame_change",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodChartLocalFrames.chartTransitionPeriod_add",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodChartLocalFrames.chartTransitionFactor_cocycle",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualPeriodChartLocalFrames.chartDisplacement_locally_constant_on_cover",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualChernStraightEdgeReturn.straightSegment_chernUnitary_constant",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualChernStraightEdgeReturn.straightChernJetIntegral_eq",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualChernStraightEdgeReturn.actualPeriodStraightTransport_eq_phase",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualChernStraightEdgeReturn.straightTransport_eq_actualResidueLink",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualChernStraightEdgeReturn.straightTransport_triangle_eq_actualHolonomy"
+  ],
+  "independent_reference": {
+    "name": "cm_actual_period_chart_straight_transport_reference.py",
+    "result": "cm_actual_period_chart_straight_transport_reference_results.json",
+    "checks_passed": 85023,
+    "test_case": "Q(i), O_E=Z[i] exact lattice and 85-digit numerical factors",
+    "Lean_certificate": false,
+    "experimental_CERN_rows": 0
+  },
+  "verification": {
+    "static_no_sorry_admit_axiom": "PASS",
+    "static_delimiter_scan": "PASS",
+    "Lean_parsing": "NOT_RUN",
+    "Lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN"
+  },
+  "open": [
+    "actual quotient-topology and holomorphic local trivialization bundle atlas",
+    "actual Chern connection on the descended quotient bundle",
+    "original CM variety comparison",
+    "canonical residue-site assignment and physics detector map",
+    "original all-rate signed Mobius energy bound",
+    "periodic Schwartz-to-Lp smoothing"
+  ]
+}
