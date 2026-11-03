@@ -176,7 +176,7 @@ theorem dirichlet_prime_response_step {q : ℕ}
               (pickupResponse n (u-Real.log (p : ℝ)) : ℂ)
           else 0) := by
   rw [dirichlet_mobius_prime_mul χ p n hp,
-    pickupResponse_mul_timeShift p n (by omega) hn u,
+    pickupResponse_mul_timeShift p n (by have := hp.two_le; omega) hn u,
     Complex.ofReal_mul]
   by_cases hpn : p ∣ n <;> simp [hpn] <;> ring
 
