@@ -155,7 +155,7 @@ theorem connections_blocks_ordinary {authorized wireBody s t r o}
     ¬ Step authorized wireBody s (.issue r o) t := by
   intro step
   have ordered := (issue_guards step).2.2.2.2.2.2
-  simpa [phase, reply, Allowed] using ordered
+  simp [phase, reply, Allowed] at ordered
 
 theorem issue_preserves_phase {authorized wireBody s t r o}
     (step : Step authorized wireBody s (.issue r o) t) : t.phase = s.phase := by
