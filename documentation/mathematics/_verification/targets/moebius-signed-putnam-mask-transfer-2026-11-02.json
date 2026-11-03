@@ -4,7 +4,7 @@
   "local_attribution": "grwtsk contributors",
   "formalization_assistance": "OpenAI ChatGPT",
   "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSignedPutnamSparseMaskTransfer.lean",
-  "source_blob": "6d60f5812a4b2a076bf59ac8155b53a11b4f09fd",
+  "source_blob": "40a5de718c3a9d2560914005276a544f6922954b",
   "imported_sign_source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSignedAllPositiveRateConditional.lean",
   "imported_sign_blob": "58d3797fe005cd79b3fb5f6c78c06cdd39d2d011",
   "imported_sparse_source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapAllRate.lean",
@@ -25,7 +25,7 @@
   "other_open_arithmetic": "GRWTSK.NumberTheory.Moebius.SignedAllPositiveRateConditional.NearcriticalSignedLowLowTarget",
   "verification_command_candidate": "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSignedPutnamSparseMaskTransfer.lean",
   "holds": {
-    "source_publication": "SOURCE_PROOF_CANDIDATE",
+    "source_publication": "SOURCE_PUBLISHED_PROOF_CANDIDATE",
     "compilation": "NOT_RUN",
     "expected_types": "NOT_RUN",
     "fresh_kernel": "NOT_RUN",
