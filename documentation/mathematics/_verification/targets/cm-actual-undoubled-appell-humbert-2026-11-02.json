@@ -1,0 +1,116 @@
+{
+  "contract": "grwtsk.math.actual-undoubled-appell-humbert/1",
+  "publication": "PENDING_PARTIAL",
+  "date": "2026-11-02",
+  "base_head_observed": "162891132952e479189bfbc59529185fccfc10b1",
+  "previous_commit": "7d20a1b25ce19659cfc74f9a1170b0a2aced9fbc",
+  "repository": "grwtsk/math",
+  "file_blobs": [
+    {
+      "destination": "GRWTSK/Geometry/CMActualIntegralBasisSemicharacter.lean",
+      "source": "CMActualIntegralBasisSemicharacter.lean",
+      "blob": "88c16e6ea2f5a43b35fd0acd636b79ebc6c261c5",
+      "lines": 256,
+      "bytes": 10896
+    },
+    {
+      "destination": "GRWTSK/Geometry/CMActualUndoubledFactorCocycle.lean",
+      "source": "CMActualUndoubledFactorCocycle.lean",
+      "blob": "6fe83c1cc050b161d0437213111a3a92ec7ca05c",
+      "lines": 227,
+      "bytes": 9943
+    },
+    {
+      "destination": "GRWTSK/Geometry/CMActualUndoubledOrbitTotalSpace.lean",
+      "source": "CMActualUndoubledOrbitTotalSpace.lean",
+      "blob": "58d908cfbeceaf60b0839086b86cb941657d037f",
+      "lines": 99,
+      "bytes": 4269
+    },
+    {
+      "destination": "documentation/mathematics/_support/reviews/cm-actual-undoubled-appell-humbert-2026-11-02.md",
+      "source": "cm-actual-undoubled-appell-humbert-2026-11-02.md",
+      "blob": "433cecca8d076b7a0ef1ecf921cacc0d4c509501",
+      "lines": 92,
+      "bytes": 10293
+    }
+  ],
+  "literature_reference_append": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+  "blocked_local_only": {
+    "path": "CMActualUndoubledMetricCurvature.lean",
+    "sha": "c5ac699dd29ad61b3fd98081eaef0be5bc0ca875",
+    "publication": "NOT_PUBLISHED_DUE_TO_SAFETY_CHECK",
+    "acceptance": "NOT_RUN"
+  },
+  "pin": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "openai_math": "4eaee87548250b2682affda7d05d947c05554bae"
+  },
+  "existing_source_blobs": {
+    "CMActualPeriodDoubledAutomorphy.lean": "134905b34aa7d836b5818c0f6b077e7f9644d656",
+    "CMActualPeriodCoverCurvature.lean": "5d09f7a777fa66fd034a12042dfbd38f4eec7049",
+    "CMActualIntegralPeriodResidueLinks.lean": "431417c587070fa7a1f2c1082d04dadd3008a056",
+    "CMActualPeriodTraceComparison.lean": "5c2036d896ecebdb409b05b7a228a8fc2ebacd05",
+    "CMRiemannSemicharacter.lean": "7073576c99b09bf19bea342bf5882093d6123225",
+    "OAI.CM.PeriodHermitian.lean": "a56e096f6ebcbd86b64929bf355e30ac89e3a89c",
+    "OAI.CM.PeriodRiemannForm.lean": "1e71c2d4e74e6dde8f36a1e93f04daa23664daa6",
+    "OAI.RiemannProjectivity.ProjectivityCriterion.lean": "82187516feab68f8797114fa417e1194b74e3e82"
+  },
+  "expected_declarations": [
+    "CMActualIntegralBasisSemicharacter.actualIntegralBasis",
+    "CMActualIntegralBasisSemicharacter.actualIntegralCoords_reconstruct",
+    "CMActualIntegralBasisSemicharacter.matrixPeriod_eq_actualFlux",
+    "CMActualIntegralBasisSemicharacter.actualIntegralSemicharacter_add",
+    "CMActualUndoubledAppellHumbert.halfExponent_twisted_add",
+    "CMActualUndoubledAppellHumbert.rawHalfFactor_twist",
+    "CMActualUndoubledAppellHumbert.undoubledFactor_add",
+    "CMActualUndoubledAppellHumbert.undoubledFrameShift_add",
+    "CMActualUndoubledAppellHumbert.undoubledFactor_metric_covariant",
+    "CMActualUndoubledAppellHumbert.undoubledFactor_sq_eq_doubled",
+    "CMActualUndoubledAppellHumbert.actualResidueHolonomy_eq_coverCurvatureExp",
+    "CMActualUndoubledOrbitTotalSpace.coverOrbitSetoid",
+    "CMActualUndoubledOrbitTotalSpace.actualOrbitBaseProjection_surjective"
+  ],
+  "mathematical_scope": {
+    "genuine_lattice": "ring of integers O_E, not Z span of arbitrary Q basis",
+    "comparison": "undoubled J from source alpha and H; J²=published J2; exact action and metric",
+    "quotient": "algebraic orbit quotient and base map; no analytic local trivialization proved",
+    "residue": "prior original parity/nonunit phase, no source-labelling loss"
+  },
+  "finite_evidence": {
+    "reference": "cm_actual_undoubled_appell_humbert_reference.py",
+    "results": "cm_actual_undoubled_appell_humbert_results.json",
+    "assertions": 487612,
+    "model": "E=Q(i), O_E=Z[i]; exact rational plus 70-digit mpmath finite tests",
+    "lean_certificate": false,
+    "CERN_event_rows": 0
+  },
+  "verification": {
+    "static_source_presence": "YES",
+    "explicit_proof_holes_found": false,
+    "source_publication": "PENDING_PARTIAL",
+    "lean_parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN"
+  },
+  "unresolved": [
+    "upstream OAI root import compatibility, no local Lean available",
+    "proper topology, holomorphic locally trivial line bundle on orbit quotient",
+    "Chern connection whose curvature is the source cover coefficient",
+    "identification with particular original CM variety and integral homology",
+    "canonical arithmetic integer-to-geometric-residue site map",
+    "physical detector likelihood including calibration and real event data",
+    "all-rate original signed Moebius energy and periodic Schwartz-to-Lp"
+  ],
+  "negative_controls": [
+    "odd B requires nontrivial semicharacter alpha; alpha=1 alone fails",
+    "alpha sign is basis dependent up to unitary character",
+    "doubled J2 has trivial parity commutator and is not undoubled J",
+    "B even can be positive but no odd triangle holonomy",
+    "orbit quotient set does not by itself yield holomorphic line bundle",
+    "finite tests not Lean or experimental physics evidence"
+  ]
+}
