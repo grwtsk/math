@@ -13,6 +13,7 @@
   "selected_declarations": [
     "GRWTSK.CivilSystems.CrossSector.WorkEvent.partition",
     "GRWTSK.CivilSystems.CrossSector.WorkEvent.other_sector_is_residual",
+    "GRWTSK.CivilSystems.CrossSector.WorkEvent.other_unit_is_separate",
     "GRWTSK.CivilSystems.CrossSector.WorkEvent.rejected_source_is_residual",
     "GRWTSK.CivilSystems.CrossSector.admitted_residual_partition",
     "GRWTSK.CivilSystems.CrossSector.unreviewed_feedback_not_feedback",
@@ -37,5 +38,6 @@
   "kernel_replay": "NOT_RUN",
   "axiom_audit": "NOT_RUN",
   "source_proof_acceptance": false,
-  "native_execution_requested": false
+  "native_execution_requested": false,
+  "notes": "Unit-wise residual accounting. Quantities in different physical units are never summed together."
 }
