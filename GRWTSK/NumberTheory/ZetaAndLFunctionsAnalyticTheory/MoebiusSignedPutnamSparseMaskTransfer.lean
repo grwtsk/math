@@ -158,6 +158,8 @@ theorem selectedGap_abs_le_eight_log_two_card
   have hx0 : (X : ℝ) ≠ 0 := ne_of_gt hx
   have hC : 0 ≤ C := by
     dsimp [C]
+    have hlog2 : 0 ≤ Real.log (2 : ℝ) :=
+      Real.log_nonneg (by norm_num)
     positivity
   have hIshell : I ⊆ Finset.Ioc X (2 * X) := by
     intro m hm
@@ -306,7 +308,9 @@ theorem originalSignedHL_putnam_le_unmasked
       X hX (original_high_subset B X) (original_low_subset B X)
   have hsize :=
     putnam_gap_card_le η (shellTime X)
-  have hcoeff : 0 ≤ (8 : ℝ) * Real.log 2 := by positivity
+  have hcoeff : 0 ≤ (8 : ℝ) * Real.log 2 := by
+    exact mul_nonneg (by norm_num)
+      (Real.log_nonneg (by norm_num))
   have hcost :=
     mul_le_mul_of_nonneg_left hsize hcoeff
   change |originalSignedHL B a b
@@ -444,8 +448,8 @@ theorem both_ordered_putnam_all_positive_rate_of_unmasked
   have hTnonneg : 0 ≤ shellTime X := by
     have hXreal : (1 : ℝ) ≤ (X : ℝ) := by
       exact_mod_cast hXone
+    change 0 ≤ Real.log (2 * (X : ℝ))
     apply Real.log_nonneg
-    dsimp [shellTime]
     linarith
   have hEuler :
       bankSquareRootWeight B.primes ≤
