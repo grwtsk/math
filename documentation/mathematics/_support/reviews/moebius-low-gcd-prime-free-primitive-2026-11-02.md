@@ -135,3 +135,52 @@ As a numerical cross-check (not Lean acceptance), evaluating the FULL original p
 | 64 | 13.245206470806456814 | 13.245206470806456814 | less than 10^-53 | 2646 |
 
 At N=64 the full prime-free pair selector contains 3368 ordered pairs but only 2646 guarded primitive triples, because the omitted pairs have original Möbius coefficient zero from shared prime factors with g. Their omission is not cancellation of any nonzero signed source. The finite checks corroborate the formula at four horizons but do not prove it for all horizons, certify the Lean code, or supply the missing primitive bilinear upper.
+
+
+## Follow-up: exact canonical finite gcd reindex Lean proof candidate (2026-11-02)
+
+Two new additive source files address the previously named \`ExactPrimeFreeTripleReindexTarget\` **without taking that proposition as a hypothesis**:
+
+1. [MoebiusCanonicalFiniteGcdBijection.lean](https://github.com/grwtsk/math/blob/16bea78a6f3deccc5b7aaa4bfe9d410692a7cbda/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCanonicalFiniteGcdBijection.lean), final source commit \`16bea78a6f3deccc5b7aaa4bfe9d410692a7cbda\`, Git blob \`326730b5b5c3f93d08843c8c564bece49e171f9a\`. It has three public theorem candidates and two private membership lemmas. The generic source imports pinned Mathlib and **no Möbius/RH source**.
+2. [MoebiusPrimeFreeExactTripleReindex.lean](https://github.com/grwtsk/math/blob/7997132e77c5110b5cf64ea12aa109d5ffe13306/GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeFreeExactTripleReindex.lean), source commit \`7997132e77c5110b5cf64ea12aa109d5ffe13306\`, Git blob \`f2b485ee5c32140d016fc21150d0c5fb9b924efb\`. It contains five public theorem candidates and three private zero-handling lemmas.
+
+### Primary mathematical proof mechanism
+
+Let \(S_N=\{1,\ldots,N\}\). The map
+\[
+\Phi(m,n)=(g,a,b),\quad g=\gcd(m,n),\ a=m/g,\ b=n/g
+\]
+is a bijection between **all ordered** pairs in \(S_N^2\) and all triples \(g,a,b\in S_N\) with \(\gcd(a,b)=1\) and \(ga,gb\in S_N\). Its inverse is \(\Psi(g,a,b)=(ga,gb)\). Indeed \(\gcd(ga,gb)=g\gcd(a,b)=g\), and gcd divisibility gives \(g(m/g)=m\), \(g(n/g)=n\). Conversely, every coprime triple reconstructs its exact original ordered pair. This holds without any squarefree or Möbius assumption and is expressed in the source through \`Finset.sum_bij'\` and \`finite_ordered_gcd_sum\`. The source's first draft incorrectly treated the summand equality under this bijection as \`rfl\`; the **final** source uses the explicit original gcd divisibility reconstruction, a correction visible at commit \`16bea78a6f3deccc5b7aaa4bfe9d410692a7cbda\`.
+
+Specializing the generic sum identity to \`otherLowGcdPair Q T m n\`, with \(N=\lfloor e^T\rfloor\), returns all original ordered source terms in a coprime \((g,a,b)\)-sum **before** squareful terms are filtered. The source-specific guard lemma uses pinned \`ArithmeticFunction.moebius_eq_zero_of_not_squarefree\` and the existing \`Nat.coprime_of_squarefree_mul\`: if either \(\gcd(g,a)>1\) or \(\gcd(g,b)>1\), then \(ga\) or \(gb\) is not squarefree, hence the ORIGINAL source term is exactly zero. The guard therefore removes **only** true arithmetic zeros, not source terms containing missing/incorrect physical records.
+
+For the surviving coprime pairs, the already published exact original \`originalSource_coprime_gcdShifted_term\` establishes
+\[
+\mu(ga)\mu(gb)\operatorname{Gram}_T(ga,gb)
+=\frac{\mu(g)^2\mu(a)\mu(b)}{g}
+\operatorname{Gram}_{T-\log g}(a,b).
+\]
+No homogeneous/unshifted causal Gram, artificial coefficient, positive replacement or new source cutoff is used. The new candidate \`original_primeFree_eq_primitiveTriple\` is a full double-to-triple equality, and \`exactPrimeFreeTripleReindex_proof\` is the authored candidate proof of the **exact previously open target**. The original target is a Prop without an assumed proof or new axiom.
+
+The formal-status boundary is essential: **proof source authored, native acceptance NOT_RUN**. Neither source has been compiled in Lean 4.34.1 with pinned Mathlib, and fresh kernel/expected-type/transitive-axiom checks remain NOT_RUN. The earlier status "open with no authored proof" becomes "candidate proof authored, not accepted", not "kernel-proved".
+
+### Independent finite checks and hostile cases
+
+Exact integer arithmetic (not Lean) independently enumerated both sides of the gcd bijection for \(N=0,1,2,5,8,16,32,64\). Every map was injective and onto the stated positive coprime triples. For every triple removed by either coprimality-with-\(g\) guard, the actual Möbius product \(\mu(ga)\mu(gb)\) was exactly zero.
+
+| N | Original ordered pairs | Primitive coprime triples | Triples with bad common-factor coprimality | Removed terms with nonzero Möbius product |
+| ---: | ---: | ---: | ---: | ---: |
+| 0 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 0 | 0 |
+| 8 | 64 | 64 | 10 | 0 |
+| 16 | 256 | 256 | 50 | 0 |
+| 32 | 1024 | 1024 | 222 | 0 |
+| 64 | 4096 | 4096 | 920 | 0 |
+
+The prior original-gram numerical double/triple tests at \(N=8,16,32,64\) remain separate, noncertifying support for the correct analytic kernel, original prime-free mask and \(T-\log g\) shift. They are not reused as a proof of the bijection.
+
+### Exact consumer and remaining analytic frontier
+
+The source-specific candidate \`riemannHypothesis_of_primitive_signed_core_goodScales\` consumes ONLY two still independent hypotheses: a fixed \`AffineFrequent G\` good-scale coverage and the original shifted signed \`PrimitivePrimeFreeEveryRateOn G\` upper. It passes the newly authored \`exactPrimeFreeTripleReindex_proof\` to the existing conditional original RH return. **Neither of those two premises is proved**; RH and the all-positive-rate primitive bilinear upper remain OPEN.
+
+Prior-art claim: no novelty claim is made for the elementary gcd bijection, the standard Möbius squarefree-zero fact, or their finite analytic rearrangement. The contribution is an original-source-preserving Lean formalization candidate connecting existing repository interfaces. Its downstream consumer is specific, and the native evidence boundary is not blurred.

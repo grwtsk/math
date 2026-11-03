@@ -136,6 +136,24 @@
       "namespace": "GRWTSK.NumberTheory.Moebius.LowGcdPrimeFreePrimitiveBridge",
       "decl_count": 8,
       "status": "SOURCE_PROOF_CANDIDATE_WITH_EXPLICIT_OPEN_FULL_REINDEX"
+    },
+    {
+      "id": "canonical_finite_gcd_bijection",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCanonicalFiniteGcdBijection.lean",
+      "blob": "326730b5b5c3f93d08843c8c564bece49e171f9a",
+      "commit": "16bea78a6f3deccc5b7aaa4bfe9d410692a7cbda",
+      "namespace": "GRWTSK.NumberTheory.Moebius.CanonicalFiniteGcdBijection",
+      "decl_count": 3,
+      "status": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    {
+      "id": "prime_free_exact_triple_reindex",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeFreeExactTripleReindex.lean",
+      "blob": "f2b485ee5c32140d016fc21150d0c5fb9b924efb",
+      "commit": "7997132e77c5110b5cf64ea12aa109d5ffe13306",
+      "namespace": "GRWTSK.NumberTheory.Moebius.PrimeFreeExactTripleReindex",
+      "decl_count": 5,
+      "status": "SOURCE_PROOF_CANDIDATE_TARGET_AUTHORED_COMPILATION_NOT_RUN"
     }
   ],
   "related_source_statements": [
@@ -1251,6 +1269,85 @@
         "exact source reindex"
       ],
       "acceptance": "UNPROVED_ARITHMETIC_PREMISE"
+    },
+    {
+      "from": "CanonicalFiniteGcdBijection.pairToGcdTriple",
+      "to": "CanonicalFiniteGcdBijection.gcdTripleToPair_pairToGcdTriple",
+      "kind": "EXACT_ORDERED_POSITIVE_INDEX_RECONSTRUCTION",
+      "required": [],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "CanonicalFiniteGcdBijection.gcdTripleToPair",
+      "to": "CanonicalFiniteGcdBijection.pairToGcdTriple_gcdTripleToPair",
+      "kind": "EXACT_PRIMITIVE_COPRIME_TRIPLE_UNIQUENESS",
+      "required": [
+        "positive g and coprime reduced factors"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "Mathlib.Finset.sum_bij'",
+      "to": "CanonicalFiniteGcdBijection.finite_ordered_gcd_sum",
+      "kind": "FULL_FINITE_ORDERED_GCD_REINDEX",
+      "required": [
+        "original N finite positive index inventory"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "Mathlib.ArithmeticFunction.moebius_eq_zero_of_not_squarefree",
+      "to": "PrimeFreeExactTripleReindex.original_moebius_zero_of_nonCoprime",
+      "kind": "SQUAREFUL_ZERO_GUARD",
+      "required": [
+        "non-coprime g,a implies ga not squarefree"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "CanonicalFiniteGcdBijection.finite_ordered_gcd_sum",
+      "to": "PrimeFreeExactTripleReindex.original_primeFree_raw_gcd_reindex",
+      "kind": "SOURCE_EXACT_ORIGINAL_ORDERED_PAIR_REINDEX",
+      "required": [
+        "same endpointIndex T"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "LowGcdPrimeFreePrimitiveBridge.originalSource_coprime_gcdShifted_term",
+      "to": "PrimeFreeExactTripleReindex.guarded_original_pair_eq_shifted",
+      "kind": "ZERO_GUARD_AND_TRUE_SHIFTED_GRAM",
+      "required": [
+        "g,a,b positive",
+        "squareful zero preserved"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "PrimeFreeExactTripleReindex.original_primeFree_raw_gcd_reindex",
+      "to": "PrimeFreeExactTripleReindex.original_primeFree_eq_primitiveTriple",
+      "kind": "COMPLETE_MASKED_ORIGINAL_DOUBLE_TO_TRIPLE_EQUALITY",
+      "required": [
+        "original prime-free selector and original causal response"
+      ],
+      "acceptance": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "from": "LowGcdPrimeFreePrimitiveBridge.ExactPrimeFreeTripleReindexTarget",
+      "to": "PrimeFreeExactTripleReindex.exactPrimeFreeTripleReindex_proof",
+      "kind": "PREVIOUS_OPEN_TARGET_NOW_AUTHORED_PROOF_SOURCE",
+      "required": [],
+      "acceptance": "PROOF_AUTHORED_KERNEL_NOT_RUN"
+    },
+    {
+      "from": "PrimeFreeExactTripleReindex.exactPrimeFreeTripleReindex_proof",
+      "to": "PrimeFreeExactTripleReindex.riemannHypothesis_of_primitive_signed_core_goodScales",
+      "kind": "CONDITIONAL_ANALYTIC_CONSUMER_REINDEX_GATE_SUPPLIED_AS_CANDIDATE",
+      "required": [
+        "AffineFrequent G still independent",
+        "PrimitivePrimeFreeEveryRateOn G still OPEN"
+      ],
+      "acceptance": "CONDITIONAL_WITH_OPEN_ARITHMETIC_PREMISES"
     }
   ],
   "unproved_or_invalid_transfers": [
@@ -1421,6 +1518,30 @@
       "to": "unconditional RH",
       "kind": "NO_PROVED_TRANSFER",
       "why": "Both fixed affine-frequency scale coverage and the stronger one-sided source arithmetic bound remain unproved."
+    },
+    {
+      "from": "CanonicalFiniteGcdBijection.finite_ordered_gcd_sum",
+      "to": "canonical Möbius signed upper",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Exact finite reindex changes coordinates but does not create cancellation or upper growth."
+    },
+    {
+      "from": "PrimeFreeExactTripleReindex.exactPrimeFreeTripleReindex_proof",
+      "to": "accepted Lean theorem",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "Only published source proof candidate; parser, elaboration, imported closure, kernel and axioms have NOT_RUN."
+    },
+    {
+      "from": "PrimeFreeExactTripleReindex.riemannHypothesis_of_primitive_signed_core_goodScales",
+      "to": "unconditional RH",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "The fixed scale set coverage and signed primitive all-positive-rate upper are both genuinely independent OPEN premises."
+    },
+    {
+      "from": "PrimeFreeExactTripleReindex.original_primeFree_eq_primitiveTriple",
+      "to": "unverified original highHigh/full gcd reindex claims",
+      "kind": "NO_PROVED_TRANSFER",
+      "why": "The theorem targets only the originally defined prime-free low-GCD source. Other masks/initial source targets need separate exact adapters."
     }
   ],
   "proof_acceptance": {
@@ -1448,9 +1569,12 @@
     "new_primitive_triple_reindex": "OPEN_NOT_PROVED",
     "original_low_gcd_prime_free_all_rate_upper": "OPEN",
     "new_primitive_bilinear_all_positive_rate": "OPEN_NOT_PROVED",
-    "lean_compilation": "NOT_RUN"
+    "lean_compilation": "NOT_RUN",
+    "new_canonical_gcd_sum": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "exact_prime_free_triple_reindex": "PROOF_CANDIDATE_AUTHORED_NATIVE_NOT_RUN",
+    "original_primitive_signed_all_rate": "OPEN"
   },
-  "mathematical_target": "Nonpositive true prime dilation and squareful-safe coprime gcd time shift published. Paper-level full source bijection and finite numeric fixtures available; Lean ExactPrimeFreeTripleReindexTarget and independent PrimitivePrimeFreeEveryRateOn G remain OPEN.",
+  "mathematical_target": "The complete source-masked original prime-free double-to-primitive-triple sum now has a written Lean proof candidate grounded in a generic finite gcd bijection and squareful-zero handling. Acceptance NOT_RUN; independent all-positive-rate signed primitive bilinear estimate remains OPEN.",
   "verification": {},
   "new_math_review": {
     "path": "documentation/mathematics/_support/reviews/physical-moebius-sharp-sampling-variance-2026-11-02.md",
@@ -1503,5 +1627,36 @@
     "finite_numeric": "N=8,16,32,48,64 at rate .65 with exact integer mu and 55-digit causal Gram, sign and partition only, noncertifying",
     "primitive_conditional_consumer": "ExactPrimeFreeTripleReindexTarget AND PrimitivePrimeFreeEveryRateOn G AND AffineFrequent G -> RiemannHypothesis; all independent premises OPEN",
     "double_triple_finite_checks": "N=8,16,32,64; original mu, guarded primitive gcd triples, 55-digit arithmetic, differences <=10^-53; NUMERICAL_NONCERTIFYING"
+  },
+  "prime_free_exact_gcd_reindex_increment": {
+    "source_revision": "16bea78a6f3deccc5b7aaa4bfe9d410692a7cbda",
+    "review": {
+      "path": "documentation/mathematics/_support/reviews/moebius-low-gcd-prime-free-primitive-2026-11-02.md",
+      "blob": "904c1cbd5e00a708f718de663efdf326a84fafa2"
+    },
+    "generic_finite_bijection": {
+      "id": "canonical_finite_gcd_bijection",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCanonicalFiniteGcdBijection.lean",
+      "blob": "326730b5b5c3f93d08843c8c564bece49e171f9a",
+      "commit": "16bea78a6f3deccc5b7aaa4bfe9d410692a7cbda",
+      "namespace": "GRWTSK.NumberTheory.Moebius.CanonicalFiniteGcdBijection",
+      "decl_count": 3,
+      "status": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED"
+    },
+    "original_signed_gcd_reindex": {
+      "id": "prime_free_exact_triple_reindex",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeFreeExactTripleReindex.lean",
+      "blob": "f2b485ee5c32140d016fc21150d0c5fb9b924efb",
+      "commit": "7997132e77c5110b5cf64ea12aa109d5ffe13306",
+      "namespace": "GRWTSK.NumberTheory.Moebius.PrimeFreeExactTripleReindex",
+      "decl_count": 5,
+      "status": "SOURCE_PROOF_CANDIDATE_TARGET_AUTHORED_COMPILATION_NOT_RUN"
+    },
+    "exact_target": "LowGcdPrimeFreePrimitiveBridge.ExactPrimeFreeTripleReindexTarget",
+    "new_candidate_proof": "PrimeFreeExactTripleReindex.exactPrimeFreeTripleReindex_proof",
+    "status": "PROOF_AUTHORED_SOURCE_CANDIDATE_NOT_NATIVE_ACCEPTED",
+    "proof_repair": "sum_bij term equality required Nat.mul_div_cancel_left' rather than rfl; final source repaired",
+    "finite_integer_evidence": "N=0,1,2,5,8,16,32,64 exact integer map image/inverse and squareful zero guards PASS, NONCERTIFYING",
+    "remaining_open": "PrimitivePrimeFreeEveryRateOn G, AffineFrequent G on the same set, and pinned Lean kernel acceptance"
   }
 }
