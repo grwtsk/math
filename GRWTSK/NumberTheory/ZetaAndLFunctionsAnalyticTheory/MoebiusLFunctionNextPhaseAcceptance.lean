@@ -1,0 +1,67 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+PASSIVE VERIFICATION CANDIDATE / NATIVE_COMMANDS_NOT_RUN /
+EXPECTED_TYPES_NOT_RUN / FRESH_KERNEL_NOT_RUN /
+TRANSITIVE_AXIOM_AUDIT_NOT_RUN.
+-/
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusLFunctionHigherDivisorReturn
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusLFunctionComplexPrefixTransfer
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusLFunctionDirichletFullGcdReturn
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusLFunctionComplexAbelBudget
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDirichletLowGcdEnergySandwich
+import Mathlib
+
+set_option autoImplicit false
+
+/-!
+# Source-bound next-phase acceptance
+
+These checks are CODE FOR A FUTURE AUTHORIZED PINNED LEAN RUN.
+Their mere presence on GitHub is NOT proof of their execution.
+The single-birth scalar integral remains an explicitly unproved
+Lean proposition and must NOT be reported as discharged by the
+conditional family prefix reconstruction.
+
+Proposed separately tracked native command at a reviewed host:
+  lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionNextPhaseAcceptance.lean
+
+Check both the explicit declaration types and transitive axioms,
+with complete imported source bytes bound to the recorded commit.
+-/
+
+open GRWTSK.NumberTheory.Moebius.LFunctionHigherDivisorReturn
+open GRWTSK.NumberTheory.Moebius.LFunctionComplexPrefixTransfer
+open GRWTSK.NumberTheory.Moebius.LFunctionDirichletFullGcdReturn
+open GRWTSK.NumberTheory.Moebius.LFunctionComplexAbelBudget
+open GRWTSK.NumberTheory.Moebius.DirichletLowGcdEnergySandwich
+
+#check familyFullGram_eq_lowGcdFull_add_high
+#check familyDivisorEnergy_one
+#check familyHigherDivisorHermitianReturn_proof
+
+#check OriginalSingleBirthComplexIntegralTarget
+#check familyPrefix_eq_originalBornInventory
+#check familyPickupVelocity_eq_originalBirthInventory
+#check familyFiniteBirthIntegral_eq_response
+#check familyPrefixResponseReconstruction_of_singleBirth
+#check familyCumulativeEnergy_eq_fullGram_of_singleBirth
+
+#check finiteComplexAbel
+#check complexFinitePickup_eq_terminalDrops
+#check familyFiniteResponse_norm_le_prefixDrop
+
+#check familyFullHighGcd_abs_le_absoluteCost
+#check originalFullHighGcdCost_le_divisorCover
+#check dirichletFullHighGcd_abs_le_root
+#check dirichletHigherDivisorEnergy_fixed_abs_le
+
+#print axioms familyHigherDivisorHermitianReturn_proof
+#print axioms familyPrefixResponseReconstruction_of_singleBirth
+#print axioms familyCumulativeEnergy_eq_fullGram_of_singleBirth
+#print axioms dirichletHigherDivisorEnergy_fixed_abs_le
+#print axioms familyFiniteResponse_norm_le_prefixDrop
+
+#check familyEnergy_eq_lowCross_add_diagonal_add_high
+#check dirichletLowGcdDiagonal_le_quadratic
+#check dirichletLowGcd_fixed_energy_abs_le
+#check dirichletLowGcd_fixed_lower
+#print axioms dirichletLowGcd_fixed_energy_abs_le

@@ -1,0 +1,142 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Original FiniteSmoothEulerMoments from pinned Mathlib true-prime factored-number geometric HasSum",
+  "date": "2026-11-01",
+  "attribution": "grwtsk contributors",
+  "formalization_assistance": "OpenAI ChatGPT",
+  "repository": "grwtsk/math",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFiniteSmoothEulerMoments.lean",
+    "blob": "f631ff881cc8f96542f286fa33ea008bb71a3d57",
+    "root_import": false,
+    "source_classification": "LEAN_SOURCE_PROOF_CANDIDATE",
+    "new_axioms": 0,
+    "sorry_declarations": 0
+  },
+  "mathematical_review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-finite-smooth-euler-moments-2026-11-01.md",
+    "blob": "d068f70d1824818c372e41590012d96f523c59e2"
+  },
+  "dependencies": [
+    {
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothDivisorCount.lean",
+      "blob": "0a0274d968ef6398b1ad51896e852892ed3e4fcc"
+    },
+    {
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothDensePairs.lean",
+      "blob": "cef7c06a794cec1cef423c2ebfa3b6d0221087ad"
+    },
+    {
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusNearSquareRootEulerPrefix.lean",
+      "blob": "7039be9c092ec8b8c9bf8d95b338a06dfe7638b2"
+    },
+    {
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusClassicalMertensRealQuotientBridge.lean",
+      "blob": "c4241cf88cd2896ba0c71ebf8aa9fc24f2952168"
+    },
+    {
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeSmoothFiniteConvolution.lean",
+      "blob": "21f38bfe752ab389fc83a7546504509df01ec438"
+    },
+    {
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/EulerProduct/Basic.lean",
+      "blob": "3c85fa476bd30c5abeb14648fd26786a25fc5bb5",
+      "theorem": "EulerProduct.summable_and_hasSum_factoredNumbers_prod_filter_prime_geometric"
+    },
+    {
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/SmoothNumbers.lean",
+      "blob": "57503448dd06ca2fc223a8e71a90a8f6015fce3f",
+      "theorem": "Nat.mem_factoredNumbers'"
+    },
+    {
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/Topology/Algebra/InfiniteSum/Order.lean",
+      "blob": "33c7a42409953218c559973feeefd441eca9f5d5",
+      "theorem": "sum_le_hasSum"
+    },
+    {
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/Analysis/Real/Sqrt.lean",
+      "blob": "92936ac2ea8d16aff301eecc8983d24e0b1f65d2",
+      "theorem": "Real.sqrt_mul"
+    }
+  ],
+  "expected_declarations": [
+    "GRWTSK.NumberTheory.Moebius.FiniteSmoothEulerMomentsProof.bankSmooth_iff_mem_factoredNumbers",
+    "GRWTSK.NumberTheory.Moebius.FiniteSmoothEulerMomentsProof.finite_bankSmooth_reciprocal_le",
+    "GRWTSK.NumberTheory.Moebius.FiniteSmoothEulerMomentsProof.finite_bankSmooth_invSqrt_le",
+    "GRWTSK.NumberTheory.Moebius.FiniteSmoothEulerMomentsProof.finiteSmoothEulerMoments",
+    "GRWTSK.NumberTheory.Moebius.FiniteSmoothEulerMomentsProof.highSmoothCountFormalizationTarget",
+    "GRWTSK.NumberTheory.Moebius.FiniteSmoothEulerMomentsProof.highSmooth_card_unconditional",
+    "GRWTSK.NumberTheory.Moebius.FiniteSmoothEulerMomentsProof.nearSquareRoot_from_classical_without_Euler_premise"
+  ],
+  "private_helpers": [
+    "reciprocalNatHom",
+    "reciprocalSqrtNatHom",
+    "reciprocalNatHom_nonneg",
+    "reciprocalSqrtNatHom_nonneg",
+    "reciprocalNatHom_prime_norm_lt_one",
+    "reciprocalSqrtNatHom_prime_norm_lt_one",
+    "primeBand_filter_prime",
+    "finite_bankSmooth_weight_le_Euler"
+  ],
+  "unchanged_target": "GRWTSK.NumberTheory.Moebius.NearSquareRootEulerPrefix.FiniteSmoothEulerMoments B",
+  "exact_claims": [
+    "For every real-valued natural-number multiplicative weight with nonnegative values and strict norm <1 on each genuine prime, pinned Euler HasSum bounds all finite original bankSmooth positive integer sums by the unchanged product over every B.primes.",
+    "For every B:PrimeBand, FiniteSmoothEulerMoments B with BOTH source weights 1/d and 1/sqrt(d) (all original smooth prime powers; d=1; zero excluded).",
+    "HighSmoothCountFormalizationTarget follows with NO independent Euler-moment premise, via the published actual original positive-divisor count proof.",
+    "For all B, X>=1, ANY real T, card(highSmoothBlock B X T) <= sqrt(2X)*exp(sqrt(log(2X)))*bankSquareRootWeight B.primes.",
+    "Near-square-root original rough/matched consumer keeps ClassicalMertensLogPowerInput and NearSquareRootEulerFormalizationTarget explicit, but no longer needs FiniteSmoothEulerMoments proof input."
+  ],
+  "other_analytic_premises": [
+    "ClassicalMertensLogPowerInput",
+    "NearSquareRootEulerFormalizationTarget",
+    "HighSmoothDenseFormalizationTarget",
+    "All-positive-rate signed long-gap arithmetic supplier"
+  ],
+  "reference": {
+    "script": "/mnt/data/moebius_finite_smooth_euler_preflight.py",
+    "script_sha256": "b27fcf608cf8f27393c0f2d2866db8a8f8d0613cc5ed8035599c6eb08f872516",
+    "results": "/mnt/data/moebius_finite_smooth_euler_preflight_result.json",
+    "results_sha256": "a4d9d1e34d71ee39fc9719e1466bcb62c413cd14b7a5dd2211da1670606d2b85",
+    "checks": 19913,
+    "banks": 7,
+    "range_N": "0..400",
+    "status": "FINITE_EXACT_INTEGER_AND_MPMATH_REFERENCE_ONLY_NOT_KERNEL_OR_INTERVAL_PROOF"
+  },
+  "verification": {
+    "publication": "SOURCE_CANDIDATE_PUBLISH_PENDING_READBACK",
+    "source_readback": "PENDING",
+    "Lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_runner_dispatched": false,
+    "remote_CI_dispatched": false,
+    "scheduler_dispatched": false,
+    "classical_Mertens_Lean_import": "OPEN",
+    "near_square_root_transfer_Lean": "OPEN",
+    "high_high_masked_Gram_Lean": "OPEN",
+    "all_positive_rate_signed_source": "OPEN",
+    "RiemannHypothesis": "OPEN"
+  },
+  "issues": [
+    1577,
+    1575,
+    1572,
+    1568,
+    1429,
+    15
+  ],
+  "passive": true,
+  "expected_main_parent": "510aa6f232e50ed3d759542eebc84081314ebb7b"
+}

@@ -1,0 +1,53 @@
+{
+  "kind": "static-verification-target",
+  "name": "FactorialPrimeFiberUniformEnergy",
+  "repository": "grwtsk/math",
+  "math_source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactorialPrimeFiberUniformEnergy.lean",
+  "math_source_git_blob": "7be16212847b5ba1a96c044a6a0ad0880eee5eae",
+  "mathematical_disposition": "documentation/mathematics/_support/reviews/factorial-prime-fiber-uniform-energy-formalization.md",
+  "mathematical_disposition_git_blob": "8dcf1c0ac1a77b581356b383efe9da003ad428e1",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN"
+  },
+  "proved_at_source_candidate_scope": [
+    "blockIndex_injective",
+    "blockIndex_composite",
+    "not_prime_of_mem_block",
+    "pickupResponse_bounds",
+    "finiteWave_abs_le_weightBudget",
+    "finiteWave_continuous",
+    "finiteEnergy_le_weightBudget_sq",
+    "finiteEnergy_eq_full_signedGram",
+    "blockWave_eq_fixed_of_le",
+    "blockEnergy_eq_frozen",
+    "blockEnergy_eq_full_signedGram",
+    "waveform_eq_block_add_dense",
+    "waveform_sq_eq_complete_mixed",
+    "energy_eq_complete_mixed_integral",
+    "waveform_sq_le_two_component_squares",
+    "blockEnergy_le_nine_twentyfifths_of_weightBound",
+    "block_allRate_of_weightBound",
+    "even_add_odd",
+    "odd_reflect_neg",
+    "signed_pair_defect"
+  ],
+  "explicit_open_arithmetic_proposition": "GRWTSK.NumberTheory.FactorialPrimeFiberUniformEnergy.FactorialBlockArithmeticWeightBound",
+  "explicit_open_dense_proposition": "GRWTSK.NumberTheory.FactorialPrimeFiberUniformEnergy.DenseUniformEnergyBudget",
+  "unchanged_RH_facing_target": "GRWTSK.NumberTheory.SignedWaveformEnergy.UniformSignedWaveformEnergyBudget",
+  "note": "The 9T/25 source theorem consumes FactorialBlockArithmeticWeightBound. The finite factorial-tail arithmetic lemma is not proved by the new Lean code. No axiom or sorry is added. This manifest requests passive separate checking only and does not dispatch work.",
+  "commands_for_separately_authorized_verifier": [
+    "lake build GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.FactorialPrimeFiberUniformEnergy",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FactorialPrimeFiberUniformEnergy.lean",
+    "lake env leanchecker --help",
+    "#check GRWTSK.NumberTheory.FactorialPrimeFiberUniformEnergy.blockEnergy_le_nine_twentyfifths_of_weightBound",
+    "#print axioms GRWTSK.NumberTheory.FactorialPrimeFiberUniformEnergy.blockEnergy_le_nine_twentyfifths_of_weightBound"
+  ]
+}

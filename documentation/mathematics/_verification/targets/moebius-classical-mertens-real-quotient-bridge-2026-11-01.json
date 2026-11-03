@@ -1,0 +1,82 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Integer-to-real-quotient classical Mertens bridge for original Abel and finite-bank Euler routes",
+  "date": "2026-11-01",
+  "attribution": "grwtsk contributors",
+  "repository": "grwtsk/math",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusClassicalMertensRealQuotientBridge.lean",
+    "blob": "c4241cf88cd2896ba0c71ebf8aa9fc24f2952168",
+    "root_import": false,
+    "classification": "SOURCE_PROOF_CANDIDATE",
+    "axiom_declarations": 0,
+    "sorry_declarations": 0
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-classical-mertens-real-quotient-bridge-2026-11-01.md",
+    "blob": "fc530b3ca44370cbb41d3567ef18a7b4b510fc9b"
+  },
+  "required_declarations": [
+    "GRWTSK.NumberTheory.Moebius.ClassicalMertensRealQuotientBridge.original_Icc_prefix_eq_finite",
+    "GRWTSK.NumberTheory.Moebius.ClassicalMertensRealQuotientBridge.realCutoff_logPower_of_integer",
+    "GRWTSK.NumberTheory.Moebius.ClassicalMertensRealQuotientBridge.quotient_logPower_of_realCutoff",
+    "GRWTSK.NumberTheory.Moebius.ClassicalMertensRealQuotientBridge.classicalMertens_to_quotientLogPower",
+    "GRWTSK.NumberTheory.Moebius.ClassicalMertensRealQuotientBridge.classical_integer_iff_quotient",
+    "GRWTSK.NumberTheory.Moebius.ClassicalMertensRealQuotientBridge.nearSquareRoot_from_single_classical_source"
+  ],
+  "imports": [
+    "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusQuantitativeMertensAbsoluteAbel",
+    "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusNearSquareRootEulerPrefix",
+    "Mathlib"
+  ],
+  "conditional_inputs": [
+    "GRWTSK.NumberTheory.Moebius.CausalMertensSquareBridge.ClassicalMertensLogPowerInput",
+    "GRWTSK.NumberTheory.Moebius.NearSquareRootEulerPrefix.FiniteSmoothEulerMoments",
+    "GRWTSK.NumberTheory.Moebius.NearSquareRootEulerPrefix.NearSquareRootEulerFormalizationTarget"
+  ],
+  "actual_result": "ClassicalMertensLogPowerInput equivalent to global family QuotientMertensLogPower A D_A, with explicit forward D_A=2^A*C_A and reverse unchanged; conditional near-square-root consumer uses D_(2A)=2^(2A)*C_(2A).",
+  "finite_diagnostic": {
+    "range_N": "1..600",
+    "range_d": "1..N",
+    "powers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8
+    ],
+    "evaluations": 1081800,
+    "violations": 0,
+    "classification": "FLOATING_FINITE_REFERENCE_NOT_CERTIFIED"
+  },
+  "publication": {
+    "mode": "NON_FORCE_GUARDED_MAIN_UPDATE",
+    "expected_parent": "aa0bb9907f1202d57df2a965ffc546281d585d3c",
+    "expected_source_blob": "c4241cf88cd2896ba0c71ebf8aa9fc24f2952168"
+  },
+  "verification": {
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "root_import": "NOT_CHANGED",
+    "external_classical_input": "UNPROVED_IN_PINNED_LEAN",
+    "near_square_root_transfer": "UNPROVED_IN_PINNED_LEAN",
+    "finite_smooth_euler_moments": "UNPROVED_IN_PINNED_LEAN",
+    "all_rate_signed_supplier": "UNPROVED",
+    "RiemannHypothesis": "UNPROVED",
+    "native_runner_dispatched": false,
+    "CI_dispatched": false,
+    "scheduler_dispatched": false
+  },
+  "passive": true,
+  "import_source_blobs": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusQuantitativeMertensAbsoluteAbel.lean": "b2fe063451f58ff9b892aa164d780bd20279192e",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusNearSquareRootEulerPrefix.lean": "7039be9c092ec8b8c9bf8d95b338a06dfe7638b2",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusQuantitativeMertensEulerPrefix.lean": "a3b95518661d541c9a13766466ba582109140fd1",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSquareBridge.lean": "be156509d9679a22b52b32d087f87d8449a047ef"
+  }
+}

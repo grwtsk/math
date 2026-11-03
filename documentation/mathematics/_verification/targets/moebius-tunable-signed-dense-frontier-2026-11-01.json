@@ -1,0 +1,97 @@
+{
+  "schema": "grwtsk.moebius-tunable-signed-dense-frontier/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTwoPrimeRateFrontier.lean",
+  "review": "documentation/mathematics/_support/reviews/moebius-tunable-signed-dense-frontier-2026-11-01.md",
+  "reference": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+  "original_source_blobs": {
+    "MertensPrimitive": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "LiouvilleDoubleAbelAnalyticGates": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4",
+    "GoodScaleEnergyCriterion": "ca3ae4975b20cf796a167308a9e87546c6001c41",
+    "PickupEndpointQuadrature": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+    "MoebiusEndpointPutnamSparseGapYoung": "6a424d78ae93cc82e35fae3bb3d20a5a3616c7b2",
+    "MoebiusTwoPrimeSignedPacketCore": "af6a0b8daa8684a36dfee6e0524b7e56578d432f",
+    "MoebiusEnergyMatchedWeakResidual": "2a3b46e1bb568217732c0a31c927327e03c0b0ff"
+  },
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "candidate_script_theorems": [
+    "GRWTSK.NumberTheory.Moebius.TwoPrimeRateFrontier.selected_profile_rates",
+    "GRWTSK.NumberTheory.Moebius.TwoPrimeRateFrontier.common_cut_rate_at_least_two_thirds",
+    "GRWTSK.NumberTheory.Moebius.TwoPrimeRateFrontier.positivePart_increment",
+    "GRWTSK.NumberTheory.Moebius.TwoPrimeRateFrontier.positivePart_checkerboard_nonneg"
+  ],
+  "source_defs": [
+    "geometricPairMask",
+    "parametricSignedCore",
+    "positiveOnlyCore",
+    "profileCore",
+    "positiveProfileCore",
+    "geometricPaymentRate",
+    "generalPrimeCubeWave"
+  ],
+  "unproved_lean_prop_targets": [
+    "ParametricOriginalEndpointUpperTarget",
+    "ProfileEndpointUpperTarget",
+    "PositiveOnlyCoreLinearLowerTarget",
+    "GeneralTwoPrimeCubeNonnegTarget"
+  ],
+  "analytic_status": {
+    "original_parametric_upper": "PAPER_PROVED_FROM_SOURCE_COMPARISONS",
+    "profile_rate_half_and_balanced_two_thirds": "PAPER_PROVED_DIFFERENT_RESIDUALS",
+    "positive_only_core_leading_rate_one": "PAPER_PROVED_FROM_ELEMENTARY_SQUAREFREE_DENSITY",
+    "positive_part_generic_checkerboard": "PAPER_PROVED_LEAN_SOURCE_CANDIDATE",
+    "general_prime_pq_cube": "PAPER_PROVED_LEAN_PROP_UNPROVED",
+    "unmatched_original_signed_core_upper": "OPEN",
+    "all_positive_rate": "OPEN",
+    "RH": "OPEN"
+  },
+  "finite_diagnostics": {
+    "original_gram_N": [
+      12,
+      25,
+      50,
+      100,
+      160
+    ],
+    "same_sign_N": [
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "tested_profile_rho": [
+      "1/2",
+      "2/3"
+    ],
+    "max_N_majority_sign_count": 155,
+    "max_N_surviving_unordered_positive_pairs_rho_half": 9876,
+    "max_N_surviving_unordered_positive_pairs_rho_two_thirds": 5447,
+    "method": "source-defined Mobius prime-factor sieve, exact integer masks, floating causal Gram; no interval certification",
+    "status": "FINITE_DIAGNOSTIC_ONLY_NOT_GLOBAL_PROOF"
+  },
+  "verification": {
+    "publication": "PENDING",
+    "source_parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "root_imports": "UNCHANGED",
+    "new_axioms": "NONE_AUTHORED",
+    "active_noe_runner": "NOT_DISPATCHED"
+  },
+  "related_issues": [
+    1406,
+    1556,
+    1435,
+    1546,
+    1429,
+    15
+  ],
+  "remaining_math_premise": "Noncircular all-positive-rate upper for original signed polynomial-gap core on one fixed AffineFrequent set; no claim profile rho>=1/2 is all-rate"
+}

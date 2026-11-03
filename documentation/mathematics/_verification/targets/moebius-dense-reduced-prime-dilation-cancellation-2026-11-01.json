@@ -1,0 +1,131 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Genuine signed prime-dilation cancellation inside the fully paid reduced-ratio Möbius dense core",
+  "repository": "grwtsk/math",
+  "attribution": "grwtsk contributors",
+  "date": "2026-11-01",
+  "initial_source_head": "b9fd57b02a5a7325e06a87ded12bdab587d0113f",
+  "concurrent_reviewed_head": "23537190f2d821ce3e8630aa8859982145d6fcdf",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_files": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseReducedPrimeDilationCancellation.lean",
+      "blob": "50f9ee06b3deea0321982c7e8cb8ba41bf9fc7e9",
+      "status": "LEAN_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/moebius-dense-reduced-prime-dilation-cancellation-2026-11-01.md",
+      "blob": "ca9cefbedddfe598e3c5bb5f6e75bfab6b227461",
+      "status": "MATHEMATICAL_FINITE_PROOF_WRITTEN"
+    }
+  ],
+  "source_inputs": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSmallRationalSlopeAllRate.lean",
+      "blob": "e9d09a9e1eb69dd2c176f3e64b28228df0126f42",
+      "role": "ORIGINAL_THREE_FILTER_REDUCED_RATIO_CORE_AND_RH_CONSUMER"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSmallRatioAllRate.lean",
+      "blob": "4d2a3cdef5cae3643637cac342eeb48d586d9204",
+      "role": "UNCHANGED_ENDPOINT_RELATION_CROSS"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapAllRate.lean",
+      "blob": "2ccedc75331c8ec88956923f896083727d49ec4f",
+      "role": "ORIGINAL_ADDITIVE_SPARSE_PACKET"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOddPrimeDoublingNegativePacket.lean",
+      "blob": "91d0214086391a936bb7a508fe0f7a730ffd3198",
+      "role": "TRUE_MOBIUS_PRIME_MUL_AND_GRAM_NONNEGATIVITY"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDensePrimeStarCancellation.lean",
+      "blob": "54629ac2b520545be119fb3d7b5e40235931513a",
+      "role": "PRIOR_Q_ONE_NEGATIVE_STAR_INCLUDED_ONLY_WHEN_CORE_EDGE_SURVIVES"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimeStarDenseArithmetic.lean",
+      "blob": "1beea55d946e85f20bdb51df9349e8f69f242666",
+      "role": "CONCURRENT_Q_ONE_CHEBYSHEV_DIFFERENT_SCOPE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDensePrimeStarForcedCompensation.lean",
+      "blob": "9ef8997328238a25ea9818e35074a716415c6604",
+      "role": "CONCURRENT_COMPLETE_Q_ONE_COMPOSITE_COUNTERSECTOR"
+    }
+  ],
+  "expected_declarations": [
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.IsPrimeDilation",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.primeDilation_coefficient_identity",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.primeDilation_source_nonpos",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.primeDilationCorePacket_nonpos",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.reducedCore_eq_primeDilation_add_outside",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.reducedCore_le_outsidePrimeDilation",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.primeStar_surviving_core_in_primeDilation",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.no_smallRationalSlope_of_large_prime",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.no_smallIntegerRatio_of_large_prime",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.largePrimeDilation_in_reduced_core",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.largePrimeDilation_distance_exceeds",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.largePrimeDilation_survives_bounded_filters",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.primeDilationCore_allPositiveRate",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.OutsidePrimeDilationAllRateOn",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.denseReducedRatioCoreAllRate_of_outsidePrimeDilation",
+    "GRWTSK.NumberTheory.Moebius.DenseReducedPrimeDilationCancellation.riemannHypothesis_of_outsidePrimeDilation_good_scales"
+  ],
+  "quantifiers": {
+    "prime": "EVERY Nat.Prime p",
+    "base": "EVERY positive q with not p divides q; squareful q contributes exact zero",
+    "time": "EVERY original nonnegative causal horizon T",
+    "selection": "ANY source A,Q and exactly the original denseReducedRatioCoreEdge exclusions",
+    "sign": "mu(q)*mu(p*q)=-mu(q)^2, every selected ordered original term <=0",
+    "complete_source": "endpointDenseReducedRatioCoreCross=primeDilationCorePacket+outsidePrimeDilationCorePacket",
+    "upper_bound": "primeDilationCorePacket <=0 (all T>=0), core <= outside",
+    "all_rate_orientation": "OutsidePrimeDilationAllRateOn G IMPLIES DenseReducedRatioCoreAllRateOn G; NO reverse asserted",
+    "canonical_rh_return": "ONLY conditional on actual OutsidePrimeDilationAllRateOn and original AffineFrequent G",
+    "unresolved": "Full original signed outsidePrimeDilationCorePacket still lacks the independent all-positive-rate supplier"
+  },
+  "finite_diagnostic": {
+    "path": "/mnt/data/prime_dilation_exact_diagnostic.py",
+    "sha256": "5d9d4be27186c629eef80e18283eb87c2501f7a2e4333df744c353adf7cc4a73",
+    "command": "Python exact integer source diagnostic",
+    "result": "PASS",
+    "assertions": 1575656,
+    "representative": {
+      "N": 600,
+      "gap_cut": 6,
+      "slope_cut": 6,
+      "ordered_edges": 1168,
+      "strict_negative": 860,
+      "squareful_zero": 308,
+      "old_q_one_star": 210,
+      "new_q_greater_one": 958
+    },
+    "classification": "EXACT_FINITE_DIAGNOSTIC_NOT_LEAN"
+  },
+  "verification": {
+    "source_published": "PENDING_EXPECTED_HEAD_LEASE",
+    "source_blob_readback": "PENDING",
+    "primary_mathematics": "UNCONDITIONAL_FINITE_SIGN_AND_PARTITION_PROOF_WRITTEN",
+    "finite_exact_diagnostic": "PASS",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "PNT_Chebyshev_quantitative_lower_in_Lean": "NOT_RUN",
+    "outside_prime_dilation_all_rate": "UNPROVED",
+    "cofinal_zero_count": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED",
+    "remote_native_execution_dispatched": false,
+    "CI_dispatched": false,
+    "scheduler_dispatched": false
+  },
+  "publication": "routine add-only nonforce expected-head main, preserve concurrent full tree",
+  "issue_refs": [
+    15,
+    1530,
+    1548
+  ]
+}

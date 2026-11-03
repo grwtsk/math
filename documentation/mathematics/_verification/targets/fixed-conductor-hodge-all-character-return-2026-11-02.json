@@ -1,0 +1,64 @@
+{
+  "schema": "grwtsk.math.source-verification-target/1",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "attribution": "grwtsk contributors",
+  "inspected_main_commit": "8855a8b1106d72ff62b9a0a3be365ea353d57131",
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "subject_module": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedConductorHodgeAllRateEquivalence.lean",
+  "source_imports": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedConductorHodgePort.lean": "20fe8540519f05de08ab7b20796a85d4b383eb80",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletResidueParseval.lean": "152ef7002c566bcca14ec8aac8c027c523693347"
+  },
+  "other_mathematical_context": {
+    "CMKaehlerZQCompleteLedger.lean": "2d07e13012f1afb7e40f9c90c7302e62c68696f1",
+    "CMOriginalHighSmoothAllRateEquivalence.lean": "57c7b76de27442cd00ccb188ee3e15ece1cab1a3",
+    "CMScaleDependentPrimeAllShellDirichletSqueeze.lean": "ae86a18d429ab16a5260580be8dc4bf92456012b",
+    "MoebiusDirichletQuarticDiagonalFloor.lean": "1cf5b19cd230c22d5a2a73fbabfb7359f853d288"
+  },
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_dependency": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "selected_declarations": [
+    "fullPositiveResidueEnergy",
+    "fullPositiveResidueEnergy_eq_character_sum",
+    "every_character_allGrid_of_complete",
+    "complete_allGrid_of_every_character",
+    "fullPositiveResidue_allGrid_iff_every_character",
+    "PositiveSectorComparison.complete_allGrid",
+    "zeroMetricAllError",
+    "zeroMetricAllError_metric_is_allGrid",
+    "zeroMetricAllError_defect_allGrid_iff_source",
+    "character_energy_le_fullPositive"
+  ],
+  "hypotheses": [
+    "fixed q>0 and original q-character source",
+    "all-positive-rate dyadic bound, constants may depend on q and rate",
+    "full positive original residue wave including the principal character",
+    "genuine signed source reconstruction and independent residual bound for Hodge transfer"
+  ],
+  "hostile_controls": [
+    "zero Hodge metric with entire unbounded source as reconstruction defect",
+    "principal character omitted by a mean-zero-only projection",
+    "large-modulus quartic lower bound incorrectly used as fixed-q upper bound",
+    "smoothness incorrectly substituted for all-rate arithmetic estimate",
+    "finite character count incorrectly promoted to uniform-in-conductor bound",
+    "source sign-coherent cross replaced by sum of independently squared atoms"
+  ],
+  "independent_reference": {
+    "path": "tests/fixed_conductor_reference.py (outside grwtsk/math pure source)",
+    "checks_passed": 40,
+    "source": "original integer Mobius through N=10000 and 5 causal sample times",
+    "python_to_lean_refinement": "NOT_PROVED"
+  },
+  "native_facets": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "source_to_runtime_refinement": "NOT_PROVED",
+    "analytic_GRH_return": "NOT_ESTABLISHED",
+    "independent_metric_and_error_all_rate": "OPEN_ARITHMETIC"
+  },
+  "native_execution_dispatched": false,
+  "proof_acceptance": false
+}

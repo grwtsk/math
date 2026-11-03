@@ -1,0 +1,162 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Exact based labeled graph-cycle cardinality and periodic label lift-fiber compensation",
+  "repository": "grwtsk/math",
+  "issue": "https://github.com/grwtsk/math/issues/1576",
+  "classification": "SOURCE_PROOF_CANDIDATES_NOT_KERNEL_VERIFIED",
+  "source_set": [
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBasedCycleCard.lean",
+      "blob": "d7fd2f5aad643d4350e4b5bfd7128dd979717a74",
+      "role": "original inductive walk zero/snoc equiv, recursive finite witness instances, ExactBasedCycleCard, matrix trace to based cycle cardinality",
+      "expected_declarations": [
+        "SoficBasedCycleCard.labeledWalkData_card_eq_walkCount",
+        "SoficBasedCycleCard.exactBasedCycleCard",
+        "SoficBasedCycleCard.trace_pow_eq_card_based_cycles"
+      ]
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicFiberLedger.lean",
+      "blob": "e333b47af8f907e344bcb150e9ebd9675ea040b0",
+      "role": "explicit unproved source-bound label map, exact fiber summation, natural-number missing/surplus correction",
+      "expected_declarations": [
+        "SoficPeriodicFiberLedger.HasLabelPreservingCycleMap",
+        "SoficPeriodicFiberLedger.trace_eq_sum_label_lift_fibers",
+        "SoficPeriodicFiberLedger.trace_add_unlifted_eq_label_card_add_surplus",
+        "SoficPeriodicFiberLedger.label_card_eq_trace_of_bijective_map"
+      ]
+    }
+  ],
+  "mathematical_review": {
+    "path": "documentation/mathematics/_support/reviews/sofic-based-cycle-and-label-fibers-2026-11-02.md",
+    "blob": "a103f70962dba048362a74758a7601730b3d4408"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "immutable_source_dependencies": [
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CertifiedTransversal.lean",
+      "blob": "df720cbb72c616938635c20477430f5f0ded4021"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/ExactSoficLanguageCover.lean",
+      "blob": "f50489eaf6c7277993a08925a58b7765f9e10ec9"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLanguageTransversal.lean",
+      "blob": "238da905b6595c944cac40f39ae2f54870032132"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean",
+      "blob": "7aa717801ded4b67b6228e852ed76323cdefaa70"
+    }
+  ],
+  "intended_exact_math": [
+    "LabeledWalkData G 0 s t ≃ PLift(s=t)",
+    "LabeledWalkData G (n+1) s t ≃ Sigma middle, (LabeledWalkData G n s middle) × (Subtype G.edge middle _ t)",
+    "card(LabeledWalkData G n s t) = labeledWalkCount G n s t for every n,s,t",
+    "ExactBasedCycleCard G n = card(BasedCycleData G n) = basedClosedWalkCount G n for every n",
+    "trace(labeledAdjacency G ^ n) = card(BasedCycleData G n)",
+    "Given an actual source-label preserving map f : BasedCycleData G n → PeriodicLabelPoint language n, trace = sum over periodic label points of the exact cardinality of each lift fiber",
+    "Natural-number correction trace + unliftedLabelCount = card(PeriodicLabelPoint) + surplusLabelLiftCount"
+  ],
+  "source_scope": [
+    "The original LabeledGraph.edge is a Prop on (source state, alphabet letter, target state); distinct triples are counted separately.",
+    "Finite state AND finite alphabet are explicit assumptions; original ExactLanguagePresentation supplies finite state only.",
+    "Every graph cycle retains distinguished initial state, full intermediate state path and emitted letter sequence.",
+    "No unconditional comparison of graph trace and periodic label points.",
+    "Graph-to-label map existence from arbitrary-length cyclic repetition is mathematically available under exact language but remains an unproved Lean target."
+  ],
+  "open_maths": [
+    "HasLabelPreservingCycleMap for the actual exact full-language presentation (not merely a given arbitrary map)",
+    "Period-preserving graph cycle lift uniqueness or explicit nontrivial defect multiplicity for the selected presentation",
+    "Any dynamical zeta determinant identity beyond the finite original graph matrix",
+    "Pinned native compilation of the canonical transversal and whole-language sofic consumer",
+    "Native compilation/kernel/axiom acceptance of both new source files and the predecessor graph-to-matrix file"
+  ],
+  "finite_diagnostics": {
+    "classification": "FINITE_EXACT_INTEGER_WITNESS_ENUMERATION_NOT_LEAN",
+    "script": "/mnt/data/sofic_based_cycle_fiber_preflight.py",
+    "script_sha256": "0d7146b0dd5ca8f3cd3ff510d0689b01c6c9a34d46f308e3556c6391fbba8f5a",
+    "results": "/mnt/data/sofic_based_cycle_fiber_preflight.json",
+    "result_sha256": "ecf6b7b394ed62ccc3b0f8111236de3c10aef0c470a78cecbee03c8cf474e204",
+    "random_graphs": 72,
+    "state_sizes": [
+      1,
+      2,
+      3
+    ],
+    "alphabet_sizes": [
+      1,
+      2
+    ],
+    "n_range": [
+      0,
+      4
+    ],
+    "exact_integer_assertions": 7215,
+    "max_explicit_based_cycle_card": 458,
+    "counterexample_lengths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "bounded_first_attempt_exceeded_runtime": true,
+    "interpretation": "Diagnostic only, not lean compiler or kernel evidence"
+  },
+  "acceptance_requirements": {
+    "source_bound_native_owner": "Noe managed approved route only",
+    "Noe_automation_skill_revision_inspected": "547e05de7ce3548492464ed9b8a6c9edef2c752c",
+    "Noe_automation_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "allowed_axioms_for_audit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "required_facets": [
+      "exact-source native project compile",
+      "fresh trust=0 kernel replay",
+      "expected theorem types and universes",
+      "complete transitive axiom audit",
+      "restored host owner resource state"
+    ],
+    "no_local_lean_lake_elan_installed": true,
+    "no_verified_Noe_math_local_checkout": true
+  },
+  "verification": {
+    "publication": "PASS_GUARDED_NONFORCE_MAIN",
+    "git_source_blobs_created": "PASS",
+    "exact_git_readback": "PASS_4_OF_4",
+    "authored_sorry_axiom_unsafe": "NONE_FOUND_IN_STATIC_SCAN",
+    "native_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "full_import_closure": "NOT_RUN",
+    "native_runner_dispatched": false,
+    "CI_dispatched": false,
+    "scheduler_dispatched": false,
+    "formal_kernel_acceptance": false,
+    "global_periodic_label_trace_identity": "FALSE_IN_GENERAL",
+    "issue_state": "OPEN"
+  },
+  "publication": {
+    "published_commit": "9084ee35c64765114b8111c3c19b9cda580ee181",
+    "expected_parent": "41d5e5b57fb390cc0ca526caeecacc863876d327",
+    "exact_source_blobs": [
+      "d7fd2f5aad643d4350e4b5bfd7128dd979717a74",
+      "e333b47af8f907e344bcb150e9ebd9675ea040b0"
+    ],
+    "exact_review_blob": "a103f70962dba048362a74758a7601730b3d4408",
+    "initial_manifest_blob": "e2d8769eb543e39cb8e0dc3fd5474ba08d04b8d7",
+    "source_only_not_Lean_acceptance": true
+  }
+}

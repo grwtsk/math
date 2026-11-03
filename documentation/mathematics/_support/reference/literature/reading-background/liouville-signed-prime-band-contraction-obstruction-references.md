@@ -1,0 +1,16 @@
+# Literature and formalization ledger: signed prime-band contraction obstruction
+
+## RH-LIOUVILLE-SIGNED-PRIME-BAND-CONTRACTION-01
+
+- **Title, attribution, date:** *Signed finite-prime contraction cannot center the exact causal residual*, grwtsk contributors, 2026-10-31.
+- **Research scope:** `6ae605b4-a7b4-83e8-9ada-ee9c9089476b`.
+- **Lean source candidate:** `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleSignedPrimeBandContractionObstruction.lean`, Git blob `ab84ddecee5084b64b60c316563c62b7b57d77ca`.
+- **Mathematical review:** `documentation/mathematics/_support/reviews/liouville-signed-prime-band-contraction-obstruction.md`, Git blob `fa85dc9dbf1a760af78effc1c087012a0c64bbbf`.
+- **Static verification target:** `documentation/mathematics/_verification/targets/liouville-signed-prime-band-contraction-obstruction.json`, Git blob `ff870184f5c1e96d67829e555fca1ed1ee1fef10`.
+- **Exact local predecessors:** `LiouvillePrimeDelayObstruction.lean` blob `0f4b1fa7f5fa69b3d8fa8b2ab2bef4abeec7c574`; `LiouvilleGrowingPrimeBandIdentity.lean` blob `477ca1d19b634a09e8d5c1e38e8035798bb0ef37`; `LiouvilleCausalEnergyTarget.lean` blob `a00aaa07c067b4c88203372870b5d5d151de0de4`.
+- **Classical background:** the positive mean of a completely multiplicative function differing from `1` at only finitely many primes is consistent with Delange--Halasz/Wirsing mean-value theory. No new general multiplicative mean theorem is claimed. The local contribution is the explicit signed-weight contraction-versus-centering inequality and its embedding in the unchanged causal residual energy.
+- **Exact mathematical scope:** for finite selected primes and arbitrary real weights, define `W=sum w_p`, `rho=sum |w_p|/sqrt p`, and `Q=sum w_p/p`. In the finite-prime completely multiplicative sign model, the exact residual mean is `c_P*(W+Q)`, where `c_P=prod (p-1)/(p+1)>0`. Since `|Q|<=rho/sqrt 2`, strict contraction `rho<W` forces positive residual mean, while exact centering requires `rho>=sqrt 2*W`. The residual then has an explicit power-error prefix asymptotic and positive exponential causal energy under the original response.
+- **Boundary:** the countermodel is not the actual Liouville function. The result eliminates a universal finite signed-weight Neumann/norm bootstrap; it does not eliminate an argument using the actual signs on an unbounded prime family or a complete signed Type-II/Buchstab/endpoint/double-Abel aggregate.
+- **Formal proof boundary:** scalar contraction/centering and finite-product positivity scripts are supplied as source proof candidates. The sharp reciprocal-radius inequality, prefix reindexing, and causal-energy lower bound remain named propositions, not axioms or accepted theorems.
+- **Verification:** source inspection `DONE`; analytical derivation `WRITTEN`; compilation, expected-type checking, fresh-kernel replay, transitive axiom audit, native execution, and external theorem replay all `NOT_RUN`. Uniform energy, complete endpoint control, and RH remain `UNPROVED`.
+- **Canonical ledger status:** this source-bound shard is published because a source-complete, concurrency-safe textual append to `paper-to-formalization-references.md` was not available in this connector workflow. The canonical monolith is left byte-preserved rather than reconstructed from partial output.

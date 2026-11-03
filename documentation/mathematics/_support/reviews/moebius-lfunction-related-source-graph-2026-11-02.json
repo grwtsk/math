@@ -1,0 +1,603 @@
+{
+  "schema": "grwtsk.math.source-graph/1",
+  "snapshot_math_commit": "1cdffe535e8fbd8d0cec79f2c56d6c8f87c38955",
+  "snapshot_lean": "leanprover/lean4:v4.34.1",
+  "snapshot_mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "scope": "Directly relevant maintained Mobius, L-function family, Euler coefficient, Hermitian energy, ideal norm and analytic return interfaces; not all 7300 files of ZetaAndLFunctionsAnalyticTheory",
+  "nodes": [
+    {
+      "id": "family_inverse",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionFamilyInverse.lean",
+      "blob_sha": "2b9c2b556de587db611478b7724c9205db90fd3b",
+      "role": "coefficient",
+      "status": "source_candidate"
+    },
+    {
+      "id": "local_euler",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionLocalEuler.lean",
+      "blob_sha": "b3c892bd4c4305d328a8d2ae896be6c686ce1466",
+      "role": "local_euler",
+      "status": "source_candidate"
+    },
+    {
+      "id": "euler_synthesis",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionEulerSynthesis.lean",
+      "blob_sha": "20ba091e118bc17511d20604e3b4a978d85d91f9",
+      "role": "local_to_global",
+      "status": "source_candidate"
+    },
+    {
+      "id": "hermitian",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionHermitianPickup.lean",
+      "blob_sha": "0643134718a73f65f1ca01f2db0804b4883676b4",
+      "role": "family_energy",
+      "status": "source_candidate"
+    },
+    {
+      "id": "ideal_norm",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionIdealNormFamilies.lean",
+      "blob_sha": "5899cf585836b595ec88a2a078d7ece16021d00d",
+      "role": "ideal_to_integer",
+      "status": "source_candidate"
+    },
+    {
+      "id": "dirichlet_tail",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletHermitianHighGcdTransfer.lean",
+      "blob_sha": "9cf8041d367710927d74447e47d51e1ea632d3ee",
+      "role": "positive_tail",
+      "status": "source_candidate"
+    },
+    {
+      "id": "original_unmasked",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUnmaskedLowGcdEndpoint.lean",
+      "blob_sha": "1adfd2470cb28a0d98ad567d436853ab2d091f67",
+      "role": "original_signed",
+      "status": "source_candidate"
+    },
+    {
+      "id": "complete_tail",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCompleteHighGcdElementaryClosure.lean",
+      "blob_sha": "918952c6edc614291bad983f253366d7cb31a18f",
+      "role": "original_positive_tail",
+      "status": "source_candidate"
+    },
+    {
+      "id": "divisor_cover",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCompleteHighGcdDivisorCover.lean",
+      "blob_sha": "354af0c431832b883974a3157e1000eb4f046a1f",
+      "role": "original_positive_tail",
+      "status": "source_candidate"
+    },
+    {
+      "id": "original_root",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalGramRootFloorSuppliers.lean",
+      "blob_sha": "efbf49d9d0be6f59dc165ec715b14b0f12207d12",
+      "role": "original_positive_tail",
+      "status": "source_candidate"
+    },
+    {
+      "id": "original_sieve",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdSieveSquareEnergy.lean",
+      "blob_sha": "72e6bcf5046f090011ae261dda8a77b837906741",
+      "role": "original_sieve",
+      "status": "source_candidate"
+    },
+    {
+      "id": "original_sieve_closures",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdSieveTargetClosures.lean",
+      "blob_sha": "644f7ce39711b520d3bad6d26ba107d6ef4f0171",
+      "role": "original_sieve",
+      "status": "source_candidate"
+    },
+    {
+      "id": "fixed_core",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedCoreEnergyComparison.lean",
+      "blob_sha": "82011c80d8a8dacbf3cbe13ccded229d5c24bd80",
+      "role": "original_signed",
+      "status": "source_candidate"
+    },
+    {
+      "id": "original_mertens_energy",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSquareEnergyIntegration.lean",
+      "blob_sha": "c01a1e892c14343aee002554172373e9190f6611",
+      "role": "real_energy",
+      "status": "source_candidate"
+    },
+    {
+      "id": "original_mertens_bridge",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSquareBridge.lean",
+      "blob_sha": "be156509d9679a22b52b32d087f87d8449a047ef",
+      "role": "real_energy",
+      "status": "source_candidate"
+    },
+    {
+      "id": "original_gram",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalGramCauchy.lean",
+      "blob_sha": "01c7128c5c81664405b6fe4d1a373dfdbb0a51dc",
+      "role": "real_energy",
+      "status": "source_candidate"
+    },
+    {
+      "id": "original_divisor_collapse",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDivisorCausalGramCollapse.lean",
+      "blob_sha": "6216cb9c8bc590a2dfe84132b8267c90a6622148",
+      "role": "original_divisor",
+      "status": "source_candidate"
+    },
+    {
+      "id": "original_gcd_time_shift",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalGcdTimeShift.lean",
+      "blob_sha": "db0052901eca3050ed0ce812d3e0e7675c8fab05",
+      "role": "original_geometry",
+      "status": "source_candidate"
+    },
+    {
+      "id": "elliptic_observer",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGeneralizedFiberObserver.lean",
+      "blob_sha": "6ca04b2685cd422a363cc0146f8ac65b59e0c870",
+      "role": "elliptic_observation",
+      "status": "source_candidate"
+    },
+    {
+      "id": "elliptic_trace_bank",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
+      "blob_sha": "df9ded979964790b92f3053efc3aedeb6e2dfa78",
+      "role": "elliptic_observation",
+      "status": "source_candidate"
+    },
+    {
+      "id": "decoder",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusWeightedDecoderEnergyTransfer.lean",
+      "blob_sha": "ce1f1396785fe8fb9e045440a4edce25df734326",
+      "role": "real_energy_decoder",
+      "status": "source_candidate"
+    },
+    {
+      "id": "signed_mask",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSignedMaskWaveEnergyBridge.lean",
+      "blob_sha": "c024877cd1d9f3711f0ddad7259de15b1d2bbfdd",
+      "role": "real_mask",
+      "status": "source_candidate"
+    },
+    {
+      "id": "perron",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusReciprocalZetaPerronBridge.lean",
+      "blob_sha": "69ae2587f1f6e30adec21b9d7dcf43eeffa2a499",
+      "role": "zeta_analytic",
+      "status": "source_candidate"
+    },
+    {
+      "id": "perron_window",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPerronLocalCriticalWindow.lean",
+      "blob_sha": "d48a4182e582a228e140d445b5778b41791962b8",
+      "role": "zeta_analytic",
+      "status": "source_candidate"
+    },
+    {
+      "id": "adaptive_rh",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusAdaptiveFiniteScaleRHReturn.lean",
+      "blob_sha": "212c433cb8e7560f99d3fea75bed5d8b79d3650e",
+      "role": "finite_height_only",
+      "status": "source_candidate"
+    },
+    {
+      "id": "primitive_grh",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyPublicPrimitiveCharacterDataFamilyGRH.lean",
+      "blob_sha": "d0b5331a21bb6392e6082dbb6994040347fd2bcb",
+      "role": "primitive_grh",
+      "status": "interface"
+    },
+    {
+      "id": "dirichlet_grh_assembly",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/AssemblyPublicPrimitiveCharacterHalfPlusEpsilonFamilyImpliesDirichletGRHOfMelli.lean",
+      "blob_sha": "ea306c06d65cca3f640c3b94120b16029cd1e802",
+      "role": "primitive_grh",
+      "status": "conditional"
+    },
+    {
+      "id": "analytic_adapter",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MathlibLFunctionAdaptersPublic.lean",
+      "blob_sha": "377eab4d5de0f5d158b9c3d8f2fec3b50f10c967",
+      "role": "analytic_dirichlet",
+      "status": "interface"
+    },
+    {
+      "id": "mellin",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MellinEqDirichletPublic.lean",
+      "blob_sha": "a23c30ad74e718e34e9fe79edeae6aa8af845d90",
+      "role": "mellin",
+      "status": "library_mirror"
+    },
+    {
+      "id": "dirichlet_product",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletCauchyProductGeneric.lean",
+      "blob_sha": "b398ca80aa8e5f91aca2d997bd779c6f89254a41",
+      "role": "coefficient",
+      "status": "source_candidate"
+    },
+    {
+      "id": "character_data",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CharacterPublicPrimitiveCharacterData.lean",
+      "blob_sha": "ef0e64386f1b26debf97aa248cfadeaffb0b4820",
+      "role": "primitive_grh",
+      "status": "interface"
+    },
+    {
+      "id": "completed_character_draft",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DirichletCompletedSourceDraft.lean",
+      "blob_sha": "244f4487fbaf076b0713632ece3bc34efdef1de8",
+      "role": "analytic_dirichlet",
+      "status": "unelaborated_draft"
+    },
+    {
+      "id": "endpoint_quad",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean",
+      "blob_sha": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+      "role": "real_analytic_return",
+      "status": "source_candidate"
+    },
+    {
+      "id": "good_scale",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GoodScaleEnergyCriterion.lean",
+      "blob_sha": "ca3ae4975b20cf796a167308a9e87546c6001c41",
+      "role": "real_analytic_return",
+      "status": "source_candidate"
+    },
+    {
+      "id": "dirichlet_character",
+      "path": "GRWTSK/NumberTheory/DirichletCharacterBasic.lean",
+      "blob_sha": "6026d444ad49c14c802f1e21b30646c8a2595056",
+      "role": "character_type",
+      "status": "upstream_mirror"
+    },
+    {
+      "id": "dirichlet_lseries",
+      "path": "GRWTSK/NumberTheory/DirichletLSeries.lean",
+      "blob_sha": "110bdfb26f239bda5757ddb342f083ee00973ae1",
+      "role": "analytic_dirichlet",
+      "status": "upstream_mirror"
+    },
+    {
+      "id": "modular_lfunction",
+      "path": "GRWTSK/NumberTheory/LFunctionPublic.lean",
+      "blob_sha": "9995dc693a71fb7685eef934df0b0978f7519f7b",
+      "role": "modular_analytic",
+      "status": "upstream_mirror"
+    },
+    {
+      "id": "hecke_double_coset",
+      "path": "GRWTSK/NumberTheory/HeckeRingDefsPublic.lean",
+      "blob_sha": "738c107f82e5c55ce06ce6b76c3b17d26e9f81ea",
+      "role": "hecke_double_coset",
+      "status": "not_ideal_norm_source"
+    },
+    {
+      "id": "mathlib_inverse",
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/ArithmeticFunction/Defs.lean",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "convolution_inverse",
+      "status": "pinned_library"
+    },
+    {
+      "id": "mathlib_character_mu",
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/LSeries/Dirichlet.lean",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "character_moebius_right_half_plane",
+      "status": "pinned_library"
+    },
+    {
+      "id": "mathlib_analytic",
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/LSeries/DirichletContinuation.lean",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "dirichlet_analytic",
+      "status": "pinned_library"
+    },
+    {
+      "id": "mathlib_pseries",
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/Analysis/PSeries.lean",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "role": "inverse_square_tail",
+      "status": "pinned_library"
+    },
+    {
+      "id": "family_graph_ledger",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionFamilySourceGraphBridge.lean",
+      "blob_sha": "58e7475f6b933941456afe3f0ee5653e379e6c37",
+      "role": "integrated_hermitian_ledger",
+      "status": "new_source_candidate"
+    },
+    {
+      "id": "family_sieve",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionFamilySieveBridge.lean",
+      "blob_sha": "50b874689f0b5eab0bc1d30da71494ca752ba644",
+      "role": "complex_divisor_sieve",
+      "status": "new_source_candidate"
+    }
+  ],
+  "edges": [
+    {
+      "from": "mathlib_inverse",
+      "to": "family_inverse",
+      "relation": "uses_existing_inverse",
+      "status": "direct_pinned_api"
+    },
+    {
+      "from": "mathlib_character_mu",
+      "to": "family_inverse",
+      "relation": "DirichletCharacter.convolution_mul_moebius",
+      "status": "direct_pinned_api"
+    },
+    {
+      "from": "family_inverse",
+      "to": "local_euler",
+      "relation": "import",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "local_euler",
+      "to": "euler_synthesis",
+      "relation": "import",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "family_inverse",
+      "to": "ideal_norm",
+      "relation": "import",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "family_inverse",
+      "to": "hermitian",
+      "relation": "through_local_euler",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "original_gram",
+      "to": "hermitian",
+      "relation": "same_original_response_Gram",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "original_mertens_energy",
+      "to": "hermitian",
+      "relation": "real_to_complex_prefix_reconstruction",
+      "status": "MISSING_complex_proof"
+    },
+    {
+      "from": "original_mertens_bridge",
+      "to": "original_mertens_energy",
+      "relation": "finite_real_wave_and_Abel",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "original_unmasked",
+      "to": "complete_tail",
+      "relation": "positive_divisor_cover_chain",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "divisor_cover",
+      "to": "complete_tail",
+      "relation": "DivisorCoverRootTailTarget_proof_candidate",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "mathlib_pseries",
+      "to": "complete_tail",
+      "relation": "sum_Ioc_inv_sq_le_sub",
+      "status": "direct_pinned_api"
+    },
+    {
+      "from": "complete_tail",
+      "to": "dirichlet_tail",
+      "relation": "positive_character_magnitude_bound",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "hermitian",
+      "to": "dirichlet_tail",
+      "relation": "complex_weighted_cost",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "hermitian",
+      "to": "family_graph_ledger",
+      "relation": "high_low_exact_Hermitian_partition",
+      "status": "NEW_authored_candidate"
+    },
+    {
+      "from": "dirichlet_tail",
+      "to": "family_graph_ledger",
+      "relation": "all_character_positive_highGcd_cost",
+      "status": "NEW_authored_candidate"
+    },
+    {
+      "from": "euler_synthesis",
+      "to": "family_graph_ledger",
+      "relation": "conditional_DirichletEulerSourceIdentificationTarget",
+      "status": "MISSING_identification_premise"
+    },
+    {
+      "from": "original_sieve",
+      "to": "family_sieve",
+      "relation": "universal_cutoff_classical_Mobius_coefficients",
+      "status": "NEW_authored_candidate"
+    },
+    {
+      "from": "original_sieve_closures",
+      "to": "family_sieve",
+      "relation": "first_negative_divisor_collar",
+      "status": "NEW_authored_candidate"
+    },
+    {
+      "from": "hermitian",
+      "to": "family_sieve",
+      "relation": "complex_divisor_square_energy_integral",
+      "status": "MISSING_complex_proof"
+    },
+    {
+      "from": "family_graph_ledger",
+      "to": "family_sieve",
+      "relation": "uses_family_low_gcd_source",
+      "status": "NEW_authored_candidate"
+    },
+    {
+      "from": "ideal_norm",
+      "to": "family_inverse",
+      "relation": "normGroupedReciprocal_equals_DirichletInverse",
+      "status": "CONDITIONAL_norm_pushforward"
+    },
+    {
+      "from": "hecke_double_coset",
+      "to": "ideal_norm",
+      "relation": "no_exact_ideal_norm_map",
+      "status": "NOT_A_BRIDGE"
+    },
+    {
+      "from": "elliptic_trace_bank",
+      "to": "elliptic_observer",
+      "relation": "matched_good_prime_trace_channels",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "elliptic_observer",
+      "to": "euler_synthesis",
+      "relation": "trace_observer_to_curve_L_coefficients",
+      "status": "MISSING_HasseWeil_identification"
+    },
+    {
+      "from": "modular_lfunction",
+      "to": "euler_synthesis",
+      "relation": "modular_Fourier_coefficient_local_factor_compatibility",
+      "status": "MISSING_modularity_and_coefficients"
+    },
+    {
+      "from": "local_euler",
+      "to": "ideal_norm",
+      "relation": "prime_ideal_Euler_to_rational_prime_polynomials",
+      "status": "MISSING_ideal_factorization_transfer"
+    },
+    {
+      "from": "analytic_adapter",
+      "to": "primitive_grh",
+      "relation": "completed_L_poles_conductor",
+      "status": "analytic_interface"
+    },
+    {
+      "from": "character_data",
+      "to": "primitive_grh",
+      "relation": "primitive_character_GRH_types",
+      "status": "analytic_interface"
+    },
+    {
+      "from": "dirichlet_grh_assembly",
+      "to": "primitive_grh",
+      "relation": "characterwise_Mellin_half_plus_epsilon_return",
+      "status": "CONDITIONAL_Mellin_interface"
+    },
+    {
+      "from": "mellin",
+      "to": "dirichlet_grh_assembly",
+      "relation": "generic_Mellin_source_needed_to_bridge_family_pickup",
+      "status": "MISSING_source_specific_Mellin"
+    },
+    {
+      "from": "mathlib_analytic",
+      "to": "analytic_adapter",
+      "relation": "DirichletCharacter.LFunction_analytic_continuation",
+      "status": "direct_pinned_api"
+    },
+    {
+      "from": "family_graph_ledger",
+      "to": "dirichlet_grh_assembly",
+      "relation": "family_low_gcd_to_centeredTwistedPsi",
+      "status": "MISSING_causal_to_analytic_bridge"
+    },
+    {
+      "from": "family_sieve",
+      "to": "dirichlet_grh_assembly",
+      "relation": "family_sieve_to_centeredTwistedPsi",
+      "status": "MISSING_causal_to_analytic_bridge"
+    },
+    {
+      "from": "endpoint_quad",
+      "to": "good_scale",
+      "relation": "original_real_quadrature_to_zeta_RH_return",
+      "status": "authored_candidate"
+    },
+    {
+      "from": "good_scale",
+      "to": "primitive_grh",
+      "relation": "zeta_RH_to_all_character_GRH",
+      "status": "NOT_A_BRIDGE"
+    },
+    {
+      "from": "decoder",
+      "to": "hermitian",
+      "relation": "real_decoder_to_complex_coefficient_error_mass",
+      "status": "MISSING_complex_decoder"
+    },
+    {
+      "from": "signed_mask",
+      "to": "hermitian",
+      "relation": "real_signed_mask_to_complex_hermitian_source",
+      "status": "MISSING_complex_analogue"
+    },
+    {
+      "from": "perron",
+      "to": "adaptive_rh",
+      "relation": "original_zeta_finite_height_only",
+      "status": "source_candidate_finite_only"
+    },
+    {
+      "from": "perron_window",
+      "to": "adaptive_rh",
+      "relation": "finite_height_Perron_local_window",
+      "status": "source_candidate_finite_only"
+    },
+    {
+      "from": "original_divisor_collapse",
+      "to": "original_unmasked",
+      "relation": "real_divisor_packet_vs_gcd_source",
+      "status": "related_distinct_split"
+    },
+    {
+      "from": "original_gcd_time_shift",
+      "to": "local_euler",
+      "relation": "time_shift_for_real_original_mu_not_automatically_local_L",
+      "status": "RELATED_NO_AUTOMATIC_TRANSFER"
+    }
+  ],
+  "statuses": {
+    "direct_pinned_api": "APIs found in pinned Mathlib source, not a proof of new module acceptance",
+    "authored_candidate": "Lean source with proof body, native acceptance NOT_RUN",
+    "NEW_authored_candidate": "This turn's new source, native acceptance NOT_RUN",
+    "MISSING_complex_proof": "explicit missing Hermitian finite integral/interface bridge",
+    "NOT_A_BRIDGE": "source with distinct algebra; do not infer a theorem",
+    "MISSING_source_specific_Mellin": "analytic identification not supplied"
+  },
+  "key_open_targets": [
+    "FamilyHermitianFiniteGramTarget",
+    "FamilyPrefixResponseReconstructionTarget",
+    "DirichletEulerSourceIdentificationTarget",
+    "FamilyHermitianDivisorSieveTarget",
+    "FamilyHigherDivisorHermitianReturnTarget",
+    "PrimitiveDirichletFamilyLowGcdEveryRate",
+    "PrimitiveDirichletCausalToPrefixBridgeTarget",
+    "NormPushforwardConvolutionTarget",
+    "FamilyWeightedHighGcdEveryRate for non-Dirichlet coefficients",
+    "GRH via primitive-character Mellin/explicit formula, not established",
+    "Original PlainLowGcdEveryRateDyadic, RH-strength, unproved"
+  ],
+  "scope_notes": [
+    "All edge statuses reflect inspected source text, not a kernel theorem acceptance claim",
+    "Only the real ordinary zeta endpoint-to-RH return is directly authored in the original sources",
+    "The elliptic observer's trace is not an elliptic L-function coefficient identification",
+    "Hecke double-coset ring does not supply nonzero ideal norm multiplicativity",
+    "Complex arithmetic coefficients require Hermitian conjugation and weighted tail"
+  ]
+}

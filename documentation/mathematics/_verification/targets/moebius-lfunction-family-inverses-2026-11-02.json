@@ -1,0 +1,124 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "created": "2026-11-02",
+  "title": "L-function generalized Mobius family translation: exact convolution inverse, Dirichlet characters, Euler polynomial synthesis, Hermitian response, ideal-norm transfer",
+  "sources": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionFamilyInverse.lean": "2b9c2b556de587db611478b7724c9205db90fd3b",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionLocalEuler.lean": "b3c892bd4c4305d328a8d2ae896be6c686ce1466",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionEulerSynthesis.lean": "20ba091e118bc17511d20604e3b4a978d85d91f9",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionHermitianPickup.lean": "0643134718a73f65f1ca01f2db0804b4883676b4",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionIdealNormFamilies.lean": "5899cf585836b595ec88a2a078d7ece16021d00d",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletHermitianHighGcdTransfer.lean": "9cf8041d367710927d74447e47d51e1ea632d3ee",
+    "documentation/mathematics/_support/reviews/moebius-lfunction-family-inverses-and-hermitian-translation-2026-11-02.md": "0f5015bd0d06e58398792965b36e4a63d1eb7569"
+  },
+  "baseline": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCompleteHighGcdElementaryClosure.lean": "918952c6edc614291bad983f253366d7cb31a18f",
+    "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalGramCauchy.lean": "01c7128c5c81664405b6fe4d1a373dfdbb0a51dc",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGeneralizedFiberObserver.lean": "6ca04b2685cd422a363cc0146f8ac65b59e0c870",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MathlibLFunctionAdaptersPublic.lean": "377eab4d5de0f5d158b9c3d8f2fec3b50f10c967",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyPublicPrimitiveCharacterDataFamilyGRH.lean": "d0b5331a21bb6392e6082dbb6994040347fd2bcb"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "pinnedMathlibAPIs": [
+      "ArithmeticFunction.dirichletInverse",
+      "ArithmeticFunction.self_mul_dirichletInverse",
+      "ArithmeticFunction.dirichletInverse_mul_self",
+      "DirichletCharacter.convolution_mul_moebius",
+      "DirichletCharacter.LSeries.mul_mu_eq_one"
+    ]
+  },
+  "generic_source_decl": [
+    "NormalizedCoefficients.mobius",
+    "NormalizedCoefficients.mul_mobius",
+    "NormalizedCoefficients.mobius_mul",
+    "NormalizedCoefficients.product_mobius",
+    "zeta_mobius_eq_classical",
+    "dirichletCharacter_mobius_eq_twist",
+    "dirichletCharacter_mobius_apply"
+  ],
+  "local_euler_data": [
+    "EulerPolynomialFamily",
+    "linearReciprocalPolynomial",
+    "quadraticReciprocalPolynomial",
+    "ellipticClassicalLocal",
+    "ellipticCenteredLocal",
+    "FrobeniusInvariantLocalData",
+    "PrimeEulerPolynomialSource.mobius",
+    "PrimeEulerPolynomialSource.family",
+    "PrimeEulerPolynomialSource.family_mobius_eq"
+  ],
+  "complex_family_data": [
+    "familyMobiusPrefix",
+    "familyPickupVelocity",
+    "familyWholePickup",
+    "familyCumulativeEnergy",
+    "familyHermitianKernel",
+    "familyWeightedHighGcdCost",
+    "familyLowGcdCross",
+    "dirichletHighGcdCost_le_root",
+    "dirichletHighGcdCost_all_rates"
+  ],
+  "ideal_family_data": [
+    "NormFiberDirichletData",
+    "NormFiberDirichletData.normGroupedCoefficients",
+    "NormFiberDirichletData.normGroupedReciprocal",
+    "NormFiberDirichletData.groupedReciprocal_eq_familyMobius",
+    "IdealMobiusFactorizationData",
+    "HeckeNormGroupedMobiusCompatibilityTarget"
+  ],
+  "extra_missing_lean_targets": [
+    "SynthesizedPrimePowerCompatibilityTarget",
+    "DirichletEulerSourceIdentificationTarget",
+    "EllipticClassicalSourceIdentificationTarget",
+    "FrobeniusSourceIdentificationTarget",
+    "NormPushforwardConvolutionTarget",
+    "FamilyHermitianFiniteGramTarget",
+    "FamilyPrefixResponseReconstructionTarget",
+    "FamilyWeightedHighGcdEveryRate for non-Dirichlet families",
+    "FamilyLowGcdEveryRateDyadic for each family",
+    "family-specific gamma/conductor/pole/functional equation/analytic return"
+  ],
+  "open_arithmetic": [
+    "PlainLowGcdEveryRateDyadic ordinary RH-strength signed bound",
+    "Dirichlet family GRH and all wider family zero statements"
+  ],
+  "tested_finite": {
+    "exactDirichletConvolutionNMax": 120,
+    "moduli": [
+      4,
+      5
+    ],
+    "zetaAndZetaSquareNMax": 80,
+    "gaussianDedekindNormGroupNMax": 120,
+    "toyEllipticPointCountPrimes": [
+      3,
+      5,
+      7,
+      11,
+      13
+    ],
+    "testType": "FINITE_EXACT_INTEGER_AND_SIMPLE_COMPLEX",
+    "intervalCertified": false,
+    "notLeanEvidence": true
+  },
+  "verification": {
+    "sourceStaticDeclarationScan": "NO_DECLARATION_PREFIX_sorry_admit_axiom_unsafe_DETECTED",
+    "parsing": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "full_import_compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "generated_root_import": "NOT_ADDED",
+    "native_execution": "NOT_DISPATCHED",
+    "status": "SOURCE_PROOF_CANDIDATES_ONLY"
+  },
+  "publicationScope": {
+    "additiveOnly": true,
+    "oldSourcesEdited": false,
+    "toolchainPinsEdited": false,
+    "forcePush": false
+  }
+}

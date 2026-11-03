@@ -1,0 +1,138 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Reversible genuine Möbius radical convolution, exact finite inverse and RH-scale obstruction",
+  "date": "2026-11-01",
+  "attribution": "grwtsk contributors; ChatGPT formalization assistance",
+  "repository": "grwtsk/math",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDivisorRadicalReversible.lean",
+    "blob": "41321666e299d71f2eb1e24ee6eae260b2d60188",
+    "lines": 197,
+    "root_import_changed": false,
+    "no_authored_sorry_axiom_unsafe": true
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-divisor-radical-reversible-rh-frontier-2026-11-01.md",
+    "blob": "e6169623bf58bd085652a52b042241547c33613a"
+  },
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDivisorPNTTransfer.lean",
+      "blob": "3aed2ced84fd353f4738dee414b1bc77e6f225d1",
+      "role": "radicalArithmetic and exact original Mertens-convolution prefix"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDivisorCausalGramCollapse.lean",
+      "blob": "6216cb9c8bc590a2dfe84132b8267c90a6622148",
+      "role": "unchanged original integer signed proper-divisor and incomparable Gram"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/ArithmeticFunction/Defs.lean",
+      "blob": "0ca7ae6840e8b50dca55a407ff9a7f194b3d7437",
+      "role": "real ArithmeticFunction dirichletInverse and both Dirichlet inverse identities"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/ArithmeticFunction/Misc.lean",
+      "blob": "24382010ced603fc5daa48ec7ae3ca21ae13463b",
+      "role": "exact finite sum_Ioc_mul_eq_sum_sum"
+    }
+  ],
+  "source_theorem_candidates": [
+    "radicalArithmetic_one",
+    "radicalInverse_mul_radical",
+    "radical_mul_radicalInverse",
+    "radicalInverse_mul_convolution",
+    "originalMertensPrefix_inverse_convolution",
+    "originalMertensPrefix_inverse_abs_le",
+    "radicalConvolutionPrefix_eq_originalWeighted (explicit prior coefficient bridge)",
+    "originalMertensPrefix_inverse_weighted (same explicit bridge)"
+  ],
+  "unproved_lean_props": [
+    "RadicalInversePrimePowerFormula",
+    "RadicalInverseCoefficientMajorant",
+    "TwoZoneRadicalPowerEnvelope",
+    "RadicalMertensPowerEquivalence"
+  ],
+  "preexisting_unproved_lean_props": [
+    "OriginalWeightedRadicalConvolution",
+    "RadicalDirichletKernelSummable",
+    "OriginalResponseAreaStieltjes"
+  ],
+  "mathematical_scope": [
+    "g=h^{-1} exists since h(1)=1; g(p^k)=-p^{-1/2}(1-p^{-1/2})^{k-1} and |g(n)|<=h(n)",
+    "Exact unconditional finite identity M(N)=sum_{d<=N}g(d) Atilde(floor(N/d)) for Atilde prefix of h*mu",
+    "Exact original-source finite identity for prefix of b(n)=mu(n)*C(n) conditional in Lean on preexisting named bridge",
+    "For any theta>1/2, original Mertens and original b-prefix O(N^theta) conditions are mathematically equivalent with comparable H_theta finite",
+    "Given genuine ActualMertensTailAt(K,delta), for any sigma in (1/2,1), |A(N)|<=delta H_1 N + K^{1-sigma}H_sigma N^sigma",
+    "Original X_div(T) quantified PNT-tail bound as in review; full original incomparable signed packet remains OPEN"
+  ],
+  "independent_finite_diagnostics": {
+    "classification": "FINITE_EXACT_RATIONAL_STRUCTURE_AND_FLOAT64_ACTUAL_COEFFICIENT_NOT_FORMAL_PROOF",
+    "actual_radical_coefficients_checked": 4000,
+    "max_abs_source_convolution_error": 1.3877787807814457e-16,
+    "max_abs_inverse_return_error": 4.440892098500626e-16,
+    "max_abs_inverse_product_error": 5.551115123125783e-17,
+    "max_abs_inverse_majorant_violation": 0,
+    "toy_rational_prime_weight_indices": 192,
+    "exact_fraction_convolution_identities": 576,
+    "H1_partial_at_4000": 3.0084642424051884,
+    "G1_partial_at_4000": 2.3514983611091616,
+    "bounded_two_zone_fixture": {
+      "K": 100,
+      "delta": 0.2,
+      "sigma": 0.75,
+      "N_values": [
+        100,
+        256,
+        1000,
+        4000
+      ],
+      "max_M_ratio_on_100_to_4000": 0.05263157894736842,
+      "global_PNT_claim": false
+    }
+  },
+  "verification": {
+    "git_blob_creation": "PASS",
+    "git_publication": "PASS_GUARDED_NONFORCE_MAIN",
+    "lean_parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "complete_import_closure": "NOT_RUN",
+    "native_runner_dispatched": false,
+    "remote_CI_dispatched": false,
+    "scheduler_dispatched": false,
+    "new_arithmetic_RH_all_positive_rate_for_complete_original_pickupCross": "OPEN",
+    "riemannHypothesis": "UNPROVED",
+    "git_blob_readback": "PASS_ALL_THREE_MATCH"
+  },
+  "next_required": [
+    "Independently compile and kernel replay pinned source and original dependencies; audit generated and opaque dependency closure",
+    "Prove actual coefficient bridge OriginalWeightedRadicalConvolution against pinned Mathlib",
+    "Formalize explicit inverse prime powers, pointwise majorant and theta>1/2 positive Dirichlet summability",
+    "Formalize two-zone rate and original response-area Stieltjes integral comparison",
+    "Seek independent all-positive-rate upper bound for full original pickupCross including signed incomparable compensation on one fixed affine-cover region"
+  ],
+  "related_issues": [
+    1556,
+    1406,
+    1429,
+    15
+  ],
+  "publication": {
+    "published_commit": "59b3bada2c51b9903aaf133bb319412e1f09c251",
+    "expected_parent": "bd2deb76cbad6372570957526131f41f0216d724",
+    "readback_source_blob": "41321666e299d71f2eb1e24ee6eae260b2d60188",
+    "readback_review_blob": "e6169623bf58bd085652a52b042241547c33613a",
+    "initial_unpublished_commit": "3300614e7706805e25e96f8d53c64a1055549e86",
+    "initial_publication_error": "Github GraphQL API error during concurrent main advance; rebased and published without force"
+  }
+}

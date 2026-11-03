@@ -1,0 +1,59 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Original causal response Gram root envelope and fixed-gcd cutoff ratio",
+  "source_blobs": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalGramRootFloorSuppliers.lean": "efbf49d9d0be6f59dc165ec715b14b0f12207d12",
+    "documentation/mathematics/_support/reviews/moebius-original-gram-root-and-fixed-floor-2026-11-02.md": "d52575b9c789d7c57262b9abd48bc489a787b518"
+  },
+  "baseline": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCompleteHighGcdDivisorCover.lean": "354af0c431832b883974a3157e1000eb4f046a1f",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedSublinearCompensatedEndpoint.lean": "f2d9748589f5999ff667486538968d7eff5a753f",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "new_candidate_proof_bodies": [
+    "GRWTSK.NumberTheory.Moebius.OriginalGramRootFloorSuppliers.pickupResponse_nonneg_le_two_root",
+    "GRWTSK.NumberTheory.Moebius.OriginalGramRootFloorSuppliers.pickupResponseGram_abs_le_root",
+    "GRWTSK.NumberTheory.Moebius.OriginalGramRootFloorSuppliers.sourceKernel_abs_le_root",
+    "GRWTSK.NumberTheory.Moebius.OriginalGramRootFloorSuppliers.fixedGcdRatio_proof",
+    "GRWTSK.NumberTheory.Moebius.OriginalGramRootFloorSuppliers.endpointSum_le_fixedPlain_of_divisorCover_only"
+  ],
+  "discharged_by_candidates": [
+    "FixedGcdRatioTarget"
+  ],
+  "remaining_lean": [
+    "DivisorCoverRootTailTarget",
+    "PlainLowGcdEveryRateDyadic"
+  ],
+  "verification": {
+    "lean_path": "NOT_AVAILABLE_IN_CURRENT_HOST",
+    "noe_checkout": "NOT_AVAILABLE_IN_CURRENT_HOST",
+    "github_status": "NO_CHECKS_FOUND_FOR_082ed6f",
+    "github_workflow": "NO_RUNS_FOUND_FOR_082ed6f",
+    "parsing": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_DISPATCHED",
+    "root_import": "NOT_ADDED"
+  },
+  "finite_diagnostics": {
+    "original_closed_causal_gram_horizons": [
+      8,
+      16,
+      36,
+      60
+    ],
+    "native_interval_certification": false
+  },
+  "scope": {
+    "additive_files_only": true,
+    "pins_unchanged": true,
+    "force_push": false
+  }
+}

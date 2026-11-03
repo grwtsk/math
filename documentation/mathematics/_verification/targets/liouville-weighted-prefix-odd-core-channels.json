@@ -1,0 +1,92 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Liouville weighted-prefix odd-core channel energy",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "publication": {
+    "analytical_parent": "ac417f3895d28e7a7d965f228a5c435a6539eac7",
+    "analytical_base_tree": "ec4e3d3782f381211f7cded7ebeb632db6f83a8a",
+    "state": "PUBLISHED_SOURCE_CANDIDATE",
+    "branch": "main",
+    "mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedPrefixOddCoreChannels.lean",
+    "blob": "983c4687208b736e34cb75e245c67ab030d5fecc",
+    "sha256": "e821b78c20684d1aabd69c9aab9d6d04be6aabb59a38a653d9b7a3c4f4474959",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "proved_scope": [
+      "discrete_eq_oddCoreEnergy_add_cross",
+      "oddCoreChannelEnergy_allRate",
+      "oddCoreCrossAllRate_iff_discrete",
+      "discrete_le_oddCoreCard_mul_energy",
+      "oddCoreCauchy_bound"
+    ],
+    "open_named_propositions": [
+      "OddCoreDecompositionCorrect",
+      "OddCoreChannelAmplitudeFormula",
+      "OddCoreChannelAmplitudeUnitBound",
+      "OddCoreOccupiedChannelsExact",
+      "OddCoreChannelEnergyHarmonicBound",
+      "HarmonicExpAllRate",
+      "OddCoreChannelDisposition"
+    ]
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-weighted-prefix-odd-core-channels.md",
+    "blob": "a2950e4df0a8f8a9b343cd6636e529297308b74a"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-weighted-prefix-odd-core-channels-references.md",
+    "blob": "22874472e3c9c0a70249d5b2d45d415139f305f8"
+  },
+  "local_upstream": {
+    "LiouvilleWeightedPrefixChannelReturn.lean": "8d3868eac539f2e1a7664973f5fd27da3254a918",
+    "FiniteWeightedChannelCovariance.lean": "1e88479b60ade504d9da34a700f8a75d1d6d6991",
+    "LiouvilleWeightedPrefixTwoAdicChains.lean": "64d18220eda5e09966c52cf222060652d878f431",
+    "LiouvilleWeightedPrefixSquareCriterion.lean": "d62ab5b81eb8cec7b95964c88f875d3c2ef1f244"
+  },
+  "mathematical_claims": [
+    "For the odd-core channelization, every live channel amplitude has absolute value at most one.",
+    "The whole-channel weighted energy satisfies 0 <= E_N^odd <= H_N/2.",
+    "Hence E_N^odd <= ((1+1/eta)/2)*(N+1)^eta for every eta>0.",
+    "The occupied-channel count is ceil(N/2), so generic channel Cauchy returns only a rate-one allowance.",
+    "The full discrete supplier is equivalent to all-positive-rate upper control of the complete signed cross-channel packet once the channel-energy bound is supplied."
+  ],
+  "not_claimed": [
+    "OddCoreCrossAllRate",
+    "SubpolynomialDiscreteWeightedPrefix",
+    "WeightedPrefixSquareAllRate",
+    "UniformEnergySupplier",
+    "complete endpoint estimate",
+    "Riemann Hypothesis"
+  ],
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "repository_publication": "PUBLISHED",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "odd_core_channel_energy": "ANALYTICALLY_PROVED_LEAN_INTERFACE_OPEN",
+    "distinct_odd_core_cross_supplier": "UNPROVED",
+    "weighted_prefix_supplier": "UNPROVED",
+    "uniform_energy": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedPrefixOddCoreChannels.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedPrefixOddCoreChannels.lean",
+    "check exact expected types and #print axioms for every theorem in the namespace",
+    "audit the complete transitive source closure before promoting any conclusion"
+  ]
+}

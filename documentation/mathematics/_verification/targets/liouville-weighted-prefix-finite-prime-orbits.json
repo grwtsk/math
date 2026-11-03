@@ -1,0 +1,93 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Finite-prime orbit extraction and distinct-core obstruction",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "publication": {
+    "analytical_parent": "a20f993f12b1750eb5b745b9ea1c8de477930283",
+    "mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "branch": "main",
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED",
+    "runtime_artifacts_in_math": false,
+    "analytical_base_tree": "4576e4ac3731e3699897b0d1f9ae10c011459766",
+    "state": "PUBLISHED_SOURCE_CANDIDATE",
+    "source_lineage_parent": "5d7e109f07aff1814c0efd0e169b5560d19331de"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedPrefixFinitePrimeOrbits.lean",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "proved_scope": [
+      "weightedPairFormFor_eq_internal_add_distinct",
+      "growingPrimeFreeCoreAllRate_iff_discrete"
+    ],
+    "open_named_propositions": [
+      "PrimeOrbitInternalEulerBound",
+      "LogarithmicPrimeOrbitAllowance",
+      "GenericWeightedPairFormIdentity",
+      "PrimeTwoWeightedMomentLinearLower",
+      "PrimeTwoInternalPacketAgreement",
+      "PrimeTwoDistinctOddCoreLinearLower",
+      "FinitePrimeOrbitMethodObstruction"
+    ],
+    "blob": "573e7943e6c072244eccc82673a23ca831f43a00",
+    "sha256": "7409bee86318b71688275baea14856fa42452c3eb867f1248e0120c02ecd825e"
+  },
+  "local_upstream": {
+    "LiouvilleWeightedPrefixTwoAdicChains.lean": "64d18220eda5e09966c52cf222060652d878f431",
+    "LiouvilleWeightedPrefixDoubling.lean": "d3e65086541a95b27edf6faad3d47a956dce92c7",
+    "LiouvilleWeightedPrefixSquareCriterion.lean": "d62ab5b81eb8cec7b95964c88f875d3c2ef1f244",
+    "LiouvillePrimeDelayObstruction.lean": "0f4b1fa7f5fa69b3d8fa8b2ab2bef4abeec7c574"
+  },
+  "mathematical_claims": [
+    "For every finite prime set P, the complete same-P-free-core packet is nonnegative and at most kappa(P)*H_N.",
+    "Whenever kappa(P_N)*H_N is subpower, all-rate control of the distinct P_N-free-core packet is equivalent to the full weighted-prefix endpoint supplier.",
+    "For primes up to floor(log(N+1)), kappa(P_N)*H_N is subpower.",
+    "The completely multiplicative prime-two sign satisfies every doubling identity and every same-odd-core chain identity, but its distinct-odd-core packet is at least N/128 for N>=2048.",
+    "Therefore fixed finite-prime identities and positive orbit bounds cannot prove the actual distinct-odd-core supplier."
+  ],
+  "novelty_boundary": {
+    "classical_background": "Finite Euler products, harmonic bounds, unique prime factorization and positive-mean finite-prime multiplicative functions are classical.",
+    "programme_specific": "Exact terminal-weight orbit packet, logarithmic growing-prime reduction, and explicit prime-two weighted distinct-core lower bound inside the current RH consumer.",
+    "not_claimed": [
+      "DistinctOddCoreAllRate",
+      "WeightedPrefixSquareAllRate",
+      "UniformEnergySupplier",
+      "complete endpoint estimate",
+      "Riemann Hypothesis"
+    ]
+  },
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "distinct_odd_core_supplier": "UNPROVED",
+    "weighted_prefix_supplier": "UNPROVED",
+    "uniform_energy": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedPrefixFinitePrimeOrbits.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleWeightedPrefixFinitePrimeOrbits.lean",
+    "check exact expected types and #print axioms for every theorem in the namespace",
+    "audit the complete transitive source closure before promoting any conclusion"
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/liouville-weighted-prefix-finite-prime-orbits.md",
+    "blob": "4afbc6b2f746e133632d71676e5e7aff2a7d1949",
+    "sha256": "f4179c59c5bfa9bb86819aa6ca46b5a8792cf52963ae4a575d44fd29b7232739"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/liouville-weighted-prefix-finite-prime-orbits-references.md",
+    "blob": "8af161ef808a10833e17642a68e19828244cd207",
+    "sha256": "4860ae02855fe67168259314bce7db9e9e6ca5ed1bdadae163226904c5539a0a"
+  }
+}

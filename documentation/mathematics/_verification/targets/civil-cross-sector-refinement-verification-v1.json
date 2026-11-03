@@ -1,0 +1,39 @@
+{
+  "schema": "grwtsk.civil-cross-sector-refinement-target/1",
+  "local_attribution": "grwtsk contributors",
+  "baseline_math_commit": "3eb83859f164c60dd45ac461ceef6e76a7f10eec",
+  "baseline_cross_sector_blob": "70e00a99aaf622b55e975412517e92ed1fe4bf85",
+  "source_modules": [
+    "GRWTSK/ComputerScience/AlgorithmsInComputerScience/CivilSystemsPeriodScopedEvidence.lean",
+    "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/CivilSystemsVersionedReview.lean"
+  ],
+  "direct_dependencies": [
+    "GRWTSK.ComputerScience.AlgorithmsInComputerScience.CivilSystemsCrossSectorScaling",
+    "GRWTSK.MathematicalLogicAndFoundations.GeneralLogic.CivilSystemsObservationRevisionBridge"
+  ],
+  "required_declarations": [
+    "GRWTSK.CivilSystems.PeriodScopedEvidence.TimedEvent.local_partition",
+    "GRWTSK.CivilSystems.PeriodScopedEvidence.TimedEvent.unit_partition",
+    "GRWTSK.CivilSystems.PeriodScopedEvidence.fold_local_partition",
+    "GRWTSK.CivilSystems.PeriodScopedEvidence.TimedEvent.foreign_sector_noninterference",
+    "GRWTSK.CivilSystems.PeriodScopedEvidence.TimedEvent.foreign_period_noninterference",
+    "GRWTSK.CivilSystems.PeriodScopedEvidence.TimedEvent.foreign_unit_noninterference",
+    "GRWTSK.CivilSystems.PeriodScopedEvidence.fold_admitted_channel_partition",
+    "GRWTSK.CivilSystems.PeriodScopedEvidence.MeasuredSeries.finite_horizon_balance",
+    "GRWTSK.CivilSystems.PeriodScopedEvidence.MeasuredSeries.bounded_to_horizon",
+    "GRWTSK.CivilSystems.PeriodScopedEvidence.measured_bounded",
+    "GRWTSK.CivilSystems.VersionedReview.RuleApplication.flag_requires_source_gates",
+    "GRWTSK.CivilSystems.VersionedReview.RuleApplication.permission_never_flags",
+    "GRWTSK.CivilSystems.VersionedReview.RuleApplication.expired_source_blocks_review",
+    "GRWTSK.CivilSystems.VersionedReview.RuleApplication.unreviewed_coverage_blocks_review"
+  ],
+  "declared_toolchain": "leanprover/lean4:v4.34.1",
+  "declared_mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "compilation": "NOT_RUN",
+  "fresh_kernel_replay": "NOT_RUN",
+  "transitive_axiom_audit": "NOT_RUN",
+  "expected_type_comparison": "NOT_RUN",
+  "python_lean_refinement": "NOT_RUN",
+  "professional_legal_acceptance": "NOT_RUN",
+  "delivery_and_clinical_use": "NOT_IMPLEMENTED"
+}

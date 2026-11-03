@@ -1,0 +1,148 @@
+{
+  "schema": "grwtsk.math.verification.target.v1",
+  "date": "2026-11-02",
+  "repo": "grwtsk/math",
+  "title": "Integrated source-return atlas and unified RH observation upper portfolio",
+  "source_proof_status": "SOURCE_PROOF_CANDIDATE",
+  "lean": "leanprover/lean4:v4.34.1",
+  "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_leaves": [
+    {
+      "module": "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusIntegratedSourceAtlas",
+      "file": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusIntegratedSourceAtlas.lean",
+      "blob": "1fb3a37cfc50f219ac5923c21afcd5d1bc7e7e1f",
+      "public_theorem_candidates": 16,
+      "direct_imports": [
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDecoderPositiveResponse",
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.PhysicalMoebiusBitGramReturn",
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusEndpointDenseLongGapSource",
+        "GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.MoebiusProjectivePrimeResiduePort",
+        "GRWTSK.HarmonicAnalysisOnEuclideanSpaces.CMKaehlerZQGaugeFullReturn",
+        "Mathlib.Tactic"
+      ],
+      "check": [
+        "twoBit_exact",
+        "twoBit_coeff_eq",
+        "twoBit_source_error_certificate",
+        "twoBit_cross_eq_source",
+        "twoBit_signedLoss_zero",
+        "radiusWave_zero",
+        "radiusEnergy_zero",
+        "twoBit_errorWave_zero",
+        "twoBit_wave_eq_source",
+        "twoBit_energy_eq_source",
+        "typed_bit_physical_elliptic_sparse_return",
+        "endpoint_sparse_elliptic_signed_return",
+        "encoded_physical_eq_twoBit",
+        "rounded_vs_twoBit_cross",
+        "projective_elliptic_label_capacity",
+        "dyadic_gauge_twoBit_energy_return"
+      ]
+    },
+    {
+      "module": "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusUnifiedObservationPortfolio",
+      "file": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUnifiedObservationPortfolio.lean",
+      "blob": "a376a6b30b66893aba7f2038e89b707f5f06ada5",
+      "public_theorem_candidates": 19,
+      "direct_imports": [
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusIntegratedSourceAtlas",
+        "Mathlib.Tactic"
+      ],
+      "check": [
+        "physical_coeff_eq",
+        "physical_packet_eq_phase_observed",
+        "physical_defect_eq_phase_signedLoss",
+        "physical_stream_error_certificate",
+        "physical_readout_shift",
+        "cross_le_decoder_energy_upper",
+        "cross_le_sourcePortfolioUpper",
+        "sourcePortfolioUpper_le_old",
+        "sourcePortfolioUpper_le_rounded",
+        "endpoint_le_sourcePortfolioUpper_quarter",
+        "physical_stream_le_sourcePortfolioUpper",
+        "cross_le_extraSourceUpper",
+        "extraSourceUpper_le_old",
+        "observedWave_decoderGauge",
+        "observedEnergy_decoderGauge",
+        "sourcePortfolioUpper_decoderGauge",
+        "decoderCompatible_equiv",
+        "sourcePortfolioUpper_equiv",
+        "riemannHypothesis_of_sourcePortfolio_good_scales"
+      ]
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-unified-source-portfolio-review-2026-11-02.md",
+    "blob": "85032bd697ee949ddd3d4bb2e0d9c6d26d109c73"
+  },
+  "relation_registry": {
+    "path": "documentation/mathematics/_support/reviews/moebius-source-connections-atlas-2026-11-02.json",
+    "blob": "8b1a09e714ed7de2e6ed3799b9de4c5385d20f09",
+    "source_nodes": 31,
+    "edges": 20,
+    "open_research": 11
+  },
+  "verification": {
+    "static_source_token_scan": "NO_AUTHORED_SORRY_AXIOM_UNSAFE_DECLARATIONS",
+    "exact_api_imports": "SOURCE_INSPECTION_ONLY",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "numeric_diagnostics": "681_PASS_FINITE_NONRIGOROUS_SOURCE_ARITHMETIC_ASSERTIONS",
+    "environment": "NO_LOCAL_LEAN_LAKE_ELAN",
+    "remote_execution": "NOT_DISPATCHED",
+    "numeric_preflight": "NOT_LEAN_NOT_INTERVAL_CERTIFIED"
+  },
+  "preservation": [
+    "All previous source files unchanged",
+    "Original Mobius coefficient and integer index unchanged",
+    "Original pickupResponse and signed ordered cutoff unchanged",
+    "No substituted RH predicate",
+    "All signed residuals explicit",
+    "No new toolchain or root umbrella imports",
+    "No parallel repo mutations"
+  ],
+  "open_suppliers": [
+    "All-positive-rate bound on sourcePortfolioUpper for a single fixed AffineFrequent G",
+    "Original dense-long-gap signed arithmetic cancellation",
+    "Source-specific quantitative bridge from optional Weil/Connes/Chowla/Sarnak/M23/Rank32 data",
+    "Independent native trusted verification"
+  ],
+  "required_commands": [
+    "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusIntegratedSourceAtlas",
+    "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusUnifiedObservationPortfolio",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusIntegratedSourceAtlas.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUnifiedObservationPortfolio.lean",
+    "lake env leanchecker --help"
+  ],
+  "hostile_cases": [
+    "n=1 preserved as nonprime",
+    "squareful mu(n)=0 not absent",
+    "missing/mislabeled physical record does not imply mu=0",
+    "both ordered off-diagonal orientations",
+    "rough/mixed/matched elliptic residual",
+    "full unbounded integer provenance",
+    "projective point-at-infinity counted once",
+    "finite torsion cardinality is not MW free rank",
+    "CM gauge compensation restores parity and nonunit sectors",
+    "Farey/Fary do not imply Kakeya source gain",
+    "fixed affinely frequent G before epsilon choice",
+    "no RH completion without all-rate arithmetic"
+  ],
+  "run_authority": "PASSIVE_SPEC_ONLY_NO_SCHEDULER_OR_REMOTE_PROOF_DISPATCH",
+  "publication": "PENDING_GUARDED_MAIN_FAST_FORWARD",
+  "preflight": {
+    "local_script": "/mnt/data/moebius_integrated_atlas_preflight_20261102.py",
+    "script_sha256": "6b6817b1a7fed12f908c370ec19185ef535bf87876e5dfed3cdda86b20c2ff2a",
+    "local_result": "/mnt/data/moebius_integrated_atlas_preflight_20261102.json",
+    "result_sha256": "9e356c6a20e7b3bae2efc1baf18417f5c16131ad31641e0f904e2f1e8cc0c6d5",
+    "assertions": 681,
+    "precision_digits": 45,
+    "source_indices_through": 32,
+    "horizons": 9,
+    "stream_families": 4,
+    "elliptic_fixture_not_goodPrimeBank": true,
+    "claimed_trust": "NONE"
+  }
+}

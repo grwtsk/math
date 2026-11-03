@@ -1,0 +1,129 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "name": "Residue class occupancy and all-complex-Dirichlet-character original causal mean energy",
+  "snapshot_math_main": "e7753c12896b72ed2fe5ddc1945f16e769aeda56",
+  "sources": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusResidueFibreArithmetic.lean": "d8ed2983c2090b17c972e440cdd7fee6f4e7961c",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletResidueFibreCapacity.lean": "d02622fb2d434402cec3316e30b77b0fd81d4acf",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletResidueFibreCapacityAcceptance.lean": "88c858d32702f58ee4fe4889ff2f37f0d4c131fd",
+    "documentation/mathematics/_support/reviews/moebius-dirichlet-residue-fibre-capacity-2026-11-02.md": "5f6ede42330fc933934d46551fe942ebc69c25e4",
+    "documentation/mathematics/_support/reviews/moebius-dirichlet-residue-fibre-source-graph-2026-11-02.json": "1c75a2c4670f9926d284a11228a40ccffaf93d64"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_dependencies": {
+    "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionFamilyInverse.lean": "2b9c2b556de587db611478b7724c9205db90fd3b",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLFunctionHermitianPickup.lean": "0643134718a73f65f1ca01f2db0804b4883676b4",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletResidueOrthogonality.lean": "82698de228e06569e2f9dfe5223eb2056d09bc8d",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletResidueParseval.lean": "152ef7002c566bcca14ec8aac8c027c523693347",
+    "GRWTSK/MeasureAndIntegration/GramDiagonalBound.lean": "aca9ab5260453b13a3503f3166aef6f59efcf4ee"
+  },
+  "pinned_mathlib_suppliers": [
+    "ZMod.natCast_eq_natCast_iff'",
+    "Nat.mod_add_div",
+    "Nat.div_le_div_right",
+    "Finset.card_le_card_of_injOn",
+    "sq_sum_le_card_mul_sum_sq",
+    "intervalIntegral.integral_mono_on",
+    "intervalIntegral.integral_finsetSum",
+    "intervalIntegral.integral_const_mul",
+    "Nat.totient_pos"
+  ],
+  "candidate_declarations": [
+    "GRWTSK.NumberTheory.Moebius.ResidueFibreArithmetic.residueFibre_quotient_injective",
+    "GRWTSK.NumberTheory.Moebius.ResidueFibreArithmetic.residueFibre_card_le_quotient_succ",
+    "GRWTSK.NumberTheory.Moebius.ResidueFibreArithmetic.residueFibre_card_le_one_of_large_modulus",
+    "GRWTSK.NumberTheory.Moebius.DirichletResidueFibreCapacity.originalResidueWave_norm_sq_le_card",
+    "GRWTSK.NumberTheory.Moebius.DirichletResidueFibreCapacity.originalResidueWave_norm_sq_le_capacity",
+    "GRWTSK.NumberTheory.Moebius.DirichletResidueFibreCapacity.sum_residueFibre_indexSquare",
+    "GRWTSK.NumberTheory.Moebius.DirichletResidueFibreCapacity.unitResidueWaveDensity_le_occupationDiagonal",
+    "GRWTSK.NumberTheory.Moebius.DirichletResidueFibreCapacity.unitResidueEnergy_le_occupationDiagonal",
+    "GRWTSK.NumberTheory.Moebius.DirichletResidueFibreCapacity.allCharactersEnergy_le_occupationDiagonal",
+    "GRWTSK.NumberTheory.Moebius.DirichletResidueFibreCapacity.allCharactersEnergy_le_occupationQuadratic",
+    "GRWTSK.NumberTheory.Moebius.DirichletResidueFibreCapacity.meanCharacterEnergy_le_occupationQuadratic",
+    "GRWTSK.NumberTheory.Moebius.DirichletResidueFibreCapacity.meanCharacterEnergy_le_quadratic_of_largeModulus"
+  ],
+  "mathematical_statements": {
+    "finite_fibre": "card{1<=n<=N:(n:ZMod q)=a}<=N/q+1, q>0",
+    "pointwise_original_wave": "sum_(unit a) norm(originalResidueWave(q,a,T,u))² <= (N(T)/q+1)*sum_(n<=N(T))mu(n)²*pickupResponse(n,u)²",
+    "family_mean": "sum_(chi mod q) familyFiniteResponseEnergy(chi,T)/phi(q) <= (N(T)/q+1)*pickupDiagonal(T) <= 2*(N(T)/q+1)*T², T>=0",
+    "large_modulus": "q>N(T) implies mean<=2*T²",
+    "negative_control": "No bound for any fixed primitive character or RH/GRH supplied"
+  },
+  "finite_diagnostics": {
+    "integer_fibre_checks": {
+      "moduli": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        13,
+        17,
+        31
+      ],
+      "inventory_sizes": [
+        0,
+        1,
+        2,
+        5,
+        9,
+        12,
+        20,
+        33,
+        48,
+        70,
+        110
+      ],
+      "pairs": 99,
+      "violations": 0
+    },
+    "actual_causal_gram": {
+      "moduli": [
+        5,
+        8,
+        17
+      ],
+      "N": [
+        12,
+        25
+      ],
+      "cases": 6,
+      "method": "actual integer Mobius, complex character tables, original analytic birth-gated K_T, mpmath 45 dps",
+      "mean_parseval_max_residual_approx": "1.41e-45",
+      "all_occupation_energy_bounds_pass": true
+    },
+    "not_certified_interval_arithmetic": true,
+    "not_Lean_kernel_evidence": true
+  },
+  "verification": {
+    "lexical_source_scan": "NO_DECLARATION_PREFIX_sorry_admit_axiom_unsafe",
+    "parsing": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "full_import_compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "passive_acceptance": "WRITTEN_NOT_EXECUTED",
+    "native_toolchain": "NOT_AVAILABLE_IN_THIS_HOST",
+    "native_dispatch": "NOT_DISPATCHED",
+    "root_import": "NOT_ADDED"
+  },
+  "open_math": [
+    "Finite mean signed offdiagonal refinement with unit-only diagonal and coefficient floor(N/q), paper derivation only",
+    "PrimitiveDirichletFamilyLowGcdEveryRate, fixed character, RH/GRH strength",
+    "PrimitiveDirichletCausalToPrefixBridgeTarget",
+    "primitive-character Mellin/explicit-formula, conductor/gamma/pole/zero return",
+    "original PlainLowGcdEveryRateDyadic and RH"
+  ],
+  "publication_scope": {
+    "additive_only": true,
+    "force_push": false,
+    "existing_files_unchanged": true,
+    "toolchain_pins_unchanged": true
+  }
+}

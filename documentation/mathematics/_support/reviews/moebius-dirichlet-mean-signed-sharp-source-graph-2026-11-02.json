@@ -1,0 +1,197 @@
+{
+  "schema": "grwtsk.math.source-graph-delta/1",
+  "date": "2026-11-02",
+  "topic": "Sharp positive-index residue-fiber occupancy and original all-character signed Hermitian mean",
+  "research_head": "2e864e3514ba43426d80b245933a31508dbe4c3d",
+  "pinned_lean": "leanprover/lean4:v4.34.1",
+  "pinned_mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "nodes": [
+    {
+      "id": "NatModEq",
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/Data/Nat/ModEq.lean",
+      "declaration": "Nat.ModEq.sub",
+      "status": "PINNED_LIBRARY"
+    },
+    {
+      "id": "FinsetCard",
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/Data/Finset/Card.lean",
+      "declaration": "Finset.card_le_card_of_injOn",
+      "status": "PINNED_LIBRARY"
+    },
+    {
+      "id": "OldFibre",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusResidueFibreArithmetic.lean",
+      "sha": "d8ed2983c2090b17c972e440cdd7fee6f4e7961c",
+      "status": "PRIOR_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "OldSignedFibre",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusResidueSignedFibreArithmetic.lean",
+      "sha": "0692631728b95319edb50e32a3569e3035b8a368",
+      "status": "PRIOR_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "OldMean",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletMeanSignedCross.lean",
+      "sha": "4e4260e695ad30e3a0d9f04a6a6c5a90b4b19e32",
+      "status": "PRIOR_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "OldScalar",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletMeanSignedFixedCutoff.lean",
+      "sha": "abcaa68aab3b71a5a4fe908ddb980611f20be9bd",
+      "status": "PRIOR_ALL_RATE_MEAN_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "OriginalMu",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "sha": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+      "status": "ORIGINAL_SOURCE"
+    },
+    {
+      "id": "SharpFibre",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusResidueFibreSharpArithmetic.lean",
+      "sha": "71900639c7e3794d9a6f3869ff41df2a70316068",
+      "status": "NEW_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "SharpSigned",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusResidueSharpSignedFibre.lean",
+      "sha": "57d20903f6cc09798ac990635e9f25ae50c25a6b",
+      "status": "NEW_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "SharpMean",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletMeanSignedSharp.lean",
+      "sha": "5c94aa74ab426d62dc7a8937155e0ba8cd1ef960",
+      "status": "NEW_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "PrimitiveGRH",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PrimitiveFamilyPublicPrimitiveCharacterDataFamilyGRH.lean",
+      "sha": "d0b5331a21bb6392e6082db6994040347fd2bcb",
+      "status": "STILL_OPEN_TARGET"
+    }
+  ],
+  "edges": [
+    {
+      "from": "NatModEq",
+      "to": "SharpFibre",
+      "relation": "shifted remainders preserve mod-q congruence",
+      "status": "PINNED_SUPPLIER_USED"
+    },
+    {
+      "from": "FinsetCard",
+      "to": "SharpFibre",
+      "relation": "shifted quotient injection gives ceil(N/q) card",
+      "status": "PINNED_SUPPLIER_USED"
+    },
+    {
+      "from": "OldFibre",
+      "to": "SharpFibre",
+      "relation": "unchanged literal positive-index residue fiber",
+      "status": "SOURCE_PRESERVED"
+    },
+    {
+      "from": "SharpFibre",
+      "to": "SharpSigned",
+      "relation": "sharp #fiber-1 signed complex square",
+      "status": "NEW_FINITE_SOURCE_CANDIDATE"
+    },
+    {
+      "from": "OldSignedFibre",
+      "to": "SharpSigned",
+      "relation": "generic finite complex signed square bound",
+      "status": "PRIOR_CANDIDATE_CONSUMED"
+    },
+    {
+      "from": "SharpSigned",
+      "to": "SharpMean",
+      "relation": "source signed residue-wave pointwise bound",
+      "status": "NEW_CANDIDATE"
+    },
+    {
+      "from": "OldMean",
+      "to": "SharpMean",
+      "relation": "exact unit-diagonal mean identity and continuous original response",
+      "status": "PRIOR_CANDIDATE_CONSUMED"
+    },
+    {
+      "from": "OriginalMu",
+      "to": "SharpMean",
+      "relation": "unchanged ordinary mu(n) and birth-gated physical Gram",
+      "status": "SOURCE_PRESERVED"
+    },
+    {
+      "from": "SharpFibre",
+      "to": "SharpMean",
+      "relation": "q>=N implies each residue fiber at most one, exact signed zero",
+      "status": "NEW_CANDIDATE"
+    },
+    {
+      "from": "SharpMean",
+      "to": "OldScalar",
+      "relation": "sharper finite correction keeps existing same cutoff and every-rate family-mean bound",
+      "status": "COMPATIBLE_NOT_NEW_GRH_PROOF"
+    },
+    {
+      "from": "SharpMean",
+      "to": "PrimitiveGRH",
+      "relation": "exact all-character mean does not bound fixed primitive characters",
+      "status": "NOT_A_GRH_BRIDGE"
+    }
+  ],
+  "claims": {
+    "sharp_fibre": "card(S_(q,a,N))<=if N=0 then 0 else floor((N-1)/q)+1",
+    "sharp_mean": "-D_unit(q,T)<=MeanCross(q,T)<=floor((N(T)-1)/q)*D_unit(q,T)<=2floor((N(T)-1)/q)*T^2, T>=0",
+    "zero_boundary": "MeanCross(q,T)=0 if q>=N(T), including q=N(T), T>=0",
+    "relation_to_existing": "meanSignedCross<=floor(N(T)/q)*D_unit already published; new bound improves at q|N(T)",
+    "scope": "ALL Dirichlet characters, modulus q positive, q may depend on T",
+    "no_fixed_character_GRH": true
+  },
+  "tests": {
+    "integer": {
+      "fibres": 8040,
+      "violations": 0,
+      "strict_improvement_pairs": 200,
+      "fibres_attaining_sharp_cap": 4303
+    },
+    "causal": {
+      "cases": 9,
+      "precision_dps": 65,
+      "max_absolute_independent_energy_residual": "<6e-65",
+      "explicit_boundary_cases": [
+        [
+          17,
+          17
+        ],
+        [
+          31,
+          25
+        ]
+      ],
+      "source": "original mu and exact birth-integrated causal Gram, separate piecewise-integrated residue wave"
+    },
+    "native": false,
+    "certified_intervals": false
+  },
+  "verification": {
+    "lean_parse": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "full_imports": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "native_dispatch": "NOT_DISPATCHED"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "grwtsk.moebius-dyadic-fresh-birth-strip/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "scope": "Unconditional original causal newborn-layer selected-pair budget; complete fixed dyadic source comparison; NOT a full original endpoint power-saving proof.",
+  "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDyadicFreshBirthStrip.lean",
+  "source_blob": "dcabfdd6d14ea724b0f3a04015fca04d1c92f40c",
+  "review": "documentation/mathematics/_support/reviews/moebius-dyadic-fresh-birth-uniform-summability-2026-11-01.md",
+  "review_blob": "dbdd263e0beb22933c1a3eb93c3918186457e263",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "source_dependencies": {
+    "MertensPrimitive": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "PickupEndpointQuadrature": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+    "GoodScaleEnergyCriterion": "ca3ae4975b20cf796a167308a9e87546c6001c41",
+    "LiouvilleDoubleAbelAnalyticGates": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4"
+  },
+  "finite_algebra_candidate_declarations": [
+    "GRWTSK.NumberTheory.Moebius.DyadicFreshBirthStrip.sourceCellCross_eq_fresh_add_residual",
+    "GRWTSK.NumberTheory.Moebius.DyadicFreshBirthStrip.sum_source_cells_eq_fresh_add_residual"
+  ],
+  "original_source_definitions": [
+    "dyadicTime",
+    "dyadicUpper",
+    "fixedDyadicGrid",
+    "freshWidth",
+    "freshIndices",
+    "sourceCellPair",
+    "sourceCellCross",
+    "touchesFreshLayer",
+    "freshSliceCross",
+    "residualSliceCross",
+    "cumulativeResidual"
+  ],
+  "unproved_source_analytic_propositions": [
+    "OriginalDyadicCrossPartitionTarget",
+    "PerCellFreshPhysicalBoundTarget",
+    "PerCellFreshBoundTarget",
+    "UniformFreshTailTarget",
+    "UniformEndpointResidualDefectTarget",
+    "FixedGridResidualAllRatesIffTarget"
+  ],
+  "mathematical_status": {
+    "per_pair_original_causal_birth_ramp": "ANALYTICALLY_PROVED_UNCONDITIONAL",
+    "per_cell_original_signed_packet_abs_bound": "ANALYTICALLY_PROVED_UNCONDITIONAL",
+    "complete_fixed_grid_uniform_tail": "ANALYTICALLY_PROVED_UNCONDITIONAL",
+    "total_absolute_birth_packet_le_lambda_cubed": "ANALYTICALLY_PROVED_UNCONDITIONAL",
+    "full_dyadic_original_cross_partition": "ANALYTICALLY_PROVED_SOURCE_FAITHFUL",
+    "original_endpoint_to_residual_defect_at_most_quarter_plus_lambda_cubed": "ANALYTICALLY_PROVED_CONSUMING_EXISTING_SOURCE_QUARTER_ERROR",
+    "fixed_grid_every_positive_rate_equivalence": "ANALYTICALLY_PROVED_CONDITIONAL_RETURNS_PRESERVE_OPEN_ARITHMETIC",
+    "entire_cumulative_signed_residual_strict_subone": "OPEN",
+    "entire_endpoint_strict_subone": "OPEN",
+    "all_positive_rate_RH_supplier": "OPEN",
+    "canonical_RH": "OPEN"
+  },
+  "explicit_constants": {
+    "per_cell_bound": "24*h_j^3/N_j^2 <= 24*lambda^3/(j+1)^3, for all j>=3",
+    "absolute_total_bound": "sum(j>=3)|C_j(lambda)| <= lambda^3",
+    "uniform_tail_bound": "sum(j>=J)|C_j(lambda)| <= 12*lambda^3/(J*(J+1)), J>=3",
+    "fixed_dyadic_coverage": "alpha=1,beta=log(2),T0=0",
+    "endpoint_residual_defect": "<=1/4+lambda^3, all integer J",
+    "preset_lambda_half_defect": "<=3/8, all integer J"
+  },
+  "independent_diagnostics": {
+    "exact_integer_width_and_bound": [
+      "j=3..80",
+      "lambda=1",
+      "lambda=1/2",
+      "lambda=1/4"
+    ],
+    "actual_mobius_floating_packet_tests": "j=3..14, original all-source Gram, N<=16384",
+    "independent_wave_vs_ordered_pair": "j=3..10, absolute differences below 1e-18",
+    "finite_observed_sum_abs_signed": "2.057e-5 (j=3..14), diagnostic only",
+    "verification_role": "Finite exact integer and ordinary double-precision real checks; not a proof of all scales and not interval certified."
+  },
+  "verification": {
+    "publication": "PENDING",
+    "lean_parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_public_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "full_transitive_axioms": "NOT_RUN",
+    "unsafe_native_audit": "NOT_RUN",
+    "native_execution": "NOT_DISPATCHED",
+    "noe_scheduler": "NOT_DISPATCHED",
+    "root_imports": "UNCHANGED",
+    "toolchain_migration": "NONE",
+    "new_research_axioms": "NONE_AUTHORED"
+  },
+  "related_issues": [
+    1556,
+    1406,
+    1429,
+    1430,
+    15
+  ]
+}

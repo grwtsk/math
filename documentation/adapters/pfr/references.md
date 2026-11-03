@@ -16,3 +16,17 @@ unchanged; the two existential constructions are alternative routes.
 all three roots, complete compiler-owned/axiom coverage and three explicit type
 checks. Native compilation, fresh replay, axiom and type checks remain NOT_RUN.
 No incompatible root dependency/import is introduced.
+
+## Original A energy return (2026-11-02)
+
+The new source candidate `GRWTSK/Combinatorics/PfrOriginalEnergyTransport.lean`
+uses an actual injection of energy quadruples under the common
+translation `b ↦ u+b` to prove `E(B) ≤ E(A)` and, with the existing
+`DenseSubmoduleSlice` theorem, the **original-source** bound
+`|B|^4 ≤ |H| E(A)`. The same nonempty B, finite H, strict
+`|A|<2*K^9*|B|` bound, and source inclusion are retained.
+See the authored
+[mathematical disposition](../../mathematics/_support/reviews/pfr-original-energy-transport-2026-11-02.md).
+This is an isolated PFR versioned source candidate, not a newly
+compiled proof or a cross-version root import. The reverse energy
+inequality is false in general; compilation/kernel/axioms remain NOT_RUN.

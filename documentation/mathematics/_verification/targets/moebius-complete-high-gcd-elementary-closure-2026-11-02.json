@@ -1,0 +1,58 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Complete original Mobius high-gcd positive divisor-cover root tail and scalar every-rate closure",
+  "source_blobs": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCompleteHighGcdElementaryClosure.lean": "918952c6edc614291bad983f253366d7cb31a18f",
+    "documentation/mathematics/_support/reviews/moebius-complete-high-gcd-elementary-closure-2026-11-02.md": "c4361ec3c60ae415e9b39e5161b491f67097cb5f"
+  },
+  "pinned_imports": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalGramRootFloorSuppliers.lean": "efbf49d9d0be6f59dc165ec715b14b0f12207d12",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongMertensAbel.lean": "9956bfdb2c7e677c7feafeaf16cfb125da2e56b7",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCompleteHighGcdDivisorCover.lean": "354af0c431832b883974a3157e1000eb4f046a1f",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUnmaskedLowGcdEndpoint.lean": "1adfd2470cb28a0d98ad567d436853ab2d091f"
+  },
+  "mathlib_analytic_supplier": "sum_Ioc_inv_sq_le_sub from Mathlib/Analysis/PSeries.lean at pinned Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "inhabited_by_source_candidates": [
+    "GRWTSK.NumberTheory.Moebius.CompleteHighGcdDivisorCover.DivisorCoverRootTailTarget",
+    "GRWTSK.NumberTheory.Moebius.UnmaskedLowGcdEndpoint.CompleteHighGcdScalarEveryRateTarget"
+  ],
+  "candidate_declarations": [
+    "GRWTSK.NumberTheory.Moebius.CompleteHighGcdElementaryClosure.reciprocal_sqrt_Icc_le",
+    "GRWTSK.NumberTheory.Moebius.CompleteHighGcdElementaryClosure.sum_Icc_divisible_multiples",
+    "GRWTSK.NumberTheory.Moebius.CompleteHighGcdElementaryClosure.divisorRootRow_le",
+    "GRWTSK.NumberTheory.Moebius.CompleteHighGcdElementaryClosure.divisorCoverRow_le",
+    "GRWTSK.NumberTheory.Moebius.CompleteHighGcdElementaryClosure.inverse_square_Icc_tail",
+    "GRWTSK.NumberTheory.Moebius.CompleteHighGcdElementaryClosure.divisorCoverRootTail_proof",
+    "GRWTSK.NumberTheory.Moebius.CompleteHighGcdElementaryClosure.completeHighGcdScalarEveryRate_proof",
+    "GRWTSK.NumberTheory.Moebius.CompleteHighGcdElementaryClosure.endpointSum_le_fixedPlain_of_positive_elementary"
+  ],
+  "source_math_obligations_remaining": [
+    "PlainLowGcdEveryRateDyadic, RH strength",
+    "dependency acceptance in pinned Lean/kernel not yet obtained"
+  ],
+  "finite_tests": {
+    "root_rows": 14365,
+    "scalar_cutoff_cases": 45,
+    "interval_certified": false
+  },
+  "verification": {
+    "parsing": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "full_import_compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_DISPATCHED",
+    "root_import": "NOT_ADDED"
+  },
+  "scope": {
+    "additive_only": true,
+    "existing_source_changes": 0,
+    "dependency_pin_changes": 0,
+    "force_push": false
+  }
+}

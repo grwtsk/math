@@ -1,0 +1,135 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Source-exact original Möbius far: explicit eventual prime-box populations and noncircular complete fixed-rate/log-power upper",
+  "repository": "grwtsk/math",
+  "research_attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
+  "pin": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarPrimeBoxPNTMass.lean",
+      "blob": "5c0fb0a8f8b405ca3e9c0f94b7530be6e6b0f5d4",
+      "type": "LEAN_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarCompleteUpperTransfer.lean",
+      "blob": "11b3913a25626bbd4e1a593b50c31e82bac6abee",
+      "type": "LEAN_SOURCE_PROOF_CANDIDATE"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-far-prime-box-pnt-full-upper-frontier-2026-11-02.md",
+    "blob": "e2aed4e2f71a2cd15d8a1781cd023222f4667fe2"
+  },
+  "previous_exact_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarReducedStructuralFrontier.lean",
+      "blob": "9f72096be0c6aa30ecb0099a747090a5e30e4c44"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCollarResidualGcdReducedGap.lean",
+      "blob": "48081c7e32d41455ef7fc7d02c006588bd9b36b7"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCollarResidualShortRatio.lean",
+      "blob": "12d234aa8977cefe3a587706a9de2360467a9e31"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTerminalHighSmoothCrossShellCollar.lean",
+      "blob": "37ce65434d6d468c7815006ea3c5fbe7fbf50648"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSquareBridge.lean",
+      "blob": "be156509d9679a22b52b32d087f87d8449a047ef"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSevenEighthsSupercriticalRates.lean",
+      "blob": "49f930e0125d672ee341c93905339a51ab733b22"
+    }
+  ],
+  "source_scope": {
+    "time": "T_J=J*log(2),N_J=2^J,J>=1 fixed independently of requested epsilon",
+    "original_coefficient": "moebiusReal(m)*moebiusReal(n), squareful zero values included",
+    "kernel": "original birth-gated pickupResponseGram(T_J,m,n), both ordered pair orientations, no altered sign",
+    "far_selector": "original lowIndices and farPair (not shortRatioPair; not reducedClosePair); true original diagonal and finite gap mask remain",
+    "prime_boxes": "P genuine primes N/16..N/12, Q genuine primes N/4..N/3, R genuine primes N/8..N/6, doubled R genuine negative indices",
+    "prime_count_evidence": "Classical PNT pi(x)~x/log(x) gives P>=N/(96*T), Q>=N/(24*T), R>=N/(48*T) for all sufficiently large J",
+    "causal_kernel_evidence": "K_T(p,q)>=1/N and K_T(p,2r)>=1/N; positive paired K_T(p,r)-K_T(p,2r)>2/N on original [T-1/2,T]"
+  },
+  "ordinary_mathematical_conclusions": {
+    "eventual_positive_and_negative_far_masses": "for J>=J0, positiveFarMass(J)>=N/(4608*T^2) and negativeFarMass(J)>=N/(4608*T^2), with one J0 independent of pairs",
+    "matched_prime_doubling": "sum_(p in P,r in R)[K_T(p,r)-K_T(p,2r)]>=N/(2304*T^2), one orientation",
+    "absolute_mass_obstruction": "full far sum of absolute values cannot be O(exp(epsilon*T)) for any fixed epsilon<1",
+    "complete_far_classical_logpower": "for every integer beta>=1 and eta>0, exists C_beta,D_eta>=0 uniform in all admissible |B_J|<=floor(sqrt J) such that far<=C_beta*exp(T)/(1+T)^beta +D_eta*exp(eta*T)",
+    "complete_far_classical_pure_logpower": "for every integer beta>=1, exists C_beta'>=0 uniform B such that far<=C_beta'*exp(T)/(1+T)^beta (elementary exponential absorption, not ported into pinned Lean)",
+    "complete_far_fixed_rate_seven_eighths": "for every r>3/4 exists C_r>=0 independent of J and admissible B, far<=C_r*exp(r*T), conditional on previously named PublishedOAISevenEighths, ZeroFreeToMertensPowerBridge, PickupVelocityPowerEnergyTransfer and three independently elementary absolute-price targets",
+    "complete_far_every_positive_rate": "OPEN. In particular, no proof for r<=3/4 is obtained from the 7/8 track; no automatic promotion of logarithmic savings"
+  },
+  "new_Lean_theorem_candidates": [
+    "FarPrimeBoxPNTMass.original_far_eq_positive_sub_negative",
+    "FarPrimeBoxPNTMass.positiveFarTerm_nonneg",
+    "FarPrimeBoxPNTMass.negativeFarTerm_nonneg",
+    "FarPrimeBoxPNTMass.nonnegative_rectangle_lower",
+    "FarPrimeBoxPNTMass.prime_box_far_masses_ge_cards",
+    "FarPrimeBoxPNTMass.far_both_signs_PNT_of_prime_boxes",
+    "FarPrimeBoxPNTMass.genuine_prime_doubling_paired_cross_ge",
+    "FarCompleteUpperTransfer.pickupCross_eq_paid_add_far",
+    "FarCompleteUpperTransfer.far_upper_of_global_cross_and_absolute_paid",
+    "FarCompleteUpperTransfer.far_upper_of_endpoint_and_absolute_paid",
+    "FarCompleteUpperTransfer.far_complete_PNT_logpower_plus_subpower_of_source_gates",
+    "FarCompleteUpperTransfer.far_complete_upper_all_fixed_rates_gt_three_quarters"
+  ],
+  "independent_explicit_unproved_pinned_Lean_props": [
+    "PrimeBoxesOriginalSourceLowerTarget",
+    "PrimeBoxesEventualPNTProductCountsTarget",
+    "PrimeDoublingOriginalPairLowerTarget",
+    "OriginalBalancedPNTLogPowerTarget",
+    "UniformCollarAllRateTarget",
+    "ShortRatioUniformAllRateTarget",
+    "ReducedCloseUniformAllRateTarget",
+    "PublishedOAISevenEighths (external theorem adapter)",
+    "ZeroFreeToMertensPowerBridge (classical contour transfer)",
+    "PickupVelocityPowerEnergyTransfer (source calculus)"
+  ],
+  "decisive_missing_target": "FarOriginalEveryPositiveRateUpperTarget: forall epsilon>0 exists C_epsilon>=0 forall J>=1, farReducedOrLongCross(emptyPrimeBand,empty,J)<=C_epsilon*exp(epsilon*T_J). RH-strength, OPEN",
+  "finite_preflight": {
+    "J_range": "8..14",
+    "rows": 7,
+    "all_tested_pairs_far": true,
+    "positive_pair_Gram_min_scaled_by_N": 3.9639972257415277,
+    "paired_doubling_difference_min_scaled_by_N": 8.333026476632094,
+    "exact_source_mobius_sign_failures": 0,
+    "certification": "NONCERTIFYING_FLOATING_POINT_DIAGNOSTICS"
+  },
+  "verification": {
+    "publication": "PASS_FOUR_EXACT_GIT_BLOB_READBACK",
+    "compilation": "DEFERRED_PER_USER",
+    "parser": "NOT_RUN",
+    "expected_type_elaboration": "NOT_RUN",
+    "independent_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "opaque_native_unsafe": "NOT_RUN",
+    "classical_prime_number_theorem_import": "NOT_RUN",
+    "classical_quantitative_Mertens_import": "NOT_RUN",
+    "external_7_8_full_import": "NOT_RUN",
+    "full_far_all_positive_rate": "OPEN",
+    "RiemannHypothesis": "OPEN",
+    "source_code_paths": 2,
+    "review_and_target_paths": 2,
+    "all_source_and_pin_changes": "ADDITIVE_ONLY",
+    "source_level_assurance": "PROOF_CANDIDATE_UNCOMPILED"
+  },
+  "related_issues": [
+    1556,
+    1429
+  ],
+  "external_reading": [
+    "https://dlmf.nist.gov/27.2",
+    "https://www.fieldsinstitute.ca/talks/Explicit-Mertens-estimates"
+  ],
+  "source_publication_commit": "6c306b01754738ca6bea6fa8d6874ce124d3fc26",
+  "source_publication_parent": "a14a7cdd6300fca79bf3a6e1b9cc0ddcc78faab9"
+}

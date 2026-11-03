@@ -1,0 +1,72 @@
+{
+  "schema": "grwtsk.moebius-balanced-two-sided-PNT-dense/1",
+  "attribution": "grwtsk contributors",
+  "research_date": "2026-11-01",
+  "base_observed_main": "243870dbf54b13d3efac596079afcda89585afe9",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusBalancedTwoSidedPNTDense.lean",
+    "status": "SOURCE_PROOF_CANDIDATE"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-balanced-two-sided-pnt-dense-2026-11-01.md"
+  },
+  "existing_pins": {
+    "one_sided_PNT": "90d214fe5c00ec8ffb8c33c6a0b55fb25a39e90a",
+    "least_prime_tags": "fb77710105395da0394c930ef702b893f2f87f",
+    "actual_response_monotonicity": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4",
+    "putnam_sparse": "2ccedc75331c8ec88956923f896083727d49ec4f"
+  },
+  "paper_theorem": {
+    "input": "Unconditional classical Mertens |M(x)|<=CA*x/(1+log x)^A for every A>=1",
+    "bank_factors": "W_P=prod_p(1-1/p)^-1, V_P=prod_p(1-p^-1/2)^-1",
+    "uniform_explicit": "H(P,A,X)=4 CA(1+2^A W_P)X/(1+log X)^A+2^(7/4)V_P X^(3/4); |dense_ab|<=4 log2 H^2/X+(4 floor((2X)^(eps/2))+2)(log 2X)^2",
+    "corollary": "For each finite fixed prime bank P, beta>0, 0<eps<2: exists C>0, for all X>=2, all four ordered tag sectors have |dense_ab(X,log 2X)| <= C X/(1+log X)^beta",
+    "sourcing": "original integer index and squareful zeros; both RM and MR; actual causal kernel; original Putnam mask",
+    "RH_strength": false,
+    "formal_L3": "NOT_YET_FORMALIZED",
+    "growing_prime_bank_uniform": "For each 0<theta<2, beta>0, 0<epsilon<2, every finite prime bank P_X with all primes <=(1+log X)^theta satisfies the same O_(theta,beta,epsilon)(X/(1+log X)^beta) balanced dense bound uniformly over BOTH X and P_X, all RR/RM/MR/MM.",
+    "bank_factor_uniformity": "W_P<=Y^2 and V_P<=exp(8sqrt Y) for primes <=Y; Y=(1+log X)^theta, theta<2. This is an elementary Euler-factor argument independent of PNT."
+  },
+  "source_theorem_candidates": [
+    "taggedMoebius_sum",
+    "taggedMoebius_abs_le_one",
+    "taggedMoebius_zero_of_not_squarefree",
+    "tagged_pair_four_identity",
+    "originalDenseRectangle_eq_four_tagged",
+    "rankOne_two_signed_factors",
+    "mixed_diagonal_zero",
+    "no_doubling_inside_same_block",
+    "no_tripling_inside_same_block",
+    "no_prime_star_inside_same_block",
+    "PolylogGrowingPrimeBankDenseTarget (named Prop; paper-proved, Lean proof OPEN)"
+  ],
+  "research_proposition": "BalancedDenseLogPowerFormalizationTarget",
+  "diagnostics": {
+    "exact_integer_convolution": 512,
+    "actual_signed_causal_block_cases": 24,
+    "max_float_four_sector_residual": 8.7e-19,
+    "certification": "finite noncertified diagnostic"
+  },
+  "verification": {
+    "publication": "PENDING",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "Mertens_Port_in_Lean": "OPEN",
+    "smoothDivisor_Source_Proof_in_Lean": "OPEN",
+    "causal_Abel_interchange_in_Lean": "OPEN",
+    "remaining_entire_dense_all_positive_rate": "OPEN",
+    "RH": "OPEN"
+  },
+  "related_issues": [
+    1556,
+    1544,
+    1559,
+    1429
+  ]
+}

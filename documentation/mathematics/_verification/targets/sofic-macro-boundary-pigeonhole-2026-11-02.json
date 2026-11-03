@@ -1,0 +1,152 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Sharp genuine sofic periodic-word macro-boundary pigeonhole: original graph WordPath proof source",
+  "issue": "https://github.com/grwtsk/math/issues/1576",
+  "classification": "SOURCE_BY_PROOF_CANDIDATE_NOT_NATIVE_LEAN_ACCEPTED",
+  "repository": "grwtsk/math",
+  "inspected_math_commit": "216e9a57ad4cf86e77012971bbacb60b1789c38f",
+  "candidate_source": {
+    "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficMacroBoundaryPigeonhole.lean",
+    "git_blob": "3cefc809745c95b490b3dce20880da7bd82ff9a4",
+    "lines": 216,
+    "target": "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicWordMatrix.FiniteStateBlockBoundaryPigeonhole",
+    "candidate_theorem": "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficMacroBoundaryPigeonhole.finiteStateBlockBoundaryPigeonhole_proof",
+    "no_added_source_math_hypothesis": true,
+    "no_authored_sorry_axiom_unsafe": true,
+    "no_original_source_mutation": true,
+    "no_root_import_mutation": true,
+    "verified_native_proof": false
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/sofic-macro-boundary-pigeonhole-2026-11-02.md",
+    "git_blob": "1aa20d5c1fa7579cb42f662ba115754ef7adbc1d"
+  },
+  "pin": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+    "mathlib_pigeonhole_source": "Mathlib/Data/Fintype/Pigeonhole.lean",
+    "mathlib_pigeonhole_blob": "f467f803520337a89059cca4e7968b798dff1b1f",
+    "mathlib_pigeonhole_theorem": "Fintype.exists_ne_map_eq_of_card_lt"
+  },
+  "imported_original_dependencies": [
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CertifiedTransversal.lean",
+      "blob": "df720cbb72c616938635c20477430f5f0ded4021"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/ExactSoficLanguageCover.lean",
+      "blob": "f50489eaf6c7277993a08925a58b7765f9e10ec9"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLanguageTransversal.lean",
+      "blob": "238da905b6595c944cac40f39ae2f54870032132"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean",
+      "blob": "70e416083e8fd1238ffdd8896f984e0a5382c139"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBasedCycleCard.lean",
+      "blob": "d7fd2f5aad643d4350e4b5bfd7128dd979717a74"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepeatBridge.lean",
+      "blob": "a05e7d4527b6e37d59a48288f1e58e1a3867ca56"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteRepeatClosure.lean",
+      "blob": "e8d8dcc01f4e9f067cb9041ad5e54f7dd79d0962"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicFiberLedger.lean",
+      "blob": "becfa9cfddb8479c36a007c17d8be4d0d7defe05"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleLabelBijection.lean",
+      "blob": "bd1ba53939ed6f5a4e00d76be9d6d433d09f3d0b"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicWordMatrix.lean",
+      "blob": "d8f0423d8b872e5045c779544bd39eb1bad7adfe"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepetitionFromWalk.lean",
+      "blob": "00263005b2f46020c8f3a5434d8c6207eaa32622",
+      "role": "concurrent independent original-cycle-run construction preserved"
+    }
+  ],
+  "proof_structure": [
+    "Private wordMacroGraph uses original WordPath G s word t as its exact Unit-labeled macro edge.",
+    "macroWalk_of_finiteCopies splits one original path into q real word-block edges using wordPath_split_append; no endpoint or label reconstruction assumption.",
+    "indexMacroWalk uses original LabeledWalkData.snoc to make q+1 indexed real intermediate states with q real macro edges.",
+    "Pinned Fintype.exists_ne_map_eq_of_card_lt returns i ≠ j with equal states, since card(Fin(q+1)) > card(State)=q.",
+    "segmentOfIndexed uses exact q original macro edges to construct a path of length k=j-i between the repeated states, 1<=k<=q.",
+    "originalPath_of_macroWalk expands each true macro edge into original WordPath G _ word _, obtaining a closed actual path labeled finiteCopies word k."
+  ],
+  "finite_diagnostic": {
+    "classification": "FINITE_INTEGER_GRAPH_SOURCE_CHECK_NOT_LEAN",
+    "script": "/mnt/data/sofic_macro_pigeonhole_reference.py",
+    "script_sha256": "bd80efc808f15eaa441ea3533d92f3d332a8e5c0d1e68bdf6b7ffe7d9cbcc6db",
+    "results": "/mnt/data/sofic_macro_pigeonhole_reference.json",
+    "results_sha256": "96b3cbbad625168f2152156c2809fb6a901be9adb94e819108c570dccf733a9c",
+    "graph_count": 956,
+    "graph_word_cases": 15710,
+    "admitted_q_block_paths": 12815,
+    "successful_true_closed_segments": 12815,
+    "original_edge_checks": 39474,
+    "nonadmitted_graph_word_cases": 2895,
+    "empty_word_cases": 956,
+    "zero_state_graphs": 3,
+    "empty_alphabet_graphs": 4,
+    "witness_k_histogram": {
+      "1": 11860,
+      "2": 886,
+      "3": 69
+    },
+    "exhaustive_scope": "q<=2, alphabet<=2, plus q=3 alphabet=1",
+    "sample_scope": "160 seeded q=3 alphabet=2 graphs",
+    "limitation": "one deterministic path witness per admitted graph/word, not every nondeterministic graph path"
+  },
+  "remaining_math_targets": [
+    "WordPowerClosedPathBridge: exact word-matrix powers count concatenations of actual original word-path witnesses",
+    "BoundedPeriodicWordMatrixCriterion: connect full periodic word language to bounded positive traces of exact word matrices",
+    "FaithfulCycleWords and CompleteCycleLifts are separate and generally false for arbitrary exact sofic presentations"
+  ],
+  "native_verification": {
+    "Noe_operator_revision": "d4db7d83a71e04df066754e2b041d006e924669f",
+    "Noe_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "local_Lean_Lake_elan_found": false,
+    "verified_local_noe_math_checkout": false,
+    "native_job_dispatched": false,
+    "current_owner_host_admission": "NOT_CHECKED",
+    "native_compilation": "NOT_RUN",
+    "expected_types_universes": "NOT_RUN",
+    "fresh_trust0_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "complete_import_closure": "NOT_RUN",
+    "host_restoration": "NOT_CHECKED",
+    "proof_acceptance": false
+  },
+  "verification": {
+    "Git_blob_source_creation": "PASS",
+    "publication": "PASS_GUARDED_NONFORCE_MAIN",
+    "exact_blob_readback": "PASS_3_OF_3",
+    "native_compilation": "NOT_RUN",
+    "kernel": "NOT_RUN",
+    "axiom_audit": "NOT_RUN",
+    "declared_source_proof": "CANDIDATE_UNCOMPILED",
+    "remaining_targets": "OPEN",
+    "issue_state": "OPEN"
+  },
+  "publication": {
+    "published_commit": "a6a508a0865ece748d854e6150e742a394838be6",
+    "guarded_expected_parent": "be79cce5f40c97a5b5fbf5b466598d32309fa00c",
+    "source_blob": "3cefc809745c95b490b3dce20880da7bd82ff9a4",
+    "review_blob": "1aa20d5c1fa7579cb42f662ba115754ef7adbc1d",
+    "initial_manifest_blob": "38fe2704fe42d3807b4992e6ba5cdc81f15a99ef",
+    "source_only_not_lean_acceptance": true
+  }
+}

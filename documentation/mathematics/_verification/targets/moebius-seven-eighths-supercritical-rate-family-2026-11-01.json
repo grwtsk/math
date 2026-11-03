@@ -1,0 +1,63 @@
+{
+  "schema": "grwtsk.moebius-seven-eighths-supercritical-rate-family/1",
+  "attribution": "grwtsk contributors",
+  "date": "2026-11-01",
+  "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSevenEighthsSupercriticalRates.lean",
+  "source_blob": "49f930e0125d672ee341c93905339a51ab733b22",
+  "review": "documentation/mathematics/_support/reviews/moebius-seven-eighths-all-rates-above-three-quarters-2026-11-01.md",
+  "review_blob": "4659acd12f3c987c3c39c53ecabad28e40518e1d",
+  "external": {
+    "published_theorem": "OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re",
+    "repository": "openai/math",
+    "checked_revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "source": "lean/OAI/NumberTheory/DirichletL/Nonvanishing.lean",
+    "blob": "46c67f4000906b1391a471d6e6396ac0da3c16a5",
+    "independent_report": "tomoto0/quasi-riemann-hypothesis-7-8-verification/lean/lean_build_report.md",
+    "independent_report_blob": "350be16589ef5454f57a7555d6bc51730d98aec6",
+    "verification_scope": "Reported pinned Lean build and final module kernel replay; all-module separate replay timed out; independent manuscript peer review not asserted"
+  },
+  "local": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+    "predecessor": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSevenEighthsEndpointReturn.lean",
+    "predecessor_blob": "3429d9b714bccfbef0ab873bc23f928f19ad75ad"
+  },
+  "source_candidate_theorems": [
+    "endpoint_all_rates_gt_three_quarters",
+    "endpoint_fixed_grid_all_rates_gt_three_quarters"
+  ],
+  "visible_unproved_in_local_lean": [
+    "PublishedOAISevenEighths",
+    "StrongFixedPowerPR103.ZeroFreeToMertensPowerBridge",
+    "StrongFixedPowerPR103.PickupVelocityPowerEnergyTransfer"
+  ],
+  "math": {
+    "theorem": "For each r>3/4 there exists A_r>=0 such that for all T>=0, endpointSum(T)<=A_r*exp(r*T)",
+    "exact_rate_map": "theta=(1+r)/2>7/8, energy rate 2theta-1=r, for r in (3/4,1)",
+    "energy_constant": "4*C_r^2/r^3 with C_r from classical Mertens at theta",
+    "fixed_dyadic_grid": "G={j*log2: j>=0}, alpha=1,beta=log2,T0=0, independent of r",
+    "dyadic_time_cell": "H_j <= (4*C_r^2/r^3)*(2^(r*j)-2^(r*(j-1)))",
+    "source_status": "Ordinary mathematical consequence of externally published 2026 fixed 7/8 theorem and classical Perron bridge",
+    "full_original_every_positive_rate": "OPEN",
+    "RH": "OPEN"
+  },
+  "verification": {
+    "publication": "PENDING",
+    "local_lean_parsing": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "exact_public_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms_and_unsafe": "NOT_RUN",
+    "native_verification_dispatch": "NONE",
+    "root_import_or_toolchain_change": "NONE",
+    "research_axioms_or_sorry": "NONE_AUTHORED"
+  },
+  "related_issues": [
+    1556,
+    1406,
+    1429,
+    15
+  ]
+}

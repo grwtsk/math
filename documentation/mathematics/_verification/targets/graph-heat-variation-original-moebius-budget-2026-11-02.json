@@ -1,0 +1,166 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Shared source-preserving row-imbalance heat-variation and original signed-Gram budget",
+  "scope": "THREE_ADDITIVE_FORMAL_PROOF_SCRIPT_CANDIDATES_PLUS_REVIEW_AND_FINITE_REGRESSION; NOT_ALL_REPO_NATIVE_VERIFIED",
+  "classification": "SOURCE_PROOF_CANDIDATE_LEAN_NOT_COMPILED",
+  "inspected_math_revision": "2e1de65075856e29723fd308d92ae16fc562e758",
+  "inspected_noe_main": "c881496cc1b0c4e52f0dbb73d32ca6f9eea47b2d",
+  "canonical_noe_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+  "pinned_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "source_additions": [
+    {
+      "path": "GRWTSK/MeasureAndIntegration/GraphHeatVariationBudget.lean",
+      "git_blob": "dd8d0f6bdb29b1471d955e32085424470205d7aa",
+      "source_sha256": "4d2cd1e15d9485e311f3512079e0b723d15204b8edc6dac6da5b7a32745ec356",
+      "declarations": [
+        "localResidual_eq_variation_add_imbalance",
+        "localResidual_abs_le_variation_budget",
+        "localResidual_l1_le_variation_add_imbalance",
+        "localResidual_l1_le_variation_of_rowStochastic",
+        "rowStochastic_of_symmetric",
+        "realStep_abs_le_step_abs",
+        "realStep_l1_contraction"
+      ]
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/GraphSignedGramEdgeBudget.lean",
+      "git_blob": "98ee28a04ad90c1f02e00cc92da764dc942912b0",
+      "source_sha256": "cd34d9cc905a606710ee1febd804fcab399b3571c6a19bcc72e5da20ed7c72e9",
+      "declarations": [
+        "signedResidual_abs_le_edgewiseGramBudget",
+        "signedCross_le_observed_add_budget",
+        "colored_signedCross_le_observed_add_budget"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPickupGraphBudget.lean",
+      "git_blob": "e9a7de126f8a41062351b22a884faa01a5dacce3",
+      "source_sha256": "bcf13b08234f1cb3bcd566bc4b723bd1074b30b8ab09557ac0c6b611fb77975e",
+      "declarations": [
+        "original_pickupCross_eq_orderedCross",
+        "pickupCross_le_observed_plus_full_edge_budget",
+        "pickupCross_eq_observed_plus_signed_defect"
+      ]
+    }
+  ],
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/Combinatorics/GraphTheory/RootHeatState.lean",
+      "blob": "b58e2e0e16b134f110015059b0d3d5dd7d2aca47"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/ColoredDiffusiveGodelReconstruction.lean",
+      "blob": "d1d05d63a40633effdb2eeb3a1c081daf21ad6e8"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/ColoredSixPortPolarityBridge.lean",
+      "blob": "0d0e94f92be9d6925e55ce1dbe4649d0ee523105"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/CERNWaveformSignedGram.lean",
+      "blob": "a2a1cf3bf6cd04677bc3072c70394e2203091e38"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/UniversalWaveformInput.lean",
+      "blob": "639bd1f0954197c8b53510c38c8f54f61e29cd90"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUniversalWaveformReturn.lean",
+      "blob": "8f807513c6a5cbf264750717327ed319f926ed44"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa"
+    },
+    {
+      "path": "GRWTSK/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ObservationSandwich.lean",
+      "blob": "bb6edd0a7079788c1fe47e5fb4fba5eea861b0b6"
+    },
+    {
+      "path": "GRWTSK/DifferentialGeometry/GodelObserverMetricVorticity.lean",
+      "blob": "f5d8a65fd1e4e59e97e139b3fc63829028c3c662"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/graph-heat-variation-original-moebius-budget-2026-11-02.md",
+    "blob": "83cc783d6710a58c8ba4537552f5e869f77c8182"
+  },
+  "regression": {
+    "script": {
+      "path": "scripts/math/graph_transport_reference.py",
+      "blob": "72ba175984b5bf8fbedb84abfcddf4c1c3db70a6",
+      "local_sha256": "78c8f0029eaae34b6ed603b924a53ef649d05d6cad0cd3b2250032b6b2a39325",
+      "previous_blob": "474d674f0813a8273b557c5cf2a6d43babb59c47",
+      "previous_sha256": "7cc89a2eaf20b283515e50d7e8c6ece44ce3bc8903c621a3663f68c723a004cf",
+      "execution_note": "Portable stdlib-only script now writes JSON only when an output path argument is explicitly supplied; default is stdout. The exact same finite PASS evidence JSON is reproduced."
+    },
+    "result": {
+      "path": "documentation/mathematics/_verification/targets/graph-heat-variation-finite-reference-2026-11-02.json",
+      "blob": "8aed7631edcf54122ffcb8a8e36f19485384865a",
+      "local_sha256": "c11b354f03df6d65a9dde02cc52602789d979ce7dd12c2058801c907b5f29fb5"
+    },
+    "metrics": {
+      "rational_graph_cases": 4620,
+      "source_return_checks": 18480,
+      "ordered_signed_gram_terms": 73920,
+      "graph_sandwich_checks": 27720,
+      "symmetric_dirichlet_identity_checks": 1540,
+      "result": "PASS_FINITE_ONLY"
+    },
+    "other_local_companion_data": {
+      "atlas_12_published_coefficients": "PASS_four_exact_block_row_balanced_variation_equalities",
+      "ligo_48_bin_rms_preview": "PASS_both_variation_budgets, NOT original full resolution signed waveform",
+      "ligo_historical_full_resolution": "H1 full trace 16.218288 variation budget vs 0.863703 actual; L1 13.617009 vs 0.704772, historical source only",
+      "cern_raw_snapshot": "HISTORICAL_SOURCE_CHECK_ONLY_not_replayed_here",
+      "actual_moebius_pickupN_le64": "PASS_HIGH_PRECISION_FINITE_NOT_LEAN",
+      "moebius_numeric_reference_script_local_sha256": "5b5b76c82372f8acd048e2e2c24f328f3864c438f49081272782fd40a19b406e",
+      "moebius_numeric_result_local_sha256": "caa216121db886ee0974904871c8adc64d069271e33c92598466257c25e2d60c"
+    }
+  },
+  "math": {
+    "precise_bound": "||d-Kd||1<=sum_vu K(v,u)|d(v)-d(u)|+sum_v|1-rowMass_K(v)|*|d(v)|",
+    "counterexample": "absorbing sink K=[[1,1],[0,0]], constant d=[1,1]: ||d-Kd||1=2 but variation=0",
+    "signed_original_pickup": "pickupCross(T) <= observed original pickupResponseGram cross + complete edgewise mixed and error-error budget",
+    "noncircular_arithmetic_supplier": "The observed original Möbius packet plus the complete original-weighted edge budget must have all-positive-rate bounds on ONE fixed affine-frequent scale set",
+    "no_rh_claim": true,
+    "original_mobius_and_support_unchanged": true,
+    "physical_modalities_not_identified": true
+  },
+  "verification": {
+    "static_no_authored_sorry_axiom_unsafe": "PASS_SOURCE_DECLARATION_SCAN_ONLY",
+    "local_python_exact_rational_regression": "PASS",
+    "local_Python_high_precision_moebius_arithmetic": "PASS_FINITE_ONLY",
+    "git_blob_creation": "PASS",
+    "guarded_nonforce_publication": "PASS_GIT_EXPECTED_PARENT",
+    "exact_remote_blob_readback": "PASS_7_OF_7",
+    "native_Lean_compilation": "NOT_RUN",
+    "exact_expected_types_universes": "NOT_RUN",
+    "fresh_kernel_trust_zero": "NOT_RUN",
+    "full_transitive_axiom_audit": "NOT_RUN",
+    "managed_Noe_resource_owner": "NOT_INVOKED",
+    "math_kernel_acceptance": false,
+    "original_RH_growth_supplier": "OPEN"
+  },
+  "publication": {
+    "source_commit": "9ce20df226b347aaf9df268a59e4fd5a1ad390c9",
+    "expected_parent": "11a8b680cbf07bc4e5435fd927c5531ef41726b3",
+    "source_commit_tree": "71a756e193c522fab44bb7e9fa5d709bf69abd6a",
+    "initial_manifest_blob": "7ea51624c443f6de8388e169756c53deefd68cbd",
+    "verified_unchanged_source_definitions": true,
+    "seven_exact_file_blobs_pass": true,
+    "result_class": "SOURCE_ACCEPTED_BY_GIT_NOT_NATIVE_LEAN_ACCEPTANCE",
+    "reproducibility_amendment": {
+      "updated_script_blob": "72ba175984b5bf8fbedb84abfcddf4c1c3db70a6",
+      "original_source_modules_unchanged": true,
+      "source_commit_recorded_as_original": "9ce20df226b347aaf9df268a59e4fd5a1ad390c9",
+      "script_revision_commit": "see_git_history_of_this_manifest",
+      "finite_result_blob_unchanged": "8aed7631edcf54122ffcb8a8e36f19485384865a"
+    }
+  }
+}

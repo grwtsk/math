@@ -1,0 +1,82 @@
+{
+  "schema": "grwtsk.elliptic-native-local-powerseries/1",
+  "attribution": "grwtsk contributors",
+  "baseline_observed_head": "57f6c134f177c4c97cb178a6cb42b0d5805e68da",
+  "repository": "grwtsk/math",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticPowerSeriesLocalFactor.lean",
+    "git_blob": "61ba3e2fb70554bb42b194f287d2822f2be92433",
+    "status": "LEAN_SOURCE_PROOF_CANDIDATE"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/elliptic-powerseries-native-local-factor-2026-11-01.md",
+    "git_blob": "10f73853cbaebc921dcbf707ea9617fb6351b837"
+  },
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "mathlib_lfunction_blob": "de7b33670abe4c6af2a0dcc6cdd1696f42ee5738",
+    "mathlib_power_series_inverse_blob": "aaec95803dbec7ee3e249fd418ac60e8e7dec58a"
+  },
+  "unchanged_imports": [
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticLocalEulerCoefficientInversion.lean",
+      "blob": "ccb52cf5c8a419200e785d1a41e3fd8aaa0b348d"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/EllipticFiniteEulerWindow.lean",
+      "blob": "48e14ca731bd9b13f8373eea7521e746cb3eab93"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239Curve.lean",
+      "blob": "9b489d813ddf451a7c8d164ca808fb569b29b5b8"
+    }
+  ],
+  "namespace": "GRWTSK.NumberTheory.ArithmeticGeometry.EllipticCurves.LocalEulerPowerSeries",
+  "declarations": [
+    "goodPolynomial",
+    "goodSeries",
+    "directSeries",
+    "goodSeries_eq_quadratic",
+    "goodSeries_mul_directSeries_coeff",
+    "goodSeries_mul_directSeries",
+    "goodSeries_constantCoeff",
+    "directSeries_eq_invOfUnit",
+    "localSize",
+    "localCount",
+    "localPolynomial_good",
+    "localPowerSeries_good",
+    "localPowerSeries_coeff_good",
+    "recordSevenPadic",
+    "sevenPadic_residue_card",
+    "recordSevenPadic_localPowerSeries",
+    "recordSevenPadic_localPowerSeries_of_count"
+  ],
+  "actual_mathematical_theorems": [
+    "Over integers, complete exact formal inverse of 1-aX+qX^2 has the original c_n recurrence at every exponent.",
+    "For any actual DVR R and elliptic Weierstrass K-curve W with GOOD REDUCTION OF W.minimal R, Mathlib localPowerSeries equals full native directSeries using the true minimal-reduction point count.",
+    "For the original record curve at p=7: discriminant a 7-adic unit implies original integral model is good and minimal; classical DVR minimal-model uniqueness induces F7 curve isomorphism with Mathlib chosen minimal model, preserving exact N7=13 and local factor 1+5T+7T²."
+  ],
+  "seven_adic_numeric_open_premises": [
+    "Construct/verify good reduction for recordSevenPadic.minimal(PadicInt 7) from original integer discriminant and selected p-adic model.",
+    "Prove card of actual minimal reduction point group equals original Record4239.reducedPointCount 7 =13."
+  ],
+  "status": {
+    "source_only": true,
+    "paper_formal_series_proof": "COMPLETE_MATHEMATICAL_ARGUMENT",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "seven_adic_numeric_port": "LEAN_SOURCE_PREMISES_OPEN",
+    "elliptic_BSD": "OPEN",
+    "seven_adic_classical_minimal_model_identification": "COMPLETE_PAPER_PROOF_USING_CLASSICAL_MINIMAL_MODEL_UNIQUENESS"
+  },
+  "blocked_scope": [
+    "No analytic elliptic L continuation or BSD theorem",
+    "Do not infer good reduction of a chosen minimal local model from raw integer-mod-p source without formal model comparison",
+    "No foreign repository mutation",
+    "No unapproved native verifier or CI run"
+  ],
+  "next_milestone": "Prove genuine minimal good reduction for the base-changed record model at 7 and invariance of its point count under the chosen minimal-model variable change."
+}

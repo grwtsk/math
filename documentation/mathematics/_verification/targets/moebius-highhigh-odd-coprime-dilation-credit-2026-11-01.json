@@ -1,0 +1,79 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-01",
+  "title": "Exact original high-high odd-coprime Möbius quotient signed credit and incomparable/nonodd residual",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_blobs": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongOddCoprimeDilation.lean": "6164a4de724f2a29ef4304304f87b48d3ec78b41"
+  },
+  "dependencies": [
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongEarlyIndexCollar.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/MertensSignedPairDescent.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDivisorCausalGramCollapse.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTwoPrimeSignedPacketCore.lean",
+    "Mathlib/NumberTheory/ArithmeticFunction/Moebius.lean"
+  ],
+  "expected_declarations": [
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.original_moebius_mul_of_coprime",
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.oddCoprimeRatio_implies_divisible",
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.prime_ratio_is_oddCoprime",
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.oddCoprime_source_nonpos",
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.highHighOddCross_eq_neg_credit",
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.highHighStrong_eq_odd_add_nonOdd",
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.highHighStrong_eq_nonOdd_sub_credit",
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.highHighOddCredit_ge_selected_pair",
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.highHighOddCredit_ge_prime_pair",
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.highHighStrong_lt_nonOdd_of_strict_pair",
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.endpointSum_le_rate_nonOdd_highHigh_minus_credit"
+  ],
+  "explicit_unproved_lean_target": [
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.HighHighOddCreditRootTailTarget"
+  ],
+  "proof_scope": {
+    "sign": "source-exact negative odd-coprime ratio for all T>=0",
+    "signed_ledger": "exact full ordered original high-high source split; unpaid original nonodd remainder",
+    "amplitude": "credit is sum of original |mu(m)mu(n)K_T(m,n)|",
+    "thinness": "paper-proved 0<=credit<=32*T*sqrt(floor(exp T)/M) for M>=1, LEAN TARGET ONLY",
+    "RH": "OPEN"
+  },
+  "independent_diagnostics": {
+    "exact_rational_assertions": 286546,
+    "synthetic_random_cases": 900,
+    "synthetic_strict_credit_cases": 287,
+    "seed": 20261101,
+    "actual_mobius_causal_numerical_fixtures": 5,
+    "decimal_precision_digits": 75,
+    "composite_ratio_fixture": {
+      "m": 7,
+      "k": 30,
+      "n": 210,
+      "N": 300,
+      "H": 10,
+      "M": 5,
+      "source_kernel_approx": -0.00262113176757812
+    },
+    "numerical_interval_certificate": false
+  },
+  "verification": {
+    "source_publication": "STAGED",
+    "direct_compilation": "NOT_RUN",
+    "transitive_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "source_generated_axioms": "SOURCE_SCAN_NONE_NOT_AUDIT",
+    "remote_execution": "NONE"
+  },
+  "unresolved": [
+    "Pinned Lean grammar/elaboration, including Möbius multiplicativity and the new source relation proofs",
+    "Proper-divisor multiplier reindexing and finite reciprocal power tail for HighHighOddCreditRootTailTarget",
+    "Exact source comparison and no double-credit with existing proper-divisor collapse or two-prime cube packet",
+    "Noncircular all-positive-rate cancellation of the complete unmatched original high-high signed core, plus earlier absolutely paid sectors",
+    "Global RH theorem remains unproved"
+  ],
+  "no_root_import_change": true,
+  "no_toolchain_change": true
+}

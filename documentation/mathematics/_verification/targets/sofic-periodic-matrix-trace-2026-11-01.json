@@ -1,0 +1,150 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-01",
+  "title": "Source-bound finite labeled-graph adjacency powers, based closed walks, and conditional sofic periodic-label comparison",
+  "issue": "https://github.com/grwtsk/math/issues/1576",
+  "source_classification": "SOURCE_PROOF_CANDIDATE",
+  "original_source_revision": "23fa37bf6f8ef2ef24995d437515e08f1726c773",
+  "source": {
+    "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean",
+    "blob": "7aa717801ded4b67b6228e852ed76323cdefaa70",
+    "source_lines": 282,
+    "no_sorry_axiom_unsafe_authored": true,
+    "changes_existing_source": false
+  },
+  "mathematical_review": {
+    "path": "documentation/mathematics/_support/reviews/sofic-periodic-matrix-source-review-2026-11-01.md",
+    "blob": "af7c34c8cbc06fa178c1b42e9ac08b517eeae24d"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "exact_dependency_sources": [
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CertifiedTransversal.lean",
+      "blob": "df720cbb72c616938635c20477430f5f0ded4021",
+      "role": "unchanged canonical source-covering relation/target coverage"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLanguageTransversal.lean",
+      "blob": "238da905b6595c944cac40f39ae2f54870032132",
+      "role": "unchanged exact full-language source and target consumer"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/ExactSoficLanguageCover.lean",
+      "blob": "f50489eaf6c7277993a08925a58b7765f9e10ec9",
+      "role": "actual LabeledGraph, WordPath, GraphLanguage and ExactLanguagePresentation"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/LinearAlgebra/Matrix/Trace.lean",
+      "blob": "a56896c81302543b7c1e84cd6937ceb00ea54332"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/Combinatorics/SimpleGraph/AdjMatrix.lean",
+      "blob": "6cd78f0a5c115c0b1df853a0ab4e0363346ad009",
+      "role": "related but not substitutable unlabeled simple graph walk theorem"
+    }
+  ],
+  "accepted_math_as_paper": [
+    "For finite state and finite alphabet, M(s,t)=number of labels a with G.edge s a t.",
+    "Recursive exact labeled walk counts W_0(s,t)=1_[s=t], W_{n+1}(s,t)=sum_u W_n(s,u)*M(u,t).",
+    "For all n>=0, M^n(s,t)=W_n(s,t), trace(M^n)=sum_s W_n(s,s), retaining based-state multiplicity.",
+    "Equal exact finite-factor languages do not imply graph trace equals periodic label-point count; duplicate-loops and alternating-states models refute general equality.",
+    "A period-preserving actual-label bijection plus the explicit cardinal-of-inductive-walks bridge suffices for periodic-point equality; neither is inferred from soficity."
+  ],
+  "expected_proof_candidates": [
+    "labeledAdjacency_pow_apply_eq_walkCount",
+    "trace_pow_eq_basedClosedWalkCount",
+    "walkDataLabels_length",
+    "repeatBlock_period",
+    "periodicLabelPoint_card_eq_trace_of_exact_lifts",
+    "doubleLoopLanguage_all",
+    "alternatingLanguage_all",
+    "alternating_no_one_step_cycle",
+    "alternating_has_period_one_label",
+    "doubleLoop_two_one_step_cycles",
+    "doubleLoop_trace_one",
+    "alternating_trace_one"
+  ],
+  "retained_lean_premises": [
+    "ExactBasedCycleCard G n, relating the explicit inductive cycle type to independently defined last-edge walk counts",
+    "A type equivalence between BasedCycleData G n and actual PeriodicLabelPoint language n",
+    "The equivalence must preserve actual emitted labels, not merely cardinalities",
+    "Full-language equality for the selected ExactLanguagePresentation"
+  ],
+  "finite_reference": {
+    "type": "EXACT_INTEGER_FINITE_REFERENCE_NOT_NATIVE_LEAN",
+    "seed": 1576,
+    "random_labeled_graphs": 840,
+    "graph_sizes_state": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "graph_sizes_alphabet": [
+      1,
+      2,
+      3
+    ],
+    "walk_lengths_checked": "0..8",
+    "exact_entry_and_trace_assertions": 64278,
+    "counterexample_trace_duplicate": "[2,2,2,2,2,2]",
+    "counterexample_trace_alternating": "[0,2,0,2,0,2]",
+    "script_sha256": "e19fb7cdb3ecc44eb2703f02232b98a82be739540b79ec252e92cdcdadb8d120",
+    "result_sha256": "5ee137b32f4498a125baef4393634472c4ff0e2715d8796e317e6f8045f73988",
+    "artifacts_location": "conversation external scratch, not mathematical repository"
+  },
+  "requested_native_verification": {
+    "verification_order": [
+      "Native compile canonical CertifiedTransversal and complete exact sofic language closure, including consumer",
+      "Native compile new SoficPeriodicMatrixTrace at exact complete source/toolchain pin",
+      "Fresh trust=0 kernel replay of required declarations",
+      "Expected-type and universe inspection in fresh importing modules",
+      "Transitive declaration-scoped axiom audit of imported/private/opaque/generated closure"
+    ],
+    "permitted_axiom_policy_to_audit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "native_Lean_available_in_current_session": false,
+    "verified_local_Noe_checkout_available": false,
+    "Noe_skill_revision": "d565356a049d5ccd6d6185f28ec3a820d8538a3c",
+    "Noe_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "no_native_owner_dispatch_or_host_override": true
+  },
+  "verification": {
+    "source_publication": "PASS_NONFORCE_EXPECTED_HEAD",
+    "root_import_change": false,
+    "original_source_changes": false,
+    "lean_parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "full_import_closure": "NOT_RUN",
+    "graph_matrix_theorem": "SOURCE_PROOF_CANDIDATE_NOT_KERNEL_VERIFIED",
+    "periodic_label_point_identity": "CONDITIONAL_ON_UNPROVED_CARDINAL_AND_BIJECTION_PREMISES",
+    "universal_sofic_periodic_trace_equality": "FALSE_FINITE_COUNTEREXAMPLES",
+    "dynamical_zeta_determinant": "NOT_PROVED",
+    "native_runner_dispatched": false,
+    "scheduler_dispatched": false,
+    "remote_ci_dispatched": false,
+    "exact_git_blob_readback": "PASS_3_OF_3"
+  },
+  "publication": {
+    "source_commit": "67f3c241a6758b19f30a2df247ab72a36e128bde",
+    "expected_parent": "aec4688895ea6d24ddc1e6a7870e52b45726c0ff",
+    "source_blob": "7aa717801ded4b67b6228e852ed76323cdefaa70",
+    "review_blob": "af7c34c8cbc06fa178c1b42e9ac08b517eeae24d",
+    "initial_manifest_blob": "3f62bcf1247a9e61a0e0acbd3099367fe6641526",
+    "nonforce_expected_head_lease": true,
+    "publication_source_only_not_Lean_acceptance": true
+  }
+}
