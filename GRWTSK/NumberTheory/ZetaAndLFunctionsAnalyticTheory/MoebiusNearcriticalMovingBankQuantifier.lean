@@ -159,7 +159,8 @@ private theorem logTimeCutoff_budget
       Tendsto (fun t : ℝ => (64 : ℝ) *
         t ^ (-(1 - α / 2))) atTop (𝓝 (0 : ℝ)) := by
     simpa using
-      (Real.tendsto_rpow_neg_atTop hδ).const_mul (64 : ℝ)
+      Tendsto.const_mul (64 : ℝ)
+        (Real.tendsto_rpow_neg_atTop hδ)
   have hsmall :
       ∀ᶠ t : ℝ in atTop,
         (64 : ℝ) * t ^ (-(1 - α / 2)) < ε :=
