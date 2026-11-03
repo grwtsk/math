@@ -1,0 +1,286 @@
+{
+  "schema": "grwtsk.math.rh-gaussian-PNT-VK-source-delta/1",
+  "date": "2026-11-02",
+  "anchor_git_main_initial": "e79c8ca76ee44b69987872c603d8ab6f61c5005d",
+  "scope": "true original signed Möbius Gaussian physical energy and classical analytic return; bounded source delta, not exhaustive scan",
+  "nodes": [
+    {
+      "id": "original",
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+      "role": "actual Mertens signed sum, causal original wholePickup and original cumulative square energy",
+      "status": "MAINTAINED_SOURCE"
+    },
+    {
+      "id": "causal_ab",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSquareBridge.lean",
+      "blob": "be156509d9679a22b52b32d087f87d8449a047ef",
+      "role": "original all-log classical PNT quantitative pickupCross source Prop unported in Lean",
+      "status": "EXPLICIT_CLASSICAL_UNPORTED"
+    },
+    {
+      "id": "vk_mertens",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarPrimeBoxForcedCompensation.lean",
+      "blob": "23ea28d68153eff6ebbfbc0269d8249473b98549",
+      "role": "genuine classical VK Mertens phi and existing rate-one saving gates, no RH assumption",
+      "status": "EXPLICIT_CLASSICAL_UNPORTED"
+    },
+    {
+      "id": "gaussian",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianLogHeatSource.lean",
+      "blob": "e7443337b95b8491492acfa120809f6873f77ef1",
+      "role": "exact original mu signed Gaussian coefficient and true birth-gated physical heat/error waveform",
+      "status": "MAINTAINED_SOURCE"
+    },
+    {
+      "id": "local_active",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatLocalCausalBounds.lean",
+      "blob": "d1a3c5de19b7f26bd3ae7322b56a65a23b663e4d",
+      "role": "exact active original causal inventory at physical u<=T; source error wave, pointwise positive radius bound",
+      "status": "MAINTAINED_SOURCE"
+    },
+    {
+      "id": "local_integral",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatIntegratedLocalStability.lean",
+      "blob": "8247bb7caa8943da3a587fbe5d0ff832c0605efa",
+      "role": "actual R_s<=16s²T⁴(e^T-1), tighter than earlier 16T⁵ global population",
+      "status": "MAINTAINED_SOURCE"
+    },
+    {
+      "id": "a2_prior",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatAbsoluteEnergyStability.lean",
+      "blob": "eb3d30a9b103fe8a26e1f1448c6f9d8d44fd86cf",
+      "role": "previous absolute energy stability for weaker artificial exp(-2T) heat without PNT; not new schedule",
+      "status": "MAINTAINED_SOURCE"
+    },
+    {
+      "id": "pnt_relative",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianRelativePolarityPNT.lean",
+      "blob": "2c2f43961d3c822e7d6d0a6b0b77d72cbdf38cfd",
+      "role": "original signed Gaussian H/U with PNT all-log relative balance and true unsigned heat U",
+      "status": "MAINTAINED_SOURCE_UNCOMPILED"
+    },
+    {
+      "id": "polarity",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianSignedPolarityDebt.lean",
+      "blob": "cc4eaead623fdf302fb1e5545c1adc5681a4afea",
+      "role": "exact signed Gaussian positive-negative wave overlap U-H=4int P+P-",
+      "status": "MAINTAINED_SOURCE_UNCOMPILED"
+    },
+    {
+      "id": "pnt_abs_new",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianPolynomialHeatPNTStability.lean",
+      "blob": "30e6eefe86b1b97303e7dd3c7a5473cf6c207b1f",
+      "role": "NEW candidate: polynomially amplified e^-T heat yields true original ABSOLUTE signed energy difference O_B((1+T)^-B), PNT unported",
+      "status": "ADDITIVE_CANDIDATE_UNCOMPILED"
+    },
+    {
+      "id": "vk_new",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianVKRelativeAndAbsolute.lean",
+      "blob": "644aebceec00f49826c9f34c80a7f1122a0eaa57",
+      "role": "NEW candidate: classical VK -> true energy stretched-exponential and sharper relative polarity / absolute smoothing",
+      "status": "ADDITIVE_CANDIDATE_UNCOMPILED"
+    },
+    {
+      "id": "far",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarCompleteUpperTransfer.lean",
+      "blob": "11b3913a25626bbd4e1a593b50c31e82bac6abee",
+      "role": "exact signed original cross paid packets plus complete FAR, all-positive-rate remains OPEN",
+      "status": "MAINTAINED_SOURCE"
+    },
+    {
+      "id": "dyadic",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupAdaptiveWindowEquivalence.lean",
+      "blob": "cefb98e4c0b4f7b2695db899cd92469de5a31d21",
+      "role": "original adaptive dyadic/energy abscissa and physical observer source-equivalence, no arithmetic proof",
+      "status": "MAINTAINED_SOURCE_UNCOMPILED"
+    },
+    {
+      "id": "laplace",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalLaplaceZeroBarrier.lean",
+      "blob": "1a66b83553886e96fc227fa9eeb8b92f4bc8a6a8",
+      "role": "original weighted energy integral Laplace identity, conditional zeta-zero obstruction; analytic gates unported",
+      "status": "MAINTAINED_SOURCE_UNCOMPILED"
+    },
+    {
+      "id": "sampling",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDenseCoreRowControlVariate.lean",
+      "blob": "ab3c4fa71e53f6d512560b0dab32edb04ef1c9f3",
+      "role": "unbiased exact original dense-core row estimator; sampling variance is not all-scale deterministic bound",
+      "status": "DISTINCT_SIGNED_ARITHMETIC_METHOD"
+    },
+    {
+      "id": "dirichlet_mean",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletMeanSignedFixedCutoff.lean",
+      "blob": "abcaa68aab3b71a5a4fe908ddb980611f20be9bd",
+      "role": "q(T)-varying all-character MEAN signed cross allrate, not original single mu or fixed character",
+      "status": "DISTINCT_FAMILY_AVERAGE"
+    }
+  ],
+  "edges": [
+    {
+      "from": "original",
+      "to": "gaussian",
+      "kind": "exact_original_coefficients",
+      "reason": "Möbius μ, true birth-gated response, original full signed endpoint retained",
+      "gates": []
+    },
+    {
+      "from": "gaussian",
+      "to": "local_active",
+      "kind": "exact_physical_birth",
+      "reason": "sourceHeatErrorWave(s,T,u)=original−signed heat for u≤T; only physically active n≤exp u",
+      "gates": []
+    },
+    {
+      "from": "local_active",
+      "to": "local_integral",
+      "kind": "arithmetic_free_positive_radius",
+      "reason": "R_s<=16s²T⁴(exp T−1) by original active-inventory positive source response",
+      "gates": []
+    },
+    {
+      "from": "local_integral",
+      "to": "pnt_abs_new",
+      "kind": "new_polynomial_heat_schedule",
+      "reason": "s_k=e^-T(1+T)^k produces R<=16T⁴e^-T(1+T)^(2k)",
+      "gates": []
+    },
+    {
+      "from": "original",
+      "to": "pnt_abs_new",
+      "kind": "exact_original_L2_cauchy",
+      "reason": "|E−H|<=2sqrt(E R)+R by full signed waveform L2; never assumes arithmetic cancellation",
+      "gates": [
+        "OriginalGaussianL2SquareDifferenceTarget"
+      ]
+    },
+    {
+      "from": "causal_ab",
+      "to": "pnt_abs_new",
+      "kind": "classical_PNT_log_supplier",
+      "reason": "E<=2T²+C_Ae^T/(1+T)^A for each A; known classical mathematics, Lean unported",
+      "gates": [
+        "OriginalBalancedPNTLogPowerTarget"
+      ]
+    },
+    {
+      "from": "pnt_abs_new",
+      "to": "a2_prior",
+      "kind": "strictly_more_active_smoothing",
+      "reason": "new e^-T polynomial boost has absolute difference all-log power under classical PNT; old e^-2T has unconditional smaller-no-PNT perturbation",
+      "gates": []
+    },
+    {
+      "from": "pnt_abs_new",
+      "to": "vk_new",
+      "kind": "higher_quantitative_analytic_input",
+      "reason": "same source L2 Cauchy and radius become stretched-exponentially small under original VK energy, without RH",
+      "gates": [
+        "ClassicalVKOriginalPhysicalEnergyTransferTarget"
+      ]
+    },
+    {
+      "from": "vk_mertens",
+      "to": "vk_new",
+      "kind": "classical_VK_source_transfer",
+      "reason": "classical genuine M(e^u) bound => original physical energy <= A e^(T-c φ(T)) after double causal split",
+      "gates": [
+        "ClassicalVinogradovKorobovMertensTarget",
+        "ClassicalVKOriginalPhysicalEnergyTransferTarget"
+      ]
+    },
+    {
+      "from": "local_integral",
+      "to": "vk_new",
+      "kind": "sharp_local_halfroot_radius",
+      "reason": "at original s=e^-T/2 true positive R<=16T⁴, improving earlier 16T⁵",
+      "gates": []
+    },
+    {
+      "from": "polarity",
+      "to": "vk_new",
+      "kind": "genuine_original_signed_overlap",
+      "reason": "H/U=1−4int P+P−/U, no probability or absolute Mertens replacement",
+      "gates": []
+    },
+    {
+      "from": "pnt_relative",
+      "to": "vk_new",
+      "kind": "stretched_vs_log_relative",
+      "reason": "classical VK gives H/U<=131072A e^-cφ+2097152T⁴e^-T, stronger than previous PNT all inverse-log powers",
+      "gates": []
+    },
+    {
+      "from": "vk_new",
+      "to": "far",
+      "kind": "not_allrate_proof",
+      "reason": "VK relative o(1) is exponential RATE ONE, not all-positive-rate original FAR/RH",
+      "gates": [
+        "FarOriginalEveryPositiveRateUpperTarget remains open"
+      ]
+    },
+    {
+      "from": "pnt_abs_new",
+      "to": "far",
+      "kind": "energy_difference_not_growth",
+      "reason": "even absolute |E−H_k|→0 does NOT imply either signed energy allrate or complete FAR upper",
+      "gates": []
+    },
+    {
+      "from": "dyadic",
+      "to": "pnt_abs_new",
+      "kind": "same_original_energy",
+      "reason": "adaptive dyadic windows equivalent to original energy obligation; absolute stability cannot create the missing arithmetic allrate",
+      "gates": []
+    },
+    {
+      "from": "laplace",
+      "to": "vk_new",
+      "kind": "separate_analytic_quantifiers",
+      "reason": "Classical VK near-line zero-free region is weaker than Re>1/2; Laplace RH zero-free needs allrate original weighted energy",
+      "gates": []
+    },
+    {
+      "from": "sampling",
+      "to": "far",
+      "kind": "distinct_mean_not_deterministic",
+      "reason": "unbiased dense-core control variates require uniform concentration before yielding original all-J signed bounds",
+      "gates": []
+    },
+    {
+      "from": "dirichlet_mean",
+      "to": "far",
+      "kind": "distinct_character_average",
+      "reason": "q(T)-varying unit-residue all-character mean allrate cannot imply untwisted original or individual fixed-χ allrate",
+      "gates": []
+    }
+  ],
+  "math_evidence": {
+    "real_L2_original_source": "|E-H_s|<=2sqrt(E R_s)+R_s, true physical [0,T] waveform error and Cauchy",
+    "local_error": "R_s<=16s²T⁴(exp T−1)",
+    "polynomial_schedule": "s_k=e^-T(1+T)^k; R<=16T⁴e^-T(1+T)^(2k)",
+    "classical_PNT": "E<=2T²+C_A e^T/(1+T)^A for each integer A>=1; unported pinned classical input",
+    "new_PNT_absolute": "for all fixed integer k,B>=0, ∃K_{k,B} finite s.t. |E-H_{s_k}|<=K/(1+T)^B for ALL T>=0",
+    "classical_VK": "M(e^u)<=Ce^u exp(-cφ(u)), φ(u)=u^(3/5)/(log(3+u))^(1/5), established unconditional mathematics but unported pinned Lean",
+    "VK_energy_bridge": "E(T)<=A exp(T-c2φ(T)) standard twice-split original physical causal calculus, explicit unported Lean transfer",
+    "VK_relative": "H_{exp(-T/2)}/U <=131072A exp(-c2φ(T))+2097152T⁴exp(-T), J>=9, T>=32",
+    "VK_absolute": "|E-H_{e^-T(1+T)^k}|<=8sqrt(A)T²(1+T)^k exp(-c2φ(T)/2)+16T⁴e^-T(1+T)^(2k)",
+    "allrate_RH": "OPEN, because φ(T)=o(T); stronger closeness is NOT independent original energy growth upper"
+  },
+  "verification": {
+    "publication": "PENDING_GIT",
+    "Lean_compilation": "DEFERRED_PER_USER",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "unported_analytic_gates": [
+      "OriginalBalancedPNTLogPowerTarget",
+      "OriginalGaussianL2SquareDifferenceTarget",
+      "GaussianPolynomialHeatScalarAbsorptionTarget",
+      "ClassicalVinogradovKorobovMertensTarget",
+      "ClassicalVKOriginalPhysicalEnergyTransferTarget"
+    ],
+    "true_mobius_source_changed": false,
+    "RH": "OPEN"
+  }
+}
