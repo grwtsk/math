@@ -1,0 +1,70 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+PASSIVE_ACCEPTANCE_TARGET / COMPILATION_NOT_RUN /
+EXPECTED_TYPES_NOT_RUN / FRESH_KERNEL_NOT_RUN /
+TRANSITIVE_AXIOM_AUDIT_NOT_RUN.
+-/
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDirichletQuarticDiagonalFloor
+
+/-!
+# Original Möbius slope sign rigidity and large-modulus quartic positivity
+
+This #check/#print axioms file is PASSIVE source only, not a
+successful native Lean compiler receipt. Required replay:
+leanprover/lean4:v4.34.1, pinned Mathlib
+d13f23b723b8a846827a245b89c10fc7d3f11612,
+source-exact importing closure, expected declaration types, and
+full transitive axiom/opaque/native helper review.
+
+No source modification, false random Möbius independence, arithmetic
+suppliers, RH/GRH admission, CI dispatch or scheduler authority.
+-/
+
+open GRWTSK.NumberTheory.Moebius.RationalSlopeSignRigidity
+open GRWTSK.NumberTheory.Moebius.PrimeFreeSlopeSignLedger
+open GRWTSK.NumberTheory.Moebius.ExactSlopeQuarticTermwisePositive
+open GRWTSK.NumberTheory.Moebius.DirichletQuarticDiagonalFloor
+
+#check original_moebius_zero_of_nonCoprime
+#check sourceSlopeMass
+#check sourceSlopeMass_nonneg
+#check dilatedSignedPair_eq_slopeSign_mul_mass
+#check sourceSlopeMass_eq_causal_shifted
+#check finiteSlopePacket_eq_sign_mul_mass
+#check finiteSlopeMass_nonneg
+#check finiteSlopePacket_nonpos_of_negative_sign
+#check finiteSlopePacket_abs_eq_absSign_mul_mass
+
+#check sourceSlopeMask
+#check signedSourceSlopePacket
+#check nonnegativeSourceSlopeMass
+#check sourceSlopeMask_term_eq_sign_mass
+#check signedSourceSlopePacket_eq_sign_mass
+#check nonnegativeSourceSlopeMass_nonneg
+#check signedSourceSlopePacket_abs_eq_sum_abs
+#check signedSourceSlopePacket_nonpos_of_opposite_sign
+#check originalOtherLowGcdCross_eq_signedSlopePackets
+#check originalOtherLowGcdCross_eq_signedSlopeMasses
+#check nonnegativeSignSlopeCross
+#check originalOtherLowGcdCross_le_nonnegativeSignSlopes
+
+#check original_four_moebius_nonneg_of_exactSlope
+#check signed_original_gram_collision_nonneg
+#check original_ratio_pair_weights_mul_nonneg_of_exactSlope
+#check originalExactSlopeQuartic_each_term_nonneg
+#check originalExactSlopeQuartic_nonneg_termwise
+#check originalQuarticCollision_each_term_nonneg_of_noAlias
+#check originalQuarticCollision_nonneg_via_exactSlope
+
+#check originalRatioDiagonalEnergy
+#check originalRatioDiagonalEnergy_nonneg
+#check originalRatioDiagonalEnergy_le_quartic
+#check allCharactersRealCross_secondMoment_ge_diagonal
+
+#print axioms dilatedSignedPair_eq_slopeSign_mul_mass
+#print axioms sourceSlopeMass_eq_causal_shifted
+#print axioms signedSourceSlopePacket_abs_eq_sum_abs
+#print axioms originalOtherLowGcdCross_eq_signedSlopeMasses
+#print axioms originalOtherLowGcdCross_le_nonnegativeSignSlopes
+#print axioms original_four_moebius_nonneg_of_exactSlope
+#print axioms originalQuarticCollision_each_term_nonneg_of_noAlias
+#print axioms allCharactersRealCross_secondMoment_ge_diagonal
