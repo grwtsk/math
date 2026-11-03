@@ -1,0 +1,81 @@
+{
+  "schema": "grwtsk.math.source-only-verification-target.v1",
+  "name": "Finite integer-labelled causal pickup, Hilbert two-time cocycle and CM incremental defects",
+  "repository": "grwtsk/math",
+  "branch": "research/residue-circle-wave-hilbert-20261101-350ff25d",
+  "base_commit": "73ea24039fffec300cc1ac2b9d374696b809441e",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "external_cm_source": "openai/math@4eaee87548250b2682affda7d05d947c05554bae",
+  "original_arithmetic_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob_sha": "45e06c371d67bcf8c939d20a95fcbc63570546fa"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean",
+      "blob_sha": "07dfdae4a60b05f5da55cc20882411c85444fa82"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMActualSignedResponseOperator.lean",
+      "blob_sha": "e59682aba98aa1f8707bd523dba994e0f97cc4f9"
+    }
+  ],
+  "files": [
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleSourceCausalShear.lean",
+      "blob_sha": "d6748188785ee8a7ffa74bf593c27b2b10718b45",
+      "size_bytes": 5251,
+      "line_count": 125
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/FiniteLabelledPickupCocycle.lean",
+      "blob_sha": "1f0301e696086d8a4894cf1d6a573ccfb917e832",
+      "size_bytes": 12809,
+      "line_count": 278
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMActualSignedCausalEvolution.lean",
+      "blob_sha": "7eb941e71b8725ec53c16dd721b101e71577849c",
+      "size_bytes": 8659,
+      "line_count": 173
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/residue-circle-causal-lift-2026-11-01.md",
+      "blob_sha": "1cd566c7c7561bf7c86ef89696a7c70894c46b83",
+      "size_bytes": 9243,
+      "line_count": 89
+    }
+  ],
+  "expected_declarations": [
+    "SourceCausalShear.causalStep_comp",
+    "SourceCausalShear.causalStep_graph",
+    "FiniteLabelledPickupCocycle.originalReadout_actualLabelResponse",
+    "FiniteLabelledPickupCocycle.originalPickup_eq_labelledReadout",
+    "FiniteLabelledPickupCocycle.originalPickupEnergy_labelled",
+    "FiniteLabelledPickupCocycle.actualLabelTwoTime_comp",
+    "FiniteLabelledPickupCocycle.no_unaugmented_linear_birth",
+    "CMActualSignedCausalEvolution.actualTwoTime_comp",
+    "CMActualSignedCausalEvolution.actual_CM_increment_leak",
+    "CMActualSignedCausalEvolution.actual_arithmetic_increment_leak"
+  ],
+  "expected_theorem_checks": "NOT_RUN",
+  "fresh_kernel_replay": "NOT_RUN",
+  "lean_compilation": "NOT_RUN",
+  "axiom_audit": "NOT_RUN",
+  "actual_numerical_evidence": {
+    "type": "SymPy exact algebraic finite reference",
+    "assertions": 2031,
+    "file": "finite_labelled_pickup_cocycle_reference.py",
+    "not_kernel_proof": true
+  },
+  "forbidden_promotions": [
+    "RH or GRH conclusion",
+    "arithmetic cancellation supplier",
+    "observed-only homogeneous semigroup",
+    "uniform-all-j operator bound",
+    "Schwartz-to-periodic Lp local smoothing",
+    "canonical CM Betti metric/intertwiner"
+  ],
+  "publication_scope": "isolated research branch; root/lock/current-main unchanged; no execution dispatch"
+}

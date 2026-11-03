@@ -1,0 +1,94 @@
+{
+  "schema": "grwtsk.math.passive-verification/v1",
+  "id": "CM-SELECTED-SIGNED-WAVE-RETURN-WINDING-NOGO-2026-11-01",
+  "repository": "grwtsk/math",
+  "branch": "research/residue-circle-wave-hilbert-20261101-350ff25d",
+  "source_snapshot_commit": "925f78beb48a348979fcaa4821676d33fdf17fde",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "external_openai_math_revision": "4eaee87548250b2682affda7d05d947c05554bae",
+  "source_only": true,
+  "execution_requested": false,
+  "facets": {
+    "publication_git_readback": "PASS",
+    "static_source_hole_scan": "PASS",
+    "finite_reference_diagnostics": "PASS_124704_NON_PROOF",
+    "lean_elaboration": "NOT_RUN",
+    "lake_build": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "expected_type_check": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_helper_audit": "NOT_RUN"
+  },
+  "new_sources": [
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMSelectedSignedWaveReturn.lean",
+      "git_blob_sha": "bedee8072837b0a96eb49beea79a4fd04efa1fe9",
+      "expected_declarations": [
+        "classAddress_injective",
+        "actualSignedPacket_apply",
+        "finiteCoherentReadout_add",
+        "finiteCoherentReadout_abs_le",
+        "finiteCoherentReadout_actualSignedPacket",
+        "wholePickup_eq_selectedPacketReadout",
+        "originalPickupEnergy_eq_selectedPacketIntegral",
+        "selectedCM_completeReadout",
+        "selectedCM_signedCrossEnergy",
+        "originalPickupEnergy_selectedCM_mixedIntegral",
+        "selectedCM_packet_positiveEnergy"
+      ]
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/PeriodicResidueWaveNoGo.lean",
+      "git_blob_sha": "b7e0b9abc62b5a1f5e6ed4af458390ad80960d8d",
+      "expected_declarations": [
+        "singleModeSample_zero",
+        "phase_agreement_of_residue_evolution",
+        "circlePhase_zero",
+        "windingPhase_half",
+        "no_residue_only_evolution_at_half_winding"
+      ]
+    }
+  ],
+  "parent_sources": [
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMGeometricCycleHilbert.lean",
+      "git_blob_sha": "fd00f0e140e49676f05b49ac6e752c23ef190c15"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/CMScaleResidueHilbertAttachment.lean",
+      "git_blob_sha": "b7902370c6bab3111a409851fc52ab7894d2f414"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/EuclideanCircleResidueWaveComparison.lean",
+      "git_blob_sha": "698b45c6b8b3344f0da297208d37d4c08e965c76"
+    },
+    {
+      "path": "GRWTSK/HarmonicAnalysisOnEuclideanSpaces/ResidueCircleSignedPickupHilbertPort.lean",
+      "git_blob_sha": "1108ba0604ccce95828d160bc9016a73e9a3e317"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean",
+      "git_blob_sha": "07dfdae4a60b05f5da55cc20882411c85444fa82"
+    }
+  ],
+  "acceptance_requirements": [
+    "Read exact source and all transitive imports at the immutable source snapshot",
+    "Elaborate the two leaf modules with warning-as-error against the pinned toolchain",
+    "Review elaborated declaration types and all hypotheses and source identities",
+    "Fresh kernel replay of both full imported environments",
+    "Transitive #print axioms and unsafe/native helper audit with allowed axioms limited to propext, Classical.choice, Quot.sound",
+    "Hostile check that q-point quotient evolution cannot discard integer winding",
+    "Hostile check that original pickupEnergy retains all mixed signed parity/residue terms",
+    "Do not infer that algebraic CM cycle classes equal all Hilbert vectors",
+    "Do not infer torus local smoothing from Euclidean multiplier agreement",
+    "Do not infer RH or any all-positive-rate Mobius energy estimate"
+  ],
+  "nonclaims": [
+    "No source-identified CM-to-arithmetic wave intertwiner",
+    "No canonical Hodge metric or unconditional finite-dimensional Betti instance",
+    "No global q-uniform Euclidean-to-periodic Lp smoothing transference theorem",
+    "No arithmetic cancellation, RH or GRH theorem",
+    "No trust-zero admission or kernel replay receipt"
+  ]
+}

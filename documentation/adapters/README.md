@@ -7,6 +7,7 @@ Provider packages are organized below this directory. Their Lean files are relat
 - [openai-math](openai-math/README.md): pinned OpenAI OAI imports and 419 subject-organized
   comparator surfaces, plus finite-family Liouville/Elliott transport and
   seven-eighths zero-location consequences.
+- [openai-math-residue-circle](openai-math-residue-circle/README.md): opt-in, separately pinned residue-circle/CM comparison sources; explicit upstream import and acceptance gates.
 
 Provider packages have their own dependency manifests and build targets. They
 are outside the root GRWTSK default build. A common Lean/Mathlib version does not
