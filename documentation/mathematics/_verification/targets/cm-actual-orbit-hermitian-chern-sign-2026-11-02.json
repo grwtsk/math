@@ -1,0 +1,96 @@
+{
+  "contract": "grwtsk.math.actual-orbit-hermitian-chern-sign/1",
+  "date": "2026-11-02",
+  "repo": "grwtsk/math",
+  "observed_main_at_start": "34efe627c3f33be82a3f9b1d8a79c1bd87be5899",
+  "target_branch": "main",
+  "source_files": [
+    {
+      "path": "GRWTSK/Geometry/CMActualOrbitHermitianMetric.lean",
+      "local_file": "CMActualOrbitHermitianMetric.lean",
+      "sha": "1231b2b0e3f08983cd4c1075ffb406a52a89ba11",
+      "bytes": 13606,
+      "lines": 321
+    },
+    {
+      "path": "GRWTSK/Geometry/CMActualChernJetCompatibility.lean",
+      "local_file": "CMActualChernJetCompatibility.lean",
+      "sha": "65174f92bcd414a7b267fc08a08408967ffd6503",
+      "bytes": 10383,
+      "lines": 238
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/cm-actual-orbit-hermitian-chern-sign-2026-11-02.md",
+      "local_file": "cm-actual-orbit-hermitian-chern-sign-2026-11-02.md",
+      "sha": "dd47ad089f2f7d50cf024d9ca45fc426efd510fe",
+      "bytes": 9749,
+      "lines": 82
+    }
+  ],
+  "upstream_pin": {
+    "repo": "openai/math",
+    "sha": "4eaee87548250b2682affda7d05d947c05554bae"
+  },
+  "toolchain_pin": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "original_dependencies": {
+    "CMActualIntegralBasisSemicharacter.lean": "88c16e6ea2f5a43b35fd0acd636b79ebc6c261c5",
+    "CMActualUndoubledFactorCocycle.lean": "6fe83c1cc050b161d0437213111a3a92ec7ca05c",
+    "CMActualUndoubledOrbitTotalSpace.lean": "58d908cfbeceaf60b0839086b86cb941657d037f",
+    "CMActualPeriodCoverCurvature.lean": "5d09f7a777fa66fd034a12042dfbd38f4eec7049",
+    "CMActualIntegralPeriodResidueLinks.lean": "431417c587070fa7a1f2c1082d04dadd3008a056"
+  },
+  "expected_declarations": [
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualOrbitHermitianMetric.coverMetricWeight_covariant",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualOrbitHermitianMetric.actualOrbitMetricSq",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualOrbitHermitianMetric.actualOrbitMetricSq_nonneg",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualOrbitHermitianMetric.actualOrbitMetricSq_scale",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualOrbitHermitianMetric.coverBaseShift_free",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualOrbitHermitianMetric.orbitFibreAt_injective",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualOrbitHermitianMetric.actualAlgebraicFibreEquiv",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualChernJetCompatibility.halfExponent_directional_difference",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualChernJetCompatibility.chernHolomorphicFrameJet_translation",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualChernJetCompatibility.metricLogRealDirectionalJet_eq",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualChernJetCompatibility.chernCurvatureJet_eq_neg_cover",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualChernJetCompatibility.chernUnitaryFrameJet_eq",
+    "GRWTSK.Geometry.AlgebraicGeometry.Hodge.CMActualChernJetCompatibility.residueHolonomy_eq_chernJetHalfFlux"
+  ],
+  "evidence": {
+    "reference_script": "cm_actual_orbit_metric_chern_reference.py",
+    "results": "cm_actual_orbit_metric_chern_reference_results.json",
+    "checks_passed": 328754,
+    "field_model": "Q(i) and its full Gaussian-integer lattice",
+    "type": "exact rational + 70 digit high precision",
+    "real_cern_rows": 0,
+    "not_a_Lean_certificate": true
+  },
+  "verification": {
+    "static_no_proof_holes": "PASS",
+    "static_delimiters": "PASS",
+    "lean_parse": "NOT_RUN",
+    "lean_build": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "physical_fit": "NOT_RUN"
+  },
+  "known_open": [
+    "root imported OAI toolchain compatibility",
+    "actual quotient topology and holomorphic local triviality",
+    "analytically differentiated metric and true Chern connection",
+    "precise identification with a particular source CM abelian variety",
+    "canonical map from each original integer Möbius label to a period site",
+    "physical detector observable and real CERN event fit",
+    "original signed Möbius all-positive-rate estimate",
+    "Schwartz-to-periodic Lp smoothing"
+  ],
+  "sign_safety": {
+    "published_plus_cover_coefficient": "+2*pi*i*Im H",
+    "new_holomorphic_frame_chern_jet": "-2*pi*i*Im H",
+    "agreement_only_after_integer_triangle_phase": true,
+    "nonintegral_curvature_forms_equal": false
+  },
+  "publication": "SOURCE_PREPARED_PUBLICATION_PENDING_READBACK"
+}
