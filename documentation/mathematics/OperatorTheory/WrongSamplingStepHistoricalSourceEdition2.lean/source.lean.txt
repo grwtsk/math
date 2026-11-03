@@ -1,9 +1,0 @@
-import GRWTSK.Spectral.SturmianBlockCounts
-import GRWTSK.Spectral.FreeIDS
-open GRWTSK.Spectral.SturmianBlockCounts GRWTSK.Spectral.SturmianFiniteVolume
-open GRWTSK.Spectral.FreeIDS
-
-example (q L : ℕ) (α V ξ : ℝ) (origin : ℤ) (E : ℝ) :
-    blockCountSum q L α V ξ origin E = ∑ j ∈ Finset.range q,
-      (sturmianCount L α V ((ξ+(origin:ℝ)*α)+(j:ℝ)*α) 0 E : ℝ) :=
-  blockCountSum_phase q L α V ξ origin E
