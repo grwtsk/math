@@ -1,0 +1,56 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Exact original Mobius low-gcd Gram as a signed finite divisor sieve of nonnegative causal square energies",
+  "source_blobs": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusLowGcdSieveSquareEnergy.lean": "72e6bcf5046f090011ae261dda8a77b837906741",
+    "documentation/mathematics/_support/reviews/moebius-low-gcd-sieve-square-energy-2026-11-02.md": "c7a62de25cf5619d299a5d319feb1f6ca3bb6cb3"
+  },
+  "baseline": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUnmaskedLowGcdEndpoint.lean": "1adfd2470cb28a0d98ad567d436853ab2d091f67",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalGcdTimeShift.lean": "db0052901eca3050ed0ce812d3e0e7675c8fab05",
+    "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "Mathlib/NumberTheory/ArithmeticFunction/Moebius.lean": "pinned-mathlib-d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "new_exact_proof_candidates": [
+    "GRWTSK.NumberTheory.Moebius.LowGcdSieveSquareEnergy.lowGcdSieveWeight_sum_divisors",
+    "GRWTSK.NumberTheory.Moebius.LowGcdSieveSquareEnergy.gcd_le_indicator_eq_sieve_Icc",
+    "GRWTSK.NumberTheory.Moebius.LowGcdSieveSquareEnergy.lowGcdFullGram_eq_cross_add_diagonal",
+    "GRWTSK.NumberTheory.Moebius.LowGcdSieveSquareEnergy.lowGcdFullGram_eq_signed_divisorGrams",
+    "GRWTSK.NumberTheory.Moebius.LowGcdSieveSquareEnergy.divisorRestrictedEnergy_nonneg"
+  ],
+  "new_explicit_missing_lean": [
+    "GRWTSK.NumberTheory.Moebius.LowGcdSieveSquareEnergy.DivisorRestrictedEnergyIdentityTarget",
+    "GRWTSK.NumberTheory.Moebius.LowGcdSieveSquareEnergy.FirstDivisorCollarCoefficientTarget"
+  ],
+  "arithmetic_open": [
+    "PlainLowGcdEveryRateDyadic",
+    "DivisorCoverRootTailTarget",
+    "FixedGcdRatioTarget",
+    "PlainPrimitiveGcdReindexTarget"
+  ],
+  "finite_tests": {
+    "generic_exact_integer_checks": 24,
+    "real_source_float_cases": 4,
+    "interval_certified": false
+  },
+  "verification": {
+    "parsing": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "full_import_compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_DISPATCHED",
+    "root_import": "NOT_ADDED"
+  },
+  "changes": {
+    "additive_only": true,
+    "old_source_modified": false,
+    "pins_modified": false,
+    "force_ref": false
+  }
+}

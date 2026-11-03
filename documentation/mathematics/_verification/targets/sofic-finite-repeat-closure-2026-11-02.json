@@ -1,0 +1,175 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "issue": "https://github.com/grwtsk/math/issues/1576",
+  "title": "Constructive finite-copy proof of exact sofic cycle-to-periodic-label map; preserve genuine lift obstructions",
+  "repository": "grwtsk/math",
+  "classification": "SOURCE_PROOF_SCRIPT_NOT_NATIVE_LEAN_ACCEPTANCE",
+  "initial_inspected_math_commit": "89622c3584bb66711040a6967c6161539ec6c92d",
+  "source": {
+    "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteRepeatClosure.lean",
+    "blob": "e8d8dcc01f4e9f067cb9041ad5e54f7dd79d0962",
+    "lines": 206,
+    "newly_authored_sorry": 0,
+    "newly_authored_axiom": 0,
+    "newly_authored_unsafe": 0,
+    "classification": "COMPILATION_NOT_RUN_SOURCE_PROOF_CANDIDATE"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/sofic-finite-repeat-closure-2026-11-02.md",
+    "blob": "8f5abce0b73e1e8bb1f64a4f1b46d249feef3121"
+  },
+  "pinned_dependents": [
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CertifiedTransversal.lean",
+      "blob": "df720cbb72c616938635c20477430f5f0ded4021"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/ExactSoficLanguageCover.lean",
+      "blob": "f50489eaf6c7277993a08925a58b7765f9e10ec9"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLanguageTransversal.lean",
+      "blob": "238da905b6595c944cac40f39ae2f54870032132"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean",
+      "blob": "70e416083e8fd1238ffdd8896f984e0a5382c139"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBasedCycleCard.lean",
+      "blob": "d7fd2f5aad643d4350e4b5bfd7128dd979717a74"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicFiberLedger.lean",
+      "blob": "becfa9cfddb8479c36a007c17d8be4d0d7defe05"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepeatBridge.lean",
+      "blob": "a05e7d4527b6e37d59a48288f1e58e1a3867ca56"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleLabelBijection.lean",
+      "blob": "bd1ba53939ed6f5a4e00d76be9d6d433d09f3d0b"
+    }
+  ],
+  "native_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "pinned_source_APIs": [
+    {
+      "repository": "leanprover-community/mathlib4",
+      "revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+      "source": "Mathlib/Data/List/OfFn.lean",
+      "symbols": [
+        "List.ofFn_congr",
+        "List.ofFn_fin_repeat",
+        "List.ofFn_get"
+      ]
+    },
+    {
+      "repository": "leanprover/lean4",
+      "revision": "v4.34.1",
+      "source": "src/Init/Data/List/Nat/Sublist.lean",
+      "symbols": [
+        "List.infix_iff_getElem?"
+      ]
+    },
+    {
+      "repository": "leanprover/lean4",
+      "revision": "v4.34.1",
+      "source": "src/Init/Data/Fin/Tuple/Basic.lean",
+      "symbols": [
+        "Fin.repeat_apply"
+      ]
+    }
+  ],
+  "candidate_theorems": [
+    "SoficFiniteRepeatClosure.repeatBlockOccursInFiniteCopies_proof",
+    "SoficFiniteRepeatClosure.hasLabelPreservingCycleMap_of_exact",
+    "SoficFiniteRepeatClosure.cycleWordsAdmissible_of_exact",
+    "SoficFiniteRepeatClosure.exactLanguage_periodicFiberBalance",
+    "SoficFiniteRepeatClosure.periodicLabelCard_eq_trace_of_exact_faithful_complete"
+  ],
+  "proof_structure": {
+    "pure_index": "finiteCopies w k = replicate k w |>.flatten = List.ofFn (Fin.repeat k letters) when w=ofFn letters",
+    "finite_witness": "k=offset+word.length+1 and word.length+offset ≤ k*n for n≥1",
+    "exact_infix": "List.infix_iff_getElem? checks indexed matches at each i from HasFiniteBlock",
+    "original_cycle": "List.ofFn (basedCycleWord G n c) = walkDataLabels G c.2 via actual length and Fin cast",
+    "actual_language": "RepeatBlockOccursInFiniteCopies -> genuine repeated WordPath -> graph language factor -> full exact-language return",
+    "sourced_admissibility": "exact-language -> CycleWordsAdmissible without external hFactors assumption",
+    "preserved_distinct_hypotheses": [
+      "FaithfulCycleWords G n",
+      "CompleteCycleLifts G language n hn"
+    ],
+    "general_periodic_trace_equality": "FALSE_WITH_COUNTEREXAMPLES"
+  },
+  "independent_finite_test": {
+    "classification": "EXACT_FINITE_LIST_DIAGNOSTIC_NOT_FORMAL_PROOF",
+    "script": "/mnt/data/sofic_cycle_repetition_reference.py",
+    "script_sha256": "fb3287ae18e8937ec7ca56be5156a9ee0a49ea99499acba640c3150a39523edf",
+    "results": "/mnt/data/sofic_cycle_repetition_reference.json",
+    "rerun_result_sha256": "06339a119b5ee615e3313fb7cf8ba10f2b684b3a666d4dc71e398a4c19dd070a",
+    "alphabet_sizes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "periods": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "words_checked": 1224,
+    "finite_block_cases": 832288,
+    "periodic_index_equalities": 10685872,
+    "finite_prefix_suffix_equalities": 832288,
+    "result": "PASS"
+  },
+  "Noe_operator": {
+    "canonical_skill_revision_inspected": "750ce416070f51dca6cdb819e277d2593dccb5ba",
+    "canonical_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "local_Lean_Lake_Elan_present": false,
+    "verified_local_math_Noe_checkout_present": false,
+    "native_owner_accessed": false,
+    "native_job_dispatched": false
+  },
+  "verification": {
+    "git_blob_creation": "PASS",
+    "publication": "PASS_GUARDED_NONFORCE_MAIN",
+    "exact_source_blob_readback": "PASS_3_OF_3",
+    "source_static_scan": "NO_AUTHORED_SORRY_AXIOM_UNSAFE",
+    "native_Lean_compilation": "NOT_RUN",
+    "fresh_trust0_kernel_replay": "NOT_RUN",
+    "declaration_expected_types_universes": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "complete_import_closure": "NOT_RUN",
+    "native_owner_restoration": "NOT_CHECKED",
+    "formal_kernel_acceptance": false,
+    "original_cycle_label_map_unconditional_in_Lean": "SOURCE_CANDIDATE_NOT_COMPILED",
+    "genuine_periodic_trace_equality": "CONDITIONAL_ONLY",
+    "issue_1576": "OPEN"
+  },
+  "next": [
+    "Compile new pure-list source along with exact canonical graph/sofic import closure using reviewed Noe managed registry v3",
+    "Repair actual elaboration errors, and replay typed declarations at trust=0",
+    "Audit all axioms transitively, including private/opaque/generated and expected-type/universe interfaces",
+    "Treat faithful and complete n-cycle label lifts as independent mathematical hypotheses; no unconditional trace equality"
+  ],
+  "publication": {
+    "published_commit": "cd4e8e28090e75c00d384eb7ca3ca42d226cea3b",
+    "guarded_expected_parent": "a40d05d9aa8575672f66811aa79a313631de386a",
+    "source_blob": "e8d8dcc01f4e9f067cb9041ad5e54f7dd79d0962",
+    "review_blob": "8f5abce0b73e1e8bb1f64a4f1b46d249feef3121",
+    "original_manifest_blob": "1432a71628c051cc8680648bf9ef7006c694571f",
+    "exact_readback": true,
+    "no_native_acceptance_implied": true
+  }
+}

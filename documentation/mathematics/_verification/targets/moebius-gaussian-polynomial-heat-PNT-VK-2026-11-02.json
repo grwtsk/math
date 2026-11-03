@@ -1,0 +1,171 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Original Möbius polynomially amplified Gaussian heat absolute PNT stability and classical VK relative polarity",
+  "repository_full_name": "grwtsk/math",
+  "human_mathematical_direction": "grwtsk contributors",
+  "assistant_role": "OpenAI ChatGPT cross-source analysis and additive Lean source proof candidate drafting",
+  "initial_scan_main": "e79c8ca76ee44b69987872c603d8ab6f61c5005d",
+  "pinned_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "new_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianPolynomialHeatPNTStability.lean",
+      "blob": "30e6eefe86b1b97303e7dd3c7a5473cf6c207b1f",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "theorem_bodies": 4,
+      "unported_defs": [
+        "OriginalGaussianL2SquareDifferenceTarget",
+        "GaussianPolynomialHeatScalarAbsorptionTarget"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianVKRelativeAndAbsolute.lean",
+      "blob": "644aebceec00f49826c9f34c80a7f1122a0eaa57",
+      "status": "SOURCE_PROOF_CANDIDATE",
+      "theorem_bodies": 3,
+      "unported_defs": [
+        "ClassicalVKOriginalPhysicalEnergyTransferTarget"
+      ]
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-gaussian-polynomial-heat-PNT-VK-absolute-stability-2026-11-02.md",
+    "blob": "3e4da0a47c883559a52fb9d996e0f5f4ba4385e1"
+  },
+  "typed_delta": {
+    "path": "documentation/mathematics/_support/reviews/moebius-gaussian-PNT-VK-absolute-stability-source-delta-2026-11-02.json",
+    "blob": "517dbeb2c89d7f62b5eaa01b4e4229486600fc02",
+    "nodes": 16,
+    "typed_edges": 18
+  },
+  "original_source_invariants": [
+    "real ArithmeticFunction.moebius original μ(1)=1 and squareful zero preserved",
+    "same original wholePickup and pickupEnergy nonnegative square [0,T]",
+    "same pickupResponse causal birth at log(n), original endpointIndex T",
+    "both ordered offdiagonal signed physical Gram terms retained in source",
+    "original far/short/collar/fixed masks untouched; fixed dyadic J log2 unchanged",
+    "artificial heat s_k(T)=exp(-T)*(1+T)^k is not physical time smoothing"
+  ],
+  "source_math": {
+    "L2_absolute_comparison": "For s,T>=0, |E(T)-H_s(T)|<=2 sqrt(E(T) R_s(T))+R_s(T), from exact original signed waveform difference and ordinary Cauchy-Schwarz",
+    "active_source_error": "Already maintained ordinary local causal estimate R_s(T)<=16s²T⁴(exp T-1)",
+    "polynomial_schedule": "For every integer k>=0 and T>=0, R_{exp(-T)(1+T)^k}(T)<=16T⁴exp(-T)(1+T)^(2k)",
+    "classical_PNT_input": "OriginalBalancedPNTLogPowerTarget: for every A>=1, original pickupCross<=C_A exp T/(1+T)^A (classical unconditional, Lean unported)",
+    "classical_PNT_energy": "E(T)<=2T²+C_A exp T/(1+T)^A",
+    "absolute_difference_explicit": "|E-H_k|<=8sqrt(2)T³exp(-T/2)(1+T)^k+8sqrt(C_A)T²(1+T)^(k-A/2)+16T⁴exp(-T)(1+T)^(2k)",
+    "all_log_stability": "For every fixed integers k,B>=0 choose A=2*(k+B+3) to get |E(T)-H_k(T)|<=K_{k,B}/(1+T)^B uniformly all T>=0; no RH premise",
+    "VK_input": "ClassicalVinogradovKorobovMertensTarget: original |M(e^u)|<=Ce^u exp(-c phi(u)), phi(u)=u^(3/5)/(log(3+u))^(1/5), established classical (not RH) but Lean unported",
+    "VK_physical_energy_transfer": "ClassicalVKOriginalPhysicalEnergyTransferTarget: original causal double integral E(T)<=A exp(T-c phi(T)), standard classical consequence not ported in pinned Lean",
+    "VK_critical_radius": "At artificial half-root s=exp(-T/2), active original causal radius R_s(T)<=16T⁴ (improves global 16T⁵)",
+    "VK_relative": "For J>=9, T_J>=32, real signed H_J/U_J<=131072 A exp(-c phi(T_J))+2097152 T_J⁴ exp(-T_J); stronger than all logarithmic powers, still exponential rate ONE",
+    "VK_absolute": "For polynomial amplified s_k(T), |E-H_k|<=8sqrt(A)T²(1+T)^k exp(-c phi(T)/2)+16T⁴exp(-T)(1+T)^(2k)",
+    "VK_asymptotic": "Since log(1+T)=o(phi(T)), for each fixed k and c'<c/2, absolute difference O(exp(-c' phi(T))); no new zero-free half-plane Re>1/2",
+    "RH_boundary": "Original signed FAR/fixed core all-positive-rate upper, original energy all-positive-rate, and corresponding RH-equivalent Gaussian relative exponential precision remain OPEN"
+  },
+  "source_specific_existing": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSquareBridge.lean",
+      "blob": "be156509d9679a22b52b32d087f87d8449a047ef"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatIntegratedLocalStability.lean",
+      "blob": "8247bb7caa8943da3a587fbe5d0ff832c0605efa"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatLocalCausalBounds.lean",
+      "blob": "d1a3c5de19b7f26bd3ae7322b56a65a23b663e4d"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianLogHeatSource.lean",
+      "blob": "e7443337b95b8491492acfa120809f6873f77ef1"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianRelativePolarityPNT.lean",
+      "blob": "2c2f43961d3c822e7d6d0a6b0b77d72cbdf38cfd"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarPrimeBoxForcedCompensation.lean",
+      "blob": "23ea28d68153eff6ebbfbc0269d8249473b98549"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusOriginalLaplaceZeroBarrier.lean",
+      "blob": "1a66b83553886e96fc227fa9eeb8b92f4bc8a6a8"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarCompleteUpperTransfer.lean",
+      "blob": "11b3913a25626bbd4e1a593b50c31e82bac6abee"
+    }
+  ],
+  "numerical_noncertifying": [
+    {
+      "J": 9,
+      "k": 0,
+      "original_E": 3.343188,
+      "heated_H": 3.299242,
+      "absolute_difference": 0.043946
+    },
+    {
+      "J": 12,
+      "k": 0,
+      "original_E": 6.642787,
+      "heated_H": 6.631611,
+      "absolute_difference": 0.011176
+    },
+    {
+      "J": 14,
+      "k": 0,
+      "original_E": 9.074797,
+      "heated_H": 9.070967,
+      "absolute_difference": 0.00383
+    },
+    {
+      "J": 15,
+      "k": 0,
+      "original_E": 10.329296,
+      "heated_H": 10.327102,
+      "absolute_difference": 0.002194
+    },
+    {
+      "J": 15,
+      "k": 1,
+      "original_E": 10.329296,
+      "heated_H": 10.30432,
+      "absolute_difference": 0.024975
+    }
+  ],
+  "trust": {
+    "git_publication": "PASS_FIVE_EXACT_GITHUB_BLOB_READBACK",
+    "expected_additive_files": 5,
+    "lean_compilation": "DEFERRED_PER_USER",
+    "parser": "NOT_RUN",
+    "elaboration": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "full_transitive_axiom_opaque_native_audit": "NOT_RUN",
+    "authored_unsafe_axiom_sorry_admit": "STATIC_SCAN_NOT_PRESENT",
+    "classical_PNT_pinned_Lean": "NOT_IMPORTED_OR_PROVED",
+    "classical_VK_pinned_Lean": "NOT_IMPORTED_OR_PROVED",
+    "original_L2_and_scalar_unported_Lean": "EXPLICIT_PROPS_NOT_AXIOMS",
+    "original_mu_or_physical_kernel_modified": false,
+    "toolchain_root_import_modified": false,
+    "Noe_runner_CI_automation_dispatched": false,
+    "global_all_positive_rate_FAR": "OPEN",
+    "Gaussian_RH_equivalent_relative_exponential": "OPEN",
+    "canonical_RiemannHypothesis": "OPEN",
+    "github_pre_update_diff": "PASS_FIVE_ADDITIONS_NO_MODIFICATIONS",
+    "github_published_file_count": 5
+  },
+  "tracking_issues": [
+    1556,
+    1429
+  ],
+  "external_references": [
+    "https://www.fieldsinstitute.ca/talks/Explicit-Mertens-estimates",
+    "https://mathoverflow.net/questions/293738/best-estimate-of-the-mertens-function-without-assuming-the-riemann-hypothesis"
+  ],
+  "source_commit": "87a30d8a2fa1fc5678e35157179dc9c191ae1cbc",
+  "source_parent": "c36611df6cc59dddb7711cb127fbfc69daab81ef"
+}

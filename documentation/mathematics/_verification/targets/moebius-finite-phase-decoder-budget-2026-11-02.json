@@ -1,0 +1,60 @@
+{
+  "schema": "grwtsk.math.verification.target.v1",
+  "title": "Quantitative finite-phase decoder error budget and original Möbius endpoint return",
+  "date": "2026-11-02",
+  "repository": "grwtsk/math",
+  "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFinitePhaseDecoderBudget.lean",
+  "source_blob": "f9442fbba1b5c617ccaf6234d403d9b4212cf316",
+  "pinned_toolchain": "leanprover/lean4:v4.34.1",
+  "pinned_mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "direct_imports": [
+    "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusFiniteTorsionResolutionReturn",
+    "Mathlib"
+  ],
+  "predecessor_blob": "77b6af2581e21edc4e8a471fe42de3032c6f25cc",
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "theorems": [
+    "kernel_error_three_terms",
+    "kernel_error_abs_le",
+    "errorEnvelope_nonneg",
+    "signedLoss_abs_le_errorEnvelope",
+    "pickupCross_le_observed_add_envelope",
+    "endpointSum_le_observed_add_envelope_quarter",
+    "phase_collision_error_radius",
+    "observedCoeff_reframe",
+    "coefficientError_reframe",
+    "observedCross_reframe",
+    "errorEnvelope_reframe",
+    "errorCertificate_reframe",
+    "pickupCross_le_phaseHybridUpper",
+    "phaseHybridUpper_le_previous",
+    "riemannHypothesis_of_phase_observation_and_error"
+  ],
+  "definitions": [
+    "ErrorCertificate",
+    "errorEnvelope",
+    "DecoderCompatible",
+    "phaseHybridUpper"
+  ],
+  "verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_DISPATCHED",
+    "finite_numeric_tests": "93888_PASS_60DPS_NONRIGOROUS"
+  },
+  "quantifier_boundary": "ALL original endpoint indices, one fixed affine-frequent G, each positive rate for both observed signed cross and nonnegative complete error envelope; no cancellation supplier established",
+  "commands": [
+    "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusFinitePhaseDecoderBudget",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFinitePhaseDecoderBudget.lean",
+    "lake env leanchecker --help"
+  ],
+  "run_authority": "PASSIVE_ONLY",
+  "open_supplier": [
+    "original-index certified coefficient radii",
+    "all-positive-rate signed observed cross bound on fixed G",
+    "all-positive-rate nonnegative envelope bound on same G",
+    "complete native Lean verification"
+  ]
+}

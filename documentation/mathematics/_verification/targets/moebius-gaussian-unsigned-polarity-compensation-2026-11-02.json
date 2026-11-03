@@ -1,0 +1,183 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Original Möbius Gaussian universal two-positive-envelope obstruction and signed polarity PNT compensation",
+  "repo": "grwtsk/math",
+  "attribution": "grwtsk contributors; mathematical/Lean source assistance by OpenAI ChatGPT",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "pinned_source_head_at_first_scan": "2e864e3514ba43426d80b245933a31508dbe4c3d",
+  "new_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianUnsignedDualEnvelope.lean",
+      "blob": "e50f60f42c25641cd907741468aaeabc883cede6",
+      "status": "UNCOMPILED_SOURCE_PROOF_CANDIDATE",
+      "theorem_bodies": 8
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianSignedPolarityDebt.lean",
+      "blob": "cc4eaead623fdf302fb1e5545c1adc5681a4afea",
+      "status": "UNCOMPILED_SOURCE_PROOF_CANDIDATE",
+      "theorem_bodies": 11
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianClassicalPNTPolarity.lean",
+      "blob": "b17055bc3e786ba0d5ca04cf2e4426d3b0c57a73",
+      "status": "UNCOMPILED_SOURCE_PROOF_CANDIDATE",
+      "theorem_bodies": 1
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-gaussian-unsigned-envelope-polarity-compensation-2026-11-02.md",
+    "blob": "fd3efed7051dfafa1e022e5833c352fcf9f39c48"
+  },
+  "graph": {
+    "path": "documentation/mathematics/_support/reviews/moebius-gaussian-dual-envelope-polarity-source-delta-2026-11-02.json",
+    "blob": "dfd787020e4ee9cfc05bc8c72cefc3dd48f932fa",
+    "nodes": 14,
+    "typed_edges": 17
+  },
+  "primary_unchanged_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianLogHeatSource.lean",
+      "blob": "e7443337b95b8491492acfa120809f6873f77ef1"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDecoderPositiveResponse.lean",
+      "blob": "35686a42c743827cad84898acd5e08f9e1fd6c37"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianSquarefreeRadiusSharpness.lean",
+      "blob": "5c757b36c1ebdf5370fd5481b5c8d945b05775cf"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianRadiusSharpThreshold.lean",
+      "blob": "fbd5804dc33f3156845daacc530143cfcdf041b5"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHalfRootMassImprovement.lean",
+      "blob": "972679fba73136eca8dc152e89c1f225db1ca0ae"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianStrongHeatUniformEnergy.lean",
+      "blob": "a3dc512aa819b858e603414be345ad2506e5ada7"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatSignedEvolution.lean",
+      "blob": "ee8bf6ec9238386882c79cde1dc7c2c3f685c285"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSquareBridge.lean",
+      "blob": "be156509d9679a22b52b32d087f87d8449a047ef"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarCompleteUpperTransfer.lean",
+      "blob": "11b3913a25626bbd4e1a593b50c31e82bac6abee"
+    }
+  ],
+  "proved_in_ordinary_mathematics": {
+    "coeff_exact": "|mu(n)|=|mu(n)e^{-s(logn)^2}| + |mu(n)|(1-e^{-s(log n)^2}), s>=0, squareful zero kept",
+    "wave_exact": "A(T,u)=U_s(T,u)+R_s(T,u); original complete endpoint and true physical response",
+    "positive_source_shell": "for original J>=9, actual squarefree band cardinal≥2^J/32 and response last-quarter≥e^{-T_J/2}/2, so original unsigned physical square energy≥e^{T_J}/16384",
+    "heat_agnostic_no_go": "for ANY s>=0 or arbitrary schedule s_J>=0 and J>=9, unsignedHeatEnergy(s,T_J)+sourceHeatRadiusEnergy(s,T_J)>=e^{T_J}/32768; at least one≥e^{T_J}/65536",
+    "fixed_positive_rate_no_go": "for any fixed 0<r<1, any schedule s_J>=0, neither two individual all-J upper bounds unsignedHeatEnergy<=C1e^{rT_J} and errorRadiusEnergy<=C2e^{rT_J} can hold simultaneously",
+    "polarity_exact": "for actual c_s(n)=mu(n)e^{-s log²n}, positive and negative physical heat waves P_s,N_s give signedSourceHeatWave=P_s-N_s, unsignedHeatWave=P_s+N_s, unsignedHeatEnergy-sourceHeatEnergy=4 int_0^T P_s N_s",
+    "near_identity_half": "if s*T_J²<=1/2 and J>=9, unsignedHeatEnergy(s,T_J)>=e^{T_J}/65536",
+    "critical_heat_time": "for T>=32, s=e^{-T/2} has s*T²<=1/2 by exp(T/2)>=T^4/384, so near identity unsigned heat lower applies",
+    "conditional_signed_debt": "if signedSourceHeatEnergy(s,T_J)<=C_r e^{rT_J} then fourfold positive-negative overlap>=e^{T_J}/65536-C_r e^{rT_J}",
+    "classical_PNT_rate_one": "Given existing explicitly unported original OriginalBalancedPNTLogPowerTarget with beta=1 and C>=0, pickupEnergy<=2T²+C e^T/(1+T) and heated signed source s=e^{-T/2}<=4T²+2C e^T/(1+T)+32T^5; therefore 4 overlap>=e^T/65536-2C e^T/(1+T)-4T²-32T^5 eventually order e^T. Source PNT is classical unconditional mathematics, but NOT proven in pinned Lean.",
+    "RH_boundary": "This is necessary sign compensation at exponent ONE; full all-positive-rate signed FAR/fixed core and RH remain OPEN."
+  },
+  "required_unported_Lean_gates": [
+    "ElementarySquarefreeBandPopulationTarget (PNT-free integer union counting)",
+    "ElementarySquarefreeTerminalResponseTarget (actual original causal response on last quarter)",
+    "ElementaryTerminalRadiusIntegralTarget (ordinary nonnegative interval squared integral)",
+    "ElementaryDyadicExponentialDivergenceTarget (Jlog2 unbounded)",
+    "OriginalBalancedPNTLogPowerTarget (existing ordinary classical PNT external analytic source, NOT pinned Lean proved)"
+  ],
+  "independent_diagnostics": {
+    "method": "Direct deterministic original μ sieve and actual causal response wave integrated over [0,T_J] with finite Simpson quadrature (3001 nodes); noncertifying",
+    "tests": [
+      {
+        "J": 9,
+        "schedule": "e^-T/2",
+        "unsigned_heat": 354.772,
+        "radius_error": 76.569,
+        "dual_positive": 431.341,
+        "signed_heat": 2.4744,
+        "dual_lower": 0.015625
+      },
+      {
+        "J": 9,
+        "schedule": "s=1",
+        "unsigned_heat": 34.054,
+        "radius_error": 483.197,
+        "dual_positive": 517.251,
+        "signed_heat": 2.9012,
+        "dual_lower": 0.015625
+      },
+      {
+        "J": 12,
+        "schedule": "e^-T/2",
+        "unsigned_heat": 3043.27,
+        "radius_error": 550.379,
+        "dual_positive": 3593.649,
+        "signed_heat": 5.9608,
+        "dual_lower": 0.125
+      },
+      {
+        "J": 12,
+        "schedule": "s=1",
+        "unsigned_heat": 55.76,
+        "radius_error": 5141.767,
+        "dual_positive": 5197.526,
+        "signed_heat": 4.0042,
+        "dual_lower": 0.125
+      },
+      {
+        "J": 14,
+        "schedule": "e^-T/2",
+        "unsigned_heat": 13770.189,
+        "radius_error": 1557.148,
+        "dual_positive": 15327.337,
+        "signed_heat": 8.5961,
+        "dual_lower": 0.5
+      },
+      {
+        "J": 14,
+        "schedule": "s=1",
+        "unsigned_heat": 70.835,
+        "radius_error": 22288.699,
+        "dual_positive": 22359.534,
+        "signed_heat": 4.7413,
+        "dual_lower": 0.5
+      }
+    ],
+    "certification": "NONCERTIFYING numerical sampling, source analysis independent"
+  },
+  "verification": {
+    "source_publication": "PASS_SIX_EXACT_GIT_BLOB_READBACK",
+    "compiler": "DEFERRED_PER_USER",
+    "Lean_parser": "NOT_RUN",
+    "Lean_elaboration": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "independent_kernel": "NOT_RUN",
+    "transitive_axiom_opaque_native_audit": "NOT_RUN",
+    "authored_proof_placeholders": "STATIC_SCAN_ABSENT",
+    "existing_original_mu_or_physical_Gram_modified": false,
+    "root_import_or_toolchain_modified": false,
+    "CI_Noe_native_runner_or_scheduler_dispatched": false,
+    "global_FAR_all_positive_rate": "OPEN",
+    "canonical_RiemannHypothesis": "OPEN",
+    "changed_source_files": 6,
+    "git_pre_update_diff": "PASS_SIX_ADDITIVE_PATHS_NO_MODIFICATIONS"
+  },
+  "issues": [
+    1556,
+    1429
+  ],
+  "source_commit": "3b355586351b692c2fe67d848bf70f5f68b21832",
+  "source_parent": "2e1de65075856e29723fd308d92ae16fc562e758"
+}

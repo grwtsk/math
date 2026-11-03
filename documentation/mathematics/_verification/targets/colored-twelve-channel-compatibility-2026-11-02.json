@@ -1,0 +1,99 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Six original PortFiber provenance colors x two signed error polarities: exact source return under original diffusion",
+  "issue": "https://github.com/grwtsk/math/issues/1543",
+  "classification": "NEW_ADDITIVE_SOURCE_PROOF_CANDIDATE_NOT_NATIVE_LEAN_ACCEPTED",
+  "prerequisite_repository_head": "6a4ae8ab1c2f1aa38c251d59b5907ac2119c492f",
+  "authored_files": [
+    {
+      "path": "GRWTSK/MeasureAndIntegration/ColoredSixPortPolarityBridge.lean",
+      "blob": "0d0e94f92be9d6925e55ce1dbe4649d0ee523105"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/colored-twelve-channel-compatibility-2026-11-02.md",
+      "blob": "128e7ecfe14e20d8b917aa5b141392361a157e06"
+    },
+    {
+      "path": "documentation/mathematics/_verification/finite/colored-twelve-channel-compatibility-2026-11-02.json",
+      "blob": "ef55916b9d41879929b79e70af37d060f9bc1bd8"
+    }
+  ],
+  "preserved_originals": [
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/ColoredSourcePorts.lean",
+      "blob": "058a661367fff4ff5766182f1c5fb3c5270cc182",
+      "status": "ORIGINAL_SIX_CHANNEL_PROVENANCE_PRESERVED"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/ColoredDiffusiveGodelObserverReturn.lean",
+      "blob": "e604b30a7898d9b7d0b98243c4f36759d1bdb32d",
+      "status": "EXISTING_SIX_COLOR_GRAPH_SANDWICH_UNMODIFIED"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/ColoredDiffusiveGodelReconstruction.lean",
+      "blob": "d1d05d63a40633effdb2eeb3a1c081daf21ad6e8",
+      "status": "PREVIOUS_TWO_COLOR_REAL_TANGENT_ADAPTER_UNMODIFIED"
+    },
+    {
+      "path": "GRWTSK/Combinatorics/GraphTheory/RootHeatState.lean",
+      "blob": "b58e2e0e16b134f110015059b0d3d5dd7d2aca47"
+    }
+  ],
+  "source_principle": "PortFiber six colors classify provenance, independent red/blue polarities classify signed numerical error; sum of twelve channels returns ORIGINAL Kd; full local residual d-Kd remains necessary.",
+  "source_theorem_candidates": [
+    "sum_redByChannel",
+    "sum_blueByChannel",
+    "sum_red_diffusion",
+    "sum_blue_diffusion",
+    "six_color_two_polarity_exact",
+    "twelve_channel_source_return"
+  ],
+  "mathematical_open": [
+    "SharpSelfLoopLeakage remains an unproved Lean Prop despite ordinary finite proof and exact tests",
+    "Physical Godel boostedObserver identification requires a proved source-to-Tangent map",
+    "One fixed-scale all-positive-rate arithmetic Möbius bound remains open"
+  ],
+  "independent_finite": {
+    "script": "/mnt/data/advance/colored_six_port_polarity_reference.py",
+    "script_sha256": "a6388ff46a57cc3375f14e9deb7800d8cd1b80fcbdfe4fcc3c6f5a9b9ab83577",
+    "result_sha256": "036a026b072807b3da6b37a29731a73d07dead9ae4c024a076e37188fd737981",
+    "graphs": 960,
+    "source_sample_returns": 6240,
+    "channel_mass_checks": 11520,
+    "heterogeneous_label_cases": 859,
+    "all_six_label_cases": 106,
+    "status": "PASS_FINITE_DIAGNOSTIC_NOT_LEAN"
+  },
+  "pinned_toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "automation": {
+    "noe_main_revision_inspected": "d86e951560b843cba455dfc3eebd0ca560a27511",
+    "noe_proof_automation_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "local_native_toolchain_available": false,
+    "managed_noe_job_dispatched": false
+  },
+  "verification": {
+    "source_git_blob_creation": "PASS",
+    "guarded_main_publication": "PASS_NONFORCE_EXPECTED_PARENT_MAIN",
+    "exact_blob_readback": "PASS_4_OF_4",
+    "no_authored_sorry_axiom_unsafe": "STATIC_SOURCE_SCAN_ONLY",
+    "native_Lean_compilation": "NOT_RUN",
+    "expected_types_universes": "NOT_RUN",
+    "fresh_kernel_replay_trust0": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "native_owner_restoration": "NOT_CHECKED",
+    "physical_observer_uniqueness": "NOT_PROVED",
+    "original_RH_arithmetic_estimate": "OPEN"
+  },
+  "publication": {
+    "source_commit": "60c07bfe268b3ad845e9cc31858ac40575b8a4ad",
+    "guarded_parent": "1741af45b92bf2220ab97049be9429f00b5d53f1",
+    "prior_manifest_blob": "bc238e13a7318570f685f63b0881cba75b2d02ca",
+    "original_source_blob_readback": true,
+    "native_Lean_acceptance": false
+  }
+}

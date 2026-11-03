@@ -1,0 +1,127 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "research_date": "2026-11-02",
+  "title": "Genuine reciprocal zeta critical-line compact corridor and published finite-height zero control; local original Perron shifts with explicit unpaid high frequency",
+  "repository": "grwtsk/math",
+  "author_attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
+  "pinned_toolchain": {
+    "lean": "v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "additive_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusReciprocalCriticalCompact.lean",
+      "blob": "312fc9341c57dc783acc914b5ed43bd2d3bf2152",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPerronLocalCriticalWindow.lean",
+      "blob": "d48a4182e582a228e140d445b5778b41791962b8",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-reciprocal-half-critical-local-contour-finite-height-2026-11-02.md",
+    "blob": "1785df07b744c4356a9502480a272a6569f2b7e7"
+  },
+  "pinned_dependencies": [
+    {
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusReciprocalZetaPerronBridge.lean",
+      "blob": "69ae2587f1f6e30adec21b9d7dcf43eeffa2a499"
+    },
+    {
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPerronRightLineExplicit.lean",
+      "blob": "b0566d7c00925f133cda5d53d081d8f79bc61a64"
+    },
+    {
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/Harmonic/ZetaAsymp.lean",
+      "blob": "7ff24a8a04888a98f63f34e0acca92e27e8843b4"
+    },
+    {
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/LSeries/Nonvanishing.lean",
+      "blob": "789e0aae6e9378c8f5c8a7a07a905830e20b5433"
+    }
+  ],
+  "exact_source": "M(N)=sum_{n=1..N} moebiusReal(n), original perronKernel=(x^s)*((s-1)/riemannZeta₁(s))/s, perronVertical and perronHorizontalCorrection unchanged; physical causal Möbius pickup kernel and full signed FAR unchanged",
+  "ordinary_mathematics": {
+    "real_zeta1_quarter": "for every real sigma in [1/2,2], Z1(sigma)>1/4; eta(sigma)>1-2^-sigma and (1-sigma)/(2^(1-sigma)-1)>=1 for sigma<1; Z1(1)=1; sigma>1: (sigma-1)zeta(sigma)>=1",
+    "derivative_cap": "A=max |Z1'(s)| on the compact complex rectangle 1/2<=Re s<=2, |Im s|<=1 exists by entire differentiability",
+    "genuine_critical_line_corridor": "h=1/(8(1+A)) in (0,1/8], for every real sigma in [1/2,2] and |t|<=h, |Z1(sigma+it)|>=1/8 and |regularizedReciprocalZeta(sigma+it)|<=9; unconditional",
+    "critical_line_Perron_low_frequency": "for every x>=1, |perronVertical(x,1/2,h)|<=(18h/pi)*sqrt(x); unconditional",
+    "exact_local_cauchy": "for any finite rectangle sigma<=Re s<=c with sigma>0 and |Im s|<=H, local nonvanishing Z1(s)!=0 gives perronVertical(x,c,H)=perronVertical(x,sigma,H)+perronHorizontalCorrection(x,sigma,c,H); no global zero-free plane required",
+    "original_Mertens_exact_decomposition": "For x=N+1/2,H_N=x^2, M(N)=perronVertical(x,1/2,h)+perronHorizontalCorrection(x,1/2,2,h)+[perronVertical(x,2,H_N)-perronVertical(x,2,h)]+E_N; |E_N|<40 ordinarily from preceding right-line elementary proof; high-frequency and horizontal terms UNPAID",
+    "finite_verified_external": "Platt-Trudgian 2021 rigorous interval arithmetic: every nontrivial zeta zero with |Im s|<=3*10^12 has Re s=1/2, together with elementary real-axis sign at zero height",
+    "finite_verified_near_half": "For every fixed delta in (0,1/2), Z1(s) nonzero and regularized R(s) bounded by some finite C_delta across closed [1/2+delta,2]x[-3e12,3e12]; combines published finite zeros with pinned riemannZeta_ne_zero_of_one_le_re and compactness",
+    "finite_verified_local_Mertens": "If N>=1 and (N+1/2)^2<=3e12, put x=N+1/2, sigma=1/2+delta. Then |M(N)|<=40+(C_delta/pi)*(x^sigma*(1/sigma+log(3e12))+(2-sigma)), a finite-range fixed-delta bound; constant nonnumerical without explicit compact-minimum certification",
+    "critical_zero_obstruction": "actual critical-line zeros produce unbounded R(s) near their heights; global bounded reciprocal ON sigma=1/2 is false; finite H cannot service original Perron H_N=x^2 at unbounded N",
+    "all_positive_exponential_rate": "NOT ESTABLISHED; full signed far original RH-strength upper remains OPEN"
+  },
+  "named_Lean_unported_propositions": [
+    "RealZetaOneQuarterLowerTarget",
+    "ZetaOneUniformShortVerticalVariationTarget",
+    "PublishedFiniteHeightZetaZerosOnHalf (EXTERNAL PUBLISHED FINITE-HEIGHT CERTIFICATE, NOT PINNED LEAN)",
+    "FiniteHeightCompactReciprocalBoundTarget",
+    "CriticalLowFrequencyPerronNormTarget",
+    "OriginalRightLineTermwisePerronBoundTarget (previously independently ordinary-proved, unported Lean)",
+    "HalfIntegerReciprocalLogBudgetTarget (previously independently ordinary-proved, unported Lean)"
+  ],
+  "source_candidate_theorems": [
+    "ReciprocalCriticalCompact.reciprocal_zeta_critical_corridor_of_elementary",
+    "ReciprocalCriticalCompact.zetaOne_ne_zero_on_verified_half_shift",
+    "ReciprocalCriticalCompact.finite_height_reciprocal_bound_of_published_certificate",
+    "PerronLocalCriticalWindow.perronKernel_differentiableAt_of_local_denominator",
+    "PerronLocalCriticalWindow.perronVertical_shift_of_local_rectangle",
+    "PerronLocalCriticalWindow.exists_unconditional_local_critical_shift_of_elementary",
+    "PerronLocalCriticalWindow.originalRightLinePerronError_norm_le_forty",
+    "PerronLocalCriticalWindow.originalMertens_eq_low_shift_high_and_error",
+    "PerronLocalCriticalWindow.verified_height_local_perron_shift"
+  ],
+  "diagnostics": {
+    "real_sigma_grid": "sigma=.5,.6,.75,.9,1,1.1,1.3,1.5,2",
+    "real_zeta1_grid_values_approx": [
+      0.730177,
+      0.781064,
+      0.860322,
+      0.943011,
+      1,
+      1.058445,
+      1.179584,
+      1.306187,
+      1.644934
+    ],
+    "real_positive_quarter_checks": 9,
+    "certification": "NONCERTIFYING_NUMERIC_SAMPLE; analytic proof in review is independent"
+  },
+  "external_references": [
+    "https://dlmf.nist.gov/25.2",
+    "https://mathworld.wolfram.com/DirichletEtaFunction.html",
+    "https://doi.org/10.1112/blms.12460",
+    "https://www.claymath.org/millennium-problems/"
+  ],
+  "verification": {
+    "source_publication": "PASS_FOUR_EXACT_GITHUB_BLOB_READBACK",
+    "source_lean_compilation": "DEFERRED_PER_USER",
+    "source_parser": "NOT_RUN",
+    "expected_theorem_types": "NOT_RUN",
+    "fresh_lean_kernel": "NOT_RUN",
+    "transitive_axiom_opaque_native_audit": "NOT_RUN",
+    "finite_external_certification_replayed_in_lean": "NOT_RUN",
+    "no_authored_axiom_sorry_unsafe": "STATIC_SOURCE_SCAN_ONLY",
+    "original_Mobius_or_kernel_modified": false,
+    "toolchain_or_root_modified": false,
+    "automation_CI_native_dispatched": false,
+    "complete_far_all_positive_rate": "OPEN",
+    "canonical_RiemannHypothesis": "OPEN",
+    "publication_file_count": 4
+  },
+  "related_issues": [
+    1556,
+    1429
+  ],
+  "source_commit": "2c2ac33a1ca06910bac56b04e23251b2560cd254",
+  "source_parent": "c1da1ea7156c9b7013ca1b3cbc9aaea05baa38fa"
+}

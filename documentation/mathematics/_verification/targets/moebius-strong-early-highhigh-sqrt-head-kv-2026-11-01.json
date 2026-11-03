@@ -1,0 +1,68 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-01",
+  "title": "Actual strong Mobius high-high signed source after unconditional early rectangle and sqrt-head PNT/KV transfer",
+  "source_blobs": {
+    "GRWTSK/Combinatorics/GraphTheory/FiniteSignedRectangularCollar.lean": "0fb1781ee3ea5a0e3ffc0f66a02d1e92912a3dfb",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongEarlyIndexCollar.lean": "5667a895c4f8225a49f45cda4872a133adf7cc30",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongMertensOptimalHead.lean": "56f97813b2b9d44bd7e5f95330bd2b9c3e6e3cdd",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongSqrtHeadEnergy.lean": "136431f434eb2210db40001c066eb47359756db9"
+  },
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "direct_source_inputs": [
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongPacketEnergyReturn.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEnergyMatchedWeakResidual.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointGapLocalization.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongMertensAbel.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTwoPrimeRateFrontier.lean"
+  ],
+  "external_arithmetic_reference": {
+    "title": "New explicit bounds for Mertens function and the reciprocal of the Riemann zeta-function",
+    "authors": "Ethan Simpson Lee; Nicol Leong",
+    "version": "arXiv:2208.06141v5",
+    "revised": "2026-09-09",
+    "url": "https://arxiv.org/abs/2208.06141v5",
+    "source_shape": "|M(x)| << x*log(x)*exp(-c*(log x)^(3/5)/(log log x)^(1/5))",
+    "theorem_import_status": "NOT_PORTED",
+    "note": "log x prefactor in v5 must be retained until separately absorbed"
+  },
+  "public_declaration_candidates": [
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.FiniteSignedRectangularCollar.abs_selectedEarlyCross_le_rank_one",
+    "GRWTSK.NumberTheory.Moebius.StrongEarlyIndexCollar.actual_sourceKernel_abs_le_root",
+    "GRWTSK.NumberTheory.Moebius.StrongEarlyIndexCollar.strong_eq_early_add_highHigh",
+    "GRWTSK.NumberTheory.Moebius.StrongEarlyIndexCollar.arbitraryOriginalEarlyCross_abs_le_32_sqrt",
+    "GRWTSK.NumberTheory.Moebius.StrongEarlyIndexCollar.earlyStrongCross_abs_le_32_sqrt",
+    "GRWTSK.NumberTheory.Moebius.StrongEarlyIndexCollar.pickupCross_eq_gap_weak_early_highHigh",
+    "GRWTSK.NumberTheory.Moebius.StrongEarlyIndexCollar.endpointSum_le_rateHighHigh_and_paid",
+    "GRWTSK.NumberTheory.Moebius.StrongMertensOptimalHead.sampleResidue_abs_le_sqrtHead",
+    "GRWTSK.NumberTheory.Moebius.StrongSqrtHeadEnergy.pickupEnergy_le_sqrtHead",
+    "GRWTSK.NumberTheory.Moebius.StrongSqrtHeadEnergy.strongCross_abs_le_sqrtHead_Mertens"
+  ],
+  "verification": {
+    "publication": "SOURCE_CANDIDATE",
+    "mathematical_scope": "analytically argued elementary finite original-source bounds and external-classical-only KV corollary",
+    "exact_rational_checks": 18000,
+    "fixtures": 6000,
+    "original_causal_numerical_fixtures": 5,
+    "precision_digits": 60,
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "external_kv_pnt_lean_import": "NOT_RUN",
+    "RH": "OPEN"
+  },
+  "open": [
+    "Check exact original nested signed source and selected relation Fintype elaboration",
+    "Check finite ordered rectangle factoring, Icc root sum, actual interval Gram kernel and zero/terminal support",
+    "Check original PNT-sampled bridge, improved sqrt K Abel head, physical-time energy integration and source quantifiers",
+    "Import external KV v5 proof or keep explicit strongly versioned arithmetic theorem as hypothesis",
+    "Noncircular every-positive-rate cancellation of original high-high and remaining early source on one fixed covered scale set"
+  ],
+  "root_import_change": false,
+  "dependency_changes": false,
+  "remote_execution": "NONE; passive target, no CI or process runner"
+}

@@ -1,0 +1,158 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Sharp finite-state periodic-label lift bound and exact word-resolved sofic matrix trace",
+  "issue": "https://github.com/grwtsk/math/issues/1576",
+  "repository": "grwtsk/math",
+  "classification": "SOURCE_PROOF_CANDIDATE_WITH_OPEN_MACRO_LEMMAS_NOT_NATIVE_LEAN_ACCEPTED",
+  "mathematical_source": {
+    "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicWordMatrix.lean",
+    "blob": "d8f0423d8b872e5045c779544bd39eb1bad7adfe",
+    "lines": 261,
+    "original_representations_changed": false,
+    "new_sorry_declaration": 0,
+    "new_axiom_declaration": 0,
+    "new_unsafe_declaration": 0
+  },
+  "mathematical_review": {
+    "path": "documentation/mathematics/_support/reviews/sofic-sharp-periodic-word-matrix-bound-2026-11-02.md",
+    "blob": "3320ff112c49f090ce29d756fefeaf6d6d9790f3"
+  },
+  "original_mathematics": [
+    "For any original finite-state directed labeled graph G and positive n-letter block w, its infinite repetition belongs to the WHOLE graph factor language iff there is an actual closed path emitting w repeated k times for some 1<=k<=q=card(State).",
+    "The sharp q-state bound follows from q+1 macro word-boundary states on one admitted length-q-block graph path and the pigeonhole principle.",
+    "For exact word-path matrix B_w(s,t)=number of original LabeledWalkData witnesses emitting precisely w, trace(B_w^k)>0 iff some original closed path emits w repeated k times.",
+    "The ORIGINAL adjacency trace partitions wordwise: trace(A^n)=sum_{w : Fin n->Alphabet}trace(B_w), including n=0 and every based graph lift.",
+    "For positive periods, the count of DISTINCT periodic label words is sum_w 1[exists 1<=k<=q, trace(B_w^k)>0], not generally trace(A^n).",
+    "The directed q-cycle with one label a, w=[a], needs exactly k=q repetitions to close, proving optimality of the period multiplier bound."
+  ],
+  "source_theorem_candidates": [
+    "trace_pow_eq_sum_based_word_lifts",
+    "trace_wordLiftMatrix_eq_basedWordLiftCount",
+    "trace_pow_eq_sum_word_matrix_traces",
+    "periodicLabelPoint_card_eq_boundedWordCount (conditional on open explicit criterion)"
+  ],
+  "unproved_Lean_propositions": [
+    "WordPowerClosedPathBridge",
+    "FiniteStateBlockBoundaryPigeonhole",
+    "BoundedPeriodicWordMatrixCriterion"
+  ],
+  "retained_nonnegotiable_constraints": [
+    "No periodic word equivalence inferred from a single accepted trace.",
+    "Exact finite word factor language for ALL finite words.",
+    "Every intermediate graph state, emitted label and base state counted.",
+    "Both zero and multiple period-n graph lifts retained: the original missing/surplus ledger remains valid.",
+    "FaithfulCycleWords and CompleteCycleLifts remain separate hypotheses for an exact trace=periodic-label-point equality.",
+    "Finite alphabet is an additional explicit hypothesis; original exact-language schema only requires finite state."
+  ],
+  "selected_environment": {
+    "lean_toolchain": "leanprover/lean4:v4.34.1",
+    "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "source_deps": [
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CertifiedTransversal.lean",
+      "blob": "df720cbb72c616938635c20477430f5f0ded4021"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/ExactSoficLanguageCover.lean",
+      "blob": "f50489eaf6c7277993a08925a58b7765f9e10ec9"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLanguageTransversal.lean",
+      "blob": "238da905b6595c944cac40f39ae2f54870032132"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean",
+      "blob": "70e416083e8fd1238ffdd8896f984e0a5382c139"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBasedCycleCard.lean",
+      "blob": "d7fd2f5aad643d4350e4b5bfd7128dd979717a74"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicFiberLedger.lean",
+      "blob": "becfa9cfddb8479c36a007c17d8be4d0d7defe05"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepeatBridge.lean",
+      "blob": "a05e7d4527b6e37d59a48288f1e58e1a3867ca56"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteRepeatClosure.lean",
+      "blob": "e8d8dcc01f4e9f067cb9041ad5e54f7dd79d0962"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleLabelBijection.lean",
+      "blob": "bd1ba53939ed6f5a4e00d76be9d6d433d09f3d0b"
+    }
+  ],
+  "independent_exact_integer_checks": {
+    "script_path": "/mnt/data/sofic_word_periodic_matrix_bound.py",
+    "script_sha256": "25349a454c1ef420f553da12d3d69346118532be6155ce0d2cab7bc20fc857d9",
+    "result_path": "/mnt/data/sofic_word_periodic_matrix_bound.json",
+    "result_sha256": "54a9a37f3c79304ef712cb71a6da353c9c15a4bca27e83a07d64294cb5a7850b",
+    "graphs": 1060,
+    "positive_period_word_cases": 48812,
+    "admitted_word_cases": 42202,
+    "cases_admitted_without_one_period_lift": 458,
+    "exact_matrix_entry_expansion_checks": 523733,
+    "sharp_cycle_state_sizes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "scope": "finite exhaustive small-graph plus seeded random larger graph tests, not Lean/kernel acceptance"
+  },
+  "native_operator": {
+    "native_noe_skill_revision": "750ce416070f51dca6cdb819e277d2593dccb5ba",
+    "native_noe_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "local_lean_lake_elan_present": false,
+    "verified_local_Noe_math_checkout_present": false,
+    "managed_native_source_replay_dispatched": false,
+    "resource_hold_or_owner_bypassed": false,
+    "expected_axioms_to_audit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "verification": {
+    "publication": "PASS_GUARDED_NONFORCE_MAIN",
+    "source_exact_readback": "PASS_3_OF_3",
+    "direct_static_no_sorry_axiom_unsafe": "PASS",
+    "native_compilation": "NOT_RUN",
+    "expected_types_universes": "NOT_RUN",
+    "fresh_trust0_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "complete_import_closure": "NOT_RUN",
+    "native_owner_host_restoration": "NOT_CHECKED",
+    "complete_mathematical_criterion_in_Lean": "UNPROVED_TARGET",
+    "formal_acceptance": false,
+    "issue_state": "OPEN"
+  },
+  "next": [
+    "Native compile/test exact canonical and sofic chain including new word-matrix source, with managed Noe owner, registry v3, pinned toolchain and complete import closure.",
+    "Prove WordPowerClosedPathBridge by source word-path concatenation and matrix multiplication.",
+    "Prove FiniteStateBlockBoundaryPigeonhole by splitting a path at q+1 original n-word boundaries and applying cardinal pigeonhole.",
+    "Close BoundedPeriodicWordMatrixCriterion and re-run expected-type, fresh kernel and transitive axiom audits.",
+    "Retain nonbijective lift count corrections for general exact-language presentations; do not claim an unconditional dynamical zeta determinant identity."
+  ],
+  "publication": {
+    "published_commit": "5553033bba6818824a2ef7de87f0b21ad30bb100",
+    "guarded_parent": "c5e0165d9c76a89ef4a20d8655f6f455a3dcee8c",
+    "source_blob": "d8f0423d8b872e5045c779544bd39eb1bad7adfe",
+    "review_blob": "3320ff112c49f090ce29d756fefeaf6d6d9790f3",
+    "initial_manifest_blob": "8a9f19dddeae6ae53f0fd9e4afcd22bee14c27d0",
+    "exact_readback": true,
+    "proof_acceptance": false,
+    "first_unpublished_attempt": "571f1f6295d31eb3f3c8cabf309491a3d1bffe87",
+    "first_attempt_issue": "GitHub GraphQL API transient error/concurrent head; branch readback checked before non-force retry"
+  }
+}

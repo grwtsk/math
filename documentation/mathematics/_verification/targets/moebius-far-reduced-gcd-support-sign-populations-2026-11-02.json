@@ -1,0 +1,109 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "True far-reduced Möbius signed residual: exact small-gcd support, genuine negative class, large positive/negative PNT populations and RH-equivalent frontier",
+  "repository": "grwtsk/math",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarReducedStructuralFrontier.lean",
+    "blob": "9f72096be0c6aa30ecb0099a747090a5e30e4c44",
+    "status": "SOURCE_PROOF_CANDIDATE"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-far-reduced-gcd-support-true-sign-populations-2026-11-02.md",
+    "blob": "d03c3bd1d084f9b3b613a89f296d5421a10a476a"
+  },
+  "unchanged_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCollarResidualGcdReducedGap.lean",
+      "blob": "48081c7e32d41455ef7fc7d02c006588bd9b36b7"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCollarResidualShortRatio.lean",
+      "blob": "12d234aa8977cefe3a587706a9de2360467a9e31"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTerminalHighSmoothCrossShellCollar.lean",
+      "blob": "37ce65434d6d468c7815006ea3c5fbe7fbf50648"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothDensePairs.lean",
+      "blob": "cef7c06a794cec1cef423c2ebfa3b6d0221087ad"
+    }
+  ],
+  "exact_original_scope": {
+    "physical_time": "T_J=J*log 2, J>=1",
+    "cutoff": "K_J=floor(exp(sqrt(T_J))) fixed independently of requested epsilon",
+    "selected_pair": "m,n in PREEXISTING lowIndices(B,J), m!=n, true original additive gap mask A, neither previous bounded ratio nor gcd-reduced-close selector",
+    "coefficient": "moebiusReal(m)*moebiusReal(n)*pickupResponseGram(T_J,m,n), both ordered orientations",
+    "full_arithmetic_support": "max(m/g,n/g)>K_J with g=gcd(m,n), hence g*(K_J+1)<=max(m,n)<=floor(exp(T_J))",
+    "old_signed_source_preserved": true
+  },
+  "independent_ordinary_mathematics": [
+    "The exact far finite mask splits into farNegativeCross+farOtherCross; farNegativeCross<=0 (true odd-coprime LONG comparable and squarefree opposite gcd-reduced parity FAR incomparable)",
+    "For the ACTUAL empty finite prime bank, highSmoothBlock is empty whenever its genuine Q>=1 and terminalHighCollar is empty for all J>=8 (elementary log2 lower bound)",
+    "For empty bank and sufficiently large J, original far positive and negative Gram-weighted populations both >= c*2^J/(J*log 2)^2 by PNT on disjoint prime/primes-double-prime families and true causal kernel >=1/2^J",
+    "Therefore the total absolute FAR mass is not O(exp(epsilon*T_J)) for any fixed epsilon<1; cancellation of the TRUE opposite-sign source is indispensable",
+    "Given previously independently elementary short-ratio/reduced-close absolute prices, an empty-bank far every-positive-rate upper bound is equivalent to the original pickupCross/endpoint RH-strength criterion on one fixed dyadic grid"
+  ],
+  "source_lean_candidate_theorems": [
+    "farPair_reduced_max_gt",
+    "farPair_gcd_mul_succ_cap_le_max",
+    "every_far_original_pair_has_small_gcd",
+    "selectedFar_all_eq_original",
+    "far_eq_negative_add_other",
+    "farNegativeCross_nonpos",
+    "far_le_other",
+    "emptyBank_highSmooth_of_cut",
+    "terminalHighCollar_empty_of_cuts"
+  ],
+  "explicit_unproved_lean_targets": [
+    "EmptyBankTerminalCutsEventuallyTarget",
+    "FarBothSignsLargePNTTarget",
+    "FarOriginalEveryPositiveRateUpperTarget"
+  ],
+  "decisive_missing_inequality": "For the true original far source, for every epsilon>0 exists C_epsilon>=0 such that for every J>=1 farReducedOrLongCross(emptyPrimeBand,empty,J) <= C_epsilon*exp(epsilon*T_J). NOT PROVED.",
+  "diagnostics": {
+    "pair_support_exhaustive_J1_to_10_unordered_count": 631964,
+    "pair_support_violations": 0,
+    "source_prime_interval_J8_to_13_positive_base_pairs": 3262,
+    "source_prime_interval_J8_to_13_negative_base_pairs": 1726,
+    "causal_gram_lower_bound_failures": 0,
+    "explicit_J8_far_opposite_sign_examples": [
+      {
+        "m": 101,
+        "n": 149,
+        "mobius_product": 1
+      },
+      {
+        "m": 101,
+        "n": 6,
+        "mobius_product": -1
+      }
+    ],
+    "certification": "NONCERTIFYING"
+  },
+  "verification": {
+    "source_publication": "PASS_THREE_EXACT_GIT_BLOB_READBACK",
+    "compilation": "DEFERRED_PER_USER",
+    "parser": "NOT_RUN",
+    "elaboration": "NOT_RUN",
+    "expected_declarations": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom": "NOT_RUN",
+    "native_opaque_unsafe": "NOT_RUN",
+    "independent_classical_PNT_import": "NOT_RUN",
+    "complete_far_every_positive_rate": "OPEN",
+    "RiemannHypothesis": "OPEN",
+    "source_paths_changed": 3
+  },
+  "related_issues": [
+    1556,
+    1429
+  ],
+  "source_publication_commit": "9abb470f8642e9494a2862b8b1ac7ecdfa3c6d7d",
+  "source_publication_parent": "dc2142c188f3507f150a6c956de7078b83e5b033"
+}

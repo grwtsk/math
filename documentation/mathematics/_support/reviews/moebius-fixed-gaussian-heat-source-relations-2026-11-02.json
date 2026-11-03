@@ -1,0 +1,204 @@
+{
+  "schema": "grwtsk.math.fixed-heat-source-relations.v1",
+  "date": "2026-11-02",
+  "repo": "grwtsk/math",
+  "scope": "Directly inspected named source leaves and mathematical reference; no private all-cache read, no exhaustive entire-repo or theorem-acceptance claim",
+  "arithmetic_source": "Actual Mathlib Möbius integer coefficients with original causal pickup and complete signed Gram",
+  "heat_parameter": "s>=1 fixed, distinct from physical u and final T",
+  "sources": [
+    {
+      "id": "originalMobius",
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+      "type": "ACTUAL_SOURCE",
+      "description": "Original mu(n), r_n(u), pickupEnergy, original signed pickupCross"
+    },
+    {
+      "id": "physicalResponse",
+      "path": "GRWTSK/MeasureAndIntegration/FiniteResponseSum.lean",
+      "blob": "15402baec3be3c090a23f9ac1943124e16357dd0",
+      "type": "EXACT_SOURCE",
+      "description": "Causal birth and full original index provenance"
+    },
+    {
+      "id": "heatSource",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianLogHeatSource.lean",
+      "blob": "e7443337b95b8491492acfa120809f6873f77ef1",
+      "type": "EXACT_SOURCE",
+      "description": "Actual log-Gaussian multiplier and source-minus-heat coefficient error"
+    },
+    {
+      "id": "heatStable",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatStabilityReturn.lean",
+      "blob": "6ada761844e06d099811f06fea89db897ca1290e",
+      "type": "EXACT_CONDITIONAL_SOURCE",
+      "description": "Two-way original-vs-heated energy with certified positive radius"
+    },
+    {
+      "id": "priorNearIdentity",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatIntegratedLocalStability.lean",
+      "blob": "8247bb7caa8943da3a587fbe5d0ff832c0605efa",
+      "type": "ACTUAL_SOURCE_CANDIDATE",
+      "description": "Small heat s(T)=exp(-2T) keeps near-identity error but signed observed energy remains RH-strength"
+    },
+    {
+      "id": "newStrong",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianStrongHeatUniformEnergy.lean",
+      "blob": "a3dc512aa819b858e603414be345ad2506e5ada7",
+      "type": "NEW_PROOF_CANDIDATE",
+      "description": "Finite 1/n² telescope, Gaussian exp(1)/n², 2e mass, 16e²T strong heated energy"
+    },
+    {
+      "id": "newEvolution",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatSignedEvolution.lean",
+      "blob": "ee8bf6ec9238386882c79cde1dc7c2c3f685c285",
+      "type": "NEW_PROOF_CANDIDATE",
+      "description": "Full signed semigroup increment and 2*mixed+increment square energy identity"
+    },
+    {
+      "id": "radius",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDecoderPositiveResponse.lean",
+      "blob": "35686a42c743827cad84898acd5e08f9e1fd6c37",
+      "type": "EXACT_CONDITIONAL_SOURCE",
+      "description": "Positive error response radius and square energy; source-index certified"
+    },
+    {
+      "id": "goodScales",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GoodScaleEnergyCriterion.lean",
+      "blob": "ca3ae4975b20cf796a167308a9e87546c6001c41",
+      "type": "EXACT_RH_CONSUMER",
+      "description": "Canonical RH only via original energy on fixed AffineFrequent scale set"
+    },
+    {
+      "id": "strongRadiusBarrier",
+      "path": "documentation/mathematics/_support/reviews/moebius-fixed-gaussian-heat-energy-and-radius-obstruction-2026-11-02.md",
+      "blob": "9ae8403ddbe2f141c3192cdab18479b7ede0c86a",
+      "type": "ORDINARY_MATH_NOT_YET_LEAN",
+      "description": "Classical squarefree shell density yields exponential positive heat-reconstruction radius for s>=1"
+    },
+    {
+      "id": "squarefreeReference",
+      "url": "https://mathworld.wolfram.com/Squarefree.html",
+      "type": "EXTERNAL_CLASSICAL_THEOREM",
+      "description": "Q(x)=6x/pi²+O(sqrt x), standard squarefree density; NOT yet source-verified within pinned Lean"
+    },
+    {
+      "id": "taoContext",
+      "url": "https://github.com/grwtsk/math/issues/170",
+      "type": "SEPARATE_RESEARCH_PROGRAM",
+      "description": "Rodgers–Tao de Bruijn–Newman heat is a different theta/xi deformation, not the current arithmetic log-frequency semigroup"
+    }
+  ],
+  "edges": [
+    {
+      "from": "originalMobius",
+      "to": "heatSource",
+      "status": "SOURCE_FAITHFUL",
+      "summary": "Each integer n and signed mu(n) kept, original physical response unchanged"
+    },
+    {
+      "from": "physicalResponse",
+      "to": "newStrong",
+      "status": "ORIGINAL_CAUSAL_BOUND",
+      "summary": "0<=pickupResponse(n,u)<=2/sqrt(n) on genuine original n>=1"
+    },
+    {
+      "from": "heatSource",
+      "to": "newStrong",
+      "status": "CONCRETE_POSITIVE_HEAT",
+      "summary": "For s>=1, exp(-s log² n)<=e/n², no arithmetic cancellation needed"
+    },
+    {
+      "from": "newStrong",
+      "to": "newEvolution",
+      "status": "ACTUAL_SIGNED_HEAT_ENERGY",
+      "summary": "Fixed-s uniform O(T) heat energy plus exact signed two-time energy balance"
+    },
+    {
+      "from": "heatSource",
+      "to": "newEvolution",
+      "status": "EXACT_SEMIGROUP",
+      "summary": "a_s-a_(s+r)=a_s(1-exp(-r log²n))"
+    },
+    {
+      "from": "newEvolution",
+      "to": "radius",
+      "status": "MISSING_POSITIVE_RECONSTRUCTION",
+      "summary": "Every positive absolute original-index error retained; no sign cancellation in radius"
+    },
+    {
+      "from": "radius",
+      "to": "heatStable",
+      "status": "EXACT_BUT_CONDITIONAL",
+      "summary": "Original H can transfer from heated H only if actual radius energy supplier holds"
+    },
+    {
+      "from": "newStrong",
+      "to": "goodScales",
+      "status": "UNCONDITIONAL_OBSERVED_ONLY",
+      "summary": "Heated energy has all-positive-rate bounds on any fixed G"
+    },
+    {
+      "from": "radius",
+      "to": "goodScales",
+      "status": "RH_STRENGTH_PREMISE",
+      "summary": "Fixed strong heat positive radius all-rate would imply RH; no supplier is proven"
+    },
+    {
+      "from": "squarefreeReference",
+      "to": "strongRadiusBarrier",
+      "status": "CLASSICAL_NOT_KERNEL_CHECKED",
+      "summary": "Squarefree density gives c*expT genuine nonzero |mu| in concrete shell"
+    },
+    {
+      "from": "strongRadiusBarrier",
+      "to": "radius",
+      "status": "EXPONENTIAL_RADIUS_NO_GO",
+      "summary": "For fixed s>=1, radiusEnergy>=4c²log(4)expT at large T; not subexponential"
+    },
+    {
+      "from": "priorNearIdentity",
+      "to": "newStrong",
+      "status": "ALTERNATIVE_HEAT_REGIMES",
+      "summary": "Near-identity error tiny with arithmetic observed energy hard; strong heat observed small with radius huge"
+    },
+    {
+      "from": "taoContext",
+      "to": "heatSource",
+      "status": "ANALOGY_ONLY",
+      "summary": "No actual xi/de Bruijn–Newman intertwiner or zero-flow theorem"
+    },
+    {
+      "from": "newEvolution",
+      "to": "originalMobius",
+      "status": "SIGNED_MIXED_TERM_RETAINED",
+      "summary": "Heat full-Gram energy difference equals 2*M+E, not a monotone positive Dirichlet energy"
+    }
+  ],
+  "proven_in_ordinary_mathematics": [
+    "for all s>=1,n>=1: exp(-s*(log n)^2)<=exp(1)/n²",
+    "for every finite N>=0: sum_(n=1)^N 1/n²<=2",
+    "for s>=1: abs(actual heated signed wave)<=4 exp(1), heatedEnergy(T)<=16 exp(2)*T",
+    "for any real s,r,T: H_s(T)=H_(s+r)(T)+2 signedMixedEnergy(s,r,T)+incrementSquareEnergy(s,r,T)",
+    "for fixed s>=1, classical squarefree density implies positive radiusEnergy grows >=c' exp T for large T; NOT a viable all-rate reconstruction supplier"
+  ],
+  "not_lean_proven": [
+    "Classical squarefree shell lower density and exponential positive radius no-go",
+    "Native compilation/kernel/axiom audit of new source candidates",
+    "Tao/Rodgers xi heat identification",
+    "Any new original Möbius allrate energy bound or RH"
+  ],
+  "toolchain": {
+    "Lean": "leanprover/lean4:v4.34.1",
+    "Mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "numeric": {
+    "checks": 7980,
+    "precision": 48,
+    "script": "/mnt/data/moebius_strong_heat_balance_preflight_20261102.py",
+    "scriptSHA256": "906275150b44b4263282790a302555f8a8f0a0d8b111d1b86f810560eafa7eda",
+    "results": "/mnt/data/moebius_strong_heat_balance_preflight_20261102.json",
+    "resultsSHA256": "c50914a6b276f1675945cb758da7658799dc4816445934fd536ff99e80ff7a12",
+    "not_interval_or_lean": true
+  }
+}

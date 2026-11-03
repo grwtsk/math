@@ -1,0 +1,125 @@
+{
+  "schema": "grwtsk.math.source-verification.v1",
+  "local_attribution": "grwtsk contributors",
+  "date": "2026-11-01",
+  "repository": "grwtsk/math",
+  "branch": "main",
+  "classification": "SOURCE_PROOF_CANDIDATE",
+  "publication": {
+    "expected_parent": "e00cbed960899f120c7a1d541b1205de8cd29e19",
+    "source_commit": "102fd30b1a2a588219f5fb36aee3441f7eeeea08",
+    "supersedes_source_commit": "a2ddb863fdd6ea21a84d57a8b921e0792e2a9255",
+    "expected_target_parent": "102fd30b1a2a588219f5fb36aee3441f7eeeea08"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSmallRatioAllRate.lean",
+    "blob": "4d2a3cdef5cae3643637cac342eeb48d586d9204",
+    "sha256": "f04f51555e5212ce088832b8085dbc60384b1b15f71e60d7da031a9cee1668f6"
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-endpoint-putnam-small-ratio-all-rate-2026-11-01.md",
+    "blob": "a73edaba84cc4750297a12c89a9c895d79290212"
+  },
+  "ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/moebius-endpoint-putnam-small-ratio-all-rate-references.md",
+    "blob": "dbdba5f4c9187bb44156e3b11f09a5fe63ed2a3f"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapYoung.lean",
+      "blob": "6a424d78ae93cc82e35fae3bb3d20a5a3616c7b2",
+      "role": "literal response-Gram Young inequality"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapAllRate.lean",
+      "blob": "2ccedc75331c8ec88956923f896083727d49ec4f",
+      "role": "additive gap all-rate theorem, diagonal transport and rate-cardinality estimate"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointDenseLongGapSource.lean",
+      "blob": "db8771dd770ad097fa4a38cfe87b8e925bb594c0",
+      "role": "predecessor exact dense long-gap source and fixed-scale equivalence"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamEnergyCounting.lean",
+      "blob": "e04dc68d2ca268d88d43725d0963c5414d216c6d",
+      "role": "unchanged endpoint inventory, diagonal estimate and rate gap set"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GoodScaleEnergyCriterion.lean",
+      "blob": "ca3ae4975b20cf796a167308a9e87546c6001c41",
+      "role": "affine-frequent conditional return from the original cross supplier to RH"
+    }
+  ],
+  "principal_declarations": [
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.endpointRelationCross",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.original_symmetric_relation_abs_le",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.smallRatioEdge",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.endpointRatioSetCross",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.ratio_neighbor_card_le",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.original_sparse_ratio_abs_le",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.original_sparse_ratio_quadratic",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.putnam_sparse_ratio_all_rate",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.endpointRatioOutsideGapCross",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.putnam_ratio_outside_gap_all_rate",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.endpointDenseAddMulCoreCross",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.pickupCross_eq_gap_ratio_core",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.denseLongGapSource_eq_ratio_add_core",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.DenseAddMulCoreAllRateOn",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.denseAddMulCoreAllRateOn_iff_crossOn",
+    "GRWTSK.NumberTheory.Moebius.PutnamSparseGapProof.riemannHypothesis_of_dense_add_mul_core_good_scales"
+  ],
+  "mathematical_result": {
+    "generic_relation": "For a symmetric endpoint relation of maximum degree D, the complete signed original packet has absolute value at most D*pickupDiagonal(T).",
+    "ratio_degree": "For a positive ratio set Q, each endpoint index has at most 2*|Q| selected multiplicative neighbours.",
+    "ratio_packet": "|X_Q^times(T)| <= 2*|Q|*pickupDiagonal(T) <= 4*|Q|*T^2.",
+    "all_rate_ratio": "For Q={1,...,floor(exp(epsilon*T/2))}, the complete ratio packet is at most (32/epsilon^2)*exp(epsilon*T) in absolute value.",
+    "disjoint_ratio": "The same bound holds after removing ratio edges already counted in the additive gap sector.",
+    "exact_partition": "pickupCross equals additive gap packet plus disjoint small-ratio packet plus the direct additively-far, no-small-quotient core.",
+    "fixed_scale_equivalence": "All-positive-rate upper control of the direct core on a fixed G is equivalent to SubexponentialOn pickupCross G, with explicit added constant 64/epsilon^2.",
+    "rh_return": "AffineFrequent G plus the unproved direct-core supplier implies the canonical RiemannHypothesis through the existing return."
+  },
+  "nonclaims": [
+    "No all-positive-rate estimate is proved for the remaining direct dense core.",
+    "No random independence, Chowla, RH, uniform prime covariance or elliptic replacement is assumed.",
+    "The generic finite graph lemma is not claimed as a new abstract graph-theory result.",
+    "Source publication does not establish Lean elaboration, kernel acceptance or an axiom audit.",
+    "No complete endpoint estimate, uniform energy theorem or Riemann Hypothesis proof is claimed."
+  ],
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "exact_blob_readback": "DONE",
+    "lexical_scan": "PASS_NO_sorry_admit_axiom_native_decide",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "source_correction": "DONE_CLASSICAL_SCOPE_NAT_DIVISION_AND_SYMMETRY"
+  },
+  "mathematical_status": {
+    "generic_symmetric_degree_bound": "SOURCE_PROOF_CANDIDATE",
+    "multiplicative_ratio_neighbor_count": "SOURCE_PROOF_CANDIDATE",
+    "small_ratio_all_positive_rate": "SOURCE_PROOF_CANDIDATE",
+    "direct_three_sector_partition": "SOURCE_PROOF_CANDIDATE",
+    "dense_add_mul_core_supplier": "UNPROVED",
+    "complete_endpoint_estimate": "UNPROVED",
+    "uniform_energy": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "next_supplier": "Estimate the direct endpoint packet of ordered pairs with additive distance and every integral quotient both larger than exp(epsilon*T/2), while retaining all nondivisibility pairs and the complete signed source before outer absolute values.",
+  "issue_refs": [1548],
+  "rejection_conditions": [
+    "counting additive and multiplicative sectors twice",
+    "replacing the direct dense core by a free residual field",
+    "taking packetwise absolute values across the exponentially dense remaining core",
+    "inferring cancellation from exact prime-delay identities already paid by sparse degree",
+    "promoting source publication or lexical scans to Lean or kernel acceptance",
+    "claiming RH before the core supplier and verified dependency closure are supplied"
+  ]
+}

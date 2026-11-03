@@ -1,0 +1,134 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Original reciprocal-zeta Perron: unconditional explicit half-integer right-line error 40 and genuine fixed zero-free-rate frontier",
+  "repository": "grwtsk/math",
+  "source_date": "2026-11-02",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPerronRightLineExplicit.lean",
+      "blob": "b0566d7c00925f133cda5d53d081d8f79bc61a64",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPerronCompleteFarRateFrontier.lean",
+      "blob": "a031b72571cda3dcb84866a7011bf3f0563bbfcd",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-perron-halfinteger-explicit-far-rate-barrier-2026-11-02.md",
+    "blob": "e6683ff4adee97cd3fbe00085addd657c10a9226"
+  },
+  "original_inputs": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusReciprocalZetaPerronBridge.lean",
+      "blob": "69ae2587f1f6e30adec21b9d7dcf43eeffa2a499"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarCompleteUpperTransfer.lean",
+      "blob": "11b3913a25626bbd4e1a593b50c31e82bac6abee"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFarPrimeBoxForcedCompensation.lean",
+      "blob": "23ea28d68153eff6ebbfbc0269d8249473b98549"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalMertensSquareBridge.lean",
+      "blob": "be156509d9679a22b52b32d087f87d8449a047ef"
+    }
+  ],
+  "upstream_pinned_mathlib": {
+    "repository": "leanprover-community/mathlib4",
+    "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "path": "Mathlib/NumberTheory/LSeries/Dirichlet.lean",
+    "theorems": [
+      "ArithmeticFunction.LSeries_zeta_mul_Lseries_moebius",
+      "ArithmeticFunction.LSeries_zeta_eq_riemannZeta",
+      "ArithmeticFunction.LSeriesSummable_moebius_iff"
+    ],
+    "role": "Original Möbius Dirichlet series equals 1/riemannZeta on Re(s)>1 (absolutely convergent), no RH assumption"
+  },
+  "ordinary_mathematics": {
+    "half_integer_cutoff": "x=N+1/2,N>=1; H=x^2",
+    "scalar_perron_inversion": "Perron indicator 1_(y>1)=1/(2pi)*improper integral y^(2+it)/(2+it) dt for real y>0,y!=1",
+    "oscillatory_tail": "|1_(y>1)-I_H(y)| <= (2/pi)*y^2/(H*abs(log y)), from two integration-by-parts tails",
+    "Mertens_dirichlet": "1/zeta(2+it)=sum_{n>=1}mu(n)/n^(2+it), absolute convergence uniform on finite t intervals",
+    "half_integer_integer_distance": "abs(x-n)>=1/2 for all n positive integer",
+    "weighted_reciprocal_log_budget": "sum_{n>=1}1/(n^2*abs(log(x/n)))<40, proved by n<=x/2 and n>=2x each <4; x/2<n<2x at most 2x terms each <16/x hence <=32",
+    "complete_original_Perron_error": "For every N>=1, abs(finiteMertensPrefix(N)-perronVertical(x,2,x^2))<40; therefore original HalfIntegerMertensTruncatedPerron with K=40",
+    "reciprocal_nonzero_equivalence": "ZetaZeroFreeRightOf theta iff riemannZeta1(s)!=0 for every Re(s)>theta",
+    "fixed_boundary_rate": "For genuine independent zero-free Re(s)>theta0 with 1/2<theta0<1 and explicit quantitative reciprocal segments/calculus+proper packets, whole original far signed rate holds for each fixed r>2theta0-1; uniform all prime-bank families admissible",
+    "no_fixed_boundary_all_rates": "For any fixed theta0>1/2, the admissible Perron/energy rates cannot include r=2theta0-1>0. This is method-specific; does not prove RH impossible.",
+    "decisive_missing": "Actual independent zero-free control approaching Re(s)>1/2 or an unrelated new Möbius-specific cancellation proof; every positive r for the full far remains RH-equivalent and OPEN"
+  },
+  "source_proof_candidates": [
+    "PerronRightLineExplicit.halfIntegerCutoff_distance_ge_half",
+    "PerronRightLineExplicit.halfIntegerCutoff_ne_nat",
+    "PerronRightLineExplicit.halfIntegerMertensTruncatedPerron_of_explicit_facts",
+    "PerronRightLineExplicit.zeroFreeRightOf_iff_regularizedDenominator",
+    "PerronCompleteFarRateFrontier.strict_energy_rate_above_fixed_zeroFree_boundary",
+    "PerronCompleteFarRateFrontier.fixed_boundary_cannot_cover_all_positive_rates",
+    "PerronCompleteFarRateFrontier.exists_intermediate_mertens_exponent",
+    "PerronCompleteFarRateFrontier.whole_original_far_fixed_rate_of_zeroFree_perron"
+  ],
+  "explicit_unproved_pinned_Lean_gate_props": [
+    "OriginalRightLineTermwisePerronBoundTarget (elementary Fourier inversion and absolute finite-integral series interchange; ordinary math completed)",
+    "HalfIntegerReciprocalLogBudgetTarget (elementary infinite-series bound <40; ordinary math completed)",
+    "ZeroFreeReciprocalPerronBounds (quantitative reciprocal vertical/horizontal control in actual zero-free strip; NOT proved)",
+    "PickupVelocityPowerEnergyTransfer (original source calculus; separate source candidate)",
+    "UniformCollarAllRateTarget (elementary original source bound; NOT proved in Lean)",
+    "ShortRatioUniformAllRateTarget (elementary; NOT proved in Lean)",
+    "ReducedCloseUniformAllRateTarget (elementary; NOT proved in Lean)"
+  ],
+  "do_not_promote": [
+    "FarOriginalEveryPositiveRateUpperTarget",
+    "ZetaZeroFreeRightOf (1/2) as unconditional theorem",
+    "_root_.RiemannHypothesis",
+    "PR103 external independent kernel acceptance",
+    "Lean accepted theorem for the two named elementary Perron gates"
+  ],
+  "independent_numeric": {
+    "truncated_absolute_reciprocal_log_series_N1_200000_terms": 3.682439625047662,
+    "N2": 3.1376767563250465,
+    "N10": 1.5819269794110309,
+    "N100": 0.5570217491601112,
+    "N1024": 0.28476205461563175,
+    "N4096": 0.22219902747266548,
+    "classification": "Noncertifying finite preflight. Bound 40 proved mathematically independent of samples."
+  },
+  "references": [
+    "https://math.mit.edu/research/highschool/primes/materials/2019/December/Chen-Tang-PrimeNumberTheorem.pdf",
+    "https://isa-afp.org/entries/Perrons_Formula.html",
+    "https://github.com/leanprover-community/mathlib4/blob/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/NumberTheory/LSeries/Dirichlet.lean",
+    "https://www.claymath.org/problem/unsolved/"
+  ],
+  "verification": {
+    "publication": "PASS_EXACT_FOUR_GIT_BLOB_READBACK",
+    "compiler": "DEFERRED_PER_USER",
+    "parser": "NOT_RUN",
+    "elaboration": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_native_opaque_audit": "NOT_RUN",
+    "original_truncated_Perron_math": "UNCONDITIONAL_ORDINARY_MATH_COMPLETED; LEAN_GATES_UNPROVED",
+    "complete_far_fixed_rate_math": "CONDITIONAL_ON_GENUINE_ZERO_FREE_THETA0_AND_EXPLICIT_RECIPROCAL/PACKET_INPUTS",
+    "complete_far_all_positive_rate": "OPEN",
+    "RiemannHypothesis": "OPEN",
+    "root_import_modified": false,
+    "original_kernel_modified": false,
+    "external_workflow_dispatched": false,
+    "additive_paths": 4,
+    "lean_source_acceptance": "SOURCE_PROOF_CANDIDATE_NOT_COMPILED"
+  },
+  "related_issues": [
+    1556,
+    1429
+  ],
+  "source_publication_commit": "37868dfb60bc632d439b4b9a6cf19222c46f887b",
+  "source_publication_parent": "1469a9c7d844799e601aad842b4fc017b7f42517"
+}

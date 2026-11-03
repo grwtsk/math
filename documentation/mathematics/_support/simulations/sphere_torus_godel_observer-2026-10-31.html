@@ -1,0 +1,1202 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gödel observer × Fourier–sofic torsion top | Interactive geometry</title>
+<style>
+html,body{margin:0;height:100%;background:#070e1c}*{box-sizing:border-box}
+#s4t3-app{font-size:1rem;width:100%;height:100dvh;min-height:420px;display:flex;overflow:hidden;background:#060d19;color:#fff;touch-action:none}
+#s4t3-view{position:relative;flex:1 1 auto;min-width:0;overflow:hidden;background:radial-gradient(ellipse 70% 65% at 49% 52%,#223a57 0%,#12243d 39%,#080f1e 78%,#050a12 100%)}
+#s4t3-view:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.30;background-image:radial-gradient(circle,#7899bf 0.7px,transparent 1px),linear-gradient(90deg,transparent 49.8%,#617d9f23 50%,transparent 50.2%);background-size:36px 36px,100% 100%;mask-image:radial-gradient(ellipse 76% 75% at 49% 49%,#000,transparent)}
+#s4t3-canvas{display:block;position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}
+#s4t3-canvas:active{cursor:grabbing}
+#s4t3-hotspots{position:absolute;inset:0;pointer-events:none;z-index:1}
+#s4t3-hotspots .spot{position:absolute;left:0;top:0;transform:translate(-50%,-50%);width:40px;height:40px;display:grid;place-items:center;pointer-events:none;background:transparent;border:0;color:#d9f6ff;cursor:default;touch-action:none;padding:0;outline-offset:3px}
+#s4t3-hotspots .spot:active{cursor:grabbing}
+#s4t3-hotspots .spot:focus-visible{outline:2px solid #f4e7a6;border-radius:50%}
+#s4t3-hotspots .spot .halo{width:30px;height:30px;border:1px dashed #def8ffad;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#f6dca222 0,#0a1d33aa 64%,transparent 70%);box-shadow:0 0 12px #64dbf870;transition:width .15s,height .15s,border-color .15s}
+#s4t3-hotspots .spot .dot{width:7px;height:7px;border-radius:50%;background:#ecfcff;box-shadow:0 0 11px #7dcfff,0 0 0 3px #133853bb}
+#s4t3-hotspots .spot[data-kind=crank] .halo{border-color:#ffc29e;box-shadow:0 0 14px #f985775e}
+#s4t3-hotspots .spot[data-kind=crank] .dot{background:#ffe6d1}
+#s4t3-hotspots .spot[data-kind=rim] .halo{border-color:#9ee9d6}
+#s4t3-hotspots .spot[data-kind=brake] .halo{border-color:#e8c6ff}
+#s4t3-hotspots .spot:hover .halo,#s4t3-hotspots .spot:focus-visible .halo,#s4t3-hotspots .spot[data-active=true] .halo{width:35px;height:35px;border-style:solid;border-color:white;box-shadow:0 0 20px #9ee5ffab}
+#s4t3-hotspots .spot .tag{position:absolute;white-space:nowrap;top:39px;left:50%;transform:translateX(-50%);font:600 10px/1.4 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#eefbff;text-shadow:0 2px 7px #000e;padding:2px 6px;background:#091625b0;border:1px solid #afcfe22e;border-radius:5px;opacity:.85;transition:opacity .2s}
+#s4t3-hotspots .spot:hover .tag,#s4t3-hotspots .spot:focus-visible .tag{opacity:1}
+#s4t3-hotspots .spot[data-kind=crank] .tag{top:41px}
+#s4t3-hotspots .spot[data-kind=brake] .tag{top:-24px}
+#s4t3-spring-readout{position:absolute;left:17px;bottom:17px;pointer-events:none;color:#bdd9ed;letter-spacing:.09em;font:600 10px/1.4 system-ui,sans-serif;text-shadow:0 1px 6px #000e}
+#s4t3-spring-readout .charge-track{width:85px;height:3px;background:#b1c3d32c;border-radius:4px;overflow:hidden;margin-top:6px}
+#s4t3-spring-readout .charge-fill{width:0;height:100%;background:linear-gradient(90deg,#7ad5f8,#ffd17e,#fc776a);transition:width .1s linear;border-radius:4px}
+#s4t3-guide{position:absolute;right:20px;bottom:17px;color:#afc2d2;font:11px/1.5 system-ui,sans-serif;text-align:right;pointer-events:none;opacity:.84;max-width:45%;text-shadow:0 2px 8px #000c}
+@media(max-width:580px){#s4t3-guide{font-size:10px;max-width:48%}#s4t3-hotspots .spot .tag{font-size:9px}}
+
+#s4t3-rail{font-size:1rem;width:3em;min-width:3em;max-width:3em;flex:0 0 3em;display:flex;flex-direction:column;align-items:center;gap:.28em;padding:.52em .2em;background:linear-gradient(#101d2d,#0a111c);border-left:1px solid #829dbf42;z-index:2}
+#s4t3-rail button,#s4t3-rail a{width:2.45em;height:2.45em;border:1px solid transparent;border-radius:.56em;display:flex;justify-content:center;align-items:center;background:transparent;color:#c3d3e9;text-decoration:none;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+#s4t3-rail button:hover,#s4t3-rail a:hover{background:#2b4057;color:#fff}#s4t3-rail button[aria-pressed=true]{background:#203a55;border-color:#6796c4;color:#fff}
+#s4t3-rail button:focus-visible,#s4t3-rail a:focus-visible{outline:2px solid #a8dbff;outline-offset:2px}
+#s4t3-rail svg{width:1.18em;height:1.18em;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+#s4t3-rail .rail-sep{height:1px;width:1.7em;background:#6d879a53;margin:.22em 0}
+#s4t3-rail .colors{display:flex;flex-direction:column;gap:.26em;align-items:center;margin:.36em auto}
+#s4t3-rail .colors i{display:block;width:.81em;height:.81em;border-radius:50%;border:1px solid #ffffff55;box-shadow:0 0 8px #0006}
+#s4t3-rail .rail-grow{flex:1 1 auto}
+#s4t3-rail .source{font-size:.9em}
+@media (prefers-reduced-motion:reduce){#s4t3-rail *{transition:none!important}}
+
+/* All actionable controls are mounted on the side: 3em rail + attached popover. */
+#s4t3-hotspots .spot{pointer-events:none!important;cursor:default!important}
+#s4t3-hotspots .spot .tag{font-size:9px;letter-spacing:.09em}
+#s4t3-rail{overflow-y:auto;overflow-x:hidden;scrollbar-width:none;overscroll-behavior:contain}
+#s4t3-rail::-webkit-scrollbar{width:0}
+#s4t3-view .s4t3-panel{position:absolute;z-index:6;right:6px;top:12px;max-height:calc(100% - 24px);overflow:auto;width:min(310px,calc(100% - 14px));background:#0d1a2bf5;border:1px solid #809bbc6a;border-radius:13px;box-shadow:0 10px 40px #000a;color:#e8f3ff;font:12px/1.45 system-ui,sans-serif;padding:15px 15px 13px;backdrop-filter:blur(14px);touch-action:pan-y}
+#s4t3-view .s4t3-panel[hidden]{display:none}
+.s4t3-panel h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 6px}
+.s4t3-panel p{margin:0 0 9px;color:#a9bfd8;font-size:11px}
+.s4t3-panel .pair{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:11px 0 3px}
+.s4t3-panel .pair output{font:600 11px ui-monospace,monospace;color:#a7e6fa}
+.s4t3-panel input[type=range]{display:block;width:100%;accent-color:#74cffa;height:18px;cursor:pointer}
+.s4t3-panel input[type=text]{width:100%;border:1px solid #7396ba88;background:#12243c;color:white;border-radius:6px;padding:7px;font:14px ui-monospace,monospace;letter-spacing:.12em}
+.s4t3-panel button{border:1px solid #6b91ae;cursor:pointer;border-radius:6px;background:#1e435d;color:#f4fbff;padding:6px 11px;font-size:12px}
+.s4t3-panel button:hover{background:#2b5b7b}
+.s4t3-panel .panel-row{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:9px 0}
+.s4t3-panel .stat{font:11px ui-monospace,monospace;color:#87d3c7;word-break:break-word}
+.s4t3-panel .stat.warn{color:#ffb1ae}
+.s4t3-panel .spectral-bars{display:grid;grid-template-columns:repeat(7,1fr);align-items:end;height:44px;gap:4px;background:#071321; padding:6px;border-radius:7px;margin:7px 0 10px}
+.s4t3-panel .spectral-bars i{display:block;min-height:2px;height:4px;border-radius:2px 2px 0 0;opacity:.95}
+#s4t3-path-label{position:absolute;left:17px;top:17px;pointer-events:none;font:600 10px/1.5 ui-monospace,monospace;color:#a9c8e1;text-shadow:0 2px 8px #000;letter-spacing:.05em;z-index:1}
+#s4t3-path-label span{color:#7fd3ed}
+@media(max-width:570px){#s4t3-view .s4t3-panel{width:min(276px,calc(100% - 12px));top:8px;right:5px}.s4t3-panel{font-size:11px!important}#s4t3-path-label{font-size:9px}#s4t3-guide{display:none}}
+
+/* The comoving Gödel overlay is a geometric observation, not an NS/Einstein trajectory solver. */
+#s4t3-observer-overlay{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;z-index:1}
+#s4t3-hotspots{z-index:3}
+#s4t3-path-label,#s4t3-spring-readout{z-index:4}
+#s4t3-observer-readout{position:absolute;left:17px;bottom:56px;z-index:4;pointer-events:none;
+  font:600 10px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.045em;
+  color:#9ddceb;text-shadow:0 2px 9px #000e;display:flex;flex-direction:column;
+  background:linear-gradient(90deg,#071625c2,transparent);padding:5px 20px 5px 0}
+#s4t3-observer-readout .metric-val{color:#ecf8ff}
+#s4t3-observer-readout .root{color:#8feec8}
+#s4t3-observer-readout[hidden]{display:none}
+#s4t3-observer-panel{width:min(340px,calc(100% - 14px))}
+#s4t3-observer-panel .tensor-numbers{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:11px 0}
+#s4t3-observer-panel .tensor-cell{padding:9px 9px 7px;border:1px solid #4a78936c;
+ border-radius:9px;background:#0a182a}
+#s4t3-observer-panel .tensor-label{font-size:10px;color:#99b6cf;display:block}
+#s4t3-observer-panel .tensor-value{font:600 15px/1.4 ui-monospace,monospace;color:#d8f5ff;display:block;margin-top:2px}
+#s4t3-observer-panel .tensor-value.root-good{color:#9af3cb}
+#s4t3-observer-panel .tensor-value.warn{color:#ffc6a1}
+#s4t3-observer-panel .equation{font:11px/1.5 ui-monospace,monospace;color:#bce0ef;
+ padding:9px;border-radius:8px;background:#071423;white-space:normal}
+#s4t3-observer-panel .frame-actions{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0}
+#s4t3-observer-panel .frame-actions button{flex:1 1 80px;min-height:30px}
+#s4t3-observer-panel button.selected{border-color:#80e7ce;background:#214e5b}
+#s4t3-observer-panel .transport-result{display:block;border-top:1px solid #4c72875c;
+ margin-top:10px;padding-top:9px;color:#8de4c6;font:11px/1.5 ui-monospace,monospace}
+#s4t3-observer-panel .status-text{font-size:11px;color:#c0d0e2;margin:6px 0 0}
+#s4t3-observer-panel p strong{color:#ecf9ff}
+#s4t3-rail button[data-kind=observer]{background:#13384a;border-color:#427c9c;color:#a9eff0}
+#s4t3-rail button[data-kind=observer][aria-expanded=true]{background:#24506a;color:white;border-color:#9edddc}
+@media(max-width:580px){#s4t3-observer-readout{left:10px;bottom:57px;font-size:9px}#s4t3-observer-panel .tensor-value{font-size:13px}}
+
+/* Cross-family root ports retain separate sources and zero sets. */
+#s4t3-app{touch-action:auto}
+#s4t3-rail{touch-action:pan-y}
+#s4t3-observer-panel details{border-top:1px solid #527b9066;margin-top:12px;padding-top:10px}
+#s4t3-observer-panel summary{cursor:pointer;font-weight:700;letter-spacing:.055em;color:#d5e7ff;font-size:12px;margin-bottom:7px}
+#s4t3-observer-panel details .family-port{border:1px solid #58748f6b;border-radius:8px;background:#0b192a;padding:10px;margin:9px 0}
+#s4t3-observer-panel details .family-port h3{font:700 11px/1.4 system-ui,sans-serif;color:#d0ebf5;margin:0 0 4px}
+#s4t3-observer-panel details .family-port p{font-size:10px;margin:2px 0 8px}
+#s4t3-observer-panel details .family-port .family-status{color:#98e5c3;font:600 11px/1.5 ui-monospace,monospace}
+#s4t3-observer-panel details select{width:100%;padding:7px;border:1px solid #7191ab;background:#14243c;color:#e9f7ff;border-radius:6px}
+#s4t3-observer-panel details .tiny-link{color:#a3deef;font-size:10px}
+</style></head><body>
+<div id="s4t3-app"><div id="s4t3-view"><canvas id="s4t3-canvas" tabindex="0" title="Paused on load. Use the right-hand control rail; drag the model to wind, flick or orbit." aria-label="Spring-driven four-sphere torus top with Gödel observer rest-space rings and vorticity; object markers are passive and all controls are on the right. Drag canvas to orbit or to manipulate a nearby indicated feature."></canvas>
+<canvas id="s4t3-observer-overlay" aria-hidden="true"></canvas>
+<div id="s4t3-hotspots" aria-label="Visual interaction locations; controls are in the right rail">
+<span class="spot" id="s4t3-grab" data-kind="crank" title="Wind or release the torsion spring"><span class="halo"><span class="dot"></span></span><span class="tag">Wind</span></span>
+<span class="spot" id="s4t3-flick" data-kind="rim" title="Flick the canopy along its curve"><span class="halo"><span class="dot"></span></span><span class="tag">Flick</span></span>
+<span class="spot" id="s4t3-brake-spot" data-kind="brake" title="Press and hold to dissipate rotation"><span class="halo"><span class="dot"></span></span><span class="tag">Brake</span></span>
+</div>
+<div id="s4t3-spring-readout" role="meter" aria-label="Stored spring energy" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">TORSION · <span id="s4t3-charge">0%</span><div class="charge-track"><div class="charge-fill" id="s4t3-fill"></div></div></div>
+<div id="s4t3-observer-readout" aria-label="Gödel observer spatial energy and vorticity">
+  <span>GÖDEL FRAME · <span id="s4t3-observer-mini-params" class="metric-val">a=1.20 β=+0.00</span></span>
+  <span>ω² <span id="s4t3-observer-mini-omega" class="metric-val">0.3472</span> · h(v,v) <span id="s4t3-observer-mini-energy" class="metric-val root">0.0000</span> · <span id="s4t3-observer-mini-root" class="root">ROOT</span></span>
+</div>
+<div id="s4t3-path-label" aria-live="polite">DFT · <span id="s4t3-harm-status">WAITING FOR INPUT</span></div>
+<section class="s4t3-panel" id="s4t3-filter-panel" aria-label="Fourier filtration and bounded 3D trajectory" hidden>
+  <h2>Harmonic filtration</h2><p>64-sample discrete Fourier transform of the rotor's angular velocity. Seven residue channels use a cyclic banded SPD solve. All bounds are configurable.</p>
+  <div class="pair"><label for="s4t3-cutoff">Fourier cutoff</label><output id="s4t3-cutoff-v">12</output></div><input id="s4t3-cutoff" type="range" min="1" max="22" step="1" value="12">
+  <div class="pair"><label for="s4t3-band">Residue bandwidth</label><output id="s4t3-band-v">1</output></div><input id="s4t3-band" type="range" min="0" max="2" step="1" value="1">
+  <div class="pair"><label for="s4t3-visc">Spectral viscosity</label><output id="s4t3-visc-v">0.18</output></div><input id="s4t3-visc" type="range" min="0.02" max="1.00" step="0.02" value="0.18">
+  <div class="pair"><label for="s4t3-couple">Neighbor coupling</label><output id="s4t3-couple-v">0.6</output></div><input id="s4t3-couple" type="range" min="0" max="2" step="0.1" value="0.6">
+  <div class="pair"><label for="s4t3-force">Force ceiling</label><output id="s4t3-force-v">1.8</output></div><input id="s4t3-force" type="range" min="0.10" max="4.00" step="0.1" value="1.8">
+  <div class="pair"><label for="s4t3-radius">Spatial radius bound</label><output id="s4t3-radius-v">1.6</output></div><input id="s4t3-radius" type="range" min="0.25" max="3.00" step="0.05" value="1.6">
+  <div class="pair"><label for="s4t3-speed">Speed ceiling</label><output id="s4t3-speed-v">1.25</output></div><input id="s4t3-speed" type="range" min="0.10" max="3.00" step="0.05" value="1.25">
+  <div class="pair"><label for="s4t3-budget">Mode energy bound</label><output id="s4t3-budget-v">2.50</output></div><input id="s4t3-budget" type="range" min="0.10" max="8.00" step="0.10" value="2.50">
+  <div class="spectral-bars" aria-label="Energy by residue class" id="s4t3-spectrum"><i style="background:#ff4859"></i><i style="background:#f79832"></i><i style="background:#ffdc53"></i><i style="background:#27d4c0"></i><i style="background:#438afa"></i><i style="background:#aa69ed"></i><i style="background:#f66ca7"></i></div>
+  <div class="stat" id="s4t3-filter-stat">E = 0 · support = 0 · path bound OK</div>
+</section>
+<section class="s4t3-panel" id="s4t3-word-panel" aria-label="Sofic word path optimization" hidden>
+  <h2>Word-constrained path</h2><p>Even-shift sofic graph: 0 changes parity; 1 is allowed only at even parity. Two residue successors per permitted edge. Viterbi minimizes cost over every start state and every accepted path.</p>
+  <label for="s4t3-word">Binary word (0 / 1)</label><input id="s4t3-word" type="text" maxlength="40" value="1001001" spellcheck="false" autocomplete="off">
+  <div class="panel-row"><button type="button" id="s4t3-apply-word">Optimize word</button><button type="button" id="s4t3-clear-route">Straight</button></div>
+  <div class="pair"><label for="s4t3-curvature">Curvature penalty</label><output id="s4t3-curvature-v">0.70</output></div><input id="s4t3-curvature" type="range" min="0" max="3" step="0.05" value="0.70">
+  <div class="stat" id="s4t3-word-status" role="status">7 residues · awaiting path</div>
+</section>
+<section class="s4t3-panel" id="s4t3-observer-panel" aria-label="Gödel observer geometry, vorticity and exact root transport" hidden>
+ <h2>Gödel · observer geometry</h2>
+ <p>Actual Gödel coordinate metric, <strong>signature −+++</strong>. These tensors observe the toy's sampled trajectory; that trajectory is not claimed to solve Einstein's field equations or be a timelike geodesic.</p>
+ <div class="equation">g/a² = −(dt+eˣdy)² + dx² + ½e²ˣdy² + dz²</div>
+ <div class="pair"><label for="s4t3-godel-scale">Metric scale <i>a</i></label><output id="s4t3-godel-scale-v">1.20</output></div>
+ <input id="s4t3-godel-scale" type="range" min="0.8" max="2.0" step="0.05" value="1.20">
+ <div class="pair"><label for="s4t3-godel-beta">Observer z-boost β</label><output id="s4t3-godel-beta-v">+0.00</output></div>
+ <input id="s4t3-godel-beta" type="range" min="-0.85" max="0.85" step="0.05" value="0.00">
+ <div class="frame-actions">
+  <button type="button" id="s4t3-godel-dust">Dust frame · β=0</button>
+  <button type="button" id="s4t3-godel-probe" aria-pressed="false">Probe: trajectory</button>
+ </div>
+ <div class="tensor-numbers">
+  <div class="tensor-cell"><span class="tensor-label">h(v,v) · spatial</span><output id="s4t3-godel-h" class="tensor-value root-good">0.0000</output></div>
+  <div class="tensor-cell"><span class="tensor-label">½ ωₐᵦωᵃᵇ · vorticity</span><output id="s4t3-godel-omega" class="tensor-value">0.3472</output></div>
+  <div class="tensor-cell"><span class="tensor-label">ωxy · signed component</span><output id="s4t3-godel-omega-xy" class="tensor-value">−0.6000</output></div>
+  <div class="tensor-cell"><span class="tensor-label">Spatial root?</span><output id="s4t3-godel-root" class="tensor-value root-good">YES</output></div>
+ </div>
+ <div class="equation">h = g + u♭⊗u♭ · ω = −γaeˣ/2 · dx∧dy<br>
+ <span style="font-family:system-ui;font-size:10px;color:#87b8d1">The spatial root is the observer time direction. Vorticity remains nonzero there.</span></div>
+ <div class="pair"><label for="s4t3-godel-chart">Chart transport s</label><output id="s4t3-godel-chart-v">+0.00</output></div>
+ <input id="s4t3-godel-chart" type="range" min="-1" max="1" step="0.05" value="0">
+ <div class="frame-actions">
+  <button type="button" id="s4t3-godel-shift-minus" aria-label="Transport chart backward">Transport −</button>
+  <button type="button" id="s4t3-godel-shift-plus" aria-label="Transport chart forward">Transport +</button>
+  <button type="button" id="s4t3-godel-view" aria-pressed="true">Rest-space rings: ON</button>
+ </div>
+ <span id="s4t3-godel-transport" class="transport-result" role="status">Fₛ*g−g = 0 · Fₛ*h−h = 0 · Fₛ*ω−ω = 0</span>
+ <p class="status-text">Fₛ(t,x,y,z)=(t,x+s,e⁻ˢy,z). Exact chart symmetry; no motion or energy is injected. Root and signed transport belong to each typed family separately.</p>
+ <details id="s4t3-family-ports">
+  <summary>Exact source-family roots and transport</summary>
+  <p>Each model has a different <strong>typed root</strong> and its own energy equation. These measurements do not identify Gödel rotation with prime torsion or the spring.</p>
+  <div class="family-port">
+   <h3>Mechanical torsion spring</h3>
+   <p>Root: θc − θr/g = 0. Energy: ½k(θc − θr/g)². Gear-aligned phase transport preserves both kinetic and spring energy without adding work.</p>
+   <div class="family-status" id="s4t3-spring-port-state">spring root · potential = 0</div>
+   <div class="frame-actions"><button type="button" id="s4t3-spring-transport">Apply aligned +0.40 rad</button></div>
+   <div class="family-status" id="s4t3-spring-port-check">ΔE = 0 (exact transport)</div>
+  </div>
+  <div class="family-port">
+   <h3>Prime-dependent finite phase</h3>
+   <p>Prime p selects the <i>ZMod p</i> phase type. Root: residue z = 0. Energy: 1.25·1[z≠0]. The <i>flic</i> operation z↦−z preserves this auxiliary energy, not a Möbius/RH bound.</p>
+   <label for="s4t3-prime-p">Prime-indexed phase group</label>
+   <select id="s4t3-prime-p"><option value="2">p = 2</option><option value="3">p = 3</option><option value="5">p = 5</option><option value="7" selected>p = 7</option><option value="11">p = 11</option></select>
+   <div class="pair"><label for="s4t3-prime-residue">Phase z</label><output id="s4t3-prime-residue-v">1</output></div>
+   <input id="s4t3-prime-residue" type="range" min="0" max="6" step="1" value="1">
+   <div class="family-status" id="s4t3-prime-port-state">off root · E=1.25</div>
+   <div class="frame-actions">
+    <button type="button" id="s4t3-prime-flic">flic · reflect phase</button>
+    <button type="button" id="s4t3-prime-root">Set phase root</button>
+   </div>
+   <div class="family-status" id="s4t3-prime-port-check">z=1; full arithmetic source unmodified</div>
+  </div>
+  <p>These typed ports share a <strong>root / energy / signed transport</strong> interface, not a universal physical torsion law. Lean builds and axiom audits remain NOT_RUN.</p>
+  <a class="tiny-link" href="https://github.com/grwtsk/math/blob/b6a3abd6adfdcaaa3898e56c5498146b153b9cf6/GRWTSK/FunctionalAnalysis/ExactRootAndTransportContract.lean" target="_blank" rel="noopener">Source-level exact transport contract</a>
+ </details>
+ <p style="margin-top:8px">Source: <a href="https://github.com/grwtsk/math/blob/b6a3abd6adfdcaaa3898e56c5498146b153b9cf6/GRWTSK/DifferentialGeometry/GodelObserverMetricVorticity.lean" target="_blank" rel="noopener" style="color:#a3e3ed">Gödel observer tensors</a> · <a href="https://github.com/grwtsk/math/issues/1543" target="_blank" rel="noopener" style="color:#a3e3ed">Lean verification NOT_RUN</a></p>
+</section>
+<div id="s4t3-guide">WIND · FLICK · BRAKE VIA RIGHT RAIL</div></div>
+<aside id="s4t3-rail" aria-label="Simulation controls, width three browser-default em">
+<button id="s4t3-play" aria-label="Resume or pause the spring dynamics" aria-pressed="false" title="Resume / pause physics"><svg viewBox="0 0 24 24" id="s4t3-play-icon"><path d="M8 5l11 7-11 7z" fill="currentColor" stroke="none"/></svg></button>
+<button id="s4t3-wind" aria-label="Hold to apply winding torque; Shift reverses" aria-pressed="false" title="Hold to apply winding torque (Shift reverses); drag red knob to wind directly"><svg viewBox="0 0 24 24"><path d="M12 3c-5 0-8 3-8 7s4 6 8 6 7-2 7-5c0-2-2-4-5-4-2 0-4 2-4 4s2 3 3 3"/><path d="m10 19 3 2 3-2"/></svg></button>
+<button id="s4t3-flickbtn" aria-label="Flick the colorful rim with a natural impulse" title="Flick top along tangent"><svg viewBox="0 0 24 24"><path d="M3 17c3-7 8-11 16-11M15 3l4 3-3 4M6 19c3 1 6 1 10 0"/></svg></button>
+<button id="s4t3-pathbtn" aria-label="Show or hide three-dimensional trajectory" aria-pressed="true" title="3D spectral path"><svg viewBox="0 0 24 24"><path d="M2 18C7 5 13 23 21 6M18 6h3v3"/><circle cx="4" cy="17" r="2"/></svg></button>
+<button id="s4t3-filterbtn" aria-label="Open spectral bounding and filtration interface" aria-expanded="false" aria-controls="s4t3-filter-panel" title="Spectral filter and bounds"><svg viewBox="0 0 24 24"><path d="M3 4h18l-7 8v7l-4 2v-9z"/></svg></button>
+<button id="s4t3-observerbtn" data-kind="observer" aria-label="Open Gödel observer metric and vorticity controls" aria-expanded="false" aria-controls="s4t3-observer-panel" title="Gödel observer / metric / vorticity"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16"/><path d="M7 16c3-6 7-6 10 0"/></svg></button>
+<button id="s4t3-wordbtn" aria-label="Open sofic word optimization interface" aria-expanded="false" aria-controls="s4t3-word-panel" title="Sofic word and optimal path"><svg viewBox="0 0 24 24"><path d="M3 7h5l4 5 4-5h5M3 17h5l4-5 4 5h5"/><circle cx="3" cy="7" r="1"/></svg></button>
+<button id="s4t3-flow" aria-label="Toggle ABC streamlines" aria-pressed="true" title="ABC-flow streamlines"><svg viewBox="0 0 24 24"><path d="M2 9c6-8 8 8 14 0s6 1 6 1M2 16c5-6 8 6 13 0s6-1 7-1"/></svg></button>
+<button id="s4t3-torus" aria-label="Toggle torus projection" aria-pressed="true" title="Three-circle projection"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="9" ry="4"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M5 6c3-2 11-2 14 0"/></svg></button>
+<button id="s4t3-orbit" aria-label="Toggle camera orbit" aria-pressed="false" title="Camera orbit / drag view"><svg viewBox="0 0 24 24"><path d="M5 16a9 9 0 1 1 10 4"/><path d="m3 13 2 4 4-2"/><circle cx="12" cy="11" r="2"/></svg></button>
+<button id="s4t3-brake" aria-label="Hold to brake the spinning top" aria-pressed="false" title="Hold to brake"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M10 8v8M14 8v8"/></svg></button>
+<button id="s4t3-reset" aria-label="Reset simulation" aria-pressed="false" title="Reset bounded dynamics"><svg viewBox="0 0 24 24"><path d="M3 11a9 9 0 1 1 3 7M3 4v7h7"/></svg></button>
+<div class="rail-sep"></div><div class="rail-grow"></div>
+<a class="source" aria-label="Lean source on GitHub" title="Published Gödel observer metric and vorticity source (GitHub)" href="https://github.com/grwtsk/math/blob/b6a3abd6adfdcaaa3898e56c5498146b153b9cf6/GRWTSK/DifferentialGeometry/GodelObserverMetricVorticity.lean" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M8 4 3 12l5 8M16 4l5 8-5 8M14 3l-4 18"/></svg></a>
+<a class="source" aria-label="Verification issue, checks not run" title="Gödel geometry verification issue #1543 — Lean checks NOT_RUN" href="https://github.com/grwtsk/math/issues/1543" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 3 2 21h20L12 3z"/><path d="M12 9v5M12 18h.01"/></svg></a>
+</aside></div>
+<script>
+(function(){'use strict';
+const root=document.getElementById('s4t3-app'), view=document.getElementById('s4t3-view'),canvas=document.getElementById('s4t3-canvas');
+if(!root||root.dataset.running)return;root.dataset.running='1';
+const palette=[[1,.282,.349],[.97,.596,.196],[1,.862,.326],[.153,.831,.753],[.263,.541,.98],[.667,.412,.929],[.965,.424,.655]];
+const TAU=Math.PI*2,nu=.055,NMOD=7;
+// Source-bound exact-real crank update: omega'=(omega+kappa*h*u)/(1+kappa*h)
+// with |u|<=OMEGA_MAX and kappa,h>=0; angle'=angle+h*omega'.
+// The cloth uses orthogonal mode-pair rotations; the crank enters their phase,
+// never their amplitude. Corresponding Lean candidate: CorkscrewDrapeDrive.lean.
+// Passive two-inertia spring: the hand can add work; free evolution dissipates it.
+// x=theta_crank-theta_rotor/gear, Es=k*x^2/2, Ek=(Ic*wc^2+Ir*wr^2)/2.
+// Backward Euler satisfies E_next-E <= h*tau*wc_next; at tau=0, E cannot grow.
+const GEAR_RATIO=1.7,INV_GEAR=1/GEAR_RATIO;
+const SPRING_K=8.5,I_CRANK=.14,I_ROTOR=.80;
+const FRICTION_CRANK=.32,FRICTION_ROTOR=.15,BRAKE_FRICTION=8.0;
+const HAND_TORQUE=2.7,MAX_SPEED=15,MAX_TWIST=TAU*2.25;
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+let time=0,spin=.42,crankAngle=.42*INV_GEAR,crankRate=0,rotorRate=0,yaw=.57,pitch=.24,zoom=5.4;
+let playing=false,showFlow=true,showTorus=true,orbit=false,dragging=false,oldPointer=null;
+let crankDragging=false,rimDragging=false,brakeHeld=false,brakePulse=0;
+let crankAnglePointer=0,rimAnglePointer=0,crankTarget=0,rimTarget=0,manualAt=0;
+let lastInteractionSpeed=0,keyboardDirection=0,windHeld=false,windDirection=1,holdStartedAt=0;
+let touched=false,pointerMoved=false,pointerKind='',pointerOwner=null;
+let modes=[],initialEnergy=0,positiveHandWork=0,energyViolations=0;
+let sway=0,swayRate=0,activeMotion=0;
+function normEnergy(){let s=0;for(let m of modes)s+=m[0]*m[0]+m[1]*m[1];return s}
+function springTwist(){return crankAngle-INV_GEAR*spin}
+function springPotential(){const d=springTwist();return .5*SPRING_K*d*d}
+function mechanicalEnergy(){return .5*(I_CRANK*crankRate*crankRate+I_ROTOR*rotorRate*rotorRate)+springPotential()}
+function reset(){
+ time=0;spin=.42;crankAngle=spin*INV_GEAR;crankRate=0;rotorRate=0;sway=0;swayRate=0;activeMotion=0;
+ windHeld=false;crankDragging=false;rimDragging=false;brakeHeld=false;brakePulse=0;keyboardDirection=0;
+ positiveHandWork=0;energyViolations=0;touched=false;modes=[];
+ for(let k=0;k<NMOD;k++){const a=.33/(1+k*.22);modes.push([a*Math.cos(.8*k),a*Math.sin(.8*k)])}
+ initialEnergy=normEnergy();
+}
+reset();
+function wrap(a){return ((a+Math.PI)%TAU+TAU)%TAU-Math.PI}
+function norm(v){const l=Math.hypot(v[0],v[1],v[2]);return l>1e-10?v.map(x=>x/l):[1,0,0]}
+function cross(a,b){return [a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]]}
+function sub(a,b){return a.map((x,i)=>x-b[i])}
+function dot(a,b){return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]}
+function lookAt(eye,center,up){let z=norm(sub(eye,center)),x=norm(cross(up,z)),y=cross(z,x);return new Float32Array([x[0],y[0],z[0],0,x[1],y[1],z[1],0,x[2],y[2],z[2],0,-dot(x,eye),-dot(y,eye),-dot(z,eye),1])}
+function perspective(fovy,aspect,n,f){let c=1/Math.tan(fovy/2);return new Float32Array([c/aspect,0,0,0,0,c,0,0,0,0,(f+n)/(n-f),-1,0,0,2*f*n/(n-f),0])}
+const playBtn=document.getElementById('s4t3-play');
+function updatePlayButton(){playBtn.setAttribute('aria-pressed',String(playing));document.getElementById('s4t3-play-icon').innerHTML=playing?
+ '<rect x="7" y="5" width="3" height="14" rx="1" fill="currentColor" stroke="none"/><rect x="14" y="5" width="3" height="14" rx="1" fill="currentColor" stroke="none"/>':
+ '<path d="M8 5l11 7-11 7z" fill="currentColor" stroke="none"/>'}
+function wake(){playing=true;touched=true;updatePlayButton()}
+function dampedSway(h,deltaRate){
+ // A visually small torsional fabric response; this is not identified as an NS Galerkin mode.
+ const k=15,c=6,force=clamp(deltaRate*0.85,-3,3);
+ const v=(swayRate+h*(force-k*sway))/(1+c*h+k*h*h);
+ sway+=h*v;swayRate=v;
+ if(!Number.isFinite(sway)||!Number.isFinite(swayRate)){sway=0;swayRate=0}
+ sway=clamp(sway,-.45,.45);
+}
+function stepDynamics(h){
+ if(!playing||!(h>0))return;
+ const manual=crankDragging||rimDragging;
+ const brake=brakeHeld||brakePulse>0;
+ const d0=springTwist(),E0=mechanicalEnergy(),oldRotor=rotorRate;
+ const commanded=keyboardDirection!==0?keyboardDirection:windHeld?windDirection:0;
+ const torque=clamp(commanded,-1,1)*HAND_TORQUE;
+ const Cc=FRICTION_CRANK,Cr=FRICTION_ROTOR+(brake?BRAKE_FRICTION:0);
+ if(crankDragging){
+  // Finger imposes one end of the spring; the other end integrates implicitly.
+  const nextAngle=clamp(crankTarget,spin*INV_GEAR-MAX_TWIST,spin*INV_GEAR+MAX_TWIST);
+  crankRate=clamp((nextAngle-crankAngle)/h,-MAX_SPEED,MAX_SPEED);crankAngle=nextAngle;
+  const B=I_ROTOR+h*Cr;
+  rotorRate=(I_ROTOR*rotorRate+h*SPRING_K*INV_GEAR*(crankAngle-INV_GEAR*spin))/(B+h*h*SPRING_K*INV_GEAR*INV_GEAR);
+  spin+=h*rotorRate;
+ }else if(rimDragging){
+  // Flicking the rim does external work on the rotor; the crank follows on a spring.
+  const nextAngle=clamp(rimTarget,crankAngle/INV_GEAR-MAX_TWIST/INV_GEAR,crankAngle/INV_GEAR+MAX_TWIST/INV_GEAR);
+  rotorRate=clamp((nextAngle-spin)/h,-MAX_SPEED,MAX_SPEED);spin=nextAngle;
+  const A=I_CRANK+h*Cc;
+  crankRate=(I_CRANK*crankRate-h*SPRING_K*(crankAngle-INV_GEAR*spin))/(A+h*h*SPRING_K);
+  crankAngle+=h*crankRate;
+ }else{
+  // Solve the fully implicit two-inertia torsion-spring step algebraically.
+  const A=I_CRANK+h*Cc,B=I_ROTOR+h*Cr;
+  const pc=I_CRANK*crankRate+h*torque,pr=I_ROTOR*rotorRate;
+  const d=(d0+h*(pc/A-INV_GEAR*pr/B))/(1+h*h*SPRING_K*(1/A+INV_GEAR*INV_GEAR/B));
+  const nextC=(pc-h*SPRING_K*d)/A,nextR=(pr+h*SPRING_K*INV_GEAR*d)/B;
+  if(!Number.isFinite(nextC+nextR+d)){
+    crankRate=0;rotorRate=0;crankAngle=spin*INV_GEAR;return;
+  }
+  crankRate=nextC;rotorRate=nextR;
+  crankAngle+=h*crankRate;spin+=h*rotorRate;
+  const E1=mechanicalEnergy();
+  const work=h*torque*crankRate;
+  positiveHandWork+=Math.max(0,work);
+  // Numerical assertion for the exact implicit energy inequality, with tolerance.
+  if(E1>E0+work+1e-7*(1+E0)){energyViolations++}
+ }
+ if(brakePulse>0)brakePulse=Math.max(0,brakePulse-h);
+ const E1=mechanicalEnergy();
+ if(!Number.isFinite(E1)||E1>1e8){crankRate=0;rotorRate=0;crankAngle=spin*INV_GEAR;return}
+ const amplitude=Math.min(1,Math.abs(rotorRate)*.18+Math.abs(crankRate)*.065+Math.abs(d0)*.17);
+ activeMotion=amplitude;
+ if(amplitude>1e-5){
+   time+=h;
+   const old=modes.map(m=>m.slice()),E=normEnergy(),q=1/(1+nu*h);
+   for(let i=0;i<NMOD;i++){
+     const [a,b]=old[i],neighbor=old[(i+1)%NMOD];
+     const theta=h*(.24*rotorRate+.29*crankRate+.33*neighbor[0]+.24*a*b+.12*Math.sin(time*.7+i));
+     const c=Math.cos(theta),s=Math.sin(theta);
+     modes[i][0]=q*(c*a-s*b);modes[i][1]=q*(s*a+c*b)
+   }
+   const Enew=normEnergy(),cap=Math.min(E,initialEnergy);
+   if(!Number.isFinite(Enew)){modes=old.map(()=>[0,0])}
+   else if(Enew>cap&&Enew>0){const ratio=Math.sqrt(cap/Enew);for(let m of modes){m[0]*=ratio;m[1]*=ratio}}
+   dampedSway(h,rotorRate-oldRotor);
+ }else{
+   dampedSway(h,0);
+   if(E1<1e-8&&!manual&&!commanded){crankRate=0;rotorRate=0;crankAngle=spin*INV_GEAR}
+ }
+ captureSpectrum(rotorRate);
+ advanceHarmonics(h);
+ advanceTranslation(h);
+}
+
+
+// ---------------- FINITE FOURIER / SOFIC / FILTRATION PORT ----------------
+// The finite DFT is of 64 actual, fixed-step numerical rotor-speed samples:
+// W_k=(1/N) sum_{j=0}^{N-1} omega_j exp(-2*pi*i*k*j/N), 0<=k<=22.
+// Residue map k -> k mod 7 controls seven colored harmonic channels.
+// The seven-channel matrix (I+h*D+h*kappa*L_band) is symmetric positive
+// definite: L_band is the cyclic graph Laplacian with edges d7(r,s)<=band.
+// This is a RESIDUE-BANDED FILTER of the observed torsion response, not the
+// untruncated Navier-Stokes quadratic Fourier convolution. Out-of-band
+// contributions and their residual are kept as distinct, measurable quantities.
+const WINDOW=64,MAX_HARM=WINDOW/2;
+const DIRS=Array.from({length:7},(_,r)=>{
+ const a=TAU*r/7,z=.36*Math.sin(TAU*(2*r+1)/7);
+ return norm([Math.cos(a),z,Math.sin(a)]);
+});
+const bounds={cutoff:12,band:1,viscosity:.18,coupling:.6,force:1.8,radius:1.6,speed:1.25,budget:2.5,curvature:.7};
+let history=new Float64Array(WINDOW),histIndex=0,sampleCount=0,historyTicks=0;
+let fourier=Array.from({length:MAX_HARM+1},()=>[0,0]);
+let bins=Array.from({length:7},()=>[0,0]);
+let harmonic=Array.from({length:7},()=>[0,0]);
+let spectrumDiscard=0,filterResidual=0,filterViolations=0,boundaryInterventions=0;
+let worldPos=[0,0,0],worldVel=[0,0,0],trail=[[0,0,0]],trailColors=[0],showPath=true;
+let route=[],routeResidues=[0],routeProgress=0,routeCost=0,routeWord='1001001',routeAccepted=true;
+const spectralEnergy=()=>harmonic.reduce((v,z)=>v+z[0]*z[0]+z[1]*z[1],0);
+const length3=v=>Math.hypot(v[0],v[1],v[2]);
+const scaled=(v,c)=>v.map(x=>x*c);
+const plus=(a,b)=>a.map((v,i)=>v+b[i]);
+function resetSpectrum(){
+ history.fill(0);histIndex=0;sampleCount=0;historyTicks=0;
+ fourier.forEach(z=>{z[0]=0;z[1]=0});
+ bins.forEach(z=>{z[0]=0;z[1]=0});
+ harmonic.forEach(z=>{z[0]=0;z[1]=0});
+ worldPos=[0,0,0];worldVel=[0,0,0];trail=[[0,0,0]];trailColors=[0];
+ routeProgress=0;filterResidual=0;spectrumDiscard=0;filterViolations=0;boundaryInterventions=0;
+}
+function captureSpectrum(velocity){
+ history[histIndex]=Number.isFinite(velocity)?clamp(velocity,-MAX_SPEED,MAX_SPEED):0;
+ histIndex=(histIndex+1)%WINDOW;sampleCount++;historyTicks++;
+ if(historyTicks%4!==0)return;
+ for(let k=0;k<=MAX_HARM;k++){
+  let re=0,im=0;
+  for(let j=0;j<WINDOW;j++){
+   const phase=TAU*k*j/WINDOW,v=history[(histIndex+j)%WINDOW];
+   re+=v*Math.cos(phase);im-=v*Math.sin(phase);
+  }
+  fourier[k][0]=re/WINDOW;fourier[k][1]=im/WINDOW;
+ }
+ let discarded=0;
+ bins.forEach(z=>{z[0]=0;z[1]=0});
+ for(let k=0;k<=MAX_HARM;k++){
+  const [re,im]=fourier[k];
+  if(k<=bounds.cutoff){bins[k%7][0]+=re;bins[k%7][1]+=im}
+  else discarded+=(k===0||k===WINDOW/2?1:2)*(re*re+im*im);
+ }
+ spectrumDiscard=discarded;
+}
+const circleDist=(a,b)=>Math.min((a-b+7)%7,(b-a+7)%7);
+// SPD Cholesky, separate real/imag RHS. There is no dense *coupling* outside
+// the declared cyclic band; dense 7x7 storage is only a tiny implementation.
+function solveBanded(rhs,h){
+ const A=Array.from({length:7},()=>Array(7).fill(0));
+ for(let i=0;i<7;i++){
+  A[i][i]=1+h*(.12+bounds.viscosity*(1+(i+1)*(i+1)/16));
+  for(let j=0;j<7;j++)if(i!==j&&circleDist(i,j)<=bounds.band){
+   A[i][i]+=h*bounds.coupling;A[i][j]=-h*bounds.coupling;
+  }
+ }
+ const L=Array.from({length:7},()=>Array(7).fill(0));
+ for(let i=0;i<7;i++)for(let j=0;j<=i;j++){
+  let s=A[i][j];for(let k=0;k<j;k++)s-=L[i][k]*L[j][k];
+  if(i===j)L[i][j]=Math.sqrt(Math.max(1e-10,s));
+  else L[i][j]=s/L[j][j];
+ }
+ const out=Array.from({length:7},()=>[0,0]);
+ for(let component=0;component<2;component++){
+  let y=Array(7).fill(0),x=Array(7).fill(0);
+  for(let i=0;i<7;i++){
+   let s=rhs[i][component];for(let j=0;j<i;j++)s-=L[i][j]*y[j];
+   y[i]=s/L[i][i];
+  }
+  for(let i=6;i>=0;i--){
+   let s=y[i];for(let j=i+1;j<7;j++)s-=L[j][i]*x[j];
+   x[i]=s/L[i][i];out[i][component]=x[i];
+  }
+ }
+ return out;
+}
+function advanceHarmonics(h){
+ const input=Array.from({length:7},(_,r)=>{
+  const [a,b]=harmonic[r],phi=h*(.25*(r+1)+.055*rotorRate);
+  const c=Math.cos(phi),s=Math.sin(phi);
+  return [a*c-b*s+h*.28*bins[r][0],a*s+b*c+h*.28*bins[r][1]];
+ });
+ const solved=solveBanded(input,h);
+ if(solved.some(z=>!Number.isFinite(z[0]+z[1]))){
+  filterViolations++;harmonic.forEach(z=>z.fill(0));return;
+ }
+ let e=0;for(let i=0;i<7;i++)e+=solved[i][0]**2+solved[i][1]**2;
+ let factor=e>bounds.budget?Math.sqrt(bounds.budget/e):1;
+ filterResidual+=factor<1?Math.max(0,e-bounds.budget):0;
+ for(let i=0;i<7;i++){harmonic[i][0]=solved[i][0]*factor;harmonic[i][1]=solved[i][1]*factor}
+}
+// Fixed finite labeled graph: even-shift parity x Z/7Z residue; 14 states.
+// On 0, parity toggles; on 1, parity must be even. Each admitted letter
+// has two residue successors. Thus '101' is forbidden, while '1001' is
+// possible. The graph defines the ENTIRE language, not just one observed trace.
+function wordEdges(state,letter){
+ const parity=Math.floor(state/7),r=state%7;
+ if(letter==='1'&&parity===1)return [];
+ const np=letter==='0'?1-parity:0;
+ const increments=letter==='0'?[1,2]:[2,5];
+ return increments.map(inc=>np*7+(r+inc)%7);
+}
+function routeEdgeCost(s,t,letter){
+ const a=DIRS[s%7],b=DIRS[t%7],rd=circleDist(s%7,t%7);
+ const spectral=Math.hypot(...harmonic[t%7]);
+ const curvature=1-dot(a,b);
+ return 0.12+bounds.curvature*curvature+0.12*rd*rd+
+   0.16/(.20+spectral)+.13*(rd>bounds.band+1?1:0)+(letter==='1'?.08:0);
+}
+function optimizeWord(word){
+ const input=String(word).trim().replace(/\s+/g,'');
+ if(!/^[01]{1,40}$/.test(input))return {ok:false,reason:'Enter 1–40 symbols, using only 0 and 1.'};
+ let costs=Array(14).fill(0),parents=[]; // all 14 start states: complete graph language
+ for(const letter of input){
+  const next=Array(14).fill(Infinity),back=Array(14).fill(-1);
+  for(let s=0;s<14;s++)if(Number.isFinite(costs[s])){
+   for(const t of wordEdges(s,letter)){
+    const v=costs[s]+routeEdgeCost(s,t,letter);
+    if(v<next[t]-1e-12){next[t]=v;back[t]=s}
+   }
+  }
+  if(!next.some(Number.isFinite))return {ok:false,reason:`Word rejected: '${input}' contains an odd 0-gap between 1s.`};
+  parents.push(back);costs=next;
+ }
+ let final=0;for(let s=1;s<14;s++)if(costs[s]<costs[final])final=s;
+ let state=final,path=[final];
+ for(let j=input.length-1;j>=0;j--){state=parents[j][state];path.push(state)}
+ path.reverse();
+ return {ok:true,cost:costs[final],word:input,states:path,residues:path.map(x=>x%7)};
+}
+function commitWord(word){
+ const r=optimizeWord(word),el=document.getElementById('s4t3-word-status');
+ if(!r.ok){el.textContent=r.reason;el.classList.add('warn');return false}
+ route=r.states;routeResidues=r.residues;routeProgress=0;routeCost=r.cost;routeWord=r.word;routeAccepted=true;
+ el.classList.remove('warn');el.textContent=`ACCEPTED · 14 states · ${r.states.length-1} edges · cost ${r.cost.toFixed(3)} · ${r.residues.join('→')}`;
+ return true;
+}
+function smoothDir(progress){
+ let i=Math.min(routeResidues.length-1,Math.floor(progress)),u=clamp(progress-i,0,1);
+ function get(j){return DIRS[routeResidues[clamp(j,0,routeResidues.length-1)]]}
+ const P0=get(i-1),P1=get(i),P2=get(i+1),P3=get(i+2);
+ // C1 cubic Hermite / Catmull–Rom interpolation, then normalization.
+ const v=[0,1,2].map(j=>.5*((2*P1[j])+(-P0[j]+P2[j])*u+
+   (2*P0[j]-5*P1[j]+4*P2[j]-P3[j])*u*u+
+   (-P0[j]+3*P1[j]-3*P2[j]+P3[j])*u*u*u));
+ return norm(v);
+}
+function activeFourierVector(){
+ const u=(historyTicks%WINDOW)/WINDOW,out=[0,0,0];
+ for(let k=0;k<=bounds.cutoff;k++){
+  const [a,b]=fourier[k],phase=TAU*k*u;
+  const coefficient=(a*Math.cos(phase)-b*Math.sin(phase))*(k===0?1:2);
+  const r=k%7,mag=Math.hypot(...harmonic[r]);
+  const gain=clamp(.28+mag,0,1.3)/(1+.08*k*k);
+  for(let j=0;j<3;j++)out[j]+=coefficient*gain*DIRS[r][j];
+ }
+ const m=length3(out);return m>2?scaled(out,2/m):out;
+}
+function advanceTranslation(h){
+ const motor=Math.min(2.2,Math.abs(rotorRate)*.28+Math.sqrt(spectralEnergy())*.7);
+ if(motor>1e-5)routeProgress=Math.min(routeResidues.length-1,routeProgress+h*motor*.6);
+ const dir=smoothDir(routeProgress),fv=activeFourierVector();
+ let field=[0,0,0];
+ if(showFlow){
+  const th=[worldPos[0]+spin,worldPos[1]+.3*time,worldPos[2]+crankAngle];
+  field=abc(th).map(x=>Math.exp(-nu*Math.min(65,time))*x);
+ }
+ let force=[0,1,2].map(j=>motor*(.76*dir[j]+.40*fv[j]+.075*field[j]));
+ const magnitude=length3(force);
+ if(magnitude>bounds.force)force=scaled(force,bounds.force/magnitude);
+ // Implicit Euler for m*v' = m*v +h*(F -gamma*v' - k*x'), x'=x+h*v'.
+ const mass=1,drag=1.12,tether=.43,den=mass+h*drag+h*h*tether;
+ const nextV=[0,1,2].map(j=>(mass*worldVel[j]+h*(force[j]-tether*worldPos[j]))/den);
+ let speed=length3(nextV);
+ if(speed>bounds.speed){boundaryInterventions++;const s=bounds.speed/speed;for(let j=0;j<3;j++)nextV[j]*=s}
+ let nextX=[0,1,2].map(j=>worldPos[j]+h*nextV[j]);
+ const radius=length3(nextX);
+ if(radius>bounds.radius){
+  boundaryInterventions++;const n=scaled(nextX,1/radius);
+  nextX=scaled(n,bounds.radius);
+  const outward=dot(nextV,n);
+  if(outward>0)for(let j=0;j<3;j++)nextV[j]-=outward*n[j];
+ }
+ if(nextX.concat(nextV).every(Number.isFinite)){
+  worldPos=nextX;worldVel=nextV;
+  if(sampleCount%4===0&&length3(sub(worldPos,trail[trail.length-1]))>.002){
+   trail.push(worldPos.slice());trailColors.push(routeResidues[Math.min(routeResidues.length-1,Math.floor(routeProgress))]);if(trail.length>440){trail.shift();trailColors.shift()}
+  }
+ }else{filterViolations++;worldPos=[0,0,0];worldVel=[0,0,0]}
+}
+
+
+// ================= GÖDEL OBSERVER: INDEPENDENT SOURCE-EXACT TENSORS =================
+// These coordinate formulas match GodelObserverMetricVorticity.lean. Observer
+// projection is a readout of the already existing trajectory, not a new force.
+// In particular the toy path is NOT claimed to satisfy Einstein's equations.
+const godel={a:1.20,beta:0,chartShift:0,probeMode:'trajectory',visible:true};
+const familyState={prime:7,residue:1,primeKappa:1.25,springDeltaEnergy:0,primeDeltaEnergy:0};
+const observerOverlay=document.getElementById('s4t3-observer-overlay');
+const observerCtx=observerOverlay.getContext('2d');
+function godelGamma(){return 1/Math.sqrt(1-godel.beta*godel.beta)}
+function godelPhysicalX(){return .32*worldPos[0]}
+function transformObserverVector(v,s){return {t:v.t,x:v.x,y:Math.exp(-s)*v.y,z:v.z}}
+function observerProbe(){
+ // Mathematical *sample* of the 3D toy path, with t as affine display time.
+ // The observer-aligned probe belongs to the chosen spatial metric's root.
+ if(godel.probeMode==='root'){
+  const gamma=godelGamma(),a=godel.a;
+  return {t:gamma/a,x:0,y:0,z:gamma*godel.beta/a};
+ }
+ return {t:1,x:.32*worldVel[0],y:.30*worldVel[2],z:.30*worldVel[1]};
+}
+function godelTheta(x,v){return v.t+Math.exp(x)*v.y}
+function godelLorentz(x,v,w){
+ const a2=godel.a*godel.a,E=Math.exp(x);
+ return a2*(-godelTheta(x,v)*godelTheta(x,w)+v.x*w.x+.5*E*E*v.y*w.y+v.z*w.z);
+}
+function godelOneform(x,v){return godelGamma()*godel.a*(-godelTheta(x,v)+godel.beta*v.z)}
+function godelSpatial(x,v,w){return godelLorentz(x,v,w)+godelOneform(x,v)*godelOneform(x,w)}
+function godelSpatialSquare(x,v){
+ const E=Math.exp(x),gamma=godelGamma(),a=godel.a;
+ return a*a*(v.x*v.x+.5*E*E*v.y*v.y+
+   gamma*gamma*(v.z-godel.beta*(v.t+E*v.y))**2);
+}
+function godelVorticity(x,v,w){
+ return -.5*godelGamma()*godel.a*Math.exp(x)*(v.x*w.y-v.y*w.x)
+}
+function godelOmegaXY(x){return -.5*godelGamma()*godel.a*Math.exp(x)}
+function godelOmega2(){return godelGamma()**2/(2*godel.a*godel.a)}
+function godelRoot(x,v){
+ return Math.abs(v.x)<1e-9&&Math.abs(v.y)<1e-9&&
+   Math.abs(v.z-godel.beta*v.t)<1e-9;
+}
+function godelDiagnostics(){
+ const x=godelPhysicalX(),s=godel.chartShift,xc=x+s;
+ const v=observerProbe(),w={t:.38,x:.73,y:-.19,z:.31};
+ const vt=transformObserverVector(v,s),wt=transformObserverVector(w,s);
+ const hBase=godelSpatial(x,v,v),hChanged=godelSpatial(xc,vt,vt);
+ const gBase=godelLorentz(x,v,w),gChanged=godelLorentz(xc,vt,wt);
+ const omegaBase=godelVorticity(x,v,w),omegaChanged=godelVorticity(xc,vt,wt);
+ const hFrame=godelSpatialSquare(xc,vt);
+ const root=godelRoot(xc,vt);
+ const gamma=godelGamma(),omega2=godelOmega2();
+ return {
+  a:godel.a,beta:godel.beta,gamma,shift:s,xPhysical:x,xChart:xc,
+  probeMode:godel.probeMode,visible:godel.visible,playing,
+  metricNorm:godelLorentz(x,v,v),spatialEnergy:hChanged,spatialSquare:hFrame,
+  restRoot:root,restDirections:[vt.x,Math.exp(xc)*vt.y,vt.z-godel.beta*(vt.t+Math.exp(xc)*vt.y)],
+  vorticityXY:godelOmegaXY(xc),vorticityNormSquare:omega2,
+  unitTimelike:godelLorentz(x,{t:gamma/godel.a,x:0,y:0,z:gamma*godel.beta/godel.a},
+    {t:gamma/godel.a,x:0,y:0,z:gamma*godel.beta/godel.a}),
+  transportedGError:gChanged-gBase,transportedHError:hChanged-hBase,
+  transportedOmegaError:omegaChanged-omegaBase,
+  previewSpectrumEnergy:spectralEnergy(),springPotential:springPotential(),
+  originalGramUntouched:true
+ };
+}
+const godelFormat=(num,digits=4)=>Math.abs(num)<5e-11?'0.'+'0'.repeat(digits):num.toFixed(digits);
+function syncGodelControls(){
+ const pairs=[['s4t3-godel-scale',godel.a],['s4t3-godel-beta',godel.beta],
+              ['s4t3-godel-chart',godel.chartShift]];
+ for(const [id,v] of pairs)document.getElementById(id).value=String(v);
+ document.getElementById('s4t3-godel-scale-v').textContent=godel.a.toFixed(2);
+ document.getElementById('s4t3-godel-beta-v').textContent=(godel.beta>=0?'+':'')+godel.beta.toFixed(2);
+ document.getElementById('s4t3-godel-chart-v').textContent=(godel.chartShift>=0?'+':'')+godel.chartShift.toFixed(2);
+ const rootBtn=document.getElementById('s4t3-godel-probe');
+ rootBtn.textContent=godel.probeMode==='root'?'Probe: observer root':'Probe: trajectory';
+ rootBtn.setAttribute('aria-pressed',String(godel.probeMode==='root'));
+ document.getElementById('s4t3-godel-view').textContent=godel.visible?'Rest-space rings: ON':'Rest-space rings: OFF';
+ document.getElementById('s4t3-godel-view').setAttribute('aria-pressed',String(godel.visible));
+ document.getElementById('s4t3-observer-readout').hidden=!godel.visible;
+}
+function updateGodelUI(){
+ updateFamilyPorts();
+ const st=godelDiagnostics();
+ const e=document.getElementById('s4t3-godel-h'),om=document.getElementById('s4t3-godel-omega');
+ e.textContent=godelFormat(st.spatialEnergy);e.classList.toggle('root-good',st.restRoot);
+ om.textContent=godelFormat(st.vorticityNormSquare);
+ document.getElementById('s4t3-godel-omega-xy').textContent=godelFormat(st.vorticityXY);
+ const rootIndicator=document.getElementById('s4t3-godel-root');
+ rootIndicator.textContent=st.restRoot?'YES':'NO';rootIndicator.classList.toggle('root-good',st.restRoot);
+ rootIndicator.classList.toggle('warn',!st.restRoot);
+ const err=Math.max(Math.abs(st.transportedGError),Math.abs(st.transportedHError),Math.abs(st.transportedOmegaError));
+ const status=document.getElementById('s4t3-godel-transport');
+ status.textContent=`Fₛ*g−g=${godelFormat(st.transportedGError,7)} · Fₛ*h−h=${godelFormat(st.transportedHError,7)} · Fₛ*ω−ω=${godelFormat(st.transportedOmegaError,7)}${err<1e-9?' ✓':' !'}`;
+ status.style.color=err<1e-9?'#8de4c6':'#ffb1ae';
+ document.getElementById('s4t3-observer-mini-params').textContent=
+   `a=${st.a.toFixed(2)}  β=${st.beta>=0?'+':''}${st.beta.toFixed(2)}`;
+ document.getElementById('s4t3-observer-mini-omega').textContent=godelFormat(st.vorticityNormSquare);
+ const miniE=document.getElementById('s4t3-observer-mini-energy');
+ miniE.textContent=godelFormat(st.spatialEnergy);miniE.classList.toggle('root',st.restRoot);
+ const miniR=document.getElementById('s4t3-observer-mini-root');
+ miniR.textContent=st.restRoot?'SPATIAL ROOT':'OFF ROOT';miniR.classList.toggle('root',st.restRoot);
+}
+function drawObserverOverlay(){
+ if(!observerCtx)return;
+ const dpr=Math.min(2,window.devicePixelRatio||1);
+ const w=view.clientWidth,h=view.clientHeight;
+ const pw=Math.max(1,Math.round(w*dpr)),ph=Math.max(1,Math.round(h*dpr));
+ if(observerOverlay.width!==pw||observerOverlay.height!==ph){observerOverlay.width=pw;observerOverlay.height=ph}
+ const ctx=observerCtx;ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
+ if(!godel.visible)return;
+ const a=godel.a,beta=godel.beta,gamma=godelGamma();
+ const x=godelPhysicalX(),expX=Math.exp(x);
+ // Unit spatial indicatrix in observer-rest directions. For rest vectors
+ // vt=beta*vz-exp(x)*vy, h(v,v)=a²(vx²+exp(2x)vy²/2+vz²/gamma²).
+ // Coordinate spatial axes -> display axes: (x_G, z_G, y_G) -> (X,Y,Z).
+ const visual=.83;
+ const radii=[visual/a,visual*gamma/a,visual*Math.SQRT2/(a*expX)];
+ const center=[worldPos[0],worldPos[1]+.16,worldPos[2]];
+ function projection(v){
+  if(!pr){
+   const scale=Math.min(w*.36,h*.33);
+   return [w*.5+(v[0]+v[2]*.28)*scale*.46,
+           h*.49-(v[1]-.15*v[2])*scale*.46];
+  }
+  const eye=[zoom*Math.sin(yaw)*Math.cos(pitch),zoom*Math.sin(pitch)+.45,zoom*Math.cos(yaw)*Math.cos(pitch)];
+  const z=norm(sub(eye,[0,.34,0])),xx=norm(cross([0,1,0],z)),yy=cross(z,xx);
+  const delta=sub(v,eye),depth=-dot(delta,z);
+  if(depth<.1)return [NaN,NaN];
+  const f=1/Math.tan(Math.PI/6.7),aspect=w/Math.max(h,1);
+  return [(1+f*dot(delta,xx)/(aspect*depth))*.5*w,
+          (1-f*dot(delta,yy)/depth)*.5*h];
+ }
+ // 3 orthogonal rest-space great circles; the display uses the coordinate
+ // ellipsoid, not an exact embedded slice of a Gödel spacetime manifold.
+ const arcs=[
+  {axis:[0,1],color:'rgba(142,229,220,.36)',width:1.4},
+  {axis:[0,2],color:'rgba(255,205,139,.42)',width:1.55},
+  {axis:[1,2],color:'rgba(120,180,246,.31)',width:1.25}];
+ ctx.save();ctx.lineJoin='round';ctx.lineCap='round';
+ for(const arc of arcs){
+  ctx.beginPath();let first=true,last=null;
+  for(let j=0;j<=110;j++){
+   const ang=TAU*j/110,v=center.slice();
+   v[arc.axis[0]]+=Math.cos(ang)*radii[arc.axis[0]];
+   v[arc.axis[1]]+=Math.sin(ang)*radii[arc.axis[1]];
+   const p=projection(v);
+   if(!p.every(Number.isFinite))continue;
+   if(first){ctx.moveTo(...p);first=false}else ctx.lineTo(...p);
+   last=p;
+  }
+  ctx.strokeStyle=arc.color;ctx.lineWidth=arc.width;ctx.shadowColor=arc.color;ctx.shadowBlur=7;ctx.stroke();ctx.shadowBlur=0;
+ }
+ // A source sign indicator for the negative omega_xy two-form. Vorticity is
+ // nonzero even at the observer-spatial root; the ring stays visible paused.
+ const phase=-Math.PI/3;
+ for(const ang of [phase,phase+Math.PI]){
+  const r=.76;
+  const pp=(t)=>projection([center[0]+r*radii[0]*Math.cos(t),center[1],center[2]+r*radii[2]*Math.sin(t)]);
+  const p=pp(ang),q=pp(ang-.12),d=[p[0]-q[0],p[1]-q[1]],L=Math.hypot(...d);
+  if(!p.every(Number.isFinite)||L<.001)continue;
+  const dx=d[0]/L,dy=d[1]/L;
+  ctx.fillStyle='rgba(255,199,144,.82)';ctx.beginPath();ctx.moveTo(p[0]+dx*6,p[1]+dy*6);
+  ctx.lineTo(p[0]-dx*6-dy*3.3,p[1]-dy*6+dx*3.3);
+  ctx.lineTo(p[0]-dx*6+dy*3.3,p[1]-dy*6-dx*3.3);ctx.closePath();ctx.fill();
+ }
+ // Local rest-space axes, deliberately smaller than the metric unit ellipsoid.
+ const axisColors=['rgba(157,236,234,.72)','rgba(133,191,255,.75)','rgba(255,197,147,.74)'];
+ for(let k=0;k<3;k++){
+  let end=center.slice();end[k]+=.36*radii[k];
+  const p=projection(center),q=projection(end);
+  if(!p.every(Number.isFinite)||!q.every(Number.isFinite))continue;
+  ctx.beginPath();ctx.moveTo(...p);ctx.lineTo(...q);ctx.strokeStyle=axisColors[k];ctx.lineWidth=1.7;ctx.stroke();
+ }
+ ctx.restore();
+}
+function familyPortDiagnostics(){
+ const P=springPotential(),E=mechanicalEnergy(),rootSpring=Math.abs(springTwist())<1e-10;
+ const Eprime=familyState.residue===0?0:familyState.primeKappa;
+ return {springTwist:springTwist(),springPotential:P,mechanicalEnergy:E,springRoot:rootSpring,
+   prime:familyState.prime,residue:familyState.residue,
+   primeRoot:familyState.residue===0,primeEnergy:Eprime,
+   springTransportDeltaEnergy:familyState.springDeltaEnergy,
+   primeTransportDeltaEnergy:familyState.primeDeltaEnergy,
+   independentOriginalSignedGram:true};
+}
+function updateFamilyPorts(){
+ const d=familyPortDiagnostics();
+ document.getElementById('s4t3-spring-port-state').textContent=
+   `${d.springRoot?'ROOT':'OFF ROOT'} · twist=${godelFormat(d.springTwist)} · Eₛ=${godelFormat(d.springPotential)} · Eₘ=${godelFormat(d.mechanicalEnergy)}`;
+ document.getElementById('s4t3-spring-port-check').textContent=`aligned shift ΔEₘ=${godelFormat(d.springTransportDeltaEnergy,8)}`;
+ document.getElementById('s4t3-prime-port-state').textContent=
+   `ZMod ${d.prime} · ${d.primeRoot?'ROOT':'OFF ROOT'} · E=${d.primeEnergy.toFixed(2)}`;
+ document.getElementById('s4t3-prime-port-check').textContent=
+   `flic energy ΔE=${godelFormat(d.primeTransportDeltaEnergy,8)} · integer source unchanged`;
+ document.getElementById('s4t3-prime-residue-v').textContent=String(d.residue);
+}
+function resetGodel(){
+ godel.a=1.20;godel.beta=0;godel.chartShift=0;godel.probeMode='trajectory';godel.visible=true;
+ familyState.prime=7;familyState.residue=1;familyState.springDeltaEnergy=0;familyState.primeDeltaEnergy=0;
+ document.getElementById('s4t3-prime-p').value=String(familyState.prime);
+ const primeSlider=document.getElementById('s4t3-prime-residue');primeSlider.max='6';primeSlider.value='1';
+ syncGodelControls();updateGodelUI();
+}
+
+resetSpectrum();commitWord(routeWord);
+const gl=canvas.getContext('webgl',{alpha:true,antialias:true,depth:true,premultipliedAlpha:false,powerPreference:'high-performance'});
+let fallbackCtx=null;
+function resize(){let dpr=Math.min(2,window.devicePixelRatio||1),w=Math.max(1,Math.round(view.clientWidth*dpr)),h=Math.max(1,Math.round(view.clientHeight*dpr));if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h}if(gl)gl.viewport(0,0,w,h)}
+let ro;if(typeof ResizeObserver!=='undefined'){ro=new ResizeObserver(resize);ro.observe(view)}else window.addEventListener('resize',resize);resize();
+const shadeVS=`attribute vec3 aPos; attribute vec3 aNormal; attribute vec2 aUv; attribute float aClass; attribute float aKind;
+uniform mat4 uProj,uView;uniform vec3 uMove;uniform float uTime,uSpin,uCrank,uCrankRate,uSpring,uSway,uNu,uFlowOn;uniform vec2 uModes[7];
+varying vec3 vNormal,vPoint;varying vec2 vUv;varying float vClass,vKind;
+void main(){vec3 p=aPos;vec3 n=aNormal;
+if(aKind<0.5){
+ float r=aUv.x, a=aUv.y;
+ float alpha=0.30+0.95*r,beta=a+0.25*cos(3.0*r+0.31*uTime+0.25*uCrank),gamma=0.35+2.0*r+0.22*sin(2.0*a);
+ float s0=cos(alpha)*cos(beta),s1=cos(alpha)*sin(beta),s2=sin(alpha)*cos(gamma);
+ vec3 theta=6.28318530718*vec3(s0,s1,s2)+(uCrank/7.0)*vec3(1.0,2.0,3.0);
+ vec3 abc=exp(-uNu*uTime)*vec3(sin(theta.z)+cos(theta.y),sin(theta.x)+cos(theta.z),sin(theta.y)+cos(theta.x));
+ float wave=0.0;
+ for(int k=0;k<7;k++){float h=float(k+1)*a+2.3*r;wave+=0.12*(uModes[k].x*cos(h)+uModes[k].y*sin(h));}
+ p.y+=pow(r,1.8)*(0.28*wave+uFlowOn*0.039*abc.z)+0.019*r*r*sin(7.0*a-0.38*uTime);
+ p.y+=r*r*(.048*uSway*sin(7.0*a-.8*uSpin)+.026*uSpring*sin(4.0*a-1.2*uCrank));
+ p.x+=r*r*.017*uSway*cos(a+uSpin);p.z+=r*r*.017*uSway*sin(a+uSpin);
+ p.x+=uFlowOn*0.016*r*r*abc.x;p.z+=uFlowOn*0.016*r*r*abc.y;
+}
+if(aKind<4.9 || aKind>5.5){
+ float angle=aKind<4.9?uSpin:uCrank;
+ float c=cos(angle),s=sin(angle),ox=p.x,oz=p.z;p.x=c*ox-s*oz;p.z=s*ox+c*oz;
+ float nx=n.x,nz=n.z;n.x=c*nx-s*nz;n.z=s*nx+c*nz;
+ // The whole toy is leaning while the crank pivots about its own vertical axle.
+ float ct=.976,st=.217,px=p.x,py=p.y;p.x=ct*px-st*py;p.y=st*px+ct*py;
+ float nn=n.x;n.x=ct*nn-st*n.y;n.y=st*nn+ct*n.y;
+}
+if(aKind<4.9 || aKind>5.5) p+=uMove;
+vPoint=p;vNormal=n;vUv=aUv;vClass=aClass;vKind=aKind;gl_Position=uProj*uView*vec4(p,1.0);}`;
+const shadeFS=`precision mediump float;varying vec3 vNormal,vPoint;varying vec2 vUv;varying float vClass,vKind;
+vec3 pal(float c){if(c<.5)return vec3(1.0,.282,.349);if(c<1.5)return vec3(.97,.596,.196);if(c<2.5)return vec3(1.0,.862,.326);if(c<3.5)return vec3(.153,.831,.753);if(c<4.5)return vec3(.263,.541,.98);if(c<5.5)return vec3(.667,.412,.929);return vec3(.965,.424,.655);}
+void main(){vec3 n=normalize(vNormal);vec3 light=normalize(vec3(.52,.95,1.05));float diffuse=.64+.35*max(dot(n,light),0.0),spec=pow(max(dot(reflect(-light,n),normalize(vec3(.2,.5,1.0))),0.0),24.0);
+vec3 base=pal(vClass);float a=1.0;
+if(vKind>.5&&vKind<1.5)base=vec3(.94,.25,.33);
+else if(vKind>1.5&&vKind<2.5)base=vec3(.58,.72,.79);
+else if(vKind>2.5&&vKind<3.5)base=vec3(.14,.36,.77);
+else if(vKind>3.5&&vKind<4.5)base=vec3(1.0,.76,.32);
+else if(vKind>4.5&&vKind<5.5){base=vec3(.24,.73,.96);a=.35;diffuse=.95;spec=.15;}
+else if(vKind>5.5&&vKind<6.5){base=vec3(.66,.77,.85);spec*=1.8;}
+else if(vKind>6.5&&vKind<7.5){base=vec3(.99,.25,.35);spec*=1.8;}
+else if(vKind>7.5&&vKind<8.5){base=vec3(.89,.94,1.0);spec*=1.9;}
+else if(vKind>8.5){base=vec3(.98,.74,.29);spec*=1.7;}
+if(vKind<.5){float stitch=pow(abs(sin(vUv.x*31.4159)),22.0);base=mix(base,base*.79,stitch*.22);base*=.95+.05*cos(vUv.y*8.0+vUv.x*21.0);}
+vec3 col=base*diffuse+vec3(1.0,.91,.82)*spec*.37;
+if(vKind>4.5&&vKind<5.5)col=base*1.18;
+gl_FragColor=vec4(col,a);}`;
+const lineVS=`attribute vec3 aPos;attribute vec3 aColor;uniform mat4 uProj,uView;varying vec3 vColor;void main(){vColor=aColor;gl_Position=uProj*uView*vec4(aPos,1.0);}`;
+const lineFS=`precision mediump float;varying vec3 vColor;void main(){gl_FragColor=vec4(vColor,.64);}`;
+function compile(s,type){let sh=gl.createShader(type);gl.shaderSource(sh,s);gl.compileShader(sh);if(!gl.getShaderParameter(sh,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(sh));return sh}
+function program(v,f){let p=gl.createProgram();gl.attachShader(p,compile(v,gl.VERTEX_SHADER));gl.attachShader(p,compile(f,gl.FRAGMENT_SHADER));gl.linkProgram(p);if(!gl.getProgramParameter(p,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(p));return p}
+let pr=null,lp=null,solidMesh=null,torusMesh=null,lineBuffer=null;
+function basePoint(r,a){let edge=1-.025*Math.pow(Math.sin(7*a),2)*Math.pow(r,6),R=1.46*r*edge,y=1.11-1.02*Math.sqrt(r)-.235*r-.025*r*r+Math.pow(r,5)*.036*Math.cos(7*a);return [R*Math.cos(a),y,R*Math.sin(a)]}
+function baseNormal(r,a){return norm([.70*Math.cos(a),.94,.70*Math.sin(a)])}
+function pushVertex(out,p,n,uv,cls,kind){out.push(p[0],p[1],p[2],n[0],n[1],n[2],uv[0],uv[1],cls,kind)}
+function tri(out,A,B,C,cls,kind){pushVertex(out,A.p,A.n,A.uv,cls,kind);pushVertex(out,B.p,B.n,B.uv,cls,kind);pushVertex(out,C.p,C.n,C.uv,cls,kind)}
+function pv(p,n=[0,1,0],uv=[0,0]){return {p,n,uv}}
+function lineTube(out,A,B,r,kind,cls){let axis=sub(B,A),d=Math.hypot(...axis);if(d<1e-8)return;let dir=axis.map(x=>x/d),side=norm(cross(dir,Math.abs(dir[1])>.92?[1,0,0]:[0,1,0])),second=norm(cross(dir,side)),N=7;
+function point(v,j){const a=TAU*j/N,c=Math.cos(a),s=Math.sin(a),n=[side[0]*c+second[0]*s,side[1]*c+second[1]*s,side[2]*c+second[2]*s];return pv([v[0]+r*n[0],v[1]+r*n[1],v[2]+r*n[2]],n)}
+for(let j=0;j<N;j++){let a=point(A,j),b=point(B,j),c=point(B,j+1),d=point(A,j+1);tri(out,a,b,c,cls,kind);tri(out,a,c,d,cls,kind)}}
+function tubing(out,pts,r,kind,cls){for(let i=0;i<pts.length-1;i++)lineTube(out,pts[i],pts[i+1],r,kind,cls)}
+function cylinder(out,lo,hi,rlo,rhi,kind,cls){let N=36;for(let j=0;j<N;j++){let a=TAU*j/N,b=TAU*(j+1)/N;let n0=[Math.cos(a),0,Math.sin(a)],n1=[Math.cos(b),0,Math.sin(b)];let A=pv([lo[0]+rlo*Math.cos(a),lo[1],lo[2]+rlo*Math.sin(a)],n0),B=pv([hi[0]+rhi*Math.cos(a),hi[1],hi[2]+rhi*Math.sin(a)],n0),C=pv([hi[0]+rhi*Math.cos(b),hi[1],hi[2]+rhi*Math.sin(b)],n1),D=pv([lo[0]+rlo*Math.cos(b),lo[1],lo[2]+rlo*Math.sin(b)],n1);tri(out,A,B,C,cls,kind);tri(out,A,C,D,cls,kind)}}
+function buildGeometry(){let solid=[],torus=[],SEG=168,RAD=30;
+for(let j=0;j<SEG;j++){let a=TAU*j/SEG,b=TAU*(j+1)/SEG;for(let k=0;k<RAD;k++){let r=k/RAD,s=(k+1)/RAD,cls=(Math.floor(j/12)+Math.floor(k/3))%7;
+let A=pv(basePoint(r,a),baseNormal(r,a),[r,a]),B=pv(basePoint(s,a),baseNormal(s,a),[s,a]),C=pv(basePoint(s,b),baseNormal(s,b),[s,b]),D=pv(basePoint(r,b),baseNormal(r,b),[r,b]);tri(solid,A,B,C,cls,0);tri(solid,A,C,D,cls,0)}}
+for(let [r,w,k] of [[1,.027,1],[.82,.008,4],[.53,.012,4],[.24,.013,4]]){let pts=[];for(let j=0;j<=SEG;j++)pts.push(basePoint(r,TAU*j/SEG));tubing(solid,pts,w,k,0)}
+for(let j=0;j<7;j++){let a=TAU*j/7,pts=[];for(let k=0;k<=38;k++)pts.push(basePoint(k/38,a));tubing(solid,pts,.008,4,j)}
+cylinder(solid,[0,.99,0],[0,1.33,0],.175,.154,3,4);
+cylinder(solid,[0,1.26,0],[0,1.43,0],.14,.10,4,2);
+cylinder(solid,[0,1.41,0],[0,1.67,0],.047,.046,2,1);
+// Stationary bearing sleeve over the toy drive, crank shaft freely turns in it.
+cylinder(solid,[0,1.64,0],[0,1.76,0],.079,.078,3,4);
+cylinder(solid,[0,1.73,0],[0,1.84,0],.050,.050,6,0);
+cylinder(solid,[0,1.83,0],[0,1.89,0],.088,.072,9,0);
+// Swept, offset crank arm and a visible five-turn corkscrew wrapped on the arm.
+const armA=[0,1.87,0],armB=[-.74,2.08,.12];
+tubing(solid,[armA,armB],.022,6,0);
+let d=norm(sub(armB,armA)),e=norm(cross(d,[0,1,0])),f=norm(cross(d,e)),coil=[];
+for(let j=0;j<=180;j++){
+ const s=j/180,a=TAU*5*s,center=armA.map((v,i)=>v+(armB[i]-v)*s);
+ const radius=.047;
+ coil.push(center.map((v,i)=>v+radius*(e[i]*Math.cos(a)+f[i]*Math.sin(a))));
+}
+tubing(solid,coil,.013,8,0);
+// Bright graspable knob and flat end cap on the moving crank arm.
+cylinder(solid,[-.74,2.07,.12],[-.74,2.30,.12],.104,.095,7,0);
+cylinder(solid,[-.74,2.28,.12],[-.74,2.34,.12],.097,.050,7,0);
+
+cylinder(solid,[0,-.15,0],[0,-.45,0],.23,.20,1,0);cylinder(solid,[0,-.45,0],[0,-.78,0],.20,.008,1,0);cylinder(solid,[0,-.78,0],[0,-.84,0],.017,.007,2,0);
+for(let j=0;j<7;j++){let a=TAU*j/7;let pp=[];for(let s=0;s<=6;s++){let r=.075+s*.026;pp.push(basePoint(r,a))}tubing(solid,pp,.014,4,j)}
+for(let k=0;k<3;k++){let pts=[];for(let j=0;j<=190;j++){let a=TAU*j/190,ca=Math.cos(a),sa=Math.sin(a);if(k===0)pts.push([1.68*ca,-.35+.075*Math.sin(3*a),1.68*sa]);else if(k===1)pts.push([1.78*ca,.23+1.15*sa,.13+.16*ca]);else pts.push([-.19+.14*sa,.20+1.10*ca,1.78*sa])}tubing(torus,pts,.011,5,k+3)}
+return {solid,torus}}
+function makeMesh(data){const b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(data),gl.STATIC_DRAW);return {buffer:b,count:data.length/10}}
+function attrib(p,locname,size,offset){let l=gl.getAttribLocation(p,locname);if(l<0)return;gl.enableVertexAttribArray(l);gl.vertexAttribPointer(l,size,gl.FLOAT,false,40,offset)}
+function drawMesh(mesh,p){gl.bindBuffer(gl.ARRAY_BUFFER,mesh.buffer);attrib(p,'aPos',3,0);attrib(p,'aNormal',3,12);attrib(p,'aUv',2,24);attrib(p,'aClass',1,32);attrib(p,'aKind',1,36);gl.drawArrays(gl.TRIANGLES,0,mesh.count)}
+function abc(theta){return [Math.sin(theta[2])+Math.cos(theta[1]),Math.sin(theta[0])+Math.cos(theta[2]),Math.sin(theta[1])+Math.cos(theta[0])]}
+function torusPoint(th){let R=1.58+.20*Math.cos(th[1]);return [R*Math.cos(th[0])+.115*Math.cos(th[2]),-.21+.27*Math.sin(th[1])+.15*Math.cos(th[2]),R*Math.sin(th[0])+.115*Math.sin(th[2])]}
+function streamVertices(){let batches=[],output=[];let amp=Math.exp(-nu*time);for(let k=0;k<7;k++){let theta=[.42+k*TAU/7,1.5+1.7*k,2.1+k*.85],start=output.length/6;
+for(let j=0;j<78;j++){let p=torusPoint(theta),c=palette[k];output.push(...p,...c);let U=abc(theta),h=.06*amp;let mid=theta.map((x,i)=>x+.5*h*U[i]),V=abc(mid);theta=theta.map((x,i)=>wrap(x+h*V[i]))}batches.push({start,count:78})}
+return {data:new Float32Array(output),batches}}
+if(gl){try{pr=program(shadeVS,shadeFS);lp=program(lineVS,lineFS);const geom=buildGeometry();solidMesh=makeMesh(geom.solid);torusMesh=makeMesh(geom.torus);lineBuffer=gl.createBuffer();gl.enable(gl.DEPTH_TEST);gl.depthFunc(gl.LEQUAL);gl.disable(gl.CULL_FACE);gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA)}catch(e){console.error('WebGL shader fallback',e);pr=null}}
+function fallback(){
+ if(!fallbackCtx){canvas.width=view.clientWidth;canvas.height=view.clientHeight;fallbackCtx=canvas.getContext('2d');if(!fallbackCtx)return}
+ const ctx=fallbackCtx,w=canvas.width,h=canvas.height;ctx.clearRect(0,0,w,h);const scale=Math.min(w*.36,h*.33),cx=w*.50+worldPos[0]*scale*.46,cy=h*.49-worldPos[1]*scale*.46,r=scale;
+ if(showPath&&trail.length>1){
+  for(let i=1;i<trail.length;i++){
+   const p=trail[i],q=trail[i-1];
+   const x=w*.5+(p[0]+p[2]*.28)*scale*.46,y=h*.49-(p[1]-.15*p[2])*scale*.46;
+   const x0=w*.5+(q[0]+q[2]*.28)*scale*.46,y0=h*.49-(q[1]-.15*q[2])*scale*.46;
+   const rgb=palette[trailColors[i]%7].map(v=>Math.round(v*255));
+   ctx.beginPath();ctx.moveTo(x0,y0);ctx.lineTo(x,y);ctx.lineWidth=2.4;ctx.strokeStyle=`rgba(${rgb.join(',')},.9)`;ctx.stroke();
+  }
+ }
+ ctx.save();ctx.translate(cx,cy);ctx.rotate(-.20);
+ if(showTorus){ctx.strokeStyle='#67b4e46a';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(0,0,r*1.28,r*.42,-.12,0,TAU);ctx.stroke()}
+ for(let j=0;j<84;j++){
+  let a=j*TAU/84+spin,b=a+TAU/84,p=palette[Math.floor(j/12)%7],col=p.map(x=>Math.round(x*255));
+  ctx.beginPath();ctx.moveTo(0,-r*.82);ctx.lineTo(r*Math.cos(a),r*.32+r*.13*Math.sin(a)+r*.04*sway*Math.sin(7*a));ctx.lineTo(r*Math.cos(b),r*.32+r*.13*Math.sin(b)+r*.04*sway*Math.sin(7*b));ctx.closePath();ctx.fillStyle=`rgb(${col.join(',')})`;ctx.fill();ctx.strokeStyle='#151c3255';ctx.stroke();
+ }
+ ctx.fillStyle='#e54854';ctx.beginPath();ctx.moveTo(-r*.19,r*.20);ctx.lineTo(r*.19,r*.20);ctx.lineTo(0,r*.82);ctx.fill();
+ ctx.fillStyle='#3564d0';ctx.fillRect(-r*.13,-r*.93,r*.26,r*.23);
+ const cx2=r*.54*Math.cos(crankAngle+Math.PI),cy2=-r*.87+r*.17*Math.sin(crankAngle+Math.PI);
+ ctx.strokeStyle='#bdcfde';ctx.lineWidth=Math.max(2,r*.022);ctx.beginPath();ctx.moveTo(0,-r*.88);ctx.lineTo(cx2,cy2);ctx.stroke();
+ ctx.strokeStyle='#e5f2ff';ctx.lineWidth=Math.max(1,r*.012);ctx.beginPath();
+ for(let k=0;k<=110;k++){
+  const s=k/110,px=cx2*s,py=-r*.88+(cy2+r*.88)*s+Math.sin(s*TAU*5+crankAngle)*r*.026;
+  if(k===0)ctx.moveTo(px,py);else ctx.lineTo(px,py)
+ }
+ ctx.stroke();
+ ctx.fillStyle='#ef4c5a';ctx.beginPath();ctx.arc(cx2,cy2,r*.085,0,TAU);ctx.fill();
+ ctx.strokeStyle='#ffc6c9';ctx.lineWidth=2;ctx.stroke();
+ ctx.fillStyle='#d2dbe1';ctx.fillRect(-r*.025,-r*1.07,r*.05,r*.38);
+ ctx.restore()
+}
+
+function render(){resize();if(!gl||!pr){fallback();return}let aspect=canvas.width/canvas.height;
+let eye=[zoom*Math.sin(yaw)*Math.cos(pitch),zoom*Math.sin(pitch)+.45,zoom*Math.cos(yaw)*Math.cos(pitch)];let proj=perspective(Math.PI/3.35,aspect,.05,45),viewM=lookAt(eye,[0,.34,0],[0,1,0]);
+gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.useProgram(pr);
+gl.uniformMatrix4fv(gl.getUniformLocation(pr,'uProj'),false,proj);gl.uniformMatrix4fv(gl.getUniformLocation(pr,'uView'),false,viewM);gl.uniform1f(gl.getUniformLocation(pr,'uTime'),time);gl.uniform1f(gl.getUniformLocation(pr,'uSpin'),spin);gl.uniform1f(gl.getUniformLocation(pr,'uCrank'),crankAngle);gl.uniform1f(gl.getUniformLocation(pr,'uCrankRate'),crankRate);gl.uniform1f(gl.getUniformLocation(pr,'uSpring'),clamp(springTwist()/.9,-2,2));gl.uniform1f(gl.getUniformLocation(pr,'uSway'),sway);gl.uniform1f(gl.getUniformLocation(pr,'uNu'),nu);gl.uniform1f(gl.getUniformLocation(pr,'uFlowOn'),showFlow?1:0);gl.uniform3fv(gl.getUniformLocation(pr,'uMove'),new Float32Array(worldPos));
+let mv=new Float32Array(modes.flat());gl.uniform2fv(gl.getUniformLocation(pr,'uModes[0]'),mv);gl.depthMask(true);drawMesh(solidMesh,pr);
+if(showTorus){gl.depthMask(false);drawMesh(torusMesh,pr)}
+if(showFlow){let line=streamVertices();gl.useProgram(lp);gl.uniformMatrix4fv(gl.getUniformLocation(lp,'uProj'),false,proj);gl.uniformMatrix4fv(gl.getUniformLocation(lp,'uView'),false,viewM);gl.bindBuffer(gl.ARRAY_BUFFER,lineBuffer);gl.bufferData(gl.ARRAY_BUFFER,line.data,gl.DYNAMIC_DRAW);let la=gl.getAttribLocation(lp,'aPos'),lc=gl.getAttribLocation(lp,'aColor');gl.enableVertexAttribArray(la);gl.vertexAttribPointer(la,3,gl.FLOAT,false,24,0);gl.enableVertexAttribArray(lc);gl.vertexAttribPointer(lc,3,gl.FLOAT,false,24,12);for(let b of line.batches)gl.drawArrays(gl.LINE_STRIP,b.start,b.count)}
+if(showPath&&trail.length>1){
+ const verts=[];
+ for(let i=0;i<trail.length;i++){
+  const p=trail[i],c=palette[trailColors[i]%7];
+  verts.push(...p.map((x,j)=>j===1?x+.03:x),...c);
+ }
+ gl.useProgram(lp);gl.uniformMatrix4fv(gl.getUniformLocation(lp,'uProj'),false,proj);gl.uniformMatrix4fv(gl.getUniformLocation(lp,'uView'),false,viewM);
+ gl.bindBuffer(gl.ARRAY_BUFFER,lineBuffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(verts),gl.DYNAMIC_DRAW);
+ let ap=gl.getAttribLocation(lp,'aPos'),ac=gl.getAttribLocation(lp,'aColor');
+ gl.enableVertexAttribArray(ap);gl.vertexAttribPointer(ap,3,gl.FLOAT,false,24,0);
+ gl.enableVertexAttribArray(ac);gl.vertexAttribPointer(ac,3,gl.FLOAT,false,24,12);
+ gl.drawArrays(gl.LINE_STRIP,0,trail.length);
+}
+gl.depthMask(true)}
+// Project the model-space knob into screen pixels for reliable hit testing.
+function cameraBasis(){
+ const eye=[zoom*Math.sin(yaw)*Math.cos(pitch),zoom*Math.sin(pitch)+.45,zoom*Math.cos(yaw)*Math.cos(pitch)];
+ const z=norm(sub(eye,[0,.34,0])),x=norm(cross([0,1,0],z)),y=cross(z,x);
+ return {eye,x,y,z}
+}
+function rotatedModelPoint(p,which='crank'){
+ const angle=which==='rim'?spin:which==='still'?0:crankAngle;
+ const c=Math.cos(angle),s=Math.sin(angle),px=c*p[0]-s*p[2],pz=s*p[0]+c*p[2];
+ return [.976*px-.217*p[1]+worldPos[0],.217*px+.976*p[1]+worldPos[1],pz+worldPos[2]]
+}
+function screenPoint(p,which='crank'){
+ if(!pr){
+  const r=Math.min(view.clientWidth*.36,view.clientHeight*.33),cx=view.clientWidth*.5+worldPos[0]*r*.46,cy=view.clientHeight*.49-worldPos[1]*r*.46;
+  let dx=0,dy=-r*.88;
+  if(which==='rim'){dx=r*.78*Math.cos(spin),dy=r*.24+r*.12*Math.sin(spin)}
+  else if(which==='still'){dx=0;dy=-r*.14}
+  else if(which==='brake'){dx=0;dy=-r*.57}
+  else if(Math.abs(p[0])>.1){dx=r*.54*Math.cos(crankAngle+Math.PI);dy=-r*.87+r*.17*Math.sin(crankAngle+Math.PI)}
+  const c=Math.cos(-.20),s=Math.sin(-.20);
+  return [cx+c*dx-s*dy,cy+s*dx+c*dy]
+ }
+ const b=cameraBasis(),v=sub(rotatedModelPoint(p,which),b.eye),depth=-dot(v,b.z);
+ if(depth<=0)return [-1e6,-1e6];
+ const f=1/Math.tan(Math.PI/6.7),aspect=view.clientWidth/Math.max(view.clientHeight,1);
+ return [(1+f*dot(v,b.x)/(aspect*depth))*.5*view.clientWidth,(1-f*dot(v,b.y)/depth)*.5*view.clientHeight]
+}
+const spots={crank:document.getElementById('s4t3-grab'),rim:document.getElementById('s4t3-flick'),brake:document.getElementById('s4t3-brake-spot')};
+function spotScreen(kind){
+ return kind==='crank'?screenPoint([-.74,2.29,.12],'crank'):
+   kind==='rim'?screenPoint([1.17,.11,0],'rim'):
+   screenPoint([0,1.49,0],'brake');
+}
+function updateMarkers(){
+ for(const kind of Object.keys(spots)){
+  const p=spotScreen(kind),b=spots[kind],w=view.clientWidth,h=view.clientHeight;
+  b.style.left=clamp(p[0],24,w-24)+'px';b.style.top=clamp(p[1],24,h-24)+'px';
+  b.dataset.active=String(kind==='crank'?crankDragging:kind==='rim'?rimDragging:brakeHeld);
+ }
+ const pct=clamp(springPotential()/(.5*SPRING_K*1.4*1.4)*100,0,100);
+ document.getElementById('s4t3-charge').textContent=(pct<1?pct.toFixed(1):Math.round(pct))+'%';
+ document.getElementById('s4t3-fill').style.width=pct+'%';
+ document.getElementById('s4t3-spring-readout').setAttribute('aria-valuenow',String(Math.round(pct)));
+}
+function pointOf(e){const r=canvas.getBoundingClientRect();return [e.clientX-r.left,e.clientY-r.top]}
+function polar(x,y,center){return Math.atan2(y-center[1],x-center[0])}
+function crankHit(x,y){const a=spotScreen('crank'),b=screenPoint([0,1.87,0],'crank');
+ const da=Math.hypot(x-a[0],y-a[1]),ab=[b[0]-a[0],b[1]-a[1]],den=ab[0]**2+ab[1]**2;
+ const u=den>1e-9?clamp(((x-a[0])*ab[0]+(y-a[1])*ab[1])/den,0,1):0;
+ return da<34 || (u<.85&&Math.hypot(x-a[0]-u*ab[0],y-a[1]-u*ab[1])<15)
+}
+function rimHit(x,y){
+ const center=screenPoint([0,.30,0],'still');const r=spotScreen('rim');
+ const radius=Math.hypot(r[0]-center[0],r[1]-center[1]);
+ const d=Math.hypot(x-center[0],y-center[1]);
+ return d>.56*radius&&d<1.37*radius;
+}
+function brakeHit(x,y){const a=spotScreen('brake');return Math.hypot(x-a[0],y-a[1])<27}
+function startPointer(e,kind,source){
+ if(e.button!==undefined&&e.button!==0)return;
+ e.preventDefault();e.stopPropagation();
+ wake();const [x,y]=pointOf(e);
+ pointerOwner=source;pointerKind=kind;pointerMoved=false;manualAt=performance.now();lastInteractionSpeed=0;
+ if(kind==='crank'){
+  crankDragging=true;crankTarget=crankAngle;
+  crankAnglePointer=polar(x,y,screenPoint([0,1.87,0],'crank'));
+ }else if(kind==='rim'){
+  rimDragging=true;rimTarget=spin;
+  rimAnglePointer=polar(x,y,screenPoint([0,.30,0],'still'));
+ }else if(kind==='brake')brakeHeld=true;
+ else{dragging=true;oldPointer=[e.clientX,e.clientY]}
+ try{source.setPointerCapture(e.pointerId)}catch(_){}
+ canvas.focus({preventScroll:true});
+}
+function movePointer(e){
+ const [x,y]=pointOf(e),now=performance.now();
+ if(crankDragging){
+  let a=polar(x,y,screenPoint([0,1.87,0],'crank'));
+  const delta=wrap(a-crankAnglePointer),dt=Math.max(.01,(now-manualAt)/1000);
+  if(Math.abs(delta)>1e-4){pointerMoved=true;crankTarget+=clamp(-delta,-.42,.42);lastInteractionSpeed=clamp(-delta/dt,-MAX_SPEED,MAX_SPEED)}
+  crankAnglePointer=a;manualAt=now;
+ }else if(rimDragging){
+  const a=polar(x,y,screenPoint([0,.30,0],'still'));
+  const delta=wrap(a-rimAnglePointer),dt=Math.max(.01,(now-manualAt)/1000);
+  if(Math.abs(delta)>1e-4){pointerMoved=true;rimTarget+=clamp(-delta,-.42,.42);lastInteractionSpeed=clamp(-delta/dt,-MAX_SPEED,MAX_SPEED)}
+  rimAnglePointer=a;manualAt=now;
+ }else if(dragging&&oldPointer){
+  yaw+=(e.clientX-oldPointer[0])*.007;pitch=clamp(pitch+(e.clientY-oldPointer[1])*.006,-.60,1.16);
+  oldPointer=[e.clientX,e.clientY];pointerMoved=true;
+ }else if(!e.buttons){
+  canvas.style.cursor=crankHit(x,y)||brakeHit(x,y)||rimHit(x,y)?'pointer':'grab'
+ }
+}
+function endPointer(){
+ if((crankDragging||rimDragging)&&!pointerMoved){
+   if(crankDragging){crankAngle+=.57;crankRate+=1.0}
+   else{rotorRate+=2.7}
+ }
+ if(crankDragging&&pointerMoved&&performance.now()-manualAt<90)crankRate=clamp(lastInteractionSpeed,-MAX_SPEED,MAX_SPEED);
+ if(rimDragging&&pointerMoved&&performance.now()-manualAt<90)rotorRate=clamp(lastInteractionSpeed,-MAX_SPEED,MAX_SPEED);
+ if(brakeHeld)brakePulse=.25;
+ crankDragging=false;rimDragging=false;dragging=false;brakeHeld=false;oldPointer=null;pointerKind='';pointerOwner=null;
+ canvas.style.cursor='grab';
+}
+function wind(active,direction=1){windHeld=active;windDirection=direction;document.getElementById('s4t3-wind').setAttribute('aria-pressed',String(active));if(active){wake();holdStartedAt=performance.now()}}
+function brake(active){brakeHeld=active;document.getElementById('s4t3-brake').setAttribute('aria-pressed',String(active));if(active){wake()}else brakePulse=.35}
+let last=0;
+function tick(ts){
+ if(!root.isConnected)return;
+ if(!last)last=ts;
+ const dt=Math.min(.05,Math.max(0,(ts-last)/1000));last=ts;
+ // Integrate in bounded substeps to prevent large pauses from injecting artifacts.
+ const n=Math.max(1,Math.ceil(dt/.0125)),h=dt/n;
+ for(let j=0;j<n;j++)stepDynamics(h);
+ if(playing&&orbit&&!dragging&&!crankDragging&&!rimDragging)yaw=(yaw+.04*dt)%TAU;
+ render();drawObserverOverlay();updateMarkers();if(historyTicks%12===0)updateSpectralUI();
+ if(!tick._obsAt||ts-tick._obsAt>=90){updateGodelUI();tick._obsAt=ts}
+ requestAnimationFrame(tick)
+}
+requestAnimationFrame(tick);
+function pressed(id,updater){let b=document.getElementById(id);b.addEventListener('click',()=>{
+ updater();b.setAttribute('aria-pressed',String(id==='s4t3-play'?playing:id==='s4t3-flow'?showFlow:id==='s4t3-torus'?showTorus:orbit))
+})}
+pressed('s4t3-play',()=>{playing=!playing;updatePlayButton()});
+pressed('s4t3-flow',()=>showFlow=!showFlow);
+pressed('s4t3-torus',()=>showTorus=!showTorus);
+pressed('s4t3-orbit',()=>orbit=!orbit);
+document.getElementById('s4t3-reset').addEventListener('click',()=>{reset();resetSpectrum();if(routeWord)commitWord(routeWord);playing=false;orbit=false;updatePlayButton();document.getElementById('s4t3-orbit').setAttribute('aria-pressed','false');yaw=.57;pitch=.24;zoom=5.4;windHeld=false;resetGodel()});
+const windButton=document.getElementById('s4t3-wind');
+windButton.addEventListener('pointerdown',e=>{e.preventDefault();wind(true,e.shiftKey?-1:1);windButton.setPointerCapture?.(e.pointerId)});
+windButton.addEventListener('pointerup',()=>{
+ if(performance.now()-holdStartedAt<180){crankAngle+=windDirection*.46;crankRate+=windDirection*.8}wind(false)
+});
+windButton.addEventListener('pointercancel',()=>wind(false));windButton.addEventListener('lostpointercapture',()=>wind(false));
+windButton.addEventListener('keydown',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();if(!windHeld)wind(true,e.shiftKey?-1:1)}});
+windButton.addEventListener('keyup',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();wind(false)}});
+const brakeButton=document.getElementById('s4t3-brake');
+brakeButton.addEventListener('pointerdown',e=>{e.preventDefault();brake(true);brakeButton.setPointerCapture?.(e.pointerId)});
+brakeButton.addEventListener('pointerup',()=>brake(false));brakeButton.addEventListener('pointercancel',()=>brake(false));brakeButton.addEventListener('lostpointercapture',()=>brake(false));
+brakeButton.addEventListener('keydown',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();brake(true)}});
+brakeButton.addEventListener('keyup',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();brake(false)}});
+
+const panelFilter=document.getElementById('s4t3-filter-panel'),panelWord=document.getElementById('s4t3-word-panel'),panelObserver=document.getElementById('s4t3-observer-panel');
+function setPanel(which){
+ const f=which==='filter'&&!panelFilter.hidden,w=which==='word'&&!panelWord.hidden,
+       o=which==='observer'&&!panelObserver.hidden;
+ panelFilter.hidden=which==='filter'?f:true;
+ panelWord.hidden=which==='word'?w:true;
+ panelObserver.hidden=which==='observer'?o:true;
+ document.getElementById('s4t3-filterbtn').setAttribute('aria-expanded',String(!panelFilter.hidden));
+ document.getElementById('s4t3-wordbtn').setAttribute('aria-expanded',String(!panelWord.hidden));
+ document.getElementById('s4t3-observerbtn').setAttribute('aria-expanded',String(!panelObserver.hidden));
+}
+document.getElementById('s4t3-filterbtn').addEventListener('click',()=>setPanel('filter'));
+document.getElementById('s4t3-wordbtn').addEventListener('click',()=>setPanel('word'));
+document.getElementById('s4t3-observerbtn').addEventListener('click',()=>setPanel('observer'));
+document.getElementById('s4t3-flickbtn').addEventListener('click',()=>{rotorRate=clamp(rotorRate+2.7,-MAX_SPEED,MAX_SPEED);wake()});
+document.getElementById('s4t3-pathbtn').addEventListener('click',e=>{
+ showPath=!showPath;e.currentTarget.setAttribute('aria-pressed',String(showPath));
+});
+for(const [id,key] of [
+ ['s4t3-cutoff','cutoff'],['s4t3-band','band'],['s4t3-visc','viscosity'],
+ ['s4t3-couple','coupling'],['s4t3-force','force'],['s4t3-radius','radius'],
+ ['s4t3-speed','speed'],['s4t3-budget','budget'],['s4t3-curvature','curvature']]){
+ const el=document.getElementById(id),out=document.getElementById(id+'-v');
+ el.addEventListener('input',()=>{
+  const value=Number(el.value);bounds[key]=value;
+  out.textContent=key==='band'||key==='cutoff'?String(value):value.toFixed(2);
+  if(key==='budget'){
+   const e=spectralEnergy();if(e>value){const s=Math.sqrt(value/e);for(const z of harmonic){z[0]*=s;z[1]*=s}}
+  }
+  if(key==='radius'){
+   const r=length3(worldPos);if(r>value){worldPos=scaled(worldPos,value/r);worldVel=[0,0,0]}
+  }
+  if(key==='speed'){
+   const v=length3(worldVel);if(v>value)worldVel=scaled(worldVel,value/v);
+  }
+  if(key==='curvature'||key==='band')commitWord(routeWord);
+ });
+}
+document.getElementById('s4t3-apply-word').addEventListener('click',()=>{
+ commitWord(document.getElementById('s4t3-word').value);
+});
+document.getElementById('s4t3-word').addEventListener('keydown',e=>{
+ if(e.key==='Enter'){e.preventDefault();commitWord(e.target.value)}
+});
+document.getElementById('s4t3-clear-route').addEventListener('click',()=>{
+ document.getElementById('s4t3-word').value='';routeWord='';route=[0];routeResidues=[0];routeProgress=0;routeCost=0;document.getElementById('s4t3-word-status').textContent='STRAIGHT · unconstrained forward drift';
+});
+function updateSpectralUI(){
+ const es=harmonic.map(z=>z[0]*z[0]+z[1]*z[1]),m=Math.max(.0005,...es);
+ const bars=document.querySelectorAll('#s4t3-spectrum i');
+ es.forEach((e,i)=>{bars[i].style.height=Math.max(2,Math.min(32,32*Math.sqrt(e/m)))+'px'});
+ document.getElementById('s4t3-filter-stat').textContent=
+  `E=${spectralEnergy().toFixed(3)}/${bounds.budget.toFixed(2)} · discarded=${spectrumDiscard.toFixed(3)} · residual=${filterResidual.toFixed(3)} · pos=${length3(worldPos).toFixed(2)}/${bounds.radius.toFixed(2)} · radius/velocity clips=${boundaryInterventions} · numeric resets=${filterViolations}`;
+ document.getElementById('s4t3-harm-status').textContent=sampleCount===0?'PAUSED / BOUNDED':
+  `K≤${bounds.cutoff} · BAND ${bounds.band} · ${routeProgress.toFixed(1)}/${Math.max(1,routeResidues.length-1)} · |x|=${length3(worldPos).toFixed(2)}`;
+}
+
+
+// Observer controls are all in the attached side-rail panel, not on the object.
+for(const [id,key] of [
+ ['s4t3-godel-scale','a'],['s4t3-godel-beta','beta'],['s4t3-godel-chart','chartShift']]){
+ document.getElementById(id).addEventListener('input',e=>{
+  const n=Number(e.currentTarget.value);
+  if(!Number.isFinite(n))return;
+  godel[key]=n;syncGodelControls();updateGodelUI();drawObserverOverlay();
+ });
+}
+document.getElementById('s4t3-godel-dust').addEventListener('click',()=>{
+ godel.beta=0;syncGodelControls();updateGodelUI();drawObserverOverlay();
+});
+document.getElementById('s4t3-godel-probe').addEventListener('click',()=>{
+ godel.probeMode=godel.probeMode==='root'?'trajectory':'root';
+ syncGodelControls();updateGodelUI();drawObserverOverlay();
+});
+for(const [id,delta] of [['s4t3-godel-shift-minus',-.25],['s4t3-godel-shift-plus',.25]]){
+ document.getElementById(id).addEventListener('click',()=>{
+  godel.chartShift=Math.round(clamp(godel.chartShift+delta,-1,1)*100)/100;
+  syncGodelControls();updateGodelUI();drawObserverOverlay();
+ });
+}
+document.getElementById('s4t3-godel-view').addEventListener('click',()=>{
+ godel.visible=!godel.visible;syncGodelControls();drawObserverOverlay();
+});
+window.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&!panelObserver.hidden){setPanel('observer')}
+});
+// Source-faithful aligned shift: theta_c += inverseGear*delta and
+// theta_r += delta. Speeds remain untouched. This is NOT hand work.
+document.getElementById('s4t3-spring-transport').addEventListener('click',()=>{
+ const oldE=mechanicalEnergy(),delta=.40;
+ crankAngle+=INV_GEAR*delta;spin+=delta;
+ familyState.springDeltaEnergy=mechanicalEnergy()-oldE;
+ updateFamilyPorts();drawObserverOverlay();
+});
+document.getElementById('s4t3-prime-p').addEventListener('change',e=>{
+ const p=Number(e.currentTarget.value);
+ if(![2,3,5,7,11].includes(p))return;
+ familyState.prime=p;familyState.residue%=p;
+ const input=document.getElementById('s4t3-prime-residue');
+ input.max=String(p-1);input.value=String(familyState.residue);
+ familyState.primeDeltaEnergy=0;updateFamilyPorts();
+});
+document.getElementById('s4t3-prime-residue').addEventListener('input',e=>{
+ familyState.residue=Number(e.currentTarget.value);
+ familyState.primeDeltaEnergy=0;updateFamilyPorts();
+});
+document.getElementById('s4t3-prime-flic').addEventListener('click',()=>{
+ const oldE=familyState.residue===0?0:familyState.primeKappa;
+ familyState.residue=(( -familyState.residue)%familyState.prime+familyState.prime)%familyState.prime;
+ document.getElementById('s4t3-prime-residue').value=String(familyState.residue);
+ const nextE=familyState.residue===0?0:familyState.primeKappa;
+ familyState.primeDeltaEnergy=nextE-oldE;
+ updateFamilyPorts();
+});
+document.getElementById('s4t3-prime-root').addEventListener('click',()=>{
+ familyState.residue=0;familyState.primeDeltaEnergy=0;
+ document.getElementById('s4t3-prime-residue').value='0';updateFamilyPorts();
+});
+syncGodelControls();updateGodelUI();
+
+window.addEventListener('blur' ,()=>{wind(false);brake(false);keyboardDirection=0;endPointer()});
+canvas.addEventListener('pointerdown',e=>{
+ const [x,y]=pointOf(e),kind=crankHit(x,y)?'crank':brakeHit(x,y)?'brake':rimHit(x,y)?'rim':'camera';
+ startPointer(e,kind,canvas)
+});
+canvas.addEventListener('pointermove',movePointer);
+canvas.addEventListener('pointerup',endPointer);canvas.addEventListener('pointercancel',endPointer);
+// Object markers remain passive; all actionable buttons live in the side rail.
+
+canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=clamp(zoom+e.deltaY*.005,3.3,9)},{passive:false});
+canvas.addEventListener('keydown',e=>{
+ if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();keyboardDirection=e.key==='ArrowRight'?1:-1;wake()}
+ else if(e.key===' '){e.preventDefault();playing=!playing;updatePlayButton()}
+ else if(e.key.toLowerCase()==='b'){e.preventDefault();brake(true)}
+});
+canvas.addEventListener('keyup',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();keyboardDirection=0}else if(e.key.toLowerCase()==='b')brake(false)});
+// Read-only diagnostics: support mathematical tests of graph acceptance/finite word optimum.
+window.__S4T3_SOFIC_QUERY__=(word)=>optimizeWord(word);
+window.__S4T3_GODEL_STATE__=()=>godelDiagnostics();
+window.__S4T3_FAMILY_STATE__=()=>familyPortDiagnostics();
+// Read-only, session-local diagnostics: expose model state but no mutation API.
+window.__S4T3_CRANK_STATE__=()=>({angle:crankAngle,rate:crankRate,spin,rotorRate,time,springTwist:springTwist(),springEnergy:springPotential(),mechanicalEnergy:mechanicalEnergy(),energy:normEnergy(),initialEnergy,positiveHandWork,energyViolations,sway,
+ modes:modes.map(m=>m.slice()),manual:crankDragging||rimDragging||windHeld||keyboardDirection!==0,playing,orbit,webgl:!!(gl&&pr),brake:brakeHeld,
+ worldPos:worldPos.slice(),worldVel:worldVel.slice(),radiusBound:bounds.radius,speedBound:bounds.speed,
+ spectralEnergy:spectralEnergy(),spectralBudget:bounds.budget,cutoff:bounds.cutoff,band:bounds.band,
+ Fourier:fourier.map(z=>z.slice()),history64:Array.from({length:WINDOW},(_,i)=>history[(histIndex+i)%WINDOW]),residueModes:harmonic.map(z=>z.slice()),
+ spectralDiscard:spectrumDiscard,filterResidual,filterViolations,boundaryInterventions,
+ routeWord,routeResidues:routeResidues.slice(),routeProgress,routeCost,
+ trailSize:trail.length,showPath});
+if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){orbit=false;document.getElementById('s4t3-orbit').setAttribute('aria-pressed','false')}
+})();
+</script></body></html>

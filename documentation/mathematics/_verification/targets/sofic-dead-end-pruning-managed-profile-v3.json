@@ -1,0 +1,428 @@
+{
+  "contracts": [
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicSourceIntegration.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicSourceIntegration.periodic_block_iff_bounded_original_cycle",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicSourceIntegration.periodic_label_card_eq_bounded_original_cycle_count",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicSourceIntegration.original_cycle_count_eq_bounded_word_matrix_count",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicSourceIntegration.adjacency_trace_with_defects_eq_original_cycle_word_count",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicSourceIntegration.adjacency_trace_with_defects_eq_word_matrix_count",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicSourceIntegration.adjacency_trace_eq_word_matrix_count_iff_balanced",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicSourceIntegration.certified_graph_matrix_periodic_ledger"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMultipleLift.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicMultipleLift.periodic_label_point_has_multiple_closed_lift",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicMultipleLift.periodic_label_point_has_exact_repeated_cycleWord",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicMultipleLift.actual_walk_of_wordPath"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBoundedWordMatrixCriterion.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedWordMatrixCriterion.boundedPeriodicWordMatrixCriterion_proof",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedWordMatrixCriterion.periodicLabelPoint_card_eq_boundedWordCount_proof"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficMacroBoundaryPigeonhole.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficMacroBoundaryPigeonhole.finiteStateBlockBoundaryPigeonhole_proof"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficWordPowerClosedPath.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordPowerClosedPath.wordPowerClosedPathBridge_proof"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepetitionFromWalk.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficCycleRepetitionFromWalk.cycleRepetitionsRun_of_original_closedWalk"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficExactPeriodicTraceLedger.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficExactPeriodicTraceLedger.exact_trace_add_unlifted_eq_label_card_add_surplus"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBasedCycleCard.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBasedCycleCard.exactBasedCycleCard"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicMatrixTrace.trace_pow_eq_basedClosedWalkCount"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficMatrixCertifiedTransversal.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficMatrixCertifiedTransversal.graphMatrix_has_certified_target"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicFiberLedger.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicFiberLedger.trace_add_unlifted_eq_label_card_add_surplus"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficWordMatrixDynamicProgram.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordMatrixDynamicProgram.labeledAdjacency_eq_sum_letterSteps",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordMatrixDynamicProgram.wordLiftMatrix_nil",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordMatrixDynamicProgram.wordLiftMatrix_snoc_apply",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordMatrixDynamicProgram.wordLiftMatrix_snoc",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordMatrixDynamicProgram.wordMatrixProduct_snoc",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordMatrixDynamicProgram.wordLiftMatrix_eq_wordMatrixProduct",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordMatrixDynamicProgram.word_matrix_trace_eq_dynamic_product"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficWordPowerClosureScan.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordPowerClosureScan.matrixPowerTraceScan_power",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordPowerClosureScan.matrixPowerTraceScan_trace_sum",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordPowerClosureScan.boundedWordCycleTrace_eq_original_power_sum",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordPowerClosureScan.boundedWordCycleTrace_pos_iff",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordPowerClosureScan.periodic_word_iff_bounded_cycle_trace_pos",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordPowerClosureScan.optimizedPeriodicWordCount_eq_boundedPeriodicWordCount",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordPowerClosureScan.periodicLabelPoint_card_eq_optimizedCount",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordPowerClosureScan.adjacency_trace_with_defects_eq_optimizedCount",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficWordPowerClosureScan.certified_matrix_trace_with_defects_eq_optimizedCount"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteSupportAutomaton.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.reachableEndStates_snoc",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.reachableEndStates_nil",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.sourceSupportAfter_append",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.sourceSupportAfter_mem_iff",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.sourceSupportAfter_univ_eq_reachableEndStates",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.sourceSupportAfter_singleton_iff_wordPath",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.sourceSupportAfter_iff_wordLiftMatrix_pos",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.sourceSupportAfter_iff_wordMatrixProduct_pos",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.graphLanguage_iff_supportAfter_nonempty",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.sourceRepeatedSupport_eq_finiteCopies",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.sourceRepeatedSupport_singleton_iff_wordPath",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.sourceRepeatedSupport_iff_wordMatrixPow_pos",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.boundedSourceSupportCycle_iff_boundedWordCycleTrace_pos",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.periodic_word_iff_bounded_source_support_cycle",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.sourceSupportPeriodicWordCount_eq_optimized",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.periodicLabelPoint_card_eq_sourceSupportCount",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.adjacency_trace_add_unlifted_eq_support_count_add_surplus",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteSupportAutomaton.certified_matrix_trace_add_unlifted_eq_support_count_add_surplus"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficGraphRepresentationBridges.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.originalGraphOfSearchRelation_edge",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.originalWordPath_iff_searchWordPath",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.graphLanguage_iff_search_word",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.originalWordPath_mono",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.graphLanguage_mono_of_labeledSubrelation",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.sourceSupportAfter_mono_of_labeledSubrelation",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.wordLiftMatrix_positive_mono_of_labeledSubrelation",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.periodicLabelPointEmbedding_injective",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.periodicLabelPoint_card_le_of_labeledSubrelation",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.sandwich_periodic_label_card_bounds",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.originalGraphOfSpectralSoficGraph_edge",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.dynamicSoficPresentation_runs_on_originalGraph",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.dynamicSoficPresentation_block_is_original_graphWord",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficGraphRepresentationBridges.dynamicSoficPresentation_block_in_exactLanguage"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficRootedPrefixBoundary.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRootedPrefixBoundary.rootedPath_iff_originalWordPath",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRootedPrefixBoundary.rootedAccepts_implies_graphLanguage",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRootedPrefixBoundary.rootedAdmitsStream_implies_prefix_graphLanguage",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRootedPrefixBoundary.rootedAccepts_implies_unrooted_support",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRootedPrefixBoundary.unrooted_true_word_not_rooted"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficShiftPeriodicPointBridge.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.oneSidedShift",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.oneSidedShift_iterate_apply",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.oneSidedShift_isPeriodicPt_iff",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.AdmissibleInfiniteStream",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.admissibleShift",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.admissibleShift_val_semiconj",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.admissibleShift_isPeriodicPt_iff",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.admissibleShift_minimalPeriod_eq_fullShift",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.periodicAdmissibleStream_equiv_shiftPeriodic",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.periodicLabelPoint_equiv_shiftPeriodic",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.labelShift_minimalPeriod_dvd",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.labelShift_minimalPeriod_pos",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.shiftPeriodicPoint_has_bounded_graphShift_lift",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.shiftPeriodicPoint_has_bounded_minimal_state_period",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.shiftPeriodicPointCount",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.shiftPeriodicPointCount_eq_originalLabelCard",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.shiftPeriodicPointCount_eq_sourceSupportCount",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficShiftPeriodicPointBridge.adjacency_trace_add_unlifted_eq_shiftPeriodicCount_add_surplus"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficTopologicalFactorSpace.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.sourceWordPattern",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.sourceWordPattern_occurs_iff",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.hasFiniteBlock_iff_sourceWordPattern",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.forbiddenSourceWordPatterns",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.completeFactorSubshift",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.mem_completeFactorSubshift_iff",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.completeFactorSubshift_isClosed",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.oneSidedShift_eq_additiveShift_one",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.completeFactorSubshift_shift_mem",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.TopologicalAdmissibleStream",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.topologicalShift",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.topologicalStream_equiv_admissibleStream",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.topologicalShift_semiconj",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalFactorSpace.topologicalShift_isPeriodicPt_iff"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficTopologicalPeriodicReturn.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalPeriodicReturn.topologicalPeriodic_equiv_shiftPeriodic",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalPeriodicReturn.topologicalPeriodic_equiv_originalLabelPoint",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalPeriodicReturn.topologicalShift_minimalPeriod_eq_fullShift",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalPeriodicReturn.topologicalShift_minimalPeriod_dvd",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalPeriodicReturn.topologicalShift_minimalPeriod_pos",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalPeriodicReturn.topologicalPeriodicPoint_has_bounded_graphShift_lift",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalPeriodicReturn.topologicalPeriodicPoint_has_bounded_minimal_state_period",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalPeriodicReturn.topologicalPeriodicPointCount",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalPeriodicReturn.topologicalPeriodicPointCount_eq_originalLabelCard",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalPeriodicReturn.topologicalPeriodicPointCount_eq_sourceSupportCount",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalPeriodicReturn.adjacency_trace_with_defects_eq_topologicalPeriodicCount"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficTopologicalLanguageBoundary.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalLanguageBoundary.realizedTopologicalFactorLanguage",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalLanguageBoundary.realizedTopologicalFactorLanguage_subset",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalLanguageBoundary.realizedTopologicalFactorLanguage_eq_of_realized",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalLanguageBoundary.sourceWordPattern_languageOn_implies_sourceWord",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalLanguageBoundary.fullShiftGraph_completeFactorSubshift_all",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalLanguageBoundary.terminalEdgeGraph",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalLanguageBoundary.terminalEdgeGraph_accepts_singleton",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalLanguageBoundary.terminalEdgeGraph_rejects_two",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalLanguageBoundary.terminalEdgeGraph_word_not_realized",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficTopologicalLanguageBoundary.terminalEdgeGraph_strict_language_loss"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteTraceCompactness.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.FiniteTraceLift",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.finiteTraceLift_mono",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.finiteTraceLift_of_graph_prefix",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.finite_nested_state",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.viableTraceLift_successor",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.runsOnGraph_of_all_graph_prefixes",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficFiniteTraceCompactness.runsOnGraph_of_all_factors"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficRightLiveSubgraph.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.RightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLive_of_run_suffix",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLive_of_edge",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLive_of_wordPath",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.realized_of_wordPath_rightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.realized_iff_path_to_rightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLiveSubgraph",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLiveSubgraph_language_iff",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.realizedTopologicalFactorLanguage_eq_rightLiveGraphLanguage",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLiveSubgraph_has_outgoing",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.RightTotal",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.rightLive_of_rightTotal",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficRightLiveSubgraph.realized_eq_GraphLanguage_of_rightTotal"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBoundedLiveCycle.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.HasBoundedReachableCycle",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.boundedReachableCycle_of_rightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.rightLive_of_boundedReachableCycle",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.rightLive_iff_boundedReachableCycle",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.rightLiveSubgraph_language_iff_boundedReachableCycle",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.realizedTopologicalFactorLanguage_iff_boundedCycleExtension",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficBoundedLiveCycle.realizedLanguage_eq_graphLanguage_iff_everyWordCycleExtendable"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicRunFullShift.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicRunFullShift.wordPath_of_run_block"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "source": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficDeadEndPruning.lean",
+      "declarations": [
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.SourceEdgeDecider",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.pruneStep",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.mem_pruneStep_iff",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.pruneStep_mono",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.retainedAfter",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.retainedAfter_antitone_step",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.retainedAfter_stable_card",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.retainedAfter_card_has_successor",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.rightLive_of_mem_retainedAfter_card",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.mem_retainedAfter_of_rightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.mem_retainedAfter_card_iff_rightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.isRightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.isRightLive_iff",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.supportStep",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.supportStep_eq_original",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.supportAfter",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.supportAfter_eq_original",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.isRealizedFactor",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.isRealizedFactor_iff_path_to_rightLive",
+        "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficDeadEndPruning.isRealizedFactor_iff_topologicalFactor"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

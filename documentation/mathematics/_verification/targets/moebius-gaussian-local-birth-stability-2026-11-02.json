@@ -1,0 +1,162 @@
+{
+  "schema": "grwtsk.math.verification.target.v1",
+  "date": "2026-11-02",
+  "repo": "grwtsk/math",
+  "name": "Causal active-birth Gaussian heat and signed six-way original-source portfolio",
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "new_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatLocalCausalBounds.lean",
+      "git_blob": "d1a3c5de19b7f26bd3ae7322b56a65a23b663e4d",
+      "public_theorems": 10,
+      "private_theorems": 0,
+      "imports": [
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianHeatAbsoluteEnergyStability",
+        "Mathlib.Tactic"
+      ],
+      "declarations": [
+        "responseSum_horizon_restrict",
+        "sourceHeatWave_horizon_restrict",
+        "sourceHeatErrorWave_horizon_restrict",
+        "radiusWave_horizon_restrict",
+        "sourceHeatRadiusWave_local_bound",
+        "sourceHeatErrorWave_local_bound",
+        "sourceHeatErrorWave_local_bound_on",
+        "source_and_heat_abs_le_active",
+        "sourceHeat_signed_square_local_bound",
+        "sourceHeat_radius_square_local_bound"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatIntegratedLocalStability.lean",
+      "git_blob": "8247bb7caa8943da3a587fbe5d0ff832c0605efa",
+      "public_theorems": 14,
+      "private_theorems": 2,
+      "public_definitions": 1,
+      "imports": [
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianHeatLocalCausalBounds",
+        "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusUnifiedObservationPortfolio",
+        "Mathlib.Tactic"
+      ],
+      "declarations": [
+        "sourceHeatRadiusEnergy_le_local_integral",
+        "sourceHeatEnergy_abs_difference_le_local_integral",
+        "sourceHeatEnergy_abs_difference_le_simple",
+        "vanishingHeat_radiusEnergy_local_exponential",
+        "vanishingHeat_abs_energy_difference_local_exponential",
+        "vanishingHeat_abs_energy_difference_le_64",
+        "vanishingHeat_cross_abs_difference_local_exponential",
+        "vanishingHeat_cross_abs_difference_le_64",
+        "endpoint_heatCorrectedCross_abs_local_exponential",
+        "dyadic_complete_residue_heat_abs_local_exponential",
+        "heatSharpHybridUpper",
+        "pickupCross_le_heatSharpHybridUpper",
+        "heatSharpHybridUpper_le_original_portfolio",
+        "endpoint_le_heatSharpHybridUpper_quarter",
+        "riemannHypothesis_of_heatSharpHybrid_good_scales"
+      ]
+    }
+  ],
+  "documentation": [
+    {
+      "path": "documentation/mathematics/_support/reviews/moebius-gaussian-active-birth-heat-stability-2026-11-02.md",
+      "git_blob": "932956af797df6a988d7934f729fbb8feb5d9a2b"
+    },
+    {
+      "path": "documentation/mathematics/_support/reviews/moebius-gaussian-active-birth-relations-2026-11-02.json",
+      "git_blob": "7be62413b22844a7b11ce0d25c64b933b0e95e7a",
+      "sources": 14,
+      "edges": 12
+    }
+  ],
+  "original_source_contract": [
+    "source original integer n and real mu(n) unchanged",
+    "physical u distinct from artificial heat s and terminal T",
+    "complete ordered mixed signs preserved until full square",
+    "endpointIndex(T)=Icc 1 floor(exp T) and causal future-zero exact",
+    "source diagonal preserved for heatCorrectedCross",
+    "one endpoint curvature quarter unit",
+    "fixed G chosen before epsilon for any RH implication"
+  ],
+  "math_claims": [
+    "for all s,T>=0: abs(pickupEnergy(T)-sourceHeatEnergy(s,T))<=32*s*T²*(exp(T)-1)",
+    "for all s,T>=0: sourceHeatRadiusEnergy(s,T)<=16*s²*T^4*(exp(T)-1)",
+    "for s(T)=exp(-2T): abs(total signed energies difference)<=32*T²*exp(-T)<=64",
+    "for s(T)=exp(-2T): source radius energy <=16*T^4*exp(-3T)",
+    "heatCorrectedCross(T)=heat energy-original pickupDiagonal",
+    "abs(original signed cross-heatCorrectedCross)<=32*T²*exp(-T)<=64",
+    "abs(endpointSum-heatCorrectedCross)<=1/4+32*T²*exp(-T)",
+    "min previous five-way original source upper and heatCorrectedCross+error yields conservative six-way upper",
+    "canonical RiemannHypothesis only if an independent all-positive-rate bound is PROVED on one fixed AffineFrequent G"
+  ],
+  "acceptance": {
+    "static_lexical": "PENDING_BEFORE_COMMIT",
+    "native_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "remote_runner": "NOT_DISPATCHED",
+    "hostile_controls": [
+      "T=0",
+      "s=0",
+      "n=1",
+      "squareful mu(n)=0",
+      "u=T closed birth",
+      "source n>exp(u) future-zero despite final endpoint T",
+      "heat signed Gram may increase",
+      "original (not heated) diagonal",
+      "both signed pair orientations",
+      "actual full parity/nonunit residue square",
+      "genuine GoodPrimeBank plus source-indexed error certificate",
+      "only one quarter curvature payment",
+      "do not conflate signed heat with Tao xi zero-flow"
+    ],
+    "native_commands": [
+      "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianHeatLocalCausalBounds",
+      "lake build --wfail GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusGaussianHeatIntegratedLocalStability",
+      "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatLocalCausalBounds.lean",
+      "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatIntegratedLocalStability.lean",
+      "independent exact-commit kernel replay and complete transitive #print axioms"
+    ]
+  },
+  "finite_preflight": {
+    "status": "PASS_FINITE_NUMERIC_NOT_LEAN",
+    "assertions": 96700,
+    "precision_dps": 60,
+    "script": "/mnt/data/moebius_heat_local_causal_preflight_20261102.py",
+    "script_sha256": "e08d26a490a1de3c5d14efbe762632646d19281200db56a933c9c67be9e1ff0b",
+    "results": "/mnt/data/moebius_heat_local_causal_preflight_20261102.json",
+    "results_sha256": "b5117813ecd9a55715732e6524601255a0fa3c7c7cc0ecc517cfcda5f89ee2d4",
+    "finite_cutoffs": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      11,
+      16,
+      23,
+      29,
+      40,
+      64,
+      80,
+      110,
+      128
+    ],
+    "heat_times": [
+      "0",
+      "0.02",
+      "0.3",
+      "exp(-2*T)",
+      "1"
+    ]
+  },
+  "publication": "PENDING_GUARDED_FAST_FORWARD",
+  "authority": "PASSIVE_ISSUE_ONLY_NO_AUTOMATION_OR_CI_EXECUTION"
+}

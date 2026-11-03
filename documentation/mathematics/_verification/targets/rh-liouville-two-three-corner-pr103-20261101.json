@@ -1,0 +1,53 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Actual Liouville 2x3 ordered packet and merged PR103 fixed-power rational comparison",
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "root": "GRWTSK",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_modules": [
+    "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvilleTwoThreeCornerPacket",
+    "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.LiouvillePR103FixedPower"
+  ],
+  "source_blob_sha": {
+    "LiouvilleTwoThreeCornerPacket.lean": "8735d32385d7e69657849febc9b5ae1b7106263e",
+    "LiouvillePR103FixedPower.lean": "a0818c6ab66e78e4dafc05ea54acfaa59aec9def"
+  },
+  "original_sources": {
+    "LiouvilleWeightedPrefixSquareCriterion.lean": "d62ab5b81eb8cec7b95964c88f875d3c2ef1f244",
+    "LiouvilleWeightedPrefixDoubling.lean": "d3e65086541a95b27edf6faad3d47a956dce92c7",
+    "LiouvilleWeightedPrefixTwoAdicChains.lean": "64d18220eda5e09966c52cf222060652d878f431",
+    "PadicMobiusHighPrimeFixedPower.lean": "f92b660f347f832cf05474ffbf01fc48eab368e1"
+  },
+  "external_theorem": {
+    "url": "https://github.com/GTimG/QuasiRiemannTracker/pull/103",
+    "merge_commit": "8b1a0167c8e324099884152181e3fb2206510e88",
+    "source_head": "cae2e523d4ec22c05ea91ff44d68efb8fd02293f",
+    "candidate_main_blob": "808d04cec892449707d23e81f94179e2738fdf1a",
+    "local_import": false
+  },
+  "facets": {
+    "source_inspection": "DONE",
+    "finite_mathematical_argument": "WRITTEN",
+    "finite_exact_rational_diagnostic": "3576_ASSERTIONS_PASSED",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "external_theorem_local_import": "NOT_RUN",
+    "analytic_zero_free_to_liouville_return": "NOT_RUN",
+    "all_rate_signed_remainder": "UNPROVED",
+    "cofinal_two_unit_count": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "passive": true,
+  "dispatched": false,
+  "tracking_issues": [
+    15,
+    1530,
+    1548,
+    135,
+    1231,
+    1547
+  ]
+}

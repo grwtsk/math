@@ -1,0 +1,165 @@
+{
+  "schema": "grwtsk.moebius-elliptic-signed-rate-forced-compensation/1",
+  "attribution": "grwtsk contributors",
+  "date": "2026-11-01",
+  "repository": "grwtsk/math",
+  "initial_inspected_head": "6c48421c4b2b739daa368071546886d4ab0cfbde",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "new_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticSignedRateBoundary.lean",
+      "blob": "7db3dc0bf5655c96f201e045f63708d48d84e7e3",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticSquarefulCancellation.lean",
+      "blob": "1964bbca27852543adbd138272ee54b9f9956ccd",
+      "status": "SOURCE_PROOF_CANDIDATE"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-elliptic-signed-rate-forced-compensation-2026-11-01.md",
+    "blob": "8235111afe09da69f8d872ba1645aa795d5b9c89"
+  },
+  "preexisting_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticFiberKernelComparison.lean",
+      "blob": "df9ded979964790b92f3053efc3aedeb6e2dfa78",
+      "role": "exact routed signed source identity"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEllipticRecordCertifiedBank.lean",
+      "blob": "b33d580f9d62d3dbe6b43a98af988a95674fb885",
+      "role": "original genuine good finite count bank"
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/UnsignedEnergyBound.lean",
+      "blob": "43cb362696828a0231f2ea9d5b77cacdfd6d9e4c",
+      "role": "unconditional source energy bound 2 exp T T squared"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/EnergyAbscissa.lean",
+      "blob": "c1f86b43daefd7fbb8cfc4254d6888c410d051d9",
+      "role": "positive energy and RH conditional return"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PickupDyadicCoarseBounds.lean",
+      "blob": "65f64b7919dc270abefacce86ef838e075ad36ae",
+      "role": "already available delta>1 estimate"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239Curve.lean",
+      "blob": "9b489d813ddf451a7c8d164ca808fb569b29b5b8",
+      "role": "original exact point counts p=7,19"
+    }
+  ],
+  "external_theorems": [
+    {
+      "title": "Vinogradov-Korobov/Walfisz Mertens bound",
+      "scope": "M(x)=O(x exp(-c(log x)^(3/5)/(loglog x)^(1/5)))",
+      "status": "ESTABLISHED_CLASSICAL_THEOREM_QUALITATIVE_BIG_O"
+    },
+    {
+      "title": "New explicit bounds for Mertens function and the reciprocal of the Riemann zeta-function",
+      "authors": "Ethan Simpson Lee and Nicol Leong",
+      "version": "arXiv:2208.06141v5",
+      "revised": "2026-09-09",
+      "url": "https://arxiv.org/abs/2208.06141",
+      "doi": "10.48550/arXiv.2208.06141",
+      "status": "RECENT_EXTERNAL_MANUSCRIPT_EXPLICIT_CONSTANTS_NOT_INDEPENDENTLY_AUDITED",
+      "limitations": "Latest explicit numeric constants not imported, polynomial logarithmic factor absorbed only for qualitative big-O"
+    }
+  ],
+  "theorems_by_status": {
+    "paper_complete": [
+      "for any finite bank and T>=0: -2*T^2<=matchedEllipticPacket+fullSignedResidual<=4*(exp T-1)",
+      "for any finite bank and T>=0: absolute complete signed sum <=4*exp T",
+      "using classical Vinogradov-Korobov Mertens bound, X(T)=O(exp(T-c*T^(3/5)/(log T)^(1/5)))",
+      "fixed bank 7/19 exact prime occurrence counts A=N/7 floor and B=N/19 floor minus N/133 floor",
+      "for N=133*k: true bank elliptic packet 18769*k^2-769*k",
+      "for all N: |E_B-(137/133)^2*N^2| <=32N+144",
+      "for all T>=0, N=floor(exp T): |fullSignedResidual+(137/133)^2*N^2|<=36N+148",
+      "squareful matched ordered sector elliptic packet plus source-minus-elliptic defect =0 for every bank, every horizon"
+    ],
+    "lean_source_candidates": [
+      "routed_complete_le_energy",
+      "routed_complete_coarse_upper",
+      "routed_complete_upper_rate_gt_one",
+      "fullSignedResidual_le_energy_minus_trace",
+      "endpointSum_coarse_of_routed",
+      "tracePacketFromTagCounts_full_blocks",
+      "recordCountSeven_full_blocks",
+      "recordCountNineteenOnly_full_blocks",
+      "squareful_packet_add_signed_defect_eq_zero",
+      "squareful_combined_all_positive_rates",
+      "firstTagTypeII_eq_squarefree_matched",
+      "elliptic_add_defect_eq_squarefree_source",
+      "pickupCross_eq_rough_mixed_squarefree_matched"
+    ],
+    "open": [
+      "all positive rate bound for complete X(T) with 0<delta<=1 on affine covering scales",
+      "formal Mathlib source proof of rate-one 4(exp T-1) bound from actual Mertens primitive",
+      "formal bank tag classification via Nat.find and exact integer counting bridge between recordBank and floor formulas",
+      "pinned Lean compilation, fresh kernel checking and complete axiom audit",
+      "noncircular signed squarefree squarefree correlation estimate sufficient for RH"
+    ]
+  },
+  "exact_diagnostic": {
+    "checked_N_range": "1..20000",
+    "exact_type": "INTEGER_AND_RATIONAL_ARITHMETIC",
+    "failed": 0,
+    "full_blocks_k": [
+      1,
+      2,
+      3,
+      10,
+      100
+    ],
+    "samples": [
+      {
+        "N": 133,
+        "tag7": 19,
+        "tag19": 6,
+        "trace": -137,
+        "diag": 769,
+        "packet": 18000
+      },
+      {
+        "N": 266,
+        "tag7": 38,
+        "tag19": 12,
+        "trace": -274,
+        "diag": 1538,
+        "packet": 73538
+      },
+      {
+        "N": 1330,
+        "tag7": 190,
+        "tag19": 60,
+        "trace": -1370,
+        "diag": 7690,
+        "packet": 1869210
+      }
+    ],
+    "meaning": "finite diagnostic, not a Lean kernel proof nor all-scale arithmetic result"
+  },
+  "formal_acceptance": {
+    "source_publication": "PENDING",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_runner": "NOT_LAUNCHED",
+    "RH": "NOT_PROVED",
+    "BSD": "NOT_PROVED"
+  },
+  "prior_art_novelty": "classical Mertens/zero-free rate known; novel local research contribution is fixed-bank signed compensation accounting and complete squareful exact sector transport, source-only formalization",
+  "next_exact_arithmetic_supplier": "A genuinely noncircular all-positive-rate upper bound for the surviving complete original squarefree Möbius source including rough and both mixed orientations, or a source-exact equivalent signed estimate; cannot hide in elliptic signed residual.",
+  "issue_cross_references": [
+    1553,
+    1552,
+    1548,
+    1049
+  ]
+}

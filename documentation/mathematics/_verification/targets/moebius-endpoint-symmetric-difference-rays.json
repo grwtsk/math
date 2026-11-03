@@ -1,0 +1,94 @@
+{
+  "schema": "grwtsk.math.static-verification-target/v1",
+  "title": "Möbius endpoint symmetric-difference rays and multiplicative-cube obstruction",
+  "attribution": "grwtsk contributors",
+  "research_scope": "6ae605b4-a7b4-83e8-9ada-ee9c9089476b",
+  "publication": {
+    "analytical_parent": "ffef7414066fd001e21e63ae0c3aa002258a5c4e",
+    "analytical_base_tree": "2f22678117e5d2a4aa20208333a7d17010a487f4",
+    "mode": "GITHUB_GIT_DATA_ATOMIC_TREE_WITH_EXPECTED_HEAD_NON_FORCE_UPDATE",
+    "branch": "main",
+    "root_import": "UNCHANGED",
+    "dependency_pins": "UNCHANGED",
+    "runtime_artifacts_in_math": false
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointSymmetricDifferenceRays.lean",
+    "blob": "34fc88f828a46f40b665157292d998d2e464c265",
+    "sha256": "d2a2560c57802e1130ff80c7bebd34c89198a9f5aca2f709bf1415a4645fde23",
+    "namespace": "GRWTSK.NumberTheory.MoebiusEndpointSymmetricDifferenceRays",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "direct_imports": [
+      "GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusSquarefreeTriplingNegativePacket",
+      "Mathlib"
+    ],
+    "proved_scope": [
+      "endpointRayWeight_nonneg",
+      "n12Amplitude_factorization",
+      "n12ThirdDifference_neg_of_formula",
+      "not_thirdOrderRayCompleteMonotonicity"
+    ],
+    "open_named_propositions": [
+      "SymmetricDifferenceMoebiusSignIdentity",
+      "EndpointSymmetricDifferenceRayIdentity",
+      "N12ThirdDifferenceFormula",
+      "N12AmplitudeNegative",
+      "N12BirthFactorPositive",
+      "SymmetricDifferenceRayDisposition"
+    ]
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-endpoint-symmetric-difference-rays.md",
+    "blob": "97715603b15355c273c26802c202379e8b2b7da4",
+    "sha256": "3ebdb0d9a38ac6afbdeaf3c591d9e661c19b5a6972acb4aa74934a43080d1e0d"
+  },
+  "ledger_shard": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/moebius-endpoint-symmetric-difference-rays-references.md",
+    "canonical_monolith_status": "SHARD_PUBLISHED_MONOLITH_UNCHANGED"
+  },
+  "local_upstream": {
+    "MoebiusSquarefreeTriplingNegativePacket.lean": "064a5c9a9eda989ef7e2eb546f540d1fd0789c54",
+    "MoebiusSquarefreeOrientedEdgePartition.lean": "906ec77e6444898268a7208bbf5e00c57b0d5d3f",
+    "MoebiusOddSquarefreeDoublingPacket.lean": "db499519eba7e82286854f0a120a09596604360a",
+    "MoebiusDenseSquarefulZeroPacket.lean": "94e2e276ca071b5965d10e34476ccfda4e4c2180",
+    "MoebiusDenseSignedGapComplementFrontier.lean": "61d626c267fa11f1b6e53a9837076cc4c6e039a0",
+    "PickupEndpointQuadrature.lean": "2606536c56bdcb33d120aeddfbcbeef793e31ba1"
+  },
+  "mathematical_claims": [
+    "For squarefree endpoint labels m,n, the pair sign is mu((m/gcd(m,n))*(n/gcd(m,n))).",
+    "The complete ordered endpoint cross is the finite signed ray sum sum_{q>=2} mu(q)*W_T(q), with W_T(q)>=0.",
+    "At T=log 12, q=11 and primes 2,3,5, the exact third multiplicative difference equals 8*A*B with A<0 and B>0.",
+    "Therefore the exact ray weights are not third-order completely monotone.",
+    "The counterexample is caused by literal un-birthed cutoff faces and blocks an unsigned Euler-product or positive-measure parity bootstrap."
+  ],
+  "scope_boundary": {
+    "new_actual_mobius_cancellation": false,
+    "new_endpoint_upper_estimate": false,
+    "new_programme_specific_obstruction": true,
+    "complete_endpoint_estimate": false,
+    "uniform_energy": false,
+    "riemann_hypothesis": false
+  },
+  "verification": {
+    "source_inspection": "DONE",
+    "mathematical_derivation": "WRITTEN",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_RUN",
+    "complete_endpoint_estimate": "UNPROVED",
+    "uniform_energy": "UNPROVED",
+    "riemann_hypothesis": "UNPROVED"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "commands": [
+    "lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointSymmetricDifferenceRays.lean",
+    "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointSymmetricDifferenceRays.lean",
+    "check exact expected types and #print axioms for every theorem in the namespace",
+    "audit the complete endpoint-to-RH transitive dependency closure"
+  ]
+}

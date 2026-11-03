@@ -1,0 +1,53 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Complete unmasked fixed low-gcd original Mobius source and all high-gcd absolute payment",
+  "source_blobs": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusUnmaskedLowGcdEndpoint.lean": "1adfd2470cb28a0d98ad567d436853ab2d091f67",
+    "documentation/mathematics/_support/reviews/moebius-unmasked-low-gcd-2026-11-02.md": "f7adfe1957450ee33e979af77d1f365642f1d260"
+  },
+  "baseline": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedSublinearCompensatedEndpoint.lean": "f2d9748589f5999ff667486538968d7eff5a753f",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedCoreEnergyComparison.lean": "82011c80d8a8dacbf3cbe13ccded229d5c24bd80",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalGcdTimeShift.lean": "db0052901eca3050ed0ce812d3e0e7675c8fab05",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean": "2606536c56bdcb33d120aeddfbcbeef793e31ba1"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "direct_source_candidates": [
+    "pickupCross_eq_plainLow_add_high",
+    "plainHighGcd_abs_le_absoluteCost",
+    "endpointSum_le_plainLow_with_highCost",
+    "pickupCross_eq_fixedPlain_add_high",
+    "fixedPlain_eq_fixedCompensated_plus_signed_difference"
+  ],
+  "conditional_source_candidates": [
+    "plainHighGcd_fixed_abs_le_of_elementary",
+    "endpointSum_le_fixedPlain_of_elementary"
+  ],
+  "unproved_lean_targets": [
+    "CompleteHighGcdAbsoluteRootTailTarget",
+    "CompleteHighGcdScalarEveryRateTarget",
+    "PlainPrimitiveGcdReindexTarget",
+    "PlainLowGcdEveryRateDyadic",
+    "FixedGcdRatioTarget"
+  ],
+  "rh_strength_gap": "An every-positive-rate one-sided bound of fixedPlainLowGcdCross on a fixed affine-frequent set, not inferred from source representation.",
+  "verification": {
+    "parsing": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_execution": "NOT_DISPATCHED",
+    "root_promotion": "NOT_DONE"
+  },
+  "changes": {
+    "additive_only": true,
+    "old_source_modified": false,
+    "toolchain_changed": false,
+    "force_push": false
+  }
+}

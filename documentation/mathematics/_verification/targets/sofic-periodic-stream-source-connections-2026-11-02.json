@@ -1,0 +1,180 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "issue": "https://github.com/grwtsk/math/issues/1576",
+  "title": "Original sofic periodic label points equal infinite n-periodic streams and admit bounded source-periodic graph runs",
+  "classification": "SOURCE_PROOF_CANDIDATE_NOT_NATIVE_LEAN_ACCEPTED",
+  "source": {
+    "repo": "grwtsk/math",
+    "commit": "983a0ef766db992d394b30fb7cb0e61be0fa9702",
+    "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicStreamBridge.lean",
+    "blob": "9e35714bacb361360476a92f3fb5923839c1bbf1"
+  },
+  "extends": {
+    "source_commit": "6cf755943e01ee7e9438cbb9eb058832262bd503",
+    "source_blob": "21c602ba8f6b8f1611e2c90d45d9aed3e70f7454",
+    "prior_verification_target": "documentation/mathematics/_verification/targets/sofic-periodic-source-integration-2026-11-02.json",
+    "prior_verification_blob": "a5b7908eff3a6e2666653e7c37949120adf3b768",
+    "assumptions_retained": true
+  },
+  "root_environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "mathlib_rev": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "source_project_module_imports": [
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/DynamicPartitionRecovery.lean",
+      "blob": "5967730dc10d34ddcf1226ee1056594f012567d4"
+    },
+    {
+      "path": "GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/FactorizationFiber.lean",
+      "blob": "034dc65cc2fc5fc7a7ad439c6f110b6ccd7ad9c6"
+    },
+    {
+      "path": "GRWTSK/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CertifiedTransversal.lean",
+      "blob": "df720cbb72c616938635c20477430f5f0ded4021"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/ExactSoficLanguageCover.lean",
+      "blob": "f50489eaf6c7277993a08925a58b7765f9e10ec9"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficLanguageTransversal.lean",
+      "blob": "238da905b6595c944cac40f39ae2f54870032132"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMatrixTrace.lean",
+      "blob": "044644b345b46c90d82dffde6c7485d617b4fbd9"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBasedCycleCard.lean",
+      "blob": "d7fd2f5aad643d4350e4b5bfd7128dd979717a74"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicFiberLedger.lean",
+      "blob": "becfa9cfddb8479c36a007c17d8be4d0d7defe05"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleLabelBijection.lean",
+      "blob": "bd1ba53939ed6f5a4e00d76be9d6d433d09f3d0b"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicRunFullShift.lean",
+      "blob": "265aa4180f4135e76cb0000166d253be4d96b9dc"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepetitionFromWalk.lean",
+      "blob": "00263005b2f46020c8f3a5434d8c6207eaa32622"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficExactPeriodicTraceLedger.lean",
+      "blob": "b3f5b7ce5e0b7eb0a4c1081dce166815824b6bac"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficCycleRepeatBridge.lean",
+      "blob": "a05e7d4527b6e37d59a48288f1e58e1a3867ca56"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficFiniteRepeatClosure.lean",
+      "blob": "e8d8dcc01f4e9f067cb9041ad5e54f7dd79d0962"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicWordMatrix.lean",
+      "blob": "d8f0423d8b872e5045c779544bd39eb1bad7adfe"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficMacroBoundaryPigeonhole.lean",
+      "blob": "fde86d048d89bdb71cd52bb1de96ecaff27068dc"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficWordPowerClosedPath.lean",
+      "blob": "fc3842103f18ecd42aa1587d8bc9556d6144a3c2"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficBoundedWordMatrixCriterion.lean",
+      "blob": "3be4fc0e7b953c22e14749b8ad933b0ab851de1b"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicMultipleLift.lean",
+      "blob": "ece978c7389cca95c1645fbe10b66cfaa5d75cea"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficMatrixCertifiedTransversal.lean",
+      "blob": "6fe56e27333b99d3b6f1941639612e1dfac1692d"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicSourceIntegration.lean",
+      "blob": "21c602ba8f6b8f1611e2c90d45d9aed3e70f7454"
+    },
+    {
+      "path": "GRWTSK/DynamicalSystemsAndErgodicTheory/SoficPeriodicStreamBridge.lean",
+      "blob": "9e35714bacb361360476a92f3fb5923839c1bbf1"
+    }
+  ],
+  "complete_project_module_count": 22,
+  "upstream_packages": "NOT_REBUILT_OR_AUDITED_REQUIRES_MANAGED_REGISTRY_V3",
+  "reviewed_declarations": [
+    "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicStreamBridge.periodicLabelPoint_equiv_admissibleStream",
+    "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicStreamBridge.repeatBlock_finRepeat_eq",
+    "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicStreamBridge.periodic_point_has_bounded_periodic_state_run",
+    "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicStreamBridge.periodic_word_iff_bounded_graph_state_run",
+    "GRWTSK.DifferentialEquationsAndDynamicalSystems.DynamicalSystems.SymbolicDynamics.SoficPeriodicStreamBridge.admissibleStream_has_bounded_graph_state_run"
+  ],
+  "selected_managed_profile": {
+    "path": "documentation/mathematics/_verification/targets/sofic-periodic-stream-managed-profile-v3.json",
+    "blob": "13839f6a3ef0cee98ac451c62d71670c6bc462f6",
+    "contracts": 12,
+    "selected_declarations": 24,
+    "status": "PREPARED_BYTES_ONLY_PARSER_NOT_RUN"
+  },
+  "exact_hypotheses": [
+    "Finite original State carrier, DecidableEq State, finite Alphabet",
+    "Positive n",
+    "Whole finite-factor-language equality for the graph-state existence theorems",
+    "State period m*n and bound 1 <= m <= Fintype.card State",
+    "Original edges and original emitted infinite trace preserved at every index",
+    "No assumed same-period graph lift, label faithfulness, or source graph conjugacy"
+  ],
+  "adjacent_observations": {
+    "GeneralPeriodicPts": "NOT_IDENTIFIED_AS_FUNCTION_ITERATE_PERIODIC_POINTS",
+    "TopologicalSubshift": "NOT_IDENTIFIED_WITH_MulSubshift_OR_LANGUAGEON",
+    "NumberTheoryDynamicSofic": "NO_SPECTRAL_OR_PREFIX_ADAPTER",
+    "PoeticSoficLanguage": "SOURCE_GRAPH_AND_FINITE_CLOSED_PATH_ONLY_NO_COUNTING_INSTANCE_AUDITED",
+    "SearchSoficLanguage": "RELATION_SANDWICH_NOT_ORIGINAL_GRAPH_PREDICATE_WITH_EXACT_LANGUAGE_BRIDGE",
+    "ArithmeticChowlaSofic": "NO_SOURCE_ARITHMETIC_CANCELLATION_SUPPLIER",
+    "AnalyticZetaTrace": "NO_FREDHOLM_DETERMINANT_OR_ZERO_DIVISOR_IDENTIFICATION"
+  },
+  "finite_references": {
+    "modular_index_checks": 74290,
+    "domain": "Boolean words length 1..7, multipliers 1..5 and k through 3*m*n+3",
+    "status": "PASS",
+    "proof_strength": "FINITE_REFERENCE_ONLY_NOT_LEAN"
+  },
+  "producer": {
+    "noe_snapshot": "855a6959f3e2fe1c7901a9cefe33a5433f0028e5",
+    "skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
+    "runtime_owner_not_accessed": true
+  },
+  "verification": {
+    "source_publication": "CONFIRMED",
+    "exact_source_readback": "CONFIRMED",
+    "static_no_sorry_axiom_scan": "NO_NEW_AUTHORED_UNSAFE_AXIOM_SORRY",
+    "managed_profile_parser": "NOT_RUN",
+    "fresh_project_compilation": "NOT_RUN",
+    "expected_types_universes": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "upstream_import_closure": "NOT_RUN",
+    "noe_owner_restoration": "NOT_RUN",
+    "proof_acceptance": false
+  },
+  "next": [
+    "Managed source-bound Lean 4.34.1 compile including full project and upstream import closure at immutable math commit",
+    "Check all five fully qualified declarations, expected interfaces, fresh kernel and transitive axioms, and host-owner restoration",
+    "Connect PeriodicAdmissibleStream to actual shift iterate and topological subshift via separately checked source comparison, without importing unrelated legacy sources"
+  ],
+  "review_path": "documentation/mathematics/_support/reviews/sofic-periodic-stream-source-connections-2026-11-02.md",
+  "review_blob": "924ec70040af5581b1b81e49f9abf852d819d30d"
+}

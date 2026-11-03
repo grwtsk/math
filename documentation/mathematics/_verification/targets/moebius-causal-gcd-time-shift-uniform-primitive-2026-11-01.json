@@ -1,0 +1,87 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-01",
+  "title": "Exact causal Mobius gcd-time shift, physical mask, lossless uniform primitive transfer, genuine classical PNT-rate low-gcd profile",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "sources": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalGcdTimeShift.lean": "db0052901eca3050ed0ce812d3e0e7675c8fab05",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimitiveGcdOriginalMask.lean": "68c753cea187a51647a5213e7bea30b7ecdbdd5c",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimitiveGcdUniformTransfer.lean": "e373c0c6b638f19f5673e451738f11cb8b517d51",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPrimitiveGcdPNTProfile.lean": "f19007882a47ebfba41a869480d4e6aab583804c"
+  },
+  "exact_pinned_dependencies": {
+    "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleDoubleAbelAnalyticGates.lean": "b4bd9a83c83603faa5eff5326d9a99ec35dae2d4",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalPhysicalGramIntegrability.lean": "e23f62fc60ce5867e4c183117162c59ff4989b6f",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongIncomparableGcdReduced.lean": "18cedc1e613147793d3efee64b39b69ca560044b",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongIncomparableGcdStrata.lean": "d974d231d2b555484046684072f4e68d4892c3dc",
+    "Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean": "2504147e2230a26eb804b0898004d0186c4e36a1"
+  },
+  "expected_declarations": [
+    "GRWTSK.NumberTheory.Moebius.CausalGcdTimeShift.response_zero_of_nonpos",
+    "GRWTSK.NumberTheory.Moebius.CausalGcdTimeShift.pickupResponse_mul_timeShift",
+    "GRWTSK.NumberTheory.Moebius.CausalGcdTimeShift.pickupResponseGram_mul_timeShift",
+    "GRWTSK.NumberTheory.Moebius.CausalGcdTimeShift.originalSignedKernel_gcd_timeShift",
+    "GRWTSK.NumberTheory.Moebius.CausalGcdTimeShift.sourceDiagonal_gcd_timeShift",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdOriginalMask.strong_iff_far_and_true_diagonals",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdOriginalMask.physicalMass_gcd_shifted",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdOriginalMask.original_strong_gcd_mask_iff_shifted",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdUniformTransfer.primitive_source_term_eq_shifted",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdUniformTransfer.gcdWeightedPrimitiveCross_abs_le",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdUniformTransfer.smallGcd_abs_le_uniformPrimitive_of_gates",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdUniformTransfer.originalSmallGcd_allHorizonRate_of_uniformPrimitive",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdPNTProfile.smallGcd_eq_complete_energy_minus_paid",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdPNTProfile.smallGcd_abs_le_energy_and_original_bills",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdPNTProfile.smallGcd_abs_le_Mertens_and_paid",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdPNTProfile.smallGcd_abs_le_energyPower_and_paid"
+  ],
+  "open_lean_props": [
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdUniformTransfer.ExactPrimitiveGcdReturnTarget",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdUniformTransfer.PositiveGcdPowerSumTarget",
+    "GRWTSK.NumberTheory.Moebius.PrimitiveGcdUniformTransfer.UniformPrimitiveSignedAllHorizons",
+    "GRWTSK.NumberTheory.Moebius.StrongComparableIncomparable.ComparableAbsoluteRootTailTarget",
+    "GRWTSK.NumberTheory.Moebius.StrongOddCoprimeDilation.HighHighOddCreditRootTailTarget",
+    "GRWTSK.NumberTheory.Moebius.StrongIncomparableGcdStrata.LargeGcdAbsoluteRootTailTarget"
+  ],
+  "output_scope": {
+    "exact_analytic": "original response r_ga(u)=g^-1/2 r_a(u-log g); actual Gram K_T(ga,gb)=g^-1 K_(T-log g)(a,b) for g,a,b>=1 and any real T",
+    "exact_mask": "outside H and energy min>=q_N; shifted squarefree mask has min(d_a,d_b)>=g*q_N at t=T-log g",
+    "source_uniform_transfer": "if all-horizon uniform primitive signed estimate at epsilon then original small-gcd at epsilon with factor 1+1/epsilon, conditional on exact reindex and positive scalar power sum",
+    "classical_pnt": "uniform o(exp T) for low-gcd original signed source when D>=exp(beta*T) and 0<beta,epsilon<1, based on explicit Mertens-tail and positive bill Props; NOT RH-strength",
+    "fixed_power": "generic conditional original energy exponent theta transfer, preserves explicit positive losses",
+    "RH": "OPEN"
+  },
+  "independent_checks": {
+    "integer_exact_gcd_reconstruction": 568819,
+    "integer_exact_squarefree_sign": 223195,
+    "integer_exact_incomparable_mask": 197534,
+    "synthetic_fraction_double_triple_equalities": 80,
+    "total_exact_arithmetic_assertions": 989628,
+    "high_precision_response_covariance": 1400,
+    "high_precision_gram_covariance": 1400,
+    "high_precision_diagonal_covariance": 1400,
+    "numeric_decimal_digits": 80,
+    "actual_original_masked_double_triple_fixtures": 5,
+    "actual_original_masked_precision_digits": 75,
+    "actual_masked_max_absolute_error": "less than 1e-74",
+    "certified_real_interval_computation": false
+  },
+  "verification": {
+    "source_publication": "STAGED",
+    "lean_parser": "NOT_RUN",
+    "exact_types": "NOT_RUN",
+    "lake_build": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "no_sorry_scan": "LEXICAL_ONLY",
+    "external_pnt_lean_proof": "NOT_IMPORTED",
+    "external_fixed_power_lean_proof": "NOT_IMPORTED",
+    "root_import_modified": false,
+    "toolchain_modified": false,
+    "remote_runner_invoked": false
+  },
+  "canonical_RH_status": "OPEN"
+}

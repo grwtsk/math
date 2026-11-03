@@ -1,0 +1,88 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Original Möbius collar residual low-wave energy and all-rate bounded multiplicative ratios with negative odd-coprime sign credit",
+  "repository": "grwtsk/math",
+  "research_date": "2026-11-01",
+  "attribution": {
+    "mathematical": "grwtsk contributors",
+    "formalization_assistance": "OpenAI ChatGPT"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "preexisting_source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTerminalHighSmoothCrossShellCollar.lean",
+    "blob": "37ce65434d6d468c7815006ea3c5fbe7fbf50648"
+  },
+  "sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCollarResidualLowWave.lean",
+      "blob": "792ca30380389c5e491a738fb598f86786a57496",
+      "classification": "LEAN_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCollarResidualShortRatio.lean",
+      "blob": "12d234aa8977cefe3a587706a9de2360467a9e31",
+      "classification": "LEAN_SOURCE_PROOF_CANDIDATE"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-collar-residual-short-ratio-signed-frontier-2026-11-01.md",
+    "blob": "40fdd38a0d4f6d6053f5729c107cc727d2d516a8"
+  },
+  "literal_source": "all original moebiusReal(n), pickupResponseGram(T,m,n), exact original low-collar support, m!=n, finite original Nat.dist mask, both ordered orientations",
+  "established_mathematics": {
+    "full_residual_energy_identity": "collarResidualCross(B,empty,J) = integral_0^T (sum_{n in L} mu(n) r_n(u))^2 du - sum_{n in L} mu(n)^2 K_T(n,n)",
+    "full_residual_lower": "collarResidualCross(B,empty,J) >= -2 T^2, T=J log2",
+    "full_residual_absolute_transfer": "abs(R)<=pickupEnergy(T)+pickupDiagonal(T)+abs(collarIncidentCross(B,empty,J))",
+    "short_ratio_cap": "K=floor(exp(sqrt(T))); actual integer ratio k with 2<=k<=K",
+    "exact_split": "R=S_odd+S_other+R_long_or_incomparable",
+    "mobius_specific_sign": "S_odd<=0 for genuine odd-coprime ratios, using existing original moebius multiplicativity",
+    "uniform_short_ratio_bound": "for ALL banks, gap masks and chosen submasks, abs(S_selected)<=16*T*(1+T)*exp(sqrt(T)/2)",
+    "explicit_rate_constant": "C_epsilon=(64/epsilon)*(1+4/epsilon)*exp(1/(8*epsilon)); abs(S_selected)<=C_epsilon*exp(epsilon*T) for every epsilon>0",
+    "remaining_rh_strength": "all-positive-rate upper estimate of R_long_or_incomparable not proved; mathematically equivalent to entire collarResidualCross upper for any bank family"
+  },
+  "lean_targets": {
+    "full_low_wave_identity": "THEOREM_SOURCE_CANDIDATE_UNCHECKED",
+    "full_residual_lower": "THEOREM_SOURCE_CANDIDATE_UNCHECKED",
+    "short_ratio_original_partition": "THEOREM_SOURCE_CANDIDATE_UNCHECKED",
+    "odd_coprime_short_ratio_nonpos": "THEOREM_SOURCE_CANDIDATE_UNCHECKED",
+    "ShortRatioQuantitativeTarget": "PAPER_PROVED_LEAN_PROP_ONLY",
+    "ShortRatioUniformAllRateTarget": "PAPER_PROVED_LEAN_PROP_ONLY",
+    "full_residual_all_rate_upper": "OPEN",
+    "RiemannHypothesis": "OPEN"
+  },
+  "finite_diagnostics": {
+    "exact_integer_mobius_sign_checks": 6500,
+    "physical_signed_gram_fixtures": 160,
+    "source_masks": 4,
+    "true_prime_banks": 5,
+    "dyadic_levels": "J=1..8",
+    "all_passed": true,
+    "is_proof": false
+  },
+  "verification": {
+    "git_publication": "PASS_EXACT_FOUR_BLOB_READBACK",
+    "native_lean_compilation": "DEFERRED_PER_USER",
+    "parser": "NOT_RUN",
+    "expected_declaration_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "unsafe_native_audit": "NOT_RUN",
+    "root_imports_changed": false,
+    "existing_sources_modified": false
+  },
+  "issues": [
+    1556,
+    1429
+  ],
+  "authorization_boundary": "Source-only publication and mathematical work; no compiler, CI, Noe worker, scheduler or remote native replay.",
+  "publication": {
+    "source_commit": "ce7d6ea49e07fa1c3237253229b87ca9add37bab",
+    "parent_commit": "3b10848e77237a5f8fa1ccc7ab831ce13e72ac19",
+    "source_and_review_blob_readback": "PASS",
+    "changed_files": 4,
+    "guarded_non_force_ref_update": "PASS"
+  }
+}

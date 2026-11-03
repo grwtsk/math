@@ -1,0 +1,183 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT. -/
+import GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonSlicePrincipalSimplicity
+import GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.WilsonSliceExplicitLogGap
+import GRWTSK.FunctionalAnalysis.InnerProductSpacesAndTheirGeneralizationsHilbertSpaces.DiagonalHilbertDomain
+import Mathlib
+
+/-!
+# Whole invariant-slice regulated Wilson transfer Hamiltonian and its vacuum
+
+Local attribution: grwtsk contributors.
+
+This is NOT a finite-residue Gram or a Galerkin approximation. The carrier is
+the whole, already-constructed gauge-invariant L2 Hilbert space on all the
+actual spatial SU(2) Wilson links. The source-defined compact, symmetric,
+strictly positive Wilson transfer operator supplies the normalized logarithm
+on its MAXIMAL spectral square-summability domain, not a bounded total map.
+
+The full graph self-adjointness, density, nonnegativity, finite-regulator
+excitation lower bound, and principal eigenspace simplicity reuse existing
+source theorems. A new concrete witness below identifies the actual
+normalized principal eigenvector as a zero-energy vector of the same
+maximal-domain Hamiltonian. This pays its domain membership via the existing
+single-eigenspace Hilbert-sum theorem; no assumption that all L2 vectors
+lie in the log domain is introduced.
+
+This is a WHOLE-SPACE REGULATED TRANSFER Hamiltonian; a physical
+four-dimensional OS-completed Hamiltonian, finite-volume Hamiltonian
+equivalence to an electric-plus-magnetic Kogut--Susskind generator, and
+vacuum-compatible continuum limit still need separate source maps.
+The positive regulator gap depends on beta, L and physical spacing a.
+SOURCE_PROOF_CANDIDATE; LEAN_BUILD_NOT_RUN; FRESH_KERNEL_NOT_RUN;
+TRANSITIVE_AXIOMS_NOT_RUN.
+-/
+
+set_option autoImplicit false
+noncomputable section
+namespace GRWTSK.Geometry.GaugeTheory.WilsonFullRegulatedHamiltonian
+
+open MeasureTheory
+open GRWTSK.Geometry.GaugeTheory.WilsonSliceGaugeHilbert
+open GRWTSK.Geometry.GaugeTheory.WilsonSliceSpectralApproximation
+open GRWTSK.Geometry.GaugeTheory.WilsonSlicePositivePrincipal
+open GRWTSK.Geometry.GaugeTheory.WilsonSlicePrincipalSimplicity
+open GRWTSK.Geometry.GaugeTheory.WilsonSliceExplicitLogGap
+open GRWTSK.Analysis.InnerProductSpace.CompactPositiveLogarithm
+open GRWTSK.Analysis.InnerProductSpace.DiagonalHilbertDomain
+
+variable (L : ℕ) [NeZero L]
+
+/-- The whole closed, gauge-invariant slice Hilbert space is the target
+carrier, not an assumed finite-dimensional vector representation. -/
+abbrev RegulatedHilbert := gaugeInvariantSpace L
+
+/-- Actual source-defined maximal logarithmic domain on the entire Hilbert. -/
+abbrev HamiltonianDomain (β : ℝ) (hβ : 0 ≤ β) (a : ℝ) :
+    Submodule ℝ (RegulatedHilbert L) :=
+  logarithmicDomain L β hβ a
+
+/-- The source-defined full-space regulated transfer Hamiltonian.
+The domain is embedded in the TYPE. It is not an all-space bounded map. -/
+abbrev Hamiltonian (β : ℝ) (hβ : 0 ≤ β) (a : ℝ) :
+    HamiltonianDomain L β hβ a →ₗ[ℝ] RegulatedHilbert L :=
+  logarithmicOperator L β hβ a
+
+/-- Whole-space domain density, not just density of residue span. -/
+theorem domain_dense (β : ℝ) (hβ : 0 ≤ β) (a : ℝ) :
+    (HamiltonianDomain L β hβ a).topologicalClosure = ⊤ :=
+  logarithmicDomain_dense L β hβ a
+
+/-- Exactly the adjoint graph of the actual source-defined unbounded H.
+No unrestricted operator equality across missing domains is asserted. -/
+theorem selfAdjoint_graph (β : ℝ) (hβ : 0 ≤ β) (a : ℝ)
+    (x y : RegulatedHilbert L) :
+    (∀ z : HamiltonianDomain L β hβ a,
+       inner ℝ (Hamiltonian L β hβ a z) x =
+         inner ℝ (z : RegulatedHilbert L) y) ↔
+      ∃ hx : x ∈ HamiltonianDomain L β hβ a,
+        Hamiltonian L β hβ a ⟨x, hx⟩ = y :=
+  logarithmicOperator_adjoint_graph L β hβ a x y
+
+/-- The WHOLE actual maximal domain has a nonnegative Hamiltonian form. -/
+theorem Hamiltonian_nonnegative (β : ℝ) (hβ : 0 < β)
+    {a : ℝ} (ha : 0 < a)
+    (x : HamiltonianDomain L β hβ.le a) :
+    0 ≤ inner ℝ (x : RegulatedHilbert L)
+      (Hamiltonian L β hβ.le a x) :=
+  logarithmicOperator_nonnegative L β hβ ha x
+
+/-- Choose the actual source-constructed positive normalized principal
+eigenvector, using the full exact simplicity theorem. -/
+noncomputable def vacuum (β : ℝ) (hβ : 0 < β) : RegulatedHilbert L :=
+  Classical.choose (exists_unit_principal_spanning L β hβ)
+
+theorem vacuum_unit (β : ℝ) (hβ : 0 < β) :
+    ‖vacuum L β hβ‖ = 1 :=
+  (Classical.choose_spec (exists_unit_principal_spanning L β hβ)).1
+
+theorem vacuum_eigen (β : ℝ) (hβ : 0 < β) :
+    invariantOperator L β hβ.le (vacuum L β hβ) =
+      lambda0 L β hβ.le • vacuum L β hβ :=
+  (Classical.choose_spec (exists_unit_principal_spanning L β hβ)).2.1
+
+/-- No distinct principal eigenvector is missed: the source-proved principal
+eigenspace is generated by the actual unit vacuum. -/
+theorem vacuum_spans_principal (β : ℝ) (hβ : 0 < β)
+    (v : RegulatedHilbert L)
+    (he : invariantOperator L β hβ.le v =
+      lambda0 L β hβ.le • v) :
+    v = (inner ℝ (vacuum L β hβ) v) • vacuum L β hβ :=
+  (Classical.choose_spec (exists_unit_principal_spanning L β hβ)).2.2.2 v he
+
+/-- The vacuum as an ACTUAL member of the λ0 eigenspace in the Hilbert sum. -/
+private def vacuumFiber (β : ℝ) (hβ : 0 < β) :
+    Fiber (invariantOperator L β hβ.le) (lambda0 L β hβ.le) :=
+  ⟨vacuum L β hβ,
+    (Module.End.mem_eigenspace_iff).mpr (vacuum_eigen L β hβ)⟩
+
+/-- Reconstruct the chosen physical slice vector from its single actual
+principal eigenspace coordinate, with all other eigenspaces zero. -/
+private theorem vacuum_single (β : ℝ) (hβ : 0 < β) :
+    (spectralCoordinates L β hβ.le).symm
+      (lp.single 2 (lambda0 L β hβ.le) (vacuumFiber L β hβ)) =
+        vacuum L β hβ := by
+  exact coordinates_inverse_single
+    (invariantOperator L β hβ.le)
+    (GRWTSK.Geometry.GaugeTheory.WilsonSliceCompactOperator.invariantOperator_isCompactOperator
+      L β hβ.le)
+    (invariantOperator_isSymmetric L β hβ.le)
+    (vacuumFiber L β hβ)
+
+/-- The actual principal vector lies in the WHOLE maximal logarithmic
+domain: a single eigen-coordinate is square-summable for any finite weight. -/
+theorem vacuum_mem_domain (β : ℝ) (hβ : 0 < β) (a : ℝ) :
+    vacuum L β hβ ∈ HamiltonianDomain L β hβ.le a := by
+  change vacuum L β hβ ∈
+    DiagonalHilbertDomain.domain
+      (spectralCoordinates L β hβ.le)
+      (logWeight (invariantOperator L β hβ.le) a)
+  rw [← vacuum_single L β hβ]
+  exact DiagonalHilbertDomain.single_mem
+    (spectralCoordinates L β hβ.le)
+    (logWeight (invariantOperator L β hβ.le) a)
+    (lambda0 L β hβ.le) (vacuumFiber L β hβ)
+
+/-- The ACTUAL normalized transfer vacuum has zero regulator Hamiltonian
+energy, not just zero of an arbitrarily chosen quadratic form. -/
+theorem Hamiltonian_vacuum_zero (β : ℝ) (hβ : 0 < β)
+    (a : ℝ) :
+    Hamiltonian L β hβ.le a
+        ⟨vacuum L β hβ, vacuum_mem_domain L β hβ a⟩ = 0 := by
+  let U := spectralCoordinates L β hβ.le
+  let w := logWeight (invariantOperator L β hβ.le) a
+  have hs : w (lambda0 L β hβ.le) = 0 := by
+    dsimp [w, logWeight]
+    rw [div_self (ne_of_gt (lambda0_pos L β hβ))]
+    simp
+  have heq :
+      (⟨vacuum L β hβ, vacuum_mem_domain L β hβ a⟩ :
+          HamiltonianDomain L β hβ.le a) =
+        DiagonalHilbertDomain.singleVector U w
+          (lambda0 L β hβ.le) (vacuumFiber L β hβ) := by
+    apply Subtype.ext
+    exact (vacuum_single L β hβ).symm
+  change DiagonalHilbertDomain.operator U w
+    (⟨vacuum L β hβ, vacuum_mem_domain L β hβ a⟩ :
+      HamiltonianDomain L β hβ.le a) = 0
+  rw [heq, DiagonalHilbertDomain.operator_single, hs]
+  simp
+
+/-- Complete finite-regulator excitation estimate on the entire actual
+spectral complement. The condition excludes EVERY principal eigenvector,
+not merely finitely many residue observables. -/
+theorem full_excitation_lower_bound (β : ℝ) (hβ : 0 < β)
+    {a : ℝ} (ha : 0 < a)
+    (x : HamiltonianDomain L β hβ.le a)
+    (hperp : spectralCoordinates L β hβ.le (x : RegulatedHilbert L)
+      (lambda0 L β hβ.le) = 0) :
+    (-Real.log (1 - Real.exp (-24 * β * (L : ℝ)^3)) / a) *
+      ‖(x : RegulatedHilbert L)‖ ^ 2 ≤
+      inner ℝ (x : RegulatedHilbert L) (Hamiltonian L β hβ.le a x) :=
+  explicit_logarithmic_gap L β hβ ha x hperp
+
+end GRWTSK.Geometry.GaugeTheory.WilsonFullRegulatedHamiltonian

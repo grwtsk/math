@@ -1,0 +1,68 @@
+{
+  "attribution": "grwtsk contributors",
+  "cross_system_extractor_refinement": "OPEN",
+  "date": "2026-11-02",
+  "direct_imports": [
+    "GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/ScopedNatLeTransExpression.lean",
+    "GRWTSK/Combinatorics/GraphTheory/CheckedApplicationSoficBridge.lean"
+  ],
+  "facets": {
+    "expected_types": "NOT_RUN",
+    "fresh_independent_kernel_replay": "NOT_RUN",
+    "kernel_acceptance": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "positive_and_negative_meta_execution": "NOT_RUN",
+    "source_environment_authentication": "NOT_RUN",
+    "transitive_axiom_and_unsafe_audit": "NOT_RUN"
+  },
+  "final_source_blob": "BIND_AFTER_GUARDED_PUBLICATION",
+  "final_source_commit": "BIND_AFTER_GUARDED_PUBLICATION",
+  "hostile_tests": [
+    "wrong_theorem_head",
+    "missing_or_extra_argument",
+    "wrong_universe_levels",
+    "missing_or_out_of_context_fvar",
+    "repeat_fvar_identity",
+    "dependent_type_swap",
+    "ambient_unbound_type_dependency",
+    "unresolved_metavariable",
+    "closed_proof_has_unabstracted_fvar",
+    "wrong_return_type",
+    "candidate_edge_without_premises",
+    "proof_irrelevance_false_positive_if_only_meta_isDefEq_used"
+  ],
+  "inspected_import_blobs": {
+    "GRWTSK/Combinatorics/GraphTheory/CheckedApplicationSoficBridge.lean": "7cf8b5905fae6cd828b3dc65145529635cc605e2",
+    "GRWTSK/Combinatorics/GraphTheory/DefectEnrichedSoficLanguage.lean": "f0436ae18dd786e312a4966b27b2edc51e3d7fa1",
+    "GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/ScopedNatLeTransExpression.lean": "31cc997065f56f2a52eb4f47deb7f576face4aec"
+  },
+  "inspected_main_baseline": "a4f5bf1380f89929611f177bd5a163f8850f5c00",
+  "lake_manifest_blob": "c8044c56be77c58e6f41cca024b25237c59e8c79",
+  "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+  "mathlib_pin": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "module": "GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/ScopedNatLeTransDependentClosure.lean",
+  "native_execution_dispatched": false,
+  "proof_acceptance": false,
+  "reference_test": {
+    "assertions": 4332,
+    "candidate_only_triples": 780,
+    "failed": 0,
+    "kind": "independent symbolic toy, not Lean",
+    "range": "0..9",
+    "valid_truth_admissible_triples": 220
+  },
+  "repository": "grwtsk/math",
+  "schema": "grwtsk.math.source-verification-target/1",
+  "selected_declarations": [
+    "distinctExprs",
+    "ObservedDependentNatLeTrans",
+    "ObservedDependentNatLeTrans.original_exact",
+    "observeAndCloseDependentNatLeTrans",
+    "observeDependentNatLeTransReference",
+    "emit_dependent_nat_trans",
+    "emitted_dependent_nat_trans",
+    "emitted_dependent_nat_sofic_return"
+  ],
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "toolchain": "leanprover/lean4:v4.34.1"
+}

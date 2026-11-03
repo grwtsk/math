@@ -1,0 +1,168 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-01",
+  "title": "Original Möbius radical coefficient proof candidate, exact inverse majorant factorization gate, and signed incomparable gcd/lcm transport",
+  "attribution": "grwtsk contributors; OpenAI ChatGPT source-formalization assistance",
+  "repository": "grwtsk/math",
+  "publication_commit": "d9a3c527c6796a5b49689eaf39cb013a53f1e00e",
+  "publication_status": "PASS_NONFORCE_EXPECTED_HEAD_AND_BLOB_READBACK",
+  "classification": "SOURCE_PROOF_CANDIDATES_NOT_KERNEL_VERIFIED",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source_files": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDivisorCoefficientBridge.lean",
+      "blob": "970f6fbf7d9e3dc3e173ba561fa2a21dc2998377",
+      "lines": 208,
+      "source_goal": "OriginalWeightedRadicalConvolution",
+      "proof_status": "FULL_BY_SCRIPT_CANDIDATE_NOT_ELABORATED"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusRadicalInverseMajorantGate.lean",
+      "blob": "06cfd58947b86eb876b2050ee833df9f02078972",
+      "lines": 105,
+      "source_goal": "RadicalInverseCoefficientMajorant",
+      "proof_status": "CONDITIONAL_ON_EXACT_UNPROVED_RadicalInverseFactorization"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusIncomparableGcdLcm.lean",
+      "blob": "d1178838452604248726b5b6b28a697525624506",
+      "lines": 135,
+      "source_goal": "original incomparable signed gcd-lcm transport and lower compensation",
+      "proof_status": "FULL_BY_SCRIPTS_CANDIDATE_NOT_ELABORATED"
+    }
+  ],
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-divisor-bridge-inverse-incomparable-2026-11-01.md",
+    "blob": "9714de360366214435a1a747c226e1f31b61ed8e"
+  },
+  "direct_dependencies": [
+    {
+      "repository": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDivisorPNTTransfer.lean",
+      "blob": "3aed2ced84fd353f4738dee414b1bc77e6f225d1"
+    },
+    {
+      "repository": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDivisorRadicalReversible.lean",
+      "blob": "41321666e299d71f2eb1e24ee6eae260b2d60188"
+    },
+    {
+      "repository": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDivisorCausalGramCollapse.lean",
+      "blob": "6216cb9c8bc590a2dfe84132b8267c90a6622148"
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/ArithmeticFunction/Defs.lean",
+      "blob": "0ca7ae6840e8b50dca55a407ff9a7f194b3d7437",
+      "api": [
+        "IsMultiplicative.eq_iff_eq_on_prime_powers",
+        "IsMultiplicative.lcm_apply_mul_gcd_apply"
+      ]
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/ArithmeticFunction/Misc.lean",
+      "blob": "24382010ced603fc5daa48ec7ae3ca21ae13463b",
+      "api": [
+        "IsMultiplicative.prodPrimeFactors"
+      ]
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/NumberTheory/Divisors.lean",
+      "blob": "ae81687d75b07a3d466a7e4a2a99f705b100627a",
+      "api": [
+        "Nat.sum_divisors_prime_pow"
+      ]
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/Analysis/Real/Sqrt.lean",
+      "blob": "92936ac2ea8d16aff301eecc8983d24e0b1f65d2",
+      "api": [
+        "Real.sqrt_prod"
+      ]
+    },
+    {
+      "repository": "leanprover-community/mathlib4",
+      "path": "Mathlib/Data/Nat/PrimeFin.lean",
+      "blob": "751e319f042c0a3ff77272fb3e13b8472aad6489",
+      "api": [
+        "Nat.primeFactors_prime_pow"
+      ]
+    }
+  ],
+  "open_named_lean_targets": [
+    "RadicalInverseFactorization (new exact finite factorization from pinned Dirichlet inverse)",
+    "RadicalInverseCoefficientMajorant (old exact goal; only conditional theorem supplied)",
+    "RadicalInversePrimePowerFormula (preexisting unproved in Lean)",
+    "RadicalDirichletKernelSummable (preexisting unproved in Lean)",
+    "OriginalResponseAreaStieltjes (preexisting unproved in Lean)",
+    "OriginalOrderedDivisibilityBridge (preexisting unproved in Lean)",
+    "Complete original signed incomparable-index all-positive-rate upper estimate on one fixed AffineFrequent G"
+  ],
+  "mathematical_results": [
+    "mu(n)*sum_{d|n}mu(d)/sqrt(d)=(radicalArithmetic*realMoebiusArithmetic)(n) for all n>0, by true prime powers",
+    "h inverse g has mathematical prime-power formula g(p^k)=-p^-1/2*(1-p^-1/2)^(k-1), and |g(n)|<=h(n)",
+    "mu(m)*mu(n)=mu(gcd(m,n))*mu(lcm(m,n)) for all source indices, including squareful zeros",
+    "incomparable original ordered Gram equals full original cross minus the exact comparability sector and can be written with gcd/lcm signs",
+    "for T>=0: incomparableGcdLcmKernel(T) >= -2*T^2 - originalOrderedDivisibility(T) (necessary lower compensation, NOT RH upper bound)",
+    "primitive coprime gcd-dilation source decomposition is paper only, not Lean formalized"
+  ],
+  "finite_checks": {
+    "classification": "FINITE_RATIONAL_EXACT_AND_FLOAT64_NOT_FORMAL_PROOF",
+    "actual_radical_Mobius_indices": 6000,
+    "max_weighted_coefficient_error": 2.185751579730777e-16,
+    "max_inverse_product_error": 7.24247051220317e-17,
+    "max_inverse_return_error": 4.440892098500626e-16,
+    "max_inverse_majorant_rounding_residual": 5.551115123125783e-17,
+    "toy_rational_indices": 192,
+    "toy_rational_equalities": 576,
+    "source_gcd_lcm_pair_checks": 12442,
+    "original_gram_horizons": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "preflight_script_sha256": "ab2bb0caddf295d951656bb93d5d071dc8772294b6e3aff6f84f7e8f90213064",
+    "preflight_result_sha256": "a613e1271e36c1e7607f3b4214ef6c2c24413528d78da5787e33f7545a295415",
+    "incomparable_script_sha256": "10f30529a0cc1cbd5350fd5c0e11900102e2b45f2d8e5ea07dadea00c20d0555",
+    "incomparable_result_sha256": "f307cc055aa2f180f5dae4c8bf31e3493808da667e2da989a4fb894bc38e700d"
+  },
+  "verification": {
+    "git_publication": "PASS",
+    "exact_blob_readback": "PASS_4_OF_4",
+    "source_static_scan_no_authored_sorry_axiom_unsafe": true,
+    "lean_parsing": "NOT_RUN",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "complete_transitive_axiom_audit": "NOT_RUN",
+    "root_import_changed": false,
+    "toolchain_changed": false,
+    "existing_mathematical_definitions_changed": false,
+    "native_runner_dispatched": false,
+    "remote_ci_dispatched": false,
+    "scheduler_dispatched": false,
+    "independent_RH_cancellation_supplier": "OPEN",
+    "RiemannHypothesis": "UNPROVED"
+  },
+  "next_steps": [
+    "Compile the 3 new modules against the complete pinned closure; repair only verified Lean elaboration errors",
+    "Prove unconditional RadicalInverseFactorization from the existing radicalInverse and its prime-power recursion/multiplicativity",
+    "Kernel check and transitive axiom audit the original coefficient bridge and inverse majorant after successful compilation",
+    "Formalize primitive-coprime gcd-dilation Gram and pursue noncircular all-positive-rate upper cancellation on the complete signed original source"
+  ],
+  "related_issues": [
+    1556,
+    1559,
+    1429,
+    1406,
+    15
+  ]
+}

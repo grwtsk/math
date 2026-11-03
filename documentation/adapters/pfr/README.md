@@ -34,6 +34,17 @@ are retained when present. This package is outside root default imports/builds.
 See catalogue.json for every library, source module/blob, config and dependency
 pin, and the canonical paper ledger for evidence scope and unresolved bridges.
 
+## Original-source energy return
+
+The source candidate `GRWTSK.Combinatorics.PfrOriginalEnergyTransport`
+returns the selected PFR dense-slice energy bound to the original input
+`Finset A` through an injective quadruple translation. The quantitative
+`2*K^9` and source/H/B constraints remain unchanged. The
+[mathematical review](../../mathematics/_support/reviews/pfr-original-energy-transport-2026-11-02.md)
+records the exact one-sided transport, hostile cases and NOT_RUN native
+verification. Keep this module in the isolated PFR package, not the
+root Lean 4.34.1 default target.
+
 ## Consumer wave 2026-10-29
 
 New subject-organized source candidates: `adapters/pfr/GRWTSK/Combinatorics/SmallDoublingDifferenceCover.lean`. See

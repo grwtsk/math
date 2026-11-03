@@ -1,0 +1,126 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-01",
+  "title": "Original growing-prime-bank Euler Chebyshev half-moment via pinned finite Abel",
+  "repository": "grwtsk/math",
+  "mathematical_attribution": "grwtsk contributors",
+  "formalization_assistance": "OpenAI ChatGPT",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusChebyshevWeightedPrimeAbel.lean",
+    "blob": "6c3dde6b6c815b7da37c5740fbeea70947a6383d",
+    "classification": "LEAN_SOURCE_PROOF_CANDIDATE",
+    "root_import": false,
+    "new_axioms": 0,
+    "new_sorries": 0
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-chebyshev-prime-sqrt-finite-abel-2026-11-01.md",
+    "blob": "b8628477fdc8465cabff2303ef712c4c7acb354d"
+  },
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "root_unchanged": true
+  },
+  "expected_public_declarations": [
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.shifted_primeLog_sum_eq_theta",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.prime_log_over_sqrt_le_two_logFour_sqrt",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.prime_sqrt_mass_le_sixteen",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.chebyshevPrimeSqrtMassFormalizationTarget",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.bankSquareRootWeight_le_exp_sixtyfour",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.bankSquareRootWeight_le_exp_of_nearcritical_budget",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.original_masked_high_low_nearcritical_budget",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.original_masked_low_high_nearcritical_budget"
+  ],
+  "private_helpers": [
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.sum_succ_range_eq_Icc",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.primeLogCoeff",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.shiftedPrimeLog",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.shiftedInvSqrt",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.shiftedInvSqrt_antitone",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.log_le_four_sqrt_sqrt",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.log_four_le_two",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.smallPrimes",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.largePrimes",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.smallPrimeInvSqrt_le_two_rootroot",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.largePrime_log_lower",
+    "GRWTSK.NumberTheory.Moebius.ChebyshevWeightedPrimeAbel.largePrimeInvSqrt_le_logMass"
+  ],
+  "source_exact_math": [
+    "forall N:Nat, sum_{prime p<=N} log(p)/sqrt(p) <= 2*log(4)*sqrt(N), using Mathlib Finset Abel comparison and Chebyshev theta upper",
+    "forall Y>=256, sum_{prime p<=Y} 1/sqrt(p) <=16 sqrt(Y)/log(Y), stronger than original 19 target",
+    "source target ChebyshevPrimeSqrtMassFormalizationTarget is mathematically discharged without hCheb premise",
+    "forall original finite true-prime bank B with primes<=Y and Y>=256, V_B<=exp(64 sqrt(Y)/logY), stronger than previous 76",
+    "explicit near-critical budget 64 sqrt(Y)/logY<=eps*T permits V_B<=exp(eps*T)",
+    "Original signed high/low physical dyadic packet consumes numerical budget but still has absolute rate 1/2+eps+o(1); no LL/mixed cancellation",
+    "Second original signed low/high ordered face independently satisfies the same explicit numerical near-critical bank budget, with no tag-symmetry assumption."
+  ],
+  "pinned_mathlib": [
+    {
+      "path": "Mathlib/Algebra/Order/Chebyshev.lean",
+      "blob": "1cb4cfa28e40dda627ca610aee01bb36945c7b1d",
+      "lemma": "Finset.sum_mul_le_sum_mul_of_sum_range_le"
+    },
+    {
+      "path": "Mathlib/NumberTheory/Chebyshev.lean",
+      "blob": "0c70e9d4de7e8d454df1a5840334ef3e0dcbf777",
+      "lemma": "Chebyshev.theta_le_log4_mul_x"
+    },
+    {
+      "path": "Mathlib/NumberTheory/PrimeCounting.lean",
+      "blob": "a9d6b59349f06c735cd99e7c5693f017c72282d1",
+      "lemma": "Nat.primesLE_eq_filter_Icc_one"
+    },
+    {
+      "path": "Mathlib/Analysis/SpecialFunctions/Pow/Real.lean",
+      "blob": "6e3f62550a758e94a1d513133cd744406b319e41",
+      "lemma": "Real.log_le_rpow_div"
+    }
+  ],
+  "existing_source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGrowingPrimeBankEulerCost.lean",
+      "blob": "73e4f1ed05e57ecd3d6c8e5ec9e20649e201d7b1"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDyadicBirthHighLowLongGap.lean",
+      "blob": "b327c384f1228b0a5faeeabafa99c42bc1bd93d2"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusQuantitativeMertensAbsoluteAbel.lean",
+      "blob": "b2fe063451f58ff9b892aa164d780bd20279192e"
+    }
+  ],
+  "independent_reference": {
+    "script": "/mnt/data/moebius_chebyshev_prime_mass_abel_preflight.py",
+    "sha256": "5223032f7eb045bec4f0317e998e323ff1262574e71b41a032f8068827861c46",
+    "result": "/mnt/data/moebius_chebyshev_prime_mass_abel_preflight_result.json",
+    "result_sha256": "b8c296e0fe10f242e88f541f07fd4798c366143215c9e3578b664fa8c4b55650",
+    "checks": 11854,
+    "precision_digits": 90,
+    "prime_sieve_max": 25000,
+    "type": "FINITE_EXACT_INTEGER_AND_FLOATING_REFERENCE_NOT_FORMAL_PROOF",
+    "status": "PASS"
+  },
+  "remaining": [
+    "pinned Lean expected-type compilation and entire transitive imported source closure",
+    "fresh independent kernel replay and transitive axiom/private/unsafe audit",
+    "formal quantify nearcritical T^2(logT)^alpha alpha<2 asymptotics",
+    "all-positive-rate original signed low/low and both ordered matched high/low long-gap cancellation on fixed covering scales",
+    "canonical Riemann Hypothesis"
+  ],
+  "verification": {
+    "publication": "SOURCE_CANDIDATE_PENDING_EXPECTED_HEAD_UPDATE",
+    "git_readback": "PENDING_EXACT_GIT_READBACK",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "CI_dispatched": false,
+    "native_runner_dispatched": false,
+    "scheduler_dispatched": false,
+    "RH": "OPEN"
+  },
+  "passive": true,
+  "expected_main_parent": "67f3c241a6758b19f30a2df247ab72a36e128bde"
+}

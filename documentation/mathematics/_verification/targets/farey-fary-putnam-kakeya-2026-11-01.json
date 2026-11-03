@@ -1,0 +1,47 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Farey-Fary-Putnam-Kakeya source-preserving signed incidence and physical row overlap",
+  "date": "2026-11-01",
+  "mathematical_owner": "grwtsk/math",
+  "source_blob_sha": {
+    "GRWTSK/Combinatorics/GraphTheory/SignedIncidenceCongestion.lean": "6d98c3fb36e05bd4ca150e03ae747bdf9bc93cfc",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFareyFaryKakeyaIncidence.lean": "5e55acad7ac04a4250aeecbac59447ce5e54a843"
+  },
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "root_import_changed": false
+  },
+  "status": {
+    "source": "SOURCE_CANDIDATE",
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "independent_finite_arithmetic": "8113_EXACT_RATIONAL_ASSERTIONS_PASS",
+    "millennium_claim": "NOT_CLAIMED"
+  },
+  "target_declarations": [
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SignedIncidenceCongestion.abs_orderedCross_le_weighted_degree",
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SignedIncidenceCongestion.threshold_degree_mul_le_row",
+    "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.SignedIncidenceCongestion.abs_thresholdCross_le_weighted_rows",
+    "GRWTSK.NumberTheory.Moebius.FareyFaryKakeyaIncidence.originalIncidenceCross_abs_le_weighted_degree",
+    "GRWTSK.NumberTheory.Moebius.FareyFaryKakeyaIncidence.endpointSum_le_weighted_degree_and_remainder",
+    "GRWTSK.NumberTheory.Moebius.FareyFaryKakeyaIncidence.farey_zero_one_has_arbitrary_spokes",
+    "GRWTSK.NumberTheory.Moebius.FareyFaryKakeyaIncidence.originalPhysicalThresholdCross_abs_le_rows",
+    "GRWTSK.NumberTheory.Moebius.FareyFaryKakeyaIncidence.endpointSum_le_physical_rows_and_signed_remainder"
+  ],
+  "consumers": [
+    "grwtsk/math#119",
+    "grwtsk/math#118",
+    "grwtsk/math#1556",
+    "grwtsk/math#15"
+  ],
+  "open": [
+    "Construct a source-defined favorable d-dimensional tube family for the actual endpoint indices",
+    "Derive source-exact physical row-overlap bounds and preserve scale/eta losses",
+    "Bound the complete complementary signed Möbius sector at every positive rate on one fixed affine-frequent scale set",
+    "Compile and kernel-audit exact source and full dependencies"
+  ],
+  "execution_authority": "passive verification target only; no remote dispatch"
+}

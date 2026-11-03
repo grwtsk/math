@@ -1,0 +1,83 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "title": "Global original Möbius cross-shell terminal high-smooth collar with uniformly growing finite-prime banks",
+  "research_date": "2026-11-01",
+  "repository": "grwtsk/math",
+  "attribution": "grwtsk contributors; formalization assistance OpenAI ChatGPT",
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTerminalHighSmoothCrossShellCollar.lean",
+    "blob": "37ce65434d6d468c7815006ea3c5fbe7fbf50648",
+    "status": "SOURCE_PROOF_CANDIDATE",
+    "root_imported": false
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-terminal-high-smooth-cross-shell-collar-2026-11-01.md",
+    "blob": "6925ec425454a8b45d918a8c0d881497687dadd3"
+  },
+  "preexisting_sources": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothDensePairs.lean",
+      "blob": "cef7c06a794cec1cef423c2ebfa3b6d0221087ad"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothCofactorCountProof.lean",
+      "blob": "6899657e4ad54cf56fd7e907966d4d9bc2f7f3f8"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothIncidentDyadic.lean",
+      "blob": "8380317cf1a5259c46e1548940cf324accbacbde"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothAllRateProof.lean",
+      "blob": "152e6d7a840240bd2676e02fe36eacf36e0ed5f3"
+    }
+  ],
+  "fixed_grid": {
+    "time": "J*log(2), J>=1",
+    "coverage": "alpha=1, beta=log(2), T0=0",
+    "prime_bank": "B_J is finite genuine primes, card(B_J)<=floor(sqrt J), may grow with J"
+  },
+  "exact_original_source": "pickupCross(T_J)=collarIncidentCross(B_J,empty,J)+collarResidualCross(B_J,empty,J), ordered signed mu(m)*mu(n)*pickupResponseGram, m!=n, original terminal cutoff",
+  "paper_bound": "abs(collarIncidentCross(B_J,A,J))<=16*T_J*(floor(sqrt J)+1)*2^((floor(sqrt J)+1)/2)*exp(2*sqrt(T_J))*(1+J)^card(B_J) for every finite additive-gap mask A",
+  "paper_consequence": "uniform across all admissible bank families and all masks, every epsilon>0 exists bank-independent C_epsilon such that abs(incident)<=C_epsilon*exp(epsilon*T_J)",
+  "remaining_formalization_targets": {
+    "TerminalCollarQuantitativeTarget": "PROP_NOT_PROVED_IN_LEAN",
+    "UniformCollarAllRateTarget": "PROP_NOT_PROVED_IN_LEAN",
+    "finite_source_partition": "LEAN_PROOF_CANDIDATE",
+    "endpoint_comparison": "LEAN_PROOF_CANDIDATE",
+    "source_allRate_remainder_equivalence": "CONDITIONAL_LEAN_PROOF_CANDIDATE"
+  },
+  "hostile_control": "three-prime {2,3,5} signed orbit waveform at original u=log(10) is negative; no arbitrary bank orbit positivity assumption",
+  "diagnostics": {
+    "support_count_cases": 50,
+    "signed_masked_global_partition_and_bound_cases": 140,
+    "three_prime_wave_rational_sign": "PASS",
+    "certifies_proof": false
+  },
+  "verification": {
+    "source_publication": "PASS_EXACT_THREE_BLOB_READBACK",
+    "lean_compilation": "DEFERRED_PER_USER",
+    "parser": "NOT_RUN",
+    "expected_type_checks": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_unsafe_audit": "NOT_RUN",
+    "global_collar_residual_all_positive_rate": "OPEN",
+    "canonical_RiemannHypothesis": "OPEN"
+  },
+  "related_issues": [
+    1556,
+    1429
+  ],
+  "source_publication_commit": "1c9863f0f306177910f933ec8b9a51f0cf63b44a",
+  "source_publication_parent": "703cc95438d191e9f22fe3e27d21a871bdc74d0d",
+  "source_published_exact_blobs": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusTerminalHighSmoothCrossShellCollar.lean": "37ce65434d6d468c7815006ea3c5fbe7fbf50648",
+    "documentation/mathematics/_support/reviews/moebius-terminal-high-smooth-cross-shell-collar-2026-11-01.md": "6925ec425454a8b45d918a8c0d881497687dadd3",
+    "documentation/mathematics/_verification/targets/moebius-terminal-high-smooth-cross-shell-collar-2026-11-01.json": "149132d3a6192ce03a128bc67d6e983f3d928d01"
+  }
+}

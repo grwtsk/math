@@ -1,0 +1,200 @@
+{
+  "schema": "grwtsk.math.source-heat-relations.v1",
+  "date": "2026-11-02",
+  "repo": "grwtsk/math",
+  "topic": "Source-exact gaussian log-frequency heat stability and original signed Gram return",
+  "scope": "Source module/issue-bound inspection; not an exhaustive private cache or full mathematical repository audit",
+  "original_source": "GRWTSK.RiemannHypothesis.CCC.wholePickup, pickupEnergy, pickupDiagonal, pickupCross",
+  "heat_time": "s(T)=exp(-2*T), separate from original source physical time u",
+  "pinned": {
+    "Lean": "leanprover/lean4:v4.34.1",
+    "Mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "sources": [
+    {
+      "id": "original",
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "blob": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+      "meaning": "Original signed mu(n), causal pickup, complete signed offdiagonal/energy"
+    },
+    {
+      "id": "inverse-sqrt-population",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusQuantitativeMertensAbsoluteAbel.lean",
+      "blob": "b2fe063451f58ff9b892aa164d780bd20279192e",
+      "meaning": "Finite source input invsqrt_range_sum_le_two_sqrt; classical separate Mertens premises NOT consumed"
+    },
+    {
+      "id": "positive-radius",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDecoderPositiveResponse.lean",
+      "blob": "35686a42c743827cad84898acd5e08f9e1fd6c37",
+      "meaning": "Actual pointwise radius and causal integral energy"
+    },
+    {
+      "id": "heat-coeff",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianLogHeatSource.lean",
+      "blob": "e7443337b95b8491492acfa120809f6873f77ef1",
+      "meaning": "Actual original-index signed log-Gaussian coefficients and exact error"
+    },
+    {
+      "id": "heat-energy",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatStabilityReturn.lean",
+      "blob": "6ada761844e06d099811f06fea89db897ca1290e",
+      "meaning": "Original vs heat two-way physical energy, signed source intact"
+    },
+    {
+      "id": "schedule",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatVanishingSchedule.lean",
+      "blob": "47291584104530cfdf59475a50c494a821de44a9",
+      "meaning": "Same s(T)=exp(-2T), original log cutoff, coarse M<=2, error energy<=16T"
+    },
+    {
+      "id": "sharp",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatSharpSourceEnvelope.lean",
+      "blob": "bb74da49d0f69d3accdb43281b67b8a800ea03ee",
+      "meaning": "New inverse-sqrt sharp mass bound and exp(-3T) error energy"
+    },
+    {
+      "id": "absolute",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianHeatAbsoluteEnergyStability.lean",
+      "blob": "eb3d30a9b103fe8a26e1f1448c6f9d8d44fd86cf",
+      "meaning": "New exp(-T) absolute energy/cross/endpoint error and RH conditional"
+    },
+    {
+      "id": "quadrature",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupEndpointQuadrature.lean",
+      "blob": "2606536c56bdcb33d120aeddfbcbeef793e31ba1",
+      "meaning": "Actual <=1/4 complete signed endpoint correction"
+    },
+    {
+      "id": "dyadic",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicSignedResidueWaveform.lean",
+      "blob": "07dfdae4a60b05f5da55cc20882411c85444fa82",
+      "meaning": "Whole parity/nonunit source signed square equals pickupEnergy at dyadic T"
+    },
+    {
+      "id": "RH",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/GoodScaleEnergyCriterion.lean",
+      "blob": "ca3ae4975b20cf796a167308a9e87546c6001c41",
+      "meaning": "Existing single fixed AffineFrequent G original signed cross RH consumer"
+    },
+    {
+      "id": "historical",
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/SignedFiniteTimeHeatOfTheActualCompensatedSource.lean",
+      "blob": "bf8f6c2db3fb46458c0b91d50e6c7c38d01dce79",
+      "meaning": "Different compensated Fourier k exp(-sk²) source; NOT imported as Mobius theorem"
+    },
+    {
+      "id": "historical-boundary",
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/ExactFiniteHeatRemainderAndItsAbsoluteMassBoundary.lean",
+      "blob": "713359410b20ea65daf40908ff260b90aac19816",
+      "meaning": "Different heat signed remainder and growing absolute-mass warning"
+    }
+  ],
+  "edges": [
+    {
+      "from": "inverse-sqrt-population",
+      "to": "sharp",
+      "status": "EXACT_SOURCE_FINITE_POPULATION",
+      "detail": "original index 1..floor exp T, sum 1/sqrt n <=2sqrt exp T"
+    },
+    {
+      "from": "schedule",
+      "to": "sharp",
+      "status": "STRICTLY_STRONGER_SOURCE_BOUND",
+      "detail": "M <=2 e^-2T T² sqrt expT and B<=16 T^5 e^-3T"
+    },
+    {
+      "from": "positive-radius",
+      "to": "sharp",
+      "status": "FINITE_SOURCE_RECONSTRUCTION",
+      "detail": "Actual source error coefficient eta=abs mu*(1-e^-s log² n)"
+    },
+    {
+      "from": "heat-coeff",
+      "to": "sharp",
+      "status": "NO_NEW_ARITHMETIC_ASSUMPTION",
+      "detail": "Everything attached to the original n and same T,u"
+    },
+    {
+      "from": "original",
+      "to": "sharp",
+      "status": "ABSOLUTE_PHYSICAL_WAVE_BOUNDS",
+      "detail": "|F|<=4sqrt expT and |F_s|<=4sqrt expT"
+    },
+    {
+      "from": "sharp",
+      "to": "absolute",
+      "status": "FINITE_SIGNED_ALGEBRA",
+      "detail": "|F²-F_s²|<=32 T² e^-T, integrate to 32 T³ e^-T"
+    },
+    {
+      "from": "original",
+      "to": "absolute",
+      "status": "EXACT_DIAGONAL_SIGNED_CROSS",
+      "detail": "Cross=Energy-originalDiagonal; heatCorrectedCross=heatedEnergy-originalDiagonal"
+    },
+    {
+      "from": "quadrature",
+      "to": "absolute",
+      "status": "EXACT_BOUND",
+      "detail": "|endpointSum - heatCorrectedCross|<=1/4+32 T³ e^-T"
+    },
+    {
+      "from": "dyadic",
+      "to": "absolute",
+      "status": "EXACT_SOURCE_ENERGY",
+      "detail": "Complete four-parity/nonunit residue energy shares same absolute discrepancy at dyadic horizon"
+    },
+    {
+      "from": "RH",
+      "to": "absolute",
+      "status": "CONDITIONAL_RETURN",
+      "detail": "SubexponentialOn(heatCorrectedCross,G) iff SubexponentialOn(originalCross,G); genuine all-rate bound OPEN"
+    },
+    {
+      "from": "historical",
+      "to": "heat-coeff",
+      "status": "RELEVANT_ONLY_NOT_SOURCE_EQUAL",
+      "detail": "k exp(-s k²) signed filter distinct compensated Fourier source"
+    },
+    {
+      "from": "historical-boundary",
+      "to": "sharp",
+      "status": "WARNING_BOUNDARY",
+      "detail": "Historical absolute coefficient mass is not unit mass; current near-identity schedule does not solve source cancellation"
+    }
+  ],
+  "derived_mathematics": [
+    "forall T>=0: M_s(T) <=2*T^2*exp(-3T/2)",
+    "forall T>=0: radiusEnergy(s(T),T) <=16*T^5*exp(-3T)",
+    "forall T>=0: abs(pickupEnergy(T)-heatEnergy(s(T),T)) <=32*T^3*exp(-T)<=192",
+    "heatCorrectedCross(T):=heatEnergy(s(T),T)-pickupDiagonal(T)",
+    "forall T>=0: abs(pickupCross(T)-heatCorrectedCross(T)) <=32*T^3*exp(-T)<=192",
+    "forall T>=0: abs(endpointSum(T)-heatCorrectedCross(T))<=1/4+32*T^3*exp(-T)",
+    "forall fixed G: SubexponentialOn(heatCorrectedCross,G) iff SubexponentialOn(pickupCross,G)",
+    "if one fixed G is AffineFrequent and heatCorrectedCross has all-positive-rate upper on G then canonical RH follows, BUT NO ALL-RATE SUPPLIER IS PROVED"
+  ],
+  "remaining_constraints": [
+    "Native Lean compilation, expected types, fresh kernel and transitive axiom audit NOT_RUN",
+    "Heat multiplier is not a proven Tao/Rodgers xi theta-kernel intertwiner",
+    "Gaussian coefficient-space L2 contraction does not imply physical signed Gram contraction",
+    "Heat time shrinks so fast that near-identity proximity does not supply the RH-strength heat-observed all-rate signed estimate",
+    "One fixed G before rate epsilon, no future-dependent favorable scale choice",
+    "All squareful mu=0 original integer atoms and both signed pair orientations retained"
+  ],
+  "numeric_preflight": {
+    "status": "PASS_FINITE_NONRIGOROUS",
+    "checks": 14493,
+    "dps": 65,
+    "script_path": "/mnt/data/moebius_heat_exponential_stability_preflight_20261102.py",
+    "script_sha256": "5c8b2e2f6fc4056f4dae0b42ccf5904cbadd1cd68399a1ac48c9a777a9916fa6",
+    "json_path": "/mnt/data/moebius_heat_exponential_stability_preflight_20261102.json",
+    "json_sha256": "cb30865897d45774c5c88e4b05c929041e30162fad31134570f25efb8c644958"
+  },
+  "native_verification": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN"
+  }
+}

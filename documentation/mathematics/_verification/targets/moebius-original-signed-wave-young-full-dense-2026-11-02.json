@@ -1,0 +1,150 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Original signed two-wave interval Young and complete original four-tag dense source reduced to two low-wave energies",
+  "repo": "grwtsk/math",
+  "attribution": "grwtsk contributors",
+  "formalization_assistance": "OpenAI ChatGPT",
+  "new_source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSignedWaveYoungTransfer.lean",
+    "blob": "b3e1ec12a113dae03ca936411739fb0de8b93b36",
+    "status": "LEAN_SOURCE_PROOF_CANDIDATE",
+    "root_import": false,
+    "source_lines": 578,
+    "axiom_declarations": 0,
+    "sorry_declarations": 0
+  },
+  "review": {
+    "path": "documentation/mathematics/_support/reviews/moebius-original-signed-wave-young-full-dense-2026-11-02.md",
+    "blob": "87b43e371857230be780b2b66e9cc6f219e15fda"
+  },
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "root_unchanged": true
+  },
+  "expected_public_declarations": [
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.interval_young_for_continuous",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.taggedSourceWave_continuous",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.tagged_waves_integral_young",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.masked_rect_abs_le_half_source_energies",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.high_wave_energy_le_absolute_envelope",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.original_high_low_young",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.original_low_high_young",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.original_full_tagged_le_four_wave_energies",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.original_full_tagged_le_low_energies_plus_known_high",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.original_full_tagged_le_of_two_low_wave_bounds",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.original_high_low_le_low_energy_plus_known_high",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.original_low_high_le_low_energy_plus_known_high",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.original_full_moebius_dense_le_two_low_energies",
+    "GRWTSK.NumberTheory.Moebius.SignedWaveYoungTransfer.original_full_moebius_dense_le_of_two_low_energy_bounds"
+  ],
+  "original_source_dependencies": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusSignedMaskWaveEnergyBridge.lean",
+      "blob": "c024877cd1d9f3711f0ddad7259de15b1d2bbfdd"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDyadicBirthHighLowLongGap.lean",
+      "blob": "b327c384f1228b0a5faeeabafa99c42bc1bd93d2"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothDensePairs.lean",
+      "blob": "cef7c06a794cec1cef423c2ebfa3b6d0221087ad"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusHighSmoothDenseGramBound.lean",
+      "blob": "907f5ab7725524c01375c3d64bdb43383f8f51b6"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusBalancedTwoSidedPNTDense.lean",
+      "blob": "8abba800d86af6cee6065b11dfff52713ae85785"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleCausalPhysicalGramIntegrability.lean",
+      "blob": "e23f62fc60ce5867e4c183117162c59ff4989b6f"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusEndpointPutnamSparseGapYoung.lean",
+      "blob": "6a424d78ae93cc82e35fae3bb3d20a5a3616c7b2"
+    }
+  ],
+  "pinned_mathlib": [
+    {
+      "path": "Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean",
+      "repo": "leanprover-community/mathlib4",
+      "blob": "2504147e2230a26eb804b0898004d0186c4e36a1",
+      "theorems": [
+        "intervalIntegral.integral_mono",
+        "intervalIntegral.integral_add",
+        "intervalIntegral.integral_const_mul",
+        "intervalIntegral.integral_nonneg"
+      ]
+    },
+    {
+      "path": "Mathlib/Algebra/Order/Chebyshev.lean",
+      "repo": "leanprover-community/mathlib4",
+      "blob": "1cb4cfa28e40dda627ca610aee01bb36945c7b1d",
+      "context": "Previous nearcritical prime bank target; no new numeric bank assumption in this source"
+    }
+  ],
+  "exact_claims": [
+    "For ANY two real continuous functions on [0,T], T>=0, 2*abs(int_0^T f*g)<=int_0^T f^2+int_0^T g^2; proved by integral monotonicity applied separately to (f-g)^2 and (f+g)^2.",
+    "For original signed taggedSourceWave P a I with all true indices positive, continuous in physical time; the same interval Young inequality uses the ACTUAL physical response, including original signs.",
+    "For ANY original finite source I,J subsets balancedBlock X T, X>=1 and T=log(2X), original signed masked rectangle <=(E_(P,a,I)+E_(P,b,J))/2+C_A, C_A=4log2(1+2card A). Both ordered independent tags, diagonal exclusion, gap mask, and original Gram retained.",
+    "For H=highSmoothBlock B X T, original positive high unary energy E_H,a <=8log2 exp(2sqrt T)V_B^2+4log2 (existing HH masked bound plus exact empty mask defect).",
+    "Both original ordered signed HL and LH packets <=(corresponding ORIGINAL low unary wave energy + known high energy envelope)/2+C_A, with no low-energy bound assumed.",
+    "Complete original taggedDenseRectangle <=E_low,a+E_low,b+2U_B(T)+4C_A (U_B as explicit high bound) for every source tags a,b; all four true source strata retained.",
+    "Complete original unpartitioned moebiusReal originalDenseRectangle <=4(E_low,rough+E_low,matched)+8U_B(T)+16C_A, preserving all four ordered rough/matched tag channels.",
+    "Only separate conditional consumers, with explicit hLowa/hLowb, replace both low energies by M; no all-positive-rate low energy admitted in unconditional theorems."
+  ],
+  "finite_audit": {
+    "script": "/mnt/data/moebius_signed_wave_young_preflight.py",
+    "script_sha256": "4b06b1c5ab9f5e05a71d6c23200769d02f4278f9df2a8a560838be2b236fdb89",
+    "results": "/mnt/data/moebius_signed_wave_young_preflight_result.json",
+    "result_sha256": "96b051e4fd630a51c4a229daaf835bb8a7ba96464e6726ba8a818f66ad71829d",
+    "tests": 217800,
+    "range": "X=1..96",
+    "banks": 7,
+    "masks": 5,
+    "ordered_tags": 4,
+    "ordered_young_checks": 53760,
+    "masked_young_checks": 53760,
+    "four_sector_reconstruction_checks": 13440,
+    "low_energy_high_envelope_checks": 13440,
+    "separate_piecewise_wave_quadratures": 72,
+    "status": "PASS_EXACT_INTEGER_MOBIUS_FLOAT64_GRAM_AND_SEPARATE_PIECEWISE_QUADRATURE_NOT_LEAN_OR_CERTIFIED_INTERVAL"
+  },
+  "remaining_mathematics": [
+    "Noncircular EVERY positive rate upper for original lowSmooth wave energy of BOTH source rough/matched tags on a fixed covering scale family, including genuine empty-prime-bank hard case.",
+    "Pay V_B for actual scale-varying prime bank and A for any scale-varying gap mask; bank cost ordinary nearcritical proof exists as separate uncompiled source candidate.",
+    "Full original cross-shell and fixed-scale global endpoint/casual energy transfer.",
+    "Canonical Riemann Hypothesis remains OPEN."
+  ],
+  "verification": {
+    "publication": "SOURCE_CANDIDATE_EXPECTED_HEAD_LEASE",
+    "git_readback": "PENDING_EXACT_SHA_READBACK",
+    "lean_compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "github_CI_dispatched": false,
+    "native_proof_runner_dispatched": false,
+    "scheduler_dispatched": false,
+    "all_positive_rate_signed_original": "OPEN",
+    "RH": "OPEN"
+  },
+  "related_issues": [
+    1592,
+    1589,
+    1586,
+    1583,
+    1580,
+    1577,
+    1575,
+    1429,
+    15
+  ],
+  "passive": true,
+  "source_publication_parent": "ef7c01156b95e4be7cab746d0a188f0c9126468b"
+}

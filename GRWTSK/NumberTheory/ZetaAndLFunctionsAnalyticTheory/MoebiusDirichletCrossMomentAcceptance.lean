@@ -1,0 +1,66 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+PASSIVE_ACCEPTANCE_TARGET / COMPILATION_NOT_RUN /
+EXPECTED_TYPES_NOT_RUN / FRESH_KERNEL_NOT_RUN /
+TRANSITIVE_AXIOM_AUDIT_NOT_RUN.
+-/
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDirichletPairRatioFinite
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDirichletSignedCrossRatioMoment
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDirichletSignedCrossReality
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.MoebiusDirichletCrossMomentFrontier
+import Mathlib
+
+set_option autoImplicit false
+
+/-!
+# Source-bound character-cross ratio Fourier second-moment acceptance
+
+The source must be compiled at its exact math commit with
+Lean 4.34.1 and the unchanged pinned Mathlib dependency.
+Publishing these #check/#print axioms commands does NOT
+constitute execution, kernel certification or an axiom audit.
+
+Suggested reviewed sequence, NOT RUN:
+lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletPairRatioFinite.lean
+lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletSignedCrossRatioMoment.lean
+lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletSignedCrossReality.lean
+lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletCrossMomentFrontier.lean
+lake env lean GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletCrossMomentAcceptance.lean
+
+The ratio moment EVERY-RATE target remains an explicit
+UNPROVED arithmetic proposition. No RH/GRH claim is made.
+-/
+
+open GRWTSK.NumberTheory.Moebius.DirichletPairRatioFinite
+open GRWTSK.NumberTheory.Moebius.DirichletSignedCrossRatioMoment
+open GRWTSK.NumberTheory.Moebius.DirichletSignedCrossReality
+open GRWTSK.NumberTheory.Moebius.DirichletCrossMomentFrontier
+
+#check pairCharacterSum
+#check pairRatioCoefficient
+#check pairCharacterSum_eq_ratioFourier
+
+#check originalPairInventory
+#check originalOffdiagPairWeight
+#check originalCharacterCrossComplex
+#check originalRatioPacket
+#check originalCharacterCrossComplex_eq_ratioFourier
+#check allCharactersCrossComplex_secondMoment
+#check allCharactersCrossComplex_sum_eq_oneRatio
+#check originalCharacterCrossComplex_re_eq_familyCross
+#check individualFamilyCross_sq_le_ratioMoment
+#check originalCharacterCrossComplex_star_self
+#check originalCharacterCrossComplex_im_zero
+#check allCharactersRealCross_secondMoment
+
+#check FixedModulusRatioMomentEveryRate
+#check individualFamilyCross_everyRate_of_ratioMoment
+
+#print axioms pairCharacterSum_eq_ratioFourier
+#print axioms originalCharacterCrossComplex_eq_ratioFourier
+#print axioms allCharactersCrossComplex_secondMoment
+#print axioms allCharactersCrossComplex_sum_eq_oneRatio
+#print axioms originalCharacterCrossComplex_re_eq_familyCross
+#print axioms individualFamilyCross_sq_le_ratioMoment
+#print axioms originalCharacterCrossComplex_star_self
+#print axioms allCharactersRealCross_secondMoment
+#print axioms individualFamilyCross_everyRate_of_ratioMoment

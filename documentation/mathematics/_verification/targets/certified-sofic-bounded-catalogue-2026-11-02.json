@@ -1,0 +1,102 @@
+{
+  "schema": "grwtsk.math.source-verification-target/1",
+  "attribution": "grwtsk contributors",
+  "date": "2026-11-02",
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "repository": "grwtsk/math",
+  "inspected_baseline": "2e864e3514ba43426d80b245933a31508dbe4c3d",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_modules": [
+    "GRWTSK/Combinatorics/GraphTheory/CertifiedSoficBoundedCatalogue.lean",
+    "GRWTSK/Combinatorics/GraphTheory/CertifiedSoficBoundedCatalogueExample.lean",
+    "GRWTSK/Combinatorics/GraphTheory/CertifiedSoficCheckedOptimization.lean"
+  ],
+  "declarations": [
+    "FiniteRationalCertifiedGraph",
+    "FiniteRationalCertifiedGraph.emptyRoute",
+    "FiniteRationalCertifiedGraph.prepend",
+    "FiniteRationalCertifiedGraph.routesExactly",
+    "FiniteRationalCertifiedGraph.routesWithin",
+    "FiniteRationalCertifiedGraph.routesExactly_complete",
+    "FiniteRationalCertifiedGraph.routesWithin_complete",
+    "FiniteRationalCertifiedGraph.CardinalityReduction",
+    "FiniteRationalCertifiedGraph.completeCoverage",
+    "FiniteRationalCertifiedGraph.optimized_eq_infimum",
+    "CheckedFiniteRationalGraph.optimized_proof_and_bound",
+    "Example.enumerated_cost_one",
+    "Example.reverse_candidate_not_certified"
+  ],
+  "required_facets": {
+    "source_byte_readback": "NOT_RUN",
+    "lean_compile": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "runtime_source_refinement": "NOT_PROVED",
+    "mathlib_import_closure": "NOT_RUN"
+  },
+  "invariant_hypotheses": [
+    "original certified lower relation decidable",
+    "finite actual state and label carriers",
+    "rational costs exactly equal real allowances",
+    "nonempty source-target certified route",
+    "global no-more-expensive cardinality reduction"
+  ],
+  "hostile_cases": [
+    "empty certified graph",
+    "candidate-only shortcut",
+    "parallel original labels",
+    "distinct intermediate states",
+    "positive and zero cost cycles",
+    "no source route",
+    "unproved irrational edge allowance",
+    "unproved cycle reduction",
+    "same label different original edge",
+    "missing theorem premise",
+    "infinite source alphabet falsely assumed Fintype"
+  ],
+  "related_existing_pins": {
+    "CertifiedSoficFiniteOptimizer.lean": "5cc2849c32890173e1b589aa731a25b00593def1",
+    "CertifiedSoficOptimalBudget.lean": "9f782e53cdc13b1a1c8ef2f6cf2c85c1b63854fa",
+    "DefectEnrichedSoficLanguage.lean": "f0436ae18dd786e312a4966b27b2edc51e3d7fa1",
+    "CheckedApplicationSoficBridge.lean": "7cf8b5905fae6cd828b3dc65145529635cc605e2",
+    "SourceOccurrenceSoficBridge.lean": "b2e0cb4919a5e73246c29c7f7769fe459949e73c"
+  },
+  "independent_reference": {
+    "schema": "grwtsk.independent-finite-reference/1",
+    "checked_predicate": "source original lower edge, no candidate promotion",
+    "graphs": 1024,
+    "states_per_graph": 3,
+    "labels_per_graph": 2,
+    "bounded_length": 3,
+    "assertions_passed": 294656,
+    "reachable_source_target_pairs": 6912,
+    "unreachable_pairs": 2304,
+    "length_three_certified_pairs": 5646,
+    "candidate_only_rejection_assertions": 37632,
+    "all_checks_passed": true,
+    "native_lean_executed": false,
+    "lean_to_python_refinement_proved": false,
+    "samples": [
+      {
+        "mask": 0,
+        "original_edges": 0,
+        "zero_to_two": null
+      },
+      {
+        "mask": 255,
+        "original_edges": 12,
+        "zero_to_two": "3"
+      },
+      {
+        "mask": 511,
+        "original_edges": 14,
+        "zero_to_two": "3"
+      }
+    ]
+  },
+  "execution_dispatched": false,
+  "proof_acceptance": false,
+  "next_mathematical_supplier": "generic original certified cycle erasure without an assumed CardinalityReduction"
+}

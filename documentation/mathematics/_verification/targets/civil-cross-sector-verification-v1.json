@@ -1,0 +1,43 @@
+{
+  "schema": "grwtsk-math-static-verification-target/1",
+  "name": "civil-cross-sector-scaling-v1",
+  "subject": "ComputerScience/AlgorithmsInComputerScience",
+  "source_module": "GRWTSK.ComputerScience.AlgorithmsInComputerScience.CivilSystemsCrossSectorScaling",
+  "source_path": "GRWTSK/ComputerScience/AlgorithmsInComputerScience/CivilSystemsCrossSectorScaling.lean",
+  "upstream_modules": [
+    "GRWTSK.ComputerScience.AlgorithmsInComputerScience.CivilSystemsAccumulation",
+    "GRWTSK.ComputerScience.AlgorithmsInComputerScience.CivilSystemsResilience"
+  ],
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "selected_declarations": [
+    "GRWTSK.CivilSystems.CrossSector.WorkEvent.partition",
+    "GRWTSK.CivilSystems.CrossSector.WorkEvent.other_sector_is_residual",
+    "GRWTSK.CivilSystems.CrossSector.WorkEvent.other_unit_is_separate",
+    "GRWTSK.CivilSystems.CrossSector.WorkEvent.rejected_source_is_residual",
+    "GRWTSK.CivilSystems.CrossSector.admitted_residual_partition",
+    "GRWTSK.CivilSystems.CrossSector.unreviewed_feedback_not_feedback",
+    "GRWTSK.CivilSystems.CrossSector.unreviewed_feedback_not_counted",
+    "GRWTSK.CivilSystems.CrossSector.SectorTrajectory.bounded",
+    "GRWTSK.CivilSystems.CrossSector.SectorTrajectory.unbounded",
+    "GRWTSK.CivilSystems.CrossSector.reduced_diversion_protects_professional_time",
+    "GRWTSK.CivilSystems.CrossSector.permission_cannot_become_duty_gap",
+    "GRWTSK.CivilSystems.CrossSector.unknown_evidence_cannot_become_duty_gap",
+    "GRWTSK.CivilSystems.CrossSector.mismatched_sector_cannot_become_duty_gap",
+    "GRWTSK.CivilSystems.CrossSector.potentialDutyGap_sound"
+  ],
+  "requirements": [
+    "exact-source compilation",
+    "fresh kernel checking",
+    "transitive axiom and sorryAx audit",
+    "complete source/import closure inspection",
+    "independent source-to-Python correspondence",
+    "qualified legal and professional review"
+  ],
+  "compilation": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "axiom_audit": "NOT_RUN",
+  "source_proof_acceptance": false,
+  "native_execution_requested": false,
+  "notes": "Unit-wise residual accounting. Quantities in different physical units are never summed together."
+}

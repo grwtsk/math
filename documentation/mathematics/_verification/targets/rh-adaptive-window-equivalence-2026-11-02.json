@@ -1,0 +1,43 @@
+{
+  "schema": "grwtsk.math.source-verification-target/1",
+  "attribution": "grwtsk contributors",
+  "date": "2026-11-02",
+  "status": "SOURCE_PROOF_CANDIDATE",
+  "repository": "grwtsk/math",
+  "baseline": "34efe627c3f33be82a3f9b1d8a79c1bd87be5899",
+  "module": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/PickupAdaptiveWindowEquivalence.lean",
+  "original_analytic_source": "PickupDyadicEndpoint, PickupEndpointQuadrature, GoodScaleEnergyCriterion, EnergyAbscissa",
+  "source_identity": "bind new commit and exact Git blob after guarded publication",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "target_declarations": [
+    "GRWTSK.NumberTheory.Moebius.PickupAdaptiveWindowEquivalence.dyadicWindow_iff_original_dyadic",
+    "GRWTSK.NumberTheory.Moebius.PickupAdaptiveWindowEquivalence.dyadicWindow_iff_energy_subexponential",
+    "GRWTSK.NumberTheory.Moebius.PickupAdaptiveWindowEquivalence.dyadicWindow_iff_energy_abscissa_zero",
+    "GRWTSK.NumberTheory.Moebius.PickupAdaptiveWindowEquivalence.physicalWindow_to_dyadicWindow",
+    "GRWTSK.NumberTheory.Moebius.PickupAdaptiveWindowEquivalence.physicalWindow_of_original_dyadic",
+    "GRWTSK.NumberTheory.Moebius.PickupAdaptiveWindowEquivalence.physicalWindow_iff_original_dyadic",
+    "GRWTSK.NumberTheory.Moebius.PickupAdaptiveWindowEquivalence.physicalWindow_iff_energy_abscissa_zero"
+  ],
+  "required_facets": {
+    "compilation": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "source_arithmetic_review": "SOURCE_REVIEW_ONLY",
+    "physical_source_refinement": "NOT_PROVED",
+    "independent_arithmetic_supplier": "OPEN"
+  },
+  "hostile_cases": [
+    "arbitrary_endpoints_without_monotone_energy_do_not_gain_equivalence",
+    "physical_empty_or_mislabeled_stream_keeps_initial_signed_defect",
+    "physical_ideal_encoder_is_not_independent_source_oracle",
+    "two_quarter_allowances_in_physical_converse_are_paid",
+    "candidate_only_graph_edge_does_not_certify",
+    "fixed_exponential_rate_cannot_be_called_all_positive_rates",
+    "zero_energy_abscissa_does_not_imply_zero_damping_integrability",
+    "unproved_RH_arithmetic_bound_cannot_be_silently_inserted"
+  ],
+  "native_execution_dispatched": false,
+  "proof_acceptance": false
+}

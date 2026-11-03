@@ -1,0 +1,43 @@
+name: Mathematical obstruction or counterexample
+description: Identify a failed inference, counterexample, missing hypothesis or unproved source return.
+title: "[obstruction] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A precise negative result is valuable. This issue does not start verification or certify a proof.
+  - type: textarea
+    id: statement
+    attributes:
+      label: Intended statement and its mathematical objects
+      description: Include quantifiers, assumptions and conclusion, not just a theorem name.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Exact source identity
+      description: Commit SHA, paths, declarations, source author and primary reference when available.
+    validations:
+      required: false
+  - type: textarea
+    id: obstruction
+    attributes:
+      label: Counterexample, gap or failed comparison
+      description: Provide the actual failure, scope, sign, error bound or omitted premise.
+    validations:
+      required: true
+  - type: textarea
+    id: consumer
+    attributes:
+      label: Downstream consumer and next obligation
+      description: What result would use this step, and what would repair or refute it?
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and unrun checks
+      description: Keep analytical review, Lean compilation, kernel replay and axiom auditing distinct.
+    validations:
+      required: false

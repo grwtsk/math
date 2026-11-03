@@ -1,0 +1,49 @@
+{
+  "schema": "grwtsk.math.verification-target/1",
+  "date": "2026-11-02",
+  "title": "Single fixed source-compensated Mobius endpoint with sublinear short-gap and gcd masks",
+  "source_blobs": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusFixedSublinearCompensatedEndpoint.lean": "f2d9748589f5999ff667486538968d7eff5a753f",
+    "documentation/mathematics/_support/reviews/moebius-fixed-sublinear-compensated-2026-11-02.md": "ffd30353a52a1766827eb89abd11b9fcb2488739"
+  },
+  "toolchain": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "baseline": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCompensatedPrimitiveEndpoint.lean": "95879b75037cca9b4fafabd517df2a988eedc2af",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongIncomparableGcdStrata.lean": "d974d231d2b555484046684072f4e68d4892c3dc",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalGcdTimeShift.lean": "db0052901eca3050ed0ce812d3e0e7675c8fab05"
+  },
+  "exact_source_proof_candidates": [
+    "GRWTSK.NumberTheory.Moebius.FixedSublinearCompensatedEndpoint.fixedGapHeight_le_exp",
+    "GRWTSK.NumberTheory.Moebius.FixedSublinearCompensatedEndpoint.pickupCross_eq_fixed_compensated_ledger",
+    "GRWTSK.NumberTheory.Moebius.FixedSublinearCompensatedEndpoint.endpointSum_le_fixed_with_real_gcd_bill",
+    "GRWTSK.NumberTheory.Moebius.FixedSublinearCompensatedEndpoint.endpointSum_le_fixed_numeric_of_elementary"
+  ],
+  "named_unproved_lean_targets": [
+    "FixedGapCardTarget",
+    "FixedWeakPaymentTarget",
+    "FixedGcdRatioTarget",
+    "FixedScalarEveryRateTarget",
+    "ShiftedLargeGcdRootTailTarget",
+    "LargeGcdAbsoluteRootTailTarget",
+    "FixedCompensatedEveryRateDyadic"
+  ],
+  "unresolved_mathematical_frontier": "Every-positive-rate one-sided estimate of the SAME fixedCompensatedCore on one fixed affine-frequent scale set; no proof supplied",
+  "verification": {
+    "parsing": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "root_import_promotion": "NOT_DONE",
+    "native_runner": "NOT_DISPATCHED"
+  },
+  "source_policy": {
+    "additive_files_only": true,
+    "root_import_unchanged": true,
+    "pins_unchanged": true,
+    "no_force_push": true
+  }
+}
