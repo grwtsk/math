@@ -1,0 +1,41 @@
+{
+  "schema": "grwtsk.math.source-verification-target/1",
+  "date": "2026-11-02",
+  "source_program": "original-Moebius Gaussian heat signed residual criterion",
+  "predecessor_commit": "5d053eeb463036390b7bb11d216b89107864ac6d",
+  "linked_issue": "https://github.com/grwtsk/math/issues/1633",
+  "source_file": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusGaussianStrongHeatSignedResidualCriterion.lean",
+  "source_status": "SOURCE_PROOF_CANDIDATE",
+  "compilation": "NOT_RUN",
+  "expected_type_check": "NOT_RUN",
+  "fresh_kernel_replay": "NOT_RUN",
+  "transitive_axiom_audit": "NOT_RUN",
+  "independent_mathematical_assessment": "positive-radius no-go analytically supported; signed cancellation estimate remains an open arithmetic hypothesis",
+  "no_external_verification_dispatched": true,
+  "guardrails": [
+    "preserve original Mathlib Moebius coefficients, positive integer index and source births",
+    "preserve heat and residual orientation in both mixed integrals",
+    "preserve both ordered signed original-index Gram orientations",
+    "do not use positive-radius SubexponentialOn supplier at fixed strong heat",
+    "do not infer all-positive-rate signed cancellation from finite tests",
+    "do not infer RH, Lean acceptance or zero-rate integrability from exact identities"
+  ],
+  "required_independent_checks": [
+    "pinned Lean v4.34.1 and Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "compile all four issue-1633 modules plus new signed residual module with appropriate source import closure",
+    "expected theorem type inspection for signedResidualCancellation_iff_originalEnergy and canonical conditional consumer",
+    "finite original positive support and signed residue-to-sourceError equality",
+    "algebraic full-Gram identity for arbitrary real (signed) coefficients",
+    "direct real-variable two-sided Young bounds preserving both signed mixed orientations",
+    "fresh kernel replay of every new declaration and complete transitive axiom/sorryAx/opaque/private audit"
+  ],
+  "finite_preflight": {
+    "precision_decimal_digits": 60,
+    "heat_s": 1,
+    "T_cases": [3, 5, 7, 8, 9],
+    "N_cases": [0, 1, 2, 3, 4, 10, 100, 512, 1024, 4096],
+    "source_script_sha256": "af72cfbc9d7c0cb344373bcd36b8b7b4df38ca3ca952887b6335cd54b952e7c4",
+    "result_json_sha256": "a53c9c19f4007b72984acd2fd94f108f02a6c3e8fedfe0fcc78eafd13e40d307",
+    "status": "FINITE_DIAGNOSTIC_ONLY"
+  }
+}
