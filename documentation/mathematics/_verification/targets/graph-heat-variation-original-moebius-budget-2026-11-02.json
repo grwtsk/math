@@ -134,8 +134,8 @@
     "local_python_exact_rational_regression": "PASS",
     "local_Python_high_precision_moebius_arithmetic": "PASS_FINITE_ONLY",
     "git_blob_creation": "PASS",
-    "guarded_nonforce_publication": "PENDING",
-    "exact_remote_blob_readback": "PENDING",
+    "guarded_nonforce_publication": "PASS_GIT_EXPECTED_PARENT",
+    "exact_remote_blob_readback": "PASS_7_OF_7",
     "native_Lean_compilation": "NOT_RUN",
     "exact_expected_types_universes": "NOT_RUN",
     "fresh_kernel_trust_zero": "NOT_RUN",
@@ -144,5 +144,13 @@
     "math_kernel_acceptance": false,
     "original_RH_growth_supplier": "OPEN"
   },
-  "publication": null
+  "publication": {
+    "source_commit": "9ce20df226b347aaf9df268a59e4fd5a1ad390c9",
+    "expected_parent": "11a8b680cbf07bc4e5435fd927c5531ef41726b3",
+    "source_commit_tree": "71a756e193c522fab44bb7e9fa5d709bf69abd6a",
+    "initial_manifest_blob": "7ea51624c443f6de8388e169756c53deefd68cbd",
+    "verified_unchanged_source_definitions": true,
+    "seven_exact_file_blobs_pass": true,
+    "result_class": "SOURCE_ACCEPTED_BY_GIT_NOT_NATIVE_LEAN_ACCEPTANCE"
+  }
 }
