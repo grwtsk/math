@@ -1005,3 +1005,114 @@ no root imports/toolchain migration and no
 native Noe/CI dispatch. The higher local
 Weil–Châtelet H² residue, real p=2
 and all derived Selmer/BSD gates are preserved.
+
+
+## H¹ representative-independent theta obstruction and real μ_n commutator (2026-11-02)
+
+Original immutable source TauCetiProject/TauCeti
+`2bdb755239d3bd84760e99bc83166bdf7cc75a6b`
+(The Tau Ceti contributors, Apache-2.0,
+Lean v4.36.0-rc1) remains isolated from
+the native grwtsk/math Lean v4.34.1 root.
+
+The NEW native `ThetaHOneGaugeBoundary.lean`
+(blob `7927496abb8ec9e6364500dcf5c8abdd7814a36a`)
+derives in ORIGINAL noncommutative group algebra the
+exact 0-cochain gauge
+`u'_σ=v^-1 u_σ σv`, boundary
+`b_u'=v^-1 b_u v`, and the central
+scalar change `b_u=δk b_b`.
+The result does NOT assume theta H¹
+representative invariance as a theorem field.
+
+NEW isolated
+`TauCetiThetaHOneRepresentativeGauge.lean`,
+blob `faf11448966dcbe5e8c94faf78db4804f7c146fe`,
+uses the original `H1pi_eq_iff` and
+`B1=(d0).range` to construct a TRUE
+`t:W.TorsionCoeff n` witnessing
+`b=a+d0 t`. The original rational
+theta lift of t gauges the selected
+source lifts of a; their actual
+point projections agree with those of
+b, so the already-proved original
+`ThetaLift.existsUnique_scalar_mul_eq_of_point_eq`
+constructs a UNIQUE `k_σ∈(Fsep)ˣ`.
+Its continuity is proved from the
+previous selected original function-field
+orbit continuity, faithful scalar
+inclusion and true `⊤` discrete
+coefficient topology, not assumed.
+
+NEW isolated
+`TauCetiThetaHOneClassInvariant.lean`,
+blob `cb1aab31a9ee7c4912bc64bc42b2f4736402d7a1`,
+derives the exact pointwise
+`c_a(σ,τ)=kσ σ(kτ) kστ^-1 c_b(σ,τ)`,
+consumes pinned `mem_B2_iff'` and
+`H2pi_eq_iff`, and defines a
+representative-independent SET MAP
+`H¹(F,E[n])→H²(F,(Fsep)ˣ)`.
+The period-index map is NOT
+asserted additive: its polarization
+is genuinely quadratic.
+
+NEW native `CentralCommutatorNTorsion.lean`,
+blob `7187ef959b18c596638dd235a814efa74e9a21e4`,
+and isolated
+`TauCetiThetaCommutatorRootsOfUnity.lean`,
+blob `40afe0f0ecdc691db1bcc84280ad0306834498f7`,
+show from the ACTUAL theta group and
+pinned `Commute.commutatorElement_pow_left`
+that every source commutator is killed
+by n. The source
+`thetaCommutatorScalar_spec`
+makes its true rational-function
+scalar an element of the ORIGINAL
+`rootsOfUnity n F`, without
+inventing a perfect symplectic
+pairing or numerical rank.
+
+NEW isolated `TauCetiThetaOriginalWeilSignReturn.lean`,
+blob `2c288ca159bd56adf0af21690b654349b25fb0b4`,
+connects the actual root-of-unity
+theta commutator to the pinned
+`Isogeny.algebraMap_weilPairing`.
+It has TWO exact separate conditional
+returns: the original rational
+function equality `C(S,T)=tau_S(g_T)/g_T`
+gives `e_n(S,T)`; its reciprocal
+gives `e_n(S,T)^-1`.
+The geometric source
+`div(g_T)=[n]^*([T]-[O])`
+is preserved. **The crucial divisor/
+isogeny function-ratio identity itself
+remains an OPEN source proof**, not
+an axiom or a chosen sign.
+The CREMONA/Fisher classical theta
+pairing has source sign caveats;
+no inverse can be suppressed.
+
+Full reviewed source calculation, exact
+signs, 240,000 gauge/section-change
+finite group tests and 44,000
+commutator n-th-root tests:
+`documentation/mathematics/_support/reviews/bsd-theta-h1-representative-invariance-and-exact-weil-sign-2026-11-02.md`.
+
+**Acceptance:** All new Lean sources are
+SOURCE_PROOF_CANDIDATE. Parsing NOT_RUN,
+compatible Tau Ceti compile NOT_RUN,
+native root compile NOT_RUN, fresh
+kernel replay NOT_RUN, transitive axiom
+audit NOT_RUN. A Git blob and exact
+synthetic algebra check do not verify
+Lean. The original theta n-torsion
+Brauer H², local abelian Tate separation,
+corrected higher local point-cone
+Weil–Châtelet residue, good truncation,
+p-power/real p=2/restricted/global
+Poitou–Tate, and COMPLEX BSD
+central jet remain separate OPEN goals.
+No new `sorry/axiom/admit`, root
+toolchain or Mathlib migration,
+native Noe/CI or scheduled job.
