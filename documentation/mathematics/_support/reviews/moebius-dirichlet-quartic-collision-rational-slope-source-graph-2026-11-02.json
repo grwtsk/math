@@ -1,0 +1,309 @@
+{
+  "schema": "grwtsk.math.source-graph-delta/1",
+  "date": "2026-11-02",
+  "topic": "Original signed Möbius Dirichlet fourth-order modular ratio collision, exact rational slopes, and causal common dilation",
+  "main_snapshot": "e79c8ca76ee44b69987872c603d8ab6f61c5005d",
+  "environment": {
+    "lean": "leanprover/lean4:v4.34.1",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+  },
+  "nodes": [
+    {
+      "id": "mathlib_finite",
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean",
+      "status": "PINNED_LIBRARY"
+    },
+    {
+      "id": "mathlib_zmod",
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/Data/ZMod/Basic.lean",
+      "status": "PINNED_LIBRARY"
+    },
+    {
+      "id": "mathlib_euclid",
+      "repo": "leanprover-community/mathlib4",
+      "path": "Mathlib/Data/Nat/GCD/Basic.lean",
+      "status": "PINNED_LIBRARY"
+    },
+    {
+      "id": "original_mu",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MertensPrimitive.lean",
+      "sha": "45e06c371d67bcf8c939d20a95fcbc63570546fa",
+      "status": "SOURCE_PRESERVED"
+    },
+    {
+      "id": "prior_ratio_moment",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletSignedCrossRatioMoment.lean",
+      "sha": "6dbfa55e99e7d54b7ac5c3e0a94db8efaf9b0caf",
+      "status": "SOURCE_CANDIDATE"
+    },
+    {
+      "id": "prior_ratio_reality",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletSignedCrossReality.lean",
+      "sha": "082806186c6af9661c1c98844517e9e0da0baab8",
+      "status": "SOURCE_CANDIDATE"
+    },
+    {
+      "id": "prior_fixed_arith",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletCrossMomentFrontier.lean",
+      "sha": "efd762f70a22ac3ba9c7689cd96bbc7e52dbee01",
+      "status": "UNPROVED_FIXED_Q_TARGET"
+    },
+    {
+      "id": "prior_dilation",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusCausalGcdTimeShift.lean",
+      "sha": "db0052901eca3050ed0ce812d3e0e7675c8fab05",
+      "status": "SOURCE_CANDIDATE"
+    },
+    {
+      "id": "prior_mu_mul",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongOddCoprimeDilation.lean",
+      "sha": "6164a4de724f2a29ef4304304f87b48d3ec78b41",
+      "status": "SOURCE_CANDIDATE"
+    },
+    {
+      "id": "finite_collision",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusRatioCollisionFinite.lean",
+      "sha": "e59bec41f796800ed7341deb22ccb068f4090b62",
+      "status": "NEW_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "selected_collision",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusRatioCollisionFiniteOn.lean",
+      "sha": "5334cc0352fc41cca07c88c2a321fd2740c6e440",
+      "status": "NEW_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "modulus_noalias",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletRatioCollisionModulus.lean",
+      "sha": "215adde9fe29517a554d2e6839adb163ff676388",
+      "status": "NEW_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "reduced_unique",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusReducedRationalSlopeUnique.lean",
+      "sha": "a7c042f2bb597da738ce6e3092b25c097ccb7d84",
+      "status": "NEW_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "original_quartic",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusDirichletOriginalQuarticCollision.lean",
+      "sha": "1b37c37caec2af8cba1c8176c5db2db68456f6cf",
+      "status": "NEW_SOURCE_CANDIDATE"
+    },
+    {
+      "id": "slope_dilation",
+      "repo": "grwtsk/math",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusRationalSlopeCausalDilation.lean",
+      "sha": "93f863f1bed0bae39dfcf799f8c69b1060006796",
+      "status": "NEW_SOURCE_CANDIDATE"
+    }
+  ],
+  "edges": [
+    {
+      "from": "mathlib_finite",
+      "to": "finite_collision",
+      "relation": "finite square expansion and key collisions",
+      "status": "PINNED_API_USED"
+    },
+    {
+      "from": "finite_collision",
+      "to": "selected_collision",
+      "relation": "selected unit-ratio keys retained independently of denominator mask",
+      "status": "SOURCE_CANDIDATE"
+    },
+    {
+      "from": "prior_ratio_moment",
+      "to": "original_quartic",
+      "relation": "originalRatioPacket and true ordered offdiagonal source",
+      "status": "SOURCE_CANDIDATE"
+    },
+    {
+      "from": "prior_ratio_reality",
+      "to": "original_quartic",
+      "relation": "sum over real familyCross squared matches ratio packet energy",
+      "status": "SOURCE_CANDIDATE"
+    },
+    {
+      "from": "selected_collision",
+      "to": "original_quartic",
+      "relation": "signed four-index expansion of original real causal Gram",
+      "status": "NEW_SOURCE_CANDIDATE"
+    },
+    {
+      "from": "original_mu",
+      "to": "original_quartic",
+      "relation": "literal ordinary mu and physical birth-gated pickupResponseGram",
+      "status": "ORIGINAL_SOURCE_PRESERVED"
+    },
+    {
+      "from": "mathlib_zmod",
+      "to": "modulus_noalias",
+      "relation": "ratio equality and positive-product no-alias modulo q>=N²",
+      "status": "PINNED_API_USED"
+    },
+    {
+      "from": "modulus_noalias",
+      "to": "original_quartic",
+      "relation": "modular ratio collision IFF integer exact rational slope at q>=N²",
+      "status": "NEW_SOURCE_CANDIDATE"
+    },
+    {
+      "from": "mathlib_euclid",
+      "to": "reduced_unique",
+      "relation": "coprime reduced slopes uniquely determined by cross products",
+      "status": "PINNED_API_USED"
+    },
+    {
+      "from": "modulus_noalias",
+      "to": "reduced_unique",
+      "relation": "large-modulus reduced-slope injection",
+      "status": "NEW_SOURCE_CANDIDATE"
+    },
+    {
+      "from": "prior_dilation",
+      "to": "slope_dilation",
+      "relation": "exact reciprocal k time shift K_T(kr,ks)",
+      "status": "SOURCE_CANDIDATE"
+    },
+    {
+      "from": "prior_mu_mul",
+      "to": "slope_dilation",
+      "relation": "mu(kr)mu(ks) factorization with two coprimality guards",
+      "status": "SOURCE_CANDIDATE"
+    },
+    {
+      "from": "slope_dilation",
+      "to": "original_quartic",
+      "relation": "primitive rational slope common-dilation packet connection",
+      "status": "RELATED_ARITHMETIC_NOT_FULL_PACKET"
+    },
+    {
+      "from": "original_quartic",
+      "to": "prior_fixed_arith",
+      "relation": "fixed-q quartic all-rate estimate remains UNPROVED; growing-q slope identity not a substitute",
+      "status": "NOT_PROOF_OF_BOUND"
+    }
+  ],
+  "formulas": {
+    "generic_collision": "sum_(a in U)(sum_(x in S,key x=a)w x)^2 = sum_(x,y in S, key x=key y, key x in U)w x*w y",
+    "source_real_second_moment": "sum_chi familyCross_chi(T)^2=phi(q)*originalQuarticCollision(q,T)",
+    "quartic": "originalQuarticCollision includes four literal mu factors, two original causal kernels and exact denominator-unit plus ratio-unit masks",
+    "noalias": "q>=N(T)^2 implies equality of multiplicative ZMod ratios IFF exact integer slope equality m*s=n*r for unit denominators",
+    "large_modulus": "sum_chi familyCross_chi(T)^2=phi(q)*originalExactSlopeQuartic(q,T) when q>=N(T)^2",
+    "reduced_slope": "Coprime(a,b), Coprime(c,d), a*d=b*c implies a=c and b=d",
+    "dilation": "for gcd(k,r)=gcd(k,s)=1, mu(kr)mu(ks)K_T(kr,ks)=mu(k)^2mu(r)mu(s)K_(T-log k)(r,s)/k",
+    "quantitative_boundary": "FixedModulusRatioMomentEveryRate remains UNPROVED; q>=N(T)^2 cannot hold for fixed q at all large T"
+  },
+  "diagnostics": {
+    "integer_pair_collision": [
+      {
+        "q": 1,
+        "N": 5
+      },
+      {
+        "q": 5,
+        "N": 8
+      },
+      {
+        "q": 8,
+        "N": 8
+      },
+      {
+        "q": 25,
+        "N": 5
+      },
+      {
+        "q": 29,
+        "N": 5
+      },
+      {
+        "q": 64,
+        "N": 8
+      },
+      {
+        "q": 67,
+        "N": 8
+      },
+      {
+        "q": 103,
+        "N": 10
+      },
+      {
+        "q": 17,
+        "N": 12
+      }
+    ],
+    "exact_integer_mismatches": 0,
+    "physical_mpmath_dps": 55,
+    "physical_examples": [
+      {
+        "q": 5,
+        "N": 8,
+        "ratioMoment": "1.9967871624970805896",
+        "modularAliasedNonzeroQuartets": 76,
+        "absResidual": "8.157e-56"
+      },
+      {
+        "q": 8,
+        "N": 8,
+        "ratioMoment": "0.38376270314574528981",
+        "modularAliasedNonzeroQuartets": 36,
+        "absResidual": "3.059e-56"
+      },
+      {
+        "q": 29,
+        "N": 5,
+        "ratioMoment": "0.18819061848519917812",
+        "modularAliasedNonzeroQuartets": 0,
+        "absResidual": "0"
+      },
+      {
+        "q": 67,
+        "N": 8,
+        "ratioMoment": "1.1013123528602654338",
+        "modularAliasedNonzeroQuartets": 0,
+        "absResidual": "0"
+      },
+      {
+        "q": 103,
+        "N": 10,
+        "ratioMoment": "2.2149918378812685193",
+        "modularAliasedNonzeroQuartets": 0,
+        "absResidual": "8.157e-56"
+      }
+    ],
+    "dilation_coprime_cases": 23,
+    "dilation_max_abs_residual": "4.588e-56",
+    "native_kernel": false,
+    "certified_interval": false
+  },
+  "open_targets": [
+    "FixedModulusRatioMomentEveryRate",
+    "full non-coprime squareful common-dilation packet and reduced-slope sum",
+    "PrimitiveDirichletFamilyLowGcdEveryRate",
+    "PrimitiveDirichletCausalToPrefixBridgeTarget",
+    "genuine primitive Dirichlet Mellin/explicit-formula GRH return",
+    "PlainLowGcdEveryRateDyadic and RH"
+  ],
+  "formal_verification": {
+    "parsing": "NOT_RUN",
+    "expected_types": "NOT_RUN",
+    "complete_import_compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "native_dispatch": "NOT_DISPATCHED"
+  }
+}
