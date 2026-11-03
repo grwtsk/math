@@ -11,9 +11,9 @@ Begin with the [mathematics index](documentation/mathematics/index.md), [formali
 | Purpose | Route |
 | --- | --- |
 | Ask, read, teach or explore | [Mathematical subjects](documentation/mathematics/index.md); no submission required |
-| Report a counterexample or missing analytical bridge | [Open a mathematical obstruction issue](https://github.com/grwtsk/math/issues/new/choose) |
-| Propose a formal statement or source correspondence | [Open a formalization issue](https://github.com/grwtsk/math/issues/new/choose) |
-| Request exact compilation, kernel or axiom evidence | [Record a verification target](https://github.com/grwtsk/math/issues/new/choose); this does **not** dispatch execution |
+| Report a counterexample or missing analytical bridge | [Open the mathematical obstruction form](https://github.com/grwtsk/math/issues/new?template=01-obstruction.yml) |
+| Propose a formal statement or source correspondence | [Open the formalization form](https://github.com/grwtsk/math/issues/new?template=02-formalization.yml) |
+| Request exact compilation, kernel or axiom evidence | [Record a source-bound verification target](https://github.com/grwtsk/math/issues/new?template=03-verification.yml); this does **not** dispatch execution |
 | Propose authored source or an explanation | Use the existing subject path and an authorized commit or [pull request](https://github.com/grwtsk/math/pulls) |
 
 A negative result and an unresolved premise can be useful contributions. State the downstream consumer, not just the candidate formula.
