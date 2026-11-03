@@ -32,7 +32,15 @@
     "transitive_axiom_audit": "NOT_RUN",
     "unmasked_signed_HL": "OPEN",
     "signed_low_low": "OPEN",
-    "riemann_hypothesis": "OPEN"
+    "riemann_hypothesis": "OPEN",
+    "older_cutoff_adapter": "OPEN"
   },
-  "no_runner_or_dispatch": true
+  "no_runner_or_dispatch": true,
+  "additional_source_bridge": {
+    "older_declaration": "GRWTSK.NumberTheory.Moebius.BalancedTwoSidedPNTDense.NearCriticalPrimeBankDenseTarget",
+    "older_prime_cutoff": "(1 + log X)^2 * (log (1 + log X))^alpha",
+    "new_prime_cutoff": "(log (2*X))^2 * (log (log (2*X)))^alpha",
+    "alpha_slack_comparison": "OPEN",
+    "source_consumer_correspondence": "OPEN"
+  }
 }
