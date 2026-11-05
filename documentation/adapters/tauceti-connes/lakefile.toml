@@ -1,0 +1,16 @@
+name = "grwtsk-connes-limit"
+defaultTargets = ["GRWTSK"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "1b1ccf4b088b32fa3f23f2de1127433254a81e1e"
+
+[[require]]
+name = "TauCeti"
+git = "https://github.com/TauCetiProject/TauCeti"
+rev = "67aa17161ba1908f8a85182bfdf2d4ccaf21171c"
+
+[[lean_lib]]
+name = "GRWTSK"
+roots = ["GRWTSK.FunctionsOfAComplexVariable.RealZeroLimit"]
