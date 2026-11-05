@@ -36,9 +36,13 @@ This repository is the canonical pure mathematical source for GRWTSK.
 
 ## Structural-intelligence work
 
-Read `documentation/mathematics/_support/reference/structural-intelligence.md` and the matching repository-local
-skill under `grwtsk/noeaaeue/bindings/mathematics/organization/skills/` before an
-increment in this programme. Formalize a consumer-backed result first, explain
+Read `documentation/mathematics/_support/reference/structural-intelligence.md` and
+the matching current-main canonical skill under
+`grwtsk/noeaaeue/tools/automation-skills/` before an increment in this programme.
+Discover canonical sources through `~/.agents/skills`; do not use independent or
+stale personal copies. Use `structural-intelligence` for the shared workflow and
+`typed-port-routing`, `graph-sandwich-search` or `finite-diffusion` when their
+specific mathematical objects are present. Formalize a consumer-backed result first, explain
 its mathematical use, then evaluate the guidance. Keep joint premises, alternative
 proof routes, source mappings and evidence roles distinct. Apply the skills to
 actual work and improve them from recorded failures, not unmeasured claims.
