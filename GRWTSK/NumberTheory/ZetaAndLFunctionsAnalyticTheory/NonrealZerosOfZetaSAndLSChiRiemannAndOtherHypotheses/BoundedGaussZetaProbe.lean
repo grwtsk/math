@@ -1,6 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. Released under the MIT license.
 Authors: grwtsk contributors. -/
-import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.QuarticWeilSourceComparison
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.SoficWeilSourceComparison
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.FiniteFieldVerticalCertificates
 import Mathlib.Data.ZMod.Basic
 
@@ -34,7 +34,9 @@ to the actual published `approximation4` definition. A floating point search
 located the center; floating point values are not inputs to the interval bound.
 
 Consumer: `certificate` returns the existing actual-source Boundary.Certificate
-on this one disk. Its hypotheses are finite, explicit formalization obligations.
+on this one disk, now through the fixed certified sofic word from actual zeta
+to its quartic approximation and then to the actual Gauss product. Its
+hypotheses are finite, explicit formalization obligations.
 No assertion quantifies over a cover of all heights or proves RH/GRH.
 Human research direction: grwtsk contributors. AI-assisted analytic estimates,
 finite interval calculation, and Lean candidate construction. Classical
@@ -130,14 +132,16 @@ def certificate (χ : MulChar F3 ℂ) (ψ : AddChar F3 ℂ)
     (variation : ∀ s ∈ frontier region,
       ‖mismatch s - mismatch center‖ ≤ (2004 / 1000000 : ℝ)) :
     Boundary.Certificate riemannZeta region := by
-  apply QuarticWeilComparison.boundaryCertificateFromCenter 200 3
-    (gaussSpectrum [χ] ψ) parameter region 94 (1 / 1000) (2004 / 1000000) center
+  apply SoficWeilSourceComparison.boundaryCertificate 200 3
+    (gaussSpectrum [χ] ψ) parameter region 94 ((1 / 1000) + (2004 / 1000000))
     closure_in_strip regular
     (fun s hs => closure_radius (frontier_subset_closure hs))
     (spectrum_contraction χ ψ evaluation contraction)
-  · simpa only [spectrum_value χ ψ evaluation, mismatch, model] using centerEnclosure
   · intro s hs
-    simpa only [spectrum_value χ ψ evaluation, mismatch, model] using variation s hs
+    apply QuarticWeilComparison.finite_mismatch_from_center 200
+      (gaussSpectrum [χ] ψ) parameter center s
+    · simpa only [spectrum_value χ ψ evaluation, mismatch, model] using centerEnclosure
+    · simpa only [spectrum_value χ ψ evaluation, mismatch, model] using variation s hs
   · norm_num [gaussSpectrum, tail_value]
 
 /-- Complete actual-source residual on every boundary point of the chosen disk. -/
@@ -150,19 +154,19 @@ theorem source_residual_bound (χ : MulChar F3 ℂ) (ψ : AddChar F3 ℂ)
     (s : ℂ) (boundary : s ∈ frontier region) :
     ‖residual (riemannZeta s)
       (familyApproximation (gaussSpectrum [χ] ψ) 3 (parameter s)) 1‖ ≤ (3 / 10 : ℝ) := by
-  have inside := closure_in_strip (frontier_subset_closure boundary)
-  have finiteComparison :
-      ‖QuarticApproximation.approximation4 200 s -
-        factorProduct (gaussSpectrum [χ] ψ) (parameter s)‖ ≤
+  have finiteComparison : ∀ t ∈ frontier region,
+      ‖QuarticApproximation.approximation4 200 t -
+        factorProduct (gaussSpectrum [χ] ψ) (parameter t)‖ ≤
           (1 / 1000 : ℝ) + 2004 / 1000000 := by
+    intro t ht
     apply QuarticWeilComparison.finite_mismatch_from_center 200
-      (gaussSpectrum [χ] ψ) parameter center s
+      (gaussSpectrum [χ] ψ) parameter center t
     · simpa only [spectrum_value χ ψ evaluation, mismatch, model] using centerEnclosure
-    · simpa only [spectrum_value χ ψ evaluation, mismatch, model] using variation s boundary
-  have source := QuarticWeilComparison.source_residual 200 3 s (parameter s)
-    (gaussSpectrum [χ] ψ) (R := 94) (by linarith [inside.1])
-    (strip_ne_one inside.2) (closure_radius (frontier_subset_closure boundary))
-    (spectrum_contraction χ ψ evaluation contraction s boundary) finiteComparison
+    · simpa only [spectrum_value χ ψ evaluation, mismatch, model] using variation t ht
+  have source := SoficWeilSourceComparison.source_residual 200 3
+    (gaussSpectrum [χ] ψ) parameter region 94 ((1 / 1000) + (2004 / 1000000))
+    closure_in_strip (fun t ht => closure_radius (frontier_subset_closure ht))
+    finiteComparison (spectrum_contraction χ ψ evaluation contraction) s boundary
   apply source.trans
   norm_num [gaussSpectrum, tail_value]
 

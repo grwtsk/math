@@ -33,10 +33,10 @@ theorem zeroSum_eq_selected_add_omitted {n : ℕ}
       omittedZeroSum D kernel sigma height := by
   classical
   unfold zeroSum selectedZeroSum omittedZeroSum
-  exact (Finset.sum_add_sum_compl
-    (s := Finset.univ) (t := selected D sigma height)
-    (fun i => (D.multiplicity i : ℂ) * kernel (D.root i))
-    (selected_subset_source D sigma height)).symm
+  simpa only [add_comm] using
+    (Finset.sum_sdiff
+      (f := fun i => (D.multiplicity i : ℂ) * kernel (D.root i))
+      (selected_subset_source D sigma height)).symm
 
 /-- Finite prime-counting correction with no discarded selected-complement
 term. The analytic full-divisor and outside-cutoff tails remain inside F.remainder. -/
