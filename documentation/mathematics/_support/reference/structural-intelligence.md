@@ -10,9 +10,15 @@ remains to be established before the proposed application is legitimate.
 
 Start with the [joint-premise inference article](../../Combinatorics/joint-premise-inference.md).
 It gives a concrete source-level result, not only a terminology change. The
-[worker programme](https://github.com/grwtsk/noeaaeue/blob/main/bindings/mathematics/organization/docs/structural-intelligence-v1.md)
-and [repository-local skills](https://github.com/grwtsk/noeaaeue/tree/main/bindings/mathematics/organization/skills)
-carry the operational workflow. Their publication does not install or execute them.
+current canonical skill at
+`grwtsk/noeaaeue:tools/automation-skills/structural-intelligence/SKILL.md`
+and narrower sources under `grwtsk/noeaaeue:tools/automation-skills/`
+carry the operational workflow. These are local canonical paths, not a claim of
+remote publication. Discover their current-main sources through
+`~/.agents/skills`, including `typed-port-routing`, `graph-sandwich-search` and
+`finite-diffusion` when their objects are present. Preserve exact mathematical
+source pins and consumer boundaries. Publication does not install or execute
+skills, grant provider access or establish mathematical acceptance.
 
 ## For a human reader
 
