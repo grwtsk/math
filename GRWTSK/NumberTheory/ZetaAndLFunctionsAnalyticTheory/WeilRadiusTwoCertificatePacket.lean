@@ -38,6 +38,7 @@ open RadiusTwoCandidateEntries RadiusTwoCandidateBounds RadiusTwoDyadicReplay
 open RadiusTwoPaidLowerBounds RadiusTwoTrialProjection OddLiteralWindow
 open OddResidualSourceComparison OddResidualMajorant OddSineForm
 open OddRemoteAllowanceMatrix
+open OddHighComplement (shiftedOddCoreEnergy)
 open GRWTSK.Algebra.LinearAlgebra.QuadraticCertificates
 open GRWTSK.Algebra.LinearAlgebra.RationalRealBounds
 open GRWTSK.Algebra.LinearAlgebra.FiniteSignDyadicLDL
