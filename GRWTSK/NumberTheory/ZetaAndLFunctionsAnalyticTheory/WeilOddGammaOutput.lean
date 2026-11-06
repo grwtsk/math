@@ -218,6 +218,17 @@ theorem integral_mul_gammaOutput {f g : ℝ → ℝ} {K : ℝ≥0} {B : ℝ}
       filter_upwards [] with t
       ring
 
+theorem integrableOn_mixedGamma {f g : ℝ → ℝ} {K : ℝ≥0} {B : ℝ}
+    (hf : LipschitzWith K f) (hb : ∀ t, ‖f t‖ ≤ B) (hg : Integrable g) (hgm : Measurable g) :
+    IntegrableOn (fun r => parityKernel 0 r *
+      (∫ t : ℝ, (g (t+r) - g t) * (f (t+r) - f t))) (Ioi 0) := by
+  refine (integrable_gamma_pair hf hb hg hgm).integral_prod_right.congr ?_
+  filter_upwards [] with r
+  rw [← integral_mul_symmetricDifference hf.continuous.measurable hb hg, ← integral_const_mul]
+  apply integral_congr_ae
+  filter_upwards [] with t
+  ring
+
 /-- The supported source sine is the continuous sine composed with interval
 clamping. The equality uses the vanishing of the sine at both endpoints. -/
 private theorem zeroExtendedSine_eq_clamp (T : ℝ) (hT : 0 < T) (n : ℕ) (t : ℝ) :
@@ -334,6 +345,16 @@ theorem finiteSine_eq_zero_off_window {M : ℕ} (T : ℝ) (x : Fin M → ℝ) {t
 theorem finiteSine_memLp {M : ℕ} (T : ℝ) (x : Fin M → ℝ) :
     MemLp (finiteSine T x) 2 volume := by
   exact memLp_finsetSum _ (fun i _ => (memLp_zeroExtendedSine T (i.val + 1)).const_mul (x i))
+
+/-- A finite sine trial has finite energy for the literal zero-extension gamma kernel. -/
+theorem integrableOn_gammaEnergy_finiteSine {M : ℕ} (T : ℝ) (hT : 0 < T) (x : Fin M → ℝ) :
+    IntegrableOn (fun r => parityKernel 0 r *
+      (∫ t : ℝ, (finiteSine T x (t+r) - finiteSine T x t) ^ 2)) (Ioi 0) := by
+  obtain ⟨K, hK⟩ := finiteSine_exists_lipschitzWith T hT x
+  have hi : Integrable (finiteSine T x) :=
+    integrable_finsetSum _ (fun i _ => (integrable_zeroExtendedSine T (i.val+1)).const_mul (x i))
+  simpa only [pow_two] using integrableOn_mixedGamma hK (norm_finiteSine_le T hT x)
+    hi hK.continuous.measurable
 
 theorem gammaOutput_finiteSine {M : ℕ} (T : ℝ) (hT : 0 < T) (x : Fin M → ℝ) (t : ℝ) :
     gammaOutput (finiteSine T x) t = ∑ i, x i * gammaOutput (zeroExtendedSine T (i.val + 1)) t := by
