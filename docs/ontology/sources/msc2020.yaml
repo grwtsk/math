@@ -1,0 +1,26 @@
+schema: math-ontology/source/2
+id: source:msc2020
+kind: classification
+title: Mathematics Subject Classification 2020
+publisher: Mathematical Reviews and zbMATH
+url: https://msc2020.org/MSC_2020.csv
+revision: sha256:f7c889354c202551fe01f89bad2ae95ccadec4c57ac1f6f9de38bbd658d3c78c
+edition: '2020'
+publication: https://msc2020.org/
+format:
+  media: tab-separated text
+  encoding: ISO-8859-1
+  code_column: code
+  preferred_label_column: text
+comparison_edition:
+  url: https://msc2020.org/MSC_2020.tex
+  revision: sha256:ff79ec3154920b4515408ddb45c57dc4f1578e2ab109851a25fa20dfa37f9d3b
+  locator: TeX labels on the root headings, group headings, and detail entries
+rights:
+  license: CC-BY-NC-SA-4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  attribution: Mathematical Reviews and zbMATH
+  rights_holder_notice: Copyright 2020 Mathematical Reviews and zbMATH
+  ontology_projection: Native identifiers, two-digit titles, and heading hierarchy
+  original_ontology_material: Frontier plans and supplemental learning subject
+  downstream: Preserve attribution, noncommercial, and share-alike terms for the classification projection.

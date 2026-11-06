@@ -1,0 +1,26 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.claim.shift-isometry
+kind: claim
+title: Injective guarded translation
+context: context:grwtsk.reflective-kernel
+subjects:
+- subject:msc2020.03
+- subject:msc2020.68
+- subject:msc2020.94
+statement: For the injective update e -> e+v on its full enabled set, W_a^*W_a=P_a.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: argued_in_source
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses:
+  - Enabled outputs stay valid
+  - Translation update is injective
+  quantification: For the injective update e -> e+v on its full enabled set, W_a^*W_a=P_a.
+  formal_statement: not_bound

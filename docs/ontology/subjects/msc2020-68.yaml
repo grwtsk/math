@@ -1,0 +1,47 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.68
+kind: classification_subject
+title: "Computer science"
+code: "68-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    68Mxx:
+      ["68M01", "68M07", "68M10", "68M11", "68M12", "68M14", "68M15", "68M18", "68M20", "68M25",
+       "68M99"]
+    68Nxx:
+      ["68N01", "68N15", "68N17", "68N18", "68N19", "68N20", "68N25", "68N30", "68N99"]
+    68Pxx:
+      ["68P01", "68P05", "68P10", "68P15", "68P20", "68P25", "68P27", "68P30", "68P99"]
+    68Qxx:
+      ["68Q01", "68Q04", "68Q06", "68Q07", "68Q09", "68Q10", "68Q11", "68Q12", "68Q15", "68Q17",
+       "68Q19", "68Q25", "68Q27", "68Q30", "68Q32", "68Q42", "68Q45", "68Q55", "68Q60", "68Q65",
+       "68Q70", "68Q80", "68Q85", "68Q87", "68Q99"]
+    68Rxx:
+      ["68R01", "68R05", "68R07", "68R10", "68R12", "68R15", "68R99"]
+    68Txx:
+      ["68T01", "68T05", "68T07", "68T09", "68T10", "68T20", "68T27", "68T30", "68T35", "68T37",
+       "68T40", "68T42", "68T45", "68T50", "68T99"]
+    68Uxx:
+      ["68U01", "68U03", "68U05", "68U07", "68U10", "68U15", "68U35", "68U99"]
+    68Vxx:
+      ["68V05", "68V15", "68V20", "68V25", "68V30", "68V35", "68V99"]
+    68Wxx:
+      ["68W01", "68W05", "68W10", "68W15", "68W20", "68W25", "68W27", "68W30", "68W32", "68W35",
+       "68W40", "68W50", "68W99"]
+  direct_details:
+    ["68-00", "68-01", "68-02", "68-03", "68-04", "68-06", "68-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Turing machine"
+    - "algorithm"
+    - "complexity class"
+  sources:
+    - url: https://isa-afp.org/topics/
+      locator: "Topics, Computer science and Logic"
+      role: formal library
+    - url: https://ocw.mit.edu/search/?q=6.045J
+      locator: "6.045J Automata, Computability, and Complexity, assignments and notes"
+      role: exposition
+  first_pass: "Start with computation models and reductions; record resource bounds and machine model before comparing complexity classes."

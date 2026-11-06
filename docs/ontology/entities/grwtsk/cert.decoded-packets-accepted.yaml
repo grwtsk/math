@@ -1,0 +1,30 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.cert.decoded-packets-accepted
+kind: obligation
+title: Acceptance of every decoded packet
+context: context:grwtsk.literal-weil
+subjects:
+- subject:msc2020.11
+- subject:msc2020.15
+- subject:msc2020.68
+statement: Each decoded(n).2 must satisfy Packet.Accepted in the readback family. A successful decode
+  by itself supplies no source comparison or finite matrix sign.
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilCertificateRootReturn.lean
+  locator: GRWTSK.NumberTheory.WeilQuadraticForm.CertificateRootReturn.riemannHypothesis_of_coded_packets
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: cc5d79c02104990bf85cd72a8e5f9dd5d403342e
+  environment:
+    mode: isolated-zeta23-replay
+    upstream: 16a5ce41304fcdaea4e0be7c132e1c361dc26da5
+    toolchain_specification: documentation/adapters/anthropic-math/zeta23/lean-toolchain
+    compatibility: Source header identifies the isolated upstream environment; executable configuration
+      and transitive closure were not replayed.
+evidence:
+  mathematical: unresolved
+  source_correspondence: pinned_declaration_locator
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN

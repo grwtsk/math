@@ -1,0 +1,39 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.22
+kind: classification_subject
+title: "Topological groups, Lie groups"
+code: "22-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    22Axx:
+      ["22A05", "22A10", "22A15", "22A20", "22A22", "22A25", "22A26", "22A30", "22A99"]
+    22Bxx:
+      ["22B05", "22B10", "22B99"]
+    22Cxx:
+      ["22C05", "22C99"]
+    22Dxx:
+      ["22D05", "22D10", "22D12", "22D15", "22D20", "22D25", "22D30", "22D35", "22D40", "22D45",
+       "22D50", "22D55", "22D99"]
+    22Exx:
+      ["22E05", "22E10", "22E15", "22E20", "22E25", "22E27", "22E30", "22E35", "22E40", "22E41",
+       "22E43", "22E45", "22E46", "22E47", "22E50", "22E55", "22E57", "22E60", "22E65", "22E66",
+       "22E67", "22E70", "22E99"]
+    22Fxx:
+      ["22F05", "22F10", "22F30", "22F50", "22F99"]
+  direct_details:
+    ["22-00", "22-01", "22-02", "22-03", "22-04", "22-06", "22-08", "22-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Topological group"
+    - "Lie group"
+    - "Haar measure"
+  sources:
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Topology/Algebra
+      locator: "Mathlib/Topology/Algebra and Mathlib/MeasureTheory/Measure/Haar"
+      role: formal library
+    - url: https://ocw.mit.edu/search/?q=18.745
+      locator: "18.745 Lie Groups and Lie Algebras I, notes on Lie groups"
+      role: exposition
+  first_pass: "Compare a topological group with a compatible smooth-group structure and record the hypotheses and normalization choices for Haar measure."

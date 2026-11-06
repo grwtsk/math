@@ -1,0 +1,29 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.comb.moser-coloring
+kind: claim
+title: Exactly four colors for the listed Moser spindle graph
+context: context:grwtsk.finite-combinatorics
+subjects:
+- subject:msc2020.05
+- subject:msc2020.52
+statement: The labeled graph on Fin 7 with the pinned eleven-edge list admits a proper map to Fin 4
+  and has no proper map to Fin 3. A displayed assignment gives the upper bound; the lower bound uses
+  the earlier finite Moser source.
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraphMoser.lean
+  locator: GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.HadwigerNelson.moser_listed_graph_exact_four
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: 1ed1aff97bed3b166d2b8e82af6040aa340a8602
+  environment:
+    mode: source-tree
+    declared_mathlib: d13f23b723b8a846827a245b89c10fc7d3f11612
+    toolchain_specification: lean-toolchain
+    compatibility: Declaration membership in the default target and compatibility were not replayed.
+evidence:
+  mathematical: source_inspected
+  source_correspondence: pinned_declaration_locator
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN

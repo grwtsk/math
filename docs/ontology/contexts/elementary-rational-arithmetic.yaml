@@ -1,0 +1,10 @@
+schema: math-ontology/context/2
+id: context:elementary-rational-arithmetic
+title: Elementary rational arithmetic
+foundation: classical mathematics of the rationals
+assumptions:
+- A denominator in a fraction representation is nonzero.
+sources:
+- source: source:mathlib4
+  path: Mathlib/Data/Rat/Defs.lean
+  locator: Rat.natCast_div_eq_divInt

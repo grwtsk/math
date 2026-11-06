@@ -1,0 +1,18 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.op.torus-heat.not-identical-to.op.weighted-heat
+type: not_identical_to
+from: entity:grwtsk.op.torus-heat
+to: entity:grwtsk.op.weighted-heat
+context: context:grwtsk.flat-tori
+status: documented
+justification: Different carriers, generators, norms and source identities.
+sources:
+- source: source:grwtsk.v1-heat
+  locator: theta-weighted-arithmetic-jump-heat-and-the-hot-spots-comparison.md
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2

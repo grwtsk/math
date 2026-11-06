@@ -1,0 +1,29 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.if.height
+kind: interface
+title: Lattice to height space
+context: context:grwtsk.flat-tori
+subjects:
+- subject:msc2020.11
+- subject:msc2020.14
+- subject:msc2020.52
+statement: e maps to sum_i e_i*P_i; height pulls back to e^T G e.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: proposed
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+interface:
+  from: entity:grwtsk.obj.lattice
+  to: entity:grwtsk.obj.height
+  hypotheses:
+  - Independent free classes
+  - Fixed polarization and normalization
+  obligations:
+  - entity:grwtsk.obl.height
+  exactness: exact_candidate

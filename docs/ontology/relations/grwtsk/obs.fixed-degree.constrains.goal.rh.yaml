@@ -1,0 +1,23 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.obs.fixed-degree.constrains.goal.rh
+type: constrains
+from: entity:grwtsk.obs.fixed-degree
+to: entity:grwtsk.goal.rh
+context: context:grwtsk.literal-weil
+status: proposed
+justification: Constrains one proposed route only; does not refute RH.
+sources:
+- source: source:grwtsk.v1-backward
+  locator: backward-dirichlet-grh-assembly-with-typed-lossless-finite-prefix-heat.md
+- source: source:grwtsk.math
+  path: GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilOddLiteralCofinal.lean
+  locator: Same literal odd Weil form across cofinal windows
+  revision: fc51c71c0c0a10701fdfb19d1a7ee2d2e49d7f52
+  blob: 8140cfc4ecb141a24bb183e7b3e41dbf3a8f00cf
+- source: source:grwtsk.v1-optimization
+  locator: weil-theta-response-optimization.md
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2

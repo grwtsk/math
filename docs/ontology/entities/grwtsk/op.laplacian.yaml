@@ -1,0 +1,28 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.op.laplacian
+kind: operator
+title: Dual-torus height Laplacian
+context: context:grwtsk.flat-tori
+subjects:
+- subject:msc2020.22
+- subject:msc2020.43
+- subject:msc2020.47
+- subject:msc2020.58
+statement: The primal operator instead uses G^-1; do not identify their scalar spectra without the metric
+  comparison.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: specified
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+operator:
+  carrier: entity:grwtsk.obj.hilbert-full
+  domain: Fourier coefficients a_e with sum_e (e^T G e)^2 |a_e|^2 finite
+  codomain: entity:grwtsk.obj.hilbert-full
+  formula: Delta_hat chi_e=4*pi^2*(e^T G e)*chi_e
+  boundedness: unbounded

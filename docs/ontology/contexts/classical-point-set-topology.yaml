@@ -1,0 +1,11 @@
+schema: math-ontology/context/2
+id: context:classical-point-set-topology
+title: Classical point-set topology
+foundation: classical set-theoretic mathematics
+assumptions:
+- Subsets carry the induced topology.
+- Quasi-compactness means the finite-subcover property.
+sources:
+- source: source:stacks-project
+  path: topology.tex
+  locator: tag/005A

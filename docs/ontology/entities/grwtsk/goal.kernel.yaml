@@ -1,0 +1,26 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.goal.kernel
+kind: objective
+title: Faithful reflective-kernel formalization
+context: context:grwtsk.reflective-kernel
+subjects:
+- subject:msc2020.03
+- subject:msc2020.68
+- subject:msc2020.94
+statement: Construct and verify the typed codec, joint-mode model, exact guards, revision-sensitive
+  reflection and conservative extension for the concrete operational source.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: unresolved
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses: []
+  quantification: Construct and verify the typed codec, joint-mode model, exact guards, revision-sensitive
+    reflection and conservative extension for the concrete operational source.
+  formal_statement: not_bound

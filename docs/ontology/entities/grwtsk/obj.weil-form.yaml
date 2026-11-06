@@ -1,0 +1,24 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obj.weil-form
+kind: object
+title: Full arithmetic Weil form
+context: context:grwtsk.literal-weil
+subjects:
+- subject:msc2020.11
+- subject:msc2020.42
+- subject:msc2020.47
+statement: 'Q_T(f)=c_inf||f||^2+integral_{r>0} kappa(r)||tau_r f_0-f_0||^2 dr +2 Re(M_+(f) conjugate(M_-(f)))-2
+  sum_{2<=n<exp(2T)} Lambda(n)/sqrt(n) Re(C_f(log n)); kappa(r)=exp(-r/2)/(1-exp(-2r)); c_inf=digamma(1/4)-log(pi).
+  Domain: exactly the finite jump-energy elements of H_T. f_0 is the zero extension, C_f(r)=integral
+  conjugate(f_0(t))*f_0(t+r)dt, M_+(f)=integral f_0(t)exp(t/2)dt and M_-(f)=integral f_0(t)exp(-t/2)dt.
+  This is the zeta source; other sectors have separately indexed gamma/prime/pole data.'
+sources:
+- source: source:grwtsk.v1-weil
+  locator: weil-periodic-boundary.md
+evidence:
+  mathematical: specified
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN

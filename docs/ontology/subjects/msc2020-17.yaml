@@ -1,0 +1,37 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.17
+kind: classification_subject
+title: "Nonassociative rings and algebras"
+code: "17-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    17Axx:
+      ["17A01", "17A05", "17A15", "17A20", "17A30", "17A32", "17A35", "17A36", "17A40", "17A42",
+       "17A45", "17A50", "17A60", "17A61", "17A65", "17A70", "17A75", "17A80", "17A99"]
+    17Bxx:
+      ["17B01", "17B05", "17B08", "17B10", "17B15", "17B20", "17B22", "17B25", "17B30", "17B35",
+       "17B37", "17B38", "17B40", "17B45", "17B50", "17B55", "17B56", "17B60", "17B61", "17B62",
+       "17B63", "17B65", "17B66", "17B67", "17B68", "17B69", "17B70", "17B75", "17B80", "17B81",
+       "17B99"]
+    17Cxx:
+      ["17C05", "17C10", "17C17", "17C20", "17C27", "17C30", "17C36", "17C37", "17C40", "17C50",
+       "17C55", "17C60", "17C65", "17C70", "17C90", "17C99"]
+    17Dxx:
+      ["17D05", "17D10", "17D15", "17D20", "17D25", "17D30", "17D92", "17D99"]
+  direct_details:
+    ["17-00", "17-01", "17-02", "17-03", "17-04", "17-06", "17-08", "17-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Lie algebra"
+    - "Lie bracket"
+    - "universal enveloping algebra"
+  sources:
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Algebra/Lie
+      locator: "Mathlib/Algebra/Lie"
+      role: formal library
+    - url: https://ocw.mit.edu/search/?q=18.745
+      locator: "18.745 Lie Groups and Lie Algebras I, notes on Lie algebras"
+      role: exposition
+  first_pass: "Extract bracket identities and representations, then queue separate Jordan and alternative algebra frontiers to review their different identities."

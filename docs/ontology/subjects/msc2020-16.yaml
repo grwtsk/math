@@ -1,0 +1,59 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.16
+kind: classification_subject
+title: "Associative rings and algebras"
+code: "16-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    16Bxx:
+      ["16B50", "16B70", "16B99"]
+    16Dxx:
+      ["16D10", "16D20", "16D25", "16D30", "16D40", "16D50", "16D60", "16D70", "16D80", "16D90",
+       "16D99"]
+    16Exx:
+      ["16E05", "16E10", "16E20", "16E30", "16E35", "16E40", "16E45", "16E50", "16E60", "16E65",
+       "16E99"]
+    16Gxx:
+      ["16G10", "16G20", "16G30", "16G50", "16G60", "16G70", "16G99"]
+    16Hxx:
+      ["16H05", "16H10", "16H15", "16H20", "16H99"]
+    16Kxx:
+      ["16K20", "16K40", "16K50", "16K99"]
+    16Lxx:
+      ["16L30", "16L60", "16L99"]
+    16Nxx:
+      ["16N20", "16N40", "16N60", "16N80", "16N99"]
+    16Pxx:
+      ["16P10", "16P20", "16P40", "16P50", "16P60", "16P70", "16P90", "16P99"]
+    16Rxx:
+      ["16R10", "16R20", "16R30", "16R40", "16R50", "16R60", "16R99"]
+    16Sxx:
+      ["16S10", "16S15", "16S20", "16S30", "16S32", "16S34", "16S35", "16S36", "16S37", "16S38",
+       "16S40", "16S50", "16S60", "16S70", "16S80", "16S85", "16S88", "16S90", "16S99"]
+    16Txx:
+      ["16T05", "16T10", "16T15", "16T20", "16T25", "16T30", "16T99"]
+    16Uxx:
+      ["16U10", "16U20", "16U30", "16U40", "16U60", "16U70", "16U80", "16U90", "16U99"]
+    16Wxx:
+      ["16W10", "16W20", "16W22", "16W25", "16W50", "16W55", "16W60", "16W70", "16W80", "16W99"]
+    16Yxx:
+      ["16Y20", "16Y30", "16Y60", "16Y80", "16Y99"]
+    16Zxx:
+      ["16Z05", "16Z10", "16Z99"]
+  direct_details:
+    ["16-00", "16-01", "16-02", "16-03", "16-04", "16-06", "16-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Associative algebra"
+    - "module"
+    - "Jacobson radical"
+  sources:
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/RingTheory
+      locator: "Mathlib/RingTheory and Mathlib/RepresentationTheory"
+      role: formal library
+    - url: https://ocw.mit.edu/search/?q=18.706
+      locator: "18.706 Noncommutative Algebra, notes on radicals and semisimplicity"
+      role: exposition
+  first_pass: "Specify handedness for modules and ideals and separate structural decomposition from finite-dimensional or chain-condition hypotheses."

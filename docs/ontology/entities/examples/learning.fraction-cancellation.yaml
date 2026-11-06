@@ -1,0 +1,21 @@
+schema: math-ontology/entity/2
+id: entity:learning.fraction-cancellation
+kind: example
+title: Representing one half as two quarters
+context: context:elementary-rational-arithmetic
+subjects:
+- subject:learning.elementary-mathematics
+- subject:msc2020.97
+statement: 2/4 and 1/2 are two representations of the same rational value.
+sources:
+- source: source:mathlib4
+  path: Mathlib/Data/Rat/Defs.lean
+  locator: Rat.natCast_div_eq_divInt
+evidence:
+  mathematical: authored_example
+  source_correspondence: pinned_locator_inspected
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+analytical_argument: Both denominators are nonzero and the cross products equal four.

@@ -1,0 +1,21 @@
+schema: math-ontology/entity/2
+id: entity:topology.unit-interval.hausdorff
+kind: claim
+title: Hausdorff premise for the real line
+context: context:classical-point-set-topology
+subjects:
+- subject:msc2020.54
+statement: The real line with its usual topology is Hausdorff.
+sources:
+- source: source:stacks-project
+  path: topology.tex
+  locator: tag/08YB
+evidence:
+  mathematical: example_instance
+  source_correspondence: pinned_locator_inspected
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+correspondence_scope: The source supplies the applicable topology vocabulary or result. This exact instance
+  is a local example.

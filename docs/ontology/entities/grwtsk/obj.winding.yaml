@@ -1,0 +1,19 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obj.winding
+kind: object
+title: Marked winding class
+context: context:grwtsk.flat-tori
+subjects:
+- subject:msc2020.55
+- subject:msc2020.57
+statement: An element of pi_1(T,0)=Lambda with a chosen basis and lift; retain queue-slot labels.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: specified
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN

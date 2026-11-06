@@ -1,0 +1,26 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obl.reflection
+kind: obligation
+title: Reflection source return
+context: context:grwtsk.reflective-kernel
+subjects:
+- subject:msc2020.03
+- subject:msc2020.68
+- subject:msc2020.94
+statement: Prove exact-base revision checking, replacement validity and separate authority predicates
+  against the actual source relation.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: unresolved
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses: []
+  quantification: Prove exact-base revision checking, replacement validity and separate authority predicates
+    against the actual source relation.
+  formal_statement: not_bound

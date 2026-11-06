@@ -1,0 +1,39 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.93
+kind: classification_subject
+title: "Systems theory; control"
+code: "93-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    93Axx:
+      ["93A05", "93A10", "93A13", "93A14", "93A15", "93A16", "93A99"]
+    93Bxx:
+      ["93B03", "93B05", "93B07", "93B10", "93B11", "93B12", "93B15", "93B17", "93B18", "93B20",
+       "93B24", "93B25", "93B27", "93B28", "93B30", "93B35", "93B36", "93B45", "93B47", "93B50",
+       "93B51", "93B52", "93B53", "93B55", "93B60", "93B70", "93B99"]
+    93Cxx:
+      ["93C05", "93C10", "93C15", "93C20", "93C23", "93C25", "93C27", "93C28", "93C29", "93C30",
+       "93C35", "93C40", "93C41", "93C42", "93C43", "93C55", "93C57", "93C62", "93C65", "93C70",
+       "93C73", "93C80", "93C83", "93C85", "93C95", "93C99"]
+    93Dxx:
+      ["93D05", "93D09", "93D10", "93D15", "93D20", "93D21", "93D23", "93D25", "93D30", "93D40",
+       "93D50", "93D99"]
+    93Exx:
+      ["93E03", "93E10", "93E11", "93E12", "93E14", "93E15", "93E20", "93E24", "93E35", "93E99"]
+  direct_details:
+    ["93-00", "93-01", "93-02", "93-03", "93-04", "93-05", "93-06", "93-08", "93-10", "93-11"]
+frontier:
+  status: planned
+  seeds:
+    - "State space model"
+    - "observability"
+    - "feedback stability"
+  sources:
+    - url: https://authors.library.caltech.edu/records/yzs24-xsx88
+      locator: "Feedback Systems, chapters on state-space models, reachability, and observability"
+      role: author exposition
+    - url: https://ocw.mit.edu/search/?q=6.241J
+      locator: "6.241J Dynamic Systems and Control, lecture notes on systems and feedback"
+      role: exposition
+  first_pass: "Separate continuous and discrete time and compare stability, reachability, and observability under explicit model assumptions."

@@ -1,0 +1,30 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.cert.stage-packet
+kind: construction
+title: Stage-indexed rational Gram packet
+context: context:grwtsk.literal-weil
+subjects:
+- subject:msc2020.11
+- subject:msc2020.15
+- subject:msc2020.65
+statement: Packet(j) contains rational Data(j), a Gram row count and a Gram certificate for that exact
+  assembled lower matrix. Packet.Accepted(p) requires SourceBound(p.data) and successful checking of
+  its Gram certificate.
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilOddStageCertificate.lean
+  locator: GRWTSK.NumberTheory.WeilQuadraticForm.OddStageCertificate.Packet.Accepted
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: 74b8a308b3ab9be9805f95710bb472532a56fa41
+  environment:
+    mode: source-tree
+    declared_mathlib: d13f23b723b8a846827a245b89c10fc7d3f11612
+    toolchain_specification: lean-toolchain
+    compatibility: Declaration membership in the default target and compatibility were not replayed.
+evidence:
+  mathematical: source_inspected
+  source_correspondence: pinned_declaration_locator
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN

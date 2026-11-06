@@ -1,0 +1,37 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.12
+kind: classification_subject
+title: "Field theory and polynomials"
+code: "12-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    12Dxx:
+      ["12D05", "12D10", "12D15", "12D99"]
+    12Exx:
+      ["12E05", "12E10", "12E12", "12E15", "12E20", "12E25", "12E30", "12E99"]
+    12Fxx:
+      ["12F05", "12F10", "12F12", "12F15", "12F20", "12F99"]
+    12Gxx:
+      ["12G05", "12G10", "12G99"]
+    12Hxx:
+      ["12H05", "12H10", "12H20", "12H25", "12H99"]
+    12Jxx:
+      ["12J05", "12J10", "12J12", "12J15", "12J17", "12J20", "12J25", "12J27", "12J99"]
+    12Kxx:
+      ["12K05", "12K10", "12K99"]
+    12Lxx:
+      ["12L05", "12L10", "12L12", "12L15", "12L99"]
+  direct_details:
+    ["12-00", "12-01", "12-02", "12-03", "12-04", "12-06", "12-08", "12-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Polynomial"
+    - "field extension"
+    - "Galois group"
+  sources:
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/FieldTheory
+      locator: "Mathlib/FieldTheory and Mathlib/Algebra/Polynomial"
+      role: formal library
+  first_pass: "Start with irreducibility and adjoining a root, then separate splitting fields, normality, separability, and Galois correspondence."

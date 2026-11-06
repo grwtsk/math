@@ -1,0 +1,9 @@
+schema: math-ontology/source/2
+id: source:stacks-project
+title: The Stacks Project
+kind: git_repository
+url: https://github.com/stacks/stacks-project
+revision: a04446e57ec1fbc252a871afcec7752fb2807b14
+license: GNU Free Documentation License, version 1.2 as supplied in the pinned COPYING file
+license_url: https://stacks.math.columbia.edu/tag/02C1
+reuse_scope: Locators and original mathematical summaries

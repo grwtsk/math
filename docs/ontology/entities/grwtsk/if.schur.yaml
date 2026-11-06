@@ -1,0 +1,37 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.if.schur
+kind: interface
+title: Full Weil form to finite lower enclosure
+context: context:grwtsk.literal-weil
+subjects:
+- subject:msc2020.11
+- subject:msc2020.15
+- subject:msc2020.47
+statement: Use exact Schur elimination with an independently positive complete high block and paid source,
+  solve, finite-row and remote-tail errors.
+sources:
+- source: source:grwtsk.v1-weil
+  locator: weil-periodic-boundary.md
+- source: source:grwtsk.math
+  path: GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurObserverCertificate.lean
+  locator: Directional observed Schur certificates
+  revision: fc51c71c0c0a10701fdfb19d1a7ee2d2e49d7f52
+  blob: 7e6e1eda7caab83a06646ba777af47b7ec0fec67
+evidence:
+  mathematical: proposed
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+interface:
+  from: entity:grwtsk.obj.weil-form
+  to: entity:grwtsk.obj.finite-matrix
+  hypotheses:
+  - Canonical domain
+  - High floor delta>0
+  - All residual rows and remote tails
+  - Observation norm bounds
+  obligations:
+  - entity:grwtsk.obl.source
+  exactness: certified_approximation_candidate

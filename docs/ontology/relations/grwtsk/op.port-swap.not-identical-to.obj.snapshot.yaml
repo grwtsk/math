@@ -1,0 +1,16 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.op.port-swap.not-identical-to.obj.snapshot
+type: not_identical_to
+from: entity:grwtsk.op.port-swap
+to: entity:grwtsk.obj.snapshot
+context: context:grwtsk.reflective-kernel
+status: documented
+justification: Port involution is not revision-sensitive computational reflection.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2

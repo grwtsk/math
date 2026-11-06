@@ -1,0 +1,37 @@
+schema: math-ontology/inference/2
+id: rule:grwtsk.grh-cofinal-packets
+kind: inference_rule
+title: Repository Dirichlet GRH from cofinal packets and the two primitive analytic families
+context: context:grwtsk.literal-weil
+premises_all:
+- entity:grwtsk.cert.cofinal-indices
+- entity:grwtsk.cert.accepted-cofinal-packets
+- entity:grwtsk.cert.primitive-negative-witness
+- entity:grwtsk.cert.all-small-conductor-stages
+conclusion: entity:grwtsk.goal.dirichlet-grh
+status: conditional
+cost: 1
+justification: The direct conditional consumer factors through the same RH criterion and native primitive
+  reduction as the decomposed route.
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilCertificateRootReturn.lean
+  locator: GRWTSK.NumberTheory.WeilQuadraticForm.CertificateRootReturn.dirichletGRH_of_cofinal_packets
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: cc5d79c02104990bf85cd72a8e5f9dd5d403342e
+  environment:
+    mode: isolated-zeta23-replay
+    upstream: 16a5ce41304fcdaea4e0be7c132e1c361dc26da5
+    toolchain_specification: documentation/adapters/anthropic-math/zeta23/lean-toolchain
+    compatibility: Source header identifies the isolated upstream environment; executable configuration
+      and transitive closure were not replayed.
+substitution:
+  hcover.index: index
+  p.stage(n): index(n)
+side_conditions: []
+instantiation: schematic
+binders:
+- name: index
+  type: ℕ → ℕ
+- name: p
+  type: '(n : ℕ) → Packet(index(n))'

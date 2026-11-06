@@ -1,0 +1,17 @@
+schema: math-ontology/relation/2
+id: relation:topology.compactness.hausdorff-compact
+type: has_definition_variant
+from: entity:topology.compactness
+to: entity:topology.hausdorff-compact
+context: context:classical-point-set-topology
+status: documented
+justification: Other references reserve compact for the version with Hausdorff separation.
+sources:
+- source: source:stacks-project
+  path: topology.tex
+  locator: tag/0059
+costs:
+  reading: 1
+  formalization: 1
+  translation: 0
+  verification: 1

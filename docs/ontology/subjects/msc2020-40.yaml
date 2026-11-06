@@ -1,0 +1,42 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.40
+kind: classification_subject
+title: "Sequences, series, summability"
+code: "40-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    40Axx:
+      ["40A05", "40A10", "40A15", "40A20", "40A25", "40A30", "40A35", "40A99"]
+    40Bxx:
+      ["40B05", "40B99"]
+    40Cxx:
+      ["40C05", "40C10", "40C15", "40C99"]
+    40Dxx:
+      ["40D05", "40D09", "40D10", "40D15", "40D20", "40D25", "40D99"]
+    40Exx:
+      ["40E05", "40E10", "40E15", "40E20", "40E99"]
+    40Fxx:
+      ["40F05", "40F99"]
+    40Gxx:
+      ["40G05", "40G10", "40G15", "40G99"]
+    40Hxx:
+      ["40H05", "40H99"]
+    40Jxx:
+      ["40J05", "40J99"]
+  direct_details:
+    ["40-00", "40-01", "40-02", "40-03", "40-04", "40-06", "40-08", "40-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Convergence of a series"
+    - "Cesàro summation"
+    - "Tauberian condition"
+  sources:
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Topology/Algebra/InfiniteSum
+      locator: "Mathlib/Topology/Algebra/InfiniteSum and Mathlib/Analysis/SpecificLimits"
+      role: formal library
+    - url: https://dlmf.nist.gov/
+      locator: "Sections 1.15 and 3.9, summability and convergence acceleration"
+      role: reference
+  first_pass: "Compare ordinary convergence and generalized summability on the same series and catalogue the additional hypotheses needed for converse results."

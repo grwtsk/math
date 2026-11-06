@@ -1,0 +1,53 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.13
+kind: classification_subject
+title: "Commutative algebra"
+code: "13-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    13Axx:
+      ["13A02", "13A05", "13A15", "13A18", "13A30", "13A35", "13A50", "13A70", "13A99"]
+    13Bxx:
+      ["13B02", "13B05", "13B10", "13B21", "13B22", "13B25", "13B30", "13B35", "13B40", "13B99"]
+    13Cxx:
+      ["13C05", "13C10", "13C11", "13C12", "13C13", "13C14", "13C15", "13C20", "13C40", "13C60",
+       "13C70", "13C99"]
+    13Dxx:
+      ["13D02", "13D03", "13D05", "13D07", "13D09", "13D10", "13D15", "13D22", "13D30", "13D40",
+       "13D45", "13D99"]
+    13Exx:
+      ["13E05", "13E10", "13E15", "13E99"]
+    13Fxx:
+      ["13F05", "13F07", "13F10", "13F15", "13F20", "13F25", "13F30", "13F35", "13F40", "13F45",
+       "13F50", "13F55", "13F60", "13F65", "13F70", "13F99"]
+    13Gxx:
+      ["13G05", "13G99"]
+    13Hxx:
+      ["13H05", "13H10", "13H15", "13H99"]
+    13Jxx:
+      ["13J05", "13J07", "13J10", "13J15", "13J20", "13J25", "13J30", "13J99"]
+    13Lxx:
+      ["13L05", "13L99"]
+    13Mxx:
+      ["13M05", "13M10", "13M99"]
+    13Nxx:
+      ["13N05", "13N10", "13N15", "13N99"]
+    13Pxx:
+      ["13P05", "13P10", "13P15", "13P20", "13P25", "13P99"]
+  direct_details:
+    ["13-00", "13-01", "13-02", "13-03", "13-04", "13-06", "13-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Prime ideal"
+    - "localization"
+    - "Noetherian ring"
+  sources:
+    - url: https://stacks.math.columbia.edu/browse
+      locator: "Algebra chapter, localization and Noetherian rings"
+      role: tagged exposition
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/RingTheory/Localization
+      locator: "Mathlib/RingTheory/Localization"
+      role: formal library
+  first_pass: "Map the universal property of localization and check that the prime-ideal correspondence preserves the multiplicative-set condition."

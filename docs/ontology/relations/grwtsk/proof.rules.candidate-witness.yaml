@@ -1,0 +1,20 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.proof.rules.candidate-witness
+type: has_candidate_proof
+from: entity:grwtsk.claim.finite-reuse
+to: entity:grwtsk.proof.rules
+context: context:grwtsk.finite-joint-premise
+status: documented
+justification: The named Lean declaration is a source witness candidate with its formal evidence recorded
+  separately.
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/FiniteJointPremiseClosure.lean
+  locator: GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.Finite.run_preserves
+  revision: fc51c71c0c0a10701fdfb19d1a7ee2d2e49d7f52
+  blob: 7b701d37cf754a811c31bce7fd6d26e8147f36ba
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2

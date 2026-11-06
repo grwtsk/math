@@ -1,0 +1,32 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obs.finite-not-global
+kind: obstruction
+title: Positive compression is insufficient
+context: context:grwtsk.literal-weil
+subjects:
+- subject:msc2020.11
+- subject:msc2020.42
+- subject:msc2020.47
+statement: A positive finite compression need not exclude a negative orthogonal direction; a full tail
+  and source-return certificate are separate.
+sources:
+- source: source:grwtsk.v1-weil
+  locator: weil-periodic-boundary.md
+- source: source:grwtsk.math
+  path: GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurObserverCertificate.lean
+  locator: Directional observed Schur certificates
+  revision: fc51c71c0c0a10701fdfb19d1a7ee2d2e49d7f52
+  blob: 7e6e1eda7caab83a06646ba777af47b7ec0fec67
+evidence:
+  mathematical: argued_in_source
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses:
+  - Distinguish compression from a lower Schur enclosure
+  quantification: A positive finite compression need not exclude a negative orthogonal direction; a
+    full tail and source-return certificate are separate.
+  formal_statement: not_bound

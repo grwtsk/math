@@ -1,0 +1,21 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obj.state
+kind: object
+title: Admissible typed state
+context: context:grwtsk.reflective-kernel
+subjects:
+- subject:msc2020.03
+- subject:msc2020.68
+- subject:msc2020.94
+statement: S_Sigma is the finite subset of N^d satisfying the complete manifest, queue, control and
+  capacity predicates.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: specified
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN

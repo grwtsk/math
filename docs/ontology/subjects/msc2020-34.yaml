@@ -1,0 +1,58 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.34
+kind: classification_subject
+title: "Ordinary differential equations"
+code: "34-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    34Axx:
+      ["34A05", "34A06", "34A07", "34A08", "34A09", "34A12", "34A25", "34A26", "34A30", "34A33",
+       "34A34", "34A35", "34A36", "34A37", "34A38", "34A40", "34A45", "34A55", "34A60", "34A99"]
+    34Bxx:
+      ["34B05", "34B07", "34B08", "34B09", "34B10", "34B15", "34B16", "34B18", "34B20", "34B24",
+       "34B27", "34B30", "34B37", "34B40", "34B45", "34B60", "34B99"]
+    34Cxx:
+      ["34C05", "34C07", "34C08", "34C10", "34C11", "34C12", "34C14", "34C15", "34C20", "34C23",
+       "34C25", "34C26", "34C27", "34C28", "34C29", "34C37", "34C40", "34C41", "34C45", "34C46",
+       "34C55", "34C60", "34C99"]
+    34Dxx:
+      ["34D05", "34D06", "34D08", "34D09", "34D10", "34D15", "34D20", "34D23", "34D30", "34D35",
+       "34D45", "34D99"]
+    34Exx:
+      ["34E05", "34E10", "34E13", "34E15", "34E17", "34E18", "34E20", "34E99"]
+    34Fxx:
+      ["34F05", "34F10", "34F15", "34F99"]
+    34Gxx:
+      ["34G10", "34G20", "34G25", "34G99"]
+    34Hxx:
+      ["34H05", "34H10", "34H15", "34H20", "34H99"]
+    34Kxx:
+      ["34K04", "34K05", "34K06", "34K07", "34K08", "34K09", "34K10", "34K11", "34K12", "34K13",
+       "34K14", "34K16", "34K17", "34K18", "34K19", "34K20", "34K21", "34K23", "34K24", "34K25",
+       "34K26", "34K27", "34K29", "34K30", "34K31", "34K32", "34K33", "34K34", "34K35", "34K36",
+       "34K37", "34K38", "34K39", "34K40", "34K41", "34K42", "34K43", "34K45", "34K50", "34K60",
+       "34K99"]
+    34Lxx:
+      ["34L05", "34L10", "34L15", "34L16", "34L20", "34L25", "34L30", "34L40", "34L99"]
+    34Mxx:
+      ["34M03", "34M04", "34M05", "34M10", "34M15", "34M25", "34M30", "34M35", "34M40", "34M45",
+       "34M46", "34M50", "34M55", "34M56", "34M60", "34M65", "34M99"]
+    34Nxx:
+      ["34N05", "34N99"]
+  direct_details:
+    ["34-00", "34-01", "34-02", "34-03", "34-04", "34-06", "34-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Initial value problem"
+    - "maximal solution"
+    - "phase portrait"
+  sources:
+    - url: https://ocw.mit.edu/search/?q=18.03
+      locator: "18.03 Differential Equations, notes on first-order equations and systems"
+      role: exposition
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Analysis/ODE
+      locator: "Mathlib/Analysis/ODE"
+      role: formal library
+  first_pass: "Map local existence and uniqueness with exact regularity conditions and keep numeric trajectories separate from qualitative solution claims."

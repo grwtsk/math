@@ -1,0 +1,28 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.if.lattice
+kind: interface
+title: State inclusion into lattice
+context: context:grwtsk.reflective-kernel
+subjects:
+- subject:msc2020.03
+- subject:msc2020.68
+- subject:msc2020.94
+statement: Include the complete exponent tuple without declaring the valid subset a submodule.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: proposed
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+interface:
+  from: entity:grwtsk.obj.state
+  to: entity:grwtsk.obj.lattice
+  hypotheses:
+  - Fixed field order
+  obligations:
+  - entity:grwtsk.obl.manifest
+  exactness: exact_candidate

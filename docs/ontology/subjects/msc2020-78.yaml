@@ -1,0 +1,30 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.78
+kind: classification_subject
+title: "Optics, electromagnetic theory"
+code: "78-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    78Axx:
+      ["78A02", "78A05", "78A10", "78A15", "78A20", "78A25", "78A30", "78A35", "78A37", "78A40",
+       "78A45", "78A46", "78A48", "78A50", "78A55", "78A57", "78A60", "78A70", "78A97", "78A99"]
+    78Mxx:
+      ["78M05", "78M10", "78M12", "78M15", "78M16", "78M20", "78M22", "78M30", "78M31", "78M32",
+       "78M34", "78M35", "78M40", "78M50", "78M99"]
+  direct_details:
+    ["78-00", "78-01", "78-02", "78-03", "78-04", "78-05", "78-06", "78-10", "78-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Maxwell system"
+    - "electromagnetic boundary condition"
+    - "waveguide mode"
+  sources:
+    - url: https://ocw.mit.edu/search/?q=6.013
+      locator: "6.013 Electromagnetics and Applications, electromagnetic fields and waves"
+      role: exposition
+    - url: https://meep.readthedocs.io/en/latest/
+      locator: "Documentation, introduction and boundary conditions"
+      role: implementation reference
+  first_pass: "Compare time-harmonic and time-domain conventions and separate idealized media models from their numerical realizations."

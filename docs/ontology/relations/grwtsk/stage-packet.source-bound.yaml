@@ -1,0 +1,20 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.stage-packet.source-bound
+type: defined_using
+from: entity:grwtsk.cert.stage-packet
+to: entity:grwtsk.cert.source-bound
+context: context:grwtsk.literal-weil
+status: documented
+justification: The acceptance predicate carries the source comparison separately from the finite Gram
+  checker.
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilOddStageCertificate.lean
+  locator: GRWTSK.NumberTheory.WeilQuadraticForm.OddStageCertificate.Packet.Accepted
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: 74b8a308b3ab9be9805f95710bb472532a56fa41
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2

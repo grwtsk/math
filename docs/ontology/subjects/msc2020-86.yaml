@@ -1,0 +1,27 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.86
+kind: classification_subject
+title: "Geophysics"
+code: "86-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    86Axx:
+      ["86A04", "86A05", "86A08", "86A10", "86A15", "86A20", "86A22", "86A25", "86A30", "86A32",
+       "86A40", "86A60", "86A70", "86A99"]
+  direct_details:
+    ["86-00", "86-01", "86-02", "86-03", "86-04", "86-05", "86-06", "86-08", "86-10", "86-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Travel time"
+    - "seismic inverse problem"
+    - "geophysical flow"
+  sources:
+    - url: https://earthquake.usgs.gov/fdsnws/event/1/
+      locator: "Earthquake catalogs and event web service"
+      role: data reference
+    - url: https://ocw.mit.edu/search/?q=12.510
+      locator: "12.510 Introduction to Seismology, travel times and wave propagation"
+      role: exposition
+  first_pass: "Record the forward model, measurement geometry, and units before comparing inversion schemes or resolution claims."

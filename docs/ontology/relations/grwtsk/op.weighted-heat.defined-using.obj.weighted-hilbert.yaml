@@ -1,0 +1,16 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.op.weighted-heat.defined-using.obj.weighted-hilbert
+type: defined_using
+from: entity:grwtsk.op.weighted-heat
+to: entity:grwtsk.obj.weighted-hilbert
+context: context:grwtsk.theta-weighted
+status: documented
+justification: Do not substitute the physical norm.
+sources:
+- source: source:grwtsk.v1-heat
+  locator: theta-weighted-arithmetic-jump-heat-and-the-hot-spots-comparison.md
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2

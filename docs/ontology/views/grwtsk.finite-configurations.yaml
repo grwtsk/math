@@ -1,0 +1,28 @@
+schema: math-ontology/view/2
+id: view:grwtsk.finite-configurations
+title: Independent finite-configuration entries in GRWTSK
+scope: Source-indexed examples from graph coloring, additive combinatorics and finite rule theory.
+entities:
+- entity:grwtsk.comb.moser-coloring
+- entity:grwtsk.comb.odd-prime-affine-witness
+- entity:grwtsk.claim.finite-reuse
+- entity:grwtsk.proof.rules
+relations:
+- relation:grwtsk.proof.rules.candidate-witness
+inferences: []
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraphMoser.lean
+  locator: moser_listed_graph_exact_four
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: 1ed1aff97bed3b166d2b8e82af6040aa340a8602
+- source: source:grwtsk.math
+  path: GRWTSK/Combinatorics/FiniteFieldAffineProgression.lean
+  locator: affine_embedding_of_nontrivial_progression
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: 422b30e25d448e0ae000b1b2ab0ac23efafe8044
+- source: source:grwtsk.math
+  path: GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/FiniteJointPremiseClosure.lean
+  locator: Finite.run_preserves
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: 7b701d37cf754a811c31bce7fd6d26e8147f36ba

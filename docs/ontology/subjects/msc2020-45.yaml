@@ -1,0 +1,56 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.45
+kind: classification_subject
+title: "Integral equations"
+code: "45-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    45Axx:
+      ["45A05", "45A99"]
+    45Bxx:
+      ["45B05", "45B99"]
+    45Cxx:
+      ["45C05", "45C99"]
+    45Dxx:
+      ["45D05", "45D99"]
+    45Exx:
+      ["45E05", "45E10", "45E99"]
+    45Fxx:
+      ["45F05", "45F10", "45F15", "45F99"]
+    45Gxx:
+      ["45G05", "45G10", "45G15", "45G99"]
+    45Hxx:
+      ["45H05", "45H99"]
+    45Jxx:
+      ["45J05", "45J99"]
+    45Kxx:
+      ["45K05", "45K99"]
+    45Lxx:
+      ["45L05", "45L99"]
+    45Mxx:
+      ["45M05", "45M10", "45M15", "45M20", "45M99"]
+    45Nxx:
+      ["45N05", "45N99"]
+    45Pxx:
+      ["45P05", "45P99"]
+    45Qxx:
+      ["45Q05", "45Q99"]
+    45Rxx:
+      ["45R05", "45R99"]
+  direct_details:
+    ["45-00", "45-01", "45-02", "45-03", "45-04", "45-06", "45-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Integral equation"
+    - "resolvent kernel"
+    - "Fredholm alternative"
+  sources:
+    - url: https://dlmf.nist.gov/
+      locator: "Section 1.18, spectral expansions for differential operators as a comparison input"
+      role: reference
+    - url: https://arxiv.org/category_taxonomy
+      locator: "math.FA and math.CA, integral-equation resolvent constructions"
+      role: literature discovery
+  first_pass: "Separate Volterra and Fredholm setups and record the function space, kernel assumptions, and exact conclusion of a solvability theorem."

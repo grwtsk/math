@@ -1,0 +1,43 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.49
+kind: classification_subject
+title: "Calculus of variations and optimal control; optimization"
+code: "49-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    49Jxx:
+      ["49J05", "49J10", "49J15", "49J20", "49J21", "49J27", "49J30", "49J35", "49J40", "49J45",
+       "49J50", "49J52", "49J53", "49J55", "49J99"]
+    49Kxx:
+      ["49K05", "49K10", "49K15", "49K20", "49K21", "49K27", "49K30", "49K35", "49K40", "49K45",
+       "49K99"]
+    49Lxx:
+      ["49L12", "49L20", "49L25", "49L99"]
+    49Mxx:
+      ["49M05", "49M15", "49M20", "49M25", "49M27", "49M29", "49M37", "49M41", "49M99"]
+    49Nxx:
+      ["49N05", "49N10", "49N15", "49N20", "49N25", "49N30", "49N35", "49N45", "49N60", "49N70",
+       "49N75", "49N80", "49N90", "49N99"]
+    49Qxx:
+      ["49Q05", "49Q10", "49Q12", "49Q15", "49Q20", "49Q22", "49Q99"]
+    49Rxx:
+      ["49R05", "49R99"]
+    49Sxx:
+      ["49S05", "49S99"]
+  direct_details:
+    ["49-00", "49-01", "49-02", "49-03", "49-04", "49-06", "49-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Admissible variation"
+    - "Euler–Lagrange equation"
+    - "optimal control"
+  sources:
+    - url: https://ocw.mit.edu/search/?q=16.323
+      locator: "16.323 Principles of Optimal Control, calculus of variations"
+      role: exposition
+    - url: https://arxiv.org/category_taxonomy
+      locator: "math.OC, author-posted calculus of variations and control notes"
+      role: literature discovery
+  first_pass: "Track admissible classes, endpoint conditions, and the distinction between stationarity and a sufficient condition for optimality."

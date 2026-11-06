@@ -1,0 +1,29 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.op.weil
+kind: operator
+title: Canonical full window Weil operator
+context: context:grwtsk.literal-weil
+subjects:
+- subject:msc2020.11
+- subject:msc2020.42
+- subject:msc2020.47
+statement: The self-adjoint operator associated with the specified closed source form; not its finite
+  compression.
+sources:
+- source: source:grwtsk.v1-weil
+  locator: weil-periodic-boundary.md
+evidence:
+  mathematical: specified
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+operator:
+  carrier: entity:grwtsk.obj.weil-hilbert
+  domain: f in H_T with sum_n (1+|d_n|^2)|<e_n,f>|^2<infinity, e_n=(2T)^(-1/2)exp(i*pi*n*t/T), d_n=c_inf+m(pi*n/T),
+    m(xi)=2 sum_{j>=0} xi^2/[alpha_j(alpha_j^2+xi^2)], alpha_j=2j+1/2; source identification is an unreviewed
+    analytical input, not newly kernel checked.
+  codomain: entity:grwtsk.obj.weil-hilbert
+  formula: A_T=D_T+G_T-P_T^arith+L_T^pole
+  boundedness: unbounded

@@ -1,0 +1,26 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obl.manifest
+kind: obligation
+title: Concrete manifest binding
+context: context:grwtsk.reflective-kernel
+subjects:
+- subject:msc2020.03
+- subject:msc2020.68
+- subject:msc2020.94
+statement: Bind every state field, queue position, guard, capacity and program identity to a concrete
+  source implementation; prove validation correspondence.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: unresolved
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses: []
+  quantification: Bind every state field, queue position, guard, capacity and program identity to a
+    concrete source implementation; prove validation correspondence.
+  formal_statement: not_bound

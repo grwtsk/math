@@ -1,0 +1,39 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obl.root
+kind: obligation
+title: Odd positivity-to-root return
+context: context:grwtsk.literal-weil
+subjects:
+- subject:msc2020.11
+- subject:msc2020.42
+- subject:msc2020.47
+statement: Prove the odd-test criterion for the exact zeta source and its analytic test-class passage;
+  retain every prerequisite of the source-return theorem.
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilZetaOddCriterion.lean
+  locator: GRWTSK.NumberTheory.WeilQuadraticForm.RealWeilSource.riemannHypothesis_iff_literal_odd_nonneg
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: 8541fb4c406ca8e3d965996509ccb3d5874e9230
+  environment:
+    mode: isolated-zeta23-replay
+    upstream: 16a5ce41304fcdaea4e0be7c132e1c361dc26da5
+    toolchain_specification: documentation/adapters/anthropic-math/zeta23/lean-toolchain
+    compatibility: Source header identifies the isolated upstream environment; executable configuration
+      and transitive closure were not replayed.
+- source: source:grwtsk.v1-backward
+  locator: backward-dirichlet-grh-assembly-with-typed-lossless-finite-prefix-heat.md
+evidence:
+  mathematical: unresolved
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses: []
+  quantification: Prove the odd-test criterion for the exact zeta source and its analytic test-class
+    passage; retain every prerequisite of the source-return theorem.
+  formal_statement: not_bound
+current_scope: The pinned isolated source contains the zeta odd criterion. Its exact-source execution
+  and applicability to any supplied certificate family remain separate checks.

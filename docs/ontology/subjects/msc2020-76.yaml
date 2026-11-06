@@ -1,0 +1,75 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.76
+kind: classification_subject
+title: "Fluid mechanics"
+code: "76-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    76Axx:
+      ["76A02", "76A05", "76A10", "76A15", "76A20", "76A25", "76A30", "76A99"]
+    76Bxx:
+      ["76B03", "76B07", "76B10", "76B15", "76B20", "76B25", "76B45", "76B47", "76B55", "76B70",
+       "76B75", "76B99"]
+    76Dxx:
+      ["76D03", "76D05", "76D06", "76D07", "76D08", "76D09", "76D10", "76D17", "76D25", "76D27",
+       "76D33", "76D45", "76D50", "76D55", "76D99"]
+    76Exx:
+      ["76E05", "76E06", "76E07", "76E09", "76E15", "76E17", "76E19", "76E20", "76E25", "76E30",
+       "76E99"]
+    76Fxx:
+      ["76F02", "76F05", "76F06", "76F10", "76F20", "76F25", "76F30", "76F35", "76F40", "76F45",
+       "76F50", "76F55", "76F60", "76F65", "76F70", "76F80", "76F99"]
+    76Gxx:
+      ["76G25", "76G99"]
+    76Hxx:
+      ["76H05", "76H99"]
+    76Jxx:
+      ["76J20", "76J99"]
+    76Kxx:
+      ["76K05", "76K99"]
+    76Lxx:
+      ["76L05", "76L99"]
+    76Mxx:
+      ["76M10", "76M12", "76M15", "76M20", "76M21", "76M22", "76M23", "76M27", "76M28", "76M30",
+       "76M35", "76M40", "76M45", "76M50", "76M55", "76M60", "76M99"]
+    76Nxx:
+      ["76N06", "76N10", "76N15", "76N17", "76N20", "76N25", "76N30", "76N99"]
+    76Pxx:
+      ["76P05", "76P99"]
+    76Qxx:
+      ["76Q05", "76Q99"]
+    76Rxx:
+      ["76R05", "76R10", "76R50", "76R99"]
+    76Sxx:
+      ["76S05", "76S99"]
+    76Txx:
+      ["76T06", "76T10", "76T15", "76T17", "76T20", "76T25", "76T30", "76T99"]
+    76Uxx:
+      ["76U05", "76U60", "76U65", "76U99"]
+    76Vxx:
+      ["76V05", "76V99"]
+    76Wxx:
+      ["76W05", "76W99"]
+    76Xxx:
+      ["76X05", "76X99"]
+    76Yxx:
+      ["76Y05", "76Y99"]
+    76Zxx:
+      ["76Z05", "76Z10", "76Z99"]
+  direct_details:
+    ["76-00", "76-01", "76-02", "76-03", "76-04", "76-05", "76-06", "76-10", "76-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Incompressible flow"
+    - "Navier–Stokes equations"
+    - "weak solution"
+  sources:
+    - url: https://www.claymath.org/millennium/navier-stokes-equation/
+      locator: "Navier–Stokes equation problem statement"
+      role: problem definition
+    - url: https://ocw.mit.edu/search/?q=2.25
+      locator: "2.25 Advanced Fluid Mechanics, governing equations and boundary layers"
+      role: exposition
+  first_pass: "Record domain, forcing, boundary, and regularity in fluid models, keeping engineering approximations distinct from existence claims."

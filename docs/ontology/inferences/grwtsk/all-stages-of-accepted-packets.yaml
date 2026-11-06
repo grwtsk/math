@@ -1,0 +1,34 @@
+schema: math-ontology/inference/2
+id: rule:grwtsk.all-stages-of-accepted-packets
+kind: inference_rule
+title: Every stage from one cofinal accepted packet family
+context: context:grwtsk.literal-weil
+premises_all:
+- entity:grwtsk.cert.cofinal-indices
+- entity:grwtsk.cert.accepted-cofinal-packets
+conclusion: entity:grwtsk.obl.stage
+status: conditional
+cost: 1
+justification: Choose a later accepted stage for each target stage. Same-source window agreement and
+  decreasing dyadic defect permit restriction to the smaller support.
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilOddCofinalCoverage.lean
+  locator: GRWTSK.NumberTheory.WeilQuadraticForm.OddCofinalCoverage.all_stages_of_accepted_packets
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: 739f1edd815822d64727bafd5ba9afc2eb432a8c
+  environment:
+    mode: source-tree
+    declared_mathlib: d13f23b723b8a846827a245b89c10fc7d3f11612
+    toolchain_specification: lean-toolchain
+    compatibility: Declaration membership in the default target and compatibility were not replayed.
+substitution:
+  hcover.index: index
+  p.stage(n): index(n)
+side_conditions: []
+instantiation: schematic
+binders:
+- name: index
+  type: ℕ → ℕ
+- name: p
+  type: '(n : ℕ) → Packet(index(n))'

@@ -1,0 +1,69 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.32
+kind: classification_subject
+title: "Several complex variables and analytic spaces"
+code: "32-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    32Axx:
+      ["32A05", "32A08", "32A10", "32A12", "32A15", "32A17", "32A18", "32A19", "32A20", "32A22",
+       "32A25", "32A26", "32A27", "32A30", "32A35", "32A36", "32A37", "32A38", "32A40", "32A45",
+       "32A50", "32A55", "32A60", "32A65", "32A70", "32A99"]
+    32Bxx:
+      ["32B05", "32B10", "32B15", "32B20", "32B25", "32B99"]
+    32Cxx:
+      ["32C05", "32C07", "32C09", "32C11", "32C15", "32C18", "32C20", "32C22", "32C25", "32C30",
+       "32C35", "32C36", "32C37", "32C38", "32C55", "32C81", "32C99"]
+    32Dxx:
+      ["32D05", "32D10", "32D15", "32D20", "32D26", "32D99"]
+    32Exx:
+      ["32E05", "32E10", "32E20", "32E30", "32E35", "32E40", "32E99"]
+    32Fxx:
+      ["32F10", "32F17", "32F18", "32F27", "32F32", "32F45", "32F99"]
+    32Gxx:
+      ["32G05", "32G07", "32G08", "32G10", "32G13", "32G15", "32G20", "32G34", "32G81", "32G99"]
+    32Hxx:
+      ["32H02", "32H04", "32H12", "32H25", "32H30", "32H35", "32H40", "32H50", "32H99"]
+    32Jxx:
+      ["32J05", "32J10", "32J15", "32J17", "32J18", "32J25", "32J27", "32J81", "32J99"]
+    32Kxx:
+      ["32K05", "32K07", "32K12", "32K15", "32K99"]
+    32Lxx:
+      ["32L05", "32L10", "32L15", "32L20", "32L25", "32L81", "32L99"]
+    32Mxx:
+      ["32M05", "32M10", "32M12", "32M15", "32M17", "32M18", "32M25", "32M99"]
+    32Nxx:
+      ["32N05", "32N10", "32N15", "32N99"]
+    32Pxx:
+      ["32P05", "32P99"]
+    32Qxx:
+      ["32Q02", "32Q05", "32Q10", "32Q15", "32Q20", "32Q25", "32Q26", "32Q28", "32Q30", "32Q35",
+       "32Q40", "32Q45", "32Q55", "32Q56", "32Q57", "32Q60", "32Q65", "32Q99"]
+    32Sxx:
+      ["32S05", "32S10", "32S15", "32S20", "32S22", "32S25", "32S30", "32S35", "32S40", "32S45",
+       "32S50", "32S55", "32S60", "32S65", "32S70", "32S99"]
+    32Txx:
+      ["32T05", "32T15", "32T20", "32T25", "32T27", "32T35", "32T40", "32T99"]
+    32Uxx:
+      ["32U05", "32U10", "32U15", "32U20", "32U25", "32U30", "32U35", "32U40", "32U99"]
+    32Vxx:
+      ["32V05", "32V10", "32V15", "32V20", "32V25", "32V30", "32V35", "32V40", "32V99"]
+    32Wxx:
+      ["32W05", "32W10", "32W20", "32W25", "32W30", "32W50", "32W99"]
+  direct_details:
+    ["32-00", "32-01", "32-02", "32-03", "32-04", "32-06", "32-08", "32-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Complex analytic space"
+    - "domain of holomorphy"
+    - "Dolbeault complex"
+  sources:
+    - url: https://arxiv.org/category_taxonomy
+      locator: "math.CV, author-posted introductions on Stein spaces and Dolbeault cohomology"
+      role: literature discovery
+    - url: https://ocw.mit.edu/courses/18-117-topics-in-several-complex-variables-spring-2005/pages/lecture-notes/
+      locator: "18.117 Topics in Several Complex Variables, complex manifolds and Dolbeault cohomology"
+      role: exposition
+  first_pass: "Separate holomorphic objects on manifolds and singular spaces and pin the context of one extension or vanishing theorem."

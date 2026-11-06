@@ -1,0 +1,21 @@
+schema: math-ontology/inference/2
+id: rule:topology.unit-interval.quasi-compact-route
+kind: inference_rule
+title: Apply the Hausdorff and quasi-compactness result
+context: context:classical-point-set-topology
+premises_all:
+- entity:topology.unit-interval.hausdorff
+- entity:topology.unit-interval.quasi-compact
+conclusion: entity:topology.unit-interval.closed
+status: established
+cost: 2
+justification: Apply part 1 with the usual real line and its unit interval.
+sources:
+- source: source:stacks-project
+  path: topology.tex
+  locator: tag/08YB
+substitution:
+  X: real line with its usual topology
+  E: '[0,1]'
+side_conditions: []
+instantiation: ground

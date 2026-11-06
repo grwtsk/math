@@ -1,0 +1,49 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.58
+kind: classification_subject
+title: "Global analysis, analysis on manifolds"
+code: "58-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    58Axx:
+      ["58A03", "58A05", "58A07", "58A10", "58A12", "58A14", "58A15", "58A17", "58A20", "58A25",
+       "58A30", "58A32", "58A35", "58A40", "58A50", "58A99"]
+    58Bxx:
+      ["58B05", "58B10", "58B12", "58B15", "58B20", "58B25", "58B32", "58B34", "58B99"]
+    58Cxx:
+      ["58C05", "58C06", "58C07", "58C10", "58C15", "58C20", "58C25", "58C30", "58C35", "58C40",
+       "58C50", "58C99"]
+    58Dxx:
+      ["58D05", "58D07", "58D10", "58D15", "58D17", "58D19", "58D20", "58D25", "58D27", "58D29",
+       "58D30", "58D99"]
+    58Exx:
+      ["58E05", "58E07", "58E09", "58E10", "58E11", "58E12", "58E15", "58E17", "58E20", "58E25",
+       "58E30", "58E35", "58E40", "58E50", "58E99"]
+    58Hxx:
+      ["58H05", "58H10", "58H15", "58H99"]
+    58Jxx:
+      ["58J05", "58J10", "58J15", "58J20", "58J22", "58J26", "58J28", "58J30", "58J32", "58J35",
+       "58J37", "58J40", "58J42", "58J45", "58J47", "58J50", "58J51", "58J52", "58J53", "58J55",
+       "58J60", "58J65", "58J70", "58J72", "58J90", "58J99"]
+    58Kxx:
+      ["58K05", "58K10", "58K15", "58K20", "58K25", "58K30", "58K35", "58K40", "58K45", "58K50",
+       "58K55", "58K60", "58K65", "58K70", "58K99"]
+    58Zxx:
+      ["58Z05", "58Z99"]
+  direct_details:
+    ["58-00", "58-01", "58-02", "58-03", "58-04", "58-06", "58-08", "58-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Differential form"
+    - "elliptic operator on a manifold"
+    - "index"
+  sources:
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Geometry/Manifold
+      locator: "Mathlib/Geometry/Manifold, vector bundles and differential forms"
+      role: formal library
+    - url: https://arxiv.org/category_taxonomy
+      locator: "math.DG and math.AP, author-posted elliptic-operator and index-theory notes"
+      role: literature discovery
+  first_pass: "Bind the operator's domain and geometric data before linking de Rham, elliptic, and index constructions."

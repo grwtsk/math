@@ -1,0 +1,16 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.obj.state.defined-using.obj.lattice
+type: defined_using
+from: entity:grwtsk.obj.state
+to: entity:grwtsk.obj.lattice
+context: context:grwtsk.reflective-kernel
+status: documented
+justification: The inclusion is exact but S_Sigma is not a subspace.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2
