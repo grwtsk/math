@@ -123,6 +123,6 @@
       "configFile": "lakefile.lean"
     }
   ],
-  "name": "grwtsk-anthropic-zeta23",
+  "name": "«grwtsk-anthropic-zeta23»",
   "lakeDir": ".lake"
 }
