@@ -46,12 +46,18 @@ theorem logDeriv_gammaSeq {z : ℂ} (hz : 0 < z.re) {n : ℕ} (hn : n ≠ 0) :
   have hp : (∏ j ∈ Finset.range (n + 1), (z + j)) ≠ 0 :=
     Finset.prod_ne_zero_iff.mpr fun j _ ↦ add_nat_ne_zero hz j
   unfold Complex.GammaSeq
+  change logDeriv ((fun w : ℂ ↦ (n : ℂ) ^ w * (n.factorial : ℂ)) /
+    (fun w : ℂ ↦ ∏ j ∈ Finset.range (n + 1), (w + j))) z = _
   rw [logDeriv_div (f := fun w : ℂ ↦ (n : ℂ) ^ w * n.factorial)
     (g := fun w : ℂ ↦ ∏ j ∈ Finset.range (n + 1), (w + j)) z
     (mul_ne_zero (Complex.cpow_ne_zero_iff.mpr (Or.inl hnC)) hf) hp
     ((differentiableAt_id.const_cpow (Or.inl hnC)).mul_const _)
     (by fun_prop), logDeriv_mul_const _ _ hf]
-  rw [logDeriv_prod (fun j _ ↦ add_nat_ne_zero hz j) (by intros; fun_prop)]
+  rw [show (fun w : ℂ ↦ ∏ j ∈ Finset.range (n + 1), (w + j)) =
+      ∏ j ∈ Finset.range (n + 1), (fun w : ℂ ↦ w + j) by
+        ext w
+        simp only [Finset.prod_apply],
+    logDeriv_prod (fun j _ ↦ add_nat_ne_zero hz j) (by intros; fun_prop)]
   have hder : logDeriv (fun w : ℂ ↦ (n : ℂ) ^ w) z = Complex.log n := by
     rw [logDeriv_apply, (Complex.hasStrictDerivAt_const_cpow (Or.inl hnC)).hasDerivAt.deriv]
     exact mul_div_cancel_left₀ _ (Complex.cpow_ne_zero_iff.mpr (Or.inl hnC))
