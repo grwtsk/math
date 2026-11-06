@@ -88,7 +88,9 @@ private theorem digamma_quarters :
     hlog] at hr hd
   constructor <;> linarith
 
-private theorem real_digamma_eq {x : ℝ} (hx : 0 < x) :
+/-- The real Gamma logarithmic derivative is the real part of the
+actual complex digamma at positive real arguments. -/
+theorem real_digamma_eq {x : ℝ} (hx : 0 < x) :
     deriv Real.Gamma x / Real.Gamma x = (Complex.digamma (x : ℂ)).re := by
   have hd := Complex.differentiableAt_Gamma (x : ℂ) (by
     intro n h
