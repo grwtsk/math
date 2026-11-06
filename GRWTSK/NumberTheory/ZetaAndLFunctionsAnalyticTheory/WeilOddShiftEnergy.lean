@@ -53,13 +53,15 @@ private theorem sine_product_on_overlap (T r : ℝ) (m n : ℕ) :
   by_cases hx : t ∈ Icc (-T) T <;> by_cases hy : t + r ∈ Icc (-T) T <;>
     simp [zeroExtendedSine, hmem, hx, hy]
 
-private theorem integrable_sine_product (T r : ℝ) (m n : ℕ) :
+/-- Every product of two zero-extended sine modes at a fixed shift is integrable. -/
+theorem integrable_sine_product (T r : ℝ) (m n : ℕ) :
     Integrable (fun t : ℝ => zeroExtendedSine T m t * zeroExtendedSine T n (t + r)) := by
   rw [sine_product_on_overlap, integrable_indicator_iff (by exact measurableSet_Icc)]
   apply Continuous.integrableOn_Icc
   fun_prop
 
-private theorem sineCorrelation_zero_shift (T : ℝ) (hT : 0 < T) {m n : ℕ}
+/-- Distinct zero-extended sine modes have zero inner product. -/
+theorem sineCorrelation_zero_shift (T : ℝ) (hT : 0 < T) {m n : ℕ}
     (hmn : m ≠ n) : sineCorrelation T m n 0 = 0 := by
   rcases Nat.eq_zero_or_pos m with rfl | hm
   · simp [sineCorrelation, zeroExtendedSine]
