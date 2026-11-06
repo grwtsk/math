@@ -39,7 +39,8 @@ open scoped Interval
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.OddPrimeRow
 open OddRootProjection OddOutputTrace LowSchur
 
-private theorem sineCorrelation_eq_interval (T r : ℝ) (m n : ℕ) (hT : 0 < T)
+/-- The exact interval of integration for a supported nonnegative shift. -/
+theorem sineCorrelation_eq_interval (T r : ℝ) (m n : ℕ) (hT : 0 < T)
     (hr : 0 ≤ r) (hrT : r < 2 * T) :
     sineCorrelation T m n r =
       ∫ t in (-T)..(T - r),
