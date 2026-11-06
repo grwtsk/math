@@ -381,8 +381,10 @@ def residualBounds (bits terms K : ℕ) :
     Fin (512 - 256) → (Fin 256 ⊕ Unit) → Bounds :=
   residualBoundsFrom bits (physicalTables bits terms K) (poleBounds bits)
 
+/-- Residual indices lie strictly above the trial, so no diagonal
+scalar enclosure is consumed here. -/
 theorem residualBoundsFrom_sound (bits : ℕ) {t : PhysicalTables} {pole : ℕ → Bounds}
-    (ht : t.Sound 512 256)
+    {diagonals : ℕ} (ht : t.Sound 512 diagonals)
     (hp : ∀ n, 0 < n → n ≤ 512 → Encloses (pole n) (literalPoleEntry 1 n))
     (i : Fin (512 - 256)) (j : Fin 256 ⊕ Unit) :
     Encloses (residualBoundsFrom bits t pole i j) (literalResidualMatrix 1 256 512 i j) := by
@@ -397,7 +399,8 @@ theorem residualBoundsFrom_sound (bits : ℕ) {t : PhysicalTables} {pole : ℕ �
 theorem residualBounds_sound (bits terms : ℕ) {K : ℕ} (hK : 0 < K)
     (i : Fin (512 - 256)) (j : Fin 256 ⊕ Unit) :
     Encloses (residualBounds bits terms K i j) (literalResidualMatrix 1 256 512 i j) :=
-  residualBoundsFrom_sound bits (physicalTables_sound bits terms hK (by decide) (by decide))
+  residualBoundsFrom_sound bits (diagonals := 0)
+    (physicalTables_sound bits terms hK (by decide) (by decide))
     (fun _ hn _ => poleBounds_sound bits hn) i j
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.UnitWindowEntryBounds
