@@ -230,6 +230,38 @@ private theorem trigTaylor_error {x : ℚ} (hx : |x| ≤ 2) :
 /-- Rational sine center for a phase measured in units of pi. -/
 def sinHat (c : ℚ) : ℚ := (-1 : ℚ) ^ angleTurn c * sinTaylor (reducedAngle c)
 
+private def sinTaylorNumerator (numerator : ℤ) (denominator : ℕ) : ℤ :=
+  ∑ k ∈ Finset.range 12,
+    (-1 : ℤ)^k * numerator^(2*k+1) *
+      (denominator^(22-2*k) * ((23 : ℕ).factorial / (2*k+1).factorial) : ℕ)
+
+private theorem sinTaylorNumerator_eq (numerator : ℤ) {denominator : ℕ}
+    (hDen : 0 < denominator) :
+    (sinTaylorNumerator numerator denominator : ℚ) /
+        (((23 : ℕ).factorial : ℚ) * (denominator : ℚ)^23) =
+      sinTaylor ((numerator : ℚ) / denominator) := by
+  unfold sinTaylorNumerator sinTaylor
+  rw [Int.cast_sum, Finset.sum_div]
+  apply Finset.sum_congr rfl
+  intro k hk
+  have hk' : k < 12 := Finset.mem_range.mp hk
+  have hD : (denominator : ℚ) ≠ 0 := Nat.cast_ne_zero.mpr hDen.ne'
+  interval_cases k <;>
+    push_cast <;>
+    norm_num [Nat.factorial, div_pow] <;>
+    field_simp [hD] <;>
+    ring
+
+/-- Evaluate the same rational sine center with a single final denominator. -/
+def sinHatGrid (c : ℚ) : ℚ :=
+  let x := reducedAngle c
+  (-1 : ℚ)^angleTurn c * ((sinTaylorNumerator x.num x.den : ℚ) /
+    (((23 : ℕ).factorial : ℚ) * (x.den : ℚ)^23))
+
+theorem sinHatGrid_eq (c : ℚ) : sinHatGrid c = sinHat c := by
+  dsimp only [sinHatGrid, sinHat]
+  rw [sinTaylorNumerator_eq _ (reducedAngle c).den_pos, Rat.num_div_den]
+
 /-- Rational cosine center for a phase measured in units of pi. -/
 def cosHat (c : ℚ) : ℚ := (-1 : ℚ) ^ angleTurn c * cosTaylor (reducedAngle c)
 
