@@ -117,7 +117,12 @@ inductive Form where
 inductive Stem where
   | growth | blade | landscape | care | listening | future
   | forecast | commerce | confirmation | nature
-  deriving DecidableEq, Fintype, Repr
+  deriving DecidableEq, Repr
+
+instance : Fintype Stem where
+  elems := {.growth, .blade, .landscape, .care, .listening, .future,
+    .forecast, .commerce, .confirmation, .nature}
+  complete := by intro stem; cases stem <;> decide
 
 def normalize : Form → Stem
   | .hair | .hairy | .growing => .growth
@@ -156,7 +161,9 @@ theorem growth_returns_at_final_tease :
 
 /-- No stem is reused within a five-line window in the chosen pivot map. -/
 theorem poem_has_no_nearby_pivot_collision :
-    SeparatedPivots poemPivots := by decide
+    SeparatedPivots poemPivots := by
+  unfold SeparatedPivots
+  decide +kernel
 
 /-- A deliberately defective edit puts hair/hairy in adjacent pivot cells. -/
 def collidingPivots (i : Fin 15) : Option Stem :=
@@ -208,7 +215,7 @@ def Accepted (word : List Beat) : Prop :=
   WordPath graph (0 : Vertex) word (15 : Vertex)
 
 /-- The fourteen-line prefix ends immediately before the final joke. -/
-def prefix : List Beat :=
+def «prefix» : List Beat :=
   [.introduction, .prairie, .razorOffer, .confidentRefusal, .foresight,
    .defend, .listen, .playfulRebuff, .forecast, .market,
    .spring, .confirmation, .communalChange, .naturalFashion]
@@ -220,8 +227,8 @@ private theorem follow {s t u : Vertex} {a : Beat} {word : List Beat}
   WordPath.cons a word head tail
 
 /-- An actual witnessed fourteen-edge path, not just a claim of admission. -/
-theorem prefix_path : WordPath graph 0 prefix 14 := by
-  unfold prefix
+theorem prefix_path : WordPath graph 0 «prefix» 14 := by
+  unfold «prefix»
   refine follow (s := 0) (t := 1) (a := .introduction) (by decide) ?_
   refine follow (s := 1) (t := 2) (a := .prairie) (by decide) ?_
   refine follow (s := 2) (t := 3) (a := .razorOffer) (by decide) ?_
@@ -250,11 +257,11 @@ theorem paused_closing_path :
   exact closing_path
 
 /-- The ordinary performance is accepted. -/
-theorem canonical_accepted : Accepted (prefix ++ [.teasePresent]) :=
+theorem canonical_accepted : Accepted («prefix» ++ [.teasePresent]) :=
   wordPath_append prefix_path closing_path
 
 /-- The teased punchline can be delayed without disrupting acceptance. -/
-theorem paused_accepted : Accepted (prefix ++ [.pause, .teasePresent]) :=
+theorem paused_accepted : Accepted («prefix» ++ [.pause, .teasePresent]) :=
   wordPath_append prefix_path paused_closing_path
 
 /-- The restart is an inter-performance separator, not a spoken line. -/
@@ -264,7 +271,7 @@ theorem restart_path : WordPath graph 15 [.restart] 0 := by
 
 /-- Repeated performances form a genuine labeled cycle. -/
 theorem complete_cycle :
-    WordPath graph 0 ((prefix ++ [.teasePresent]) ++ [.restart]) 0 :=
+    WordPath graph 0 ((«prefix» ++ [.teasePresent]) ++ [.restart]) 0 :=
   wordPath_append (wordPath_append prefix_path closing_path) restart_path
 
 /-- Confirmation cannot appear before the introduction in an anchored path. -/

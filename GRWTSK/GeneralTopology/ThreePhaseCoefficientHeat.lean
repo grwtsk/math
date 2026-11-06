@@ -82,7 +82,14 @@ theorem flow_derivative (z : Triple) (j : Fin 3) (t : ℝ) :
     HasDerivAt (fun s => flow s z j) (-(generator (flow t z) j)) t := by
   have h := (((hasDerivAt_id t).const_mul (-3 : ℝ)).exp.mul_const
     (z j - mean z)).const_add (mean z)
-  convert h using 1 <;> simp only [generator, mean_flow, flow, relax, decay] <;> ring
+  simp only [id_eq] at h
+  have hcoef : Real.exp (-3 * t) * (-3 * 1) * (z j - mean z) =
+      -(generator (flow t z) j) := by
+    rw [generator, mean_flow]
+    simp only [flow, relax, decay]
+    ring
+  rw [hcoef] at h
+  exact h
 
 def phaseEnergy (z : Triple) : ℝ := ∑ j, z j ^ 2
 
@@ -126,11 +133,14 @@ theorem defect_zero_iff (lam : ℝ) (hlam : 0 < lam) (z : Triple) (c : ℝ) :
     have hc : 0 ≤ lam * c ^ 2 := mul_nonneg hlam.le (sq_nonneg c)
     change residualEnergy z + lam * c ^ 2 = 0 at h
     have hz : residualEnergy z = 0 := by linarith
-    have hcz : c = 0 := by nlinarith [sq_nonneg c]
+    have hc0 : lam * c ^ 2 = 0 := by linarith
+    have hcz : c = 0 := by
+      have hsq := (mul_eq_zero.mp hc0).resolve_left (ne_of_gt hlam)
+      nlinarith
     refine ⟨?_, hcz⟩
     intro j
     have hj : (z j - mean z) ^ 2 ≤ residualEnergy z :=
-      Finset.single_le_sum (fun i _ => sq_nonneg _) (Finset.mem_univ j)
+      Finset.single_le_sum (fun i _ => sq_nonneg (z i - mean z)) (Finset.mem_univ j)
     rw [hz] at hj
     nlinarith [sq_nonneg (z j - mean z)]
   · rintro ⟨hz, rfl⟩
@@ -179,6 +189,5 @@ theorem nonconstant_fixture : flow 1 ![1, -1, 0] ≠ flow 0 ![1, -1, 0] := by
       Real.exp (-3 : ℝ) < Real.exp 0 := Real.exp_lt_exp.mpr (by norm_num)
       _ = 1 := Real.exp_zero
   norm_num [flow, relax, mean, decay] at h0
-  linarith
 
 end GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat

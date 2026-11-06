@@ -47,7 +47,7 @@ theorem logDeriv_principal_part (f g : ℂ → ℂ) (a : ℂ) (k : ℤ)
   have hpower : logDeriv (fun u : ℂ => (u - a) ^ k) s = (k : ℂ) / (s - a) := by
     rw [logDeriv_fun_zpow (by fun_prop : DifferentiableAt ℂ (fun u : ℂ => u - a) s) k]
     simp [logDeriv_apply, div_eq_mul_inv]
-  rw [heq, logDeriv_mul (f := fun u : ℂ => (u - a) ^ k) (g := g) s (zpow_ne_zero k hs0) hgs0
+  rw [heq, logDeriv_fun_mul (f := fun u : ℂ => (u - a) ^ k) (g := g) s (zpow_ne_zero k hs0) hgs0
     (((hasDerivAt_id s).sub_const a).differentiableAt.zpow (Or.inl hs0)) hgs.differentiableAt, hpower]
 
 /-- A punctured principal-part identity gives the signed coefficient by a

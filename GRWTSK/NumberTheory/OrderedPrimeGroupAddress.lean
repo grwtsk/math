@@ -147,8 +147,8 @@ def toFiberCoordinate (axes : OrderedPrimeAxes) (address : axes.Address) :
   sameLength := by simp [primeOrder]
   inBounds := by
     intro i
-    simpa [primeOrder] using
-      ZMod.val_lt (address (Fin.cast (by simp) i))
+    simp only [primeOrder, Fin.getElem_fin, List.getElem_ofFn]
+    exact ZMod.val_lt (address ⟨i.val, by simpa using i.isLt⟩)
 
 /-- Build ordered axes from an already typed prime list. -/
 def ofPrimeList (primes : List PrimeIndex) : OrderedPrimeAxes where
@@ -168,7 +168,7 @@ theorem ofPrimeList_primeOrder (primes : List PrimeIndex) :
 @[simp]
 theorem ofPrimeList_radixProduct (primes : List PrimeIndex) :
     (ofPrimeList primes).radixProduct = (primes.map Subtype.val).prod := by
-  simp [ofPrimeList, radixProduct]
+  exact Fin.prod_univ_fun_getElem primes Subtype.val
 
 /-- The increasing prime-factor list with every prime proof retained. -/
 def factorPrimeList (n : ℕ) : List PrimeIndex :=
@@ -178,7 +178,9 @@ def factorPrimeList (n : ℕ) : List PrimeIndex :=
 @[simp]
 theorem factorPrimeList_values (n : ℕ) :
     (factorPrimeList n).map Subtype.val = n.primeFactorsList := by
-  simp [factorPrimeList]
+  unfold factorPrimeList
+  rw [List.map_map]
+  exact List.attach_map_subtype_val _
 
 /-- Canonical ordered prime axes of a natural number, retaining repeated prime
 factors in Mathlib's increasing factor order. -/
@@ -193,7 +195,7 @@ theorem factorAxes_length (n : ℕ) :
 @[simp]
 theorem factorAxes_primeOrder (n : ℕ) :
     (factorAxes n).primeOrder = n.primeFactorsList := by
-  simp [factorAxes]
+  rw [factorAxes, ofPrimeList_primeOrder, factorPrimeList_values]
 
 /-- Fundamental theorem of arithmetic as an address-radix product. -/
 theorem factorAxes_radixProduct {n : ℕ} (hn : n ≠ 0) :
@@ -224,8 +226,9 @@ abbrev CompressedAddress (n : ℕ) := ZMod n
 /-- Atomic and compressed conventions have equal cardinality for nonzero `n`.
 This theorem deliberately proves only cardinality equality. -/
 theorem atomic_compressed_same_card {n : ℕ} (hn : n ≠ 0) :
+    letI : NeZero n := ⟨hn⟩
     Fintype.card (factorAxes n).Address = Fintype.card (CompressedAddress n) := by
-  letI : NeZero n := ⟨hn⟩
+  let : NeZero n := ⟨hn⟩
   rw [card_factorAddress hn, ZMod.card]
 
 /-! ### Hostile convention controls -/
