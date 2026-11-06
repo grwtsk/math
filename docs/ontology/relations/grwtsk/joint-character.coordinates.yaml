@@ -1,0 +1,17 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.joint-character.coordinates
+type: read_by
+from: entity:grwtsk.obj.hilbert-finite
+to: entity:grwtsk.op.coordinates
+context: context:grwtsk.flat-tori
+status: documented
+justification: On each selected character, the joint coordinate observables read the complete exponent
+  tuple.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: Fourier realization on the dual torus
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2

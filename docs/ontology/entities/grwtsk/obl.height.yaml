@@ -1,0 +1,25 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obl.height
+kind: obligation
+title: Arithmetic realization and metric
+context: context:grwtsk.flat-tori
+subjects:
+- subject:msc2020.11
+- subject:msc2020.14
+statement: Supply A/K, independent classes P_i, torsion treatment, height normalization and G_ij=<P_i,P_j>;
+  no canonical prime-to-point map is assumed.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: unresolved
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses: []
+  quantification: Supply A/K, independent classes P_i, torsion treatment, height normalization and G_ij=<P_i,P_j>;
+    no canonical prime-to-point map is assumed.
+  formal_statement: not_bound

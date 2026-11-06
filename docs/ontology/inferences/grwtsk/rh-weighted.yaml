@@ -1,0 +1,22 @@
+schema: math-ontology/inference/2
+id: rule:grwtsk.rh-weighted
+kind: inference_rule
+title: Weighted odd route to RH
+context: context:grwtsk.literal-weil
+premises_all:
+- entity:grwtsk.obl.weighted-bound
+- entity:grwtsk.obl.weighted-return
+conclusion: entity:grwtsk.goal.rh
+status: proposed
+cost: 1
+justification: Alternative route to RH, not an additional premise of the cofinal route. Zeta pole saturation
+  is required.
+sources:
+- source: source:grwtsk.math
+  path: documentation/ontology/v1/ontology.yaml
+  locator: inferences/rule.rh_weighted
+  revision: 501bed44941d8d924d3c9155f4837e0a44a446b6
+  blob: 947a0385676f909f38b8915b971ae930a2ff168b
+substitution: {}
+side_conditions: []
+instantiation: schematic

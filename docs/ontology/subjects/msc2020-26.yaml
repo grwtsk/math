@@ -1,0 +1,36 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.26
+kind: classification_subject
+title: "Real functions"
+code: "26-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    26Axx:
+      ["26A03", "26A06", "26A09", "26A12", "26A15", "26A16", "26A18", "26A21", "26A24", "26A27",
+       "26A30", "26A33", "26A36", "26A39", "26A42", "26A45", "26A46", "26A48", "26A51", "26A99"]
+    26Bxx:
+      ["26B05", "26B10", "26B12", "26B15", "26B20", "26B25", "26B30", "26B35", "26B40", "26B99"]
+    26Cxx:
+      ["26C05", "26C10", "26C15", "26C99"]
+    26Dxx:
+      ["26D05", "26D07", "26D10", "26D15", "26D20", "26D99"]
+    26Exx:
+      ["26E05", "26E10", "26E15", "26E20", "26E25", "26E30", "26E35", "26E40", "26E50", "26E60",
+       "26E70", "26E99"]
+  direct_details:
+    ["26-00", "26-01", "26-02", "26-03", "26-04", "26-06", "26-08", "26-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Continuity"
+    - "derivative"
+    - "real function of bounded variation"
+  sources:
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Analysis/Calculus
+      locator: "Mathlib/Analysis/Calculus and Mathlib/Topology"
+      role: formal library
+    - url: https://ocw.mit.edu/search/?q=18.100A
+      locator: "18.100A Real Analysis, notes on continuity and differentiation"
+      role: exposition
+  first_pass: "Include counterexamples at each implication boundary and tag the one-variable versus normed-space definitions of differentiation."

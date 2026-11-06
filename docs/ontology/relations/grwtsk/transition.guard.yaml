@@ -1,0 +1,17 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.transition.guard
+type: defined_using
+from: entity:grwtsk.op.transition
+to: entity:grwtsk.op.guard
+context: context:grwtsk.reflective-kernel
+status: documented
+justification: The guarded transition is extended by zero on the disabled basis states, with the full
+  guard determining the enabled basis.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: Guards are spectral projections
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2

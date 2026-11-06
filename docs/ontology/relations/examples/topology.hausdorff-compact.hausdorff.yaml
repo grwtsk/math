@@ -1,0 +1,17 @@
+schema: math-ontology/relation/2
+id: relation:topology.hausdorff-compact.hausdorff
+type: defined_using
+from: entity:topology.hausdorff-compact
+to: entity:topology.hausdorff
+context: context:classical-point-set-topology
+status: documented
+justification: Hausdorff separation is the additional condition in this usage.
+sources:
+- source: source:stacks-project
+  path: topology.tex
+  locator: tag/0059
+costs:
+  reading: 1
+  formalization: 1
+  translation: 0
+  verification: 1

@@ -1,0 +1,56 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.70
+kind: classification_subject
+title: "Mechanics of particles and systems"
+code: "70-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    70Axx:
+      ["70A05", "70A99"]
+    70Bxx:
+      ["70B05", "70B10", "70B15", "70B99"]
+    70Cxx:
+      ["70C20", "70C99"]
+    70Exx:
+      ["70E05", "70E15", "70E17", "70E18", "70E20", "70E40", "70E45", "70E50", "70E55", "70E60",
+       "70E99"]
+    70Fxx:
+      ["70F05", "70F07", "70F10", "70F15", "70F16", "70F17", "70F20", "70F25", "70F35", "70F40",
+       "70F45", "70F99"]
+    70Gxx:
+      ["70G10", "70G40", "70G45", "70G55", "70G60", "70G65", "70G70", "70G75", "70G99"]
+    70Hxx:
+      ["70H03", "70H05", "70H06", "70H07", "70H08", "70H09", "70H11", "70H12", "70H14", "70H15",
+       "70H20", "70H25", "70H30", "70H33", "70H40", "70H45", "70H50", "70H99"]
+    70Jxx:
+      ["70J10", "70J25", "70J30", "70J35", "70J40", "70J50", "70J99"]
+    70Kxx:
+      ["70K05", "70K20", "70K25", "70K28", "70K30", "70K40", "70K42", "70K43", "70K44", "70K45",
+       "70K50", "70K55", "70K60", "70K65", "70K70", "70K75", "70K99"]
+    70Lxx:
+      ["70L05", "70L10", "70L99"]
+    70Mxx:
+      ["70M20", "70M99"]
+    70Pxx:
+      ["70P05", "70P99"]
+    70Qxx:
+      ["70Q05", "70Q99"]
+    70Sxx:
+      ["70S05", "70S10", "70S15", "70S20", "70S99"]
+  direct_details:
+    ["70-00", "70-01", "70-02", "70-03", "70-04", "70-05", "70-06", "70-08", "70-10", "70-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Hamiltonian"
+    - "canonical transformation"
+    - "symplectic map"
+  sources:
+    - url: https://ocw.mit.edu/search/?q=8.09
+      locator: "8.09 Classical Mechanics III, Lagrangian and Hamiltonian mechanics"
+      role: exposition
+    - url: https://groups.csail.mit.edu/mac/users/gjs/6946/sicm-html/book.html
+      locator: "Structure and Interpretation of Classical Mechanics, chapters on Lagrangian and Hamiltonian mechanics"
+      role: author exposition
+  first_pass: "Relate coordinates and variational models with assumptions explicit and distinguish exact flow from numerical symplectic integration."

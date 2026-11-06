@@ -1,0 +1,22 @@
+schema: math-ontology/entity/2
+id: entity:topology.quasi-compact-closed-in-hausdorff
+kind: theorem
+title: Quasi-compact subsets of Hausdorff spaces are closed
+context: context:classical-point-set-topology
+subjects:
+- subject:msc2020.54
+statement: If X is Hausdorff and E is a quasi-compact subspace, then E is closed in X.
+sources:
+- source: source:stacks-project
+  path: topology.tex
+  locator: tag/08YB
+evidence:
+  mathematical: established_source_result
+  source_correspondence: pinned_locator_inspected
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+analytical_argument: For each point x outside E, choose disjoint neighbourhoods of x and each e in E.
+  The e-neighbourhoods cover E, so choose finitely many. Their paired x-neighbourhoods intersect to give
+  an open neighbourhood of x in the complement.

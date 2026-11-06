@@ -1,0 +1,27 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.if.winding
+kind: interface
+title: Lattice to marked winding class
+context: context:grwtsk.flat-tori
+subjects:
+- subject:msc2020.55
+- subject:msc2020.57
+statement: e maps to the based loop t -> t*e+Lambda, retaining its marked class rather than only its
+  endpoint.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: proposed
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+interface:
+  from: entity:grwtsk.obj.lattice
+  to: entity:grwtsk.obj.winding
+  hypotheses:
+  - Declared lattice basis
+  obligations: []
+  exactness: exact_candidate

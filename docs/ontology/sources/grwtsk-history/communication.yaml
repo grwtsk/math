@@ -1,0 +1,16 @@
+schema: math-ontology/source/2
+id: source:grwtsk.v1-communication
+kind: historical_attachment
+title: Pure mathematical communication and typed transport
+digest:
+  algorithm: sha256
+  value: 65953f54f8b4637ba83795b890399c488473b8023597f88ab8b1c9dcb4722a30
+access: Historical attachment; consult the pinned v1 source index for provenance. Redistribution rights
+  are unrecorded.
+historical_catalogue:
+  source: source:grwtsk.math
+  path: documentation/ontology/v1/ontology.yaml
+  locator: sources/src.communication
+  revision: 501bed44941d8d924d3c9155f4837e0a44a446b6
+  blob: 947a0385676f909f38b8915b971ae930a2ff168b
+source_name: communication_specification_revised.md

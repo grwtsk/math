@@ -1,0 +1,28 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.43
+kind: classification_subject
+title: "Abstract harmonic analysis"
+code: "43-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    43Axx:
+      ["43A05", "43A07", "43A10", "43A15", "43A17", "43A20", "43A22", "43A25", "43A30", "43A32",
+       "43A35", "43A40", "43A45", "43A46", "43A50", "43A55", "43A60", "43A62", "43A65", "43A70",
+       "43A75", "43A77", "43A80", "43A85", "43A90", "43A95", "43A99"]
+  direct_details:
+    ["43-00", "43-01", "43-02", "43-03", "43-04", "43-06", "43-08", "43-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Locally compact group"
+    - "group representation"
+    - "Pontryagin dual"
+  sources:
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/MeasureTheory/Measure/Haar
+      locator: "Mathlib/MeasureTheory/Measure/Haar and Mathlib/RepresentationTheory"
+      role: formal library
+    - url: https://arxiv.org/category_taxonomy
+      locator: "math.FA and math.RT, author-posted harmonic analysis on locally compact groups"
+      role: literature discovery
+  first_pass: "Build an abelian starting case with its topology and characters, then split off noncommutative representation-theoretic variants."

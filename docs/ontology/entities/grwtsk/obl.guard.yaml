@@ -1,0 +1,26 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obl.guard
+kind: obligation
+title: Guarded semantic correspondence
+context: context:grwtsk.reflective-kernel
+subjects:
+- subject:msc2020.03
+- subject:msc2020.68
+- subject:msc2020.94
+statement: For every enabled source state and action, the operator basis update agrees with the exact
+  partial source transition, including control and queue effects.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: unresolved
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses: []
+  quantification: For every enabled source state and action, the operator basis update agrees with the
+    exact partial source transition, including control and queue effects.
+  formal_statement: not_bound

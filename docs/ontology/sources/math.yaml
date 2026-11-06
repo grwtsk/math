@@ -1,0 +1,12 @@
+schema: math-ontology/source/2
+id: source:grwtsk.math
+kind: git_repository
+title: GRWTSK mathematical repository
+url: https://github.com/grwtsk/math
+revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+license: MIT for local work; upstream terms vary by source
+access: Read from the pinned Git tree. Preserve per-source attribution, license notices, and isolated
+  dependency environments.
+source_scope: A Git revision is a source pin. It conveys no elaboration, kernel, axiom, or independent-review
+  result.
+upstream_license_directory: LICENSES

@@ -1,0 +1,28 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.claim.codec-injective
+kind: claim
+title: Prime-code injectivity
+context: context:grwtsk.reflective-kernel
+subjects:
+- subject:msc2020.03
+- subject:msc2020.68
+- subject:msc2020.94
+statement: For a fixed manifest of distinct primes, equal complete prime products of nonnegative exponent
+  tuples imply equal tuples.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: argued_in_source
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses:
+  - Distinct registered primes
+  - Complete tuple retained
+  quantification: For a fixed manifest of distinct primes, equal complete prime products of nonnegative
+    exponent tuples imply equal tuples.
+  formal_statement: not_bound

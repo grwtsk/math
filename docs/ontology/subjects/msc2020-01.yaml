@@ -1,0 +1,29 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.01
+kind: classification_subject
+title: "History and biography"
+code: "01-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    01Axx:
+      ["01A05", "01A07", "01A10", "01A11", "01A12", "01A15", "01A16", "01A17", "01A20", "01A25",
+       "01A27", "01A29", "01A30", "01A32", "01A35", "01A40", "01A45", "01A50", "01A55", "01A60",
+       "01A61", "01A65", "01A67", "01A70", "01A72", "01A73", "01A74", "01A75", "01A80", "01A85",
+       "01A90", "01A99"]
+  direct_details:
+    ["01-00", "01-01", "01-02", "01-06", "01-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Historical edition"
+    - "mathematical notation"
+    - "attributed result"
+  sources:
+    - url: https://mathshistory.st-andrews.ac.uk/HistTopics/
+      locator: "History Topics, select the history of zero"
+      role: historical discovery
+    - url: https://www.claymath.org/resource/collections/
+      locator: "Collections, Riemann’s 1859 manuscript or Euclid’s Elements"
+      role: primary source discovery
+  first_pass: "Resolve one claim about a notation or result to a dated edition and separate contemporary wording from retrospective mathematical interpretation."

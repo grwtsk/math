@@ -1,0 +1,25 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obl.weighted-bound
+kind: obligation
+title: Sharp weighted odd bound
+context: context:grwtsk.theta-weighted
+subjects:
+- subject:msc2020.11
+- subject:msc2020.47
+statement: For every required source sector kappa, prove L_kappa restricted to odd functions >= (1/2)I,
+  not only L_kappa>=0.
+sources:
+- source: source:grwtsk.v1-heat
+  locator: theta-weighted-arithmetic-jump-heat-and-the-hot-spots-comparison.md
+evidence:
+  mathematical: unresolved
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses: []
+  quantification: For every required source sector kappa, prove L_kappa restricted to odd functions
+    >= (1/2)I, not only L_kappa>=0.
+  formal_statement: not_bound

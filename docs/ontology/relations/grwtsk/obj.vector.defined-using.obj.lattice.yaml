@@ -1,0 +1,16 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.obj.vector.defined-using.obj.lattice
+type: defined_using
+from: entity:grwtsk.obj.vector
+to: entity:grwtsk.obj.lattice
+context: context:grwtsk.reflective-kernel
+status: documented
+justification: Ambient scalar extension does not create executable states.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2

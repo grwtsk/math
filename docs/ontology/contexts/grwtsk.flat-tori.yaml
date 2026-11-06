@@ -1,0 +1,14 @@
+schema: math-ontology/context/2
+id: context:grwtsk.flat-tori
+title: Marked lattice and dual flat tori
+foundation: classical mathematics with explicit source-specific Lean bindings
+assumptions:
+- Lambda = Z^d with the declared basis
+- 'G: a symmetric positive-definite real d by d matrix'
+- Primal torus V/Lambda; dual character torus V*/Lambda^vee.
+- Normalized Haar measure on both tori.
+- Characters chi_e(theta)=exp(2*pi*i*theta(e)); retain joint mode labels.
+- Full operators use their stated Fourier-diagonal domains; finite restrictions are different objects.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md

@@ -1,0 +1,46 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.19
+kind: classification_subject
+title: "K-theory"
+code: "19-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    19Axx:
+      ["19A13", "19A15", "19A22", "19A31", "19A49", "19A99"]
+    19Bxx:
+      ["19B10", "19B14", "19B28", "19B37", "19B99"]
+    19Cxx:
+      ["19C09", "19C20", "19C30", "19C40", "19C99"]
+    19Dxx:
+      ["19D06", "19D10", "19D23", "19D25", "19D35", "19D45", "19D50", "19D55", "19D99"]
+    19Exx:
+      ["19E08", "19E15", "19E20", "19E99"]
+    19Fxx:
+      ["19F05", "19F15", "19F27", "19F99"]
+    19Gxx:
+      ["19G05", "19G12", "19G24", "19G38", "19G99"]
+    19Jxx:
+      ["19J05", "19J10", "19J25", "19J35", "19J99"]
+    19Kxx:
+      ["19K14", "19K33", "19K35", "19K56", "19K99"]
+    19Lxx:
+      ["19L10", "19L20", "19L41", "19L47", "19L50", "19L64", "19L99"]
+    19Mxx:
+      ["19M05", "19M99"]
+  direct_details:
+    ["19-00", "19-01", "19-02", "19-03", "19-04", "19-06", "19-08", "19-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Grothendieck group"
+    - "projective module"
+    - "Bott periodicity"
+  sources:
+    - url: https://sites.math.rutgers.edu/~weibel/Kbook.html
+      locator: "The K-book, Chapter II on K0 and Chapter IV on higher K-theory"
+      role: author exposition
+    - url: https://pi.math.cornell.edu/~hatcher/
+      locator: "Vector Bundles and K-Theory, Chapters 1–2"
+      role: author exposition
+  first_pass: "Keep algebraic and topological K-theory as distinct constructions and qualify any bridge by its category and equivalence notion."

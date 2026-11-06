@@ -1,0 +1,39 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obl.stage
+kind: obligation
+title: All literal cofinal stages
+context: context:grwtsk.literal-weil
+subjects:
+- subject:msc2020.11
+- subject:msc2020.42
+- subject:msc2020.47
+statement: For every j in N, establish the actual StageLower(j) of the pinned source, not merely finitely
+  many windows.
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilOddLiteralCofinal.lean
+  locator: GRWTSK.NumberTheory.WeilQuadraticForm.OddLiteralCofinal.StageLower
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: 8140cfc4ecb141a24bb183e7b3e41dbf3a8f00cf
+  environment:
+    mode: source-tree
+    declared_mathlib: d13f23b723b8a846827a245b89c10fc7d3f11612
+    toolchain_specification: lean-toolchain
+    compatibility: Declaration membership in the default target and compatibility were not replayed.
+- source: source:grwtsk.math
+  path: GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilOddLiteralCofinal.lean
+  locator: Same literal odd Weil form across cofinal windows
+  revision: fc51c71c0c0a10701fdfb19d1a7ee2d2e49d7f52
+  blob: 8140cfc4ecb141a24bb183e7b3e41dbf3a8f00cf
+evidence:
+  mathematical: unresolved
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses: []
+  quantification: For every j in N, establish the actual StageLower(j) of the pinned source, not merely
+    finitely many windows.
+  formal_statement: not_bound

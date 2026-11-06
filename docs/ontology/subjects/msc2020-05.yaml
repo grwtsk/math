@@ -1,0 +1,40 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.05
+kind: classification_subject
+title: "Combinatorics"
+code: "05-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    05Axx:
+      ["05A05", "05A10", "05A15", "05A16", "05A17", "05A18", "05A19", "05A20", "05A30", "05A40",
+       "05A99"]
+    05Bxx:
+      ["05B05", "05B07", "05B10", "05B15", "05B20", "05B25", "05B30", "05B35", "05B40", "05B45",
+       "05B50", "05B99"]
+    05Cxx:
+      ["05C05", "05C07", "05C09", "05C10", "05C12", "05C15", "05C17", "05C20", "05C21", "05C22",
+       "05C25", "05C30", "05C31", "05C35", "05C38", "05C40", "05C42", "05C45", "05C48", "05C50",
+       "05C51", "05C55", "05C57", "05C60", "05C62", "05C63", "05C65", "05C69", "05C70", "05C72",
+       "05C75", "05C76", "05C78", "05C80", "05C81", "05C82", "05C83", "05C85", "05C90", "05C92",
+       "05C99"]
+    05Dxx:
+      ["05D05", "05D10", "05D15", "05D40", "05D99"]
+    05Exx:
+      ["05E05", "05E10", "05E14", "05E16", "05E18", "05E30", "05E40", "05E45", "05E99"]
+  direct_details:
+    ["05-00", "05-01", "05-02", "05-03", "05-04", "05-06", "05-08", "05-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Finite set"
+    - "simple graph"
+    - "matching"
+  sources:
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Combinatorics/SimpleGraph
+      locator: "Mathlib/Combinatorics/SimpleGraph"
+      role: formal library
+    - url: https://dlmf.nist.gov/
+      locator: "Chapter 26, sections on partitions and permutations"
+      role: reference
+  first_pass: "Extract graph and enumeration definitions together with one algorithmic realization, preserving the difference between labeled and unlabeled counts."

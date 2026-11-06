@@ -1,0 +1,42 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.claim.finite-reuse
+kind: claim
+title: Conditional finite rule soundness
+context: context:grwtsk.finite-joint-premise
+subjects:
+- subject:msc2020.03
+- subject:msc2020.05
+- subject:msc2020.68
+statement: If all input facts satisfy holds and holds is closed under every supplied rule, every output
+  of run satisfies holds.
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/FiniteJointPremiseClosure.lean
+  locator: GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.JointPremiseInference.Finite.run_preserves
+  revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
+  blob: 7b701d37cf754a811c31bce7fd6d26e8147f36ba
+  environment:
+    mode: source-tree
+    declared_mathlib: d13f23b723b8a846827a245b89c10fc7d3f11612
+    toolchain_specification: lean-toolchain
+    compatibility: Declaration membership in the default target and compatibility were not replayed.
+- source: source:grwtsk.math
+  path: GRWTSK/MathematicalLogicAndFoundations/ProofTheoryAndConstructiveMathematics/FiniteJointPremiseClosure.lean
+  locator: Finite joint-premise closure
+  revision: fc51c71c0c0a10701fdfb19d1a7ee2d2e49d7f52
+  blob: 7b701d37cf754a811c31bce7fd6d26e8147f36ba
+evidence:
+  mathematical: source_inspected
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses:
+  - Exact finite rule and fact lists
+  - All premises jointly satisfied
+  - Semantic rule validity supplied separately
+  quantification: If all input facts satisfy holds and holds is closed under every supplied rule, every
+    output of run satisfies holds.
+  formal_statement: not_bound

@@ -1,0 +1,46 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.55
+kind: classification_subject
+title: "Algebraic topology"
+code: "55-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    55Mxx:
+      ["55M05", "55M10", "55M15", "55M20", "55M25", "55M30", "55M35", "55M99"]
+    55Nxx:
+      ["55N05", "55N07", "55N10", "55N15", "55N20", "55N22", "55N25", "55N30", "55N31", "55N32",
+       "55N33", "55N34", "55N35", "55N40", "55N45", "55N91", "55N99"]
+    55Pxx:
+      ["55P05", "55P10", "55P15", "55P20", "55P25", "55P30", "55P35", "55P40", "55P42", "55P43",
+       "55P45", "55P47", "55P48", "55P50", "55P55", "55P57", "55P60", "55P62", "55P65", "55P91",
+       "55P92", "55P99"]
+    55Qxx:
+      ["55Q05", "55Q07", "55Q10", "55Q15", "55Q20", "55Q25", "55Q35", "55Q40", "55Q45", "55Q50",
+       "55Q51", "55Q52", "55Q55", "55Q70", "55Q91", "55Q99"]
+    55Rxx:
+      ["55R05", "55R10", "55R12", "55R15", "55R20", "55R25", "55R35", "55R37", "55R40", "55R45",
+       "55R50", "55R55", "55R60", "55R65", "55R70", "55R80", "55R91", "55R99"]
+    55Sxx:
+      ["55S05", "55S10", "55S12", "55S15", "55S20", "55S25", "55S30", "55S35", "55S36", "55S37",
+       "55S40", "55S45", "55S91", "55S99"]
+    55Txx:
+      ["55T05", "55T10", "55T15", "55T20", "55T25", "55T99"]
+    55Uxx:
+      ["55U05", "55U10", "55U15", "55U20", "55U25", "55U30", "55U35", "55U40", "55U99"]
+  direct_details:
+    ["55-00", "55-01", "55-02", "55-03", "55-04", "55-06", "55-08", "55-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Chain complex"
+    - "homology"
+    - "fundamental group"
+  sources:
+    - url: https://pi.math.cornell.edu/~hatcher/
+      locator: "Algebraic Topology, Chapters 1–3"
+      role: author exposition
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/AlgebraicTopology
+      locator: "Mathlib/AlgebraicTopology"
+      role: formal library
+  first_pass: "Compare simplicial and singular settings through explicit maps and retain basepoint and coefficient choices."

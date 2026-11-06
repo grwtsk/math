@@ -1,0 +1,27 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.op.code
+kind: operator
+title: Prime-code observable
+context: context:grwtsk.flat-tori
+subjects:
+- subject:msc2020.22
+- subject:msc2020.43
+- subject:msc2020.47
+- subject:msc2020.58
+statement: The manifest-dependent commuting functional calculus realizes the exact integer code.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: specified
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+operator:
+  carrier: entity:grwtsk.obj.hilbert-finite
+  domain: All of H_Sigma
+  codomain: entity:grwtsk.obj.hilbert-finite
+  formula: N_Sigma=exp(sum_i log(p_i)*X_i)
+  boundedness: finite_dimensional

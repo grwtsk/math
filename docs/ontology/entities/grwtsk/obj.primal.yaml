@@ -1,0 +1,20 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obj.primal
+kind: object
+title: Primal flat torus
+context: context:grwtsk.flat-tori
+subjects:
+- subject:msc2020.22
+- subject:msc2020.53
+- subject:msc2020.58
+statement: T=V/Lambda with metric G; all lattice vectors project to the same point.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: specified
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN

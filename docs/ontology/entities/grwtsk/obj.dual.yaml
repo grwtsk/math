@@ -1,0 +1,20 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obj.dual
+kind: object
+title: Dual character torus
+context: context:grwtsk.flat-tori
+subjects:
+- subject:msc2020.22
+- subject:msc2020.43
+- subject:msc2020.58
+statement: T_hat=V*/Lambda^vee with dual metric G^-1, not an algebraic dual abelian variety.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: spectral-geometry-of-a-prime-coded-reflective-kernel.md
+evidence:
+  mathematical: specified
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN

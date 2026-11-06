@@ -1,0 +1,22 @@
+schema: math-ontology/inference/2
+id: rule:grwtsk.rh-odd
+kind: inference_rule
+title: Historical odd route to RH
+context: context:grwtsk.literal-weil
+premises_all:
+- entity:grwtsk.claim.odd-positive
+- entity:grwtsk.obl.source
+- entity:grwtsk.obl.root
+conclusion: entity:grwtsk.goal.rh
+status: historical
+cost: 1
+justification: Missing analytic source and criterion bridges remain explicit.
+sources:
+- source: source:grwtsk.math
+  path: documentation/ontology/v1/ontology.yaml
+  locator: inferences/rule.rh_odd
+  revision: 501bed44941d8d924d3c9155f4837e0a44a446b6
+  blob: 947a0385676f909f38b8915b971ae930a2ff168b
+substitution: {}
+side_conditions: []
+instantiation: ground

@@ -1,0 +1,20 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.obj.weil-hilbert
+kind: object
+title: Physical window Hilbert space
+context: context:grwtsk.literal-weil
+subjects:
+- subject:msc2020.11
+- subject:msc2020.42
+- subject:msc2020.47
+statement: H_T=L2([-T,T],dt) with zero extension; not the state-lattice Hilbert space.
+sources:
+- source: source:grwtsk.v1-weil
+  locator: weil-periodic-boundary.md
+evidence:
+  mathematical: specified
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN

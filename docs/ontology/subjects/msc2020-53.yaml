@@ -1,0 +1,42 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.53
+kind: classification_subject
+title: "Differential geometry"
+code: "53-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    53Axx:
+      ["53A04", "53A05", "53A07", "53A10", "53A15", "53A17", "53A20", "53A25", "53A31", "53A35",
+       "53A40", "53A45", "53A55", "53A60", "53A70", "53A99"]
+    53Bxx:
+      ["53B05", "53B10", "53B12", "53B15", "53B20", "53B21", "53B25", "53B30", "53B35", "53B40",
+       "53B50", "53B99"]
+    53Cxx:
+      ["53C05", "53C07", "53C08", "53C10", "53C12", "53C15", "53C17", "53C18", "53C20", "53C21",
+       "53C22", "53C23", "53C24", "53C25", "53C26", "53C27", "53C28", "53C29", "53C30", "53C35",
+       "53C38", "53C40", "53C42", "53C43", "53C45", "53C50", "53C55", "53C56", "53C60", "53C65",
+       "53C70", "53C75", "53C80", "53C99"]
+    53Dxx:
+      ["53D05", "53D10", "53D12", "53D15", "53D17", "53D18", "53D20", "53D22", "53D25", "53D30",
+       "53D35", "53D37", "53D40", "53D42", "53D45", "53D50", "53D55", "53D99"]
+    53Exx:
+      ["53E10", "53E20", "53E30", "53E40", "53E50", "53E99"]
+    53Zxx:
+      ["53Z05", "53Z10", "53Z15", "53Z30", "53Z50", "53Z99"]
+  direct_details:
+    ["53-00", "53-01", "53-02", "53-03", "53-04", "53-06", "53-08", "53-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Riemannian metric"
+    - "connection"
+    - "curvature"
+  sources:
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Geometry/Manifold
+      locator: "Mathlib/Geometry/Manifold"
+      role: formal library
+    - url: https://ocw.mit.edu/courses/18-965-geometry-of-manifolds-fall-2004/
+      locator: "18.965 Geometry of Manifolds, connections and curvature"
+      role: exposition
+  first_pass: "Record sign conventions and regularity alongside curvature and test one comparison on a simple manifold."

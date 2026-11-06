@@ -1,0 +1,32 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.90
+kind: classification_subject
+title: "Operations research, mathematical programming"
+code: "90-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    90Bxx:
+      ["90B05", "90B06", "90B10", "90B15", "90B18", "90B20", "90B22", "90B25", "90B30", "90B35",
+       "90B36", "90B40", "90B50", "90B60", "90B70", "90B80", "90B85", "90B90", "90B99"]
+    90Cxx:
+      ["90C05", "90C06", "90C08", "90C09", "90C10", "90C11", "90C15", "90C17", "90C20", "90C22",
+       "90C23", "90C24", "90C25", "90C26", "90C27", "90C29", "90C30", "90C31", "90C32", "90C33",
+       "90C34", "90C35", "90C39", "90C40", "90C46", "90C47", "90C48", "90C49", "90C51", "90C52",
+       "90C53", "90C55", "90C56", "90C57", "90C59", "90C60", "90C70", "90C90", "90C99"]
+  direct_details:
+    ["90-00", "90-01", "90-02", "90-03", "90-04", "90-05", "90-06", "90-08", "90-10", "90-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Linear program"
+    - "duality"
+    - "network flow"
+  sources:
+    - url: https://ocw.mit.edu/search/?q=15.053
+      locator: "15.053 Optimization Methods in Management Science, linear and network optimization"
+      role: exposition
+    - url: https://developers.google.com/optimization
+      locator: "OR-Tools guides, linear optimization and network flows"
+      role: implementation reference
+  first_pass: "Separate model feasibility, duality, and algorithm guarantees and pin a small instance with objective and constraints."

@@ -1,0 +1,62 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.74
+kind: classification_subject
+title: "Mechanics of deformable solids"
+code: "74-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    74Axx:
+      ["74A05", "74A10", "74A15", "74A20", "74A25", "74A30", "74A35", "74A40", "74A45", "74A50",
+       "74A55", "74A60", "74A65", "74A70", "74A99"]
+    74Bxx:
+      ["74B05", "74B10", "74B15", "74B20", "74B99"]
+    74Cxx:
+      ["74C05", "74C10", "74C15", "74C20", "74C99"]
+    74Dxx:
+      ["74D05", "74D10", "74D99"]
+    74Exx:
+      ["74E05", "74E10", "74E15", "74E20", "74E25", "74E30", "74E35", "74E40", "74E99"]
+    74Fxx:
+      ["74F05", "74F10", "74F15", "74F20", "74F25", "74F99"]
+    74Gxx:
+      ["74G05", "74G10", "74G15", "74G22", "74G30", "74G35", "74G40", "74G45", "74G50", "74G55",
+       "74G60", "74G65", "74G70", "74G75", "74G99"]
+    74Hxx:
+      ["74H05", "74H10", "74H15", "74H20", "74H25", "74H30", "74H35", "74H40", "74H45", "74H50",
+       "74H55", "74H60", "74H65", "74H75", "74H80", "74H99"]
+    74Jxx:
+      ["74J05", "74J10", "74J15", "74J20", "74J25", "74J30", "74J35", "74J40", "74J99"]
+    74Kxx:
+      ["74K05", "74K10", "74K15", "74K20", "74K25", "74K30", "74K35", "74K99"]
+    74Lxx:
+      ["74L05", "74L10", "74L15", "74L99"]
+    74Mxx:
+      ["74M05", "74M10", "74M15", "74M20", "74M25", "74M99"]
+    74Nxx:
+      ["74N05", "74N10", "74N15", "74N20", "74N25", "74N30", "74N99"]
+    74Pxx:
+      ["74P05", "74P10", "74P15", "74P20", "74P99"]
+    74Qxx:
+      ["74Q05", "74Q10", "74Q15", "74Q20", "74Q99"]
+    74Rxx:
+      ["74R05", "74R10", "74R15", "74R20", "74R99"]
+    74Sxx:
+      ["74S05", "74S10", "74S15", "74S20", "74S22", "74S25", "74S40", "74S50", "74S60", "74S70",
+       "74S99"]
+  direct_details:
+    ["74-00", "74-01", "74-02", "74-03", "74-04", "74-05", "74-06", "74-10", "74-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Stress tensor"
+    - "strain tensor"
+    - "constitutive law"
+  sources:
+    - url: https://ocw.mit.edu/search/?q=2.080J
+      locator: "2.080J Structural Mechanics, lecture notes on stress and strain"
+      role: exposition
+    - url: https://arxiv.org/category_taxonomy
+      locator: "cond-mat.soft and math.AP, author-posted continuum elasticity papers"
+      role: literature discovery
+  first_pass: "Extract kinematic and constitutive assumptions independently and contrast linearized strain with finite deformation."

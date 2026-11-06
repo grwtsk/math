@@ -1,0 +1,48 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.57
+kind: classification_subject
+title: "Manifolds and cell complexes"
+code: "57-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    57Kxx:
+      ["57K10", "57K12", "57K14", "57K16", "57K18", "57K20", "57K30", "57K31", "57K32", "57K33",
+       "57K35", "57K40", "57K41", "57K43", "57K45", "57K50", "57K99"]
+    57Mxx:
+      ["57M05", "57M07", "57M10", "57M12", "57M15", "57M30", "57M50", "57M60", "57M99"]
+    57Nxx:
+      ["57N16", "57N17", "57N20", "57N25", "57N30", "57N35", "57N37", "57N40", "57N45", "57N50",
+       "57N55", "57N60", "57N65", "57N70", "57N75", "57N80", "57N99"]
+    57Pxx:
+      ["57P05", "57P10", "57P99"]
+    57Qxx:
+      ["57Q05", "57Q10", "57Q12", "57Q15", "57Q20", "57Q25", "57Q30", "57Q35", "57Q37", "57Q40",
+       "57Q50", "57Q55", "57Q60", "57Q65", "57Q70", "57Q91", "57Q99"]
+    57Rxx:
+      ["57R05", "57R10", "57R12", "57R15", "57R17", "57R18", "57R19", "57R20", "57R22", "57R25",
+       "57R27", "57R30", "57R32", "57R35", "57R40", "57R42", "57R45", "57R50", "57R52", "57R55",
+       "57R56", "57R57", "57R58", "57R60", "57R65", "57R67", "57R70", "57R75", "57R77", "57R80",
+       "57R85", "57R90", "57R91", "57R95", "57R99"]
+    57Sxx:
+      ["57S05", "57S10", "57S12", "57S15", "57S17", "57S20", "57S25", "57S30", "57S99"]
+    57Txx:
+      ["57T05", "57T10", "57T15", "57T20", "57T25", "57T30", "57T35", "57T99"]
+    57Zxx:
+      ["57Z05", "57Z10", "57Z15", "57Z20", "57Z25", "57Z99"]
+  direct_details:
+    ["57-00", "57-01", "57-02", "57-03", "57-04", "57-06", "57-08", "57-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Topological manifold"
+    - "smooth structure"
+    - "cobordism"
+  sources:
+    - url: https://ocw.mit.edu/courses/18-966-geometry-of-manifolds-spring-2007/
+      locator: "18.966 Geometry of Manifolds, lecture notes on smooth structures"
+      role: exposition
+    - url: https://arxiv.org/category_taxonomy
+      locator: "math.GT, author-posted notes on manifolds and cell complexes"
+      role: literature discovery
+  first_pass: "Track dimension and smooth versus PL versus topological category, beginning with one example where the category matters."

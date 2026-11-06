@@ -1,0 +1,19 @@
+schema: math-ontology/entity/2
+id: entity:topology.hausdorff
+kind: definition
+title: Hausdorff separation
+context: context:classical-point-set-topology
+subjects:
+- subject:msc2020.54
+statement: Any two distinct points admit disjoint open neighbourhoods.
+sources:
+- source: source:stacks-project
+  path: topology.tex
+  locator: tag/0059
+evidence:
+  mathematical: documented
+  source_correspondence: pinned_locator_inspected
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN

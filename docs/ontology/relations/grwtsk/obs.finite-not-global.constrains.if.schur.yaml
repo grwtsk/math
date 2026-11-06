@@ -1,0 +1,21 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.obs.finite-not-global.constrains.if.schur
+type: constrains
+from: entity:grwtsk.obs.finite-not-global
+to: entity:grwtsk.if.schur
+context: context:grwtsk.literal-weil
+status: documented
+justification: Blocks omission of the infinite complement.
+sources:
+- source: source:grwtsk.math
+  path: GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SchurObserverCertificate.lean
+  locator: Directional observed Schur certificates
+  revision: fc51c71c0c0a10701fdfb19d1a7ee2d2e49d7f52
+  blob: 7e6e1eda7caab83a06646ba777af47b7ec0fec67
+- source: source:grwtsk.v1-weil
+  locator: weil-periodic-boundary.md
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2

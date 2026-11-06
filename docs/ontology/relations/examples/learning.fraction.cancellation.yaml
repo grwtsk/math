@@ -1,0 +1,17 @@
+schema: math-ontology/relation/2
+id: relation:learning.fraction.cancellation
+type: has_instance
+from: entity:learning.fraction
+to: entity:learning.fraction-cancellation
+context: context:elementary-rational-arithmetic
+status: documented
+justification: The two written fractions exhibit the same rational.
+sources:
+- source: source:mathlib4
+  path: Mathlib/Data/Rat/Defs.lean
+  locator: Rat.natCast_div_eq_divInt
+costs:
+  reading: 1
+  formalization: 1
+  translation: 0
+  verification: 1

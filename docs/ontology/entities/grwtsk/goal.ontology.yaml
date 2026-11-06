@@ -1,0 +1,33 @@
+schema: math-ontology/entity/2
+id: entity:grwtsk.goal.ontology
+kind: objective
+title: Complete mathematical knowledge architecture
+context: context:grwtsk.reflective-kernel
+subjects:
+- subject:msc2020.00
+- subject:msc2020.68
+statement: Every inventoried module, claim, proof, interface, document and relevant issue has source-bound
+  identity, mathematical purpose, explicit scope and auditable coverage.
+sources:
+- source: source:grwtsk.math
+  path: AGENTS.md
+  locator: Repository instructions
+  revision: fc51c71c0c0a10701fdfb19d1a7ee2d2e49d7f52
+  blob: b1daed4e1cf7bda03622d836f90a2e7280d29d85
+- source: source:grwtsk.math
+  path: documentation/taxonomy/msc2020/source-layout-v1.json
+  locator: Authoritative MSC2020 source layout
+  revision: fc51c71c0c0a10701fdfb19d1a7ee2d2e49d7f52
+  blob: ec7ae0dce9138e0e1f44f36b65d433e0e9897e00
+evidence:
+  mathematical: unresolved
+  source_correspondence: historical_scope_preserved
+  elaboration: NOT_RUN
+  fresh_kernel: NOT_RUN
+  transitive_axioms: NOT_RUN
+  independent_review: NOT_RUN
+claim:
+  hypotheses: []
+  quantification: Every inventoried module, claim, proof, interface, document and relevant issue has
+    source-bound identity, mathematical purpose, explicit scope and auditable coverage.
+  formal_statement: not_bound

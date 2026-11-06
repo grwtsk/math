@@ -1,0 +1,17 @@
+schema: math-ontology/relation/2
+id: relation:grwtsk.lattice.marked-winding
+type: represented_by
+from: entity:grwtsk.obj.lattice
+to: entity:grwtsk.obj.winding
+context: context:grwtsk.flat-tori
+status: documented
+justification: Each lattice vector gives a loop whose marked homotopy class retains the full ordered
+  basis coordinates.
+sources:
+- source: source:grwtsk.v1-kernel
+  locator: 'Topology: vectors as winding classes'
+costs:
+  reading: 1
+  formalization: 2
+  translation: 0
+  verification: 2

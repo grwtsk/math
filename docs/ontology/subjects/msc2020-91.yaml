@@ -1,0 +1,45 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.91
+kind: classification_subject
+title: "Game theory, economics, finance, and other social and behavioral sciences"
+code: "91-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    91Axx:
+      ["91A05", "91A06", "91A07", "91A10", "91A11", "91A12", "91A14", "91A15", "91A16", "91A18",
+       "91A20", "91A22", "91A23", "91A24", "91A25", "91A26", "91A27", "91A28", "91A30", "91A35",
+       "91A40", "91A43", "91A44", "91A46", "91A50", "91A55", "91A60", "91A65", "91A68", "91A70",
+       "91A80", "91A81", "91A86", "91A90", "91A99"]
+    91Bxx:
+      ["91B02", "91B03", "91B05", "91B06", "91B08", "91B10", "91B12", "91B14", "91B15", "91B16",
+       "91B18", "91B24", "91B26", "91B32", "91B38", "91B39", "91B41", "91B42", "91B43", "91B44",
+       "91B50", "91B51", "91B52", "91B54", "91B55", "91B60", "91B62", "91B64", "91B66", "91B68",
+       "91B69", "91B70", "91B72", "91B74", "91B76", "91B80", "91B82", "91B84", "91B86", "91B99"]
+    91Cxx:
+      ["91C05", "91C15", "91C20", "91C99"]
+    91Dxx:
+      ["91D10", "91D15", "91D20", "91D25", "91D30", "91D35", "91D99"]
+    91Exx:
+      ["91E10", "91E30", "91E40", "91E45", "91E99"]
+    91Fxx:
+      ["91F10", "91F20", "91F99"]
+    91Gxx:
+      ["91G05", "91G10", "91G15", "91G20", "91G30", "91G40", "91G45", "91G50", "91G60", "91G70",
+       "91G80", "91G99"]
+  direct_details:
+    ["91-00", "91-01", "91-02", "91-03", "91-04", "91-05", "91-06", "91-08", "91-10", "91-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Nash equilibrium"
+    - "utility representation"
+    - "no-arbitrage condition"
+  sources:
+    - url: https://ocw.mit.edu/search/?q=14.12
+      locator: "14.12 Economic Applications of Game Theory, games and equilibria"
+      role: exposition
+    - url: https://arxiv.org/category_taxonomy
+      locator: "econ.TH and q-fin.MF, author-posted work on economic games and mathematical finance"
+      role: literature discovery
+  first_pass: "Start with finite games and normalize payoff conventions, then build independent frontiers for choice and financial models."

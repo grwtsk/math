@@ -1,0 +1,21 @@
+schema: math-ontology/inference/2
+id: rule:topology.unit-interval.open-complement-route
+kind: inference_rule
+title: Use the open complement
+context: context:classical-point-set-topology
+premises_all: []
+conclusion: entity:topology.unit-interval.closed
+status: established
+cost: 3
+justification: The complement of the unit interval is the union of the two open rays. This alternative
+  uses the order topology.
+sources:
+- source: source:stacks-project
+  path: topology.tex
+  locator: tag/0059
+substitution:
+  X: real line with its usual topology
+  E: '[0,1]'
+side_conditions:
+- entity:topology.unit-interval.open-rays
+instantiation: ground

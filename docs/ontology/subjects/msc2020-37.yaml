@@ -1,0 +1,61 @@
+schema: math-ontology/subject/2
+id: subject:msc2020.37
+kind: classification_subject
+title: "Dynamical systems and ergodic theory"
+code: "37-XX"
+classification: source:msc2020
+inventory:
+  groups:
+    37Axx:
+      ["37A05", "37A10", "37A15", "37A17", "37A20", "37A25", "37A30", "37A35", "37A40", "37A44",
+       "37A46", "37A50", "37A55", "37A60", "37A99"]
+    37Bxx:
+      ["37B02", "37B05", "37B10", "37B15", "37B20", "37B25", "37B30", "37B35", "37B40", "37B45",
+       "37B51", "37B52", "37B55", "37B65", "37B99"]
+    37Cxx:
+      ["37C05", "37C10", "37C15", "37C20", "37C25", "37C27", "37C29", "37C30", "37C35", "37C40",
+       "37C45", "37C50", "37C55", "37C60", "37C65", "37C70", "37C75", "37C79", "37C81", "37C83",
+       "37C85", "37C86", "37C99"]
+    37Dxx:
+      ["37D05", "37D10", "37D15", "37D20", "37D25", "37D30", "37D35", "37D40", "37D45", "37D99"]
+    37Exx:
+      ["37E05", "37E10", "37E15", "37E20", "37E25", "37E30", "37E35", "37E40", "37E45", "37E99"]
+    37Fxx:
+      ["37F05", "37F10", "37F12", "37F15", "37F20", "37F25", "37F31", "37F32", "37F34", "37F35",
+       "37F40", "37F44", "37F46", "37F50", "37F75", "37F80", "37F99"]
+    37Gxx:
+      ["37G05", "37G10", "37G15", "37G20", "37G25", "37G30", "37G35", "37G40", "37G99"]
+    37Hxx:
+      ["37H05", "37H10", "37H12", "37H15", "37H20", "37H30", "37H99"]
+    37Jxx:
+      ["37J06", "37J11", "37J12", "37J20", "37J25", "37J30", "37J35", "37J37", "37J38", "37J39",
+       "37J40", "37J46", "37J51", "37J55", "37J60", "37J65", "37J70", "37J99"]
+    37Kxx:
+      ["37K06", "37K10", "37K15", "37K20", "37K25", "37K30", "37K35", "37K40", "37K45", "37K50",
+       "37K55", "37K58", "37K60", "37K65", "37K99"]
+    37Lxx:
+      ["37L05", "37L10", "37L15", "37L20", "37L25", "37L30", "37L40", "37L45", "37L50", "37L55",
+       "37L60", "37L65", "37L99"]
+    37Mxx:
+      ["37M05", "37M10", "37M15", "37M20", "37M21", "37M22", "37M25", "37M99"]
+    37Nxx:
+      ["37N05", "37N10", "37N15", "37N20", "37N25", "37N30", "37N35", "37N40", "37N99"]
+    37Pxx:
+      ["37P05", "37P10", "37P15", "37P20", "37P25", "37P30", "37P35", "37P40", "37P45", "37P50",
+       "37P55", "37P99"]
+  direct_details:
+    ["37-00", "37-01", "37-02", "37-03", "37-04", "37-06", "37-11"]
+frontier:
+  status: planned
+  seeds:
+    - "Dynamical system"
+    - "invariant measure"
+    - "ergodic transformation"
+  sources:
+    - url: https://github.com/leanprover-community/mathlib4/tree/d13f23b723b8a846827a245b89c10fc7d3f11612/Mathlib/Dynamics
+      locator: "Mathlib/Dynamics"
+      role: formal library
+    - url: https://arxiv.org/category_taxonomy
+      locator: "math.DS, author-posted notes on ergodic theorems and symbolic dynamics"
+      role: literature discovery
+  first_pass: "Begin with measure-preserving maps and shifts, then index where invariance, ergodicity, and mixing diverge."
