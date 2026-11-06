@@ -135,7 +135,8 @@ theorem periodicMultiplier_antitone_parity (w : ℝ) :
   unfold multiplierRate
   linarith [show (a : ℝ) ≤ b by exact_mod_cast hab]
 
-private theorem periodicMultiplierTerm_antitone (a : ℕ) (w : ℝ) :
+/-- The summand decreases as its continuous rate index increases. -/
+theorem periodicMultiplierTerm_antitone (a : ℕ) (w : ℝ) :
     AntitoneOn (periodicMultiplierTerm a w) (Ici 0) := by
   intro x hx y _ hxy
   unfold periodicMultiplierTerm
@@ -188,7 +189,8 @@ private theorem multiplierPrimitive_tendsto (a : ℕ) (w : ℝ) :
   unfold multiplierPrimitive
   simpa only [mul_zero] using hlog.const_mul (-(1 / 2 : ℝ))
 
-private theorem integral_periodicMultiplierTerm (a : ℕ) (w : ℝ) :
+/-- The half-line integral gives the logarithmic part of the multiplier bracket. -/
+theorem integral_periodicMultiplierTerm (a : ℕ) (w : ℝ) :
     ∫ x in Ioi 0, periodicMultiplierTerm a w x =
       (1 / 2 : ℝ) * Real.log (1 + w ^ 2 / ((a : ℝ) + 1 / 2) ^ 2) := by
   rw [integral_Ioi_of_hasDerivAt_of_tendsto'
