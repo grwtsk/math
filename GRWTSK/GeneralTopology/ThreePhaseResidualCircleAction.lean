@@ -29,18 +29,18 @@ def twist (a : ℂ) (z : Phase3) : Phase3 :=
 
 theorem mean_twist (a : ℂ) (z : Phase3) :
     mean (twist a z) = mean z := by
-  simp only [mean, twist, residual]
+  simp only [mean, twist, ThreePhaseCoherentResidual.residual]
   ring
 
 theorem residual_twist (a : ℂ) (z : Phase3) (j : Fin 3) :
     residual (twist a z) j = a * residual z j := by
-  simp only [residual, twist, mean_twist]
+  simp only [ThreePhaseCoherentResidual.residual, twist, mean_twist]
   ring
 
 /-- Identity phase reconstructs the complete original source. -/
 theorem twist_one (z : Phase3) : twist 1 z = z := by
   funext j
-  simp [twist, residual]
+  simp [twist, ThreePhaseCoherentResidual.residual]
 
 /-- A complete composition law on the complex residual fiber. -/
 theorem twist_comp (a b : ℂ) (z : Phase3) :
@@ -57,13 +57,13 @@ theorem mean_smul (c : ℂ) (z : Phase3) :
 theorem residual_add (z w : Phase3) :
     residual (z + w) = residual z + residual w := by
   funext j
-  simp only [residual, Pi.add_apply, mean_add]
+  simp only [ThreePhaseCoherentResidual.residual, Pi.add_apply, mean_add]
   ring
 
 theorem residual_smul (c : ℂ) (z : Phase3) :
     residual (c • z) = c • residual z := by
   funext j
-  simp only [residual, Pi.smul_apply, smul_eq_mul, mean_smul]
+  simp only [ThreePhaseCoherentResidual.residual, Pi.smul_apply, smul_eq_mul, mean_smul]
   ring
 
 theorem twist_add (a : ℂ) (z w : Phase3) :
@@ -81,10 +81,10 @@ theorem twist_smul (a c : ℂ) (z : Phase3) :
 theorem twist_sub (a : ℂ) (z w : Phase3) :
     twist a (z - w) = twist a z - twist a w := by
   calc
-    twist a (z - w) = twist a (z + (-1 : ℂ) • w) := by simp
+    twist a (z - w) = twist a (z + (-1 : ℂ) • w) := by simp only [sub_eq_add_neg, neg_one_smul]
     _ = twist a z + (-1 : ℂ) • twist a w := by
       rw [twist_add, twist_smul]
-    _ = twist a z - twist a w := by simp
+    _ = twist a z - twist a w := by simp only [sub_eq_add_neg, neg_one_smul]
 
 /-- The residual transport is genuinely complex-linear on the original
 three-coordinate vector space, rather than only an action on four probes. -/
@@ -154,7 +154,6 @@ def residualFromTwo (a b : ℂ) : Phase3 := ![a, b, -(a + b)]
 theorem mean_residualFromTwo (a b : ℂ) :
     mean (residualFromTwo a b) = 0 := by
   simp [mean, residualFromTwo]
-  ring
 
 theorem residualFromTwo_unique
     (z : Phase3) (hz : mean z = 0) :
@@ -176,8 +175,10 @@ unweighted Euclidean two-coordinate metric: it has a third coupled term. -/
 theorem residualEnergy_fromTwo (a b : ℂ) :
     residualEnergy (residualFromTwo a b) =
       ‖a‖ ^ 2 + ‖b‖ ^ 2 + ‖a + b‖ ^ 2 := by
-  simp [residualEnergy, Fin.sum_univ_three, residual,
-    mean_residualFromTwo, residualFromTwo, norm_neg]
+  simp only [residualEnergy, Fin.sum_univ_three, ThreePhaseCoherentResidual.residual,
+    mean_residualFromTwo, sub_zero]
+  simp [residualFromTwo]
+  simpa only [neg_add_rev] using norm_neg (a + b)
 
 /-- The phase action is independent of the dissipative heat flow. -/
 theorem heat_twist (a : ℂ) (t : ℝ) (z : Phase3) :
@@ -213,7 +214,7 @@ theorem positiveGram_twist (a : ℂ) (ha : ‖a‖ = 1) (z : Phase3) :
 
 /-- The four real positive observations are retained as independent named
 channels before the signed complex Weil reconstruction is performed. -/
-structure FourProbes where
+@[ext] structure FourProbes where
   plus : ℝ
   minus : ℝ
   plusI : ℝ

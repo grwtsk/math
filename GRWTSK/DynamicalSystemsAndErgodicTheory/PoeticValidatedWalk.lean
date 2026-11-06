@@ -35,7 +35,7 @@ structure WalkEdge where
   label : Beat
   words : String
   target : Vertex
-  deriving Repr
+  deriving DecidableEq, Repr
 
 structure WalkInput where
   start : Vertex
@@ -60,6 +60,10 @@ def validateEdges (current : Vertex) : List WalkEdge → Option Vertex
 
 def WalkValid (walk : WalkInput) : Prop :=
   validateEdges walk.start walk.edges = some walk.finish
+
+instance (walk : WalkInput) : Decidable (WalkValid walk) := by
+  unfold WalkValid
+  infer_instance
 
 structure CheckedWalk where
   input : WalkInput
@@ -139,6 +143,10 @@ def RoleFollows (first second : PhraseRole) : Prop :=
   (first = .forecast ∧ second = .payoff) ∨
   (first = .payoff ∧ second = .setup)
 
+instance (first second : PhraseRole) : Decidable (RoleFollows first second) := by
+  unfold RoleFollows
+  infer_instance
+
 structure PhraseModel where
   role : PhraseRole
   entry : Vertex
@@ -155,6 +163,10 @@ def PhraseModel.outPort (phrase : PhraseModel) : PrimeFiberPort :=
 def PhraseModel.Valid (phrase : PhraseModel) : Prop :=
   validateEdges phrase.entry phrase.edges = some phrase.exit
 
+instance (phrase : PhraseModel) : Decidable phrase.Valid := by
+  unfold PhraseModel.Valid
+  infer_instance
+
 /-- Pauses and restart labels are not additional spoken lines. -/
 def PhraseModel.spokenCount (phrase : PhraseModel) : ℕ :=
   (phrase.edges.filter (fun e =>
@@ -163,7 +175,8 @@ def PhraseModel.spokenCount (phrase : PhraseModel) : ℕ :=
 theorem port_eq_iff_boundary_eq (first second : PhraseModel) :
     first.outPort = second.inPort ↔ first.exit = second.entry := by
   constructor
-  · exact addressOf_injective
+  · intro h
+    exact addressOf_injective h
   · intro h
     exact congrArg addressOf h
 
@@ -172,6 +185,10 @@ def PhraseModel.Glues (first second : PhraseModel) : Prop :=
   first.exit = second.entry ∧
   first.outPort = second.inPort ∧
   RoleFollows first.role second.role
+
+instance (first second : PhraseModel) : Decidable (first.Glues second) := by
+  unfold PhraseModel.Glues
+  infer_instance
 
 theorem no_setup_payoff_shortcut : ¬ RoleFollows .setup .payoff := by decide
 
@@ -240,6 +257,11 @@ def PhraseProposal.ValidFor (proposal : PhraseProposal)
   proposal.payoff.exit = checked.input.finish ∧
   proposal.opening.edges ++ proposal.forecast.edges ++
     proposal.payoff.edges = checked.input.edges
+
+instance (proposal : PhraseProposal) (checked : CheckedWalk) :
+    Decidable (proposal.ValidFor checked) := by
+  unfold PhraseProposal.ValidFor
+  infer_instance
 
 def PhraseProposal.toAssembly (checked : CheckedWalk)
     (proposal : PhraseProposal) (h : proposal.ValidFor checked) :
@@ -312,7 +334,7 @@ theorem poemWalk_valid : WalkValid poemWalk := by decide
 def poemChecked : CheckedWalk := ⟨poemWalk, poemWalk_valid⟩
 
 theorem poemWalk_labels :
-    walkLabels poemWalk.edges = prefix ++ [.teasePresent] := by decide
+    walkLabels poemWalk.edges = «prefix» ++ [.teasePresent] := by decide
 
 def openingPhrase : PhraseModel where
   role := .setup
@@ -345,10 +367,10 @@ theorem phrases_exact :
       poemWalk.edges := by decide
 
 theorem opening_prediction_glue : openingPhrase.Glues predictionPhrase := by
-  exact ⟨rfl, rfl, by simp [RoleFollows]⟩
+  exact ⟨rfl, rfl, by decide⟩
 
 theorem prediction_payoff_glue : predictionPhrase.Glues payoffPhrase := by
-  exact ⟨rfl, rfl, by simp [RoleFollows]⟩
+  exact ⟨rfl, rfl, by decide⟩
 
 def poemAssembly : ThreePhraseAssembly poemChecked where
   opening := openingPhrase
@@ -381,9 +403,7 @@ theorem poemProposal_valid : poemProposal.ValidFor poemChecked := by
     opening_prediction_glue, prediction_payoff_glue, rfl, rfl, phrases_exact⟩
 
 theorem poem_two_gates_accept :
-    (validateThenFit poemWalk poemProposal).isSome = true := by
-  simp [validateThenFit, checkWalk, checkProposal,
-    poemWalk_valid, poemProposal_valid]
+    (validateThenFit poemWalk poemProposal).isSome = true := by decide +kernel
 
 theorem poem_exact_words :
     walkWords (openingPhrase.edges ++ predictionPhrase.edges ++ payoffPhrase.edges) =
@@ -446,9 +466,7 @@ theorem alternateProposal_valid :
     alternateProposal.ValidFor alternateChecked := by decide
 
 theorem alternate_two_gates_accept :
-    (validateThenFit alternateWalk alternateProposal).isSome = true := by
-  simp [validateThenFit, checkWalk, checkProposal,
-    alternateWalk_valid, alternateProposal_valid]
+    (validateThenFit alternateWalk alternateProposal).isSome = true := by decide +kernel
 
 theorem alternateWalk_changes_words :
     walkWords alternateWalk.edges ≠ walkWords poemWalk.edges := by decide

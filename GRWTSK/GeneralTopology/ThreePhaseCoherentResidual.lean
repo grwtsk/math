@@ -119,7 +119,6 @@ theorem residual_heat (t : ℝ) (z : Phase3) (j : Fin 3) :
     residual (heat t z) j =
       ((GRWTSK.Algebra.LinearAlgebra.ThreePhaseCoefficientHeat.decay t : ℝ) : ℂ) * residual z j := by
   simp [residual, heat, mean_heat]
-  ring
 
 theorem heat_coherent (t : ℝ) (z : Phase3) :
     heat t (coherent z) = coherent z := by
