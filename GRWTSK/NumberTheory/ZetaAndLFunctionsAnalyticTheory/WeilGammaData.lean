@@ -127,6 +127,22 @@ theorem gammaConstant_lower (q : ℕ) (hq : 0 < q) (a : ℕ) (ha : a ≤ 1) :
     rw [harg, digamma_quarters.2]
     linarith [Real.pi_pos]
 
+/-- An outward lower bound for the unshifted zeta gamma constant. The
+logarithm of `π` is bounded using `π < (4/3)^4`. -/
+theorem gammaConstant_one_zero_ge : -(11 / 2 : ℝ) ≤ gammaConstant 1 0 := by
+  have hpi := Real.pi_lt_d2
+  have hlogpi := Real.log_le_log Real.pi_pos
+    (show Real.pi ≤ (4/3 : ℝ) ^ (4 : ℕ) by linarith)
+  rw [Real.log_pow, Real.log_div (by norm_num) (by norm_num), Real.log_four_eq] at hlogpi
+  have hEuler := Real.eulerMascheroniConstant_lt_two_thirds
+  have hlogtwo := Real.log_two_lt_d9
+  have hlogthree := Real.log_three_gt_d9
+  unfold gammaConstant
+  rw [Real.log_div (by norm_num) Real.pi_pos.ne', real_digamma_eq (by positivity)]
+  norm_num only [Nat.cast_one, Real.log_one, zero_sub, Nat.cast_zero, zero_div, add_zero,
+    Complex.ofReal_div, Complex.ofReal_one, Complex.ofReal_ofNat, Nat.cast_ofNat] at *
+  linarith [digamma_quarters.1]
+
 theorem gammaParity_le_one (χ : DirichletCharacter ℂ q) : gammaParity χ ≤ 1 := by
   unfold gammaParity
   split_ifs <;> decide
