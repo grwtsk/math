@@ -110,7 +110,7 @@ theorem finite_odd_prime_split {ι : Type*} (I : Finset ι)
     rw [oddPrimeRow_split T m (n i) hm (hd i hi)]
     ring
   rw [hs, Finset.sum_add_distrib]
-  simp only [Finset.sum_div]
+  simp only [div_eq_mul_inv, Finset.sum_mul]
 
 /-- The signless odd boundary summand; its source factor is -2*(-1)^(m+n)/T. -/
 def oddBoundaryCore (a u v : ℝ) : ℝ :=
