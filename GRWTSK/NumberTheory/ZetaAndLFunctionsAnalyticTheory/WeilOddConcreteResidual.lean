@@ -145,7 +145,8 @@ private theorem sineCoefficient_coreSineOutput (T : ℝ) (hT : 0 < T) (β : ℝ)
   · rw [sineCorrelation_zero_shift T hT hmn, ite_eq_right hmn]
     ring
 
-private theorem sum_fin_succ_eq_sum_Icc {M : ℕ} (f : ℕ → ℝ) :
+/-- Reindex the physical sine modes by their positive source indices. -/
+theorem sum_fin_succ_eq_sum_Icc {M : ℕ} (f : ℕ → ℝ) :
     (∑ i : Fin M, f (i.val+1)) = ∑ n ∈ Finset.Icc 1 M, f n := by
   apply Finset.sum_bij (fun i _ => i.val+1)
   · intro i _
