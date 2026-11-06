@@ -60,6 +60,14 @@ theorem integrable_sine_product (T r : ℝ) (m n : ℕ) :
   apply Continuous.integrableOn_Icc
   fun_prop
 
+/-- Each literal zero-extended sine represents a whole-line L² function. -/
+theorem memLp_zeroExtendedSine (T : ℝ) (n : ℕ) : MemLp (zeroExtendedSine T n) 2 volume := by
+  have hm : Measurable (zeroExtendedSine T n) := by
+    unfold zeroExtendedSine
+    exact Measurable.ite measurableSet_Icc (by fun_prop) measurable_const
+  apply (memLp_two_iff_integrable_sq hm.aestronglyMeasurable).2
+  simpa only [add_zero, pow_two] using integrable_sine_product T 0 n n
+
 /-- Distinct zero-extended sine modes have zero inner product. -/
 theorem sineCorrelation_zero_shift (T : ℝ) (hT : 0 < T) {m n : ℕ}
     (hmn : m ≠ n) : sineCorrelation T m n 0 = 0 := by
