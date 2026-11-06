@@ -3,12 +3,12 @@ Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 Authors: grwtsk contributors
 -/
-import Mathlib.Data.Real.Basic
+import Mathlib.Basic.Real.Basic
 import Mathlib.Algebra.Order.BigOperators.Group.Finset
 import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
-import Mathlib.Tactic.Omega
+import Lean.Elab.Tactic.Omega
 import Mathlib.Tactic.NormNum
 
 /-!
