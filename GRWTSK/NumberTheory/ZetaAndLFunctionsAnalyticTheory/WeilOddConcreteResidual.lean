@@ -211,4 +211,65 @@ theorem borderedTrialHighResidual_energy_le {N M L J : ℕ}
     simpa only [show N+1+n = (N+n)+1 by omega] using
       sineCoefficient_borderedTrialOutput T hT β x a (N+n) (M := M)
 
+/-- Removing the head from the output preserves its pairing with a high test. -/
+theorem integral_mul_removeSineHead_of_high (T : ℝ) (N : ℕ) {f g : ℝ → ℝ}
+    (hf : MemLp f 2 volume) (hg : MemLp g 2 volume)
+    (hhead : ∀ n < N, sineCoefficient T g (n+1) = 0) :
+    (∫ t : ℝ, g t * removeSineHead T N f t) = ∫ t : ℝ, g t * f t := by
+  have hg1 : Integrable (fun t => g t * f t) := hg.integrable_mul hf
+  have hg2 : Integrable (fun t => g t * finiteSine T (sineCoordinates T N f) t) :=
+    hg.integrable_mul (finiteSine_memLp T _)
+  have hzero : (∫ t : ℝ, g t * finiteSine T (sineCoordinates T N f) t) = 0 := by
+    let y := sineCoordinates T N f
+    have hterms (i : Fin N) :
+        Integrable (fun t => y i * (zeroExtendedSine T (i.val+1) t * g t)) :=
+      ((memLp_zeroExtendedSine T (i.val+1)).integrable_mul hg).const_mul (y i)
+    calc
+      _ = ∫ t : ℝ, ∑ i : Fin N, y i * (zeroExtendedSine T (i.val+1) t * g t) := by
+        apply integral_congr_ae
+        filter_upwards [] with t
+        simp only [finiteSine, Finset.mul_sum, y]
+        apply Finset.sum_congr rfl
+        intro i _
+        ring
+      _ = ∑ i : Fin N, y i * sineCoefficient T g (i.val+1) := by
+        rw [integral_finsetSum _ (fun i _ => hterms i)]
+        simp only [integral_const_mul, sineCoefficient]
+      _ = _ := by simp only [hhead _ (Fin.isLt _), mul_zero, Finset.sum_const_zero]
+  simp only [removeSineHead, mul_sub]
+  rw [integral_sub hg1 hg2, hzero, sub_zero]
+
+/-- The full high residual controls the mixed term against every high L² test.
+The coefficient allowance contains all observed and remote rows. -/
+theorem abs_borderedTrialHighResidual_pair_le {N M L J : ℕ}
+    (hNM : N ≤ M) (hML : M ≤ L) (hL : 0 < L) (hLJ : L ≤ J)
+    (T : ℝ) (hT : 0 < T) (x : ℕ → ℝ) (a β s : ℝ) (hs : 0 < s)
+    {g : ℝ → ℝ} (hg : MemLp g 2 volume) (hhead : ∀ n < N, sineCoefficient T g (n+1) = 0) :
+    |∫ t : ℝ, g t * borderedTrialOutput T β (fun i : Fin M => x (i.val+1)) a t| ≤
+      Real.sqrt (∫ t : ℝ, ‖g t‖ ^ 2) *
+        Real.sqrt ((∑ n ∈ Finset.range (L-N), (literalAugmentedRow M T x a β (N+1+n)) ^ 2) +
+          completeRemoteAllowance M L J T x a s) := by
+  let f := borderedTrialOutput T β (fun i : Fin M => x (i.val+1)) a
+  let r := removeSineHead T N f
+  have hf : MemLp f 2 volume := borderedTrialOutput_memLp T hT β _ a
+  have hr : MemLp r 2 volume := removeSineHead_memLp T N hf
+  have hpq : (2 : ℝ).HolderConjugate 2 := by
+    rw [Real.holderConjugate_iff]
+    norm_num
+  have hexp : ENNReal.ofReal (2 : ℝ) = 2 := by norm_num
+  have hHolder := integral_mul_norm_le_Lp_mul_Lq hpq
+    (show MemLp g (ENNReal.ofReal (2 : ℝ)) volume by rwa [hexp])
+    (show MemLp r (ENNReal.ofReal (2 : ℝ)) volume by rwa [hexp])
+  have hresidual := borderedTrialHighResidual_energy_le hNM hML hL hLJ T hT x a β s hs
+  change |∫ t : ℝ, g t * f t| ≤ _
+  rw [← integral_mul_removeSineHead_of_high T N hf hg hhead]
+  change |∫ t : ℝ, g t * r t| ≤ _
+  calc
+    _ ≤ ∫ t : ℝ, ‖g t‖ * ‖r t‖ := by
+      simpa only [norm_mul, Real.norm_eq_abs] using
+        (norm_integral_le_integral_norm (fun t : ℝ => g t * r t))
+    _ ≤ Real.sqrt (∫ t : ℝ, ‖g t‖ ^ 2) * Real.sqrt (∫ t : ℝ, ‖r t‖ ^ 2) := by
+      simpa only [Real.rpow_two, ← Real.sqrt_eq_rpow] using hHolder
+    _ ≤ _ := mul_le_mul_of_nonneg_left (Real.sqrt_le_sqrt hresidual) (Real.sqrt_nonneg _)
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddConcreteResidual
