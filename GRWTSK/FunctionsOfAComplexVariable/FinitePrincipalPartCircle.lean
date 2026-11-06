@@ -101,7 +101,9 @@ theorem term_circleIntegrable (A : Family ι) {c : ℂ} {r : ℝ}
     continuousAt_const.mul
       (((continuousAt_id.sub continuousAt_const).pow (A.order i)).inv₀
         (pow_ne_zero (A.order i) hn))
-  simpa only [term, zpow_neg, zpow_natCast] using hc.continuousWithinAt
+  change ContinuousWithinAt
+    (fun w => A.coefficient i * (w - A.center i) ^ (-(A.order i : ℤ))) (sphere c r) z
+  simpa only [zpow_neg, zpow_natCast] using hc.continuousWithinAt (s := sphere c r)
 
 /-- Order-one normalization is supplied by Mathlib, not assumed in the family. -/
 theorem integral_term (A : Family ι) (c : ℂ) (r : ℝ) (i : ι)
@@ -124,8 +126,11 @@ theorem integral_term (A : Family ι) (c : ℂ) (r : ℝ) (i : ι)
 theorem value_circleIntegrable (A : Family ι) {c : ℂ} {r : ℝ}
     (hr : 0 ≤ r) (inside : ∀ i ∈ A.support, A.center i ∈ ball c r) :
     CircleIntegrable A.value c r := by
-  simpa only [value, Finset.sum_apply] using
-    (CircleIntegrable.sum A.support (fun i hi => A.term_circleIntegrable hr i (inside i hi)))
+  have he : A.value = ∑ i ∈ A.support, A.term i := by
+    funext z
+    simp only [value, Finset.sum_apply]
+  rw [he]
+  exact CircleIntegrable.sum A.support (fun i hi => A.term_circleIntegrable hr i (inside i hi))
 
 /-- The finite principal-part circle formula includes every order and label. -/
 theorem integral_value (A : Family ι) {c : ℂ} {r : ℝ}
@@ -227,6 +232,7 @@ theorem boundary_decomposition (data : Data ι f c r) :
   intro z hz
   have he : data.remainder z = f z - data.parts.value z :=
     data.removal.filled_eq_raw (data.parts.boundary_not_mem_centers data.inside hz)
+  change f z = data.remainder z + data.parts.value z
   rw [he]
   ring
 
@@ -322,8 +328,9 @@ def ofRegularDecomposition (A : Family ι) (hr : 0 < r)
         have hopen : IsOpen (((A.centers.erase a : Finset ℂ) : Set ℂ)ᶜ) :=
           (A.centers.erase a).isClosed.isOpen_compl
         have hmem : a ∈ (((A.centers.erase a : Finset ℂ) : Set ℂ)ᶜ) := by simp
+        have hlocal : ∀ᶠ z in 𝓝 a, z ∉ A.centers.erase a := hopen.mem_nhds hmem
         have havoid : ∀ᶠ z in 𝓝[≠] a, z ∉ A.centers.erase a :=
-          (hopen.mem_nhds hmem).filter_mono nhdsWithin_le_nhds
+          hlocal.filter_mono nhdsWithin_le_nhds
         filter_upwards [havoid, self_mem_nhdsWithin] with z hz hza
         have hne : z ≠ a := by simpa using hza
         have hnot : z ∉ A.centers := by

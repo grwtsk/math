@@ -133,7 +133,7 @@ theorem rankOne_nonnegative_iff
     · have he : 0 < ell x := by rw [← hsolve x]; exact hpositive x hx
       have hh := h x
       rw [hsolve x] at hh
-      apply (mul_le_mul_left he).mp
+      apply (mul_le_mul_iff_right₀ he).mp
       nlinarith [hh]
   · intro h v
     have hl := rankOne_lower_of_inverse_upper a ell hsym hpositive x hsolve htau

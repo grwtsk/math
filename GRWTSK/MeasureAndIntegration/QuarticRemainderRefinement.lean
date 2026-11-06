@@ -95,7 +95,7 @@ theorem cell_refinement (q : ℝ) (positive : 0 < q) (s : ℂ) :
     cellRemainder q (-s) =
       (logPower q (-s - 3) - logPower (q + 1) (-s - 3)) / 720 + (s + 3) * cell q s := by
   have first := cell_integrable q positive s
-  have second := (cell_continuous q positive s).intervalIntegrable_of_Icc
+  have second := (cell_continuous q positive s).intervalIntegrable_of_Icc (μ := volume)
     (by norm_num : (0 : ℝ) ≤ 1)
   have scaled := second.const_mul (s + 3)
   have integral := intervalIntegral.integral_eq_sub_of_hasDerivAt
@@ -140,7 +140,7 @@ theorem density_bound (q σ : ℝ) (base : 1 ≤ q) (s : ℂ) (halfPlane : σ �
       Real.exp (-(σ + 4) * Real.log (q + u)) := by
     simp only [logPower, Complex.norm_exp, Complex.mul_re, Complex.sub_re,
       Complex.neg_re, Complex.ofReal_re, Complex.ofReal_im, mul_zero, sub_zero,
-      Complex.ofNat_re]
+      (show (4 : ℂ).re = 4 by norm_num)]
     apply Real.exp_le_exp.mpr
     exact mul_le_mul_of_nonneg_right (by linarith) logNonnegative
   rw [norm_mul, Complex.norm_real, Real.norm_eq_abs]
@@ -189,6 +189,6 @@ theorem finite_bound (q σ : ℝ) (base : 1 ≤ q) (margin : -3 < σ)
       (Finset.sum_div _ _ _).symm
     _ ≤ (decayPower (σ + 3) q / (σ + 3)) / 720 :=
       div_le_div_of_nonneg_right (sum_powerCell_le q (σ + 3) (by linarith) N) (by norm_num)
-    _ = _ := by ring
+    _ = _ := by rw [div_div, mul_comm (σ + 3) 720]
 
 end GRWTSK.Analysis.RealAnalysis.QuarticRemainder

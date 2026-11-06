@@ -54,10 +54,10 @@ theorem source_error_on_radius (N : ℕ) (s : ℂ) {R : ℝ}
   have hR : 0 ≤ R := (norm_nonneg _).trans size
   have h1 : ‖s + 1‖ ≤ R + 1 := by
     simpa using (norm_add_le s (1 : ℂ)).trans
-      (add_le_add_right size ‖(1 : ℂ)‖)
+      (add_le_add_left size ‖(1 : ℂ)‖)
   have h2 : ‖s + 2‖ ≤ R + 2 := by
     have h := (norm_add_le s (2 : ℂ)).trans
-      (add_le_add_right size ‖(2 : ℂ)‖)
+      (add_le_add_left size ‖(2 : ℂ)‖)
     norm_num at h ⊢
     exact h
   rw [zeta_sub_approximation N s (by linarith) pole]

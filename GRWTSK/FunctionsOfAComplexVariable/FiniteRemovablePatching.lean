@@ -1,7 +1,7 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
 Human mathematical direction: grwtsk contributors. Formalization assistance: OpenAI.
 Mathlib results retain their upstream authorship and Apache-2.0 license. -/
-import Mathlib.Analysis.Analytic.Basic
+import Mathlib.Analysis.Calculus.FDeriv.Analytic
 import Mathlib.Topology.Separation.Basic
 import Mathlib.Tactic
 
@@ -68,7 +68,7 @@ private theorem eventually_not_mem_erase (S : Finset ℂ) (a : ℂ) :
     (S.erase a).isClosed.isOpen_compl
   have ha : a ∈ (((S.erase a : Finset ℂ) : Set ℂ)ᶜ) := by simp
   filter_upwards [hopen.mem_nhds ha] with z hz
-  simpa using hz
+  exact hz
 
 /-- At a singular point, the finite patch agrees with its selected analytic
 germ on a full neighborhood. Other singular points are excluded by finiteness. -/
@@ -76,7 +76,7 @@ theorem filled_eventuallyEq_germ (data : LocalRemovalData raw singular)
     (a : ℂ) (ha : a ∈ singular) :
     data.filled =ᶠ[𝓝 a] data.germ a := by
   classical
-  have hagree := data.germ_agrees a ha
+  have hagree : ∀ᶠ z in 𝓝[≠] a, raw z = data.germ a z := data.germ_agrees a ha
   rw [eventually_nhdsWithin_iff] at hagree
   filter_upwards [eventually_not_mem_erase singular a, hagree] with z havoid hzAgree
   by_cases hza : z = a
@@ -131,8 +131,8 @@ theorem differentiableOn_filled (data : LocalRemovalData raw singular)
     (raw_analytic : ∀ z ∈ region, z ∉ singular → AnalyticAt ℂ raw z) :
     DifferentiableOn ℂ data.filled region := by
   intro z hz
-  exact (data.analyticOnNhd_filled region raw_analytic z hz).
-    differentiableAt.differentiableWithinAt
+  have hzAnalytic := data.analyticOnNhd_filled region raw_analytic z hz
+  exact hzAnalytic.differentiableAt.differentiableWithinAt
 
 /-- Continuity on a closed consumer region follows from the same local data. -/
 theorem continuousOn_filled (data : LocalRemovalData raw singular)
@@ -140,8 +140,8 @@ theorem continuousOn_filled (data : LocalRemovalData raw singular)
     (raw_analytic : ∀ z ∈ region, z ∉ singular → AnalyticAt ℂ raw z) :
     ContinuousOn data.filled region := by
   intro z hz
-  exact (data.analyticOnNhd_filled region raw_analytic z hz).
-    continuousAt.continuousWithinAt
+  have hzAnalytic := data.analyticOnNhd_filled region raw_analytic z hz
+  exact hzAnalytic.continuousAt.continuousWithinAt
 
 /-- The finite patch changes no nonsingular source value. -/
 theorem filled_eq_raw (data : LocalRemovalData raw singular)

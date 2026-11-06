@@ -95,8 +95,12 @@ def pairingTerm (atConjugate atRoot : ℂ) : ℂ := star atConjugate * atRoot
 
 theorem imaginary_selector_pair (g : ℂ) :
     pairingTerm (Complex.I * star g) (Complex.I * g) = g ^ 2 := by
-  simp [pairingTerm, star_mul, pow_two]
-  <;> ring
+  calc
+    _ = -(Complex.I ^ 2) * g ^ 2 := by
+      unfold pairingTerm
+      rw [star_mul, star_star, Complex.star_def, Complex.conj_I]
+      ring
+    _ = _ := by rw [Complex.I_sq, neg_neg, one_mul]
 
 theorem selected_pair_negative :
     pairingTerm (1 : ℂ) (-1) = -1 ∧

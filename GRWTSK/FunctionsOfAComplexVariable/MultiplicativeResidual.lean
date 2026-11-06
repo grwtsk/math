@@ -106,10 +106,10 @@ theorem residual_evaluation_bound {a u a₀ u₀ : ℂ} {ε η θ : ℝ}
     _ ≤ ‖residual a₀ u₀ 1 + (a - a₀) * u₀ + a₀ * (u - u₀)‖ +
         ‖(a - a₀) * (u - u₀)‖ := norm_add_le _ _
     _ ≤ (‖residual a₀ u₀ 1 + (a - a₀) * u₀‖ + ‖a₀ * (u - u₀)‖) +
-        ‖(a - a₀) * (u - u₀)‖ := add_le_add_right (norm_add_le _ _) _
+        ‖(a - a₀) * (u - u₀)‖ := add_le_add (norm_add_le _ _) le_rfl
     _ ≤ ((‖residual a₀ u₀ 1‖ + ‖(a - a₀) * u₀‖) + ‖a₀ * (u - u₀)‖) +
         ‖(a - a₀) * (u - u₀)‖ :=
-      add_le_add_right (add_le_add_right (norm_add_le _ _) _) _
+      add_le_add (add_le_add (norm_add_le _ _) le_rfl) le_rfl
     _ = ‖residual a₀ u₀ 1‖ + ‖a - a₀‖ * ‖u₀‖ +
         ‖a₀‖ * ‖u - u₀‖ + ‖a - a₀‖ * ‖u - u₀‖ := by
       simp only [norm_mul]

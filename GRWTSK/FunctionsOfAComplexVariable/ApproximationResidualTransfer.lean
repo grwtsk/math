@@ -135,7 +135,7 @@ def boundaryOfCenter (f : ℂ → ℂ) (U : Set ℂ) (center : ℂ)
   bound := δ / ‖center‖
   strict := (div_lt_one (norm_pos_iff.mpr nonzero)).mpr strict
   regular := Boundary.residual_regular hf
-    ⟨differentiableOn_const, continuousOn_const⟩
+    ⟨differentiableOn_const _, continuousOn_const⟩
   boundary_bound := fun z hz => constant_inverse_bound nonzero (enclosure z hz)
 
 /-- An actual source zero forces any valid model-return budget to be at least one. -/

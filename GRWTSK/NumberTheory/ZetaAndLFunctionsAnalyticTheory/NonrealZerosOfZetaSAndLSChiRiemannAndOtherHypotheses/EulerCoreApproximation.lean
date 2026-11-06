@@ -250,7 +250,7 @@ theorem dirichlet_core_error (comparison : SourceComparison)
     simpa only [Metric.mem_closedBall, dist_zero_right] using hs.1
   rw [dirichlet_source_eq comparison χ hM hdomain.1 (strip_ne_one hdomain.2.1)]
   have h := dirichlet_model_error χ hM (coreGap_pos n) hs.2.1 hnorm
-  simpa only [coreBudget, coreGap, div_div, div_one, mul_assoc] using h
+  simpa only [coreBudget, coreGap, div_div, div_one, one_div, div_inv_eq_mul, mul_assoc] using h
 
 /-- The full modulus and character binders occur in the theorem itself. -/
 theorem all_characters_dyadic_error (comparison : SourceComparison)
