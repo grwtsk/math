@@ -93,8 +93,28 @@ theorem floor_le_of_highCutoff (T : ℝ) (hT : 0 < T) (β boundaryLoss requested
   dsimp [k] at hlog
   linarith
 
-/-- A full high-complement floor when the literal gamma form has been
-compared to the periodic form on the same function and domain. -/
+/-- Pay separately checked prime and boundary losses against the actual
+first high multiplier on the same form domain. -/
+theorem shiftedOddCoreEnergy_ge_of_budget (T : ℝ) (hT : 0 < T)
+    (β primeLoss boundaryLoss requested : ℝ) {N : ℕ}
+    (hbudget : requested ≤ gammaConstant 1 0 - β + periodicMultiplier 0 (frequency T (N + 1)) -
+      primeLoss - boundaryLoss) {f : ℝ → ℝ}
+    (hf : MemLp f 2 volume) (hodd : ∀ᵐ t : ℝ, f (-t) = -f t)
+    (hsupport : ∀ᵐ t : ℝ, t ∉ Icc (-T) T → f t = 0)
+    (hhead : ∀ n < N, sineCoefficient T f (n + 1) = 0)
+    (hdiag : Summable (highDiagonalTerm T N f))
+    (hprime : primeEnergy T f ≤ primeLoss * (∫ t : ℝ, ‖f t‖ ^ 2))
+    (hcompare : (∑' j : ℕ, highDiagonalTerm T N f j) -
+      boundaryLoss * (∫ t : ℝ, ‖f t‖ ^ 2) ≤ oddArchimedeanEnergy f) :
+    requested * (∫ t : ℝ, ‖f t‖ ^ 2) ≤ shiftedOddCoreEnergy T β f := by
+  have hmass : 0 ≤ ∫ t : ℝ, ‖f t‖ ^ 2 := integral_nonneg (fun _ => sq_nonneg _)
+  have hbound := highDiagonalEnergy_ge T hT hf hodd hsupport hhead hdiag
+  have hscale := mul_le_mul_of_nonneg_right hbudget hmass
+  unfold shiftedOddCoreEnergy
+  nlinarith
+
+/-- A full high-complement floor from the explicit sufficient cutoff and
+the full prime mass. -/
 theorem shiftedOddCoreEnergy_ge_of_periodicComparison (T : ℝ) (hT : 0 < T)
     (β boundaryLoss requested : ℝ) {N : ℕ}
     (hN : highCutoff T β boundaryLoss requested ≤ N) {f : ℝ → ℝ}
@@ -105,18 +125,14 @@ theorem shiftedOddCoreEnergy_ge_of_periodicComparison (T : ℝ) (hT : 0 < T)
     (hcompare : (∑' j : ℕ, highDiagonalTerm T N f j) -
       boundaryLoss * (∫ t : ℝ, ‖f t‖ ^ 2) ≤ oddArchimedeanEnergy f) :
     requested * (∫ t : ℝ, ‖f t‖ ^ 2) ≤ shiftedOddCoreEnergy T β f := by
-  have hf₂ : Integrable (fun t : ℝ => f t ^ 2) := by
-    simpa only [Real.norm_eq_abs, sq_abs] using hf.integrable_norm_pow (p := 2) (by norm_num)
-  have hmass : 0 ≤ ∫ t : ℝ, ‖f t‖ ^ 2 := integral_nonneg (fun _ => sq_nonneg _)
-  have hprime := (le_abs_self (primeEnergy T f)).trans (abs_primeEnergy_le T f hf₂)
+  have hprime := (le_abs_self (primeEnergy T f)).trans (abs_primeEnergy_le T f hf.integrable_sq)
   have hprime' : primeEnergy T f ≤ primeMass T * (∫ t : ℝ, ‖f t‖ ^ 2) := by
     simpa only [Real.norm_eq_abs, sq_abs] using hprime
-  have hbound := highDiagonalEnergy_ge T hT hf hodd hsupport hhead hdiag
-  have hscale := mul_le_mul_of_nonneg_right (floor_le_of_highCutoff T hT β boundaryLoss requested hN) hmass
-  unfold shiftedOddCoreEnergy
-  nlinarith
+  exact shiftedOddCoreEnergy_ge_of_budget T hT β (primeMass T) boundaryLoss requested
+    (floor_le_of_highCutoff T hT β boundaryLoss requested hN) hf hodd hsupport hhead hdiag hprime' hcompare
 
-private theorem oddMass_eq_twice_positive (T : ℝ) {f : ℝ → ℝ}
+/-- A supported odd input has twice its positive-half squared mass. -/
+theorem oddMass_eq_twice_positive (T : ℝ) {f : ℝ → ℝ}
     (hf : Integrable (fun t : ℝ => f t ^ 2))
     (hodd : ∀ᵐ t : ℝ, f (-t) = -f t)
     (hsupport : ∀ᵐ t : ℝ, t ∉ Icc (-T) T → f t = 0) :
