@@ -5,6 +5,7 @@ Authors: grwtsk contributors
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddBoundaryNorm
 import Mathlib.MeasureTheory.Function.L2Space
+import Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp
 
 /-!
 # A sharper norm bound for the literal odd boundary kernel
@@ -12,7 +13,9 @@ import Mathlib.MeasureTheory.Function.L2Space
 Sections 2–3 of weil-periodic-boundary.md (2026-11-04). On the positive
 half window, the hyperbolic summand is bounded by the exponential of the
 sum of the two distances from the right endpoint. Its geometric sum is
-bounded by half the Carleman kernel plus the rank-one exponential kernel.
+bounded by half the Carleman kernel plus half the rank-one exponential kernel.
+The stronger bound uses `sinh r ≥ r` and `exp r ≥ 1 + r²`, obtained from
+the nonnegative exponential Taylor terms through degree three.
 Substitution y=u² and the arctangent integral give the exact weighted
 half-line Carleman row integral. The exponential kernel has the squared
 weight integral 1-exp(-T). Both terms retain the same window coordinates.
@@ -114,6 +117,53 @@ theorem baseKernel_le_half_reciprocal_add_exp {r : ℝ} (hr : 0 < r) :
     _ ≤ _ := by
       have h := mul_le_mul_of_nonneg_right hE (show 0 ≤ 1 / (2 * r) by positivity)
       linarith only [h]
+
+private theorem one_add_sq_le_exp {r : ℝ} (hr : 0 ≤ r) : 1 + r ^ 2 ≤ Real.exp r := by
+  have hTaylor := Real.sum_le_exp_of_nonneg hr 4
+  norm_num [Finset.sum_range_succ, Nat.factorial] at hTaylor
+  have hPoly : 0 ≤ 1 - r / 2 + r ^ 2 / 6 := by
+    nlinarith only [sq_nonneg (r - 3 / 2)]
+  nlinarith only [hTaylor, mul_nonneg hr hPoly]
+
+private theorem mul_cosh_le_exp_mul_sinh {r : ℝ} (hr : 0 < r) :
+    r * Real.cosh r ≤ Real.exp (r / 2) * Real.sinh r := by
+  have hSinh := Real.self_le_sinh_iff.mpr hr.le
+  have hSinhSq := pow_le_pow_left₀ hr.le hSinh 2
+  have hCosh : Real.cosh r ^ 2 = 1 + Real.sinh r ^ 2 := by
+    linarith only [Real.cosh_sq_sub_sinh_sq r]
+  apply (sq_le_sq₀ (by positivity) (by positivity)).mp
+  calc
+    _ = r ^ 2 * (1 + Real.sinh r ^ 2) := by rw [mul_pow, hCosh]
+    _ ≤ (1 + r ^ 2) * Real.sinh r ^ 2 := by nlinarith only [hSinhSq]
+    _ ≤ Real.exp r * Real.sinh r ^ 2 :=
+      mul_le_mul_of_nonneg_right (one_add_sq_le_exp hr.le) (sq_nonneg _)
+    _ = _ := by rw [mul_pow, pow_two (Real.exp (r / 2)), ← Real.exp_add, add_halves]
+
+/-- The even gamma kernel is bounded by half the reciprocal singularity and
+half the decaying exponential. -/
+theorem baseKernel_le_half_reciprocal_add_half_exp {r : ℝ} (hr : 0 < r) :
+    parityKernel 0 r ≤ 1 / (2 * r) + (1 / 2) * Real.exp (-r / 2) := by
+  have hs : 0 < Real.sinh r := Real.sinh_pos_iff.mpr hr
+  have hd : 0 < 1 - Real.exp (-2 * r) :=
+    sub_pos.mpr (Real.exp_lt_one_iff.mpr (by linarith))
+  have he : 0 < Real.exp r := Real.exp_pos _
+  have hRatio : 1 / (1 - Real.exp (-2 * r)) = 1 / 2 + Real.cosh r / (2 * Real.sinh r) := by
+    calc
+      _ = Real.exp r / (2 * Real.sinh r) := by rw [twice_sinh_factor]; field_simp
+      _ = (Real.sinh r + Real.cosh r) / (2 * Real.sinh r) := by rw [Real.sinh_add_cosh]
+      _ = _ := by field_simp
+  have hCoth : Real.cosh r / (2 * Real.sinh r) ≤ Real.exp (r / 2) / (2 * r) := by
+    apply (div_le_div_iff₀ (by positivity) (by positivity)).mpr
+    nlinarith only [mul_cosh_le_exp_mul_sinh hr]
+  simp only [parityKernel, Nat.cast_zero, zero_add, show -(1 / 2 : ℝ) * r = -r / 2 by ring]
+  calc
+    _ = Real.exp (-r / 2) * (1 / 2 + Real.cosh r / (2 * Real.sinh r)) := by rw [← hRatio]; ring
+    _ ≤ Real.exp (-r / 2) * (1 / 2 + Real.exp (r / 2) / (2 * r)) :=
+      mul_le_mul_of_nonneg_left (add_le_add (le_refl _) hCoth) (Real.exp_nonneg _)
+    _ = Real.exp (-r / 2) * (1 / 2) + (Real.exp (-r / 2) * Real.exp (r / 2)) / (2 * r) := by ring
+    _ = _ := by
+      rw [← Real.exp_add, show -r / 2 + r / 2 = 0 by ring, Real.exp_zero]
+      ring
 
 /-- Exact weighted Carleman row integral, computed by squaring the
 substitution variable and rescaling the arctangent integral. -/
@@ -353,11 +403,13 @@ private theorem exponential_absForm_bound (T : ℝ) (hT : 0 < T) (f : ℝ → �
 /-- The Carleman and exponential losses on the actual positive half window. -/
 def boundaryLoss (T : ℝ) : ℝ := Real.pi / 2 + 1 - Real.exp (-T)
 
-/-- The sharper absolute quadratic bound for the same literal odd kernel. -/
-theorem oddKernel_quadratic_abs_le (T : ℝ) (hT : 0 < T) (f : ℝ → ℝ) (hf : Measurable f)
-    (hf2 : IntegrableOn (fun t => f t ^ 2) (Ioo 0 T)) :
+/-- Return a pointwise majorant to the same literal odd quadratic kernel. -/
+private theorem oddKernel_quadratic_abs_le_of_majorant (T : ℝ) (hT : 0 < T) (f : ℝ → ℝ) (hf : Measurable f)
+    (hf2 : IntegrableOn (fun t => f t ^ 2) (Ioo 0 T)) {c : ℝ} (hc : 0 ≤ c)
+    (hMajorant : ∀ {r : ℝ}, 0 < r →
+      parityKernel 0 r ≤ 1 / (2 * r) + c * Real.exp (-r / 2)) :
     |∫ t in Ioo 0 T, ∫ s in Ioo 0 T, oddKernel T t s * f t * f s| ≤
-      boundaryLoss T * ∫ t in Ioo 0 T, f t ^ 2 := by
+      (Real.pi / 2 + c * (1 - Real.exp (-T))) * ∫ t in Ioo 0 T, f t ^ 2 := by
   let μ := volume.restrict (Ioo 0 T)
   let C := fun z : ℝ × ℝ => reflectedCarleman T z.1 z.2 * (|f z.1| * |f z.2|)
   let E := fun z : ℝ × ℝ => (exponentialWeight T z.1 * |f z.1|) *
@@ -368,19 +420,19 @@ theorem oddKernel_quadratic_abs_le (T : ℝ) (hT : 0 < T) (f : ℝ → ℝ) (hf 
   have hF : Integrable F (μ.prod μ) := (oddKernel_quadratic_bound T f hf hf2).1
   have hCInt : Integrable C (μ.prod μ) := hC.1
   have hEInt : Integrable E (μ.prod μ) := hE.1
-  have hMajor : Integrable (fun z => (1 / 2 : ℝ) * C z + E z) (μ.prod μ) :=
-    (hCInt.const_mul _).add hEInt
+  have hMajor : Integrable (fun z => (1 / 2 : ℝ) * C z + c * E z) (μ.prod μ) :=
+    (hCInt.const_mul _).add (hEInt.const_mul c)
   have hInterior : ∀ᵐ t ∂μ, t ∈ Ioo 0 T := ae_restrict_mem measurableSet_Ioo
   have hPair : ∀ᵐ z ∂μ.prod μ, z ∈ (Ioo 0 T) ×ˢ (Ioo 0 T) := by
     apply (Measure.ae_prod_mem_iff_ae_ae_mem (measurableSet_Ioo.prod measurableSet_Ioo)).2
     filter_upwards [hInterior] with t ht
     exact hInterior.mono (fun _ hs => ⟨ht, hs⟩)
-  have hDom : ∀ᵐ z ∂μ.prod μ, ‖F z‖ ≤ (1 / 2 : ℝ) * C z + E z := by
+  have hDom : ∀ᵐ z ∂μ.prod μ, ‖F z‖ ≤ (1 / 2 : ℝ) * C z + c * E z := by
     filter_upwards [hPair] with z hz
     let r := (T - z.1) + (T - z.2)
     have hr : 0 < r := add_pos (sub_pos.mpr hz.1.2) (sub_pos.mpr hz.2.2)
     have hK := (oddKernel_abs_le_base hz.1 hz.2).trans
-      (baseKernel_le_half_reciprocal_add_exp hr)
+      (hMajorant hr)
     have hExp : Real.exp (-r / 2) = exponentialWeight T z.1 * exponentialWeight T z.2 := by
       unfold exponentialWeight
       rw [← Real.exp_add]
@@ -390,24 +442,35 @@ theorem oddKernel_quadratic_abs_le (T : ℝ) (hT : 0 < T) (f : ℝ → ℝ) (hf 
     calc
       ‖F z‖ = |oddKernel T z.1 z.2| * (|f z.1| * |f z.2|) := by
         simp [F, Real.norm_eq_abs, mul_assoc]
-      _ ≤ (1 / (2 * r) + Real.exp (-r / 2)) * (|f z.1| * |f z.2|) :=
+      _ ≤ (1 / (2 * r) + c * Real.exp (-r / 2)) * (|f z.1| * |f z.2|) :=
         mul_le_mul_of_nonneg_right hK (mul_nonneg (abs_nonneg _) (abs_nonneg _))
       _ = _ := by
         rw [hExp, ← one_div_mul_one_div]
         dsimp [C, E, reflectedCarleman, r]
         ring
-  change |∫ t, ∫ s, F (t, s) ∂μ ∂μ| ≤ boundaryLoss T * ∫ t, f t ^ 2 ∂μ
+  change |∫ t, ∫ s, F (t, s) ∂μ ∂μ| ≤ (Real.pi / 2 + c * (1 - Real.exp (-T))) * ∫ t, f t ^ 2 ∂μ
   rw [← integral_prod F hF]
   calc
     _ = ‖∫ z, F z ∂(μ.prod μ)‖ := (Real.norm_eq_abs _).symm
     _ ≤ ∫ z, ‖F z‖ ∂(μ.prod μ) := norm_integral_le_integral_norm _
-    _ ≤ ∫ z, (1 / 2 : ℝ) * C z + E z ∂(μ.prod μ) := integral_mono_ae hF.norm hMajor hDom
-    _ = (1 / 2 : ℝ) * (∫ z, C z ∂(μ.prod μ)) + ∫ z, E z ∂(μ.prod μ) := by
-      rw [integral_add (hCInt.const_mul _) hEInt, integral_const_mul]
+    _ ≤ ∫ z, (1 / 2 : ℝ) * C z + c * E z ∂(μ.prod μ) := integral_mono_ae hF.norm hMajor hDom
+    _ = (1 / 2 : ℝ) * (∫ z, C z ∂(μ.prod μ)) + c * (∫ z, E z ∂(μ.prod μ)) := by
+      rw [integral_add (hCInt.const_mul _) (hEInt.const_mul c),
+        integral_const_mul, integral_const_mul]
     _ ≤ (1 / 2 : ℝ) * (Real.pi * ∫ t, f t ^ 2 ∂μ) +
-        (1 - Real.exp (-T)) * ∫ t, f t ^ 2 ∂μ :=
-      add_le_add (mul_le_mul_of_nonneg_left hC.2 (by norm_num)) hE.2
-    _ = _ := by unfold boundaryLoss; ring
+        c * ((1 - Real.exp (-T)) * ∫ t, f t ^ 2 ∂μ) :=
+      add_le_add (mul_le_mul_of_nonneg_left hC.2 (by norm_num)) (mul_le_mul_of_nonneg_left hE.2 hc)
+    _ = _ := by ring
+
+/-- The absolute quadratic bound with the original boundary loss. -/
+theorem oddKernel_quadratic_abs_le (T : ℝ) (hT : 0 < T) (f : ℝ → ℝ) (hf : Measurable f)
+    (hf2 : IntegrableOn (fun t => f t ^ 2) (Ioo 0 T)) :
+    |∫ t in Ioo 0 T, ∫ s in Ioo 0 T, oddKernel T t s * f t * f s| ≤
+      boundaryLoss T * ∫ t in Ioo 0 T, f t ^ 2 := by
+  have h := oddKernel_quadratic_abs_le_of_majorant T hT f hf hf2 (c := 1) (by norm_num)
+    (fun hr => by simpa only [one_mul] using baseKernel_le_half_reciprocal_add_exp hr)
+  unfold boundaryLoss
+  convert h using 1; ring
 
 /-- Signed lower return for the positive-half odd form. -/
 theorem oddKernel_quadratic_ge (T : ℝ) (hT : 0 < T) (f : ℝ → ℝ) (hf : Measurable f)
@@ -415,5 +478,16 @@ theorem oddKernel_quadratic_ge (T : ℝ) (hT : 0 < T) (f : ℝ → ℝ) (hf : Me
     -(boundaryLoss T * ∫ t in Ioo 0 T, f t ^ 2) ≤
       ∫ t in Ioo 0 T, ∫ s in Ioo 0 T, oddKernel T t s * f t * f s :=
   (abs_le.mp (oddKernel_quadratic_abs_le T hT f hf hf2)).1
+
+/-- The boundary loss using half the exponential remainder. -/
+def boundaryLossHalfExp (T : ℝ) : ℝ := Real.pi / 2 + (1 / 2) * (1 - Real.exp (-T))
+
+/-- Signed lower return with the sharper exponential contribution. -/
+theorem oddKernel_quadratic_ge_half_exp (T : ℝ) (hT : 0 < T) (f : ℝ → ℝ) (hf : Measurable f)
+    (hf2 : IntegrableOn (fun t => f t ^ 2) (Ioo 0 T)) :
+    -(boundaryLossHalfExp T * ∫ t in Ioo 0 T, f t ^ 2) ≤
+      ∫ t in Ioo 0 T, ∫ s in Ioo 0 T, oddKernel T t s * f t * f s :=
+  (abs_le.mp (oddKernel_quadratic_abs_le_of_majorant T hT f hf hf2
+    (by norm_num : 0 ≤ (1 / 2 : ℝ)) (fun hr => baseKernel_le_half_reciprocal_add_half_exp hr))).1
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddSharpBoundaryNorm
