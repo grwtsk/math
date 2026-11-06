@@ -75,7 +75,42 @@ theorem abs_trialValue_sub_observed_le {M : ℕ} (T : ℝ) (hT : 0 < T) (β : �
   exact abs_quadratic_sub_quadratic_le _ _ _ _ hentry
 
 /-- An entrywise-enclosed trial block and a complete finite row observation
-feed the same checked lower matrix on the literal odd window. -/
+feed the same positive lower matrix on the literal odd window. -/
+theorem shiftedOddWeilEnergy_nonneg_of_positive_observed_matrix {N M L J : ℕ}
+    (hNM : N ≤ M) (hML : M ≤ L) (hL : 0 < L) (hLJ : L ≤ J)
+    (T : ℝ) (hT : 0 < T) (β s γ : ℝ) (hs : 0 < s) (hγ : 0 < γ)
+    (hfloor : HighFloor T β γ N)
+    (trial : (Fin N → ℝ) → ℝ → ℕ → ℝ)
+    (htrial : ∀ u a (i : Fin N), trial u a (i.val+1) = u i)
+    (observed radius : Matrix (Fin M ⊕ Unit) (Fin M ⊕ Unit) ℝ)
+    (hentry : ∀ i j, |shiftedBlock (borderedSourceMatrix T M) poleShiftMetric β i j -
+      observed i j| ≤ radius i j)
+    (rowHat rowRadius : (Fin N → ℝ) → ℝ → ℕ → ℝ)
+    (hrow : ∀ u a i, i < L-N →
+      |literalAugmentedRow M T (trial u a) a β (N+1+i) - rowHat u a (N+1+i)| ≤
+        rowRadius u a (N+1+i))
+    (remote : (Fin N → ℝ) → ℝ → ℝ)
+    (hremote : ∀ u a, completeRemoteAllowance M L J T (trial u a) a s ≤ remote u a)
+    (lower : Matrix (Fin N ⊕ Unit) (Fin N ⊕ Unit) ℝ)
+    (hpositive : ∀ v, 0 ≤ quadratic lower v)
+    (hprice : ∀ u a,
+      let v : Fin M ⊕ Unit → ℝ := Sum.elim (fun i => trial u a (i.val+1)) (fun _ => a)
+      quadratic lower (Sum.elim u (fun _ => a)) ≤
+        quadratic observed v - quadraticEntryRadius radius v -
+          ((∑ i ∈ Finset.range (L-N), (|rowHat u a (N+1+i)| + rowRadius u a (N+1+i)) ^ 2) +
+            remote u a) / γ)
+    {f : ℝ → ℝ} (hf : MemLp f 2 volume) (hfm : Measurable f) (hfo : Function.Odd f)
+    (hfs : ∀ᵐ t : ℝ, t ∉ Icc (-T) T → f t = 0)
+    (henergy : IntegrableOn (fun r => parityKernel 0 r * zeroShiftEnergy r f) (Ioi 0)) :
+    0 ≤ shiftedOddWeilEnergy T β f := by
+  refine shiftedOddWeilEnergy_nonneg_of_positive_lower hNM hML hL hLJ T hT β s γ hs hγ hfloor
+    trial htrial lower hpositive ?_ hf hfm hfo hfs henergy
+  intro u a
+  refine ⟨_, _, _, remote u a, abs_trialValue_sub_observed_le T hT β _ a observed radius hentry,
+    finite_literalAugmentedRow_sq_le (rowHat u a) (rowRadius u a) (hrow u a),
+    hremote u a, hprice u a⟩
+
+/-- The rational Gram-check specialization with the sufficient high cutoff. -/
 theorem shiftedOddWeilEnergy_nonneg_of_observed_matrix {N M L J : ℕ}
     (hNM : N ≤ M) (hML : M ≤ L) (hL : 0 < L) (hLJ : L ≤ J)
     (T : ℝ) (hT : 0 < T) (β s γ : ℝ) (hs : 0 < s) (hγ : 0 < γ)
@@ -103,12 +138,10 @@ theorem shiftedOddWeilEnergy_nonneg_of_observed_matrix {N M L J : ℕ}
     {f : ℝ → ℝ} (hf : MemLp f 2 volume) (hfm : Measurable f) (hfo : Function.Odd f)
     (hfs : ∀ᵐ t : ℝ, t ∉ Icc (-T) T → f t = 0)
     (henergy : IntegrableOn (fun r => parityKernel 0 r * zeroShiftEnergy r f) (Ioi 0)) :
-    0 ≤ shiftedOddWeilEnergy T β f := by
-  refine shiftedOddWeilEnergy_nonneg_of_checked_lower hNM hML hL hLJ T hT β s γ hs hγ hcut
-    trial htrial lower C hcheck ?_ hf hfm hfo hfs henergy
-  intro u a
-  refine ⟨_, _, _, remote u a, abs_trialValue_sub_observed_le T hT β _ a observed radius hentry,
-    finite_literalAugmentedRow_sq_le (rowHat u a) (rowRadius u a) (hrow u a),
-    hremote u a, hprice u a⟩
+    0 ≤ shiftedOddWeilEnergy T β f :=
+  shiftedOddWeilEnergy_nonneg_of_positive_observed_matrix hNM hML hL hLJ T hT β s γ hs hγ
+    (HighFloor.of_exactHighCutoff T hT β γ hcut) trial htrial observed radius hentry
+    rowHat rowRadius hrow remote hremote _ (checked_rational_matrix_nonneg lower C hcheck)
+    hprice hf hfm hfo hfs henergy
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddWindowObservations

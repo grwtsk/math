@@ -33,7 +33,7 @@ namespace GRWTSK.NumberTheory.WeilQuadraticForm.OddExactPeriodization
 
 open OddRootProjection OddKernelSineTransform OddWrapEnergy OddWrapPeriodLift
 open OddBoundaryDifference OddHighComplement OddHighFloor OddPeriodicDiagonal
-open OddSineParseval OddMultiplierBounds OddOutputTrace
+open OddSineParseval OddMultiplierBounds OddOutputTrace OddSineForm LowSchur
 
 private theorem measurable_zeroShiftEnergy {f : ℝ → ℝ} (hf : Measurable f) :
     Measurable (fun r => zeroShiftEnergy r f) := by
@@ -111,14 +111,19 @@ theorem oddArchimedeanEnergy_eq_periodic_add_boundary (T : ℝ) (hT : 0 < T)
   rw [← Measure.prod_restrict, integral_prod _ hBInt] at hEq
   linarith
 
-/-- The full periodic multiplier gives the sharper explicit cutoff on the
-complete supported real odd complement in the literal gamma domain. -/
-theorem shiftedOddCoreEnergy_ge_of_exactHighCutoff (T : ℝ) (hT : 0 < T)
-    (β requested : ℝ) {N : ℕ} (hN : highCutoff T β 4 requested ≤ N) {f : ℝ → ℝ}
+/-- The full multiplier and separate losses give a floor on the complete
+supported real odd complement in the literal gamma domain. -/
+theorem shiftedOddCoreEnergy_ge_of_exactBudget (T : ℝ) (hT : 0 < T)
+    (β primeLoss boundaryLoss requested : ℝ) {N : ℕ}
+    (hbudget : requested ≤ gammaConstant 1 0 - β + periodicMultiplier 0 (frequency T (N + 1)) -
+      primeLoss - boundaryLoss) {f : ℝ → ℝ}
     (hf : Measurable f) (hf2 : MemLp f 2 volume) (hodd : ∀ t : ℝ, f (-t) = -f t)
     (hsupport : ∀ᵐ t : ℝ, t ∉ Icc (-T) T → f t = 0)
     (hhead : ∀ n < N, sineCoefficient T f (n + 1) = 0)
-    (hzero : IntegrableOn (fun r => parityKernel 0 r * zeroShiftEnergy r f) (Ioi 0)) :
+    (hzero : IntegrableOn (fun r => parityKernel 0 r * zeroShiftEnergy r f) (Ioi 0))
+    (hprime : primeEnergy T f ≤ primeLoss * (∫ t : ℝ, ‖f t‖ ^ 2))
+    (hboundary : -(boundaryLoss * ∫ t in Ioo 0 T, f t ^ 2) ≤
+      ∫ t in Ioo 0 T, ∫ s in Ioo 0 T, OddBoundaryNorm.oddKernel T t s * f t * f s) :
     requested * (∫ t : ℝ, ‖f t‖ ^ 2) ≤ shiftedOddCoreEnergy T β f := by
   have hOddAE : ∀ᵐ t : ℝ, f (-t) = -f t := Eventually.of_forall hodd
   let D (n : ℕ) := periodicMultiplier 0 (frequency T (n + 1)) * sineCoefficient T f (n + 1) ^ 2
@@ -140,8 +145,26 @@ theorem shiftedOddCoreEnergy_ge_of_exactHighCutoff (T : ℝ) (hT : 0 < T)
       ∑' j, highDiagonalTerm T N f j := by
     rw [← hDiag.tsum_eq, ← hDiag.summable.sum_add_tsum_nat_add N, hHeadZero, zero_add, hTail]
   have hExact := oddArchimedeanEnergy_eq_periodic_add_boundary T hT hf hf2 hodd hsupport hzero
-  rw [hDiagonalEq] at hExact
-  exact shiftedOddCoreEnergy_ge_of_periodization T hT β requested hN hf hf2 hOddAE
-    hsupport hhead hSummable hExact
+  have hmass := oddMass_eq_twice_positive T hf2.integrable_sq hOddAE hsupport
+  apply shiftedOddCoreEnergy_ge_of_budget T hT β primeLoss boundaryLoss requested hbudget
+    hf2 hOddAE hsupport hhead hSummable hprime
+  rw [hExact, hDiagonalEq, hmass]
+  linarith
+
+/-- The explicit sufficient cutoff using the full prime mass and uniform
+boundary loss. -/
+theorem shiftedOddCoreEnergy_ge_of_exactHighCutoff (T : ℝ) (hT : 0 < T)
+    (β requested : ℝ) {N : ℕ} (hN : highCutoff T β 4 requested ≤ N) {f : ℝ → ℝ}
+    (hf : Measurable f) (hf2 : MemLp f 2 volume) (hodd : ∀ t : ℝ, f (-t) = -f t)
+    (hsupport : ∀ᵐ t : ℝ, t ∉ Icc (-T) T → f t = 0)
+    (hhead : ∀ n < N, sineCoefficient T f (n + 1) = 0)
+    (hzero : IntegrableOn (fun r => parityKernel 0 r * zeroShiftEnergy r f) (Ioi 0)) :
+    requested * (∫ t : ℝ, ‖f t‖ ^ 2) ≤ shiftedOddCoreEnergy T β f := by
+  have hprime := (le_abs_self (primeEnergy T f)).trans (abs_primeEnergy_le T f hf2.integrable_sq)
+  have hprime' : primeEnergy T f ≤ primeMass T * (∫ t : ℝ, ‖f t‖ ^ 2) := by
+    simpa only [Real.norm_eq_abs, sq_abs] using hprime
+  exact shiftedOddCoreEnergy_ge_of_exactBudget T hT β (primeMass T) 4 requested
+    (floor_le_of_highCutoff T hT β 4 requested hN) hf hf2 hodd hsupport hhead hzero
+    hprime' (OddBoundaryNorm.oddKernel_quadratic_ge T f hf hf2.integrable_sq.integrableOn)
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddExactPeriodization
