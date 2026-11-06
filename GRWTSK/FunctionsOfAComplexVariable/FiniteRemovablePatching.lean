@@ -105,13 +105,13 @@ theorem filled_eventuallyEq_raw (data : LocalRemovalData raw singular)
 theorem analyticAt_filled_of_mem (data : LocalRemovalData raw singular)
     (a : ℂ) (ha : a ∈ singular) :
     AnalyticAt ℂ data.filled a :=
-  (data.germ_analytic a ha).congr (data.filled_eventuallyEq_germ a ha)
+  (data.germ_analytic a ha).congr (data.filled_eventuallyEq_germ a ha).symm
 
 /-- Analyticity away from the finite set is inherited from the raw function. -/
 theorem analyticAt_filled_of_not_mem (data : LocalRemovalData raw singular)
     (a : ℂ) (ha : a ∉ singular) (hraw : AnalyticAt ℂ raw a) :
     AnalyticAt ℂ data.filled a :=
-  hraw.congr (data.filled_eventuallyEq_raw a ha)
+  hraw.congr (data.filled_eventuallyEq_raw a ha).symm
 
 /-- Local analytic germs plus raw analyticity off the singular set produce one
 function analytic on the requested region. -/
