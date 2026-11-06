@@ -76,7 +76,6 @@ theorem twistedPrime_add (T : ℝ) (χ : DirichletCharacter ℂ N)
     twistedPrime T χ (C + D) = twistedPrime T χ C + twistedPrime T χ D := by
   simp only [twistedPrime, Pi.add_apply, mul_add, Complex.add_re,
     Finset.sum_add_distrib]
-  ring
 
 /-- The same support and every original prime weight occur on both sides. -/
 theorem abs_twistedPrime_le (T : ℝ) (χ : DirichletCharacter ℂ N)
@@ -106,7 +105,7 @@ theorem abs_twistedPrime_le (T : ℝ) (χ : DirichletCharacter ℂ N)
       intro n hn
       rw [abs_mul, abs_of_nonneg (primeWeight_nonneg n)]
       exact mul_le_mul_of_nonneg_left (hterm n hn) (primeWeight_nonneg n)
-    _ = primeMass T * E := by rw [primeMass, Finset.sum_mul]; ring
+    _ = primeMass T * E := by rw [primeMass, ← Finset.sum_mul]; ring
 
 /-- The positive summand in the exact digamma difference series. -/
 def gammaDifferenceTerm (x y : ℝ) (m : ℕ) : ℝ :=
