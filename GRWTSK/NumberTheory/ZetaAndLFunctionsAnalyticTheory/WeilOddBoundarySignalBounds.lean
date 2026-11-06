@@ -1,3 +1,4 @@
+import Mathlib.Analysis.Complex.ExponentialBounds
 import Mathlib.Analysis.PSeries
 import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
 import Mathlib.Analysis.SumIntegralComparisons
@@ -287,5 +288,132 @@ theorem abs_boundarySignal_sub_le (T : ℝ) (hT : 0 < T) {n : ℕ} (hn : 0 < n) 
   · rw [boundarySignal_eq_sub T hT]
     linarith
   · linarith
+
+private theorem radiusTwo_exp_weighted_moment_le :
+    Summable (fun j : ℕ ↦ exponentialWeight 2 j * (2 * (j : ℝ) + 1 / 2) ^ 2) ∧
+    (∑' j : ℕ, exponentialWeight 2 j * (2 * (j : ℝ) + 1 / 2) ^ 2) ≤ 1 / 10 := by
+  have hexp (k : ℕ) : Real.exp (-(k : ℝ)) ≤ (1 / 2 : ℝ) ^ k := by
+    rw [show -(k : ℝ) = (k : ℝ) * (-1) by ring, Real.exp_nat_mul]
+    exact pow_le_pow_left₀ (Real.exp_nonneg _) Real.exp_neg_one_lt_half.le k
+  have htwo : Real.exp (-2) ≤ (1 / 4 : ℝ) := by simpa only [Nat.cast_ofNat, one_div, inv_pow, show (2 : ℝ) ^ 2 = 4 by norm_num] using hexp 2
+  have height : Real.exp (-8) ≤ (1 / 256 : ℝ) := by
+    (convert hexp 8 using 1; norm_num)
+  have hindex (j : ℕ) : (j : ℝ) + 1 ≤ (2 : ℝ) ^ j := by
+    induction j with
+    | zero => norm_num
+    | succ j ih =>
+      push_cast
+      rw [pow_succ]
+      nlinarith [Nat.cast_nonneg (α := ℝ) j]
+  let m (j : ℕ) := exponentialWeight 2 j * (2 * (j : ℝ) + 1 / 2) ^ 2
+  have hm (j : ℕ) : 0 ≤ m j := mul_nonneg (Real.exp_nonneg _) (sq_nonneg _)
+  have hbound (j : ℕ) : m j ≤ (1 / 64 : ℝ) ^ j := by
+    have hw : exponentialWeight 2 j ≤ (1 / 4 : ℝ) * (1 / 256 : ℝ) ^ j := by
+      rw [exponentialWeight_eq]
+      norm_num
+      exact mul_le_mul htwo (pow_le_pow_left₀ (Real.exp_nonneg _) height j)
+        (by positivity) (by norm_num)
+    have ha : 2 * (j : ℝ) + 1 / 2 ≤ 2 * (2 : ℝ) ^ j := by linarith [hindex j]
+    calc
+      m j ≤ ((1 / 4 : ℝ) * (1 / 256 : ℝ) ^ j) * (2 * (2 : ℝ) ^ j) ^ 2 :=
+        mul_le_mul hw (pow_le_pow_left₀ (by positivity) ha 2) (sq_nonneg _) (by positivity)
+      _ = (1 / 64 : ℝ) ^ j := by
+        rw [mul_pow, ← pow_mul, mul_comm j 2, pow_mul]
+        rw [show (2 : ℝ) ^ 2 = 4 by norm_num]
+        calc
+          _ = (1 / 256 : ℝ) ^ j * (4 : ℝ) ^ j := by ring
+          _ = _ := by rw [← mul_pow]; norm_num
+  have hg : Summable (fun j : ℕ ↦ (1 / 64 : ℝ) ^ j) :=
+    summable_geometric_of_lt_one (by norm_num) (by norm_num)
+  have hs := Summable.of_nonneg_of_le hm hbound hg
+  have h0 : m 0 ≤ 1 / 16 := by
+    unfold m
+    rw [exponentialWeight_eq]
+    norm_num
+    linarith
+  have htail : (∑' j : ℕ, m (j + 1)) ≤ 1 / 63 := by
+    have hg' := (summable_nat_add_iff (f := fun j : ℕ ↦ (1 / 64 : ℝ) ^ j) 1).2 hg
+    have h := ((summable_nat_add_iff (f := m) 1).2 hs).tsum_le_tsum
+      (fun j ↦ hbound (j + 1)) hg'
+    rw [show (∑' j : ℕ, (1 / 64 : ℝ) ^ (j + 1)) =
+        (∑' j : ℕ, (1 / 64 : ℝ) ^ j) * (1 / 64 : ℝ) by
+      simp_rw [pow_succ, tsum_mul_right]] at h
+    rw [tsum_geometric_of_lt_one (by norm_num : 0 ≤ (1 / 64 : ℝ)) (by norm_num)] at h
+    norm_num at h ⊢
+    exact h
+  refine ⟨hs, ?_⟩
+  change (∑' j : ℕ, m j) ≤ _
+  rw [hs.tsum_eq_zero_add]
+  linarith
+
+/-- The full radius-two exponential correction differs from its geometric leading term
+by a one-sided fourth-order remainder. -/
+private theorem radiusTwo_exponentialCorrection_bounds {u : ℝ} (hu : 0 < u) :
+    0 ≤ (Real.exp (-2) / (1 - Real.exp (-8))) * (1 / u ^ 2) -
+        (∑' j, exponentialWeight 2 j * shiftedKernel u j) ∧
+    (Real.exp (-2) / (1 - Real.exp (-8))) * (1 / u ^ 2) -
+        (∑' j, exponentialWeight 2 j * shiftedKernel u j) ≤ 1 / (10 * u ^ 4) := by
+  have htwo : (0 : ℝ) < 2 := by norm_num
+  have hle := exponentialCorrection_le htwo hu
+  have hgeom := exponentialWeight_tsum htwo
+  norm_num at hle hgeom
+  refine ⟨sub_nonneg.mpr (by simpa only [one_div] using hle), ?_⟩
+  rw [← hgeom, ← tsum_mul_right, ← ((exponentialWeight_summable htwo).mul_right _).tsum_sub
+    (exponentialCorrection_summable htwo u)]
+  let m (j : ℕ) := exponentialWeight 2 j * (2 * (j : ℝ) + 1 / 2) ^ 2
+  have hdiff (j : ℕ) :
+      exponentialWeight 2 j * (1 / u ^ 2) - exponentialWeight 2 j * shiftedKernel u j ≤
+        m j * (1 / u ^ 4) := by
+    let a : ℝ := 2 * (j : ℝ) + 1 / 2
+    have hden : 0 < a ^ 2 + u ^ 2 := by positivity
+    have heq : shiftedKernel u j = 1 / (a ^ 2 + u ^ 2) := by
+      unfold shiftedKernel kernel a
+      ring_nf
+    calc
+      _ = m j * (1 / (u ^ 2 * (a ^ 2 + u ^ 2))) := by
+        rw [heq]
+        change _ = (exponentialWeight 2 j * a ^ 2) * _
+        field_simp
+        ring
+      _ ≤ m j * (1 / u ^ 4) := by
+        apply mul_le_mul_of_nonneg_left _ (mul_nonneg (Real.exp_nonneg _) (sq_nonneg _))
+        apply one_div_le_one_div_of_le (by positivity)
+        nlinarith [mul_nonneg (sq_nonneg u) (sq_nonneg a)]
+  have hmajor (j : ℕ) :
+      0 ≤ exponentialWeight 2 j * (1 / u ^ 2) - exponentialWeight 2 j * shiftedKernel u j :=
+    sub_nonneg.mpr (mul_le_mul_of_nonneg_left (shiftedKernel_le_inv_sq hu j) (Real.exp_nonneg _))
+  have hs : Summable (fun j ↦ m j * (1 / u ^ 4)) :=
+    radiusTwo_exp_weighted_moment_le.1.mul_right _
+  calc
+    _ ≤ ∑' j, m j * (1 / u ^ 4) :=
+      (Summable.of_nonneg_of_le hmajor hdiff hs).tsum_le_tsum hdiff hs
+    _ = (∑' j, m j) * (1 / u ^ 4) := tsum_mul_right
+    _ ≤ 1 / (10 * u ^ 4) := by
+      calc
+        _ ≤ (1 / 10 : ℝ) * (1 / u ^ 4) :=
+          mul_le_mul_of_nonneg_right radiusTwo_exp_weighted_moment_le.2 (by positivity)
+        _ = _ := by ring
+
+/-- At radius two, subtracting the explicit geometric correction from the unweighted
+shifted series leaves a nonnegative error of order four in the actual sine frequency. -/
+theorem boundarySignal_two_sub_expansion {n : ℕ} (hn : 0 < n) :
+    let u := Real.pi * (n : ℝ) / 2
+    let corrected := (∑' j : ℕ, 1 / ((2 * (j : ℝ) + 1 / 2) ^ 2 + u ^ 2)) -
+      (Real.exp (-2) / (1 - Real.exp (-8))) * (1 / u ^ 2)
+    0 ≤ boundarySignal 2 n - corrected ∧
+      boundarySignal 2 n - corrected ≤ 1 / (10 * u ^ 4) := by
+  dsimp only
+  rw [boundarySignal_eq_sub 2 (by norm_num)]
+  let u : ℝ := Real.pi * (n : ℝ) / 2
+  have hshift (j : ℕ) : shiftedKernel u j = 1 / ((2 * (j : ℝ) + 1 / 2) ^ 2 + u ^ 2) := by
+    unfold shiftedKernel kernel
+    rw [show 2 * ((j : ℝ) + 1 / 4) = 2 * (j : ℝ) + 1 / 2 by ring]
+  change 0 ≤ (∑' j, shiftedKernel u j) - (∑' j, exponentialWeight 2 j * shiftedKernel u j) -
+      ((∑' j : ℕ, 1 / ((2 * (j : ℝ) + 1 / 2) ^ 2 + u ^ 2)) - _) ∧
+    (∑' j, shiftedKernel u j) - (∑' j, exponentialWeight 2 j * shiftedKernel u j) -
+      ((∑' j : ℕ, 1 / ((2 * (j : ℝ) + 1 / 2) ^ 2 + u ^ 2)) - _) ≤ _
+  simp_rw [← hshift]
+  convert radiusTwo_exponentialCorrection_bounds (u := u) (frequency_pos 2 (by norm_num) hn)
+    using 2 <;> ring
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddBoundarySignalBounds
