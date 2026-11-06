@@ -112,6 +112,28 @@ theorem zetaSineMatrix_quadratic (T : ℝ) (M : ℕ) (u : Fin M → ℝ) :
         dotProduct_sub, dotProduct_smul, smul_eq_mul]
     _ = _ := by rw [outer_quadratic]
 
+/-- The literal finite source with its negative rank-one pole retained as a
+scalar coordinate. The positive pole is already included in the core. -/
+def borderedSourceMatrix (T : ℝ) (M : ℕ) : Matrix (Fin M ⊕ Unit) (Fin M ⊕ Unit) ℝ :=
+  poleBorderedBlock (retainedCoreMatrix T M) (sinhMomentRow T M)
+
+/-- The auxiliary pole coordinate receives no shift. Completing its square
+returns the physical finite sine energy and exhibits the exact minimizing
+pole value. This identity is on the finite source compression. -/
+theorem borderedSourceMatrix_quadratic (T : ℝ) (M : ℕ) (β : ℝ) (u : Fin M → ℝ)
+    (a : ℝ) :
+    quadratic (shiftedBlock (borderedSourceMatrix T M) poleShiftMetric β)
+        (Sum.elim u fun _ => a) =
+      quadratic (zetaSineMatrix T M - β • 1) u +
+        (a + 2 * (sinhMomentRow T M ⬝ᵥ u))^2 / 2 := by
+  rw [borderedSourceMatrix, shiftedBlock_poleBorderedBlock, poleBorderedBlock_quadratic]
+  have hshift (A : Matrix (Fin M) (Fin M) ℝ) :
+      quadratic (A - β • 1) u = quadratic A u - β * quadratic 1 u := by
+    simp only [quadratic, Matrix.sub_mulVec, Matrix.smul_mulVec, dotProduct_sub, dotProduct_smul,
+      smul_eq_mul]
+  rw [hshift, hshift, zetaSineMatrix_quadratic]
+  ring
+
 /-- Existing Mathlib matrix/form equivalence, not a second bilinear form API. -/
 def coreForm (T : ℝ) (M : ℕ) : LinearMap.BilinForm ℝ (Fin M → ℝ) :=
   Matrix.toBilin' (retainedCoreMatrix T M)

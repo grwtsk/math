@@ -5,7 +5,9 @@ Authors: grwtsk contributors
 -/
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.SchurResidualEnclosure
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.DividedDifferenceObserverBounds
-import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.QuadraticCertificates
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.QuadraticCertificateCore
+import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+import Mathlib.Data.Matrix.Block
 
 /-!
 # Directional observed Schur certificates
@@ -63,9 +65,7 @@ theorem weighted_square (a b s : ℝ) (hs : 0 < s) :
       _ = _ := by rw [he]; ring
   have hn : 0 ≤ s * ((1 + s) * a ^ 2 + (1 + s⁻¹) * b ^ 2 -
       (a + b) ^ 2) := by rw [hid]; exact h
-  have hn' : 0 ≤ (1 + s) * a ^ 2 + (1 + s⁻¹) * b ^ 2 - (a + b) ^ 2 := by
-    apply (mul_le_mul_left hs).mp
-    simpa only [mul_zero] using hn
+  have hn' := nonneg_of_mul_nonneg_right hn hs
   linarith
 
 /-- Normed residual comparison; a finite residual of zero does not erase error. -/
@@ -76,7 +76,7 @@ theorem residual_square_le {E : Type*} [SeminormedAddCommGroup E]
   have htri : ‖f‖ ≤ ‖fhat‖ + e := by
     calc
       ‖f‖ ≤ ‖f - fhat‖ + ‖fhat‖ := norm_le_norm_sub_add f fhat
-      _ ≤ e + ‖fhat‖ := add_le_add_right he _
+      _ ≤ e + ‖fhat‖ := add_le_add_left he _
       _ = _ := add_comm _ _
   have hsquare : ‖f‖ ^ 2 ≤ (‖fhat‖ + e) ^ 2 := by
     have hp := mul_nonneg (sub_nonneg.mpr htri)
@@ -150,7 +150,7 @@ theorem directional_enclosure
       S ≤ Uhat + ω * mass := by
   have he := split_residual_enclosure hid hdefect hbudget
   have ho := abs_le.mp hobs
-  have hd := div_le_div_of_nonneg_right (add_le_add_right hres tail) hdelta.le
+  have hd := div_le_div_of_nonneg_right (add_le_add_left hres tail) hdelta.le
   constructor <;> linarith [he.1, he.2, ho.1, ho.2]
 
 /-- The residual comparison above is derived from the norm error, not postulated
@@ -202,21 +202,67 @@ theorem upperMatrix_quadratic (U G : Matrix ι ι ℝ) (ω : ℝ) (x : ι → �
   simp [upperMatrix, quadratic, Matrix.add_mulVec, Matrix.smul_mulVec,
     dotProduct_add, dotProduct_smul, smul_eq_mul]
 
-/-- Form the observed quadratic matrix from the source block and stored X.
-The input Ahat contains the full diagonal, prime, pole and boundary entries. -/
+/-- Shift the designated source coordinates before observing the form or residual.
+A singular shift metric is allowed in this algebraic constructor. -/
+def shiftedBlock {R : Type*} [CommRing R] (Ahat shiftMetric : Matrix κ κ R)
+    (β : R) : Matrix κ κ R :=
+  Ahat - β • shiftMetric
+
+/-- The observed quadratic uses the explicit shift metric and the stored frame. -/
+def observedUpperWithShiftMetric {R : Type*} [CommRing R]
+    (Ahat shiftMetric : Matrix κ κ R) (X : Matrix κ ι R) (β : R) : Matrix ι ι R :=
+  congruence X (shiftedBlock Ahat shiftMetric β)
+
+/-- Select the complete residual rows from the same shifted block. -/
+def observedResidualWithShiftMetric {R : Type*} [CommRing R]
+    (Ahat shiftMetric : Matrix κ κ R) (X : Matrix κ ι R) (P : Matrix ρ κ R)
+    (β : R) : Matrix ρ ι R :=
+  P * shiftedBlock Ahat shiftMetric β * X
+
+/-- The shift metric acts on the source. Observation errors still use the
+full reconstruction Gram and the same complete residual allowance. -/
+def observedLowerWithShiftMetric (Ahat shiftMetric : Matrix κ κ ℝ) (X : Matrix κ ι ℝ)
+    (P : Matrix ρ κ ℝ) (T : Matrix ι ι ℝ) (β ω delta s : ℝ) : Matrix ι ι ℝ :=
+  lowerMatrix (observedUpperWithShiftMetric Ahat shiftMetric X β) (reconstructionGram X)
+    (observedResidualWithShiftMetric Ahat shiftMetric X P β) T ω delta s
+
+/-- The original orthonormal source-coordinate specialization. -/
 def observedUpper (Ahat : Matrix κ κ ℝ) (X : Matrix κ ι ℝ) (β : ℝ) : Matrix ι ι ℝ :=
-  congruence X (Ahat - β • (1 : Matrix κ κ ℝ))
+  observedUpperWithShiftMetric Ahat 1 X β
 
-/-- Form the observed finite residual from the SAME shifted block. In the Weil
-consumer P selects every row N<|n|<=L; completeness is part of the source split. -/
+/-- The original orthonormal residual specialization. -/
 def observedResidual (Ahat : Matrix κ κ ℝ) (X : Matrix κ ι ℝ)
-    (P : Matrix ρ κ ℝ) (β : ℝ) : Matrix ρ ι ℝ := P * (Ahat - β • 1) * X
+    (P : Matrix ρ κ ℝ) (β : ℝ) : Matrix ρ ι ℝ :=
+  observedResidualWithShiftMetric Ahat 1 X P β
 
-/-- A fully specified finite target, not a freely supplied positive matrix. -/
+/-- The original orthonormal lower target. -/
 def observedLower (Ahat : Matrix κ κ ℝ) (X : Matrix κ ι ℝ)
     (P : Matrix ρ κ ℝ) (T : Matrix ι ι ℝ) (β ω delta s : ℝ) : Matrix ι ι ℝ :=
-  lowerMatrix (observedUpper Ahat X β) (reconstructionGram X)
-    (observedResidual Ahat X P β) T ω delta s
+  observedLowerWithShiftMetric Ahat 1 X P T β ω delta s
+
+@[simp] theorem observedUpperWithShiftMetric_one
+    (Ahat : Matrix κ κ ℝ) (X : Matrix κ ι ℝ) (β : ℝ) :
+    observedUpperWithShiftMetric Ahat 1 X β = observedUpper Ahat X β := rfl
+
+@[simp] theorem observedResidualWithShiftMetric_one
+    (Ahat : Matrix κ κ ℝ) (X : Matrix κ ι ℝ) (P : Matrix ρ κ ℝ) (β : ℝ) :
+    observedResidualWithShiftMetric Ahat 1 X P β = observedResidual Ahat X P β := rfl
+
+@[simp] theorem observedLowerWithShiftMetric_one
+    (Ahat : Matrix κ κ ℝ) (X : Matrix κ ι ℝ) (P : Matrix ρ κ ℝ)
+    (T : Matrix ι ι ℝ) (β ω delta s : ℝ) :
+    observedLowerWithShiftMetric Ahat 1 X P T β ω delta s = observedLower Ahat X P T β ω delta s :=
+  rfl
+
+/-- Pulling back by a fixed stored frame preserves the shifted quadratic
+exactly. Only the shift metric, rather than the observation Gram, acts here. -/
+theorem observedUpperWithShiftMetric_quadratic
+    (Ahat shiftMetric : Matrix κ κ ℝ) (X : Matrix κ ι ℝ) (β : ℝ) (x : ι → ℝ) :
+    quadratic (observedUpperWithShiftMetric Ahat shiftMetric X β) x =
+      quadratic Ahat (X.mulVec x) - β * quadratic shiftMetric (X.mulVec x) := by
+  rw [observedUpperWithShiftMetric, shiftedBlock, quadratic_congruence]
+  simp only [quadratic, Matrix.sub_mulVec, Matrix.smul_mulVec, dotProduct_sub, dotProduct_smul,
+    smul_eq_mul]
 
 /-- Literal Gram value, including the high reconstruction components. -/
 theorem reconstructionGram_quadratic (X : Matrix κ ι ℝ) (x : ι → ℝ) :
@@ -230,9 +276,8 @@ theorem observedUpper_quadratic (Ahat : Matrix κ κ ℝ) (X : Matrix κ ι ℝ)
     (β : ℝ) (x : ι → ℝ) :
     quadratic (observedUpper Ahat X β) x =
       quadratic Ahat (X.mulVec x) - β * quadratic (reconstructionGram X) x := by
-  rw [observedUpper, quadratic_congruence, reconstructionGram_quadratic]
-  simp only [quadratic, Matrix.sub_mulVec, Matrix.smul_mulVec, Matrix.one_mulVec,
-    dotProduct_sub, dotProduct_smul, smul_eq_mul, dotProduct, pow_two]
+  rw [observedUpper, observedUpperWithShiftMetric_quadratic, reconstructionGram_quadratic]
+  simp only [quadratic, Matrix.one_mulVec, dotProduct, pow_two]
 
 /-- Orthogonal low/high supports give the exact Gram I+YᵀY. The support
 identities are structural, not assumptions on a spectral gap. -/
@@ -270,7 +315,7 @@ theorem checked_matrix_nonneg (A : Matrix ι ι ℝ)
     (hcheck : check (matrixProblem A) C = true) (x : ι → ℝ) :
     0 ≤ quadratic A x := by
   exact check_sound (matrixProblem A) C hcheck x
-    ⟨fun e => nomatch e, fun e => nomatch e⟩
+    ⟨(fun e => nomatch e), (fun e => nomatch e)⟩
 
 /-- A passing rational Gram identity gives a real inequality for EVERY real
 vector, not just rational test vectors. Cast the identity, not a finite sample.
@@ -279,25 +324,8 @@ theorem checked_rational_matrix_nonneg (A : Matrix ι ι ℚ)
     (C : Certificate ℚ ι Empty Empty ν)
     (hcheck : check (matrixProblem A) C = true) (x : ι → ℝ) :
     0 ≤ quadratic (fun i j => (A i j : ℝ)) x := by
-  have hv : Valid (matrixProblem A) C := of_decide_eq_true hcheck
-  have hid : A = C.gram.transpose * C.gram := by
-    simpa [matrixProblem] using hv.2
-  let W : Matrix ν ι ℝ := fun i j => (C.gram i j : ℝ)
-  have hreal : (fun i j => (A i j : ℝ)) = W.transpose * W := by
-    ext i j
-    have hij := congrFun (congrFun hid i) j
-    change (A i j : ℝ) = ∑ k, (C.gram k i : ℝ) * (C.gram k j : ℝ)
-    rw [hij]
-    simp [Matrix.mul_apply, Matrix.transpose_apply]
-  let CReal : Certificate ℝ ι Empty Empty ν :=
-    { gram := W
-      equalityMultipliers := fun e => nomatch e
-      inequalityMultipliers := fun e => nomatch e }
-  have hvReal : Valid (matrixProblem (fun i j => (A i j : ℝ))) CReal := by
-    refine ⟨fun e => nomatch e, ?_⟩
-    simpa [matrixProblem, CReal] using hreal
-  exact sound (matrixProblem _) CReal hvReal x
-    ⟨fun e => nomatch e, fun e => nomatch e⟩
+  exact checked_realizeRat_nonneg (matrixProblem A) C hcheck x
+    ⟨(fun e => nomatch e), (fun e => nomatch e)⟩
 
 /-- A checked lower matrix supplies a sign only after its source comparison. -/
 theorem checked_lower_source_nonneg (A : Matrix ι ι ℝ) (S : (ι → ℝ) → ℝ)
@@ -412,6 +440,7 @@ theorem functional_injective_on_negative_subspace
   have hz : ((x : V) - (y : V)) = 0 := by
     by_contra hn
     have hm : (x : V) - (y : V) ∈ W := W.sub_mem x.property y.property
+    change ell (x : V) = ell (y : V) at hxy
     have he : ell ((x : V) - (y : V)) = 0 := by rw [map_sub, hxy, sub_self]
     exact (not_lt_of_ge (hker _ he)) (hnegative _ hm hn)
   apply Subtype.ext
@@ -445,5 +474,95 @@ theorem trial_separation_price {β upper mass : ℝ}
   constructor
   · ring
   · exact div_pos (neg_pos.mpr hnegative) hmass
+
+section PoleBorder
+
+variable {ι : Type*} [Fintype ι] [DecidableEq ι]
+
+/-- The scalar pole is a retained coordinate of the quadratic form. -/
+def poleBorderedBlock (C : Matrix ι ι ℝ) (s : ι → ℝ) :
+    Matrix (ι ⊕ Unit) (ι ⊕ Unit) ℝ :=
+  Matrix.fromBlocks C (Matrix.of fun i _ => s i) (Matrix.of fun _ i => s i)
+    (Matrix.of fun _ _ => 1 / 2)
+
+/-- The identity on the physical block and zero on the auxiliary pole. -/
+def poleShiftMetric : Matrix (ι ⊕ Unit) (ι ⊕ Unit) ℝ :=
+  Matrix.fromBlocks 1 0 0 0
+
+/-- The border and both source moment orientations survive the shift. -/
+theorem shiftedBlock_poleBorderedBlock (C : Matrix ι ι ℝ) (s : ι → ℝ) (β : ℝ) :
+    shiftedBlock (poleBorderedBlock C s) poleShiftMetric β =
+      poleBorderedBlock (C - β • 1) s := by
+  ext (i | i) (j | j) <;>
+    simp [shiftedBlock, poleBorderedBlock, poleShiftMetric, Matrix.fromBlocks]
+
+/-- Complete the exact scalar square. At a = -2 (s ⬝ᵥ u) the augmented
+energy equals the physical finite energy with its negative rank-one term. -/
+theorem poleBorderedBlock_quadratic (C : Matrix ι ι ℝ) (s u : ι → ℝ) (a : ℝ) :
+    quadratic (poleBorderedBlock C s) (Sum.elim u fun _ => a) =
+      quadratic C u - 2 * (s ⬝ᵥ u)^2 + (a + 2 * (s ⬝ᵥ u))^2 / 2 := by
+  have hcolumn : (Matrix.of fun (i : ι) (_ : Unit) => s i) *ᵥ (fun _ => a) = a • s := by
+    ext i
+    simp [Matrix.mulVec, dotProduct, mul_comm]
+  have hrow : (Matrix.of fun (_ : Unit) (i : ι) => s i) *ᵥ u = fun _ => s ⬝ᵥ u := rfl
+  have hscalar : (Matrix.of fun (_ _ : Unit) => (1 / 2 : ℝ)) *ᵥ (fun _ => a) =
+      fun _ => a / 2 := by
+    ext i
+    simp [Matrix.mulVec, dotProduct, div_eq_mul_inv, mul_comm]
+  rw [quadratic, poleBorderedBlock, Matrix.fromBlocks_mulVec]
+  simp only [Function.comp_def, Sum.elim_inl, Sum.elim_inr,
+    sumElim_dotProduct_sumElim, hcolumn, hrow, hscalar, dotProduct_add, dotProduct_smul,
+    smul_eq_mul]
+  rw [dotProduct_comm u s]
+  simp only [quadratic, dotProduct, Fintype.sum_unique, Pi.add_apply]
+  ring
+
+end PoleBorder
+
+section ShiftMetricRegression
+
+/-! Exact finite counterexample. Eliminating the retained pole at
+`a = -2u` gives energy `-u^2/2`. Identity shifting moves the pole and
+instead gives a positive determinant. A separate mixed-frame residual
+fixture selects the pole row so it also detects shifting that coordinate. -/
+
+private def poleFixture : Matrix (Fin 2) (Fin 2) ℚ := !![1, 1; 1, 1 / 2]
+private def poleShift : Matrix (Fin 2) (Fin 2) ℚ := !![1, 0; 0, 0]
+
+private def fixtureIdentity : Matrix (Fin 2) (Fin 2) ℚ := 1
+
+theorem pole_shift_regression :
+    observedUpperWithShiftMetric poleFixture poleShift fixtureIdentity (-1 / 2) =
+        !![3 / 2, 1; 1, 1 / 2] ∧
+      (observedUpperWithShiftMetric poleFixture poleShift fixtureIdentity (-1 / 2)).det =
+        -1 / 4 ∧
+      (observedUpperWithShiftMetric poleFixture fixtureIdentity fixtureIdentity (-1 / 2)).det =
+        1 / 2 ∧
+      quadratic (observedUpperWithShiftMetric poleFixture poleShift fixtureIdentity (-1 / 2))
+        ![1, -2] = -1 / 2 := by
+  have hcorrect : observedUpperWithShiftMetric poleFixture poleShift fixtureIdentity (-1 / 2) =
+      !![3 / 2, 1; 1, 1 / 2] := by
+    simp [observedUpperWithShiftMetric, congruence, fixtureIdentity]
+    ext i j
+    fin_cases i <;> fin_cases j <;> norm_num [shiftedBlock, poleFixture, poleShift]
+  have hwrong : observedUpperWithShiftMetric poleFixture fixtureIdentity fixtureIdentity
+      (-1 / 2) = !![3 / 2, 1; 1, 1] := by
+    simp [observedUpperWithShiftMetric, congruence, fixtureIdentity]
+    ext i j
+    fin_cases i <;> fin_cases j <;> norm_num [shiftedBlock, poleFixture, Matrix.one_apply]
+  rw [hcorrect, hwrong]
+  norm_num [Matrix.det_fin_two, quadratic, Matrix.mulVec, dotProduct, Fin.sum_univ_two]
+
+theorem pole_residual_shift_regression :
+    observedResidualWithShiftMetric poleFixture poleShift !![1; 2] !![0, 1] (-1 / 2) =
+        !![2] ∧
+      observedResidualWithShiftMetric poleFixture fixtureIdentity !![1; 2] !![0, 1] (-1 / 2) =
+        !![3] := by
+  constructor <;> ext i j <;> fin_cases i <;> fin_cases j <;>
+    norm_num [observedResidualWithShiftMetric, shiftedBlock, poleFixture, poleShift,
+      fixtureIdentity, Matrix.mul_apply, Matrix.vecMul, dotProduct, Fin.sum_univ_two,
+      Matrix.one_apply]
+
+end ShiftMetricRegression
 
 end GRWTSK.LinearAlgebra.SchurObserver
