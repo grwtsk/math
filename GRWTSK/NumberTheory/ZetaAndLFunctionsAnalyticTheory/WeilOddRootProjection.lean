@@ -5,7 +5,7 @@ Authors: grwtsk contributors
 -/
 import GRWTSK.FunctionsOfAComplexVariable.OddZeroOrbitWitness
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.CharacterWeilWindowBounds
-import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilGammaData
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddSineProjection
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.ArithmeticRootProjection
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.SchurObserverCertificate
 
@@ -281,9 +281,6 @@ theorem real_conjugate_pair (c z : ℂ) :
   simp [Complex.mul_re]
   <;> ring
 
-def pairedPrimeWeight (χ : DirichletCharacter ℂ q) (n : ℕ) : ℝ :=
-  primeWeight n * (χ (n : ZMod q)).re
-
 theorem abs_pairedPrimeWeight_le (χ : DirichletCharacter ℂ q) (n : ℕ) :
     |pairedPrimeWeight χ n| ≤ primeWeight n := by
   have hc : |(χ (n : ZMod q)).re| ≤ 1 :=
@@ -338,64 +335,6 @@ theorem pairedPrimeResponse_native (χ : DirichletCharacter ℂ q) (T : ℝ)
 theorem paired_weight_is_not_magnitude :
     ((-1 : ℂ) * 1).re + (star (-1 : ℂ) * 1).re = -2 ∧
       (2 : ℝ) * ‖(-1 : ℂ)‖ = 2 := by norm_num
-
-/-! Literal finite projections. These definitions keep the source integrals;
-no diagonalization or undocumented Fourier correspondence is used to define them.
-Their integrability and equality to the canonical form are explained above.
-The odd basis starts at n=1 and includes EVERY sine mode through M. -/
-
-def zeroExtendedSine (T : ℝ) (n : ℕ) (t : ℝ) : ℝ :=
-  if t ∈ Set.Icc (-T) T then Real.sin (Real.pi * (n : ℝ) * t / T) / Real.sqrt T
-  else 0
-
-def sineCorrelation (T : ℝ) (m n : ℕ) (r : ℝ) : ℝ :=
-  ∫ t : ℝ, zeroExtendedSine T m t * zeroExtendedSine T n (t + r)
-
-def sineShiftEntry (T : ℝ) (m n : ℕ) (r : ℝ) : ℝ :=
-  sineCorrelation T m n r + sineCorrelation T n m r
-
-theorem sineShiftEntry_symmetric (T : ℝ) (m n : ℕ) (r : ℝ) :
-    sineShiftEntry T m n r = sineShiftEntry T n m r := by
-  unfold sineShiftEntry
-  ring
-
-def sineArchimedeanEntry (T c : ℝ) (a m n : ℕ) : ℝ :=
-  c * (∫ t : ℝ, zeroExtendedSine T m t * zeroExtendedSine T n t) +
-    ∫ r in Set.Ioi (0 : ℝ), parityKernel a r *
-      (∫ t : ℝ, (zeroExtendedSine T m (t + r) - zeroExtendedSine T m t) *
-        (zeroExtendedSine T n (t + r) - zeroExtendedSine T n t))
-
-def sinePoleMoment (T u : ℝ) (n : ℕ) : ℝ :=
-  ∫ t : ℝ, zeroExtendedSine T n t * Real.exp (u * t)
-
-/-- Both source pole orientations, NOT a pair of positive squares. -/
-def sinePoleEntry (T : ℝ) (m n : ℕ) : ℝ :=
-  sinePoleMoment T (1 / 2) m * sinePoleMoment T (-1 / 2) n +
-    sinePoleMoment T (-1 / 2) m * sinePoleMoment T (1 / 2) n
-
-/-- Literal full zeta sine compression, independent of any numerical observer. -/
-def zetaSineMatrix (T : ℝ) (M : ℕ) : Matrix (Fin M) (Fin M) ℝ :=
-  fun i j =>
-    sineArchimedeanEntry T (gammaConstant 1 0) 0 (i.val + 1) (j.val + 1) +
-    sinePoleEntry T (i.val + 1) (j.val + 1) -
-    ∑ n ∈ activePrimePowers T,
-      primeWeight n * sineShiftEntry T (i.val + 1) (j.val + 1) (Real.log (n : ℝ))
-
-/-- A primitive NONPRINCIPAL pair has its own conductor and gamma kernel and
-NO pole term. These proof arguments enforce the source scope at construction. -/
-def primitivePairSineMatrix (χ : DirichletCharacter ℂ q)
-    (_hprimitive : χ.IsPrimitive) (_hnonprincipal : χ ≠ 1)
-    (T : ℝ) (M : ℕ) : Matrix (Fin M) (Fin M) ℝ :=
-  fun i j =>
-    sineArchimedeanEntry T (gammaConstant q (gammaParity χ)) (gammaParity χ)
-      (i.val + 1) (j.val + 1) -
-    ∑ n ∈ activePrimePowers T, pairedPrimeWeight χ n *
-      sineShiftEntry T (i.val + 1) (j.val + 1) (Real.log (n : ℝ))
-
-/-- Actual projection coordinates of a supplied real function, not labels or
-adjacency traces. Negative witnesses require the analytical form return. -/
-def sineCoordinates (T : ℝ) (M : ℕ) (f : ℝ → ℝ) : Fin M → ℝ :=
-  fun i => ∫ t : ℝ, zeroExtendedSine T (i.val + 1) t * f t
 
 /-! Quantitative finite return; no nonreal zero or negative test is postulated
 as existing. The constants below retain both successive approximation errors. -/
