@@ -138,6 +138,113 @@ theorem boundaryPartialBounds_sound (bits n K : ℕ) :
     Encloses (boundaryPartialBounds bits n K) (boundarySignalPartial 2 n K) :=
   sum_sound (Finset.range K) (fun j _ => round_sound bits (boundaryTerm_sound n j))
 
+/-- Integer denominator after clearing the shared frequency and rate denominators. -/
+private def boundaryDenGrid (piNumerator n j : ℕ) : ℕ :=
+  (4 * j + 1)^2 * (10^20)^2 + (piNumerator * n)^2
+
+private theorem boundaryDenGrid_pos (piNumerator n j : ℕ) :
+    0 < boundaryDenGrid piNumerator n j := by
+  unfold boundaryDenGrid
+  positivity
+
+private theorem boundaryDenominator_eq_grid (n j : ℕ) :
+    denominator n (rate j) =
+      ((boundaryDenGrid 314159265358979323846 n j : ℚ) / (4 * 10^40),
+       (boundaryDenGrid 314159265358979323847 n j : ℚ) / (4 * 10^40)) := by
+  apply Prod.ext <;>
+    simp only [denominator, rate, add, point, omegaSq, omega, piBounds, boundaryDenGrid,
+      Nat.cast_add, Nat.cast_mul, Nat.cast_pow, Nat.cast_ofNat, Nat.cast_one] <;>
+    ring
+
+private theorem boundaryTerm_of_eight_le (n j : ℕ) (hj : 8 ≤ j) :
+    boundaryTerm n j =
+      ((1 - 1 / 2^66) / ((boundaryDenGrid 314159265358979323847 n j : ℚ) / (4 * 10^40)),
+       1 / ((boundaryDenGrid 314159265358979323846 n j : ℚ) / (4 * 10^40))) := by
+  let lo : ℚ := (boundaryDenGrid 314159265358979323846 n j : ℚ) / (4 * 10^40)
+  let hi : ℚ := (boundaryDenGrid 314159265358979323847 n j : ℚ) / (4 * 10^40)
+  have hlo : 0 < lo := by
+    apply div_pos (by exact_mod_cast boundaryDenGrid_pos 314159265358979323846 n j)
+    norm_num
+  have hhi : 0 < hi := by
+    apply div_pos (by exact_mod_cast boundaryDenGrid_pos 314159265358979323847 n j)
+    norm_num
+  have hden : lo ≤ hi := by
+    unfold lo hi boundaryDenGrid
+    apply div_le_div_of_nonneg_right _ (by norm_num)
+    push_cast
+    have hn : (314159265358979323846 : ℚ) * n ≤ (314159265358979323847 : ℚ) * n :=
+      mul_le_mul_of_nonneg_right (by norm_num) (Nat.cast_nonneg n)
+    exact add_le_add_right (pow_le_pow_left₀ (by positivity) hn 2) _
+  have hrec : hi⁻¹ ≤ lo⁻¹ := (inv_le_inv₀ hhi hlo).2 hden
+  let a : ℚ := 1 + -(1 / 2^66)
+  have ha : 0 ≤ a := by norm_num [a]
+  have ha1 : a ≤ 1 := by norm_num [a]
+  have hminHi : a * hi⁻¹ ≤ 1 * hi⁻¹ := mul_le_mul_of_nonneg_right ha1 (by positivity)
+  have hminLo : a * lo⁻¹ ≤ 1 * lo⁻¹ := mul_le_mul_of_nonneg_right ha1 (by positivity)
+  have hlow : a * hi⁻¹ ≤ a * lo⁻¹ := mul_le_mul_of_nonneg_left hrec ha
+  have hup : 1 * hi⁻¹ ≤ 1 * lo⁻¹ := mul_le_mul_of_nonneg_left hrec (by norm_num)
+  simp only [boundaryTerm, boundaryDenominator_eq_grid, decay, ite_eq_right (Nat.not_lt.mpr hj),
+    sub, neg, point, add, neg_zero, add_zero, mul, inv]
+  change (min (min (a * hi⁻¹) (1 * hi⁻¹)) (min (a * lo⁻¹) (1 * lo⁻¹)),
+    max (max (a * hi⁻¹) (1 * hi⁻¹)) (max (a * lo⁻¹) (1 * lo⁻¹))) = _
+  rw [min_eq_left hminHi, min_eq_left hminLo, min_eq_left hlow,
+    max_eq_right hminHi, max_eq_right hminLo, max_eq_right hup]
+  simp only [div_eq_mul_inv, sub_eq_add_neg, a, lo, hi]
+
+private def boundaryGridTerm (bits n j : ℕ) : ℤ × ℤ :=
+  if j < 8 then
+    (⌊2^bits * (boundaryTerm n j).1⌋, ⌈2^bits * (boundaryTerm n j).2⌉)
+  else
+    let numerator : ℕ := 2^bits * (4 * 10^40)
+    ((numerator * (2^66 - 1) / (2^66 * boundaryDenGrid 314159265358979323847 n j) : ℕ),
+      -((-(numerator : ℤ)) / (boundaryDenGrid 314159265358979323846 n j : ℤ)))
+
+private theorem boundaryGridTerm_eq (bits n j : ℕ) :
+    boundaryGridTerm bits n j =
+      (⌊2^bits * (boundaryTerm n j).1⌋, ⌈2^bits * (boundaryTerm n j).2⌉) := by
+  unfold boundaryGridTerm
+  split_ifs with h
+  · rfl
+  · rw [boundaryTerm_of_eight_le n j (Nat.le_of_not_gt h)]
+    have hl : (boundaryDenGrid 314159265358979323846 n j : ℚ) ≠ 0 := by
+      exact_mod_cast (boundaryDenGrid_pos 314159265358979323846 n j).ne'
+    have hu : (boundaryDenGrid 314159265358979323847 n j : ℚ) ≠ 0 := by
+      exact_mod_cast (boundaryDenGrid_pos 314159265358979323847 n j).ne'
+    have hlo :
+        2^bits * ((1 - 1 / 2^66) / ((boundaryDenGrid 314159265358979323847 n j : ℚ) /
+          (4 * 10^40))) =
+        ((2^bits * (4 * 10^40) * (2^66 - 1) : ℕ) : ℚ) /
+          ((2^66 * boundaryDenGrid 314159265358979323847 n j : ℕ) : ℚ) := by
+      push_cast
+      norm_num
+      ring
+    have hhi :
+        2^bits * (1 / ((boundaryDenGrid 314159265358979323846 n j : ℚ) / (4 * 10^40))) =
+        ((2^bits * (4 * 10^40) : ℕ) : ℚ) /
+          (boundaryDenGrid 314159265358979323846 n j : ℚ) := by
+      push_cast
+      norm_num
+      ring
+    dsimp only [Prod.fst, Prod.snd]
+    rw [hlo, hhi, Rat.floor_natCast_div_natCast, Rat.ceil_natCast_div_natCast]
+    rfl
+
+/-- Sum the same outward-rounded partial boundary endpoints on their common integer grid. -/
+def boundaryPartialBoundsGrid (bits n K : ℕ) : Bounds :=
+  (((∑ j ∈ Finset.range K, (boundaryGridTerm bits n j).1 : ℤ) : ℚ) / 2^bits,
+   ((∑ j ∈ Finset.range K, (boundaryGridTerm bits n j).2 : ℤ) : ℚ) / 2^bits)
+
+theorem boundaryPartialBoundsGrid_eq (bits n K : ℕ) :
+    boundaryPartialBoundsGrid bits n K = boundaryPartialBounds bits n K := by
+  apply Prod.ext <;> simp only [boundaryPartialBoundsGrid, boundaryPartialBounds, sum,
+    GRWTSK.Algebra.LinearAlgebra.RationalRealBounds.round, boundaryGridTerm_eq,
+    Int.cast_sum, Finset.sum_div]
+
+theorem boundaryPartialBoundsGrid_sound (bits n K : ℕ) :
+    Encloses (boundaryPartialBoundsGrid bits n K) (boundarySignalPartial 2 n K) := by
+  rw [boundaryPartialBoundsGrid_eq]
+  exact boundaryPartialBounds_sound bits n K
+
 private def archScale (m n : ℕ) : ℚ :=
   (-1 : ℚ) ^ (m + n) * (-(m : ℚ) * n) / ((m : ℚ) ^ 2 - (n : ℚ) ^ 2)
 

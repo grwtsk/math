@@ -241,6 +241,39 @@ theorem primeSignalBounds_sound (bits n : ℕ) :
   rw [hArg]
   exact weighted_sound hq (trigBounds_sound hq n).1
 
+/-- Use checked literal logarithm centers and prime weights across a batch of modes. -/
+def primeSignalBoundsFromTables (bits n : ℕ) (logCentre : ℕ → ℚ)
+    (weight : ℕ → Bounds) : Bounds :=
+  round bits (sum (Finset.Icc 2 54) fun q =>
+    if IsPrimePow q then
+      mul (weight q) (centered
+        (UnitWindowPrimeTrig.sinHatGrid ((n : ℚ) / 2 * logCentre q)) (phaseRadius n))
+    else point 0)
+
+theorem primeSignalBoundsFromTables_eq (bits n : ℕ) (logCentre : ℕ → ℚ)
+    (weight : ℕ → Bounds)
+    (hlog : ∀ q ∈ Finset.Icc 2 54, logCentre q = logHat q)
+    (hweight : ∀ q ∈ Finset.Icc 2 54, weight q = primeWeightBounds q) :
+    primeSignalBoundsFromTables bits n logCentre weight = primeSignalBounds bits n := by
+  unfold primeSignalBoundsFromTables primeSignalBounds
+  congr 1
+  unfold sum
+  apply Prod.ext
+  all_goals
+    dsimp only
+    apply Finset.sum_congr rfl
+    intro q hq
+    rw [hlog q hq, hweight q hq, UnitWindowPrimeTrig.sinHatGrid_eq]
+    rfl
+
+theorem primeSignalBoundsFromTables_sound (bits n : ℕ) (logCentre : ℕ → ℚ)
+    (weight : ℕ → Bounds)
+    (hlog : ∀ q ∈ Finset.Icc 2 54, logCentre q = logHat q)
+    (hweight : ∀ q ∈ Finset.Icc 2 54, weight q = primeWeightBounds q) :
+    Encloses (primeSignalBoundsFromTables bits n logCentre weight) (primeSignal 2 (n : ℝ)) := by
+  rw [primeSignalBoundsFromTables_eq bits n logCentre weight hlog hweight]
+  exact primeSignalBounds_sound bits n
+
 /-- The signed prime divided difference from any supplied scalar signal table. -/
 def primeOffDiagonalBoundsFrom (signal : ℕ → Bounds) (m n : ℕ) : Bounds :=
   scale ((2 * (-1 : ℚ) ^ (m + n)) / ((m : ℚ) ^ 2 - (n : ℚ) ^ 2))
