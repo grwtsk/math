@@ -21,8 +21,11 @@ For the head, compute each symmetric pair in one orientation. The pole
 uses its exact alternating sign and the scalar corner is one half. The
 rectangular residual uses physical rows 257 through 512 with the same
 physical and pole recipes. Every rational endpoint is rounded outwards
-on the chosen grid. The finite packet aggregate, remote allowance and
-independent mathematical review have separate scopes.
+on the chosen grid. The entry return can use any scalar tables with
+checked enclosures of the same signals on the indices it reads. This
+permits a shorter scalar certificate without changing the analytic
+matrix. The finite packet aggregate, remote allowance and independent
+mathematical review have separate scopes.
 -/
 
 set_option autoImplicit false
@@ -142,14 +145,16 @@ private def archOffDiagonalBounds (boundary : ℕ → Bounds) (m n : ℕ) : Boun
   scale (((-1 : ℚ) ^ (m + n) * (-2) * (m : ℚ) * (n : ℚ)) / ((m : ℚ) ^ 2 - (n : ℚ) ^ 2))
     (sub (boundary n) (boundary m))
 
-private theorem archOffDiagonalBounds_sound (bits : ℕ) {K m n : ℕ} (hK : 0 < K)
-    (hm : 0 < m) (hn : 0 < n) (hmn : m ≠ n) :
-    Encloses (archOffDiagonalBounds (fun j => boundaryBounds bits j K) m n)
+private theorem archOffDiagonalBounds_sound {boundary : ℕ → Bounds} {m n : ℕ}
+    (hm : 0 < m) (hn : 0 < n) (hmn : m ≠ n)
+    (hM : Encloses (boundary m) (boundarySignal 1 m))
+    (hN : Encloses (boundary n) (boundarySignal 1 n)) :
+    Encloses (archOffDiagonalBounds boundary m n)
       (sineArchimedeanEntry 1 (gammaConstant 1 0) 0 m n) := by
   rw [sineArchimedeanEntry_one_off_diagonal hm hn hmn]
   have h := scale_sound
     (((-1 : ℚ) ^ (m + n) * (-2) * (m : ℚ) * (n : ℚ)) / ((m : ℚ) ^ 2 - (n : ℚ) ^ 2))
-    (sub_sound (boundaryBounds_sound bits n hK) (boundaryBounds_sound bits m hK))
+    (sub_sound hN hM)
   unfold archOffDiagonalBounds
   convert h using 1
   unfold archimedeanOffDiagonal
@@ -161,15 +166,16 @@ private def primeOffDiagonalBounds (signal : ℕ → Bounds) (m n : ℕ) : Bound
   scale (((-1 : ℚ) ^ (m + n) * 2) / ((m : ℚ) ^ 2 - (n : ℚ) ^ 2))
     (mul invPiBounds (sub (scale m (signal n)) (scale n (signal m))))
 
-private theorem primeOffDiagonalBounds_sound (bits : ℕ) {m n : ℕ}
-    (hm : 0 < m) (hn : 0 < n) (hm' : m ≤ 2048) (hn' : n ≤ 2048) (hmn : m ≠ n) :
-    Encloses (primeOffDiagonalBounds (primeSignalBounds bits) m n)
+private theorem primeOffDiagonalBounds_sound {signal : ℕ → Bounds} {m n : ℕ}
+    (hm : 0 < m) (hn : 0 < n) (hmn : m ≠ n)
+    (hM : Encloses (signal m) (primeSignal 1 (m : ℝ)))
+    (hN : Encloses (signal n) (primeSignal 1 (n : ℝ))) :
+    Encloses (primeOffDiagonalBounds signal m n)
       (∑ q ∈ activePrimePowers 1, primeWeight q * sineShiftEntry 1 m n (Real.log q)) := by
   rw [prime_shift_sum_off_diagonal 1 m n (by norm_num) hm hn hmn]
   have h := scale_sound (((-1 : ℚ) ^ (m + n) * 2) / ((m : ℚ) ^ 2 - (n : ℚ) ^ 2))
     (mul_sound invPiBounds_sound
-      (sub_sound (scale_sound (m : ℚ) (primeSignalBounds_sound bits hn'))
-        (scale_sound (n : ℚ) (primeSignalBounds_sound bits hm'))))
+      (sub_sound (scale_sound (m : ℚ) hN) (scale_sound (n : ℚ) hM)))
   unfold primeOffDiagonalBounds
   convert h using 1
   unfold oddPrimeRow primeRow
@@ -184,12 +190,31 @@ structure PhysicalTables where
   gammaDiagonal : ℕ → Bounds
   primeDiagonal : ℕ → Bounds
 
+/-- Each scalar table encloses the corresponding literal signal on the
+indices used by the physical entry formula. -/
+structure PhysicalTables.Sound (t : PhysicalTables) (modes diagonals : ℕ) : Prop where
+  boundary : ∀ n, 0 < n → n ≤ modes → Encloses (t.boundary n) (boundarySignal 1 n)
+  primeSignal : ∀ n, 0 < n → n ≤ modes → Encloses (t.primeSignal n) (LowSchur.primeSignal 1 (n : ℝ))
+  gammaDiagonal : ∀ n, 0 < n → n ≤ diagonals →
+    Encloses (t.gammaDiagonal n) (sineArchimedeanEntry 1 (gammaConstant 1 0) 0 n n)
+  primeDiagonal : ∀ n, 0 < n → n ≤ diagonals →
+    Encloses (t.primeDiagonal n)
+      (∑ q ∈ activePrimePowers 1, primeWeight q * sineShiftEntry 1 n n (Real.log q))
+
 /-- Scalar entries from the literal radius-one formulas. -/
 def physicalTables (bits terms K : ℕ) : PhysicalTables where
   boundary n := boundaryBounds bits n K
   primeSignal := primeSignalBounds bits
   gammaDiagonal := archDiagonalBounds bits terms
   primeDiagonal := primeDiagonalBounds bits
+
+theorem physicalTables_sound (bits terms : ℕ) {K modes diagonals : ℕ} (hK : 0 < K)
+    (hm : modes ≤ 2048) (hd : diagonals ≤ 257) :
+    (physicalTables bits terms K).Sound modes diagonals :=
+  ⟨fun n _ _ => boundaryBounds_sound bits n hK,
+    fun _ _ hn => primeSignalBounds_sound bits (hn.trans hm),
+    fun _ hn hn' => archDiagonalBounds_sound bits terms hn (hn'.trans hd),
+    fun _ hn hn' => primeDiagonalBounds_sound bits hn (hn'.trans (hd.trans (by decide)))⟩
 
 /-- A stored prefix together with the original function for indices beyond it. -/
 structure BoundsCache where
@@ -234,21 +259,30 @@ def physicalBoundsFrom (bits : ℕ) (t : PhysicalTables) (m n : ℕ) (β : ℚ) 
 def physicalBounds (bits terms K m n : ℕ) (β : ℚ) : Bounds :=
   physicalBoundsFrom bits (physicalTables bits terms K) m n β
 
-theorem physicalBounds_sound (bits terms : ℕ) {K m n : ℕ} (hK : 0 < K)
-    (hm : 0 < m) (hn : 0 < n) (hm' : m ≤ 2048) (hn' : n ≤ 2048)
-    (hdiag : m = n → n ≤ 257) (β : ℚ) :
-    Encloses (physicalBounds bits terms K m n β)
+theorem physicalBoundsFrom_sound (bits : ℕ) {t : PhysicalTables} {modes diagonals m n : ℕ}
+    (ht : t.Sound modes diagonals)
+    (hm : 0 < m) (hn : 0 < n) (hm' : m ≤ modes) (hn' : n ≤ modes)
+    (hdiag : m = n → n ≤ diagonals) (β : ℚ) :
+    Encloses (physicalBoundsFrom bits t m n β)
       (literalCoreEntry 1 m n - (if m = n then (β : ℝ) else 0)) := by
-  unfold physicalBounds physicalBoundsFrom physicalTables
+  unfold physicalBoundsFrom
   apply round_sound
   by_cases h : m = n
   · subst m
     simp only [ite_true, literalCoreEntry]
-    exact sub_sound (sub_sound (archDiagonalBounds_sound bits terms hn (hdiag rfl))
-      (primeDiagonalBounds_sound bits hn hn')) (point_sound β)
+    exact sub_sound (sub_sound (ht.gammaDiagonal n hn (hdiag rfl))
+      (ht.primeDiagonal n hn (hdiag rfl))) (point_sound β)
   · simp only [ite_eq_right h, literalCoreEntry, sub_zero]
-    exact sub_sound (archOffDiagonalBounds_sound bits hK hm hn h)
-      (primeOffDiagonalBounds_sound bits hm hn hm' hn' h)
+    exact sub_sound (archOffDiagonalBounds_sound hm hn h (ht.boundary m hm hm') (ht.boundary n hn hn'))
+      (primeOffDiagonalBounds_sound hm hn h (ht.primeSignal m hm hm') (ht.primeSignal n hn hn'))
+
+theorem physicalBounds_sound (bits terms : ℕ) {K m n : ℕ} (hK : 0 < K)
+    (hm : 0 < m) (hn : 0 < n) (hm' : m ≤ 2048) (hn' : n ≤ 2048)
+    (hdiag : m = n → n ≤ 257) (β : ℚ) :
+    Encloses (physicalBounds bits terms K m n β)
+      (literalCoreEntry 1 m n - (if m = n then (β : ℝ) else 0)) :=
+  physicalBoundsFrom_sound bits (physicalTables_sound bits terms hK le_rfl le_rfl)
+    hm hn hm' hn' hdiag β
 
 /-- The signed pole enclosure rounded on the same grid as the physical entries. -/
 def poleBounds (bits n : ℕ) : Bounds :=
@@ -299,9 +333,11 @@ theorem headBounds_symmetric (bits terms K : ℕ) (i j : Fin 256 ⊕ Unit) :
     headBounds bits terms K i j = headBounds bits terms K j i := by
   cases i <;> cases j <;> simp [headBounds, headBoundsFrom, min_comm, max_comm]
 
-theorem headBounds_sound (bits terms : ℕ) {K : ℕ} (hK : 0 < K)
+theorem headBoundsFrom_sound (bits : ℕ) {t : PhysicalTables} {pole : ℕ → Bounds}
+    (ht : t.Sound 512 256)
+    (hp : ∀ n, 0 < n → n ≤ 512 → Encloses (pole n) (literalPoleEntry 1 n))
     (i j : Fin 256 ⊕ Unit) :
-    Encloses (headBounds bits terms K i j)
+    Encloses (headBoundsFrom bits t pole i j)
       (shiftedBlock (borderedSourceMatrix 1 256) poleShiftMetric (-1) i j) := by
   rcases i with i | ⟨⟩ <;> rcases j with j | ⟨⟩
   · rw [shiftedBordered_physicalEntry 1 (by norm_num) i j (-1)]
@@ -309,23 +345,30 @@ theorem headBounds_sound (bits terms : ℕ) {K : ℕ} (hK : 0 < K)
     have hj := j.isLt
     have hij : (i.val + 1 = j.val + 1) ↔ i = j := by simp [Fin.ext_iff]
     by_cases h : i.val ≤ j.val
-    · simp only [headBounds, headBoundsFrom, max_eq_right h, min_eq_left h]
+    · simp only [headBoundsFrom, max_eq_right h, min_eq_left h]
       have heq : (j.val + 1 = i.val + 1) ↔ i = j := by rw [eq_comm, hij]
-      have h' := physicalBounds_sound bits terms hK (m := j.val + 1) (n := i.val + 1)
+      have h' := physicalBoundsFrom_sound bits ht (m := j.val + 1) (n := i.val + 1)
         (by omega) (by omega) (by omega) (by omega) (by omega) (-1)
       rw [literalCoreEntry_symmetric] at h'
-      simpa only [physicalBounds, heq, Rat.cast_neg, Rat.cast_one] using h'
+      simpa only [heq, Rat.cast_neg, Rat.cast_one] using h'
     · have h' : j.val ≤ i.val := by omega
-      simp only [headBounds, headBoundsFrom, max_eq_left h', min_eq_right h']
-      have hBound := physicalBounds_sound bits terms hK (m := i.val + 1) (n := j.val + 1)
+      simp only [headBoundsFrom, max_eq_left h', min_eq_right h']
+      have hBound := physicalBoundsFrom_sound bits ht (m := i.val + 1) (n := j.val + 1)
         (by omega) (by omega) (by omega) (by omega) (by omega) (-1)
-      simpa only [physicalBounds, hij, Rat.cast_neg, Rat.cast_one] using hBound
+      simpa only [hij, Rat.cast_neg, Rat.cast_one] using hBound
   · rw [shiftedBordered_poleColumn 1 i (-1)]
-    exact poleBounds_sound bits (Nat.succ_pos _)
+    exact hp (i.val + 1) (Nat.succ_pos _) (by have := i.isLt; omega)
   · rw [shiftedBordered_poleRow_one j (-1), shiftedBordered_poleColumn 1 j (-1)]
-    exact poleBounds_sound bits (Nat.succ_pos _)
+    exact hp (j.val + 1) (Nat.succ_pos _) (by have := j.isLt; omega)
   · rw [shiftedBordered_poleCorner_one 256 (-1)]
-    simpa [headBounds, headBoundsFrom] using point_sound (1 / 2)
+    simpa [headBoundsFrom] using point_sound (1 / 2)
+
+theorem headBounds_sound (bits terms : ℕ) {K : ℕ} (hK : 0 < K)
+    (i j : Fin 256 ⊕ Unit) :
+    Encloses (headBounds bits terms K i j)
+      (shiftedBlock (borderedSourceMatrix 1 256) poleShiftMetric (-1) i j) :=
+  headBoundsFrom_sound bits (physicalTables_sound bits terms hK (by decide) (by decide))
+    (fun _ hn _ => poleBounds_sound bits hn) i j
 
 /-- Assemble every finite residual row from the shared tables. -/
 def residualBoundsFrom (bits : ℕ) (t : PhysicalTables) (pole : ℕ → Bounds)
@@ -338,15 +381,23 @@ def residualBounds (bits terms K : ℕ) :
     Fin (512 - 256) → (Fin 256 ⊕ Unit) → Bounds :=
   residualBoundsFrom bits (physicalTables bits terms K) (poleBounds bits)
 
-theorem residualBounds_sound (bits terms : ℕ) {K : ℕ} (hK : 0 < K)
+theorem residualBoundsFrom_sound (bits : ℕ) {t : PhysicalTables} {pole : ℕ → Bounds}
+    (ht : t.Sound 512 256)
+    (hp : ∀ n, 0 < n → n ≤ 512 → Encloses (pole n) (literalPoleEntry 1 n))
     (i : Fin (512 - 256)) (j : Fin 256 ⊕ Unit) :
-    Encloses (residualBounds bits terms K i j) (literalResidualMatrix 1 256 512 i j) := by
+    Encloses (residualBoundsFrom bits t pole i j) (literalResidualMatrix 1 256 512 i j) := by
   rcases j with j | ⟨⟩
   · have hi := i.isLt
     have hj := j.isLt
-    have h := physicalBounds_sound bits terms hK (m := 256 + 1 + i.val) (n := j.val + 1)
+    have h := physicalBoundsFrom_sound bits ht (m := 256 + 1 + i.val) (n := j.val + 1)
       (by omega) (by omega) (by omega) (by omega) (by omega) 0
-    simpa [physicalBounds, residualBounds, residualBoundsFrom, literalResidualMatrix] using h
-  · exact poleBounds_sound bits (by omega)
+    simpa [residualBoundsFrom, literalResidualMatrix] using h
+  · exact hp (256 + 1 + i.val) (by omega) (by have := i.isLt; omega)
+
+theorem residualBounds_sound (bits terms : ℕ) {K : ℕ} (hK : 0 < K)
+    (i : Fin (512 - 256)) (j : Fin 256 ⊕ Unit) :
+    Encloses (residualBounds bits terms K i j) (literalResidualMatrix 1 256 512 i j) :=
+  residualBoundsFrom_sound bits (physicalTables_sound bits terms hK (by decide) (by decide))
+    (fun _ hn _ => poleBounds_sound bits hn) i j
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.UnitWindowEntryBounds

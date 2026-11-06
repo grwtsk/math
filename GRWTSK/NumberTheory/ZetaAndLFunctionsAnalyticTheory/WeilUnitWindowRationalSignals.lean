@@ -157,6 +157,16 @@ def boundaryLower (bits n K : ℕ) : ℚ := lowerSum bits K (boundaryTermLower n
 def boundaryUpper (bits n K : ℕ) : ℚ := upperSum bits K (boundaryTermUpper n) +
   1 / (4 * (K : ℚ) - 1)
 
+/-- The same grid sums enclose the retained terms before the positive tail is added. -/
+theorem boundaryPartial_bounds (bits n K : ℕ) :
+    (boundaryLower bits n K : ℝ) ≤ OddBoundaryObservation.boundarySignalPartial 1 n K ∧
+      OddBoundaryObservation.boundarySignalPartial 1 n K ≤
+        ((boundaryUpper bits n K - 1 / (4 * (K : ℚ) - 1) : ℚ) : ℝ) := by
+  constructor
+  · exact lowerSum_le bits K (fun j _ => (boundaryTerm_bounds n j).1)
+  · simpa only [boundaryUpper, add_sub_cancel_right, OddBoundaryObservation.boundarySignalPartial] using
+      le_upperSum bits K (fun j _ => (boundaryTerm_bounds n j).2)
+
 /-- Exact rational grid bounds on the full boundary signal, for every mode. -/
 theorem boundary_bounds (bits n : ℕ) {K : ℕ} (hK : 0 < K) :
     (boundaryLower bits n K : ℝ) ≤ boundarySignal 1 n ∧
