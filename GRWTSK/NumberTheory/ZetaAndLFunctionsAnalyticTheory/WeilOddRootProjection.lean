@@ -5,6 +5,7 @@ Authors: grwtsk contributors
 -/
 import GRWTSK.FunctionsOfAComplexVariable.OddZeroOrbitWitness
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.CharacterWeilWindowBounds
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilGammaData
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses.ArithmeticRootProjection
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.SchurObserverCertificate
 
@@ -357,32 +358,6 @@ theorem sineShiftEntry_symmetric (T : ℝ) (m n : ℕ) (r : ℝ) :
     sineShiftEntry T m n r = sineShiftEntry T n m r := by
   unfold sineShiftEntry
   ring
-
-def gammaParity (χ : DirichletCharacter ℂ q) : ℕ := by
-  classical
-  exact if χ (-1) = 1 then 0 else 1
-
-def parityKernel (a : ℕ) (r : ℝ) : ℝ :=
-  Real.exp (-((a : ℝ) + 1 / 2) * r) / (1 - Real.exp (-2 * r))
-
-/-- The genuine parity-dependent gamma kernel has the same positive majorant.
-This bound does not assert positivity of the completed arithmetic form. -/
-theorem parityKernel_le_base (a : ℕ) {r : ℝ} (hr : 0 < r) :
-    parityKernel a r ≤ parityKernel 0 r := by
-  have he : Real.exp (-2 * r) < 1 := by
-    rw [← Real.exp_zero]
-    exact Real.exp_lt_exp.mpr (by linarith)
-  unfold parityKernel
-  apply div_le_div_of_nonneg_right _ (sub_nonneg.mpr he.le)
-  apply Real.exp_le_exp.mpr
-  simp only [Nat.cast_zero, zero_add]
-  nlinarith [mul_nonneg (Nat.cast_nonneg a) hr.le]
-
-/-- Real digamma on a positive argument, expressed using the actual Gamma.
-Only a=0,1 is used in the intended source interpretation. -/
-def gammaConstant (q a : ℕ) : ℝ :=
-  Real.log ((q : ℝ) / Real.pi) +
-    deriv Real.Gamma (1 / 4 + (a : ℝ) / 2) / Real.Gamma (1 / 4 + (a : ℝ) / 2)
 
 def sineArchimedeanEntry (T c : ℝ) (a m n : ℕ) : ℝ :=
   c * (∫ t : ℝ, zeroExtendedSine T m t * zeroExtendedSine T n t) +
