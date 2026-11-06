@@ -30,6 +30,22 @@ open Filter Topology
 
 namespace GRWTSK.NumberTheory.Weil
 
+/-- Lower bounds on every window containing a fixed test give its nonnegativity. -/
+theorem nonnegative_of_cofinal_lower_bounds
+    (radius value normSq : ℝ)
+    (bounds : ∀ j : ℕ, radius ≤ (j : ℝ) + 1 → -((1 / 2 : ℝ) ^ j) * normSq ≤ value) :
+    0 ≤ value := by
+  obtain ⟨j₀, hj₀⟩ := exists_nat_ge radius
+  have hbound : ∀ᶠ j : ℕ in atTop, -((1 / 2 : ℝ) ^ j) * normSq ≤ value := by
+    refine eventually_atTop.mpr ⟨j₀, fun j hj => ?_⟩
+    have hle : (j₀ : ℝ) ≤ j := Nat.cast_le.mpr hj
+    exact bounds j (hj₀.trans (hle.trans (le_add_of_nonneg_right zero_le_one)))
+  have ht : Tendsto (fun j : ℕ => (1 / 2 : ℝ) ^ j) atTop (𝓝 0) :=
+    tendsto_pow_atTop_nhds_zero_of_abs_lt_one (by norm_num)
+  have ht' : Tendsto (fun j : ℕ => -((1 / 2 : ℝ) ^ j) * normSq) atTop (𝓝 0) := by
+    simpa only [neg_zero, zero_mul] using ht.neg.mul_const normSq
+  exact le_of_tendsto ht' hbound
+
 /-- Dyadic stage bounds give nonnegativity on every admissible test of the same source. -/
 theorem nonnegative_of_cofinal_window_certificates
     {Sector Cert : Type*} {Test : Sector → Type*}
@@ -41,16 +57,9 @@ theorem nonnegative_of_cofinal_window_certificates
     (coverage : ∀ a j, ∃ c, accepts a j c) :
     ∀ a (f : Test a), 0 ≤ value a f := by
   intro a f
-  obtain ⟨j₀, hj₀⟩ := exists_nat_ge (supportRadius a f)
-  have hbound : ∀ᶠ j : ℕ in atTop, -((1 / 2 : ℝ) ^ j) * normSq a f ≤ value a f := by
-    refine eventually_atTop.mpr ⟨j₀, fun j hj => ?_⟩
-    obtain ⟨c, hc⟩ := coverage a j
-    have hle : (j₀ : ℝ) ≤ j := Nat.cast_le.mpr hj
-    exact soundness a j c hc f (hj₀.trans (hle.trans (le_add_of_nonneg_right zero_le_one)))
-  have ht : Tendsto (fun j : ℕ => (1 / 2 : ℝ) ^ j) atTop (𝓝 0) :=
-    tendsto_pow_atTop_nhds_zero_of_abs_lt_one (by norm_num)
-  have ht' : Tendsto (fun j : ℕ => -((1 / 2 : ℝ) ^ j) * normSq a f) atTop (𝓝 0) := by
-    simpa only [neg_zero, zero_mul] using ht.neg.mul_const (normSq a f)
-  exact le_of_tendsto ht' hbound
+  apply nonnegative_of_cofinal_lower_bounds (supportRadius a f) (value a f) (normSq a f)
+  intro j hj
+  obtain ⟨c, hc⟩ := coverage a j
+  exact soundness a j c hc f hj
 
 end GRWTSK.NumberTheory.Weil
