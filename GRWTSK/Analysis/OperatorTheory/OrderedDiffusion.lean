@@ -49,7 +49,7 @@ Primary argument: induction on words and associativity.  Hostile boundary: the
 Nat successor/doubling family fails the two-step swap at zero.  Thus the ordered
 word cannot in general be replaced by a multiset or accumulated scalar time.
 
-Standard algebraic construction; novelty not assessed.  No mathematical claim
+Standard algebraic construction; novelty not assessed.\n\nCurrent source base: grwtsk/math `6ca46642074b551f160985d128ec7a5bacccad86`.  No mathematical claim
 about language-model generation is made.
 -/
 
