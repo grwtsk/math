@@ -22,15 +22,19 @@ the rightmost symbol of its finite left-hand word; each exponent is a count
 of `10` pairs, separated by a `1`.
 
 Three concrete returns are checked through a finite-step interpreter and
-an induction theorem validating its complete ordered read word. They illustrate
+an induction theorem validating its complete ordered read word. Zero and Overflow
+return at absolute head +1 (not at head 0): the exact relative return is paid
+by `translatePhysical_relative`. The earlier head-0 endpoint was incorrect. They illustrate
 one `Increment;TryHalve`, one `Zero;TryHalve`, and one
 `Overflow;Zero;TryHalve` chain. They do NOT prove the unbounded source returns
 for arbitrary exponents or finite lists: those require the source's general
 `goleft_even10`, `goleft_odd10`, `goright_10`, `goright_nonzero_steps`
 and other list-tape lemmas. No Coq compilation or Lean elaboration is claimed.
 
-The remaining universal return is an explicit premise of the port adapter.
-It is neither assigned a default value nor inferred from finite examples.
+The legacy `physicalReadPort` below expects absolute endpoint equality and is
+too strong for the Zero and Overflow examples. It remains a CONDITIONAL port;
+the head-relative consumer must use `RelativeTape` instead. The remaining
+universal return is not inferred from finite examples.
 -/
 set_option autoImplicit false
 
@@ -307,6 +311,72 @@ theorem pairedFromPhysicalReturns
   exact returnedMacro_paired (physicalReadPort fullReturn) h
 
 
+/-! ### Absolute-head translations and correct relative-return semantics -/
+
+/-- Translate both the scanning head and all 1-cells by the same amount.
+This changes absolute coordinates but no head-relative tape observation. -/
+def translatePhysical (c : PhysicalTape) (shift : ℤ) : PhysicalTape :=
+  { control := c.control
+    head := c.head + shift
+    ones := c.ones.image (fun pos => pos + shift) }
+
+/-- Same machine state and the same bit at EVERY offset from each head.
+Unlike absolute equality, this is the source's head-relative tape equality. -/
+structure RelativeTape (c d : PhysicalTape) : Prop where
+  control_eq : c.control = d.control
+  at : ∀ offset : ℤ, c.readAt offset = d.readAt offset
+
+/-- Every translation preserves the exact head-relative tape content. -/
+theorem translatePhysical_relative (c : PhysicalTape) (shift : ℤ) :
+    RelativeTape (translatePhysical c shift) c := by
+  constructor
+  · rfl
+  · intro offset
+    have hmem :
+        (c.head + shift + offset) ∈ c.ones.image (fun pos => pos + shift) ↔
+          c.head + offset ∈ c.ones := by
+      constructor
+      · intro h
+        rcases Finset.mem_image.mp h with ⟨pos, hpos, hp⟩
+        have heq : pos = c.head + offset := by omega
+        simpa [heq] using hpos
+      · intro h
+        apply Finset.mem_image.mpr
+        exact ⟨c.head + offset, h, by omega⟩
+    by_cases h : c.head + offset ∈ c.ones
+    · have ht := hmem.mpr h
+      simp [PhysicalTape.readAt, translatePhysical, ht, h]
+    · have ht : (c.head + shift + offset) ∉
+          c.ones.image (fun pos => pos + shift) := by
+        intro x
+        exact h (hmem.mp x)
+      simp [PhysicalTape.readAt, translatePhysical, ht, h]
+
+/-- Relative equality is reflexive. -/
+theorem RelativeTape.refl (c : PhysicalTape) : RelativeTape c c :=
+  ⟨rfl, fun _ => rfl⟩
+
+/-- Relative equality is symmetric. -/
+theorem RelativeTape.symm {c d : PhysicalTape}
+    (h : RelativeTape c d) : RelativeTape d c :=
+  ⟨h.control_eq.symm, fun i => (h.at i).symm⟩
+
+/-- Relative equality is transitive. -/
+theorem RelativeTape.trans {c d e : PhysicalTape}
+    (h : RelativeTape c d) (h' : RelativeTape d e) : RelativeTape c e :=
+  ⟨h.control_eq.trans h'.control_eq, fun i => (h.at i).trans (h'.at i)⟩
+
+/-- Relative equality transports all five observed cells and the control state. -/
+theorem TapeCoherent.transport
+    {r : ReadNode} {c d : PhysicalTape}
+    (h : TapeCoherent r c) (rel : RelativeTape c d) : TapeCoherent r d := by
+  refine ⟨h.control_eq.trans rel.control_eq, ?_, ?_, ?_, ?_, ?_⟩
+  · simpa only [← rel.at (-2)] using h.l2
+  · simpa only [← rel.at (-1)] using h.l1
+  · simpa only [← rel.at 0] using h.center
+  · simpa only [← rel.at 1] using h.r1
+  · simpa only [← rel.at 2] using h.r2
+
 /-! ### Concrete source-return witnesses (not universal source return) -/
 
 /-- An actual Increment and skipped TryHalve, witnessed by 6 tape reads. -/
@@ -349,12 +419,12 @@ theorem increment_small_run :
 
 theorem zero_small_run :
     runPhysical 7 (encodePhysical (1, [0])) =
-      some (zeroReadBits, encodePhysical (2, [0, 0])) := by
+      some (zeroReadBits, translatePhysical (encodePhysical (2, [0, 0])) 1) := by
   decide
 
 theorem overflow_small_run :
     runPhysical 21 (encodePhysical (1, [1])) =
-      some (overflowReadBits, encodePhysical (3, [1, 0, 0])) := by
+      some (overflowReadBits, translatePhysical (encodePhysical (3, [1, 0, 0])) 1) := by
   decide
 
 /-- A bounded instance of the Coq `Increment_toConfig` return. -/
@@ -366,21 +436,23 @@ theorem increment_small_physical :
 /-- A bounded instance of the Coq `Zero_toConfig` return. -/
 theorem zero_small_physical :
     WordPath TapeReadStep (encodePhysical (1, [0]))
-      zeroReadBits (encodePhysical (2, [0, 0])) :=
+      zeroReadBits (translatePhysical (encodePhysical (2, [0, 0])) 1) :=
   runPhysical_sound 7 _ zero_small_run
 
 /-- A bounded instance of the Coq `Overflow_toConfig` return. -/
 theorem overflow_small_physical :
     WordPath TapeReadStep (encodePhysical (1, [1]))
-      overflowReadBits (encodePhysical (3, [1, 0, 0])) :=
+      overflowReadBits (translatePhysical (encodePhysical (3, [1, 0, 0])) 1) :=
   runPhysical_sound 21 _ overflow_small_run
 
 /-- These concrete physical paths give actual paired Gray/read evidence,
 with no `fullReturn` premise and with the two distinct label types intact. -/
 theorem paired_small
     {u v : MacroState} {events : List MacroLabel} {bits : List Bool}
+    {finishPhysical : PhysicalTape}
     (macro : ReturnedMacro u events v)
-    (physical : WordPath TapeReadStep (encodePhysical u) bits (encodePhysical v)) :
+    (physical : WordPath TapeReadStep (encodePhysical u) bits finishPhysical)
+    (relative : RelativeTape finishPhysical (encodePhysical v)) :
     ∃ start finish : ReadNode,
       TapeCoherent start (encodePhysical u) ∧
       WordPath ReadEdge start bits finish ∧
@@ -388,7 +460,8 @@ theorem paired_small
       WordPath GrayEdge (grayObserve u) events (grayObserve v) := by
   obtain ⟨start, hstart⟩ := exists_initial_read (encodePhysical u)
   obtain ⟨finish, hpath, hfinish⟩ := physicalWordsToRead physical hstart
-  exact ⟨start, finish, hstart, hpath, hfinish, macro.toGrayWordPath⟩
+  exact ⟨start, finish, hstart, hpath, hfinish.transport relative,
+    macro.toGrayWordPath⟩
 
 /-- The first increment example has a genuine (not hypothesized) paired path. -/
 theorem increment_small_paired :
@@ -398,7 +471,7 @@ theorem increment_small_paired :
       TapeCoherent finish (encodePhysical (1, [1])) ∧
       WordPath GrayEdge (grayObserve (2, [0])) [.increment]
         (grayObserve (1, [1])) :=
-  paired_small incrementSmall increment_small_physical
+  paired_small incrementSmall increment_small_physical (RelativeTape.refl _)
 
 /-- The zero and overflow examples also instantiate the same physical port. -/
 theorem zero_small_paired :
@@ -408,7 +481,7 @@ theorem zero_small_paired :
       TapeCoherent finish (encodePhysical (2, [0, 0])) ∧
       WordPath GrayEdge (grayObserve (1, [0])) [.zero, .halve]
         (grayObserve (2, [0, 0])) :=
-  paired_small zeroSmall zero_small_physical
+  paired_small zeroSmall zero_small_physical (translatePhysical_relative _ 1)
 
 theorem overflow_small_paired :
     ∃ start finish : ReadNode,
@@ -417,6 +490,6 @@ theorem overflow_small_paired :
       TapeCoherent finish (encodePhysical (3, [1, 0, 0])) ∧
       WordPath GrayEdge (grayObserve (1, [1])) [.overflow, .zero, .halve]
         (grayObserve (3, [1, 0, 0])) :=
-  paired_small overflowSmall overflow_small_physical
+  paired_small overflowSmall overflow_small_physical (translatePhysical_relative _ 1)
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.Skelet17
