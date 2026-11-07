@@ -149,6 +149,90 @@ theorem arithmeticSound {s : Observations} {moments : Fin 399936 → Moments}
     exact (abs_sub_le _ ((ofMoments s moments).normalizedSecond i) _).trans
       ((add_le_add (observation_error hMag hMatch i).2.2 (hc.normalizedSecond i)).trans (by norm_num))
 
+/-- The four arithmetic comparisons at one physical row, retaining the
+reciprocal-grid reserve and the exact signed signal equality. -/
+def GridArithmeticRow (s : Observations) (moments : Fin 399936 → Moments)
+    (c : Coefficients (Fin 399936)) (i : Fin 399936) : Prop :=
+  |(ofMoments s moments).diag i - c.diag i| ≤ 9/10^8 ∧
+  |(ofMoments s moments).first i - c.first i| ≤ 9/10^8 ∧
+  (ofMoments s moments).signal i = c.signal i ∧
+  |(ofMoments s moments).normalizedSecond i - c.normalizedSecond i| ≤ 9/10^8
+
+/-- The corresponding row comparisons for the actual observation
+formula after spending the reciprocal-grid reserve. -/
+def ArithmeticRow (s : Observations) (c : Coefficients (Fin 399936))
+    (i : Fin 399936) : Prop :=
+  |(ofObservations s).diag i - c.diag i| ≤ 1/10000000 ∧
+  |(ofObservations s).first i - c.first i| ≤ 1/10000000 ∧
+  (ofObservations s).signal i = c.signal i ∧
+  |(ofObservations s).normalizedSecond i - c.normalizedSecond i| ≤ 1/10000000
+
+/-- Gridded arithmetic coverage over a declared half-open row interval. -/
+def GridArithmeticOn (s : Observations) (moments : Fin 399936 → Moments)
+    (c : Coefficients (Fin 399936)) (first stop : ℕ) : Prop :=
+  ∀ i : Fin 399936, first ≤ i.val → i.val < stop → GridArithmeticRow s moments c i
+
+/-- Observation arithmetic coverage over exactly the same declared interval. -/
+def ArithmeticOn (s : Observations) (c : Coefficients (Fin 399936))
+    (first stop : ℕ) : Prop :=
+  ∀ i : Fin 399936, first ≤ i.val → i.val < stop → ArithmeticRow s c i
+
+/-- Join checked adjacent row intervals without filling any missing row. -/
+theorem gridArithmeticOn_join {s : Observations} {moments : Fin 399936 → Moments}
+    {c : Coefficients (Fin 399936)} {first middle stop : ℕ}
+    (left : GridArithmeticOn s moments c first middle)
+    (right : GridArithmeticOn s moments c middle stop) :
+    GridArithmeticOn s moments c first stop := by
+  intro i hLo hHi
+  by_cases hMiddle : i.val < middle
+  · exact left i hLo hMiddle
+  · exact right i (by omega) hHi
+
+/-- Return one checked row to the same analytic observation formula.
+This uses the same signed moment identity and magnitude premise as
+`arithmeticSound`; it is a local form of that argument, not an
+independent analytic estimate. The literal observation-source
+enclosures and Schur positivity are still separate obligations. -/
+theorem arithmeticRow {s : Observations} {moments : Fin 399936 → Moments}
+    {c : Coefficients (Fin 399936)}
+    (hMag : ∀ n, 65 ≤ n → n ≤ 1200000 → |s.signal n| ≤ 9)
+    (hMatch : MomentsMatch s moments) (i : Fin 399936)
+    (hc : GridArithmeticRow s moments c i) : ArithmeticRow s c i := by
+  obtain ⟨hd, hf, hu, hg⟩ := hc
+  obtain ⟨hd', hf', hg'⟩ := observation_error hMag hMatch i
+  refine ⟨?_, ?_, hu, ?_⟩
+  · exact (abs_sub_le _ ((ofMoments s moments).diag i) _).trans
+      ((add_le_add hd' hd).trans (by norm_num))
+  · exact (abs_sub_le _ ((ofMoments s moments).first i) _).trans
+      ((add_le_add hf' hf).trans (by norm_num))
+  · exact (abs_sub_le _ ((ofMoments s moments).normalizedSecond i) _).trans
+      ((add_le_add hg' hg).trans (by norm_num))
+
+/-- Spend the covariance reserve only on the rows already covered.
+The hypotheses do not extend the row interval. -/
+theorem arithmeticOn_of_grid {s : Observations} {moments : Fin 399936 → Moments}
+    {c : Coefficients (Fin 399936)} {first stop : ℕ}
+    (hMag : ∀ n, 65 ≤ n → n ≤ 1200000 → |s.signal n| ≤ 9)
+    (hMatch : MomentsMatch s moments) (hc : GridArithmeticOn s moments c first stop) :
+    ArithmeticOn s c first stop :=
+  fun i hLo hHi => arithmeticRow hMag hMatch i (hc i hLo hHi)
+
+/-- Only complete row coverage supplies the whole gridded arithmetic premise. -/
+theorem gridArithmeticSound_of_full {s : Observations} {moments : Fin 399936 → Moments}
+    {c : Coefficients (Fin 399936)} (hc : GridArithmeticOn s moments c 0 399936) :
+    GridArithmeticSound s moments c := by
+  have row (i : Fin 399936) := hc i (Nat.zero_le _) i.isLt
+  exact ⟨fun i => (row i).1, fun i => (row i).2.1,
+    fun i => (row i).2.2.1, fun i => (row i).2.2.2⟩
+
+/-- Complete interval coverage returns the existing arithmetic premise
+without replacing a finite prefix by all rows. -/
+theorem arithmeticSound_of_full {s : Observations} {c : Coefficients (Fin 399936)}
+    (hc : ArithmeticOn s c 0 399936) : ArithmeticSound s c := by
+  have row (i : Fin 399936) := hc i (Nat.zero_le _) i.isLt
+  exact ⟨fun i => (row i).1, fun i => (row i).2.1,
+    fun i => (row i).2.2.1, fun i => (row i).2.2.2⟩
+
 /-- Apply the gridded arithmetic return to the literal seed comparison. -/
 theorem seedComparison_of_grid {s : Observations} {moments : Fin 399936 → Moments}
     {c : Coefficients (Fin 399936)} (hs : ObservationsSound s)
