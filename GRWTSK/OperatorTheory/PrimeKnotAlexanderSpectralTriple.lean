@@ -170,6 +170,15 @@ def dirac (s : Source Prime Knot) (ξ : Hilbert Prime Knot) :
     Hilbert Prime Knot := fun i =>
   ∑ j : Vertex Prime Knot, (edgeWeight s i j : ℂ) * ξ j
 
+/-- A confining diagonal lift of the same incidence operator. This is
+the exact finite operator built by the Noeaaeue source witness when `code`
+is its sequential vertex index. Keeping the diagonal separate is essential:
+its commutator with the pointwise representation is zero, but its finite
+spectrum differs from that of the off-diagonal incidence operator. -/
+def confinedDirac (s : Source Prime Knot) (code : Vertex Prime Knot → ℕ)
+    (ξ : Hilbert Prime Knot) : Hilbert Prime Knot := fun i =>
+  ((code i + 1 : ℕ) : ℂ) * ξ i + dirac s ξ i
+
 /-- The real restriction of the same literal incidence matrix. -/
 def realDirac (s : Source Prime Knot) (ξ : Vertex Prime Knot → ℝ) :
     Vertex Prime Knot → ℝ := fun i =>
@@ -212,6 +221,17 @@ def commutator (s : Source Prime Knot) (a : Algebra Prime Knot)
     (ξ : Hilbert Prime Knot) : Hilbert Prime Knot :=
   fun i => dirac s (act a ξ) i - act a (dirac s ξ) i
 
+/-- The confining diagonal has no commutator price. Hence the exact source
+finite matrix D0+B has the SAME off-diagonal commutator as B alone. -/
+theorem confinedCommutator_eq (s : Source Prime Knot)
+    (code : Vertex Prime Knot → ℕ) (a : Algebra Prime Knot)
+    (ξ : Hilbert Prime Knot) :
+    (fun i => confinedDirac s code (act a ξ) i -
+      act a (confinedDirac s code ξ) i) = commutator s a ξ := by
+  funext i
+  simp only [confinedDirac, commutator, act]
+  ring
+
 /-- Explicit commutator matrix entries; no unproved knot-classification
 statement is concealed in the formula. -/
 theorem commutator_formula (s : Source Prime Knot)
@@ -246,6 +266,14 @@ theorem linked_iff_dirac_entry_ne_zero (s : Source Prime Knot)
   rw [dirac_delta]
   classical
   simp [edgeWeight]
+
+/-- The finite implemented D0+B retains the same polynomial/knot
+cross-entry: the confining diagonal vanishes across the two distinct tags. -/
+theorem confinedDirac_cross_entry (s : Source Prime Knot)
+    (code : Vertex Prime Knot → ℕ) (p : Prime) (k : Knot) :
+    confinedDirac s code (delta (Sum.inr k)) (Sum.inl p) =
+      (edgeWeight s (Sum.inl p) (Sum.inr k) : ℂ) := by
+  simp [confinedDirac, delta, dirac_delta]
 
 /-- The noncommutative readout of the chosen finite point projections has
 exactly the source edge and the difference of endpoint labels. -/
