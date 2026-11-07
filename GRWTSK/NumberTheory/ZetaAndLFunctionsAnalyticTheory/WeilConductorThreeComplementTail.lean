@@ -47,7 +47,7 @@ Euler source. The original arithmetic form is
 integral of (A-P_arith)|F|^2/(2*pi). Positive angular `paperFT` has the
 same real-axis squared norm as F; the declarations below reuse it.
 
-Let Bk be the symmetric closed radius-100 bands about +/-ck, where
+Let Bk be the symmetric closed radius-100 bands about plus or minus ck, where
 c0=5941908399/16, c1=7870097212203/10000, c2=371368841677/1000.
 Their unions are disjoint and contained in |xi|<10^9. The requested
 complement is J_(B0^c)(m), where J_D(a)=integral_D a|F|^2/(2*pi).
