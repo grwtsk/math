@@ -52,9 +52,11 @@ does contract the SAME mass. For any semibounded self-adjoint source
 operator A and r in Dom(A), writing v=P_r^perp g on its FORM domain,
   |q_A(v)-q_A(g)| <= 2 (||A r||/||r||) ||g||².
 Indeed g=v+c e with e=r/||r||, v perpendicular to e. The form identity
-  q_A(g)-q_A(v)=<A(c e),g>+<A v,c e>
-and self-adjointness move both pairings onto Ae. Each is bounded by
-(||Ar||/||r||)||g||². No source positivity or spectral gap is used.
+  q_A(g)-q_A(v)=<A(c e),g>+<v,A(c e)>.
+The second term uses the form-representation property with e in Dom(A),
+NOT an undefined operator A(v) on a merely form-domain vector v.
+Each pairing is bounded by (||Ar||/||r||)||g||².
+No source positivity or spectral gap is used.
 
 On the global weighted zeta carrier the self-adjoint bounded-perturbation
 operator is
