@@ -1,0 +1,95 @@
+/-
+Copyright (c) 2026 grwtsk contributors.
+Released under the MIT license as described in the repository LICENSE.
+Authors: grwtsk contributors
+-/
+import Mathlib.Data.Int.Basic
+
+/-!
+# Integer decisions for the radius-two observed seed
+
+A common positive denominator clears the archived price, signal,
+covariance and compact seed denominators. At a positive mode, the
+first generator uses that denominator, and the diagonal and normalized
+second generator also use the mode number. Each bound is evaluated by
+two signed integer comparisons.
+
+The companion equivalence theorem checks these coefficients against
+the rational seed formula. Concrete archive and moment binding are
+separate. Independent mathematical review is pending.
+-/
+
+set_option autoImplicit false
+
+namespace GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoSeedIntegerDecision
+
+structure Input where
+  mode : Nat
+  signal : Int
+  boundary : Int
+  core : Int
+  toeplitz : Fin 2 → Fin 3 → Int
+  hankel : Fin 2 → Fin 3 → Int
+
+structure Raw where
+  diag : Int
+  firstPrimal : Int
+  first : Int
+  signal : Int
+  second : Int
+
+def common : ℤ := 40432011527138461699731418589010913102456106137786521419852804139782819536920724300131009695620507997422442778940151325855970786506066892381982768123953416307518026183871767631416524800000000000000000000000
+
+def cSignal : ℤ := 71821680206942171941853236541339301450747900435421160771647926672370267086124194655615954899766443015747162055611154808786925916496931585410093333841447489454022747750400000000000000000000000
+def cCovDiag : ℤ := 1134962252855417232591267064392482286733104728312068069370944356493561696585374907641078145894047907914550393563721691399417111711524440746205747127532958984375
+def cAlphaDiag : ℤ := 178384973228214937476502556643220214162464886077012746472746148455392267125660840661994584278120188371780909428780840659103657377922266274273003831296000000000000000000000
+def cDiagSq : ℤ := 99169374338725604871322708851463885935382693802929419746942445308498246658862984183085856453569528666914178350248717446043988410468288645897043315093294051190678372539293670014278822789120000000
+def cBoundary : ℤ := 17022477321969948487674241547577563608072693988488115237518744323724758577363673591229765340559585303590117217907880250452702694609940520027813629508200310602230890410598534742016
+def cRawDiag : ℤ := 36772700265954392034228857109165722342782925022935634315083738456253576748095587663675368908680418824062546972472911262098906069246428971729967786926821114600459646848204800000000000000000000000
+def cMargin : ℤ := 4043201152713846169973141858901091310245610613778652141985280413978281953692072430013100969562050799742244277894015132585597078650606689238198276812395341630751802618387176763141652480000000000000000000000
+def cCovFirst : ℤ := 2269924505710834465182534128784964573466209456624136138741888712987123393170749815282156291788095815829100787127443382798834223423048881492411494255065917968750
+def cDelta : ℤ := 893153082574134943412720230944613852157360902109580906514540314561881337887770818234523280949335002695986502693740818468710867613459340638122563920545439832799800823130085969100800000000000
+def cCovSecond : ℤ := 1277853894759808927115330814415375572606118655070908616559575774992954221236705060511403512376918657086315168504247368183002161024539311291667190906880000000000000000000000000
+def cAlphaSecond : ℤ := 100421812369885587167020744604780902475877936850421086090111754295819724672992442191856760206608561263628582292521189609601406482797723133962658464543410919258980352000000000000000000000
+def cRawSecond : ℤ := 18827622536168648721525174839892849839504857611743044769322874089601831295024940883801788881244374437920024049906130566194639907454171633525743506906532410675435339186280857600000000000000000000000
+
+def covarianceFirst (a : Input) : Int :=
+  a.toeplitz 0 2 + a.hankel 0 2 + a.signal * (a.hankel 0 1 - a.toeplitz 0 1)
+
+def covarianceSecond (a : Input) : Int :=
+  a.toeplitz 0 1 - a.hankel 0 1 - a.signal * (a.toeplitz 0 0 + a.hankel 0 0)
+
+def covarianceDiagonal (a : Input) : Int :=
+  let u := a.signal
+  (a.mode : Int) * (a.toeplitz 1 2 + a.hankel 1 2 + 2*u*(a.hankel 1 1 - a.toeplitz 1 1) +
+    u*u*(a.toeplitz 1 0 + a.hankel 1 0)) +
+  (a.toeplitz 0 2 + a.hankel 0 2 - u*u*(a.toeplitz 0 0 + a.hankel 0 0))
+
+def diagNumerator (a : Input) (v : Raw) : Int :=
+  let m : Int := a.mode
+  m * (cSignal*a.core - cAlphaDiag*a.signal*a.signal - cDiagSq*m*m -
+    cBoundary*a.boundary*m*m - cRawDiag*v.diag - cMargin) -
+    cCovDiag*covarianceDiagonal a
+
+def firstNumerator (a : Input) (v : Raw) : Int :=
+  let m : Int := a.mode
+  cSignal*(a.signal-v.first) - cCovFirst*covarianceFirst a + cDelta*m*m*m
+
+def secondNumerator (a : Input) (v : Raw) : Int :=
+  let m : Int := a.mode
+  m*(cCovSecond*covarianceSecond a + cAlphaSecond*m*a.signal) - cRawSecond*v.second
+
+def Fits (d n : Int) : Prop := -9*d ≤ n*100000000 ∧ n*100000000 ≤ 9*d
+
+instance (d n : Int) : Decidable (Fits d n) := by unfold Fits; infer_instance
+
+/-- Division-free checks at the archived grid allowance. -/
+def Checked (a : Input) (v : Raw) : Prop :=
+  Fits (common*a.mode) (diagNumerator a v) ∧
+  Fits common (firstNumerator a v) ∧
+  a.signal = v.signal ∧
+  Fits (common*a.mode) (secondNumerator a v)
+
+instance (a : Input) (v : Raw) : Decidable (Checked a v) := by unfold Checked; infer_instance
+
+end GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoSeedIntegerDecision
