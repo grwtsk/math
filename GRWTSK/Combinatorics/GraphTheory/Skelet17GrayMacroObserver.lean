@@ -162,7 +162,7 @@ theorem macroEdge_to_gray
   cases h with
   | incrementEven x xs y z zs hx hnz he hy =>
       simp only [GrayEdge, grayObserve, List.sum_append,
-        List.sum_cons, List.sum_nil]
+        List.sum_cons, List.sum_nil, Prod.mk.injEq]
       omega
   | incrementOdd x y xs hx =>
       simp only [GrayEdge, grayObserve, List.sum_cons]
@@ -173,12 +173,12 @@ theorem macroEdge_to_gray
   | zero x xs y hx hnz he hy =>
       have hs : xs.sum % 2 = 0 := sum_even_mod_two xs he
       simp only [GrayEdge, grayObserve, List.sum_append,
-        List.sum_cons, List.sum_nil]
+        List.sum_cons, List.sum_nil, Prod.mk.injEq]
       omega
   | overflow x xs y hx hnz he hy =>
       have hs : xs.sum % 2 = 0 := sum_even_mod_two xs he
       simp only [GrayEdge, grayObserve, List.sum_append,
-        List.sum_cons, List.sum_nil]
+        List.sum_cons, List.sum_nil, Prod.mk.injEq]
       omega
 
 /-- Preserve every ordered macro label while projecting a source path. -/
