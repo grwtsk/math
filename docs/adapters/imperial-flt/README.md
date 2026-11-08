@@ -32,7 +32,7 @@ Git checkout equals a locally patched dependency.
 Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
 See [catalogue.json](catalogue.json) for every library, source module/blob, config and dependency
-pin, and the canonical paper ledger for evidence scope and unresolved bridges.
+pin, and the historical paper ledger for evidence scope and unresolved bridges.
 
 <a id="imperial-frey-denominator-20261030"></a>
 ### Reduced Frey denominator prime-power factors
@@ -41,6 +41,6 @@ Local attribution: grwtsk contributors. New [source](https://github.com/grwtsk/m
 
 The two roots in `GRWTSK.NumberTheory.ArithmeticAlgebraicGeometryDiophantineGeometry.FreyPrimePowerDenominator` are `exponent_dvd_denominator_order` and `prime_power_factor_of_denominator_prime`. Full signed FreyPackage assumptions and prime q>2 dividing a*b*c are retained; the second ALSO requires q dividing the actual reduced denominator. Canonical Rat coprimality transfers signed valuation divisibility to denominator-order divisibility, then supplies positive k with `den(j)=q^p*k` and `q^p≤den(j)`. No package, denominator observation, root curve equivalence or Fermat counterexample is constructed. The existing root denominator/height consumer needs an explicit curve/version comparison, still UNSUPPLIED.
 
-Native Lean4.35.0/Mathlib56a005855ea17e0b0958f73ec801ae140b0a1679 stays isolated. All native facets NOT_RUN, independent checker UNSUPPLIED; source/API reviews are not acceptance. [Target](../../mathematics/_verification/targets/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/imperial-frey-denominator-20261030.json) and [canonical ledger](../../mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#imperial-frey-denominator-20261030) preserve exact types, package fields,11locked entries, bylines and excluded broad FLT assumptions. No conductor/radical-height/ABC estimate or full FLT proof is supplied.
+Native Lean4.35.0/Mathlib56a005855ea17e0b0958f73ec801ae140b0a1679 stays isolated. All native facets NOT_RUN, independent checker UNSUPPLIED; source/API reviews are not acceptance. Target (historical; target removed) and historical ledger (historical; target removed) preserve exact types, package fields,11locked entries, bylines and excluded broad FLT assumptions. No conductor/radical-height/ABC estimate or full FLT proof is supplied.
 
 [Package source references](references.md) retain the selected sources, hypotheses, licensing boundaries, and unresolved correspondence at their recorded scope.

@@ -19,4 +19,4 @@ audit was executed. All formal assurance is **NOT_RUN**. The declared build
 target is `GRWTSK`; no executable, scheduler or workflow is included.
 
 The mathematical consumer and unresolved spectral/convergence obligations
-are in [the Connes coercivity/Mellin research note](../../mathematics/_support/research/connes-coercivity-mellin-2026-11-04.md).
+are in the Connes coercivity/Mellin research note (historical; target removed).

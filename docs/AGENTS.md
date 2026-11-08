@@ -7,7 +7,7 @@ to this directory unless stated otherwise.
 ## Subject placement and navigation
 
 - Use the official MSC2020 heading projection for mathematical subject folders in
-  `mathematics/`, its verification subject subtrees and `taxonomy/subjects/`.
+  `taxonomy/subjects/`.
   Put administrative and reference material in the existing support areas.
 - Bind current document navigation to
   [the documentation layout](taxonomy/msc2020/documentation-layout-v1.json).
@@ -26,7 +26,7 @@ to this directory unless stated otherwise.
 - Authored subject-concept UUIDs identify authored records. Folder placement does
   not equate those records with official MSC concepts or establish semantic review
   or proof acceptance.
-- Apply the [proof-comparison disposition](mathematics/_support/reference/proof-comparison-disposition.md)
+- Apply the root repository proof-comparison requirements
   when authoring or revising proof claims. Keep analytical assessment, source
   publication and formal verification statuses separate, as required by the root
   instructions. Source publication does not establish mathematical acceptance.
@@ -38,7 +38,7 @@ to this directory unless stated otherwise.
 - Keep edits scoped to the requested documentation work. Lean changes do not require
   articles, proof summaries, generated navigation or a literature-register update.
   For a deliberately maintained result article, follow the
-  [article standard](mathematics/_support/reference/result-article-standard.md)
+  article standard (removed historical reference)
   subject to the root instructions; do not generate an article scaffold by default.
 - Check edited local links and referenced layout entries against their current
   targets. Report what was checked and any unresolved targets at navigation scope;

@@ -1245925,25 +1245925,6 @@
       "publication_scope": "RELOCATED_DRAFT_NOT_PUBLISHED"
     },
     {
-      "old_path": "GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239ExternalBridge.md",
-      "path": "docs/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239ExternalBridge.md",
-      "source_sha256": "3b6b3b9fc5d42709b6542c813ad2c5f329c4a3a731fb86760d8cc610097dc3c3",
-      "input_blob": "f6876b14bb700697b5fbf1662707a0b234189f88",
-      "source_kind": "source_support",
-      "msc_code": "11Gxx",
-      "msc_label": "Arithmetic algebraic geometry (Diophantine geometry)",
-      "placement_basis": "BROAD_SOURCE_CONTEXT",
-      "placement_witness": "NumberTheory/ArithmeticGeometry",
-      "semantic_review": "NOT_CLAIMED",
-      "verification": "NOT_RUN",
-      "deduplicated": false,
-      "input_state": "COMMITTED_BYTES",
-      "source_git_blob": "f6876b14bb700697b5fbf1662707a0b234189f88",
-      "target_sha256": "3b6b3b9fc5d42709b6542c813ad2c5f329c4a3a731fb86760d8cc610097dc3c3",
-      "target_git_blob": "f6876b14bb700697b5fbf1662707a0b234189f88",
-      "publication_scope": "PREEXISTING_COMMITTED_SOURCE"
-    },
-    {
       "old_path": "GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239FiniteAffinePointCount.lean",
       "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239FiniteAffinePointCount.lean",
       "source_sha256": "08c713cc0037af27f86adaeb5b11d2764b30eaea213e1e8e9317839d61908ccb",
@@ -1245959,25 +1245940,6 @@
       "input_state": "UNTRACKED_OR_INDEX_ADDED",
       "target_sha256": "083fc7fc9ca134c5fa08b8dcb06c27517c383dbae28212e05cf9144210e85cdb",
       "publication_scope": "RELOCATED_DRAFT_NOT_PUBLISHED"
-    },
-    {
-      "old_path": "GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239FiniteCertificate.md",
-      "path": "docs/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239FiniteCertificate.md",
-      "source_sha256": "a36bfcd97f16d2487cb228c87bff5141b02a8ae33f18fd41080070ece1f72096",
-      "input_blob": "cdfc4bd9621270dc423373f44ed96b4121094860",
-      "source_kind": "source_support",
-      "msc_code": "11Gxx",
-      "msc_label": "Arithmetic algebraic geometry (Diophantine geometry)",
-      "placement_basis": "BROAD_SOURCE_CONTEXT",
-      "placement_witness": "NumberTheory/ArithmeticGeometry",
-      "semantic_review": "NOT_CLAIMED",
-      "verification": "NOT_RUN",
-      "deduplicated": false,
-      "input_state": "COMMITTED_BYTES",
-      "source_git_blob": "cdfc4bd9621270dc423373f44ed96b4121094860",
-      "target_sha256": "a36bfcd97f16d2487cb228c87bff5141b02a8ae33f18fd41080070ece1f72096",
-      "target_git_blob": "cdfc4bd9621270dc423373f44ed96b4121094860",
-      "publication_scope": "PREEXISTING_COMMITTED_SOURCE"
     },
     {
       "old_path": "GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239FiniteCharacterMatrix.lean",
@@ -1246015,25 +1245977,6 @@
       "source_git_blob": "fbdaac7f5e29375f211a4a437756f9f0fe87ee8d",
       "target_sha256": "9a9498129a6ffd1cad3015f55499cc44f3a6723c39f63c75fd733a1df564b9c4",
       "target_git_blob": "38abcd476031a4294de1f7f510c29dfb097ad684",
-      "publication_scope": "PREEXISTING_COMMITTED_SOURCE"
-    },
-    {
-      "old_path": "GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239FiniteSourceLocalization.md",
-      "path": "docs/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239FiniteSourceLocalization.md",
-      "source_sha256": "eefe1c7185504af2e3b2e3d2e2324cd16ef308ef06c9da9ddae6554893428f89",
-      "input_blob": "99e70f6ea565c83007c0f1e8ac557f069790169a",
-      "source_kind": "source_support",
-      "msc_code": "11Gxx",
-      "msc_label": "Arithmetic algebraic geometry (Diophantine geometry)",
-      "placement_basis": "BROAD_SOURCE_CONTEXT",
-      "placement_witness": "NumberTheory/ArithmeticGeometry",
-      "semantic_review": "NOT_CLAIMED",
-      "verification": "NOT_RUN",
-      "deduplicated": false,
-      "input_state": "COMMITTED_BYTES",
-      "source_git_blob": "99e70f6ea565c83007c0f1e8ac557f069790169a",
-      "target_sha256": "eefe1c7185504af2e3b2e3d2e2324cd16ef308ef06c9da9ddae6554893428f89",
-      "target_git_blob": "99e70f6ea565c83007c0f1e8ac557f069790169a",
       "publication_scope": "PREEXISTING_COMMITTED_SOURCE"
     },
     {
@@ -1246514,25 +1246457,6 @@
       "source_git_blob": "90f1d3a58ee3e654d0b1b43d7a1d3eee4b575086",
       "target_sha256": "7f599dd99bf59ae5ad305434220050eaee5bafada92d58232ed28b5479180eb0",
       "target_git_blob": "4fb1dbbe828988b34142bfc1893bcdcb631fb0fd",
-      "publication_scope": "PREEXISTING_COMMITTED_SOURCE"
-    },
-    {
-      "old_path": "GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239LocalSquareClass.md",
-      "path": "docs/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239LocalSquareClass.md",
-      "source_sha256": "75ed87171401664f22c73bfd0a0a048117d9211ac017d999a33ce6b277f393de",
-      "input_blob": "225d1e7ec624638b3c209f38126f8ddc02103287",
-      "source_kind": "source_support",
-      "msc_code": "11Gxx",
-      "msc_label": "Arithmetic algebraic geometry (Diophantine geometry)",
-      "placement_basis": "BROAD_SOURCE_CONTEXT",
-      "placement_witness": "NumberTheory/ArithmeticGeometry",
-      "semantic_review": "NOT_CLAIMED",
-      "verification": "NOT_RUN",
-      "deduplicated": false,
-      "input_state": "COMMITTED_BYTES",
-      "source_git_blob": "225d1e7ec624638b3c209f38126f8ddc02103287",
-      "target_sha256": "75ed87171401664f22c73bfd0a0a048117d9211ac017d999a33ce6b277f393de",
-      "target_git_blob": "225d1e7ec624638b3c209f38126f8ddc02103287",
       "publication_scope": "PREEXISTING_COMMITTED_SOURCE"
     },
     {

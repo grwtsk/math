@@ -4,13 +4,13 @@ Local attribution: **grwtsk contributors**.
 
 Questions, mathematical explanations, rigorous counterexamples, source corrections, proof candidates, and checked formalizations are welcome. **Reading, education and ordinary discussion do not require Lean or repository submission.** When a contribution is authorized, return a durable, source-bound result rather than an unattached chat transcript. Generated documentation is optional, not a condition of contribution.
 
-Begin with the [mathematics index](docs/mathematics/index.md), [formalization guide](docs/mathematics/_support/start/formalization-contributions.md), [proof-comparison standard](docs/mathematics/_support/reference/proof-comparison-disposition.md), and [repository instructions](AGENTS.md).
+Begin with the [Lean sources](GRWTSK/), [subject guides](docs/taxonomy/subjects/index.md), and [repository instructions](AGENTS.md).
 
 ## Pick the right route
 
 | Purpose | Route |
 | --- | --- |
-| Ask, read, teach or explore | [Mathematical subjects](docs/mathematics/index.md); no submission required |
+| Ask, read, teach or explore | [Mathematical subjects](docs/taxonomy/subjects/index.md); no submission required |
 | Report a counterexample or missing analytical bridge | [Open the mathematical obstruction form](https://github.com/grwtsk/math/issues/new?template=01-obstruction.yml) |
 | Propose a formal statement or source correspondence | [Open the formalization form](https://github.com/grwtsk/math/issues/new?template=02-formalization.yml) |
 | Request exact compilation, kernel or axiom evidence | [Record a source-bound verification target](https://github.com/grwtsk/math/issues/new?template=03-verification.yml); this does **not** dispatch execution |
@@ -24,7 +24,7 @@ A negative result and an unresolved premise can be useful contributions. State t
 2. **Preserve the argument.** Explain the principal proof, intended application, comparison with the strongest relevant original mathematics, error terms, supports, signs, limits and counterexamples. Record missing transfers; distinguish independent proof paths from shared premises. A second proof is useful when available, not mandatory.
 3. **Place by mathematics.** Use the official [MSC2020 layout](docs/taxonomy/msc2020/source-layout-v1.json) for [`GRWTSK/`](GRWTSK/) source. Link existing relevant documentation when useful; do not create matching prose documents merely because a source was added. Maintain existing namespaces and provenance. External providers use [isolated adapters](docs/adapters/README.md). Taxonomy relocations go to [#1425](https://github.com/grwtsk/math/issues/1425) pending coordinated authorization.
 4. **Keep evidence orthogonal.** Record actual source inspection, Lean compilation, fresh kernel checking, transitive axiom audit, mathematical comparison and historical novelty at the precise revision checked. Use `NOT_RUN` for an unexecuted check, not an inferred pass. Neither a previous receipt nor a Git commit certifies changed bytes.
-5. **Preserve source and permissions.** Review the complete diff, concurrent changes, upstream licenses and original bylines. Do not casually modify toolchain versions, umbrella imports or source paths. Paper-derived work cites the exact source and theorem in the source or associated issue/PR. The [literature register](docs/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md) and [article standard](docs/mathematics/_support/reference/result-article-standard.md) apply only to separately requested authored documentation.
+5. **Preserve source and permissions.** Review the complete diff, concurrent changes, upstream licenses and original bylines. Do not casually modify toolchain versions, umbrella imports or source paths. Paper-derived work cites the exact source and theorem in the source or associated issue/PR.
 
 ## Optional local reading and checking
 
@@ -33,7 +33,7 @@ This large repository supports a Git partial clone for *browsing* a subject:
 ```sh
 git clone --filter=blob:none --sparse https://github.com/grwtsk/math.git
 cd math
-git sparse-checkout set GRWTSK/NumberTheory docs/mathematics docs/taxonomy
+git sparse-checkout set GRWTSK/NumberTheory docs/taxonomy
 git rev-parse HEAD
 git show HEAD:GRWTSK/NumberTheory/FirstPrime.lean
 ```

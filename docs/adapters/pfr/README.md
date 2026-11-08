@@ -32,7 +32,7 @@ Git checkout equals a locally patched dependency.
 Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
 See [catalogue.json](catalogue.json) for every library, source module/blob, config and dependency
-pin, and the canonical paper ledger for evidence scope and unresolved bridges.
+pin, and the historical paper ledger for evidence scope and unresolved bridges.
 
 ## Original-source energy return
 
@@ -40,7 +40,7 @@ The source candidate `GRWTSK.Combinatorics.PfrOriginalEnergyTransport`
 returns the selected PFR dense-slice energy bound to the original input
 `Finset A` through an injective quadruple translation. The quantitative
 `2*K^9` and source/H/B constraints remain unchanged. The
-[mathematical review](../../mathematics/_support/reviews/pfr-original-energy-transport-2026-11-02.md)
+mathematical review (historical; target removed)
 records the exact one-sided transport, hostile cases and NOT_RUN native
 verification. Keep this module in the isolated PFR package, not the
 root Lean 4.34.1 default target.
@@ -48,7 +48,7 @@ root Lean 4.34.1 default target.
 ## Consumer wave 2026-10-29
 
 Current source locator for this recorded consumer wave: [`SmallDoublingDifferenceCover.lean`](../../../GRWTSK/Combinatorics/SmallDoublingDifferenceCover.lean). See
-[consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
+[consumer provenance](../consumer-integrations.json) and the historical paper ledger.
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.
 
@@ -59,6 +59,6 @@ pinned finite PFR cover: nonempty B, |H|<=|A|<2*K^9*|B|, B-B subset H, and
 |B|^2*|B|^2<=|H|*Finset.addEnergy B B. Coset overlap and infinite ambient groups
 are allowed; the same B/H are used throughout. It consumes the existing Mathlib
 energy API without copying root definitions. Source commit 9a913f5c7e184d75e8701096c5c5a59b144c2793.
-See [references](references.md), central consumer map and the canonical ledger.
-The static target is [`docs/mathematics/_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.json`](../../mathematics/_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.json) with adjacent profile/TOML. All native
+See [references](references.md), central consumer map and the historical ledger.
+The static target is historical pfr-dense-submodule-slice-20261029.json (historical; target removed) with adjacent profile/TOML. All native
 compilation/replay/axiom/type checks remain NOT_RUN; root versions are unchanged.

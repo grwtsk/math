@@ -8,8 +8,8 @@ New source commit 63ea24924f18f87132e153ef59fb02c0e9aa314b, blob cd61fa5ac0d35d0
 separation into external closed-ball covering cost equal to the finite sample's
 cardinality when 2*epsilon<sqrt2. Arbitrary cover centers, empty samples and zero
 radius are included; no boundary-radius/density/algorithmic statement is supplied.
-[Canonical ledger](../../mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#e8-finite-covering-consumer-20261029)
-and [target](../../mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.json) preserve exact source/API/type/version scopes.
+Historical ledger (historical; target removed)
+and target (historical; target removed) preserve exact source/API/type/version scopes.
 All native checks remain NOT_RUN; root/arithmetic mass transports remain unsupplied.
 
 <a id="e8-cover-matching-20261029"></a>
@@ -19,4 +19,4 @@ Local attribution: grwtsk contributors. New source `6336a394397cca8587c4b0ba713b
 
 The Basic.E8 bound by Bhavik Mehta/Gareth Ma and the public Mathlib covering/finite-cardinality APIs retain Apache-2.0 attribution. Sphere `77cf0a0c104f2e31501eab04d88bbc068d61c169`, Basic.E8 `c369209e9ae2a7e358e2b312cd251bf9caf20cd2`; exact native Lean4.35.0-rc4/Mathlib `1f414401f69059aa7eead47b53ee40bd38455eeb` stays isolated. The actual covering-number consumer gains point-center witnesses behind the previous cardinal obstruction; no root-version port, nearest-center algorithm, arithmetic mass map or optimal-density theorem is supplied. MainTheorem remains excluded. All compilation/Comparator/interface/discovery/fresh replay/full axiom facets are NOT_RUN; independent checker UNSUPPLIED. Source/API/import/type review is not acceptance. Historical scopes remain unchanged.
 
-[Canonical ledger](../../mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#e8-cover-matching-20261029) and [exact source-bound target](../../mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-cover-matching-20261029.json) retain both literal expected types, source identities and remaining obligations.
+Historical ledger (historical; target removed) and exact source-bound target (historical; target removed) retain both literal expected types, source identities and remaining obligations.

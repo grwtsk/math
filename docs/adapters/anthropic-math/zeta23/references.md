@@ -2,7 +2,7 @@
 
 Local attribution: grwtsk contributors. Anthropic/Claude formalization attribution,
 Apache-2.0 and the modified PNT+ vendor notices remain in the pinned dependency
-and UPSTREAM-NOTICE. The [canonical paper ledger](../../../mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#anthropic-primitive-zero-readouts-20261029)
+and UPSTREAM-NOTICE. The historical paper ledger (historical; target removed)
 retains Alpöge--Furman2026 version 2 separately from the source-internal local
 Jensen count endpoint used here.
 
@@ -11,6 +11,6 @@ envelopes from one A before all moduli/families and normalized l1-unit-ball boun
 Primitive characters at common q>1, signed(t,t+1] windows and multiplicities are
 preserved. Windows meeting 0 can include real zeros. No RH/Mertens/Liouville
 transport or critical-line proportion improvement is supplied.
-[Exact target](../../../mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/anthropic-primitive-zero-readouts-20261029.json) and adjacent profile/TOML require both roots,
+Exact target (historical; target removed) and adjacent profile/TOML require both roots,
 complete compiler-owned audit and literal expected types. Native 4.33.0-rc2 stays
 isolated; compilation/Comparator/replay/axiom/type checks remain NOT_RUN.

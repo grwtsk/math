@@ -112,7 +112,7 @@ The current pilot registry has no canonical Number Theory subject concept.
 The path
 
 ```text
-docs/mathematics/NumberTheory/LSeries/
+GRWTSK/NumberTheory/
 ```
 
 is repository organization, not a taxonomy assertion. This proposal therefore

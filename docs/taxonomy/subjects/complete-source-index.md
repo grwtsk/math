@@ -2,7 +2,7 @@
 
 [Documentation](../../index.md) · [MSC2020](../msc2020/README.md)
 
-Browse authored subject definitions and guides arranged under MSC2020 headings. Their UUIDs identify local authored records; placement does not identify them with official MSC entries or imply semantic review or mathematical acceptance. Lean source files are indexed separately in the [source-folder navigation](../../mathematics/complete-source-index.md).
+Browse authored subject definitions and guides arranged under MSC2020 headings. Their UUIDs identify local authored records; placement does not identify them with official MSC entries or imply semantic review or mathematical acceptance. Lean source files are indexed separately in the [Lean source tree](../../../GRWTSK/).
 
 **136 document entries in this branch.** This count describes authored guide entries, excluding navigation indexes; it is not a count of Lean modules, official MSC entries, or accepted theorems.
 

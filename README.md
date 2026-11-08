@@ -6,34 +6,27 @@ GRWTSK is a public collection of mathematical definitions, arguments, Lean sourc
 
 Mathematical access comes first: read an explanation without installing Lean, follow a claim to its source, inspect hypotheses and limitations, then question, correct, or extend it. Source-bound mathematical signals can guide AI-assisted investigation, but retrieval and generation do not establish truth; improved research performance requires separate measurement.
 
-[Browse the mathematics](docs/mathematics/index.md) · [Try a small proof](docs/mathematics/_support/start/least-prime.md) · [Proof and review standard](docs/mathematics/_support/reference/proof-comparison-disposition.md) · [Contribute](CONTRIBUTING.md) · [Open an issue](https://github.com/grwtsk/math/issues/new/choose)
+[Browse sources](GRWTSK/) · [Subject guides](docs/taxonomy/subjects/index.md) · [Contribute](CONTRIBUTING.md) · [Open an issue](https://github.com/grwtsk/math/issues/new/choose)
 
 ## Find your entry point
 
 | Your goal | Entry | Evidence boundary |
 | --- | --- | --- |
-| **Read and explore** | [MSC2020 subject navigation](docs/mathematics/index.md) | Authored explanations; no Lean installation needed |
-| **Locate source modules** | [Source folders by subject](docs/mathematics/complete-source-index.md) | Current Lean directories; inspect each source for its declarations |
-| **Learn one example** | [Least-prime walkthrough](docs/mathematics/_support/start/least-prime.md) | Problem, objects, assumptions, statement and source |
-| **Assess a claim** | [Proof-comparison disposition](docs/mathematics/_support/reference/proof-comparison-disposition.md) | Source fidelity, primary argument, prior art, counterexamples and missing bridges |
-| **Inspect verification** | [Source-bound observations](docs/mathematics/verification-updates.md) | Results at their exact revisions; unrun checks remain unrun |
+| **Read and explore** | [MSC2020 subject guides](docs/taxonomy/subjects/index.md) | Authored definitions and their review limits |
+| **Locate source modules** | [Lean source tree](GRWTSK/) | Inspect each source for its declarations and hypotheses |
+| **Assess a claim** | [Repository review requirements](AGENTS.md#mathematical-claims-and-evidence) | Source fidelity, analytical argument and unresolved premises |
 | **Report or contribute** | [Contribution guide](CONTRIBUTING.md) and [issue forms](https://github.com/grwtsk/math/issues/new/choose) | Theorem suggestions, actual obstructions, corrections and return obligations |
-| **Plan source-bound work** | [Proof-comparison disposition](docs/mathematics/_support/reference/proof-comparison-disposition.md) | Exact premises, alternative arguments, source correspondence and intended consumers |
 | **Build mathematical memory for neural discovery** | [Mathematics-wide ontology](docs/ontology/README.md) and [learning contract](https://github.com/grwtsk/noeaaeue/blob/07a2fde8f059549cc48b80f9459a4e8ca8792cb8/docs/intelligence/math/ontology-learning.md) | Source-bound records, reviewed contexts and pair labels; rankings remain advisory |
 
-**Know which object is being assessed.** A formalized *statement* can encode an open conjecture without proving it. A *conditional theorem* does not establish its unverified premise. A *finite experiment* covers its tested instances. A *kernel-checked derivation* establishes its formal conclusion relative to the actual environment and axioms—not its correspondence to an external formulation without a proved bridge. An *analytic proof* requires a complete argument, with or without Lean. A *source candidate* has no inferred compilation, kernel or axiom-audit status. Read the [verification specifications](docs/mathematics/_verification/specifications/README.md) to distinguish evidence layers.
+**Know which object is being assessed.** A formalized *statement* can encode an open conjecture without proving it. A *conditional theorem* does not establish its unverified premise. A *finite experiment* covers its tested instances. A *kernel-checked derivation* establishes its formal conclusion relative to the actual environment and axioms—not its correspondence to an external formulation without a proved bridge. An *analytic proof* requires a complete argument, with or without Lean. A *source candidate* has no inferred compilation, kernel or axiom-audit status.
 
 Local collective attribution is **grwtsk contributors**. Preserve original authors, upstream licenses, each contributor's chosen public Git identity, and the exact provenance and verification scope of every source. Publication, novelty, review, and proof acceptance are separate claims.
 
 ## Explore the collection
 
-**You do not need Lean or a local build to read the mathematics.** Start with the [mathematics index](docs/mathematics/index.md), follow the authored subject guides, and compare a statement with its sources and stated assumptions. The [source navigation](docs/mathematics/complete-source-index.md) links to current Lean folders. Deleted source articles open commit-pinned archive versions with their historical evidence scope; the navigation is not a complete declaration catalogue or proof census.
-
-The [least-prime walkthrough](docs/mathematics/_support/start/least-prime.md) illustrates a small result and its assumptions. For further work, browse the [source index](docs/mathematics/complete-source-index.md) and inspect the underlying Lean modules. Existing explanations are optional; their presence or absence does not change verification status.
+Browse the [Lean source tree](GRWTSK/) and [subject guides](docs/taxonomy/subjects/index.md). Compare each statement with its cited sources, assumptions, and evidence scope.
 
 At the pinned source revision [`706c62c`](https://github.com/grwtsk/math/commit/706c62c1285a9857cb9d52e0620ec2cb514eb374), the catalogue recorded **72,578 source modules and 1,722,561 declaration observations**. Those are historical source-inventory counts, not numbers of accepted theorems or a live count of `main`.
-
-The [proof-comparison disposition](docs/mathematics/_support/reference/proof-comparison-disposition.md) guides source correspondence, argument review, counterexamples, and explicit remaining obligations for the next mathematical investigation.
 
 ## Access, mathematical signal, and shared knowledge
 
@@ -57,7 +50,7 @@ Here, **source-bound** means that a claim, source comparison, or verification re
 
 **Every promoted proof claim requires comparison with the actual mathematical objects and strongest relevant prior results**, a readable explanation of its principal argument, and precise disclosure of unresolved transfers. Independent routes and hostile tests are valuable where applicable, but a second proof is not mandatory. Reviewers must preserve quantifiers, signs, error bounds, limits, and all needed source-return steps.
 
-The [canonical proof-comparison disposition](docs/mathematics/_support/reference/proof-comparison-disposition.md) gives the full standard. The [five-family source-inspected pilot](docs/mathematics/_support/reviews/proof-comparison-pilot-2026-10-30.md) illustrates historical identity mismatches, conditional Riemann-hypothesis work, and the limits of finite operator analogies. The [three-phase residual review](docs/mathematics/_support/reviews/three-phase-residual-analytic-closure.md) distinguishes finite Gram and spectral calculations from unproved Navier–Stokes or QCD applications. [Adoption and review coverage](https://github.com/grwtsk/math/issues/1499) remain source-specific; this policy is not a completed corpus-wide review.
+[Adoption and review coverage](https://github.com/grwtsk/math/issues/1499) remain source-specific; repository policy is not a completed corpus-wide review.
 
 ## Explore, test, and return findings
 
@@ -69,7 +62,7 @@ A useful research prompt is:
 
 For authorized formalization work, use the appropriate modules under [`GRWTSK/`](GRWTSK/). Existing subject documentation may be linked when useful, but generated prose documents are not required or automatically recreated. Preserve current source identities, hypotheses, attribution, and verification scopes. A useful intermediate result, rigorous counterexample, or precisely characterized failed path can be contributed without claiming the original research target was solved.
 
-**The repository contribution loop closes only when authorized changes reach maintained `main` and can be reused by subsequent investigations.** A chat response, detached patch, or unmerged submission does not close that particular loop. Publication is not mathematical acceptance, and a blocked return must be reported explicitly. The [formalization contribution guide](docs/mathematics/_support/start/formalization-contributions.md) contains the detailed source-bound prompt and publication requirements.
+**The repository contribution loop closes only when authorized changes reach maintained `main` and can be reused by subsequent investigations.** A chat response, detached patch, or unmerged submission does not close that particular loop. Publication is not mathematical acceptance, and a blocked return must be reported explicitly.
 
 This is cumulative learning through access, retrieval, testing, feedback, correction, and reuse. It does not assert that repository queries retrain models, guarantee future training inclusion, or establish truth by repetition. Claims of improved access or research performance require their own measurements.
 
@@ -92,12 +85,11 @@ Mathematical source and static targets belong here. [Noeaaeue](https://github.co
 
 Formal proofs, conditional implications, finite certificates, analytical arguments, and source candidates coexist here. A source candidate can be mathematically useful without being an accepted proof; a checked conditional theorem does not discharge its hypothesis. Record source inspection, compilation, kernel checking, transitive axiom auditing, and analytical assessment separately, at the exact revisions actually checked. Earlier receipts do not certify changed bytes.
 
-[Verification specifications](docs/mathematics/_verification/specifications/README.md) and the [paper-to-formalization references](docs/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md) preserve this distinction. A recorded operational cancellation of the [107-declaration replay](docs/mathematics/_support/verification-updates/declaration107-lossless-restart-20261026.md) is not a mathematical refutation or a successful audit; [its external pinned checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json) retains the historical scope.
+Historical verification observations apply only to their pinned sources. A cancellation is neither a mathematical refutation nor a successful audit.
 
 Finite spectral calculations do not establish the complete zeta-zero divisor. A tensor or block description does not supply a quantum speedup; a successful build does not settle RH, GRH, ABC, or an unresolved Möbius bound. Representing a mathematical source is not the same as proving the estimate or return theorem that a claimed application requires.
 
 <!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
-[Latest source-bound verification observations](docs/mathematics/verification-updates.md): compilation, graph extraction and axiom-policy outcomes are recorded separately. The current upstream-inclusive S₃ rankings remain unavailable.
 <!-- END VERIFICATION AMENDMENT -->
 
 ## Practical Lean checks (optional)

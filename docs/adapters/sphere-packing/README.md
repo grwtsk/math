@@ -32,12 +32,12 @@ Git checkout equals a locally patched dependency.
 Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
 See [catalogue.json](catalogue.json) for every library, source module/blob, config and dependency
-pin, and the canonical paper ledger for evidence scope and unresolved bridges.
+pin, and the historical paper ledger for evidence scope and unresolved bridges.
 
 ## Consumer wave 2026-10-29
 
 Current source locator for this recorded consumer wave: [`E8SeparationConsumers.lean`](../../../GRWTSK/ConvexAndDiscreteGeometry/GeneralConvexity/E8SeparationConsumers.lean). See
-[consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
+[consumer provenance](../consumer-integrations.json) and the historical paper ledger.
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.
 
@@ -47,7 +47,7 @@ E8FiniteCoveringConsumers adds three source candidates: strict separation at twi
 the cover radius, exact external covering number equal to S.card, and a lower
 bound for any cover-center set. Requires 2*epsilon<sqrt2; empty S/radius 0 included.
 This is an exact finite Euclidean observation, not optimal density or arithmetic
-mass packing. See [references](references.md) and [`docs/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.json`](../../mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.json); all native checks
+mass packing. See [references](references.md) and historical e8-finite-covering-20261029.json (historical; target removed); all native checks
 remain NOT_RUN and original E8SeparationConsumers is unchanged.
 
 <a id="e8-cover-matching-20261029"></a>
@@ -57,4 +57,4 @@ Local attribution: grwtsk contributors. New source `6336a394397cca8587c4b0ba713b
 
 The Basic.E8 bound by Bhavik Mehta/Gareth Ma and the public Mathlib covering/finite-cardinality APIs retain Apache-2.0 attribution. Sphere `77cf0a0c104f2e31501eab04d88bbc068d61c169`, Basic.E8 `c369209e9ae2a7e358e2b312cd251bf9caf20cd2`; exact native Lean4.35.0-rc4/Mathlib `1f414401f69059aa7eead47b53ee40bd38455eeb` stays isolated. The actual covering-number consumer gains point-center witnesses behind the previous cardinal obstruction; no root-version port, nearest-center algorithm, arithmetic mass map or optimal-density theorem is supplied. MainTheorem remains excluded. All compilation/Comparator/interface/discovery/fresh replay/full axiom facets are NOT_RUN; independent checker UNSUPPLIED. Source/API/import/type review is not acceptance. Historical scopes remain unchanged.
 
-[Canonical ledger](../../mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#e8-cover-matching-20261029) and [exact source-bound target](../../mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-cover-matching-20261029.json) retain both literal expected types, source identities and remaining obligations.
+Historical ledger (historical; target removed) and exact source-bound target (historical; target removed) retain both literal expected types, source identities and remaining obligations.

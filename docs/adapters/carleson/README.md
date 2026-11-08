@@ -32,12 +32,12 @@ Git checkout equals a locally patched dependency.
 Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
 See [catalogue.json](catalogue.json) for every library, source module/blob, config and dependency
-pin, and the canonical paper ledger for evidence scope and unresolved bridges.
+pin, and the historical paper ledger for evidence scope and unresolved bridges.
 
 ## Consumer wave 2026-10-29
 
 Current source locator for this recorded consumer wave: [`FiniteFourierReadoutConvergence.lean`](../../../GRWTSK/HarmonicAnalysisOnEuclideanSpaces/HarmonicAnalysisInOneVariable/FiniteFourierReadoutConvergence.lean). See
-[consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
+[consumer provenance](../consumer-integrations.json) and the historical paper ledger.
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.
 
@@ -50,7 +50,7 @@ for arbitrary cutoff-dependent rows W(N), with the same row in both terms.
 This is residual convergence; the moving reference/readout need not converge.
 Empty support is allowed. No rate, growing support, uniformity in x or cyclic-DFT
 comparison is supplied. Source commit fd6f3d97e80088c09262adbf5fa7ccce8467d504, blob a803cf300e8a4987ddfc62ff0bc1985617fd4734.
-Static target [`docs/mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-unit-ball-residual-20261029.json`](../../mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-unit-ball-residual-20261029.json) and adjacent profile/TOML retain six required roots
+Static target historical carleson-unit-ball-residual-20261029.json (historical; target removed) and adjacent profile/TOML retain six required roots
 and three new literal expected types. Native/interface/axiom checks are NOT_RUN.
 The historical three source bodies and original source-bound target remain intact.
 
@@ -58,4 +58,4 @@ The historical three source bodies and original source-bound target remain intac
 
 New source [`ConvergentFourierReadouts.lean`](GRWTSK/HarmonicAnalysisOnEuclideanSpaces/HarmonicAnalysisInOneVariable/ConvergentFourierReadouts.lean), math `4edb8f1f095048b162361a5e4da25f8fcea2cca8` / blob `60d962300a1ef348e196546bc527598abd0605c9`, uses the old countable-family coordinate event once. Inside that event, every fixed finite support and every coefficient sequence converging on it has an actual Fourier readout limit with the fixed limiting coefficients; the corresponding residual norm tends to zero. Empty support is allowed, no l1 bound is needed, and convergence outside support is irrelevant. Actual coefficient convergence remains a premise. The event precedes all s,W,w for the fixed countable f; cutoffs may depend on these choices. No growing support, uniform rate, all-continuous-families event or cyclic-DFT/version transport is supplied.
 
-The [static target](../../mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-convergent-readouts-20261030.json) and adjacent profile/TOML bind two roots and two literal expected types with universeu; profile SHA256 `f81ddd06d7712ea02418d8c37ec5e4fd1238e4c7a12afb84022de24a2452d1d6`. The old a803 module/six roots and its historical targets remain unchanged. Native4.36.0-rc1 / Mathlibd888 stays isolated; all compiler/Comparator/interface/census/kernel/axiom/restoration facets remain NOT_RUN, independent checker UNSUPPLIED. See [verification #1485](https://github.com/grwtsk/math/issues/1485) and the canonical ledger's `carleson-convergent-coefficient-readouts-20261030` entry. This is actual-readout convergence under a new explicit premise, not a claim that unit-ball bounds alone force coefficients or readouts to converge.
+The static target (historical; target removed) and adjacent profile/TOML bind two roots and two literal expected types with universeu; profile SHA256 `f81ddd06d7712ea02418d8c37ec5e4fd1238e4c7a12afb84022de24a2452d1d6`. The old a803 module/six roots and its historical targets remain unchanged. Native4.36.0-rc1 / Mathlibd888 stays isolated; all compiler/Comparator/interface/census/kernel/axiom/restoration facets remain NOT_RUN, independent checker UNSUPPLIED. See [verification #1485](https://github.com/grwtsk/math/issues/1485) and the historical ledger's `carleson-convergent-coefficient-readouts-20261030` entry. This is actual-readout convergence under a new explicit premise, not a claim that unit-ball bounds alone force coefficients or readouts to converge.

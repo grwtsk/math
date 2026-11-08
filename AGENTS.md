@@ -62,8 +62,8 @@ This repository is the canonical pure mathematical source for GRWTSK.
 
 - Preserve exact hypotheses, source identities, certificate scopes, trust
   boundaries and unresolved premises.
-- Apply the [proof-comparison disposition](docs/mathematics/_support/reference/proof-comparison-disposition.md)
-  to every newly authored, revised, imported or promoted proof claim. Explain a
+- Apply the following proof-comparison requirements to every newly authored,
+  revised, imported or promoted proof claim. Explain a
   complete primary analytical argument; compare the actual mathematical objects
   and source observations; identify counterexamples and the precise consumer or
   return to the original problem; disclose shared or unresolved premises. Seek a
@@ -132,7 +132,7 @@ This repository is the canonical pure mathematical source for GRWTSK.
   edits do not require corpus-wide ontology extraction, inventory regeneration
   or companion-pin migration. Preserve historical snapshots and their scopes.
 - Static replay manifests and mathematical acceptance predicates may live under
-  `docs/mathematics/_verification/targets/`.
+  the existing subject-specific adapter directories under `docs/adapters/`.
 - Do not commit process runners, mutable caches, execution attempts, receipts,
   controller state, schedules, authority records, WSC coordination, generated
   capsule state or Git-effect machinery in this repository. Raw run dumps,

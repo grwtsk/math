@@ -25,4 +25,4 @@ Write the exact command and outcome or `NOT_RUN` / `NOT_APPLICABLE`. A merged fi
 - **Concurrent changes and complete diff reviewed:**
 - **Static verification target and literature register update (if applicable):**
 
-This template requests review; it does not dispatch checking or confer mathematical acceptance. See [repository instructions](../AGENTS.md) and [proof-comparison disposition](../docs/mathematics/_support/reference/proof-comparison-disposition.md). Operational receipts and execution belong in [Noeaaeue](https://github.com/grwtsk/noeaaeue).
+This template requests review; it does not dispatch checking or confer mathematical acceptance. See [repository instructions](../AGENTS.md) and [mathematical review requirements](../AGENTS.md#mathematical-claims-and-evidence). Operational receipts and execution belong in [Noeaaeue](https://github.com/grwtsk/noeaaeue).
