@@ -47,3 +47,8 @@ and provider catalogues. These surfaces are not proof acceptance.
 explicit hypotheses, representation comparisons and precise missing bridges.
 Source candidates are not mathematical acceptance; native verification remains
 separately tracked.
+
+## Additional isolated packages
+
+- [Progression coloring](progression-coloring/README.md): pinned proof-source port for Erdős Problem #138; its source correspondence and formal checks retain the package’s stated scope.
+- [Hurwitz adapter](tauceti-connes/README.md): isolated TauCeti Hurwitz sources with separate dependency pins and explicit consumer obligations.

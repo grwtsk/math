@@ -1,4 +1,6 @@
-# Mathematical source candidates
+# Historical mathematical source intake
+
+This page records a bounded intake observation. Subject/object labels, supplied toolchain pins, rights notes, and native statuses below retain that observation’s scope. Links point to maintained source locations where available; later source bytes do not inherit the earlier textual comparison or verification status. Use the [current source-folder index](../../complete-source-index.md) and repository dependency files for current navigation and configuration.
 
 The original 63 Lean source candidates are organized by mathematical subject and object. Exact inherited copies are coalesced; all original source and evidence variants are retained. The project umbrella and existing native-verification profiles are unchanged. These candidates have not been elaborated, axiom-audited or admitted as checked mathematics.
 
@@ -6,7 +8,7 @@ Only module import references changed when paths moved. Statements, hypotheses, 
 
 The supplied materials target Lean 4.33.0 and Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`. Their compiler reports do not establish successful verification. Definitions of goals and certificate assumptions remain obligations; they are not supplied proofs of arithmetic energy bounds, Type-II estimates, analytic continuation or RH.
 
-Five additional taxonomy and classification candidates bring the current intake to 68 sources. Their logical code is unchanged from the supplied reference bundle; license/status comments and the evidence-reference path were updated. Native compilation and axiom auditing remain unrun.
+Five additional taxonomy and classification candidates brought that recorded intake to 68 sources. Their logical code is unchanged from the supplied reference bundle; license/status comments and the evidence-reference path were updated. Native compilation and axiom auditing remain unrun.
 
 ## Original source inventory
 

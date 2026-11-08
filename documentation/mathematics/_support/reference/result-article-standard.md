@@ -78,11 +78,12 @@ Aliases are validated metadata, not automatic redirects. Existing paths remain
 addressable until a separately checked link migration preserves their readers.
 
 Source pins retain repository, full commit, repository-relative source path,
-and full blob hash. Preserve upstream public bylines and licensing. Each
-paper-derived article also updates the
+and full blob hash. Preserve upstream public bylines and licensing. For paper-derived work, record the exact theorem or method, hypotheses,
+declarations, source pins, verification commands/receipts or `NOT_RUN`, and
+missing bridges in the source comments, associated issue/PR, maintained article,
+or existing verification target as appropriate. The
 [paper-to-formalization register](literature/reading-background/paper-to-formalization-references.md)
-with its exact theorem or method, hypotheses, declarations, pins, verification
-commands/receipts or `NOT_RUN`, and missing bridges.
+is optional; updating it is not a prerequisite for a source change or publication.
 
 Statement classifications distinguish imported mathematics,
 kernel-verified bridges, source proof candidates, conditional interfaces,

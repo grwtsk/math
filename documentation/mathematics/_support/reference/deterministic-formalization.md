@@ -18,11 +18,14 @@ acceptance or mathematical payload validity follows from routing. UUID channels
 retain canonical taxonomy identity and editorial status. Unmatched signals remain
 in the residual, and overlapping memberships retain one underlying task identity.
 
-Noeaaeue's entry point is
+The original Noeaaeue integration described the entry point
 `workflows/formalization/lean/replay/incremental_formalization.py`.
-Its contract and commands are documented in
+That integration recorded its contract and commands in
 `research-tracks/formalization/research/docs/deterministic-formalization-v1.md`.
-The persistent result index observes each Git blob once per observer version;
+These are historical companion-repository locators, not executable paths in this
+math checkout or a check of current Noeaaeue commands. Inspect the intended
+companion revision before using them. In the described integration, the
+persistent result index observes each Git blob once per observer version;
 the separate verification queue binds exact source and environment. Counts are
 computed from stored observations. A result stays verification pending until its
 own replay evidence has been checked. The initial closed compiler accepts
@@ -33,7 +36,7 @@ The compiler also accepts typed natural-number addition/multiplication and
 finite-list append/reverse equalities. It performs bounded rewrite search with
 independent trace checking; it is not an unrestricted algebra solver. List
 reverse uses the upstream `propext` axiom, which native replay reports explicitly.
-See the [mirrored guide](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.md).
+See the [archived guide](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.md).
 
 Source-signal routing uses the canonical UUID subjects, including the
 [source-signal draft](../../../taxonomy/proposals/new-concepts/source-signal-subjects.md).
@@ -41,8 +44,10 @@ Every GRWTSK file, including hash-named files, is in scope. Direct observations,
 exact-original links and lexical dependency-only candidates remain distinct;
 none confers editorial acceptance or a mathematical verification receipt.
 
-The pure contracts were directly compiled using `lean -t 0 <source-path>` with
-Lean 4.33.0. Operational logs/receipts are retained in Noeaaeue, not here.
+The recorded historical check compiled the pure contracts using `lean -t 0 <source-path>` with
+Lean 4.33.0. This describes those checked inputs, not a fresh check of the linked
+current files or current dependency configuration. Operational logs/receipts are
+retained in Noeaaeue, not here.
 These mathematical laws do not assert a formal refinement of the Python/SQLite,
 Git hash, filesystem, clock, or renderer implementations. Cache reuse assumes
 actual equality of content; digest equality alone is not proved injective.

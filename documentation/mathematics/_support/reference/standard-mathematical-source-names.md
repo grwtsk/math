@@ -9,8 +9,10 @@ metadata rather than in the filename. Hash-only grouping components and encoded
 source-path components are removed from current source paths.
 
 The [static source map](../../_verification/specifications/_unscoped/standard-mathematical-source-names-v1.json)
-records 68,824 historical source paths and their current destinations, with
-SHA-256 bindings for the inputs and current targets. Of these, 68,710 sources receive readable paths;
+records 68,824 historical source paths and their destinations at that naming
+stage, with SHA-256 bindings for the inputs and recorded targets. Resolve later
+relocations through the [MSC2020 source layout](../../../taxonomy/msc2020/source-layout-v1.json),
+including `followup_files`; the older naming map is not a live source inventory. At that stage, 68,710 sources received readable paths;
 114 redundant files are consolidated with byte-identical sources. The map retains
 all historical path identities. Equal titles, similar statements, shared original
 sources and directory co-location are not criteria for deduplication.

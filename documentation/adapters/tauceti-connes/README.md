@@ -3,7 +3,7 @@
 Local attribution: grwtsk contributors.
 
 This package builds only the canonical source linked at
-`GRWTSK/FunctionsOfAComplexVariable/RealZeroLimit.lean`. The relative symlink
+[`RealZeroLimit.lean`](../../../GRWTSK/FunctionsOfAComplexVariable/RealZeroLimit.lean). The relative symlink
 returns to the maintained source tree; no independent source copy is kept.
 
 Upstream source is TauCetiProject/TauCeti commit
@@ -19,4 +19,4 @@ audit was executed. All formal assurance is **NOT_RUN**. The declared build
 target is `GRWTSK`; no executable, scheduler or workflow is included.
 
 The mathematical consumer and unresolved spectral/convergence obligations
-are in `../../mathematics/_support/research/connes-coercivity-mellin-2026-11-04.md`.
+are in [the Connes coercivity/Mellin research note](../../mathematics/_support/research/connes-coercivity-mellin-2026-11-04.md).

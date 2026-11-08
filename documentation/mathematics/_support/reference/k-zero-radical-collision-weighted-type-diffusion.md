@@ -4,6 +4,12 @@ Local mathematical attribution: **grwtsk contributors**.
 
 ## Exact sources and scope
 
+The paths and toolchain below identify historical source observations. Maintained
+locators are [`GrothendieckPort.lean`](../../../../GRWTSK/AssociativeRingsAndAlgebras/GrothendieckPort.lean)
+and [`RootHeatState.lean`](../../../../GRWTSK/Combinatorics/GraphTheory/RootHeatState.lean).
+Those navigation links do not transfer historical checks to later bytes or
+change the declarations, hypotheses, or evidence scope recorded here.
+
 - `GRWTSK/Algebra/KTheory/GrothendieckPort.lean`: joint feature and collision-boundary source introduced in commit `46c575de6a7652b9ce250c8060f4a31c19b97957`, Git blob `d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f`.
 - `GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/RootHeatState.lean`: weighted diffusion/type-completeness source introduced in commit `d18bd7288827ea335adccef417b0b2d20627de29`, Git blob `8e3d6a28fbeac5c08e7c5b09c36dd12f05bd2284`.
 - Toolchain: `leanprover/lean4:v4.33.0`; Mathlib revision `db584cd6d46c92f209a44c0f1c829460d327499d`.
