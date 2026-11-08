@@ -1,8 +1,9 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Source-proof candidate: Lean elaboration, fresh kernel replay, transitive axiom
-review and independent mathematical review NOT_RUN.
+Source-proof candidate: the module elaborates with its current import chain.
+Fresh separate kernel replay and independent mathematical review NOT_RUN.
+See issue #1784 for exact-source checks and scoped axiom observations.
 -/
-import GRWTSK.Combinatorics.GraphTheory.FiniteClockMemoryNoWrap
+import GRWTSK.Combinatorics.GraphTheory.FinitePositiveWordMagnusSeparation
 import Mathlib.GroupTheory.FreeGroup.Basic
 import Mathlib
 
@@ -27,7 +28,7 @@ separation requires an additional, non-metabelian finite 2-group construction.
 The `TruncatedMagnus` section constructs a finite characteristic-two matrix
 representation of the degree-truncated noncommutative Magnus algebra and proves
 its finite-2-group property. General separation is conditional on the explicitly
-named `SyllableCoefficientLaw` and `SyllableNormalFormLaw`; neither is proved here.
+named `SyllableCoefficientLaw`; `syllableNormalFormLaw` now supplies the normal-form return.
 The analytical syllable argument is recorded below. No unconditional formal
 residual-2 theorem is claimed.
 
@@ -93,11 +94,11 @@ theorem backtrack_ne_empty {a b : V} (e : E a b) :
 /-- Inverse-edge cancellation is valid inside ANY correctly typed context. -/
 theorem holonomy_cancel_in_context
     (U : ∀ {a b : V}, E a b → G)
-    {s a b t : V} (prefix : Path (OrientedEdge (E := E)) s a)
-    (e : E a b) (suffix : Path (OrientedEdge (E := E)) a t) :
+    {s a b t : V} (prefixPath : Path (OrientedEdge (E := E)) s a)
+    (e : E a b) (suffixPath : Path (OrientedEdge (E := E)) a t) :
     Path.holonomy (orientedWeight U)
-      ((prefix.append (backtrack e)).append suffix) =
-    Path.holonomy (orientedWeight U) (prefix.append suffix) := by
+      ((prefixPath.append (backtrack e)).append suffixPath) =
+    Path.holonomy (orientedWeight U) (prefixPath.append suffixPath) := by
   simp [Path.holonomy_append, holonomy_backtrack, mul_assoc]
 
 /-- The return from the ACTUAL derived voltage cover does not delete the backtrack. -/
@@ -282,7 +283,8 @@ original group element. For an arbitrary nonidentity free-group element, take
 a nonempty freely reduced representative and group maximal consecutive equal
 generators: reduction forces a constant sign in each run, so each resulting
 integer exponent is nonzero and adjacent syllable generators differ. This is
-the analytical normal-form return; it is not yet the Lean normal-form supplier.
+the analytical normal-form return; `syllableNormalFormLaw` proves it by a
+direct head-merging normalization, without assuming a reduced representative.
 The group need not be metabelian. No finiteness of the
 source alphabet is required: each observation uses only the finite pattern p.
 
@@ -292,18 +294,25 @@ then gives (1+x)^(2^(D+1))=1. Finiteness and this exponent bound prove `IsPGroup
 The generator inverse is proved to be the finite geometric series. Evaluation
 is Mathlib's actual `FreeGroup.lift`, so inverse-pair cancellation is automatic;
 the final consumer uses the existing marked voltage endpoint with its exact
-source history. These facts do not require the two open separation suppliers.
+source history. These facts do not require the remaining coefficient supplier.
 
-**Formal gaps and evidence scope.** The run-count/coefficient argument above,
-its identification with the (0,D) entry for arbitrary signed syllables, and
-normal-form conversion from an arbitrary nonidentity `FreeGroup A` are NOT yet
-Lean proofs. They are represented by two explicit propositions, NOT axioms,
-`sorry`s or typeclass instances. The conditional theorems retain both premises.
-The standalone algebra section was elaborated with Lean 4.34.1 against the pinned
-Mathlib dependency. Full-module elaboration is blocked by errors in the existing
-`RelationalHolonomySpinCompletion` import chain; the voltage consumer below is
-therefore unchecked. Fresh separate kernel replay, transitive axiom audit and
-independent analytical review are NOT_RUN. The argument is not a novelty claim.
+**Formal gaps and evidence scope.** `monomial_top` now proves the matrix
+observation of every ordered monomial, and `syllableNormalFormLaw` proves the
+normal-form supplier for the actual free-group quotient. Its proof prepends one
+signed generator at a time: unequal head labels extend the chain, equal labels
+merge integer exponents, and a zero merged exponent drops that head. Every step
+preserves the free-group class; a nonidentity class excludes the empty result.
+This supplies existence, not uniqueness or nonidentity of every reduced form.
+
+The characteristic-two leading coefficients for arbitrary signed syllable
+powers and the run-count convolution argument remain UNPROVED IN LEAN.
+`SyllableCoefficientLaw` is an explicit proposition, not an axiom, `sorry` or
+instance. General separation STILL requires it. Full-module elaboration now
+succeeds through the required positive-word/path/cover imports. The unused
+clock-memory no-wrap import was removed; that separate module has not been
+repaired or certified by this change. Fresh separate kernel replay and
+independent analytical review are NOT_RUN. Exact checks and selected transitive
+axiom observations are recorded in issue #1784; no novelty claim is made.
 Spanning-tree/fundamental-group return and index-two cover towers remain outside
 this change; no graph-level residual-2 theorem is inferred from the bouquet map.
 -/
@@ -424,11 +433,95 @@ lemma monomial_truncated {n : ℕ} (target : Fin n → A) (word : List A)
   ext i j
   exact monomial_above target word i j (by omega)
 
+
+/-- Multiplying by a variable advances exactly one matching target edge. -/
+lemma variable_mul_entry {n : ℕ} (target : Fin n → A) (a : A)
+    (m : Algebra n) (i j : Fin (n+1)) :
+    (variableMatrix target a * m) i j =
+      if hi : i.val < n then
+        if target ⟨i.val, hi⟩ = a then m ⟨i.val+1, by omega⟩ j else 0
+      else 0 := by
+  rw [Matrix.mul_apply]
+  by_cases hi : i.val < n
+  · rw [dite_eq_left hi]
+    let k : Fin (n+1) := ⟨i.val+1, by omega⟩
+    rw [Finset.sum_eq_single k]
+    · simp [variableMatrix, hi, k]
+    · intro b hb hbk
+      have hbi : b.val ≠ i.val+1 := by
+        intro h
+        apply hbk
+        exact Fin.ext h
+      simp [variableMatrix, hi, hbi]
+    · simp
+  · rw [dite_eq_right hi]
+    apply Finset.sum_eq_zero
+    intro k hk
+    simp [variableMatrix, hi]
+
+/-- An ordered monomial reads the exact remaining suffix of the target. -/
+lemma monomial_entry_last {n : ℕ} (target : Fin n → A) (word : List A)
+    (i : Fin (n+1)) :
+    monomial target word i (Fin.last n) =
+      if word = (List.ofFn target).drop i.val then 1 else 0 := by
+  induction word generalizing i with
+  | nil =>
+    have hiff : i = Fin.last n ↔ (List.ofFn target).drop i.val = [] := by
+      simp [Fin.ext_iff, List.drop_eq_nil_iff]
+      omega
+    change (if i = Fin.last n then (1 : ZMod 2) else 0) = _
+    simp only [hiff, eq_comm (a := ([] : List A))]
+  | cons a word ih =>
+    change (variableMatrix target a * monomial target word) i (Fin.last n) = _
+    rw [variable_mul_entry]
+    by_cases hi : i.val < n
+    · rw [dite_eq_left hi, ih]
+      have hdrop : (List.ofFn target).drop i.val =
+          target ⟨i.val,hi⟩ :: (List.ofFn target).drop (i.val+1) := by
+        rw [List.drop_eq_getElem_cons (by simpa using hi)]
+        simp only [List.getElem_ofFn]
+      simp only [hdrop, List.cons.injEq]
+      by_cases ha : target ⟨i.val,hi⟩ = a
+      · simp [ha]
+      · simp [ha, Ne.symm ha]
+    · rw [dite_eq_right hi]
+      have he : i.val = n := by omega
+      have hd : (List.ofFn target).drop n = [] := by
+        apply List.drop_eq_nil_iff.mpr
+        simp
+      simp [he, hd]
+
+/-- Exact coefficient observation: this matrix entry is the delta on words. -/
+lemma monomial_top {n : ℕ} (target : Fin n → A) (word : List A) :
+    monomial target word 0 (Fin.last n) = if word = List.ofFn target then 1 else 0 := by
+  simpa using monomial_entry_last target word 0
+
 /-- Concrete Magnus generators 1+X_a, with inverse a finite geometric series. -/
 def generator {n : ℕ} (target : Fin n → A) (a : A) : Group n :=
   toUnit ⟨1 + variableMatrix target a, by
     change Above 1 (1 + variableMatrix target a - 1)
     simpa using variable_above target a⟩
+
+/-- Frobenius holds in the actual finite target, without assuming separation. -/
+lemma generator_frobenius {n : ℕ} (target : Fin n → A) (a : A) (k : ℕ) :
+    ((generator target a ^ (2 ^ k)).val : unipotent n).val =
+      1 + variableMatrix target a ^ (2 ^ k) := by
+  change (1 + variableMatrix target a) ^ (2 ^ k) = _
+  simpa using add_pow_char_pow_of_commute 2 k (Commute.one_left (variableMatrix target a))
+
+/-- Integer odd powers, including negative powers, keep a square-zero perturbation.
+The square-zero hypothesis is essential and is not asserted for arbitrary X_a. -/
+lemma odd_zpow_of_square_zero {n : ℕ} (g : Group n)
+    (h : (g.val.val - 1) ^ 2 = 0) (e : ℤ) (he : Odd e) : g ^ e = g := by
+  have hg : g ^ 2 = 1 := by
+    apply Units.ext
+    apply Subtype.ext
+    have hp := add_pow_char_of_commute 2 (Commute.one_right (g.val.val - 1))
+    simpa [h] using hp
+  rw [zpow_eq_zpow_emod' e hg]
+  have hm : e % 2 = 1 := Int.odd_iff.mp he
+  change g ^ (e % 2) = g
+  rw [hm, zpow_one]
 
 /-- The ACTUAL quotient map out of Mathlib's free group, including inverses. -/
 def representation {n : ℕ} (target : Fin n → A) : FreeGroup A →* Group n :=
@@ -524,15 +617,87 @@ def SyllableNormalFormLaw : Prop :=
   ∀ w : FreeGroup A, w ≠ 1 →
     ∃ s : List (A × ℤ), ReducedSyllables s ∧ syllableClass s = w
 
-/-- Universal residual-2 separation with BOTH unfinished suppliers visible.
-No arbitrary-word theorem without these premises is claimed in this candidate. -/
+
+/-- Reduced syllable invariant permitting the identity (empty list). -/
+def NormalSyllables (s : List (A × ℤ)) : Prop :=
+  (∀ t ∈ s, t.2 ≠ 0) ∧ s.IsChain (fun t u => t.1 ≠ u.1)
+
+/-- Head merging preserves both the reduced invariant and actual group class. -/
+lemma normal_prepend (a : A) (e : ℤ) (he : e ≠ 0)
+    (s : List (A × ℤ)) (hs : NormalSyllables s) :
+    ∃ t, NormalSyllables t ∧ syllableClass t = (FreeGroup.of a) ^ e * syllableClass s := by
+  rcases hs with ⟨hne, hc⟩
+  cases s with
+  | nil =>
+    refine ⟨[(a,e)], ?_, ?_⟩
+    · simp [NormalSyllables, he]
+    · simp [syllableClass]
+  | cons b tail =>
+    by_cases hab : a = b.1
+    · by_cases hz : e + b.2 = 0
+      · refine ⟨tail, ⟨fun t ht => hne t (by simp [ht]), hc.tail⟩, ?_⟩
+        simp only [syllableClass, List.map_cons, List.prod_cons]
+        rw [← mul_assoc, hab, ← zpow_add, hz, zpow_zero, one_mul]
+      · refine ⟨(a, e + b.2) :: tail, ?_, ?_⟩
+        · constructor
+          · intro t ht
+            rcases List.mem_cons.mp ht with rfl | ht
+            · exact hz
+            · exact hne t (by simp [ht])
+          · cases tail with
+            | nil => simp
+            | cons c rest =>
+              simpa [List.isChain_cons_cons, hab] using hc
+        · simp only [syllableClass, List.map_cons, List.prod_cons]
+          rw [hab, zpow_add, mul_assoc]
+    · refine ⟨(a,e) :: b :: tail, ?_, ?_⟩
+      · constructor
+        · intro t ht
+          rcases List.mem_cons.mp ht with rfl | ht
+          · exact he
+          · exact hne t ht
+        · exact List.isChain_cons_cons.mpr ⟨hab, hc⟩
+      · simp [syllableClass]
+
+/-- Normalize every quotient representative; no assumed freeness criterion. -/
+lemma exists_normal (w : FreeGroup A) : ∃ s, NormalSyllables s ∧ syllableClass s = w := by
+  induction w using Quot.inductionOn with
+  | h xs =>
+    induction xs with
+    | nil => exact ⟨[], by simp [NormalSyllables], rfl⟩
+    | cons x xs ih =>
+      obtain ⟨s, hs, heq⟩ := ih
+      cases x with
+      | mk a sign =>
+        cases sign with
+        | false =>
+          obtain ⟨t, ht, he⟩ := normal_prepend a (-1) (by decide) s hs
+          refine ⟨t, ht, ?_⟩
+          rw [he, heq]
+          rfl
+        | true =>
+          obtain ⟨t, ht, he⟩ := normal_prepend a 1 (by decide) s hs
+          refine ⟨t, ht, ?_⟩
+          rw [he, heq]
+          rfl
+
+/-- Unconditional normal-form supplier, preserving all source hypotheses. -/
+theorem syllableNormalFormLaw : SyllableNormalFormLaw (A := A) := by
+  intro w hw
+  obtain ⟨s, hs, heq⟩ := exists_normal w
+  refine ⟨s, ⟨?_, hs⟩, heq⟩
+  intro h
+  subst s
+  exact hw heq.symm
+
+/-- Normal form is supplied internally; the remaining coefficient hypothesis
+is explicit. No unconditional residual-2 theorem is claimed. -/
 theorem separates_nonidentity
     (coeff : SyllableCoefficientLaw (A := A))
-    (normal : SyllableNormalFormLaw (A := A))
     (w : FreeGroup A) (hw : w ≠ 1) :
     ∃ (n : ℕ) (target : Fin n → A),
       representation target w ≠ 1 := by
-  obtain ⟨s, hs, rfl⟩ := normal w hw
+  obtain ⟨s, hs, rfl⟩ := syllableNormalFormLaw w hw
   exact ⟨_, (syllablePattern s).get, separates_syllables coeff s hs⟩
 end TruncatedMagnus
 
@@ -541,7 +706,7 @@ variable {A : Type u} [DecidableEq A]
 
 /-- A proved coefficient witness separates the actual marked voltage endpoint
 from its starting sheet; exact source erasure remains `signedBouquet_erase_lift`.
-This consumer has not been elaborated through the failing legacy imports. -/
+The full-module check includes this exact source-path consumer. -/
 theorem magnus_endpoint_ne_of_coefficient {n : ℕ} (target : Fin n → A)
     (hn : 0 < n) (xs : List (A × Bool))
     (hc : TruncatedMagnus.coefficient target (sourceFreeClass xs) = 1)
@@ -554,18 +719,17 @@ theorem magnus_endpoint_ne_of_coefficient {n : ℕ} (target : Fin n → A)
   apply TruncatedMagnus.separates_of_coefficient target hn (sourceFreeClass xs) hc
   exact mul_left_cancel (h.trans (mul_one g).symm)
 
-/-- General nonidentity source-word return, conditional on BOTH named formal
-suppliers. The actual input may contain inverse-pair events; only its free-group
+/-- General nonidentity source-word return, conditional on the remaining
+coefficient supplier. The actual input may contain inverse-pair events; only its free-group
 class is required to be nonidentity. -/
 theorem magnus_nonidentity_endpoint
     (coeff : TruncatedMagnus.SyllableCoefficientLaw (A := A))
-    (normal : TruncatedMagnus.SyllableNormalFormLaw (A := A))
     (xs : List (A × Bool)) (hw : sourceFreeClass xs ≠ 1) :
     ∃ (n : ℕ) (target : Fin n → A), ∀ g : TruncatedMagnus.Group n,
       (VoltageCover.liftPath (PositiveWordSeparation.bouquetEdge (A × Bool))
         (signedBouquetTransport (TruncatedMagnus.generator target))
         (signedBouquetPath xs) g).1 ≠ g := by
-  obtain ⟨n, target, ht⟩ := TruncatedMagnus.separates_nonidentity coeff normal _ hw
+  obtain ⟨n, target, ht⟩ := TruncatedMagnus.separates_nonidentity coeff _ hw
   refine ⟨n, target, ?_⟩
   intro g
   rw [signedBouquet_lift_endpoint]

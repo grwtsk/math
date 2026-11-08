@@ -1,5 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Mathematical source candidate: native elaboration and kernel audit NOT_RUN.
+Mathematical source candidate: module elaboration observed with Lean 4.34.1.
+Fresh separate kernel replay NOT_RUN; see issue #1784 for scoped checks.
 This is a graph/transport construction, not a biological or physical claim. -/
 import Mathlib
 
@@ -111,13 +112,14 @@ def gaugeEdge {G : Type w} [Group G]
 theorem holonomy_gauge {G : Type w} [Group G]
     (frame : V → G) (U : ∀ {a b : V}, E a b → G)
     {a b : V} (p : Path E a b) :
-    holonomy (gaugeEdge frame U) p =
+    holonomy (fun {a b} e => gaugeEdge frame U (a := a) (b := b) e) p =
       frame a * holonomy U p * (frame b)⁻¹ := by
   induction p with
   | refl a => simp [holonomy]
   | cons e rest ih =>
-      simp only [holonomy, gaugeEdge]
+      simp only [holonomy]
       rw [ih]
+      simp only [gaugeEdge]
       group
 
 end Path
@@ -133,7 +135,7 @@ theorem loop_readout_frame_invariant {V : Type u} {E : V → V → Type v}
     (o : ConjugationInvariant G View)
     (frame : V → G) (U : ∀ {a b : V}, E a b → G)
     {a : V} (p : Path E a a) :
-    o.observe (Path.holonomy (Path.gaugeEdge frame U) p) =
+    o.observe (Path.holonomy (fun {a b} e => Path.gaugeEdge frame U (a := a) (b := b) e) p) =
       o.observe (Path.holonomy U p) := by
   rw [Path.holonomy_gauge]
   exact o.invariant (frame a) (Path.holonomy U p)
@@ -231,13 +233,17 @@ def sheetLift (s : Bool) {a b : V} : Path E a b →
     erase (oldLift p) = p := by
   induction p with
   | refl _ => rfl
-  | cons e rest ih => simp [oldLift, erase, SpinEdge.erase, Path.append, ih]
+  | cons e rest ih =>
+      change Path.cons e (erase (oldLift rest)) = Path.cons e rest
+      exact congrArg (Path.cons e) ih
 
 @[simp] theorem erase_sheetLift (s : Bool) {a b : V} (p : Path E a b) :
     erase (sheetLift s p) = p := by
   induction p with
   | refl _ => rfl
-  | cons e rest ih => simp [sheetLift, erase, SpinEdge.erase, Path.append, ih]
+  | cons e rest ih =>
+      change Path.cons e (erase (sheetLift s rest)) = Path.cons e rest
+      exact congrArg (Path.cons e) ih
 
 /-- A genuine spin-sheet loop: enter, follow old loop, then exit. -/
 def retryLoop {a : V} (p : Path E a a) (s : Bool) :
@@ -249,7 +255,7 @@ def retryLoop {a : V} (p : Path E a a) (s : Bool) :
 @[simp] theorem erase_retryLoop {a : V} (p : Path E a a) (s : Bool) :
     erase (retryLoop p s) = p := by
   simp [retryLoop, erase, erase_append, Path.append,
-        erase_sheetLift, SpinEdge.erase]
+        erase_sheetLift, SpinEdge.erase, forgetVertex, Path.append_refl]
 
 end SpinPath
 
@@ -351,7 +357,8 @@ theorem attempt_failure {V : Type u} {E : V → V → Type v}
       SpinPath.erase q.val = p := by
   refine ⟨⟨SpinPath.retryLoop p false, SpinPath.erase_retryLoop p false⟩,
     ?_, SpinPath.erase_retryLoop p false⟩
-  simp [attempt, missing]
+  unfold attempt
+  split <;> simp_all
 
 /-- A type found on a new sheet is a source type only if the source-return
     predicate is justified; spin extension alone cannot provide this premise. -/
@@ -371,10 +378,27 @@ def iterVertex (V : Type u) : Nat → Type u
   | 0 => V
   | n + 1 => CompletedVertex (iterVertex V n)
 
+/-- Universe raising keeps each original edge witness, with an exact inverse. -/
+def Path.raiseEdges {V : Type u} {E : V → V → Type v} {a b : V} :
+    Path E a b → Path (fun x y => ULift.{u} (E x y)) a b
+  | .refl _ => .refl _
+  | .cons e p => .cons ⟨e⟩ (Path.raiseEdges p)
+
+def Path.lowerEdges {V : Type u} {E : V → V → Type v} {a b : V} :
+    Path (fun x y => ULift.{u} (E x y)) a b → Path E a b
+  | .refl _ => .refl _
+  | .cons e p => .cons e.down (Path.lowerEdges p)
+
+@[simp] theorem Path.lower_raiseEdges {V : Type u} {E : V → V → Type v}
+    {a b : V} (p : Path E a b) : Path.lowerEdges (Path.raiseEdges p) = p := by
+  induction p with
+  | refl _ => rfl
+  | cons e p ih => exact congrArg (Path.cons e) ih
+
 /-- At each recursion level the graph gains exactly the specified spin edges. -/
 def iterEdge {V : Type u} (E : V → V → Type v) :
     (n : Nat) → iterVertex V n → iterVertex V n → Type (max u v)
-  | 0 => E
+  | 0 => fun a b => ULift.{u} (E a b)
   | n + 1 => SpinEdge (iterEdge E n)
 
 /-- The source basepoint is retained through all finite extensions. -/
@@ -386,7 +410,7 @@ def iterAnchor {V : Type u} (a : V) : (n : Nat) → iterVertex V n
 def pendingLoop {V : Type u} {E : V → V → Type v} {a : V}
     (p : Path E a a) : (n : Nat) →
       Path (iterEdge E n) (iterAnchor a n) (iterAnchor a n)
-  | 0 => p
+  | 0 => Path.raiseEdges p
   | n + 1 => SpinPath.retryLoop (pendingLoop p n) false
 
 /-- Each new stage recovers its immediate predecessor, hence by iteration its
@@ -451,7 +475,7 @@ theorem eventual_type_if_rank_decreases
   have missing : ∀ n, classify n (pendingLoop p n) = none := by
     intro n
     cases hc : classify n (pendingLoop p n) with
-    | none => exact hc
+    | none => rfl
     | some k => exact False.elim (h n k hc)
   exact no_infinite_strict_rank rank (fun n =>
     decrease n (missing n) (missing (n + 1)))

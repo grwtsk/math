@@ -134,7 +134,7 @@ end Path
 def unwindPending {V : Type u} {E : V → V → Type v} {a : V} :
     (n : Nat) →
       Path (iterEdge E n) (iterAnchor a n) (iterAnchor a n) → Path E a a
-  | 0, path => path
+  | 0, path => Path.lowerEdges path
   | n + 1, path => unwindPending n (SpinPath.erase path)
 
 /-- Every repeated pending-loop retry returns the full original path. -/
@@ -142,7 +142,7 @@ def unwindPending {V : Type u} {E : V → V → Type v} {a : V} :
     {a : V} (p : Path E a a) (n : Nat) :
     unwindPending n (pendingLoop p n) = p := by
   induction n with
-  | zero => rfl
+  | zero => exact Path.lower_raiseEdges p
   | succ n ih =>
       change unwindPending n (SpinPath.erase (pendingLoop p (n + 1))) = p
       rw [pendingLoop_recover, ih]

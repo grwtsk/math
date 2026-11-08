@@ -1,5 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Mathematical source candidate: Lean elaboration, kernel replay and axiom audit NOT_RUN.
+Mathematical source candidate: module elaboration observed with Lean 4.34.1.
+Fresh separate kernel replay and whole-module axiom audit NOT_RUN.
 -/
 import GRWTSK.Combinatorics.GraphTheory.VoltageCoverLoopSeparation
 import Mathlib
@@ -215,7 +216,6 @@ theorem sourceClassifier_has_source {P : Type v} [Fintype P] {Kind : Type*}
   split_ifs at accepted with h
   · exact ⟨Classical.choose h, Classical.choose_spec h,
       Option.some.inj accepted⟩
-  · cases accepted
 
 /-- Typed source adapter: a bouquet graph's one-vertex loops are exact lists
 of edge identities, and the `Path.labels` map recovers the complete word. -/

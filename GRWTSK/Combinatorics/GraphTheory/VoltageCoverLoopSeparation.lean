@@ -1,5 +1,6 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Analytical theorem and formal source candidate. Lean elaboration and kernel audit: NOT_RUN. -/
+Analytical theorem and formal source candidate: module elaboration observed.
+Fresh separate kernel replay NOT_RUN; see issue #1784 for scoped checks. -/
 import GRWTSK.Combinatorics.GraphTheory.RelationalHolonomySpinCompletion
 import Mathlib
 
@@ -49,7 +50,7 @@ def incomingEdge {a b : V} (e : E a b) (h : G) :
 theorem lift_target_unique {a b : V} (e : E a b) (g h : G)
     (e' : Edge E U (a, g) (b, h)) (he : e'.original = e) :
     h = g * U e := by
-  rw [← e'.target_eq, he]
+  simpa only [he] using e'.target_eq.symm
 
 /-- Project a path, retaining every old edge in its original order. -/
 def erasePath {x y : V × G} :
@@ -59,13 +60,12 @@ def erasePath {x y : V × G} :
 
 /-- Based path lifting returns both the actual endpoint sheet and lifted path. -/
 def liftPath {a b : V} (p : Path E a b) (g : G) :
-    Σ h : G, Path (Edge E U) (a, g) (b, h) := by
-  induction p generalizing g with
-  | refl a =>
-      exact ⟨g, Path.refl (a, g)⟩
-  | cons e rest ih =>
-      obtain ⟨h, tail⟩ := ih (g * U e)
-      exact ⟨h, Path.cons (liftEdge E U e g) tail⟩
+    Σ h : G, Path (Edge E U) (a, g) (b, h) :=
+  match p with
+  | .refl a => ⟨g, Path.refl (a, g)⟩
+  | .cons e rest =>
+      let tail := liftPath rest (g * U e)
+      ⟨tail.1, Path.cons (liftEdge E U e g) tail.2⟩
 
 /-- The endpoint is the starting coordinate multiplied by ordered holonomy. -/
 theorem lift_endpoint {a b : V} (p : Path E a b) (g : G) :
@@ -80,7 +80,7 @@ theorem erase_liftPath {a b : V} (p : Path E a b) (g : G) :
     erasePath E U (liftPath E U p g).2 = p := by
   induction p generalizing g with
   | refl a => rfl
-  | cons e rest ih => simp [liftPath, erasePath, ih]
+  | cons e rest ih => simp [liftPath, erasePath, liftEdge, ih]
 
 /-- Distinct original holonomies give distinct based lifted endpoints. -/
 theorem distinct_endpoints {a : V} (p q : Path E a a) (g : G)
@@ -140,7 +140,7 @@ theorem target_unique {a b : V} (e : E a b) (s t : Bool)
     (lifted : Edge E bit (a, s) (b, t))
     (he : lifted.original = e) :
     t = nextSheet E bit s e := by
-  rw [← lifted.target_eq, he]
+  simpa only [he] using lifted.target_eq.symm
 
 /-- Projection of one step is always the original directed edge. -/
 def baseEdge {x y : V × Bool} (e : Edge E bit x y) : E x.1 y.1 :=
@@ -172,10 +172,10 @@ def baseInner [Fintype V] (f g : V → ℂ) : ℂ :=
   ∑ a : V, star (f a) * g a
 
 /-- Uniform probability normalization on each two-point sheet fiber. -/
-def coverInner [Fintype V] (f g : V × Bool → ℂ) : ℂ :=
+noncomputable def coverInner [Fintype V] (f g : V × Bool → ℂ) : ℂ :=
   (∑ a : V,
-    (star (f (a, false)) * g (a, false)) +
-    (star (f (a, true)) * g (a, true))) / 2
+    ((star (f (a, false)) * g (a, false)) +
+    (star (f (a, true)) * g (a, true)))) / 2
 
 /-- The fiber-constant embedding preserves the Hilbert pairing exactly. -/
 theorem pullback_inner [Fintype V] (f g : V → ℂ) :
@@ -196,7 +196,11 @@ separate the two cyclic orderings. The group is UT₃(F₂), of order eight. -/
 
 namespace EightSheetWitness
 
-inductive Letter where | a | b deriving DecidableEq, Fintype, Repr
+inductive Letter where | a | b deriving DecidableEq, Repr
+
+instance : Fintype Letter where
+  elems := {.a, .b}
+  complete := by intro x; cases x <;> simp
 
 structure Fiber where
   a : Bool

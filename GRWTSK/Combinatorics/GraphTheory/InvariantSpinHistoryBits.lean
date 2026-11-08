@@ -224,16 +224,17 @@ variable {V : Type u} {E : V → V → Type v} {a : V}
 def eraseToSource : (n : Nat) →
     Path (iterEdge E n) (iterAnchor a n) (iterAnchor a n) →
       Path E a a
-  | 0, p => p
+  | 0, p => Path.lowerEdges p
   | n + 1, p => eraseToSource n (SpinPath.erase p)
 
 /-- The entire source loop is recovered after any number of retries. -/
 theorem eraseToSource_pending (p : Path E a a) (n : Nat) :
     eraseToSource (n := n) (pendingLoop p n) = p := by
   induction n with
-  | zero => rfl
+  | zero => exact Path.lower_raiseEdges p
   | succ n ih =>
-      simpa [eraseToSource, pendingLoop, SpinPath.erase_retryLoop] using ih
+      change eraseToSource n (SpinPath.erase (pendingLoop p (n + 1))) = p
+      rw [pendingLoop_recover, ih]
 
 /-- Reading an orbit bit from the retained source requires an actual decoder. -/
 noncomputable def stageOrbitBit {P : Type w} {Γ : Type*}
