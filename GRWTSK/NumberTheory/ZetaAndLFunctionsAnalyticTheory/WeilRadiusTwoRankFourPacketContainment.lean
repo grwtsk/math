@@ -46,10 +46,12 @@ would still be required.  This file therefore asserts neither `StageLower 1`
 unconditionally nor any cofinal, RH, or Dirichlet-GRH conclusion.
 
 Primary mathematical mechanism: exact rational interval inclusion.  The
-external arbitrary-precision screen recorded in grwtsk/noeaaeue reported all
-8450 endpoint inequalities passing, but is diagnostic corroboration only and
-is not imported as a proof premise here.  Independent analytical review and
-novelty assessment remain pending.
+external arbitrary-precision screen recorded in grwtsk/noeaaeue passed all
+8450 endpoint inequalities for a distinct recipe with 64-bit memoized scalar
+inputs.  The target here uses `RadiusTwoRankFourRemoteReturn.calculatedBounds`
+with 45-bit observations and 2048 boundary terms.  That screen supplies no
+same-target corroboration; an exact comparison between the two recipes remains
+open.  Independent analytical review and novelty assessment remain pending.
 -/
 
 set_option autoImplicit false

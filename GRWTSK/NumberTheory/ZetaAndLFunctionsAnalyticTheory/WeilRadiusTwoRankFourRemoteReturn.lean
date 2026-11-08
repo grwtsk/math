@@ -6,9 +6,11 @@ Authors: grwtsk contributors.
 Source base: grwtsk/math@fe3fd586707c81fdd693a076c4971bea6fbe51e8.
 Canonical workflow source: grwtsk/noeaaeue@
 9d456d64a0137289cddc416ea78f043cf345873a.
-SOURCE_PROOF_CANDIDATE / LEAN_COMPILATION_NOT_RUN /
-FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
-INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
+Literal 45-bit/2048-term complete-remote entry enclosure. Formal assurance
+is tracked in grwtsk/noeaaeue docs/verification.md with exact-source receipts.
+Independent analytical review and novelty assessment remain pending.
+This recipe is distinct from archived 64-bit memoized scalar inputs;
+no interval equality or containment between those recipes is asserted.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRadiusTwoPaidObservedGridReturn
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRadiusTwoRemoteProjection
