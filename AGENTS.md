@@ -2,52 +2,152 @@
 
 This repository is the canonical pure mathematical source for GRWTSK.
 
-- Use exactly `grwtsk contributors` for local attribution in bylines, copyright notices, and metadata; keep individual personal names out of local attribution. Preserve actual upstream author attribution and license obligations.
-- Keep maintained mathematical declarations under `GRWTSK.*` or explicit upstream dependencies.
-- Place definitions and theorems by mathematical subject, not by orchestration workflow.
-- Use the official MSC2020 heading hierarchy for maintained source folders, bound by `documentation/taxonomy/msc2020/source-layout-v1.json`. Preserve existing declaration namespaces and source verification scopes. PMD IDs are retired; source provenance is independent of taxonomy metadata.
-- Resolve current source paths through the MSC layout, including `followup_files`; preserved declaration namespaces do not determine filesystem locations. Store provider-derived Lean source in the canonical `GRWTSK/` subject tree, with relative per-file links from isolated provider packages under `documentation/adapters/`. Keep their dependency pins and build targets separate from the root build.
-- Preserve exact hypotheses, source identities, certificate scopes, trust boundaries, and unresolved premises.
-- Apply the [proof-comparison disposition](documentation/mathematics/_support/reference/proof-comparison-disposition.md) to every newly authored, revised, imported, or promoted proof claim: explain a complete primary analytical argument, compare the actual mathematical objects and source observations, seek a genuinely distinct alternative analytic route or hostile check when useful, identify counterexamples and the precise consumer/return, and disclose shared or unresolved premises. Do not confuse two formal scripts with independent proofs. Do not require a second proof as a condition of legitimate mathematics; label absent independent review honestly.
-- Keep mathematical comparison/analytic-completion status separate from Lean parsing, compilation, kernel verification and axiom audits. Typechecking may expose previously unrecognized consequences, but throughput alone does not establish prior-art novelty, source equivalence, analytic transfer or noncircular proof independence. Independently assess exact-statement novelty against dated primary sources; distinguish reproducible finite computation, certified computer-assisted proof and experimental evidence; record attributable human, mathematical-source and tool-specific roles without inventing causal provenance; assess access and feedback separately from novelty and correctness. Novelty and a second proof are not prerequisites for logical validity. Analytic proofs can exist without Lean, and Lean evidence cannot be fabricated from them. Never retroactively change a historical proof's acceptance or claim corpus-wide analytic review from a repository-wide policy.
+## Working in the checkout and publishing changes
 
-- Treat elaboration/typechecking as valuable observation of a theorem's formal **neighborhood** (hypotheses, types, dependencies and permitted steps), not as a theoretical qualification of its objects or analytic transfer. Before **mathematically qualified proof-capsule admission**, require a reviewed analytic/theoretical disposition as defined in the [proof-comparison disposition](documentation/mathematics/_support/reference/proof-comparison-disposition.md); retain unqualified candidate capsules without presenting them as mathematical proof. Grothendieck-style structural comparison and analytic estimates are examples, not mandatory methods or constraints on mathematical sources. Noe owns the separate operational admission contract; do not mutate the existing PW-0 codec or historical receipts from this rule.
-- For paper-derived formalizations, cite the actual paper, edition, authors and exact theorem or method and hypotheses in source comments or the associated issue/PR. Record declarations, source pins, verification outcomes or `NOT_RUN`, and missing bridges there or in an existing verification target. The literature register is optional; do not create or regenerate it as a prerequisite for a Lean change.
-- Do not automatically create or regenerate subject articles, proof summaries, mirrored source documentation, generated navigation, or other prose documents when adding or revising Lean sources. An explicitly requested, useful authored document is permitted, but documentation generation is not a source-publication or proof-verification gate.
-- Static replay manifests and mathematical acceptance predicates may live under `documentation/mathematics/_verification/targets/`.
-- Do not commit process runners, mutable caches, execution attempts, receipts, controller state, schedules, authority records, WSC coordination, generated capsule state, or Git-effect machinery here.
-- Implement effectful verification, repository mutation, proof-capsule assembly, and any **explicitly requested** generated documentation in `grwtsk/noeaaeue`, bound to a pinned math commit.
-- Do not promote a finite computation, conditional implication, a statistical candidate, or representational analogy to a stronger theorem without an explicit proved bridge. Do not assume a generative system uses diffusion unless that mechanism is source-established; distinguish statistical generation, symbolic calculation, elaboration, and kernel proof. Provider names belong only where needed for source identity, licensing, reproducibility, or a documented contribution; never advertise a vendor.
+- Read any more-specific `AGENTS.md` before editing its subtree, including
+  [documentation/AGENTS.md](documentation/AGENTS.md) for documentation changes.
+- Work in the existing checkout on `main` by default. Create a branch or worktree
+  only when explicitly requested or direct work on `main` is technically
+  impossible. If another branch is checked out, switch safely; preserve and
+  report any uncommitted or conflicting work that prevents the switch.
+- Inspect the current HEAD, working tree and index before editing and committing.
+  Concurrent changes are intentional stability data: preserve unrelated work,
+  report exact collision paths and states, and never reset, discard, overwrite
+  or hide changes to avoid a collision. Stage and commit only the task's changes.
+- Build each commit on the current complete repository tree, never a partial
+  overlay. Before advancing `main`, review the diff and use an expected-head
+  lease; refresh and reconcile if HEAD changes. Push completed commits to the
+  configured upstream with routine non-force pushes. Force-pushes, remote branch
+  deletion and branch-protection changes require an explicit request.
+- For authorized formalization, publish the source directly on `main`. A patch,
+  archive, unattached blob or detached delta tree is not final delivery. Temporary
+  Git objects may help assemble and inspect a commit; confirm that the resulting
+  commit is reachable from `main` before reporting publication.
 
-## Direct repository formalization
+## Source layout and dependencies
 
-- For user-authorized formalization work, publish the mathematical source directly on the existing `main` branch using routine non-force commits, preserving concurrent changes.
-- A downloadable patch, archive, unattached blob, or detached delta tree is not the requested final delivery. Temporary Git objects may be used to assemble and inspect a commit, but confirm that the resulting commit is reachable from `main` before reporting publication.
-- Build on the current complete repository tree. Never replace it with a partial overlay. Before advancing `main`, check the diff and use an expected-head lease; refresh and reconcile if the head changes.
-- Source publication and mathematical acceptance are separate. Preserve explicit `NOT_RUN` statuses for compilation, fresh kernel checking and transitive axiom auditing until actual source-bound evidence exists. File or update exact-source verification issues without dispatching unauthorized execution.
-- Keep incompatible upstream adapters outside the local default build. Do not promote root imports or change dependency versions merely to publish a candidate.
+- Keep maintained mathematical declarations under `GRWTSK.*` or explicit upstream
+  dependencies. Place definitions and theorems by mathematical subject, not by
+  orchestration workflow.
+- Use the official MSC2020 heading hierarchy, bound by
+  `documentation/taxonomy/msc2020/source-layout-v1.json`. Resolve current paths
+  through that layout, including `followup_files`; declaration namespaces do not
+  determine filesystem locations. Preserve existing namespaces and verification
+  scopes. PMD IDs are retired; source provenance is independent of taxonomy.
+- Store provider-derived Lean source in the canonical `GRWTSK/` subject tree.
+  Use relative per-file links from isolated packages under
+  `documentation/adapters/`; keep their dependency pins and build targets
+  separate from the root build.
+- Keep incompatible upstream adapters outside the local default build. Do not
+  promote root imports or change dependency versions merely to publish a candidate.
+
+## Mathematical claims and evidence
+
+- Preserve exact hypotheses, source identities, certificate scopes, trust
+  boundaries and unresolved premises.
+- Apply the [proof-comparison disposition](documentation/mathematics/_support/reference/proof-comparison-disposition.md)
+  to every newly authored, revised, imported or promoted proof claim. Explain a
+  complete primary analytical argument; compare the actual mathematical objects
+  and source observations; identify counterexamples and the precise consumer or
+  return to the original problem; disclose shared or unresolved premises. Seek a
+  genuinely distinct alternative analytic route or hostile check when useful.
+- Two formal scripts do not establish independent proofs. Label absent independent
+  review honestly. Neither novelty nor a second proof is required for logical
+  validity. Analytic proofs may exist without Lean; they do not supply Lean evidence.
+- Assess mathematical comparison and analytic completion separately from Lean
+  parsing, compilation, fresh kernel checking and transitive axiom auditing.
+  Source publication is not mathematical acceptance. Keep each unperformed formal
+  check explicitly `NOT_RUN` until actual source-bound evidence exists. File or
+  update exact-source verification issues without dispatching unauthorized execution.
+- Treat elaboration/typechecking as valuable observation of the formal
+  **neighborhood**: hypotheses, types, dependencies and permitted steps. It may
+  expose previously unrecognized consequences, but throughput alone does not
+  establish source equivalence, analytic transfer, noncircular proof independence
+  or prior-art novelty. Assess exact-statement novelty against dated primary sources.
+- Distinguish reproducible finite computation, certified computer-assisted proof
+  and experimental evidence. Do not promote a finite computation, conditional
+  implication, statistical candidate or representational analogy to a stronger
+  theorem without an explicit proved bridge.
+- Distinguish statistical generation, symbolic calculation, elaboration and kernel
+  proof. Do not assume a generative system uses diffusion unless its mechanism is
+  source-established.
+- Record attributable human, mathematical-source and tool-specific roles without
+  inventing causal provenance. Assess access and feedback separately from novelty
+  and correctness. Never infer corpus-wide analytic review or retroactively change
+  historical acceptance from a repository-wide policy.
+- Before **mathematically qualified proof-capsule admission**, require the reviewed
+  analytic/theoretical disposition defined above. Retain unqualified candidate
+  capsules without presenting them as mathematical proof. Structural comparison
+  and analytic estimates are examples, not required methods. Noe owns the separate
+  operational admission contract; this rule does not authorize changes to the
+  existing PW-0 codec or historical receipts.
+
+## Source references and documentation
+
+- For paper-derived formalizations, cite the actual paper, edition, authors,
+  exact theorem or method, and hypotheses in source comments or the associated
+  issue/PR. Record declarations, source pins, verification outcomes or `NOT_RUN`,
+  and missing bridges there or in an existing verification target.
+- The literature register is optional. Do not create or regenerate it as a
+  prerequisite for a Lean change.
+- Do not automatically create or regenerate subject articles, proof summaries,
+  mirrored source documentation, generated navigation or other prose when adding
+  or revising Lean sources. Explicitly requested, useful authored documents are
+  permitted; documentation generation is not a publication or verification gate.
+
+## Mathematical source versus operational machinery
+
+- Static replay manifests and mathematical acceptance predicates may live under
+  `documentation/mathematics/_verification/targets/`.
+- Do not commit process runners, mutable caches, execution attempts, receipts,
+  controller state, schedules, authority records, WSC coordination, generated
+  capsule state or Git-effect machinery in this repository.
+- Implement machinery for effectful verification, repository mutation,
+  proof-capsule assembly and explicitly requested documentation generation in
+  `grwtsk/noeaaeue`, bound to a pinned math commit. This placement rule does not
+  prohibit authorized source edits and routine Git publication in this checkout.
+- For automation covered by `advance-browser-chats`, `chatgpt-message`,
+  `noe-math-chat-bridge` or `noe-proof-automation`, discover and read the applicable
+  canonical skill through `~/.agents/skills` (legacy `~/.codex/skills` links also
+  resolve to Noe). Do not maintain independent copies. If canonical access is
+  unavailable, report it and stop dependent automation. Skill availability grants
+  no additional execution or messaging authority.
 
 ## Privacy and local attribution
 
-- Use exactly `grwtsk contributors` for local content attribution. For commits made by local automation on behalf of this checkout owner, use `grwtsk <contributors@grwtsk.invalid>`. Anyone may contribute under their own Git author and committer identity; preserve other contributors’ attribution. Do not enforce a repository-wide commit identity or rewrite other contributors’ identities.
-- Where an individual human reference is necessary, use only `R.A.` or `Hs`. Keep personal names, personal email addresses, private account handles, and personal device identifiers out of maintained content.
-- Preserve public researchers' source bylines, upstream authorship, and license obligations.
-- Privacy redactions affect historical source displays, encoded recipes, and receipts. Original hashes and source pins describe pre-redaction evidence; they do not certify edited bytes. Redaction and rewritten Git identities do not establish fresh replay, kernel verification, or stronger mathematical acceptance.
+- Use exactly `grwtsk contributors` for local bylines, copyright notices and
+  metadata. Keep individual personal names out of local attribution.
+- For local automation commits on behalf of this checkout owner, use
+  `grwtsk <contributors@grwtsk.invalid>` for author and committer. Preserve other
+  contributors' own identities; do not enforce a repository-wide Git identity or
+  rewrite their attribution.
+- Where an individual human reference is necessary, use only `R.A.` or `Hs`.
+  Keep personal names, personal email addresses, private account handles and
+  personal device identifiers out of maintained content. Preserve public
+  researchers' bylines, upstream authorship and license obligations.
+- Use provider names only for source identity, licensing, reproducibility or a
+  documented contribution; never advertise a vendor.
+- Privacy redactions affect historical source displays, encoded recipes and
+  receipts. Original hashes and source pins describe pre-redaction evidence,
+  not edited bytes. Redaction or rewritten Git identities do not establish fresh
+  replay, kernel verification or stronger mathematical acceptance.
 
 ## Structural-intelligence work
 
-Read `documentation/mathematics/_support/reference/structural-intelligence.md` and
-the matching current-main canonical skill under
-`grwtsk/noeaaeue/tools/automation-skills/` before an increment in this programme.
-Discover canonical sources through `~/.agents/skills`; do not use independent or
-stale personal copies. Use `structural-intelligence` for the shared workflow and
-`typed-port-routing`, `graph-sandwich-search` or `finite-diffusion` when their
-specific mathematical objects are present. Formalize a consumer-backed result first, explain
-its mathematical use, then evaluate the guidance. Keep joint premises, alternative
-proof routes, source mappings and evidence roles distinct. Apply the skills to
-actual work and improve them from recorded failures, not unmeasured claims.
-
-Track the programme in grwtsk/noeaaeue#406. Queue taxonomy proposals in
-grwtsk/math#1425. The user approved the coordinated documentation-only
-quiet-window batch on 2026-10-28; mathematical source namespaces stay unchanged. New skill files do not authorize
-execution, publication, root promotion or dependency migration.
+- Before a programme increment, read the
+  [structural-intelligence reference](documentation/mathematics/_support/reference/structural-intelligence.md)
+  and matching current-main canonical skills under
+  `grwtsk/noeaaeue/tools/automation-skills/`, discovered through `~/.agents/skills`.
+  Do not use independent or stale personal copies.
+- Use `structural-intelligence` for the shared workflow; add `typed-port-routing`,
+  `graph-sandwich-search` or `finite-diffusion` when their specific mathematical
+  objects are present.
+- Formalize a consumer-backed result first, explain its mathematical use, then
+  evaluate the guidance. Keep joint premises, alternative proof routes, source
+  mappings and evidence roles distinct. Improve skills from recorded failures in
+  actual work, not unmeasured claims.
+- Track the programme in [grwtsk/noeaaeue#406](https://github.com/grwtsk/noeaaeue/issues/406)
+  and queue taxonomy proposals in [grwtsk/math#1425](https://github.com/grwtsk/math/issues/1425).
+  The 2026-10-28 approval covers the coordinated documentation-only quiet-window
+  batch; mathematical source namespaces stay unchanged. New skill files do not
+  authorize execution, publication, root promotion or dependency migration.
