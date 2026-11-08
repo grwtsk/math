@@ -12,7 +12,7 @@ Missing bridge: Conjecture statements may contain sorry. Do not import them as e
 
 | Isolated adapter directory | Upstream project | Toolchain | Import surfaces |
 | --- | --- | --- | --- |
-| `adapters/formal-conjectures` | `.` | `leanprover/lean4:v4.33.1` | 4 |
+| [`docs/adapters/formal-conjectures`](./) | `.` | `leanprover/lean4:v4.33.1` | 4 |
 
 Run `lake build` only inside the selected adapter directory using its exact toolchain. This is a requested check, not a successful receipt. Path dependencies in the copied lock are explicitly rebound to the same immutable repository subdirectory; originals and conversions are retained in catalogue.json. Upstream Lake configuration remains the pinned dependency configuration.
 

@@ -12,28 +12,28 @@ Missing bridge: Its claim graph tracks varying evidence roles. Admit only exact 
 
 | Isolated adapter directory | Upstream project | Toolchain | Import surfaces |
 | --- | --- | --- | --- |
-| `adapters/ieantn/Solutions/CH2.v1` | `Solutions/CH2.v1` | `leanprover/lean4:v4.34.0-rc2` | 51 |
-| `adapters/ieantn/Solutions/CH2.v2` | `Solutions/CH2.v2` | `leanprover/lean4:v4.34.0-rc2` | 8 |
-| `adapters/ieantn/Solutions/CH2.v3` | `Solutions/CH2.v3` | `leanprover/lean4:v4.34.0-rc2` | 6 |
-| `adapters/ieantn/Solutions/CH2.v4` | `Solutions/CH2.v4` | `leanprover/lean4:v4.34.0-rc2` | 1 |
-| `adapters/ieantn/Solutions/Chebyshev.v1` | `Solutions/Chebyshev.v1` | `leanprover/lean4:v4.34.0-rc2` | 3 |
-| `adapters/ieantn/Solutions/DudekPlatt.v2` | `Solutions/DudekPlatt.v2` | `leanprover/lean4:v4.34.0-rc2` | 1 |
-| `adapters/ieantn/Solutions/DudekPlatt.v3` | `Solutions/DudekPlatt.v3` | `leanprover/lean4:v4.34.0-rc2` | 3 |
-| `adapters/ieantn/Solutions/DudekPlatt.v4` | `Solutions/DudekPlatt.v4` | `leanprover/lean4:v4.34.0-rc2` | 2 |
-| `adapters/ieantn/Solutions/DudekPlattNumerics.v4` | `Solutions/DudekPlattNumerics.v4` | `leanprover/lean4:v4.34.0-rc2` | 5 |
-| `adapters/ieantn/Solutions/Erdos392.v1` | `Solutions/Erdos392.v1` | `leanprover/lean4:v4.34.0-rc2` | 3 |
-| `adapters/ieantn/Solutions/FKS2.v1` | `Solutions/FKS2.v1` | `leanprover/lean4:v4.34.0-rc2` | 7 |
-| `adapters/ieantn/Solutions/FKS2.v2` | `Solutions/FKS2.v2` | `leanprover/lean4:v4.34.0-rc2` | 7 |
-| `adapters/ieantn/Solutions/GammaAsymptotics.v2` | `Solutions/GammaAsymptotics.v2` | `leanprover/lean4:v4.34.0-rc2` | 10 |
-| `adapters/ieantn/Solutions/Goldbach.v1` | `Solutions/Goldbach.v1` | `leanprover/lean4:v4.34.0-rc2` | 2 |
-| `adapters/ieantn/Solutions/Lcm.v1` | `Solutions/Lcm.v1` | `leanprover/lean4:v4.34.0-rc2` | 2 |
-| `adapters/ieantn/Solutions/Lcm.v2` | `Solutions/Lcm.v2` | `leanprover/lean4:v4.34.0-rc2` | 2 |
-| `adapters/ieantn/Solutions/PrimeInterval.v1` | `Solutions/PrimeInterval.v1` | `leanprover/lean4:v4.34.0-rc2` | 1 |
-| `adapters/ieantn/Solutions/RosserSchoenfeld1962.v1` | `Solutions/RosserSchoenfeld1962.v1` | `leanprover/lean4:v4.34.0-rc2` | 2 |
-| `adapters/ieantn/Solutions/ZeroFreeHeight.v1` | `Solutions/ZeroFreeHeight.v1` | `leanprover/lean4:v4.34.0-rc2` | 1 |
-| `adapters/ieantn/Solutions/ZetaLogDeriv.v1` | `Solutions/ZetaLogDeriv.v1` | `leanprover/lean4:v4.34.0-rc2` | 1 |
-| `adapters/ieantn/Solutions/ZetaZeroes.v1` | `Solutions/ZetaZeroes.v1` | `leanprover/lean4:v4.34.0-rc2` | 2 |
-| `adapters/ieantn` | `.` | `leanprover/lean4:v4.34.0-rc2` | 1 |
+| [`docs/adapters/ieantn/Solutions/CH2.v1`](Solutions/CH2.v1/) | `Solutions/CH2.v1` | `leanprover/lean4:v4.34.0-rc2` | 51 |
+| [`docs/adapters/ieantn/Solutions/CH2.v2`](Solutions/CH2.v2/) | `Solutions/CH2.v2` | `leanprover/lean4:v4.34.0-rc2` | 8 |
+| [`docs/adapters/ieantn/Solutions/CH2.v3`](Solutions/CH2.v3/) | `Solutions/CH2.v3` | `leanprover/lean4:v4.34.0-rc2` | 6 |
+| [`docs/adapters/ieantn/Solutions/CH2.v4`](Solutions/CH2.v4/) | `Solutions/CH2.v4` | `leanprover/lean4:v4.34.0-rc2` | 1 |
+| [`docs/adapters/ieantn/Solutions/Chebyshev.v1`](Solutions/Chebyshev.v1/) | `Solutions/Chebyshev.v1` | `leanprover/lean4:v4.34.0-rc2` | 3 |
+| [`docs/adapters/ieantn/Solutions/DudekPlatt.v2`](Solutions/DudekPlatt.v2/) | `Solutions/DudekPlatt.v2` | `leanprover/lean4:v4.34.0-rc2` | 1 |
+| [`docs/adapters/ieantn/Solutions/DudekPlatt.v3`](Solutions/DudekPlatt.v3/) | `Solutions/DudekPlatt.v3` | `leanprover/lean4:v4.34.0-rc2` | 3 |
+| [`docs/adapters/ieantn/Solutions/DudekPlatt.v4`](Solutions/DudekPlatt.v4/) | `Solutions/DudekPlatt.v4` | `leanprover/lean4:v4.34.0-rc2` | 2 |
+| [`docs/adapters/ieantn/Solutions/DudekPlattNumerics.v4`](Solutions/DudekPlattNumerics.v4/) | `Solutions/DudekPlattNumerics.v4` | `leanprover/lean4:v4.34.0-rc2` | 5 |
+| [`docs/adapters/ieantn/Solutions/Erdos392.v1`](Solutions/Erdos392.v1/) | `Solutions/Erdos392.v1` | `leanprover/lean4:v4.34.0-rc2` | 3 |
+| [`docs/adapters/ieantn/Solutions/FKS2.v1`](Solutions/FKS2.v1/) | `Solutions/FKS2.v1` | `leanprover/lean4:v4.34.0-rc2` | 7 |
+| [`docs/adapters/ieantn/Solutions/FKS2.v2`](Solutions/FKS2.v2/) | `Solutions/FKS2.v2` | `leanprover/lean4:v4.34.0-rc2` | 7 |
+| [`docs/adapters/ieantn/Solutions/GammaAsymptotics.v2`](Solutions/GammaAsymptotics.v2/) | `Solutions/GammaAsymptotics.v2` | `leanprover/lean4:v4.34.0-rc2` | 10 |
+| [`docs/adapters/ieantn/Solutions/Goldbach.v1`](Solutions/Goldbach.v1/) | `Solutions/Goldbach.v1` | `leanprover/lean4:v4.34.0-rc2` | 2 |
+| [`docs/adapters/ieantn/Solutions/Lcm.v1`](Solutions/Lcm.v1/) | `Solutions/Lcm.v1` | `leanprover/lean4:v4.34.0-rc2` | 2 |
+| [`docs/adapters/ieantn/Solutions/Lcm.v2`](Solutions/Lcm.v2/) | `Solutions/Lcm.v2` | `leanprover/lean4:v4.34.0-rc2` | 2 |
+| [`docs/adapters/ieantn/Solutions/PrimeInterval.v1`](Solutions/PrimeInterval.v1/) | `Solutions/PrimeInterval.v1` | `leanprover/lean4:v4.34.0-rc2` | 1 |
+| [`docs/adapters/ieantn/Solutions/RosserSchoenfeld1962.v1`](Solutions/RosserSchoenfeld1962.v1/) | `Solutions/RosserSchoenfeld1962.v1` | `leanprover/lean4:v4.34.0-rc2` | 2 |
+| [`docs/adapters/ieantn/Solutions/ZeroFreeHeight.v1`](Solutions/ZeroFreeHeight.v1/) | `Solutions/ZeroFreeHeight.v1` | `leanprover/lean4:v4.34.0-rc2` | 1 |
+| [`docs/adapters/ieantn/Solutions/ZetaLogDeriv.v1`](Solutions/ZetaLogDeriv.v1/) | `Solutions/ZetaLogDeriv.v1` | `leanprover/lean4:v4.34.0-rc2` | 1 |
+| [`docs/adapters/ieantn/Solutions/ZetaZeroes.v1`](Solutions/ZetaZeroes.v1/) | `Solutions/ZetaZeroes.v1` | `leanprover/lean4:v4.34.0-rc2` | 2 |
+| [`docs/adapters/ieantn`](./) | `.` | `leanprover/lean4:v4.34.0-rc2` | 1 |
 
 Run `lake build` only inside the selected adapter directory using its exact toolchain. This is a requested check, not a successful receipt. Path dependencies in the copied lock are explicitly rebound to the same immutable repository subdirectory; originals and conversions are retained in catalogue.json. Upstream Lake configuration remains the pinned dependency configuration.
 

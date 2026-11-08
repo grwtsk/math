@@ -12,7 +12,7 @@ Missing bridge: Preserve law identifiers, finite/infinite model domains and cert
 
 | Isolated adapter directory | Upstream project | Toolchain | Import surfaces |
 | --- | --- | --- | --- |
-| `adapters/equational-theories` | `.` | `leanprover/lean4:v4.29.1` | 1 |
+| [`docs/adapters/equational-theories`](./) | `.` | `leanprover/lean4:v4.29.1` | 1 |
 
 Run `lake build` only inside the selected adapter directory using its exact toolchain. This is a requested check, not a successful receipt. Path dependencies in the copied lock are explicitly rebound to the same immutable repository subdirectory; originals and conversions are retained in catalogue.json. Upstream Lake configuration remains the pinned dependency configuration.
 

@@ -12,7 +12,7 @@ Missing bridge: Match generalized metric-measure/phase hypotheses, exceptional s
 
 | Isolated adapter directory | Upstream project | Toolchain | Import surfaces |
 | --- | --- | --- | --- |
-| `adapters/carleson` | `.` | `leanprover/lean4:v4.36.0-rc1` | 3 |
+| [`docs/adapters/carleson`](./) | `.` | `leanprover/lean4:v4.36.0-rc1` | 3 |
 
 Run `lake build` only inside the selected adapter directory using its exact toolchain. This is a requested check, not a successful receipt. Path dependencies in the copied lock are explicitly rebound to the same immutable repository subdirectory; originals and conversions are retained in catalogue.json. Upstream Lake configuration remains the pinned dependency configuration.
 
