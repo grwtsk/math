@@ -31,7 +31,7 @@ Git checkout equals a locally patched dependency.
 
 Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
-See catalogue.json for every library, source module/blob, config and dependency
+See [catalogue.json](catalogue.json) for every library, source module/blob, config and dependency
 pin, and the canonical paper ledger for evidence scope and unresolved bridges.
 
 ## Original-source energy return
@@ -47,7 +47,7 @@ root Lean 4.34.1 default target.
 
 ## Consumer wave 2026-10-29
 
-New subject-organized source candidates: `adapters/pfr/GRWTSK/Combinatorics/SmallDoublingDifferenceCover.lean`. See
+Current source locator for this recorded consumer wave: [`SmallDoublingDifferenceCover.lean`](../../../GRWTSK/Combinatorics/SmallDoublingDifferenceCover.lean). See
 [consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.

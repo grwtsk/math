@@ -31,7 +31,7 @@ Git checkout equals a locally patched dependency.
 
 Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
-See catalogue.json for every library, source module/blob, config and dependency
+See [catalogue.json](catalogue.json) for every library, source module/blob, config and dependency
 pin, and the canonical paper ledger for evidence scope and unresolved bridges.
 
 ## Positive-sum statement consumer
@@ -44,3 +44,5 @@ The admitted conjecture is not used; its imported environment still requires
 exact-target transitive auditing. Root recursive-model/version transport remains
 separate, all native checks NOT_RUN, and the provider pin remains unchanged despite
 newer upstream main. No inventory/import count is promoted to a proved bridge.
+
+[Package source references](references.md) retain the selected sources, hypotheses, licensing boundaries, and unresolved correspondence at their recorded scope.

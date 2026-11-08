@@ -31,7 +31,7 @@ Canonical paper mapping: [paper ledger](../../mathematics/_support/reference/lit
 
 ## Consumer wave 2026-10-29
 
-New subject-organized source candidates: `adapters/anthropic-math/fermat/GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean`. See
+Current source locator for this recorded consumer wave: [`FermatSolutionFibers.lean`](../../../GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean). See
 [consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.
