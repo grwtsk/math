@@ -156,6 +156,38 @@ Equations (10)--(11) give the source-correct all-input lower bound
 
    Gamma1(f)>=(K0/2)*(7/5-2/d)^2 *G^2.               (12)
 
+## 3A. A GLOBAL all-input two-mass lower bound, not only a cone
+
+The same argument has a useful form for EVERY original admissible
+radius-four test f, with no leakage-ratio restriction at all.
+Let G=||1_(S_delta)f||_2 and H=||1_(S_delta^c)f||_2.
+The prime-source bound (8) is unconditional. For every r in the same
+original gamma interval J, ordinary Hilbert triangle inequality gives
+
+ ||tau_r f-f|| >= max(0,sqrt(2)*G-2H)
+              >= max(0,(7/5)*G-2H).
+
+The right side is NONNEGATIVE, so squaring is legitimate even when
+H is arbitrarily large. As in (11), gamma[f]>=
+ (K0/2)*max(0,(7/5)*G-2H)^2.
+Using the original c3>-6/5 and E=G^2+H^2 gives the GLOBAL profile
+
+ Q4(f)>= (K0/2)*max(0,(7/5)*G-2H)^2
+             -(6/5)*(G^2+H^2)
+             -212*(2*G*H+H^2).                            (P)
+
+This estimate is for EVERY original radius-four f and EVERY allowed
+shell placement delta, not a claim that its right side is nonnegative.
+The three cones (3)--(4) are obtained by evaluating the POSITIVE
+part in (P) under H<=G/d, using the exact rational guards below.
+
+This global profile is a genuine source-faithful joint-mass estimate
+suitable for a later multi-block decomposition. It is not a Schur
+bound between the shell support and all other support, because the
+positive gamma truncation does not determine the sign of all mixed
+components. Its error grows with H and may be strongly negative;
+no whole-edge positivity or density argument follows.
+
 ## 4. Fully paid constant and exact three-tier rational margin
 
 The original conductor-parity constant c3>-6/5, and by (1)
@@ -273,6 +305,27 @@ def SmallPhysicalLeakage (d : ℕ) (delta : Fin 16 → ℝ)
     (f : ℝ → ℝ) : Prop :=
   (d : ℝ)^2 * energy (liftReal (shellLeakage delta f)) ≤
     energy (liftReal (shellCore delta f))
+
+/-- Original all-input source lower profile in the PHYSICAL
+core/outside masses, including the positive-part gamma jump.
+The mathematical support/gamma/primes maps are proved in the
+written analysis above; this is their scalar source return. -/
+theorem global_two_mass_profile_scalar
+    (G H gamma signedPrime c : ℝ)
+    (hc : -(6 / 5 : ℝ) ≤ c)
+    (hgamma :
+      ((290947153 / 28311552 : ℝ) / 2) *
+          (max 0 ((7 / 5 : ℝ) * G - 2 * H)) ^ 2 ≤ gamma)
+    (hprime : -(212 : ℝ) * (2 * G * H + H ^ 2) ≤ signedPrime) :
+    ((290947153 / 28311552 : ℝ) / 2) *
+        (max 0 ((7 / 5 : ℝ) * G - 2 * H)) ^ 2 -
+      (6 / 5 : ℝ) * (G ^ 2 + H ^ 2) -
+      212 * (2 * G * H + H ^ 2) ≤
+        c * (G ^ 2 + H ^ 2) + gamma + signedPrime := by
+  have hmass : 0 ≤ G ^ 2 + H ^ 2 :=
+    add_nonneg (sq_nonneg _) (sq_nonneg _)
+  have hcMul := mul_le_mul_of_nonneg_right hc hmass
+  nlinarith
 
 /-- The exact universal scalar consumer: a signed source must pay
 ALL three inputs, and each physically nonnegative scale and bound.
