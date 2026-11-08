@@ -15,6 +15,14 @@ Current folder navigation uses [MSC2020](../msc2020/README.md). Authored concept
 
 This authored statement extends math `6f2bc3fe54fb3552eb7753318d54fa5e7a8b1a50` and retains source-library inspection baseline `eb3124bd05f0f74aaa709ca36a855539f722fb92`. Probability sources were inspected 2026-10-20. This is maintained editorial source, not an execution receipt; exact-revision diagnostics belong in Noe.
 
+## Historical candidate coverage
+
+The counts below describe this earlier candidate and its pinned source inventory.
+They are not a current checkout census. The [taxonomy overview](../index.md)
+describes the later candidate with 132 concepts at its stated revision;
+[current subject-guide navigation](../subjects/index.md) has a separate document-entry scope.
+Neither later candidate counts nor document entries update the review outcomes below.
+
 | Measure | Candidate numerator | Denominator | Unresolved |
 | --- | --- | --- | --- |
 | Fully registered/reconciled MSC entries | 0 | Exact E_L sets UNAVAILABLE | Native acquisition, extraction completeness and permitted bulk reuse unresolved |
