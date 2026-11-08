@@ -15,3 +15,14 @@ Effectful materialization and audit tooling belong to `grwtsk/noeaaeue`. The old
 Local attribution: grwtsk contributors.
 
 Provider packages and dependency manifests live in [docs/adapters](../../adapters/README.md). Mapped provider module views link to the canonical `GRWTSK/` MSC tree. Source-boundary directories may instead contain draft files or requirements without a functioning compiled package; the adapter index records those distinctions. The root build retains its existing root imports; provider dependencies and native build targets remain isolated. Source layout `followup_files` bind the canonical source locations and provider links without replacing historical source identities.
+
+## Resolving document aliases
+
+The [documentation layout](documentation-layout-v1.json) records document aliases
+in its `pages` map. Resolve a recorded path through that map before opening it.
+In particular, entries in `current_navigation` retain the earlier `documentation/`
+prefix; their `pages` values give the maintained `docs/` destinations. The
+[subject-guide index](../subjects/index.md) provides readable browsing.
+These aliases concern document navigation; use the source layout and its
+`followup_files` for Lean source placement. Neither lookup changes historical
+source identities or supplies verification evidence.
