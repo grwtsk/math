@@ -27,10 +27,11 @@ adapter. The clock-memory group is metabelian; arbitrary free-group reduced-word
 separation requires an additional, non-metabelian finite 2-group construction.
 The `TruncatedMagnus` section constructs a finite characteristic-two matrix
 representation of the degree-truncated noncommutative Magnus algebra and proves
-its finite-2-group property. General separation is conditional on the explicitly
-named `SyllableCoefficientLaw`; `syllableNormalFormLaw` now supplies the normal-form return.
-The analytical syllable argument is recorded below. No unconditional formal
-residual-2 theorem is claimed.
+its finite-2-group property. `syllableCoefficientLaw` proves the signed
+syllable coefficient and `syllableNormalFormLaw` supplies the normal-form return.
+`separates_nonidentity` and `magnus_nonidentity_endpoint` are unconditional
+separation theorems for every nonidentity element of Mathlib's actual free group.
+The analytical argument and the exact source comparison are recorded below.
 
 The original typed state, transport, label, and permission boundaries remain
 unchanged. No physical spin, neural-energy, Weil-operator, RH or GRH transfer.
@@ -294,25 +295,36 @@ then gives (1+x)^(2^(D+1))=1. Finiteness and this exponent bound prove `IsPGroup
 The generator inverse is proved to be the finite geometric series. Evaluation
 is Mathlib's actual `FreeGroup.lift`, so inverse-pair cancellation is automatic;
 the final consumer uses the existing marked voltage endpoint with its exact
-source history. These facts do not require the remaining coefficient supplier.
+source history. The coefficient and normal-form suppliers are proved below.
 
-**Formal gaps and evidence scope.** `monomial_top` now proves the matrix
-observation of every ordered monomial, and `syllableNormalFormLaw` proves the
-normal-form supplier for the actual free-group quotient. Its proof prepends one
-signed generator at a time: unequal head labels extend the chain, equal labels
-merge integer exponents, and a zero merged exponent drops that head. Every step
-preserves the free-group class; a nonidentity class excludes the empty result.
-This supplies existence, not uniqueness or nonidentity of every reduced form.
+**Formal proof and evidence scope.** `monomial_top` proves the matrix
+observation of every ordered monomial. `CoefficientProof.signedPoly` is a finite
+polynomial for the actual signed generator power: nonnegative exponents use
+(1+X)^|e|, negative exponents use (1+X+...+X^D)^|e|. Factoring |e|=2^v₂(|e|)q
+with q odd and using characteristic-two polynomial expansion proves constant
+coefficient one, coefficient one at d=2^v₂(|e|), and zero at all intermediate
+positive degrees. `signedPoly_eval` proves equality with the actual matrix
+power, including negative exponents; no abstract replacement free group is used.
 
-The characteristic-two leading coefficients for arbitrary signed syllable
-powers and the run-count convolution argument remain UNPROVED IN LEAN.
-`SyllableCoefficientLaw` is an explicit proposition, not an axiom, `sorry` or
-instance. General separation STILL requires it. Full-module elaboration now
-succeeds through the required positive-word/path/cover imports. The unused
-clock-memory no-wrap import was removed; that separate module has not been
-repaired or certified by this change. Fresh separate kernel replay and
-independent analytical review are NOT_RUN. Exact checks and selected transitive
-axiom observations are recorded in issue #1784; no novelty claim is made.
+The convolution is an ORDERED iterated finite sum, also valid for noncommuting
+matrix factors. `chain_sublist_runs` shows that a chain with unequal adjacent
+labels can select at most one label from a constant run. `runs_counts_positive`
+then rules out a zero-length contribution by the full run count.
+`runsExpand_injective` recovers each positive run length using its initial
+constant segment, including nonadjacent repeated generators. Thus the iterated
+sum has exactly one surviving choice of degrees, whose coefficient is the
+product of ones. `matrix_run_product`, `matrixRepresentation_syllables`, and
+`syllableCoefficientLaw` make the return to the constructed matrices explicit.
+
+`syllableNormalFormLaw` proves the normal-form supplier for the actual quotient
+by head merging, preserving the free-group class at every step; nonidentity
+excludes the empty output. General separation now has neither supplier as a
+hypothesis. No `sorry`, additional axiom or accepting instance supplies a gap.
+Full-module elaboration includes both unconditional separation consumers.
+Fresh separate kernel replay and independent analytical review remain NOT_RUN.
+Issue #1784 records the exact-source checks and selected transitive axiom audit;
+these are distinct from independent review and novelty, which is not claimed.
+The unused clock-memory no-wrap module is outside this formal dependency cone.
 Spanning-tree/fundamental-group return and index-two cover towers remain outside
 this change; no graph-level residual-2 theorem is inferred from the bouquet map.
 -/
@@ -597,19 +609,449 @@ lemma syllablePattern_pos (s : List (A × ℤ)) (hs : s ≠ []) :
     have hp := syllableDegree_pos t.2
     omega
 
-/-- An explicit open formal obligation, NOT an axiom or a proved theorem.
-It refers to the constructed finite group and its computed matrix entry.
-The analytical argument is given above. -/
+/-- Exact coefficient specification for the constructed finite group.
+`syllableCoefficientLaw` below discharges this proposition. -/
 def SyllableCoefficientLaw : Prop :=
   ∀ s : List (A × ℤ), ReducedSyllables s →
     coefficient (syllablePattern s).get (syllableClass s) = 1
 
-/-- Conditional on the precisely identified coefficient supplier, arbitrary
-reduced syllables are separated by a concrete finite 2-group. -/
-theorem separates_syllables (law : SyllableCoefficientLaw (A := A))
+/-! ### Signed polynomial coefficients and ordered run convolution
+
+The helper namespace is used only by the coefficient theorem below. Polynomials
+are finite witnesses evaluated in the existing path matrices, not replacement
+free-group objects. Negative exponents use the full finite geometric inverse.
+-/
+namespace CoefficientProof
+open List
+variable {A : Type*} [DecidableEq A]
+/-- Expand an ordered list of labelled runs, allowing zero-length runs. -/
+def runsExpand (s : List (A × ℕ)) : List A := s.flatMap fun t => List.replicate t.2 t.1
+omit [DecidableEq A] in
+lemma chain_sublist_replicate {xs : List A} {a : A} {n : ℕ}
+    (hc : xs.IsChain (· ≠ ·)) (hs : xs <+ List.replicate n a) : xs = [] ∨ xs = [a] := by
+  have hm : ∀ x ∈ xs, x = a := by
+    intro x hx
+    exact (List.mem_replicate.mp (hs.subset hx)).2
+  cases xs with
+  | nil => exact Or.inl rfl
+  | cons b tail =>
+    have hb : b = a := hm b (by simp)
+    subst b
+    cases tail with
+    | nil => exact Or.inr rfl
+    | cons c rest =>
+      have hh := (List.isChain_cons_cons.mp hc).1
+      exact (hh (hm c (by simp)).symm).elim
+
+/-- An adjacent-distinct chain uses at most one label per constant run. -/
+lemma chain_sublist_runs {xs : List A} (s : List (A × ℕ))
+    (hc : xs.IsChain (· ≠ ·)) (hs : xs <+ runsExpand s) : xs <+ s.map Prod.fst := by
+  induction s generalizing xs with
+  | nil => simpa [runsExpand] using hs
+  | cons t ts ih =>
+    change xs <+ List.replicate t.2 t.1 ++ runsExpand ts at hs
+    obtain ⟨left, right, rfl, hl, hr⟩ := List.sublist_append_iff.mp hs
+    have hcl : left.IsChain (· ≠ ·) := hc.left_of_append
+    have hcr : right.IsChain (· ≠ ·) := hc.right_of_append
+    rcases chain_sublist_replicate hcl hl with h | h
+    · subst left
+      exact (ih hcr hr).cons _
+    · subst left
+      exact (ih hcr hr).cons_cons _
+
+
+omit [DecidableEq A] in
+lemma labels_sublist_runs (s : List (A × ℕ)) (hp : ∀ t ∈ s, 0 < t.2) :
+    s.map Prod.fst <+ runsExpand s := by
+  induction s with
+  | nil => simp [runsExpand]
+  | cons t ts ih =>
+    have ht := hp t (by simp)
+    have hts : ∀ x ∈ ts, 0 < x.2 := fun x hx => hp x (by simp [hx])
+    change [t.1] ++ ts.map Prod.fst <+ List.replicate t.2 t.1 ++ runsExpand ts
+    apply List.Sublist.append
+    · exact List.singleton_sublist.mpr (List.mem_replicate.mpr ⟨by omega, rfl⟩)
+    · exact ih hts
+
+omit [DecidableEq A] in
+lemma runsExpand_filter (s : List (A × ℕ)) :
+    runsExpand (s.filter fun t => decide (0 < t.2)) = runsExpand s := by
+  induction s with
+  | nil => rfl
+  | cons t ts ih =>
+    simp only [runsExpand] at ih
+    by_cases h : 0 < t.2
+    · simp [h, runsExpand, ih]
+    · have hz : t.2 = 0 := by omega
+      simp [runsExpand, ih, hz]
+
+/-- Full reduced run count forces every factor to contribute nonconstantly. -/
+lemma runs_counts_positive (s t : List (A × ℕ))
+    (hc : (s.map Prod.fst).IsChain (· ≠ ·))
+    (hp : ∀ x ∈ s, 0 < x.2) (hl : s.map Prod.fst = t.map Prod.fst)
+    (he : runsExpand s = runsExpand t) : ∀ x ∈ t, 0 < x.2 := by
+  have sub := labels_sublist_runs s hp
+  rw [he, ← runsExpand_filter t] at sub
+  have hb := (chain_sublist_runs _ hc sub).length_le
+  have hlen : s.length = t.length := by simpa using congrArg List.length hl
+  have hlen' : (t.filter fun x => decide (0 < x.2)).length = t.length := by
+    simp only [List.length_map] at hb
+    have hf := List.length_filter_le (fun x : A × ℕ => decide (0 < x.2)) t
+    omega
+  simpa using List.length_filter_eq_length_iff.mp hlen'
+lemma runs_takeWhile_head (a : A) (d : ℕ) (s : List (A × ℕ))
+    (hc : (a :: s.map Prod.fst).IsChain (· ≠ ·))
+    (hp : ∀ t ∈ s, 0 < t.2) :
+    (List.replicate d a ++ runsExpand s).takeWhile (fun x => decide (x = a)) =
+      List.replicate d a := by
+  rw [List.takeWhile_append]
+  simp only [List.takeWhile_replicate, decide_true, ite_true]
+  cases s with
+  | nil => simp [runsExpand]
+  | cons t ts =>
+    have ht := hp t (by simp)
+    have hne : t.1 ≠ a := (List.isChain_cons_cons.mp hc).1.symm
+    obtain ⟨k, hk⟩ := Nat.exists_eq_succ_of_ne_zero (Nat.ne_of_gt ht)
+    simp [runsExpand, hk, List.replicate_succ, hne]
+
+/-- Equal expansions with a common reduced label skeleton have unique run lengths. -/
+lemma runsExpand_injective (s t : List (A × ℕ))
+    (hc : (s.map Prod.fst).IsChain (· ≠ ·))
+    (hp : ∀ x ∈ s, 0 < x.2) (hl : s.map Prod.fst = t.map Prod.fst)
+    (he : runsExpand s = runsExpand t) : s = t := by
+  have hpt := runs_counts_positive s t hc hp hl he
+  induction s generalizing t with
+  | nil => cases t <;> simp_all
+  | cons x xs ih =>
+    cases t with
+    | nil => simp at hl
+    | cons y ys =>
+      have hheads : x.1 = y.1 := (List.cons.inj hl).1
+      have htail : xs.map Prod.fst = ys.map Prod.fst := (List.cons.inj hl).2
+      have hcy : (y.1 :: ys.map Prod.fst).IsChain (· ≠ ·) := by
+        have hh := hc
+        rw [hl] at hh
+        simpa only [List.map_cons] using hh
+      have hps : ∀ z ∈ xs, 0 < z.2 := fun z hz => hp z (by simp [hz])
+      have hpys : ∀ z ∈ ys, 0 < z.2 := fun z hz => hpt z (by simp [hz])
+      have hlengths : x.2 = y.2 := by
+        have hh := congrArg (fun w : List A => (w.takeWhile (fun a => decide (a = x.1))).length) he
+        change ((List.replicate x.2 x.1 ++ runsExpand xs).takeWhile _).length =
+          ((List.replicate y.2 y.1 ++ runsExpand ys).takeWhile _).length at hh
+        rw [runs_takeWhile_head _ _ _ hc hps] at hh
+        rw [← hheads] at hh
+        have hcy' : (x.1 :: ys.map Prod.fst).IsChain (· ≠ ·) := by simpa only [hheads] using hcy
+        rw [runs_takeWhile_head _ _ _ hcy' hpys] at hh
+        simpa using hh
+      have hxy : x = y := Prod.ext hheads hlengths
+      subst y
+      have heTail : runsExpand xs = runsExpand ys := by
+        change List.replicate x.2 x.1 ++ runsExpand xs = List.replicate x.2 x.1 ++ runsExpand ys at he
+        exact List.append_cancel_left he
+      have hrest := ih ys hc.tail hps htail heTail hpys
+      exact congrArg (List.cons x) hrest
+
+open Polynomial
+abbrev F2Poly := Polynomial (ZMod 2)
+lemma poly_pow_coeff_one (p : F2Poly) (h0 : p.coeff 0 = 1) (h1 : p.coeff 1 = 1) (m : ℕ) :
+    (p ^ m).coeff 1 = (m : ZMod 2) := by
+  induction m with
+  | zero => simp [Polynomial.coeff_one]
+  | succ m ih =>
+    rw [pow_succ, mul_coeff_one, ih, h0, h1]
+    have hz : (p ^ m).coeff 0 = 1 := by
+      rw [← constantCoeff_apply, map_pow, constantCoeff_apply, h0, one_pow]
+    simp [hz, Nat.cast_add, Nat.cast_one, add_comm]
+lemma expand_f2_pow (p : F2Poly) (k : ℕ) :
+    expand (ZMod 2) (2 ^ k) p = p ^ (2 ^ k) := by
+  have hi : iterateFrobenius (ZMod 2) 2 k = RingHom.id (ZMod 2) := by
+    ext x
+    simp only [iterateFrobenius_def, RingHom.id_apply]
+    exact FiniteField.pow_card_pow k x
+  have h := map_iterateFrobenius_expand (p := 2) p k
+  simpa only [hi, Polynomial.map_id] using h
+lemma odd_part (m : ℕ) (hm : m ≠ 0) :
+    ∃ q : ℕ, Odd q ∧ m = (2 ^ padicValNat 2 m) * q := by
+  obtain ⟨q, hq⟩ := (pow_padicValNat_dvd (p := 2) (n := m))
+  refine ⟨q, ?_, hq⟩
+  apply Nat.not_even_iff_odd.mp
+  intro he
+  obtain ⟨r, hr⟩ := even_iff_two_dvd.mp he
+  apply pow_succ_padicValNat_not_dvd (p := 2) hm
+  refine ⟨r, ?_⟩
+  calc
+    m = 2 ^ padicValNat 2 m * q := hq
+    _ = 2 ^ (padicValNat 2 m + 1) * r := by rw [hr, pow_succ]; ring
+
+noncomputable def geomPoly (n : ℕ) : F2Poly := ∑ k ∈ Finset.range (n+1), X ^ k
+lemma geomPoly_coeff_zero (n : ℕ) : (geomPoly n).coeff 0 = 1 := by
+  simp [geomPoly, finsetSum_coeff, coeff_X_pow]
+lemma geomPoly_coeff_one (n : ℕ) (hn : 0 < n) : (geomPoly n).coeff 1 = 1 := by
+  simp [geomPoly, finsetSum_coeff, coeff_X_pow, hn]
+/-- Finite signed-power polynomial; the inverse includes all degrees through n. -/
+noncomputable def signedPoly (n : ℕ) (e : ℤ) : F2Poly :=
+  (if e < 0 then geomPoly n else 1 + X) ^ e.natAbs
+/-- Exact signed leading coefficient and all lower positive-degree vanishings. -/
+lemma signedPoly_coeff (n : ℕ) (hn : 0 < n) (e : ℤ) (he : e ≠ 0) :
+    (signedPoly n e).coeff 0 = 1 ∧
+    (signedPoly n e).coeff (syllableDegree e) = 1 ∧
+    (∀ k, 0 < k → k < syllableDegree e → (signedPoly n e).coeff k = 0) := by
+  let b : F2Poly := if e < 0 then geomPoly n else 1 + X
+  have h0 : b.coeff 0 = 1 := by
+    dsimp [b]; split_ifs <;> simp [geomPoly_coeff_zero, Polynomial.coeff_one]
+  have h1 : b.coeff 1 = 1 := by
+    dsimp [b]; split_ifs <;> simp [geomPoly_coeff_one n hn, Polynomial.coeff_one]
+  obtain ⟨q, hq, hmul⟩ := odd_part e.natAbs (by simpa using he)
+  have hex : signedPoly n e = expand (ZMod 2) (syllableDegree e) (b ^ q) := by
+    rw [signedPoly, hmul]
+    change b ^ (2 ^ padicValNat 2 e.natAbs * q) = _
+    rw [Nat.mul_comm, pow_mul]
+    exact (expand_f2_pow (b ^ q) (padicValNat 2 e.natAbs)).symm
+  rw [hex]
+  have hd := syllableDegree_pos e
+  refine ⟨?_, ?_, ?_⟩
+  · simp only [coeff_expand hd, dvd_zero, ite_true, Nat.zero_div]
+    rw [← constantCoeff_apply, map_pow, constantCoeff_apply, h0, one_pow]
+  · have h := coeff_expand_mul hd (b ^ q) 1
+    simp only [one_mul] at h
+    rw [h, poly_pow_coeff_one b h0 h1 q]
+    exact hq.natCast_zmod_two
+  · intro k hk hkd
+    rw [coeff_expand hd, ite_eq_right (Nat.not_dvd_of_pos_of_lt hk hkd)]
+
+variable {A : Type*} [DecidableEq A]
+/-- Evaluate the finite polynomial in the ACTUAL Magnus generator, including inverses. -/
+lemma signedPoly_eval {n : ℕ} (target : Fin n → A) (a : A) (e : ℤ) :
+    Polynomial.aeval (variableMatrix target a) (signedPoly n e) =
+      ((generator target a ^ e).val : unipotent n).val := by
+  by_cases he : e < 0
+  · have habs : (e.natAbs : ℤ) = -e := by
+      simp [abs_of_neg he]
+    have hg : Polynomial.aeval (variableMatrix target a) (geomPoly n) =
+        (((generator target a)⁻¹).val : unipotent n).val := by
+      rw [generator_inverse]
+      simp [geomPoly, map_sum, map_pow]
+    simp only [signedPoly, he, ite_true, map_pow, hg]
+    have heq : e = -(e.natAbs : ℤ) := by omega
+    conv_rhs => rw [heq, zpow_neg, zpow_natCast, ← inv_pow]
+    rfl
+  · have habs : (e.natAbs : ℤ) = e := by
+      simp [abs_of_nonneg (by omega : 0 ≤ e)]
+    simp only [signedPoly, he, ite_false, map_pow, map_add, map_one, aeval_X]
+    rw [← habs, zpow_natCast]
+    rfl
+
+open scoped BigOperators
+open Polynomial
+/-- Ordered iterated coefficient sum; no commutativity of target products is assumed. -/
+noncomputable def choiceSum {M : Type*} [AddCommMonoid M] [Module (ZMod 2) M] :
+    List F2Poly → (List ℕ → M) → M
+  | [], f => f []
+  | p :: ps, f => ∑ k ∈ p.support, p.coeff k • choiceSum ps (fun ks => f (k :: ks))
+lemma choiceSum_congr {M : Type*} [AddCommMonoid M] [Module (ZMod 2) M]
+    (ps : List F2Poly) (f g : List ℕ → M)
+    (h : ∀ ks, ks.length = ps.length → f ks = g ks) : choiceSum ps f = choiceSum ps g := by
+  induction ps generalizing f g with
+  | nil => exact h [] rfl
+  | cons p ps ih =>
+    apply Finset.sum_congr rfl
+    intro k hk
+    congr 1
+    apply ih
+    intro ks hs
+    exact h (k::ks) (by simpa using hs)
+lemma choiceSum_map {M N : Type*} [AddCommMonoid M] [Module (ZMod 2) M]
+    [AddCommMonoid N] [Module (ZMod 2) N]
+    (L : M →ₗ[ZMod 2] N) (ps : List F2Poly) (f : List ℕ → M) :
+    L (choiceSum ps f) = choiceSum ps (fun ks => L (f ks)) := by
+  induction ps generalizing f with
+  | nil => rfl
+  | cons p ps ih => simp only [choiceSum, map_sum, map_smul, ih]
+lemma choiceSum_zero {M : Type*} [AddCommMonoid M] [Module (ZMod 2) M] (ps : List F2Poly) :
+    choiceSum ps (fun _ => (0 : M)) = 0 := by
+  induction ps with
+  | nil => rfl
+  | cons p ps ih => simp [choiceSum, ih]
+lemma choiceSum_delta (ps : List F2Poly) (ds : List ℕ) (hl : ds.length = ps.length) :
+    choiceSum ps (fun ks => if ks = ds then (1 : ZMod 2) else 0) =
+      ((ps.zip ds).map fun t => t.1.coeff t.2).prod := by
+  induction ps generalizing ds with
+  | nil => cases ds <;> simp_all [choiceSum]
+  | cons p ps ih =>
+    cases ds with
+    | nil => simp at hl
+    | cons d ds =>
+      have hlen : ds.length = ps.length := by simpa using hl
+      change (∑ k ∈ p.support, p.coeff k • choiceSum ps (fun ks => if k::ks = d::ds then (1 : ZMod 2) else 0)) = _
+      have ht (k : ℕ) :
+          choiceSum ps (fun ks => if k::ks = d::ds then (1 : ZMod 2) else 0) =
+          if k = d then ((ps.zip ds).map fun t => t.1.coeff t.2).prod else 0 := by
+        by_cases hk : k = d
+        · subst k
+          simpa using ih ds hlen
+        · simp only [List.cons.injEq, hk, false_and, ite_false]
+          exact choiceSum_zero ps
+      simp_rw [ht, smul_eq_mul, mul_ite, mul_zero]
+      by_cases hd : d ∈ p.support
+      · simp [hd]
+      · have hz : p.coeff d = 0 := Polynomial.notMem_support_iff.mp hd
+        simp [hd, hz]
+
+lemma monomial_append {A : Type*} [DecidableEq A] {n : ℕ}
+    (target : Fin n → A) (xs ys : List A) :
+    monomial target (xs ++ ys) = monomial target xs * monomial target ys := by
+  simp [monomial]
+lemma monomial_replicate {A : Type*} [DecidableEq A] {n : ℕ}
+    (target : Fin n → A) (a : A) (k : ℕ) :
+    monomial target (List.replicate k a) = variableMatrix target a ^ k := by
+  simp [monomial]
+lemma choiceSum_mul_left {n : ℕ} (x : Algebra n) (ps : List F2Poly) (f : List ℕ → Algebra n) :
+    x * choiceSum ps f = choiceSum ps (fun ks => x * f ks) := by
+  induction ps generalizing f with
+  | nil => rfl
+  | cons p ps ih => simp only [choiceSum, Finset.mul_sum, mul_smul_comm, ih]
+lemma poly_eval_sum {n : ℕ} (x : Algebra n) (p : F2Poly) :
+    Polynomial.aeval x p = ∑ k ∈ p.support, p.coeff k • x ^ k := by
+  simp only [Polynomial.aeval_def, Polynomial.eval₂_eq_sum, Polynomial.sum_def, Algebra.smul_def]
+
+/-- Distribute finite polynomial evaluations in their original factor order. -/
+lemma matrix_product_expansion {A : Type*} [DecidableEq A] {n : ℕ}
+    (target : Fin n → A) (fs : List (A × F2Poly)) :
+    (fs.map fun t => Polynomial.aeval (variableMatrix target t.1) t.2).prod =
+      choiceSum (fs.map Prod.snd)
+        (fun ks => monomial target (runsExpand ((fs.map Prod.fst).zip ks))) := by
+  induction fs with
+  | nil => simp [choiceSum, monomial, runsExpand]
+  | cons t fs ih =>
+    simp only [List.map_cons, List.prod_cons]
+    rw [poly_eval_sum, Finset.sum_mul, ih]
+    change (∑ k ∈ t.2.support, (t.2.coeff k • variableMatrix target t.1 ^ k) *
+      choiceSum (fs.map Prod.snd) (fun ks => monomial target (runsExpand ((fs.map Prod.fst).zip ks)))) = _
+    rw [choiceSum]
+    apply Finset.sum_congr rfl
+    intro k hk
+    rw [smul_mul_assoc, choiceSum_mul_left]
+    congr 1
+    apply choiceSum_congr
+    intro ks hks
+    simp only [List.zip_cons_cons, runsExpand, List.flatMap_cons]
+    rw [monomial_append, monomial_replicate]
+lemma runs_zip_unique (labels : List A) (ds ks : List ℕ)
+    (hc : labels.IsChain (· ≠ ·)) (hd : ds.length = labels.length)
+    (hk : ks.length = labels.length) (hp : ∀ d ∈ ds, 0 < d) :
+    runsExpand (labels.zip ks) = runsExpand (labels.zip ds) ↔ ks = ds := by
+  constructor
+  · intro he
+    have hfst (xs : List ℕ) (hx : xs.length = labels.length) :
+        ((labels.zip xs).map Prod.fst) = labels := by
+      exact List.map_fst_zip (by omega)
+    have hsnd (xs : List ℕ) (hx : xs.length = labels.length) :
+        ((labels.zip xs).map Prod.snd) = xs := by
+      exact List.map_snd_zip (by omega)
+    have hh : labels.zip ds = labels.zip ks := by
+      apply runsExpand_injective
+      · simpa only [hfst ds hd] using hc
+      · intro x hx
+        exact hp x.2 ((List.of_mem_zip hx).2)
+      · rw [hfst ds hd, hfst ks hk]
+      · exact he.symm
+    have h := congrArg (List.map Prod.snd) hh
+    rw [hsnd ds hd, hsnd ks hk] at h
+    exact h.symm
+  · rintro rfl; rfl
+
+lemma matrix_top_product {n : ℕ} (target : Fin n → A) (fs : List (A × F2Poly)) :
+    ((fs.map fun t => Polynomial.aeval (variableMatrix target t.1) t.2).prod) 0 (Fin.last n) =
+      choiceSum (fs.map Prod.snd) (fun ks =>
+        if runsExpand ((fs.map Prod.fst).zip ks) = List.ofFn target then (1 : ZMod 2) else 0) := by
+  let L : Algebra n →ₗ[ZMod 2] ZMod 2 :=
+    { toFun := fun m => m 0 (Fin.last n)
+      map_add' := by intros; rfl
+      map_smul' := by intros; rfl }
+  calc
+    _ = L (choiceSum (fs.map Prod.snd)
+        (fun ks => monomial target (runsExpand ((fs.map Prod.fst).zip ks)))) :=
+      congrArg L (matrix_product_expansion target fs)
+    _ = _ := by
+      rw [choiceSum_map]
+      apply choiceSum_congr
+      intro ks hks
+      exact monomial_top target _
+
+/-- Run-count convolution leaves exactly the prescribed coefficient product. -/
+lemma matrix_run_product {n : ℕ} (target : Fin n → A) (fs : List (A × F2Poly)) (ds : List ℕ)
+    (hc : (fs.map Prod.fst).IsChain (· ≠ ·)) (hd : ds.length = fs.length)
+    (hp : ∀ d ∈ ds, 0 < d)
+    (hword : runsExpand ((fs.map Prod.fst).zip ds) = List.ofFn target) :
+    ((fs.map fun t => Polynomial.aeval (variableMatrix target t.1) t.2).prod) 0 (Fin.last n) =
+      (((fs.map Prod.snd).zip ds).map fun t => t.1.coeff t.2).prod := by
+  rw [matrix_top_product]
+  trans choiceSum (fs.map Prod.snd) (fun ks => if ks = ds then (1 : ZMod 2) else 0)
+  · apply choiceSum_congr
+    intro ks hks
+    have hlen : ks.length = (fs.map Prod.fst).length := by simpa using hks
+    simp only [← hword, runs_zip_unique _ _ _ hc (by simpa using hd) hlen hp]
+  · exact choiceSum_delta _ ds (by simpa using hd)
+/-- Forget the unit and unipotent subtype of the existing free-group representation. -/
+def matrixRepresentation {n : ℕ} (target : Fin n → A) : FreeGroup A →* Algebra n :=
+  (unipotent n).subtype.comp ((Units.coeHom (unipotent n)).comp (representation target))
+
+lemma matrixRepresentation_syllables {n : ℕ} (target : Fin n → A) (s : List (A × ℤ)) :
+    matrixRepresentation target (syllableClass s) =
+      (s.map fun t => Polynomial.aeval (variableMatrix target t.1) (signedPoly n t.2)).prod := by
+  rw [syllableClass, map_list_prod]
+  apply congrArg List.prod
+  simp only [List.map_map]
+  apply List.map_congr_left
+  intro t ht
+  rw [signedPoly_eval]
+  change ((representation target (FreeGroup.of t.1 ^ t.2)).val : unipotent n).val = _
+  simp [representation]
+
+
+end CoefficientProof
+
+open CoefficientProof in
+/-- Every nonempty reduced signed syllable word has coefficient one in its
+prescribed degree-sum pattern, in the actual finite Magnus representation. -/
+theorem syllableCoefficientLaw : SyllableCoefficientLaw (A := A) := by
+  intro s hs
+  let n := (syllablePattern s).length
+  let target : Fin n → A := (syllablePattern s).get
+  let fs : List (A × F2Poly) := s.map fun t => (t.1, signedPoly n t.2)
+  let ds : List ℕ := s.map fun t => syllableDegree t.2
+  have hn : 0 < n := syllablePattern_pos s hs.1
+  have hlabels : fs.map Prod.fst = s.map Prod.fst := by simp [fs, List.map_map]
+  have hchain : (fs.map Prod.fst).IsChain (· ≠ ·) := by
+    rw [hlabels, List.isChain_map]
+    exact hs.2.2
+  have hlen : ds.length = fs.length := by simp [ds, fs]
+  have hpos : ∀ d ∈ ds, 0 < d := by
+    intro d hd
+    obtain ⟨t, ht, rfl⟩ := List.mem_map.mp hd
+    exact syllableDegree_pos t.2
+  have hword : runsExpand ((fs.map Prod.fst).zip ds) = List.ofFn target := by
+    rw [hlabels]
+    simp only [ds, List.zip_map', runsExpand, List.flatMap_map]
+    simp [target, n, syllablePattern, List.ofFn_get]
+  have hr := matrix_run_product target fs ds hchain hlen hpos hword
+  have hc : (((fs.map Prod.snd).zip ds).map fun t => t.1.coeff t.2).prod = 1 := by
+    simp only [fs, ds, List.map_map, List.zip_map', List.map_map, Function.comp_def]
+    apply List.prod_eq_one
+    intro c hmem
+    obtain ⟨t, ht, rfl⟩ := List.mem_map.mp hmem
+    exact (signedPoly_coeff n hn t.2 (hs.2.1 t ht)).2.1
+  rw [hc] at hr
+  change matrixRepresentation target (syllableClass s) 0 (Fin.last n) = 1
+  rw [matrixRepresentation_syllables]
+  simpa only [fs, List.map_map, Function.comp_def] using hr
+
+/-- Every nonempty reduced syllable sequence is separated by the constructed
+finite characteristic-two group, without an external coefficient supplier. -/
+theorem separates_syllables
     (s : List (A × ℤ)) (hs : ReducedSyllables s) :
     representation (syllablePattern s).get (syllableClass s) ≠ 1 :=
-  separates_of_coefficient _ (syllablePattern_pos s hs.1) _ (law s hs)
+  separates_of_coefficient _ (syllablePattern_pos s hs.1) _ (syllableCoefficientLaw s hs)
 
 /-- The separate normal-form return obligation. It must not be confused with
 assuming that arbitrary source histories themselves are reduced. -/
@@ -690,15 +1132,14 @@ theorem syllableNormalFormLaw : SyllableNormalFormLaw (A := A) := by
   subst s
   exact hw heq.symm
 
-/-- Normal form is supplied internally; the remaining coefficient hypothesis
-is explicit. No unconditional residual-2 theorem is claimed. -/
+/-- Unconditional residual-2 separation: both coefficient and normal-form
+suppliers are proved internally for the actual Mathlib free-group quotient. -/
 theorem separates_nonidentity
-    (coeff : SyllableCoefficientLaw (A := A))
     (w : FreeGroup A) (hw : w ≠ 1) :
     ∃ (n : ℕ) (target : Fin n → A),
       representation target w ≠ 1 := by
   obtain ⟨s, hs, rfl⟩ := syllableNormalFormLaw w hw
-  exact ⟨_, (syllablePattern s).get, separates_syllables coeff s hs⟩
+  exact ⟨_, (syllablePattern s).get, separates_syllables s hs⟩
 end TruncatedMagnus
 
 section MagnusVoltageReturn
@@ -719,17 +1160,15 @@ theorem magnus_endpoint_ne_of_coefficient {n : ℕ} (target : Fin n → A)
   apply TruncatedMagnus.separates_of_coefficient target hn (sourceFreeClass xs) hc
   exact mul_left_cancel (h.trans (mul_one g).symm)
 
-/-- General nonidentity source-word return, conditional on the remaining
-coefficient supplier. The actual input may contain inverse-pair events; only its free-group
+/-- Unconditional nonidentity source-word return to the actual voltage cover. The actual input may contain inverse-pair events; only its free-group
 class is required to be nonidentity. -/
 theorem magnus_nonidentity_endpoint
-    (coeff : TruncatedMagnus.SyllableCoefficientLaw (A := A))
     (xs : List (A × Bool)) (hw : sourceFreeClass xs ≠ 1) :
     ∃ (n : ℕ) (target : Fin n → A), ∀ g : TruncatedMagnus.Group n,
       (VoltageCover.liftPath (PositiveWordSeparation.bouquetEdge (A × Bool))
         (signedBouquetTransport (TruncatedMagnus.generator target))
         (signedBouquetPath xs) g).1 ≠ g := by
-  obtain ⟨n, target, ht⟩ := TruncatedMagnus.separates_nonidentity coeff _ hw
+  obtain ⟨n, target, ht⟩ := TruncatedMagnus.separates_nonidentity _ hw
   refine ⟨n, target, ?_⟩
   intro g
   rw [signedBouquet_lift_endpoint]
