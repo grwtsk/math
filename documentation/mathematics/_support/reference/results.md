@@ -4,11 +4,11 @@
 [Latest source-bound verification observations](../../verification-updates.md): compilation, graph extraction and axiom-policy outcomes are recorded separately. The current upstream-inclusive S₃ rankings remain unavailable.
 <!-- END VERIFICATION AMENDMENT -->
 
-[**Browse all results by subject →**](../../index.md). The results index and every more specific browsing page live beside the mathematics under `docs/mathematics/`.
+[**Browse current sources and authored subject guides →**](../../index.md). The selected source articles below open pinned archive versions; their recorded evidence applies only to their stated sources.
 
-Exactly these selected families are listed; this is not a declaration-wide or complete topic catalog. Historical verification labels refer to the evidence record retained by the source; the generated `Status` column reports whether the current source has a replay-bound verification status.
+Exactly these selected families are listed; this is not a declaration-wide or complete topic catalog. Historical verification labels refer to the evidence record retained by the source; the retained `Status` column records the catalogue observation at its original source binding. It is not a live verification status for `main`.
 
-`verification` means that current source bytes match the catalog binding and replay evidence is recorded. `verification pending` means current-source verification has not been replayed or its binding is not current. Neither label alone establishes theorem admission or originality.
+At that observation, `verification` meant the observed source bytes matched the catalogue binding and replay evidence was recorded. `verification pending` meant verification had not been replayed or the binding was not current. Later source edits do not inherit either observation. Neither label alone establishes theorem admission or originality.
 
 | Priority | Family | Status | Retained evidence label |
 |---:|---|---|---|
@@ -16,7 +16,7 @@ Exactly these selected families are listed; this is not a declaration-wide or co
 | 2 | [Coverage and discrete quotas](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/Combinatorics/coverage-and-quotas.md) | verification pending | historical-source-relocated |
 | 3 | [Polynomial return with paid error](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/polynomial-error.md) | verification pending | historical-source-relocated |
 
-## Current replay scopes
+## Recorded replay scopes
 
 - **Least natural prime.** Two exact local source files replayed twice with Lean --trust=0; type/value constant references and axiom closures observed under fingerprinted cached imports. No upstream source replay, complete upstream graph, or whole-library acceptance. [Public evidence](https://github.com/grwtsk/noeaaeue/blob/6ea61287/verification/math/result-publication/least-prime-local-source-replay-v1/observation.json).
 - **Cross-branch declaration batch.** A managed replay pinned to Math commit `a631c3ab52379eacf4c4fced9111fadd983b37ae` ended in operational cancellation after 670/671 compilation records; the final record was interrupted. **0/107 declaration audits and 0/10 exact type checks completed.** All 107 targets remain `NOT_RUN`; the cancellation is not a mathematical counterexample. [Full terminal status and target roster](../verification-updates/declaration107-lossless-restart-20261026.md) · [pinned public Noe checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json).

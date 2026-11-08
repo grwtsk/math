@@ -13,7 +13,7 @@ Mathematical access comes first: read an explanation without installing Lean, fo
 | Your goal | Entry | Evidence boundary |
 | --- | --- | --- |
 | **Read and explore** | [MSC2020 subject navigation](documentation/mathematics/index.md) | Authored explanations; no Lean installation needed |
-| **Locate exact declarations** | [Source index](documentation/mathematics/complete-source-index.md) | Observed modules/declarations, **not** a verified-proof census |
+| **Locate source modules** | [Source folders by subject](documentation/mathematics/complete-source-index.md) | Current Lean directories; inspect each source for its declarations |
 | **Learn one example** | [Least-prime walkthrough](documentation/mathematics/_support/start/least-prime.md) | Problem, objects, assumptions, statement and source |
 | **Assess a claim** | [Proof-comparison disposition](documentation/mathematics/_support/reference/proof-comparison-disposition.md) | Source fidelity, primary argument, prior art, counterexamples and missing bridges |
 | **Inspect verification** | [Source-bound observations](documentation/mathematics/verification-updates.md) | Results at their exact revisions; unrun checks remain unrun |
@@ -27,7 +27,7 @@ Local collective attribution is **grwtsk contributors**. Preserve original autho
 
 ## Explore the collection
 
-**You do not need Lean or a local build to read the mathematics.** Start with the [results index](documentation/mathematics/index.md), follow the subject pages, and compare a statement with its sources and stated assumptions. The [complete source index](documentation/mathematics/complete-source-index.md) lists observed declarations and modules; observations are not automatically verified theorems.
+**You do not need Lean or a local build to read the mathematics.** Start with the [mathematics index](documentation/mathematics/index.md), follow the authored subject guides, and compare a statement with its sources and stated assumptions. The [source navigation](documentation/mathematics/complete-source-index.md) links to current Lean folders. Deleted source articles open commit-pinned archive versions with their historical evidence scope; the navigation is not a complete declaration catalogue or proof census.
 
 The [least-prime walkthrough](documentation/mathematics/_support/start/least-prime.md) illustrates a small result and its assumptions. For further work, browse the [source index](documentation/mathematics/complete-source-index.md) and inspect the underlying Lean modules. Existing explanations are optional; their presence or absence does not change verification status.
 

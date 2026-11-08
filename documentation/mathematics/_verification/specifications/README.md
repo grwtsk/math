@@ -1,16 +1,16 @@
 # Verification specifications
 
-Static verification specifications are now colocated with the documentation
-namespace and mirror `GRWTSK` source paths. For example:
-
-```text
-GRWTSK/Analysis/Example.lean
-docs/verification/Analysis/Example/
-```
+Static verification specifications live under
+`documentation/mathematics/_verification/specifications/`. Subject subtrees use
+MSC2020 headings; each specification records its exact source binding. Older
+source paths and declaration namespaces remain evidence identities, so folder
+placement alone does not determine a specification’s current source locator.
 
 The [shared taxonomy path contract](_unscoped/taxonomy-path-sync-v1.toml)
-binds the same exact relative subject paths and capitalization under `GRWTSK/`,
-`docs/mathematics/`, `docs/verification/`, and `docs/taxonomy/subjects/`.
+retains an earlier path-alignment contract using `GRWTSK/` and the former
+`docs/` roots. Resolve current paths through the
+[MSC2020 source and documentation layouts](../../../taxonomy/msc2020/README.md)
+and their aliases; the earlier contract is not the current filesystem layout.
 It records retired folder and namespace aliases, source relocations, preserved
 proof variants, and passive verification tasks. Empty peer folders contain
 only a placeholder; they introduce no mathematical definition or acceptance.
@@ -61,10 +61,12 @@ exports are retained byte-for-byte in `grwtsk/noeaaeue`, under
 `verification/math/retained-math-verification-v1/verification/`. Their embedded
 paths and historical hash claims remain unchanged. The migration catalogue gives
 current storage locators; fresh transfer digests are not new proof receipts.
-The former [`verification/`](../targets/README.md) root now contains only
-a compatibility navigation README. New non-stub files fail Noe's layout check.
+The [targets tree](../targets/README.md) also holds static replay manifests
+and mathematical acceptance predicates, as allowed by the repository instructions.
+Its older migration notes retain their original scope; they do not prohibit
+those maintained static targets.
 
-Noeaaeue owns the generated files. The compact template currently emits:
+Noeaaeue owns generated observations. Its compact rendering contract describes:
 
 - `source.json`: exact UTF-8 Lean command slices, declaration ownership,
   source hashes, imports, and native-notation references when available;
@@ -77,9 +79,9 @@ observer supplies a bound representation. Dependency closure, semantic
 equivalence, kernel admission, replay, and mathematical acceptance are not
 implied by these generated data files.
 
-Noeaaeue owns the generated files. It renders them under the same mirrored
-paths without rewriting these source-authored specifications or treating
-generated output as canonical mathematical content.
+Generated observations remain separate from these source-authored
+specifications. The rendering contract does not assert that a current generated
+page set exists in this checkout or establish mathematical acceptance.
 
 ## Analytical comparison is not a compiler receipt
 

@@ -1,4 +1,4 @@
-# Mathematical results
+# Mathematics: sources, guides, and evidence
 
 <!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
 [Later verification observations](verification-updates.md). Source compilation, axiom policy and graph completeness are recorded separately; all pending and failed results remain included.
@@ -14,9 +14,9 @@ Links to source articles removed by the bulk documentation deletions open their 
 
 [Provider packages and source links](../adapters/README.md) retain isolated native dependencies; their Lean files link to the canonical `GRWTSK/` subject tree.
 
-Source documentation now follows the official MSC2020 heading hierarchy. Readable mathematical filenames replace opaque Variant and declaration-hash names. Original source and declaration identities, literal source windows, hypotheses and verification evidence retain their exact scopes.
+Current Lean source folders and authored subject guides use the official MSC2020 heading hierarchy. The source-folder index opens the maintained Lean tree; the subject-guide index opens authored definitions. Archived source articles preserve their original source and declaration identities, literal source windows, hypotheses, and verification scope.
 
-The catalogue includes historical source editions explicitly. Document relocation does not establish fresh compilation, kernel replay, axiom closure, semantic crosswalk review or mathematical acceptance.
+[Selected historical result families](_support/reference/results.md) and [historical inventory definitions](_support/reference/library-pages.md) are separate from current source navigation. Document relocation does not establish fresh compilation, kernel replay, axiom closure, semantic crosswalk review or mathematical acceptance.
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
 

@@ -1,13 +1,15 @@
-# Mathematical page inventory
+# Historical mathematical page inventory
+
+This page retains an earlier inventory and its report identities. The bulk article deletions and MSC2020 relocations changed the maintained tree: the counts, namespace names, dependency pins, and generated coverage below are not current measurements. Use the [documentation entry points](../../../index.md) and [current Lean source folders](../../complete-source-index.md) for live navigation. Historical tables and input digests remain unchanged.
 
 [Deterministic formalization and incremental tracking contracts](deterministic-formalization.md)
 connect the source/result inventory to Noeaaeue's separate verification queue.
 
-The [mathematical area directory](../../../index.md) links to an index inside each area folder. Each area index groups its existing guides by mathematical object and links to the corresponding Lean source folder. Areas with sources but no object guides remain visible with explicit zero documentation coverage.
+The former mathematical area directory grouped source guides and linked their Lean folders. Some of those articles now exist only at pinned archive revisions. The current source-folder index does not report object-guide coverage.
 
 The [generated count report](documentation-counts.json) retains an observed filesystem snapshot from the durable Noeaaeue generator. The [structured inventory](library-summary.json) retains the older curated observer census for compatibility and provenance; it must not be read as the repository-wide source count. It is an inventory snapshot, not a census of compiler-generated declarations or a mathematical acceptance receipt. Input digests allow the snapshot to be checked for drift.
 
-The [selected result catalog](results.md) covers three families only. The page inventory is broader; neither is a complete declaration catalog or proof graph. The [source-only namespace dependency map](namespace-dependency-map.md) provides the complete committed import projection without a Lean compilation or verification claim. Historical evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f) explain the disposition of the former flat documentation.
+The [selected result catalog](results.md) covers three families only. The page inventory is broader; neither is a complete declaration catalog or proof graph. The [source-only namespace dependency map](namespace-dependency-map.md) retains its recorded import projection without a current-tree completeness, Lean compilation, or verification claim. Historical evidence limits (artifact:gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f) explain the disposition of the former flat documentation.
 
 Migration and acceptance boundaries are recorded separately in the Lean consolidation report (artifact:gitblob:a0aee0a59e806de6638a059af9df7dd22359b507), repository reconstruction contract (artifact:gitblob:6434bef0cd7e148093f275fc82ea3013c6523630), and rigor and reconstruction status (artifact:gitblob:558248aa8fd44d10f9024a266f8a64dbab2f4b13).
 

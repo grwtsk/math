@@ -1,8 +1,10 @@
-# Verification navigation compatibility
+# Static replay targets and verification navigation
 
-All static specifications and authored support now live under
-[`docs/verification/`](../specifications/README.md). The complete former
-README, including its versioned scope notes, is preserved at
+Source-bound verification specifications and authored support are indexed under
+[`documentation/mathematics/_verification/specifications/`](../specifications/README.md).
+This targets tree also holds static replay manifests and mathematical acceptance
+predicates. Their exact source bindings remain authoritative for their scope.
+The complete former README, including its versioned scope notes, is preserved at
 [`legacy-verification/README.md`](../specifications/_support/legacy-verification/README.md).
 
 The [complete migration catalogue](../specifications/migration-index.json)
@@ -15,9 +17,9 @@ under mathematical subject paths. Their
 [relocation specification](../specifications/_unscoped/sourcecorpus-taxonomy-v1.toml)
 binds each old source to its new path and records separate verification tasks.
 
-This file is a navigation stub, not an alternate specification namespace.
-Do not add targets, fixtures, custody records or generated outputs here.
-Noe's `math_verification_layout.py check` rejects remaining non-stub files.
+Static targets may be maintained here under the repository instructions.
+Execution attempts, receipts, mutable state, and generated outputs belong to
+Noeaaeue. The former compatibility-only layout rule is historical.
 Moving files does not establish elaboration, replay, trust, attribution clearance
 or mathematical acceptance. Historical hashes do not authenticate redacted bytes.
 
