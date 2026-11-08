@@ -1,5 +1,7 @@
 # Complete mathematical source publication
 
+Historical generated-publication contract. The article corpus described below was removed by the bulk documentation deletions; these requirements describe the pinned publication, not a page set present in the current checkout. The [current source index](../../complete-source-index.md) links Lean folders, not every declaration article. Generated documentation is optional and requires an explicit request under the repository instructions; this contract is not a source-publication gate. Original source pins, manifest identities, byte-preservation obligations, and verification scopes below remain historical records.
+
 Local attribution: grwtsk contributors.
 
 The complete publication represents every tracked regular `.lean` source at one

@@ -3,15 +3,15 @@
 Authored mathematical design and source-candidate notes by **grwtsk contributors**.
 
 The mathematical implementation is
-`GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnostics.lean`,
-with hostile controls in `MathematicalDiagnosticsExamples.lean`. These modules
+[`MathematicalDiagnostics.lean`](../../../../GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/MathematicalDiagnostics.lean),
+with hostile controls in [`MathematicalDiagnosticsExamples.lean`](../../../../GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/MathematicalDiagnosticsExamples.lean). Declaration namespaces and historical pins remain unchanged. These modules
 are source proof candidates until executed elaboration, fresh kernel checking,
 and transitive axiom auditing succeed on their exact published identities.
 
 ## Purpose and scope
 
-The same descriptive error families apply across the current mathematical
-subjects under `GRWTSK/`: algebra, analysis, categories and homological algebra,
+The same descriptive error families apply across mathematical
+subjects represented in the original scope: algebra, analysis, categories and homological algebra,
 combinatorics, equations and dynamics, foundations, geometry, history,
 information theory, mathematics education, mechanics, number theory, numerical
 analysis, optimization, probability/statistics, and topology. A current root
@@ -115,7 +115,7 @@ hypothesis and proof-debt transitions. It makes no change to source acceptance,
 logical inference constructors, repository authority, or transitive axiom policy.
 
 The passive source-bound contract is
-`docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/MathematicalDiagnosticsExamples/mathematical-diagnostics-v0.1.toml`.
+[`mathematical-diagnostics-v0.1.toml`](../../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/mathematical-diagnostics-v0.1.toml).
 Operational compilation, source custody, receipts, and publication effects
 belong in `grwtsk/noeaaeue`. Source identity, Lean compilation, fresh kernel
 checking, and axiom auditing remain separate; **NOT_RUN** is never acceptance.

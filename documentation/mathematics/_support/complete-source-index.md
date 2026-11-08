@@ -1,5 +1,7 @@
 # _support — complete source
 
+Historical support-source catalogue. Counts and declaration observations below describe the pinned publication that produced these pages. Directory labels such as `docs` are retained source-path history, not current repository navigation. Completeness here is limited to that recorded branch and revision; use the current source index linked below for maintained Lean folders.
+
 [Complete source index](../complete-source-index.md)
 
 **6 source modules · 8 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.

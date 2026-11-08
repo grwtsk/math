@@ -2,8 +2,7 @@
 
 Status: **source specification / model-independent / no execution evidence**.
 
-`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.SubjectPlacement`
-defines the pure acceptance boundary for subject-based organization of Lean source.
+The maintained source [`SubjectPlacement.lean`](../../../../GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/SubjectPlacement.lean), with its preserved declaration namespace, defines the pure acceptance boundary for subject-based organization of Lean source.
 The effectful classifier and filesystem transaction belong to `grwtsk/noeaaeue`.
 
 The contract keeps these claims separate:
@@ -33,7 +32,7 @@ mutation occurred; a failed process is unavailable execution evidence, not a
 mathematical refutation.
 
 The executable policy is the versioned static manifest
-`docs/verification/_unscoped/lean-subject-sort-v1.toml`. Its subject profiles may be extended as
+[`lean-subject-sort-v1.toml`](../../_verification/specifications/_unscoped/lean-subject-sort-v1.toml). Its subject profiles may be extended as
 the taxonomy grows. Existing top-level subject directories can be represented as
 provisional local profiles without being silently promoted to accepted taxonomy
 concepts. The former `GRWTSK/SourceCorpus` custody root is retired by the

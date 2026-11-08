@@ -2,10 +2,10 @@
 
 `ResearchObservation` gives a pure interpretation of an observation-only state
 into `ResearchState`. Its declarations live in
-`GRWTSK.Logic.StateTransition.ResearchObservation`; its maintained module is
-`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchObservation`.
+`GRWTSK.Logic.StateTransition.ResearchObservation`; its maintained source is
+[`ResearchObservation.lean`](../../../GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/ResearchObservation.lean). The declaration namespace is preserved independently of this filesystem path.
 The static mathematical acceptance contract is
-[`docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchObservation/research-observation-v1.toml`](../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/research-observation-v1.toml).
+[`research-observation-v1.toml`](../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/research-observation-v1.toml).
 Neither this note nor that contract is an execution receipt.
 
 The source baseline is Gate Zero, math commit

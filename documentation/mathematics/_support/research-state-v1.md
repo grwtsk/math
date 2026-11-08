@@ -5,12 +5,12 @@ mathematical subject is state-transition invariants and interpreted inference.
 No arithmetic target, diffusion construction, or open conjecture is selected
 by this increment.
 
-The maintained model is
-`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState`.
+The maintained model source is
+[`ResearchState.lean`](../../../GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/ResearchState.lean).
 Its declarations live in `GRWTSK.Logic.StateTransition.ResearchState`.
 The adjacent `ResearchStateExamples` module supplies finite demonstrations and
 hostile controls. The static replay contract is
-`docs/verification/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchStateExamples/research-state-v1.toml`. Execution logs, source custody, feedback
+[`research-state-v1.toml`](../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/research-state-v1.toml). Execution logs, source custody, feedback
 serialization, and publication state belong to `grwtsk/noeaaeue`.
 
 ## Exact propositions and source identities

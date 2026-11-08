@@ -1,5 +1,7 @@
 # Result publication and measurement contract
 
+Historical rendering and measurement contract. Its `docs/` paths and recursive article route describe the earlier publication layout. Current readers use the [mathematics index](../../index.md), [Lean source folders](../../complete-source-index.md), and [authored subject guides](../../../taxonomy/subjects/index.md). Deleted articles open commit-pinned archive versions. The preview and measurement requirements below do not assert that those generated pages exist now or require their regeneration for a Lean contribution.
+
 Maintained by grwtsk contributors. Contract version: `grwtsk.result-publication.v1`.
 
 The public reading route is the root README, the results index at
