@@ -1,0 +1,321 @@
+{
+  "schema": "GRWTSK.Chi3RadiusFourSixteenPrimeFreeShells/1",
+  "attribution": "grwtsk contributors",
+  "source_revision": "5adbab60a931994cdce3077c573c73311224fbe5",
+  "math_source": "Original chi3 radius-four parity-one primitive Weil form, finite unramified prime-power inventory at native cutoff e^8",
+  "positive_shells": {
+    "number": 16,
+    "start_formula": "3+j/16, j=0,...,15",
+    "width": "1/1048576",
+    "negative_shells": "reflections of positive shells",
+    "placement_perturbation": "For each j independently add real delta_j with 0<=delta_j<=1/1000000; the 16 physical intervals remain disjoint and within (3,4)."
+  },
+  "original_native_prime_inventory_size": 458,
+  "observed_symmetric_reflection_intervals": 31,
+  "reflection_shift_formula": "[6+k/16,6+k/16+1/524288], k=0,...,30",
+  "exact_exp_arithmetic": {
+    "Taylor_degree": 40,
+    "series": "S40(x)=sum_(j=0..40)x^j/j!",
+    "remainder": "0 <= exp(x)-S40(x) <= (x^41/41!)/(1-x/42), 0<x<8",
+    "small_exponential": "exp(u)<=1/(1-u), u=1/524288",
+    "per_row_checks": "floor n_k plus 1/100 < S40(x_k) <= exp(x_k) <= exp(x_k+u) <= (S40(x_k)+remainder)/(1-u) < floor n_k plus 99/100",
+    "independent_bigint_fraction_replay": "COMPLETED",
+    "all_guards_pass": true,
+    "perturbation_return": "Every reflected shift expands only upward by <=2/1000000. Since max floor m_k=2630, (m_k+99/100)/(1-2/1000000)<m_k+1 for every k; the lower bound e^r0>m_k+1/100 is unchanged."
+  },
+  "complete_floor_rows": [
+    {
+      "k": 0,
+      "phase_numerator": 96,
+      "phase_denominator": 16,
+      "integer_floor": 403,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 1,
+      "phase_numerator": 97,
+      "phase_denominator": 16,
+      "integer_floor": 429,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 2,
+      "phase_numerator": 98,
+      "phase_denominator": 16,
+      "integer_floor": 457,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 3,
+      "phase_numerator": 99,
+      "phase_denominator": 16,
+      "integer_floor": 486,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 4,
+      "phase_numerator": 100,
+      "phase_denominator": 16,
+      "integer_floor": 518,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 5,
+      "phase_numerator": 101,
+      "phase_denominator": 16,
+      "integer_floor": 551,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 6,
+      "phase_numerator": 102,
+      "phase_denominator": 16,
+      "integer_floor": 586,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 7,
+      "phase_numerator": 103,
+      "phase_denominator": 16,
+      "integer_floor": 624,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 8,
+      "phase_numerator": 104,
+      "phase_denominator": 16,
+      "integer_floor": 665,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 9,
+      "phase_numerator": 105,
+      "phase_denominator": 16,
+      "integer_floor": 708,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 10,
+      "phase_numerator": 106,
+      "phase_denominator": 16,
+      "integer_floor": 753,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 11,
+      "phase_numerator": 107,
+      "phase_denominator": 16,
+      "integer_floor": 802,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 12,
+      "phase_numerator": 108,
+      "phase_denominator": 16,
+      "integer_floor": 854,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 13,
+      "phase_numerator": 109,
+      "phase_denominator": 16,
+      "integer_floor": 909,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 14,
+      "phase_numerator": 110,
+      "phase_denominator": 16,
+      "integer_floor": 967,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 15,
+      "phase_numerator": 111,
+      "phase_denominator": 16,
+      "integer_floor": 1030,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 16,
+      "phase_numerator": 112,
+      "phase_denominator": 16,
+      "integer_floor": 1096,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 17,
+      "phase_numerator": 113,
+      "phase_denominator": 16,
+      "integer_floor": 1167,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 18,
+      "phase_numerator": 114,
+      "phase_denominator": 16,
+      "integer_floor": 1242,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 19,
+      "phase_numerator": 115,
+      "phase_denominator": 16,
+      "integer_floor": 1322,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 20,
+      "phase_numerator": 116,
+      "phase_denominator": 16,
+      "integer_floor": 1408,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 21,
+      "phase_numerator": 117,
+      "phase_denominator": 16,
+      "integer_floor": 1498,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 22,
+      "phase_numerator": 118,
+      "phase_denominator": 16,
+      "integer_floor": 1595,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 23,
+      "phase_numerator": 119,
+      "phase_denominator": 16,
+      "integer_floor": 1698,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 24,
+      "phase_numerator": 120,
+      "phase_denominator": 16,
+      "integer_floor": 1808,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 25,
+      "phase_numerator": 121,
+      "phase_denominator": 16,
+      "integer_floor": 1924,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 26,
+      "phase_numerator": 122,
+      "phase_denominator": 16,
+      "integer_floor": 2048,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 27,
+      "phase_numerator": 123,
+      "phase_denominator": 16,
+      "integer_floor": 2180,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 28,
+      "phase_numerator": 124,
+      "phase_denominator": 16,
+      "integer_floor": 2321,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 29,
+      "phase_numerator": 125,
+      "phase_denominator": 16,
+      "integer_floor": 2471,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    },
+    {
+      "k": 30,
+      "phase_numerator": 126,
+      "phase_denominator": 16,
+      "integer_floor": 2630,
+      "rational_lower_more_than_floor_plus": "1/100",
+      "rational_upper_less_than_floor_plus": "99/100"
+    }
+  ],
+  "same_side_prime_gap": {
+    "max_shift": "15/16+1/1048576<1",
+    "possible_prime_under_1": "2",
+    "log2_lower": "56/81",
+    "log2_upper": "7/10",
+    "max_near_11_16": "11/16+1/1048576<56/81",
+    "min_near_12_16": "12/16-1/1048576>7/10",
+    "status": "rational spacing plus standard atanh/exponential bounds",
+    "perturbed_spacing": "11/16+1/1048576+1/1000000<56/81<log2<7/10<12/16-1/1048576-1/1000000; log3>1>15/16+1/1048576+1/1000000"
+  },
+  "gamma_source": {
+    "parity": 1,
+    "zero_correlation_shift_window": "[1/1048576,1/16-1/1048576]",
+    "lower_from_exp_linear": "gamma/E >= log(65535) -(3/2)(1/16-2/1048576)",
+    "log_bound": "log65535>15 log2>15*56/81",
+    "rational_lower": "290947153/28311552",
+    "conductor_constant_lower": "-6/5",
+    "combined_lower": "1284866453/141557760",
+    "final_strict_floor": "9*E",
+    "perturbed_zero_correlation_window": "[1/1048576, 1/16-1/1048576-1/1000000]",
+    "perturbed_log_ratio_lower": "(1/16-1/1048576-1/1000000)/(1/1048576)>2^15; the same strict gamma lower follows."
+  },
+  "conclusion": "For ANY 16 individually shifted shell starts 3+j/16+delta_j with each 0<=delta_j<=1e-6, the ENTIRE original 458-term prime quadratic contribution is zero, and Q_chi3,4(f)>=9 E(f) for every original odd admissible test supported in the symmetric shell union, and every original odd finite-gamma L2 input on that union. The native shifted edge diagonal has floor >=(73/8)||u||^2 on this subspace.",
+  "scope": "infinite-dimensional supported original real-odd C2 tests, also complex odd finite-gamma form domain; not all radius-four admissible tests",
+  "verification": {
+    "rational_exponential_gap_replay": "EXECUTED_V8_BIGINT_EXACT",
+    "full_source_gamma_return": "WRITTEN_ANALYTIC",
+    "lean": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "independent_human_review": "NOT_RUN"
+  },
+  "not_claimed": [
+    "No positivity for arbitrary radius-four test",
+    "No source-relative core/collar mixed Schur sign",
+    "No RH or Dirichlet GRH proof"
+  ],
+  "quality": {
+    "exact_rational_cell_brackets": "COMPLETED_V8_BIGINT_AND_PYTHON_FRACTION",
+    "gamma_rational_guard": "COMPLETED",
+    "analytic_source_return": "WRITTEN",
+    "finite_lean_meta": "CANDIDATE_NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "human_review": "NOT_RUN"
+  }
+}
