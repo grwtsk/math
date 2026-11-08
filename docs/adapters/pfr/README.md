@@ -60,5 +60,5 @@ pinned finite PFR cover: nonempty B, |H|<=|A|<2*K^9*|B|, B-B subset H, and
 are allowed; the same B/H are used throughout. It consumes the existing Mathlib
 energy API without copying root definitions. Source commit 9a913f5c7e184d75e8701096c5c5a59b144c2793.
 See [references](references.md), central consumer map and the canonical ledger.
-The static target is `documentation/mathematics/_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.json` with adjacent profile/TOML. All native
+The static target is [`docs/mathematics/_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.json`](../../mathematics/_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.json) with adjacent profile/TOML. All native
 compilation/replay/axiom/type checks remain NOT_RUN; root versions are unchanged.

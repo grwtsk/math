@@ -50,7 +50,7 @@ for arbitrary cutoff-dependent rows W(N), with the same row in both terms.
 This is residual convergence; the moving reference/readout need not converge.
 Empty support is allowed. No rate, growing support, uniformity in x or cyclic-DFT
 comparison is supplied. Source commit fd6f3d97e80088c09262adbf5fa7ccce8467d504, blob a803cf300e8a4987ddfc62ff0bc1985617fd4734.
-Static target `documentation/mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-unit-ball-residual-20261029.json` and adjacent profile/TOML retain six required roots
+Static target [`docs/mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-unit-ball-residual-20261029.json`](../../mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-unit-ball-residual-20261029.json) and adjacent profile/TOML retain six required roots
 and three new literal expected types. Native/interface/axiom checks are NOT_RUN.
 The historical three source bodies and original source-bound target remain intact.
 

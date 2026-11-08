@@ -36,12 +36,12 @@ Published source:
 
 Supporting review:
 
-- `documentation/mathematics/_support/reviews/moebius-reciprocal-zeta-perron-bridge-2026-11-02.md`;
+- [`docs/mathematics/_support/reviews/moebius-reciprocal-zeta-perron-bridge-2026-11-02.md`](../../../reviews/moebius-reciprocal-zeta-perron-bridge-2026-11-02.md);
 - blob `5ff1dfb76df5869146ee6d5b5d71879cf838d5f5`.
 
 Source ledger:
 
-- `documentation/mathematics/_support/reference/literature/reading-background/moebius-reciprocal-zeta-perron-bridge-references.md`;
+- [`docs/mathematics/_support/reference/literature/reading-background/moebius-reciprocal-zeta-perron-bridge-references.md`](moebius-reciprocal-zeta-perron-bridge-references.md);
 - blob `ad1f71f0e1b6152c4dc84533b9627c21dbed3d23`.
 
 ## Formalized connection

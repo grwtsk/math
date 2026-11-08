@@ -54,7 +54,7 @@ All final mathematical leaves coexist at `grwtsk/math@7b863b2ea52083f4c21f454ac5
    - `GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.full_packet_bilinear_comparison`
    - `GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinearSynthesis.full_packet_phase_input_comparison`.
 
-The passive TOML under `documentation/mathematics/_verification/specifications/NumberTheory/Moebius/MertensSignedAbelBilinearSynthesis/ramare-bilinear-v0.1.toml` contains all 53 fully qualified public declarations: 13 definitions and 40 theorem scripts. These are lexical counts, not elaborated declaration acceptance.
+The passive TOML under [`docs/mathematics/_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ramare-bilinear-v0.1.toml`](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ramare-bilinear-v0.1.toml) contains all 53 fully qualified public declarations: 13 definitions and 40 theorem scripts. These are lexical counts, not elaborated declaration acceptance.
 
 ## Classification and verification
 

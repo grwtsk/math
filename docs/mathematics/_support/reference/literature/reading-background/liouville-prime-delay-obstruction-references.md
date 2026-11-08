@@ -15,10 +15,10 @@ that blob was neither reconstructed from partial output nor overwritten.
   `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayObstruction.lean`.
 - Lean blob: `0f4b1fa7f5fa69b3d8fa8b2ab2bef4abeec7c574`.
 - Review:
-  `documentation/mathematics/_support/reviews/liouville-method-comparison-and-prime-delay-obstructions.md`.
+  [`docs/mathematics/_support/reviews/liouville-method-comparison-and-prime-delay-obstructions.md`](../../../reviews/liouville-method-comparison-and-prime-delay-obstructions.md).
 - Review blob: `0add9dd09cc9a6588e010179079498cec4393196`.
 - Verification target:
-  `documentation/mathematics/_verification/targets/liouville-prime-delay-obstruction.json`.
+  [`docs/mathematics/_verification/targets/liouville-prime-delay-obstruction.json`](../../../../_verification/targets/liouville-prime-delay-obstruction.json).
 - Target blob: `7fa2128e53fe3e4653289d918cb460d763622b0b`.
 - Toolchain: Lean `v4.34.1`; Mathlib
   `d13f23b723b8a846827a245b89c10fc7d3f11612`.

@@ -75,7 +75,7 @@ No root imports or external dependency changes. The mathematical result is class
 ## Genuine finite elliptic GalRep and Weil-to-Tate-dual port (2026-11-02)
 
 New isolated source candidate
-`documentation/adapters/tauceti-elliptic-selmer-fiber/TauCetiEllipticTorsionGalRepWeil.lean`
+[`docs/adapters/tauceti-elliptic-selmer-fiber/TauCetiEllipticTorsionGalRepWeil.lean`](TauCetiEllipticTorsionGalRepWeil.lean)
 is pinned to the original TauCetiProject/TauCeti
 `2bdb755239d3bd84760e99bc83166bdf7cc75a6b`
 (Lean v4.36.0-rc1, original Tau Ceti contributors, Apache-2.0).
@@ -94,7 +94,7 @@ the original Brauer-normalized trace. It does NOT prove the Weil
 dual morphism surjective or the Kummer subgroups orthogonal.
 
 The source-exact discussion, original blobs and next consumers are
-`documentation/mathematics/_support/reviews/bsd-elliptic-finite-galrep-weil-duality-2026-11-02.md`.
+[`docs/mathematics/_support/reviews/bsd-elliptic-finite-galrep-weil-duality-2026-11-02.md`](../../mathematics/_support/reviews/bsd-elliptic-finite-galrep-weil-duality-2026-11-02.md).
 Full Weil dual isomorphism, Kummer-orthogonality, p-power transition
 duality, reverse away-S unramified comparison, archimedean p=2
 correction, actual derived-limit and Poitou--Tate remain OPEN.
@@ -149,7 +149,7 @@ or toolchain pin has been changed.
 
 The complete proof, source identities, original primary literature,
 exact sign convention, finite controls and acceptance distinctions
-are in `documentation/mathematics/_support/reviews/bsd-elliptic-weil-surjectivity-local-kummer-orthogonality-2026-11-02.md`.
+are in [`docs/mathematics/_support/reviews/bsd-elliptic-weil-surjectivity-local-kummer-orthogonality-2026-11-02.md`](../../mathematics/_support/reviews/bsd-elliptic-weil-surjectivity-local-kummer-orthogonality-2026-11-02.md).
 Keep the previously corrected NONZERO higher
 `H²(U_v)=H¹(F,E)` Weil--Chatelet residue and the good
 truncation as separate objects. Kummer orthogonality remains
@@ -197,7 +197,7 @@ does not silently import incompatible Tau Ceti modules.
 
 Full source identity, classical Milne ADT I §3 references,
 remaining two arithmetic suppliers and NOT_RUN facets are
-in `documentation/mathematics/_support/reviews/bsd-canonical-elliptic-kummer-h1-weil-cup-adjunction-2026-11-02.md`.
+in [`docs/mathematics/_support/reviews/bsd-canonical-elliptic-kummer-h1-weil-cup-adjunction-2026-11-02.md`](../../mathematics/_support/reviews/bsd-canonical-elliptic-kummer-h1-weil-cup-adjunction-2026-11-02.md).
 Root pins/imports unchanged. Compilation NOT_RUN,
 fresh kernel replay NOT_RUN, axiom audit NOT_RUN,
 upstream compatible adapter NOT_RUN; no CI/runner/Noe job.
@@ -336,7 +336,7 @@ polarization or Kummer orthogonality is declared
 kernel-accepted.
 
 Source details and primary mathematical references:
-`documentation/mathematics/_support/reviews/bsd-geometric-theta-obstruction-kummer-vanishing-polarization-2026-11-02.md`.
+[`docs/mathematics/_support/reviews/bsd-geometric-theta-obstruction-kummer-vanishing-polarization-2026-11-02.md`](../../mathematics/_support/reviews/bsd-geometric-theta-obstruction-kummer-vanishing-polarization-2026-11-02.md).
 All original source blobs and the nonzero full local
 `H²(U_v)=H¹(F,E)` Weil–Châtelet residue remain
 preserved. Real p=2 Tate, compact Rlim,
@@ -465,7 +465,7 @@ The older forward-order file stays as an explicit
 opposite-section consistency check, NOT a rival
 Weil-sign theorem. Full comparison and exact
 nontrivial-Galois finite Heisenberg diagnostics:
-`documentation/mathematics/_support/reviews/bsd-theta-section-order-optimization-2026-11-02.md`.
+[`docs/mathematics/_support/reviews/bsd-theta-section-order-optimization-2026-11-02.md`](../../mathematics/_support/reviews/bsd-theta-section-order-optimization-2026-11-02.md).
 
 This optimizes the section-algebra and scalar-choice
 frontier ONLY. A continuous original
@@ -495,7 +495,7 @@ TauCetiProject/TauCeti `2bdb755239d3bd84760e99bc83166bdf7cc75a6b`,
 original Tau Ceti contributors, Apache-2.0, Lean v4.36.0-rc1,
 while the independent grwtsk/math root remains Lean v4.34.1.
 Source review:
-`documentation/mathematics/_support/reviews/bsd-theta-brauer-h2-genuine-selmer-connection-audit-2026-11-02.md`.
+[`docs/mathematics/_support/reviews/bsd-theta-brauer-h2-genuine-selmer-connection-audit-2026-11-02.md`](../../mathematics/_support/reviews/bsd-theta-brauer-h2-genuine-selmer-connection-audit-2026-11-02.md).
 
 **One exact reused original coefficient:** Tau Ceti ALREADY defines
 `UnitsCoeff F = Additive (SeparableClosure F)ˣ` with a continuous
@@ -818,7 +818,7 @@ No BSD or RH claim follows from these
 pure algebra/topology connections.
 
 Detailed mathematical source review:
-`documentation/mathematics/_support/reviews/bsd-theta-finite-selected-lift-continuity-2026-11-02.md`.
+[`docs/mathematics/_support/reviews/bsd-theta-finite-selected-lift-continuity-2026-11-02.md`](../../mathematics/_support/reviews/bsd-theta-finite-selected-lift-continuity-2026-11-02.md).
 SOURCE_PROOF_CANDIDATE; parsing NOT_RUN,
 Lean compilation NOT_RUN, fresh kernel
 replay NOT_RUN, full axiom audit NOT_RUN,
@@ -926,7 +926,7 @@ Hasse–Weil L-jet. The theta Brauer H² is NOT
 the local point-cone H².
 
 Full 267-line review:
-`documentation/mathematics/_support/reviews/bsd-theta-function-field-galois-orbits-2026-11-02.md`,
+[`docs/mathematics/_support/reviews/bsd-theta-function-field-galois-orbits-2026-11-02.md`](../../mathematics/_support/reviews/bsd-theta-function-field-galois-orbits-2026-11-02.md),
 blob `3c071b7178f5db812a4cc7904d3aa90f88e6bbe9`.
 SOURCE_PROOF_CANDIDATE; parsing NOT_RUN,
 compatible Lean compilation NOT_RUN,
@@ -1101,7 +1101,7 @@ Full reviewed source calculation, exact
 signs, 240,000 gauge/section-change
 finite group tests and 44,000
 commutator n-th-root tests:
-`documentation/mathematics/_support/reviews/bsd-theta-h1-representative-invariance-and-exact-weil-sign-2026-11-02.md`.
+[`docs/mathematics/_support/reviews/bsd-theta-h1-representative-invariance-and-exact-weil-sign-2026-11-02.md`](../../mathematics/_support/reviews/bsd-theta-h1-representative-invariance-and-exact-weil-sign-2026-11-02.md).
 
 **Acceptance:** All new Lean sources are
 SOURCE_PROOF_CANDIDATE. Parsing NOT_RUN,
@@ -1220,7 +1220,7 @@ or eliminate the remaining
 orientation-sensitive source proof.
 
 Source review:
-`documentation/mathematics/_support/reviews/bsd-theta-weil-one-basis-geometric-certificate-2026-11-02.md`.
+[`docs/mathematics/_support/reviews/bsd-theta-weil-one-basis-geometric-certificate-2026-11-02.md`](../../mathematics/_support/reviews/bsd-theta-weil-one-basis-geometric-certificate-2026-11-02.md).
 Independent exact integer group tests:
 200,000 central commutator
 multiplicativity/alternation/

@@ -47,7 +47,7 @@ E8FiniteCoveringConsumers adds three source candidates: strict separation at twi
 the cover radius, exact external covering number equal to S.card, and a lower
 bound for any cover-center set. Requires 2*epsilon<sqrt2; empty S/radius 0 included.
 This is an exact finite Euclidean observation, not optimal density or arithmetic
-mass packing. See [references](references.md) and `documentation/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.json`; all native checks
+mass packing. See [references](references.md) and [`docs/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.json`](../../mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.json); all native checks
 remain NOT_RUN and original E8SeparationConsumers is unchanged.
 
 <a id="e8-cover-matching-20261029"></a>

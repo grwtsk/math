@@ -7,8 +7,8 @@ Local mathematical attribution: grwtsk contributors. Formalization assistance: O
 - Lean source: `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusStrongFixedPowerCalculusClosure.lean`
 - Source merge: `ecd1dfc6df1ec90e5028a2ed36838f98e6eb369b`
 - Source blob: `c1ba0aabd513e6e2f3955d787ae1e3dbbf8d4ca7`
-- Mathematical review: `documentation/mathematics/_support/reviews/moebius-strong-fixed-power-calculus-closure-2026-11-02.md`
-- Source ledger: `documentation/mathematics/_support/reference/literature/reading-background/moebius-strong-fixed-power-calculus-closure-references.md`
+- Mathematical review: [`docs/mathematics/_support/reviews/moebius-strong-fixed-power-calculus-closure-2026-11-02.md`](../../../reviews/moebius-strong-fixed-power-calculus-closure-2026-11-02.md)
+- Source ledger: [`docs/mathematics/_support/reference/literature/reading-background/moebius-strong-fixed-power-calculus-closure-references.md`](moebius-strong-fixed-power-calculus-closure-references.md)
 
 ## Formalized connection
 

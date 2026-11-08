@@ -96,12 +96,12 @@ supply the exact patched import closure. Qualify the base/patch/output mapping
 through supported Noe tooling before fresh source replay; do not run upstream
 hooks or silently substitute a newer PNT. The canonical ledger anchor
 openai-patched-pnt-source-boundary-20261029 and static target
-`documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-boundary-20261029.json` retain exact identities and acceptance obligations.
+[`docs/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-boundary-20261029.json`](../../mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-boundary-20261029.json) retain exact identities and acceptance obligations.
 All native, comparator, axiom and expected-interface checks remain NOT_RUN.
 
 ## Four exact historical weighted-model interfaces
 
-The additional complete-module expected-type target `documentation/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/openai-weighted-model-growth-interfaces-20261029.json` and adjacent
+The additional complete-module expected-type target [`docs/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/openai-weighted-model-growth-interfaces-20261029.json`](../../mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/openai-weighted-model-growth-interfaces-20261029.json) and adjacent
 profile/TOML retain source 64d4c9/c948d147, all four exact roots, actual residual
 and kernel quantities, signed model, 2B and every-positive-exponent growth order.
 Current MSC source/import changes have separate identities and acceptance scopes.

@@ -7,7 +7,7 @@
 - **Predecessor source:** `grwtsk/math@b60a766283b8b8b507274691e31ce88763d033d9`,
   `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvillePrimeDelayObstruction.lean`,
   blob `0f4b1fa7f5fa69b3d8fa8b2ab2bef4abeec7c574`; companion method comparison
-  `documentation/mathematics/_support/reviews/liouville-method-comparison-and-prime-delay-obstructions.md`,
+  [`docs/mathematics/_support/reviews/liouville-method-comparison-and-prime-delay-obstructions.md`](../../../reviews/liouville-method-comparison-and-prime-delay-obstructions.md),
   blob `0add9dd09cc9a6588e010179079498cec4393196`.
 - **New source candidate:**
   `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiouvilleReciprocalPrimeMassObstruction.lean`.

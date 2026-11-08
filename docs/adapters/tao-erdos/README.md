@@ -18,7 +18,7 @@ sources and `UPSTREAM-LICENSE`; local consumers are by grwtsk contributors.
 
 Full declaration names, source blobs, database pin and MSC2020 subjects are in
 [catalogue.json](catalogue.json). Source placement follows official headings in
-`documentation/taxonomy/msc2020/source-layout-v1.json`; namespace roles remain
+[`docs/taxonomy/msc2020/source-layout-v1.json`](../../taxonomy/msc2020/source-layout-v1.json); namespace roles remain
 separate from provider paths. The canonical paper register records exact scope
 and unresolved fidelity and verification obligations.
 

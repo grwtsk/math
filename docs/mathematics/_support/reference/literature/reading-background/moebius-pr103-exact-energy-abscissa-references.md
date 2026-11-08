@@ -38,7 +38,7 @@ This is retained as the named local proposition `ZeroFreeToMertensPowerBridge`. 
 ## New source candidate
 
 - `GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MoebiusPR103ExactEnergyAbscissa.lean`
-- Companion review: `documentation/mathematics/_support/reviews/moebius-pr103-exact-energy-abscissa-2026-11-02.md`
+- Companion review: [`docs/mathematics/_support/reviews/moebius-pr103-exact-energy-abscissa-2026-11-02.md`](../../../reviews/moebius-pr103-exact-energy-abscissa-2026-11-02.md)
 
 The source proves conditionally that every damping strictly above
 
