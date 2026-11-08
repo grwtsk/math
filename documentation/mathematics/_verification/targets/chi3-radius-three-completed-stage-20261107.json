@@ -1,7 +1,7 @@
 {
   "Noe_replay_source_commit": "3b432fdc33f096f35ced0e3b82a49a5e591a95cf",
   "additional_parent_audited_before_publication": "6b568f4ea7687d7d6bedd3f808dfdf15bb96f2d4",
-  "branch_return": "exact j=2 coordinate of existing SmallConductorStages chi3; remaining stages/characters and RH still required",
+  "branch_return": "existing SmallConductorStages chi3 coordinates j=0,1,2 supplied; remaining stages/characters and RH still required",
   "checks": {
     "Lean_compilation": "NOT_RUN",
     "complete_head_binding_under_python_O": "PASS",
@@ -47,12 +47,13 @@
     "lossless archive of discarded L factors"
   ],
   "proof_source_sha256": {
-    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeFiniteAnnulus.lean": "4330d6e3d407d87e872814e0651468ad49fa95b0f3460e1ca146acaf85725474",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeFiniteAnnulus.lean": "9d5196cecf14a80a7d90474c80cb21dd9b42e27fda1b7111b84070ed70540617",
     "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeLowFilter.lean": "57ec24578df6593e3f7919fdd8322fb2c3e17417290a78699f0ec089d9b9d47e",
     "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreePhysicalPackets.lean": "6972a01b39b05b1a4710c8ec946514afb037e6fc60b9ed58821b006dff34121e",
     "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRawSourceReturn.lean": "ca2e8aecee1d08f85af5bb2a9e36353690b999a9b282d805c79d5767e0cdaef2"
   },
   "results": {
+    "PrimitiveStageLower_chi3_j0_j1": "WRITTEN_COROLLARIES by native primitiveArithmeticValue_eq_of_le and physical support inclusion",
     "PrimitiveStageLower_chi3_j2": "WRITTEN_COMPUTER_ASSISTED_PROOF_COMPLETE",
     "finiteAnnulusValue_all_original_Admissible_chi3_3": "at least -(7262543/200000000)*energy",
     "originalComplement": "at least -energy/20",

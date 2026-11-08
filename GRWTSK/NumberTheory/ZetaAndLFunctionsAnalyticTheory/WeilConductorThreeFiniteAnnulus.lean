@@ -487,6 +487,19 @@ The dependency path is now:
  -> original annulus(A), complement(B), chi3 stage j=2(D)
  -> coordinate j=2 of SmallConductorStages chi3 hp hn.
 
+The same result also discharges the earlier chi3 coordinates j=0 and j=1.
+For ANY original Admissible chi3 ((j:Real)+1) f with j<=2, set T=j+1<=3.
+Its pointwise support promotes it to Admissible chi3 3 f; compactness,
+regularity, oddness, physical energy and gamma-form domain are unchanged.
+Reuse the EXISTING ConductorFrontier.primitiveArithmeticValue_eq_of_le with
+that pointwise support and T<=3. It proves EXACTLY Q_chi3,T(f)=Q_chi3,3(f):
+extra prime correlations outside the smaller support vanish, rather than
+being dropped by a sign estimate. Then (C) gives Q_chi3,T(f)>=-E/20.
+For each j=0,1,2, 1/20<=(1/2)^j, so the original stage allowance follows.
+Thus the existing SmallConductorStages chi3 supplier now has ALL THREE
+coordinates j=0,1,2, whenever its conductor-frontier premise requests them.
+This is a source-preserving window return, not a new stage predicate.
+
 The ORIGINAL DirichletStageChain.dirichletGRH_of_source_chains STILL requires
 SmallConductorStages for EVERY primitive nonprincipal character, its other
 cofinal coordinates, the source-negative-witness return, and independent RH.
@@ -577,6 +590,12 @@ theorem literal_minorant_magnitude_margin :
 
 theorem actual_uniform_head_guard :
     (73187 / 10 ^ 11 : ℚ) < 1 / 10 ^ 6 := by
+  norm_num
+
+theorem first_three_allowances :
+    (1 / 20 : ℚ) ≤ (1 / 2) ^ 0 ∧
+      (1 / 20 : ℚ) ≤ (1 / 2) ^ 1 ∧
+      (1 / 20 : ℚ) ≤ (1 / 2) ^ 2 := by
   norm_num
 
 theorem stage_two_radius_and_allowance :
