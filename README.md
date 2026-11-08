@@ -1,115 +1,55 @@
-# GRWTSK mathematics
+# GRWTSK mathematical sources
 
-**Open mathematical research with traceable sources, explicit proof obligations, and human direction.**
+This repository contains Lean 4 mathematics, written arguments, counterexamples,
+source references, and static verification specifications. The presence of a
+statement or proof script does not establish that it has been verified.
 
-GRWTSK is a public collection of mathematical definitions, arguments, Lean sources, counterexamples, conjectures, experiments, and unresolved questions. It preserves productive results *and* the exact boundary at which a proposed application remains unproved. **This is not a claim that every module is kernel-verified or that open conjectures have been solved.**
+## Source and navigation
 
-Mathematical access comes first: read an explanation without installing Lean, follow a claim to its source, inspect hypotheses and limitations, then question, correct, or extend it. Source-bound mathematical signals can guide AI-assisted investigation, but retrieval and generation do not establish truth; improved research performance requires separate measurement.
+| Material | Location |
+| --- | --- |
+| Mathematical source | [GRWTSK/](GRWTSK/) |
+| MSC2020 subject guides | [Subjects](docs/taxonomy/subjects/index.md) |
+| Source/document layout | [MSC2020 layout](docs/taxonomy/msc2020/README.md) |
+| Source and evidence records | [Ontology](docs/ontology/README.md) |
+| Isolated upstream adapters | [Adapters](docs/adapters/README.md) |
+| Technical and evidence guidance | [Reference guides](docs/guide/README.md) |
+| Source-colocated agent instructions | [Directory graph](agents/README.md) |
 
-[Browse sources](GRWTSK/) · [Subject guides](docs/taxonomy/subjects/index.md) · [Contribute](CONTRIBUTING.md) · [Open an issue](https://github.com/grwtsk/math/issues/new/choose)
+## Evidence
 
-## Find your entry point
+A formalized statement is not a proof. A conditional theorem does not establish
+its hypotheses. Finite computations support only their certified scope. Lean
+checking, when performed, concerns a particular statement and dependency
+revision; its correspondence to an external mathematical claim must be
+justified separately. Consult the [evidence guide](docs/guide/evidence.md)
+and [repository instructions](AGENTS.md).
 
-| Your goal | Entry | Evidence boundary |
-| --- | --- | --- |
-| **Read and explore** | [MSC2020 subject guides](docs/taxonomy/subjects/index.md) | Authored definitions and their review limits |
-| **Locate source modules** | [Lean source tree](GRWTSK/) | Inspect each source for its declarations and hypotheses |
-| **Assess a claim** | [Repository review requirements](AGENTS.md#mathematical-claims-and-evidence) | Source fidelity, analytical argument and unresolved premises |
-| **Report or contribute** | [Contribution guide](CONTRIBUTING.md) and [issue forms](https://github.com/grwtsk/math/issues/new/choose) | Theorem suggestions, actual obstructions, corrections and return obligations |
-| **Build mathematical memory for neural discovery** | [Mathematics-wide ontology](docs/ontology/README.md) and [learning contract](https://github.com/grwtsk/noeaaeue/blob/07a2fde8f059549cc48b80f9459a4e8ca8792cb8/docs/intelligence/math/ontology-learning.md) | Source-bound records, reviewed contexts and pair labels; rankings remain advisory |
+## Contributing
 
-**Know which object is being assessed.** A formalized *statement* can encode an open conjecture without proving it. A *conditional theorem* does not establish its unverified premise. A *finite experiment* covers its tested instances. A *kernel-checked derivation* establishes its formal conclusion relative to the actual environment and axioms—not its correspondence to an external formulation without a proved bridge. An *analytic proof* requires a complete argument, with or without Lean. A *source candidate* has no inferred compilation, kernel or axiom-audit status.
-
-Local collective attribution is **grwtsk contributors**. Preserve original authors, upstream licenses, each contributor's chosen public Git identity, and the exact provenance and verification scope of every source. Publication, novelty, review, and proof acceptance are separate claims.
-
-## Explore the collection
-
-Browse the [Lean source tree](GRWTSK/) and [subject guides](docs/taxonomy/subjects/index.md). Compare each statement with its cited sources, assumptions, and evidence scope.
-
-At the pinned source revision [`706c62c`](https://github.com/grwtsk/math/commit/706c62c1285a9857cb9d52e0620ec2cb514eb374), the catalogue recorded **72,578 source modules and 1,722,561 declaration observations**. Those are historical source-inventory counts, not numbers of accepted theorems or a live count of `main`.
-
-## Access, mathematical signal, and shared knowledge
-
-A useful mathematical **signal** changes what is worth investigating: an invariant to compare, a conjecture to test, a counterexample to resolve, a boundary that blocks an argument, or a missing estimate whose proof would unlock something else. A new representation is a research lead until its comparison with the original object has been proved. A proof establishes a conclusion at its precise scope; explanation makes its mechanism easier to understand and reuse.
-
-Connections suggest directions; hypotheses, signs, support conditions, and error terms constrain them. Record failed comparisons as well as successful arguments so the next reader or investigator can continue from what is actually known instead of repeating the same obstacle.
-
-Mathematical knowledge is inherited from people who discover, teach, explain, translate, implement, question, and preserve ideas, including countless people whose individual contributions are not recoverable. Here, **shared knowledge cache** is a description of that accumulated inheritance—not a claim that any model stores an exact archive or that particular material entered its training data. GRWTSK gives part of this inheritance a durable, inspectable form through human direction.
-
-The work began before modern generative systems and has used many mathematical instruments. Access, the opportunity to ask questions, and the rate and reliability of useful feedback matter more than a tool category. Statistical candidate generation, symbolic calculation, retrieval, experimentation, and formal kernel checking are different operations. Neither generative output nor computation alone establishes a theorem without the required mathematical argument and verification.
-
-Source attribution records the contributions of original mathematicians, human direction, and particular tools **when supported by evidence**. Provider names appear when needed for source identity, licensing, reproducibility, or a documented contribution—not as endorsements.
-
-## What qualifies a mathematical claim
-
-**Proof correctness, correspondence to the intended mathematical object, novelty, explanation, and computational assurance are separate assessments.** Checking a Lean term establishes derivability relative to its stated environment and axioms. It does not establish that a conjecture's missing premise holds, that a model faithfully represents the original source, or that the conclusion is historically new. A complete mathematical proof can also exist without Lean.
-
-A theorem may be new even when its lemmas were known. A new proof of an established theorem may improve understanding. A formalization may improve assurance and interoperability without adding theorem-level novelty. Experiments and numerical calculations can guide or refute claims within their justified scope; an unrestricted analytic theorem requires a complete argument or a sound reduction to a genuinely exhaustive, certified computation.
-
-Here, **source-bound** means that a claim, source comparison, or verification record names the exact files, declarations, and revision to which its evidence applies; later edits do not inherit that evidence.
-
-**Every promoted proof claim requires comparison with the actual mathematical objects and strongest relevant prior results**, a readable explanation of its principal argument, and precise disclosure of unresolved transfers. Independent routes and hostile tests are valuable where applicable, but a second proof is not mandatory. Reviewers must preserve quantifiers, signs, error bounds, limits, and all needed source-return steps.
-
-[Adoption and review coverage](https://github.com/grwtsk/math/issues/1499) remain source-specific; repository policy is not a completed corpus-wide review.
-
-## Explore, test, and return findings
-
-Reading, learning, sketching, checking examples, and developing questions **do not require a repository submission or a Lean installation**. The contribution loop is a separate commitment for research explicitly directed at formalizing and returning results.
-
-A useful research prompt is:
-
-> Use grwtsk/math to investigate X. Compare the actual mathematical objects and known results, test the strongest obstruction, and distinguish proved conclusions from conjectures or analogies. When authorized to contribute, formalize the source-bound findings and submit them under the repository's existing subject taxonomy, preserving the exact evidence and open obligations.
-
-For authorized formalization work, use the appropriate modules under [`GRWTSK/`](GRWTSK/). Existing subject documentation may be linked when useful, but generated prose documents are not required or automatically recreated. Preserve current source identities, hypotheses, attribution, and verification scopes. A useful intermediate result, rigorous counterexample, or precisely characterized failed path can be contributed without claiming the original research target was solved.
-
-**The repository contribution loop closes only when authorized changes reach maintained `main` and can be reused by subsequent investigations.** A chat response, detached patch, or unmerged submission does not close that particular loop. Publication is not mathematical acceptance, and a blocked return must be reported explicitly.
-
-This is cumulative learning through access, retrieval, testing, feedback, correction, and reuse. It does not assert that repository queries retrain models, guarantee future training inclusion, or establish truth by repetition. Claims of improved access or research performance require their own measurements.
-
-## Git, review, and reproducibility
-
-**Git records changes and source identity; it does not establish mathematical truth.** Cite exact commit SHAs, file paths, declarations, hypotheses and, when available, source-bound evidence. Git issues retain mathematical obstructions and unanswered questions; pull requests expose a bounded change for review. Neither an issue nor a merge is a proof certificate. The root [contribution guide](CONTRIBUTING.md), [issue forms](https://github.com/grwtsk/math/issues/new/choose), and [PR template](.github/PULL_REQUEST_TEMPLATE.md) make these distinctions actionable.
-
-For a checkout, inspect the revision and a source without modifying it:
-
-```sh
-git rev-parse HEAD
-git show HEAD:GRWTSK/NumberTheory/FirstPrime.lean
-```
-
-Use immutable commit/blob links for reproducible claims; `main` links are moving navigation pointers. `git diff --check` is useful text hygiene before a contribution, **not** a proof or link audit. The [repository instructions](AGENTS.md) govern explicitly authorized direct publication to the existing `main`: preserve the complete concurrent tree, check the diff, use non-force updates with an expected-head lease, and verify the resulting reachable commit. Other contributors may use PRs for review; no CI or reviewer action is implied by a template.
-
-Mathematical source and static targets belong here. [Noeaaeue](https://github.com/grwtsk/noeaaeue) owns execution, mutable verification receipts, generated views, source-bound automation and proof-capsule admission. [Noeaaeue #406](https://github.com/grwtsk/noeaaeue/issues/406) tracks structural-intelligence follow-through. [Math #1425](https://github.com/grwtsk/math/issues/1425) retains taxonomy proposals without ad hoc moves; [math #1499](https://github.com/grwtsk/math/issues/1499) tracks the still-incomplete proof-comparison rollout. A Git workflow cannot silently promote any of these unresolved mathematical or operational gates.
-
-## Evidence, verification, and open obligations
-
-Formal proofs, conditional implications, finite certificates, analytical arguments, and source candidates coexist here. A source candidate can be mathematically useful without being an accepted proof; a checked conditional theorem does not discharge its hypothesis. Record source inspection, compilation, kernel checking, transitive axiom auditing, and analytical assessment separately, at the exact revisions actually checked. Earlier receipts do not certify changed bytes.
-
-Historical verification observations apply only to their pinned sources. A cancellation is neither a mathematical refutation nor a successful audit.
-
-Finite spectral calculations do not establish the complete zeta-zero divisor. A tensor or block description does not supply a quantum speedup; a successful build does not settle RH, GRH, ABC, or an unresolved Möbius bound. Representing a mathematical source is not the same as proving the estimate or return theorem that a claimed application requires.
-
-<!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
-<!-- END VERIFICATION AMENDMENT -->
+The [contribution guide](CONTRIBUTING.md) explains source attribution, proof
+comparison, open obligations and verification targets. Publication, compilation,
+kernel checking, independent mathematical review and mathematical acceptance are
+separate claims.
 
 ## Practical Lean checks (optional)
 
-**Start with one small module, not the whole library.** From the repository root, with the pinned Lean toolchain available, build the first-prime example's Lean object file:
+The pinned toolchain is Lean 4.34.1. With Lean and Lake configured, one example
+of a targeted build is:
 
 ```sh
 lake build +GRWTSK.NumberTheory.FirstPrime:olean
 ```
 
-This selects the current [`FirstPrime.lean`](GRWTSK/NumberTheory/FirstPrime.lean) module and its necessary imports rather than the entire public `GRWTSK` target. To check the related least-prime consumer instead, build `+GRWTSK.NumberTheory.MultiplicativeNumberTheory.LeastPrime:olean`. The first setup may still download or compile dependencies, including Mathlib, and require significant time, disk space, or memory if caches are unavailable. No local build is required for reading or contributing nonformal feedback.
+This command has not been executed for this documentation revision. It does not
+imply that the full library or unrelated modules compile. See [build and
+reproduction](docs/guide/build.md).
 
-The committed `lean-toolchain` pins **Lean 4.34.1**; `lake-manifest.json` and `lakefile.toml` retain the Mathlib dependency at `d13f23b723b8a846827a245b89c10fc7d3f11612`. A bare `lake build` uses the default public `GRWTSK` library target, which may be prohibitively expensive for an ordinary workstation. Full-library compilation is a specialized verification task, not the recommended introduction. A local module build is not a transitive axiom audit or a proof of unresolved application premises.
+## Licensing and provenance
 
-Provider-specific Lean packages under [`docs/adapters/`](docs/adapters/README.md), including the isolated [`openai-math` adapter](docs/adapters/openai-math/README.md), have separate build scopes and must not be silently included in the public root build.
+[LICENSE](LICENSE), [NOTICE](NOTICE), and [LICENSES/](LICENSES/) record local
+and upstream rights. [CITATION.cff](CITATION.cff) is a collection citation,
+not an attribution or verification record for an individual result. Cite
+original authors, source declarations and exact revisions where applicable.
 
-## Repository boundary and licensing
-
-This repository owns mathematical source, authored explanation, and static source-bound verification specifications. Execution, mutable caches, managed checking, operational receipts, scheduling, authority, Git publication machinery, and generated proof capsules belong in [`grwtsk/noeaaeue`](https://github.com/grwtsk/noeaaeue). Use a receipt only at the source and dependency revision it actually identifies; the existence of a specification does not mean a check has run.
-
-The [collection-level citation](CITATION.cff) identifies this evolving repository, not the authorship or acceptance of individual results; cite original sources, declarations and pinned commits separately.
-
-Local contributions use the [MIT license](LICENSE), subject to the applicable upstream rights and terms. Copyright remains with the applicable human contributors and rights holders; the collective **grwtsk contributors** notice does not require a repository-wide Git identity or transfer contributor or upstream rights. Tools and AI providers are credited only for evidenced operations, not as human authors. Preserve genuine upstream sources, notices and licenses in [NOTICE](NOTICE), [LICENSES](LICENSES/), and relevant source headers.
+Local attribution: grwtsk contributors.
