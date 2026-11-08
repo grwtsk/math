@@ -69,7 +69,7 @@ theorem Tape.blockCaps_checkpoint_add_explicitLink (tape : Tape r N) (start : �
       ∀ i : Fin N, start + (k + m) ≤ i.val →
         tape.rowAt start checkpoint (k + m) i = next i :=
   tape.blockCaps_checkpoint_add start checkpoint checkpoint' next k m h
-    ⟨first, hLink⟩ second
+    ⟨first, hLink⟩ (by simpa only [Nat.add_assoc] using second)
 
 /- The two composition interfaces share the same exact boundary premises and
 underlying finite row recursion; they are not independent analytic proofs. -/
