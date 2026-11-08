@@ -65,7 +65,9 @@ are not falsely assigned a prime-base/exponent event.  Ramified prime powers
 remain zero character coefficients.
 
 Current source base: grwtsk/math
-`8dbc43cb54f02d227d73cfc5a150c159214275f8`.
+`8dbc43cb54f02d227d73cfc5a150c159214275f8` (main source edition).
+The parallel branch records source base
+`c779a67fa824da8f9b75384f7d61c46baeb2ce1f`.
 -/
 
 set_option autoImplicit false
