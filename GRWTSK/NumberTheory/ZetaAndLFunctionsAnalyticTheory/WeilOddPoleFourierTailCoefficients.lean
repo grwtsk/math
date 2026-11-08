@@ -3,9 +3,11 @@ Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 Authors: grwtsk contributors.
 
-SOURCE_PROOF_CANDIDATE / LEAN_ELABORATION_NOT_RUN /
-FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
-INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
+Original-target compilation and exact-target kernel replay checked.
+Selected theorem axiom audits (5 declarations) use only
+propext, Classical.choice and Quot.sound. Imported dependency closure
+not freshly replayed. Independent analytical review NOT_RUN.
+Formal evidence: grwtsk/noeaaeue docs/verification.md.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddHighPoleSectorReturn
 import Mathlib.Analysis.SumIntegralComparisons
@@ -120,7 +122,7 @@ private theorem ratio_sq_le (T w s : ℝ) (hT : 0 < T) (hw : 0 < w) :
     mul_le_mul_of_nonneg_left hbound (by positivity)
   calc
     _ = (4*w^2*s^2)/(T*((1/4 : ℝ)+w^2)^2) := by
-      rw [div_pow, mul_pow, Real.sq_sqrt hT.le]
+      simp only [div_pow, mul_pow, Real.sq_sqrt hT.le]
       ring
     _ ≤ (4*s^2)/(T*w^2) := by
       apply (div_le_div_iff₀ (by positivity) (by positivity)).2
@@ -158,8 +160,7 @@ theorem sinePoleCoefficient_sq_le (T : ℝ) (hT : 0 < T)
       (4*s^2)/(T*w^2) =
         poleCoefficientEnvelope T / ((n : ℝ)^2) := by
     dsimp [w, s, frequency, poleCoefficientEnvelope]
-    field_simp [hT.ne', Real.pi_ne_zero, hnr.ne']
-    ring
+    field_simp [hT.ne', Real.pi_ne_zero, hnr.ne'] <;> ring
   exact hsource.le.trans ((ratio_sq_le T w s hT hw).trans_eq hscale)
 
 /-- For N>=1 the entire real inverse-square tail is finite, with
@@ -184,8 +185,7 @@ theorem inverseSquareTail (N : ℕ) (hN : 0 < N) :
     (hanti.summable_of_integrableOn_Ioi hI hnn), hCmp.trans_eq ?_⟩
   dsimp only [f]
   rw [integral_Ioi_rpow_of_lt (by norm_num : (-2 : ℝ) < -1) hcut]
-  norm_num [Real.rpow_neg_ofNat, zpow_neg]
-  ring
+  norm_num [Real.rpow_neg_ofNat, Real.rpow_neg_one, zpow_neg] <;> ring
 
 /-- The infinite tail of squared ORIGINAL pole coefficients has exactly
 the envelope required by OddHighPoleSectorReturn.poleTailPrice. -/
@@ -206,7 +206,7 @@ theorem sinePoleCoefficient_tail_summable_le
     have hn : 0 < N + 1 + j := by omega
     have hsrc := sinePoleCoefficient_sq_le T hT (N + 1 + j) hn
     have hIndex : N + 1 + j = j + N + 1 := by omega
-    rw [hIndex] at hsrc
+    rw [hIndex] at hsrc ⊢
     calc
       _ ≤ poleCoefficientEnvelope T /
         (((j + N + 1 : ℕ) : ℝ)^2) := hsrc

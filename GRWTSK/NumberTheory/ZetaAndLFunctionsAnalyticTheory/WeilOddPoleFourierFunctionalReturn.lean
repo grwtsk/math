@@ -3,9 +3,11 @@ Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 Authors: grwtsk contributors.
 
-SOURCE_PROOF_CANDIDATE / LEAN_ELABORATION_NOT_RUN /
-FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
-INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
+Original-target compilation and exact-target kernel replay checked.
+Selected theorem axiom audits (8 declarations) use only
+propext, Classical.choice and Quot.sound. Imported dependency closure
+not freshly replayed. Independent analytical review NOT_RUN.
+Formal evidence: grwtsk/noeaaeue docs/verification.md.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddPoleFourierTailCoefficients
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddModeDependentTail
@@ -81,7 +83,7 @@ namespace GRWTSK.NumberTheory.WeilQuadraticForm.OddPoleFourierFunctionalReturn
 open OddRootProjection OddSineParseval OddModeDependentTail OddPoleMoment
 open OddSchurAccounting OddOutputTrace OddShiftEnergy
 open OddPoleFourierTailCoefficients OddHighPoleSectorReturn
-open OddLiteralCofinalMassFloor
+open OddLiteralCofinalMassFloor OddHighComplement OddWrapEnergy OddLiteralWindow
 
 /-- The exact support-truncated sinh pole vector. Its ambient carrier
 is the same whole-line Lebesgue L² as the original odd Weil form. -/
@@ -242,10 +244,10 @@ theorem highPoleTailBudget_of_source
     rw [poleWindow_pair_eq_moment T hgs] at h
     apply h.congr_fun
     intro j
+    symm
     change (sineCoefficient T (poleWindow T) (N+1+j)) *
         sineCoefficient T g (N+1+j) = a j * b j
     rw [poleWindow_sineCoefficient T hT (N+1+j) (by omega)]
-    rfl
   have hcs := sq_tsum_mul_le_tsum_sq_mul_tsum_sq
     a b ha hmassSeries.summable hpairs.summable
   rw [hpairs.tsum_eq, hmassSeries.tsum_eq] at hcs

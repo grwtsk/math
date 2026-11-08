@@ -3,9 +3,11 @@ Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 Authors: grwtsk contributors.
 
-SOURCE_PROOF_CANDIDATE / LEAN_ELABORATION_NOT_RUN /
-FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
-INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
+Original-target compilation and exact-target kernel replay checked.
+Selected theorem axiom audits (6 declarations) use only
+propext, Classical.choice and Quot.sound. Imported dependency closure
+not freshly replayed. Independent analytical review NOT_RUN.
+Formal evidence: grwtsk/noeaaeue docs/verification.md.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddLiteralCofinalMassFloor
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddPoleMoment
@@ -162,7 +164,7 @@ theorem high_pole_null_coercive (T β : ℝ) (hT : 0 < T) {N : ℕ}
     rw [hpole]
     ring
   rw [heq]
-  exact hcore
+  simpa only [one_mul] using hcore
 
 /-! ## The actual high-pole tail, with its Lean analysis bridge exposed -/
 
