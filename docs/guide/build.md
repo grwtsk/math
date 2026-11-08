@@ -13,6 +13,9 @@ lake build +GRWTSK.NumberTheory.FirstPrime:olean
 
 An optional related target is
 `lake build +GRWTSK.NumberTheory.MultiplicativeNumberTheory.LeastPrime:olean`.
+Read [FirstPrime.lean](../../GRWTSK/NumberTheory/FirstPrime.lean) and
+[LeastPrime.lean](../../GRWTSK/NumberTheory/MultiplicativeNumberTheory/LeastPrime.lean)
+for the exact source selected by these targets.
 These are example commands, not reports of executed builds. Root
 `lake build` may require large resources and covers a different scope.
 Elaboration, kernel replay, transitive axiom review and correspondence to
