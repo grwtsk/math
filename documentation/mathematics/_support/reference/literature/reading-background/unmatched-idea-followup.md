@@ -1,12 +1,18 @@
 # Follow-up: 70 ideas without established Lean targets
 
-Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+[Reading and correspondence index](index.md). Follow-up labels and idea counts
+below retain their recorded source/version scope; they are not live status
+measurements or fresh verification of later Lean source bytes. Historical local
+PDF locators below are retained as provenance text; the files are outside this
+repository and their availability is unresolved.
 
-Current follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
+Recorded seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
 
-Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
+Recorded follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
 
-Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
+Recorded follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
+
+Recorded follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
 
 All 70 exact version-bound ideas were revisited. **5 conditional-fragment**; **13 analogy-only**; **7 repair-candidate**; **2 obstruction-only**; **40 unresolved**; **3 no-substantive-body**. **No main manuscript claim is marked resolved.** Five conditional fragments cover narrower subclaims; repair candidates, finite analogies and obstruction checks remain separate.
 
@@ -31,9 +37,9 @@ The concluding proof sketches explicitly assume algebraic independence of motivi
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=1>): “Conjecture 1:”. Page-text SHA-256 `0c52294d74ab6084de944ef31a6358ebfa5a3c995a711530b3669360c8f68049`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=2>): “Proof of Conjecture 3:”. Page-text SHA-256 `54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=2>): “Conjecture 3: Galois Closure for Transcendental Values”. Page-text SHA-256 `54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=1`): “Conjecture 1:”. Page-text SHA-256 `0c52294d74ab6084de944ef31a6358ebfa5a3c995a711530b3669360c8f68049`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=2`): “Proof of Conjecture 3:”. Page-text SHA-256 `54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=2`): “Conjecture 3: Galois Closure for Transcendental Values”. Page-text SHA-256 `54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f`.
 
 Follow-up complete page read: 2. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -63,9 +69,9 @@ The concluding proof sketches explicitly assume algebraic independence of motivi
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=1>): “Conjecture 1:”. Page-text SHA-256 `0c52294d74ab6084de944ef31a6358ebfa5a3c995a711530b3669360c8f68049`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=2>): “Proof of Conjecture 3:”. Page-text SHA-256 `54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=2>): “Conjecture 3: Galois Closure for Transcendental Values”. Page-text SHA-256 `54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=1`): “Conjecture 1:”. Page-text SHA-256 `0c52294d74ab6084de944ef31a6358ebfa5a3c995a711530b3669360c8f68049`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=2`): “Proof of Conjecture 3:”. Page-text SHA-256 `54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=2`): “Conjecture 3: Galois Closure for Transcendental Values”. Page-text SHA-256 `54860375a64a792f74356ff7e66e13e03beb88ab7e58530071d737b1986baf5f`.
 
 Follow-up complete page read: 2. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -99,9 +105,9 @@ The representation outline asserts preservation of spectral and residue properti
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2>): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1`): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2`): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1`): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
 
 Follow-up complete page read: 1. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -134,9 +140,9 @@ The representation outline asserts preservation of spectral and residue properti
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1>): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2>): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1>): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1`): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2`): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1`): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
 
 Follow-up complete page read: 1. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -169,9 +175,9 @@ The affine/quantum section adds unspecified periodic terms and repeats positivit
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3>): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3>): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2`): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3`): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3`): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
 
 Follow-up complete page read: 3. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -205,9 +211,9 @@ The affine/quantum section adds unspecified periodic terms and repeats positivit
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2>): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3>): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3>): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2`): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3`): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3`): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
 
 Follow-up complete page read: 3. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -233,9 +239,9 @@ Further localization/functional-equation discussion retains an ambiguity between
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=2>): “Positivity Constraints”. Page-text SHA-256 `68c90079ade258371fd7ef7d4c7294eaa50fc955b3f003a3b4c425da424494fe`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=3>): “Step 3: Positivity Constraints.”. Page-text SHA-256 `6cd70f65b0a842b4e6970075128bd2615c4415170d3221649f7abd83b6d83f7b`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=1>): “Residue Suppression and Critical Line Alignment for”. Page-text SHA-256 `ded27e3af5f99d7cbc7746b43a492655d8228bfc83fa002a515cd41c7f48cf37`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=2`): “Positivity Constraints”. Page-text SHA-256 `68c90079ade258371fd7ef7d4c7294eaa50fc955b3f003a3b4c425da424494fe`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=3`): “Step 3: Positivity Constraints.”. Page-text SHA-256 `6cd70f65b0a842b4e6970075128bd2615c4415170d3221649f7abd83b6d83f7b`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=1`): “Residue Suppression and Critical Line Alignment for”. Page-text SHA-256 `ded27e3af5f99d7cbc7746b43a492655d8228bfc83fa002a515cd41c7f48cf37`.
 
 Follow-up complete page read: 1. This adds a page beyond the previously recorded review.
 
@@ -261,9 +267,9 @@ Further localization/functional-equation discussion retains an ambiguity between
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=2>): “Positivity Constraints”. Page-text SHA-256 `68c90079ade258371fd7ef7d4c7294eaa50fc955b3f003a3b4c425da424494fe`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=3>): “Step 3: Positivity Constraints.”. Page-text SHA-256 `6cd70f65b0a842b4e6970075128bd2615c4415170d3221649f7abd83b6d83f7b`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=1>): “Residue Suppression and Critical Line Alignment for”. Page-text SHA-256 `ded27e3af5f99d7cbc7746b43a492655d8228bfc83fa002a515cd41c7f48cf37`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=2`): “Positivity Constraints”. Page-text SHA-256 `68c90079ade258371fd7ef7d4c7294eaa50fc955b3f003a3b4c425da424494fe`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=3`): “Step 3: Positivity Constraints.”. Page-text SHA-256 `6cd70f65b0a842b4e6970075128bd2615c4415170d3221649f7abd83b6d83f7b`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=1`): “Residue Suppression and Critical Line Alignment for”. Page-text SHA-256 `ded27e3af5f99d7cbc7746b43a492655d8228bfc83fa002a515cd41c7f48cf37`.
 
 Follow-up complete page read: 1. This adds a page beyond the previously recorded review.
 
@@ -295,9 +301,9 @@ The numerical appendix computes sums of supplied floating eigenvalues divided by
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=3>): “Theorem: Positivity Constraints for F4 and E8”. Page-text SHA-256 `99610e9919ad114cfb222667bd41771aa3b3895f779491bb758ba364ae52ef98`.
-- [p. 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=5>): “Extensions to Symmetric and Exterior Powers”. Page-text SHA-256 `029252e0e8c3cc44824ae20e6a0db4a1fa7016fb2489646e969b19de12e742b7`.
-- [p. 10](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=10>): “def residue_computation(prime_list, eigenvalues):”. Page-text SHA-256 `3943ccf311e2f855e0a595f09cbb263bc494c3c4e52d6d41d33c09b948f549c1`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=3`): “Theorem: Positivity Constraints for F4 and E8”. Page-text SHA-256 `99610e9919ad114cfb222667bd41771aa3b3895f779491bb758ba364ae52ef98`.
+- p. 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=5`): “Extensions to Symmetric and Exterior Powers”. Page-text SHA-256 `029252e0e8c3cc44824ae20e6a0db4a1fa7016fb2489646e969b19de12e742b7`.
+- p. 10 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=10`): “def residue_computation(prime_list, eigenvalues):”. Page-text SHA-256 `3943ccf311e2f855e0a595f09cbb263bc494c3c4e52d6d41d33c09b948f549c1`.
 
 Follow-up complete page read: 10. This adds a page beyond the previously recorded review.
 
@@ -323,9 +329,9 @@ The later nilpotent-orbit discussion adds no normalization resolving the strict-
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 34](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4fd05e96b1d7--e (1).pdf#page=34>): “Theorem 1: Positivity of Boundary Pairings”. Page-text SHA-256 `e8e3759bfa25a3946cac50ecc39af49c7ffd8f0b18da5c7db2d8565af3a0f22a`.
-- [p. 34](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4fd05e96b1d7--e (1).pdf#page=34>): “Theorem 2: Stability of Hecke Eigenvalues”. Page-text SHA-256 `e8e3759bfa25a3946cac50ecc39af49c7ffd8f0b18da5c7db2d8565af3a0f22a`.
-- [p. 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4fd05e96b1d7--e (1).pdf#page=9>): “• Map D-modules on the open moduli space Mopen to coherent sheaves on nilpo-”. Page-text SHA-256 `969022e6d83ec74f816fe253e6363f527b31c6cf08e196d806cee2bb7d7ffa61`.
+- p. 34 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4fd05e96b1d7--e (1).pdf#page=34`): “Theorem 1: Positivity of Boundary Pairings”. Page-text SHA-256 `e8e3759bfa25a3946cac50ecc39af49c7ffd8f0b18da5c7db2d8565af3a0f22a`.
+- p. 34 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4fd05e96b1d7--e (1).pdf#page=34`): “Theorem 2: Stability of Hecke Eigenvalues”. Page-text SHA-256 `e8e3759bfa25a3946cac50ecc39af49c7ffd8f0b18da5c7db2d8565af3a0f22a`.
+- p. 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4fd05e96b1d7--e (1).pdf#page=9`): “• Map D-modules on the open moduli space Mopen to coherent sheaves on nilpo-”. Page-text SHA-256 `969022e6d83ec74f816fe253e6363f527b31c6cf08e196d806cee2bb7d7ffa61`.
 
 Follow-up complete page read: 9. This adds a page beyond the previously recorded review.
 
@@ -352,9 +358,9 @@ The later nilpotent-orbit discussion adds no normalization resolving the strict-
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 34](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c34a092c5adb--e (2).pdf#page=34>): “Theorem 1: Positivity of Boundary Pairings”. Page-text SHA-256 `e8e3759bfa25a3946cac50ecc39af49c7ffd8f0b18da5c7db2d8565af3a0f22a`.
-- [p. 34](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c34a092c5adb--e (2).pdf#page=34>): “Theorem 2: Stability of Hecke Eigenvalues”. Page-text SHA-256 `e8e3759bfa25a3946cac50ecc39af49c7ffd8f0b18da5c7db2d8565af3a0f22a`.
-- [p. 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c34a092c5adb--e (2).pdf#page=9>): “• Map D-modules on the open moduli space Mopen to coherent sheaves on nilpo-”. Page-text SHA-256 `969022e6d83ec74f816fe253e6363f527b31c6cf08e196d806cee2bb7d7ffa61`.
+- p. 34 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c34a092c5adb--e (2).pdf#page=34`): “Theorem 1: Positivity of Boundary Pairings”. Page-text SHA-256 `e8e3759bfa25a3946cac50ecc39af49c7ffd8f0b18da5c7db2d8565af3a0f22a`.
+- p. 34 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c34a092c5adb--e (2).pdf#page=34`): “Theorem 2: Stability of Hecke Eigenvalues”. Page-text SHA-256 `e8e3759bfa25a3946cac50ecc39af49c7ffd8f0b18da5c7db2d8565af3a0f22a`.
+- p. 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c34a092c5adb--e (2).pdf#page=9`): “• Map D-modules on the open moduli space Mopen to coherent sheaves on nilpo-”. Page-text SHA-256 `969022e6d83ec74f816fe253e6363f527b31c6cf08e196d806cee2bb7d7ffa61`.
 
 Follow-up complete page read: 9. This adds a page beyond the previously recorded review.
 
@@ -385,10 +391,10 @@ The later Frobenius chapter passes directly from finite-field weight magnitudes 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 82](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=82>): “Lemma 8.2”. Page-text SHA-256 `d512130e9dc70e0587b35512a132b17e2f6eceb1a72fb4cd33fd1ccb7941fb48`.
-- [p. 87](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=87>): “Lemma 9.3”. Page-text SHA-256 `8a986f83e54cab6305b70b8c7cabc97d92a2b6018b5c24cf7a65292c468c49b5`.
-- [p. 91](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=91>): “Lemma 10.4”. Page-text SHA-256 `bad1bc584eba3673bbd0d6e1ee07de3e95bb7b659126a32a2027abf981995e0e`.
-- [p. 108](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=108>): “15     Frobenius Eigenvalues: Arithmetic and Spectral Connections”. Page-text SHA-256 `f7a0544aa29e2632785b727f39ccb1c488a19bb30fc9e20af927f1ab721e669c`.
+- p. 82 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=82`): “Lemma 8.2”. Page-text SHA-256 `d512130e9dc70e0587b35512a132b17e2f6eceb1a72fb4cd33fd1ccb7941fb48`.
+- p. 87 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=87`): “Lemma 9.3”. Page-text SHA-256 `8a986f83e54cab6305b70b8c7cabc97d92a2b6018b5c24cf7a65292c468c49b5`.
+- p. 91 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=91`): “Lemma 10.4”. Page-text SHA-256 `bad1bc584eba3673bbd0d6e1ee07de3e95bb7b659126a32a2027abf981995e0e`.
+- p. 108 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=108`): “15     Frobenius Eigenvalues: Arithmetic and Spectral Connections”. Page-text SHA-256 `f7a0544aa29e2632785b727f39ccb1c488a19bb30fc9e20af927f1ab721e669c`.
 
 Follow-up complete page read: 108. This adds a page beyond the previously recorded review.
 
@@ -418,10 +424,10 @@ The later Frobenius chapter passes directly from finite-field weight magnitudes 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 82](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=82>): “Lemma 8.2”. Page-text SHA-256 `d512130e9dc70e0587b35512a132b17e2f6eceb1a72fb4cd33fd1ccb7941fb48`.
-- [p. 87](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=87>): “Lemma 9.3”. Page-text SHA-256 `8a986f83e54cab6305b70b8c7cabc97d92a2b6018b5c24cf7a65292c468c49b5`.
-- [p. 91](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=91>): “Lemma 10.4”. Page-text SHA-256 `bad1bc584eba3673bbd0d6e1ee07de3e95bb7b659126a32a2027abf981995e0e`.
-- [p. 108](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=108>): “15     Frobenius Eigenvalues: Arithmetic and Spectral Connections”. Page-text SHA-256 `f7a0544aa29e2632785b727f39ccb1c488a19bb30fc9e20af927f1ab721e669c`.
+- p. 82 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=82`): “Lemma 8.2”. Page-text SHA-256 `d512130e9dc70e0587b35512a132b17e2f6eceb1a72fb4cd33fd1ccb7941fb48`.
+- p. 87 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=87`): “Lemma 9.3”. Page-text SHA-256 `8a986f83e54cab6305b70b8c7cabc97d92a2b6018b5c24cf7a65292c468c49b5`.
+- p. 91 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=91`): “Lemma 10.4”. Page-text SHA-256 `bad1bc584eba3673bbd0d6e1ee07de3e95bb7b659126a32a2027abf981995e0e`.
+- p. 108 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=108`): “15     Frobenius Eigenvalues: Arithmetic and Spectral Connections”. Page-text SHA-256 `f7a0544aa29e2632785b727f39ccb1c488a19bb30fc9e20af927f1ab721e669c`.
 
 Follow-up complete page read: 108. This adds a page beyond the previously recorded review.
 
@@ -449,9 +455,9 @@ The residue subsection supplies a local simple-pole asymptotic and separately cl
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=1>): “Definition 3.1 (Harmonic Functional).”. Page-text SHA-256 `5c2381f9d3eaa941a1f0a6bd98fc0f8fb0e6b6cf51fd5b0cbbb1764684746da3`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=2>): “Theorem 4.3 (Harmonic-Residue Bridge).”. Page-text SHA-256 `7a0b6062cb5867a4acb64db923ef744dafc01efb68f7ac05593f48576c5f8c56`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=2>): “Theorem 3.3 (Variational Principle for the Zeta Function). The critical line ℜ(s) = 21 is the unique”. Page-text SHA-256 `7a0b6062cb5867a4acb64db923ef744dafc01efb68f7ac05593f48576c5f8c56`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=1`): “Definition 3.1 (Harmonic Functional).”. Page-text SHA-256 `5c2381f9d3eaa941a1f0a6bd98fc0f8fb0e6b6cf51fd5b0cbbb1764684746da3`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=2`): “Theorem 4.3 (Harmonic-Residue Bridge).”. Page-text SHA-256 `7a0b6062cb5867a4acb64db923ef744dafc01efb68f7ac05593f48576c5f8c56`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=2`): “Theorem 3.3 (Variational Principle for the Zeta Function). The critical line ℜ(s) = 21 is the unique”. Page-text SHA-256 `7a0b6062cb5867a4acb64db923ef744dafc01efb68f7ac05593f48576c5f8c56`.
 
 Follow-up complete page read: 2. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -478,9 +484,9 @@ The residue subsection supplies a local simple-pole asymptotic and separately cl
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=1>): “Definition 3.1 (Harmonic Functional).”. Page-text SHA-256 `5c2381f9d3eaa941a1f0a6bd98fc0f8fb0e6b6cf51fd5b0cbbb1764684746da3`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=2>): “Theorem 4.3 (Harmonic-Residue Bridge).”. Page-text SHA-256 `7a0b6062cb5867a4acb64db923ef744dafc01efb68f7ac05593f48576c5f8c56`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=2>): “Theorem 3.3 (Variational Principle for the Zeta Function). The critical line ℜ(s) = 21 is the unique”. Page-text SHA-256 `7a0b6062cb5867a4acb64db923ef744dafc01efb68f7ac05593f48576c5f8c56`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=1`): “Definition 3.1 (Harmonic Functional).”. Page-text SHA-256 `5c2381f9d3eaa941a1f0a6bd98fc0f8fb0e6b6cf51fd5b0cbbb1764684746da3`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=2`): “Theorem 4.3 (Harmonic-Residue Bridge).”. Page-text SHA-256 `7a0b6062cb5867a4acb64db923ef744dafc01efb68f7ac05593f48576c5f8c56`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=2`): “Theorem 3.3 (Variational Principle for the Zeta Function). The critical line ℜ(s) = 21 is the unique”. Page-text SHA-256 `7a0b6062cb5867a4acb64db923ef744dafc01efb68f7ac05593f48576c5f8c56`.
 
 Follow-up complete page read: 2. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -507,10 +513,10 @@ The later LaSalle proof treats coercive level sets as compact in ℓ² and equat
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=6>): “Theorem 4.1”. Page-text SHA-256 `2422d58f52ec889752308618cc656df7fb29998c6ac58af0773288c8784f2e43`.
-- [p. 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=11>): “Lemma 11.3”. Page-text SHA-256 `a03e75ab599b7183c9d1451c775b6d8ed79bcb63afcf1c614c59b2a916d64eab`.
-- [p. 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=14>): “Theorem 15.1”. Page-text SHA-256 `2a621cd0b3b77310f0f804de4fe6a68b57481015c3f904c8f67161b986d79fce`.
-- [p. 13](</Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=13>): “GRADIENT-FLOW APPROACH TO GRH                           13”. Page-text SHA-256 `ea3979c00b6992557773c802425a3ad92c02c2df3738098dc089f7f59a1c10b5`.
+- p. 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=6`): “Theorem 4.1”. Page-text SHA-256 `2422d58f52ec889752308618cc656df7fb29998c6ac58af0773288c8784f2e43`.
+- p. 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=11`): “Lemma 11.3”. Page-text SHA-256 `a03e75ab599b7183c9d1451c775b6d8ed79bcb63afcf1c614c59b2a916d64eab`.
+- p. 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=14`): “Theorem 15.1”. Page-text SHA-256 `2a621cd0b3b77310f0f804de4fe6a68b57481015c3f904c8f67161b986d79fce`.
+- p. 13 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=13`): “GRADIENT-FLOW APPROACH TO GRH                           13”. Page-text SHA-256 `ea3979c00b6992557773c802425a3ad92c02c2df3738098dc089f7f59a1c10b5`.
 
 Follow-up complete page read: 13. This adds a page beyond the previously recorded review.
 
@@ -538,9 +544,9 @@ The later cross-domain meta-theorem still says critical-line propagation is loga
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=9>): “Quantifying the Error: Propagation Metric”. Page-text SHA-256 `3e1309485eeaaf7e1ff97b0c7be4e409a0161431a2b33c75e36c6680485d22ce`.
-- [p. 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=7>): “Strengthened Spectral Assumptions”. Page-text SHA-256 `d4d2cd3f0fa6e7937c169fb93bad2a51cb6e933d021eafadef34c933382b98ee`.
-- [p. 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=11>): “assumption guarantees consistency in the cohomological interpretations of”. Page-text SHA-256 `731196e6cfe071ddf7e3534a14b673ee667de827f15b50b481e6a63df3f09663`.
+- p. 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=9`): “Quantifying the Error: Propagation Metric”. Page-text SHA-256 `3e1309485eeaaf7e1ff97b0c7be4e409a0161431a2b33c75e36c6680485d22ce`.
+- p. 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=7`): “Strengthened Spectral Assumptions”. Page-text SHA-256 `d4d2cd3f0fa6e7937c169fb93bad2a51cb6e933d021eafadef34c933382b98ee`.
+- p. 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=11`): “assumption guarantees consistency in the cohomological interpretations of”. Page-text SHA-256 `731196e6cfe071ddf7e3534a14b673ee667de827f15b50b481e6a63df3f09663`.
 
 Follow-up complete page read: 11. This adds a page beyond the previously recorded review.
 
@@ -568,9 +574,9 @@ The later cross-domain meta-theorem still says critical-line propagation is loga
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=9>): “Quantifying the Error: Propagation Metric”. Page-text SHA-256 `3e1309485eeaaf7e1ff97b0c7be4e409a0161431a2b33c75e36c6680485d22ce`.
-- [p. 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=7>): “Strengthened Spectral Assumptions”. Page-text SHA-256 `d4d2cd3f0fa6e7937c169fb93bad2a51cb6e933d021eafadef34c933382b98ee`.
-- [p. 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=11>): “assumption guarantees consistency in the cohomological interpretations of”. Page-text SHA-256 `731196e6cfe071ddf7e3534a14b673ee667de827f15b50b481e6a63df3f09663`.
+- p. 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=9`): “Quantifying the Error: Propagation Metric”. Page-text SHA-256 `3e1309485eeaaf7e1ff97b0c7be4e409a0161431a2b33c75e36c6680485d22ce`.
+- p. 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=7`): “Strengthened Spectral Assumptions”. Page-text SHA-256 `d4d2cd3f0fa6e7937c169fb93bad2a51cb6e933d021eafadef34c933382b98ee`.
+- p. 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=11`): “assumption guarantees consistency in the cohomological interpretations of”. Page-text SHA-256 `731196e6cfe071ddf7e3534a14b673ee667de827f15b50b481e6a63df3f09663`.
 
 Follow-up complete page read: 11. This adds a page beyond the previously recorded review.
 
@@ -596,9 +602,9 @@ The appendix infers a unique minimum from claimed convexity in zero coordinates.
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=7>): “Theorem 4 (Convexity and Uniqueness).”. Page-text SHA-256 `2ea73354d7b5f6489c8f3150330aefa81505170044c1a206d1f4b6c0b2085076`.
-- [p. 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=14>): “Theorem 12”. Page-text SHA-256 `082eb7b839082d456ca71f986371b6d4088cbff7c2099296ab8ff6e19fd7192b`.
-- [p. 20](</Users/local/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=20>): “20                            grwtsk contributors”. Page-text SHA-256 `1b291582edd00896537f9e707fd522e1d09ae3e2406b7f2a86f732544d7e20e4`.
+- p. 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=7`): “Theorem 4 (Convexity and Uniqueness).”. Page-text SHA-256 `2ea73354d7b5f6489c8f3150330aefa81505170044c1a206d1f4b6c0b2085076`.
+- p. 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=14`): “Theorem 12”. Page-text SHA-256 `082eb7b839082d456ca71f986371b6d4088cbff7c2099296ab8ff6e19fd7192b`.
+- p. 20 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=20`): “20                            grwtsk contributors”. Page-text SHA-256 `1b291582edd00896537f9e707fd522e1d09ae3e2406b7f2a86f732544d7e20e4`.
 
 Follow-up complete page read: 20. This adds a page beyond the previously recorded review.
 
@@ -624,9 +630,9 @@ The appendix infers a unique minimum from claimed convexity in zero coordinates.
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=7>): “Theorem 4 (Convexity and Uniqueness).”. Page-text SHA-256 `2ea73354d7b5f6489c8f3150330aefa81505170044c1a206d1f4b6c0b2085076`.
-- [p. 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=14>): “Theorem 12”. Page-text SHA-256 `082eb7b839082d456ca71f986371b6d4088cbff7c2099296ab8ff6e19fd7192b`.
-- [p. 20](</Users/local/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=20>): “20                            grwtsk contributors”. Page-text SHA-256 `1b291582edd00896537f9e707fd522e1d09ae3e2406b7f2a86f732544d7e20e4`.
+- p. 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=7`): “Theorem 4 (Convexity and Uniqueness).”. Page-text SHA-256 `2ea73354d7b5f6489c8f3150330aefa81505170044c1a206d1f4b6c0b2085076`.
+- p. 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=14`): “Theorem 12”. Page-text SHA-256 `082eb7b839082d456ca71f986371b6d4088cbff7c2099296ab8ff6e19fd7192b`.
+- p. 20 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=20`): “20                            grwtsk contributors”. Page-text SHA-256 `1b291582edd00896537f9e707fd522e1d09ae3e2406b7f2a86f732544d7e20e4`.
 
 Follow-up complete page read: 20. This adds a page beyond the previously recorded review.
 
@@ -652,9 +658,9 @@ Appendix B introduces forced decay R′+λR=F(s,t) but states an unforced expone
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 17](</Users/local/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=17>): “Theorem 6.7”. Page-text SHA-256 `810031a3dc4ed7db04bdedeb62dea918f0ba0c3c80ef5c890652043a64638c08`.
-- [p. 21](</Users/local/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=21>): “Theorem 7.1”. Page-text SHA-256 `f2c3bfbb8fc201fbcf05183066ae2d48eb466a3a7ea606d15a60496dca2e0eda`.
-- [p. 43](</Users/local/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=43>): “ENTROPY-DRIVEN RESIDUE DYNAMICS: A RIGOROUS PROOF OF THE RIEMANN”. Page-text SHA-256 `869ef6c235667f3ba2b413075ce7be7cff6da921027668bb2666d7947841ceeb`.
+- p. 17 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=17`): “Theorem 6.7”. Page-text SHA-256 `810031a3dc4ed7db04bdedeb62dea918f0ba0c3c80ef5c890652043a64638c08`.
+- p. 21 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=21`): “Theorem 7.1”. Page-text SHA-256 `f2c3bfbb8fc201fbcf05183066ae2d48eb466a3a7ea606d15a60496dca2e0eda`.
+- p. 43 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=43`): “ENTROPY-DRIVEN RESIDUE DYNAMICS: A RIGOROUS PROOF OF THE RIEMANN”. Page-text SHA-256 `869ef6c235667f3ba2b413075ce7be7cff6da921027668bb2666d7947841ceeb`.
 
 Follow-up complete page read: 43. This adds a page beyond the previously recorded review.
 
@@ -680,9 +686,9 @@ The boundary page defines an infinite product of exponential corrections. Local 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=4>): “Residue Clustering Symmetry.”. Page-text SHA-256 `ef7dccd0f77425afc8191e2366c356a0f9badad1f6160724e84cb67a62753da2`.
-- [p. 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=7>): “Entropy Minimization at Boundaries.”. Page-text SHA-256 `147fa614f409ff33352b1e1a560de13ee1cb1b34ab9be43d0bb2caa3abeb7540`.
-- [p. 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=6>): “6                                   grwtsk contributors”. Page-text SHA-256 `11df423560851a32ffbf0f13dab99d6bba4c13e9db19f1570004844fe44fb285`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=4`): “Residue Clustering Symmetry.”. Page-text SHA-256 `ef7dccd0f77425afc8191e2366c356a0f9badad1f6160724e84cb67a62753da2`.
+- p. 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=7`): “Entropy Minimization at Boundaries.”. Page-text SHA-256 `147fa614f409ff33352b1e1a560de13ee1cb1b34ab9be43d0bb2caa3abeb7540`.
+- p. 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=6`): “6                                   grwtsk contributors”. Page-text SHA-256 `11df423560851a32ffbf0f13dab99d6bba4c13e9db19f1570004844fe44fb285`.
 
 Follow-up complete page read: 6. This adds a page beyond the previously recorded review.
 
@@ -711,9 +717,9 @@ The entropy page explicitly passes from rank-dependent pointwise corrections to 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=4>): “Geometric Suppression of Residues”. Page-text SHA-256 `b3eccda07f78473823ccd264dc06cacbbde80b0bdf35c0b725d1ab376ad93aa1`.
-- [p. 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=8>): “Residue Clustering in G∞”. Page-text SHA-256 `9d128b3804123915457f4afba8900c6d3291a0172a1c88982b4e0cfa47cd516e`.
-- [p. 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=5>): “Dimension dim(G)      Perturbation ϵ Residue Value ∆G (g, π)”. Page-text SHA-256 `75a4e5b7d88accff58e675deb42d550da8969d58d8c008fbba3d688b7e6ed90d`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=4`): “Geometric Suppression of Residues”. Page-text SHA-256 `b3eccda07f78473823ccd264dc06cacbbde80b0bdf35c0b725d1ab376ad93aa1`.
+- p. 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=8`): “Residue Clustering in G∞”. Page-text SHA-256 `9d128b3804123915457f4afba8900c6d3291a0172a1c88982b4e0cfa47cd516e`.
+- p. 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=5`): “Dimension dim(G)      Perturbation ϵ Residue Value ∆G (g, π)”. Page-text SHA-256 `75a4e5b7d88accff58e675deb42d550da8969d58d8c008fbba3d688b7e6ed90d`.
 
 Follow-up complete page read: 5. This adds a page beyond the previously recorded review.
 
@@ -739,10 +745,10 @@ The later boundary-completion theorem explicitly uses an idempotent I−Er with 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=11>): “Actual quotient authority”. Page-text SHA-256 `72b5e4c4f159e19786a5cf7544f57571cd00957a748bd255f7579cf993336316`.
-- [p. 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=11>): “Theorem 5.2”. Page-text SHA-256 `72b5e4c4f159e19786a5cf7544f57571cd00957a748bd255f7579cf993336316`.
-- [p. 13](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=13>): “Zero excitation summands are excluded”. Page-text SHA-256 `d5b66f19d9c9de7c9c9747da41ae51c9de5a7be0eaeb54d5bc834ba577a33f8e`.
-- [p. 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=15>): “A02 – Theta–Eisenstein–Hecke Compatibility                                                 Revision 1.1”. Page-text SHA-256 `1b0e14bf25b469e55de36df7b2d238e41bd29a6f2dcd662a7c84058705c0af84`.
+- p. 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=11`): “Actual quotient authority”. Page-text SHA-256 `72b5e4c4f159e19786a5cf7544f57571cd00957a748bd255f7579cf993336316`.
+- p. 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=11`): “Theorem 5.2”. Page-text SHA-256 `72b5e4c4f159e19786a5cf7544f57571cd00957a748bd255f7579cf993336316`.
+- p. 13 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=13`): “Zero excitation summands are excluded”. Page-text SHA-256 `d5b66f19d9c9de7c9c9747da41ae51c9de5a7be0eaeb54d5bc834ba577a33f8e`.
+- p. 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=15`): “A02 – Theta–Eisenstein–Hecke Compatibility                                                 Revision 1.1”. Page-text SHA-256 `1b0e14bf25b469e55de36df7b2d238e41bd29a6f2dcd662a7c84058705c0af84`.
 
 Follow-up complete page read: 15. This adds a page beyond the previously recorded review.
 
@@ -775,9 +781,9 @@ The conclusion page appeals to general elliptic-curve behavior and an unspecifie
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=1>): “Reduction to a Diophantine System”. Page-text SHA-256 `97d68d6a1a2f1cc2b9eae109618bcdf8035e1edbfce1a5cab6f594e26c5483c3`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=2>): “Higher-Genus Curve Argument”. Page-text SHA-256 `85cb0c447a322aa85bbe6e2e33168cdfac4d6328b6f4d025974165799171ccac`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=2>): “3     Nonexistence of Rational Solutions via Elliptic Curves”. Page-text SHA-256 `85cb0c447a322aa85bbe6e2e33168cdfac4d6328b6f4d025974165799171ccac`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=1`): “Reduction to a Diophantine System”. Page-text SHA-256 `97d68d6a1a2f1cc2b9eae109618bcdf8035e1edbfce1a5cab6f594e26c5483c3`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=2`): “Higher-Genus Curve Argument”. Page-text SHA-256 `85cb0c447a322aa85bbe6e2e33168cdfac4d6328b6f4d025974165799171ccac`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=2`): “3     Nonexistence of Rational Solutions via Elliptic Curves”. Page-text SHA-256 `85cb0c447a322aa85bbe6e2e33168cdfac4d6328b6f4d025974165799171ccac`.
 
 Follow-up complete page read: 2. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -804,9 +810,9 @@ The Minkowski section still assumes sufficient volume for a region described in 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=1>): “Reformulation in a Moving Reference Frame”. Page-text SHA-256 `a4b9e4fd9ade62cd3690f50d38043302aca210ae0f618fb5621eac2f829445ee`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=2>): “Minkowski’s Theorem”. Page-text SHA-256 `0d46fb9ce351d315b56d15f27b7c2db7106332ac1de3bb8d2c9b601d0979fd9a`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=2>): “3.1    Bounding the Density of Clustering”. Page-text SHA-256 `0d46fb9ce351d315b56d15f27b7c2db7106332ac1de3bb8d2c9b601d0979fd9a`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=1`): “Reformulation in a Moving Reference Frame”. Page-text SHA-256 `a4b9e4fd9ade62cd3690f50d38043302aca210ae0f618fb5621eac2f829445ee`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=2`): “Minkowski’s Theorem”. Page-text SHA-256 `0d46fb9ce351d315b56d15f27b7c2db7106332ac1de3bb8d2c9b601d0979fd9a`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=2`): “3.1    Bounding the Density of Clustering”. Page-text SHA-256 `0d46fb9ce351d315b56d15f27b7c2db7106332ac1de3bb8d2c9b601d0979fd9a`.
 
 Follow-up complete page read: 2. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -840,9 +846,9 @@ The boundary-strata outline names compactification and localization, but defines
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>): “Residue Suppression via Localization”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2>): “Positivity Constraints”. Page-text SHA-256 `ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>): “Boundary Regularization: A Framework for”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1`): “Residue Suppression via Localization”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2`): “Positivity Constraints”. Page-text SHA-256 `ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1`): “Boundary Regularization: A Framework for”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
 
 Follow-up complete page read: 1. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -870,9 +876,9 @@ The opening spectral-rigidity premise already assumes an arithmetic operator wit
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=2>): “Theorem 3.1”. Page-text SHA-256 `e21cb255c9e00fd20a38144467d1650580870d9b9bc7fcac1e6224b29b59883a`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=3>): “Theorem 5.1”. Page-text SHA-256 `a17ee8a50187606c45054ba9e1f049a03d2d6846f22a7d45162c54cc85b61ba9`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=1>): “Annals of Mathematics 00 (XXXX), 1–4”. Page-text SHA-256 `8f2af0692441c8c95df167e5989a0366d24ac7f3f5a7286ca4b8842d640cc4d1`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=2`): “Theorem 3.1”. Page-text SHA-256 `e21cb255c9e00fd20a38144467d1650580870d9b9bc7fcac1e6224b29b59883a`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=3`): “Theorem 5.1”. Page-text SHA-256 `a17ee8a50187606c45054ba9e1f049a03d2d6846f22a7d45162c54cc85b61ba9`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=1`): “Annals of Mathematics 00 (XXXX), 1–4”. Page-text SHA-256 `8f2af0692441c8c95df167e5989a0366d24ac7f3f5a7286ca4b8842d640cc4d1`.
 
 Follow-up complete page read: 1. This adds a page beyond the previously recorded review.
 
@@ -898,9 +904,9 @@ Further localization/functional-equation discussion retains an ambiguity between
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/ReviewQueue/35e6de86f676--B (8).pdf#page=3>): “Localization Functor”. Page-text SHA-256 `aa392b3aae95af24e4b8b92da9cc3aba994072c49cf29452bc7c69cdfabd90fa`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/ReviewQueue/35e6de86f676--B (8).pdf#page=3>): “Positivity Constraints”. Page-text SHA-256 `aa392b3aae95af24e4b8b92da9cc3aba994072c49cf29452bc7c69cdfabd90fa`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/ReviewQueue/35e6de86f676--B (8).pdf#page=4>): “5     Applications to Functional Equation Symmetry”. Page-text SHA-256 `0ec72de8e11a6c9a3b8f9634d9418db4dd70df63f6571a69b841ee71dd962fb8`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/ReviewQueue/35e6de86f676--B (8).pdf#page=3`): “Localization Functor”. Page-text SHA-256 `aa392b3aae95af24e4b8b92da9cc3aba994072c49cf29452bc7c69cdfabd90fa`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/ReviewQueue/35e6de86f676--B (8).pdf#page=3`): “Positivity Constraints”. Page-text SHA-256 `aa392b3aae95af24e4b8b92da9cc3aba994072c49cf29452bc7c69cdfabd90fa`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/ReviewQueue/35e6de86f676--B (8).pdf#page=4`): “5     Applications to Functional Equation Symmetry”. Page-text SHA-256 `0ec72de8e11a6c9a3b8f9634d9418db4dd70df63f6571a69b841ee71dd962fb8`.
 
 Follow-up complete page read: 4. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -928,9 +934,9 @@ The boundary-vanishing discussion still assumes that an off-line zero produces a
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 13](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=13>): “Theorem 3.2”. Page-text SHA-256 `6568d2288e3fe9f47cf2780b69467685e7078c36f429f32983f2352487e66692`.
-- [p. 17](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=17>): “Corollary 3.6”. Page-text SHA-256 `49d0dfee1b4fe09337378dc50799a2320ad144ed8b5817a6094d6ff6fa8dcf6f`.
-- [p. 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=14>): “• Hard Lefschetz theorem (generalized to derived stacks): Provides a cohomological sym-”. Page-text SHA-256 `8a2e053adf8870da744730eecd1b568a95a92b028218ab88006da7e313a86ca0`.
+- p. 13 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=13`): “Theorem 3.2”. Page-text SHA-256 `6568d2288e3fe9f47cf2780b69467685e7078c36f429f32983f2352487e66692`.
+- p. 17 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=17`): “Corollary 3.6”. Page-text SHA-256 `49d0dfee1b4fe09337378dc50799a2320ad144ed8b5817a6094d6ff6fa8dcf6f`.
+- p. 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=14`): “• Hard Lefschetz theorem (generalized to derived stacks): Provides a cohomological sym-”. Page-text SHA-256 `8a2e053adf8870da744730eecd1b568a95a92b028218ab88006da7e313a86ca0`.
 
 Follow-up complete page read: 14. This adds a page beyond the previously recorded review.
 
@@ -958,9 +964,9 @@ The boundary-vanishing discussion still assumes that an off-line zero produces a
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 13](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=13>): “Theorem 3.2”. Page-text SHA-256 `6568d2288e3fe9f47cf2780b69467685e7078c36f429f32983f2352487e66692`.
-- [p. 17](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=17>): “Corollary 3.6”. Page-text SHA-256 `49d0dfee1b4fe09337378dc50799a2320ad144ed8b5817a6094d6ff6fa8dcf6f`.
-- [p. 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=14>): “• Hard Lefschetz theorem (generalized to derived stacks): Provides a cohomological sym-”. Page-text SHA-256 `8a2e053adf8870da744730eecd1b568a95a92b028218ab88006da7e313a86ca0`.
+- p. 13 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=13`): “Theorem 3.2”. Page-text SHA-256 `6568d2288e3fe9f47cf2780b69467685e7078c36f429f32983f2352487e66692`.
+- p. 17 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=17`): “Corollary 3.6”. Page-text SHA-256 `49d0dfee1b4fe09337378dc50799a2320ad144ed8b5817a6094d6ff6fa8dcf6f`.
+- p. 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=14`): “• Hard Lefschetz theorem (generalized to derived stacks): Provides a cohomological sym-”. Page-text SHA-256 `8a2e053adf8870da744730eecd1b568a95a92b028218ab88006da7e313a86ca0`.
 
 Follow-up complete page read: 14. This adds a page beyond the previously recorded review.
 
@@ -988,9 +994,9 @@ The boundary-vanishing discussion still assumes that an off-line zero produces a
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 18](</Users/local/Desktop/MathematicsLibrary/NumberTheory/34ebca88596f--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (5).pdf#page=18>): “Theorem 2.6”. Page-text SHA-256 `cecb5827f8a8df4915256d48344b6b7e8a1638db4aaa2824b70034d2dfcf8417`.
-- [p. 18](</Users/local/Desktop/MathematicsLibrary/NumberTheory/34ebca88596f--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (5).pdf#page=18>): “Off-Line Zeros and Cohomological Obstructions.”. Page-text SHA-256 `cecb5827f8a8df4915256d48344b6b7e8a1638db4aaa2824b70034d2dfcf8417`.
-- [p. 19](</Users/local/Desktop/MathematicsLibrary/NumberTheory/34ebca88596f--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (5).pdf#page=19>): “Contradiction via Vanishing. The Boundary Vanishing Theorem eliminates such classes”. Page-text SHA-256 `8db262c223aa1f1354decd63ac862181a5237e7b712e35d27e6f3a3f4760e54a`.
+- p. 18 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/34ebca88596f--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (5).pdf#page=18`): “Theorem 2.6”. Page-text SHA-256 `cecb5827f8a8df4915256d48344b6b7e8a1638db4aaa2824b70034d2dfcf8417`.
+- p. 18 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/34ebca88596f--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (5).pdf#page=18`): “Off-Line Zeros and Cohomological Obstructions.”. Page-text SHA-256 `cecb5827f8a8df4915256d48344b6b7e8a1638db4aaa2824b70034d2dfcf8417`.
+- p. 19 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/34ebca88596f--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (5).pdf#page=19`): “Contradiction via Vanishing. The Boundary Vanishing Theorem eliminates such classes”. Page-text SHA-256 `8db262c223aa1f1354decd63ac862181a5237e7b712e35d27e6f3a3f4760e54a`.
 
 Follow-up complete page read: 19. This adds a page beyond the previously recorded review.
 
@@ -1018,9 +1024,9 @@ The boundary-vanishing discussion still assumes that an off-line zero produces a
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 18](</Users/local/Desktop/MathematicsLibrary/NumberTheory/50a2340db4a9--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (6).pdf#page=18>): “Theorem 2.6”. Page-text SHA-256 `cecb5827f8a8df4915256d48344b6b7e8a1638db4aaa2824b70034d2dfcf8417`.
-- [p. 18](</Users/local/Desktop/MathematicsLibrary/NumberTheory/50a2340db4a9--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (6).pdf#page=18>): “Off-Line Zeros and Cohomological Obstructions.”. Page-text SHA-256 `cecb5827f8a8df4915256d48344b6b7e8a1638db4aaa2824b70034d2dfcf8417`.
-- [p. 19](</Users/local/Desktop/MathematicsLibrary/NumberTheory/50a2340db4a9--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (6).pdf#page=19>): “Contradiction via Vanishing. The Boundary Vanishing Theorem eliminates such classes”. Page-text SHA-256 `8db262c223aa1f1354decd63ac862181a5237e7b712e35d27e6f3a3f4760e54a`.
+- p. 18 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/50a2340db4a9--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (6).pdf#page=18`): “Theorem 2.6”. Page-text SHA-256 `cecb5827f8a8df4915256d48344b6b7e8a1638db4aaa2824b70034d2dfcf8417`.
+- p. 18 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/50a2340db4a9--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (6).pdf#page=18`): “Off-Line Zeros and Cohomological Obstructions.”. Page-text SHA-256 `cecb5827f8a8df4915256d48344b6b7e8a1638db4aaa2824b70034d2dfcf8417`.
+- p. 19 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/50a2340db4a9--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (6).pdf#page=19`): “Contradiction via Vanishing. The Boundary Vanishing Theorem eliminates such classes”. Page-text SHA-256 `8db262c223aa1f1354decd63ac862181a5237e7b712e35d27e6f3a3f4760e54a`.
 
 Follow-up complete page read: 19. This adds a page beyond the previously recorded review.
 
@@ -1048,9 +1054,9 @@ The Frobenius-trace page describes arithmetic coefficients and boundary alignmen
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 30](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=30>): “Functoriality in the Langlands Framework”. Page-text SHA-256 `ab5ab2630efba39f7cb909fcee979bd13f4d4f3543583f62fcad4ca219266ae6`.
-- [p. 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=40>): “Utility in Residue Alignment and Spectral Operators”. Page-text SHA-256 `69aa4b3d7d999e3d5b0cb78ce9c0774d56ec950a4a778636e8481947e34f7397`.
-- [p. 27](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=27>): “Local Context: This subsection highlights the role of the Frobenius trace”. Page-text SHA-256 `65f6ae45c2aecd0d82ede28f4fe4a48072098142057387a04ff5a9a33ad1371f`.
+- p. 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=30`): “Functoriality in the Langlands Framework”. Page-text SHA-256 `ab5ab2630efba39f7cb909fcee979bd13f4d4f3543583f62fcad4ca219266ae6`.
+- p. 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=40`): “Utility in Residue Alignment and Spectral Operators”. Page-text SHA-256 `69aa4b3d7d999e3d5b0cb78ce9c0774d56ec950a4a778636e8481947e34f7397`.
+- p. 27 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=27`): “Local Context: This subsection highlights the role of the Frobenius trace”. Page-text SHA-256 `65f6ae45c2aecd0d82ede28f4fe4a48072098142057387a04ff5a9a33ad1371f`.
 
 Follow-up complete page read: 27. This adds a page beyond the previously recorded review.
 
@@ -1078,9 +1084,9 @@ The Frobenius-trace page describes arithmetic coefficients and boundary alignmen
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 30](</Users/local/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=30>): “Functoriality in the Langlands Framework”. Page-text SHA-256 `ab5ab2630efba39f7cb909fcee979bd13f4d4f3543583f62fcad4ca219266ae6`.
-- [p. 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=40>): “Utility in Residue Alignment and Spectral Operators”. Page-text SHA-256 `69aa4b3d7d999e3d5b0cb78ce9c0774d56ec950a4a778636e8481947e34f7397`.
-- [p. 27](</Users/local/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=27>): “Local Context: This subsection highlights the role of the Frobenius trace”. Page-text SHA-256 `65f6ae45c2aecd0d82ede28f4fe4a48072098142057387a04ff5a9a33ad1371f`.
+- p. 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=30`): “Functoriality in the Langlands Framework”. Page-text SHA-256 `ab5ab2630efba39f7cb909fcee979bd13f4d4f3543583f62fcad4ca219266ae6`.
+- p. 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=40`): “Utility in Residue Alignment and Spectral Operators”. Page-text SHA-256 `69aa4b3d7d999e3d5b0cb78ce9c0774d56ec950a4a778636e8481947e34f7397`.
+- p. 27 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=27`): “Local Context: This subsection highlights the role of the Frobenius trace”. Page-text SHA-256 `65f6ae45c2aecd0d82ede28f4fe4a48072098142057387a04ff5a9a33ad1371f`.
 
 Follow-up complete page read: 27. This adds a page beyond the previously recorded review.
 
@@ -1106,9 +1112,9 @@ The later entropy-delay discussion asserts monotonicity for residue-modified dyn
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 30](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=30>): “Entropy Stability in Higher Dimensions”. Page-text SHA-256 `3c95f575cfd40b5ee838b23889cd8475d5e31f0e00aec38f54d8dc56df0b29a9`.
-- [p. 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=40>): “Higher-Dimensional Ricci Flow:”. Page-text SHA-256 `79a7caedeee67883f534ab28a26302c251ffc7c16f855cbebb6a580041670adb`.
-- [p. 34](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=34>): “3.2.3   Entropy Delays from Residue Contributions”. Page-text SHA-256 `5e376c4bb0abfa1b3a2dec9e597c83ae1896cf8d397a6fbd1e9a88c27b2c2b8f`.
+- p. 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=30`): “Entropy Stability in Higher Dimensions”. Page-text SHA-256 `3c95f575cfd40b5ee838b23889cd8475d5e31f0e00aec38f54d8dc56df0b29a9`.
+- p. 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=40`): “Higher-Dimensional Ricci Flow:”. Page-text SHA-256 `79a7caedeee67883f534ab28a26302c251ffc7c16f855cbebb6a580041670adb`.
+- p. 34 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=34`): “3.2.3   Entropy Delays from Residue Contributions”. Page-text SHA-256 `5e376c4bb0abfa1b3a2dec9e597c83ae1896cf8d397a6fbd1e9a88c27b2c2b8f`.
 
 Follow-up complete page read: 34. This adds a page beyond the previously recorded review.
 
@@ -1134,9 +1140,9 @@ The later entropy-delay discussion asserts monotonicity for residue-modified dyn
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 30](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=30>): “Entropy Stability in Higher Dimensions”. Page-text SHA-256 `3c95f575cfd40b5ee838b23889cd8475d5e31f0e00aec38f54d8dc56df0b29a9`.
-- [p. 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=40>): “Higher-Dimensional Ricci Flow:”. Page-text SHA-256 `79a7caedeee67883f534ab28a26302c251ffc7c16f855cbebb6a580041670adb`.
-- [p. 34](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=34>): “3.2.3   Entropy Delays from Residue Contributions”. Page-text SHA-256 `5e376c4bb0abfa1b3a2dec9e597c83ae1896cf8d397a6fbd1e9a88c27b2c2b8f`.
+- p. 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=30`): “Entropy Stability in Higher Dimensions”. Page-text SHA-256 `3c95f575cfd40b5ee838b23889cd8475d5e31f0e00aec38f54d8dc56df0b29a9`.
+- p. 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=40`): “Higher-Dimensional Ricci Flow:”. Page-text SHA-256 `79a7caedeee67883f534ab28a26302c251ffc7c16f855cbebb6a580041670adb`.
+- p. 34 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=34`): “3.2.3   Entropy Delays from Residue Contributions”. Page-text SHA-256 `5e376c4bb0abfa1b3a2dec9e597c83ae1896cf8d397a6fbd1e9a88c27b2c2b8f`.
 
 Follow-up complete page read: 34. This adds a page beyond the previously recorded review.
 
@@ -1162,8 +1168,8 @@ The later tables test selected complex points rather than prove the gamma cancel
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/74fdf55b9492--s (1).pdf#page=4>): “Generalized Residue Contributions”. Page-text SHA-256 `5970d274feeaa66b046f70912477b6588aa5b840415e362cc8e2bc0a70c585e1`.
-- [p. 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/74fdf55b9492--s (1).pdf#page=5>): “3.4    Generalization to Exceptional Groups”. Page-text SHA-256 `ea336ccf2ae85ff9fedc97e91ffd9ccd13aa5c92fc32ffe89ff5a6986555da42`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/74fdf55b9492--s (1).pdf#page=4`): “Generalized Residue Contributions”. Page-text SHA-256 `5970d274feeaa66b046f70912477b6588aa5b840415e362cc8e2bc0a70c585e1`.
+- p. 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/74fdf55b9492--s (1).pdf#page=5`): “3.4    Generalization to Exceptional Groups”. Page-text SHA-256 `ea336ccf2ae85ff9fedc97e91ffd9ccd13aa5c92fc32ffe89ff5a6986555da42`.
 
 Follow-up complete page read: 5. This adds a page beyond the previously recorded review.
 
@@ -1189,8 +1195,8 @@ The later tables test selected complex points rather than prove the gamma cancel
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b9cfb67e8d0e--s (2).pdf#page=4>): “Generalized Residue Contributions”. Page-text SHA-256 `5970d274feeaa66b046f70912477b6588aa5b840415e362cc8e2bc0a70c585e1`.
-- [p. 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b9cfb67e8d0e--s (2).pdf#page=5>): “3.4    Generalization to Exceptional Groups”. Page-text SHA-256 `ea336ccf2ae85ff9fedc97e91ffd9ccd13aa5c92fc32ffe89ff5a6986555da42`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b9cfb67e8d0e--s (2).pdf#page=4`): “Generalized Residue Contributions”. Page-text SHA-256 `5970d274feeaa66b046f70912477b6588aa5b840415e362cc8e2bc0a70c585e1`.
+- p. 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b9cfb67e8d0e--s (2).pdf#page=5`): “3.4    Generalization to Exceptional Groups”. Page-text SHA-256 `ea336ccf2ae85ff9fedc97e91ffd9ccd13aa5c92fc32ffe89ff5a6986555da42`.
 
 Follow-up complete page read: 5. This adds a page beyond the previously recorded review.
 
@@ -1216,9 +1222,9 @@ The later tables test selected complex points rather than prove the gamma cancel
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 10](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c49188e01b3c--Compactification_Symmetry_and_the_Riemann_Hypothesis (6).pdf#page=10>): “Residue Decomposition and Boundary Contributions”. Page-text SHA-256 `86017745ced3117213f5f7127af2f329e939c776ac58bb71d1424312c32a4974`.
-- [p. 10](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c49188e01b3c--Compactification_Symmetry_and_the_Riemann_Hypothesis (6).pdf#page=10>): “Reflection Symmetry and Critical Line Alignment”. Page-text SHA-256 `86017745ced3117213f5f7127af2f329e939c776ac58bb71d1424312c32a4974`.
-- [p. 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c49188e01b3c--Compactification_Symmetry_and_the_Riemann_Hypothesis (6).pdf#page=15>): “Point          Residue (Boundary)           Residue (Interior) Alignment Status”. Page-text SHA-256 `a8c0dfabf7c381def96821eba45a07c4e4a0a523a57b1de478af27d318e8a4dd`.
+- p. 10 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c49188e01b3c--Compactification_Symmetry_and_the_Riemann_Hypothesis (6).pdf#page=10`): “Residue Decomposition and Boundary Contributions”. Page-text SHA-256 `86017745ced3117213f5f7127af2f329e939c776ac58bb71d1424312c32a4974`.
+- p. 10 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c49188e01b3c--Compactification_Symmetry_and_the_Riemann_Hypothesis (6).pdf#page=10`): “Reflection Symmetry and Critical Line Alignment”. Page-text SHA-256 `86017745ced3117213f5f7127af2f329e939c776ac58bb71d1424312c32a4974`.
+- p. 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c49188e01b3c--Compactification_Symmetry_and_the_Riemann_Hypothesis (6).pdf#page=15`): “Point          Residue (Boundary)           Residue (Interior) Alignment Status”. Page-text SHA-256 `a8c0dfabf7c381def96821eba45a07c4e4a0a523a57b1de478af27d318e8a4dd`.
 
 Follow-up complete page read: 15. This adds a page beyond the previously recorded review.
 
@@ -1244,9 +1250,9 @@ The later localization section explicitly writes boundary/interior cohomology as
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=7>): “Geometric Correspondence:”. Page-text SHA-256 `c1690d48584e97ee8b4bbc7624a931a69b20224d184b4122a8965510bd055efb`.
-- [p. 20](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=20>): “Cohomological Complexity in E8”. Page-text SHA-256 `b88b134ead7e6fc6081cdff8a65990f175c066c41fe65c86e2b03df028ff64ff`.
-- [p. 17](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=17>): “Enhanced Schematic for Residue Mapping. The localization process and its role in”. Page-text SHA-256 `562834ee681297b82e9ad3d25826739eddfe6d9ac9c6c18fb5dff01196897677`.
+- p. 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=7`): “Geometric Correspondence:”. Page-text SHA-256 `c1690d48584e97ee8b4bbc7624a931a69b20224d184b4122a8965510bd055efb`.
+- p. 20 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=20`): “Cohomological Complexity in E8”. Page-text SHA-256 `b88b134ead7e6fc6081cdff8a65990f175c066c41fe65c86e2b03df028ff64ff`.
+- p. 17 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=17`): “Enhanced Schematic for Residue Mapping. The localization process and its role in”. Page-text SHA-256 `562834ee681297b82e9ad3d25826739eddfe6d9ac9c6c18fb5dff01196897677`.
 
 Follow-up complete page read: 17. This adds a page beyond the previously recorded review.
 
@@ -1272,9 +1278,9 @@ The later localization section explicitly writes boundary/interior cohomology as
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=7>): “Geometric Correspondence:”. Page-text SHA-256 `c1690d48584e97ee8b4bbc7624a931a69b20224d184b4122a8965510bd055efb`.
-- [p. 20](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=20>): “Cohomological Complexity in E8”. Page-text SHA-256 `b88b134ead7e6fc6081cdff8a65990f175c066c41fe65c86e2b03df028ff64ff`.
-- [p. 17](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=17>): “Enhanced Schematic for Residue Mapping. The localization process and its role in”. Page-text SHA-256 `562834ee681297b82e9ad3d25826739eddfe6d9ac9c6c18fb5dff01196897677`.
+- p. 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=7`): “Geometric Correspondence:”. Page-text SHA-256 `c1690d48584e97ee8b4bbc7624a931a69b20224d184b4122a8965510bd055efb`.
+- p. 20 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=20`): “Cohomological Complexity in E8”. Page-text SHA-256 `b88b134ead7e6fc6081cdff8a65990f175c066c41fe65c86e2b03df028ff64ff`.
+- p. 17 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=17`): “Enhanced Schematic for Residue Mapping. The localization process and its role in”. Page-text SHA-256 `562834ee681297b82e9ad3d25826739eddfe6d9ac9c6c18fb5dff01196897677`.
 
 Follow-up complete page read: 17. This adds a page beyond the previously recorded review.
 
@@ -1306,8 +1312,8 @@ The complexity page states T_recompose=O(2^n) without an all-algorithm lower bou
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3f28be14404a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity__1_ (1).pdf#page=4>): “Exponential Recomposition Barrier”. Page-text SHA-256 `075ae668d72594331084056f406723b94b61d7c29c113560829a3fce112fa188`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3f28be14404a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity__1_ (1).pdf#page=4>): “4   Computational Complexity”. Page-text SHA-256 `075ae668d72594331084056f406723b94b61d7c29c113560829a3fce112fa188`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3f28be14404a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity__1_ (1).pdf#page=4`): “Exponential Recomposition Barrier”. Page-text SHA-256 `075ae668d72594331084056f406723b94b61d7c29c113560829a3fce112fa188`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3f28be14404a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity__1_ (1).pdf#page=4`): “4   Computational Complexity”. Page-text SHA-256 `075ae668d72594331084056f406723b94b61d7c29c113560829a3fce112fa188`.
 
 Follow-up complete page read: 4. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -1337,8 +1343,8 @@ The complexity page states T_recompose=O(2^n) without an all-algorithm lower bou
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b799fd9cb24a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity (1).pdf#page=4>): “Exponential Recomposition Barrier”. Page-text SHA-256 `0d9f901bc0bc9c755e5c0747e0fa805feabfb8a83d5526ed3c65a72208c8bbc9`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b799fd9cb24a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity (1).pdf#page=4>): “2     Computational Complexity”. Page-text SHA-256 `0d9f901bc0bc9c755e5c0747e0fa805feabfb8a83d5526ed3c65a72208c8bbc9`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b799fd9cb24a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity (1).pdf#page=4`): “Exponential Recomposition Barrier”. Page-text SHA-256 `0d9f901bc0bc9c755e5c0747e0fa805feabfb8a83d5526ed3c65a72208c8bbc9`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b799fd9cb24a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity (1).pdf#page=4`): “2     Computational Complexity”. Page-text SHA-256 `0d9f901bc0bc9c755e5c0747e0fa805feabfb8a83d5526ed3c65a72208c8bbc9`.
 
 Follow-up complete page read: 4. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -1372,9 +1378,9 @@ The status page calls a uniform bounded-error axiom resolved but does not exhibi
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>): “Statistical Independence of Zeros”. Page-text SHA-256 `b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3>): “Error Bounds for Mixed Automorphic Forms”. Page-text SHA-256 `c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1>): “Updated Verification of Recursive Refinement”. Page-text SHA-256 `7d7c35049871f94b14430d67322c1c07daaf6264263287c8eb07eee6f2449eb5`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2`): “Statistical Independence of Zeros”. Page-text SHA-256 `b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3`): “Error Bounds for Mixed Automorphic Forms”. Page-text SHA-256 `c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1`): “Updated Verification of Recursive Refinement”. Page-text SHA-256 `7d7c35049871f94b14430d67322c1c07daaf6264263287c8eb07eee6f2449eb5`.
 
 Follow-up complete page read: 1. This adds a page beyond the previously recorded review.
 
@@ -1402,9 +1408,9 @@ The abstract and introduction describe a model derived from numerical analysis. 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=2>): “The error scaling model quantifies”. Page-text SHA-256 `0d148ce073d94c11889fb37f7bb3ff292ba6c9decfe222ef04359d39ea3df2ad`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=3>): “Strong asymptotic stabilization”. Page-text SHA-256 `c27d8795318663c6321db0b6e4ae534d8347a6baf4efeb563447e604359756c3`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=1>): “Error Scaling in Energy Functional”. Page-text SHA-256 `9777c23c6e3f99044bba2d9bc23d4112a58a1f178895177b24dfbd4eb519f06a`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=2`): “The error scaling model quantifies”. Page-text SHA-256 `0d148ce073d94c11889fb37f7bb3ff292ba6c9decfe222ef04359d39ea3df2ad`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=3`): “Strong asymptotic stabilization”. Page-text SHA-256 `c27d8795318663c6321db0b6e4ae534d8347a6baf4efeb563447e604359756c3`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=1`): “Error Scaling in Energy Functional”. Page-text SHA-256 `9777c23c6e3f99044bba2d9bc23d4112a58a1f178895177b24dfbd4eb519f06a`.
 
 Follow-up complete page read: 1. This adds a page beyond the previously recorded review.
 
@@ -1429,9 +1435,9 @@ The abstract and introduction describe a model derived from numerical analysis. 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=2>): “The error scaling model quantifies”. Page-text SHA-256 `0d148ce073d94c11889fb37f7bb3ff292ba6c9decfe222ef04359d39ea3df2ad`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=3>): “Strong asymptotic stabilization”. Page-text SHA-256 `c27d8795318663c6321db0b6e4ae534d8347a6baf4efeb563447e604359756c3`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=1>): “Error Scaling in Energy Functional”. Page-text SHA-256 `9777c23c6e3f99044bba2d9bc23d4112a58a1f178895177b24dfbd4eb519f06a`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=2`): “The error scaling model quantifies”. Page-text SHA-256 `0d148ce073d94c11889fb37f7bb3ff292ba6c9decfe222ef04359d39ea3df2ad`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=3`): “Strong asymptotic stabilization”. Page-text SHA-256 `c27d8795318663c6321db0b6e4ae534d8347a6baf4efeb563447e604359756c3`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=1`): “Error Scaling in Energy Functional”. Page-text SHA-256 `9777c23c6e3f99044bba2d9bc23d4112a58a1f178895177b24dfbd4eb519f06a`.
 
 Follow-up complete page read: 1. This adds a page beyond the previously recorded review.
 
@@ -1456,9 +1462,9 @@ The lattice body gives undamped second-order equations after a potential-energy 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/404255208b9d--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (4).pdf#page=3>): “Stability Analysis”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/404255208b9d--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (4).pdf#page=3>): “Lattice Dynamics”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/404255208b9d--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (4).pdf#page=3>): “We define the total potential energy V of the system as:”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/404255208b9d--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (4).pdf#page=3`): “Stability Analysis”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/404255208b9d--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (4).pdf#page=3`): “Lattice Dynamics”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/404255208b9d--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (4).pdf#page=3`): “We define the total potential energy V of the system as:”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
 
 Follow-up complete page read: 3. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -1484,9 +1490,9 @@ The lattice body gives undamped second-order equations after a potential-energy 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9b67b1410fb6--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (3).pdf#page=3>): “Stability Analysis”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9b67b1410fb6--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (3).pdf#page=3>): “Lattice Dynamics”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9b67b1410fb6--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (3).pdf#page=3>): “We define the total potential energy V of the system as:”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9b67b1410fb6--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (3).pdf#page=3`): “Stability Analysis”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9b67b1410fb6--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (3).pdf#page=3`): “Lattice Dynamics”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9b67b1410fb6--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (3).pdf#page=3`): “We define the total potential energy V of the system as:”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
 
 Follow-up complete page read: 3. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -1512,9 +1518,9 @@ The lattice body gives undamped second-order equations after a potential-energy 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b1ddb7027564--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (2).pdf#page=3>): “Stability Analysis”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b1ddb7027564--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (2).pdf#page=3>): “Lattice Dynamics”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b1ddb7027564--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (2).pdf#page=3>): “We define the total potential energy V of the system as:”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b1ddb7027564--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (2).pdf#page=3`): “Stability Analysis”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b1ddb7027564--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (2).pdf#page=3`): “Lattice Dynamics”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b1ddb7027564--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (2).pdf#page=3`): “We define the total potential energy V of the system as:”. Page-text SHA-256 `29bdad4a22640f32750068653ba978c8aac9cf150f41c83740dd9295a53e6b7b`.
 
 Follow-up complete page read: 3. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -1550,9 +1556,9 @@ The additional page contains algebraic-number-theory and algorithmic objectives 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1>): “Analytic Number Theory”. Page-text SHA-256 `39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3>): “Computational and Experimental Verification”. Page-text SHA-256 `22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2>): “3     Algebraic Number Theory and Primes in Fields”. Page-text SHA-256 `506eb036515e8f32eed5d026e1e8d76a66eba7e8c16a86ff40ccfebfd6517ba4`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1`): “Analytic Number Theory”. Page-text SHA-256 `39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3`): “Computational and Experimental Verification”. Page-text SHA-256 `22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2`): “3     Algebraic Number Theory and Primes in Fields”. Page-text SHA-256 `506eb036515e8f32eed5d026e1e8d76a66eba7e8c16a86ff40ccfebfd6517ba4`.
 
 Follow-up complete page read: 2. This adds a page beyond the previously recorded review.
 
@@ -1577,9 +1583,9 @@ The modular transformation law and contour-residue definition admit a concrete l
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/76129703513f--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (2).pdf#page=2>): “High-Precision Residue Values”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/76129703513f--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (2).pdf#page=2>): “Magnitude Decay and Symmetry”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/76129703513f--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (2).pdf#page=2>): “2.2    Residues of Modular Functions”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/76129703513f--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (2).pdf#page=2`): “High-Precision Residue Values”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/76129703513f--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (2).pdf#page=2`): “Magnitude Decay and Symmetry”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/76129703513f--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (2).pdf#page=2`): “2.2    Residues of Modular Functions”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
 
 Follow-up complete page read: 2. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -1606,9 +1612,9 @@ The modular transformation law and contour-residue definition admit a concrete l
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c6b61ffc72f6--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (1).pdf#page=2>): “High-Precision Residue Values”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c6b61ffc72f6--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (1).pdf#page=2>): “Magnitude Decay and Symmetry”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c6b61ffc72f6--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (1).pdf#page=2>): “2.2    Residues of Modular Functions”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c6b61ffc72f6--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (1).pdf#page=2`): “High-Precision Residue Values”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c6b61ffc72f6--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (1).pdf#page=2`): “Magnitude Decay and Symmetry”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c6b61ffc72f6--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (1).pdf#page=2`): “2.2    Residues of Modular Functions”. Page-text SHA-256 `7fcfb93ea826110ca551ff1f3430a97a81212604f1bd56132e2cfeeefe6b1fb2`.
 
 Follow-up complete page read: 2. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -1639,9 +1645,9 @@ The additional survey, sheaf or statistical discussion still supplies no determi
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=6>): “Langlands Correspondences”. Page-text SHA-256 `bdaa5afd57bb92160e4fb31216fc67ed433964e589caeb9ae2df85aed2ed4fe4`.
-- [p. 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=8>): “Universality and the GUE Conjecture”. Page-text SHA-256 `4c6436f25c2386c8f0d93770808b15d25f422cdb640e630e84c137dc97594d9b`.
-- [p. 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=11>): “5.6    Future Directions in Computational Verification”. Page-text SHA-256 `6408cfa885b825568438b5009f73ab1f4d998c33a34f9895585a1ae81ec0c43f`.
+- p. 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=6`): “Langlands Correspondences”. Page-text SHA-256 `bdaa5afd57bb92160e4fb31216fc67ed433964e589caeb9ae2df85aed2ed4fe4`.
+- p. 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=8`): “Universality and the GUE Conjecture”. Page-text SHA-256 `4c6436f25c2386c8f0d93770808b15d25f422cdb640e630e84c137dc97594d9b`.
+- p. 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=11`): “5.6    Future Directions in Computational Verification”. Page-text SHA-256 `6408cfa885b825568438b5009f73ab1f4d998c33a34f9895585a1ae81ec0c43f`.
 
 Follow-up complete page read: 11. This adds a page beyond the previously recorded review.
 
@@ -1669,9 +1675,9 @@ The additional survey, sheaf or statistical discussion still supplies no determi
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f8f7f4692f9a--Grh (1).pdf#page=7>): “Residue Clustering Densities and RMT”. Page-text SHA-256 `57094442a0e82a63f042bbfcc0fd3d3aa87e2ca5c5392abf21b8841f42ce21bf`.
-- [p. 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f8f7f4692f9a--Grh (1).pdf#page=7>): “Statistical Universality”. Page-text SHA-256 `57094442a0e82a63f042bbfcc0fd3d3aa87e2ca5c5392abf21b8841f42ce21bf`.
-- [p. 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f8f7f4692f9a--Grh (1).pdf#page=8>): “The statistical universality of residue clustering densities reinforces their role in proving the GRH.”. Page-text SHA-256 `87eab5eefd3446dcaecb1e2d7d3e089df1383e121114d8bfa7c3aef5f4ac8e4f`.
+- p. 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f8f7f4692f9a--Grh (1).pdf#page=7`): “Residue Clustering Densities and RMT”. Page-text SHA-256 `57094442a0e82a63f042bbfcc0fd3d3aa87e2ca5c5392abf21b8841f42ce21bf`.
+- p. 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f8f7f4692f9a--Grh (1).pdf#page=7`): “Statistical Universality”. Page-text SHA-256 `57094442a0e82a63f042bbfcc0fd3d3aa87e2ca5c5392abf21b8841f42ce21bf`.
+- p. 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f8f7f4692f9a--Grh (1).pdf#page=8`): “The statistical universality of residue clustering densities reinforces their role in proving the GRH.”. Page-text SHA-256 `87eab5eefd3446dcaecb1e2d7d3e089df1383e121114d8bfa7c3aef5f4ac8e4f`.
 
 Follow-up complete page read: 8. This adds a page beyond the previously recorded review.
 
@@ -1699,9 +1705,9 @@ The axioms page repeats inversion antisymmetry and a higher-order correction bou
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=6>): “Lemma 1: Bounded Residues from Modular Periodicity”. Page-text SHA-256 `80e80ee0698c0cc24d7b0faabb2fe6c7cb2aff0f15c18dd53dd032b5ec95e377`.
-- [p. 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=7>): “Lemma 2: Residue Symmetry Aligns Zeros”. Page-text SHA-256 `21d4775281142310e76a1476197c14be892f29eecf0dce73bf463e5df50300f2`.
-- [p. 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=5>): “2.2   Axiom 2: Residue Symmetry”. Page-text SHA-256 `8a848ec49b28a7e3bced5b4e6c0254ebfb25758de10bf73504b01174e2aa9032`.
+- p. 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=6`): “Lemma 1: Bounded Residues from Modular Periodicity”. Page-text SHA-256 `80e80ee0698c0cc24d7b0faabb2fe6c7cb2aff0f15c18dd53dd032b5ec95e377`.
+- p. 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=7`): “Lemma 2: Residue Symmetry Aligns Zeros”. Page-text SHA-256 `21d4775281142310e76a1476197c14be892f29eecf0dce73bf463e5df50300f2`.
+- p. 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=5`): “2.2   Axiom 2: Residue Symmetry”. Page-text SHA-256 `8a848ec49b28a7e3bced5b4e6c0254ebfb25758de10bf73504b01174e2aa9032`.
 
 Follow-up complete page read: 5. This adds a page beyond the previously recorded review.
 
@@ -1729,10 +1735,10 @@ The later zero-localization discussion invokes functional symmetry and universal
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=8>): “Theorem 4.2”. Page-text SHA-256 `eb6dd40faebfd8abca5b1da78da40fb38e7f94cf9b04673c53802142d15c7c32`.
-- [p. 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=8>): “Theorem 4.3”. Page-text SHA-256 `eb6dd40faebfd8abca5b1da78da40fb38e7f94cf9b04673c53802142d15c7c32`.
-- [p. 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=11>): “Theorem 5.1”. Page-text SHA-256 `1f06a7b8e487e59a5f6d65399fbfac307833e1667158459dc83a474899cd8cc8`.
-- [p. 12](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=12>): “Connection to Residue Clustering and GRH”. Page-text SHA-256 `32645ca867aef1c46718d2d03e75d881c8dd501009c034cb2a8659b09a2aaf51`.
+- p. 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=8`): “Theorem 4.2”. Page-text SHA-256 `eb6dd40faebfd8abca5b1da78da40fb38e7f94cf9b04673c53802142d15c7c32`.
+- p. 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=8`): “Theorem 4.3”. Page-text SHA-256 `eb6dd40faebfd8abca5b1da78da40fb38e7f94cf9b04673c53802142d15c7c32`.
+- p. 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=11`): “Theorem 5.1”. Page-text SHA-256 `1f06a7b8e487e59a5f6d65399fbfac307833e1667158459dc83a474899cd8cc8`.
+- p. 12 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=12`): “Connection to Residue Clustering and GRH”. Page-text SHA-256 `32645ca867aef1c46718d2d03e75d881c8dd501009c034cb2a8659b09a2aaf51`.
 
 Follow-up complete page read: 12. This adds a page beyond the previously recorded review.
 
@@ -1760,9 +1766,9 @@ The later zero-localization discussion invokes functional symmetry and universal
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=5>): “Birch and Swinnerton-Dyer Conjecture”. Page-text SHA-256 `4351999ffdad49cfa196a71a1c1cd38092cc64527759d789ef00f86245a73ccb`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=3>): “Modular Corrections and Symmetry”. Page-text SHA-256 `341d57b75e2aab13aba2535324be303dded54e537a7e0a96ada484c871645a00`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=2>): “The Generalized Riemann Hypothesis (GRH) is one of the most profound and far-reaching”. Page-text SHA-256 `083d9edaab6980e5714817562dc4bd01344631bc263b19afb85426b62d266ffd`.
+- p. 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=5`): “Birch and Swinnerton-Dyer Conjecture”. Page-text SHA-256 `4351999ffdad49cfa196a71a1c1cd38092cc64527759d789ef00f86245a73ccb`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=3`): “Modular Corrections and Symmetry”. Page-text SHA-256 `341d57b75e2aab13aba2535324be303dded54e537a7e0a96ada484c871645a00`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=2`): “The Generalized Riemann Hypothesis (GRH) is one of the most profound and far-reaching”. Page-text SHA-256 `083d9edaab6980e5714817562dc4bd01344631bc263b19afb85426b62d266ffd`.
 
 Follow-up complete page read: 2. This adds a page beyond the previously recorded review.
 
@@ -1790,9 +1796,9 @@ The later zero-localization discussion invokes functional symmetry and universal
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6900e23cd2e0--Framework (1).pdf#page=4>): “Substituting the Taylor expansion”. Page-text SHA-256 `a5773449911a98032ef118efd6ea5b392bea4a50a204b9809ff28b412883bbe9`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6900e23cd2e0--Framework (1).pdf#page=4>): “Bounds on Clustering Densities”. Page-text SHA-256 `a5773449911a98032ef118efd6ea5b392bea4a50a204b9809ff28b412883bbe9`.
-- [p. 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6900e23cd2e0--Framework (1).pdf#page=9>): “Spectral Universality and Zero Spacing”. Page-text SHA-256 `7b3300cea13ea1daad486925a644124f0dd13597149d56aab558c721dcfd0d45`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6900e23cd2e0--Framework (1).pdf#page=4`): “Substituting the Taylor expansion”. Page-text SHA-256 `a5773449911a98032ef118efd6ea5b392bea4a50a204b9809ff28b412883bbe9`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6900e23cd2e0--Framework (1).pdf#page=4`): “Bounds on Clustering Densities”. Page-text SHA-256 `a5773449911a98032ef118efd6ea5b392bea4a50a204b9809ff28b412883bbe9`.
+- p. 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6900e23cd2e0--Framework (1).pdf#page=9`): “Spectral Universality and Zero Spacing”. Page-text SHA-256 `7b3300cea13ea1daad486925a644124f0dd13597149d56aab558c721dcfd0d45`.
 
 Follow-up complete page read: 9. This adds a page beyond the previously recorded review.
 
@@ -1820,9 +1826,9 @@ The additional survey, sheaf or statistical discussion still supplies no determi
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/47f41bdea32c--The_Proof_of_the_Generalized_Riemann_Hypothesis.pdf#page=14>): “Example: Dirichlet L-Functions”. Page-text SHA-256 `93162c23f45f9aa0f129755c67206032a27ac0a26a84d1ff8d3aedb391dc1b09`.
-- [p. 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/47f41bdea32c--The_Proof_of_the_Generalized_Riemann_Hypothesis.pdf#page=14>): “Example: Modular Forms”. Page-text SHA-256 `93162c23f45f9aa0f129755c67206032a27ac0a26a84d1ff8d3aedb391dc1b09`.
-- [p. 22](</Users/local/Desktop/MathematicsLibrary/NumberTheory/47f41bdea32c--The_Proof_of_the_Generalized_Riemann_Hypothesis.pdf#page=22>): “Random Matrix Ensembles and Disordered Systems”. Page-text SHA-256 `f386ad2edbdf3a94daaede60926d8a1b68a344289ecc31041dcd6e725c4e8d26`.
+- p. 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/47f41bdea32c--The_Proof_of_the_Generalized_Riemann_Hypothesis.pdf#page=14`): “Example: Dirichlet L-Functions”. Page-text SHA-256 `93162c23f45f9aa0f129755c67206032a27ac0a26a84d1ff8d3aedb391dc1b09`.
+- p. 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/47f41bdea32c--The_Proof_of_the_Generalized_Riemann_Hypothesis.pdf#page=14`): “Example: Modular Forms”. Page-text SHA-256 `93162c23f45f9aa0f129755c67206032a27ac0a26a84d1ff8d3aedb391dc1b09`.
+- p. 22 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/47f41bdea32c--The_Proof_of_the_Generalized_Riemann_Hypothesis.pdf#page=22`): “Random Matrix Ensembles and Disordered Systems”. Page-text SHA-256 `f386ad2edbdf3a94daaede60926d8a1b68a344289ecc31041dcd6e725c4e8d26`.
 
 Follow-up complete page read: 22. This adds a page beyond the previously recorded review.
 
@@ -1850,9 +1856,9 @@ The obstruction list acknowledges that vanishing and Tamagawa-type residue compa
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=15>): “Arithmetic Zeta Functions”. Page-text SHA-256 `17661ff7cb8ed763f07f8d3cd8175cbf7f15ef6e315d2b33ff34832c4e07c2f1`.
-- [p. 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=6>): “Boundary Conditions and Residue Localization:”. Page-text SHA-256 `da68efb15a2c06936173f684620b32e20223c7507441ee90fdf7091897651b50`.
-- [p. 23](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=23>): “• **Resolution:** Validate using the full formalism of geometric Langlands theory as”. Page-text SHA-256 `14a93666668f525faa1fc4cea7aa16fddf6679e4e3496a12cc65ae61751dfe03`.
+- p. 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=15`): “Arithmetic Zeta Functions”. Page-text SHA-256 `17661ff7cb8ed763f07f8d3cd8175cbf7f15ef6e315d2b33ff34832c4e07c2f1`.
+- p. 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=6`): “Boundary Conditions and Residue Localization:”. Page-text SHA-256 `da68efb15a2c06936173f684620b32e20223c7507441ee90fdf7091897651b50`.
+- p. 23 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=23`): “• **Resolution:** Validate using the full formalism of geometric Langlands theory as”. Page-text SHA-256 `14a93666668f525faa1fc4cea7aa16fddf6679e4e3496a12cc65ae61751dfe03`.
 
 Follow-up complete page read: 23. This adds a page beyond the previously recorded review.
 
@@ -1880,9 +1886,9 @@ The obstruction list acknowledges that vanishing and Tamagawa-type residue compa
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=15>): “Arithmetic Zeta Functions”. Page-text SHA-256 `17661ff7cb8ed763f07f8d3cd8175cbf7f15ef6e315d2b33ff34832c4e07c2f1`.
-- [p. 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=6>): “Boundary Conditions and Residue Localization:”. Page-text SHA-256 `da68efb15a2c06936173f684620b32e20223c7507441ee90fdf7091897651b50`.
-- [p. 23](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=23>): “• **Resolution:** Validate using the full formalism of geometric Langlands theory as”. Page-text SHA-256 `14a93666668f525faa1fc4cea7aa16fddf6679e4e3496a12cc65ae61751dfe03`.
+- p. 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=15`): “Arithmetic Zeta Functions”. Page-text SHA-256 `17661ff7cb8ed763f07f8d3cd8175cbf7f15ef6e315d2b33ff34832c4e07c2f1`.
+- p. 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=6`): “Boundary Conditions and Residue Localization:”. Page-text SHA-256 `da68efb15a2c06936173f684620b32e20223c7507441ee90fdf7091897651b50`.
+- p. 23 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=23`): “• **Resolution:** Validate using the full formalism of geometric Langlands theory as”. Page-text SHA-256 `14a93666668f525faa1fc4cea7aa16fddf6679e4e3496a12cc65ae61751dfe03`.
 
 Follow-up complete page read: 23. This adds a page beyond the previously recorded review.
 
@@ -1912,9 +1918,9 @@ The logarithm section uses rational independence to infer transcendence of algeb
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=15>): “Theorem 5.3”. Page-text SHA-256 `c6168009049cc379dc22dafdb833aca881faf8da4e6f37d924d4910aa9f53515`.
-- [p. 24](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=24>): “Theorem 8.5”. Page-text SHA-256 `ed98e538993ace6b5031d5d6b9b92540bf31565c7c803802149b94029e8cf066`.
-- [p. 12](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=12>): “4.2    Logarithmic Independence”. Page-text SHA-256 `d1b6aa4021c60daee81c785d23fbc9ed0fc1191e507c582c210cb6589c003613`.
+- p. 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=15`): “Theorem 5.3”. Page-text SHA-256 `c6168009049cc379dc22dafdb833aca881faf8da4e6f37d924d4910aa9f53515`.
+- p. 24 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=24`): “Theorem 8.5”. Page-text SHA-256 `ed98e538993ace6b5031d5d6b9b92540bf31565c7c803802149b94029e8cf066`.
+- p. 12 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=12`): “4.2    Logarithmic Independence”. Page-text SHA-256 `d1b6aa4021c60daee81c785d23fbc9ed0fc1191e507c582c210cb6589c003613`.
 
 Follow-up complete page read: 12. This adds a page beyond the previously recorded review.
 
@@ -1944,9 +1950,9 @@ The logarithm section uses rational independence to infer transcendence of algeb
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=15>): “Theorem 5.3”. Page-text SHA-256 `c6168009049cc379dc22dafdb833aca881faf8da4e6f37d924d4910aa9f53515`.
-- [p. 24](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=24>): “Theorem 8.5”. Page-text SHA-256 `ed98e538993ace6b5031d5d6b9b92540bf31565c7c803802149b94029e8cf066`.
-- [p. 12](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=12>): “4.2    Logarithmic Independence”. Page-text SHA-256 `d1b6aa4021c60daee81c785d23fbc9ed0fc1191e507c582c210cb6589c003613`.
+- p. 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=15`): “Theorem 5.3”. Page-text SHA-256 `c6168009049cc379dc22dafdb833aca881faf8da4e6f37d924d4910aa9f53515`.
+- p. 24 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=24`): “Theorem 8.5”. Page-text SHA-256 `ed98e538993ace6b5031d5d6b9b92540bf31565c7c803802149b94029e8cf066`.
+- p. 12 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=12`): “4.2    Logarithmic Independence”. Page-text SHA-256 `d1b6aa4021c60daee81c785d23fbc9ed0fc1191e507c582c210cb6589c003613`.
 
 Follow-up complete page read: 12. This adds a page beyond the previously recorded review.
 
@@ -1980,9 +1986,9 @@ The methods page subtracts weighted projections directly from the entropy value 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1>): “Entropy Refinement”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=2>): “Zero-Free Regions”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1>): “Residue Clustering, Modular Symmetry, and the Generalized”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1`): “Entropy Refinement”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=2`): “Zero-Free Regions”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1`): “Residue Clustering, Modular Symmetry, and the Generalized”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
 
 Follow-up complete page read: 1. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -2014,9 +2020,9 @@ The methods page subtracts weighted projections directly from the entropy value 
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=1>): “Entropy Refinement”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=2>): “Zero-Free Regions”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=1>): “Residue Clustering, Modular Symmetry, and the Generalized”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=1`): “Entropy Refinement”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=2`): “Zero-Free Regions”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=1`): “Residue Clustering, Modular Symmetry, and the Generalized”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
 
 Follow-up complete page read: 1. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -2046,8 +2052,8 @@ The additional survey, sheaf or statistical discussion still supplies no determi
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7e3e7acb686d--On_the__notion__of_Principle_as_a_chomocological_invariant_ (1).pdf#page=4>): “Critical Line as a Universal Symmetry.”. Page-text SHA-256 `b31c602456977453fa7241a1c4c22ab4d30f19a65c9d059ed695d18cb8f5092e`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7e3e7acb686d--On_the__notion__of_Principle_as_a_chomocological_invariant_ (1).pdf#page=3>): “A UNIFIED THEORETICAL FRAMEWORK FOR THE PROOF OF THE RIEMANN”. Page-text SHA-256 `d72fd852ae2be9f5946bb161814e5346eeb9c4675e5ccbc5f265089e2f2d801a`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7e3e7acb686d--On_the__notion__of_Principle_as_a_chomocological_invariant_ (1).pdf#page=4`): “Critical Line as a Universal Symmetry.”. Page-text SHA-256 `b31c602456977453fa7241a1c4c22ab4d30f19a65c9d059ed695d18cb8f5092e`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7e3e7acb686d--On_the__notion__of_Principle_as_a_chomocological_invariant_ (1).pdf#page=3`): “A UNIFIED THEORETICAL FRAMEWORK FOR THE PROOF OF THE RIEMANN”. Page-text SHA-256 `d72fd852ae2be9f5946bb161814e5346eeb9c4675e5ccbc5f265089e2f2d801a`.
 
 Follow-up complete page read: 3. This adds a page beyond the previously recorded review.
 
@@ -2074,8 +2080,8 @@ This exact asset has no body supplying the requested construction: template/empt
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/85c8288713f3--_A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1).pdf#page=2>): “Genenerte section includes here”. Page-text SHA-256 `3a76756b794114286ee3b62e6e185f4656b48ab47b031c9a8a81ecdc0841a51e`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/85c8288713f3--_A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1).pdf#page=2>): “88                          grwtsk contributors”. Page-text SHA-256 `3a76756b794114286ee3b62e6e185f4656b48ab47b031c9a8a81ecdc0841a51e`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/85c8288713f3--_A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1).pdf#page=2`): “Genenerte section includes here”. Page-text SHA-256 `3a76756b794114286ee3b62e6e185f4656b48ab47b031c9a8a81ecdc0841a51e`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/85c8288713f3--_A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1).pdf#page=2`): “88                          grwtsk contributors”. Page-text SHA-256 `3a76756b794114286ee3b62e6e185f4656b48ab47b031c9a8a81ecdc0841a51e`.
 
 Follow-up complete page read: 2. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -2100,8 +2106,8 @@ This exact asset has no body supplying the requested construction: template/empt
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/26516b4beee3--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (4).pdf#page=2>): “6 Proof of the Generalized Riemann Hypothesis”. Page-text SHA-256 `6a64fdba2782a661c1cedf4d6ad46fec91f3e1dcdd06d52fff147270cf284b3a`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/26516b4beee3--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (4).pdf#page=2>): “2   Background and Preliminary Results”. Page-text SHA-256 `6a64fdba2782a661c1cedf4d6ad46fec91f3e1dcdd06d52fff147270cf284b3a`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/26516b4beee3--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (4).pdf#page=2`): “6 Proof of the Generalized Riemann Hypothesis”. Page-text SHA-256 `6a64fdba2782a661c1cedf4d6ad46fec91f3e1dcdd06d52fff147270cf284b3a`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/26516b4beee3--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (4).pdf#page=2`): “2   Background and Preliminary Results”. Page-text SHA-256 `6a64fdba2782a661c1cedf4d6ad46fec91f3e1dcdd06d52fff147270cf284b3a`.
 
 Follow-up complete page read: 2. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 
@@ -2125,8 +2131,8 @@ This exact asset has no body supplying the requested construction: template/empt
 
 Paper evidence (physical PDF page numbers):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/917ca3c827b1--RH (4).pdf#page=1>): “specially formulated partial differential equation”. Page-text SHA-256 `b61d6f1641641a326d3d51573073095d47855cad780409ec6122c95819039239`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/917ca3c827b1--RH (4).pdf#page=1>): “Entropy-Driven Residue Dynamics: A Rigorous Proof of the”. Page-text SHA-256 `b61d6f1641641a326d3d51573073095d47855cad780409ec6122c95819039239`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/917ca3c827b1--RH (4).pdf#page=1`): “specially formulated partial differential equation”. Page-text SHA-256 `b61d6f1641641a326d3d51573073095d47855cad780409ec6122c95819039239`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/917ca3c827b1--RH (4).pdf#page=1`): “Entropy-Driven Residue Dynamics: A Rigorous Proof of the”. Page-text SHA-256 `b61d6f1641641a326d3d51573073095d47855cad780409ec6122c95819039239`.
 
 Follow-up complete page read: 1. This selected page was already in the previous review; the short asset or relevant passage was reread, with no claim of new unseen content.
 

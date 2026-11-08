@@ -1,14 +1,20 @@
 # Ideas and Lean formalizations by taxonomy
 
-Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+[Reading and correspondence index](index.md). Follow-up labels and idea counts
+below retain their recorded source/version scope; they are not live status
+measurements or fresh verification of later Lean source bytes. Historical local
+PDF locators below are retained as provenance text; the files are outside this
+repository and their availability is unresolved.
+
+Recorded seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
 
 **Paper-derived formalizations:** see the maintained [paper-to-formalization references ledger](paper-to-formalization-references.md) for exact publication metadata, theorem/method hypotheses, corresponding Lean declarations and commits, actual kernel/axiom verification status, and explicit distinctions among formal bridges, finite checks, analogies and unresolved premises. This companion ledger does not replace the version-bound unpublished-manuscript records below.
 
-Current follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
+Recorded follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
 
-Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
+Recorded follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
 
-Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
+Recorded follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
 
 Current follow-up for the **70 historically unresolved ideas**: [taxonomy-organized target search](unmatched-idea-followup.md). It records five narrower conditional fragments and distinguishes repair candidates, analogies, obstructions and unresolved claims. Historical statuses below are retained.
 
@@ -43,7 +49,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#1574517a994e89cc-motivic-period-orbits).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=2>) — Conjectures 1–3 and proof sketches.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1574517a994e--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (4).pdf#page=2`) — Conjectures 1–3 and proof sketches.
 
 Exact PDF SHA-256: `1574517a994e89cc658f59f7f3bafff2eacaa601ef6398e411aa8f3d86c3ff09`.
 
@@ -75,7 +81,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#1961da5dba9ca115-motivic-period-orbits).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=2>) — Conjectures 1–3 and proof sketches.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1961da5dba9c--Proof_Draft_for_Zeros_on_the_Critical_Line__Riemann_Zeta_Function_and_Dirichlet_L_functions (3).pdf#page=2`) — Conjectures 1–3 and proof sketches.
 
 Exact PDF SHA-256: `1961da5dba9ca1152f38a2c7c093dcac813729876908194597fae5a3a1c1c8e1`.
 
@@ -111,7 +117,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#498a8b7e7583e8ec-exceptional-embedding-transfer).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2>) — §2–5, representation embeddings and proposed residue transfer.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2`) — §2–5, representation embeddings and proposed residue transfer.
 
 Exact PDF SHA-256: `498a8b7e7583e8ecc94d4edd362eb71bb3170fb3e9d79a1c5f40342af81c899f`.
 
@@ -146,7 +152,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#67b33f06a6094d05-exceptional-embedding-transfer).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2>) — §2–5, representation embeddings and proposed residue transfer.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2`) — §2–5, representation embeddings and proposed residue transfer.
 
 Exact PDF SHA-256: `67b33f06a6094d0590d89ac6504cc0ad7f49d7a803f9e5b5fc9e7bc8bc269c8a`.
 
@@ -171,7 +177,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:fa1ed0e14550900e:kzero-versus-positive-euler-form`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fa1ed0e14550--A (12).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fa1ed0e14550--A (12).pdf#page=2>) — §2.1–2.2 and §3 derived positivity.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fa1ed0e14550--A (12).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fa1ed0e14550--A (12).pdf#page=2`) — §2.1–2.2 and §3 derived positivity.
 
 Exact PDF SHA-256: `fa1ed0e14550900e8ea72a3e23e286a6b5a52d347e8acd33aa1064bc078b9c12`.
 
@@ -199,7 +205,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:ff0c8a7c65aa8132:kzero-versus-positive-euler-form`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ff0c8a7c65aa--A (9).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ff0c8a7c65aa--A (9).pdf#page=2>) — §2.1–2.2 and §3 derived positivity.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ff0c8a7c65aa--A (9).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ff0c8a7c65aa--A (9).pdf#page=2`) — §2.1–2.2 and §3 derived positivity.
 
 Exact PDF SHA-256: `ff0c8a7c65aa813269f620e16d07efb96dcb6ab3dfccbad185c7d1c6f51e644a`.
 
@@ -237,7 +243,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#159cb12b34d5a425-kl-positive-to-residue-gap).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3>) — §3.1–3.2, §4 and appendix A.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3`) — §3.1–3.2, §4 and appendix A.
 
 Exact PDF SHA-256: `159cb12b34d5a425a822b19a204ca2dccff897363f8978d15bd17fa166ad9a2d`.
 
@@ -273,7 +279,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#553f237f431fc299-kl-positive-to-residue-gap).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3>) — §3.1–3.2, §4 and appendix A.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3`) — §3.1–3.2, §4 and appendix A.
 
 Exact PDF SHA-256: `553f237f431fc2991860dfb72890a3ebb6d02de0adc14daa7e6af901c5f74a1f`.
 
@@ -299,7 +305,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:d56431648a9c4b04:precession-euler-positivity-bridge`
 
-Paper: [PDF page 12](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d56431648a9c--On_the_Precession_of_Zero__A_Rigorous_Resolution_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=12>) — §5.2–5.3.
+Paper: PDF page 12 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d56431648a9c--On_the_Precession_of_Zero__A_Rigorous_Resolution_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=12`) — §5.2–5.3.
 
 Exact PDF SHA-256: `d56431648a9c4b0426bb7cf2dcb80b8613ce4291e75c849c8ecbc9c76c83efb4`.
 
@@ -327,7 +333,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:e3a1f5401dc4b22a:precession-euler-positivity-bridge`
 
-Paper: [PDF page 12](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e3a1f5401dc4--On_the_Precession_of_Zero__A_Rigorous_Resolution_of_the_Riemann_Hypothesis_and_Its_Generalizations (6).pdf#page=12>) — §5.2–5.3.
+Paper: PDF page 12 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e3a1f5401dc4--On_the_Precession_of_Zero__A_Rigorous_Resolution_of_the_Riemann_Hypothesis_and_Its_Generalizations (6).pdf#page=12`) — §5.2–5.3.
 
 Exact PDF SHA-256: `e3a1f5401dc4b22af97378e4f9b6f387e3b8500ce3ce946f8ff6dd3ca848ef73`.
 
@@ -357,7 +363,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#21b37ab459e746fe-geometric-positivity-residue-bridge).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=3>) — §2.3 and §3 proof steps.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/21b37ab459e7--A (11).pdf#page=3`) — §2.3 and §3 proof steps.
 
 Exact PDF SHA-256: `21b37ab459e746fefd04bae61caff0ec2c4bc33925095360ae2235220b5f4d00`.
 
@@ -385,7 +391,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a18a628c04c5a33a-geometric-positivity-residue-bridge).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=3>) — §2.3 and §3 proof steps.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a18a628c04c5--A (8).pdf#page=3`) — §2.3 and §3 proof steps.
 
 Exact PDF SHA-256: `a18a628c04c5a33a53f081fd795195641e02b185cf09a67fef290b571921e2de`.
 
@@ -419,7 +425,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#bd284739968eab78-exceptional-embedding-not-automorphic-transfer).
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=3>), [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=5>) — §5.1.1 and §7.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=3`), PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=5`) — §5.1.1 and §7.
 
 Exact PDF SHA-256: `bd284739968eab786f84fc66f3c8e3312ea6037667a9f2ffdf16c3b5db7baca1`.
 
@@ -445,7 +451,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:0c4fff267dc2f5c0:mirror-kzero-residue-scaling`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0c4fff267dc2--Directions (1).pdf#page=2>) — §2.2–3.2 equations (2)–(7).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0c4fff267dc2--Directions (1).pdf#page=2`) — §2.2–3.2 equations (2)–(7).
 
 Exact PDF SHA-256: `0c4fff267dc2f5c0d5bfe1f866963824512b58a77c19d447d31d3222d9278a74`.
 
@@ -473,7 +479,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:e57abef13bedf92a:mirror-kzero-residue-scaling`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e57abef13bed--Directions (2).pdf#page=2>) — §2.2–3.2 equations (2)–(7).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e57abef13bed--Directions (2).pdf#page=2`) — §2.2–3.2 equations (2)–(7).
 
 Exact PDF SHA-256: `e57abef13bedf92a3cf66b40e87ce1872c1d3c76895a7f2b26ed02abe87fc586`.
 
@@ -503,7 +509,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **obstruction-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#4fd05e96b1d7ef28-strict-pairing-and-variance-counterchecks).
 
-Paper: [PDF page 34](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4fd05e96b1d7--e (1).pdf#page=34>) — appendix G.1–G.2 physical p34.
+Paper: PDF page 34 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4fd05e96b1d7--e (1).pdf#page=34`) — appendix G.1–G.2 physical p34.
 
 Exact PDF SHA-256: `4fd05e96b1d7ef280dc2382bfd3a0e6bf6c6ff4353afa5402abb374794836f8c`.
 
@@ -531,7 +537,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **obstruction-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#c34a092c5adbd193-strict-pairing-and-variance-counterchecks).
 
-Paper: [PDF page 34](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c34a092c5adb--e (2).pdf#page=34>) — appendix G.1–G.2 physical p34.
+Paper: PDF page 34 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c34a092c5adb--e (2).pdf#page=34`) — appendix G.1–G.2 physical p34.
 
 Exact PDF SHA-256: `c34a092c5adbd193a4bd81c209faed6d09801d41a16da01c7277ddc712e2604a`.
 
@@ -557,7 +563,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:7875c2ad0c7b835d:bundle-monoid-versus-kzero-realization`
 
-Paper: [PDF page 16](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7875c2ad0c7b--The_Generalized_Riemann_Hypothesis__Axiomatics__Harmonic_Unity__and_the_Architecture_of_High_Symmetry_Systems (1).pdf#page=16>), [PDF page 18](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7875c2ad0c7b--The_Generalized_Riemann_Hypothesis__Axiomatics__Harmonic_Unity__and_the_Architecture_of_High_Symmetry_Systems (1).pdf#page=18>) — §5.5 and §6.2.
+Paper: PDF page 16 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7875c2ad0c7b--The_Generalized_Riemann_Hypothesis__Axiomatics__Harmonic_Unity__and_the_Architecture_of_High_Symmetry_Systems (1).pdf#page=16`), PDF page 18 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7875c2ad0c7b--The_Generalized_Riemann_Hypothesis__Axiomatics__Harmonic_Unity__and_the_Architecture_of_High_Symmetry_Systems (1).pdf#page=18`) — §5.5 and §6.2.
 
 Exact PDF SHA-256: `7875c2ad0c7b835d2eab6aa4c19940fd63897f44b88c8c54e1a1a15f4da32142`.
 
@@ -591,7 +597,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a748ea4b4592e7ab-purity-frobenius-versus-global-zeros).
 
-Paper: [PDF page 82](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=82>), [PDF page 87](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=87>), [PDF page 91](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=91>) — §8.3.1, §9.3.2 and §10.2.2, physical pp82/87/91.
+Paper: PDF page 82 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=82`), PDF page 87 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=87`), PDF page 91 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a748ea4b4592--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (3).pdf#page=91`) — §8.3.1, §9.3.2 and §10.2.2, physical pp82/87/91.
 
 Exact PDF SHA-256: `a748ea4b4592e7ab0c0d2d088342035a07bef9e9c78efc69a2a19602aa3cf515`.
 
@@ -623,7 +629,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#e686e3fe101ea8bf-purity-frobenius-versus-global-zeros).
 
-Paper: [PDF page 82](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=82>), [PDF page 87](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=87>), [PDF page 91](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=91>) — §8.3.1, §9.3.2 and §10.2.2, physical pp82/87/91.
+Paper: PDF page 82 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=82`), PDF page 87 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=87`), PDF page 91 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e686e3fe101e--The_Ring_Spectral_Purity__Motivic_Cohomology__and_Fourier_Mukai_Symmetries (2).pdf#page=91`) — §8.3.1, §9.3.2 and §10.2.2, physical pp82/87/91.
 
 Exact PDF SHA-256: `e686e3fe101ea8bf1152129f77e05b0a2b05dabe795f7226b4f2a9073760ef23`.
 
@@ -649,7 +655,7 @@ Missing bridges and uncertainty:
 
 **matched-subclaim** · Version 5 · `idea:unpublished-v3:76ec0de38444f3c7:ledger-schur-source-lift`
 
-Paper: [PDF page 9](</Users/local/Desktop/MathematicsLibrary/GeometryTopology/76ec0de38444--V5_Research_Ledger.pdf#page=9>), [PDF page 12](</Users/local/Desktop/MathematicsLibrary/GeometryTopology/76ec0de38444--V5_Research_Ledger.pdf#page=12>) — §3.1 theorem 3.3 and §3.2 proposition 3.17.
+Paper: PDF page 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/GeometryTopology/76ec0de38444--V5_Research_Ledger.pdf#page=9`), PDF page 12 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/GeometryTopology/76ec0de38444--V5_Research_Ledger.pdf#page=12`) — §3.1 theorem 3.3 and §3.2 proposition 3.17.
 
 Exact PDF SHA-256: `76ec0de38444f3c73b40b98df8f4eb844ce341d7f2edbeccc60fd03520d5ebd3`.
 
@@ -730,7 +736,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:3bcb9d6e2c151930:additive-recurrence-does-not-contract`
 
-Paper: [PDF page 16](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3bcb9d6e2c15--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (2).pdf#page=16>), [PDF page 23](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3bcb9d6e2c15--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (2).pdf#page=23>), [PDF page 25](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3bcb9d6e2c15--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (2).pdf#page=25>) — §7.1, §11.1 and §12.1.
+Paper: PDF page 16 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3bcb9d6e2c15--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (2).pdf#page=16`), PDF page 23 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3bcb9d6e2c15--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (2).pdf#page=23`), PDF page 25 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3bcb9d6e2c15--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (2).pdf#page=25`) — §7.1, §11.1 and §12.1.
 
 Exact PDF SHA-256: `3bcb9d6e2c1519301b96ad44b1db23e6c89f2a810e56b8eae25aaaa6addd08a5`.
 
@@ -762,7 +768,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:be7297f355e1235c:additive-recurrence-does-not-contract`
 
-Paper: [PDF page 16](</Users/local/Desktop/MathematicsLibrary/NumberTheory/be7297f355e1--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (1).pdf#page=16>), [PDF page 23](</Users/local/Desktop/MathematicsLibrary/NumberTheory/be7297f355e1--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (1).pdf#page=23>), [PDF page 25](</Users/local/Desktop/MathematicsLibrary/NumberTheory/be7297f355e1--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (1).pdf#page=25>) — §7.1, §11.1 and §12.1.
+Paper: PDF page 16 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/be7297f355e1--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (1).pdf#page=16`), PDF page 23 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/be7297f355e1--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (1).pdf#page=23`), PDF page 25 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/be7297f355e1--A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (1).pdf#page=25`) — §7.1, §11.1 and §12.1.
 
 Exact PDF SHA-256: `be7297f355e1235c10f02ffe3c079c865527728999bb5b1f368888370904e52e`.
 
@@ -794,7 +800,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:6c4cad3095ddca38:zeta-identities`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6c4cad3095dd--Recursive_Relations__Integral_Representations__and_Higher_Order_Derivatives (3).pdf#page=2>) — §3.2 and prime-gap application; equation numbers depend on the exact version.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6c4cad3095dd--Recursive_Relations__Integral_Representations__and_Higher_Order_Derivatives (3).pdf#page=2`) — §3.2 and prime-gap application; equation numbers depend on the exact version.
 
 Exact PDF SHA-256: `6c4cad3095ddca384f0ab0bea1150c63b2679ca242b69b8f911ac95c762edb37`.
 
@@ -822,7 +828,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:8b1bd5571b35a48c:euler-maclaurin-tail`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8b1bd5571b35--B (6).pdf#page=2>) — §4.1–4.2, equations (4)–(6).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8b1bd5571b35--B (6).pdf#page=2`) — §4.1–4.2, equations (4)–(6).
 
 Exact PDF SHA-256: `8b1bd5571b35a48c8bfbe0ebeedb6274efaf159357fe900cac6ea2128b7032bb`.
 
@@ -849,7 +855,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:8b1bd5571b35a48c:zeta-identities`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8b1bd5571b35--B (6).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8b1bd5571b35--B (6).pdf#page=3>) — §3.2 and prime-gap application; equation numbers depend on the exact version.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8b1bd5571b35--B (6).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8b1bd5571b35--B (6).pdf#page=3`) — §3.2 and prime-gap application; equation numbers depend on the exact version.
 
 Exact PDF SHA-256: `8b1bd5571b35a48c8bfbe0ebeedb6274efaf159357fe900cac6ea2128b7032bb`.
 
@@ -877,7 +883,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:b28f02624474a25b:zeta-identities`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b28f02624474--Recursive_Relations__Integral_Representations__and_Higher_Order_Derivatives (4).pdf#page=2>) — §3.2 and prime-gap application; equation numbers depend on the exact version.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b28f02624474--Recursive_Relations__Integral_Representations__and_Higher_Order_Derivatives (4).pdf#page=2`) — §3.2 and prime-gap application; equation numbers depend on the exact version.
 
 Exact PDF SHA-256: `b28f02624474a25b97453d816b8c00e29bcf0fc04d37f19b3cafad6d8f79d76a`.
 
@@ -905,7 +911,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:07854b03e9ee7cac:propagation-upper-bound-circularity`
 
-Paper: [PDF page 27](</Users/local/Desktop/MathematicsLibrary/NumberTheory/07854b03e9ee--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (4).pdf#page=27>), [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/07854b03e9ee--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (4).pdf#page=28>), [PDF page 29](</Users/local/Desktop/MathematicsLibrary/NumberTheory/07854b03e9ee--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (4).pdf#page=29>) — §14.1–14.2.4 and §15.2.
+Paper: PDF page 27 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/07854b03e9ee--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (4).pdf#page=27`), PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/07854b03e9ee--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (4).pdf#page=28`), PDF page 29 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/07854b03e9ee--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (4).pdf#page=29`) — §14.1–14.2.4 and §15.2.
 
 Exact PDF SHA-256: `07854b03e9ee7cac5426b3045813dc3e120acec3a9e55b5f5c9183f018d4f724`.
 
@@ -933,7 +939,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:0b976e38df36c472:propagation-upper-bound-circularity`
 
-Paper: [PDF page 27](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b976e38df36--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (3).pdf#page=27>), [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b976e38df36--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (3).pdf#page=28>), [PDF page 29](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b976e38df36--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (3).pdf#page=29>) — §14.1–14.2.4 and §15.2.
+Paper: PDF page 27 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b976e38df36--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (3).pdf#page=27`), PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b976e38df36--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (3).pdf#page=28`), PDF page 29 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b976e38df36--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (3).pdf#page=29`) — §14.1–14.2.4 and §15.2.
 
 Exact PDF SHA-256: `0b976e38df36c472625c1a6742ea55a963cb2f6cd40d3b2451a9808acbd43e2d`.
 
@@ -961,7 +967,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:6aedd2c8ec94ced7:propagation-upper-bound-circularity`
 
-Paper: [PDF page 27](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6aedd2c8ec94--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (5).pdf#page=27>), [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6aedd2c8ec94--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (5).pdf#page=28>), [PDF page 29](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6aedd2c8ec94--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (5).pdf#page=29>) — §14.1–14.2.4 and §15.2.
+Paper: PDF page 27 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6aedd2c8ec94--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (5).pdf#page=27`), PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6aedd2c8ec94--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (5).pdf#page=28`), PDF page 29 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6aedd2c8ec94--A_Comprehensive_Proof_of_the_Riemann_Hypothesis__Cross_Domain_Consistency__Error_Propagation__and_Applications (5).pdf#page=29`) — §14.1–14.2.4 and §15.2.
 
 Exact PDF SHA-256: `6aedd2c8ec94ced7bea24dc519cefd3d08cbacdccb1b2e4f4cefb0a120488786`.
 
@@ -989,7 +995,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:3308b4361b10c6fc:hecke-real-spectrum-source-gap`
 
-Paper: [PDF page 12](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3308b4361b10--A_Formal_Proof_of_the_Riemann_Hypothesis.pdf#page=12>), [PDF page 30](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3308b4361b10--A_Formal_Proof_of_the_Riemann_Hypothesis.pdf#page=30>) — §5.4–5.5 and §13.1.
+Paper: PDF page 12 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3308b4361b10--A_Formal_Proof_of_the_Riemann_Hypothesis.pdf#page=12`), PDF page 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3308b4361b10--A_Formal_Proof_of_the_Riemann_Hypothesis.pdf#page=30`) — §5.4–5.5 and §13.1.
 
 Exact PDF SHA-256: `3308b4361b10c6fc2ca2b108625b3b83215f6a942235adb4d4b27ed26d07e6c0`.
 
@@ -1019,7 +1025,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#33a5d8fe67a4e573-li-flow-source-preservation).
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=6>), [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=11>), [PDF page 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=14>) — §3–4 coefficient definition, §11 coercivity, §15 limit-to-GRH.
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=6`), PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=11`), PDF page 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/33a5d8fe67a4--A_Flow_Based_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=14`) — §3–4 coefficient definition, §11 coercivity, §15 limit-to-GRH.
 
 Exact PDF SHA-256: `33a5d8fe67a4e573a4de2c0cd0d553a403b1b781f58af445ccd6e402f71fc5d6`.
 
@@ -1049,7 +1055,7 @@ Current broader-search assessment: **corrective-fragment**, main claim unresolve
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#465f76a208948832-absolute-error-integral-scale).
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=7>), [PDF page 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=9>) — §2.4 assumption3 and §3.4–3.5.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=7`), PDF page 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/465f76a20894--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (3).pdf#page=9`) — §2.4 assumption3 and §3.4–3.5.
 
 Exact PDF SHA-256: `465f76a20894883259ad4ea846bb3e28f4e48c0bc834e0dbea80c8eadc49f28c`.
 
@@ -1079,7 +1085,7 @@ Current broader-search assessment: **corrective-fragment**, main claim unresolve
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#d8d87416bd1943d6-absolute-error-integral-scale).
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=7>), [PDF page 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=9>) — §2.4 assumption3 and §3.4–3.5.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=7`), PDF page 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d8d87416bd19--A_Hybrid_Approach_to_Proving_the_Riemann_Hypothesis__Cross_Domain_Consistency_and_Error_Propagation (4).pdf#page=9`) — §2.4 assumption3 and §3.4–3.5.
 
 Exact PDF SHA-256: `d8d87416bd1943d62774b794576cb638f1c95becee6f0500428483e0afb48a3c`.
 
@@ -1105,7 +1111,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:b3ef991b7414c1bc:sublinear-deviation-not-zero-limit`
 
-Paper: [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b3ef991b7414--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (6).pdf#page=28>), [PDF page 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b3ef991b7414--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (6).pdf#page=40>) — §3.4.7 and §5.2.2.2–5.2.3.
+Paper: PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b3ef991b7414--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (6).pdf#page=28`), PDF page 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b3ef991b7414--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (6).pdf#page=40`) — §3.4.7 and §5.2.2.2–5.2.3.
 
 Exact PDF SHA-256: `b3ef991b7414c1bc29f7e64e7ce0400b815d3574e903765efd016fe650fa0215`.
 
@@ -1133,7 +1139,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:b9d03efdcb59fb1f:sublinear-deviation-not-zero-limit`
 
-Paper: [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b9d03efdcb59--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=28>), [PDF page 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b9d03efdcb59--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=40>) — §3.4.7 and §5.2.2.2–5.2.3.
+Paper: PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b9d03efdcb59--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=28`), PDF page 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b9d03efdcb59--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=40`) — §3.4.7 and §5.2.2.2–5.2.3.
 
 Exact PDF SHA-256: `b9d03efdcb59fb1f0bf5c7a6bc56baeb8e00b1906cb8c0d40db1158b1af971d9`.
 
@@ -1161,7 +1167,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:cdffdef8d6dfceec:sublinear-deviation-not-zero-limit`
 
-Paper: [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/cdffdef8d6df--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (4).pdf#page=28>), [PDF page 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/cdffdef8d6df--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (4).pdf#page=40>) — §3.4.7 and §5.2.2.2–5.2.3.
+Paper: PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/cdffdef8d6df--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (4).pdf#page=28`), PDF page 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/cdffdef8d6df--Modular_Presentation_of_a_Recursive_Refinement_Framework_for_Proving_the_Riemann_Hypothesis_and_Its_Generalizations (4).pdf#page=40`) — §3.4.7 and §5.2.2.2–5.2.3.
 
 Exact PDF SHA-256: `cdffdef8d6dfceec24378b5e52c91f5d20f7630542f2b285a892a68f866f6e3d`.
 
@@ -1189,7 +1195,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:1dd700b89ffa0b07:local-completeness-and-gap-decay`
 
-Paper: [PDF page 13](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1dd700b89ffa--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (7).pdf#page=13>), [PDF page 31](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1dd700b89ffa--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (7).pdf#page=31>), [PDF page 44](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1dd700b89ffa--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (7).pdf#page=44>) — §14.2, §23.2 and §49.
+Paper: PDF page 13 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1dd700b89ffa--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (7).pdf#page=13`), PDF page 31 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1dd700b89ffa--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (7).pdf#page=31`), PDF page 44 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1dd700b89ffa--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (7).pdf#page=44`) — §14.2, §23.2 and §49.
 
 Exact PDF SHA-256: `1dd700b89ffa0b0709030c0c20279ec0e18364b105aa93dd98eb9b8aa8a3f158`.
 
@@ -1221,7 +1227,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:ae73d323d7f9b3b0:local-completeness-and-gap-decay`
 
-Paper: [PDF page 13](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ae73d323d7f9--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (8).pdf#page=13>), [PDF page 31](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ae73d323d7f9--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (8).pdf#page=31>), [PDF page 44](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ae73d323d7f9--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (8).pdf#page=44>) — §14.2, §23.2 and §49.
+Paper: PDF page 13 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ae73d323d7f9--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (8).pdf#page=13`), PDF page 31 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ae73d323d7f9--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (8).pdf#page=31`), PDF page 44 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ae73d323d7f9--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement (8).pdf#page=44`) — §14.2, §23.2 and §49.
 
 Exact PDF SHA-256: `ae73d323d7f9b3b0f8ff80900c704d1e7d19cb4506bfc98e03284c3fd4a91157`.
 
@@ -1253,7 +1259,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:7eebdc32352bb488:linearized-flow-arithmetic-source`
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7eebdc32352b--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement__Higher_Dimensional_Motives__and_p_Adic_Extensions (11).pdf#page=7>) — §4.2–4.3.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7eebdc32352b--A_Modular_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations_via_Recursive_Refinement__Higher_Dimensional_Motives__and_p_Adic_Extensions (11).pdf#page=7`) — §4.2–4.3.
 
 Exact PDF SHA-256: `7eebdc32352bb488f4709176d3e1bde84e9353fe7813337c458ae8b062302244`.
 
@@ -1281,7 +1287,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v2:8702e1618a329ee1`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8702e1618a32--A_Modular_Proof_of_the_Riemann_Hypothesis_via_Recursive_Refinement_and_Geometric_Representations (3).pdf#page=2>) — §2.2–3.1, recursive refinement and fixed-point claim.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8702e1618a32--A_Modular_Proof_of_the_Riemann_Hypothesis_via_Recursive_Refinement_and_Geometric_Representations (3).pdf#page=2`) — §2.2–3.1, recursive refinement and fixed-point claim.
 
 Exact PDF SHA-256: `8702e1618a329ee15d9f6b4d86deb4a5e7b7535fb3bfcf784f4a29f3d8cadca4`.
 
@@ -1307,7 +1313,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v2:d5dfdf34f37e2d87`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d5dfdf34f37e--A_Modular_Proof_of_the_Riemann_Hypothesis_via_Recursive_Refinement_and_Geometric_Representations (2).pdf#page=2>) — §2.2–3.1, recursive refinement and fixed-point claim.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d5dfdf34f37e--A_Modular_Proof_of_the_Riemann_Hypothesis_via_Recursive_Refinement_and_Geometric_Representations (2).pdf#page=2`) — §2.2–3.1, recursive refinement and fixed-point claim.
 
 Exact PDF SHA-256: `d5dfdf34f37e2d87c189ed1a18c5a7fe6ac0c078059c4eca1fda96d9a1754e50`.
 
@@ -1333,7 +1339,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:846274ec78b26d0f:rh-assumed-sobolev-contraction`
 
-Paper: [PDF page 62](</Users/local/Desktop/MathematicsLibrary/NumberTheory/846274ec78b2--A_Modular__Recursive__and_Geometric_Proof_for_the_Riemann_Hypothesis__Generalized_Riemann_Hypothesis__and_Zeta_Functions_of_Arithmetic_Schemes (29).pdf#page=62>) — §13.1.1–13.1.2, physical p62.
+Paper: PDF page 62 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/846274ec78b2--A_Modular__Recursive__and_Geometric_Proof_for_the_Riemann_Hypothesis__Generalized_Riemann_Hypothesis__and_Zeta_Functions_of_Arithmetic_Schemes (29).pdf#page=62`) — §13.1.1–13.1.2, physical p62.
 
 Exact PDF SHA-256: `846274ec78b26d0fb7834719c6ae3d43b547c1f878abf11e8d6157dc56e1eb2b`.
 
@@ -1361,7 +1367,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:dd3724af49ce3a21:rh-assumed-sobolev-contraction`
 
-Paper: [PDF page 62](</Users/local/Desktop/MathematicsLibrary/NumberTheory/dd3724af49ce--A_Modular__Recursive__and_Geometric_Proof_for_the_Riemann_Hypothesis__Generalized_Riemann_Hypothesis__and_Zeta_Functions_of_Arithmetic_Schemes (28).pdf#page=62>) — §13.1.1–13.1.2, physical p62.
+Paper: PDF page 62 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/dd3724af49ce--A_Modular__Recursive__and_Geometric_Proof_for_the_Riemann_Hypothesis__Generalized_Riemann_Hypothesis__and_Zeta_Functions_of_Arithmetic_Schemes (28).pdf#page=62`) — §13.1.1–13.1.2, physical p62.
 
 Exact PDF SHA-256: `dd3724af49ce3a219df56252da53185cf49fee7b10ed18c15f45c77bb519bf09`.
 
@@ -1389,7 +1395,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:8d8ea243c97ffea3:mellin-harmonic-continuation`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8d8ea243c97f--A_Proof_of_the_Generalized_Riemann_Hypothesis (6).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8d8ea243c97f--A_Proof_of_the_Generalized_Riemann_Hypothesis (6).pdf#page=3>) — Proposition 1.2 and Lemma 2.1, displayed Mellin and harmonic-transform derivations.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8d8ea243c97f--A_Proof_of_the_Generalized_Riemann_Hypothesis (6).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8d8ea243c97f--A_Proof_of_the_Generalized_Riemann_Hypothesis (6).pdf#page=3`) — Proposition 1.2 and Lemma 2.1, displayed Mellin and harmonic-transform derivations.
 
 Exact PDF SHA-256: `8d8ea243c97ffea30bbc987830c3f66a9c1184afc6228359d0e1371d376ae811`.
 
@@ -1419,7 +1425,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:fdb82bf5e8f99fbf:mellin-harmonic-continuation`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fdb82bf5e8f9--A_Proof_of_the_Generalized_Riemann_Hypothesis (8).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fdb82bf5e8f9--A_Proof_of_the_Generalized_Riemann_Hypothesis (8).pdf#page=3>) — Proposition 1.2 and Lemma 2.1, displayed Mellin and harmonic-transform derivations.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fdb82bf5e8f9--A_Proof_of_the_Generalized_Riemann_Hypothesis (8).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fdb82bf5e8f9--A_Proof_of_the_Generalized_Riemann_Hypothesis (8).pdf#page=3`) — Proposition 1.2 and Lemma 2.1, displayed Mellin and harmonic-transform derivations.
 
 Exact PDF SHA-256: `fdb82bf5e8f99fbf712335da6f9d0348e1e6e0a113709ffeab3ba3e25108fc15`.
 
@@ -1449,7 +1455,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:6f29aa585bcd0875:cycle-error-scale-source-gap`
 
-Paper: [PDF page 18](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6f29aa585bcd--A_Proof_of_the_Riemann_Hypothesis_via_Cross_Domain_Consistency_and_Propagation (5).pdf#page=18>) — §9.5–10.1.
+Paper: PDF page 18 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6f29aa585bcd--A_Proof_of_the_Riemann_Hypothesis_via_Cross_Domain_Consistency_and_Propagation (5).pdf#page=18`) — §9.5–10.1.
 
 Exact PDF SHA-256: `6f29aa585bcd0875ef75d27f7a97892971a2de50b4eb59848a14b9ce4db2ea09`.
 
@@ -1477,7 +1483,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:ebd217a392360fb1:cycle-error-scale-source-gap`
 
-Paper: [PDF page 18](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ebd217a39236--A_Proof_of_the_Riemann_Hypothesis_via_Cross_Domain_Consistency_and_Propagation (4).pdf#page=18>) — §9.5–10.1.
+Paper: PDF page 18 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ebd217a39236--A_Proof_of_the_Riemann_Hypothesis_via_Cross_Domain_Consistency_and_Propagation (4).pdf#page=18`) — §9.5–10.1.
 
 Exact PDF SHA-256: `ebd217a392360fb1074f76f617b440bab4d9175947db079f88ab2966e411b922`.
 
@@ -1505,7 +1511,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:9d9ba51d7fdd4964:mellin-derivative-and-affine-map`
 
-Paper: [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9d9ba51d7fdd--A_Recursive_Refinement_Framework_for_L_Functions_and_the_Riemann_Hypothesis (14).pdf#page=5>) — §1.2–1.3.
+Paper: PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9d9ba51d7fdd--A_Recursive_Refinement_Framework_for_L_Functions_and_the_Riemann_Hypothesis (14).pdf#page=5`) — §1.2–1.3.
 
 Exact PDF SHA-256: `9d9ba51d7fdd49648821e9d90156e9a5b2a2033e664f1765df4290ba7b876940`.
 
@@ -1533,7 +1539,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:b06fdc1552773fb2:mellin-derivative-and-affine-map`
 
-Paper: [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b06fdc155277--A_Recursive_Refinement_Framework_for_L_Functions_and_the_Riemann_Hypothesis (15).pdf#page=5>) — §1.2–1.3.
+Paper: PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b06fdc155277--A_Recursive_Refinement_Framework_for_L_Functions_and_the_Riemann_Hypothesis (15).pdf#page=5`) — §1.2–1.3.
 
 Exact PDF SHA-256: `b06fdc1552773fb2fc6c404efca924759af81956416a345520303e670ed0f873`.
 
@@ -1561,7 +1567,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:07a97006eade7786:long-domain-maximality-circularity`
 
-Paper: [PDF page 102](</Users/local/Desktop/MathematicsLibrary/NumberTheory/07a97006eade--_A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance__Copy_.pdf#page=102>), [PDF page 111](</Users/local/Desktop/MathematicsLibrary/NumberTheory/07a97006eade--_A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance__Copy_.pdf#page=111>) — physical pp102 and111, printed188/197.
+Paper: PDF page 102 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/07a97006eade--_A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance__Copy_.pdf#page=102`), PDF page 111 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/07a97006eade--_A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance__Copy_.pdf#page=111`) — physical pp102 and111, printed188/197.
 
 Exact PDF SHA-256: `07a97006eade7786f4c7e8fc482074fd21b56f3ec076ef7ef417c61c7cd266d4`.
 
@@ -1593,7 +1599,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:2459ac87bd688e70:hilbert-schmidt-trace-class-gap`
 
-Paper: [PDF page 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2459ac87bd68--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros____Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (6).pdf#page=14>), [PDF page 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2459ac87bd68--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros____Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (6).pdf#page=15>) — physical pp14–15, printed100–101.
+Paper: PDF page 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2459ac87bd68--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros____Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (6).pdf#page=14`), PDF page 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2459ac87bd68--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros____Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (6).pdf#page=15`) — physical pp14–15, printed100–101.
 
 Exact PDF SHA-256: `2459ac87bd688e704f6c8763945d1876d1791b57a8c8ebdf916c8bd5a9f6b117`.
 
@@ -1621,7 +1627,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:773c53a0ba71a063:weighted-kernel-measure-domain`
 
-Paper: [PDF page 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/773c53a0ba71--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros____Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (5).pdf#page=14>), [PDF page 23](</Users/local/Desktop/MathematicsLibrary/NumberTheory/773c53a0ba71--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros____Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (5).pdf#page=23>) — physical pp14 and23, printed100/109.
+Paper: PDF page 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/773c53a0ba71--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros____Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (5).pdf#page=14`), PDF page 23 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/773c53a0ba71--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros____Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (5).pdf#page=23`) — physical pp14 and23, printed100/109.
 
 Exact PDF SHA-256: `773c53a0ba71a06303630d9bf44a3bdc29c891a934b956f280f229a158c997ae`.
 
@@ -1649,7 +1655,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:cec8bae3e3ec9624:deficiency-decay-cec8`
 
-Paper: [PDF page 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/cec8bae3e3ec--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance.pdf#page=14>), [PDF page 23](</Users/local/Desktop/MathematicsLibrary/NumberTheory/cec8bae3e3ec--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance.pdf#page=23>) — physical pp14 and23, printed100/109.
+Paper: PDF page 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/cec8bae3e3ec--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance.pdf#page=14`), PDF page 23 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/cec8bae3e3ec--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance.pdf#page=23`) — physical pp14 and23, printed100/109.
 
 Exact PDF SHA-256: `cec8bae3e3ec9624ecf32d7e073899b9894c79bf46523943269bef1dae352dff`.
 
@@ -1681,7 +1687,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:e5c79746ba1ad102:deficiency-decay-e5c7`
 
-Paper: [PDF page 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e5c79746ba1a--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1).pdf#page=14>), [PDF page 23](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e5c79746ba1a--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1).pdf#page=23>) — physical pp14 and23, printed100/109.
+Paper: PDF page 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e5c79746ba1a--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1).pdf#page=14`), PDF page 23 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e5c79746ba1a--A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1).pdf#page=23`) — physical pp14 and23, printed100/109.
 
 Exact PDF SHA-256: `e5c79746ba1ad102a7c511857498c4ab22a27649f9a2cb2dfd7c5644bc23203b`.
 
@@ -1713,7 +1719,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:f1b1ce71d899e0b3:local-determinant-series-versus-rigid-spectrum`
 
-Paper: [PDF page 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f1b1ce71d899--manuscript (11).pdf#page=15>), [PDF page 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f1b1ce71d899--manuscript (11).pdf#page=40>) — physical pp15 and40, Eq2.28 and theorem4.6.
+Paper: PDF page 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f1b1ce71d899--manuscript (11).pdf#page=15`), PDF page 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f1b1ce71d899--manuscript (11).pdf#page=40`) — physical pp15 and40, Eq2.28 and theorem4.6.
 
 Exact PDF SHA-256: `f1b1ce71d899e0b3c46f53bfe7afe0726c5ebc74d0fbb40e9184b929a3e7ab77`.
 
@@ -1741,7 +1747,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:1495f7cd4b197db2:entropy-zero-flow-source-identity`
 
-Paper: [PDF page 21](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1495f7cd4b19--A_Unified_Spectral_Resolution_of_the_Riemann_Hypothesis_and_Its_Automorphic_Extensions (1).pdf#page=21>), [PDF page 33](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1495f7cd4b19--A_Unified_Spectral_Resolution_of_the_Riemann_Hypothesis_and_Its_Automorphic_Extensions (1).pdf#page=33>) — §3.3 and §4.4.1.
+Paper: PDF page 21 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1495f7cd4b19--A_Unified_Spectral_Resolution_of_the_Riemann_Hypothesis_and_Its_Automorphic_Extensions (1).pdf#page=21`), PDF page 33 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1495f7cd4b19--A_Unified_Spectral_Resolution_of_the_Riemann_Hypothesis_and_Its_Automorphic_Extensions (1).pdf#page=33`) — §3.3 and §4.4.1.
 
 Exact PDF SHA-256: `1495f7cd4b197db2822d21e1237d4b489249a1f587ad7f7492b642f28ded4f23`.
 
@@ -1769,7 +1775,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:43e8fc109a6d3165:spectral-source-completeness`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/43e8fc109a6d--R.pdf#page=2>) — §2 spectral operator and §3–5 proposed geometric comparisons.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/43e8fc109a6d--R.pdf#page=2`) — §2 spectral operator and §3–5 proposed geometric comparisons.
 
 Exact PDF SHA-256: `43e8fc109a6d316537158a8f55f3b33a0baea197ec42ff77927e212e895c62f7`.
 
@@ -1796,7 +1802,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:bd07dcf0e865df11:exceptional-energy-positivity-gap`
 
-Paper: [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd07dcf0e865--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis (22).pdf#page=8>), [PDF page 30](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd07dcf0e865--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis (22).pdf#page=30>) — §3 symmetry and §4.5.
+Paper: PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd07dcf0e865--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis (22).pdf#page=8`), PDF page 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd07dcf0e865--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis (22).pdf#page=30`) — §3 symmetry and §4.5.
 
 Exact PDF SHA-256: `bd07dcf0e865df115dfea43bcc2a03b125ed3c92a79eb7c32ef78c5cdb87eced`.
 
@@ -1824,7 +1830,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:d01590e31db8b722:exceptional-energy-positivity-gap`
 
-Paper: [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d01590e31db8--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis (21).pdf#page=8>), [PDF page 30](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d01590e31db8--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis (21).pdf#page=30>) — §3 symmetry and §4.5.
+Paper: PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d01590e31db8--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis (21).pdf#page=8`), PDF page 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d01590e31db8--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis (21).pdf#page=30`) — §3 symmetry and §4.5.
 
 Exact PDF SHA-256: `d01590e31db8b722c4c6de512d15d201528431305f3b2c2689766972554243ae`.
 
@@ -1854,7 +1860,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#17fb9e43b5ef8cff-weighted-gradient-energy-minimizer).
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=7>), [PDF page 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=14>) — §3.2 and §6.2.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=7`), PDF page 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/17fb9e43b5ef--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (5).pdf#page=14`) — §3.2 and §6.2.
 
 Exact PDF SHA-256: `17fb9e43b5ef8cff0941ac1bc880ffeee818d2203abefa03ff06642998220271`.
 
@@ -1882,7 +1888,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#92dd2484898a99ea-weighted-gradient-energy-minimizer).
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=7>), [PDF page 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=14>) — §3.2 and §6.2.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=7`), PDF page 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/92dd2484898a--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (7).pdf#page=14`) — §3.2 and §6.2.
 
 Exact PDF SHA-256: `92dd2484898a99eab11e025db3ea8a383da62083508b0b43fcbce69147355951`.
 
@@ -1908,7 +1914,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:0c3a8841921245c6:absolute-correction-budget`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0c3a88419212--Addressing_Scalability__Assumptions__and_Numerical_Gaps_in_the_Recursive_Refinement_Framework_for_the_Riemann_Hypothesis (3).pdf#page=1>) — §2 covariance assumptions and §3 recurrence/absolute budget.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0c3a88419212--Addressing_Scalability__Assumptions__and_Numerical_Gaps_in_the_Recursive_Refinement_Framework_for_the_Riemann_Hypothesis (3).pdf#page=1`) — §2 covariance assumptions and §3 recurrence/absolute budget.
 
 Exact PDF SHA-256: `0c3a8841921245c69e18bfb9793bc27080fe96f0080636e6c351398299390b3a`.
 
@@ -1936,7 +1942,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:18d072a96ccfde62:hybrid-regularization-source-bias`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/18d072a96ccf--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (4).pdf#page=3>), [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/18d072a96ccf--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (4).pdf#page=5>) — §3.3 and §6.3.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/18d072a96ccf--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (4).pdf#page=3`), PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/18d072a96ccf--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (4).pdf#page=5`) — §3.3 and §6.3.
 
 Exact PDF SHA-256: `18d072a96ccfde62bf6cb0af376b835dd3c706c94812d4d48edc5d130ca3dfe2`.
 
@@ -1968,7 +1974,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:3c4335e61b3acf7e:hybrid-regularization-source-bias`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3c4335e61b3a--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (3).pdf#page=3>), [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3c4335e61b3a--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (3).pdf#page=5>) — §3.3 and §6.3.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3c4335e61b3a--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (3).pdf#page=3`), PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3c4335e61b3a--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (3).pdf#page=5`) — §3.3 and §6.3.
 
 Exact PDF SHA-256: `3c4335e61b3acf7e5a42482273f3e9591a0b08297d1ef3eec6e942e0b1b4a5a1`.
 
@@ -2000,7 +2006,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:4e05457d03fb170a:hybrid-regularization-source-bias`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4e05457d03fb--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (2).pdf#page=3>), [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4e05457d03fb--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (2).pdf#page=5>) — §3.3 and §6.3.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4e05457d03fb--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (2).pdf#page=3`), PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4e05457d03fb--Advanced_Regularization_Techniques_for_Recursive_Refinement_of_Zeros__A_Spectral_Motivic_Hybrid_Approach (2).pdf#page=5`) — §3.3 and §6.3.
 
 Exact PDF SHA-256: `4e05457d03fb170a803e979df8375ad21febc06db8d8703ce42667b10cf40d16`.
 
@@ -2032,7 +2038,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:8f78a9815cde8031:band-spectrum-normalization-budget`
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/GeometryTopology/8f78a9815cde--Authority Bit-Matrix Pipeline for Geodesic Sampling and Super-Resolution.pdf#page=6>), [PDF page 7](</Users/local/Desktop/MathematicsLibrary/GeometryTopology/8f78a9815cde--Authority Bit-Matrix Pipeline for Geodesic Sampling and Super-Resolution.pdf#page=7>) — physical pp6–7 band transform, normalization and threshold predicate.
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/GeometryTopology/8f78a9815cde--Authority Bit-Matrix Pipeline for Geodesic Sampling and Super-Resolution.pdf#page=6`), PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/GeometryTopology/8f78a9815cde--Authority Bit-Matrix Pipeline for Geodesic Sampling and Super-Resolution.pdf#page=7`) — physical pp6–7 band transform, normalization and threshold predicate.
 
 Exact PDF SHA-256: `8f78a9815cde80310713bafa1f8ba4d1642d66e261b0bd40b09c2d9ee0e3bc07`.
 
@@ -2060,7 +2066,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:09f38febbd4fd1ca:local-newton-higher-order-budget`
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/09f38febbd4f--Boundary_and_Edge_Case_Handling_in_the_Recursive_Refinement_Framework__Ensuring_Robust_Convergence_Near_Critical_Regions (4).pdf#page=4>) — §3.4 equations(2)–(4) and §5.2.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/09f38febbd4f--Boundary_and_Edge_Case_Handling_in_the_Recursive_Refinement_Framework__Ensuring_Robust_Convergence_Near_Critical_Regions (4).pdf#page=4`) — §3.4 equations(2)–(4) and §5.2.
 
 Exact PDF SHA-256: `09f38febbd4fd1ca54134cd5f77364f844f6166069ad571220bc5c57ede4fa37`.
 
@@ -2088,7 +2094,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:de8e769e649abb2c:local-newton-higher-order-budget`
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/de8e769e649a--Boundary_and_Edge_Case_Handling_in_the_Recursive_Refinement_Framework__Ensuring_Robust_Convergence_Near_Critical_Regions (3).pdf#page=4>) — §3.4 equations(2)–(4) and §5.2.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/de8e769e649a--Boundary_and_Edge_Case_Handling_in_the_Recursive_Refinement_Framework__Ensuring_Robust_Convergence_Near_Critical_Regions (3).pdf#page=4`) — §3.4 equations(2)–(4) and §5.2.
 
 Exact PDF SHA-256: `de8e769e649abb2c00c0092419929051cc2c95bf7c34fbbc76b6c4193ada8d34`.
 
@@ -2167,7 +2173,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:74f003e319850d38:selberg-heat-spectrum`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/74f003e31985--Critical_Line_Alignment_in_Selberg_Zeta_Functions__Proof_in_Compact_Hyperbolic_Surfaces_and_Extensions (2).pdf#page=2>) — §2.2 and §3.2, heat trace and spectral branches.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/74f003e31985--Critical_Line_Alignment_in_Selberg_Zeta_Functions__Proof_in_Compact_Hyperbolic_Surfaces_and_Extensions (2).pdf#page=2`) — §2.2 and §3.2, heat trace and spectral branches.
 
 Exact PDF SHA-256: `74f003e319850d3827c03d5e93f4a3d749b1a9dbafe1fcc8ebc78816226693d5`.
 
@@ -2197,7 +2203,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#294c1f7e26b63880-sobolev-compactness-and-entropy-correction).
 
-Paper: [PDF page 17](</Users/local/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=17>), [PDF page 21](</Users/local/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=21>) — §6.4.3 and §7.1.
+Paper: PDF page 17 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=17`), PDF page 21 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/294c1f7e26b6--Entropy_Driven_Residue_Dynamics__A_Rigorous_Proof_of_the_Riemann_Hypothesis (7).pdf#page=21`) — §6.4.3 and §7.1.
 
 Exact PDF SHA-256: `294c1f7e26b6388031da9c7787890d9e2b23263b4c5da8393fef074898504712`.
 
@@ -2223,7 +2229,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:07fd22b22bb0c87e:regularized-newton-stability-premises`
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/07fd22b22bb0--Error_Bound_Formalization_in_the_Recursive_Refinement_Framework__Ensuring_Stability_and_Asymptotic_Convergence_for_Automorphic_L_Functions (3).pdf#page=4>) — §3.3 and §4.1.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/07fd22b22bb0--Error_Bound_Formalization_in_the_Recursive_Refinement_Framework__Ensuring_Stability_and_Asymptotic_Convergence_for_Automorphic_L_Functions (3).pdf#page=4`) — §3.3 and §4.1.
 
 Exact PDF SHA-256: `07fd22b22bb0c87eae69d617f9083c715fe6e6df142a71dbef60e65ff486f46a`.
 
@@ -2251,7 +2257,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:f4db727f799f6f21:regularized-newton-stability-premises`
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f4db727f799f--Error_Bound_Formalization_in_the_Recursive_Refinement_Framework__Ensuring_Stability_and_Asymptotic_Convergence_for_Automorphic_L_Functions (2).pdf#page=4>) — §3.3 and §4.1.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f4db727f799f--Error_Bound_Formalization_in_the_Recursive_Refinement_Framework__Ensuring_Stability_and_Asymptotic_Convergence_for_Automorphic_L_Functions (2).pdf#page=4`) — §3.3 and §4.1.
 
 Exact PDF SHA-256: `f4db727f799f6f211a02cc1628f0890f1a5e0db4d0ddafda5a26f600d210e641`.
 
@@ -2279,7 +2285,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:d3caef74a960e294:source-error-certification`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d3caef74a960--h (3).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d3caef74a960--h (3).pdf#page=2>) — §3–6, redundancy, precision and iterative-error proposal.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d3caef74a960--h (3).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d3caef74a960--h (3).pdf#page=2`) — §3–6, redundancy, precision and iterative-error proposal.
 
 Exact PDF SHA-256: `d3caef74a960e294006710120c65873047672f945cf904406ad06c899353e7d3`.
 
@@ -2306,7 +2312,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:e792dd3cfcd8a933:source-error-certification`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e792dd3cfcd8--h (2).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e792dd3cfcd8--h (2).pdf#page=2>) — §3–6, redundancy, precision and iterative-error proposal.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e792dd3cfcd8--h (2).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e792dd3cfcd8--h (2).pdf#page=2`) — §3–6, redundancy, precision and iterative-error proposal.
 
 Exact PDF SHA-256: `e792dd3cfcd8a9330547bd1275089eea47e2032c785efc6be5cd4c530e1470af`.
 
@@ -2333,7 +2339,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:9da8421e3dcfdd37:finite-cross-domain-closure`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9da8421e3dcf--Exhaustive_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (2).pdf#page=2>) — §2.2–4, cancellation, generalization and numerical verification.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9da8421e3dcf--Exhaustive_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (2).pdf#page=2`) — §2.2–4, cancellation, generalization and numerical verification.
 
 Exact PDF SHA-256: `9da8421e3dcfdd370b3ad1c9bfc810bdeddffee037658d53f02f700dd7c439e0`.
 
@@ -2360,7 +2366,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:d0b90cde3b60ae7a:finite-cross-domain-closure`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d0b90cde3b60--Exhaustive_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (3).pdf#page=2>) — §2.2–4, cancellation, generalization and numerical verification.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d0b90cde3b60--Exhaustive_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions_via_Recursive_Refinement (3).pdf#page=2`) — §2.2–4, cancellation, generalization and numerical verification.
 
 Exact PDF SHA-256: `d0b90cde3b60ae7a251de473665fde9cce563d56f5b6e36aa6a9c0a979550c15`.
 
@@ -2387,7 +2393,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:b4f7efaaa46ba313:general-group-newton-conditional-extension`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b4f7efaaa46b--Extension_of_the_Recursive_Refinement_Framework__A_Generalized_Approach_for_Automorphic_L_Functions (3).pdf#page=3>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b4f7efaaa46b--Extension_of_the_Recursive_Refinement_Framework__A_Generalized_Approach_for_Automorphic_L_Functions (3).pdf#page=4>) — §3.2 and §4.1.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b4f7efaaa46b--Extension_of_the_Recursive_Refinement_Framework__A_Generalized_Approach_for_Automorphic_L_Functions (3).pdf#page=3`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b4f7efaaa46b--Extension_of_the_Recursive_Refinement_Framework__A_Generalized_Approach_for_Automorphic_L_Functions (3).pdf#page=4`) — §3.2 and §4.1.
 
 Exact PDF SHA-256: `b4f7efaaa46ba3139c1c9b00dbf5c9f4b1b8b64b76c98c341c03333450147a74`.
 
@@ -2415,7 +2421,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:f09fd983368f179a:general-group-newton-conditional-extension`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f09fd983368f--Extension_of_the_Recursive_Refinement_Framework__A_Generalized_Approach_for_Automorphic_L_Functions (2).pdf#page=3>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f09fd983368f--Extension_of_the_Recursive_Refinement_Framework__A_Generalized_Approach_for_Automorphic_L_Functions (2).pdf#page=4>) — §3.2 and §4.1.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f09fd983368f--Extension_of_the_Recursive_Refinement_Framework__A_Generalized_Approach_for_Automorphic_L_Functions (2).pdf#page=3`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f09fd983368f--Extension_of_the_Recursive_Refinement_Framework__A_Generalized_Approach_for_Automorphic_L_Functions (2).pdf#page=4`) — §3.2 and §4.1.
 
 Exact PDF SHA-256: `f09fd983368f179a085adb2cbbeb706c3b02189d0b08c17aac4d9b51fc254eda`.
 
@@ -2443,7 +2449,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:2edefaf15e1f0563:averages-versus-bounded-sums`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=2>) — §3 concentration and §4–5 normalized averages/Fourier expansion.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=2`) — §3 concentration and §4–5 normalized averages/Fourier expansion.
 
 Exact PDF SHA-256: `2edefaf15e1f05637a0456ceee3f85ef497cdd0e05e83bf7bb1cee1f86b7210f`.
 
@@ -2472,7 +2478,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:90212cbba117fd1e:averages-versus-bounded-sums`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=2>) — §3 concentration and §4–5 normalized averages/Fourier expansion.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=2`) — §3 concentration and §4–5 normalized averages/Fourier expansion.
 
 Exact PDF SHA-256: `90212cbba117fd1ebecb3a3df349f3913e7d89cd13806416f8756c0394eeeaf8`.
 
@@ -2501,7 +2507,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:bbd0d7b6e47a4956:mixed-counting-budget`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bbd0d7b6e47a--Formalized_Error_Bound_for_Mixed_Automorphic_Forms (1).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bbd0d7b6e47a--Formalized_Error_Bound_for_Mixed_Automorphic_Forms (1).pdf#page=2>) — equations (3)–(7), decomposition and reported cumulative bounds.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bbd0d7b6e47a--Formalized_Error_Bound_for_Mixed_Automorphic_Forms (1).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bbd0d7b6e47a--Formalized_Error_Bound_for_Mixed_Automorphic_Forms (1).pdf#page=2`) — equations (3)–(7), decomposition and reported cumulative bounds.
 
 Exact PDF SHA-256: `bbd0d7b6e47a4956d604a42ca58c85c6512c84ea4e332f6961dde6fac118bbf0`.
 
@@ -2529,7 +2535,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:fb8ef6e87714e2c0:mixed-counting-budget`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fb8ef6e87714--Formalized_Error_Bound_for_Mixed_Automorphic_Forms (2).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fb8ef6e87714--Formalized_Error_Bound_for_Mixed_Automorphic_Forms (2).pdf#page=2>) — equations (3)–(7), decomposition and reported cumulative bounds.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fb8ef6e87714--Formalized_Error_Bound_for_Mixed_Automorphic_Forms (2).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fb8ef6e87714--Formalized_Error_Bound_for_Mixed_Automorphic_Forms (2).pdf#page=2`) — equations (3)–(7), decomposition and reported cumulative bounds.
 
 Exact PDF SHA-256: `fb8ef6e87714e2c0ce55bac722bfb92998984b6f11ae20d2d50273b3b94b887b`.
 
@@ -2557,7 +2563,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · Revision 1.1 · `idea:unpublished-v2:82f838ae5214a4e5`
 
-Paper: [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/82f838ae5214--P10.pdf#page=8>) — Theorem 6.1 (P10-T03).
+Paper: PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/82f838ae5214--P10.pdf#page=8`) — Theorem 6.1 (P10-T03).
 
 Exact PDF SHA-256: `82f838ae5214a4e5699c952b7b5871ffb0137a5a2deb5986d67bfd61cc2c9f93`.
 
@@ -2583,7 +2589,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · Revision 1.0 · `idea:unpublished-v2:fd60a933105e48a0`
 
-Paper: [PDF page 10](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fd60a933105e--P10.pdf#page=10>) — §6.2, Proposition 6.2 (P10-T06).
+Paper: PDF page 10 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fd60a933105e--P10.pdf#page=10`) — §6.2, Proposition 6.2 (P10-T06).
 
 Exact PDF SHA-256: `fd60a933105e48a09a21fac76d148c1ee4338e59d0055a02f96d1f336e49270a`.
 
@@ -2609,7 +2615,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · Version 3.1 · `idea:budget-v1`
 
-Paper: [PDF page 30](</Users/local/Desktop/MathematicsLibrary/ReviewQueue/1da080c60c76--Theta_Correlations_Formal_Source_Atlas_v3_1_prerelease.pdf#page=30>) — §14.2, equation (14.3); printed page 27.
+Paper: PDF page 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/ReviewQueue/1da080c60c76--Theta_Correlations_Formal_Source_Atlas_v3_1_prerelease.pdf#page=30`) — §14.2, equation (14.3); printed page 27.
 
 Exact PDF SHA-256: `1da080c60c761d9f72d0eca9c33d4c9daea0f3bf9239f7d5b75220542a647b86`.
 
@@ -2635,7 +2641,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:842cbac0475fb1d3:mixed-sum-rate`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/842cbac0475f--Generalization_of_Cross_Domain_Error_Cancellation_for_the_Recursive_Refinement_Framework (2).pdf#page=2>) — §4–6, concentration, Fourier averages and deterministic trend.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/842cbac0475f--Generalization_of_Cross_Domain_Error_Cancellation_for_the_Recursive_Refinement_Framework (2).pdf#page=2`) — §4–6, concentration, Fourier averages and deterministic trend.
 
 Exact PDF SHA-256: `842cbac0475fb1d3b5e4f6bdcd069ba48802a65df76270942b80def67e24e70d`.
 
@@ -2663,7 +2669,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:f6132a1d07a6b994:mixed-sum-rate`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f6132a1d07a6--Generalization_of_Cross_Domain_Error_Cancellation_for_the_Recursive_Refinement_Framework (3).pdf#page=2>) — §4–6, concentration, Fourier averages and deterministic trend.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f6132a1d07a6--Generalization_of_Cross_Domain_Error_Cancellation_for_the_Recursive_Refinement_Framework (3).pdf#page=2`) — §4–6, concentration, Fourier averages and deterministic trend.
 
 Exact PDF SHA-256: `f6132a1d07a6b994664d322ea8f45bf0f6d5ec610298520f7c81a61e1722b809`.
 
@@ -2691,7 +2697,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:32a0351d064351ce:conditional-newton-completeness`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/32a0351d0643--Global_Completeness_of_the_Recursive_Refinement_Framework__Ensuring_Coverage_of_All_Nontrivial_Zeros_for_Automorphic_L_Functions (3).pdf#page=3>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/32a0351d0643--Global_Completeness_of_the_Recursive_Refinement_Framework__Ensuring_Coverage_of_All_Nontrivial_Zeros_for_Automorphic_L_Functions (3).pdf#page=4>) — §3 theorem and §4 seed coverage/local convergence.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/32a0351d0643--Global_Completeness_of_the_Recursive_Refinement_Framework__Ensuring_Coverage_of_All_Nontrivial_Zeros_for_Automorphic_L_Functions (3).pdf#page=3`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/32a0351d0643--Global_Completeness_of_the_Recursive_Refinement_Framework__Ensuring_Coverage_of_All_Nontrivial_Zeros_for_Automorphic_L_Functions (3).pdf#page=4`) — §3 theorem and §4 seed coverage/local convergence.
 
 Exact PDF SHA-256: `32a0351d064351cef2d00c636510106834ed6ee5b375cba147e12b3f835900ce`.
 
@@ -2723,7 +2729,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:a807a35049c6c939:conditional-newton-completeness`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a807a35049c6--Global_Completeness_of_the_Recursive_Refinement_Framework__Ensuring_Coverage_of_All_Nontrivial_Zeros_for_Automorphic_L_Functions (2).pdf#page=3>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a807a35049c6--Global_Completeness_of_the_Recursive_Refinement_Framework__Ensuring_Coverage_of_All_Nontrivial_Zeros_for_Automorphic_L_Functions (2).pdf#page=4>) — §3 theorem and §4 seed coverage/local convergence.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a807a35049c6--Global_Completeness_of_the_Recursive_Refinement_Framework__Ensuring_Coverage_of_All_Nontrivial_Zeros_for_Automorphic_L_Functions (2).pdf#page=3`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a807a35049c6--Global_Completeness_of_the_Recursive_Refinement_Framework__Ensuring_Coverage_of_All_Nontrivial_Zeros_for_Automorphic_L_Functions (2).pdf#page=4`) — §3 theorem and §4 seed coverage/local convergence.
 
 Exact PDF SHA-256: `a807a35049c6c93936f62c65912af83d4edbf9e3031e08675c893df4d47ae94f`.
 
@@ -2755,7 +2761,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · Revision 1.1 · `idea:unpublished-v2:5d78840a4167367c`
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/5d78840a4167--P07-v1.1.pdf#page=6>) — Theorems 2.2–2.3 (P07-T01–T02).
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/5d78840a4167--P07-v1.1.pdf#page=6`) — Theorems 2.2–2.3 (P07-T01–T02).
 
 Exact PDF SHA-256: `5d78840a4167367c8515a9f4113cecf178e9891ab9218e6d8653983d37d780ee`.
 
@@ -2780,7 +2786,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:c0bf51c08edc65bf:diagonal-harmonic-operator-gap`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c0bf51c08edc--Harmonic__Modular__and_Spectral_Perspectives_on_the_Generalized_Riemann_Hypothesis (2).pdf#page=2>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c0bf51c08edc--Harmonic__Modular__and_Spectral_Perspectives_on_the_Generalized_Riemann_Hypothesis (2).pdf#page=4>) — §2 operator and appendices A1–A2, B1.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c0bf51c08edc--Harmonic__Modular__and_Spectral_Perspectives_on_the_Generalized_Riemann_Hypothesis (2).pdf#page=2`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c0bf51c08edc--Harmonic__Modular__and_Spectral_Perspectives_on_the_Generalized_Riemann_Hypothesis (2).pdf#page=4`) — §2 operator and appendices A1–A2, B1.
 
 Exact PDF SHA-256: `c0bf51c08edc65bf9f00dee13e6f9b018e18152ef32da81ac1f6c9f73a32c121`.
 
@@ -2814,7 +2820,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **conditional-fragment**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a470293a2cf9c81e-unweighted-energy-variational-gap).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=2>) — §3–4, proposed energy and growth/zero-location inference.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=2`) — §3–4, proposed energy and growth/zero-location inference.
 
 Exact PDF SHA-256: `a470293a2cf9c81e262e3fcbd522ce0a9dac7ecd36283510d11307416234fc3a`.
 
@@ -2841,7 +2847,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **conditional-fragment**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#eea3f78035e7071a-unweighted-energy-variational-gap).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=2>) — §3–4, proposed energy and growth/zero-location inference.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=2`) — §3–4, proposed energy and growth/zero-location inference.
 
 Exact PDF SHA-256: `eea3f78035e7071a252ec1fb933c198765d8846bc26aa600422ee6dd95d17201`.
 
@@ -2866,7 +2872,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:4ce8354f88dfb548:ill-conditioned-newton`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4ce8354f88df--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (2).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4ce8354f88df--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (2).pdf#page=3>) — §2.3–3 (results table), §4.1.1–4.1.4 (proposed repairs).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4ce8354f88df--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (2).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4ce8354f88df--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (2).pdf#page=3`) — §2.3–3 (results table), §4.1.1–4.1.4 (proposed repairs).
 
 Exact PDF SHA-256: `4ce8354f88dfb548e239b2e1fb84e78bc1d64401e8c8c50a78d31e42711796ac`.
 
@@ -2894,7 +2900,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:699c8f99c7ee8d9d:ill-conditioned-newton`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/699c8f99c7ee--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (4).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/699c8f99c7ee--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (4).pdf#page=3>) — §2.3–3 (results table), §4.1.1–4.1.4 (proposed repairs).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/699c8f99c7ee--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (4).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/699c8f99c7ee--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (4).pdf#page=3`) — §2.3–3 (results table), §4.1.1–4.1.4 (proposed repairs).
 
 Exact PDF SHA-256: `699c8f99c7ee8d9d7e21c80dee44f2a7838367ee7d437bb6729b4577c6b91892`.
 
@@ -2922,7 +2928,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:7597d0089f677a09:ill-conditioned-newton`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7597d0089f67--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (3).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7597d0089f67--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (3).pdf#page=3>) — §2.3–3 (results table), §4.1.1–4.1.4 (proposed repairs).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7597d0089f67--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (3).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7597d0089f67--Numerical_Investigation_of_Zeros_for_General_Linear_Groups_via_Recursive_Refinement (3).pdf#page=3`) — §2.3–3 (results table), §4.1.1–4.1.4 (proposed repairs).
 
 Exact PDF SHA-256: `7597d0089f677a09fb3e7c12b77d9b400e2897f91a74f5234050e973c51c12cb`.
 
@@ -2950,7 +2956,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · Revision 1.2 · `idea:unpublished-v2:3e667d873ecf5260`
 
-Paper: [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3e667d873ecf--P09 (2).pdf#page=8>) — Theorems 4.1–4.3 (P09-T01–T03).
+Paper: PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3e667d873ecf--P09 (2).pdf#page=8`) — Theorems 4.1–4.3 (P09-T01–T03).
 
 Exact PDF SHA-256: `3e667d873ecf526057217b7a0737b0d4aa4f0be3945e7b7bf333c998c3fe1c32`.
 
@@ -2977,7 +2983,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · Version 1.0 · `idea:unpublished-v2:7314fd7961144788`
 
-Paper: [PDF page 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7314fd796114--P09.pdf#page=9>) — Theorem 5.2 and Corollary 5.3 (P09-T08–T09).
+Paper: PDF page 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7314fd796114--P09.pdf#page=9`) — Theorem 5.2 and Corollary 5.3 (P09-T08–T09).
 
 Exact PDF SHA-256: `7314fd7961144788490a0f8756f0e4b843380fb9ba5599fd313538d123735e04`.
 
@@ -3004,7 +3010,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · Revision 1.1 · `idea:unpublished-v2:7d13a6d60790c964`
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7d13a6d60790--P09 (1).pdf#page=7>) — Theorem 4.2 (P09-T02).
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7d13a6d60790--P09 (1).pdf#page=7`) — Theorem 4.2 (P09-T02).
 
 Exact PDF SHA-256: `7d13a6d60790c9648400b2b46e7681acaae46c17bb6889e186378774a5c529ae`.
 
@@ -3031,7 +3037,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:c68ba3a04bf30a8c:rankin-selberg-rate-gap`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c68ba3a04bf3--Proof_of_Sublinear_Error_Bounds_for_Mixed_Automorphic_Forms_in_the_Recursive_Refinement_Framework (3).pdf#page=2>) — §3–5 equations (5)–(9).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c68ba3a04bf3--Proof_of_Sublinear_Error_Bounds_for_Mixed_Automorphic_Forms_in_the_Recursive_Refinement_Framework (3).pdf#page=2`) — §3–5 equations (5)–(9).
 
 Exact PDF SHA-256: `c68ba3a04bf30a8c3024ae1ed0447af1996a7be21778be2ed3488c2edfaed1fa`.
 
@@ -3059,7 +3065,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:ee2f27e03d6f1e93:rankin-selberg-rate-gap`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ee2f27e03d6f--Proof_of_Sublinear_Error_Bounds_for_Mixed_Automorphic_Forms_in_the_Recursive_Refinement_Framework (2).pdf#page=2>) — §3–5 equations (5)–(9).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ee2f27e03d6f--Proof_of_Sublinear_Error_Bounds_for_Mixed_Automorphic_Forms_in_the_Recursive_Refinement_Framework (2).pdf#page=2`) — §3–5 equations (5)–(9).
 
 Exact PDF SHA-256: `ee2f27e03d6f1e9399de33cdff8cdd913c5a2caad2dec54c99bac24db808f05b`.
 
@@ -3087,7 +3093,7 @@ Missing bridges and uncertainty:
 
 **unresolved** · Version 1.2 · `idea:unpublished-v2:8090de7e2acfd435`
 
-Paper: [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8090de7e2acf--P06 (3).pdf#page=5>) — Theorem 3.2 (P06-T01); detector quotient floor continues on PDF page 6.
+Paper: PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8090de7e2acf--P06 (3).pdf#page=5`) — Theorem 3.2 (P06-T01); detector quotient floor continues on PDF page 6.
 
 Exact PDF SHA-256: `8090de7e2acfd435f88540286bebcd5bec34169b42fd8f220dc9359d93613dfe`.
 
@@ -3111,7 +3117,7 @@ Missing bridges and uncertainty:
 
 **unresolved** · Version 1.1 · `idea:unpublished-v2:effab6e7692ecce7`
 
-Paper: [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/effab6e7692e--P06 (1).pdf#page=5>) — Theorems 3.1–3.2 (P06-T01–T02).
+Paper: PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/effab6e7692e--P06 (1).pdf#page=5`) — Theorems 3.1–3.2 (P06-T01–T02).
 
 Exact PDF SHA-256: `effab6e7692ecce7f8c0f4b5dd6c8bcebdfa15503356e672802e033b3b8f2bff`.
 
@@ -3137,7 +3143,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#3dda12b56a7f399b-modular-correction-product-faithfulness).
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=4>), [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=7>) — §1.1 and §2.3–2.4.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=4`), PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3dda12b56a7f--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (5).pdf#page=7`) — §1.1 and §2.3–2.4.
 
 Exact PDF SHA-256: `3dda12b56a7f399b7cc9317a73e3b7c4a13d9e0d96b0f5be0cd10665be3f643f`.
 
@@ -3163,7 +3169,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:1932675bd615b800:grh-assumed-seed-coverage`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1932675bd615--Recursive_Refinement_Framework_for_Automorphic_L_Functions__A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (3).pdf#page=3>), [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1932675bd615--Recursive_Refinement_Framework_for_Automorphic_L_Functions__A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (3).pdf#page=5>) — §3.2 and §6.1–6.2.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1932675bd615--Recursive_Refinement_Framework_for_Automorphic_L_Functions__A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (3).pdf#page=3`), PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1932675bd615--Recursive_Refinement_Framework_for_Automorphic_L_Functions__A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (3).pdf#page=5`) — §3.2 and §6.1–6.2.
 
 Exact PDF SHA-256: `1932675bd615b8008ecf95e3b47ae787fb8b30cac07b2ee3c4e86ae4c79a8a88`.
 
@@ -3195,7 +3201,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:23d6550b1f40bcc4:grh-assumed-seed-coverage`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/23d6550b1f40--Recursive_Refinement_Framework_for_Automorphic_L_Functions__A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (2).pdf#page=3>), [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/23d6550b1f40--Recursive_Refinement_Framework_for_Automorphic_L_Functions__A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (2).pdf#page=5>) — §3.2 and §6.1–6.2.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/23d6550b1f40--Recursive_Refinement_Framework_for_Automorphic_L_Functions__A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (2).pdf#page=3`), PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/23d6550b1f40--Recursive_Refinement_Framework_for_Automorphic_L_Functions__A_Complete_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (2).pdf#page=5`) — §3.2 and §6.1–6.2.
 
 Exact PDF SHA-256: `23d6550b1f40bcc497b2652484c3b143062b1af44b964112baabd6cee91a713a`.
 
@@ -3227,7 +3233,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:78bcdfb47cae4626:prime-forced-newton-flow`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/78bcdfb47cae--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (2).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/78bcdfb47cae--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (2).pdf#page=3>) — §3.2 flow and §4.1–4.3 solver repairs.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/78bcdfb47cae--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (2).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/78bcdfb47cae--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (2).pdf#page=3`) — §3.2 flow and §4.1–4.3 solver repairs.
 
 Exact PDF SHA-256: `78bcdfb47cae4626d7b9722976b286b98c73cec632d2f5112be4f588bf26fe13`.
 
@@ -3255,7 +3261,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:a2c2c68646426cc2:prime-forced-newton-flow`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a2c2c6864642--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (3).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a2c2c6864642--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (3).pdf#page=3>) — §3.2 flow and §4.1–4.3 solver repairs.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a2c2c6864642--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (3).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a2c2c6864642--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (3).pdf#page=3`) — §3.2 flow and §4.1–4.3 solver repairs.
 
 Exact PDF SHA-256: `a2c2c68646426cc2cbe96810740c276ef82028fb31c71cde5c88f4de00a722bb`.
 
@@ -3283,7 +3289,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:d33096c06d9a761e:prime-forced-newton-flow`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d33096c06d9a--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (4).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d33096c06d9a--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (4).pdf#page=3>) — §3.2 flow and §4.1–4.3 solver repairs.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d33096c06d9a--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (4).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d33096c06d9a--Recursive_Refinement_Framework_for_Complex_Function_Zeros__Addressing_Error_Propagation_through_a_PDE_Based_Approach (4).pdf#page=3`) — §3.2 flow and §4.1–4.3 solver repairs.
 
 Exact PDF SHA-256: `d33096c06d9a761e40980b7ef8d7dcf1bf5408576e131f4bc9796e03d6fd6ad6`.
 
@@ -3311,7 +3317,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:3f3479655925c16b:expanded-unified-error-stage-budget`
 
-Paper: [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3f3479655925--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GRH (4).pdf#page=28>) — §17.1–17.2 physical p28.
+Paper: PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3f3479655925--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GRH (4).pdf#page=28`) — §17.1–17.2 physical p28.
 
 Exact PDF SHA-256: `3f3479655925c16bc7c900b1513354bd6cb84e611b6a88ab7ecc3f58f8433899`.
 
@@ -3339,7 +3345,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:b2378b84c06705a6:expanded-unified-error-stage-budget`
 
-Paper: [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b2378b84c067--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GRH (3).pdf#page=28>) — §17.1–17.2 physical p28.
+Paper: PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b2378b84c067--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GRH (3).pdf#page=28`) — §17.1–17.2 physical p28.
 
 Exact PDF SHA-256: `b2378b84c06705a6e23cd961e1fa5b2f77747261ee1e1d135a0be00bf7b664f9`.
 
@@ -3367,7 +3373,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:edb47006b591c073:expanded-unified-error-stage-budget`
 
-Paper: [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/edb47006b591--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GRH (2).pdf#page=28>) — §17.1–17.2 physical p28.
+Paper: PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/edb47006b591--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GRH (2).pdf#page=28`) — §17.1–17.2 physical p28.
 
 Exact PDF SHA-256: `edb47006b591c073a4c8c6299ca3f3b94303eabce32124c19738f370ecbafa4d`.
 
@@ -3395,7 +3401,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:6ea827736246aa2f:mixed-clustering-resolvent-source`
 
-Paper: [PDF page 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6ea827736246--Residue_Clustering_Universality_and_the_Generalized_Riemann_Hypothesis (2).pdf#page=9>), [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6ea827736246--Residue_Clustering_Universality_and_the_Generalized_Riemann_Hypothesis (2).pdf#page=11>) — §3.3–3.4 and §4.5.
+Paper: PDF page 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6ea827736246--Residue_Clustering_Universality_and_the_Generalized_Riemann_Hypothesis (2).pdf#page=9`), PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6ea827736246--Residue_Clustering_Universality_and_the_Generalized_Riemann_Hypothesis (2).pdf#page=11`) — §3.3–3.4 and §4.5.
 
 Exact PDF SHA-256: `6ea827736246aa2f1edef6dc29e40a84859f24245ee69e31553a91464e87ea35`.
 
@@ -3427,7 +3433,7 @@ Current broader-search assessment: **repair-candidate**, main claim unresolved. 
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0b655e075a1e7798-dimension-decay-versus-fixed-source).
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=4>), [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=8>) — §2.2 and §5.1.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=4`), PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b655e075a1e--Residue_Clustering__Entropy_Suppression__and_Symmetry_Alignment__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis_ (2).pdf#page=8`) — §2.2 and §5.1.
 
 Exact PDF SHA-256: `0b655e075a1e7798d75d447ed4675e71e33f9ae731aaf12d1407478e9ce3a943`.
 
@@ -3453,7 +3459,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:d2b6ee97b7616704:forced-probability-flow-invariance`
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d2b6ee97b761--Residue_Modified_Dynamics__A_Complete_Monograph (2).pdf#page=7>) — §5.1–5.3.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d2b6ee97b761--Residue_Modified_Dynamics__A_Complete_Monograph (2).pdf#page=7`) — §5.1–5.3.
 
 Exact PDF SHA-256: `d2b6ee97b7616704736f63a1dbb851627984a530f991104083e2aa2837a37e4b`.
 
@@ -3481,7 +3487,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:18a548bf5910a8ff:growing-log-forcing-versus-dissipation`
 
-Paper: [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/18a548bf5910--Residue_Modified_Dynamics__A_Framework_for_the_Riemann_Hypothesis_and_Prime_Number_Analysis (5).pdf#page=11>), [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/18a548bf5910--Residue_Modified_Dynamics__A_Framework_for_the_Riemann_Hypothesis_and_Prime_Number_Analysis (5).pdf#page=28>) — §4.2 and §7.3.1–7.3.3.
+Paper: PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/18a548bf5910--Residue_Modified_Dynamics__A_Framework_for_the_Riemann_Hypothesis_and_Prime_Number_Analysis (5).pdf#page=11`), PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/18a548bf5910--Residue_Modified_Dynamics__A_Framework_for_the_Riemann_Hypothesis_and_Prime_Number_Analysis (5).pdf#page=28`) — §4.2 and §7.3.1–7.3.3.
 
 Exact PDF SHA-256: `18a548bf5910a8ff4f91affc78e46de701690c1e99432f2fb0cdaa6fa93eae7d`.
 
@@ -3509,7 +3515,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:da1b4b562aee1b0e:growing-log-forcing-versus-dissipation`
 
-Paper: [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/da1b4b562aee--Residue_Modified_Dynamics__A_Framework_for_the_Riemann_Hypothesis_and_Prime_Number_Analysis (4).pdf#page=11>), [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/da1b4b562aee--Residue_Modified_Dynamics__A_Framework_for_the_Riemann_Hypothesis_and_Prime_Number_Analysis (4).pdf#page=28>) — §4.2 and §7.3.1–7.3.3.
+Paper: PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/da1b4b562aee--Residue_Modified_Dynamics__A_Framework_for_the_Riemann_Hypothesis_and_Prime_Number_Analysis (4).pdf#page=11`), PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/da1b4b562aee--Residue_Modified_Dynamics__A_Framework_for_the_Riemann_Hypothesis_and_Prime_Number_Analysis (4).pdf#page=28`) — §4.2 and §7.3.1–7.3.3.
 
 Exact PDF SHA-256: `da1b4b562aee1b0ed832fa600f512dba6d75e135f56adc47921ab0efed3c4616`.
 
@@ -3537,7 +3543,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:23f56303f4992c95:entropy-density-and-motivic-normalization`
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/23f56303f499--Residue_Modified_Dynamics__A_Rigorous_Framework_for_Proving_the_Riemann_Hypothesis_and_Extending_to_L_Functions (14).pdf#page=6>), [PDF page 19](</Users/local/Desktop/MathematicsLibrary/NumberTheory/23f56303f499--Residue_Modified_Dynamics__A_Rigorous_Framework_for_Proving_the_Riemann_Hypothesis_and_Extending_to_L_Functions (14).pdf#page=19>) — §2.2 and §4.2.1.
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/23f56303f499--Residue_Modified_Dynamics__A_Rigorous_Framework_for_Proving_the_Riemann_Hypothesis_and_Extending_to_L_Functions (14).pdf#page=6`), PDF page 19 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/23f56303f499--Residue_Modified_Dynamics__A_Rigorous_Framework_for_Proving_the_Riemann_Hypothesis_and_Extending_to_L_Functions (14).pdf#page=19`) — §2.2 and §4.2.1.
 
 Exact PDF SHA-256: `23f56303f4992c954214567a075e25cd9927ce9565452c26a5715fe75ad8d6aa`.
 
@@ -3565,7 +3571,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:17ea7d718265c64c:short-entropy-weak-formulation-gap`
 
-Paper: [PDF page 12](</Users/local/Desktop/MathematicsLibrary/NumberTheory/17ea7d718265--Residue_Modified_Dynamics__A_Rigorous_Framework_for_Proving_the_Riemann_Hypothesis_and_Extending_to_L_Functions (13).pdf#page=12>) — §3.3.3 physical p12.
+Paper: PDF page 12 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/17ea7d718265--Residue_Modified_Dynamics__A_Rigorous_Framework_for_Proving_the_Riemann_Hypothesis_and_Extending_to_L_Functions (13).pdf#page=12`) — §3.3.3 physical p12.
 
 Exact PDF SHA-256: `17ea7d718265c64c9acfde1dfc81b87e1996b3be1595a5160f0bc4348c2e403e`.
 
@@ -3593,7 +3599,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:3b738b0892ef6b08:long-contour-residue-forcing-gap`
 
-Paper: [PDF page 12](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3b738b0892ef--Residue_Modified_Dynamics__A_Rigorous_Framework_for_the_Riemann_Hypothesis_and_Generalized_L_Functions (9).pdf#page=12>), [PDF page 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3b738b0892ef--Residue_Modified_Dynamics__A_Rigorous_Framework_for_the_Riemann_Hypothesis_and_Generalized_L_Functions (9).pdf#page=15>) — §4.4.1 and §4.5, physical pp12,15.
+Paper: PDF page 12 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3b738b0892ef--Residue_Modified_Dynamics__A_Rigorous_Framework_for_the_Riemann_Hypothesis_and_Generalized_L_Functions (9).pdf#page=12`), PDF page 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3b738b0892ef--Residue_Modified_Dynamics__A_Rigorous_Framework_for_the_Riemann_Hypothesis_and_Generalized_L_Functions (9).pdf#page=15`) — §4.4.1 and §4.5, physical pp12,15.
 
 Exact PDF SHA-256: `3b738b0892ef6b0838b98cffe91f02717df9d9d11e10b2df116646a937f6ca2e`.
 
@@ -3621,7 +3627,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:aaaaa97be007be3b:universal-correction-rate-gap`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/aaaaa97be007--Rigorous_Proof_of_Universality_of_Phase_Correction_and_Cross_Domain_Consistency_in_the_Recursive_Refinement_Framework (1).pdf#page=3>) — §2–3 probability bounds and §4 ergodic conclusion.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/aaaaa97be007--Rigorous_Proof_of_Universality_of_Phase_Correction_and_Cross_Domain_Consistency_in_the_Recursive_Refinement_Framework (1).pdf#page=3`) — §2–3 probability bounds and §4 ergodic conclusion.
 
 Exact PDF SHA-256: `aaaaa97be007be3b4734d3b85b8724a6a0ab698da20608998b95b1b5efa3e858`.
 
@@ -3653,7 +3659,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:7a3b5241aa951e7d:analytic-reconstruction-obligations`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7a3b5241aa95--Analysis (2).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7a3b5241aa95--Analysis (2).pdf#page=2>) — Phase 1 §2; Phase 2 §3–4.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7a3b5241aa95--Analysis (2).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7a3b5241aa95--Analysis (2).pdf#page=2`) — Phase 1 §2; Phase 2 §3–4.
 
 Exact PDF SHA-256: `7a3b5241aa951e7d108db82d00b2fbdbcf92215571b97818f606fb294fd3311b`.
 
@@ -3681,7 +3687,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:be236946ca6535d7:analytic-reconstruction-obligations`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/be236946ca65--Analysis (1).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/be236946ca65--Analysis (1).pdf#page=2>) — Phase 1 §2; Phase 2 §3–4.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/be236946ca65--Analysis (1).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/be236946ca65--Analysis (1).pdf#page=2`) — Phase 1 §2; Phase 2 §3–4.
 
 Exact PDF SHA-256: `be236946ca6535d76ca2f7e8ba1246c413626d2561e4290ef7d43a3d1378ae17`.
 
@@ -3709,7 +3715,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:830991e8736e5912:modular-potential-spectral-obstructions`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/830991e8736e--Function_space.pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/830991e8736e--Function_space.pdf#page=3>) — §2.3–5 potential, self-adjointness and functorial constraint.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/830991e8736e--Function_space.pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/830991e8736e--Function_space.pdf#page=3`) — §2.3–5 potential, self-adjointness and functorial constraint.
 
 Exact PDF SHA-256: `830991e8736e59122794aa72bb7f21ff63a84aea18f178f65c3fad78dd526de0`.
 
@@ -3737,7 +3743,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:b48dc6fea6c09cc8:kernel-decay-and-fourier-domain`
 
-Paper: [PDF page 32](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b48dc6fea6c0--Spectral_Rigidity_and_the_Riemann_Hypothesis__Copy_ (1).pdf#page=32>), [PDF page 57](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b48dc6fea6c0--Spectral_Rigidity_and_the_Riemann_Hypothesis__Copy_ (1).pdf#page=57>) — §3.33–3.35 and §4.4.1.
+Paper: PDF page 32 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b48dc6fea6c0--Spectral_Rigidity_and_the_Riemann_Hypothesis__Copy_ (1).pdf#page=32`), PDF page 57 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b48dc6fea6c0--Spectral_Rigidity_and_the_Riemann_Hypothesis__Copy_ (1).pdf#page=57`) — §3.33–3.35 and §4.4.1.
 
 Exact PDF SHA-256: `b48dc6fea6c09cc8390ec942b304a5f5bdeab67001e765661affb9b772e2f4e9`.
 
@@ -3765,7 +3771,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:316a4998c920436f:prime-summability-and-operator-contradiction`
 
-Paper: [PDF page 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/316a4998c920--Spectral_Rigidity_and_the_Riemann_Hypothesis__From_Functorial_Constraints_to_Geometric_Flow_Dynamics__Copy_ (6).pdf#page=9>), [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/316a4998c920--Spectral_Rigidity_and_the_Riemann_Hypothesis__From_Functorial_Constraints_to_Geometric_Flow_Dynamics__Copy_ (6).pdf#page=11>) — §2.3.1 and §2.4–2.5.
+Paper: PDF page 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/316a4998c920--Spectral_Rigidity_and_the_Riemann_Hypothesis__From_Functorial_Constraints_to_Geometric_Flow_Dynamics__Copy_ (6).pdf#page=9`), PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/316a4998c920--Spectral_Rigidity_and_the_Riemann_Hypothesis__From_Functorial_Constraints_to_Geometric_Flow_Dynamics__Copy_ (6).pdf#page=11`) — §2.3.1 and §2.4–2.5.
 
 Exact PDF SHA-256: `316a4998c920436fabf20d84466624b0d9c416ee02d73478583d19025c345eda`.
 
@@ -3797,7 +3803,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:7d59544a62e8fbcc:small-spectral-shift-versus-isospectrality`
 
-Paper: [PDF page 25](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7d59544a62e8--Spectral_Rigidity_and_the_Riemann_Hypothesis (2).pdf#page=25>) — §3.5.4 physical p25.
+Paper: PDF page 25 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7d59544a62e8--Spectral_Rigidity_and_the_Riemann_Hypothesis (2).pdf#page=25`) — §3.5.4 physical p25.
 
 Exact PDF SHA-256: `7d59544a62e8fbcc7e09ce1e90b561bc44861e473305581faca66ccb721b3fb1`.
 
@@ -3825,7 +3831,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:7b94750aa08236ce:selfadjoint-versus-semigroup-generator`
 
-Paper: [PDF page 28](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7b94750aa082--Spectral_Operator_and_Stability_Analysis_in_a_PDE_Approach_to_the_Riemann_Hypothesis (1).pdf#page=28>) — §5.1–5.2 physical p28.
+Paper: PDF page 28 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7b94750aa082--Spectral_Operator_and_Stability_Analysis_in_a_PDE_Approach_to_the_Riemann_Hypothesis (1).pdf#page=28`) — §5.1–5.2 physical p28.
 
 Exact PDF SHA-256: `7b94750aa08236ce9f81bae781b6e726e87bbfbe4294c818e68a061e18283d54`.
 
@@ -3853,7 +3859,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:1ca08b824e9d9d31:extension-existence-versus-uniqueness`
 
-Paper: [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1ca08b824e9d--Spectral__Trace__and_Entropic_Approaches_to_the_Riemann_Hypothesis (1).pdf#page=11>), [PDF page 33](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1ca08b824e9d--Spectral__Trace__and_Entropic_Approaches_to_the_Riemann_Hypothesis (1).pdf#page=33>) — §4.1–4.2 and appendixC.2.
+Paper: PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1ca08b824e9d--Spectral__Trace__and_Entropic_Approaches_to_the_Riemann_Hypothesis (1).pdf#page=11`), PDF page 33 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1ca08b824e9d--Spectral__Trace__and_Entropic_Approaches_to_the_Riemann_Hypothesis (1).pdf#page=33`) — §4.1–4.2 and appendixC.2.
 
 Exact PDF SHA-256: `1ca08b824e9d9d310a4c3e8c966ae6386b6869ea001707fbbfd8b53912554862`.
 
@@ -3885,7 +3891,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:12f9479a7fa2f6dc:trace-truncation-faithfulness`
 
-Paper: [PDF page 45](</Users/local/Desktop/MathematicsLibrary/NumberTheory/12f9479a7fa2--Spectral__Trace__and_Entropic_Approaches_to_the_Riemann_Hypothesis__A_Unified_Mathematical_Framework (3).pdf#page=45>), [PDF page 70](</Users/local/Desktop/MathematicsLibrary/NumberTheory/12f9479a7fa2--Spectral__Trace__and_Entropic_Approaches_to_the_Riemann_Hypothesis__A_Unified_Mathematical_Framework (3).pdf#page=70>) — §3.1.16 and §5.3.4.
+Paper: PDF page 45 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/12f9479a7fa2--Spectral__Trace__and_Entropic_Approaches_to_the_Riemann_Hypothesis__A_Unified_Mathematical_Framework (3).pdf#page=45`), PDF page 70 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/12f9479a7fa2--Spectral__Trace__and_Entropic_Approaches_to_the_Riemann_Hypothesis__A_Unified_Mathematical_Framework (3).pdf#page=70`) — §3.1.16 and §5.3.4.
 
 Exact PDF SHA-256: `12f9479a7fa2f6dc158a505b634e9a300a61e473b80abe195daa368da3b40f36`.
 
@@ -3913,7 +3919,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:3a7f607e8474812e:purity-filter-versus-source-spectrum`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3a7f607e8474--Strengthening_Noncommutative_Trace_Formulas_to_Enforce_Automorphic_Purity (1).pdf#page=3>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3a7f607e8474--Strengthening_Noncommutative_Trace_Formulas_to_Enforce_Automorphic_Purity (1).pdf#page=4>) — §2.3–3.2 kernel modification.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3a7f607e8474--Strengthening_Noncommutative_Trace_Formulas_to_Enforce_Automorphic_Purity (1).pdf#page=3`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3a7f607e8474--Strengthening_Noncommutative_Trace_Formulas_to_Enforce_Automorphic_Purity (1).pdf#page=4`) — §2.3–3.2 kernel modification.
 
 Exact PDF SHA-256: `3a7f607e8474812e093ddf096ab7d0bfbfa3a121375d35e5cb4b2d3303b88d3f`.
 
@@ -3941,7 +3947,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:16cf7b05e265e9f0:symmetry-versus-energy-localization`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/16cf7b05e265--Supplemental (1).pdf#page=2>) — §2–3.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/16cf7b05e265--Supplemental (1).pdf#page=2`) — §2–3.
 
 Exact PDF SHA-256: `16cf7b05e265e9f0d721cf9e0f7a9d3f2ff912d9e30a51708afdfeb9aabe351e`.
 
@@ -3969,7 +3975,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:7ea0a699f04c39a3:symmetry-versus-energy-localization`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7ea0a699f04c--Supplemental (2).pdf#page=2>) — §2–3.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7ea0a699f04c--Supplemental (2).pdf#page=2`) — §2–3.
 
 Exact PDF SHA-256: `7ea0a699f04c39a3e5b5b3f3528935cf4c645fe40229f754140cae7fab724db2`.
 
@@ -3997,7 +4003,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:9de988e4121b2fc7:bounded-selfadjoint-powers-not-convergent`
 
-Paper: [PDF page 27](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9de988e4121b--The_Harmonic_Field_Theory__Echoes_of_Infinity_in_Mathematics_and_Physics (2).pdf#page=27>), [PDF page 97](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9de988e4121b--The_Harmonic_Field_Theory__Echoes_of_Infinity_in_Mathematics_and_Physics (2).pdf#page=97>) — physical pp27 and97, printed3/73.
+Paper: PDF page 27 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9de988e4121b--The_Harmonic_Field_Theory__Echoes_of_Infinity_in_Mathematics_and_Physics (2).pdf#page=27`), PDF page 97 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9de988e4121b--The_Harmonic_Field_Theory__Echoes_of_Infinity_in_Mathematics_and_Physics (2).pdf#page=97`) — physical pp27 and97, printed3/73.
 
 Exact PDF SHA-256: `9de988e4121b2fc7b629dd4b8e6122d7ce4defb3121e220dc54dbde1996e98e3`.
 
@@ -4031,7 +4037,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **conditional-fragment**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#e49b4fba58be2cb5-theta-one-excitation-authority-boundary).
 
-Paper: [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=11>), [PDF page 13](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=13>) — §4 remark4.2, §5.2 and §6 physical pp11/13.
+Paper: PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=11`), PDF page 13 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e49b4fba58be--A02-v1.1 (1).pdf#page=13`) — §4 remark4.2, §5.2 and §6 physical pp11/13.
 
 Exact PDF SHA-256: `e49b4fba58be2cb543fdc099eb8f96249af14840eda564fc78847d2cda7dfa71`.
 
@@ -4057,7 +4063,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:1e09832dad4d681c:topological-coverage-and-conditioning`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1e09832dad4d--Topological_and_Spectral_Consistency_in_the_Recursive_Refinement_Framework__Ensuring_Robustness_Across_Spectral_Configurations (3).pdf#page=3>) — §2.2–3.2 physical p3.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1e09832dad4d--Topological_and_Spectral_Consistency_in_the_Recursive_Refinement_Framework__Ensuring_Robustness_Across_Spectral_Configurations (3).pdf#page=3`) — §2.2–3.2 physical p3.
 
 Exact PDF SHA-256: `1e09832dad4d681c5bd0140bb6cb0983b14c5fd507d77a880ed457fb80245e32`.
 
@@ -4089,7 +4095,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:69639a12cd8f9049:topological-coverage-and-conditioning`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/69639a12cd8f--Topological_and_Spectral_Consistency_in_the_Recursive_Refinement_Framework__Ensuring_Robustness_Across_Spectral_Configurations (4).pdf#page=3>) — §2.2–3.2 physical p3.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/69639a12cd8f--Topological_and_Spectral_Consistency_in_the_Recursive_Refinement_Framework__Ensuring_Robustness_Across_Spectral_Configurations (4).pdf#page=3`) — §2.2–3.2 physical p3.
 
 Exact PDF SHA-256: `69639a12cd8f9049c66328d9d59016f9d6812faa46371d502235a24d80956e86`.
 
@@ -4121,7 +4127,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:c93245e32add6454:wavelet-injectivity-and-functorial-transfer`
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c93245e32add--Wavelet_Dynamics_and_a_Universal_Framework_for_Langlands_Functoriality_and_Duality (2).pdf#page=7>) — §4.1–4.3 physical p7.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c93245e32add--Wavelet_Dynamics_and_a_Universal_Framework_for_Langlands_Functoriality_and_Duality (2).pdf#page=7`) — §4.1–4.3 physical p7.
 
 Exact PDF SHA-256: `c93245e32add6454c2bb82c16aa8b2af46a7c1fd22657028ceba0a23e134b209`.
 
@@ -4149,7 +4155,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:9ac314e4a2df666d:operator-limit-equation-compilation`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9ac314e4a2df--equations_ (1).pdf#page=3>) — Eq.17–24 with Eq.13–15.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9ac314e4a2df--equations_ (1).pdf#page=3`) — Eq.17–24 with Eq.13–15.
 
 Exact PDF SHA-256: `9ac314e4a2df666d471ac1ba115f30079f4db136732595e6eac86b9994c95409`.
 
@@ -4189,7 +4195,7 @@ Current broader-search assessment: **analogy-only**, main claim unresolved. [Fur
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0db38ec749b78bd0-derived-vanishing-zero-comparison).
 
-Paper: [PDF page 13](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=13>), [PDF page 17](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=17>) — §3.1.2 and §3.2.3–3.2.4.
+Paper: PDF page 13 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=13`), PDF page 17 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0db38ec749b7--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (2).pdf#page=17`) — §3.1.2 and §3.2.3–3.2.4.
 
 Exact PDF SHA-256: `0db38ec749b78bd0d0974e91800620dd6c29ee9abd220c5cda97d7a875067ea4`.
 
@@ -4219,7 +4225,7 @@ Current broader-search assessment: **analogy-only**, main claim unresolved. [Fur
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a9d476a5336e2064-derived-vanishing-zero-comparison).
 
-Paper: [PDF page 13](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=13>), [PDF page 17](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=17>) — §3.1.2 and §3.2.3–3.2.4.
+Paper: PDF page 13 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=13`), PDF page 17 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a9d476a5336e--A_Derived_Geometric_Framework_for_the_Riemann_Hypothesis (3).pdf#page=17`) — §3.1.2 and §3.2.3–3.2.4.
 
 Exact PDF SHA-256: `a9d476a5336e2064cc95fac93c8fe944996b6a9400fcfa497aed62709bb5610c`.
 
@@ -4249,7 +4255,7 @@ Current broader-search assessment: **analogy-only**, main claim unresolved. [Fur
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#34ebca88596ffc41-twisted-vanishing-versus-untwisted-source).
 
-Paper: [PDF page 18](</Users/local/Desktop/MathematicsLibrary/NumberTheory/34ebca88596f--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (5).pdf#page=18>) — §2.8.3–2.8.4, with §1.2.5.
+Paper: PDF page 18 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/34ebca88596f--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (5).pdf#page=18`) — §2.8.3–2.8.4, with §1.2.5.
 
 Exact PDF SHA-256: `34ebca88596ffc4150a4cea62fddd8158b07775c84bf4211abe5eb18323e1a55`.
 
@@ -4279,7 +4285,7 @@ Current broader-search assessment: **analogy-only**, main claim unresolved. [Fur
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#50a2340db4a9dbfa-twisted-vanishing-versus-untwisted-source).
 
-Paper: [PDF page 18](</Users/local/Desktop/MathematicsLibrary/NumberTheory/50a2340db4a9--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (6).pdf#page=18>) — §2.8.3–2.8.4, with §1.2.5.
+Paper: PDF page 18 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/50a2340db4a9--A_Derived_Geometric_Proof_of_the_Riemann_Hypothesis (6).pdf#page=18`) — §2.8.3–2.8.4, with §1.2.5.
 
 Exact PDF SHA-256: `50a2340db4a9dbfae23e0c180d2518deac6705de942a1b8f737764165960367d`.
 
@@ -4309,7 +4315,7 @@ Current broader-search assessment: **analogy-only**, main claim unresolved. [Fur
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#8a8dc8e29d327ad4-geometric-functorial-alignment-outline).
 
-Paper: [PDF page 30](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=30>), [PDF page 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=40>) — physical pp30 and40.
+Paper: PDF page 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=30`), PDF page 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8a8dc8e29d32--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (2).pdf#page=40`) — physical pp30 and40.
 
 Exact PDF SHA-256: `8a8dc8e29d327ad4e1d95b5215d7dddd78db2cd04e1a73c9ebb43967c009e1f4`.
 
@@ -4339,7 +4345,7 @@ Current broader-search assessment: **analogy-only**, main claim unresolved. [Fur
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#efe16f86d1739c61-geometric-functorial-alignment-outline).
 
-Paper: [PDF page 30](</Users/local/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=30>), [PDF page 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=40>) — physical pp30 and40.
+Paper: PDF page 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=30`), PDF page 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/efe16f86d173--A_Geometric_Framework_for_the_Grand_Riemann_Hypothesis (3).pdf#page=40`) — physical pp30 and40.
 
 Exact PDF SHA-256: `efe16f86d1739c618c8b46e9d42eb33dd15a4d75be2119aa18f14f7018648ee4`.
 
@@ -4365,7 +4371,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:1b779747773440f7:reflection-is-not-chain-differential`
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1b7797477734--A_Spectral_Homological_Proof_of_the_Riemann_Hypothesis.pdf#page=4>), [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1b7797477734--A_Spectral_Homological_Proof_of_the_Riemann_Hypothesis.pdf#page=6>) — §3.1.1–3.2 and §4.3.1.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1b7797477734--A_Spectral_Homological_Proof_of_the_Riemann_Hypothesis.pdf#page=4`), PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1b7797477734--A_Spectral_Homological_Proof_of_the_Riemann_Hypothesis.pdf#page=6`) — §3.1.1–3.2 and §4.3.1.
 
 Exact PDF SHA-256: `1b779747773440f7f5bfbf5d9ec18092337812aaf85045bfd786885b7db55a57`.
 
@@ -4395,7 +4401,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#b4653d8949e0c7c3-residue-modified-ricci-arithmetic-gap).
 
-Paper: [PDF page 30](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=30>), [PDF page 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=40>) — §2.4.2–2.4.3 and §4.1.3.
+Paper: PDF page 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=30`), PDF page 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b4653d8949e0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (5).pdf#page=40`) — §2.4.2–2.4.3 and §4.1.3.
 
 Exact PDF SHA-256: `b4653d8949e0c7c30a15382e86055484c9207fc4e1b09e020765c54e230efc75`.
 
@@ -4423,7 +4429,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#c5773b3ef5f0157d-residue-modified-ricci-arithmetic-gap).
 
-Paper: [PDF page 30](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=30>), [PDF page 40](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=40>) — §2.4.2–2.4.3 and §4.1.3.
+Paper: PDF page 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=30`), PDF page 40 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c5773b3ef5f0--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (4).pdf#page=40`) — §2.4.2–2.4.3 and §4.1.3.
 
 Exact PDF SHA-256: `c5773b3ef5f0157d0060210d9865d2aa117c863d978512dcf2107d2606f344f0`.
 
@@ -4449,7 +4455,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:bd7625fbe568d814:ricci-gauge-symmetry-analogy`
 
-Paper: [PDF page 25](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd7625fbe568--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (4).pdf#page=25>) — §4.2, physical p25.
+Paper: PDF page 25 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd7625fbe568--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (4).pdf#page=25`) — §4.2, physical p25.
 
 Exact PDF SHA-256: `bd7625fbe568d8143d335fb3a58e68637de690bf9a70cdc64cd3e9214d3bf1fe`.
 
@@ -4477,7 +4483,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:fb669f054c054c1f:ricci-gauge-symmetry-analogy`
 
-Paper: [PDF page 25](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fb669f054c05--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (6).pdf#page=25>) — §4.2, physical p25.
+Paper: PDF page 25 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fb669f054c05--A_Unified_Theoretical_Framework_for_the_Proof_of_the_Riemann_Hypothesis_and_Its_Generalizations (6).pdf#page=25`) — §4.2, physical p25.
 
 Exact PDF SHA-256: `fb669f054c054c1f02af2b7e21e1a91c1457b344f0a48f6ec6e5878c1a8275c2`.
 
@@ -4509,7 +4515,7 @@ Current broader-search assessment: **conditional-fragment**, main claim unresolv
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#4eae7c78f226245e-joint-runner-orbit).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=2>) — §2–4, relative-speed reformulation and lattice/volume argument.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4eae7c78f226--Absolute_Proof_of_the_Lonely_Runner_Conjecture (2).pdf#page=2`) — §2–4, relative-speed reformulation and lattice/volume argument.
 
 Exact PDF SHA-256: `4eae7c78f226245e5deb42d6e95692a7c97a349905aaf57f88cf6fd9ac843fb8`.
 
@@ -4541,7 +4547,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#ec2b9a77a14f5ea8-distance-reduction).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=2>) — §2 (coordinate reduction), §3–4 (quartic and higher-genus argument).
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/GeometryTopology/ec2b9a77a14f--Rational_Distance (2).pdf#page=2`) — §2 (coordinate reduction), §3–4 (quartic and higher-genus argument).
 
 Exact PDF SHA-256: `ec2b9a77a14f5ea8eaaf560e4fb9dba0e32d3b904d66b5be458310e4abf642f8`.
 
@@ -4568,7 +4574,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#35e6de86f6760712-boundary-localization-positivity-gap).
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/ReviewQueue/35e6de86f676--B (8).pdf#page=3>) — §3–5.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/ReviewQueue/35e6de86f676--B (8).pdf#page=3`) — §3–5.
 
 Exact PDF SHA-256: `35e6de86f676071284351f0d26056fad444bc62fc2ca9c89b7675e2f6ae0eb07`.
 
@@ -4604,7 +4610,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#796ba01d4a02a5ba-boundary-positivity-outline).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2>) — §4–7, localization, Euler positivity and numerical-error outline.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2`) — §4–7, localization, Euler positivity and numerical-error outline.
 
 Exact PDF SHA-256: `796ba01d4a02a5ba331fbe88ee80dbd4bd3e669712c11d6de4530a0e063c9362`.
 
@@ -4632,7 +4638,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#74fdf55b94927e16-compactification-gamma-cancellation).
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/74fdf55b9492--s (1).pdf#page=4>) — §3.1–3.3.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/74fdf55b9492--s (1).pdf#page=4`) — §3.1–3.3.
 
 Exact PDF SHA-256: `74fdf55b94927e1609651c92c7aa16e3259756888357c1c6ec6bc1cf7d86808c`.
 
@@ -4660,7 +4666,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#b9cfb67e8d0ee43e-compactification-gamma-cancellation).
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b9cfb67e8d0e--s (2).pdf#page=4>) — §3.1–3.3.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b9cfb67e8d0e--s (2).pdf#page=4`) — §3.1–3.3.
 
 Exact PDF SHA-256: `b9cfb67e8d0ee43e547c959e19507437c26c7f7a77fb348b04187db76a52a1c2`.
 
@@ -4688,7 +4694,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **repair-candidate**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#c49188e01b3c6072-expanded-compactification-gamma-cancellation).
 
-Paper: [PDF page 10](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c49188e01b3c--Compactification_Symmetry_and_the_Riemann_Hypothesis (6).pdf#page=10>) — §3.2–3.3 physical p10.
+Paper: PDF page 10 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c49188e01b3c--Compactification_Symmetry_and_the_Riemann_Hypothesis (6).pdf#page=10`) — §3.2–3.3 physical p10.
 
 Exact PDF SHA-256: `c49188e01b3c60729262a9ac0ccc2764daca423a183073e3db4d09c8551c3537`.
 
@@ -4714,7 +4720,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:2d54e82145b7bb24:prime-topology-filtration`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2d54e82145b7--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (2).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2d54e82145b7--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (2).pdf#page=2>) — §2.3 and §3.2, filtration and Betti-number interpretation.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2d54e82145b7--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (2).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2d54e82145b7--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (2).pdf#page=2`) — §2.3 and §3.2, filtration and Betti-number interpretation.
 
 Exact PDF SHA-256: `2d54e82145b7bb249ebf74c5119e718eeb47b852c8cbdd65933d6847ba28f7e8`.
 
@@ -4741,7 +4747,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:69efc373623eef0b:prime-topology-filtration`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/69efc373623e--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (3).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/69efc373623e--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (3).pdf#page=2>) — §2.3 and §3.2, filtration and Betti-number interpretation.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/69efc373623e--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (3).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/69efc373623e--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (3).pdf#page=2`) — §2.3 and §3.2, filtration and Betti-number interpretation.
 
 Exact PDF SHA-256: `69efc373623eef0ba9aa431a99a177d74852dde9be4f416a18f73f0ccf6a633f`.
 
@@ -4768,7 +4774,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:6f6d0991e98db177:prime-topology-filtration`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6f6d0991e98d--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (4).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6f6d0991e98d--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (4).pdf#page=2>) — §2.3 and §3.2, filtration and Betti-number interpretation.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6f6d0991e98d--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (4).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6f6d0991e98d--Geometric_and_Topological_Structures_in_Prime_Distributions__A_Non_Linear_Wave_Model_Approach (4).pdf#page=2`) — §2.3 and §3.2, filtration and Betti-number interpretation.
 
 Exact PDF SHA-256: `6f6d0991e98db177f9461a9cd01076ed2910f32f69c9d5f049452e85f79d9a4f`.
 
@@ -4795,7 +4801,7 @@ Missing bridges and uncertainty:
 
 **unresolved** · Version 1.0 · `idea:unpublished-v2:dc23aae7df721289`
 
-Paper: [PDF page 13](</Users/local/Desktop/MathematicsLibrary/NumberTheory/dc23aae7df72--Projective-Equality-and-Two-Fiber-Geometry-Monograph-v1.0.pdf#page=13>) — Theorem 1.3 (Abelian two-fiber quotient).
+Paper: PDF page 13 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/dc23aae7df72--Projective-Equality-and-Two-Fiber-Geometry-Monograph-v1.0.pdf#page=13`) — Theorem 1.3 (Abelian two-fiber quotient).
 
 Exact PDF SHA-256: `dc23aae7df721289b4be31f312512678a48b72a26ddf6bcf01411d49fe0f8a5e`.
 
@@ -4817,7 +4823,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · Version 1.0 · `idea:unpublished-v2:7ca107df41bb1142`
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7ca107df41bb--P08.pdf#page=6>) — Theorem 3.1 (P08-T01).
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7ca107df41bb--P08.pdf#page=6`) — Theorem 3.1 (P08-T01).
 
 Exact PDF SHA-256: `7ca107df41bb11423b8a56f83294fb405613edf140d063747942c80e12539d1e`.
 
@@ -4842,7 +4848,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · Revision 1.1 · `idea:unpublished-v2:a951ebf04f797d1d`
 
-Paper: [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a951ebf04f79--P08 (1).pdf#page=5>) — §3, Definition 3.1 (P08-D02); Theorem 3.2 (P08-T02).
+Paper: PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a951ebf04f79--P08 (1).pdf#page=5`) — §3, Definition 3.1 (P08-D02); Theorem 3.2 (P08-T02).
 
 Exact PDF SHA-256: `a951ebf04f797d1d52dd22446d83792a42e621036164ffcc7f643c44c16143d5`.
 
@@ -4869,7 +4875,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#1973205b71af0113-foundational-correspondence-is-premise).
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=7>), [PDF page 20](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=20>) — §4.1 and §14.3.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=7`), PDF page 20 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1973205b71af--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (13).pdf#page=20`) — §4.1 and §14.3.
 
 Exact PDF SHA-256: `1973205b71af01131e5141e99262073fdfa8692df913bd0581af5f324a16f44b`.
 
@@ -4897,7 +4903,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#fc037812efa393af-foundational-correspondence-is-premise).
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=7>), [PDF page 20](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=20>) — §4.1 and §14.3.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=7`), PDF page 20 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fc037812efa3--Resolution_of_the_Riemann_Hypothesis_and_Generalized_Automorphic__L__Functions (14).pdf#page=20`) — §4.1 and §14.3.
 
 Exact PDF SHA-256: `fc037812efa393af4869e8e9d3df81710d1d79c30ae91bd2bf03a489eff4bae4`.
 
@@ -4923,7 +4929,7 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v2:8199c88c1e77c74c`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/GeometryTopology/8199c88c1e77--Perelman_Surgery_Math.pdf#page=1>) — Overview; Ricci flow, singularities and surgery.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/GeometryTopology/8199c88c1e77--Perelman_Surgery_Math.pdf#page=1`) — Overview; Ricci flow, singularities and surgery.
 
 Exact PDF SHA-256: `8199c88c1e77c74cc58533cd83eec8b3609f8566a8651100951e2f06edaf9702`.
 
@@ -4945,7 +4951,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:fb76c0b27be4f7ea:homotopical-spectral-outline`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fb76c0b27be4--Spectral_Rigidity_and_the_Riemann_Hypothesis__A_Homotopical_and_Functorial_Approach__1_.pdf#page=1>) — §2–4.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fb76c0b27be4--Spectral_Rigidity_and_the_Riemann_Hypothesis__A_Homotopical_and_Functorial_Approach__1_.pdf#page=1`) — §2–4.
 
 Exact PDF SHA-256: `fb76c0b27be4f7eab078e871a68c4806d884cd77c508c74e8eb8a5c3241d8ec2`.
 
@@ -4977,7 +4983,7 @@ Current broader-search assessment: **analogy-only**, main claim unresolved. [Fur
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#8b0f8dbc97a4587f-homotopy-rigidity-unproved-comparisons).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=3>) — §3–5 homotopy flow, motive and functorial balance.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8b0f8dbc97a4--Spectral_Rigidity__Homotopy_Constraints__and_the_Functorial_Necessity_of_the_Riemann_Hypothesis__2_.pdf#page=3`) — §3–5 homotopy flow, motive and functorial balance.
 
 Exact PDF SHA-256: `8b0f8dbc97a4587fa7b205aca7a3a3ebeb055fc40519d7274c97946bb8e3ba7f`.
 
@@ -5007,7 +5013,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:a0c6601dde3163bb:finite-predicate-proof`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a0c6601dde31--c (6).pdf#page=3>), [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a0c6601dde31--c (6).pdf#page=5>) — §4–5 (predicate workflow and success condition).
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a0c6601dde31--c (6).pdf#page=3`), PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a0c6601dde31--c (6).pdf#page=5`) — §4–5 (predicate workflow and success condition).
 
 Exact PDF SHA-256: `a0c6601dde3163bbb36e1c9cd24806b513e5ac34f7d2fd1a695813099b429f82`.
 
@@ -5034,7 +5040,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:71211514ed2048c0:typed-translations-versus-ring`
 
-Paper: [PDF page 10](</Users/local/Desktop/MathematicsLibrary/NumberTheory/71211514ed20--A_Unified_Framework_for_Prime_Gaps_and_the_Riemann_Hypothesis__The_Ring_of_Translations_and_Universal_Functional_Equations (3).pdf#page=10>), [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/71211514ed20--A_Unified_Framework_for_Prime_Gaps_and_the_Riemann_Hypothesis__The_Ring_of_Translations_and_Universal_Functional_Equations (3).pdf#page=11>) — §3.1–3.4.
+Paper: PDF page 10 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/71211514ed20--A_Unified_Framework_for_Prime_Gaps_and_the_Riemann_Hypothesis__The_Ring_of_Translations_and_Universal_Functional_Equations (3).pdf#page=10`), PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/71211514ed20--A_Unified_Framework_for_Prime_Gaps_and_the_Riemann_Hypothesis__The_Ring_of_Translations_and_Universal_Functional_Equations (3).pdf#page=11`) — §3.1–3.4.
 
 Exact PDF SHA-256: `71211514ed2048c0b47d19641ba27ce85f945156da71e50843b6fc4ad0035555`.
 
@@ -5062,7 +5068,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:722b24f8c7ac600f:typed-translations-versus-ring`
 
-Paper: [PDF page 10](</Users/local/Desktop/MathematicsLibrary/NumberTheory/722b24f8c7ac--A_Unified_Framework_for_Prime_Gaps_and_the_Riemann_Hypothesis__The_Ring_of_Translations_and_Universal_Functional_Equations (2).pdf#page=10>), [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/722b24f8c7ac--A_Unified_Framework_for_Prime_Gaps_and_the_Riemann_Hypothesis__The_Ring_of_Translations_and_Universal_Functional_Equations (2).pdf#page=11>) — §3.1–3.4.
+Paper: PDF page 10 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/722b24f8c7ac--A_Unified_Framework_for_Prime_Gaps_and_the_Riemann_Hypothesis__The_Ring_of_Translations_and_Universal_Functional_Equations (2).pdf#page=10`), PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/722b24f8c7ac--A_Unified_Framework_for_Prime_Gaps_and_the_Riemann_Hypothesis__The_Ring_of_Translations_and_Universal_Functional_Equations (2).pdf#page=11`) — §3.1–3.4.
 
 Exact PDF SHA-256: `722b24f8c7ac600ffc53471894fca6178e75ae488e248e6117c9799ac475bca7`.
 
@@ -5090,7 +5096,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:120e3f16e4931aa7:simulated-versus-arithmetic-validation`
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/120e3f16e493--Automated_Numerical_Validation_in_the_Recursive_Refinement_Framework (4).pdf#page=6>), [PDF page 10](</Users/local/Desktop/MathematicsLibrary/NumberTheory/120e3f16e493--Automated_Numerical_Validation_in_the_Recursive_Refinement_Framework (4).pdf#page=10>) — §4–5 captions and §6.2.
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/120e3f16e493--Automated_Numerical_Validation_in_the_Recursive_Refinement_Framework (4).pdf#page=6`), PDF page 10 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/120e3f16e493--Automated_Numerical_Validation_in_the_Recursive_Refinement_Framework (4).pdf#page=10`) — §4–5 captions and §6.2.
 
 Exact PDF SHA-256: `120e3f16e4931aa7e032e09c1b342459ca2d945daed49492fed7a6b6c3652211`.
 
@@ -5118,7 +5124,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:1767564933a56522:simulated-versus-arithmetic-validation`
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1767564933a5--Automated_Numerical_Validation_in_the_Recursive_Refinement_Framework (3).pdf#page=6>), [PDF page 10](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1767564933a5--Automated_Numerical_Validation_in_the_Recursive_Refinement_Framework (3).pdf#page=10>) — §4–5 captions and §6.2.
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1767564933a5--Automated_Numerical_Validation_in_the_Recursive_Refinement_Framework (3).pdf#page=6`), PDF page 10 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1767564933a5--Automated_Numerical_Validation_in_the_Recursive_Refinement_Framework (3).pdf#page=10`) — §4–5 captions and §6.2.
 
 Exact PDF SHA-256: `1767564933a56522111cd9e0cf7b13dcc575930c789ebf4e8274d7d1705a0830`.
 
@@ -5146,7 +5152,7 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v2:90632c77bb67f087`
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/LogicAndComputation/90632c77bb67--Resolution_of_the_PNP_Problem__A_Rigorous_Mathematical_Proof (1).pdf#page=4>) — Theorem 2 and its use of §2.3.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/LogicAndComputation/90632c77bb67--Resolution_of_the_PNP_Problem__A_Rigorous_Mathematical_Proof (1).pdf#page=4`) — Theorem 2 and its use of §2.3.
 
 Exact PDF SHA-256: `90632c77bb67f0871a65e1ddb9dfee94123618102b74f744da6ec5307d24d75c`.
 
@@ -5168,7 +5174,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:9e58e8fc066c00bc:roadmap-proof-semantics`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9e58e8fc066c--Detailed_Roadmap_for_the_Modular_Proof_Framework (5).pdf#page=3>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9e58e8fc066c--Detailed_Roadmap_for_the_Modular_Proof_Framework (5).pdf#page=4>) — §2–4 PDE/lattice/category tasks and automated lemmas.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9e58e8fc066c--Detailed_Roadmap_for_the_Modular_Proof_Framework (5).pdf#page=3`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9e58e8fc066c--Detailed_Roadmap_for_the_Modular_Proof_Framework (5).pdf#page=4`) — §2–4 PDE/lattice/category tasks and automated lemmas.
 
 Exact PDF SHA-256: `9e58e8fc066c00bc6848b22bd93ad603f9d25c538de6a15a3739dbb1e7b13acf`.
 
@@ -5196,7 +5202,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:eb3e07d1f4dcb34b:roadmap-proof-semantics`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/eb3e07d1f4dc--Detailed_Roadmap_for_the_Modular_Proof_Framework (6).pdf#page=3>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/eb3e07d1f4dc--Detailed_Roadmap_for_the_Modular_Proof_Framework (6).pdf#page=4>) — §2–4 PDE/lattice/category tasks and automated lemmas.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/eb3e07d1f4dc--Detailed_Roadmap_for_the_Modular_Proof_Framework (6).pdf#page=3`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/eb3e07d1f4dc--Detailed_Roadmap_for_the_Modular_Proof_Framework (6).pdf#page=4`) — §2–4 PDE/lattice/category tasks and automated lemmas.
 
 Exact PDF SHA-256: `eb3e07d1f4dcb34b3851c2d7be5eb7c87ef8c176d7bbb9ebe87deee4e7da8b16`.
 
@@ -5224,7 +5230,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v2:eb72e67be7cbe0dd`
 
-Paper: [PDF page 19](</Users/local/Desktop/MathematicsLibrary/NumberTheory/eb72e67be7cb--fibered-higher-history-authority.pdf#page=19>) — §7, Definition 7.1 (Fibered higher history, Proposed).
+Paper: PDF page 19 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/eb72e67be7cb--fibered-higher-history-authority.pdf#page=19`) — §7, Definition 7.1 (Fibered higher history, Proposed).
 
 Exact PDF SHA-256: `eb72e67be7cbe0dd77f6ad0c5caa541b0c51779081da79ae634ca46c84ece129`.
 
@@ -5249,7 +5255,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v2:2b7a45268e2c3828`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7a45268e2c--A (10).pdf#page=3>) — §3, Numerical Techniques.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7a45268e2c--A (10).pdf#page=3`) — §3, Numerical Techniques.
 
 Exact PDF SHA-256: `2b7a45268e2c3828bb2f77301c57ee907d99088771ae99b8716c54ab2135d312`.
 
@@ -5274,7 +5280,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v2:6e8e7b6fea13a5da`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6e8e7b6fea13--A (7).pdf#page=3>) — §3, Numerical Techniques.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6e8e7b6fea13--A (7).pdf#page=3`) — §3, Numerical Techniques.
 
 Exact PDF SHA-256: `6e8e7b6fea13a5da1d48009dd2afa7b3a9af22395cab44334b7d39fdfd81510a`.
 
@@ -5299,7 +5305,7 @@ Missing bridges and uncertainty:
 
 **matched-subclaim** · unlabeled version · `idea:unpublished-v2:e19a42c2d74c178f`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/LogicAndComputation/e19a42c2d74c--Proof-Carrying Symbol–Syntax–Grammar Kernel.pdf#page=1>) — Executive summary; proposer/trusted-kernel separation.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/LogicAndComputation/e19a42c2d74c--Proof-Carrying Symbol–Syntax–Grammar Kernel.pdf#page=1`) — Executive summary; proposer/trusted-kernel separation.
 
 Exact PDF SHA-256: `e19a42c2d74c178fcd131d11a477fda53423c728cf287421c4503ba7b5b1b442`.
 
@@ -5325,7 +5331,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · Version 1.0 · `idea:unpublished-v2:1113859d6d1fe43d`
 
-Paper: [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1113859d6d1f--reconstruction-first-publication-atlas.pdf#page=5>) — §1.1–1.2, syntax and grammar boundaries.
+Paper: PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1113859d6d1f--reconstruction-first-publication-atlas.pdf#page=5`) — §1.1–1.2, syntax and grammar boundaries.
 
 Exact PDF SHA-256: `1113859d6d1fe43d336e1350d390564c03133b8545a06494b5dd0c50d979f5f0`.
 
@@ -5351,7 +5357,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v2:655492306cf582d5`
 
-Paper: [PDF page 32](</Users/local/Desktop/MathematicsLibrary/NumberTheory/655492306cf5--Sustained_Expression_and_Interstitial_Completion.pdf#page=32>) — Theorem 10.2 (Conservative completion theorem).
+Paper: PDF page 32 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/655492306cf5--Sustained_Expression_and_Interstitial_Completion.pdf#page=32`) — Theorem 10.2 (Conservative completion theorem).
 
 Exact PDF SHA-256: `655492306cf582d5b66125a8ca058cda438d8682d4fccaf9da298bccfec91bb2`.
 
@@ -5377,7 +5383,7 @@ Missing bridges and uncertainty:
 
 **matched-subclaim** · unlabeled version · `idea:unpublished-v2:b7798efb57d0b33a`
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/GeometryTopology/b7798efb57d0--cache_potential_hypothesis.pdf#page=4>) — §2.1, Definition 2.2; theorem 2.1 provides the preceding predicate-descent criterion.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/GeometryTopology/b7798efb57d0--cache_potential_hypothesis.pdf#page=4`) — §2.1, Definition 2.2; theorem 2.1 provides the preceding predicate-descent criterion.
 
 Exact PDF SHA-256: `b7798efb57d0b33a332d8e426673ee587836f66da076b7be4c4f1423378ad257`.
 
@@ -5402,7 +5408,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:2075698b9f6b807d:harmonic-principles-need-semantic-suppliers`
 
-Paper: [PDF page 17](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2075698b9f6b--The_Harmonic_Theory_of_Numbers_and_Fields__HTNF_ (2).pdf#page=17>), [PDF page 19](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2075698b9f6b--The_Harmonic_Theory_of_Numbers_and_Fields__HTNF_ (2).pdf#page=19>), [PDF page 21](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2075698b9f6b--The_Harmonic_Theory_of_Numbers_and_Fields__HTNF_ (2).pdf#page=21>) — chapters2–4.
+Paper: PDF page 17 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2075698b9f6b--The_Harmonic_Theory_of_Numbers_and_Fields__HTNF_ (2).pdf#page=17`), PDF page 19 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2075698b9f6b--The_Harmonic_Theory_of_Numbers_and_Fields__HTNF_ (2).pdf#page=19`), PDF page 21 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2075698b9f6b--The_Harmonic_Theory_of_Numbers_and_Fields__HTNF_ (2).pdf#page=21`) — chapters2–4.
 
 Exact PDF SHA-256: `2075698b9f6b807d5c036e5f88cdcb7766d9dd949fd214d3ead62121b322ad0a`.
 
@@ -5436,7 +5442,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#3f28be14404a64ea-recomposition-upper-bound-not-separation).
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3f28be14404a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity__1_ (1).pdf#page=4>) — complexity theorem 3 and critical-line theorem 1.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3f28be14404a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity__1_ (1).pdf#page=4`) — complexity theorem 3 and critical-line theorem 1.
 
 Exact PDF SHA-256: `3f28be14404a64ea356abbc35615d406d0d9ca9e535f36b0b602f69e16fe38ea`.
 
@@ -5468,7 +5474,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#b799fd9cb24af2a3-recomposition-upper-bound-not-separation).
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b799fd9cb24a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity (1).pdf#page=4>) — complexity theorem 3 and critical-line theorem 1.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b799fd9cb24a--Unified_Proof_of_the_Generalized_Riemann_Hypothesis_and_Computational_Complexity (1).pdf#page=4`) — complexity theorem 3 and critical-line theorem 1.
 
 Exact PDF SHA-256: `b799fd9cb24af2a3415bfd20176c9232a371034809561e69eeb8dd4222c518d5`.
 
@@ -5504,7 +5510,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#d7819c0364c77a97-status-assertions-not-proof-evidence).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3>) — status item 5 and remaining-open-problems item 3.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3`) — status item 5 and remaining-open-problems item 3.
 
 Exact PDF SHA-256: `d7819c0364c77a97d9817f1089ef84d2cf5a24eec9ac9ad47fdb4b67fb29455b`.
 
@@ -5530,7 +5536,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:1b15ff32d8ae8039:verification-identifies-open-axioms`
 
-Paper: [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1b15ff32d8ae--Verification_of_Recursive_Refinement_Framework_in_the_Proof_of_the_Riemann_Hypothesis (2).pdf#page=5>), [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1b15ff32d8ae--Verification_of_Recursive_Refinement_Framework_in_the_Proof_of_the_Riemann_Hypothesis (2).pdf#page=8>) — §4 and §6.1.1.
+Paper: PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1b15ff32d8ae--Verification_of_Recursive_Refinement_Framework_in_the_Proof_of_the_Riemann_Hypothesis (2).pdf#page=5`), PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1b15ff32d8ae--Verification_of_Recursive_Refinement_Framework_in_the_Proof_of_the_Riemann_Hypothesis (2).pdf#page=8`) — §4 and §6.1.1.
 
 Exact PDF SHA-256: `1b15ff32d8ae803987cf0db1d42d00d92f803155102a101747294a78b2708782`.
 
@@ -5562,7 +5568,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:2bcc09b714e860e7:verification-identifies-open-axioms`
 
-Paper: [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2bcc09b714e8--Verification_of_Recursive_Refinement_Framework_in_the_Proof_of_the_Riemann_Hypothesis (3).pdf#page=5>), [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2bcc09b714e8--Verification_of_Recursive_Refinement_Framework_in_the_Proof_of_the_Riemann_Hypothesis (3).pdf#page=8>) — §4 and §6.1.1.
+Paper: PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2bcc09b714e8--Verification_of_Recursive_Refinement_Framework_in_the_Proof_of_the_Riemann_Hypothesis (3).pdf#page=5`), PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2bcc09b714e8--Verification_of_Recursive_Refinement_Framework_in_the_Proof_of_the_Riemann_Hypothesis (3).pdf#page=8`) — §4 and §6.1.1.
 
 Exact PDF SHA-256: `2bcc09b714e860e713098d0a3ddc7adbcfe292516c78d43d848b71086a04601b`.
 
@@ -5594,7 +5600,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:8eabfca2a3d46361:universal-decomposition-reconstruction-data`
 
-Paper: [PDF page 12](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8eabfca2a3d4--Volume_I__Foundations_of_the_Universal_Synthesis_Framework (2).pdf#page=12>) — §3.2.3–3.2.4 physical p12.
+Paper: PDF page 12 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8eabfca2a3d4--Volume_I__Foundations_of_the_Universal_Synthesis_Framework (2).pdf#page=12`) — §3.2.3–3.2.4 physical p12.
 
 Exact PDF SHA-256: `8eabfca2a3d463619138ad012ef829d5591c733ea29b53feee15f1cf950929f2`.
 
@@ -5628,7 +5634,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#6948b3b1a6b97ffd-empirical-power-law).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=3>) — §2 equation (1), §4 observations and appendix plot.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6948b3b1a6b9--Fill (1).pdf#page=3`) — §2 equation (1), §4 observations and appendix plot.
 
 Exact PDF SHA-256: `6948b3b1a6b97ffdf2e4f66c16ce17eb0b35d79b720c8924603313b484a632f7`.
 
@@ -5655,7 +5661,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#939947621e220181-empirical-power-law).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=3>) — §2 equation (1), §4 observations and appendix plot.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/939947621e22--Fill (2).pdf#page=3`) — §2 equation (1), §4 observations and appendix plot.
 
 Exact PDF SHA-256: `939947621e220181a07dbae5aca131fcc9691a9f8723dff7ed7712efaa11031d`.
 
@@ -5682,7 +5688,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#404255208b9d6243-gap-flow-and-prime-lattice).
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/404255208b9d--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (4).pdf#page=3>) — §2 spectral perturbation and §3 potential/Hessian/dynamics.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/404255208b9d--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (4).pdf#page=3`) — §2 spectral perturbation and §3 potential/Hessian/dynamics.
 
 Exact PDF SHA-256: `404255208b9d6243767dd94e915a0e5b159a22c80423398d9436c488ce10fcf6`.
 
@@ -5710,7 +5716,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#9b67b1410fb61cb6-gap-flow-and-prime-lattice).
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9b67b1410fb6--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (3).pdf#page=3>) — §2 spectral perturbation and §3 potential/Hessian/dynamics.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9b67b1410fb6--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (3).pdf#page=3`) — §2 spectral perturbation and §3 potential/Hessian/dynamics.
 
 Exact PDF SHA-256: `9b67b1410fb61cb69442fa0d041a77d8a3a9b74711074c6755c5087b0c9991b3`.
 
@@ -5738,7 +5744,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **analogy-only**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#b1ddb7027564ed7a-gap-flow-and-prime-lattice).
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b1ddb7027564--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (2).pdf#page=3>) — §2 spectral perturbation and §3 potential/Hessian/dynamics.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b1ddb7027564--Spectral_Gaps__Time_Asymptotic_Behavior__and_Lattice_Models_for_Primes (2).pdf#page=3`) — §2 spectral perturbation and §3 potential/Hessian/dynamics.
 
 Exact PDF SHA-256: `b1ddb7027564ed7a507d16772852819c5e73998fa06ded6e60d42a3a9f1c0d23`.
 
@@ -5774,7 +5780,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#d00d427aef3a27d8-rmt-langlands-survey-boundary).
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=6>), [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=8>) — §3.2–3.3 and §4.1–4.4.
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=6`), PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d00d427aef3a--A_Comprehensive_Exploration_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=8`) — §3.2–3.3 and §4.1–4.4.
 
 Exact PDF SHA-256: `d00d427aef3a27d8afea732fe2f694762bfdde1e24916eb8419f5be71a187a99`.
 
@@ -5800,7 +5806,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:02ea9297281a976b:euler-product-symmetry`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/02ea9297281a--C (5).pdf#page=3>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/02ea9297281a--C (5).pdf#page=4>) — §2.2 (partial products), §3.2 and §4.2 (transcendence and reflection).
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/02ea9297281a--C (5).pdf#page=3`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/02ea9297281a--C (5).pdf#page=4`) — §2.2 (partial products), §3.2 and §4.2 (transcendence and reflection).
 
 Exact PDF SHA-256: `02ea9297281a976b30ec01d3fe36e1eeec384f442787f752a481510613087c67`.
 
@@ -5828,7 +5834,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:14cc8c22077a7f9b:euler-product-symmetry`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/14cc8c22077a--C (8).pdf#page=3>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/14cc8c22077a--C (8).pdf#page=4>) — §2.2 (partial products), §3.2 and §4.2 (transcendence and reflection).
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/14cc8c22077a--C (8).pdf#page=3`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/14cc8c22077a--C (8).pdf#page=4`) — §2.2 (partial products), §3.2 and §4.2 (transcendence and reflection).
 
 Exact PDF SHA-256: `14cc8c22077a7f9b851d6f2ca7829fe5bdeaffc279ad61433088a00ae33b31a2`.
 
@@ -5856,7 +5862,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:3d919130b00c733f:cross-domain-roadmap-obligations`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3d919130b00c--A_Comprehensive_Roadmap_to_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (3).pdf#page=3>), [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3d919130b00c--A_Comprehensive_Roadmap_to_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (3).pdf#page=5>) — §3.1.1 and §3.2.2.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3d919130b00c--A_Comprehensive_Roadmap_to_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (3).pdf#page=3`), PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3d919130b00c--A_Comprehensive_Roadmap_to_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (3).pdf#page=5`) — §3.1.1 and §3.2.2.
 
 Exact PDF SHA-256: `3d919130b00c733f2841bdfbd825ba9d2d453bc48114010916eec17d96138584`.
 
@@ -5884,7 +5890,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:4a65cafdc2774d6f:cross-domain-roadmap-obligations`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4a65cafdc277--A_Comprehensive_Roadmap_to_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (2).pdf#page=3>), [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4a65cafdc277--A_Comprehensive_Roadmap_to_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (2).pdf#page=5>) — §3.1.1 and §3.2.2.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4a65cafdc277--A_Comprehensive_Roadmap_to_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (2).pdf#page=3`), PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4a65cafdc277--A_Comprehensive_Roadmap_to_the_Proof_of_the_Riemann_Hypothesis_and_Its_Extensions (2).pdf#page=5`) — §3.1.1 and §3.2.2.
 
 Exact PDF SHA-256: `4a65cafdc2774d6fc8fd659604309a7edc509fb43ea791614dc01af20a257a29`.
 
@@ -5922,7 +5928,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0b423568798d1ce3-prime-research-roadmap).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3>) — §2 and §6 (analytic and computational objectives).
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3`) — §2 and §6 (analytic and computational objectives).
 
 Exact PDF SHA-256: `0b423568798d1ce34de5668b0b9f4af71ec11da133956d7c17ef45dff9559d1f`.
 
@@ -5947,7 +5953,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:3da81cb6b0f2de2c:uncancelled-zero-propagation-obligation`
 
-Paper: [PDF page 23](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3da81cb6b0f2--A_Proof_of_the_Riemann_Hypothesis_via_Propagation_of_Empathetic_Primes_and_Cross_Domain_Symmetry (6).pdf#page=23>) — §16.1–16.2.4 and §18 corollaries.
+Paper: PDF page 23 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3da81cb6b0f2--A_Proof_of_the_Riemann_Hypothesis_via_Propagation_of_Empathetic_Primes_and_Cross_Domain_Symmetry (6).pdf#page=23`) — §16.1–16.2.4 and §18 corollaries.
 
 Exact PDF SHA-256: `3da81cb6b0f2de2c203c193beb93fa6c40f4e345b00019f4b9e15c8e77a17379`.
 
@@ -5975,7 +5981,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:3e8f24ecad1127e1:uncancelled-zero-propagation-obligation`
 
-Paper: [PDF page 23](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3e8f24ecad11--A_Proof_of_the_Riemann_Hypothesis_via_Propagation_of_Empathetic_Primes_and_Cross_Domain_Symmetry (7).pdf#page=23>) — §16.1–16.2.4 and §18 corollaries.
+Paper: PDF page 23 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3e8f24ecad11--A_Proof_of_the_Riemann_Hypothesis_via_Propagation_of_Empathetic_Primes_and_Cross_Domain_Symmetry (7).pdf#page=23`) — §16.1–16.2.4 and §18 corollaries.
 
 Exact PDF SHA-256: `3e8f24ecad1127e15a5200e87fc84505e5ca4f6f62de7d7c1dbc84128767cac3`.
 
@@ -6007,7 +6013,7 @@ Current broader-search assessment: **conditional-fragment**, main claim unresolv
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#f8f7f4692f9a8412-local-clustering-symmetry-gap).
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f8f7f4692f9a--Grh (1).pdf#page=7>) — §3–4, physical pp5–7.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f8f7f4692f9a--Grh (1).pdf#page=7`) — §3–4, physical pp5–7.
 
 Exact PDF SHA-256: `f8f7f4692f9a8412f4838a75a00da8fe793c6a5c89d2205de894de2eeea5f0c1`.
 
@@ -6033,7 +6039,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v3:78cd6a3a90b05036:generalized-zeta-model-todos`
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/78cd6a3a90b0--A_Unified_Framework_for_Generalized_Zeta_Functions__Towards_the_Resolution_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=7>), [PDF page 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/78cd6a3a90b0--A_Unified_Framework_for_Generalized_Zeta_Functions__Towards_the_Resolution_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=9>) — §2.3 and §3.2.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/78cd6a3a90b0--A_Unified_Framework_for_Generalized_Zeta_Functions__Towards_the_Resolution_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=7`), PDF page 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/78cd6a3a90b0--A_Unified_Framework_for_Generalized_Zeta_Functions__Towards_the_Resolution_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=9`) — §2.3 and §3.2.
 
 Exact PDF SHA-256: `78cd6a3a90b05036d4288c0bc82972c41e09098db1269b9a3335ee8ee333cae1`.
 
@@ -6061,7 +6067,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:2ce35b8e0dd6991f:regularization-and-hitchin-comparison`
 
-Paper: [PDF page 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2ce35b8e0dd6--A_Unified_Proof_Framework_for_the_Riemann_Hypothesis_and_Its_Extensions (19).pdf#page=14>), [PDF page 25](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2ce35b8e0dd6--A_Unified_Proof_Framework_for_the_Riemann_Hypothesis_and_Its_Extensions (19).pdf#page=25>) — §2.5 and §6.2.1.
+Paper: PDF page 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2ce35b8e0dd6--A_Unified_Proof_Framework_for_the_Riemann_Hypothesis_and_Its_Extensions (19).pdf#page=14`), PDF page 25 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2ce35b8e0dd6--A_Unified_Proof_Framework_for_the_Riemann_Hypothesis_and_Its_Extensions (19).pdf#page=25`) — §2.5 and §6.2.1.
 
 Exact PDF SHA-256: `2ce35b8e0dd6991fac2cdc094dc44a509ebbbd0f266b554b4f012469848ef113`.
 
@@ -6089,7 +6095,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:4227ccc340744a64:regularization-and-hitchin-comparison`
 
-Paper: [PDF page 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4227ccc34074--A_Unified_Proof_Framework_for_the_Riemann_Hypothesis_and_Its_Extensions (18).pdf#page=14>), [PDF page 25](</Users/local/Desktop/MathematicsLibrary/NumberTheory/4227ccc34074--A_Unified_Proof_Framework_for_the_Riemann_Hypothesis_and_Its_Extensions (18).pdf#page=25>) — §2.5 and §6.2.1.
+Paper: PDF page 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4227ccc34074--A_Unified_Proof_Framework_for_the_Riemann_Hypothesis_and_Its_Extensions (18).pdf#page=14`), PDF page 25 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/4227ccc34074--A_Unified_Proof_Framework_for_the_Riemann_Hypothesis_and_Its_Extensions (18).pdf#page=25`) — §2.5 and §6.2.1.
 
 Exact PDF SHA-256: `4227ccc340744a64840ea3d3ebe7efb9c7f2cf037deb8ce3d957f40a15cb9140`.
 
@@ -6117,7 +6123,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v2:1a0dc300601a5d3a`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/1a0dc300601a--B (7).pdf#page=2>) — §2.1, Proposition 1 (Residue Symmetry).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/1a0dc300601a--B (7).pdf#page=2`) — §2.1, Proposition 1 (Residue Symmetry).
 
 Exact PDF SHA-256: `1a0dc300601a5d3a2fa42ef3cbd2a3f4601ebfadc5b3cb463292158a016be740`.
 
@@ -6142,7 +6148,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · unlabeled version · `idea:unpublished-v2:b028d25bef27bdc3`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/b028d25bef27--B (5).pdf#page=2>) — §2.1, Proposition 1 (Residue Symmetry).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/b028d25bef27--B (5).pdf#page=2`) — §2.1, Proposition 1 (Residue Symmetry).
 
 Exact PDF SHA-256: `b028d25bef27bdc3a1f2e8deb4eaaf3228cce7a2d6418e44e85de891df6ed5e2`.
 
@@ -6167,7 +6173,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · Revision 1.3 · `idea:unpublished-v2:9884a6a5efb7ed3e`
 
-Paper: [PDF page 12](</Users/local/Desktop/MathematicsLibrary/NumberTheory/9884a6a5efb7--A01-v1.3.pdf#page=12>) — Theorem 6.1 (A01-T07).
+Paper: PDF page 12 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/9884a6a5efb7--A01-v1.3.pdf#page=12`) — Theorem 6.1 (A01-T07).
 
 Exact PDF SHA-256: `9884a6a5efb7ed3ed5664efec96e84251f7d00d459da75ec33d9952d2650a2f1`.
 
@@ -6194,7 +6200,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · Version 1.0 · `idea:unpublished-v2:cbbfa2c78fda23e0`
 
-Paper: [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/cbbfa2c78fda--A01.pdf#page=11>) — Theorem 4.4 (A01-T04).
+Paper: PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/cbbfa2c78fda--A01.pdf#page=11`) — Theorem 4.4 (A01-T04).
 
 Exact PDF SHA-256: `cbbfa2c78fda23e05b1c6e457eebdf033f1cca66d3ba4d9ebd9d4f18f3948a05`.
 
@@ -6220,7 +6226,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · Revision 1.2 · `idea:unpublished-v2:cda859bfce642e94`
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/cda859bfce64--A01-v1.2 (1).pdf#page=6>) — Definition 2.2 (A01-D02).
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/cda859bfce64--A01-v1.2 (1).pdf#page=6`) — Definition 2.2 (A01-D02).
 
 Exact PDF SHA-256: `cda859bfce642e9454bd9d357d79a46c329546da797ab255e65936b0ab64bafa`.
 
@@ -6247,7 +6253,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · Revision 1.1 · `idea:unpublished-v2:f4ec0ff737d21370`
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f4ec0ff737d2--A01-v1.1.pdf#page=6>) — Definition 2.3 (A01-D03).
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f4ec0ff737d2--A01-v1.1.pdf#page=6`) — Definition 2.3 (A01-D03).
 
 Exact PDF SHA-256: `f4ec0ff737d2137021cbbd9dd942c2c76c6bbf47d85e5281ec10c4f397996b21`.
 
@@ -6274,7 +6280,7 @@ Missing bridges and uncertainty:
 
 **matched-subclaim** · unlabeled version · `idea:unpublished-v2:cf1c7cee16c00c5e`
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/cf1c7cee16c0--document (1).pdf#page=4>) — §4, Theorem 4; displayed finite induction bound.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/cf1c7cee16c0--document (1).pdf#page=4`) — §4, Theorem 4; displayed finite induction bound.
 
 Exact PDF SHA-256: `cf1c7cee16c00c5eca701b9a1c64a307a1ef29425cbd014a3be88e9b29733222`.
 
@@ -6301,7 +6307,7 @@ Missing bridges and uncertainty:
 
 **analogy-only** · Version 1.0 · `idea:unpublished-v2:808a5117cf67204d`
 
-Paper: [PDF page 21](</Users/local/Desktop/MathematicsLibrary/NumberTheory/808a5117cf67--anchored-sieve-carpets-lifted-exponent-geometry.pdf#page=21>) — §3.2, Theorem 3.2 (Constellation packing count).
+Paper: PDF page 21 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/808a5117cf67--anchored-sieve-carpets-lifted-exponent-geometry.pdf#page=21`) — §3.2, Theorem 3.2 (Constellation packing count).
 
 Exact PDF SHA-256: `808a5117cf67204d74c667c41f628b1b5fbc5779f3d4c61cc7ec412625d7549e`.
 
@@ -6326,7 +6332,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · Version 4.0 · `idea:unpublished-v2:187a244631f9e4f9`
 
-Paper: [PDF page 20](</Users/local/Desktop/MathematicsLibrary/NumberTheory/187a244631f9--Arithmetic_Positivity_and_Riemann_Xi_v4_prerelease.pdf#page=20>) — §8.3, Theorem 8.3 (N003).
+Paper: PDF page 20 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/187a244631f9--Arithmetic_Positivity_and_Riemann_Xi_v4_prerelease.pdf#page=20`) — §8.3, Theorem 8.3 (N003).
 
 Exact PDF SHA-256: `187a244631f9e4f9e505729219a08d9218d5c34e7cca8a6f4b80fb41f4dde65f`.
 
@@ -6353,7 +6359,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:ee373b514739cddd:reciprocal-zero-index-tail-gap`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ee373b514739--Asymptotic_Decay_of_Oscillatory_Corrections_in_the_Explicit_Formula_and_Insights_into_Prime_Distributions (2).pdf#page=3>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ee373b514739--Asymptotic_Decay_of_Oscillatory_Corrections_in_the_Explicit_Formula_and_Insights_into_Prime_Distributions (2).pdf#page=4>) — §2.2 and §3.2–3.4.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ee373b514739--Asymptotic_Decay_of_Oscillatory_Corrections_in_the_Explicit_Formula_and_Insights_into_Prime_Distributions (2).pdf#page=3`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ee373b514739--Asymptotic_Decay_of_Oscillatory_Corrections_in_the_Explicit_Formula_and_Insights_into_Prime_Distributions (2).pdf#page=4`) — §2.2 and §3.2–3.4.
 
 Exact PDF SHA-256: `ee373b514739cddd26755539b8dde625a72ebc39c428e63f43d3bdf5364a713c`.
 
@@ -6381,7 +6387,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:c11035f5d4ae5a5e:compact-to-noncompact-explicit-source`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c11035f5d4ae--Bridging_Compaction_to_Modular_Spaces__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis (2).pdf#page=3>) — §4 sieve/wavelet correction and §5–6 explicit formula/noncompact bridge.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c11035f5d4ae--Bridging_Compaction_to_Modular_Spaces__A_Framework_for_Validating_the_Generalized_Riemann_Hypothesis (2).pdf#page=3`) — §4 sieve/wavelet correction and §5–6 explicit formula/noncompact bridge.
 
 Exact PDF SHA-256: `c11035f5d4ae5a5e813485b0276ed29ff1814087185117c2412fee959ef7f8e8`.
 
@@ -6409,7 +6415,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:79114526329967e4:spectral-projection-not-residue-exclusion`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/791145263299--final (2).pdf#page=2>), [PDF page 20](</Users/local/Desktop/MathematicsLibrary/NumberTheory/791145263299--final (2).pdf#page=20>) — physical pp2 and20.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/791145263299--final (2).pdf#page=2`), PDF page 20 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/791145263299--final (2).pdf#page=20`) — physical pp2 and20.
 
 Exact PDF SHA-256: `79114526329967e436fac27a6c0d35002e8a904bbf6d99a86d4958b6e0c049d9`.
 
@@ -6437,7 +6443,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:ed1af1ae22d81abd:spectral-projection-not-residue-exclusion`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ed1af1ae22d8--final (3).pdf#page=2>), [PDF page 20](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ed1af1ae22d8--final (3).pdf#page=20>) — physical pp2 and20.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ed1af1ae22d8--final (3).pdf#page=2`), PDF page 20 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ed1af1ae22d8--final (3).pdf#page=20`) — physical pp2 and20.
 
 Exact PDF SHA-256: `ed1af1ae22d81abd7eab4cd9484cb2c0c666487abc330c653ac8c5bf05a659ec`.
 
@@ -6465,7 +6471,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:3ae3c299f924c29f:point-count-correction-telescope`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3ae3c299f924--Extension_of_the_Recursive_Refinement_Framework_to_Zeta_Functions_of_Algebraic_Varieties (3).pdf#page=2>) — §3 equation (4), §4 equations (6)–(7).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3ae3c299f924--Extension_of_the_Recursive_Refinement_Framework_to_Zeta_Functions_of_Algebraic_Varieties (3).pdf#page=2`) — §3 equation (4), §4 equations (6)–(7).
 
 Exact PDF SHA-256: `3ae3c299f924c29f6cd0da913db202f3bf3b23a331d6c5a7ce51e42a6a0b0314`.
 
@@ -6493,7 +6499,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:e3979d5f15c5a881:point-count-correction-telescope`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e3979d5f15c5--Extension_of_the_Recursive_Refinement_Framework_to_Zeta_Functions_of_Algebraic_Varieties (2).pdf#page=2>) — §3 equation (4), §4 equations (6)–(7).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e3979d5f15c5--Extension_of_the_Recursive_Refinement_Framework_to_Zeta_Functions_of_Algebraic_Varieties (2).pdf#page=2`) — §3 equation (4), §4 equations (6)–(7).
 
 Exact PDF SHA-256: `e3979d5f15c5a8810eae7fca620399f517685147b530d769de9cf2191042d258`.
 
@@ -6521,7 +6527,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:62a811f51c4af077:structural-coupling-source-faithfulness`
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/62a811f51c4a--Recursive_Structural_Proof_of_the_Riemann_Hypothesis__Completing_Riemann_s_Insight_Through_Structural_Invariants_and_Recursive_Propagation.pdf#page=7>), [PDF page 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/62a811f51c4a--Recursive_Structural_Proof_of_the_Riemann_Hypothesis__Completing_Riemann_s_Insight_Through_Structural_Invariants_and_Recursive_Propagation.pdf#page=9>) — §5.2 and §6.3–6.4.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/62a811f51c4a--Recursive_Structural_Proof_of_the_Riemann_Hypothesis__Completing_Riemann_s_Insight_Through_Structural_Invariants_and_Recursive_Propagation.pdf#page=7`), PDF page 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/62a811f51c4a--Recursive_Structural_Proof_of_the_Riemann_Hypothesis__Completing_Riemann_s_Insight_Through_Structural_Invariants_and_Recursive_Propagation.pdf#page=9`) — §5.2 and §6.3–6.4.
 
 Exact PDF SHA-256: `62a811f51c4af077837f7d3770611bff0697e3a80a87336d4e2396cc3554f83b`.
 
@@ -6549,7 +6555,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · Version 3.1 · `idea:positive-limit-v1`
 
-Paper: [PDF page 20](</Users/local/Desktop/MathematicsLibrary/ReviewQueue/1da080c60c76--Theta_Correlations_Formal_Source_Atlas_v3_1_prerelease.pdf#page=20>), [PDF page 29](</Users/local/Desktop/MathematicsLibrary/ReviewQueue/1da080c60c76--Theta_Correlations_Formal_Source_Atlas_v3_1_prerelease.pdf#page=29>), [PDF page 30](</Users/local/Desktop/MathematicsLibrary/ReviewQueue/1da080c60c76--Theta_Correlations_Formal_Source_Atlas_v3_1_prerelease.pdf#page=30>) — Conjecture 10.2; Conjecture 14.1; §14.1 equation (14.2).
+Paper: PDF page 20 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/ReviewQueue/1da080c60c76--Theta_Correlations_Formal_Source_Atlas_v3_1_prerelease.pdf#page=20`), PDF page 29 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/ReviewQueue/1da080c60c76--Theta_Correlations_Formal_Source_Atlas_v3_1_prerelease.pdf#page=29`), PDF page 30 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/ReviewQueue/1da080c60c76--Theta_Correlations_Formal_Source_Atlas_v3_1_prerelease.pdf#page=30`) — Conjecture 10.2; Conjecture 14.1; §14.1 equation (14.2).
 
 Exact PDF SHA-256: `1da080c60c761d9f72d0eca9c33d4c9daea0f3bf9239f7d5b75220542a647b86`.
 
@@ -6575,7 +6581,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:46c71204aa52fd1c:general-rank-iteration`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=2>) — §2 equation (2), §3–5 higher-rank and mixed-form extensions.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=2`) — §2 equation (2), §3–5 higher-rank and mixed-form extensions.
 
 Exact PDF SHA-256: `46c71204aa52fd1ca0119f13382b0043fda1a9abf50d69a463ea778c8dbcff8c`.
 
@@ -6603,7 +6609,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:e4af0063b673b421:general-rank-iteration`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=2>) — §2 equation (2), §3–5 higher-rank and mixed-form extensions.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=2`) — §2 equation (2), §3–5 higher-rank and mixed-form extensions.
 
 Exact PDF SHA-256: `e4af0063b673b42118bfb15cbf584a617c230a9e1f36e3c002b796b571350df5`.
 
@@ -6631,7 +6637,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:206869dd1a9ba0e9:arithmetic-correction-semantics`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/206869dd1a9b--Generalization_of_the_Recursive_Refinement_Framework_to_Higher_Dimensional__L__Functions_and_Transcendental_Number_Theory (1).pdf#page=2>) — §2.1–2.2 and §3 equations (1)–(6).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/206869dd1a9b--Generalization_of_the_Recursive_Refinement_Framework_to_Higher_Dimensional__L__Functions_and_Transcendental_Number_Theory (1).pdf#page=2`) — §2.1–2.2 and §3 equations (1)–(6).
 
 Exact PDF SHA-256: `206869dd1a9ba0e909633290865b26c0a70d7894da42293cee6ad45cc5524917`.
 
@@ -6659,7 +6665,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:2fe59ce9cfdd8743:arithmetic-correction-semantics`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2fe59ce9cfdd--Generalization_of_the_Recursive_Refinement_Framework_to_Higher_Dimensional__L__Functions_and_Transcendental_Number_Theory (2).pdf#page=2>) — §2.1–2.2 and §3 equations (1)–(6).
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2fe59ce9cfdd--Generalization_of_the_Recursive_Refinement_Framework_to_Higher_Dimensional__L__Functions_and_Transcendental_Number_Theory (2).pdf#page=2`) — §2.1–2.2 and §3 equations (1)–(6).
 
 Exact PDF SHA-256: `2fe59ce9cfdd8743a9eb07adb82377af50890242be73a0231d6463069f650615`.
 
@@ -6687,7 +6693,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:122a95be4ded48b7:cross-verified-axioms-circularity`
 
-Paper: [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/122a95be4ded--Harmonic_Field_Framework__A_Cross_Validated_Proof_of_the_Generalized_Riemann_Hypothesis_and_a_Unified_Model_for_Prime_Distribution (2).pdf#page=8>), [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/122a95be4ded--Harmonic_Field_Framework__A_Cross_Validated_Proof_of_the_Generalized_Riemann_Hypothesis_and_a_Unified_Model_for_Prime_Distribution (2).pdf#page=11>) — §4 and §6.
+Paper: PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/122a95be4ded--Harmonic_Field_Framework__A_Cross_Validated_Proof_of_the_Generalized_Riemann_Hypothesis_and_a_Unified_Model_for_Prime_Distribution (2).pdf#page=8`), PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/122a95be4ded--Harmonic_Field_Framework__A_Cross_Validated_Proof_of_the_Generalized_Riemann_Hypothesis_and_a_Unified_Model_for_Prime_Distribution (2).pdf#page=11`) — §4 and §6.
 
 Exact PDF SHA-256: `122a95be4ded48b72e76071b1f59c8c54e09fa36a6d828e657d91d780d42d477`.
 
@@ -6715,7 +6721,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:a470293a2cf9c81e:harmonic-reflection-fragment`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=1>) — §2 completed-zeta symmetry; §3 energy argument.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a470293a2cf9--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (2).pdf#page=1`) — §2 completed-zeta symmetry; §3 energy argument.
 
 Exact PDF SHA-256: `a470293a2cf9c81e262e3fcbd522ce0a9dac7ecd36283510d11307416234fc3a`.
 
@@ -6742,7 +6748,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:eea3f78035e7071a:harmonic-reflection-fragment`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=1>) — §2 completed-zeta symmetry; §3 energy argument.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/eea3f78035e7--Harmonic_Residue_Framework_for_the_Generalized_Riemann_Hypothesis (1).pdf#page=1`) — §2 completed-zeta symmetry; §3 energy argument.
 
 Exact PDF SHA-256: `eea3f78035e7071a252ec1fb933c198765d8846bc26aa600422ee6dd95d17201`.
 
@@ -6769,7 +6775,7 @@ Missing bridges and uncertainty:
 
 **matched-subclaim** · unlabeled version · `idea:unpublished-v2:dbf2a57184a8fca2`
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/dbf2a57184a8--unified_hensel.pdf#page=4>) — §1.2, elementary arithmetic certificate; general grammar specialization is Unified theorem U5 on PDF page 12.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/dbf2a57184a8--unified_hensel.pdf#page=4`) — §1.2, elementary arithmetic certificate; general grammar specialization is Unified theorem U5 on PDF page 12.
 
 Exact PDF SHA-256: `dbf2a57184a8fca2f064af37e03a8075f2755bfecd06b291c2d0d4f26956806b`.
 
@@ -6795,7 +6801,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:73e7db788c2ef042:prime-log-derivative-and-mellin-normalization`
 
-Paper: [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/73e7db788c2e--On_the_Riemann_Hypothesis__A_Unified_Framework_Integrating_Spectral__Analytic__and_Arithmetic_Perspectives (4).pdf#page=5>), [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/73e7db788c2e--On_the_Riemann_Hypothesis__A_Unified_Framework_Integrating_Spectral__Analytic__and_Arithmetic_Perspectives (4).pdf#page=7>) — §2.5 and §3.2.
+Paper: PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/73e7db788c2e--On_the_Riemann_Hypothesis__A_Unified_Framework_Integrating_Spectral__Analytic__and_Arithmetic_Perspectives (4).pdf#page=5`), PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/73e7db788c2e--On_the_Riemann_Hypothesis__A_Unified_Framework_Integrating_Spectral__Analytic__and_Arithmetic_Perspectives (4).pdf#page=7`) — §2.5 and §3.2.
 
 Exact PDF SHA-256: `73e7db788c2ef04232e181e696a4a492c356044e9c6d4c4a5a1477e12d58e4e8`.
 
@@ -6823,7 +6829,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:c61e27ca532b0f4b:prime-log-derivative-and-mellin-normalization`
 
-Paper: [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c61e27ca532b--On_the_Riemann_Hypothesis__A_Unified_Framework_Integrating_Spectral__Analytic__and_Arithmetic_Perspectives (3).pdf#page=5>), [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c61e27ca532b--On_the_Riemann_Hypothesis__A_Unified_Framework_Integrating_Spectral__Analytic__and_Arithmetic_Perspectives (3).pdf#page=7>) — §2.5 and §3.2.
+Paper: PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c61e27ca532b--On_the_Riemann_Hypothesis__A_Unified_Framework_Integrating_Spectral__Analytic__and_Arithmetic_Perspectives (3).pdf#page=5`), PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c61e27ca532b--On_the_Riemann_Hypothesis__A_Unified_Framework_Integrating_Spectral__Analytic__and_Arithmetic_Perspectives (3).pdf#page=7`) — §2.5 and §3.2.
 
 Exact PDF SHA-256: `c61e27ca532b0f4be192633eaaa8bf3b93e69e93f8142447348f086b2026dfd7`.
 
@@ -6855,7 +6861,7 @@ Current broader-search assessment: **conditional-fragment**, main claim unresolv
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#ba422dcbe9ffc6fb-compact-integral-residue-alignment-gap).
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=6>), [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=7>) — §3.1–3.2.
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=6`), PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ba422dcbe9ff--Proof_of_the_Generalized_Riemann_Hypothesis__Computational_and_Theoretical_Integration (9).pdf#page=7`) — §3.1–3.2.
 
 Exact PDF SHA-256: `ba422dcbe9ffc6fb0a3553f0345047d8a07d52f329fc031b5d59f6293fb81610`.
 
@@ -6881,7 +6887,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:31164ee754e77aca:early-domain-transfer-hypotheses`
 
-Paper: [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/31164ee754e7--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GR (2).pdf#page=8>) — §3.6.2–3.6.3 physical p8.
+Paper: PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/31164ee754e7--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GR (2).pdf#page=8`) — §3.6.2–3.6.3 physical p8.
 
 Exact PDF SHA-256: `31164ee754e77acaa81b58f9b518f46f551864c148e1ef3daa93ab7f2b410d1f`.
 
@@ -6909,7 +6915,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:88caec6939ecd4ac:early-domain-transfer-hypotheses`
 
-Paper: [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/88caec6939ec--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GR (3).pdf#page=8>) — §3.6.2–3.6.3 physical p8.
+Paper: PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/88caec6939ec--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GR (3).pdf#page=8`) — §3.6.2–3.6.3 physical p8.
 
 Exact PDF SHA-256: `88caec6939ecd4ac1852f4f95b61974e582cce1a0c0c0703ed901bb585f3f033`.
 
@@ -6937,7 +6943,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:fdb5455e0f858282:early-domain-transfer-hypotheses`
 
-Paper: [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/fdb5455e0f85--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GR (4).pdf#page=8>) — §3.6.2–3.6.3 physical p8.
+Paper: PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/fdb5455e0f85--Recursive_Structures_and_Error_Propagation_in_Prime_Distribution__Towards_a_Proof_of_RH_and_GR (4).pdf#page=8`) — §3.6.2–3.6.3 physical p8.
 
 Exact PDF SHA-256: `fdb5455e0f858282859cef6f0328b7aa65057f61f5d53cfd3af1d0c8144f376b`.
 
@@ -6965,7 +6971,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:019052dca83c69d0:growing-bound-versus-uniform-axiom`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=3>) — §2–5 equations (4), (7), (9) and cross-domain inference.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=3`) — §2–5 equations (4), (7), (9) and cross-domain inference.
 
 Exact PDF SHA-256: `019052dca83c69d0810a7cf16c92f9f0b13e77754ce4ff526a8f26c2c727608d`.
 
@@ -6993,7 +6999,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:d5030fdf24961a55:growing-bound-versus-uniform-axiom`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=2>), [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=3>) — §2–5 equations (4), (7), (9) and cross-domain inference.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=2`), PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=3`) — §2–5 equations (4), (7), (9) and cross-domain inference.
 
 Exact PDF SHA-256: `d5030fdf24961a5522e8d09b7806225ccff237b519b7f0471411a30834964783`.
 
@@ -7025,7 +7031,7 @@ Current broader-search assessment: **corrective-fragment**, main claim unresolve
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0523b6d449088321-modular-j-density-countercheck).
 
-Paper: [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=8>), [PDF page 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=11>) — §4 reflection/boundedness and §5 converse.
+Paper: PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=8`), PDF page 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0523b6d44908--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (3).pdf#page=11`) — §4 reflection/boundedness and §5 converse.
 
 Exact PDF SHA-256: `0523b6d449088321283859c8854ed32f766f9fea00950d7629ab5a3f9dbbf95f`.
 
@@ -7055,7 +7061,7 @@ Current broader-search assessment: **corrective-fragment**, main claim unresolve
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#482cdae3e36c3e60-modular-density-and-bsd-residue-gap).
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=3>), [PDF page 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=5>) — §2.3 and §4.2.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=3`), PDF page 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/482cdae3e36c--Residue_Clustering_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (1).pdf#page=5`) — §2.3 and §4.2.
 
 Exact PDF SHA-256: `482cdae3e36c3e60178e8b0d42bdfd063a8be8951632bd91bf2937ae315695c0`.
 
@@ -7085,7 +7091,7 @@ Current broader-search assessment: **corrective-fragment**, main claim unresolve
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#6900e23cd2e098fd-reciprocal-power-reflection-error).
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/6900e23cd2e0--Framework (1).pdf#page=4>) — physical p4 reciprocal-power argument and Taylor bound, p6 zero-free claim.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/6900e23cd2e0--Framework (1).pdf#page=4`) — physical p4 reciprocal-power argument and Taylor bound, p6 zero-free claim.
 
 Exact PDF SHA-256: `6900e23cd2e098fd7eb5c99eaf85cbe1ec5f61b1436a9b9cf2edfbfdc75caffd`.
 
@@ -7113,7 +7119,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **conditional-fragment**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#76129703513fecd2-modular-residue-numerical-source-gap).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/76129703513f--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (2).pdf#page=2>) — §2.2–4 numerical residues and proposed GRH connection.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/76129703513f--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (2).pdf#page=2`) — §2.2–4 numerical residues and proposed GRH connection.
 
 Exact PDF SHA-256: `76129703513fecd25c8843932174fb7bef44b49654b3b1452cdca4bc478092d3`.
 
@@ -7141,7 +7147,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **conditional-fragment**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#c6b61ffc72f602af-modular-residue-numerical-source-gap).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/c6b61ffc72f6--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (1).pdf#page=2>) — §2.2–4 numerical residues and proposed GRH connection.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/c6b61ffc72f6--Residue_Clustering__Modular_Symmetry__and_Connections_to_the_Generalized_Riemann_Hypothesis (1).pdf#page=2`) — §2.2–4 numerical residues and proposed GRH connection.
 
 Exact PDF SHA-256: `c6b61ffc72f602afb242afb06758139269c07500d4256ef8d17e8eb17b67b682`.
 
@@ -7167,7 +7173,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:3392cddaf7c8ba22:reflection-fixedpoint-and-harmonic-integral`
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3392cddaf7c8--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (6).pdf#page=7>) — §3.2–3.3 physical p7.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3392cddaf7c8--Residue_Clustering__Modular_Symmetry__and_the_Proof_of_the_Generalized_Riemann_Hypothesis (6).pdf#page=7`) — §3.2–3.3 physical p7.
 
 Exact PDF SHA-256: `3392cddaf7c8ba22f7d2381d5a2e7d8244e3a8222ea33b446403a828351ad94c`.
 
@@ -7195,7 +7201,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:8ebbfe93d79e9173:explicit-trace-interpretation`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/8ebbfe93d79e--Spectral_Trace_Interpretation_of_the_Explicit_Formula_and_Its_Role_in_GRH (2).pdf#page=2>) — §3.1–4 trace interpretation.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/8ebbfe93d79e--Spectral_Trace_Interpretation_of_the_Explicit_Formula_and_Its_Role_in_GRH (2).pdf#page=2`) — §3.1–4 trace interpretation.
 
 Exact PDF SHA-256: `8ebbfe93d79e9173606889ad5e65e654aa7dc1733b546cc4a227ad0afb804c4e`.
 
@@ -7227,7 +7233,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:cb246183d17f8223:weighted-explicit-formula-convergence`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/cb246183d17f--Explicit_Formula_and_Zero_Statistics (2).pdf#page=2>) — §3.1–5.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/cb246183d17f--Explicit_Formula_and_Zero_Statistics (2).pdf#page=2`) — §3.1–5.
 
 Exact PDF SHA-256: `cb246183d17f82236b9745204b04ce33e571972fcda6337b2a5d059850e0bcdb`.
 
@@ -7255,7 +7261,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:356c85fe3fc04842:weight-center-and-prime-continuity`
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/356c85fe3fc0--The_Langlands_Bridge__Stability_and_Continuity_of_the_Critical_Line_in_L_Functions (1).pdf#page=4>), [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/356c85fe3fc0--The_Langlands_Bridge__Stability_and_Continuity_of_the_Critical_Line_in_L_Functions (1).pdf#page=6>) — §2.6 and §3.3–3.4.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/356c85fe3fc0--The_Langlands_Bridge__Stability_and_Continuity_of_the_Critical_Line_in_L_Functions (1).pdf#page=4`), PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/356c85fe3fc0--The_Langlands_Bridge__Stability_and_Continuity_of_the_Critical_Line_in_L_Functions (1).pdf#page=6`) — §2.6 and §3.3–3.4.
 
 Exact PDF SHA-256: `356c85fe3fc048420c7166a33687efcce2022b94f504e3345ae7f6d7a9f916df`.
 
@@ -7287,7 +7293,7 @@ Current broader-search assessment: **conditional-fragment**, main claim unresolv
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#47f41bdea32cea56-local-dirichlet-clustering-reflection-gap).
 
-Paper: [PDF page 14](</Users/local/Desktop/MathematicsLibrary/NumberTheory/47f41bdea32c--The_Proof_of_the_Generalized_Riemann_Hypothesis.pdf#page=14>) — physical p14 discrete universality examples.
+Paper: PDF page 14 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/47f41bdea32c--The_Proof_of_the_Generalized_Riemann_Hypothesis.pdf#page=14`) — physical p14 discrete universality examples.
 
 Exact PDF SHA-256: `47f41bdea32cea5614ae8eec3aec280268e0464509c507f51480a510d0612e88`.
 
@@ -7313,7 +7319,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:848cebb49defe601:residue-at-zero-is-zero`
 
-Paper: [PDF page 13](</Users/local/Desktop/MathematicsLibrary/NumberTheory/848cebb49def--endgame (4).pdf#page=13>), [PDF page 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/848cebb49def--endgame (4).pdf#page=15>) — §8.1 and §8.4.
+Paper: PDF page 13 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/848cebb49def--endgame (4).pdf#page=13`), PDF page 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/848cebb49def--endgame (4).pdf#page=15`) — §8.1 and §8.4.
 
 Exact PDF SHA-256: `848cebb49defe601d71334a5e164cdc4961ea1fe7fdda80e00066cfbc21bf2c5`.
 
@@ -7345,7 +7351,7 @@ Current broader-search assessment: **conditional-fragment**, main claim unresolv
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#a26ad58b00222955-arithmetic-residue-formula-scope).
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=6>), [PDF page 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=15>) — §2.2 and §9.2.
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=6`), PDF page 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/a26ad58b0022--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (3).pdf#page=15`) — §2.2 and §9.2.
 
 Exact PDF SHA-256: `a26ad58b002229559726316bf90e9fc0e4943fe14cdfaf28e5add999350bc8ac`.
 
@@ -7375,7 +7381,7 @@ Current broader-search assessment: **conditional-fragment**, main claim unresolv
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#e04e2d11c430078f-arithmetic-residue-formula-scope).
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=6>), [PDF page 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=15>) — §2.2 and §9.2.
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=6`), PDF page 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e04e2d11c430--The_Riemann_Hypothesis_and_Its_Automorphic_Generalizations__Comprehensive_Insights_into_Unified_Analytic__Spectral__and_Geometric_Structures (2).pdf#page=15`) — §2.2 and §9.2.
 
 Exact PDF SHA-256: `e04e2d11c430078f8b32562cedf245934b9ba99d73555c47033e31ef3399fc6e`.
 
@@ -7401,7 +7407,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · Edition 0.0.1 · `idea:unpublished-v2:3843446bb981f345`
 
-Paper: [PDF page 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/3843446bb981--manuscript.pdf#page=15>) — §4.3, Theorem 4.3 (N003).
+Paper: PDF page 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/3843446bb981--manuscript.pdf#page=15`) — §4.3, Theorem 4.3 (N003).
 
 Exact PDF SHA-256: `3843446bb981f345cf52499f740f6c8abbbb7f3eb583a5948b8c6d150651a6d9`.
 
@@ -7428,7 +7434,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · Version 5.0 · `idea:unpublished-v2:7a8aff52b8b6a6ad`
 
-Paper: [PDF page 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7a8aff52b8b6--The_Topology_of_the_Finite_v5_prerelease.pdf#page=9>) — §4.3, Theorem 4.3 (N003).
+Paper: PDF page 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7a8aff52b8b6--The_Topology_of_the_Finite_v5_prerelease.pdf#page=9`) — §4.3, Theorem 4.3 (N003).
 
 Exact PDF SHA-256: `7a8aff52b8b6a6ada935881a833f0a6a7c9b62a71e3a0b9c9b7fd4f18f8bb918`.
 
@@ -7455,7 +7461,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:d97f02d4d9fb0f64:partial-sum-domain-and-transcendence-gap`
 
-Paper: [PDF page 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d97f02d4d9fb--Tr (1).pdf#page=7>), [PDF page 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d97f02d4d9fb--Tr (1).pdf#page=15>) — §3.3 and §7.2.
+Paper: PDF page 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d97f02d4d9fb--Tr (1).pdf#page=7`), PDF page 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d97f02d4d9fb--Tr (1).pdf#page=15`) — §3.3 and §7.2.
 
 Exact PDF SHA-256: `d97f02d4d9fb0f64f85e165a91f7ff4e7e270c2b88c3e741e4f55e1131b454fe`.
 
@@ -7489,7 +7495,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#2b7478353ae500b1-conditional-transcendence-and-chaotic-sums).
 
-Paper: [PDF page 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=15>), [PDF page 24](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=24>) — §5.3 and §8.5 physical pp15/24.
+Paper: PDF page 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=15`), PDF page 24 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2b7478353ae5--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (4).pdf#page=24`) — §5.3 and §8.5 physical pp15/24.
 
 Exact PDF SHA-256: `2b7478353ae500b16accd001c530b316673bd54ca7239a6f4b31552a5212dcb0`.
 
@@ -7521,7 +7527,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#ac7a2ecdc5f9c787-conditional-transcendence-and-chaotic-sums).
 
-Paper: [PDF page 15](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=15>), [PDF page 24](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=24>) — §5.3 and §8.5 physical pp15/24.
+Paper: PDF page 15 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=15`), PDF page 24 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ac7a2ecdc5f9--Universal_Transcendence_of_Non_Critical_Values_in_Automorphic_and_Motivic__L__Functions (5).pdf#page=24`) — §5.3 and §8.5 physical pp15/24.
 
 Exact PDF SHA-256: `ac7a2ecdc5f9c78779e03fbf8d3f0432eab185b4d7673afbed9053821b739283`.
 
@@ -7547,7 +7553,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:0cf6d016cc8f2440:twin-prime-forcing-and-trace-modification`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0cf6d016cc8f--Flock (3).pdf#page=2>), [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0cf6d016cc8f--Flock (3).pdf#page=4>) — §1.3 and §3.3 physical pp2/4.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0cf6d016cc8f--Flock (3).pdf#page=2`), PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0cf6d016cc8f--Flock (3).pdf#page=4`) — §1.3 and §3.3 physical pp2/4.
 
 Exact PDF SHA-256: `0cf6d016cc8f244041e62de13ca5068ad7a1953ad862b843baade4833b43e2d5`.
 
@@ -7585,7 +7591,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#7e3e7acb686d4196-short-rmt-proof-upgrade-gap).
 
-Paper: [PDF page 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/7e3e7acb686d--On_the__notion__of_Principle_as_a_chomocological_invariant_ (1).pdf#page=4>) — §2.3.1–2.3.2.
+Paper: PDF page 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/7e3e7acb686d--On_the__notion__of_Principle_as_a_chomocological_invariant_ (1).pdf#page=4`) — §2.3.1–2.3.2.
 
 Exact PDF SHA-256: `7e3e7acb686d41960092ebb2a17334d623db00ac2acc1a590a669c1f4698a712`.
 
@@ -7610,7 +7616,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:526fcd78a410ba4a:pair-correlation-source-limit`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/526fcd78a410--Pair_Correlation_Function_of_Zeros_of_the_Riemann_Zeta_Function (2).pdf#page=2>) — §3.1–3.2 Fourier second moment.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/526fcd78a410--Pair_Correlation_Function_of_Zeros_of_the_Riemann_Zeta_Function (2).pdf#page=2`) — §3.1–3.2 Fourier second moment.
 
 Exact PDF SHA-256: `526fcd78a410ba4a7211c13c4fdc42b29194dda39ae801fb9d329da2941984e3`.
 
@@ -7638,7 +7644,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:21776c5e95ef4342:spacing-entropy-versus-exhaustion`
 
-Paper: [PDF page 17](</Users/local/Desktop/MathematicsLibrary/NumberTheory/21776c5e95ef--A_Proof_of_the_Generalized_Riemann_Hypothesis (9).pdf#page=17>), [PDF page 19](</Users/local/Desktop/MathematicsLibrary/NumberTheory/21776c5e95ef--A_Proof_of_the_Generalized_Riemann_Hypothesis (9).pdf#page=19>) — §8.1–8.2 and §10.1–10.2.
+Paper: PDF page 17 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/21776c5e95ef--A_Proof_of_the_Generalized_Riemann_Hypothesis (9).pdf#page=17`), PDF page 19 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/21776c5e95ef--A_Proof_of_the_Generalized_Riemann_Hypothesis (9).pdf#page=19`) — §8.1–8.2 and §10.1–10.2.
 
 Exact PDF SHA-256: `21776c5e95ef4342239bb03838c3adc45a7ff93389d4de70e3a2dbe86cdb0698`.
 
@@ -7666,7 +7672,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:acaeb6d002b51010:spacing-entropy-versus-exhaustion`
 
-Paper: [PDF page 17](</Users/local/Desktop/MathematicsLibrary/NumberTheory/acaeb6d002b5--A_Proof_of_the_Generalized_Riemann_Hypothesis (7).pdf#page=17>), [PDF page 19](</Users/local/Desktop/MathematicsLibrary/NumberTheory/acaeb6d002b5--A_Proof_of_the_Generalized_Riemann_Hypothesis (7).pdf#page=19>) — §8.1–8.2 and §10.1–10.2.
+Paper: PDF page 17 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/acaeb6d002b5--A_Proof_of_the_Generalized_Riemann_Hypothesis (7).pdf#page=17`), PDF page 19 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/acaeb6d002b5--A_Proof_of_the_Generalized_Riemann_Hypothesis (7).pdf#page=19`) — §8.1–8.2 and §10.1–10.2.
 
 Exact PDF SHA-256: `acaeb6d002b5101033ccbdefba732a73d12985486eef24cef7e48a1a434bfa5e`.
 
@@ -7702,7 +7708,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#0f3deff790c3e598-entropy-threshold-zero-free-gap).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=2>) — §2.1–3 and §4.3.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=2`) — §2.1–3 and §4.3.
 
 Exact PDF SHA-256: `0f3deff790c3e5981fc304f6fef684f2d93ee0830b20c3129244a40721875833`.
 
@@ -7736,7 +7742,7 @@ Current broader-search assessment: **unresolved**, main claim unresolved. [Furth
 
 Later target-search review: **unresolved**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#579328ace007be79-entropy-threshold-zero-free-gap).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=1>), [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=2>) — §2.1–3 and §4.3.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=1`), PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=2`) — §2.1–3 and §4.3.
 
 Exact PDF SHA-256: `579328ace007be79bca86146991d522c3a72ac325d62523ee0e3322dcf48d63c`.
 
@@ -7762,7 +7768,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:f58b3fb2d34bee0e:residue-entropy-normalization-source`
 
-Paper: [PDF page 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f58b3fb2d34b--Residue_Clustering__Modular_Symmetry__and_the_Generalized_Riemann_Hypothesis__Theoretical_and_Numerical_Advances (3).pdf#page=6>), [PDF page 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f58b3fb2d34b--Residue_Clustering__Modular_Symmetry__and_the_Generalized_Riemann_Hypothesis__Theoretical_and_Numerical_Advances (3).pdf#page=8>) — §3.1 and §4.1.
+Paper: PDF page 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f58b3fb2d34b--Residue_Clustering__Modular_Symmetry__and_the_Generalized_Riemann_Hypothesis__Theoretical_and_Numerical_Advances (3).pdf#page=6`), PDF page 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f58b3fb2d34b--Residue_Clustering__Modular_Symmetry__and_the_Generalized_Riemann_Hypothesis__Theoretical_and_Numerical_Advances (3).pdf#page=8`) — §3.1 and §4.1.
 
 Exact PDF SHA-256: `f58b3fb2d34bee0eb96bdc5ba73c80185a5eb270bf242d03d2086df7f3fc5b86`.
 
@@ -7790,7 +7796,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:ed896093fe823773:conditional-independence-and-cancellation`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=2>) — §3.2–3.3 and §4.2–4.3.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=2`) — §3.2–3.3 and §4.2–4.3.
 
 Exact PDF SHA-256: `ed896093fe8237738c1865eb150a270fd12b044a3ab676bbd24671d4bfbdbcb1`.
 
@@ -7818,7 +7824,7 @@ Missing bridges and uncertainty:
 
 **conditional-correspondence** · unlabeled version · `idea:unpublished-v3:f54c768808920d51:conditional-independence-and-cancellation`
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=2>) — §3.2–3.3 and §4.2–4.3.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=2`) — §3.2–3.3 and §4.2–4.3.
 
 Exact PDF SHA-256: `f54c768808920d51d1304089de5b0817240e3f061954f855a187ce17a0a30486`.
 
@@ -7852,7 +7858,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **no-substantive-body**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#26516b4beee3b085-clustering-empty-version).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/26516b4beee3--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (4).pdf#page=2>) — physical p2 empty section6.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/26516b4beee3--Residue_Clustering_Laws_and_the_Proof_of_the_Generalized_Riemann_Hypothesis (4).pdf#page=2`) — physical p2 empty section6.
 
 Exact PDF SHA-256: `26516b4beee3b08515a0f9b8dfac5399b68973af066cbffb3ff8bc7cd9072caa`.
 
@@ -7876,7 +7882,7 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v2:fa54e13e56c5df07`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/LogicAndComputation/fa54e13e56c5--AGI_Lattice__A_Formal_Mathematical_Presentation__1_ (1).pdf#page=1>) — §2.1–2.3 and §4.1–4.3.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/LogicAndComputation/fa54e13e56c5--AGI_Lattice__A_Formal_Mathematical_Presentation__1_ (1).pdf#page=1`) — §2.1–2.3 and §4.1–4.3.
 
 Exact PDF SHA-256: `fa54e13e56c5df07c0b53391d96a221858d765c8b3f1b5c2d689c27b151e69c6`.
 
@@ -7900,7 +7906,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **no-substantive-body**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#917ca3c827b1627b-abstract-only-entropy-version).
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/917ca3c827b1--RH (4).pdf#page=1>) — physical p1 abstract.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/917ca3c827b1--RH (4).pdf#page=1`) — physical p1 abstract.
 
 Exact PDF SHA-256: `917ca3c827b1627b6375c1ad821cb42f2a38a11c891bb7565ffa5fee2f255a85`.
 
@@ -7924,7 +7930,7 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v2:f4ccd06d0e9849ae`
 
-Paper: [PDF page 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f4ccd06d0e98--Formal_Proof_of_the_Convergence_and_Properties_of_the_Riemann_Zeta_Function (2).pdf#page=3>) — Matrix Definition and Structure.
+Paper: PDF page 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f4ccd06d0e98--Formal_Proof_of_the_Convergence_and_Properties_of_the_Riemann_Zeta_Function (2).pdf#page=3`) — Matrix Definition and Structure.
 
 Exact PDF SHA-256: `f4ccd06d0e9849ae167e1442a9071f8c91b863e5b8ef952a55669300b3aee309`.
 
@@ -7948,7 +7954,7 @@ Missing bridges and uncertainty:
 
 Later target-search review: **no-substantive-body**, main claim unresolved. [Exact follow-up evidence](unmatched-idea-followup.md#85c8288713f3f7fa-placeholder-no-substantive-body).
 
-Paper: [PDF page 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/85c8288713f3--_A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1).pdf#page=2>) — physical PDF p2, printed p88.
+Paper: PDF page 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/85c8288713f3--_A_Self_Adjoint_Spectral_Operator_for_the_Riemann_Zeta_Zeros__Rigorous_Construction__Determinant_Identity__and_Topological_Invariance (1).pdf#page=2`) — physical PDF p2, printed p88.
 
 Exact PDF SHA-256: `85c8288713f3f7fa927a6ba12f869a7c062c4ad30559181bcdcd96db9622c5ef`.
 
@@ -7973,7 +7979,7 @@ Missing bridges and uncertainty:
 
 **unresolved** · unlabeled version · `idea:unpublished-v2:f9ac0ec9866f2099`
 
-Paper: [PDF page 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f9ac0ec9866f--Formalized_Growth_Bound_for_Prime_Factors_in_Coprime_Sums_and_the_ABC_Conjecture (1).pdf#page=1>) — Title and Introduction.
+Paper: PDF page 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f9ac0ec9866f--Formalized_Growth_Bound_for_Prime_Factors_in_Coprime_Sums_and_the_ABC_Conjecture (1).pdf#page=1`) — Title and Introduction.
 
 Exact PDF SHA-256: `f9ac0ec9866f2099fc3e74a5bf21b185162e6ebdabc73532f4d46985f4be15b1`.
 

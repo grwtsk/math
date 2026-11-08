@@ -1,8 +1,12 @@
 # Reading background and intellectual lineage
 
+[Reading and correspondence index](index.md). Follow-up labels and idea counts
+below retain their recorded source/version scope; they are not live status
+measurements or fresh verification of later Lean source bytes.
+
 **New literary research reading (2026-10-31):** [Seven ribbons, a wound spring, and a clock that cannot circle](the-seven-ribbons-and-the-clock-that-cannot-circle.md) — a child's point of view on the typed Gödel–Fourier–sofic simulation, with exact equations, signed residuals, computational refinement gates and three separate physical/mathematical/computer-science readings. Source proof candidate; Lean and browser-refinement verification remain separate.
 
-Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+Recorded seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
 
 ## Collective attribution and source evidence
 
@@ -28,11 +32,11 @@ For each newly formalized theorem, construction, algorithm, or method drawn from
 
 For **paper-derived mathematical formalizations**, record the published source's exact theorem/method and hypotheses, stable bibliography, pinned Lean declarations and commit, verification evidence, and proved-versus-analogy status. The [paper-to-Lean RH provenance ledger](paper-formalization-provenance-rh.md) gives the required template and applies it to the Bombieri/Weil test-class work and related literature. Its source inspection does not imply reading history, intellectual influence, or kernel acceptance.
 
-Current follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
+Recorded follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
 
-Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
+Recorded follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
 
-Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
+Recorded follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
 
 This catalog supports [attribution issue #254](https://github.com/grwtsk/math/issues/254). It records bibliographic candidates and explicit source idea → owner understanding → pinned formalization links. Discovery is not evidence of reading, influence, originality, authorship, or proof acceptance. Attribution remains unresolved until source-specific review.
 
@@ -89,7 +93,7 @@ The [three additional manuscript versions under docs](spectral-docs-unpublished.
 
 Mapping extraction, rendering and validation tooling lives in `grwtsk/noeaaeue/operations/literature/`. Pre-read machine-access observations and extracted PDF text stay in the external library; bibliographic source records and original dates are preserved.
 
-Latest assessment of the 70 historically unresolved ideas: [taxonomy-organized paper-to-Lean follow-up](unmatched-idea-followup.md), with exact version/page and pinned declaration references.
+Recorded assessment of the 70 historically unresolved ideas: [taxonomy-organized paper-to-Lean follow-up](unmatched-idea-followup.md), with exact version/page and pinned declaration references.
 
 Implementation follow-up: [36 version-bound obligations with exact Lean bridges, hypotheses and remaining gaps](obligation-implementation-progress.md). Four optional/corrective obligations discharged; three conditional fragments; 29 unresolved. All seven main claims remain open.
 

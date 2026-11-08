@@ -1,6 +1,12 @@
 # Further Lean search: ten unresolved research ideas
 
-Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+[Reading and correspondence index](index.md). Follow-up labels and idea counts
+below retain their recorded source/version scope; they are not live status
+measurements or fresh verification of later Lean source bytes. Historical local
+PDF locators below are retained as provenance text; the files are outside this
+repository and their availability is unresolved.
+
+Recorded seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
 
 **3 conditional-fragment**; **7 unresolved**. All ten exact asset/idea identities remain separate. **No main manuscript claim is marked resolved.**
 
@@ -23,10 +29,10 @@ Both physical pages have now been reread. Upstream Cartan-matrix and root-system
 
 Paper evidence (physical page numbers; prior citations preserved):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2>): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2>): “4     Residue Suppression and Functional Equation Sym-”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1`): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2`): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1`): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2`): “4     Residue Suppression and Functional Equation Sym-”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
 
 Further complete pages read: 1, 2. Pages beyond previously recorded citation pages: none; reread of already recorded material. Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.
 
@@ -58,10 +64,10 @@ Both physical pages have now been reread. Upstream Cartan-matrix and root-system
 
 Paper evidence (physical page numbers; prior citations preserved):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1>): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2>): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1>): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2>): “4     Residue Suppression and Functional Equation Sym-”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1`): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2`): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1`): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2`): “4     Residue Suppression and Functional Equation Sym-”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
 
 Further complete pages read: 1, 2. Pages beyond previously recorded citation pages: none; reread of already recorded material. Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.
 
@@ -93,12 +99,12 @@ All four physical pages, including the references, have been reread. The upstrea
 
 Paper evidence (physical page numbers; prior citations preserved):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3>): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3>): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>): “• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=1>): “Kazhdan-Lusztig Polynomials and the Generalized”. Page-text SHA-256 `675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=4>): “[2] Roman Bezrukavnikov. Geometric approach to representation theory of reductive”. Page-text SHA-256 `4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2`): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3`): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3`): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2`): “• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=1`): “Kazhdan-Lusztig Polynomials and the Generalized”. Page-text SHA-256 `675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=4`): “[2] Roman Bezrukavnikov. Geometric approach to representation theory of reductive”. Page-text SHA-256 `4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880`.
 
 Further complete pages read: 1, 2, 3, 4. Pages beyond previously recorded citation pages: 1, 4. Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.
 
@@ -131,12 +137,12 @@ All four physical pages, including the references, have been reread. The upstrea
 
 Paper evidence (physical page numbers; prior citations preserved):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2>): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3>): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3>): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2>): “• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=1>): “Kazhdan-Lusztig Polynomials and the Generalized”. Page-text SHA-256 `675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=4>): “[2] Roman Bezrukavnikov. Geometric approach to representation theory of reductive”. Page-text SHA-256 `4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2`): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3`): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3`): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2`): “• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=1`): “Kazhdan-Lusztig Polynomials and the Generalized”. Page-text SHA-256 `675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=4`): “[2] Roman Bezrukavnikov. Geometric approach to representation theory of reductive”. Page-text SHA-256 `4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880`.
 
 Further complete pages read: 1, 2, 3, 4. Pages beyond previously recorded citation pages: 1, 4. Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.
 
@@ -167,19 +173,19 @@ The entire eleven-page version has now been read. Its explicit finite sum has a 
 
 Paper evidence (physical page numbers; prior citations preserved):
 
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=3>): “Theorem: Positivity Constraints for F4 and E8”. Page-text SHA-256 `99610e9919ad114cfb222667bd41771aa3b3895f779491bb758ba364ae52ef98`.
-- [p. 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=5>): “Extensions to Symmetric and Exterior Powers”. Page-text SHA-256 `029252e0e8c3cc44824ae20e6a0db4a1fa7016fb2489646e969b19de12e742b7`.
-- [p. 10](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=10>): “def residue_computation(prime_list, eigenvalues):”. Page-text SHA-256 `3943ccf311e2f855e0a595f09cbb263bc494c3c4e52d6d41d33c09b948f549c1`.
-- [p. 8](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=8>): “Prime p     Res(p)G2   Res(p)GL(7) Difference”. Page-text SHA-256 `eecf6273c7d8f380e42dbc525d90401a0d44133ed299aa89c5abdf5186ab877b`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=4>): “Proof. 1. **Compactification of Moduli Space:** Decompose the moduli space into boundary”. Page-text SHA-256 `ed0167e5d58cc5eab63bbcd26b1a38e6f98679d01463917efa66d981d4f67943`.
-- [p. 5](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=5>): “Prime p      Res(p)F4  Res(p)GL(26)      Difference”. Page-text SHA-256 `029252e0e8c3cc44824ae20e6a0db4a1fa7016fb2489646e969b19de12e742b7`.
-- [p. 9](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=9>): “A     Numerical Validation Methodologies”. Page-text SHA-256 `77a2f260c0736e8e8c98a159ecdbba5cd91659396819fc909c59b7dd45765a5d`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=1>): “Residue Suppression via Embeddings and Geometric”. Page-text SHA-256 `52e62cc4689596e7e883812a8efcb4c49d38a5bd1db9fb536ebd7a8d1781653c`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=2>): “2.2     Exceptional Group Embeddings”. Page-text SHA-256 `68340dd7ce9030a16224f8e9891f949936876c3765e541aad2322dab0995cd6a`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=3>): “3.2     Residue Suppression through Compactification”. Page-text SHA-256 `99610e9919ad114cfb222667bd41771aa3b3895f779491bb758ba364ae52ef98`.
-- [p. 6](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=6>): “space ME8 aligns boundary strata contributions with the critical line.”. Page-text SHA-256 `bf8a9b648c84b0895c7d4f619ed5280c68330459cc7c05c3054dd188e8a94aea`.
-- [p. 7](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=7>): “Prime p       Res(p)E8  Res(p)GL(248)     Difference”. Page-text SHA-256 `40dec6f4163b795b89f9cf94047c95412cc55dee53b439c59498373955fbc9b2`.
-- [p. 11](</Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=11>): “Prime p        Res(p)F4 Res(p)GL(26)         Difference”. Page-text SHA-256 `553dad95470fefe2fdb0f5457d50fe016b8336852141d8f6cfd06cf02bf79094`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=3`): “Theorem: Positivity Constraints for F4 and E8”. Page-text SHA-256 `99610e9919ad114cfb222667bd41771aa3b3895f779491bb758ba364ae52ef98`.
+- p. 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=5`): “Extensions to Symmetric and Exterior Powers”. Page-text SHA-256 `029252e0e8c3cc44824ae20e6a0db4a1fa7016fb2489646e969b19de12e742b7`.
+- p. 10 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=10`): “def residue_computation(prime_list, eigenvalues):”. Page-text SHA-256 `3943ccf311e2f855e0a595f09cbb263bc494c3c4e52d6d41d33c09b948f549c1`.
+- p. 8 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=8`): “Prime p     Res(p)G2   Res(p)GL(7) Difference”. Page-text SHA-256 `eecf6273c7d8f380e42dbc525d90401a0d44133ed299aa89c5abdf5186ab877b`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=4`): “Proof. 1. **Compactification of Moduli Space:** Decompose the moduli space into boundary”. Page-text SHA-256 `ed0167e5d58cc5eab63bbcd26b1a38e6f98679d01463917efa66d981d4f67943`.
+- p. 5 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=5`): “Prime p      Res(p)F4  Res(p)GL(26)      Difference”. Page-text SHA-256 `029252e0e8c3cc44824ae20e6a0db4a1fa7016fb2489646e969b19de12e742b7`.
+- p. 9 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=9`): “A     Numerical Validation Methodologies”. Page-text SHA-256 `77a2f260c0736e8e8c98a159ecdbba5cd91659396819fc909c59b7dd45765a5d`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=1`): “Residue Suppression via Embeddings and Geometric”. Page-text SHA-256 `52e62cc4689596e7e883812a8efcb4c49d38a5bd1db9fb536ebd7a8d1781653c`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=2`): “2.2     Exceptional Group Embeddings”. Page-text SHA-256 `68340dd7ce9030a16224f8e9891f949936876c3765e541aad2322dab0995cd6a`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=3`): “3.2     Residue Suppression through Compactification”. Page-text SHA-256 `99610e9919ad114cfb222667bd41771aa3b3895f779491bb758ba364ae52ef98`.
+- p. 6 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=6`): “space ME8 aligns boundary strata contributions with the critical line.”. Page-text SHA-256 `bf8a9b648c84b0895c7d4f619ed5280c68330459cc7c05c3054dd188e8a94aea`.
+- p. 7 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=7`): “Prime p       Res(p)E8  Res(p)GL(248)     Difference”. Page-text SHA-256 `40dec6f4163b795b89f9cf94047c95412cc55dee53b439c59498373955fbc9b2`.
+- p. 11 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/bd284739968e--D (2).pdf#page=11`): “Prime p        Res(p)F4 Res(p)GL(26)         Difference”. Page-text SHA-256 `553dad95470fefe2fdb0f5457d50fe016b8336852141d8f6cfd06cf02bf79094`.
 
 Further complete pages read: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11. Pages beyond previously recorded citation pages: 1, 2, 6, 7, 11. Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.
 
@@ -217,10 +223,10 @@ The complete two-page outline gives no boundary complex or analytic comparison. 
 
 Paper evidence (physical page numbers; prior citations preserved):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>): “Residue Suppression via Localization”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2>): “Positivity Constraints”. Page-text SHA-256 `ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>): “Boundary Regularization: A Framework for”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2>): “5     Positivity Constraints”. Page-text SHA-256 `ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1`): “Residue Suppression via Localization”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2`): “Positivity Constraints”. Page-text SHA-256 `ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1`): “Boundary Regularization: A Framework for”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2`): “5     Positivity Constraints”. Page-text SHA-256 `ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2`.
 
 Further complete pages read: 1, 2. Pages beyond previously recorded citation pages: none; reread of already recorded material. Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.
 
@@ -255,11 +261,11 @@ The complete three-page status note supplies no quantitative source inequality b
 
 Paper evidence (physical page numbers; prior citations preserved):
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>): “Statistical Independence of Zeros”. Page-text SHA-256 `b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3>): “Error Bounds for Mixed Automorphic Forms”. Page-text SHA-256 `c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1>): “Updated Verification of Recursive Refinement”. Page-text SHA-256 `7d7c35049871f94b14430d67322c1c07daaf6264263287c8eb07eee6f2449eb5`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3>): “Critical Review of Remaining Open Problems”. Page-text SHA-256 `c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>): “Fourier analysis. By demonstrating that cumulative errors across distinct”. Page-text SHA-256 `b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2`): “Statistical Independence of Zeros”. Page-text SHA-256 `b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3`): “Error Bounds for Mixed Automorphic Forms”. Page-text SHA-256 `c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1`): “Updated Verification of Recursive Refinement”. Page-text SHA-256 `7d7c35049871f94b14430d67322c1c07daaf6264263287c8eb07eee6f2449eb5`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3`): “Critical Review of Remaining Open Problems”. Page-text SHA-256 `c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2`): “Fourier analysis. By demonstrating that cumulative errors across distinct”. Page-text SHA-256 `b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973`.
 
 Further complete pages read: 1, 2, 3. Pages beyond previously recorded citation pages: none; reread of already recorded material. Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.
 
@@ -294,11 +300,11 @@ A complete three-page reread confirms that this is a list of objectives and numb
 
 Paper evidence (physical page numbers; prior citations preserved):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1>): “Analytic Number Theory”. Page-text SHA-256 `39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3>): “Computational and Experimental Verification”. Page-text SHA-256 `22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2>): “3     Algebraic Number Theory and Primes in Fields”. Page-text SHA-256 `506eb036515e8f32eed5d026e1e8d76a66eba7e8c16a86ff40ccfebfd6517ba4`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3>): “5     Geometric Representations and the Langlands”. Page-text SHA-256 `22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1>): “A Holistic Strategy for Deriving Properties of”. Page-text SHA-256 `39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1`): “Analytic Number Theory”. Page-text SHA-256 `39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3`): “Computational and Experimental Verification”. Page-text SHA-256 `22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2`): “3     Algebraic Number Theory and Primes in Fields”. Page-text SHA-256 `506eb036515e8f32eed5d026e1e8d76a66eba7e8c16a86ff40ccfebfd6517ba4`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3`): “5     Geometric Representations and the Langlands”. Page-text SHA-256 `22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1`): “A Holistic Strategy for Deriving Properties of”. Page-text SHA-256 `39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1`.
 
 Further complete pages read: 1, 2, 3. Pages beyond previously recorded citation pages: none; reread of already recorded material. Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.
 
@@ -330,10 +336,10 @@ The displayed Shannon summand has an exact upstream match: Real.negMulLog is −
 
 Paper evidence (physical page numbers; prior citations preserved):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1>): “Entropy Refinement”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=2>): “Zero-Free Regions”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1>): “Residue Clustering, Modular Symmetry, and the Generalized”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=2>): “4.2    Connecting to Random Matrix Theory”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1`): “Entropy Refinement”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=2`): “Zero-Free Regions”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=1`): “Residue Clustering, Modular Symmetry, and the Generalized”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0f3deff790c3--Entropy (1).pdf#page=2`): “4.2    Connecting to Random Matrix Theory”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
 
 Further complete pages read: 1, 2. Pages beyond previously recorded citation pages: none; reread of already recorded material. Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.
 
@@ -366,10 +372,10 @@ The displayed Shannon summand has an exact upstream match: Real.negMulLog is −
 
 Paper evidence (physical page numbers; prior citations preserved):
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=1>): “Entropy Refinement”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=2>): “Zero-Free Regions”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=1>): “Residue Clustering, Modular Symmetry, and the Generalized”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=2>): “4.2    Connecting to Random Matrix Theory”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=1`): “Entropy Refinement”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=2`): “Zero-Free Regions”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=1`): “Residue Clustering, Modular Symmetry, and the Generalized”. Page-text SHA-256 `b22db21a84ab09b40aff301714efb0283fe60f0b94ecdde9d418009085ae1a48`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/579328ace007--Entropy (2).pdf#page=2`): “4.2    Connecting to Random Matrix Theory”. Page-text SHA-256 `379fc45e173e2ffa6fc66c426a4831b30fd59ceb5976c8106cfc21b07b306756`.
 
 Further complete pages read: 1, 2. Pages beyond previously recorded citation pages: none; reread of already recorded material. Complete extracted text of this exact PDF version read/reread, including the final appendix/reference pages. This is source inspection, not full mathematical correctness, bibliographic verification or a kernel audit. Text-identical pages may be read once across distinct assets; identities remain separate.
 
