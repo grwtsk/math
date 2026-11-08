@@ -1,7 +1,12 @@
 # ICARM record #4239 — finite-source localization at 32 root characters
 
+[Mathematics index](../../index.md) · [Documentation overview](../../../index.md).
+Source links below resolve current files; the note’s recorded evidence and
+remaining obligations do not certify later source bytes or constitute fresh
+compilation, kernel replay, or axiom auditing.
+
 **Source status:** `SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED`. The Lean
-module `Record4239FiniteSourceLocalization.lean` is committed on `main`;
+module [`Record4239FiniteSourceLocalization.lean`](../../../../GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239FiniteSourceLocalization.lean) is committed on `main`;
 its proof candidates have not been elaborated by Lean in this runtime.
 Do not place it in the public `GRWTSK.lean` umbrella without replay.
 
@@ -16,7 +21,7 @@ Mathlib contributors (pinned Mathlib revision
 `db584cd6d46c92f209a44c0f1c829460d327499d`, Lean 4.33.0).
 
 Let `f(T) = T³ + shortA*T + shortB` and `R = AdjoinRoot f`.
-The earlier `Record4239IntegralOrderReduction.lean` constructs, **for
+The earlier [`Record4239IntegralOrderReduction.lean`](../../../../GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239IntegralOrderReduction.lean) constructs, **for
 each actual source-labelled** `(p_j,θ_j)`, a ring homomorphism
 `ρ_j : R →+* ZMod p_j` using the exact source root `f(θ_j)=0 (mod p_j)`.
 
@@ -126,7 +131,7 @@ BSD, GRH, RH, or signed-Weil comparison follows from this increment.
 * Rebuild all dependencies on a clean checkout at the *exact main
   commit* using Lean 4.33 / pinned Mathlib.
 * Verify proof elaboration of
-  `Record4239FiniteSourceLocalization.lean`, and run
+  [`Record4239FiniteSourceLocalization.lean`](../../../../GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239FiniteSourceLocalization.lean), and run
   `lake build --wfail`, an independent `--trust=0` check
   and `#print axioms` of the terminal declarations.
 * Test branch-zero vs derivative, simple-root failure,

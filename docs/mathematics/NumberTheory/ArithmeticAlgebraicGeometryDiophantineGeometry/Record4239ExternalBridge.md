@@ -1,5 +1,10 @@
 # ICARM 4239, explicit 2-descent, and Weil signed-form comparison: source interfaces
 
+[Mathematics index](../../index.md) · [Documentation overview](../../../index.md).
+Source links below resolve current files; the note’s recorded evidence and
+remaining obligations do not certify later source bytes or constitute fresh
+compilation, kernel replay, or axiom auditing.
+
 ## Version-pinned external sources
 
 * Elkies–Klagsbrun–Li, ICARM record #4239 (15 October 2026): https://elliptic-rank.icarm.cloud/curve/4239
@@ -14,7 +19,7 @@
 ## Proven and unproven logical interfaces
 
 1. Finite source input (merged PR #1050): `characterMatrix : Matrix (Fin 32) (Fin 32) (ZMod 2)` with `characterMatrix pointIndex characterIndex`, plus a source-only explicit matrix inverse. Python exact replay verifies the arithmetic, but the Lean module's `decide` proofs have **not been kernel-audited**.
-2. This new module `Record4239SquareClassBridge.lean` corrects the index orientation by using `characterMatrix.transpose.mulVec` on coefficient vectors. It consumes an **actual** homomorphism `mu : Multiplicative G →* C` and 32 **actual** `epsilon_j : C →* Multiplicative (ZMod 2)`. Its finite linear-algebra, integer descent, and rank-inequality implications are theorem candidates (not build receipts).
+2. This new module [`Record4239SquareClassBridge.lean`](../../../../GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/Record4239SquareClassBridge.lean) corrects the index orientation by using `characterMatrix.transpose.mulVec` on coefficient vectors. It consumes an **actual** homomorphism `mu : Multiplicative G →* C` and 32 **actual** `epsilon_j : C →* Multiplicative (ZMod 2)`. Its finite linear-algebra, integer descent, and rank-inequality implications are theorem candidates (not build receipts).
 3. To instantiate #4239, prove a true Weierstrass group equivalence for `(x,y) ↦ (36x+3,108(2y+x))`, including the point at infinity and nonsingularity. The coordinate identity in merged PR #1051 is only an affine equation, not a group equivalence. Import/adapt Stoll's `μ` (or prove a replacement), and construct local factor maps that correctly handle rational denominators, bad primes, the `f(θ)=0` branch, point infinity, and square-class equivalence. Match all 1024 evaluations in POINT-FIRST order. Without these premises, **no unconditional rank >=32 theorem** follows.
 4. A suitable native-group no-two-torsion lemma may use #1051's negation obstruction with native group negation; alternatively the `#E(F_7)=13`, `#E(F_19)=27` and Stoll's coprime point-count theorem can give full torsion-freeness after all reduction hypotheses are proved. Point counts alone are not a proof of the transport.
 5. Finite signed-form connection (new `SignedWeilComparisonGate.lean`): a negative signed source witness `q(x) ≤ -μ` forces comparison error `ε(x) ≥ μ` against every nonnegative Gram approximation. A strict negative signed-sector fixture prevents replacing the signed Weil consumer by the positive Hodge metric. This is a generic finite form result; no Weil explicit-formula source identity, zero-sum convergence, percentage of simple critical zeros, or RH statement is imported.
@@ -36,7 +41,7 @@ not merely in draft PRs. They remain `SOURCE_ONLY / NOT_RUN /
 NOT_KERNEL_AUDITED` and are intentionally not imported into
 `GRWTSK.lean` until independent replay.
 
-1. `Record4239IntegralOrderReduction.lean` constructs the real
+1. [`Record4239IntegralOrderReduction.lean`](../../../../GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239IntegralOrderReduction.lean) constructs the real
    `RecordIntegralOrder := AdjoinRoot shortCubic`, where the polynomial
    is precisely `T³+shortA*T+shortB` over `ℤ`. For each of the
    thirty-two source labels `(primeLabel j,rootLabel j)`, the existing
@@ -50,7 +55,7 @@ NOT_KERNEL_AUDITED` and are intentionally not imported into
    vanishes. The resulting 1,024 reductions are nonzero. This proves
    neither that these elements are *global units* nor that arbitrary
    rational x−T classes can be reduced modulo p.
-2. `Record4239NativeConditionalRank.lean` fixes the **actual native**
+2. [`Record4239NativeConditionalRank.lean`](../../../../GRWTSK/GroupTheoryAndGeneralizations/Semigroups/Record4239NativeConditionalRank.lean) fixes the **actual native**
    `nativeCurve.toAffine.Point` and the actual 32 `nativePoint i`
    witnesses. It applies the existing native no-two-torsion theorem
    and the **point-first / character-second** binary inverse,

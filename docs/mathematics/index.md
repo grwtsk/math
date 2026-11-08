@@ -22,6 +22,15 @@ Current Lean source folders and authored subject guides use the official MSC2020
 
 <!-- END GENERATED MATHEMATICS NAVIGATION -->
 
+## Arithmetic geometry source notes
+
+The ICARM #4239 notes cover [finite certificate scope](NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239FiniteCertificate.md),
+[local square-class suppliers](NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239LocalSquareClass.md),
+[finite-source localization](NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239FiniteSourceLocalization.md),
+and [external source interfaces](NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239ExternalBridge.md).
+Their exact hypotheses, source comparisons, and unresolved obligations retain
+their individual evidence scopes; inclusion here is navigation, not proof acceptance.
+
 <!-- VERIFICATION AMENDMENT ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b -->
 [Terminal cross-branch verification update](verification-updates.md): the 107-target attempt ended before declaration audits; all 107 targets remain `NOT_RUN`, all 10 exact type checks remain `NOT_RUN`, and S₃ is unavailable. [Full target roster and terminal evidence](_support/verification-updates/declaration107-lossless-restart-20261026.md).
 <!-- END VERIFICATION AMENDMENT -->

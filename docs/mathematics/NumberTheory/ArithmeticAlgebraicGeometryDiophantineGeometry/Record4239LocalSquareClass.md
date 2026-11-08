@@ -1,11 +1,16 @@
 # ICARM #4239 local residue square-class supplier
 
+[Mathematics index](../../index.md) · [Documentation overview](../../../index.md).
+Source links below resolve current files; the note’s recorded evidence and
+remaining obligations do not certify later source bytes or constitute fresh
+compilation, kernel replay, or axiom auditing.
+
 **Status: SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.**
 
 The finite quadratic character used by the 32-point certificate has two
 separable obligations:
 
-1. **Finite-field mathematics, proposed Lean module:** `Record4239LocalSquareClass.lean`
+1. **Finite-field mathematics, proposed Lean module:** [`Record4239LocalSquareClass.lean`](../../../../GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239LocalSquareClass.lean)
    defines a genuine monoid homomorphism `(ZMod p)ˣ →* Multiplicative (ZMod 2)`
    by composing Mathlib's `quadraticChar` with sign parity. It proves a
    square-annihilation theorem and constructs a quotient-group homomorphism
@@ -45,7 +50,7 @@ axiom-closure review and adverse fixtures.
 
 ## Follow-on supplier: unit square-class transport (same draft PR)
 
-`Record4239UnitSquareClassTransport.lean` constructs, for any true unital ring
+[`Record4239UnitSquareClassTransport.lean`](../../../../GRWTSK/CommutativeAlgebra/Record4239UnitSquareClassTransport.lean) constructs, for any true unital ring
 homomorphism `f : R →+* S`, a **genuine** group homomorphism
 
 ```
