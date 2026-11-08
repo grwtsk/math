@@ -158,7 +158,7 @@ the mathematical documentation tree without overwriting authored files.
 
 ## Mathematical communication for humans and AI
 
-Use the [structural-intelligence guide](structural-intelligence.md) when authoring
+Use the [proof-comparison disposition](proof-comparison-disposition.md) when authoring
 or reviewing a result. Explain the problem and objects, the exact statement, the
 proof strategy, each substantial lemma's role, the intended application, and a
 boundary or counterexample. Preserve quantifier order and permitted dependencies
