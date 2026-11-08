@@ -1,0 +1,162 @@
+{
+  "Noe_checker_directory": "tools/chi3_radius_four_remaining_schur",
+  "canonical_noe_instruction_revision": "0ca03a08fe714c95e7a52466fa3bb1a2f8b1c753",
+  "claims": [
+    {
+      "evidence": "COMPLETE_WRITTEN_SOURCE_PROOF_PLUS_EXACT_PARAMETER_GUARDS",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.finiteGram.remainingSchur.weightedSource",
+      "proof": "Exact identity R=K_w* V0 K_w, V0 multiplication by RAW s4; original S=B I+K_wQ* M_w K_wQ. M_w=V0-V0 K_wP A^-1 K_wP* V0, positive subtracted term, original alpha23 retained separately; ||M_w||<741. No inverse sqrt(w) is used.",
+      "type": "For EVERY v in original QH, <Sv,v>>=B E(v)-741||K_w v||^2; K_w f=sqrt(w)Ff restrictedD, into ordinary odd L2(D,dxi/(2pi))."
+    },
+    {
+      "evidence": "COMPLETE_WRITTEN_ALL_INPUT_PROOF_PLUS_EXACT_RATIONAL_GUARDS",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.finiteGram.remainingSchur.globalLower",
+      "proof": "Same original Uold sits inside constructed Unew; ||K_w|Unew||^2<1/49900. Thus SAME D_U>=aGap I with aGap=b-741/49900>11/100 and inverse<100/11. Full physical norm-square completion at the TRUE old-U minimizer gives coefficient741*b/aGap<841, retaining all old-U couplings.",
+      "type": "For EVERY z in the SAME original Z_F, <K_Z z,z>>=b E(z)-841||K_w z||^2, b=B-5e-54."
+    },
+    {
+      "evidence": "COMPLETE_WRITTEN_PROOF_PLUS_EXACT_SCALAR_GUARDS",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.finiteGram.remainingSchur.nestedSector",
+      "proof": "ENTIRE outer Fourier integral at H1=31075000, SAME PL pass law, exact rho3953/3955 and exp22 positive41-term guard, full sine-Legendre tail<1e-120 and genuine Gram projection. TRUE old-U minimizer stays in Unew; no union of unrelated positive compressions.",
+      "type": "Xnew=Y_(39530000,11000) intersect QH, Unew=Pi_F Xnew, dim16519001. Xold subsetXnew and Uold subsetUnew exactly. For EVERY z in Znew=Unew intersect Uold-perp (dimension1360000), <K_Zz,z>>=(11/100)E(z). Strict for nonzero with the proved larger aGap."
+    },
+    {
+      "boundary": "This refutes a helper inequality, NOT K_Z>=0 or the original stage. A negative coarse lower bound is not a negative actual source value.",
+      "constructor": "g=psi_K+[K/(K+1)]psi_(K+1), K4800000000, a genuine native compact C2 trace test with g orthogonal Xold. z=Pi_Z_F g=(I-Pi_Uold)Pi_F g. Both projections use ACTUAL physical Grams; Pi_Uold is not D_U^-1.",
+      "evidence": "COMPLETE_WRITTEN_ACTUAL_CARRIER_PROOF_PLUS_INDEPENDENT_EXACT_GUARDS",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.finiteGram.remainingSchur.weightedMassObstruction",
+      "proof": "Full two-sided sine tails outside mirrored radius101 bands cost<=1/150. Actual entire bands lie inD; PL<=9/2^1425<1e-40 and PH>=1-4e-32 by exact Markov/alternating bounds, hencew>=.99. Full Legendre tail and old-X orthogonality give projection norm error<=2e-60. All errors/source parameters retained.",
+      "type": "There EXISTS a NONZERO REAL z in the SAME actual Z_F with ||K_w z||^2>=(19/20)E(z). Therefore the proposed universal small-mass bound ||K_w z||^2<=b/841 E(z) is FALSE."
+    },
+    {
+      "evidence": "ALL458_EXACT_OUTWARD_ROWS_PLUS_COMPLETE_WRITTEN_INTERVAL_RETURN",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.frequencyObstruction",
+      "proof": "Fresh ALL458 signed interval evaluation, actual full log/phase/sqrt/atan/Taylor errors, full interval Lipschitz law and current all-lobe filter laws give s4<=-6,w>.99,m<=-5.9. The subtracted source term is genuinely positive.",
+      "type": "On ALL odd frequency y supported mirrored J=+/-[3806849122861433/1e6-1e-5,3806849122861433/1e6+1e-5], <My,y><=-59/10||y||^2 for the ORIGINAL unweighted M=m-mK_P A^-1 K_P* m."
+    },
+    {
+      "evidence": "COMPLETE_WRITTEN_PROOF; EIGENVALUES_NOT_NUMERICALLY_COMPUTED",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.frequencyObstruction.denseSpectra",
+      "proof": "Adjoint kernel: compact-band entire inverse Fourier function equals finite sine sum (Q case), or polynomial+finite sine (W case), onI; analytic identity plus global L2 forceszero. Finite-dimensional uniform dense approximation transfers actual frequency negativity; compact selfadjoint spectral theorem gives infinite negative index.",
+      "type": "K_Q:QH->Yodd(D) and K_W:W->Yodd(D) have dense range, not surjective. S-BI and Dinf-BI have infinitely many negative compact eigenvalues tending0. Dinf itself stays>1/9. No negative S or j3 witness follows."
+    },
+    {
+      "evidence": "COMPLETE_WRITTEN_PROOF_PLUS_EXACT_SCALAR_GUARDS",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.frequencyObstruction.fullNormCost",
+      "proof": "Both interval signs and dxi/(2pi), compact physical length8; complete W Hilbert-Schmidt tail<1e-60, ideal inequality and singular-value lower bound; compactness plus analytic non-surjectivity gives divergence.",
+      "type": "For EVERY f, ||1_J Kf||^2<=E(f)/18750. For EVERY n>=1 and EVERY eta<1 approximate right inverse T_n from an n-dimensional Y_J subspace to W, ||T_n||^2>n(1-eta)^2*1e60. Fixed nonzero J-supported outputs are never exact images and approximating norms diverge."
+    },
+    {
+      "evidence": "COMPLETE_WRITTEN_FULL_SERIES_PROOF",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.frequencyObstruction.entireSpectralTail",
+      "proof": "Trace ideal norm<=||M||||K_W||HS^2, complete spectral theorem, sorted partial-sum inequality. No tail is dropped or eigenvalue numerically presumed.",
+      "type": "ENTIRE negative magnitudes of Dinf-BI sum<741e-60. Sorted nu_0>=nu_1... keep multiplicities; for EVERY J>=0 the full operator-norm tail sum_(j>=J)nu_j E_j is <=741e-60/(J+1). Dinf>B-741e-60>1/9."
+    },
+    {
+      "evidence": "OPEN_NOT_DISCHARGED; new lower comparison and nested sign do not prove the full signed compression.",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.finiteGram.remainingSchur",
+      "type": "For EVERY z in the ENTIRE SAME original physical Z_F, <(T_Z-B_U*D_U^-1B_U)z,z>>=0."
+    }
+  ],
+  "common_contract": {
+    "D": "{30000000<|xi|<35*10^24} minus both intervals centred +/-18524227541662946/10^7 with radius10.",
+    "F_G": "L=420000000000000000000000000, V span ALL odd normalized Legendre ell_n,n<L; F=QV, W=QH intersect V-perp. q_n=Qell_n, G_nj=<q_n,q_j>, H_nj=<q_n,Sq_j>; dimF=210000000000000000000000000.",
+    "Fourier": "Ff(xi)=integral f(t)exp(i xi t)dt; frequency measure dxi/(2pi).",
+    "carrier": "ALL odd real/complex physical L2([-4,4],Lebesgue dt), zero extended. Original real compact C2 admissible core retained.",
+    "character": "Actual primitive nonprincipal modThreeQuadratic chi3=(0,1,-1), conductor3, gamma parity1, no pole.",
+    "filters": "UNCHANGED PH7990/2820 hH=1/(2*10^25); PL19000/1425 hL=153/(2*10^9); w=PH^2(1-PL^2).",
+    "native_source": "ALL458 original unramified prime powers p^e<=2980,p!=3, with every signed identity/interval/error retained. Existing 4096-row enlarged-support source instance remains at its recorded written/exact level.",
+    "norm": "E(f)=integral|f|^2dt. Actual coefficient energy is a*G a. No physical energy is replaced by weighted Fourier mass or a raw coefficient norm.",
+    "original_S": "P original P23 trace-zero sine head, Q=I-P, R original residual, A=P(R+B I)P, S=Q(R+B I)Q-QRP A^-1 PRQ, B=124997987/10^9. A inverse is the actual positive source inverse.",
+    "unchanged_remaining_target": "epsilon=5e-54, L_F=S_F-epsilon I; Uold=Pi_F Xold from N38170000,m11000, dim15159001; Z_F=F intersect Uold-perp; D_U=Pi_Uold L_F|Uold, B_U=Pi_Uold S_F|Z_F, T_Z=Pi_Z_F L_F|Z_F, K_Z=T_Z-B_U*D_U^-1B_U. ALL domains are the full displayed physical subspaces."
+  },
+  "comparison": {
+    "independence": "Independent argument/constant audit shares source lemmas and displayed formulas; no independent human or full kernel proof is inferred.",
+    "independent_human_review": "NOT_RUN",
+    "mechanism": "Exact square-root source factorization and true old-U minimization, compared on the SAME residual/Gram. New nested sign is a proper restricted result, not a full finite proof. Source-specific negative multiplier and analytic dense-range/norm-cost consequences explain why frequency and physical metrics cannot be identified.",
+    "novelty": "NOT_ASSESSED",
+    "primary_sources": "Native source proofs at pinned revisions; standard Legendre normalization/Rodrigues https://dlmf.nist.gov/18.3 and https://dlmf.nist.gov/18.5#ii. Finite-window zeta primary comparison https://arxiv.org/html/2608.24827v2 supplies nochi3 radius4 theorem; finiteq3 verification https://arxiv.org/abs/1305.3087 does not cover arbitrary heights."
+  },
+  "consumed_math_revision": "eef4e69aac22d8e6495052b391ed381b80f5eda0",
+  "evidence": {
+    "Lean_compilation": "NOT_RUN",
+    "Noe_jobs": "NONE",
+    "finite_exact_arithmetic": "FOUR_ORIGINAL_PAYLOAD_BYTE_MATCHES_AND_FINAL_SOURCE_READBACK_PASS",
+    "fresh_kernel": "NOT_RUN",
+    "full_remaining_Schur_sign": "OPEN_NOT_RUN",
+    "independent_audit": "PASS for exact arithmetic/physical normalization, true projection, dense-range proof and source norm-cost; shared native analytic premises, not independent human/kernel review.",
+    "transitive_axiom_audit": "NOT_RUN",
+    "universal_analytic_results": "COMPLETE_WRITTEN_AT_STATED_LOCAL_SCOPES"
+  },
+  "heat_interfaces": {
+    "D_U": "Actual unchanged positive D_U, domainALLUold, heat exp(-tD_U), semigroup/norm return, inverse integral and ENTIRE time tail exp(-aGap*T)/aGap.",
+    "coverage": "Representable dependent finite syntax exhaustively indexed by natural codes, invalid/status codes retained; existing dyadic pi_n=2^-n-1 has total1 and ENTIRE tail2^-J, inverse source return2Kx-(sum Kx)pi=x. Positive weights imply no arithmetic sign.",
+    "far": "Actual Dinf heat/inverse remains positive with complete Neumann/time tails, despite infinitely many downward shifts relativeB.",
+    "negative_frequency": "Actual compression N_J=-Pi_J M|Y_J>=59/10 onALLY_J has genuine spectral heat/inverse/full time tail10/59 exp(-59T/10). No invariance of Y_J under M claimed.",
+    "remaining_reference": "From global bound K_Z+841I>=bI, the ACTUAL SHIFTED bounded generator on ALL Z_F has spectral heat with norm<=exp(-bt), source return, inverse integral and full time tail exp(-bT)/b. This proves NO unshifted K_Z sign."
+  },
+  "local_attribution": "grwtsk contributors",
+  "lossless_interfaces": {
+    "actual_bundle_readback": "PASS: complete map byte equality and separate all54-member byte identity; every dependent source, parameter, certificate and error field retained.",
+    "boundary": "Finite descriptions of giant Gram projectors, infinite spectra and arbitrary bound variables do not compute their semantic values or remove convergence/domain/tail obligations. G and G_U remain their actual physical Grams, not identity.",
+    "codec": "Reuse PaidPacket.RetainedEvidence full decodeRetained(retainedCodec.encode(data))=data. Preserve complete dependent descriptors, source identity, parameters, checker/proof/certificate bytes and every approximation/tail error."
+  },
+  "next_exact_missing_lemma": "UNCHANGED: prove K_Z>=0 on ALL original Z_F with actual G and TRUE D_U inverse. Pointwise M>=0 and uniform small Kw mass are proved false as helper routes; a genuine signed physical compression estimate is still needed.",
+  "original_targets": {
+    "GRH_family": "ALL complex Dirichlet characters modulo EVERY positive integer INCLUDING principal and imprimitive; every zero0<Re(s)<1 hasRe(s)=1/2. OPEN. No Hecke/Artin/automorphic claim.",
+    "RH": "_root_.RiemannHypothesis. OPEN.",
+    "cofinal_contract": "RH AND native PrimitiveNegativeWitness AND ALL required SmallConductorStages for EVERY primitive nonprincipal character. A completedchi3 j3 is only ONE coordinate.",
+    "j3": "PrimitiveStageLower actualchi3 hp hn3; ALL original radius-four real odd compactC2 Admissible tests, Q4>=-E/8. OPEN.",
+    "path": "foundations -> originalP23/sourceM -> PROVED weighted source comparison AND actual source obstructions -> SAME remaining K_Z (OPEN) -> full H-5e-54G -> original S -> residual budget -> originalchi3 j3 -> one cofinal coordinate; RH, negative witness and every other required character/stage remain."
+  },
+  "publication_tree_baseline_observed": "f4993694a279f6f9d355f1ed9967239dfc3aee3d",
+  "retained_bundle": {
+    "bytes": 1300988,
+    "final_source_manifest_sha256": "9bd2234719b79105f10bf85a8447e75ed35b4e20c783058bc55d2e57fd58789d",
+    "index_sha256": "74322a6e88c5fba5d75c4cbc6c161dd090f6dab9951bec71445ff85b7bb8b81c",
+    "members": 54,
+    "path": ".cache/chi3-radius-four-remaining-schur-20261108/retained-proof-data.tar.gz",
+    "replay_receipt_sha256": "16142d7e290d5a9f2e8108a5ebc7111de96da7527ecd6505c6e2196ba810596e",
+    "repository": "grwtsk/noeaaeue",
+    "scope": "Four complete original payload byte matches, final canonical source readback, full byte-map equality and second all54-member readback PASS. Original weighted proof/receipt remain separate from final canonical source with appended actual-Z_F obstruction.",
+    "sha256": "6521eac8f29f60b24b27bcd80459f614123dac41824b1dfe45d517ddae9f7378",
+    "source_audit_sha256": "53390ee0f5f9c2ce5107ad62d6cb4c595d31327800f7a04c89f6ad56455268df",
+    "uncompressed_bytes": 3791603
+  },
+  "schema": "grwtsk.math.static-verification-target/1",
+  "sources": [
+    {
+      "bytes": 24472,
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourWeightedSchurSource.lean",
+      "sha256": "e32dcfdccf9b80b930483b8a79a28f8f1f728a8a1cdf5361ba115ee8f310d198"
+    },
+    {
+      "bytes": 22908,
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourFrequencyObstruction.lean",
+      "sha256": "7f221114021e6f7f044168e670d98d8e78576a1ae2dfd63569398b088b4a4398"
+    }
+  ],
+  "static_mathematical_data": [
+    {
+      "bytes": 6790,
+      "path": "documentation/mathematics/_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourWeightedSchurSource/data/weighted_source.json",
+      "sha256": "7fd48ee0b91a7f2b96b9a3f01f66f6e1f5c45493c7134a6257e8e40528ba72a0"
+    },
+    {
+      "bytes": 901581,
+      "path": "documentation/mathematics/_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourFrequencyObstruction/data/frequency_obstruction.json",
+      "sha256": "6113cfaf33953e18ad0c8411f644c6b775116802f9fa8a7b71472bdc8b562f65"
+    },
+    {
+      "bytes": 2719,
+      "path": "documentation/mathematics/_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourWeightedSchurSource/data/high_mass_ZF.json",
+      "sha256": "8c633fd70a98a94ab212dc881e4a7fbc45fafead4b5893a66489b2dadd82adb4"
+    },
+    {
+      "bytes": 2851,
+      "path": "documentation/mathematics/_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourFrequencyObstruction/data/density_norm_cost.json",
+      "sha256": "4c573caa4f87327fac21d64a9f4d8bf226ba40a5e822086549b54118afa99750"
+    }
+  ],
+  "status": "GLOBAL_SAME_REMAINING_LOWER_BOUND_AND_RESTRICTED_SIGN_PROVED_WRITTEN; ACTUAL_SOURCE_OBSTRUCTIONS_PROVED; WHOLE_REMAINING_KZ_J3_RH_GRH_OPEN"
+}
