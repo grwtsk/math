@@ -12,6 +12,8 @@ Links to source articles removed by the bulk documentation deletions open their 
 
 [Browse Lean source folders by subject](complete-source-index.md) · [Authored subject guides](../taxonomy/subjects/index.md) · [Naming and source provenance](../taxonomy/msc2020/README.md).
 
+[Support and reference guides](_support/index.md) include contribution guidance, source-organization contracts, historical inventories, and the literature index.
+
 [Provider packages and source links](../adapters/README.md) retain isolated native dependencies; their Lean files link to the canonical `GRWTSK/` subject tree.
 
 Current Lean source folders and authored subject guides use the official MSC2020 heading hierarchy. The source-folder index opens the maintained Lean tree; the subject-guide index opens authored definitions. Archived source articles preserve their original source and declaration identities, literal source windows, hypotheses, and verification scope.

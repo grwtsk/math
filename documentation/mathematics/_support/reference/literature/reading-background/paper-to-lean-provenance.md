@@ -151,12 +151,14 @@ conditional interfaces, not imported theorems.
 
 ## Farey return, angular observation and cyclic-residue Hodge — 2026-10-23
 
-The authoritative [paper-to-formalization references ledger](paper-to-formalization-references.md#case-farey-angular-02--oriented-return-phase-not-a-global-spectral-character)
-records the exact source identities and **paper boundary** for the
+Historical cross-reference limitation: the maintained [paper-to-formalization ledger](paper-to-formalization-references.md) no longer contains the referenced `FAREY-ANGULAR-02`, `FAREY-HODGE-01`, or `FAREY-RECENT-OBSTRUCTIONS-20261023` entries. The historical descriptions below retain their original scope; the missing ledger readback is unresolved and is not evidence of source verification.
+
+The historical `FAREY-ANGULAR-02` ledger entry was cited for the
+exact source identities and **paper boundary** of the
 Farey return's mod-three angular observation and its
 sign/projectivization obstruction; the
-[cyclic-residue Hodge entry](paper-to-formalization-references.md#case-farey-hodge-01--cyclic-residue-hodge-and-nonunit-equivariance-failure)
-records the finite graph/Dirichlet-residue application.
+historical `FAREY-HODGE-01` entry was cited for the finite
+graph/Dirichlet-residue application.
 These are **2026 repository-derived constructions**, **not** imports
 of a newly identified publication. The source credits mathematical direction
 to grwtsk contributors and OpenAI formalization assistance; outside
@@ -172,7 +174,8 @@ weight and ordinary-average cancellation make this
 Fully qualified declaration names, exact hypotheses (selected
 positive Farey word, mod-three quotient, oriented phase, sign-gauge
 invariance, nonunit residue two mod four), first main commits and
-Git blobs are in the linked ledger. The parent eight-module
+Git blobs were attributed to those historical ledger entries; their readback
+is unresolved here. The parent eight-module
 finite-algebra scope has a recorded local exit-zero Lean/kernel/axiom
 qualification at `55fe9dbc34a784cb15782c9dfb0d371a55c6f988`;
 that status **does not extend** to the `ReturnAngularChannel`,
@@ -189,9 +192,9 @@ cross-index, are the source for provenance and verification claims.
 
 ## Bounded formalization of recent group/spectral obstructions — 2026-10-23
 
-The [fully sourced reference entry](paper-to-formalization-references.md#case-farey-recent-obstructions-20261023--exact-suppliers-versus-solvedopen-paper-analogies)
-and [exact mathematical scope note](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/recent-obstructions-formalization-2026.md)
-record four genuinely integrated repository math sources:
+The historical `FAREY-RECENT-OBSTRUCTIONS-20261023` entry is unavailable in
+the maintained ledger. The retained [exact mathematical scope note](https://github.com/grwtsk/math/blob/9b46c9dc984c2a20cef7fe59984514ab038f0d58/documentation/mathematics/NumberTheory/recent-obstructions-formalization-2026.md)
+records the following four repository source correspondences at its stated scope:
 
 - `GRWTSK.Spectral.FareySturmianFreeConjugacy`,
   `f7d8dd922f763c786b61d436f16dba5bf955865f`,

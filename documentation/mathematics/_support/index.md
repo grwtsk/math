@@ -1,4 +1,23 @@
-# _support
+# Mathematical support and reference
+
+[Mathematics index](../index.md) · [Documentation overview](../../index.md)
+
+## Reading and contributing
+
+- [Least-prime walkthrough](start/least-prime.md) and [formalization contributions](start/formalization-contributions.md).
+- [Proof-comparison disposition](reference/proof-comparison-disposition.md), [article standard](reference/result-article-standard.md), and [mathematical terminology](reference/mathematical-terminology.md).
+- [Literature and correspondence index](reference/literature/reading-background/index.md): recorded source comparisons and unresolved bridges.
+
+## Source organization and historical inventories
+
+- [Lean subject placement](reference/lean-subject-placement.md) and [declaration-level conceptual seams](reference/lean-conceptual-seams.md): source specifications, not authorization to move modules.
+- [Filename conventions](reference/standard-mathematical-source-names.md) and [current Lean source folders](../complete-source-index.md).
+- [Historical page inventory](reference/library-pages.md), [publication contract](reference/complete-publication-contract.md), and [source intake](reference/source-intake.md).
+
+## Retained generated snapshot
+
+The generated navigation below describes its pinned publication, not current coverage. Its counts and score availability retain their original scope. The source-folder index now opens maintained Lean directories rather than every declaration article.
+
 
 <!-- BEGIN GENERATED MATHEMATICS NAVIGATION -->
 
@@ -8,7 +27,7 @@ This directory groups existing source guides. Its storage name does not establis
 
 ## Complete source publication
 
-[Every source module and declaration](../complete-source-index.md). All source families and verification outcomes are included. Preview limits below do not limit catalogue membership.
+[Current source folders by subject](../complete-source-index.md). The earlier complete article publication is described by the [historical publication contract](reference/complete-publication-contract.md).
 
 [Every source beneath this directory](complete-source-index.md). This follows the complete source path hierarchy at this level.
 

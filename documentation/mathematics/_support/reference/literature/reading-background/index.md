@@ -1,12 +1,19 @@
-# Literature index
+# Literature and source-correspondence index
 
-Latest seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+[Support and reference](../../../index.md) · [Mathematics index](../../../../index.md)
 
-Current follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
+This index retains bibliographic and correspondence observations at their recorded versions. Follow-up labels and unresolved-idea counts below describe those assessments, not a live search or current proof status. Bibliographic tables retain their original bylines and edition details.
 
-Current follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
+[Paper-to-formalization ledger](paper-to-formalization-references.md) · [Paper-to-Lean provenance](paper-to-lean-provenance.md). Source references and missing correspondence must be checked at their exact scope; a ledger entry or link supplies no proof acceptance.
 
-Current follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
+
+Recorded seven-idea assessment: [precise construction and proof obligations by taxonomy](seven-idea-construction-plan.md). All seven remain unresolved; recording a construction plan does not establish a Lean bridge.
+
+Recorded follow-up for the ten unresolved ideas: [broader maintained/upstream Lean search by taxonomy](ten-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes narrow conditional fragments and remaining gaps.
+
+Recorded follow-up for the 21 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](remaining-idea-target-search.md). Earlier statuses remain historical; the newer review distinguishes conditional fragments, obstruction checks, repair candidates and remaining gaps.
+
+Recorded follow-up for the 40 unresolved ideas: [broader maintained/upstream Lean search by taxonomy](unresolved-idea-broader-search.md). Earlier statuses remain historical; the newer review distinguishes narrow fragments, corrections and remaining gaps.
 
 See the [idea–formalization map by subject](idea-formalization-map.md) for 226 pinned code links and the [unpublished-source coverage](unpublished-mapping-coverage.md) for explicit unresolved bridges.
 
@@ -595,7 +602,7 @@ Subjects follow the catalog’s provisional taxonomy. Each distinct asset appear
 | Superfluid Weight Bounds from Symmetry and Quantum Geometry in Flat Bands | Jonah Herzog-Arbeitman; Valerio Peri; Frank Schindler; Sebastian D. Huber; B. Andrei Bernevig | 2022-02-25 | [10.1103/PhysRevLett.128.087002](https://doi.org/10.1103/PhysRevLett.128.087002) | Not established | Version not established / 727f5a996dfc |
 | The Scanline Sweeper: A Glyph Rendering Algorithm | Scuff3D Rook; Rook & Possum | Publication date unresolved | Not established | Not established | v0.1 / b90608e621ac |
 
-Latest assessment of the 70 historically unresolved ideas: [taxonomy-organized paper-to-Lean follow-up](unmatched-idea-followup.md), with exact version/page and pinned declaration references.
+Recorded assessment of the 70 historically unresolved ideas: [taxonomy-organized paper-to-Lean follow-up](unmatched-idea-followup.md), with exact version/page and pinned declaration references.
 
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=6ead13e55fa2ad9b03bf4d3f9e3bb88ed3d150a1ffad1ae0eeab0e4a86e70d26 -->
 
