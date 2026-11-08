@@ -1,0 +1,90 @@
+{
+  "schema": "grwtsk.math.static-mathematical-verification-target.v1",
+  "authors": "grwtsk contributors",
+  "target_id": "chi3-sharp-edge-smooth-direction-20261107",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeSharpEdgeSmoothDirection.lean",
+    "sha256": "df97d017ffe296d097d1f18c33ded4333095fd60a560733ef970ed4d6fc14898"
+  },
+  "math_initial_revision": "fe3fd586707c81fdd693a076c4971bea6fbe51e8",
+  "canonical_noe_revision_read": "9d456d64a0137289cddc416ea78f043cf345873a",
+  "branch_identifiers": [
+    "obl.stage",
+    "cert.all-small-conductor-stages",
+    "radiusFour.sharpEdgeSchur",
+    "sharpEdge.actualResidual"
+  ],
+  "original_target": "DirichletStageChain.PrimitiveStageLower modThreeQuadratic modThreeQuadratic_primitive modThreeQuadratic_nonprincipal 3",
+  "carrier": {
+    "core": "ALL complex physical L2((0,3),dt) finite original odd gamma form vectors",
+    "edge": "entire Complex span of v*(y)=4sin(pi(y-3))^3/sqrt5 on(3,4), zero elsewhere",
+    "quantifiers": "EVERY core u0 and EVERY c in Complex; ||v*||^2=1",
+    "norm": "physical Lebesgue dt, antilinear-first",
+    "energy": "E(O4u)=2||u||^2",
+    "normalization": "m=Q4(O4u)/2+||u||^2/8; actual A0>=3I/40",
+    "source": "primitive nonprincipal chi3 conductor3 parity1, no pole, ALL458 native atoms including30 higher powers"
+  },
+  "completed_exact_source_obligations": {
+    "m11_interval": [
+      228844704102675232555077,
+      228968149638567757497647
+    ],
+    "Bpair_interval": [
+      76164558287088249377845,
+      76164558298012141551342
+    ],
+    "denominator": 1208925819614629174706176,
+    "entire_core_rfin_sup_upper_numerator": 36267449443409213140219,
+    "rfin_sup_upper": "3/100",
+    "entire_gamma_action_error": "<1/400",
+    "true_residual_L2_squared": "<=1/300",
+    "exact_trial_L2_squared": "210162652293759/20000000000000000",
+    "trial_L2_upper": "103/1000",
+    "true_residual_L2_upper": "29/500",
+    "exact_residual_return": "<z,A0^-1z>=Re<z,h>+Re<r,h>+<r,A0^-1r>, r=z-A0h",
+    "sharp_gap_strict_lower": "3/40",
+    "computed_lower_expression": [
+      12899248105917437452248317831,
+      170005193383307227693056000000
+    ],
+    "all_core_return": "m[u0+c v*]>=(3/40)||u0+c A0^-1Bv*||^2+(3/40)|c|^2",
+    "true_inverse_trial_norm": "<2629/3000<9/10",
+    "physical_norm_return": "||u0+c v*||^2 <=(12/5)||u0+c A0^-1Bv*||^2+(418/175)|c|^2",
+    "actual_restricted_heat": "M_K>=I/32, ||exp(-tM_K)||<=exp(-t/32) for EVERY t>=0; K=H0+Complex*v* is a form restriction, not an asserted reducing subspace",
+    "restricted_original_source_return": "Q4>=-3E/32",
+    "earlier_valid_weaker_bounds": [
+      "1/180",
+      "1/15",
+      "10/5769",
+      "40/1923"
+    ]
+  },
+  "complete_proof_data": {
+    "Noe_relative_directory": ".cache/chi3-sharp-edge-certified-20261107-stage",
+    "bundle": "smooth_direction_complete_bundle_stage.zip",
+    "bundle_sha256": "a63a5a211bbd39e33d49577f3bd7a523e84a5e8741b1fac6a433ebdece19844e",
+    "residual_certificate_sha256": "d7a845bcc085d063c95a90d83aced62f0def3713168ca2c5c689edd5d475e310",
+    "Bpair_certificate_sha256": "cca3d5f9305160f8308c50fed3668b59ed18b61ff21995e08813b5d245888771",
+    "m11_certificate_sha256": "de331cc7b5d04fcc9953ab35a4cfa25bd6058880736e196858bdb1d4b4419d2b",
+    "generation_and_separate_complete_readback": "PASS for each exact source certificate; no floating sign premise",
+    "certificate_scope": "finite source expressions with separately written ENTIRE gamma tails and physical interpolation cover laws"
+  },
+  "evidence": {
+    "written_analysis": "COMPLETE at stated proper-subspace scope, inheriting recorded radius-three computer-assisted floor",
+    "finite_Lean": "PASS all19 declarations and transitive axiom audit; only propext/Classical.choice/Quot.sound",
+    "universal_analytic_Lean": "NOT_RUN",
+    "separate_fresh_kernel_replay": "NOT_RUN",
+    "independent_agent_analytic_review": "PASS exact trial norm, residual identity, weighted Young, domain and paid-complement contract",
+    "independent_human_review": "NOT_RUN",
+    "worldwide_novelty": "NOT_ASSESSED",
+    "root_check_result_sha256": "32db4e6d3ce01da4bdcabaf47e313854b04c0cfa5b66a41fac9c07509b03cbf4"
+  },
+  "not_claimed": [
+    "all finite-gamma edge vectors",
+    "original universal j3 stage",
+    "RH",
+    "Conditional.DirichletGRH"
+  ],
+  "next_exact_missing_lemma": "s[w]>=|<t,w>|^2/a for EVERY finite-gamma w orthogonal to v*, with ACTUAL a=s[v*]>=3/40, t=(I-v* tensor v*)S v*; no replacement by independent diagonal floors",
+  "comparison": "Physical true-residual identity retains m00[h] once; exact scalar source autocorrelation, masked prime antiderivatives and full action meet the same source. All share the inherited core floor; no replay of discarded historical matrix factors claimed."
+}

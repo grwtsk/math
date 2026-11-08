@@ -1,0 +1,161 @@
+{
+  "schema": "grwtsk.math.static-mathematical-verification-target.v1",
+  "authors": "grwtsk contributors",
+  "target_id": "chi3-sharp-edge-localized-20261107",
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeSharpEdgeLocalized.lean",
+    "sha256": "0cbefcd7d1cf391b099ce96b82260366c8194ecfaf0499736ffd9279d9a6742f",
+    "inspected_math_revision": "fe3fd586707c81fdd693a076c4971bea6fbe51e8",
+    "canonical_noe_revision": "9d456d64a0137289cddc416ea78f043cf345873a"
+  },
+  "consumed_source_sha256": {
+    "WeilConductorThreeRadiusFourInventory.lean": "ac13e0400afcb7f50c7959d4defebdca3c05bfd15f3db868e24c37c0625f6a54",
+    "WeilConductorThreeRadiusFourEdgeSchur.lean": "5ad8bd0e1708a3daa3801408d8ebbcc45033a83d49584bce7ac181fc86ec9a7f",
+    "WeilConductorThreeSharpEdgeLocal.lean": "26ef7c1cd22ead3b675c6eec4f6674ca21c1d2b16860df6e56b517ab043867cd",
+    "WeilConductorThreeRadiusFourCollarWitness.lean": "d864a661dfd4b9ecbf5aee0c157dccc33b03abff8d28a44b95abd2a8030c0784"
+  },
+  "original_target": "DirichletStageChain.PrimitiveStageLower modThreeQuadratic modThreeQuadratic_primitive modThreeQuadratic_nonprincipal 3",
+  "typed_carrier": {
+    "core": "every complex physical L2(0,3;dt) input in the entire original odd finite-Gamma form domain",
+    "edge": "every complex physical L2(3,4;dt) input in the original finite-Gamma domain supported a.e. in any interval I with0<length(I)<=2^-1600",
+    "norm": "physical Lebesgue dt",
+    "normalization": "Q4(O4(u+v))/2, E(O4(u+v))=2(||u||^2+||v||^2)",
+    "source": "actual primitive nonprincipal chi3=(0,1,-1), conductor3, gamma parity1, no principal pole; all458 native atoms retained"
+  },
+  "successful_written_conclusions": [
+    "localized actual sharp residual m11[v]-<Bv,A0^(-1)Bv> >=(2231/100)||v||^2",
+    "strict >22||v||^2 for every NONZERO localized v; zero case0 retained",
+    "all original complex core u allowed: M[u+v]>=completed core square+22||v||^2, hence original real admissible localized-edge stage return",
+    "fixed-I actual restricted shifted source operator >=22/28801 and genuine spectral heat norm<=exp(-22t/28801)",
+    "ALL365 reflected prime operator has full physical norm<44, without a gamma/localization hypothesis",
+    "convex gamma allocation consumes one L only; no doublecount",
+    "actual source join boundary: partition of the unit edge into2^1600 cells has total Schur cross term<−1831/100 despite diagonal sum>=2231/100; no negative full S value claimed"
+  ],
+  "exact_finite_data": {
+    "native_count": 458,
+    "mixed_distinct_source_count": 203,
+    "S_map_occurrences": 21,
+    "R_map_occurrences": 193,
+    "new_count": 365,
+    "scale": 1000000000000,
+    "same_side_square_upper": "6491994614353/10^12",
+    "reflection_square_upper": "19075492408736/10^12",
+    "combined_square_upper": "128/5<26",
+    "complete_window_count": 365,
+    "maximum_unsigned_window_price_numerator": 43634029063196,
+    "maximizing_first_source_value": 1087,
+    "uniform_reflected_operator_norm": "<44",
+    "mixed_squared_price_scale": 1000000000000000000,
+    "same_side_squared_price_numerator": 6491994614352112646,
+    "reflection_squared_price_numerator": 19075492408735588911
+  },
+  "finite_source_enclosure_algorithm": {
+    "logarithms": "24-term positive atanh dyadic series with entire2*y^49/[49*(1-y^2)] upper tail, rounded upward on10^12",
+    "square_weights": "log numerator j_p on10^12; squared coefficient<=j_p^2/(n*10^24), then rounded upward on10^18 to ceil(j_p^2/(n*10^6)); full21+193 actual occurrences retained; added error<10^-18 per occurrence; exact Nat rounding laws and complete sums checked",
+    "sqrt": "floor(sqrt(n*10^24)); both floor inequalities retained",
+    "coefficients": "upward ceiling j_p*10^12/q_n on10^12; rounding law retained",
+    "windows": "ALL365 possible least-source n0; all native n0<=n with4n<=11n0, usinge<11/4; exact integer sum",
+    "data_location": "complete literal mixedSquareData and newPriceData in bound source; allWindowPrices is a lossless deterministic pure finite expression"
+  },
+  "full_tail_control": {
+    "prime": "full458 source inventory; inactive maps/correlations justified by physical support; entire exponent tail excluded by2^12>2980",
+    "gamma_mixed": "full Carleman norm pi/2 including source truncation/domain limit",
+    "gamma_edge": "positive entire rank sum, tail exp(-6a_J)/(2a_J*(1-exp(-12)))",
+    "gamma_localized": "actual nonnegative jump interval[delta,.01] pays once; all other jumps remain nonnegative",
+    "core_inverse": "actual complete A0 inverse norm<=40/3, no finite mode/time truncation",
+    "physical_heat": "whole inverse heat tail<=(28801/22)*exp(-22T/28801)"
+  },
+  "evidence": {
+    "written_universal_analytic_argument": "COMPLETE_AT_STATED_LOCALIZED_SCOPE; inherited core source computer-assisted scope explicit",
+    "fresh_exact_rational_source_enumeration": "PASS for all retained rows, log/round/sqrt guards, mixed-square sums and365 row windows",
+    "numerical_spectral_sampling": "NOT_USED",
+    "lean_compilation": "PASS exact bound source,30 finite declarations; output empty; canonical toolchain",
+    "fresh_kernel_check": "NOT_RUN as separate standalone replay",
+    "transitive_axiom_audit": "PASS #print axioms on all30 finite declarations; only propext, Classical.choice, Quot.sound",
+    "universal_analytic_formalization": "NOT_CLAIMED",
+    "independent_human_review": "NOT_RUN",
+    "novelty": "NOT_ASSESSED",
+    "independent_analytic_agent_review": {
+      "reviewed_source_sha256": "02daef51d063822e6599842561649a79d45603a7bcafa181fcd04fa7acbe97c2",
+      "scope": "main localized analytic argument: same-orientation separation, gamma spent once, source factors, actual core inverse and2231/100 total",
+      "not_reviewed": "fresh finite source enumeration, box interval computation, later finite-price representation and Lean fixes",
+      "status": "PASS at stated reviewed scope; no independent human review claimed"
+    },
+    "finite_kernel_evidence": "finite proof terms accepted during Lean compilation; universal analytic theorem not formalized"
+  },
+  "heat_and_lossless": {
+    "coverage": "exhaustive natural finite typed descriptions; pi_n=2^-n-1; full tail2^-J; Kx=(x+(sum x)pi)/2 and exact inverse",
+    "actual_physical_heat": "fixed-I restricted actual source selfadjoint operator>=22/28801; exact generator/form return",
+    "implemented_roundtrip": "Encodable.decode(Encodable.encode finiteProofData)=some finiteProofData; full source/context/norm/native/sign/price/window/rational payload together",
+    "dependent_syntax": "existing WeightedStage typed proof syntax retains binders, dependent context, source identities, all errors/tails/evidence; arbitrary semantic L2 inputs not asserted finite encodable"
+  },
+  "first_open_implication": "actual sharp Schur sign for EVERY unrestricted edge finite-Gamma v; localization crossgamma, signed reflected primes and core-resolvent mixed debts remain unpaid",
+  "not_claimed": [
+    "unrestricted radius-four stage",
+    "all cofinal chi3 stages",
+    "all other primitive Dirichlet sectors",
+    "zeta pole-inclusive stages",
+    "RH",
+    "Conditional.DirichletGRH"
+  ],
+  "comparison": {
+    "shared_inputs": "same actual EdgeSchur source/domain/Carleman/core input; no independent second proof of completed radius-three finite packet computations",
+    "new_mechanism": "same-orientation support separation with source-specific squared weights and one full gamma expenditure",
+    "hostile_boundary": "strict zero case corrected; S/R mutual overlap not assumed; sums over different localization intervals cannot erase actual cross terms"
+  },
+  "family": "Conditional.DirichletGRH: all complex Dirichlet characters at every positive modulus; all open-strip zeros",
+  "actual_cross_term_obstruction": {
+    "box": "v_box=1_(3,4), E=1; source finite-Gamma indicator",
+    "all365_signed_tent_lower": "-8360349823400696773179/10^24",
+    "all365_signed_tent_upper": "-8360349582137850128269/10^24",
+    "source_interval_algorithm": "24-term lower/upper dyadic atanh log bounds; log n=e log p; exact sqrt-floor grid10^12; weights and tent rounded outward on10^12, signed products summed on10^24",
+    "entire_ordinary_gamma_upper": "14/9 from all positive exponential components and complete decreasing square-reciprocal tail integral",
+    "entire_reflected_gamma_upper": "1/1000 from positive trace tail, exp9>8000 andexp12>2",
+    "box_m11_upper": "16567/4500<4",
+    "cell_count": "2^1600",
+    "cell_diagonal_residual_sum_lower": "2231/100",
+    "aggregate_cross_term_upper": "-1831/100",
+    "scope": "exact actual-source failure of adding local diagonal bounds; not a negative full Schur value or GRH counterexample"
+  },
+  "lean_declarations": [
+    "native_source_complete",
+    "native_source_no_duplicates",
+    "mixed_source_complete",
+    "new_source_complete",
+    "full_mixed_counts",
+    "full_new_count",
+    "source_sqrt_and_rounding_data",
+    "mixed_squared_grid_rounding",
+    "complete_same_side_square_numerator",
+    "complete_reflection_square_numerator",
+    "exact_same_side_square_guard",
+    "exact_reflection_square_guard",
+    "mixed_square_budget",
+    "complete_row_window_guard",
+    "reflected_row_budget",
+    "width_separates_all_native_logs",
+    "mixed_source_norm_budget",
+    "full_core_inverse_budget",
+    "original_diagonal_charge",
+    "complete_localized_residual",
+    "log50_positive_series_guard",
+    "euler_gamma_upper_guard",
+    "complete_conductor_constant_guard",
+    "log100_upper_guard",
+    "signed_box_interval_scalar_guard",
+    "gamma_box_trace_guard",
+    "reflected_gamma_exp9_guard",
+    "actual_box_cross_budget",
+    "restricted_heat_floor_guard",
+    "finiteProofData_roundtrip"
+  ],
+  "execution_evidence": {
+    "repository": "grwtsk/noeaaeue",
+    "relative_directory": ".cache/chi3-sharp-edge-localized-20261107",
+    "source_bound_result_sha256": "144116b9df635ae585cea67dd0adcb59c831a21ffb916874bd739a126e2923a7",
+    "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axiom_log_sha256": "b69df6f46bb40b717dfe8c2025c5a2df716e9b3827156c14fe55b5cc63290a92",
+    "compiled_olean_sha256": "947f9fa060e84831f7576ac611dad4585830e1e55d206621962e726ac958cb82",
+    "scope": "30 finite declarations only; local source proof is written analytic mathematics"
+  }
+}
