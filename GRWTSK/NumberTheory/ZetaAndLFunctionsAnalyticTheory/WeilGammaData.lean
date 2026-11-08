@@ -164,4 +164,43 @@ theorem gammaFactor_eq_gammaParity (χ : DirichletCharacter ℂ q) (s : ℂ) :
   unfold DirichletCharacter.gammaFactor DirichletCharacter.Even gammaParity
   split_ifs <;> simp
 
+/-- The original odd Dirichlet gamma parity differs by exactly π in
+the digamma constant. This is the source reflection formula, not a
+surrogate gamma normalization or a GRH assumption. -/
+theorem gammaConstant_odd_eq_even_add_pi (q : ℕ) :
+    gammaConstant q 1 = gammaConstant q 0 + Real.pi := by
+  have hodd : (1 / 4 : ℝ) + ((1 : ℕ) : ℝ) / 2 = 3 / 4 := by norm_num
+  have heven : (1 / 4 : ℝ) + ((0 : ℕ) : ℝ) / 2 = 1 / 4 := by norm_num
+  unfold gammaConstant
+  rw [hodd, heven,
+    real_digamma_eq (by norm_num : (0 : ℝ) < 3 / 4),
+    real_digamma_eq (by norm_num : (0 : ℝ) < 1 / 4)]
+  linarith [digamma_quarters.1, digamma_quarters.2]
+
+/-- Exact conductor dependence on the even-parity source constant. -/
+theorem gammaConstant_even_eq_log_add (q : ℕ) (hq : 0 < q) :
+    gammaConstant q 0 = Real.log (q : ℝ) + gammaConstant 1 0 := by
+  have hqR : (q : ℝ) ≠ 0 := by
+    exact_mod_cast (Nat.ne_of_gt hq)
+  unfold gammaConstant
+  rw [Real.log_div hqR Real.pi_pos.ne',
+    Real.log_div (by norm_num : (1 : ℝ) ≠ 0) Real.pi_pos.ne']
+  simp only [Real.log_one, zero_sub]
+  ring
+
+/-- Improve the older -6 conductor floor to the exact previously checked
+-11/2 zeta constant, uniformly across BOTH primitive gamma parities.
+This is a source-level strengthening at every positive conductor. -/
+theorem gammaConstant_lower_sharp (q : ℕ) (hq : 0 < q)
+    (a : ℕ) (ha : a ≤ 1) :
+    Real.log (q : ℝ) - 11 / 2 ≤ gammaConstant q a := by
+  have hparity : a = 0 ∨ a = 1 := by omega
+  rcases hparity with rfl | rfl
+  · rw [gammaConstant_even_eq_log_add q hq]
+    linarith [gammaConstant_one_zero_ge]
+  · rw [gammaConstant_odd_eq_even_add_pi q,
+      gammaConstant_even_eq_log_add q hq]
+    linarith [gammaConstant_one_zero_ge, Real.pi_pos]
+
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddRootProjection
