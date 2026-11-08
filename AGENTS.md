@@ -159,9 +159,11 @@ This repository is the canonical pure mathematical source for GRWTSK.
 - Use exactly `grwtsk contributors` for local bylines, copyright notices and
   metadata. Keep individual personal names out of local attribution.
 - For local automation commits on behalf of this checkout owner, use
-  `grwtsk <contributors@grwtsk.invalid>` for author and committer. Preserve other
-  contributors' own identities; do not enforce a repository-wide Git identity or
-  rewrite their attribution.
+  `grwtsk <176085483+grwtsk@users.noreply.github.com>` for author and committer.
+  Use this identity for repository actions performed on behalf of the contributor,
+  including commits created by automation. Set the local Git identity accordingly.
+  Preserve other contributors' own identities unless the owner explicitly
+  authorizes an attribution rewrite.
   Keep personal names, personal email addresses, private account handles and
   personal device identifiers out of maintained content. Preserve public
   researchers' bylines, upstream authorship and license obligations.
