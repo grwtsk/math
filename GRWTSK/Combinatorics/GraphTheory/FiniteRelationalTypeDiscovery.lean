@@ -654,6 +654,79 @@ theorem finiteSourceClassifier_at_separationHorizon
     (fun x y hxy =>
       type_eq_of_prefix_eq typeOf readout witness distinguishes x y hxy) p
 
+
+/-- Under exact label constancy on observation-prefix fibers, scanning
+an enumerated inventory does not depend on the ORDER of the source
+list. The lists need only have identical membership: repetitions and
+permutations are both harmless. No choice of an arbitrary representative
+is silently used in this comparison. -/
+theorem scanPrefix_eq_of_same_members
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
+    (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    (first second : List P)
+    (hsame : ∀ p : P, p ∈ first ↔ p ∈ second)
+    (hconstant : ∀ p q : P,
+      observationPrefix readout N p = observationPrefix readout N q →
+      typeOf p = typeOf q)
+    (signature : (i : Fin (N + 1)) → Obs i.val) :
+    scanPrefix typeOf readout N first signature =
+      scanPrefix typeOf readout N second signature := by
+  by_cases hrep : ∃ p : P, p ∈ first ∧
+      observationPrefix readout N p = signature
+  · obtain ⟨p, hfirst, hsignature⟩ := hrep
+    have hsecond : p ∈ second := (hsame p).mp hfirst
+    have hf := scanPrefix_correct typeOf readout N first
+      hconstant p hfirst
+    have hs := scanPrefix_correct typeOf readout N second
+      hconstant p hsecond
+    calc
+      scanPrefix typeOf readout N first signature =
+          scanPrefix typeOf readout N first
+            (observationPrefix readout N p) := by rw [hsignature]
+      _ = some (typeOf p) := hf
+      _ = scanPrefix typeOf readout N second
+            (observationPrefix readout N p) := hs.symm
+      _ = scanPrefix typeOf readout N second signature := by rw [hsignature]
+  · have hfirst : scanPrefix typeOf readout N first signature = none :=
+      (scanPrefix_none_iff typeOf readout N first signature).mpr hrep
+    have hsecond : scanPrefix typeOf readout N second signature = none :=
+      (scanPrefix_none_iff typeOf readout N second signature).mpr (by
+        rintro ⟨p, hp, hsig⟩
+        exact hrep ⟨p, (hsame p).mpr hp, hsig⟩)
+    exact hfirst.trans hsecond.symm
+
+/-- The list-based executable candidate has exactly the SAME values
+as the older classical representative-selecting classifier, on ALL
+signatures, not just on observed ones, provided source labels are
+constant on observation-prefix fibers. In particular an absent
+signature returns `none` in both interfaces. This is a source-level
+extensionality statement, not an assertion that a classical decoder
+can be evaluated by itself. -/
+theorem finiteSourceClassifier_eq_prefixClassifier
+    [Fintype P] [DecidableEq P]
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
+    (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    (hconstant : ∀ p q : P,
+      observationPrefix readout N p = observationPrefix readout N q →
+      typeOf p = typeOf q) :
+    finiteSourceClassifier typeOf readout N =
+      prefixClassifier typeOf readout N := by
+  funext signature
+  by_cases hrep : ∃ p : P, observationPrefix readout N p = signature
+  · obtain ⟨p, hsig⟩ := hrep
+    subst signature
+    exact (finiteSourceClassifier_correct typeOf readout N hconstant p).trans
+      (prefixClassifier_correct typeOf readout N hconstant p).symm
+  · have he : finiteSourceClassifier typeOf readout N signature = none :=
+      (finiteSourceClassifier_none_iff_unobserved
+        typeOf readout N signature).mpr hrep
+    have hc : prefixClassifier typeOf readout N signature = none :=
+      (prefixClassifier_none_iff_unobserved
+        typeOf readout N signature).mpr hrep
+    exact he.trans hc.symm
+
 end EnumerablePartialClassification
 
 /-! The infinite source obstruction also excludes actual correct finite
