@@ -1,5 +1,7 @@
 # Tao Erdős problem adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md)
+
 Local attribution: grwtsk contributors.
 
 This isolated Lake package consumes the four Erdős problem modules explicitly
@@ -19,8 +21,18 @@ sources and `UPSTREAM-LICENSE`; local consumers are by grwtsk contributors.
 Full declaration names, source blobs, database pin and MSC2020 subjects are in
 [catalogue.json](catalogue.json). Source placement follows official headings in
 [`docs/taxonomy/msc2020/source-layout-v1.json`](../../taxonomy/msc2020/source-layout-v1.json); namespace roles remain
-separate from provider paths. The canonical paper register records exact scope
-and unresolved fidelity and verification obligations.
+separate from provider paths. The catalogue records each module’s source identity
+and pending checks; [consumer provenance](../consumer-integrations.json) retains
+the next source/formulation comparison obligation. Its recorded adapter paths
+are historical locators; use the current source links below or the source layout
+for navigation.
+
+| Problem | Current source |
+| --- | --- |
+| 379 | [Erdos379.lean](../../../GRWTSK/NumberTheory/SequencesAndSets/Erdos379.lean) |
+| 613 | [Erdos613.lean](../../../GRWTSK/Combinatorics/GraphTheory/Erdos613.lean) |
+| 707 | [Erdos707.lean](../../../GRWTSK/Combinatorics/DesignsAndConfigurations/Erdos707.lean) |
+| 987 | [Erdos987.lean](../../../GRWTSK/HarmonicAnalysisOnEuclideanSpaces/HarmonicAnalysisInOneVariable/Erdos987.lean) |
 
 The toolchain is `leanprover/lean4:v4.29.0-rc8`, with Mathlib
 `698d2b68b870f1712040ab0c233d34372d4b56df`. This package stays outside root imports and the root default

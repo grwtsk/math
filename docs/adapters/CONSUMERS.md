@@ -26,7 +26,7 @@ Carleson adds three further source candidates: a finite coordinate-error envelop
 a row-uniform eventual bound over the fixed-support l1 unit ball, and residual
 convergence for cutoff-dependent rows. The moving reference uses the same row;
 no convergence of that reference/readout or growing-family bound is claimed.
-The first wave remains24 declarations; IEANTN and this continuation add3 each.
+The first wave contains 24 declarations; IEANTN and this continuation add three each.
 All new native/kernel/axiom/interface checks remain NOT_RUN.
 
 ## Dense PFR slice continuation
