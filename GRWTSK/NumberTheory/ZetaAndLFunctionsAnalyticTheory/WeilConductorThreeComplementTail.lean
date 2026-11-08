@@ -22,6 +22,11 @@ import Mathlib.Analysis.SpecialFunctions.Trigonometric.Sinc
 This proves a WRITTEN universal high-variance source inequality and its
 return to the original complement. It does NOT prove the remaining finite
 annulus sign, complementary bound (7), or PrimitiveStageLower at j=2.
+Subsequent progress: WeilConductorThreeFiniteAnnulus supplies the completed
+WRITTEN computer-assisted annulus bound and original stage j=2. The open-sign
+language below records this earlier reduction's original scope. No compilation
+or kernel evidence is transferred from that later written result.
+
 The Lean declarations retain the actual source and finite arithmetic;
 the Fourier/variance argument has not been elaborated into Lean.
 

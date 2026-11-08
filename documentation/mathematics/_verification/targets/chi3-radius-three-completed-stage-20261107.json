@@ -1,0 +1,79 @@
+{
+  "Noe_replay_source_commit": "3b432fdc33f096f35ced0e3b82a49a5e591a95cf",
+  "additional_parent_audited_before_publication": "6b568f4ea7687d7d6bedd3f808dfdf15bb96f2d4",
+  "branch_return": "exact j=2 coordinate of existing SmallConductorStages chi3; remaining stages/characters and RH still required",
+  "checks": {
+    "Lean_compilation": "NOT_RUN",
+    "complete_head_binding_under_python_O": "PASS",
+    "complete_retained_data_decode_byte_comparison": "PASS",
+    "exact_cache_inventory_under_python_O": "PASS",
+    "fresh_kernel": "NOT_RUN",
+    "full_omitted_rank_tail_written_and_exact_rational_guards": "PASS",
+    "independent_human_review": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "worldwide_novelty": "NOT_ASSESSED"
+  },
+  "complete_source_reviewed_parent": "47a076ba39c4e1246ef6d1b2b3bafe00d808b93c",
+  "exact_GRH_family": "all complex Dirichlet characters modulo every positive integer; open critical-strip zeros",
+  "finite_scope": {
+    "maximum_rank": 177,
+    "observed_width_classes": 35,
+    "outside_three_bands": 5848046,
+    "positive_cover_packets": 5848049,
+    "scalar_cells": 3470000000,
+    "separate_contained_heads": 3,
+    "uniform_actual_head_floor": [
+      73187,
+      100000000000
+    ],
+    "whole_packet_and_entire_rank_tail_price": [
+      34312715,
+      1000000000
+    ]
+  },
+  "identity": {
+    "all_cache_index_sha256": "9ded598eedb285b01e0dc6bb953f01b43fc6740e64014dae437f91836163b739",
+    "all_head_binding_sha256": "714cdd49a8c36c7b30c9a1d04cdb52822ef9b5f60ef5b155dec5308e25e7ec64",
+    "retained_data_archive_sha256": "f9468dcc4a87d64ff22a97c66bba50a4848870d76a4d004d7ddf62b7d2bbff22",
+    "scalar_CSV_sha256": "145ffa4fce694c98377b3f6f04125b1f501e3c7f6d1e4a8a975ddf022f66eb47"
+  },
+  "local_attribution": "grwtsk contributors",
+  "math_source_baseline": "654cefad38292ca96e54439902602e823382103a",
+  "next_chi3_obligation": "PrimitiveStageLower at j=3: full radius4 domain, Q>=-energy/8; original prime inventory through2980",
+  "not_claimed": [
+    "RH",
+    "complete DirichletGRH",
+    "fresh formal universal proof",
+    "lossless archive of discarded L factors"
+  ],
+  "proof_source_sha256": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeFiniteAnnulus.lean": "4330d6e3d407d87e872814e0651468ad49fa95b0f3460e1ca146acaf85725474",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeLowFilter.lean": "57ec24578df6593e3f7919fdd8322fb2c3e17417290a78699f0ec089d9b9d47e",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreePhysicalPackets.lean": "6972a01b39b05b1a4710c8ec946514afb037e6fc60b9ed58821b006dff34121e",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRawSourceReturn.lean": "ca2e8aecee1d08f85af5bb2a9e36353690b999a9b282d805c79d5767e0cdaef2"
+  },
+  "results": {
+    "PrimitiveStageLower_chi3_j2": "WRITTEN_COMPUTER_ASSISTED_PROOF_COMPLETE",
+    "finiteAnnulusValue_all_original_Admissible_chi3_3": "at least -(7262543/200000000)*energy",
+    "originalComplement": "at least -energy/20",
+    "primitiveArithmeticValue_chi3_3": "at least -energy/20",
+    "requested_annulus_budget": "98136331/500000000, discharged"
+  },
+  "retained_data": {
+    "Noe_relative_archive": ".cache/chi3-radius-three-20261107/retained-proof-data.tar.gz",
+    "compressed_bytes": 345299404,
+    "files": 160,
+    "transient_L_factors": "not archived; not claimed losslessly compressed",
+    "uncompressed_bytes": 983522639
+  },
+  "scope": "complete written computer-assisted proof; not a kernel theorem",
+  "unchanged_consumed_blobs": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletModThreePrimitiveGauss.lean": "3e630b87676852488465795e181a795197e16e9c",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/DirichletModThreeQuadraticConstruction.lean": "69ce4e57afad5d9e12fc5a51fe643971d8936eeb",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorFrontier.lean": "ac9bf37f07ef22d7ca75b918baeea3161df028b7",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeComplementTail.lean": "e44b66bbcad00596e96da9eb8bf151f91180a956",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilDirichletCompactFilterReturn.lean": "1c60a1174064468ec07d4ca6056127ac6e05c805",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilDirichletStageChain.lean": "ec7bbcbbd0b07e76e8c1fc197287dbfe0bf19173",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilWeightedFirstStage.lean": "7b9599ea7cffe730088fd95e409608e3050740ba"
+  }
+}

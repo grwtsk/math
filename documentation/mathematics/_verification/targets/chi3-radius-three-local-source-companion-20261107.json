@@ -1,0 +1,39 @@
+{
+  "Noe_skill_source": "workflows/research/orchestration/skills/noe-proof-automation/SKILL.md at7d296238ef384288431b9c2b8c876349e6aa2554",
+  "checker_source_sha256": {
+    "grwtsk_q3_direct_high_variance_20261107.py": "617d55e695b5562ce42e3fdfc762ffa1b19aa808192f97114dc9e6aeafa1e099",
+    "noe_dir3_new_complement_adaptive_packets_f0.py": "a2301dc183f368b612ae9976ab00e27cdc2533297ed61754b2082e5ef219bab4",
+    "q3_compact_low_zero_filter_20261107.py": "b1b362a22dbf4f4f823e902b779c364688aefc326fc756134ce9cd4015dc55f5",
+    "q3_physical_packet_Tlow_raw_exact.py": "d2aa518f8b7a1cd87f9757546b925d2bea6e36c04064619b0f3ac7786d30990f",
+    "q3_physical_packet_exact.py": "04f7ebc380149d825faa67c136d437b97eeb7813792912afa5766206f50aa000",
+    "q3_physical_packet_family_20261107.py": "3d96d4c1b9a742fa1ca60471db0b675e4fe994bdb549972d8584cd9700d59d01",
+    "q3_radius_one_packet_obstruction_exact.py": "50bc123ffb5125525ddca9b528cc0860abb03ea2492f42b9bb561a4fda997675",
+    "radius_three_q3_mollified_prime_schur.py": "079ae163fae2ade21ac1ee95e68d9c66f36b04e35699a1a45ecc26a55c94caae"
+  },
+  "coding_role": "existing dependent finite-description roundtrip, not finite coding of arbitrary semantic L2 objects",
+  "complete_checkout_inspected": "654cefad38292ca96e54439902602e823382103a",
+  "evidence": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "independent_human_review": "NOT_RUN",
+    "standalone_exact_local_replay": "PASS",
+    "transitive_axiom_audit": "NOT_RUN",
+    "written_analytic": "complete at explicitly stated local scope"
+  },
+  "heat_role": "exhaustive branch coverage only, no arithmetic sign",
+  "not_claimed": [
+    "universal annulus bound",
+    "PrimitiveStageLower j=2",
+    "RH",
+    "DirichletGRH"
+  ],
+  "payload_sha256": {
+    "chi3-radius-three-filtered-packet-20261107.json": "9b0db4811280ff3c697c5f5bff58327db680af6885d064702088aaaf2c41949f",
+    "chi3-radius-three-low-zero-filter-20261107.json": "3976f75eb5db4b7671209e77dfe78f46ef48298d05d4d9ec70793304fe626be8",
+    "chi3-radius-three-moment-obstruction-20261107.json": "dbe4db2356004188307af0c80f29945254b1cce63d802a69d968e05fbffeb6b0",
+    "chi3-radius-three-physical-family-20261107.json": "f2092a5c80174be5ed5139976e26b08024a13bc4b9b1665c15dc39b2d98311e2",
+    "chi3-radius-three-physical-packet-20261107.json": "fe2c8227c41905173ab1612c710f92549eb0ab0566c64b9e44b2b0ccd29108f7"
+  },
+  "source_baseline": "9404b5698d0da5ee97d289a830f76ab75e3ef84f",
+  "type": "static source companion; not a runtime receipt"
+}
