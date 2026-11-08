@@ -1,5 +1,12 @@
 # Concrete Laurent bar, retraction splitting and variance-budget convergence
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 New Lean source commit `0ddb5f1f2175e79c9ab554c435f537f06dd342e3`; Lean `leanprover/lean4:v4.33.0`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **Nine new theorems strengthen existing partial results. Counts remain four completed optional/corrective obligations, fifteen verified partial results, seventeen unresolved obligations. All seven manuscript-level claims remain open.** The concrete Laurent construction removes coefficient-inversion premises from the rank-one K1/K2 fragments in both PDF versions. B2 gains a full conditional linear equivalence; S3/S5 gain bias-aware tails and probability convergence. No new source-specific obligation is discharged.

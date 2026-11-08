@@ -1,5 +1,12 @@
 # Actual completed Riemann-zeta logarithmic detector
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 New Lean source commit `08fb6663f5ee4cf0b7a45290ed23c6f3e95dd46f`; Lean `leanprover/lean4:v4.33.0`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **Eight new theorems instantiate existing bridges with the actual completed Riemann zeta function. Counts remain four completed optional/corrective obligations, fifteen verified partial results, seventeen unresolved obligations. All seven manuscript-level claims remain open.** This is an explicitly assistant-proposed Riemann specialization for B3 and E5 in both exceptional-group versions; the unspecified high-rank manuscript functions are not silently identified with zeta. No manuscript-scope obligation is discharged.

@@ -1,5 +1,12 @@
 # Next bridges for the 36 version-bound obligations
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 New source commit: `8905b87faad4901de56d0dc770ae7877aa933182`. Lean `leanprover/lean4:v4.33.0`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 Nine new theorems in four subject-based modules. The four previously completed optional/corrective obligations stay completed. Six conditional fragments and one corrective fragment remain partial; 25 obligations still have no implemented bridge. All seven manuscript-level claims remain unresolved.

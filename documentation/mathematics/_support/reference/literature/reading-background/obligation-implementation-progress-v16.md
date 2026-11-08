@@ -1,5 +1,12 @@
 # Hecke character replay blocked by resource custody
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 Exact replay source: math `a631c3ab52379eacf4c4fced9111fadd983b37ae`; Lean 4.33.0; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **All five target declarations remain SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED.** The overall managed receipt failed after 447 recorded dependency passes and zero target audits. Counts remain four completed optional/corrective obligations, fifteen partial results and seventeen unresolved obligations; all seven manuscript-level claims remain open.

@@ -1,5 +1,12 @@
 # Rank-one triangular bar uniqueness and exact-defect tracker
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 New Lean source commit `3d759c73173837820366c6d2fa71a94dd1cfc82e`; Lean `leanprover/lean4:v4.33.0`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **Ten new theorems. Counts remain four completed optional/corrective obligations, fifteen partial results and seventeen unresolved obligations. All seven manuscript-level claims remain open.** K2 in both distinct KL versions gains concrete rank-one triangular uniqueness; S4 gains a constructed tracker whose net forcing is proved zero. General KL and arithmetic-access obligations remain open.

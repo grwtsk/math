@@ -1,5 +1,12 @@
 # Rank-one Hecke, finite variance and convergent local-product bridges
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 New Lean source commit `0fcc97d3e9dee8ff29191448a8cfdecf39a8fa6a`; Lean `leanprover/lean4:v4.33.0`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 Ten new theorems in three subject-based modules. **Four completed optional/corrective obligations, ten verified partial results, 22 unresolved obligations. All seven manuscript-level claims remain open.** The newly partial obligations are K1 in each of the two distinct KL PDF versions and S5. E4 in each exceptional-group PDF version and S3 also advance without being discharged.

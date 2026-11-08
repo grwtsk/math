@@ -1,5 +1,12 @@
 # Analytic zero detector, local-product continuation and triangular weak law
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 New Lean source commit `faf527ca46dd84d2b8ff97f269063184548325b5`; Lean `leanprover/lean4:v4.33.0`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **Ten new theorems strengthen existing partial results. Counts remain four completed optional/corrective obligations, fifteen verified partial results, seventeen unresolved obligations. All seven manuscript-level claims remain open.** B3 gains local factorization from analytic order; E4/E5 in both exceptional-group PDF versions gain a product-to-domain identity and order-comparison route; S3/S5 gain a growing-family weak law from decaying covariance bounds. No new source-specific supplier is supplied or obligation discharged.

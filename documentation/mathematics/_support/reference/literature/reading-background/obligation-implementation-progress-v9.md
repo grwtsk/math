@@ -1,5 +1,12 @@
 # Finite meromorphic detector and actual completed-zeta poles
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 New Lean source commit `e48c99296284ec19fb9de21a51add741f0399bee`; Lean `leanprover/lean4:v4.33.0`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **Fourteen new theorems. Counts remain four completed optional/corrective obligations, fifteen partial results and seventeen unresolved obligations. All seven manuscript-level claims remain open.** These strengthen B3 and E5 with signed meromorphic order and an assistant-proposed actual Riemann completion-pole specialization. No high-rank source identity or manuscript-scope discharge is claimed.

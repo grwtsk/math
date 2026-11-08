@@ -1,5 +1,12 @@
 # Hecke memory failure and smaller matrix proof candidates
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 New mathematical source candidate commit `98d270be28e23dd0bbfea74540025db387b472af`; Lean 4.33.0; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **No new kernel-verified bridge is claimed.** All revised matrix source and the five character candidates remain pending fresh verification. Counts remain four completed optional/corrective obligations, fifteen partial results and seventeen unresolved obligations; all seven manuscript-level claims remain open.
@@ -20,21 +27,21 @@ Local attribution: grwtsk contributors; unpublished. Publication date, DOI and a
 
 [Exact source version](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/C%20%287%29.pdf); original blob `321ef7c1fa5685faac750558754f8d0e2906fe14`.
 
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeS_quadratic`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L19); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeT_quadratic`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L26); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeST_square`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L33); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeTS_square`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L41); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeST_cube`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L61); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeTS_cube`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L66); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Hecke_braid_six`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L71); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_involutions`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L78); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_sixth_power`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L85); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_cube_ne_one`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L92); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2TrivialCharacter_generator`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L19); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2SignCharacter_generator`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L23); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Presented_scalar_injective`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L28); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Presented_rankOne_coordinates_unique`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L36); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Presented_zero_ne_one`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L51); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeS_quadratic`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L19); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeT_quadratic`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L26); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeST_square`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L33); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeTS_square`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L41); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeST_cube`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L61); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeTS_cube`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L66); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Hecke_braid_six`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L71); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_involutions`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L78); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_sixth_power`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L85); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_cube_ne_one`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L92); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2TrivialCharacter_generator`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L19); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2SignCharacter_generator`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L23); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Presented_scalar_injective`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L28); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Presented_rankOne_coordinates_unique`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L36); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Presented_zero_ne_one`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L51); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
 
 ### Kazhdan-Lusztig Polynomials and the Generalized Riemann Hypothesis
 
@@ -42,21 +49,21 @@ Local attribution: grwtsk contributors; unpublished. Publication date, DOI and a
 
 [Exact source version](https://github.com/grwtsk/spectral-proof-of-RH/blob/aab35df4b766ce864e95b4505e3a2c7ddc43d158/docs/graveyard/C%20%289%29.pdf); original blob `68757e7d6f23427e3487d3166928241025ce0ea6`.
 
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeS_quadratic`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L19); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeT_quadratic`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L26); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeST_square`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L33); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeTS_square`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L41); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeST_cube`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L61); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2HeckeTS_cube`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L66); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Hecke_braid_six`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L71); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_involutions`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L78); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_sixth_power`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L85); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_cube_ne_one`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L92); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2TrivialCharacter_generator`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L19); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2SignCharacter_generator`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L23); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Presented_scalar_injective`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L28); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Presented_rankOne_coordinates_unique`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L36); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
-- **Unverified current source:** [`GRWTSK.Algebra.Hecke.g2Presented_zero_ne_one`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L51); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeS_quadratic`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L19); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeT_quadratic`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L26); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeST_square`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L33); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeTS_square`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L41); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeST_cube`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L61); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2HeckeTS_cube`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L66); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Hecke_braid_six`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L71); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_involutions`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L78); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_sixth_power`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L85); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Hecke_at_one_cube_ne_one`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2BraidSixMatrices.lean#L92); blob `f79b56b1c37dd53c88a97eab69d69b5126bf7828`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2TrivialCharacter_generator`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L19); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2SignCharacter_generator`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L23); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Presented_scalar_injective`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L28); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Presented_rankOne_coordinates_unique`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L36); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
+- **Unverified pinned source:** [`GRWTSK.Algebra.Hecke.g2Presented_zero_ne_one`](https://github.com/grwtsk/math/blob/98d270be28e23dd0bbfea74540025db387b472af/GRWTSK/Algebra/Hecke/G2Characters.lean#L51); blob `9252f4fd248ba3c69782d0cc50522b5d10dd4b8b`.
 
 ## Verification scope
 

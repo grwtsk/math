@@ -1,5 +1,12 @@
 # Pending braid-six quotient characters and noncollapse
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 Exact source commit `ba0114942a25ca919af0f233be060d8cb7fb2421`; Lean 4.33.0; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED for all five new declarations. No new verified bridge is claimed.** Counts remain four completed optional/corrective obligations, fifteen partial results and seventeen unresolved obligations. All seven manuscript-level claims remain open.

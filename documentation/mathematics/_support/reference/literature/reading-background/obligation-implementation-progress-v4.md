@@ -1,5 +1,12 @@
 # Normalized rank-one basis, approximate covariance and signed local orders
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 New Lean source commit `bc5acaa160c1d02ee9d3c847b16065ce286007d1`; Lean `leanprover/lean4:v4.33.0`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **Eight new theorems. Four completed optional/corrective obligations, fourteen verified partial results, eighteen unresolved obligations. All seven manuscript-level claims remain open.** K2 in both distinct KL PDF versions and E5 in both distinct exceptional-group PDF versions acquire their first implemented fragments. S3/S5 advance without being discharged.

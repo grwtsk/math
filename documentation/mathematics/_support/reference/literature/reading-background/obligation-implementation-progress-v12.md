@@ -1,5 +1,12 @@
 # Braid-six Hecke presentation and universal evaluation
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 Source commit `a2634449d626b3581fe9d6182f3c499ba5e102ce`. Lean 4.33.0; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 Four completed optional/corrective obligations, fifteen partial results, seventeen unresolved obligations. All seven manuscript claims remain open.

@@ -1,5 +1,12 @@
 # Rank-one bar, probability tails, local comparison and conditional projector
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 New Lean source commit `20fae001d414e572b649166da32d250d8885921f`; Lean `leanprover/lean4:v4.33.0`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **Thirteen new theorems. Four completed optional/corrective obligations, fifteen verified partial results, seventeen unresolved obligations. All seven manuscript-level claims remain open.** B2 acquires its first implemented conditional fragment. K1/K2 in both KL versions, E5 in both exceptional-group versions, B3 and S3/S5 advance without being discharged.

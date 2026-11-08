@@ -1,5 +1,12 @@
 # Common-parameter G2 braid-six Hecke matrices
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md) · [Recorded obligation series](obligation-implementation-progress.md).
+
 New Lean source commit `3a39a933123141e08299093ce47554d683b9bd6d`; Lean `leanprover/lean4:v4.33.0`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.
 
 **Eight new theorems. Counts remain four completed optional/corrective obligations, fifteen partial results and seventeen unresolved obligations. All seven manuscript-level claims remain open.** K1 in both distinct KL versions gains a concrete common-parameter braid-six matrix model. The quadratic and braid relations hold over every commutative coefficient ring; a universal/faithful Hecke algebra and KL theory remain unconstructed.

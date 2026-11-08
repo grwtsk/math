@@ -1,5 +1,12 @@
 # Implementation progress through the 36 obligations
 
+Historical progress snapshot. Source pins, dependency versions, obligation counts,
+replay outcomes, and “new” or “current” references below apply to this recorded
+assessment. They do not describe the current checkout or a running verification
+job. Later source bytes do not inherit these observations.
+
+[Reading and correspondence index](index.md).
+
 Exact Lean source: `45cbbb6a85ae32c652839533b1db1ef3d444c1d6`; mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`; Lean 4.33.0.
 
 Four optional/corrective obligations discharged, three conditional fragments implemented, 29 obligations unresolved. All seven manuscript-level claims remain unresolved. Both pairs of distinct PDF versions retain independent records. Earlier search-only reports remain unchanged.
