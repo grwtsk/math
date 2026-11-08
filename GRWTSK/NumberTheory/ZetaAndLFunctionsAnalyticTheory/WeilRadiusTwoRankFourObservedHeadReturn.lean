@@ -21,12 +21,39 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRadiusTwoRankFour
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRadiusTwoRankFourObservedHeadGroup15
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRadiusTwoRankFourObservedHeadPole
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRadiusTwoPaidObservedGridReturn
+import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRadiusTwoRankFourRemoteReturn
 
-/-! Complete exact head44 source identity. All physical and scalar-pole
-coordinates are covered; raw/remote products and the high floor remain separate. -/
+/-!
+# Complete exact head44 source return
+
+The sixteen groups cover physical rows 0 through 63, with every physical and
+pole column in each row; `checkedPole` covers the remaining row. Decoding their
+integer equalities and the two-orientation hull returns all 4225 stored pairs
+to `RadiusTwoPaidObservedGridReturn.head`. `bounds_sound` then transports the
+existing observed-grid enclosure to the stored table, without a new soundness
+assumption. The denominator remains exactly `2^44`.
+
+`calculatedBounds_source` substitutes this table into the very same paid
+calculation consumed by packet containment in
+https://github.com/grwtsk/math/issues/1774. It retains the reconstruction of
+https://github.com/grwtsk/math/issues/1770, raw centres/radii, complete remote
+intervals, and symmetric hull. Equality of the head tables supplies neither the
+packet inequalities nor any new sign estimate. In particular the independent
+mode-64 `HighFloor 2 (-1/2) (1/5) 64` remains open; this module does not prove
+`StageLower 1`.
+
+The primary argument is exact signed integer arithmetic, including both
+outward roundings, followed by positive-denominator decoding. Pole signs and
+the unshifted scalar corner `1/2` are retained. The return and the stored table
+share the scalar observations; they are not independent analytic proofs.
+The group decisions are proof candidates until executed against pinned source.
+Compilation: NOT_RUN. Fresh kernel replay: NOT_RUN. Transitive axiom audit:
+NOT_RUN. Independent analytical review: NOT_RUN. Novelty: NOT_ASSESSED.
+-/
 namespace GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoRankFourObservedHead
 open GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoCandidateEntries
 open GRWTSK.Algebra.LinearAlgebra.FiniteSignDyadicLDL
+open GRWTSK.Algebra.LinearAlgebra.RationalRealBounds
 set_option autoImplicit false
 set_option maxRecDepth 100000
 set_option maxHeartbeats 0
@@ -104,7 +131,7 @@ theorem head_source (i j : Head) :
     GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoPaidObservedGridReturn.head i j = bounds i j := by
   change GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoCandidateHead.headBoundsHull
     RadiusTwoHeadPacket.bits RadiusTwoHeadPacket.tables i j = bounds i j
-  rw [← hullInt_source, allHeadIntegers i j]
+  rw [← hullInt_source i j, allHeadIntegers i j]
   rfl
 
 theorem lower_source (i j : Head) :
@@ -114,4 +141,32 @@ theorem lower_source (i j : Head) :
 theorem upper_source (i j : Head) :
     (GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoPaidObservedGridReturn.head i j).2 =
       dyadic 44 (upper i j) := congrArg Prod.snd (head_source i j)
+
+/-- Function equality permits substitution in consumers that take the whole head. -/
+theorem head_source_fun :
+    RadiusTwoPaidObservedGridReturn.head = bounds := by
+  funext i j
+  exact head_source i j
+
+/-- Every stored endpoint pair encloses the original shifted bordered source. -/
+theorem bounds_sound (i j : Head) :
+    Encloses (bounds i j)
+      (GRWTSK.LinearAlgebra.SchurObserver.shiftedBlock
+        (OddSchurAccounting.borderedSourceMatrix 2 64)
+        GRWTSK.LinearAlgebra.SchurObserver.poleShiftMetric (-1 / 2) i j) := by
+  rw [← head_source i j]
+  exact RadiusTwoPaidObservedGridReturn.head_sound i j
+
+/-- Replacing only the head by its stored endpoints preserves the exact
+rank-four calculated interval used by the packet-containment consumer. -/
+theorem calculatedBounds_source (i j : Head) :
+    RadiusTwoRankFourRemoteReturn.calculatedBounds i j =
+      RadiusTwoPaidLowerBounds.symmetricBounds
+        (RadiusTwoPaidObservationBounds.paidBounds bounds
+          RadiusTwoPaidObservedGridReturn.centres
+          RadiusTwoPaidObservedGridReturn.radii
+          RadiusTwoSchurPaidReconstruction.reconstructionQ
+          RadiusTwoRankFourRemoteReturn.remote) i j := by
+  unfold RadiusTwoRankFourRemoteReturn.calculatedBounds
+  rw [head_source_fun]
 end GRWTSK.NumberTheory.WeilQuadraticForm.RadiusTwoRankFourObservedHead
