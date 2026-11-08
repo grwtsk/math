@@ -51,7 +51,10 @@ knot isotopy is made; the vertex labels are essential. Its countable
 
 The [Euclidean realization](PrimeKnotAlexanderEuclideanDifferential.lean)
 provides the actual finite L2 Hilbert carrier and consumes the product rule
-as `spectralDifferential_leibniz`. The plain function carrier below by itself
+as `spectralDifferential_leibniz`. Its `euclideanDiracCLM` packages the same
+incidence action as a bounded self-adjoint operator; `euclideanCommutatorCLM`
+returns to `commutator` coordinatewise. `euclidean_compactResolvent` supplies
+a compact two-sided inverse of `z • 1 - D` whenever `z.im ≠ 0`. The plain function carrier below by itself
 uses the product norm, so its name `Hilbert` is not a Hilbert-norm certificate.
 
 
