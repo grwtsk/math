@@ -11,7 +11,10 @@ Consumer: the conservatively lifted `pendingLoop` paths in
 finite, stage-dependent tuple of observations when every pair with distinct
 source types has an explicitly supplied separating stage.
 
-This is a conditional, finite-inventory theorem. The separating witness is
+This is a conditional, finite-inventory theorem for the common horizon.
+Fixed-horizon partial classification, its exact `none` semantics, and
+uniqueness on realized observation signatures require no finite inventory.
+The separating witness is
 not constructed by adding spin sheets. A derived classifier is a mathematical
 function; effective execution requires computable witnesses and observations.
 No neural, physical-spin, analytic-Weil, RH, or GRH inference is asserted.
@@ -29,7 +32,7 @@ universe u v w z t
 
 section FiniteSeparation
 
-variable {P : Type u} [Fintype P]
+variable {P : Type u}
 variable {Kind : Type v} {Obs : Nat → Type w}
 
 /-- The typed observation tuple up to and including stage `N`.
@@ -39,11 +42,11 @@ def observationPrefix (readout : (n : Nat) → P → Obs n)
   fun i => readout i.val p
 
 /-- A fully supplied stage for every ordered source pair. -/
-def separationHorizon (witness : P → P → Nat) : Nat :=
+def separationHorizon [Fintype P] (witness : P → P → Nat) : Nat :=
   (Finset.univ : Finset (P × P)).sup (fun pq => witness pq.1 pq.2)
 
 /-- The finite supremum pays for every ordered pair, including empty carriers. -/
-theorem witness_le_horizon (witness : P → P → Nat) (p q : P) :
+theorem witness_le_horizon [Fintype P] (witness : P → P → Nat) (p q : P) :
     witness p q ≤ separationHorizon witness := by
   classical
   unfold separationHorizon
@@ -51,7 +54,7 @@ theorem witness_le_horizon (witness : P → P → Nat) (p q : P) :
 
 /-- Different source types cannot have equal accumulated signatures once the
     chosen separator for each pair is included in the observation horizon. -/
-theorem type_eq_of_prefix_eq
+theorem type_eq_of_prefix_eq [Fintype P]
     (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
     (witness : P → P → Nat)
     (distinguishes : ∀ p q, typeOf p ≠ typeOf q →
@@ -100,7 +103,7 @@ theorem prefixClassifier_correct
 
 /-- The central finite discovery theorem: a single common finite stage and
     a source-correct partial type decoder exist. No minimality of `N` claimed. -/
-theorem finite_type_discovery
+theorem finite_type_discovery [Fintype P]
     (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
     (witness : P → P → Nat)
     (distinguishes : ∀ p q, typeOf p ≠ typeOf q →
@@ -129,6 +132,21 @@ theorem prefixClassifier_has_source
   split_ifs at hk with h
   · exact ⟨Classical.choose h, Classical.choose_spec h, Option.some.inj hk⟩
   · cases hk
+
+/-- For an arbitrary (possibly infinite) source inventory, an
+unseen signature receives `none` exactly when it has no real source
+representative. This does not rely on cardinality, decidable equality,
+or a guessed default source kind. -/
+theorem prefixClassifier_none_iff_unobserved
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
+    (N : Nat) (signature : (i : Fin (N + 1)) → Obs i.val) :
+    prefixClassifier typeOf readout N signature = none ↔
+      ¬ ∃ p : P, observationPrefix readout N p = signature := by
+  classical
+  unfold prefixClassifier
+  by_cases h : ∃ p : P, observationPrefix readout N p = signature
+  · simp [h]
+  · simp [h]
 
 end FiniteSeparation
 
@@ -231,7 +249,7 @@ when observations are computationally inaccessible.
 
 section ExactClassificationCriterion
 
-variable {P : Type u} [Fintype P]
+variable {P : Type u}
 variable {Kind : Type v} {Obs : Nat → Type w}
 
 /-- Correct classification at a fixed horizon forces the intended types
@@ -269,6 +287,28 @@ theorem exists_classifier_iff_prefix_fibers_constant
     intro p
     exact prefixClassifier_correct typeOf readout N hfibers p
 
+/-- On the realized signature image, every globally correct
+classifier agrees with the original source-supported partial
+classifier. Off the image, a user-supplied classifier may behave
+differently; no stronger uniqueness claim is justified. -/
+theorem correct_classifier_agrees_on_sources
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
+    (N : Nat)
+    (classify : ((i : Fin (N + 1)) → Obs i.val) → Option Kind)
+    (hcorrect : ∀ p, classify (observationPrefix readout N p) =
+      some (typeOf p))
+    (p : P) :
+    classify (observationPrefix readout N p) =
+      prefixClassifier typeOf readout N
+        (observationPrefix readout N p) := by
+  have hfibers : ∀ x y,
+      observationPrefix readout N x = observationPrefix readout N y →
+      typeOf x = typeOf y := by
+    intro x y heq
+    exact classifier_correct_implies_type_constant
+      typeOf readout N classify hcorrect x y heq
+  rw [hcorrect p, prefixClassifier_correct typeOf readout N hfibers p]
+
 /-- A finite successful classifier necessarily separates EVERY pair
 of different source types at some observed stage, without assuming a
 minimal horizon or an effective observation algorithm. -/
@@ -297,7 +337,7 @@ theorem classifier_implies_eventual_separation
 /-- Exact if-and-only-if completion of finite_type_discovery:
 pairwise eventual observation separation is not merely sufficient
 but also NECESSARY for some correct finite-prefix classifier. -/
-theorem finite_classifier_iff_eventual_separation
+theorem finite_classifier_iff_eventual_separation [Fintype P]
     (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n) :
     (∃ N : Nat, ∃ classify :
         (((i : Fin (N + 1)) → Obs i.val) → Option Kind),
