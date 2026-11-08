@@ -1,0 +1,304 @@
+{
+  "branches": [
+    {
+      "claim": "||B_gamma||<=pi/2",
+      "formula": "B_gamma(x,y)=-k(y-x)+k(y+x)",
+      "id": "radiusFour.gammaMixed",
+      "proof": "k decreasing, k(r)<=1/(2r); |k_eps(y-x)-k_eps(y+x)|<=k(y-x), including the cutoff-straddling case; weighted Carleman Schur test with weight t^(-1/2).",
+      "quantifiers": "All physical L2 input pairs; all eps>0 share the same mixed bound.",
+      "status": "WRITTEN_ANALYTIC_PROOF",
+      "tail": "Dominated convergence of the mixed kernel controls the entire eps->0 tail.",
+      "type": "Bounded linear operator B_gamma:L2(3,4)->L2(0,3)"
+    },
+    {
+      "claim": "D_4 equals the direct sum of the two restricted domains; gamma_4[u0+v]=gamma_4[u0]+gamma_4[v]+2 Re<u0,B_gamma v>.",
+      "id": "radiusFour.sharpCutDomain",
+      "proof": "Positive truncated gamma forms, the uniform mixed bound, monotone convergence; no C2 or H1 assumption on the cut pieces.",
+      "status": "WRITTEN_ANALYTIC_PROOF",
+      "type": "Orthogonal projections onto H0=L2(0,3) and H1=L2(3,4) preserving the actual finite-gamma form domain"
+    },
+    {
+      "counts": {
+        "edge_reflected": 365,
+        "edge_same_side": [
+          2
+        ],
+        "new_pure_edge": 255,
+        "new_reflected_mixed": 110,
+        "reflected_mixed": 193,
+        "same_side_mixed": 21
+      },
+      "formula": "sum_native458 w_n beta_n(R_log_n-S_log_n), S_r v(x)=1_(3,4)(x+r)v(x+r), R_r v(x)=1_(3,4)(r-x)v(r-x)",
+      "id": "radiusFour.primeMixed",
+      "status": "WRITTEN_SOURCE_EXACT_IDENTITY_AND_FINITE_ENUMERATION_CANDIDATE",
+      "tail": "Beyond the physical width every correlation is zero, including equality by null overlap; no atom or character phase omitted.",
+      "type": "Bounded actual signed operator B_prime:H1->H0 with exhaustive finite arithmetic index"
+    },
+    {
+      "claim": "Q3(f)>=-E(f)/20; Q4(O_4u0)=Q3(O_3u0)",
+      "dependency": "Recorded FiniteAnnulus(C) at its written computer-assisted scope.",
+      "id": "radiusFour.coreFormReturn",
+      "proof": "Even mollification followed by support-shrinking dilation; g(a xi)<=a^2 g(xi) supplies form-norm continuity. Real/imaginary parts split the real symmetric source. Native window equality kills every new correlation.",
+      "status": "WRITTEN_ANALYTIC_RETURN_FROM_RECORDED_COMPUTER_ASSISTED_INPUT",
+      "type": "Lower bound on every complex odd radius-three finite-gamma form-domain input"
+    },
+    {
+      "claim": "A0>=3I/40, ||A0^(-1)||<=40/3",
+      "heat": "T0(t)=exp(-t A0), ||T0(t)||<=exp(-3t/40), exact generator return on Dom(A0); inverse integral tail after L <=(40/3)exp(-3L/40).",
+      "id": "radiusFour.coreGap",
+      "normalization": "Core arithmetic form is m00-||u0||^2/8; full original Q is twice the half-line form.",
+      "status": "WRITTEN_COMPUTER_ASSISTED_CORE_GAP_WITH_ANALYTIC_SPECTRAL_RETURN",
+      "type": "Closed core form m00 with associated self-adjoint A0 on H0"
+    },
+    {
+      "claim": "m11[v]>=<Bv,A0^(-1)Bv>, B=B_gamma+B_prime",
+      "consumer": "Exact identity m[u0+v]=m00[u0+A0^(-1)Bv]+m11[v]-<Bv,A0^(-1)Bv>; the displayed sign is necessary and sufficient for the full shifted radius-four form to be nonnegative.",
+      "id": "radiusFour.sharpEdgeSchur",
+      "source": "m11 is actual edge gamma plus (c3+1/8)||v||^2, native same-side atom 2 and all 365 new reflected atoms with exact support masks and native signs.",
+      "status": "OPEN_RESEARCH_OBLIGATION_NOT_AN_INTERFACE_FIELD",
+      "type": "Quadratic inequality for every v in H1 with Gamma(O_4v)<infinity"
+    },
+    {
+      "coding_role": "Same existing dependent tagged-tree interface; retain all source/operator/domain/normalization/time/tail/error data and preserve the sufficient sign as OPEN on decoding.",
+      "complete_tail": "0<=<Bv,A0^(-1)Bv>-C400[v]<=(40/3)*214^2*exp(-30)||v||^2<=10^(-7)||v||^2",
+      "dependencies": [
+        "radiusFour.gammaMixed",
+        "radiusFour.primeMixed",
+        "radiusFour.coreGap",
+        "radiusFour.sharpEdgeSchur"
+      ],
+      "domain": "C400 and the tail identity hold for EVERY v in H1; the sufficient sign quantifies over every v with Gamma(O_4v)<infinity",
+      "domain_return": "Bv need only be in H0. No operator-domain, H1-regularity, bandlimit or cutoff assumption is imposed on Bv.",
+      "finite_lean_declarations": [
+        "directional_heat_taylor_guard",
+        "directional_heat_exp_one_lower",
+        "directional_heat_tail_guard"
+      ],
+      "formula": "C400[v]=integral_0^400 ||exp(-t*A0/2)Bv||^2 dt",
+      "forward_return": "The full tail and sufficient sign imply radiusFour.sharpEdgeSchur, then exact Schur completion gives Q4(O_4u)>=-E(O_4u)/8 and the original PrimitiveStageLower chi3 hp hn 3.",
+      "fresh_kernel_check": "NOT_RUN",
+      "heat_role": "Actual directional core spectral heat with unchanged A0 and B; not branch coverage heat and not Markov or finite Euler sign heat.",
+      "id": "radiusFour.directionalCoreHeat400",
+      "independent_human_review": "NOT_RUN",
+      "infinite_domain_boundary": "A finite time cutoff is not a finite-dimensional certificate. Evaluating or approximating C400 for every edge vector remains an analytical obligation with its own complete approximation error.",
+      "lean_compilation": "NOT_RUN",
+      "normalization": "Half-line physical norm ||v||^2; E(O_4v)=2||v||^2; m=q4+||u||^2/8",
+      "operator_identity": "<Bv,A0^(-1)Bv>=integral_0^infinity ||exp(-t*A0/2)Bv||^2 dt",
+      "parameters": {
+        "B_operator_norm_upper": 214,
+        "alpha": [
+          3,
+          40
+        ],
+        "complete_tail_upper": [
+          1,
+          10000000
+        ],
+        "time_cutoff": 400
+      },
+      "proof": "Tonelli for the nonnegative spectral measure of Bv supported on[3/40,infinity), integral exp(-t lambda)=1/lambda, and the exact full spectral time tail. exp(1)>=65/24>27/10 and (40/3)*214^2<10^(-7)*(27/10)^30 pay the whole unobserved tail.",
+      "source_norm_proof": "||B||<=pi/2+2*sum_native458 w_n<214; no weighted metric or character-sector change",
+      "sufficient_sign": "For every finite-gamma edge v, m11[v]>=C400[v]+10^(-7)||v||^2",
+      "sufficient_sign_status": "OPEN_RESEARCH_OBLIGATION; sufficient, not claimed necessary",
+      "transitive_axiom_audit": "NOT_RUN",
+      "type": "Bounded positive quadratic form C400 on the actual physical H1=L2((3,4),dt;Complex), together with a universal source-resolvent tail bound",
+      "written_analysis": "COMPLETE_AT_THIS_TAIL_AND_CONDITIONAL_RETURN_SCOPE"
+    },
+    {
+      "bump": {
+        "K_squared": [
+          15015,
+          1024
+        ],
+        "derivative_norm_squared": 390,
+        "physical_norm_squared": 1
+      },
+      "does_not_refute": [
+        "sharpEdgeSchur",
+        "original radius-four stage",
+        "RH",
+        "DirichletGRH"
+      ],
+      "id": "radiusFour.cheapScalarSchur",
+      "proof": "Continuous c-average has ||Bv_c||^2>39/10 for some c; full-source m11[v_c]<32 for every c. Hence scalar RHS>52. Same/other-orientation errors include every term and both partial-map boundaries; exact gamma upper bound uses Fourier Jensen and the full odd-extension derivative moment, not a constant-gamma approximation.",
+      "status": "REFUTED_FOR_THE_ACTUAL_SOURCE_BY_WRITTEN_PROOF_AND_EXACT_FINITE_SCALAR_GUARDS",
+      "type": "Proposed stronger inequality m11[v]>=(40/3)||Bv||^2 on the same edge form domain",
+      "witness_family": "v_c(y)=exp(i c y) K(1-100(y-7/2)^2)^3_+, c in[10^12,2*10^12]"
+    }
+  ],
+  "canonical_noe_revision_read": "8ea2845e2afb84a97f1084e8b1d3b4a5e62e557a",
+  "common_contract": {
+    "base_field": "Complex; real original tests embedded without a source change",
+    "character": "modThreeQuadratic, table (0,1,-1), conductor 3, primitive nonprincipal",
+    "coding_interface": "Finite dependent tagged source-syntax trees; decode(encode x)=some x and decodeImage(encode x)=x by structural induction. Bound variables represent semantic functions; no finite coding of arbitrary semantic L2 functions.",
+    "fourier_measure": "dxi/(2*pi)",
+    "fourier_transform": "F(xi)=integral f(t)exp(i xi t)dt",
+    "gamma_domain": "D_T={u in L2(0,T): Gamma(O_T u)<infinity}",
+    "gamma_form_norm": "(||u||^2+Gamma(O_T u)/2)^(1/2)",
+    "gamma_kernel": "k(r)=exp(-3*r/2)/(1-exp(-2*r)), r>0",
+    "gamma_multiplier": "g(xi)=sum_{j>=0} 2*xi^2/[a_j*(a_j^2+xi^2)], a_j=3/2+2*j",
+    "gamma_parity": 1,
+    "heat_interface": "Actual core spectral heat where proved; otherwise exhaustive typed-description coverage only. No arithmetic sign follows from reference heat.",
+    "inner_product": "antilinear first",
+    "inventory": "All p prime, p!=3, e>=1, p^e<=2980; exactly 458 nonzero atoms",
+    "normalization": "E(O_T u)=2||u||^2; q_T[u]=Q_T(O_T u)/2",
+    "odd_extension": "O_T u equals u on (0,T), -u(-t) on (-T,0), zero elsewhere",
+    "physical_metric": "Lebesgue L2(dt), almost-everywhere quotient",
+    "pole": "NONE",
+    "source_weight": "w_n=log(p)/sqrt(n), beta_n=chi3(n); Q prime term is -2*sum w_n*beta_n*Re C_f(log n)"
+  },
+  "comparison": "Actual odd gamma Carleman bound plus closed-form Schur completion. Shared original-source/radius-three packet foundations are disclosed; not a second independent proof of their signs. The cheap scalar Schur condition is rigorously refuted, sharpening the unresolved obligation to the actual resolvent. Original global RH/GRH conclusions remain open.",
+  "consumed_sources": [
+    {
+      "claim": "Written computer-assisted (C): Q3(f)>=-E(f)/20 for every original real odd radius-three admissible test.",
+      "evidence": "RECORDED_CONTROLLED_FINITE_COMPUTATIONS_AND_WRITTEN_ANALYSIS; no fresh all-head replay or analytic kernel proof in this file",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeFiniteAnnulus.lean",
+      "sha256": "9d5196cecf14a80a7d90474c80cb21dd9b42e27fda1b7111b84070ed70540617"
+    },
+    {
+      "claim": "Native strict-cutoff comparison and complete 458 nonzero atom inventory; 365 new atoms.",
+      "evidence": "PASS_FINITE_ENUMERATION_AND_CODEC_TERMS; source analytic cutoff comparison WRITTEN",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourInventory.lean",
+      "sha256": "ac13e0400afcb7f50c7959d4defebdca3c05bfd15f3db868e24c37c0625f6a54"
+    },
+    {
+      "declarations": [
+        "gammaCorrectionDensity",
+        "primitiveArithmeticValue",
+        "primitiveArithmeticValue_eq_of_le"
+      ],
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorFrontier.lean",
+      "sha256": "7ebb2357b464f13b4799e65ee1b083b1daa292c8a235eb7bda52804b480487eb"
+    },
+    {
+      "declarations": [
+        "energy",
+        "correlation",
+        "correlation_eq_zero_of_cutoff"
+      ],
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilSourcePrimeCorrelation.lean",
+      "sha256": "5f59fc9fdc8748943847380020e2e58cad5ac4e43f736b178deeb5f860140dbc"
+    },
+    {
+      "declarations": [
+        "Admissible",
+        "PrimitiveStageLower",
+        "SmallConductorStages",
+        "dirichletGRH_of_source_chains"
+      ],
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilDirichletStageChain.lean",
+      "sha256": "1582bc398d087446ac06f80c6156800ea817a37dfe97b563c7002e9ccd926726"
+    },
+    {
+      "claim": "Actual same-side/reflected odd correlation identity and native signed source normalization.",
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeOddEdgeLoewner.lean",
+      "sha256": "98c747f815b6aec74abcb13fb970635e4f822997f67d1a05e07a615b04fb449d"
+    }
+  ],
+  "evidence_facets": {
+    "finite_exact_guards": "FRESH_INTEGER_RATIONAL_SCALAR_REPLAY",
+    "fresh_kernel_check": "NOT_RUN",
+    "independent_human_review": "NOT_RUN",
+    "inherited_radius_three_input": "RECORDED_WRITTEN_COMPUTER_ASSISTED; not freshly replayed here",
+    "lean_compilation": "NOT_RUN",
+    "numerical_experiments_in_this_source": "NONE",
+    "transitive_axiom_audit": "NOT_RUN",
+    "worldwide_novelty": "NOT_ASSESSED",
+    "written_analysis": "COMPLETE_AT_STATED_LEAF_AND_CONDITIONAL_RETURN_SCOPE"
+  },
+  "finite_source_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": [
+      "actual_core_shift_gap",
+      "actual_core_inverse_price",
+      "directional_heat_taylor_guard",
+      "directional_heat_exp_one_lower",
+      "directional_heat_tail_guard",
+      "hostile_bump_scalar_guards",
+      "hostile_source_aggregate_guards",
+      "hostile_full_mean_guard",
+      "hostile_archimedean_power_guard",
+      "hostile_easy_schur_failure_margin",
+      "core_edge_square",
+      "mixed_same_side_atom_count",
+      "mixed_reflected_atom_count",
+      "new_mixed_reflected_atom_count",
+      "new_pure_edge_atom_count",
+      "edge_reflected_atom_count",
+      "edge_same_side_inventory"
+    ],
+    "evidence_path": ".cache/chi3-radius-four-20261107/source-audits/EdgeSchurAudit.log",
+    "evidence_repository": "grwtsk/noeaaeue",
+    "evidence_sha256": "426df2dd1ff997354b14d0c05f48d4fb05ecea63e156d4b71ba5d59436b5158c",
+    "finite_declarations": 17,
+    "fresh_rebuild_of_imported_dependencies": "NOT_RUN",
+    "kernel_check_of_new_terms_trust_0": "PASS",
+    "printed_transitive_axioms": "PASS_STANDARD_AXIOMS_ONLY",
+    "source_copy_compilation": "PASS",
+    "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourEdgeSchur.lean",
+    "source_sha256": "5ad8bd0e1708a3daa3801408d8ebbcc45033a83d49584bce7ac181fc86ec9a7f",
+    "universal_analytic_formalization": "NOT_RUN"
+  },
+  "heat_and_lossless": {
+    "actual_core_spectral_heat": "Proved at the inherited written computer-assisted scope, not Markov or claimed trace class.",
+    "codec_roundtrip": "decode(encode x)=some x; on encoder image decodeImage(encode x)=x",
+    "coverage_operator": "Kx=(x+(sum x)pi)/2 on l1",
+    "directional_time_cutoff": "Actual C400 source heat with full tail <=10^(-7)||v||^2; sufficient finite-time sign remains OPEN.",
+    "evidence": "WRITTEN_FINITE_TAGGED_TREE_CONSTRUCTION_REUSING_NATIVE_DEPENDENT_DESCRIPTION_INTERFACE; no new Lean codec implementation or arbitrary semantic-function encoding",
+    "exact_coverage_source_return": "x=2Kx-(sum Kx)pi",
+    "exhaustive_coverage_index": "Natural codes of all representable dependent typed descriptions, retaining invalid/status entries.",
+    "full_reference_tail": "sum_{n>=J}pi_n=2^(-J)",
+    "full_target_heat": "Contraction for exp(-t M4) is conditional on the OPEN actual edge sign; not asserted.",
+    "reference_weight": "pi_n=2^(-n-1)",
+    "retained_data": "Dependent type context, source declarations/hashes, character/parity, physical domains/norms, all 458 exact atoms, gamma tail/domain laws, truncation limits, mollifier/dilation data, core input evidence, A0/B/inverse source syntax, all approximation errors and open/false/proved statuses. Section6A additionally retains the exact directional heat integral, cutoff400, alpha3/40, B norm214, exponential/rational guards, full source-resolvent time tail, all future approximation errors and the OPEN sufficient sign."
+  },
+  "local_attribution": "grwtsk contributors",
+  "obstruction_finite_guards": {
+    "average_parameter_C": "10^12",
+    "cross_orientation_error_constant_including_boundaries": 2966304,
+    "evidence": "FRESH_STANDALONE_EXACT_INTEGER_RATIONAL_CALCULATION; written analytic use; not a Lean enclosure theorem",
+    "gamma_mixed_error_constant": 424000,
+    "log_enclosure": "Twenty-term atanh series after binary range reduction; exact remainder 2*z^41/[41*(1-z^2)]",
+    "native_half_mass_upper_denominator": "2^50",
+    "native_half_mass_upper_numerator": "118563038614037194",
+    "nine_full_shift_primes": [
+      2,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29
+    ],
+    "nine_squared_weight_lower_denominator": "2^50",
+    "nine_squared_weight_lower_numerator": "4587970534375541",
+    "outward_weight_grid_bits": 50,
+    "same_orientation_error_constant": 133933120,
+    "sqrt_lower": "isqrt(n*10^18)/10^9, checked by integer squares"
+  },
+  "original_target": {
+    "arguments": [
+      "modThreeQuadratic",
+      "modThreeQuadratic_primitive",
+      "modThreeQuadratic_nonprincipal",
+      3
+    ],
+    "carrier": "real odd compact C2 functions on R, pointwise zero outside [-4,4], physical Lebesgue L2, finite original parity-one gamma correction",
+    "declaration": "GRWTSK.NumberTheory.WeilQuadraticForm.DirichletStageChain.PrimitiveStageLower",
+    "exact_statement": "For every original Admissible chi3 4 f, primitiveArithmeticValue chi3 hp hn 4 (liftReal f) >= -energy(liftReal f)/8.",
+    "l_function_family_on_cofinal_return": "Conditional.DirichletGRH: all complex Dirichlet characters modulo every positive integer; zeros in 0<Re(s)<1 have Re(s)=1/2. Primitive principal conductor 1 is the zeta/RH sector.",
+    "status": "OPEN"
+  },
+  "schema": "grwtsk.math.static-verification-target/1",
+  "source_baseline": "901c989b9899251f08b3fe8e87bae731fb465e3b",
+  "source_header_NOT_RUN": "Drafting-time status; exact-source finite replay is recorded separately here, not universal analytic formalization.",
+  "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourEdgeSchur.lean",
+  "source_sha256": "5ad8bd0e1708a3daa3801408d8ebbcc45033a83d49584bce7ac181fc86ec9a7f",
+  "status": "WRITTEN_ANALYTIC_CORE_EDGE_RETURN_WITH_OPEN_SHARP_EDGE_SIGN"
+}

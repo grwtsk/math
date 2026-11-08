@@ -1,0 +1,161 @@
+{
+  "attribution": "grwtsk contributors",
+  "carrier": "original real odd compact C2 test, support [-4,4], physical Lebesgue L2(dt), original finite parity-one gamma energy",
+  "character": {
+    "conductor": 3,
+    "gamma_parity": 1,
+    "modulus": 3,
+    "nonprincipal": true,
+    "primitive": true,
+    "values": [
+      0,
+      1,
+      -1
+    ]
+  },
+  "evidence": {
+    "finite_exact_scalar_inventory": "PASS",
+    "fresh_kernel_replay": "NOT_RUN",
+    "independent_human_review": "NOT_RUN",
+    "lean_compilation": "PASS_FINITE_SCALAR_AND_CODEC_DECLARATIONS_ONLY",
+    "transitive_axiom_audit": "PASS_SEVEN_FINITE_DECLARATIONS_STANDARD_AXIOMS_ONLY",
+    "written_analytic": "COMPLETE_FOR_LOW_SOURCE_LEAF"
+  },
+  "exact_scalar_evidence": {
+    "all_pass": true,
+    "always_active_checks": 18,
+    "canonical_json_roundtrip": "PASS",
+    "checker_path": "grwtsk/noeaaeue:.cache/chi3-radius-four-20261107/stage_audit_low_M19000_K1425_exact.py",
+    "checker_sha256": "dc1fef8b37804c378e6718bed4e6206d39c43274ff6373827846e4f54a18dfeb",
+    "output_path": "grwtsk/noeaaeue:.cache/chi3-radius-four-20261107/stage_audit_low_M19000_K1425_exact.json",
+    "output_sha256": "44c8ac3131f794f9b46cdc8a202c7cbf6c2dafca094d72886e2c696d8b35689c",
+    "status": "PASS_EXACT_SCALAR_AND_INVENTORY_ONLY"
+  },
+  "finite_codec": {
+    "carrier": "(String x String x String) x (List Nat x List Rat)",
+    "declaration": "ConductorThreeRadiusFourLowFilter.finiteProofData_roundtrip",
+    "law": "Encodable.decode (Encodable.encode finiteProofData) = some finiteProofData",
+    "scope": "whole finite parameter/source packet; full written source bytes separately bound above; no arbitrary semantic L2 functions encoded",
+    "source_strings": "explicit Char.toNat/Char.ofNat and String.toList/String.ofList left inverses"
+  },
+  "finite_lean_evidence": {
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fresh_independent_kernel_replay": "NOT_RUN",
+    "path": "grwtsk/noeaaeue:.cache/chi3-radius-four-20261107/stage_audit_low_M19000_K1425_lean_evidence.json",
+    "sha256": "dbae2130bbfbd7f1f8196cf9903e50b7df591a158936872f34c061cf48563743"
+  },
+  "heat": {
+    "arithmetic_sign_from_heat": false,
+    "complete_tail": "2^(-J)",
+    "role": "existing exhaustive branch coverage only",
+    "source_return": "x=2Kx-(sum Kx)*pi for summable branch states",
+    "weights": "2^(-n-1)"
+  },
+  "historical_gram_factors": "not used, not reconstructed, not claimed losslessly archived",
+  "leaf_statement": "For every original Admissible modThreeQuadratic 4 f, J_R(s4 * P_L^2) >= -10^(-66) * energy(liftReal f)",
+  "normalization": "F(z)=integral f(t)exp(i*z*t)dt; frequency measure dxi/(2*pi); no principal pole",
+  "not_claimed": [
+    "middle sign",
+    "PrimitiveStageLower j=3",
+    "RH",
+    "DirichletGRH",
+    "continuum Lean theorem",
+    "universal encoding of arbitrary functions"
+  ],
+  "original_target": "DirichletStageChain.PrimitiveStageLower modThreeQuadratic modThreeQuadratic_primitive modThreeQuadratic_nonprincipal 3",
+  "parameters": {
+    "K": 1425,
+    "M": 19000,
+    "complex_strip_prefactor": [
+      1003,
+      1000
+    ],
+    "epsilon": [
+      1,
+      10000000000000000000000000000000000000000
+    ],
+    "far_geometric_ratio_power": 5699,
+    "far_power": 2850,
+    "h": [
+      153,
+      2000000000
+    ],
+    "raw_low_source_allowance": [
+      1,
+      1000000000000000000000000000000000000000000000000000000000000000000
+    ],
+    "raw_support": [
+      400291499,
+      100000000
+    ],
+    "wide_support": [
+      400291699,
+      100000000
+    ]
+  },
+  "primary_inputs": [
+    {
+      "scope": "published rigorous finite verification for primitive q=3, not full GRH",
+      "source": "Platt arXiv:1305.3087v1",
+      "theorem": "7.1"
+    },
+    {
+      "scope": "both ordinate signs and all multiplicities",
+      "source": "Bennett-Martin-OBryant-Rechnitzer arXiv:2005.02989v1",
+      "theorem": "1.1"
+    },
+    {
+      "equation": "5.9.16",
+      "source": "NIST DLMF"
+    },
+    {
+      "scope": "written source-normalized individual primitive compact explicit formula",
+      "source": "WeilDirichletCompactFilterReturn"
+    }
+  ],
+  "remaining": "Prove J_R(s4*(1-P_L^2)) >= -(1/8-10^(-66))*E on every original Admissible chi3 4 f, or prove the corresponding joint source middle bound with all existing high allowances paid.",
+  "source_atoms": {
+    "absolute_coefficient_upper": [
+      2106102645586,
+      10000000000
+    ],
+    "entire_gap_without_prime_powers": [
+      2981,
+      2998
+    ],
+    "first_next_atom": 2999,
+    "nonzero_count": 458,
+    "original_max_integer": 2980
+  },
+  "source_file": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourLowFilter.lean",
+  "source_revision": "c779a67fa824da8f9b75384f7d61c46baeb2ce1f",
+  "source_sha256": "fc0c1b0520ac9df4f4941e7e529182e121add75237e6b69296e063136738070b",
+  "tail_contract": {
+    "entire_far_allowance": [
+      1,
+      10000000000000000000000000000000000000000000000000000000000000000000
+    ],
+    "far_annuli": "10 Hsafe * 2^j < |Re z| <= 20 Hsafe * 2^j, every natural j",
+    "far_count_upper": "10^9 * 2^j * (22+j), including both signs and multiplicities",
+    "near_allowance": [
+      1,
+      10000000000000000000000000000000000000000000000000000000000000000000
+    ],
+    "near_count_upper": 10000000000,
+    "near_unknown_domain": "Hsafe < |Re z| <= 10 Hsafe",
+    "original_transform_product_upper": 648,
+    "safe_height": [
+      99999997,
+      3
+    ],
+    "verified_height": [
+      100000000,
+      3
+    ]
+  },
+  "type": "source-bound static mathematical verification target; not a Noe runtime receipt"
+}
