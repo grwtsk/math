@@ -8,6 +8,12 @@ Current folder navigation uses [MSC2020](msc2020/README.md). Authored concepts, 
 
 The durable Noeaaeue source-occurrence inventory records the tree at math commit `08f36b280d1024939af83b924e7d9cc7f47ade04` and root tree `025504d87e4134db0ab3591d7dff6762a28b6669`. It contains all 72,343 regular `.lean` files under `GRWTSK`, including `SourceCorpus`, with exact repository, commit, tree, path, mode, Git blob, module and content-digest fields. The inventory reports completeness for that pinned tree, not the current `main`; every semantic taxonomy assignment remains `UNASSESSED`, so it does not retroactively turn the historical 2026-10-19 inspection into a semantic or historical classification review.
 
+## Historical inspection — 2026-10-19
+
+The inspection narrative below concerns the immutable inputs listed here.
+Use the [documentation index](../index.md), [subject guides](subjects/index.md),
+and [current source layout](msc2020/source-layout-v1.json) for live navigation.
+
 Inspection date: 2026-10-19. Scope: repository boundary, documentation/source-root reconciliation, selected source association, issue requirements and open-PR overlap. This is not a complete source-corpus, declaration, authorship or proof audit.
 
 ## Immutable inputs
@@ -32,13 +38,13 @@ Sources: [root instructions](https://github.com/grwtsk/math/blob/eb3124bd05f0f74
 
 ## Separate inventories
 
-The existing documentation index reports 12 areas, 149 object guides, 59 object groups and 886 Lean source modules. It explicitly describes its declaration-command counts as lower bounds, not accepted theorems. Those are index claims, not a fresh enumeration at this revision.
+The documentation index at the inspected revision reports 12 areas, 149 object guides, 59 object groups and 886 Lean source modules. It explicitly describes its declaration-command counts as lower bounds, not accepted theorems. Those are index claims, not a fresh enumeration at this revision.
 
 The inspected `GRWTSK/` tree instead has 22 immediate directories: Algebra; AlgebraicGeometry; Analysis; CategoriesAndHomologicalAlgebra; Combinatorics; CombinatoricsAndDiscreteMathematics; Data; DifferentialEquationsAndDynamicalSystems; DynamicalSystems; FoundationsLogicAndTypeTheory; Geometry; GroupTheory; Interfaces; LinearAlgebra; Logic; MeasureTheory; NumberTheory; Order; ProbabilityAndMathematicalStatistics; SourceCorpus; Spectral; Topology. A source root is not automatically a discipline. In particular, Interfaces and SourceCorpus are not new branches of mathematics inferred from storage names.
 
 Sources: [existing index](https://github.com/grwtsk/math/blob/eb3124bd05f0f74aaa709ca36a855539f722fb92/docs/index.md), [source-root tree](https://api.github.com/repos/grwtsk/math/git/trees/bfdf232423cfbbaf9ea062e3a18a52bb8cc952bf).
 
-A complete recursive response was too large for this bounded inspection. Consequently the maintained-module denominator, historical-occurrence denominator and current guide inventory remain UNRECONCILED. The three named namespace pairs are reviewed as scope questions in the [collision proposal](proposals/collisions/index.md), not merged.
+A complete recursive response was too large for this bounded inspection. Consequently the maintained-module denominator, historical-occurrence denominator and guide inventory remained UNRECONCILED in that inspection. The three named namespace pairs are reviewed as scope questions in the [collision proposal](proposals/collisions/index.md), not merged.
 
 ## Mathematical relations and attribution
 
