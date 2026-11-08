@@ -1,0 +1,19 @@
+schema: "math-ontology/relation/2"
+id: "relation:grwtsk.marked.requires-source-comparison"
+type: "requires_work"
+from: "entity:grwtsk.if.marked-boundary-sine"
+to: "entity:grwtsk.obl.marked-sine-source"
+context: "context:grwtsk.literal-weil"
+status: "documented"
+justification: "The exact signed sine matrix comparison is a separate input and must pay epsilon."
+sources:
+  - source: "source:grwtsk.math"
+    path: "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MarkedInverseBoundaryWeilSineBridge.lean"
+    locator: "SourceLowerComparison.sourceLower"
+    revision: "0d7adb3bca0a87868e928b625bdad1ba1b281552"
+    blob: "8af13a58639c2c24029009237d2b6a1d9084f20d"
+costs:
+  reading: 1
+  formalization: 2
+  translation: 1
+  verification: 2

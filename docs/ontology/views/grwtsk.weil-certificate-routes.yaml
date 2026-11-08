@@ -41,6 +41,17 @@ entities:
 - entity:grwtsk.cert.primitive-negative-witness
 - entity:grwtsk.cert.all-small-conductor-stages
 - entity:grwtsk.cert.primitive-nonprincipal-critical-line
+- entity:grwtsk.if.marked-boundary-sine
+- entity:grwtsk.obl.marked-realization
+- entity:grwtsk.obl.marked-sine-source
+- entity:grwtsk.obl.marked-geometric-floor
+- entity:grwtsk.claim.marked-finite-sine-lower
+- entity:grwtsk.obl.marked-full-domain-return
+- entity:grwtsk.if.weil-signed-coordinate-heat
+- entity:grwtsk.obs.signed-heat-sign-neutral
+- entity:grwtsk.obj.weil-radius-two-head
+- entity:grwtsk.obj.marked-boundary-observations
+- entity:grwtsk.obj.weil-sine-coefficients
 relations:
 - relation:grwtsk.op.weil.defined-using.obj.weil-form
 - relation:grwtsk.op.weighted-heat.defined-using.obj.weighted-hilbert
@@ -51,6 +62,12 @@ relations:
 - relation:grwtsk.packet-code.domain
 - relation:grwtsk.reversible-coverage.packet-code
 - relation:grwtsk.euler-heat.separate-from-coverage
+- relation:grwtsk.marked.requires-realization
+- relation:grwtsk.marked.requires-source-comparison
+- relation:grwtsk.marked.requires-geometric-floor
+- relation:grwtsk.marked-finite.requires-domain-return
+- relation:grwtsk.signed-heat.constrains-coordinate-source
+- relation:grwtsk.signed-heat.not-weighted-heat
 inferences:
 - rule:grwtsk.literal-positivity
 - rule:grwtsk.rh-odd
@@ -63,6 +80,7 @@ inferences:
 - rule:grwtsk.primitive-critical-line
 - rule:grwtsk.grh-native-primitive-reduction
 - rule:grwtsk.grh-cofinal-packets
+- rule:grwtsk.marked-finite-sine-return
 sources:
 - source: source:grwtsk.math
   path: GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilCertificateRootReturn.lean
@@ -82,3 +100,7 @@ boundary_checks:
 - The real odd zeta criterion preserves actual zero multiplicities. The primitive nonprincipal negative-test
   return remains a premise.
 - The two cofinal zeta returns share the literal root criterion and do not constitute independent proofs.
+
+- The marked geometry route remains conditional and finite; no RH/Dirichlet GRH inference may consume it without a full-domain and all-character return.
+- Reversible Markov coordinate diffusion retains the original signed source and preserves negative modes.
+- The separate Noe frontier skill suite is advisory and cannot promote any mathematical evidence state.

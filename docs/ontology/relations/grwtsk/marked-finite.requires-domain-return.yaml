@@ -1,0 +1,19 @@
+schema: "math-ontology/relation/2"
+id: "relation:grwtsk.marked-finite.requires-domain-return"
+type: "requires_work"
+from: "entity:grwtsk.claim.marked-finite-sine-lower"
+to: "entity:grwtsk.obl.marked-full-domain-return"
+context: "context:grwtsk.literal-weil"
+status: "documented"
+justification: "The proposed application to the complete Weil criterion needs high complements, cofinal windows and character returns."
+sources:
+  - source: "source:grwtsk.math"
+    path: "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MarkedInverseBoundaryWeilSineBridge.lean"
+    locator: "Finite source-only scope"
+    revision: "0d7adb3bca0a87868e928b625bdad1ba1b281552"
+    blob: "8af13a58639c2c24029009237d2b6a1d9084f20d"
+costs:
+  reading: 1
+  formalization: 2
+  translation: 1
+  verification: 2

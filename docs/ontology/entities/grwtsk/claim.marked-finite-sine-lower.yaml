@@ -1,0 +1,29 @@
+schema: "math-ontology/entity/2"
+id: "entity:grwtsk.claim.marked-finite-sine-lower"
+kind: "claim"
+title: "Conditional finite marked Weil sine lower theorem"
+context: "context:grwtsk.literal-weil"
+subjects:
+  - "subject:msc2020.11"
+  - "subject:msc2020.47"
+statement: "Given a MarkedBoundaryPort, an error-paid SourceLowerComparison and a geometric lower floor -C, the finite sine source satisfies matrixQuadratic(A,u)>=-(C+epsilon)||u||² for every u. Separate source specializations cover zetaSineMatrix and primitivePairSineMatrix. No high-complement, cofinal, RH or Dirichlet GRH sign follows."
+sources:
+  - source: "source:grwtsk.math"
+    path: "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MarkedInverseBoundaryWeilSineBridge.lean"
+    locator: "lower_of_marked_geometry; primitive_pair_odd_sine_lower_of_marked_geometry"
+    revision: "0d7adb3bca0a87868e928b625bdad1ba1b281552"
+    blob: "8af13a58639c2c24029009237d2b6a1d9084f20d"
+evidence:
+  mathematical: "conditional_source_candidate"
+  source_correspondence: "pinned_source_and_declaration_inspected"
+  elaboration: "NOT_RUN"
+  fresh_kernel: "NOT_RUN"
+  transitive_axioms: "NOT_RUN"
+  independent_review: "NOT_RUN"
+claim:
+  hypotheses:
+    - "Actual two-sided marked port"
+    - "Actual SourceLowerComparison"
+    - "Actual hgeom bound"
+  quantification: "All vectors at fixed M, T, sector; error and geometric floor retained."
+  formal_statement: "Conditional source candidate with unproved geometric premises"
