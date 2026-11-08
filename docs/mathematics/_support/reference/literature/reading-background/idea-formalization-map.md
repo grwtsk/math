@@ -7999,37 +7999,37 @@ Missing bridges and uncertainty:
 
 Implementation follow-up: [36 version-bound obligations with exact Lean bridges, hypotheses and remaining gaps](obligation-implementation-progress.md). Four optional/corrective obligations discharged; three conditional fragments; 29 unresolved. All seven main claims remain open.
 
-Next implementation pass: [local order detection, finite local products, residual readouts and rate separation by taxonomy](obligation-implementation-progress-v2.md). Four obligations remain completed; seven have verified partial results; 25 remain unresolved.
+Recorded implementation pass: [local order detection, finite local products, residual readouts and rate separation by taxonomy](obligation-implementation-progress-v2.md). Four obligations remain completed; seven have verified partial results; 25 remain unresolved.
 
-Next implementation pass: [rank-one Hecke, finite variance and convergent local products by taxonomy](obligation-implementation-progress-v3.md). Four optional/corrective obligations completed; ten verified partial results; 22 unresolved obligations.
+Recorded implementation pass: [rank-one Hecke, finite variance and convergent local products by taxonomy](obligation-implementation-progress-v3.md). Four optional/corrective obligations completed; ten verified partial results; 22 unresolved obligations.
 
-Next implementation pass: [normalized rank-one basis, approximate covariance and signed local orders by taxonomy](obligation-implementation-progress-v4.md). Four optional/corrective obligations completed; fourteen verified partial results; eighteen unresolved obligations.
+Recorded implementation pass: [normalized rank-one basis, approximate covariance and signed local orders by taxonomy](obligation-implementation-progress-v4.md). Four optional/corrective obligations completed; fourteen verified partial results; eighteen unresolved obligations.
 
-Next implementation pass: [rank-one bar, probability tails, local-order comparison and retraction projector by taxonomy](obligation-implementation-progress-v5.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
+Recorded implementation pass: [rank-one bar, probability tails, local-order comparison and retraction projector by taxonomy](obligation-implementation-progress-v5.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
 
-Next implementation pass: [concrete Laurent bar, retraction splitting and probability convergence by taxonomy](obligation-implementation-progress-v6.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
+Recorded implementation pass: [concrete Laurent bar, retraction splitting and probability convergence by taxonomy](obligation-implementation-progress-v6.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
 
-Next implementation pass: [analytic zero detector, product continuation and triangular weak law by taxonomy](obligation-implementation-progress-v7.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
+Recorded implementation pass: [analytic zero detector, product continuation and triangular weak law by taxonomy](obligation-implementation-progress-v7.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
 
-Next implementation pass: [actual completed Riemann-zeta detector and Gamma-factor order comparison by taxonomy](obligation-implementation-progress-v8.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
+Recorded implementation pass: [actual completed Riemann-zeta detector and Gamma-factor order comparison by taxonomy](obligation-implementation-progress-v8.md). Four optional/corrective obligations completed; fifteen verified partial results; seventeen unresolved obligations.
 
-Next implementation pass: [finite meromorphic detector and actual completed-zeta poles by taxonomy](obligation-implementation-progress-v9.md). Four optional/corrective obligations completed; fifteen partial results; seventeen unresolved obligations.
+Recorded implementation pass: [finite meromorphic detector and actual completed-zeta poles by taxonomy](obligation-implementation-progress-v9.md). Four optional/corrective obligations completed; fifteen partial results; seventeen unresolved obligations.
 
-Next implementation pass: [rank-one triangular uniqueness and exact-defect tracking by taxonomy](obligation-implementation-progress-v10.md). Four optional/corrective obligations completed; fifteen partial results; seventeen unresolved obligations.
+Recorded implementation pass: [rank-one triangular uniqueness and exact-defect tracking by taxonomy](obligation-implementation-progress-v10.md). Four optional/corrective obligations completed; fifteen partial results; seventeen unresolved obligations.
 
-Next implementation pass: [common-parameter G2 braid-six Hecke matrices by taxonomy](obligation-implementation-progress-v11.md). Four optional/corrective obligations completed; fifteen partial results; seventeen unresolved obligations.
+Recorded implementation pass: [common-parameter G2 braid-six Hecke matrices by taxonomy](obligation-implementation-progress-v11.md). Four optional/corrective obligations completed; fifteen partial results; seventeen unresolved obligations.
 
-Next implementation pass: [braid-six Hecke presentation and universal evaluation](obligation-implementation-progress-v12.md). Counts remain four completed, fifteen partial, seventeen unresolved.
+Recorded implementation pass: [braid-six Hecke presentation and universal evaluation](obligation-implementation-progress-v12.md). Counts remain four completed, fifteen partial, seventeen unresolved.
 
-Next source follow-up: [pending braid-six character and noncollapse candidates](obligation-implementation-progress-v13.md). Native verification is blocked; counts remain four completed, fifteen partial, seventeen unresolved.
+Recorded source follow-up: [pending braid-six character and noncollapse candidates](obligation-implementation-progress-v13.md). Native verification is blocked; counts remain four completed, fifteen partial, seventeen unresolved.
 
-Latest follow-up: [fresh source replay for pending Hecke character candidates](obligation-implementation-progress-v14.md). No new target acceptance; counts remain unchanged.
+Recorded follow-up: [fresh source replay for pending Hecke character candidates](obligation-implementation-progress-v14.md). No new target acceptance; counts remain unchanged.
 
-Latest follow-up: [dependency replay failure and source-asset repair](obligation-implementation-progress-v15.md). Five targets remain unverified; all obligation counts unchanged.
+Recorded follow-up: [dependency replay failure and source-asset repair](obligation-implementation-progress-v15.md). Five targets remain unverified; all obligation counts unchanged.
 
-Latest follow-up: [Hecke character replay blocked by resource custody](obligation-implementation-progress-v16.md). No target acceptance; all obligation counts unchanged.
+Recorded follow-up: [Hecke character replay blocked by resource custody](obligation-implementation-progress-v16.md). No target acceptance; all obligation counts unchanged.
 
-Latest follow-up: [Hecke memory failure and smaller matrix proof candidates](obligation-implementation-progress-v17.md). No new target acceptance; counts unchanged.
+Recorded follow-up: [Hecke memory failure and smaller matrix proof candidates](obligation-implementation-progress-v17.md). No new target acceptance; counts unchanged.
 
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=cd03670f6e22f86f2b6a51b093e7bbfd67021eda18f627f3cf0a79466014069a -->
 

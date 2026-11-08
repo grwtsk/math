@@ -4,7 +4,7 @@ Local mathematical attribution: grwtsk contributors.
 All source pins below refer to openai/math commit
 7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a. Native/comparator replay: NOT_RUN.
 The two local Lean modules and their exact publication blobs are enumerated in
-`docs/verification/NumberTheory/Moebius/PickupSpinCutComparison/verification.toml`.
+[`verification-source-edition-14.toml`](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/verification-source-edition-14.toml).
 The central `paper-to-formalization-references.md` was not overwritten or
 truncated. Its cross-reference to this additive supplement remains pending.
 

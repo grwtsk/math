@@ -118,7 +118,7 @@ Lean: leanprover/lean4:v4.33.0. Mathlib:
 `db584cd6d46c92f209a44c0f1c829460d327499d`. All package pins unchanged.
 The full 40-declaration roster, immutable blobs, hashes, commands, finite
 checks and rejection criteria are in
-`docs/verification/NumberTheory/Chebyshev/RHShortIntervals/verification.toml`.
+[`verification.toml`](../../../../_verification/specifications/NumberTheory/verification.toml).
 
 Required commands, all NOT_RUN with exit UNAVAILABLE:
 

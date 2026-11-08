@@ -12,16 +12,16 @@ Missing bridge: Multiple versioned source projects; no root toolchain. Pin each 
 
 | Isolated adapter directory | Upstream project | Toolchain | Import surfaces |
 | --- | --- | --- | --- |
-| `adapters/lean-proofs/d62eab0` | `src/d62eab0` | `leanprover/lean4:v4.20.0-rc5` | 2 |
-| `adapters/lean-proofs/latest/ComparatorChallenges` | `src/latest/ComparatorChallenges` | `leanprover/lean4:v4.33.0` | 7 |
-| `adapters/lean-proofs/latest` | `src/latest` | `leanprover/lean4:v4.33.0` | 11 |
-| `adapters/lean-proofs/v4.24.0` | `src/v4.24.0` | `leanprover/lean4:v4.24.0` | 4 |
-| `adapters/lean-proofs/v4.28.0` | `src/v4.28.0` | `leanprover/lean4:v4.28.0` | 2 |
-| `adapters/lean-proofs/v4.29.0` | `src/v4.29.0` | `leanprover/lean4:v4.29.0-rc8` | 2 |
-| `adapters/lean-proofs/v4.29.1` | `src/v4.29.1` | `leanprover/lean4:v4.29.1` | 7 |
-| `adapters/lean-proofs/v4.30.0` | `src/v4.30.0` | `leanprover/lean4:v4.30.0` | 7 |
-| `adapters/lean-proofs/v4.32.0/ComparatorChallenges` | `src/v4.32.0/ComparatorChallenges` | `leanprover/lean4:v4.32.0` | 5 |
-| `adapters/lean-proofs/v4.32.0` | `src/v4.32.0` | `leanprover/lean4:v4.32.0` | 10 |
+| [`docs/adapters/lean-proofs/d62eab0`](d62eab0/) | `src/d62eab0` | `leanprover/lean4:v4.20.0-rc5` | 2 |
+| [`docs/adapters/lean-proofs/latest/ComparatorChallenges`](latest/ComparatorChallenges/) | `src/latest/ComparatorChallenges` | `leanprover/lean4:v4.33.0` | 7 |
+| [`docs/adapters/lean-proofs/latest`](latest/) | `src/latest` | `leanprover/lean4:v4.33.0` | 11 |
+| [`docs/adapters/lean-proofs/v4.24.0`](v4.24.0/) | `src/v4.24.0` | `leanprover/lean4:v4.24.0` | 4 |
+| [`docs/adapters/lean-proofs/v4.28.0`](v4.28.0/) | `src/v4.28.0` | `leanprover/lean4:v4.28.0` | 2 |
+| [`docs/adapters/lean-proofs/v4.29.0`](v4.29.0/) | `src/v4.29.0` | `leanprover/lean4:v4.29.0-rc8` | 2 |
+| [`docs/adapters/lean-proofs/v4.29.1`](v4.29.1/) | `src/v4.29.1` | `leanprover/lean4:v4.29.1` | 7 |
+| [`docs/adapters/lean-proofs/v4.30.0`](v4.30.0/) | `src/v4.30.0` | `leanprover/lean4:v4.30.0` | 7 |
+| [`docs/adapters/lean-proofs/v4.32.0/ComparatorChallenges`](v4.32.0/ComparatorChallenges/) | `src/v4.32.0/ComparatorChallenges` | `leanprover/lean4:v4.32.0` | 5 |
+| [`docs/adapters/lean-proofs/v4.32.0`](v4.32.0/) | `src/v4.32.0` | `leanprover/lean4:v4.32.0` | 10 |
 
 Run `lake build` only inside the selected adapter directory using its exact toolchain. This is a requested check, not a successful receipt. Path dependencies in the copied lock are explicitly rebound to the same immutable repository subdirectory; originals and conversions are retained in catalogue.json. Upstream Lake configuration remains the pinned dependency configuration.
 
