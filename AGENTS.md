@@ -22,7 +22,7 @@ This repository is the canonical pure mathematical source for GRWTSK.
 ## Working in the checkout and publishing changes
 
 - Read any more-specific `AGENTS.md` before editing its subtree, including
-  [documentation/AGENTS.md](documentation/AGENTS.md) for documentation changes.
+  [docs/AGENTS.md](docs/AGENTS.md) for documentation changes.
 - Work in the existing checkout on `main` by default. Create a branch or worktree
   only when explicitly requested or direct work on `main` is technically
   impossible. If another branch is checked out, switch safely; preserve and
@@ -47,13 +47,13 @@ This repository is the canonical pure mathematical source for GRWTSK.
   dependencies. Place definitions and theorems by mathematical subject, not by
   orchestration workflow.
 - Use the official MSC2020 heading hierarchy, bound by
-  `documentation/taxonomy/msc2020/source-layout-v1.json`. Resolve current paths
+  `docs/taxonomy/msc2020/source-layout-v1.json`. Resolve current paths
   through that layout, including `followup_files`; declaration namespaces do not
   determine filesystem locations. Preserve existing namespaces and verification
   scopes. PMD IDs are retired; source provenance is independent of taxonomy.
 - Store provider-derived Lean source in the canonical `GRWTSK/` subject tree.
   Use relative per-file links from isolated packages under
-  `documentation/adapters/`; keep their dependency pins and build targets
+  `docs/adapters/`; keep their dependency pins and build targets
   separate from the root build.
 - Keep incompatible upstream adapters outside the local default build. Do not
   promote root imports or change dependency versions merely to publish a candidate.
@@ -62,7 +62,7 @@ This repository is the canonical pure mathematical source for GRWTSK.
 
 - Preserve exact hypotheses, source identities, certificate scopes, trust
   boundaries and unresolved premises.
-- Apply the [proof-comparison disposition](documentation/mathematics/_support/reference/proof-comparison-disposition.md)
+- Apply the [proof-comparison disposition](docs/mathematics/_support/reference/proof-comparison-disposition.md)
   to every newly authored, revised, imported or promoted proof claim. Explain a
   complete primary analytical argument; compare the actual mathematical objects
   and source observations; identify counterexamples and the precise consumer or
@@ -132,7 +132,7 @@ This repository is the canonical pure mathematical source for GRWTSK.
   edits do not require corpus-wide ontology extraction, inventory regeneration
   or companion-pin migration. Preserve historical snapshots and their scopes.
 - Static replay manifests and mathematical acceptance predicates may live under
-  `documentation/mathematics/_verification/targets/`.
+  `docs/mathematics/_verification/targets/`.
 - Do not commit process runners, mutable caches, execution attempts, receipts,
   controller state, schedules, authority records, WSC coordination, generated
   capsule state or Git-effect machinery in this repository. Raw run dumps,

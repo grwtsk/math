@@ -1,7 +1,7 @@
 # Verification specifications
 
 Static verification specifications live under
-`documentation/mathematics/_verification/specifications/`. Subject subtrees use
+`docs/mathematics/_verification/specifications/`. Subject subtrees use
 MSC2020 headings; each specification records its exact source binding. Older
 source paths and declaration namespaces remain evidence identities, so folder
 placement alone does not determine a specification’s current source locator.

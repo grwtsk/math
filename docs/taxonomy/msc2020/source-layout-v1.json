@@ -1245926,7 +1245926,7 @@
     },
     {
       "old_path": "GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239ExternalBridge.md",
-      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239ExternalBridge.md",
+      "path": "docs/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239ExternalBridge.md",
       "source_sha256": "3b6b3b9fc5d42709b6542c813ad2c5f329c4a3a731fb86760d8cc610097dc3c3",
       "input_blob": "f6876b14bb700697b5fbf1662707a0b234189f88",
       "source_kind": "source_support",
@@ -1245962,7 +1245962,7 @@
     },
     {
       "old_path": "GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239FiniteCertificate.md",
-      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239FiniteCertificate.md",
+      "path": "docs/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239FiniteCertificate.md",
       "source_sha256": "a36bfcd97f16d2487cb228c87bff5141b02a8ae33f18fd41080070ece1f72096",
       "input_blob": "cdfc4bd9621270dc423373f44ed96b4121094860",
       "source_kind": "source_support",
@@ -1246019,7 +1246019,7 @@
     },
     {
       "old_path": "GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239FiniteSourceLocalization.md",
-      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239FiniteSourceLocalization.md",
+      "path": "docs/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239FiniteSourceLocalization.md",
       "source_sha256": "eefe1c7185504af2e3b2e3d2e2324cd16ef308ef06c9da9ddae6554893428f89",
       "input_blob": "99e70f6ea565c83007c0f1e8ac557f069790169a",
       "source_kind": "source_support",
@@ -1246518,7 +1246518,7 @@
     },
     {
       "old_path": "GRWTSK/NumberTheory/ArithmeticGeometry/EllipticCurves/Record4239LocalSquareClass.md",
-      "path": "GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239LocalSquareClass.md",
+      "path": "docs/mathematics/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/Record4239LocalSquareClass.md",
       "source_sha256": "75ed87171401664f22c73bfd0a0a048117d9211ac017d999a33ce6b277f393de",
       "input_blob": "225d1e7ec624638b3c209f38126f8ddc02103287",
       "source_kind": "source_support",

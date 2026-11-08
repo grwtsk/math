@@ -1,6 +1,6 @@
 # Documentation instructions
 
-These instructions apply throughout `documentation/` and supplement the
+These instructions apply throughout `docs/` and supplement the
 [repository instructions](../AGENTS.md). Repository-local paths below are relative
 to this directory unless stated otherwise.
 
@@ -50,12 +50,12 @@ to this directory unless stated otherwise.
   mathematical documents and static navigation/specification data here; keep
   generators, mutable processing state, execution attempts and receipts in the
   operations repository identified by the
-  [ontology manifest](../docs/ontology/manifest.yaml), bound to a pinned math commit.
+  [ontology manifest](ontology/manifest.yaml), bound to a pinned math commit.
   Generate documentation only when explicitly requested.
 - Maintain current cross-repository bindings through
-  [the ontology](../docs/ontology/README.md) and its existing source/mapping
+  [the ontology](ontology/README.md) and its existing source/mapping
   contracts. Preserve `ontology/v1/` as historical source through the
-  [migration crosswalk](../docs/ontology/migrations/grwtsk.v1.yaml); do not create a
+  [migration crosswalk](ontology/migrations/grwtsk.v1.yaml); do not create a
   second current registry or embed operational dumps in mathematical documents.
 - Use exactly `grwtsk contributors` for local content attribution. Preserve upstream
   authorship and licensing. Follow the root privacy and Git identity rules; this

@@ -101,7 +101,7 @@ All blob identities are from the immutable upstream pin:
 ## 2. The REAL theta group for L=O(n[O])
 
 Work on `E/F^sep`, n nonzero and invertible in F.
-The point `T∈E[n](F^sep)` is a genuine point, never a
+The point `T∈E[n](F%5Esep)` is a genuine point, never a
 chosen vector of an abstract rank-two representation.
 
 Set `D_T=n([T]-[O])`; the original torsion-divisor
@@ -127,7 +127,7 @@ over O, and original `translation` fixes constants.
 Thus this is the genuine central extension
 
   1 -> (F^sep)^× -> G_{O(nO)}(F^sep)
-    -> E[n](F^sep) -> 1.
+    -> E[n](F%5Esep) -> 1.
 
 Its central commutator is the ORIGINAL rational-function
 constant
@@ -156,7 +156,7 @@ upstream source APIs. Lean compilation is NOT_RUN.
 
 Choose theta lifts `s(T)=(T,f_T)` for the finite,
 genuine Galois module E[n]. Let
-`a:Z¹(G_F,E[n](F^sep))` be an ORIGINAL continuous
+`a:Z¹(G_F,E[n](F%5Esep))` be an ORIGINAL continuous
 Galois one-cocycle. Define
 
   U_a(sigma,tau)

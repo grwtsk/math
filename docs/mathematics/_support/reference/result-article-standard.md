@@ -3,7 +3,7 @@
 Local attribution: grwtsk contributors.
 
 This standard applies only when a mathematical result article is explicitly requested or independently maintained; no source edit requires an article or generated scaffold. Authored articles, when present, live beside their subjects under
-[`documentation/mathematics`](../../index.md). A leaf states one coherent result;
+[`docs/mathematics`](../../index.md). A leaf states one coherent result;
 a composite states a conclusion whose proof connects several branches. Both
 have one canonical article identity and can be previewed in every reviewed
 subject to which they belong. Shared articles and dependencies are counted once.

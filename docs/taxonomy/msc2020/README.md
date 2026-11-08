@@ -12,4 +12,4 @@ Effectful materialization and audit tooling belong to `grwtsk/noeaaeue`. The old
 
 Local attribution: grwtsk contributors.
 
-Provider packages and dependency manifests live in [documentation/adapters](../../adapters/README.md). Their Lean modules link to the canonical `GRWTSK/` MSC tree. The root build retains its existing root imports; provider dependencies and native build targets remain isolated. Source layout `followup_files` bind the canonical source locations and provider links without replacing historical source identities.
+Provider packages and dependency manifests live in [docs/adapters](../../adapters/README.md). Their Lean modules link to the canonical `GRWTSK/` MSC tree. The root build retains its existing root imports; provider dependencies and native build targets remain isolated. Source layout `followup_files` bind the canonical source locations and provider links without replacing historical source identities.

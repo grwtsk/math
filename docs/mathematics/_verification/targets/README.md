@@ -1,7 +1,7 @@
 # Static replay targets and verification navigation
 
 Source-bound verification specifications and authored support are indexed under
-[`documentation/mathematics/_verification/specifications/`](../specifications/README.md).
+[`docs/mathematics/_verification/specifications/`](../specifications/README.md).
 This targets tree also holds static replay manifests and mathematical acceptance
 predicates. Their exact source bindings remain authoritative for their scope.
 The complete former README, including its versioned scope notes, is preserved at

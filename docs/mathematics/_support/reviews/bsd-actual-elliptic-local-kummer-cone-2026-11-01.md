@@ -8,7 +8,7 @@ Formal disposition: one isolated generic Lean source candidate in the pinned grw
 ## I. The actual elliptic objects
 
 Let \(E/\mathbb Q\) be a genuine nonsingular Weierstrass elliptic curve. Let \(v\) be a place of \(\mathbb Q\), \(F=\mathbb Q_v\), \(G_F=\mathrm{Gal}(F^{\mathrm{sep}}/F)\), and \(m=p^n>1\) with \(p\) an actual prime. All local fields involved have characteristic zero, so multiplication by \(m\) is separable and \([m]:E(F^\mathrm{sep})\to E(F^\mathrm{sep})\) is surjective. Define the actual discrete continuous Galois modules
-    \(A=E[m](F^\mathrm{sep}),\quad B=E(F^\mathrm{sep}),\quad j:A\hookrightarrow B\).
+    \(A=E[m](F%5E%5Cmathrm%7Bsep%7D),\quad B=E(F^\mathrm{sep}),\quad j:A\hookrightarrow B\).
 The short exact sequence \(0\to A\xrightarrow{j}B\xrightarrow{[m]}B\to0\) is a genuine elliptic isogeny sequence, not a symbolic certificate or abstract source dimension.
 
 Use the ACTUAL continuous inhomogeneous cochains \(C^r_A=C^r_\mathrm{cont}(G_F,A)\) and \(C^r_B=C^r_\mathrm{cont}(G_F,B)\). Let \(j_r:C^r_A\to C^r_B\) be postcomposition with the genuine \(G_F\)-equivariant coefficient inclusion. Cochain functoriality gives \(d_Bj_r=j_{r+1}d_A\), and the actual differential identities give \(d_A^2=0,d_B^2=0\).

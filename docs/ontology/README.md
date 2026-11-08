@@ -74,7 +74,7 @@ Use `documented` for source-grounded observations such as definitional ingredien
 
 ### Evidence and interoperability
 
-Entity evidence separates mathematical disposition, source correspondence, elaboration, fresh kernel checking, transitive axiom auditing and independent review. `NOT_RUN` preserves the status of an unperformed check. A proof binding adds exact statement, declaration, source and environment identities, assumptions and retrievable evidence when available. Schema validation checks record structure and references. Formal checking and mathematical acceptance have their own source-bound processes. Follow the repository's [proof-comparison disposition](../../documentation/mathematics/_support/reference/proof-comparison-disposition.md) when admitting or changing a claim.
+Entity evidence separates mathematical disposition, source correspondence, elaboration, fresh kernel checking, transitive axiom auditing and independent review. `NOT_RUN` preserves the status of an unperformed check. A proof binding adds exact statement, declaration, source and environment identities, assumptions and retrievable evidence when available. Schema validation checks record structure and references. Formal checking and mathematical acceptance have their own source-bound processes. Follow the repository's [proof-comparison disposition](../mathematics/_support/reference/proof-comparison-disposition.md) when admitting or changing a claim.
 
 MSC2020 codes can be exported as SKOS notations and their classifications as SKOS concepts and broader links. Preserve the scheme and its edition. Export mathematical symbols to OpenMath only when a content dictionary and symbol resolve the actual meaning. Map a context to an MMT theory and a justified context translation to a theory morphism when their parameters and witnesses agree. An identifier match alone gives a candidate mapping. These are interchange contracts for future adapters. [SKOS Reference](https://www.w3.org/TR/skos-reference/) · [OpenMath Standard](https://openmath.org/standard/) · [MMT language](https://uniformal.github.io/doc/language/)
 
@@ -99,7 +99,7 @@ mathematical navigation records. A view does not establish its missing premises.
 
 A changed mathematical claim retains exact hypotheses, context, source pins,
 comparison and independent evidence axes under the repository's
-[proof-comparison disposition](../../documentation/mathematics/_support/reference/proof-comparison-disposition.md).
+[proof-comparison disposition](../mathematics/_support/reference/proof-comparison-disposition.md).
 Schema/reference checks concern record integrity; they do not elaborate a Lean
 statement, replay a kernel, audit transitive axioms or authenticate an external
 receipt. Historical inventory snapshots and evidence remain at their stated
