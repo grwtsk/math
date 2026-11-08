@@ -185,7 +185,44 @@ strictly positive whole Weil value. Its proof uses the actual
 signed prime correlations and gamma jump, not a chosen favorable
 test or a proxy graph Laplacian.
 
-## 5. Exact consumer and trust boundary
+## 5. Native finite-gamma EDGE Schur block return
+
+The same proof is valid on the original FINITE-GAMMA form domain,
+not only on C2 compact tests: any complex odd L2 function supported
+in (S) with Gamma1(f)<infinity has the same exact zero correlations,
+the same Cauchy--Schwarz bound, and the positive jump contribution
+on [1/32,1/2]. Truncation or smooth approximation is unnecessary for
+this particular result, since the native integral and finite prime
+terms are all defined on the stated original form domain.
+
+For the original `WeilConductorThreeRadiusFourEdgeSchur` convention,
+write u=f restricted to (0,4), q4[u]=Q4(O4 u)/2,
+and m11[u]=q4[u]+||u||²/8 on the edge carrier H1=L2(3,4).
+The physical norm is E(O4 u)=2||u||², with NO weighted metric.
+For EVERY finite-gamma u supported in the first narrow shell
+    3 <= t <= 3+1/32
+the all-function bound (T) therefore gives
+
+    q4[u] >= ||u||²/16,
+    m11[u] >= (1/16+1/8)||u||² = (3/16)||u||².        (8)
+
+This is a genuine POSITIVE diagonal edge-form restriction in the
+ACTUAL radius-four source, not merely a finite matrix or a
+specific test vector. The shell projection is a bounded physical
+L2 projection, and its form-domain restriction consists exactly
+of those finite-gamma functions whose support is in the shell.
+
+However `m11` on the whole (3,4) edge and the source mixed block
+B:H1->H0 are not proved positive by (8). In particular, the full
+target Schur condition
+    m11[v] >= <Bv,A0^(-1)Bv>
+for EVERY v in H1 remains OPEN; gamma kernel interactions across
+t=3+1/32 and the rest of the collar must be paid. This is a
+new positive physical subspace available for a source-relative
+three-block Schur or directional-resolvent comparison, not an
+unjustified extension to the full collar.
+
+## 6. Exact consumer and trust boundary
 
 The original stage-three functional and physical norm are unchanged.
 The Lean candidate below proves the exact three-prime-power
@@ -289,6 +326,16 @@ theorem native_narrow_collar_positive_of_source_bounds
     norm_num
   have hfloorMul := mul_le_mul_of_nonneg_right hfloor hE
   rw [hreturn]
+  nlinarith
+
+/-- The TRUE source lower bound Q4(Ou)>=E(Ou)/16 on the narrow
+finite-gamma shell transfers to the ORIGINAL half-line shifted edge
+form convention m11=q4+||u||²/8, with E(Ou)=2||u||².
+This theorem formalizes the scalar return, not the unformalized
+analytic all-input support/gamma proof stated above. -/
+theorem original_edge_shell_shift_margin (normSquared q : ℝ)
+    (hQ : (1 / 16 : ℝ) * (2 * normSquared) ≤ 2 * q) :
+    (3 / 16 : ℝ) * normSquared ≤ q + (1 / 8) * normSquared := by
   nlinarith
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.ConductorThreeRadiusFourNarrowCollar
