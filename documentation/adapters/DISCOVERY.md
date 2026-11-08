@@ -6,7 +6,10 @@ Selection is based on concrete GRWTSK consumers and primary repository README,
 Lake/toolchain and license sources. This is a shortlist, not a ranking of all Lean
 projects or an assessment of their proof correctness. Exact immutable commits and
 source SHA-256 values are in [discovery.json](discovery.json). None of these
-additional adapters has been implemented or verified by this survey.
+additional adapters was implemented or verified as part of this survey. The
+later [import implementation status](#import-implementation-status) records the
+subsequent packages; use the [adapter index](README.md) for maintained package
+guides. The survey’s priorities and pins remain observations of 2026-10-29.
 
 | Repository | Priority / useful consumer | Required boundary |
 | --- | --- | --- |

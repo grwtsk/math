@@ -2,7 +2,12 @@
 
 Local attribution: grwtsk contributors.
 
-The first consumer wave adds24 source theorem candidates across eight providers.
+The recorded first consumer wave introduced 24 source theorem candidates across
+eight providers. The subsequent sections preserve individual source increments
+and their evidence scope; their running totals are historical observations, not
+a live census of source declarations or accepted proofs.
+
+[Adapter package index](README.md) provides maintained provider navigation.
 See [consumer-integrations.json](consumer-integrations.json) for exact declarations,
 source blobs, hypotheses, uses, profiles and remaining bridges, and the
 [mathematical explanation](../mathematics/_support/reference/adapted-mathematics-consumers.md)
@@ -31,7 +36,7 @@ All new native/kernel/axiom/interface checks remain NOT_RUN.
 PFR adds three source candidates constructing a full nonempty translated slice
 in its finite submodule, retaining the strict 2*K^9 density bound and deriving its
 actual additive-energy inequality. This is an alternative structural route;
-see pfr/references.md. The earlier 30 source-declaration total now has three
+see [PFR references](pfr/references.md). The earlier 30 source-declaration total now has three
 additional candidates; all native/kernel/axiom/type acceptance remains NOT_RUN.
 
 ## Zero-count and E8 covering continuation

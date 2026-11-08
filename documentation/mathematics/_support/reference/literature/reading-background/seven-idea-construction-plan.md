@@ -1,8 +1,13 @@
 # Seven unresolved ideas: constructions and proofs required
 
+[Reading and correspondence index](index.md). This plan retains its recorded
+source baseline, dependency pin, and unresolved obligations; it is not a live
+status assessment of later source files. Historical local PDF locators are
+retained as provenance text, with availability outside this repository unresolved.
+
 **All seven remain unresolved.** They form five mathematical task families, with 36 version-bound proof/construction obligations. These are assistant-proposed specifications, not newly formalized theorems or owner testimony. No main claim or bridge is marked proved.
 
-Maintained baseline: `3f248406d576515c964a788add3f1423be959d67`. Pinned mathlib dependency: `db584cd6d46c92f209a44c0f1c829460d327499d`, checked against that baseline’s manifest. [Machine-readable obligations](seven-idea-construction-plan.json) · [Strict schema](seven-idea-construction-plan.schema.json) · [Prior ten-idea review](ten-idea-target-search.md)
+Recorded baseline: `3f248406d576515c964a788add3f1423be959d67`. Pinned mathlib dependency: `db584cd6d46c92f209a44c0f1c829460d327499d`, checked against that baseline’s manifest. [Machine-readable obligations](seven-idea-construction-plan.json) · [Strict schema](seven-idea-construction-plan.schema.json) · [Prior ten-idea review](ten-idea-target-search.md)
 
 Primary PDFs were already exhausted in the prior complete-text pass. This pass broadens the code search and identifies exact missing constructions. It also inspects eight separate title-matched versions of four named January dependencies; their binding to the status note remains unresolved.
 
@@ -17,10 +22,10 @@ A faithful group representation, a Langlands-dual representation and a global au
 
 #### Exact primary paper evidence
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2>): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2>): “4     Residue Suppression and Functional Equation Sym-”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1`): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2`): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1`): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2`): “4     Residue Suppression and Functional Equation Sym-”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
 
 #### Construction and proof obligations
 
@@ -30,7 +35,7 @@ Fix the base field and exact G2/F4/E8 forms, their pinned/split data and a repre
 
 **Depends on:** no earlier obligation. **Acceptance:** Actual linear maps and kernels are established, including characteristic/form restrictions, rather than inferring a representation from a dimension label.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1`).
 
 No concrete supplier established for this obligation.
 
@@ -40,7 +45,7 @@ Specify the required representation of the L-group (or dual group in an explicit
 
 **Depends on:** E1. **Acceptance:** The G versus dual/L-group distinction, places and admissibility/ramification hypotheses are explicit.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1`).
 
 No concrete supplier established for this obligation.
 
@@ -50,7 +55,7 @@ At each good place v, construct the actual local parameter t_v and an explicit e
 
 **Depends on:** E2. **Acceptance:** A supplied two-sided inverse may justify determinant conjugacy, but the actual intertwiner and local parameter equality must be constructed. Faithfulness does not imply them.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1>), [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=1`), p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -62,7 +67,7 @@ Specify bad-place and Archimedean factors, conductors and dual/root-number data.
 
 **Depends on:** E3. **Acceptance:** All local factors and continuation hypotheses are accounted for; equality at finitely many tested primes cannot replace the global identity.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2`).
 
 No concrete supplier established for this obligation.
 
@@ -72,7 +77,7 @@ Derive the divisor/residue comparison for the same completed sources from E4, in
 
 **Depends on:** E4. **Acceptance:** An equality/zero-free multiplier with a proved divisor controls the original source; no all-zero alignment is inferred from the existence of a lift.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/498a8b7e7583--i (3).pdf#page=2`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -96,10 +101,10 @@ A faithful group representation, a Langlands-dual representation and a global au
 
 #### Exact primary paper evidence
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1>): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2>): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1>): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2>): “4     Residue Suppression and Functional Equation Sym-”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1`): “Exceptional Group Embeddings”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2`): “Residue Suppression and Functional Equation”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1`): “Exceptional Groups: Embeddings and”. Page-text SHA-256 `e1a09142b500da0d9b255b6c37916fb490be74ab2426c74414dffe11adf39f21`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2`): “4     Residue Suppression and Functional Equation Sym-”. Page-text SHA-256 `d4918a427957a5f13637da97018dd8484476128ae3af09279b685a9826d9b150`.
 
 #### Construction and proof obligations
 
@@ -109,7 +114,7 @@ Fix the base field and exact G2/F4/E8 forms, their pinned/split data and a repre
 
 **Depends on:** no earlier obligation. **Acceptance:** Actual linear maps and kernels are established, including characteristic/form restrictions, rather than inferring a representation from a dimension label.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1`).
 
 No concrete supplier established for this obligation.
 
@@ -119,7 +124,7 @@ Specify the required representation of the L-group (or dual group in an explicit
 
 **Depends on:** E1. **Acceptance:** The G versus dual/L-group distinction, places and admissibility/ramification hypotheses are explicit.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1`).
 
 No concrete supplier established for this obligation.
 
@@ -129,7 +134,7 @@ At each good place v, construct the actual local parameter t_v and an explicit e
 
 **Depends on:** E2. **Acceptance:** A supplied two-sided inverse may justify determinant conjugacy, but the actual intertwiner and local parameter equality must be constructed. Faithfulness does not imply them.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1>), [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=1`), p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -141,7 +146,7 @@ Specify bad-place and Archimedean factors, conductors and dual/root-number data.
 
 **Depends on:** E3. **Acceptance:** All local factors and continuation hypotheses are accounted for; equality at finitely many tested primes cannot replace the global identity.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2`).
 
 No concrete supplier established for this obligation.
 
@@ -151,7 +156,7 @@ Derive the divisor/residue comparison for the same completed sources from E4, in
 
 **Depends on:** E4. **Acceptance:** An equality/zero-free multiplier with a proved divisor controls the original source; no all-zero alignment is inferred from the existence of a lift.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/67b33f06a609--i (2).pdf#page=2`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -175,12 +180,12 @@ The KL polynomial object must first be repaired and constructed. A double-coset 
 
 #### Exact primary paper evidence
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3>): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3>): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>): “• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=1>): “Kazhdan-Lusztig Polynomials and the Generalized”. Page-text SHA-256 `675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=4>): “[2] Roman Bezrukavnikov. Geometric approach to representation theory of reductive”. Page-text SHA-256 `4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2`): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3`): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3`): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2`): “• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=1`): “Kazhdan-Lusztig Polynomials and the Generalized”. Page-text SHA-256 `675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=4`): “[2] Roman Bezrukavnikov. Geometric approach to representation theory of reductive”. Page-text SHA-256 `4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880`.
 
 #### Construction and proof obligations
 
@@ -190,7 +195,7 @@ Choose a Coxeter system and a parameter convention. For example, over ℤ[v,v⁻
 
 **Depends on:** no earlier obligation. **Acceptance:** A consistent algebra and involution exist; this explicit convention is a proposed repair, not the printed truncated recursion.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2`).
 
 No concrete supplier established for this obligation.
 
@@ -200,7 +205,7 @@ Construct the bar-invariant basis C′_w=v^{−ℓ(w)}Σ_{y≤w}P_{y,w}(v²)T_y,
 
 **Depends on:** K1. **Acceptance:** The printed universal P_{e,v}=1 rule and affine/quantum corrections are not assumed; the actual normalized basis determines the polynomials.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2`).
 
 No concrete supplier established for this obligation.
 
@@ -210,7 +215,7 @@ Recompute the G2 example. Under K2, its diagonal P_{w,w} is 1, so the displayed 
 
 **Depends on:** K2. **Acceptance:** Use the precise chosen variable and coefficient ring; the elementary coefficient check is not a KL positivity theorem.
 
-Primary source: [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3>).
+Primary source: p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -222,7 +227,7 @@ Construct the relevant Schubert/stratum intersection-cohomology realization, wit
 
 **Depends on:** K2, K3. **Acceptance:** A graded geometric realization and positivity theorem are actual suppliers, not strings naming nilpotent strata.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>), [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2`), p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=3`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -234,7 +239,7 @@ Construct a source-specific realization from these graded classes to the analyti
 
 **Depends on:** K4. **Acceptance:** The exact analytic consumer, signs, degree and nonvanishing comparison are proved before concluding any zero exclusion.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/159cb12b34d5--C (7).pdf#page=2`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -259,12 +264,12 @@ The KL polynomial object must first be repaired and constructed. A double-coset 
 
 #### Exact primary paper evidence
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2>): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3>): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3>): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2>): “• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=1>): “Kazhdan-Lusztig Polynomials and the Generalized”. Page-text SHA-256 `675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=4>): “[2] Roman Bezrukavnikov. Geometric approach to representation theory of reductive”. Page-text SHA-256 `4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2`): “The positivity of Pu,v”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3`): “recursive computations yielding”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3`): “4     Affine and Quantum Extensions”. Page-text SHA-256 `886f5bc6db5b64b1dd21ed0a5d9c802d1fb95e06c8ad022ebef9dc079c098103`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2`): “• Localizing residues of L(s, π) to nilpotent cones in compactified moduli spaces.”. Page-text SHA-256 `f0dd8824015f3d5ec19eeb4f9c9f0a7b283f60e9aee9d54c7b16d45155a0a6f0`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=1`): “Kazhdan-Lusztig Polynomials and the Generalized”. Page-text SHA-256 `675a421462491f4f337326a9c9cf1e08719d49994bfb4e1407ec0034ecaeba18`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=4`): “[2] Roman Bezrukavnikov. Geometric approach to representation theory of reductive”. Page-text SHA-256 `4c68fae14625c76eb9fdc5e98dec3b41c6960c3d27c3b6400f7bc0b74c21b880`.
 
 #### Construction and proof obligations
 
@@ -274,7 +279,7 @@ Choose a Coxeter system and a parameter convention. For example, over ℤ[v,v⁻
 
 **Depends on:** no earlier obligation. **Acceptance:** A consistent algebra and involution exist; this explicit convention is a proposed repair, not the printed truncated recursion.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2`).
 
 No concrete supplier established for this obligation.
 
@@ -284,7 +289,7 @@ Construct the bar-invariant basis C′_w=v^{−ℓ(w)}Σ_{y≤w}P_{y,w}(v²)T_y,
 
 **Depends on:** K1. **Acceptance:** The printed universal P_{e,v}=1 rule and affine/quantum corrections are not assumed; the actual normalized basis determines the polynomials.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2`).
 
 No concrete supplier established for this obligation.
 
@@ -294,7 +299,7 @@ Recompute the G2 example. Under K2, its diagonal P_{w,w} is 1, so the displayed 
 
 **Depends on:** K2. **Acceptance:** Use the precise chosen variable and coefficient ring; the elementary coefficient check is not a KL positivity theorem.
 
-Primary source: [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3>).
+Primary source: p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -306,7 +311,7 @@ Construct the relevant Schubert/stratum intersection-cohomology realization, wit
 
 **Depends on:** K2, K3. **Acceptance:** A graded geometric realization and positivity theorem are actual suppliers, not strings naming nilpotent strata.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2>), [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2`), p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=3`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -318,7 +323,7 @@ Construct a source-specific realization from these graded classes to the analyti
 
 **Depends on:** K4. **Acceptance:** The exact analytic consumer, signs, degree and nonvanishing comparison are proved before concluding any zero exclusion.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/553f237f431f--C (9).pdf#page=2`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -345,10 +350,10 @@ The missing bridge is a source-specific zero-to-nonzero-boundary-class construct
 
 #### Exact primary paper evidence
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>): “Residue Suppression via Localization”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2>): “Positivity Constraints”. Page-text SHA-256 `ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>): “Boundary Regularization: A Framework for”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2>): “5     Positivity Constraints”. Page-text SHA-256 `ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1`): “Residue Suppression via Localization”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2`): “Positivity Constraints”. Page-text SHA-256 `ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1`): “Boundary Regularization: A Framework for”. Page-text SHA-256 `4d8c7b048753cc2dfb6f88275ea478c9e047b33124d3ab9cae9143d6bdd843ff`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2`): “5     Positivity Constraints”. Page-text SHA-256 `ff18a835d335c007bb73a0f80dacab2cb5911bd573e04fa067fad2bf14dcddb2`.
 
 #### Construction and proof obligations
 
@@ -358,7 +363,7 @@ Fix the group/base, compactification j:U→X with boundary i:Z→X, coefficient 
 
 **Depends on:** no earlier obligation. **Acceptance:** Geometric objects and coefficient/support conventions are actual constructions; an abstract complex with assumed homology is only infrastructure.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -370,7 +375,7 @@ Construct the localization/excision triangle or long exact sequence. If a direct
 
 **Depends on:** B1. **Acceptance:** The exact maps, kernels/images and any splitting are proved, with no erased boundary summand.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -382,7 +387,7 @@ Fix the completed analytic source Λ and a zero-detecting consumer such as logDe
 
 **Depends on:** B1. **Acceptance:** The actual Λ, local orders, gamma/conductor and dual conventions are identified; the logarithmic principal-part supplier is instantiated.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -394,7 +399,7 @@ For every nontrivial zero ρ of the exact source with Re(ρ)≠1/2, construct k�
 
 **Depends on:** B2, B3. **Acceptance:** A nonzero class with exact degree/source identity is produced for each off-line zero; naming spectral correspondence is insufficient.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1>), [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=1`), p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2`).
 
 No concrete supplier established for this obligation.
 
@@ -404,7 +409,7 @@ Prove H^k(Z,Kρ)=0 in that same range for the original Kρ, under verified prope
 
 **Depends on:** B1, B4. **Acceptance:** The actual class space from B4 vanishes; positivity alone or a changed sheaf is not the required theorem.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2`).
 
 No concrete supplier established for this obligation.
 
@@ -414,7 +419,7 @@ Combine vρ≠0 with B5 for every allowed off-line zero. This final contradictio
 
 **Depends on:** B4, B5. **Acceptance:** No off-line source zero is excluded using an assumed version of the desired correspondence.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/796ba01d4a02--g (2).pdf#page=2`).
 
 No concrete supplier established for this obligation.
 
@@ -439,11 +444,11 @@ The named drafts can be title-matched in the catalog, but their byte-distinct ve
 
 #### Exact primary paper evidence
 
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>): “Statistical Independence of Zeros”. Page-text SHA-256 `b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3>): “Error Bounds for Mixed Automorphic Forms”. Page-text SHA-256 `c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1>): “Updated Verification of Recursive Refinement”. Page-text SHA-256 `7d7c35049871f94b14430d67322c1c07daaf6264263287c8eb07eee6f2449eb5`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3>): “Critical Review of Remaining Open Problems”. Page-text SHA-256 `c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>): “Fourier analysis. By demonstrating that cumulative errors across distinct”. Page-text SHA-256 `b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2`): “Statistical Independence of Zeros”. Page-text SHA-256 `b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3`): “Error Bounds for Mixed Automorphic Forms”. Page-text SHA-256 `c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1`): “Updated Verification of Recursive Refinement”. Page-text SHA-256 `7d7c35049871f94b14430d67322c1c07daaf6264263287c8eb07eee6f2449eb5`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3`): “Critical Review of Remaining Open Problems”. Page-text SHA-256 `c387efc0635800128e43a12a348f65f43c6ac5e364f4aa0df95d3701d94a85d4`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2`): “Fourier analysis. By demonstrating that cumulative errors across distinct”. Page-text SHA-256 `b949895416d938edf5079487f3f65be80e0f8ca1acb84eceda5b3d93d367c973`.
 
 #### Construction and proof obligations
 
@@ -453,15 +458,15 @@ Bind each named January reference to an exact catalog SHA/version and exact theo
 
 **Depends on:** no earlier obligation. **Acceptance:** Reference identity and logical dependence are recorded separately; printed bibliographies are not silently promoted to verified publications.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1>), [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>).
-Related title-matched version: **Formal Derivation of Axiom 5: Cross-Domain Error Cancellation**, `2edefaf15e1f` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=1>). Version/logical binding unproved.
-Related title-matched version: **Formal Derivation of Axiom 5: Cross-Domain Error Cancellation**, `90212cbba117` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=1>). Version/logical binding unproved.
-Related title-matched version: **Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond**, `e4af0063b673` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=1>). Version/logical binding unproved.
-Related title-matched version: **Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond**, `46c71204aa52` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=1>). Version/logical binding unproved.
-Related title-matched version: **Refinement of Axiom 1: Bounded Error Growth Without Conjectures**, `d5030fdf2496` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=1>). Version/logical binding unproved.
-Related title-matched version: **Refinement of Axiom 1: Bounded Error Growth Without Conjectures**, `019052dca83c` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=1>). Version/logical binding unproved.
-Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `ed896093fe82` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=1>). Version/logical binding unproved.
-Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `f54c76880892` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=1>). Version/logical binding unproved.
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1`), p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2`).
+Related title-matched version: **Formal Derivation of Axiom 5: Cross-Domain Error Cancellation**, `2edefaf15e1f` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=1`). Version/logical binding unproved.
+Related title-matched version: **Formal Derivation of Axiom 5: Cross-Domain Error Cancellation**, `90212cbba117` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=1`). Version/logical binding unproved.
+Related title-matched version: **Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond**, `e4af0063b673` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=1`). Version/logical binding unproved.
+Related title-matched version: **Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond**, `46c71204aa52` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=1`). Version/logical binding unproved.
+Related title-matched version: **Refinement of Axiom 1: Bounded Error Growth Without Conjectures**, `d5030fdf2496` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=1`). Version/logical binding unproved.
+Related title-matched version: **Refinement of Axiom 1: Bounded Error Growth Without Conjectures**, `019052dca83c` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=1`). Version/logical binding unproved.
+Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `ed896093fe82` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=1`). Version/logical binding unproved.
+Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `f54c76880892` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=1`). Version/logical binding unproved.
 
 No concrete supplier established for this obligation.
 
@@ -471,9 +476,9 @@ Define each arithmetic sequence, its deterministic centering and e_n before choo
 
 **Depends on:** S1. **Acceptance:** Axiom 1 p.2 prints O(√p_n log p_n), not a constant bound; no boundedness follows from that growing upper envelope. The asserted prime-gap estimate and arbitrary-height enumeration also need independent proofs.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1>).
-Related title-matched version: **Refinement of Axiom 1: Bounded Error Growth Without Conjectures**, `d5030fdf2496` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=1>), [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=2>), [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=3>). Version/logical binding unproved.
-Related title-matched version: **Refinement of Axiom 1: Bounded Error Growth Without Conjectures**, `019052dca83c` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=1>), [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=2>), [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=3>). Version/logical binding unproved.
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1`).
+Related title-matched version: **Refinement of Axiom 1: Bounded Error Growth Without Conjectures**, `d5030fdf2496` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=1`), p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=2`), p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=3`). Version/logical binding unproved.
+Related title-matched version: **Refinement of Axiom 1: Bounded Error Growth Without Conjectures**, `019052dca83c` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=1`), p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=2`), p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=3`). Version/logical binding unproved.
 
 Exact code components (not a supplied paper bridge):
 
@@ -485,11 +490,11 @@ For the same centered channels define E_N=Σ_{n<N}Σ_d e_{d,n} and prove the exa
 
 **Depends on:** S2. **Acceptance:** Retain probability/centering/range hypotheses and uniformity/tails. Repair Axiom 5 equation (7), which replaces an additive signal by a product-frequency expansion without a supplied identity.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1>), [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>).
-Related title-matched version: **Formal Derivation of Axiom 5: Cross-Domain Error Cancellation**, `2edefaf15e1f` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=1>), [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=2>). Version/logical binding unproved.
-Related title-matched version: **Formal Derivation of Axiom 5: Cross-Domain Error Cancellation**, `90212cbba117` — [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=1>), [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=2>). Version/logical binding unproved.
-Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `ed896093fe82` — [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=2>). Version/logical binding unproved.
-Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `f54c76880892` — [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=2>). Version/logical binding unproved.
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=1`), p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2`).
+Related title-matched version: **Formal Derivation of Axiom 5: Cross-Domain Error Cancellation**, `2edefaf15e1f` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=1`), p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=2`). Version/logical binding unproved.
+Related title-matched version: **Formal Derivation of Axiom 5: Cross-Domain Error Cancellation**, `90212cbba117` — p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=1`), p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=2`). Version/logical binding unproved.
+Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `ed896093fe82` — p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=2`). Version/logical binding unproved.
+Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `f54c76880892` — p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=2`). Version/logical binding unproved.
 
 Exact code components (not a supplied paper bridge):
 
@@ -501,9 +506,9 @@ Construct source_n, model_n and the common channel gain A_n. Set u_n=source_n−
 
 **Depends on:** S2, S3. **Acceptance:** The algebraic recurrence is available, but source states, all-depth estimates and a source-preserving fixed-target consumer are new obligations; changing channel spaces require additional transition maps.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>).
-Related title-matched version: **Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond**, `e4af0063b673` — [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=2>). Version/logical binding unproved.
-Related title-matched version: **Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond**, `46c71204aa52` — [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=2>). Version/logical binding unproved.
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2`).
+Related title-matched version: **Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond**, `e4af0063b673` — p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=2`). Version/logical binding unproved.
+Related title-matched version: **Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond**, `46c71204aa52` — p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=2`). Version/logical binding unproved.
 
 Exact code components (not a supplied paper bridge):
 
@@ -515,9 +520,9 @@ Define a probability space and exact measurable, square-integrable zero observab
 
 **Depends on:** S1. **Acceptance:** Independence⇒zero covariance is available. A converse requires additional structure; joint Gaussian law plus exactly zero cross-covariance is one explicit sufficient profile, not implied by a GUE label or degree-limit correlation.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>).
-Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `ed896093fe82` — [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=3>). Version/logical binding unproved.
-Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `f54c76880892` — [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=3>). Version/logical binding unproved.
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2`).
+Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `ed896093fe82` — p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=3`). Version/logical binding unproved.
+Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `f54c76880892` — p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=3`). Version/logical binding unproved.
 
 Exact code components (not a supplied paper bridge):
 
@@ -530,9 +535,9 @@ Retain every RH/GRH hypothesis printed in the Resolution draft §4.3. If the des
 
 **Depends on:** S4, S5. **Acceptance:** The final dependency graph contains no disguised RH/GRH premise, conjecture-free status label or assumed arithmetic comparison.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2>), [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3>).
-Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `ed896093fe82` — [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=3>). Version/logical binding unproved.
-Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `f54c76880892` — [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=3>). Version/logical binding unproved.
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=2`), p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d7819c0364c7--Updated_Verification_of_Recursive_Refinement_Framework (2).pdf#page=3`).
+Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `ed896093fe82` — p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=3`). Version/logical binding unproved.
+Related title-matched version: **Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations**, `f54c76880892` — p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=3`). Version/logical binding unproved.
 
 No concrete supplier established for this obligation.
 
@@ -557,11 +562,11 @@ The roadmap has no single theorem to formalize. A bounded prime-list contract is
 
 #### Exact primary paper evidence
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1>): “Analytic Number Theory”. Page-text SHA-256 `39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3>): “Computational and Experimental Verification”. Page-text SHA-256 `22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2>): “3     Algebraic Number Theory and Primes in Fields”. Page-text SHA-256 `506eb036515e8f32eed5d026e1e8d76a66eba7e8c16a86ff40ccfebfd6517ba4`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3>): “5     Geometric Representations and the Langlands”. Page-text SHA-256 `22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617`.
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1>): “A Holistic Strategy for Deriving Properties of”. Page-text SHA-256 `39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1`): “Analytic Number Theory”. Page-text SHA-256 `39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3`): “Computational and Experimental Verification”. Page-text SHA-256 `22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2`): “3     Algebraic Number Theory and Primes in Fields”. Page-text SHA-256 `506eb036515e8f32eed5d026e1e8d76a66eba7e8c16a86ff40ccfebfd6517ba4`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3`): “5     Geometric Representations and the Langlands”. Page-text SHA-256 `22960f02b1cc371c3fad11641b450135c2f1b1060cbc7ebe69a36c069e42a617`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1`): “A Holistic Strategy for Deriving Properties of”. Page-text SHA-256 `39a9fcea1d40a7413342a18358fee7b26bc3c11a1a7e3eda322c4818b889cfe1`.
 
 #### Construction and proof obligations
 
@@ -571,7 +576,7 @@ Resolve each numbered Source 23/26/27/28/29 to a title, exact version and theore
 
 **Depends on:** no earlier obligation. **Acceptance:** Every imported assertion has a version-bound source; resource numbers alone do not count.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1>), [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2>), [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1`), p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2`), p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=3`).
 
 No concrete supplier established for this obligation.
 
@@ -581,7 +586,7 @@ One optional concrete task: for each N:ℕ define output(N):Finset ℕ and requi
 
 **Depends on:** P1. **Acceptance:** Choose this or another exact contract; do not rename a generic library definition as the roadmap’s full program.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -593,7 +598,7 @@ Instantiate output(N)=Nat.primesBelow N and use the membership theorem for sound
 
 **Depends on:** P2. **Acceptance:** The chosen output and bound convention are explicit; termination/complexity claims have their own actual proofs.
 
-Primary source: [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2>).
+Primary source: p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=2`).
 
 Exact code components (not a supplied paper bridge):
 
@@ -605,7 +610,7 @@ For any proposed prime-distribution estimate, specify the actual counting/weight
 
 **Depends on:** P1. **Acceptance:** Exact quantifiers, normalization and all hypotheses are fixed before selecting an estimate; bounded prime enumeration is not this analytic supplier.
 
-Primary source: [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1>).
+Primary source: p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/0b423568798d--A_Holistic_Strategy_for_Deriving_Properties_of_Prime_Numbers (3).pdf#page=1`).
 
 No concrete supplier established for this obligation.
 
@@ -626,67 +631,67 @@ These eight byte-distinct assets remain separate. Their titles match or closely 
 
 Title-matched candidate for a named dependency; exact version and logical binding remain unproved.
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=1>): “Formal Derivation of Axiom 5: Cross-Domain Error Cancellation”. Page-text SHA-256 `76acb4241477be9371d53cd62cbe1b70f18a831a31bef072846e031418f94db5`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=2>): “4    Ergodic-Theoretic Justification of Partial Cancellation”. Page-text SHA-256 `8320e6c431a05868ae11c87f3b577cab3ba283cd1a230f326ebf5854efbf75b1`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=1`): “Formal Derivation of Axiom 5: Cross-Domain Error Cancellation”. Page-text SHA-256 `76acb4241477be9371d53cd62cbe1b70f18a831a31bef072846e031418f94db5`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/2edefaf15e1f--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (1).pdf#page=2`): “4    Ergodic-Theoretic Justification of Partial Cancellation”. Page-text SHA-256 `8320e6c431a05868ae11c87f3b577cab3ba283cd1a230f326ebf5854efbf75b1`.
 
 ### Formal Derivation of Axiom 5: Cross-Domain Error Cancellation — `90212cbba117`
 
 Title-matched candidate for a named dependency; exact version and logical binding remain unproved.
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=1>): “Formal Derivation of Axiom 5: Cross-Domain Error Cancellation”. Page-text SHA-256 `76acb4241477be9371d53cd62cbe1b70f18a831a31bef072846e031418f94db5`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=2>): “4    Ergodic-Theoretic Justification of Partial Cancellation”. Page-text SHA-256 `8320e6c431a05868ae11c87f3b577cab3ba283cd1a230f326ebf5854efbf75b1`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=1`): “Formal Derivation of Axiom 5: Cross-Domain Error Cancellation”. Page-text SHA-256 `76acb4241477be9371d53cd62cbe1b70f18a831a31bef072846e031418f94db5`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/90212cbba117--Derivation_of_Axiom_5__Cross_Domain_Error_Cancellation (2).pdf#page=2`): “4    Ergodic-Theoretic Justification of Partial Cancellation”. Page-text SHA-256 `8320e6c431a05868ae11c87f3b577cab3ba283cd1a230f326ebf5854efbf75b1`.
 
 ### Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond — `e4af0063b673`
 
 Title-matched candidate for a named dependency; exact version and logical binding remain unproved.
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=1>): “Generalization of the Recursive Refinement”. Page-text SHA-256 `09f4c3866d58076a9aa85067128b2b1fa720d7efb45266e8c15f4b986b94fc28`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=2>): “The local error term ∆NGL(n) (Tn ) and phase correction function φn are”. Page-text SHA-256 `632414f14b72f04e80282292b1a137ce450ebada24365e8ddbac0ba087ac60d6`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=3>): “[1] Iwaniec, H. and Kowalski, E. Analytic Number Theory. American Mathe-”. Page-text SHA-256 `02a62548554a7b8da8a324450a23c0564f03308cae76dd05f8f66a4687b7571d`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=1`): “Generalization of the Recursive Refinement”. Page-text SHA-256 `09f4c3866d58076a9aa85067128b2b1fa720d7efb45266e8c15f4b986b94fc28`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=2`): “The local error term ∆NGL(n) (Tn ) and phase correction function φn are”. Page-text SHA-256 `632414f14b72f04e80282292b1a137ce450ebada24365e8ddbac0ba087ac60d6`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/e4af0063b673--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (1).pdf#page=3`): “[1] Iwaniec, H. and Kowalski, E. Analytic Number Theory. American Mathe-”. Page-text SHA-256 `02a62548554a7b8da8a324450a23c0564f03308cae76dd05f8f66a4687b7571d`.
 
 ### Generalization of the Recursive Refinement Framework for Automorphic L-Functions and Beyond — `46c71204aa52`
 
 Title-matched candidate for a named dependency; exact version and logical binding remain unproved.
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=1>): “Generalization of the Recursive Refinement”. Page-text SHA-256 `09f4c3866d58076a9aa85067128b2b1fa720d7efb45266e8c15f4b986b94fc28`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=2>): “The local error term ∆NGL(n) (Tn ) and phase correction function φn are”. Page-text SHA-256 `632414f14b72f04e80282292b1a137ce450ebada24365e8ddbac0ba087ac60d6`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=3>): “[1] Iwaniec, H. and Kowalski, E. Analytic Number Theory. American Mathe-”. Page-text SHA-256 `02a62548554a7b8da8a324450a23c0564f03308cae76dd05f8f66a4687b7571d`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=1`): “Generalization of the Recursive Refinement”. Page-text SHA-256 `09f4c3866d58076a9aa85067128b2b1fa720d7efb45266e8c15f4b986b94fc28`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=2`): “The local error term ∆NGL(n) (Tn ) and phase correction function φn are”. Page-text SHA-256 `632414f14b72f04e80282292b1a137ce450ebada24365e8ddbac0ba087ac60d6`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/46c71204aa52--Generalization_of_the_Recursive_Refinement_Framework_for_Automorphic_L_Functions_and_Beyond (2).pdf#page=3`): “[1] Iwaniec, H. and Kowalski, E. Analytic Number Theory. American Mathe-”. Page-text SHA-256 `02a62548554a7b8da8a324450a23c0564f03308cae76dd05f8f66a4687b7571d`.
 
 ### Refinement of Axiom 1: Bounded Error Growth Without Conjectures — `d5030fdf2496`
 
 Title-matched candidate for a named dependency; exact version and logical binding remain unproved.
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=1>): “Refinement of Axiom 1: Bounded Error”. Page-text SHA-256 `9905904c7b10b72df8c8e00e3683f9c5303112e96236aa0eb8e47b0a2d4228a9`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=2>): “Let {pn } denote the sequence of prime numbers, and define the prime gap”. Page-text SHA-256 `37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=3>): “4    Height Gaps on Elliptic Curves”. Page-text SHA-256 `25bb21fa352821cc459ac96f9b43fca665fc523677311fa6d6d8df7ebafb5f03`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=4>): “[2] H. Iwaniec and E. Kowalski. Analytic Number Theory. American Math-”. Page-text SHA-256 `366d7512c5525df45f9f4922c95d08db01386b90009e8f40d3d6db408d957e4e`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=1`): “Refinement of Axiom 1: Bounded Error”. Page-text SHA-256 `9905904c7b10b72df8c8e00e3683f9c5303112e96236aa0eb8e47b0a2d4228a9`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=2`): “Let {pn } denote the sequence of prime numbers, and define the prime gap”. Page-text SHA-256 `37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=3`): “4    Height Gaps on Elliptic Curves”. Page-text SHA-256 `25bb21fa352821cc459ac96f9b43fca665fc523677311fa6d6d8df7ebafb5f03`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/d5030fdf2496--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (1).pdf#page=4`): “[2] H. Iwaniec and E. Kowalski. Analytic Number Theory. American Math-”. Page-text SHA-256 `366d7512c5525df45f9f4922c95d08db01386b90009e8f40d3d6db408d957e4e`.
 
 ### Refinement of Axiom 1: Bounded Error Growth Without Conjectures — `019052dca83c`
 
 Title-matched candidate for a named dependency; exact version and logical binding remain unproved.
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=1>): “Refinement of Axiom 1: Bounded Error”. Page-text SHA-256 `9905904c7b10b72df8c8e00e3683f9c5303112e96236aa0eb8e47b0a2d4228a9`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=2>): “Let {pn } denote the sequence of prime numbers, and define the prime gap”. Page-text SHA-256 `37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=3>): “4    Height Gaps on Elliptic Curves”. Page-text SHA-256 `25bb21fa352821cc459ac96f9b43fca665fc523677311fa6d6d8df7ebafb5f03`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=4>): “[2] H. Iwaniec and E. Kowalski. Analytic Number Theory. American Math-”. Page-text SHA-256 `366d7512c5525df45f9f4922c95d08db01386b90009e8f40d3d6db408d957e4e`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=1`): “Refinement of Axiom 1: Bounded Error”. Page-text SHA-256 `9905904c7b10b72df8c8e00e3683f9c5303112e96236aa0eb8e47b0a2d4228a9`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=2`): “Let {pn } denote the sequence of prime numbers, and define the prime gap”. Page-text SHA-256 `37bd9a7be90b2bf900db478cf56150606850391795122b15999cfc1da5be07d5`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=3`): “4    Height Gaps on Elliptic Curves”. Page-text SHA-256 `25bb21fa352821cc459ac96f9b43fca665fc523677311fa6d6d8df7ebafb5f03`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/019052dca83c--Refinement_of_Axiom_1__Bounded_Error_Growth_Using_Random_Matrix_Theory (2).pdf#page=4`): “[2] H. Iwaniec and E. Kowalski. Analytic Number Theory. American Math-”. Page-text SHA-256 `366d7512c5525df45f9f4922c95d08db01386b90009e8f40d3d6db408d957e4e`.
 
 ### Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations — `ed896093fe82`
 
 Title-matched candidate for a named dependency; exact version and logical binding remain unproved.
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=1>): “Resolution of Key Open Problems in the Verification”. Page-text SHA-256 `284b5518db3114cf562fbe2dd65f13f4e4d6105ed4be55d4ff7950a4fb72eb1e`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=2>): “fields, corrections are expressed as polynomial expansions in terms of the logarithmic”. Page-text SHA-256 `1364b999f4f95cbd6cb13d9c5f575bf98e893c6a251648a78359643205a69ed7`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=3>): “The statistical independence of zeros across distinct L-functions was crucial for validating”. Page-text SHA-256 `813107f2fb7a64fa9f4508db2ce6b3649a587d7ee2b4c2083ccc7a14db02fafd`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=4>): “[6] Andrew M. Odlyzko. Pair correlation of zeros under the riemann hypothesis. Mathe-”. Page-text SHA-256 `d2343257ab5e33dc2e537ca3ff5b93778d76eaaa0611cac618bece5667bcfddd`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=1`): “Resolution of Key Open Problems in the Verification”. Page-text SHA-256 `284b5518db3114cf562fbe2dd65f13f4e4d6105ed4be55d4ff7950a4fb72eb1e`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=2`): “fields, corrections are expressed as polynomial expansions in terms of the logarithmic”. Page-text SHA-256 `1364b999f4f95cbd6cb13d9c5f575bf98e893c6a251648a78359643205a69ed7`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=3`): “The statistical independence of zeros across distinct L-functions was crucial for validating”. Page-text SHA-256 `813107f2fb7a64fa9f4508db2ce6b3649a587d7ee2b4c2083ccc7a14db02fafd`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/ed896093fe82--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (1).pdf#page=4`): “[6] Andrew M. Odlyzko. Pair correlation of zeros under the riemann hypothesis. Mathe-”. Page-text SHA-256 `d2343257ab5e33dc2e537ca3ff5b93778d76eaaa0611cac618bece5667bcfddd`.
 
 ### Resolution of Key Open Problems in the Verification of Recursive Refinement for the Riemann Hypothesis and Generalizations — `f54c76880892`
 
 Title-matched candidate for a named dependency; exact version and logical binding remain unproved.
 
-- [p. 1](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=1>): “Resolution of Key Open Problems in the Verification”. Page-text SHA-256 `284b5518db3114cf562fbe2dd65f13f4e4d6105ed4be55d4ff7950a4fb72eb1e`.
-- [p. 2](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=2>): “fields, corrections are expressed as polynomial expansions in terms of the logarithmic”. Page-text SHA-256 `1364b999f4f95cbd6cb13d9c5f575bf98e893c6a251648a78359643205a69ed7`.
-- [p. 3](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=3>): “The statistical independence of zeros across distinct L-functions was crucial for validating”. Page-text SHA-256 `813107f2fb7a64fa9f4508db2ce6b3649a587d7ee2b4c2083ccc7a14db02fafd`.
-- [p. 4](</Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=4>): “[6] Andrew M. Odlyzko. Pair correlation of zeros under the riemann hypothesis. Mathe-”. Page-text SHA-256 `d2343257ab5e33dc2e537ca3ff5b93778d76eaaa0611cac618bece5667bcfddd`.
+- p. 1 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=1`): “Resolution of Key Open Problems in the Verification”. Page-text SHA-256 `284b5518db3114cf562fbe2dd65f13f4e4d6105ed4be55d4ff7950a4fb72eb1e`.
+- p. 2 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=2`): “fields, corrections are expressed as polynomial expansions in terms of the logarithmic”. Page-text SHA-256 `1364b999f4f95cbd6cb13d9c5f575bf98e893c6a251648a78359643205a69ed7`.
+- p. 3 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=3`): “The statistical independence of zeros across distinct L-functions was crucial for validating”. Page-text SHA-256 `813107f2fb7a64fa9f4508db2ce6b3649a587d7ee2b4c2083ccc7a14db02fafd`.
+- p. 4 (historical local locator: `/Users/local/Desktop/MathematicsLibrary/NumberTheory/f54c76880892--Resolution_of_Key_Open_Problems_in_the_Verification_of_Recursive_Refinement_for_the_Riemann_Hypothesis_and_Generalizations (2).pdf#page=4`): “[6] Andrew M. Odlyzko. Pair correlation of zeros under the riemann hypothesis. Mathe-”. Page-text SHA-256 `d2343257ab5e33dc2e537ca3ff5b93778d76eaaa0611cac618bece5667bcfddd`.
 
 ## Search, verification and provenance limits
 
