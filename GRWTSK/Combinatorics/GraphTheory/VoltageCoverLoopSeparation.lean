@@ -185,4 +185,130 @@ theorem pullback_inner [Fintype V] (f g : V → ℂ) :
   ring
 
 end DoubleVoltageCover
+
+
+/-! ### An explicit nonabelian three-stage double-cover witness
+
+This concrete witness discharges a separating-voltage premise for the ordered
+loops ab and ba. It is NOT a residual-2 proof for all free-group words.
+The third bit is state-dependent; independent abelian parity bits cannot
+separate the two cyclic orderings. The group is UT₃(F₂), of order eight. -/
+
+namespace EightSheetWitness
+
+inductive Letter where | a | b deriving DecidableEq, Fintype, Repr
+
+structure Fiber where
+  a : Bool
+  b : Bool
+  c : Bool
+  deriving DecidableEq, Fintype, Repr
+
+def mul (x y : Fiber) : Fiber :=
+  ⟨Bool.xor x.a y.a, Bool.xor x.b y.b,
+   Bool.xor (Bool.xor x.c y.c) (x.a && y.b)⟩
+
+def one : Fiber := ⟨false, false, false⟩
+def inv (x : Fiber) : Fiber :=
+  ⟨x.a, x.b, Bool.xor x.c (x.a && x.b)⟩
+
+theorem assoc : ∀ x y z : Fiber, mul (mul x y) z = mul x (mul y z) := by decide
+theorem identity : ∀ x : Fiber, mul x one = x ∧ mul one x = x := by decide
+theorem inverse : ∀ x : Fiber, mul x (inv x) = one ∧ mul (inv x) x = one := by decide
+
+instance : Group Fiber where
+  mul := mul
+  one := one
+  inv := inv
+  mul_assoc := fun x y z => assoc x y z
+  mul_one := fun x => (identity x).1
+  one_mul := fun x => (identity x).2
+  inv_mul_cancel := fun x => (inverse x).2
+
+def A : Fiber := ⟨true, false, false⟩
+def B : Fiber := ⟨false, true, false⟩
+
+theorem noncommute : A * B ≠ B * A := by decide
+
+/-- The original source is the one-vertex, two-edge bouquet. -/
+def E (_x _y : PUnit) : Type := Letter
+
+def U {x y : PUnit} : E x y → Fiber
+  | .a => A
+  | .b => B
+
+def path : List Letter → Path E PUnit.unit PUnit.unit
+  | [] => .refl _
+  | e :: rest => .cons e (path rest)
+
+def ab : Path E PUnit.unit PUnit.unit := path [.a, .b]
+def ba : Path E PUnit.unit PUnit.unit := path [.b, .a]
+
+def twoBits (x : Fiber) : Bool × Bool := (x.a, x.b)
+def firstBit (x : Fiber) : Bool := x.a
+
+/-- Two first-stage observations coincide, whereas complete endpoints differ. -/
+theorem first_same :
+    firstBit ((VoltageCover.liftPath E U ab (1 : Fiber)).1) =
+    firstBit ((VoltageCover.liftPath E U ba (1 : Fiber)).1) := by
+  rw [VoltageCover.lift_endpoint, VoltageCover.lift_endpoint]
+  decide
+
+theorem first_two_same :
+    twoBits ((VoltageCover.liftPath E U ab (1 : Fiber)).1) =
+    twoBits ((VoltageCover.liftPath E U ba (1 : Fiber)).1) := by
+  rw [VoltageCover.lift_endpoint, VoltageCover.lift_endpoint]
+  decide
+
+theorem third_separates :
+    (VoltageCover.liftPath E U ab (1 : Fiber)).1 ≠
+    (VoltageCover.liftPath E U ba (1 : Fiber)).1 := by
+  rw [VoltageCover.lift_endpoint, VoltageCover.lift_endpoint]
+  decide
+
+/-- The full source history returns, not only a sheet number. -/
+theorem source_ab :
+    VoltageCover.erasePath E U (VoltageCover.liftPath E U ab (1 : Fiber)).2 = ab :=
+  VoltageCover.erase_liftPath E U ab 1
+
+theorem source_ba :
+    VoltageCover.erasePath E U (VoltageCover.liftPath E U ba (1 : Fiber)).2 = ba :=
+  VoltageCover.erase_liftPath E U ba 1
+
+/-- A bit is appended at each covering projection. -/
+def section21 (a b : Bool) : Bool × Bool := (a, b)
+def section32 (p : Bool × Bool) (c : Bool) : Fiber := ⟨p.1, p.2, c⟩
+
+theorem section21_recover (p : Bool × Bool) :
+    section21 p.1 p.2 = p := rfl
+
+theorem section32_recover (x : Fiber) :
+    section32 (twoBits x) x.c = x := by cases x; rfl
+
+/-- Right multiplication makes the third bit depend on the CURRENT first bit. -/
+theorem update_A (x : Fiber) : x * A = ⟨!x.a, x.b, x.c⟩ := by
+  rcases x with ⟨a,b,c⟩
+  cases a <;> cases b <;> cases c <;> rfl
+
+theorem update_B (x : Fiber) :
+    x * B = ⟨x.a, !x.b, Bool.xor x.c x.a⟩ := by
+  rcases x with ⟨a,b,c⟩
+  cases a <;> cases b <;> cases c <;> rfl
+
+end EightSheetWitness
+
+namespace AbelianCoverObstruction
+
+variable {V : Type*} {E : V → V → Type*} {a : V}
+variable {G : Type*} [CommGroup G]
+
+/-- Abelian voltage endpoints cannot distinguish a cyclic reordering. -/
+theorem same_rotated_endpoint (U : ∀ {x y : V}, E x y → G)
+    (p q : Path E a a) (g : G) :
+    (VoltageCover.liftPath E U (p.append q) g).1 =
+    (VoltageCover.liftPath E U (q.append p) g).1 := by
+  simp only [VoltageCover.lift_endpoint, Path.holonomy_append]
+  rw [mul_comm (Path.holonomy U p) (Path.holonomy U q)]
+
+end AbelianCoverObstruction
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy
