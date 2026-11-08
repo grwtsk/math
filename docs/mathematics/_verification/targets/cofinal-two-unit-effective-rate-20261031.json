@@ -7,7 +7,8 @@
   "classification": "SOURCE_PROOF_CANDIDATE",
   "source": {
     "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CofinalTwoUnitEffectiveRateBridge.lean",
-    "blob": "5161900f072083873c029d6af24c784dc5ab190f"
+    "blob": "d8e0b36419e6b101a6097d2fddbaa65ae2fb9a23",
+    "revision": "fbc75b4abca16a03cb9a9105d3171b0df466a8bc"
   },
   "review": {
     "path": "documentation/mathematics/_support/reviews/cofinal-two-unit-effective-rate-bridge-2026-10-31.md",
@@ -54,5 +55,9 @@
     "promotion of a relative-density limit without the same-window absolute condition",
     "promotion of the noncomputable RH converse to a numerical enumeration algorithm",
     "missing imported-closure or expected-type evidence"
-  ]
+  ],
+  "prior_source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CofinalTwoUnitEffectiveRateBridge.lean",
+    "blob": "5161900f072083873c029d6af24c784dc5ab190f"
+  }
 }

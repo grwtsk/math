@@ -39,7 +39,28 @@ theorem strict_two_unit_of_scaled_deficit
     (hratio : (q - loss) * total ≤ q * credit)
     (habsolute : loss * total < 2 * q) :
     total < credit + 2 := by
-  omega
+  by_contra hgap
+  have htotal : credit + 2 ≤ total := Nat.le_of_not_gt hgap
+  have hlower0 : q * (credit + 2) ≤ q * total :=
+    Nat.mul_le_mul_left q htotal
+  have hlower : q * credit + 2 * q ≤ q * total := by
+    simpa [Nat.mul_add, Nat.mul_comm, Nat.mul_left_comm, Nat.mul_assoc] using hlower0
+  have hdecomp :
+      q * total = (q - loss) * total + loss * total := by
+    calc
+      q * total = ((q - loss) + loss) * total := by
+        rw [Nat.sub_add_cancel hloss]
+      _ = (q - loss) * total + loss * total := by
+        exact Nat.add_mul (q - loss) loss total
+  have hupper : q * total ≤ q * credit + loss * total := by
+    rw [hdecomp]
+    exact Nat.add_le_add_right hratio (loss * total)
+  have hcombined :
+      q * credit + 2 * q ≤ q * credit + loss * total :=
+    hlower.trans hupper
+  have htwo : 2 * q ≤ loss * total :=
+    (add_le_add_iff_left (q * credit)).mp hcombined
+  exact (not_lt_of_ge htwo) habsolute
 
 /-- The optimized `269/400` line-credit ratio reaches the strict gap only
 under the matching absolute threshold `131 * total < 800`. -/
@@ -155,7 +176,22 @@ theorem density_one_pair_model
     2 * (k + 1) = 2 * k + 2 ∧
     ¬ 1 * (2 * (k + 1)) < 2 * q ∧
     ¬ 2 * (k + 1) < 2 * k + 2 := by
-  omega
+  have hscaled : 2 * (q - 1) ≤ 2 * k :=
+    Nat.mul_le_mul_left 2 hk
+  have hratio : (q - 1) * (2 * (k + 1)) ≤ q * (2 * k) := by
+    calc
+      (q - 1) * (2 * (k + 1)) =
+          (q - 1) * (2 * k) + 2 * (q - 1) := by ring
+      _ ≤ (q - 1) * (2 * k) + 2 * k :=
+        Nat.add_le_add_left hscaled ((q - 1) * (2 * k))
+      _ = ((q - 1) + 1) * (2 * k) := by ring
+      _ = q * (2 * k) := by rw [Nat.sub_add_cancel hq]
+  have htotal : 2 * (k + 1) = 2 * k + 2 := by ring
+  have hqk : q ≤ k + 1 := by omega
+  have habsolute : 2 * q ≤ 1 * (2 * (k + 1)) := by
+    simpa [Nat.mul_comm, Nat.mul_left_comm, Nat.mul_assoc] using
+      Nat.mul_le_mul_left 2 hqk
+  exact ⟨hratio, htotal, not_lt_of_ge habsolute, by omega⟩
 
 /-- In particular, any fixed or merely asymptotic relative-density theorem
 can leave one reflected simple pair forever unless it supplies the same-window
@@ -166,6 +202,18 @@ theorem relative_density_alone_not_strict
       (q - 1) * total ≤ q * credit ∧
       total = credit + 2 ∧
       ¬ total < credit + 2 := by
-  refine ⟨2 * q, 2 * (q - 1), ?_, ?_, ?_⟩ <;> omega
+  refine ⟨2 * q, 2 * (q - 1), ?_, ?_, ?_⟩
+  · ring_nf
+  · have hqsplit : q = (q - 1) + 1 := (Nat.sub_add_cancel hq).symm
+    calc
+      2 * q = 2 * ((q - 1) + 1) := by rw [hqsplit]
+      _ = 2 * (q - 1) + 2 := by ring
+  · intro hlt
+    have heq : 2 * q = 2 * (q - 1) + 2 := by
+      have hqsplit : q = (q - 1) + 1 := (Nat.sub_add_cancel hq).symm
+      calc
+        2 * q = 2 * ((q - 1) + 1) := by rw [hqsplit]
+        _ = 2 * (q - 1) + 2 := by ring
+    exact (not_lt_of_ge (Nat.le_of_eq heq.symm)) hlt
 
 end GRWTSK.RiemannHypothesis.CofinalTwoUnitEffectiveRateBridge
