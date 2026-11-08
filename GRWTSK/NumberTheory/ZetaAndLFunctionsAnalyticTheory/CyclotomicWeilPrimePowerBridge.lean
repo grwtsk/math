@@ -122,7 +122,7 @@ theorem cyclotomicResidueCoefficient_prime_pow
       rw [map_pow]
     _ = ((((χ.toUnitHom
         (frobeniusUnit (n := N) (p := p) hcop) : ℂˣ)) : ℂ)) ^ e := by
-      rw [dirichlet_frobenius_value (n := N) (p := p) hcop χ]
+      rw [← dirichlet_frobenius_value (n := N) (p := p) hcop χ]
     _ = ((((χ.toUnitHom
         (frobeniusUnit (n := N) (p := p) hcop)) ^ e : ℂˣ)) : ℂ) := by
       rw [Units.val_pow_eq_pow_val]
@@ -262,7 +262,12 @@ theorem nonzero_weight_cyclotomic_coefficient_as_frobenius_power
   have hp := nonzero_primeWeight_minFac_prime hweight
   have hbase := nonzero_primeWeight_minFac_coprime hweight hcop
   have hpow := nonzero_primeWeight_minFac_power hweight
-  rw [← hpow]
-  exact cyclotomicResidueCoefficient_prime_pow χ hp hbase
+  calc
+    cyclotomicResidueCoefficient χ m =
+        cyclotomicResidueCoefficient χ
+          (m.minFac ^ m.factorization m.minFac) := by
+      rw [hpow]
+    _ = _ :=
+      cyclotomicResidueCoefficient_prime_pow χ hp hbase
 
 end GRWTSK.NumberTheory.WeilQuadraticForm.CyclotomicPrimePowerBridge
