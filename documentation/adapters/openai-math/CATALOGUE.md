@@ -17,16 +17,21 @@ dependencies rather than being copied into GRWTSK or counted as local bridges.
 
 ## Using a surface
 
-Files live under `GRWTSK/<subject>/OpenAIMath/` within this provider package.
+Maintained source files live in the canonical MSC2020 `GRWTSK/` tree, with
+relative symlinks under this provider package. Filesystem module paths and
+preserved declaration namespaces differ; resolve paths through the
+[MSC2020 layout](../../taxonomy/msc2020/README.md).
 Each imports the exact solution module and any additional imports specified by
 its comparator. It exposes the configured declarations through nested namespace
 aliases retaining their original qualified names and types. For example:
 
 ```lean
-import GRWTSK.NumberTheory.OpenAIMath.OrdinaryTwoPointCorrelations
+import GRWTSK.NumberTheory.OrdinaryTwoPointCorrelations
 
 #check GRWTSK.NumberTheory.OpenAIMath.OrdinaryTwoPointCorrelations.OAI.OrdinaryTwoPointCorrelations.liouville_log_saving
 ```
+
+The example imports [`OrdinaryTwoPointCorrelations.lean`](../../../GRWTSK/NumberTheory/OrdinaryTwoPointCorrelations.lean) through the package’s symlink. Its `#check` uses the preserved declaration namespace; changing the import locator does not rename that declaration or supply a fresh compilation result.
 
 The catalogue records each lookup alias, source blob and comparator policy.
 These aliases resolve to upstream declarations; they are not new proved
@@ -36,7 +41,7 @@ The opt-in `GRWTSKOpenAICatalogue` library declares the subject modules. From an
 external, source-pinned materialization of this provider package, select one:
 
 ```sh
-lake build GRWTSK.NumberTheory.OpenAIMath.OrdinaryTwoPointCorrelations
+lake build GRWTSK.NumberTheory.OrdinaryTwoPointCorrelations
 ```
 
 The provider's existing default targets and the repository's root imports do
@@ -65,9 +70,10 @@ belong outside maintained math content.
 
 The [canonical paper ledger](../../mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#openai-adapter-reconciliation)
 reconciles the provider's original two papers and the previously separate
-signed-Abel supplements. Extend that ledger for each actual mathematical bridge,
-with exact hypotheses, source identities, verification evidence or `NOT_RUN`, and
-missing premises. The 721 source records remain a catalogue; this reconciliation
+signed-Abel supplements. For each actual mathematical bridge, record exact
+hypotheses, source identities, verification evidence or `NOT_RUN`, and missing
+premises in the source or associated issue/PR. The ledger is optional; its
+maintenance is not a prerequisite for a source change or publication. The 721 source records remain a catalogue; this reconciliation
 does not invent paper-to-theorem mappings or certify all 419 import surfaces.
 
 ## Upstream correction boundary — 2026-10-30

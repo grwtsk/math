@@ -14,7 +14,12 @@ Publisher: Mathematical Reviews / American Mathematical Society and zbMATH, join
 
 The official publication links a [PDF](https://msc2020.org/MSC_2020.pdf), [TeX source](https://msc2020.org/MSC_2020.tex) and [CSV](https://msc2020.org/MSC_2020.csv). Native code spellings and distinctions belong to that source; do not synthesize absent suffix combinations or replace its relationships with local subject parentage. The PDF presents 224 pages. Selected pages support citation-level inspection, not a complete parsed baseline.
 
-## Reference access is not an imported inventory
+## Historical reference-access observation
+
+This section records the earlier browser-only inspection. Its unavailable-byte
+statements are retained as observations of that delivery, superseded for the CSV
+by the later acquisition recorded above. Cross-format reconciliation and semantic
+review remain distinct; acquisition alone does not discharge them.
 
 The browser exposes PDF text and selected rendered pages. The TeX and CSV responses are not readable through that browser interface because of their application/octet-stream content type; original-byte retrieval to the working environment was unavailable in this delivery. Original source checksums and cross-format byte-bound identifier reconciliation remain **UNAVAILABLE / NOT_RUN**. A hash of retyped text would identify the transcription, not the publisher's original file.
 

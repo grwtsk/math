@@ -2,9 +2,9 @@
 
 [Documentation](../../index.md) · [MSC2020](../msc2020/README.md)
 
-Browse the current MSC2020 folders below. Source articles preserve their original commit/blob pins, declarations, literal source windows and verification scope. These are navigation assignments; source-specific semantic review and mathematical acceptance are not inferred.
+Browse authored subject definitions and guides arranged under MSC2020 headings. Their UUIDs identify local authored records; placement does not identify them with official MSC entries or imply semantic review or mathematical acceptance. Lean source files are indexed separately in the [source-folder navigation](../../mathematics/complete-source-index.md).
 
-**136 document entries in this branch.** Historical source editions remain separate where their provenance or declaration observations differ.
+**136 document entries in this branch.** This count describes authored guide entries, excluding navigation indexes; it is not a count of Lean modules, official MSC entries, or accepted theorems.
 
 | Document or subject | Kind |
 |---|---|

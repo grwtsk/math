@@ -10,6 +10,7 @@ Start with the [mathematics index](mathematics/index.md) for current source navi
 | Read subject definitions | [Authored subject guides](taxonomy/subjects/index.md) | Maintained mathematical definitions and their stated review limits |
 | Follow selected examples | [Selected result catalogue](mathematics/_support/reference/results.md) | Three historical families and their exact evidence scopes |
 | Inspect isolated dependencies | [Provider adapters](adapters/README.md) | Package pins and links to canonical Lean sources |
+| Find source-bound ontology records | [Mathematical ontology](../docs/ontology/README.md) and [mapping contracts](../docs/ontology/mappings/README.md) | Existing typed source/tool/evidence bindings; no execution or proof acceptance implied |
 | Resolve moved paths | [MSC2020 layout](taxonomy/msc2020/README.md) | Source and documentation aliases; declaration identities remain separate |
 
 Links to articles removed by the bulk documentation deletions open commit-pinned archive versions. Those pages describe their historical sources and observations; they do not certify current source bytes.
