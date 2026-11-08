@@ -112,7 +112,9 @@ formalize an analytic logarithmic derivative.
   A source-preserving operator bridge remains a separate open obligation.
 
 Current source base: grwtsk/math
-`d804152b1efe2854f356ab6266603cab427f23fe`.
+`d804152b1efe2854f356ab6266603cab427f23fe` (main source edition).
+The parallel branch records source base
+`0d7adb3bca0a87868e928b625bdad1ba1b281552`.
 -/
 
 set_option autoImplicit false
