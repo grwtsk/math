@@ -1,0 +1,184 @@
+{
+  "branches": [
+    {
+      "discharges": "one actual mirrored pair inside radiusFour.filteredMiddle; not exhaustive middle",
+      "evidence": "COMPLETE_WRITTEN_COMPUTER_ASSISTED_PROOF; full exact104x104 Gram,Gauss192 and ENTIRE tail retained",
+      "id": "radiusFour.filteredMiddle.paidPair",
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourPaidPacket.lean",
+      "type": "For EVERY complex physical L2([-Tcap,Tcap],dt) u, integral_Iplus s4|Fu|^2 dxi/(2pi)>=-10^-6 E(u), and same on Iminus; Tcap=2001503/500000,C=18524227541662946/10000000,R10. Each variance input on this carrier obeys same source; pair price2*10^-6 E(originalf)."
+    },
+    {
+      "discharges": "exact source/domain/metric return of the actual continuous-kernel branch",
+      "evidence": "COMPLETE_WRITTEN_ANALYTIC_PROOF; derivative norm never exchanged for physicalE",
+      "id": "radiusFour.kernelReturn",
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourScrewGreen.lean",
+      "type": "For EVERY oddH0^1([-4,4]) f,u=fprime in even meanzero physicalL2U: Q4(f)=<Gchi u,u>, E(f)=<Nu,u>; N inverse Neumann kernel(x^2+y^2)/16-|x-y|/2+2/3. Gchi is constructed from continuous full-gamma+458signedhinge kernel, bounded compact selfadjoint onALLU."
+    },
+    {
+      "discharges": "entire positive gamma-series tail with retained derivative norm",
+      "evidence": "COMPLETE_WRITTEN_ANALYTIC_PROOF",
+      "id": "radiusFour.fullGammaTail",
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourScrewGreen.lean",
+      "type": "For ALL H0^1 f, ALL naturalM: 0<=Q4(f)-Q4,M(f)<=2/(4M+1)^2*||fprime||_2^2. Continuous kernel ENTIRE remainder <=1/(4M+1). Both use exactly original cchi and458signedatoms."
+    },
+    {
+      "discharges": "genuine physical-energy error and exact source return after actual heat; heat bias only fixed-H0^1 convergence",
+      "evidence": "COMPLETE_WRITTEN_ANALYTIC_PROOF; separate written formula audit",
+      "id": "radiusFour.heatTailReturn",
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourScrewGreen.lean",
+      "type": "For ALL odd physicalL2 f, ALL t>0, ALL naturalM: 0<=Q4(S_t f)-Q4,M(S_t f)<=E(inputf)/[t(4M+1)^2]. S_t actual oddDirichlet heat preserves support[-4,4], extendsTH_tD fromH0^1. M(t)=ceil1/t gives<=tE(inputf)/16. For each fixed originalH0^1 f, Q4,M(t)(S_t f)->Q4(f)."
+    },
+    {
+      "discharges": "full physical head/mixed/tail comparison; explicit cofinal t1/n,M=N=n limit to Q4 on fixed original tests",
+      "evidence": "COMPLETE_WRITTEN_ANALYTIC_PROOF; no head sign inferred",
+      "id": "radiusFour.physicalHeadReturn",
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourScrewGreen.lean",
+      "type": "For ALL odd physicalL2 f,t>0,naturalM,N, full actual Q4(S_t f) differs from physical damped sine headH_tMN(f) by at most[1/(t(4M+1)^2)+2B_M exp(-t lambda_(N+1))]E(inputf). B_M=|cchi|+2sum_(m<M)1/alpha_m+sum_native4582logp/sqrt(n). Head entries exp[-t(lambda_n+lambda_m)]omega_n omega_m G_M,nm; all mixed and entiretail terms paid."
+    },
+    {
+      "discharges": "rules out universal finite-gamma-only target sign at these M; does not dischargej3",
+      "evidence": "COMPLETE_WRITTEN_ANALYTIC_PROOF_PLUS_EXACT458ROW_SCALAR_GUARD; separate written audit",
+      "id": "radiusFour.finiteGammaObstruction",
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourScrewGreen.lean",
+      "type": "EXISTS ONE nonzero original real odd compact smooth Admissible chi3 4 f such that FOR EVERY0<=M<=10^19, Q4,M(f)<-E(f)/2. All458atoms retained. Explicit even smooth envelope, elementary prime-phase selection and actual odd modulations construct testfamily. FULLQ4/E tends positiveinfinity along same carriers; NOT a fullsource counterexample."
+    },
+    {
+      "discharges": "whole infinite high-variance and stopped-tail subbranches with these exact parameters",
+      "evidence": "COMPLETE_WRITTEN_PROOF_PLUS_EXACT4096ROWS_ALL458ATOMS; distinctalternative to conservativeW58branch",
+      "id": "radiusFour.filteredMiddle.highReturnRefinement",
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourMiddleReturn.lean",
+      "type": "For ALL original real odd compactC2 Admissible chi3 4 f, actual newPH withM7990,K2820,h1/(2*10^25),W577531/10000 onphysicalradius4.00001: J_R(s4(1-PH^2))>=-597531/(5*10^13)E. ENTIRE |xi|>3.5e25 stoppedtail>=-213*10^-20E."
+    },
+    {
+      "discharges": "exact source comparison and lowreturn for current parameters; doesnotpay signedmiddle",
+      "evidence": "COMPLETE_WRITTEN_SOURCE_COMPOSITION_PROOF_PLUS_EXACTSCALAR_GUARDS; currentM19000 nothistoricalM18000",
+      "id": "radiusFour.filteredMiddle.lowSourceComposition",
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourMiddleReturn.lean",
+      "type": "For ALL original tests, currentPL M19000,K1425,h153/2000000000 composed with actual newPH has lowloss<=10^-64E, full verifiedzero head and ENTIRE unknownzero tails retained. Q4>=J_D4(s4 PH^2(1-PL^2))-deltaE, D4={30million<|xi|<3.5e25},delta=597531/(5*10^13)+10^-64+426*10^-40+213*10^-20."
+    },
+    {
+      "discharges": "nothing yet; actual next required sign towardPrimitiveStageLowerj3",
+      "evidence": "OPEN_RESEARCH_OBLIGATION",
+      "id": "radiusFour.filteredMiddle",
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourMiddleReturn.lean",
+      "type": "For EVERY original Admissible chi3 4 f, J_D4(s4 PH^2(1-PL^2))>=-(124999987/10^9)E(f), using precisely previousPH/PL/source/domain. Equivalently sufficient after paidpair: same signedintegral onD4minusIplusIminus >=-(124997987/10^9)E(f)."
+    },
+    {
+      "evidence": "OPEN_ALTERNATIVE_RESEARCH_OBLIGATION",
+      "id": "radiusFour.sharpEdgeSchur",
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourEdgeSchur.lean",
+      "type": "Alternative existingbranch: for EVERY v in physicalL2(3,4) withGamma(O4v)<infinity, actualm11[v]>=<Bv,A0^-1 Bv>, withnative source/corereturn/inverse domain. No replacement of this branch by derivative-carrier identity."
+    },
+    {
+      "evidence": "OPEN; NOT_DISCHARGED_BY_THIS_ROUND",
+      "id": "chi3.PrimitiveStageLower.j3",
+      "source": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilDirichletStageChain.lean",
+      "type": "DirichletStageChain.PrimitiveStageLower modThreeQuadratic modThreeQuadratic_primitive modThreeQuadratic_nonprincipal3: EVERY original real odd compactC2 Admissible chi3 4 f, nativeQ4(f)>=-E(f)/8."
+    }
+  ],
+  "coding": {
+    "not_claimed": "encoding arbitrarysemanticL2 functions, recovering discarded historicalradius3 factors, or manufacturing a sign through representation",
+    "preserved": "all source/type/parameter identities,complete matrices/factor bytes,all retained certificates/errors/tails/evidence status and expression binders. Infiniteobjects describedby finite exact syntax retain independent convergence/domainlaws.",
+    "source": "PaidPacket.retainedCodec reuses WeightedStage.dependentProofCodec on dependent completecontext/certificate/factor byte lists. decodeRetained totaldecoder obeys decodeRetained(retainedCodec.encode(x))=x. Separate bundle byte-mapcodec proved by length/base256 induction and actualfull readback."
+  },
+  "common_contract": {
+    "Fourier": "angular exp(-i xi t), dxi/(2pi); original positive-angular convention returns by evenness of complete source",
+    "arithmetic": "ALL458 native unramified prime powers p^e<=2980, p!=3; source stays unchanged below log2999/2",
+    "energy": "physical unweighted Lebesgue E(f)=integral_R|f(t)|^2dt",
+    "source": "native modThreeQuadratic=(0,1,-1), primitive nonprincipal conductor3, gamma parity1; no principal pole",
+    "tails": "all gamma, physical-basis, frequency, zero and cofinal tails retained with their individually stated laws; no finite passing collection implies the universal target"
+  },
+  "comparison": {
+    "hostile_checks": "oldnarrowpacketfails,actualpaidR10repairsonepair; finite-gamma obstruction andfullQpositiveinfinitycarriercheck; C0Greenkernel counterexample; unsignedphysicalRayleighlower.",
+    "independent_human_review": "NOT_RUN",
+    "novelty": "NOT_ASSESSED",
+    "primary_sources": [
+      "https://arxiv.org/pdf/2606.09096v1",
+      "https://dlmf.nist.gov/5.9.E15",
+      "https://arxiv.org/abs/1305.3087",
+      "https://arxiv.org/abs/2005.02989"
+    ],
+    "source_fidelity": "Suzuki continuouskernel method adaptedfromzeta by derivingactualchi3source; nozetapole imported. Actualcharacter parity/native inventory retained.",
+    "tool_roles": "Mathematical argument construction and separate agent formula audit; exact integer/rational replay of finite certificates; no kernel evidence fabricated."
+  },
+  "computational_evidence": {
+    "Noe_checker_directory": "tools/chi3_radius_four_connections",
+    "Noe_replay_receipt_path": ".cache/chi3-radius-four-connections-20261107/receipts/portable_replay.json",
+    "Noe_replay_receipt_sha256": "e0d09758bf1a00804e5f130a08a0e674fd4ba122aa4b0ceeaa19ca5d1d4413f0",
+    "finite_replay": "ALL_SIX_PORTABLE_PYTHON_O_REPLAYS_PASS_IDENTICAL_ORIGINAL_PAYLOAD_BYTES",
+    "scope": "paidpacket,458gamma scalar guard,20iter4096rowSchur,physicalunsignedRayleighlower,highvariance,M19000middle source guards; individual scopekept separate",
+    "scope_boundary": "Finite arithmetic plus proved analytical coverage only at stated local branch; no exhaustive radius4 middle cover."
+  },
+  "consumed_math_revision": "901c989b9899251f08b3fe8e87bae731fb465e3b",
+  "formal_evidence": {
+    "Lean_compilation": "NOT_RUN",
+    "fresh_kernel_check": "NOT_RUN",
+    "scope": "Only written mathematical proofs plus exact standalone finite arithmetic. Do not inherit other source-module receipts.",
+    "transitive_axiom_audit": "NOT_RUN",
+    "universal_analytic_Lean_formalization": "NOT_RUN"
+  },
+  "heat": {
+    "actual_spectral_semigroups": "Derivative Neumannheat on evenmeanzero physicalL2U withH2Neumann generatordomain; physical oddDirichletheat on oddL2[-4,4] withoddH2intersectH0^1 generatordomain. Entire eigenbasistails retained. DS_t=H_tD onlyonH0^1. Fixedsource supportandstrongreturns proved.",
+    "branch_coverage": "Reuse WeightedStage.stageCoverageWeight pi_n=2^(-n-1), total1, complete unobservedtail2^-J and stageCoverageStep Kx=(x+(sumx)pi)/2 on summablebranchstates. Exactinverse x=2Kx-(sumKx)pi. Naturalfinite-descriptioncodes exhaustive by Encodable.encodek; invalid entriesretained.",
+    "finite_Euler_sign_certification": "Only the actually signed finite Gram plus entire packet-tail argument; positive coverage/referenceheat alone yields no arithmetic sign."
+  },
+  "local_attribution": "grwtsk contributors",
+  "next_exact_missing_lemma": "radiusFour.filteredMiddle signedwholeintegral with budget124999987/10^9; after the paidmirroredpair, ENTIRE residualD4minusIplusIminus with budget124997987/10^9, originaltests/source/PH/PL/physicalE.",
+  "original_targets": {
+    "GRH": "GRWTSK.NumberTheory.Conditional.DirichletGRH; OPEN",
+    "RH": "_root_.RiemannHypothesis; OPEN",
+    "all_sector_tail": "All positive moduli,charactersectors,stages retained; finiteprimitive complex characters can be exhaustivelycodedby exactroot-of-unityvalue tables onfiniteunitgroups andmodulus. Invalidtables/statusentries retained; no finitepassingstage reaches everycharacter or cofinalstage.",
+    "dependent_path": "foundations -> proved source/kernel/heat/head/paidpair returns -> missingradiusFour.filteredMiddle OR sharpEdgeSchur -> chi3j3 -> onecofinalcoordinate; allcofinalsmallstages + PrimitiveNegativeWitness + RH -> DirichletStageChain.dirichletGRH_of_source_chains.",
+    "exact_L_function_family": "L(s,chi) for EVERY complexDirichletcharacter modulo EVERY positiveintegerq, including principal and imprimitive; EVERYzero0<Re(s)<1 hasRe(s)=1/2. No Hecke,Artin or automorphicfamilyclaim."
+  },
+  "prior_source_computation_revision": "c779a67fa824da8f9b75384f7d61c46baeb2ce1f",
+  "publication_tree_baseline_observed": "27141f0eae02cec461cca7e6d2ad7d7e9bff3651",
+  "retained_complete_data_bundle": {
+    "archive_bytes": 6748449,
+    "archive_index_sha256": "03fe55a559a94a9ed9fbc680396fb4e6ddf419a5b14a38a2d90798f9613b3568",
+    "boundary": "finite descriptions preserve convergence,dependent source identities andallrecordederrors/statuses; no arithmetic sign manufactured",
+    "file_count": 52,
+    "path": ".cache/chi3-radius-four-connections-20261107/retained-proof-data.tar.gz",
+    "repository": "grwtsk/noeaaeue",
+    "roundtrip": "EVERY_ORIGINAL_BYTE_ENCODE_DECODE_PASS; separate verification-only PASS",
+    "sha256": "609a54ec18a28b15cb62be7a7537436b6157c9aae081fab1d1f6be207a9c2340",
+    "uncompressed_bytes": 16139639
+  },
+  "schema": "grwtsk.math.static-verification-target/1",
+  "source_change_review": "Through12e3471d075669ca7ff09c41b8df7e5ab64f18fc original stage/character/native source definitions unchanged; GammaData added source floor lemmas. Other concurrent work preserved. Direct imported modules are present in committed main; this check is not Lean elaboration.",
+  "sources": [
+    {
+      "bytes": 24232,
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourPaidPacket.lean",
+      "sha256": "47ae7acff7e85471cdeef01b6054968a5bbbd2a60b7379d61201b939a1fc2442"
+    },
+    {
+      "bytes": 35189,
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourScrewGreen.lean",
+      "sha256": "fe0d085f71235fa931b6bd7ae9a802cb08b195a82a31dd823c175993f9261c62"
+    },
+    {
+      "bytes": 25871,
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourMiddleReturn.lean",
+      "sha256": "e4d018013334fd3f918fd032cf45da746e2ac117c69f9680901e582d16229327"
+    }
+  ],
+  "static_mathematical_data": [
+    {
+      "bytes": 6470451,
+      "path": "documentation/mathematics/_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourPaidPacket/data/certificate.json",
+      "sha256": "e39896120a620e4f91976cfa6ee790e984e1a3a7c6f7ee5bf7787df53b2e94d5"
+    },
+    {
+      "bytes": 86528,
+      "path": "documentation/mathematics/_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourPaidPacket/data/factor.f64le",
+      "sha256": "07e15233ee709b24f71311d34658cb84293aff7ea58a307c92d78fe92da9603b"
+    },
+    {
+      "bytes": 1109663,
+      "path": "documentation/mathematics/_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourPaidPacket/data/gamma_truncation_guard.json",
+      "sha256": "eda97708afc7c28c8838c0b2d0844f93795b2078a76fe952a106940b1d53183e"
+    }
+  ],
+  "status": "PARTIAL_PROVED_SOURCE_CONNECTIONS_AND_PAID_PAIR; ORIGINAL_J3_OPEN; RH_AND_DIRICHLET_GRH_OPEN"
+}
