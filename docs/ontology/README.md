@@ -65,7 +65,9 @@ The companion implementation lives under `tools/ontology` in Noeaaeue at the rev
 
 The [closed unit interval example](entities/examples/topology.unit-interval.closed.yaml) has two distinct approaches. One consumes Hausdorff separation and quasi-compactness together. The other uses the openness of both complement rays as a side condition. The [two-point example](entities/examples/topology.nonhausdorff-counterexample.yaml) demonstrates why dropping Hausdorff separation fails. [The Stacks Project, tag 08YB](https://stacks.math.columbia.edu/tag/08YB) · [Knuth, A Generalization of Dijkstra's Algorithm](https://web.engr.oregonstate.edu/~huanlian/papers/knuth77.pdf)
 
-The [Weil certificate view](views/grwtsk.weil-certificate-routes.yaml) retains the exact-source and root-return obligations, the cofinal stage family and the nonprincipal character sector. Use the obligation network to distinguish conditional composition from the open inputs. The [finite configurations view](views/grwtsk.finite-configurations.yaml) gives other GRWTSK entry points. The [independent entry points view](views/independent-entry-points.yaml) brings together topology, elementary arithmetic and discrete probability.
+The [Weil certificate view](views/grwtsk.weil-certificate-routes.yaml) retains the exact-source and root-return obligations, the cofinal stage family and the nonprincipal character sector.
+
+The [frontier diffuser and marked Weil view](views/grwtsk.frontier-diffuser-weil.yaml) records the finite conditional inverse-boundary route, reversible signed coordinate heat, ordered holonomy and their missing full-domain returns, without promoting any source proof candidate or the external advisory skills to an accepted theorem.  Use the obligation network to distinguish conditional composition from the open inputs. The [finite configurations view](views/grwtsk.finite-configurations.yaml) gives other GRWTSK entry points. The [independent entry points view](views/independent-entry-points.yaml) brings together topology, elementary arithmetic and discrete probability.
 
 ## Maintenance and learned discovery
 

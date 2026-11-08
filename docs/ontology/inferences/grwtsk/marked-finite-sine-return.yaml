@@ -1,0 +1,31 @@
+schema: "math-ontology/inference/2"
+id: "rule:grwtsk.marked-finite-sine-return"
+kind: "inference_rule"
+title: "Conditional finite marked geometry-to-source sine lower bound"
+context: "context:grwtsk.literal-weil"
+premises_all:
+  - "entity:grwtsk.obl.marked-realization"
+  - "entity:grwtsk.obl.marked-sine-source"
+  - "entity:grwtsk.obl.marked-geometric-floor"
+conclusion: "entity:grwtsk.claim.marked-finite-sine-lower"
+status: "conditional"
+cost: 2
+justification: "Given actual two-sided marked observations, a paid SourceLowerComparison for the same zeta or primitive-pair sine matrix, and a geometric floor -C, lower_of_marked_geometry yields the finite -(C+epsilon) lower bound. These geometric premises remain open and the rule has no full-domain or RH/GRH conclusion."
+sources:
+  - source: "source:grwtsk.math"
+    path: "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MarkedInverseBoundaryWeilSineBridge.lean"
+    locator: "lower_of_marked_geometry; zeta_odd_sine_lower_of_marked_geometry"
+    revision: "0d7adb3bca0a87868e928b625bdad1ba1b281552"
+    blob: "8af13a58639c2c24029009237d2b6a1d9084f20d"
+substitution: {}
+side_conditions: []
+instantiation: "schematic"
+binders:
+  - name: "M"
+    type: "ℕ"
+  - name: "A"
+    type: "Matrix (Fin M) (Fin M) ℝ"
+  - name: "C"
+    type: "ℝ"
+  - name: "epsilon"
+    type: "ℝ"

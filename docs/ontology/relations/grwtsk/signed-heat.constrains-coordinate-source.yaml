@@ -1,0 +1,19 @@
+schema: "math-ontology/relation/2"
+id: "relation:grwtsk.signed-heat.constrains-coordinate-source"
+type: "constrains"
+from: "entity:grwtsk.obs.signed-heat-sign-neutral"
+to: "entity:grwtsk.if.weil-signed-coordinate-heat"
+context: "context:grwtsk.literal-weil"
+status: "documented"
+justification: "Negative signed directions survive the reversible Markov coordinate mapping."
+sources:
+  - source: "source:grwtsk.math"
+    path: "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilRadiusTwoSignedDiffusion.lean"
+    locator: "negative_paid_survives_heat"
+    revision: "0d7adb3bca0a87868e928b625bdad1ba1b281552"
+    blob: "f1e7336299045197d84671d66b1c9337020a7bb8"
+costs:
+  reading: 1
+  formalization: 2
+  translation: 1
+  verification: 2

@@ -1,0 +1,22 @@
+schema: "math-ontology/entity/2"
+id: "entity:grwtsk.obs.ordered-not-scalar-heat"
+kind: "obstruction"
+title: "Noncommuting ordered steps are not scalar heat"
+context: "context:grwtsk.ordered-transport"
+subjects:
+  - "subject:msc2020.05"
+  - "subject:msc2020.47"
+statement: "OrderedDiffusion.natNoncommutative_witness shows that reversing two labelled steps can change the result. Without a commutativity theorem, a word-indexed diffuser cannot be replaced by a permutation-invariant multiset or a scalar-time semigroup."
+sources:
+  - source: "source:grwtsk.math"
+    path: "GRWTSK/Analysis/OperatorTheory/OrderedDiffusion.lean"
+    locator: "natNoncommutative_witness and evolve_pair_swap_of_commute"
+    revision: "0d7adb3bca0a87868e928b625bdad1ba1b281552"
+    blob: "f89caa28439d280758d48f757cbff9ec54d34969"
+evidence:
+  mathematical: "conditional_source_candidate"
+  source_correspondence: "pinned_source_and_declaration_inspected"
+  elaboration: "NOT_RUN"
+  fresh_kernel: "NOT_RUN"
+  transitive_axioms: "NOT_RUN"
+  independent_review: "NOT_RUN"

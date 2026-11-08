@@ -1,0 +1,22 @@
+schema: "math-ontology/entity/2"
+id: "entity:grwtsk.obl.marked-geometric-floor"
+kind: "obligation"
+title: "Independent marked geometric energy lower floor"
+context: "context:grwtsk.literal-weil"
+subjects:
+  - "subject:msc2020.11"
+  - "subject:msc2020.47"
+statement: "Prove a lower bound geometricEnergy(b)>=-C||reconstruct b||² for every boundary observation b, specifying how C depends on dimension, support and sector. Positive transport, gauge equivalence or reversible decoding alone gives no such bound."
+sources:
+  - source: "source:grwtsk.math"
+    path: "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MarkedInverseBoundaryWeilSineBridge.lean"
+    locator: "lower_of_marked_geometry.hgeom"
+    revision: "0d7adb3bca0a87868e928b625bdad1ba1b281552"
+    blob: "8af13a58639c2c24029009237d2b6a1d9084f20d"
+evidence:
+  mathematical: "conditional_source_candidate"
+  source_correspondence: "pinned_source_and_declaration_inspected"
+  elaboration: "NOT_RUN"
+  fresh_kernel: "NOT_RUN"
+  transitive_axioms: "NOT_RUN"
+  independent_review: "NOT_RUN"
