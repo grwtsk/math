@@ -23,9 +23,17 @@ exchanging them is an involution. This is the permutation quotient of a
 two-strand braid crossing, **not** a proof that the associated data is a
 knot in a 3-manifold. The polynomial identity and permutation statements
 are independent of Skelet17, the finite Busy Beaver machine.
+
+A concrete consumer is the
+[finite Alexander-incidence Dirac construction](../OperatorTheory/PrimeKnotAlexanderSpectralTriple.lean):
+`trefoil_figureEight_product` specializes `quadraticFactor_mul` over `ZMod 17`.
+The consumer's `commutator_leibniz` concerns its finite function algebra;
+it does not turn this factorization into an ambient-isotopy theorem.
 -/
 
 set_option autoImplicit false
+
+noncomputable section
 
 namespace GRWTSK.FieldTheoryAndPolynomials.ReciprocalQuarticDyad
 
@@ -50,7 +58,7 @@ No division, root existence, or algebraic-closure assumption is used. -/
 theorem quadraticFactor_mul (u v : R) :
     quadraticFactor u * quadraticFactor v =
       quartic (-(u + v)) (u * v + 2) := by
-  simp [quadraticFactor, quartic, map_add, map_mul, map_neg]
+  simp [quadraticFactor, quartic, map_add, map_mul, map_neg, C_ofNat]
   ring
 
 /-- The quadratic resolvent factors with the same two parameters. -/

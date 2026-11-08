@@ -47,6 +47,23 @@ on the basis vector e_i. No claim that the graph matrix ALONE determines
 knot isotopy is made; the vertex labels are essential. Its countable
 ℓ²/operator-domain assertions remain WRITTEN, not Lean formalizations.
 
+## Navigation and analytical scope
+
+`act_mul` supplies the algebra representation law; `commutator_formula`
+identifies the differential entries; `commutator_leibniz` proves their
+product rule. Its primary argument is the scalar identity
+`(a(j)b(j)-a(i)b(i)) = (a(j)-a(i))b(j)+a(i)(b(j)-b(i))`,
+multiplied by the edge weight and vector coordinate and summed over j.
+Thus no topological premise is needed for this finite algebraic law.
+`confinedCommutator_eq` transfers it to the confining diagonal lift.
+These identities do not construct the countable operator domain or prove
+compact resolvent in Lean. Independent analytical review remains NOT_RUN.
+
+The polynomial supplier is
+[ReciprocalQuarticDyad](../FieldTheoryAndPolynomials/ReciprocalQuarticDyad.lean);
+its `quadraticFactor_mul` feeds `trefoil_figureEight_product`, whereas
+Alexander invariance and connected-sum multiplicativity remain external inputs.
+
 External mathematical sources: standard Alexander invariance and connected
 sum multiplicativity, e.g. Friedl et al., Knot Theory lecture notes,
 2024, chapter 9; the earlier repository ReciprocalQuarticDyad.lean.
@@ -73,7 +90,7 @@ presentations to the quotient *only if* the presentation equivalence and the
 invariance theorem have independently been supplied. -/
 def descendAlexander {Diagram : Type*} (iso : Setoid Diagram)
     (raw : Diagram → Polynomial (ZMod 17))
-    (invariant : ∀ d e, iso.Rel d e → raw d = raw e) :
+    (invariant : ∀ d e, iso.r d e → raw d = raw e) :
     Quotient iso → Polynomial (ZMod 17) :=
   Quotient.lift raw invariant
 
@@ -199,7 +216,7 @@ theorem realDirac_selfAdjoint (s : Source Prime Knot)
       (∑ j : Vertex Prime Knot, edgeWeight s i j * ξ j) * η i) =
         ∑ i : Vertex Prime Knot,
           ∑ j : Vertex Prime Knot, edgeWeight s i j * ξ j * η i := by
-            simp [Finset.sum_mul]
+            simp only [Finset.sum_mul]
     _ = ∑ j : Vertex Prime Knot,
           ∑ i : Vertex Prime Knot, edgeWeight s i j * ξ j * η i := by
             rw [Finset.sum_comm]
@@ -213,7 +230,7 @@ theorem realDirac_selfAdjoint (s : Source Prime Knot)
             ring
     _ = ∑ j : Vertex Prime Knot,
           ξ j * (∑ i : Vertex Prime Knot, edgeWeight s j i * η i) := by
-            simp [Finset.mul_sum, mul_assoc]
+            simp only [Finset.mul_sum, mul_assoc]
 
 /-- Diagonal point-multiplication and the finite Dirac operator need
 not commute: the defect retains all source incidence weights. -/
@@ -249,7 +266,9 @@ theorem commutator_formula (s : Source Prime Knot)
 
 /-- A point mass is a legitimate vector in the finite Hilbert carrier. -/
 def delta (v : Vertex Prime Knot) : Hilbert Prime Knot :=
-  fun w => if w = v then 1 else 0
+  by
+    classical
+    exact fun w => if w = v then 1 else 0
 
 /-- Reading the Dirac matrix against point vectors recovers every weighted
 incidence, not merely a multiset of its eigenvalues. -/
@@ -291,6 +310,24 @@ theorem act_mul (a b : Algebra Prime Knot) (ξ : Hilbert Prime Knot) :
     act a (act b ξ) = act (fun v => a v * b v) ξ := by
   funext i
   simp [act, mul_assoc]
+
+/-- Spectral differentiation obeys the bimodule Leibniz law on the full
+finite function algebra. The left term is `[D,π(a)]π(b)` and the right
+term is `π(a)[D,π(b)]`; no commutation of D with either factor is assumed.
+Together with `commutator_formula` and `confinedCommutator_eq`, this gives
+an entrywise differential for both finite Dirac choices. -/
+theorem commutator_leibniz (s : Source Prime Knot)
+    (a b : Algebra Prime Knot) (ξ : Hilbert Prime Knot) :
+    commutator s (fun v => a v * b v) ξ =
+      fun i => commutator s a (act b ξ) i +
+        act a (commutator s b ξ) i := by
+  funext i
+  rw [commutator_formula, commutator_formula]
+  simp only [act, commutator_formula, Finset.mul_sum]
+  rw [← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro j _
+  ring
 
 end Finite
 
