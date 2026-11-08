@@ -1,5 +1,7 @@
 # leanprover-community/lean-liquid adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md)
+
 Local attribution: grwtsk contributors.
 
 Pinned upstream: [leanprover-community/lean-liquid@ee4795874a99ea5f9d85bd0b364425f07b932377](https://github.com/leanprover-community/lean-liquid/tree/ee4795874a99ea5f9d85bd0b364425f07b932377).

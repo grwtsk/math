@@ -1,5 +1,7 @@
 # teorth/equational_theories adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md)
+
 Local attribution: grwtsk contributors.
 
 Pinned upstream: [teorth/equational_theories@2f49bdaf3d38ffb722e54ac1288c8269dac61846](https://github.com/teorth/equational_theories/tree/2f49bdaf3d38ffb722e54ac1288c8269dac61846).

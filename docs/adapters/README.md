@@ -1,5 +1,7 @@
 # Mathematical adapters
 
+[Documentation index](../index.md)
+
 Local attribution: grwtsk contributors.
 
 This directory contains isolated provider packages and source-boundary contracts.

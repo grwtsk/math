@@ -1,5 +1,7 @@
 # google-deepmind/formal-conjectures adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md)
+
 Local attribution: grwtsk contributors.
 
 Pinned upstream: [google-deepmind/formal-conjectures@909a8bec155bc5a6f3c72e12baaaa610ae293281](https://github.com/google-deepmind/formal-conjectures/tree/909a8bec155bc5a6f3c72e12baaaa610ae293281).

@@ -1,5 +1,7 @@
 # ImperialCollegeLondon/FLT adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md)
+
 Local attribution: grwtsk contributors.
 
 Pinned upstream: [ImperialCollegeLondon/FLT@a3210204ad8876e851e32f73dd97d882bf1ccd0a](https://github.com/ImperialCollegeLondon/FLT/tree/a3210204ad8876e851e32f73dd97d882bf1ccd0a).

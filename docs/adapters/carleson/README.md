@@ -1,5 +1,7 @@
 # fpvandoorn/carleson adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md)
+
 Local attribution: grwtsk contributors.
 
 Pinned upstream: [fpvandoorn/carleson@52cba54d4b7b444e937c7abbc67835afa2a0bb16](https://github.com/fpvandoorn/carleson/tree/52cba54d4b7b444e937c7abbc67835afa2a0bb16).

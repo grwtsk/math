@@ -1,5 +1,7 @@
 # teorth/pfr adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md)
+
 Local attribution: grwtsk contributors.
 
 Pinned upstream: [teorth/pfr@7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f](https://github.com/teorth/pfr/tree/7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f).

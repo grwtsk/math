@@ -1,5 +1,7 @@
 # thefundamentaltheor3m/Sphere-Packing-Lean adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md)
+
 Local attribution: grwtsk contributors.
 
 Pinned upstream: [thefundamentaltheor3m/Sphere-Packing-Lean@77cf0a0c104f2e31501eab04d88bbc068d61c169](https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean/tree/77cf0a0c104f2e31501eab04d88bbc068d61c169).

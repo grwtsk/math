@@ -1,5 +1,7 @@
 # teorth/IEANTN adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md)
+
 Local attribution: grwtsk contributors.
 
 Pinned upstream: [teorth/IEANTN@ec66e388e6e117c6881367f38665f310edf7cacf](https://github.com/teorth/IEANTN/tree/ec66e388e6e117c6881367f38665f310edf7cacf).

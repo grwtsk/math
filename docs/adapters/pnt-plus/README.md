@@ -1,5 +1,7 @@
 # AlexKontorovich/PrimeNumberTheoremAnd adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md)
+
 Local attribution: grwtsk contributors.
 
 Pinned upstream: [AlexKontorovich/PrimeNumberTheoremAnd@127b50e33f6033e2147921167a117af96d9ba4ea](https://github.com/AlexKontorovich/PrimeNumberTheoremAnd/tree/127b50e33f6033e2147921167a117af96d9ba4ea).

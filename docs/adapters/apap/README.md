@@ -1,5 +1,7 @@
 # YaelDillies/apap adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md)
+
 Local attribution: grwtsk contributors.
 
 Pinned upstream: [YaelDillies/apap@b2001974b99b18ca1c13b6aa4791b7801563f939](https://github.com/YaelDillies/apap/tree/b2001974b99b18ca1c13b6aa4791b7801563f939).
