@@ -14,7 +14,7 @@ independently of physical paths.
 | Source identities, corpus dispositions and issue correspondence | [Sources](sources/), [corpora](corpora/) and [mapping contract](mappings/README.md) |
 | Release and external companion identity | [Manifest](manifest.yaml) |
 | Record shape and reference profile | [Record schema](schemas/records.schema.json) |
-| Retired IDs and retained historical source | [V1 migration crosswalk](migrations/grwtsk.v1.yaml) |
+| Retired IDs and retained historical source | [V1 migration crosswalk](migrations/grwtsk.v1.yaml) and [retained v1 specification](v1/README.md) |
 
 Intelligence, retrieval, model/training/evaluation and operational workflow
 guidance live in Noe: [ontology discovery](https://github.com/grwtsk/noeaaeue/blob/07a2fde8f059549cc48b80f9459a4e8ca8792cb8/docs/intelligence/math/ontology-discovery.md)

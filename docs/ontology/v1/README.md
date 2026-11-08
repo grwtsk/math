@@ -1,5 +1,11 @@
 # Mathematical ontology envelope, version 1
 
+**Historical v1 specification.** This page retains the earlier ontology design
+and its stated evidence scope. Maintained records and contracts are indexed in
+the [current ontology](../README.md); the [v1 migration crosswalk](../migrations/grwtsk.v1.yaml)
+resolves retired identifiers and their pinned source locators. The specification
+below preserves its original definitions and source references.
+
 Local attribution: grwtsk contributors. Original specification: repository MIT license.
 
 This is an additive mathematical knowledge layer for `grwtsk/math`, centered on the **spectral geometry of a prime-coded reflective kernel**. It does not replace MSC2020, move mathematical sources, rewrite declaration namespaces, change root imports, or upgrade historical proof evidence.
