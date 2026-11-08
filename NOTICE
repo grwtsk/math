@@ -35,16 +35,6 @@ CCC cutoff Laplace continuation: human mathematical direction by grwtsk contribu
 State gauge interface: direction by grwtsk contributors; OpenAI Codex assistance; locally maintained MIT formalization, historical authoring split unknown. Established group-action gauge mathematics and upstream Lean/Mathlib identities retained. Group-action source credits Chris Hughes and Yury Kudryashov, Apache-2.0. Canonical placement and checked reuse are engineering contributions, with no new mathematical originality or RH claim.
 
 
-Archive candidate-source intake
-------------------------------
-grwtsk contributors confirm ownership of the supplied formal proof sources and
-direct this work through ChatGPT and Codex. The existing Math repository MIT
-terms apply; original assistance credit, upstream mathematical authorship and
-Mathlib Apache-2.0 terms remain retained.
-See evidence/source-intake.json for exact source identities and attribution
-scope. Intake is not native proof
-acceptance or public-release permission.
-
 Finite square-sum and Hermitian trace-rank interfaces
 --------------------------------------------------
 GRWTSK/Analysis/Inequalities/FiniteSquareSum.lean and
