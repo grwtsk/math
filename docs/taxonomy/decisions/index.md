@@ -10,7 +10,7 @@ These decisions define this bounded draft's design, not independent editorial ac
 
 ## D01 Ownership
 
-Current maintained concept pages, mathematical/editorial proposals, decisions, and static taxonomy specifications live in `grwtsk/math/documentation/taxonomy/`. The original pilot used `docs/taxonomy/` and left its contemporary documentation index unchanged; those historical paths and inventory boundaries do not define the current layout. Classifying a concept does not authorize moving Lean sources or modifying imports.
+Current maintained concept pages, mathematical/editorial proposals, decisions, and static taxonomy specifications live in [`docs/taxonomy/`](../). The original pilot used `docs/taxonomy/` and left its contemporary documentation index unchanged; those historical paths and inventory boundaries do not define the current layout. Classifying a concept does not authorize moving Lean sources or modifying imports.
 
 The original pilot assigned named PMD disk metadata and transfers to Noeaaeue's `registry/taxonomy/classification/`; PMD identifiers are now retired and current folder navigation uses MSC2020. In that historical ownership description, `registry/taxonomy/collation/` owns source collation; `workflows/taxonomy/integration/` owns integration effects. These remain distinct from the universal mathematical concept library. Their historical snapshots are neither replaced nor relabeled as this scheme. Any relationship to the new vocabulary needs a separate, versioned association/crosswalk. Existing mathematical Git bindings remain the input boundary.
 
