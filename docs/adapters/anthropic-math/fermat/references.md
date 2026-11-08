@@ -1,7 +1,9 @@
 # Fermat consumer source and interface references
 
+[Provider guide](../README.md) · [Adapter index](../../README.md)
+
 Local attribution: grwtsk contributors. Public upstream authorship and Apache-2.0
-obligations remain in UPSTREAM-ATTRIBUTION.md, UPSTREAM-LICENSE and UPSTREAM-NOTICE.
+obligations remain in [UPSTREAM-ATTRIBUTION.md](UPSTREAM-ATTRIBUTION.md), [UPSTREAM-LICENSE](UPSTREAM-LICENSE) and [UPSTREAM-NOTICE](UPSTREAM-NOTICE).
 
 The pinned dependency is anthropics/fermats-last-theorem at
 6e837e75355538c7f80bab5b956861e86c4eacc2. Its FinalCheck.lean blob

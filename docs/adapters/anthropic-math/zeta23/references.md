@@ -1,8 +1,10 @@
 # Primitive-character local count readouts
 
+[Provider guide](../README.md) · [Adapter index](../../README.md)
+
 Local attribution: grwtsk contributors. Anthropic/Claude formalization attribution,
 Apache-2.0 and the modified PNT+ vendor notices remain in the pinned dependency
-and UPSTREAM-NOTICE. Alpöge--Furman2026 version 2 is distinct from the source-internal local
+and [UPSTREAM-NOTICE](UPSTREAM-NOTICE). Alpöge--Furman2026 version 2 is distinct from the source-internal local
 Jensen count endpoint used here.
 
 Source 63ea24924f18f87132e153ef59fb02c0e9aa314b, blob 98f0405c0218b9839a46bf664df20d9d1b31e36a, supplies actual finite complex-count

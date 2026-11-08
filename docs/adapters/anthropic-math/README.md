@@ -1,5 +1,7 @@
 # Anthropic mathematical adapters
 
+[Adapter index](../README.md) · [Consumer comparisons](../CONSUMERS.md)
+
 Local attribution: grwtsk contributors.
 
 Four isolated, opt-in packages track Anthropic's published formal mathematics.
@@ -7,10 +9,10 @@ Each package pins its upstream Git commit, toolchain and complete dependency loc
 Run `lake build` inside the selected project directory; these are verification
 commands to run, not successful receipts. No package is imported by the root build.
 
-- `zeta23`: all 23 configured zeta/Dirichlet/ξ′ declarations.
-- `3sum-apsp`: all 137 configured declarations, including conditional paper statements.
-- `eth`: both configured MainResults declarations.
-- `fermat`: exact positive-natural FLT transport, a positive-cube specialization, and
+- [`zeta23`](zeta23/): all 23 configured zeta/Dirichlet/ξ′ declarations.
+- [`3sum-apsp`](3sum-apsp/): all 137 configured declarations, including conditional paper statements.
+- [`eth`](eth/): both configured MainResults declarations.
+- [`fermat`](fermat/): exact positive-natural FLT transport, a positive-cube specialization, and
   a zero-factor obstruction for natural-number power-sum solutions (including zero output).
 
 See [catalogue.json](catalogue.json) for exact source commits, file blobs,
