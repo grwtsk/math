@@ -29,14 +29,23 @@ written analytic scope, not a proof of the stage sign or Dirichlet GRH.
 
 Let T=3, R=3500000000. The actual b is a REAL EVEN L1 function supported in
 [-R,R]. Set B = integral_0^R |b(xi)| dxi. The original note gives
-|A(xi)|<23 for |xi|<=R (monotone digamma, low-range bound and Binet), and
-|P_arith(xi)|<181/5 from the literal 93-prime-power mass. The multipliers
-1_Dprime, V and P² lie in [0,1], whence
+|A(xi)|<23 for |xi|<=R (monotone digamma, low-range bound and Binet).
+The literal 93-prime-power HALF-mass <181/5 only gives
+|P_arith(xi)|<362/5, because the original prime symbol includes a factor
+of two. It does not justify the earlier pointwise bound <181/5.
+Instead the independent complete cosine-moment argument in
+WeilConductorThreePrimeMoment proves integral_0^R |P_arith|<7R:
+all 93 upward square prices sum to 19675/1000<20, and the exact
+log-frequency separation pays every cross term. The multipliers
+1_Dprime, V and P² lie in [0,1], whence the INTEGRATED bound is
 
-       |b(xi)| < 60, B <= 60*R = 210000000000.                 (1)
+       B < 30*R < 60*R = 210000000000.                        (1)
 
-These estimates are source-derived and have not been rechecked in Lean.
-They are explicit hypotheses of the analytical comparison.
+Thus the conservative B<=60R used below is retained, without the
+unsupported pointwise inference. The continuum moment and gamma
+arguments are written proofs; only the finite inventory and scalar
+guards have their separately recorded Lean evidence. The Fourier and
+operator comparison below has not been rechecked in Lean.
 
 For a complex odd f supported in [-T,T], put u=f restricted to (0,T).
 Then E(f)=2||u||² and
@@ -141,6 +150,9 @@ and scalar Schur lemma below certify that algebra.
 
 The dimension is intentionally enormous and not advertised as a feasible
 numerical computation. Neither (10) nor any improved head sign is known.
+A whole-complement endpoint-jet lifting argument is now provided in
+WeilConductorThreeEndpointTail. It proves the smaller observation-space
+tail for N=7000000000,m=14, while still requiring its actual signed head.
 A much smaller practical bound would need genuinely directional
 source-specific residual estimates or the null-shift dual of the
 previous module. A positive sampled compression is not (10).

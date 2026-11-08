@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-07",
+  "local_attribution": "grwtsk contributors",
+  "math_baseline_commit": "403254f825950fcdc743fd3cd1043580b7689979",
+  "new_written_results": {
+    "countable_coverage_return": {
+      "arithmetic_sign": "NOT_SUPPLIED",
+      "carrier": "l1(N;R) with absolute-sum norm, distinct from physical L2",
+      "counterexample": "x=(3/2)delta0-(1/2)pi has Kx positive at every index while sum_(n>=1)x_n=-1/4",
+      "entire_tail": "sum_(n>=J)|x_n|<=d sum_(n>=J)|y_n|+(d-1)|sum x|2^(-J)",
+      "exact_inverse": "At k steps d=2^k: L_k=dI-(d-1)Pi; inverse norm exactly 2d-1",
+      "kernel": "K=(I+Pi)/2, Pi x=(sum x) pi, pi_n=2^(-n-1)"
+    },
+    "endpoint_jet_tail": {
+      "N": 7000000000,
+      "bound_B_used": "B<=100R, retaining the full prime factor two",
+      "carrier": "Complex physical Hilbert space L2((0,3),dt), isometric odd extension with E(f)=2||u||^2",
+      "complete_tail_square_upper": [
+        1,
+        24258639392831176704000000000
+      ],
+      "construction": "p0=t/T; pk double polynomial antiderivative adjusted to vanish at 0,T; orthogonal projection onto e1..eN,p0..p(m-1)",
+      "entire_high_norm_upper": [
+        25,
+        2599139934946197504
+      ],
+      "entire_mixed_norm_square_upper": [
+        8544921875,
+        1269111296360448
+      ],
+      "forward_test": "If the actual head inequality and separately recorded paid original-source comparison hold, Schur completion gives original relaxed finiteAnnulusValue>=-(6/25)E and PrimitiveStageLower chi3 hp hn 2",
+      "m": 14,
+      "missing_head_status": "UNPROVED",
+      "next_exact_missing_lemma": "P(A_b+(6/25)I)P>=(1/250)P on the specified physical head; in listed coordinates C>=(1/250)G",
+      "physical_head_dimension": 7000000014,
+      "scope": "Every unobserved physical mode and every source frequency in the entire interval; signed b allowed",
+      "source": "Original criticalAnnulus mask, sourceMultiplier and spectralFilter; angular dxi/(2pi); no sector or norm change"
+    },
+    "integrated_prime_source": {
+      "masked_source_absolute_moment": "For every measurable mask 0<=w<=1, B=integral_0^R |w(A-P)|<30R, using the original analytic gamma bound |A|<23",
+      "original_atom_inventory": "All p^e<=403, p prime distinct from 3, e>=1; exactly 93 atoms",
+      "radius": 3500000000,
+      "repaired_inference": "Prime half-mass<181/5 supplies |P|<362/5; the old unsupported |P|<181/5 inference is removed",
+      "source_normalization": "P(xi)=2 sum chi3(p^e) log(p)/sqrt(p^e) cos(xi log(p^e))",
+      "square_price_sum": [
+        19675,
+        1000
+      ],
+      "whole_frequency_absolute_moment": "integral_0^R |P| <7R",
+      "whole_frequency_second_moment": "integral_0^R P^2 <41R"
+    },
+    "lossless_interface": {
+      "analytic_obligations": "Source expressions and bound variables retain, and do not discharge, infinite-domain obligations",
+      "arbitrary_real_function_codec": "NOT_CLAIMED",
+      "domain": "Representable finite typed source/proof syntax and complete finite rational data, retaining source identities, dependent contexts and all errors",
+      "full_syntax_Lean_implementation": "NOT_RUN_NOT_CLAIMED",
+      "roundtrip": "decode(encode x)=some x; on encoder image decodeImage(encode x)=x",
+      "written_instance": "Constructor tags, lengths and recursive length-delimited children; structural induction proves roundtrip; explicit endpoint parameters instantiate a record"
+    }
+  },
+  "noe_jobs_dispatched": false,
+  "noe_skill_revision": "7d296238ef384288431b9c2b8c876349e6aa2554",
+  "original_targets": {
+    "GRH": "GRWTSK.NumberTheory.Conditional.DirichletGRH",
+    "RH": "Mathlib RiemannHypothesis; zeta zeros excluding 1 and negative even trivial zeros have real part 1/2",
+    "family": "Every complex Dirichlet character of every positive integer modulus, including principal and imprimitive characters; every actual LFunction zero in 0<Re(s)<1",
+    "other_L_function_families": "NOT_CLAIMED"
+  },
+  "primary_background": [
+    "https://dlmf.nist.gov/1.8",
+    "https://dlmf.nist.gov/1.14"
+  ],
+  "source_files": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeEndpointTail.lean",
+      "sha256": "3101e612b732943e227b6b2001df8b95aac7693dff27d9b0936b88356aabee7b"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreePrimeMoment.lean",
+      "sha256": "c11c8011ca0ce331b0ab20296ba21cdf5fd84b853bacbe5678fb0f7cbc8e95d3"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeAnnulusSineEnclosure.lean",
+      "sha256": "6f575e0a4d107799f670387f7d9f986b6cca55d3efbf70032fde5f4803dcc9d4"
+    }
+  ],
+  "unchanged_backward_branches": [
+    {
+      "id": "OddLiteralCofinal.StageLower j",
+      "required": "All stages, or a proved cofinal source-returning family",
+      "status": "UNPROVED_UNIVERSAL_SUPPLIER",
+      "type": "For every measurable real odd physical L2(dt) test supported a.e. in [-(j+1),j+1] with finite gamma energy: Q_zeta(f)>=-2^(-j) E(f), including original negative pole"
+    },
+    {
+      "id": "PrimitiveStageLower chi hp hn j",
+      "parameters": "All primitive nonprincipal complex characters, exact conductor and both gamma parities; physical Lebesgue L2",
+      "status": "UNPROVED_UNIVERSAL_SUPPLIER",
+      "type": "For every original DirichletStageChain.Admissible chi (j+1) f: primitiveArithmeticValue chi hp hn (j+1) (liftReal f)>=-2^(-j) E(f)"
+    },
+    {
+      "id": "SmallConductorStages chi hp hn",
+      "status": "UNPROVED_UNIVERSAL_SUPPLIER",
+      "type": "For every natural j with chi.conductor<conductorFrontier(j+1), the original PrimitiveStageLower at j"
+    },
+    {
+      "id": "PrimitiveNegativeWitness",
+      "status": "WRITTEN_COMPACT_FILTER_PROOF; NOT_A_NEW_LEAN_PROOF_TERM",
+      "type": "Every actual off-line open-strip zero of every primitive nonprincipal character produces T>0 and an original admissible real odd compact C2 test with strictly negative original arithmetic value"
+    }
+  ],
+  "verification": {
+    "DirichletGRH": "NOT_PROVED",
+    "RH": "NOT_PROVED",
+    "checked_declarations": {
+      "GRWTSK.NumberTheory.WeilQuadraticForm.ConductorThreeEndpointTail": [
+        "physicalTailSquare_exact",
+        "high_envelope_exact",
+        "mixed_square_envelope_exact",
+        "high_envelope_small",
+        "mixed_square_envelope_small",
+        "head_high_determinant_margin",
+        "physical_head_high_square"
+      ],
+      "GRWTSK.NumberTheory.WeilQuadraticForm.ConductorThreePrimeMoment": [
+        "complete_atom_count",
+        "complete_square_price_sum",
+        "every_square_price_small",
+        "no_exponent_tail",
+        "log_two_taylor_guard",
+        "complete_second_moment_guard",
+        "integrated_absolute_guard",
+        "improved_sine_head_guard"
+      ]
+    },
+    "continuum_analytic_formalization": "NOT_RUN",
+    "engine": "Lean 4.34.1, commit 5045d0056413266e57c625dcd7c365b10e377c52",
+    "finite_declaration_axiom_audit": "PASS; only propext, Classical.choice, Quot.sound",
+    "finite_head_sign": "NOT_PROVED",
+    "finite_source_typecheck_and_kernel_validation": "PASS for the two new modules",
+    "fresh_kernel_replay_of_entire_RH_GRH_dependency_cone": "NOT_RUN",
+    "independent_review": "AI agent checked mathematical derivations and source normalization; independent human review NOT_RUN",
+    "new_numerical_sign_evidence": "NONE",
+    "worldwide_novelty": "NOT_ASSESSED"
+  }
+}
