@@ -33,7 +33,7 @@ The new maintained source GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/Mo
 - the UNPROVED scalar calculus PROP TimeProfileRateOneIntegralTarget, deliberately separated from the classical arithmetic PROP;
 - originalRateOneLogPower_of_classical_and_integral, conditional on BOTH explicit source propositions and returning the preexisting OriginalBalancedPNTLogPowerTarget.
 
-Mathematical primary derivation: documentation/mathematics/_support/reviews/moebius-quantitative-mertens-absolute-abel-2026-11-01.md. Its finite first-moment inequality is sum_(k<=N)k*d_k(u)<=4 sqrt N. The sharp actual envelope satisfies, assuming |M(n)|<=C_A n/(1+log n)^A,
+Mathematical primary derivation: [Mertens–Abel derivation review](../../../reviews/moebius-quantitative-mertens-absolute-abel-2026-11-01.md). Its finite first-moment inequality is sum_(k<=N)k*d_k(u)<=4 sqrt N. The sharp actual envelope satisfies, assuming |M(n)|<=C_A n/(1+log n)^A,
 
   absMertensDropWave(floor exp u,u)
      <=2 exp(u/4)+4^(A+1)C_A exp(u/2)/(1+u)^A

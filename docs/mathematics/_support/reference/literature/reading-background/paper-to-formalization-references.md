@@ -1694,7 +1694,7 @@ Classification: three SOURCE_PROOF_CANDIDATE mathematical consumers.
 Native Lean 4.36.0-rc2 / Mathlib8fe7ce475b056f0b266d7107893f2c4d772c712f remain
 isolated. Compilation, fresh independent replay, complete transitive axiom audit
 and three expected-type checks are NOT_RUN. Source/API review found no concrete
-issue; it is not proof acceptance. Exact target/profile/TOML: `documentation/mathematics/_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.*`.
+issue; it is not proof acceptance. Exact target/profile/TOML: `docs/mathematics/_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.*` ([JSON target](../../../../_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.json)).
 A root 4.34.1 version-compatible integration remains unsupplied. Local attribution:
 grwtsk contributors.
 
@@ -1772,7 +1772,7 @@ map is supplied.
 Exact native Lean4.35.0-rc4/Mathlib 1f414401f69059aa7eead47b53ee40bd38455eeb
 remain isolated, and the root 4.34.1 version comparison is unsupplied. Original
 E8SeparationConsumers source blob eb8fb5c074c24ffea08577deb37c14232b5430fd is unchanged.
-The target/profile/TOML is `documentation/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.*`, with complete compiler-owned roots and
+The target/profile/TOML is `docs/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.*` ([JSON target](../../../../_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.json)), with complete compiler-owned roots and
 three exact type consumers. Classification: SOURCE_PROOF_CANDIDATE. Compilation,
 fresh independent replay, complete axiom audit and type checks are NOT_RUN;
 source/API/profile cross-review is not acceptance. Local attribution: grwtsk contributors.
@@ -1825,7 +1825,7 @@ retains local MIT attribution. A checked root-version integration remains separa
 
 Native Lean 4.33.0-rc2 and Mathlib 51e6992efd06126df61a496bebf8f49482a4e129
 remain exact and isolated, with no 4.33.1 substitution. The target/profile/TOML is
-`documentation/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/anthropic-primitive-zero-readouts-20261029.*`; two exact required compiler-owned roots/types retain the public
+`docs/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/anthropic-primitive-zero-readouts-20261029.*` ([JSON target](../../../../_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/anthropic-primitive-zero-readouts-20261029.json)); two exact required compiler-owned roots/types retain the public
 A/q/Typeu/family order. Compilation, expected-interface elaboration, Comparator,
 fresh independent replay and full transitive axiom audit are NOT_RUN. A project-only
 admission scan and source/API cross-review are not native proof acceptance.
@@ -3280,9 +3280,9 @@ Publication reconciliation: original three Lean blobs from #1457 are unchanged. 
 | `GRWTSK/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/CompactOrthonormalEigenvalueLimit.lean` | `9dab6f976aa32811df7467c260edbd4d9cece868` |
 | `GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/WilsonSlicePositiveEigenpairs.lean` | `73983c321e797b21d739373fc22fe1715ddf0c4c` |
 
-Passive target: documentation/mathematics/_verification/targets/finite-su2-positive-eigenpairs.json. The target records exact source/control/import/context pins and passive future acceptance scope; it is not an execution receipt or dispatch.
+Passive target: [finite SU(2) positive-eigenpair target](../../../../_verification/targets/finite-su2-positive-eigenpairs.json). The target records exact source/control/import/context pins and passive future acceptance scope; it is not an execution receipt or dispatch.
 
-Publication reconciliation against complete main `243ae7ed8167e4c6b4afdfdca50c5388e66961e4`, tree `b7b7fa3e1cda8b956a90674b0ddd8210c51b9f69`: all61 inherited source blobs match; all six recovery Lean blobs are unchanged. Current ledger prefix and concurrent full-tree work are preserved. The current layout control is rebound in both passive targets. No proof execution or verification dispatch; compilation, fresh kernel replay and transitive axiom audit remain NOT_RUN throughout. Publication account: grwtsk, explicitly selected by the user.
+Recorded publication reconciliation against complete main `243ae7ed8167e4c6b4afdfdca50c5388e66961e4`, tree `b7b7fa3e1cda8b956a90674b0ddd8210c51b9f69`: all61 inherited source blobs match; all six recovery Lean blobs are unchanged. Current ledger prefix and concurrent full-tree work are preserved. The current layout control is rebound in both passive targets. No proof execution or verification dispatch; compilation, fresh kernel replay and transitive axiom audit remain NOT_RUN throughout. Publication account: grwtsk, explicitly selected by the user.
 
 
 ## 3Blue1Brown: actual exponential quotient topology
