@@ -1,10 +1,11 @@
 /- Copyright (c) 2026 grwtsk contributors. MIT.
-Source-proof candidate: the module elaborates with its current import chain.
-Fresh separate kernel replay and independent mathematical review NOT_RUN.
-See issue #1784 for exact-source checks and scoped axiom observations.
+Mathematical source candidate. See issue #1784 for exact-source elaboration,
+kernel replay, axiom and independent-review scopes. Historical checks are not
+implicitly transferred to revised bytes.
 -/
 import GRWTSK.Combinatorics.GraphTheory.FinitePositiveWordMagnusSeparation
 import Mathlib.GroupTheory.FreeGroup.Basic
+import Mathlib.CategoryTheory.Groupoid.FreeGroupoid
 import Mathlib
 
 /-!
@@ -321,12 +322,13 @@ by head merging, preserving the free-group class at every step; nonidentity
 excludes the empty output. General separation now has neither supplier as a
 hypothesis. No `sorry`, additional axiom or accepting instance supplies a gap.
 Full-module elaboration includes both unconditional separation consumers.
-Fresh separate kernel replay and independent analytical review remain NOT_RUN.
-Issue #1784 records the exact-source checks and selected transitive axiom audit;
+Issue #1784 records source-pinned kernel replay, review, and axiom evidence;
+those dispositions do not transfer automatically to later extensions. In particular,
 these are distinct from independent review and novelty, which is not claimed.
 The unused clock-memory no-wrap module is outside this formal dependency cone.
-Spanning-tree/fundamental-group return and index-two cover towers remain outside
-this change; no graph-level residual-2 theorem is inferred from the bouquet map.
+The later `SpanningTree` and `CoverTower` namespaces supply the combinatorial
+bridge and degree-two tower under an explicit rooted spanning-tree presentation.
+No geometric-realization or topological fundamental-group comparison is assumed.
 -/
 
 namespace TruncatedMagnus
@@ -1178,3 +1180,718 @@ end MagnusVoltageReturn
 
 end InverseEdgeVoltage
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy
+
+/-!
+# Rooted spanning-tree return and finite index-two graph-cover towers
+
+Mathematical consumer: the existing typed `Path`, its formal inverse edges,
+Mathlib's actual `Quiver.FreeGroupoid` cancellation quotient, and the Magnus
+separation proved above. Source request: https://github.com/grwtsk/math/issues/1784.
+The earlier unconditional Magnus source is pinned at
+ae0f6cd3b374e3520a3980271d704b865c897116; its checks keep their historical scope.
+
+## Exact hypotheses and primary argument
+
+A supplied `SpanningTree.RootedTree V` consists of a root, parent map and natural
+rank strictly decreasing toward the parent at every nonroot vertex. Its tree
+has one forward branch from parent(v) to v for every nonroot v; formal backward
+traversal uses that SAME edge. Additional chords have their specified endpoints.
+For an arbitrary original dependent edge family E, the bridge requires an
+endpoint-by-endpoint bijection from E to this tree-plus-chords presentation.
+This is actual spanning-tree/edge decomposition data, not an assumed free-group
+isomorphism, not a supplied separation certificate, and not merely vertex labels.
+No finiteness of V, E or the chord alphabet is assumed. DecidableEq on the chord
+alphabet is required only at the computational Magnus consumer.
+
+The source combinatorial based fundamental group is `OriginalLoop E root`,
+whose arrows are loops in Mathlib's actual free groupoid of E. Multiplication is
+chronological composition. The code functor kills tree edges and sends chords
+to the canonical free generators. `SingleObj` reverses multiplication, so an
+explicit `MulOpposite` pays the orientation convention. Parent recursion builds
+root-to-vertex connectors. The decoder sends a chord to its connector/edge/
+inverse-connector loop. Free-groupoid induction proves, for EVERY morphism f,
+that decoding its word equals connector(source) ≫ f ≫ inverse connector(target).
+The tree cases follow from the connector recursion; composition cancels the
+middle connector; inverse cases use actual groupoid inverses. This proves both
+inverse laws, not just a surjective encoding. Edge bijections induce inverse
+free-groupoid functors, yielding `originalLoopEquiv` for the ACTUAL original E.
+The raw path maps are also two-sided inverses: no recorded inverse event is lost.
+`original_holonomy` compares the original voltage to the encoded path exactly.
+
+For a finite group of order 2^m, the subgroup extension theorem constructs nested
+H_0,...,H_m with H_0=bot, H_m=top and |H_i|=2^i. Lagrange gives relative index two;
+normality INSIDE the next subgroup follows from index two. Global normality in G
+is neither assumed nor asserted. Sheets are the LEFT coset sets G/H_i. To match
+the existing RIGHT sheet update g ↦ g*u, the transport is inverse-left action
+q ↦ u⁻¹ • q, with the exact comparison q=[g⁻¹]. This action is well-defined even
+for nonnormal H_i. The natural coset projection commutes with every transport.
+Its fiber is explicitly equivalent to H_(i+1)/(H_i subgroupOf H_(i+1)), so has
+cardinality two. The same holds for every vertex fiber, without finite V.
+Incoming and outgoing target/source lifts are unique over each original edge;
+proof irrelevance makes an edge with fixed original witness and endpoints unique.
+At the top, vertex and edge equivalences recover the base graph. At the bottom,
+`bottom_regular_endpoint` compares with the EXISTING regular voltage cover.
+`erase_liftPath` retains the entire original history at every level.
+
+`separating_covering_tower` composes the proved source loop equivalence, Magnus
+separation and the subgroup series. A nonidentity source free-groupoid class
+moves every bottom sheet; the tower has positive length and every transition
+has exactly two preimages per vertex, with unique edge lifts. A nonempty but
+cancellable history is correctly excluded by the NONIDENTITY-CLASS hypothesis.
+A trivial finite group admits the zero-length series, but cannot satisfy that
+separation hypothesis. Parallel edges, loops and nonadjacent repeated chord
+labels are retained. The subgroup cardinal argument is an additional check of
+the degree count; it is not claimed to be an independent proof of Magnus.
+
+## Boundaries and evidence
+
+This is a combinatorial graph-cover theorem with an explicit supplied rooted
+tree presentation. It does not construct that presentation from a bare
+connectedness predicate on an arbitrary undirected graph, and it does not
+identify the free groupoid with the topological fundamental group of a geometric
+realization. Those are separate adapters, not hidden hypotheses proved here.
+Finite-sheet covers may be disconnected when voltages do not generate the full
+chosen codomain; connected intermediate covers are not claimed. No invariant
+unmarked holonomy observation, novel residual theorem or physical transfer is
+asserted. Independent mathematical review of this EXTENSION is NOT_RUN.
+Exact elaboration, replay and axiom-audit scopes are recorded in issue #1784.
+-/
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.CoverTower
+open scoped BigOperators
+variable {G : Type*} [Group G] [Finite G]
+/-- A nested order-doubling subgroup series. No global normality is assumed. -/
+theorem exists_series (n : ℕ) (hG : Nat.card G = 2 ^ n) :
+    ∃ H : Fin (n+1) → Subgroup G,
+      H 0 = ⊥ ∧ H (Fin.last n) = ⊤ ∧
+      (∀ i, Nat.card (H i) = 2 ^ i.val) ∧
+      (∀ i : Fin n, H i.castSucc ≤ H i.succ) := by
+  have aux : ∀ k, k ≤ n → ∃ H : Fin (k+1) → Subgroup G,
+      H 0 = ⊥ ∧ (∀ i, Nat.card (H i) = 2 ^ i.val) ∧
+      (∀ i : Fin k, H i.castSucc ≤ H i.succ) := by
+    intro k
+    induction k with
+    | zero =>
+      intro hk
+      exact ⟨fun _ => ⊥, rfl, by intro i; change Nat.card (⊥ : Subgroup G) = 2 ^ i.val; rw [show i.val = 0 by omega]; simp, by intro i; exact Fin.elim0 i⟩
+    | succ k ih =>
+      intro hk
+      obtain ⟨H, h0, hcard, hle⟩ := ih (by omega)
+      obtain ⟨K, hK, hHK⟩ := Sylow.exists_subgroup_card_pow_succ
+        (p := 2) (n := k) (G := G) (by rw [hG]; exact pow_dvd_pow 2 hk) (hcard (Fin.last k))
+      let H' : Fin (k+2) → Subgroup G := Fin.lastCases K H
+      refine ⟨H', ?_, ?_, ?_⟩
+      · exact (Fin.lastCases_castSucc (n := k+1) (motive := fun _ => Subgroup G) (last := K) (cast := H) (0 : Fin (k+1))).trans h0
+      · intro i
+        refine Fin.lastCases ?_ (fun j => ?_) i
+        · simpa [H'] using hK
+        · simpa [H'] using hcard j
+      · intro i
+        refine Fin.lastCases ?_ (fun j => ?_) i
+        · simpa [H'] using hHK
+        · simpa only [H', Fin.succ_castSucc, Fin.lastCases_castSucc] using hle j
+  obtain ⟨H,h0,hcard,hle⟩ := aux n le_rfl
+  refine ⟨H,h0,?_,hcard,hle⟩
+  apply Subgroup.eq_top_of_card_eq
+  simpa [hG] using hcard (Fin.last n)
+
+lemma step_index {H K : Subgroup G} (h : H ≤ K) (k : ℕ)
+    (hH : Nat.card H = 2 ^ k) (hK : Nat.card K = 2 ^ (k+1)) :
+    (H.subgroupOf K).index = 2 := by
+  have hc : Nat.card (H.subgroupOf K) = Nat.card H :=
+    Nat.card_congr (Subgroup.subgroupOfEquivOfLe h).toEquiv
+  have hm := (H.subgroupOf K).card_mul_index
+  rw [hc,hH,hK,pow_succ] at hm
+  exact Nat.eq_of_mul_eq_mul_left (by positivity : 0 < 2 ^ k) hm
+/-- Left cosets, with inverse-left transport representing the existing RIGHT
+sheet multiplication. No subgroup normality is needed. -/
+def transport (H : Subgroup G) (u : G) (q : G ⧸ H) : G ⧸ H := u⁻¹ • q
+lemma transport_mk (H : Subgroup G) (u g : G) :
+    transport H u (QuotientGroup.mk g) = QuotientGroup.mk (u⁻¹ * g) := rfl
+lemma transport_mul (H : Subgroup G) (u v : G) (q : G ⧸ H) :
+    transport H v (transport H u q) = transport H (u*v) q := by
+  simp [transport, mul_smul]
+lemma project_transport {H K : Subgroup G} (h : H ≤ K) (u : G) (q : G ⧸ H) :
+    Subgroup.quotientMapOfLE h (transport H u q) =
+      transport K u (Subgroup.quotientMapOfLE h q) := by
+  induction q using Quotient.inductionOn' with
+  | h g => rfl
+
+noncomputable def projectionFiberEquiv {H K : Subgroup G} (h : H ≤ K) (q : G ⧸ K) :
+    {x : G ⧸ H // Subgroup.quotientMapOfLE h x = q} ≃ K ⧸ H.subgroupOf K where
+  toFun x := (Subgroup.quotientEquivProdOfLE h x.val).2
+  invFun z := ⟨(Subgroup.quotientEquivProdOfLE h).symm (q,z), by
+    change (Subgroup.quotientEquivProdOfLE h ((Subgroup.quotientEquivProdOfLE h).symm (q,z))).1 = q
+    rw [Equiv.apply_symm_apply]⟩
+  left_inv x := by
+    apply Subtype.ext
+    have hx : (Subgroup.quotientEquivProdOfLE h x.val).1 = q := x.property
+    change (Subgroup.quotientEquivProdOfLE h).symm (q, (Subgroup.quotientEquivProdOfLE h x.val).2) = x.val
+    calc
+      _ = (Subgroup.quotientEquivProdOfLE h).symm ((Subgroup.quotientEquivProdOfLE h x.val).1, (Subgroup.quotientEquivProdOfLE h x.val).2) :=
+        congrArg (fun z => (Subgroup.quotientEquivProdOfLE h).symm (z, (Subgroup.quotientEquivProdOfLE h x.val).2)) hx.symm
+      _ = _ := (Subgroup.quotientEquivProdOfLE h).symm_apply_apply x.val
+  right_inv z := by
+    change (Subgroup.quotientEquivProdOfLE h ((Subgroup.quotientEquivProdOfLE h).symm (q,z))).2 = z
+    exact congrArg Prod.snd ((Subgroup.quotientEquivProdOfLE h).apply_symm_apply (q,z))
+
+lemma projection_two {H K : Subgroup G} (h : H ≤ K)
+    (hi : (H.subgroupOf K).index = 2) (q : G ⧸ K) :
+    Nat.card {x : G ⧸ H // Subgroup.quotientMapOfLE h x = q} = 2 := by
+  rw [Nat.card_congr (projectionFiberEquiv h q)]
+  exact hi
+
+structure TwoSeries (G : Type*) [Group G] where
+  length : ℕ
+  subgroup : Fin (length+1) → Subgroup G
+  first : subgroup 0 = ⊥
+  last : subgroup (Fin.last length) = ⊤
+  le_step : ∀ i : Fin length, subgroup i.castSucc ≤ subgroup i.succ
+  index_step : ∀ i : Fin length, ((subgroup i.castSucc).subgroupOf (subgroup i.succ)).index = 2
+
+theorem exists_twoSeries (hp : IsPGroup 2 G) : Nonempty (TwoSeries G) := by
+  obtain ⟨n, hn⟩ := (IsPGroup.iff_card (p := 2) (G := G)).mp hp
+  obtain ⟨H,h0,hend,hcard,hle⟩ := exists_series n hn
+  refine ⟨⟨n,H,h0,hend,hle,?_⟩⟩
+  intro i
+  exact step_index (hle i) i.val (hcard i.castSucc) (hcard i.succ)
+lemma TwoSeries.step_normal (S : TwoSeries G) (i : Fin S.length) :
+    ((S.subgroup i.castSucc).subgroupOf (S.subgroup i.succ)).Normal :=
+  Subgroup.normal_of_index_eq_two (S.index_step i)
+lemma TwoSeries.two_fibers (S : TwoSeries G) (i : Fin S.length) (q : G ⧸ S.subgroup i.succ) :
+    Nat.card {x : G ⧸ S.subgroup i.castSucc // Subgroup.quotientMapOfLE (S.le_step i) x = q} = 2 :=
+  projection_two (S.le_step i) (S.index_step i) q
+
+section GraphCover
+variable {V : Type*} (E : V → V → Type*) (U : ∀ {a b}, E a b → G)
+structure Edge (H : Subgroup G) (x y : V × (G ⧸ H)) where
+  original : E x.1 y.1
+  target_eq : transport H (U original) x.2 = y.2
+
+def liftEdge (H : Subgroup G) {a b : V} (e : E a b) (q : G ⧸ H) :
+    Edge E U H (a,q) (b,transport H (U e) q) := ⟨e,rfl⟩
+def erasePath (H : Subgroup G) {x y : V × (G ⧸ H)} :
+    Path (Edge E U H) x y → Path E x.1 y.1
+  | .refl _ => .refl _
+  | .cons e rest => .cons e.original (erasePath H rest)
+noncomputable def liftPath (H : Subgroup G) {a b : V} (p : Path E a b) (q : G ⧸ H) :
+    Σ r : G ⧸ H, Path (Edge E U H) (a,q) (b,r) :=
+  match p with
+  | .refl a => ⟨q,.refl _⟩
+  | .cons e rest =>
+    let tail := liftPath H rest (transport H (U e) q)
+    ⟨tail.1, .cons (liftEdge E U H e q) tail.2⟩
+lemma lift_endpoint (H : Subgroup G) {a b : V} (p : Path E a b) (q : G ⧸ H) :
+    (liftPath E U H p q).1 = transport H (Path.holonomy U p) q := by
+  induction p generalizing q with
+  | refl a => simp [liftPath,Path.holonomy,transport]
+  | cons e rest ih =>
+    simpa [liftPath,Path.holonomy,transport_mul] using ih (transport H (U e) q)
+lemma erase_liftPath (H : Subgroup G) {a b : V} (p : Path E a b) (q : G ⧸ H) :
+    erasePath E U H (liftPath E U H p q).2 = p := by
+  induction p generalizing q with
+  | refl a => rfl
+  | cons e rest ih => simp [liftPath,erasePath,liftEdge,ih]
+
+def projectVertex {H K : Subgroup G} (h : H ≤ K) (x : V × (G ⧸ H)) : V × (G ⧸ K) :=
+  (x.1,Subgroup.quotientMapOfLE h x.2)
+def projectEdge {H K : Subgroup G} (h : H ≤ K) {x y : V × (G ⧸ H)} (e : Edge E U H x y) :
+    Edge E U K (projectVertex h x) (projectVertex h y) :=
+  ⟨e.original, by
+    have ht := congrArg (Subgroup.quotientMapOfLE h) e.target_eq
+    rw [project_transport] at ht
+    exact ht⟩
+/-- Every edge of the coarser cover has exactly one outgoing target over a
+specified finer starting sheet. The original edge witness is unchanged. -/
+lemma outgoing_lift_unique {H K : Subgroup G} (h : H ≤ K) {a b : V}
+    (q : G ⧸ H) (r : G ⧸ K) (e : Edge E U K (a,Subgroup.quotientMapOfLE h q) (b,r)) :
+    ∃! s : G ⧸ H, Subgroup.quotientMapOfLE h s = r ∧ transport H (U e.original) q = s := by
+  refine ⟨transport H (U e.original) q, ⟨?_,rfl⟩, ?_⟩
+  · rw [project_transport]
+    exact e.target_eq
+  · intro s hs
+    exact hs.2.symm
+lemma incoming_lift_unique {H K : Subgroup G} (h : H ≤ K) {a b : V}
+    (q : G ⧸ H) (r : G ⧸ K) (e : Edge E U K (a,r) (b,Subgroup.quotientMapOfLE h q)) :
+    ∃! s : G ⧸ H, Subgroup.quotientMapOfLE h s = r ∧ transport H (U e.original) s = q := by
+  refine ⟨transport H (U e.original)⁻¹ q, ⟨?_,?_⟩, ?_⟩
+  · rw [project_transport]
+    have hh := congrArg (transport K (U e.original)⁻¹) e.target_eq
+    simpa [transport_mul,transport] using hh.symm
+  · simp [transport_mul,transport]
+  · intro s hs
+    have hh := congrArg (transport H (U e.original)⁻¹) hs.2
+    simpa [transport_mul,transport] using hh
+
+lemma bottom_separates {a : V} (p : Path E a a) (hu : Path.holonomy U p ≠ 1) (q : G ⧸ (⊥ : Subgroup G)) :
+    (liftPath E U ⊥ p q).1 ≠ q := by
+  rw [lift_endpoint]
+  induction q using Quotient.inductionOn' with
+  | h g =>
+    intro he
+    have hh := congrArg (QuotientGroup.quotientEquivSelf G) he
+    change (Path.holonomy U p)⁻¹ * g = g at hh
+    have hz : (Path.holonomy U p)⁻¹ = 1 := mul_right_cancel (hh.trans (one_mul g).symm)
+    exact hu (inv_eq_one.mp hz)
+/-- The bottom coordinate is the inverse of the existing regular-cover sheet. -/
+lemma bottom_regular_endpoint {a b : V} (p : Path E a b) (g : G) :
+    (liftPath E U ⊥ p (QuotientGroup.mk g⁻¹)).1 =
+      QuotientGroup.mk ((VoltageCover.liftPath E U p g).1)⁻¹ := by
+  rw [lift_endpoint, VoltageCover.lift_endpoint, transport_mk, mul_inv_rev]
+local instance : Subsingleton (G ⧸ (⊤ : Subgroup G)) := QuotientGroup.subsingleton_quotient_top
+lemma top_sheet_unique (q r : G ⧸ (⊤ : Subgroup G)) : q = r := Subsingleton.elim _ _
+@[ext] lemma Edge.ext {H : Subgroup G} {x y : V × (G ⧸ H)} {e f : Edge E U H x y}
+    (h : e.original = f.original) : e = f := by
+  cases e; cases f; cases h; rfl
+noncomputable def topVertexEquiv : V × (G ⧸ (⊤ : Subgroup G)) ≃ V where
+  toFun := Prod.fst
+  invFun v := (v,QuotientGroup.mk 1)
+  left_inv p := Prod.ext rfl (Subsingleton.elim _ _)
+  right_inv _ := rfl
+noncomputable def topEdgeEquiv (a b : V) (q r : G ⧸ (⊤ : Subgroup G)) :
+    Edge E U ⊤ (a,q) (b,r) ≃ E a b where
+  toFun e := e.original
+  invFun e := ⟨e,Subsingleton.elim _ _⟩
+  left_inv _ := Edge.ext E U rfl
+  right_inv _ := rfl
+noncomputable def vertexFiberEquiv {H K : Subgroup G} (h : H ≤ K) (v : V) (q : G ⧸ K) :
+    {x : V × (G ⧸ H) // projectVertex h x = (v,q)} ≃
+      {s : G ⧸ H // Subgroup.quotientMapOfLE h s = q} where
+  toFun x := ⟨x.val.2,congrArg Prod.snd x.property⟩
+  invFun s := ⟨(v,s.val),Prod.ext rfl s.property⟩
+  left_inv x := Subtype.ext (Prod.ext (congrArg Prod.fst x.property).symm rfl)
+  right_inv _ := Subtype.ext rfl
+lemma vertex_degree_two (S : TwoSeries G) (i : Fin S.length) (v : V) (q : G ⧸ S.subgroup i.succ) :
+    Nat.card {x : V × (G ⧸ S.subgroup i.castSucc) // projectVertex (S.le_step i) x = (v,q)} = 2 := by
+  rw [Nat.card_congr (vertexFiberEquiv (S.le_step i) v q)]
+  exact S.two_fibers i q
+
+end GraphCover
+
+lemma TwoSeries.length_pos_of_ne_one (S : TwoSeries G) (g : G) (hg : g ≠ 1) : 0 < S.length := by
+  by_contra hn
+  have hz : S.length = 0 := by omega
+  have hi : Fin.last S.length = 0 := Fin.ext hz
+  have ht : S.subgroup 0 = ⊤ := by simpa only [hi] using S.last
+  have hbt : (⊥ : Subgroup G) = ⊤ := S.first.symm.trans ht
+  apply hg
+  apply Subgroup.mem_bot.mp
+  rw [hbt]
+  trivial
+
+/-- Every Magnus separator has a nonempty index-two coset-cover tower. -/
+theorem magnus_series {A : Type*} [DecidableEq A] (w : FreeGroup A) (hw : w ≠ 1) :
+    ∃ (n : ℕ) (target : Fin n → A) (S : TwoSeries (TruncatedMagnus.Group n)),
+      0 < S.length ∧ TruncatedMagnus.representation target w ≠ 1 := by
+  obtain ⟨n,target,hs⟩ := TruncatedMagnus.separates_nonidentity w hw
+  obtain ⟨S⟩ := exists_twoSeries (TruncatedMagnus.isTwoGroup n)
+  exact ⟨n,target,S,S.length_pos_of_ne_one _ hs,hs⟩
+
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.CoverTower
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+open CategoryTheory
+attribute [local instance] Classical.propDecidable
+universe u v
+/-- A rooted spanning arborescence with well-founded parent chains. -/
+structure RootedTree (V : Type u) where
+  root : V
+  parent : V → V
+  height : V → ℕ
+  lower : ∀ x, x ≠ root → height (parent x) < height x
+
+variable {V : Type u} (T : RootedTree V) {C : Type v} (ends : C → V × V)
+/-- One oriented tree edge per nonroot vertex, plus the actual labelled chords.
+Formal reverse traversal is supplied by the free groupoid, not a second edge. -/
+inductive Edge : V → V → Type (max u v) where
+  | branch (x : V) (h : x ≠ T.root) : Edge (T.parent x) x
+  | chord (c : C) : Edge (ends c).1 (ends c).2
+
+def Vertex (_T : RootedTree V) (_ends : C → V × V) := V
+instance : Quiver (Vertex T ends) := ⟨Edge T ends⟩
+abbrev obj (x : V) : Quiver.FreeGroupoid (Vertex T ends) := (Quiver.FreeGroupoid.of (Vertex T ends)).obj x
+abbrev edge {x y : V} (e : Edge T ends x y) : obj T ends x ⟶ obj T ends y :=
+  (Quiver.FreeGroupoid.of (Vertex T ends)).map e
+
+noncomputable def connector (x : V) : obj T ends T.root ⟶ obj T ends x :=
+  if h : x = T.root then eqToHom (congrArg (obj T ends) h.symm)
+  else connector (T.parent x) ≫ edge T ends (.branch x h)
+termination_by T.height x
+decreasing_by exact T.lower x h
+
+@[simp] lemma connector_root : connector T ends T.root = 𝟙 _ := by
+  rw [connector, dif_pos rfl]
+  rfl
+lemma connector_branch (x : V) (h : x ≠ T.root) :
+    connector T ends (T.parent x) ≫ edge T ends (.branch x h) = connector T ends x := by
+  conv_rhs => rw [connector, dite_eq_right h]
+
+/-- Opposite multiplication compensates for SingleObj's reversed composition. -/
+def codePrefunctor : Vertex T ends ⥤q SingleObj ((FreeGroup C)ᵐᵒᵖ) where
+  obj _ := SingleObj.star _
+  map {x y} e := match e with
+    | .branch _ _ => MulOpposite.op 1
+    | .chord c => MulOpposite.op (FreeGroup.of c)
+noncomputable def wordFunctor : Quiver.FreeGroupoid (Vertex T ends) ⥤ SingleObj ((FreeGroup C)ᵐᵒᵖ) :=
+  Quiver.FreeGroupoid.lift (codePrefunctor T ends)
+noncomputable def word {x y : Quiver.FreeGroupoid (Vertex T ends)} (f : x ⟶ y) : FreeGroup C :=
+  MulOpposite.unop ((wordFunctor T ends).map f)
+@[simp] lemma word_id (x : Quiver.FreeGroupoid (Vertex T ends)) : word T ends (𝟙 x) = 1 := by
+  simp only [word, CategoryTheory.Functor.map_id]
+  rfl
+lemma word_comp {x y z : Quiver.FreeGroupoid (Vertex T ends)} (f : x ⟶ y)
+    (g : y ⟶ z) : word T ends (f ≫ g) = word T ends f * word T ends g := by
+  simp only [word, Functor.map_comp]
+  rfl
+lemma word_inv {x y : Quiver.FreeGroupoid (Vertex T ends)} (f : x ⟶ y) :
+    word T ends (inv f) = (word T ends f)⁻¹ := by
+  simp only [word, Functor.map_inv]
+  rw [SingleObj.inv_as_inv]
+  rfl
+lemma word_edge {x y : V} (e : Edge T ends x y) :
+    word T ends (edge T ends e) = match e with
+      | .branch _ _ => 1
+      | .chord c => FreeGroup.of c := by
+  have h := congrArg (fun F : Vertex T ends ⥤q SingleObj ((FreeGroup C)ᵐᵒᵖ) => F.map e)
+    (Quiver.FreeGroupoid.lift_spec (codePrefunctor T ends))
+  cases e <;> exact congrArg MulOpposite.unop h
+lemma word_connector (x : V) : word T ends (connector T ends x) = 1 := by
+  rw [connector]
+  split_ifs with h
+  · subst x; simp
+  · rw [word_comp, word_edge, word_connector (T.parent x), mul_one]
+termination_by T.height x
+decreasing_by exact T.lower x h
+
+structure Loop where
+  hom : obj T ends T.root ⟶ obj T ends T.root
+@[ext] lemma Loop.ext {p q : Loop T ends} (h : p.hom = q.hom) : p = q := by cases p; cases q; cases h; rfl
+noncomputable instance : Group (Loop T ends) where
+  mul p q := ⟨p.hom ≫ q.hom⟩
+  one := ⟨𝟙 _⟩
+  inv p := ⟨inv p.hom⟩
+  mul_assoc p q r := Loop.ext T ends (Category.assoc _ _ _)
+  one_mul p := Loop.ext T ends (Category.id_comp _)
+  mul_one p := Loop.ext T ends (Category.comp_id _)
+  inv_mul_cancel p := Loop.ext T ends (IsIso.inv_hom_id _)
+noncomputable def loopWord : Loop T ends →* FreeGroup C where
+  toFun p := word T ends p.hom
+  map_one' := word_id T ends _
+  map_mul' p q := word_comp T ends _ _
+noncomputable def chordLoop (c : C) : Loop T ends :=
+  ⟨connector T ends (ends c).1 ≫ edge T ends (.chord c) ≫ inv (connector T ends (ends c).2)⟩
+noncomputable def decode : FreeGroup C →* Loop T ends := FreeGroup.lift (chordLoop T ends)
+lemma word_chordLoop (c : C) : loopWord T ends (chordLoop T ends c) = FreeGroup.of c := by
+  simp [loopWord,chordLoop,word_comp,word_inv,word_connector,word_edge]
+lemma word_decode (w : FreeGroup C) : loopWord T ends (decode T ends w) = w := by
+  have h : (loopWord T ends).comp (decode T ends) = MonoidHom.id _ := by
+    apply FreeGroup.ext_hom
+    intro c
+    simp [decode, word_chordLoop]
+  exact congrArg (fun f : FreeGroup C →* FreeGroup C => f w) h
+
+noncomputable def connectorObj (x : Quiver.FreeGroupoid (Vertex T ends)) :
+    obj T ends T.root ⟶ x := connector T ends x.as
+
+lemma branch_loop (v : V) (hv : v ≠ T.root) :
+    connector T ends (T.parent v) ≫ edge T ends (.branch v hv) ≫ inv (connector T ends v) = 𝟙 _ := by
+  rw [← Category.assoc,connector_branch]
+  simp
+lemma inverse_branch_loop (v : V) (hv : v ≠ T.root) :
+    connector T ends v ≫ inv (edge T ends (.branch v hv)) ≫ inv (connector T ends (T.parent v)) = 𝟙 _ := by
+  rw [← connector_branch T ends v hv]
+  simp [Category.assoc]
+
+set_option backward.isDefEq.respectTransparency false in
+lemma decode_word {x y : Quiver.FreeGroupoid (Vertex T ends)} (f : x ⟶ y) :
+    (decode T ends (word T ends f)).hom =
+      connectorObj T ends x ≫ f ≫ inv (connectorObj T ends y) := by
+  induction f using Quiver.FreeGroupoid.hom_rec with
+  | of_map e =>
+    cases e using Edge.casesOn with
+    | branch v hv =>
+      rw [word_edge T ends,map_one]
+      exact (branch_loop T ends _ hv).symm
+    | chord c =>
+      rw [word_edge T ends]
+      simp only [decode, FreeGroup.lift_apply_of]
+      rfl
+  | inv_of_map e =>
+    rw [word_inv]
+    cases e using Edge.casesOn with
+    | branch v hv =>
+      rw [word_edge T ends,inv_one,map_one]
+      exact (inverse_branch_loop T ends _ hv).symm
+    | chord c =>
+      rw [word_edge T ends, map_inv]
+      simp only [decode, FreeGroup.lift_apply_of]
+      change inv (connector T ends (ends c).1 ≫ edge T ends (.chord c) ≫ inv (connector T ends (ends c).2)) = connector T ends (ends c).2 ≫ inv (edge T ends (.chord c)) ≫ inv (connector T ends (ends c).1)
+      simp
+  | id x =>
+    rw [word_id, map_one]
+    change 𝟙 _ = connector T ends x ≫ 𝟙 _ ≫ inv (connector T ends x)
+    simp
+  | comp f g ihf ihg =>
+    rw [word_comp, map_mul]
+    change (decode T ends (word T ends f)).hom ≫ (decode T ends (word T ends g)).hom = _
+    rw [ihf, ihg]
+    simp [Category.assoc]
+
+noncomputable def loopEquiv : Loop T ends ≃* FreeGroup C where
+  toFun := loopWord T ends
+  invFun := decode T ends
+  left_inv p := by
+    apply Loop.ext T ends
+    change (decode T ends (word T ends p.hom)).hom = p.hom
+    have h := decode_word T ends p.hom
+    change (decode T ends (word T ends p.hom)).hom = connector T ends T.root ≫ p.hom ≫ inv (connector T ends T.root) at h
+    simpa [connector_root] using h
+  right_inv := word_decode T ends
+  map_mul' := (loopWord T ends).map_mul
+
+noncomputable def orientedClass {a b : V} : OrientedEdge (E := Edge T ends) a b → (obj T ends a ⟶ obj T ends b)
+  | .forward e => edge T ends e
+  | .backward e => inv (edge T ends e)
+noncomputable def pathClass {a b : V} : Path (OrientedEdge (E := Edge T ends)) a b → (obj T ends a ⟶ obj T ends b)
+  | .refl _ => 𝟙 _
+  | .cons e p => orientedClass T ends e ≫ pathClass p
+lemma pathClass_append {a b c : V} (p : Path (OrientedEdge (E := Edge T ends)) a b)
+    (q : Path (OrientedEdge (E := Edge T ends)) b c) :
+    pathClass T ends (p.append q) = pathClass T ends p ≫ pathClass T ends q := by
+  induction p with
+  | refl _ => simp [Path.append,pathClass]
+  | cons e p ih => simp only [Path.append,pathClass,ih,Category.assoc]
+
+noncomputable def generatorVoltage {G : Type*} [Group G] (f : C → G) {a b : V} : Edge T ends a b → G
+  | .branch _ _ => 1
+  | .chord c => f c
+lemma orientedClass_voltage {G : Type*} [Group G] (f : C → G)
+    {a b : V} (e : OrientedEdge (E := Edge T ends) a b) :
+    orientedWeight (generatorVoltage T ends f) e =
+      (FreeGroup.lift f) (word T ends (orientedClass T ends e)) := by
+  cases e with
+  | forward e => cases e using Edge.casesOn <;>
+      simp [orientedWeight,generatorVoltage,orientedClass,word_edge]
+  | backward e => cases e using Edge.casesOn <;>
+      simp [orientedWeight,generatorVoltage,orientedClass,word_inv,word_edge]
+lemma holonomy_word {G : Type*} [Group G] (f : C → G)
+    {a b : V} (p : Path (OrientedEdge (E := Edge T ends)) a b) :
+    Path.holonomy (orientedWeight (generatorVoltage T ends f)) p =
+      (FreeGroup.lift f) (word T ends (pathClass T ends p)) := by
+  induction p with
+  | refl a => simp [Path.holonomy,pathClass]
+  | cons e p ih => simp only [Path.holonomy,pathClass,word_comp,map_mul,← ih,orientedClass_voltage]
+lemma word_nonidentity (p : Path (OrientedEdge (E := Edge T ends)) T.root T.root)
+    (hp : pathClass T ends p ≠ 𝟙 _) : word T ends (pathClass T ends p) ≠ 1 := by
+  intro hw
+  have h : (⟨pathClass T ends p⟩ : Loop T ends) = 1 :=
+    (loopEquiv T ends).injective (by
+      change word T ends (pathClass T ends p) = word T ends (𝟙 (obj T ends T.root))
+      rw [word_id]
+      exact hw)
+  exact hp (congrArg Loop.hom h)
+
+theorem magnus_voltage_separates [DecidableEq C]
+    (p : Path (OrientedEdge (E := Edge T ends)) T.root T.root)
+    (hp : pathClass T ends p ≠ 𝟙 _) :
+    ∃ (n : ℕ) (target : Fin n → C),
+      Path.holonomy (orientedWeight (generatorVoltage T ends (TruncatedMagnus.generator target))) p ≠ 1 := by
+  obtain ⟨n,target,ht⟩ := TruncatedMagnus.separates_nonidentity _ (word_nonidentity T ends p hp)
+  refine ⟨n,target,?_⟩
+  rw [holonomy_word]
+  exact ht
+section OriginalGraph
+variable (E : V → V → Type*) (presentation : ∀ a b, E a b ≃ Edge T ends a b)
+def SourceVertex (_E : V → V → Type*) := V
+instance : Quiver (SourceVertex E) := ⟨E⟩
+def toTree : SourceVertex E ⥤q Vertex T ends where
+  obj x := x
+  map {a b} e := presentation a b e
+def fromTree : Vertex T ends ⥤q SourceVertex E where
+  obj x := x
+  map {a b} e := (presentation a b).symm e
+lemma toTree_fromTree : toTree T ends E presentation ⋙q fromTree T ends E presentation = Prefunctor.id _ := by
+  apply Prefunctor.ext' (F := toTree T ends E presentation ⋙q fromTree T ends E presentation) (G := Prefunctor.id _) (fun _ => rfl)
+  intro a b e
+  change (presentation a b).symm (presentation a b e) = e
+  exact (presentation a b).symm_apply_apply e
+lemma fromTree_toTree : fromTree T ends E presentation ⋙q toTree T ends E presentation = Prefunctor.id _ := by
+  apply Prefunctor.ext' (F := fromTree T ends E presentation ⋙q toTree T ends E presentation) (G := Prefunctor.id _) (fun _ => rfl)
+  intro a b e
+  change presentation a b ((presentation a b).symm e) = e
+  exact (presentation a b).apply_symm_apply e
+noncomputable def forward := Quiver.freeGroupoidFunctor (toTree T ends E presentation)
+noncomputable def backward := Quiver.freeGroupoidFunctor (fromTree T ends E presentation)
+lemma forward_backward : forward T ends E presentation ⋙ backward T ends E presentation = Functor.id _ := by
+  rw [forward,backward,← Quiver.freeGroupoidFunctor_comp,toTree_fromTree,Quiver.freeGroupoidFunctor_id]
+lemma backward_forward : backward T ends E presentation ⋙ forward T ends E presentation = Functor.id _ := by
+  rw [forward,backward,← Quiver.freeGroupoidFunctor_comp,fromTree_toTree,Quiver.freeGroupoidFunctor_id]
+set_option backward.isDefEq.respectTransparency false in
+lemma forward_injective {a b : Quiver.FreeGroupoid (SourceVertex E)} :
+    Function.Injective (fun f : a ⟶ b => (forward T ends E presentation).map f) := by
+  intro f g he
+  have hh := congrArg (fun q => (backward T ends E presentation).map q) he
+  have hf := Functor.congr_hom (forward_backward T ends E presentation) f
+  have hg := Functor.congr_hom (forward_backward T ends E presentation) g
+  simpa using hf.symm.trans (hh.trans hg)
+
+lemma forward_edge {a b : V} (e : E a b) :
+    (forward T ends E presentation).map ((Quiver.FreeGroupoid.of (SourceVertex E)).map e) =
+      edge T ends (presentation a b e) := by
+  have h := Prefunctor.congr_hom
+    (Quiver.FreeGroupoid.lift_spec (toTree T ends E presentation ⋙q Quiver.FreeGroupoid.of (Vertex T ends))) e
+  change (forward T ends E presentation).map ((Quiver.FreeGroupoid.of (SourceVertex E)).map e) = edge T ends (presentation a b e) at h
+  exact h
+
+noncomputable def mapOriented {a b : V} : OrientedEdge (E := E) a b → OrientedEdge (E := Edge T ends) a b
+  | .forward e => .forward (presentation _ _ e)
+  | .backward e => .backward (presentation _ _ e)
+noncomputable def mapPath {a b : V} : Path (OrientedEdge (E := E)) a b → Path (OrientedEdge (E := Edge T ends)) a b
+  | .refl _ => .refl _
+  | .cons e p => .cons (mapOriented T ends E presentation e) (mapPath p)
+noncomputable def unmapOriented {a b : V} : OrientedEdge (E := Edge T ends) a b → OrientedEdge (E := E) a b
+  | .forward e => .forward ((presentation _ _).symm e)
+  | .backward e => .backward ((presentation _ _).symm e)
+noncomputable def unmapPath {a b : V} : Path (OrientedEdge (E := Edge T ends)) a b → Path (OrientedEdge (E := E)) a b
+  | .refl _ => .refl _
+  | .cons e p => .cons (unmapOriented T ends E presentation e) (unmapPath p)
+lemma unmap_mapPath {a b : V} (p : Path (OrientedEdge (E := E)) a b) :
+    unmapPath T ends E presentation (mapPath T ends E presentation p) = p := by
+  induction p with
+  | refl _ => rfl
+  | cons e p ih =>
+    change Path.cons (unmapOriented T ends E presentation (mapOriented T ends E presentation e)) _ = _
+    have he : unmapOriented T ends E presentation (mapOriented T ends E presentation e) = e := by
+      cases e <;> simp [unmapOriented,mapOriented]
+    rw [he,ih]
+noncomputable def originalOrientedClass {a b : V} : OrientedEdge (E := E) a b →
+    ((Quiver.FreeGroupoid.of (SourceVertex E)).obj a ⟶ (Quiver.FreeGroupoid.of (SourceVertex E)).obj b)
+  | .forward e => (Quiver.FreeGroupoid.of (SourceVertex E)).map e
+  | .backward e => inv ((Quiver.FreeGroupoid.of (SourceVertex E)).map e)
+noncomputable def originalPathClass {a b : V} : Path (OrientedEdge (E := E)) a b →
+    ((Quiver.FreeGroupoid.of (SourceVertex E)).obj a ⟶ (Quiver.FreeGroupoid.of (SourceVertex E)).obj b)
+  | .refl _ => 𝟙 _
+  | .cons e p => originalOrientedClass E e ≫ originalPathClass p
+lemma forward_pathClass {a b : V} (p : Path (OrientedEdge (E := E)) a b) :
+    (forward T ends E presentation).map (originalPathClass E p) = pathClass T ends (mapPath T ends E presentation p) := by
+  induction p with
+  | refl _ => simp [originalPathClass,mapPath,pathClass] <;> rfl
+  | cons e p ih =>
+    simp only [originalPathClass,mapPath,pathClass,Functor.map_comp,ih]
+    congr 1
+    cases e <;> simp [originalOrientedClass,mapOriented,orientedClass,Functor.map_inv,forward_edge] <;> rfl
+set_option backward.isDefEq.respectTransparency false in
+lemma forward_backward_hom {a b : Quiver.FreeGroupoid (SourceVertex E)} (f : a ⟶ b) :
+    (backward T ends E presentation).map ((forward T ends E presentation).map f) = f := by
+  have h := Functor.congr_hom (forward_backward T ends E presentation) f
+  simpa using h
+set_option backward.isDefEq.respectTransparency false in
+lemma backward_forward_hom {a b : Quiver.FreeGroupoid (Vertex T ends)} (f : a ⟶ b) :
+    (forward T ends E presentation).map ((backward T ends E presentation).map f) = f := by
+  have h := Functor.congr_hom (backward_forward T ends E presentation) f
+  simpa using h
+
+structure OriginalLoop (root : V) where
+  hom : (Quiver.FreeGroupoid.of (SourceVertex E)).obj root ⟶ (Quiver.FreeGroupoid.of (SourceVertex E)).obj root
+@[ext] lemma OriginalLoop.ext (root : V) {p q : OriginalLoop E root} (h : p.hom = q.hom) : p = q := by
+  cases p; cases q; cases h; rfl
+noncomputable instance (root : V) : Group (OriginalLoop E root) where
+  mul p q := ⟨p.hom ≫ q.hom⟩
+  one := ⟨𝟙 _⟩
+  inv p := ⟨inv p.hom⟩
+  mul_assoc p q r := OriginalLoop.ext E root (Category.assoc _ _ _)
+  one_mul p := OriginalLoop.ext E root (Category.id_comp _)
+  mul_one p := OriginalLoop.ext E root (Category.comp_id _)
+  inv_mul_cancel p := OriginalLoop.ext E root (IsIso.inv_hom_id _)
+noncomputable def originalToCanonical : OriginalLoop E T.root ≃* Loop T ends where
+  toFun p := ⟨(forward T ends E presentation).map p.hom⟩
+  invFun p := ⟨(backward T ends E presentation).map p.hom⟩
+  left_inv p := OriginalLoop.ext E T.root (forward_backward_hom T ends E presentation p.hom)
+  right_inv p := Loop.ext T ends (backward_forward_hom T ends E presentation p.hom)
+  map_mul' p q := Loop.ext T ends ((forward T ends E presentation).map_comp p.hom q.hom)
+/-- The actual source graph's combinatorial based fundamental group is free
+on the chords of its supplied rooted spanning-tree presentation. -/
+noncomputable def originalLoopEquiv : OriginalLoop E T.root ≃* FreeGroup C :=
+  (originalToCanonical T ends E presentation).trans (loopEquiv T ends)
+
+set_option backward.isDefEq.respectTransparency false in
+lemma original_path_nonidentity (p : Path (OrientedEdge (E := E)) T.root T.root)
+    (hp : originalPathClass E p ≠ 𝟙 _) : pathClass T ends (mapPath T ends E presentation p) ≠ 𝟙 _ := by
+  intro he
+  apply hp
+  apply forward_injective T ends E presentation
+  change (forward T ends E presentation).map (originalPathClass E p) = (forward T ends E presentation).map (𝟙 _)
+  rw [forward_pathClass T ends E presentation,CategoryTheory.Functor.map_id]
+  exact he
+noncomputable def originalVoltage {G : Type*} [Group G] (f : C → G) {a b : V} (e : E a b) : G :=
+  generatorVoltage T ends f (presentation a b e)
+lemma original_holonomy {G : Type*} [Group G] (f : C → G) {a b : V}
+    (p : Path (OrientedEdge (E := E)) a b) :
+    Path.holonomy (orientedWeight (originalVoltage T ends E presentation f)) p =
+      Path.holonomy (orientedWeight (generatorVoltage T ends f)) (mapPath T ends E presentation p) := by
+  induction p with
+  | refl _ => rfl
+  | cons e p ih =>
+    simp only [Path.holonomy,mapPath,ih]
+    congr 1
+    cases e <;> rfl
+lemma map_unmapPath {a b : V} (p : Path (OrientedEdge (E := Edge T ends)) a b) :
+    mapPath T ends E presentation (unmapPath T ends E presentation p) = p := by
+  induction p with
+  | refl _ => rfl
+  | cons e p ih =>
+    change Path.cons (mapOriented T ends E presentation (unmapOriented T ends E presentation e)) _ = _
+    have he : mapOriented T ends E presentation (unmapOriented T ends E presentation e) = e := by
+      cases e <;> simp [unmapOriented,mapOriented]
+    rw [he,ih]
+noncomputable def magnusVoltage [DecidableEq C] {n : ℕ} (target : Fin n → C)
+    {a b : V} (e : OrientedEdge (E := E) a b) : TruncatedMagnus.Group n :=
+  orientedWeight (originalVoltage T ends E presentation (TruncatedMagnus.generator target)) e
+
+theorem original_magnus_separation [DecidableEq C]
+    (p : Path (OrientedEdge (E := E)) T.root T.root)
+    (hp : originalPathClass E p ≠ 𝟙 _) :
+    ∃ (n : ℕ) (target : Fin n → C), Path.holonomy (magnusVoltage T ends E presentation target) p ≠ 1 := by
+  obtain ⟨n,target,hsep⟩ := magnus_voltage_separates T ends (mapPath T ends E presentation p)
+    (original_path_nonidentity T ends E presentation p hp)
+  refine ⟨n,target,?_⟩
+  change Path.holonomy (orientedWeight (originalVoltage T ends E presentation (TruncatedMagnus.generator target))) p ≠ 1
+  rw [original_holonomy]
+  exact hsep
+end OriginalGraph
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+open CategoryTheory
+universe u v w
+variable {V : Type u} (T : RootedTree V) {C : Type v} (ends : C → V × V)
+variable (E : V → V → Type w) (presentation : ∀ a b, E a b ≃ Edge T ends a b)
+/-- A nontrivial ACTUAL source loop has a separating finite-sheet cover which
+is the bottom of a nonempty tower of graph covers of degree two. -/
+theorem separating_covering_tower [DecidableEq C]
+    (p : Path (OrientedEdge (E := E)) T.root T.root)
+    (hp : originalPathClass E p ≠ 𝟙 _) :
+    ∃ (n : ℕ) (target : Fin n → C) (S : CoverTower.TwoSeries (TruncatedMagnus.Group n)),
+      0 < S.length ∧
+      (∀ (i : Fin S.length) (v : V) (q : TruncatedMagnus.Group n ⧸ S.subgroup i.succ),
+        Nat.card {x : V × (TruncatedMagnus.Group n ⧸ S.subgroup i.castSucc) //
+          CoverTower.projectVertex (S.le_step i) x = (v,q)} = 2) ∧
+      ∀ q : TruncatedMagnus.Group n ⧸ S.subgroup 0,
+        (CoverTower.liftPath (OrientedEdge (E := E)) (magnusVoltage T ends E presentation target)
+          (S.subgroup 0) p q).1 ≠ q ∧
+        CoverTower.erasePath (OrientedEdge (E := E)) (magnusVoltage T ends E presentation target)
+          (S.subgroup 0)
+          (CoverTower.liftPath (OrientedEdge (E := E)) (magnusVoltage T ends E presentation target)
+            (S.subgroup 0) p q).2 = p := by
+  obtain ⟨n,target,hsep⟩ := original_magnus_separation T ends E presentation p hp
+  obtain ⟨S⟩ := CoverTower.exists_twoSeries (TruncatedMagnus.isTwoGroup n)
+  refine ⟨n,target,S,S.length_pos_of_ne_one _ hsep,?_,?_⟩
+  · exact fun i v q => CoverTower.vertex_degree_two S i v q
+  have hs : ∀ q : TruncatedMagnus.Group n ⧸ S.subgroup 0,
+      (CoverTower.liftPath (OrientedEdge (E := E)) (magnusVoltage T ends E presentation target)
+        (S.subgroup 0) p q).1 ≠ q := by
+    rw [S.first]
+    exact CoverTower.bottom_separates _ _ p hsep
+  intro q
+  exact ⟨hs q, CoverTower.erase_liftPath _ _ _ p q⟩
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
