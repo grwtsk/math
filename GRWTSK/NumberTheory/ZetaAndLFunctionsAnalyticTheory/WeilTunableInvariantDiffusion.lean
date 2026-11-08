@@ -234,4 +234,73 @@ theorem sourceQuadraticWithGap_nonneg_iff [Fintype ι]
   · intro h w
     exact h (d.recoverField r w)
 
+/-- Finite permutation invariance supplies the missing global Euclidean
+bound from the two-site inequality. This does not identify a source metric. -/
+theorem recoverField_head_cost [Fintype ι]
+    (r : ℝ) (hr : 0 < r) (hr1 : r ≤ 1) (w : ι → ℝ) :
+    (∑ i, (d.recoverField r w i)^2) ≤ (∑ i, (w i)^2) / r^2 := by
+  let e : ι ≃ ι := ⟨d.swap, d.swap, d.involutive, d.involutive⟩
+  have hs : ∀ f : ι → ℝ, (∑ i, f (d.swap i)) = ∑ i, f i := by
+    intro f
+    exact Equiv.sum_comp e f
+  have h := Finset.sum_le_sum (s := Finset.univ) (fun i _ =>
+    twoSite_recoverField_cost r (w i) (w (d.swap i)) hr hr1)
+  have hpoint : ∀ i,
+      (((1+r)*w (d.swap i) - (1-r)*w i)/(2*r))^2 =
+        (d.recoverField r w (d.swap i))^2 := by
+    intro i
+    simp only [recoverField, d.involutive]
+  simp_rw [hpoint] at h
+  change (∑ i, ((d.recoverField r w i)^2 +
+    (d.recoverField r w (d.swap i))^2)) ≤ _ at h
+  rw [Finset.sum_add_distrib, hs] at h
+  simp_rw [add_div] at h
+  rw [Finset.sum_add_distrib, ← Finset.sum_div,
+    ← Finset.sum_div, hs] at h
+  linarith
+
+/-- Invertible coordinate transport preserves all-vector signs for ANY
+real-valued source on real or complex coefficients. No quadratic or
+analytic identification is assumed or supplied by this algebraic lemma. -/
+theorem sourceValue_nonneg_iff {K : Type*} [Field K] [CharZero K]
+    (r : K) (hr : r ≠ 0) (Q : (ι → K) → ℝ) :
+    (∀ w, 0 ≤ Q (d.recoverField r w)) ↔ (∀ v, 0 ≤ Q v) := by
+  constructor
+  · intro h v
+    simpa only [d.recover_heatField r hr v] using h (d.heatField r v)
+  · intro h w
+    exact h (d.recoverField r w)
+
+/-- Even uncorrected smoothing preserves existence of a negative direction
+when quantified over ALL vectors. Positivity at one smoothed vector is
+not positivity on the full image. -/
+theorem negative_direction_survives_heat {K : Type*} [Field K] [CharZero K]
+    (r : K) (hr : r ≠ 0) (Q : (ι → K) → ℝ)
+    (v : ι → K) (hneg : Q v < 0) :
+    Q (d.heatField r (d.recoverField r v)) < 0 := by
+  simpa only [d.heat_recoverField r hr v] using hneg
+
+/-- At the unrestricted observer-function level, existence of a paid
+comparison is EQUIVALENT to the source sign. This is a logical boundary,
+not a way to construct an independently certified arithmetic observer.
+The converse chooses the exact transported source and zero error. -/
+theorem exists_observer_margin_iff {K : Type*} [Field K] [CharZero K]
+    (r : K) (hr : r ≠ 0) (Q : (ι → K) → ℝ)
+    (mass : (ι → K) → ℝ) :
+    (∃ observed : (ι → K) → ℝ, ∃ error : ℝ,
+      (∀ w, |observed w - Q (d.recoverField r w)| ≤ error * mass w) ∧
+      (∀ w, error * mass w ≤ observed w)) ↔ (∀ v, 0 ≤ Q v) := by
+  constructor
+  · rintro ⟨observed, error, hc, hm⟩ v
+    have hu := (abs_le.mp (hc (d.heatField r v))).2
+    have hp := hm (d.heatField r v)
+    rw [d.recover_heatField r hr v] at hu
+    linarith
+  · intro h
+    refine ⟨fun w => Q (d.recoverField r w), 0, ?_, ?_⟩
+    · intro w
+      simp
+    · intro w
+      simpa only [zero_mul] using h (d.recoverField r w)
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.FiniteInvariantDiffusion.Involution
