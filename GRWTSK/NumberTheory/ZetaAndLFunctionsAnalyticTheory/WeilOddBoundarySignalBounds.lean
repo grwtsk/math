@@ -8,8 +8,7 @@ import Mathlib.Analysis.SumIntegralComparisons
 
 Local attribution is to grwtsk contributors.
 
-The signal is the series from Sections 3 and 4 of
-`documentation/mathematics/_support/reviews/weil-odd-output-trace.md`,
+The signal is the odd-output trace series
 with its exponential weight and actual sine frequency. A shifted inverse-square
 majorant proves summability. Positive weights give positivity and the
 denominator gives antitonicity in the frequency index.

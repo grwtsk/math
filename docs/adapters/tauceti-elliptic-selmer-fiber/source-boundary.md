@@ -49,7 +49,7 @@ Compilation NOT_RUN, fresh kernel replay NOT_RUN, transitive axiom audit NOT_RUN
 
 Mathematical local-condition gap closed at the **fixed finite** \(m=p^n\) level, independently of global BSD: use the ACTUAL elliptic \(G_{K_v}\)-modules \(A_v=E[m](K_v%5E%7Bsep%7D)\) and \(B_v=E(K_v^{sep})\), the genuine equivariant coefficient inclusion \(j_v:A_v\to B_v\), and define \(U_v^+=\operatorname{Cone}(C^\bullet_{\mathrm{cont}}(G_v,A_v)\to C^\bullet_{\mathrm{cont}}(G_v,B_v))[-1]\). Its degree-one class projection has image \(\ker H^1(j_v)=\operatorname{im}\delta_{v,m}\), the precise local Kummer condition in Tau Ceti `WeierstrassCurve.selmerStructure_localCondition`, via the actual `range_kummerMap` theorem. It is not generally injective: \(\operatorname{coker}(H^0(A_v)\to H^0(B_v))\) survives in its \(H^1\).
 
-A generic source proof candidate under pinned grwtsk/math Mathlib is `GRWTSK/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LocalKummerConditionCone.lean`, blob `6cc6beef014a7646044555b0b9f0ea10b9da1a39`, constructing the signed low-degree cone and proving its one-cocycle lift iff coefficient-boundary, including correct coboundary invariance. The **actual source-typed Tau Ceti** adapter is `documentation/adapters/tauceti-elliptic-selmer-fiber/TauCetiLocalKummerCone.lean`, blob `9cdb5cd999b2723a916146b203ea05ea504fb9a8`, pinned to TauCetiProject/TauCeti `2bdb755239d3bd84760e99bc83166bdf7cc75a6b`, toolchain `v4.36.0-rc1`. It constructs `Uzero`, `Uone`, `Utwo`, `localD0`, `localD1`, source-coefficient squared-zero and local cycle membership, then states/proposes `cone_cycle_iff_selmerStructure_localCondition` at every selected place. The full classical mathematical proof and hostile controls are in `documentation/mathematics/_support/reviews/bsd-actual-elliptic-local-kummer-cone-2026-11-01.md`, blob `6ae4d0d5b06dc1e3bfeb2c68963e6d6d60fa7200`.
+A generic source proof candidate under pinned grwtsk/math Mathlib is `GRWTSK/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LocalKummerConditionCone.lean`, blob `6cc6beef014a7646044555b0b9f0ea10b9da1a39`, constructing the signed low-degree cone and proving its one-cocycle lift iff coefficient-boundary, including correct coboundary invariance. The **actual source-typed Tau Ceti** adapter is `documentation/adapters/tauceti-elliptic-selmer-fiber/TauCetiLocalKummerCone.lean`, blob `9cdb5cd999b2723a916146b203ea05ea504fb9a8`, pinned to TauCetiProject/TauCeti `2bdb755239d3bd84760e99bc83166bdf7cc75a6b`, toolchain `v4.36.0-rc1`. It constructs `Uzero`, `Uone`, `Utwo`, `localD0`, `localD1`, source-coefficient squared-zero and local cycle membership, then states/proposes `cone_cycle_iff_selmerStructure_localCondition` at every selected place.
 
 **Verification distinction:** the classical local cohomological identity is proved mathematically from the real Kummer long exact sequence. Both NEW Lean source files are UNCOMPILED candidates, with syntax/parsing NOT_RUN, fresh kernel checking NOT_RUN, full transitive axiom audit NOT_RUN, Tau Ceti compatible adapter compilation NOT_RUN. No CI or execution is dispatched by this document; there are no new `sorry` or `axiom` declarations. Upstream imports remain isolated and no default root imports or dependency pins are changed.
 
@@ -61,7 +61,7 @@ The earlier finite-m source `TauCetiLocalKummerCone.lean` (blob 9cdb5cd999b2723a
 
 Use instead the GENUINE rational local point source `W.toAffine.Point` and the actual inclusion `W.basePointCoeff`: the point-corrected complex is `U_v,n^+ = Cone(C_cont(G_v,E[p^n]) ⊕ E(Q_v)[0] -> C_cont(G_v,E))[-1]`, with sign `j - basePointCoeff`. Its cochain low-degree differential includes the rational source point, retains local H0=E(Q_v)[p^n] and gives H1=E(Q_v)/p^n E(Q_v) via the actual Kummer triangle. The H1 projection to local Galois torsion cohomology is now injective with image the genuine local Kummer subgroup. This is a mathematical correction in the model, not a claim that the older source was compiled or that its H1 image theorem was wrong.
 
-New standalone GRWTSK algebra source candidates: `GRWTSK/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LocalPointKummerFiber.lean` blob `5fd56d6fc1904c26c951bfcb459b033c86f3a415`; `LocalPointKummerTower.lean` blob `c006d62ed7b034f43b16364a4fdd9d4a191fb30e`; `GlobalKummerPointFiberAssembly.lean` blob `df902e143024a36c3916f8d210a31ca00ae7618a`; `GlobalSelmerFiberTower.lean` blob `9482578feeefaec280babf861dbf74dedf2ab4f6`; `GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/KummerPointResolution.lean` blob `3d6723a861ad1c44eaaab3bb9cfff1f299212fe2`. Exact whole mathematical proof, Milnor derived-limit H0/H1, hostile tests and source comparison: `documentation/mathematics/_support/reviews/bsd-global-kummer-point-fiber-tower-2026-11-01.md`, blob `9362e58810da0c177ff4c96e1c2b3b1fece3a1e2`.
+New standalone GRWTSK algebra source candidates: `GRWTSK/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/LocalPointKummerFiber.lean` blob `5fd56d6fc1904c26c951bfcb459b033c86f3a415`; `LocalPointKummerTower.lean` blob `c006d62ed7b034f43b16364a4fdd9d4a191fb30e`; `GlobalKummerPointFiberAssembly.lean` blob `df902e143024a36c3916f8d210a31ca00ae7618a`; `GlobalSelmerFiberTower.lean` blob `9482578feeefaec280babf861dbf74dedf2ab4f6`; `GRWTSK/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/KummerPointResolution.lean` blob `3d6723a861ad1c44eaaab3bb9cfff1f299212fe2`.
 
 New isolated source-typed Tau Ceti candidate `documentation/adapters/tauceti-elliptic-selmer-fiber/TauCetiPointKummerTower.lean`, blob `50f9b9f07822933f9f25751bd22d99eb0afb9a00`, uses actual W.TorsionCoeff(p^(n+1)), W.PointCoeff, W.toAffine.Point, W.basePointCoeff and basePointEquivInvariants, genuine C_cont cochains and source TateModule/tateModuleTransition. Exact external pin: TauCetiProject/TauCeti `2bdb755239d3bd84760e99bc83166bdf7cc75a6b` with Lean v4.36.0-rc1, Apache-2.0 and original Tau Ceti contributor attribution. Tau Ceti/Algebra/Module/Torsion/TateModule.lean blob `62e7fac1cb918662dde0e644e61060d4428e9942` is the ACTUAL inverse system p-smul on torsion, and EllipticCurve/TateModule/Basic.lean blob `65f22a80e553f58ca70469e292697ca20a8da4e9` defines the genuine geometric T_pE.
 
@@ -387,10 +387,6 @@ O'Neil theta polarization and
 `Delta_n(delta_n(P))=0` in continuous Brauer H²
 remain OPEN as formally verified theorems.
 
-Detailed proof mathematics, immutable source blobs,
-the 1,751 exact finite Heisenberg algebra checks and
-NOT_RUN facets:
-`documentation/mathematics/_support/reviews/bsd-original-geometric-theta-obstruction-kummer-vanishing-polarization-2026-11-02.md`.
 This is real geometric progress, not a license to
 skip the remaining original source Weil comparison.
 No native Noe/CI/scheduler job, new axiom/sorry/admit,
@@ -578,8 +574,6 @@ Pinned source remains The Tau Ceti contributors' immutable
 `TauCetiProject/TauCeti@2bdb755239d3bd84760e99bc83166bdf7cc75a6b`,
 Apache-2.0, Lean v4.36.0-rc1. Native grwtsk/math
 Lean v4.34.1 and umbrella imports remain unchanged.
-New detailed review:
-`documentation/mathematics/_support/reviews/bsd-original-theta-galois-action-factor-set-2026-11-02.md`.
 
 The actual original elliptic rational-function theta group
 `ThetaLift (E/Fsep,n)` has now been strengthened with

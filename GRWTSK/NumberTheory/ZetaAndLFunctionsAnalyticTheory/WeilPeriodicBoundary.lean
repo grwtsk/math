@@ -14,12 +14,9 @@ import Mathlib.Tactic.NormNum
 /-!
 # Scalar and finite-sum components of the Weil boundary-periodization comparison
 
-Analytical proof and exact-source return:
-  documentation/mathematics/_support/reviews/weil-periodic-boundary.md
-
 Sources: Connes--Consani--Moscovici, arXiv:2511.22755v1, (3.7)--(3.20),
 and Connes--van Suijlekom, arXiv:2511.23257v1, (6), Remark 4.3, Theorem 6.1.
-The note proves an exact bounded periodic comparison for the full arithmetic
+The analytical argument establishes an exact bounded periodic comparison for the full arithmetic
 Weil operator, including its operator core, explicit high-frequency lower
 bounds and buffered mixed-block estimates. These are not cofinal ground-state
 separation or normalized ground-state convergence.
@@ -129,7 +126,7 @@ theorem poleTailLoss_le_one {a N : ℝ} (hN : 0 < N) (haN : a ≤ N) :
   apply (div_le_iff₀ hN).2
   simpa using haN
 
-/-- Scalar assembly of the actual high-frequency floor proved in the note. -/
+/-- Scalar assembly of the actual high-frequency floor established by the analytical argument. -/
 theorem highTailFloor {c m k h p b : ℝ}
     (hm : b + 1 + k + h - c ≤ m) (hp : p ≤ 1) :
     b ≤ c + m - k - h - p := by

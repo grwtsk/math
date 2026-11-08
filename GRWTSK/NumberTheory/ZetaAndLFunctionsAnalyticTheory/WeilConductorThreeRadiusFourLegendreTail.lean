@@ -419,12 +419,9 @@ actual residual/source -> original23m trace head and actual inverseA^-1
 -> original residual bound -> original j3. This advances the same contracts
 without declaring an unproved matrix sign a constructed proof.
 
-Intended static specification at publication:
-documentation/mathematics/_verification/specifications/NumberTheory/
-ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourLegendreTail/
-manifest.json, with complete data/checker bytes retained by its source-bound
-bundle. There is no claim that publication or replay has already occurred.
-
+Reproducing the finite checks requires complete data and checker bytes
+bound to the exact source. There is no claim that publication or replay
+has already occurred.
 
 Standalone finite guard provenance:
 /tmp/q3_radius_four_legendre_tail_guard_20261108.py

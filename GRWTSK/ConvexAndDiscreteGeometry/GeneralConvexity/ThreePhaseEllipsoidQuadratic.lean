@@ -34,9 +34,6 @@ Comparison boundary:
 * this supplies no John/Loewner optimality, arithmetic source comparison,
   Navier--Stokes defect estimate, endpoint bound or RH consequence.
 
-The independent analytic derivations and hostile cases are recorded in
-`documentation/mathematics/_support/reviews/three-phase-residual-analytic-closure.md`.
-
 SOURCE_PROOF_CANDIDATE / COMPILATION NOT_RUN / KERNEL NOT_RUN /
 TRANSITIVE AXIOM AUDIT NOT_RUN.
 -/

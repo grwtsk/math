@@ -12,9 +12,6 @@ Existing native carriers and consumers:
   WeilConductorThreeRadiusFourSixteenShells (genuine 458-atom cancellation),
   WeilConductorThreeRadiusFourSignedSchurRobustness (physical gamma profile).
 
-Complete finite verification data:
-documentation/mathematics/_verification/targets/
-chi3-radius-four-sparse-shift-20261107.json.
 Independent Python Fraction and V8 BigInt rational/integer replays were
 executed for every translated image and all 458 source-square weights.
 Continuum operator/analytic source return WRITTEN, not kernel verified.

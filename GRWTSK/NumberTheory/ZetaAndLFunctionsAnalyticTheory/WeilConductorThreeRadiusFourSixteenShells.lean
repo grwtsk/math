@@ -9,9 +9,6 @@ Source interfaces: WeilDirichletStageChain, WeilConductorFrontier,
 WeilConductorThreeRadiusFourInventory, and
 WeilConductorThreeRadiusFourEdgeSchur. Also compare
 WeilConductorThreeRadiusFourMovingCollar and TwoShell.
-A complete exact finite exp-cell manifest is stored under
-documentation/mathematics/_verification/targets/
-chi3-radius-four-sixteen-primefree-shells-20261107.json.
 Direct math source inspected: grwtsk/math@5adbab60a931994cdce3077c573c73311224fbe5.
 AI-assisted written analytic proof; 31 actual rational exponential
 cell brackets independently replayed with Python Fraction and

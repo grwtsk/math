@@ -10,15 +10,13 @@ import Mathlib.Tactic
 /-!
 # Fixed-degree theta-response optimization
 
-The complete analytical argument is in
-`documentation/mathematics/_support/reviews/weil-theta-response-optimization.md`.
 For the FULL CCM source (arXiv:2511.22755v1, (3.19)--(3.20)), put
 `X = exp (2*T)`, `y = -2*phi'`, `z_j = y^(2*j)/(4*pi^2)^j`, and
 `V_r = span {z_0,...,z_r}`. The whole-line sinh moment is normalized to 1/2.
 For `f = 1_[-T,T] h`, `h in V_r`, define the actual rank-one trial deficit
 `d_T(h) = 1/2 - (2*ell_T(f) - a_T(f,f))`, where `a_T = Q_T + 2*ell_T^2`.
 
-The note proves, for EVERY FIXED r, as X tends to infinity:
+The analytical argument establishes, for EVERY FIXED r, as X tends to infinity:
 * The complete exterior-form matrix in a jet/Laguerre frame is
   `(A_X^2/X) * ((log X)/(2*pi) * I + O_r(1))`,
   `A_X = 16*pi^3 * X^(13/4) * exp(-pi*X)`.
@@ -47,7 +45,7 @@ ONLY finite scalar algebra, the first two profile optimizations, a literal
 source-polynomial moment normalizer, and an existing inverse-energy consumer
 are formalized below. Theta series, Laguerre integrals/orthogonality, all-degree
 jet asymptotics, operator domains, complete residual limits, and spectral
-claims are ANALYTICAL results in the note, not Lean theorems in this file.
+claims are ANALYTICAL results, not Lean theorems in this file.
 No interval/diagnostic Boolean or unresolved arithmetic sign is an axiom.
 
 Sources: the existing CollarProfile and RankOneSaturation modules; the supplied

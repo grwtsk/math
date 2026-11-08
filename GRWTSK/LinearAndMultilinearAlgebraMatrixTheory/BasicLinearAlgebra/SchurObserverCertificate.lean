@@ -14,8 +14,8 @@ import Mathlib.Data.Matrix.Block
 
 Formalization of `weil-low-schur-enclosure.md`, (2.4), (5.1)--(5.3), (6.4),
 and the structured-observer composition in `weil-polarized-observers-and-mathieu.md`.
-Both notes are in `documentation/mathematics/_support/reviews/` at the baseline
-67144c4b923ace618dbdb9c80e24f951a8981cac. Reuse the original quadratic checker,
+Historical source: grwtsk/math baseline
+67144c4b923ace618dbdb9c80e24f951a8981cac, review sections (2.4), (5.1)--(5.3), (6.4). Reuse the original quadratic checker,
 congruence, Schur residual enclosure and commutator estimate. No new checker,
 Weil operator, spectrum, or RH predicate is introduced.
 

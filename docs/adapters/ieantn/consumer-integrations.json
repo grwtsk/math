@@ -50,7 +50,6 @@
         "IEANTN contributors"
       ],
       "license": "Apache-2.0; actual upstream bylines preserved through dependency",
-      "profile": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/ieantn-consecutive-square-20261029.profile.json",
       "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
       "verification": {
         "compilation": "NOT_RUN",

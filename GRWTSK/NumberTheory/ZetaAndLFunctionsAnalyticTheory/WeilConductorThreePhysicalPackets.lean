@@ -297,8 +297,7 @@ source identity, Fourier normalization, quadrature, domains and entire-rank
 return. These AI-assisted checks are not independent human or kernel evidence.
 The family law shares the physical-basis calculation and additionally uses the
 continuous large sieve; it is CONDITIONAL on the actual head certificates.
-Static certificate: documentation/mathematics/_verification/targets/
-chi3-radius-three-physical-packet-20261107.json. Portable source checkers live
+Portable source checkers live
 in Noe tools/chi3_radius_three/. The companion records their revised hashes;
 historical temporary hashes above retain their original scope.
 

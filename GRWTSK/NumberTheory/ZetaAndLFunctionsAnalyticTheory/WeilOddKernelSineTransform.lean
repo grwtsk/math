@@ -8,8 +8,7 @@ import Mathlib.MeasureTheory.Integral.DominatedConvergence
 
 Local attribution is to grwtsk contributors.
 
-This is the kernel calculation used in Section 2 of
-`documentation/mathematics/_support/reviews/weil-odd-output-trace.md`. On
+This module gives the odd-output kernel calculation. On
 the positive half-line, `parityKernel 0` expands as the sum of exponentials
 with rates `2*j+1/2`. The bound `|sin(w*r)| ≤ |w|*r` and the half-line
 exponential first moment give an inverse-square bound on the absolute

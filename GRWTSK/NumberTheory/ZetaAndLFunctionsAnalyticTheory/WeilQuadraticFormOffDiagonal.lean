@@ -31,8 +31,6 @@ real sign-gauge obstruction and two-coordinate modulus obstruction used there.
 It does not formalize the closed Weil form, its operator, semigroup, root
 existence, spectral theorem, RH, or Dirichlet GRH.
 
-Analytical record:
-  documentation/mathematics/_support/reviews/weil-cone-threshold.md
 Verification at publication: elaboration NOT_RUN; kernel check NOT_RUN;
 transitive axiom audit NOT_RUN. No compiler was available. These are candidate
 proof scripts, not a claim of checked Lean. No dependency pins or root imports

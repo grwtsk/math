@@ -12,8 +12,7 @@ import Mathlib.Tactic.Ring
 /-!
 # Schur square completion and residual enclosures on a real form domain
 
-This is the algebraic form-domain layer of the analytical argument in
-`documentation/mathematics/_support/reviews/weil-low-schur-enclosure.md`.
+This module supplies the algebraic form-domain layer of the Schur residual enclosure.
 The carrier below may be an operator's form domain; it need not be the entire
 ambient Hilbert space. The maps and solution equations are explicit inputs.
 No boundedness, inverse existence, spectral inertia theorem, or arithmetic
@@ -92,7 +91,7 @@ theorem block_nonnegative_iff
     exact add_nonneg (h u) (hpos (v + Y u))
 
 /-- Reconstruction at a Schur kernel vector, stated against every form test.
-The note separately proves membership in the actual operator domain. -/
+Membership in the actual operator domain requires a separate analytical argument. -/
 theorem kernel_reconstruction
     (a : LinearMap.BilinForm ℝ V) (l : LinearMap.BilinForm ℝ L)
     (b : L →ₗ[ℝ] V →ₗ[ℝ] ℝ) (Y : L →ₗ[ℝ] V)

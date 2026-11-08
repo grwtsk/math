@@ -34,9 +34,8 @@ NOT odd-sector positivity, and NOT a claim about nonzero reconstruction Y.
 Formal scope here: literal finite packet indices, endpoint and squared-norm
 identities, exact trial coefficients and rational final-margin arithmetic.
 The source operator, graph-core proof, interval evaluator correctness,
-source-series estimates, eigenvalues and Schur return are analytical in
-`documentation/mathematics/_support/reviews/weil-endpoint-sign-obstruction.md`.
-They are not proved by naming them in this module. The independent Python
+source-series estimates, eigenvalues and Schur return require separate
+analytical arguments. They are not proved by naming them in this module. The independent Python
 integer-interval computation is not imported as a Lean theorem or axiom.
 
 AI-assisted manual source drafting. Elaboration, fresh kernel checking,

@@ -111,10 +111,7 @@ assurance and un-replayed multi-million-packet data.
 
 ## 3. Independent replay of one ACTUAL stored 48x48 packet
 
-The existing static source-backed manifest is
- documentation/mathematics/_verification/targets/
- chi3-radius-three-physical-packet-20261107.json,
- blob 7a65994a3868cc5c456ebf127ca0765547e6f0ed.
+Historical manifest blob: 7a65994a3868cc5c456ebf127ca0765547e6f0ed.
 At center 300081451003/1000, radius 5, the stored integer midpoint
 matrix M has denominator 2^96. Put
  B_ij=10^11*M_ij + (i=j ? 2^96 : 0).

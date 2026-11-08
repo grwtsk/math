@@ -17,9 +17,6 @@ import Mathlib.Tactic.Ring
 /-!
 # Arithmetic rows and endpoint cancellation for a low Weil Schur enclosure
 
-Analytical argument and exact consumer:
-`documentation/mathematics/_support/reviews/weil-low-schur-enclosure.md`.
-
 Sources: Connes--Consani--Moscovici, Zeta Spectral Triples,
 arXiv:2511.22755v1, (3.19)--(3.20), Sections 3--4; the pinned local periodic
 comparison 704c9ad46d3a27b9485f51d53fc0b67d48fec7b0. The source Fourier
@@ -36,7 +33,7 @@ never asserted to be a bounded functional on the logarithmic form domain.
 
 The infinite boundary series, Fourier identification, full operator-domain
 Schur congruence, Galerkin residual estimate and spectral inertia return are
-analytical proofs in the note, NOT fully formalized by this file. No cofinal
+separate analytical arguments, NOT fully formalized by this file. No cofinal
 low-Schur sign, genuine-ground comparison, RH or Dirichlet GRH is claimed.
 
 Elaboration, fresh kernel checking, transitive axiom audit and independent

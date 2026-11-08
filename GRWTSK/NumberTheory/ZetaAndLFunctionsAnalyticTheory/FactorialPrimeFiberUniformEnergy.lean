@@ -23,9 +23,6 @@ There are two mathematically distinct budgets:
   asserted Lean theorem. The existing all-rate dense complement/RH-facing
   `UniformSignedWaveformEnergyBudget` is NOT proved or instantiated.
 
-The successful mathematical derivation of the infinite factorial tail is in
-`documentation/mathematics/_support/reviews/
-uniform-energy-reflected-factorial-fibers-and-dense-matching-gate.md`.
 Formal acceptance requires separate compilation, fresh kernel replay,
 expected-type check, and transitive axiom audit at this exact source.
 -/

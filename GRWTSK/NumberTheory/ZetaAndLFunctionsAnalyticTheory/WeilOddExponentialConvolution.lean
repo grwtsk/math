@@ -8,8 +8,7 @@ import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
 
 Local attribution is to grwtsk contributors.
 
-The calculation isolates one exponential in the kernel expansion used in
-`documentation/mathematics/_support/reviews/weil-periodic-boundary.md`.
+The calculation isolates one exponential in the periodic-boundary kernel expansion.
 Split the window at the observation point and use the exponential-sine
 primitive with opposite rate signs on the two intervals. The interior
 cosine terms cancel. The endpoint sine terms vanish at the actual

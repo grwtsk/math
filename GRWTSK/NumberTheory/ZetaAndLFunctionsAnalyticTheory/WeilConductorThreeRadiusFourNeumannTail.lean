@@ -159,7 +159,6 @@ The closed positive originalGamma form has its actual selfadjoint spectral heat 
 
 Exact standalone guard: /private/tmp/q3_tent_complement_20261107_verify.py. Payload: /private/tmp/q3_tent_complement_20261107.json. The mathematical source comparison and universal proofs are written, not kernel verified; the finite guard was executed with unbounded integers/rationals at the explicitly recorded scope.
 
-
 ## Explicit heat, exhaustive coverage and dependent lossless readback
 
 Keep H equal to the REAL ODD physical L2([-4,4],dt) space and the actual
@@ -298,12 +297,9 @@ obligation, not a field or instance supplied by this construction.
 
 Original static payload /private/tmp/q3_tent_complement_20261107.json:
 SHA256 7ce9b7fa9710a5a8634dd2377d11c21df2114161d23c728a76628a162566c060.
-The maintained static data are
- documentation/mathematics/_verification/specifications/NumberTheory/
- ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourResidualHead/
- data/neumann_tail.json.
-It contains the FULL365 signed rows and all finite Gamma32 data, not just
-these aggregate margins or a digest. The original historical checker is
+The historical payload contained the full 365 signed rows and all finite
+Gamma32 data. These aggregate margins and the digest do not replace
+those data for reproduction. The original historical checker is
 /private/tmp/q3_tent_complement_20261107_verify.py, SHA256
 f9b374a652e8bcb3d3caecd33de3c106af375a95059845ee0e24d4833f962404.
 

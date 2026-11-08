@@ -10,9 +10,7 @@ import Mathlib.Tactic.Ring
 
 Local attribution is to grwtsk contributors.
 
-The window and direction of translation are those of the periodic comparison
-in `documentation/mathematics/_support/reviews/weil-periodic-boundary.md`,
-Section 2. Before the wrap point the two squared differences agree. After
+The window and direction of translation are those of the periodic comparison. Before the wrap point the two squared differences agree. After
 the wrap point, zero extension identifies the two terms of the wrapped
 difference with whole-line differences at the original and translated
 arguments. The elementary square estimate charges both terms with factor

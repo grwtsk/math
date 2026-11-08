@@ -13,8 +13,6 @@ Local attribution is to grwtsk contributors.
 The rates are those of the actual parity-dependent gamma kernel in
 `WeilGammaData`. The periodic multiplier uses the scalar summand from
 `WeilPeriodicBoundary` with the factor of two from periodic translation.
-The base-parity formulas are those in Sections 2, 4, and 5 of
-`documentation/mathematics/_support/reviews/weil-periodic-boundary.md`.
 
 Each summand is nonnegative and bounded by a constant times `(j+1)^(-3)`.
 The rational difference identity gives monotonicity in absolute frequency.

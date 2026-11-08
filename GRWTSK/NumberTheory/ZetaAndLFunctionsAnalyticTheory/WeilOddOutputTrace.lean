@@ -8,14 +8,11 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilLowSchurEnclosure
 /-!
 # Odd arithmetic rows and the output endpoint functional
 
-Consumer and complete analytical argument:
-`documentation/mathematics/_support/reviews/weil-odd-output-trace.md`.
-
 Source: Connes--Consani--Moscovici, *Zeta Spectral Triples*,
 arXiv:2511.22755v1, (3.19)--(3.20), Section 4. The literal prime signal is
 REUSED from `LowSchur`, including every prime power in the support cutoff.
 For sine coefficients the numerator is m*p_n - n*p_m, not m*p_m - n*p_n.
-The analytical note extracts the signed output-endpoint functional and then
+The analytical argument extracts the signed output-endpoint functional and then
 the input derivative trace. It proves full remote-tail estimates of orders
 L^(-1), L^(-3), and L^(-5) in the stated directions, with every pole and
 boundary response retained. It gives no cofinal low-Schur sign.
@@ -24,7 +21,7 @@ Formal scope HERE: real rational row identities, a quantitative prime remainder,
 finite sums, literal finite boundary signals and the normalization of the finite
 output endpoint expression. Infinite-series convergence, Fourier identification,
 operator norms, asymptotic tail Gram convergence and spectral consequences are
-analytical work in the note, not formal consequences of this file alone.
+analytical work outside this module, not formal consequences of this file alone.
 
 No replacement RH/GRH predicate, assumed cofinal certificate, or new operator
 boundary condition is introduced. Compilation/elaboration, fresh kernel checking,
@@ -144,7 +141,7 @@ theorem odd_pole_split (u : ℝ) (hu : u ≠ 0) :
   field_simp [hu, hd]
   <;> ring
 
-/-- Literal finite boundary series. Its omitted infinite tail is priced in the note. -/
+/-- Literal finite boundary series. Its omitted infinite tail requires a separate analytical estimate. -/
 def frequency (T : ℝ) (n : ℕ) : ℝ := Real.pi * (n : ℝ) / T
 
 def boundarySignalPartial (T : ℝ) (J n : ℕ) : ℝ :=

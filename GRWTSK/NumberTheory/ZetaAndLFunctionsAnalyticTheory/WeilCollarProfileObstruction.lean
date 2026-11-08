@@ -11,9 +11,8 @@ import Mathlib.Tactic
 /-!
 # Finite algebra for theta-derivative physical-collar witnesses
 
-The complete analytical source is
-`documentation/mathematics/_support/reviews/weil-collar-profile-obstruction.md`.
-For the FULL CCM form (arXiv:2511.22755v1, (3.19)--(3.20)), that note proves:
+The analytical obstruction concerns the FULL CCM form
+(arXiv:2511.22755v1, (3.19)--(3.20)):
 if every admissible odd inner/collar pair obeys
 `Q (u+f) >= gamma_k * |inner e_k f|^2`, where
 `T_k = log k / 2` and `e_k` is asymptotically the normalized odd flat physical
@@ -33,7 +32,7 @@ coefficient positivity, and scalar normalization checks. The genuine theta
 series, differentiation of that series, all-degree determinant, explicit
 formula, operator domain, integrals, asymptotics and source theorem are not
 formalized by this module. Slope functions below are literal polynomials;
-their analytical derivative identification is in the note.
+their analytical derivative identification is outside this module.
 
 Sources: the supplied rank-one saturation and weighted-residual notes;
 Connes arXiv:2602.04022v1, Section 6.6; CCM as above; DLMF 18.5.12 and

@@ -11,10 +11,7 @@ import Mathlib.Tactic.Ring
 /-!
 # Scalar checks for the full Weil hard-cutoff residual obstruction
 
-Analytical record:
-  documentation/mathematics/_support/reviews/weil-hard-cutoff-residual.md
-
-The note proves an obstruction for the hard cutoff of the limiting Xi kernel,
+The analytical argument establishes an obstruction for the hard cutoff of the limiting Xi kernel,
 NOT the source's finite-parameter prolate approximation. Its arithmetic input is
 Connes--Consani--Moscovici, arXiv:2511.22755v1, (3.7)--(3.11), (3.19).
 The normalization audit concerns the printed equation (13) in Alain Connes,
@@ -24,7 +21,7 @@ THIS MODULE covers only the scalar algebra specified in each declaration.
 It does not formalize the global radical identity, the closed Weil form,
 operator-domain or boundary estimates, min--max, the prime-tail bound, the
 analytic hard-cutoff theorem, RH, or Dirichlet GRH. The hypotheses of the scalar
-inequalities are proved analytically for the explicit trials in the note, not
+inequalities are proved analytically for the explicit trials outside this module, not
 asserted to be discharged by these declarations.
 
 Elaboration: NOT_RUN. Fresh kernel check: NOT_RUN. Transitive axiom audit:

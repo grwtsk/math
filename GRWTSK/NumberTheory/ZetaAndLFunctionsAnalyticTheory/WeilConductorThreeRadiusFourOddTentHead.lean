@@ -5,9 +5,6 @@ Authors: grwtsk contributors.
 Exact original source: Connes--Consani--Moscovici,
 "Zeta Spectral Triples", arXiv:2511.22755v1, equations (3.19)--(3.20);
 original chi3 parity-one source in WeilConductorThreeRadiusFourOddEdges.
-Static EXACT INTEGER evidence:
-documentation/mathematics/_verification/targets/
-chi3-radius-four-odd-tent-head-20261107.json.
 Independent Python Fraction + Python integer Bareiss and
 JavaScript BigInt integer Bareiss replays were executed.
 Lean parsing/elaboration, fresh kernel replay and transitive axiom audit:

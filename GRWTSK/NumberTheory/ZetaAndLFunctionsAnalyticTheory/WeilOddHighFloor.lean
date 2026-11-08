@@ -8,8 +8,7 @@ import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilOddPeriodicDiagon
 Local attribution is to grwtsk contributors.
 
 The literal gamma form and the prime energy are those of
-`WeilOddHighComplement`, in the window and normalization of Section 5
-of `documentation/mathematics/_support/reviews/weil-periodic-boundary.md`.
+`WeilOddHighComplement`, with the same window and normalization.
 This proof uses the direct wrap bound. The nonnegative gamma kernel
 allows multiplication and integration of that bound, with integrability
 of the literal gamma integrand supplying the majorant. The resulting

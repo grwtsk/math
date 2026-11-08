@@ -4,9 +4,6 @@ Independent algebraic source candidates for the three-phase residual metric.
 The direct Gram and diagonalized formulas are proved as separate identities,
 with no reliance on a source-unrelated gauge-group hypothesis.
 
-Their analytic derivations and hostile cases are independently documented at
-documentation/mathematics/_support/reviews/three-phase-residual-analytic-closure.md
-
 Status: SOURCE_CANDIDATE. Compilation, fresh kernel checking and transitive
 axiom audit: NOT_RUN. No PDE, Yang--Mills or QCD theorem is asserted.
 -/

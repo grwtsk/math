@@ -326,11 +326,7 @@ compression is used, compose only with a separately proved roundtrip.
 
 ## 8. Exact evidence and verification scope
 
-The canonical publication manifest is
-documentation/mathematics/_verification/specifications/NumberTheory/
-ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourPaidPacket/manifest.json.
-Its complete retained files aredata/certificate.json anddata/factor.f64le,
-relative to that manifest directory. These are the full byte artifacts,
+Reproduction requires the complete certificate JSON and factor byte array,
 not hashes standing in for arrays. The original construction paths below
 record provenance and do not assert that scratch storage is publication.
 

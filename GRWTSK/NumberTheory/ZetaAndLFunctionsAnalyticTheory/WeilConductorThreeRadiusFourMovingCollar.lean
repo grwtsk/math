@@ -9,9 +9,6 @@ WeilConductorThreeRadiusFourInventory (chi3 conductor3, parity1),
 with the physical odd form conventions of
 WeilConductorThreeRadiusFourEdgeSchur.
 Predecessor: WeilConductorThreeRadiusFourNarrowCollar.
-Static exact signed-source inventory upper-price evidence:
-documentation/mathematics/_verification/targets/
-chi3-radius-four-moving-collar-20261107.json.
 Base source pin grwtsk/math@4e1c06f5bb81dfb984d84bc8ec28abfce0b02316.
 
 AI-assisted analysis; independent integer/Fraction and BigInt exact

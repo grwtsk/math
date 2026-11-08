@@ -18,8 +18,7 @@ number of terms, when N*u <= 1 <= (N+1)*u and 0<u<=1. The second profile is
 x*p'(x), whose integral also vanishes. It controls the logarithmic derivative
 of the actual multiplicative summation map in the analytical consumer.
 
-Consumer: ProlateTraceCorrection and the source-exact full-operator estimate
-in documentation/mathematics/_support/reviews/prolate-trace-correction.md.
+Consumer: ProlateTraceCorrection.
 The finite-prolate seed has two different trace conditions; this corrector
 repairs one without changing the other. It supplies neither a Weil spectral
 lower bound nor a comparison with a genuine ground eigenfunction.

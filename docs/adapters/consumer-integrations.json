@@ -278,8 +278,7 @@
           }
         }
       ],
-      "source_commit": "fd6f3d97e80088c09262adbf5fa7ccce8467d504",
-      "profile": "documentation/mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-unit-ball-residual-20261029.profile.json"
+      "source_commit": "fd6f3d97e80088c09262adbf5fa7ccce8467d504"
     },
     {
       "provider": "sphere-packing",
@@ -367,9 +366,7 @@
       "independent_checker": "UNSUPPLIED",
       "source_supply": {
         "classification": "STATIC_MATHEMATICAL_VERIFICATION_INPUT_SPECIFICATION",
-        "expected_pnt_inputs": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-patched-source-inputs-20261030.json",
         "expected_pnt_inputs_sha256": "77623fa638b266fbd9e607ed307d9a68cc4b2876b3154d0ea984241b3ea4901b",
-        "remaining_closure_obligations": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-source-supply-closure-20261030.json",
         "remaining_closure_obligations_sha256": "e03bd64f6491f7f8e9e9c8a81375c8b32d6400f5e587d996dd56f19c359ec3b4",
         "status": "SUPPORTED_DERIVED_SOURCE_AND_ASSET_SUPPLIERS_UNSUPPLIED; native facets NOT_RUN; original historical failed-profile outcome preserved",
         "remaining": [
@@ -379,7 +376,6 @@
         "native_scope_boundary": "Original weighted-model-growth four and Anthropic Fermat six remain separate active obligations; no root dependency or import promotion.",
         "strong_patch_fidelity": {
           "classification": "STATIC_SOURCE_SUPPLY_FAILURE_SPECIFICATION",
-          "target": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/openai-liouville-strongpnt-patch-fidelity-20261030.json",
           "target_sha256": "9bba19ed5a48a1550e4d1151a191961c74ebfadf327125ce901c39fb623ce3a3",
           "required_current_decision": "REJECT_CURRENT_RAW_PATCH",
           "patch_blob": "0269959e81418ffd738958089922f4eca4fec787",
@@ -483,7 +479,6 @@
         "IEANTN contributors"
       ],
       "license": "Apache-2.0; actual upstream bylines preserved through dependency",
-      "profile": "documentation/mathematics/_verification/targets/NumberTheory/MultiplicativeNumberTheory/ieantn-consecutive-square-20261029.profile.json",
       "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
       "verification": {
         "compilation": "NOT_RUN",
@@ -579,7 +574,6 @@
         }
       ],
       "license": "Apache-2.0; actual upstream public attribution preserved",
-      "profile": "documentation/mathematics/_verification/targets/Combinatorics/pfr-dense-submodule-slice-20261029.profile.json",
       "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
       "verification": {
         "compilation": "NOT_RUN",
@@ -678,7 +672,6 @@
       "root_consumer_blob": "ac4085f88cc6ecc5c1d0a0146b17defb3bfb1d0f",
       "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
       "license": "Apache-2.0; original E8 and Mathlib public bylines retained",
-      "profile": "documentation/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-finite-covering-20261029.profile.json",
       "verification": {
         "compilation": "NOT_RUN",
         "fresh_independent_kernel_replay": "NOT_RUN",
@@ -760,7 +753,6 @@
       },
       "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
       "license": "Apache-2.0; Anthropic/Claude attribution and modified PNT+ vendor notices preserved; root envelope method retains local MIT attribution",
-      "profile": "documentation/mathematics/_verification/targets/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/anthropic-primitive-zero-readouts-20261029.profile.json",
       "verification": {
         "compilation": "NOT_RUN",
         "fresh_independent_kernel_replay": "NOT_RUN",
@@ -950,7 +942,6 @@
         "expected_interface": "NOT_RUN"
       },
       "independent_checker": "UNSUPPLIED",
-      "profile": "documentation/mathematics/_verification/targets/Combinatorics/apap-affine-support-20261029.profile.json",
       "missing_bridges": [
         "Exact native4.36.0-rc1 qualification, full source/dependency closure preparation, fresh compilation, expected-type consumers, independent replay and complete transitive axiom acceptance remain required.",
         "No integer theorem: APAP.Integer.int is a literal sorry at the exact upstream pin and is excluded.",
@@ -1061,7 +1052,6 @@
         "complete_module_discovery": "NOT_RUN",
         "complete_transitive_axiom_audit": "NOT_RUN"
       },
-      "profile": "documentation/mathematics/_verification/targets/NumberTheory/DiophantineEquations/anthropic-fermat-integer-fibers-20261029.profile.json",
       "independent_checker": "UNSUPPLIED",
       "missing_bridges": [
         "Fresh exact-source native compilation, complete module discovery, expected types and transitive axiom audit via supported managed4.33.1 route after owner/resource/policy admission.",
@@ -1210,7 +1200,6 @@
         "complete_transitive_axiom_audit": "NOT_RUN"
       },
       "independent_checker": "UNSUPPLIED",
-      "profile": "documentation/mathematics/_verification/targets/NumberTheory/DiophantineEquations/formal-conjectures-erdos-moser-positive-20261029.profile.json",
       "missing_bridges": [
         "The right-hand universal exclusion for exponents≥2 remains UNSUPPLIED.",
         "Root recursive model/cross-version import remains UNSUPPLIED.",
@@ -1339,7 +1328,6 @@
       "root_consumer_role": "Imported covering-number API source; actual source proof retains a local injection but returns only cardinal cost. New isolated E8 construction exposes the matching object and radius observation. No native version transport/root integration is supplied.",
       "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
       "license": "Apache-2.0; original E8 and Mathlib public bylines retained",
-      "profile": "documentation/mathematics/_verification/targets/ConvexAndDiscreteGeometry/GeneralConvexity/e8-cover-matching-20261029.profile.json",
       "profile_sha256": "85a8ec12b77652ba5639963a3bf100a6493b2cceb14f7aafe6779be91a06c181",
       "verification": {
         "compilation": "NOT_RUN",
@@ -1633,7 +1621,6 @@
         "source_copied_into_math": false,
         "Mathlib_license": "Apache-2.0 at the exact Mathlib LICENSE blob listed above; it does not extend a license to unrelated collected source."
       },
-      "profile": "documentation/mathematics/_verification/targets/NumberTheory/AdditiveNumberTheory/plby-subset-collision-20261030.profile.json",
       "profile_sha256": "142a7e019d51a615a0f2f5105852bb650e0d4e3b25c5ea62eee3f3d28c6832da",
       "verification": {
         "toolchain_qualification": "NOT_RUN",
@@ -2267,7 +2254,6 @@
       ],
       "classification": "SOURCE_PROOF_CANDIDATE_ACTUAL_MATHEMATICAL_CONSUMER",
       "license": "Apache-2.0; local attribution grwtsk contributors, selected Imperial/Mathlib public bylines and upstream notices preserved. Root MIT source unchanged.",
-      "profile": "documentation/mathematics/_verification/targets/NumberTheory/ArithmeticAlgebraicGeometryDiophantineGeometry/imperial-frey-denominator-20261030.profile.json",
       "profile_sha256": "0ff051af0e882179cc4db1ec413ea69a68d841b11984dbdf19f13025192448e4",
       "verification": {
         "toolchain_qualification": "NOT_RUN",
@@ -2456,7 +2442,6 @@
         "other_inspected_source": "WeightedResidualReadout.readout_vanishes_of_mass uses real mass budgets and separate readout identities; those source/model/mass suppliers are not produced by this complex Fourier limit."
       },
       "license": "Apache-2.0; public Carleson/Mathlib authorship and upstream notices preserved; local attribution grwtsk contributors.",
-      "profile": "documentation/mathematics/_verification/targets/FourierAnalysis/FourierAnalysisInOneVariable/carleson-convergent-readouts-20261030.profile.json",
       "profile_sha256": "f81ddd06d7712ea02418d8c37ec5e4fd1238e4c7a12afb84022de24a2452d1d6",
       "verification": {
         "toolchain_core_qualification": "NOT_RUN",
