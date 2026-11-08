@@ -475,6 +475,187 @@ theorem no_finite_spin_classifier_of_same_history
 
 end DeterministicSpinSourceObstruction
 
+/-!
+## Enumerable partial classifier, with explicit decidable premises
+
+The existing `prefixClassifier` is intentionally noncomputable:
+it uses Classical.choose on the proposition that a signature occurs in
+the source inventory. At a supplied finite source inventory there is a
+separate executable route when equality of complete dependent prefixes
+is DECIDABLE. The scan below examines an enumerated list of ORIGINAL
+sources and returns the type of the first exact signature match.
+
+This avoids a newly invented source object, changing the observation
+carrier, or conflating `none` with a negative type label. Its correctness
+requires typeOf to be constant on prefix fibers. If the observations,
+enumeration or equality decision are not executable, the theorem does
+not assert an effective runtime classifier. Source finiteness alone
+does not manufacture these algorithms.
+
+Proof comparison: structural induction on the finite source list proves
+both the exact missing-signature criterion and a real source witness for
+every successful answer. The existing `prefixClassifier_correct` has
+the same source-fiber requirement but used classical selection; agreement
+is only asserted on realized signatures, not arbitrary unknown inputs.
+-/
+
+section EnumerablePartialClassification
+
+variable {P : Type u} {Kind : Type v} {Obs : Nat → Type w}
+
+/-- A structurally recursive search over actual source identities.
+This definition uses the supplied equality decision procedure rather
+than `Classical.choose`, and has no finiteness assumption on `P`:
+only the explicit candidate list must be finite. -/
+def scanPrefix (typeOf : P → Kind)
+    (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)] :
+    List P → ((i : Fin (N + 1)) → Obs i.val) → Option Kind
+  | [], _ => none
+  | p :: ps, signature =>
+      if observationPrefix readout N p = signature then some (typeOf p)
+      else scanPrefix typeOf readout N ps signature
+
+/-- Search misses an input exactly when the explicitly supplied source
+list has no matching original observation signature. -/
+theorem scanPrefix_none_iff (typeOf : P → Kind)
+    (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    (sources : List P) (signature : (i : Fin (N + 1)) → Obs i.val) :
+    scanPrefix typeOf readout N sources signature = none ↔
+      ¬ ∃ p : P, p ∈ sources ∧
+        observationPrefix readout N p = signature := by
+  induction sources with
+  | nil => simp [scanPrefix]
+  | cons p ps ih =>
+      by_cases hp : observationPrefix readout N p = signature
+      · simp [scanPrefix, hp]
+      · simp [scanPrefix, hp, ih]
+
+/-- Every successful scan carries an actual source witness from the
+enumerated inventory and hence never fabricates an unseen label. -/
+theorem scanPrefix_has_source (typeOf : P → Kind)
+    (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    (sources : List P) (signature : (i : Fin (N + 1)) → Obs i.val)
+    (k : Kind)
+    (hk : scanPrefix typeOf readout N sources signature = some k) :
+    ∃ p : P, p ∈ sources ∧
+      observationPrefix readout N p = signature ∧ typeOf p = k := by
+  induction sources with
+  | nil =>
+      simp [scanPrefix] at hk
+  | cons p ps ih =>
+      by_cases hp : observationPrefix readout N p = signature
+      · have hsome : some (typeOf p) = some k := by
+          simpa only [scanPrefix, if_pos hp] using hk
+        exact ⟨p, by simp, hp, Option.some.inj hsome⟩
+      · have htail : scanPrefix typeOf readout N ps signature = some k := by
+          simpa [scanPrefix, hp] using hk
+        obtain ⟨q, hmem, hq, htype⟩ := ih htail
+        exact ⟨q, by simp [hmem], hq, htype⟩
+
+/-- If source labels agree on exact signature fibers, a finite list
+scan is correct for EVERY source actually present in that list. -/
+theorem scanPrefix_correct (typeOf : P → Kind)
+    (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    (sources : List P)
+    (hconstant : ∀ p q : P,
+      observationPrefix readout N p = observationPrefix readout N q →
+      typeOf p = typeOf q)
+    (p : P) (hmem : p ∈ sources) :
+    scanPrefix typeOf readout N sources (observationPrefix readout N p) =
+      some (typeOf p) := by
+  cases hscan : scanPrefix typeOf readout N sources
+      (observationPrefix readout N p) with
+  | none =>
+      have hmissing := (scanPrefix_none_iff typeOf readout N sources
+        (observationPrefix readout N p)).mp hscan
+      exact False.elim (hmissing ⟨p, hmem, rfl⟩)
+  | some k =>
+      obtain ⟨q, _, hq, htype⟩ :=
+        scanPrefix_has_source typeOf readout N sources
+          (observationPrefix readout N p) k hscan
+      exact congrArg some (htype.symm.trans (hconstant q p hq))
+
+/-- Executable once finite source enumeration and full-signature equality
+are actually decidable. The type label itself needs no equality test. -/
+def finiteSourceClassifier [Fintype P] [DecidableEq P]
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)] :
+    ((i : Fin (N + 1)) → Obs i.val) → Option Kind :=
+  scanPrefix typeOf readout N (Finset.univ.toList)
+
+/-- The enumerable classifier preserves the original `none` contract,
+including empty inventories and observations outside the source image. -/
+theorem finiteSourceClassifier_none_iff_unobserved
+    [Fintype P] [DecidableEq P]
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
+    (N : Nat) [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    (signature : (i : Fin (N + 1)) → Obs i.val) :
+    finiteSourceClassifier typeOf readout N signature = none ↔
+      ¬ ∃ p : P, observationPrefix readout N p = signature := by
+  simpa [finiteSourceClassifier] using
+    (scanPrefix_none_iff typeOf readout N
+      (Finset.univ.toList : List P) signature)
+
+/-- The finite enumerable classifier returns precisely the requested
+label for each source whenever the intended type is constant on
+complete observation-prefix fibers. -/
+theorem finiteSourceClassifier_correct
+    [Fintype P] [DecidableEq P]
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
+    (N : Nat) [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    (hconstant : ∀ p q : P,
+      observationPrefix readout N p = observationPrefix readout N q →
+      typeOf p = typeOf q)
+    (p : P) :
+    finiteSourceClassifier typeOf readout N
+      (observationPrefix readout N p) = some (typeOf p) := by
+  exact scanPrefix_correct typeOf readout N
+    (Finset.univ.toList : List P) hconstant p (by simp)
+
+/-- Every nonmissing enumerable result is justified by an actual
+source, independently of type-fiber constancy. -/
+theorem finiteSourceClassifier_has_source
+    [Fintype P] [DecidableEq P]
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
+    (N : Nat) [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    (signature : (i : Fin (N + 1)) → Obs i.val) (k : Kind)
+    (hk : finiteSourceClassifier typeOf readout N signature = some k) :
+    ∃ p : P, observationPrefix readout N p = signature ∧
+      typeOf p = k := by
+  change scanPrefix typeOf readout N
+    (Finset.univ.toList : List P) signature = some k at hk
+  obtain ⟨p, _, hp, htype⟩ :=
+    scanPrefix_has_source typeOf readout N
+      (Finset.univ.toList : List P) signature k hk
+  exact ⟨p, hp, htype⟩
+
+/-- The original pairwise-separation certificate now has a direct
+finite-list execution consumer. Source finiteness pays for the common
+horizon; a supplied decidable signature equality and finite source
+enumeration pay for the actual search. -/
+theorem finiteSourceClassifier_at_separationHorizon
+    [Fintype P] [DecidableEq P]
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
+    (witness : P → P → Nat)
+    [DecidableEq
+      ((i : Fin (separationHorizon witness + 1)) → Obs i.val)]
+    (distinguishes : ∀ p q : P, typeOf p ≠ typeOf q →
+      readout (witness p q) p ≠ readout (witness p q) q)
+    (p : P) :
+    finiteSourceClassifier typeOf readout (separationHorizon witness)
+        (observationPrefix readout (separationHorizon witness) p) =
+      some (typeOf p) := by
+  exact finiteSourceClassifier_correct typeOf readout
+    (separationHorizon witness)
+    (fun x y hxy =>
+      type_eq_of_prefix_eq typeOf readout witness distinguishes x y hxy) p
+
+end EnumerablePartialClassification
+
 /-! The infinite source obstruction also excludes actual correct finite
 decoders, not just a common pair-separation horizon. -/
 
