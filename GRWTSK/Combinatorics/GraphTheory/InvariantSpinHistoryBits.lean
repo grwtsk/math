@@ -258,4 +258,130 @@ theorem stageOrbitBit_pending {P : Type w} {Γ : Type*}
   simp [stageOrbitBit, eraseToSource_pending, decode_source]
 
 end SourceSpinReadout
+
+
+/-! ### Executable source-backed classification under finite symmetries
+
+The earlier orbitClassifier uses representative choice. This finite variant
+is a terminating list search when the source inventory and symmetry group
+are finite and source equality is decidable. The type map remains a required
+input; no unknown source type or unobserved signature is invented. -/
+
+namespace EffectiveOrbitClassifier
+
+variable {P Γ : Type*} [Group Γ] [MulAction Γ P]
+variable [Fintype Γ] [Fintype P] [DecidableEq P]
+
+open InvariantHistory
+
+def finiteSignature (p : P) : P → Bool :=
+  fun anchor => finiteOrbitBit (Γ := Γ) anchor p
+
+theorem finiteSignature_eq_orbitSignature (p : P) :
+    finiteSignature (Γ := Γ) p = orbitSignature (Γ := Γ) p := by
+  funext r
+  by_cases h : SameOrbit (Γ := Γ) r p
+  · have hf : finiteOrbitBit (Γ := Γ) r p = true :=
+      (finiteOrbitBit_correct (Γ := Γ) r p).2 h
+    have ho : orbitBit (Γ := Γ) r p = true :=
+      (orbitBit_true_iff (Γ := Γ) r p).2 h
+    exact hf.trans ho.symm
+  · have hf : finiteOrbitBit (Γ := Γ) r p = false := by
+      cases hc : finiteOrbitBit (Γ := Γ) r p with
+      | false => rfl
+      | true => exact False.elim (h ((finiteOrbitBit_correct (Γ := Γ) r p).1 hc))
+    have ho : orbitBit (Γ := Γ) r p = false := by
+      cases hc : orbitBit (Γ := Γ) r p with
+      | false => rfl
+      | true => exact False.elim (h ((orbitBit_true_iff (Γ := Γ) r p).1 hc))
+    exact hf.trans ho.symm
+
+def Matches (sig : P → Bool) (p : P) : Prop :=
+  ∀ a : P, finiteSignature (Γ := Γ) p a = sig a
+
+instance (sig : P → Bool) (p : P) : Decidable (Matches (Γ := Γ) sig p) := by
+  unfold Matches
+  infer_instance
+
+def find (sig : P → Bool) : List P → Option P
+  | [] => none
+  | p :: ps => if Matches (Γ := Γ) sig p then some p else find sig ps
+
+theorem find_sound (sig : P → Bool) (xs : List P) (q : P)
+    (h : find (Γ := Γ) sig xs = some q) : Matches (Γ := Γ) sig q := by
+  induction xs with
+  | nil => simp [find] at h
+  | cons p ps ih =>
+      by_cases hp : Matches (Γ := Γ) sig p
+      · have hpq : p = q := by simpa [find, hp] using h
+        subst q
+        exact hp
+      · exact ih (by simpa [find, hp] using h)
+
+theorem find_complete (sig : P → Bool) (xs : List P) (q : P)
+    (hmem : q ∈ xs) (hm : Matches (Γ := Γ) sig q) :
+    ∃ p : P, find (Γ := Γ) sig xs = some p := by
+  induction xs with
+  | nil => cases hmem
+  | cons x xs ih =>
+      by_cases hx : Matches (Γ := Γ) sig x
+      · exact ⟨x, by simp [find, hx]⟩
+      · have hne : q ≠ x := by
+          intro h
+          subst q
+          exact hx hm
+        have htail : q ∈ xs := (List.mem_cons.mp hmem).resolve_left hne
+        obtain ⟨p, hp⟩ := ih htail hm
+        exact ⟨p, by simp [find, hx, hp]⟩
+
+def findSource (sig : P → Bool) : Option P :=
+  find (Γ := Γ) sig (Finset.univ.toList)
+
+def classify {Kind : Type*} (typeOf : P → Kind) (sig : P → Bool) : Option Kind :=
+  (findSource (Γ := Γ) sig).map typeOf
+
+/-- Every successful lookup has a genuine matching source representative. -/
+theorem classify_has_source {Kind : Type*} (typeOf : P → Kind)
+    (sig : P → Bool) (kind : Kind)
+    (h : classify (Γ := Γ) typeOf sig = some kind) :
+    ∃ p : P, Matches (Γ := Γ) sig p ∧ typeOf p = kind := by
+  unfold classify at h
+  cases hc : findSource (Γ := Γ) sig with
+  | none => simp [hc] at h
+  | some p =>
+      have hf : find (Γ := Γ) sig (Finset.univ.toList) = some p := by
+        simpa [findSource] using hc
+      have hm : Matches (Γ := Γ) sig p :=
+        find_sound (Γ := Γ) sig (Finset.univ.toList) p hf
+      have ht : typeOf p = kind := by simpa [hc] using h
+      exact ⟨p, hm, ht⟩
+
+/-- A finite source inventory is completely typed when its types respect
+    the declared group action. No decision procedure for Kind is required. -/
+theorem classify_correct {Kind : Type*} (typeOf : P → Kind)
+    (invariant : ∀ g : Γ, ∀ p : P, typeOf (g • p) = typeOf p)
+    (p : P) :
+    classify (Γ := Γ) typeOf (finiteSignature (Γ := Γ) p) = some (typeOf p) := by
+  have mem : p ∈ (Finset.univ : Finset P).toList := by simp
+  have hm : Matches (Γ := Γ) (finiteSignature (Γ := Γ) p) p := by
+    intro anchor
+    rfl
+  obtain ⟨q, hq⟩ := find_complete (Γ := Γ)
+    (finiteSignature (Γ := Γ) p) (Finset.univ.toList) p mem hm
+  have hmatch : Matches (Γ := Γ) (finiteSignature (Γ := Γ) p) q :=
+    find_sound (Γ := Γ) (finiteSignature (Γ := Γ) p) _ q hq
+  have hsig : finiteSignature (Γ := Γ) q = finiteSignature (Γ := Γ) p := by
+    funext a
+    exact hmatch a
+  have ht : typeOf q = typeOf p := by
+    apply type_eq_of_orbitSignature_eq (Γ := Γ) typeOf invariant q p
+    calc
+      orbitSignature (Γ := Γ) q = finiteSignature (Γ := Γ) q :=
+        (finiteSignature_eq_orbitSignature (Γ := Γ) q).symm
+      _ = finiteSignature (Γ := Γ) p := hsig
+      _ = orbitSignature (Γ := Γ) p :=
+        finiteSignature_eq_orbitSignature (Γ := Γ) p
+  simp [classify, findSource, hq, ht]
+
+end EffectiveOrbitClassifier
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy
