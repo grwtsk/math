@@ -6,6 +6,34 @@ navigation does not establish that an isolated build or upstream import exists.
 
 Local content attribution: grwtsk contributors. This is a mathematical **source and import boundary**; it is NOT a functioning compiled Tau Ceti dependency, not a verification request, and not an authorization to change the root toolchain.
 
+<details>
+<summary>Source-boundary section index</summary>
+
+- [Immutable source pin and original licenses](#source-section-immutable-source-pin-and-original-licenses)
+- [Actual cohomological instantiation map, not a chosen spectrum](#source-section-actual-cohomological-instantiation-map-not-a-chosen-spectrum)
+- [New missing genuine source obligation](#source-section-new-missing-genuine-source-obligation)
+- [Derived-height and complex-jet gates](#source-section-derived-height-and-complex-jet-gates)
+- [Finite-level Kummer local cochain condition constructed (2026-11-01)](#source-section-finite-level-kummer-local-cochain-condition-constructed-2026-11-01)
+- [Corrected p-power compatible local point fiber and global Selmer limit (2026-11-01)](#source-section-corrected-p-power-compatible-local-point-fiber-and-global-selmer-limit-2026-11-01)
+- [Genuine finite elliptic GalRep and Weil-to-Tate-dual port (2026-11-02)](#source-section-genuine-finite-elliptic-galrep-and-weil-to-tate-dual-port-2026-11-02)
+- [Weil surjectivity established mathematically; local Kummer annihilator adjunction isolated (2026-11-02)](#source-section-weil-surjectivity-established-mathematically-local-kummer-annihilator-adjunction-isolated-2026-11-02)
+- [Canonical H¹ Kummer transport and normalized Weil-cup boundary (2026-11-02)](#source-section-canonical-h1-kummer-transport-and-normalized-weil-cup-boundary-2026-11-02)
+- [Abelian Tate pairing from genuine finite Weil cup: geometric theta/divisor gate (2026-11-02)](#source-section-abelian-tate-pairing-from-genuine-finite-weil-cup-geometric-theta-divisor-gate-2026-11-02)
+- [Actual elliptic theta function group, strict Kummer vanishing and polarization (2026-11-02)](#source-section-actual-elliptic-theta-function-group-strict-kummer-vanishing-and-polarization-2026-11-02)
+- [ORIGINAL geometric theta group and strict Kummer nonabelian trivialization (2026-11-02)](#source-section-original-geometric-theta-group-and-strict-kummer-nonabelian-trivialization-2026-11-02)
+- [Theta sign-convention optimization and source-central commutators (2026-11-02)](#source-section-theta-sign-convention-optimization-and-source-central-commutators-2026-11-02)
+- [Genuine theta scalar-to-Brauer H² and local Selmer consumer connection (2026-11-02)](#source-section-genuine-theta-scalar-to-brauer-h2-and-local-selmer-consumer-connection-2026-11-02)
+- [Source-exact Mumford theta GroupExtension and genuine Galois scalar factor (2026-11-02)](#source-section-source-exact-mumford-theta-groupextension-and-genuine-galois-scalar-factor-2026-11-02)
+- [Finite selected-theta-function Galois continuity instead of assumed scalar cochain continuity (2026-11-02)](#source-section-finite-selected-theta-function-galois-continuity-instead-of-assumed-scalar-cochain-continuity-2026-11-02)
+- [Genuine elliptic function-field Galois finite descent closes the theta-scalar continuity premise (2026-11-02)](#source-section-genuine-elliptic-function-field-galois-finite-descent-closes-the-theta-scalar-continuity-premise-2026-11-02)
+- [Correction: discrete theta topology, reuse the existing finite-orbit theorem, common open stabilizer (2026-11-02)](#source-section-correction-discrete-theta-topology-reuse-the-existing-finite-orbit-theorem-common-open-stabilizer-2026-11-02)
+- [H¹ representative-independent theta obstruction and real μ_n commutator (2026-11-02)](#source-section-h1-representative-independent-theta-obstruction-and-real-n-commutator-2026-11-02)
+- [Actual theta commutator is alternating biadditive: reduce original Weil comparison to ONE basis-function identity (2026-11-02)](#source-section-actual-theta-commutator-is-alternating-biadditive-reduce-original-weil-comparison-to-one-basis-function-identity-2026-11-02)
+
+</details>
+
+<a id="source-section-immutable-source-pin-and-original-licenses"></a>
+
 ## Immutable source pin and original licenses
 
 Upstream TauCetiProject/TauCeti commit `2bdb755239d3bd84760e99bc83166bdf7cc75a6b` on main, upstream attribution The Tau Ceti contributors, Apache-2.0:
@@ -14,6 +42,8 @@ Upstream TauCetiProject/TauCeti commit `2bdb755239d3bd84760e99bc83166bdf7cc75a6b
 - `TauCeti/RepresentationTheory/Homological/ContCohomology/SelmerStructure.lean`, blob `cd7c633795865655521f955a6bd3ba52a6bf30d4`, defining `SelmerStructure.localization`, `SelmerStructure.localCondition`, `SelmerStructure.selmerGroup` and `mem_selmerGroup_iff` at **H¹ level**.
 - `TauCeti/AlgebraicGeometry/EllipticCurve/GaloisCohomology/Selmer/Basic.lean`, blob `5056b9a9c7fba239f4a1d1395c3a00cbdc94ffa1`, actual elliptic torsion coefficients `W.TorsionCoeff m`, all chosen local field-extension families, `W.selmerStructure`, `W.selmerGroup`, Kummer injection, Sha exactness and surjectivity.
 - Toolchain `leanprover/lean4:v4.36.0-rc1`, `lean-toolchain` blob `2afd38716ad6182657562d3dac3c98461c1385f2`. `grwtsk/math` remains Lean `v4.34.1` with pinned Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`. No external-source compilation or compatible import is established by this document.
+
+<a id="source-section-actual-cohomological-instantiation-map-not-a-chosen-spectrum"></a>
 
 ## Actual cohomological instantiation map, not a chosen spectrum
 
@@ -27,6 +57,8 @@ No numerical rank or finite Sha bound enters these definitions.
 The genuine cochain-level source for Nekovář's mapping fiber is separate: choose the original continuous global cochain complex `C_G^•= C_cont^•(G_Q,E[m])`, local complexes `C_{L,v}^•=C_cont^•(G_{Q_v},E[m])`, and an actual local-condition complex `U_v^+` with a cochain map `i_v^+:U_v^+→C_{L,v}^•`. Define `U^+` and `C_L` as appropriate products over all places, with topology/completions and cohomological finiteness addressed as in Nekovář. Supply true cochain restriction `res^•:C_G^•→C_L^•`, not just the descended `H¹` map. The exact shifted cone `Cone(C_G ⊕ U^+ → C_L)[-1]` is the construction in
 `GRWTSK/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/SelmerMappingFiberDegreeTwo.lean` at degrees 0–2, using the real additive homomorphism API.
 
+<a id="source-section-new-missing-genuine-source-obligation"></a>
+
 ## New missing genuine source obligation
 
 The inspected Tau Ceti `SelmerStructure` supplies **subgroups of local H¹**, not source `U_v^+` cochain complexes. The continuous cochain maps and their square-zero proofs exist, but the required `U_v^+`, their inclusions and local comparison `H¹(U_v^+)→H¹(C_{L,v})` are not established in the inspected files.
@@ -37,6 +69,8 @@ A valid provider must separately construct or import cochain-level local conditi
     -> ker(H¹(C_G)⊕H¹(U)→H¹(C_L)) -> 0.
 A separate injection of H¹(U) into H¹(local), with image the local condition, identifies the right kernel with the actual degree-one Selmer group; vanishing of the H⁰ cokernel is additionally needed before promoting H¹(fiber) to that Selmer group.
 
+<a id="source-section-derived-height-and-complex-jet-gates"></a>
+
 ## Derived-height and complex-jet gates
 
 Only AFTER constructing the actual compatible source Selmer mapping fiber may a p-adic Iwasawa deformation \(d(t)\) and its first/second Bockstein coefficients be defined from real Galois-cohomological data. Prove its \(d(t)^2=0\) identities, local/global duality and derived pairings at the original coefficient field. The previous `DerivedBocksteinSelmerBoundary.lean` is generic module algebra; its corrected source blob `da3fd136ec954e523556ed066ee67cc219506404` repairs four sign-orientation typos without asserting this actual deformation.
@@ -44,6 +78,8 @@ Only AFTER constructing the actual compatible source Selmer mapping fiber may a 
 Nekovář, *Selmer complexes* (Astérisque 310, 2006), https://www.numdam.org/item/AST_2006__310__R1_0/, is the primary mapping-cone and local-duality source. Howard, *Derived p-adic heights and p-adic L-functions*, arXiv:1202.6343 (2012), and Sano, *Derived Bockstein regulators*, arXiv:2308.08875 (2023), concern \(p\)-adic derivative targets, not the genuine complex \(L(E,s)\) Taylor-jet dual. No comparison with complex BSD rank, source Néron–Tate regulator, \(\Sha\), Tamagawa, torsion or period factors is obtained from the mere mapping-fiber construction.
 
 Compilation NOT_RUN, fresh kernel replay NOT_RUN, transitive axiom audit NOT_RUN, external Tau Ceti adapter NOT_COMPILED. No sorry/axiom declaration, no root import or toolchain change. This document is source mathematics only and should be consumed only after a genuine compatible source port is reviewed.
+
+<a id="source-section-finite-level-kummer-local-cochain-condition-constructed-2026-11-01"></a>
 
 ## Finite-level Kummer local cochain condition constructed (2026-11-01)
 
@@ -54,6 +90,8 @@ A generic source proof candidate under pinned grwtsk/math Mathlib is `GRWTSK/Cat
 **Verification distinction:** the classical local cohomological identity is proved mathematically from the real Kummer long exact sequence. Both NEW Lean source files are UNCOMPILED candidates, with syntax/parsing NOT_RUN, fresh kernel checking NOT_RUN, full transitive axiom audit NOT_RUN, Tau Ceti compatible adapter compilation NOT_RUN. No CI or execution is dispatched by this document; there are no new `sorry` or `axiom` declarations. Upstream imports remain isolated and no default root imports or dependency pins are changed.
 
 **Unclosed source consumers:** build full \(U_v^+\) continuous cochain complexes in all degrees in a compatible Lean environment and prove \(H^1(i_v^+)\) image correspondence in the kernel; construct restriction maps for the global absolute Galois group to every local \(G_v\) and correctly assemble the place family with archimedean/restricted-product conventions. Passage to \(T_pE\), Bloch–Kato/Greenberg conditions and derived \(p\)-adic Iwasawa Selmer complexes requires independent derived inverse-limit and local-model comparisons. These are not proofs of arbitrary-rank BSD or the complex Hasse–Weil central-jet equality.
+
+<a id="source-section-corrected-p-power-compatible-local-point-fiber-and-global-selmer-limit-2026-11-01"></a>
 
 ## Corrected p-power compatible local point fiber and global Selmer limit (2026-11-01)
 
@@ -68,6 +106,8 @@ New isolated source-typed Tau Ceti candidate `documentation/adapters/tauceti-ell
 The compatible maps multiply by p on geometric torsion/cochain and local rational points, but induce **REDUCTION** on E(Q_v)/p^n E(Q_v); the true Kummer cocycle computation proves the difference. The local derived inverse limit has H0=T_p(E(Q_v)), which is NOT automatically zero at archimedean places, and H1=E(Q_v)^hat_p after checking the finite-torsion and surjective quotient Mittag-Leffler hypotheses. The full global Selmer fiber at finite levels uses these corrected U_v,n^+ and retains all local H0 before canceling its global H0 cokernel by actual isomorphism. No source file claims a completed all-places/restricted-product or archimedean duality proof inside Lean.
 
 No root imports or external dependency changes. The mathematical result is classical; local source compilation NOT_RUN, kernel replay NOT_RUN, axiom audit NOT_RUN, compatible Tau Ceti adapter compilation NOT_RUN. No runner or CI action is inferred or dispatched. General BSD-I/II and the noncircular comparison to complex Hasse-Weil L-jets are still OPEN.
+
+<a id="source-section-genuine-finite-elliptic-galrep-and-weil-to-tate-dual-port-2026-11-02"></a>
 
 ## Genuine finite elliptic GalRep and Weil-to-Tate-dual port (2026-11-02)
 
@@ -101,6 +141,8 @@ This is a source-only adapter; **parsing, Lean compilation, compatible
 upstream integration, fresh kernel checking and transitive axiom
 auditing are NOT_RUN**. No root import/toolchain change, new
 axiom/sorry/admit or verification dispatch follows from publication.
+
+<a id="source-section-weil-surjectivity-established-mathematically-local-kummer-annihilator-adjunction-isolated-2026-11-02"></a>
 
 ## Weil surjectivity established mathematically; local Kummer annihilator adjunction isolated (2026-11-02)
 
@@ -150,6 +192,8 @@ Compilation NOT_RUN, fresh kernel replay NOT_RUN, transitive
 axiom audit NOT_RUN, Tau Ceti compatible integration NOT_RUN.
 No verification/CI/scheduler dispatch and no BSD-I/II claim.
 
+<a id="source-section-canonical-h1-kummer-transport-and-normalized-weil-cup-boundary-2026-11-02"></a>
+
 ## Canonical H¹ Kummer transport and normalized Weil-cup boundary (2026-11-02)
 
 At pinned TauCetiProject/TauCeti `2bdb755239d3bd84760e99bc83166bdf7cc75a6b`
@@ -190,6 +234,8 @@ fresh kernel replay NOT_RUN, axiom audit NOT_RUN,
 upstream compatible adapter NOT_RUN; no CI/runner/Noe job.
 No BSD rank, real height-regulator, or COMPLEX L-jet
 claim is made.
+
+<a id="source-section-abelian-tate-pairing-from-genuine-finite-weil-cup-geometric-theta-divisor-gate-2026-11-02"></a>
 
 ## Abelian Tate pairing from genuine finite Weil cup: geometric theta/divisor gate (2026-11-02)
 
@@ -269,6 +315,8 @@ already kernel accepted, or treat a cup-descended
 pairing as the classically constructed Tate pairing
 before a source geometric comparison.
 
+<a id="source-section-actual-elliptic-theta-function-group-strict-kummer-vanishing-and-polarization-2026-11-02"></a>
+
 ## Actual elliptic theta function group, strict Kummer vanishing and polarization (2026-11-02)
 
 At the SAME immutable original TauCetiProject/TauCeti pin
@@ -334,6 +382,8 @@ import closure NOT_RUN. No new axiom/sorry/admit,
 native CI/Noe execution, source root import/toolchain
 or dependency pin migration. No BSD-I/II proof claim.
 
+<a id="source-section-original-geometric-theta-group-and-strict-kummer-nonabelian-trivialization-2026-11-02"></a>
+
 ## ORIGINAL geometric theta group and strict Kummer nonabelian trivialization (2026-11-02)
 
 New pinned isolated `TauCetiOriginalGeometricTheta.lean` and
@@ -393,6 +443,8 @@ No native Noe/CI/scheduler job, new axiom/sorry/admit,
 toolchain change or root imports. Preserve full
 Weil–Chatelet H² residue, all H⁰ and good-truncation
 conditions, real p=2 and noncircular BSD-I/II frontier.
+
+<a id="source-section-theta-sign-convention-optimization-and-source-central-commutators-2026-11-02"></a>
 
 ## Theta sign-convention optimization and source-central commutators (2026-11-02)
 
@@ -461,6 +513,8 @@ NOT_RUN. No new axiom/sorry/admit, root imports,
 toolchain migration, native Noe/CI or automated
 proof acceptance. Git source publication/readback
 is separate evidence.
+
+<a id="source-section-genuine-theta-scalar-to-brauer-h2-and-local-selmer-consumer-connection-2026-11-02"></a>
 
 ## Genuine theta scalar-to-Brauer H² and local Selmer consumer connection (2026-11-02)
 
@@ -568,6 +622,8 @@ compatible upstream build NOT_RUN. No new
 `sorry`, `axiom`, `admit`; no native
 Noe/CI dispatch, root import or toolchain changes.
 
+<a id="source-section-source-exact-mumford-theta-groupextension-and-genuine-galois-scalar-factor-2026-11-02"></a>
+
 ## Source-exact Mumford theta GroupExtension and genuine Galois scalar factor (2026-11-02)
 
 Pinned source remains The Tau Ceti contributors' immutable
@@ -669,6 +725,8 @@ covered 160,000 2-cocycle triples and 40,000
 scalar-fibre instances; these validate the
 group identities only, not actual elliptic
 Galois geometry or Lean proofs.
+
+<a id="source-section-finite-selected-theta-function-galois-continuity-instead-of-assumed-scalar-cochain-continuity-2026-11-02"></a>
 
 ## Finite selected-theta-function Galois continuity instead of assumed scalar cochain continuity (2026-11-02)
 
@@ -792,6 +850,8 @@ compatible Tau Ceti v4.36.0-rc1 import
 NOT_RUN; no native Noe/CI dispatch,
 toolchain change or new axiom/sorry/admit.
 
+<a id="source-section-genuine-elliptic-function-field-galois-finite-descent-closes-the-theta-scalar-continuity-premise-2026-11-02"></a>
+
 ## Genuine elliptic function-field Galois finite descent closes the theta-scalar continuity premise (2026-11-02)
 
 **Pinned original** TauCetiProject/TauCeti
@@ -898,6 +958,8 @@ is NOT mathematical kernel acceptance.
 No new `sorry`, `admit`, `axiom`, native Noe/CI
 dispatch, new toolchain or root import.
 
+<a id="source-section-correction-discrete-theta-topology-reuse-the-existing-finite-orbit-theorem-common-open-stabilizer-2026-11-02"></a>
+
 ## Correction: discrete theta topology, reuse the existing finite-orbit theorem, common open stabilizer (2026-11-02)
 
 A source audit found **five** mistaken topology declarations in the
@@ -970,6 +1032,8 @@ no root imports/toolchain migration and no
 native Noe/CI dispatch. The higher local
 Weil–Châtelet H² residue, real p=2
 and all derived Selmer/BSD gates are preserved.
+
+<a id="source-section-h1-representative-independent-theta-obstruction-and-real-n-commutator-2026-11-02"></a>
 
 ## H¹ representative-independent theta obstruction and real μ_n commutator (2026-11-02)
 
@@ -1074,6 +1138,8 @@ central jet remain separate OPEN goals.
 No new `sorry/axiom/admit`, root
 toolchain or Mathlib migration,
 native Noe/CI or scheduled job.
+
+<a id="source-section-actual-theta-commutator-is-alternating-biadditive-reduce-original-weil-comparison-to-one-basis-function-identity-2026-11-02"></a>
 
 ## Actual theta commutator is alternating biadditive: reduce original Weil comparison to ONE basis-function identity (2026-11-02)
 
