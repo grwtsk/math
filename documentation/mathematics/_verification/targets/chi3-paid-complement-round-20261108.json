@@ -1,0 +1,299 @@
+{
+  "schema": "grwtsk.math.static-sharpened-target-reduction.v1",
+  "local_attribution": "grwtsk contributors",
+  "status": "UNIVERSAL_PAID_COMPLEMENT_ORIGINAL_j3_RH_GRH_OPEN",
+  "math_initial_revision": "db3788d1fdb5039b0dcbc999ca958298062077ce",
+  "math_source_inspected_revision": "4649ee9cf0e0c296fe7005afe33f7d3a3b4093c4",
+  "math_assembly_parent": "61f61e8ef1c334f15a5449388c7e79a13d242b57",
+  "canonical_noe_revision_read": "f5f7ce839a084acd1232223f33e5ede6da3187fe",
+  "canonical_skills": [
+    "workflows/research/orchestration/skills/noe-proof-automation/SKILL.md",
+    "tools/automation-skills/structural-intelligence/SKILL.md",
+    "tools/automation-skills/typed-port-routing/SKILL.md"
+  ],
+  "source": {
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeSharpEdgeComplementTail.lean",
+    "sha256": "f31a915be8646cccc790655166d53b67bc9c43ba5fdb7d5abc1566452782bae3"
+  },
+  "consumed_source_sha256": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeSharpEdgeSmoothDirection.lean": "df97d017ffe296d097d1f18c33ded4333095fd60a560733ef970ed4d6fc14898",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeSharpEdgeLocalized.lean": "0cbefcd7d1cf391b099ce96b82260366c8194ecfaf0499736ffd9279d9a6742f",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeSharpEdgeAbsorptionObstruction.lean": "9c9716baa169d0e55238b83fca4fa2c0821f49d31fd2592842c63954e6371e05",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilDirichletStageChain.lean": "1582bc398d087446ac06f80c6156800ea817a37dfe97b563c7002e9ccd926726",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorFrontier.lean": "7ebb2357b464f13b4799e65ee1b083b1daa292c8a235eb7bda52804b480487eb",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilSourcePrimeCorrelation.lean": "5f59fc9fdc8748943847380020e2e58cad5ac4e43f736b178deeb5f860140dbc",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeFiniteAnnulus.lean": "9d5196cecf14a80a7d90474c80cb21dd9b42e27fda1b7111b84070ed70540617",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeAntiNearCycle.lean": "f1f25a16d2b23ac80794287076bc8b0311ac785e599e5d8ad9ba6bd38497a6a4",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeOddEdgeLoewner.lean": "98c747f815b6aec74abcb13fb970635e4f822997f67d1a05e07a615b04fb449d",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConditionalZeroFree.lean": "f831ae5bc64526c1027045a477b5dd5c84648348d341f57086866634eb12d1fc",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourInventory.lean": "ac13e0400afcb7f50c7959d4defebdca3c05bfd15f3db868e24c37c0625f6a54",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourEdgeSchur.lean": "5ad8bd0e1708a3daa3801408d8ebbcc45033a83d49584bce7ac181fc86ec9a7f",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeSharpEdgeLocal.lean": "26ef7c1cd22ead3b675c6eec4f6674ca21c1d2b16860df6e56b517ab043867cd",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeSharpEdgeGammaComparison.lean": "759324c9fbec783bd600a70d8c23235bb7c1fa9b20b1577f9a2d7b1d650ae89f"
+  },
+  "original_target": "DirichletStageChain.PrimitiveStageLower modThreeQuadratic modThreeQuadratic_primitive modThreeQuadratic_nonprincipal 3",
+  "contracts": {
+    "A0": "Actual closed shifted core m00, A0>=3I/40, at recorded written computer-assisted radius3 input level. No fresh all-head replay and no missing historical Gram factors reconstructed.",
+    "B": "Actual Bgamma+sum_native458 w_n beta_n(R_log_n-S_log_n), w_n=logp/sqrt(p^e),beta=chi3(p^e)",
+    "Gamma": "integral_(r>0) exp(-3r/2)/(1-exp(-2r))*||tau_r f-f||^2dr; full finite-Gamma domain",
+    "H0": "physical L2((0,3),dt;Complex), antlinear-first inner product, zero/odd extension O3",
+    "H1": "physical L2((3,4),dt;Complex), actual odd extension onboth edgecaps",
+    "coding": "Every used mathematical type has finite typed source-syntax/dependent-context proof-data representation, preserving exact domain/norm/source/parameters/certificates/errors/tail laws and evidence facets. Structural constructor/length induction proves decode(encode x)=some x, encoder-image decoder returnsx. Semantic Hilbert vectors/spectra are bound variables or exact expressions, never finitely sampled substitutes.",
+    "coverage": "Exhaustive natural source codes including invalid/status records; pi_n=2^(-n-1), entire tail n>=J equals2^(-J). Onl1 Kx=(x+(sum x)pi)/2, exact inverse x=2Kx-(sum Kx)pi. Positive reference coverage doesnot prove signed arithmetic.",
+    "evidence": "Written analytical proofs, recorded published computational zero-verification inputs, exact finite guards/kernel terms, and binary64 locators remain separate. No finitepassing case promoted to universal sharp sign.",
+    "fourier": "F(xi)=integral f(t)exp(i xi t)dt; Plancherel measure dxi/(2pi)",
+    "heat": "Constructed closed forms supply their actual spectral semigroups with exact source-return laws. Frames/encodings get coverage only. Formorder doesnot imply an unstated order of heatoperators; source gamma positivity doesnot discharge prime sign.",
+    "inventory": "All458native prime/exponent/power atoms p^e<=2980,p!=3;428prime+30higherpowers. All365new reflected edgeatoms remain;93coreatoms andall native mixed terms retain their exact masks/signs.",
+    "m11": "Actual shifted edge gamma plusc3+1/8 andnative2same-side plusall365signedreflections; no sign is an interface field",
+    "norms": "Unweighted Lebesgue L2(dt) everywhere; E(O4u)=2||u||^2, q4=Q4/2,m=q4+||u||^2/8. Core DD coefficients are unnormalized, ||sum d_k sin(pi*k*x/3)||^2=3 sum|d_k|^2/2.",
+    "original_character": "modThreeQuadratic=(0,1,-1), modulus/conductor3, primitive nonprincipal, parity-one gamma, no principal pole",
+    "original_target": "DirichletStageChain.PrimitiveStageLower modThreeQuadratic modThreeQuadratic_primitive modThreeQuadratic_nonprincipal 3",
+    "test_domain": "EVERY original real odd compact C2 radius4 Admissible test; targetQ4>=-E/8. Work on its fully justified complex finite-Gamma form-domain extension."
+  },
+  "branches": [
+    {
+      "physical_norm": "unweighted Lebesgue L2(dt), antilinear-first; E(O4u)=2||u||^2",
+      "source_parameters": "actual primitive nonprincipal chi3=(0,1,-1),conductor3,gamma parity1,no pole; ALL458 native atoms428prime+30higherpowers,93 oldcore+365 new",
+      "coverage_interface": "exhaustive finite typed-description indices j>=0, pi_j=2^(-j-1), entire tail2^(-J); ell1 Kx=(x+mass(x)pi)/2, exact inverse2Kx-mass(Kx)pi; no arithmetic sign from coverage",
+      "lossless_interface": "finite typed source/context/dependency/parameter/error/evidence syntax, including semantic binders and exact infinite operator expressions. Constructor/length induction proves decode(encode x)=x on encoder image; full13-term Lean image codec and byte archive both retained. No finite sample encoding of arbitrary Hilbert vectors asserted.",
+      "id": "radiusFour.sharpEdgeSchur.paidComplement",
+      "carrier": "v*perp in actual H1=L2((3,4),dt;Complex)",
+      "domain": "Dedge intersect v*perp, full original finite-gamma domain",
+      "quantifiers": "EVERY w in that domain",
+      "claim": "d[w]=s[w]-|<t,w>|^2/a>=0, actual a=s[v*]>3/40,t=(I-v* tensor v*)S v*",
+      "evidence_status": "OPEN",
+      "dependencies": [
+        "actual source blocks and core floor",
+        "proved smooth head",
+        "remaining actual effective finite-head sign"
+      ],
+      "heat_interface": "Actual D>=-242000I, full heat norm<=exp(242000u). Lift D_lift=D+242100Pi_head>=100I has contraction exp(-100u); exact return d=||D_lift^.5w||^2-242100||Pi_headw||^2 retains unpaid finite debit."
+    },
+    {
+      "physical_norm": "unweighted Lebesgue L2(dt), antilinear-first; E(O4u)=2||u||^2",
+      "source_parameters": "actual primitive nonprincipal chi3=(0,1,-1),conductor3,gamma parity1,no pole; ALL458 native atoms428prime+30higherpowers,93 oldcore+365 new",
+      "coverage_interface": "exhaustive finite typed-description indices j>=0, pi_j=2^(-j-1), entire tail2^(-J); ell1 Kx=(x+mass(x)pi)/2, exact inverse2Kx-mass(Kx)pi; no arithmetic sign from coverage",
+      "lossless_interface": "finite typed source/context/dependency/parameter/error/evidence syntax, including semantic binders and exact infinite operator expressions. Constructor/length induction proves decode(encode x)=x on encoder image; full13-term Lean image codec and byte archive both retained. No finite sample encoding of arbitrary Hilbert vectors asserted.",
+      "id": "radiusFour.sharpEdgeSchur.paidComplement.actualMixedVector",
+      "carrier": "actual t in physical H1, exact rank-one debt",
+      "domain": "v* in DomS; htrue=A0^-1Bv* in DomA0",
+      "quantifiers": "true t and EVERY w in H1",
+      "claim": "||t||<115; |<t,w>|^2/a <=(40/3)115^2||w||^2",
+      "evidence_status": "WRITTEN_PROOF_COMPLETE",
+      "dependencies": [
+        "g(xi)<=|xi| from entire positive series sum a_j^-2<=7/9",
+        "v* H1 zero extension and ||v*prime||<5",
+        "whole-edge norm Hnew<44,Hfar<1/1000,P2<1,|c0|<6/5",
+        "actual ||B||<70 and ||htrue||<9/10"
+      ],
+      "heat_interface": "Bounded rank-one operator; reference coverage suffices for description. No new arithmetic semigroup assumed; its complete physical norm price is included once in d."
+    },
+    {
+      "physical_norm": "unweighted Lebesgue L2(dt), antilinear-first; E(O4u)=2||u||^2",
+      "source_parameters": "actual primitive nonprincipal chi3=(0,1,-1),conductor3,gamma parity1,no pole; ALL458 native atoms428prime+30higherpowers,93 oldcore+365 new",
+      "coverage_interface": "exhaustive finite typed-description indices j>=0, pi_j=2^(-j-1), entire tail2^(-J); ell1 Kx=(x+mass(x)pi)/2, exact inverse2Kx-mass(Kx)pi; no arithmetic sign from coverage",
+      "lossless_interface": "finite typed source/context/dependency/parameter/error/evidence syntax, including semantic binders and exact infinite operator expressions. Constructor/length induction proves decode(encode x)=x on encoder image; full13-term Lean image codec and byte archive both retained. No finite sample encoding of arbitrary Hilbert vectors asserted.",
+      "id": "radiusFour.sharpEdgeSchur.paidComplement.DDtail",
+      "carrier": "Htail=closed span{sqrt2 sin(n*pi*s):n>=N},s=y-3,N=2^349000",
+      "domain": "Dedge intersect Htail =phi(H_DD)^.5 form domain intersect Htail; Htail contained in v*perp",
+      "quantifiers": "EVERY finite-gamma w in Htail; ALL n>=N and gamma j>=0",
+      "claim": "d[w]>=100||w||^2; strict coefficient>23783/168 for nonzero w",
+      "evidence_status": "WRITTEN_ANALYTIC_PROOF_COMPLETE_AT_FULL_INFINITE_TAIL_SCOPE",
+      "dependencies": [
+        "Gordinary=phiDD-Cplus-Hnear>=phiDD-piI, common domains",
+        "Binet g(k)+c3>=logk-3/4 for k>=100",
+        "complete native bounds, full inverse A0^-1<=40I/3",
+        "actualMixedVector, log2>693/1000,pi<22/7"
+      ],
+      "heat_interface": "Actual closed restriction D_N>=100I, norm exp(-uD_N)<=exp(-100u), inverse integral full tail afterT <=exp(-100T)||z||^2/100; no invariant-subspace assertion."
+    },
+    {
+      "physical_norm": "unweighted Lebesgue L2(dt), antilinear-first; E(O4u)=2||u||^2",
+      "source_parameters": "actual primitive nonprincipal chi3=(0,1,-1),conductor3,gamma parity1,no pole; ALL458 native atoms428prime+30higherpowers,93 oldcore+365 new",
+      "coverage_interface": "exhaustive finite typed-description indices j>=0, pi_j=2^(-j-1), entire tail2^(-J); ell1 Kx=(x+mass(x)pi)/2, exact inverse2Kx-mass(Kx)pi; no arithmetic sign from coverage",
+      "lossless_interface": "finite typed source/context/dependency/parameter/error/evidence syntax, including semantic binders and exact infinite operator expressions. Constructor/length induction proves decode(encode x)=x on encoder image; full13-term Lean image codec and byte archive both retained. No finite sample encoding of arbitrary Hilbert vectors asserted.",
+      "id": "radiusFour.sharpEdgeSchur.paidComplement.finiteObservation",
+      "carrier": "whole physical v*perp, physical DD head/tail projections",
+      "domain": "Dedge intersect v*perp; both projections preserve domain",
+      "quantifiers": "EVERY such w",
+      "claim": "d[w]>=100||Pi_tailw||^2-242000||Pi_headw||^2",
+      "evidence_status": "WRITTEN_ANALYTIC_PROOF_COMPLETE",
+      "dependencies": [
+        "one full bounded-perturbation estimate on WHOLE vector",
+        "g>=0 at low indices; entire paid DD high bound"
+      ],
+      "heat_interface": "Actual lifted heat on WHOLE complement D_lift>=100I; subtract exact finite penalty242100||Pi_headw||^2 to return to native d. Positivity of lift is not native positivity."
+    },
+    {
+      "physical_norm": "unweighted Lebesgue L2(dt), antilinear-first; E(O4u)=2||u||^2",
+      "source_parameters": "actual primitive nonprincipal chi3=(0,1,-1),conductor3,gamma parity1,no pole; ALL458 native atoms428prime+30higherpowers,93 oldcore+365 new",
+      "coverage_interface": "exhaustive finite typed-description indices j>=0, pi_j=2^(-j-1), entire tail2^(-J); ell1 Kx=(x+mass(x)pi)/2, exact inverse2Kx-mass(Kx)pi; no arithmetic sign from coverage",
+      "lossless_interface": "finite typed source/context/dependency/parameter/error/evidence syntax, including semantic binders and exact infinite operator expressions. Constructor/length induction proves decode(encode x)=x on encoder image; full13-term Lean image codec and byte archive both retained. No finite sample encoding of arbitrary Hilbert vectors asserted.",
+      "id": "radiusFour.sharpEdgeSchur.paidComplement.originalSourceRestriction",
+      "carrier": "K=H0 directsum(Complex*v* directsum Htail), closed physical carrier",
+      "domain": "D3 directsum Complex*v* directsum(Dedge intersect Htail)",
+      "quantifiers": "EVERY core u0, EVERY c in Complex, EVERY finite-gamma w in Htail",
+      "claim": "m>=3/40||x||^2+3/40|z|^2+100||w||^2, x=u0+A0^-1B(cv*+w),z=c+<t,w>/a; Q4>=(-1/8+1e-12)E",
+      "evidence_status": "WRITTEN_PROOF_COMPLETE_AT_PROPER_INFINITE_SOURCE_SUBSPACE",
+      "dependencies": [
+        "two actual Schur completions",
+        "physical triangle price2,4000002,10240007120001",
+        "actual DD tail, core floor, paid a"
+      ],
+      "heat_interface": "Actual original-source form restriction M_K>=1e-12 I, heat norm<=exp(-u/1e12), inverse-time tail<=1e12 exp(-T/1e12)||z||^2; source Q4=2m-E/8 exact. K not asserted reducing."
+    },
+    {
+      "physical_norm": "unweighted Lebesgue L2(dt), antilinear-first; E(O4u)=2||u||^2",
+      "source_parameters": "actual primitive nonprincipal chi3=(0,1,-1),conductor3,gamma parity1,no pole; ALL458 native atoms428prime+30higherpowers,93 oldcore+365 new",
+      "coverage_interface": "exhaustive finite typed-description indices j>=0, pi_j=2^(-j-1), entire tail2^(-J); ell1 Kx=(x+mass(x)pi)/2, exact inverse2Kx-mass(Kx)pi; no arithmetic sign from coverage",
+      "lossless_interface": "finite typed source/context/dependency/parameter/error/evidence syntax, including semantic binders and exact infinite operator expressions. Constructor/length induction proves decode(encode x)=x on encoder image; full13-term Lean image codec and byte archive both retained. No finite sample encoding of arbitrary Hilbert vectors asserted.",
+      "id": "radiusFour.sharpEdgeSchur.paidComplement.finiteEffectiveHead",
+      "carrier": "F_N=spanDD1..N-1 intersect v*perp; physical complex dimensionN-2",
+      "domain": "ALL of finite F_N; orthonormal basis(e1+3e3)/sqrt10,e2,e4,...,eN-1",
+      "quantifiers": "EVERY complex physical coefficient vector on F_N",
+      "claim": "A_N-C_N*D_N^-1C_N>=0, A_N actual head of d,C_N:F_N->Htail actual mixed block",
+      "evidence_status": "OPEN_EXACT_NEXT_MISSING_LEMMA",
+      "dependencies": [
+        "genuine D_N>=100I and full inverse, not truncated",
+        "actual bounded cross from native d minus DD diagonal",
+        "full native arithmetic matrix sign, not supplied by any finite passing probes"
+      ],
+      "heat_interface": "Exact whole-tail inverse D_N^-1=integral0infinity exp(-uD_N)du with entire time-tail<=exp(-100T)/100. Finite effective Hermitian operator has its own finite spectral heat, but its contraction/sign remains OPEN; no assumed sign field."
+    },
+    {
+      "norm": "physical Lebesgue L2(dt), antilinear-first; E(O4u)=2||u||^2",
+      "source_parameters": "chi3 conductor3 parity1; original458 atoms428prime+30higherpowers; all365 new reflections; no pole",
+      "coverage_interface": "contracts.coverage, for the finite typed descriptions of this exact quantified branch; arbitrary Hilbert vectors are bound variables",
+      "lossless_interface": "contracts.coding plus complete new finite archive; retains source/domain/quantifiers/parameters/errors/certificates/status, decode(encode x)=x on image",
+      "id": "radiusFour.sharpEdgeSchur",
+      "carrier": "H1=L2((3,4),dt;Complex)",
+      "domain": "Dedge: entire original odd finite-gamma form domain",
+      "hypotheses": [
+        "actual positive A0>=3I/40 at inherited scope",
+        "actual bounded B, all458 masks and signs",
+        "closed native m11",
+        "remaining paid complement estimate"
+      ],
+      "quantifiers": "EVERY v in Dedge",
+      "claim": "s[v]=m11[v]-<Bv,A0^-1Bv>>=0",
+      "evidence_status": "OPEN",
+      "heat_interface": "Actual selfadjoint S>=-CI, C=|c3+1/8|+2W+(40/3)(pi/2+2W)^2, W=sum458 w; exp(-tS) exists with norm<=exp(Ct). Desired contraction is OPEN; no sign field is assumed."
+    },
+    {
+      "norm": "physical Lebesgue L2(dt), antilinear-first; E(O4u)=2||u||^2",
+      "source_parameters": "chi3 conductor3 parity1; original458 atoms428prime+30higherpowers; all365 new reflections; no pole",
+      "coverage_interface": "contracts.coverage, for the finite typed descriptions of this exact quantified branch; arbitrary Hilbert vectors are bound variables",
+      "lossless_interface": "contracts.coding plus complete new finite archive; retains source/domain/quantifiers/parameters/errors/certificates/status, decode(encode x)=x on image",
+      "id": "obl.stage",
+      "carrier": "original real tests f:Real->Real",
+      "domain": "DirichletStageChain.Admissible chi3 4 f, compact odd C2, pointwise support[-4,4], physical L2 and original parity1 gamma integrable",
+      "hypotheses": [
+        "radiusFour.sharpEdgeSchur or a separately completed source-exact alternative"
+      ],
+      "quantifiers": "EVERY original admissible radius-four f",
+      "claim": "DirichletStageChain.PrimitiveStageLower modThreeQuadratic modThreeQuadratic_primitive modThreeQuadratic_nonprincipal 3",
+      "evidence_status": "OPEN",
+      "heat_interface": "Actual shifted source m returns Q4=2m-E/8; if the open full sign is proved, the form representation yields the required source contraction. Restricted heat alone does not prove the full stage."
+    }
+  ],
+  "sharpened_target_reduction": {
+    "positive_infinite_tail": "Entire original paid DDtail n>=2^349000 complete with margin>23783/168>100, actual t retained",
+    "remaining_dimension": "N-2=2^349000-2, explicitly huge; not called a completed computation",
+    "exact_law": "d[f+w]=d_N[w+D_N^-1 C_N f]+<f,(A_N-C_N*D_N^-1C_N)f>, f in F_N,w in tail form domain",
+    "first_unsupported_implication": "positive tail restriction does NOT imply positive actual finite effective head; no current lemma pays its signed matrix and whole-tail inverse subtraction",
+    "negative_index_consequence": "at mostN-2 negative directions by finite-codimension intersection; not positivity"
+  },
+  "attempted_concrete_leaf": {
+    "statement": "actual full paid infinite DDtail law, source t action norm, and exact original restricted source heat",
+    "proof": "Complete source gamma series gives g<=|xi| and ||t||<115. Full physical DD identity gives Gordinary>=phiDD-pi. For every n>=N, combine g+c3 via Binet, pay complete core inverse debt(40/3)70^2 and actual rankone debt(40/3)115^2 once. Whole infinite coefficient lower bound is23783/168>100.",
+    "result": "PROVED at written analytical scope inheriting recorded computer-assisted core/smooth inputs",
+    "finite_formal_scope": "13 finite scalar/inventory/codec declarations only; universal analytical theorem not Lean formalized"
+  },
+  "forward_replay": {
+    "complement": "A proved effective-head sign plus the completed actual whole-tail inverse completion would prove d>=0 for ALL finite-gamma w perp v*.",
+    "sharp_edge": "Then s[cv*+w]=a|c+<t,w>/a|^2+d[w]>=0 on EVERY finite-gamma edge vector.",
+    "j3": "Then m[u0+v]=m00[u0+A0^-1Bv]+s[v]>=0; Q4=2m-E/8 yields the EXACT original PrimitiveStageLower chi3 hp hn3 for EVERY original Admissible test.",
+    "RH_GRH": "Separate Mathlib RiemannHypothesis, with the pole-inclusive zeta source argument, remains OPEN; the chi3 sector has no pole and cannot replace it. Actual GRWTSK.NumberTheory.Conditional.DirichletGRH covers ALL complex Dirichlet characters modulo EVERY positive integer, principal and imprimitive included, and every zero with0<Re(s)<1. Native dirichletGRH_of_source_chains consumes RH AND PrimitiveNegativeWitness AND the full primitive nonprincipal SmallConductorStages family. This work closes no global conjunction.",
+    "exact_family": "Conditional.DirichletGRH: ALL complex Dirichlet characters modulo EVERY positive integer, principal/imprimitive included, every zero0<Re(s)<1 has Re(s)=1/2",
+    "unobserved_global_sectors": "OPEN. Natural finite-description weights have exact geometric reference tail but supply no arithmetic sign for unproved stages/sectors. Full native conjunction remains required."
+  },
+  "heat_no_double_counting": "The DD lower comparison is on the entire original gamma once; both inverse debts are subtracted once. Localization diagonals and free gamma frame absorption are not combined. Lifted whole-complement heat returns its finite NEGATIVE head debit explicitly.",
+  "verification": {
+    "agent_receipt_sha256": "2da665f9c0da4d193f0ba2001d1b7fcbf511ff609ade9c9fb4262a47a8cb3f34",
+    "root_assembly_check_sha256": "9e5a6012a20f6c93bda5d9c30265f415f905ec8d20298bf34d0c79c8c748675f",
+    "finite_Lean_compilation": "PASS13 at --trust=0 with exact source-copy binding",
+    "transitive_axiom_audit": "PASS all13, only propext/Classical.choice/Quot.sound",
+    "universal_operator_formalization": "NOT_RUN",
+    "separate_fresh_environment_kernel_replay": "NOT_RUN",
+    "written_analytic_argument": "COMPLETE at stated tail/restricted/lifted scopes",
+    "independent_agent_analytic_review": "PASS constants, source domains, norms, source return; shared core input disclosed",
+    "independent_human_review": "NOT_RUN",
+    "worldwide_novelty": "NOT_ASSESSED"
+  },
+  "numerical_diagnostics": {
+    "scope": "finite DD core/edge approximants only, not sign premises",
+    "largest_parameters": {
+      "core_modes": 1024,
+      "edge_modes": 256,
+      "gamma_boundary_terms": 16000
+    },
+    "observations": "no negative finite probe; paid-complement minimum approximately0.1250798489, observed finite t norm approximately0.0075376490",
+    "all_unpriced_errors": [
+      "gamma-boundary truncation",
+      "full core inverse substitution",
+      "unobserved edge modes",
+      "binary64/libm/scipy/eigensolver roundoff"
+    ],
+    "warning": "finite core inverse underestimates native inverse debt; none of these positive finite values is a rigorous lower bound",
+    "lossless_float_payload": "all14 retained arrays preserve dtype/shape/raw binary64 bytes;18-record complete diagnostic archive roundtripPASS; all error statuses retained",
+    "heat_interface": "finite dyadic matrices are diagnostic representations; description coverage only, no arithmetic-source heat transfer or asserted physical contraction"
+  },
+  "lossless_new_proof_data": {
+    "repository": "grwtsk/noeaaeue",
+    "relative_path": ".cache/chi3-complement-round-20261108-root/complete-complement-proof-data.tlv",
+    "sha256": "8e7ce310a80b6321d0c16663b365ba62b7ffdc6dd3e0b2ceb408f9554dd5c2be",
+    "bytes": 22139827,
+    "record_count": 38,
+    "decode_encode": "PASS complete filename/content bytes",
+    "encode_decode": "PASS canonical full re-encoding",
+    "roundtrip_law": "For finite unique UTF8 path/byte records with all lengths and count<2^64, base256 uniqueness proves u64 decode/encode; length-delimited slicing and list induction recover every exact record. Decoder rejects truncation, duplicate names and suffixes.",
+    "retained": "all current source/context/pins, full finite audit/failure history, inherited complete60-record proof-data archive, entire18-record numerical diagnostic archive, complete analytical error/tail laws as exact source expressions",
+    "boundary": "No finite recipe materializes infinite spectra or proves the OPEN effective-head sign. This static target binds the archive separately, avoiding a self-reference. Complete local availability; remote execution-data storage not claimed."
+  },
+  "historical_lossless_boundary": "Discarded oldradius3Gramfactors remain unavailable; thisrounddoesnot reconstruct or upgrade theirhistoricalevidence.",
+  "research_comparison": [
+    {
+      "url": "https://dlmf.nist.gov/5.9.E15",
+      "role": "Binet digamma integral, directly rechecked against native source derivation"
+    },
+    {
+      "url": "https://dlmf.nist.gov/5.9.E16",
+      "role": "gamma/digamma integral supporting the full positive series"
+    },
+    {
+      "url": "https://arxiv.org/html/2608.24827v2",
+      "author": "Xuefeng Zhu",
+      "title": "Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau-Widom decay law",
+      "version": "v2,2 September2026",
+      "role": "comparison only: Theorem1.1 finite head/tail envelope method; executed zeta support1.6, NOT chi3 radius4 or our actual edge Schur source; §7 retracts larger-support claim from reversed comb envelope; §16 lists Dirichlet extensions as open experimentation",
+      "used_as_sign_premise": false
+    }
+  ],
+  "other_source_routes": "Current Legendre/filtered-Schur/Gram-moment partial results have different filtered-residual carriers and unpaid finite signs; none is silently substituted for this actual edge complement. A separately completed source-return route could still be used, but has not supplied the missing universal sign.",
+  "authority": "Local mathematical computations and source work plus standing routine nonforce publication; no external message/schedule/Noe job",
+  "global_sector_contract": {
+    "id": "cert.all-small-conductor-stages",
+    "carrier": "every primitive nonprincipal complex Dirichlet character chi modulo q, q>0, both parities; each original admissible real test at every required radius j+1",
+    "domain": "actual DirichletStageChain.SmallConductorStages chi hp hn; j natural and chi.conductor<conductorFrontier(j+1)",
+    "hypotheses": "ALL required source stages, native PrimitiveNegativeWitness, and separate Mathlib RiemannHypothesis",
+    "quantifiers": "forall q [NeZero q], chi, hp:chi.IsPrimitive, hn:chi!=1, and every required natural j; no finite sector range substitution",
+    "norm_metric_normalization": "each original source sector retains its physical L2(dt), Fourier convention, gamma parity and pole data; no transfer of this parity1 no-pole normalization to other sectors",
+    "source_parameters": "WeilDirichletStageChain.lean actual declarations; Conditional.DirichletGRH in ConditionalZeroFree.lean",
+    "evidence_status": "OPEN; a single chi3 j3 coordinate remains unproved, as do remaining global obligations",
+    "dependencies": "RH AND PrimitiveNegativeWitness AND every primitive nonprincipal SmallConductorStages, exactly the conjunction consumed by dirichletGRH_of_source_chains",
+    "heat_interface": "Coverage for typed sector proof descriptions; each source-positive form needs its OWN justified semigroup/source-return law. No positive reference heat or finite Euler sign of another sector is transferred.",
+    "lossless_interface": "Typed binders retain q, character unit-value table, primitive/nonprincipal proofs, parity, source identity, stage, domain, sign, errors and exact universal quantifiers. No finite numerical table of tests stands for all admissible inputs.",
+    "exhaustive_sector_index": "For each q>=1, Units(ZMod q) is finite of order phi(q). Character values there are phi(q)-th roots of unity because u^phi(q)=1; outside units values vanish. Enumerating all maps from this finite unit group to these roots and retaining homomorphism laws exhausts all complex characters, including principal/imprimitive. Pair this finite index with q and j by a natural pairing. This indexing does not supply any stage sign.",
+    "entire_unobserved_arithmetic_tail": "OPEN. Geometric reference coverage has exact tail2^-J, but no bound on unproved sector/stage signs follows; the target requires universal proofs or source-justified cofinal closure."
+  }
+}
