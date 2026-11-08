@@ -1,52 +1,27 @@
-# Mathematics-wide ontology for neural-assisted discovery
+# Mathematics-wide ontology: static records and source bindings
 
 Local attribution: grwtsk contributors.
 
-This corpus is the mathematical memory for source-bound search, proof planning and Noeaaeue's neural candidate ranking. Individually addressable YAML records preserve the objects, statements, arguments, examples, counterexamples and comparisons that make a retrieved connection useful. A learner can prioritize a candidate; a reader must still be able to recover its exact context, joint premises, source and remaining work.
+This is the maintained static mathematical ontology for GRWTSK. Its records
+preserve mathematical objects, exact statements, contexts, joint premises,
+alternative arguments, source comparisons and unresolved obligations. MSC2020
+continues to govern subject placement; ontology IDs preserve semantic identity
+independently of physical paths.
 
-The scope is mathematics-wide, from elementary learning through the pinned MSC2020 subject scaffold. The [spectral geometry of the prime-coded reflective kernel](views/grwtsk.spectral-kernel.yaml) remains an important organizing view. It places no restriction on which mathematics belongs here.
-
-| Start with your task | Entry point |
+| Static contract | Entry point |
 |---|---|
-| Find a mathematical object or statement | [Subjects](subjects/), [entities](entities/) and [independent entry points](views/independent-entry-points.yaml) |
-| Prepare useful neural inputs and reviewed examples | [Learning contract and contribution priorities](LEARNING.md) |
-| Recover the actual source or an unresolved obligation | [Source and issue mappings](mappings/), [Weil certificate routes](views/grwtsk.weil-certificate-routes.yaml) |
-| Validate, export, inspect features or rank explicit candidates | [Pinned companion tooling](https://github.com/grwtsk/noeaaeue/tree/26991b68bc6458b10c4d0b279fc2c5cb2092811f/tools/ontology) |
+| Mathematical objects, statements and contexts | [Subjects](subjects/), [entities](entities/) and [contexts](contexts/) |
+| Source identities, corpus dispositions and issue correspondence | [Sources](sources/), [corpora](corpora/) and [mapping contract](mappings/README.md) |
+| Release and external companion identity | [Manifest](manifest.yaml) |
+| Record shape and reference profile | [Record schema](schemas/records.schema.json) |
+| Retired IDs and retained historical source | [V1 migration crosswalk](migrations/grwtsk.v1.yaml) |
 
-## Build a learnable mathematical corpus
-
-The contribution unit is a source-bound mathematical move: what a result consumes, what it supplies, why the argument works, and which comparison returns it to the intended problem. Preserve all premises of one rule together and retain alternative rules separately. Definitions, theorem applications, counterexamples, source observations and analogies have different roles even when they share words or endpoints.
-
-The data path has distinct review boundaries:
-
-```mermaid
-flowchart LR
-  S["Pinned sources and retained reviews"] --> C["Mathematical context and source comparison"]
-  C --> Y["Canonical YAML records"]
-  Y --> I["Validated immutable JSON index"]
-  I --> F["Pair-masked typed features"]
-  L["Reviewed historical pair labels"] --> N["Neural training and qualification"]
-  F --> N
-  N --> R["Candidate ranking or abstention"]
-  R --> C
-```
-
-Retained review events also have their own validated compact projection for source inspection and blocker/supplier queries. That projection preserves complete syntax bindings and evidence; it does not automatically create canonical mathematical entities, supervised labels or proof-eligible facts. The [learning contract](LEARNING.md) explains the source-context boundary and the separate validation needed before a Rust consumer reads an export.
-
-### Current neural consumer
-
-The companion revision in the manifest implements neural v8: 76 source-masked inputs, 72 learned nonnegative channel gates, two dense ReLU layers (`76 → 16 → 8`) and a sigmoid ranking readout. Its graph aggregates are fixed by the source snapshot. Training changes gates and dense weights; it does not discover or certify new mathematical edges. The logistic, lexical and structural rankers remain comparison baselines. See the pinned [model contract](https://github.com/grwtsk/noeaaeue/blob/26991b68bc6458b10c4d0b279fc2c5cb2092811f/src/ontology_neural.rs) and [feature encoder](https://github.com/grwtsk/noeaaeue/blob/26991b68bc6458b10c4d0b279fc2c5cb2092811f/src/ontology_neural_graph.rs).
-
-| Corpus content | Current neural use | What a contributor should preserve |
-|---|---|---|
-| Top-level entity text, subjects, kind and context | Lexical overlap, subject overlap, role and context features | Precise statements, stable IDs, genuine subject associations and reviewed contexts |
-| Documented/established typed relations | Directed neighborhood aggregates with selected named relation channels | Direction, actual relation meaning, source and justification |
-| Established ground inference rules | Joint-premise factors, including side conditions and arity | Complete AND inputs, conclusion, context and concrete instantiation |
-| Full bindings, hypotheses, counterchecks, evidence, costs and blocker details | Retained for review and other consumers; their full semantics are outside the 76-channel encoder | Exact source bytes and scope rather than compressing them into a favorable label |
-
-Proof-mode ranking requires equal known contexts. V8 also abstains on unseen exact ordered context pairs or numerical features outside its training support. A shared subject, an in-range feature vector, or a high rank does not establish applicability. Read the [context and dataset-readiness contract](LEARNING.md#source-identity-and-mathematical-context) before constructing a cohort.
-
-Useful expansion therefore needs both breadth and depth: rotate across subjects, then curate coherent families of definitions, statements, actual applications and hostile boundary examples within reviewed mathematical contexts. More classification nodes, repeated wrappers or source-review counts do not by themselves supply training diversity. Real historical labels, complete held-out coverage and measured improvement over the baselines remain separate work. No production weights or independently established real-corpus discovery gain are supplied by this release.
+Intelligence, retrieval, model/training/evaluation and operational workflow
+guidance live in Noe: [ontology discovery](https://github.com/grwtsk/noeaaeue/blob/07a2fde8f059549cc48b80f9459a4e8ca8792cb8/docs/intelligence/math/ontology-discovery.md)
+and [learning guide](https://github.com/grwtsk/noeaaeue/blob/07a2fde8f059549cc48b80f9459a4e8ca8792cb8/docs/intelligence/math/ontology-learning.md).
+The manifest's companion pin identifies its ontology-tooling contract, not every
+Noe integration. Each other external source retains its own scoped revision and
+locator. Records and references grant no execution or publication authority.
 
 ## Release and coverage
 
@@ -73,7 +48,7 @@ The table describes the canonical pinned inventories, including their historical
 
 ## Records and identity
 
-- `subjects/` contains classification and learning entry points. An entity can belong to several subjects.
+- `subjects/` contains classification and independent mathematical entry points. An entity can belong to several subjects.
 - `contexts/` names foundations, assumptions and conventions. The examples distinguish classical point-set topology, constructive rational representations and Lean dependent type theory. A context transport requires its own scoped comparison.
 - `entities/` separates concepts from definition variants, mathematical statements, proofs, examples and implementations. `subjects` and `context` are explicit references. `statement` records the mathematical content in a form a reader can inspect.
 - `relations/` contains directed edges with distinct types, provenance, a justification and four nonnegative navigation cost components. Two edges can join the same endpoints with different meanings.
@@ -103,29 +78,35 @@ Entity evidence separates mathematical disposition, source correspondence, elabo
 
 MSC2020 codes can be exported as SKOS notations and their classifications as SKOS concepts and broader links. Preserve the scheme and its edition. Export mathematical symbols to OpenMath only when a content dictionary and symbol resolve the actual meaning. Map a context to an MMT theory and a justified context translation to a theory morphism when their parameters and witnesses agree. An identifier match alone gives a candidate mapping. These are interchange contracts for future adapters. [SKOS Reference](https://www.w3.org/TR/skos-reference/) · [OpenMath Standard](https://openmath.org/standard/) · [MMT language](https://uniformal.github.io/doc/language/)
 
-## Search and construction
+## Mathematical examples and retained scope
 
-The companion implementation lives under `tools/ontology` in Noeaaeue at the revision pinned by the manifest. [Companion tooling](https://github.com/grwtsk/noeaaeue/tree/26991b68bc6458b10c4d0b279fc2c5cb2092811f/tools/ontology) validates the release, builds a derived semantic index with a digest, and runs the following separate operations.
+The [closed unit interval](entities/examples/topology.unit-interval.closed.yaml)
+has distinct recorded routes: Hausdorff separation together with quasi-compactness,
+or the explicitly stated open-complement side condition. The
+[two-point counterexample](entities/examples/topology.nonhausdorff-counterexample.yaml)
+retains the failure when the required separation premise is absent. The premises
+of one rule are joint; different rules remain alternatives.
 
-- **Breadth-first construction**. Rotate fairly among available subjects and process the least-depth work in each subject. Keep an in-flight depth barrier. New source components receive their own roots. Discovery carries the pinned source unit and depth into the checkpoint.
-- **Weighted navigation**. Filter by relation types and evidence before Dijkstra. Use an explicit four-component query weight vector for reading, formalization, translation and verification. Return the chosen edges, declared model, snapshot and any recorded unresolved prerequisites. The optional exploratory projection includes proposed and analogical edges.
-- **Finite proof planning**. Choose minimum summed proof-tree cost over ground rules and explicitly assumed facts in one context. Each rule requires every input, including side conditions. Shared premises can contribute more than once to the tree cost. Cycles require support from outside the cycle or a premise-free rule. Output is a hypothetical plan. A schematic record describes a route for investigation until its binders, substitutions and side conditions are checked for a concrete use.
-- **Backward obligations**. Retain every eligible alternative with its joint inputs. The exploratory view can show cross-context obligations and schematic routes for inspection. It reports leaves with no selected route. A node in a cycle can also lack a supported derivation.
+The [Weil certificate view](views/grwtsk.weil-certificate-routes.yaml) retains
+exact-source/root-return obligations, the cofinal stage family and nonprincipal
+character sectors. The [marked Weil view](views/grwtsk.frontier-diffuser-weil.yaml)
+retains conditional comparisons, finite signed-coordinate transport and their
+unresolved full-domain returns. The [finite configuration view](views/grwtsk.finite-configurations.yaml)
+and [independent entry points](views/independent-entry-points.yaml) remain
+mathematical navigation records. A view does not establish its missing premises.
 
-The [closed unit interval example](entities/examples/topology.unit-interval.closed.yaml) has two distinct approaches. One consumes Hausdorff separation and quasi-compactness together. The other uses the openness of both complement rays as a side condition. The [two-point example](entities/examples/topology.nonhausdorff-counterexample.yaml) demonstrates why dropping Hausdorff separation fails. [The Stacks Project, tag 08YB](https://stacks.math.columbia.edu/tag/08YB) · [Knuth, A Generalization of Dijkstra's Algorithm](https://web.engr.oregonstate.edu/~huanlian/papers/knuth77.pdf)
+## Source-preserving maintenance boundary
 
-The [Weil certificate view](views/grwtsk.weil-certificate-routes.yaml) retains the exact-source and root-return obligations, the cofinal stage family and the nonprincipal character sector.
+A changed mathematical claim retains exact hypotheses, context, source pins,
+comparison and independent evidence axes under the repository's
+[proof-comparison disposition](../../documentation/mathematics/_support/reference/proof-comparison-disposition.md).
+Schema/reference checks concern record integrity; they do not elaborate a Lean
+statement, replay a kernel, audit transitive axioms or authenticate an external
+receipt. Historical inventory snapshots and evidence remain at their stated
+source scopes.
 
-The [frontier diffuser and marked Weil view](views/grwtsk.frontier-diffuser-weil.yaml) records the finite conditional inverse-boundary route, reversible signed coordinate heat, ordered holonomy and their missing full-domain returns, without promoting any source proof candidate or the external advisory skills to an accepted theorem.  Use the obligation network to distinguish conditional composition from the open inputs. The [finite configurations view](views/grwtsk.finite-configurations.yaml) gives other GRWTSK entry points. The [independent entry points view](views/independent-entry-points.yaml) brings together topology, elementary arithmetic and discrete probability.
-
-## Contribution and maintenance
-
-For each bounded contribution, identify a consumer and bind its exact source. Write the statement and its hypotheses in a reviewed mathematical context; preserve the syntax declaration identity independently. Add a typed relation or joint-premise inference only at the evidence level actually supported. Include a relevant failed boundary or unresolved supplier, then validate references and export a fresh immutable index. The [learning contract](LEARNING.md#contribution-order-and-readiness) gives the concrete order and acceptance evidence for neural-oriented curation. No change of mathematical namespace, taxonomy or schema is needed merely to make a record visible to a learner.
-
-A worker processes a bounded source unit under a pinned snapshot and renewable lease. The queue stores a durable task identity, attempts, result for review and discovered work. The controller rotates subjects, rejects expired or replaced leases and retains exhausted failures. Adapters for acquisition, extraction, identity resolution and review should be independently bounded. The source registry and per-unit acquisition decisions control reuse and access. Candidate submission belongs in the controller. Canonical publication requires a reviewed change against a refreshed base, separate from a worker completing extraction.
-
-Initial work should seed each subject from an approved, pinned source unit. At each checkpoint record the discovered, pending, leased, staged, failed and reviewed populations and their denominators. Track source bindings, cross-subject comparisons, unresolved references and formal attestations separately from label and model coverage. Noeaaeue owns the bounded queue, complete declaration bindings, recorded Rust review events, compact semantic projections and typed blocker/supplier queries. Mutable state, receipts, datasets, models and deployment configuration remain there. The manifest retains an inactive worker-launch policy; this documentation does not start or resume a service.
-
-Learned ranking is advisory. A training dataset records reviewed positive and negative query/candidate judgments for a specified task; absent links remain unknown. A blocked supplier or an unrun formal check is not an automatic negative relevance label. Use only the graph visible at the frozen historical cut, preserve the exact contexts, and retain review rationale and source observations alongside the binary labels. The current learner requires query/class-balanced training and later corpus- and entity-disjoint qualification, with complete support coverage and comparison against all three baselines both globally and per corpus. Dataset, index, model and independent audit artifacts have separate digests and roles.
-
-A prediction returns to source-grounded review before canonical publication. New encoders for full scope, blocker roles, theorem instantiation or learned edge-level messages are implementation proposals until versioned and evaluated in Noeaaeue; adding prose or YAML fields does not enable them. Existing synthetic software fixtures establish their stated software behavior, not production readiness or mathematical discovery performance. [Combining Textual and Structural Information for Premise Selection in Lean](https://arxiv.org/abs/2510.23637v2) is background literature, not a qualification result for this corpus.
+This README retains the static contract extracted from
+[the original record](https://github.com/grwtsk/math/blob/8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec/docs/ontology/README.md).
+The operational/learning sections are preserved in the source-bound Noe guide and
+unchanged original archive. No manifest, schema, source pin or mathematical
+acceptance is upgraded by this separation.

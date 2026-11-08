@@ -1,0 +1,9 @@
+{
+  "schema": "math-ontology/source/2",
+  "id": "source:grwtsk.math.boundary-origin-20261107",
+  "kind": "git_repository",
+  "title": "Mathematical source snapshot before operational ownership separation",
+  "url": "https://github.com/grwtsk/math",
+  "revision": "8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec",
+  "scope": "Exact historical inputs to the source-role migration; source identity does not attest compilation, kernel checking, axiom auditing or mathematical acceptance."
+}

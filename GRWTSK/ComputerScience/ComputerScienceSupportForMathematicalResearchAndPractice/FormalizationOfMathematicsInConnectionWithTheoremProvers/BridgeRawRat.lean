@@ -15,10 +15,12 @@ import LeanCert.Validity.Bounds
 import LeanCert.ML.Distillation
 
 /-!
-# LeanBridge: JSON-RPC Bridge for Python Integration
+# LeanBridge: mathematical representations and evaluation core
 
-This module implements a stateless, type-safe JSON-RPC bridge over Standard I/O.
-The compiled binary acts as a "Math Kernel" or "Oracle" that Python can communicate with.
+This module retains the expression, rational and interval representations and
+evaluation/checking functions. Noe owns the stdio service and request dispatch;
+its source binding is recorded in the ontology relocation view. The protocol
+below describes the shared representation contract, not a running service here.
 
 ## Protocol
 
@@ -1080,131 +1082,12 @@ def handleDerivInterval (req : DerivIntervalRequest) : Json :=
     ("num_vars", toJson gradients.length)
   ]
 
-/-! ## 5. Main Event Loop -/
-
-/-- Process a single JSON-RPC request -/
-def processRequest (line : String) : IO Unit := do
-  let respond (j : Json) : IO Unit := do
-    IO.println j.compress
-    (← IO.getStdout).flush
-
-  match Json.parse line with
-  | Except.error e =>
-    respond (Json.mkObj [("error", s!"JSON parse error: {e}")])
-  | Except.ok j =>
-    let reqId := j.getObjVal? "id" |>.toOption
-
-    match j.getObjValAs? String "method" with
-    | Except.error _ =>
-      respond (Json.mkObj [("error", "Missing 'method' field")])
-    | Except.ok method =>
-      let args := match j.getObjVal? "params" with
-        | Except.ok a => a
-        | Except.error _ => Json.mkObj []
-
-      let result := match method with
-        | "eval_interval" =>
-          match fromJson? (α := EvalRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleEvalInterval req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid eval_interval params: {e}")]
-
-        | "eval_interval_dyadic" =>
-          match fromJson? (α := EvalDyadicRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleEvalIntervalDyadic req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid eval_interval_dyadic params: {e}")]
-
-        | "eval_interval_affine" =>
-          match fromJson? (α := EvalAffineRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleEvalIntervalAffine req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid eval_interval_affine params: {e}")]
-
-        | "global_min" =>
-          match fromJson? (α := OptimizeRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleGlobalMin req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid global_min params: {e}")]
-
-        | "global_max" =>
-          match fromJson? (α := OptimizeRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleGlobalMax req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid global_max params: {e}")]
-
-        | "global_min_dyadic" =>
-          match fromJson? (α := OptimizeDyadicRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleGlobalMinDyadic req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid global_min_dyadic params: {e}")]
-
-        | "global_max_dyadic" =>
-          match fromJson? (α := OptimizeDyadicRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleGlobalMaxDyadic req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid global_max_dyadic params: {e}")]
-
-        | "global_min_affine" =>
-          match fromJson? (α := OptimizeAffineRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleGlobalMinAffine req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid global_min_affine params: {e}")]
-
-        | "global_max_affine" =>
-          match fromJson? (α := OptimizeAffineRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleGlobalMaxAffine req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid global_max_affine params: {e}")]
-
-        | "check_bound" =>
-          match fromJson? (α := CheckBoundRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleCheckBound req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid check_bound params: {e}")]
-
-        | "integrate" =>
-          match fromJson? (α := IntegrateRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleIntegrate req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid integrate params: {e}")]
-
-        | "find_roots" =>
-          match fromJson? (α := FindRootsRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleFindRoots req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid find_roots params: {e}")]
-
-        | "find_unique_root" =>
-          match fromJson? (α := FindUniqueRootRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleFindUniqueRoot req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid find_unique_root params: {e}")]
-
-        | "verify_adaptive" =>
-          match fromJson? (α := VerifyAdaptiveRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleVerifyAdaptive req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid verify_adaptive params: {e}")]
-
-        | "forward_interval" =>
-          match fromJson? (α := ForwardIntervalRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleForwardInterval req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid forward_interval params: {e}")]
-
-        | "deriv_interval" =>
-          match fromJson? (α := DerivIntervalRequest) args with
-          | Except.ok req => Json.mkObj [("result", handleDerivInterval req)]
-          | Except.error e => Json.mkObj [("error", s!"Invalid deriv_interval params: {e}")]
-
-        | "ping" =>
-          Json.mkObj [("result", "pong")]
-
-        | other =>
-          Json.mkObj [("error", s!"Unknown method: {other}")]
-
-      -- Attach ID if present
-      let final := match reqId with
-        | some id => result.setObjVal! "id" id
-        | none => result
-
-      respond final
-
 end LeanCert.Bridge
 
-/-- Main entry point: read lines from stdin, process each as a request -/
-def main : IO Unit := do
-  let stdin ← IO.getStdin
-  repeat do
-    let line ← stdin.getLine
-    if line.isEmpty then break
-    -- Trim whitespace
-    let trimmed := line.trim
-    if !trimmed.isEmpty then
-      LeanCert.Bridge.processRequest trimmed
+/-!
+Local attribution: grwtsk contributors.
+Boundary split of math@8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec, blob 5184af2a459a9ee0e3b81eef1221c21e11ccc4c2.
+Retained definitions/policies keep their original scope; the operational driver
+is maintained in Noe at tools/math/relocated/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BridgeRawRat.lean.
+Compilation, fresh kernel checking and transitive axiom auditing: NOT_RUN.
+-/

@@ -10,6 +10,11 @@ import Mathlib.Tactic.LinearCombination
 
 # polyrith Tactic
 
+This split module retains polynomial/context representations and checking of a
+supplied certificate. The Python/Sage acquisition and tactic registration are in
+the importing Noe driver. The upstream method description below describes the
+original combined implementation; no external service is called by this core.
+
 In this file, the `polyrith` tactic is created.  This tactic, which
 works over `Field`s, attempts to prove a multivariate polynomial target over said
 field by using multivariable polynomial hypotheses/proof terms over the same field.
@@ -277,136 +282,44 @@ instance : FromJson SageResult where fromJson? j := do
   else
     return .error (← fromJson? j)
 
-/--
-This tactic calls python from the command line with the args in `arg_list`.
-The output printed to the console is parsed as a `Json`.
-It assumes that `python3` is available on the path.
+/-
+Local attribution: grwtsk contributors.
+Artifact-boundary split of grwtsk/math@8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec
+Source: GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PolyrithCreateSageArgs.lean
+Git blob: 4ee028d7c404ac0cd8d4fea00009416f745159a0
+Retained polynomial representation/context parsing and proof-producing checking of a supplied SageResult.
+External Python/Sage acquisition and tactic orchestration are in the importing Noe driver.
+Compilation, fresh kernel checking and transitive axiom auditing: NOT_RUN.
+Historical provenance comments describe the original source, not verification of these edited bytes.
 -/
-def sageOutput (args : Array String) : IO SageResult := do
-  let path := (← getMathlibDir) / "scripts" / "polyrith_sage.py"
-  unless ← path.pathExists do
-    throw <| IO.userError "could not find python script scripts/polyrith_sage.py"
-  let s ← IO.Process.run { cmd := "python3", args := #[path.toString] ++ args }
-  match Json.parse s >>= fromJson? with
-  | .ok v => return v
-  | .error e => throw <| .userError e
 
-/--
-This is the main body of the `polyrith` tactic. It takes in the following inputs:
-* `only : Bool` - This represents whether the user used the key word "only"
-* `hyps : Array Expr` - the hypotheses/proof terms selected by the user
-* `traceOnly : Bool` - If enabled, the returned syntax will be `.missing`
+/-- Reconstruct and check the supplied polynomial certificate in the existing AtomM context. -/
+def _root_.GRWTSK.Polyrith.applySageCertificate (g : MVarId) (hyps : Array Expr)
+    (hyps' : Array (Source × Poly)) (traceOnly : Bool) (result : SageResult) :
+    AtomM (Except MVarId (TSyntax `tactic)) := do
+  match result with
+  | .ok { trace, data } =>
+    if let some trace := trace then logInfo trace
+    if let some polys := data then
+      let vars ← liftM <| (← get).atoms.mapM delab
+      let p ← Poly.sumM (polys.zip hyps') fun (p, src, _) => do
+        let h := .hyp (← delab (match src with | .input i => hyps[i]! | .fvar h => .fvar h))
+        pure <| match p.unDiv? with
+        | some (p, den) => (p.mul' h).div (.const den)
+        | none => p.mul' h
+      let stx := (withRef (← getRef) <| p.toSyntax vars).run
+      let tac ←
+        if let .const 0 := p then `(tactic| linear_combination)
+        else `(tactic| linear_combination $stx:term)
+      try
+        guard (← Elab.runTactic g tac).1.isEmpty
+      catch _ => throwError
+        "polyrith found the following certificate, but it failed to close the goal:\n{stx}"
+      pure <| .ok tac
+    else if traceOnly then
+      return .error g
+    else throwError "internal error: no output available"
+  | .error { name, value } =>
+    throwError "polyrith failed to retrieve a solution from Sage! {name}: {value}"
 
-First, the tactic converts the target into a `Poly`, and finds out what type it
-is an equality of. (It also fills up a list of `Expr`s with its atoms). Then, it
-collects all the relevant hypotheses/proof terms from the context, and from those
-selected by the user, taking into account whether `only` is true. (The list of atoms is
-updated accordingly as well).
-
-This information is used to create a list of args that get used in a call to
-the appropriate python file that executes a grobner basis computation. The
-output of this computation is a `String` representing the certificate. This
-string is parsed into a list of `Poly` objects that are then converted into
-`Expr`s (using the updated list of atoms).
-
-the names of the hypotheses, along with the corresponding coefficients are
-given to `linear_combination`. If that tactic succeeds, the user is prompted
-to replace the call to `polyrith` with the appropriate call to
-`linear_combination`.
-
-Returns `.error g` if this was a "dry run" attempt that does not actually invoke sage.
--/
-def polyrith (g : MVarId) (only : Bool) (hyps : Array Expr)
-    (traceOnly := false) : MetaM (Except MVarId (TSyntax `tactic)) := do
-  IO.sleep 10 -- otherwise can lead to weird errors when actively editing code with polyrith calls
-  g.withContext <| AtomM.run .reducible do
-    let (α, hyps', tgt) ← parseContext only hyps (← g.getType)
-    let rec
-      /-- Try to prove the goal by `ring` and fail with the given message otherwise. -/
-      byRing msg := do
-        let stx ← `(tactic| ring)
-        try
-          let ([], _) ← Elab.runTactic g stx | failure
-          return .ok stx
-        catch _ => throwError "{msg} and the goal is not provable by ring"
-    if hyps'.isEmpty then
-      return ← byRing "polyrith did not find any relevant hypotheses"
-    let vars := (← get).atoms.size
-    if vars = 0 then
-      return ← byRing "polyrith did not find find any variables"
-    match ← sageOutput (createSageArgs traceOnly α vars hyps' tgt) with
-    | .ok { trace, data } =>
-      if let some trace := trace then logInfo trace
-      if let some polys := data then
-        let vars ← liftM <| (← get).atoms.mapM delab
-        let p ← Poly.sumM (polys.zip hyps') fun (p, src, _) => do
-          let h := .hyp (← delab (match src with | .input i => hyps[i]! | .fvar h => .fvar h))
-          pure <| match p.unDiv? with
-          | some (p, den) => (p.mul' h).div (.const den)
-          | none => p.mul' h
-        let stx := (withRef (← getRef) <| p.toSyntax vars).run
-        let tac ←
-          if let .const 0 := p then `(tactic| linear_combination)
-          else `(tactic| linear_combination $stx:term)
-        try
-          guard (← Elab.runTactic g tac).1.isEmpty
-        catch _ => throwError
-          "polyrith found the following certificate, but it failed to close the goal:\n{stx}"
-        pure <| .ok tac
-      else if traceOnly then
-        return .error g
-      else throwError "internal error: no output available"
-    | .error { name, value } =>
-      throwError "polyrith failed to retrieve a solution from Sage! {name}: {value}"
-
-/--
-Attempts to prove polynomial equality goals through polynomial arithmetic
-on the hypotheses (and additional proof terms if the user specifies them).
-It proves the goal by generating an appropriate call to the tactic
-`linear_combination`. If this call succeeds, the call to `linear_combination`
-is suggested to the user.
-
-* `polyrith` will use all relevant hypotheses in the local context.
-* `polyrith [t1, t2, t3]` will add proof terms t1, t2, t3 to the local context.
-* `polyrith only [h1, h2, h3, t1, t2, t3]` will use only local hypotheses
-  `h1`, `h2`, `h3`, and proofs `t1`, `t2`, `t3`. It will ignore the rest of the local context.
-
-Notes:
-* This tactic only works with a working internet connection, since it calls Sage
-  using the SageCell web API at <https://sagecell.sagemath.org/>.
-  Many thanks to the Sage team and organization for allowing this use.
-* This tactic assumes that the user has `python3` installed and available on the path.
-  (Test by opening a terminal and executing `python3 --version`.)
-  It also assumes that the `requests` library is installed: `python3 -m pip install requests`.
-
-Examples:
-
-```lean
-example (x y : ℚ) (h1 : x*y + 2*x = 1) (h2 : x = y) :
-  x*y = -2*y + 1 :=
-by polyrith
--- Try this: linear_combination h1 - 2 * h2
-
-example (x y z w : ℚ) (hzw : z = w) : x*z + 2*y*z = x*w + 2*y*w :=
-by polyrith
--- Try this: linear_combination (2 * y + x) * hzw
-
-constant scary : ∀ a b : ℚ, a + b = 0
-
-example (a b c d : ℚ) (h : a + b = 0) (h2: b + c = 0) : a + b + c + d = 0 :=
-by polyrith only [scary c d, h]
--- Try this: linear_combination scary c d + h
-```
--/
-syntax "polyrith" (&" only")? (" [" term,* "]")? : tactic
-
-open Elab Tactic
-elab_rules : tactic
-  | `(tactic| polyrith%$tk $[only%$onlyTk]? $[[$hyps,*]]?) => do
-    let hyps ← hyps.map (·.getElems) |>.getD #[] |>.mapM (elabTerm · none)
-    let traceMe ← Lean.isTracingEnabledFor `Meta.Tactic.polyrith
-    match ← polyrith (← getMainGoal) tk.isNone hyps traceMe with
-    | .ok stx =>
-      replaceMainGoal []
-      if !traceMe then Std.Tactic.TryThis.addSuggestion tk stx
-    | .error g => replaceMainGoal [g]
+end Mathlib.Tactic.Polyrith

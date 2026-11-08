@@ -286,35 +286,6 @@ section SageMathApi
 
 /-! # Interaction with SageMath -/
 
-/--
-These are Sage functions that test membership in the radical and format the output. See
-https://github.com/sagemath/sage/blob/f8df80820dc7321dc9b18c9644c3b8315999670b/src/sage/rings/polynomial/multi_polynomial_libsingular.pyx#L4472-L4518
-for a description of `MPolynomial_libsingular.lift`.
--/
-def sageHelperFunctions : String :=
-  include_str ".."/".."/"scripts"/"polyrith_sage_helper.py"
-
-/--
-The Sage type to use, given a base type of the target. Currently always rational numbers (`QQ`).
-Future extensions may change behavior depending on the base type.
--/
-@[nolint unusedArguments]
-def sageTypeStr (_ : Expr) : String := "QQ"
-
-/--
-Create a Sage script to send to SageMath API.
--/
-def sageCreateQuery (α : Expr) (atoms : Nat) (hyps : Array (Source × Poly)) (target : Poly) :
-    IO String := do
-  -- since `hyps` and `target` reference the variable list `vars` (see `Poly.format`),
-  -- `hyps` and `target` are wrapped as functions where `vars` is bounded using `lambda`
-  let hypsListPython := "[" ++ ",".intercalate (hyps.map (toString ·.2) |>.toList) ++ "]"
-  let mkHypsListPython := s!"lambda vars: {hypsListPython}"
-  let mkTargetPython := s!"lambda vars: {target}"
-  let command :=
-    s!"main({sageTypeStr α}, {atoms}, {mkHypsListPython}, {mkTargetPython})"
-  return sageHelperFunctions ++ "\n" ++ command
-
 /-- Parse a `SageResult` from the raw SageMath API output. -/
 instance : FromJson SageResult where fromJson? j := do
   -- we expect the output has either "success": true and contains "stdout",
@@ -333,43 +304,6 @@ instance : FromJson SageResult where fromJson? j := do
     let errorValue ← executeReply.getObjValAs? String "evalue"
     return .error { name := errorName, value := errorValue }
 
-/-- The User-Agent header value for HTTP calls to SageMath API -/
-register_option polyrith.sageUserAgent : String :=
-  { defValue := "LeanProver (https://leanprover-community.github.io/)"
-    group := "polyrith"
-    descr := "The User-Agent header value for HTTP calls to SageMath API" }
-
-/--
-This function calls the Sage API at <https://sagecell.sagemath.org/service>.
-The output is parsed as `SageResult`.
--/
-def runSage (trace : Bool) (α : Expr) (atoms : Nat) (hyps : Array (Source × Poly)) (target : Poly) :
-    CoreM SageResult := do
-  let query ← sageCreateQuery α atoms hyps target
-  if trace then
-    -- dry run enabled
-    return .ok { trace := query }
-
-  -- send query to SageMath API
-  let apiUrl := "https://sagecell.sagemath.org/service"
-  let data := s!"code={System.Uri.escapeUri query}"
-  let curlArgs := #[
-    "-X", "POST",
-    "--user-agent", polyrith.sageUserAgent.get (← getOptions),
-    "--data-raw", data,
-    apiUrl
-  ]
-  let out ← IO.Process.output { cmd := "curl", args := curlArgs }
-  if out.exitCode != 0 then
-    IO.throwServerError <|
-      "Could not send API request to SageMath. " ++
-      s!"curl exited with code {out.exitCode}:\n{out.stderr}"
-
-  -- parse results
-  match Json.parse out.stdout >>= fromJson? with
-  | .ok result => return result
-  | .error e => IO.throwServerError <|
-      s!"Could not parse SageMath output (error: {e})\nSageMath output:\n{out.stdout}"
 
 end SageMathApi
 
@@ -401,9 +335,10 @@ to replace the call to `polyrith` with the appropriate call to
 
 Returns `.error g` if this was a "dry run" attempt that does not actually invoke sage.
 -/
-def polyrith (g : MVarId) (only : Bool) (hyps : Array Expr)
+def polyrithWith
+    (acquire : Bool → Expr → Nat → Array (Source × Poly) → Poly → CoreM SageResult)
+    (g : MVarId) (only : Bool) (hyps : Array Expr)
     (traceOnly := false) : MetaM (Except MVarId (TSyntax `tactic)) := do
-  IO.sleep 10 -- otherwise can lead to weird errors when actively editing code with polyrith calls
   g.withContext <| AtomM.run .reducible do
     let (α, hyps', target) ← parseContext only hyps (← g.getType)
     let rec
@@ -417,7 +352,7 @@ def polyrith (g : MVarId) (only : Bool) (hyps : Array Expr)
     if hyps'.isEmpty then
       return ← byRing "polyrith did not find any relevant hypotheses"
     let vars := (← get).atoms.size
-    match ← runSage traceOnly α vars hyps' target with
+    match ← acquire traceOnly α vars hyps' target with
     | .ok { trace, data } =>
       if let some trace := trace then logInfo trace
       if let some {coeffs := polys, power := pow} := data then
@@ -443,54 +378,17 @@ def polyrith (g : MVarId) (only : Bool) (hyps : Array Expr)
     | .error { name, value } =>
       throwError "polyrith failed to retrieve a solution from Sage! {name}: {value}"
 
-/--
-Attempts to prove polynomial equality goals through polynomial arithmetic
-on the hypotheses (and additional proof terms if the user specifies them).
-It proves the goal by generating an appropriate call to the tactic
-`linear_combination`. If this call succeeds, the call to `linear_combination`
-is suggested to the user.
-
-* `polyrith` will use all relevant hypotheses in the local context.
-* `polyrith [t1, t2, t3]` will add proof terms t1, t2, t3 to the local context.
-* `polyrith only [h1, h2, h3, t1, t2, t3]` will use only local hypotheses
-  `h1`, `h2`, `h3`, and proofs `t1`, `t2`, `t3`. It will ignore the rest of the local context.
-
-Notes:
-* This tactic only works with a working internet connection, since it calls Sage
-  using the SageCell web API at <https://sagecell.sagemath.org/>.
-  Many thanks to the Sage team and organization for allowing this use.
-* This tactic assumes that the user has `curl` available on path.
-
-Examples:
-
-```lean
-example (x y : ℚ) (h1 : x*y + 2*x = 1) (h2 : x = y) :
-    x*y = -2*y + 1 := by
-  polyrith
--- Try this: linear_combination h1 - 2 * h2
-
-example (x y z w : ℚ) (hzw : z = w) : x*z + 2*y*z = x*w + 2*y*w := by
-  polyrith
--- Try this: linear_combination (2 * y + x) * hzw
-
-axiom scary : ∀ a b : ℚ, a + b = 0
-
-example (a b c d : ℚ) (h : a + b = 0) (h2: b + c = 0) : a + b + c + d = 0 := by
-  polyrith only [scary c d, h]
--- Try this: linear_combination scary c d + h
-```
--/
-syntax "polyrith" (&" only")? (" [" term,* "]")? : tactic
-
-open Elab Tactic
-elab_rules : tactic
-  | `(tactic| polyrith%$tk $[only%$onlyTk]? $[[$hyps,*]]?) => do
-    let hyps ← hyps.map (·.getElems) |>.getD #[] |>.mapM (elabTerm · none)
-    let traceMe ← Lean.isTracingEnabledFor `Meta.Tactic.polyrith
-    match ← polyrith (← getMainGoal) onlyTk.isSome hyps traceMe with
-    | .ok stx =>
-      replaceMainGoal []
-      if !traceMe then Lean.Meta.Tactic.TryThis.addSuggestion tk stx
-    | .error g => replaceMainGoal [g]
-
 end Mathlib.Tactic.Polyrith
+end GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Poly.Variant9b7f626fb30ce91814ea3175c101a37a6caa82ab617ac0281395eded30b4be09
+
+/-!
+Local attribution: grwtsk contributors.
+Boundary split of math@8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec, blob 789f818a47ad3a0baab32d3e4005c0b68ae9a8da.
+The Noe driver at tools/math/relocated/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PolyrithNamespacedSageCoeffAndPower.lean
+imports this retained core. Historical evidence applies only to its original bytes.
+Compilation, fresh kernel checking and transitive axiom auditing: NOT_RUN.
+-/
+
+/- The injected acquisition callback supplies candidate coefficients only. The retained
+linear_combination/ring reconstruction still has to close the actual goal. This API
+split asserts no new correctness, generalization, source fidelity or proof acceptance. -/

@@ -15,13 +15,12 @@ import LeanCert.Engine.IntervalEval
 import LeanCert.Engine.IntervalEvalDyadic
 
 /-!
-# Extreme Benchmark: Where Rational Fails and Dyadic Succeeds
+# Pure interval-expression examples
 
-This benchmark demonstrates cases where the rational backend either:
-1. Produces astronomically large denominators (memory issue)
-2. Takes prohibitively long due to GCD operations
-
-These are the cases where the dyadic backend truly shines.
+The original expression generators, interval fixtures and evaluators are retained
+with their existing namespaces and definitions. The historical timing loops,
+standalone entry point and performance discussion are in the importing Noe driver.
+This source split supplies no comparative performance theorem or fresh checking.
 -/
 
 
@@ -74,103 +73,17 @@ def evalDyadic (e : Expr) (I : IntervalDyadic) (cfg : DyadicConfig := {}) : Inte
 def countDigits (n : Nat) : Nat :=
   if n == 0 then 1 else n.repr.length
 
-/-! ### Main -/
-
-def main : IO Unit := do
-  IO.println "╔═══════════════════════════════════════════════════════════════════════╗"
-  IO.println "║          EXTREME BENCHMARK: Where Dyadic Shines                       ║"
-  IO.println "╚═══════════════════════════════════════════════════════════════════════╝"
-  IO.println ""
-
-  -- Test deeply nested expressions with dyadic only
-  IO.println "┌───────────────────────────────────────────────────────────────────────┐"
-  IO.println "│ DEEPLY NESTED EXPRESSIONS (Dyadic Only - Rational would timeout)     │"
-  IO.println "└───────────────────────────────────────────────────────────────────────┘"
-
-  for depth in [5, 10, 15, 20] do
-    let expr := mkDeepNested depth
-    let startTime ← IO.monoNanosNow
-    let result := evalDyadic expr smallIntervalDyadic
-    let endTime ← IO.monoNanosNow
-    let timeUs := (endTime - startTime) / 1000
-    IO.println s!"  depth={depth}: [{result.lo.toRat.num}/{result.lo.toRat.den}, {result.hi.toRat.num}/{result.hi.toRat.den}] in {timeUs}μs"
-  IO.println ""
-
-  -- Test nestedExp at various depths
-  IO.println "┌───────────────────────────────────────────────────────────────────────┐"
-  IO.println "│ NESTED EXP (exp(exp(exp(...)))) - Extreme denominator explosion      │"
-  IO.println "└───────────────────────────────────────────────────────────────────────┘"
-
-  for depth in [2, 3, 4, 5] do
-    let expr := mkNestedExp depth
-    let startTime ← IO.monoNanosNow
-    let result := evalDyadic expr smallIntervalDyadic
-    let endTime ← IO.monoNanosNow
-    let timeUs := (endTime - startTime) / 1000
-    IO.println s!"  depth={depth}: time={timeUs}μs"
-    IO.println s!"           mantissa size: {countDigits result.lo.mantissa.natAbs}-{countDigits result.hi.mantissa.natAbs} digits"
-  IO.println ""
-
-  -- Show what happens with rational for comparison (only safe depths)
-  IO.println "┌───────────────────────────────────────────────────────────────────────┐"
-  IO.println "│ RATIONAL DENOMINATOR GROWTH (showing explosion pattern)              │"
-  IO.println "└───────────────────────────────────────────────────────────────────────┘"
-
-  for depth in [2, 3] do
-    let expr := mkNestedExp depth
-    let result := evalIntervalCore expr (fun _ => smallIntervalRat)
-    IO.println s!"  nestedExp{depth} rational denominators:"
-    IO.println s!"    lo.den: {countDigits result.lo.den} digits"
-    IO.println s!"    hi.den: {countDigits result.hi.den} digits"
-  IO.println ""
-
-  IO.println "  Note: nestedExp4+ would have 10,000+ digit denominators with rational!"
-  IO.println "        Dyadic stays at ~17 digits regardless of depth."
-  IO.println ""
-
-  -- Precision comparison at different settings
-  IO.println "┌───────────────────────────────────────────────────────────────────────┐"
-  IO.println "│ DYADIC PRECISION MODES                                               │"
-  IO.println "└───────────────────────────────────────────────────────────────────────┘"
-
-  let testExpr := mkNestedExp 3
-
-  let fastResult := evalIntervalDyadic testExpr (fun _ => smallIntervalDyadic) DyadicConfig.fast
-  let stdResult := evalIntervalDyadic testExpr (fun _ => smallIntervalDyadic) {}
-  let highResult := evalIntervalDyadic testExpr (fun _ => smallIntervalDyadic) DyadicConfig.highPrecision
-
-  let fastWidth := fastResult.hi.toRat - fastResult.lo.toRat
-  let stdWidth := stdResult.hi.toRat - stdResult.lo.toRat
-  let highWidth := highResult.hi.toRat - highResult.lo.toRat
-
-  IO.println s!"  nestedExp3 interval widths:"
-  IO.println s!"    fast (-30 bits):  {fastWidth}"
-  IO.println s!"    std  (-53 bits):  {stdWidth}"
-  IO.println s!"    high (-100 bits): {highWidth}"
-  IO.println ""
-
-  IO.println "╔═══════════════════════════════════════════════════════════════════════╗"
-  IO.println "║                       CONCLUSION                                      ║"
-  IO.println "╠═══════════════════════════════════════════════════════════════════════╣"
-  IO.println "║ The dyadic backend enables interval evaluation of expressions that    ║"
-  IO.println "║ are IMPOSSIBLE with rational arithmetic due to denominator explosion. ║"
-  IO.println "║                                                                       ║"
-  IO.println "║ • Rational: denominators grow EXPONENTIALLY with expression depth    ║"
-  IO.println "║   - nestedExp2: ~200 digits                                           ║"
-  IO.println "║   - nestedExp3: ~2000 digits                                          ║"
-  IO.println "║   - nestedExp4: ~20,000 digits (estimated)                            ║"
-  IO.println "║                                                                       ║"
-  IO.println "║ • Dyadic: precision FIXED regardless of depth                         ║"
-  IO.println "║   - Standard: 53 bits = ~16 decimal digits                            ║"
-  IO.println "║   - High precision: 100 bits = ~30 decimal digits                     ║"
-  IO.println "║                                                                       ║"
-  IO.println "║ Use cases where dyadic is essential:                                  ║"
-  IO.println "║   - Neural network verification (1000s of operations)                 ║"
-  IO.println "║   - Optimization (100s of iterations)                                 ║"
-  IO.println "║   - Taylor series approximation (many terms)                          ║"
-  IO.println "║   - Any deeply nested expression tree                                 ║"
-  IO.println "╚═══════════════════════════════════════════════════════════════════════╝"
+/-
+Local attribution: grwtsk contributors.
+Artifact-boundary split of grwtsk/math@8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec
+Source: GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ExtremeBenchmarkNamespaced.lean
+Git blob: c832cc9b4ad71df6f196a765bbc6c93338bd6ded
+Retained exact expression generators, interval fixtures and pure evaluation functions.
+Timing loops, output and performance discussion execute only in the Noe driver.
+Compilation, fresh kernel checking and transitive axiom auditing: NOT_RUN.
+Historical provenance comments describe the original source, not verification of these edited bytes.
+-/
 
 end LeanCert.Benchmark.Extreme
 
-def main : IO Unit := LeanCert.Benchmark.Extreme.main
+end GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.MkNestedExp.Variantaf95a146cd9019063001ff333bab432c3dbf651b79a17161c186ed00100f9c5e

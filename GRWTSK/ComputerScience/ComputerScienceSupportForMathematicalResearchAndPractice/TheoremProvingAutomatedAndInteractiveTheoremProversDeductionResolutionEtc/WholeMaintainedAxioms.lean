@@ -1,78 +1,27 @@
-import FormalResearch
-import Lean.Elab.Print
-import Lean.Util.CollectAxioms
+import Lean
 
-open Lean Elab Command
+/-!
+Local attribution: grwtsk contributors.
+Boundary split of math@8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec, blob c318cb6a174a7bc34c6cb52b25ecc276a8c7f0d7.
+Retained definitions/policies keep their original scope; the operational driver
+is maintained in Noe at tools/math/relocated/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/WholeMaintainedAxioms.lean.
+Compilation, fresh kernel checking and transitive axiom auditing: NOT_RUN.
+-/
 
-private def structureAuditNameParts : Name → List Json
-  | .anonymous => []
-  | .str parent component => structureAuditNameParts parent ++
-      [Json.mkObj [("kind", toJson "str"), ("value", toJson component)]]
-  | .num parent component => structureAuditNameParts parent ++
-      [Json.mkObj [("kind", toJson "num"), ("value", toJson component)]]
+namespace GRWTSK.RepositoryIntegrity.AxiomPolicy.WholeMaintainedAxioms
 
-private def structureAuditKind : ConstantInfo → String
-  | .axiomInfo _ => "axiom"
-  | .defnInfo _ => "definition"
-  | .thmInfo _ => "theorem"
-  | .opaqueInfo _ => "opaque"
-  | .quotInfo _ => "quotient"
-  | .inductInfo _ => "inductive"
-  | .ctorInfo _ => "constructor"
-  | .recInfo _ => "recursor"
+open Lean
 
-private def structureAuditMaintainedModule (name : Name) : Bool :=
+def structureAuditMaintainedModule (name : Name) : Bool :=
   let text := name.toString
   text == "FormalResearch" || text.startsWith "FormalResearch."
 
-elab "audit_maintained_environment" : command => do
-  let env := (← getEnv).setExporting false
-  let modules := env.allImportedModuleNames
-  let candidates := (env.constants.toList.filter fun entry =>
-    match env.getModuleIdxFor? entry.1 with
-    | some index => structureAuditMaintainedModule modules[index]!
-    | none => false).toArray.qsort (fun a b => Name.quickLt a.1 b.1)
-  let mut results : Array Json := #[]
-  let mut forbidden : Array Json := #[]
-  let mut directAxioms : Array Json := #[]
-  for (name, info) in candidates do
-    if let some moduleIndex := env.getModuleIdxFor? name then
-      let owner := modules[moduleIndex]!
-      if structureAuditMaintainedModule owner then
-        let axioms ← collectAxioms name
-        let bad := axioms.filter fun ax =>
-          ax != ``propext && ax != ``Classical.choice && ax != ``Quot.sound
-        let entry := Json.mkObj [
-          ("name", toJson name.toString),
-          ("name_parts", toJson (structureAuditNameParts name)),
-          ("module", toJson owner.toString),
-          ("kind", toJson (structureAuditKind info)),
-          ("unsafe", toJson info.isUnsafe),
-          ("axioms", toJson (axioms.map Name.toString)),
-          ("forbidden_axioms", toJson (bad.map Name.toString))]
-        results := results.push entry
-        if !bad.isEmpty then forbidden := forbidden.push entry
-        if let .axiomInfo _ := info then directAxioms := directAxioms.push entry
-        -- Use the actual Lean.Name. Numeric private-name components are retained.
-        let ident := mkIdent name
-        elabCommand (← `(command| #print axioms $ident:ident))
-  let report := Json.mkObj [
-    ("schema", toJson "formal-research/whole-maintained-axiom-environment/v1"),
-    ("root_import", toJson "FormalResearch"),
-    ("selection", toJson "owning imported module is FormalResearch or FormalResearch.*"),
-    ("allowed_axioms", toJson #["propext", "Classical.choice", "Quot.sound"]),
-    ("maintained_imported_modules", toJson
-      ((modules.filter structureAuditMaintainedModule).map Name.toString)),
-    ("declarations", toJson results),
-    ("count", toJson results.size),
-    ("forbidden_count", toJson forbidden.size),
-    ("direct_axiom_count", toJson directAxioms.size),
-    ("forbidden", toJson forbidden),
-    ("direct_axioms", toJson directAxioms)]
-  liftIO <| IO.FS.writeFile "artifacts/structure-audit/whole-maintained-environment.json"
-    (report.pretty ++ "\n")
-  logInfo m!"Whole maintained environment: {results.size} declarations; {forbidden.size} forbidden axiom sets; {directAxioms.size} direct axiom declarations."
-  if !forbidden.isEmpty || !directAxioms.isEmpty then
-    throwError "Whole maintained environment axiom audit rejected the candidate."
+/-- The historical audit permits exactly these ambient axioms. -/
+def structureAuditAllowedAxioms : List Name :=
+  [``propext, ``Classical.choice, ``Quot.sound]
 
-audit_maintained_environment
+/-- Static exclusion predicate; evaluating it is not an axiom audit. -/
+def structureAuditForbiddenAxiom (axiomName : Name) : Bool :=
+  axiomName != ``propext && axiomName != ``Classical.choice && axiomName != ``Quot.sound
+
+end GRWTSK.RepositoryIntegrity.AxiomPolicy.WholeMaintainedAxioms

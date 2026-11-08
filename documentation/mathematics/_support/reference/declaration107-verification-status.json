@@ -706,13 +706,10 @@
       "status": "NOT_RUN"
     }
   ],
-  "identity": "ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b",
   "limitations": [
-    "The 670 passing records are compilation records, not any of the 107 declaration audits or 10 exact-type checks.",
-    "One module record is interrupted; its unreturned leaf streams are UNAVAILABLE, not empty.",
     "The operational cancellation is not a mathematical counterexample.",
     "The source pin is a631c3ab52379eacf4c4fced9111fadd983b37ae; this observation does not certify current main source bytes.",
-    "S3 is unavailable; no ranking value is inferred from the partial compilation records."
+    "Every declared audit and exact-type target retains its original NOT_RUN status; no fresh verification is claimed by this static projection."
   ],
   "modules": [
     {
@@ -937,7 +934,6 @@
   "scope": {
     "declaration_audits": 107,
     "exact_type_checks": 10,
-    "fresh_native_steps": 8703,
     "modules": 10,
     "source_assets": 27
   },
@@ -945,36 +941,9 @@
     "commit": "a631c3ab52379eacf4c4fced9111fadd983b37ae",
     "repository": "grwtsk/math"
   },
-  "spectral_volume": {
-    "metric_id": "spectral_log_volume",
-    "profile_canonical_sha256": "254c958eb7f5879d7f3e13f91bbb7ef7a19d3203b48c1402da4198b7992bdc1e",
-    "profile_id": "spectral-volume-radius3-v2",
-    "profile_raw_sha256": "cd6e68070055c92dce2448eaebb44c48f3851721d9564fbcb3cc21c2e2e82056",
-    "radius": 3,
-    "reason_codes": [
-      "NO_COMPLETED_DECLARATION_AUDITS",
-      "NO_QUALIFIED_UPSTREAM_CORE_SOURCE_GRAPH"
-    ],
-    "status": "UNAVAILABLE",
-    "value": null
-  },
-  "terminal": {
-    "all_current_reservations_released": true,
-    "attempt_host_config_restored_exact": true,
-    "automatic_retry": false,
-    "cause": "A compiler temporary output disappeared during the storage monitor scan; observation uncertainty triggered owned cancellation. No storage-limit breach was reported.",
-    "declaration_audits_completed": 0,
-    "exact_type_checks_completed": 0,
-    "interrupted_leaf_streams": "UNAVAILABLE_NOT_QUALIFIED",
-    "interrupted_records": 1,
-    "mathematical_acceptance": "NOT_CLAIMED",
-    "module_records": 671,
-    "passing_records": 670,
-    "process_groups_quiescent": true,
-    "replay_returncode": -2,
-    "status": "CANCELLED_BY_MONITOR_STORAGE_OBSERVATION_UNKNOWN",
-    "streams_complete": true,
-    "supervisor_returncode": 1
-  },
-  "terminal_audit_sha256": "d9ec3584c145d8843afce7f51c4b4c962bb44e885ff8fe825c0bc4b33e65bcc8"
+  "terminal_audit_sha256": "d9ec3584c145d8843afce7f51c4b4c962bb44e885ff8fe825c0bc4b33e65bcc8",
+  "historical_record_identity": "ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b",
+  "original_record": "https://github.com/grwtsk/math/blob/8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec/documentation/mathematics/_support/reference/declaration107-verification-status.json",
+  "external_evidence": "https://github.com/grwtsk/noeaaeue/blob/07a2fde8f059549cc48b80f9459a4e8ca8792cb8/docs/validation/math-boundary-migration/evidence/documentation/mathematics/_support/reference/declaration107-verification-status.json",
+  "evidence_boundary": "Static mathematical/source specification projected from the pinned original record. Original source identities and mathematical/formal statuses retain their historical scope. Operational observations are retained by the external evidence record; this split runs no verification and grants no stronger acceptance."
 }

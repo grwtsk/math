@@ -22,5 +22,11 @@ import DAF.Tests.RhetoricalHilbert
 import DAF.Tests.RhetoricalFormalIntegration
 import Surface.SmoothFramedSurgery.Tests
 import Surface.CosmeticSurgery.Tests
-def main : IO Unit :=
-  BitMatrix.Tests.Core.run <* IO.println "All BitMatrix tests passed."
+
+/-!
+Local attribution: grwtsk contributors.
+Boundary split of math@8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec, blob 93fa61ab946697ed85ec8afc1ccfed001aa0b59c.
+The Noe driver at tools/math/relocated/GRWTSK/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/TestsEdition1.lean
+imports this retained core. Historical evidence applies only to its original bytes.
+Compilation, fresh kernel checking and transitive axiom auditing: NOT_RUN.
+-/

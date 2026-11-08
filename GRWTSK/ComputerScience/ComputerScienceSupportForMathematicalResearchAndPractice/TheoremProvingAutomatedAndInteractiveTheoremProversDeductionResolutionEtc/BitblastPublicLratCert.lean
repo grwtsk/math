@@ -12,7 +12,9 @@ import Lean.Meta.Native
 
 
 /-!
-This module provides the implementation of the `bv_decide` frontend itself.
+This split module retains LRAT reflection proof construction. External solver
+invocation, certificate-file acquisition and Graphviz export are in the importing
+Noe driver; source publication does not claim that reflection checking was run.
 -/
 namespace Lean.Meta.Tactic.BVDecide
 
@@ -57,62 +59,19 @@ where
         safety := .safe
       }
 
-/--
-Run a SAT solver to obtain an LRAT certificate and use it to produce a proof of UNSAT.
+/-
+Local attribution: grwtsk contributors.
+Artifact-boundary split of grwtsk/math@8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec
+Source: GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/BitblastPublicLratCert.lean
+Git blob: deb3c192d08f555c94eb4f621915c4a0212bbb57
+Retained the original LRAT reflection proof constructor.
+The exported GRWTSK wrapper exposes that unchanged checking path to the Noe acquisition driver.
+Compilation, fresh kernel checking and transitive axiom auditing: NOT_RUN.
+Historical provenance comments describe the original source, not verification of these edited bytes.
 -/
-public def lratBitblaster (ctx : TacticContext) : UnsatProver LratCert :=
-  fun (goal : MVarId) (reflectionResult : ReflectionResult) (atomsAssignment : Std.HashMap Nat (Nat × Expr × Bool)) => do
-  withTraceNode `Meta.Tactic.bv (fun _ => return "Preparing LRAT reflection term") do
-    let bvExpr := reflectionResult.bvExpr
-    let entry ←
-      withTraceNode `Meta.Tactic.bv (fun _ => return "Bitblasting BVLogicalExpr to AIG") do
-        -- lazyPure to prevent compiler lifting
-        IO.lazyPure (fun _ => bvExpr.bitblast)
-    let aigSize := entry.aig.decls.size
-    trace[Meta.Tactic.bv] s!"AIG has {aigSize} nodes."
 
-    if ctx.config.graphviz then
-      IO.FS.writeFile ("." / "aig.gv") <| AIG.toGraphviz entry
-
-    let (cnf, map) ←
-      withTraceNode `Meta.Tactic.sat (fun _ => return "Converting AIG to CNF") do
-        -- lazyPure to prevent compiler lifting
-        IO.lazyPure (fun _ =>
-          let (entry, map) := entry.relabelNat'
-          let cnf := AIG.toCNF entry
-          (cnf, map)
-        )
-
-    let res ←
-      withTraceNode `Meta.Tactic.sat (fun _ => return "Obtaining external proof certificate") do
-        runExternal
-          cnf
-          ctx.solver
-          ctx.lratPath
-          ctx.config.trimProofs
-          ctx.config.timeout
-          ctx.config.binaryProofs
-          ctx.config.solverMode
-
-    match res with
-    | .ok cert =>
-      trace[Meta.Tactic.sat] "SAT solver found a proof."
-      let proof ← cert.toReflectionProof ctx reflectionResult
-      return .ok ⟨proof, cert⟩
-    | .error assignment =>
-      trace[Meta.Tactic.sat] "SAT solver found a counter example."
-      let equations := reconstructCounterExample map assignment aigSize atomsAssignment
-      return .error { goal, unusedHypotheses := reflectionResult.unusedHypotheses, equations }
-
-
-/--
-Given a pre-existing LRAT certificate in `ctx.lratPath` use it to produce a proof of UNSAT.
--/
-public def lratChecker (ctx : TacticContext) : UnsatProver Unit :=
-  fun _ (reflectionResult : ReflectionResult) _ => do
-  withTraceNode `Meta.Tactic.sat (fun _ => return "Preparing LRAT reflection term") do
-    let cert ← LratCert.ofFile ctx.lratPath ctx.config.trimProofs
-    let proof ← cert.toReflectionProof ctx reflectionResult
-    return .ok ⟨proof, ()⟩
+public def _root_.GRWTSK.BVDecide.checkLratCertificate (cert : LratCert) (ctx : TacticContext)
+    (reflectionResult : ReflectionResult) : MetaM Expr :=
+  LratCert.toReflectionProof cert ctx reflectionResult
 
 end Lean.Meta.Tactic.BVDecide

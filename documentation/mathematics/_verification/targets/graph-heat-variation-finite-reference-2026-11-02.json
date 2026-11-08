@@ -1,15 +1,4 @@
 {
-  "checks": {
-    "exact_dirichlet_energy": 1540,
-    "graph_column": 1540,
-    "graph_sink": 1540,
-    "graph_symmetric": 1540,
-    "pointwise_source_returns": 18480,
-    "pointwise_variation": 18480,
-    "sandwich_edges_checked": 27720,
-    "signed_gram_exact": 4620,
-    "signed_gram_ordered_terms": 73920
-  },
   "counterexample": {
     "actualResidualL1": "2",
     "kind": "two-state absorbing sink",
@@ -21,14 +10,14 @@
     ],
     "variationL1": "0"
   },
-  "execution": "Independent offline Python Fraction regression, NOT Lean compilation, kernel, or axioms",
-  "result": "PASS_FINITE_ONLY",
   "schema": "grwtsk.math.graph-heat-variation-gram-reference/1",
-  "seed": 20261102,
   "theorem_formulas": {
     "general_l1": "||d-Kd||1<=sum_vu K(v,u)|d(v)-d(u)|+sum_v|1-rowMass(v)||d(v)|",
     "pointwise": "d(v)-Kd(v)=sum_u K(v,u)*(d(v)-d(u))+(1-rowMass(v))*d(v)",
     "signed_Gram": "X_G(x)-X_G(y)=sum_i!=j G_ij*(rho_i*y_j+y_i*rho_j+rho_i*rho_j)",
     "symmetric_Dirichlet": "sum_v d(v)*(d(v)-Kd(v))=1/2 sum_vu K(v,u)*(d(v)-d(u))^2"
-  }
+  },
+  "original_record": "https://github.com/grwtsk/math/blob/8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec/documentation/mathematics/_verification/targets/graph-heat-variation-finite-reference-2026-11-02.json",
+  "external_evidence": "https://github.com/grwtsk/noeaaeue/blob/07a2fde8f059549cc48b80f9459a4e8ca8792cb8/docs/validation/math-boundary-migration/evidence/documentation/mathematics/_verification/targets/graph-heat-variation-finite-reference-2026-11-02.json",
+  "evidence_boundary": "Static mathematical/source specification projected from the pinned original record. Original source identities and mathematical/formal statuses retain their historical scope. Operational observations are retained by the external evidence record; this split runs no verification and grants no stronger acceptance."
 }

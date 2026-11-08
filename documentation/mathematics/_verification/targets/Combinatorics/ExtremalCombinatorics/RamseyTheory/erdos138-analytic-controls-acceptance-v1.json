@@ -6,8 +6,6 @@
   "receipt_sha256": "db3dce7f2a2226a39bc52f101aea1745263a1141ca34c3ed2fd14e6fc5f9a074",
   "receipt_location": "Noe external runtime: formalization/erdos138/analytic-combined-run-1/receipt.json",
   "scope": "Eight local controls only; no full Erdos 138 proof",
-  "fresh_unique_source_modules": 1945,
-  "host_config_restored": true,
   "allowed_axioms": [
     "propext",
     "Classical.choice",
@@ -74,5 +72,8 @@
     "Quantitative improvement beyond exponential scale",
     "Exact positive-interval kth-root limit"
   ],
-  "full_erdos138_proof": false
+  "full_erdos138_proof": false,
+  "original_record": "https://github.com/grwtsk/math/blob/8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec/documentation/mathematics/_verification/targets/Combinatorics/ExtremalCombinatorics/RamseyTheory/erdos138-analytic-controls-acceptance-v1.json",
+  "external_evidence": "https://github.com/grwtsk/noeaaeue/blob/07a2fde8f059549cc48b80f9459a4e8ca8792cb8/docs/validation/math-boundary-migration/evidence/documentation/mathematics/_verification/targets/Combinatorics/ExtremalCombinatorics/RamseyTheory/erdos138-analytic-controls-acceptance-v1.json",
+  "evidence_boundary": "Static mathematical/source specification projected from the pinned original record. Original source identities and mathematical/formal statuses retain their historical scope. Operational observations are retained by the external evidence record; this split runs no verification and grants no stronger acceptance."
 }

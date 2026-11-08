@@ -13,10 +13,6 @@
     {
       "path": "documentation/mathematics/_support/reviews/colored-twelve-channel-compatibility-2026-11-02.md",
       "blob": "128e7ecfe14e20d8b917aa5b141392361a157e06"
-    },
-    {
-      "path": "documentation/mathematics/_verification/finite/colored-twelve-channel-compatibility-2026-11-02.json",
-      "blob": "ef55916b9d41879929b79e70af37d060f9bc1bd8"
     }
   ],
   "preserved_originals": [
@@ -54,46 +50,21 @@
     "Physical Godel boostedObserver identification requires a proved source-to-Tangent map",
     "One fixed-scale all-positive-rate arithmetic Möbius bound remains open"
   ],
-  "independent_finite": {
-    "script": "/mnt/data/advance/colored_six_port_polarity_reference.py",
-    "script_sha256": "a6388ff46a57cc3375f14e9deb7800d8cd1b80fcbdfe4fcc3c6f5a9b9ab83577",
-    "result_sha256": "036a026b072807b3da6b37a29731a73d07dead9ae4c024a076e37188fd737981",
-    "graphs": 960,
-    "source_sample_returns": 6240,
-    "channel_mass_checks": 11520,
-    "heterogeneous_label_cases": 859,
-    "all_six_label_cases": 106,
-    "status": "PASS_FINITE_DIAGNOSTIC_NOT_LEAN"
-  },
   "pinned_toolchain": {
     "lean": "leanprover/lean4:v4.34.1",
     "lean_toolchain_blob": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
     "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612"
   },
-  "automation": {
-    "noe_main_revision_inspected": "d86e951560b843cba455dfc3eebd0ca560a27511",
-    "noe_proof_automation_skill_blob": "5292446e4ef1398ba928d8ad339b662415166f19",
-    "local_native_toolchain_available": false,
-    "managed_noe_job_dispatched": false
-  },
   "verification": {
-    "source_git_blob_creation": "PASS",
-    "guarded_main_publication": "PASS_NONFORCE_EXPECTED_PARENT_MAIN",
-    "exact_blob_readback": "PASS_4_OF_4",
     "no_authored_sorry_axiom_unsafe": "STATIC_SOURCE_SCAN_ONLY",
     "native_Lean_compilation": "NOT_RUN",
     "expected_types_universes": "NOT_RUN",
     "fresh_kernel_replay_trust0": "NOT_RUN",
     "complete_transitive_axiom_audit": "NOT_RUN",
-    "native_owner_restoration": "NOT_CHECKED",
     "physical_observer_uniqueness": "NOT_PROVED",
     "original_RH_arithmetic_estimate": "OPEN"
   },
-  "publication": {
-    "source_commit": "60c07bfe268b3ad845e9cc31858ac40575b8a4ad",
-    "guarded_parent": "1741af45b92bf2220ab97049be9429f00b5d53f1",
-    "prior_manifest_blob": "bc238e13a7318570f685f63b0881cba75b2d02ca",
-    "original_source_blob_readback": true,
-    "native_Lean_acceptance": false
-  }
+  "original_record": "https://github.com/grwtsk/math/blob/8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec/documentation/mathematics/_verification/targets/colored-twelve-channel-compatibility-2026-11-02.json",
+  "external_evidence": "https://github.com/grwtsk/noeaaeue/blob/07a2fde8f059549cc48b80f9459a4e8ca8792cb8/docs/validation/math-boundary-migration/evidence/documentation/mathematics/_verification/targets/colored-twelve-channel-compatibility-2026-11-02.json",
+  "evidence_boundary": "Static mathematical/source specification projected from the pinned original record. Original source identities and mathematical/formal statuses retain their historical scope. Operational observations are retained by the external evidence record; this split runs no verification and grants no stronger acceptance."
 }

@@ -39,14 +39,6 @@
     "QuantitativeMertensLogPower": "External independently established arithmetic theorem; no Lean port/zero-free-region closure in this increment",
     "FiniteSmoothEulerSplit": "Elementary geometric prime-smooth finite sum to Euler factor inequality; proof in review but Lean proof NOT_FORMALIZED"
   },
-  "test_receipts": {
-    "exact_rational_Abel_and_telescoping_checks": 64,
-    "finite_source_convolution_and_Mertens_Euler_check_assertions": 7200,
-    "finite_original_Gram_integral_comparisons": 36,
-    "max_float_rectangle_discrepancy": "6.392456008974534e-16",
-    "finite_sample_Mertens_constant": "3.9328147510612514 (not universal)",
-    "certification": "NONE; finite diagnostics only"
-  },
   "verification": {
     "publication": "PENDING",
     "parsing": "NOT_RUN",
@@ -66,5 +58,8 @@
     1544,
     441,
     1429
-  ]
+  ],
+  "original_record": "https://github.com/grwtsk/math/blob/8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec/documentation/mathematics/_verification/targets/moebius-quantitative-mertens-two-coordinate-abel-2026-11-01.json",
+  "external_evidence": "https://github.com/grwtsk/noeaaeue/blob/07a2fde8f059549cc48b80f9459a4e8ca8792cb8/docs/validation/math-boundary-migration/evidence/documentation/mathematics/_verification/targets/moebius-quantitative-mertens-two-coordinate-abel-2026-11-01.json",
+  "evidence_boundary": "Static mathematical/source specification projected from the pinned original record. Original source identities and mathematical/formal statuses retain their historical scope. Operational observations are retained by the external evidence record; this split runs no verification and grants no stronger acceptance."
 }

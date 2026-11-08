@@ -1,20 +1,16 @@
-# Terminal status: 107-declaration cross-branch replay
+# Historical status of 107 declaration-audit targets
 
-grwtsk contributors
+Local attribution: grwtsk contributors.
 
 [Immutable public Noe checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json) · checkpoint SHA-256 `58a9b9cdf4ecb5c0783c39c69ed14a8195f737d0ae59480e85505fd927e62768` · [structured Math status](../reference/declaration107-verification-status.json)
 
 Math source pin: [`a631c3ab52379eacf4c4fced9111fadd983b37ae`](https://github.com/grwtsk/math/tree/a631c3ab52379eacf4c4fced9111fadd983b37ae); Noe producer source commit: [`18df57653629d064679c041b224a3aaa511b4136`](https://github.com/grwtsk/noeaaeue/commit/18df57653629d064679c041b224a3aaa511b4136). Registry SHA-256 `4a2857922582ad2bc1403a8311340aff5a77e9ea0ce6a1a65a007becd6c3e8f9`.
 
-## Outcome
+## Mathematical and formal evidence scope
 
-**Terminal operational status:** `CANCELLED_BY_MONITOR_STORAGE_OBSERVATION_UNKNOWN`. A compiler temporary output disappeared during the storage monitor scan; observation uncertainty triggered owned cancellation. No storage-limit breach was reported. The child returned `-2` and the supervisor returned `1`.
+Every listed declaration audit and exact-type check remains **NOT_RUN** at its original source pin. The operational replay stopped before those phases. Compilation observations from the interrupted attempt do not establish declaration acceptance or exact-type evidence, and operational cancellation is not a mathematical counterexample. This source-preserving split runs no compiler, kernel replay or axiom audit.
 
-The receipt records 670 passed compilation records and 1 interrupted record out of 671. The attempt completed **0 of 107 declaration audits** and **0 of 10 exact type checks**. The interrupted leaf streams remain `UNAVAILABLE_NOT_QUALIFIED`, not empty. The attempt’s disabled host configuration was restored, all reservations were released, process groups were observed quiescent, and both streams were drained.
-
-This is an operational cancellation, not a mathematical counterexample. None of these compilation records establish theorem admission. The attempt was not retried.
-
-Terminal receipt SHA-256 `e21c9addbd365124c81934e0448507615c812a1ece86f06dd188d2a54fcf48c5`; read-only terminal audit SHA-256 `d9ec3584c145d8843afce7f51c4b4c962bb44e885ff8fe825c0bc4b33e65bcc8`. Full receipt contents remain in Noe’s private evidence; the public checkpoint exposes the reviewed summary and hashes.
+[The full operational record](https://github.com/grwtsk/noeaaeue/blob/07a2fde8f059549cc48b80f9459a4e8ca8792cb8/docs/validation/math-boundary-migration/evidence/documentation/mathematics/_support/verification-updates/declaration107-lossless-restart-20261026.md) retains cancellation, returncodes, host restoration, reservations, stream state and unavailable ranking observations. Its receipt and public-checkpoint hashes retain their original evidence scope.
 
 ## Every selected declaration
 
@@ -193,13 +189,7 @@ Exact type checks (7); all `NOT_RUN`:
 - `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaCriticalPlacement_transports_with_rightContext_certificate` — `NOT_RUN`.
 - `GRWTSK.RiemannHypothesis.ZetaSpectralGRHBridge.zetaZeroProblem_hypothesis_iff` — `NOT_RUN`.
 
-## Three-degree spectral volume
-
-S₃ remains **unavailable** under profile `spectral-volume-radius3-v2` (raw SHA-256 `cd6e68070055c92dce2448eaebb44c48f3851721d9564fbcb3cc21c2e2e82056`; canonical digest `254c958eb7f5879d7f3e13f91bbb7ef7a19d3203b48c1402da4198b7992bdc1e`). No numeric ranking is assigned: no target declaration audits completed, and upstream Core source remains outside the qualified source graph.
-
-[Complete source and declaration catalogue](../../complete-source-index.md) · [Ranking definition and adjustable weights](../reference/ranking-profile.json).
-
-<!-- DOCUMENTATION RELOCATION /1 original-sha256=911294d1a100342c64ce68006687b8b519ec3e7725bb6126eec1d859c3625082 -->
+[Complete source and declaration catalogue](../../complete-source-index.md).
 
 <!-- BEGIN DOCUMENT CERTIFICATION -->
 **Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.

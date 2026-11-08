@@ -16,10 +16,6 @@ open Surface.Core.Transport Surface.Core.NetworkSurgery
 namespace SurfaceNetworkSurgeryConformance
 
 def schema : String := "surface.network-surgery.golden.v1"
-def maxEmitPathBytes : Nat := 4096
-def corpusEmitPath : String :=
-  "tests/network-surgery/golden/lean-observed-v1.json"
-
 private def code (value : Nat) : StableCode :=
   ⟨value % revisionModulus, Nat.mod_lt _ (by simp [revisionModulus])⟩
 
@@ -148,45 +144,12 @@ def observedCorpus : Json :=
     ("patchPathOrdering", toJson patchPathOrdering)
   ]
 
-private def hasFileType
-    (path : System.FilePath) (expected : IO.FS.FileType) : IO Bool := do
-  try
-    return (← path.symlinkMetadata).type == expected
-  catch _ =>
-    return false
-
-private def isSingleLinkRegularFile (path : System.FilePath) : IO Bool := do
-  try
-    let metadata ← path.symlinkMetadata
-    return metadata.type == .file && metadata.numLinks == 1
-  catch _ =>
-    return false
-
-def emitCorpus (path : String) : IO UInt32 := do
-  if path.toUTF8.size = 0 || path.toUTF8.size > maxEmitPathBytes ||
-      path != corpusEmitPath then
-    IO.eprintln s!"emit path must be exactly {corpusEmitPath}"
-    return 64
-  let parentPaths : List System.FilePath :=
-    ["tests", "tests/network-surgery", "tests/network-surgery/golden"]
-  if !(← parentPaths.allM (hasFileType · .dir)) ||
-      !(← isSingleLinkRegularFile path) then
-    IO.eprintln "emit path must be an existing single-link regular file under regular corpus directories"
-    return 65
-  IO.FS.writeFile path (observedCorpus.compress ++ "\n")
-  pure 0
-
-def main (args : List String) : IO UInt32 :=
-  match args with
-  | [] => do
-      IO.println observedCorpus.compress
-      pure 0
-  | ["--emit", path] => emitCorpus path
-  | _ => do
-      IO.eprintln "usage: surface_network_surgery_conformance [--emit PATH]"
-      pure 64
-
 end SurfaceNetworkSurgeryConformance
 
-def main (args : List String) : IO UInt32 :=
-  SurfaceNetworkSurgeryConformance.main args
+/-!
+Local attribution: grwtsk contributors.
+Boundary split of math@8ac7546df3bc1a5d0db99e022fe0c0ccb0ff77ec, blob f762014b21f830388d48d4c85053afb9a3db23a0.
+Retained definitions/policies keep their original scope; the operational driver
+is maintained in Noe at tools/math/relocated/GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceNetworkSurgeryConformanceMain.lean.
+Compilation, fresh kernel checking and transitive axiom auditing: NOT_RUN.
+-/
