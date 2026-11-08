@@ -1,0 +1,16 @@
+{
+  "universal_polynomial_identity": "exact rational coefficient cancellation",
+  "schur_inequality_rational_examples": 2000,
+  "hidden_negative_direction_rational_examples": 100,
+  "strip_narrowing_rational_examples": 101,
+  "finite_chain_sizes": [
+    1,
+    64
+  ],
+  "finite_chain_random_examples": 3200,
+  "finite_chain_status": "floating-point sanity checks, not proof",
+  "max_sine_eigenvector_residual": 3.3306690738754696e-16,
+  "max_correlation_bound_excess": 0.0,
+  "lean_kernel_check": "not performed",
+  "riemann_hypothesis_proved": false
+}
