@@ -244,7 +244,7 @@ theorem overflowCore (n : ℕ) (xs : List ℕ)
   have hfront :
       repeatedTen (2 * n + 1) ++ rightBlocks xs =
         [true, false, true] ++ rest := by
-    rw [hten, ← List.append_assoc, hr]
+    rw [hten, List.append_assoc, hr]
     rfl
   rw [hfront] at p3
   have hp := zipperPath_append
@@ -284,7 +284,7 @@ theorem overflowCoreWithZero (n : ℕ) (xs : List ℕ)
   have hfront :
       repeatedTen (2 * n + 1) ++ (rightBlocks xs ++ [true]) =
         [true, false, true] ++ rest := by
-    rw [hten, ← List.append_assoc, hr]
+    rw [hten, List.append_assoc, hr]
     rfl
   rw [hfront] at p3
   have hp := zipperPath_append

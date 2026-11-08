@@ -217,6 +217,121 @@ theorem returnZipperComplete : ReturnZipperComplete := by
             · simpa [macroExponents, hxEq, hyEq, hx0] using hv
             · exact hpath
 
+/-! ### Universal physical return, retaining the actual endpoint
+
+The minimal representation invariant is `ZipperModels`: control, scanned
+cell, and every cell on each side, with zero beyond finite storage. Absolute
+origin and exterior zero padding are not invariants of Coq's stream tapes.
+Parity/nonzero guards belong to the macro constructors, not to the physical
+simulation. A radius-two agreement alone cannot replace this invariant.
+
+The following consumer starts from ANY physical representative of the source.
+Thus successive macro returns can reuse the actual previous endpoint; they
+need not reset the head or tape to `encodePhysical`. This is a relative
+replacement for the legacy absolute `fullReturn`, not a proof of that stronger
+premise. All imported source candidates retain their NOT_RUN evidence status.
+-/
+
+/-- An all-cells relative equality transports the complete zipper model. -/
+theorem ZipperModels.transport_relative
+    {z : TapeZipper} {c d : PhysicalTape}
+    (model : ZipperModels z c) (rel : RelativeTape c d) :
+    ZipperModels z d := by
+  refine ⟨model.control_eq.trans rel.control_eq,
+    model.scan_eq.trans (rel.at 0), ?_, ?_⟩
+  · intro n
+    exact (model.left_eq n).trans (rel.at (-((n : ℤ) + 1)))
+  · intro n
+    exact (model.right_eq n).trans (rel.at ((n : ℤ) + 1))
+
+/-- Universal source return from any correctly represented input tape.
+The word is the complete ordered physical READ word; `macroWord` is retained
+separately by the source relation. No execution hypothesis is supplied. -/
+theorem returnedToPhysical_relative_from
+    {u v : MacroState} {macroWord : List MacroLabel} {c : PhysicalTape}
+    (returned : ReturnedMacro u macroWord v)
+    (input : RelativeTape c (encodePhysical u)) :
+    ∃ (bits : List Bool) (d : PhysicalTape),
+      WordPath TapeReadStep c bits d ∧ RelativeTape d (encodePhysical v) := by
+  obtain ⟨bits, path⟩ := returnZipperComplete returned
+  have sourceModel : ZipperModels (canonicalZipper u) c :=
+    ZipperModels.transport_relative (canonicalModels_all u) input.symm
+  obtain ⟨d, physical, targetModel⟩ := zipper_path_to_physical path sourceModel
+  have canonicalTarget : ZipperModels
+      {canonicalZipper v with right := [false]} (encodePhysical v) :=
+    (zipperModels_right_zero_iff (canonicalZipper v) (encodePhysical v)).2
+      (canonicalModels_all v)
+  exact ⟨bits, d, physical, zipper_models_to_relative targetModel canonicalTarget⟩
+
+/-- Explicit universal physical return at the canonical source, with the
+head-relative endpoint required by the original Coq representation. -/
+theorem returnedToPhysical_relative
+    {u v : MacroState} {macroWord : List MacroLabel}
+    (returned : ReturnedMacro u macroWord v) :
+    ∃ (bits : List Bool) (d : PhysicalTape),
+      WordPath TapeReadStep (encodePhysical u) bits d ∧
+      RelativeTape d (encodePhysical v) :=
+  returnedToPhysical_relative_from returned (RelativeTape.refl _)
+
+/-- Continue the SAME observer from an actual preceding physical endpoint.
+Unknown cells are never replaced by zeros and no observer reset is needed. -/
+theorem pairedRelative_continuing
+    {u v : MacroState} {macroWord : List MacroLabel}
+    {c : PhysicalTape} {start : ReadNode}
+    (returned : ReturnedMacro u macroWord v)
+    (input : RelativeTape c (encodePhysical u))
+    (coherent : TapeCoherent start c) :
+    ∃ (bits : List Bool) (d : PhysicalTape) (finish : ReadNode),
+      WordPath TapeReadStep c bits d ∧
+      RelativeTape d (encodePhysical v) ∧
+      WordPath ReadEdge start bits finish ∧ TapeCoherent finish d ∧
+      WordPath GrayEdge (grayObserve u) macroWord (grayObserve v) := by
+  obtain ⟨bits, d, physical, relative⟩ :=
+    returnedToPhysical_relative_from returned input
+  obtain ⟨finish, reads, model⟩ := physicalWordsToRead physical coherent
+  exact ⟨bits, d, finish, physical, relative, reads, model,
+    returned.toGrayWordPath⟩
+
+/-! ### Exact obstruction to reusing the bounded Zero word absolutely
+
+The seven-step Zero endpoint has head +1. Determinism rules out an absolute
+head-zero endpoint for that SAME read word. This does not rule out a later
+visit under a different word, and therefore is not a disproof of the legacy
+existential `fullReturn`. The relative bridge above needs no such later visit.
+-/
+
+/-- Every relational physical step is computed by the original interpreter. -/
+theorem TapeReadStep.nextPhysical_eq
+    {c d : PhysicalTape} {bit : Bool} (step : TapeReadStep c bit d) :
+    nextPhysical c = some (bit, d) := by
+  cases step with
+  | step c a hi => simp [nextPhysical, hi]
+
+/-- A physical word path fixes its finite interpreter result, including the
+actual endpoint and the number of steps. This is the converse of soundness. -/
+theorem physicalPath_run
+    {c d : PhysicalTape} {bits : List Bool}
+    (path : WordPath TapeReadStep c bits d) :
+    runPhysical bits.length c = some (bits, d) := by
+  induction path with
+  | nil c => rfl
+  | cons step tail ih =>
+      simp [runPhysical, step.nextPhysical_eq, ih]
+
+/-- The known Zero read word cannot finish at the absolute canonical head.
+Only this word is excluded; no universal nonreachability claim is made. -/
+theorem zero_small_no_absolute_same_word :
+    ¬ WordPath TapeReadStep (encodePhysical (1, [0]))
+      zeroReadBits (encodePhysical (2, [0, 0])) := by
+  intro path
+  have actual : runPhysical 7 (encodePhysical (1, [0])) =
+      some (zeroReadBits, encodePhysical (2, [0, 0])) := by
+    simpa only [zeroReadBits, List.length_cons, List.length_nil] using
+      physicalPath_run path
+  have endpoints := Option.some.inj (zero_small_run.symm.trans actual)
+  have heads := congrArg (fun p : List Bool × PhysicalTape => p.2.head) endpoints
+  norm_num [translatePhysical, encodePhysical] at heads
+
 /-- The *same* physical and Gray observations now follow from the two
 named proof candidates, with no explicit source-return argument in the type. -/
 theorem pairedRelative_unconditional
