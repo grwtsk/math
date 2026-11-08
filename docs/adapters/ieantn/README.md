@@ -53,7 +53,7 @@ Git checkout equals a locally patched dependency.
 Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
 See [catalogue.json](catalogue.json) for every library, source module/blob, config and dependency
-pin, and the canonical paper ledger for evidence scope and unresolved bridges.
+pin. Evidence scope and unresolved bridges are stated in the source and consumer notes.
 
 ## Consecutive-square consumer
 
@@ -63,4 +63,4 @@ They consume the proved numerical Eθ interval criterion, remove the nonprime sq
 endpoint and return an actual open-interval prime/count witness. Uniform error,
 threshold and strict margin premises remain explicit. No root version-port or
 numerical bound is supplied. [Consumer provenance](consumer-integrations.json)
-and the canonical ledger bind exact source and hypotheses. Native checks remain NOT_RUN.
+binds exact source and hypotheses. Native checks remain NOT_RUN.

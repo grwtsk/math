@@ -32,12 +32,12 @@ Git checkout equals a locally patched dependency.
 Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
 See [catalogue.json](catalogue.json) for every library, source module/blob, config and dependency
-pin, and the canonical paper ledger for evidence scope and unresolved bridges.
+pin. Evidence scope and unresolved bridges are stated in the source and consumer notes.
 
 ## Consumer wave 2026-10-29
 
 Current source locator for this recorded consumer wave: [`FiniteFieldProgressionWitness.lean`](../../../GRWTSK/Combinatorics/FiniteFieldProgressionWitness.lean). See
-[consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
+[consumer provenance](../consumer-integrations.json).
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.
 
@@ -47,8 +47,8 @@ and transitive axiom audit are NOT_RUN.
 embedding of `Fin 3` and an actual support of cardinality3 in the SAME set under
 the exact original density/rank premises. Odd prime q≥3 supplies the previously
 missing first/third separation; characteristic2 is excluded explicitly.
-See [references](references.md), the canonical ledger and the exact static target.
+See [references](references.md).
 The source pin is `9b4fbbeed7922618e887a646cc2b15d244fff2b8` / blob `422b30e25d448e0ae000b1b2ab0ac23efafe8044`.
-Old witness source/targets remain unchanged; all native checks remain NOT_RUN.
+The earlier witness source remains unchanged; all native checks remain NOT_RUN.
 The current citation mapping corrects a historical title/identifier mismatch
 without changing earlier source pins or evidence outcomes.

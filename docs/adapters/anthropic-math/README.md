@@ -27,23 +27,20 @@ conditional complexity inputs; and ETH's quantified Turing-machine definitions.
 No zeta proportion implies RH, and no asymptotic algorithm asserts practical speed.
 Upstream LICENSE, NOTICE and attribution files are retained per project.
 
-Canonical paper mapping: paper ledger (historical; target removed).
-
 ## Consumer wave 2026-10-29
 
 Current source locator for this recorded consumer wave: [`FermatSolutionFibers.lean`](../../../GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean). See
-[consumer provenance](../consumer-integrations.json) and the historical paper ledger.
+[consumer provenance](../consumer-integrations.json).
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.
 
 ## Six exact Fermat interfaces
 
-The original three positive-power/cube/zero-factor candidates and the three
-solution-fiber candidates have one additional exact-interface verification target:
-historical anthropic-fermat-six-interfaces-20261029.json (historical; target removed) with adjacent managed profile and TOML. It selects both complete
-module-owned censuses, all six exact roots and literal expected types, preserving
-zero cases, positive-natural premises and n>=3. Historical targets are unchanged.
-See [Fermat references](fermat/references.md) and the historical ledger continuation.
+Verification of the original three positive-power/cube/zero-factor candidates and the three
+solution-fiber candidates requires both complete module-owned censuses, all six
+exact roots and literal expected types, preserving zero cases, positive-natural
+premises and n>=3.
+See [Fermat references](fermat/references.md).
 All native, Comparator, kernel, axiom and expected-interface checks remain NOT_RUN.
 
 ## Primitive-character local count consumers
@@ -52,7 +49,7 @@ The zeta23 package now has two source candidates deriving actual finite complex
 readout bounds from the q-uniform local count, with one A>=1 before moduli,
 index types and finite primitive-character families. Log normalization is proved
 positive; signed windows and multiplicities (including real zeros when applicable)
-remain exact. See [zeta23 references](zeta23/references.md) and historical anthropic-primitive-zero-readouts-20261029.json (historical; target removed).
+remain exact. See [zeta23 references](zeta23/references.md).
 This is separate from the 23 imported comparator surfaces and implies no RH or
 Mertens estimate. Native 4.33.0-rc2 and every proof-check status remain unchanged/NOT_RUN.
 
@@ -61,6 +58,5 @@ Mertens estimate. Native 4.33.0-rc2 and every proof-check status remain unchange
 The isolated fermat project now has five integer-source candidates: nonzero
 coordinate obstruction, odd/even classifications and exact fixed-output fibers.
 The odd zero-output fiber is the entire antidiagonal; the even fiber is a four
-candidate set with coincident entries at zero. See fermat/references.md and the
-historical ledger. All exact native/interface/kernel/axiom checks remain NOT_RUN;
+candidate set with coincident entries at zero. See [Fermat references](fermat/references.md). All exact native/interface/kernel/axiom checks remain NOT_RUN;
 original natural scopes and root dependencies/imports are preserved.

@@ -17,6 +17,3 @@ The root Mathlib-only environment is unchanged.
 No build, cache fetch, dependency update, kernel check, or transitive axiom
 audit was executed. All formal assurance is **NOT_RUN**. The declared build
 target is `GRWTSK`; no executable, scheduler or workflow is included.
-
-The mathematical consumer and unresolved spectral/convergence obligations
-are in the Connes coercivity/Mellin research note (historical; target removed).

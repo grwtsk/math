@@ -32,11 +32,11 @@ Git checkout equals a locally patched dependency.
 Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
 See [catalogue.json](catalogue.json) for every library, source module/blob, config and dependency
-pin, and the canonical paper ledger for evidence scope and unresolved bridges.
+pin. Evidence scope and unresolved bridges are stated in the source and consumer notes.
 
 ## Consumer wave 2026-10-29
 
 Current source locator for this recorded consumer wave: [`EquationalFinitePremiseConsumers.lean`](../../../GRWTSK/GeneralAlgebraicSystems/EquationalFinitePremiseConsumers.lean). See
-[consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
+[consumer provenance](../consumer-integrations.json).
 Exact declarations and hypotheses remain in the source; compilation, fresh replay
 and transitive axiom audit are NOT_RUN.

@@ -37,9 +37,8 @@ to this directory unless stated otherwise.
 
 - Keep edits scoped to the requested documentation work. Lean changes do not require
   articles, proof summaries, generated navigation or a literature-register update.
-  For a deliberately maintained result article, follow the
-  article standard (removed historical reference)
-  subject to the root instructions; do not generate an article scaffold by default.
+  For explicitly requested result articles, follow the root mathematical review
+  requirements; do not generate an article scaffold by default.
 - Check edited local links and referenced layout entries against their current
   targets. Report what was checked and any unresolved targets at navigation scope;
   do not infer a corpus-wide audit from a local check.

@@ -32,14 +32,14 @@ Git checkout equals a locally patched dependency.
 Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
 See [catalogue.json](catalogue.json) for every library, source module/blob, config and dependency
-pin, and the canonical paper ledger for evidence scope and unresolved bridges.
+pin. Evidence scope and unresolved bridges are stated in the source and consumer notes.
 
 ## Positive-sum statement consumer
 
 `GRWTSK/NumberTheory/DiophantineEquations/ErdosMoserPositiveSums.lean` now has
 three source candidates: exact positive-base reindexing, positive-input exponent1
 classification and a reduction of the full statement to higher-exponent exclusion.
-The exclusion remains UNSUPPLIED. See references.md and the canonical ledger.
+The exclusion remains UNSUPPLIED. See [references](references.md).
 The admitted conjecture is not used; its imported environment still requires
 exact-target transitive auditing. Root recursive-model/version transport remains
 separate, all native checks NOT_RUN, and the provider pin remains unchanged despite

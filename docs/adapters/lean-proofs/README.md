@@ -41,7 +41,7 @@ Git checkout equals a locally patched dependency.
 Original authorship remains in upstream sources; repository license/notice files
 are retained when present. This package is outside root default imports/builds.
 See [catalogue.json](catalogue.json) for every library, source module/blob, config and dependency
-pin, and the historical paper ledger for evidence scope and unresolved bridges.
+pin. Evidence scope and unresolved bridges are stated in the source and consumer notes.
 
 <a id="plby-subset-collision-20261030"></a>
 ### Disjoint subset-sum supports from reciprocal mass
@@ -50,6 +50,6 @@ Local attribution: grwtsk contributors. [New source](https://github.com/grwtsk/m
 
 The two roots `GRWTSK.NumberTheory.AdditiveNumberTheory.ReciprocalSubsetSumCollision.disjoint_positive_supports_of_collision` and `.disjoint_positive_supports_of_reciprocal_mass` cancel overlapping collisions and apply the actual strict reciprocal bound contrapositively. Main input is arbitrary `A:Finset Nat` with REAL reciprocal mass≥2, including possible zero. Both returned supports lie in the SAME `A.erase0`, are disjoint/nonempty, and have equal POSITIVE NAT sums. Zero erasure preserves reciprocal mass, not full injectivity; no extra input positivity is imposed. This supplies actual balanced supports for the existing root distinct-subset-sum consumer; root4.34.1 integration is UNSUPPLIED.
 
-Native Lean4.29.1/Mathlib `5e932f97dd25535344f80f9dd8da3aab83df0fe6` stays isolated. All compiler/Comparator/interface/discovery/replay/full-axiom facets NOT_RUN, independent checker UNSUPPLIED. Exact source/API/type review is not acceptance. No minimum-support algorithm/runtime, infinite-series theorem or Erdős Problem1 exponential bound is supplied. Exact pins/types/configuration/limited-license notice and remaining bridges: target (historical; target removed) and historical ledger (historical; target removed).
+Native Lean4.29.1/Mathlib `5e932f97dd25535344f80f9dd8da3aab83df0fe6` stays isolated. All compiler/Comparator/interface/discovery/replay/full-axiom facets NOT_RUN, independent checker UNSUPPLIED. Exact source/API/type review is not acceptance. No minimum-support algorithm/runtime, infinite-series theorem or Erdős Problem1 exponential bound is supplied.
 
 [Package source references](references.md) retain the selected sources, hypotheses, licensing boundaries, and unresolved correspondence at their recorded scope.

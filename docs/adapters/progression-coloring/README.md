@@ -11,9 +11,7 @@ The 115 source modules preserve every definition, theorem hypothesis and proof
 body under a reversible enclosing-namespace and module-import renaming. Model
 imports `Mathlib.Order.Lattice.Nat` for the natural-number infimum instead of the
 aggregate `Mathlib` module. Basic explicitly imports `Mathlib.Tactic.NormNum`
-for its existing `norm_num` proof. The static source map is
-historical openai-source-port-v1.json (historical; target removed)
-in the repository root. No new conjecture is introduced by this port.
+for its existing `norm_num` proof. No new conjecture is introduced by this port.
 
 The positive-interval theorem remains
 `GRWTSK.Combinatorics.OpenAIMath.Erdos138.erdos_138`: the kth root of the two-color

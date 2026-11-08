@@ -3,8 +3,6 @@
 Local attribution: grwtsk contributors. Upstream APAP/Mathlib bylines and
 Apache-2.0 notices remain in the exact pinned dependencies.
 
-The historical paper ledger (historical; target removed)
-records the complete hypotheses, declarations, source identities and exclusions.
 The pinned README links Bloom–Sisask's *The Kelley–Meka bounds for sets free of
 three-term arithmetic progressions*, [arXiv:2302.07211v3](https://arxiv.org/abs/2302.07211v3),
 finite-field Theorem2. The previous consumer map paired that identifier with the
@@ -18,7 +16,7 @@ density/rank hypotheses. The old density witness `c8236fb9574a1e709760a555464c99
 is unchanged. This closes the first/third-separation and finite-support transport;
 it does not strengthen the bound or supply the excluded integer theorem.
 
-Exact target (historical; target removed), adjacent profile and TOML require all3
+Verification requires all three
 compiler-owned roots and exact types. All native/interface/replay/axiom checks
 remain NOT_RUN; no root version-port or dependency/import promotion is claimed.
 Independent source/profile reviews are separate from mathematical acceptance.

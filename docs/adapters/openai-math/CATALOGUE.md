@@ -68,14 +68,11 @@ belong outside maintained math content.
 
 ## Canonical reference maintenance
 
-The historical paper ledger (historical; target removed)
-reconciles the provider's original two papers and the previously separate
-signed-Abel supplements. For each actual mathematical bridge, record exact
+For each actual mathematical bridge, record exact
 hypotheses, source identities, verification evidence or `NOT_RUN`, and missing
-premises in the source or associated issue/PR. The ledger is optional; its
-maintenance is not a prerequisite for a source change or publication. The 721 source records remain a catalogue; this reconciliation
-does not invent paper-to-theorem mappings or certify all 419 import surfaces.
+premises in the source or associated issue/PR. The 721 source records remain a catalogue; this catalogue
+does not establish paper-to-theorem mappings or certify all 419 import surfaces.
 
 ## Upstream correction boundary — 2026-10-30
 
-The inventory above remains bound to7ef. Upstream4eaee87548250b2682affda7d05d947c05554bae reports an October29 rational-Hodge CM namespace fix. Exact selected challenge/CM blobs changed while the solution and Comparator configuration remained byte-identical. See the interface-change obligation (historical; target removed) and the historical paper ledger's `openai-hodge-namespace-correction-20261030` entry. Textual alignment is not elaborated type identity or Comparator acceptance; the281-file change set is not a reviewed proof closure. No inventory count, adapter pin or historical outcome is rewritten.
+The inventory above remains bound to7ef. Upstream4eaee87548250b2682affda7d05d947c05554bae reports an October29 rational-Hodge CM namespace fix. Exact selected challenge/CM blobs changed while the solution and Comparator configuration remained byte-identical. Textual alignment is not elaborated type identity or Comparator acceptance; the281-file change set is not a reviewed proof closure. No inventory count, adapter pin or historical outcome is rewritten.
