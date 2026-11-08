@@ -1,5 +1,7 @@
 # Mathematical source navigation
 
+[Technical guides](README.md) · [Documentation index](../index.md)
+
 Maintained mathematical modules are under [GRWTSK/](../../GRWTSK/).
 The [MSC2020 source layout](../taxonomy/msc2020/README.md), including
 `followup_files`, determines current filesystem locations; a declaration

@@ -1,5 +1,7 @@
 # Reproducible Lean source inspection
 
+[Technical guides](README.md) · [Documentation index](../index.md)
+
 The [toolchain](../../lean-toolchain) pins Lean 4.34.1;
 [Lake](../../lakefile.toml) and [the manifest](../../lake-manifest.json)
 pin the dependency environment. From a configured checkout:

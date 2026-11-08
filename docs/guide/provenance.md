@@ -1,5 +1,7 @@
 # Source attribution and rights
 
+[Technical guides](README.md) · [Documentation index](../index.md)
+
 Preserve original mathematical authors, source editions, exact commit and
 blob identities, declaration names, and the evidence scope of each claim.
 [LICENSE](../../LICENSE), [NOTICE](../../NOTICE), and

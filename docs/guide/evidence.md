@@ -1,5 +1,7 @@
 # Evidence and proof acceptance
 
+[Technical guides](README.md) · [Documentation index](../index.md)
+
 Formal statements, mathematical arguments, finite computations, Lean
 elaboration, kernel replay, axiom audits, publication, and independent
 mathematical review are different objects.

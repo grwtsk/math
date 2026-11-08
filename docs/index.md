@@ -5,6 +5,7 @@ Browse the [Lean source tree](../GRWTSK/), [MSC2020 subject guides](taxonomy/sub
 | Goal | Destination | Scope |
 | --- | --- | --- |
 | Locate source modules | [Lean sources](../GRWTSK/) and [source layout](taxonomy/msc2020/source-layout-v1.json) | Subject placement; no proof acceptance implied |
+| Understand build and evidence scope | [Technical guides](guide/README.md) | Source navigation, example builds, evidence distinctions, and provenance |
 | Inspect isolated dependencies | [Provider adapters](adapters/README.md) | Package pins and canonical source links |
 | Find source-bound records | [Ontology](ontology/README.md) and [mapping contracts](ontology/mappings/README.md) | Typed source, tool and evidence bindings |
 | Contribute | [Contribution guide](../CONTRIBUTING.md) | Source identity, mathematical review and publication requirements |
