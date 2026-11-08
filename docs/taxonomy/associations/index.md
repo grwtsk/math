@@ -32,13 +32,18 @@ Current folder navigation uses [MSC2020](../msc2020/README.md). Authored concept
 
 ## Observed source and scope
 
+For current navigation, see [FreeDirichletSpectrum.lean](../../../GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FreeDirichletSpectrum.lean)
+and the [source layout](../msc2020/source-layout-v1.json). The source tuple above
+and the immutable snapshot below retain the historical inspection identity;
+the current path does not extend that inspection to later source bytes.
+
 The complete selected [source file](https://github.com/grwtsk/math/blob/eb3124bd05f0f74aaa709ca36a855539f722fb92/GRWTSK/Spectral/FreeDirichletSpectrum.lean) was read. It contains source definitions of sine vectors and cosine eigenvalues and theorem commands for a finite eigen-equation, characteristic-polynomial factorization and finite eigenvalue count. This supports a proposed topical association to spectral theory of linear operators, not a declaration that the Lean scripts have been elaborated or theorems accepted.
 
 The source retains finite size N and the boundary conditions used by its recurrence theorem. Its named declarations and exact blob are inspection references, not a complete generated-environment inventory. No transitive import, axiom, runtime, native-evaluation or kernel audit was performed. The dependency manifest identity is pinned, but its complete resolved environment was not replayed.
 
 ## Attribution and non-implications
 
-The existing header credits grwtsk contributors for mathematical direction and OpenAI Codex for formalization assistance and retains upstream Mathlib authorship/license obligations. It describes classical finite Dirichlet sine diagonalization and explicitly supplies no signed arithmetic pickup estimate. This association does not rewrite that header or determine originality.
+The header at the inspected revision credits grwtsk contributors for mathematical direction and OpenAI Codex for formalization assistance and retains upstream Mathlib authorship/license obligations. It describes classical finite Dirichlet sine diagonalization and explicitly supplies no signed arithmetic pickup estimate. This association does not rewrite that header or determine originality.
 
 The association conservatively retains attribution clarification as an unresolved review dimension; it does not claim that the inspected header literally contains the #254 marker or that this file's full historical-corpus membership was audited. Preserve every applicable marker and source-specific notice when lineage is reconciled with [#254](https://github.com/grwtsk/math/issues/254).
 
