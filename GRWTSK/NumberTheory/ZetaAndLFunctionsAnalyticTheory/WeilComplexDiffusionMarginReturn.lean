@@ -148,4 +148,48 @@ theorem radiusTwo_highConductor_heated_nonneg
   RadiusTwoComplexConductor.conductor_threshold_two_of_power_two
     chi hp hn hq _ hf hs harch
 
+/-- Explicit complex sign invariance on the original finite sine family.
+This is algebraic transport only: M and T are fixed, not cofinal. -/
+theorem original_primitive_nonneg_iff_recovered
+    {q M : ℕ} [NeZero q]
+    (chi : DirichletCharacter ℂ q)
+    (hp : chi.IsPrimitive) (hn : chi ≠ 1)
+    (T : ℝ) (d : Involution (Fin M)) (gap : ℂ) (hgap : gap ≠ 0) :
+    (∀ w, 0 ≤ primitiveArithmeticValue chi hp hn T
+      (complexSineTest T (d.recoverField gap w))) ↔
+    (∀ v, 0 ≤ primitiveArithmeticValue chi hp hn T (complexSineTest T v)) :=
+  d.sourceValue_nonneg_iff gap hgap
+    (fun v => primitiveArithmeticValue chi hp hn T (complexSineTest T v))
+
+namespace AuditFixtures
+
+/-- Hermitian rational-complex matrix with imaginary off-diagonal phase.
+Its restriction to real coefficients is positive; its full complex form
+has a negative direction. It is a finite fixture, not a Dirichlet source. -/
+def phaseMatrix : Matrix Bool Bool ℂ := fun i j =>
+  if i = j then 1 else if i then -2 * Complex.I else 2 * Complex.I
+
+theorem phaseMatrix_hermitian : phaseMatrix.conjTranspose = phaseMatrix := by
+  ext i j
+  cases i <;> cases j <;> norm_num [phaseMatrix, Matrix.conjTranspose]
+
+/-- Universal real-vector probes alone cannot discharge hcomparison and
+hmargin, which quantify over ALL COMPLEX coefficient vectors. -/
+theorem real_probes_miss_phase (a b : ℝ) :
+    observedHermitianReal phaseMatrix
+      (fun i => if i then (b : ℂ) else (a : ℂ)) = a^2 + b^2 := by
+  simp [observedHermitianReal, Involution.complexPairing, phaseMatrix,
+    Matrix.mulVec, Matrix.dotProduct, Fintype.sum_bool,
+    Complex.mul_re, Complex.mul_im, pow_two]
+  <;> ring
+
+theorem complex_phase_negative :
+    observedHermitianReal phaseMatrix
+      (fun i => if i then Complex.I else 1) = -2 := by
+  norm_num [observedHermitianReal, Involution.complexPairing, phaseMatrix,
+    Matrix.mulVec, Matrix.dotProduct, Fintype.sum_bool,
+    Complex.mul_re, Complex.mul_im]
+
+end AuditFixtures
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.PrimitiveComplexMarginReturn

@@ -179,4 +179,158 @@ theorem cofinal_stageLower_of_tunable_margin
     (fun i k => (packet.lower i k : ℝ))
     observed error hcomparison hmargin
 
+/-!
+## Independent audit and certificate boundary
+
+Inspected main 70cc2c47f7559279135e2889e1836c89465c944b and the three
+issue #1740 blobs, unchanged from 69c75f6978b919c9a0071765e96c8ca5d8bc0160.
+The following are proposed source lemmas, not compilation receipts.
+
+Write C = Rᵀ sym(A) R. The two all-vector premises are exactly
+  -error I ≤ sym(B)-C ≤ error I,  sym(B)-error I ≥ 0
+in quadratic-form order. Independent certificates may establish these by
+rational Gram/LDL identities and nonnegative pivots, with proved entrywise
+interval enclosures for EVERY original source entry. For symmetric error
+E, a certified bound max_i sum_j |E_ij| ≤ error is sufficient for the
+comparison; entrywise signs or positive diagonal entries are not sufficient.
+The one-sided condition sym(B)-C ≤ error I suffices for the return.
+
+Actual source observations must include the signed pole, remote allowances,
+mixed residual, physical head reconstruction and high-complement estimate.
+Rational checks of a matrix have arithmetic meaning only after the source
+entry enclosures are proved. If an original-coordinate error is delta,
+transport costs at most delta/r² in the Euclidean metric; no second such
+factor is needed when the error was already proved in heat coordinates.
+The parameter changes conditioning and smoothing, not inertia or sign.
+
+For a complex source the same statement uses adjoints and the Hermitian
+part. Prove its full source representation first, then certify all complex
+vectors (or the equivalent doubled real symmetric matrix). Real-only probes
+miss imaginary off-diagonal phases. Cofinal returns require a certificate
+and high floor at every required stage, plus the existing analytic return.
+No finite sample or fixed radius establishes those universal obligations.
+-/
+
+/-- Only the upper signed discrepancy is needed. This exposes the precise
+source-valid observation a certificate producer must establish. -/
+theorem original_source_nonneg_of_upper_margin {ι : Type*} [Fintype ι]
+    (d : Involution ι) (r : ℝ) (hr : r ≠ 0)
+    (source observed : Matrix ι ι ℝ) (error : ℝ)
+    (hupper : ∀ w, quadratic observed w -
+      d.sourceQuadraticWithGap r source w ≤ error * headMass w)
+    (hmargin : ∀ w, error * headMass w ≤ quadratic observed w) :
+    ∀ v, 0 ≤ quadratic source v := by
+  intro v
+  have hu := hupper (d.heatField r v)
+  have hm := hmargin (d.heatField r v)
+  rw [d.sourceQuadraticWithGap_return r hr source v] at hu
+  linarith
+
+/-- A negative source witness refutes the conjunction of the TWO universal
+observer claims, regardless of positivity of individual transport entries. -/
+theorem negative_source_refutes_margin {ι : Type*} [Fintype ι]
+    (d : Involution ι) (r : ℝ) (hr : r ≠ 0)
+    (source observed : Matrix ι ι ℝ) (error : ℝ)
+    (v : ι → ℝ) (hneg : quadratic source v < 0) :
+    ¬ ((∀ w, |quadratic observed w -
+      d.sourceQuadraticWithGap r source w| ≤ error * headMass w) ∧
+      (∀ w, error * headMass w ≤ quadratic observed w)) := by
+  rintro ⟨hc, hm⟩
+  exact (not_le_of_gt hneg)
+    (original_source_nonneg_of_margin d r hr source observed error hc hm v)
+
+namespace AuditFixtures
+
+/-- Rational hostile source, expressed in the existing quadratic API. -/
+def hostile : Matrix Bool Bool ℝ :=
+  Matrix.diagonal (fun b => if b then 100 else -1)
+
+def axis : Bool → ℝ := fun b => if b then 0 else 1
+
+theorem hostile_smoothing_false_positive :
+    quadratic hostile axis = -1 ∧
+    quadratic hostile (Involution.bitFlip.heatField (3/4 : ℝ) axis) = 51/64 ∧
+    Involution.bitFlip.sourceQuadraticWithGap (3/4 : ℝ) hostile
+      (Involution.bitFlip.heatField (3/4 : ℝ) axis) = -1 := by
+  have hq : quadratic hostile axis = -1 := by
+    norm_num [quadratic, hostile, axis, Matrix.mulVec_diagonal,
+      Matrix.dotProduct, Fintype.sum_bool]
+  refine ⟨hq, ?_, ?_⟩
+  · norm_num [quadratic, hostile, axis, heatField, Involution.bitFlip,
+      Matrix.mulVec_diagonal, Matrix.dotProduct, Fintype.sum_bool]
+  · rw [Involution.sourceQuadraticWithGap_return _ _ (by norm_num)]
+    exact hq
+
+/-- Noninvertible zero-gap smoothing can erase an entire negative space. -/
+theorem zero_gap_erases_negative_direction :
+    let v : Bool → ℝ := fun b => if b then -1 else 1
+    Involution.bitFlip.heatField (0 : ℝ) v = 0 ∧
+      -(v false - v true)^2 = -4 := by
+  dsimp
+  constructor
+  · funext b
+    cases b <;> norm_num [heatField, Involution.bitFlip]
+  · norm_num
+
+/-- Positive observer alone fails: paying error 2 to compare -1 with +1
+makes its claimed unit-vector margin impossible. -/
+theorem positive_observer_cannot_pay :
+    ¬ ∃ error : ℝ, |(1 : ℝ) - (-1)| ≤ error ∧ error ≤ 1 := by
+  rintro ⟨error, hc, hm⟩
+  norm_num at hc
+  linarith
+
+/-- Positive diagonal entries (basis-vector checks) miss a mixed direction. -/
+theorem basis_checks_insufficient :
+    let Q : ℝ → ℝ → ℝ := fun x y => x^2 + y^2 - 4*x*y
+    Q 1 0 = 1 ∧ Q 0 1 = 1 ∧ Q 1 1 = -2 := by
+  norm_num
+
+/-- Exact rational pulled-back positive fixture from issue #1740.
+This finite certificate is not an enclosure of the actual Weil source. -/
+def positivePullback : Matrix Bool Bool ℝ := fun i j =>
+  if i = j then (if i then 149/36 else 101/36) else -35/36
+
+theorem positivePullback_source_identity (w : Bool → ℝ) :
+    quadratic positivePullback w =
+      Involution.bitFlip.sourceQuadraticWithGap (3/4 : ℝ)
+        (Matrix.diagonal (fun b => if b then 3 else 2)) w := by
+  simp [quadratic, positivePullback, sourceQuadraticWithGap,
+    recoverField, Involution.bitFlip, Matrix.mulVec,
+    Matrix.dotProduct, Fintype.sum_bool, Matrix.diagonal]
+  <;> ring
+
+/-- A rational LDL identity is a genuine all-vector finite certificate,
+whereas finitely many sampled vectors would not be. -/
+theorem positivePullback_gram (w : Bool → ℝ) :
+    quadratic positivePullback w =
+      (101/36 : ℝ) * (w false - (35/101 : ℝ)*w true)^2 +
+      (384/101 : ℝ) * (w true)^2 := by
+  simp [quadratic, positivePullback, Matrix.mulVec,
+    Matrix.dotProduct, Fintype.sum_bool]
+  <;> ring
+
+theorem positivePullback_nonneg (w : Bool → ℝ) :
+    0 ≤ quadratic positivePullback w := by
+  rw [positivePullback_gram]
+  positivity
+
+/-- The sharp Euclidean price is NOT valid in an arbitrary weighted metric.
+Weights (100,1), w=(0,1), r=3/4 give cost 149/36 > 16/9. -/
+theorem weighted_inverse_cost_failure :
+    let w : Bool → ℝ := fun b => if b then 1 else 0
+    let z := Involution.bitFlip.recoverField (3/4 : ℝ) w
+    100 * (z false)^2 + (z true)^2 = 149/36 ∧
+      (16/9 : ℝ) * (100 * (w false)^2 + (w true)^2) <
+        100 * (z false)^2 + (z true)^2 := by
+  norm_num [recoverField, Involution.bitFlip]
+
+/-- Even ALL vectors in the nonnegative cone are insufficient. -/
+theorem nonnegative_cone_insufficient :
+    (∀ x y : ℝ, 0 ≤ x → 0 ≤ y → 0 ≤ x*y) ∧
+      (1 : ℝ) * (-1) < 0 := by
+  exact ⟨fun _ _ hx hy => mul_nonneg hx hy, by norm_num⟩
+
+end AuditFixtures
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.TunableMarginReturn
