@@ -20,6 +20,14 @@ Local attribution: grwtsk contributors. Source-local scope: `agents/` (prime 61)
 
 **Before authorized changes:** Check prime uniqueness, immediate neighbors, reciprocal induced modular edges and longest-prefix source routing.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When describing prime connectivity or directory routing as a mathematical verification result. Consult [docs/guide instructions](../docs/guide/AGENTS.md) and [the source contract](../docs/guide/evidence.md). **Check:** Report direct finite graph checks separately from the elementary infinite-prime proof and any unperformed Lean checks. The arithmetic witness is `61 → 2 → 59`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`.`](../AGENTS.md).

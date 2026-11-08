@@ -22,6 +22,14 @@ Local attribution: grwtsk contributors. Source-local scope: `.github/` (prime 3)
 
 **Before authorized changes:** Validate exact template filenames, fields and form syntax. Do not add dispatch workflows or rewrite issue numbering.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When changing verification intake fields or their interpretation. Consult [docs/guide instructions](../docs/guide/AGENTS.md) and [the source contract](ISSUE_TEMPLATE/03-verification.yml). **Check:** Check each requested evidence layer against the written distinction between source, compilation, kernel and analysis. The arithmetic witness is `3 → 59`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`.`](../AGENTS.md).

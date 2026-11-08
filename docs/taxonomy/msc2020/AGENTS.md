@@ -20,6 +20,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/taxonomy/msc20
 
 **Before authorized changes:** Do not split multi-megabyte layouts or regenerate paths without an exhaustive reference/consumer migration.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When source-layout navigation or alias changes affect recorded mapping paths. Consult [docs/ontology/mappings instructions](../../ontology/mappings/AGENTS.md) and [the source contract](../../ontology/mappings/README.md). **Check:** Check mapping consumers of layout_exact before any layout migration; retain old aliases. The arithmetic witness is `41 → 2 → 23`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`docs/taxonomy`](../AGENTS.md).

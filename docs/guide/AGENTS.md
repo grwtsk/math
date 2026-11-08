@@ -22,6 +22,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/guide/` (prime
 
 **Before authorized changes:** Validate changed local links; do not convert example build commands into reported completed checks.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When changing the definition of a requested proof or verification layer. Consult [.github instructions](../../.github/AGENTS.md) and [the source contract](evidence.md). **Check:** Compare the verification form; neither document may imply that filing an issue dispatches a check. The arithmetic witness is `59 → 3`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`docs`](../AGENTS.md).

@@ -561,5 +561,260 @@
         "children_within_registry": []
       }
     }
-  ]
+  ],
+  "context_handoffs": [
+    {
+      "id": "root--guide",
+      "from": "root",
+      "to": "guide",
+      "relation": "evidence_alignment",
+      "trigger": "When editing the root README's build or evidence explanations.",
+      "evidence_source": "README.md",
+      "required_check": "Compare the changed claim with the maintained evidence/build guide before updating navigation.",
+      "prime_witness": [
+        2,
+        59
+      ]
+    },
+    {
+      "id": "github--guide",
+      "from": "github",
+      "to": "guide",
+      "relation": "evidence_alignment",
+      "trigger": "When changing verification intake fields or their interpretation.",
+      "evidence_source": ".github/ISSUE_TEMPLATE/03-verification.yml",
+      "required_check": "Check each requested evidence layer against the written distinction between source, compilation, kernel and analysis.",
+      "prime_witness": [
+        3,
+        59
+      ]
+    },
+    {
+      "id": "licenses--adapters",
+      "from": "licenses",
+      "to": "adapters",
+      "relation": "rights_reference",
+      "trigger": "When changes affect upstream package licensing, notices or local attribution.",
+      "evidence_source": "docs/adapters/README.md",
+      "required_check": "Identify the exact adapter and its original license; avoid blanket relicensing.",
+      "prime_witness": [
+        5,
+        11
+      ]
+    },
+    {
+      "id": "docs--ontology",
+      "from": "docs",
+      "to": "ontology",
+      "relation": "source_binding",
+      "trigger": "When documentation changes source-bound identities or evidence links.",
+      "evidence_source": "docs/index.md",
+      "required_check": "Consult the existing ontology source/mapping contract; do not create a parallel binding registry.",
+      "prime_witness": [
+        7,
+        2,
+        19
+      ]
+    },
+    {
+      "id": "adapters--ontology-mappings",
+      "from": "adapters",
+      "to": "ontology-mappings",
+      "relation": "consumer_correspondence",
+      "trigger": "When adapting a provider theorem to a local mathematical consumer.",
+      "evidence_source": "docs/adapters/CONSUMERS.md",
+      "required_check": "Check exact source, declaration, hypotheses and consumer mapping; a source candidate is not kernel acceptance.",
+      "prime_witness": [
+        11,
+        23
+      ]
+    },
+    {
+      "id": "anthropic-adapter--adapters",
+      "from": "anthropic-adapter",
+      "to": "adapters",
+      "relation": "consumer_correspondence",
+      "trigger": "When changing a provider-specific theorem or its source edition.",
+      "evidence_source": "docs/adapters/anthropic-math/README.md",
+      "required_check": "Compare this package's exact catalogue/pins with parent adapter consumer records.",
+      "prime_witness": [
+        13,
+        2,
+        11
+      ]
+    },
+    {
+      "id": "openai-adapter--licenses",
+      "from": "openai-adapter",
+      "to": "licenses",
+      "relation": "rights_reference",
+      "trigger": "When changing an upstream source edition, attribution or license reference.",
+      "evidence_source": "docs/adapters/openai-math/README.md",
+      "required_check": "Inspect the specified upstream license and preserve source-specific attribution.",
+      "prime_witness": [
+        17,
+        2,
+        5
+      ]
+    },
+    {
+      "id": "ontology--ontology-schemas",
+      "from": "ontology",
+      "to": "ontology-schemas",
+      "relation": "schema_correspondence",
+      "trigger": "When the shape of a maintained mathematical record is modified.",
+      "evidence_source": "docs/ontology/README.md",
+      "required_check": "Read the actual records schema and current consumer requirements before schema edits.",
+      "prime_witness": [
+        19,
+        2,
+        29
+      ]
+    },
+    {
+      "id": "ontology-mappings--msc2020",
+      "from": "ontology-mappings",
+      "to": "msc2020",
+      "relation": "layout_correspondence",
+      "trigger": "When a mapping depends on layout_exact, subject_folder or followup_files.",
+      "evidence_source": "docs/ontology/mappings/README.md",
+      "required_check": "Resolve the pinned MSC source-layout record, including follow-up placements; do not infer current layout from a namespace.",
+      "prime_witness": [
+        23,
+        2,
+        41
+      ]
+    },
+    {
+      "id": "ontology-schemas--ontology-mappings",
+      "from": "ontology-schemas",
+      "to": "ontology-mappings",
+      "relation": "schema_correspondence",
+      "trigger": "When a schema change would affect existing mapping records.",
+      "evidence_source": "docs/ontology/README.md",
+      "required_check": "Assess mapped-record compatibility at the pinned source; do not silently rewrite historical shards.",
+      "prime_witness": [
+        29,
+        2,
+        23
+      ]
+    },
+    {
+      "id": "ontology-sources--ontology-mappings",
+      "from": "ontology-sources",
+      "to": "ontology-mappings",
+      "relation": "source_binding",
+      "trigger": "When a source identity or revision appears in mapped records.",
+      "evidence_source": "docs/ontology/README.md",
+      "required_check": "Inspect exact source references and their historical scope before proposing a synchronized change.",
+      "prime_witness": [
+        31,
+        2,
+        23
+      ]
+    },
+    {
+      "id": "taxonomy--ontology",
+      "from": "taxonomy",
+      "to": "ontology",
+      "relation": "semantic_correspondence",
+      "trigger": "When a taxonomy placement is proposed as an ontology identity or proof claim.",
+      "evidence_source": "docs/taxonomy/index.md",
+      "required_check": "Keep official MSC heading, authored concept UUID and mathematical-source identity distinct.",
+      "prime_witness": [
+        37,
+        19
+      ]
+    },
+    {
+      "id": "msc2020--ontology-mappings",
+      "from": "msc2020",
+      "to": "ontology-mappings",
+      "relation": "layout_correspondence",
+      "trigger": "When source-layout navigation or alias changes affect recorded mapping paths.",
+      "evidence_source": "docs/ontology/mappings/README.md",
+      "required_check": "Check mapping consumers of layout_exact before any layout migration; retain old aliases.",
+      "prime_witness": [
+        41,
+        2,
+        23
+      ]
+    },
+    {
+      "id": "subject-guides--ontology",
+      "from": "subject-guides",
+      "to": "ontology",
+      "relation": "semantic_correspondence",
+      "trigger": "When a guide's authored UUID is cross-referenced to the ontology.",
+      "evidence_source": "docs/taxonomy/subjects/index.md",
+      "required_check": "Preserve authored identity independent of MSC folder; do not claim semantic equivalence solely from position.",
+      "prime_witness": [
+        43,
+        2,
+        19
+      ]
+    },
+    {
+      "id": "taxonomy-standards--msc2020",
+      "from": "taxonomy-standards",
+      "to": "msc2020",
+      "relation": "rights_reference",
+      "trigger": "When updating MSC2020 source access, rights or original edition metadata.",
+      "evidence_source": "docs/taxonomy/standards/index.md",
+      "required_check": "Preserve the versioned original-source checksum and license scope in the MSC layout explanation.",
+      "prime_witness": [
+        47,
+        2,
+        41
+      ]
+    },
+    {
+      "id": "taxonomy-proposals--subject-guides",
+      "from": "taxonomy-proposals",
+      "to": "subject-guides",
+      "relation": "proposal_review",
+      "trigger": "When a proposed authored concept is accepted for maintained navigation.",
+      "evidence_source": "docs/taxonomy/proposals/index.md",
+      "required_check": "Preserve original proposal/disposition, check guide links and authored identity without claiming theorem novelty.",
+      "prime_witness": [
+        53,
+        2,
+        43
+      ]
+    },
+    {
+      "id": "guide--github",
+      "from": "guide",
+      "to": "github",
+      "relation": "evidence_alignment",
+      "trigger": "When changing the definition of a requested proof or verification layer.",
+      "evidence_source": "docs/guide/evidence.md",
+      "required_check": "Compare the verification form; neither document may imply that filing an issue dispatches a check.",
+      "prime_witness": [
+        59,
+        3
+      ]
+    },
+    {
+      "id": "graph--guide",
+      "from": "graph",
+      "to": "guide",
+      "relation": "evidence_alignment",
+      "trigger": "When describing prime connectivity or directory routing as a mathematical verification result.",
+      "evidence_source": "docs/guide/evidence.md",
+      "required_check": "Report direct finite graph checks separately from the elementary infinite-prime proof and any unperformed Lean checks.",
+      "prime_witness": [
+        61,
+        2,
+        59
+      ]
+    }
+  ],
+  "context_handoff_contract": {
+    "basis_revision": "8f073e8f9f59992fdbddb920365aae2341614ba7",
+    "evidence_scope": "Selected directly inspected current-source documents only, not a repository-wide audit or live source manifest.",
+    "meaning": "Conditional consultation only. Context links represent documented reference/consumer relationships; prime_witness proves an arithmetic path but carries no instruction priority or authority.",
+    "traversal": "Apply ancestor instructions first. Follow only handoffs whose trigger matches the actual task, with no transitive automatic closure.",
+    "precedence": "Conflicts resolved by ancestor+local AGENTS.md and legitimate user authorization, never by prime order."
+  }
 }

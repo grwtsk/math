@@ -21,6 +21,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/ontology/sourc
 
 **Before authorized changes:** Do not repin a source to make an old verification receipt appear current.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When a source identity or revision appears in mapped records. Consult [docs/ontology/mappings instructions](../mappings/AGENTS.md) and [the source contract](../README.md). **Check:** Inspect exact source references and their historical scope before proposing a synchronized change. The arithmetic witness is `31 → 2 → 23`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`docs/ontology`](../AGENTS.md).

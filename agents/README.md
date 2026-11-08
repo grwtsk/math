@@ -1,30 +1,46 @@
-# Unified, source-colocated agent neighborhoods
+# Source-colocated agent neighborhoods
 
-Instructions live with the sources they govern, in each directory's
-`AGENTS.md`. This directory holds the arithmetic prime graph, the static
-index of those local files, and an audit record. There is no parallel
-`agents/scopes/` hierarchy.
+Instructions are discovered beside their maintained source files in each
+directory's `AGENTS.md`; [the root rules](../AGENTS.md) and
+[docs rules](../docs/AGENTS.md) remain authoritative. This directory
+contains the single static scope index, prime mathematics, and finite
+navigation examples—not a competing `agents/scopes/` instruction tree.
 
-## Discovery and inheritance
+## Which context to read
 
-For a file outside `GRWTSK/`, read its closest ancestor `AGENTS.md`
-and every higher-level instruction file to the repository root. The existing
-[root](../AGENTS.md) and [documentation](../docs/AGENTS.md) rules remain
-authoritative. Source-local files specialize without replacing them.
+1. Identify the exact source path and task. If it is inside `GRWTSK/`,
+   this registry is **out of scope**; follow the repository's subject rules.
+2. For other tracked paths, read the matching ancestor `AGENTS.md` chain,
+   from root through the deepest applicable directory.
+3. Read the direct files listed in that directory's **Actual source neighborhood**.
+   Choose the relevant actual source(s), not every linked directory.
+4. Follow a **Source-context handoff** only when its explicit trigger applies.
+   The handoff cites a real source contract and an exact comparison to make.
+5. Verify the relevant identities, links, existing consumers and evidence
+   before an authorized edit. No navigation step itself grants permission.
 
-The [registry](registry.json) records each annotated directory, its source
-neighbors and inherited directory scope, as well as its prime triplet.
-Unannotated descendants inherit the nearest ancestor's instructions; the
-root covers all paths outside `GRWTSK/`.
+The [registry](registry.json) stores both the inherited directory tree and
+the conditional source-context handoffs. The
+[route examples](route-fixtures.json) make inherited routing inspectable.
+A path under an unannotated directory inherits the nearest annotated parent.
 
-## Cross-neighborhood links
+## Two different link relations
 
-The [prime-knot definitions](prime-knot-triplets.md) associate each scope
-with consecutive prime neighbors, modular parents and modular children.
-These are typed cross-references, not a competing directory hierarchy.
-The finite registry includes only relations between registered scopes;
-the global arithmetic graph has infinitely many primes.
+The [prime-knot triplets](prime-knot-triplets.md) provide consecutive-prime
+neighbors and modular parents/children. They prove connectivity of all primes,
+but this graph is very dense and **does not determine relevant source context**.
+The registry's separate `context_handoffs` list records directly inspected,
+task-triggered source/consumer/rights comparisons. Arithmetic
+`prime_witness` entries show that handoffs can be carried by a path in the
+prime graph; these paths do not establish semantic relevance.
 
-No prime edge creates an identity, source ownership, runtime agent,
-permission, Git publication right or mathematical proof certificate.
-Operational automation belongs to the separately bound operations repository.
+For example, changing a `docs/ontology/mappings/files-00.yaml` layout
+reference starts with root, docs, ontology and mappings instructions. Only
+if `layout_exact` or `followup_files` is affected should the agent
+consult the MSC2020 source layout. Prime 23 connects to prime 41 via
+23 → 2 → 41, but that path does not make the root a decision-maker.
+
+All content here is static source-integrity support. It does not create
+running agents, schedules, Git authorization, theorem verification,
+proof acceptance, or mutable receipts. Effectful automation belongs
+in the separately bound Noe operations repository.

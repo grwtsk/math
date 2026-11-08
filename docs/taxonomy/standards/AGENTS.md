@@ -19,6 +19,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/taxonomy/stand
 
 **Before authorized changes:** Do not silently replace external classification or alter CC BY-NC-SA rights.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When updating MSC2020 source access, rights or original edition metadata. Consult [docs/taxonomy/msc2020 instructions](../msc2020/AGENTS.md) and [the source contract](index.md). **Check:** Preserve the versioned original-source checksum and license scope in the MSC layout explanation. The arithmetic witness is `47 → 2 → 41`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`docs/taxonomy`](../AGENTS.md).

@@ -22,6 +22,14 @@ Local attribution: grwtsk contributors. Source-local scope: `LICENSES/` (prime 5
 
 **Before authorized changes:** Do not edit legal bytes or relocate a notice without a source-specific rights and consumer audit.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When changes affect upstream package licensing, notices or local attribution. Consult [docs/adapters instructions](../docs/adapters/AGENTS.md) and [the source contract](../docs/adapters/README.md). **Check:** Identify the exact adapter and its original license; avoid blanket relicensing. The arithmetic witness is `5 → 11`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`.`](../AGENTS.md).

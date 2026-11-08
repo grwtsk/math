@@ -21,6 +21,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/taxonomy/` (pr
 
 **Before authorized changes:** Coordinate mathematical source relocations under issue #1425; preserve every consumer and historical alias.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When a taxonomy placement is proposed as an ontology identity or proof claim. Consult [docs/ontology instructions](../ontology/AGENTS.md) and [the source contract](index.md). **Check:** Keep official MSC heading, authored concept UUID and mathematical-source identity distinct. The arithmetic witness is `37 → 19`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`docs`](../AGENTS.md).

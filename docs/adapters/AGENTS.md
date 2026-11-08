@@ -22,6 +22,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/adapters/` (pr
 
 **Before authorized changes:** No provider import, version upgrade or root target promotion without an explicit compatibility and source-fidelity audit.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When adapting a provider theorem to a local mathematical consumer. Consult [docs/ontology/mappings instructions](../ontology/mappings/AGENTS.md) and [the source contract](CONSUMERS.md). **Check:** Check exact source, declaration, hypotheses and consumer mapping; a source candidate is not kernel acceptance. The arithmetic witness is `11 → 23`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`docs`](../AGENTS.md).

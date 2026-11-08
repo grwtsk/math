@@ -73,3 +73,37 @@ layout are unchanged by this construction.
 Background on the chosen knot example:
 [Torus Knot](https://mathworld.wolfram.com/TorusKnot.html) and
 [Grid Homology](https://web.math.princeton.edu/~petero/GridHomologyBook.pdf).
+
+## Context is not arithmetic adjacency
+
+The prime graph is a chosen global carrier, not a semantic dependency
+relation. For example, `2` is adjacent to every larger prime, so
+unconditional traversal would visit every registered scope even when
+an edit affects only one source file. Conversely, a justified source
+comparison may join scopes whose primes are not adjacent: the
+source-mappings scope at `23` must consult the MSC layout scope at
+`41` when a `layout_exact` reference changes, yet
+`41 mod 23 = 18`. The path `23--2--41` exists by the proved
+connectivity theorem but is not itself evidence of the layout contract.
+
+**Source-context routing lemma.** Assume a finite registry of directory
+prefixes containing the root, with unique scope IDs, one path per ID,
+and an acyclic parent relation equal to strict directory ancestry.
+For any tracked path outside the excluded `GRWTSK/` subtree, all
+matching prefixes form a finite chain under inclusion. Their unique
+longest element determines a unique ancestor-instruction chain.
+Adding an optional context handoff does not change this routing
+because the handoff is not a parent relation. Proof: any two prefixes
+of one path are comparable by the prefix property; choose its longest
+registered prefix. Strict parents shorten the path, so no parent
+cycle exists, and following the declared unique parents terminates.
+A conditional extra reference neither changes the prefix set nor
+the parent map. QED.
+
+The finite [route fixtures](route-fixtures.json) exercise that
+claim for selected source paths. They are not an exhaustive test of
+all tracked files. A handoff record provides a documented reason and
+an exact evidence-source locator, which must be inspected independently.
+No source relationship grants a user authorization or establishes
+the truth of a theorem.
+

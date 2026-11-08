@@ -22,6 +22,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/ontology/` (pr
 
 **Before authorized changes:** No parallel registry, fabricated correspondence, source-pin rewrite or effectful operational data.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When the shape of a maintained mathematical record is modified. Consult [docs/ontology/schemas instructions](schemas/AGENTS.md) and [the source contract](README.md). **Check:** Read the actual records schema and current consumer requirements before schema edits. The arithmetic witness is `19 → 2 → 29`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`docs`](../AGENTS.md).
