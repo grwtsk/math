@@ -8,10 +8,12 @@ reading date, influence, priority, or owner-attributed idea without evidence.
 Titles, authors, years, and identifiers below identify cited *published*
 work. Paper results and local Lean trust status are distinct assertions.
 
-## Required record for future paper-derived source
+## Source record fields for paper-derived work
 
-For every use of a paper in a formalization, add or update a record **in the
-same source-integration increment**, with:
+For paper-derived formalizations, retain the applicable fields below in source
+comments or the associated issue/PR. This supplementary ledger is optional;
+a separate entry here is not required for a source change or publication. When
+this ledger is deliberately maintained, its record should include:
 
 1. **Citation:** exact title, printed authors, year/edition, stable DOI, arXiv ID,
    archival URL, or publisher URL; section, theorem, formula or page locator.
