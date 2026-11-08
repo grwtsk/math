@@ -49,7 +49,7 @@ theorem Tape.rowAt_congr_at (tape : Tape r N) (start : ℕ)
 /-- Adjacent checked blocks and the second block's survivor endpoint compose
 through the exact common checkpoint.  Rows eliminated before the boundary do
 not enter the endpoint comparison. -/
-theorem Tape.blockCaps_checkpoint_add (tape : Tape r N) (start : ℕ)
+theorem Tape.blockCaps_checkpoint_splice (tape : Tape r N) (start : ℕ)
     (checkpoint : Fin N → GridRow r) (k m : ℕ)
     (h : start + (k + m) ≤ N) (checkpoint' next : Fin N → GridRow r)
     (hLink : ∀ i : Fin N, start + k ≤ i.val →

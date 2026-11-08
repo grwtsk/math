@@ -6,9 +6,9 @@ Authors: grwtsk contributors
 Source base: grwtsk/math@c779a67fa824da8f9b75384f7d61c46baeb2ce1f.
 Canonical workflow source: grwtsk/noeaaeue@
 e790dbb75fab307c1c6c94db26ee44ceddf8a7cf.
-SOURCE_PROOF_CANDIDATE / LEAN_COMPILATION_NOT_RUN /
-FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
-INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
+Conditional finite checkpoint-splice adapter; formal assurance is tracked in
+grwtsk/noeaaeue docs/verification.md with exact source and replay receipts.
+Independent analytical review and novelty assessment remain pending.
 -/
 import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.StructuredSchurCheckpointSplice
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRadiusTwoPackedTwoPivotCertificate
@@ -105,7 +105,7 @@ theorem checkedPrefixAndTwoPivot
     paidTape.BlockCaps 0 seed 398338 (by decide) ∧
       ∀ i : Fin 399936, 398338 ≤ i.val →
         paidTape.rowAt 0 seed 398338 i = nextCheckpoint i :=
-  paidTape.blockCaps_checkpoint_add 0 seed 398336 2 (by decide)
+  paidTape.blockCaps_checkpoint_splice 0 seed 398336 2 (by decide)
     checkpoint nextCheckpoint (prefixEndpoint_to_checkpoint seed hEndpoint)
     hPrefix checkedBlock
 
