@@ -46,10 +46,17 @@ to this directory unless stated otherwise.
 
 ## Operational boundary and attribution
 
-- Maintain mathematical documents and static navigation/specification data here.
-  Keep generators, mutable processing state, execution attempts and receipts in
-  `grwtsk/noeaaeue`, bound to a pinned math commit. Generate documentation only
-  when explicitly requested, as required by the root instructions.
+- Follow the root artifact-admission and ontology-binding rules. Maintain
+  mathematical documents and static navigation/specification data here; keep
+  generators, mutable processing state, execution attempts and receipts in the
+  operations repository identified by the
+  [ontology manifest](../docs/ontology/manifest.yaml), bound to a pinned math commit.
+  Generate documentation only when explicitly requested.
+- Maintain current cross-repository bindings through
+  [the ontology](../docs/ontology/README.md) and its existing source/mapping
+  contracts. Preserve `ontology/v1/` as historical source through the
+  [migration crosswalk](../docs/ontology/migrations/grwtsk.v1.yaml); do not create a
+  second current registry or embed operational dumps in mathematical documents.
 - Use exactly `grwtsk contributors` for local content attribution. Preserve upstream
   authorship and licensing. Follow the root privacy and Git identity rules; this
   content-attribution notice does not fix other contributors' Git identities.
