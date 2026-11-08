@@ -1895,3 +1895,336 @@ theorem separating_covering_tower [DecidableEq C]
   intro q
   exact ⟨hs q, CoverTower.erase_liftPath _ _ _ p q⟩
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+
+/-!
+# Inverse coherence and return to covers of the original edge family
+
+Consumer: the signed traversal tower above and issue #1784. This extension
+retains the existing vertex type, original dependent edge witnesses, subgroup
+series and inverse-left coset transport. Its new bridge is NOT a replacement
+free-group presentation or an extra assumption that a cover exists.
+
+For an original voltage U on E, the actual level-H graph has edges
+`CoverTower.Edge E U H`. Formal traversal of those edges is `OrientedEdge` of
+THAT graph. `signedEdgeEquiv` identifies it, endpoint by endpoint, with the
+previous `Edge (OrientedEdge E) (orientedWeight U) H`. A forward signed lift
+keeps its witness; a backward signed lift reverses the SAME original lifted
+edge. The equivalence is two-sided, so neither parallel edges nor polarity
+are lost or independently duplicated. `signedOpposite` inverts the transport
+and reverses the original witness; it is involutive and commutes with subgroup
+projection. `signEdge_opposite` identifies it with the actual formal opposite
+of an original-cover edge. No global normality of any subgroup is required.
+
+`outgoingEdgeEquiv` and `incomingEdgeEquiv` give the local covering property
+above each original endpoint and edge witness. Their intermediate projection
+equivalences are proved to be the ACTUAL `projectEdge`, with the old vertex
+projection. Hence every subgroup step is a cover of the original E-cover
+graphs; the already proved vertex-fiber count is two. At the top, the existing
+`topVertexEquiv` and `topEdgeEquiv E U` recover E itself. Signing commutes with
+projection on edges and on whole paths, and `signedPathEquiv` has both inverse
+laws. `erase_liftOrientedPath` recovers every original signed occurrence in
+chronological order, not merely its quotient class or holonomy.
+
+`original_separating_covering_tower` transfers the existing Magnus separator
+to this original-edge tower: its bottom path now lies in `OrientedEdge` of an
+actual `Edge E U H` graph. Its endpoint agrees definitionally with the earlier
+signed lift, so the nonidentity observation and finite degree count are
+unchanged. A nonempty cancellable history is still not a nonidentity class;
+trivial groups still admit only the nonseparating zero-length possibility.
+
+Exact hypotheses remain a supplied rooted parent/rank tree, endpointwise edge
+bijections to its branches plus chords, DecidableEq on chords for Magnus, and
+a based path with nonidentity original free-groupoid class. No finiteness of
+vertices, original edges or chords is added. This is a combinatorial graph
+cover result, including a proved reversal involution; it does not identify a
+geometric realization or topological fundamental group. Tree extraction from
+bare connectedness and connectedness of intermediate covers remain separate
+adapters. A finite-sheet graph need not have finitely many vertices. Independent
+review of THIS extension and broad all-import fresh replay are NOT_RUN unless
+separately recorded at its exact source pin in issue #1784. Historical review
+and replay of ac1bd232 retain their original source scope. No novelty or
+canonical mathematical acceptance is asserted.
+-/
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.CoverTower
+variable {G : Type*} [Group G] [Finite G]
+variable {V : Type*} (E : V → V → Type*) (U : ∀ {a b}, E a b → G)
+
+omit [Finite G] in
+@[simp] lemma transport_inverse (H : Subgroup G) (u : G) (q : G ⧸ H) :
+    transport H u⁻¹ (transport H u q) = q := by
+  simp [transport]
+lemma transport_eq_iff (H : Subgroup G) (u : G) (q r : G ⧸ H) :
+    transport H u q = r ↔ transport H u⁻¹ r = q := by
+  constructor
+  · intro h
+    rw [← h,transport_inverse]
+  · intro h
+    rw [← h]
+    simpa using transport_inverse H u⁻¹ r
+
+/-- Reverse a signed lift using the same original edge witness. -/
+def signedOpposite (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (e : Edge (OrientedEdge (E := E)) (orientedWeight U) H x y) :
+    Edge (OrientedEdge (E := E)) (orientedWeight U) H y x :=
+  ⟨opposite e.original, by
+    rw [orientedWeight_opposite]
+    exact (transport_eq_iff H _ _ _).mp e.target_eq⟩
+@[simp] lemma signedOpposite_original (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (e : Edge (OrientedEdge (E := E)) (orientedWeight U) H x y) :
+    (signedOpposite E U H e).original = opposite e.original := rfl
+@[simp] lemma signedOpposite_involutive (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (e : Edge (OrientedEdge (E := E)) (orientedWeight U) H x y) :
+    signedOpposite E U H (signedOpposite E U H e) = e := by
+  apply Edge.ext
+  exact opposite_opposite e.original
+@[simp] lemma project_signedOpposite {H K : Subgroup G} (h : H ≤ K)
+    {x y : V × (G ⧸ H)} (e : Edge (OrientedEdge (E := E)) (orientedWeight U) H x y) :
+    projectEdge _ _ h (signedOpposite E U H e) =
+      signedOpposite E U K (projectEdge _ _ h e) := by
+  apply Edge.ext
+  rfl
+
+/-- Signing a cover of the ORIGINAL edge family yields its signed-voltage cover. -/
+def signEdge (H : Subgroup G) {x y : V × (G ⧸ H)} :
+    OrientedEdge (E := Edge E U H) x y →
+      Edge (OrientedEdge (E := E)) (orientedWeight U) H x y
+  | .forward e => ⟨.forward e.original,e.target_eq⟩
+  | .backward e => ⟨.backward e.original, (transport_eq_iff H _ _ _).mp e.target_eq⟩
+def unsignEdge (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (e : Edge (OrientedEdge (E := E)) (orientedWeight U) H x y) :
+    OrientedEdge (E := Edge E U H) x y :=
+  match e.original, e.target_eq with
+  | .forward f, h => .forward ⟨f,h⟩
+  | .backward f, h => .backward ⟨f, by
+      have hh := (transport_eq_iff H (U f)⁻¹ _ _).mp h
+      simpa using hh⟩
+@[simp] lemma unsign_signEdge (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (e : OrientedEdge (E := Edge E U H) x y) :
+    unsignEdge E U H (signEdge E U H e) = e := by
+  cases e <;> rfl
+@[simp] lemma sign_unsignEdge (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (e : Edge (OrientedEdge (E := E)) (orientedWeight U) H x y) :
+    signEdge E U H (unsignEdge E U H e) = e := by
+  apply Edge.ext
+  cases e with
+  | mk e h => cases e <;> rfl
+
+def signedEdgeEquiv (H : Subgroup G) (x y : V × (G ⧸ H)) :
+    OrientedEdge (E := Edge E U H) x y ≃
+      Edge (OrientedEdge (E := E)) (orientedWeight U) H x y where
+  toFun := signEdge E U H
+  invFun := unsignEdge E U H
+  left_inv := unsign_signEdge E U H
+  right_inv := sign_unsignEdge E U H
+
+@[simp] lemma signEdge_opposite (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (e : OrientedEdge (E := Edge E U H) x y) :
+    signEdge E U H (opposite e) = signedOpposite E U H (signEdge E U H e) := by
+  apply Edge.ext
+  cases e <;> rfl
+
+def projectOrientedEdge {H K : Subgroup G} (h : H ≤ K)
+    {x y : V × (G ⧸ H)} : OrientedEdge (E := Edge E U H) x y →
+      OrientedEdge (E := Edge E U K) (projectVertex h x) (projectVertex h y)
+  | .forward e => .forward (projectEdge E U h e)
+  | .backward e => .backward (projectEdge E U h e)
+@[simp] lemma projectOrientedEdge_opposite {H K : Subgroup G} (h : H ≤ K)
+    {x y : V × (G ⧸ H)} (e : OrientedEdge (E := Edge E U H) x y) :
+    projectOrientedEdge E U h (opposite e) = opposite (projectOrientedEdge E U h e) := by
+  cases e <;> rfl
+@[simp] lemma signEdge_project {H K : Subgroup G} (h : H ≤ K)
+    {x y : V × (G ⧸ H)} (e : OrientedEdge (E := Edge E U H) x y) :
+    signEdge E U K (projectOrientedEdge E U h e) =
+      projectEdge _ _ h (signEdge E U H e) := by
+  apply Edge.ext
+  cases e <;> rfl
+
+def unsignPath (H : Subgroup G) {x y : V × (G ⧸ H)} :
+    Path (Edge (OrientedEdge (E := E)) (orientedWeight U) H) x y →
+      Path (OrientedEdge (E := Edge E U H)) x y
+  | .refl _ => .refl _
+  | .cons e p => .cons (unsignEdge E U H e) (unsignPath H p)
+def signPath (H : Subgroup G) {x y : V × (G ⧸ H)} :
+    Path (OrientedEdge (E := Edge E U H)) x y →
+      Path (Edge (OrientedEdge (E := E)) (orientedWeight U) H) x y
+  | .refl _ => .refl _
+  | .cons e p => .cons (signEdge E U H e) (signPath H p)
+@[simp] lemma sign_unsignPath (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (p : Path (Edge (OrientedEdge (E := E)) (orientedWeight U) H) x y) :
+    signPath E U H (unsignPath E U H p) = p := by
+  induction p with
+  | refl _ => rfl
+  | cons e p ih => simp [unsignPath,signPath,ih]
+@[simp] lemma unsign_signPath (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (p : Path (OrientedEdge (E := Edge E U H)) x y) :
+    unsignPath E U H (signPath E U H p) = p := by
+  induction p with
+  | refl _ => rfl
+  | cons e p ih => simp [unsignPath,signPath,ih]
+
+def eraseOrientedEdge (H : Subgroup G) {x y : V × (G ⧸ H)} :
+    OrientedEdge (E := Edge E U H) x y → OrientedEdge (E := E) x.1 y.1
+  | .forward e => .forward e.original
+  | .backward e => .backward e.original
+@[simp] lemma erase_unsignEdge (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (e : Edge (OrientedEdge (E := E)) (orientedWeight U) H x y) :
+    eraseOrientedEdge E U H (unsignEdge E U H e) = e.original := by
+  cases e with
+  | mk e h => cases e <;> rfl
+def eraseOrientedPath (H : Subgroup G) {x y : V × (G ⧸ H)} :
+    Path (OrientedEdge (E := Edge E U H)) x y → Path (OrientedEdge (E := E)) x.1 y.1
+  | .refl _ => .refl _
+  | .cons e p => .cons (eraseOrientedEdge E U H e) (eraseOrientedPath H p)
+lemma erase_unsignPath (H : Subgroup G) {x y : V × (G ⧸ H)}
+    (p : Path (Edge (OrientedEdge (E := E)) (orientedWeight U) H) x y) :
+    eraseOrientedPath E U H (unsignPath E U H p) = erasePath _ _ H p := by
+  induction p with
+  | refl _ => rfl
+  | cons e p ih => simp [eraseOrientedPath,unsignPath,erasePath,ih]
+
+/-- A signed path lifted as actual forward/backward traversals of ORIGINAL cover edges. -/
+noncomputable def liftOrientedPath (H : Subgroup G) {a b : V}
+    (p : Path (OrientedEdge (E := E)) a b) (q : G ⧸ H) :
+    Σ r : G ⧸ H, Path (OrientedEdge (E := Edge E U H)) (a,q) (b,r) :=
+  let l := liftPath (OrientedEdge (E := E)) (orientedWeight U) H p q
+  ⟨l.1,unsignPath E U H l.2⟩
+lemma liftOriented_endpoint (H : Subgroup G) {a b : V}
+    (p : Path (OrientedEdge (E := E)) a b) (q : G ⧸ H) :
+    (liftOrientedPath E U H p q).1 = transport H (Path.holonomy (orientedWeight U) p) q :=
+  lift_endpoint _ _ H p q
+lemma erase_liftOrientedPath (H : Subgroup G) {a b : V}
+    (p : Path (OrientedEdge (E := E)) a b) (q : G ⧸ H) :
+    eraseOrientedPath E U H (liftOrientedPath E U H p q).2 = p := by
+  dsimp only [liftOrientedPath]
+  rw [erase_unsignPath,erase_liftPath]
+lemma sign_liftOrientedPath (H : Subgroup G) {a b : V}
+    (p : Path (OrientedEdge (E := E)) a b) (q : G ⧸ H) :
+    signPath E U H (liftOrientedPath E U H p q).2 =
+      (liftPath (OrientedEdge (E := E)) (orientedWeight U) H p q).2 :=
+  sign_unsignPath E U H _
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.CoverTower
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.CoverTower
+variable {G : Type*} [Group G] [Finite G]
+variable {V : Type*} (E : V → V → Type*) (U : ∀ {a b}, E a b → G)
+def projectOrientedPath {H K : Subgroup G} (h : H ≤ K) {x y : V × (G ⧸ H)} :
+    Path (OrientedEdge (E := Edge E U H)) x y →
+      Path (OrientedEdge (E := Edge E U K)) (projectVertex h x) (projectVertex h y)
+  | .refl x => .refl (projectVertex h x)
+  | .cons e p => .cons (projectOrientedEdge E U h e) (projectOrientedPath h p)
+def projectSignedPath {H K : Subgroup G} (h : H ≤ K) {x y : V × (G ⧸ H)} :
+    Path (Edge (OrientedEdge (E := E)) (orientedWeight U) H) x y →
+      Path (Edge (OrientedEdge (E := E)) (orientedWeight U) K) (projectVertex h x) (projectVertex h y)
+  | .refl x => .refl (projectVertex h x)
+  | .cons e p => .cons (projectEdge _ _ h e) (projectSignedPath h p)
+lemma signPath_project {H K : Subgroup G} (h : H ≤ K) {x y : V × (G ⧸ H)}
+    (p : Path (OrientedEdge (E := Edge E U H)) x y) :
+    signPath E U K (projectOrientedPath E U h p) = projectSignedPath E U h (signPath E U H p) := by
+  induction p with
+  | refl _ => rfl
+  | cons e p ih => simp [signPath,projectOrientedPath,projectSignedPath,ih]
+lemma unsignPath_project {H K : Subgroup G} (h : H ≤ K) {x y : V × (G ⧸ H)}
+    (p : Path (Edge (OrientedEdge (E := E)) (orientedWeight U) H) x y) :
+    unsignPath E U K (projectSignedPath E U h p) = projectOrientedPath E U h (unsignPath E U H p) := by
+  apply (show Function.Injective (signPath E U K (x := projectVertex h x) (y := projectVertex h y)) from
+    fun p q hpq => by simpa using congrArg (unsignPath E U K) hpq)
+  simp [signPath_project]
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.CoverTower
+
+
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.CoverTower
+variable {G : Type*} [Group G] [Finite G]
+variable {V : Type*} (E : V → V → Type*) (U : ∀ {a b}, E a b → G)
+/-- The outgoing edges above each original endpoint b are exactly the original
+edges a→b, not an extra independently labelled signed family. -/
+def outgoingEdgeEquiv (H : Subgroup G) (a b : V) (q : G ⧸ H) :
+    (Σ r : G ⧸ H, Edge E U H (a,q) (b,r)) ≃ E a b where
+  toFun e := e.2.original
+  invFun e := ⟨transport H (U e) q,liftEdge E U H e q⟩
+  left_inv e := by
+    rcases e with ⟨r,⟨e,h⟩⟩
+    change E a b at e
+    change transport H (U e) q = r at h
+    subst r
+    rfl
+  right_inv _ := rfl
+/-- Incoming edges likewise have a unique starting sheet for each original witness. -/
+def incomingEdgeEquiv (H : Subgroup G) (a b : V) (q : G ⧸ H) :
+    (Σ r : G ⧸ H, Edge E U H (a,r) (b,q)) ≃ E a b where
+  toFun e := e.2.original
+  invFun e := ⟨transport H (U e)⁻¹ q,⟨e,by simpa using transport_inverse H (U e)⁻¹ q⟩⟩
+  left_inv e := by
+    rcases e with ⟨r,⟨e,h⟩⟩
+    change E a b at e
+    have hr := (transport_eq_iff H (U e) r q).mp h
+    change transport H (U e)⁻¹ q = r at hr
+    subst r
+    rfl
+  right_inv _ := rfl
+
+/-- The intermediate covering map is bijective on outgoing edge fibers. -/
+def outgoingProjectionEquiv {H K : Subgroup G} (h : H ≤ K) (a b : V) (q : G ⧸ H) :
+    (Σ r : G ⧸ H, Edge E U H (a,q) (b,r)) ≃
+      (Σ r : G ⧸ K, Edge E U K (a,Subgroup.quotientMapOfLE h q) (b,r)) :=
+  (outgoingEdgeEquiv E U H a b q).trans
+    (outgoingEdgeEquiv E U K a b (Subgroup.quotientMapOfLE h q)).symm
+lemma outgoingProjectionEquiv_apply {H K : Subgroup G} (h : H ≤ K) (a b : V)
+    (q : G ⧸ H) (e : Σ r : G ⧸ H, Edge E U H (a,q) (b,r)) :
+    outgoingProjectionEquiv E U h a b q e =
+      ⟨Subgroup.quotientMapOfLE h e.1,projectEdge E U h e.2⟩ := by
+  apply (outgoingEdgeEquiv E U K a b (Subgroup.quotientMapOfLE h q)).injective
+  simp only [outgoingProjectionEquiv,Equiv.trans_apply,Equiv.apply_symm_apply]
+  rfl
+def incomingProjectionEquiv {H K : Subgroup G} (h : H ≤ K) (a b : V) (q : G ⧸ H) :
+    (Σ r : G ⧸ H, Edge E U H (a,r) (b,q)) ≃
+      (Σ r : G ⧸ K, Edge E U K (a,r) (b,Subgroup.quotientMapOfLE h q)) :=
+  (incomingEdgeEquiv E U H a b q).trans
+    (incomingEdgeEquiv E U K a b (Subgroup.quotientMapOfLE h q)).symm
+lemma incomingProjectionEquiv_apply {H K : Subgroup G} (h : H ≤ K) (a b : V)
+    (q : G ⧸ H) (e : Σ r : G ⧸ H, Edge E U H (a,r) (b,q)) :
+    incomingProjectionEquiv E U h a b q e =
+      ⟨Subgroup.quotientMapOfLE h e.1,projectEdge E U h e.2⟩ := by
+  apply (incomingEdgeEquiv E U K a b (Subgroup.quotientMapOfLE h q)).injective
+  simp only [incomingProjectionEquiv,Equiv.trans_apply,Equiv.apply_symm_apply]
+  rfl
+
+def signedPathEquiv (H : Subgroup G) (x y : V × (G ⧸ H)) :
+    Path (OrientedEdge (E := Edge E U H)) x y ≃
+      Path (Edge (OrientedEdge (E := E)) (orientedWeight U) H) x y where
+  toFun := signPath E U H
+  invFun := unsignPath E U H
+  left_inv := unsign_signPath E U H
+  right_inv := sign_unsignPath E U H
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.CoverTower
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+open CategoryTheory
+universe u v w
+variable {V : Type u} (T : RootedTree V) {C : Type v} (ends : C → V × V)
+variable (E : V → V → Type w) (presentation : ∀ a b, E a b ≃ Edge T ends a b)
+/-- The separating bottom path traverses actual lifted ORIGINAL edges, and every
+stage is an original-edge cover with two-element vertex fibers. -/
+theorem original_separating_covering_tower [DecidableEq C]
+    (p : Path (OrientedEdge (E := E)) T.root T.root)
+    (hp : originalPathClass E p ≠ 𝟙 _) :
+    ∃ (n : ℕ) (target : Fin n → C) (S : CoverTower.TwoSeries (TruncatedMagnus.Group n)),
+      0 < S.length ∧
+      (∀ (i : Fin S.length) (v : V) (q : TruncatedMagnus.Group n ⧸ S.subgroup i.succ),
+        Nat.card {x : V × (TruncatedMagnus.Group n ⧸ S.subgroup i.castSucc) //
+          CoverTower.projectVertex (S.le_step i) x = (v,q)} = 2) ∧
+      ∀ q : TruncatedMagnus.Group n ⧸ S.subgroup 0,
+        (CoverTower.liftOrientedPath E
+          (originalVoltage T ends E presentation (TruncatedMagnus.generator target))
+          (S.subgroup 0) p q).1 ≠ q ∧
+        CoverTower.eraseOrientedPath E
+          (originalVoltage T ends E presentation (TruncatedMagnus.generator target))
+          (S.subgroup 0)
+          (CoverTower.liftOrientedPath E
+            (originalVoltage T ends E presentation (TruncatedMagnus.generator target))
+            (S.subgroup 0) p q).2 = p := by
+  obtain ⟨n,target,S,hpos,hdegree,hsep⟩ := separating_covering_tower T ends E presentation p hp
+  refine ⟨n,target,S,hpos,hdegree,?_⟩
+  intro q
+  exact ⟨(hsep q).1,CoverTower.erase_liftOrientedPath _ _ _ p q⟩
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
