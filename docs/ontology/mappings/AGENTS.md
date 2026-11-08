@@ -21,6 +21,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/ontology/mappi
 
 **Before authorized changes:** Do not mass-regenerate, reorder unrelated entries or treat an index as verification.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When a mapping depends on layout_exact, subject_folder or followup_files. Consult [docs/taxonomy/msc2020 instructions](../../taxonomy/msc2020/AGENTS.md) and [the source contract](README.md). **Check:** Resolve the pinned MSC source-layout record, including follow-up placements; do not infer current layout from a namespace. The arithmetic witness is `23 → 2 → 41`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`docs/ontology`](../AGENTS.md).

@@ -1,0 +1,111 @@
+{
+  "schema": "GRWTSK.SourceColocatedRouteFixtures/1",
+  "basis_revision": "8f073e8f9f59992fdbddb920365aae2341614ba7",
+  "meaning": "Static examples of deterministic source-scope routing, not executing or authorizing agents.",
+  "cases": [
+    {
+      "path": "README.md",
+      "expected_scope": "root",
+      "expected_instruction_chain": [
+        "AGENTS.md"
+      ]
+    },
+    {
+      "path": "LICENSES/MIT.txt",
+      "expected_scope": "licenses",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "LICENSES/AGENTS.md"
+      ]
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/03-verification.yml",
+      "expected_scope": "github",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        ".github/AGENTS.md"
+      ]
+    },
+    {
+      "path": "docs/ontology/mappings/files-00.yaml",
+      "expected_scope": "ontology-mappings",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "docs/AGENTS.md",
+        "docs/ontology/AGENTS.md",
+        "docs/ontology/mappings/AGENTS.md"
+      ]
+    },
+    {
+      "path": "docs/ontology/v1/README.md",
+      "expected_scope": "ontology",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "docs/AGENTS.md",
+        "docs/ontology/AGENTS.md"
+      ]
+    },
+    {
+      "path": "docs/adapters/openai-math/sources.toml",
+      "expected_scope": "openai-adapter",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "docs/AGENTS.md",
+        "docs/adapters/AGENTS.md",
+        "docs/adapters/openai-math/AGENTS.md"
+      ]
+    },
+    {
+      "path": "docs/adapters/pfr/README.md",
+      "expected_scope": "adapters",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "docs/AGENTS.md",
+        "docs/adapters/AGENTS.md"
+      ]
+    },
+    {
+      "path": "docs/taxonomy/msc2020/source-layout-v1.json",
+      "expected_scope": "msc2020",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "docs/AGENTS.md",
+        "docs/taxonomy/AGENTS.md",
+        "docs/taxonomy/msc2020/AGENTS.md"
+      ]
+    },
+    {
+      "path": "docs/taxonomy/proposals/index.md",
+      "expected_scope": "taxonomy-proposals",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "docs/AGENTS.md",
+        "docs/taxonomy/AGENTS.md",
+        "docs/taxonomy/proposals/AGENTS.md"
+      ]
+    },
+    {
+      "path": "docs/taxonomy/standards/msc2020/index.md",
+      "expected_scope": "taxonomy-standards",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "docs/AGENTS.md",
+        "docs/taxonomy/AGENTS.md",
+        "docs/taxonomy/standards/AGENTS.md"
+      ]
+    },
+    {
+      "path": "agents/registry.json",
+      "expected_scope": "graph",
+      "expected_instruction_chain": [
+        "AGENTS.md",
+        "agents/AGENTS.md"
+      ]
+    },
+    {
+      "path": "GRWTSK/NumberTheory/FirstPrime.lean",
+      "expected_scope": null,
+      "expected_instruction_chain": []
+    }
+  ]
+}

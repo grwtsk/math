@@ -19,6 +19,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/ontology/schem
 
 **Before authorized changes:** Coordinate schema changes with real source bindings; no inferred runtime checks or acceptance.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When a schema change would affect existing mapping records. Consult [docs/ontology/mappings instructions](../mappings/AGENTS.md) and [the source contract](../README.md). **Check:** Assess mapped-record compatibility at the pinned source; do not silently rewrite historical shards. The arithmetic witness is `29 → 2 → 23`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`docs/ontology`](../AGENTS.md).

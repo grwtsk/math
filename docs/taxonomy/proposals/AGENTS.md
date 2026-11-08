@@ -20,6 +20,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/taxonomy/propo
 
 **Before authorized changes:** No wholesale replacement of historical proposals by a new ontology or taxonomy.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When a proposed authored concept is accepted for maintained navigation. Consult [docs/taxonomy/subjects instructions](../subjects/AGENTS.md) and [the source contract](index.md). **Check:** Preserve original proposal/disposition, check guide links and authored identity without claiming theorem novelty. The arithmetic witness is `53 → 2 → 43`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`docs/taxonomy`](../AGENTS.md).

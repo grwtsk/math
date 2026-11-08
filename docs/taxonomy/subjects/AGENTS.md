@@ -19,6 +19,14 @@ Local attribution: grwtsk contributors. Source-local scope: `docs/taxonomy/subje
 
 **Before authorized changes:** Avoid artificial one-to-one namespace placement and unsupported mathematical acceptance.
 
+## Conditional source-context handoffs
+
+Follow a handoff only if its trigger matches the actual edit. Its linked
+source is evidence for consultation, not an instruction override; unrelated
+prime neighbors need not be read.
+
+- **Trigger:** When a guide's authored UUID is cross-referenced to the ontology. Consult [docs/ontology instructions](../../ontology/AGENTS.md) and [the source contract](index.md). **Check:** Preserve authored identity independent of MSC folder; do not claim semantic equivalence solely from position. The arithmetic witness is `43 → 2 → 19`; it grants no instruction priority.
+
 ## Directory containment
 
 - Parent instruction scope: [`docs/taxonomy`](../AGENTS.md).
