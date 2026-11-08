@@ -162,7 +162,6 @@ This repository is the canonical pure mathematical source for GRWTSK.
   `grwtsk <contributors@grwtsk.invalid>` for author and committer. Preserve other
   contributors' own identities; do not enforce a repository-wide Git identity or
   rewrite their attribution.
-- Where an individual human reference is necessary, use only `R.A.` or `Hs`.
   Keep personal names, personal email addresses, private account handles and
   personal device identifiers out of maintained content. Preserve public
   researchers' bylines, upstream authorship and license obligations.
