@@ -1,5 +1,4 @@
 /-
-Copyright (c) 2026 grwtsk contributors. MIT.
 Authenticated from historical commit f047ec7814a03bf2b6175fc3b96a465ff2b86804,
 DyadicDiscrepancy blob faaef84a44f9c5e052bb76050453c2c2ce89317d.
 Status: SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED.
