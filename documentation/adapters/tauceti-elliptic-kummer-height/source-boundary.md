@@ -1,5 +1,9 @@
 # Tau Ceti genuine elliptic Kummer–Selmer and Néron–Tate source adapter
 
+[Adapter index](../README.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md).
+This source-boundary document retains its original pins and evidence limits;
+navigation does not establish that an isolated build or upstream import exists.
+
 Local attribution: grwtsk contributors. This is a SOURCE CONTRACT, NOT a compiled adapter and NOT an external execution request. Preserve original Tau Ceti contributors' Apache-2.0 authorship and licenses. Never copy pinned external Lean modules into the root build as a workaround.
 
 ## Original actual providers (immutable source pin)

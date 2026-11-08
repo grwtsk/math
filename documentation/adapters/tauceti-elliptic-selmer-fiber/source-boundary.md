@@ -1,5 +1,9 @@
 # True elliptic Selmer mapping-fiber adapter — Tau Ceti source boundary
 
+[Adapter index](../README.md) · [MSC2020 source layout](../../taxonomy/msc2020/README.md).
+This source-boundary document retains its original pins and evidence limits;
+navigation does not establish that an isolated build or upstream import exists.
+
 Local content attribution: grwtsk contributors. This is a mathematical **source and import boundary**; it is NOT a functioning compiled Tau Ceti dependency, not a verification request, and not an authorization to change the root toolchain.
 
 ## Immutable source pin and original licenses

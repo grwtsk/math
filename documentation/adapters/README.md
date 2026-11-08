@@ -2,15 +2,21 @@
 
 Local attribution: grwtsk contributors.
 
-Provider packages are organized below this directory. Their Lean files are relative symbolic links to the canonical MSC2020 source tree in `GRWTSK/`. Distinct dependency versions retain separate source editions and package manifests. Mathematical declaration namespaces remain unchanged.
+This directory contains isolated provider packages and source-boundary contracts.
+Canonical MSC2020 source locations are recorded in the [source layout](../taxonomy/msc2020/source-layout-v1.json);
+provider links retain separate source editions and dependency manifests where
+present. Some source-boundary directories contain draft Lean files or
+requirements without a functioning compiled package. Follow each guide’s stated
+source and build boundary; declaration namespaces remain distinct from file paths.
 
 - [openai-math](openai-math/README.md): pinned OpenAI OAI imports and 419 subject-organized
   comparator surfaces, plus finite-family Liouville/Elliott transport and
   seven-eighths zero-location consequences.
 - [openai-math-residue-circle](openai-math-residue-circle/README.md): opt-in, separately pinned residue-circle/CM comparison sources; explicit upstream import and acceptance gates.
 
-Provider packages have their own dependency manifests and build targets. They
-are outside the root GRWTSK default build. A common Lean/Mathlib version does not
+Buildable provider packages have isolated dependency manifests and build targets.
+Source-boundary contracts alone do not supply a build target or compiled import.
+Provider integration stays separate from the root GRWTSK default build. A common Lean/Mathlib version does not
 admit upstream analytic theorems or establish a bridge to local arithmetic
 consumers. Preserve source identities, exact hypotheses, licenses, and pending
 verification status when adding a provider.
@@ -52,3 +58,8 @@ separately tracked.
 
 - [Progression coloring](progression-coloring/README.md): pinned proof-source port for Erdős Problem #138; its source correspondence and formal checks retain the package’s stated scope.
 - [Hurwitz adapter](tauceti-connes/README.md): isolated TauCeti Hurwitz sources with separate dependency pins and explicit consumer obligations.
+
+## Source-boundary contracts
+
+- [Elliptic Kummer–Selmer and Néron–Tate boundary](tauceti-elliptic-kummer-height/source-boundary.md): pinned original provider declarations and exact comparison obligations; not a compiled adapter.
+- [Elliptic Selmer mapping-fiber boundary](tauceti-elliptic-selmer-fiber/source-boundary.md): cochain/local-condition requirements and source candidates with their individual evidence scopes; no compiled Tau Ceti dependency is established by the contract.
