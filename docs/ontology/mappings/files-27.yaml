@@ -2,7 +2,7 @@ schema: math-ontology/file-mapping-shard/2
 id: mapping-shard:math.files.27
 corpus: corpus:grwtsk.math
 revision: 2b232aa5aaa6c80fe13a87a94c1b5ce81ddaa011
-record_count: 2382
+record_count: 2381
 groups:
 - directory: ''
   role: repository_configuration
@@ -1693,11 +1693,6 @@ groups:
   - MultilinearBounded.lean
   - RingBasicNamespacedPublic.lean
   - WithVal.lean
-- directory: LICENSES
-  role: license_or_notice
-  disposition: justified_exempt
-  files:
-  - ArchiveCandidates-NOTICE.txt
 - directory: documentation/adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory
   role: adapter_module_view
   disposition: justified_exempt
