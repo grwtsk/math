@@ -6,6 +6,7 @@ implicitly transferred to revised bytes.
 import GRWTSK.Combinatorics.GraphTheory.FinitePositiveWordMagnusSeparation
 import Mathlib.GroupTheory.FreeGroup.Basic
 import Mathlib.CategoryTheory.Groupoid.FreeGroupoid
+import Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup
 import Mathlib
 
 /-!
@@ -2227,4 +2228,502 @@ theorem original_separating_covering_tower [DecidableEq C]
   refine ⟨n,target,S,hpos,hdegree,?_⟩
   intro q
   exact ⟨(hsep q).1,CoverTower.erase_liftOrientedPath _ _ _ p q⟩
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+
+/-!
+# Generated-image connected covers and an actual geometric comparison map
+
+Source consumer and verification frontier: issue #1784. The connected-cover
+refinement is proved below; the FULL geometric fundamental-group equivalence
+is NOT claimed. No desired comparison law, fullness, faithfulness, homotopy
+lifting or topological-cover conclusion is installed as a hypothesis or axiom.
+
+For any chord voltage f, its actual `FreeGroup.lift f` image is used as the
+new group. `ConnectedImage.lift_surjective` proves generation of that group;
+this is not an assumption about the whole ambient Magnus matrix group. A
+rank-recursive raw tree path has identity voltage, and a tree/chord/reverse-tree
+loop has voltage f(c). Finite signed words therefore produce every image-group
+element as a source based holonomy. To reach a coset gH over any vertex, use a
+loop of voltage g inverse followed by its tree connector. Inverse-left
+transport sends [1] to [g]. Reversing one root path and appending another
+connects ANY two actual cover vertices. Thus `cover_connected` proves signed
+path connectedness of the original-edge graph at EVERY subgroup level.
+
+Subgroups of the finite Magnus 2-group remain finite 2-groups. Inclusion of the
+generated image preserves the actual original voltages and every holonomy,
+so the separator remains nonidentity. `connected_separating_covering_tower`
+has the SAME tree-presentation, chord equality and nonidentity-class hypotheses
+as the earlier source theorem, with no finite-vertex/edge/alphabet premise and
+no ambient-generation premise. It returns a positive-length index-two tower,
+all levels connected and exact path erasure. `imageRegularVertex/Edge` embed
+the image regular cover into the old ambient regular graph, and the lifted
+endpoint comparison retains the original source observation.
+
+`Geometric.Realization E` is a literal quotient of discrete vertices and the
+disjoint family of labelled closed unit intervals, gluing each interval's
+endpoints to its actual source and target. It has the quotient topology, not
+a renamed free group or a discrete replacement space. `edgePath` is continuous.
+The universal property of the ACTUAL free groupoid gives `comparison` into
+Mathlib's topological fundamental groupoid. Its based-loop homomorphism lands
+in the multiplicative opposite of Mathlib's fundamental group, because our
+source multiplication is chronological and Mathlib End multiplication reverses
+composition. `originalLoopMap_path` identifies its value with the genuine
+relative-endpoint homotopy class of the realized original history. Formal
+backtracking is proved homotopic to a constant path. `vertexRetraction` is only
+a SET-THEORETIC left inverse used for vertex injectivity, not a continuous
+retraction or deformation contraction.
+
+Every combinatorially connected graph's realization is path connected: a
+realized source path reaches each vertex, and a linear subinterval reaches
+each edge point. Thus every generated-image cover level has a path-connected
+realization. Graph projections realize to actual continuous, parameter-preserving
+maps, natural on entire signed paths, with the same original edge witnesses.
+No preexisting antiparallel original arcs are silently identified.
+
+REMAINING FORMAL GAPS: the comparison functor is not proved full or faithful;
+there is no proved inverse taking arbitrary continuous paths/homotopies back
+to edge histories. In particular, no pi_1 isomorphism, cellular approximation
+or null-homotopy reflection theorem is asserted. Also `realizedProjection`
+is not proved to satisfy Mathlib's topological IsCoveringMap predicate: local
+evenly covered neighborhoods still need construction. Path connectedness and
+a combinatorial local edge bijection alone do not discharge that obligation.
+Tree-presentation extraction from bare connectedness is unchanged. Independent
+review and broad all-import fresh replay of this extension are NOT_RUN unless
+recorded separately at its exact source pin. Historical evidence is preserved.
+-/
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage
+universe u v
+variable {V : Type u} {E : V → V → Type v}
+def reversePath {a b : V} : Path (OrientedEdge (E := E)) a b → Path (OrientedEdge (E := E)) b a
+  | .refl a => .refl a
+  | .cons e p => (reversePath p).append (.cons (opposite e) (.refl _))
+lemma holonomy_reverse {G : Type*} [Group G] (U : ∀ {a b}, E a b → G)
+    {a b : V} (p : Path (OrientedEdge (E := E)) a b) :
+    Path.holonomy (orientedWeight U) (reversePath p) = (Path.holonomy (orientedWeight U) p)⁻¹ := by
+  induction p with
+  | refl a => simp [reversePath,Path.holonomy]
+  | cons e p ih => simp [reversePath,Path.holonomy_append,Path.holonomy,ih,mul_inv_rev]
+def SignedConnected (E : V → V → Type v) : Prop :=
+  ∀ a b : V, Nonempty (Path (OrientedEdge (E := E)) a b)
+
+namespace SpanningTree
+attribute [local instance] Classical.propDecidable
+variable (T : RootedTree V) {C : Type v} (ends : C → V × V)
+noncomputable def treePath (x : V) : Path (OrientedEdge (E := Edge T ends)) T.root x :=
+  if h : x = T.root then by subst x; exact Path.refl T.root
+  else (treePath (T.parent x)).append (.cons (.forward (.branch x h)) (.refl x))
+termination_by T.height x
+decreasing_by exact T.lower x h
+lemma treePath_holonomy {G : Type*} [Group G] (f : C → G) (x : V) :
+    Path.holonomy (orientedWeight (generatorVoltage T ends f)) (treePath T ends x) = 1 := by
+  rw [treePath]
+  split_ifs with h
+  · subst x; rfl
+  · rw [Path.holonomy_append,treePath_holonomy f (T.parent x)]
+    simp [Path.holonomy,orientedWeight,generatorVoltage]
+termination_by T.height x
+decreasing_by exact T.lower x h
+noncomputable def chordPath (c : C) : Path (OrientedEdge (E := Edge T ends)) T.root T.root :=
+  (treePath T ends (ends c).1).append
+    (.cons (.forward (.chord c)) (reversePath (treePath T ends (ends c).2)))
+lemma chordPath_holonomy {G : Type*} [Group G] (f : C → G) (c : C) :
+    Path.holonomy (orientedWeight (generatorVoltage T ends f)) (chordPath T ends c) = f c := by
+  simp [chordPath,Path.holonomy_append,Path.holonomy,treePath_holonomy,holonomy_reverse,
+    orientedWeight,generatorVoltage]
+noncomputable def wordPath : List (C × Bool) → Path (OrientedEdge (E := Edge T ends)) T.root T.root
+  | [] => .refl _
+  | (c,true) :: xs => (chordPath T ends c).append (wordPath xs)
+  | (c,false) :: xs => (reversePath (chordPath T ends c)).append (wordPath xs)
+lemma wordPath_holonomy {G : Type*} [Group G] (f : C → G) (xs : List (C × Bool)) :
+    Path.holonomy (orientedWeight (generatorVoltage T ends f)) (wordPath T ends xs) =
+      FreeGroup.lift f (FreeGroup.mk xs) := by
+  induction xs with
+  | nil => simp [wordPath,Path.holonomy]
+  | cons x xs ih =>
+    rcases x with ⟨c,b⟩
+    cases b <;> simp [wordPath,Path.holonomy_append,holonomy_reverse,chordPath_holonomy,ih,
+      FreeGroup.lift_mk]
+
+variable (E : V → V → Type*) (presentation : ∀ a b, E a b ≃ Edge T ends a b)
+lemma exists_path_holonomy {G : Type*} [Group G] (f : C → G)
+    (hf : Function.Surjective (FreeGroup.lift f)) (v : V) (g : G) :
+    ∃ p : Path (OrientedEdge (E := E)) T.root v,
+      Path.holonomy (orientedWeight (originalVoltage T ends E presentation f)) p = g := by
+  obtain ⟨w,hw⟩ := hf g
+  obtain ⟨xs,hxs⟩ := Quot.exists_rep w
+  refine ⟨unmapPath T ends E presentation ((wordPath T ends xs).append (treePath T ends v)),?_⟩
+  rw [original_holonomy,map_unmapPath,Path.holonomy_append,wordPath_holonomy,treePath_holonomy,mul_one]
+  simpa only [show FreeGroup.mk xs = w from hxs] using hw
+
+theorem cover_connected {G : Type*} [Group G] [Finite G] (f : C → G)
+    (hf : Function.Surjective (FreeGroup.lift f)) (H : Subgroup G) :
+    SignedConnected (CoverTower.Edge E (originalVoltage T ends E presentation f) H) := by
+  let U : ∀ {a b}, E a b → G := fun {a b} => originalVoltage T ends E presentation f (a := a) (b := b)
+  have reach : ∀ x : V × (G ⧸ H), Nonempty (Path (OrientedEdge (E := CoverTower.Edge E U H))
+      (T.root,QuotientGroup.mk (1 : G)) x) := by
+    rintro ⟨v,q⟩
+    induction q using Quotient.inductionOn' with
+    | h g =>
+      obtain ⟨p,hp⟩ := exists_path_holonomy T ends E presentation f hf v g⁻¹
+      have he : (CoverTower.liftOrientedPath E U H p (QuotientGroup.mk (1 : G))).1 = QuotientGroup.mk g := by
+        rw [CoverTower.liftOriented_endpoint,hp,CoverTower.transport_mk]
+        simp
+      change Nonempty (Path (OrientedEdge (E := CoverTower.Edge E U H))
+        (T.root,QuotientGroup.mk (1 : G)) (v,QuotientGroup.mk g))
+      rw [← he]
+      exact ⟨(CoverTower.liftOrientedPath E U H p (QuotientGroup.mk (1 : G))).2⟩
+  intro x y
+  obtain ⟨p⟩ := reach x
+  obtain ⟨q⟩ := reach y
+  exact ⟨(reversePath p).append q⟩
+end SpanningTree
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.ConnectedImage
+variable {C G : Type*} [Group G] (f : C → G)
+abbrev Image := (FreeGroup.lift f).range
+noncomputable def generator (c : C) : Image f := (FreeGroup.lift f).rangeRestrict (FreeGroup.of c)
+lemma coe_generator (c : C) : (generator f c : G) = f c := by simp [generator]
+lemma lift_generator : FreeGroup.lift (generator f) = (FreeGroup.lift f).rangeRestrict := by
+  apply FreeGroup.ext_hom
+  intro c
+  simp only [FreeGroup.lift_apply_of,generator]
+lemma lift_surjective : Function.Surjective (FreeGroup.lift (generator f)) := by
+  rw [lift_generator]
+  exact (FreeGroup.lift f).rangeRestrict_surjective
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.ConnectedImage
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+open CategoryTheory
+universe u v w
+variable {V : Type u} (T : RootedTree V) {C : Type v} (ends : C → V × V)
+variable (E : V → V → Type w) (presentation : ∀ a b, E a b ≃ Edge T ends a b)
+lemma coe_image_voltage {G : Type*} [Group G] (f : C → G) {a b : V} (e : E a b) :
+    ((originalVoltage T ends E presentation (ConnectedImage.generator f) e : ConnectedImage.Image f) : G) =
+      originalVoltage T ends E presentation f e := by
+  unfold originalVoltage
+  cases presentation a b e <;> simp [generatorVoltage,ConnectedImage.coe_generator]
+lemma coe_image_holonomy {G : Type*} [Group G] (f : C → G) {a b : V}
+    (p : Path (OrientedEdge (E := E)) a b) :
+    ((Path.holonomy (orientedWeight (originalVoltage T ends E presentation (ConnectedImage.generator f))) p : ConnectedImage.Image f) : G) =
+      Path.holonomy (orientedWeight (originalVoltage T ends E presentation f)) p := by
+  induction p with
+  | refl a => rfl
+  | cons e p ih =>
+    simp only [Path.holonomy,Subgroup.coe_mul,ih]
+    congr 1
+    cases e <;> simp [orientedWeight,coe_image_voltage]
+
+/-- Restriction to the actual generated image gives connected levels without
+assuming ambient Magnus voltages generate the whole matrix group. -/
+theorem connected_separating_covering_tower [DecidableEq C]
+    (p : Path (OrientedEdge (E := E)) T.root T.root)
+    (hp : originalPathClass E p ≠ 𝟙 _) :
+    ∃ (n : ℕ) (target : Fin n → C)
+      (S : CoverTower.TwoSeries (ConnectedImage.Image (TruncatedMagnus.generator target))),
+      0 < S.length ∧
+      (∀ i, SignedConnected (CoverTower.Edge E
+        (originalVoltage T ends E presentation (ConnectedImage.generator (TruncatedMagnus.generator target)))
+        (S.subgroup i))) ∧
+      (∀ (i : Fin S.length) (v : V) (q : ConnectedImage.Image (TruncatedMagnus.generator target) ⧸ S.subgroup i.succ),
+        Nat.card {x : V × (ConnectedImage.Image (TruncatedMagnus.generator target) ⧸ S.subgroup i.castSucc) //
+          CoverTower.projectVertex (S.le_step i) x = (v,q)} = 2) ∧
+      ∀ q : ConnectedImage.Image (TruncatedMagnus.generator target) ⧸ S.subgroup 0,
+        (CoverTower.liftOrientedPath E
+          (originalVoltage T ends E presentation (ConnectedImage.generator (TruncatedMagnus.generator target)))
+          (S.subgroup 0) p q).1 ≠ q ∧
+        CoverTower.eraseOrientedPath E
+          (originalVoltage T ends E presentation (ConnectedImage.generator (TruncatedMagnus.generator target)))
+          (S.subgroup 0)
+          (CoverTower.liftOrientedPath E
+            (originalVoltage T ends E presentation (ConnectedImage.generator (TruncatedMagnus.generator target)))
+            (S.subgroup 0) p q).2 = p := by
+  obtain ⟨n,target,hs⟩ := original_magnus_separation T ends E presentation p hp
+  let f := TruncatedMagnus.generator target
+  let U : ∀ {a b}, E a b → ConnectedImage.Image f :=
+    fun {a b} => originalVoltage T ends E presentation (ConnectedImage.generator f) (a := a) (b := b)
+  have hu : Path.holonomy (orientedWeight U) p ≠ 1 := by
+    intro h
+    apply hs
+    have he := congrArg (fun g : ConnectedImage.Image f => (g : TruncatedMagnus.Group n)) h
+    change ((Path.holonomy (orientedWeight (originalVoltage T ends E presentation (ConnectedImage.generator f))) p : ConnectedImage.Image f) : TruncatedMagnus.Group n) = 1 at he
+    rw [coe_image_holonomy] at he
+    exact he
+  obtain ⟨S⟩ := CoverTower.exists_twoSeries (G := ConnectedImage.Image f)
+    ((TruncatedMagnus.isTwoGroup n).to_subgroup (FreeGroup.lift f).range)
+  refine ⟨n,target,S,S.length_pos_of_ne_one _ hu,?_,?_,?_⟩
+  · exact fun i => cover_connected T ends E presentation _ (ConnectedImage.lift_surjective f) (S.subgroup i)
+  · exact fun i v q => CoverTower.vertex_degree_two S i v q
+  intro q
+  constructor
+  · have hbottom : ∀ q : ConnectedImage.Image f ⧸ S.subgroup 0,
+        (CoverTower.liftOrientedPath E U (S.subgroup 0) p q).1 ≠ q := by
+      rw [S.first]
+      exact CoverTower.bottom_separates (OrientedEdge (E := E)) (orientedWeight U) p hu
+    exact hbottom q
+  · exact CoverTower.erase_liftOrientedPath _ _ _ p q
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+set_option backward.isDefEq.respectTransparency false
+open CategoryTheory
+universe u v
+variable {V : Type u} (E : V → V → Type v)
+def VertexCopy (V : Type u) := V
+instance : TopologicalSpace (VertexCopy V) := ⊥
+instance : DiscreteTopology (VertexCopy V) := ⟨rfl⟩
+def EdgeIndex := Σ a : V, Σ b : V, E a b
+instance : TopologicalSpace (EdgeIndex E) := ⊥
+instance : DiscreteTopology (EdgeIndex E) := ⟨rfl⟩
+abbrev Raw := VertexCopy V ⊕ (EdgeIndex E × unitInterval)
+inductive Glue : Raw E → Raw E → Prop where
+  | source (e : EdgeIndex E) : Glue (.inr (e,0)) (.inl e.1)
+  | target (e : EdgeIndex E) : Glue (.inr (e,1)) (.inl e.2.1)
+def Realization := Quot (Glue E)
+instance : TopologicalSpace (Realization E) := inferInstanceAs (TopologicalSpace (Quot (Glue E)))
+def vertex (a : V) : Realization E := Quot.mk _ (.inl a)
+def edgePoint {a b : V} (e : E a b) (t : unitInterval) : Realization E :=
+  Quot.mk _ (.inr (⟨a,b,e⟩,t))
+lemma continuous_edgePoint {a b : V} (e : E a b) : Continuous (edgePoint E e) :=
+  continuous_quot_mk.comp (continuous_inr.comp (continuous_const.prodMk continuous_id))
+def edgePath {a b : V} (e : E a b) : _root_.Path (vertex E a) (vertex E b) where
+  toFun := edgePoint E e
+  continuous_toFun := continuous_edgePoint E e
+  source' := Quot.sound (Glue.source ⟨a,b,e⟩)
+  target' := Quot.sound (Glue.target ⟨a,b,e⟩)
+
+def edgeFunctor : SpanningTree.SourceVertex E ⥤q FundamentalGroupoid (Realization E) where
+  obj a := .mk (vertex E a)
+  map e := Path.Homotopic.Quotient.mk (edgePath E e)
+noncomputable def comparison : Quiver.FreeGroupoid (SpanningTree.SourceVertex E) ⥤
+    FundamentalGroupoid (Realization E) := Quiver.FreeGroupoid.lift (edgeFunctor E)
+lemma comparison_edge {a b : V} (e : E a b) :
+    (comparison E).map ((Quiver.FreeGroupoid.of (SpanningTree.SourceVertex E)).map e) =
+      Path.Homotopic.Quotient.mk (edgePath E e) := by
+  exact Prefunctor.congr_hom (Quiver.FreeGroupoid.lift_spec (edgeFunctor E)) e
+
+noncomputable def originalLoopMap (root : V) : SpanningTree.OriginalLoop E root →*
+    (FundamentalGroup (Realization E) (vertex E root))ᵐᵒᵖ where
+  toFun p := MulOpposite.op ((comparison E).map p.hom)
+  map_one' := by
+    apply MulOpposite.unop_injective
+    exact (comparison E).map_id _
+  map_mul' p q := by
+    apply MulOpposite.unop_injective
+    exact (comparison E).map_comp p.hom q.hom
+
+def orientedPath {a b : V} : OrientedEdge (E := E) a b → _root_.Path (vertex E a) (vertex E b)
+  | .forward e => edgePath E e
+  | .backward e => (edgePath E e).symm
+noncomputable def path {a b : V} : Path (OrientedEdge (E := E)) a b → _root_.Path (vertex E a) (vertex E b)
+  | .refl a => _root_.Path.refl (vertex E a)
+  | .cons e p => (orientedPath E e).trans (path p)
+lemma comparison_oriented {a b : V} (e : OrientedEdge (E := E) a b) :
+    (comparison E).map (SpanningTree.originalOrientedClass E e) =
+      Path.Homotopic.Quotient.mk (orientedPath E e) := by
+  cases e with
+  | forward e => exact comparison_edge E e
+  | backward e =>
+    rw [SpanningTree.originalOrientedClass,Functor.map_inv,← Groupoid.inv_eq_inv,comparison_edge]
+    rfl
+lemma comparison_path {a b : V} (p : Path (OrientedEdge (E := E)) a b) :
+    (comparison E).map (SpanningTree.originalPathClass E p) =
+      Path.Homotopic.Quotient.mk (path E p) := by
+  induction p with
+  | refl a => exact (comparison E).map_id _
+  | cons e p ih =>
+    rw [SpanningTree.originalPathClass,Functor.map_comp,comparison_oriented,ih]
+    rfl
+lemma path_backtrack_homotopic {a b : V} (e : E a b) :
+    (path E (backtrack e)).Homotopic (_root_.Path.refl (vertex E a)) := by
+  apply _root_.Path.Homotopic.Quotient.exact
+  rw [← comparison_path]
+  have h : SpanningTree.originalPathClass E (backtrack e) = 𝟙 _ := by
+    simp [SpanningTree.originalPathClass,SpanningTree.originalOrientedClass,backtrack]
+  rw [h,CategoryTheory.Functor.map_id]
+  rfl
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+open CategoryTheory
+universe u v w z
+variable {V : Type u} (E : V → V → Type v)
+@[simp] lemma edgePoint_zero {a b : V} (e : E a b) : edgePoint E e 0 = vertex E a :=
+  (edgePath E e).source
+@[simp] lemma edgePoint_one {a b : V} (e : E a b) : edgePoint E e 1 = vertex E b :=
+  (edgePath E e).target
+
+noncomputable def vertexRetraction : Realization E → V := by
+  classical
+  refine Quot.lift (fun p => match p with
+    | .inl v => v
+    | .inr (e,t) => if t = 1 then e.2.1 else e.1) ?_
+  intro a b h
+  cases h with
+  | source e => simp
+  | target e => simp
+lemma vertex_injective : Function.Injective (vertex E) :=
+  (show Function.LeftInverse (vertexRetraction E) (vertex E) from fun _ => rfl).injective
+
+def initialIntervalPath (t : unitInterval) : _root_.Path (0 : unitInterval) t where
+  toFun u := ⟨(u : ℝ) * (t : ℝ), by
+    constructor
+    · exact mul_nonneg u.property.1 t.property.1
+    · calc
+        (u : ℝ) * t ≤ 1 * t := mul_le_mul_of_nonneg_right u.property.2 t.property.1
+        _ ≤ 1 := by simpa using t.property.2⟩
+  continuous_toFun := by fun_prop
+  source' := by ext; simp
+  target' := by ext; simp
+
+theorem pathConnected_of_signed (root : V) (h : SignedConnected E) :
+    PathConnectedSpace (Realization E) := by
+  have reach : ∀ x : Realization E, Joined (vertex E root) x := by
+    intro x
+    induction x using Quot.inductionOn with
+    | h r =>
+      cases r with
+      | inl v =>
+        obtain ⟨p⟩ := h root v
+        exact ⟨path E p⟩
+      | inr e =>
+        rcases e with ⟨⟨a,b,e⟩,t⟩
+        obtain ⟨p⟩ := h root a
+        have hi : Joined (edgePoint E e 0) (edgePoint E e t) :=
+          (show Joined (0 : unitInterval) t from ⟨initialIntervalPath t⟩).map (continuous_edgePoint E e)
+        change Joined (vertex E root) (edgePoint E e t)
+        exact (show Joined (vertex E root) (vertex E a) from ⟨path E p⟩).trans (by simpa only [edgePoint_zero] using hi)
+  exact ⟨⟨vertex E root⟩,fun x y => (reach x).symm.trans (reach y)⟩
+
+variable {W : Type w} (F : W → W → Type z) (φ : V → W)
+variable (ψ : ∀ {a b}, E a b → F (φ a) (φ b))
+def indexMap (e : EdgeIndex E) : EdgeIndex F := ⟨φ e.1,φ e.2.1,ψ e.2.2⟩
+def rawMap : Raw E → Raw F
+  | .inl v => .inl (φ v)
+  | .inr (e,t) => .inr (indexMap E F φ ψ e,t)
+lemma continuous_rawMap : Continuous (rawMap E F φ ψ) := by
+  apply continuous_sum_dom.mpr
+  constructor
+  · exact continuous_inl.comp continuous_of_discreteTopology
+  · have hi : Continuous (indexMap E F φ ψ) := continuous_of_discreteTopology
+    exact continuous_inr.comp ((hi.comp continuous_fst).prodMk continuous_snd)
+def map : Realization E → Realization F :=
+  Quot.map (rawMap E F φ ψ) (by
+    intro a b h
+    cases h with
+    | source e => exact Glue.source (indexMap E F φ ψ e)
+    | target e => exact Glue.target (indexMap E F φ ψ e))
+lemma continuous_map : Continuous (map E F φ ψ) :=
+  continuous_quot_map _ (continuous_rawMap E F φ ψ)
+@[simp] lemma map_vertex (v : V) : map E F φ ψ (vertex E v) = vertex F (φ v) := rfl
+@[simp] lemma map_edgePoint {a b : V} (e : E a b) (t : unitInterval) :
+    map E F φ ψ (edgePoint E e t) = edgePoint F (ψ e) t := rfl
+lemma map_edgePath {a b : V} (e : E a b) :
+    (edgePath E e).map (continuous_map E F φ ψ) = edgePath F (ψ e) := by
+  ext t
+  rfl
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+variable {G V : Type*} [Group G] [Finite G] (E : V → V → Type*) (U : ∀ {a b}, E a b → G)
+/-- The actual intervalwise continuous realization of the original-edge tower
+projection. No assertion of topological covering is hidden in this definition. -/
+def realizedProjection {H K : Subgroup G} (h : H ≤ K) :
+    Realization (CoverTower.Edge E U H) → Realization (CoverTower.Edge E U K) :=
+  map _ _ (CoverTower.projectVertex h) (fun e => CoverTower.projectEdge E U h e)
+lemma continuous_realizedProjection {H K : Subgroup G} (h : H ≤ K) :
+    Continuous (realizedProjection E U h) := continuous_map _ _ _ _
+@[simp] lemma realizedProjection_vertex {H K : Subgroup G} (h : H ≤ K) (x : V × (G ⧸ H)) :
+    realizedProjection E U h (vertex _ x) = vertex _ (CoverTower.projectVertex h x) := rfl
+@[simp] lemma realizedProjection_edgePoint {H K : Subgroup G} (h : H ≤ K)
+    {x y : V × (G ⧸ H)} (e : CoverTower.Edge E U H x y) (t : unitInterval) :
+    realizedProjection E U h (edgePoint _ e t) = edgePoint _ (CoverTower.projectEdge E U h e) t := rfl
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+universe u v w
+variable {V : Type u} (T : RootedTree V) {C : Type v} (ends : C → V × V)
+variable (E : V → V → Type w) (presentation : ∀ a b, E a b ≃ Edge T ends a b)
+theorem generated_cover_realization_pathConnected {G : Type*} [Group G] [Finite G]
+    (f : C → G) (H : Subgroup (ConnectedImage.Image f)) :
+    PathConnectedSpace (Geometric.Realization (CoverTower.Edge E
+      (originalVoltage T ends E presentation (ConnectedImage.generator f)) H)) :=
+  Geometric.pathConnected_of_signed _ (T.root,QuotientGroup.mk 1)
+    (cover_connected T ends E presentation _ (ConnectedImage.lift_surjective f) H)
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+universe u v w z
+variable {V : Type u} (E : V → V → Type v) {W : Type w} (F : W → W → Type z)
+variable (φ : V → W) (ψ : ∀ {a b}, E a b → F (φ a) (φ b))
+def mapOriented {a b : V} : OrientedEdge (E := E) a b → OrientedEdge (E := F) (φ a) (φ b)
+  | .forward e => .forward (ψ e)
+  | .backward e => .backward (ψ e)
+def mapPath {a b : V} : Path (OrientedEdge (E := E)) a b → Path (OrientedEdge (E := F)) (φ a) (φ b)
+  | .refl a => .refl (φ a)
+  | .cons e p => .cons (mapOriented E F φ ψ e) (mapPath p)
+set_option backward.isDefEq.respectTransparency false in
+lemma map_orientedPath {a b : V} (e : OrientedEdge (E := E) a b) :
+    (orientedPath E e).map (continuous_map E F φ ψ) = orientedPath F (mapOriented E F φ ψ e) := by
+  cases e with
+  | forward e => exact map_edgePath E F φ ψ e
+  | backward e =>
+    change (edgePath E e).symm.map (continuous_map E F φ ψ) = (edgePath F (ψ e)).symm
+    rw [← _root_.Path.map_symm,map_edgePath]
+set_option backward.isDefEq.respectTransparency false in
+lemma map_path {a b : V} (p : Path (OrientedEdge (E := E)) a b) :
+    (path E p).map (continuous_map E F φ ψ) = path F (mapPath E F φ ψ p) := by
+  induction p with
+  | refl a => rfl
+  | cons e p ih => simp only [path,mapPath,_root_.Path.map_trans,map_orientedPath,ih]
+
+variable {G : Type*} [Group G] [Finite G] (U : ∀ {a b}, E a b → G)
+lemma realizedProjection_path {H K : Subgroup G} (h : H ≤ K)
+    {x y : V × (G ⧸ H)} (p : Path (OrientedEdge (E := CoverTower.Edge E U H)) x y) :
+    (path _ p).map (continuous_realizedProjection E U h) =
+      path _ (CoverTower.projectOrientedPath E U h p) := by
+  rw [show (path _ p).map (continuous_realizedProjection E U h) =
+    (path _ p).map (continuous_map _ _ (CoverTower.projectVertex h) (fun e => CoverTower.projectEdge E U h e)) from rfl]
+  rw [map_path]
+  congr 1
+  induction p with
+  | refl x => rfl
+  | cons e p ih =>
+    simp only [mapPath,CoverTower.projectOrientedPath,ih]
+    congr 1
+    cases e <;> rfl
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+variable {V : Type*} (E : V → V → Type*) (root : V)
+lemma originalLoopMap_path (p : Path (OrientedEdge (E := E)) root root) :
+    originalLoopMap E root ⟨SpanningTree.originalPathClass E p⟩ =
+      MulOpposite.op (_root_.Path.Homotopic.Quotient.mk (path E p)) :=
+  congrArg MulOpposite.op (comparison_path E p)
+end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.Geometric
+
+namespace GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
+universe u v w
+variable {V : Type u} (T : RootedTree V) {C : Type v} (ends : C → V × V)
+variable (E : V → V → Type w) (presentation : ∀ a b, E a b ≃ Edge T ends a b)
+variable {G : Type*} [Group G] (f : C → G)
+def imageRegularVertex (x : V × ConnectedImage.Image f) : V × G := (x.1,x.2)
+lemma imageRegularVertex_injective : Function.Injective (imageRegularVertex (V := V) f) := by
+  intro x y h
+  exact Prod.ext (congrArg (@Prod.fst V G) h) (Subtype.ext (congrArg (@Prod.snd V G) h))
+noncomputable def imageRegularEdge {x y : V × ConnectedImage.Image f}
+    (e : VoltageCover.Edge E (originalVoltage T ends E presentation (ConnectedImage.generator f)) x y) :
+    VoltageCover.Edge E (originalVoltage T ends E presentation f)
+      (imageRegularVertex f x) (imageRegularVertex f y) :=
+  ⟨e.original,by
+    have h := congrArg (fun z : ConnectedImage.Image f => (z : G)) e.target_eq
+    simpa only [imageRegularVertex,Subgroup.coe_mul,coe_image_voltage] using h⟩
+lemma image_regular_endpoint {a b : V} (p : Path (OrientedEdge (E := E)) a b)
+    (g : ConnectedImage.Image f) :
+    (((VoltageCover.liftPath (OrientedEdge (E := E))
+      (orientedWeight (originalVoltage T ends E presentation (ConnectedImage.generator f))) p g).1 :
+        ConnectedImage.Image f) : G) =
+      (VoltageCover.liftPath (OrientedEdge (E := E))
+        (orientedWeight (originalVoltage T ends E presentation f)) p (g : G)).1 := by
+  rw [VoltageCover.lift_endpoint,VoltageCover.lift_endpoint,Subgroup.coe_mul,coe_image_holonomy]
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy.InverseEdgeVoltage.SpanningTree
