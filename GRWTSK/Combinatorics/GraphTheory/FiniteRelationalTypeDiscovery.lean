@@ -22,7 +22,10 @@ No neural, physical-spin, analytic-Weil, RH, or GRH inference is asserted.
 Comparison: finite separation is a finite-cover/partition-refinement argument,
 not a consequence of graph covering alone. Unlike endpoint-only observation,
 `pendingLoop` retains the complete ordered source history. The two-sheet lift
-itself can be observationally uninformative. A concrete infinite-inventory
+itself can be observationally uninformative. More generally, two source
+objects with the same original typed path cannot be assigned conflicting
+types by any deterministic sequence of spin-path observations.
+A concrete infinite-inventory
 countermodel is recorded below.
 -/
 
@@ -153,7 +156,7 @@ end FiniteSeparation
 section SpinSourceReturn
 
 variable {V : Type u} {E : V → V → Type v} {a : V}
-variable {P : Type w} [Fintype P]
+variable {P : Type w}
 variable {Kind : Type z} {Obs : Nat → Type t}
 
 /-- Source-indexed, stage-typed readout on the exact `pendingLoop` construction. -/
@@ -168,7 +171,7 @@ def spinReadout
     identified if an independent observation-separation witness is supplied.
     Every retry remains an exact lifting of its source path by
     `pendingLoop_recover` in the imported module. -/
-theorem finite_spin_type_discovery
+theorem finite_spin_type_discovery [Fintype P]
     (history : P → Path E a a)
     (typeOf : P → Kind)
     (observe : (n : Nat) →
@@ -391,6 +394,86 @@ theorem finite_spin_classifier_iff_eventual_separation
     typeOf (spinReadout history observe)
 
 end SpinClassificationCriterion
+
+/-!
+## Deterministic source-history obstruction for arbitrary edge families
+
+The input to the existing staged spin reader is solely `history p`.
+Every `pendingLoop` is a deterministic construction from that path.
+Consequently, equal original histories give identical observations at
+every stage, with no finiteness or Quiver assumption. A classifier
+correct at some finite prefix must be constant on these history fibers.
+
+This general obstruction is consumed by the source-tagged Quiver bridge.
+For a tagged multigraph, equality of complete chronological traces is
+a sufficient source of equal paths, but the obstruction itself does not
+depend on the choice of encoding, holonomy, or group coordinates.
+-/
+
+section DeterministicSpinSourceObstruction
+
+variable {V : Type u} {E : V → V → Type v} {a : V}
+variable {P : Type w} {Kind : Type z} {Obs : Nat → Type t}
+
+/-- Equal source histories produce equal observations at every spin stage.
+This statement applies to arbitrarily large source inventories. -/
+theorem spinReadout_eq_of_history_eq
+    (history : P → Path E a a)
+    (observe : (n : Nat) →
+      Path (iterEdge E n) (iterAnchor a n) (iterAnchor a n) → Obs n)
+    (p q : P) (heq : history p = history q) (n : Nat) :
+    spinReadout history observe n p =
+      spinReadout history observe n q := by
+  simp only [spinReadout, heq]
+
+/-- Equality survives every complete dependent observation prefix. -/
+theorem spinPrefix_eq_of_history_eq
+    (history : P → Path E a a)
+    (observe : (n : Nat) →
+      Path (iterEdge E n) (iterAnchor a n) (iterAnchor a n) → Obs n)
+    (p q : P) (heq : history p = history q) (N : Nat) :
+    observationPrefix (spinReadout history observe) N p =
+      observationPrefix (spinReadout history observe) N q := by
+  funext i
+  exact spinReadout_eq_of_history_eq history observe p q heq i.val
+
+/-- Every globally correct classifier must assign the same type to
+source objects sharing the exact history. The observer and horizon
+are arbitrary, but they cannot manufacture omitted source data. -/
+theorem spin_classifier_type_constant_on_history
+    (history : P → Path E a a) (typeOf : P → Kind)
+    (observe : (n : Nat) →
+      Path (iterEdge E n) (iterAnchor a n) (iterAnchor a n) → Obs n)
+    (N : Nat)
+    (classify : ((i : Fin (N + 1)) → Obs i.val) → Option Kind)
+    (hcorrect : ∀ r : P,
+      classify (observationPrefix (spinReadout history observe) N r) =
+        some (typeOf r))
+    (p q : P) (heq : history p = history q) :
+    typeOf p = typeOf q := by
+  exact classifier_correct_implies_type_constant
+    typeOf (spinReadout history observe) N classify hcorrect p q
+    (spinPrefix_eq_of_history_eq history observe p q heq N)
+
+/-- An impossible classifier specification is rejected immediately
+when different desired types share an identical original path. This
+no-go is independent of finite inventory and exact quiver codec choice. -/
+theorem no_finite_spin_classifier_of_same_history
+    (history : P → Path E a a) (typeOf : P → Kind)
+    (observe : (n : Nat) →
+      Path (iterEdge E n) (iterAnchor a n) (iterAnchor a n) → Obs n)
+    (p q : P) (heq : history p = history q)
+    (hdifferent : typeOf p ≠ typeOf q) :
+    ¬ ∃ N : Nat, ∃ classify :
+      (((i : Fin (N + 1)) → Obs i.val) → Option Kind),
+      ∀ r : P,
+        classify (observationPrefix (spinReadout history observe) N r) =
+          some (typeOf r) := by
+  rintro ⟨N, classify, hcorrect⟩
+  exact hdifferent (spin_classifier_type_constant_on_history
+    history typeOf observe N classify hcorrect p q heq)
+
+end DeterministicSpinSourceObstruction
 
 /-! The infinite source obstruction also excludes actual correct finite
 decoders, not just a common pair-separation horizon. -/
