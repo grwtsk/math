@@ -5,10 +5,14 @@ Local attribution: grwtsk contributors.
 The problem is to turn an imported theorem into a result that a local problem
 can apply. Module availability alone does not show that representations match,
 all joint hypotheses hold, the desired constants survive, or a proof is checked.
-This first wave adds24 source theorem candidates in eight subject-organized
-modules. They stay in native-version provider packages; no root dependency or
-import is promoted. Exact types are in the linked sources and exact provenance
-is in `adapters/consumer-integrations.json` and the canonical paper ledger.
+The recorded first wave introduced 24 source theorem candidates in eight
+subject-organized modules; that count is not a live census of later additions.
+The maintained source files live in the canonical MSC2020 `GRWTSK/` tree, with
+provider-package links retaining isolated native dependencies. No root dependency
+or import is promoted by this navigation. Exact types are in the linked sources;
+recorded provenance is in the [consumer integrations](../../../adapters/consumer-integrations.json)
+and [paper ledger](literature/reading-background/paper-to-formalization-references.md).
+Later source edits do not inherit the historical evidence or native statuses below.
 
 | Consumer | Mathematical move and intended use | Boundary |
 | --- | --- | --- |

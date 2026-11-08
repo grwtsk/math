@@ -5,6 +5,12 @@ Local attribution: grwtsk contributors. Source construction dated 2026-10-31.
 **SOURCE_CANDIDATE / COMPILATION_NOT_RUN / KERNEL_NOT_RUN / AXIOM_AUDIT_NOT_RUN.**
 The event/compositor prototype has separate finite Chromium observations. A browser test does not verify Lean, and a mathematical port type does not authorize workflow execution or source mutation.
 
+Current navigation scope: the direct file links for `RealShadowMomentPort.lean`,
+`OrderedMobiusResidueMoment.lean`, and `PrismaticCacheAnchor.lean` resolve in the
+maintained tree, but those files have no entry in the current static MSC2020
+source-layout manifest. These links supply locators, not a new classification
+record, source-equivalence check, or verification receipt.
+
 ## Mathematical object and exact boundaries
 
 A state space `State` carries a reversible transport `f`, specified inverse `f⁻¹`, involutive reflection `ρ` and a real-valued observation `s : State → ℝ`. The new `RealShadowMirror` record requires, rather than assumes by notation,
@@ -15,11 +21,11 @@ A state space `State` carries a reversible transport `f`, specified inverse `f�
 
 These equations give a dihedral-like real-shadow-preserving action. They are not general properties of every transform. The construction proves that `f⁻¹` also preserves the shadow and transports `f`, `f⁻¹` and `ρ` on the dependent fiber `s⁻¹(a)`. The existing `GRWTSK.Topology.PortFiber.ofFunctions` supplies identity and composition of these typed fibers. A reflection port retains the exact `SourceIdentity` and `invalidationKey` through the existing `SourceBoundPort` interface. Each selected typed carrier can carry a `PrimeTypedFiber` with an actual `Nat.Prime` witness and source/declaration/universe identity; a prime index is an address, not a replacement for Lean's dependent type.
 
-Primary new source: `GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/RealShadowMomentPort.lean` in namespace `GRWTSK.FoundationsLogicAndTypeTheory.RealShadowMomentPort`. Source dependency: `GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean`, whose previous inspected blob was `e51c1b52fede0d883b147ffd196c0efe184a87d8` on the current Math baseline. A true current compilation is still required to establish these declarations and their complete imported closure.
+Primary new source: [`GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/RealShadowMomentPort.lean`](../../../../GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/RealShadowMomentPort.lean) in namespace `GRWTSK.FoundationsLogicAndTypeTheory.RealShadowMomentPort`. Source dependency: [`GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean`](../../../../GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/PortFiberBasic.lean), whose previous inspected blob was `e51c1b52fede0d883b147ffd196c0efe184a87d8` on the recorded Math baseline. A true current compilation is still required to establish these declarations and their complete imported closure.
 
 ## Signed ordered Möbius pair counting
 
-The companion `GRWTSK/NumberTheory/MultiplicativeNumberTheory/OrderedMobiusResidueMoment.lean` models a *specified* coefficient supplier `mu : ℕ → ℝ` and specified pickup response `pickup : ℕ → ℝ`, retaining the exact product
+The companion [`GRWTSK/NumberTheory/MultiplicativeNumberTheory/OrderedMobiusResidueMoment.lean`](../../../../GRWTSK/NumberTheory/MultiplicativeNumberTheory/OrderedMobiusResidueMoment.lean) models a *specified* coefficient supplier `mu : ℕ → ℝ` and specified pickup response `pickup : ℕ → ℝ`, retaining the exact product
 
 `mu(m) * mu(n) * pickup(m) * pickup(n)`
 
@@ -29,19 +35,19 @@ for every ordered off-diagonal pair `1 ≤ m,n ≤ N`, `m ≠ n`. The residue `a
 
 Existing relevant source anchors inspected:
 
-- `GRWTSK/NumberTheory/ExactPickupWeightsForTheOriginalSignedMeterEdition1.lean`, containing `atomPickup`, `pickupWeight`, `realMoebius` usage and `diagonalEnergy`; it does not furnish this new browser implementation/refinement.
-- `GRWTSK/NumberTheory/FareyResidueChannelDecomposition.lean`: exact residue strata retain unit **and nonunit** classes. An additive/multiplicative transport must keep nonunit residuals or produce a proved reduction.
-- `GRWTSK/NumberTheory/MultiplicativeNumberTheory/FiniteModularResidueFibers.lean`: modular weighted sums are exact filtered finite sums, with `SOURCE_DRAFT / NOT_RUN` in the inspected source.
-- `GRWTSK/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean`: signed residuals are canonical endpoint differences, not free cancellation allowances.
-- `GRWTSK/GroupTheoryAndGeneralizations/AutomorphismAction.lean`: equivariance is an explicit commutation condition, not a label.
-- `GRWTSK/Combinatorics/GlobalReflection.lean` and `GRWTSK/Combinatorics/BoundedPrismaticDiffusion.lean`: the former reflects explicit finite typed dependencies; the latter requires all legality gates before diffusion enters the admitted network.
-- `GRWTSK/Combinatorics/FinitePrimeState.lean`: prime-local fibers carry primality and typed payload rather than using a bare hash in place of mathematical data.
+- [`GRWTSK/NumberTheory/ExactPickupWeightsForTheOriginalSignedMeterEdition1.lean`](../../../../GRWTSK/NumberTheory/ExactPickupWeightsForTheOriginalSignedMeterEdition1.lean), containing `atomPickup`, `pickupWeight`, `realMoebius` usage and `diagonalEnergy`; it does not furnish this new browser implementation/refinement.
+- [`GRWTSK/NumberTheory/FareyResidueChannelDecomposition.lean`](../../../../GRWTSK/NumberTheory/FareyResidueChannelDecomposition.lean): exact residue strata retain unit **and nonunit** classes. An additive/multiplicative transport must keep nonunit residuals or produce a proved reduction.
+- [`GRWTSK/NumberTheory/MultiplicativeNumberTheory/FiniteModularResidueFibers.lean`](../../../../GRWTSK/NumberTheory/MultiplicativeNumberTheory/FiniteModularResidueFibers.lean): modular weighted sums are exact filtered finite sums, with `SOURCE_DRAFT / NOT_RUN` in the inspected source.
+- [`GRWTSK/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean`](../../../../GRWTSK/GroupTheoryAndGeneralizations/FiniteResidualTelescope.lean): signed residuals are canonical endpoint differences, not free cancellation allowances.
+- [`GRWTSK/GroupTheoryAndGeneralizations/AutomorphismAction.lean`](../../../../GRWTSK/GroupTheoryAndGeneralizations/AutomorphismAction.lean): equivariance is an explicit commutation condition, not a label.
+- [`GRWTSK/Combinatorics/GlobalReflection.lean`](../../../../GRWTSK/Combinatorics/GlobalReflection.lean) and [`GRWTSK/Combinatorics/BoundedPrismaticDiffusion.lean`](../../../../GRWTSK/Combinatorics/BoundedPrismaticDiffusion.lean): the former reflects explicit finite typed dependencies; the latter requires all legality gates before diffusion enters the admitted network.
+- [`GRWTSK/Combinatorics/FinitePrimeState.lean`](../../../../GRWTSK/Combinatorics/FinitePrimeState.lean): prime-local fibers carry primality and typed payload rather than using a bare hash in place of mathematical data.
 
 None of these inspected sources demonstrates that a DOM virtualizer refines its Lean mathematics. That is a separate exact representation theorem and runtime test obligation. The local prototype computes actual finite Möbius values by trial factorization only for its small displayed range; it does not compute or bound the analytic signed pickup cross-energy needed by an RH return.
 
 ## Pure cache/viewport compaction law
 
-`GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PrismaticCacheAnchor.lean` adds a dependent `Representative` that stores the full value, a prismatic summary and the **required equality** between summary and encoding. `restore_compact` recovers the original value exactly; `viewportOffset_rebase` proves in integer coordinates that removing height before the anchor from both `documentTop` and `scrollTop` preserves the visible offset. The browser implementation must still be shown to refine the model, especially under variable font measurement, focus, accessibility navigation, missing backing data and interruptions. This source remains `NOT_RUN` for Lean.
+[`GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PrismaticCacheAnchor.lean`](../../../../GRWTSK/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/DigitalMathematicsLibrariesAndRepositories/PrismaticCacheAnchor.lean) adds a dependent `Representative` that stores the full value, a prismatic summary and the **required equality** between summary and encoding. `restore_compact` recovers the original value exactly; `viewportOffset_rebase` proves in integer coordinates that removing height before the anchor from both `documentTop` and `scrollTop` preserves the visible offset. The browser implementation must still be shown to refine the model, especially under variable font measurement, focus, accessibility navigation, missing backing data and interruptions. This source remains `NOT_RUN` for Lean.
 
 ## UI mathematical correspondence and caching contracts
 

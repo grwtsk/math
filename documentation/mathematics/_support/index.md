@@ -14,6 +14,19 @@
 - [Filename conventions](reference/standard-mathematical-source-names.md) and [current Lean source folders](../complete-source-index.md).
 - [Historical page inventory](reference/library-pages.md), [publication contract](reference/complete-publication-contract.md), and [source intake](reference/source-intake.md).
 
+## Mathematical contracts and source comparisons
+
+- [Adapted mathematical consumers](reference/adapted-mathematics-consumers.md): source comparisons, native environments, and missing bridges.
+- [Claim-bound diagnostics](reference/mathematical-diagnostics.md) and [deterministic formalization contracts](reference/deterministic-formalization.md): pure source contracts with separately scoped operational observations.
+- [Source preservation and specialization](reference/source-preservation-and-specialization.md): exact original hypotheses and replacement obligations.
+- [K₀-shaped collision and finite diffusion](reference/k-zero-radical-collision-weighted-type-diffusion.md), and [real-shadow moment ports](reference/real-shadow-prismatic-moment-ports.md): mathematical objects and explicit transfer limits.
+
+## Historical reference records
+
+- [Selected result families](reference/results.md) and [result occurrences](reference/result-occurrences.md).
+- [Namespace import snapshot](reference/namespace-dependency-map.md) and [result-publication contract](reference/result-publication-contract.md).
+- [Historical artifact registry](reference/legacy-artifacts.md): exact identities and unresolved readback, separate from current verification.
+
 ## Retained generated snapshot
 
 The generated navigation below describes its pinned publication, not current coverage. Its counts and score availability retain their original scope. The source-folder index now opens maintained Lean directories rather than every declaration article.

@@ -11,6 +11,10 @@ dependents, and a provider-first traversal. Source availability and matching
 bytes do not establish compilation, fresh kernel checking, or axiom acceptance;
 those facets remain `NOT_RUN` for this preservation target.
 
+The target’s paths and dependency order are pinned source records. Resolve later
+source relocations through the [MSC2020 layout](../../../taxonomy/msc2020/README.md),
+including `followup_files`; a moved source does not inherit a historical check.
+
 ## How to traverse the sources
 
 Begin with a consumer below, open its provider in the target's `sources` list,
