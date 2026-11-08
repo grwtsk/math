@@ -9,7 +9,9 @@ import Mathlib.Analysis.InnerProductSpace.PiL2
 /-!
 # Euclidean realization and spectral differential of the Alexander incidence core
 
-Consumer: PrimeKnotAlexanderSpectralTriple. The ordinary finite function
+Source: [finite incidence core](PrimeKnotAlexanderSpectralTriple.lean).
+`spectralDifferential_leibniz` reuses its `commutator_leibniz`; the
+Euclidean realization below supplies the actual L2 carrier. The ordinary finite function
 space has the product/sup norm by default; the actual L2 Hilbert norm must
 instead come from EuclideanSpace. The original algebraic source distinguishes
 Alexander polynomial divisibility from knot isotopy.
@@ -104,7 +106,7 @@ theorem dirac_complex_pairing_selfAdjoint (s : Source Prime Knot)
             star ((edgeWeight s i j : ℂ) * ξ j) * η i := by
               apply Finset.sum_congr rfl
               intro i _
-              rw [map_sum, Finset.sum_mul]
+              rw [star_sum, Finset.sum_mul]
     _ = ∑ i : Vertex Prime Knot,
           ∑ j : Vertex Prime Knot,
             star (ξ j) * (edgeWeight s j i : ℂ) * η i := by
@@ -139,7 +141,7 @@ theorem euclideanDirac_selfAdjoint (s : Source Prime Knot)
     inner ℂ (euclideanDirac s ξ) η =
       inner ℂ ξ (euclideanDirac s η) := by
   rw [euclidean_inner_eq_pairing, euclidean_inner_eq_pairing]
-  simpa [euclideanDirac] using
+  exact
     (dirac_complex_pairing_selfAdjoint s
       (fun i => ξ i) (fun i => η i))
 
@@ -149,7 +151,7 @@ theorem euclideanAct_star (a : Algebra Prime Knot)
     inner ℂ (euclideanAct a ξ) η =
       inner ℂ ξ (euclideanAct (fun i => star (a i)) η) := by
   rw [euclidean_inner_eq_pairing, euclidean_inner_eq_pairing]
-  simpa [euclideanAct] using
+  exact
     (act_star a (fun i => ξ i) (fun i => η i))
 
 /-- Algebraic noncommutative differential, recovering the original operator. -/
@@ -169,12 +171,7 @@ theorem spectralDifferential_leibniz (s : Source Prime Knot)
     spectralDifferential s (fun i => a i * b i) ξ =
       (fun i => spectralDifferential s a (act b ξ) i +
         act a (spectralDifferential s b ξ) i) := by
-  funext i
-  simp only [spectralDifferential, commutator_formula, act]
-  rw [Finset.mul_sum, ← Finset.sum_add_distrib]
-  apply Finset.sum_congr rfl
-  intro j _
-  ring
+  exact commutator_leibniz s a b ξ
 
 /-- A point-observable differential detects precisely the source incidence. -/
 theorem linked_iff_point_differential (s : Source Prime Knot)

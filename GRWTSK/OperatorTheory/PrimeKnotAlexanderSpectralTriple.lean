@@ -49,6 +49,12 @@ knot isotopy is made; the vertex labels are essential. Its countable
 
 ## Navigation and analytical scope
 
+The [Euclidean realization](PrimeKnotAlexanderEuclideanDifferential.lean)
+provides the actual finite L2 Hilbert carrier and consumes the product rule
+as `spectralDifferential_leibniz`. The plain function carrier below by itself
+uses the product norm, so its name `Hilbert` is not a Hilbert-norm certificate.
+
+
 `act_mul` supplies the algebra representation law; `commutator_formula`
 identifies the differential entries; `commutator_leibniz` proves their
 product rule. Its primary argument is the scalar identity
