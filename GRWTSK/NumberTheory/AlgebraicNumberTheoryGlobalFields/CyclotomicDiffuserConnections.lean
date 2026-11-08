@@ -170,7 +170,7 @@ def frobeniusHeatKernel (u : UnitFiber n) :
       · intro h
         calc
           target = u⁻¹ * (u * target) := by group
-          _ = u⁻¹ * source := by rw [h]
+          _ = u⁻¹ * source := by rw [← h]
       · intro h
         calc
           source = u * (u⁻¹ * source) := by group
@@ -201,7 +201,7 @@ def frobeniusHeatHom :
   map := id
   step_map := by
     intro u heat
-    exact frobeniusHeatKernel_step u heat
+    simpa using frobeniusHeatKernel_step u heat
 
 /-- The exact Markov/arithmetic equality propagates through every ordered word. -/
 theorem frobeniusHeat_evolve_eq_pullback
