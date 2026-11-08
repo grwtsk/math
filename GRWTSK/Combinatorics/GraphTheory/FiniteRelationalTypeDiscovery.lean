@@ -727,6 +727,238 @@ theorem finiteSourceClassifier_eq_prefixClassifier
         typeOf readout N signature).mpr hrep
     exact he.trans hc.symm
 
+
+/-!
+## Conflict-aware finite observations
+
+The earlier `scanPrefix` is intentionally a first-match lookup. If two
+actual source identities carry the same observed signature but different
+intended labels, its result can depend on enumeration order. In this
+section a separate finite-list classifier preserves the original source
+carrier and distinguishes three cases:
+
+* `none` — no source in the supplied list has this signature;
+* `some none` — at least two matching sources have different labels;
+* `some (some k)` — the signature is observed and every matching
+  source has exactly the label `k`.
+
+The outer `Option` signals observational coverage; the inner
+`Option` signals consistency. This is not an alternative mathematical
+notion of a source type and does not discard either conflicting source.
+Type-label equality and full-signature equality must both be decidable
+for this scan to execute.
+
+Mathematical disposition: every property below is proved by complete
+finite-list induction and the existing source-preserving `scanPrefix`
+witness theorems. The conflict example is the hostile boundary to
+first-match classification. Neither a general computable sensor nor
+finite-horizon separation is inferred from these declarations.
+-/
+
+/-- Verify all matching source labels against a given label, with no
+source equality or enumeration-order assumption. -/
+def allMatchingAgree (typeOf : P → Kind)
+    (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    [DecidableEq Kind] :
+    List P → ((i : Fin (N + 1)) → Obs i.val) → Kind → Bool
+  | [], _, _ => true
+  | p :: ps, signature, k =>
+      decide (observationPrefix readout N p = signature → typeOf p = k) &&
+        allMatchingAgree typeOf readout N ps signature k
+
+/-- The Boolean scan checks ALL original source identities in its
+list, not only the first matching representative. -/
+theorem allMatchingAgree_iff (typeOf : P → Kind)
+    (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    [DecidableEq Kind]
+    (sources : List P) (signature : (i : Fin (N + 1)) → Obs i.val)
+    (k : Kind) :
+    allMatchingAgree typeOf readout N sources signature k = true ↔
+      ∀ p : P, p ∈ sources →
+        observationPrefix readout N p = signature → typeOf p = k := by
+  induction sources with
+  | nil =>
+      simp [allMatchingAgree]
+  | cons head tail ih =>
+      constructor
+      · intro h p hmem hsig
+        have hparts :
+            decide (observationPrefix readout N head = signature →
+              typeOf head = k) = true ∧
+              allMatchingAgree typeOf readout N tail signature k = true := by
+          simpa only [allMatchingAgree, Bool.and_eq_true] using h
+        rcases List.mem_cons.mp hmem with heq | htail
+        · subst p
+          have hhead :
+              observationPrefix readout N head = signature →
+                typeOf head = k := by
+            simpa only [decide_eq_true_eq] using hparts.1
+          exact hhead hsig
+        · exact (ih.mp hparts.2) p htail hsig
+      · intro hall
+        have hhead :
+            observationPrefix readout N head = signature →
+              typeOf head = k := by
+          intro hsig
+          exact hall head (by simp) hsig
+        have htail : ∀ p : P, p ∈ tail →
+            observationPrefix readout N p = signature →
+              typeOf p = k := by
+          intro p hmem hsig
+          exact hall p (by simp [hmem]) hsig
+        simp only [allMatchingAgree, Bool.and_eq_true, decide_eq_true_eq]
+        exact ⟨hhead, ih.mpr htail⟩
+
+/-- A three-way, fully source-backed audit of a finite signature.
+It never silently returns a chosen kind from contradictory examples. -/
+def auditedPrefix (typeOf : P → Kind)
+    (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    [DecidableEq Kind]
+    (sources : List P)
+    (signature : (i : Fin (N + 1)) → Obs i.val) :
+    Option (Option Kind) :=
+  match scanPrefix typeOf readout N sources signature with
+  | none => none
+  | some k =>
+      if allMatchingAgree typeOf readout N sources signature k = true then
+        some (some k)
+      else some none
+
+/-- An unobserved signature is distinct from a contradictory one. -/
+theorem auditedPrefix_none_iff_unobserved (typeOf : P → Kind)
+    (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    [DecidableEq Kind]
+    (sources : List P) (signature : (i : Fin (N + 1)) → Obs i.val) :
+    auditedPrefix typeOf readout N sources signature = none ↔
+      ¬ ∃ p : P, p ∈ sources ∧
+        observationPrefix readout N p = signature := by
+  rw [← scanPrefix_none_iff typeOf readout N sources signature]
+  unfold auditedPrefix
+  cases hscan : scanPrefix typeOf readout N sources signature with
+  | none => simp [hscan]
+  | some k =>
+      by_cases hgood :
+          allMatchingAgree typeOf readout N sources signature k = true
+      · simp [hscan, hgood]
+      · simp [hscan, hgood]
+
+/-- A certified label has both a real matching source witness and the
+stronger property that EVERY matching listed source has that label. -/
+theorem auditedPrefix_classified_sound (typeOf : P → Kind)
+    (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    [DecidableEq Kind]
+    (sources : List P) (signature : (i : Fin (N + 1)) → Obs i.val)
+    (k : Kind)
+    (hk : auditedPrefix typeOf readout N sources signature =
+      some (some k)) :
+    (∃ p : P, p ∈ sources ∧
+      observationPrefix readout N p = signature ∧ typeOf p = k) ∧
+    (∀ p : P, p ∈ sources →
+      observationPrefix readout N p = signature → typeOf p = k) := by
+  unfold auditedPrefix at hk
+  cases hscan : scanPrefix typeOf readout N sources signature with
+  | none =>
+      simp [hscan] at hk
+  | some c =>
+      by_cases hgood :
+          allMatchingAgree typeOf readout N sources signature c = true
+      · have hc : c = k := by
+          simpa [hscan, hgood] using hk
+        subst k
+        exact ⟨scanPrefix_has_source typeOf readout N sources
+          signature c hscan,
+          (allMatchingAgree_iff typeOf readout N sources signature c).mp
+            hgood⟩
+      · simp [hscan, hgood] at hk
+
+/-- The ambiguous result has an exact counterexample certificate:
+two actual listed sources have the SAME complete signature but
+DIFFERENT intended kinds. Conversely any such pair is detected. -/
+theorem auditedPrefix_ambiguous_iff (typeOf : P → Kind)
+    (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    [DecidableEq Kind]
+    (sources : List P) (signature : (i : Fin (N + 1)) → Obs i.val) :
+    auditedPrefix typeOf readout N sources signature = some none ↔
+      ∃ p : P, p ∈ sources ∧ ∃ q : P, q ∈ sources ∧
+        observationPrefix readout N p = signature ∧
+        observationPrefix readout N q = signature ∧
+        typeOf p ≠ typeOf q := by
+  classical
+  constructor
+  · intro hamb
+    unfold auditedPrefix at hamb
+    cases hscan : scanPrefix typeOf readout N sources signature with
+    | none =>
+        simp [hscan] at hamb
+    | some k =>
+        by_cases hgood :
+            allMatchingAgree typeOf readout N sources signature k = true
+        · simp [hscan, hgood] at hamb
+        · have hnall : ¬ ∀ p : P, p ∈ sources →
+              observationPrefix readout N p = signature →
+                typeOf p = k := by
+            intro hall
+            exact hgood ((allMatchingAgree_iff typeOf readout N
+              sources signature k).mpr hall)
+          have hbad : ∃ q : P, q ∈ sources ∧
+              observationPrefix readout N q = signature ∧
+                typeOf q ≠ k := by
+            by_contra hn
+            apply hnall
+            intro q hmem hsig
+            by_contra hneq
+            exact hn ⟨q, hmem, hsig, hneq⟩
+          obtain ⟨p, hp, hps, hpk⟩ :=
+            scanPrefix_has_source typeOf readout N sources
+              signature k hscan
+          obtain ⟨q, hq, hqs, hqk⟩ := hbad
+          exact ⟨p, hp, q, hq, hps, hqs,
+            fun heq => hqk (heq.symm.trans hpk)⟩
+  · rintro ⟨p, hp, q, hq, hps, hqs, hneq⟩
+    cases hscan : scanPrefix typeOf readout N sources signature with
+    | none =>
+        have hmissing := (scanPrefix_none_iff typeOf readout N
+          sources signature).mp hscan
+        exact False.elim (hmissing ⟨p, hp, hps⟩)
+    | some k =>
+        have hbad :
+            ¬ allMatchingAgree typeOf readout N sources signature k =
+              true := by
+          intro hgood
+          have hall := (allMatchingAgree_iff typeOf readout N
+            sources signature k).mp hgood
+          exact hneq ((hall p hp hps).trans (hall q hq hqs).symm)
+        simp [auditedPrefix, hscan, hbad]
+
+/-- On an observationally consistent list, the audit returns the
+unique source kind, never the ambiguity marker. -/
+theorem auditedPrefix_correct (typeOf : P → Kind)
+    (readout : (n : Nat) → P → Obs n) (N : Nat)
+    [DecidableEq ((i : Fin (N + 1)) → Obs i.val)]
+    [DecidableEq Kind]
+    (sources : List P)
+    (hconstant : ∀ p q : P,
+      observationPrefix readout N p = observationPrefix readout N q →
+      typeOf p = typeOf q)
+    (p : P) (hmem : p ∈ sources) :
+    auditedPrefix typeOf readout N sources
+      (observationPrefix readout N p) = some (some (typeOf p)) := by
+  have hscan := scanPrefix_correct typeOf readout N sources
+    hconstant p hmem
+  have hgood :
+      allMatchingAgree typeOf readout N sources
+        (observationPrefix readout N p) (typeOf p) = true :=
+    (allMatchingAgree_iff typeOf readout N sources
+      (observationPrefix readout N p) (typeOf p)).mpr
+        (fun q _ hsig => hconstant q p hsig)
+  simp [auditedPrefix, hscan, hgood]
+
 end EnumerablePartialClassification
 
 /-! The infinite source obstruction also excludes actual correct finite

@@ -1,0 +1,63 @@
+{
+  "schema": "GRWTSK.Chi3RadiusFourPrimeFreeLeakage/1",
+  "attribution": "grwtsk contributors",
+  "actual_source": "grwtsk/math; original primitive nonprincipal chi3, q=3, parity 1, T=4, physical Lebesgue L2, all 458 native prime powers",
+  "source_files": [
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourSixteenShells.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourHighTail.lean",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourPrimeFreeStability.lean"
+  ],
+  "base_source_revision": "5adbab60a931994cdce3077c573c73311224fbe5",
+  "math_scope": "For any delta_j in [0,1/1000000], g=1_{S_delta} f, h=f-g and the original admissible real odd radius-four f",
+  "prime_source_normalization": "-2 sum_{n=p^e<=2980,p != 3} (log(p)/sqrt(n)) chi3(n) Re(C_f(log(n)))",
+  "original_unramified_prime_power_count": 458,
+  "independently_recomputed_all_atom_halfmass_upper": "105305132271302/1000000000000",
+  "used_halfmass_upper": "106",
+  "gamma_jump_interval": "[1/1048576,1/16-1/1048576-1/1000000]",
+  "gamma_interval_double_mass_lower": "290947153/28311552",
+  "conductor_constant_lower": "-6/5",
+  "sqrt2_lower": "7/5",
+  "signed_prime_leakage_bound": "-P4(f)>=-212*(2*||g||*||h||+||h||^2)",
+  "full_gamma_leakage_bound": "Gamma1(f)>=(290947153/28311552)/2*(7/5-2/d)^2*||g||^2 whenever ||h||<=||g||/d",
+  "mass_return": "||f||^2=||g||^2+||h||^2",
+  "tiers": [
+    {
+      "d": 52,
+      "condition": "||h||<=||g||/52",
+      "whole_source_floor": "Q4(f)>=(1/16)*||f||^2",
+      "strict_margin_in_units_of_g_squared": "3202501993/106325606400"
+    },
+    {
+      "d": 56,
+      "condition": "||h||<=||g||/56",
+      "whole_source_floor": "Q4(f)>=(1/2)*||f||^2",
+      "strict_margin_in_units_of_g_squared": "248865396433/1109812838400"
+    },
+    {
+      "d": 64,
+      "condition": "||h||<=||g||/64",
+      "whole_source_floor": "Q4(f)>=(3/2)*||f||^2",
+      "strict_margin_in_units_of_g_squared": "40118654497/161061273600"
+    }
+  ],
+  "independent_checks": {
+    "all_458_original_prime_power_positive_upper_prices": "RECOMPUTED exact Python Fraction and integer sqrt at scale 1e9; total upper 105305132271302/1e12",
+    "three_margin_rationals": "RECOMPUTED exact Python Fraction and separate V8 BigInt rational equality/positivity",
+    "gamma_support_geometry": "source-analytic argument; no gamma domain claim for hard L2 projection",
+    "branch_reachability": "to be checked after publication"
+  },
+  "verification": {
+    "finite_rational_arithmetic": "PASS at supplied exact scope",
+    "original_analytic_Weil_source_return": "WRITTEN mathematical argument",
+    "Lean_elaboration": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "independent_human_review": "NOT_RUN"
+  },
+  "not_claimed": [
+    "Original all-radius-four PrimitiveStageLower chi3 j=3",
+    "Positivity on the whole edge H1 or the core-edge Schur complement",
+    "Zeta RH or all Dirichlet GRH",
+    "Preservation of full gamma-form domain by hard support projection"
+  ]
+}
