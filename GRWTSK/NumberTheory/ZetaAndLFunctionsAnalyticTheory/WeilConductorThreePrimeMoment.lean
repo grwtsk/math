@@ -89,12 +89,14 @@ J_b(f)=2<u,A_bu>, E(f)=2||u||^2, u=f|(0,3), exactly as in
 AnnulusSineEnclosure. It also supplies the B input for the improved
 ENTIRE endpoint-lift tail in WeilConductorThreeEndpointTail.
 
-This closes the absolute/integrated source-control leaf. It does not
-prove a lower spectral bound: the ACTUAL masked finite head remains
-signed and unproved. For a sine-only head N=10^26, (2) improves the
+This closes the absolute/integrated source-control leaf. By itself it
+does not prove a lower spectral bound. The subsequent domain-return
+proof in EndpointTail section 4A deduces the actual head sign from
+the separately audited written computer-assisted packet proof, without
+treating (2) as a sign. For a sine-only head N=10^26, (2) improves the
 mixed norm to <7/500 while the existing high norm remains <1/1000;
 a head margin 1/1000 would suffice by the final determinant guard.
-This is a conditional consumer, not a claimed passing head.
+This numeric criterion alone is a conditional consumer.
 
 Heat/coding interface: the analytic types here are the exact finite
 character/atom table, real trigonometric polynomial on [0,R], Lebesgue

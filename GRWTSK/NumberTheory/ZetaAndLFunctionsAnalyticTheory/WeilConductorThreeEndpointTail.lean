@@ -16,7 +16,9 @@ import Mathlib.Tactic
 /-!
 # An entire physical sine tail after endpoint-jet lifting
 
-This proves an ANALYTIC TAIL estimate, not the unproved finite head sign.
+This proves an ANALYTIC TAIL estimate. The head sign was initially open
+at the inspected baseline; section 4A records its later written
+computer-assisted return from the separately constructed packet proof.
 It uses the same `finiteAnnulusValue`, `criticalAnnulus`, `sourceMultiplier`
 and `spectralFilter` as ConductorThreeComplementTail. No source frequency,
 band mask, prime atom, gamma parity, pole convention or norm is changed.
@@ -49,7 +51,7 @@ assertion is used to reach a larger form domain.
 
 The existing relaxed annulus consumer needs J_b(f)>=-(6/25)E(f) for
 EVERY original Admissible input. By (1), this is A_b+(6/25)I>=0.
-The remaining head sign below is openly unproved.
+The initially missing head sign and its later evidence are separated below.
 
 ## 2. Construct actual endpoint polynomials
 
@@ -152,11 +154,12 @@ The rational equalities and comparisons in (7) are proved below.
 This constructs a full-tail estimate on the ORIGINAL annulus source;
 it is not a proposed interface whose missing field assumes that tail.
 
-The exact next missing lemma is the PHYSICAL finite-head inequality
+At the inspected baseline the exact missing lemma was the PHYSICAL inequality
 
  P(A_b+(6/25)I)P >= (1/250)P on S, dim S=7000000014.         (8)
 
-No instance of (8) is supplied. If (8) is proved with all entry and
+No explicit matrix certificate of dimension N+m is supplied. If (8) holds,
+with any entry and
 Gram errors, then for x=||Pu||, y=||Qu||, (6)--(7) give
 
  <u,(A_b+(6/25)I)u>
@@ -171,10 +174,90 @@ independent zeta cofinal stages remain required by
 `DirichletStageChain.dirichletGRH_of_source_chains`.
 
 The head dimension remains far beyond a practical matrix computation.
-The mathematical result claimed here is the proved complete tail,
-and the attempted full sign proof stops EXACTLY at (8). The endpoint
-mechanism improves the earlier 10^26 sine-only dimension; it does
-not establish any arithmetic sign, RH, or Dirichlet GRH.
+The endpoint mechanism itself improves the earlier 10^26 sine-only
+dimension and proves the complete tail, while leaving (8) unproved.
+The later source-return argument below obtains (8) without constructing
+that giant matrix. No RH or complete Dirichlet GRH is established.
+
+## 4A. Later packet proof supplies this head by exact domain return
+
+A concurrently authored WeilConductorThreeFiniteAnnulus source snapshot
+subsequently supplied a WRITTEN COMPUTER-ASSISTED proof of
+
+ finiteAnnulusValue f>=-a E(f), a=7262543/200000000,             (9)
+
+for EVERY original Admissible chi3 3 f. Its exact source hash, completed
+runtime-evidence scope and independent artifact/analytical audits are
+recorded in the accompanying static target. It is not a new Lean proof
+term, a fresh replay of every packet, or a lossless archive of the
+historical transient Gram factors. This paragraph consumes (9) at that
+declared evidence level; no header alone is treated as verification.
+
+Here is the COMPLETE domain-return proof from (9) to (8). For a real
+u in C_c^infinity(0,3), its odd zero extension f is globally smooth,
+compactly supported in (-3,3), and has finite physical L2 mass. Near
+zero the gamma shift energy is <=r^2||f'||_2^2; away from zero it is
+<=4||f||_2^2 and the parity-one kernel decays exponentially. Thus f
+really is Admissible chi3 3, including its gamma-integrability clause.
+By (1), (9) gives <u,A_bu>>=-a||u||^2.
+
+Such u are dense in real L2(0,3). The boundedness of A_b proved in
+section 1 gives, for u_n->u,
+ |<u_n,A_bu_n>-<u,A_bu>|
+ <=||A_b||*(||u_n||+||u||)*||u_n-u|| ->0.
+The norm squares also converge, so the lower bound holds for every
+real u. Since A_b has a real symmetric kernel, writing a complex
+u=v+iw makes its quadratic form the sum of those of v,w; the two
+imaginary mixed terms cancel by symmetry. The same bound therefore
+holds on the EXACT complex physical H used in this module.
+
+Consequently, for ANY physical orthogonal projection P, including
+the actual endpoint-augmented projection,
+
+ P(A_b+(6/25)I)P >= (6/25-a)P
+                   =(40737457/200000000)P > (1/250)P.        (10)
+
+This supplies (8) at written computer-assisted scope and tests the
+meeting point with all original domains, signs and quantifiers intact.
+The proof extends ONLY the bounded annulus operator. It does not
+silently extend the full unbounded gamma form or a weighted norm.
+
+There is no circular dependency: the packet source imports LowFilter,
+PhysicalPackets and RawSourceReturn, not this endpoint construction
+or BoundaryJets. It uses actual localized physical matrices and their
+complete tails, rather than assuming (8). Both routes share the
+original arithmetic source and existing explicit-formula ingredients.
+The packet proof already gives the original chi3 j=2 stage, so (10)
+is a genuine comparison/return lemma, not an independent second proof
+of that stage or GRH. The next chi3 stage is the ORIGINAL j=3, radius
+4, allowance1/8, with its enlarged native prime inventory. The full
+zeta and every primitive character's cofinal suppliers remain required.
+
+This also constructs a GENUINE spectral-semigroup instance on the SAME
+physical H. Put B=A_b+(6/25)I and delta=40737457/200000000. Define
+ S_t=exp(-tB) for every t>=0 by its norm-convergent operator power
+series. B is bounded self-adjoint with domain ALL of H; no unresolved
+unbounded self-adjoint extension or form-domain invariance is hidden.
+Absolute norm convergence and the Cauchy product give S_0=I and
+S_(t+s)=S_t S_s. Termwise differentiation gives u'=-Bu for u=S_t v.
+Equation (10), before compression, therefore gives
+
+ (d/dt)||u||^2=-2<u,Bu><=-2delta||u||^2,
+ ||S_t||_(H->H)<=exp(-delta*t), for EVERY t>=0.              (11)
+
+Indeed the derivative of exp(2delta*t)||u||^2 is nonpositive, proving
+the estimate for every v and then the operator norm. This is an
+all-time analytic estimate, not finitely sampled heat evidence or a
+Markov/mass-preservation claim. Its source return is exact: conversely,
+if (11) is known on the same H, differentiate
+||S_t v||^2<=exp(-2delta*t)||v||^2 at t=0 from the right. Equality
+holds there, so <v,Bv>>=delta||v||^2, equivalently
+<v,A_bv>>=-a||v||^2. Equation (1) returns precisely (9) on every
+original admissible test. Thus the heat law is derived from the
+audited arithmetic source, and its converse returns that same source;
+it does not hide the sign in an assumed semigroup-interface field.
+The finite syntax record retains B, its domain, delta, all-time
+quantifier, power-series definition, source pin and evidence status.
 
 ## 5. Heat and lossless interfaces of the actual mathematical types
 
@@ -266,6 +349,19 @@ series summation give the primary proof. A separate agent recomputed
 the integration-by-parts signs and constants. Shared foundations are
 the same original b, Fourier identity and physical Hilbert projection.
 No independent human review or worldwide novelty claim is made.
+
+During publication, concurrent main commit
+6260801741228ab6dcee1a5f84b87395a5d961b5 supplied
+WeilConductorThreeBoundaryJets, with m=16 and exact tail-series vectors
+s_(N,k). The constructions are NOT independent analytical routes:
+ (I-P_sine)p_k=(-1)^k*s_(N,k)
+by (3), so their augmented subspaces agree at equal N,m. Both use
+the same geometric remainder. Here summing n^(-4m-2) before replacing
+the frequency ratio by its worst case retains the factor 1/(4m+1),
+and the displayed instance takes m=14 with a different head margin.
+The integrated prime bound in PrimeMoment separately repairs the
+shared B<=60R input. Neither endpoint construction itself supplies
+its head sign; the later, distinct packet-source return (10) does.
 -/
 
 set_option autoImplicit false
@@ -303,6 +399,10 @@ theorem mixed_square_envelope_small :
 
 theorem head_high_determinant_margin :
     (1 / 10000 : ℚ) < (1 / 250) * (6 / 25 - 1 / 1000) := by norm_num
+
+/-- Finite margin only; the whole physical density return is written in section 4A. -/
+theorem packet_density_head_margin :
+    (1 / 250 : ℚ) < 6 / 25 - 7262543 / 200000000 := by norm_num
 
 /-- Actual scalar square completion needed AFTER the still-missing head sign. -/
 theorem physical_head_high_square (x y : ℝ) :

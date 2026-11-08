@@ -25,6 +25,12 @@ The original `modThreeQuadratic`, conductor and gamma parity are unchanged.
 No passing head matrix is supplied; this is a finite ACCEPTANCE theorem at
 written analytic scope, not a proof of the stage sign or Dirichlet GRH.
 
+Statements below about the missing head describe this module's original
+403254f8 source scope. A subsequent independently assembled packet proof
+in WeilConductorThreeFiniteAnnulus is audited at WRITTEN COMPUTER-ASSISTED
+scope; EndpointTail section 4A gives its bounded-operator density return
+to this head. No fresh kernel proof of that analytic return is claimed.
+
 ## 1. Exact restriction to the physical odd Hilbert carrier
 
 Let T=3, R=3500000000. The actual b is a REAL EVEN L1 function supported in
