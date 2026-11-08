@@ -1,0 +1,9 @@
+{
+  "schema": "math-ontology/source/2",
+  "id": "source:grwtsk.noeaaeue.math-boundary-published-20261107",
+  "kind": "git_repository",
+  "title": "Completed Noe operational-source and intelligence-guidance publication",
+  "url": "https://github.com/grwtsk/noeaaeue",
+  "revision": "ec9ac5bb985d8451576127d9a9be29c015b9ae55",
+  "scope": "Actual published operational drivers, intelligence guides, source-preservation records and historical inputs. This source pin is not execution authority or mathematical verification."
+}
