@@ -285,4 +285,77 @@ theorem dyadic_high_pole_null_coercive
       exact le_refl _)
     hg hgm hgo hgs hhead henergy hpole
 
+/-! ## An explicit integer cutoff for the Fourier pole-tail price -/
+
+/-- A sufficient integer cutoff for 2 * poleTailPrice(T,N) <= 1.
+The maximum with 1 prevents division by zero. The pole tail PRICE
+is explicit; the separate functional HasHighPoleTailBudget is not
+asserted by this arithmetic cutoff. -/
+noncomputable def poleTailCutoff (T : ℝ) : ℕ :=
+  max 1 (Nat.ceil
+    ((8 * T * (Real.sinh (T/2))^2) / (Real.pi^2)))
+
+/-- Exact numeric discharge of the pole-tail smallness condition.
+No unproved Fourier source-return assumption is used here. -/
+theorem poleTailPrice_small_of_cutoff (T : ℝ) {N : ℕ}
+    (hcut : poleTailCutoff T ≤ N) :
+    2 * poleTailPrice T N ≤ 1 := by
+  unfold poleTailCutoff at hcut
+  let a : ℝ := (8 * T * (Real.sinh (T/2))^2) / (Real.pi^2)
+  have hN1 : 1 ≤ N := (le_max_left 1 (Nat.ceil a)).trans (by simpa only [a] using hcut)
+  have hNpos : (0 : ℝ) < N := by
+    exact_mod_cast (lt_of_lt_of_le Nat.zero_lt_one hN1)
+  have hNreal : (Nat.ceil a : ℝ) ≤ N := by
+    exact_mod_cast (le_max_right 1 (Nat.ceil a)).trans (by simpa only [a] using hcut)
+  have ha : a ≤ (N : ℝ) := (Nat.le_ceil a).trans hNreal
+  have hπ : 0 < (Real.pi : ℝ)^2 := sq_pos_of_pos Real.pi_pos
+  have hnum : 8 * T * (Real.sinh (T/2))^2 ≤
+      (N : ℝ) * (Real.pi)^2 := by
+    exact (div_le_iff₀ hπ).mp (by simpa only [a] using ha)
+  have hden : 0 < (Real.pi)^2 * (N : ℝ) := mul_pos hπ hNpos
+  unfold poleTailPrice
+  calc
+    2 * ((4*T*(Real.sinh (T/2))^2) / ((Real.pi)^2 * (N : ℝ))) =
+        (8*T*(Real.sinh (T/2))^2) / ((Real.pi)^2 * (N : ℝ)) := by ring
+    _ ≤ 1 := (div_le_iff₀ hden).2 (by nlinarith [hnum])
+
+/-- Combined actual high-core cutoff and the explicit pole-tail
+numerical threshold for the j-th growing support. Neither threshold
+assumes all-sector arithmetic positivity. -/
+noncomputable def dyadicHighPoleTailCutoff (j : ℕ) : ℕ :=
+  max
+    (highCutoff ((j : ℝ)+1) (-((1/2 : ℝ)^j)) 4 1)
+    (poleTailCutoff ((j : ℝ)+1))
+
+/-- Quantitative high-sector sign on each dyadic window, conditional
+ONLY on the specific Fourier/Parseval pole-tail return. The HIGH
+block is controlled; the retained low block and its Schur coupling
+still block OddLiteralCofinal.StageLower(j). -/
+theorem dyadic_high_sector_nonneg_of_paid_pole_tail
+    (j : ℕ) {g : ℝ → ℝ}
+    (hg : MemLp g 2 volume) (hgm : Measurable g)
+    (hgo : Function.Odd g)
+    (hgs : ∀ᵐ t : ℝ,
+      t ∉ Icc (-((j : ℝ)+1)) ((j : ℝ)+1) → g t = 0)
+    (hhead : ∀ n < dyadicHighPoleTailCutoff j,
+      sineCoefficient ((j : ℝ)+1) g (n+1) = 0)
+    (henergy : IntegrableOn
+      (fun r => parityKernel 0 r * zeroShiftEnergy r g) (Ioi 0))
+    (htail : HasHighPoleTailBudget ((j : ℝ)+1)
+      (dyadicHighPoleTailCutoff j) g) :
+    0 ≤ shiftedOddWeilEnergy ((j : ℝ)+1)
+      (-((1/2 : ℝ)^j)) g := by
+  have hT : 0 < (j : ℝ)+1 := by positivity
+  have hfloor :
+      highCutoff ((j : ℝ)+1) (-((1/2 : ℝ)^j)) 4 1 ≤
+        dyadicHighPoleTailCutoff j := by
+    exact le_max_left _ _
+  have hprice :
+      poleTailCutoff ((j : ℝ)+1) ≤ dyadicHighPoleTailCutoff j := by
+    exact le_max_right _ _
+  exact high_sector_nonneg_of_paid_pole_tail
+    ((j : ℝ)+1) (-((1/2 : ℝ)^j)) hT
+    hfloor (poleTailPrice_small_of_cutoff _ hprice)
+    hg hgm hgo hgs hhead henergy htail
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.OddHighPoleSectorReturn
