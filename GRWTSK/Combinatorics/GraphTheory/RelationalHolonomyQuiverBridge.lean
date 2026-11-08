@@ -22,6 +22,11 @@ whereas the earlier Connection.gauge convention is
 h(source)⁻¹*U(e)*h(target). Agreement needs the INVERSE frame.
 The theorem below pays this comparison instead of conflating them.
 
+The complete returned history at each spin stage gives an exact
+information-capacity criterion: some correct finite-prefix classifier
+exists precisely when intended types factor through original paths.
+This uses a chosen full-history observer, not a physical sensor.
+
 Every finite sequence of pending-loop spin extensions has an exact
 full-path source return. A stage reader that exposes the entire original
 tagged trace admits a correct partial classifier at stage zero when
@@ -142,6 +147,111 @@ def unwindPending {V : Type u} {E : V → V → Type v} {a : V} :
       change unwindPending n (SpinPath.erase (pendingLoop p (n + 1))) = p
       rw [pendingLoop_recover, ih]
 
+/-!
+## Exact information capacity of deterministic spin completion
+
+A staged `spinReadout` is a function of the source path alone. Its
+observations therefore factor through the original `history` map.
+Conversely the existing `unwindPending` is a genuine complete-history
+observer: it returns every tagged and ordered original path after any
+finite number of spin retries. The original `prefixClassifier` can
+classify at stage zero whenever the intended source type is constant
+on each history fiber. This construction is mathematical and uses
+Classical.choose, not a claim about an effective physical sensor.
+
+Together with the already proved arbitrary-edge-family no-go in
+FiniteRelationalTypeDiscovery, this gives an exact iff for the
+existence of SOME full-history-valued observer and a correct finite
+classifier. It does not assert that a preselected, lossy observer has
+this capability or that new sheets add information to source histories.
+-/
+
+/-- Reuse the exact finite-stage erasure as an observer of the ORIGINAL
+whole path, with no reconstruction from endpoints or holonomy summaries. -/
+def returnedHistoryObserver {V : Type u} {E : V → V → Type v} {a : V}
+    (n : Nat)
+    (path : Path (iterEdge E n) (iterAnchor a n) (iterAnchor a n)) :
+    Path E a a :=
+  unwindPending n path
+
+/-- A returned-history observation at any stage agrees with the exact
+original source path, including chronological, identity-bearing arrows. -/
+@[simp] theorem spinReadout_returnedHistoryObserver
+    {V : Type u} {E : V → V → Type v} {a : V} {P : Type w}
+    (history : P → Path E a a) (n : Nat) (p : P) :
+    spinReadout history (returnedHistoryObserver (E := E) (a := a)) n p =
+      history p := by
+  change unwindPending n (pendingLoop (history p) n) = history p
+  exact unwindPending_pending (history p) n
+
+/-- Every specified staged observer factors through the original path
+before any spin expansion. It cannot depend on metadata not encoded in
+the original history map. No finite-source hypothesis is needed. -/
+theorem spinReadout_factors_through_history
+    {V : Type u} {E : V → V → Type v} {a : V}
+    {P : Type w} {Obs : Nat → Type t}
+    (history : P → Path E a a)
+    (observe : (n : Nat) →
+      Path (iterEdge E n) (iterAnchor a n) (iterAnchor a n) → Obs n)
+    (n : Nat) :
+    ∃ readSource : Path E a a → Obs n,
+      ∀ p : P, spinReadout history observe n p = readSource (history p) := by
+  exact ⟨(fun original => observe n (pendingLoop original n)), fun _ => rfl⟩
+
+/-- A complete source-history readout makes the ORIGINAL source-supported
+partial prefix classifier correct already at stage zero. This remains
+true even when the source inventory is infinite, but it requires that
+typeOf be constant on fibers of the original history map. -/
+theorem returnedHistory_prefixClassifier_correct
+    {V : Type u} {E : V → V → Type v} {a : V}
+    {P : Type w} {Kind : Type z}
+    (history : P → Path E a a) (typeOf : P → Kind)
+    (hconstant : ∀ p q : P, history p = history q → typeOf p = typeOf q) :
+    ∀ p : P,
+      prefixClassifier typeOf
+          (spinReadout history
+            (returnedHistoryObserver (E := E) (a := a))) 0
+          (observationPrefix
+            (spinReadout history
+              (returnedHistoryObserver (E := E) (a := a))) 0 p) =
+        some (typeOf p) := by
+  intro p
+  apply prefixClassifier_correct typeOf
+    (spinReadout history
+      (returnedHistoryObserver (E := E) (a := a))) 0
+  intro x y heq
+  apply hconstant x y
+  have h0 := congrFun heq (⟨0, Nat.zero_lt_succ 0⟩ : Fin (0 + 1))
+  simpa only [observationPrefix, spinReadout_returnedHistoryObserver] using h0
+
+/-- A correct finite-prefix classifier for SOME full-history-valued
+staged observer exists iff the prescribed types factor through the
+actual source history. No Fintype assumption or extra representation
+is required. The existential observer is chosen explicitly above;
+the theorem does NOT upgrade arbitrary lossy observers. -/
+theorem exists_spin_classifier_iff_type_constant_on_history
+    {V : Type u} {E : V → V → Type v} {a : V}
+    {P : Type w} {Kind : Type z}
+    (history : P → Path E a a) (typeOf : P → Kind) :
+    (∃ observe : (n : Nat) →
+        Path (iterEdge E n) (iterAnchor a n) (iterAnchor a n) → Path E a a,
+      ∃ N : Nat, ∃ classify :
+        (((i : Fin (N + 1)) → Path E a a) → Option Kind),
+        ∀ p : P, classify
+          (observationPrefix (spinReadout history observe) N p) =
+          some (typeOf p)) ↔
+      ∀ p q : P, history p = history q → typeOf p = typeOf q := by
+  constructor
+  · rintro ⟨observe, N, classify, hcorrect⟩ p q heq
+    exact spin_classifier_type_constant_on_history
+      history typeOf observe N classify hcorrect p q heq
+  · intro hconstant
+    refine ⟨returnedHistoryObserver (E := E) (a := a), 0,
+      prefixClassifier typeOf
+        (spinReadout history
+          (returnedHistoryObserver (E := E) (a := a))) 0, ?_⟩
+    exact returnedHistory_prefixClassifier_correct history typeOf hconstant
+
 section ActualQuiver
 
 variable {V : Type u} [Quiver V]
@@ -250,7 +360,7 @@ end ActualQuiver
 section SourceTraceDecoding
 
 variable {V : Type u} [Quiver V] {a : V}
-variable {P : Type w} [Fintype P] {Kind : Type z}
+variable {P : Type w} {Kind : Type z}
 
 /-- This deliberately strong observer exposes the entire original trace. -/
 def directTraceReadout
