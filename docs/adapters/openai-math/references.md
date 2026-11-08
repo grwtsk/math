@@ -1,5 +1,7 @@
 # OpenAI paper-to-adapter references
 
+[Provider guide](README.md) · [Collection guide](CATALOGUE.md) · [Adapter index](../README.md)
+
 Local attribution: grwtsk contributors. Upstream author: OpenAI.
 
 The original source integration is `grwtsk/math@129468cf1c7e78e601feec06beaedfd6cae2e22e`.
@@ -17,8 +19,9 @@ Imported mathematics: `OAI.OrdinaryTwoPointCorrelations.liouville_log_saving`,
 `OAI.TwoPointCorrelations.UniformlyNonpretentious.finite_prime_change`.
 The last is the manuscript's finite-prime-stability method.
 
-Local source candidates, all prefixed
-`GRWTSK.NumberTheory.Moebius.OpenAITwoPointFiniteFamily.`:
+Local source candidates in
+[LiouvilleTwoPointFiniteFamily.lean](../../../GRWTSK/NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/LiouvilleTwoPointFiniteFamily.lean),
+all prefixed `GRWTSK.NumberTheory.Moebius.OpenAITwoPointFiniteFamily.`:
 
 - `liouville_finite_family_bound`: finite support, positive affine slopes,
   nonzero determinant `a₁*b₂ ≠ a₂*b₁`, and `X ≥ 3`; common positive exponent,
@@ -43,8 +46,9 @@ README blob `05daa0838d60781c338ac22a9b06e6990f970981`.
 Imported mathematics: `OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re` and
 `OAI.DirichletCharacter.LFunction_ne_zero_of_seven_eighths_lt_re`.
 
-Local source candidates, all prefixed
-`GRWTSK.NumberTheory.DirichletL.OpenAISevenEighthsGap.`:
+Local source candidates in
+[SevenEighthsZeroFreeGap.lean](../../../GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SevenEighthsZeroFreeGap.lean),
+all prefixed `GRWTSK.NumberTheory.DirichletL.OpenAISevenEighthsGap.`:
 
 - `zeta_zero_re_le`: an actual complex zeta zero has real part at most `7/8`,
   by contrapositive of the imported statement.
