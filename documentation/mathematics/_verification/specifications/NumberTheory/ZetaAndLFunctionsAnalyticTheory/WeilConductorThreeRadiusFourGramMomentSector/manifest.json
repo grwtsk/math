@@ -1,0 +1,137 @@
+{
+  "Noe_checker_directory": "tools/chi3_radius_four_gram_moment",
+  "canonical_noe_instruction_revision": "370b8664d28f68876e878b47c02b7efcd1af303f",
+  "claims": [
+    {
+      "evidence": "COMPLETE_WRITTEN_PROOF_PLUS_EXACT_RATIONAL_GUARDS",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.finiteGram.momentSector",
+      "proof": "Finite exact geometric Fourier identity, full two-sided improper integral and physical Cauchy-Schwarz yield alpha<=1649631060000/52455753317481683; B-741alpha>1/10. Constraint rank and old-head projection surjectivity follow from the full Vandermonde root argument.",
+      "type": "For EVERY physical x in X=QH intersect span{psi_k:k<=38170000} with ALL 11000 endpoint moments sum(-1)^k k^(2r+1)a_k=0, 0<=r<11000, <Sx,x>>=E(x)/10. dim X=15159001."
+    },
+    {
+      "constructor": "For x in X set c_n=<q_n,x>=<ell_n,x> and b=G^-1 c. This is the ACTUAL physical projection Pi_F x; it is not Q Pi_V and G is not I. No conditioning estimate is assumed.",
+      "evidence": "COMPLETE_WRITTEN_PROOF_PLUS_EXACT_SCALAR_GUARDS; FULL_H_AND_G_NOT_EVALUATED",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.finiteGram.momentSector.actualGramReturn",
+      "proof": "ENTIRE sine-Legendre Hilbert-Schmidt tail <=2N(24L+20)4^-L/9 <=2L(24L+20)4^-L/81 <1e-120 via full series, universal monotonic polynomial and exact256 guard. Norm error <=1e-60, physical bounded-form error <=1e-56. This proves S|U>=9/100.",
+      "type": "U=Pi_F X has dim 15159001. For EVERY coefficient b with sum b_n q_n in U, b*(H-5e-54 G)b >=(2/25)b*G b."
+    },
+    {
+      "evidence": "COMPLETE_WRITTEN_PROOF_PLUS_EXACT_SCALAR_GUARDS",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.finiteGram.momentSector.entireFarCoupling",
+      "proof": "Existing W gap>=1/9 and ENTIRE mixed norm<741e-30, including the original A^-1 correction; physical square/Young inequality with S|U>=9/100. No unobserved modes are dropped.",
+      "type": "For EVERY u in U and EVERY w in the ENTIRE W, <S(u+w),u+w>>=(2/25)E(u+w). Actual compression on U orthogonal-sum W; no S-invariance claimed."
+    },
+    {
+      "evidence": "COMPLETE_WRITTEN_SOURCE_PROOF_PLUS_EXACT_INTEGER_RATIONAL_GUARDS",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.lowPassNativeHead",
+      "proof": "Full sinc alternating remainder, monotonicity on [0,pi], exact integer Chernoff comparison, retained Wcap<57.93 and source A>=16.46 give R>=-41.47 K_H1*K_H1-268.93 K_I*K_I-cI. Entire H0..H1 weight is paid by 2e-5; all outer tails and paid pair masses retained. Full old-head minimization stays inside H28m^0.",
+      "type": "UNCHANGED PL(xi)>=1-1e-5 for EVERY |xi|<=31075000. For EVERY g in the original trace head H28m^0, Rres(g)>=-d28 E(g) with d28<B-1/1000. ORIGINAL S>=1/1000 on QH intersect H28m^0, dimension 5000000."
+    },
+    {
+      "evidence": "OPEN_NOT_DISCHARGED; separate positive sectors cannot be added without their true couplings.",
+      "id": "radiusFour.filteredMiddle.entireResidual.tailSchur.finiteGram",
+      "type": "For EVERY coefficient b in the ENTIRE original F basis, b*(H-5e-54 G)b>=0."
+    }
+  ],
+  "common_contract": {
+    "D": "{30000000<|xi|<35*10^24} minus both intervals centered +/-18524227541662946/10^7, radius 10.",
+    "Fourier": "Ff(xi)=integral f(t)exp(i xi t)dt; measure dxi/(2pi).",
+    "character": "Actual modThreeQuadratic (0,1,-1), primitive nonprincipal conductor 3, odd gamma parity 1, no pole.",
+    "filters": "UNCHANGED PH7990/2820,hH=1/(2*10^25); PL19000/1425,hL=153/(2*10^9); w=PH^2(1-PL^2).",
+    "finite_carrier": "L=420000000000000000000000000, V=span of ALL odd normalized Legendre ell_n for n<L, F=QV, W=QH intersect V-perp. q_n=Qell_n is a basis, G_nj=<q_n,q_j>, H_nj=<q_n,Sq_j>. dim F=210000000000000000000000000.",
+    "frequency_comparison": "S=B I_Q+K_Q* M K_Q with the original head inverse; ||M||<741 and ||S||<742 retained from the source. No improved arithmetic price is substituted for Fourier leakage.",
+    "norm": "E(f)=integral |f|^2 dt, unweighted physical energy; coefficient energy is b*G b with the ACTUAL Gram G.",
+    "original_blocks": "P=P23 original trace-zero sine projection, Q=I-P, A=P(R+B I)P, C=PRQ, T=Q(R+B I)Q, S=T-C*A^-1C. B=124997987/10^9. Bounded residual domains ALL their displayed physical subspaces.",
+    "physical_carrier": "Odd real or complex L2([-4,4],Lebesgue dt), zero extended; original real compact C2 admissible tests retained.",
+    "source": "ALL 458 unramified prime powers p^e<=2980, p!=3, with their original signs; existing complete row/variance instance retained."
+  },
+  "comparison": {
+    "hostile_checks": "Frequency frontier rho<1 is essential. Pi_F and Q Pi_V are not identified. Arbitrary passing finite vectors, positive heat weights and separately positive compressions do not supply the missing sign.",
+    "independence": "Independent exact parameter/normalization/transport audit shares the same displayed source formulas; not a second independent proof of full Gram positivity.",
+    "independent_human_review": "NOT_RUN",
+    "mechanism": "Exact higher endpoint cancellation, Vandermonde and entire orthogonal-polynomial approximation. Separate unchanged-filter Chernoff/source argument. Neither proves the other entire carrier or their joint span.",
+    "novelty": "NOT_ASSESSED",
+    "primary_source": "Standard Legendre normalization/Rodrigues: https://dlmf.nist.gov/18.3 and https://dlmf.nist.gov/18.5#ii; native full-tail/Schur proofs reused at pinned written/exact levels."
+  },
+  "consumed_math_revision": "553e4682eb7a3caaeeefd56ccb2698d7699d370f",
+  "evidence": {
+    "Lean_compilation": "NOT_RUN",
+    "Noe_jobs": "NONE",
+    "finite_exact_arithmetic": "PASS",
+    "fresh_kernel": "NOT_RUN",
+    "independent_exact_audit": "PASS for source parameters, rank, normalization, projection, full tails and mixed return; shared written analytic premises, not independent human review or kernel proof.",
+    "transitive_axiom_audit": "NOT_RUN",
+    "universal_analytic_results": "COMPLETE_WRITTEN_AT_STATED_LOCAL_SCOPES",
+    "whole_finite_Gram_sign": "OPEN_NOT_RUN"
+  },
+  "heat_interfaces": {
+    "coverage": "Natural-code indexing retains all finite proof syntax, invalid statuses and all bound source/parameter indices. Existing pi_j=2^-j-1 has total1 and ENTIRE tail2^-J; coverage source-return retains x=2Kx-(sum Kx)pi. It implies no arithmetic sign.",
+    "role": "Branch coverage for all representable type/block descriptions; actual spectral semigroup ONLY on the proved U orthogonal-sum W compression.",
+    "spectral": "S_paid=Pi_paid S|paid has ALL paid-space domain, gap2/25. exp(-t S_paid) returns I in operator norm, has semigroup law, norm<=exp(-2t/25), inverse integral over all t>=0; ENTIRE time tail <=(25/2)exp(-2A/25).",
+    "unproved_blocks": "Z_F,D_U,B_U,T_Z retain the explicit branch-coverage interface and dependent codec. No positive arithmetic semigroup is assumed for the missing Schur complement."
+  },
+  "local_attribution": "grwtsk contributors",
+  "lossless_interfaces": {
+    "actual_readback": "PASS: complete finite-map encode/decode dictionary equality and separate all40-member byte readback; exact source/parameter/certificate/error data retained.",
+    "boundary": "Finite descriptions of huge matrices, arbitrary bound coefficients and infinite tails do not evaluate the matrices, encode arbitrary semantic L2 values, remove convergence obligations or manufacture the open sign.",
+    "codec": "Reuse existing PaidPacket.RetainedEvidence and decodeRetained(retainedCodec.encode(data))=data. Retain entire dependent descriptors, source identity, parameters, proof/checker/data bytes and every error/tail term."
+  },
+  "next_exact_missing_lemma": {
+    "carrier": "Z_F=F intersect U-perp with its ACTUAL physical norm; dimension dimF-15159001.",
+    "meeting_law": "Physical finite completion of the square proves this is EXACTLY equivalent to the SAME full H-5e-54 G sign. No original target is replaced, and no mixed block is erased.",
+    "operator": "L_F=S_F-5e-54 I_F. D_U=Pi_U L_F|U, B_U=Pi_U S_F|Z_F, T_Z=Pi_Z_F L_F|Z_F.",
+    "proved_input": "D_U>=(2/25)I and actual inverse norm<=25/2 on ALL U.",
+    "required": "For EVERY z in Z_F, <(T_Z-B_U*D_U^-1 B_U)z,z>>=0. OPEN."
+  },
+  "publication_tree_baseline_observed": "bef6520aba5d9aa83e6c244e831068db9f55ea0d",
+  "retained_bundle": {
+    "bytes": 609628,
+    "final_source_manifest_sha256": "f6d69c9d485e25f8a22193e4ef19b112b0d87af866b88eeee2baedf6a56d9c29",
+    "index_sha256": "82198592c56c502133d2652d8dd8999842320de261045746e7a4d53629a3d375",
+    "members": 40,
+    "path": ".cache/chi3-radius-four-gram-moment-20261108/retained-proof-data.tar.gz",
+    "replay_receipt_sha256": "b29b8121b184d66fd40c8bf992d9fd86f1050aae6bb20ddd46fdaf272e2ed1a5",
+    "repository": "grwtsk/noeaaeue",
+    "scope": "Two exact original payload byte matches, independent final-source audit write/verify, full byte-map equality and separate all40-member readback PASS. Original b96 candidate and final1710 canonical source are separate members; old receipts not promoted.",
+    "sha256": "d983afe2240bba486663d4872443ec46b2f2067cc47ea3e22ab349522ccacb0b",
+    "uncompressed_bytes": 1773598
+  },
+  "schema": "grwtsk.math.static-verification-target/1",
+  "sources": [
+    {
+      "bytes": 23640,
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourGramMomentSector.lean",
+      "sha256": "1710fe7f31deb6e5fd92483a118dcb42db2658b0251dbfa43d76cdbaebaba15a"
+    },
+    {
+      "bytes": 14976,
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourLowPassExtension.lean",
+      "sha256": "cedfa28d9642125aa0bf096ca7709240f2e33f1361bd00296d8c369412ea1d05"
+    }
+  ],
+  "static_mathematical_data": [
+    {
+      "bytes": 6851,
+      "path": "documentation/mathematics/_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourGramMomentSector/data/moment_sector.json",
+      "sha256": "346db824711a4fa710da3207c201d57e78390f2d6b317a3bd8d8cfb6afe3e61b"
+    },
+    {
+      "bytes": 14916,
+      "path": "documentation/mathematics/_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourLowPassExtension/data/source_bounds.json",
+      "sha256": "a067c3af3f3487dd23863a9a2d97a95d198e8ea21395a646bd0433770af420b6"
+    },
+    {
+      "bytes": 5778,
+      "path": "documentation/mathematics/_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourGramMomentSector/data/independent_audit.json",
+      "sha256": "a31aaf17cf6a545b81fddc56fb160ee83ba3e9f94e0b7bf10a55a0bba5d4d71e"
+    }
+  ],
+  "status": "ACTUAL_GRAM_MOMENT_SECTOR_AND_ENTIRE_FAR_COUPLING_PROVED_WRITTEN; WHOLE_H_MINUS_EPS_G_AND_J3_RH_GRH_OPEN",
+  "targets": {
+    "GRH_family": "ALL complex Dirichlet characters modulo EVERY positive integer, INCLUDING principal and imprimitive; every zero with 0<Re(s)<1 has Re(s)=1/2. OPEN. No Hecke/Artin/automorphic claim.",
+    "RH": "_root_.RiemannHypothesis. OPEN.",
+    "cofinal_contract": "dirichletGRH_of_source_chains requires RH AND PrimitiveNegativeWitness AND SmallConductorStages for ALL primitive nonprincipal characters; ALL required stages and the entire unobserved sector tail remain.",
+    "j3": "PrimitiveStageLower actual chi3 hp hn 3, ALL original radius-four Admissible tests, Q4>=-E/8. OPEN.",
+    "path": "foundations -> original residual/head/M -> PROVED positive actual-Gram sector AND entire far coupling -> OPEN remaining exact finite Schur sign -> SAME whole H-5e-54G -> original S -> residual budget -> chi3 j3 -> one cofinal coordinate; RH, negative witness and other sectors/stages remain separate."
+  }
+}
